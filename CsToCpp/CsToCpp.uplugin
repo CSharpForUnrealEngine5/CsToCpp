@@ -1,0 +1,24 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "1.0",
+	"FriendlyName": "CsToCpp",
+	"Description": "C# to C++ compiler",
+	"Category": "Other",
+	"CreatedBy": "JCoder58",
+	"CreatedByURL": "https://github.com/CSharpForUnrealEngine5/Plugin",
+	"DocsURL": "",
+	"MarketplaceURL": "",
+	"SupportURL": "",
+	"CanContainContent": true,
+	"IsBetaVersion": true,
+	"IsExperimentalVersion": false,
+	"Installed": false,
+	"Modules": [
+		{
+			"Name": "CsToCpp",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		}
+	]
+}
