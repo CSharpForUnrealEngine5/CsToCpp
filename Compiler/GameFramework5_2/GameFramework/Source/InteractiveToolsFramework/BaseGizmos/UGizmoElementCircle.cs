@@ -1,0 +1,12 @@
+#pragma warning disable CS8618,CS8603
+namespace GameFramework;
+using CSharpToCpp.Utilities;
+[CppInclude("BaseGizmos/GizmoElementCircle.h")]
+///<summary>Simple object intended to be used as part of 3D Gizmos.</summary>
+public partial class UGizmoElementCircle : UGizmoElementCircleBase {
+// GizmoElementCircle
+	public bool bDrawMesh;
+	public bool bDrawLine;
+	public bool bHitMesh;
+	public bool bHitLine;
+}

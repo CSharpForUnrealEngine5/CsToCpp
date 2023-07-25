@@ -1,0 +1,29 @@
+#pragma warning disable CS8618,CS8603
+namespace GameFramework;
+using CSharpToCpp.Utilities;
+[CppInclude("EditMeshPolygonsTool.h")]
+public partial class UEditMeshPolygonsTool : USingleTargetWithSelectionTool {
+// EditMeshPolygonsTool
+	public UMeshOpPreviewWithBackgroundCompute Preview;
+	public UPolyEditCommonProperties CommonProps;
+	public UEditMeshPolygonsToolActions EditActions;
+	public UEditMeshPolygonsToolActions_Triangles EditActions_Triangles;
+	public UEditMeshPolygonsToolEdgeActions EditEdgeActions;
+	public UEditMeshPolygonsToolEdgeActions_Triangles EditEdgeActions_Triangles;
+	public UEditMeshPolygonsToolUVActions EditUVActions;
+	public UEditMeshPolygonsToolCancelAction CancelAction;
+	public UEditMeshPolygonsToolAcceptCancelAction AcceptCancelAction;
+	public UPolyEditTopologyProperties TopologyProperties;
+	public UPolyEditExtrudeActivity ExtrudeActivity;
+	public UPolyEditInsetOutsetActivity InsetOutsetActivity;
+	public UPolyEditCutFacesActivity CutFacesActivity;
+	public UPolyEditPlanarProjectionUVActivity PlanarProjectionUVActivity;
+	public UPolyEditInsertEdgeActivity InsertEdgeActivity;
+	public UPolyEditInsertEdgeLoopActivity InsertEdgeLoopActivity;
+	public UPolyEditBevelEdgeActivity BevelEdgeActivity;
+	public UPolyEditActivityContext ActivityContext;
+	public UPolygonSelectionMechanic SelectionMechanic;
+	public UDragAlignmentMechanic DragAlignmentMechanic;
+	public UCombinedTransformGizmo TransformGizmo;
+	public UTransformProxy TransformProxy;
+}

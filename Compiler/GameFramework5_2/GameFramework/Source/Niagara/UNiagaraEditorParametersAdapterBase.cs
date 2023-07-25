@@ -1,0 +1,8 @@
+#pragma warning disable CS8618,CS8603
+namespace GameFramework;
+using CSharpToCpp.Utilities;
+[CppInclude("NiagaraEditorDataBase.h")]
+///<summary>A base class for editor only data which owns UNiagaraScriptVariables and supports synchronizing them with definitions.</summary>
+public partial class UNiagaraEditorParametersAdapterBase : UObject {
+// NiagaraEditorParametersAdapterBase
+}

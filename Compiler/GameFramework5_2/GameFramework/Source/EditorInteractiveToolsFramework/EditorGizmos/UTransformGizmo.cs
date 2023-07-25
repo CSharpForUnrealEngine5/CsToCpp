@@ -1,0 +1,76 @@
+#pragma warning disable CS8618,CS8603
+namespace GameFramework;
+using CSharpToCpp.Utilities;
+[CppInclude("EditorGizmos/TransformGizmo.h")]
+///<summary>UTransformGizmo provides standard Transformation Gizmo interactions,</summary>
+public partial class UTransformGizmo : UInteractiveGizmo {
+// TransformGizmo
+	public UTransformProxy ActiveTarget;
+	public UGizmoElementHitMultiTarget HitTarget;
+	public UClickDragInputBehavior MouseBehavior;
+	public object /*TransformGizmoSource*/ TransformGizmoSource;
+	public UGizmoElementGroup GizmoElementRoot;
+	public UGizmoViewContext GizmoViewContext;
+	public bool bVisible;
+	public bool bInInteraction;
+	public bool bSnapToWorldGrid;
+	public bool bGridSizeIsExplicit;
+	public FVector ExplicitGridSize;
+	public bool bRotationGridSizeIsExplicit;
+	public FRotator ExplicitRotationGridSize;
+	public bool bSnapToWorldRotGrid;
+	public UGizmoElementArrow TranslateXAxisElement;
+	public UGizmoElementArrow TranslateYAxisElement;
+	public UGizmoElementArrow TranslateZAxisElement;
+	public UGizmoElementRectangle TranslateScreenSpaceElement;
+	public UGizmoElementRectangle TranslatePlanarXYElement;
+	public UGizmoElementRectangle TranslatePlanarYZElement;
+	public UGizmoElementRectangle TranslatePlanarXZElement;
+	public UGizmoElementTorus RotateXAxisElement;
+	public UGizmoElementTorus RotateYAxisElement;
+	public UGizmoElementTorus RotateZAxisElement;
+	public UGizmoElementCircle RotateOuterCircleElement;
+	public UGizmoElementCircle RotateArcballOuterElement;
+	public UGizmoElementCircle RotateArcballInnerElement;
+	public UGizmoElementCircle RotateScreenSpaceElement;
+	public UGizmoElementArrow ScaleXAxisElement;
+	public UGizmoElementArrow ScaleYAxisElement;
+	public UGizmoElementArrow ScaleZAxisElement;
+	public UGizmoElementRectangle ScalePlanarXYElement;
+	public UGizmoElementRectangle ScalePlanarYZElement;
+	public UGizmoElementRectangle ScalePlanarXZElement;
+	public UGizmoElementBox ScaleUniformElement;
+	public UGizmoConstantFrameAxisSource CameraAxisSource;
+	public UGizmoObjectModifyStateTarget StateTarget;
+	public UMaterialInterface TransparentVertexColorMaterial;
+	public UMaterialInterface GridMaterial;
+	public UMaterialInstanceDynamic AxisMaterialX;
+	public UMaterialInstanceDynamic AxisMaterialY;
+	public UMaterialInstanceDynamic AxisMaterialZ;
+	public UMaterialInstanceDynamic CurrentAxisMaterial;
+	public UMaterialInstanceDynamic GreyMaterial;
+	public UMaterialInstanceDynamic WhiteMaterial;
+	public UMaterialInstanceDynamic OpaquePlaneMaterialXY;
+	public double ScaleMultiplier;
+	public FTransform CurrentTransform;
+	public EGizmoTransformMode CurrentMode;
+	public byte CurrentAxisToDraw;
+	public ETransformGizmoPartIdentifier LastHitPart;
+	public byte InteractionAxisList;
+	public FVector InteractionAxisOrigin;
+	public FVector InteractionAxisDirection;
+	public float InteractionAxisStartParam;
+	public float InteractionAxisCurrParam;
+	public FVector InteractionPlanarOrigin;
+	public FVector InteractionPlanarNormal;
+	public FVector InteractionPlanarAxisX;
+	public FVector InteractionPlanarAxisY;
+	public FVector InteractionPlanarStartPoint;
+	public FVector InteractionPlanarCurrPoint;
+	public float InteractionStartAngle;
+	public float InteractionCurrAngle;
+	public FVector2D InteractionScreenAxisDirection;
+	public FVector2D InteractionScreenStartPos;
+	public FVector2D InteractionScreenEndPos;
+	public FVector2D InteractionScreenCurrPos;
+}

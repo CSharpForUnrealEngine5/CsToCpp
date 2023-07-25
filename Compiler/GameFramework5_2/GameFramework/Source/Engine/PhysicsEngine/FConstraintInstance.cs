@@ -1,0 +1,76 @@
+#pragma warning disable CS8618,CS8603
+namespace GameFramework;
+using CSharpToCpp.Utilities;
+[CppInclude("PhysicsEngine/ConstraintInstance.h")]
+///<summary>Container for a physics representation of an object.</summary>
+public partial struct FConstraintInstance {
+// ConstraintInstance
+	public string JointName;
+	public string ConstraintBone1;
+	public string ConstraintBone2;
+	public FVector Pos1;
+	public FVector PriAxis1;
+	public FVector SecAxis1;
+	public FVector Pos2;
+	public FVector PriAxis2;
+	public FVector SecAxis2;
+	public FRotator AngularRotationOffset;
+	public bool bScaleLinearLimits;
+	public FConstraintProfileProperties ProfileInstance;
+	public bool bDisableCollision_DEPRECATED;
+	public bool bEnableProjection_DEPRECATED;
+	public float ProjectionLinearTolerance_DEPRECATED;
+	public float ProjectionAngularTolerance_DEPRECATED;
+	public byte LinearXMotion_DEPRECATED;
+	public byte LinearYMotion_DEPRECATED;
+	public byte LinearZMotion_DEPRECATED;
+	public float LinearLimitSize_DEPRECATED;
+	public bool bLinearLimitSoft_DEPRECATED;
+	public float LinearLimitStiffness_DEPRECATED;
+	public float LinearLimitDamping_DEPRECATED;
+	public bool bLinearBreakable_DEPRECATED;
+	public float LinearBreakThreshold_DEPRECATED;
+	public byte AngularSwing1Motion_DEPRECATED;
+	public byte AngularTwistMotion_DEPRECATED;
+	public byte AngularSwing2Motion_DEPRECATED;
+	public bool bSwingLimitSoft_DEPRECATED;
+	public bool bTwistLimitSoft_DEPRECATED;
+	public float Swing1LimitAngle_DEPRECATED;
+	public float TwistLimitAngle_DEPRECATED;
+	public float Swing2LimitAngle_DEPRECATED;
+	public float SwingLimitStiffness_DEPRECATED;
+	public float SwingLimitDamping_DEPRECATED;
+	public float TwistLimitStiffness_DEPRECATED;
+	public float TwistLimitDamping_DEPRECATED;
+	public bool bAngularBreakable_DEPRECATED;
+	public float AngularBreakThreshold_DEPRECATED;
+	public bool bLinearXPositionDrive_DEPRECATED;
+	public bool bLinearXVelocityDrive_DEPRECATED;
+	public bool bLinearYPositionDrive_DEPRECATED;
+	public bool bLinearYVelocityDrive_DEPRECATED;
+	public bool bLinearZPositionDrive_DEPRECATED;
+	public bool bLinearZVelocityDrive_DEPRECATED;
+	public bool bLinearPositionDrive_DEPRECATED;
+	public bool bLinearVelocityDrive_DEPRECATED;
+	public FVector LinearPositionTarget_DEPRECATED;
+	public FVector LinearVelocityTarget_DEPRECATED;
+	public float LinearDriveSpring_DEPRECATED;
+	public float LinearDriveDamping_DEPRECATED;
+	public float LinearDriveForceLimit_DEPRECATED;
+	public bool bSwingPositionDrive_DEPRECATED;
+	public bool bSwingVelocityDrive_DEPRECATED;
+	public bool bTwistPositionDrive_DEPRECATED;
+	public bool bTwistVelocityDrive_DEPRECATED;
+	public bool bAngularSlerpDrive_DEPRECATED;
+	public bool bAngularOrientationDrive_DEPRECATED;
+	public bool bEnableSwingDrive_DEPRECATED;
+	public bool bEnableTwistDrive_DEPRECATED;
+	public bool bAngularVelocityDrive_DEPRECATED;
+	public FQuat AngularPositionTarget_DEPRECATED;
+	public byte AngularDriveMode_DEPRECATED;
+	public FRotator AngularOrientationTarget_DEPRECATED;
+	public FVector AngularVelocityTarget_DEPRECATED;
+	public float AngularDriveSpring_DEPRECATED;
+	public float AngularDriveDamping_DEPRECATED;
+	public float AngularDriveForceLimit_DEPRECATED;
+}

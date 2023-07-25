@@ -1,0 +1,17 @@
+#pragma warning disable CS8618,CS8603
+namespace GameFramework;
+using CSharpToCpp.Utilities;
+[CppInclude("DisplayClusterConfigurationTypes_ICVFX.h")]
+public partial struct FDisplayClusterConfigurationICVFX_StageSettings {
+// DisplayClusterConfigurationICVFX_StageSettings
+	public bool bEnableInnerFrustums;
+	public FDisplayClusterConfigurationICVFX_Size DefaultFrameSize;
+	public FDisplayClusterConfigurationICVFX_LightcardSettings Lightcard;
+	public bool bFreezeRenderOuterViewports;
+	public FDisplayClusterConfigurationICVFX_VisibilityList HideList;
+	public FDisplayClusterConfigurationICVFX_VisibilityList OuterViewportHideList;
+	public bool EnableColorGrading;
+	public FDisplayClusterConfigurationViewport_EntireClusterColorGrading EntireClusterColorGrading;
+	public TArray<FDisplayClusterConfigurationViewport_PerViewportColorGrading> PerViewportColorGrading;
+	public FDisplayClusterConfigurationICVFX_ViewportOCIO ViewportOCIO;
+}

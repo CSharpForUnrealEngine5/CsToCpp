@@ -1,0 +1,16 @@
+#pragma warning disable CS8618,CS8603
+namespace GameFramework;
+using CSharpToCpp.Utilities;
+[CppInclude("DisplayClusterConfigurationTypes_ICVFX.h")]
+public partial struct FDisplayClusterConfigurationICVFX_CameraRenderSettings {
+// DisplayClusterConfigurationICVFX_CameraRenderSettings
+	public FDisplayClusterConfigurationICVFX_CustomSize CustomFrameSize;
+	public int RenderOrder;
+	public FDisplayClusterConfigurationViewport_CustomPostprocess CustomPostprocess;
+	public bool bUseCameraComponentPostprocess;
+	public FDisplayClusterConfigurationPostRender_Override Replace;
+	public FDisplayClusterConfigurationMediaICVFX Media;
+	public FDisplayClusterConfigurationPostRender_BlurPostprocess PostprocessBlur;
+	public FDisplayClusterConfigurationPostRender_GenerateMips GenerateMips;
+	public FDisplayClusterConfigurationICVFX_CameraAdvancedRenderSettings AdvancedRenderSettings;
+}

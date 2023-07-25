@@ -1,0 +1,42 @@
+#pragma warning disable CS8618,CS8603
+namespace GameFramework;
+using CSharpToCpp.Utilities;
+[CppInclude("Components/DisplayClusterICVFXCameraComponent.h")]
+///<summary>nDisplay in-camera VFX camera representation</summary>
+public partial class UDisplayClusterICVFXCameraComponent : UCineCameraComponent {
+// DisplayClusterICVFXCameraComponent
+	public FDisplayClusterConfigurationICVFX_CameraSettings CameraSettings;
+	public FDisplayClusterEditorPropertyReference IsEnabledRef;
+	public FDisplayClusterEditorPropertyReference HiddenICVFXViewportsRef;
+	public FDisplayClusterEditorPropertyReference ExternalCameraActorRef;
+	public FDisplayClusterEditorPropertyReference BufferRatioRef;
+	public FDisplayClusterEditorPropertyReference CustomFrustumRef;
+	public FDisplayClusterEditorPropertyReference SoftEdgeRef;
+	public FDisplayClusterEditorPropertyReference BorderRef;
+	public FDisplayClusterEditorPropertyReference FrustumRotationRef;
+	public FDisplayClusterEditorPropertyReference FrustumOffsetRef;
+	public FDisplayClusterEditorPropertyReference GenerateMipsRef;
+	public FDisplayClusterEditorPropertyReference CameraMotionBlurRef;
+	public FDisplayClusterEditorPropertyReference CameraHideListRef;
+	public FDisplayClusterEditorPropertyReference ChromaKeyEnabledRef;
+	public FDisplayClusterEditorPropertyReference ChromakeyColorRef;
+	public FDisplayClusterEditorPropertyReference ChromakeyMarkersRef;
+	public FDisplayClusterEditorPropertyReference ChromakeyRenderTextureRef;
+	public FDisplayClusterEditorPropertyReference EnableInnerFrustuOCIORef;
+	public FDisplayClusterEditorPropertyReference AllNodesOCIOConfigurationRef;
+	public FDisplayClusterEditorPropertyReference PerNodeOCIOProfilesRef;
+	public FDisplayClusterEditorPropertyReference EnableInnerFrustumColorGrading;
+	public FDisplayClusterEditorPropertyReference AllNodesColorGradingRef;
+	public FDisplayClusterEditorPropertyReference PerNodeColorGradingRef;
+	public FDisplayClusterEditorPropertyReference TextureReplacementEnabledRef;
+	public FDisplayClusterEditorPropertyReference SourceTextureRef;
+	public FDisplayClusterEditorPropertyReference ShouldUseTextureRegionRef;
+	public FDisplayClusterEditorPropertyReference TextureRegionRef;
+	public FDisplayClusterEditorPropertyReference MediaRef;
+	public FDisplayClusterEditorPropertyReference RenderOrderRef;
+	public FDisplayClusterEditorPropertyReference CustomFrameSizeRef;
+	public FDisplayClusterEditorPropertyReference RenderTargetRatioRef;
+	public FDisplayClusterEditorPropertyReference GPUIndexRef;
+	public FDisplayClusterEditorPropertyReference StereoGPUIndexRef;
+	public FDisplayClusterEditorPropertyReference StereoModeRef;
+}

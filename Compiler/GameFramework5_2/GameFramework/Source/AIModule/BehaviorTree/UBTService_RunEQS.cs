@@ -1,0 +1,9 @@
+#pragma warning disable CS8618,CS8603
+namespace GameFramework;
+using CSharpToCpp.Utilities;
+[CppInclude("BehaviorTree/Services/BTService_RunEQS.h")]
+public partial class UBTService_RunEQS : UBTService_BlackboardBase {
+// BTService_RunEQS
+	public FEQSParametrizedQueryExecutionRequest EQSRequest;
+	public bool bUpdateBBOnFail;
+}

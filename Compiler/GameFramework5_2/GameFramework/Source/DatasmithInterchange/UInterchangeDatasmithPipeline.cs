@@ -1,0 +1,14 @@
+#pragma warning disable CS8618,CS8603
+namespace GameFramework;
+using CSharpToCpp.Utilities;
+[CppInclude("InterchangeDatasmithPipeline.h")]
+public partial class UInterchangeDatasmithPipeline : UInterchangePipelineBase {
+// InterchangeDatasmithPipeline
+	public UInterchangeDatasmithTexturePipeline TexturePipeline;
+	public UInterchangeDatasmithMaterialPipeline MaterialPipeline;
+	public UInterchangeDatasmithStaticMeshPipeline MeshPipeline;
+	public UInterchangeDatasmithLevelPipeline LevelPipeline;
+	public UInterchangeGenericAnimationPipeline AnimationPipeline;
+	public UInterchangeGenericCommonMeshesProperties CommonMeshesProperties;
+	public UInterchangeGenericCommonSkeletalMeshesAndAnimationsProperties CommonSkeletalMeshesAndAnimationsProperties;
+}

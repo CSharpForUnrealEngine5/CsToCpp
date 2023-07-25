@@ -1,0 +1,14 @@
+#pragma warning disable CS8618,CS8603
+namespace GameFramework;
+using CSharpToCpp.Utilities;
+[CppInclude("DisplayClusterConfigurationTypes_ICVFX.h")]
+public partial struct FDisplayClusterConfigurationICVFX_LightcardSettings {
+// DisplayClusterConfigurationICVFX_LightcardSettings
+	public bool bEnable;
+	public bool bIgnoreOuterViewportsFreezingForLightcards;
+	public EDisplayClusterConfigurationICVFX_LightcardRenderMode Blendingmode;
+	public FDisplayClusterConfigurationICVFX_VisibilityList ShowOnlyList;
+	public FDisplayClusterConfigurationICVFX_LightcardRenderSettings RenderSettings;
+	public FDisplayClusterConfigurationICVFX_LightcardOCIO LightcardOCIO;
+	public bool bEnableOuterViewportColorGrading;
+}

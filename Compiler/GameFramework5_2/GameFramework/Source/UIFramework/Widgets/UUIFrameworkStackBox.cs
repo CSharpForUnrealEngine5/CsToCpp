@@ -1,0 +1,12 @@
+#pragma warning disable CS8618,CS8603
+namespace GameFramework;
+using CSharpToCpp.Utilities;
+[CppInclude("Widgets/UIFStackBox.h")]
+public partial class UUIFrameworkStackBox : UUIFrameworkWidget {
+// UIFrameworkStackBox
+	public byte Orientation;
+	public void AddWidget(FUIFrameworkStackBoxSlot Widget) {}
+	public void RemoveWidget(UObject Widget) {}
+	public void OnRep_Orientation() {}
+	public FUIFrameworkStackBoxSlotList ReplicatedSlotList;
+}

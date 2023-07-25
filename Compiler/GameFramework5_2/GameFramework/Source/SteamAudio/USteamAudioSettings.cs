@@ -1,0 +1,61 @@
+#pragma warning disable CS8618,CS8603
+namespace GameFramework;
+using CSharpToCpp.Utilities;
+[CppInclude("SteamAudioSettings.h")]
+public partial class USteamAudioSettings : UObject {
+// SteamAudioSettings
+	public FSoftObjectPath OutputSubmix;
+	public EIplAudioEngine AudioEngine;
+	public EIplRayTracerType RayTracer;
+	public EIplConvolutionType ConvolutionType;
+	public bool ExportBSPGeometry;
+	public bool ExportLandscapeGeometry;
+	public EPhononMaterial StaticMeshMaterialPreset;
+	public float StaticMeshLowFreqAbsorption;
+	public float StaticMeshMidFreqAbsorption;
+	public float StaticMeshHighFreqAbsorption;
+	public float StaticMeshLowFreqTransmission;
+	public float StaticMeshMidFreqTransmission;
+	public float StaticMeshHighFreqTransmission;
+	public float StaticMeshScattering;
+	public EPhononMaterial BSPMaterialPreset;
+	public float BSPLowFreqAbsorption;
+	public float BSPMidFreqAbsorption;
+	public float BSPHighFreqAbsorption;
+	public float BSPLowFreqTransmission;
+	public float BSPMidFreqTransmission;
+	public float BSPHighFreqTransmission;
+	public float BSPScattering;
+	public EPhononMaterial LandscapeMaterialPreset;
+	public float LandscapeLowFreqAbsorption;
+	public float LandscapeMidFreqAbsorption;
+	public float LandscapeHighFreqAbsorption;
+	public float LandscapeLowFreqTransmission;
+	public float LandscapeMidFreqTransmission;
+	public float LandscapeHighFreqTransmission;
+	public float LandscapeScattering;
+	public int OcclusionSampleCount;
+	public EIplSimulationType ListenerReverbSimulationType;
+	public float ListenerReverbContribution;
+	public int IndirectImpulseResponseOrder;
+	public float IndirectImpulseResponseDuration;
+	public EIplSpatializationMethod IndirectSpatializationMethod;
+	public float IrradianceMinDistance;
+	public uint MaxSources;
+	public EQualitySettings RealtimeQualityPreset;
+	public int RealTimeCPUCoresPercentage;
+	public int RealtimeBounces;
+	public int RealtimeRays;
+	public int RealtimeSecondaryRays;
+	public EQualitySettings BakedQualityPreset;
+	public int BakingCPUCoresPercentage;
+	public int BakedBounces;
+	public int BakedRays;
+	public int BakedSecondaryRays;
+	public int MaxComputeUnits;
+	public float FractionComputeUnitsForIRUpdate;
+	public int TANIndirectImpulseResponseOrder;
+	public float TANIndirectImpulseResponseDuration;
+	public uint TANMaxSources;
+	public int RadeonRaysBakingBatchSize;
+}

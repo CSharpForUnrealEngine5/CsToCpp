@@ -1,0 +1,12 @@
+#pragma warning disable CS8618,CS8603
+namespace GameFramework;
+using CSharpToCpp.Utilities;
+[CppInclude("DisplayClusterConfigurationTypes_ICVFX.h")]
+public partial struct FDisplayClusterConfigurationICVFX_LightcardRenderSettings {
+// DisplayClusterConfigurationICVFX_LightcardRenderSettings
+	public bool bReplaceViewport;
+	public FDisplayClusterConfigurationPostRender_Override Replace;
+	public FDisplayClusterConfigurationPostRender_BlurPostprocess PostprocessBlur;
+	public FDisplayClusterConfigurationPostRender_GenerateMips GenerateMips;
+	public FDisplayClusterConfigurationICVFX_OverlayAdvancedRenderSettings AdvancedRenderSettings;
+}

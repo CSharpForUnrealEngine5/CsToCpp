@@ -1,0 +1,10 @@
+#pragma warning disable CS8618,CS8603
+namespace GameFramework;
+using CSharpToCpp.Utilities;
+[CppInclude("Materials/MaterialExpressionSceneTexture.h")]
+public partial class UMaterialExpressionSceneTexture : UMaterialExpression {
+// MaterialExpressionSceneTexture
+	public FExpressionInput Coordinates;
+	public byte SceneTextureId;
+	public bool bFiltered;
+}

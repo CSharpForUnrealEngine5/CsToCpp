@@ -1,0 +1,60 @@
+#pragma warning disable CS8618,CS8603
+namespace GameFramework;
+using CSharpToCpp.Utilities;
+[CppInclude("NiagaraMeshRendererProperties.h")]
+public partial class UNiagaraMeshRendererProperties : UNiagaraRendererProperties {
+// NiagaraMeshRendererProperties
+	public TArray<FNiagaraMeshRendererMeshProperties> Meshes;
+	public ENiagaraRendererSourceDataMode SourceMode;
+	public ENiagaraSortMode SortMode;
+	public bool bOverrideMaterials;
+	public bool bUseHeterogeneousVolumes;
+	public bool bSortOnlyWhenTranslucent;
+	public ENiagaraRendererSortPrecision SortPrecision;
+	public ENiagaraRendererGpuTranslucentLatency GpuTranslucentLatency;
+	public bool bSubImageBlend;
+	public bool bEnableFrustumCulling;
+	public bool bEnableCameraDistanceCulling;
+	public bool bEnableMeshFlipbook;
+	public TArray<FNiagaraMeshMaterialOverride> OverrideMaterials;
+	public TArray<FNiagaraMeshMICOverride> MICOverrideMaterials;
+	public FVector2D SubImageSize;
+	public ENiagaraMeshFacingMode FacingMode;
+	public bool bLockedAxisEnable;
+	public FVector LockedAxis;
+	public ENiagaraMeshLockedAxisSpace LockedAxisSpace;
+	public FVector MeshBoundsScale;
+	public float MinCameraDistance;
+	public float MaxCameraDistance;
+	public uint RendererVisibility;
+	public FNiagaraVariableAttributeBinding PositionBinding;
+	public FNiagaraVariableAttributeBinding ColorBinding;
+	public FNiagaraVariableAttributeBinding VelocityBinding;
+	public FNiagaraVariableAttributeBinding MeshOrientationBinding;
+	public FNiagaraVariableAttributeBinding ScaleBinding;
+	public FNiagaraVariableAttributeBinding SubImageIndexBinding;
+	public FNiagaraVariableAttributeBinding DynamicMaterialBinding;
+	public FNiagaraVariableAttributeBinding DynamicMaterial1Binding;
+	public FNiagaraVariableAttributeBinding DynamicMaterial2Binding;
+	public FNiagaraVariableAttributeBinding DynamicMaterial3Binding;
+	public FNiagaraVariableAttributeBinding MaterialRandomBinding;
+	public FNiagaraVariableAttributeBinding CustomSortingBinding;
+	public FNiagaraVariableAttributeBinding NormalizedAgeBinding;
+	public FNiagaraVariableAttributeBinding CameraOffsetBinding;
+	public FNiagaraVariableAttributeBinding RendererVisibilityTagBinding;
+	public FNiagaraVariableAttributeBinding MeshIndexBinding;
+	public FNiagaraRendererMaterialParameters MaterialParameters;
+	public TArray<FNiagaraMaterialAttributeBinding> MaterialParameterBindings_DEPRECATED;
+	public FNiagaraVariableAttributeBinding PrevPositionBinding;
+	public FNiagaraVariableAttributeBinding PrevScaleBinding;
+	public FNiagaraVariableAttributeBinding PrevMeshOrientationBinding;
+	public FNiagaraVariableAttributeBinding PrevCameraOffsetBinding;
+	public FNiagaraVariableAttributeBinding PrevVelocityBinding;
+	public UStaticMesh FirstFlipbookFrame;
+	public string FlipbookSuffixFormat;
+	public uint FlipbookSuffixNumDigits;
+	public uint NumFlipbookFrames;
+	public UStaticMesh ParticleMesh_DEPRECATED;
+	public FVector PivotOffset_DEPRECATED;
+	public ENiagaraMeshPivotOffsetSpace PivotOffsetSpace_DEPRECATED;
+}

@@ -1,0 +1,61 @@
+#pragma warning disable CS8618,CS8603
+namespace GameFramework;
+using CSharpToCpp.Utilities;
+[CppInclude("NiagaraRibbonRendererProperties.h")]
+public partial class UNiagaraRibbonRendererProperties : UNiagaraRendererProperties {
+// NiagaraRibbonRendererProperties
+	public UMaterialInterface Material;
+	public UMaterialInstanceConstant MICMaterial;
+	public FNiagaraUserParameterBinding MaterialUserParamBinding;
+	public ENiagaraRibbonFacingMode FacingMode;
+	public FNiagaraRibbonUVSettings UV0Settings;
+	public FNiagaraRibbonUVSettings UV1Settings;
+	public float UV0TilingDistance_DEPRECATED;
+	public FVector2D UV0Scale_DEPRECATED;
+	public FVector2D UV0Offset_DEPRECATED;
+	public ENiagaraRibbonAgeOffsetMode UV0AgeOffsetMode_DEPRECATED;
+	public float UV1TilingDistance_DEPRECATED;
+	public FVector2D UV1Scale_DEPRECATED;
+	public FVector2D UV1Offset_DEPRECATED;
+	public ENiagaraRibbonAgeOffsetMode UV1AgeOffsetMode_DEPRECATED;
+	public int MaxNumRibbons;
+	public bool bUseGPUInit;
+	public ENiagaraRibbonDrawDirection DrawDirection;
+	public ENiagaraRibbonShapeMode Shape;
+	public bool bEnableAccurateGeometry;
+	public int WidthSegmentationCount;
+	public int MultiPlaneCount;
+	public int TubeSubdivisions;
+	public TArray<FNiagaraRibbonShapeCustomVertex> CustomVertices;
+	public ENiagaraRibbonTessellationMode TessellationMode;
+	public float CurveTension;
+	public int TessellationFactor;
+	public bool bUseConstantFactor;
+	public float TessellationAngle;
+	public bool bScreenSpaceTessellation;
+	public FNiagaraVariableAttributeBinding PositionBinding;
+	public FNiagaraVariableAttributeBinding ColorBinding;
+	public FNiagaraVariableAttributeBinding VelocityBinding;
+	public FNiagaraVariableAttributeBinding NormalizedAgeBinding;
+	public FNiagaraVariableAttributeBinding RibbonTwistBinding;
+	public FNiagaraVariableAttributeBinding RibbonWidthBinding;
+	public FNiagaraVariableAttributeBinding RibbonFacingBinding;
+	public FNiagaraVariableAttributeBinding RibbonIdBinding;
+	public FNiagaraVariableAttributeBinding RibbonLinkOrderBinding;
+	public FNiagaraVariableAttributeBinding MaterialRandomBinding;
+	public FNiagaraVariableAttributeBinding DynamicMaterialBinding;
+	public FNiagaraVariableAttributeBinding DynamicMaterial1Binding;
+	public FNiagaraVariableAttributeBinding DynamicMaterial2Binding;
+	public FNiagaraVariableAttributeBinding DynamicMaterial3Binding;
+	public FNiagaraVariableAttributeBinding RibbonUVDistance;
+	public FNiagaraVariableAttributeBinding U0OverrideBinding;
+	public FNiagaraVariableAttributeBinding V0RangeOverrideBinding;
+	public FNiagaraVariableAttributeBinding U1OverrideBinding;
+	public FNiagaraVariableAttributeBinding V1RangeOverrideBinding;
+	public FNiagaraRendererMaterialParameters MaterialParameters;
+	public TArray<FNiagaraMaterialAttributeBinding> MaterialParameterBindings_DEPRECATED;
+	public FNiagaraVariableAttributeBinding PrevPositionBinding;
+	public FNiagaraVariableAttributeBinding PrevRibbonWidthBinding;
+	public FNiagaraVariableAttributeBinding PrevRibbonFacingBinding;
+	public FNiagaraVariableAttributeBinding PrevRibbonTwistBinding;
+}

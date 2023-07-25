@@ -1,0 +1,64 @@
+#pragma warning disable CS8618,CS8603
+namespace GameFramework;
+using CSharpToCpp.Utilities;
+[CppInclude("NiagaraSpriteRendererProperties.h")]
+public partial class UNiagaraSpriteRendererProperties : UNiagaraRendererProperties {
+// NiagaraSpriteRendererProperties
+	public UMaterialInterface Material;
+	public UMaterialInstanceConstant MICMaterial;
+	public ENiagaraRendererSourceDataMode SourceMode;
+	public FNiagaraUserParameterBinding MaterialUserParamBinding;
+	public ENiagaraSpriteAlignment Alignment;
+	public ENiagaraSpriteFacingMode FacingMode;
+	public FVector2D PivotInUVSpace;
+	public float MacroUVRadius;
+	public ENiagaraSortMode SortMode;
+	public FVector2D SubImageSize;
+	public bool bSubImageBlend;
+	public bool bRemoveHMDRollInVR;
+	public bool bSortOnlyWhenTranslucent;
+	public ENiagaraRendererSortPrecision SortPrecision;
+	public ENiagaraRendererGpuTranslucentLatency GpuTranslucentLatency;
+	public ENiagaraRendererPixelCoverageMode PixelCoverageMode;
+	public float PixelCoverageBlend;
+	public float MinFacingCameraBlendDistance;
+	public float MaxFacingCameraBlendDistance;
+	public bool bEnableCameraDistanceCulling;
+	public float MinCameraDistance;
+	public float MaxCameraDistance;
+	public uint RendererVisibility;
+	public FNiagaraVariableAttributeBinding PositionBinding;
+	public FNiagaraVariableAttributeBinding ColorBinding;
+	public FNiagaraVariableAttributeBinding VelocityBinding;
+	public FNiagaraVariableAttributeBinding SpriteRotationBinding;
+	public FNiagaraVariableAttributeBinding SpriteSizeBinding;
+	public FNiagaraVariableAttributeBinding SpriteFacingBinding;
+	public FNiagaraVariableAttributeBinding SpriteAlignmentBinding;
+	public FNiagaraVariableAttributeBinding SubImageIndexBinding;
+	public FNiagaraVariableAttributeBinding DynamicMaterialBinding;
+	public FNiagaraVariableAttributeBinding DynamicMaterial1Binding;
+	public FNiagaraVariableAttributeBinding DynamicMaterial2Binding;
+	public FNiagaraVariableAttributeBinding DynamicMaterial3Binding;
+	public FNiagaraVariableAttributeBinding CameraOffsetBinding;
+	public FNiagaraVariableAttributeBinding UVScaleBinding;
+	public FNiagaraVariableAttributeBinding PivotOffsetBinding;
+	public FNiagaraVariableAttributeBinding MaterialRandomBinding;
+	public FNiagaraVariableAttributeBinding CustomSortingBinding;
+	public FNiagaraVariableAttributeBinding NormalizedAgeBinding;
+	public FNiagaraVariableAttributeBinding RendererVisibilityTagBinding;
+	public FNiagaraRendererMaterialParameters MaterialParameters;
+	public TArray<FNiagaraMaterialAttributeBinding> MaterialParameterBindings_DEPRECATED;
+	public FNiagaraVariableAttributeBinding PrevPositionBinding;
+	public FNiagaraVariableAttributeBinding PrevVelocityBinding;
+	public FNiagaraVariableAttributeBinding PrevSpriteRotationBinding;
+	public FNiagaraVariableAttributeBinding PrevSpriteSizeBinding;
+	public FNiagaraVariableAttributeBinding PrevSpriteFacingBinding;
+	public FNiagaraVariableAttributeBinding PrevSpriteAlignmentBinding;
+	public FNiagaraVariableAttributeBinding PrevCameraOffsetBinding;
+	public FNiagaraVariableAttributeBinding PrevPivotOffsetBinding;
+	public bool bUseMaterialCutoutTexture;
+	public UTexture2D CutoutTexture;
+	public byte BoundingMode;
+	public byte OpacitySourceMode;
+	public float AlphaThreshold;
+}

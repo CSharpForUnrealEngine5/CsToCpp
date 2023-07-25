@@ -1,0 +1,12 @@
+#pragma warning disable CS8618,CS8603
+namespace GameFramework;
+using CSharpToCpp.Utilities;
+[CppInclude("AITypes.h")]
+public enum EAIRequestPriority {
+	SoftScript=0,
+	Logic=1,
+	HardScript=2,
+	Reaction=3,
+	Ultimate=4,
+	MAX=5,
+}

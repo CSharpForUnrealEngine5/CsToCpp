@@ -1,0 +1,14 @@
+#pragma warning disable CS8618,CS8603
+namespace GameFramework;
+using CSharpToCpp.Utilities;
+[CppInclude("Dataflow/GeometryCollectionFieldNodes.h")]
+///<summary>UniformScalar Field Dataflow node</summary>
+public partial struct FUniformScalarFieldDataflowNode {
+// UniformScalarFieldDataflowNode
+	public TArray<FVector3f> SamplePositions;
+	public FDataflowVertexSelection SampleIndices;
+	public float Magnitude;
+	public TArray<float> FieldFloatResult;
+	public TArray<int> FieldRemap;
+	public int NumSamplePositions;
+}
