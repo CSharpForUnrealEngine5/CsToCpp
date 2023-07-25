@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("InputCoreTypes.h")]
 ///<summary>Various states of touch inputs.</summary>
+[CppEnumInNamespace]
 public enum ETouchType {
 	Began=0,
 	Moved=1,

@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("SpriteEditorOnlyTypes.h")]
 ///<summary>Method of specifying polygons for a sprite's render or collision data</summary>
+[CppEnumInNamespace]
 public enum ESpritePolygonMode {
 	SourceBoundingBox=0,
 	TightBoundingBox=1,

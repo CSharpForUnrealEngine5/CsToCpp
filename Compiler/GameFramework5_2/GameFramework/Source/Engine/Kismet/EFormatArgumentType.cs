@@ -2,6 +2,7 @@
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Kismet/KismetTextLibrary.h")]
+[CppEnumInNamespace]
 public enum EFormatArgumentType {
 	Int=0,
 	UInt=1,

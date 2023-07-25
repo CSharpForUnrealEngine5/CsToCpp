@@ -2,6 +2,7 @@
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("PhysicsEngine/BodyInstance.h")]
+[CppEnumInNamespace]
 public enum EDOFMode {
 	Default=0,
 	SixDOF=1,

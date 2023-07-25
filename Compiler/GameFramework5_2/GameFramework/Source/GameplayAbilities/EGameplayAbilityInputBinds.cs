@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("GameplayAbilitySet.h")]
 ///<summary>This is an example input binding enum for GameplayAbilities. Your project may want to create its own.</summary>
+[CppEnumInNamespace]
 public enum EGameplayAbilityInputBinds {
 	Ability1=0,
 	Ability2=1,

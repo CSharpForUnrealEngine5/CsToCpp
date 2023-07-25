@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Abilities/GameplayAbilityTargetTypes.h")]
 ///<summary>These are generic, nonpayload carrying events that are replicated between the client and server</summary>
+[CppEnumInNamespace]
 public enum EAbilityGenericReplicatedEvent {
 	GenericConfirm=0,
 	GenericCancel=1,

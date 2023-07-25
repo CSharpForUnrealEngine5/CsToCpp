@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Engine/RendererSettings.h")]
 ///<summary>Enumerates available compositing sample counts.</summary>
+[CppEnumInNamespace]
 public enum ECompositingSampleCount {
 	One=1,
 	Two=2,

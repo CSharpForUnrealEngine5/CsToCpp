@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Animation/Skeleton.h")]
 ///<summary>Bone translation retargeting mode.</summary>
+[CppEnumInNamespace]
 public enum EBoneTranslationRetargetingMode {
 	Animation=0,
 	Skeleton=1,

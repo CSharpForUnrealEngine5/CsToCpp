@@ -2,6 +2,7 @@
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Components/SlateWrapperTypes.h")]
+[CppEnumInNamespace]
 public enum EVirtualKeyboardType {
 	Default=0,
 	Number=1,

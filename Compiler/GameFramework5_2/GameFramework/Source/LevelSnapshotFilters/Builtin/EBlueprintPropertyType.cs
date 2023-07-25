@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Builtin/PropertyTypeFilter.h")]
 ///<summary>Copied from EPropertyType</summary>
+[CppEnumInNamespace]
 public enum EBlueprintPropertyType {
 	Byte=0,
 	Int=1,

@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Styling/SlateBrush.h")]
 ///<summary>Enumerates ways in which an image can be drawn.</summary>
+[CppEnumInNamespace]
 public enum ESlateBrushDrawType {
 	NoDrawType=0,
 	Box=1,

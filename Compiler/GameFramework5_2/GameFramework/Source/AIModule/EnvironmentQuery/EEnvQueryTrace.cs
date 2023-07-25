@@ -2,6 +2,7 @@
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("EnvironmentQuery/EnvQueryTypes.h")]
+[CppEnumInNamespace]
 public enum EEnvQueryTrace {
 	None=0,
 	Navigation=1,

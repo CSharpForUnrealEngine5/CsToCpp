@@ -2,6 +2,7 @@
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Animation/AnimTypes.h")]
+[CppEnumInNamespace]
 public enum EAxisOption {
 	X=0,
 	Y=1,

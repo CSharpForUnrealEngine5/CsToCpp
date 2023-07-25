@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Engine/EngineTypes.h")]
 ///<summary>Types of valid physical material mask colors which may be associated with a physical material</summary>
+[CppEnumInNamespace]
 public enum EPhysicalMaterialMaskColor {
 	Red=0,
 	Green=1,

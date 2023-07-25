@@ -2,6 +2,7 @@
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("K2Node_TransitionRuleGetter.h")]
+[CppEnumInNamespace]
 public enum ETransitionGetter {
 	AnimationAsset_GetCurrentTime=0,
 	AnimationAsset_GetLength=1,

@@ -2,6 +2,7 @@
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Navigation/PathFollowingComponent.h")]
+[CppEnumInNamespace]
 public enum EPathFollowingResult {
 	Success=0,
 	Blocked=1,

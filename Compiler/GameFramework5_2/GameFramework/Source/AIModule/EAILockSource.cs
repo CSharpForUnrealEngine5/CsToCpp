@@ -2,6 +2,7 @@
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("AITypes.h")]
+[CppEnumInNamespace]
 public enum EAILockSource {
 	Animation=0,
 	Logic=1,

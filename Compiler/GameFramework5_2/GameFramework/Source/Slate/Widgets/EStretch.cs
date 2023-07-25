@@ -2,6 +2,7 @@
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Widgets/Layout/SScaleBox.h")]
+[CppEnumInNamespace]
 public enum EStretch {
 	None=0,
 	Fill=1,

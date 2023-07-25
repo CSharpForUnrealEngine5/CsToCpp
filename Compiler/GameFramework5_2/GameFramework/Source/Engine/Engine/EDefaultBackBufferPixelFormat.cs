@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Engine/RendererSettings.h")]
 ///<summary>used by GetDefaultBackBufferPixelFormat</summary>
+[CppEnumInNamespace]
 public enum EDefaultBackBufferPixelFormat {
 	DBBPF_B8G8R8A8=0,
 	DBBPF_A16B16G16R16_DEPRECATED=1,

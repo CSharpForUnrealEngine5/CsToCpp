@@ -2,6 +2,7 @@
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("BehaviorTree/Blackboard/BlackboardKeyEnums.h")]
+[CppEnumInNamespace]
 public enum ETextKeyOperation {
 	Equal=0,
 	NotEqual=1,

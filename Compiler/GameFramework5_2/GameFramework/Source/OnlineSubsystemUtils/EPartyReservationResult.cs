@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("PartyBeaconState.h")]
 ///<summary>The result code that will be returned during party reservation</summary>
+[CppEnumInNamespace]
 public enum EPartyReservationResult {
 	NoResult=0,
 	RequestPending=1,

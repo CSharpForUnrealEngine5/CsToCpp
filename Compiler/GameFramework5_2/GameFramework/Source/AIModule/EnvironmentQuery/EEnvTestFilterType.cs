@@ -2,6 +2,7 @@
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("EnvironmentQuery/EnvQueryTypes.h")]
+[CppEnumInNamespace]
 public enum EEnvTestFilterType {
 	Minimum=0,
 	Maximum=1,

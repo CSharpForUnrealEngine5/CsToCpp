@@ -2,6 +2,7 @@
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("AITypes.h")]
+[CppEnumInNamespace]
 public enum EPawnActionEventType {
 	Invalid=0,
 	FailedToStart=1,

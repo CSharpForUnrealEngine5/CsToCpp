@@ -34,7 +34,7 @@ let compileAll (trees : SyntaxTree[]) (models : SemanticModel[]) =
 
 let compile t m =
     let root = t.GetRoot()
-    dumpLog m root
+    // dumpLog m root
     compileNode m root
     
 let rec compileNode m node =

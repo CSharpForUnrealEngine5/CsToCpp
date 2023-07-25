@@ -2,6 +2,7 @@
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("SpriteEditorOnlyTypes.h")]
+[CppEnumInNamespace]
 public enum ESpritePivotMode {
 	Top_Left=0,
 	Top_Center=1,

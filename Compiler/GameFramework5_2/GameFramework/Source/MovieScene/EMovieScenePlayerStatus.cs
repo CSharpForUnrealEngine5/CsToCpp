@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("MovieSceneFwd.h")]
 ///<summary>namespace UE</summary>
+[CppEnumInNamespace]
 public enum EMovieScenePlayerStatus {
 	Stopped=0,
 	Playing=1,

@@ -2,6 +2,7 @@
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("AITypes.h")]
+[CppEnumInNamespace]
 public enum EPawnActionAbortState {
 	NeverStarted=0,
 	NotBeingAborted=1,

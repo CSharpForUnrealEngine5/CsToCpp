@@ -2,6 +2,7 @@
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Sound/SoundConcurrency.h")]
+[CppEnumInNamespace]
 public enum EMaxConcurrentResolutionRule {
 	PreventNew=0,
 	StopOldest=1,

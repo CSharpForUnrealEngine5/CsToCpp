@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("UObject/NoExportTypes.h")]
 ///<summary>Enum denoting message dialog return types.</summary>
+[CppEnumInNamespace]
 public enum EAppReturnType {
 	No=0,
 	Yes=1,

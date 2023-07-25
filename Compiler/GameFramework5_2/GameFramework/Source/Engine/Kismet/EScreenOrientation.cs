@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Kismet/BlueprintPlatformLibrary.h")]
 ///<summary>The list of possible device/screen orientation for mobile devices</summary>
+[CppEnumInNamespace]
 public enum EScreenOrientation {
 	Unknown=0,
 	Portrait=1,

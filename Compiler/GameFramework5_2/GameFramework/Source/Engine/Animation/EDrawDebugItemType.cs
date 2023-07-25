@@ -2,6 +2,7 @@
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Animation/AnimInstanceProxy.h")]
+[CppEnumInNamespace]
 public enum EDrawDebugItemType {
 	DirectionalArrow=0,
 	Sphere=1,

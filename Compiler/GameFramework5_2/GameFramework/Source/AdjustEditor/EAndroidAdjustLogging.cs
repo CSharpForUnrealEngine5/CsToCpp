@@ -2,6 +2,7 @@
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("AdjustSettings.h")]
+[CppEnumInNamespace]
 public enum EAndroidAdjustLogging {
 	verbose=0,
 	debug=1,

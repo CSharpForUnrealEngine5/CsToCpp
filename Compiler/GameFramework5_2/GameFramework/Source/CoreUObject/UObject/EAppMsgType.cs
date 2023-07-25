@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("UObject/NoExportTypes.h")]
 ///<summary>Enumerates supported message dialog button types.</summary>
+[CppEnumInNamespace]
 public enum EAppMsgType {
 	Ok=0,
 	YesNo=1,

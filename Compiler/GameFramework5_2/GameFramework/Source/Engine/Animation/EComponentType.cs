@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Animation/AnimTypes.h")]
 ///<summary>The transform component (attribute) to read from</summary>
+[CppEnumInNamespace]
 public enum EComponentType {
 	None=0,
 	TranslationX=1,

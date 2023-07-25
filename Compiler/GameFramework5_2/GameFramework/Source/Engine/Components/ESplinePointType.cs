@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Components/SplineComponent.h")]
 ///<summary>Permitted spline point types for SplineComponent.</summary>
+[CppEnumInNamespace]
 public enum ESplinePointType {
 	Linear=0,
 	Curve=1,

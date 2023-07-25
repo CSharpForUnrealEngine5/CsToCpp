@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Kismet/KismetMathLibrary.h")]
 ///<summary>Provides different easing functions that can be used in blueprints</summary>
+[CppEnumInNamespace]
 public enum EEasingFunc {
 	Linear=0,
 	Step=1,

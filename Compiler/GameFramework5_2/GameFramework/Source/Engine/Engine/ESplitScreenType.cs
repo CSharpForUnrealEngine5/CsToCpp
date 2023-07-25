@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Engine/ViewportSplitScreen.h")]
 ///<summary>Enum of the different splitscreen types</summary>
+[CppEnumInNamespace]
 public enum ESplitScreenType {
 	None=0,
 	TwoPlayer_Horizontal=1,

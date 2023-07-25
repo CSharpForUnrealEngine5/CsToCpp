@@ -2,6 +2,7 @@
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Animation/AnimTypes.h")]
+[CppEnumInNamespace]
 public enum ECurveBlendOption {
 	Override=0,
 	DoNotOverride=1,

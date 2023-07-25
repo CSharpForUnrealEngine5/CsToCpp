@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Engine/EngineBaseTypes.h")]
 ///<summary>Types of demo play failures broadcast from the engine</summary>
+[CppEnumInNamespace]
 public enum EDemoPlayFailure {
 	Generic=0,
 	DemoNotFound=1,

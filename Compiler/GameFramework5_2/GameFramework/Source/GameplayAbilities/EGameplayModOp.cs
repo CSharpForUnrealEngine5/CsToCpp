@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("GameplayEffectTypes.h")]
 ///<summary>Defines the ways that mods will modify attributes. Numeric ones operate on the existing value, override ignores it</summary>
+[CppEnumInNamespace]
 public enum EGameplayModOp {
 	Additive=0,
 	Multiplicitive=1,

@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("AndroidRuntimeSettings.h")]
 ///<summary>IF THIS CHANGES, MAKE SURE TO UPDATE UEDeployAndroid.cs, ConvertOrientationIniValue()!</summary>
+[CppEnumInNamespace]
 public enum EAndroidScreenOrientation {
 	Portrait=0,
 	ReversePortrait=1,

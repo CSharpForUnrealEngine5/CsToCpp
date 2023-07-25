@@ -2,6 +2,7 @@
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Navigation/PathFollowingComponent.h")]
+[CppEnumInNamespace]
 public enum EPathFollowingStatus {
 	Idle=0,
 	Waiting=1,

@@ -2,6 +2,7 @@
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("ThumbnailRendering/WorldThumbnailInfo.h")]
+[CppEnumInNamespace]
 public enum EOrthoThumbnailDirection {
 	Top=0,
 	Bottom=1,

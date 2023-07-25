@@ -2,6 +2,7 @@
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Animation/AnimationAsset.h")]
+[CppEnumInNamespace]
 public enum EAnimGroupRole {
 	CanBeLeader=0,
 	AlwaysFollower=1,

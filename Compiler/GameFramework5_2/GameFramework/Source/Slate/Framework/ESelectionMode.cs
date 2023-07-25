@@ -2,6 +2,7 @@
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Framework/Views/ITypedTableView.h")]
+[CppEnumInNamespace]
 public enum ESelectionMode {
 	None=0,
 	Single=1,

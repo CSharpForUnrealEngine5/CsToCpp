@@ -2,6 +2,7 @@
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("BlueprintActionMenuUtils.h")]
+[CppEnumInNamespace]
 public enum EContextTargetFlags {
 	TARGET_Blueprint=1,
 	TARGET_SubComponents=2,

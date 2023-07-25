@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Widgets/Notifications/SProgressBar.h")]
 ///<summary>SProgressBar Fill Type</summary>
+[CppEnumInNamespace]
 public enum EProgressBarFillType {
 	LeftToRight=0,
 	RightToLeft=1,

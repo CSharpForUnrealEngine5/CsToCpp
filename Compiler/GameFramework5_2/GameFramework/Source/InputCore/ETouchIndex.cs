@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("InputCoreTypes.h")]
 ///<summary>The number of entries in ETouchIndex must match the number of touch keys defined in EKeys and NUM_TOUCH_KEYS above</summary>
+[CppEnumInNamespace]
 public enum ETouchIndex {
 	Touch1=0,
 	Touch2=1,

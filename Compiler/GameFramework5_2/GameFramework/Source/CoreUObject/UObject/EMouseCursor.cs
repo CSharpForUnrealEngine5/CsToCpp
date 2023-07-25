@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("UObject/NoExportTypes.h")]
 ///<summary>Mouse cursor types (mirrored from ICursor.h)</summary>
+[CppEnumInNamespace]
 public enum EMouseCursor {
 	None=0,
 	Default=1,

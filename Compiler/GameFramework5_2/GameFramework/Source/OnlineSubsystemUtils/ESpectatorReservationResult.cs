@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("SpectatorBeaconState.h")]
 ///<summary>The result code that will be returned during spectator reservation</summary>
+[CppEnumInNamespace]
 public enum ESpectatorReservationResult {
 	NoResult=0,
 	RequestPending=1,

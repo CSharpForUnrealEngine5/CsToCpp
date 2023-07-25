@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Engine/EngineBaseTypes.h")]
 ///<summary>Types of server travel failures broadcast by the engine</summary>
+[CppEnumInNamespace]
 public enum ETravelFailure {
 	NoLevel=0,
 	LoadMapFailure=1,

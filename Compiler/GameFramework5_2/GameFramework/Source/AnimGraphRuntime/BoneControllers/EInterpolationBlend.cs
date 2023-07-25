@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("BoneControllers/AnimNode_LookAt.h")]
 ///<summary>Various ways to interpolate TAlphaBlend.</summary>
+[CppEnumInNamespace]
 public enum EInterpolationBlend {
 	Linear=0,
 	Cubic=1,

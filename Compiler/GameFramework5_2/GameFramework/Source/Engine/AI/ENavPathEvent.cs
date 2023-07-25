@@ -2,6 +2,7 @@
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("AI/Navigation/NavigationTypes.h")]
+[CppEnumInNamespace]
 public enum ENavPathEvent {
 	Cleared=0,
 	NewPath=1,

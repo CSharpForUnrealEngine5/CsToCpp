@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Interfaces/OnlineStoreInterfaceV2.h")]
 ///<summary>Possible result states of an in-app purchase transaction</summary>
+[CppEnumInNamespace]
 public enum EInAppPurchaseState {
 	Unknown=0,
 	Success=1,

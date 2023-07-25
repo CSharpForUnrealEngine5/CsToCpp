@@ -2,6 +2,7 @@
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("PhysicsEngine/PhysicsSettings.h")]
+[CppEnumInNamespace]
 public enum ESettingsLockedAxis {
 	None=0,
 	X=1,

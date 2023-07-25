@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("UObject/NoExportTypes.h")]
 ///<summary>Generic axis list enum (mirrored for native use in Axis.h).</summary>
+[CppEnumInNamespace]
 public enum EAxisList {
 	None=0,
 	X=1,

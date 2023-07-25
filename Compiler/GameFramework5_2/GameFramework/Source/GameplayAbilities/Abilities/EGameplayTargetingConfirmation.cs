@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Abilities/GameplayAbilityTargetTypes.h")]
 ///<summary>Describes how the targeting information is confirmed</summary>
+[CppEnumInNamespace]
 public enum EGameplayTargetingConfirmation {
 	Instant=0,
 	UserConfirmed=1,

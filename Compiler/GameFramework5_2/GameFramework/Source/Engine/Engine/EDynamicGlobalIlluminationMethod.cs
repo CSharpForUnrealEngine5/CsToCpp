@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Engine/EngineTypes.h")]
 ///<summary>Note: Must match r.DynamicGlobalIlluminationMethod, this is used in URendererSettings</summary>
+[CppEnumInNamespace]
 public enum EDynamicGlobalIlluminationMethod {
 	None=0,
 	Lumen=1,

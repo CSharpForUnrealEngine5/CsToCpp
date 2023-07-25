@@ -2,6 +2,7 @@
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("BehaviorTree/Blackboard/BlackboardKeyEnums.h")]
+[CppEnumInNamespace]
 public enum EArithmeticKeyOperation {
 	Equal=0,
 	NotEqual=1,

@@ -2,6 +2,7 @@
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Engine/RendererSettings.h")]
+[CppEnumInNamespace]
 public enum EWorkingColorSpace {
 	sRGB=1,
 	Rec2020=2,

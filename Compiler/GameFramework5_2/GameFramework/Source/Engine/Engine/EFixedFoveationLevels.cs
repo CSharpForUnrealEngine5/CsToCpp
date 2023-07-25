@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Engine/RendererSettings.h")]
 ///<summary>Enumerates VRS Fixed-foveation levels</summary>
+[CppEnumInNamespace]
 public enum EFixedFoveationLevels {
 	Disabled=0,
 	Low=1,
