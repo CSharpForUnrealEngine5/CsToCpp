@@ -293,40 +293,25 @@ let compileExpression m expr : (string*(ITypeSymbol*ISymbol))=
         let (e,ety) = compileExpression m expr
         let estr = $"({ty'})({e})"
         (estr,tOrS)
+    | InterpolatedStringExpression (_,es,_) -> 
+        compileInterpolatedStringExpression m tOrS es
     | _ -> NotSupportedException(expr.ToString()) |> raise
-    
-//let compileIdentifier m id expr =
-//    let ti = m.GetTypeInfo(expr)
-//    let si = m.GetSymbolInfo(expr)
-//    let tOrS = (ti.Type,si.Symbol)
-//    if ti.Type <> null then
-//        let bt = ti.Type.BaseType.ToString()
-//        let od = ti.Type.OriginalDefinition.ToString()
-//        let ods = od.Split('.')
-//        let isClass = ods.Length > 1 && ods[ods.Length-1] = id
-//        let op =
-//            if bt = "System.Enum" || isClass then
-//                "::"
-//            else if bt = "System.ValueType" then
-//                "."
-//            else
-//                "->"
-//        (id,op,tOrS)
-//    else
-//        let id =
-//            if si.Symbol <> null then
-//                let attrs = si.Symbol.GetAttributes()
-//                //CppCode
-//                let code = attrs |> Seq.filter (fun a -> a.AttributeClass.Name.Contains("CppCode"))
-//                if Seq.isEmpty code |> not then
-//                    let code = Seq.exactlyOne code
-//                    let cargs = code.ConstructorArguments
-//                    id.Replace(cargs[0].Value.ToString(),cargs[1].Value.ToString())
-//                else
-//                    id
-//            else 
-//                id
-//        (id,"",tOrS)
+   
+let compileInterpolatedStringExpression m tOrS es =
+    let ss = es |> List.map 
+                (fun e -> 
+                    match e with
+                    | InterpolatedStringText (Token str) -> 
+                        $"TEXT(\"{str}\")"
+                    | Interpolation (_,e,a,f,_) ->
+                        let (e',(ty,sy)) = compileExpression m e
+                        match ty.Name.ToLower() with
+                        | "int32" -> $"FString::FromInt({e'})"
+                        | _ -> NotSupportedException(e.ToString()) |> raise
+                    | _ -> NotSupportedException(e.ToString()) |> raise
+                ) 
+    let ss' = String.Join("+",ss)
+    (ss',tOrS)
 
 let compileArgsList m argsList =
     let f (a : ArgumentSyntax) =
@@ -380,6 +365,7 @@ let compileType (m : SemanticModel) (tn : SyntaxNode)
     match tn :?> CSharpSyntaxNode with
     | Identifier id ->
         let t = m.GetTypeInfo tn
+        let _i = includes
         let t = t.Type
         if t = null || t.BaseType = null then 
             (id |> List.take 1 |> List.exactlyOne,false)
