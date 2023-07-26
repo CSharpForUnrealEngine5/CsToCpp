@@ -1,6 +1,9 @@
 ﻿
 namespace GameFramework;
+using CSharpToCpp.Utilities;
 
+
+[CppInclude("Components/CapsuleComponent.h","GameFramework/CharacterMovementComponent.h")]
 public partial class ACharacter : APawn
 {
     public UCapsuleComponent GetCapsuleComponent() { return null; }
