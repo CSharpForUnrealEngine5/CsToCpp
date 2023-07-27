@@ -13,7 +13,7 @@ let compileProject (p : string) =
     let gcp = generateCodePath
     printfn "Code Path: %s" gcp
     // Force load of Gameframework
-    GameFramework.GameFramework.Load()
+    GameFramework.GameFrameworkLoader.Load()
 
     let getAssembly (name : string) =
         let assemblyName = Assembly.GetExecutingAssembly().GetReferencedAssemblies()

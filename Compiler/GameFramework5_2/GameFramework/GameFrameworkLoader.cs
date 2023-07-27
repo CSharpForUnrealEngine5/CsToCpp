@@ -1,5 +1,5 @@
 ﻿namespace GameFramework;
-public partial class GameFramework
+public partial class GameFrameworkLoader
 {
     public static void Load() { }
 }
