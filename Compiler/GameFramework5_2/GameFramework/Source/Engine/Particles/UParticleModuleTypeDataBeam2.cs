@@ -4,7 +4,7 @@ using CSharpToCpp.Utilities;
 [CppInclude("Particles/TypeData/ParticleModuleTypeDataBeam2.h")]
 public partial class UParticleModuleTypeDataBeam2 : UParticleModuleTypeDataBase {
 // ParticleModuleTypeDataBeam2
-	public byte BeamMethod;
+	public EBeam2Method BeamMethod;
 	public int TextureTile;
 	public float TextureTileDistance;
 	public int Sheets;
@@ -15,7 +15,7 @@ public partial class UParticleModuleTypeDataBeam2 : UParticleModuleTypeDataBase 
 	public int UpVectorStepSize;
 	public string BranchParentName;
 	public FRawDistributionFloat Distance;
-	public byte TaperMethod;
+	public EBeamTaperMethod TaperMethod;
 	public FRawDistributionFloat TaperFactor;
 	public FRawDistributionFloat TaperScale;
 	public bool RenderGeometry;

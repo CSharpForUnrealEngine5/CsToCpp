@@ -14,5 +14,5 @@ public partial struct FAnimationTransitionBetweenStates {
 	public EAlphaBlendOption BlendMode;
 	public UCurveFloat CustomCurve;
 	public UBlendProfile BlendProfile;
-	public byte LogicType;
+	public ETransitionLogicType LogicType;
 }

@@ -6,5 +6,5 @@ public partial class UDistributionVectorConstant : UDistributionVector {
 // DistributionVectorConstant
 	public FVector Constant;
 	public bool bLockAxes;
-	public byte LockedAxes;
+	public EDistributionVectorLockFlags LockedAxes;
 }

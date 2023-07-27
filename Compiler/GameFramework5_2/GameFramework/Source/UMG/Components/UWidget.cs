@@ -46,7 +46,7 @@ public partial class UWidget : UVisual {
 	public bool bHiddenInDesigner;
 	public bool bExpandedInDesigner;
 	public bool bLockedInDesigner;
-	public byte Cursor;
+	public EMouseCursor Cursor;
 	public EWidgetClipping Clipping;
 	public ESlateVisibility Visibility;
 	public float RenderOpacity;

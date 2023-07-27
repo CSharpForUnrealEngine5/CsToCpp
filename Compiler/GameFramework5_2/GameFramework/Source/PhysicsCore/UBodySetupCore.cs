@@ -5,7 +5,7 @@ using CSharpToCpp.Utilities;
 public partial class UBodySetupCore : UObject {
 // BodySetupCore
 	public string BoneName;
-	public byte PhysicsType;
-	public byte CollisionTraceFlag;
-	public byte CollisionReponse;
+	public EPhysicsType PhysicsType;
+	public ECollisionTraceFlag CollisionTraceFlag;
+	public EBodyCollisionResponse CollisionReponse;
 }

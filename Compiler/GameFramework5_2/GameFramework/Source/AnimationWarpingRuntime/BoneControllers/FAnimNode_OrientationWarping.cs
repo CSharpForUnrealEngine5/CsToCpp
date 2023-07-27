@@ -12,7 +12,7 @@ public partial struct FAnimNode_OrientationWarping {
 	public TArray<FBoneReference> SpineBones;
 	public FBoneReference IKFootRootBone;
 	public TArray<FBoneReference> IKFootBones;
-	public byte RotationAxis;
+	public EAxis RotationAxis;
 	public float DistributedBoneOrientationAlpha;
 	public float RotationInterpSpeed;
 	public float WarpingAlpha;

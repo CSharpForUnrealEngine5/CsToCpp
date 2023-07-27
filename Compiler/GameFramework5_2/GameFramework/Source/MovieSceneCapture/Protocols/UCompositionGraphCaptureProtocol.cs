@@ -7,7 +7,7 @@ public partial class UCompositionGraphCaptureProtocol : UMovieSceneImageCaptureP
 	public FCompositionGraphCapturePasses IncludeRenderPasses;
 	public bool bCaptureFramesInHDR;
 	public int HDRCompressionQuality;
-	public byte CaptureGamut;
+	public EHDRCaptureGamut CaptureGamut;
 	public FSoftObjectPath PostProcessingMaterial;
 	public bool bDisableScreenPercentage;
 	public UMaterialInterface PostProcessingMaterialPtr;

@@ -15,7 +15,7 @@ public partial class UMaterialFunction : UMaterialFunctionInterface {
 	public TArray<string> LibraryCategoriesText;
 	public UMaterial PreviewMaterial;
 	public TArray<UMaterialExpressionMaterialFunctionCall> DependentFunctionExpressionCandidates;
-	public byte PreviewBlendMode;
+	public EBlendMode PreviewBlendMode;
 	public bool bReentrantFlag;
 	public TArray<UMaterialExpression> FunctionExpressions_DEPRECATED;
 	public TArray<UMaterialExpressionComment> FunctionEditorComments_DEPRECATED;

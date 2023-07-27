@@ -8,5 +8,5 @@ public partial struct FHashSettings {
 	public bool bUseHashForLoading;
 	public bool bCanUseCRC;
 	public bool bCanUseMD5;
-	public byte SnapshotDiffAlgorithm;
+	public EHashAlgorithmChooseBehavior SnapshotDiffAlgorithm;
 }

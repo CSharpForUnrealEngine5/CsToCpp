@@ -23,7 +23,7 @@ public partial class UWidgetInteractionComponent : USceneComponent {
 	public  void SetFocus(UWidget FocusWidget) {}
 	public int VirtualUserIndex;
 	public int PointerIndex;
-	public byte TraceChannel;
+	public ECollisionChannel TraceChannel;
 	public float InteractionDistance;
 	public EWidgetInteractionSource InteractionSource;
 	public bool bEnableHitTesting;

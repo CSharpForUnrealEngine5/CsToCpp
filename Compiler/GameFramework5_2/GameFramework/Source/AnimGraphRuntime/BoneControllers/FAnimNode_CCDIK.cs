@@ -6,7 +6,7 @@ using CSharpToCpp.Utilities;
 public partial struct FAnimNode_CCDIK {
 // AnimNode_CCDIK
 	public FVector EffectorLocation;
-	public byte EffectorLocationSpace;
+	public EBoneControlSpace EffectorLocationSpace;
 	public FBoneSocketTarget EffectorTarget;
 	public FBoneReference TipBone;
 	public FBoneReference RootBone;

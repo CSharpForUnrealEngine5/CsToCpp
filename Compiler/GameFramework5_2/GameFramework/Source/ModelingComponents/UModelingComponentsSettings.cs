@@ -8,5 +8,5 @@ public partial class UModelingComponentsSettings : UDeveloperSettings {
 	public bool bEnableRayTracingWhileEditing;
 	public bool bEnableRayTracing;
 	public bool bEnableCollision;
-	public byte CollisionMode;
+	public ECollisionTraceFlag CollisionMode;
 }

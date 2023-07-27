@@ -6,5 +6,5 @@ using CSharpToCpp.Utilities;
 public partial struct FTwistConstraint {
 // TwistConstraint
 	public float TwistLimitDegrees;
-	public byte TwistMotion;
+	public EAngularConstraintMotion TwistMotion;
 }

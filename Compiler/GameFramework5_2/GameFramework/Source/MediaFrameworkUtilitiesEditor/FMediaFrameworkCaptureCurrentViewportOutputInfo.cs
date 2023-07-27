@@ -7,5 +7,5 @@ public partial struct FMediaFrameworkCaptureCurrentViewportOutputInfo {
 // MediaFrameworkCaptureCurrentViewportOutputInfo
 	public UMediaOutput MediaOutput;
 	public FMediaCaptureOptions CaptureOptions;
-	public byte ViewMode;
+	public EViewModeIndex ViewMode;
 }

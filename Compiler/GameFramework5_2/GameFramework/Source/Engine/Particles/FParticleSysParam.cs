@@ -6,7 +6,7 @@ using CSharpToCpp.Utilities;
 public partial struct FParticleSysParam {
 // ParticleSysParam
 	public string Name;
-	public byte ParamType;
+	public EParticleSysParamType ParamType;
 	public float Scalar;
 	public float Scalar_Low;
 	public FVector Vector;

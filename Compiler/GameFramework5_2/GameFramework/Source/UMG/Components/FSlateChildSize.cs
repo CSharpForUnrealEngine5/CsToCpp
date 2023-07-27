@@ -6,5 +6,5 @@ using CSharpToCpp.Utilities;
 public partial struct FSlateChildSize {
 // SlateChildSize
 	public float Value;
-	public byte SizeRule;
+	public ESlateSizeRule SizeRule;
 }

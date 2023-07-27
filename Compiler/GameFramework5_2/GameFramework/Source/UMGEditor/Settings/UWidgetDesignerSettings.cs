@@ -12,7 +12,7 @@ public partial class UWidgetDesignerSettings : UDeveloperSettings {
 	public bool bShowOutlines;
 	public bool bExecutePreConstructEvent;
 	public bool bRespectLocks;
-	public byte CreateOnCompile;
-	public byte DismissOnCompile;
+	public EDisplayOnCompile CreateOnCompile;
+	public EDisplayOnCompile DismissOnCompile;
 	public UWidgetPaletteFavorites Favorites;
 }

@@ -4,7 +4,7 @@ using CSharpToCpp.Utilities;
 [CppInclude("Engine/MaterialMerging.h")]
 public partial struct FMaterialProxySettings {
 // MaterialProxySettings
-	public byte TextureSizingType;
+	public ETextureSizingType TextureSizingType;
 	public FIntPoint TextureSize;
 	public float TargetTexelDensityPerMeter;
 	public float MeshMaxScreenSizePercent;
@@ -17,8 +17,8 @@ public partial struct FMaterialProxySettings {
 	public float OpacityConstant;
 	public float OpacityMaskConstant;
 	public float AmbientOcclusionConstant;
-	public byte MaterialMergeType;
-	public byte BlendMode;
+	public EMaterialMergeType MaterialMergeType;
+	public EBlendMode BlendMode;
 	public bool bAllowTwoSidedMaterial;
 	public bool bNormalMap;
 	public bool bTangentMap;

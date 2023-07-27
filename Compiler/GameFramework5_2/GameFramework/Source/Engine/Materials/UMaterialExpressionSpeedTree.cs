@@ -8,9 +8,9 @@ public partial class UMaterialExpressionSpeedTree : UMaterialExpression {
 	public FExpressionInput WindInput;
 	public FExpressionInput LODInput;
 	public FExpressionInput ExtraBendWS;
-	public byte GeometryType;
-	public byte WindType;
-	public byte LODType;
+	public ESpeedTreeGeometryType GeometryType;
+	public ESpeedTreeWindType WindType;
+	public ESpeedTreeLODType LODType;
 	public float BillboardThreshold;
 	public bool bAccurateWindVelocities;
 }

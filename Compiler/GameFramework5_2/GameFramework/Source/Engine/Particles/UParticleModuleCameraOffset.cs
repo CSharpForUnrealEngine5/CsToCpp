@@ -6,5 +6,5 @@ public partial class UParticleModuleCameraOffset : UParticleModuleCameraBase {
 // ParticleModuleCameraOffset
 	public FRawDistributionFloat CameraOffset;
 	public bool bSpawnTimeOnly;
-	public byte UpdateMethod;
+	public EParticleCameraOffsetUpdateMethod UpdateMethod;
 }

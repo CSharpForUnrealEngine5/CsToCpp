@@ -6,10 +6,10 @@ public partial struct FPropertyPathTestStruct {
 // PropertyPathTestStruct
 	public bool Bool;
 	public int Integer;
-	public byte EnumOne;
-	public byte EnumTwo;
-	public byte EnumThree;
-	public byte EnumFour;
+	public EPropertyPathTestEnum EnumOne;
+	public EPropertyPathTestEnum EnumTwo;
+	public EPropertyPathTestEnum EnumThree;
+	public EPropertyPathTestEnum EnumFour;
 	public string String;
 	public float Float;
 	public FPropertyPathTestInnerStruct InnerStruct;

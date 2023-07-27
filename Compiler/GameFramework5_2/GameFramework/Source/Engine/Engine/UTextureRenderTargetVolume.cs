@@ -9,7 +9,7 @@ public partial class UTextureRenderTargetVolume : UTextureRenderTarget {
 	public int SizeY;
 	public int SizeZ;
 	public FLinearColor ClearColor;
-	public byte OverrideFormat;
+	public EPixelFormat OverrideFormat;
 	public bool bHDR;
 	public bool bForceLinearGamma;
 }

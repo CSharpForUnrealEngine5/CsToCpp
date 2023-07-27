@@ -12,7 +12,7 @@ public partial class UCharacterMovementComponent : UPawnMovementComponent {
 	public float JumpOffJumpZFactor;
 	public float WalkableFloorAngle;
 	public float WalkableFloorZ;
-	public byte MovementMode;
+	public EMovementMode MovementMode;
 	public byte CustomMovementMode;
 	public ENetworkSmoothingMode NetworkSmoothingMode;
 	public float GroundFriction;
@@ -111,9 +111,9 @@ public partial class UCharacterMovementComponent : UPawnMovementComponent {
 	public float LedgeCheckThreshold;
 	public float JumpOutOfWaterPitch;
 	public FFindFloorResult CurrentFloor;
-	public byte DefaultLandMovementMode;
-	public byte DefaultWaterMovementMode;
-	public byte GroundMovementMode;
+	public EMovementMode DefaultLandMovementMode;
+	public EMovementMode DefaultWaterMovementMode;
+	public EMovementMode GroundMovementMode;
 	public bool bMaintainHorizontalGroundVelocity;
 	public bool bImpartBaseVelocityX;
 	public bool bImpartBaseVelocityY;

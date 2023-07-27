@@ -4,7 +4,7 @@ using CSharpToCpp.Utilities;
 [CppInclude("Particles/Location/ParticleModuleLocationSkelVertSurface.h")]
 public partial class UParticleModuleLocationSkelVertSurface : UParticleModuleLocationBase {
 // ParticleModuleLocationSkelVertSurface
-	public byte SourceType;
+	public ELocationSkelVertSurfaceSource SourceType;
 	public FVector UniversalOffset;
 	public bool bUpdatePositionEachFrame;
 	public bool bOrientMeshEmitters;

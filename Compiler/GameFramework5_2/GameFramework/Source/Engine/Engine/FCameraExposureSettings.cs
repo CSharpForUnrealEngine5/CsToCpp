@@ -4,7 +4,7 @@ using CSharpToCpp.Utilities;
 [CppInclude("Engine/Scene.h")]
 public partial struct FCameraExposureSettings {
 // CameraExposureSettings
-	public byte Method;
+	public EAutoExposureMethod Method;
 	public float LowPercent;
 	public float HighPercent;
 	public float MinBrightness;

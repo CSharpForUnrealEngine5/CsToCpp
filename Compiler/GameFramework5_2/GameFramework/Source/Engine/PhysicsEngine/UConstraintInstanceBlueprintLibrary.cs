@@ -13,18 +13,18 @@ public partial class UConstraintInstanceBlueprintLibrary : UBlueprintFunctionLib
 	public static bool GetParentDominates(FConstraintInstanceAccessor Accessor) { return default; }
 	public static void SetMassConditioningEnabled(FConstraintInstanceAccessor Accessor,bool bEnableMassConditioning) {}
 	public static bool GetMassConditioningEnabled(FConstraintInstanceAccessor Accessor) { return default; }
-	public static void SetLinearLimits(FConstraintInstanceAccessor Accessor,byte XMotion,byte YMotion,byte ZMotion,float Limit) {}
-	public static void GetLinearLimits(FConstraintInstanceAccessor Accessor,byte XMotion,byte YMotion,byte ZMotion,float Limit) {}
+	public static void SetLinearLimits(FConstraintInstanceAccessor Accessor,ELinearConstraintMotion XMotion,ELinearConstraintMotion YMotion,ELinearConstraintMotion ZMotion,float Limit) {}
+	public static void GetLinearLimits(FConstraintInstanceAccessor Accessor,ELinearConstraintMotion XMotion,ELinearConstraintMotion YMotion,ELinearConstraintMotion ZMotion,float Limit) {}
 	public static void SetLinearSoftLimitParams(FConstraintInstanceAccessor Accessor,bool bSoftLinearLimit,float LinearLimitStiffness,float LinearLimitDamping,float LinearLimitRestitution,float LinearLimitContactDistance) {}
 	public static void GetLinearSoftLimitParams(FConstraintInstanceAccessor Accessor,bool bSoftLinearLimit,float LinearLimitStiffness,float LinearLimitDamping,float LinearLimitRestitution,float LinearLimitContactDistance) {}
 	public static void SetLinearBreakable(FConstraintInstanceAccessor Accessor,bool bLinearBreakable,float LinearBreakThreshold) {}
 	public static void GetLinearBreakable(FConstraintInstanceAccessor Accessor,bool bLinearBreakable,float LinearBreakThreshold) {}
-	public static void SetLinearPlasticity(FConstraintInstanceAccessor Accessor,bool bLinearPlasticity,float LinearPlasticityThreshold,byte PlasticityType) {}
-	public static void GetLinearPlasticity(FConstraintInstanceAccessor Accessor,bool bLinearPlasticity,float LinearPlasticityThreshold,byte PlasticityType) {}
+	public static void SetLinearPlasticity(FConstraintInstanceAccessor Accessor,bool bLinearPlasticity,float LinearPlasticityThreshold,EConstraintPlasticityType PlasticityType) {}
+	public static void GetLinearPlasticity(FConstraintInstanceAccessor Accessor,bool bLinearPlasticity,float LinearPlasticityThreshold,EConstraintPlasticityType PlasticityType) {}
 	public static void GetContactTransferScale(FConstraintInstanceAccessor Accessor,float ContactTransferScale) {}
 	public static void SetContactTransferScale(FConstraintInstanceAccessor Accessor,float ContactTransferScale) {}
-	public static void SetAngularLimits(FConstraintInstanceAccessor Accessor,byte Swing1MotionType,float Swing1LimitAngle,byte Swing2MotionType,float Swing2LimitAngle,byte TwistMotionType,float TwistLimitAngle) {}
-	public static void GetAngularLimits(FConstraintInstanceAccessor Accessor,byte Swing1MotionType,float Swing1LimitAngle,byte Swing2MotionType,float Swing2LimitAngle,byte TwistMotionType,float TwistLimitAngle) {}
+	public static void SetAngularLimits(FConstraintInstanceAccessor Accessor,EAngularConstraintMotion Swing1MotionType,float Swing1LimitAngle,EAngularConstraintMotion Swing2MotionType,float Swing2LimitAngle,EAngularConstraintMotion TwistMotionType,float TwistLimitAngle) {}
+	public static void GetAngularLimits(FConstraintInstanceAccessor Accessor,EAngularConstraintMotion Swing1MotionType,float Swing1LimitAngle,EAngularConstraintMotion Swing2MotionType,float Swing2LimitAngle,EAngularConstraintMotion TwistMotionType,float TwistLimitAngle) {}
 	public static void SetAngularSoftSwingLimitParams(FConstraintInstanceAccessor Accessor,bool bSoftSwingLimit,float SwingLimitStiffness,float SwingLimitDamping,float SwingLimitRestitution,float SwingLimitContactDistance) {}
 	public static void GetAngularSoftSwingLimitParams(FConstraintInstanceAccessor Accessor,bool bSoftSwingLimit,float SwingLimitStiffness,float SwingLimitDamping,float SwingLimitRestitution,float SwingLimitContactDistance) {}
 	public static void SetAngularSoftTwistLimitParams(FConstraintInstanceAccessor Accessor,bool bSoftTwistLimit,float TwistLimitStiffness,float TwistLimitDamping,float TwistLimitRestitution,float TwistLimitContactDistance) {}
@@ -52,7 +52,7 @@ public partial class UConstraintInstanceBlueprintLibrary : UBlueprintFunctionLib
 	public static void SetAngularVelocityDriveSLERP(FConstraintInstanceAccessor Accessor,bool bEnableSLERP) {}
 	public static void GetAngularVelocityDriveSLERP(FConstraintInstanceAccessor Accessor,bool bOutEnableSLERP) {}
 	public static void SetAngularDriveMode(FConstraintInstanceAccessor Accessor,EAngularDriveMode DriveMode) {}
-	public static void GetAngularDriveMode(FConstraintInstanceAccessor Accessor,byte OutDriveMode) {}
+	public static void GetAngularDriveMode(FConstraintInstanceAccessor Accessor,EAngularDriveMode OutDriveMode) {}
 	public static void SetAngularOrientationTarget(FConstraintInstanceAccessor Accessor,FRotator InPosTarget) {}
 	public static void GetAngularOrientationTarget(FConstraintInstanceAccessor Accessor,FRotator OutPosTarget) {}
 	public static void SetAngularVelocityTarget(FConstraintInstanceAccessor Accessor,FVector InVelTarget) {}

@@ -5,6 +5,6 @@ using CSharpToCpp.Utilities;
 ///<summary>Helper struct for Slot node pose evaluation.</summary>
 public partial struct FSlotEvaluationPose {
 // SlotEvaluationPose
-	public byte AdditiveType;
+	public EAdditiveAnimationType AdditiveType;
 	public float Weight;
 }

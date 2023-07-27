@@ -4,5 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("Engine/DebugCameraControllerSettings.h")]
 public partial struct FDebugCameraControllerSettingsViewModeIndex {
 // DebugCameraControllerSettingsViewModeIndex
-	public byte ViewModeIndex;
+	public EViewModeIndex ViewModeIndex;
 }

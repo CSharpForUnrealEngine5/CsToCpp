@@ -8,9 +8,9 @@ public partial class UPrimitiveComponent : USceneComponent {
 	public float MinDrawDistance;
 	public float LDMaxDrawDistance;
 	public float CachedMaxDrawDistance;
-	public byte DepthPriorityGroup;
-	public byte ViewOwnerDepthPriorityGroup;
-	public byte IndirectLightingCacheQuality;
+	public ESceneDepthPriorityGroup DepthPriorityGroup;
+	public ESceneDepthPriorityGroup ViewOwnerDepthPriorityGroup;
+	public EIndirectLightingCacheQuality IndirectLightingCacheQuality;
 	public ELightmapType LightmapType;
 	public EHLODBatchingPolicy HLODBatchingPolicy;
 	public bool bEnableAutoLODGeneration;
@@ -78,17 +78,17 @@ public partial class UPrimitiveComponent : USceneComponent {
 	public bool bRayTracingFarField;
 	public bool bHasNoStreamableTextures;
 	public bool bStaticWhenNotMoveable;
-	public byte bHasCustomNavigableGeometry;
-	public byte HitProxyPriority;
+	public EHasCustomNavigableGeometry bHasCustomNavigableGeometry;
+	public EHitProxyPriority HitProxyPriority;
 	public TArray<int> ExcludeForSpecificHLODLevels_DEPRECATED;
 	public  bool IsExcludedFromHLODLevel(EHLODLevelExclusion HLODLevel) { return default; }
 	public  void SetExcludedFromHLODLevel(EHLODLevelExclusion HLODLevel,bool bExcluded) {}
 	public  void SetExcludeForSpecificHLODLevels(TArray<int> InExcludeForSpecificHLODLevels) {}
 	public  TArray<int> GetExcludeForSpecificHLODLevels() { return default; }
-	public byte CanBeCharacterBase_DEPRECATED;
+	public ECanBeCharacterBase CanBeCharacterBase_DEPRECATED;
 	public bool bUseMaxLODAsImposter_DEPRECATED;
 	public bool bBatchImpostersAsInstances_DEPRECATED;
-	public byte CanCharacterStepUpOn;
+	public ECanBeCharacterBase CanCharacterStepUpOn;
 	public FLightingChannels LightingChannels;
 	public int RayTracingGroupId;
 	public int VisibilityId;

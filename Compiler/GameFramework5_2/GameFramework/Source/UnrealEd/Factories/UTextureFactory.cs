@@ -7,7 +7,7 @@ public partial class UTextureFactory : UFactory {
 	public bool NoCompression;
 	public bool NoAlpha;
 	public bool bDeferCompression;
-	public byte CompressionSettings;
+	public TextureCompressionSettings CompressionSettings;
 	public bool bCreateMaterial;
 	public bool bRGBToBaseColor;
 	public bool bRGBToEmissive;
@@ -16,10 +16,10 @@ public partial class UTextureFactory : UFactory {
 	public bool bAlphaToOpacity;
 	public bool bAlphaToOpacityMask;
 	public bool bTwoSided;
-	public byte Blending;
-	public byte ShadingModel;
-	public byte MipGenSettings;
-	public byte LODGroup;
+	public EBlendMode Blending;
+	public EMaterialShadingModel ShadingModel;
+	public TextureMipGenSettings MipGenSettings;
+	public TextureGroup LODGroup;
 	public bool bDoScaleMipsForAlphaCoverage;
 	public bool bUseNewMipFilter;
 	public FVector4 AlphaCoverageThresholds;
@@ -29,5 +29,5 @@ public partial class UTextureFactory : UFactory {
 	public bool bUseHashAsGuid;
 	public string UdimRegexPattern;
 	public ETextureSourceColorSpace ColorSpaceMode;
-	public byte HDRImportShouldBeLongLatCubeMap;
+	public EAppReturnType HDRImportShouldBeLongLatCubeMap;
 }

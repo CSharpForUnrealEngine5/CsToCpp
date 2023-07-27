@@ -6,7 +6,7 @@ public partial struct FMovieSceneDoubleValue {
 // MovieSceneDoubleValue
 	public double Value;
 	public FMovieSceneTangentData Tangent;
-	public byte InterpMode;
-	public byte TangentMode;
+	public ERichCurveInterpMode InterpMode;
+	public ERichCurveTangentMode TangentMode;
 	public byte PaddingByte;
 }

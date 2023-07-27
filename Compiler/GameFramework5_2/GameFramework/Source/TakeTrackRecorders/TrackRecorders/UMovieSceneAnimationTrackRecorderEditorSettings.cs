@@ -7,8 +7,8 @@ public partial class UMovieSceneAnimationTrackRecorderEditorSettings : UMovieSce
 	public string AnimationTrackName;
 	public string AnimationAssetName;
 	public string AnimationSubDirectory;
-	public byte InterpMode;
-	public byte TangentMode;
+	public ERichCurveInterpMode InterpMode;
+	public ERichCurveTangentMode TangentMode;
 	public bool bRemoveRootAnimation;
 	public FTimecodeBoneMethod TimecodeBoneMethod;
 }

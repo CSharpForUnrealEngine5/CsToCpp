@@ -6,7 +6,7 @@ using CSharpToCpp.Utilities;
 public partial struct FBPGraphClipboardData {
 // BPGraphClipboardData
 	public string GraphName;
-	public byte GraphType;
+	public EGraphType GraphType;
 	public TWeakObjectPtr<UBlueprint> OriginalBlueprint;
 	public string NodesString;
 }

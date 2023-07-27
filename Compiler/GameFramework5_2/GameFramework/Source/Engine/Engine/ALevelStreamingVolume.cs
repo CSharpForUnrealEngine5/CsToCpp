@@ -7,5 +7,5 @@ public partial class ALevelStreamingVolume : AVolume {
 	public TArray<string> StreamingLevelNames;
 	public bool bEditorPreVisOnly;
 	public bool bDisabled;
-	public byte StreamingUsage;
+	public EStreamingVolumeUsage StreamingUsage;
 }

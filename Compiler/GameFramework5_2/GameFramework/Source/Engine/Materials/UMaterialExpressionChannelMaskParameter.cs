@@ -4,6 +4,6 @@ using CSharpToCpp.Utilities;
 [CppInclude("Materials/MaterialExpressionChannelMaskParameter.h")]
 public partial class UMaterialExpressionChannelMaskParameter : UMaterialExpressionVectorParameter {
 // MaterialExpressionChannelMaskParameter
-	public byte MaskChannel;
+	public EChannelMaskParameterColor MaskChannel;
 	public FExpressionInput Input;
 }

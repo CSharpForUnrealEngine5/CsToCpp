@@ -7,7 +7,7 @@ public partial class UDistributionVectorUniformCurve : UDistributionVector {
 	public FInterpCurveTwoVectors ConstantCurve;
 	public bool bLockAxes1;
 	public bool bLockAxes2;
-	public byte LockedAxes;
-	public byte MirrorFlags;
+	public EDistributionVectorLockFlags LockedAxes;
+	public EDistributionVectorMirrorFlags MirrorFlags;
 	public bool bUseExtremes;
 }

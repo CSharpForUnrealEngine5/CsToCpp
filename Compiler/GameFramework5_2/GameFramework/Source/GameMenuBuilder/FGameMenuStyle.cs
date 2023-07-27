@@ -16,12 +16,12 @@ public partial struct FGameMenuStyle {
 	public FSlateSound MenuItemChosenSound;
 	public float LeftMarginPercent;
 	public float SubMenuMarginPercent;
-	public byte LayoutType;
+	public GameMenuLayoutType LayoutType;
 	public FMargin TitleBorderMargin;
 	public FMargin ItemBorderMargin;
-	public byte TitleHorizontalAlignment;
-	public byte TitleVerticalAlignment;
-	public byte PanelsVerticalAlignment;
+	public EHorizontalAlignment TitleHorizontalAlignment;
+	public EVerticalAlignment TitleVerticalAlignment;
+	public EVerticalAlignment PanelsVerticalAlignment;
 	public float AnimationSpeed;
 	public FSlateColor TextColor;
 }

@@ -11,9 +11,9 @@ public partial class UPaperImporterSettings : UObject {
 	public float DefaultPixelsPerUnrealUnit;
 	public TArray<string> NormalMapTextureSuffixes;
 	public TArray<string> BaseMapTextureSuffixes;
-	public byte DefaultSpriteTextureGroup;
+	public TextureGroup DefaultSpriteTextureGroup;
 	public bool bOverrideTextureCompression;
-	public byte DefaultSpriteTextureCompression;
+	public TextureCompressionSettings DefaultSpriteTextureCompression;
 	public FSoftObjectPath UnlitDefaultMaskedMaterialName;
 	public FSoftObjectPath UnlitDefaultTranslucentMaterialName;
 	public FSoftObjectPath UnlitDefaultOpaqueMaterialName;

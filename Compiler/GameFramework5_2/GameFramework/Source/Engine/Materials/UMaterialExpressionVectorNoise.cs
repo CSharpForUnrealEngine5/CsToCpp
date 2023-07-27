@@ -5,7 +5,7 @@ using CSharpToCpp.Utilities;
 public partial class UMaterialExpressionVectorNoise : UMaterialExpression {
 // MaterialExpressionVectorNoise
 	public FExpressionInput Position;
-	public byte NoiseFunction;
+	public EVectorNoiseFunction NoiseFunction;
 	public int Quality;
 	public bool bTiling;
 	public uint TileSize;

@@ -9,5 +9,5 @@ public partial struct FInterpCurvePointFloat {
 	public float OutVal;
 	public float ArriveTangent;
 	public float LeaveTangent;
-	public byte InterpMode;
+	public EInterpCurveMode InterpMode;
 }

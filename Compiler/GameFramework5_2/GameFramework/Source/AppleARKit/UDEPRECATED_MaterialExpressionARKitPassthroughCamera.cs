@@ -7,5 +7,5 @@ public partial class UDEPRECATED_MaterialExpressionARKitPassthroughCamera : UMat
 // MaterialExpressionARKitPassthroughCamera
 	public FExpressionInput Coordinates;
 	public uint ConstCoordinate;
-	public byte TextureType;
+	public EARKitTextureType TextureType;
 }

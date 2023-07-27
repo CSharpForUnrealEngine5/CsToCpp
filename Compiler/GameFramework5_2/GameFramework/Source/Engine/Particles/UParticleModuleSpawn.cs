@@ -8,6 +8,6 @@ public partial class UParticleModuleSpawn : UParticleModuleSpawnBase {
 	public FRawDistributionFloat RateScale;
 	public TArray<FParticleBurst> BurstList;
 	public FRawDistributionFloat BurstScale;
-	public byte ParticleBurstMethod;
+	public EParticleBurstMethod ParticleBurstMethod;
 	public bool bApplyGlobalSpawnRateScale;
 }

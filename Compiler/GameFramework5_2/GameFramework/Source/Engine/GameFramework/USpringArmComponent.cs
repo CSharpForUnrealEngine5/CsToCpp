@@ -9,7 +9,7 @@ public partial class USpringArmComponent : USceneComponent {
 	public FVector SocketOffset;
 	public FVector TargetOffset;
 	public float ProbeSize;
-	public byte ProbeChannel;
+	public ECollisionChannel ProbeChannel;
 	public bool bDoCollisionTest;
 	public bool bUsePawnControlRotation;
 	public bool bInheritPitch;

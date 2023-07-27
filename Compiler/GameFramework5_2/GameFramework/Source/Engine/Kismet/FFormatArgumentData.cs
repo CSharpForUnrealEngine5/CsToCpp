@@ -6,7 +6,7 @@ using CSharpToCpp.Utilities;
 public partial struct FFormatArgumentData {
 // FormatArgumentData
 	public string ArgumentName;
-	public byte ArgumentValueType;
+	public EFormatArgumentType ArgumentValueType;
 	public string ArgumentValue;
 	public long ArgumentValueInt;
 	public float ArgumentValueFloat;

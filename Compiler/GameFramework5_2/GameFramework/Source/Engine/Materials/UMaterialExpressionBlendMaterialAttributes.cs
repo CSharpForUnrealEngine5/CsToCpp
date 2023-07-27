@@ -7,6 +7,6 @@ public partial class UMaterialExpressionBlendMaterialAttributes : UMaterialExpre
 	public FMaterialAttributesInput A;
 	public FMaterialAttributesInput B;
 	public FExpressionInput Alpha;
-	public byte PixelAttributeBlendType;
-	public byte VertexAttributeBlendType;
+	public EMaterialAttributeBlend PixelAttributeBlendType;
+	public EMaterialAttributeBlend VertexAttributeBlendType;
 }

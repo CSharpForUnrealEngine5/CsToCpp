@@ -5,8 +5,8 @@ using CSharpToCpp.Utilities;
 public partial struct FRigTransformStackEntry {
 // RigTransformStackEntry
 	public FRigElementKey Key;
-	public byte EntryType;
-	public byte TransformType;
+	public ERigTransformStackEntryType EntryType;
+	public ERigTransformType TransformType;
 	public FTransform OldTransform;
 	public FTransform NewTransform;
 	public bool bAffectChildren;

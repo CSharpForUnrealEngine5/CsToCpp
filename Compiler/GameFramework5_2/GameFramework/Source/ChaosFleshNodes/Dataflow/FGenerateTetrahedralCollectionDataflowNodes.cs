@@ -4,7 +4,7 @@ using CSharpToCpp.Utilities;
 [CppInclude("Dataflow/ChaosFleshTetrahedralNodes.h")]
 public partial struct FGenerateTetrahedralCollectionDataflowNodes {
 // GenerateTetrahedralCollectionDataflowNodes
-	public byte Method;
+	public TetMeshingMethod Method;
 	public int NumCells;
 	public double OffsetPercent;
 	public double IdealEdgeLength;

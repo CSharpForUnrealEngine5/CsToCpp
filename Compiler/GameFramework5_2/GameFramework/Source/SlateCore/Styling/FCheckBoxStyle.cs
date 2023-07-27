@@ -5,7 +5,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Represents the appearance of an SCheckBox</summary>
 public partial struct FCheckBoxStyle {
 // CheckBoxStyle
-	public byte CheckBoxType;
+	public ESlateCheckBoxType CheckBoxType;
 	public FSlateBrush UncheckedImage;
 	public FSlateBrush UncheckedHoveredImage;
 	public FSlateBrush UncheckedPressedImage;

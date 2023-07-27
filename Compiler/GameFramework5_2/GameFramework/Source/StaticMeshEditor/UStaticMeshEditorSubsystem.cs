@@ -25,7 +25,7 @@ public partial class UStaticMeshEditorSubsystem : UEditorSubsystem {
 	public  int AddSimpleCollisionsWithNotification(UStaticMesh StaticMesh,EScriptCollisionShapeType ShapeType,bool bApplyChanges) { return default; }
 	public  int AddSimpleCollisions(UStaticMesh StaticMesh,EScriptCollisionShapeType ShapeType) { return default; }
 	public  int GetSimpleCollisionCount(UStaticMesh StaticMesh) { return default; }
-	public  byte GetCollisionComplexity(UStaticMesh StaticMesh) { return default; }
+	public  ECollisionTraceFlag GetCollisionComplexity(UStaticMesh StaticMesh) { return default; }
 	public  int GetConvexCollisionCount(UStaticMesh StaticMesh) { return default; }
 	public  bool SetConvexDecompositionCollisionsWithNotification(UStaticMesh StaticMesh,int HullCount,int MaxHullVerts,int HullPrecision,bool bApplyChanges) { return default; }
 	public  bool BulkSetConvexDecompositionCollisionsWithNotification(TArray<UStaticMesh> StaticMeshes,int HullCount,int MaxHullVerts,int HullPrecision,bool bApplyChanges) { return default; }

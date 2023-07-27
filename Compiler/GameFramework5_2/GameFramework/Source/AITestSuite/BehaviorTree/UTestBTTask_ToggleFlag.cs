@@ -7,5 +7,5 @@ public partial class UTestBTTask_ToggleFlag : UBTTaskNode {
 	public int LogIndex;
 	public string KeyName;
 	public int NumToggles;
-	public byte TaskResult;
+	public EBTNodeResult TaskResult;
 }

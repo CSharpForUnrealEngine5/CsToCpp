@@ -6,6 +6,6 @@ using CSharpToCpp.Utilities;
 public partial struct FMovieSceneSequenceReplProperties {
 // MovieSceneSequenceReplProperties
 	public FFrameTime LastKnownPosition;
-	public byte LastKnownStatus;
+	public EMovieScenePlayerStatus LastKnownStatus;
 	public int LastKnownNumLoops;
 }

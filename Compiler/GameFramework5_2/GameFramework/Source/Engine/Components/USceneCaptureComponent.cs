@@ -6,7 +6,7 @@ using CSharpToCpp.Utilities;
 public partial class USceneCaptureComponent : USceneComponent {
 // SceneCaptureComponent
 	public ESceneCapturePrimitiveRenderMode PrimitiveRenderMode;
-	public byte CaptureSource;
+	public ESceneCaptureSource CaptureSource;
 	public bool bCaptureEveryFrame;
 	public bool bCaptureOnMovement;
 	public bool bAlwaysPersistRenderingState;

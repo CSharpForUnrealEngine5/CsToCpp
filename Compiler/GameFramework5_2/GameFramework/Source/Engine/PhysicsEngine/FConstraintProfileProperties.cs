@@ -29,5 +29,5 @@ public partial struct FConstraintProfileProperties {
 	public bool bLinearPlasticity;
 	public FLinearDriveConstraint LinearDrive;
 	public FAngularDriveConstraint AngularDrive;
-	public byte LinearPlasticityType;
+	public EConstraintPlasticityType LinearPlasticityType;
 }

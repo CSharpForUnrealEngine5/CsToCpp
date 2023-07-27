@@ -8,5 +8,5 @@ public partial class UCullingField : UFieldNodeBase {
 	public  UCullingField SetCullingField(UFieldNodeBase Culling,UFieldNodeBase Field,EFieldCullingOperationType Operation) { return default; }
 	public UFieldNodeBase Culling;
 	public UFieldNodeBase Field;
-	public byte Operation;
+	public EFieldCullingOperationType Operation;
 }

@@ -11,7 +11,7 @@ public partial class ALandscapeProxy : APartitionActor {
 	public FIntPoint LandscapeSectionOffset;
 	public int MaxLODLevel;
 	public float LODDistanceFactor_DEPRECATED;
-	public byte LODFalloff_DEPRECATED;
+	public ELandscapeLODFalloff LODFalloff_DEPRECATED;
 	public float ComponentScreenSizeToUseSubSections;
 	public float LOD0ScreenSize;
 	public float LOD0DistributionSetting;

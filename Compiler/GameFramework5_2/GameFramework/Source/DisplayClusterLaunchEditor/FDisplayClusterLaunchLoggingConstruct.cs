@@ -5,5 +5,5 @@ using CSharpToCpp.Utilities;
 public partial struct FDisplayClusterLaunchLoggingConstruct {
 // DisplayClusterLaunchLoggingConstruct
 	public string Category;
-	public byte VerbosityLevel;
+	public EDisplayClusterLaunchLogVerbosity VerbosityLevel;
 }

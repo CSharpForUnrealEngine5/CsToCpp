@@ -8,9 +8,9 @@ public partial class UButton : UContentWidget {
 	public FButtonStyle WidgetStyle;
 	public FLinearColor ColorAndOpacity;
 	public FLinearColor BackgroundColor;
-	public byte ClickMethod;
-	public byte TouchMethod;
-	public byte PressMethod;
+	public EButtonClickMethod ClickMethod;
+	public EButtonTouchMethod TouchMethod;
+	public EButtonPressMethod PressMethod;
 	public bool IsFocusable;
 	public FOnButtonClickedEvent OnClicked;
 	public FOnButtonPressedEvent OnPressed;

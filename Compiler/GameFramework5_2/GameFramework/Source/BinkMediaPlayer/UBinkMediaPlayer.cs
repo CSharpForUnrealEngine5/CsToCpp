@@ -40,9 +40,9 @@ public partial class UBinkMediaPlayer : UObject {
 	public FVector2D BinkDestinationUpperLeft;
 	public FVector2D BinkDestinationLowerRight;
 	public string URL;
-	public byte BinkBufferMode;
-	public byte BinkSoundTrack;
+	public EBinkMediaPlayerBinkBufferModes BinkBufferMode;
+	public EBinkMediaPlayerBinkSoundTrack BinkSoundTrack;
 	public int BinkSoundTrackStart;
-	public byte BinkDrawStyle;
+	public EBinkMediaPlayerBinkDrawStyle BinkDrawStyle;
 	public int BinkLayerDepth;
 }

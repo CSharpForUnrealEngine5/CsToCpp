@@ -9,5 +9,5 @@ public partial struct FAnimNode_BlendBoneByChannel {
 	public TArray<FBlendBoneByChannelEntry> BoneDefinitions;
 	public float Alpha;
 	public FInputScaleBias AlphaScaleBias;
-	public byte TransformsSpace;
+	public EBoneControlSpace TransformsSpace;
 }

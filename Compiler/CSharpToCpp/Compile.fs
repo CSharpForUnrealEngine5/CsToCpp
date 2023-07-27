@@ -391,17 +391,20 @@ let getIncludes t : string list =
 
         match Seq.isEmpty attrs with
         | false ->
-            Some (Seq.filter f attrs |> Seq.exactlyOne)
+            Some (Seq.filter f attrs)
         | _ ->
             None
-    let f3 (a : AttributeData option) =
-        match a with
-        |Some a ->
-            a.ConstructorArguments 
-                |> Seq.map (fun ca -> ca.Values) |> Seq.concat
-                |> Seq.map (fun tc -> tc.Value.ToString())
+    let f3 (a' : AttributeData seq option) =
+        match a' with
+        | Some a'' ->
+            a'' |> Seq.map (fun a ->
+                a.ConstructorArguments 
+                    |> Seq.map (fun ca -> ca.Values) |> Seq.concat
+                    |> Seq.map (fun tc -> tc.Value.ToString())
+            )
         | None -> Seq.empty
-    f2 t |> f3 |> List.ofSeq
+
+    f2 t |> f3 |> Seq.concat |> List.ofSeq
 
 
 let compileBaseList baseList =

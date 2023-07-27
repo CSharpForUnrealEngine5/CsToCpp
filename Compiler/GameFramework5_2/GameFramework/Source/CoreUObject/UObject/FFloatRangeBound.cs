@@ -5,6 +5,6 @@ using CSharpToCpp.Utilities;
 ///<summary>Defines a single bound for a range of values.</summary>
 public partial struct FFloatRangeBound {
 // FloatRangeBound
-	public byte Type;
+	public ERangeBoundTypes Type;
 	public float Value;
 }

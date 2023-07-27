@@ -8,7 +8,7 @@ public partial class UAnimNotifyState_Trail : UAnimNotifyState {
 	public  UParticleSystem OverridePSTemplate(USkeletalMeshComponent MeshComp,UAnimSequenceBase Animation) { return default; }
 	public string FirstSocketName;
 	public string SecondSocketName;
-	public byte WidthScaleMode;
+	public ETrailWidthMode WidthScaleMode;
 	public string WidthScaleCurve;
 	public bool bRecycleSpawnedSystems;
 	public bool bRenderGeometry;

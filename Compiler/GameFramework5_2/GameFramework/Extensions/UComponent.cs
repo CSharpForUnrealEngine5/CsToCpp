@@ -1,12 +1,17 @@
 ﻿namespace GameFramework;
 
-public partial class UCapsuleComponent : UShapeComponent
+public partial class UActorComponent : UObject
+{
+    public UWorld GetWorld() { return default; }
+}
+    public partial class UCapsuleComponent : UShapeComponent
 {
     public void InitCapsuleSize(float InRadius, float InHalfHeight) { }
 }
 
 public partial class USceneComponent : UActorComponent
 {
+    public virtual void BeginPlay() { }
     public void SetupAttachment(USceneComponent InParent, string InSocketName) { }
     public void SetupAttachment(USceneComponent InParent) { }
     public void SetRelativeLocation(FVector loc) { }
@@ -27,4 +32,9 @@ public partial class UEnhancedInputComponent : UInputComponent
     public void BindAction(UInputAction action, ETriggerEvent e, Object target, string a) { }
     //public void BindAction(UInputAction action, ETriggerEvent e, Object target, SimpleAction a) { }
     //public void BindAction(UInputAction action, ETriggerEvent e, Object target, InputAction a) { }
+}
+
+public partial class USphereComponent : UShapeComponent
+{
+    public void InitSphereRadius(float radius) { }
 }

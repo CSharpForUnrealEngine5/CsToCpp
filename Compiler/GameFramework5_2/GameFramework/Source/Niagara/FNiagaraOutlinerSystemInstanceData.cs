@@ -16,8 +16,8 @@ public partial struct FNiagaraOutlinerSystemInstanceData {
 	public ENCPoolMethod PoolMethod;
 	public FNiagaraOutlinerTimingData AverageTime;
 	public FNiagaraOutlinerTimingData MaxTime;
-	public byte TickGroup;
-	public byte GpuTickStage;
+	public ETickingGroup TickGroup;
+	public ENiagaraGpuComputeTickStage GpuTickStage;
 	public bool bIsSolo;
 	public bool bRequiresDistanceFieldData;
 	public bool bRequiresDepthBuffer;

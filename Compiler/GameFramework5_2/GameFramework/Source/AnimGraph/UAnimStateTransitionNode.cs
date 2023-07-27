@@ -8,13 +8,13 @@ public partial class UAnimStateTransitionNode : UAnimStateNodeBase {
 	public UEdGraph CustomTransitionGraph;
 	public int PriorityOrder;
 	public float CrossfadeDuration;
-	public byte CrossfadeMode_DEPRECATED;
+	public ETransitionBlendMode CrossfadeMode_DEPRECATED;
 	public EAlphaBlendOption BlendMode;
 	public UCurveFloat CustomBlendCurve;
 	public UBlendProfile BlendProfile;
 	public bool bAutomaticRuleBasedOnSequencePlayerInState;
 	public string SyncGroupNameToRequireValidMarkersRule;
-	public byte LogicType;
+	public ETransitionLogicType LogicType;
 	public FAnimNotifyEvent TransitionStart;
 	public FAnimNotifyEvent TransitionEnd;
 	public FAnimNotifyEvent TransitionInterrupt;

@@ -6,5 +6,5 @@ using CSharpToCpp.Utilities;
 public partial class UMaterialExpressionHeightfieldMinMaxTexture : UMaterialExpression {
 // MaterialExpressionHeightfieldMinMaxTexture
 	public UHeightfieldMinMaxTexture MinMaxTexture;
-	public byte SamplerType;
+	public EMaterialSamplerType SamplerType;
 }

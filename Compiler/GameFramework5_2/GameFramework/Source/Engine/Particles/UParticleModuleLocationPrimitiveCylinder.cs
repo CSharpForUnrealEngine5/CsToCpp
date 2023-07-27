@@ -7,5 +7,5 @@ public partial class UParticleModuleLocationPrimitiveCylinder : UParticleModuleL
 	public bool RadialVelocity;
 	public FRawDistributionFloat StartRadius;
 	public FRawDistributionFloat StartHeight;
-	public byte HeightAxis;
+	public CylinderHeightAxis HeightAxis;
 }

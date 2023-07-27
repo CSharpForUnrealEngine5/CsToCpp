@@ -5,8 +5,8 @@ using CSharpToCpp.Utilities;
 public partial class USpeedTreeImportData : UAssetImportData {
 // SpeedTreeImportData
 	public float TreeScale;
-	public byte ImportGeometryType;
-	public byte LODType;
+	public EImportGeometryType ImportGeometryType;
+	public EImportLODType LODType;
 	public bool IncludeCollision;
 	public bool MakeMaterialsCheck;
 	public bool IncludeNormalMapCheck;

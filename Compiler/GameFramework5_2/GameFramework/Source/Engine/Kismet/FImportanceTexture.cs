@@ -11,5 +11,5 @@ public partial struct FImportanceTexture {
 	public TArray<float> ConditionalCDF;
 	public TArray<FColor> TextureData;
 	public TWeakObjectPtr<UTexture2D> Texture;
-	public byte Weighting;
+	public EImportanceWeight Weighting;
 }

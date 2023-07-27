@@ -5,6 +5,6 @@ using CSharpToCpp.Utilities;
 ///<summary>Example struct that pairs a enum input command to a GameplayAbilityClass.6</summary>
 public partial struct FGameplayAbilityBindInfo {
 // GameplayAbilityBindInfo
-	public byte Command;
+	public EGameplayAbilityInputBinds Command;
 	public UClass GameplayAbilityClass;
 }

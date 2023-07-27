@@ -6,7 +6,7 @@ using CSharpToCpp.Utilities;
 public partial class UBlueprint : UBlueprintCore {
 // Blueprint
 	public UClass ParentClass;
-	public byte BlueprintType;
+	public EBlueprintType BlueprintType;
 	public bool bRecompileOnLoad;
 	public bool bHasBeenRegenerated;
 	public bool bIsRegeneratingOnLoad;
@@ -24,7 +24,7 @@ public partial class UBlueprint : UBlueprintCore {
 	public EShouldCookBlueprintPropertyGuids ShouldCookPropertyGuidsValue;
 	public EBlueprintNativizationFlag NativizationFlag;
 	public EBlueprintCompileMode CompileMode;
-	public byte Status;
+	public EBlueprintStatus Status;
 	public string BlueprintDisplayName;
 	public string BlueprintDescription;
 	public string BlueprintNamespace;

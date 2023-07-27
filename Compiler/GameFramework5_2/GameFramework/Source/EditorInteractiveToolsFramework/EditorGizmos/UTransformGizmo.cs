@@ -54,9 +54,9 @@ public partial class UTransformGizmo : UInteractiveGizmo {
 	public double ScaleMultiplier;
 	public FTransform CurrentTransform;
 	public EGizmoTransformMode CurrentMode;
-	public byte CurrentAxisToDraw;
+	public EAxisList CurrentAxisToDraw;
 	public ETransformGizmoPartIdentifier LastHitPart;
-	public byte InteractionAxisList;
+	public EAxisList InteractionAxisList;
 	public FVector InteractionAxisOrigin;
 	public FVector InteractionAxisDirection;
 	public float InteractionAxisStartParam;

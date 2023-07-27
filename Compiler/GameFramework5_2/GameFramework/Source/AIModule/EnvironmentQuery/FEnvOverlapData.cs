@@ -8,8 +8,8 @@ public partial struct FEnvOverlapData {
 	public float ExtentY;
 	public float ExtentZ;
 	public FVector ShapeOffset;
-	public byte OverlapChannel;
-	public byte OverlapShape;
+	public ECollisionChannel OverlapChannel;
+	public EEnvOverlapShape OverlapShape;
 	public bool bOnlyBlockingHits;
 	public bool bOverlapComplex;
 	public bool bSkipOverlapQuerier;

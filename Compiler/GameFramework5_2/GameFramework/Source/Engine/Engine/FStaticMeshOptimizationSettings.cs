@@ -5,7 +5,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Old optimization settings.</summary>
 public partial struct FStaticMeshOptimizationSettings {
 // StaticMeshOptimizationSettings
-	public byte ReductionMethod;
+	public EOptimizationType ReductionMethod;
 	public float NumOfTrianglesPercentage;
 	public float MaxDeviationPercentage;
 	public float WeldingThreshold;

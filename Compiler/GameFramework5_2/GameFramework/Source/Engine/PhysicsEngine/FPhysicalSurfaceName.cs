@@ -5,6 +5,6 @@ using CSharpToCpp.Utilities;
 ///<summary>Structure that represents the name of physical surfaces.</summary>
 public partial struct FPhysicalSurfaceName {
 // PhysicalSurfaceName
-	public byte Type;
+	public EPhysicalSurface Type;
 	public string Name;
 }

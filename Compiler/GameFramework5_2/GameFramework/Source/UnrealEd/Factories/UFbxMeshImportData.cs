@@ -8,8 +8,8 @@ public partial class UFbxMeshImportData : UFbxAssetImportData {
 	public bool bTransformVertexToAbsolute;
 	public bool bBakePivotInVertex;
 	public bool bImportMeshLODs;
-	public byte NormalImportMethod;
-	public byte NormalGenerationMethod;
+	public EFBXNormalImportMethod NormalImportMethod;
+	public EFBXNormalGenerationMethod NormalGenerationMethod;
 	public bool bComputeWeightedNormals;
 	public bool bReorderMaterialToFbxOrder;
 	public TArray<string> ImportMaterialOriginalNameData;

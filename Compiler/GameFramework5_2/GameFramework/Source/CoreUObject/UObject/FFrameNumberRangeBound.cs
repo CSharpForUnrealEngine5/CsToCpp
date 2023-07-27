@@ -5,6 +5,6 @@ using CSharpToCpp.Utilities;
 ///<summary>Defines a single bound for a range of frame numbers.</summary>
 public partial struct FFrameNumberRangeBound {
 // FrameNumberRangeBound
-	public byte Type;
+	public ERangeBoundTypes Type;
 	public FFrameNumber Value;
 }

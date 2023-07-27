@@ -10,5 +10,5 @@ public partial struct FModulatorContinuousParams {
 	public float MaxInput;
 	public float MinOutput;
 	public float MaxOutput;
-	public byte ParamMode;
+	public ModulationParamMode ParamMode;
 }

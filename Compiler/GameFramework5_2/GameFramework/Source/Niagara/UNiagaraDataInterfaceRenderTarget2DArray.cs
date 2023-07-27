@@ -5,8 +5,8 @@ using CSharpToCpp.Utilities;
 public partial class UNiagaraDataInterfaceRenderTarget2DArray : UNiagaraDataInterfaceRWBase {
 // NiagaraDataInterfaceRenderTarget2DArray
 	public FIntVector Size;
-	public byte OverrideRenderTargetFormat;
-	public byte OverrideRenderTargetFilter;
+	public ETextureRenderTargetFormat OverrideRenderTargetFormat;
+	public TextureFilter OverrideRenderTargetFilter;
 	public bool bInheritUserParameterSettings;
 	public bool bOverrideFormat;
 	public bool bPreviewRenderTarget;

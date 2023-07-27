@@ -7,8 +7,8 @@ public partial class UNiagaraDataInterfaceRenderTarget2D : UNiagaraDataInterface
 	public FIntPoint Size;
 	public ENiagaraMipMapGeneration MipMapGeneration;
 	public ENiagaraMipMapGenerationType MipMapGenerationType;
-	public byte OverrideRenderTargetFormat;
-	public byte OverrideRenderTargetFilter;
+	public ETextureRenderTargetFormat OverrideRenderTargetFormat;
+	public TextureFilter OverrideRenderTargetFilter;
 	public bool bInheritUserParameterSettings;
 	public bool bOverrideFormat;
 	public bool bPreviewRenderTarget;

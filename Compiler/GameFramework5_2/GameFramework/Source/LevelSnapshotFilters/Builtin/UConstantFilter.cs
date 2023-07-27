@@ -5,8 +5,8 @@ using CSharpToCpp.Utilities;
 ///<summary>Filter which treats all actors the same.</summary>
 public partial class UConstantFilter : ULevelSnapshotFilter {
 // ConstantFilter
-	public byte IsActorValidResult;
-	public byte IsPropertyValidResult;
-	public byte IsDeletedActorValidResult;
-	public byte IsAddedActorValidResult;
+	public EFilterResult IsActorValidResult;
+	public EFilterResult IsPropertyValidResult;
+	public EFilterResult IsDeletedActorValidResult;
+	public EFilterResult IsAddedActorValidResult;
 }

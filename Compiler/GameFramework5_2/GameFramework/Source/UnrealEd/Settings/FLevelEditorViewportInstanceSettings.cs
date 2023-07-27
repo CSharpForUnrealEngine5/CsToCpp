@@ -5,9 +5,9 @@ using CSharpToCpp.Utilities;
 ///<summary>Implements the Level Editor's per-instance view port settings.</summary>
 public partial struct FLevelEditorViewportInstanceSettings {
 // LevelEditorViewportInstanceSettings
-	public byte ViewportType;
-	public byte PerspViewModeIndex;
-	public byte OrthoViewModeIndex;
+	public ELevelViewportType ViewportType;
+	public EViewModeIndex PerspViewModeIndex;
+	public EViewModeIndex OrthoViewModeIndex;
 	public string EditorShowFlagsString;
 	public string GameShowFlagsString;
 	public string BufferVisualizationMode;

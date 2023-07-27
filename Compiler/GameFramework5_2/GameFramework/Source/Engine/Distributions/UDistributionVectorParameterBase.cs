@@ -9,5 +9,5 @@ public partial class UDistributionVectorParameterBase : UDistributionVectorConst
 	public FVector MaxInput;
 	public FVector MinOutput;
 	public FVector MaxOutput;
-	public byte ParamModes;
+	public DistributionParamMode ParamModes;
 }

@@ -9,5 +9,5 @@ public partial class UOperatorField : UFieldNodeBase {
 	public float Magnitude;
 	public UFieldNodeBase RightField;
 	public UFieldNodeBase LeftField;
-	public byte Operation;
+	public EFieldOperationType Operation;
 }

@@ -11,12 +11,12 @@ public partial struct FPredictProjectilePathParams {
 	public float ProjectileRadius;
 	public float MaxSimTime;
 	public bool bTraceWithChannel;
-	public byte TraceChannel;
-	public TArray<byte> ObjectTypes;
+	public ECollisionChannel TraceChannel;
+	public TArray<EObjectTypeQuery> ObjectTypes;
 	public TArray<AActor> ActorsToIgnore;
 	public float SimFrequency;
 	public float OverrideGravityZ;
-	public byte DrawDebugType;
+	public EDrawDebugTrace DrawDebugType;
 	public float DrawDebugTime;
 	public bool bTraceComplex;
 }

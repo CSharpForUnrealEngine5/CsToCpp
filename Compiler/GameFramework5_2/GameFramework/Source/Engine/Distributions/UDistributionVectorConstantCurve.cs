@@ -6,5 +6,5 @@ public partial class UDistributionVectorConstantCurve : UDistributionVector {
 // DistributionVectorConstantCurve
 	public FInterpCurveVector ConstantCurve;
 	public bool bLockAxes;
-	public byte LockedAxes;
+	public EDistributionVectorLockFlags LockedAxes;
 }

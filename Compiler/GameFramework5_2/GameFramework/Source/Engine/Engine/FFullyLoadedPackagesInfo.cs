@@ -5,7 +5,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Struct to help hold information about packages needing to be fully-loaded for DLC, etc.</summary>
 public partial struct FFullyLoadedPackagesInfo {
 // FullyLoadedPackagesInfo
-	public byte FullyLoadType;
+	public EFullyLoadPackageType FullyLoadType;
 	public string Tag;
 	public TArray<string> PackagesToLoad;
 	public TArray<UObject> LoadedObjects;

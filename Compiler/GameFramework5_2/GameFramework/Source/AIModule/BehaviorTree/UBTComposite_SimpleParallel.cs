@@ -5,5 +5,5 @@ using CSharpToCpp.Utilities;
 ///<summary>Simple Parallel composite node.</summary>
 public partial class UBTComposite_SimpleParallel : UBTCompositeNode {
 // BTComposite_SimpleParallel
-	public byte FinishMode;
+	public EBTParallelMode FinishMode;
 }

@@ -5,7 +5,7 @@ using CSharpToCpp.Utilities;
 public partial class UAnimCompress : UAnimBoneCompressionCodec {
 // AnimCompress
 	public bool bNeedsSkeleton;
-	public byte TranslationCompressionFormat;
-	public byte RotationCompressionFormat;
-	public byte ScaleCompressionFormat;
+	public AnimationCompressionFormat TranslationCompressionFormat;
+	public AnimationCompressionFormat RotationCompressionFormat;
+	public AnimationCompressionFormat ScaleCompressionFormat;
 }

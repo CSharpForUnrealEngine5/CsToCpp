@@ -9,7 +9,7 @@ public partial class UParticleModuleAttractorParticle : UParticleModuleAttractor
 	public bool bStrengthByDistance;
 	public FRawDistributionFloat Strength;
 	public bool bAffectBaseVelocity;
-	public byte SelectionMethod;
+	public EAttractorParticleSelectionMethod SelectionMethod;
 	public bool bRenewSource;
 	public bool bInheritSourceVel;
 	public int LastSelIndex;

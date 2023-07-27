@@ -8,8 +8,8 @@ public partial class UWrapBox : UPanelWidget {
 	public FVector2D InnerSlotPadding;
 	public float WrapSize;
 	public bool bExplicitWrapSize;
-	public byte HorizontalAlignment;
-	public byte Orientation;
+	public EHorizontalAlignment HorizontalAlignment;
+	public EOrientation Orientation;
 	public  void SetInnerSlotPadding(FVector2D InPadding) {}
 	public  void SetHorizontalAlignment(EHorizontalAlignment InHorizontalAlignment) {}
 	public  UWrapBoxSlot AddChildToWrapBox(UWidget Content) { return default; }

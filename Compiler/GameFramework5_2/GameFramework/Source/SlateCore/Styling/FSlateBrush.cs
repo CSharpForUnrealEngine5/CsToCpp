@@ -7,10 +7,10 @@ public partial struct FSlateBrush {
 // SlateBrush
 	public bool bIsDynamicallyLoaded;
 	public bool bHasUObject_DEPRECATED;
-	public byte DrawAs;
-	public byte Tiling;
-	public byte Mirroring;
-	public byte ImageType;
+	public ESlateBrushDrawType DrawAs;
+	public ESlateBrushTileType Tiling;
+	public ESlateBrushMirrorType Mirroring;
+	public ESlateBrushImageType ImageType;
 	public FDeprecateSlateVector2D ImageSize;
 	public FMargin Margin;
 	public FLinearColor Tint_DEPRECATED;

@@ -5,11 +5,11 @@ using CSharpToCpp.Utilities;
 public partial struct FMutableModelImageProperties {
 // MutableModelImageProperties
 	public string TextureParameterName;
-	public byte Filter;
+	public TextureFilter Filter;
 	public bool SRGB;
 	public bool FlipGreenChannel;
 	public int LODBias;
-	public byte LODGroup;
-	public byte AddressX;
-	public byte AddressY;
+	public TextureGroup LODGroup;
+	public TextureAddress AddressX;
+	public TextureAddress AddressY;
 }

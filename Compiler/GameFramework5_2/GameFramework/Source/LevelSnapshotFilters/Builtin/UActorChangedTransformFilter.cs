@@ -5,7 +5,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Allows an actor depending on whether the actors' transforms have changed.</summary>
 public partial class UActorChangedTransformFilter : UActorSelectorFilter {
 // ActorChangedTransformFilter
-	public byte TransformCheckRule;
+	public ETransformReturnType TransformCheckRule;
 	public bool bIgnoreLocation;
 	public bool bIgnoreRotation;
 	public bool bIgnoreScale;

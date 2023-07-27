@@ -5,5 +5,5 @@ using CSharpToCpp.Utilities;
 ///<summary>RefPose pose nodes - ref pose or additive RefPose pose</summary>
 public partial struct FAnimNode_RefPose {
 // AnimNode_RefPose
-	public byte RefPoseType;
+	public ERefPoseType RefPoseType;
 }

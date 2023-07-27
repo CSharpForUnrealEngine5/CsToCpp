@@ -6,6 +6,6 @@ using CSharpToCpp.Utilities;
 public partial struct FAnimNode_TransitionPoseEvaluator {
 // AnimNode_TransitionPoseEvaluator
 	public int FramesToCachePose;
-	public byte DataSource;
-	public byte EvaluatorMode;
+	public EEvaluatorDataSource DataSource;
+	public EEvaluatorMode EvaluatorMode;
 }

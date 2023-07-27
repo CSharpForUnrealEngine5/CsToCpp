@@ -9,8 +9,8 @@ public partial struct FAnimLegIKDefinition {
 	public FBoneReference FKFootBone;
 	public int NumBonesInLimb;
 	public float MinRotationAngle;
-	public byte FootBoneForwardAxis;
-	public byte HingeRotationAxis;
+	public EAxis FootBoneForwardAxis;
+	public EAxis HingeRotationAxis;
 	public bool bEnableRotationLimit;
 	public bool bEnableKneeTwistCorrection;
 }

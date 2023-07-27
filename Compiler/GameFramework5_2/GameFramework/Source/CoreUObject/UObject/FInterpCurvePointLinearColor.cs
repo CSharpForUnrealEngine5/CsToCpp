@@ -9,5 +9,5 @@ public partial struct FInterpCurvePointLinearColor {
 	public FLinearColor OutVal;
 	public FLinearColor ArriveTangent;
 	public FLinearColor LeaveTangent;
-	public byte InterpMode;
+	public EInterpCurveMode InterpMode;
 }

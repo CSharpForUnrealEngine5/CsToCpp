@@ -6,7 +6,7 @@ public partial class UPhysicsAssetEditorOptions : UObject {
 // PhysicsAssetEditorOptions
 	public float PhysicsBlend;
 	public bool bUpdateJointsFromAnimation;
-	public byte PhysicsUpdateMode;
+	public EPhysicsTransformUpdateMode PhysicsUpdateMode;
 	public float PokePauseTime;
 	public float PokeBlendTime;
 	public float GravScale;

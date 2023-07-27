@@ -12,7 +12,7 @@ public partial class UCommonLoadGuard : UContentWidget {
 	public bool bShowLoading;
 	public  void BP_GuardAndLoadAsset(TSoftObjectPtr<UObject> InLazyAsset,FOnAssetLoaded OnAssetLoaded) {}
 	public FSlateBrush LoadingBackgroundBrush;
-	public byte ThrobberAlignment;
+	public EHorizontalAlignment ThrobberAlignment;
 	public FMargin ThrobberPadding;
 	public string LoadingText;
 	public UClass TextStyle;

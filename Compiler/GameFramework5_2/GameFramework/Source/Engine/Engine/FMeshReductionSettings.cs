@@ -14,15 +14,15 @@ public partial struct FMeshReductionSettings {
 	public float WeldingThreshold;
 	public float HardAngleThreshold;
 	public int BaseLODModel;
-	public byte SilhouetteImportance;
-	public byte TextureImportance;
-	public byte ShadingImportance;
+	public EMeshFeatureImportance SilhouetteImportance;
+	public EMeshFeatureImportance TextureImportance;
+	public EMeshFeatureImportance ShadingImportance;
 	public bool bRecalculateNormals;
 	public bool bGenerateUniqueLightmapUVs;
 	public bool bKeepSymmetry;
 	public bool bVisibilityAided;
 	public bool bCullOccluded;
 	public EStaticMeshReductionTerimationCriterion TerminationCriterion;
-	public byte VisibilityAggressiveness;
-	public byte VertexColorImportance;
+	public EMeshFeatureImportance VisibilityAggressiveness;
+	public EMeshFeatureImportance VertexColorImportance;
 }

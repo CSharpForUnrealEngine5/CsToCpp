@@ -4,6 +4,6 @@ using CSharpToCpp.Utilities;
 [CppInclude("EditorUtilityWidgetBlueprintFactory.h")]
 public partial class UEditorUtilityWidgetBlueprintFactory : UFactory {
 // EditorUtilityWidgetBlueprintFactory
-	public byte BlueprintType;
+	public EBlueprintType BlueprintType;
 	public UClass ParentClass;
 }

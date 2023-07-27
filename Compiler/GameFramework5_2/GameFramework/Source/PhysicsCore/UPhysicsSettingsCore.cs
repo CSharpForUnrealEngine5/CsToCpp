@@ -19,14 +19,14 @@ public partial class UPhysicsSettingsCore : UDeveloperSettings {
 	public bool bEnable2DPhysics;
 	public bool bDefaultHasComplexCollision_DEPRECATED;
 	public float BounceThresholdVelocity;
-	public byte FrictionCombineMode;
-	public byte RestitutionCombineMode;
+	public EFrictionCombineMode FrictionCombineMode;
+	public EFrictionCombineMode RestitutionCombineMode;
 	public float MaxAngularVelocity;
 	public float MaxDepenetrationVelocity;
 	public float ContactOffsetMultiplier;
 	public float MinContactOffset;
 	public float MaxContactOffset;
 	public bool bSimulateSkeletalMeshOnDedicatedServer;
-	public byte DefaultShapeComplexity;
+	public ECollisionTraceFlag DefaultShapeComplexity;
 	public FChaosSolverConfiguration SolverOptions;
 }

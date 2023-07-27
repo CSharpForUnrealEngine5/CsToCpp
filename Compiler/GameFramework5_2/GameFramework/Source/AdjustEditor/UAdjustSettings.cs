@@ -7,7 +7,7 @@ public partial class UAdjustSettings : UAnalyticsSettingsBase {
 	public bool bSandboxNondistribution;
 	public bool bSandboxDistribution;
 	public string AppToken;
-	public byte LogLevel;
+	public EAndroidAdjustLogging LogLevel;
 	public string DefaultTracker;
 	public string ProcessName;
 	public bool bEventBuffering;

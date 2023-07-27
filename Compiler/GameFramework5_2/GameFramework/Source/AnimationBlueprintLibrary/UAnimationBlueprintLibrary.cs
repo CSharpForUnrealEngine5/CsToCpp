@@ -19,16 +19,16 @@ public partial class UAnimationBlueprintLibrary : UBlueprintFunctionLibrary {
 	public static void SetBoneCompressionSettings(UAnimSequence AnimationSequence,UAnimBoneCompressionSettings CompressionSettings) {}
 	public static void GetCurveCompressionSettings(UAnimSequence AnimationSequence,UAnimCurveCompressionSettings CompressionSettings) {}
 	public static void SetCurveCompressionSettings(UAnimSequence AnimationSequence,UAnimCurveCompressionSettings CompressionSettings) {}
-	public static void GetAdditiveAnimationType(UAnimSequence AnimationSequence,byte AdditiveAnimationType) {}
-	public static void SetAdditiveAnimationType(UAnimSequence AnimationSequence,byte AdditiveAnimationType) {}
-	public static void GetAdditiveBasePoseType(UAnimSequence AnimationSequence,byte AdditiveBasePoseType) {}
-	public static void SetAdditiveBasePoseType(UAnimSequence AnimationSequence,byte AdditiveBasePoseType) {}
+	public static void GetAdditiveAnimationType(UAnimSequence AnimationSequence,EAdditiveAnimationType AdditiveAnimationType) {}
+	public static void SetAdditiveAnimationType(UAnimSequence AnimationSequence,EAdditiveAnimationType AdditiveAnimationType) {}
+	public static void GetAdditiveBasePoseType(UAnimSequence AnimationSequence,EAdditiveBasePoseType AdditiveBasePoseType) {}
+	public static void SetAdditiveBasePoseType(UAnimSequence AnimationSequence,EAdditiveBasePoseType AdditiveBasePoseType) {}
 	public static void GetAnimationInterpolationType(UAnimSequence AnimationSequence,EAnimInterpolationType InterpolationType) {}
 	public static void SetAnimationInterpolationType(UAnimSequence AnimationSequence,EAnimInterpolationType InterpolationType) {}
 	public static bool IsRootMotionEnabled(UAnimSequence AnimationSequence) { return default; }
 	public static void SetRootMotionEnabled(UAnimSequence AnimationSequence,bool bEnabled) {}
-	public static void GetRootMotionLockType(UAnimSequence AnimationSequence,byte LockType) {}
-	public static void SetRootMotionLockType(UAnimSequence AnimationSequence,byte RootMotionLockType) {}
+	public static void GetRootMotionLockType(UAnimSequence AnimationSequence,ERootMotionRootLock LockType) {}
+	public static void SetRootMotionLockType(UAnimSequence AnimationSequence,ERootMotionRootLock RootMotionLockType) {}
 	public static bool IsRootMotionLockForced(UAnimSequence AnimationSequence) { return default; }
 	public static void SetIsRootMotionLockForced(UAnimSequence AnimationSequence,bool bForced) {}
 	public static void GetAnimationSyncMarkers(UAnimSequence AnimationSequence,TArray<FAnimSyncMarker> Markers) {}

@@ -6,7 +6,7 @@ public partial struct FPCGWorldCommonQueryParams {
 // PCGWorldCommonQueryParams
 	public bool bIgnorePCGHits;
 	public bool bIgnoreSelfHits;
-	public byte CollisionChannel;
+	public ECollisionChannel CollisionChannel;
 	public bool bTraceComplex;
 	public EPCGWorldQueryFilterByTag ActorTagFilter;
 	public string ActorTagsList;

@@ -8,9 +8,9 @@ public partial class UTargetingSelectionTask_AOE : UTargetingTask {
 	public  FVector GetSourceLocation(FTargetingRequestHandle TargetingHandle) { return default; }
 	public  FVector GetSourceOffset(FTargetingRequestHandle TargetingHandle) { return default; }
 	public ETargetingAOEShape ShapeType;
-	public byte CollisionChannel;
+	public ECollisionChannel CollisionChannel;
 	public FCollisionProfileName CollisionProfileName;
-	public TArray<byte> CollisionObjectTypes;
+	public TArray<EObjectTypeQuery> CollisionObjectTypes;
 	public FVector DefaultSourceOffset;
 	public bool bIgnoreSourceActor;
 	public bool bIgnoreInstigatorActor;

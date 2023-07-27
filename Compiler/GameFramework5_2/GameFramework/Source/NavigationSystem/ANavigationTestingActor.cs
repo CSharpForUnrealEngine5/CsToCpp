@@ -25,7 +25,7 @@ public partial class ANavigationTestingActor : AActor {
 	public bool bShowBestPath;
 	public bool bShowDiffWithPreviousStep;
 	public bool bShouldBeVisibleInGame;
-	public byte CostDisplayMode;
+	public ENavCostDisplay CostDisplayMode;
 	public FVector2D TextCanvasOffset;
 	public bool bPathExist;
 	public bool bPathIsPartial;

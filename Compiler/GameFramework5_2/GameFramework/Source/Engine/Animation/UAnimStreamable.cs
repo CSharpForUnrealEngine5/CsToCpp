@@ -17,7 +17,7 @@ public partial class UAnimStreamable : UAnimSequenceBase {
 	public UAnimBoneCompressionSettings BoneCompressionSettings;
 	public UAnimCurveCompressionSettings CurveCompressionSettings;
 	public bool bEnableRootMotion;
-	public byte RootMotionRootLock;
+	public ERootMotionRootLock RootMotionRootLock;
 	public bool bForceRootLock;
 	public bool bUseNormalizedRootMotionScale;
 }

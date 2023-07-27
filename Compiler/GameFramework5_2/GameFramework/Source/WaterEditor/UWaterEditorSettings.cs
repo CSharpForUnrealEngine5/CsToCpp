@@ -5,7 +5,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Implements the editor settings for the Water plugin.</summary>
 public partial class UWaterEditorSettings : UDeveloperSettings {
 // WaterEditorSettings
-	public byte TextureGroupForGeneratedTextures;
+	public TextureGroup TextureGroupForGeneratedTextures;
 	public int MaxWaterVelocityAndHeightTextureSize;
 	public float VisualizeWaterVelocityScale;
 	public TSoftObjectPtr<UMaterialParameterCollection> LandscapeMaterialParameterCollection;

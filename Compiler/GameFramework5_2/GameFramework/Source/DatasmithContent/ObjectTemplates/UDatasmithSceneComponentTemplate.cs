@@ -5,7 +5,7 @@ using CSharpToCpp.Utilities;
 public partial class UDatasmithSceneComponentTemplate : UDatasmithObjectTemplate {
 // DatasmithSceneComponentTemplate
 	public FTransform RelativeTransform;
-	public byte Mobility;
+	public EComponentMobility Mobility;
 	public TSoftObjectPtr<USceneComponent> AttachParent;
 	public bool bVisible;
 	public bool bCastShadow;

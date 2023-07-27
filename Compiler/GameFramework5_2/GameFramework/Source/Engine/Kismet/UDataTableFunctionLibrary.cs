@@ -4,7 +4,7 @@ using CSharpToCpp.Utilities;
 [CppInclude("Kismet/DataTableFunctionLibrary.h")]
 public partial class UDataTableFunctionLibrary : UBlueprintFunctionLibrary {
 // DataTableFunctionLibrary
-	public static void EvaluateCurveTableRow(UCurveTable CurveTable,string RowName,float InXY,byte OutResult,float OutXY,string ContextString) {}
+	public static void EvaluateCurveTableRow(UCurveTable CurveTable,string RowName,float InXY,EEvaluateCurveTableResult OutResult,float OutXY,string ContextString) {}
 	public static bool DoesDataTableRowExist(UDataTable Table,string RowName) { return default; }
 	public static void GetDataTableRowNames(UDataTable Table,TArray<string> OutRowNames) {}
 	public static TArray<string> GetDataTableColumnAsString(UDataTable DataTable,string PropertyName) { return default; }

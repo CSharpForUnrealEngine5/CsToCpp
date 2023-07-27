@@ -41,10 +41,10 @@ public partial class UParticleSystem : UFXSystemAsset {
 	public bool bAllowManagedTicking;
 	public bool bAutoDeactivate;
 	public bool bRegenerateLODDuplicate;
-	public byte SystemUpdateMode;
-	public byte LODMethod;
+	public EParticleSystemUpdateMode SystemUpdateMode;
+	public ParticleSystemLODMethod LODMethod;
 	public EParticleSystemInsignificanceReaction InsignificantReaction;
-	public byte OcclusionBoundsMethod;
+	public EParticleSystemOcclusionBoundsMethod OcclusionBoundsMethod;
 	public EParticleSignificanceLevel MaxSignificanceLevel;
 	public uint MinTimeBetweenTicks;
 	public float InsignificanceDelay;

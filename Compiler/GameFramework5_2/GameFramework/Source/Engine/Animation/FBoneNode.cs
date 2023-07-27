@@ -7,5 +7,5 @@ public partial struct FBoneNode {
 // BoneNode
 	public string Name_DEPRECATED;
 	public int ParentIndex_DEPRECATED;
-	public byte TranslationRetargetingMode;
+	public EBoneTranslationRetargetingMode TranslationRetargetingMode;
 }

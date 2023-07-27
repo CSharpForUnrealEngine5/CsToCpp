@@ -6,7 +6,7 @@ using CSharpToCpp.Utilities;
 public partial struct FLinearConstraint {
 // LinearConstraint
 	public float Limit;
-	public byte XMotion;
-	public byte YMotion;
-	public byte ZMotion;
+	public ELinearConstraintMotion XMotion;
+	public ELinearConstraintMotion YMotion;
+	public ELinearConstraintMotion ZMotion;
 }

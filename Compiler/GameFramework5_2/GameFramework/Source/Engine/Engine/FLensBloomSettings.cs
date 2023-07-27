@@ -6,5 +6,5 @@ public partial struct FLensBloomSettings {
 // LensBloomSettings
 	public FGaussianSumBloomSettings GaussianSum;
 	public FConvolutionBloomSettings Convolution;
-	public byte Method;
+	public EBloomMethod Method;
 }

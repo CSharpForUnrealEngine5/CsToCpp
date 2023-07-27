@@ -8,6 +8,6 @@ public partial class UPhysicalMaterialMask : UObject {
 	public UAssetImportData AssetImportData;
 	public UTexture MaskTexture;
 	public int UVChannelIndex;
-	public byte AddressX;
-	public byte AddressY;
+	public TextureAddress AddressX;
+	public TextureAddress AddressY;
 }

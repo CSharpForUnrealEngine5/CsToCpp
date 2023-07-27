@@ -10,7 +10,7 @@ public partial struct FLandscapeLayer {
 	public bool bLocked;
 	public float HeightmapAlpha;
 	public float WeightmapAlpha;
-	public byte BlendMode;
+	public ELandscapeBlendMode BlendMode;
 	public TArray<FLandscapeLayerBrush> Brushes;
 	public TMap<ULandscapeLayerInfoObject,bool> WeightmapLayerAllocationBlend;
 }

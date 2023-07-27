@@ -12,7 +12,7 @@ public partial class APawn : AActor {
 	public bool bCanAffectNavigationGeneration;
 	public bool bIsLocalViewTarget;
 	public float BaseEyeHeight;
-	public byte AutoPossessPlayer;
+	public EAutoReceiveInput AutoPossessPlayer;
 	public EAutoPossessAI AutoPossessAI;
 	public byte RemoteViewPitch;
 	public UClass AIControllerClass;

@@ -15,7 +15,7 @@ public partial struct FMinimalViewInfo {
 	public float AspectRatio;
 	public bool bConstrainAspectRatio;
 	public bool bUseFieldOfViewForLOD;
-	public byte ProjectionMode;
+	public ECameraProjectionMode ProjectionMode;
 	public float PostProcessBlendWeight;
 	public FPostProcessSettings PostProcessSettings;
 	public FVector2D OffCenterProjectionOffset;

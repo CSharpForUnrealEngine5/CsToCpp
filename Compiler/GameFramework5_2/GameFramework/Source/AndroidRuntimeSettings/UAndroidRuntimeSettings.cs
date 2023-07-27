@@ -13,7 +13,7 @@ public partial class UAndroidRuntimeSettings : UObject {
 	public string VersionDisplayName;
 	public int MinSDKVersion;
 	public int TargetSDKVersion;
-	public byte InstallLocation;
+	public EAndroidInstallLocation InstallLocation;
 	public bool bEnableLint;
 	public bool bPackageDataInsideApk;
 	public bool bCreateAllPlatformsInstall;
@@ -24,13 +24,13 @@ public partial class UAndroidRuntimeSettings : UObject {
 	public bool bAllowOverflowOBBFiles;
 	public bool bUseExternalFilesDir;
 	public bool bPublicLogFiles;
-	public byte Orientation;
+	public EAndroidScreenOrientation Orientation;
 	public float MaxAspectRatio;
 	public bool bUseDisplayCutout;
 	public bool bRestoreNotificationsOnReboot;
 	public bool bFullScreen;
 	public bool bEnableNewKeyboard;
-	public byte DepthBufferPreference;
+	public EAndroidDepthBufferPreference DepthBufferPreference;
 	public bool bValidateTextureFormats;
 	public bool bForceCompressNativeLibs;
 	public bool bEnableAdvancedBinaryCompression;
@@ -47,7 +47,7 @@ public partial class UAndroidRuntimeSettings : UObject {
 	public TArray<string> ExtraPermissions;
 	public bool bAndroidVoiceEnabled;
 	public bool bEnableMulticastSupport;
-	public TArray<byte> PackageForOculusMobile;
+	public TArray<EOculusMobileDevice> PackageForOculusMobile;
 	public bool bRemoveOSIG;
 	public string KeyStore;
 	public string KeyAlias;
@@ -76,9 +76,9 @@ public partial class UAndroidRuntimeSettings : UObject {
 	public bool bEnableSnapshots;
 	public bool bSupportAdMob;
 	public string AdMobAppID;
-	public byte TagForChildDirectedTreatment;
-	public byte TagForUnderAgeOfConsent;
-	public byte MaxAdContentRating;
+	public ETagForChildDirectedTreatment TagForChildDirectedTreatment;
+	public ETagForUnderAgeOfConsent TagForUnderAgeOfConsent;
+	public EMaxAdContentRating MaxAdContentRating;
 	public string AdMobAdUnitID;
 	public TArray<string> AdMobAdUnitIDs;
 	public string GooglePlayLicenseKey;
@@ -88,7 +88,7 @@ public partial class UAndroidRuntimeSettings : UObject {
 	public bool bAllowControllers;
 	public bool bBlockAndroidKeysOnControllers;
 	public bool bControllersBlockDeviceFeedback;
-	public byte AndroidAudio;
+	public EAndroidAudio AndroidAudio;
 	public int AudioSampleRate;
 	public int AudioCallbackBufferFrameSize;
 	public int AudioNumBuffersToEnqueue;
@@ -110,7 +110,7 @@ public partial class UAndroidRuntimeSettings : UObject {
 	public float MinSampleRate;
 	public float CompressionQualityModifier;
 	public float AutoStreamingThreshold;
-	public byte AndroidGraphicsDebugger;
+	public EAndroidGraphicsDebugger AndroidGraphicsDebugger;
 	public FDirectoryPath MaliGraphicsDebuggerPath;
 	public bool bEnableMaliPerfCounters;
 	public bool bMultiTargetFormat_ETC2;

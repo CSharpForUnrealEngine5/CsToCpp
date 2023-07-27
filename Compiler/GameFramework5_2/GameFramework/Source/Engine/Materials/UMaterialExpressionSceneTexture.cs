@@ -5,6 +5,6 @@ using CSharpToCpp.Utilities;
 public partial class UMaterialExpressionSceneTexture : UMaterialExpression {
 // MaterialExpressionSceneTexture
 	public FExpressionInput Coordinates;
-	public byte SceneTextureId;
+	public ESceneTextureId SceneTextureId;
 	public bool bFiltered;
 }

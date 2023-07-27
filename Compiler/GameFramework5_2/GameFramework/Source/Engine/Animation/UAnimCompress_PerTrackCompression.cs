@@ -8,9 +8,9 @@ public partial class UAnimCompress_PerTrackCompression : UAnimCompress_RemoveLin
 	public float MaxPosDiffBitwise;
 	public float MaxAngleDiffBitwise;
 	public float MaxScaleDiffBitwise;
-	public TArray<byte> AllowedRotationFormats;
-	public TArray<byte> AllowedTranslationFormats;
-	public TArray<byte> AllowedScaleFormats;
+	public TArray<AnimationCompressionFormat> AllowedRotationFormats;
+	public TArray<AnimationCompressionFormat> AllowedTranslationFormats;
+	public TArray<AnimationCompressionFormat> AllowedScaleFormats;
 	public bool bResampleAnimation;
 	public float ResampledFramerate;
 	public int MinKeysForResampling;

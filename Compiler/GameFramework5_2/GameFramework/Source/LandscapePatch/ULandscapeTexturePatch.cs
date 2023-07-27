@@ -59,5 +59,5 @@ public partial class ULandscapeTexturePatch : ULandscapePatchComponent {
 	public float ResolutionMultiplier;
 	public int InitTextureSizeX;
 	public int InitTextureSizeY;
-	public byte HeightRenderTargetFormat;
+	public ETextureRenderTargetFormat HeightRenderTargetFormat;
 }

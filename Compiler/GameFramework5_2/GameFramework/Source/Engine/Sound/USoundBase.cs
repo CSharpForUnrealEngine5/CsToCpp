@@ -17,7 +17,7 @@ public partial class USoundBase : UObject {
 	public bool bHasVirtualizeWhenSilent_DEPRECATED;
 	public bool bBypassVolumeScaleForPriority;
 	public EVirtualizationMode VirtualizationMode;
-	public byte MaxConcurrentResolutionRule_DEPRECATED;
+	public EMaxConcurrentResolutionRule MaxConcurrentResolutionRule_DEPRECATED;
 	public USoundConcurrency SoundConcurrencySettings_DEPRECATED;
 	public TSet<USoundConcurrency> ConcurrencySet;
 	public FSoundConcurrencySettings ConcurrencyOverrides;

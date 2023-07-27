@@ -6,8 +6,8 @@ using CSharpToCpp.Utilities;
 public partial class UUserInterfaceSettings : UDeveloperSettings {
 // UserInterfaceSettings
 	public ERenderFocusRule RenderFocusRule;
-	public TMap<byte,FHardwareCursorReference> HardwareCursors;
-	public TMap<byte,FSoftClassPath> SoftwareCursors;
+	public TMap<EMouseCursor,FHardwareCursorReference> HardwareCursors;
+	public TMap<EMouseCursor,FSoftClassPath> SoftwareCursors;
 	public FSoftClassPath DefaultCursor_DEPRECATED;
 	public FSoftClassPath TextEditBeamCursor_DEPRECATED;
 	public FSoftClassPath CrosshairsCursor_DEPRECATED;

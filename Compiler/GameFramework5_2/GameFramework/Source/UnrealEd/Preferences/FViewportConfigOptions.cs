@@ -5,7 +5,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Persistent per-viewport options</summary>
 public partial struct FViewportConfigOptions {
 // ViewportConfigOptions
-	public byte ViewModeIndex;
+	public EViewModeIndex ViewModeIndex;
 	public float ViewFOV;
 	public int CameraSpeedSetting;
 	public float CameraSpeedScalar;

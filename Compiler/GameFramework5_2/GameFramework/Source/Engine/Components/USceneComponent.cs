@@ -34,8 +34,8 @@ public partial class USceneComponent : UActorComponent {
 	public  void SetShouldUpdatePhysicsVolume(bool bInShouldUpdatePhysicsVolume) {}
 	public bool bIsNotRenderAttachmentRoot;
 	public bool bVisualizeComponent;
-	public byte Mobility;
-	public byte DetailMode;
+	public EComponentMobility Mobility;
+	public EDetailMode DetailMode;
 	public FPhysicsVolumeChanged PhysicsVolumeChangedDelegate;
 	public USceneComponent ReplacementSceneComponent;
 	public  void OnRep_Transform() {}

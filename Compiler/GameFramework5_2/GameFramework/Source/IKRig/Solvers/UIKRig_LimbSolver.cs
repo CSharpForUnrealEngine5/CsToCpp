@@ -6,7 +6,7 @@ public partial class UIKRig_LimbSolver : UIKRigSolver {
 // IKRig_LimbSolver
 	public string RootName;
 	public float ReachPrecision;
-	public byte HingeRotationAxis;
+	public EAxis HingeRotationAxis;
 	public int MaxIterations;
 	public bool bEnableLimit;
 	public float MinRotationAngle;
@@ -14,6 +14,6 @@ public partial class UIKRig_LimbSolver : UIKRigSolver {
 	public float PullDistribution;
 	public float ReachStepAlpha;
 	public bool bEnableTwistCorrection;
-	public byte EndBoneForwardAxis;
+	public EAxis EndBoneForwardAxis;
 	public UIKRig_LimbEffector Effector;
 }

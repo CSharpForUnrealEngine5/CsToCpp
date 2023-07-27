@@ -9,5 +9,5 @@ public partial class UDistributionFloatParameterBase : UDistributionFloatConstan
 	public float MaxInput;
 	public float MinOutput;
 	public float MaxOutput;
-	public byte ParamMode;
+	public DistributionParamMode ParamMode;
 }

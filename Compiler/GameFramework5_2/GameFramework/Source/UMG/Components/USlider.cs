@@ -10,7 +10,7 @@ public partial class USlider : UWidget {
 	public float MinValue;
 	public float MaxValue;
 	public FSliderStyle WidgetStyle;
-	public byte Orientation;
+	public EOrientation Orientation;
 	public FLinearColor SliderBarColor;
 	public FLinearColor SliderHandleColor;
 	public bool IndentHandle;

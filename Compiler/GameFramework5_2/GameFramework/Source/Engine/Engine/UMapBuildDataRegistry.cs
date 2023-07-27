@@ -4,5 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("Engine/MapBuildDataRegistry.h")]
 public partial class UMapBuildDataRegistry : UObject {
 // MapBuildDataRegistry
-	public byte LevelLightingQuality;
+	public ELightingBuildQuality LevelLightingQuality;
 }

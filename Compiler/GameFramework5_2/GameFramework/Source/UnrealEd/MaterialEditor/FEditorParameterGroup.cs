@@ -5,7 +5,7 @@ using CSharpToCpp.Utilities;
 public partial struct FEditorParameterGroup {
 // EditorParameterGroup
 	public string GroupName;
-	public byte GroupAssociation;
+	public EMaterialParameterAssociation GroupAssociation;
 	public TArray<UDEditorParameterValue> Parameters;
 	public int GroupSortPriority;
 }

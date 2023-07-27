@@ -5,7 +5,7 @@ using CSharpToCpp.Utilities;
 public partial struct FRigVMDrawInstruction {
 // RigVMDrawInstruction
 	public string Name;
-	public byte PrimitiveType;
+	public ERigVMDrawSettings PrimitiveType;
 	public TArray<FVector> Positions;
 	public FLinearColor Color;
 	public float Thickness;

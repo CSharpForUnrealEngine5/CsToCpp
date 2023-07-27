@@ -6,7 +6,7 @@ public partial class UParticleEmitter : UObject {
 // ParticleEmitter
 	public string EmitterName;
 	public int SubUVDataOffset;
-	public byte EmitterRenderMode;
+	public EEmitterRenderMode EmitterRenderMode;
 	public EParticleSignificanceLevel SignificanceLevel;
 	public bool bUseLegacySpawningBehavior;
 	public bool ConvertedModules;
@@ -15,7 +15,7 @@ public partial class UParticleEmitter : UObject {
 	public bool bDisabledLODsKeepEmitterAlive;
 	public bool bDisableWhenInsignficant;
 	public bool bCollapsed;
-	public byte DetailMode_DEPRECATED;
+	public EDetailMode DetailMode_DEPRECATED;
 	public FColor EmitterEditorColor;
 	public TArray<UParticleLODLevel> LODLevels;
 	public int PeakActiveParticles;

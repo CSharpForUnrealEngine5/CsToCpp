@@ -4,7 +4,7 @@ using CSharpToCpp.Utilities;
 [CppInclude("CommonNumericTextBlock.h")]
 public partial struct FCommonNumberFormattingOptions {
 // CommonNumberFormattingOptions
-	public byte RoundingMode;
+	public ERoundingMode RoundingMode;
 	public bool UseGrouping;
 	public int MinimumIntegralDigits;
 	public int MaximumIntegralDigits;

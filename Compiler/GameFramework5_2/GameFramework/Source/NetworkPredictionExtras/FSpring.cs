@@ -6,7 +6,7 @@ public partial struct FSpring {
 // Spring
 	public FVector LocalPosition;
 	public FVector LocalDirection;
-	public byte TraceChannel;
+	public ECollisionChannel TraceChannel;
 	public float Stiffness;
 	public float DampingStrength;
 	public float RaycastLength;

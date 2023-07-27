@@ -15,9 +15,9 @@ public partial struct FAnimNotifyEvent {
 	public float Duration;
 	public FAnimLinkableElement EndLink;
 	public bool bConvertedFromBranchingPoint;
-	public byte MontageTickType;
+	public EMontageNotifyTickType MontageTickType;
 	public float NotifyTriggerChance;
-	public byte NotifyFilterType;
+	public ENotifyFilterType NotifyFilterType;
 	public int NotifyFilterLOD;
 	public bool bTriggerOnDedicatedServer;
 	public bool bTriggerOnFollower;

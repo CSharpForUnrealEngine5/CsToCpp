@@ -5,5 +5,5 @@ using CSharpToCpp.Utilities;
 public partial struct FCustomOutput {
 // CustomOutput
 	public string OutputName;
-	public byte OutputType;
+	public ECustomMaterialOutputType OutputType;
 }

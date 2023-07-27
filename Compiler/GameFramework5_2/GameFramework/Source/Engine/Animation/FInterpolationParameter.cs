@@ -7,5 +7,5 @@ public partial struct FInterpolationParameter {
 	public float InterpolationTime;
 	public float DampingRatio;
 	public float MaxSpeed;
-	public byte InterpolationType;
+	public EFilterInterpolationType InterpolationType;
 }

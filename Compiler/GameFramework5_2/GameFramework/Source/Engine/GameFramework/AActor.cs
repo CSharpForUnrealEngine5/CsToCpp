@@ -52,7 +52,7 @@ public partial class AActor : UObject {
 	public  ENetRole GetRemoteRole() { return default; }
 	public float InitialLifeSpan;
 	public float CustomTimeDilation;
-	public byte RemoteRole;
+	public ENetRole RemoteRole;
 	public int RayTracingGroupId;
 	public EActorGridPlacement GridPlacement_DEPRECATED;
 	public string RuntimeGrid;
@@ -61,10 +61,10 @@ public partial class AActor : UObject {
 	public AActor Owner;
 	public string NetDriverName;
 	public  void OnRep_AttachmentReplication() {}
-	public byte Role;
-	public byte NetDormancy;
+	public ENetRole Role;
+	public ENetDormancy NetDormancy;
 	public ESpawnActorCollisionHandlingMethod SpawnCollisionHandlingMethod;
-	public byte AutoReceiveInput;
+	public EAutoReceiveInput AutoReceiveInput;
 	public int InputPriority;
 	public UInputComponent InputComponent;
 	public float NetCullDistanceSquared;

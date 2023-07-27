@@ -12,5 +12,5 @@ public partial class URadialFalloff : UFieldNodeFloat {
 	public float Default;
 	public float Radius;
 	public FVector Position;
-	public byte Falloff;
+	public EFieldFalloffType Falloff;
 }

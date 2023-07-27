@@ -7,7 +7,7 @@ public partial class UScrollBar : UWidget {
 	public FScrollBarStyle WidgetStyle;
 	public bool bAlwaysShowScrollbar;
 	public bool bAlwaysShowScrollbarTrack;
-	public byte Orientation;
+	public EOrientation Orientation;
 	public FVector2D Thickness;
 	public FMargin Padding;
 	public  void SetState(float InOffsetFraction,float InThumbSizeFraction) {}

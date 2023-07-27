@@ -7,7 +7,7 @@ public partial class UUserDefinedStruct : UScriptStruct {
 	public TWeakObjectPtr<UUserDefinedStruct> PrimaryStruct;
 	public string ErrorMessage;
 	public UObject EditorData;
-	public byte Status;
+	public EUserDefinedStructureStatus Status;
 	public FGuid Guid;
 	public UStructCookedMetaData CachedCookedMetaDataPtr;
 }

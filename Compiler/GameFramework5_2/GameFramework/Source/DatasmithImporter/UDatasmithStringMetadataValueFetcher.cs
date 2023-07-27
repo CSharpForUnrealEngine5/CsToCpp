@@ -5,6 +5,6 @@ using CSharpToCpp.Utilities;
 ///<summary>Filter objects based on the key value of their metadata.</summary>
 public partial class UDatasmithStringMetadataValueFetcher : UDataprepStringsArrayFetcher {
 // DatasmithStringMetadataValueFetcher
-	public byte KeyMatch;
+	public EMetadataKeyMatchingCriteria KeyMatch;
 	public string Key;
 }

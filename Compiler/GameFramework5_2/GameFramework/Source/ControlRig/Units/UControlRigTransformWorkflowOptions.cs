@@ -4,6 +4,6 @@ using CSharpToCpp.Utilities;
 [CppInclude("Units/ControlRigNodeWorkflow.h")]
 public partial class UControlRigTransformWorkflowOptions : UControlRigWorkflowOptions {
 // ControlRigTransformWorkflowOptions
-	public byte TransformType;
+	public ERigTransformType TransformType;
 	public  TArray<FRigVMUserWorkflow> ProvideWorkflows(UObject InSubject) { return default; }
 }

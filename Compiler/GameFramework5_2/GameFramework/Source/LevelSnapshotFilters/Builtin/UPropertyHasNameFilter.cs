@@ -5,7 +5,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Allows a property when is has a certain name</summary>
 public partial class UPropertyHasNameFilter : UPropertySelectorFilter {
 // PropertyHasNameFilter
-	public byte NameMatchingRule;
+	public ENameMatchingRule NameMatchingRule;
 	public bool bIncludeStructSubproperties;
 	public TSet<string> AllowedNames;
 }

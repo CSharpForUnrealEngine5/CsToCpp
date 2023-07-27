@@ -4,7 +4,7 @@ using CSharpToCpp.Utilities;
 [CppInclude("ThumbnailRendering/SceneThumbnailInfoWithPrimitive.h")]
 public partial class USceneThumbnailInfoWithPrimitive : USceneThumbnailInfo {
 // SceneThumbnailInfoWithPrimitive
-	public byte PrimitiveType;
+	public EThumbnailPrimType PrimitiveType;
 	public FSoftObjectPath PreviewMesh;
 	public bool bUserModifiedShape;
 }

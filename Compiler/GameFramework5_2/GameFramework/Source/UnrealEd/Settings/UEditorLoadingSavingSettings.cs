@@ -5,7 +5,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Implements the Level Editor's loading and saving settings.</summary>
 public partial class UEditorLoadingSavingSettings : UObject {
 // EditorLoadingSavingSettings
-	public byte LoadLevelAtStartup;
+	public ELoadLevelAtStartup LoadLevelAtStartup;
 	public bool bForceCompilationAtStartup;
 	public bool bRestoreOpenAssetTabsOnRestart;
 	public bool bEnableSourceControlCompatabilityCheck_DEPRECATED;

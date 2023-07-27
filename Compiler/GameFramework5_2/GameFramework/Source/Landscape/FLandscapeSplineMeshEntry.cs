@@ -10,7 +10,7 @@ public partial struct FLandscapeSplineMeshEntry {
 	public FVector2D CenterAdjust;
 	public bool bScaleToWidth;
 	public FVector Scale;
-	public byte Orientation_DEPRECATED;
-	public byte ForwardAxis;
-	public byte UpAxis;
+	public LandscapeSplineMeshOrientation Orientation_DEPRECATED;
+	public ESplineMeshAxis ForwardAxis;
+	public ESplineMeshAxis UpAxis;
 }

@@ -7,6 +7,6 @@ public partial struct FFOscillator {
 // FOscillator
 	public float Amplitude;
 	public float Frequency;
-	public byte InitialOffset;
+	public EInitialOscillatorOffset InitialOffset;
 	public EOscillatorWaveform Waveform;
 }

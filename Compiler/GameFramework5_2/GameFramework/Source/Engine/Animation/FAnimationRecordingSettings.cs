@@ -11,8 +11,8 @@ public partial struct FAnimationRecordingSettings {
 	public FFrameRate SampleFrameRate;
 	public float Length;
 	public EAnimInterpolationType Interpolation;
-	public byte InterpMode;
-	public byte TangentMode;
+	public ERichCurveInterpMode InterpMode;
+	public ERichCurveTangentMode TangentMode;
 	public bool bRecordTransforms;
 	public bool bRecordMorphTargets;
 	public bool bRecordAttributeCurves;

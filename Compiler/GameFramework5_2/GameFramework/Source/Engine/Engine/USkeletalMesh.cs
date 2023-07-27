@@ -35,8 +35,8 @@ public partial class USkeletalMesh : USkinnedAsset {
 	public  void SetLODSettings(USkeletalMeshLODSettings InLODSettings) {}
 	public  void SetDefaultAnimatingRig(TSoftObjectPtr<UObject> InAnimatingRig) {}
 	public  TSoftObjectPtr<UObject> GetDefaultAnimatingRig() { return default; }
-	public byte SkelMirrorAxis;
-	public byte SkelMirrorFlipAxis;
+	public EAxis SkelMirrorAxis;
+	public EAxis SkelMirrorFlipAxis;
 	public bool bUseFullPrecisionUVs_DEPRECATED;
 	public bool bUseHighPrecisionTangentBasis_DEPRECATED;
 	public bool bHasBeenSimplified;

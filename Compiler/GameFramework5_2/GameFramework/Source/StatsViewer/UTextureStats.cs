@@ -11,8 +11,8 @@ public partial class UTextureStats : UObject {
 	public string Virtual;
 	public FVector2D MaxDim;
 	public FVector2D CurrentDim;
-	public byte Format;
-	public byte Group;
+	public EPixelFormat Format;
+	public TextureGroup Group;
 	public int LODBias;
 	public float CurrentKB;
 	public float FullyLoadedKB;

@@ -7,5 +7,5 @@ public partial class UNiagaraDataInterfaceAsyncGpuTrace : UNiagaraDataInterface 
 // NiagaraDataInterfaceAsyncGpuTrace
 	public int MaxTracesPerParticle;
 	public int MaxRetraces;
-	public byte TraceProvider;
+	public ENDICollisionQuery_AsyncGpuTraceProvider TraceProvider;
 }

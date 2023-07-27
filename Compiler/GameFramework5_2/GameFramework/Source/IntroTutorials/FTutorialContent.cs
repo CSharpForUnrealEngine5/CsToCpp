@@ -5,7 +5,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Content wrapper</summary>
 public partial struct FTutorialContent {
 // TutorialContent
-	public byte Type;
+	public ETutorialContent Type;
 	public string Content;
 	public string ExcerptName;
 	public string Text;

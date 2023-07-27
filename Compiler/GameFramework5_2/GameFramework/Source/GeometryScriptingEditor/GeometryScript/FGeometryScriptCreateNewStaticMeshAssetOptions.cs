@@ -10,5 +10,5 @@ public partial struct FGeometryScriptCreateNewStaticMeshAssetOptions {
 	public FMeshNaniteSettings NaniteSettings;
 	public float NaniteProxyTrianglePercent;
 	public bool bEnableCollision;
-	public byte CollisionMode;
+	public ECollisionTraceFlag CollisionMode;
 }

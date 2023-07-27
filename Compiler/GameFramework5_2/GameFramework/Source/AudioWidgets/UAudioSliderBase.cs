@@ -31,7 +31,7 @@ public partial class UAudioSliderBase : UWidget {
 	public  void SetValueTextReadOnly(bool bIsReadOnly) {}
 	public  void SetShowLabelOnlyOnHover(bool bShowLabelOnlyOnHover) {}
 	public  void SetShowUnitsText(bool bShowUnitsText) {}
-	public byte Orientation;
+	public EOrientation Orientation;
 	public FOnFloatValueChangedEvent OnValueChanged;
 	public  void SetSliderBackgroundColor(FLinearColor InValue) {}
 	public  void SetSliderBarColor(FLinearColor InValue) {}

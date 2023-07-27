@@ -4,6 +4,6 @@ using CSharpToCpp.Utilities;
 [CppInclude("InterchangePipelineFactories.h")]
 public partial class UInterchangeBlueprintPipelineBaseFactory : UFactory {
 // InterchangeBlueprintPipelineBaseFactory
-	public byte BlueprintType;
+	public EBlueprintType BlueprintType;
 	public UClass ParentClass;
 }

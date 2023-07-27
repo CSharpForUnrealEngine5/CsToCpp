@@ -9,7 +9,7 @@ public partial class UEdGraphNode : UObject {
 	public int NodePosY;
 	public int NodeWidth;
 	public int NodeHeight;
-	public byte AdvancedPinDisplay;
+	public ENodeAdvancedPins AdvancedPinDisplay;
 	public ENodeEnabledState EnabledState;
 	public bool bDisplayAsDisabled;
 	public bool bUserSetEnabledState;

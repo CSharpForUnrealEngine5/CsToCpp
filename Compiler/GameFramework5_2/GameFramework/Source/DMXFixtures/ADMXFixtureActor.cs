@@ -4,7 +4,7 @@ using CSharpToCpp.Utilities;
 [CppInclude("DMXFixtureActor.h")]
 public partial class ADMXFixtureActor : ADMXFixtureActorBase {
 // DMXFixtureActor
-	public byte QualityLevel;
+	public EDMXFixtureQualityLevel QualityLevel;
 	public float BeamQuality;
 	public float ZoomQuality;
 	public USceneComponent Base;

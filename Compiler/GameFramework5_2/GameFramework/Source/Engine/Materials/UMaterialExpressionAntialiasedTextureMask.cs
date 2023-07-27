@@ -5,5 +5,5 @@ using CSharpToCpp.Utilities;
 public partial class UMaterialExpressionAntialiasedTextureMask : UMaterialExpressionTextureSampleParameter2D {
 // MaterialExpressionAntialiasedTextureMask
 	public float Threshold;
-	public byte Channel;
+	public ETextureColorChannel Channel;
 }

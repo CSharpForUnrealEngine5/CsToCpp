@@ -14,7 +14,7 @@ public partial class UPixelInspectorView : UObject {
 	public float Metallic;
 	public float Specular;
 	public float Roughness;
-	public byte MaterialShadingModel;
+	public EMaterialShadingModel MaterialShadingModel;
 	public int SelectiveOutputMask;
 	public FLinearColor BaseColor;
 	public float IndirectIrradiance;

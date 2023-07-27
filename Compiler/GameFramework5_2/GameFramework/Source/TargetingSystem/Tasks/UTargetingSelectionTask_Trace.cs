@@ -12,7 +12,7 @@ public partial class UTargetingSelectionTask_Trace : UTargetingTask {
 	public  float GetSweptTraceRadius(FTargetingRequestHandle TargetingHandle) { return default; }
 	public  void GetAdditionalActorsToIgnore(FTargetingRequestHandle TargetingHandle,TArray<AActor> OutAdditionalActorsToIgnore) {}
 	public ETargetingTraceType TraceType;
-	public byte TraceChannel;
+	public ETraceTypeQuery TraceChannel;
 	public FCollisionProfileName CollisionProfileName;
 	public FScalableFloat DefaultSweptTraceRadius;
 	public FScalableFloat DefaultTraceLength;

@@ -4,8 +4,8 @@ using CSharpToCpp.Utilities;
 [CppInclude("RigVMFunctions/Math/RigVMMathLibrary.h")]
 public partial struct FRigVMMirrorSettings {
 // RigVMMirrorSettings
-	public byte MirrorAxis;
-	public byte AxisToFlip;
+	public EAxis MirrorAxis;
+	public EAxis AxisToFlip;
 	public string SearchString;
 	public string ReplaceString;
 }

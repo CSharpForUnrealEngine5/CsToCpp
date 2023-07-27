@@ -11,7 +11,7 @@ public partial class AWorldPartitionMiniMap : AInfo {
 	public TSet<FActorDataLayer> ExcludedDataLayers;
 	public int WorldUnitsPerPixel;
 	public int BuilderCellSize;
-	public byte CaptureSource;
+	public ESceneCaptureSource CaptureSource;
 	public uint CaptureWarmupFrames;
 	public int MiniMapTileSize_DEPRECATED;
 }

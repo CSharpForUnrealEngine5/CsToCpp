@@ -4,6 +4,6 @@ using CSharpToCpp.Utilities;
 [CppInclude("ThumbnailRendering/WorldThumbnailInfo.h")]
 public partial class UWorldThumbnailInfo : USceneThumbnailInfo {
 // WorldThumbnailInfo
-	public byte CameraMode;
-	public byte OrthoDirection;
+	public ECameraProjectionMode CameraMode;
+	public EOrthoThumbnailDirection OrthoDirection;
 }

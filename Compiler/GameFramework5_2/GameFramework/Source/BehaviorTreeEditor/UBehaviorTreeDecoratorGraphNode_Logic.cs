@@ -4,5 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("BehaviorTreeDecoratorGraphNode_Logic.h")]
 public partial class UBehaviorTreeDecoratorGraphNode_Logic : UBehaviorTreeDecoratorGraphNode {
 // BehaviorTreeDecoratorGraphNode_Logic
-	public byte LogicMode;
+	public EDecoratorLogicMode LogicMode;
 }

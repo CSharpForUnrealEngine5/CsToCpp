@@ -6,7 +6,7 @@ using CSharpToCpp.Utilities;
 public partial struct FAnimNode_SequencePlayer {
 // AnimNode_SequencePlayer
 	public string GroupName;
-	public byte GroupRole;
+	public EAnimGroupRole GroupRole;
 	public EAnimSyncMethod Method;
 	public bool bIgnoreForRelevancyTest;
 	public UAnimSequenceBase Sequence;

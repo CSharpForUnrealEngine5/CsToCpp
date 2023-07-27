@@ -9,5 +9,5 @@ public partial struct FInterpCurvePointQuat {
 	public FQuat OutVal;
 	public FQuat ArriveTangent;
 	public FQuat LeaveTangent;
-	public byte InterpMode;
+	public EInterpCurveMode InterpMode;
 }

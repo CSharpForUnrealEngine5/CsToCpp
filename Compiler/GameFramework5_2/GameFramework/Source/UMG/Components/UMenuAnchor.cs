@@ -9,7 +9,7 @@ public partial class UMenuAnchor : UContentWidget {
 	public UClass MenuClass;
 	public FGetWidget OnGetMenuContentEvent;
 	public FGetUserWidget OnGetUserMenuContentEvent;
-	public byte Placement;
+	public EMenuPlacement Placement;
 	public bool bFitInWindow;
 	public bool ShouldDeferPaintingAfterWindowContent;
 	public bool UseApplicationMenuStack;

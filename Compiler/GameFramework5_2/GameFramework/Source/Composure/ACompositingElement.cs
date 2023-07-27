@@ -13,7 +13,7 @@ public partial class ACompositingElement : AComposurePipelineBaseActor {
 	public TLazyObjectPtr<ACameraActor> TargetCameraActor;
 	public EInheritedSourceType ResolutionSource;
 	public FIntPoint RenderResolution;
-	public byte RenderFormat;
+	public ETextureRenderTargetFormat RenderFormat;
 	public bool bUseSharedTargetPool;
 	public int FreezeFrameMask;
 	public EInheritedSourceType PreviewTransformSource;

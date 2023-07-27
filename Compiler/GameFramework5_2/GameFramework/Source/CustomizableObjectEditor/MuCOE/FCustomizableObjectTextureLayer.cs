@@ -4,5 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("MuCOE/Nodes/CustomizableObjectNodeTextureLayer.h")]
 public partial struct FCustomizableObjectTextureLayer {
 // CustomizableObjectTextureLayer
-	public byte Effect;
+	public ECustomizableObjectTextureLayerEffect Effect;
 }

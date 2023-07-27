@@ -5,10 +5,10 @@ using CSharpToCpp.Utilities;
 ///<summary>Container for a physics representation of an object</summary>
 public partial struct FBodyInstance {
 // BodyInstance
-	public byte ObjectType;
-	public byte CollisionEnabled;
+	public ECollisionChannel ObjectType;
+	public ECollisionEnabled CollisionEnabled;
 	public ESleepFamily SleepFamily;
-	public byte DOFMode;
+	public EDOFMode DOFMode;
 	public bool bUseCCD;
 	public bool bIgnoreAnalyticCollisions;
 	public bool bNotifyRigidBodyCollision;

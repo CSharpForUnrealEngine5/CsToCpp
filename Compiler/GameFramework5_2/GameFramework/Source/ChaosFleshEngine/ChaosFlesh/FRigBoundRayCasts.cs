@@ -9,5 +9,5 @@ public partial struct FRigBoundRayCasts {
 	public bool bTestDownOnly;
 	public float TestRange;
 	public TArray<TWeakObjectPtr<UPrimitiveComponent>> EnvironmentCollisionsSkipList;
-	public byte CollisionChannel;
+	public ECollisionChannel CollisionChannel;
 }

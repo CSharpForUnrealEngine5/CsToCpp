@@ -8,6 +8,6 @@ public partial struct FGameplayCueNotify_SpawnCondition {
 	public EGameplayCueNotify_LocallyControlledSource LocallyControlledSource;
 	public EGameplayCueNotify_LocallyControlledPolicy LocallyControlledPolicy;
 	public float ChanceToPlay;
-	public TArray<byte> AllowedSurfaceTypes;
-	public TArray<byte> RejectedSurfaceTypes;
+	public TArray<EPhysicalSurface> AllowedSurfaceTypes;
+	public TArray<EPhysicalSurface> RejectedSurfaceTypes;
 }

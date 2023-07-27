@@ -57,7 +57,7 @@ public partial class UMovieSceneSequencePlayer : UObject {
 	public  void RPC_ExplicitServerUpdateEvent(EUpdatePositionMethod Method,FFrameTime RelevantTime) {}
 	public  void RPC_OnStopEvent(FFrameTime StoppedTime) {}
 	public  void RPC_OnFinishPlaybackEvent(FFrameTime StoppedTime) {}
-	public byte Status;
+	public EMovieScenePlayerStatus Status;
 	public bool bReversePlayback;
 	public UMovieSceneSequence Sequence;
 	public FFrameNumber StartTime;

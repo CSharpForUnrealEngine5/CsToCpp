@@ -7,6 +7,6 @@ public partial struct FEQSParametrizedQueryExecutionRequest {
 	public UEnvQuery QueryTemplate;
 	public TArray<FAIDynamicParam> QueryConfig;
 	public FBlackboardKeySelector EQSQueryBlackboardKey;
-	public byte RunMode;
+	public EEnvQueryRunMode RunMode;
 	public bool bUseBBKeyForQueryTemplate;
 }

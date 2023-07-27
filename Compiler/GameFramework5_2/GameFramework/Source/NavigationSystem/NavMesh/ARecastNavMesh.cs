@@ -49,8 +49,8 @@ public partial class ARecastNavMesh : ANavigationData {
 	public float DefaultDrawDistance;
 	public float DefaultMaxSearchNodes;
 	public float DefaultMaxHierarchicalSearchNodes;
-	public byte RegionPartitioning;
-	public byte LayerPartitioning;
+	public ERecastPartitioning RegionPartitioning;
+	public ERecastPartitioning LayerPartitioning;
 	public int RegionChunkSplits;
 	public int LayerChunkSplits;
 	public bool bSortNavigationAreasByCost;

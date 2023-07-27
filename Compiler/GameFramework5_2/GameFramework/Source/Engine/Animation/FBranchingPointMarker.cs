@@ -7,5 +7,5 @@ public partial struct FBranchingPointMarker {
 // BranchingPointMarker
 	public int NotifyIndex;
 	public float TriggerTime;
-	public byte NotifyEventType;
+	public EAnimNotifyEventType NotifyEventType;
 }

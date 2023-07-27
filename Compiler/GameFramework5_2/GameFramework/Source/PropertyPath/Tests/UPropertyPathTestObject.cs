@@ -5,10 +5,10 @@ using CSharpToCpp.Utilities;
 public partial class UPropertyPathTestObject : UObject {
 // PropertyPathTestObject
 	public bool Bool;
-	public byte EnumOne;
-	public byte EnumTwo;
-	public byte EnumThree;
-	public byte EnumFour;
+	public EPropertyPathTestEnum EnumOne;
+	public EPropertyPathTestEnum EnumTwo;
+	public EPropertyPathTestEnum EnumThree;
+	public EPropertyPathTestEnum EnumFour;
 	public int Integer;
 	public string String;
 	public float Float;

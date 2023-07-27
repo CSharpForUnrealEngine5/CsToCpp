@@ -14,7 +14,7 @@ public partial struct FAnimNode_RigidBody {
 	public FSimSpaceSettings SimSpaceSettings;
 	public float CachedBoundsScale;
 	public FBoneReference BaseBoneRef;
-	public byte OverlapChannel;
+	public ECollisionChannel OverlapChannel;
 	public ESimulationSpace SimulationSpace;
 	public bool bForceDisableCollisionBetweenConstraintBodies;
 	public bool bUseExternalClothCollision;

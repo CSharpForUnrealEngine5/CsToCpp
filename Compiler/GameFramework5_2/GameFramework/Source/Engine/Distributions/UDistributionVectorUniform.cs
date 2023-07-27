@@ -7,7 +7,7 @@ public partial class UDistributionVectorUniform : UDistributionVector {
 	public FVector Max;
 	public FVector Min;
 	public bool bLockAxes;
-	public byte LockedAxes;
-	public byte MirrorFlags;
+	public EDistributionVectorLockFlags LockedAxes;
+	public EDistributionVectorMirrorFlags MirrorFlags;
 	public bool bUseExtremes;
 }

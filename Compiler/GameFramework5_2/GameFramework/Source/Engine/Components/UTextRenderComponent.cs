@@ -8,8 +8,8 @@ public partial class UTextRenderComponent : UPrimitiveComponent {
 	public string Text;
 	public UMaterialInterface TextMaterial;
 	public UFont Font;
-	public byte HorizontalAlignment;
-	public byte VerticalAlignment;
+	public EHorizTextAligment HorizontalAlignment;
+	public EVerticalTextAligment VerticalAlignment;
 	public FColor TextRenderColor;
 	public float XScale;
 	public float YScale;

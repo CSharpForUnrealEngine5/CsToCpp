@@ -6,7 +6,7 @@ public partial struct FDatasmithRuntimeImportOptions {
 // DatasmithRuntimeImportOptions
 	public FDatasmithTessellationOptions TessellationOptions;
 	public EBuildHierarchyMethod BuildHierarchy;
-	public byte BuildCollisions;
-	public byte CollisionType;
+	public ECollisionEnabled BuildCollisions;
+	public ECollisionTraceFlag CollisionType;
 	public bool bImportMetaData;
 }

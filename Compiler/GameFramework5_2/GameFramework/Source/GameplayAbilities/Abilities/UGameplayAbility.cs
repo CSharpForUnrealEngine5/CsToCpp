@@ -55,14 +55,14 @@ public partial class UGameplayAbility : UObject {
 	public  void K2_AddGameplayCue(FGameplayTag GameplayCueTag,FGameplayEffectContextHandle Context,bool bRemoveOnAbilityEnd/*=true*/) {}
 	public  void K2_AddGameplayCueWithParams(FGameplayTag GameplayCueTag,FGameplayCueParameters GameplayCueParameter,bool bRemoveOnAbilityEnd/*=true*/) {}
 	public  void K2_RemoveGameplayCue(FGameplayTag GameplayCueTag) {}
-	public byte ReplicationPolicy;
-	public byte InstancingPolicy;
+	public EGameplayAbilityReplicationPolicy ReplicationPolicy;
+	public EGameplayAbilityInstancingPolicy InstancingPolicy;
 	public bool bServerRespectsRemoteAbilityCancellation;
 	public bool bRetriggerInstancedAbility;
 	public FGameplayAbilityActivationInfo CurrentActivationInfo;
 	public FGameplayEventData CurrentEventData;
-	public byte NetExecutionPolicy;
-	public byte NetSecurityPolicy;
+	public EGameplayAbilityNetExecutionPolicy NetExecutionPolicy;
+	public EGameplayAbilityNetSecurityPolicy NetSecurityPolicy;
 	public UClass CostGameplayEffectClass;
 	public TArray<FAbilityTriggerData> AbilityTriggers;
 	public UClass CooldownGameplayEffectClass;

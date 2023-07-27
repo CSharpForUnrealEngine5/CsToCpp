@@ -6,13 +6,13 @@ using CSharpToCpp.Utilities;
 public partial struct FAnimNode_SequenceEvaluator {
 // AnimNode_SequenceEvaluator
 	public string GroupName;
-	public byte GroupRole;
+	public EAnimGroupRole GroupRole;
 	public EAnimSyncMethod Method;
 	public bool bIgnoreForRelevancyTest;
 	public UAnimSequenceBase Sequence;
 	public float ExplicitTime;
 	public bool bShouldLoop;
 	public bool bTeleportToExplicitTime;
-	public byte ReinitializationBehavior;
+	public ESequenceEvalReinit ReinitializationBehavior;
 	public float StartPosition;
 }

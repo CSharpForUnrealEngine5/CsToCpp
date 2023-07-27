@@ -5,7 +5,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Implements the Level Editor's view port settings.</summary>
 public partial class ULevelEditorViewportSettings : UObject {
 // LevelEditorViewportSettings
-	public byte FlightCameraControlType;
+	public EWASDType FlightCameraControlType;
 	public bool FlightCameraControlExperimentalNavigation;
 	public ELandscapeFoliageEditorControlType LandscapeEditorControlType;
 	public ELandscapeFoliageEditorControlType FoliageEditorControlType;
@@ -57,8 +57,8 @@ public partial class ULevelEditorViewportSettings : UObject {
 	public int CurrentRotGridSize;
 	public int CurrentScalingGridSize;
 	public bool PreserveNonUniformScale;
-	public byte CurrentRotGridMode;
-	public byte AspectRatioAxisConstraint;
+	public ERotationGridMode CurrentRotGridMode;
+	public EAspectRatioAxisConstraint AspectRatioAxisConstraint;
 	public bool bEnableViewportHoverFeedback;
 	public bool bHighlightWithBrackets;
 	public bool bUseLinkedOrthographicViewports;
@@ -75,7 +75,7 @@ public partial class ULevelEditorViewportSettings : UObject {
 	public float BillboardScale;
 	public int TransformWidgetSizeAdjustment;
 	public bool bSaveEngineStats;
-	public byte MeasuringToolUnits;
+	public EMeasuringToolUnits MeasuringToolUnits;
 	public float SelectedSplinePointSizeAdjustment;
 	public float SplineLineThicknessAdjustment;
 	public float SplineTangentHandleSizeAdjustment;

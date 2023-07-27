@@ -6,7 +6,7 @@ using CSharpToCpp.Utilities;
 public partial class AWorldSettings : AInfo {
 // WorldSettings
 	public int VisibilityCellSize;
-	public byte VisibilityAggressiveness;
+	public EVisibilityAggressiveness VisibilityAggressiveness;
 	public bool bPrecomputeVisibility;
 	public bool bPlaceCellsOnlyAlongCameraTracks;
 	public bool bEnableWorldBoundsChecks;

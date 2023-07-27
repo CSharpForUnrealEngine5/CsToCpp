@@ -7,8 +7,8 @@ public partial class UWrapBoxSlot : UPanelSlot {
 // WrapBoxSlot
 	public FMargin Padding;
 	public float FillSpanWhenLessThan;
-	public byte HorizontalAlignment;
-	public byte VerticalAlignment;
+	public EHorizontalAlignment HorizontalAlignment;
+	public EVerticalAlignment VerticalAlignment;
 	public bool bFillEmptySpace;
 	public bool bForceNewLine;
 	public  void SetPadding(FMargin InPadding) {}

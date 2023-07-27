@@ -14,10 +14,10 @@ public partial struct FAnimNode_BoneDrivenController {
 	public double RemappedMax;
 	public string ParameterName;
 	public FBoneReference TargetBone;
-	public byte TargetComponent_DEPRECATED;
+	public EComponentType TargetComponent_DEPRECATED;
 	public EDrivenDestinationMode DestinationMode;
 	public EDrivenBoneModificationMode ModificationMode;
-	public byte SourceComponent;
+	public EComponentType SourceComponent;
 	public bool bUseRange;
 	public bool bAffectTargetTranslationX;
 	public bool bAffectTargetTranslationY;

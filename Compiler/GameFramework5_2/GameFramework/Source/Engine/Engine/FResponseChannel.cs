@@ -6,5 +6,5 @@ using CSharpToCpp.Utilities;
 public partial struct FResponseChannel {
 // ResponseChannel
 	public string Channel;
-	public byte Response;
+	public ECollisionResponse Response;
 }

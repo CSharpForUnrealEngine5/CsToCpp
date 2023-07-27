@@ -6,5 +6,5 @@ public partial struct FAnimNode_Sync {
 // AnimNode_Sync
 	public FPoseLink Source;
 	public string GroupName;
-	public byte GroupRole;
+	public EAnimGroupRole GroupRole;
 }

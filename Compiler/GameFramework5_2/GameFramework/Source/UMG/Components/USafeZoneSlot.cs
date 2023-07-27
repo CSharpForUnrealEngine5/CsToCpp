@@ -6,7 +6,7 @@ public partial class USafeZoneSlot : UPanelSlot {
 // SafeZoneSlot
 	public bool bIsTitleSafe;
 	public FMargin SafeAreaScale;
-	public byte HAlign;
-	public byte VAlign;
+	public EHorizontalAlignment HAlign;
+	public EVerticalAlignment VAlign;
 	public FMargin Padding;
 }

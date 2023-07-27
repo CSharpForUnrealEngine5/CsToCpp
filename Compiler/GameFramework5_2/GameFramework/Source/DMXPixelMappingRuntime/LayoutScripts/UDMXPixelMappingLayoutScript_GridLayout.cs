@@ -8,7 +8,7 @@ public partial class UDMXPixelMappingLayoutScript_GridLayout : UDMXPixelMappingL
 	public int Columns;
 	public int Rows;
 	public float Padding;
-	public byte HorizontalAlignment;
-	public byte VerticalAlignment;
+	public EHorizontalAlignment HorizontalAlignment;
+	public EVerticalAlignment VerticalAlignment;
 	public EDMXPixelMappingDistribution Distribution;
 }

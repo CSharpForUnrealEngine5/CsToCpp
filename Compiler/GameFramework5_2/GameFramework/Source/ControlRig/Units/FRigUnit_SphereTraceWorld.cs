@@ -7,7 +7,7 @@ public partial struct FRigUnit_SphereTraceWorld {
 // RigUnit_SphereTraceWorld
 	public FVector Start;
 	public FVector End;
-	public byte Channel;
+	public ECollisionChannel Channel;
 	public float Radius;
 	public bool bHit;
 	public FVector HitLocation;

@@ -5,10 +5,10 @@ using CSharpToCpp.Utilities;
 ///<summary>Implements the Editor's user settings.</summary>
 public partial class UTextureEditorSettings : UObject {
 // TextureEditorSettings
-	public byte Background;
-	public byte Sampling;
-	public byte VolumeViewMode;
-	public byte CubemapViewMode;
+	public ETextureEditorBackgrounds Background;
+	public ETextureEditorSampling Sampling;
+	public ETextureEditorVolumeViewMode VolumeViewMode;
+	public ETextureEditorCubemapViewMode CubemapViewMode;
 	public FColor BackgroundColor;
 	public FColor CheckerColorOne;
 	public FColor CheckerColorTwo;

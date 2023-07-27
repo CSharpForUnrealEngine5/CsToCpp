@@ -8,7 +8,7 @@ public partial class UDEPRECATED_PawnActionsComponent : UActorComponent {
 	public TArray<FPawnActionStack> ActionStacks;
 	public TArray<FPawnActionEvent> ActionEvents;
 	public UDEPRECATED_PawnAction CurrentAction_DEPRECATED;
-	public static bool K2_PerformAction(APawn Pawn,UDEPRECATED_PawnAction Action,byte Priority/*=EAIRequestPriority.HardScript*/) { return default; }
+	public static bool K2_PerformAction(APawn Pawn,UDEPRECATED_PawnAction Action,EAIRequestPriority Priority/*=EAIRequestPriority.HardScript*/) { return default; }
 	public  bool K2_PushAction(UDEPRECATED_PawnAction NewAction,EAIRequestPriority Priority,UObject Instigator/*=NULL*/) { return default; }
 	public  EPawnActionAbortState K2_AbortAction(UDEPRECATED_PawnAction ActionToAbort) { return default; }
 	public  EPawnActionAbortState K2_ForceAbortAction(UDEPRECATED_PawnAction ActionToAbort) { return default; }

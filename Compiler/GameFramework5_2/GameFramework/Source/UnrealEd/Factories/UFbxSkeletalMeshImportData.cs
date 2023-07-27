@@ -5,9 +5,9 @@ using CSharpToCpp.Utilities;
 ///<summary>Import data and options used when importing a static mesh from fbx</summary>
 public partial class UFbxSkeletalMeshImportData : UFbxMeshImportData {
 // FbxSkeletalMeshImportData
-	public byte ImportContentType;
-	public byte LastImportContentType;
-	public byte VertexColorImportOption;
+	public EFBXImportContentType ImportContentType;
+	public EFBXImportContentType LastImportContentType;
+	public EVertexColorImportOption VertexColorImportOption;
 	public FColor VertexOverrideColor;
 	public bool bUpdateSkeletonReferencePose;
 	public bool bUseT0AsRefPose;

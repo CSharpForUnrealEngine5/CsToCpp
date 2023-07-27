@@ -14,7 +14,7 @@ public partial class UBlendSpace : UAnimationAsset {
 	public bool bLoop;
 	public UAnimSequence PreviewBasePose;
 	public float AnimLength;
-	public byte NotifyTriggerMode;
+	public ENotifyTriggerMode NotifyTriggerMode;
 	public bool bInterpolateUsingGrid;
 	public EPreferredTriangulationDirection PreferredTriangulationDirection;
 	public EBlendSpacePerBoneBlendMode PerBoneBlendMode;
@@ -25,6 +25,6 @@ public partial class UBlendSpace : UAnimationAsset {
 	public TArray<FEditorElement> GridSamples;
 	public FBlendSpaceData BlendSpaceData;
 	public FBlendParameter BlendParameters;
-	public byte AxisToScaleAnimation;
+	public EBlendSpaceAxis AxisToScaleAnimation;
 	public TArray<int> DimensionIndices;
 }

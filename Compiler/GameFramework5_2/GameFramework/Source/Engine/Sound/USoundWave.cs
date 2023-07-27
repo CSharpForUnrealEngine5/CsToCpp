@@ -7,7 +7,7 @@ public partial class USoundWave : USoundBase {
 	public int CompressionQuality;
 	public int StreamingPriority;
 	public ESoundwaveSampleRateSettings SampleRateQuality;
-	public byte SoundGroup;
+	public ESoundGroup SoundGroup;
 	public bool bLooping;
 	public bool bStreaming;
 	public ESoundAssetCompressionType SoundAssetCompressionType;

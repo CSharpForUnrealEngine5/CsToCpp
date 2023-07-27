@@ -16,7 +16,7 @@ public partial class UDynamicMeshComponent : UBaseDynamicMeshComponent {
 	public  void SetComplexAsSimpleCollisionEnabled(bool bEnabled,bool bImmediateUpdate/*=true*/) {}
 	public  void SetDeferredCollisionUpdatesEnabled(bool bEnabled,bool bImmediateUpdate/*=true*/) {}
 	public  void UpdateCollision(bool bOnlyIfPending/*=true*/) {}
-	public byte CollisionType;
+	public ECollisionTraceFlag CollisionType;
 	public bool bUseAsyncCooking;
 	public bool bEnableComplexCollision;
 	public bool bDeferCollisionUpdates;

@@ -19,8 +19,8 @@ public partial struct FMaterialInstanceBasePropertyOverrides {
 	public bool DitheredLODTransition;
 	public bool bCastDynamicShadowAsMasked;
 	public bool bOutputTranslucentVelocity;
-	public byte BlendMode;
-	public byte ShadingModel;
+	public EBlendMode BlendMode;
+	public EMaterialShadingModel ShadingModel;
 	public float OpacityMaskClipValue;
 	public float MaxWorldPositionOffsetDisplacement;
 }

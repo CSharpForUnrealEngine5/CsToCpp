@@ -8,7 +8,7 @@ public partial class UPaperFlipbook : UObject {
 	public float FramesPerSecond;
 	public TArray<FPaperFlipbookKeyFrame> KeyFrames;
 	public UMaterialInterface DefaultMaterial;
-	public byte CollisionSource;
+	public EFlipbookCollisionMode CollisionSource;
 	public  int GetNumFrames() { return default; }
 	public  float GetTotalDuration() { return default; }
 	public  int GetKeyFrameIndexAtTime(float Time,bool bClampToEnds/*=false*/) { return default; }

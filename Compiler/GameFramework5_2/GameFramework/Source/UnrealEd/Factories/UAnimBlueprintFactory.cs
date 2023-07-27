@@ -4,7 +4,7 @@ using CSharpToCpp.Utilities;
 [CppInclude("Factories/AnimBlueprintFactory.h")]
 public partial class UAnimBlueprintFactory : UFactory {
 // AnimBlueprintFactory
-	public byte BlueprintType;
+	public EBlueprintType BlueprintType;
 	public UClass ParentClass;
 	public USkeleton TargetSkeleton;
 	public USkeletalMesh PreviewSkeletalMesh;

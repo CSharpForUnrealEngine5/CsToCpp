@@ -4,6 +4,6 @@ using CSharpToCpp.Utilities;
 [CppInclude("Materials/MaterialExpressionDepthOfFieldFunction.h")]
 public partial class UMaterialExpressionDepthOfFieldFunction : UMaterialExpression {
 // MaterialExpressionDepthOfFieldFunction
-	public byte FunctionValue;
+	public EDepthOfFieldFunctionValue FunctionValue;
 	public FExpressionInput Depth;
 }

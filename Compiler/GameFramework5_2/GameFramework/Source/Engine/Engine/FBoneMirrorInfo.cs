@@ -5,5 +5,5 @@ using CSharpToCpp.Utilities;
 public partial struct FBoneMirrorInfo {
 // BoneMirrorInfo
 	public int SourceIndex;
-	public byte BoneFlipAxis;
+	public EAxis BoneFlipAxis;
 }

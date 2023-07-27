@@ -5,8 +5,8 @@ using CSharpToCpp.Utilities;
 ///<summary>A border is a container widget that can contain one child widget, providing an opportunity</summary>
 public partial class UBorder : UContentWidget {
 // Border
-	public byte HorizontalAlignment;
-	public byte VerticalAlignment;
+	public EHorizontalAlignment HorizontalAlignment;
+	public EVerticalAlignment VerticalAlignment;
 	public bool bShowEffectWhenDisabled;
 	public FLinearColor ContentColorAndOpacity;
 	public FGetLinearColor ContentColorAndOpacityDelegate;

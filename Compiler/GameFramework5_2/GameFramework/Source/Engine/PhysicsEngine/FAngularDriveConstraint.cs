@@ -10,5 +10,5 @@ public partial struct FAngularDriveConstraint {
 	public FConstraintDrive SlerpDrive;
 	public FRotator OrientationTarget;
 	public FVector AngularVelocityTarget;
-	public byte AngularDriveMode;
+	public EAngularDriveMode AngularDriveMode;
 }

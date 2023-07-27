@@ -4,10 +4,10 @@ using CSharpToCpp.Utilities;
 [CppInclude("Particles/Location/ParticleModuleLocationBoneSocket.h")]
 public partial class UParticleModuleLocationBoneSocket : UParticleModuleLocationBase {
 // ParticleModuleLocationBoneSocket
-	public byte SourceType;
+	public ELocationBoneSocketSource SourceType;
 	public FVector UniversalOffset;
 	public TArray<FLocationBoneSocketInfo> SourceLocations;
-	public byte SelectionMethod;
+	public ELocationBoneSocketSelectionMethod SelectionMethod;
 	public bool bUpdatePositionEachFrame;
 	public bool bOrientMeshEmitters;
 	public bool bInheritBoneVelocity;

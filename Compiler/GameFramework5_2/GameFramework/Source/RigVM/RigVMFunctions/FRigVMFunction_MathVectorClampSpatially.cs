@@ -6,8 +6,8 @@ using CSharpToCpp.Utilities;
 public partial struct FRigVMFunction_MathVectorClampSpatially {
 // RigVMFunction_MathVectorClampSpatially
 	public FVector Value;
-	public byte Axis;
-	public byte Type;
+	public EAxis Axis;
+	public ERigVMClampSpatialMode Type;
 	public float Minimum;
 	public float Maximum;
 	public FTransform Space;

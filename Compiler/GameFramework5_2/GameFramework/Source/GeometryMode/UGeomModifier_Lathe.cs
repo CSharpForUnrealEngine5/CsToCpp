@@ -7,5 +7,5 @@ public partial class UGeomModifier_Lathe : UGeomModifier_Edit {
 	public int TotalSegments;
 	public int Segments;
 	public bool AlignToSide;
-	public byte Axis;
+	public EAxis Axis;
 }

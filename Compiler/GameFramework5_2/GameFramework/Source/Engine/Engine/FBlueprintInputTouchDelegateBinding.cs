@@ -4,6 +4,6 @@ using CSharpToCpp.Utilities;
 [CppInclude("Engine/InputTouchDelegateBinding.h")]
 public partial struct FBlueprintInputTouchDelegateBinding {
 // BlueprintInputTouchDelegateBinding
-	public byte InputKeyEvent;
+	public EInputEvent InputKeyEvent;
 	public string FunctionNameToBind;
 }

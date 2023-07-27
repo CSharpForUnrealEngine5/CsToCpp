@@ -14,7 +14,7 @@ public partial struct FDatasmithPostProcessSettingsTemplate {
 	public float WhiteTemp;
 	public float VignetteIntensity;
 	public FVector4 ColorSaturation;
-	public byte AutoExposureMethod;
+	public EAutoExposureMethod AutoExposureMethod;
 	public float CameraISO;
 	public float CameraShutterSpeed;
 	public float DepthOfFieldFstop;

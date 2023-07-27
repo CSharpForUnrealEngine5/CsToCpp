@@ -6,5 +6,5 @@ public partial struct FCSVImportSettings {
 // CSVImportSettings
 	public UScriptStruct ImportRowStruct;
 	public ECSVImportType ImportType;
-	public byte ImportCurveInterpMode;
+	public ERichCurveInterpMode ImportCurveInterpMode;
 }

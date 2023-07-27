@@ -10,8 +10,8 @@ public partial class UBTDecorator_Blackboard : UBTDecorator_BlackboardBase {
 	public string StringValue;
 	public string CachedDescription;
 	public byte OperationType;
-	public byte NotifyObserver;
-	public byte BasicOperation;
-	public byte ArithmeticOperation;
-	public byte TextOperation;
+	public EBTBlackboardRestart NotifyObserver;
+	public EBasicKeyOperation BasicOperation;
+	public EArithmeticKeyOperation ArithmeticOperation;
+	public ETextKeyOperation TextOperation;
 }

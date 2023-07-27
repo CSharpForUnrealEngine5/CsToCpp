@@ -13,7 +13,7 @@ public partial struct FAnimNode_LayeredBoneBlend {
 	public TArray<float> BlendWeights;
 	public bool bMeshSpaceRotationBlend;
 	public bool bMeshSpaceScaleBlend;
-	public byte CurveBlendOption;
+	public ECurveBlendOption CurveBlendOption;
 	public bool bBlendRootMotionBasedOnRootBone;
 	public int LODThreshold;
 	public TArray<FPerBoneBlendWeight> PerBoneBlendWeights;

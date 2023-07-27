@@ -4,5 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("Materials/MaterialExpressionViewProperty.h")]
 public partial class UMaterialExpressionViewProperty : UMaterialExpression {
 // MaterialExpressionViewProperty
-	public byte Property;
+	public EMaterialExposedViewProperty Property;
 }

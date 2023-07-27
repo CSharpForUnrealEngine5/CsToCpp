@@ -11,7 +11,7 @@ public partial class UAnimationStateMachineLibrary : UBlueprintFunctionLibrary {
 	public static void ConvertToAnimationStateMachinePure(FAnimNodeReference Node,FAnimationStateMachineReference AnimationState,bool Result) {}
 	public static bool IsStateBlendingIn(FAnimUpdateContext UpdateContext,FAnimationStateResultReference Node) { return default; }
 	public static bool IsStateBlendingOut(FAnimUpdateContext UpdateContext,FAnimationStateResultReference Node) { return default; }
-	public static void SetState(FAnimUpdateContext UpdateContext,FAnimationStateMachineReference Node,string TargetState,float Duration,byte BlendType,UBlendProfile BlendProfile,EAlphaBlendOption AlphaBlendOption,UCurveFloat CustomBlendCurve) {}
+	public static void SetState(FAnimUpdateContext UpdateContext,FAnimationStateMachineReference Node,string TargetState,float Duration,ETransitionLogicType BlendType,UBlendProfile BlendProfile,EAlphaBlendOption AlphaBlendOption,UCurveFloat CustomBlendCurve) {}
 	public static string GetState(FAnimUpdateContext UpdateContext,FAnimationStateMachineReference Node) { return default; }
 	public static float GetRelevantAnimTimeRemaining(FAnimUpdateContext UpdateContext,FAnimationStateResultReference Node) { return default; }
 	public static float GetRelevantAnimTimeRemainingFraction(FAnimUpdateContext UpdateContext,FAnimationStateResultReference Node) { return default; }

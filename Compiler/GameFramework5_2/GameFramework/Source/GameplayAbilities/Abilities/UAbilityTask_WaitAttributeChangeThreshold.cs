@@ -6,6 +6,6 @@ using CSharpToCpp.Utilities;
 public partial class UAbilityTask_WaitAttributeChangeThreshold : UAbilityTask {
 // AbilityTask_WaitAttributeChangeThreshold
 	public FWaitAttributeChangeThresholdDelegate OnChange;
-	public static UAbilityTask_WaitAttributeChangeThreshold WaitForAttributeChangeThreshold(UGameplayAbility OwningAbility,FGameplayAttribute Attribute,byte ComparisonType,float ComparisonValue,bool bTriggerOnce,AActor OptionalExternalOwner/*=nullptr*/) { return default; }
+	public static UAbilityTask_WaitAttributeChangeThreshold WaitForAttributeChangeThreshold(UGameplayAbility OwningAbility,FGameplayAttribute Attribute,EWaitAttributeChangeComparison ComparisonType,float ComparisonValue,bool bTriggerOnce,AActor OptionalExternalOwner/*=nullptr*/) { return default; }
 	public UAbilitySystemComponent ExternalOwner;
 }

@@ -5,6 +5,6 @@ using CSharpToCpp.Utilities;
 public partial struct FFleshSimulationSpaceGroup {
 // FleshSimulationSpaceGroup
 	public string SimSpaceBoneName;
-	public byte SimSpace;
+	public ChaosDeformableSimSpace SimSpace;
 	public USkeletalMesh SimSpaceSkeletalMesh;
 }

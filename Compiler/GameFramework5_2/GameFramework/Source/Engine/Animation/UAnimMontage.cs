@@ -27,7 +27,7 @@ public partial class UAnimMontage : UAnimCompositeBase {
 	public bool bEnableAutoBlendOut;
 	public UBlendProfile BlendProfileIn;
 	public UBlendProfile BlendProfileOut;
-	public byte RootMotionRootLock;
+	public ERootMotionRootLock RootMotionRootLock;
 	public UAnimSequence PreviewBasePose;
 	public  int GetSectionIndex(string InSectionName) { return default; }
 	public  string GetSectionName(int SectionIndex) { return default; }

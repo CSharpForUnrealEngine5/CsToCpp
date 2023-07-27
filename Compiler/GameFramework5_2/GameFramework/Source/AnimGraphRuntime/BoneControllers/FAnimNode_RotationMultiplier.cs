@@ -8,6 +8,6 @@ public partial struct FAnimNode_RotationMultiplier {
 	public FBoneReference TargetBone;
 	public FBoneReference SourceBone;
 	public float Multiplier;
-	public byte RotationAxisToRefer;
+	public EBoneAxis RotationAxisToRefer;
 	public bool bIsAdditive;
 }

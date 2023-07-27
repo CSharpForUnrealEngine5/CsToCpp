@@ -24,7 +24,7 @@ public partial class UCameraComponent : USceneComponent {
 	public bool bCameraMeshHiddenInGame;
 	public bool bLockToHmd;
 	public bool bUsePawnControlRotation;
-	public byte ProjectionMode;
+	public ECameraProjectionMode ProjectionMode;
 	public  void SetProjectionMode(ECameraProjectionMode InProjectionMode) {}
 	public  void SetPostProcessBlendWeight(float InPostProcessBlendWeight) {}
 	public  void GetCameraView(float DeltaTime,FMinimalViewInfo DesiredView) {}

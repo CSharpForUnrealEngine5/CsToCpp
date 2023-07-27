@@ -5,5 +5,5 @@ using CSharpToCpp.Utilities;
 public partial class UMaterialExpressionSamplePhysicsScalarField : UMaterialExpression {
 // MaterialExpressionSamplePhysicsScalarField
 	public FExpressionInput WorldPosition;
-	public byte FieldTarget;
+	public EFieldScalarType FieldTarget;
 }

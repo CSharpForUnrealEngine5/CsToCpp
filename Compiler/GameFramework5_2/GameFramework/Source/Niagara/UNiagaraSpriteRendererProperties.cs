@@ -58,7 +58,7 @@ public partial class UNiagaraSpriteRendererProperties : UNiagaraRendererProperti
 	public FNiagaraVariableAttributeBinding PrevPivotOffsetBinding;
 	public bool bUseMaterialCutoutTexture;
 	public UTexture2D CutoutTexture;
-	public byte BoundingMode;
-	public byte OpacitySourceMode;
+	public ESubUVBoundingVertexCount BoundingMode;
+	public EOpacitySourceMode OpacitySourceMode;
 	public float AlphaThreshold;
 }

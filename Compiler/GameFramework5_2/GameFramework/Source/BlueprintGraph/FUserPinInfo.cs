@@ -6,6 +6,6 @@ public partial struct FUserPinInfo {
 // UserPinInfo
 	public string PinName;
 	public FEdGraphPinType PinType;
-	public byte DesiredPinDirection;
+	public EEdGraphPinDirection DesiredPinDirection;
 	public string PinDefaultValue;
 }

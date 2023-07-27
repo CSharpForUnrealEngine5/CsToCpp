@@ -6,7 +6,7 @@ using CSharpToCpp.Utilities;
 public partial struct FGameplayModifierInfo {
 // GameplayModifierInfo
 	public FGameplayAttribute Attribute;
-	public byte ModifierOp;
+	public EGameplayModOp ModifierOp;
 	public FGameplayEffectModifierMagnitude ModifierMagnitude;
 	public FGameplayModEvaluationChannelSettings EvaluationChannelSettings;
 	public FGameplayTagRequirements SourceTags;

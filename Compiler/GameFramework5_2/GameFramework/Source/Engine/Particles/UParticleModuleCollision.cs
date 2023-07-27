@@ -7,8 +7,8 @@ public partial class UParticleModuleCollision : UParticleModuleCollisionBase {
 	public FRawDistributionVector DampingFactor;
 	public FRawDistributionVector DampingFactorRotation;
 	public FRawDistributionFloat MaxCollisions;
-	public byte CollisionCompletionOption;
-	public TArray<byte> CollisionTypes;
+	public EParticleCollisionComplete CollisionCompletionOption;
+	public TArray<EObjectTypeQuery> CollisionTypes;
 	public bool bApplyPhysics;
 	public bool bIgnoreTriggerVolumes;
 	public FRawDistributionFloat ParticleMass;

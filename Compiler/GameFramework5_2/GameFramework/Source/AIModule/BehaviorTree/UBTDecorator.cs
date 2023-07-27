@@ -6,5 +6,5 @@ using CSharpToCpp.Utilities;
 public partial class UBTDecorator : UBTAuxiliaryNode {
 // BTDecorator
 	public bool bInverseCondition;
-	public byte FlowAbortMode;
+	public EBTFlowAbortMode FlowAbortMode;
 }

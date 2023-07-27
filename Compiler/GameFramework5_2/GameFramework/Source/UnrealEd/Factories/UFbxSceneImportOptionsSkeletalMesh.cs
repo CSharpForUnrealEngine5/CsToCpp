@@ -15,7 +15,7 @@ public partial class UFbxSceneImportOptionsSkeletalMesh : UObject {
 	public float ThresholdUV;
 	public float MorphThresholdPosition;
 	public bool bImportAnimations;
-	public byte AnimationLength;
+	public EFBXAnimationLengthImportType AnimationLength;
 	public FInt32Interval FrameImportRange;
 	public bool bUseDefaultSampleRate;
 	public int CustomSampleRate;

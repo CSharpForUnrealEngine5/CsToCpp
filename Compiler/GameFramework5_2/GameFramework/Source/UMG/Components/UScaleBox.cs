@@ -5,8 +5,8 @@ using CSharpToCpp.Utilities;
 ///<summary>Allows you to place content with a desired size and have it scale to meet the constraints placed on this box's alloted area.  If</summary>
 public partial class UScaleBox : UContentWidget {
 // ScaleBox
-	public byte Stretch;
-	public byte StretchDirection;
+	public EStretch Stretch;
+	public EStretchDirection StretchDirection;
 	public float UserSpecifiedScale;
 	public bool IgnoreInheritedScale;
 	public  void SetStretch(EStretch InStretch) {}

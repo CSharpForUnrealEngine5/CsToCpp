@@ -6,8 +6,8 @@ using CSharpToCpp.Utilities;
 public partial class UGridSlot : UPanelSlot {
 // GridSlot
 	public FMargin Padding;
-	public byte HorizontalAlignment;
-	public byte VerticalAlignment;
+	public EHorizontalAlignment HorizontalAlignment;
+	public EVerticalAlignment VerticalAlignment;
 	public int Row;
 	public int RowSpan;
 	public int Column;

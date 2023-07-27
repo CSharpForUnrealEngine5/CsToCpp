@@ -7,10 +7,10 @@ public partial class UNavigationPath : UObject {
 // NavigationPath
 	public FOnNavigationPathUpdated PathUpdatedNotifier;
 	public TArray<FVector> PathPoints;
-	public byte RecalculateOnInvalidation;
+	public ENavigationOptionFlag RecalculateOnInvalidation;
 	public  string GetDebugString() { return default; }
 	public  void EnableDebugDrawing(bool bShouldDrawDebugData,FLinearColor PathColor/*=FLinearColor.White*/) {}
-	public  void EnableRecalculationOnInvalidation(byte DoRecalculation) {}
+	public  void EnableRecalculationOnInvalidation(ENavigationOptionFlag DoRecalculation) {}
 	public  double GetPathLength() { return default; }
 	public  double GetPathCost() { return default; }
 	public  bool IsPartial() { return default; }

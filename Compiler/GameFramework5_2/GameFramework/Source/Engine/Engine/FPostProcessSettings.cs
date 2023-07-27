@@ -223,10 +223,10 @@ public partial struct FPostProcessSettings {
 	public bool bOverride_PathTracingIncludeVolume;
 	public bool bOverride_PathTracingIncludeIndirectVolume;
 	public bool bMobileHQGaussian;
-	public byte BloomMethod;
-	public byte AutoExposureMethod;
-	public byte DepthOfFieldMethod_DEPRECATED;
-	public byte TemperatureType;
+	public EBloomMethod BloomMethod;
+	public EAutoExposureMethod AutoExposureMethod;
+	public EDepthOfFieldMethod DepthOfFieldMethod_DEPRECATED;
+	public ETemperatureMethod TemperatureType;
 	public float WhiteTemp;
 	public float WhiteTint;
 	public FVector4 ColorSaturation;
@@ -290,7 +290,7 @@ public partial struct FPostProcessSettings {
 	public UTexture BloomDirtMask;
 	public float BloomDirtMaskIntensity;
 	public FLinearColor BloomDirtMaskTint;
-	public byte DynamicGlobalIlluminationMethod;
+	public EDynamicGlobalIlluminationMethod DynamicGlobalIlluminationMethod;
 	public FLinearColor IndirectLightingColor;
 	public float IndirectLightingIntensity;
 	public bool RayTracingGI_DEPRECATED;
@@ -308,7 +308,7 @@ public partial struct FPostProcessSettings {
 	public ERayTracingGlobalIlluminationType RayTracingGIType;
 	public int RayTracingGIMaxBounces;
 	public int RayTracingGISamplesPerPixel;
-	public byte ReflectionMethod;
+	public EReflectionMethod ReflectionMethod;
 	public EReflectionsType ReflectionsType_DEPRECATED;
 	public float LumenReflectionQuality;
 	public ELumenRayLightingModeOverride LumenRayLightingMode;

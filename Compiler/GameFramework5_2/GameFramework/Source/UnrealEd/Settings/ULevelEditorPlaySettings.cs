@@ -9,7 +9,7 @@ public partial class ULevelEditorPlaySettings : UObject {
 	public bool GameGetsMouseControl;
 	public bool UseMouseForTouch;
 	public bool ShowMouseControlLabel;
-	public byte MouseControlLabelPosition;
+	public ELabelAnchorMode MouseControlLabelPosition;
 	public bool ViewportGetsHMDControl;
 	public bool ShouldMinimizeEditorOnVRPIE;
 	public bool bShouldMinimizeEditorOnNonVRPIE;
@@ -30,12 +30,12 @@ public partial class ULevelEditorPlaySettings : UObject {
 	public bool PIEAlwaysOnTop;
 	public bool DisableStandaloneSound;
 	public string AdditionalLaunchParameters;
-	public byte BuildGameBeforeLaunch;
-	public byte LaunchConfiguration;
+	public EPlayOnBuildMode BuildGameBeforeLaunch;
+	public EPlayOnLaunchConfiguration LaunchConfiguration;
 	public EPlayOnPakFileMode PackFilesForLaunch;
 	public bool bAutoCompileBlueprintsOnLaunch;
 	public bool bLaunchSeparateServer;
-	public byte PlayNetMode;
+	public EPlayNetMode PlayNetMode;
 	public bool RunUnderOneProcess;
 	public bool PlayNetDedicated;
 	public int PlayNumberOfClients;
@@ -60,9 +60,9 @@ public partial class ULevelEditorPlaySettings : UObject {
 	public TArray<FIntPoint> MultipleInstancePositions;
 	public string LastExecutedLaunchDevice;
 	public string LastExecutedLaunchName;
-	public byte LastExecutedLaunchModeType;
-	public byte LastExecutedPlayModeLocation;
-	public byte LastExecutedPlayModeType;
+	public ELaunchModeType LastExecutedLaunchModeType;
+	public EPlayModeLocations LastExecutedPlayModeLocation;
+	public EPlayModeType LastExecutedPlayModeType;
 	public string LastExecutedPIEPreviewDevice;
 	public TArray<FPlayScreenResolution> LaptopScreenResolutions;
 	public TArray<FPlayScreenResolution> MonitorScreenResolutions;

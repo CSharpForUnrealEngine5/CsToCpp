@@ -7,7 +7,7 @@ public partial class UScrollBox : UPanelWidget {
 // ScrollBox
 	public FScrollBoxStyle WidgetStyle;
 	public FScrollBarStyle WidgetBarStyle;
-	public byte Orientation;
+	public EOrientation Orientation;
 	public ESlateVisibility ScrollBarVisibility;
 	public EConsumeMouseWheel ConsumeMouseWheel;
 	public FVector2D ScrollbarThickness;

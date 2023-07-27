@@ -5,7 +5,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Collection of values that contribute to pixel format chosen for texture</summary>
 public partial struct FTextureFormatSettings {
 // TextureFormatSettings
-	public byte CompressionSettings;
+	public TextureCompressionSettings CompressionSettings;
 	public bool CompressionNoAlpha;
 	public bool CompressionForceAlpha;
 	public bool CompressionNone;

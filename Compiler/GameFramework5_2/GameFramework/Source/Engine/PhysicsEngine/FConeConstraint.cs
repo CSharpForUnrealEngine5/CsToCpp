@@ -7,6 +7,6 @@ public partial struct FConeConstraint {
 // ConeConstraint
 	public float Swing1LimitDegrees;
 	public float Swing2LimitDegrees;
-	public byte Swing1Motion;
-	public byte Swing2Motion;
+	public EAngularConstraintMotion Swing1Motion;
+	public EAngularConstraintMotion Swing2Motion;
 }

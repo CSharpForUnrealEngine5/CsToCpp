@@ -12,8 +12,8 @@ public partial class UNiagaraBakerOutputTexture2D : UNiagaraBakerOutput {
 	public bool bSetTextureAddressY;
 	public FIntPoint FrameSize;
 	public FIntPoint AtlasTextureSize;
-	public byte TextureAddressX;
-	public byte TextureAddressY;
+	public TextureAddress TextureAddressX;
+	public TextureAddress TextureAddressY;
 	public string AtlasAssetPathFormat;
 	public string FramesAssetPathFormat;
 	public string FramesExportPathFormat;

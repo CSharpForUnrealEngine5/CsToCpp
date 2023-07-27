@@ -4,6 +4,6 @@ using CSharpToCpp.Utilities;
 [CppInclude("GameplayAbilitiesBlueprintFactory.h")]
 public partial class UGameplayAbilitiesBlueprintFactory : UFactory {
 // GameplayAbilitiesBlueprintFactory
-	public byte BlueprintType;
+	public EBlueprintType BlueprintType;
 	public UClass ParentClass;
 }

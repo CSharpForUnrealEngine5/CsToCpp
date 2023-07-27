@@ -21,8 +21,8 @@ public partial struct FMeshProxySettings {
 	public float MaxRayCastDist;
 	public float HardAngleThreshold;
 	public int LightMapResolution;
-	public byte NormalCalculationMethod;
-	public byte LandscapeCullingPrecision;
+	public EProxyNormalComputationMethod NormalCalculationMethod;
+	public ELandscapeCullingPrecision LandscapeCullingPrecision;
 	public bool bCalculateCorrectLODModel;
 	public bool bOverrideVoxelSize;
 	public bool bOverrideTransferDistance;

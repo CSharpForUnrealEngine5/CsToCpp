@@ -6,7 +6,7 @@ using CSharpToCpp.Utilities;
 public partial struct FViewportActionKeyInput {
 // ViewportActionKeyInput
 	public string ActionType;
-	public byte Event;
+	public EInputEvent Event;
 	public bool bIsInputCaptured;
 	public bool bIsAxis;
 }

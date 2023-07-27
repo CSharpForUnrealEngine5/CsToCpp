@@ -4,7 +4,7 @@ using CSharpToCpp.Utilities;
 [CppInclude("CodeProjectItem.h")]
 public partial class UCodeProjectItem : UObject {
 // CodeProjectItem
-	public byte Type;
+	public ECodeProjectItemType Type;
 	public string Name;
 	public string Extension;
 	public string Path;

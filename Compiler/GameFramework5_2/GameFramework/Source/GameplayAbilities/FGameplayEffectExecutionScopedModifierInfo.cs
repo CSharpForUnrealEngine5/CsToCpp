@@ -8,7 +8,7 @@ public partial struct FGameplayEffectExecutionScopedModifierInfo {
 	public FGameplayEffectAttributeCaptureDefinition CapturedAttribute;
 	public FGameplayTag TransientAggregatorIdentifier;
 	public EGameplayEffectScopedModifierAggregatorType AggregatorType;
-	public byte ModifierOp;
+	public EGameplayModOp ModifierOp;
 	public FGameplayEffectModifierMagnitude ModifierMagnitude;
 	public FGameplayModEvaluationChannelSettings EvaluationChannelSettings;
 	public FGameplayTagRequirements SourceTags;

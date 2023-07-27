@@ -7,10 +7,10 @@ public partial class UPhysicalMaterial : UObject {
 // PhysicalMaterial
 	public float Friction;
 	public float StaticFriction;
-	public byte FrictionCombineMode;
+	public EFrictionCombineMode FrictionCombineMode;
 	public bool bOverrideFrictionCombineMode;
 	public float Restitution;
-	public byte RestitutionCombineMode;
+	public EFrictionCombineMode RestitutionCombineMode;
 	public bool bOverrideRestitutionCombineMode;
 	public float Density;
 	public float SleepLinearVelocityThreshold;
@@ -19,5 +19,5 @@ public partial class UPhysicalMaterial : UObject {
 	public float RaiseMassToPower;
 	public float DestructibleDamageThresholdScale;
 	public UDEPRECATED_PhysicalMaterialPropertyBase PhysicalMaterialProperty_DEPRECATED;
-	public byte SurfaceType;
+	public EPhysicalSurface SurfaceType;
 }

@@ -5,7 +5,7 @@ using CSharpToCpp.Utilities;
 public partial class UAssetPlacementSettings : UObject {
 // AssetPlacementSettings
 	public bool bAlignToNormal;
-	public byte AxisToAlignWithNormal;
+	public EAxis AxisToAlignWithNormal;
 	public bool bInvertNormalAxis;
 	public bool bUseRandomRotationX;
 	public FFloatInterval RandomRotationX;

@@ -23,10 +23,10 @@ public partial struct FGPUSpriteEmitterInfo {
 	public float InvRotationRateScale;
 	public float MaxLifetime;
 	public int MaxParticleCount;
-	public byte ScreenAlignment;
-	public byte LockAxisFlag;
+	public EParticleScreenAlignment ScreenAlignment;
+	public EParticleAxisLock LockAxisFlag;
 	public bool bEnableCollision;
-	public byte CollisionMode;
+	public EParticleCollisionMode CollisionMode;
 	public bool bRemoveHMDRoll;
 	public float MinFacingCameraBlendDistance;
 	public float MaxFacingCameraBlendDistance;

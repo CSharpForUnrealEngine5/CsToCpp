@@ -5,6 +5,6 @@ using CSharpToCpp.Utilities;
 public partial class UBlueprintFactory : UFactory {
 // BlueprintFactory
 	public UClass ParentClass;
-	public byte BlueprintType;
+	public EBlueprintType BlueprintType;
 	public bool bSkipClassPicker;
 }

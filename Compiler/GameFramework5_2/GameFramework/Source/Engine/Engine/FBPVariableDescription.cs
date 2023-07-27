@@ -12,7 +12,7 @@ public partial struct FBPVariableDescription {
 	public string Category;
 	public ulong PropertyFlags;
 	public string RepNotifyFunc;
-	public byte ReplicationCondition;
+	public ELifetimeCondition ReplicationCondition;
 	public TArray<FBPVariableMetaDataEntry> MetaDataArray;
 	public string DefaultValue;
 }

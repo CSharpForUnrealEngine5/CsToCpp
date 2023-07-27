@@ -4,7 +4,7 @@ using CSharpToCpp.Utilities;
 [CppInclude("LandscapeGizmoActiveActor.h")]
 public partial class ALandscapeGizmoActiveActor : ALandscapeGizmoActor {
 // LandscapeGizmoActiveActor
-	public byte DataType;
+	public ELandscapeGizmoType DataType;
 	public UTexture2D GizmoTexture;
 	public FVector2D TextureScale;
 	public TArray<FVector> SampledHeight;

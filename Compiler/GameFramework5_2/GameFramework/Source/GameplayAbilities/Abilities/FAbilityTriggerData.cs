@@ -6,5 +6,5 @@ using CSharpToCpp.Utilities;
 public partial struct FAbilityTriggerData {
 // AbilityTriggerData
 	public FGameplayTag TriggerTag;
-	public byte TriggerSource;
+	public EGameplayAbilityTriggerSource TriggerSource;
 }

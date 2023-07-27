@@ -6,7 +6,7 @@ using CSharpToCpp.Utilities;
 public partial class UFbxTestPlan : UObject {
 // FbxTestPlan
 	public string TestPlanName;
-	public byte Action;
+	public EFBXTestPlanActionType Action;
 	public int LodIndex;
 	public bool bDeleteFolderAssets;
 	public TArray<FFbxTestPlanExpectedResult> ExpectedResult;

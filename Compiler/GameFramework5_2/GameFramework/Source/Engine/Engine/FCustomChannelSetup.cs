@@ -5,8 +5,8 @@ using CSharpToCpp.Utilities;
 ///<summary>Structure for custom channel setup information.</summary>
 public partial struct FCustomChannelSetup {
 // CustomChannelSetup
-	public byte Channel;
-	public byte DefaultResponse;
+	public ECollisionChannel Channel;
+	public ECollisionResponse DefaultResponse;
 	public bool bTraceType;
 	public bool bStaticObject;
 	public string Name;

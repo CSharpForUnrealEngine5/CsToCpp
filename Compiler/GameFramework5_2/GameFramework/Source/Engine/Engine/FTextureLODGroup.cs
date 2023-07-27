@@ -5,12 +5,12 @@ using CSharpToCpp.Utilities;
 ///<summary>LOD settings for a single texture group.</summary>
 public partial struct FTextureLODGroup {
 // TextureLODGroup
-	public byte Group;
+	public TextureGroup Group;
 	public int LODBias;
 	public int LODBias_Smaller;
 	public int LODBias_Smallest;
 	public int NumStreamedMips;
-	public byte MipGenSettings;
+	public TextureMipGenSettings MipGenSettings;
 	public int MinLODSize;
 	public int MaxLODSize;
 	public int MaxLODSize_Smaller;
@@ -27,6 +27,6 @@ public partial struct FTextureLODGroup {
 	public ETextureDownscaleOptions DownscaleOptions;
 	public int VirtualTextureTileCountBias;
 	public int VirtualTextureTileSizeBias;
-	public byte LossyCompressionAmount;
+	public ETextureLossyCompressionAmount LossyCompressionAmount;
 	public bool CookPlatformTilingDisabled;
 }

@@ -9,5 +9,5 @@ public partial struct FStaticMeshInstanceVisualizationMeshDesc {
 	public float MinLODSignificance;
 	public float MaxLODSignificance;
 	public bool bCastShadows;
-	public byte Mobility;
+	public EComponentMobility Mobility;
 }

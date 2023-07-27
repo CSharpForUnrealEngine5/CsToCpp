@@ -7,6 +7,6 @@ public partial class UStackBoxSlot : UPanelSlot {
 // StackBoxSlot
 	public FMargin Padding;
 	public FSlateChildSize Size;
-	public byte HorizontalAlignment;
-	public byte VerticalAlignment;
+	public EHorizontalAlignment HorizontalAlignment;
+	public EVerticalAlignment VerticalAlignment;
 }

@@ -12,11 +12,11 @@ public partial struct FEnvTraceData {
 	public float ExtentY;
 	public float ExtentZ;
 	public float PostProjectionVerticalOffset;
-	public byte TraceChannel;
-	public byte SerializedChannel;
+	public ETraceTypeQuery TraceChannel;
+	public ECollisionChannel SerializedChannel;
 	public string TraceProfileName;
-	public byte TraceShape;
-	public byte TraceMode;
+	public EEnvTraceShape TraceShape;
+	public EEnvQueryTrace TraceMode;
 	public bool bTraceComplex;
 	public bool bOnlyBlockingHits;
 	public bool bCanTraceOnNavMesh;

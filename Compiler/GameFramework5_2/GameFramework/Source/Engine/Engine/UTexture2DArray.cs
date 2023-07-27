@@ -4,9 +4,9 @@ using CSharpToCpp.Utilities;
 [CppInclude("Engine/Texture2DArray.h")]
 public partial class UTexture2DArray : UTexture {
 // Texture2DArray
-	public byte AddressX;
-	public byte AddressY;
-	public byte AddressZ;
+	public TextureAddress AddressX;
+	public TextureAddress AddressY;
+	public TextureAddress AddressZ;
 	public TArray<UTexture2D> SourceTextures;
 	public bool bSourceGeneratedFromSourceTexturesArray;
 }

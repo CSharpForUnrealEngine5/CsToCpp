@@ -15,8 +15,8 @@ public partial class UAnimSequence : UAnimSequenceBase {
 	public float CompressionErrorThresholdScale;
 	public UAnimBoneCompressionSettings BoneCompressionSettings;
 	public UAnimCurveCompressionSettings CurveCompressionSettings;
-	public byte AdditiveAnimType;
-	public byte RefPoseType;
+	public EAdditiveAnimationType AdditiveAnimType;
+	public EAdditiveBasePoseType RefPoseType;
 	public int RefFrameIndex;
 	public UAnimSequence RefPoseSeq;
 	public string RetargetSource;
@@ -24,7 +24,7 @@ public partial class UAnimSequence : UAnimSequenceBase {
 	public TArray<FTransform> RetargetSourceAssetReferencePose;
 	public EAnimInterpolationType Interpolation;
 	public bool bEnableRootMotion;
-	public byte RootMotionRootLock;
+	public ERootMotionRootLock RootMotionRootLock;
 	public bool bForceRootLock;
 	public bool bUseNormalizedRootMotionScale;
 	public bool bRootMotionSettingsCopiedFromMontage;

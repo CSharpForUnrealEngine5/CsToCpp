@@ -5,7 +5,7 @@ using CSharpToCpp.Utilities;
 public partial class UK2Node_InputKeyEvent : UK2Node_Event {
 // K2Node_InputKeyEvent
 	public FInputChord InputChord;
-	public byte InputKeyEvent;
+	public EInputEvent InputKeyEvent;
 	public bool bConsumeInput;
 	public bool bExecuteWhenPaused;
 	public bool bOverrideParentBinding;

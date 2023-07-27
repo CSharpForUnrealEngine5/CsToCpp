@@ -6,7 +6,7 @@ using CSharpToCpp.Utilities;
 public partial struct FViewTargetTransitionParams {
 // ViewTargetTransitionParams
 	public float BlendTime;
-	public byte BlendFunction;
+	public EViewTargetBlendFunction BlendFunction;
 	public float BlendExp;
 	public bool bLockOutgoing;
 }

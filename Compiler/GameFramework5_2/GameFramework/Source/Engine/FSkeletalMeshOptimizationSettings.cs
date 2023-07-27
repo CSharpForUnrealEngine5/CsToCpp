@@ -5,7 +5,7 @@ using CSharpToCpp.Utilities;
 ///<summary>FSkeletalMeshOptimizationSettings - The settings used to optimize a skeletal mesh LOD.</summary>
 public partial struct FSkeletalMeshOptimizationSettings {
 // SkeletalMeshOptimizationSettings
-	public byte TerminationCriterion;
+	public SkeletalMeshTerminationCriterion TerminationCriterion;
 	public float NumOfTrianglesPercentage;
 	public float NumOfVertPercentage;
 	public uint MaxNumOfTriangles;
@@ -13,11 +13,11 @@ public partial struct FSkeletalMeshOptimizationSettings {
 	public uint MaxNumOfTrianglesPercentage;
 	public uint MaxNumOfVertsPercentage;
 	public float MaxDeviationPercentage;
-	public byte ReductionMethod;
-	public byte SilhouetteImportance;
-	public byte TextureImportance;
-	public byte ShadingImportance;
-	public byte SkinningImportance;
+	public SkeletalMeshOptimizationType ReductionMethod;
+	public SkeletalMeshOptimizationImportance SilhouetteImportance;
+	public SkeletalMeshOptimizationImportance TextureImportance;
+	public SkeletalMeshOptimizationImportance ShadingImportance;
+	public SkeletalMeshOptimizationImportance SkinningImportance;
 	public bool bRemapMorphTargets;
 	public bool bRecalcNormals;
 	public float WeldingThreshold;

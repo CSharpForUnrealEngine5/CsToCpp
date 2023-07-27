@@ -11,7 +11,7 @@ public partial class UNavLinkCustomComponent : UNavRelevantComponent {
 	public FNavAgentSelector SupportedAgents;
 	public FVector LinkRelativeStart;
 	public FVector LinkRelativeEnd;
-	public byte LinkDirection;
+	public ENavLinkDirection LinkDirection;
 	public bool bLinkEnabled;
 	public bool bNotifyWhenEnabled;
 	public bool bNotifyWhenDisabled;
@@ -21,5 +21,5 @@ public partial class UNavLinkCustomComponent : UNavRelevantComponent {
 	public UClass ObstacleAreaClass;
 	public float BroadcastRadius;
 	public float BroadcastInterval;
-	public byte BroadcastChannel;
+	public ECollisionChannel BroadcastChannel;
 }

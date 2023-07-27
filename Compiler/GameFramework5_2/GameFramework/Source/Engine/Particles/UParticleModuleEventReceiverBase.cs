@@ -4,6 +4,6 @@ using CSharpToCpp.Utilities;
 [CppInclude("Particles/Event/ParticleModuleEventReceiverBase.h")]
 public partial class UParticleModuleEventReceiverBase : UParticleModuleEventBase {
 // ParticleModuleEventReceiverBase
-	public byte EventGeneratorType;
+	public EParticleEventType EventGeneratorType;
 	public string EventName;
 }

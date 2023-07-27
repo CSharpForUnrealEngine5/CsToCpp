@@ -5,7 +5,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Implements settings for the graph editor.</summary>
 public partial class UGraphEditorSettings : UObject {
 // GraphEditorSettings
-	public byte DataPinStyle;
+	public EBlueprintPinStyleType DataPinStyle;
 	public EGraphPanningMouseButton PanningMouseButton;
 	public float PaddingAbovePin;
 	public float PaddingBelowPin;
@@ -75,6 +75,6 @@ public partial class UGraphEditorSettings : UObject {
 	public float TracePositionExponent;
 	public float PaddingAutoCollateIncrement;
 	public bool bOpenCreateMenuOnBlankGraphAreas;
-	public byte DefaultCommentNodeMoveMode;
+	public ECommentBoxMode DefaultCommentNodeMoveMode;
 	public bool bShowCommentBubbleWhenZoomedOut;
 }

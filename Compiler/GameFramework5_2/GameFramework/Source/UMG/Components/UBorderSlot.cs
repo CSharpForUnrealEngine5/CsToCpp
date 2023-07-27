@@ -9,6 +9,6 @@ public partial class UBorderSlot : UPanelSlot {
 	public  void SetHorizontalAlignment(EHorizontalAlignment InHorizontalAlignment) {}
 	public  void SetVerticalAlignment(EVerticalAlignment InVerticalAlignment) {}
 	public FMargin Padding;
-	public byte HorizontalAlignment;
-	public byte VerticalAlignment;
+	public EHorizontalAlignment HorizontalAlignment;
+	public EVerticalAlignment VerticalAlignment;
 }

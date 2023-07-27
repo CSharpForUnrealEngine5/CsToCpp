@@ -7,7 +7,7 @@ public partial struct FSoundConcurrencySettings {
 	public int MaxCount;
 	public bool bLimitToOwner;
 	public bool bVolumeScaleCanRelease;
-	public byte ResolutionRule;
+	public EMaxConcurrentResolutionRule ResolutionRule;
 	public float RetriggerTime;
 	public float VolumeScale;
 	public EConcurrencyVolumeScaleMode VolumeScaleMode;

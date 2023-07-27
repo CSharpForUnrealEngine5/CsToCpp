@@ -32,9 +32,9 @@ public partial class USkeletalMeshComponent : USkinnedMeshComponent {
 	public  bool GetIntegerAttribute(string BoneName,string AttributeName,int DefaultValue,int OutValue,ECustomBoneAttributeLookup LookupType/*=ECustomBoneAttributeLookup.BoneOnly*/) { return default; }
 	public  bool GetStringAttribute(string BoneName,string AttributeName,string DefaultValue,string OutValue,ECustomBoneAttributeLookup LookupType/*=ECustomBoneAttributeLookup.BoneOnly*/) { return default; }
 	public float GlobalAnimRateScale;
-	public byte KinematicBonesUpdateType;
-	public byte PhysicsTransformUpdateMode;
-	public byte AnimationMode;
+	public EKinematicBonesUpdateToPhysics KinematicBonesUpdateType;
+	public EPhysicsTransformUpdateMode PhysicsTransformUpdateMode;
+	public EAnimationMode AnimationMode;
 	public bool bDisablePostProcessBlueprint;
 	public bool bUpdateOverlapsOnAnimationFinalize;
 	public bool bHasValidBodies;

@@ -5,9 +5,9 @@ using CSharpToCpp.Utilities;
 ///<summary>One key in a rich, editable float curve</summary>
 public partial struct FRichCurveKey {
 // RichCurveKey
-	public byte InterpMode;
-	public byte TangentMode;
-	public byte TangentWeightMode;
+	public ERichCurveInterpMode InterpMode;
+	public ERichCurveTangentMode TangentMode;
+	public ERichCurveTangentWeightMode TangentWeightMode;
 	public float Time;
 	public float Value;
 	public float ArriveTangent;

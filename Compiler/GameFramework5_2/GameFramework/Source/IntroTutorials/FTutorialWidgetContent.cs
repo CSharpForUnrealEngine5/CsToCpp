@@ -7,8 +7,8 @@ public partial struct FTutorialWidgetContent {
 // TutorialWidgetContent
 	public FTutorialContent Content;
 	public FTutorialContentAnchor WidgetAnchor;
-	public byte HorizontalAlignment;
-	public byte VerticalAlignment;
+	public EHorizontalAlignment HorizontalAlignment;
+	public EVerticalAlignment VerticalAlignment;
 	public FVector2D Offset;
 	public float ContentWidth;
 	public bool bAutoFocus;

@@ -6,6 +6,6 @@ public partial class UControlRigPoseMirrorSettings : UObject {
 // ControlRigPoseMirrorSettings
 	public string RightSide;
 	public string LeftSide;
-	public byte MirrorAxis;
-	public byte AxisToFlip;
+	public EAxis MirrorAxis;
+	public EAxis AxisToFlip;
 }

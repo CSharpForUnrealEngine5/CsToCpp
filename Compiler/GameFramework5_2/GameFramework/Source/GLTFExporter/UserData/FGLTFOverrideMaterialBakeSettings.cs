@@ -7,7 +7,7 @@ public partial struct FGLTFOverrideMaterialBakeSettings {
 	public bool bOverrideSize;
 	public EGLTFMaterialBakeSizePOT Size;
 	public bool bOverrideFilter;
-	public byte Filter;
+	public TextureFilter Filter;
 	public bool bOverrideTiling;
-	public byte Tiling;
+	public TextureAddress Tiling;
 }

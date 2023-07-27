@@ -5,7 +5,7 @@ using CSharpToCpp.Utilities;
 public partial class UParticleModuleLocationEmitter : UParticleModuleLocationBase {
 // ParticleModuleLocationEmitter
 	public string EmitterName;
-	public byte SelectionMethod;
+	public ELocationEmitterSelectionMethod SelectionMethod;
 	public bool InheritSourceVelocity;
 	public float InheritSourceVelocityScale;
 	public bool bInheritSourceRotation;

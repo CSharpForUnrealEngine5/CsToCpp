@@ -5,8 +5,8 @@ using CSharpToCpp.Utilities;
 ///<summary>A slot for UUniformGridPanel, these slots all share the same size as the largest slot</summary>
 public partial class UUniformGridSlot : UPanelSlot {
 // UniformGridSlot
-	public byte HorizontalAlignment;
-	public byte VerticalAlignment;
+	public EHorizontalAlignment HorizontalAlignment;
+	public EVerticalAlignment VerticalAlignment;
 	public int Row;
 	public int Column;
 	public  void SetRow(int InRow) {}

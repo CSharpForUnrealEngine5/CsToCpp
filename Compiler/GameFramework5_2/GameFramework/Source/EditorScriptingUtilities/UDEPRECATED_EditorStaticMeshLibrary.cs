@@ -16,7 +16,7 @@ public partial class UDEPRECATED_EditorStaticMeshLibrary : UBlueprintFunctionLib
 	public static bool RemoveLods(UStaticMesh StaticMesh) { return default; }
 	public static TArray<float> GetLodScreenSizes(UStaticMesh StaticMesh) { return default; }
 	public static int GetSimpleCollisionCount(UStaticMesh StaticMesh) { return default; }
-	public static byte GetCollisionComplexity(UStaticMesh StaticMesh) { return default; }
+	public static ECollisionTraceFlag GetCollisionComplexity(UStaticMesh StaticMesh) { return default; }
 	public static int GetConvexCollisionCount(UStaticMesh StaticMesh) { return default; }
 	public static bool SetConvexDecompositionCollisionsWithNotification(UStaticMesh StaticMesh,int HullCount,int MaxHullVerts,int HullPrecision,bool bApplyChanges) { return default; }
 	public static bool BulkSetConvexDecompositionCollisionsWithNotification(TArray<UStaticMesh> StaticMeshes,int HullCount,int MaxHullVerts,int HullPrecision,bool bApplyChanges) { return default; }

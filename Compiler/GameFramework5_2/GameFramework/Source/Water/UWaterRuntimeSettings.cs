@@ -5,7 +5,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Implements the runtime settings for the Water plugin.</summary>
 public partial class UWaterRuntimeSettings : UDeveloperSettings {
 // WaterRuntimeSettings
-	public byte CollisionChannelForWaterTraces;
+	public ECollisionChannel CollisionChannelForWaterTraces;
 	public TSoftObjectPtr<UMaterialParameterCollection> MaterialParameterCollection;
 	public float WaterBodyIconWorldZOffset;
 	public string DefaultWaterCollisionProfileName;

@@ -5,5 +5,5 @@ using CSharpToCpp.Utilities;
 ///<summary>For each static mesh to process, set its collision complexity</summary>
 public partial class UDataprepSetCollisionComplexityOperation : UDataprepOperation {
 // DataprepSetCollisionComplexityOperation
-	public byte CollisionTraceFlag;
+	public ECollisionTraceFlag CollisionTraceFlag;
 }

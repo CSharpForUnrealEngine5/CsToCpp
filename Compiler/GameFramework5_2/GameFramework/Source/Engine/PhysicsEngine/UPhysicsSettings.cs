@@ -6,8 +6,8 @@ using CSharpToCpp.Utilities;
 public partial class UPhysicsSettings : UPhysicsSettingsCore {
 // PhysicsSettings
 	public FRigidBodyErrorCorrection PhysicErrorCorrection;
-	public byte LockedAxis_DEPRECATED;
-	public byte DefaultDegreesOfFreedom;
+	public ESettingsLockedAxis LockedAxis_DEPRECATED;
+	public ESettingsDOF DefaultDegreesOfFreedom;
 	public bool bSuppressFaceRemapTable;
 	public bool bSupportUVFromHitResults;
 	public bool bDisableActiveActors;

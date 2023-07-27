@@ -13,5 +13,5 @@ public partial struct FComboButtonStyle {
 	public FMargin MenuBorderPadding;
 	public FMargin ContentPadding;
 	public FMargin DownArrowPadding;
-	public byte DownArrowAlign;
+	public EVerticalAlignment DownArrowAlign;
 }

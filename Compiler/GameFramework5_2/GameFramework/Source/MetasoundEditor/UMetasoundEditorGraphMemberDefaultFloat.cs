@@ -8,7 +8,7 @@ public partial class UMetasoundEditorGraphMemberDefaultFloat : UMetasoundEditorG
 	public bool ClampDefault;
 	public FVector2D Range;
 	public EMetasoundMemberDefaultWidget WidgetType;
-	public byte WidgetOrientation;
+	public EOrientation WidgetOrientation;
 	public EMetasoundMemberDefaultWidgetValueType WidgetValueType;
 	public bool VolumeWidgetUseLinearOutput;
 	public FVector2D VolumeWidgetDecibelRange;

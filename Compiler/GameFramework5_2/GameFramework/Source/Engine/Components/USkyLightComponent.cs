@@ -5,7 +5,7 @@ using CSharpToCpp.Utilities;
 public partial class USkyLightComponent : ULightComponentBase {
 // SkyLightComponent
 	public bool bRealTimeCapture;
-	public byte SourceType;
+	public ESkyLightSourceType SourceType;
 	public UTextureCube Cubemap;
 	public float SourceCubemapAngle;
 	public int CubemapResolution;
@@ -23,7 +23,7 @@ public partial class USkyLightComponent : ULightComponentBase {
 	public float CloudAmbientOcclusionExtent;
 	public float CloudAmbientOcclusionMapResolutionScale;
 	public float CloudAmbientOcclusionApertureScale;
-	public byte OcclusionCombineMode;
+	public EOcclusionCombineMode OcclusionCombineMode;
 	public bool bShowIlluminanceMeter;
 	public  void SetIntensity(float NewIntensity) {}
 	public  void SetIndirectLightingIntensity(float NewIntensity) {}

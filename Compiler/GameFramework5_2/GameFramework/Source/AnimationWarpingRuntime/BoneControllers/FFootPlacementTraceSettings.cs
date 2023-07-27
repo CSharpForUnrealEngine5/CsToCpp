@@ -7,9 +7,9 @@ public partial struct FFootPlacementTraceSettings {
 	public float StartOffset;
 	public float EndOffset;
 	public float SweepRadius;
-	public byte ComplexTraceChannel;
+	public ETraceTypeQuery ComplexTraceChannel;
 	public float MaxGroundPenetration;
 	public float SimpleCollisionInfluence;
-	public byte SimpleTraceChannel;
+	public ETraceTypeQuery SimpleTraceChannel;
 	public bool bEnabled;
 }

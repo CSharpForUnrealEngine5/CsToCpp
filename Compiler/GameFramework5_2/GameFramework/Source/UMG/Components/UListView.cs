@@ -12,7 +12,7 @@ public partial class UListView : UListViewBase {
 	public  int GetNumItems() { return default; }
 	public  int GetIndexForItem(UObject Item) { return default; }
 	public  void ClearListItems() {}
-	public  void SetSelectionMode(byte SelectionMode) {}
+	public  void SetSelectionMode(ESelectionMode SelectionMode) {}
 	public  bool IsRefreshPending() { return default; }
 	public  void ScrollIndexIntoView(int Index) {}
 	public  void SetSelectedIndex(int Index) {}
@@ -21,8 +21,8 @@ public partial class UListView : UListViewBase {
 	public  void OnListItemOuterEndPlayed(AActor ItemOuter,EEndPlayReason EndPlayReason) {}
 	public FTableViewStyle WidgetStyle;
 	public FScrollBarStyle ScrollBarStyle;
-	public byte Orientation;
-	public byte SelectionMode;
+	public EOrientation Orientation;
+	public ESelectionMode SelectionMode;
 	public EConsumeMouseWheel ConsumeMouseWheel;
 	public bool bClearSelectionOnClick;
 	public bool bIsFocusable;

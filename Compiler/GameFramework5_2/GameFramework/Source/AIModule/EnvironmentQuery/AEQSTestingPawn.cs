@@ -15,7 +15,7 @@ public partial class AEQSTestingPawn : ACharacter {
 	public bool bReRunQueryOnlyOnFinishedMove;
 	public bool bShouldBeVisibleInGame;
 	public bool bTickDuringGame;
-	public byte QueryingMode;
+	public EEnvQueryRunMode QueryingMode;
 	public FNavAgentProperties NavAgentProperties;
 	public UEQSRenderingComponent EdRenderComp;
 }

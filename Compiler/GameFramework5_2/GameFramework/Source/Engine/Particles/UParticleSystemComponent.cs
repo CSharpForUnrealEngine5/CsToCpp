@@ -16,7 +16,7 @@ public partial class UParticleSystemComponent : UFXSystemComponent {
 	public bool bWarmingUp;
 	public bool bOverrideLODMethod;
 	public bool bSkipUpdateDynamicDataDuringTick;
-	public byte LODMethod;
+	public ParticleSystemLODMethod LODMethod;
 	public EParticleSignificanceLevel RequiredSignificance;
 	public TArray<FParticleSysParam> InstanceParameters;
 	public FParticleSpawnSignature OnParticleSpawn;
@@ -36,7 +36,7 @@ public partial class UParticleSystemComponent : UFXSystemComponent {
 	public float CustomTimeDilation;
 	public TWeakObjectPtr<USceneComponent> AutoAttachParent;
 	public string AutoAttachSocketName;
-	public byte AutoAttachLocationType_DEPRECATED;
+	public EAttachLocation AutoAttachLocationType_DEPRECATED;
 	public EAttachmentRule AutoAttachLocationRule;
 	public EAttachmentRule AutoAttachRotationRule;
 	public EAttachmentRule AutoAttachScaleRule;

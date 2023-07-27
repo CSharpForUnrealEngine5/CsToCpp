@@ -9,10 +9,10 @@ public partial struct FAnimNode_ModifyBone {
 	public FVector Translation;
 	public FRotator Rotation;
 	public FVector Scale;
-	public byte TranslationMode;
-	public byte RotationMode;
-	public byte ScaleMode;
-	public byte TranslationSpace;
-	public byte RotationSpace;
-	public byte ScaleSpace;
+	public EBoneModificationMode TranslationMode;
+	public EBoneModificationMode RotationMode;
+	public EBoneModificationMode ScaleMode;
+	public EBoneControlSpace TranslationSpace;
+	public EBoneControlSpace RotationSpace;
+	public EBoneControlSpace ScaleSpace;
 }

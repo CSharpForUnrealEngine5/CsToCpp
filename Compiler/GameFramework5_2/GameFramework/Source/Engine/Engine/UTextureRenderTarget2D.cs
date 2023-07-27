@@ -8,15 +8,15 @@ public partial class UTextureRenderTarget2D : UTextureRenderTarget {
 	public int SizeX;
 	public int SizeY;
 	public FLinearColor ClearColor;
-	public byte AddressX;
-	public byte AddressY;
+	public TextureAddress AddressX;
+	public TextureAddress AddressY;
 	public bool bForceLinearGamma;
 	public bool bHDR_DEPRECATED;
 	public bool bGPUSharedFlag;
-	public byte RenderTargetFormat;
+	public ETextureRenderTargetFormat RenderTargetFormat;
 	public bool bAutoGenerateMips;
-	public byte MipsSamplerFilter;
-	public byte MipsAddressU;
-	public byte MipsAddressV;
-	public byte OverrideFormat;
+	public TextureFilter MipsSamplerFilter;
+	public TextureAddress MipsAddressU;
+	public TextureAddress MipsAddressV;
+	public EPixelFormat OverrideFormat;
 }

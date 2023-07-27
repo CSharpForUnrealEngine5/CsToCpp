@@ -6,7 +6,7 @@ using CSharpToCpp.Utilities;
 public partial struct FCollisionResponseTemplate {
 // CollisionResponseTemplate
 	public string Name;
-	public byte CollisionEnabled;
+	public ECollisionEnabled CollisionEnabled;
 	public bool bCanModify;
 	public string ObjectTypeName;
 	public TArray<FResponseChannel> CustomResponses;

@@ -9,5 +9,5 @@ public partial struct FInterpCurvePointVector2D {
 	public FVector2D OutVal;
 	public FVector2D ArriveTangent;
 	public FVector2D LeaveTangent;
-	public byte InterpMode;
+	public EInterpCurveMode InterpMode;
 }

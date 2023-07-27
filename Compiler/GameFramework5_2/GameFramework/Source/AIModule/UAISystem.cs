@@ -19,7 +19,7 @@ public partial class UAISystem : UAISystemBase {
 	public bool bAddBlackboardSelfKey;
 	public bool bClearBBEntryOnBTEQSFail;
 	public bool bBlackboardKeyDecoratorAllowsNoneAsValue;
-	public byte DefaultSightCollisionChannel;
+	public ECollisionChannel DefaultSightCollisionChannel;
 	public UBehaviorTreeManager BehaviorTreeManager;
 	public UEnvQueryManager EnvironmentQueryManager;
 	public UAIPerceptionSystem PerceptionSystem;

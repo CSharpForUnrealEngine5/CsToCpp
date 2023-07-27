@@ -7,8 +7,8 @@ public partial class UVerticalBoxSlot : UPanelSlot {
 // VerticalBoxSlot
 	public FSlateChildSize Size;
 	public FMargin Padding;
-	public byte HorizontalAlignment;
-	public byte VerticalAlignment;
+	public EHorizontalAlignment HorizontalAlignment;
+	public EVerticalAlignment VerticalAlignment;
 	public  void SetPadding(FMargin InPadding) {}
 	public  void SetSize(FSlateChildSize InSize) {}
 	public  void SetHorizontalAlignment(EHorizontalAlignment InHorizontalAlignment) {}

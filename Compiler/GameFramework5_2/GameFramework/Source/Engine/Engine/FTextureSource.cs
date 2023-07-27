@@ -15,10 +15,10 @@ public partial struct FTextureSource {
 	public int NumLayers;
 	public bool bPNGCompressed_DEPRECATED;
 	public bool bLongLatCubemap;
-	public byte CompressionFormat;
+	public ETextureSourceCompressionFormat CompressionFormat;
 	public bool bGuidIsHash;
-	public byte Format;
-	public TArray<byte> LayerFormat;
+	public ETextureSourceFormat Format;
+	public TArray<ETextureSourceFormat> LayerFormat;
 	public TArray<FTextureSourceBlock> Blocks;
 	public TArray<long> BlockDataOffsets;
 }

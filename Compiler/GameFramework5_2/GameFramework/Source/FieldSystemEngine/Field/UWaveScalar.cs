@@ -10,6 +10,6 @@ public partial class UWaveScalar : UFieldNodeFloat {
 	public FVector Position;
 	public float Wavelength;
 	public float Period;
-	public byte Function;
-	public byte Falloff;
+	public EWaveFunctionType Function;
+	public EFieldFalloffType Falloff;
 }

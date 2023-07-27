@@ -5,7 +5,7 @@ using CSharpToCpp.Utilities;
 ///<summary>FGameplayAbilityActivationInfo</summary>
 public partial struct FGameplayAbilityActivationInfo {
 // GameplayAbilityActivationInfo
-	public byte ActivationMode;
+	public EGameplayAbilityActivationMode ActivationMode;
 	public bool bCanBeEndedByOtherInstance;
 	public FPredictionKey PredictionKeyWhenActivated;
 }

@@ -5,7 +5,7 @@ using CSharpToCpp.Utilities;
 public partial class UTimelineTemplate : UObject {
 // TimelineTemplate
 	public float TimelineLength;
-	public byte LengthMode;
+	public ETimelineLengthMode LengthMode;
 	public bool bAutoPlay;
 	public bool bLoop;
 	public bool bReplicated;
@@ -16,7 +16,7 @@ public partial class UTimelineTemplate : UObject {
 	public TArray<FTTLinearColorTrack> LinearColorTracks;
 	public TArray<FBPVariableMetaDataEntry> MetaDataArray;
 	public FGuid TimelineGuid;
-	public byte TimelineTickGroup;
+	public ETickingGroup TimelineTickGroup;
 	public string VariableName;
 	public string DirectionPropertyName;
 	public string UpdateFunctionName;

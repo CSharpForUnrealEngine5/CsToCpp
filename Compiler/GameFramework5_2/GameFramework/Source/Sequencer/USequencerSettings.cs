@@ -10,7 +10,7 @@ public partial class USequencerSettings : UObject {
 	public EKeyGroupMode KeyGroupMode;
 	public EMovieSceneKeyInterpolation KeyInterpolation;
 	public bool bAutoSetTrackDefaults;
-	public byte SpawnPosition;
+	public ESequencerSpawnPosition SpawnPosition;
 	public bool bCreateSpawnableCameras;
 	public bool bShowRangeSlider;
 	public bool bIsSnapEnabled;
@@ -29,12 +29,12 @@ public partial class USequencerSettings : UObject {
 	public bool bShowSelectedNodesOnly;
 	public bool bRewindOnRecord;
 	public bool bLeftMouseDragDoesMarquee;
-	public byte ZoomPosition;
+	public ESequencerZoomPosition ZoomPosition;
 	public bool bAutoScrollEnabled;
 	public bool bLinkCurveEditorTimeRange;
 	public bool bSynchronizeCurveEditorSelection;
 	public bool bIsolateCurveEditorToSelection;
-	public byte LoopMode;
+	public ESequencerLoopMode LoopMode;
 	public bool bResetPlayheadWhenNavigating;
 	public bool bKeepCursorInPlayRangeWhileScrubbing;
 	public bool bKeepPlayRangeInSectionBounds;

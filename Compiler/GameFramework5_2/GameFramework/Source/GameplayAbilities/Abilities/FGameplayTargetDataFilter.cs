@@ -7,6 +7,6 @@ public partial struct FGameplayTargetDataFilter {
 // GameplayTargetDataFilter
 	public AActor SelfActor;
 	public UClass RequiredActorClass;
-	public byte SelfFilter;
+	public ETargetDataFilterSelf SelfFilter;
 	public bool bReverseFilter;
 }

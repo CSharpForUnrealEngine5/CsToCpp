@@ -5,5 +5,5 @@ using CSharpToCpp.Utilities;
 ///<summary>Allows a property if it is of a certain type.</summary>
 public partial class UPropertyTypeFilter : UPropertySelectorFilter {
 // PropertyTypeFilter
-	public TSet<byte> AllowedTypes;
+	public TSet<EBlueprintPropertyType> AllowedTypes;
 }

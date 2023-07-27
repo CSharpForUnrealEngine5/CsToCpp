@@ -6,5 +6,5 @@ using CSharpToCpp.Utilities;
 public partial class UMaterialExpressionSamplePhysicsVectorField : UMaterialExpression {
 // MaterialExpressionSamplePhysicsVectorField
 	public FExpressionInput WorldPosition;
-	public byte FieldTarget;
+	public EFieldVectorType FieldTarget;
 }

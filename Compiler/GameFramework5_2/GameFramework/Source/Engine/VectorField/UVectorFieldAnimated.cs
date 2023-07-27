@@ -5,7 +5,7 @@ using CSharpToCpp.Utilities;
 public partial class UVectorFieldAnimated : UVectorField {
 // VectorFieldAnimated
 	public UTexture2D Texture;
-	public byte ConstructionOp;
+	public EVectorFieldConstructionOp ConstructionOp;
 	public int VolumeSizeX;
 	public int VolumeSizeY;
 	public int VolumeSizeZ;

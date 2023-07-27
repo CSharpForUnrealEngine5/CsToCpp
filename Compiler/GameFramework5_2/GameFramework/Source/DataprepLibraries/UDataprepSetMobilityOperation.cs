@@ -5,5 +5,5 @@ using CSharpToCpp.Utilities;
 ///<summary>For each actor to process, update its mobilty with the selected value</summary>
 public partial class UDataprepSetMobilityOperation : UDataprepOperation {
 // DataprepSetMobilityOperation
-	public byte MobilityType;
+	public EComponentMobility MobilityType;
 }

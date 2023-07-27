@@ -4,7 +4,7 @@ using CSharpToCpp.Utilities;
 [CppInclude("Animation/Rig.h")]
 public partial struct FRigTransformConstraint {
 // RigTransformConstraint
-	public byte TranformType;
+	public EConstraintTransform TranformType;
 	public string ParentSpace;
 	public float Weight;
 }

@@ -18,7 +18,7 @@ public partial class UAbilityTask_ApplyRootMotionMoveToActorForce : UAbilityTask
 	public float Duration;
 	public bool bDisableDestinationReachedInterrupt;
 	public bool bSetNewMovementMode;
-	public byte NewMovementMode;
+	public EMovementMode NewMovementMode;
 	public bool bRestrictSpeedToExpected;
 	public UCurveVector PathOffsetCurve;
 	public UCurveFloat TimeMappingCurve;

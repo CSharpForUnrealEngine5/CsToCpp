@@ -8,6 +8,6 @@ public partial struct FMediaFrameworkCaptureCameraViewportCameraOutputInfo {
 	public TArray<TLazyObjectPtr<AActor>> LockedActors;
 	public UMediaOutput MediaOutput;
 	public FMediaCaptureOptions CaptureOptions;
-	public byte ViewMode;
+	public EViewModeIndex ViewMode;
 	public TArray<AActor> LockedCameraActors_DEPRECATED;
 }

@@ -8,8 +8,8 @@ public partial struct FAnimLinkableElement {
 	public UAnimMontage LinkedMontage;
 	public int SlotIndex;
 	public int SegmentIndex;
-	public byte LinkMethod;
-	public byte CachedLinkMethod;
+	public EAnimLinkMethod LinkMethod;
+	public EAnimLinkMethod CachedLinkMethod;
 	public float SegmentBeginTime;
 	public float SegmentLength;
 	public float LinkValue;

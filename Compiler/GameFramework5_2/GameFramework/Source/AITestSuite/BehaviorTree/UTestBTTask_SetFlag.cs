@@ -8,5 +8,5 @@ public partial class UTestBTTask_SetFlag : UBTTaskNode {
 	public bool bValue;
 	public string OnAbortKeyName;
 	public bool bOnAbortValue;
-	public byte TaskResult;
+	public EBTNodeResult TaskResult;
 }

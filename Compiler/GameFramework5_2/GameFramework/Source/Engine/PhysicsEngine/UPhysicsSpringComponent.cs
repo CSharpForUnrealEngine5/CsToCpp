@@ -9,7 +9,7 @@ public partial class UPhysicsSpringComponent : USceneComponent {
 	public float SpringDamping;
 	public float SpringLengthAtRest;
 	public float SpringRadius;
-	public byte SpringChannel;
+	public ECollisionChannel SpringChannel;
 	public bool bIgnoreSelf;
 	public float SpringCompression;
 	public  float GetNormalizedCompressionScalar() { return default; }

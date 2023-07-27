@@ -9,7 +9,7 @@ public partial class UTextureRenderTarget2DArray : UTextureRenderTarget {
 	public int SizeY;
 	public int Slices;
 	public FLinearColor ClearColor;
-	public byte OverrideFormat;
+	public EPixelFormat OverrideFormat;
 	public bool bHDR;
 	public bool bForceLinearGamma;
 }

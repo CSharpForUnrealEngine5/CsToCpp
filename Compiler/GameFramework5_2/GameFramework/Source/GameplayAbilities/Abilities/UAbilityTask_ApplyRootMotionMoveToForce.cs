@@ -12,7 +12,7 @@ public partial class UAbilityTask_ApplyRootMotionMoveToForce : UAbilityTask_Appl
 	public FVector TargetLocation;
 	public float Duration;
 	public bool bSetNewMovementMode;
-	public byte NewMovementMode;
+	public EMovementMode NewMovementMode;
 	public bool bRestrictSpeedToExpected;
 	public UCurveVector PathOffsetCurve;
 }

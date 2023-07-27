@@ -5,7 +5,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Allows you to filter location, rotation, and scale properties on scene components.</summary>
 public partial class UTransformPropertyFilter : UPropertySelectorFilter {
 // TransformPropertyFilter
-	public byte Location;
-	public byte Rotation;
-	public byte Scale;
+	public EFilterResult Location;
+	public EFilterResult Rotation;
+	public EFilterResult Scale;
 }

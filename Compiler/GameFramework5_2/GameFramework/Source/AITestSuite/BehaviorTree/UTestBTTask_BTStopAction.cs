@@ -7,5 +7,5 @@ public partial class UTestBTTask_BTStopAction : UBTTaskNode {
 	public EBTTestTaskStopTiming StopTiming;
 	public EBTTestStopAction StopAction;
 	public int LogIndex;
-	public byte LogResult;
+	public EBTNodeResult LogResult;
 }

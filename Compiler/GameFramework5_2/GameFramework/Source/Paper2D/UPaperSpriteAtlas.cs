@@ -11,8 +11,8 @@ public partial class UPaperSpriteAtlas : UObject {
 	public int MipCount;
 	public EPaperSpriteAtlasPadding PaddingType;
 	public int Padding;
-	public byte CompressionSettings;
-	public byte Filter;
+	public TextureCompressionSettings CompressionSettings;
+	public TextureFilter Filter;
 	public TArray<UTexture> GeneratedTextures;
 	public FGuid AtlasGUID;
 	public bool bRebuildAtlas;

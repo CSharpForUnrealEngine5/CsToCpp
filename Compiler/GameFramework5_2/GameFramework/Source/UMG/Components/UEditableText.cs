@@ -21,11 +21,11 @@ public partial class UEditableText : UWidget {
 	public bool ClearKeyboardFocusOnCommit;
 	public bool SelectAllTextOnCommit;
 	public bool AllowContextMenu;
-	public byte KeyboardType;
+	public EVirtualKeyboardType KeyboardType;
 	public FVirtualKeyboardOptions VirtualKeyboardOptions;
 	public EVirtualKeyboardTrigger VirtualKeyboardTrigger;
 	public EVirtualKeyboardDismissAction VirtualKeyboardDismissAction;
-	public byte Justification;
+	public ETextJustify Justification;
 	public ETextOverflowPolicy OverflowPolicy;
 	public FShapedTextOptions ShapedTextOptions;
 	public FOnEditableTextChangedEvent OnTextChanged;

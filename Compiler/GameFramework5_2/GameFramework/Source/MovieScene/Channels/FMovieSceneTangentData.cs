@@ -9,5 +9,5 @@ public partial struct FMovieSceneTangentData {
 	public float LeaveTangent;
 	public float ArriveTangentWeight;
 	public float LeaveTangentWeight;
-	public byte TangentWeightMode;
+	public ERichCurveTangentWeightMode TangentWeightMode;
 }

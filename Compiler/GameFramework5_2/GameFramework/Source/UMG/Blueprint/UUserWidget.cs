@@ -113,8 +113,8 @@ public partial class UUserWidget : UWidget {
 	public UTexture2D PreviewBackground;
 	public bool bHasScriptImplementedTick;
 	public bool bHasScriptImplementedPaint;
-	public  void ListenForInputAction(string ActionName,byte EventType,bool bConsume,FOnInputAction Callback) {}
-	public  void StopListeningForInputAction(string ActionName,byte EventType) {}
+	public  void ListenForInputAction(string ActionName,EInputEvent EventType,bool bConsume,FOnInputAction Callback) {}
+	public  void StopListeningForInputAction(string ActionName,EInputEvent EventType) {}
 	public  void StopListeningForAllInputActions() {}
 	public  void RegisterInputComponent() {}
 	public  void UnregisterInputComponent() {}

@@ -7,7 +7,7 @@ public partial class UMaterialExpressionClamp : UMaterialExpression {
 	public FExpressionInput Input;
 	public FExpressionInput Min;
 	public FExpressionInput Max;
-	public byte ClampMode;
+	public EClampMode ClampMode;
 	public float MinDefault;
 	public float MaxDefault;
 }

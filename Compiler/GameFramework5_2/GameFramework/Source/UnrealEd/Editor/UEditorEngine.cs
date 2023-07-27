@@ -23,7 +23,7 @@ public partial class UEditorEngine : UEngine {
 	public FVector ClickLocation;
 	public FPlane ClickPlane;
 	public FVector MouseMovement;
-	public byte DetailMode;
+	public EDetailMode DetailMode;
 	public bool UseSizingBox;
 	public bool UseAxisIndicator;
 	public bool GodMode;

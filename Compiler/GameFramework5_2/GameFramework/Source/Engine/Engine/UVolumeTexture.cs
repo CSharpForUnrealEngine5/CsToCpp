@@ -8,5 +8,5 @@ public partial class UVolumeTexture : UTexture {
 	public FGuid SourceLightingGuid_DEPRECATED;
 	public int Source2DTileSizeX;
 	public int Source2DTileSizeY;
-	public byte AddressMode;
+	public TextureAddress AddressMode;
 }

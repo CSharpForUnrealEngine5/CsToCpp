@@ -4,5 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("ChangeViewMode.h")]
 public partial class UChangeViewMode : UUTBBaseCommand {
 // ChangeViewMode
-	public byte ViewMode;
+	public EViewModeIndex ViewMode;
 }

@@ -6,5 +6,5 @@ public partial class UDEPRECATED_PawnAction_Repeat : UDEPRECATED_PawnAction {
 // PawnAction_Repeat
 	public UDEPRECATED_PawnAction ActionToRepeat_DEPRECATED;
 	public UDEPRECATED_PawnAction RecentActionCopy_DEPRECATED;
-	public byte ChildFailureHandlingMode;
+	public EPawnActionFailHandling ChildFailureHandlingMode;
 }

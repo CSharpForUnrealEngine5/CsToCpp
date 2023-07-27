@@ -7,7 +7,7 @@ public partial class UMoviePipelineAntiAliasingSetting : UMoviePipelineSetting {
 	public int SpatialSampleCount;
 	public int TemporalSampleCount;
 	public bool bOverrideAntiAliasing;
-	public byte AntiAliasingMethod;
+	public EAntiAliasingMethod AntiAliasingMethod;
 	public int RenderWarmUpCount;
 	public bool bUseCameraCutForWarmUp;
 	public int EngineWarmUpCount;

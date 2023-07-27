@@ -14,7 +14,7 @@ public partial class USplineMeshComponent : UStaticMeshComponent {
 	public bool bAllowSplineEditingPerInstance;
 	public bool bSmoothInterpRollScale;
 	public bool bMeshDirty;
-	public byte ForwardAxis;
+	public ESplineMeshAxis ForwardAxis;
 	public float VirtualTextureMainPassMaxDrawDistance;
 	public bool bSelected;
 	public bool bNeverNeedsCookedCollisionData;

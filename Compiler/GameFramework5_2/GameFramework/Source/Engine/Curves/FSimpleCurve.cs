@@ -5,6 +5,6 @@ using CSharpToCpp.Utilities;
 ///<summary>A rich, editable float curve</summary>
 public partial struct FSimpleCurve {
 // SimpleCurve
-	public byte InterpMode;
+	public ERichCurveInterpMode InterpMode;
 	public TArray<FSimpleCurveKey> Keys;
 }

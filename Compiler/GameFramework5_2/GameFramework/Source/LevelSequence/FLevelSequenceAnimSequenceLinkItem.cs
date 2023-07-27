@@ -12,7 +12,7 @@ public partial struct FLevelSequenceAnimSequenceLinkItem {
 	public bool bExportAttributeCurves;
 	public bool bExportMaterialCurves;
 	public EAnimInterpolationType Interpolation;
-	public byte CurveInterpolation;
+	public ERichCurveInterpMode CurveInterpolation;
 	public bool bRecordInWorldSpace;
 	public bool bEvaluateAllSkeletalMeshComponents;
 }

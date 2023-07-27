@@ -8,10 +8,10 @@ public partial class UCheckBox : UContentWidget {
 	public ECheckBoxState CheckedState;
 	public FGetCheckBoxState CheckedStateDelegate;
 	public FCheckBoxStyle WidgetStyle;
-	public byte HorizontalAlignment;
-	public byte ClickMethod;
-	public byte TouchMethod;
-	public byte PressMethod;
+	public EHorizontalAlignment HorizontalAlignment;
+	public EButtonClickMethod ClickMethod;
+	public EButtonTouchMethod TouchMethod;
+	public EButtonPressMethod PressMethod;
 	public bool IsFocusable;
 	public FOnCheckBoxComponentStateChanged OnCheckStateChanged;
 	public  bool IsPressed() { return default; }

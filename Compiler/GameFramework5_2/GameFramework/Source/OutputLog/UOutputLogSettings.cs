@@ -6,7 +6,7 @@ using CSharpToCpp.Utilities;
 public partial class UOutputLogSettings : UObject {
 // OutputLogSettings
 	public int LogFontSize;
-	public byte LogTimestampMode;
+	public ELogTimes LogTimestampMode;
 	public ELogCategoryColorizationMode CategoryColorizationMode;
 	public bool bCycleToOutputLogDrawer;
 	public bool bEnableOutputLogWordWrap;

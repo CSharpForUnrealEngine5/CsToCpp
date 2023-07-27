@@ -21,7 +21,7 @@ public partial struct FSoundClassProperties {
 	public bool bReverb;
 	public float Default2DReverbSendAmount;
 	public FSoundModulationDefaultSettings ModulationSettings;
-	public byte OutputTarget;
+	public EAudioOutputTarget OutputTarget;
 	public ESoundWaveLoadingBehavior LoadingBehavior;
 	public USoundSubmix DefaultSubmix;
 }

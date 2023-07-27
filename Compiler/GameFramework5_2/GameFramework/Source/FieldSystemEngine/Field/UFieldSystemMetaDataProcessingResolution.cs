@@ -6,5 +6,5 @@ using CSharpToCpp.Utilities;
 public partial class UFieldSystemMetaDataProcessingResolution : UFieldSystemMetaData {
 // FieldSystemMetaDataProcessingResolution
 	public  UFieldSystemMetaDataProcessingResolution SetMetaDataaProcessingResolutionType(EFieldResolutionType ResolutionType) { return default; }
-	public byte ResolutionType;
+	public EFieldResolutionType ResolutionType;
 }

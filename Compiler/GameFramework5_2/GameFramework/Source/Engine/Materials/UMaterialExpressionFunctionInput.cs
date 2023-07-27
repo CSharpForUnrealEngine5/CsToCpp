@@ -8,7 +8,7 @@ public partial class UMaterialExpressionFunctionInput : UMaterialExpression {
 	public string InputName;
 	public string Description;
 	public FGuid Id;
-	public byte InputType;
+	public EFunctionInputType InputType;
 	public FVector4f PreviewValue;
 	public bool bUsePreviewValueAsDefault;
 	public int SortPriority;

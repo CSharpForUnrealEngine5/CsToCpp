@@ -15,7 +15,7 @@ public partial class URuntimeVirtualTextureComponent : USceneComponent {
 	public UVirtualTextureBuilder StreamingTexture;
 	public int StreamLowMips;
 	public bool bBuildStreamingMipsButton;
-	public byte LossyCompressionAmount;
+	public ETextureLossyCompressionAmount LossyCompressionAmount;
 	public bool bUseStreamingLowMipsInEditor;
 	public bool bBuildDebugStreamingMips;
 	public  void Invalidate(FBoxSphereBounds WorldBounds) {}

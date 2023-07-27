@@ -4,5 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("Materials/MaterialExpressionWorldPosition.h")]
 public partial class UMaterialExpressionWorldPosition : UMaterialExpression {
 // MaterialExpressionWorldPosition
-	public byte WorldPositionShaderOffset;
+	public EWorldPositionIncludedOffsets WorldPositionShaderOffset;
 }

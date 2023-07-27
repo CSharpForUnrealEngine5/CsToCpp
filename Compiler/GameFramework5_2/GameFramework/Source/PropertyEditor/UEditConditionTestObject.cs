@@ -7,7 +7,7 @@ public partial class UEditConditionTestObject : UObject {
 // EditConditionTestObject
 	public bool BoolProperty;
 	public EditConditionTestEnum EnumProperty;
-	public byte ByteEnumProperty;
+	public EditConditionByteEnum ByteEnumProperty;
 	public double DoubleProperty;
 	public int IntegerProperty;
 	public bool UintBitfieldProperty;
@@ -17,7 +17,7 @@ public partial class UEditConditionTestObject : UObject {
 	public  void VoidFunction() {}
 	public  bool GetBoolFunction() { return default; }
 	public  EditConditionTestEnum GetEnumFunction() { return default; }
-	public  byte GetByteEnumFunction() { return default; }
+	public  EditConditionByteEnum GetByteEnumFunction() { return default; }
 	public  double GetDoubleFunction() { return default; }
 	public  int GetIntegerFunction() { return default; }
 	public  byte GetUintBitfieldFunction() { return default; }
@@ -27,7 +27,7 @@ public partial class UEditConditionTestObject : UObject {
 	public  void StaticVoidFunction() {}
 	public static bool StaticGetBoolFunction() { return default; }
 	public static EditConditionTestEnum StaticGetEnumFunction() { return default; }
-	public static byte StaticGetByteEnumFunction() { return default; }
+	public static EditConditionByteEnum StaticGetByteEnumFunction() { return default; }
 	public static double StaticGetDoubleFunction() { return default; }
 	public static int StaticGetIntegerFunction() { return default; }
 	public static byte StaticGetUintBitfieldFunction() { return default; }

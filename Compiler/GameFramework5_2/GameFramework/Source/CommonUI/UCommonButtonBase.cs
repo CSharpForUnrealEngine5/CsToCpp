@@ -99,9 +99,9 @@ public partial class UCommonButtonBase : UCommonUserWidget {
 	public bool bDisplayInputActionWhenNotInteractable;
 	public bool bHideInputActionWithKeyboard;
 	public bool bShouldUseFallbackDefaultInputAction;
-	public byte ClickMethod;
-	public byte TouchMethod;
-	public byte PressMethod;
+	public EButtonClickMethod ClickMethod;
+	public EButtonTouchMethod TouchMethod;
+	public EButtonPressMethod PressMethod;
 	public int InputPriority;
 	public FDataTableRowHandle TriggeringInputAction;
 	public UInputAction TriggeringEnhancedInputAction;

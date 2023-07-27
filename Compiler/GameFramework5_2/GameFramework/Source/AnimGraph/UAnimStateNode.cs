@@ -5,7 +5,7 @@ using CSharpToCpp.Utilities;
 public partial class UAnimStateNode : UAnimStateNodeBase {
 // AnimStateNode
 	public UEdGraph BoundGraph;
-	public byte StateType;
+	public EAnimStateType StateType;
 	public FAnimNotifyEvent StateEntered;
 	public FAnimNotifyEvent StateLeft;
 	public FAnimNotifyEvent StateFullyBlended;

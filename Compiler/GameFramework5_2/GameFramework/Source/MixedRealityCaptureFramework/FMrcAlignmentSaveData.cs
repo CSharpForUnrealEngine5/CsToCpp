@@ -7,5 +7,5 @@ public partial struct FMrcAlignmentSaveData {
 	public FVector CameraOrigin;
 	public FRotator Orientation;
 	public string TrackingAttachmentId;
-	public byte TrackingOrigin;
+	public EHMDTrackingOrigin TrackingOrigin;
 }

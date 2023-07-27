@@ -7,7 +7,7 @@ public partial struct FAnimNode_Trail {
 // AnimNode_Trail
 	public FBoneReference TrailBone;
 	public int ChainLength;
-	public byte ChainBoneAxis;
+	public EAxis ChainBoneAxis;
 	public bool bInvertChainBoneAxis;
 	public bool bLimitStretch;
 	public bool bLimitRotation;

@@ -14,9 +14,9 @@ public partial struct FKeyAttributes {
 	public bool bHasLeaveTangentWeight;
 	public float ArriveTangent;
 	public float LeaveTangent;
-	public byte InterpMode;
-	public byte TangentMode;
-	public byte TangentWeightMode;
+	public ERichCurveInterpMode InterpMode;
+	public ERichCurveTangentMode TangentMode;
+	public ERichCurveTangentWeightMode TangentWeightMode;
 	public float ArriveTangentWeight;
 	public float LeaveTangentWeight;
 }

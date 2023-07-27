@@ -6,6 +6,6 @@ using CSharpToCpp.Utilities;
 public partial struct FRigVMFunction_MathQuaternionGetAxis {
 // RigVMFunction_MathQuaternionGetAxis
 	public FQuat Quaternion;
-	public byte Axis;
+	public EAxis Axis;
 	public FVector Result;
 }

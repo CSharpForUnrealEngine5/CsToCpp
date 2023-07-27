@@ -6,5 +6,5 @@ public partial struct FBoneMirrorExport {
 // BoneMirrorExport
 	public string BoneName;
 	public string SourceBoneName;
-	public byte BoneFlipAxis;
+	public EAxis BoneFlipAxis;
 }

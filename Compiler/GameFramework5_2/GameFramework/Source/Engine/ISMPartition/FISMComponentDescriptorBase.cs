@@ -7,13 +7,13 @@ public partial struct FISMComponentDescriptorBase {
 // ISMComponentDescriptorBase
 	public uint Hash;
 	public UClass ComponentClass;
-	public byte Mobility;
+	public EComponentMobility Mobility;
 	public ERuntimeVirtualTextureMainPassType VirtualTextureRenderPassType;
 	public ELightmapType LightmapType;
 	public FLightingChannels LightingChannels;
 	public int RayTracingGroupId;
 	public ERayTracingGroupCullingPriority RayTracingGroupCullingPriority;
-	public byte bHasCustomNavigableGeometry;
+	public EHasCustomNavigableGeometry bHasCustomNavigableGeometry;
 	public ERendererStencilMask CustomDepthStencilWriteMask;
 	public FBodyInstance BodyInstance;
 	public int InstanceStartCullDistance;

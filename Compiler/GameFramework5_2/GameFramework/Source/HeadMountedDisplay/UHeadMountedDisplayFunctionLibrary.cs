@@ -23,8 +23,8 @@ public partial class UHeadMountedDisplayFunctionLibrary : UBlueprintFunctionLibr
 	public static float GetPixelDensity() { return default; }
 	public static void SetWorldToMetersScale(UObject WorldContext,float NewScale/*=100.0f*/) {}
 	public static float GetWorldToMetersScale(UObject WorldContext) { return default; }
-	public static void SetTrackingOrigin(byte Origin) {}
-	public static byte GetTrackingOrigin() { return default; }
+	public static void SetTrackingOrigin(EHMDTrackingOrigin Origin) {}
+	public static EHMDTrackingOrigin GetTrackingOrigin() { return default; }
 	public static FTransform GetTrackingToWorldTransform(UObject WorldContext) { return default; }
 	public static void CalibrateExternalTrackingToHMD(FTransform ExternalTrackingTransform) {}
 	public static void UpdateExternalTrackingHMDPosition(FTransform ExternalTrackingTransform) {}
@@ -47,8 +47,8 @@ public partial class UHeadMountedDisplayFunctionLibrary : UBlueprintFunctionLibr
 	public static void SetXRTimedInputActionDelegate(string ActionName,FXRTimedInputActionDelegate InDelegate) {}
 	public static void ClearXRTimedInputActionDelegate(string ActionPath) {}
 	public static bool GetControllerTransformForTime(UObject WorldContext,int ControllerIndex,string MotionSource,FTimespan Time,bool bTimeWasUsed,FRotator Orientation,FVector Position,bool bProvidedLinearVelocity,FVector LinearVelocity,bool bProvidedAngularVelocity,FVector AngularVelocityRadPerSec,bool bProvidedLinearAcceleration,FVector LinearAcceleration) { return default; }
-	public static FVector2D GetPlayAreaBounds(byte Origin/*=EHMDTrackingOrigin.Stage*/) { return default; }
-	public static bool GetTrackingOriginTransform(byte Origin,FTransform OutTransform) { return default; }
+	public static FVector2D GetPlayAreaBounds(EHMDTrackingOrigin Origin/*=EHMDTrackingOrigin.Stage*/) { return default; }
+	public static bool GetTrackingOriginTransform(EHMDTrackingOrigin Origin,FTransform OutTransform) { return default; }
 	public static bool GetPlayAreaRect(FTransform OutTransform,FVector2D OutRect) { return default; }
 	public static void BreakKey(FKey InKey,string InteractionProfile,EControllerHand Hand,string MotionSource,string Indentifier,string Component) {}
 }

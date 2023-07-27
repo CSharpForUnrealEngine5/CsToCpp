@@ -8,7 +8,7 @@ public partial struct FEmitterDynamicParameterBP {
 	public string ParamName;
 	public bool bUseEmitterTime;
 	public bool bSpawnTimeOnly;
-	public byte ValueMethod;
+	public EEmitterDynamicParameterValue ValueMethod;
 	public bool bScaleVelocityByParamValue;
 	public FRawDistributionFloat ParamValue;
 }

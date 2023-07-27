@@ -5,5 +5,5 @@ using CSharpToCpp.Utilities;
 public partial class UMaterialExpressionDBufferTexture : UMaterialExpression {
 // MaterialExpressionDBufferTexture
 	public FExpressionInput Coordinates;
-	public byte DBufferTextureId;
+	public EDBufferTextureId DBufferTextureId;
 }

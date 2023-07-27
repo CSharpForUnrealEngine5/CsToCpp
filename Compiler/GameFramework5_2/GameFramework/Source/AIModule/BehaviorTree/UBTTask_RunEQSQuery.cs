@@ -8,7 +8,7 @@ public partial class UBTTask_RunEQSQuery : UBTTask_BlackboardBase {
 	public UEnvQuery QueryTemplate;
 	public TArray<FEnvNamedValue> QueryParams;
 	public TArray<FAIDynamicParam> QueryConfig;
-	public byte RunMode;
+	public EEnvQueryRunMode RunMode;
 	public FBlackboardKeySelector EQSQueryBlackboardKey;
 	public bool bUseBBKey;
 	public FEQSParametrizedQueryExecutionRequest EQSRequest;

@@ -10,15 +10,15 @@ public partial struct FAnimNode_LookAt {
 	public FVector LookAtLocation;
 	public FAxis LookAt_Axis;
 	public bool bUseLookUpAxis;
-	public byte InterpolationType;
+	public EInterpolationBlend InterpolationType;
 	public FAxis LookUp_Axis;
 	public float LookAtClamp;
 	public float InterpolationTime;
 	public float InterpolationTriggerThreashold;
 	public FBoneReference LookAtBone_DEPRECATED;
 	public string LookAtSocket_DEPRECATED;
-	public byte LookAtAxis_DEPRECATED;
+	public EAxisOption LookAtAxis_DEPRECATED;
 	public FVector CustomLookAtAxis_DEPRECATED;
-	public byte LookUpAxis_DEPRECATED;
+	public EAxisOption LookUpAxis_DEPRECATED;
 	public FVector CustomLookUpAxis_DEPRECATED;
 }

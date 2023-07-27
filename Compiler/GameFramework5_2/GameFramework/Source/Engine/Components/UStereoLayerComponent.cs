@@ -29,8 +29,8 @@ public partial class UStereoLayerComponent : USceneComponent {
 	public float CylinderOverlayArc_DEPRECATED;
 	public int CylinderHeight_DEPRECATED;
 	public FEquirectProps EquirectProps_DEPRECATED;
-	public byte StereoLayerType;
-	public byte StereoLayerShape_DEPRECATED;
+	public EStereoLayerType StereoLayerType;
+	public EStereoLayerShape StereoLayerShape_DEPRECATED;
 	public UStereoLayerShape Shape;
 	public int Priority;
 }

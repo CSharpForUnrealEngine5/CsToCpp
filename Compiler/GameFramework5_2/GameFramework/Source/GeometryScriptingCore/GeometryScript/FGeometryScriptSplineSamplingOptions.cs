@@ -7,5 +7,5 @@ public partial struct FGeometryScriptSplineSamplingOptions {
 	public int NumSamples;
 	public float ErrorTolerance;
 	public EGeometryScriptSampleSpacing SampleSpacing;
-	public byte CoordinateSpace;
+	public ESplineCoordinateSpace CoordinateSpace;
 }

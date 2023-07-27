@@ -15,7 +15,7 @@ public partial struct FCreateMeshObjectParams {
 	public TArray<UMaterialInterface> Materials;
 	public TArray<UMaterialInterface> AssetMaterials;
 	public bool bEnableCollision;
-	public byte CollisionMode;
+	public ECollisionTraceFlag CollisionMode;
 	public bool bEnableRaytracingSupport;
 	public bool bEnableRecomputeNormals;
 	public bool bEnableRecomputeTangents;

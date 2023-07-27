@@ -14,7 +14,7 @@ public partial class UParticleModuleTypeDataRibbon : UParticleModuleTypeDataBase
 	public bool bEnablePreviousTangentRecalculation;
 	public bool bTangentRecalculationEveryFrame;
 	public bool bSpawnInitialParticle;
-	public byte RenderAxis;
+	public ETrailsRenderAxisOption RenderAxis;
 	public float TangentSpawningScalar;
 	public bool bRenderGeometry;
 	public bool bRenderSpawnPoints;

@@ -13,7 +13,7 @@ public partial struct FAnimNode_PoseDriver {
 	public bool bEvalFromRefPose;
 	public FRBFParams RBFParams;
 	public FBoneReference SourceBone_DEPRECATED;
-	public byte TwistAxis_DEPRECATED;
+	public EBoneAxis TwistAxis_DEPRECATED;
 	public EPoseDriverType Type_DEPRECATED;
 	public float RadialScaling_DEPRECATED;
 	public EPoseDriverSource DriveSource;

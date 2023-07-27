@@ -6,8 +6,8 @@ using CSharpToCpp.Utilities;
 public partial class USizeBoxSlot : UPanelSlot {
 // SizeBoxSlot
 	public FMargin Padding;
-	public byte HorizontalAlignment;
-	public byte VerticalAlignment;
+	public EHorizontalAlignment HorizontalAlignment;
+	public EVerticalAlignment VerticalAlignment;
 	public  void SetPadding(FMargin InPadding) {}
 	public  void SetHorizontalAlignment(EHorizontalAlignment InHorizontalAlignment) {}
 	public  void SetVerticalAlignment(EVerticalAlignment InVerticalAlignment) {}

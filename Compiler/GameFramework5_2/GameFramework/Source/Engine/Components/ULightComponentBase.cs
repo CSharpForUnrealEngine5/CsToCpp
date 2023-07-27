@@ -17,7 +17,7 @@ public partial class ULightComponentBase : USceneComponent {
 	public bool bCastVolumetricShadow;
 	public bool bCastDeepShadow;
 	public bool bCastRaytracedShadow_DEPRECATED;
-	public byte CastRaytracedShadow;
+	public ECastRayTracedShadow CastRaytracedShadow;
 	public bool bAffectReflection;
 	public bool bAffectGlobalIllumination;
 	public float DeepShadowLayerDistribution;

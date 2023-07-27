@@ -6,6 +6,6 @@ using CSharpToCpp.Utilities;
 public partial class UMirrorDataTable : UDataTable {
 // MirrorDataTable
 	public TArray<FMirrorFindReplaceExpression> MirrorFindReplaceExpressions;
-	public byte MirrorAxis;
+	public EAxis MirrorAxis;
 	public USkeleton Skeleton;
 }

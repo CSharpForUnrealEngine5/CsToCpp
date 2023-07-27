@@ -8,7 +8,7 @@ public partial class USubUVAnimation : UObject {
 	public UTexture2D SubUVTexture;
 	public int SubImages_Horizontal;
 	public int SubImages_Vertical;
-	public byte BoundingMode;
-	public byte OpacitySourceMode;
+	public ESubUVBoundingVertexCount BoundingMode;
+	public EOpacitySourceMode OpacitySourceMode;
 	public float AlphaThreshold;
 }

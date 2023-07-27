@@ -18,8 +18,12 @@
     <PackageReference Include="Microsoft.CodeAnalysis.CSharp" Version="4.7.0-2.final" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\GameFramework5_2\GameFramework\GameFramework.csproj" />
+  </ItemGroup>
+
   <Target Name="PostBuild" AfterTargets="PostBuildEvent">
-    <Exec Command="cd&#xD;&#xA;copy bin\Debug\net6.0\*.* ..\bin&#xD;&#xA;" />
+    <Exec Command="cd&#xD;&#xA;mkdir ..\bin&#xD;&#xA;copy bin\Debug\net6.0\*.* ..\bin&#xD;&#xA;" />
   </Target>
 
 </Project>

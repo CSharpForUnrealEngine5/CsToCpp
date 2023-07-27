@@ -7,7 +7,7 @@ public partial struct FRigUnit_SphereTraceByObjectTypes {
 // RigUnit_SphereTraceByObjectTypes
 	public FVector Start;
 	public FVector End;
-	public TArray<byte> ObjectTypes;
+	public TArray<EObjectTypeQuery> ObjectTypes;
 	public float Radius;
 	public bool bHit;
 	public FVector HitLocation;

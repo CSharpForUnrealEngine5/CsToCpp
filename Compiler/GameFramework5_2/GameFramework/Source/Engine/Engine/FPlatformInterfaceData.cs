@@ -6,7 +6,7 @@ using CSharpToCpp.Utilities;
 public partial struct FPlatformInterfaceData {
 // PlatformInterfaceData
 	public string DataName;
-	public byte Type;
+	public EPlatformInterfaceDataType Type;
 	public int IntValue;
 	public float FloatValue;
 	public string StringValue;

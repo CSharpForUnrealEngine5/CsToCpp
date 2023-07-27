@@ -12,8 +12,8 @@ public partial class UGLTFExportOptions : UObject {
 	public bool bExportClearCoatMaterials;
 	public EGLTFMaterialBakeMode BakeMaterialInputs;
 	public EGLTFMaterialBakeSizePOT DefaultMaterialBakeSize;
-	public byte DefaultMaterialBakeFilter;
-	public byte DefaultMaterialBakeTiling;
+	public TextureFilter DefaultMaterialBakeFilter;
+	public TextureAddress DefaultMaterialBakeTiling;
 	public TMap<EGLTFMaterialPropertyGroup,FGLTFOverrideMaterialBakeSettings> DefaultInputBakeSettings;
 	public int DefaultLevelOfDetail;
 	public bool bExportVertexColors;

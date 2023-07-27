@@ -4,5 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("Particles/Orientation/ParticleModuleOrientationAxisLock.h")]
 public partial class UParticleModuleOrientationAxisLock : UParticleModuleOrientationBase {
 // ParticleModuleOrientationAxisLock
-	public byte LockAxisFlags;
+	public EParticleAxisLock LockAxisFlags;
 }

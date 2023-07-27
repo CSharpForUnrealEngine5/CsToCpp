@@ -7,7 +7,7 @@ public partial class UTextureRenderTargetCube : UTextureRenderTarget {
 // TextureRenderTargetCube
 	public int SizeX;
 	public FLinearColor ClearColor;
-	public byte OverrideFormat;
+	public EPixelFormat OverrideFormat;
 	public bool bHDR;
 	public bool bForceLinearGamma;
 }

@@ -5,7 +5,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A CameraActor is a camera viewpoint that can be placed in a level.</summary>
 public partial class ACameraActor : AActor {
 // CameraActor
-	public byte AutoActivateForPlayer;
+	public EAutoReceiveInput AutoActivateForPlayer;
 	public UCameraComponent CameraComponent;
 	public USceneComponent SceneComponent;
 	public  int GetAutoActivatePlayerIndex() { return default; }

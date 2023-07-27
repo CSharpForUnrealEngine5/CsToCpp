@@ -5,9 +5,9 @@ using CSharpToCpp.Utilities;
 public partial struct FDisplayClusterConfigurationPostRender_GenerateMips {
 // DisplayClusterConfigurationPostRender_GenerateMips
 	public bool bAutoGenerateMips;
-	public byte MipsSamplerFilter;
-	public byte MipsAddressU;
-	public byte MipsAddressV;
+	public TextureFilter MipsSamplerFilter;
+	public TextureAddress MipsAddressU;
+	public TextureAddress MipsAddressV;
 	public bool bEnabledMaxNumMips;
 	public int MaxNumMips;
 }

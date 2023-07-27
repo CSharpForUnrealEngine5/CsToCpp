@@ -6,7 +6,7 @@ using CSharpToCpp.Utilities;
 public partial struct FAnimNode_ObserveBone {
 // AnimNode_ObserveBone
 	public FBoneReference BoneToObserve;
-	public byte DisplaySpace;
+	public EBoneControlSpace DisplaySpace;
 	public bool bRelativeToRefPose;
 	public FVector Translation;
 	public FRotator Rotation;

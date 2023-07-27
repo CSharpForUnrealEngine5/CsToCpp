@@ -7,7 +7,7 @@ public partial struct FLedWallArucoGenerationOptions {
 // LedWallArucoGenerationOptions
 	public int TextureWidth;
 	public int TextureHeight;
-	public byte ArucoDictionary;
+	public EArucoDictionary ArucoDictionary;
 	public int MarkerId;
 	public int PlaceModulus;
 }

@@ -12,7 +12,7 @@ public partial struct FFontImportOptionsData {
 	public bool bEnableItalic;
 	public bool bEnableUnderline;
 	public bool bAlphaOnly;
-	public byte CharacterSet;
+	public EFontImportCharacterSet CharacterSet;
 	public string Chars;
 	public string UnicodeRange;
 	public string CharsFilePath;

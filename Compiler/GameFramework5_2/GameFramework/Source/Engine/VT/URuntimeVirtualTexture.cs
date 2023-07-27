@@ -17,7 +17,7 @@ public partial class URuntimeVirtualTexture : UObject {
 	public bool bAdaptive;
 	public bool bContinuousUpdate;
 	public int RemoveLowMips;
-	public byte LODGroup;
+	public TextureGroup LODGroup;
 	public int Size_DEPRECATED;
 	public URuntimeVirtualTextureStreamingProxy StreamingTexture_DEPRECATED;
 	public  int GetTileCount() { return default; }

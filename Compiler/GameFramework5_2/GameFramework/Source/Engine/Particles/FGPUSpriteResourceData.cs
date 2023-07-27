@@ -39,8 +39,8 @@ public partial struct FGPUSpriteResourceData {
 	public float OneMinusFriction;
 	public float RotationRateScale;
 	public float CameraMotionBlurAmount;
-	public byte ScreenAlignment;
-	public byte LockAxisFlag;
+	public EParticleScreenAlignment ScreenAlignment;
+	public EParticleAxisLock LockAxisFlag;
 	public FVector2D PivotOffset;
 	public bool bRemoveHMDRoll;
 	public float MinFacingCameraBlendDistance;

@@ -6,7 +6,7 @@ using CSharpToCpp.Utilities;
 public partial class ULocalPlayer : UPlayer {
 // LocalPlayer
 	public UGameViewportClient ViewportClient;
-	public byte AspectRatioAxisConstraint;
+	public EAspectRatioAxisConstraint AspectRatioAxisConstraint;
 	public UClass PendingLevelPlayerControllerClass;
 	public bool bSentSplitJoin;
 	public int ControllerId;

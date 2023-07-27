@@ -5,7 +5,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Container for detailing collision automated test data.</summary>
 public partial struct FFbxTestPlanExpectedResult {
 // FbxTestPlanExpectedResult
-	public byte ExpectedPresetsType;
+	public EFBXExpectedResultPreset ExpectedPresetsType;
 	public TArray<int> ExpectedPresetsDataInteger;
 	public TArray<float> ExpectedPresetsDataFloat;
 	public TArray<double> ExpectedPresetsDataDouble;

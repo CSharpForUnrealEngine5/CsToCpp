@@ -13,7 +13,7 @@ public partial class UAndroidFileServerRuntimeSettings : UObject {
 	public bool bUseCompression;
 	public bool bLogFiles;
 	public bool bReportStats;
-	public byte ConnectionType;
+	public EAFSConnectionType ConnectionType;
 	public bool bUseManualIPAddress;
 	public string ManualIPAddress;
 }

@@ -5,5 +5,5 @@ using CSharpToCpp.Utilities;
 public partial class ULandscapeHeightTextureBackedRenderTarget : ULandscapeTextureBackedRenderTargetBase {
 // LandscapeHeightTextureBackedRenderTarget
 	public FLandscapeHeightPatchConvertToNativeParams ConversionParams;
-	public byte RenderTargetFormat;
+	public ETextureRenderTargetFormat RenderTargetFormat;
 }

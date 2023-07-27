@@ -5,7 +5,7 @@ using CSharpToCpp.Utilities;
 public partial struct FLimbSolverSettings {
 // LimbSolverSettings
 	public float ReachPrecision;
-	public byte HingeRotationAxis;
+	public EAxis HingeRotationAxis;
 	public int MaxIterations;
 	public bool bEnableLimit;
 	public float MinRotationAngle;
@@ -13,5 +13,5 @@ public partial struct FLimbSolverSettings {
 	public float PullDistribution;
 	public float ReachStepAlpha;
 	public bool bEnableTwistCorrection;
-	public byte EndBoneForwardAxis;
+	public EAxis EndBoneForwardAxis;
 }

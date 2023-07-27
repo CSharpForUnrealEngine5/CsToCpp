@@ -8,6 +8,6 @@ public partial struct FSlateBrushOutlineSettings {
 	public FVector4 CornerRadii;
 	public FSlateColor Color;
 	public float Width;
-	public byte RoundingType;
+	public ESlateBrushRoundingType RoundingType;
 	public bool bUseBrushTransparency;
 }

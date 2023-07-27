@@ -7,7 +7,7 @@ public partial class UAudioRadialSlider : UWidget {
 // AudioRadialSlider
 	public float Value;
 	public FGetFloat ValueDelegate;
-	public byte WidgetLayout;
+	public EAudioRadialSliderLayout WidgetLayout;
 	public FLinearColor CenterBackgroundColor;
 	public FLinearColor SliderProgressColor;
 	public FLinearColor SliderBarColor;

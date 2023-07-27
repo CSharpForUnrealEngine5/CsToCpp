@@ -5,8 +5,8 @@ using CSharpToCpp.Utilities;
 public partial class UFbxImportUI : UObject {
 // FbxImportUI
 	public bool bIsObjImport;
-	public byte OriginalImportType;
-	public byte MeshTypeToImport;
+	public EFBXImportType OriginalImportType;
+	public EFBXImportType MeshTypeToImport;
 	public bool bOverrideFullName;
 	public bool bImportAsSkeletal;
 	public bool bImportMesh;

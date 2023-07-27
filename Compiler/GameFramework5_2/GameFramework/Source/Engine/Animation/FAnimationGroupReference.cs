@@ -6,5 +6,5 @@ public partial struct FAnimationGroupReference {
 // AnimationGroupReference
 	public EAnimSyncMethod Method;
 	public string GroupName;
-	public byte GroupRole;
+	public EAnimGroupRole GroupRole;
 }

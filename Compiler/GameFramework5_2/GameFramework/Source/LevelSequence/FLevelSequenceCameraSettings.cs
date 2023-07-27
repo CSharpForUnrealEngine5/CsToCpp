@@ -5,5 +5,5 @@ using CSharpToCpp.Utilities;
 public partial struct FLevelSequenceCameraSettings {
 // LevelSequenceCameraSettings
 	public bool bOverrideAspectRatioAxisConstraint;
-	public byte AspectRatioAxisConstraint;
+	public EAspectRatioAxisConstraint AspectRatioAxisConstraint;
 }

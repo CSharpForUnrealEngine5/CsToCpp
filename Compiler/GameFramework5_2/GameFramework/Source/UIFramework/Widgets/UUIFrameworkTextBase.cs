@@ -18,6 +18,6 @@ public partial class UUIFrameworkTextBase : UUIFrameworkWidget {
 	public  void OnRep_OverflowPolicy() {}
 	public string Text;
 	public FLinearColor TextColor;
-	public byte Justification;
+	public ETextJustify Justification;
 	public ETextOverflowPolicy OverflowPolicy;
 }

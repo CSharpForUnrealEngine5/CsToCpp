@@ -5,7 +5,7 @@ using CSharpToCpp.Utilities;
 public partial struct FSpriteGeometryCollection {
 // SpriteGeometryCollection
 	public TArray<FSpriteGeometryShape> Shapes;
-	public byte GeometryType;
+	public ESpritePolygonMode GeometryType;
 	public int PixelsPerSubdivisionX;
 	public int PixelsPerSubdivisionY;
 	public bool bAvoidVertexMerging;

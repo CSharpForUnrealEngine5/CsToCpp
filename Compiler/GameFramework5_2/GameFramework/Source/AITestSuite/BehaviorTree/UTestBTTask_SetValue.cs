@@ -8,5 +8,5 @@ public partial class UTestBTTask_SetValue : UBTTaskNode {
 	public int Value;
 	public string OnAbortKeyName;
 	public int OnAbortValue;
-	public byte TaskResult;
+	public EBTNodeResult TaskResult;
 }

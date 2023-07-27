@@ -8,6 +8,6 @@ public partial class UEdGraphNode_Comment : UEdGraphNode {
 	public int FontSize;
 	public bool bCommentBubbleVisible_InDetailsPanel;
 	public bool bColorCommentBubble;
-	public byte MoveMode;
+	public ECommentBoxMode MoveMode;
 	public int CommentDepth;
 }

@@ -59,10 +59,10 @@ public partial class APlayerController : AController {
 	public TArray<FStreamingSourceShape> StreamingSourceShapes;
 	public float ForceFeedbackScale;
 	public TArray<FKey> ClickEventKeys;
-	public byte DefaultMouseCursor;
-	public byte CurrentMouseCursor;
-	public byte DefaultClickTraceChannel;
-	public byte CurrentClickTraceChannel;
+	public EMouseCursor DefaultMouseCursor;
+	public EMouseCursor CurrentMouseCursor;
+	public ECollisionChannel DefaultClickTraceChannel;
+	public ECollisionChannel CurrentClickTraceChannel;
 	public float HitResultTraceDistance;
 	public ushort SeamlessTravelCount;
 	public ushort LastCompletedSeamlessTravelCount;
@@ -80,10 +80,10 @@ public partial class APlayerController : AController {
 	public  void SwitchLevel(string URL) {}
 	public  bool GetHitResultUnderCursor(ECollisionChannel TraceChannel,bool bTraceComplex,FHitResult HitResult) { return default; }
 	public  bool GetHitResultUnderCursorByChannel(ETraceTypeQuery TraceChannel,bool bTraceComplex,FHitResult HitResult) { return default; }
-	public  bool GetHitResultUnderCursorForObjects(TArray<byte> ObjectTypes,bool bTraceComplex,FHitResult HitResult) { return default; }
+	public  bool GetHitResultUnderCursorForObjects(TArray<EObjectTypeQuery> ObjectTypes,bool bTraceComplex,FHitResult HitResult) { return default; }
 	public  bool GetHitResultUnderFinger(ETouchIndex FingerIndex,ECollisionChannel TraceChannel,bool bTraceComplex,FHitResult HitResult) { return default; }
 	public  bool GetHitResultUnderFingerByChannel(ETouchIndex FingerIndex,ETraceTypeQuery TraceChannel,bool bTraceComplex,FHitResult HitResult) { return default; }
-	public  bool GetHitResultUnderFingerForObjects(ETouchIndex FingerIndex,TArray<byte> ObjectTypes,bool bTraceComplex,FHitResult HitResult) { return default; }
+	public  bool GetHitResultUnderFingerForObjects(ETouchIndex FingerIndex,TArray<EObjectTypeQuery> ObjectTypes,bool bTraceComplex,FHitResult HitResult) { return default; }
 	public  bool DeprojectMousePositionToWorld(FVector WorldLocation,FVector WorldDirection) { return default; }
 	public  bool DeprojectScreenPositionToWorld(float ScreenX,float ScreenY,FVector WorldLocation,FVector WorldDirection) { return default; }
 	public  bool ProjectWorldLocationToScreen(FVector WorldLocation,FVector2D ScreenLocation,bool bPlayerViewportRelative/*=false*/) { return default; }
@@ -145,7 +145,7 @@ public partial class APlayerController : AController {
 	public  void K2_ClientPlayForceFeedback(UForceFeedbackEffect ForceFeedbackEffect,string Tag,bool bLooping,bool bIgnoreTimeDilation,bool bPlayWhilePaused) {}
 	public  void ClientPlayForceFeedback_Internal(UForceFeedbackEffect ForceFeedbackEffect,FForceFeedbackParameters Params) {}
 	public  void ClientStopForceFeedback(UForceFeedbackEffect ForceFeedbackEffect,string Tag) {}
-	public  void PlayDynamicForceFeedback(float Intensity,float Duration,bool bAffectsLeftLarge,bool bAffectsLeftSmall,bool bAffectsRightLarge,bool bAffectsRightSmall,byte Action,FLatentActionInfo LatentInfo) {}
+	public  void PlayDynamicForceFeedback(float Intensity,float Duration,bool bAffectsLeftLarge,bool bAffectsLeftSmall,bool bAffectsRightLarge,bool bAffectsRightSmall,EDynamicForceFeedbackAction Action,FLatentActionInfo LatentInfo) {}
 	public  void TestServerLevelVisibilityChange(string PackageName,string FileName) {}
 	public  void PlayHapticEffect(UHapticFeedbackEffect_Base HapticEffect,EControllerHand Hand,float Scale/*=1.0f*/,bool bLoop/*=false*/) {}
 	public  void StopHapticEffect(EControllerHand Hand) {}

@@ -10,5 +10,5 @@ public partial class URadialIntMask : UFieldNodeInt {
 	public FVector Position;
 	public int InteriorValue;
 	public int ExteriorValue;
-	public byte SetMaskCondition;
+	public ESetMaskConditionType SetMaskCondition;
 }

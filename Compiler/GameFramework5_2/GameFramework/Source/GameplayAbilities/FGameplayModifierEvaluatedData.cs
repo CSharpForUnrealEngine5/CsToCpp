@@ -6,7 +6,7 @@ using CSharpToCpp.Utilities;
 public partial struct FGameplayModifierEvaluatedData {
 // GameplayModifierEvaluatedData
 	public FGameplayAttribute Attribute;
-	public byte ModifierOp;
+	public EGameplayModOp ModifierOp;
 	public float Magnitude;
 	public FActiveGameplayEffectHandle Handle;
 	public bool IsValid;

@@ -4,8 +4,8 @@ using CSharpToCpp.Utilities;
 [CppInclude("Materials/MaterialExpressionLandscapeLayerCoords.h")]
 public partial class UMaterialExpressionLandscapeLayerCoords : UMaterialExpression {
 // MaterialExpressionLandscapeLayerCoords
-	public byte MappingType;
-	public byte CustomUVType;
+	public ETerrainCoordMappingType MappingType;
+	public ELandscapeCustomizedCoordType CustomUVType;
 	public float MappingScale;
 	public float MappingRotation;
 	public float MappingPanU;

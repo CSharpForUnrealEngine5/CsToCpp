@@ -6,8 +6,8 @@ using CSharpToCpp.Utilities;
 public partial struct FRigVMFunction_MathVectorMirrorTransform {
 // RigVMFunction_MathVectorMirrorTransform
 	public FVector Value;
-	public byte MirrorAxis;
-	public byte AxisToFlip;
+	public EAxis MirrorAxis;
+	public EAxis AxisToFlip;
 	public FTransform CentralTransform;
 	public FVector Result;
 }

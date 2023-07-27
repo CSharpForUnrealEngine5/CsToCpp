@@ -6,7 +6,7 @@ using CSharpToCpp.Utilities;
 public partial class UFieldSystemMetaDataFilter : UFieldSystemMetaData {
 // FieldSystemMetaDataFilter
 	public  UFieldSystemMetaDataFilter SetMetaDataFilterType(EFieldFilterType FilterType,EFieldObjectType ObjectType,EFieldPositionType PositionType) { return default; }
-	public byte FilterType;
-	public byte ObjectType;
-	public byte PositionType;
+	public EFieldFilterType FilterType;
+	public EFieldObjectType ObjectType;
+	public EFieldPositionType PositionType;
 }

@@ -4,7 +4,7 @@ using CSharpToCpp.Utilities;
 [CppInclude("Particles/Beam/ParticleModuleBeamModifier.h")]
 public partial class UParticleModuleBeamModifier : UParticleModuleBeamBase {
 // ParticleModuleBeamModifier
-	public byte ModifierType;
+	public BeamModifierType ModifierType;
 	public FBeamModifierOptions PositionOptions;
 	public FRawDistributionVector Position;
 	public FBeamModifierOptions TangentOptions;

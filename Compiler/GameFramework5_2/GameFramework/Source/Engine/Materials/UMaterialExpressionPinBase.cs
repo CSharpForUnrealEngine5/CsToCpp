@@ -5,5 +5,5 @@ using CSharpToCpp.Utilities;
 public partial class UMaterialExpressionPinBase : UMaterialExpression {
 // MaterialExpressionPinBase
 	public TArray<FCompositeReroute> ReroutePins;
-	public byte PinDirection;
+	public EEdGraphPinDirection PinDirection;
 }

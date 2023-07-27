@@ -134,7 +134,7 @@ public partial class UKismetMathLibrary : UBlueprintFunctionLibrary {
 	public static void MaxOfByteArray(TArray<byte> ByteArray,int IndexOfMaxValue,byte MaxValue) {}
 	public static void MinOfByteArray(TArray<byte> ByteArray,int IndexOfMinValue,byte MinValue) {}
 	public static double Lerp(double A,double B,double Alpha) { return default; }
-	public static double Ease(double A,double B,double Alpha,byte EasingFunc,double BlendExp/*=2*/,int Steps/*=2*/) { return default; }
+	public static double Ease(double A,double B,double Alpha,EEasingFunc EasingFunc,double BlendExp/*=2*/,int Steps/*=2*/) { return default; }
 	public static int Round(double A) { return default; }
 	public static int FFloor(double A) { return default; }
 	public static int FTrunc(double A) { return default; }
@@ -301,7 +301,7 @@ public partial class UKismetMathLibrary : UBlueprintFunctionLibrary {
 	public static FVector Vector_NormalUnsafe(FVector A) { return default; }
 	public static void Vector_Normalize(FVector A,float Tolerance/*=1.0e-8f*/) {}
 	public static FVector VLerp(FVector A,FVector B,float Alpha) { return default; }
-	public static FVector VEase(FVector A,FVector B,float Alpha,byte EasingFunc,float BlendExp/*=2f*/,int Steps/*=2*/) { return default; }
+	public static FVector VEase(FVector A,FVector B,float Alpha,EEasingFunc EasingFunc,float BlendExp/*=2f*/,int Steps/*=2*/) { return default; }
 	public static FVector VInterpTo(FVector Current,FVector Target,float DeltaTime,float InterpSpeed) { return default; }
 	public static FVector VInterpTo_Constant(FVector Current,FVector Target,float DeltaTime,float InterpSpeed) { return default; }
 	public static FVector VectorSpringInterp(FVector Current,FVector Target,FVectorSpringState SpringState,float Stiffness,float CriticalDampingFactor,float DeltaTime,float Mass/*=1.0f*/,float TargetVelocityAmount/*=1.0f*/,bool bClamp/*=false*/,FVector MinValue/*=new FVector(-1.0f)*/,FVector MaxValue/*=new FVector(1.0f)*/,bool bInitializeFromTarget/*=false*/) { return default; }
@@ -393,7 +393,7 @@ public partial class UKismetMathLibrary : UBlueprintFunctionLibrary {
 	public static void GetAxes(FRotator A,FVector X,FVector Y,FVector Z) {}
 	public static FRotator RandomRotator(bool bRoll/*=false*/) { return default; }
 	public static FRotator RLerp(FRotator A,FRotator B,float Alpha,bool bShortestPath) { return default; }
-	public static FRotator REase(FRotator A,FRotator B,float Alpha,bool bShortestPath,byte EasingFunc,float BlendExp/*=2f*/,int Steps/*=2*/) { return default; }
+	public static FRotator REase(FRotator A,FRotator B,float Alpha,bool bShortestPath,EEasingFunc EasingFunc,float BlendExp/*=2f*/,int Steps/*=2*/) { return default; }
 	public static FRotator NormalizedDeltaRotator(FRotator A,FRotator B) { return default; }
 	public static float ClampAxis(float Angle) { return default; }
 	public static float NormalizeAxis(float Angle) { return default; }
@@ -425,14 +425,14 @@ public partial class UKismetMathLibrary : UBlueprintFunctionLibrary {
 	public static FMatrix Matrix_ScaleTranslation(FMatrix M,FVector Scale3D) { return default; }
 	public static float Matrix_GetMaximumAxisScale(FMatrix M) { return default; }
 	public static FMatrix Matrix_ApplyScale(FMatrix M,float Scale) { return default; }
-	public static FVector Matrix_GetScaledAxis(FMatrix M,byte Axis) { return default; }
+	public static FVector Matrix_GetScaledAxis(FMatrix M,EAxis Axis) { return default; }
 	public static void Matrix_GetScaledAxes(FMatrix M,FVector X,FVector Y,FVector Z) {}
-	public static FVector Matrix_GetUnitAxis(FMatrix M,byte Axis) { return default; }
+	public static FVector Matrix_GetUnitAxis(FMatrix M,EAxis Axis) { return default; }
 	public static void Matrix_GetUnitAxes(FMatrix M,FVector X,FVector Y,FVector Z) {}
-	public static void Matrix_SetAxis(FMatrix M,byte Axis,FVector AxisVector) {}
+	public static void Matrix_SetAxis(FMatrix M,EAxis Axis,FVector AxisVector) {}
 	public static void Matrix_SetOrigin(FMatrix M,FVector NewOrigin) {}
-	public static FVector Matrix_GetColumn(FMatrix M,byte Column) { return default; }
-	public static void Matrix_SetColumn(FMatrix M,byte Column,FVector Value) {}
+	public static FVector Matrix_GetColumn(FMatrix M,EMatrixColumns Column) { return default; }
+	public static void Matrix_SetColumn(FMatrix M,EMatrixColumns Column,FVector Value) {}
 	public static FRotator Matrix_GetRotator(FMatrix M) { return default; }
 	public static FQuat Matrix_ToQuat(FMatrix M) { return default; }
 	public static bool Matrix_GetFrustumNearPlane(FMatrix M,FPlane OutPlane) { return default; }
@@ -441,7 +441,7 @@ public partial class UKismetMathLibrary : UBlueprintFunctionLibrary {
 	public static bool Matrix_GetFrustumRightPlane(FMatrix M,FPlane OutPlane) { return default; }
 	public static bool Matrix_GetFrustumTopPlane(FMatrix M,FPlane OutPlane) { return default; }
 	public static bool Matrix_GetFrustumBottomPlane(FMatrix M,FPlane OutPlane) { return default; }
-	public static FMatrix Matrix_Mirror(FMatrix M,byte MirrorAxis,byte FlipAxis) { return default; }
+	public static FMatrix Matrix_Mirror(FMatrix M,EAxis MirrorAxis,EAxis FlipAxis) { return default; }
 	public static FQuat Quat_Identity() { return default; }
 	public static bool EqualEqual_QuatQuat(FQuat A,FQuat B,float Tolerance/*=1.0e-4f*/) { return default; }
 	public static bool NotEqual_QuatQuat(FQuat A,FQuat B,float ErrorTolerance/*=1.0e-4f*/) { return default; }
@@ -660,8 +660,8 @@ public partial class UKismetMathLibrary : UBlueprintFunctionLibrary {
 	public static FRotator InverseTransformRotation(FTransform T,FRotator Rotation) { return default; }
 	public static FTransform MakeRelativeTransform(FTransform A,FTransform RelativeTo) { return default; }
 	public static FTransform InvertTransform(FTransform T) { return default; }
-	public static FTransform TLerp(FTransform A,FTransform B,float Alpha,byte InterpMode/*=ELerpInterpolationMode.QuatInterp*/) { return default; }
-	public static FTransform TEase(FTransform A,FTransform B,float Alpha,byte EasingFunc,float BlendExp/*=2f*/,int Steps/*=2*/) { return default; }
+	public static FTransform TLerp(FTransform A,FTransform B,float Alpha,ELerpInterpolationMode InterpMode/*=ELerpInterpolationMode.QuatInterp*/) { return default; }
+	public static FTransform TEase(FTransform A,FTransform B,float Alpha,EEasingFunc EasingFunc,float BlendExp/*=2f*/,int Steps/*=2*/) { return default; }
 	public static FTransform TInterpTo(FTransform Current,FTransform Target,float DeltaTime,float InterpSpeed) { return default; }
 	public static float Transform_Determinant(FTransform Transform) { return default; }
 	public static FMatrix Conv_TransformToMatrix(FTransform Transform) { return default; }

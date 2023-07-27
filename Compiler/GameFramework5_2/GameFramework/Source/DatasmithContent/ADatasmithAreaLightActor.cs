@@ -4,7 +4,7 @@ using CSharpToCpp.Utilities;
 [CppInclude("DatasmithAreaLightActor.h")]
 public partial class ADatasmithAreaLightActor : AActor {
 // DatasmithAreaLightActor
-	public byte Mobility;
+	public EComponentMobility Mobility;
 	public EDatasmithAreaLightActorType LightType;
 	public EDatasmithAreaLightActorShape LightShape;
 	public FVector2D Dimensions;

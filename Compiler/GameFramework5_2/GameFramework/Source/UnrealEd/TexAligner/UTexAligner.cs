@@ -4,7 +4,7 @@ using CSharpToCpp.Utilities;
 [CppInclude("TexAligner/TexAligner.h")]
 public partial class UTexAligner : UObject {
 // TexAligner
-	public byte DefTexAlign;
+	public ETexAlign DefTexAlign;
 	public byte TAxis;
 	public float UTile;
 	public float VTile;

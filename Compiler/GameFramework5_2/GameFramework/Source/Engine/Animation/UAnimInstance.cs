@@ -5,7 +5,7 @@ using CSharpToCpp.Utilities;
 public partial class UAnimInstance : UObject {
 // AnimInstance
 	public USkeleton CurrentSkeleton;
-	public byte RootMotionMode;
+	public ERootMotionMode RootMotionMode;
 	public bool bUseMultiThreadedAnimationUpdate;
 	public bool bUsingCopyPoseFromMesh;
 	public bool bReceiveNotifiesFromLinkedInstances;
@@ -75,7 +75,7 @@ public partial class UAnimInstance : UObject {
 	public  UAnimInstance GetLinkedAnimLayerInstanceByGroupAndClass(string InGroup,UClass InClass) { return default; }
 	public  UAnimInstance GetLinkedAnimLayerInstanceByClass(UClass InClass) { return default; }
 	public  void RequestSlotGroupInertialization(string InSlotGroupName,float Duration,UBlendProfile BlendProfile/*=nullptr*/) {}
-	public  void SetRootMotionMode(byte Value) {}
+	public  void SetRootMotionMode(ERootMotionMode Value) {}
 	public  float GetInstanceAssetPlayerLength(int AssetPlayerIndex) { return default; }
 	public  float GetInstanceAssetPlayerTime(int AssetPlayerIndex) { return default; }
 	public  float GetInstanceAssetPlayerTimeFraction(int AssetPlayerIndex) { return default; }

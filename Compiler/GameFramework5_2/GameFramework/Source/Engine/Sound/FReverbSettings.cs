@@ -6,7 +6,7 @@ using CSharpToCpp.Utilities;
 public partial struct FReverbSettings {
 // ReverbSettings
 	public bool bApplyReverb;
-	public byte ReverbType_DEPRECATED;
+	public ReverbPreset ReverbType_DEPRECATED;
 	public UReverbEffect ReverbEffect;
 	public USoundEffectSubmixPreset ReverbPluginEffect;
 	public float Volume;

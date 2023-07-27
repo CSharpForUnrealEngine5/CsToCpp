@@ -17,8 +17,8 @@ public partial struct FAnimNode_TwoBoneIK {
 	public FVector JointTargetLocation;
 	public FBoneSocketTarget JointTarget;
 	public FAxis TwistAxis;
-	public byte EffectorLocationSpace;
-	public byte JointTargetLocationSpace;
+	public EBoneControlSpace EffectorLocationSpace;
+	public EBoneControlSpace JointTargetLocationSpace;
 	public bool bAllowStretching;
 	public bool bTakeRotationFromEffectorSpace;
 	public bool bMaintainEffectorRelRot;

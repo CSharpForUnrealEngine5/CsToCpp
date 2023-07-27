@@ -17,8 +17,8 @@ public partial class UPaperTileMap : UObject {
 	public UMaterialInterface Material;
 	public TArray<UPaperTileLayer> TileLayers;
 	public float CollisionThickness;
-	public byte SpriteCollisionDomain;
-	public byte ProjectionMode;
+	public ESpriteCollisionMode SpriteCollisionDomain;
+	public ETileMapProjectionMode ProjectionMode;
 	public int HexSideLength;
 	public UBodySetup BodySetup;
 	public UAssetImportData AssetImportData;

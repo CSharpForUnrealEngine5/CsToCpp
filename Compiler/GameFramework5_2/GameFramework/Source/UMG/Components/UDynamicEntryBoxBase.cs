@@ -9,8 +9,8 @@ public partial class UDynamicEntryBoxBase : UWidget {
 	public TArray<FVector2D> SpacingPattern;
 	public EDynamicBoxType EntryBoxType;
 	public FSlateChildSize EntrySizeRule;
-	public byte EntryHorizontalAlignment;
-	public byte EntryVerticalAlignment;
+	public EHorizontalAlignment EntryHorizontalAlignment;
+	public EVerticalAlignment EntryVerticalAlignment;
 	public int MaxElementSize;
 	public FRadialBoxSettings RadialBoxSettings;
 	public  TArray<UUserWidget> GetAllEntries() { return default; }

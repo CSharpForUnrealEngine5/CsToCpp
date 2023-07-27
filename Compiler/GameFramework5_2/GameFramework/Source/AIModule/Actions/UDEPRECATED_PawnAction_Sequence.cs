@@ -5,6 +5,6 @@ using CSharpToCpp.Utilities;
 public partial class UDEPRECATED_PawnAction_Sequence : UDEPRECATED_PawnAction {
 // PawnAction_Sequence
 	public TArray<UDEPRECATED_PawnAction> ActionSequence_DEPRECATED;
-	public byte ChildFailureHandlingMode;
+	public EPawnActionFailHandling ChildFailureHandlingMode;
 	public UDEPRECATED_PawnAction RecentActionCopy_DEPRECATED;
 }

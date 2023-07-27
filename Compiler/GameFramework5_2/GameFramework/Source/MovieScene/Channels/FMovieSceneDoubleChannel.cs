@@ -4,8 +4,8 @@ using CSharpToCpp.Utilities;
 [CppInclude("Channels/MovieSceneDoubleChannel.h")]
 public partial struct FMovieSceneDoubleChannel {
 // MovieSceneDoubleChannel
-	public byte PreInfinityExtrap;
-	public byte PostInfinityExtrap;
+	public ERichCurveExtrapolation PreInfinityExtrap;
+	public ERichCurveExtrapolation PostInfinityExtrap;
 	public TArray<FFrameNumber> Times;
 	public TArray<FMovieSceneDoubleValue> Values;
 	public double DefaultValue;

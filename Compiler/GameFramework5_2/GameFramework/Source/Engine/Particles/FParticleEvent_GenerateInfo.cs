@@ -4,7 +4,7 @@ using CSharpToCpp.Utilities;
 [CppInclude("Particles/Event/ParticleModuleEventGenerator.h")]
 public partial struct FParticleEvent_GenerateInfo {
 // ParticleEvent_GenerateInfo
-	public byte Type;
+	public EParticleEventType Type;
 	public int Frequency;
 	public int ParticleFrequency;
 	public bool FirstTimeOnly;

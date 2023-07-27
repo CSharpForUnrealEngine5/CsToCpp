@@ -18,9 +18,9 @@ public partial class USpinBox : UWidget {
 	public float Delta;
 	public float SliderExponent;
 	public FSlateFontInfo Font;
-	public byte Justification;
+	public ETextJustify Justification;
 	public float MinDesiredWidth;
-	public byte KeyboardType;
+	public EVirtualKeyboardType KeyboardType;
 	public bool ClearKeyboardFocusOnCommit;
 	public bool SelectAllTextOnCommit;
 	public FSlateColor ForegroundColor;

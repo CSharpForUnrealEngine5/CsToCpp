@@ -4,5 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("Materials/MaterialExpressionShadingModel.h")]
 public partial class UMaterialExpressionShadingModel : UMaterialExpression {
 // MaterialExpressionShadingModel
-	public byte ShadingModel;
+	public EMaterialShadingModel ShadingModel;
 }

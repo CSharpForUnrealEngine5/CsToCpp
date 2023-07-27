@@ -6,6 +6,6 @@ using CSharpToCpp.Utilities;
 public partial struct FRealCurve {
 // RealCurve
 	public float DefaultValue;
-	public byte PreInfinityExtrap;
-	public byte PostInfinityExtrap;
+	public ERichCurveExtrapolation PreInfinityExtrap;
+	public ERichCurveExtrapolation PostInfinityExtrap;
 }

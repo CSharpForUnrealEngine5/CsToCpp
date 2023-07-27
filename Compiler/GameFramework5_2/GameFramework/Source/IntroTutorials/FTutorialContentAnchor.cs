@@ -5,7 +5,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A way of identifying something to be highlighted by a tutorial</summary>
 public partial struct FTutorialContentAnchor {
 // TutorialContentAnchor
-	public byte Type;
+	public ETutorialAnchorIdentifier Type;
 	public string WrapperIdentifier;
 	public FSoftObjectPath Asset;
 	public bool bDrawHighlight;

@@ -5,6 +5,6 @@ using CSharpToCpp.Utilities;
 public partial class UK2Node_InputDebugKeyEvent : UK2Node_Event {
 // K2Node_InputDebugKeyEvent
 	public FInputChord InputChord;
-	public byte InputKeyEvent;
+	public EInputEvent InputKeyEvent;
 	public bool bExecuteWhenPaused;
 }

@@ -7,5 +7,5 @@ public partial struct FEnvDirection {
 	public UClass LineFrom;
 	public UClass LineTo;
 	public UClass Rotation;
-	public byte DirMode;
+	public EEnvDirection DirMode;
 }

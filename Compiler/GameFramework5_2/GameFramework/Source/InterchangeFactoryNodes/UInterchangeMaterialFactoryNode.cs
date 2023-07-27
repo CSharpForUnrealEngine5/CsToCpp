@@ -59,12 +59,12 @@ public partial class UInterchangeMaterialFactoryNode : UInterchangeBaseMaterialF
 	public  bool GetClothConnection(string ExpressionNodeUid,string OutputName) { return default; }
 	public  bool ConnectToCloth(string AttributeValue) { return default; }
 	public  bool ConnectOutputToCloth(string ExpressionNodeUid,string OutputName) { return default; }
-	public  bool GetCustomShadingModel(byte AttributeValue) { return default; }
-	public  bool SetCustomShadingModel(byte AttributeValue,bool bAddApplyDelegate/*=true*/) { return default; }
-	public  bool GetCustomTranslucencyLightingMode(byte AttributeValue) { return default; }
-	public  bool SetCustomTranslucencyLightingMode(byte AttributeValue,bool bAddApplyDelegate/*=true*/) { return default; }
-	public  bool GetCustomBlendMode(byte AttributeValue) { return default; }
-	public  bool SetCustomBlendMode(byte AttributeValue,bool bAddApplyDelegate/*=true*/) { return default; }
+	public  bool GetCustomShadingModel(EMaterialShadingModel AttributeValue) { return default; }
+	public  bool SetCustomShadingModel(EMaterialShadingModel AttributeValue,bool bAddApplyDelegate/*=true*/) { return default; }
+	public  bool GetCustomTranslucencyLightingMode(ETranslucencyLightingMode AttributeValue) { return default; }
+	public  bool SetCustomTranslucencyLightingMode(ETranslucencyLightingMode AttributeValue,bool bAddApplyDelegate/*=true*/) { return default; }
+	public  bool GetCustomBlendMode(EBlendMode AttributeValue) { return default; }
+	public  bool SetCustomBlendMode(EBlendMode AttributeValue,bool bAddApplyDelegate/*=true*/) { return default; }
 	public  bool GetCustomTwoSided(bool AttributeValue) { return default; }
 	public  bool SetCustomTwoSided(bool AttributeValue,bool bAddApplyDelegate/*=true*/) { return default; }
 	public  bool GetCustomOpacityMaskClipValue(float AttributeValue) { return default; }

@@ -8,6 +8,6 @@ public partial class UBTDecorator_DoesPathExist : UBTDecorator {
 	public FBlackboardKeySelector BlackboardKeyA;
 	public FBlackboardKeySelector BlackboardKeyB;
 	public bool bUseSelf;
-	public byte PathQueryType;
+	public EPathExistanceQueryType PathQueryType;
 	public UClass FilterClass;
 }

@@ -6,7 +6,7 @@ using CSharpToCpp.Utilities;
 public partial struct FAnimNode_BlendSpacePlayer {
 // AnimNode_BlendSpacePlayer
 	public string GroupName;
-	public byte GroupRole;
+	public EAnimGroupRole GroupRole;
 	public EAnimSyncMethod Method;
 	public bool bIgnoreForRelevancyTest;
 	public float X;

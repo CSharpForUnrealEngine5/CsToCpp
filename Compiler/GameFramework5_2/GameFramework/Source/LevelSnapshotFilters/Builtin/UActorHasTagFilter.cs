@@ -5,7 +5,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Allows an actor if it has all or any of the specified tags.</summary>
 public partial class UActorHasTagFilter : UActorSelectorFilter {
 // ActorHasTagFilter
-	public byte TagCheckingBehavior;
+	public ETagCheckingBehavior TagCheckingBehavior;
 	public TSet<string> AllowedTags;
-	public byte ActorToCheck;
+	public EActorToCheck ActorToCheck;
 }

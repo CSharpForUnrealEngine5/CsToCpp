@@ -11,5 +11,5 @@ public partial class UBoxFalloff : UFieldNodeFloat {
 	public float MaxRange;
 	public float Default;
 	public FTransform Transform;
-	public byte Falloff;
+	public EFieldFalloffType Falloff;
 }

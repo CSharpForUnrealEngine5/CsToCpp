@@ -5,5 +5,5 @@ using CSharpToCpp.Utilities;
 public partial struct FDataDrivenShaderPlatformInfoInput {
 // DataDrivenShaderPlatformInfoInput
 	public string InputName;
-	public byte PropertyCondition;
+	public EDataDrivenShaderPlatformInfoCondition PropertyCondition;
 }

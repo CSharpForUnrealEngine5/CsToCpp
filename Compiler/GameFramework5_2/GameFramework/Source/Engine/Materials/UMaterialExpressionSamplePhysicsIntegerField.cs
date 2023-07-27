@@ -5,5 +5,5 @@ using CSharpToCpp.Utilities;
 public partial class UMaterialExpressionSamplePhysicsIntegerField : UMaterialExpression {
 // MaterialExpressionSamplePhysicsIntegerField
 	public FExpressionInput WorldPosition;
-	public byte FieldTarget;
+	public EFieldIntegerType FieldTarget;
 }

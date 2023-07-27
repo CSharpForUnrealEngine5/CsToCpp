@@ -8,7 +8,7 @@ public partial class UMaterialExpressionNoise : UMaterialExpression {
 	public FExpressionInput FilterWidth;
 	public float Scale;
 	public int Quality;
-	public byte NoiseFunction;
+	public ENoiseFunction NoiseFunction;
 	public bool bTurbulence;
 	public int Levels;
 	public float OutputMin;

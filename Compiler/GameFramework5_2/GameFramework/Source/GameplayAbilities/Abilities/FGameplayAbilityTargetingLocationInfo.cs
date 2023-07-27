@@ -5,7 +5,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Structure that stores a location in one of several different formats</summary>
 public partial struct FGameplayAbilityTargetingLocationInfo {
 // GameplayAbilityTargetingLocationInfo
-	public byte LocationType;
+	public EGameplayAbilityTargetingLocationType LocationType;
 	public FTransform LiteralTransform;
 	public AActor SourceActor;
 	public UMeshComponent SourceComponent;

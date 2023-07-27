@@ -9,5 +9,5 @@ public partial struct FKShapeElem {
 	public bool bIsGenerated;
 	public string Name;
 	public bool bContributeToMass;
-	public byte CollisionEnabled;
+	public ECollisionEnabled CollisionEnabled;
 }

@@ -4,7 +4,7 @@ using CSharpToCpp.Utilities;
 [CppInclude("Components/TimelineComponent.h")]
 public partial struct FTimeline {
 // Timeline
-	public byte LengthMode;
+	public ETimelineLengthMode LengthMode;
 	public bool bLooping;
 	public bool bReversePlayback;
 	public bool bPlaying;

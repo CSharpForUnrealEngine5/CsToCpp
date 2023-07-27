@@ -5,6 +5,6 @@ using CSharpToCpp.Utilities;
 public partial class UMaterialExpressionTransformPosition : UMaterialExpression {
 // MaterialExpressionTransformPosition
 	public FExpressionInput Input;
-	public byte TransformSourceType;
-	public byte TransformType;
+	public EMaterialPositionTransformSource TransformSourceType;
+	public EMaterialPositionTransformSource TransformType;
 }

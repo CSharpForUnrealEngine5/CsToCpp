@@ -5,5 +5,5 @@ using CSharpToCpp.Utilities;
 public partial class UMaterialExpressionTextureProperty : UMaterialExpression {
 // MaterialExpressionTextureProperty
 	public FExpressionInput TextureObject;
-	public byte Property;
+	public EMaterialExposedTextureProperty Property;
 }

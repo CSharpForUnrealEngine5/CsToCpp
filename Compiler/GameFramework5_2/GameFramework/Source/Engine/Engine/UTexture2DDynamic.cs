@@ -5,5 +5,5 @@ using CSharpToCpp.Utilities;
 ///<summary>note : UTexture2DDynamic derives directly from UTexture not from UTexture2D</summary>
 public partial class UTexture2DDynamic : UTexture {
 // Texture2DDynamic
-	public byte Format;
+	public EPixelFormat Format;
 }

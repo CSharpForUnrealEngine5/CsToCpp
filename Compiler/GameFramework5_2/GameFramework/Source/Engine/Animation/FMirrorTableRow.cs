@@ -7,5 +7,5 @@ public partial struct FMirrorTableRow {
 // MirrorTableRow
 	public string Name;
 	public string MirroredName;
-	public byte MirrorEntryType;
+	public EMirrorRowType MirrorEntryType;
 }

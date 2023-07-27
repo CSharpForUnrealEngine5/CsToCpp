@@ -2,7 +2,7 @@
   "profiles": {
     "CSharpToCpp": {
       "commandName": "Project",
-      "commandLineArgs": "C:\\UnrealEngine\\CSharpForUnrealEngine5\\CsToCppTest\\Source\\CsToCppTest\\Game"
+      "commandLineArgs": "C:\\UnrealEngine\\CSharpForUnrealEngine5\\CsFirstPerson\\Source\\FirstPerson\\Game"
     }
   }
 }

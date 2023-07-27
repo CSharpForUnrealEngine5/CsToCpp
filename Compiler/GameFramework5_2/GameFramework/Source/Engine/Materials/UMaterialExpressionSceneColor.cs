@@ -4,7 +4,7 @@ using CSharpToCpp.Utilities;
 [CppInclude("Materials/MaterialExpressionSceneColor.h")]
 public partial class UMaterialExpressionSceneColor : UMaterialExpression {
 // MaterialExpressionSceneColor
-	public byte InputMode;
+	public EMaterialSceneAttributeInputMode InputMode;
 	public FExpressionInput Input;
 	public FExpressionInput OffsetFraction_DEPRECATED;
 	public FVector2D ConstInput;

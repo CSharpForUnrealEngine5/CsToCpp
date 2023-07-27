@@ -7,7 +7,7 @@ public partial struct FVirtualTextureSpacePoolConfig {
 // VirtualTextureSpacePoolConfig
 	public int MinTileSize;
 	public int MaxTileSize;
-	public TArray<byte> Formats;
+	public TArray<EPixelFormat> Formats;
 	public int SizeInMegabyte;
 	public bool bEnableResidencyMipMapBias;
 	public bool bAllowSizeScale;

@@ -4,7 +4,7 @@ using CSharpToCpp.Utilities;
 [CppInclude("Engine/Brush.h")]
 public partial class ABrush : AActor {
 // Brush
-	public byte BrushType;
+	public EBrushType BrushType;
 	public FColor BrushColor;
 	public int PolyFlags;
 	public bool bColored;

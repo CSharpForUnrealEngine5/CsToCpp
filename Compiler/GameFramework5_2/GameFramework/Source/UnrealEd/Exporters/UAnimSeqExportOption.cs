@@ -11,7 +11,7 @@ public partial class UAnimSeqExportOption : UObject {
 	public bool bRecordInWorldSpace;
 	public bool bEvaluateAllSkeletalMeshComponents;
 	public EAnimInterpolationType Interpolation;
-	public byte CurveInterpolation;
+	public ERichCurveInterpMode CurveInterpolation;
 	public TArray<string> IncludeAnimationNames;
 	public TArray<string> ExcludeAnimationNames;
 	public FFrameNumber WarmUpFrames;

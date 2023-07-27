@@ -13,5 +13,5 @@ public partial class UPlaneFalloff : UFieldNodeFloat {
 	public float Distance;
 	public FVector Position;
 	public FVector Normal;
-	public byte Falloff;
+	public EFieldFalloffType Falloff;
 }

@@ -26,7 +26,7 @@ public partial class UPropertyEditorTestObject : UObject {
 	public UObject ObjectProperty;
 	public FLinearColor LinearColorProperty;
 	public FColor ColorProperty;
-	public byte EnumByteProperty;
+	public EPropertyEditorTestEnum EnumByteProperty;
 	public EPropertyEditorTestEditColor EnumProperty;
 	public EPropertyEditorTestUnderscores EnumUnderscores;
 	public FMatrix MatrixProperty;
@@ -55,7 +55,7 @@ public partial class UPropertyEditorTestObject : UObject {
 	public TArray<FLinearColor> LinearColorPropertyArray;
 	public TArray<FColor> ColorPropertyArray;
 	public TArray<FTimecode> TimecodePropertyArray;
-	public TArray<byte> EnumPropertyArray;
+	public TArray<EPropertyEditorTestEnum> EnumPropertyArray;
 	public TArray<FPropertyEditorTestBasicStruct> StructPropertyArray;
 	public TArray<FPropertyEditorTestBasicStruct> StructPropertyArrayWithTitle;
 	public TArray<FPropertyEditorTestBasicStruct> StructPropertyArrayWithFormattedTitle;
@@ -123,7 +123,7 @@ public partial class UPropertyEditorTestObject : UObject {
 	public TMap<string,AActor> StringToActorMap;
 	public TMap<UObject,int> ObjectToInt32Map;
 	public TMap<UObject,FLinearColor> ObjectToColorMap;
-	public TMap<int,byte> IntToEnumMap;
+	public TMap<int,EPropertyEditorTestEnum> IntToEnumMap;
 	public TMap<string,string> NameToNameMap;
 	public TMap<string,UObject> NameToObjectMap;
 	public TMap<string,FPropertyEditorTestBasicStruct> NameToCustomMap;
@@ -151,7 +151,7 @@ public partial class UPropertyEditorTestObject : UObject {
 	public EPropertyEditorTestEditColor EnumEditCondition;
 	public bool bEnabledWhenBlue;
 	public bool bEnabledWhenPink;
-	public byte EnumAsByteEditCondition;
+	public EPropertyEditorTestEnum EnumAsByteEditCondition;
 	public bool bEnabledWhenEnumIs2;
 	public bool bEnabledWhenEnumIs4;
 	public int IntegerEditCondition;
@@ -173,8 +173,8 @@ public partial class UPropertyEditorTestObject : UObject {
 	public int AlwaysDisabled;
 	public bool bCategoryInlineEditCondition;
 	public float EnabledWhenCategoryChecked;
-	public byte InlineProperty;
-	public byte PropertyThatHides;
+	public EComponentMobility InlineProperty;
+	public EComponentMobility PropertyThatHides;
 	public bool bVisibleWhenStatic;
 	public int VisibleWhenStationary;
 	public FDateTime DateTime;

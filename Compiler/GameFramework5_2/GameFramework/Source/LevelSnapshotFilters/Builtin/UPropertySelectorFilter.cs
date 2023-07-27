@@ -5,5 +5,5 @@ using CSharpToCpp.Utilities;
 ///<summary>Base class for filters that only implement IsActorValid</summary>
 public partial class UPropertySelectorFilter : ULevelSnapshotBlueprintFilter {
 // PropertySelectorFilter
-	public byte DefaultResult;
+	public EFilterResult DefaultResult;
 }

@@ -15,9 +15,9 @@ public partial class UCustomizableObjectEditorTextureStats : UObject {
 	public int ResolutionX;
 	public int ResolutionY;
 	public string Size;
-	public byte Format;
+	public EPixelFormat Format;
 	public int LODBias;
 	public string IsStreamed;
-	public byte LODGroup;
+	public TextureGroup LODGroup;
 	public int Component;
 }

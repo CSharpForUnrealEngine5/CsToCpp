@@ -21,10 +21,10 @@ public partial class UPaperSprite : UObject {
 	public UMaterialInterface DefaultMaterial;
 	public UMaterialInterface AlternateMaterial;
 	public TArray<FPaperSpriteSocket> Sockets;
-	public byte SpriteCollisionDomain;
+	public ESpriteCollisionMode SpriteCollisionDomain;
 	public float PixelsPerUnrealUnit;
 	public UBodySetup BodySetup;
-	public byte PivotMode;
+	public ESpritePivotMode PivotMode;
 	public FVector2D CustomPivotPoint;
 	public bool bSnapPivotToPixelGrid;
 	public FSpriteGeometryCollection CollisionGeometry;

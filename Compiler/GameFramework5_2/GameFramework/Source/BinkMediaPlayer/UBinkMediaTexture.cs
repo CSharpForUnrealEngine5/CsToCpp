@@ -5,12 +5,12 @@ using CSharpToCpp.Utilities;
 ///<summary>Implements a texture asset for rendering video tracks from UBinkMediaPlayer assets.</summary>
 public partial class UBinkMediaTexture : UTexture {
 // BinkMediaTexture
-	public byte AddressX;
-	public byte AddressY;
+	public TextureAddress AddressX;
+	public TextureAddress AddressY;
 	public  void SetMediaPlayer(UBinkMediaPlayer InMediaPlayer) {}
 	public  void Clear() {}
 	public UBinkMediaPlayer MediaPlayer;
-	public byte PixelFormat;
+	public EPixelFormat PixelFormat;
 	public bool Tonemap;
 	public float OutputNits;
 	public float Alpha;

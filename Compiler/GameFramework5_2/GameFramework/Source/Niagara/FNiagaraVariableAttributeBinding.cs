@@ -9,7 +9,7 @@ public partial struct FNiagaraVariableAttributeBinding {
 	public FNiagaraVariable RootVariable;
 	public FNiagaraVariable BoundVariable;
 	public string CachedDisplayName;
-	public byte BindingSourceMode;
+	public ENiagaraBindingSource BindingSourceMode;
 	public bool bBindingExistsOnSource;
 	public bool bIsCachedParticleValue;
 }

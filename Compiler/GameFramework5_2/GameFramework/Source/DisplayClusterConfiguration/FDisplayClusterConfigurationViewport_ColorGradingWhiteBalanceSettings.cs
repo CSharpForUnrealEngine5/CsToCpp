@@ -7,7 +7,7 @@ public partial struct FDisplayClusterConfigurationViewport_ColorGradingWhiteBala
 	public bool bOverride_TemperatureType;
 	public bool bOverride_WhiteTemp;
 	public bool bOverride_WhiteTint;
-	public byte TemperatureType;
+	public ETemperatureMethod TemperatureType;
 	public float WhiteTemp;
 	public float WhiteTint;
 }

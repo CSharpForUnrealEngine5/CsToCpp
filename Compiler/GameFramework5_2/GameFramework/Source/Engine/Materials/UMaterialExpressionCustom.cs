@@ -5,7 +5,7 @@ using CSharpToCpp.Utilities;
 public partial class UMaterialExpressionCustom : UMaterialExpression {
 // MaterialExpressionCustom
 	public string Code;
-	public byte OutputType;
+	public ECustomMaterialOutputType OutputType;
 	public string Description;
 	public TArray<FCustomInput> Inputs;
 	public TArray<FCustomOutput> AdditionalOutputs;

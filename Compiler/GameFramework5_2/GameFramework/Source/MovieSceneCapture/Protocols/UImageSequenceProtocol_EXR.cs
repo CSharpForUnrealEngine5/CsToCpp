@@ -5,5 +5,5 @@ using CSharpToCpp.Utilities;
 public partial class UImageSequenceProtocol_EXR : UImageSequenceProtocol {
 // ImageSequenceProtocol_EXR
 	public bool bCompressed;
-	public byte CaptureGamut;
+	public EHDRCaptureGamut CaptureGamut;
 }

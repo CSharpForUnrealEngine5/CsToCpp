@@ -10,5 +10,5 @@ public partial struct FSplinePoint {
 	public FVector LeaveTangent;
 	public FRotator Rotation;
 	public FVector Scale;
-	public byte Type;
+	public ESplinePointType Type;
 }

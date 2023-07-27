@@ -6,8 +6,8 @@ using CSharpToCpp.Utilities;
 public partial class UBackgroundBlur : UContentWidget {
 // BackgroundBlur
 	public FMargin Padding;
-	public byte HorizontalAlignment;
-	public byte VerticalAlignment;
+	public EHorizontalAlignment HorizontalAlignment;
+	public EVerticalAlignment VerticalAlignment;
 	public bool bApplyAlphaToBlur;
 	public float BlurStrength;
 	public bool bOverrideAutoRadiusCalculation;

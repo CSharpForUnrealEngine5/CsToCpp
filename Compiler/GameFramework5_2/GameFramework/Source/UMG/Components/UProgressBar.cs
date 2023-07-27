@@ -7,8 +7,8 @@ public partial class UProgressBar : UWidget {
 // ProgressBar
 	public FProgressBarStyle WidgetStyle;
 	public float Percent;
-	public byte BarFillType;
-	public byte BarFillStyle;
+	public EProgressBarFillType BarFillType;
+	public EProgressBarFillStyle BarFillStyle;
 	public bool bIsMarquee;
 	public FVector2D BorderPadding;
 	public FGetFloat PercentDelegate;

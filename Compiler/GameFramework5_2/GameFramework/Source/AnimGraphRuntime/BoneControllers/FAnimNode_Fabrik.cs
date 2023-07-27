@@ -11,8 +11,8 @@ public partial struct FAnimNode_Fabrik {
 	public FBoneReference RootBone;
 	public float Precision;
 	public int MaxIterations;
-	public byte EffectorTransformSpace;
-	public byte EffectorRotationSource;
+	public EBoneControlSpace EffectorTransformSpace;
+	public EBoneRotationSource EffectorRotationSource;
 	public bool bEnableDebugDraw;
 	public FBoneReference EffectorTransformBone_DEPRECATED;
 }

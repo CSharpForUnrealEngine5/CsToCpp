@@ -8,6 +8,6 @@ public partial class USheetBuilder : UEditorBrushBuilder {
 	public int Y;
 	public int XSegments;
 	public int YSegments;
-	public byte Axis;
+	public ESheetAxis Axis;
 	public string GroupName;
 }

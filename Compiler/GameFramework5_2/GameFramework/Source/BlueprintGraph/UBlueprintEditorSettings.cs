@@ -31,7 +31,7 @@ public partial class UBlueprintEditorSettings : UDeveloperSettings {
 	public TArray<string> NamespacesToAlwaysInclude;
 	public bool bEnableContextMenuTimeSlicing;
 	public bool bFavorPureCastNodes;
-	public byte SaveOnCompile;
+	public ESaveOnCompile SaveOnCompile;
 	public bool bJumpToNodeErrors;
 	public bool bAllowExplicitImpureNodeDisabling;
 	public bool bShowActionMenuItemSignatures;

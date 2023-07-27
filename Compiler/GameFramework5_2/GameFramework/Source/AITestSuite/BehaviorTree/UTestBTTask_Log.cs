@@ -8,5 +8,5 @@ public partial class UTestBTTask_Log : UBTTaskNode {
 	public int LogFinished;
 	public int ExecutionTicks;
 	public int LogTickIndex;
-	public byte LogResult;
+	public EBTNodeResult LogResult;
 }

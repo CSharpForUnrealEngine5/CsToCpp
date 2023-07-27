@@ -10,5 +10,5 @@ public partial struct FAnimNode_CopyBone {
 	public bool bCopyTranslation;
 	public bool bCopyRotation;
 	public bool bCopyScale;
-	public byte ControlSpace;
+	public EBoneControlSpace ControlSpace;
 }

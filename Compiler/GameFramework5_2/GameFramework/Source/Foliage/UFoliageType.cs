@@ -15,7 +15,7 @@ public partial class UFoliageType : UObject {
 	public FFloatInterval ScaleY;
 	public FFloatInterval ScaleZ;
 	public FFoliageVertexColorChannelMask VertexColorMaskByChannel;
-	public byte VertexColorMask_DEPRECATED;
+	public FoliageVertexColorMask VertexColorMask_DEPRECATED;
 	public float VertexColorMaskThreshold_DEPRECATED;
 	public bool VertexColorMaskInvert_DEPRECATED;
 	public FFloatInterval ZOffset;
@@ -37,7 +37,7 @@ public partial class UFoliageType : UObject {
 	public int AverageNormalSampleCount;
 	public FBoxSphereBounds MeshBounds;
 	public FVector LowBoundOriginRadius;
-	public byte Mobility;
+	public EComponentMobility Mobility;
 	public FInt32Interval CullDistance;
 	public bool bEnableStaticLighting_DEPRECATED;
 	public bool CastShadow;
@@ -56,7 +56,7 @@ public partial class UFoliageType : UObject {
 	public bool bEvaluateWorldPositionOffset;
 	public int WorldPositionOffsetDisableDistance;
 	public FBodyInstance BodyInstance;
-	public byte CustomNavigableGeometry;
+	public EHasCustomNavigableGeometry CustomNavigableGeometry;
 	public FLightingChannels LightingChannels;
 	public bool bRenderCustomDepth;
 	public ERendererStencilMask CustomDepthStencilWriteMask;

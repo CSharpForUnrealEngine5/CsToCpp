@@ -16,8 +16,8 @@ public partial struct FRecastNavMeshGenerationProperties {
 	public float MergeRegionSize;
 	public float MaxSimplificationError;
 	public int TileNumberHardLimit;
-	public byte RegionPartitioning;
-	public byte LayerPartitioning;
+	public ERecastPartitioning RegionPartitioning;
+	public ERecastPartitioning LayerPartitioning;
 	public int RegionChunkSplits;
 	public int LayerChunkSplits;
 	public bool bSortNavigationAreasByCost;

@@ -4,5 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("Engine/ShadowMapTexture2D.h")]
 public partial class UShadowMapTexture2D : UTexture2D {
 // ShadowMapTexture2D
-	public byte ShadowmapFlags;
+	public EShadowMapFlags ShadowmapFlags;
 }

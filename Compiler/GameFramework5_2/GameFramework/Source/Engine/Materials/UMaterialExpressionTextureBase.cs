@@ -5,6 +5,6 @@ using CSharpToCpp.Utilities;
 public partial class UMaterialExpressionTextureBase : UMaterialExpression {
 // MaterialExpressionTextureBase
 	public UTexture Texture;
-	public byte SamplerType;
+	public EMaterialSamplerType SamplerType;
 	public bool IsDefaultMeshpaintTexture;
 }

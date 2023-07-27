@@ -9,7 +9,7 @@ public partial class UAudioMeter : UWidget {
 	public TArray<FMeterChannelInfo> MeterChannelInfo;
 	public FGetMeterChannelInfo MeterChannelInfoDelegate;
 	public FAudioMeterStyle WidgetStyle;
-	public byte Orientation;
+	public EOrientation Orientation;
 	public FLinearColor BackgroundColor;
 	public FLinearColor MeterBackgroundColor;
 	public FLinearColor MeterValueColor;

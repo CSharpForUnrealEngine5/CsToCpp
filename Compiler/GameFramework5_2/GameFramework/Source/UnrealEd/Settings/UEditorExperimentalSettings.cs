@@ -14,7 +14,7 @@ public partial class UEditorExperimentalSettings : UObject {
 	public float HDREditorNITLevel;
 	public bool bProceduralFoliage;
 	public bool bEnableTranslationPicker;
-	public byte ConsoleForGamepadLabels;
+	public EConsoleForGamepadLabels ConsoleForGamepadLabels;
 	public bool bToolbarCustomization;
 	public bool bBreakOnExceptions;
 	public bool bDrawMidpointArrowsInBlueprints;

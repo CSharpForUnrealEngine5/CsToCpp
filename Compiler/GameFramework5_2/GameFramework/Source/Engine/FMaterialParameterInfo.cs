@@ -5,6 +5,6 @@ using CSharpToCpp.Utilities;
 public partial struct FMaterialParameterInfo {
 // MaterialParameterInfo
 	public string Name;
-	public byte Association;
+	public EMaterialParameterAssociation Association;
 	public int Index;
 }

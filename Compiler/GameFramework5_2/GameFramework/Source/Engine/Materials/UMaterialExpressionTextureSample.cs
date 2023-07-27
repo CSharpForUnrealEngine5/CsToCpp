@@ -10,8 +10,8 @@ public partial class UMaterialExpressionTextureSample : UMaterialExpressionTextu
 	public FExpressionInput CoordinatesDX;
 	public FExpressionInput CoordinatesDY;
 	public FExpressionInput AutomaticViewMipBiasValue;
-	public byte MipValueMode;
-	public byte SamplerSource;
+	public ETextureMipValueMode MipValueMode;
+	public ESamplerSourceMode SamplerSource;
 	public bool AutomaticViewMipBias;
 	public byte ConstCoordinate;
 	public int ConstMipValue;

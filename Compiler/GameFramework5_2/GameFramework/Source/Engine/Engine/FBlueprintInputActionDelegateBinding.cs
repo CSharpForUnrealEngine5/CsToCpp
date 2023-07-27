@@ -5,6 +5,6 @@ using CSharpToCpp.Utilities;
 public partial struct FBlueprintInputActionDelegateBinding {
 // BlueprintInputActionDelegateBinding
 	public string InputActionName;
-	public byte InputKeyEvent;
+	public EInputEvent InputKeyEvent;
 	public string FunctionNameToBind;
 }

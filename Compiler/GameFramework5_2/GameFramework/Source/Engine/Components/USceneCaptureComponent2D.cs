@@ -5,11 +5,11 @@ using CSharpToCpp.Utilities;
 ///<summary>Used to capture a 'snapshot' of the scene from a single plane and feed it to a render target.</summary>
 public partial class USceneCaptureComponent2D : USceneCaptureComponent {
 // SceneCaptureComponent2D
-	public byte ProjectionType;
+	public ECameraProjectionMode ProjectionType;
 	public float FOVAngle;
 	public float OrthoWidth;
 	public UTextureRenderTarget2D TextureTarget;
-	public byte CompositeMode;
+	public ESceneCaptureCompositeMode CompositeMode;
 	public FPostProcessSettings PostProcessSettings;
 	public float PostProcessBlendWeight;
 	public bool bOverride_CustomNearClippingPlane;

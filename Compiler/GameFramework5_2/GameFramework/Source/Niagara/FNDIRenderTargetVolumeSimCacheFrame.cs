@@ -5,7 +5,7 @@ using CSharpToCpp.Utilities;
 public partial struct FNDIRenderTargetVolumeSimCacheFrame {
 // NDIRenderTargetVolumeSimCacheFrame
 	public FIntVector Size;
-	public byte Format;
+	public EPixelFormat Format;
 	public int UncompressedSize;
 	public int CompressedSize;
 }

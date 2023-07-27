@@ -6,7 +6,7 @@ using CSharpToCpp.Utilities;
 public partial struct FBaseAttenuationSettings {
 // BaseAttenuationSettings
 	public EAttenuationDistanceModel DistanceAlgorithm;
-	public byte AttenuationShape;
+	public EAttenuationShape AttenuationShape;
 	public ENaturalSoundFalloffMode FalloffMode;
 	public float dBAttenuationAtMax;
 	public FVector AttenuationShapeExtents;

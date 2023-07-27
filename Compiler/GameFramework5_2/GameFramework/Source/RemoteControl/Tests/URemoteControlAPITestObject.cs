@@ -24,7 +24,7 @@ public partial class URemoteControlAPITestObject : UObject {
 	public string TextValue;
 	public bool bValue;
 	public byte ByteValue;
-	public byte RemoteControlEnumByteValue;
+	public ERemoteControlEnum RemoteControlEnumByteValue;
 	public ERemoteControlEnumClass RemoteControlEnumValue;
 	public FVector VectorValue;
 	public FRotator RotatorValue;

@@ -5,5 +5,5 @@ using CSharpToCpp.Utilities;
 ///<summary>Instantly finishes with given result</summary>
 public partial class UBTTask_FinishWithResult : UBTTaskNode {
 // BTTask_FinishWithResult
-	public byte Result;
+	public EBTNodeResult Result;
 }

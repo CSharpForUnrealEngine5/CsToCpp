@@ -5,17 +5,17 @@ using CSharpToCpp.Utilities;
 public partial class UEnvQueryTest : UEnvQueryNode {
 // EnvQueryTest
 	public int TestOrder;
-	public byte TestPurpose;
+	public EEnvTestPurpose TestPurpose;
 	public string TestComment;
-	public byte MultipleContextFilterOp;
-	public byte MultipleContextScoreOp;
-	public byte FilterType;
+	public EEnvTestFilterOperator MultipleContextFilterOp;
+	public EEnvTestScoreOperator MultipleContextScoreOp;
+	public EEnvTestFilterType FilterType;
 	public FAIDataProviderBoolValue BoolValue;
 	public FAIDataProviderFloatValue FloatValueMin;
 	public FAIDataProviderFloatValue FloatValueMax;
-	public byte ScoringEquation;
-	public byte ClampMinType;
-	public byte ClampMaxType;
+	public EEnvTestScoreEquation ScoringEquation;
+	public EEnvQueryTestClamping ClampMinType;
+	public EEnvQueryTestClamping ClampMaxType;
 	public EEQSNormalizationType NormalizationType;
 	public FAIDataProviderFloatValue ScoreClampMin;
 	public FAIDataProviderFloatValue ScoreClampMax;

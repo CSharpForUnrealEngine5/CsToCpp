@@ -5,7 +5,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Blackboard comparison decorator node.</summary>
 public partial class UBTDecorator_CompareBBEntries : UBTDecorator {
 // BTDecorator_CompareBBEntries
-	public byte Operator;
+	public EBlackBoardEntryComparison Operator;
 	public FBlackboardKeySelector BlackboardKeyA;
 	public FBlackboardKeySelector BlackboardKeyB;
 }

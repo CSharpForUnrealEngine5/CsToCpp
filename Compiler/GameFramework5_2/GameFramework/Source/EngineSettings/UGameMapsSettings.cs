@@ -9,8 +9,8 @@ public partial class UGameMapsSettings : UObject {
 	public string LocalMapOptions;
 	public FSoftObjectPath TransitionMap;
 	public bool bUseSplitscreen;
-	public byte TwoPlayerSplitscreenLayout;
-	public byte ThreePlayerSplitscreenLayout;
+	public ETwoPlayerSplitScreenType TwoPlayerSplitscreenLayout;
+	public EThreePlayerSplitScreenType ThreePlayerSplitscreenLayout;
 	public EFourPlayerSplitScreenType FourPlayerSplitscreenLayout;
 	public bool bOffsetPlayerGamepadIds;
 	public FSoftClassPath GameInstanceClass;

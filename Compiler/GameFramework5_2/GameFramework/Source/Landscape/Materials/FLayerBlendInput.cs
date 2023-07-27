@@ -5,7 +5,7 @@ using CSharpToCpp.Utilities;
 public partial struct FLayerBlendInput {
 // LayerBlendInput
 	public string LayerName;
-	public byte BlendType;
+	public ELandscapeLayerBlendType BlendType;
 	public FExpressionInput LayerInput;
 	public FExpressionInput HeightInput;
 	public float PreviewWeight;

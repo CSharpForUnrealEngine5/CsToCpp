@@ -11,7 +11,7 @@ public partial struct FRBFParams {
 	public bool bAutomaticRadius;
 	public ERBFFunctionType Function;
 	public ERBFDistanceMethod DistanceMethod;
-	public byte TwistAxis;
+	public EBoneAxis TwistAxis;
 	public float WeightThreshold;
 	public ERBFNormalizeMethod NormalizeMethod;
 	public FVector MedianReference;

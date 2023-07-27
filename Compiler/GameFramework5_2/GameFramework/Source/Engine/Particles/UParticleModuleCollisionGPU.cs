@@ -11,6 +11,6 @@ public partial class UParticleModuleCollisionGPU : UParticleModuleCollisionBase 
 	public float RandomDistribution;
 	public float RadiusScale;
 	public float RadiusBias;
-	public byte Response;
-	public byte CollisionMode;
+	public EParticleCollisionResponse Response;
+	public EParticleCollisionMode CollisionMode;
 }

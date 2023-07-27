@@ -6,5 +6,5 @@ using CSharpToCpp.Utilities;
 public partial class UMaterialMergeOptions : UObject {
 // MaterialMergeOptions
 	public EMaterialBakeMethod Method;
-	public byte BlendMode;
+	public EBlendMode BlendMode;
 }

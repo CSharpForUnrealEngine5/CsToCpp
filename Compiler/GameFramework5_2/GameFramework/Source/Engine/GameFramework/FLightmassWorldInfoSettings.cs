@@ -13,7 +13,7 @@ public partial struct FLightmassWorldInfoSettings {
 	public float EnvironmentIntensity;
 	public float EmissiveBoost;
 	public float DiffuseBoost;
-	public byte VolumeLightingMethod;
+	public EVolumeLightingMethod VolumeLightingMethod;
 	public bool bUseAmbientOcclusion;
 	public bool bGenerateAmbientOcclusionMaterialMask;
 	public bool bVisualizeMaterialDiffuse;

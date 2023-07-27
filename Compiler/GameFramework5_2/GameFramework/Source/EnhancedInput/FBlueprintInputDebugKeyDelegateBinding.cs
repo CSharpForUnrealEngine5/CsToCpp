@@ -5,7 +5,7 @@ using CSharpToCpp.Utilities;
 public partial struct FBlueprintInputDebugKeyDelegateBinding {
 // BlueprintInputDebugKeyDelegateBinding
 	public FInputChord InputChord;
-	public byte InputKeyEvent;
+	public EInputEvent InputKeyEvent;
 	public string FunctionNameToBind;
 	public bool bExecuteWhenPaused;
 }

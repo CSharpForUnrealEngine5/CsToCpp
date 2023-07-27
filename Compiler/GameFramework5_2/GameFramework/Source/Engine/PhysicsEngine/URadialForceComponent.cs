@@ -6,14 +6,14 @@ using CSharpToCpp.Utilities;
 public partial class URadialForceComponent : USceneComponent {
 // RadialForceComponent
 	public float Radius;
-	public byte Falloff;
+	public ERadialImpulseFalloff Falloff;
 	public float ImpulseStrength;
 	public bool bImpulseVelChange;
 	public bool bIgnoreOwningActor;
 	public float ForceStrength;
 	public float DestructibleDamage;
 	public  void FireImpulse() {}
-	public  void AddObjectTypeToAffect(byte ObjectType) {}
-	public  void RemoveObjectTypeToAffect(byte ObjectType) {}
-	public TArray<byte> ObjectTypesToAffect;
+	public  void AddObjectTypeToAffect(EObjectTypeQuery ObjectType) {}
+	public  void RemoveObjectTypeToAffect(EObjectTypeQuery ObjectType) {}
+	public TArray<EObjectTypeQuery> ObjectTypesToAffect;
 }

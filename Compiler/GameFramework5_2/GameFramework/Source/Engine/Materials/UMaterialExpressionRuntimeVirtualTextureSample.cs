@@ -13,6 +13,6 @@ public partial class UMaterialExpressionRuntimeVirtualTextureSample : UMaterialE
 	public bool bSinglePhysicalSpace;
 	public bool bAdaptive;
 	public bool bEnableFeedback;
-	public byte MipValueMode;
-	public byte TextureAddressMode;
+	public ERuntimeVirtualTextureMipValueMode MipValueMode;
+	public ERuntimeVirtualTextureTextureAddressMode TextureAddressMode;
 }

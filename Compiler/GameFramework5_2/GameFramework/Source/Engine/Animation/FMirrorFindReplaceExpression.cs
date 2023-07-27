@@ -7,5 +7,5 @@ public partial struct FMirrorFindReplaceExpression {
 // MirrorFindReplaceExpression
 	public string FindExpression;
 	public string ReplaceExpression;
-	public byte FindReplaceMethod;
+	public EMirrorFindReplaceMethod FindReplaceMethod;
 }

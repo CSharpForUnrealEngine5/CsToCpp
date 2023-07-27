@@ -5,7 +5,7 @@ using CSharpToCpp.Utilities;
 public partial struct FUIFrameworkOverlaySlot {
 // UIFrameworkOverlaySlot
 	public FMargin Padding;
-	public byte HorizontalAlignment;
-	public byte VerticalAlignment;
+	public EHorizontalAlignment HorizontalAlignment;
+	public EVerticalAlignment VerticalAlignment;
 	public int Index;
 }

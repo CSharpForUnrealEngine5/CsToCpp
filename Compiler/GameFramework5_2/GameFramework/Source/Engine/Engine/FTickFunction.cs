@@ -5,8 +5,8 @@ using CSharpToCpp.Utilities;
 ///<summary>Abstract Base class for all tick functions.</summary>
 public partial struct FTickFunction {
 // TickFunction
-	public byte TickGroup;
-	public byte EndTickGroup;
+	public ETickingGroup TickGroup;
+	public ETickingGroup EndTickGroup;
 	public bool bTickEvenWhenPaused;
 	public bool bCanEverTick;
 	public bool bStartWithTickEnabled;

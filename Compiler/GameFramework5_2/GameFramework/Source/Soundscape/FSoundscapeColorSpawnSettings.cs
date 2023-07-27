@@ -29,7 +29,7 @@ public partial struct FSoundscapeColorSpawnSettings {
 	public bool bPositionByTrace;
 	public FVector TraceVector;
 	public float TraceDistance;
-	public byte TraceChannel;
+	public ECollisionChannel TraceChannel;
 	public bool bFilterByColorPointDensity;
 	public FGameplayTag ColorPoint;
 	public int MinColorPointNumber;

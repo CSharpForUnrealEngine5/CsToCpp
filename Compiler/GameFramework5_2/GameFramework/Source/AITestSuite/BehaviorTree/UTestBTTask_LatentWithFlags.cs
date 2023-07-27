@@ -14,5 +14,5 @@ public partial class UTestBTTask_LatentWithFlags : UBTTaskNode {
 	public int AbortHalfTicks;
 	public string KeyNameExecute;
 	public string KeyNameAbort;
-	public byte LogResult;
+	public EBTNodeResult LogResult;
 }

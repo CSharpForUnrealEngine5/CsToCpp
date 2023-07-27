@@ -9,6 +9,7 @@ public partial class AActor : UObject
 
     public virtual void EndPlay(EEndPlayReason EndPlayReason) { }
 
+    public virtual void Destroy() { }
 
 }
 

@@ -7,7 +7,7 @@ public partial class UTextLayoutWidget : UWidget {
 // TextLayoutWidget
 	public  void SetJustification(ETextJustify InJustification) {}
 	public FShapedTextOptions ShapedTextOptions;
-	public byte Justification;
+	public ETextJustify Justification;
 	public ETextWrappingPolicy WrappingPolicy;
 	public bool AutoWrapText;
 	public float WrapTextAt;

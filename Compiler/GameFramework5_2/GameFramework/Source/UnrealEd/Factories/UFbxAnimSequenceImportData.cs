@@ -6,7 +6,7 @@ using CSharpToCpp.Utilities;
 public partial class UFbxAnimSequenceImportData : UFbxAssetImportData {
 // FbxAnimSequenceImportData
 	public bool bImportMeshesInBoneHierarchy;
-	public byte AnimationLength;
+	public EFBXAnimationLengthImportType AnimationLength;
 	public int StartFrame_DEPRECATED;
 	public int EndFrame_DEPRECATED;
 	public FInt32Interval FrameImportRange;

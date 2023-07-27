@@ -7,7 +7,7 @@ public partial struct FRigUnit_SphereTraceByTraceChannel {
 // RigUnit_SphereTraceByTraceChannel
 	public FVector Start;
 	public FVector End;
-	public byte TraceChannel;
+	public ETraceTypeQuery TraceChannel;
 	public float Radius;
 	public bool bHit;
 	public FVector HitLocation;
