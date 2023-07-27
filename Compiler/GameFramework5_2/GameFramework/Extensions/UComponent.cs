@@ -15,6 +15,10 @@ public partial class USceneComponent : UActorComponent
     public void SetupAttachment(USceneComponent InParent, string InSocketName) { }
     public void SetupAttachment(USceneComponent InParent) { }
     public void SetRelativeLocation(FVector loc) { }
+    public void SetUsingAbsoluteRotation(bool bInAbsoluteRotation) { }
+    public void SetRelativeRotation(FRotator NewRotation, bool bSweep = false) { }
+
+
     public void AttachToComponent(USceneComponent Parent, FAttachmentTransformRules AttachmentRules, string SocketName) { }
 
 }

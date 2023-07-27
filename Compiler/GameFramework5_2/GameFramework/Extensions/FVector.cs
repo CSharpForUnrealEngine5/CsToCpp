@@ -43,6 +43,6 @@ public partial struct FVector
     /** Unit Z axis vector (0,0,1) */
     public static FVector ZAxisVector;
 
-
+    public static implicit operator FVector(FVector_NetQuantize fv) { return default; }
 }
 
