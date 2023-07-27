@@ -4,10 +4,13 @@ public partial struct ConstructorHelpers
 {
     public struct FObjectFinder<T>
     {
-        FObjectFinder(string path) { }
+        public FObjectFinder(string path) {
+            Object = default;
+        }
 
-        bool Succeeded() { return false; }
+        public bool Succeeded() { return false; }
 
-        T Object;
+        public T Object;
     }
+
 }

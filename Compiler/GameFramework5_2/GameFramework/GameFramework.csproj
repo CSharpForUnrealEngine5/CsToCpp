@@ -7,14 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Extensions\ConstructorHelpers.cs" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Include="Extensions\ConstructorHelpers.cs" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\..\CSharpToCpp.Utilities\CSharpToCpp.Utilities.csproj" />
   </ItemGroup>
 

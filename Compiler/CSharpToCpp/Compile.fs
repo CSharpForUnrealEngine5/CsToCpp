@@ -382,6 +382,9 @@ let compileType (m : SemanticModel) (tn : SyntaxNode)
             ("FString",false)
         else
             (t.Text,false)
+    | QualifiedName (Identifier name, _, qn)->
+        let (qn',(ty,sy)) = compileExpression m qn
+        ($"{name[0]}::{qn'}",false)
 
 let getIncludes t : string list =
     let f2 (t : ITypeSymbol) =

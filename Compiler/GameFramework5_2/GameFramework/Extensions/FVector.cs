@@ -5,6 +5,7 @@ namespace GameFramework;
 public partial struct FVector
 {
     public FVector(float x, float y, float z) { X = x; Y = y; Z = z; }
+    public FVector(float xyz) { X = xyz; Y = xyz; Z = xyz; }
     public FVector GetSafeNormal() { return default; }
     public static FVector operator *(FVector v, float f) { return new FVector(); }
     public static FVector operator +(FVector v, FVector f) { return new FVector(); }
