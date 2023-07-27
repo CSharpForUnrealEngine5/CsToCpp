@@ -6,5 +6,5 @@ public partial class UFindTurnBasedMatchCallbackProxy : UOnlineBlueprintCallProx
 // FindTurnBasedMatchCallbackProxy
 	public FOnlineTurnBasedMatchResult OnSuccess;
 	public FOnlineTurnBasedMatchResult OnFailure;
-	public UObject FindTurnBasedMatch(UObject WorldContextObject,UObject PlayerController,object /*MatchActor*/ MatchActor,int MinPlayers,int MaxPlayers,int PlayerGroup,bool ShowExistingMatches) { return default; }
+	public static UFindTurnBasedMatchCallbackProxy FindTurnBasedMatch(UObject WorldContextObject,APlayerController PlayerController,object /*MatchActor*/ MatchActor,int MinPlayers,int MaxPlayers,int PlayerGroup,bool ShowExistingMatches) { return default; }
 }

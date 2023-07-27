@@ -12,8 +12,8 @@ public partial class ASkeletalMeshActor : AActor {
 	public UPhysicsAsset ReplicatedPhysAsset;
 	public UMaterialInterface ReplicatedMaterial0;
 	public UMaterialInterface ReplicatedMaterial1;
-	public void OnRep_ReplicatedMesh() {}
-	public void OnRep_ReplicatedPhysAsset() {}
-	public void OnRep_ReplicatedMaterial0() {}
-	public void OnRep_ReplicatedMaterial1() {}
+	public  void OnRep_ReplicatedMesh() {}
+	public  void OnRep_ReplicatedPhysAsset() {}
+	public  void OnRep_ReplicatedMaterial0() {}
+	public  void OnRep_ReplicatedMaterial1() {}
 }

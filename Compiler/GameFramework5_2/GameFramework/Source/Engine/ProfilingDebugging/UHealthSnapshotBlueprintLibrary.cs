@@ -4,7 +4,7 @@ using CSharpToCpp.Utilities;
 [CppInclude("ProfilingDebugging/HealthSnapshot.h")]
 public partial class UHealthSnapshotBlueprintLibrary : UBlueprintFunctionLibrary {
 // HealthSnapshotBlueprintLibrary
-	public void StartPerformanceSnapshots() {}
-	public void StopPerformanceSnapshots() {}
-	public void LogPerformanceSnapshot(string SnapshotTitle,bool bResetStats/*=true*/) {}
+	public static void StartPerformanceSnapshots() {}
+	public static void StopPerformanceSnapshots() {}
+	public static void LogPerformanceSnapshot(string SnapshotTitle,bool bResetStats/*=true*/) {}
 }

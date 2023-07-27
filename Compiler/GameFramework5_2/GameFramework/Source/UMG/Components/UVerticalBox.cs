@@ -5,5 +5,5 @@ using CSharpToCpp.Utilities;
 ///<summary>A vertical box widget is a layout panel allowing child widgets to be automatically laid out</summary>
 public partial class UVerticalBox : UPanelWidget {
 // VerticalBox
-	public UObject AddChildToVerticalBox(UObject Content) { return default; }
+	public  UVerticalBoxSlot AddChildToVerticalBox(UWidget Content) { return default; }
 }

@@ -8,5 +8,5 @@ public partial class AScriptTestActor : AActor {
 	public string TestString;
 	public float TestValue;
 	public bool TestBool;
-	public float TestFunction(float InValue,float InFactor,bool bMultiply) { return default; }
+	public  float TestFunction(float InValue,float InFactor,bool bMultiply) { return default; }
 }

@@ -4,7 +4,7 @@ using CSharpToCpp.Utilities;
 [CppInclude("BaseGizmos/GizmoInterfaces.h")]
 public partial class UGizmoClickMultiTarget : UInterface {
 // GizmoClickMultiTarget
-	public void UpdateHoverState(bool bHovering,uint InPartIdentifier) {}
-	public void UpdateInteractingState(bool bInteracting,uint InPartIdentifier) {}
-	public void UpdateHittableState(bool bHittable,uint InPartIdentifier) {}
+	public  void UpdateHoverState(bool bHovering,uint InPartIdentifier) {}
+	public  void UpdateInteractingState(bool bInteracting,uint InPartIdentifier) {}
+	public  void UpdateHittableState(bool bHittable,uint InPartIdentifier) {}
 }

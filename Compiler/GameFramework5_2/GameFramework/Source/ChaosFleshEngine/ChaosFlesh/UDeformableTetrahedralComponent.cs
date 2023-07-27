@@ -5,8 +5,8 @@ using CSharpToCpp.Utilities;
 ///<summary>UDeformableTetrahedralComponent</summary>
 public partial class UDeformableTetrahedralComponent : UDeformablePhysicsComponent {
 // DeformableTetrahedralComponent
-	public TArray<FVector> GetSkeletalMeshBindingPositions(UObject InSkeletalMesh) { return default; }
-	public TArray<FVector> GetSkeletalMeshEmbeddedPositions(ChaosDeformableBindingOption Format,FTransform TargetDeformationSkeletonOffset,string TargetBone/*=""*/,float SimulationBlendWeight/*=1.0f*/) { return default; }
+	public  TArray<FVector> GetSkeletalMeshBindingPositions(USkeletalMesh InSkeletalMesh) { return default; }
+	public  TArray<FVector> GetSkeletalMeshEmbeddedPositions(ChaosDeformableBindingOption Format,FTransform TargetDeformationSkeletonOffset,string TargetBone/*=""*/,float SimulationBlendWeight/*=1.0f*/) { return default; }
 	public FFleshSimulationSpaceGroup SimulationSpace;
 	public FBodyForcesGroup BodyForces;
 	public float MassMultiplier;
@@ -14,5 +14,5 @@ public partial class UDeformableTetrahedralComponent : UDeformablePhysicsCompone
 	public UFleshAsset RestCollection;
 	public UFleshDynamicAsset DynamicCollection;
 	public USimulationAsset SimulationCollection;
-	public TArray<string> GetSimSpaceBoneNameOptions() { return default; }
+	public  TArray<string> GetSimSpaceBoneNameOptions() { return default; }
 }

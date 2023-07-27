@@ -10,7 +10,7 @@ public partial class UWrapBox : UPanelWidget {
 	public bool bExplicitWrapSize;
 	public byte HorizontalAlignment;
 	public byte Orientation;
-	public void SetInnerSlotPadding(FVector2D InPadding) {}
-	public void SetHorizontalAlignment(EHorizontalAlignment InHorizontalAlignment) {}
-	public UObject AddChildToWrapBox(UObject Content) { return default; }
+	public  void SetInnerSlotPadding(FVector2D InPadding) {}
+	public  void SetHorizontalAlignment(EHorizontalAlignment InHorizontalAlignment) {}
+	public  UWrapBoxSlot AddChildToWrapBox(UWidget Content) { return default; }
 }

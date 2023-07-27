@@ -8,16 +8,16 @@ public partial class UAIPerceptionComponent : UActorComponent {
 	public TArray<UAISenseConfig> SensesConfig;
 	public UClass DominantSense;
 	public AAIController AIOwner;
-	public void OnOwnerEndPlay(UObject Actor,EEndPlayReason EndPlayReason) {}
-	public void RequestStimuliListenerUpdate() {}
-	public void ForgetAll() {}
-	public void GetPerceivedHostileActors(TArray<UObject> OutActors) {}
-	public void GetPerceivedHostileActorsBySense(UClass SenseToUse,TArray<UObject> OutActors) {}
-	public void GetCurrentlyPerceivedActors(UClass SenseToUse,TArray<UObject> OutActors) {}
-	public void GetKnownPerceivedActors(UClass SenseToUse,TArray<UObject> OutActors) {}
-	public void GetPerceivedActors(UClass SenseToUse,TArray<UObject> OutActors) {}
-	public bool GetActorsPerception(UObject Actor,FActorPerceptionBlueprintInfo Info) { return default; }
-	public void SetSenseEnabled(UClass SenseClass,bool bEnable) {}
+	public  void OnOwnerEndPlay(AActor Actor,EEndPlayReason EndPlayReason) {}
+	public  void RequestStimuliListenerUpdate() {}
+	public  void ForgetAll() {}
+	public  void GetPerceivedHostileActors(TArray<AActor> OutActors) {}
+	public  void GetPerceivedHostileActorsBySense(UClass SenseToUse,TArray<AActor> OutActors) {}
+	public  void GetCurrentlyPerceivedActors(UClass SenseToUse,TArray<AActor> OutActors) {}
+	public  void GetKnownPerceivedActors(UClass SenseToUse,TArray<AActor> OutActors) {}
+	public  void GetPerceivedActors(UClass SenseToUse,TArray<AActor> OutActors) {}
+	public  bool GetActorsPerception(AActor Actor,FActorPerceptionBlueprintInfo Info) { return default; }
+	public  void SetSenseEnabled(UClass SenseClass,bool bEnable) {}
 	public FPerceptionUpdatedDelegate OnPerceptionUpdated;
 	public FActorPerceptionForgetUpdatedDelegate OnTargetPerceptionForgotten;
 	public FActorPerceptionUpdatedDelegate OnTargetPerceptionUpdated;

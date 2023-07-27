@@ -4,8 +4,8 @@ using CSharpToCpp.Utilities;
 [CppInclude("AI/AITask_UseGameplayInteraction.h")]
 public partial class UAITask_UseGameplayInteraction : UAITask {
 // AITask_UseGameplayInteraction
-	public UObject UseClaimedGameplayInteractionSmartObject(UObject Controller,FSmartObjectClaimHandle ClaimHandle,bool bLockAILogic/*=true*/) { return default; }
-	public void RequestAbort() {}
+	public static UAITask_UseGameplayInteraction UseClaimedGameplayInteractionSmartObject(AAIController Controller,FSmartObjectClaimHandle ClaimHandle,bool bLockAILogic/*=true*/) { return default; }
+	public  void RequestAbort() {}
 	public FGenericGameplayTaskDelegate OnFinished;
 	public FGameplayInteractionContext GameplayInteractionContext;
 	public FSmartObjectClaimHandle ClaimedHandle;

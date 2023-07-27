@@ -11,10 +11,10 @@ public partial class UWrapBoxSlot : UPanelSlot {
 	public byte VerticalAlignment;
 	public bool bFillEmptySpace;
 	public bool bForceNewLine;
-	public void SetPadding(FMargin InPadding) {}
-	public void SetFillEmptySpace(bool InbFillEmptySpace) {}
-	public void SetFillSpanWhenLessThan(float InFillSpanWhenLessThan) {}
-	public void SetHorizontalAlignment(EHorizontalAlignment InHorizontalAlignment) {}
-	public void SetVerticalAlignment(EVerticalAlignment InVerticalAlignment) {}
-	public void SetNewLine(bool InForceNewLine) {}
+	public  void SetPadding(FMargin InPadding) {}
+	public  void SetFillEmptySpace(bool InbFillEmptySpace) {}
+	public  void SetFillSpanWhenLessThan(float InFillSpanWhenLessThan) {}
+	public  void SetHorizontalAlignment(EHorizontalAlignment InHorizontalAlignment) {}
+	public  void SetVerticalAlignment(EVerticalAlignment InVerticalAlignment) {}
+	public  void SetNewLine(bool InForceNewLine) {}
 }

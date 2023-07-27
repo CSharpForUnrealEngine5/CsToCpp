@@ -4,4 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("Components/ScrollBox.h")]
 public partial struct FOnUserScrolledEvent {
 // OnUserScrolledEvent__DelegateSignature
+	void AddDynamic(object obj, string functionName) {}
 }

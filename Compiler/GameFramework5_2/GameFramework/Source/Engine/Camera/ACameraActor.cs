@@ -8,7 +8,7 @@ public partial class ACameraActor : AActor {
 	public byte AutoActivateForPlayer;
 	public UCameraComponent CameraComponent;
 	public USceneComponent SceneComponent;
-	public int GetAutoActivatePlayerIndex() { return default; }
+	public  int GetAutoActivatePlayerIndex() { return default; }
 	public bool bConstrainAspectRatio_DEPRECATED;
 	public float AspectRatio_DEPRECATED;
 	public float FOVAngle_DEPRECATED;

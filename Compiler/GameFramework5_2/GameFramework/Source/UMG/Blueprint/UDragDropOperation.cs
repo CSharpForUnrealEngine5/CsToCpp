@@ -13,7 +13,7 @@ public partial class UDragDropOperation : UObject {
 	public FOnDragDropMulticast OnDrop;
 	public FOnDragDropMulticast OnDragCancelled;
 	public FOnDragDropMulticast OnDragged;
-	public void Drop(FPointerEvent PointerEvent) {}
-	public void DragCancelled(FPointerEvent PointerEvent) {}
-	public void Dragged(FPointerEvent PointerEvent) {}
+	public  void Drop(FPointerEvent PointerEvent) {}
+	public  void DragCancelled(FPointerEvent PointerEvent) {}
+	public  void Dragged(FPointerEvent PointerEvent) {}
 }

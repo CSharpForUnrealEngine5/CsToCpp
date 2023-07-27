@@ -4,4 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("Library/DMXEntityFixturePatch.h")]
 public partial struct FDMXOnFixturePatchReceivedDMXDelegate {
 // DMXOnFixturePatchReceivedDMXDelegate__DelegateSignature
+	void AddDynamic(object obj, string functionName) {}
 }

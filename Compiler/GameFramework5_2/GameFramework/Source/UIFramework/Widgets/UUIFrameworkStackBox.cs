@@ -5,8 +5,8 @@ using CSharpToCpp.Utilities;
 public partial class UUIFrameworkStackBox : UUIFrameworkWidget {
 // UIFrameworkStackBox
 	public byte Orientation;
-	public void AddWidget(FUIFrameworkStackBoxSlot Widget) {}
-	public void RemoveWidget(UObject Widget) {}
-	public void OnRep_Orientation() {}
+	public  void AddWidget(FUIFrameworkStackBoxSlot Widget) {}
+	public  void RemoveWidget(UUIFrameworkWidget Widget) {}
+	public  void OnRep_Orientation() {}
 	public FUIFrameworkStackBoxSlotList ReplicatedSlotList;
 }

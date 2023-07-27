@@ -6,9 +6,9 @@ using CSharpToCpp.Utilities;
 public partial class UDMXFixtureComponentSingle : UDMXFixtureComponent {
 // DMXFixtureComponentSingle
 	public FDMXChannelData DMXChannel;
-	public float GetDMXInterpolatedStep() { return default; }
-	public float GetDMXInterpolatedValue() { return default; }
-	public float GetDMXTargetValue() { return default; }
-	public bool IsDMXInterpolationDone() { return default; }
-	public void SetValueNoInterp(float NewValue) {}
+	public  float GetDMXInterpolatedStep() { return default; }
+	public  float GetDMXInterpolatedValue() { return default; }
+	public  float GetDMXTargetValue() { return default; }
+	public  bool IsDMXInterpolationDone() { return default; }
+	public  void SetValueNoInterp(float NewValue) {}
 }

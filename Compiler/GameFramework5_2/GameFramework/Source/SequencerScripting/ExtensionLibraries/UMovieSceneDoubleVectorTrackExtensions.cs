@@ -5,6 +5,6 @@ using CSharpToCpp.Utilities;
 ///<summary>Function library containing methods that should be hoisted onto UMovieSceneDoubleVectorTrack for scripting</summary>
 public partial class UMovieSceneDoubleVectorTrackExtensions : UBlueprintFunctionLibrary {
 // MovieSceneDoubleVectorTrackExtensions
-	public void SetNumChannelsUsed(UObject Track,int InNumChannelsUsed) {}
-	public int GetNumChannelsUsed(UObject Track) { return default; }
+	public static void SetNumChannelsUsed(UMovieSceneDoubleVectorTrack Track,int InNumChannelsUsed) {}
+	public static int GetNumChannelsUsed(UMovieSceneDoubleVectorTrack Track) { return default; }
 }

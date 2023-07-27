@@ -5,8 +5,8 @@ using CSharpToCpp.Utilities;
 ///<summary>Base class for all factories</summary>
 public partial class UFactory : UObject {
 // Factory
-	public bool ScriptFactoryCanImport(string Filename) { return default; }
-	public bool ScriptFactoryCreateFile(UObject InTask) { return default; }
+	public  bool ScriptFactoryCanImport(string Filename) { return default; }
+	public  bool ScriptFactoryCreateFile(UAssetImportTask InTask) { return default; }
 	public bool bCreateNew;
 	public UClass SupportedClass;
 	public UClass ContextClass;

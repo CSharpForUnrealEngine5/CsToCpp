@@ -16,5 +16,5 @@ public partial class UCommonInputBaseControllerData : UObject {
 	public TSoftObjectPtr<UTexture2D> ControllerButtonMaskTexture;
 	public TArray<FCommonInputKeyBrushConfiguration> InputBrushDataMap;
 	public TArray<FCommonInputKeySetBrushConfiguration> InputBrushKeySets;
-	public TArray<string> GetRegisteredGamepads() { return default; }
+	public static TArray<string> GetRegisteredGamepads() { return default; }
 }

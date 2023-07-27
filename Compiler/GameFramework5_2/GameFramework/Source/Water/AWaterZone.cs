@@ -5,7 +5,7 @@ using CSharpToCpp.Utilities;
 public partial class AWaterZone : AActor {
 // WaterZone
 	public UTextureRenderTarget2D WaterInfoTexture;
-	public void ForceUpdateWaterInfoTexture() {}
+	public  void ForceUpdateWaterInfoTexture() {}
 	public TArray<TWeakObjectPtr<UWaterBodyComponent>> OwnedWaterBodies;
 	public FIntPoint RenderTargetResolution;
 	public UWaterMeshComponent WaterMesh;

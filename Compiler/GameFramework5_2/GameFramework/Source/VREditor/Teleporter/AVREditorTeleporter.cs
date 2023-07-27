@@ -5,20 +5,20 @@ using CSharpToCpp.Utilities;
 ///<summary>VR Editor teleport manager and the visual representation of the teleport</summary>
 public partial class AVREditorTeleporter : AActor {
 // VREditorTeleporter
-	public void Init(UObject InMode) {}
-	public void Shutdown() {}
-	public bool IsAiming() { return default; }
-	public bool IsTeleporting() { return default; }
-	public UObject GetVRMode() { return default; }
-	public void StartTeleport() {}
-	public void TeleportDone() {}
-	public void SetVisibility(bool bVisible) {}
-	public void SetColor(FLinearColor Color) {}
-	public float GetSlideDelta(UObject Interactor,bool Axis) { return default; }
-	public void StartAiming(UObject Interactor) {}
-	public void StopAiming() {}
-	public void DoTeleport() {}
-	public UObject GetInteractorTryingTeleport() { return default; }
+	public  void Init(UVREditorMode InMode) {}
+	public  void Shutdown() {}
+	public  bool IsAiming() { return default; }
+	public  bool IsTeleporting() { return default; }
+	public  UVREditorMode GetVRMode() { return default; }
+	public  void StartTeleport() {}
+	public  void TeleportDone() {}
+	public  void SetVisibility(bool bVisible) {}
+	public  void SetColor(FLinearColor Color) {}
+	public  float GetSlideDelta(UVREditorInteractor Interactor,bool Axis) { return default; }
+	public  void StartAiming(UViewportInteractor Interactor) {}
+	public  void StopAiming() {}
+	public  void DoTeleport() {}
+	public  UViewportInteractor GetInteractorTryingTeleport() { return default; }
 	public UVREditorMode VRMode;
 	public UStaticMeshComponent TeleportDirectionMeshComponent;
 	public UStaticMeshComponent HMDMeshComponent;

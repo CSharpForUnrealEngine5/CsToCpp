@@ -21,19 +21,19 @@ public partial class UAudioRadialSlider : UWidget {
 	public float SliderThickness;
 	public FVector2D OutputRange;
 	public FOnAudioRadialSliderValueChangedEvent OnValueChanged;
-	public float GetOutputValue(float InSliderValue) { return default; }
-	public float GetSliderValue(float OutputValue) { return default; }
-	public void SetWidgetLayout(EAudioRadialSliderLayout InLayout) {}
-	public void SetCenterBackgroundColor(FLinearColor InValue) {}
-	public void SetSliderProgressColor(FLinearColor InValue) {}
-	public void SetSliderBarColor(FLinearColor InValue) {}
-	public void SetHandStartEndRatio(FVector2D InHandStartEndRatio) {}
-	public void SetTextLabelBackgroundColor(FSlateColor InColor) {}
-	public void SetUnitsText(string Units) {}
-	public void SetUnitsTextReadOnly(bool bIsReadOnly) {}
-	public void SetValueTextReadOnly(bool bIsReadOnly) {}
-	public void SetShowLabelOnlyOnHover(bool bShowLabelOnlyOnHover) {}
-	public void SetShowUnitsText(bool bShowUnitsText) {}
-	public void SetSliderThickness(float InThickness) {}
-	public void SetOutputRange(FVector2D InOutputRange) {}
+	public  float GetOutputValue(float InSliderValue) { return default; }
+	public  float GetSliderValue(float OutputValue) { return default; }
+	public  void SetWidgetLayout(EAudioRadialSliderLayout InLayout) {}
+	public  void SetCenterBackgroundColor(FLinearColor InValue) {}
+	public  void SetSliderProgressColor(FLinearColor InValue) {}
+	public  void SetSliderBarColor(FLinearColor InValue) {}
+	public  void SetHandStartEndRatio(FVector2D InHandStartEndRatio) {}
+	public  void SetTextLabelBackgroundColor(FSlateColor InColor) {}
+	public  void SetUnitsText(string Units) {}
+	public  void SetUnitsTextReadOnly(bool bIsReadOnly) {}
+	public  void SetValueTextReadOnly(bool bIsReadOnly) {}
+	public  void SetShowLabelOnlyOnHover(bool bShowLabelOnlyOnHover) {}
+	public  void SetShowUnitsText(bool bShowUnitsText) {}
+	public  void SetSliderThickness(float InThickness) {}
+	public  void SetOutputRange(FVector2D InOutputRange) {}
 }

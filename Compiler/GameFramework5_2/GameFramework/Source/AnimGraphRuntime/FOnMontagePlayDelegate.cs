@@ -4,4 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("PlayMontageCallbackProxy.h")]
 public partial struct FOnMontagePlayDelegate {
 // OnMontagePlayDelegate__DelegateSignature
+	void AddDynamic(object obj, string functionName) {}
 }

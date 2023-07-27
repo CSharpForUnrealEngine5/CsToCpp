@@ -4,4 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("ThrottleStateMotorSimComponent.h")]
 public partial struct FOnThrottleChanged {
 // OnThrottleChanged__DelegateSignature
+	void AddDynamic(object obj, string functionName) {}
 }

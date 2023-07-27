@@ -5,13 +5,13 @@ using CSharpToCpp.Utilities;
 ///<summary>Represents the interactor in the world</summary>
 public partial class UVRScoutingInteractor : UVREditorInteractor {
 // VRScoutingInteractor
-	public void SetGizmoMode(EGizmoHandleTypes InGizmoMode) {}
-	public EGizmoHandleTypes GetGizmoMode() { return default; }
-	public TArray<UObject> GetSelectedActors() { return default; }
+	public  void SetGizmoMode(EGizmoHandleTypes InGizmoMode) {}
+	public  EGizmoHandleTypes GetGizmoMode() { return default; }
+	public static TArray<AActor> GetSelectedActors() { return default; }
 	public UStaticMeshComponent FlyingIndicatorComponent;
-	public UObject GetInputComponent() { return default; }
-	public void SetReceivesEditorInput(bool bInValue) {}
-	public bool GetReceivesEditorInput() { return default; }
+	public  UInputComponent GetInputComponent() { return default; }
+	public  void SetReceivesEditorInput(bool bInValue) {}
+	public  bool GetReceivesEditorInput() { return default; }
 	public UInputComponent EditorOnlyInputComponent;
 	public bool bReceivesEditorInput;
 }

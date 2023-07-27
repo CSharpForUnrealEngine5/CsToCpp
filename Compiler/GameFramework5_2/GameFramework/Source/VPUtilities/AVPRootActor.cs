@@ -11,7 +11,7 @@ public partial class AVPRootActor : AActor {
 	public UBillboardComponent SpriteComponent;
 	public UArrowComponent ArrowComponent;
 	public bool bMoveLevelWithActor;
-	public UObject GetCineCameraActor() { return default; }
-	public void ToggleComponentsVisibility() {}
-	public void MoveLevelToRootActor() {}
+	public  ACineCameraActor GetCineCameraActor() { return default; }
+	public  void ToggleComponentsVisibility() {}
+	public  void MoveLevelToRootActor() {}
 }

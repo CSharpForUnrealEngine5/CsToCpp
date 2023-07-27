@@ -4,5 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("UserToolBoxBaseBlueprint.h")]
 public partial class UUserToolBoxBaseBlueprint : UUTBBaseCommand {
 // UserToolBoxBaseBlueprint
-	public void Command() {}
+	public  void Command() {}
 }

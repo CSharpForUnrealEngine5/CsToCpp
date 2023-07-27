@@ -4,4 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("Systems/MovieScenePredictionSystem.h")]
 public partial struct FMovieSceneActorPredictionFailure {
 // MovieSceneActorPredictionFailure__DelegateSignature
+	void AddDynamic(object obj, string functionName) {}
 }

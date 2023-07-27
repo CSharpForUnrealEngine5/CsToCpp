@@ -4,4 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("MassSpawner.h")]
 public partial struct FMassSpawnerOnDespawningFinishedEvent {
 // MassSpawnerOnDespawningFinishedEvent__DelegateSignature
+	void AddDynamic(object obj, string functionName) {}
 }

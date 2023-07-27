@@ -8,7 +8,7 @@ public partial class UPawnNoiseEmitterComponent : UActorComponent {
 	public bool bAIPerceptionSystemCompatibilityMode;
 	public FVector LastRemoteNoisePosition;
 	public float NoiseLifetime;
-	public void MakeNoise(UObject NoiseMaker,float Loudness,FVector NoiseLocation) {}
+	public  void MakeNoise(AActor NoiseMaker,float Loudness,FVector NoiseLocation) {}
 	public float LastRemoteNoiseVolume;
 	public float LastRemoteNoiseTime;
 	public float LastLocalNoiseVolume;

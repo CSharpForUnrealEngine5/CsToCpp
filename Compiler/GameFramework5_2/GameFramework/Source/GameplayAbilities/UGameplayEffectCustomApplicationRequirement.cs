@@ -5,5 +5,5 @@ using CSharpToCpp.Utilities;
 ///<summary>Class used to perform custom gameplay effect modifier calculations, either via blueprint or native code</summary>
 public partial class UGameplayEffectCustomApplicationRequirement : UObject {
 // GameplayEffectCustomApplicationRequirement
-	public bool CanApplyGameplayEffect(UObject GameplayEffect,FGameplayEffectSpec Spec,UObject ASC) { return default; }
+	public  bool CanApplyGameplayEffect(UGameplayEffect GameplayEffect,FGameplayEffectSpec Spec,UAbilitySystemComponent ASC) { return default; }
 }

@@ -4,4 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("Components/StateTreeComponent.h")]
 public partial struct FStateTreeRunStatusChanged {
 // StateTreeRunStatusChanged__DelegateSignature
+	void AddDynamic(object obj, string functionName) {}
 }

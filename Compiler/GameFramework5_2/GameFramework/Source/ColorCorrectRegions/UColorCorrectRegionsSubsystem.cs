@@ -5,5 +5,5 @@ using CSharpToCpp.Utilities;
 ///<summary>World Subsystem responsible for managing AColorCorrectRegion classes in level.</summary>
 public partial class UColorCorrectRegionsSubsystem : UWorldSubsystem {
 // ColorCorrectRegionsSubsystem
-	public void RefreshStenciIdAssignmentForAllCCR() {}
+	public  void RefreshStenciIdAssignmentForAllCCR() {}
 }

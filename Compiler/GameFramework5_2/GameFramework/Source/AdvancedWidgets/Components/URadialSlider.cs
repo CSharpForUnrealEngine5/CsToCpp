@@ -33,24 +33,24 @@ public partial class URadialSlider : UWidget {
 	public FOnControllerCaptureBeginEvent OnControllerCaptureBegin;
 	public FOnControllerCaptureEndEvent OnControllerCaptureEnd;
 	public FOnFloatValueChangedEvent OnValueChanged;
-	public float GetValue() { return default; }
-	public float GetCustomDefaultValue() { return default; }
-	public float GetNormalizedSliderHandlePosition() { return default; }
-	public void SetValue(float InValue) {}
-	public void SetCustomDefaultValue(float InValue) {}
-	public void SetSliderRange(FRuntimeFloatCurve InSliderRange) {}
-	public void SetValueTags(TArray<float> InValueTags) {}
-	public void SetSliderHandleStartAngle(float InValue) {}
-	public void SetSliderHandleEndAngle(float InValue) {}
-	public void SetAngularOffset(float InValue) {}
-	public void SetHandStartEndRatio(FVector2D InValue) {}
-	public void SetLocked(bool InValue) {}
-	public void SetStepSize(float InValue) {}
-	public void SetSliderBarColor(FLinearColor InValue) {}
-	public void SetSliderProgressColor(FLinearColor InValue) {}
-	public void SetSliderHandleColor(FLinearColor InValue) {}
-	public void SetCenterBackgroundColor(FLinearColor InValue) {}
-	public void SetUseVerticalDrag(bool InUseVerticalDrag) {}
-	public void SetShowSliderHandle(bool InShowSliderHandle) {}
-	public void SetShowSliderHand(bool InShowSliderHand) {}
+	public  float GetValue() { return default; }
+	public  float GetCustomDefaultValue() { return default; }
+	public  float GetNormalizedSliderHandlePosition() { return default; }
+	public  void SetValue(float InValue) {}
+	public  void SetCustomDefaultValue(float InValue) {}
+	public  void SetSliderRange(FRuntimeFloatCurve InSliderRange) {}
+	public  void SetValueTags(TArray<float> InValueTags) {}
+	public  void SetSliderHandleStartAngle(float InValue) {}
+	public  void SetSliderHandleEndAngle(float InValue) {}
+	public  void SetAngularOffset(float InValue) {}
+	public  void SetHandStartEndRatio(FVector2D InValue) {}
+	public  void SetLocked(bool InValue) {}
+	public  void SetStepSize(float InValue) {}
+	public  void SetSliderBarColor(FLinearColor InValue) {}
+	public  void SetSliderProgressColor(FLinearColor InValue) {}
+	public  void SetSliderHandleColor(FLinearColor InValue) {}
+	public  void SetCenterBackgroundColor(FLinearColor InValue) {}
+	public  void SetUseVerticalDrag(bool InUseVerticalDrag) {}
+	public  void SetShowSliderHandle(bool InShowSliderHandle) {}
+	public  void SetShowSliderHand(bool InShowSliderHand) {}
 }

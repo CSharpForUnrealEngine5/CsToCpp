@@ -4,8 +4,8 @@ using CSharpToCpp.Utilities;
 [CppInclude("SourceEffects/SourceEffectConvolutionReverb.h")]
 public partial class USourceEffectConvolutionReverbPreset : USoundEffectSourcePreset {
 // SourceEffectConvolutionReverbPreset
-	public void SetSettings(FSourceEffectConvolutionReverbSettings InSettings) {}
-	public void SetImpulseResponse(UObject InImpulseResponse) {}
+	public  void SetSettings(FSourceEffectConvolutionReverbSettings InSettings) {}
+	public  void SetImpulseResponse(UAudioImpulseResponse InImpulseResponse) {}
 	public UAudioImpulseResponse ImpulseResponse;
 	public FSourceEffectConvolutionReverbSettings Settings;
 	public ESubmixEffectConvolutionReverbBlockSize BlockSize;

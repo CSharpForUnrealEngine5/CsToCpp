@@ -4,8 +4,8 @@ using CSharpToCpp.Utilities;
 [CppInclude("Elements/PCGExecuteBlueprint.h")]
 public partial class UPCGBlueprintSettings : UPCGSettings {
 // PCGBlueprintSettings
-	public void SetElementType(UClass InElementType,UObject ElementInstance) {}
-	public UClass GetElementType() { return default; }
+	public  void SetElementType(UClass InElementType,UPCGBlueprintElement ElementInstance) {}
+	public  UClass GetElementType() { return default; }
 	public UClass BlueprintElement_DEPRECATED;
 	public UClass BlueprintElementType;
 	public UPCGBlueprintElement BlueprintElementInstance;

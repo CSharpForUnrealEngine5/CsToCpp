@@ -4,19 +4,19 @@ using CSharpToCpp.Utilities;
 [CppInclude("Retargeter/IKRetargeter.h")]
 public partial class UIKRetargeter : UObject {
 // IKRetargeter
-	public FTargetChainSettings GetChainUsingGoalFromRetargetAsset(UObject RetargetAsset,string IKGoalName) { return default; }
-	public FTargetChainSettings GetChainSettingsFromRetargetAsset(UObject RetargetAsset,string TargetChainName,string OptionalProfileName) { return default; }
-	public FTargetChainSettings GetChainSettingsFromRetargetProfile(FRetargetProfile RetargetProfile,string TargetChainName) { return default; }
-	public void GetRootSettingsFromRetargetAsset(UObject RetargetAsset,string OptionalProfileName,FTargetRootSettings OutSettings) {}
-	public FTargetRootSettings GetRootSettingsFromRetargetProfile(FRetargetProfile RetargetProfile) { return default; }
-	public void GetGlobalSettingsFromRetargetAsset(UObject RetargetAsset,string OptionalProfileName,FRetargetGlobalSettings OutSettings) {}
-	public FRetargetGlobalSettings GetGlobalSettingsFromRetargetProfile(FRetargetProfile RetargetProfile) { return default; }
-	public void SetGlobalSettingsInRetargetProfile(FRetargetProfile RetargetProfile,FRetargetGlobalSettings GlobalSettings) {}
-	public void SetRootSettingsInRetargetProfile(FRetargetProfile RetargetProfile,FTargetRootSettings RootSettings) {}
-	public void SetChainSettingsInRetargetProfile(FRetargetProfile RetargetProfile,FTargetChainSettings ChainSettings,string TargetChainName) {}
-	public void SetChainFKSettingsInRetargetProfile(FRetargetProfile RetargetProfile,FTargetChainFKSettings FKSettings,string TargetChainName) {}
-	public void SetChainIKSettingsInRetargetProfile(FRetargetProfile RetargetProfile,FTargetChainIKSettings IKSettings,string TargetChainName) {}
-	public void SetChainSpeedPlantSettingsInRetargetProfile(FRetargetProfile RetargetProfile,FTargetChainSpeedPlantSettings SpeedPlantSettings,string TargetChainName) {}
+	public static FTargetChainSettings GetChainUsingGoalFromRetargetAsset(UIKRetargeter RetargetAsset,string IKGoalName) { return default; }
+	public static FTargetChainSettings GetChainSettingsFromRetargetAsset(UIKRetargeter RetargetAsset,string TargetChainName,string OptionalProfileName) { return default; }
+	public static FTargetChainSettings GetChainSettingsFromRetargetProfile(FRetargetProfile RetargetProfile,string TargetChainName) { return default; }
+	public static void GetRootSettingsFromRetargetAsset(UIKRetargeter RetargetAsset,string OptionalProfileName,FTargetRootSettings OutSettings) {}
+	public static FTargetRootSettings GetRootSettingsFromRetargetProfile(FRetargetProfile RetargetProfile) { return default; }
+	public static void GetGlobalSettingsFromRetargetAsset(UIKRetargeter RetargetAsset,string OptionalProfileName,FRetargetGlobalSettings OutSettings) {}
+	public static FRetargetGlobalSettings GetGlobalSettingsFromRetargetProfile(FRetargetProfile RetargetProfile) { return default; }
+	public static void SetGlobalSettingsInRetargetProfile(FRetargetProfile RetargetProfile,FRetargetGlobalSettings GlobalSettings) {}
+	public static void SetRootSettingsInRetargetProfile(FRetargetProfile RetargetProfile,FTargetRootSettings RootSettings) {}
+	public static void SetChainSettingsInRetargetProfile(FRetargetProfile RetargetProfile,FTargetChainSettings ChainSettings,string TargetChainName) {}
+	public static void SetChainFKSettingsInRetargetProfile(FRetargetProfile RetargetProfile,FTargetChainFKSettings FKSettings,string TargetChainName) {}
+	public static void SetChainIKSettingsInRetargetProfile(FRetargetProfile RetargetProfile,FTargetChainIKSettings IKSettings,string TargetChainName) {}
+	public static void SetChainSpeedPlantSettingsInRetargetProfile(FRetargetProfile RetargetProfile,FTargetChainSpeedPlantSettings SpeedPlantSettings,string TargetChainName) {}
 	public TSoftObjectPtr<UIKRigDefinition> SourceIKRigAsset;
 	public TSoftObjectPtr<USkeletalMesh> SourcePreviewMesh;
 	public TSoftObjectPtr<UIKRigDefinition> TargetIKRigAsset;

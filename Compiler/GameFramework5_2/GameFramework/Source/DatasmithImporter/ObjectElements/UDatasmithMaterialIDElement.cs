@@ -5,5 +5,5 @@ using CSharpToCpp.Utilities;
 ///<summary>UDatasmithMaterialIDElement</summary>
 public partial class UDatasmithMaterialIDElement : UDatasmithObjectElement {
 // DatasmithMaterialIDElement
-	public int GetId() { return default; }
+	public  int GetId() { return default; }
 }

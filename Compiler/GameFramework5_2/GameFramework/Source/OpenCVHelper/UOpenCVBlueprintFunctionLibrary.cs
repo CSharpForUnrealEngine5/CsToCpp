@@ -4,6 +4,6 @@ using CSharpToCpp.Utilities;
 [CppInclude("OpenCVBlueprintFunctionLibrary.h")]
 public partial class UOpenCVBlueprintFunctionLibrary : UBlueprintFunctionLibrary {
 // OpenCVBlueprintFunctionLibrary
-	public int OpenCVChessboardDetectCorners(UObject InRenderTarget,FIntPoint InPatternSize,bool bDebugDrawCorners,UObject OutDebugTexture,TArray<FVector2D> OutDetectedCorners) { return default; }
-	public int OpenCVArucoDetectMarkers(UObject InRenderTarget,EOpenCVArucoDictionary InDictionary,EOpenCVArucoDictionarySize InDictionarySize,bool bDebugDrawMarkers,bool bEstimatePose,float InMarkerLengthInMeters,FOpenCVLensDistortionParametersBase InLensDistortionParameters,UObject OutDebugTexture,TArray<FOpenCVArucoDetectedMarker> OutDetectedMarkers) { return default; }
+	public static int OpenCVChessboardDetectCorners(UTextureRenderTarget2D InRenderTarget,FIntPoint InPatternSize,bool bDebugDrawCorners,UTexture2D OutDebugTexture,TArray<FVector2D> OutDetectedCorners) { return default; }
+	public static int OpenCVArucoDetectMarkers(UTextureRenderTarget2D InRenderTarget,EOpenCVArucoDictionary InDictionary,EOpenCVArucoDictionarySize InDictionarySize,bool bDebugDrawMarkers,bool bEstimatePose,float InMarkerLengthInMeters,FOpenCVLensDistortionParametersBase InLensDistortionParameters,UTexture2D OutDebugTexture,TArray<FOpenCVArucoDetectedMarker> OutDetectedMarkers) { return default; }
 }

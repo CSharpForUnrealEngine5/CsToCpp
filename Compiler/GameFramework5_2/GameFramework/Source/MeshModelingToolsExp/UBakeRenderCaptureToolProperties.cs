@@ -5,7 +5,7 @@ using CSharpToCpp.Utilities;
 public partial class UBakeRenderCaptureToolProperties : UInteractiveToolPropertySet {
 // BakeRenderCaptureToolProperties
 	public string MapPreview;
-	public TArray<string> GetMapPreviewNamesFunc() { return default; }
+	public  TArray<string> GetMapPreviewNamesFunc() { return default; }
 	public TArray<string> MapPreviewNamesList;
 	public EBakeTextureSamplesPerPixel SamplesPerPixel;
 	public EBakeTextureResolution TextureSize;

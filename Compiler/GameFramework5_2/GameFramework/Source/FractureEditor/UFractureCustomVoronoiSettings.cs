@@ -15,8 +15,8 @@ public partial class UFractureCustomVoronoiSettings : UFractureToolSettings {
 	public EDownsamplingMode SkipMode;
 	public TLazyObjectPtr<AStaticMeshActor> ReferenceMesh;
 	public bool bStartAtActor;
-	public void FreezeLiveSites() {}
-	public void ClearFrozenSites() {}
-	public void UnfreezeSites() {}
-	public void RegenerateLiveSites() {}
+	public  void FreezeLiveSites() {}
+	public  void ClearFrozenSites() {}
+	public  void UnfreezeSites() {}
+	public  void RegenerateLiveSites() {}
 }

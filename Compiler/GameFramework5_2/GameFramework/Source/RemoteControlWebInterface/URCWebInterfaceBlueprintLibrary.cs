@@ -4,10 +4,10 @@ using CSharpToCpp.Utilities;
 [CppInclude("RCWebInterfaceLibrary.h")]
 public partial class URCWebInterfaceBlueprintLibrary : UBlueprintFunctionLibrary {
 // RCWebInterfaceBlueprintLibrary
-	public TMap<string,UObject> FindMatchingActorsToRebind(string PresetId,TArray<string> PropertyIds) { return default; }
-	public string GetOwnerActorLabel(string PresetId,TArray<string> PropertyIds) { return default; }
-	public void RebindProperties(string PresetId,TArray<string> PropertyIds,UObject NewOwner) {}
-	public TMap<UObject,string> FindAllActorsOfClass(UClass Class) { return default; }
-	public UObject SpawnActor(UClass Class) { return default; }
-	public TMap<UObject,string> GetValuesOfActorsByClass(UClass Class) { return default; }
+	public static TMap<string,AActor> FindMatchingActorsToRebind(string PresetId,TArray<string> PropertyIds) { return default; }
+	public static string GetOwnerActorLabel(string PresetId,TArray<string> PropertyIds) { return default; }
+	public static void RebindProperties(string PresetId,TArray<string> PropertyIds,AActor NewOwner) {}
+	public static TMap<AActor,string> FindAllActorsOfClass(UClass Class) { return default; }
+	public static AActor SpawnActor(UClass Class) { return default; }
+	public static TMap<AActor,string> GetValuesOfActorsByClass(UClass Class) { return default; }
 }

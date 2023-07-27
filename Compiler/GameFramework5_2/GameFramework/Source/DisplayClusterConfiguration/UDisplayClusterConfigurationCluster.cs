@@ -10,7 +10,7 @@ public partial class UDisplayClusterConfigurationCluster : UDisplayClusterConfig
 	public FDisplayClusterConfigurationFailoverSettings Failover;
 	public TMap<string,UDisplayClusterConfigurationClusterNode> Nodes;
 	public TMap<string,UDisplayClusterConfigurationHostDisplayData> HostDisplayData;
-	public void GetReferencedMeshNames(TArray<string> OutMeshNames) {}
-	public void GetNodeIds(TArray<string> OutNodeIds) {}
-	public UObject GetNode(string NodeId) { return default; }
+	public  void GetReferencedMeshNames(TArray<string> OutMeshNames) {}
+	public  void GetNodeIds(TArray<string> OutNodeIds) {}
+	public  UDisplayClusterConfigurationClusterNode GetNode(string NodeId) { return default; }
 }

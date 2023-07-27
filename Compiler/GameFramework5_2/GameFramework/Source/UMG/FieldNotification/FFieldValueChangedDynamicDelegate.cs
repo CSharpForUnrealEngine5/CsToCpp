@@ -4,4 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("FieldNotification/IFieldValueChanged.h")]
 public partial struct FFieldValueChangedDynamicDelegate {
 // FieldValueChangedDynamicDelegate__DelegateSignature
+	void AddDynamic(object obj, string functionName) {}
 }

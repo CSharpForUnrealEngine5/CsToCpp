@@ -4,26 +4,26 @@ using CSharpToCpp.Utilities;
 [CppInclude("Blueprint/WidgetLayoutLibrary.h")]
 public partial class UWidgetLayoutLibrary : UBlueprintFunctionLibrary {
 // WidgetLayoutLibrary
-	public bool ProjectWorldLocationToWidgetPosition(UObject PlayerController,FVector WorldLocation,FVector2D ScreenPosition,bool bPlayerViewportRelative) { return default; }
-	public float GetViewportScale(UObject WorldContextObject) { return default; }
-	public FVector2D GetViewportSize(UObject WorldContextObject) { return default; }
-	public FGeometry GetViewportWidgetGeometry(UObject WorldContextObject) { return default; }
-	public FGeometry GetPlayerScreenWidgetGeometry(UObject PlayerController) { return default; }
-	public FVector2D GetMousePositionOnPlatform() { return default; }
-	public FVector2D GetMousePositionOnViewport(UObject WorldContextObject) { return default; }
-	public bool GetMousePositionScaledByDPI(UObject Player,float LocationX,float LocationY) { return default; }
-	public UObject SlotAsBorderSlot(UObject Widget) { return default; }
-	public UObject SlotAsCanvasSlot(UObject Widget) { return default; }
-	public UObject SlotAsGridSlot(UObject Widget) { return default; }
-	public UObject SlotAsHorizontalBoxSlot(UObject Widget) { return default; }
-	public UObject SlotAsOverlaySlot(UObject Widget) { return default; }
-	public UObject SlotAsUniformGridSlot(UObject Widget) { return default; }
-	public UObject SlotAsVerticalBoxSlot(UObject Widget) { return default; }
-	public UObject SlotAsScrollBoxSlot(UObject Widget) { return default; }
-	public UObject SlotAsSafeBoxSlot(UObject Widget) { return default; }
-	public UObject SlotAsScaleBoxSlot(UObject Widget) { return default; }
-	public UObject SlotAsSizeBoxSlot(UObject Widget) { return default; }
-	public UObject SlotAsWrapBoxSlot(UObject Widget) { return default; }
-	public UObject SlotAsWidgetSwitcherSlot(UObject Widget) { return default; }
-	public void RemoveAllWidgets(UObject WorldContextObject) {}
+	public static bool ProjectWorldLocationToWidgetPosition(APlayerController PlayerController,FVector WorldLocation,FVector2D ScreenPosition,bool bPlayerViewportRelative) { return default; }
+	public static float GetViewportScale(UObject WorldContextObject) { return default; }
+	public static FVector2D GetViewportSize(UObject WorldContextObject) { return default; }
+	public static FGeometry GetViewportWidgetGeometry(UObject WorldContextObject) { return default; }
+	public static FGeometry GetPlayerScreenWidgetGeometry(APlayerController PlayerController) { return default; }
+	public static FVector2D GetMousePositionOnPlatform() { return default; }
+	public static FVector2D GetMousePositionOnViewport(UObject WorldContextObject) { return default; }
+	public static bool GetMousePositionScaledByDPI(APlayerController Player,float LocationX,float LocationY) { return default; }
+	public static UBorderSlot SlotAsBorderSlot(UWidget Widget) { return default; }
+	public static UCanvasPanelSlot SlotAsCanvasSlot(UWidget Widget) { return default; }
+	public static UGridSlot SlotAsGridSlot(UWidget Widget) { return default; }
+	public static UHorizontalBoxSlot SlotAsHorizontalBoxSlot(UWidget Widget) { return default; }
+	public static UOverlaySlot SlotAsOverlaySlot(UWidget Widget) { return default; }
+	public static UUniformGridSlot SlotAsUniformGridSlot(UWidget Widget) { return default; }
+	public static UVerticalBoxSlot SlotAsVerticalBoxSlot(UWidget Widget) { return default; }
+	public static UScrollBoxSlot SlotAsScrollBoxSlot(UWidget Widget) { return default; }
+	public static USafeZoneSlot SlotAsSafeBoxSlot(UWidget Widget) { return default; }
+	public static UScaleBoxSlot SlotAsScaleBoxSlot(UWidget Widget) { return default; }
+	public static USizeBoxSlot SlotAsSizeBoxSlot(UWidget Widget) { return default; }
+	public static UWrapBoxSlot SlotAsWrapBoxSlot(UWidget Widget) { return default; }
+	public static UWidgetSwitcherSlot SlotAsWidgetSwitcherSlot(UWidget Widget) { return default; }
+	public static void RemoveAllWidgets(UObject WorldContextObject) {}
 }

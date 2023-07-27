@@ -4,4 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("CommonButtonBase.h")]
 public partial struct FCommonButtonBaseClicked {
 // CommonButtonBaseClicked__DelegateSignature
+	void AddDynamic(object obj, string functionName) {}
 }

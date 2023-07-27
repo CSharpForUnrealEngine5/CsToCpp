@@ -4,4 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("Animation/AnimSingleNodeInstance.h")]
 public partial struct FPostEvaluateAnimEvent {
 // PostEvaluateAnimEvent__DelegateSignature
+	void AddDynamic(object obj, string functionName) {}
 }

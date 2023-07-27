@@ -4,6 +4,6 @@ using CSharpToCpp.Utilities;
 [CppInclude("Interfaces/TurnBasedMatchInterface.h")]
 public partial class UTurnBasedMatchInterface : UInterface {
 // TurnBasedMatchInterface
-	public void OnMatchReceivedTurn(string Match,bool bDidBecomeActive) {}
-	public void OnMatchEnded(string Match) {}
+	public  void OnMatchReceivedTurn(string Match,bool bDidBecomeActive) {}
+	public  void OnMatchEnded(string Match) {}
 }

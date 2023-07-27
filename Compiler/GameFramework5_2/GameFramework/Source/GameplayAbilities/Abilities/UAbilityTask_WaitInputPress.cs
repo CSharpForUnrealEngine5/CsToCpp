@@ -6,6 +6,6 @@ using CSharpToCpp.Utilities;
 public partial class UAbilityTask_WaitInputPress : UAbilityTask {
 // AbilityTask_WaitInputPress
 	public FInputPressDelegate OnPress;
-	public void OnPressCallback() {}
-	public UObject WaitInputPress(UObject OwningAbility,bool bTestAlreadyPressed/*=false*/) { return default; }
+	public  void OnPressCallback() {}
+	public static UAbilityTask_WaitInputPress WaitInputPress(UGameplayAbility OwningAbility,bool bTestAlreadyPressed/*=false*/) { return default; }
 }

@@ -12,18 +12,18 @@ public partial class UBTDecorator_BlueprintBase : UBTDecorator {
 	public bool bShowPropertyDetails;
 	public bool bCheckConditionOnlyBlackBoardChanges;
 	public bool bIsObservingBB;
-	public void ReceiveTick(UObject OwnerActor,float DeltaSeconds) {}
-	public void ReceiveExecutionStart(UObject OwnerActor) {}
-	public void ReceiveExecutionFinish(UObject OwnerActor,EBTNodeResult NodeResult) {}
-	public void ReceiveObserverActivated(UObject OwnerActor) {}
-	public void ReceiveObserverDeactivated(UObject OwnerActor) {}
-	public bool PerformConditionCheck(UObject OwnerActor) { return default; }
-	public void ReceiveTickAI(UObject OwnerController,UObject ControlledPawn,float DeltaSeconds) {}
-	public void ReceiveExecutionStartAI(UObject OwnerController,UObject ControlledPawn) {}
-	public void ReceiveExecutionFinishAI(UObject OwnerController,UObject ControlledPawn,EBTNodeResult NodeResult) {}
-	public void ReceiveObserverActivatedAI(UObject OwnerController,UObject ControlledPawn) {}
-	public void ReceiveObserverDeactivatedAI(UObject OwnerController,UObject ControlledPawn) {}
-	public bool PerformConditionCheckAI(UObject OwnerController,UObject ControlledPawn) { return default; }
-	public bool IsDecoratorExecutionActive() { return default; }
-	public bool IsDecoratorObserverActive() { return default; }
+	public  void ReceiveTick(AActor OwnerActor,float DeltaSeconds) {}
+	public  void ReceiveExecutionStart(AActor OwnerActor) {}
+	public  void ReceiveExecutionFinish(AActor OwnerActor,EBTNodeResult NodeResult) {}
+	public  void ReceiveObserverActivated(AActor OwnerActor) {}
+	public  void ReceiveObserverDeactivated(AActor OwnerActor) {}
+	public  bool PerformConditionCheck(AActor OwnerActor) { return default; }
+	public  void ReceiveTickAI(AAIController OwnerController,APawn ControlledPawn,float DeltaSeconds) {}
+	public  void ReceiveExecutionStartAI(AAIController OwnerController,APawn ControlledPawn) {}
+	public  void ReceiveExecutionFinishAI(AAIController OwnerController,APawn ControlledPawn,EBTNodeResult NodeResult) {}
+	public  void ReceiveObserverActivatedAI(AAIController OwnerController,APawn ControlledPawn) {}
+	public  void ReceiveObserverDeactivatedAI(AAIController OwnerController,APawn ControlledPawn) {}
+	public  bool PerformConditionCheckAI(AAIController OwnerController,APawn ControlledPawn) { return default; }
+	public  bool IsDecoratorExecutionActive() { return default; }
+	public  bool IsDecoratorObserverActive() { return default; }
 }

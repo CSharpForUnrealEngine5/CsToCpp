@@ -5,8 +5,8 @@ using CSharpToCpp.Utilities;
 ///<summary>Base component for movement. This essentially has the generic glue for selecting an UpdatedComponent and moving it along the world</summary>
 public partial class UBaseMovementComponent : UNetworkPredictionComponent {
 // BaseMovementComponent
-	public void OnBeginOverlap(UObject OverlappedComp,UObject Other,UObject OtherComp,int OtherBodyIndex,bool bFromSweep,FHitResult SweepResult) {}
-	public void PhysicsVolumeChanged(UObject NewVolume) {}
+	public  void OnBeginOverlap(UPrimitiveComponent OverlappedComp,AActor Other,UPrimitiveComponent OtherComp,int OtherBodyIndex,bool bFromSweep,FHitResult SweepResult) {}
+	public  void PhysicsVolumeChanged(APhysicsVolume NewVolume) {}
 	public USceneComponent UpdatedComponent;
 	public UPrimitiveComponent UpdatedPrimitive;
 }

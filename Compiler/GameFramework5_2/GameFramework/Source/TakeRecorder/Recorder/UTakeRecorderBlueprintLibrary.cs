@@ -4,21 +4,21 @@ using CSharpToCpp.Utilities;
 [CppInclude("Recorder/TakeRecorderBlueprintLibrary.h")]
 public partial class UTakeRecorderBlueprintLibrary : UBlueprintFunctionLibrary {
 // TakeRecorderBlueprintLibrary
-	public bool IsTakeRecorderEnabled() { return default; }
-	public UObject StartRecording(UObject LevelSequence,UObject Sources,UObject MetaData,FTakeRecorderParameters Parameters) { return default; }
-	public FTakeRecorderParameters GetDefaultParameters() { return default; }
-	public void SetDefaultParameters(FTakeRecorderParameters DefaultParameters) {}
-	public bool IsRecording() { return default; }
-	public UObject GetActiveRecorder() { return default; }
-	public void StopRecording() {}
-	public void CancelRecording() {}
-	public UObject GetTakeRecorderPanel() { return default; }
-	public UObject OpenTakeRecorderPanel() { return default; }
-	public void SetOnTakeRecorderPanelChanged(FOnTakeRecorderPanelChanged OnTakeRecorderPanelChanged) {}
-	public void SetOnTakeRecorderPreInitialize(FOnTakeRecorderPreInitialize OnTakeRecorderPreInitialize) {}
-	public void SetOnTakeRecorderStarted(FOnTakeRecorderStarted OnTakeRecorderStarted) {}
-	public void SetOnTakeRecorderStopped(FOnTakeRecorderStopped OnTakeRecorderStopped) {}
-	public void SetOnTakeRecorderFinished(FOnTakeRecorderFinished OnTakeRecorderFinished) {}
-	public void SetOnTakeRecorderCancelled(FOnTakeRecorderCancelled OnTakeRecorderCancelled) {}
-	public void SetOnTakeRecorderMarkedFrameAdded(FOnTakeRecorderMarkedFrameAdded OnTakeRecorderMarkedFrameAdded) {}
+	public static bool IsTakeRecorderEnabled() { return default; }
+	public static UTakeRecorder StartRecording(ULevelSequence LevelSequence,UTakeRecorderSources Sources,UTakeMetaData MetaData,FTakeRecorderParameters Parameters) { return default; }
+	public static FTakeRecorderParameters GetDefaultParameters() { return default; }
+	public static void SetDefaultParameters(FTakeRecorderParameters DefaultParameters) {}
+	public static bool IsRecording() { return default; }
+	public static UTakeRecorder GetActiveRecorder() { return default; }
+	public static void StopRecording() {}
+	public static void CancelRecording() {}
+	public static UTakeRecorderPanel GetTakeRecorderPanel() { return default; }
+	public static UTakeRecorderPanel OpenTakeRecorderPanel() { return default; }
+	public static void SetOnTakeRecorderPanelChanged(FOnTakeRecorderPanelChanged OnTakeRecorderPanelChanged) {}
+	public static void SetOnTakeRecorderPreInitialize(FOnTakeRecorderPreInitialize OnTakeRecorderPreInitialize) {}
+	public static void SetOnTakeRecorderStarted(FOnTakeRecorderStarted OnTakeRecorderStarted) {}
+	public static void SetOnTakeRecorderStopped(FOnTakeRecorderStopped OnTakeRecorderStopped) {}
+	public static void SetOnTakeRecorderFinished(FOnTakeRecorderFinished OnTakeRecorderFinished) {}
+	public static void SetOnTakeRecorderCancelled(FOnTakeRecorderCancelled OnTakeRecorderCancelled) {}
+	public static void SetOnTakeRecorderMarkedFrameAdded(FOnTakeRecorderMarkedFrameAdded OnTakeRecorderMarkedFrameAdded) {}
 }

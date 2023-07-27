@@ -4,4 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("Perception/AIPerceptionComponent.h")]
 public partial struct FActorPerceptionInfoUpdatedDelegate {
 // ActorPerceptionInfoUpdatedDelegate__DelegateSignature
+	void AddDynamic(object obj, string functionName) {}
 }

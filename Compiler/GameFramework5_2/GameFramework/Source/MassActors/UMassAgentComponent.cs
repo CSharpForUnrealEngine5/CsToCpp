@@ -5,10 +5,10 @@ using CSharpToCpp.Utilities;
 ///<summary>There are two primary use cases for this component:</summary>
 public partial class UMassAgentComponent : UActorComponent {
 // MassAgentComponent
-	public void Enable() {}
-	public void Disable() {}
-	public void KillEntity(bool bDestroyActor) {}
-	public void OnRep_NetID() {}
+	public  void Enable() {}
+	public  void Disable() {}
+	public  void KillEntity(bool bDestroyActor) {}
+	public  void OnRep_NetID() {}
 	public FMassEntityConfig EntityConfig;
 	public FMassNetworkID NetID;
 	public bool bAutoRegisterInEditorMode;

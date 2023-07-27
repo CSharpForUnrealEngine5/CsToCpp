@@ -4,4 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("Components/Button.h")]
 public partial struct FOnButtonClickedEvent {
 // OnButtonClickedEvent__DelegateSignature
+	void AddDynamic(object obj, string functionName) {}
 }

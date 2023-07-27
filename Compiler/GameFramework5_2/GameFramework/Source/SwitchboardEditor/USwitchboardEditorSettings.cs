@@ -6,5 +6,5 @@ public partial class USwitchboardEditorSettings : UObject {
 // SwitchboardEditorSettings
 	public FDirectoryPath VirtualEnvironmentPath;
 	public string ListenerCommandlineArguments;
-	public UObject GetSwitchboardEditorSettings() { return default; }
+	public static USwitchboardEditorSettings GetSwitchboardEditorSettings() { return default; }
 }

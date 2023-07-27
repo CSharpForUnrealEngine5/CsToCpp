@@ -12,9 +12,9 @@ public partial class UExpandableArea : UWidget {
 	public FMargin HeaderPadding;
 	public FMargin AreaPadding;
 	public FOnExpandableAreaExpansionChanged OnExpansionChanged;
-	public bool GetIsExpanded() { return default; }
-	public void SetIsExpanded(bool IsExpanded) {}
-	public void SetIsExpanded_Animated(bool IsExpanded) {}
+	public  bool GetIsExpanded() { return default; }
+	public  void SetIsExpanded(bool IsExpanded) {}
+	public  void SetIsExpanded_Animated(bool IsExpanded) {}
 	public UWidget HeaderContent;
 	public UWidget BodyContent;
 }

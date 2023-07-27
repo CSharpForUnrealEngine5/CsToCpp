@@ -4,4 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("DatasmithRuntimeBlueprintLibrary.h")]
 public partial struct FDatasmithRuntimeChangeEvent {
 // DatasmithRuntimeChangeEvent__DelegateSignature
+	void AddDynamic(object obj, string functionName) {}
 }

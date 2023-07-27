@@ -4,6 +4,6 @@ using CSharpToCpp.Utilities;
 [CppInclude("VPCameraBase.h")]
 public partial class AVPCameraBase : ACineCameraActor {
 // VPCameraBase
-	public void ResetPreview() {}
+	public  void ResetPreview() {}
 	public TArray<FGuid> SelectedByUsers;
 }

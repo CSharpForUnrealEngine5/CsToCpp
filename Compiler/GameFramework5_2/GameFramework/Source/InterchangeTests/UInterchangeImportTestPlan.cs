@@ -8,5 +8,5 @@ public partial class UInterchangeImportTestPlan : UObject {
 	public TArray<UInterchangeImportTestStepBase> Steps;
 	public bool bIsEnabledInAutomationTests;
 	public string DisabledTestReason;
-	public void RunThisTest() {}
+	public  void RunThisTest() {}
 }

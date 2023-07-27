@@ -8,5 +8,5 @@ public partial class AStaticMeshActor : AActor {
 	public UStaticMeshComponent StaticMeshComponent;
 	public bool bStaticMeshReplicateMovement;
 	public ENavDataGatheringMode NavigationGeometryGatheringMode;
-	public void SetMobility(EComponentMobility InMobility) {}
+	public  void SetMobility(EComponentMobility InMobility) {}
 }

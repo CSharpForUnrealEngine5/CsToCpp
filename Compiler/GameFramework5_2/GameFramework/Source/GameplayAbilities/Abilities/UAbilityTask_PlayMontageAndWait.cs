@@ -9,10 +9,10 @@ public partial class UAbilityTask_PlayMontageAndWait : UAbilityTask {
 	public FMontageWaitSimpleDelegate OnBlendOut;
 	public FMontageWaitSimpleDelegate OnInterrupted;
 	public FMontageWaitSimpleDelegate OnCancelled;
-	public void OnMontageBlendingOut(UObject Montage,bool bInterrupted) {}
-	public void OnMontageInterrupted() {}
-	public void OnMontageEnded(UObject Montage,bool bInterrupted) {}
-	public UObject CreatePlayMontageAndWaitProxy(UObject OwningAbility,string TaskInstanceName,UObject MontageToPlay,float Rate/*=1.0f*/,string StartSection/*=NAME_None*/,bool bStopWhenAbilityEnds/*=true*/,float AnimRootMotionTranslationScale/*=1.0f*/,float StartTimeSeconds/*=0.0f*/) { return default; }
+	public  void OnMontageBlendingOut(UAnimMontage Montage,bool bInterrupted) {}
+	public  void OnMontageInterrupted() {}
+	public  void OnMontageEnded(UAnimMontage Montage,bool bInterrupted) {}
+	public static UAbilityTask_PlayMontageAndWait CreatePlayMontageAndWaitProxy(UGameplayAbility OwningAbility,string TaskInstanceName,UAnimMontage MontageToPlay,float Rate/*=1.0f*/,string StartSection/*=NAME_None*/,bool bStopWhenAbilityEnds/*=true*/,float AnimRootMotionTranslationScale/*=1.0f*/,float StartTimeSeconds/*=0.0f*/) { return default; }
 	public UAnimMontage MontageToPlay;
 	public float Rate;
 	public string StartSection;

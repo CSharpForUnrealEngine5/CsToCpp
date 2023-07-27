@@ -4,6 +4,6 @@ using CSharpToCpp.Utilities;
 [CppInclude("Camera/CameraLensEffectInterface.h")]
 public partial class UCameraLensEffectInterface : UInterface {
 // CameraLensEffectInterface
-	public TArray<UObject> GetParticleComponents() { return default; }
-	public UObject GetPrimaryParticleComponent() { return default; }
+	public  TArray<UFXSystemComponent> GetParticleComponents() { return default; }
+	public  UFXSystemComponent GetPrimaryParticleComponent() { return default; }
 }

@@ -5,7 +5,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Dynamic checkerboad actor</summary>
 public partial class ACameraCalibrationCheckerboard : AActor {
 // CameraCalibrationCheckerboard
-	public void Rebuild() {}
+	public  void Rebuild() {}
 	public USceneComponent Root;
 	public UCalibrationPointComponent TopLeft;
 	public UCalibrationPointComponent TopRight;

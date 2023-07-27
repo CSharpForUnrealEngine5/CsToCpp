@@ -5,5 +5,5 @@ using CSharpToCpp.Utilities;
 public partial class UAISense_Touch : UAISense {
 // AISense_Touch
 	public TArray<FAITouchEvent> RegisteredEvents;
-	public void ReportTouchEvent(UObject WorldContextObject,UObject TouchReceiver,UObject OtherActor,FVector Location) {}
+	public static void ReportTouchEvent(UObject WorldContextObject,AActor TouchReceiver,AActor OtherActor,FVector Location) {}
 }

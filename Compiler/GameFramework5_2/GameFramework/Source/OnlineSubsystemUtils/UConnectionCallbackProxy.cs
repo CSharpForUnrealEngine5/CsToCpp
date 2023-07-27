@@ -6,5 +6,5 @@ public partial class UConnectionCallbackProxy : UOnlineBlueprintCallProxyBase {
 // ConnectionCallbackProxy
 	public FOnlineConnectionResult OnSuccess;
 	public FOnlineConnectionResult OnFailure;
-	public UObject ConnectToService(UObject WorldContextObject,UObject PlayerController) { return default; }
+	public static UConnectionCallbackProxy ConnectToService(UObject WorldContextObject,APlayerController PlayerController) { return default; }
 }

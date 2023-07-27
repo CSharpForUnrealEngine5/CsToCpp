@@ -4,4 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("GameFramework/Controller.h")]
 public partial struct FInstigatedAnyDamageSignature {
 // InstigatedAnyDamageSignature__DelegateSignature
+	void AddDynamic(object obj, string functionName) {}
 }

@@ -7,5 +7,5 @@ public partial class UNavModifierComponent : UNavRelevantComponent {
 	public UClass AreaClass;
 	public FVector FailsafeExtent;
 	public bool bIncludeAgentHeight;
-	public void SetAreaClass(UClass NewAreaClass) {}
+	public  void SetAreaClass(UClass NewAreaClass) {}
 }

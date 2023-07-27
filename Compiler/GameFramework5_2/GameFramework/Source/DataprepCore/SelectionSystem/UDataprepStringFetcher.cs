@@ -5,5 +5,5 @@ using CSharpToCpp.Utilities;
 ///<summary>The string fetcher is a specialized type of fetcher for the string</summary>
 public partial class UDataprepStringFetcher : UDataprepFetcher {
 // DataprepStringFetcher
-	public string Fetch(UObject Object,bool bOutFetchSucceded) { return default; }
+	public  string Fetch(UObject Object,bool bOutFetchSucceded) { return default; }
 }

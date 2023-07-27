@@ -4,18 +4,18 @@ using CSharpToCpp.Utilities;
 [CppInclude("ARTrackable.h")]
 public partial class UARTrackedGeometry : UObject {
 // ARTrackedGeometry
-	public FTransform GetLocalToWorldTransform() { return default; }
-	public FTransform GetLocalToTrackingTransform() { return default; }
-	public EARTrackingState GetTrackingState() { return default; }
-	public bool IsTracked() { return default; }
-	public string GetDebugName() { return default; }
-	public string GetName() { return default; }
-	public int GetLastUpdateFrameNumber() { return default; }
-	public float GetLastUpdateTimestamp() { return default; }
-	public UObject GetUnderlyingMesh() { return default; }
+	public  FTransform GetLocalToWorldTransform() { return default; }
+	public  FTransform GetLocalToTrackingTransform() { return default; }
+	public  EARTrackingState GetTrackingState() { return default; }
+	public  bool IsTracked() { return default; }
+	public  string GetDebugName() { return default; }
+	public  string GetName() { return default; }
+	public  int GetLastUpdateFrameNumber() { return default; }
+	public  float GetLastUpdateTimestamp() { return default; }
+	public  UMRMeshComponent GetUnderlyingMesh() { return default; }
 	public FGuid UniqueId;
-	public EARObjectClassification GetObjectClassification() { return default; }
-	public bool HasSpatialMeshUsageFlag(EARSpatialMeshUsageFlags InFlag) { return default; }
+	public  EARObjectClassification GetObjectClassification() { return default; }
+	public  bool HasSpatialMeshUsageFlag(EARSpatialMeshUsageFlags InFlag) { return default; }
 	public FTransform LocalToTrackingTransform;
 	public FTransform LocalToAlignedTrackingTransform;
 	public EARTrackingState TrackingState;

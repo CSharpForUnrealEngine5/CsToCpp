@@ -25,18 +25,18 @@ public partial class USkyLightComponent : ULightComponentBase {
 	public float CloudAmbientOcclusionApertureScale;
 	public byte OcclusionCombineMode;
 	public bool bShowIlluminanceMeter;
-	public void SetIntensity(float NewIntensity) {}
-	public void SetIndirectLightingIntensity(float NewIntensity) {}
-	public void SetVolumetricScatteringIntensity(float NewIntensity) {}
-	public void SetLightColor(FLinearColor NewLightColor) {}
-	public void SetCubemap(UObject NewCubemap) {}
-	public void SetSourceCubemapAngle(float NewValue) {}
-	public void SetCubemapBlend(UObject SourceCubemap,UObject DestinationCubemap,float InBlendFraction) {}
-	public void SetLowerHemisphereColor(FLinearColor InLowerHemisphereColor) {}
-	public void SetOcclusionTint(FColor InTint) {}
-	public void SetOcclusionContrast(float InOcclusionContrast) {}
-	public void SetOcclusionExponent(float InOcclusionExponent) {}
-	public void SetMinOcclusion(float InMinOcclusion) {}
-	public void RecaptureSky() {}
+	public  void SetIntensity(float NewIntensity) {}
+	public  void SetIndirectLightingIntensity(float NewIntensity) {}
+	public  void SetVolumetricScatteringIntensity(float NewIntensity) {}
+	public  void SetLightColor(FLinearColor NewLightColor) {}
+	public  void SetCubemap(UTextureCube NewCubemap) {}
+	public  void SetSourceCubemapAngle(float NewValue) {}
+	public  void SetCubemapBlend(UTextureCube SourceCubemap,UTextureCube DestinationCubemap,float InBlendFraction) {}
+	public  void SetLowerHemisphereColor(FLinearColor InLowerHemisphereColor) {}
+	public  void SetOcclusionTint(FColor InTint) {}
+	public  void SetOcclusionContrast(float InOcclusionContrast) {}
+	public  void SetOcclusionExponent(float InOcclusionExponent) {}
+	public  void SetMinOcclusion(float InMinOcclusion) {}
+	public  void RecaptureSky() {}
 	public UTextureCube BlendDestinationCubemap;
 }

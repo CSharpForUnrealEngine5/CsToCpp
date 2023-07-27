@@ -5,8 +5,8 @@ using CSharpToCpp.Utilities;
 ///<summary>Example subclass of ANetworkPredictionExtrasFlyingPawn that uses the MockAbility simulation</summary>
 public partial class ANetworkPredictionExtrasFlyingPawn_MockAbility : ANetworkPredictionExtrasFlyingPawn {
 // NetworkPredictionExtrasFlyingPawn_MockAbility
-	public UObject GetMockFlyingAbilityComponent() { return default; }
+	public  UMockFlyingAbilityComponent GetMockFlyingAbilityComponent() { return default; }
 	public ENetworkPredictionExtrasMockAbilityInputPreset AbilityInputPreset;
-	public float GetStamina() { return default; }
-	public float GetMaxStamina() { return default; }
+	public  float GetStamina() { return default; }
+	public  float GetMaxStamina() { return default; }
 }

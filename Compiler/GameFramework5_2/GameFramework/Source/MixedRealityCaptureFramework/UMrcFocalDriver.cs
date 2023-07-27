@@ -4,5 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("IMrcFocalDriver.h")]
 public partial class UMrcFocalDriver : UInterface {
 // MrcFocalDriver
-	public float GetHorizontalFieldOfView() { return default; }
+	public  float GetHorizontalFieldOfView() { return default; }
 }

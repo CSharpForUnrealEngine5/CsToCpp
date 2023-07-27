@@ -13,6 +13,6 @@ public partial class UResonanceAudioSpatializationSourceSettings : USpatializati
 	public ERaDistanceRolloffModel Rolloff;
 	public float MinDistance;
 	public float MaxDistance;
-	public void SetSoundSourceDirectivity(float InPattern,float InSharpness) {}
-	public void SetSoundSourceSpread(float InSpread) {}
+	public  void SetSoundSourceDirectivity(float InPattern,float InSharpness) {}
+	public  void SetSoundSourceSpread(float InSpread) {}
 }

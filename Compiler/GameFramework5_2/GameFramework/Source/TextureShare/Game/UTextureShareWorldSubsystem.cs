@@ -5,6 +5,6 @@ using CSharpToCpp.Utilities;
 ///<summary>Tickable TextureShare World Subsystem used to handle tick and react to level and world changes.</summary>
 public partial class UTextureShareWorldSubsystem : UTickableWorldSubsystem {
 // TextureShareWorldSubsystem
-	public UObject GetTextureShare() { return default; }
+	public  UTextureShare GetTextureShare() { return default; }
 	public UTextureShare TextureShare;
 }

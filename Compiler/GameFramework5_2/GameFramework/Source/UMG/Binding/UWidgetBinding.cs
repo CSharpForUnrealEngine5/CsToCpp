@@ -4,5 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("Binding/WidgetBinding.h")]
 public partial class UWidgetBinding : UPropertyBinding {
 // WidgetBinding
-	public UObject GetValue() { return default; }
+	public  UWidget GetValue() { return default; }
 }

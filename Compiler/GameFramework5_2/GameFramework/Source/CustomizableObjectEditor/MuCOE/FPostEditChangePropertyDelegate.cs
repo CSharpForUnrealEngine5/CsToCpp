@@ -4,4 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("MuCOE/Nodes/CustomizableObjectNode.h")]
 public partial struct FPostEditChangePropertyDelegate {
 // PostEditChangePropertyDelegate__DelegateSignature
+	void AddDynamic(object obj, string functionName) {}
 }

@@ -21,16 +21,16 @@ public partial class UBorder : UContentWidget {
 	public FOnPointerEvent OnMouseButtonUpEvent;
 	public FOnPointerEvent OnMouseMoveEvent;
 	public FOnPointerEvent OnMouseDoubleClickEvent;
-	public void SetContentColorAndOpacity(FLinearColor InContentColorAndOpacity) {}
-	public void SetPadding(FMargin InPadding) {}
-	public void SetHorizontalAlignment(EHorizontalAlignment InHorizontalAlignment) {}
-	public void SetVerticalAlignment(EVerticalAlignment InVerticalAlignment) {}
-	public void SetBrushColor(FLinearColor InBrushColor) {}
-	public void SetBrush(FSlateBrush InBrush) {}
-	public void SetBrushFromAsset(UObject Asset) {}
-	public void SetBrushFromTexture(UObject Texture) {}
-	public void SetBrushFromMaterial(UObject Material) {}
-	public void SetShowEffectWhenDisabled(bool bInShowEffectWhenDisabled) {}
-	public UObject GetDynamicMaterial() { return default; }
-	public void SetDesiredSizeScale(FVector2D InScale) {}
+	public  void SetContentColorAndOpacity(FLinearColor InContentColorAndOpacity) {}
+	public  void SetPadding(FMargin InPadding) {}
+	public  void SetHorizontalAlignment(EHorizontalAlignment InHorizontalAlignment) {}
+	public  void SetVerticalAlignment(EVerticalAlignment InVerticalAlignment) {}
+	public  void SetBrushColor(FLinearColor InBrushColor) {}
+	public  void SetBrush(FSlateBrush InBrush) {}
+	public  void SetBrushFromAsset(USlateBrushAsset Asset) {}
+	public  void SetBrushFromTexture(UTexture2D Texture) {}
+	public  void SetBrushFromMaterial(UMaterialInterface Material) {}
+	public  void SetShowEffectWhenDisabled(bool bInShowEffectWhenDisabled) {}
+	public  UMaterialInstanceDynamic GetDynamicMaterial() { return default; }
+	public  void SetDesiredSizeScale(FVector2D InScale) {}
 }

@@ -7,5 +7,5 @@ public partial class UCustomizableSkeletalComponent : USceneComponent {
 	public float SkippedLastRenderTime;
 	public UCustomizableObjectInstance CustomizableObjectInstance;
 	public int ComponentIndex;
-	public void UpdateSkeletalMeshAsync(bool bNeverSkipUpdate/*=false*/) {}
+	public  void UpdateSkeletalMeshAsync(bool bNeverSkipUpdate/*=false*/) {}
 }

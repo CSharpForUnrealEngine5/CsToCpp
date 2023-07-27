@@ -5,10 +5,10 @@ using CSharpToCpp.Utilities;
 ///<summary>Debug actor to test SmartObjects.</summary>
 public partial class ASmartObjectTestingActor : AActor {
 // SmartObjectTestingActor
-	public void DebugInitializeSubsystemRuntime() {}
-	public void DebugCleanupSubsystemRuntime() {}
-	public void RunTests() {}
-	public void ResetTests() {}
+	public  void DebugInitializeSubsystemRuntime() {}
+	public  void DebugCleanupSubsystemRuntime() {}
+	public  void RunTests() {}
+	public  void ResetTests() {}
 	public TArray<USmartObjectTest> Tests;
 	public USmartObjectTestRenderingComponent RenderingComponent;
 	public USmartObjectSubsystem SmartObjectSubsystem;

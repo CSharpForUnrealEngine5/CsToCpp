@@ -7,5 +7,5 @@ public partial class ULidarToolActionsMeshing : UInteractiveToolPropertySet {
 	public float MaxMeshingError;
 	public bool bMergeMeshes;
 	public bool bRetainTransform;
-	public void BuildStaticMesh() {}
+	public  void BuildStaticMesh() {}
 }

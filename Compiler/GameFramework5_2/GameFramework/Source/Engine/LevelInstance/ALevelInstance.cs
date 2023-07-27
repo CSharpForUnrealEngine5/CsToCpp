@@ -8,5 +8,5 @@ public partial class ALevelInstance : AActor {
 	public TSoftObjectPtr<UWorld> CookedWorldAsset;
 	public FGuid LevelInstanceSpawnGuid;
 	public ELevelInstanceRuntimeBehavior DesiredRuntimeBehavior;
-	public void OnRep_LevelInstanceSpawnGuid() {}
+	public  void OnRep_LevelInstanceSpawnGuid() {}
 }

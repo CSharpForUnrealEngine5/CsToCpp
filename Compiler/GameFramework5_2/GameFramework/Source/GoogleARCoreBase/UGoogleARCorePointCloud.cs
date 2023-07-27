@@ -5,10 +5,10 @@ using CSharpToCpp.Utilities;
 ///<summary>A UObject that contains a set of observed 3D points and confidence values.</summary>
 public partial class UGoogleARCorePointCloud : UObject {
 // GoogleARCorePointCloud
-	public bool IsUpdated() { return default; }
-	public int GetPointNum() { return default; }
-	public void GetPoint(int Index,FVector OutWorldPosition,float OutConfidence) {}
-	public int GetPointId(int Index) { return default; }
-	public void GetPointInTrackingSpace(int Index,FVector OutTrackingSpaceLocation,float OutConfidence) {}
-	public void ReleasePointCloud() {}
+	public  bool IsUpdated() { return default; }
+	public  int GetPointNum() { return default; }
+	public  void GetPoint(int Index,FVector OutWorldPosition,float OutConfidence) {}
+	public  int GetPointId(int Index) { return default; }
+	public  void GetPointInTrackingSpace(int Index,FVector OutTrackingSpaceLocation,float OutConfidence) {}
+	public  void ReleasePointCloud() {}
 }

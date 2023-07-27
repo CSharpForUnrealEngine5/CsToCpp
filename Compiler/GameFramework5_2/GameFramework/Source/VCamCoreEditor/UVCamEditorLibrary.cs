@@ -4,5 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("VCamEditorLibrary.h")]
 public partial class UVCamEditorLibrary : UBlueprintFunctionLibrary {
 // VCamEditorLibrary
-	public void GetAllVCamComponentsInLevel(TArray<UObject> VCamComponents) {}
+	public static void GetAllVCamComponentsInLevel(TArray<UVCamComponent> VCamComponents) {}
 }

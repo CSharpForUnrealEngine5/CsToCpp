@@ -4,11 +4,11 @@ using CSharpToCpp.Utilities;
 [CppInclude("RuntimeAssetCacheBPHooks.h")]
 public partial class URuntimeAssetCacheBPHooks : UBlueprintFunctionLibrary {
 // RuntimeAssetCacheBPHooks
-	public FVoidPtrParam GetSynchronous(object /*CacheBuilder*/ CacheBuilder) { return default; }
-	public int GetAsynchronous(object /*CacheBuilder*/ CacheBuilder,FOnRuntimeAssetCacheAsyncComplete CompletionDelegate) { return default; }
-	public int GetCacheSize(string Bucket) { return default; }
-	public bool ClearCache(string Bucket) { return default; }
-	public void WaitAsynchronousCompletion(int Handle) {}
-	public FVoidPtrParam GetAsynchronousResults(int Handle) { return default; }
-	public bool PollAsynchronousCompletion(int Handle) { return default; }
+	public static FVoidPtrParam GetSynchronous(object /*CacheBuilder*/ CacheBuilder) { return default; }
+	public static int GetAsynchronous(object /*CacheBuilder*/ CacheBuilder,FOnRuntimeAssetCacheAsyncComplete CompletionDelegate) { return default; }
+	public static int GetCacheSize(string Bucket) { return default; }
+	public static bool ClearCache(string Bucket) { return default; }
+	public static void WaitAsynchronousCompletion(int Handle) {}
+	public static FVoidPtrParam GetAsynchronousResults(int Handle) { return default; }
+	public static bool PollAsynchronousCompletion(int Handle) { return default; }
 }

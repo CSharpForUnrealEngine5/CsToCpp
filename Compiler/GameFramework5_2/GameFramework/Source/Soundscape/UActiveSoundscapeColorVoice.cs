@@ -7,5 +7,5 @@ public partial class UActiveSoundscapeColorVoice : UObject {
 	public UAudioComponent AudioComponent;
 	public FTimerHandle TimerHandle;
 	public bool bFree;
-	public void StopLimitedDurationVoice(float FadeOutTime) {}
+	public  void StopLimitedDurationVoice(float FadeOutTime) {}
 }

@@ -4,4 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("Abilities/Tasks/AbilityTask_Repeat.h")]
 public partial struct FRepeatedActionDelegate {
 // RepeatedActionDelegate__DelegateSignature
+	void AddDynamic(object obj, string functionName) {}
 }

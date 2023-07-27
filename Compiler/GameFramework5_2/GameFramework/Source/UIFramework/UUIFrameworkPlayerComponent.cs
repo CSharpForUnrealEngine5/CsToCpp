@@ -4,9 +4,9 @@ using CSharpToCpp.Utilities;
 [CppInclude("UIFPlayerComponent.h")]
 public partial class UUIFrameworkPlayerComponent : UActorComponent {
 // UIFrameworkPlayerComponent
-	public void AddWidget(FUIFrameworkGameLayerSlot Widget) {}
-	public void RemoveWidget(UObject Widget) {}
-	public void ServerRemoveWidgetRootFromTree(FUIFrameworkWidgetId WidgetId) {}
+	public  void AddWidget(FUIFrameworkGameLayerSlot Widget) {}
+	public  void RemoveWidget(UUIFrameworkWidget Widget) {}
+	public  void ServerRemoveWidgetRootFromTree(FUIFrameworkWidgetId WidgetId) {}
 	public FUIFrameworkGameLayerSlotList RootList;
 	public FUIFrameworkWidgetTree WidgetTree;
 	public UUIFrameworkPresenter Presenter;

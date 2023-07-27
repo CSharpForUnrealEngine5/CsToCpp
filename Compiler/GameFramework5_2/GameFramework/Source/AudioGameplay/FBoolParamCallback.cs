@@ -4,4 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("AudioComponentGroup.h")]
 public partial struct FBoolParamCallback {
 // BoolParamCallback__DelegateSignature
+	void AddDynamic(object obj, string functionName) {}
 }

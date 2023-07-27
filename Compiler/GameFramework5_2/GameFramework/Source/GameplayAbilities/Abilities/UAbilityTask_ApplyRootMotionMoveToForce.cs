@@ -7,7 +7,7 @@ public partial class UAbilityTask_ApplyRootMotionMoveToForce : UAbilityTask_Appl
 // AbilityTask_ApplyRootMotionMoveToForce
 	public FApplyRootMotionMoveToForceDelegate OnTimedOut;
 	public FApplyRootMotionMoveToForceDelegate OnTimedOutAndDestinationReached;
-	public UObject ApplyRootMotionMoveToForce(UObject OwningAbility,string TaskInstanceName,FVector TargetLocation,float Duration,bool bSetNewMovementMode,EMovementMode MovementMode,bool bRestrictSpeedToExpected,UObject PathOffsetCurve,ERootMotionFinishVelocityMode VelocityOnFinishMode,FVector SetVelocityOnFinish,float ClampVelocityOnFinish) { return default; }
+	public static UAbilityTask_ApplyRootMotionMoveToForce ApplyRootMotionMoveToForce(UGameplayAbility OwningAbility,string TaskInstanceName,FVector TargetLocation,float Duration,bool bSetNewMovementMode,EMovementMode MovementMode,bool bRestrictSpeedToExpected,UCurveVector PathOffsetCurve,ERootMotionFinishVelocityMode VelocityOnFinishMode,FVector SetVelocityOnFinish,float ClampVelocityOnFinish) { return default; }
 	public FVector StartLocation;
 	public FVector TargetLocation;
 	public float Duration;

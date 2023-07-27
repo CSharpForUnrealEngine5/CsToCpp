@@ -4,4 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("NiagaraShared.h")]
 public partial struct FOnNiagaraScriptCompilationComplete {
 // OnNiagaraScriptCompilationComplete__DelegateSignature
+	void AddDynamic(object obj, string functionName) {}
 }

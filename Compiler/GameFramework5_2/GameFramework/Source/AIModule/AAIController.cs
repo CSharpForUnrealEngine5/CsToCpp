@@ -19,27 +19,27 @@ public partial class AAIController : AController {
 	public UBlackboardComponent Blackboard;
 	public UGameplayTasksComponent CachedGameplayTasksComponent;
 	public UClass DefaultNavigationFilterClass;
-	public EPathFollowingRequestResult MoveToActor(UObject Goal,float AcceptanceRadius/*=-1f*/,bool bStopOnOverlap/*=true*/,bool bUsePathfinding/*=true*/,bool bCanStrafe/*=true*/,UClass FilterClass/*=NULL*/,bool bAllowPartialPath/*=true*/) { return default; }
-	public EPathFollowingRequestResult MoveToLocation(FVector Dest,float AcceptanceRadius/*=-1f*/,bool bStopOnOverlap/*=true*/,bool bUsePathfinding/*=true*/,bool bProjectDestinationToNavigation/*=false*/,bool bCanStrafe/*=true*/,UClass FilterClass/*=NULL*/,bool bAllowPartialPath/*=true*/) { return default; }
+	public  EPathFollowingRequestResult MoveToActor(AActor Goal,float AcceptanceRadius/*=-1f*/,bool bStopOnOverlap/*=true*/,bool bUsePathfinding/*=true*/,bool bCanStrafe/*=true*/,UClass FilterClass/*=NULL*/,bool bAllowPartialPath/*=true*/) { return default; }
+	public  EPathFollowingRequestResult MoveToLocation(FVector Dest,float AcceptanceRadius/*=-1f*/,bool bStopOnOverlap/*=true*/,bool bUsePathfinding/*=true*/,bool bProjectDestinationToNavigation/*=false*/,bool bCanStrafe/*=true*/,UClass FilterClass/*=NULL*/,bool bAllowPartialPath/*=true*/) { return default; }
 	public FAIMoveCompletedSignature ReceiveMoveCompleted;
-	public EPathFollowingStatus GetMoveStatus() { return default; }
-	public bool HasPartialPath() { return default; }
-	public FVector GetImmediateMoveDestination() { return default; }
-	public void SetMoveBlockDetection(bool bEnable) {}
-	public bool RunBehaviorTree(UObject BTAsset) { return default; }
-	public bool UseBlackboard(UObject BlackboardAsset,UObject BlackboardComponent) { return default; }
-	public void ClaimTaskResource(UClass ResourceClass) {}
-	public void UnclaimTaskResource(UClass ResourceClass) {}
-	public void OnUsingBlackBoard(UObject BlackboardComp,UObject BlackboardAsset) {}
-	public FVector GetFocalPoint() { return default; }
-	public FVector GetFocalPointOnActor(UObject Actor) { return default; }
-	public void K2_SetFocalPoint(FVector FP) {}
-	public void K2_SetFocus(UObject NewFocus) {}
-	public UObject GetFocusActor() { return default; }
-	public void K2_ClearFocus() {}
-	public void OnGameplayTaskResourcesClaimed(FGameplayResourceSet NewlyClaimed,FGameplayResourceSet FreshlyReleased) {}
-	public UObject GetPathFollowingComponent() { return default; }
-	public UObject GetAIPerceptionComponent() { return default; }
-	public void SetPathFollowingComponent(UObject NewPFComponent) {}
-	public UObject GetDeprecatedActionsComponent() { return default; }
+	public  EPathFollowingStatus GetMoveStatus() { return default; }
+	public  bool HasPartialPath() { return default; }
+	public  FVector GetImmediateMoveDestination() { return default; }
+	public  void SetMoveBlockDetection(bool bEnable) {}
+	public  bool RunBehaviorTree(UBehaviorTree BTAsset) { return default; }
+	public  bool UseBlackboard(UBlackboardData BlackboardAsset,UBlackboardComponent BlackboardComponent) { return default; }
+	public  void ClaimTaskResource(UClass ResourceClass) {}
+	public  void UnclaimTaskResource(UClass ResourceClass) {}
+	public  void OnUsingBlackBoard(UBlackboardComponent BlackboardComp,UBlackboardData BlackboardAsset) {}
+	public  FVector GetFocalPoint() { return default; }
+	public  FVector GetFocalPointOnActor(AActor Actor) { return default; }
+	public  void K2_SetFocalPoint(FVector FP) {}
+	public  void K2_SetFocus(AActor NewFocus) {}
+	public  AActor GetFocusActor() { return default; }
+	public  void K2_ClearFocus() {}
+	public  void OnGameplayTaskResourcesClaimed(FGameplayResourceSet NewlyClaimed,FGameplayResourceSet FreshlyReleased) {}
+	public  UPathFollowingComponent GetPathFollowingComponent() { return default; }
+	public  UAIPerceptionComponent GetAIPerceptionComponent() { return default; }
+	public  void SetPathFollowingComponent(UPathFollowingComponent NewPFComponent) {}
+	public  UDEPRECATED_PawnActionsComponent GetDeprecatedActionsComponent() { return default; }
 }

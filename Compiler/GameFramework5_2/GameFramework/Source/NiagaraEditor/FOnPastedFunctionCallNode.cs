@@ -4,4 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("NiagaraClipboard.h")]
 public partial struct FOnPastedFunctionCallNode {
 // OnPastedFunctionCallNode__DelegateSignature
+	void AddDynamic(object obj, string functionName) {}
 }

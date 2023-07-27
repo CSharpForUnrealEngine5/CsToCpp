@@ -4,4 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("ToolMenuDelegates.h")]
 public partial struct FToolMenuDynamicCanExecuteAction {
 // ToolMenuDynamicCanExecuteAction__DelegateSignature
+	void AddDynamic(object obj, string functionName) {}
 }

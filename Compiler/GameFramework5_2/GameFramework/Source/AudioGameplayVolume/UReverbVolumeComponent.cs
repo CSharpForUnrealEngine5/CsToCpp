@@ -5,6 +5,6 @@ using CSharpToCpp.Utilities;
 ///<summary>UReverbVolumeComponent - Audio Gameplay Volume component for reverb settings</summary>
 public partial class UReverbVolumeComponent : UAudioGameplayVolumeMutator {
 // ReverbVolumeComponent
-	public void SetReverbSettings(FReverbSettings NewReverbSettings) {}
+	public  void SetReverbSettings(FReverbSettings NewReverbSettings) {}
 	public FReverbSettings ReverbSettings;
 }

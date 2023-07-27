@@ -11,5 +11,5 @@ public partial class APropertyEditorTestActor : AActor {
 	public float InstanceOnly;
 	public float InstanceOnlySubcategory;
 	public TMap<int,string> MultiLineMap;
-	public TArray<string> GetOptionsFunc() { return default; }
+	public  TArray<string> GetOptionsFunc() { return default; }
 }

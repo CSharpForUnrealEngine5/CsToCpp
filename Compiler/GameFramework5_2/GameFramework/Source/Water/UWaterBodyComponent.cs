@@ -4,25 +4,25 @@ using CSharpToCpp.Utilities;
 [CppInclude("WaterBodyComponent.h")]
 public partial class UWaterBodyComponent : UPrimitiveComponent {
 // WaterBodyComponent
-	public TArray<UObject> GetCollisionComponents(bool bInOnlyEnabledComponents/*=true*/) { return default; }
-	public TArray<UObject> GetStandardRenderableComponents() { return default; }
-	public UObject GetRiverToLakeTransitionMaterialInstance() { return default; }
-	public UObject GetRiverToOceanTransitionMaterialInstance() { return default; }
-	public UObject GetWaterBodyActor() { return default; }
-	public UObject GetWaterSpline() { return default; }
-	public UObject GetWaterWaves() { return default; }
-	public UObject GetWaterMaterial() { return default; }
-	public UObject GetWaterMaterialInstance() { return default; }
-	public UObject GetWaterLODMaterialInstance() { return default; }
-	public UObject GetUnderwaterPostProcessMaterialInstance() { return default; }
-	public UObject GetWaterInfoMaterialInstance() { return default; }
-	public void SetWaterAndUnderWaterPostProcessMaterial(UObject InWaterMaterial,UObject InUnderWaterPostProcessMaterial) {}
-	public void GetWaterSurfaceInfoAtLocation(FVector InLocation,FVector OutWaterSurfaceLocation,FVector OutWaterSurfaceNormal,FVector OutWaterVelocity,float OutWaterDepth,bool bIncludeDepth/*=false*/) {}
-	public float GetWaterVelocityAtSplineInputKey(float InKey) { return default; }
-	public TArray<UObject> GetIslands() { return default; }
-	public TArray<UObject> GetExclusionVolumes() { return default; }
-	public void OnWaterBodyChanged(bool bShapeOrPositionChanged,bool bWeightmapSettingsChanged/*=false*/) {}
-	public float GetMaxWaveHeight() { return default; }
+	public  TArray<UPrimitiveComponent> GetCollisionComponents(bool bInOnlyEnabledComponents/*=true*/) { return default; }
+	public  TArray<UPrimitiveComponent> GetStandardRenderableComponents() { return default; }
+	public  UMaterialInstanceDynamic GetRiverToLakeTransitionMaterialInstance() { return default; }
+	public  UMaterialInstanceDynamic GetRiverToOceanTransitionMaterialInstance() { return default; }
+	public  AWaterBody GetWaterBodyActor() { return default; }
+	public  UWaterSplineComponent GetWaterSpline() { return default; }
+	public  UWaterWavesBase GetWaterWaves() { return default; }
+	public  UMaterialInterface GetWaterMaterial() { return default; }
+	public  UMaterialInstanceDynamic GetWaterMaterialInstance() { return default; }
+	public  UMaterialInstanceDynamic GetWaterLODMaterialInstance() { return default; }
+	public  UMaterialInstanceDynamic GetUnderwaterPostProcessMaterialInstance() { return default; }
+	public  UMaterialInstanceDynamic GetWaterInfoMaterialInstance() { return default; }
+	public  void SetWaterAndUnderWaterPostProcessMaterial(UMaterialInterface InWaterMaterial,UMaterialInterface InUnderWaterPostProcessMaterial) {}
+	public  void GetWaterSurfaceInfoAtLocation(FVector InLocation,FVector OutWaterSurfaceLocation,FVector OutWaterSurfaceNormal,FVector OutWaterVelocity,float OutWaterDepth,bool bIncludeDepth/*=false*/) {}
+	public  float GetWaterVelocityAtSplineInputKey(float InKey) { return default; }
+	public  TArray<AWaterBodyIsland> GetIslands() { return default; }
+	public  TArray<AWaterBodyExclusionVolume> GetExclusionVolumes() { return default; }
+	public  void OnWaterBodyChanged(bool bShapeOrPositionChanged,bool bWeightmapSettingsChanged/*=false*/) {}
+	public  float GetMaxWaveHeight() { return default; }
 	public UPhysicalMaterial PhysicalMaterial;
 	public float TargetWaveMaskDepth;
 	public float MaxWaveHeightOffset;

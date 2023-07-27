@@ -4,4 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("Sound/QuartzQuantizationUtilities.h")]
 public partial struct FOnQuartzMetronomeEventBP {
 // OnQuartzMetronomeEventBP__DelegateSignature
+	void AddDynamic(object obj, string functionName) {}
 }

@@ -6,8 +6,8 @@ public partial class UUIFrameworkWidget : UMVVMViewModelBase {
 // UIFrameworkWidget
 	public bool bIsEnabled;
 	public ESlateVisibility Visibility;
-	public void OnRep_IsEnabled() {}
-	public void OnRep_Visibility() {}
+	public  void OnRep_IsEnabled() {}
+	public  void OnRep_Visibility() {}
 	public TSoftObjectPtr<UClass> WidgetClass;
 	public FUIFrameworkWidgetId Id;
 	public object /*Wrapper*/ Wrapper;

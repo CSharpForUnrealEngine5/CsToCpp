@@ -8,7 +8,7 @@ public partial class UGizmoBaseComponent : UPrimitiveComponent {
 	public FLinearColor Color;
 	public float HoverSizeMultiplier;
 	public float PixelHitDistanceThreshold;
-	public void UpdateHoverState(bool bHoveringIn) {}
-	public void UpdateWorldLocalState(bool bWorldIn) {}
+	public  void UpdateHoverState(bool bHoveringIn) {}
+	public  void UpdateWorldLocalState(bool bWorldIn) {}
 	public UGizmoViewContext GizmoViewContext;
 }

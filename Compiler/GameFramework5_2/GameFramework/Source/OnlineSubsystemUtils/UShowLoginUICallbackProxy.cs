@@ -6,5 +6,5 @@ public partial class UShowLoginUICallbackProxy : UBlueprintAsyncActionBase {
 // ShowLoginUICallbackProxy
 	public FOnlineShowLoginUIResult OnSuccess;
 	public FOnlineShowLoginUIResult OnFailure;
-	public UObject ShowExternalLoginUI(UObject WorldContextObject,UObject InPlayerController) { return default; }
+	public static UShowLoginUICallbackProxy ShowExternalLoginUI(UObject WorldContextObject,APlayerController InPlayerController) { return default; }
 }

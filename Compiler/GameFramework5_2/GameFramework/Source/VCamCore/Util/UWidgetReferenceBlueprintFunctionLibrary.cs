@@ -4,6 +4,6 @@ using CSharpToCpp.Utilities;
 [CppInclude("Util/WidgetReference.h")]
 public partial class UWidgetReferenceBlueprintFunctionLibrary : UBlueprintFunctionLibrary {
 // WidgetReferenceBlueprintFunctionLibrary
-	public UObject ResolveWidget(FChildWidgetReference WidgetReference,UObject OwnerWidget) { return default; }
-	public UObject ResolveVCamWidget(FVCamChildWidgetReference WidgetReference,UObject OwnerWidget) { return default; }
+	public static UWidget ResolveWidget(FChildWidgetReference WidgetReference,UUserWidget OwnerWidget) { return default; }
+	public static UVCamWidget ResolveVCamWidget(FVCamChildWidgetReference WidgetReference,UUserWidget OwnerWidget) { return default; }
 }

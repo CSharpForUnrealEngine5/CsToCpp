@@ -4,5 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("MuCOE/StatePerformanceTesting.h")]
 public partial class UUpdateClassHelper : UObject {
 // UpdateClassHelper
-	public void DelegatedCallback(UObject Instance) {}
+	public  void DelegatedCallback(UCustomizableObjectInstance Instance) {}
 }

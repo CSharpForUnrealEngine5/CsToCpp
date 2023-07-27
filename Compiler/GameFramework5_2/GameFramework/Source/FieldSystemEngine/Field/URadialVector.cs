@@ -5,7 +5,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Set a radial vector value, the direction being the vector from the sample position to the field one. The output is equal to magnitude * direction</summary>
 public partial class URadialVector : UFieldNodeVector {
 // RadialVector
-	public UObject SetRadialVector(float Magnitude,FVector Position) { return default; }
+	public  URadialVector SetRadialVector(float Magnitude,FVector Position) { return default; }
 	public float Magnitude;
 	public FVector Position;
 }

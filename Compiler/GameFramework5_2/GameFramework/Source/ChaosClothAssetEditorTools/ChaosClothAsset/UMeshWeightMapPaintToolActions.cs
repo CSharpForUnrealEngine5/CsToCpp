@@ -4,6 +4,6 @@ using CSharpToCpp.Utilities;
 [CppInclude("ChaosClothAsset/ClothWeightMapPaintTool.h")]
 public partial class UMeshWeightMapPaintToolActions : UClothEditorWeightMapPaintToolActionPropertySet {
 // MeshWeightMapPaintToolActions
-	public void ClearAll() {}
-	public void FloodFillCurrent() {}
+	public  void ClearAll() {}
+	public  void FloodFillCurrent() {}
 }

@@ -5,34 +5,34 @@ using CSharpToCpp.Utilities;
 ///<summary>Component for applying a post-process lens distortion effect to a CineCameraComponent on the same actor</summary>
 public partial class ULensComponent : UActorComponent {
 // LensComponent
-	public FLensFilePicker GetLensFilePicker() { return default; }
-	public UObject GetLensFile() { return default; }
-	public void SetLensFilePicker(FLensFilePicker LensFile) {}
-	public void SetLensFile(UObject LensFile) {}
-	public EFIZEvaluationMode GetFIZEvaluationMode() { return default; }
-	public void SetFIZEvaluationMode(EFIZEvaluationMode Mode) {}
-	public float GetOverscanMultiplier() { return default; }
-	public void SetOverscanMultiplier(float Multiplier) {}
-	public EFilmbackOverrideSource GetFilmbackOverrideSetting() { return default; }
-	public void SetFilmbackOverrideSetting(EFilmbackOverrideSource Setting) {}
-	public FCameraFilmbackSettings GetCroppedFilmback() { return default; }
-	public void SetCroppedFilmback(FCameraFilmbackSettings Filmback) {}
-	public bool ShouldApplyNodalOffsetOnTick() { return default; }
-	public void SetApplyNodalOffsetOnTick(bool bApplyNodalOffset) {}
-	public EDistortionSource GetDistortionSource() { return default; }
-	public void SetDistortionSource(EDistortionSource Source) {}
-	public bool ShouldApplyDistortion() { return default; }
-	public void SetApplyDistortion(bool bApply) {}
-	public UClass GetLensModel() { return default; }
-	public void SetLensModel(UClass Model) {}
-	public FLensDistortionState GetDistortionState() { return default; }
-	public void SetDistortionState(FLensDistortionState State) {}
-	public void ClearDistortionState() {}
-	public float GetOriginalFocalLength() { return default; }
-	public FLensFileEvaluationInputs GetLensFileEvaluationInputs() { return default; }
-	public bool WasNodalOffsetAppliedThisTick() { return default; }
-	public bool WasDistortionEvaluated() { return default; }
-	public void ApplyNodalOffset(UObject ComponentToOffset,bool bUseManualInputs/*=false*/,float ManualFocusInput/*=0.0f*/,float ManualZoomInput/*=0.0f*/) {}
+	public  FLensFilePicker GetLensFilePicker() { return default; }
+	public  ULensFile GetLensFile() { return default; }
+	public  void SetLensFilePicker(FLensFilePicker LensFile) {}
+	public  void SetLensFile(ULensFile LensFile) {}
+	public  EFIZEvaluationMode GetFIZEvaluationMode() { return default; }
+	public  void SetFIZEvaluationMode(EFIZEvaluationMode Mode) {}
+	public  float GetOverscanMultiplier() { return default; }
+	public  void SetOverscanMultiplier(float Multiplier) {}
+	public  EFilmbackOverrideSource GetFilmbackOverrideSetting() { return default; }
+	public  void SetFilmbackOverrideSetting(EFilmbackOverrideSource Setting) {}
+	public  FCameraFilmbackSettings GetCroppedFilmback() { return default; }
+	public  void SetCroppedFilmback(FCameraFilmbackSettings Filmback) {}
+	public  bool ShouldApplyNodalOffsetOnTick() { return default; }
+	public  void SetApplyNodalOffsetOnTick(bool bApplyNodalOffset) {}
+	public  EDistortionSource GetDistortionSource() { return default; }
+	public  void SetDistortionSource(EDistortionSource Source) {}
+	public  bool ShouldApplyDistortion() { return default; }
+	public  void SetApplyDistortion(bool bApply) {}
+	public  UClass GetLensModel() { return default; }
+	public  void SetLensModel(UClass Model) {}
+	public  FLensDistortionState GetDistortionState() { return default; }
+	public  void SetDistortionState(FLensDistortionState State) {}
+	public  void ClearDistortionState() {}
+	public  float GetOriginalFocalLength() { return default; }
+	public  FLensFileEvaluationInputs GetLensFileEvaluationInputs() { return default; }
+	public  bool WasNodalOffsetAppliedThisTick() { return default; }
+	public  bool WasDistortionEvaluated() { return default; }
+	public  void ApplyNodalOffset(USceneComponent ComponentToOffset,bool bUseManualInputs/*=false*/,float ManualFocusInput/*=0.0f*/,float ManualZoomInput/*=0.0f*/) {}
 	public FLensFilePicker LensFilePicker;
 	public EFIZEvaluationMode EvaluationMode;
 	public FComponentReference TargetCameraComponent;

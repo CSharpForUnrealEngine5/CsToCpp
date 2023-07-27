@@ -4,4 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("Engine/TimerHandle.h")]
 public partial struct FTimerDynamicDelegate {
 // TimerDynamicDelegate__DelegateSignature
+	void AddDynamic(object obj, string functionName) {}
 }

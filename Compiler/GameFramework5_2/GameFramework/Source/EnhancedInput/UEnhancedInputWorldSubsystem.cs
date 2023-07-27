@@ -5,8 +5,8 @@ using CSharpToCpp.Utilities;
 ///<summary>Per world input subsystem that allows you to bind input delegates to actors without an owning Player Controller.</summary>
 public partial class UEnhancedInputWorldSubsystem : UWorldSubsystem {
 // EnhancedInputWorldSubsystem
-	public void AddActorInputComponent(UObject Actor) {}
-	public bool RemoveActorInputComponent(UObject Actor) { return default; }
+	public  void AddActorInputComponent(AActor Actor) {}
+	public  bool RemoveActorInputComponent(AActor Actor) { return default; }
 	public UEnhancedPlayerInput PlayerInput;
 	public TArray<TWeakObjectPtr<UInputComponent>> CurrentInputStack;
 }

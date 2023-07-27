@@ -5,6 +5,6 @@ using CSharpToCpp.Utilities;
 ///<summary>TODO: This is currently a separate action set so that we can show/hide it depending on whether</summary>
 public partial class UEditMeshPolygonsToolAcceptCancelAction : UEditMeshPolygonsToolActionPropertySet {
 // EditMeshPolygonsToolAcceptCancelAction
-	public void Apply() {}
-	public void Cancel() {}
+	public  void Apply() {}
+	public  void Cancel() {}
 }

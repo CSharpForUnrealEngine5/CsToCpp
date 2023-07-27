@@ -20,12 +20,12 @@ public partial class ARoundPlanetPawn : ADefaultPawn {
 	public UCurveFloat SpeedByHATModifierCurve;
 	public float HAT;
 	public float Altitude;
-	public void FlyToLocationECEF(FVector ECEFDestination,double YawAtDestination,double PitchAtDestination,bool CanInterruptByMoving) {}
-	public void FlyToLocationGeographic(FGeographicCoordinates GeographicDestination,double YawAtDestination,double PitchAtDestination,bool CanInterruptByMoving) {}
-	public void FlyToLocationLatitudeLongitudeAltitude(double InLatitude,double InLongitude,double InAltitude,double YawAtDestination,double PitchAtDestination,bool CanInterruptByMoving) {}
-	public void InterruptFlyToLocation() {}
-	public void ResetSpeedScalar() {}
-	public void IncreaseSpeedScalar() {}
-	public void DecreaseSpeedScalar() {}
+	public  void FlyToLocationECEF(FVector ECEFDestination,double YawAtDestination,double PitchAtDestination,bool CanInterruptByMoving) {}
+	public  void FlyToLocationGeographic(FGeographicCoordinates GeographicDestination,double YawAtDestination,double PitchAtDestination,bool CanInterruptByMoving) {}
+	public  void FlyToLocationLatitudeLongitudeAltitude(double InLatitude,double InLongitude,double InAltitude,double YawAtDestination,double PitchAtDestination,bool CanInterruptByMoving) {}
+	public  void InterruptFlyToLocation() {}
+	public  void ResetSpeedScalar() {}
+	public  void IncreaseSpeedScalar() {}
+	public  void DecreaseSpeedScalar() {}
 	public AGeoReferencingSystem GeoReferencingSystem;
 }

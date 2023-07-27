@@ -4,4 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("Kismet/KismetSystemLibrary.h")]
 public partial struct FOnAssetClassLoaded {
 // OnAssetClassLoaded__DelegateSignature
+	void AddDynamic(object obj, string functionName) {}
 }

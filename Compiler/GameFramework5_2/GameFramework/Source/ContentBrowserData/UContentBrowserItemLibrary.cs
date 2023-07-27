@@ -5,8 +5,8 @@ using CSharpToCpp.Utilities;
 ///<summary>TODO: Script API exposure</summary>
 public partial class UContentBrowserItemLibrary : UBlueprintFunctionLibrary {
 // ContentBrowserItemLibrary
-	public bool IsFolder(FContentBrowserItem Item) { return default; }
-	public bool IsFile(FContentBrowserItem Item) { return default; }
-	public string GetVirtualPath(FContentBrowserItem Item) { return default; }
-	public string GetDisplayName(FContentBrowserItem Item) { return default; }
+	public static bool IsFolder(FContentBrowserItem Item) { return default; }
+	public static bool IsFile(FContentBrowserItem Item) { return default; }
+	public static string GetVirtualPath(FContentBrowserItem Item) { return default; }
+	public static string GetDisplayName(FContentBrowserItem Item) { return default; }
 }

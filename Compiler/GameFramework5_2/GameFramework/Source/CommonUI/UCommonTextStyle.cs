@@ -13,11 +13,11 @@ public partial class UCommonTextStyle : UObject {
 	public FMargin Margin;
 	public FSlateBrush StrikeBrush;
 	public float LineHeightPercentage;
-	public void GetFont(FSlateFontInfo OutFont) {}
-	public void GetColor(FLinearColor OutColor) {}
-	public void GetMargin(FMargin OutMargin) {}
-	public float GetLineHeightPercentage() { return default; }
-	public void GetShadowOffset(FVector2D OutShadowOffset) {}
-	public void GetShadowColor(FLinearColor OutColor) {}
-	public void GetStrikeBrush(FSlateBrush OutStrikeBrush) {}
+	public  void GetFont(FSlateFontInfo OutFont) {}
+	public  void GetColor(FLinearColor OutColor) {}
+	public  void GetMargin(FMargin OutMargin) {}
+	public  float GetLineHeightPercentage() { return default; }
+	public  void GetShadowOffset(FVector2D OutShadowOffset) {}
+	public  void GetShadowColor(FLinearColor OutColor) {}
+	public  void GetStrikeBrush(FSlateBrush OutStrikeBrush) {}
 }

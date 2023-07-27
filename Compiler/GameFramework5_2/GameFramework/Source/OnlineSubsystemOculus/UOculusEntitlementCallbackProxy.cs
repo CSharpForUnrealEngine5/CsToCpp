@@ -7,5 +7,5 @@ public partial class UOculusEntitlementCallbackProxy : UOnlineBlueprintCallProxy
 // OculusEntitlementCallbackProxy
 	public FOculusEntitlementCheckResult OnSuccess;
 	public FOculusEntitlementCheckResult OnFailure;
-	public UObject VerifyEntitlement() { return default; }
+	public static UOculusEntitlementCallbackProxy VerifyEntitlement() { return default; }
 }

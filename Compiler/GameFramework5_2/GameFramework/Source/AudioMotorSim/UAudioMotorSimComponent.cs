@@ -4,6 +4,6 @@ using CSharpToCpp.Utilities;
 [CppInclude("IAudioMotorSim.h")]
 public partial class UAudioMotorSimComponent : UActorComponent {
 // AudioMotorSimComponent
-	public bool BP_Update(FAudioMotorSimInputContext Input,FAudioMotorSimRuntimeContext RuntimeInfo) { return default; }
-	public void BP_Reset() {}
+	public  bool BP_Update(FAudioMotorSimInputContext Input,FAudioMotorSimRuntimeContext RuntimeInfo) { return default; }
+	public  void BP_Reset() {}
 }

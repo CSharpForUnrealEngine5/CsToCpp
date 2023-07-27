@@ -4,4 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("EditorUtilityTask.h")]
 public partial struct FOnEditorUtilityTaskDynamicDelegate {
 // OnEditorUtilityTaskDynamicDelegate__DelegateSignature
+	void AddDynamic(object obj, string functionName) {}
 }

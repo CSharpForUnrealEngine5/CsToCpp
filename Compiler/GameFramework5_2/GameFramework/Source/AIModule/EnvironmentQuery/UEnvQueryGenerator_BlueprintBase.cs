@@ -7,9 +7,9 @@ public partial class UEnvQueryGenerator_BlueprintBase : UEnvQueryGenerator {
 	public string GeneratorsActionDescription;
 	public UClass Context;
 	public UClass GeneratedItemType;
-	public void DoItemGeneration(TArray<FVector> ContextLocations) {}
-	public void DoItemGenerationFromActors(TArray<UObject> ContextActors) {}
-	public void AddGeneratedVector(FVector GeneratedVector) {}
-	public void AddGeneratedActor(UObject GeneratedActor) {}
-	public UObject GetQuerier() { return default; }
+	public  void DoItemGeneration(TArray<FVector> ContextLocations) {}
+	public  void DoItemGenerationFromActors(TArray<AActor> ContextActors) {}
+	public  void AddGeneratedVector(FVector GeneratedVector) {}
+	public  void AddGeneratedActor(AActor GeneratedActor) {}
+	public  UObject GetQuerier() { return default; }
 }

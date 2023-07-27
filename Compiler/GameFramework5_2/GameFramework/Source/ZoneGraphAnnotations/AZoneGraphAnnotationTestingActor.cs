@@ -5,6 +5,6 @@ using CSharpToCpp.Utilities;
 ///<summary>Debug actor to test Mass ZoneGraph Annotations.</summary>
 public partial class AZoneGraphAnnotationTestingActor : AActor {
 // ZoneGraphAnnotationTestingActor
-	public void Trigger() {}
+	public  void Trigger() {}
 	public UZoneGraphAnnotationTestingComponent TestingComp;
 }

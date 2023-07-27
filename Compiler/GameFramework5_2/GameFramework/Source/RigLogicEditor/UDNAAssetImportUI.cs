@@ -5,6 +5,6 @@ using CSharpToCpp.Utilities;
 public partial class UDNAAssetImportUI : UObject {
 // DNAAssetImportUI
 	public USkeletalMesh SkeletalMesh;
-	public void ResetToDefault() {}
+	public  void ResetToDefault() {}
 	public string FileName;
 }

@@ -14,24 +14,24 @@ public partial class UEditConditionTestObject : UObject {
 	public UObject UObjectPtr;
 	public TSoftObjectPtr<UClass> SoftClassPtr;
 	public TWeakObjectPtr<UObject> WeakObjectPtr;
-	public void VoidFunction() {}
-	public bool GetBoolFunction() { return default; }
-	public EditConditionTestEnum GetEnumFunction() { return default; }
-	public byte GetByteEnumFunction() { return default; }
-	public double GetDoubleFunction() { return default; }
-	public int GetIntegerFunction() { return default; }
-	public byte GetUintBitfieldFunction() { return default; }
-	public UObject GetUObjectPtrFunction() { return default; }
-	public TSoftObjectPtr<UClass> GetSoftClassPtrFunction() { return default; }
-	public TWeakObjectPtr<UObject> GetWeakObjectPtrFunction() { return default; }
-	public void StaticVoidFunction() {}
-	public bool StaticGetBoolFunction() { return default; }
-	public EditConditionTestEnum StaticGetEnumFunction() { return default; }
-	public byte StaticGetByteEnumFunction() { return default; }
-	public double StaticGetDoubleFunction() { return default; }
-	public int StaticGetIntegerFunction() { return default; }
-	public byte StaticGetUintBitfieldFunction() { return default; }
-	public UObject StaticGetUObjectPtrFunction() { return default; }
-	public TSoftObjectPtr<UClass> StaticGetSoftClassPtrFunction() { return default; }
-	public TWeakObjectPtr<UObject> StaticGetWeakObjectPtrFunction() { return default; }
+	public  void VoidFunction() {}
+	public  bool GetBoolFunction() { return default; }
+	public  EditConditionTestEnum GetEnumFunction() { return default; }
+	public  byte GetByteEnumFunction() { return default; }
+	public  double GetDoubleFunction() { return default; }
+	public  int GetIntegerFunction() { return default; }
+	public  byte GetUintBitfieldFunction() { return default; }
+	public  UObject GetUObjectPtrFunction() { return default; }
+	public  TSoftObjectPtr<UClass> GetSoftClassPtrFunction() { return default; }
+	public  TWeakObjectPtr<UObject> GetWeakObjectPtrFunction() { return default; }
+	public  void StaticVoidFunction() {}
+	public static bool StaticGetBoolFunction() { return default; }
+	public static EditConditionTestEnum StaticGetEnumFunction() { return default; }
+	public static byte StaticGetByteEnumFunction() { return default; }
+	public static double StaticGetDoubleFunction() { return default; }
+	public static int StaticGetIntegerFunction() { return default; }
+	public static byte StaticGetUintBitfieldFunction() { return default; }
+	public static UObject StaticGetUObjectPtrFunction() { return default; }
+	public static TSoftObjectPtr<UClass> StaticGetSoftClassPtrFunction() { return default; }
+	public static TWeakObjectPtr<UObject> StaticGetWeakObjectPtrFunction() { return default; }
 }

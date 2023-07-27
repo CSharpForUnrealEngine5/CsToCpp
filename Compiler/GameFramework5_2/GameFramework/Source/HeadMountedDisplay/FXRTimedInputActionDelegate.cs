@@ -4,4 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("HeadMountedDisplayFunctionLibrary.h")]
 public partial struct FXRTimedInputActionDelegate {
 // XRTimedInputActionDelegate__DelegateSignature
+	void AddDynamic(object obj, string functionName) {}
 }

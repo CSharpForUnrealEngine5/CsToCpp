@@ -4,6 +4,6 @@ using CSharpToCpp.Utilities;
 [CppInclude("InterchangeMaterialFactoryNode.h")]
 public partial class UInterchangeMaterialFunctionFactoryNode : UInterchangeBaseMaterialFactoryNode {
 // InterchangeMaterialFunctionFactoryNode
-	public UClass GetObjectClass() { return default; }
-	public bool GetInputConnection(string InputName,string ExpressionNodeUid,string OutputName) { return default; }
+	public  UClass GetObjectClass() { return default; }
+	public  bool GetInputConnection(string InputName,string ExpressionNodeUid,string OutputName) { return default; }
 }

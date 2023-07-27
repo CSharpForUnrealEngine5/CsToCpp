@@ -4,4 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("AppleVisionBlueprintProxy.h")]
 public partial struct FAppleVisionDetectFacesDelegate {
 // AppleVisionDetectFacesDelegate__DelegateSignature
+	void AddDynamic(object obj, string functionName) {}
 }

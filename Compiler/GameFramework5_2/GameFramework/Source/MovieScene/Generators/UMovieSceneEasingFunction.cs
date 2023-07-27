@@ -4,5 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("Generators/MovieSceneEasingFunction.h")]
 public partial class UMovieSceneEasingFunction : UInterface {
 // MovieSceneEasingFunction
-	public float OnEvaluate(float Interp) { return default; }
+	public  float OnEvaluate(float Interp) { return default; }
 }

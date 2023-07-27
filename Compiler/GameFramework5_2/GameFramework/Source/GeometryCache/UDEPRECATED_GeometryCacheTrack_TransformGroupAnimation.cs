@@ -5,5 +5,5 @@ using CSharpToCpp.Utilities;
 ///<summary>Derived GeometryCacheTrack class, used for Transform animation.</summary>
 public partial class UDEPRECATED_GeometryCacheTrack_TransformGroupAnimation : UGeometryCacheTrack {
 // GeometryCacheTrack_TransformGroupAnimation
-	public void SetMesh(FGeometryCacheMeshData NewMeshData) {}
+	public  void SetMesh(FGeometryCacheMeshData NewMeshData) {}
 }

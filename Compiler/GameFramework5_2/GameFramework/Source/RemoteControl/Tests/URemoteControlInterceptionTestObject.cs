@@ -6,5 +6,5 @@ public partial class URemoteControlInterceptionTestObject : UObject {
 // RemoteControlInterceptionTestObject
 	public FRemoteControlInterceptionTestStruct CustomStruct;
 	public FRemoteControlInterceptionFunctionParamStruct FunctionParamStruct;
-	public FRemoteControlInterceptionFunctionParamStruct TestFunction(FRemoteControlInterceptionFunctionParamStruct InStruct,int InTestFactor) { return default; }
+	public  FRemoteControlInterceptionFunctionParamStruct TestFunction(FRemoteControlInterceptionFunctionParamStruct InStruct,int InTestFactor) { return default; }
 }

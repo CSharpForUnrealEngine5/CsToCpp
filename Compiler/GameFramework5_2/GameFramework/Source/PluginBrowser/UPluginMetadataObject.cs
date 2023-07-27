@@ -20,5 +20,5 @@ public partial class UPluginMetadataObject : UObject {
 	public bool bIsEnabledByDefault;
 	public bool bExplicitlyLoaded;
 	public TArray<FPluginReferenceMetadata> Plugins;
-	public TArray<string> GetAvailablePluginDependencies() { return default; }
+	public  TArray<string> GetAvailablePluginDependencies() { return default; }
 }

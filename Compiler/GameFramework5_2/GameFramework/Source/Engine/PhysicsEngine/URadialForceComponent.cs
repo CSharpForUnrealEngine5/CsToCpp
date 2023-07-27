@@ -12,8 +12,8 @@ public partial class URadialForceComponent : USceneComponent {
 	public bool bIgnoreOwningActor;
 	public float ForceStrength;
 	public float DestructibleDamage;
-	public void FireImpulse() {}
-	public void AddObjectTypeToAffect(byte ObjectType) {}
-	public void RemoveObjectTypeToAffect(byte ObjectType) {}
+	public  void FireImpulse() {}
+	public  void AddObjectTypeToAffect(byte ObjectType) {}
+	public  void RemoveObjectTypeToAffect(byte ObjectType) {}
 	public TArray<byte> ObjectTypesToAffect;
 }

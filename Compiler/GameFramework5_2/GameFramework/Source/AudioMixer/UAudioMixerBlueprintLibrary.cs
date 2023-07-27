@@ -4,42 +4,42 @@ using CSharpToCpp.Utilities;
 [CppInclude("AudioMixerBlueprintLibrary.h")]
 public partial class UAudioMixerBlueprintLibrary : UBlueprintFunctionLibrary {
 // AudioMixerBlueprintLibrary
-	public string Conv_AudioOutputDeviceInfoToString(FAudioOutputDeviceInfo Info) { return default; }
-	public void AddMasterSubmixEffect(UObject WorldContextObject,UObject SubmixEffectPreset) {}
-	public void RemoveMasterSubmixEffect(UObject WorldContextObject,UObject SubmixEffectPreset) {}
-	public void ClearMasterSubmixEffects(UObject WorldContextObject) {}
-	public int AddSubmixEffect(UObject WorldContextObject,UObject SoundSubmix,UObject SubmixEffectPreset) { return default; }
-	public void RemoveSubmixEffectPreset(UObject WorldContextObject,UObject SoundSubmix,UObject SubmixEffectPreset) {}
-	public void RemoveSubmixEffect(UObject WorldContextObject,UObject SoundSubmix,UObject SubmixEffectPreset) {}
-	public void RemoveSubmixEffectPresetAtIndex(UObject WorldContextObject,UObject SoundSubmix,int SubmixChainIndex) {}
-	public void RemoveSubmixEffectAtIndex(UObject WorldContextObject,UObject SoundSubmix,int SubmixChainIndex) {}
-	public void ReplaceSoundEffectSubmix(UObject WorldContextObject,UObject InSoundSubmix,int SubmixChainIndex,UObject SubmixEffectPreset) {}
-	public void ReplaceSubmixEffect(UObject WorldContextObject,UObject InSoundSubmix,int SubmixChainIndex,UObject SubmixEffectPreset) {}
-	public void ClearSubmixEffects(UObject WorldContextObject,UObject SoundSubmix) {}
-	public void SetSubmixEffectChainOverride(UObject WorldContextObject,UObject SoundSubmix,TArray<UObject> SubmixEffectPresetChain,float FadeTimeSec) {}
-	public void ClearSubmixEffectChainOverride(UObject WorldContextObject,UObject SoundSubmix,float FadeTimeSec) {}
-	public void StartRecordingOutput(UObject WorldContextObject,float ExpectedDuration,UObject SubmixToRecord/*=nullptr*/) {}
-	public UObject StopRecordingOutput(UObject WorldContextObject,EAudioRecordingExportType ExportType,string Name,string Path,UObject SubmixToRecord/*=nullptr*/,UObject ExistingSoundWaveToOverwrite/*=nullptr*/) { return default; }
-	public void PauseRecordingOutput(UObject WorldContextObject,UObject SubmixToPause/*=nullptr*/) {}
-	public void ResumeRecordingOutput(UObject WorldContextObject,UObject SubmixToPause/*=nullptr*/) {}
-	public void StartAnalyzingOutput(UObject WorldContextObject,UObject SubmixToAnalyze/*=nullptr*/,EFFTSize FFTSize/*=EFFTSize.DefaultSize*/,EFFTPeakInterpolationMethod InterpolationMethod/*=EFFTPeakInterpolationMethod.Linear*/,EFFTWindowType WindowType/*=EFFTWindowType.Hann*/,float HopSize/*=0f*/,EAudioSpectrumType SpectrumType/*=EAudioSpectrumType.MagnitudeSpectrum*/) {}
-	public void StopAnalyzingOutput(UObject WorldContextObject,UObject SubmixToStopAnalyzing/*=nullptr*/) {}
-	public TArray<FSoundSubmixSpectralAnalysisBandSettings> MakeMusicalSpectralAnalysisBandSettings(int InNumSemitones/*=60*/,EMusicalNoteName InStartingMusicalNote/*=EMusicalNoteName.C*/,int InStartingOctave/*=2*/,int InAttackTimeMsec/*=10*/,int InReleaseTimeMsec/*=10*/) { return default; }
-	public TArray<FSoundSubmixSpectralAnalysisBandSettings> MakeFullSpectrumSpectralAnalysisBandSettings(int InNumBands/*=30*/,float InMinimumFrequency/*=40.0f*/,float InMaximumFrequency/*=16000.0f*/,int InAttackTimeMsec/*=10*/,int InReleaseTimeMsec/*=10*/) { return default; }
-	public TArray<FSoundSubmixSpectralAnalysisBandSettings> MakePresetSpectralAnalysisBandSettings(EAudioSpectrumBandPresetType InBandPresetType,int InNumBands/*=10*/,int InAttackTimeMsec/*=10*/,int InReleaseTimeMsec/*=10*/) { return default; }
-	public void GetMagnitudeForFrequencies(UObject WorldContextObject,TArray<float> Frequencies,TArray<float> Magnitudes,UObject SubmixToAnalyze/*=nullptr*/) {}
-	public void GetPhaseForFrequencies(UObject WorldContextObject,TArray<float> Frequencies,TArray<float> Phases,UObject SubmixToAnalyze/*=nullptr*/) {}
-	public void AddSourceEffectToPresetChain(UObject WorldContextObject,UObject PresetChain,FSourceEffectChainEntry Entry) {}
-	public void RemoveSourceEffectFromPresetChain(UObject WorldContextObject,UObject PresetChain,int EntryIndex) {}
-	public void SetBypassSourceEffectChainEntry(UObject WorldContextObject,UObject PresetChain,int EntryIndex,bool bBypassed) {}
-	public int GetNumberOfEntriesInSourceEffectChain(UObject WorldContextObject,UObject PresetChain) { return default; }
-	public void PrimeSoundForPlayback(UObject SoundWave,FOnSoundLoadComplete OnLoadCompletion) {}
-	public void PrimeSoundCueForPlayback(UObject SoundCue) {}
-	public float TrimAudioCache(float InMegabytesToFree) { return default; }
-	public void StartAudioBus(UObject WorldContextObject,UObject AudioBus) {}
-	public void StopAudioBus(UObject WorldContextObject,UObject AudioBus) {}
-	public bool IsAudioBusActive(UObject WorldContextObject,UObject AudioBus) { return default; }
-	public void GetAvailableAudioOutputDevices(UObject WorldContextObject,FOnAudioOutputDevicesObtained OnObtainDevicesEvent) {}
-	public void GetCurrentAudioOutputDeviceName(UObject WorldContextObject,FOnMainAudioOutputDeviceObtained OnObtainCurrentDeviceEvent) {}
-	public void SwapAudioOutputDevice(UObject WorldContextObject,string NewDeviceId,FOnCompletedDeviceSwap OnCompletedDeviceSwap) {}
+	public static string Conv_AudioOutputDeviceInfoToString(FAudioOutputDeviceInfo Info) { return default; }
+	public static void AddMasterSubmixEffect(UObject WorldContextObject,USoundEffectSubmixPreset SubmixEffectPreset) {}
+	public static void RemoveMasterSubmixEffect(UObject WorldContextObject,USoundEffectSubmixPreset SubmixEffectPreset) {}
+	public static void ClearMasterSubmixEffects(UObject WorldContextObject) {}
+	public static int AddSubmixEffect(UObject WorldContextObject,USoundSubmix SoundSubmix,USoundEffectSubmixPreset SubmixEffectPreset) { return default; }
+	public static void RemoveSubmixEffectPreset(UObject WorldContextObject,USoundSubmix SoundSubmix,USoundEffectSubmixPreset SubmixEffectPreset) {}
+	public static void RemoveSubmixEffect(UObject WorldContextObject,USoundSubmix SoundSubmix,USoundEffectSubmixPreset SubmixEffectPreset) {}
+	public static void RemoveSubmixEffectPresetAtIndex(UObject WorldContextObject,USoundSubmix SoundSubmix,int SubmixChainIndex) {}
+	public static void RemoveSubmixEffectAtIndex(UObject WorldContextObject,USoundSubmix SoundSubmix,int SubmixChainIndex) {}
+	public static void ReplaceSoundEffectSubmix(UObject WorldContextObject,USoundSubmix InSoundSubmix,int SubmixChainIndex,USoundEffectSubmixPreset SubmixEffectPreset) {}
+	public static void ReplaceSubmixEffect(UObject WorldContextObject,USoundSubmix InSoundSubmix,int SubmixChainIndex,USoundEffectSubmixPreset SubmixEffectPreset) {}
+	public static void ClearSubmixEffects(UObject WorldContextObject,USoundSubmix SoundSubmix) {}
+	public static void SetSubmixEffectChainOverride(UObject WorldContextObject,USoundSubmix SoundSubmix,TArray<USoundEffectSubmixPreset> SubmixEffectPresetChain,float FadeTimeSec) {}
+	public static void ClearSubmixEffectChainOverride(UObject WorldContextObject,USoundSubmix SoundSubmix,float FadeTimeSec) {}
+	public static void StartRecordingOutput(UObject WorldContextObject,float ExpectedDuration,USoundSubmix SubmixToRecord/*=nullptr*/) {}
+	public static USoundWave StopRecordingOutput(UObject WorldContextObject,EAudioRecordingExportType ExportType,string Name,string Path,USoundSubmix SubmixToRecord/*=nullptr*/,USoundWave ExistingSoundWaveToOverwrite/*=nullptr*/) { return default; }
+	public static void PauseRecordingOutput(UObject WorldContextObject,USoundSubmix SubmixToPause/*=nullptr*/) {}
+	public static void ResumeRecordingOutput(UObject WorldContextObject,USoundSubmix SubmixToPause/*=nullptr*/) {}
+	public static void StartAnalyzingOutput(UObject WorldContextObject,USoundSubmix SubmixToAnalyze/*=nullptr*/,EFFTSize FFTSize/*=EFFTSize.DefaultSize*/,EFFTPeakInterpolationMethod InterpolationMethod/*=EFFTPeakInterpolationMethod.Linear*/,EFFTWindowType WindowType/*=EFFTWindowType.Hann*/,float HopSize/*=0f*/,EAudioSpectrumType SpectrumType/*=EAudioSpectrumType.MagnitudeSpectrum*/) {}
+	public static void StopAnalyzingOutput(UObject WorldContextObject,USoundSubmix SubmixToStopAnalyzing/*=nullptr*/) {}
+	public static TArray<FSoundSubmixSpectralAnalysisBandSettings> MakeMusicalSpectralAnalysisBandSettings(int InNumSemitones/*=60*/,EMusicalNoteName InStartingMusicalNote/*=EMusicalNoteName.C*/,int InStartingOctave/*=2*/,int InAttackTimeMsec/*=10*/,int InReleaseTimeMsec/*=10*/) { return default; }
+	public static TArray<FSoundSubmixSpectralAnalysisBandSettings> MakeFullSpectrumSpectralAnalysisBandSettings(int InNumBands/*=30*/,float InMinimumFrequency/*=40.0f*/,float InMaximumFrequency/*=16000.0f*/,int InAttackTimeMsec/*=10*/,int InReleaseTimeMsec/*=10*/) { return default; }
+	public static TArray<FSoundSubmixSpectralAnalysisBandSettings> MakePresetSpectralAnalysisBandSettings(EAudioSpectrumBandPresetType InBandPresetType,int InNumBands/*=10*/,int InAttackTimeMsec/*=10*/,int InReleaseTimeMsec/*=10*/) { return default; }
+	public static void GetMagnitudeForFrequencies(UObject WorldContextObject,TArray<float> Frequencies,TArray<float> Magnitudes,USoundSubmix SubmixToAnalyze/*=nullptr*/) {}
+	public static void GetPhaseForFrequencies(UObject WorldContextObject,TArray<float> Frequencies,TArray<float> Phases,USoundSubmix SubmixToAnalyze/*=nullptr*/) {}
+	public static void AddSourceEffectToPresetChain(UObject WorldContextObject,USoundEffectSourcePresetChain PresetChain,FSourceEffectChainEntry Entry) {}
+	public static void RemoveSourceEffectFromPresetChain(UObject WorldContextObject,USoundEffectSourcePresetChain PresetChain,int EntryIndex) {}
+	public static void SetBypassSourceEffectChainEntry(UObject WorldContextObject,USoundEffectSourcePresetChain PresetChain,int EntryIndex,bool bBypassed) {}
+	public static int GetNumberOfEntriesInSourceEffectChain(UObject WorldContextObject,USoundEffectSourcePresetChain PresetChain) { return default; }
+	public static void PrimeSoundForPlayback(USoundWave SoundWave,FOnSoundLoadComplete OnLoadCompletion) {}
+	public static void PrimeSoundCueForPlayback(USoundCue SoundCue) {}
+	public static float TrimAudioCache(float InMegabytesToFree) { return default; }
+	public static void StartAudioBus(UObject WorldContextObject,UAudioBus AudioBus) {}
+	public static void StopAudioBus(UObject WorldContextObject,UAudioBus AudioBus) {}
+	public static bool IsAudioBusActive(UObject WorldContextObject,UAudioBus AudioBus) { return default; }
+	public static void GetAvailableAudioOutputDevices(UObject WorldContextObject,FOnAudioOutputDevicesObtained OnObtainDevicesEvent) {}
+	public static void GetCurrentAudioOutputDeviceName(UObject WorldContextObject,FOnMainAudioOutputDeviceObtained OnObtainCurrentDeviceEvent) {}
+	public static void SwapAudioOutputDevice(UObject WorldContextObject,string NewDeviceId,FOnCompletedDeviceSwap OnCompletedDeviceSwap) {}
 }

@@ -4,6 +4,6 @@ using CSharpToCpp.Utilities;
 [CppInclude("OpenXRInputFunctionLibrary.h")]
 public partial class UOpenXRInputFunctionLibrary : UBlueprintFunctionLibrary {
 // OpenXRInputFunctionLibrary
-	public bool BeginXRSession(UObject InputConfig) { return default; }
-	public void EndXRSession() {}
+	public static bool BeginXRSession(UPlayerMappableInputConfig InputConfig) { return default; }
+	public static void EndXRSession() {}
 }

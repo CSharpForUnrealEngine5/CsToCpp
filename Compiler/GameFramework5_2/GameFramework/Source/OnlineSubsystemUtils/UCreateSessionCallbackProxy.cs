@@ -6,5 +6,5 @@ public partial class UCreateSessionCallbackProxy : UOnlineBlueprintCallProxyBase
 // CreateSessionCallbackProxy
 	public FEmptyOnlineDelegate OnSuccess;
 	public FEmptyOnlineDelegate OnFailure;
-	public UObject CreateSession(UObject WorldContextObject,UObject PlayerController,int PublicConnections,bool bUseLAN) { return default; }
+	public static UCreateSessionCallbackProxy CreateSession(UObject WorldContextObject,APlayerController PlayerController,int PublicConnections,bool bUseLAN) { return default; }
 }

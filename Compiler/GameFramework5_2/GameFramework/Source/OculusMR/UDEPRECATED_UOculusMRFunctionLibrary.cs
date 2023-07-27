@@ -4,11 +4,11 @@ using CSharpToCpp.Utilities;
 [CppInclude("OculusMRFunctionLibrary.h")]
 public partial class UDEPRECATED_UOculusMRFunctionLibrary : UBlueprintFunctionLibrary {
 // UOculusMRFunctionLibrary
-	public UObject GetOculusMRSettings() { return default; }
-	public UObject GetTrackingReferenceComponent() { return default; }
-	public bool SetTrackingReferenceComponent(UObject Component) { return default; }
-	public float GetMrcScalingFactor() { return default; }
-	public bool SetMrcScalingFactor(float ScalingFactor/*=1.0f*/) { return default; }
-	public bool IsMrcEnabled() { return default; }
-	public bool IsMrcActive() { return default; }
+	public static UDEPRECATED_UOculusMR_Settings GetOculusMRSettings() { return default; }
+	public static USceneComponent GetTrackingReferenceComponent() { return default; }
+	public static bool SetTrackingReferenceComponent(USceneComponent Component) { return default; }
+	public static float GetMrcScalingFactor() { return default; }
+	public static bool SetMrcScalingFactor(float ScalingFactor/*=1.0f*/) { return default; }
+	public static bool IsMrcEnabled() { return default; }
+	public static bool IsMrcActive() { return default; }
 }

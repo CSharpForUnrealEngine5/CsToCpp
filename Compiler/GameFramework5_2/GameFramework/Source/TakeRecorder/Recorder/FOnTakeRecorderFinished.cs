@@ -4,4 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("Recorder/TakeRecorderBlueprintLibrary.h")]
 public partial struct FOnTakeRecorderFinished {
 // OnTakeRecorderFinished__DelegateSignature
+	void AddDynamic(object obj, string functionName) {}
 }

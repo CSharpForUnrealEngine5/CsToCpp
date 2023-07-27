@@ -4,4 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("DMXSubsystem.h")]
 public partial struct FProtocolReceivedDelegate {
 // ProtocolReceivedDelegate__DelegateSignature
+	void AddDynamic(object obj, string functionName) {}
 }

@@ -9,9 +9,9 @@ public partial class UTransferMeshToolProperties : UInteractiveToolPropertySet {
 	public string SourceLOD;
 	public string TargetLOD;
 	public bool bIsStaticMeshSource;
-	public TArray<string> GetSourceLODNamesFunc() { return default; }
+	public  TArray<string> GetSourceLODNamesFunc() { return default; }
 	public TArray<string> SourceLODNamesList;
-	public TArray<string> GetTargetLODNamesFunc() { return default; }
+	public  TArray<string> GetTargetLODNamesFunc() { return default; }
 	public TArray<string> TargetLODNamesList;
 	public bool bIsStaticMeshTarget;
 }

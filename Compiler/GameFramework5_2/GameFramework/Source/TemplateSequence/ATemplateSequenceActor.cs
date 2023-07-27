@@ -9,9 +9,9 @@ public partial class ATemplateSequenceActor : AActor {
 	public UTemplateSequencePlayer SequencePlayer;
 	public FSoftObjectPath TemplateSequence;
 	public FTemplateSequenceBindingOverrideData BindingOverride;
-	public UObject GetSequence() { return default; }
-	public UObject LoadSequence() { return default; }
-	public void SetSequence(UObject InSequence) {}
-	public UObject GetSequencePlayer() { return default; }
-	public void SetBinding(UObject Actor,bool bOverridesDefault/*=true*/) {}
+	public  UTemplateSequence GetSequence() { return default; }
+	public  UTemplateSequence LoadSequence() { return default; }
+	public  void SetSequence(UTemplateSequence InSequence) {}
+	public  UTemplateSequencePlayer GetSequencePlayer() { return default; }
+	public  void SetBinding(AActor Actor,bool bOverridesDefault/*=true*/) {}
 }

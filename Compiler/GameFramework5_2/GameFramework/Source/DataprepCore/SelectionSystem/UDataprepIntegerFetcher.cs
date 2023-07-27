@@ -5,5 +5,5 @@ using CSharpToCpp.Utilities;
 ///<summary>The integer fetcher is a specialized type of fetcher for the integer</summary>
 public partial class UDataprepIntegerFetcher : UDataprepFetcher {
 // DataprepIntegerFetcher
-	public int Fetch(UObject Object,bool bOutFetchSucceded) { return default; }
+	public  int Fetch(UObject Object,bool bOutFetchSucceded) { return default; }
 }

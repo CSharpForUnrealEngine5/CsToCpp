@@ -14,12 +14,12 @@ public partial class UBackgroundBlur : UContentWidget {
 	public int BlurRadius;
 	public FVector4 CornerRadius;
 	public FSlateBrush LowQualityFallbackBrush;
-	public void SetPadding(FMargin InPadding) {}
-	public void SetHorizontalAlignment(EHorizontalAlignment InHorizontalAlignment) {}
-	public void SetVerticalAlignment(EVerticalAlignment InVerticalAlignment) {}
-	public void SetApplyAlphaToBlur(bool bInApplyAlphaToBlur) {}
-	public void SetBlurRadius(int InBlurRadius) {}
-	public void SetBlurStrength(float InStrength) {}
-	public void SetCornerRadius(FVector4 InCornerRadius) {}
-	public void SetLowQualityFallbackBrush(FSlateBrush InBrush) {}
+	public  void SetPadding(FMargin InPadding) {}
+	public  void SetHorizontalAlignment(EHorizontalAlignment InHorizontalAlignment) {}
+	public  void SetVerticalAlignment(EVerticalAlignment InVerticalAlignment) {}
+	public  void SetApplyAlphaToBlur(bool bInApplyAlphaToBlur) {}
+	public  void SetBlurRadius(int InBlurRadius) {}
+	public  void SetBlurStrength(float InStrength) {}
+	public  void SetCornerRadius(FVector4 InCornerRadius) {}
+	public  void SetLowQualityFallbackBrush(FSlateBrush InBrush) {}
 }

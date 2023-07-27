@@ -9,8 +9,8 @@ public partial class UScaleBox : UContentWidget {
 	public byte StretchDirection;
 	public float UserSpecifiedScale;
 	public bool IgnoreInheritedScale;
-	public void SetStretch(EStretch InStretch) {}
-	public void SetStretchDirection(EStretchDirection InStretchDirection) {}
-	public void SetUserSpecifiedScale(float InUserSpecifiedScale) {}
-	public void SetIgnoreInheritedScale(bool bInIgnoreInheritedScale) {}
+	public  void SetStretch(EStretch InStretch) {}
+	public  void SetStretchDirection(EStretchDirection InStretchDirection) {}
+	public  void SetUserSpecifiedScale(float InUserSpecifiedScale) {}
+	public  void SetIgnoreInheritedScale(bool bInIgnoreInheritedScale) {}
 }

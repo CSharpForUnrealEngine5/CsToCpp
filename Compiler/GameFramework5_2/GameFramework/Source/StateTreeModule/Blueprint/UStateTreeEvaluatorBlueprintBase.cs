@@ -5,7 +5,7 @@ using CSharpToCpp.Utilities;
 ///<summary>* Base class for Blueprint based evaluators.</summary>
 public partial class UStateTreeEvaluatorBlueprintBase : UStateTreeNodeBlueprintBase {
 // StateTreeEvaluatorBlueprintBase
-	public void ReceiveTreeStart() {}
-	public void ReceiveTreeStop() {}
-	public void ReceiveTick(float DeltaTime) {}
+	public  void ReceiveTreeStart() {}
+	public  void ReceiveTreeStop() {}
+	public  void ReceiveTick(float DeltaTime) {}
 }

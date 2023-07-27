@@ -5,8 +5,8 @@ using CSharpToCpp.Utilities;
 ///<summary>Base class for 3D constraint section</summary>
 public partial class UMovieScene3DConstraintSection : UMovieSceneSection {
 // MovieScene3DConstraintSection
-	public FMovieSceneObjectBindingID GetConstraintBindingID() { return default; }
-	public void SetConstraintBindingID(FMovieSceneObjectBindingID InConstraintBindingID) {}
+	public  FMovieSceneObjectBindingID GetConstraintBindingID() { return default; }
+	public  void SetConstraintBindingID(FMovieSceneObjectBindingID InConstraintBindingID) {}
 	public FGuid ConstraintId_DEPRECATED;
 	public FMovieSceneObjectBindingID ConstraintBindingID;
 }

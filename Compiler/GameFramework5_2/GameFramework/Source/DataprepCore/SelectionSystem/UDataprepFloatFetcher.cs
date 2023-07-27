@@ -5,5 +5,5 @@ using CSharpToCpp.Utilities;
 ///<summary>The float fetcher is a specialized type of fetcher for the float</summary>
 public partial class UDataprepFloatFetcher : UDataprepFetcher {
 // DataprepFloatFetcher
-	public float Fetch(UObject Object,bool bOutFetchSucceded) { return default; }
+	public  float Fetch(UObject Object,bool bOutFetchSucceded) { return default; }
 }

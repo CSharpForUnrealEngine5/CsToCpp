@@ -4,4 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("Abilities/Tasks/AbilityTask_SpawnActor.h")]
 public partial struct FSpawnActorDelegate {
 // SpawnActorDelegate__DelegateSignature
+	void AddDynamic(object obj, string functionName) {}
 }

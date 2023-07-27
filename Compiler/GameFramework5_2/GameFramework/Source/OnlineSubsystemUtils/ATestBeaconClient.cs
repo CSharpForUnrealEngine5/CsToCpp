@@ -5,6 +5,6 @@ using CSharpToCpp.Utilities;
 ///<summary>A beacon client used for making reservations with an existing game session</summary>
 public partial class ATestBeaconClient : AOnlineBeaconClient {
 // TestBeaconClient
-	public void ClientPing() {}
-	public void ServerPong() {}
+	public  void ClientPing() {}
+	public  void ServerPong() {}
 }

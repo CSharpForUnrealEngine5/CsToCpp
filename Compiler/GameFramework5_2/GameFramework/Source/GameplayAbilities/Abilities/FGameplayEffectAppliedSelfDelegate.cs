@@ -4,4 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("Abilities/Tasks/AbilityTask_WaitGameplayEffectApplied_Self.h")]
 public partial struct FGameplayEffectAppliedSelfDelegate {
 // GameplayEffectAppliedSelfDelegate__DelegateSignature
+	void AddDynamic(object obj, string functionName) {}
 }

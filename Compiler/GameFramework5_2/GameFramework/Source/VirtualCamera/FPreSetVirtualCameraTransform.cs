@@ -4,4 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("IVirtualCameraController.h")]
 public partial struct FPreSetVirtualCameraTransform {
 // PreSetVirtualCameraTransform__DelegateSignature
+	void AddDynamic(object obj, string functionName) {}
 }

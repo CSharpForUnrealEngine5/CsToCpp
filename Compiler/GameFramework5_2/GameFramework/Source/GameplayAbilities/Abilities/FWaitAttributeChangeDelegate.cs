@@ -4,4 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("Abilities/Tasks/AbilityTask_WaitAttributeChange.h")]
 public partial struct FWaitAttributeChangeDelegate {
 // WaitAttributeChangeDelegate__DelegateSignature
+	void AddDynamic(object obj, string functionName) {}
 }

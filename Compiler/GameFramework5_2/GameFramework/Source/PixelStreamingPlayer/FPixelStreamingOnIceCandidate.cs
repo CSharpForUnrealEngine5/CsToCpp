@@ -4,4 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("PixelStreamingPeerComponent.h")]
 public partial struct FPixelStreamingOnIceCandidate {
 // PixelStreamingOnIceCandidate__DelegateSignature
+	void AddDynamic(object obj, string functionName) {}
 }

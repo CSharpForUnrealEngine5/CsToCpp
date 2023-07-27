@@ -6,7 +6,7 @@ public partial class UCustomizableObjectPopulation : UObject {
 // CustomizableObjectPopulation
 	public string Name;
 	public TArray<FClassWeightPair> ClassWeights;
-	public int GeneratePopulation(TArray<UObject> OutInstances,int NumInstancesToGenerate/*=1*/) { return default; }
-	public bool RegeneratePopulation(int Seed,TArray<UObject> OutInstances,int NumInstancesToGenerate/*=1*/) { return default; }
+	public  int GeneratePopulation(TArray<UCustomizableObjectInstance> OutInstances,int NumInstancesToGenerate/*=1*/) { return default; }
+	public  bool RegeneratePopulation(int Seed,TArray<UCustomizableObjectInstance> OutInstances,int NumInstancesToGenerate/*=1*/) { return default; }
 	public UCustomizableObjectPopulationGenerator Generator;
 }

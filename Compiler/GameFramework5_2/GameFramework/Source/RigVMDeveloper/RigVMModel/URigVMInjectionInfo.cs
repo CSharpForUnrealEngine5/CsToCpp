@@ -10,6 +10,6 @@ public partial class URigVMInjectionInfo : UObject {
 	public bool bInjectedAsInput;
 	public URigVMPin InputPin;
 	public URigVMPin OutputPin;
-	public UObject GetGraph() { return default; }
-	public UObject GetPin() { return default; }
+	public  URigVMGraph GetGraph() { return default; }
+	public  URigVMPin GetPin() { return default; }
 }

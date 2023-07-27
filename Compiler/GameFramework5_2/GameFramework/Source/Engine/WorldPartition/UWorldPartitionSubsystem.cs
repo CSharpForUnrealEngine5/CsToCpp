@@ -5,6 +5,6 @@ using CSharpToCpp.Utilities;
 ///<summary>UWorldPartitionSubsystem</summary>
 public partial class UWorldPartitionSubsystem : UTickableWorldSubsystem {
 // WorldPartitionSubsystem
-	public bool IsStreamingCompleted(EWorldPartitionRuntimeCellState QueryState,TArray<FWorldPartitionStreamingQuerySource> QuerySources,bool bExactState) { return default; }
-	public bool IsAllStreamingCompleted() { return default; }
+	public  bool IsStreamingCompleted(EWorldPartitionRuntimeCellState QueryState,TArray<FWorldPartitionStreamingQuerySource> QuerySources,bool bExactState) { return default; }
+	public  bool IsAllStreamingCompleted() { return default; }
 }

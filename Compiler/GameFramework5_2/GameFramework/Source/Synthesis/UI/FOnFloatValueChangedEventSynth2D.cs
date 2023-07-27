@@ -4,4 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("UI/Synth2DSlider.h")]
 public partial struct FOnFloatValueChangedEventSynth2D {
 // OnFloatValueChangedEventSynth2D__DelegateSignature
+	void AddDynamic(object obj, string functionName) {}
 }

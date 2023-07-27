@@ -5,6 +5,6 @@ using CSharpToCpp.Utilities;
 public partial class UControlRigBlueprintFactory : UFactory {
 // ControlRigBlueprintFactory
 	public UClass ParentClass;
-	public UObject CreateNewControlRigAsset(string InDesiredPackagePath) { return default; }
-	public UObject CreateControlRigFromSkeletalMeshOrSkeleton(UObject InSelectedObject) { return default; }
+	public static UControlRigBlueprint CreateNewControlRigAsset(string InDesiredPackagePath) { return default; }
+	public static UControlRigBlueprint CreateControlRigFromSkeletalMeshOrSkeleton(UObject InSelectedObject) { return default; }
 }

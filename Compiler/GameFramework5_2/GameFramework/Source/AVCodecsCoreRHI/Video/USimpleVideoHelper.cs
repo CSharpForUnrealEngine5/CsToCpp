@@ -4,5 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("Video/SimpleVideo.h")]
 public partial class USimpleVideoHelper : USimpleAVHelper {
 // SimpleVideoHelper
-	public void ShareRenderTarget2D(UObject RenderTarget) {}
+	public static void ShareRenderTarget2D(UTextureRenderTarget2D RenderTarget) {}
 }

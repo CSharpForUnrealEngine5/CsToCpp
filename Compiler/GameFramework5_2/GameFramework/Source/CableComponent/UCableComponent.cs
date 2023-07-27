@@ -10,11 +10,11 @@ public partial class UCableComponent : UMeshComponent {
 	public FComponentReference AttachEndTo;
 	public string AttachEndToSocketName;
 	public FVector EndLocation;
-	public void SetAttachEndToComponent(UObject Component,string SocketName/*=NAME_None*/) {}
-	public void SetAttachEndTo(UObject Actor,string ComponentProperty,string SocketName/*=NAME_None*/) {}
-	public UObject GetAttachedActor() { return default; }
-	public UObject GetAttachedComponent() { return default; }
-	public void GetCableParticleLocations(TArray<FVector> Locations) {}
+	public  void SetAttachEndToComponent(USceneComponent Component,string SocketName/*=NAME_None*/) {}
+	public  void SetAttachEndTo(AActor Actor,string ComponentProperty,string SocketName/*=NAME_None*/) {}
+	public  AActor GetAttachedActor() { return default; }
+	public  USceneComponent GetAttachedComponent() { return default; }
+	public  void GetCableParticleLocations(TArray<FVector> Locations) {}
 	public float CableLength;
 	public int NumSegments;
 	public float SubstepTime;

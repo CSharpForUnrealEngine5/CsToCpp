@@ -5,6 +5,6 @@ using CSharpToCpp.Utilities;
 ///<summary>Side effects are actions that are performed just after a task is executed</summary>
 public partial class UConversationSideEffectNode : UConversationSubNode {
 // ConversationSideEffectNode
-	public void ServerCauseSideEffect(FConversationContext Context) {}
-	public void ClientCauseSideEffect(FConversationContext Context) {}
+	public  void ServerCauseSideEffect(FConversationContext Context) {}
+	public  void ClientCauseSideEffect(FConversationContext Context) {}
 }

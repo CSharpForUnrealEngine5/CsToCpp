@@ -4,4 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("Components/Widget.h")]
 public partial struct FGetWidget {
 // GetWidget__DelegateSignature
+	void AddDynamic(object obj, string functionName) {}
 }

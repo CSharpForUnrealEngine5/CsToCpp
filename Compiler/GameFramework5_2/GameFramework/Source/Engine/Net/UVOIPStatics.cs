@@ -4,5 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("Net/VoiceConfig.h")]
 public partial class UVOIPStatics : UBlueprintFunctionLibrary {
 // VOIPStatics
-	public void SetMicThreshold(float InThreshold) {}
+	public static void SetMicThreshold(float InThreshold) {}
 }

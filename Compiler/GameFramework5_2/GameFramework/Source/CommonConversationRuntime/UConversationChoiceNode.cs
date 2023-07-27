@@ -7,5 +7,5 @@ public partial class UConversationChoiceNode : UConversationSubNode {
 // ConversationChoiceNode
 	public string DefaultChoiceDisplayText;
 	public FGameplayTagContainer ChoiceTags;
-	public void FillChoice(FConversationContext Context,FClientConversationOptionEntry ChoiceEntry) {}
+	public  void FillChoice(FConversationContext Context,FClientConversationOptionEntry ChoiceEntry) {}
 }

@@ -8,6 +8,6 @@ public partial class UAnimSharingStateInstance : UAnimInstance {
 	public float PermutationTimeOffset;
 	public float PlayRate;
 	public bool bStateBool;
-	public void GetInstancedActors(TArray<UObject> Actors) {}
+	public  void GetInstancedActors(TArray<AActor> Actors) {}
 	public UAnimSharingInstance Instance;
 }

@@ -4,37 +4,37 @@ using CSharpToCpp.Utilities;
 [CppInclude("OptimusNodeGraph.h")]
 public partial class UOptimusNodeGraph : UObject {
 // OptimusNodeGraph
-	public EOptimusNodeGraphType GetGraphType() { return default; }
-	public bool IsExecutionGraph() { return default; }
-	public bool IsFunctionGraph() { return default; }
-	public int GetGraphIndex() { return default; }
-	public UObject AddNode(UClass InNodeClass,FVector2D InPosition) { return default; }
-	public UObject AddValueNode(FOptimusDataTypeRef InDataTypeRef,FVector2D InPosition) { return default; }
-	public UObject AddDataInterfaceNode(UClass InDataInterfaceClass,FVector2D InPosition) { return default; }
-	public UObject AddResourceNode(UObject InResourceDesc,FVector2D InPosition) { return default; }
-	public UObject AddResourceGetNode(UObject InResourceDesc,FVector2D InPosition) { return default; }
-	public UObject AddResourceSetNode(UObject InResourceDesc,FVector2D InPosition) { return default; }
-	public UObject AddVariableGetNode(UObject InVariableDesc,FVector2D InPosition) { return default; }
-	public UObject AddComponentBindingGetNode(UObject InComponentBinding,FVector2D InPosition) { return default; }
-	public bool RemoveNode(UObject InNode) { return default; }
-	public bool RemoveNodes(TArray<UObject> InNodes) { return default; }
-	public UObject DuplicateNode(UObject InNode,FVector2D InPosition) { return default; }
-	public bool DuplicateNodes(TArray<UObject> InNodes,FVector2D InPosition) { return default; }
-	public bool AddLink(UObject InNodeOutputPin,UObject InNodeInputPin) { return default; }
-	public bool RemoveLink(UObject InNodeOutputPin,UObject InNodeInputPin) { return default; }
-	public bool RemoveAllLinks(UObject InNodePin) { return default; }
-	public UObject ConvertCustomKernelToFunction(UObject InCustomKernel) { return default; }
-	public UObject ConvertFunctionToCustomKernel(UObject InKernelFunction) { return default; }
-	public UObject CollapseNodesToFunction(TArray<UObject> InNodes) { return default; }
-	public UObject CollapseNodesToSubGraph(TArray<UObject> InNodes) { return default; }
-	public TArray<UObject> ExpandCollapsedNodes(UObject InFunctionNode) { return default; }
-	public bool IsCustomKernel(UObject InNode) { return default; }
-	public bool IsKernelFunction(UObject InNode) { return default; }
-	public bool IsFunctionReference(UObject InNode) { return default; }
-	public bool IsSubGraphReference(UObject InNode) { return default; }
-	public TArray<UObject> GetGraphs() { return default; }
-	public bool MoveGraph(UObject InGraph,int InInsertBefore) { return default; }
-	public bool RenameGraph(UObject InGraph,string InNewName) { return default; }
+	public  EOptimusNodeGraphType GetGraphType() { return default; }
+	public  bool IsExecutionGraph() { return default; }
+	public  bool IsFunctionGraph() { return default; }
+	public  int GetGraphIndex() { return default; }
+	public  UOptimusNode AddNode(UClass InNodeClass,FVector2D InPosition) { return default; }
+	public  UOptimusNode AddValueNode(FOptimusDataTypeRef InDataTypeRef,FVector2D InPosition) { return default; }
+	public  UOptimusNode AddDataInterfaceNode(UClass InDataInterfaceClass,FVector2D InPosition) { return default; }
+	public  UOptimusNode AddResourceNode(UOptimusResourceDescription InResourceDesc,FVector2D InPosition) { return default; }
+	public  UOptimusNode AddResourceGetNode(UOptimusResourceDescription InResourceDesc,FVector2D InPosition) { return default; }
+	public  UOptimusNode AddResourceSetNode(UOptimusResourceDescription InResourceDesc,FVector2D InPosition) { return default; }
+	public  UOptimusNode AddVariableGetNode(UOptimusVariableDescription InVariableDesc,FVector2D InPosition) { return default; }
+	public  UOptimusNode AddComponentBindingGetNode(UOptimusComponentSourceBinding InComponentBinding,FVector2D InPosition) { return default; }
+	public  bool RemoveNode(UOptimusNode InNode) { return default; }
+	public  bool RemoveNodes(TArray<UOptimusNode> InNodes) { return default; }
+	public  UOptimusNode DuplicateNode(UOptimusNode InNode,FVector2D InPosition) { return default; }
+	public  bool DuplicateNodes(TArray<UOptimusNode> InNodes,FVector2D InPosition) { return default; }
+	public  bool AddLink(UOptimusNodePin InNodeOutputPin,UOptimusNodePin InNodeInputPin) { return default; }
+	public  bool RemoveLink(UOptimusNodePin InNodeOutputPin,UOptimusNodePin InNodeInputPin) { return default; }
+	public  bool RemoveAllLinks(UOptimusNodePin InNodePin) { return default; }
+	public  UOptimusNode ConvertCustomKernelToFunction(UOptimusNode InCustomKernel) { return default; }
+	public  UOptimusNode ConvertFunctionToCustomKernel(UOptimusNode InKernelFunction) { return default; }
+	public  UOptimusNode CollapseNodesToFunction(TArray<UOptimusNode> InNodes) { return default; }
+	public  UOptimusNode CollapseNodesToSubGraph(TArray<UOptimusNode> InNodes) { return default; }
+	public  TArray<UOptimusNode> ExpandCollapsedNodes(UOptimusNode InFunctionNode) { return default; }
+	public  bool IsCustomKernel(UOptimusNode InNode) { return default; }
+	public  bool IsKernelFunction(UOptimusNode InNode) { return default; }
+	public  bool IsFunctionReference(UOptimusNode InNode) { return default; }
+	public  bool IsSubGraphReference(UOptimusNode InNode) { return default; }
+	public  TArray<UOptimusNodeGraph> GetGraphs() { return default; }
+	public  bool MoveGraph(UOptimusNodeGraph InGraph,int InInsertBefore) { return default; }
+	public  bool RenameGraph(UOptimusNodeGraph InGraph,string InNewName) { return default; }
 	public EOptimusNodeGraphType GraphType;
 	public TArray<UOptimusNode> Nodes;
 	public TArray<UOptimusNodeLink> Links;

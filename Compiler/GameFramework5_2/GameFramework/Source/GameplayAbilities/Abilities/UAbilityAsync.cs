@@ -5,5 +5,5 @@ using CSharpToCpp.Utilities;
 ///<summary>AbilityAsync is a base class for ability-specific BlueprintAsyncActions.</summary>
 public partial class UAbilityAsync : UCancellableAsyncAction {
 // AbilityAsync
-	public void EndAction() {}
+	public  void EndAction() {}
 }

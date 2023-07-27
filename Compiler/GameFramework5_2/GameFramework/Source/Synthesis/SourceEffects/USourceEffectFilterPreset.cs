@@ -4,6 +4,6 @@ using CSharpToCpp.Utilities;
 [CppInclude("SourceEffects/SourceEffectFilter.h")]
 public partial class USourceEffectFilterPreset : USoundEffectSourcePreset {
 // SourceEffectFilterPreset
-	public void SetSettings(FSourceEffectFilterSettings InSettings) {}
+	public  void SetSettings(FSourceEffectFilterSettings InSettings) {}
 	public FSourceEffectFilterSettings Settings;
 }

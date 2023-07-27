@@ -5,8 +5,8 @@ using CSharpToCpp.Utilities;
 ///<summary>Component intended to replace UComposurePlayerCompositingTarget - a object to bind to a APlayerCameraManager</summary>
 public partial class UComposureCompositingTargetComponent : UActorComponent {
 // ComposureCompositingTargetComponent
-	public void SetDisplayTexture(UObject DisplayTexture) {}
-	public UObject GetDisplayTexture() { return default; }
+	public  void SetDisplayTexture(UTexture DisplayTexture) {}
+	public  UTexture GetDisplayTexture() { return default; }
 	public UTexture DisplayTexture;
 	public UTexture CompilerErrImage;
 }

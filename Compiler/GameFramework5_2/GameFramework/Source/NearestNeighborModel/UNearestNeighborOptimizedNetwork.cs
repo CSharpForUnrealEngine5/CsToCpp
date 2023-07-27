@@ -5,7 +5,7 @@ using CSharpToCpp.Utilities;
 ///<summary>The specialized neural network for the MLDeformerModel.</summary>
 public partial class UNearestNeighborOptimizedNetwork : UObject {
 // NearestNeighborOptimizedNetwork
-	public void Empty() {}
-	public UObject AddLayer(int LayerType) { return default; }
+	public  void Empty() {}
+	public  UNearestNeighborNetworkLayer AddLayer(int LayerType) { return default; }
 	public TArray<UNearestNeighborNetworkLayer> Layers;
 }

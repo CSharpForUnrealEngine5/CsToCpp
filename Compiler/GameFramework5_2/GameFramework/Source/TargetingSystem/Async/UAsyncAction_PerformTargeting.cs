@@ -5,8 +5,8 @@ using CSharpToCpp.Utilities;
 ///<summary>@class UAsyncAction_PerformTargeting</summary>
 public partial class UAsyncAction_PerformTargeting : UBlueprintAsyncActionBase {
 // AsyncAction_PerformTargeting
-	public UObject PerformTargetingRequest(UObject SourceActor,UObject TargetingPreset,bool bUseAsyncTargeting) { return default; }
-	public UObject PerformFilteringRequest(UObject SourceActor,UObject TargetingPreset,bool bUseAsyncTargeting,TArray<UObject> InTargets) { return default; }
+	public static UAsyncAction_PerformTargeting PerformTargetingRequest(AActor SourceActor,UTargetingPreset TargetingPreset,bool bUseAsyncTargeting) { return default; }
+	public static UAsyncAction_PerformTargeting PerformFilteringRequest(AActor SourceActor,UTargetingPreset TargetingPreset,bool bUseAsyncTargeting,TArray<AActor> InTargets) { return default; }
 	public FPerformTargetingReady Targeted;
 	public UTargetingPreset TargetingPreset;
 	public TWeakObjectPtr<AActor> WeakSourceActor;

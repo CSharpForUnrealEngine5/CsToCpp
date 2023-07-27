@@ -8,6 +8,6 @@ public partial class UPCGPin : UObject {
 	public string Label_DEPRECATED;
 	public TArray<UPCGEdge> Edges;
 	public FPCGPinProperties Properties;
-	public string GetTooltip() { return default; }
-	public void SetTooltip(string InTooltip) {}
+	public  string GetTooltip() { return default; }
+	public  void SetTooltip(string InTooltip) {}
 }

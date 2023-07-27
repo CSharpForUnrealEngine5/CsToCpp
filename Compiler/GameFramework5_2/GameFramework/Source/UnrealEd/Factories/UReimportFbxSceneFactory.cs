@@ -4,5 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("Factories/ReimportFbxSceneFactory.h")]
 public partial class UReimportFbxSceneFactory : UFbxSceneImportFactory {
 // ReimportFbxSceneFactory
-	public void ScriptReimportHelper(UObject Obj) {}
+	public  void ScriptReimportHelper(UObject Obj) {}
 }

@@ -9,7 +9,7 @@ public partial class UPlatformInterfaceWebResponse : UObject {
 	public int Tag;
 	public string StringResponse;
 	public TArray<byte> BinaryResponse;
-	public int GetNumHeaders() { return default; }
-	public void GetHeader(int HeaderIndex,string Header,string Value) {}
-	public string GetHeaderValue(string HeaderName) { return default; }
+	public  int GetNumHeaders() { return default; }
+	public  void GetHeader(int HeaderIndex,string Header,string Value) {}
+	public  string GetHeaderValue(string HeaderName) { return default; }
 }

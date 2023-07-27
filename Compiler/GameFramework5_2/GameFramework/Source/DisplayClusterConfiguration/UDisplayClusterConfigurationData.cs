@@ -5,12 +5,12 @@ using CSharpToCpp.Utilities;
 ///<summary>/</summary>
 public partial class UDisplayClusterConfigurationData : UDisplayClusterConfigurationData_Base {
 // DisplayClusterConfigurationData
-	public UObject GetViewport(string NodeId,string ViewportId) { return default; }
-	public bool AssignPostprocess(string NodeId,string PostprocessId,string Type,TMap<string,string> Parameters,int Order/*=-1*/) { return default; }
-	public bool RemovePostprocess(string NodeId,string PostprocessId) { return default; }
-	public bool GetPostprocess(string NodeId,string PostprocessId,FDisplayClusterConfigurationPostprocess OutPostprocess) { return default; }
-	public bool GetProjectionPolicy(string NodeId,string ViewportId,FDisplayClusterConfigurationProjection OutProjection) { return default; }
-	public void GetReferencedMeshNames(TArray<string> OutMeshNames) {}
+	public  UDisplayClusterConfigurationViewport GetViewport(string NodeId,string ViewportId) { return default; }
+	public  bool AssignPostprocess(string NodeId,string PostprocessId,string Type,TMap<string,string> Parameters,int Order/*=-1*/) { return default; }
+	public  bool RemovePostprocess(string NodeId,string PostprocessId) { return default; }
+	public  bool GetPostprocess(string NodeId,string PostprocessId,FDisplayClusterConfigurationPostprocess OutPostprocess) { return default; }
+	public  bool GetProjectionPolicy(string NodeId,string ViewportId,FDisplayClusterConfigurationProjection OutProjection) { return default; }
+	public  void GetReferencedMeshNames(TArray<string> OutMeshNames) {}
 	public FDisplayClusterConfigurationInfo Info;
 	public UDisplayClusterConfigurationScene Scene;
 	public UDisplayClusterConfigurationCluster Cluster;

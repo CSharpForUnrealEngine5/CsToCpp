@@ -5,6 +5,6 @@ using CSharpToCpp.Utilities;
 ///<summary>Generic component class which takes a UComposurePostProcessPassPolicy and</summary>
 public partial class UComposurePostProcessingPassProxy : UComposurePostProcessPass {
 // ComposurePostProcessingPassProxy
-	public void Execute(UObject PrePassInput,UObject PostProcessPass) {}
+	public  void Execute(UTexture PrePassInput,UComposurePostProcessPassPolicy PostProcessPass) {}
 	public UMaterialInstanceDynamic SetupMID;
 }

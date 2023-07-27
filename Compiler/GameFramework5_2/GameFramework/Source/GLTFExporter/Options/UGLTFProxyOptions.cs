@@ -9,5 +9,5 @@ public partial class UGLTFProxyOptions : UObject {
 	public byte DefaultMaterialBakeFilter;
 	public byte DefaultMaterialBakeTiling;
 	public TMap<EGLTFMaterialPropertyGroup,FGLTFOverrideMaterialBakeSettings> DefaultInputBakeSettings;
-	public void ResetToDefault() {}
+	public  void ResetToDefault() {}
 }

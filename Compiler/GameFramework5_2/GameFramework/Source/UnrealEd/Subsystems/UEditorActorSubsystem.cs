@@ -17,26 +17,26 @@ public partial class UEditorActorSubsystem : UEditorSubsystem {
 	public FOnDuplicateActorsEnd OnDuplicateActorsEnd;
 	public FOnDeleteActorsBegin OnDeleteActorsBegin;
 	public FOnDeleteActorsEnd OnDeleteActorsEnd;
-	public UObject DuplicateActor(UObject ActorToDuplicate,UObject ToWorld/*=nullptr*/,FVector Offset/*=FVector.ZeroVector*/) { return default; }
-	public TArray<UObject> DuplicateActors(TArray<UObject> ActorsToDuplicate,UObject ToWorld/*=nullptr*/,FVector Offset/*=FVector.ZeroVector*/) { return default; }
-	public void DuplicateSelectedActors(UObject InWorld) {}
-	public void DeleteSelectedActors(UObject InWorld) {}
-	public void InvertSelection(UObject InWorld) {}
-	public void SelectAll(UObject InWorld) {}
-	public void SelectAllChildren(bool bRecurseChildren) {}
-	public TArray<UObject> GetAllLevelActors() { return default; }
-	public TArray<UObject> GetAllLevelActorsComponents() { return default; }
-	public TArray<UObject> GetSelectedLevelActors() { return default; }
-	public void SetSelectedLevelActors(TArray<UObject> ActorsToSelect) {}
-	public void ClearActorSelectionSet() {}
-	public void SelectNothing() {}
-	public void SetActorSelectionState(UObject Actor,bool bShouldBeSelected) {}
-	public UObject GetActorReference(string PathToActor) { return default; }
-	public UObject SpawnActorFromObject(UObject ObjectToUse,FVector Location,FRotator Rotation/*=FRotator.ZeroRotator*/,bool bTransient/*=false*/) { return default; }
-	public UObject SpawnActorFromClass(UClass ActorClass,FVector Location,FRotator Rotation/*=FRotator.ZeroRotator*/,bool bTransient/*=false*/) { return default; }
-	public bool DestroyActor(UObject ActorToDestroy) { return default; }
-	public bool DestroyActors(TArray<UObject> ActorsToDestroy) { return default; }
-	public TArray<UObject> ConvertActors(TArray<UObject> Actors,UClass ActorClass,string StaticMeshPackagePath) { return default; }
-	public bool SetActorTransform(UObject InActor,FTransform InWorldTransform) { return default; }
-	public bool SetComponentTransform(UObject InSceneComponent,FTransform InWorldTransform) { return default; }
+	public  AActor DuplicateActor(AActor ActorToDuplicate,UWorld ToWorld/*=nullptr*/,FVector Offset/*=FVector.ZeroVector*/) { return default; }
+	public  TArray<AActor> DuplicateActors(TArray<AActor> ActorsToDuplicate,UWorld ToWorld/*=nullptr*/,FVector Offset/*=FVector.ZeroVector*/) { return default; }
+	public  void DuplicateSelectedActors(UWorld InWorld) {}
+	public  void DeleteSelectedActors(UWorld InWorld) {}
+	public  void InvertSelection(UWorld InWorld) {}
+	public  void SelectAll(UWorld InWorld) {}
+	public  void SelectAllChildren(bool bRecurseChildren) {}
+	public  TArray<AActor> GetAllLevelActors() { return default; }
+	public  TArray<UActorComponent> GetAllLevelActorsComponents() { return default; }
+	public  TArray<AActor> GetSelectedLevelActors() { return default; }
+	public  void SetSelectedLevelActors(TArray<AActor> ActorsToSelect) {}
+	public  void ClearActorSelectionSet() {}
+	public  void SelectNothing() {}
+	public  void SetActorSelectionState(AActor Actor,bool bShouldBeSelected) {}
+	public  AActor GetActorReference(string PathToActor) { return default; }
+	public  AActor SpawnActorFromObject(UObject ObjectToUse,FVector Location,FRotator Rotation/*=FRotator.ZeroRotator*/,bool bTransient/*=false*/) { return default; }
+	public  AActor SpawnActorFromClass(UClass ActorClass,FVector Location,FRotator Rotation/*=FRotator.ZeroRotator*/,bool bTransient/*=false*/) { return default; }
+	public  bool DestroyActor(AActor ActorToDestroy) { return default; }
+	public  bool DestroyActors(TArray<AActor> ActorsToDestroy) { return default; }
+	public  TArray<AActor> ConvertActors(TArray<AActor> Actors,UClass ActorClass,string StaticMeshPackagePath) { return default; }
+	public  bool SetActorTransform(AActor InActor,FTransform InWorldTransform) { return default; }
+	public  bool SetComponentTransform(USceneComponent InSceneComponent,FTransform InWorldTransform) { return default; }
 }

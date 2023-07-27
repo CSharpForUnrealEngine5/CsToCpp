@@ -4,7 +4,7 @@ using CSharpToCpp.Utilities;
 [CppInclude("CompositingElements/CompositingElementInputs.h")]
 public partial class UCompositingInputInterface : UInterface {
 // CompositingInputInterface
-	public void OnFrameBegin(UObject Proxy,bool bCameraCutThisFrame) {}
-	public UObject GenerateInput(UObject Proxy) { return default; }
-	public void OnFrameEnd(UObject Proxy) {}
+	public  void OnFrameBegin(UCompositingInputInterfaceProxy Proxy,bool bCameraCutThisFrame) {}
+	public  UTexture GenerateInput(UCompositingInputInterfaceProxy Proxy) { return default; }
+	public  void OnFrameEnd(UCompositingInputInterfaceProxy Proxy) {}
 }

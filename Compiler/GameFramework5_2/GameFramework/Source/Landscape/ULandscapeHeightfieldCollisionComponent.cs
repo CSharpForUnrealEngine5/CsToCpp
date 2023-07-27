@@ -15,7 +15,7 @@ public partial class ULandscapeHeightfieldCollisionComponent : UPrimitiveCompone
 	public FBox CachedLocalBox;
 	public TLazyObjectPtr<ULandscapeComponent> RenderComponent_DEPRECATED;
 	public ULandscapeComponent RenderComponentRef;
-	public UObject GetRenderComponent() { return default; }
+	public  ULandscapeComponent GetRenderComponent() { return default; }
 	public uint CollisionHash;
 	public TArray<UPhysicalMaterial> PhysicalMaterialRenderObjects;
 	public TArray<UPhysicalMaterial> CookedPhysicalMaterials;

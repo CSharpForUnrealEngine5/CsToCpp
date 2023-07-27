@@ -4,8 +4,8 @@ using CSharpToCpp.Utilities;
 [CppInclude("WorldPartition/WorldPartitionRuntimeLevelStreamingCell.h")]
 public partial class UWorldPartitionRuntimeLevelStreamingCell : UWorldPartitionRuntimeCell {
 // WorldPartitionRuntimeLevelStreamingCell
-	public void OnLevelShown() {}
-	public void OnLevelHidden() {}
+	public  void OnLevelShown() {}
+	public  void OnLevelHidden() {}
 	public TArray<FWorldPartitionRuntimeCellObjectMapping> Packages;
 	public UWorldPartitionLevelStreamingDynamic LevelStreaming;
 }

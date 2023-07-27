@@ -5,6 +5,6 @@ using CSharpToCpp.Utilities;
 ///<summary>Synthesis Utilities Blueprint Function Library</summary>
 public partial class USynthesisUtilitiesBlueprintFunctionLibrary : UBlueprintFunctionLibrary {
 // SynthesisUtilitiesBlueprintFunctionLibrary
-	public float GetLogFrequency(float InLinearValue,float InDomainMin,float InDomainMax,float InRangeMin,float InRangeMax) { return default; }
-	public float GetLinearFrequency(float InLogFrequencyValue,float InDomainMin,float InDomainMax,float InRangeMin,float InRangeMax) { return default; }
+	public static float GetLogFrequency(float InLinearValue,float InDomainMin,float InDomainMax,float InRangeMin,float InRangeMax) { return default; }
+	public static float GetLinearFrequency(float InLogFrequencyValue,float InDomainMin,float InDomainMax,float InRangeMin,float InRangeMax) { return default; }
 }

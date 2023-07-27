@@ -4,4 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("Output/VCamOutputProviderBase.h")]
 public partial struct FActivationDelegate_Blueprint {
 // ActivationDelegate_Blueprint__DelegateSignature
+	void AddDynamic(object obj, string functionName) {}
 }

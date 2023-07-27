@@ -5,7 +5,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Handles all input for UVCamComponent.</summary>
 public partial class UInputVCamSubsystem : UVCamSubsystem {
 // InputVCamSubsystem
-	public void SetShouldConsumeGamepadInput(EVCamGamepadInputMode GamepadInputMode) {}
+	public  void SetShouldConsumeGamepadInput(EVCamGamepadInputMode GamepadInputMode) {}
 	public UVCamPlayerInput PlayerInput;
 	public TArray<TWeakObjectPtr<UInputComponent>> CurrentInputStack;
 }

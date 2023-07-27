@@ -9,6 +9,6 @@ public partial class USynthComponentToneGenerator : USynthComponent {
 	public FRuntimeFloatCurve DistanceAttenuationCurve;
 	public FVector2D DistanceRange;
 	public float AttenuationDbAtMaxRange;
-	public void SetFrequency(float InFrequency) {}
-	public void SetVolume(float InVolume) {}
+	public  void SetFrequency(float InFrequency) {}
+	public  void SetVolume(float InVolume) {}
 }

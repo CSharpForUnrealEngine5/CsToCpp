@@ -5,5 +5,5 @@ using CSharpToCpp.Utilities;
 ///<summary>The Invoke Entry Node is used to invoke another entry from the</summary>
 public partial class URigVMInvokeEntryNode : URigVMNode {
 // RigVMInvokeEntryNode
-	public string GetEntryName() { return default; }
+	public  string GetEntryName() { return default; }
 }

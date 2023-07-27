@@ -4,4 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("ConstraintsManager.h")]
 public partial struct FOnConstraintRemoved {
 // OnConstraintRemoved__DelegateSignature
+	void AddDynamic(object obj, string functionName) {}
 }

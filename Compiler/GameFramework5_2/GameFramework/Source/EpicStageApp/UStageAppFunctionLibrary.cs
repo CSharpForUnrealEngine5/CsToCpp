@@ -5,6 +5,6 @@ using CSharpToCpp.Utilities;
 ///<summary>Generally useful Blueprint/remote functions for Epic Stage App integration.</summary>
 public partial class UStageAppFunctionLibrary : UBlueprintFunctionLibrary {
 // StageAppFunctionLibrary
-	public string GetAPIVersion() { return default; }
-	public int GetRemoteControlWebInterfacePort() { return default; }
+	public static string GetAPIVersion() { return default; }
+	public static int GetRemoteControlWebInterfacePort() { return default; }
 }

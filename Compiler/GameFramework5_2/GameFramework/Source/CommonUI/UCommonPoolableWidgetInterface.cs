@@ -4,6 +4,6 @@ using CSharpToCpp.Utilities;
 [CppInclude("CommonPoolableWidgetInterface.h")]
 public partial class UCommonPoolableWidgetInterface : UInterface {
 // CommonPoolableWidgetInterface
-	public void OnAcquireFromPool() {}
-	public void OnReleaseToPool() {}
+	public  void OnAcquireFromPool() {}
+	public  void OnReleaseToPool() {}
 }

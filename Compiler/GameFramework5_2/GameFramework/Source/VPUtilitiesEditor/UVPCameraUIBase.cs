@@ -6,5 +6,5 @@ public partial class UVPCameraUIBase : UUserWidget {
 // VPCameraUIBase
 	public ACameraActor SelectedCamera;
 	public UCameraComponent SelectedCameraComponent;
-	public void OnSelectedCameraChanged() {}
+	public  void OnSelectedCameraChanged() {}
 }

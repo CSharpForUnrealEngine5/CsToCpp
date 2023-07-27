@@ -5,6 +5,6 @@ using CSharpToCpp.Utilities;
 ///<summary>Implements a movie scene track that triggers gameplay cues</summary>
 public partial class UMovieSceneGameplayCueTrack : UMovieSceneNameableTrack {
 // MovieSceneGameplayCueTrack
-	public void SetSequencerTrackHandler(FMovieSceneGameplayCueEvent InGameplayCueTrackHandler) {}
+	public static void SetSequencerTrackHandler(FMovieSceneGameplayCueEvent InGameplayCueTrackHandler) {}
 	public TArray<UMovieSceneSection> Sections;
 }

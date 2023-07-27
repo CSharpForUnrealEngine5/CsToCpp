@@ -4,7 +4,7 @@ using CSharpToCpp.Utilities;
 [CppInclude("CommonInputSettings.h")]
 public partial class UCommonInputSettings : UDeveloperSettings {
 // CommonInputSettings
-	public bool IsEnhancedInputSupportEnabled() { return default; }
+	public static bool IsEnhancedInputSupportEnabled() { return default; }
 	public TSoftObjectPtr<UClass> InputData;
 	public FPerPlatformSettings PlatformInput;
 	public TMap<string,FCommonInputPlatformBaseData> CommonInputPlatformData_DEPRECATED;

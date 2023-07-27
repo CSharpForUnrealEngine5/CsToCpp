@@ -9,5 +9,5 @@ public partial class UVectorFieldComponent : UPrimitiveComponent {
 	public float Intensity;
 	public float Tightness;
 	public bool bPreviewVectorField;
-	public void SetIntensity(float NewIntensity) {}
+	public  void SetIntensity(float NewIntensity) {}
 }

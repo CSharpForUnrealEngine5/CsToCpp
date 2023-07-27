@@ -4,5 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("Dataflow/DataflowBlueprintLibrary.h")]
 public partial class UDataflowBlueprintLibrary : UBlueprintFunctionLibrary {
 // DataflowBlueprintLibrary
-	public void EvaluateTerminalNodeByName(UObject Dataflow,string TerminalNodeName,UObject ResultAsset) {}
+	public static void EvaluateTerminalNodeByName(UDataflow Dataflow,string TerminalNodeName,UObject ResultAsset) {}
 }

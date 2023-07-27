@@ -15,12 +15,12 @@ public partial class UArrowComponent : UPrimitiveComponent {
 	public FSpriteCategoryInfo SpriteInfo;
 	public bool bLightAttachment;
 	public bool bUseInEditorScaling;
-	public void SetArrowColor(FLinearColor NewColor) {}
-	public void SetArrowFColor(FColor NewColor) {}
-	public void SetArrowSize(float NewSize) {}
-	public void SetArrowLength(float NewLength) {}
-	public void SetScreenSize(float NewScreenSize) {}
-	public void SetIsScreenSizeScaled(bool bNewValue) {}
-	public void SetTreatAsASprite(bool bNewValue) {}
-	public void SetUseInEditorScaling(bool bNewValue) {}
+	public  void SetArrowColor(FLinearColor NewColor) {}
+	public  void SetArrowFColor(FColor NewColor) {}
+	public  void SetArrowSize(float NewSize) {}
+	public  void SetArrowLength(float NewLength) {}
+	public  void SetScreenSize(float NewScreenSize) {}
+	public  void SetIsScreenSizeScaled(bool bNewValue) {}
+	public  void SetTreatAsASprite(bool bNewValue) {}
+	public  void SetUseInEditorScaling(bool bNewValue) {}
 }

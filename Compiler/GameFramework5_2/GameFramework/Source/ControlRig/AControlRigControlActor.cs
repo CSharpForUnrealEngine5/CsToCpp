@@ -11,9 +11,9 @@ public partial class AControlRigControlActor : AActor {
 	public UMaterialInterface MaterialOverride;
 	public string ColorParameter;
 	public bool bCastShadows;
-	public void ResetControlActor() {}
-	public void Clear() {}
-	public void Refresh() {}
+	public  void ResetControlActor() {}
+	public  void Clear() {}
+	public  void Refresh() {}
 	public USceneComponent ActorRootComponent;
 	public TSoftObjectPtr<UControlRig> ControlRig;
 	public TArray<string> ControlNames;

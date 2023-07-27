@@ -11,5 +11,5 @@ public partial class APostProcessVolume : AVolume {
 	public float BlendWeight;
 	public bool bEnabled;
 	public bool bUnbound;
-	public void AddOrUpdateBlendable(object /*InBlendableObject*/ InBlendableObject,float InWeight/*=1.0f*/) {}
+	public  void AddOrUpdateBlendable(object /*InBlendableObject*/ InBlendableObject,float InWeight/*=1.0f*/) {}
 }

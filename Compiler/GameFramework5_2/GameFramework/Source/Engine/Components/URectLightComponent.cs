@@ -10,9 +10,9 @@ public partial class URectLightComponent : ULocalLightComponent {
 	public float BarnDoorAngle;
 	public float BarnDoorLength;
 	public UTexture SourceTexture;
-	public void SetSourceTexture(UObject NewValue) {}
-	public void SetSourceWidth(float NewValue) {}
-	public void SetSourceHeight(float NewValue) {}
-	public void SetBarnDoorAngle(float NewValue) {}
-	public void SetBarnDoorLength(float NewValue) {}
+	public  void SetSourceTexture(UTexture NewValue) {}
+	public  void SetSourceWidth(float NewValue) {}
+	public  void SetSourceHeight(float NewValue) {}
+	public  void SetBarnDoorAngle(float NewValue) {}
+	public  void SetBarnDoorLength(float NewValue) {}
 }

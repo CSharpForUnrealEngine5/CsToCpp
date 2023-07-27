@@ -5,7 +5,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Asset to manage allowed OpenColorIO color spaces. This will create required transform objects.</summary>
 public partial class UOpenColorIOConfiguration : UObject {
 // OpenColorIOConfiguration
-	public void ReloadExistingColorspaces() {}
+	public  void ReloadExistingColorspaces() {}
 	public FFilePath ConfigurationFile;
 	public TArray<FOpenColorIOColorSpace> DesiredColorSpaces;
 	public TArray<FOpenColorIODisplayView> DesiredDisplayViews;

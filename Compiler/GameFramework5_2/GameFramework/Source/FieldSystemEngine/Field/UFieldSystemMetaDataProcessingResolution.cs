@@ -5,6 +5,6 @@ using CSharpToCpp.Utilities;
 ///<summary>Control the set of particles on which the field will be applied</summary>
 public partial class UFieldSystemMetaDataProcessingResolution : UFieldSystemMetaData {
 // FieldSystemMetaDataProcessingResolution
-	public UObject SetMetaDataaProcessingResolutionType(EFieldResolutionType ResolutionType) { return default; }
+	public  UFieldSystemMetaDataProcessingResolution SetMetaDataaProcessingResolutionType(EFieldResolutionType ResolutionType) { return default; }
 	public byte ResolutionType;
 }

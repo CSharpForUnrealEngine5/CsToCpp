@@ -8,6 +8,6 @@ public partial class UOnlineHotfixManager : UObject {
 	public string OSSName;
 	public string HotfixManagerClassName;
 	public string DebugPrefix;
-	public void StartHotfixProcess() {}
+	public  void StartHotfixProcess() {}
 	public TArray<UObject> AssetsHotfixedFromIniFiles;
 }

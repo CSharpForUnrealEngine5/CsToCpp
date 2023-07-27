@@ -5,12 +5,12 @@ using CSharpToCpp.Utilities;
 ///<summary>* UDatasmithActorBindingElement</summary>
 public partial class UDatasmithActorBindingElement : UDatasmithObjectElement {
 // DatasmithActorBindingElement
-	public void SetActor(UObject Actor) {}
-	public UObject GetActor() { return default; }
-	public UObject CreatePropertyCapture() { return default; }
-	public UObject CreateObjectPropertyCapture() { return default; }
-	public void AddPropertyCapture(UObject Prop) {}
-	public int GetPropertyCapturesCount() { return default; }
-	public UObject GetPropertyCapture(int Index) { return default; }
-	public void RemovePropertyCapture(UObject Prop) {}
+	public  void SetActor(UDatasmithActorElement Actor) {}
+	public  UDatasmithActorElement GetActor() { return default; }
+	public  UDatasmithPropertyCaptureElement CreatePropertyCapture() { return default; }
+	public  UDatasmithObjectPropertyCaptureElement CreateObjectPropertyCapture() { return default; }
+	public  void AddPropertyCapture(UDatasmithBasePropertyCaptureElement Prop) {}
+	public  int GetPropertyCapturesCount() { return default; }
+	public  UDatasmithBasePropertyCaptureElement GetPropertyCapture(int Index) { return default; }
+	public  void RemovePropertyCapture(UDatasmithBasePropertyCaptureElement Prop) {}
 }

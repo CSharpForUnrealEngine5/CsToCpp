@@ -5,5 +5,5 @@ using CSharpToCpp.Utilities;
 ///<summary>The training model for the vertex delta model.</summary>
 public partial class UVertexDeltaTrainingModel : UMLDeformerTrainingModel {
 // VertexDeltaTrainingModel
-	public int Train() { return default; }
+	public  int Train() { return default; }
 }

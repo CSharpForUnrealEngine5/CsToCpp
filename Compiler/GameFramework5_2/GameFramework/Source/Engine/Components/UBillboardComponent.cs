@@ -17,8 +17,8 @@ public partial class UBillboardComponent : UPrimitiveComponent {
 	public FSpriteCategoryInfo SpriteInfo;
 	public bool bUseInEditorScaling;
 	public bool bShowLockedLocation;
-	public void SetSprite(UObject NewSprite) {}
-	public void SetUV(int NewU,int NewUL,int NewV,int NewVL) {}
-	public void SetSpriteAndUV(UObject NewSprite,int NewU,int NewUL,int NewV,int NewVL) {}
-	public void SetOpacityMaskRefVal(float RefVal) {}
+	public  void SetSprite(UTexture2D NewSprite) {}
+	public  void SetUV(int NewU,int NewUL,int NewV,int NewVL) {}
+	public  void SetSpriteAndUV(UTexture2D NewSprite,int NewU,int NewUL,int NewV,int NewVL) {}
+	public  void SetOpacityMaskRefVal(float RefVal) {}
 }

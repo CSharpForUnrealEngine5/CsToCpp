@@ -4,4 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("CommonUITypes.h")]
 public partial struct FOnItemSelected {
 // OnItemSelected__DelegateSignature
+	void AddDynamic(object obj, string functionName) {}
 }

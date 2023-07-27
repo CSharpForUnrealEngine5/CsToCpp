@@ -5,5 +5,5 @@ using CSharpToCpp.Utilities;
 public partial class ADatasmithImportedSequencesActor : AActor {
 // DatasmithImportedSequencesActor
 	public TArray<ULevelSequence> ImportedSequences;
-	public void PlayLevelSequence(UObject SequenceToPlay) {}
+	public  void PlayLevelSequence(ULevelSequence SequenceToPlay) {}
 }

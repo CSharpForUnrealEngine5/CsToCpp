@@ -4,5 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("ARActor.h")]
 public partial class AARActor : AActor {
 // ARActor
-	public UObject AddARComponent(UClass InComponentClass,FGuid NativeID) { return default; }
+	public  UARComponent AddARComponent(UClass InComponentClass,FGuid NativeID) { return default; }
 }

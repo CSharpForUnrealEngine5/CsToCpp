@@ -6,6 +6,6 @@ using CSharpToCpp.Utilities;
 public partial class UConstantQNRT : UAudioSynesthesiaNRT {
 // ConstantQNRT
 	public UConstantQNRTSettings Settings;
-	public void GetChannelConstantQAtTime(float InSeconds,int InChannel,TArray<float> OutConstantQ) {}
-	public void GetNormalizedChannelConstantQAtTime(float InSeconds,int InChannel,TArray<float> OutConstantQ) {}
+	public  void GetChannelConstantQAtTime(float InSeconds,int InChannel,TArray<float> OutConstantQ) {}
+	public  void GetNormalizedChannelConstantQAtTime(float InSeconds,int InChannel,TArray<float> OutConstantQ) {}
 }

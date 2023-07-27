@@ -6,14 +6,14 @@ using CSharpToCpp.Utilities;
 public partial class UNiagaraDataChannelReader : UObject {
 // NiagaraDataChannelReader
 	public UNiagaraDataChannelHandler Owner;
-	public bool InitAccess(UObject OwningComponent) { return default; }
-	public int Num() { return default; }
-	public double ReadFloat(string VarName,int Index) { return default; }
-	public FVector2D ReadVector2D(string VarName,int Index) { return default; }
-	public FVector ReadVector(string VarName,int Index) { return default; }
-	public FVector4 ReadVector4(string VarName,int Index) { return default; }
-	public FQuat ReadQuat(string VarName,int Index) { return default; }
-	public FLinearColor ReadLinearColor(string VarName,int Index) { return default; }
-	public int ReadInt(string VarName,int Index) { return default; }
-	public bool ReadBool(string VarName,int Index) { return default; }
+	public  bool InitAccess(UActorComponent OwningComponent) { return default; }
+	public  int Num() { return default; }
+	public  double ReadFloat(string VarName,int Index) { return default; }
+	public  FVector2D ReadVector2D(string VarName,int Index) { return default; }
+	public  FVector ReadVector(string VarName,int Index) { return default; }
+	public  FVector4 ReadVector4(string VarName,int Index) { return default; }
+	public  FQuat ReadQuat(string VarName,int Index) { return default; }
+	public  FLinearColor ReadLinearColor(string VarName,int Index) { return default; }
+	public  int ReadInt(string VarName,int Index) { return default; }
+	public  bool ReadBool(string VarName,int Index) { return default; }
 }

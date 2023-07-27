@@ -15,8 +15,8 @@ public partial class UAssetImportTask : UObject {
 	public bool bAsync;
 	public UFactory Factory;
 	public UObject Options;
-	public TArray<UObject> GetObjects() { return default; }
-	public bool IsAsyncImportComplete() { return default; }
+	public  TArray<UObject> GetObjects() { return default; }
+	public  bool IsAsyncImportComplete() { return default; }
 	public TArray<string> ImportedObjectPaths;
 	public TArray<UObject> Result;
 }

@@ -6,7 +6,7 @@ using CSharpToCpp.Utilities;
 public partial class UWeightMapSetProperties : UInteractiveToolPropertySet {
 // WeightMapSetProperties
 	public string WeightMap;
-	public TArray<string> GetWeightMapsFunc() { return default; }
+	public  TArray<string> GetWeightMapsFunc() { return default; }
 	public TArray<string> WeightMapsList;
 	public bool bInvertWeightMap;
 }

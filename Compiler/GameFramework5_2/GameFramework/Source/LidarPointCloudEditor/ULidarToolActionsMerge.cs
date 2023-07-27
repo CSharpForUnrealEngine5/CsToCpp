@@ -5,6 +5,6 @@ using CSharpToCpp.Utilities;
 public partial class ULidarToolActionsMerge : UInteractiveToolPropertySet {
 // LidarToolActionsMerge
 	public bool bReplaceSourceActorsAfterMerging;
-	public void MergeActors() {}
-	public void MergeData() {}
+	public  void MergeActors() {}
+	public  void MergeData() {}
 }

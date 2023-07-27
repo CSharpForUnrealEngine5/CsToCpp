@@ -4,7 +4,7 @@ using CSharpToCpp.Utilities;
 [CppInclude("GeometryScript/MeshSubdivideFunctions.h")]
 public partial class UGeometryScriptLibrary_MeshSubdivideFunctions : UBlueprintFunctionLibrary {
 // GeometryScriptLibrary_MeshSubdivideFunctions
-	public UObject ApplyPNTessellation(UObject TargetMesh,FGeometryScriptPNTessellateOptions Options,int TessellationLevel/*=3*/,UObject Debug/*=nullptr*/) { return default; }
-	public UObject ApplyUniformTessellation(UObject TargetMesh,int TessellationLevel/*=3*/,UObject Debug/*=nullptr*/) { return default; }
-	public UObject ApplySelectiveTessellation(UObject TargetMesh,FGeometryScriptMeshSelection Selection,FGeometryScriptSelectiveTessellateOptions Options,int TessellationLevel/*=1*/,ESelectiveTessellatePatternType PatternType/*=ESelectiveTessellatePatternType.ConcentricRings*/,UObject Debug/*=nullptr*/) { return default; }
+	public static UDynamicMesh ApplyPNTessellation(UDynamicMesh TargetMesh,FGeometryScriptPNTessellateOptions Options,int TessellationLevel/*=3*/,UGeometryScriptDebug Debug/*=nullptr*/) { return default; }
+	public static UDynamicMesh ApplyUniformTessellation(UDynamicMesh TargetMesh,int TessellationLevel/*=3*/,UGeometryScriptDebug Debug/*=nullptr*/) { return default; }
+	public static UDynamicMesh ApplySelectiveTessellation(UDynamicMesh TargetMesh,FGeometryScriptMeshSelection Selection,FGeometryScriptSelectiveTessellateOptions Options,int TessellationLevel/*=1*/,ESelectiveTessellatePatternType PatternType/*=ESelectiveTessellatePatternType.ConcentricRings*/,UGeometryScriptDebug Debug/*=nullptr*/) { return default; }
 }

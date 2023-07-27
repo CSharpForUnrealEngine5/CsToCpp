@@ -4,5 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("Tools/LODManagerTool.h")]
 public partial class ULODManagerMaterialActions : ULODManagerActionPropertySet {
 // LODManagerMaterialActions
-	public void CleanMaterials() {}
+	public  void CleanMaterials() {}
 }

@@ -5,5 +5,5 @@ using CSharpToCpp.Utilities;
 ///<summary>A C++ and Blueprint accessible library of utility functions for accessing Niagara DataChannel</summary>
 public partial class UNiagaraDataChannelLibrary : UBlueprintFunctionLibrary {
 // NiagaraDataChannelLibrary
-	public UObject GetNiagaraDataChannel(UObject WorldContextObject,string Channel) { return default; }
+	public static UNiagaraDataChannelHandler GetNiagaraDataChannel(UObject WorldContextObject,string Channel) { return default; }
 }

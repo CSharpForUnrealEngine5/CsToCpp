@@ -4,4 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("RootMotionModifier.h")]
 public partial struct FOnRootMotionModifierDelegate {
 // OnRootMotionModifierDelegate__DelegateSignature
+	void AddDynamic(object obj, string functionName) {}
 }

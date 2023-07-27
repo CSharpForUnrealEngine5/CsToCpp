@@ -8,5 +8,5 @@ public partial class ANavSystemConfigOverride : AActor {
 	public UNavigationSystemConfig NavigationSystemConfig;
 	public ENavSystemOverridePolicy OverridePolicy;
 	public bool bLoadOnClient;
-	public void ApplyChanges() {}
+	public  void ApplyChanges() {}
 }

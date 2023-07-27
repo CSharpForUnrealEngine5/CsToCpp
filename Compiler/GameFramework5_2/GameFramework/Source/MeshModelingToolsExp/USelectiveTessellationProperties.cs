@@ -7,6 +7,6 @@ public partial class USelectiveTessellationProperties : UInteractiveToolProperty
 // SelectiveTessellationProperties
 	public EDisplaceMeshToolTriangleSelectionType SelectionType;
 	public string ActiveMaterial;
-	public TArray<string> GetMaterialIDsFunc() { return default; }
+	public  TArray<string> GetMaterialIDsFunc() { return default; }
 	public TArray<string> MaterialIDList;
 }

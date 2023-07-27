@@ -4,9 +4,9 @@ using CSharpToCpp.Utilities;
 [CppInclude("PersonaToolMenuContext.h")]
 public partial class UPersonaToolMenuContext : UObject {
 // PersonaToolMenuContext
-	public UObject GetSkeleton() { return default; }
-	public UObject GetPreviewMeshComponent() { return default; }
-	public UObject GetMesh() { return default; }
-	public UObject GetAnimBlueprint() { return default; }
-	public UObject GetAnimationAsset() { return default; }
+	public  USkeleton GetSkeleton() { return default; }
+	public  UDebugSkelMeshComponent GetPreviewMeshComponent() { return default; }
+	public  USkeletalMesh GetMesh() { return default; }
+	public  UAnimBlueprint GetAnimBlueprint() { return default; }
+	public  UAnimationAsset GetAnimationAsset() { return default; }
 }

@@ -5,6 +5,6 @@ using CSharpToCpp.Utilities;
 ///<summary>UFUNCTION actions to manage convex hulls generation for geometry collections</summary>
 public partial class UFractureConvexActions : UFractureToolSettings {
 // FractureConvexActions
-	public void SaveAsDefaults() {}
-	public void SetFromDefaults() {}
+	public  void SaveAsDefaults() {}
+	public  void SetFromDefaults() {}
 }

@@ -4,4 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("DatasmithInterchangeScripting.h")]
 public partial struct FDatasmithInterchangeImportEnded {
 // DatasmithInterchangeImportEnded__DelegateSignature
+	void AddDynamic(object obj, string functionName) {}
 }

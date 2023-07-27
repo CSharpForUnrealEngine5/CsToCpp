@@ -5,12 +5,12 @@ using CSharpToCpp.Utilities;
 ///<summary>This is a set of helper functions to access various parts of the Sequencer and Control Rig API via Python and Blueprints.</summary>
 public partial class UConstraintsScriptingLibrary : UBlueprintFunctionLibrary {
 // ConstraintsScriptingLibrary
-	public UObject GetManager(UObject InWorld) { return default; }
-	public UObject CreateTransformableComponentHandle(UObject InWorld,UObject InSceneComponent,string InSocketName) { return default; }
-	public UObject CreateTransformableHandle(UObject InWorld,UObject InObject,string InAttachmentName/*=NAME_None*/) { return default; }
-	public UObject CreateFromType(UObject InWorld,ETransformConstraintType InType) { return default; }
-	public bool AddConstraint(UObject InWorld,UObject InParentHandle,UObject InChildHandle,UObject InConstraint,bool bMaintainOffset) { return default; }
-	public TArray<UObject> GetConstraintsArray(UObject InWorld) { return default; }
-	public bool RemoveThisConstraint(UObject InWorld,UObject InTickableConstraint) { return default; }
-	public bool RemoveConstraint(UObject InWorld,int InIndex) { return default; }
+	public static UConstraintsManager GetManager(UWorld InWorld) { return default; }
+	public static UTransformableComponentHandle CreateTransformableComponentHandle(UWorld InWorld,USceneComponent InSceneComponent,string InSocketName) { return default; }
+	public static UTransformableHandle CreateTransformableHandle(UWorld InWorld,UObject InObject,string InAttachmentName/*=NAME_None*/) { return default; }
+	public static UTickableTransformConstraint CreateFromType(UWorld InWorld,ETransformConstraintType InType) { return default; }
+	public static bool AddConstraint(UWorld InWorld,UTransformableHandle InParentHandle,UTransformableHandle InChildHandle,UTickableTransformConstraint InConstraint,bool bMaintainOffset) { return default; }
+	public static TArray<UTickableConstraint> GetConstraintsArray(UWorld InWorld) { return default; }
+	public static bool RemoveThisConstraint(UWorld InWorld,UTickableConstraint InTickableConstraint) { return default; }
+	public static bool RemoveConstraint(UWorld InWorld,int InIndex) { return default; }
 }

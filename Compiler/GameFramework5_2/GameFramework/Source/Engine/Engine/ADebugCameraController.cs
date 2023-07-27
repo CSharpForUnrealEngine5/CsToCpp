@@ -14,20 +14,20 @@ public partial class ADebugCameraController : APlayerController {
 	public bool bIsBufferVisualizationInputSetup;
 	public bool bLastDisplayEnabled;
 	public UDrawFrustumComponent DrawFrustum;
-	public void ShowDebugSelectedInfo() {}
-	public void ToggleDisplay() {}
+	public  void ShowDebugSelectedInfo() {}
+	public  void ToggleDisplay() {}
 	public TWeakObjectPtr<AActor> SelectedActor;
-	public UObject GetSelectedActor() { return default; }
+	public  AActor GetSelectedActor() { return default; }
 	public TWeakObjectPtr<UPrimitiveComponent> SelectedComponent;
 	public FHitResult SelectedHitPoint;
 	public APlayerController OriginalControllerRef;
 	public UPlayer OriginalPlayer;
 	public float SpeedScale;
-	public void SetPawnMovementSpeedScale(float NewSpeedScale) {}
+	public  void SetPawnMovementSpeedScale(float NewSpeedScale) {}
 	public float InitialMaxSpeed;
 	public float InitialAccel;
 	public float InitialDecel;
-	public void ReceiveOnActivate(UObject OriginalPC) {}
-	public void ReceiveOnDeactivate(UObject RestoredPC) {}
-	public void ReceiveOnActorSelected(UObject NewSelectedActor,FVector SelectHitLocation,FVector SelectHitNormal,FHitResult Hit) {}
+	public  void ReceiveOnActivate(APlayerController OriginalPC) {}
+	public  void ReceiveOnDeactivate(APlayerController RestoredPC) {}
+	public  void ReceiveOnActorSelected(AActor NewSelectedActor,FVector SelectHitLocation,FVector SelectHitNormal,FHitResult Hit) {}
 }

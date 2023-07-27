@@ -5,8 +5,8 @@ using CSharpToCpp.Utilities;
 ///<summary>A tracked environment texture probe that gives you a cube map for reflections</summary>
 public partial class UAREnvironmentCaptureProbe : UARTrackedGeometry {
 // AREnvironmentCaptureProbe
-	public FVector GetExtent() { return default; }
-	public UObject GetEnvironmentCaptureTexture() { return default; }
+	public  FVector GetExtent() { return default; }
+	public  UAREnvironmentCaptureProbeTexture GetEnvironmentCaptureTexture() { return default; }
 	public FVector Extent;
 	public UAREnvironmentCaptureProbeTexture EnvironmentCaptureTexture;
 }

@@ -8,18 +8,18 @@ public partial class UAnimGraphNode_PoseDriver : UAnimGraphNode_PoseHandler {
 	public float AxisLength;
 	public int ConeSubdivision;
 	public bool bDrawDebugCones;
-	public void CopyTargetsFromPoseAsset() {}
-	public void SetSourceBones(TArray<string> BoneNames) {}
-	public void GetSourceBoneNames(TArray<string> BoneNames) {}
-	public void SetDrivingBones(TArray<string> BoneNames) {}
-	public void GetDrivingBoneNames(TArray<string> BoneNames) {}
-	public void SetRBFParameters(FRBFParams Parameters) {}
-	public FRBFParams GetRBFParameters() { return default; }
-	public void SetPoseDriverSource(EPoseDriverSource DriverSource) {}
-	public EPoseDriverSource GetPoseDriverSource() { return default; }
-	public void SetPoseDriverOutput(EPoseDriverOutput DriverOutput) {}
-	public EPoseDriverOutput GetPoseDriverOutput() { return default; }
-	public void SetOnlyDriveSelectedBones(bool bOnlyDriveSelectedBones) {}
-	public bool GetOnlyDriveSelectedBones() { return default; }
+	public  void CopyTargetsFromPoseAsset() {}
+	public  void SetSourceBones(TArray<string> BoneNames) {}
+	public  void GetSourceBoneNames(TArray<string> BoneNames) {}
+	public  void SetDrivingBones(TArray<string> BoneNames) {}
+	public  void GetDrivingBoneNames(TArray<string> BoneNames) {}
+	public  void SetRBFParameters(FRBFParams Parameters) {}
+	public  FRBFParams GetRBFParameters() { return default; }
+	public  void SetPoseDriverSource(EPoseDriverSource DriverSource) {}
+	public  EPoseDriverSource GetPoseDriverSource() { return default; }
+	public  void SetPoseDriverOutput(EPoseDriverOutput DriverOutput) {}
+	public  EPoseDriverOutput GetPoseDriverOutput() { return default; }
+	public  void SetOnlyDriveSelectedBones(bool bOnlyDriveSelectedBones) {}
+	public  bool GetOnlyDriveSelectedBones() { return default; }
 	public USkeletalMeshComponent LastPreviewComponent;
 }

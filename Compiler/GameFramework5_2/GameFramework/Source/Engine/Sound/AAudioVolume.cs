@@ -10,11 +10,11 @@ public partial class AAudioVolume : AVolume {
 	public FInteriorSettings AmbientZoneSettings;
 	public TArray<FAudioVolumeSubmixSendSettings> SubmixSendSettings;
 	public TArray<FAudioVolumeSubmixOverrideSettings> SubmixOverrideSettings;
-	public void SetPriority(float NewPriority) {}
-	public void SetEnabled(bool bNewEnabled) {}
-	public void SetReverbSettings(FReverbSettings NewReverbSettings) {}
-	public void SetInteriorSettings(FInteriorSettings NewInteriorSettings) {}
-	public void SetSubmixSendSettings(TArray<FAudioVolumeSubmixSendSettings> NewSubmixSendSettings) {}
-	public void SetSubmixOverrideSettings(TArray<FAudioVolumeSubmixOverrideSettings> NewSubmixOverrideSettings) {}
-	public void OnRep_bEnabled() {}
+	public  void SetPriority(float NewPriority) {}
+	public  void SetEnabled(bool bNewEnabled) {}
+	public  void SetReverbSettings(FReverbSettings NewReverbSettings) {}
+	public  void SetInteriorSettings(FInteriorSettings NewInteriorSettings) {}
+	public  void SetSubmixSendSettings(TArray<FAudioVolumeSubmixSendSettings> NewSubmixSendSettings) {}
+	public  void SetSubmixOverrideSettings(TArray<FAudioVolumeSubmixOverrideSettings> NewSubmixOverrideSettings) {}
+	public  void OnRep_bEnabled() {}
 }

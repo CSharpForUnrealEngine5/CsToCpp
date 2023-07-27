@@ -5,7 +5,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Set a uniform vector value independently of the sample position.The output is equal to magnitude * direction</summary>
 public partial class UUniformVector : UFieldNodeVector {
 // UniformVector
-	public UObject SetUniformVector(float Magnitude,FVector Direction) { return default; }
+	public  UUniformVector SetUniformVector(float Magnitude,FVector Direction) { return default; }
 	public float Magnitude;
 	public FVector Direction;
 }

@@ -4,7 +4,7 @@ using CSharpToCpp.Utilities;
 [CppInclude("SequenceRecorderBlueprintLibrary.h")]
 public partial class USequenceRecorderBlueprintLibrary : UBlueprintFunctionLibrary {
 // SequenceRecorderBlueprintLibrary
-	public void StartRecordingSequence(TArray<UObject> ActorsToRecord) {}
-	public bool IsRecordingSequence() { return default; }
-	public void StopRecordingSequence() {}
+	public static void StartRecordingSequence(TArray<AActor> ActorsToRecord) {}
+	public static bool IsRecordingSequence() { return default; }
+	public static void StopRecordingSequence() {}
 }

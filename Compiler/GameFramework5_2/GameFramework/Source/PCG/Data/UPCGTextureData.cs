@@ -4,6 +4,6 @@ using CSharpToCpp.Utilities;
 [CppInclude("Data/PCGTextureData.h")]
 public partial class UPCGTextureData : UPCGBaseTextureData {
 // PCGTextureData
-	public void Initialize(UObject InTexture,FTransform InTransform) {}
+	public  void Initialize(UTexture2D InTexture,FTransform InTransform) {}
 	public TWeakObjectPtr<UTexture2D> Texture;
 }

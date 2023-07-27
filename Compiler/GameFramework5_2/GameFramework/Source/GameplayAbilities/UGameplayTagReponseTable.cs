@@ -6,5 +6,5 @@ using CSharpToCpp.Utilities;
 public partial class UGameplayTagReponseTable : UDataAsset {
 // GameplayTagReponseTable
 	public TArray<FGameplayTagResponseTableEntry> Entries;
-	public void TagResponseEvent(FGameplayTag Tag,int NewCount,UObject ASC,int idx) {}
+	public  void TagResponseEvent(FGameplayTag Tag,int NewCount,UAbilitySystemComponent ASC,int idx) {}
 }

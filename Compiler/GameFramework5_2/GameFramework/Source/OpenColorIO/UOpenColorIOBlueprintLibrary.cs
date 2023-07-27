@@ -4,5 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("OpenColorIOBlueprintLibrary.h")]
 public partial class UOpenColorIOBlueprintLibrary : UBlueprintFunctionLibrary {
 // OpenColorIOBlueprintLibrary
-	public bool ApplyColorSpaceTransform(UObject WorldContextObject,FOpenColorIOColorConversionSettings ConversionSettings,UObject InputTexture,UObject OutputRenderTarget) { return default; }
+	public static bool ApplyColorSpaceTransform(UObject WorldContextObject,FOpenColorIOColorConversionSettings ConversionSettings,UTexture InputTexture,UTextureRenderTarget2D OutputRenderTarget) { return default; }
 }

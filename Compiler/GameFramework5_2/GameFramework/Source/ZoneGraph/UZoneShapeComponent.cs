@@ -4,13 +4,13 @@ using CSharpToCpp.Utilities;
 [CppInclude("ZoneShapeComponent.h")]
 public partial class UZoneShapeComponent : UPrimitiveComponent {
 // ZoneShapeComponent
-	public FZoneShapeType GetShapeType() { return default; }
-	public void SetShapeType(FZoneShapeType Type) {}
-	public FZoneGraphTagMask GetTags() { return default; }
-	public void SetTags(FZoneGraphTagMask NewTags) {}
-	public bool IsLaneProfileReversed() { return default; }
-	public bool SetReverseLaneProfile(bool bReverse) { return default; }
-	public void SetPolygonRoutingType(EZoneShapePolygonRoutingType NewType) {}
+	public  FZoneShapeType GetShapeType() { return default; }
+	public  void SetShapeType(FZoneShapeType Type) {}
+	public  FZoneGraphTagMask GetTags() { return default; }
+	public  void SetTags(FZoneGraphTagMask NewTags) {}
+	public  bool IsLaneProfileReversed() { return default; }
+	public  bool SetReverseLaneProfile(bool bReverse) { return default; }
+	public  void SetPolygonRoutingType(EZoneShapePolygonRoutingType NewType) {}
 	public FZoneLaneProfileRef LaneProfile;
 	public bool bReverseLaneProfile;
 	public TArray<FZoneLaneProfileRef> PerPointLaneProfiles;

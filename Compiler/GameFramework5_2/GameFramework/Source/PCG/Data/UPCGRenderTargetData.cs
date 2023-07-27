@@ -5,6 +5,6 @@ using CSharpToCpp.Utilities;
 ///<summary>TODO: It's possible that caching the result in this class is not as efficient as it could be</summary>
 public partial class UPCGRenderTargetData : UPCGBaseTextureData {
 // PCGRenderTargetData
-	public void Initialize(UObject InRenderTarget,FTransform InTransform) {}
+	public  void Initialize(UTextureRenderTarget2D InRenderTarget,FTransform InTransform) {}
 	public UTextureRenderTarget2D RenderTarget;
 }

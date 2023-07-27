@@ -6,9 +6,9 @@ public partial class UFindSessionsCallbackProxy : UOnlineBlueprintCallProxyBase 
 // FindSessionsCallbackProxy
 	public FBlueprintFindSessionsResultDelegate OnSuccess;
 	public FBlueprintFindSessionsResultDelegate OnFailure;
-	public UObject FindSessions(UObject WorldContextObject,UObject PlayerController,int MaxResults,bool bUseLAN) { return default; }
-	public int GetPingInMs(FBlueprintSessionResult Result) { return default; }
-	public string GetServerName(FBlueprintSessionResult Result) { return default; }
-	public int GetCurrentPlayers(FBlueprintSessionResult Result) { return default; }
-	public int GetMaxPlayers(FBlueprintSessionResult Result) { return default; }
+	public static UFindSessionsCallbackProxy FindSessions(UObject WorldContextObject,APlayerController PlayerController,int MaxResults,bool bUseLAN) { return default; }
+	public static int GetPingInMs(FBlueprintSessionResult Result) { return default; }
+	public static string GetServerName(FBlueprintSessionResult Result) { return default; }
+	public static int GetCurrentPlayers(FBlueprintSessionResult Result) { return default; }
+	public static int GetMaxPlayers(FBlueprintSessionResult Result) { return default; }
 }

@@ -4,10 +4,10 @@ using CSharpToCpp.Utilities;
 [CppInclude("MLDeformerMorphModel.h")]
 public partial class UMLDeformerMorphModel : UMLDeformerGeomCacheModel {
 // MLDeformerMorphModel
-	public void SetMorphTargetDeltaFloats(TArray<float> Deltas) {}
-	public void SetMorphTargetDeltas(TArray<FVector3f> Deltas) {}
-	public void SetMorphTargetsErrorOrder(TArray<int> MorphTargetOrder,TArray<float> ErrorValues) {}
-	public void SetMorphTargetsMaxWeights(TArray<float> MaxWeights) {}
+	public  void SetMorphTargetDeltaFloats(TArray<float> Deltas) {}
+	public  void SetMorphTargetDeltas(TArray<FVector3f> Deltas) {}
+	public  void SetMorphTargetsErrorOrder(TArray<int> MorphTargetOrder,TArray<float> ErrorValues) {}
+	public  void SetMorphTargetsMaxWeights(TArray<float> MaxWeights) {}
 	public TArray<FVector3f> MorphTargetDeltas;
 	public int NumMorphTargets;
 	public ulong CompressedMorphDataSizeInBytes;

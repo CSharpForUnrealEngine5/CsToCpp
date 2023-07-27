@@ -4,5 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("AnimGraphNodeCustomizationInterface.h")]
 public partial class UAnimGraphNodeCustomizationInterface : UInterface {
 // AnimGraphNodeCustomizationInterface
-	public FLinearColor GetTitleColor() { return default; }
+	public  FLinearColor GetTitleColor() { return default; }
 }

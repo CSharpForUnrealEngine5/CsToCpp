@@ -52,5 +52,5 @@ public partial class UParticleSystem : UFXSystemAsset {
 	public FBox CustomOcclusionBounds;
 	public TArray<FLODSoloTrack> SoloTracking;
 	public TArray<FNamedEmitterMaterial> NamedMaterialSlots;
-	public bool ContainsEmitterType(UClass TypeData) { return default; }
+	public  bool ContainsEmitterType(UClass TypeData) { return default; }
 }

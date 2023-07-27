@@ -19,11 +19,11 @@ public partial class ULegacyCameraShake : UCameraShakeBase {
 	public UCameraAnimationSequence AnimSequence;
 	public bool bRandomAnimSegment;
 	public float OscillatorTimeRemaining;
-	public void ReceivePlayShake(float Scale) {}
-	public void BlueprintUpdateCameraShake(float DeltaTime,float Alpha,FMinimalViewInfo POV,FMinimalViewInfo ModifiedPOV) {}
-	public bool ReceiveIsFinished() { return default; }
-	public void ReceiveStopShake(bool bImmediately) {}
-	public UObject StartLegacyCameraShake(UObject PlayerCameraManager,UClass ShakeClass,float Scale/*=1.0f*/,ECameraShakePlaySpace PlaySpace/*=ECameraShakePlaySpace.CameraLocal*/,FRotator UserPlaySpaceRot/*=FRotator.ZeroRotator*/) { return default; }
-	public UObject StartLegacyCameraShakeFromSource(UObject PlayerCameraManager,UClass ShakeClass,UObject SourceComponent,float Scale/*=1.0f*/,ECameraShakePlaySpace PlaySpace/*=ECameraShakePlaySpace.CameraLocal*/,FRotator UserPlaySpaceRot/*=FRotator.ZeroRotator*/) { return default; }
+	public  void ReceivePlayShake(float Scale) {}
+	public  void BlueprintUpdateCameraShake(float DeltaTime,float Alpha,FMinimalViewInfo POV,FMinimalViewInfo ModifiedPOV) {}
+	public  bool ReceiveIsFinished() { return default; }
+	public  void ReceiveStopShake(bool bImmediately) {}
+	public static ULegacyCameraShake StartLegacyCameraShake(APlayerCameraManager PlayerCameraManager,UClass ShakeClass,float Scale/*=1.0f*/,ECameraShakePlaySpace PlaySpace/*=ECameraShakePlaySpace.CameraLocal*/,FRotator UserPlaySpaceRot/*=FRotator.ZeroRotator*/) { return default; }
+	public static ULegacyCameraShake StartLegacyCameraShakeFromSource(APlayerCameraManager PlayerCameraManager,UClass ShakeClass,UCameraShakeSourceComponent SourceComponent,float Scale/*=1.0f*/,ECameraShakePlaySpace PlaySpace/*=ECameraShakePlaySpace.CameraLocal*/,FRotator UserPlaySpaceRot/*=FRotator.ZeroRotator*/) { return default; }
 	public USequenceCameraShakePattern SequenceShakePattern;
 }

@@ -4,4 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("Components/SpinBox.h")]
 public partial struct FOnSpinBoxBeginSliderMovement {
 // OnSpinBoxBeginSliderMovement__DelegateSignature
+	void AddDynamic(object obj, string functionName) {}
 }

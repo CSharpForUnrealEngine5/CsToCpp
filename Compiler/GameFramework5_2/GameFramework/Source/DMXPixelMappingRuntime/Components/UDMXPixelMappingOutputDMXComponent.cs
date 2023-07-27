@@ -5,5 +5,5 @@ using CSharpToCpp.Utilities;
 ///<summary>Parent class for DMX sending components</summary>
 public partial class UDMXPixelMappingOutputDMXComponent : UDMXPixelMappingOutputComponent {
 // DMXPixelMappingOutputDMXComponent
-	public void RenderWithInputAndSendDMX() {}
+	public  void RenderWithInputAndSendDMX() {}
 }

@@ -5,11 +5,11 @@ using CSharpToCpp.Utilities;
 ///<summary>The Function Library is a graph used only to store</summary>
 public partial class URigVMFunctionLibrary : URigVMGraph {
 // RigVMFunctionLibrary
-	public TArray<UObject> GetFunctions() { return default; }
-	public UObject FindFunction(string InFunctionName) { return default; }
-	public UObject FindFunctionForNode(UObject InNode) { return default; }
-	public TArray<TSoftObjectPtr<URigVMFunctionReferenceNode>> GetReferencesForFunction(string InFunctionName) { return default; }
-	public TArray<string> GetReferencePathsForFunction(string InFunctionName) { return default; }
+	public  TArray<URigVMLibraryNode> GetFunctions() { return default; }
+	public  URigVMLibraryNode FindFunction(string InFunctionName) { return default; }
+	public  URigVMLibraryNode FindFunctionForNode(URigVMNode InNode) { return default; }
+	public  TArray<TSoftObjectPtr<URigVMFunctionReferenceNode>> GetReferencesForFunction(string InFunctionName) { return default; }
+	public  TArray<string> GetReferencePathsForFunction(string InFunctionName) { return default; }
 	public TArray<string> PublicFunctionNames;
 	public TMap<URigVMLibraryNode,FRigVMFunctionReferenceArray> FunctionReferences_DEPRECATED;
 	public TMap<string,URigVMLibraryNode> LocalizedFunctions;

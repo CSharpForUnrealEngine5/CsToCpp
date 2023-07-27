@@ -27,20 +27,20 @@ public partial class ULevelStreaming : UObject {
 	public TArray<ALevelStreamingVolume> EditorStreamingVolumes;
 	public float MinTimeBetweenVolumeUnloadRequests;
 	public TArray<string> Keywords;
-	public void SetShouldBeVisible(bool bInShouldBeVisible) {}
-	public void SetShouldBeLoaded(bool bInShouldBeLoaded) {}
-	public void SetLevelLODIndex(int LODIndex) {}
-	public void SetPriority(int NewPriority) {}
-	public bool GetIsRequestingUnloadAndRemoval() { return default; }
-	public void SetIsRequestingUnloadAndRemoval(bool bInIsRequestingUnloadAndRemoval) {}
-	public string GetWorldAssetPackageFName() { return default; }
-	public bool ShouldBeLoaded() { return default; }
-	public UObject GetLoadedLevel() { return default; }
-	public bool IsLevelVisible() { return default; }
-	public bool IsLevelLoaded() { return default; }
-	public bool IsStreamingStatePending() { return default; }
-	public UObject CreateInstance(string UniqueInstanceName) { return default; }
-	public UObject GetLevelScriptActor() { return default; }
+	public  void SetShouldBeVisible(bool bInShouldBeVisible) {}
+	public  void SetShouldBeLoaded(bool bInShouldBeLoaded) {}
+	public  void SetLevelLODIndex(int LODIndex) {}
+	public  void SetPriority(int NewPriority) {}
+	public  bool GetIsRequestingUnloadAndRemoval() { return default; }
+	public  void SetIsRequestingUnloadAndRemoval(bool bInIsRequestingUnloadAndRemoval) {}
+	public  string GetWorldAssetPackageFName() { return default; }
+	public  bool ShouldBeLoaded() { return default; }
+	public  ULevel GetLoadedLevel() { return default; }
+	public  bool IsLevelVisible() { return default; }
+	public  bool IsLevelLoaded() { return default; }
+	public  bool IsStreamingStatePending() { return default; }
+	public  ULevelStreaming CreateInstance(string UniqueInstanceName) { return default; }
+	public  ALevelScriptActor GetLevelScriptActor() { return default; }
 	public FLevelStreamingLoadedStatus OnLevelLoaded;
 	public FLevelStreamingLoadedStatus OnLevelUnloaded;
 	public FLevelStreamingVisibilityStatus OnLevelShown;

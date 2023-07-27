@@ -34,12 +34,12 @@ public partial class UAnimSequence : UAnimSequenceBase {
 	public string SourceFilePath_DEPRECATED;
 	public string SourceFileTimestamp_DEPRECATED;
 	public TArray<FAnimSyncMarker> AuthoredSyncMarkers;
-	public void AddBoneFloatCustomAttribute(string BoneName,string AttributeName,TArray<float> TimeKeys,TArray<float> ValueKeys) {}
-	public void AddBoneIntegerCustomAttribute(string BoneName,string AttributeName,TArray<float> TimeKeys,TArray<int> ValueKeys) {}
-	public void AddBoneStringCustomAttribute(string BoneName,string AttributeName,TArray<float> TimeKeys,TArray<string> ValueKeys) {}
-	public void RemoveCustomAttribute(string BoneName,string AttributeName) {}
-	public void RemoveAllCustomAttributesForBone(string BoneName) {}
-	public void RemoveAllCustomAttributes() {}
+	public  void AddBoneFloatCustomAttribute(string BoneName,string AttributeName,TArray<float> TimeKeys,TArray<float> ValueKeys) {}
+	public  void AddBoneIntegerCustomAttribute(string BoneName,string AttributeName,TArray<float> TimeKeys,TArray<int> ValueKeys) {}
+	public  void AddBoneStringCustomAttribute(string BoneName,string AttributeName,TArray<float> TimeKeys,TArray<string> ValueKeys) {}
+	public  void RemoveCustomAttribute(string BoneName,string AttributeName) {}
+	public  void RemoveAllCustomAttributesForBone(string BoneName) {}
+	public  void RemoveAllCustomAttributes() {}
 	public FFrameRate TargetFrameRate;
 	public FPerPlatformFrameRate PlatformTargetFrameRate;
 	public int NumberOfSampledKeys;

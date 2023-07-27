@@ -4,4 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("Abilities/Tasks/AbilityTask_WaitOverlap.h")]
 public partial struct FWaitOverlapDelegate {
 // WaitOverlapDelegate__DelegateSignature
+	void AddDynamic(object obj, string functionName) {}
 }

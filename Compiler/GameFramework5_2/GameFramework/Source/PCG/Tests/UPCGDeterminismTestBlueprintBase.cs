@@ -4,5 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("Tests/Determinism/PCGDeterminismTestBlueprintBase.h")]
 public partial class UPCGDeterminismTestBlueprintBase : UObject {
 // PCGDeterminismTestBlueprintBase
-	public void ExecuteTest(UObject InPCGNode,FDeterminismTestResult InOutTestResult) {}
+	public  void ExecuteTest(UPCGNode InPCGNode,FDeterminismTestResult InOutTestResult) {}
 }

@@ -5,8 +5,8 @@ using CSharpToCpp.Utilities;
 ///<summary>Base blueprint class for behaviour node which holds the logic to execute behaviour</summary>
 public partial class URCBehaviourBlueprintNode : URCBehaviourNode {
 // RCBehaviourBlueprintNode
-	public bool IsSupported(UObject InBehaviour) { return default; }
-	public bool Execute(UObject InBehaviour) { return default; }
-	public void PreExecute(UObject InBehaviour) {}
-	public void OnPassed(UObject InBehaviour) {}
+	public  bool IsSupported(URCBehaviour InBehaviour) { return default; }
+	public  bool Execute(URCBehaviour InBehaviour) { return default; }
+	public  void PreExecute(URCBehaviour InBehaviour) {}
+	public  void OnPassed(URCBehaviour InBehaviour) {}
 }

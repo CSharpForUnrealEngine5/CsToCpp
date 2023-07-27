@@ -9,6 +9,6 @@ public partial class UTakeRecorderDMXLibrarySource : UTakeRecorderSource {
 	public FAddAllPatchesButton AddAllPatchesDummy;
 	public TArray<FDMXEntityFixturePatchRef> FixturePatchRefs;
 	public bool bRecordNormalizedValues;
-	public void AddAllPatches() {}
+	public  void AddAllPatches() {}
 	public UMovieSceneDMXLibraryTrackRecorder TrackRecorder;
 }

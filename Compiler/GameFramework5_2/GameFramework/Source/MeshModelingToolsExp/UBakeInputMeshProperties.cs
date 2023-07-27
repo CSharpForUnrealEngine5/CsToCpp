@@ -19,8 +19,8 @@ public partial class UBakeInputMeshProperties : UInteractiveToolPropertySet {
 	public bool bHasSourceNormalMap;
 	public float ProjectionDistance;
 	public bool bProjectionInWorldSpace;
-	public TArray<string> GetTargetUVLayerNamesFunc() { return default; }
+	public  TArray<string> GetTargetUVLayerNamesFunc() { return default; }
 	public TArray<string> TargetUVLayerNamesList;
-	public TArray<string> GetSourceUVLayerNamesFunc() { return default; }
+	public  TArray<string> GetSourceUVLayerNamesFunc() { return default; }
 	public TArray<string> SourceUVLayerNamesList;
 }

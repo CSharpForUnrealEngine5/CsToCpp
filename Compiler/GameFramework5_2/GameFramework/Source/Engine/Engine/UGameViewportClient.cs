@@ -10,7 +10,7 @@ public partial class UGameViewportClient : UScriptViewportClient {
 	public int MaxSplitscreenPlayers;
 	public UWorld World;
 	public UGameInstance GameInstance;
-	public void SSSwapControllers() {}
-	public void ShowTitleSafeArea() {}
-	public void SetConsoleTarget(int PlayerIndex) {}
+	public  void SSSwapControllers() {}
+	public  void ShowTitleSafeArea() {}
+	public  void SetConsoleTarget(int PlayerIndex) {}
 }

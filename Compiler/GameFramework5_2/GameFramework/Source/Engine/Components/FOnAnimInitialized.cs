@@ -4,4 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("Components/SkeletalMeshComponent.h")]
 public partial struct FOnAnimInitialized {
 // OnAnimInitialized__DelegateSignature
+	void AddDynamic(object obj, string functionName) {}
 }

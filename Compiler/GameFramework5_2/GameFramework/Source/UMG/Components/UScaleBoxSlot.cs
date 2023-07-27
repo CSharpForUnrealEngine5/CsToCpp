@@ -8,7 +8,7 @@ public partial class UScaleBoxSlot : UPanelSlot {
 	public FMargin Padding_DEPRECATED;
 	public byte HorizontalAlignment;
 	public byte VerticalAlignment;
-	public void SetPadding(FMargin InPadding) {}
-	public void SetHorizontalAlignment(EHorizontalAlignment InHorizontalAlignment) {}
-	public void SetVerticalAlignment(EVerticalAlignment InVerticalAlignment) {}
+	public  void SetPadding(FMargin InPadding) {}
+	public  void SetHorizontalAlignment(EHorizontalAlignment InHorizontalAlignment) {}
+	public  void SetVerticalAlignment(EVerticalAlignment InVerticalAlignment) {}
 }

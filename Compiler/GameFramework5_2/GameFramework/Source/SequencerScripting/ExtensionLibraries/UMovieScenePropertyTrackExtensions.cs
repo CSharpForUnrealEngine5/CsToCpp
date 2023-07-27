@@ -5,12 +5,12 @@ using CSharpToCpp.Utilities;
 ///<summary>Function library containing methods that should be hoisted onto UMovieScenePropertyTrack for scripting</summary>
 public partial class UMovieScenePropertyTrackExtensions : UBlueprintFunctionLibrary {
 // MovieScenePropertyTrackExtensions
-	public void SetPropertyNameAndPath(UObject Track,string InPropertyName,string InPropertyPath) {}
-	public string GetPropertyName(UObject Track) { return default; }
-	public string GetPropertyPath(UObject Track) { return default; }
-	public string GetUniqueTrackName(UObject Track) { return default; }
-	public void SetObjectPropertyClass(UObject Track,UClass PropertyClass) {}
-	public UClass GetObjectPropertyClass(UObject Track) { return default; }
-	public void SetByteTrackEnum(UObject Track,UObject InEnum) {}
-	public UObject GetByteTrackEnum(UObject Track) { return default; }
+	public static void SetPropertyNameAndPath(UMovieScenePropertyTrack Track,string InPropertyName,string InPropertyPath) {}
+	public static string GetPropertyName(UMovieScenePropertyTrack Track) { return default; }
+	public static string GetPropertyPath(UMovieScenePropertyTrack Track) { return default; }
+	public static string GetUniqueTrackName(UMovieScenePropertyTrack Track) { return default; }
+	public static void SetObjectPropertyClass(UMovieSceneObjectPropertyTrack Track,UClass PropertyClass) {}
+	public static UClass GetObjectPropertyClass(UMovieSceneObjectPropertyTrack Track) { return default; }
+	public static void SetByteTrackEnum(UMovieSceneByteTrack Track,UEnum InEnum) {}
+	public static UEnum GetByteTrackEnum(UMovieSceneByteTrack Track) { return default; }
 }

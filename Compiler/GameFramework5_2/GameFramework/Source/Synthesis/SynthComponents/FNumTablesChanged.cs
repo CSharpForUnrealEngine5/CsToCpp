@@ -4,4 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("SynthComponents/SynthComponentMonoWaveTable.h")]
 public partial struct FNumTablesChanged {
 // NumTablesChanged__DelegateSignature
+	void AddDynamic(object obj, string functionName) {}
 }

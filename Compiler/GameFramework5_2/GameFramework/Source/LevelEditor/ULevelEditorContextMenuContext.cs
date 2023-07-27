@@ -9,5 +9,5 @@ public partial class ULevelEditorContextMenuContext : UObject {
 	public FVector CursorWorldLocation;
 	public TArray<UActorComponent> SelectedComponents;
 	public TWeakObjectPtr<AActor> HitProxyActor;
-	public FScriptTypedElementHandle GetScriptHitProxyElement() { return default; }
+	public  FScriptTypedElementHandle GetScriptHitProxyElement() { return default; }
 }

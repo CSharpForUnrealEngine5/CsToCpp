@@ -4,4 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("Components/PlatformEventsComponent.h")]
 public partial struct FPlatformEventDelegate {
 // PlatformEventDelegate__DelegateSignature
+	void AddDynamic(object obj, string functionName) {}
 }

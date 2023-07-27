@@ -5,5 +5,5 @@ using CSharpToCpp.Utilities;
 public partial class UCompositingElementInput : UCompositingElementPass {
 // CompositingElementInput
 	public bool bIntermediate;
-	public UObject GenerateInput() { return default; }
+	public  UTexture GenerateInput() { return default; }
 }

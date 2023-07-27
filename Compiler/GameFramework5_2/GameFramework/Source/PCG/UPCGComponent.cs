@@ -4,15 +4,15 @@ using CSharpToCpp.Utilities;
 [CppInclude("PCGComponent.h")]
 public partial class UPCGComponent : UActorComponent {
 // PCGComponent
-	public void SetGraph(UObject InGraph) {}
-	public void AddToManagedResources(UObject InResource) {}
-	public void GenerateLocal(bool bForce) {}
-	public void CleanupLocal(bool bRemoveComponents,bool bSave/*=false*/) {}
-	public void Generate(bool bForce) {}
-	public void Cleanup(bool bRemoveComponents,bool bSave/*=false*/) {}
-	public void NotifyPropertiesChangedFromBlueprint() {}
-	public FPCGDataCollection GetGeneratedGraphOutput() { return default; }
-	public UObject ClearPCGLink(UClass TemplateActor/*=nullptr*/) { return default; }
+	public  void SetGraph(UPCGGraphInterface InGraph) {}
+	public  void AddToManagedResources(UPCGManagedResource InResource) {}
+	public  void GenerateLocal(bool bForce) {}
+	public  void CleanupLocal(bool bRemoveComponents,bool bSave/*=false*/) {}
+	public  void Generate(bool bForce) {}
+	public  void Cleanup(bool bRemoveComponents,bool bSave/*=false*/) {}
+	public  void NotifyPropertiesChangedFromBlueprint() {}
+	public  FPCGDataCollection GetGeneratedGraphOutput() { return default; }
+	public  AActor ClearPCGLink(UClass TemplateActor/*=nullptr*/) { return default; }
 	public EPCGComponentInput InputType;
 	public bool bParseActorComponents;
 	public int Seed;

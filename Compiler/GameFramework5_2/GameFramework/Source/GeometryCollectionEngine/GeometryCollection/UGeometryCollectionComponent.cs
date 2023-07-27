@@ -6,25 +6,25 @@ using CSharpToCpp.Utilities;
 public partial class UGeometryCollectionComponent : UMeshComponent {
 // GeometryCollectionComponent
 	public AChaosSolverActor ChaosSolverActor;
-	public FBox GetLocalBounds() { return default; }
-	public void ApplyExternalStrain(int ItemIndex,FVector Location,float Radius/*=0f*/,int PropagationDepth/*=0*/,float PropagationFactor/*=1f*/,float Strain/*=0f*/) {}
-	public void ApplyInternalStrain(int ItemIndex,FVector Location,float Radius/*=0f*/,int PropagationDepth/*=0*/,float PropagationFactor/*=1f*/,float Strain/*=0f*/) {}
-	public void CrumbleCluster(int ItemIndex) {}
-	public void CrumbleActiveClusters() {}
-	public void SetAnchoredByIndex(int Index,bool bAnchored) {}
-	public void SetAnchoredByBox(FBox WorldSpaceBox,bool bAnchored,int MaxLevel/*=-1*/) {}
-	public void SetAnchoredByTransformedBox(FBox Box,FTransform Transform,bool bAnchored,int MaxLevel/*=-1*/) {}
-	public void RemoveAllAnchors() {}
-	public void ApplyBreakingLinearVelocity(int ItemIndex,FVector LinearVelocity) {}
-	public void ApplyBreakingAngularVelocity(int ItemIndex,FVector AngularVelocity) {}
-	public void ApplyLinearVelocity(int ItemIndex,FVector LinearVelocity) {}
-	public void ApplyAngularVelocity(int ItemIndex,FVector AngularVelocity) {}
-	public int GetInitialLevel(int ItemIndex) { return default; }
-	public int GetRootIndex() { return default; }
-	public void GetMassAndExtents(int ItemIndex,float OutMass,FBox OutExtents) {}
-	public void SetRestCollection(UObject RestCollectionIn) {}
-	public string GetDebugInfo() { return default; }
-	public void SetEnableDamageFromCollision(bool bValue) {}
+	public  FBox GetLocalBounds() { return default; }
+	public  void ApplyExternalStrain(int ItemIndex,FVector Location,float Radius/*=0f*/,int PropagationDepth/*=0*/,float PropagationFactor/*=1f*/,float Strain/*=0f*/) {}
+	public  void ApplyInternalStrain(int ItemIndex,FVector Location,float Radius/*=0f*/,int PropagationDepth/*=0*/,float PropagationFactor/*=1f*/,float Strain/*=0f*/) {}
+	public  void CrumbleCluster(int ItemIndex) {}
+	public  void CrumbleActiveClusters() {}
+	public  void SetAnchoredByIndex(int Index,bool bAnchored) {}
+	public  void SetAnchoredByBox(FBox WorldSpaceBox,bool bAnchored,int MaxLevel/*=-1*/) {}
+	public  void SetAnchoredByTransformedBox(FBox Box,FTransform Transform,bool bAnchored,int MaxLevel/*=-1*/) {}
+	public  void RemoveAllAnchors() {}
+	public  void ApplyBreakingLinearVelocity(int ItemIndex,FVector LinearVelocity) {}
+	public  void ApplyBreakingAngularVelocity(int ItemIndex,FVector AngularVelocity) {}
+	public  void ApplyLinearVelocity(int ItemIndex,FVector LinearVelocity) {}
+	public  void ApplyAngularVelocity(int ItemIndex,FVector AngularVelocity) {}
+	public  int GetInitialLevel(int ItemIndex) { return default; }
+	public  int GetRootIndex() { return default; }
+	public  void GetMassAndExtents(int ItemIndex,float OutMass,FBox OutExtents) {}
+	public  void SetRestCollection(UGeometryCollection RestCollectionIn) {}
+	public  string GetDebugInfo() { return default; }
+	public  void SetEnableDamageFromCollision(bool bValue) {}
 	public UGeometryCollection RestCollection;
 	public TArray<AFieldSystemActor> InitializationFields;
 	public bool Simulating_DEPRECATED;
@@ -51,22 +51,22 @@ public partial class UGeometryCollectionComponent : UMeshComponent {
 	public UPhysicalMaterial PhysicalMaterialOverride_DEPRECATED;
 	public FGeomComponentCacheParameters CacheParameters;
 	public TArray<FTransform> RestTransforms;
-	public void ApplyKinematicField(float Radius,FVector Position) {}
-	public void ApplyPhysicsField(bool Enabled,EGeometryCollectionPhysicsTypeEnum Target,UObject MetaData,UObject Field) {}
-	public void FNotifyGeometryCollectionPhysicsStateChange(UObject FracturedComponent) {}
+	public  void ApplyKinematicField(float Radius,FVector Position) {}
+	public  void ApplyPhysicsField(bool Enabled,EGeometryCollectionPhysicsTypeEnum Target,UFieldSystemMetaData MetaData,UFieldNodeBase Field) {}
+	public  void FNotifyGeometryCollectionPhysicsStateChange(UGeometryCollectionComponent FracturedComponent) {}
 	public FNotifyGeometryCollectionPhysicsStateChange NotifyGeometryCollectionPhysicsStateChange;
-	public void FNotifyGeometryCollectionPhysicsLoadingStateChange(UObject FracturedComponent) {}
+	public  void FNotifyGeometryCollectionPhysicsLoadingStateChange(UGeometryCollectionComponent FracturedComponent) {}
 	public FNotifyGeometryCollectionPhysicsLoadingStateChange NotifyGeometryCollectionPhysicsLoadingStateChange;
-	public void SetNotifyBreaks(bool bNewNotifyBreaks) {}
-	public void SetNotifyRemovals(bool bNewNotifyRemovals) {}
-	public void SetNotifyCrumblings(bool bNewNotifyCrumblings,bool bNewCrumblingEventIncludesChildren/*=false*/) {}
+	public  void SetNotifyBreaks(bool bNewNotifyBreaks) {}
+	public  void SetNotifyRemovals(bool bNewNotifyRemovals) {}
+	public  void SetNotifyCrumblings(bool bNewNotifyCrumblings,bool bNewCrumblingEventIncludesChildren/*=false*/) {}
 	public FOnChaosBreakEvent OnChaosBreakEvent;
 	public FOnChaosRemovalEvent OnChaosRemovalEvent;
 	public FOnChaosCrumblingEvent OnChaosCrumblingEvent;
 	public float DesiredCacheTime;
 	public bool CachePlayback;
 	public FOnChaosPhysicsCollision OnChaosPhysicsCollision;
-	public void ReceivePhysicsCollision(FChaosPhysicsCollisionInfo CollisionInfo) {}
+	public  void ReceivePhysicsCollision(FChaosPhysicsCollisionInfo CollisionInfo) {}
 	public bool bNotifyBreaks;
 	public bool bNotifyCollisions;
 	public bool bNotifyTrailing;

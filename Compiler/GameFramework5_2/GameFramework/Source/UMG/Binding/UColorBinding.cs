@@ -4,6 +4,6 @@ using CSharpToCpp.Utilities;
 [CppInclude("Binding/ColorBinding.h")]
 public partial class UColorBinding : UPropertyBinding {
 // ColorBinding
-	public FSlateColor GetSlateValue() { return default; }
-	public FLinearColor GetLinearValue() { return default; }
+	public  FSlateColor GetSlateValue() { return default; }
+	public  FLinearColor GetLinearValue() { return default; }
 }

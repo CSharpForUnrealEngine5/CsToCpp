@@ -4,5 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("Binding/Int32Binding.h")]
 public partial class UInt32Binding : UPropertyBinding {
 // Int32Binding
-	public int GetValue() { return default; }
+	public  int GetValue() { return default; }
 }

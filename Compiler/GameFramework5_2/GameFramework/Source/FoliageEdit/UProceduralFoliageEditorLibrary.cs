@@ -4,8 +4,8 @@ using CSharpToCpp.Utilities;
 [CppInclude("ProceduralFoliageEditorLibrary.h")]
 public partial class UProceduralFoliageEditorLibrary : UBlueprintFunctionLibrary {
 // ProceduralFoliageEditorLibrary
-	public void ResimulateProceduralFoliageVolumes(TArray<UObject> ProceduralFoliageVolumes) {}
-	public void ResimulateProceduralFoliageComponents(TArray<UObject> ProceduralFoliageComponents) {}
-	public void ClearProceduralFoliageVolumes(TArray<UObject> ProceduralFoliageVolumes) {}
-	public void ClearProceduralFoliageComponents(TArray<UObject> ProceduralFoliageComponents) {}
+	public static void ResimulateProceduralFoliageVolumes(TArray<AProceduralFoliageVolume> ProceduralFoliageVolumes) {}
+	public static void ResimulateProceduralFoliageComponents(TArray<UProceduralFoliageComponent> ProceduralFoliageComponents) {}
+	public static void ClearProceduralFoliageVolumes(TArray<AProceduralFoliageVolume> ProceduralFoliageVolumes) {}
+	public static void ClearProceduralFoliageComponents(TArray<UProceduralFoliageComponent> ProceduralFoliageComponents) {}
 }

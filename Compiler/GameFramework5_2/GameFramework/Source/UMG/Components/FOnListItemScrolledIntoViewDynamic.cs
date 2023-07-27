@@ -4,4 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("Components/ListView.h")]
 public partial struct FOnListItemScrolledIntoViewDynamic {
 // OnListItemScrolledIntoViewDynamic__DelegateSignature
+	void AddDynamic(object obj, string functionName) {}
 }

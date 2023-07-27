@@ -4,4 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("MockCharacterAbilitySimulation.h")]
 public partial struct FMockCharacterAbilityBlinkCueRollback {
 // MockCharacterAbilityBlinkCueRollback__DelegateSignature
+	void AddDynamic(object obj, string functionName) {}
 }

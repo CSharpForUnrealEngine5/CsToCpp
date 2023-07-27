@@ -14,8 +14,8 @@ public partial class UMovieSceneCapture : UObject {
 	public bool bCloseEditorWhenCaptureStarts;
 	public string AdditionalCommandLineArguments;
 	public string InheritedCommandLineArguments;
-	public UObject GetImageCaptureProtocol() { return default; }
-	public UObject GetAudioCaptureProtocol() { return default; }
-	public void SetImageCaptureProtocolType(UClass ProtocolType) {}
-	public void SetAudioCaptureProtocolType(UClass ProtocolType) {}
+	public  UMovieSceneCaptureProtocolBase GetImageCaptureProtocol() { return default; }
+	public  UMovieSceneCaptureProtocolBase GetAudioCaptureProtocol() { return default; }
+	public  void SetImageCaptureProtocolType(UClass ProtocolType) {}
+	public  void SetAudioCaptureProtocolType(UClass ProtocolType) {}
 }

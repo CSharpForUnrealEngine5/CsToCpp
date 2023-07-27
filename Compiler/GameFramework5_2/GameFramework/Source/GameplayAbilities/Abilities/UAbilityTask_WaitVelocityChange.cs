@@ -5,6 +5,6 @@ using CSharpToCpp.Utilities;
 public partial class UAbilityTask_WaitVelocityChange : UAbilityTask {
 // AbilityTask_WaitVelocityChange
 	public FWaitVelocityChangeDelegate OnVelocityChage;
-	public UObject CreateWaitVelocityChange(UObject OwningAbility,FVector Direction,float MinimumMagnitude) { return default; }
+	public static UAbilityTask_WaitVelocityChange CreateWaitVelocityChange(UGameplayAbility OwningAbility,FVector Direction,float MinimumMagnitude) { return default; }
 	public UMovementComponent CachedMovementComponent;
 }

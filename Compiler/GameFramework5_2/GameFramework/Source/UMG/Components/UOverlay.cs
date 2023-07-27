@@ -5,6 +5,6 @@ using CSharpToCpp.Utilities;
 ///<summary>Allows widgets to be stacked on top of each other, uses simple flow layout for content on each layer.</summary>
 public partial class UOverlay : UPanelWidget {
 // Overlay
-	public UObject AddChildToOverlay(UObject Content) { return default; }
-	public bool ReplaceOverlayChildAt(int Index,UObject Content) { return default; }
+	public  UOverlaySlot AddChildToOverlay(UWidget Content) { return default; }
+	public  bool ReplaceOverlayChildAt(int Index,UWidget Content) { return default; }
 }

@@ -4,4 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("MQTTClientObject.h")]
 public partial struct FOnMessageDelegate {
 // OnMessageDelegate__DelegateSignature
+	void AddDynamic(object obj, string functionName) {}
 }

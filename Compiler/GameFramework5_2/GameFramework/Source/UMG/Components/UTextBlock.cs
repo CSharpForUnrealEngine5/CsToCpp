@@ -18,21 +18,21 @@ public partial class UTextBlock : UTextLayoutWidget {
 	public bool bWrapWithInvalidationPanel;
 	public ETextTransformPolicy TextTransformPolicy;
 	public ETextOverflowPolicy TextOverflowPolicy;
-	public string GetText() { return default; }
-	public void SetText(string InText) {}
-	public void SetColorAndOpacity(FSlateColor InColorAndOpacity) {}
-	public void SetOpacity(float InOpacity) {}
-	public void SetShadowColorAndOpacity(FLinearColor InShadowColorAndOpacity) {}
-	public void SetShadowOffset(FVector2D InShadowOffset) {}
-	public void SetFont(FSlateFontInfo InFontInfo) {}
-	public void SetStrikeBrush(FSlateBrush InStrikeBrush) {}
-	public void SetMinDesiredWidth(float InMinDesiredWidth) {}
-	public void SetAutoWrapText(bool InAutoTextWrap) {}
-	public void SetTextTransformPolicy(ETextTransformPolicy InTransformPolicy) {}
-	public void SetTextOverflowPolicy(ETextOverflowPolicy InOverflowPolicy) {}
-	public void SetFontMaterial(UObject InMaterial) {}
-	public void SetFontOutlineMaterial(UObject InMaterial) {}
-	public UObject GetDynamicFontMaterial() { return default; }
-	public UObject GetDynamicOutlineMaterial() { return default; }
+	public  string GetText() { return default; }
+	public  void SetText(string InText) {}
+	public  void SetColorAndOpacity(FSlateColor InColorAndOpacity) {}
+	public  void SetOpacity(float InOpacity) {}
+	public  void SetShadowColorAndOpacity(FLinearColor InShadowColorAndOpacity) {}
+	public  void SetShadowOffset(FVector2D InShadowOffset) {}
+	public  void SetFont(FSlateFontInfo InFontInfo) {}
+	public  void SetStrikeBrush(FSlateBrush InStrikeBrush) {}
+	public  void SetMinDesiredWidth(float InMinDesiredWidth) {}
+	public  void SetAutoWrapText(bool InAutoTextWrap) {}
+	public  void SetTextTransformPolicy(ETextTransformPolicy InTransformPolicy) {}
+	public  void SetTextOverflowPolicy(ETextOverflowPolicy InOverflowPolicy) {}
+	public  void SetFontMaterial(UMaterialInterface InMaterial) {}
+	public  void SetFontOutlineMaterial(UMaterialInterface InMaterial) {}
+	public  UMaterialInstanceDynamic GetDynamicFontMaterial() { return default; }
+	public  UMaterialInstanceDynamic GetDynamicOutlineMaterial() { return default; }
 	public bool bSimpleTextMode;
 }

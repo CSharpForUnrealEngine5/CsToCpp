@@ -5,9 +5,9 @@ using CSharpToCpp.Utilities;
 ///<summary>Helper component that automatically pick the correct passthrough material to use</summary>
 public partial class UPassthroughMaterialUpdateComponent : UActorComponent {
 // PassthroughMaterialUpdateComponent
-	public void AddAffectedComponent(UObject InComponent) {}
-	public void RemoveAffectedComponent(UObject InComponent) {}
-	public void SetPassthroughDebugColor(FLinearColor NewDebugColor) {}
+	public  void AddAffectedComponent(UPrimitiveComponent InComponent) {}
+	public  void RemoveAffectedComponent(UPrimitiveComponent InComponent) {}
+	public  void SetPassthroughDebugColor(FLinearColor NewDebugColor) {}
 	public EARTextureType TextureType;
 	public UMaterialInterface PassthroughMaterial;
 	public UMaterialInterface PassthroughMaterialExternalTexture;

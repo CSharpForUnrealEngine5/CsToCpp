@@ -4,4 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("CompositingElement.h")]
 public partial struct FDynamicOnFinalPassRendered {
 // DynamicOnFinalPassRendered__DelegateSignature
+	void AddDynamic(object obj, string functionName) {}
 }

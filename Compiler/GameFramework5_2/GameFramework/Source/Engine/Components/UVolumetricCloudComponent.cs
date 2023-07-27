@@ -29,21 +29,21 @@ public partial class UVolumetricCloudComponent : USceneComponent {
 	public float AerialPespectiveRayleighScatteringFadeDistance;
 	public float AerialPespectiveMieScatteringStartDistance;
 	public float AerialPespectiveMieScatteringFadeDistance;
-	public void SetLayerBottomAltitude(float NewValue) {}
-	public void SetLayerHeight(float NewValue) {}
-	public void SetTracingStartMaxDistance(float NewValue) {}
-	public void SetTracingMaxDistance(float NewValue) {}
-	public void SetPlanetRadius(float NewValue) {}
-	public void SetGroundAlbedo(FColor NewValue) {}
-	public void SetbUsePerSampleAtmosphericLightTransmittance(bool NewValue) {}
-	public void SetSkyLightCloudBottomOcclusion(float NewValue) {}
-	public void SetViewSampleCountScale(float NewValue) {}
-	public void SetReflectionViewSampleCountScale(float NewValue) {}
-	public void SetShadowViewSampleCountScale(float NewValue) {}
-	public void SetShadowReflectionViewSampleCountScale(float NewValue) {}
-	public void SetShadowTracingDistance(float NewValue) {}
-	public void SetStopTracingTransmittanceThreshold(float NewValue) {}
-	public void SetMaterial(UObject NewValue) {}
-	public void SetReflectionSampleCountScale(float NewValue) {}
-	public void SetShadowReflectionSampleCountScale(float NewValue) {}
+	public  void SetLayerBottomAltitude(float NewValue) {}
+	public  void SetLayerHeight(float NewValue) {}
+	public  void SetTracingStartMaxDistance(float NewValue) {}
+	public  void SetTracingMaxDistance(float NewValue) {}
+	public  void SetPlanetRadius(float NewValue) {}
+	public  void SetGroundAlbedo(FColor NewValue) {}
+	public  void SetbUsePerSampleAtmosphericLightTransmittance(bool NewValue) {}
+	public  void SetSkyLightCloudBottomOcclusion(float NewValue) {}
+	public  void SetViewSampleCountScale(float NewValue) {}
+	public  void SetReflectionViewSampleCountScale(float NewValue) {}
+	public  void SetShadowViewSampleCountScale(float NewValue) {}
+	public  void SetShadowReflectionViewSampleCountScale(float NewValue) {}
+	public  void SetShadowTracingDistance(float NewValue) {}
+	public  void SetStopTracingTransmittanceThreshold(float NewValue) {}
+	public  void SetMaterial(UMaterialInterface NewValue) {}
+	public  void SetReflectionSampleCountScale(float NewValue) {}
+	public  void SetShadowReflectionSampleCountScale(float NewValue) {}
 }

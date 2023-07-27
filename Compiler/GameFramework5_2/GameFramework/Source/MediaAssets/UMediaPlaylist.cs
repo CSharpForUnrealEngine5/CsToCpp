@@ -5,17 +5,17 @@ using CSharpToCpp.Utilities;
 ///<summary>Implements a media play list.</summary>
 public partial class UMediaPlaylist : UObject {
 // MediaPlaylist
-	public bool Add(UObject MediaSource) { return default; }
-	public bool AddFile(string FilePath) { return default; }
-	public bool AddUrl(string Url) { return default; }
-	public UObject Get(int Index) { return default; }
-	public UObject GetNext(int InOutIndex) { return default; }
-	public UObject GetPrevious(int InOutIndex) { return default; }
-	public UObject GetRandom(int OutIndex) { return default; }
-	public void Insert(UObject MediaSource,int Index) {}
-	public int Num() { return default; }
-	public bool Remove(UObject MediaSource) { return default; }
-	public bool RemoveAt(int Index) { return default; }
-	public bool Replace(int Index,UObject Replacement) { return default; }
+	public  bool Add(UMediaSource MediaSource) { return default; }
+	public  bool AddFile(string FilePath) { return default; }
+	public  bool AddUrl(string Url) { return default; }
+	public  UMediaSource Get(int Index) { return default; }
+	public  UMediaSource GetNext(int InOutIndex) { return default; }
+	public  UMediaSource GetPrevious(int InOutIndex) { return default; }
+	public  UMediaSource GetRandom(int OutIndex) { return default; }
+	public  void Insert(UMediaSource MediaSource,int Index) {}
+	public  int Num() { return default; }
+	public  bool Remove(UMediaSource MediaSource) { return default; }
+	public  bool RemoveAt(int Index) { return default; }
+	public  bool Replace(int Index,UMediaSource Replacement) { return default; }
 	public TArray<UMediaSource> Items;
 }

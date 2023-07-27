@@ -8,8 +8,8 @@ public partial class USteamVRHQStereoLayerShape : UStereoLayerShapeQuad {
 	public bool bAntiAlias;
 	public float AutoCurveMinDistance;
 	public float AutoCurveMaxDistance;
-	public void SetCurved(bool InCurved) {}
-	public void SetAntiAlias(bool InAntiAlias) {}
-	public void SetAutoCurveMinDistance(float InDistance) {}
-	public void SetAutoCurveMaxDistance(float InDistance) {}
+	public  void SetCurved(bool InCurved) {}
+	public  void SetAntiAlias(bool InAntiAlias) {}
+	public  void SetAutoCurveMinDistance(float InDistance) {}
+	public  void SetAutoCurveMaxDistance(float InDistance) {}
 }

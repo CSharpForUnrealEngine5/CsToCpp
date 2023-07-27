@@ -4,4 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("Components/ListView.h")]
 public partial struct FOnItemIsHoveredChangedDynamic {
 // OnItemIsHoveredChangedDynamic__DelegateSignature
+	void AddDynamic(object obj, string functionName) {}
 }

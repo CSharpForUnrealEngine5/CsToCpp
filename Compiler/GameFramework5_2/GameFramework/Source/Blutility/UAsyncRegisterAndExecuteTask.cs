@@ -4,6 +4,6 @@ using CSharpToCpp.Utilities;
 [CppInclude("AsyncRegisterAndExecuteTask.h")]
 public partial class UAsyncRegisterAndExecuteTask : UBlueprintAsyncActionBase {
 // AsyncRegisterAndExecuteTask
-	public UObject RegisterAndExecuteTask(UObject Task,UObject OptionalParentTask/*=nullptr*/) { return default; }
+	public static UAsyncRegisterAndExecuteTask RegisterAndExecuteTask(UEditorUtilityTask Task,UEditorUtilityTask OptionalParentTask/*=nullptr*/) { return default; }
 	public FOnEditorUtilityTaskDynamicDelegate OnFinished;
 }

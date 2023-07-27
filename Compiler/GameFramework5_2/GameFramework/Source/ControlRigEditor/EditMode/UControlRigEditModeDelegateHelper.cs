@@ -4,6 +4,6 @@ using CSharpToCpp.Utilities;
 [CppInclude("EditMode/ControlRigEditMode.h")]
 public partial class UControlRigEditModeDelegateHelper : UObject {
 // ControlRigEditModeDelegateHelper
-	public void OnPoseInitialized() {}
-	public void PostPoseUpdate() {}
+	public  void OnPoseInitialized() {}
+	public  void PostPoseUpdate() {}
 }

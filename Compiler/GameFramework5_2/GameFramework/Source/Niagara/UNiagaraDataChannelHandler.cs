@@ -4,8 +4,8 @@ using CSharpToCpp.Utilities;
 [CppInclude("NiagaraDataChannelHandler.h")]
 public partial class UNiagaraDataChannelHandler : UObject {
 // NiagaraDataChannelHandler
-	public UObject GetDataChannelWriter() { return default; }
-	public UObject GetDataChannelReader() { return default; }
+	public  UNiagaraDataChannelWriter GetDataChannelWriter() { return default; }
+	public  UNiagaraDataChannelReader GetDataChannelReader() { return default; }
 	public UNiagaraDataChannel DataChannel;
 	public UNiagaraDataChannelWriter Writer;
 	public UNiagaraDataChannelReader Reader;

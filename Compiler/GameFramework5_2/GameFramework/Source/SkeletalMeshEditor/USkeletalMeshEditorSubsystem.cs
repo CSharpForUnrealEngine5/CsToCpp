@@ -5,23 +5,23 @@ using CSharpToCpp.Utilities;
 ///<summary>USkeletalMeshEditorSubsystem</summary>
 public partial class USkeletalMeshEditorSubsystem : UEditorSubsystem {
 // SkeletalMeshEditorSubsystem
-	public bool RegenerateLOD(UObject SkeletalMesh,int NewLODCount/*=0*/,bool bRegenerateEvenIfImported/*=false*/,bool bGenerateBaseLOD/*=false*/) { return default; }
-	public int GetNumVerts(UObject SkeletalMesh,int LODIndex) { return default; }
-	public int GetNumSections(UObject SkeletalMesh,int LODIndex) { return default; }
-	public bool GetSectionRecomputeTangent(UObject SkeletalMesh,int LODIndex,int SectionIndex,bool bOutRecomputeTangent) { return default; }
-	public bool SetSectionRecomputeTangent(UObject SkeletalMesh,int LODIndex,int SectionIndex,bool bRecomputeTangent) { return default; }
-	public bool GetSectionRecomputeTangentsVertexMaskChannel(UObject SkeletalMesh,int LODIndex,int SectionIndex,byte OutRecomputeTangentsVertexMaskChannel) { return default; }
-	public bool SetSectionRecomputeTangentsVertexMaskChannel(UObject SkeletalMesh,int LODIndex,int SectionIndex,byte RecomputeTangentsVertexMaskChannel) { return default; }
-	public bool GetSectionCastShadow(UObject SkeletalMesh,int LODIndex,int SectionIndex,bool bOutCastShadow) { return default; }
-	public bool SetSectionCastShadow(UObject SkeletalMesh,int LODIndex,int SectionIndex,bool bCastShadow) { return default; }
-	public bool GetSectionVisibleInRayTracing(UObject SkeletalMesh,int LODIndex,int SectionIndex,bool bOutVisibleInRayTracing) { return default; }
-	public bool SetSectionVisibleInRayTracing(UObject SkeletalMesh,int LODIndex,int SectionIndex,bool bVisibleInRayTracing) { return default; }
-	public int GetLODMaterialSlot(UObject SkeletalMesh,int LODIndex,int SectionIndex) { return default; }
-	public bool RenameSocket(UObject SkeletalMesh,string OldName,string NewName) { return default; }
-	public int GetLODCount(UObject SkeletalMesh) { return default; }
-	public int ImportLOD(UObject BaseMesh,int LODIndex,string SourceFilename) { return default; }
-	public bool ReimportAllCustomLODs(UObject SkeletalMesh) { return default; }
-	public void GetLodBuildSettings(UObject SkeletalMesh,int LodIndex,FSkeletalMeshBuildSettings OutBuildOptions) {}
-	public void SetLodBuildSettings(UObject SkeletalMesh,int LodIndex,FSkeletalMeshBuildSettings BuildOptions) {}
-	public UObject CreatePhysicsAsset(UObject SkeletalMesh) { return default; }
+	public static bool RegenerateLOD(USkeletalMesh SkeletalMesh,int NewLODCount/*=0*/,bool bRegenerateEvenIfImported/*=false*/,bool bGenerateBaseLOD/*=false*/) { return default; }
+	public  int GetNumVerts(USkeletalMesh SkeletalMesh,int LODIndex) { return default; }
+	public  int GetNumSections(USkeletalMesh SkeletalMesh,int LODIndex) { return default; }
+	public  bool GetSectionRecomputeTangent(USkeletalMesh SkeletalMesh,int LODIndex,int SectionIndex,bool bOutRecomputeTangent) { return default; }
+	public  bool SetSectionRecomputeTangent(USkeletalMesh SkeletalMesh,int LODIndex,int SectionIndex,bool bRecomputeTangent) { return default; }
+	public  bool GetSectionRecomputeTangentsVertexMaskChannel(USkeletalMesh SkeletalMesh,int LODIndex,int SectionIndex,byte OutRecomputeTangentsVertexMaskChannel) { return default; }
+	public  bool SetSectionRecomputeTangentsVertexMaskChannel(USkeletalMesh SkeletalMesh,int LODIndex,int SectionIndex,byte RecomputeTangentsVertexMaskChannel) { return default; }
+	public  bool GetSectionCastShadow(USkeletalMesh SkeletalMesh,int LODIndex,int SectionIndex,bool bOutCastShadow) { return default; }
+	public  bool SetSectionCastShadow(USkeletalMesh SkeletalMesh,int LODIndex,int SectionIndex,bool bCastShadow) { return default; }
+	public  bool GetSectionVisibleInRayTracing(USkeletalMesh SkeletalMesh,int LODIndex,int SectionIndex,bool bOutVisibleInRayTracing) { return default; }
+	public  bool SetSectionVisibleInRayTracing(USkeletalMesh SkeletalMesh,int LODIndex,int SectionIndex,bool bVisibleInRayTracing) { return default; }
+	public  int GetLODMaterialSlot(USkeletalMesh SkeletalMesh,int LODIndex,int SectionIndex) { return default; }
+	public static bool RenameSocket(USkeletalMesh SkeletalMesh,string OldName,string NewName) { return default; }
+	public static int GetLODCount(USkeletalMesh SkeletalMesh) { return default; }
+	public static int ImportLOD(USkeletalMesh BaseMesh,int LODIndex,string SourceFilename) { return default; }
+	public static bool ReimportAllCustomLODs(USkeletalMesh SkeletalMesh) { return default; }
+	public static void GetLodBuildSettings(USkeletalMesh SkeletalMesh,int LodIndex,FSkeletalMeshBuildSettings OutBuildOptions) {}
+	public static void SetLodBuildSettings(USkeletalMesh SkeletalMesh,int LodIndex,FSkeletalMeshBuildSettings BuildOptions) {}
+	public static UPhysicsAsset CreatePhysicsAsset(USkeletalMesh SkeletalMesh) { return default; }
 }

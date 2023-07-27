@@ -29,19 +29,19 @@ public partial class UCommonButtonStyle : UObject {
 	public FSlateSound HoveredSlateSound;
 	public FCommonButtonStyleOptionalSlateSound SelectedHoveredSlateSound;
 	public FCommonButtonStyleOptionalSlateSound LockedHoveredSlateSound;
-	public void GetMaterialBrush(FSlateBrush Brush) {}
-	public void GetNormalBaseBrush(FSlateBrush Brush) {}
-	public void GetNormalHoveredBrush(FSlateBrush Brush) {}
-	public void GetNormalPressedBrush(FSlateBrush Brush) {}
-	public void GetSelectedBaseBrush(FSlateBrush Brush) {}
-	public void GetSelectedHoveredBrush(FSlateBrush Brush) {}
-	public void GetSelectedPressedBrush(FSlateBrush Brush) {}
-	public void GetDisabledBrush(FSlateBrush Brush) {}
-	public void GetButtonPadding(FMargin OutButtonPadding) {}
-	public void GetCustomPadding(FMargin OutCustomPadding) {}
-	public UObject GetNormalTextStyle() { return default; }
-	public UObject GetNormalHoveredTextStyle() { return default; }
-	public UObject GetSelectedTextStyle() { return default; }
-	public UObject GetSelectedHoveredTextStyle() { return default; }
-	public UObject GetDisabledTextStyle() { return default; }
+	public  void GetMaterialBrush(FSlateBrush Brush) {}
+	public  void GetNormalBaseBrush(FSlateBrush Brush) {}
+	public  void GetNormalHoveredBrush(FSlateBrush Brush) {}
+	public  void GetNormalPressedBrush(FSlateBrush Brush) {}
+	public  void GetSelectedBaseBrush(FSlateBrush Brush) {}
+	public  void GetSelectedHoveredBrush(FSlateBrush Brush) {}
+	public  void GetSelectedPressedBrush(FSlateBrush Brush) {}
+	public  void GetDisabledBrush(FSlateBrush Brush) {}
+	public  void GetButtonPadding(FMargin OutButtonPadding) {}
+	public  void GetCustomPadding(FMargin OutCustomPadding) {}
+	public  UCommonTextStyle GetNormalTextStyle() { return default; }
+	public  UCommonTextStyle GetNormalHoveredTextStyle() { return default; }
+	public  UCommonTextStyle GetSelectedTextStyle() { return default; }
+	public  UCommonTextStyle GetSelectedHoveredTextStyle() { return default; }
+	public  UCommonTextStyle GetDisabledTextStyle() { return default; }
 }

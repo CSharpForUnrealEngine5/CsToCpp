@@ -4,6 +4,6 @@ using CSharpToCpp.Utilities;
 [CppInclude("Engine/SkinnedAsset.h")]
 public partial class USkinnedAsset : UStreamableRenderAsset {
 // SkinnedAsset
-	public UObject FindSocket(string InSocketName) { return default; }
-	public UObject FindSocketInfo(string InSocketName,FTransform OutTransform,int OutBoneIndex,int OutIndex) { return default; }
+	public  USkeletalMeshSocket FindSocket(string InSocketName) { return default; }
+	public  USkeletalMeshSocket FindSocketInfo(string InSocketName,FTransform OutTransform,int OutBoneIndex,int OutIndex) { return default; }
 }

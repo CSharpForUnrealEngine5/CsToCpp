@@ -4,4 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("CinePrestreamingEditorSubsystem.h")]
 public partial struct FOnCinePrestreamingGenerateAsset {
 // OnCinePrestreamingGenerateAsset__DelegateSignature
+	void AddDynamic(object obj, string functionName) {}
 }

@@ -6,6 +6,6 @@ public partial class ASpotLight : ALight {
 // SpotLight
 	public USpotLightComponent SpotLightComponent;
 	public UArrowComponent ArrowComponent;
-	public void SetInnerConeAngle(float NewInnerConeAngle) {}
-	public void SetOuterConeAngle(float NewOuterConeAngle) {}
+	public  void SetInnerConeAngle(float NewInnerConeAngle) {}
+	public  void SetOuterConeAngle(float NewOuterConeAngle) {}
 }

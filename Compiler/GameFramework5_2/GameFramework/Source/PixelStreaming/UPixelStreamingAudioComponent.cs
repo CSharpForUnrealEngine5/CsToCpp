@@ -8,8 +8,8 @@ public partial class UPixelStreamingAudioComponent : USynthComponent {
 	public string StreamerToHear;
 	public string PlayerToHear;
 	public bool bAutoFindPeer;
-	public bool ListenTo(string PlayerToListenTo) { return default; }
-	public bool StreamerListenTo(string StreamerId,string PlayerToListenTo) { return default; }
-	public bool IsListeningToPlayer() { return default; }
-	public void Reset() {}
+	public  bool ListenTo(string PlayerToListenTo) { return default; }
+	public  bool StreamerListenTo(string StreamerId,string PlayerToListenTo) { return default; }
+	public  bool IsListeningToPlayer() { return default; }
+	public  void Reset() {}
 }

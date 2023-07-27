@@ -4,6 +4,6 @@ using CSharpToCpp.Utilities;
 [CppInclude("FunctionalTestingManager.h")]
 public partial class APhasedAutomationActorBase : AActor {
 // PhasedAutomationActorBase
-	public void OnFunctionalTestingComplete() {}
-	public void OnFunctionalTestingBegin() {}
+	public  void OnFunctionalTestingComplete() {}
+	public  void OnFunctionalTestingBegin() {}
 }

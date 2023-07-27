@@ -16,12 +16,12 @@ public partial class UPropertyPathTestObject : UObject {
 	public FPropertyPathTestStruct StructRef;
 	public FPropertyPathTestStruct StructConstRef;
 	public UPropertyPathTestObject InnerObject;
-	public void SetFloat(float InFloat) {}
-	public float GetFloat() { return default; }
-	public void SetStruct(FPropertyPathTestStruct InStruct) {}
-	public FPropertyPathTestStruct GetStruct() { return default; }
-	public void SetStructRef(FPropertyPathTestStruct InStruct) {}
-	public FPropertyPathTestStruct GetStructRef() { return default; }
-	public void SetStructConstRef(FPropertyPathTestStruct InStruct) {}
-	public FPropertyPathTestStruct GetStructConstRef() { return default; }
+	public  void SetFloat(float InFloat) {}
+	public  float GetFloat() { return default; }
+	public  void SetStruct(FPropertyPathTestStruct InStruct) {}
+	public  FPropertyPathTestStruct GetStruct() { return default; }
+	public  void SetStructRef(FPropertyPathTestStruct InStruct) {}
+	public  FPropertyPathTestStruct GetStructRef() { return default; }
+	public  void SetStructConstRef(FPropertyPathTestStruct InStruct) {}
+	public  FPropertyPathTestStruct GetStructConstRef() { return default; }
 }

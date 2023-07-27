@@ -4,4 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("GameFramework/Character.h")]
 public partial struct FCharacterMovementUpdatedSignature {
 // CharacterMovementUpdatedSignature__DelegateSignature
+	void AddDynamic(object obj, string functionName) {}
 }

@@ -4,4 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("WebBrowser.h")]
 public partial struct FOnConsoleMessage {
 // OnConsoleMessage__DelegateSignature
+	void AddDynamic(object obj, string functionName) {}
 }

@@ -5,10 +5,10 @@ using CSharpToCpp.Utilities;
 public partial class UAttributeEditorUVActions : UAttributeEditorActionPropertySet {
 // AttributeEditorUVActions
 	public string UVLayer;
-	public TArray<string> GetUVLayerNamesFunc() { return default; }
+	public  TArray<string> GetUVLayerNamesFunc() { return default; }
 	public TArray<string> UVLayerNamesList;
-	public void ClearAll() {}
-	public void AddNew() {}
-	public void DeleteSelected() {}
-	public void DuplicateSelected() {}
+	public  void ClearAll() {}
+	public  void AddNew() {}
+	public  void DeleteSelected() {}
+	public  void DuplicateSelected() {}
 }

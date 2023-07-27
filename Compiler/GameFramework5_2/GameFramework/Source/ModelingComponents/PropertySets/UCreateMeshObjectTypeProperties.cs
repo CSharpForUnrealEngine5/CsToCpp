@@ -7,9 +7,9 @@ public partial class UCreateMeshObjectTypeProperties : UInteractiveToolPropertyS
 // CreateMeshObjectTypeProperties
 	public string OutputType;
 	public UClass VolumeType;
-	public TArray<string> GetOutputTypeNamesFunc() { return default; }
+	public  TArray<string> GetOutputTypeNamesFunc() { return default; }
 	public TArray<string> OutputTypeNamesList;
 	public bool bShowVolumeList;
-	public bool ShouldShowPropertySet() { return default; }
-	public ECreateObjectTypeHint GetCurrentCreateMeshType() { return default; }
+	public  bool ShouldShowPropertySet() { return default; }
+	public  ECreateObjectTypeHint GetCurrentCreateMeshType() { return default; }
 }

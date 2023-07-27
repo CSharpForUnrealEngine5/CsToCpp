@@ -5,9 +5,9 @@ using CSharpToCpp.Utilities;
 ///<summary>ns UE::Interchange</summary>
 public partial class UInterchangeTexture2DNode : UInterchangeTextureNode {
 // InterchangeTexture2DNode
-	public TMap<int,string> GetSourceBlocks() { return default; }
-	public bool SetCustomWrapU(EInterchangeTextureWrapMode AttributeValue) { return default; }
-	public bool GetCustomWrapU(EInterchangeTextureWrapMode AttributeValue) { return default; }
-	public bool SetCustomWrapV(EInterchangeTextureWrapMode AttributeValue) { return default; }
-	public bool GetCustomWrapV(EInterchangeTextureWrapMode AttributeValue) { return default; }
+	public  TMap<int,string> GetSourceBlocks() { return default; }
+	public  bool SetCustomWrapU(EInterchangeTextureWrapMode AttributeValue) { return default; }
+	public  bool GetCustomWrapU(EInterchangeTextureWrapMode AttributeValue) { return default; }
+	public  bool SetCustomWrapV(EInterchangeTextureWrapMode AttributeValue) { return default; }
+	public  bool GetCustomWrapV(EInterchangeTextureWrapMode AttributeValue) { return default; }
 }

@@ -4,5 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("SubobjectEditorMenuContext.h")]
 public partial class USubobjectEditorMenuContext : UObject {
 // SubobjectEditorMenuContext
-	public TArray<UObject> GetSelectedObjects() { return default; }
+	public  TArray<UObject> GetSelectedObjects() { return default; }
 }

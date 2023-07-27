@@ -6,5 +6,5 @@ public partial class UInAppPurchaseRestoreCallbackProxy2 : UObject {
 // InAppPurchaseRestoreCallbackProxy2
 	public FInAppPurchaseRestoreResult2 OnSuccess;
 	public FInAppPurchaseRestoreResult2 OnFailure;
-	public UObject CreateProxyObjectForInAppPurchaseRestore(TArray<FInAppPurchaseProductRequest2> ConsumableProductFlags,UObject PlayerController) { return default; }
+	public static UInAppPurchaseRestoreCallbackProxy2 CreateProxyObjectForInAppPurchaseRestore(TArray<FInAppPurchaseProductRequest2> ConsumableProductFlags,APlayerController PlayerController) { return default; }
 }

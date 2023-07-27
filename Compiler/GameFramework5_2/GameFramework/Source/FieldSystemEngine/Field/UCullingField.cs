@@ -5,7 +5,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Evaluate the input field according to the result of the culling field</summary>
 public partial class UCullingField : UFieldNodeBase {
 // CullingField
-	public UObject SetCullingField(UObject Culling,UObject Field,EFieldCullingOperationType Operation) { return default; }
+	public  UCullingField SetCullingField(UFieldNodeBase Culling,UFieldNodeBase Field,EFieldCullingOperationType Operation) { return default; }
 	public UFieldNodeBase Culling;
 	public UFieldNodeBase Field;
 	public byte Operation;

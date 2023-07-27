@@ -9,8 +9,8 @@ public partial class AVirtualCameraPawnBase : APawn {
 	public bool bSaveSettingsWhenClosing;
 	public string SavedSettingsSlotName;
 	public TMap<string,FVirtualCameraSettingsPreset> SettingsPresets;
-	public void HighlightTappedActor(UObject HighlightedActor) {}
-	public void TriggerFocusPlaneTimer() {}
-	public void LoadFinished() {}
+	public  void HighlightTappedActor(AActor HighlightedActor) {}
+	public  void TriggerFocusPlaneTimer() {}
+	public  void LoadFinished() {}
 	public bool bAllowFocusVisualization;
 }

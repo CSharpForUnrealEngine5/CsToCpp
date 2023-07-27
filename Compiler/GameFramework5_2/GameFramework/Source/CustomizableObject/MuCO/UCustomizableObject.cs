@@ -36,26 +36,26 @@ public partial class UCustomizableObject : UObject {
 	public TMap<string,FCustomizableObjectIdPair> GroupNodeMap;
 	public TArray<FProfileParameterDat> InstancePropertiesProfiles;
 	public int NumMeshComponentsInRoot;
-	public int GetComponentCount() { return default; }
-	public int GetParameterCount() { return default; }
-	public int FindParameter(string Name) { return default; }
-	public EMutableParameterType GetParameterType(int ParamIndex) { return default; }
-	public EMutableParameterType GetParameterTypeByName(string Name) { return default; }
-	public string GetParameterName(int ParamIndex) { return default; }
-	public int GetParameterDescriptionCount(string ParamName) { return default; }
-	public int GetIntParameterNumOptions(int ParamIndex) { return default; }
-	public string GetIntParameterAvailableOption(int ParamIndex,int K) { return default; }
-	public void LoadMaskOutCache() {}
-	public void UnloadMaskOutCache() {}
+	public  int GetComponentCount() { return default; }
+	public  int GetParameterCount() { return default; }
+	public  int FindParameter(string Name) { return default; }
+	public  EMutableParameterType GetParameterType(int ParamIndex) { return default; }
+	public  EMutableParameterType GetParameterTypeByName(string Name) { return default; }
+	public  string GetParameterName(int ParamIndex) { return default; }
+	public  int GetParameterDescriptionCount(string ParamName) { return default; }
+	public  int GetIntParameterNumOptions(int ParamIndex) { return default; }
+	public  string GetIntParameterAvailableOption(int ParamIndex,int K) { return default; }
+	public  void LoadMaskOutCache() {}
+	public  void UnloadMaskOutCache() {}
 	public TArray<FMutableModelParameterProperties> ParameterProperties;
-	public int GetStateCount() { return default; }
-	public string GetStateName(int StateIndex) { return default; }
-	public int GetStateParameterCount(string StateName) { return default; }
-	public string GetStateParameterName(string StateName,int ParameterIndex) { return default; }
-	public FParameterUIData GetStateUIMetadata(string StateName) { return default; }
-	public FParameterUIData GetStateUIMetadataFromIndex(int StateIndex) { return default; }
-	public FParameterUIData GetParameterUIMetadata(string ParamName) { return default; }
-	public FParameterUIData GetParameterUIMetadataFromIndex(int ParamIndex) { return default; }
+	public  int GetStateCount() { return default; }
+	public  string GetStateName(int StateIndex) { return default; }
+	public  int GetStateParameterCount(string StateName) { return default; }
+	public  string GetStateParameterName(string StateName,int ParameterIndex) { return default; }
+	public  FParameterUIData GetStateUIMetadata(string StateName) { return default; }
+	public  FParameterUIData GetStateUIMetadataFromIndex(int StateIndex) { return default; }
+	public  FParameterUIData GetParameterUIMetadata(string ParamName) { return default; }
+	public  FParameterUIData GetParameterUIMetadataFromIndex(int ParamIndex) { return default; }
 	public TMap<string,FParameterUIData> ParameterUIDataMap;
 	public TMap<string,FParameterUIData> StateUIDataMap;
 	public TMap<string,TSoftObjectPtr<UPhysicsAsset>> PhysicsAssetsMap;
@@ -67,8 +67,8 @@ public partial class UCustomizableObject : UObject {
 	public TArray<string> PopulationClassTags;
 	public TMap<string,FParameterTags> CustomizableObjectParametersTags;
 	public bool bIsChildObject;
-	public UObject CreateInstance() { return default; }
-	public bool IsCompiled() { return default; }
+	public  UCustomizableObjectInstance CreateInstance() { return default; }
+	public  bool IsCompiled() { return default; }
 	public UMutableMaskOutCache MaskOutCache_HardRef;
 	public FGuid Identifier;
 	public FGuid CompilationGuid;

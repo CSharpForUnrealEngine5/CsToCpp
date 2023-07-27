@@ -6,5 +6,5 @@ public partial class ULeaderboardQueryCallbackProxy : UObject {
 // LeaderboardQueryCallbackProxy
 	public FLeaderboardQueryResult OnSuccess;
 	public FLeaderboardQueryResult OnFailure;
-	public UObject CreateProxyObjectForIntQuery(UObject PlayerController,string StatName) { return default; }
+	public static ULeaderboardQueryCallbackProxy CreateProxyObjectForIntQuery(APlayerController PlayerController,string StatName) { return default; }
 }

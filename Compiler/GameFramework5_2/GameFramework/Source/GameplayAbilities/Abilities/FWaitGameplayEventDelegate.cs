@@ -4,4 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("Abilities/Tasks/AbilityTask_WaitGameplayEvent.h")]
 public partial struct FWaitGameplayEventDelegate {
 // WaitGameplayEventDelegate__DelegateSignature
+	void AddDynamic(object obj, string functionName) {}
 }

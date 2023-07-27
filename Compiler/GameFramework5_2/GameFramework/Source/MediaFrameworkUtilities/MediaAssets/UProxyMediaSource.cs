@@ -7,5 +7,5 @@ public partial class UProxyMediaSource : UMediaSource {
 // ProxyMediaSource
 	public UMediaSource DynamicProxy;
 	public UMediaSource Proxy;
-	public bool IsProxyValid() { return default; }
+	public  bool IsProxyValid() { return default; }
 }

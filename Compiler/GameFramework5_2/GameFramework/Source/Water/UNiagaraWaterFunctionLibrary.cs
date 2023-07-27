@@ -4,6 +4,6 @@ using CSharpToCpp.Utilities;
 [CppInclude("NiagaraWaterFunctionLibrary.h")]
 public partial class UNiagaraWaterFunctionLibrary : UBlueprintFunctionLibrary {
 // NiagaraWaterFunctionLibrary
-	public void SetWaterBody(UObject NiagaraSystem,string OverrideName,UObject WaterBody) {}
-	public void SetWaterBodyComponent(UObject NiagaraSystem,string OverrideName,UObject WaterBodyComponent) {}
+	public static void SetWaterBody(UNiagaraComponent NiagaraSystem,string OverrideName,AWaterBody WaterBody) {}
+	public static void SetWaterBodyComponent(UNiagaraComponent NiagaraSystem,string OverrideName,UWaterBodyComponent WaterBodyComponent) {}
 }

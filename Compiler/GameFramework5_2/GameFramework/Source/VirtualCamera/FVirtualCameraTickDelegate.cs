@@ -4,4 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("IVirtualCameraController.h")]
 public partial struct FVirtualCameraTickDelegate {
 // VirtualCameraTickDelegate__DelegateSignature
+	void AddDynamic(object obj, string functionName) {}
 }

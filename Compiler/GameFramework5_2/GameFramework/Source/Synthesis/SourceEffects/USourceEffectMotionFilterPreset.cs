@@ -5,6 +5,6 @@ using CSharpToCpp.Utilities;
 ///<summary>USourceEffectMotionFilterPreset</summary>
 public partial class USourceEffectMotionFilterPreset : USoundEffectSourcePreset {
 // SourceEffectMotionFilterPreset
-	public void SetSettings(FSourceEffectMotionFilterSettings InSettings) {}
+	public  void SetSettings(FSourceEffectMotionFilterSettings InSettings) {}
 	public FSourceEffectMotionFilterSettings Settings;
 }

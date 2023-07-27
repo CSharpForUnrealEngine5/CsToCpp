@@ -8,7 +8,7 @@ public partial class UContentBrowserAssetContextMenuContext : UObject {
 	public TArray<FAssetData> SelectedAssets;
 	public UClass CommonClass;
 	public bool bCanBeModified;
-	public TArray<UObject> GetSelectedObjects() { return default; }
-	public TArray<UObject> LoadSelectedObjectsIfNeeded() { return default; }
-	public TArray<UObject> LoadSelectedObjects(TSet<string> LoadTags) { return default; }
+	public  TArray<UObject> GetSelectedObjects() { return default; }
+	public  TArray<UObject> LoadSelectedObjectsIfNeeded() { return default; }
+	public  TArray<UObject> LoadSelectedObjects(TSet<string> LoadTags) { return default; }
 }

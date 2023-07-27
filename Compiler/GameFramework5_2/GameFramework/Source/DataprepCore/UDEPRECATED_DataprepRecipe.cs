@@ -4,7 +4,7 @@ using CSharpToCpp.Utilities;
 [CppInclude("DataprepRecipe.h")]
 public partial class UDEPRECATED_DataprepRecipe : UObject {
 // DataprepRecipe
-	public TArray<UObject> GetActors() { return default; }
-	public TArray<UObject> GetAssets() { return default; }
-	public void TriggerPipelineTraversal() {}
+	public  TArray<AActor> GetActors() { return default; }
+	public  TArray<UObject> GetAssets() { return default; }
+	public  void TriggerPipelineTraversal() {}
 }

@@ -4,4 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("AudioGameplayVolumeComponent.h")]
 public partial struct FOnAudioGameplayVolumeProxyStateChange {
 // OnAudioGameplayVolumeProxyStateChange__DelegateSignature
+	void AddDynamic(object obj, string functionName) {}
 }

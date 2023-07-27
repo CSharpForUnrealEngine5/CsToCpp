@@ -5,5 +5,5 @@ using CSharpToCpp.Utilities;
 ///<summary>UCommonListView</summary>
 public partial class UCommonListView : UListView {
 // CommonListView
-	public void SetEntrySpacing(float InEntrySpacing) {}
+	public  void SetEntrySpacing(float InEntrySpacing) {}
 }

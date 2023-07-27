@@ -4,4 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("Net/OnlineBlueprintCallProxyBase.h")]
 public partial struct FEmptyOnlineDelegate {
 // EmptyOnlineDelegate__DelegateSignature
+	void AddDynamic(object obj, string functionName) {}
 }

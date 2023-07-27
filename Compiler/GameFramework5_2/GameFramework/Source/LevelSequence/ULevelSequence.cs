@@ -11,10 +11,10 @@ public partial class ULevelSequence : UMovieSceneSequence {
 	public TMap<string,FLevelSequenceObject> PossessedObjects_DEPRECATED;
 	public UBlueprint DirectorBlueprint;
 	public UClass DirectorClass;
-	public UObject FindMetaDataByClass(UClass InClass) { return default; }
-	public UObject FindOrAddMetaDataByClass(UClass InClass) { return default; }
-	public UObject CopyMetaData(UObject InMetaData) { return default; }
-	public void RemoveMetaDataByClass(UClass InClass) {}
+	public  UObject FindMetaDataByClass(UClass InClass) { return default; }
+	public  UObject FindOrAddMetaDataByClass(UClass InClass) { return default; }
+	public  UObject CopyMetaData(UObject InMetaData) { return default; }
+	public  void RemoveMetaDataByClass(UClass InClass) {}
 	public TArray<UObject> MetaDataObjects;
 	public TArray<UAssetUserData> AssetUserData;
 }

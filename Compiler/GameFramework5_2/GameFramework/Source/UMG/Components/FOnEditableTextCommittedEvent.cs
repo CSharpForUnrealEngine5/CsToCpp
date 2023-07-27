@@ -4,4 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("Components/EditableText.h")]
 public partial struct FOnEditableTextCommittedEvent {
 // OnEditableTextCommittedEvent__DelegateSignature
+	void AddDynamic(object obj, string functionName) {}
 }

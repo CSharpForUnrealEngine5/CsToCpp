@@ -16,7 +16,7 @@ public partial class UAnimationSettings : UDeveloperSettings {
 	public bool bTickAnimationOnSkeletalMeshInit;
 	public FTimecodeCustomAttributeNameSettings BoneTimecodeCustomAttributeNameSettings;
 	public TArray<FCustomAttributeSetting> BoneCustomAttributesNames;
-	public TArray<string> GetBoneCustomAttributeNamesToImport() { return default; }
+	public  TArray<string> GetBoneCustomAttributeNamesToImport() { return default; }
 	public TArray<string> BoneNamesWithCustomAttributes;
 	public TMap<string,ECustomAttributeBlendType> AttributeBlendModes;
 	public ECustomAttributeBlendType DefaultAttributeBlendMode;

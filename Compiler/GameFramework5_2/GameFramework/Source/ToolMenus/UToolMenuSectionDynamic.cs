@@ -4,5 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("ToolMenuSection.h")]
 public partial class UToolMenuSectionDynamic : UObject {
 // ToolMenuSectionDynamic
-	public void ConstructSections(UObject Menu,FToolMenuContext Context) {}
+	public  void ConstructSections(UToolMenu Menu,FToolMenuContext Context) {}
 }

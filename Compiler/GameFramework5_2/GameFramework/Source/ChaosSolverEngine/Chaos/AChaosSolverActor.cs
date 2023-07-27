@@ -21,8 +21,8 @@ public partial class AChaosSolverActor : AActor {
 	public bool bHasFloor;
 	public float FloorHeight;
 	public FChaosDebugSubstepControl ChaosDebugSubstepControl;
-	public void SetAsCurrentWorldSolver() {}
-	public void SetSolverActive(bool bActive) {}
+	public  void SetAsCurrentWorldSolver() {}
+	public  void SetSolverActive(bool bActive) {}
 	public UBillboardComponent SpriteComponent;
 	public UChaosGameplayEventDispatcher GameplayEventDispatcherComponent;
 }

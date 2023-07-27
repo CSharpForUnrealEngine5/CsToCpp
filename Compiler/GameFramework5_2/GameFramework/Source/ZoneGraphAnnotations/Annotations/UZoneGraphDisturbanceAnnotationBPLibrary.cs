@@ -5,5 +5,5 @@ using CSharpToCpp.Utilities;
 ///<summary>Set of utilities for dealing with Disturbance Annotation.</summary>
 public partial class UZoneGraphDisturbanceAnnotationBPLibrary : UBlueprintFunctionLibrary {
 // ZoneGraphDisturbanceAnnotationBPLibrary
-	public void TriggerDanger(UObject WorldContextObject,UObject Instigator,FVector Position,float Radius,float Duration) {}
+	public static void TriggerDanger(UObject WorldContextObject,AActor Instigator,FVector Position,float Radius,float Duration) {}
 }

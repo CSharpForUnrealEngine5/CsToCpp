@@ -8,11 +8,11 @@ public partial class AChaosCacheManager : AActor {
 	public ECacheMode CacheMode;
 	public EStartMode StartMode;
 	public float StartTime;
-	public void SetStartTime(float InStartTime) {}
-	public void ResetAllComponentTransforms() {}
-	public void ResetSingleTransform(int InIndex) {}
-	public void TriggerComponent(UObject InComponent) {}
-	public void TriggerComponentByCache(string InCacheName) {}
-	public void TriggerAll() {}
+	public  void SetStartTime(float InStartTime) {}
+	public  void ResetAllComponentTransforms() {}
+	public  void ResetSingleTransform(int InIndex) {}
+	public  void TriggerComponent(UPrimitiveComponent InComponent) {}
+	public  void TriggerComponentByCache(string InCacheName) {}
+	public  void TriggerAll() {}
 	public TArray<FObservedComponent> ObservedComponents;
 }

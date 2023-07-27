@@ -14,7 +14,7 @@ public partial class UUTBBaseCommand : UObject {
 	public UClass UIOverride;
 	public UObject UI;
 	public bool bIsTransaction;
-	public void ExecuteCommand() {}
-	public void AddObjectToTransaction(UObject Object) {}
-	public void AddObjectsToTransaction(TArray<UObject> Objects) {}
+	public  void ExecuteCommand() {}
+	public  void AddObjectToTransaction(UObject Object) {}
+	public  void AddObjectsToTransaction(TArray<UObject> Objects) {}
 }

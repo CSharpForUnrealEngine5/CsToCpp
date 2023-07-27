@@ -31,11 +31,11 @@ public partial class UAnimToTextureDataAsset : UPrimaryDataAsset {
 	public FVector BoneMinBBox;
 	public FVector BoneSizeBBox;
 	public TArray<FAnimInfo> Animations;
-	public int GetIndexFromAnimSequence(UObject Sequence) { return default; }
-	public void ResetInfo() {}
-	public UObject BP_GetStaticMesh() { return default; }
-	public UObject BP_GetSkeletalMesh() { return default; }
-	public UObject BP_GetBonePositionTexture() { return default; }
-	public UObject BP_GetBoneRotationTexture() { return default; }
-	public UObject BP_GetBoneWeightTexture() { return default; }
+	public  int GetIndexFromAnimSequence(UAnimSequence Sequence) { return default; }
+	public  void ResetInfo() {}
+	public  UStaticMesh BP_GetStaticMesh() { return default; }
+	public  USkeletalMesh BP_GetSkeletalMesh() { return default; }
+	public  UTexture2D BP_GetBonePositionTexture() { return default; }
+	public  UTexture2D BP_GetBoneRotationTexture() { return default; }
+	public  UTexture2D BP_GetBoneWeightTexture() { return default; }
 }

@@ -4,6 +4,6 @@ using CSharpToCpp.Utilities;
 [CppInclude("SourceEffects/SourceEffectStereoDelay.h")]
 public partial class USourceEffectStereoDelayPreset : USoundEffectSourcePreset {
 // SourceEffectStereoDelayPreset
-	public void SetSettings(FSourceEffectStereoDelaySettings InSettings) {}
+	public  void SetSettings(FSourceEffectStereoDelaySettings InSettings) {}
 	public FSourceEffectStereoDelaySettings Settings;
 }

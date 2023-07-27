@@ -7,8 +7,8 @@ public partial class ULinearTimecodeComponent : USceneComponent {
 // LinearTimecodeComponent
 	public UMediaPlayer MediaPlayer;
 	public FDropTimecode DropTimecode;
-	public int GetDropFrameNumber() { return default; }
-	public void GetDropTimeCodeFrameNumber(FDropTimecode Timecode,int FrameNumber) {}
-	public void SetDropTimecodeFrameNumber(FDropTimecode Timecode,int FrameNumber,FDropTimecode OutTimecode) {}
+	public  int GetDropFrameNumber() { return default; }
+	public static void GetDropTimeCodeFrameNumber(FDropTimecode Timecode,int FrameNumber) {}
+	public static void SetDropTimecodeFrameNumber(FDropTimecode Timecode,int FrameNumber,FDropTimecode OutTimecode) {}
 	public FOnTimecodeChange OnTimecodeChange;
 }

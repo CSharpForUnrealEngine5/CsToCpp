@@ -4,7 +4,7 @@ using CSharpToCpp.Utilities;
 [CppInclude("NiagaraClipboard.h")]
 public partial class UNiagaraClipboardFunction : UObject {
 // NiagaraClipboardFunction
-	public void FOnPastedFunctionCallNode(UObject PastedFunctionCall) {}
+	public  void FOnPastedFunctionCallNode(UNiagaraNodeFunctionCall PastedFunctionCall) {}
 	public string FunctionName;
 	public string DisplayName;
 	public ENiagaraClipboardFunctionScriptMode ScriptMode;

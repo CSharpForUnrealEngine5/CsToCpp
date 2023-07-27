@@ -5,5 +5,5 @@ using CSharpToCpp.Utilities;
 ///<summary>Base class for level sequence burn ins</summary>
 public partial class UMoviePipelineBurnInWidget : UUserWidget {
 // MoviePipelineBurnInWidget
-	public void OnOutputFrameStarted(UObject ForPipeline) {}
+	public  void OnOutputFrameStarted(UMoviePipeline ForPipeline) {}
 }

@@ -4,13 +4,13 @@ using CSharpToCpp.Utilities;
 [CppInclude("ImportTestFunctions/AnimationImportTestFunctions.h")]
 public partial class UAnimationImportTestFunctions : UImportTestFunctionsBase {
 // AnimationImportTestFunctions
-	public FInterchangeTestFunctionResult CheckImportedAnimSequenceCount(TArray<UObject> AnimSequences,int ExpectedNumberOfImportedAnimSequences) { return default; }
-	public FInterchangeTestFunctionResult CheckAnimationLength(UObject AnimSequence,float ExpectedAnimationLength) { return default; }
-	public FInterchangeTestFunctionResult CheckAnimationFrameNumber(UObject AnimSequence,int ExpectedFrameNumber) { return default; }
-	public FInterchangeTestFunctionResult CheckCurveKeyTime(UObject AnimSequence,string CurveName,int KeyIndex,float ExpectedCurveKeyTime) { return default; }
-	public FInterchangeTestFunctionResult CheckCurveKeyValue(UObject AnimSequence,string CurveName,int KeyIndex,float ExpectedCurveKeyValue) { return default; }
-	public FInterchangeTestFunctionResult CheckCurveKeyArriveTangent(UObject AnimSequence,string CurveName,int KeyIndex,float ExpectedCurveKeyArriveTangent) { return default; }
-	public FInterchangeTestFunctionResult CheckCurveKeyArriveTangentWeight(UObject AnimSequence,string CurveName,int KeyIndex,float ExpectedCurveKeyArriveTangentWeight) { return default; }
-	public FInterchangeTestFunctionResult CheckCurveKeyLeaveTangent(UObject AnimSequence,string CurveName,int KeyIndex,float ExpectedCurveKeyLeaveTangent) { return default; }
-	public FInterchangeTestFunctionResult CheckCurveKeyLeaveTangentWeight(UObject AnimSequence,string CurveName,int KeyIndex,float ExpectedCurveKeyLeaveTangentWeight) { return default; }
+	public static FInterchangeTestFunctionResult CheckImportedAnimSequenceCount(TArray<UAnimSequence> AnimSequences,int ExpectedNumberOfImportedAnimSequences) { return default; }
+	public static FInterchangeTestFunctionResult CheckAnimationLength(UAnimSequence AnimSequence,float ExpectedAnimationLength) { return default; }
+	public static FInterchangeTestFunctionResult CheckAnimationFrameNumber(UAnimSequence AnimSequence,int ExpectedFrameNumber) { return default; }
+	public static FInterchangeTestFunctionResult CheckCurveKeyTime(UAnimSequence AnimSequence,string CurveName,int KeyIndex,float ExpectedCurveKeyTime) { return default; }
+	public static FInterchangeTestFunctionResult CheckCurveKeyValue(UAnimSequence AnimSequence,string CurveName,int KeyIndex,float ExpectedCurveKeyValue) { return default; }
+	public static FInterchangeTestFunctionResult CheckCurveKeyArriveTangent(UAnimSequence AnimSequence,string CurveName,int KeyIndex,float ExpectedCurveKeyArriveTangent) { return default; }
+	public static FInterchangeTestFunctionResult CheckCurveKeyArriveTangentWeight(UAnimSequence AnimSequence,string CurveName,int KeyIndex,float ExpectedCurveKeyArriveTangentWeight) { return default; }
+	public static FInterchangeTestFunctionResult CheckCurveKeyLeaveTangent(UAnimSequence AnimSequence,string CurveName,int KeyIndex,float ExpectedCurveKeyLeaveTangent) { return default; }
+	public static FInterchangeTestFunctionResult CheckCurveKeyLeaveTangentWeight(UAnimSequence AnimSequence,string CurveName,int KeyIndex,float ExpectedCurveKeyLeaveTangentWeight) { return default; }
 }

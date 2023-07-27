@@ -8,7 +8,7 @@ public partial class UWaterMeshComponent : UMeshComponent {
 	public int ForceCollapseDensityLevel;
 	public UMaterialInterface FarDistanceMaterial;
 	public float FarDistanceMeshExtent;
-	public bool IsEnabled() { return default; }
+	public  bool IsEnabled() { return default; }
 	public float TileSize;
 	public FIntPoint ExtentInTiles;
 	public TSet<UMaterialInterface> UsedMaterials;

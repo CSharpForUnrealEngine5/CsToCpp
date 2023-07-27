@@ -4,5 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("NiagaraDataInterfaceExport.h")]
 public partial class UNiagaraParticleCallbackHandler : UInterface {
 // NiagaraParticleCallbackHandler
-	public void ReceiveParticleData(TArray<FBasicParticleData> Data,UObject NiagaraSystem,FVector SimulationPositionOffset) {}
+	public  void ReceiveParticleData(TArray<FBasicParticleData> Data,UNiagaraSystem NiagaraSystem,FVector SimulationPositionOffset) {}
 }

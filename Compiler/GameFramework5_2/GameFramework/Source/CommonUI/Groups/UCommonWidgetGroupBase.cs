@@ -5,7 +5,7 @@ using CSharpToCpp.Utilities;
 ///<summary>@todo DanH: This is only used for buttons, so ditch the base. Also the vast majority of use cases are native, so it also shouldn't be a UObject</summary>
 public partial class UCommonWidgetGroupBase : UObject {
 // CommonWidgetGroupBase
-	public void AddWidget(UObject InWidget) {}
-	public void RemoveWidget(UObject InWidget) {}
-	public void RemoveAll() {}
+	public  void AddWidget(UWidget InWidget) {}
+	public  void RemoveWidget(UWidget InWidget) {}
+	public  void RemoveAll() {}
 }

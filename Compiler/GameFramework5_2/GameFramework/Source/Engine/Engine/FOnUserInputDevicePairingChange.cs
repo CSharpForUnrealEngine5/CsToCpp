@@ -4,4 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("Engine/GameInstance.h")]
 public partial struct FOnUserInputDevicePairingChange {
 // OnUserInputDevicePairingChange__DelegateSignature
+	void AddDynamic(object obj, string functionName) {}
 }

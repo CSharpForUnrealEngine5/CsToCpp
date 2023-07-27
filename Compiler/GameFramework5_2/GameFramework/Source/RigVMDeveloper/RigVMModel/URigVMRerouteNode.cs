@@ -5,6 +5,6 @@ using CSharpToCpp.Utilities;
 ///<summary>A reroute node is used to visually improve the</summary>
 public partial class URigVMRerouteNode : URigVMTemplateNode {
 // RigVMRerouteNode
-	public bool GetShowsAsFullNode() { return default; }
+	public  bool GetShowsAsFullNode() { return default; }
 	public bool bShowAsFullNode;
 }

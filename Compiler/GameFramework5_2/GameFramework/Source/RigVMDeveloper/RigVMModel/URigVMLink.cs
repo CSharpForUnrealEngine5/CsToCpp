@@ -5,12 +5,12 @@ using CSharpToCpp.Utilities;
 ///<summary>The Link represents a connection between two Pins</summary>
 public partial class URigVMLink : UObject {
 // RigVMLink
-	public int GetLinkIndex() { return default; }
-	public UObject GetGraph() { return default; }
-	public UObject GetSourcePin() { return default; }
-	public UObject GetTargetPin() { return default; }
-	public UObject GetOppositePin(UObject InPin) { return default; }
-	public string GetPinPathRepresentation() { return default; }
+	public  int GetLinkIndex() { return default; }
+	public  URigVMGraph GetGraph() { return default; }
+	public  URigVMPin GetSourcePin() { return default; }
+	public  URigVMPin GetTargetPin() { return default; }
+	public  URigVMPin GetOppositePin(URigVMPin InPin) { return default; }
+	public  string GetPinPathRepresentation() { return default; }
 	public string SourcePinPath;
 	public string TargetPinPath;
 }

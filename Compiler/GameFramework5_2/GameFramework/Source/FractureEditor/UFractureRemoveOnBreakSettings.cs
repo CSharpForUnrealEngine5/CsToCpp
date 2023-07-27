@@ -8,5 +8,5 @@ public partial class UFractureRemoveOnBreakSettings : UFractureToolSettings {
 	public FVector2f PostBreakTimer;
 	public bool ClusterCrumbling;
 	public FVector2f RemovalTimer;
-	public void DeleteRemoveOnBreakData() {}
+	public  void DeleteRemoveOnBreakData() {}
 }

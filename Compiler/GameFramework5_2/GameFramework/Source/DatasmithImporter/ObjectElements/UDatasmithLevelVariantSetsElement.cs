@@ -5,9 +5,9 @@ using CSharpToCpp.Utilities;
 ///<summary>* UDatasmithLevelVariantSetsElement</summary>
 public partial class UDatasmithLevelVariantSetsElement : UDatasmithObjectElement {
 // DatasmithLevelVariantSetsElement
-	public UObject CreateVariantSet(string InElementName) { return default; }
-	public void AddVariantSet(UObject VariantSet) {}
-	public int GetVariantSetsCount() { return default; }
-	public UObject GetVariantSet(int Index) { return default; }
-	public void RemoveVariantSet(UObject VariantSet) {}
+	public  UDatasmithVariantSetElement CreateVariantSet(string InElementName) { return default; }
+	public  void AddVariantSet(UDatasmithVariantSetElement VariantSet) {}
+	public  int GetVariantSetsCount() { return default; }
+	public  UDatasmithVariantSetElement GetVariantSet(int Index) { return default; }
+	public  void RemoveVariantSet(UDatasmithVariantSetElement VariantSet) {}
 }

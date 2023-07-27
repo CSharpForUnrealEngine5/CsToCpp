@@ -5,5 +5,5 @@ using CSharpToCpp.Utilities;
 public partial class AVPGameMode : AGameMode {
 // VPGameMode
 	public AVPRootActor RootActor;
-	public UObject GetRootActor() { return default; }
+	public  AVPRootActor GetRootActor() { return default; }
 }

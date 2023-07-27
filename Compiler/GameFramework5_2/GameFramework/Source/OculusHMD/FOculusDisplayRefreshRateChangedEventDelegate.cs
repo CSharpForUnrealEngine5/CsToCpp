@@ -4,4 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("OculusEventComponent.h")]
 public partial struct FOculusDisplayRefreshRateChangedEventDelegate {
 // OculusDisplayRefreshRateChangedEventDelegate__DelegateSignature
+	void AddDynamic(object obj, string functionName) {}
 }

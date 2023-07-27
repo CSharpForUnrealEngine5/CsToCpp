@@ -7,8 +7,8 @@ public partial class UAIPerceptionStimuliSourceComponent : UActorComponent {
 // AIPerceptionStimuliSourceComponent
 	public bool bAutoRegisterAsSource;
 	public TArray<UClass> RegisterAsSourceForSenses;
-	public void RegisterWithPerceptionSystem() {}
-	public void RegisterForSense(UClass SenseClass) {}
-	public void UnregisterFromPerceptionSystem() {}
-	public void UnregisterFromSense(UClass SenseClass) {}
+	public  void RegisterWithPerceptionSystem() {}
+	public  void RegisterForSense(UClass SenseClass) {}
+	public  void UnregisterFromPerceptionSystem() {}
+	public  void UnregisterFromSense(UClass SenseClass) {}
 }

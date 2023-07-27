@@ -10,8 +10,8 @@ public partial class UThrobber : UWidget {
 	public bool bAnimateVertically;
 	public bool bAnimateOpacity;
 	public FSlateBrush Image;
-	public void SetNumberOfPieces(int InNumberOfPieces) {}
-	public void SetAnimateHorizontally(bool bInAnimateHorizontally) {}
-	public void SetAnimateVertically(bool bInAnimateVertically) {}
-	public void SetAnimateOpacity(bool bInAnimateOpacity) {}
+	public  void SetNumberOfPieces(int InNumberOfPieces) {}
+	public  void SetAnimateHorizontally(bool bInAnimateHorizontally) {}
+	public  void SetAnimateVertically(bool bInAnimateVertically) {}
+	public  void SetAnimateOpacity(bool bInAnimateOpacity) {}
 }

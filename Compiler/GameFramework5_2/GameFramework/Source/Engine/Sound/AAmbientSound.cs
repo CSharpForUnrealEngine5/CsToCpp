@@ -6,9 +6,9 @@ using CSharpToCpp.Utilities;
 public partial class AAmbientSound : AActor {
 // AmbientSound
 	public UAudioComponent AudioComponent;
-	public void FadeIn(float FadeInDuration,float FadeVolumeLevel/*=1.0f*/) {}
-	public void FadeOut(float FadeOutDuration,float FadeVolumeLevel) {}
-	public void AdjustVolume(float AdjustVolumeDuration,float AdjustVolumeLevel) {}
-	public void Play(float StartTime/*=0.0f*/) {}
-	public void Stop() {}
+	public  void FadeIn(float FadeInDuration,float FadeVolumeLevel/*=1.0f*/) {}
+	public  void FadeOut(float FadeOutDuration,float FadeVolumeLevel) {}
+	public  void AdjustVolume(float AdjustVolumeDuration,float AdjustVolumeLevel) {}
+	public  void Play(float StartTime/*=0.0f*/) {}
+	public  void Stop() {}
 }

@@ -20,9 +20,9 @@ public partial class URuntimeVirtualTexture : UObject {
 	public byte LODGroup;
 	public int Size_DEPRECATED;
 	public URuntimeVirtualTextureStreamingProxy StreamingTexture_DEPRECATED;
-	public int GetTileCount() { return default; }
-	public int GetTileSize() { return default; }
-	public int GetTileBorderSize() { return default; }
-	public int GetSize() { return default; }
-	public int GetPageTableSize() { return default; }
+	public  int GetTileCount() { return default; }
+	public  int GetTileSize() { return default; }
+	public  int GetTileBorderSize() { return default; }
+	public  int GetSize() { return default; }
+	public  int GetPageTableSize() { return default; }
 }

@@ -10,10 +10,10 @@ public partial class UPointLightComponent : ULocalLightComponent {
 	public float SourceRadius;
 	public float SoftSourceRadius;
 	public float SourceLength;
-	public void SetUseInverseSquaredFalloff(bool bNewValue) {}
-	public void SetLightFalloffExponent(float NewLightFalloffExponent) {}
-	public void SetInverseExposureBlend(float NewInverseExposureBlend) {}
-	public void SetSourceRadius(float bNewValue) {}
-	public void SetSoftSourceRadius(float bNewValue) {}
-	public void SetSourceLength(float NewValue) {}
+	public  void SetUseInverseSquaredFalloff(bool bNewValue) {}
+	public  void SetLightFalloffExponent(float NewLightFalloffExponent) {}
+	public  void SetInverseExposureBlend(float NewInverseExposureBlend) {}
+	public  void SetSourceRadius(float bNewValue) {}
+	public  void SetSoftSourceRadius(float bNewValue) {}
+	public  void SetSourceLength(float NewValue) {}
 }

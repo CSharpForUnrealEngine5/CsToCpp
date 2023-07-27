@@ -6,6 +6,6 @@ using CSharpToCpp.Utilities;
 public partial class UPolygroupLayersProperties : UInteractiveToolPropertySet {
 // PolygroupLayersProperties
 	public string ActiveGroupLayer;
-	public TArray<string> GetGroupLayersFunc() { return default; }
+	public  TArray<string> GetGroupLayersFunc() { return default; }
 	public TArray<string> GroupLayersList;
 }

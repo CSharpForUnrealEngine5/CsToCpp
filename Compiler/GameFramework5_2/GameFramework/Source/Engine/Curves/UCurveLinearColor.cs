@@ -5,9 +5,9 @@ using CSharpToCpp.Utilities;
 public partial class UCurveLinearColor : UCurveBase {
 // CurveLinearColor
 	public FRichCurve FloatCurves;
-	public FLinearColor GetLinearColorValue(float InTime) { return default; }
-	public FLinearColor GetClampedLinearColorValue(float InTime) { return default; }
-	public FLinearColor GetUnadjustedLinearColorValue(float InTime) { return default; }
+	public  FLinearColor GetLinearColorValue(float InTime) { return default; }
+	public  FLinearColor GetClampedLinearColorValue(float InTime) { return default; }
+	public  FLinearColor GetUnadjustedLinearColorValue(float InTime) { return default; }
 	public float AdjustHue;
 	public float AdjustSaturation;
 	public float AdjustBrightness;

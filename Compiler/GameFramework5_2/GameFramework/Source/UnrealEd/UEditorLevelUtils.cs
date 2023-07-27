@@ -4,13 +4,13 @@ using CSharpToCpp.Utilities;
 [CppInclude("EditorLevelUtils.h")]
 public partial class UEditorLevelUtils : UObject {
 // EditorLevelUtils
-	public UObject CreateNewStreamingLevel(UClass LevelStreamingClass,string NewLevelPath/*=TEXT("")*/,bool bMoveSelectedActorsIntoNewLevel/*=false*/) { return default; }
-	public void MakeLevelCurrent(UObject InStreamingLevel) {}
-	public int MoveActorsToLevel(TArray<UObject> ActorsToMove,UObject DestStreamingLevel,bool bWarnAboutReferences/*=true*/,bool bWarnAboutRenaming/*=true*/) { return default; }
-	public int MoveSelectedActorsToLevel(UObject DestLevel,bool bWarnAboutReferences/*=true*/) { return default; }
-	public UObject K2_AddLevelToWorld(UObject World,string LevelPackageName,UClass LevelStreamingClass) { return default; }
-	public UObject K2_AddLevelToWorldWithTransform(UObject World,string LevelPackageName,UClass LevelStreamingClass,FTransform LevelTransform) { return default; }
-	public void SetLevelVisibility(UObject Level,bool bShouldBeVisible,bool bForceLayersVisible,ELevelVisibilityDirtyMode ModifyMode/*=ELevelVisibilityDirtyMode.ModifyOnChange*/) {}
-	public void SetLevelsVisibility(TArray<UObject> Levels,TArray<bool> bShouldBeVisible,bool bForceLayersVisible,ELevelVisibilityDirtyMode ModifyMode/*=ELevelVisibilityDirtyMode.ModifyOnChange*/) {}
-	public TArray<UObject> GetLevels(UObject World) { return default; }
+	public static ULevelStreaming CreateNewStreamingLevel(UClass LevelStreamingClass,string NewLevelPath/*=TEXT("")*/,bool bMoveSelectedActorsIntoNewLevel/*=false*/) { return default; }
+	public static void MakeLevelCurrent(ULevelStreaming InStreamingLevel) {}
+	public static int MoveActorsToLevel(TArray<AActor> ActorsToMove,ULevelStreaming DestStreamingLevel,bool bWarnAboutReferences/*=true*/,bool bWarnAboutRenaming/*=true*/) { return default; }
+	public static int MoveSelectedActorsToLevel(ULevelStreaming DestLevel,bool bWarnAboutReferences/*=true*/) { return default; }
+	public static ULevelStreaming K2_AddLevelToWorld(UWorld World,string LevelPackageName,UClass LevelStreamingClass) { return default; }
+	public static ULevelStreaming K2_AddLevelToWorldWithTransform(UWorld World,string LevelPackageName,UClass LevelStreamingClass,FTransform LevelTransform) { return default; }
+	public static void SetLevelVisibility(ULevel Level,bool bShouldBeVisible,bool bForceLayersVisible,ELevelVisibilityDirtyMode ModifyMode/*=ELevelVisibilityDirtyMode.ModifyOnChange*/) {}
+	public static void SetLevelsVisibility(TArray<ULevel> Levels,TArray<bool> bShouldBeVisible,bool bForceLayersVisible,ELevelVisibilityDirtyMode ModifyMode/*=ELevelVisibilityDirtyMode.ModifyOnChange*/) {}
+	public static TArray<ULevel> GetLevels(UWorld World) { return default; }
 }

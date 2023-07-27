@@ -4,5 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("AudioCapture.h")]
 public partial class UAudioCaptureFunctionLibrary : UBlueprintFunctionLibrary {
 // AudioCaptureFunctionLibrary
-	public UObject CreateAudioCapture() { return default; }
+	public static UAudioCapture CreateAudioCapture() { return default; }
 }

@@ -4,5 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("Binding/FloatBinding.h")]
 public partial class UFloatBinding : UPropertyBinding {
 // FloatBinding
-	public float GetValue() { return default; }
+	public  float GetValue() { return default; }
 }

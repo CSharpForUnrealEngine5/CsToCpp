@@ -13,7 +13,7 @@ public partial class UPoseAsset : UAnimationAsset {
 	public TArray<FTransform> RetargetSourceAssetReferencePose;
 	public UAnimSequence SourceAnimation;
 	public FGuid SourceAnimationRawDataGUID;
-	public void RenamePose(string OriginalPoseName,string NewPoseName) {}
-	public void GetPoseNames(TArray<string> PoseNames) {}
-	public void UpdatePoseFromAnimation(UObject AnimSequence) {}
+	public  void RenamePose(string OriginalPoseName,string NewPoseName) {}
+	public  void GetPoseNames(TArray<string> PoseNames) {}
+	public  void UpdatePoseFromAnimation(UAnimSequence AnimSequence) {}
 }

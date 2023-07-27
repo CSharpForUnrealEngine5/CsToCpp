@@ -4,8 +4,8 @@ using CSharpToCpp.Utilities;
 [CppInclude("ARComponent.h")]
 public partial class UARObjectComponent : UARComponent {
 // ARObjectComponent
-	public void ReceiveAdd(FARObjectUpdatePayload Payload) {}
-	public void ReceiveUpdate(FARObjectUpdatePayload Payload) {}
-	public void ServerUpdatePayload(FARObjectUpdatePayload NewPayload) {}
+	public  void ReceiveAdd(FARObjectUpdatePayload Payload) {}
+	public  void ReceiveUpdate(FARObjectUpdatePayload Payload) {}
+	public  void ServerUpdatePayload(FARObjectUpdatePayload NewPayload) {}
 	public FARObjectUpdatePayload ReplicatedPayload;
 }

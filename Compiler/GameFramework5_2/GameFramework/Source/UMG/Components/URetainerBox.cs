@@ -10,12 +10,12 @@ public partial class URetainerBox : UContentWidget {
 	public bool RenderOnPhase;
 	public int Phase;
 	public int PhaseCount;
-	public void SetRenderingPhase(int RenderPhase,int TotalPhases) {}
-	public void RequestRender() {}
-	public UObject GetEffectMaterial() { return default; }
-	public void SetEffectMaterial(UObject EffectMaterial) {}
-	public void SetTextureParameter(string TextureParameter) {}
-	public void SetRetainRendering(bool bInRetainRendering) {}
+	public  void SetRenderingPhase(int RenderPhase,int TotalPhases) {}
+	public  void RequestRender() {}
+	public  UMaterialInstanceDynamic GetEffectMaterial() { return default; }
+	public  void SetEffectMaterial(UMaterialInterface EffectMaterial) {}
+	public  void SetTextureParameter(string TextureParameter) {}
+	public  void SetRetainRendering(bool bInRetainRendering) {}
 	public UMaterialInterface EffectMaterial;
 	public string TextureParameter;
 }

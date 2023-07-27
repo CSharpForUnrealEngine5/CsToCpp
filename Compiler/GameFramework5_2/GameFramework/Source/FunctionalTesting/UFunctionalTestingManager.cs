@@ -9,5 +9,5 @@ public partial class UFunctionalTestingManager : UBlueprintFunctionLibrary {
 	public FFunctionalTestEventSignature OnSetupTests;
 	public FFunctionalTestEventSignature OnTestsComplete;
 	public FFunctionalTestEventSignature OnTestsBegin;
-	public bool RunAllFunctionalTests(UObject WorldContextObject,bool bNewLog/*=true*/,bool bRunLooped/*=false*/,string FailedTestsReproString/*=TEXT("")*/) { return default; }
+	public static bool RunAllFunctionalTests(UObject WorldContextObject,bool bNewLog/*=true*/,bool bRunLooped/*=false*/,string FailedTestsReproString/*=TEXT("")*/) { return default; }
 }

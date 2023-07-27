@@ -4,4 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("BuoyancyComponent.h")]
 public partial struct FOnPontoonEnteredWater {
 // OnPontoonEnteredWater__DelegateSignature
+	void AddDynamic(object obj, string functionName) {}
 }

@@ -4,4 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("Blueprint/AsyncTaskDownloadImage.h")]
 public partial struct FDownloadImageDelegate {
 // DownloadImageDelegate__DelegateSignature
+	void AddDynamic(object obj, string functionName) {}
 }

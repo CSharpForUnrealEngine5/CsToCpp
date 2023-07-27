@@ -4,5 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("UVTools/UVGenerationFlattenMapping.h")]
 public partial class UUVGenerationFlattenMapping : UBlueprintFunctionLibrary {
 // UVGenerationFlattenMapping
-	public void GenerateFlattenMappingUVs(UObject InStaticMesh,int UVChannel,float AngleThreshold/*=66.0f*/) {}
+	public static void GenerateFlattenMappingUVs(UStaticMesh InStaticMesh,int UVChannel,float AngleThreshold/*=66.0f*/) {}
 }

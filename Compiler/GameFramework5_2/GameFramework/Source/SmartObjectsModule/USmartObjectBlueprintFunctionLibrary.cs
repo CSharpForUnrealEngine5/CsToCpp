@@ -4,17 +4,17 @@ using CSharpToCpp.Utilities;
 [CppInclude("SmartObjectBlueprintFunctionLibrary.h")]
 public partial class USmartObjectBlueprintFunctionLibrary : UBlueprintFunctionLibrary {
 // SmartObjectBlueprintFunctionLibrary
-	public FSmartObjectClaimHandle GetValueAsSOClaimHandle(UObject BlackboardComponent,string KeyName) { return default; }
-	public void SetValueAsSOClaimHandle(UObject BlackboardComponent,string KeyName,FSmartObjectClaimHandle Value) {}
-	public bool IsValidSmartObjectClaimHandle(FSmartObjectClaimHandle Handle) { return default; }
-	public bool AddOrRemoveSmartObject(UObject SmartObject,bool bEnabled) { return default; }
-	public bool AddOrRemoveMultipleSmartObjects(TArray<UObject> SmartObjectActors,bool bAdd) { return default; }
-	public bool AddSmartObject(UObject SmartObjectActor) { return default; }
-	public bool AddMultipleSmartObjects(TArray<UObject> SmartObjectActors) { return default; }
-	public bool RemoveSmartObject(UObject SmartObjectActor) { return default; }
-	public bool RemoveMultipleSmartObjects(TArray<UObject> SmartObjectActors) { return default; }
-	public bool SetSmartObjectEnabled(UObject SmartObjectActor,bool bEnabled) { return default; }
-	public bool SetMultipleSmartObjectsEnabled(TArray<UObject> SmartObjectActors,bool bEnabled) { return default; }
-	public void SetBlackboardValueAsSOClaimHandle(UObject NodeOwner,FBlackboardKeySelector Key,FSmartObjectClaimHandle Value) {}
-	public FSmartObjectClaimHandle GetBlackboardValueAsSOClaimHandle(UObject NodeOwner,FBlackboardKeySelector Key) { return default; }
+	public static FSmartObjectClaimHandle GetValueAsSOClaimHandle(UBlackboardComponent BlackboardComponent,string KeyName) { return default; }
+	public static void SetValueAsSOClaimHandle(UBlackboardComponent BlackboardComponent,string KeyName,FSmartObjectClaimHandle Value) {}
+	public static bool IsValidSmartObjectClaimHandle(FSmartObjectClaimHandle Handle) { return default; }
+	public static bool AddOrRemoveSmartObject(AActor SmartObject,bool bEnabled) { return default; }
+	public static bool AddOrRemoveMultipleSmartObjects(TArray<AActor> SmartObjectActors,bool bAdd) { return default; }
+	public static bool AddSmartObject(AActor SmartObjectActor) { return default; }
+	public static bool AddMultipleSmartObjects(TArray<AActor> SmartObjectActors) { return default; }
+	public static bool RemoveSmartObject(AActor SmartObjectActor) { return default; }
+	public static bool RemoveMultipleSmartObjects(TArray<AActor> SmartObjectActors) { return default; }
+	public static bool SetSmartObjectEnabled(AActor SmartObjectActor,bool bEnabled) { return default; }
+	public static bool SetMultipleSmartObjectsEnabled(TArray<AActor> SmartObjectActors,bool bEnabled) { return default; }
+	public static void SetBlackboardValueAsSOClaimHandle(UBTNode NodeOwner,FBlackboardKeySelector Key,FSmartObjectClaimHandle Value) {}
+	public static FSmartObjectClaimHandle GetBlackboardValueAsSOClaimHandle(UBTNode NodeOwner,FBlackboardKeySelector Key) { return default; }
 }

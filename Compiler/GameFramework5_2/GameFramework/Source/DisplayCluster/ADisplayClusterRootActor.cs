@@ -5,14 +5,14 @@ using CSharpToCpp.Utilities;
 ///<summary>VR root. This contains nDisplay VR hierarchy in the game.</summary>
 public partial class ADisplayClusterRootActor : AActor {
 // DisplayClusterRootActor
-	public bool GetFlushPositionAndNormal(FVector WorldPosition,FVector OutPosition,FVector OutNormal) { return default; }
-	public bool MakeStageActorFlushToWall(object /*StageActor*/ StageActor,double DesiredOffsetFromFlush/*=0.0f*/) { return default; }
-	public UObject GetStageGeometryComponent() { return default; }
-	public UObject GetDefaultCamera() { return default; }
-	public UObject GetCommonViewPoint() { return default; }
-	public bool SetReplaceTextureFlagForAllViewports(bool bReplace) { return default; }
-	public bool SetFreezeOuterViewports(bool bEnable) { return default; }
-	public void UpdateProceduralMeshComponentData(UObject InProceduralMeshComponent/*=nullptr*/) {}
+	public  bool GetFlushPositionAndNormal(FVector WorldPosition,FVector OutPosition,FVector OutNormal) { return default; }
+	public  bool MakeStageActorFlushToWall(object /*StageActor*/ StageActor,double DesiredOffsetFromFlush/*=0.0f*/) { return default; }
+	public  UDisplayClusterStageGeometryComponent GetStageGeometryComponent() { return default; }
+	public  UDisplayClusterCameraComponent GetDefaultCamera() { return default; }
+	public  USceneComponent GetCommonViewPoint() { return default; }
+	public  bool SetReplaceTextureFlagForAllViewports(bool bReplace) { return default; }
+	public  bool SetFreezeOuterViewports(bool bEnable) { return default; }
+	public  void UpdateProceduralMeshComponentData(UProceduralMeshComponent InProceduralMeshComponent/*=nullptr*/) {}
 	public FDisplayClusterEditorPropertyReference ViewportScreenPercentageMultiplierRef;
 	public FDisplayClusterEditorPropertyReference ViewportScreenPercentageRef;
 	public FDisplayClusterEditorPropertyReference ViewportOverscanRef;

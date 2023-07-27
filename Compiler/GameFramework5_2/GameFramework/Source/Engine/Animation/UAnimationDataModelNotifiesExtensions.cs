@@ -4,6 +4,6 @@ using CSharpToCpp.Utilities;
 [CppInclude("Animation/AnimData/AnimDataNotifications.h")]
 public partial class UAnimationDataModelNotifiesExtensions : UBlueprintFunctionLibrary {
 // AnimationDataModelNotifiesExtensions
-	public void CopyPayload(FAnimDataModelNotifPayload Payload,UObject ExpectedStruct,FEmptyPayload OutPayload) {}
-	public FEmptyPayload GetPayload(FAnimDataModelNotifPayload Payload) { return default; }
+	public static void CopyPayload(FAnimDataModelNotifPayload Payload,UScriptStruct ExpectedStruct,FEmptyPayload OutPayload) {}
+	public static FEmptyPayload GetPayload(FAnimDataModelNotifPayload Payload) { return default; }
 }

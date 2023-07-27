@@ -4,20 +4,20 @@ using CSharpToCpp.Utilities;
 [CppInclude("Blueprint/AIBlueprintHelperLibrary.h")]
 public partial class UAIBlueprintHelperLibrary : UBlueprintFunctionLibrary {
 // AIBlueprintHelperLibrary
-	public UObject CreateMoveToProxyObject(UObject WorldContextObject,UObject Pawn,FVector Destination,UObject TargetActor/*=NULL*/,float AcceptanceRadius/*=5.0f*/,bool bStopOnOverlap/*=false*/) { return default; }
-	public void SendAIMessage(UObject Target,string Message,UObject MessageSource,bool bSuccess/*=true*/) {}
-	public UObject SpawnAIFromClass(UObject WorldContextObject,UClass PawnClass,UObject BehaviorTree,FVector Location,FRotator Rotation/*=FRotator.ZeroRotator*/,bool bNoCollisionFail/*=false*/,UObject Owner/*=nullptr*/) { return default; }
-	public UObject GetAIController(UObject ControlledActor) { return default; }
-	public UObject GetBlackboard(UObject Target) { return default; }
-	public void LockAIResourcesWithAnimation(UObject AnimInstance,bool bLockMovement,bool LockAILogic) {}
-	public void UnlockAIResourcesWithAnimation(UObject AnimInstance,bool bUnlockMovement,bool UnlockAILogic) {}
-	public bool IsValidAILocation(FVector Location) { return default; }
-	public bool IsValidAIDirection(FVector DirectionVector) { return default; }
-	public bool IsValidAIRotation(FRotator Rotation) { return default; }
-	public UObject GetCurrentPath(UObject Controller) { return default; }
-	public TArray<FVector> GetCurrentPathPoints(UObject Controller) { return default; }
-	public int GetCurrentPathIndex(UObject Controller) { return default; }
-	public int GetNextNavLinkIndex(UObject Controller) { return default; }
-	public void SimpleMoveToActor(UObject Controller,UObject Goal) {}
-	public void SimpleMoveToLocation(UObject Controller,FVector Goal) {}
+	public static UAIAsyncTaskBlueprintProxy CreateMoveToProxyObject(UObject WorldContextObject,APawn Pawn,FVector Destination,AActor TargetActor/*=NULL*/,float AcceptanceRadius/*=5.0f*/,bool bStopOnOverlap/*=false*/) { return default; }
+	public static void SendAIMessage(APawn Target,string Message,UObject MessageSource,bool bSuccess/*=true*/) {}
+	public static APawn SpawnAIFromClass(UObject WorldContextObject,UClass PawnClass,UBehaviorTree BehaviorTree,FVector Location,FRotator Rotation/*=FRotator.ZeroRotator*/,bool bNoCollisionFail/*=false*/,AActor Owner/*=nullptr*/) { return default; }
+	public static AAIController GetAIController(AActor ControlledActor) { return default; }
+	public static UBlackboardComponent GetBlackboard(AActor Target) { return default; }
+	public static void LockAIResourcesWithAnimation(UAnimInstance AnimInstance,bool bLockMovement,bool LockAILogic) {}
+	public static void UnlockAIResourcesWithAnimation(UAnimInstance AnimInstance,bool bUnlockMovement,bool UnlockAILogic) {}
+	public static bool IsValidAILocation(FVector Location) { return default; }
+	public static bool IsValidAIDirection(FVector DirectionVector) { return default; }
+	public static bool IsValidAIRotation(FRotator Rotation) { return default; }
+	public static UNavigationPath GetCurrentPath(AController Controller) { return default; }
+	public static TArray<FVector> GetCurrentPathPoints(AController Controller) { return default; }
+	public static int GetCurrentPathIndex(AController Controller) { return default; }
+	public static int GetNextNavLinkIndex(AController Controller) { return default; }
+	public static void SimpleMoveToActor(AController Controller,AActor Goal) {}
+	public static void SimpleMoveToLocation(AController Controller,FVector Goal) {}
 }

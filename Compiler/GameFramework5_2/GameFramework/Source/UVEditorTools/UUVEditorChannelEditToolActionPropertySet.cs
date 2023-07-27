@@ -4,5 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("UVEditorLayerEditTool.h")]
 public partial class UUVEditorChannelEditToolActionPropertySet : UInteractiveToolPropertySet {
 // UVEditorChannelEditToolActionPropertySet
-	public void Apply() {}
+	public  void Apply() {}
 }

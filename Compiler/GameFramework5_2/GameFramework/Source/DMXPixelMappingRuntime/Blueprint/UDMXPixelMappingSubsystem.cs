@@ -4,11 +4,11 @@ using CSharpToCpp.Utilities;
 [CppInclude("Blueprint/DMXPixelMappingSubsystem.h")]
 public partial class UDMXPixelMappingSubsystem : UEngineSubsystem {
 // DMXPixelMappingSubsystem
-	public UObject GetDMXPixelMappingSubsystem_Pure() { return default; }
-	public UObject GetDMXPixelMappingSubsystem_Callable() { return default; }
-	public UObject GetDMXPixelMapping(UObject InPixelMapping) { return default; }
-	public UObject GetRendererComponent(UObject InDMXPixelMapping,string InComponentName) { return default; }
-	public UObject GetOutputDMXComponent(UObject InDMXPixelMapping,string InComponentName) { return default; }
-	public UObject GetFixtureGroupComponent(UObject InDMXPixelMapping,string InComponentName) { return default; }
-	public UObject GetMatrixComponent(UObject InDMXPixelMapping,string InComponentName) { return default; }
+	public static UDMXPixelMappingSubsystem GetDMXPixelMappingSubsystem_Pure() { return default; }
+	public static UDMXPixelMappingSubsystem GetDMXPixelMappingSubsystem_Callable() { return default; }
+	public  UDMXPixelMapping GetDMXPixelMapping(UDMXPixelMapping InPixelMapping) { return default; }
+	public  UDMXPixelMappingRendererComponent GetRendererComponent(UDMXPixelMapping InDMXPixelMapping,string InComponentName) { return default; }
+	public  UDMXPixelMappingOutputDMXComponent GetOutputDMXComponent(UDMXPixelMapping InDMXPixelMapping,string InComponentName) { return default; }
+	public  UDMXPixelMappingFixtureGroupComponent GetFixtureGroupComponent(UDMXPixelMapping InDMXPixelMapping,string InComponentName) { return default; }
+	public  UDMXPixelMappingMatrixComponent GetMatrixComponent(UDMXPixelMapping InDMXPixelMapping,string InComponentName) { return default; }
 }

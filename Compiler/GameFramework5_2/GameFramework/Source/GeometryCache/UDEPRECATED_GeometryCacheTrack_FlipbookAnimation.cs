@@ -5,6 +5,6 @@ using CSharpToCpp.Utilities;
 ///<summary>Derived GeometryCacheTrack class, used for Transform animation.</summary>
 public partial class UDEPRECATED_GeometryCacheTrack_FlipbookAnimation : UGeometryCacheTrack {
 // GeometryCacheTrack_FlipbookAnimation
-	public void AddMeshSample(FGeometryCacheMeshData MeshData,float SampleTime) {}
+	public  void AddMeshSample(FGeometryCacheMeshData MeshData,float SampleTime) {}
 	public uint NumMeshSamples;
 }

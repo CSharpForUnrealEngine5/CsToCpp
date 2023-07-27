@@ -5,4 +5,5 @@ using CSharpToCpp.Utilities;
 ///<summary>Delegate called by 'PlayMontageNotify' and 'PlayMontageNotifyWindow' *</summary>
 public partial struct FPlayMontageAnimNotifyDelegate {
 // PlayMontageAnimNotifyDelegate__DelegateSignature
+	void AddDynamic(object obj, string functionName) {}
 }

@@ -5,17 +5,17 @@ using CSharpToCpp.Utilities;
 ///<summary>An instantiated Actor that acts as a handler of a GameplayCue. Since they are instantiated, they can maintain state and tick/update every frame if necessary.</summary>
 public partial class AGameplayCueNotify_Actor : AActor {
 // GameplayCueNotify_Actor
-	public void OnOwnerDestroyed(UObject DestroyedActor) {}
-	public void K2_EndGameplayCue() {}
+	public  void OnOwnerDestroyed(AActor DestroyedActor) {}
+	public  void K2_EndGameplayCue() {}
 	public bool bAutoDestroyOnRemove;
 	public float AutoDestroyDelay;
 	public bool WarnIfTimelineIsStillRunning;
 	public bool WarnIfLatentActionIsStillRunning;
-	public void K2_HandleGameplayCue(UObject MyTarget,EGameplayCueEvent EventType,FGameplayCueParameters Parameters) {}
-	public bool OnExecute(UObject MyTarget,FGameplayCueParameters Parameters) { return default; }
-	public bool OnActive(UObject MyTarget,FGameplayCueParameters Parameters) { return default; }
-	public bool WhileActive(UObject MyTarget,FGameplayCueParameters Parameters) { return default; }
-	public bool OnRemove(UObject MyTarget,FGameplayCueParameters Parameters) { return default; }
+	public  void K2_HandleGameplayCue(AActor MyTarget,EGameplayCueEvent EventType,FGameplayCueParameters Parameters) {}
+	public  bool OnExecute(AActor MyTarget,FGameplayCueParameters Parameters) { return default; }
+	public  bool OnActive(AActor MyTarget,FGameplayCueParameters Parameters) { return default; }
+	public  bool WhileActive(AActor MyTarget,FGameplayCueParameters Parameters) { return default; }
+	public  bool OnRemove(AActor MyTarget,FGameplayCueParameters Parameters) { return default; }
 	public FGameplayTag GameplayCueTag;
 	public string GameplayCueName;
 	public bool bAutoAttachToOwner;

@@ -5,5 +5,5 @@ using CSharpToCpp.Utilities;
 ///<summary>Script-extendable component class</summary>
 public partial class UScriptPluginComponent : UActorComponent {
 // ScriptPluginComponent
-	public bool CallScriptFunction(string FunctionName) { return default; }
+	public  bool CallScriptFunction(string FunctionName) { return default; }
 }

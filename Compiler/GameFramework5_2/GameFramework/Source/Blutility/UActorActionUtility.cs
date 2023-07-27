@@ -5,7 +5,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Base class for all actor action-related utilities</summary>
 public partial class UActorActionUtility : UEditorUtilityObject {
 // ActorActionUtility
-	public UClass GetSupportedClass() { return default; }
-	public TArray<TSoftObjectPtr<UClass>> GetSupportedClasses() { return default; }
+	public  UClass GetSupportedClass() { return default; }
+	public  TArray<TSoftObjectPtr<UClass>> GetSupportedClasses() { return default; }
 	public TArray<TSoftObjectPtr<UClass>> SupportedClasses;
 }

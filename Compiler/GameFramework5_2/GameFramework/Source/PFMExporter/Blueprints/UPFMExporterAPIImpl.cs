@@ -5,5 +5,5 @@ using CSharpToCpp.Utilities;
 ///<summary>Blueprint API interface implementation</summary>
 public partial class UPFMExporterAPIImpl : UObject {
 // PFMExporterAPIImpl
-	public bool ExportPFM(UObject SrcMesh,UObject Origin,int Width,int Height,string FileName) { return default; }
+	public  bool ExportPFM(UStaticMeshComponent SrcMesh,USceneComponent Origin,int Width,int Height,string FileName) { return default; }
 }

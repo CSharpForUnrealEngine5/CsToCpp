@@ -4,4 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("Components/ListViewBase.h")]
 public partial struct FOnListEntryGeneratedDynamic {
 // OnListEntryGeneratedDynamic__DelegateSignature
+	void AddDynamic(object obj, string functionName) {}
 }

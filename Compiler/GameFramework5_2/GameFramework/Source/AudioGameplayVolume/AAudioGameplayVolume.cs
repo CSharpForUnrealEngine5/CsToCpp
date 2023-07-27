@@ -7,10 +7,10 @@ public partial class AAudioGameplayVolume : AVolume {
 // AudioGameplayVolume
 	public UAudioGameplayVolumeComponent AGVComponent;
 	public bool bEnabled;
-	public void SetEnabled(bool bEnable) {}
-	public void OnListenerEnter() {}
-	public void OnListenerExit() {}
+	public  void SetEnabled(bool bEnable) {}
+	public  void OnListenerEnter() {}
+	public  void OnListenerExit() {}
 	public FAudioGameplayVolumeEvent OnListenerEnterEvent;
 	public FAudioGameplayVolumeEvent OnListenerExitEvent;
-	public void OnRep_bEnabled() {}
+	public  void OnRep_bEnabled() {}
 }

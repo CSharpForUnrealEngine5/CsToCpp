@@ -10,6 +10,6 @@ public partial class ALobbyBeaconState : AInfo {
 	public bool bLobbyStarted;
 	public float WaitForPlayersTimeRemaining;
 	public FLobbyPlayerStateInfoArray Players;
-	public void OnRep_LobbyStarted() {}
-	public void OnRep_WaitForPlayersTimeRemaining() {}
+	public  void OnRep_LobbyStarted() {}
+	public  void OnRep_WaitForPlayersTimeRemaining() {}
 }

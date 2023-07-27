@@ -4,6 +4,6 @@ using CSharpToCpp.Utilities;
 [CppInclude("AndroidPermissionFunctionLibrary.h")]
 public partial class UAndroidPermissionFunctionLibrary : UBlueprintFunctionLibrary {
 // AndroidPermissionFunctionLibrary
-	public bool CheckPermission(string permission) { return default; }
-	public UObject AcquirePermissions(TArray<string> permissions) { return default; }
+	public static bool CheckPermission(string permission) { return default; }
+	public static UAndroidPermissionCallbackProxy AcquirePermissions(TArray<string> permissions) { return default; }
 }

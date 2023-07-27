@@ -5,5 +5,5 @@ using CSharpToCpp.Utilities;
 ///<summary>* Base class for Blueprint based Conditions.</summary>
 public partial class UStateTreeConditionBlueprintBase : UStateTreeNodeBlueprintBase {
 // StateTreeConditionBlueprintBase
-	public bool ReceiveTestCondition() { return default; }
+	public  bool ReceiveTestCondition() { return default; }
 }

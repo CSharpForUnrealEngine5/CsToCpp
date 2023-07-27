@@ -6,7 +6,7 @@ using CSharpToCpp.Utilities;
 public partial class UAudioAnalyzer : UObject {
 // AudioAnalyzer
 	public UAudioBus AudioBus;
-	public void StartAnalyzing(UObject WorldContextObject,UObject AudioBusToAnalyze) {}
-	public void StopAnalyzing(UObject WorldContextObject/*=nullptr*/) {}
+	public  void StartAnalyzing(UObject WorldContextObject,UAudioBus AudioBusToAnalyze) {}
+	public  void StopAnalyzing(UObject WorldContextObject/*=nullptr*/) {}
 	public UAudioAnalyzerSubsystem AudioAnalyzerSubsystem;
 }

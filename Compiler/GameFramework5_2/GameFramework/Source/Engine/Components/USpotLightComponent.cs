@@ -7,6 +7,6 @@ public partial class USpotLightComponent : UPointLightComponent {
 // SpotLightComponent
 	public float InnerConeAngle;
 	public float OuterConeAngle;
-	public void SetInnerConeAngle(float NewInnerConeAngle) {}
-	public void SetOuterConeAngle(float NewOuterConeAngle) {}
+	public  void SetInnerConeAngle(float NewInnerConeAngle) {}
+	public  void SetOuterConeAngle(float NewOuterConeAngle) {}
 }

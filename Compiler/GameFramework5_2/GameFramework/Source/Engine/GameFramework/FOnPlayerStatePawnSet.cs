@@ -4,4 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("GameFramework/PlayerState.h")]
 public partial struct FOnPlayerStatePawnSet {
 // OnPlayerStatePawnSet__DelegateSignature
+	void AddDynamic(object obj, string functionName) {}
 }

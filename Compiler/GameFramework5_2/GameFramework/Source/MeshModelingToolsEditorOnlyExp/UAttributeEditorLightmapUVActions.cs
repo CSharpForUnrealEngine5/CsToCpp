@@ -7,7 +7,7 @@ public partial class UAttributeEditorLightmapUVActions : UAttributeEditorActionP
 	public bool bGenerateLightmapUVs;
 	public int SourceUVIndex;
 	public int DestinationUVIndex;
-	public void Enable() {}
-	public void Disable() {}
-	public void Reset() {}
+	public  void Enable() {}
+	public  void Disable() {}
+	public  void Reset() {}
 }

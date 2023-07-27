@@ -4,5 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("EditMeshMaterialsTool.h")]
 public partial class UEditMeshMaterialsEditActions : UMeshSelectionToolActionPropertySet {
 // EditMeshMaterialsEditActions
-	public void AssignActiveMaterial() {}
+	public  void AssignActiveMaterial() {}
 }

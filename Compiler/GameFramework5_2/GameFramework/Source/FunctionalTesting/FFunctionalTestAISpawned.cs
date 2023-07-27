@@ -4,4 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("FunctionalAITest.h")]
 public partial struct FFunctionalTestAISpawned {
 // FunctionalTestAISpawned__DelegateSignature
+	void AddDynamic(object obj, string functionName) {}
 }

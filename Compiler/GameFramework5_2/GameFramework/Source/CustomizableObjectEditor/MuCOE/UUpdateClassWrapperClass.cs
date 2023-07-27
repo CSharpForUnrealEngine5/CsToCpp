@@ -5,5 +5,5 @@ using CSharpToCpp.Utilities;
 ///<summary>Wrapper UObject class for the UCustomizableObjectInstance::FObjectInstanceUpdatedDelegate dynamic multicast delegate</summary>
 public partial class UUpdateClassWrapperClass : UObject {
 // UpdateClassWrapperClass
-	public void DelegatedCallback(UObject Instance) {}
+	public  void DelegatedCallback(UCustomizableObjectInstance Instance) {}
 }

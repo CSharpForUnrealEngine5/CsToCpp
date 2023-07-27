@@ -6,6 +6,6 @@ using CSharpToCpp.Utilities;
 public partial class UAbilityTask_WaitOverlap : UAbilityTask {
 // AbilityTask_WaitOverlap
 	public FWaitOverlapDelegate OnOverlap;
-	public void OnHitCallback(UObject HitComp,UObject OtherActor,UObject OtherComp,FVector NormalImpulse,FHitResult Hit) {}
-	public UObject WaitForOverlap(UObject OwningAbility) { return default; }
+	public  void OnHitCallback(UPrimitiveComponent HitComp,AActor OtherActor,UPrimitiveComponent OtherComp,FVector NormalImpulse,FHitResult Hit) {}
+	public static UAbilityTask_WaitOverlap WaitForOverlap(UGameplayAbility OwningAbility) { return default; }
 }

@@ -4,7 +4,7 @@ using CSharpToCpp.Utilities;
 [CppInclude("CommonUserWidget.h")]
 public partial class UCommonUserWidget : UUserWidget {
 // CommonUserWidget
-	public void SetConsumePointerInput(bool bInConsumePointerInput) {}
+	public  void SetConsumePointerInput(bool bInConsumePointerInput) {}
 	public bool bDisplayInActionBar;
 	public bool bConsumePointerInput;
 }

@@ -4,5 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("CompositingElements/ICompositingTextureLookupTable.h")]
 public partial class UCompositingTextureLookupTable : UInterface {
 // CompositingTextureLookupTable
-	public bool FindNamedPassResult(string LookupName,UObject OutTexture) { return default; }
+	public  bool FindNamedPassResult(string LookupName,UTexture OutTexture) { return default; }
 }

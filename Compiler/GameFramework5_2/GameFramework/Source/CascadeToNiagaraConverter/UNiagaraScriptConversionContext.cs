@@ -5,8 +5,8 @@ using CSharpToCpp.Utilities;
 ///<summary>Wrapper for programmatically adding scripts to a UNiagaraEmitter through a UNiagaraEmitterConversionContext.</summary>
 public partial class UNiagaraScriptConversionContext : UObject {
 // NiagaraScriptConversionContext
-	public bool SetParameter(string ParameterName,UObject ParameterInput,bool bInHasEditCondition/*=false*/,bool bInEditConditionValue/*=false*/) { return default; }
-	public void Log(string Message,ENiagaraMessageSeverity Severity,bool bIsVerbose/*=false*/) {}
-	public void SetModuleEnabled(bool bInModuleEnabled) {}
-	public bool GetModuleEnabled() { return default; }
+	public  bool SetParameter(string ParameterName,UNiagaraScriptConversionContextInput ParameterInput,bool bInHasEditCondition/*=false*/,bool bInEditConditionValue/*=false*/) { return default; }
+	public  void Log(string Message,ENiagaraMessageSeverity Severity,bool bIsVerbose/*=false*/) {}
+	public  void SetModuleEnabled(bool bInModuleEnabled) {}
+	public  bool GetModuleEnabled() { return default; }
 }

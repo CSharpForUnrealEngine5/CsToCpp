@@ -5,6 +5,6 @@ using CSharpToCpp.Utilities;
 public partial class ULidarToolActionsCollision : UInteractiveToolPropertySet {
 // LidarToolActionsCollision
 	public float OverrideMaxCollisionError;
-	public void BuildCollision() {}
-	public void RemoveCollision() {}
+	public  void BuildCollision() {}
+	public  void RemoveCollision() {}
 }

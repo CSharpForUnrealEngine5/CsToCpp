@@ -4,9 +4,9 @@ using CSharpToCpp.Utilities;
 [CppInclude("DisplayClusterConfigurationTypes.h")]
 public partial class UDisplayClusterConfigurationClusterNode : UDisplayClusterConfigurationData_Base {
 // DisplayClusterConfigurationClusterNode
-	public void GetViewportIds(TArray<string> OutViewportIds) {}
-	public UObject GetViewport(string ViewportId) { return default; }
-	public void GetReferencedMeshNames(TArray<string> OutMeshNames) {}
+	public  void GetViewportIds(TArray<string> OutViewportIds) {}
+	public  UDisplayClusterConfigurationViewport GetViewport(string ViewportId) { return default; }
+	public  void GetReferencedMeshNames(TArray<string> OutMeshNames) {}
 	public string Host;
 	public bool bIsSoundEnabled;
 	public bool bIsFullscreen;

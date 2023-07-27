@@ -5,5 +5,5 @@ using CSharpToCpp.Utilities;
 ///<summary>Base Sound Cue Template class, which builds the sound node graph procedurally and hides more complex Sound Cue functionality</summary>
 public partial class USoundCueTemplate : USoundCue {
 // SoundCueTemplate
-	public void AddSoundWavesToTemplate(TArray<UObject> SelectedObjects) {}
+	public  void AddSoundWavesToTemplate(TArray<UObject> SelectedObjects) {}
 }

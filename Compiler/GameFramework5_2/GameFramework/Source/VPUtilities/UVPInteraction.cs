@@ -4,7 +4,7 @@ using CSharpToCpp.Utilities;
 [CppInclude("IVPInteraction.h")]
 public partial class UVPInteraction : UInterface {
 // VPInteraction
-	public void OnActorDroppedFromCarry() {}
-	public void OnActorSelectedForTransform() {}
-	public void OnActorDroppedFromTransform() {}
+	public  void OnActorDroppedFromCarry() {}
+	public  void OnActorSelectedForTransform() {}
+	public  void OnActorDroppedFromTransform() {}
 }

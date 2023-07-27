@@ -6,5 +6,5 @@ public partial class UControlRigWorkflowOptions : URigVMUserWorkflowOptions {
 // ControlRigWorkflowOptions
 	public URigHierarchy Hierarchy;
 	public TArray<FRigElementKey> Selection;
-	public bool EnsureAtLeastOneRigElementSelected() { return default; }
+	public  bool EnsureAtLeastOneRigElementSelected() { return default; }
 }

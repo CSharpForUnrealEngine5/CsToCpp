@@ -5,8 +5,8 @@ using CSharpToCpp.Utilities;
 ///<summary>UFilterVolumeComponent - Audio Gameplay Volume component for occlusion settings (volume filter)</summary>
 public partial class UFilterVolumeComponent : UAudioGameplayVolumeMutator {
 // FilterVolumeComponent
-	public void SetExteriorLPF(float Volume,float InterpolateTime) {}
-	public void SetInteriorLPF(float Volume,float InterpolateTime) {}
+	public  void SetExteriorLPF(float Volume,float InterpolateTime) {}
+	public  void SetInteriorLPF(float Volume,float InterpolateTime) {}
 	public float ExteriorLPF;
 	public float ExteriorLPFTime;
 	public float InteriorLPF;

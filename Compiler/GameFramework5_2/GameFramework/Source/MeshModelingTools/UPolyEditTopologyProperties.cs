@@ -5,6 +5,6 @@ using CSharpToCpp.Utilities;
 public partial class UPolyEditTopologyProperties : UEditMeshPolygonsToolActionPropertySet {
 // PolyEditTopologyProperties
 	public bool bAddExtraCorners;
-	public void RegenerateExtraCorners() {}
+	public  void RegenerateExtraCorners() {}
 	public double ExtraCornerAngleThresholdDegrees;
 }

@@ -21,10 +21,10 @@ public partial class USynth2DSlider : UWidget {
 	public FOnControllerCaptureEndEventSynth2D OnControllerCaptureEnd;
 	public FOnFloatValueChangedEventSynth2D OnValueChangedX;
 	public FOnFloatValueChangedEventSynth2D OnValueChangedY;
-	public FVector2D GetValue() { return default; }
-	public void SetValue(FVector2D InValue) {}
-	public void SetIndentHandle(bool InValue) {}
-	public void SetLocked(bool InValue) {}
-	public void SetStepSize(float InValue) {}
-	public void SetSliderHandleColor(FLinearColor InValue) {}
+	public  FVector2D GetValue() { return default; }
+	public  void SetValue(FVector2D InValue) {}
+	public  void SetIndentHandle(bool InValue) {}
+	public  void SetLocked(bool InValue) {}
+	public  void SetStepSize(float InValue) {}
+	public  void SetSliderHandleColor(FLinearColor InValue) {}
 }

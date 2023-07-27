@@ -4,4 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("ImageWriteBlueprintLibrary.h")]
 public partial struct FOnImageWriteComplete {
 // OnImageWriteComplete__DelegateSignature
+	void AddDynamic(object obj, string functionName) {}
 }

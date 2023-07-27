@@ -5,10 +5,10 @@ using CSharpToCpp.Utilities;
 ///<summary>In engine post process based pass.</summary>
 public partial class UComposurePostProcessPass : USceneComponent {
 // ComposurePostProcessPass
-	public void SetSetupMaterial(UObject Material) {}
-	public UObject GetSetupMaterial() { return default; }
-	public UObject GetOutputRenderTarget() { return default; }
-	public void SetOutputRenderTarget(UObject RenderTarget) {}
+	public  void SetSetupMaterial(UMaterialInterface Material) {}
+	public  UMaterialInterface GetSetupMaterial() { return default; }
+	public  UTextureRenderTarget2D GetOutputRenderTarget() { return default; }
+	public  void SetOutputRenderTarget(UTextureRenderTarget2D RenderTarget) {}
 	public USceneCaptureComponent2D SceneCapture;
 	public UComposurePostProcessBlendable BlendableInterface;
 	public UMaterialInterface SetupMaterial;

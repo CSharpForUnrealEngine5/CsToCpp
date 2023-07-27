@@ -9,8 +9,8 @@ public partial class UUniformGridSlot : UPanelSlot {
 	public byte VerticalAlignment;
 	public int Row;
 	public int Column;
-	public void SetRow(int InRow) {}
-	public void SetColumn(int InColumn) {}
-	public void SetHorizontalAlignment(EHorizontalAlignment InHorizontalAlignment) {}
-	public void SetVerticalAlignment(EVerticalAlignment InVerticalAlignment) {}
+	public  void SetRow(int InRow) {}
+	public  void SetColumn(int InColumn) {}
+	public  void SetHorizontalAlignment(EHorizontalAlignment InHorizontalAlignment) {}
+	public  void SetVerticalAlignment(EVerticalAlignment InVerticalAlignment) {}
 }

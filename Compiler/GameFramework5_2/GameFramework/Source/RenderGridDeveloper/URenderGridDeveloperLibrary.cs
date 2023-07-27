@@ -4,6 +4,6 @@ using CSharpToCpp.Utilities;
 [CppInclude("RenderGridDeveloperLibrary.h")]
 public partial class URenderGridDeveloperLibrary : UBlueprintFunctionLibrary {
 // RenderGridDeveloperLibrary
-	public TArray<UObject> GetAllRenderGridAssets() { return default; }
-	public UObject GetRenderGridAsset(string ObjectPath) { return default; }
+	public static TArray<URenderGrid> GetAllRenderGridAssets() { return default; }
+	public static URenderGrid GetRenderGridAsset(string ObjectPath) { return default; }
 }

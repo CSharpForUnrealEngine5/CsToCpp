@@ -4,4 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("OculusEntitlementCallbackProxy.h")]
 public partial struct FOculusEntitlementCheckResult {
 // OculusEntitlementCheckResult__DelegateSignature
+	void AddDynamic(object obj, string functionName) {}
 }

@@ -5,6 +5,6 @@ using CSharpToCpp.Utilities;
 ///<summary>Abstract class providing the minimal services required for an animation track node</summary>
 public partial class UInterchangeAnimationTrackBaseNode : UInterchangeBaseNode {
 // InterchangeAnimationTrackBaseNode
-	public bool SetCustomCompletionMode(int AttributeValue) { return default; }
-	public bool GetCustomCompletionMode(int AttributeValue) { return default; }
+	public  bool SetCustomCompletionMode(int AttributeValue) { return default; }
+	public  bool GetCustomCompletionMode(int AttributeValue) { return default; }
 }

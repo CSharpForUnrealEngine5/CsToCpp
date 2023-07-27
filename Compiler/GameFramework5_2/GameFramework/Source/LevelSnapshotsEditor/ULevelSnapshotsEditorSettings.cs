@@ -4,7 +4,7 @@ using CSharpToCpp.Utilities;
 [CppInclude("LevelSnapshotsEditorSettings.h")]
 public partial class ULevelSnapshotsEditorSettings : UObject {
 // LevelSnapshotsEditorSettings
-	public string ParseLevelSnapshotsTokensInText(string InTextToParse,string InWorldName) { return default; }
+	public static string ParseLevelSnapshotsTokensInText(string InTextToParse,string InWorldName) { return default; }
 	public FDirectoryPath RootLevelSnapshotSaveDir;
 	public string LevelSnapshotSaveDir;
 	public string DefaultLevelSnapshotName;

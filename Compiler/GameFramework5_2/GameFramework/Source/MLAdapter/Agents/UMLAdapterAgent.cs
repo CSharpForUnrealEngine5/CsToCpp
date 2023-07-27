@@ -5,8 +5,8 @@ using CSharpToCpp.Utilities;
 ///<summary>An agent capable of controlling a single avatar (e.g. a Pawn or Controller). Contains sensors for</summary>
 public partial class UMLAdapterAgent : UObject {
 // MLAdapterAgent
-	public void OnAvatarDestroyed(UObject DestroyedActor) {}
-	public void OnPawnControllerChanged(UObject InPawn,UObject InController) {}
+	public  void OnAvatarDestroyed(AActor DestroyedActor) {}
+	public  void OnPawnControllerChanged(APawn InPawn,AController InController) {}
 	public TArray<UMLAdapterSensor> Sensors;
 	public TArray<UMLAdapterActuator> Actuators;
 	public UClass AvatarClass;

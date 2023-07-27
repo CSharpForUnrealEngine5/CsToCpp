@@ -4,4 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("Abilities/Tasks/AbilityTask_WaitConfirmCancel.h")]
 public partial struct FWaitConfirmCancelDelegate {
 // WaitConfirmCancelDelegate__DelegateSignature
+	void AddDynamic(object obj, string functionName) {}
 }

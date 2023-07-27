@@ -5,5 +5,5 @@ using CSharpToCpp.Utilities;
 public partial class UCurveVector : UCurveBase {
 // CurveVector
 	public FRichCurve FloatCurves;
-	public FVector GetVectorValue(float InTime) { return default; }
+	public  FVector GetVectorValue(float InTime) { return default; }
 }

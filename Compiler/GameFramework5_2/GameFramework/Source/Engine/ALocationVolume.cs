@@ -5,9 +5,9 @@ using CSharpToCpp.Utilities;
 ///<summary>A volume representing a location in the world</summary>
 public partial class ALocationVolume : AVolume {
 // LocationVolume
-	public void Load() {}
-	public void Unload() {}
-	public bool IsLoaded() { return default; }
+	public  void Load() {}
+	public  void Unload() {}
+	public  bool IsLoaded() { return default; }
 	public FColor DebugColor;
 	public bool bIsRuntime;
 }

@@ -4,8 +4,8 @@ using CSharpToCpp.Utilities;
 [CppInclude("ActorFilter/BaseActorFilter.h")]
 public partial class UBaseActorFilter : UObject {
 // BaseActorFilter
-	public TArray<UObject> Filter(TArray<UObject> Source) { return default; }
-	public bool FilterUnit(UObject Source) { return default; }
+	public  TArray<AActor> Filter(TArray<AActor> Source) { return default; }
+	public  bool FilterUnit(AActor Source) { return default; }
 	public bool bShouldRunGlobalFilter;
 	public bool bShouldRunUnitFilter;
 }

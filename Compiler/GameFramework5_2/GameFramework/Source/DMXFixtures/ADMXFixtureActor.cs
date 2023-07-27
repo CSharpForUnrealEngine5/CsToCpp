@@ -10,13 +10,13 @@ public partial class ADMXFixtureActor : ADMXFixtureActorBase {
 	public USceneComponent Base;
 	public USceneComponent Yoke;
 	public USceneComponent Head;
-	public void InitializeFixture(UObject StaticMeshLens,UObject StaticMeshBeam) {}
-	public void SetLightIntensityMax(float NewLightIntensityMax) {}
-	public void SetLightDistanceMax(float NewLightDistanceMax) {}
-	public void SetLightColorTemp(float NewLightColorTemp) {}
-	public void SetSpotlightIntensityScale(float NewSpotlightIntensityScale) {}
-	public void SetPointlightIntensityScale(float NewPointlightIntensityScale) {}
-	public void SetLightCastShadow(bool bLightShouldCastShadow) {}
+	public  void InitializeFixture(UStaticMeshComponent StaticMeshLens,UStaticMeshComponent StaticMeshBeam) {}
+	public  void SetLightIntensityMax(float NewLightIntensityMax) {}
+	public  void SetLightDistanceMax(float NewLightDistanceMax) {}
+	public  void SetLightColorTemp(float NewLightColorTemp) {}
+	public  void SetSpotlightIntensityScale(float NewSpotlightIntensityScale) {}
+	public  void SetPointlightIntensityScale(float NewPointlightIntensityScale) {}
+	public  void SetLightCastShadow(bool bLightShouldCastShadow) {}
 	public float LightIntensityMax;
 	public float LightDistanceMax;
 	public float LightColorTemp;

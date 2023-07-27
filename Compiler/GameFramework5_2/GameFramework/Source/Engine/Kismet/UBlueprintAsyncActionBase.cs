@@ -5,5 +5,5 @@ using CSharpToCpp.Utilities;
 ///<summary>BlueprintCallable factory functions for classes which inherit from UBlueprintAsyncActionBase will have a special blueprint node created for it: UK2Node_AsyncAction</summary>
 public partial class UBlueprintAsyncActionBase : UObject {
 // BlueprintAsyncActionBase
-	public void Activate() {}
+	public  void Activate() {}
 }

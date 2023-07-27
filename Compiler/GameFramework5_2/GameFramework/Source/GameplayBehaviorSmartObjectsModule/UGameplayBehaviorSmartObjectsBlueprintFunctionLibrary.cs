@@ -4,5 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("GameplayBehaviorSmartObjectsBlueprintFunctionLibrary.h")]
 public partial class UGameplayBehaviorSmartObjectsBlueprintFunctionLibrary : UBlueprintFunctionLibrary {
 // GameplayBehaviorSmartObjectsBlueprintFunctionLibrary
-	public bool UseGameplayBehaviorSmartObject(UObject Avatar,UObject SmartObject) { return default; }
+	public static bool UseGameplayBehaviorSmartObject(AActor Avatar,AActor SmartObject) { return default; }
 }

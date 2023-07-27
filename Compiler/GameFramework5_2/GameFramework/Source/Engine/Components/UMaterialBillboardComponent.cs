@@ -6,6 +6,6 @@ using CSharpToCpp.Utilities;
 public partial class UMaterialBillboardComponent : UPrimitiveComponent {
 // MaterialBillboardComponent
 	public TArray<FMaterialSpriteElement> Elements;
-	public void SetElements(TArray<FMaterialSpriteElement> NewElements) {}
-	public void AddElement(UObject Material,UObject DistanceToOpacityCurve,bool bSizeIsInScreenSpace,float BaseSizeX,float BaseSizeY,UObject DistanceToSizeCurve) {}
+	public  void SetElements(TArray<FMaterialSpriteElement> NewElements) {}
+	public  void AddElement(UMaterialInterface Material,UCurveFloat DistanceToOpacityCurve,bool bSizeIsInScreenSpace,float BaseSizeX,float BaseSizeY,UCurveFloat DistanceToSizeCurve) {}
 }

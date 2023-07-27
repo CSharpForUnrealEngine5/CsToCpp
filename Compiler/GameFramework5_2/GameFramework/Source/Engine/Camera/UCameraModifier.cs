@@ -12,11 +12,11 @@ public partial class UCameraModifier : UObject {
 	public float AlphaInTime;
 	public float AlphaOutTime;
 	public float Alpha;
-	public void OnCameraOwnerDestroyed(UObject InOwner) {}
-	public void BlueprintModifyCamera(float DeltaTime,FVector ViewLocation,FRotator ViewRotation,float FOV,FVector NewViewLocation,FRotator NewViewRotation,float NewFOV) {}
-	public void BlueprintModifyPostProcess(float DeltaTime,float PostProcessBlendWeight,FPostProcessSettings PostProcessSettings) {}
-	public bool IsDisabled() { return default; }
-	public UObject GetViewTarget() { return default; }
-	public void DisableModifier(bool bImmediate/*=false*/) {}
-	public void EnableModifier() {}
+	public  void OnCameraOwnerDestroyed(AActor InOwner) {}
+	public  void BlueprintModifyCamera(float DeltaTime,FVector ViewLocation,FRotator ViewRotation,float FOV,FVector NewViewLocation,FRotator NewViewRotation,float NewFOV) {}
+	public  void BlueprintModifyPostProcess(float DeltaTime,float PostProcessBlendWeight,FPostProcessSettings PostProcessSettings) {}
+	public  bool IsDisabled() { return default; }
+	public  AActor GetViewTarget() { return default; }
+	public  void DisableModifier(bool bImmediate/*=false*/) {}
+	public  void EnableModifier() {}
 }

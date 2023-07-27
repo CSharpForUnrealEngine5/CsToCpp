@@ -4,5 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("DMXMVRFixtureActorInterface.h")]
 public partial class UDMXMVRFixtureActorInterface : UInterface {
 // DMXMVRFixtureActorInterface
-	public void OnMVRGetSupportedDMXAttributes(TArray<string> OutAttributeNames,TArray<string> OutMatrixAttributeNames) {}
+	public  void OnMVRGetSupportedDMXAttributes(TArray<string> OutAttributeNames,TArray<string> OutMatrixAttributeNames) {}
 }

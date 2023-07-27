@@ -4,4 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("VCamComponent.h")]
 public partial struct FOnComponentReplaced {
 // OnComponentReplaced__DelegateSignature
+	void AddDynamic(object obj, string functionName) {}
 }

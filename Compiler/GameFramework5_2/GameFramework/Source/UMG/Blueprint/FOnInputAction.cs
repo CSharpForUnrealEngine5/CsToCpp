@@ -4,4 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("Blueprint/UserWidget.h")]
 public partial struct FOnInputAction {
 // OnInputAction__DelegateSignature
+	void AddDynamic(object obj, string functionName) {}
 }

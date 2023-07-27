@@ -4,4 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("UDynamicMesh.h")]
 public partial struct FOnDynamicMeshModifiedBP {
 // OnDynamicMeshModifiedBP__DelegateSignature
+	void AddDynamic(object obj, string functionName) {}
 }

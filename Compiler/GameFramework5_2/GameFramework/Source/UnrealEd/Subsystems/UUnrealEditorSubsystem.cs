@@ -5,8 +5,8 @@ using CSharpToCpp.Utilities;
 ///<summary>UUnrealEditorSubsystem</summary>
 public partial class UUnrealEditorSubsystem : UEditorSubsystem {
 // UnrealEditorSubsystem
-	public bool GetLevelViewportCameraInfo(FVector CameraLocation,FRotator CameraRotation) { return default; }
-	public void SetLevelViewportCameraInfo(FVector CameraLocation,FRotator CameraRotation) {}
-	public UObject GetEditorWorld() { return default; }
-	public UObject GetGameWorld() { return default; }
+	public  bool GetLevelViewportCameraInfo(FVector CameraLocation,FRotator CameraRotation) { return default; }
+	public  void SetLevelViewportCameraInfo(FVector CameraLocation,FRotator CameraRotation) {}
+	public  UWorld GetEditorWorld() { return default; }
+	public  UWorld GetGameWorld() { return default; }
 }

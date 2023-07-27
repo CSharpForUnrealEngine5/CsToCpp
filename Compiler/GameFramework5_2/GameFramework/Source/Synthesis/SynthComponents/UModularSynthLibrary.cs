@@ -4,5 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("SynthComponents/EpicSynth1Component.h")]
 public partial class UModularSynthLibrary : UBlueprintFunctionLibrary {
 // ModularSynthLibrary
-	public void AddModularSynthPresetToBankAsset(UObject InBank,FModularSynthPreset Preset,string PresetName) {}
+	public static void AddModularSynthPresetToBankAsset(UModularSynthPresetBank InBank,FModularSynthPreset Preset,string PresetName) {}
 }

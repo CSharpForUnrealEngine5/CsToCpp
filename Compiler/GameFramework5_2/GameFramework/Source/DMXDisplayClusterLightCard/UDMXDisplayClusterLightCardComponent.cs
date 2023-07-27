@@ -5,5 +5,5 @@ using CSharpToCpp.Utilities;
 public partial class UDMXDisplayClusterLightCardComponent : UDMXComponent {
 // DMXDisplayClusterLightCardComponent
 	public FDMXDisplayClusterLightCardActorDataValueRanges ValueRanges;
-	public void OnLightCardReceivedDMXFromPatch(UObject FixturePatch,FDMXNormalizedAttributeValueMap ValuePerAttribute) {}
+	public  void OnLightCardReceivedDMXFromPatch(UDMXEntityFixturePatch FixturePatch,FDMXNormalizedAttributeValueMap ValuePerAttribute) {}
 }

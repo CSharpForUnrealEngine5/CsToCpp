@@ -5,6 +5,6 @@ using CSharpToCpp.Utilities;
 ///<summary>Instance UMVVMClassExtension_View for the UUserWdiget</summary>
 public partial class UMVVMView : UUserWidgetExtension {
 // MVVMView
-	public bool SetViewModel(string ViewModelName,object /*ViewModel*/ ViewModel) { return default; }
+	public  bool SetViewModel(string ViewModelName,object /*ViewModel*/ ViewModel) { return default; }
 	public UMVVMViewClass ClassExtension;
 }

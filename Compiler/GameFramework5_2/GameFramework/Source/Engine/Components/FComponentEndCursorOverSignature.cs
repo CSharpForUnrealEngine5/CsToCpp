@@ -4,4 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("Components/PrimitiveComponent.h")]
 public partial struct FComponentEndCursorOverSignature {
 // ComponentEndCursorOverSignature__DelegateSignature
+	void AddDynamic(object obj, string functionName) {}
 }

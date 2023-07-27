@@ -4,8 +4,8 @@ using CSharpToCpp.Utilities;
 [CppInclude("ToolMenusBlueprintLibrary.h")]
 public partial class UToolMenuSectionExtensions : UObject {
 // ToolMenuSectionExtensions
-	public void SetLabel(FToolMenuSection Section,string Label) {}
-	public string GetLabel(FToolMenuSection Section) { return default; }
-	public void AddEntry(FToolMenuSection Section,FToolMenuEntry Args) {}
-	public void AddEntryObject(FToolMenuSection Section,UObject InObject) {}
+	public static void SetLabel(FToolMenuSection Section,string Label) {}
+	public static string GetLabel(FToolMenuSection Section) { return default; }
+	public static void AddEntry(FToolMenuSection Section,FToolMenuEntry Args) {}
+	public static void AddEntryObject(FToolMenuSection Section,UToolMenuEntryScript InObject) {}
 }

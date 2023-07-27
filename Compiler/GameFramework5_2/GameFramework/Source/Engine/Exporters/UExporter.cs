@@ -14,7 +14,7 @@ public partial class UExporter : UObject {
 	public bool bSelectedOnly;
 	public bool bForceFileOperations;
 	public UAssetExportTask ExportTask;
-	public bool RunAssetExportTask(UObject Task) { return default; }
-	public bool ScriptRunAssetExportTask(UObject Task) { return default; }
-	public bool RunAssetExportTasks(TArray<UObject> ExportTasks) { return default; }
+	public static bool RunAssetExportTask(UAssetExportTask Task) { return default; }
+	public  bool ScriptRunAssetExportTask(UAssetExportTask Task) { return default; }
+	public static bool RunAssetExportTasks(TArray<UAssetExportTask> ExportTasks) { return default; }
 }

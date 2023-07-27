@@ -4,4 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("Blueprint/WidgetBlueprintLibrary.h")]
 public partial struct FOnGameWindowCloseButtonClickedDelegate {
 // OnGameWindowCloseButtonClickedDelegate__DelegateSignature
+	void AddDynamic(object obj, string functionName) {}
 }

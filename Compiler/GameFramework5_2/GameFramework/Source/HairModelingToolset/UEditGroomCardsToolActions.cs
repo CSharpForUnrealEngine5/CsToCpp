@@ -4,5 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("GroomCardsEditorTool.h")]
 public partial class UEditGroomCardsToolActions : UEditGroomCardsToolActionPropertySet {
 // EditGroomCardsToolActions
-	public void Delete() {}
+	public  void Delete() {}
 }

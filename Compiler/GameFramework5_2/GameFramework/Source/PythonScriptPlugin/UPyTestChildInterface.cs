@@ -4,5 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("PyTestInterface.h")]
 public partial class UPyTestChildInterface : UPyTestInterface {
 // PyTestChildInterface
-	public int FuncInterfaceChild(int InValue) { return default; }
+	public  int FuncInterfaceChild(int InValue) { return default; }
 }

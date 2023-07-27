@@ -4,4 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("GeometryCollection/GeometryCollectionComponent.h")]
 public partial struct FOnChaosRemovalEvent {
 // OnChaosRemovalEvent__DelegateSignature
+	void AddDynamic(object obj, string functionName) {}
 }

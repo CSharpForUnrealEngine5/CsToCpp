@@ -10,7 +10,7 @@ public partial class ALobbyBeaconPlayerState : AInfo {
 	public FUniqueNetIdRepl PartyOwnerUniqueId;
 	public bool bInLobby;
 	public AOnlineBeaconClient ClientActor;
-	public void OnRep_UniqueId() {}
-	public void OnRep_PartyOwner() {}
-	public void OnRep_InLobby() {}
+	public  void OnRep_UniqueId() {}
+	public  void OnRep_PartyOwner() {}
+	public  void OnRep_InLobby() {}
 }

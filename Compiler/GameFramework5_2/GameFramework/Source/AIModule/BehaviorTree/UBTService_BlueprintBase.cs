@@ -10,13 +10,13 @@ public partial class UBTService_BlueprintBase : UBTService {
 	public string CustomDescription;
 	public bool bShowPropertyDetails;
 	public bool bShowEventDetails;
-	public void ReceiveTick(UObject OwnerActor,float DeltaSeconds) {}
-	public void ReceiveSearchStart(UObject OwnerActor) {}
-	public void ReceiveActivation(UObject OwnerActor) {}
-	public void ReceiveDeactivation(UObject OwnerActor) {}
-	public void ReceiveTickAI(UObject OwnerController,UObject ControlledPawn,float DeltaSeconds) {}
-	public void ReceiveSearchStartAI(UObject OwnerController,UObject ControlledPawn) {}
-	public void ReceiveActivationAI(UObject OwnerController,UObject ControlledPawn) {}
-	public void ReceiveDeactivationAI(UObject OwnerController,UObject ControlledPawn) {}
-	public bool IsServiceActive() { return default; }
+	public  void ReceiveTick(AActor OwnerActor,float DeltaSeconds) {}
+	public  void ReceiveSearchStart(AActor OwnerActor) {}
+	public  void ReceiveActivation(AActor OwnerActor) {}
+	public  void ReceiveDeactivation(AActor OwnerActor) {}
+	public  void ReceiveTickAI(AAIController OwnerController,APawn ControlledPawn,float DeltaSeconds) {}
+	public  void ReceiveSearchStartAI(AAIController OwnerController,APawn ControlledPawn) {}
+	public  void ReceiveActivationAI(AAIController OwnerController,APawn ControlledPawn) {}
+	public  void ReceiveDeactivationAI(AAIController OwnerController,APawn ControlledPawn) {}
+	public  bool IsServiceActive() { return default; }
 }

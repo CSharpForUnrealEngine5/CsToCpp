@@ -5,6 +5,6 @@ using CSharpToCpp.Utilities;
 public partial class UCompositingElementTransform : UCompositingElementPass {
 // CompositingElementTransform
 	public bool bIntermediate;
-	public UObject ApplyTransform(UObject Input,UObject PostProcessProxy,UObject TargetCamera) { return default; }
-	public UObject FindNamedPrePassResult(string PassLookupName) { return default; }
+	public  UTexture ApplyTransform(UTexture Input,UComposurePostProcessingPassProxy PostProcessProxy,ACameraActor TargetCamera) { return default; }
+	public  UTexture FindNamedPrePassResult(string PassLookupName) { return default; }
 }

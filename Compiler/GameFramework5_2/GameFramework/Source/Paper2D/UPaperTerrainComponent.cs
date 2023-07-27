@@ -15,6 +15,6 @@ public partial class UPaperTerrainComponent : UPrimitiveComponent {
 	public int ReparamStepsPerSegment;
 	public byte SpriteCollisionDomain;
 	public float CollisionThickness;
-	public void SetTerrainColor(FLinearColor NewColor) {}
+	public  void SetTerrainColor(FLinearColor NewColor) {}
 	public UBodySetup CachedBodySetup;
 }

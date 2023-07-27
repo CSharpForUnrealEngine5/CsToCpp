@@ -5,10 +5,10 @@ using CSharpToCpp.Utilities;
 ///<summary>Library of functions that can be used via Python scripting to help testing the other USD functionality</summary>
 public partial class USDTestsBlueprintLibrary : UBlueprintFunctionLibrary {
 // SDTestsBlueprintLibrary
-	public bool RecompileBlueprintStageActor(UObject BlueprintDerivedStageActor) { return default; }
-	public void DirtyStageActorBlueprint(UObject BlueprintDerivedStageActor) {}
-	public long GetSubtreeVertexCount(UObject StageActor,string PrimPath) { return default; }
-	public long GetSubtreeMaterialSlotCount(UObject StageActor,string PrimPath) { return default; }
-	public void SetUsdStageCpp(UObject StageActor,string NewStageRootLayer) {}
-	public void ClearTransactionHistory() {}
+	public static bool RecompileBlueprintStageActor(AUsdStageActor BlueprintDerivedStageActor) { return default; }
+	public static void DirtyStageActorBlueprint(AUsdStageActor BlueprintDerivedStageActor) {}
+	public static long GetSubtreeVertexCount(AUsdStageActor StageActor,string PrimPath) { return default; }
+	public static long GetSubtreeMaterialSlotCount(AUsdStageActor StageActor,string PrimPath) { return default; }
+	public static void SetUsdStageCpp(AUsdStageActor StageActor,string NewStageRootLayer) {}
+	public static void ClearTransactionHistory() {}
 }

@@ -5,16 +5,16 @@ using CSharpToCpp.Utilities;
 ///<summary>GameMode is a subclass of GameModeBase that behaves like a multiplayer match-based game.</summary>
 public partial class AGameMode : AGameModeBase {
 // GameMode
-	public string GetMatchState() { return default; }
-	public bool IsMatchInProgress() { return default; }
-	public void StartMatch() {}
-	public void EndMatch() {}
-	public void RestartGame() {}
-	public void AbortMatch() {}
+	public  string GetMatchState() { return default; }
+	public  bool IsMatchInProgress() { return default; }
+	public  void StartMatch() {}
+	public  void EndMatch() {}
+	public  void RestartGame() {}
+	public  void AbortMatch() {}
 	public string MatchState;
-	public void K2_OnSetMatchState(string NewState) {}
-	public bool ReadyToStartMatch() { return default; }
-	public bool ReadyToEndMatch() { return default; }
+	public  void K2_OnSetMatchState(string NewState) {}
+	public  bool ReadyToStartMatch() { return default; }
+	public  bool ReadyToEndMatch() { return default; }
 	public bool bDelayedStart;
 	public int NumSpectators;
 	public int NumPlayers;
@@ -26,5 +26,5 @@ public partial class AGameMode : AGameModeBase {
 	public float InactivePlayerStateLifeSpan;
 	public int MaxInactivePlayers;
 	public bool bHandleDedicatedServerReplays;
-	public void Say(string Msg) {}
+	public  void Say(string Msg) {}
 }

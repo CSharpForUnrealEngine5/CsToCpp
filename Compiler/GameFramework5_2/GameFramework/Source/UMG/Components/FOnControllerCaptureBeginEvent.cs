@@ -4,4 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("Components/Slider.h")]
 public partial struct FOnControllerCaptureBeginEvent {
 // OnControllerCaptureBeginEvent__DelegateSignature
+	void AddDynamic(object obj, string functionName) {}
 }

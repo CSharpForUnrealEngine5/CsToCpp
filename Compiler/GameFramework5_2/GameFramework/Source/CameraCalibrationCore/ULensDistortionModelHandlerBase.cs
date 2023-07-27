@@ -5,10 +5,10 @@ using CSharpToCpp.Utilities;
 ///<summary>Asset user data that can be used on Camera Actors to manage lens distortion state and utilities</summary>
 public partial class ULensDistortionModelHandlerBase : UObject {
 // LensDistortionModelHandlerBase
-	public bool IsModelSupported(UClass ModelToSupport) { return default; }
-	public void SetDistortionState(FLensDistortionState InNewState) {}
-	public UObject GetUndistortionDisplacementMap() { return default; }
-	public UObject GetDistortionDisplacementMap() { return default; }
+	public  bool IsModelSupported(UClass ModelToSupport) { return default; }
+	public  void SetDistortionState(FLensDistortionState InNewState) {}
+	public  UTextureRenderTarget2D GetUndistortionDisplacementMap() { return default; }
+	public  UTextureRenderTarget2D GetDistortionDisplacementMap() { return default; }
 	public UClass LensModelClass;
 	public UMaterialInstanceDynamic DistortionPostProcessMID;
 	public FLensDistortionState CurrentState;

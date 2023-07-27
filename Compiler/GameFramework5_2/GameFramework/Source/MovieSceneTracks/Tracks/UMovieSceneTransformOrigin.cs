@@ -4,5 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("Tracks/IMovieSceneTransformOrigin.h")]
 public partial class UMovieSceneTransformOrigin : UInterface {
 // MovieSceneTransformOrigin
-	public FTransform BP_GetTransformOrigin() { return default; }
+	public  FTransform BP_GetTransformOrigin() { return default; }
 }

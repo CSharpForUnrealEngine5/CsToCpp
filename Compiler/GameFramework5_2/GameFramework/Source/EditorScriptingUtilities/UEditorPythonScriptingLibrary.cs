@@ -5,6 +5,6 @@ using CSharpToCpp.Utilities;
 ///<summary>Utility class for Python scripting functionality.</summary>
 public partial class UEditorPythonScriptingLibrary : UBlueprintFunctionLibrary {
 // EditorPythonScriptingLibrary
-	public void SetKeepPythonScriptAlive(bool bNewKeepAlive) {}
-	public bool GetKeepPythonScriptAlive() { return default; }
+	public static void SetKeepPythonScriptAlive(bool bNewKeepAlive) {}
+	public static bool GetKeepPythonScriptAlive() { return default; }
 }

@@ -12,5 +12,5 @@ public partial class ULevelExporterUSDOptions : UObject {
 	public bool bReExportIdenticalLevelsAndSequences;
 	public bool bReExportIdenticalAssets;
 	public TWeakObjectPtr<UAssetExportTask> CurrentTask;
-	public TArray<string> GetUsdExtensions() { return default; }
+	public static TArray<string> GetUsdExtensions() { return default; }
 }

@@ -4,4 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("UI/Switcher/VCamStateSwitcherWidget.h")]
 public partial struct FChangeConnectionStateEvent {
 // ChangeConnectionStateEvent__DelegateSignature
+	void AddDynamic(object obj, string functionName) {}
 }

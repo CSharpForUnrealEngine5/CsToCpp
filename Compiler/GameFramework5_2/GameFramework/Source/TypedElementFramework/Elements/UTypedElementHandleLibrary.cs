@@ -5,8 +5,8 @@ using CSharpToCpp.Utilities;
 ///<summary>Script exposure for FScriptTypedElementHandle.</summary>
 public partial class UTypedElementHandleLibrary : UObject {
 // TypedElementHandleLibrary
-	public bool IsSet(FScriptTypedElementHandle ElementHandle) { return default; }
-	public void Release(FScriptTypedElementHandle ElementHandle) {}
-	public bool Equal(FScriptTypedElementHandle LHS,FScriptTypedElementHandle RHS) { return default; }
-	public bool NotEqual(FScriptTypedElementHandle LHS,FScriptTypedElementHandle RHS) { return default; }
+	public static bool IsSet(FScriptTypedElementHandle ElementHandle) { return default; }
+	public static void Release(FScriptTypedElementHandle ElementHandle) {}
+	public static bool Equal(FScriptTypedElementHandle LHS,FScriptTypedElementHandle RHS) { return default; }
+	public static bool NotEqual(FScriptTypedElementHandle LHS,FScriptTypedElementHandle RHS) { return default; }
 }

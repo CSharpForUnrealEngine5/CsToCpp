@@ -4,10 +4,10 @@ using CSharpToCpp.Utilities;
 [CppInclude("Components/WorldPartitionStreamingSourceComponent.h")]
 public partial class UWorldPartitionStreamingSourceComponent : UActorComponent {
 // WorldPartitionStreamingSourceComponent
-	public void EnableStreamingSource() {}
-	public void DisableStreamingSource() {}
-	public bool IsStreamingSourceEnabled() { return default; }
-	public bool IsStreamingCompleted() { return default; }
+	public  void EnableStreamingSource() {}
+	public  void DisableStreamingSource() {}
+	public  bool IsStreamingSourceEnabled() { return default; }
+	public  bool IsStreamingCompleted() { return default; }
 	public float DefaultVisualizerLoadingRange;
 	public EStreamingSourceTargetBehavior TargetBehavior;
 	public TArray<string> TargetGrids;

@@ -5,6 +5,6 @@ using CSharpToCpp.Utilities;
 ///<summary>Script-exposed functionality for wrapping native functionality and constructing valid FAnimationAttributeIdentifier instances</summary>
 public partial class UAnimationAttributeIdentifierExtensions : UBlueprintFunctionLibrary {
 // AnimationAttributeIdentifierExtensions
-	public FAnimationAttributeIdentifier CreateAttributeIdentifier(UObject AnimationAsset,string AttributeName,string BoneName,UObject AttributeType,bool bValidateExistsOnAsset/*=false*/) { return default; }
-	public bool IsValid(FAnimationAttributeIdentifier Identifier) { return default; }
+	public static FAnimationAttributeIdentifier CreateAttributeIdentifier(UAnimationAsset AnimationAsset,string AttributeName,string BoneName,UScriptStruct AttributeType,bool bValidateExistsOnAsset/*=false*/) { return default; }
+	public static bool IsValid(FAnimationAttributeIdentifier Identifier) { return default; }
 }

@@ -5,6 +5,6 @@ using CSharpToCpp.Utilities;
 ///<summary>Per local player input subsystem</summary>
 public partial class UEnhancedInputLocalPlayerSubsystem : ULocalPlayerSubsystem {
 // EnhancedInputLocalPlayerSubsystem
-	public void FOnControlMappingsRebuilt() {}
+	public  void FOnControlMappingsRebuilt() {}
 	public FOnControlMappingsRebuilt ControlMappingsRebuiltDelegate;
 }

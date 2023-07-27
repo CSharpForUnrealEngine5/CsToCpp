@@ -14,6 +14,6 @@ public partial class ULiveLinkComponentController : UActorComponent {
 	public bool bDisableEvaluateLiveLinkWhenSpawnable;
 	public bool bEvaluateLiveLink;
 	public bool bUpdateInPreviewEditor;
-	public FLiveLinkSubjectRepresentation GetSubjectRepresentation() { return default; }
-	public void SetSubjectRepresentation(FLiveLinkSubjectRepresentation InSubjectRepresentation) {}
+	public  FLiveLinkSubjectRepresentation GetSubjectRepresentation() { return default; }
+	public  void SetSubjectRepresentation(FLiveLinkSubjectRepresentation InSubjectRepresentation) {}
 }

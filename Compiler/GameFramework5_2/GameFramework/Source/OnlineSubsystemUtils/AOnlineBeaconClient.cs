@@ -8,5 +8,5 @@ public partial class AOnlineBeaconClient : AOnlineBeacon {
 	public AOnlineBeaconHostObject BeaconOwner;
 	public UNetConnection BeaconConnection;
 	public EBeaconConnectionState ConnectionState;
-	public void ClientOnConnected() {}
+	public  void ClientOnConnected() {}
 }

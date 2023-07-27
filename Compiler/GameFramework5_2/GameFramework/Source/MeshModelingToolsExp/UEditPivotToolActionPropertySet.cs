@@ -5,12 +5,12 @@ using CSharpToCpp.Utilities;
 public partial class UEditPivotToolActionPropertySet : UInteractiveToolPropertySet {
 // EditPivotToolActionPropertySet
 	public bool bUseWorldBox;
-	public void Center() {}
-	public void Bottom() {}
-	public void Top() {}
-	public void Left() {}
-	public void Right() {}
-	public void Front() {}
-	public void Back() {}
-	public void WorldOrigin() {}
+	public  void Center() {}
+	public  void Bottom() {}
+	public  void Top() {}
+	public  void Left() {}
+	public  void Right() {}
+	public  void Front() {}
+	public  void Back() {}
+	public  void WorldOrigin() {}
 }

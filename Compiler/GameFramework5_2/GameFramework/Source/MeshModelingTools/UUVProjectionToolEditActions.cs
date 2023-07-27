@@ -4,7 +4,7 @@ using CSharpToCpp.Utilities;
 [CppInclude("UVProjectionTool.h")]
 public partial class UUVProjectionToolEditActions : UInteractiveToolPropertySet {
 // UVProjectionToolEditActions
-	public void AutoFit() {}
-	public void AutoFitAlign() {}
-	public void Reset() {}
+	public  void AutoFit() {}
+	public  void AutoFitAlign() {}
+	public  void Reset() {}
 }

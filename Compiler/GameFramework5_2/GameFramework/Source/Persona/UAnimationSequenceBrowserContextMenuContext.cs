@@ -5,5 +5,5 @@ using CSharpToCpp.Utilities;
 public partial class UAnimationSequenceBrowserContextMenuContext : UObject {
 // AnimationSequenceBrowserContextMenuContext
 	public TArray<TWeakObjectPtr<UObject>> SelectedObjects;
-	public TArray<UObject> GetSelectedObjects() { return default; }
+	public  TArray<UObject> GetSelectedObjects() { return default; }
 }

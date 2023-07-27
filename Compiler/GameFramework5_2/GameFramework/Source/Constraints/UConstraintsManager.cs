@@ -5,8 +5,8 @@ using CSharpToCpp.Utilities;
 ///<summary>UConstraintsManager</summary>
 public partial class UConstraintsManager : UObject {
 // ConstraintsManager
-	public void FOnConstraintAdded(UObject Mananger,UObject Constraint) {}
-	public void FOnConstraintRemoved(UObject Mananger,UObject Constraint,bool bDoNotCompensate) {}
+	public  void FOnConstraintAdded(UConstraintsManager Mananger,UTickableConstraint Constraint) {}
+	public  void FOnConstraintRemoved(UConstraintsManager Mananger,UTickableConstraint Constraint,bool bDoNotCompensate) {}
 	public FOnConstraintAdded OnConstraintAdded_BP;
 	public FOnConstraintRemoved OnConstraintRemoved_BP;
 	public TArray<UTickableConstraint> Constraints;

@@ -6,7 +6,7 @@ public partial class UAsyncTask_OpenMrcVidCaptureFeedBase : UBlueprintAsyncActio
 // AsyncTask_OpenMrcVidCaptureFeedBase
 	public FMRCaptureFeedDelegate OnSuccess;
 	public FMRCaptureFeedDelegate OnFail;
-	public void OnVideoFeedOpened(string DeviceUrl) {}
-	public void OnVideoFeedOpenFailure(string DeviceUrl) {}
+	public  void OnVideoFeedOpened(string DeviceUrl) {}
+	public  void OnVideoFeedOpenFailure(string DeviceUrl) {}
 	public UMediaPlayer MediaPlayer;
 }

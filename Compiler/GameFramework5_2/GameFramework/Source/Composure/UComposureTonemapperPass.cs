@@ -8,5 +8,5 @@ public partial class UComposureTonemapperPass : UComposurePostProcessPass {
 	public FColorGradingSettings ColorGradingSettings;
 	public FFilmStockSettings FilmStockSettings;
 	public float ChromaticAberration;
-	public void TonemapToRenderTarget() {}
+	public  void TonemapToRenderTarget() {}
 }

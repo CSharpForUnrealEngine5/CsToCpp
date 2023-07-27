@@ -5,7 +5,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Text block that supports custom scaling for mobile platforms, with option to only show icons if space is sparse.</summary>
 public partial class UCommonRichTextBlock : URichTextBlock {
 // CommonRichTextBlock
-	public void SetScrollingEnabled(bool bInIsScrollingEnabled) {}
+	public  void SetScrollingEnabled(bool bInIsScrollingEnabled) {}
 	public ERichTextInlineIconDisplayMode InlineIconDisplayMode;
 	public bool bTintInlineIcon;
 	public UClass DefaultTextStyleOverrideClass;

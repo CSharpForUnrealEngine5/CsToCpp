@@ -4,4 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("CommonInputSubsystem.h")]
 public partial struct FInputMethodChangedDelegate {
 // InputMethodChangedDelegate__DelegateSignature
+	void AddDynamic(object obj, string functionName) {}
 }

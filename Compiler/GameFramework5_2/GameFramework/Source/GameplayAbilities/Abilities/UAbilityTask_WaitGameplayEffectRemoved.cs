@@ -7,6 +7,6 @@ public partial class UAbilityTask_WaitGameplayEffectRemoved : UAbilityTask {
 // AbilityTask_WaitGameplayEffectRemoved
 	public FWaitGameplayEffectRemovedDelegate OnRemoved;
 	public FWaitGameplayEffectRemovedDelegate InvalidHandle;
-	public void OnGameplayEffectRemoved(FGameplayEffectRemovalInfo InGameplayEffectRemovalInfo) {}
-	public UObject WaitForGameplayEffectRemoved(UObject OwningAbility,FActiveGameplayEffectHandle Handle) { return default; }
+	public  void OnGameplayEffectRemoved(FGameplayEffectRemovalInfo InGameplayEffectRemovalInfo) {}
+	public static UAbilityTask_WaitGameplayEffectRemoved WaitForGameplayEffectRemoved(UGameplayAbility OwningAbility,FActiveGameplayEffectHandle Handle) { return default; }
 }

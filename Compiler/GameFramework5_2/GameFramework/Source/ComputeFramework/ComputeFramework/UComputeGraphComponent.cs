@@ -6,8 +6,8 @@ using CSharpToCpp.Utilities;
 public partial class UComputeGraphComponent : UActorComponent {
 // ComputeGraphComponent
 	public UComputeGraph ComputeGraph;
-	public void CreateDataProviders(int InBindingIndex,UObject InBindingObject) {}
-	public void DestroyDataProviders() {}
-	public void QueueExecute() {}
+	public  void CreateDataProviders(int InBindingIndex,UObject InBindingObject) {}
+	public  void DestroyDataProviders() {}
+	public  void QueueExecute() {}
 	public FComputeGraphInstance ComputeGraphInstance;
 }

@@ -5,5 +5,5 @@ using CSharpToCpp.Utilities;
 public partial class URigVMCompiler : UObject {
 // RigVMCompiler
 	public FRigVMCompileSettings Settings;
-	public bool Compile(TArray<UObject> InGraphs,UObject InController,UObject OutVM) { return default; }
+	public  bool Compile(TArray<URigVMGraph> InGraphs,URigVMController InController,URigVM OutVM) { return default; }
 }

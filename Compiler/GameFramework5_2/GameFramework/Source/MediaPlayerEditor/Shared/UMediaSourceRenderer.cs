@@ -5,7 +5,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Renders a media source to a texture in editor builds.</summary>
 public partial class UMediaSourceRenderer : UObject {
 // MediaSourceRenderer
-	public void OnSeekCompleted() {}
+	public  void OnSeekCompleted() {}
 	public UMediaPlayer MediaPlayer;
 	public UMediaSource MediaSource;
 	public UMediaTexture MediaTexture;

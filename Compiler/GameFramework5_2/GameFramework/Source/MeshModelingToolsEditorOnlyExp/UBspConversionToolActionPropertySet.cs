@@ -4,7 +4,7 @@ using CSharpToCpp.Utilities;
 [CppInclude("BspConversionTool.h")]
 public partial class UBspConversionToolActionPropertySet : UInteractiveToolPropertySet {
 // BspConversionToolActionPropertySet
-	public void SelectAllValidBrushes() {}
-	public void DeselectVolumes() {}
-	public void DeselectNonValid() {}
+	public  void SelectAllValidBrushes() {}
+	public  void DeselectVolumes() {}
+	public  void DeselectNonValid() {}
 }

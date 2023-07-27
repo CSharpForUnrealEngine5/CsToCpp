@@ -4,6 +4,6 @@ using CSharpToCpp.Utilities;
 [CppInclude("AttributeEditorTool.h")]
 public partial class UAttributeEditorNormalsActions : UAttributeEditorActionPropertySet {
 // AttributeEditorNormalsActions
-	public void ResetHardNormals() {}
-	public void DiscardTangents() {}
+	public  void ResetHardNormals() {}
+	public  void DiscardTangents() {}
 }

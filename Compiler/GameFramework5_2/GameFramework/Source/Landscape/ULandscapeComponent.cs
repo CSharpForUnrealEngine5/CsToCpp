@@ -61,9 +61,9 @@ public partial class ULandscapeComponent : UPrimitiveComponent {
 	public TArray<UTexture2D> MobileWeightmapTextures;
 	public TArray<UMaterialInstanceConstant> MobileCombinationMaterialInstances;
 	public UMaterialInstanceConstant MobileCombinationMaterialInstance_DEPRECATED;
-	public UObject GetMaterialInstanceDynamic(int InIndex) { return default; }
-	public float EditorGetPaintLayerWeightAtLocation(FVector InLocation,UObject PaintLayer) { return default; }
-	public float EditorGetPaintLayerWeightByNameAtLocation(FVector InLocation,string InPaintLayerName) { return default; }
-	public void SetForcedLOD(int InForcedLOD) {}
-	public void SetLODBias(int InLODBias) {}
+	public  UMaterialInstanceDynamic GetMaterialInstanceDynamic(int InIndex) { return default; }
+	public  float EditorGetPaintLayerWeightAtLocation(FVector InLocation,ULandscapeLayerInfoObject PaintLayer) { return default; }
+	public  float EditorGetPaintLayerWeightByNameAtLocation(FVector InLocation,string InPaintLayerName) { return default; }
+	public  void SetForcedLOD(int InForcedLOD) {}
+	public  void SetLODBias(int InLODBias) {}
 }

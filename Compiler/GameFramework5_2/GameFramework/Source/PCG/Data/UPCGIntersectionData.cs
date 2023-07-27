@@ -5,7 +5,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Generic intersection class that delays operations as long as possible.</summary>
 public partial class UPCGIntersectionData : UPCGSpatialDataWithPointCache {
 // PCGIntersectionData
-	public void Initialize(UObject InA,UObject InB) {}
+	public  void Initialize(UPCGSpatialData InA,UPCGSpatialData InB) {}
 	public EPCGIntersectionDensityFunction DensityFunction;
 	public UPCGSpatialData A;
 	public UPCGSpatialData B;

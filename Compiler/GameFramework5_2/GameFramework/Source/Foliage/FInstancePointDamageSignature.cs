@@ -4,4 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("FoliageInstancedStaticMeshComponent.h")]
 public partial struct FInstancePointDamageSignature {
 // InstancePointDamageSignature__DelegateSignature
+	void AddDynamic(object obj, string functionName) {}
 }

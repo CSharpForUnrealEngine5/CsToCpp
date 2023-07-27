@@ -13,9 +13,9 @@ public partial class UDynamicEntryBoxBase : UWidget {
 	public byte EntryVerticalAlignment;
 	public int MaxElementSize;
 	public FRadialBoxSettings RadialBoxSettings;
-	public TArray<UObject> GetAllEntries() { return default; }
-	public int GetNumEntries() { return default; }
-	public void SetEntrySpacing(FVector2D InEntrySpacing) {}
-	public void SetRadialSettings(FRadialBoxSettings InSettings) {}
+	public  TArray<UUserWidget> GetAllEntries() { return default; }
+	public  int GetNumEntries() { return default; }
+	public  void SetEntrySpacing(FVector2D InEntrySpacing) {}
+	public  void SetRadialSettings(FRadialBoxSettings InSettings) {}
 	public FUserWidgetPool EntryWidgetPool;
 }

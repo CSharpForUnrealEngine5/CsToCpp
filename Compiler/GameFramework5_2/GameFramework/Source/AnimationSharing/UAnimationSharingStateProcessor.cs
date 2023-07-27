@@ -4,7 +4,7 @@ using CSharpToCpp.Utilities;
 [CppInclude("AnimationSharingTypes.h")]
 public partial class UAnimationSharingStateProcessor : UObject {
 // AnimationSharingStateProcessor
-	public void ProcessActorState(int OutState,UObject InActor,byte CurrentState,byte OnDemandState,bool bShouldProcess) {}
-	public UObject GetAnimationStateEnum() { return default; }
+	public  void ProcessActorState(int OutState,AActor InActor,byte CurrentState,byte OnDemandState,bool bShouldProcess) {}
+	public  UEnum GetAnimationStateEnum() { return default; }
 	public TSoftObjectPtr<UEnum> AnimationStateEnum;
 }

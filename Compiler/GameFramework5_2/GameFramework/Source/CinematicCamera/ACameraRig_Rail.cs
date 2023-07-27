@@ -8,7 +8,7 @@ public partial class ACameraRig_Rail : AActor {
 	public bool bLockOrientationToRail;
 	public bool bShowRailVisualization;
 	public float PreviewMeshScale;
-	public UObject GetRailSplineComponent() { return default; }
+	public  USplineComponent GetRailSplineComponent() { return default; }
 	public USceneComponent TransformComponent;
 	public USplineComponent RailSplineComponent;
 	public USceneComponent RailCameraMount;

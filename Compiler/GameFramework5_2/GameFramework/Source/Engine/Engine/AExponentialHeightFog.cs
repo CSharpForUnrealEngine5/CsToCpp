@@ -7,5 +7,5 @@ public partial class AExponentialHeightFog : AInfo {
 // ExponentialHeightFog
 	public UExponentialHeightFogComponent Component;
 	public bool bEnabled;
-	public void OnRep_bEnabled() {}
+	public  void OnRep_bEnabled() {}
 }

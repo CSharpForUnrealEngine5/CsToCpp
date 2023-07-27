@@ -4,5 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("ImportTestFunctions/InterchangeResultImportTestFunctions.h")]
 public partial class UInterchangeResultImportTestFunctions : UImportTestFunctionsBase {
 // InterchangeResultImportTestFunctions
-	public FInterchangeTestFunctionResult CheckIfErrorOrWarningWasGenerated(UObject ResultsContainer,UClass ErrorOrWarningClass) { return default; }
+	public static FInterchangeTestFunctionResult CheckIfErrorOrWarningWasGenerated(UInterchangeResultsContainer ResultsContainer,UClass ErrorOrWarningClass) { return default; }
 }

@@ -5,6 +5,6 @@ using CSharpToCpp.Utilities;
 ///<summary>An UObject representing a face detected by ARCore.</summary>
 public partial class UGoogleARCoreAugmentedFace : UARFaceGeometry {
 // GoogleARCoreAugmentedFace
-	public FTransform GetLocalToWorldTransformOfRegion(EGoogleARCoreAugmentedFaceRegion Region) { return default; }
-	public FTransform GetLocalToTrackingTransformOfRegion(EGoogleARCoreAugmentedFaceRegion Region) { return default; }
+	public  FTransform GetLocalToWorldTransformOfRegion(EGoogleARCoreAugmentedFaceRegion Region) { return default; }
+	public  FTransform GetLocalToTrackingTransformOfRegion(EGoogleARCoreAugmentedFaceRegion Region) { return default; }
 }

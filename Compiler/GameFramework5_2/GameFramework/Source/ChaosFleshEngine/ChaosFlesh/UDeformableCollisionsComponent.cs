@@ -5,7 +5,7 @@ using CSharpToCpp.Utilities;
 ///<summary>UDeformableCollisionsComponent</summary>
 public partial class UDeformableCollisionsComponent : UDeformablePhysicsComponent {
 // DeformableCollisionsComponent
-	public void AddStaticMeshComponent(UObject StaticMeshComponent) {}
-	public void RemoveStaticMeshComponent(UObject StaticMeshComponent) {}
+	public  void AddStaticMeshComponent(UStaticMeshComponent StaticMeshComponent) {}
+	public  void RemoveStaticMeshComponent(UStaticMeshComponent StaticMeshComponent) {}
 	public TArray<UStaticMeshComponent> CollisionBodies;
 }

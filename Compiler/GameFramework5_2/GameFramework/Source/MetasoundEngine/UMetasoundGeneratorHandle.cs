@@ -4,8 +4,8 @@ using CSharpToCpp.Utilities;
 [CppInclude("MetasoundGeneratorHandle.h")]
 public partial class UMetasoundGeneratorHandle : UObject {
 // MetasoundGeneratorHandle
-	public UObject CreateMetaSoundGeneratorHandle(UObject OnComponent) { return default; }
-	public bool ApplyParameterPack(UObject Pack) { return default; }
+	public static UMetasoundGeneratorHandle CreateMetaSoundGeneratorHandle(UAudioComponent OnComponent) { return default; }
+	public  bool ApplyParameterPack(UMetasoundParameterPack Pack) { return default; }
 	public UAudioComponent AudioComponent;
 	public UMetaSoundSource CachedMetasoundSource;
 }

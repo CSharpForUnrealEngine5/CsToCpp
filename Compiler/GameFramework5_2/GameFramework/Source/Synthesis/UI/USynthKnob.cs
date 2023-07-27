@@ -21,8 +21,8 @@ public partial class USynthKnob : UWidget {
 	public FOnControllerCaptureBeginEvent OnControllerCaptureBegin;
 	public FOnControllerCaptureEndEvent OnControllerCaptureEnd;
 	public FOnFloatValueChangedEvent OnValueChanged;
-	public float GetValue() { return default; }
-	public void SetValue(float InValue) {}
-	public void SetLocked(bool InValue) {}
-	public void SetStepSize(float InValue) {}
+	public  float GetValue() { return default; }
+	public  void SetValue(float InValue) {}
+	public  void SetLocked(bool InValue) {}
+	public  void SetStepSize(float InValue) {}
 }

@@ -4,6 +4,6 @@ using CSharpToCpp.Utilities;
 [CppInclude("SourceEffects/SourceEffectPanner.h")]
 public partial class USourceEffectPannerPreset : USoundEffectSourcePreset {
 // SourceEffectPannerPreset
-	public void SetSettings(FSourceEffectPannerSettings InSettings) {}
+	public  void SetSettings(FSourceEffectPannerSettings InSettings) {}
 	public FSourceEffectPannerSettings Settings;
 }

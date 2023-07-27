@@ -6,6 +6,6 @@ using CSharpToCpp.Utilities;
 public partial class UAbilityTask_NetworkSyncPoint : UAbilityTask {
 // AbilityTask_NetworkSyncPoint
 	public FNetworkSyncDelegate OnSync;
-	public void OnSignalCallback() {}
-	public UObject WaitNetSync(UObject OwningAbility,EAbilityTaskNetSyncType SyncType) { return default; }
+	public  void OnSignalCallback() {}
+	public static UAbilityTask_NetworkSyncPoint WaitNetSync(UGameplayAbility OwningAbility,EAbilityTaskNetSyncType SyncType) { return default; }
 }

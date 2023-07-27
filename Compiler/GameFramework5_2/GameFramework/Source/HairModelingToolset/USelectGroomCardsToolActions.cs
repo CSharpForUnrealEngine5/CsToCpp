@@ -4,10 +4,10 @@ using CSharpToCpp.Utilities;
 [CppInclude("GroomCardsEditorTool.h")]
 public partial class USelectGroomCardsToolActions : UEditGroomCardsToolActionPropertySet {
 // SelectGroomCardsToolActions
-	public void Clear() {}
-	public void Fill() {}
-	public void AddNext() {}
-	public void AddPrevious() {}
-	public void ToEnd() {}
-	public void ToStart() {}
+	public  void Clear() {}
+	public  void Fill() {}
+	public  void AddNext() {}
+	public  void AddPrevious() {}
+	public  void ToEnd() {}
+	public  void ToStart() {}
 }

@@ -4,7 +4,7 @@ using CSharpToCpp.Utilities;
 [CppInclude("XRCreativeSubsystem.h")]
 public partial class UXRCreativeSubsystem : UEngineSubsystem {
 // XRCreativeSubsystem
-	public bool EnterVRMode() { return default; }
-	public void ExitVRMode() {}
+	public static bool EnterVRMode() { return default; }
+	public static void ExitVRMode() {}
 	public UXRCreativeSubsystemHelpers Helpers;
 }

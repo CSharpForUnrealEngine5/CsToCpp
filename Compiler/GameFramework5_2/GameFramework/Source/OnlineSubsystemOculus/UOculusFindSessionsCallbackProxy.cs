@@ -7,6 +7,6 @@ public partial class UOculusFindSessionsCallbackProxy : UOnlineBlueprintCallProx
 // OculusFindSessionsCallbackProxy
 	public FBlueprintFindSessionsResultDelegate OnSuccess;
 	public FBlueprintFindSessionsResultDelegate OnFailure;
-	public UObject FindMatchmakingSessions(int MaxResults,string OculusMatchmakingPool) { return default; }
-	public UObject FindModeratedSessions(int MaxResults) { return default; }
+	public static UOculusFindSessionsCallbackProxy FindMatchmakingSessions(int MaxResults,string OculusMatchmakingPool) { return default; }
+	public static UOculusFindSessionsCallbackProxy FindModeratedSessions(int MaxResults) { return default; }
 }

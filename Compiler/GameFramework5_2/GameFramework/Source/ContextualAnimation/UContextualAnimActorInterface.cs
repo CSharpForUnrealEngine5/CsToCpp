@@ -4,5 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("ContextualAnimActorInterface.h")]
 public partial class UContextualAnimActorInterface : UInterface {
 // ContextualAnimActorInterface
-	public UObject GetMesh() { return default; }
+	public  USkeletalMeshComponent GetMesh() { return default; }
 }

@@ -5,5 +5,5 @@ using CSharpToCpp.Utilities;
 public partial class ASceneCaptureCube : ASceneCapture {
 // SceneCaptureCube
 	public USceneCaptureComponentCube CaptureComponentCube;
-	public void OnInterpToggle(bool bEnable) {}
+	public  void OnInterpToggle(bool bEnable) {}
 }

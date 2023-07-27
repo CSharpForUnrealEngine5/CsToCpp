@@ -6,7 +6,7 @@ using CSharpToCpp.Utilities;
 public partial class UCompositingElementMaterialPass : UCompositingPostProcessPass {
 // CompositingElementMaterialPass
 	public FCompositingMaterial Material;
-	public void SetMaterialInterface(UObject NewMaterial) {}
-	public bool SetParameterMapping(string TextureParamName,string ComposureLayerName) { return default; }
-	public void ApplyMaterialParams(UObject MID) {}
+	public  void SetMaterialInterface(UMaterialInterface NewMaterial) {}
+	public  bool SetParameterMapping(string TextureParamName,string ComposureLayerName) { return default; }
+	public  void ApplyMaterialParams(UMaterialInstanceDynamic MID) {}
 }

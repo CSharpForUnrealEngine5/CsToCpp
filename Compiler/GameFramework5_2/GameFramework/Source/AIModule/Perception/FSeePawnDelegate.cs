@@ -4,4 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("Perception/PawnSensingComponent.h")]
 public partial struct FSeePawnDelegate {
 // SeePawnDelegate__DelegateSignature
+	void AddDynamic(object obj, string functionName) {}
 }

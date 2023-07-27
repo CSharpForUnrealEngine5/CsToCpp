@@ -5,9 +5,9 @@ using CSharpToCpp.Utilities;
 public partial class ACausticsGeneratorActor : AActor {
 // CausticsGeneratorActor
 	public USceneComponent DefaultSceneRoot;
-	public void EditorTick(float DeltaSeconds) {}
-	public void SetEditorTickEnabled(bool bEnabled) {}
+	public  void EditorTick(float DeltaSeconds) {}
+	public  void SetEditorTickEnabled(bool bEnabled) {}
 	public bool EditorTickIsEnabled;
-	public void SpawnWaterPreviewGrid(UObject HISMC,float GridSize,int GridTiles) {}
-	public void SpawnCausticParticleGrid(UObject HISMC,float GridSize,int GridTiles) {}
+	public  void SpawnWaterPreviewGrid(UHierarchicalInstancedStaticMeshComponent HISMC,float GridSize,int GridTiles) {}
+	public  void SpawnCausticParticleGrid(UHierarchicalInstancedStaticMeshComponent HISMC,float GridSize,int GridTiles) {}
 }

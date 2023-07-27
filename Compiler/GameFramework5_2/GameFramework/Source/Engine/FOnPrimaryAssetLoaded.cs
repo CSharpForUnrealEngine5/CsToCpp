@@ -4,4 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("AsyncActionLoadPrimaryAsset.h")]
 public partial struct FOnPrimaryAssetLoaded {
 // OnPrimaryAssetLoaded__DelegateSignature
+	void AddDynamic(object obj, string functionName) {}
 }

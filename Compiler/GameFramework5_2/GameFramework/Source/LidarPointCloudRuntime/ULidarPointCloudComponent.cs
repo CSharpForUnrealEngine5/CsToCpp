@@ -31,28 +31,28 @@ public partial class ULidarPointCloudComponent : UMeshComponent {
 	public UMaterialInterface Material;
 	public UMaterialInterface BaseMaterial;
 	public UMaterialInterface BaseMaterialMasked;
-	public UObject GetPointCloud() { return default; }
-	public bool HasPointsInSphere(FVector Center,float Radius,bool bVisibleOnly) { return default; }
-	public bool HasPointsInBox(FVector Center,FVector Extent,bool bVisibleOnly) { return default; }
-	public bool HasPointsByRay(FVector Origin,FVector Direction,float Radius,bool bVisibleOnly) { return default; }
-	public TArray<FLidarPointCloudPoint> GetPointsInSphereAsCopies(FVector Center,float Radius,bool bVisibleOnly,bool bReturnWorldSpace) { return default; }
-	public TArray<FLidarPointCloudPoint> GetPointsInBoxAsCopies(FVector Center,FVector Extent,bool bVisibleOnly,bool bReturnWorldSpace) { return default; }
-	public bool LineTraceSingle(FVector Origin,FVector Direction,float Radius,bool bVisibleOnly,FLidarPointCloudPoint PointHit) { return default; }
-	public bool LineTraceMulti(FVector Origin,FVector Direction,float Radius,bool bVisibleOnly,bool bReturnWorldSpace,TArray<FLidarPointCloudPoint> OutHits) { return default; }
-	public void SetVisibilityOfPointsInSphere(bool bNewVisibility,FVector Center,float Radius) {}
-	public void SetVisibilityOfPointsInBox(bool bNewVisibility,FVector Center,FVector Extent) {}
-	public void SetVisibilityOfFirstPointByRay(bool bNewVisibility,FVector Origin,FVector Direction,float Radius) {}
-	public void SetVisibilityOfPointsByRay(bool bNewVisibility,FVector Origin,FVector Direction,float Radius) {}
-	public void ApplyColorToPointsInSphere(FColor NewColor,FVector Center,float Radius,bool bVisibleOnly) {}
-	public void ApplyColorToPointsInBox(FColor NewColor,FVector Center,FVector Extent,bool bVisibleOnly) {}
-	public void ApplyColorToFirstPointByRay(FColor NewColor,FVector Origin,FVector Direction,float Radius,bool bVisibleOnly) {}
-	public void ApplyColorToPointsByRay(FColor NewColor,FVector Origin,FVector Direction,float Radius,bool bVisibleOnly) {}
-	public void RemovePointsInSphere(FVector Center,float Radius,bool bVisibleOnly) {}
-	public void RemovePointsInBox(FVector Center,FVector Extent,bool bVisibleOnly) {}
-	public void RemoveFirstPointByRay(FVector Origin,FVector Direction,float Radius,bool bVisibleOnly) {}
-	public void RemovePointsByRay(FVector Origin,FVector Direction,float Radius,bool bVisibleOnly) {}
-	public void SetPointCloud(UObject InPointCloud) {}
-	public ELidarPointCloudSpriteShape GetPointShape() { return default; }
-	public void SetPointShape(ELidarPointCloudSpriteShape NewPointShape) {}
-	public void ApplyRenderingParameters() {}
+	public  ULidarPointCloud GetPointCloud() { return default; }
+	public  bool HasPointsInSphere(FVector Center,float Radius,bool bVisibleOnly) { return default; }
+	public  bool HasPointsInBox(FVector Center,FVector Extent,bool bVisibleOnly) { return default; }
+	public  bool HasPointsByRay(FVector Origin,FVector Direction,float Radius,bool bVisibleOnly) { return default; }
+	public  TArray<FLidarPointCloudPoint> GetPointsInSphereAsCopies(FVector Center,float Radius,bool bVisibleOnly,bool bReturnWorldSpace) { return default; }
+	public  TArray<FLidarPointCloudPoint> GetPointsInBoxAsCopies(FVector Center,FVector Extent,bool bVisibleOnly,bool bReturnWorldSpace) { return default; }
+	public  bool LineTraceSingle(FVector Origin,FVector Direction,float Radius,bool bVisibleOnly,FLidarPointCloudPoint PointHit) { return default; }
+	public  bool LineTraceMulti(FVector Origin,FVector Direction,float Radius,bool bVisibleOnly,bool bReturnWorldSpace,TArray<FLidarPointCloudPoint> OutHits) { return default; }
+	public  void SetVisibilityOfPointsInSphere(bool bNewVisibility,FVector Center,float Radius) {}
+	public  void SetVisibilityOfPointsInBox(bool bNewVisibility,FVector Center,FVector Extent) {}
+	public  void SetVisibilityOfFirstPointByRay(bool bNewVisibility,FVector Origin,FVector Direction,float Radius) {}
+	public  void SetVisibilityOfPointsByRay(bool bNewVisibility,FVector Origin,FVector Direction,float Radius) {}
+	public  void ApplyColorToPointsInSphere(FColor NewColor,FVector Center,float Radius,bool bVisibleOnly) {}
+	public  void ApplyColorToPointsInBox(FColor NewColor,FVector Center,FVector Extent,bool bVisibleOnly) {}
+	public  void ApplyColorToFirstPointByRay(FColor NewColor,FVector Origin,FVector Direction,float Radius,bool bVisibleOnly) {}
+	public  void ApplyColorToPointsByRay(FColor NewColor,FVector Origin,FVector Direction,float Radius,bool bVisibleOnly) {}
+	public  void RemovePointsInSphere(FVector Center,float Radius,bool bVisibleOnly) {}
+	public  void RemovePointsInBox(FVector Center,FVector Extent,bool bVisibleOnly) {}
+	public  void RemoveFirstPointByRay(FVector Origin,FVector Direction,float Radius,bool bVisibleOnly) {}
+	public  void RemovePointsByRay(FVector Origin,FVector Direction,float Radius,bool bVisibleOnly) {}
+	public  void SetPointCloud(ULidarPointCloud InPointCloud) {}
+	public  ELidarPointCloudSpriteShape GetPointShape() { return default; }
+	public  void SetPointShape(ELidarPointCloudSpriteShape NewPointShape) {}
+	public  void ApplyRenderingParameters() {}
 }

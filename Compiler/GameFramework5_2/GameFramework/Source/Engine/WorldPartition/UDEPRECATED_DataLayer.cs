@@ -4,17 +4,17 @@ using CSharpToCpp.Utilities;
 [CppInclude("WorldPartition/DataLayer/DataLayer.h")]
 public partial class UDEPRECATED_DataLayer : UObject {
 // DataLayer
-	public bool Equals(FActorDataLayer ActorDataLayer) { return default; }
-	public string GetDataLayerLabel() { return default; }
-	public bool IsInitiallyVisible() { return default; }
-	public bool IsVisible() { return default; }
-	public bool IsEffectiveVisible() { return default; }
-	public FColor GetDebugColor() { return default; }
-	public bool IsRuntime() { return default; }
-	public EDataLayerRuntimeState GetInitialRuntimeState() { return default; }
-	public bool IsDynamicallyLoaded() { return default; }
-	public bool IsInitiallyActive() { return default; }
-	public EDataLayerState GetInitialState() { return default; }
+	public  bool Equals(FActorDataLayer ActorDataLayer) { return default; }
+	public  string GetDataLayerLabel() { return default; }
+	public  bool IsInitiallyVisible() { return default; }
+	public  bool IsVisible() { return default; }
+	public  bool IsEffectiveVisible() { return default; }
+	public  FColor GetDebugColor() { return default; }
+	public  bool IsRuntime() { return default; }
+	public  EDataLayerRuntimeState GetInitialRuntimeState() { return default; }
+	public  bool IsDynamicallyLoaded() { return default; }
+	public  bool IsInitiallyActive() { return default; }
+	public  EDataLayerState GetInitialState() { return default; }
 	public bool bIsInitiallyActive_DEPRECATED;
 	public bool bIsVisible;
 	public bool bIsInitiallyVisible;

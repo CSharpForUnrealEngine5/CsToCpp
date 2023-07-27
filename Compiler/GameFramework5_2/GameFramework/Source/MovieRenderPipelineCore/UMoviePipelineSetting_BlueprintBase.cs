@@ -5,11 +5,11 @@ using CSharpToCpp.Utilities;
 ///<summary>A base class for all Movie Render Pipeline settings which can be implemented in Blueprints. This features</summary>
 public partial class UMoviePipelineSetting_BlueprintBase : UMoviePipelineSetting {
 // MoviePipelineSetting_BlueprintBase
-	public void ReceiveSetupForPipelineImpl(UObject InPipeline) {}
-	public void ReceiveTeardownForPipelineImpl(UObject InPipeline) {}
-	public FMoviePipelineFormatArgs ReceiveGetFormatArguments(FMoviePipelineFormatArgs InOutFormatArgs) { return default; }
-	public void OnEngineTickBeginFrame() {}
-	public string ReceiveGetFooterText(UObject InJob) { return default; }
+	public  void ReceiveSetupForPipelineImpl(UMoviePipeline InPipeline) {}
+	public  void ReceiveTeardownForPipelineImpl(UMoviePipeline InPipeline) {}
+	public  FMoviePipelineFormatArgs ReceiveGetFormatArguments(FMoviePipelineFormatArgs InOutFormatArgs) { return default; }
+	public  void OnEngineTickBeginFrame() {}
+	public  string ReceiveGetFooterText(UMoviePipelineExecutorJob InJob) { return default; }
 	public string CategoryText;
 	public bool bIsValidOnPrimary;
 	public bool bIsValidOnShots;

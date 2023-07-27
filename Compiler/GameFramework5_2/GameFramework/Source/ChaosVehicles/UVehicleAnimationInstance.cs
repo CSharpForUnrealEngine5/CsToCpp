@@ -4,6 +4,6 @@ using CSharpToCpp.Utilities;
 [CppInclude("VehicleAnimationInstance.h")]
 public partial class UVehicleAnimationInstance : UAnimInstance {
 // VehicleAnimationInstance
-	public UObject GetVehicle() { return default; }
+	public  AWheeledVehiclePawn GetVehicle() { return default; }
 	public UChaosWheeledVehicleMovementComponent WheeledVehicleComponent;
 }

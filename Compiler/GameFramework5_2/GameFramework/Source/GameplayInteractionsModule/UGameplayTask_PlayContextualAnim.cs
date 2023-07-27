@@ -5,10 +5,10 @@ using CSharpToCpp.Utilities;
 ///<summary>Simulated GameplayTask that starts a contextual anim scene on multiple actors</summary>
 public partial class UGameplayTask_PlayContextualAnim : UGameplayTask {
 // GameplayTask_PlayContextualAnim
-	public UObject PlayContextualAnim(UObject Interactor,string InteractorRole,UObject InteractableObject,string InteractableObjectRole,string SectionName,string ExitSectionName,UObject SceneAsset) { return default; }
-	public void SetExit(EPlayContextualAnimExitMode ExitMode,string NewExitSectionName) {}
-	public EPlayContextualAnimStatus GetStatus() { return default; }
-	public void OnSectionEndTimeReached(UObject SceneInstance) {}
+	public static UGameplayTask_PlayContextualAnim PlayContextualAnim(AActor Interactor,string InteractorRole,AActor InteractableObject,string InteractableObjectRole,string SectionName,string ExitSectionName,UContextualAnimSceneAsset SceneAsset) { return default; }
+	public  void SetExit(EPlayContextualAnimExitMode ExitMode,string NewExitSectionName) {}
+	public  EPlayContextualAnimStatus GetStatus() { return default; }
+	public  void OnSectionEndTimeReached(UContextualAnimSceneInstance SceneInstance) {}
 	public FGenericGameplayTaskDelegate OnRequestFailed;
 	public FGameplayTaskActuationCompleted OnCompleted;
 	public int SectionIdx;

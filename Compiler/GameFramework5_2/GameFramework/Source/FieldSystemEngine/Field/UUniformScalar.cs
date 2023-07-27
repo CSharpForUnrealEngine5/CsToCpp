@@ -5,6 +5,6 @@ using CSharpToCpp.Utilities;
 ///<summary>Set a uniform scalar value independently of the sample position. The output is equal to magnitude</summary>
 public partial class UUniformScalar : UFieldNodeFloat {
 // UniformScalar
-	public UObject SetUniformScalar(float Magnitude) { return default; }
+	public  UUniformScalar SetUniformScalar(float Magnitude) { return default; }
 	public float Magnitude;
 }

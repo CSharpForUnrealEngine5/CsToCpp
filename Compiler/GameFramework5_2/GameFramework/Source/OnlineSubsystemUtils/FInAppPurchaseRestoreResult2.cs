@@ -4,4 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("InAppPurchaseRestoreCallbackProxy2.h")]
 public partial struct FInAppPurchaseRestoreResult2 {
 // InAppPurchaseRestoreResult2__DelegateSignature
+	void AddDynamic(object obj, string functionName) {}
 }

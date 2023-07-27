@@ -14,20 +14,20 @@ public partial class UEditorTutorial : UObject {
 	public TArray<FTutorialStage> Stages;
 	public FSoftClassPath PreviousTutorial;
 	public FSoftClassPath NextTutorial;
-	public UObject GetActorReference(string PathToActor) { return default; }
+	public  AActor GetActorReference(string PathToActor) { return default; }
 	public bool bIsStandalone;
 	public FSoftObjectPath AssetToUse;
 	public string ImportPath;
 	public bool bHideInBrowser;
 	public string SearchTags;
-	public void OnTutorialStageStarted(string StageName) {}
-	public void OnTutorialStageEnded(string StageName) {}
-	public void OnTutorialLaunched() {}
-	public void OnTutorialClosed() {}
-	public void GoToNextTutorialStage() {}
-	public void GoToPreviousTutorialStage() {}
-	public void BeginTutorial(UObject TutorialToStart,bool bRestart) {}
-	public void OpenAsset(UObject Asset) {}
-	public void SetEngineFolderVisibilty(bool bNewVisibility) {}
-	public bool GetEngineFolderVisibilty() { return default; }
+	public  void OnTutorialStageStarted(string StageName) {}
+	public  void OnTutorialStageEnded(string StageName) {}
+	public  void OnTutorialLaunched() {}
+	public  void OnTutorialClosed() {}
+	public static void GoToNextTutorialStage() {}
+	public static void GoToPreviousTutorialStage() {}
+	public static void BeginTutorial(UEditorTutorial TutorialToStart,bool bRestart) {}
+	public static void OpenAsset(UObject Asset) {}
+	public static void SetEngineFolderVisibilty(bool bNewVisibility) {}
+	public static bool GetEngineFolderVisibilty() { return default; }
 }

@@ -5,7 +5,7 @@ using CSharpToCpp.Utilities;
 public partial class UAttributeEditorModifyAttributeActions : UAttributeEditorActionPropertySet {
 // AttributeEditorModifyAttributeActions
 	public string Attribute;
-	public TArray<string> GetAttributeNamesFunc() { return default; }
+	public  TArray<string> GetAttributeNamesFunc() { return default; }
 	public TArray<string> AttributeNamesList;
-	public void DeleteSelected() {}
+	public  void DeleteSelected() {}
 }

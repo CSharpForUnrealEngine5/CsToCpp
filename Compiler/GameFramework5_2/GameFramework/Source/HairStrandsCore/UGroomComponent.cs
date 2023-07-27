@@ -21,18 +21,18 @@ public partial class UGroomComponent : UMeshComponent {
 	public UNiagaraSystem AngularSpringsSystem;
 	public UNiagaraSystem CosseratRodsSystem;
 	public string AttachmentName;
-	public void SetGroomAsset(UObject Asset) {}
-	public void SetBindingAsset(UObject InBinding) {}
-	public void SetPhysicsAsset(UObject InPhysicsAsset) {}
-	public void SetMeshDeformer(UObject InMeshDeformer) {}
-	public void AddCollisionComponent(UObject SkeletalMeshComponent) {}
-	public void ResetCollisionComponents() {}
-	public void SetEnableSimulation(bool bInEnableSimulation) {}
-	public void ResetSimulation() {}
-	public UObject GetNiagaraComponent(int GroupIndex) { return default; }
-	public void SetHairLengthScale(float Scale) {}
-	public void SetHairLengthScaleEnable(bool bEnable) {}
-	public bool GetIsHairLengthScaleEnabled() { return default; }
+	public  void SetGroomAsset(UGroomAsset Asset) {}
+	public  void SetBindingAsset(UGroomBindingAsset InBinding) {}
+	public  void SetPhysicsAsset(UPhysicsAsset InPhysicsAsset) {}
+	public  void SetMeshDeformer(UMeshDeformer InMeshDeformer) {}
+	public  void AddCollisionComponent(USkeletalMeshComponent SkeletalMeshComponent) {}
+	public  void ResetCollisionComponents() {}
+	public  void SetEnableSimulation(bool bInEnableSimulation) {}
+	public  void ResetSimulation() {}
+	public  UNiagaraComponent GetNiagaraComponent(int GroupIndex) { return default; }
+	public  void SetHairLengthScale(float Scale) {}
+	public  void SetHairLengthScaleEnable(bool bEnable) {}
+	public  bool GetIsHairLengthScaleEnabled() { return default; }
 	public TArray<FHairGroupDesc> GroomGroupsDesc;
 	public bool bUseCards;
 	public bool bRunning;

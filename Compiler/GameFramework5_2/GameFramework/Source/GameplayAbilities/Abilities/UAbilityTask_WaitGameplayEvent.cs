@@ -5,6 +5,6 @@ using CSharpToCpp.Utilities;
 public partial class UAbilityTask_WaitGameplayEvent : UAbilityTask {
 // AbilityTask_WaitGameplayEvent
 	public FWaitGameplayEventDelegate EventReceived;
-	public UObject WaitGameplayEvent(UObject OwningAbility,FGameplayTag EventTag,UObject OptionalExternalTarget/*=nullptr*/,bool OnlyTriggerOnce/*=false*/,bool OnlyMatchExact/*=true*/) { return default; }
+	public static UAbilityTask_WaitGameplayEvent WaitGameplayEvent(UGameplayAbility OwningAbility,FGameplayTag EventTag,AActor OptionalExternalTarget/*=nullptr*/,bool OnlyTriggerOnce/*=false*/,bool OnlyMatchExact/*=true*/) { return default; }
 	public UAbilitySystemComponent OptionalExternalTarget;
 }

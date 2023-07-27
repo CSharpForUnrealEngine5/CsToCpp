@@ -4,4 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("GameFramework/Actor.h")]
 public partial struct FActorEndOverlapSignature {
 // ActorEndOverlapSignature__DelegateSignature
+	void AddDynamic(object obj, string functionName) {}
 }

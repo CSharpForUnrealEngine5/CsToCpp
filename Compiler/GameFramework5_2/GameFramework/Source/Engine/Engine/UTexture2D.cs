@@ -10,6 +10,6 @@ public partial class UTexture2D : UTexture {
 	public byte AddressX;
 	public byte AddressY;
 	public FIntPoint ImportedSize;
-	public int Blueprint_GetSizeX() { return default; }
-	public int Blueprint_GetSizeY() { return default; }
+	public  int Blueprint_GetSizeX() { return default; }
+	public  int Blueprint_GetSizeY() { return default; }
 }

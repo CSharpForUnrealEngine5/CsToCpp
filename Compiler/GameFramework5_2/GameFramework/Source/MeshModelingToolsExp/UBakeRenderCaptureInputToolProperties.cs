@@ -6,7 +6,7 @@ public partial class UBakeRenderCaptureInputToolProperties : UInteractiveToolPro
 // BakeRenderCaptureInputToolProperties
 	public UStaticMesh TargetStaticMesh;
 	public string TargetUVLayer;
-	public int GetTargetUVLayerIndex() { return default; }
-	public TArray<string> GetTargetUVLayerNamesFunc() { return default; }
+	public  int GetTargetUVLayerIndex() { return default; }
+	public  TArray<string> GetTargetUVLayerNamesFunc() { return default; }
 	public TArray<string> TargetUVLayerNamesList;
 }

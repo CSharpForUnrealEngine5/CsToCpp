@@ -5,8 +5,8 @@ using CSharpToCpp.Utilities;
 ///<summary>SteamVR Extensions Function Library</summary>
 public partial class USteamVRChaperoneComponent : UActorComponent {
 // SteamVRChaperoneComponent
-	public void FSteamVRChaperoneEvent() {}
+	public  void FSteamVRChaperoneEvent() {}
 	public FSteamVRChaperoneEvent OnLeaveBounds;
 	public FSteamVRChaperoneEvent OnReturnToBounds;
-	public TArray<FVector> GetBounds() { return default; }
+	public  TArray<FVector> GetBounds() { return default; }
 }

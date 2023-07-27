@@ -35,7 +35,7 @@ public partial class ALandscapeProxy : APartitionActor {
 	public int VirtualTextureNumLods;
 	public int VirtualTextureLodBias;
 	public ERuntimeVirtualTextureMainPassType VirtualTextureRenderPassType;
-	public void SetVirtualTextureRenderPassType(ERuntimeVirtualTextureMainPassType InType) {}
+	public  void SetVirtualTextureRenderPassType(ERuntimeVirtualTextureMainPassType InType) {}
 	public float NegativeZBoundsExtension;
 	public float PositiveZBoundsExtension;
 	public TArray<ULandscapeComponent> LandscapeComponents;
@@ -79,16 +79,16 @@ public partial class ALandscapeProxy : APartitionActor {
 	public int MaxPaintedLayersPerComponent;
 	public bool bUseLandscapeForCullingInvisibleHLODVertices;
 	public bool bHasLayersContent;
-	public void ChangeLODDistanceFactor(float InLODDistanceFactor) {}
-	public void ChangeComponentScreenSizeToUseSubSections(float InComponentScreenSizeToUseSubSections) {}
-	public void EditorSetLandscapeMaterial(UObject NewLandscapeMaterial) {}
-	public void EditorApplySpline(UObject InSplineComponent,float StartWidth/*=200f*/,float EndWidth/*=200f*/,float StartSideFalloff/*=200f*/,float EndSideFalloff/*=200f*/,float StartRoll/*=0f*/,float EndRoll/*=0f*/,int NumSubdivisions/*=20*/,bool bRaiseHeights/*=true*/,bool bLowerHeights/*=true*/,UObject PaintLayer/*=nullptr*/,string EditLayerName/*=TEXT("")*/) {}
-	public void SetLandscapeMaterialTextureParameterValue(string ParameterName,UObject Value) {}
-	public void SetLandscapeMaterialVectorParameterValue(string ParameterName,FLinearColor Value) {}
-	public void SetLandscapeMaterialScalarParameterValue(string ParameterName,float Value) {}
-	public UObject GetLandscapeActor() { return default; }
-	public bool LandscapeExportHeightmapToRenderTarget(UObject InRenderTarget,bool InExportHeightIntoRGChannel/*=false*/,bool InExportLandscapeProxies/*=true*/) { return default; }
-	public bool LandscapeImportHeightmapFromRenderTarget(UObject InRenderTarget,bool InImportHeightFromRGChannel/*=false*/) { return default; }
-	public bool LandscapeImportWeightmapFromRenderTarget(UObject InRenderTarget,string InLayerName) { return default; }
-	public bool LandscapeExportWeightmapToRenderTarget(UObject InRenderTarget,string InLayerName) { return default; }
+	public  void ChangeLODDistanceFactor(float InLODDistanceFactor) {}
+	public  void ChangeComponentScreenSizeToUseSubSections(float InComponentScreenSizeToUseSubSections) {}
+	public  void EditorSetLandscapeMaterial(UMaterialInterface NewLandscapeMaterial) {}
+	public  void EditorApplySpline(USplineComponent InSplineComponent,float StartWidth/*=200f*/,float EndWidth/*=200f*/,float StartSideFalloff/*=200f*/,float EndSideFalloff/*=200f*/,float StartRoll/*=0f*/,float EndRoll/*=0f*/,int NumSubdivisions/*=20*/,bool bRaiseHeights/*=true*/,bool bLowerHeights/*=true*/,ULandscapeLayerInfoObject PaintLayer/*=nullptr*/,string EditLayerName/*=TEXT("")*/) {}
+	public  void SetLandscapeMaterialTextureParameterValue(string ParameterName,UTexture Value) {}
+	public  void SetLandscapeMaterialVectorParameterValue(string ParameterName,FLinearColor Value) {}
+	public  void SetLandscapeMaterialScalarParameterValue(string ParameterName,float Value) {}
+	public  ALandscape GetLandscapeActor() { return default; }
+	public  bool LandscapeExportHeightmapToRenderTarget(UTextureRenderTarget2D InRenderTarget,bool InExportHeightIntoRGChannel/*=false*/,bool InExportLandscapeProxies/*=true*/) { return default; }
+	public  bool LandscapeImportHeightmapFromRenderTarget(UTextureRenderTarget2D InRenderTarget,bool InImportHeightFromRGChannel/*=false*/) { return default; }
+	public  bool LandscapeImportWeightmapFromRenderTarget(UTextureRenderTarget2D InRenderTarget,string InLayerName) { return default; }
+	public  bool LandscapeExportWeightmapToRenderTarget(UTextureRenderTarget2D InRenderTarget,string InLayerName) { return default; }
 }

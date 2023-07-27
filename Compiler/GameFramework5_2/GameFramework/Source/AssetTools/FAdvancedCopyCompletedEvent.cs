@@ -4,4 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("IAssetTools.h")]
 public partial struct FAdvancedCopyCompletedEvent {
 // AdvancedCopyCompletedEvent__DelegateSignature
+	void AddDynamic(object obj, string functionName) {}
 }

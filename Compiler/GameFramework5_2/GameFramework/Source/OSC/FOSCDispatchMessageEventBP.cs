@@ -4,4 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("OSCServer.h")]
 public partial struct FOSCDispatchMessageEventBP {
 // OSCDispatchMessageEventBP__DelegateSignature
+	void AddDynamic(object obj, string functionName) {}
 }

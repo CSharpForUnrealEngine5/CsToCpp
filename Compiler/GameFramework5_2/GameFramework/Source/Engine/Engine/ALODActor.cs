@@ -21,7 +21,7 @@ public partial class ALODActor : AActor {
 	public float TransitionScreenSize;
 	public bool bOverrideScreenSize;
 	public int ScreenSize;
-	public void OnSubActorEndPlay(UObject Actor,EEndPlayReason Reason) {}
+	public  void OnSubActorEndPlay(AActor Actor,EEndPlayReason Reason) {}
 	public string LODActorTag;
 	public bool bBuiltFromHLODDesc;
 	public UHLODProxyDesc ProxyDesc;

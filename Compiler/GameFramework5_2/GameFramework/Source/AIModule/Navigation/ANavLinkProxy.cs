@@ -11,11 +11,11 @@ public partial class ANavLinkProxy : AActor {
 	public bool bSmartLinkIsRelevant;
 	public UNavLinkRenderingComponent EdRenderComp;
 	public UBillboardComponent SpriteComponent;
-	public void ReceiveSmartLinkReached(UObject Agent,FVector Destination) {}
-	public void ResumePathFollowing(UObject Agent) {}
-	public bool IsSmartLinkEnabled() { return default; }
-	public void SetSmartLinkEnabled(bool bEnabled) {}
-	public bool HasMovingAgents() { return default; }
-	public void CopyEndPointsFromSimpleLinkToSmartLink() {}
+	public  void ReceiveSmartLinkReached(AActor Agent,FVector Destination) {}
+	public  void ResumePathFollowing(AActor Agent) {}
+	public  bool IsSmartLinkEnabled() { return default; }
+	public  void SetSmartLinkEnabled(bool bEnabled) {}
+	public  bool HasMovingAgents() { return default; }
+	public  void CopyEndPointsFromSimpleLinkToSmartLink() {}
 	public FSmartLinkReachedSignature OnSmartLinkReached;
 }

@@ -4,7 +4,7 @@ using CSharpToCpp.Utilities;
 [CppInclude("LevelSequenceActor.h")]
 public partial class ULevelSequenceBurnInOptions : UObject {
 // LevelSequenceBurnInOptions
-	public void SetBurnIn(FSoftClassPath InBurnInClass) {}
+	public  void SetBurnIn(FSoftClassPath InBurnInClass) {}
 	public bool bUseBurnIn;
 	public FSoftClassPath BurnInClass;
 	public ULevelSequenceBurnInInitSettings Settings;

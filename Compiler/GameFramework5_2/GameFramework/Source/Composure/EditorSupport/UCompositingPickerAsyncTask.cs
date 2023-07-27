@@ -4,7 +4,7 @@ using CSharpToCpp.Utilities;
 [CppInclude("EditorSupport/CompositingEditorSupportLibrary.h")]
 public partial class UCompositingPickerAsyncTask : UBlueprintAsyncActionBase {
 // CompositingPickerAsyncTask
-	public UObject OpenCompositingPicker(UObject PickerTarget,UObject DisplayImage,string WindowTitle,bool bAverageColorOnDrag/*=true*/,bool bUseImplicitGamma/*=true*/) { return default; }
+	public static UCompositingPickerAsyncTask OpenCompositingPicker(UTextureRenderTarget2D PickerTarget,UTexture DisplayImage,string WindowTitle,bool bAverageColorOnDrag/*=true*/,bool bUseImplicitGamma/*=true*/) { return default; }
 	public FOnPixelPicked OnPick;
 	public FOnPixelPicked OnCancel;
 	public FOnPixelPicked OnAccept;

@@ -4,4 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("ARTypes.h")]
 public partial struct FOnARTrackingStateChanged {
 // OnARTrackingStateChanged__DelegateSignature
+	void AddDynamic(object obj, string functionName) {}
 }

@@ -4,6 +4,6 @@ using CSharpToCpp.Utilities;
 [CppInclude("BaseGizmos/GizmoInterfaces.h")]
 public partial class UGizmoTransformSource : UInterface {
 // GizmoTransformSource
-	public FTransform GetTransform() { return default; }
-	public void SetTransform(FTransform NewTransform) {}
+	public  FTransform GetTransform() { return default; }
+	public  void SetTransform(FTransform NewTransform) {}
 }

@@ -5,5 +5,5 @@ using CSharpToCpp.Utilities;
 ///<summary>Callback object for SMediaFrameworkVideoInputDisplay</summary>
 public partial class UMediaFrameworkVideoInputDisplayCallback : UObject {
 // MediaFrameworkVideoInputDisplayCallback
-	public void OnMediaClosed() {}
+	public  void OnMediaClosed() {}
 }

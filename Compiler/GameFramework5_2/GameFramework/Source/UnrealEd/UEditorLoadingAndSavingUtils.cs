@@ -5,20 +5,20 @@ using CSharpToCpp.Utilities;
 ///<summary>This class is a wrapper for editor loading and saving functionality</summary>
 public partial class UEditorLoadingAndSavingUtils : UObject {
 // EditorLoadingAndSavingUtils
-	public UObject NewBlankMap(bool bSaveExistingMap) { return default; }
-	public UObject NewMapFromTemplate(string PathToTemplateLevel,bool bSaveExistingMap) { return default; }
-	public UObject LoadMapWithDialog() { return default; }
-	public UObject LoadMap(string Filename) { return default; }
-	public bool SaveMap(UObject World,string AssetPath) { return default; }
-	public bool SavePackages(TArray<UObject> PackagesToSave,bool bOnlyDirty) { return default; }
-	public bool SavePackagesWithDialog(TArray<UObject> PackagesToSave,bool bOnlyDirty) { return default; }
-	public bool SaveDirtyPackages(bool bSaveMapPackages,bool bSaveContentPackages) { return default; }
-	public bool SaveDirtyPackagesWithDialog(bool bSaveMapPackages,bool bSaveContentPackages) { return default; }
-	public bool SaveCurrentLevel() { return default; }
-	public void GetDirtyMapPackages(TArray<UObject> OutDirtyPackages) {}
-	public void GetDirtyContentPackages(TArray<UObject> OutDirtyPackages) {}
-	public void ImportScene(string Filename) {}
-	public void ExportScene(bool bExportSelectedActorsOnly) {}
-	public void UnloadPackages(TArray<UObject> PackagesToUnload,bool bOutAnyPackagesUnloaded,string OutErrorMessage) {}
-	public void ReloadPackages(TArray<UObject> PackagesToReload,bool bOutAnyPackagesReloaded,string OutErrorMessage,EReloadPackagesInteractionMode InteractionMode/*=EReloadPackagesInteractionMode.Interactive*/) {}
+	public static UWorld NewBlankMap(bool bSaveExistingMap) { return default; }
+	public static UWorld NewMapFromTemplate(string PathToTemplateLevel,bool bSaveExistingMap) { return default; }
+	public static UWorld LoadMapWithDialog() { return default; }
+	public static UWorld LoadMap(string Filename) { return default; }
+	public static bool SaveMap(UWorld World,string AssetPath) { return default; }
+	public static bool SavePackages(TArray<UPackage> PackagesToSave,bool bOnlyDirty) { return default; }
+	public static bool SavePackagesWithDialog(TArray<UPackage> PackagesToSave,bool bOnlyDirty) { return default; }
+	public static bool SaveDirtyPackages(bool bSaveMapPackages,bool bSaveContentPackages) { return default; }
+	public static bool SaveDirtyPackagesWithDialog(bool bSaveMapPackages,bool bSaveContentPackages) { return default; }
+	public static bool SaveCurrentLevel() { return default; }
+	public static void GetDirtyMapPackages(TArray<UPackage> OutDirtyPackages) {}
+	public static void GetDirtyContentPackages(TArray<UPackage> OutDirtyPackages) {}
+	public static void ImportScene(string Filename) {}
+	public static void ExportScene(bool bExportSelectedActorsOnly) {}
+	public static void UnloadPackages(TArray<UPackage> PackagesToUnload,bool bOutAnyPackagesUnloaded,string OutErrorMessage) {}
+	public static void ReloadPackages(TArray<UPackage> PackagesToReload,bool bOutAnyPackagesReloaded,string OutErrorMessage,EReloadPackagesInteractionMode InteractionMode/*=EReloadPackagesInteractionMode.Interactive*/) {}
 }

@@ -5,6 +5,6 @@ using CSharpToCpp.Utilities;
 ///<summary>USourceEffectMidSideSpreaderPreset</summary>
 public partial class USourceEffectMidSideSpreaderPreset : USoundEffectSourcePreset {
 // SourceEffectMidSideSpreaderPreset
-	public void SetSettings(FSourceEffectMidSideSpreaderSettings InSettings) {}
+	public  void SetSettings(FSourceEffectMidSideSpreaderSettings InSettings) {}
 	public FSourceEffectMidSideSpreaderSettings Settings;
 }

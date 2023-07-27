@@ -5,5 +5,5 @@ using CSharpToCpp.Utilities;
 ///<summary>A library of commonly used functionality for Notifies, exposed to blueprint.</summary>
 public partial class UAnimNotifyLibrary : UBlueprintFunctionLibrary {
 // AnimNotifyLibrary
-	public bool NotifyStateReachedEnd(FAnimNotifyEventReference EventReference) { return default; }
+	public static bool NotifyStateReachedEnd(FAnimNotifyEventReference EventReference) { return default; }
 }

@@ -4,7 +4,7 @@ using CSharpToCpp.Utilities;
 [CppInclude("LidarPointCloudEditorTools.h")]
 public partial class ULidarToolActionsAlign : UInteractiveToolPropertySet {
 // LidarToolActionsAlign
-	public void AlignAroundWorldOrigin() {}
-	public void AlignAroundOriginalCoordinates() {}
-	public void ResetAlignment() {}
+	public  void AlignAroundWorldOrigin() {}
+	public  void AlignAroundOriginalCoordinates() {}
+	public  void ResetAlignment() {}
 }

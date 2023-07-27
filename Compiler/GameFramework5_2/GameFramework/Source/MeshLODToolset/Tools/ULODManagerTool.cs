@@ -9,9 +9,9 @@ public partial class ULODManagerTool : UMultiSelectionMeshEditingTool {
 	public ULODManagerPreviewLODProperties LODPreviewProperties;
 	public ULODManagerHiResSourceModelActions HiResSourceModelActions;
 	public ULODManagerMaterialActions MaterialActions;
-	public void DeleteHiResSourceModel() {}
-	public void MoveHiResToLOD0() {}
-	public void RemoveUnreferencedMaterials() {}
+	public  void DeleteHiResSourceModel() {}
+	public  void MoveHiResToLOD0() {}
+	public  void RemoveUnreferencedMaterials() {}
 	public UPreviewMesh LODPreview;
 	public UPreviewGeometry LODPreviewLines;
 }

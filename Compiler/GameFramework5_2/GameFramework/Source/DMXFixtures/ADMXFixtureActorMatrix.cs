@@ -9,7 +9,7 @@ public partial class ADMXFixtureActorMatrix : ADMXFixtureActor {
 	public float MatrixHeight;
 	public float MatrixDepth;
 	public bool bIgnorePixelMappingDistributionOfFixturePatch;
-	public void PushFixtureMatrixCellData(TArray<FDMXCell> MatrixPixelData) {}
-	public void InitializeMatrixFixture() {}
-	public void GenerateEditorMatrixMesh() {}
+	public  void PushFixtureMatrixCellData(TArray<FDMXCell> MatrixPixelData) {}
+	public  void InitializeMatrixFixture() {}
+	public  void GenerateEditorMatrixMesh() {}
 }

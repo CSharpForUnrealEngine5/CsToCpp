@@ -10,6 +10,6 @@ public partial class UExistingMeshMaterialProperties : UInteractiveToolPropertyS
 	public UMaterialInterface OverrideMaterial;
 	public string UVChannel;
 	public TArray<string> UVChannelNamesList;
-	public TArray<string> GetUVChannelNamesFunc() { return default; }
+	public  TArray<string> GetUVChannelNamesFunc() { return default; }
 	public UMaterialInstanceDynamic CheckerMaterial;
 }

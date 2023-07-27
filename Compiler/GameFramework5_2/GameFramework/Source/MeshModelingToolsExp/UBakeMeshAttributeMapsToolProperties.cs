@@ -10,6 +10,6 @@ public partial class UBakeMeshAttributeMapsToolProperties : UInteractiveToolProp
 	public EBakeTextureBitDepth BitDepth;
 	public EBakeTextureSamplesPerPixel SamplesPerPixel;
 	public UTexture2D SampleFilterMask;
-	public TArray<string> GetMapPreviewNamesFunc() { return default; }
+	public  TArray<string> GetMapPreviewNamesFunc() { return default; }
 	public TArray<string> MapPreviewNamesList;
 }

@@ -24,25 +24,25 @@ public partial class UPyTestObject : UObject {
 	public FPyTestChildStruct ChildStruct;
 	public bool BoolInstanceOnly;
 	public bool BoolDefaultsOnly;
-	public int FuncBlueprintImplementable(int InValue) { return default; }
-	public int FuncBlueprintNative(int InValue) { return default; }
-	public void FuncBlueprintNativeRef(FPyTestStruct InOutStruct) {}
-	public int CallFuncBlueprintImplementable(int InValue) { return default; }
-	public int CallFuncBlueprintNative(int InValue) { return default; }
-	public void CallFuncBlueprintNativeRef(FPyTestStruct InOutStruct) {}
-	public void FuncTakingPyTestStruct(FPyTestStruct InStruct) {}
-	public void FuncTakingPyTestChildStruct(FPyTestChildStruct InStruct) {}
-	public void LegacyFuncTakingPyTestStruct(FPyTestStruct InStruct) {}
-	public void FuncTakingPyTestStructDefault(FPyTestStruct InStruct/*=new FPyTestStruct()*/) {}
-	public int FuncTakingPyTestDelegate(FPyTestDelegate InDelegate,int InValue) { return default; }
-	public void FuncTakingFieldPath(object InFieldPath) {}
-	public int DelegatePropertyCallback(int InValue) { return default; }
-	public void MulticastDelegatePropertyCallback(string InStr) {}
-	public TArray<int> ReturnArray() { return default; }
-	public TSet<int> ReturnSet() { return default; }
-	public TMap<int,bool> ReturnMap() { return default; }
-	public object ReturnFieldPath() { return default; }
-	public void EmitScriptError() {}
-	public void EmitScriptWarning() {}
-	public int GetConstantValue() { return default; }
+	public  int FuncBlueprintImplementable(int InValue) { return default; }
+	public  int FuncBlueprintNative(int InValue) { return default; }
+	public  void FuncBlueprintNativeRef(FPyTestStruct InOutStruct) {}
+	public  int CallFuncBlueprintImplementable(int InValue) { return default; }
+	public  int CallFuncBlueprintNative(int InValue) { return default; }
+	public  void CallFuncBlueprintNativeRef(FPyTestStruct InOutStruct) {}
+	public  void FuncTakingPyTestStruct(FPyTestStruct InStruct) {}
+	public  void FuncTakingPyTestChildStruct(FPyTestChildStruct InStruct) {}
+	public  void LegacyFuncTakingPyTestStruct(FPyTestStruct InStruct) {}
+	public  void FuncTakingPyTestStructDefault(FPyTestStruct InStruct/*=new FPyTestStruct()*/) {}
+	public  int FuncTakingPyTestDelegate(FPyTestDelegate InDelegate,int InValue) { return default; }
+	public  void FuncTakingFieldPath(object InFieldPath) {}
+	public  int DelegatePropertyCallback(int InValue) { return default; }
+	public  void MulticastDelegatePropertyCallback(string InStr) {}
+	public static TArray<int> ReturnArray() { return default; }
+	public static TSet<int> ReturnSet() { return default; }
+	public static TMap<int,bool> ReturnMap() { return default; }
+	public static object ReturnFieldPath() { return default; }
+	public static void EmitScriptError() {}
+	public static void EmitScriptWarning() {}
+	public static int GetConstantValue() { return default; }
 }

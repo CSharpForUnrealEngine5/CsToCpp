@@ -4,4 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("WaterSubsystem.h")]
 public partial struct FOnCameraUnderwaterStateChanged {
 // OnCameraUnderwaterStateChanged__DelegateSignature
+	void AddDynamic(object obj, string functionName) {}
 }

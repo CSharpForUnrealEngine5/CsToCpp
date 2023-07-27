@@ -14,13 +14,13 @@ public partial class UGridSlot : UPanelSlot {
 	public int ColumnSpan;
 	public int Layer;
 	public FVector2D Nudge;
-	public void SetPadding(FMargin InPadding) {}
-	public void SetRow(int InRow) {}
-	public void SetRowSpan(int InRowSpan) {}
-	public void SetColumn(int InColumn) {}
-	public void SetColumnSpan(int InColumnSpan) {}
-	public void SetLayer(int InLayer) {}
-	public void SetNudge(FVector2D InNudge) {}
-	public void SetHorizontalAlignment(EHorizontalAlignment InHorizontalAlignment) {}
-	public void SetVerticalAlignment(EVerticalAlignment InVerticalAlignment) {}
+	public  void SetPadding(FMargin InPadding) {}
+	public  void SetRow(int InRow) {}
+	public  void SetRowSpan(int InRowSpan) {}
+	public  void SetColumn(int InColumn) {}
+	public  void SetColumnSpan(int InColumnSpan) {}
+	public  void SetLayer(int InLayer) {}
+	public  void SetNudge(FVector2D InNudge) {}
+	public  void SetHorizontalAlignment(EHorizontalAlignment InHorizontalAlignment) {}
+	public  void SetVerticalAlignment(EVerticalAlignment InVerticalAlignment) {}
 }

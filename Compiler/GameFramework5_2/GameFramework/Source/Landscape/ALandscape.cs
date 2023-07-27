@@ -4,7 +4,7 @@ using CSharpToCpp.Utilities;
 [CppInclude("Landscape.h")]
 public partial class ALandscape : ALandscapeProxy {
 // Landscape
-	public void RenderHeightmap(FTransform InWorldTransform,FBox2D InExtents,UObject OutRenderTarget) {}
+	public  void RenderHeightmap(FTransform InWorldTransform,FBox2D InExtents,UTextureRenderTarget2D OutRenderTarget) {}
 	public bool bEnableNanite;
 	public int NaniteLODIndex;
 	public bool bAreNewLandscapeActorsSpatiallyLoaded;

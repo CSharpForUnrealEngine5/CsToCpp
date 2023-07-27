@@ -4,5 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("CaptureTab/MediaFrameworkCapturePanelBlueprintLibrary.h")]
 public partial class UMediaFrameworkCapturePanelBlueprintLibrary : UBlueprintFunctionLibrary {
 // MediaFrameworkCapturePanelBlueprintLibrary
-	public UObject GetMediaCapturePanel() { return default; }
+	public static UMediaFrameworkCapturePanel GetMediaCapturePanel() { return default; }
 }

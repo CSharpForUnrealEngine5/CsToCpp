@@ -9,8 +9,8 @@ public partial class UCalibrationPointComponent : UProceduralMeshComponent {
 	public bool bVisualizePointsInEditor;
 	public float PointVisualizationScale;
 	public byte VisualizationShape;
-	public bool GetWorldLocation(string InPointName,FVector OutLocation) { return default; }
-	public bool NamespacedSubpointName(string InSubpointName,string OutNamespacedName) { return default; }
-	public void GetNamespacedPointNames(TArray<string> OutNamespacedNames) {}
-	public void RebuildVertices() {}
+	public  bool GetWorldLocation(string InPointName,FVector OutLocation) { return default; }
+	public  bool NamespacedSubpointName(string InSubpointName,string OutNamespacedName) { return default; }
+	public  void GetNamespacedPointNames(TArray<string> OutNamespacedNames) {}
+	public  void RebuildVertices() {}
 }

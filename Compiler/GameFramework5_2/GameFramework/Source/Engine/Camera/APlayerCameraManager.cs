@@ -37,35 +37,35 @@ public partial class APlayerCameraManager : AActor {
 	public float ViewYawMax;
 	public float ViewRollMin;
 	public float ViewRollMax;
-	public void PhotographyCameraModify(FVector NewCameraLocation,FVector PreviousCameraLocation,FVector OriginalCameraLocation,FVector ResultCameraLocation) {}
-	public void OnPhotographySessionStart() {}
-	public void OnPhotographySessionEnd() {}
-	public void OnPhotographyMultiPartCaptureStart() {}
-	public void OnPhotographyMultiPartCaptureEnd() {}
-	public bool BlueprintUpdateCamera(UObject CameraTarget,FVector NewCameraLocation,FRotator NewCameraRotation,float NewCameraFOV) { return default; }
-	public UObject GetOwningPlayerController() { return default; }
+	public  void PhotographyCameraModify(FVector NewCameraLocation,FVector PreviousCameraLocation,FVector OriginalCameraLocation,FVector ResultCameraLocation) {}
+	public  void OnPhotographySessionStart() {}
+	public  void OnPhotographySessionEnd() {}
+	public  void OnPhotographyMultiPartCaptureStart() {}
+	public  void OnPhotographyMultiPartCaptureEnd() {}
+	public  bool BlueprintUpdateCamera(AActor CameraTarget,FVector NewCameraLocation,FRotator NewCameraRotation,float NewCameraFOV) { return default; }
+	public  APlayerController GetOwningPlayerController() { return default; }
 	public float ServerUpdateCameraTimeout;
-	public UObject AddNewCameraModifier(UClass ModifierClass) { return default; }
-	public UObject FindCameraModifierByClass(UClass ModifierClass) { return default; }
-	public bool RemoveCameraModifier(UObject ModifierToRemove) { return default; }
-	public float GetFOVAngle() { return default; }
-	public FRotator GetCameraRotation() { return default; }
-	public FVector GetCameraLocation() { return default; }
-	public object /*ReturnValue*/ AddGenericCameraLensEffect(UClass LensEffectEmitterClass) { return default; }
-	public void RemoveGenericCameraLensEffect(object /*Emitter*/ Emitter) {}
-	public void ClearCameraLensEffects() {}
-	public UObject AddCameraLensEffect(UClass LensEffectEmitterClass) { return default; }
-	public void RemoveCameraLensEffect(UObject Emitter) {}
-	public UObject StartCameraShake(UClass ShakeClass,float Scale/*=1.0f*/,ECameraShakePlaySpace PlaySpace/*=ECameraShakePlaySpace.CameraLocal*/,FRotator UserPlaySpaceRot/*=FRotator.ZeroRotator*/) { return default; }
-	public UObject StartCameraShakeFromSource(UClass ShakeClass,UObject SourceComponent,float Scale/*=1.0f*/,ECameraShakePlaySpace PlaySpace/*=ECameraShakePlaySpace.CameraLocal*/,FRotator UserPlaySpaceRot/*=FRotator.ZeroRotator*/) { return default; }
-	public void StopCameraShake(UObject ShakeInstance,bool bImmediately/*=true*/) {}
-	public void StopAllInstancesOfCameraShake(UClass Shake,bool bImmediately/*=true*/) {}
-	public void StopAllCameraShakes(bool bImmediately/*=true*/) {}
-	public void StopAllInstancesOfCameraShakeFromSource(UClass Shake,UObject SourceComponent,bool bImmediately/*=true*/) {}
-	public void StopAllCameraShakesFromSource(UObject SourceComponent,bool bImmediately/*=true*/) {}
-	public void StartCameraFade(float FromAlpha,float ToAlpha,float Duration,FLinearColor Color,bool bShouldFadeAudio/*=false*/,bool bHoldWhenFinished/*=false*/) {}
-	public void StopCameraFade() {}
-	public void SetManualCameraFade(float InFadeAmount,FLinearColor Color,bool bInFadeAudio) {}
-	public void SetGameCameraCutThisFrame() {}
-	public void SwapPendingViewTargetWhenUsingClientSideCameraUpdates() {}
+	public  UCameraModifier AddNewCameraModifier(UClass ModifierClass) { return default; }
+	public  UCameraModifier FindCameraModifierByClass(UClass ModifierClass) { return default; }
+	public  bool RemoveCameraModifier(UCameraModifier ModifierToRemove) { return default; }
+	public  float GetFOVAngle() { return default; }
+	public  FRotator GetCameraRotation() { return default; }
+	public  FVector GetCameraLocation() { return default; }
+	public  object /*ReturnValue*/ AddGenericCameraLensEffect(UClass LensEffectEmitterClass) { return default; }
+	public  void RemoveGenericCameraLensEffect(object /*Emitter*/ Emitter) {}
+	public  void ClearCameraLensEffects() {}
+	public  AEmitterCameraLensEffectBase AddCameraLensEffect(UClass LensEffectEmitterClass) { return default; }
+	public  void RemoveCameraLensEffect(AEmitterCameraLensEffectBase Emitter) {}
+	public  UCameraShakeBase StartCameraShake(UClass ShakeClass,float Scale/*=1.0f*/,ECameraShakePlaySpace PlaySpace/*=ECameraShakePlaySpace.CameraLocal*/,FRotator UserPlaySpaceRot/*=FRotator.ZeroRotator*/) { return default; }
+	public  UCameraShakeBase StartCameraShakeFromSource(UClass ShakeClass,UCameraShakeSourceComponent SourceComponent,float Scale/*=1.0f*/,ECameraShakePlaySpace PlaySpace/*=ECameraShakePlaySpace.CameraLocal*/,FRotator UserPlaySpaceRot/*=FRotator.ZeroRotator*/) { return default; }
+	public  void StopCameraShake(UCameraShakeBase ShakeInstance,bool bImmediately/*=true*/) {}
+	public  void StopAllInstancesOfCameraShake(UClass Shake,bool bImmediately/*=true*/) {}
+	public  void StopAllCameraShakes(bool bImmediately/*=true*/) {}
+	public  void StopAllInstancesOfCameraShakeFromSource(UClass Shake,UCameraShakeSourceComponent SourceComponent,bool bImmediately/*=true*/) {}
+	public  void StopAllCameraShakesFromSource(UCameraShakeSourceComponent SourceComponent,bool bImmediately/*=true*/) {}
+	public  void StartCameraFade(float FromAlpha,float ToAlpha,float Duration,FLinearColor Color,bool bShouldFadeAudio/*=false*/,bool bHoldWhenFinished/*=false*/) {}
+	public  void StopCameraFade() {}
+	public  void SetManualCameraFade(float InFadeAmount,FLinearColor Color,bool bInFadeAudio) {}
+	public  void SetGameCameraCutThisFrame() {}
+	public  void SwapPendingViewTargetWhenUsingClientSideCameraUpdates() {}
 }

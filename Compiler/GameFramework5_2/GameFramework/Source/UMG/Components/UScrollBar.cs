@@ -10,5 +10,5 @@ public partial class UScrollBar : UWidget {
 	public byte Orientation;
 	public FVector2D Thickness;
 	public FMargin Padding;
-	public void SetState(float InOffsetFraction,float InThumbSizeFraction) {}
+	public  void SetState(float InOffsetFraction,float InThumbSizeFraction) {}
 }

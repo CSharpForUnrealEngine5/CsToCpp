@@ -5,7 +5,7 @@ using CSharpToCpp.Utilities;
 ///<summary>SteamVR Extensions Function Library</summary>
 public partial class USteamVRFunctionLibrary : UBlueprintFunctionLibrary {
 // SteamVRFunctionLibrary
-	public void GetValidTrackedDeviceIds(ESteamVRTrackedDeviceType DeviceType,TArray<int> OutTrackedDeviceIds) {}
-	public bool GetTrackedDevicePositionAndOrientation(int DeviceId,FVector OutPosition,FRotator OutOrientation) { return default; }
-	public bool GetHandPositionAndOrientation(int ControllerIndex,EControllerHand Hand,FVector OutPosition,FRotator OutOrientation) { return default; }
+	public static void GetValidTrackedDeviceIds(ESteamVRTrackedDeviceType DeviceType,TArray<int> OutTrackedDeviceIds) {}
+	public static bool GetTrackedDevicePositionAndOrientation(int DeviceId,FVector OutPosition,FRotator OutOrientation) { return default; }
+	public static bool GetHandPositionAndOrientation(int ControllerIndex,EControllerHand Hand,FVector OutPosition,FRotator OutOrientation) { return default; }
 }

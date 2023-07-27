@@ -5,8 +5,8 @@ using CSharpToCpp.Utilities;
 ///<summary>* UDatasmithObjectElement</summary>
 public partial class UDatasmithObjectElement : UObject {
 // DatasmithObjectElement
-	public string GetElementName() { return default; }
-	public string GetLabel() { return default; }
-	public void SetLabel(string InLabel) {}
-	public bool IsElementValid() { return default; }
+	public  string GetElementName() { return default; }
+	public  string GetLabel() { return default; }
+	public  void SetLabel(string InLabel) {}
+	public  bool IsElementValid() { return default; }
 }

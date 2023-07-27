@@ -4,4 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("AppleImageUtilsBlueprintProxy.h")]
 public partial struct FAppleImageConversionDelegate {
 // AppleImageConversionDelegate__DelegateSignature
+	void AddDynamic(object obj, string functionName) {}
 }

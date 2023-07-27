@@ -4,8 +4,8 @@ using CSharpToCpp.Utilities;
 [CppInclude("IOSReplayKitControl.h")]
 public partial class UIOSReplayKitControl : UBlueprintFunctionLibrary {
 // IOSReplayKitControl
-	public void StartRecording(bool bMicrophoneEnabled/*=true*/) {}
-	public void StopRecording() {}
-	public void StartCaptureToFile(bool bMicrophoneEnabled/*=true*/) {}
-	public void StopCapture() {}
+	public static void StartRecording(bool bMicrophoneEnabled/*=true*/) {}
+	public static void StopRecording() {}
+	public static void StartCaptureToFile(bool bMicrophoneEnabled/*=true*/) {}
+	public static void StopCapture() {}
 }

@@ -11,5 +11,5 @@ public partial class UDEPRECATED_UCommonVisibilityWidgetBase : UCommonBorder {
 	public bool bShowForTouch;
 	public ESlateVisibility VisibleType;
 	public ESlateVisibility HiddenType;
-	public TArray<string> GetRegisteredPlatforms() { return default; }
+	public static TArray<string> GetRegisteredPlatforms() { return default; }
 }

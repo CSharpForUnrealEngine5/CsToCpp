@@ -4,8 +4,8 @@ using CSharpToCpp.Utilities;
 [CppInclude("VPBookmarkBlueprintLibrary.h")]
 public partial class UVPBookmarkBlueprintLibrary : UBlueprintFunctionLibrary {
 // VPBookmarkBlueprintLibrary
-	public UObject FindVPBookmark(UObject Actor) { return default; }
-	public void GetAllVPBookmarkActors(UObject WorldContextObject,TArray<UObject> OutActors) {}
-	public void GetAllVPBookmark(UObject WorldContextObject,TArray<UObject> OutBookmarks) {}
-	public bool CreateVPBookmarkName(UObject Bookmark,string FormatString,string GeneratedNumber,string GeneratedLetter) { return default; }
+	public static UVPBookmark FindVPBookmark(AActor Actor) { return default; }
+	public static void GetAllVPBookmarkActors(UObject WorldContextObject,TArray<AActor> OutActors) {}
+	public static void GetAllVPBookmark(UObject WorldContextObject,TArray<UVPBookmark> OutBookmarks) {}
+	public static bool CreateVPBookmarkName(AActor Bookmark,string FormatString,string GeneratedNumber,string GeneratedLetter) { return default; }
 }

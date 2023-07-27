@@ -26,6 +26,6 @@ public partial class UAISystem : UAISystemBase {
 	public TArray<UAIAsyncTaskBlueprintProxy> AllProxyObjects;
 	public UAIHotSpotManager HotSpotManager;
 	public UNavLocalGridManager NavLocalGrids;
-	public void AIIgnorePlayers() {}
-	public void AILoggingVerbose() {}
+	public  void AIIgnorePlayers() {}
+	public  void AILoggingVerbose() {}
 }

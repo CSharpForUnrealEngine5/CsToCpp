@@ -6,19 +6,19 @@ public partial class UDEPRECATED_GlobalEditorUtilityBase : UObject {
 // GlobalEditorUtilityBase
 	public string HelpText;
 	public bool bDirtiedSelectionSet;
-	public TArray<UObject> GetSelectionSet() { return default; }
-	public UObject GetActorReference(string PathToActor) { return default; }
+	public  TArray<AActor> GetSelectionSet() { return default; }
+	public  AActor GetActorReference(string PathToActor) { return default; }
 	public bool bAutoRunDefaultAction;
-	public void OnDefaultActionClicked() {}
-	public void ForEachSelectedActor() {}
+	public  void OnDefaultActionClicked() {}
+	public  void ForEachSelectedActor() {}
 	public FForEachActorIteratorSignature OnEachSelectedActor;
-	public void ForEachSelectedAsset() {}
+	public  void ForEachSelectedAsset() {}
 	public FForEachAssetIteratorSignature OnEachSelectedAsset;
-	public TArray<UObject> GetSelectedAssets() { return default; }
-	public UObject GetEditorUserSettings() { return default; }
-	public void ClearActorSelectionSet() {}
-	public void SelectNothing() {}
-	public void SetActorSelectionState(UObject Actor,bool bShouldBeSelected) {}
-	public void GetSelectionBounds(FVector Origin,FVector BoxExtent,float SphereRadius) {}
-	public void RenameAsset(UObject Asset,string NewName) {}
+	public  TArray<UObject> GetSelectedAssets() { return default; }
+	public  UEditorPerProjectUserSettings GetEditorUserSettings() { return default; }
+	public  void ClearActorSelectionSet() {}
+	public  void SelectNothing() {}
+	public  void SetActorSelectionState(AActor Actor,bool bShouldBeSelected) {}
+	public  void GetSelectionBounds(FVector Origin,FVector BoxExtent,float SphereRadius) {}
+	public  void RenameAsset(UObject Asset,string NewName) {}
 }

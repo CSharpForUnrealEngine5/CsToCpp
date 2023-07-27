@@ -5,6 +5,6 @@ using CSharpToCpp.Utilities;
 ///<summary>Submix effect which sends stereo audio to quad (left surround and right surround) if the channel count is greater than 2.</summary>
 public partial class USubmixEffectStereoToQuadPreset : USoundEffectSubmixPreset {
 // SubmixEffectStereoToQuadPreset
-	public void SetSettings(FSubmixEffectStereoToQuadSettings InSettings) {}
+	public  void SetSettings(FSubmixEffectStereoToQuadSettings InSettings) {}
 	public FSubmixEffectStereoToQuadSettings Settings;
 }

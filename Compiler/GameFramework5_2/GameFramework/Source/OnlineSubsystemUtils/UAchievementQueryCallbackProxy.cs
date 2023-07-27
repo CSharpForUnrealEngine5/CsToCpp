@@ -6,6 +6,6 @@ public partial class UAchievementQueryCallbackProxy : UOnlineBlueprintCallProxyB
 // AchievementQueryCallbackProxy
 	public FEmptyOnlineDelegate OnSuccess;
 	public FEmptyOnlineDelegate OnFailure;
-	public UObject CacheAchievements(UObject WorldContextObject,UObject PlayerController) { return default; }
-	public UObject CacheAchievementDescriptions(UObject WorldContextObject,UObject PlayerController) { return default; }
+	public static UAchievementQueryCallbackProxy CacheAchievements(UObject WorldContextObject,APlayerController PlayerController) { return default; }
+	public static UAchievementQueryCallbackProxy CacheAchievementDescriptions(UObject WorldContextObject,APlayerController PlayerController) { return default; }
 }

@@ -6,6 +6,6 @@ using CSharpToCpp.Utilities;
 public partial class UAbilityTask_WaitInputRelease : UAbilityTask {
 // AbilityTask_WaitInputRelease
 	public FInputReleaseDelegate OnRelease;
-	public void OnReleaseCallback() {}
-	public UObject WaitInputRelease(UObject OwningAbility,bool bTestAlreadyReleased/*=false*/) { return default; }
+	public  void OnReleaseCallback() {}
+	public static UAbilityTask_WaitInputRelease WaitInputRelease(UGameplayAbility OwningAbility,bool bTestAlreadyReleased/*=false*/) { return default; }
 }

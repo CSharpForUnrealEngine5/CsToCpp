@@ -5,7 +5,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Defines a perlin noise scalar value if the sample is within a box</summary>
 public partial class UNoiseField : UFieldNodeFloat {
 // NoiseField
-	public UObject SetNoiseField(float MinRange,float MaxRange,FTransform Transform) { return default; }
+	public  UNoiseField SetNoiseField(float MinRange,float MaxRange,FTransform Transform) { return default; }
 	public float MinRange;
 	public float MaxRange;
 	public FTransform Transform;

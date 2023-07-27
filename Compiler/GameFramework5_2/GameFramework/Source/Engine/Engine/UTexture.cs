@@ -59,9 +59,9 @@ public partial class UTexture : UStreamableRenderAsset {
 	public bool VirtualTextureStreaming;
 	public bool CompressionYCoCg;
 	public bool bNotOfflineProcessed;
-	public long Blueprint_GetMemorySize() { return default; }
-	public void Blueprint_GetTextureSourceDiskAndMemorySize(long OutDiskSize,long OutMemorySize) {}
-	public bool ComputeTextureSourceChannelMinMax(FLinearColor OutColorMin,FLinearColor OutColorMax) { return default; }
+	public  long Blueprint_GetMemorySize() { return default; }
+	public  void Blueprint_GetTextureSourceDiskAndMemorySize(long OutDiskSize,long OutMemorySize) {}
+	public  bool ComputeTextureSourceChannelMinMax(FLinearColor OutColorMin,FLinearColor OutColorMax) { return default; }
 	public bool bAsyncResourceReleaseHasBeenStarted;
 	public TArray<UAssetUserData> AssetUserData;
 }

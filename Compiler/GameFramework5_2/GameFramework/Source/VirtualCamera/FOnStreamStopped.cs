@@ -4,4 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("VirtualCameraSubsystem.h")]
 public partial struct FOnStreamStopped {
 // OnStreamStopped__DelegateSignature
+	void AddDynamic(object obj, string functionName) {}
 }

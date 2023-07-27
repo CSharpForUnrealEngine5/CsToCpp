@@ -5,7 +5,7 @@ using CSharpToCpp.Utilities;
 ///<summary>ActorComponent for running basic Parametric movement.</summary>
 public partial class UParametricMovementComponent : UBaseMovementComponent {
 // ParametricMovementComponent
-	public void EnableInterpolationMode(bool bValue) {}
+	public  void EnableInterpolationMode(bool bValue) {}
 	public bool bDisableParametricMovementSimulation;
 	public FSimpleParametricMotion ParametricMotion;
 	public bool bEnableDependentSimulation;

@@ -6,6 +6,6 @@ public partial class UAppleVisionDetectFacesAsyncTaskBlueprintProxy : UObject {
 // AppleVisionDetectFacesAsyncTaskBlueprintProxy
 	public FAppleVisionDetectFacesDelegate OnSuccess;
 	public FAppleVisionDetectFacesDelegate OnFailure;
-	public UObject CreateProxyObjectForDetectFaces(UObject SourceImage) { return default; }
+	public static UAppleVisionDetectFacesAsyncTaskBlueprintProxy CreateProxyObjectForDetectFaces(UTexture SourceImage) { return default; }
 	public FFaceDetectionResult FaceDetectionResult;
 }

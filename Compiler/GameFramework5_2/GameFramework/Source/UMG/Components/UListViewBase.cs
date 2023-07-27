@@ -5,15 +5,15 @@ using CSharpToCpp.Utilities;
 ///<summary>Bare-bones base class to make creating custom UListView widgets easier.</summary>
 public partial class UListViewBase : UWidget {
 // ListViewBase
-	public TArray<UObject> GetDisplayedEntryWidgets() { return default; }
-	public float GetScrollOffset() { return default; }
-	public void RegenerateAllEntries() {}
-	public void ScrollToTop() {}
-	public void ScrollToBottom() {}
-	public void SetScrollOffset(float InScrollOffset) {}
-	public void SetWheelScrollMultiplier(float NewWheelScrollMultiplier) {}
-	public void SetScrollbarVisibility(ESlateVisibility InVisibility) {}
-	public void RequestRefresh() {}
+	public  TArray<UUserWidget> GetDisplayedEntryWidgets() { return default; }
+	public  float GetScrollOffset() { return default; }
+	public  void RegenerateAllEntries() {}
+	public  void ScrollToTop() {}
+	public  void ScrollToBottom() {}
+	public  void SetScrollOffset(float InScrollOffset) {}
+	public  void SetWheelScrollMultiplier(float NewWheelScrollMultiplier) {}
+	public  void SetScrollbarVisibility(ESlateVisibility InVisibility) {}
+	public  void RequestRefresh() {}
 	public FOnListEntryGeneratedDynamic BP_OnEntryGenerated;
 	public UClass EntryWidgetClass;
 	public float WheelScrollMultiplier;

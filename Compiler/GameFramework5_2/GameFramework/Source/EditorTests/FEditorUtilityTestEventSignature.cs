@@ -4,4 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("EditorUtilityTest.h")]
 public partial struct FEditorUtilityTestEventSignature {
 // EditorUtilityTestEventSignature__DelegateSignature
+	void AddDynamic(object obj, string functionName) {}
 }

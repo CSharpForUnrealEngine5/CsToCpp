@@ -4,4 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("Animation/WidgetAnimationPlayCallbackProxy.h")]
 public partial struct FWidgetAnimationResult {
 // WidgetAnimationResult__DelegateSignature
+	void AddDynamic(object obj, string functionName) {}
 }

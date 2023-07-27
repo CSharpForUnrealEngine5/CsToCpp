@@ -5,6 +5,6 @@ using CSharpToCpp.Utilities;
 ///<summary>Function library to expose the budget allocator to Blueprints</summary>
 public partial class UAnimationBudgetBlueprintLibrary : UBlueprintFunctionLibrary {
 // AnimationBudgetBlueprintLibrary
-	public void EnableAnimationBudget(UObject WorldContextObject,bool bEnabled) {}
-	public void SetAnimationBudgetParameters(UObject WorldContextObject,FAnimationBudgetAllocatorParameters InParameters) {}
+	public static void EnableAnimationBudget(UObject WorldContextObject,bool bEnabled) {}
+	public static void SetAnimationBudgetParameters(UObject WorldContextObject,FAnimationBudgetAllocatorParameters InParameters) {}
 }

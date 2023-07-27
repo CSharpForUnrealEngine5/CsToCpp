@@ -4,20 +4,20 @@ using CSharpToCpp.Utilities;
 [CppInclude("WaterLandscapeBrush.h")]
 public partial class AWaterLandscapeBrush : ALandscapeBlueprintBrush {
 // WaterLandscapeBrush
-	public void GetWaterBodies(UClass WaterBodyClass,TArray<UObject> OutWaterBodies) {}
-	public void GetWaterBodyIslands(UClass WaterBodyIslandClass,TArray<UObject> OutWaterBodyIslands) {}
-	public void GetActorsAffectingLandscape(TArray<object /*OutWaterBrushActors*/> OutWaterBrushActors) {}
-	public void BlueprintWaterBodiesChanged() {}
-	public void BlueprintWaterBodyChanged(UObject Actor) {}
-	public void SetWaterBodyCache(UObject WaterBody,UObject InCache) {}
-	public UObject GetWaterBodyCache(UObject WaterBody,UClass CacheClass) { return default; }
-	public void ClearWaterBodyCache(UObject WaterBody) {}
-	public void SetActorCache(UObject InActor,UObject InCache) {}
-	public UObject GetActorCache(UObject InActor,UClass CacheClass) { return default; }
-	public void ClearActorCache(UObject InActor) {}
-	public void BlueprintGetRenderTargets(UObject InHeightRenderTarget,UObject OutVelocityRenderTarget) {}
-	public void BlueprintOnRenderTargetTexturesUpdated(UObject VelocityTexture) {}
-	public void ForceWaterTextureUpdate() {}
+	public  void GetWaterBodies(UClass WaterBodyClass,TArray<AWaterBody> OutWaterBodies) {}
+	public  void GetWaterBodyIslands(UClass WaterBodyIslandClass,TArray<AWaterBodyIsland> OutWaterBodyIslands) {}
+	public  void GetActorsAffectingLandscape(TArray<object /*OutWaterBrushActors*/> OutWaterBrushActors) {}
+	public  void BlueprintWaterBodiesChanged() {}
+	public  void BlueprintWaterBodyChanged(AActor Actor) {}
+	public  void SetWaterBodyCache(AWaterBody WaterBody,UObject InCache) {}
+	public  UObject GetWaterBodyCache(AWaterBody WaterBody,UClass CacheClass) { return default; }
+	public  void ClearWaterBodyCache(AWaterBody WaterBody) {}
+	public  void SetActorCache(AActor InActor,UObject InCache) {}
+	public  UObject GetActorCache(AActor InActor,UClass CacheClass) { return default; }
+	public  void ClearActorCache(AActor InActor) {}
+	public  void BlueprintGetRenderTargets(UTextureRenderTarget2D InHeightRenderTarget,UTextureRenderTarget2D OutVelocityRenderTarget) {}
+	public  void BlueprintOnRenderTargetTexturesUpdated(UTexture2D VelocityTexture) {}
+	public  void ForceWaterTextureUpdate() {}
 	public UBillboardComponent ActorIcon;
 	public TMap<TWeakObjectPtr<AActor>,UObject> Cache;
 }

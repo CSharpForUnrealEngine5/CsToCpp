@@ -5,6 +5,6 @@ using CSharpToCpp.Utilities;
 ///<summary>USubmixEffectDelayPreset</summary>
 public partial class USubmixEffectStereoDelayPreset : USoundEffectSubmixPreset {
 // SubmixEffectStereoDelayPreset
-	public void SetSettings(FSubmixEffectStereoDelaySettings InSettings) {}
+	public  void SetSettings(FSubmixEffectStereoDelaySettings InSettings) {}
 	public FSubmixEffectStereoDelaySettings Settings;
 }

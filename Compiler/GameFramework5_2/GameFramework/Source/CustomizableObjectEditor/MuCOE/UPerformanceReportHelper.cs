@@ -4,5 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("MuCOE/SCustomizableObjectEditorPerformanceReport.h")]
 public partial class UPerformanceReportHelper : UObject {
 // PerformanceReportHelper
-	public void DelegatedCallback(UObject Instance) {}
+	public  void DelegatedCallback(UCustomizableObjectInstance Instance) {}
 }

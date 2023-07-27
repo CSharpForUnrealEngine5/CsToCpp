@@ -6,8 +6,8 @@ public partial class ARadialForceActor : ARigidBodyBase {
 // RadialForceActor
 	public URadialForceComponent ForceComponent;
 	public UBillboardComponent SpriteComponent;
-	public void FireImpulse() {}
-	public void EnableForce() {}
-	public void DisableForce() {}
-	public void ToggleForce() {}
+	public  void FireImpulse() {}
+	public  void EnableForce() {}
+	public  void DisableForce() {}
+	public  void ToggleForce() {}
 }

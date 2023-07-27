@@ -4,4 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("Engine/LevelStreaming.h")]
 public partial struct FLevelStreamingVisibilityStatus {
 // LevelStreamingVisibilityStatus__DelegateSignature
+	void AddDynamic(object obj, string functionName) {}
 }

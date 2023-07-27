@@ -5,6 +5,6 @@ using CSharpToCpp.Utilities;
 ///<summary>The Dataprep Filter a base class for the Dataprep selection system</summary>
 public partial class UDataprepFilter : UDataprepParameterizableObject {
 // DataprepFilter
-	public UObject GetFetcher() { return default; }
+	public  UDataprepFetcher GetFetcher() { return default; }
 	public bool bIsExcludingResult;
 }

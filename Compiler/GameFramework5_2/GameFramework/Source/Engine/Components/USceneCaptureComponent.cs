@@ -20,14 +20,14 @@ public partial class USceneCaptureComponent : USceneComponent {
 	public bool bUseRayTracingIfEnabled;
 	public TArray<FEngineShowFlagsSetting> ShowFlagSettings;
 	public string ProfilingEventName;
-	public void HideComponent(UObject InComponent) {}
-	public void HideActorComponents(UObject InActor,bool bIncludeFromChildActors/*=false*/) {}
-	public void ShowOnlyComponent(UObject InComponent) {}
-	public void ShowOnlyActorComponents(UObject InActor,bool bIncludeFromChildActors/*=false*/) {}
-	public void RemoveShowOnlyComponent(UObject InComponent) {}
-	public void RemoveShowOnlyActorComponents(UObject InActor,bool bIncludeFromChildActors/*=false*/) {}
-	public void ClearShowOnlyComponents() {}
-	public void ClearHiddenComponents() {}
-	public void SetCaptureSortPriority(int NewCaptureSortPriority) {}
+	public  void HideComponent(UPrimitiveComponent InComponent) {}
+	public  void HideActorComponents(AActor InActor,bool bIncludeFromChildActors/*=false*/) {}
+	public  void ShowOnlyComponent(UPrimitiveComponent InComponent) {}
+	public  void ShowOnlyActorComponents(AActor InActor,bool bIncludeFromChildActors/*=false*/) {}
+	public  void RemoveShowOnlyComponent(UPrimitiveComponent InComponent) {}
+	public  void RemoveShowOnlyActorComponents(AActor InActor,bool bIncludeFromChildActors/*=false*/) {}
+	public  void ClearShowOnlyComponents() {}
+	public  void ClearHiddenComponents() {}
+	public  void SetCaptureSortPriority(int NewCaptureSortPriority) {}
 	public UStaticMesh CaptureMesh;
 }

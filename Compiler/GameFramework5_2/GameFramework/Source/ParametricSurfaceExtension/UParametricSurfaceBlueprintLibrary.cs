@@ -4,6 +4,6 @@ using CSharpToCpp.Utilities;
 [CppInclude("ParametricSurfaceBlueprintLibrary.h")]
 public partial class UParametricSurfaceBlueprintLibrary : UBlueprintFunctionLibrary {
 // ParametricSurfaceBlueprintLibrary
-	public bool RetessellateStaticMesh(UObject StaticMesh,FDatasmithRetessellationOptions TessellationSettings,string FailureReason) { return default; }
-	public bool RetessellateStaticMeshWithNotification(UObject StaticMesh,FDatasmithRetessellationOptions TessellationSettings,bool bApplyChanges,string FailureReason) { return default; }
+	public static bool RetessellateStaticMesh(UStaticMesh StaticMesh,FDatasmithRetessellationOptions TessellationSettings,string FailureReason) { return default; }
+	public static bool RetessellateStaticMeshWithNotification(UStaticMesh StaticMesh,FDatasmithRetessellationOptions TessellationSettings,bool bApplyChanges,string FailureReason) { return default; }
 }

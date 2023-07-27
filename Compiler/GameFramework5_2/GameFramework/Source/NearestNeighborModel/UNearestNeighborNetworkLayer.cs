@@ -8,5 +8,5 @@ public partial class UNearestNeighborNetworkLayer : UObject {
 	public int NumInputs;
 	public int NumOutputs;
 	public TArray<FNearestNeighborNetworkParameter> Parameters;
-	public void AddParameter(TArray<float> Values,TArray<int> Shape) {}
+	public  void AddParameter(TArray<float> Values,TArray<int> Shape) {}
 }

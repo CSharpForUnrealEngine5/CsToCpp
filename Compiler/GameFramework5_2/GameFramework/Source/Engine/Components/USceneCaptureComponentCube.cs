@@ -7,5 +7,5 @@ public partial class USceneCaptureComponentCube : USceneCaptureComponent {
 // SceneCaptureComponentCube
 	public UTextureRenderTargetCube TextureTarget;
 	public bool bCaptureRotation;
-	public void CaptureScene() {}
+	public  void CaptureScene() {}
 }

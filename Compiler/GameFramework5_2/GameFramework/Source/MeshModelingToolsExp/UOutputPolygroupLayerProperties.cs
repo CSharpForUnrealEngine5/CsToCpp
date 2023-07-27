@@ -5,7 +5,7 @@ using CSharpToCpp.Utilities;
 public partial class UOutputPolygroupLayerProperties : UInteractiveToolPropertySet {
 // OutputPolygroupLayerProperties
 	public string GroupLayer;
-	public TArray<string> GetGroupOptionsList() { return default; }
+	public  TArray<string> GetGroupOptionsList() { return default; }
 	public TArray<string> OptionsList;
 	public bool bShowNewLayerName;
 	public string NewLayerName;

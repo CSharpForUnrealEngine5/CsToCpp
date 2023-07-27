@@ -6,7 +6,7 @@ using CSharpToCpp.Utilities;
 public partial class UAbilityTask_ApplyRootMotionRadialForce : UAbilityTask_ApplyRootMotion_Base {
 // AbilityTask_ApplyRootMotionRadialForce
 	public FApplyRootMotionRadialForceDelegate OnFinish;
-	public UObject ApplyRootMotionRadialForce(UObject OwningAbility,string TaskInstanceName,FVector Location,UObject LocationActor,float Strength,float Duration,float Radius,bool bIsPush,bool bIsAdditive,bool bNoZForce,UObject StrengthDistanceFalloff,UObject StrengthOverTime,bool bUseFixedWorldDirection,FRotator FixedWorldDirection,ERootMotionFinishVelocityMode VelocityOnFinishMode,FVector SetVelocityOnFinish,float ClampVelocityOnFinish) { return default; }
+	public static UAbilityTask_ApplyRootMotionRadialForce ApplyRootMotionRadialForce(UGameplayAbility OwningAbility,string TaskInstanceName,FVector Location,AActor LocationActor,float Strength,float Duration,float Radius,bool bIsPush,bool bIsAdditive,bool bNoZForce,UCurveFloat StrengthDistanceFalloff,UCurveFloat StrengthOverTime,bool bUseFixedWorldDirection,FRotator FixedWorldDirection,ERootMotionFinishVelocityMode VelocityOnFinishMode,FVector SetVelocityOnFinish,float ClampVelocityOnFinish) { return default; }
 	public FVector Location;
 	public AActor LocationActor;
 	public float Strength;

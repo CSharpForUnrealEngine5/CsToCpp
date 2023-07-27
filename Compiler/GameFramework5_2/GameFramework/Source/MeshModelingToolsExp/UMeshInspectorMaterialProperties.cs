@@ -10,7 +10,7 @@ public partial class UMeshInspectorMaterialProperties : UInteractiveToolProperty
 	public UMaterialInterface OverrideMaterial;
 	public string UVChannel;
 	public TArray<string> UVChannelNamesList;
-	public TArray<string> GetUVChannelNamesFunc() { return default; }
+	public  TArray<string> GetUVChannelNamesFunc() { return default; }
 	public bool bFlatShading;
 	public FLinearColor Color;
 	public double Opacity;

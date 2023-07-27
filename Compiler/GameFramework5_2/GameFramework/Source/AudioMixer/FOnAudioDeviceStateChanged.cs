@@ -4,4 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("AudioDeviceNotificationSubsystem.h")]
 public partial struct FOnAudioDeviceStateChanged {
 // OnAudioDeviceStateChanged__DelegateSignature
+	void AddDynamic(object obj, string functionName) {}
 }

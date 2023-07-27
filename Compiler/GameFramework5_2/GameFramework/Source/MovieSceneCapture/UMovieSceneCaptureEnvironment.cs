@@ -4,9 +4,9 @@ using CSharpToCpp.Utilities;
 [CppInclude("MovieSceneCaptureEnvironment.h")]
 public partial class UMovieSceneCaptureEnvironment : UObject {
 // MovieSceneCaptureEnvironment
-	public int GetCaptureFrameNumber() { return default; }
-	public float GetCaptureElapsedTime() { return default; }
-	public bool IsCaptureInProgress() { return default; }
-	public UObject FindImageCaptureProtocol() { return default; }
-	public UObject FindAudioCaptureProtocol() { return default; }
+	public static int GetCaptureFrameNumber() { return default; }
+	public static float GetCaptureElapsedTime() { return default; }
+	public static bool IsCaptureInProgress() { return default; }
+	public static UMovieSceneImageCaptureProtocolBase FindImageCaptureProtocol() { return default; }
+	public static UMovieSceneAudioCaptureProtocolBase FindAudioCaptureProtocol() { return default; }
 }

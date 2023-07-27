@@ -4,7 +4,7 @@ using CSharpToCpp.Utilities;
 [CppInclude("LiveLinkInstance.h")]
 public partial class ULiveLinkInstance : UAnimInstance {
 // LiveLinkInstance
-	public void SetSubject(FLiveLinkSubjectName SubjectName) {}
-	public void SetRetargetAsset(UClass RetargetAsset) {}
+	public  void SetSubject(FLiveLinkSubjectName SubjectName) {}
+	public  void SetRetargetAsset(UClass RetargetAsset) {}
 	public ULiveLinkRetargetAsset CurrentRetargetAsset;
 }

@@ -5,12 +5,12 @@ using CSharpToCpp.Utilities;
 ///<summary>@class UTargetingSelectionTask_Trace</summary>
 public partial class UTargetingSelectionTask_Trace : UTargetingTask {
 // TargetingSelectionTask_Trace
-	public FVector GetSourceLocation(FTargetingRequestHandle TargetingHandle) { return default; }
-	public FVector GetSourceOffset(FTargetingRequestHandle TargetingHandle) { return default; }
-	public FVector GetTraceDirection(FTargetingRequestHandle TargetingHandle) { return default; }
-	public float GetTraceLength(FTargetingRequestHandle TargetingHandle) { return default; }
-	public float GetSweptTraceRadius(FTargetingRequestHandle TargetingHandle) { return default; }
-	public void GetAdditionalActorsToIgnore(FTargetingRequestHandle TargetingHandle,TArray<UObject> OutAdditionalActorsToIgnore) {}
+	public  FVector GetSourceLocation(FTargetingRequestHandle TargetingHandle) { return default; }
+	public  FVector GetSourceOffset(FTargetingRequestHandle TargetingHandle) { return default; }
+	public  FVector GetTraceDirection(FTargetingRequestHandle TargetingHandle) { return default; }
+	public  float GetTraceLength(FTargetingRequestHandle TargetingHandle) { return default; }
+	public  float GetSweptTraceRadius(FTargetingRequestHandle TargetingHandle) { return default; }
+	public  void GetAdditionalActorsToIgnore(FTargetingRequestHandle TargetingHandle,TArray<AActor> OutAdditionalActorsToIgnore) {}
 	public ETargetingTraceType TraceType;
 	public byte TraceChannel;
 	public FCollisionProfileName CollisionProfileName;

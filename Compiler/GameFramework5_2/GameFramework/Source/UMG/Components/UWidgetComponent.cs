@@ -5,44 +5,44 @@ using CSharpToCpp.Utilities;
 ///<summary>The widget component provides a surface in the 3D environment on which to render widgets normally rendered to the screen.</summary>
 public partial class UWidgetComponent : UMeshComponent {
 // WidgetComponent
-	public UObject GetUserWidgetObject() { return default; }
-	public UObject GetRenderTarget() { return default; }
-	public UObject GetMaterialInstance() { return default; }
-	public UObject GetWidget() { return default; }
-	public void SetWidget(UObject Widget) {}
-	public void SetOwnerPlayer(UObject LocalPlayer) {}
-	public bool GetManuallyRedraw() { return default; }
-	public void SetManuallyRedraw(bool bUseManualRedraw) {}
-	public UObject GetOwnerPlayer() { return default; }
-	public FVector2D GetDrawSize() { return default; }
-	public FVector2D GetCurrentDrawSize() { return default; }
-	public void SetDrawSize(FVector2D Size) {}
-	public void RequestRedraw() {}
-	public void RequestRenderUpdate() {}
-	public bool GetTwoSided() { return default; }
-	public void SetTwoSided(bool bWantTwoSided) {}
-	public bool GetTickWhenOffscreen() { return default; }
-	public void SetTickWhenOffscreen(bool bWantTickWhenOffscreen) {}
-	public void SetBackgroundColor(FLinearColor NewBackgroundColor) {}
-	public void SetTintColorAndOpacity(FLinearColor NewTintColorAndOpacity) {}
-	public FVector2D GetPivot() { return default; }
-	public void SetPivot(FVector2D InPivot) {}
-	public bool GetDrawAtDesiredSize() { return default; }
-	public void SetDrawAtDesiredSize(bool bInDrawAtDesiredSize) {}
-	public float GetRedrawTime() { return default; }
-	public void SetRedrawTime(float InRedrawTime) {}
-	public EWidgetSpace GetWidgetSpace() { return default; }
-	public void SetWidgetSpace(EWidgetSpace NewSpace) {}
-	public EWidgetGeometryMode GetGeometryMode() { return default; }
-	public void SetGeometryMode(EWidgetGeometryMode InGeometryMode) {}
-	public float GetCylinderArcAngle() { return default; }
-	public void SetCylinderArcAngle(float InCylinderArcAngle) {}
-	public bool GetWindowFocusable() { return default; }
-	public void SetWindowFocusable(bool bInWindowFocusable) {}
-	public EWindowVisibility GetWindowVisiblility() { return default; }
-	public void SetWindowVisibility(EWindowVisibility InVisibility) {}
-	public void SetTickMode(ETickMode InTickMode) {}
-	public bool IsWidgetVisible() { return default; }
+	public  UUserWidget GetUserWidgetObject() { return default; }
+	public  UTextureRenderTarget2D GetRenderTarget() { return default; }
+	public  UMaterialInstanceDynamic GetMaterialInstance() { return default; }
+	public  UUserWidget GetWidget() { return default; }
+	public  void SetWidget(UUserWidget Widget) {}
+	public  void SetOwnerPlayer(ULocalPlayer LocalPlayer) {}
+	public  bool GetManuallyRedraw() { return default; }
+	public  void SetManuallyRedraw(bool bUseManualRedraw) {}
+	public  ULocalPlayer GetOwnerPlayer() { return default; }
+	public  FVector2D GetDrawSize() { return default; }
+	public  FVector2D GetCurrentDrawSize() { return default; }
+	public  void SetDrawSize(FVector2D Size) {}
+	public  void RequestRedraw() {}
+	public  void RequestRenderUpdate() {}
+	public  bool GetTwoSided() { return default; }
+	public  void SetTwoSided(bool bWantTwoSided) {}
+	public  bool GetTickWhenOffscreen() { return default; }
+	public  void SetTickWhenOffscreen(bool bWantTickWhenOffscreen) {}
+	public  void SetBackgroundColor(FLinearColor NewBackgroundColor) {}
+	public  void SetTintColorAndOpacity(FLinearColor NewTintColorAndOpacity) {}
+	public  FVector2D GetPivot() { return default; }
+	public  void SetPivot(FVector2D InPivot) {}
+	public  bool GetDrawAtDesiredSize() { return default; }
+	public  void SetDrawAtDesiredSize(bool bInDrawAtDesiredSize) {}
+	public  float GetRedrawTime() { return default; }
+	public  void SetRedrawTime(float InRedrawTime) {}
+	public  EWidgetSpace GetWidgetSpace() { return default; }
+	public  void SetWidgetSpace(EWidgetSpace NewSpace) {}
+	public  EWidgetGeometryMode GetGeometryMode() { return default; }
+	public  void SetGeometryMode(EWidgetGeometryMode InGeometryMode) {}
+	public  float GetCylinderArcAngle() { return default; }
+	public  void SetCylinderArcAngle(float InCylinderArcAngle) {}
+	public  bool GetWindowFocusable() { return default; }
+	public  void SetWindowFocusable(bool bInWindowFocusable) {}
+	public  EWindowVisibility GetWindowVisiblility() { return default; }
+	public  void SetWindowVisibility(EWindowVisibility InVisibility) {}
+	public  void SetTickMode(ETickMode InTickMode) {}
+	public  bool IsWidgetVisible() { return default; }
 	public EWidgetSpace Space;
 	public EWidgetTimingPolicy TimingPolicy;
 	public UClass WidgetClass;

@@ -4,4 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("VirtualCameraSubsystem.h")]
 public partial struct FOnSelectedViewportActor {
 // OnSelectedViewportActor__DelegateSignature
+	void AddDynamic(object obj, string functionName) {}
 }

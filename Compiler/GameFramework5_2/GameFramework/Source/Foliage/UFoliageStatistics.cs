@@ -4,7 +4,7 @@ using CSharpToCpp.Utilities;
 [CppInclude("FoliageStatistics.h")]
 public partial class UFoliageStatistics : UBlueprintFunctionLibrary {
 // FoliageStatistics
-	public int FoliageOverlappingSphereCount(UObject WorldContextObject,UObject StaticMesh,FVector CenterPosition,float Radius) { return default; }
-	public int FoliageOverlappingBoxCount(UObject WorldContextObject,UObject StaticMesh,FBox Box) { return default; }
-	public void FoliageOverlappingBoxTransforms(UObject WorldContextObject,UObject StaticMesh,FBox Box,TArray<FTransform> OutTransforms) {}
+	public static int FoliageOverlappingSphereCount(UObject WorldContextObject,UStaticMesh StaticMesh,FVector CenterPosition,float Radius) { return default; }
+	public static int FoliageOverlappingBoxCount(UObject WorldContextObject,UStaticMesh StaticMesh,FBox Box) { return default; }
+	public static void FoliageOverlappingBoxTransforms(UObject WorldContextObject,UStaticMesh StaticMesh,FBox Box,TArray<FTransform> OutTransforms) {}
 }

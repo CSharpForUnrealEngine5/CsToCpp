@@ -15,28 +15,28 @@ public partial class UPaperFlipbookComponent : UMeshComponent {
 	public FLinearColor SpriteColor;
 	public UBodySetup CachedBodySetup;
 	public FFlipbookFinishedPlaySignature OnFinishedPlaying;
-	public bool SetFlipbook(UObject NewFlipbook) { return default; }
-	public UObject GetFlipbook() { return default; }
-	public FLinearColor GetSpriteColor() { return default; }
-	public void SetSpriteColor(FLinearColor NewColor) {}
-	public void Play() {}
-	public void PlayFromStart() {}
-	public void Reverse() {}
-	public void ReverseFromEnd() {}
-	public void Stop() {}
-	public bool IsPlaying() { return default; }
-	public bool IsReversing() { return default; }
-	public void SetPlaybackPositionInFrames(int NewFramePosition,bool bFireEvents) {}
-	public int GetPlaybackPositionInFrames() { return default; }
-	public void SetPlaybackPosition(float NewPosition,bool bFireEvents) {}
-	public float GetPlaybackPosition() { return default; }
-	public void SetLooping(bool bNewLooping) {}
-	public bool IsLooping() { return default; }
-	public void SetPlayRate(float NewRate) {}
-	public float GetPlayRate() { return default; }
-	public void SetNewTime(float NewTime) {}
-	public float GetFlipbookLength() { return default; }
-	public int GetFlipbookLengthInFrames() { return default; }
-	public float GetFlipbookFramerate() { return default; }
-	public void OnRep_SourceFlipbook(UObject OldFlipbook) {}
+	public  bool SetFlipbook(UPaperFlipbook NewFlipbook) { return default; }
+	public  UPaperFlipbook GetFlipbook() { return default; }
+	public  FLinearColor GetSpriteColor() { return default; }
+	public  void SetSpriteColor(FLinearColor NewColor) {}
+	public  void Play() {}
+	public  void PlayFromStart() {}
+	public  void Reverse() {}
+	public  void ReverseFromEnd() {}
+	public  void Stop() {}
+	public  bool IsPlaying() { return default; }
+	public  bool IsReversing() { return default; }
+	public  void SetPlaybackPositionInFrames(int NewFramePosition,bool bFireEvents) {}
+	public  int GetPlaybackPositionInFrames() { return default; }
+	public  void SetPlaybackPosition(float NewPosition,bool bFireEvents) {}
+	public  float GetPlaybackPosition() { return default; }
+	public  void SetLooping(bool bNewLooping) {}
+	public  bool IsLooping() { return default; }
+	public  void SetPlayRate(float NewRate) {}
+	public  float GetPlayRate() { return default; }
+	public  void SetNewTime(float NewTime) {}
+	public  float GetFlipbookLength() { return default; }
+	public  int GetFlipbookLengthInFrames() { return default; }
+	public  float GetFlipbookFramerate() { return default; }
+	public  void OnRep_SourceFlipbook(UPaperFlipbook OldFlipbook) {}
 }

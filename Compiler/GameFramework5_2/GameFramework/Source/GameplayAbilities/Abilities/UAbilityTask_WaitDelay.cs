@@ -5,5 +5,5 @@ using CSharpToCpp.Utilities;
 public partial class UAbilityTask_WaitDelay : UAbilityTask {
 // AbilityTask_WaitDelay
 	public FWaitDelayDelegate OnFinish;
-	public UObject WaitDelay(UObject OwningAbility,float Time) { return default; }
+	public static UAbilityTask_WaitDelay WaitDelay(UGameplayAbility OwningAbility,float Time) { return default; }
 }

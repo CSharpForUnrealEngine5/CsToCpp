@@ -5,15 +5,15 @@ using CSharpToCpp.Utilities;
 ///<summary>Utility class to altering and analyzing a SkeletalMesh and use the common functionalities of the SkeletalMesh Editor.</summary>
 public partial class UDEPRECATED_EditorSkeletalMeshLibrary : UBlueprintFunctionLibrary {
 // EditorSkeletalMeshLibrary
-	public bool RegenerateLOD(UObject SkeletalMesh,int NewLODCount/*=0*/,bool bRegenerateEvenIfImported/*=false*/,bool bGenerateBaseLOD/*=false*/) { return default; }
-	public int GetNumVerts(UObject SkeletalMesh,int LODIndex) { return default; }
-	public bool RenameSocket(UObject SkeletalMesh,string OldName,string NewName) { return default; }
-	public int GetLODCount(UObject SkeletalMesh) { return default; }
-	public int ImportLOD(UObject BaseMesh,int LODIndex,string SourceFilename) { return default; }
-	public bool ReimportAllCustomLODs(UObject SkeletalMesh) { return default; }
-	public void GetLodBuildSettings(UObject SkeletalMesh,int LodIndex,FSkeletalMeshBuildSettings OutBuildOptions) {}
-	public void SetLodBuildSettings(UObject SkeletalMesh,int LodIndex,FSkeletalMeshBuildSettings BuildOptions) {}
-	public bool RemoveLODs(UObject SkeletalMesh,TArray<int> ToRemoveLODs) { return default; }
-	public bool StripLODGeometry(UObject SkeletalMesh,int LODIndex,UObject TextureMask,float Threshold) { return default; }
-	public UObject CreatePhysicsAsset(UObject SkeletalMesh) { return default; }
+	public static bool RegenerateLOD(USkeletalMesh SkeletalMesh,int NewLODCount/*=0*/,bool bRegenerateEvenIfImported/*=false*/,bool bGenerateBaseLOD/*=false*/) { return default; }
+	public static int GetNumVerts(USkeletalMesh SkeletalMesh,int LODIndex) { return default; }
+	public static bool RenameSocket(USkeletalMesh SkeletalMesh,string OldName,string NewName) { return default; }
+	public static int GetLODCount(USkeletalMesh SkeletalMesh) { return default; }
+	public static int ImportLOD(USkeletalMesh BaseMesh,int LODIndex,string SourceFilename) { return default; }
+	public static bool ReimportAllCustomLODs(USkeletalMesh SkeletalMesh) { return default; }
+	public static void GetLodBuildSettings(USkeletalMesh SkeletalMesh,int LodIndex,FSkeletalMeshBuildSettings OutBuildOptions) {}
+	public static void SetLodBuildSettings(USkeletalMesh SkeletalMesh,int LodIndex,FSkeletalMeshBuildSettings BuildOptions) {}
+	public static bool RemoveLODs(USkeletalMesh SkeletalMesh,TArray<int> ToRemoveLODs) { return default; }
+	public static bool StripLODGeometry(USkeletalMesh SkeletalMesh,int LODIndex,UTexture2D TextureMask,float Threshold) { return default; }
+	public static UPhysicsAsset CreatePhysicsAsset(USkeletalMesh SkeletalMesh) { return default; }
 }

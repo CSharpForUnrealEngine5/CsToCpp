@@ -4,5 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("MovieSceneParticleTrackSectionRecorder.h")]
 public partial class UMovieSceneParticleTrackSectionRecorder : UObject {
 // MovieSceneParticleTrackSectionRecorder
-	public void OnTriggered(UObject Component,bool bActivating) {}
+	public  void OnTriggered(UParticleSystemComponent Component,bool bActivating) {}
 }

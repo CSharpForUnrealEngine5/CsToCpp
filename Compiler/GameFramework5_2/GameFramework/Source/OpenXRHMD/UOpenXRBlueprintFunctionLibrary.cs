@@ -4,5 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("OpenXRBlueprintFunctionLibrary.h")]
 public partial class UOpenXRBlueprintFunctionLibrary : UBlueprintFunctionLibrary {
 // OpenXRBlueprintFunctionLibrary
-	public void SetEnvironmentBlendMode(int NewBlendMode) {}
+	public static void SetEnvironmentBlendMode(int NewBlendMode) {}
 }

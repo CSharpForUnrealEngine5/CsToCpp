@@ -5,5 +5,5 @@ using CSharpToCpp.Utilities;
 ///<summary>Blueprint API interface implementation</summary>
 public partial class UDisplayClusterProjectionBlueprintAPIImpl : UObject {
 // DisplayClusterProjectionBlueprintAPIImpl
-	public void CameraPolicySetCamera(string ViewportId,UObject NewCamera,float FOVMultiplier/*=1.0f*/) {}
+	public  void CameraPolicySetCamera(string ViewportId,UCameraComponent NewCamera,float FOVMultiplier/*=1.0f*/) {}
 }

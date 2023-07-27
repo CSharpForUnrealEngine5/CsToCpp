@@ -5,6 +5,6 @@ using CSharpToCpp.Utilities;
 public partial class UMeshUVChannelProperties : UInteractiveToolPropertySet {
 // MeshUVChannelProperties
 	public string UVChannel;
-	public TArray<string> GetUVChannelNamesFunc() { return default; }
+	public  TArray<string> GetUVChannelNamesFunc() { return default; }
 	public TArray<string> UVChannelNamesList;
 }

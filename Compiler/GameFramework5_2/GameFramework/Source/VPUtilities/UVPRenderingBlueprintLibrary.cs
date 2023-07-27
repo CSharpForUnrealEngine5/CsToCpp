@@ -5,5 +5,5 @@ using CSharpToCpp.Utilities;
 ///<summary>Blueprint function library supporting Virtual Production rendering use cases.</summary>
 public partial class UVPRenderingBlueprintLibrary : UBlueprintFunctionLibrary {
 // VPRenderingBlueprintLibrary
-	public void GenerateSceneViewExtensionIsActiveFunctorForViewportType(FSceneViewExtensionIsActiveFunctor OutIsActiveFunction,bool bPIE/*=false*/,bool bSIE/*=false*/,bool bEditorActive/*=false*/,bool bGamePrimary/*=false*/) {}
+	public static void GenerateSceneViewExtensionIsActiveFunctorForViewportType(FSceneViewExtensionIsActiveFunctor OutIsActiveFunction,bool bPIE/*=false*/,bool bSIE/*=false*/,bool bEditorActive/*=false*/,bool bGamePrimary/*=false*/) {}
 }

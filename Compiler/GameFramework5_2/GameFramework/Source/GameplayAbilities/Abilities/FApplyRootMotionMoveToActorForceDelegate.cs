@@ -4,4 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("Abilities/Tasks/AbilityTask_ApplyRootMotionMoveToActorForce.h")]
 public partial struct FApplyRootMotionMoveToActorForceDelegate {
 // ApplyRootMotionMoveToActorForceDelegate__DelegateSignature
+	void AddDynamic(object obj, string functionName) {}
 }

@@ -4,4 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("RpmCurveMotorSimComponent.h")]
 public partial struct FOnGearChangedEvent {
 // OnGearChangedEvent__DelegateSignature
+	void AddDynamic(object obj, string functionName) {}
 }

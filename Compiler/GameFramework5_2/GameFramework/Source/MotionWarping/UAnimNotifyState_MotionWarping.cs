@@ -6,11 +6,11 @@ using CSharpToCpp.Utilities;
 public partial class UAnimNotifyState_MotionWarping : UAnimNotifyState {
 // AnimNotifyState_MotionWarping
 	public URootMotionModifier RootMotionModifier;
-	public UObject AddRootMotionModifier(UObject MotionWarpingComp,UObject Animation,float StartTime,float EndTime) { return default; }
-	public void OnRootMotionModifierActivate(UObject MotionWarpingComp,UObject Modifier) {}
-	public void OnRootMotionModifierUpdate(UObject MotionWarpingComp,UObject Modifier) {}
-	public void OnRootMotionModifierDeactivate(UObject MotionWarpingComp,UObject Modifier) {}
-	public void OnWarpBegin(UObject MotionWarpingComp,UObject Modifier) {}
-	public void OnWarpUpdate(UObject MotionWarpingComp,UObject Modifier) {}
-	public void OnWarpEnd(UObject MotionWarpingComp,UObject Modifier) {}
+	public  URootMotionModifier AddRootMotionModifier(UMotionWarpingComponent MotionWarpingComp,UAnimSequenceBase Animation,float StartTime,float EndTime) { return default; }
+	public  void OnRootMotionModifierActivate(UMotionWarpingComponent MotionWarpingComp,URootMotionModifier Modifier) {}
+	public  void OnRootMotionModifierUpdate(UMotionWarpingComponent MotionWarpingComp,URootMotionModifier Modifier) {}
+	public  void OnRootMotionModifierDeactivate(UMotionWarpingComponent MotionWarpingComp,URootMotionModifier Modifier) {}
+	public  void OnWarpBegin(UMotionWarpingComponent MotionWarpingComp,URootMotionModifier Modifier) {}
+	public  void OnWarpUpdate(UMotionWarpingComponent MotionWarpingComp,URootMotionModifier Modifier) {}
+	public  void OnWarpEnd(UMotionWarpingComponent MotionWarpingComp,URootMotionModifier Modifier) {}
 }

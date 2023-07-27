@@ -40,7 +40,7 @@ public partial class AWorldSettings : AInfo {
 	public float KillZ;
 	public UClass KillZDamageType;
 	public float WorldGravityZ;
-	public void OnRep_WorldGravityZ() {}
+	public  void OnRep_WorldGravityZ() {}
 	public float GlobalGravityZ;
 	public UClass DefaultPhysicsVolumeClass;
 	public UClass PhysicsCollisionHandlerClass;

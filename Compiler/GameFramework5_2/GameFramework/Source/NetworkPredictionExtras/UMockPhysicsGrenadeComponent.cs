@@ -4,7 +4,7 @@ using CSharpToCpp.Utilities;
 [CppInclude("MockPhysicsGrenade.h")]
 public partial class UMockPhysicsGrenadeComponent : UNetworkPredictionPhysicsComponent {
 // MockPhysicsGrenadeComponent
-	public void FMockGrenadeOnExplode() {}
+	public  void FMockGrenadeOnExplode() {}
 	public FMockGrenadeOnExplode OnExplode;
 	public float FuseTimeSeconds;
 	public float Radius;

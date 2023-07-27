@@ -4,4 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("LogoutCallbackProxy.h")]
 public partial struct FOnlineLogoutResult {
 // OnlineLogoutResult__DelegateSignature
+	void AddDynamic(object obj, string functionName) {}
 }

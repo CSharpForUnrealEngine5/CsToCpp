@@ -4,31 +4,31 @@ using CSharpToCpp.Utilities;
 [CppInclude("BehaviorTree/BTFunctionLibrary.h")]
 public partial class UBTFunctionLibrary : UBlueprintFunctionLibrary {
 // BTFunctionLibrary
-	public UObject GetOwnersBlackboard(UObject NodeOwner) { return default; }
-	public UObject GetOwnerComponent(UObject NodeOwner) { return default; }
-	public UObject GetBlackboardValueAsObject(UObject NodeOwner,FBlackboardKeySelector Key) { return default; }
-	public UObject GetBlackboardValueAsActor(UObject NodeOwner,FBlackboardKeySelector Key) { return default; }
-	public UClass GetBlackboardValueAsClass(UObject NodeOwner,FBlackboardKeySelector Key) { return default; }
-	public byte GetBlackboardValueAsEnum(UObject NodeOwner,FBlackboardKeySelector Key) { return default; }
-	public int GetBlackboardValueAsInt(UObject NodeOwner,FBlackboardKeySelector Key) { return default; }
-	public float GetBlackboardValueAsFloat(UObject NodeOwner,FBlackboardKeySelector Key) { return default; }
-	public bool GetBlackboardValueAsBool(UObject NodeOwner,FBlackboardKeySelector Key) { return default; }
-	public string GetBlackboardValueAsString(UObject NodeOwner,FBlackboardKeySelector Key) { return default; }
-	public string GetBlackboardValueAsName(UObject NodeOwner,FBlackboardKeySelector Key) { return default; }
-	public FVector GetBlackboardValueAsVector(UObject NodeOwner,FBlackboardKeySelector Key) { return default; }
-	public FRotator GetBlackboardValueAsRotator(UObject NodeOwner,FBlackboardKeySelector Key) { return default; }
-	public void SetBlackboardValueAsObject(UObject NodeOwner,FBlackboardKeySelector Key,UObject Value) {}
-	public void SetBlackboardValueAsClass(UObject NodeOwner,FBlackboardKeySelector Key,UClass Value) {}
-	public void SetBlackboardValueAsEnum(UObject NodeOwner,FBlackboardKeySelector Key,byte Value) {}
-	public void SetBlackboardValueAsInt(UObject NodeOwner,FBlackboardKeySelector Key,int Value) {}
-	public void SetBlackboardValueAsFloat(UObject NodeOwner,FBlackboardKeySelector Key,float Value) {}
-	public void SetBlackboardValueAsBool(UObject NodeOwner,FBlackboardKeySelector Key,bool Value) {}
-	public void SetBlackboardValueAsString(UObject NodeOwner,FBlackboardKeySelector Key,string Value) {}
-	public void SetBlackboardValueAsName(UObject NodeOwner,FBlackboardKeySelector Key,string Value) {}
-	public void SetBlackboardValueAsVector(UObject NodeOwner,FBlackboardKeySelector Key,FVector Value) {}
-	public void ClearBlackboardValueAsVector(UObject NodeOwner,FBlackboardKeySelector Key) {}
-	public void SetBlackboardValueAsRotator(UObject NodeOwner,FBlackboardKeySelector Key,FRotator Value) {}
-	public void ClearBlackboardValue(UObject NodeOwner,FBlackboardKeySelector Key) {}
-	public void StartUsingExternalEvent(UObject NodeOwner,UObject OwningActor) {}
-	public void StopUsingExternalEvent(UObject NodeOwner) {}
+	public static UBlackboardComponent GetOwnersBlackboard(UBTNode NodeOwner) { return default; }
+	public static UBehaviorTreeComponent GetOwnerComponent(UBTNode NodeOwner) { return default; }
+	public static UObject GetBlackboardValueAsObject(UBTNode NodeOwner,FBlackboardKeySelector Key) { return default; }
+	public static AActor GetBlackboardValueAsActor(UBTNode NodeOwner,FBlackboardKeySelector Key) { return default; }
+	public static UClass GetBlackboardValueAsClass(UBTNode NodeOwner,FBlackboardKeySelector Key) { return default; }
+	public static byte GetBlackboardValueAsEnum(UBTNode NodeOwner,FBlackboardKeySelector Key) { return default; }
+	public static int GetBlackboardValueAsInt(UBTNode NodeOwner,FBlackboardKeySelector Key) { return default; }
+	public static float GetBlackboardValueAsFloat(UBTNode NodeOwner,FBlackboardKeySelector Key) { return default; }
+	public static bool GetBlackboardValueAsBool(UBTNode NodeOwner,FBlackboardKeySelector Key) { return default; }
+	public static string GetBlackboardValueAsString(UBTNode NodeOwner,FBlackboardKeySelector Key) { return default; }
+	public static string GetBlackboardValueAsName(UBTNode NodeOwner,FBlackboardKeySelector Key) { return default; }
+	public static FVector GetBlackboardValueAsVector(UBTNode NodeOwner,FBlackboardKeySelector Key) { return default; }
+	public static FRotator GetBlackboardValueAsRotator(UBTNode NodeOwner,FBlackboardKeySelector Key) { return default; }
+	public static void SetBlackboardValueAsObject(UBTNode NodeOwner,FBlackboardKeySelector Key,UObject Value) {}
+	public static void SetBlackboardValueAsClass(UBTNode NodeOwner,FBlackboardKeySelector Key,UClass Value) {}
+	public static void SetBlackboardValueAsEnum(UBTNode NodeOwner,FBlackboardKeySelector Key,byte Value) {}
+	public static void SetBlackboardValueAsInt(UBTNode NodeOwner,FBlackboardKeySelector Key,int Value) {}
+	public static void SetBlackboardValueAsFloat(UBTNode NodeOwner,FBlackboardKeySelector Key,float Value) {}
+	public static void SetBlackboardValueAsBool(UBTNode NodeOwner,FBlackboardKeySelector Key,bool Value) {}
+	public static void SetBlackboardValueAsString(UBTNode NodeOwner,FBlackboardKeySelector Key,string Value) {}
+	public static void SetBlackboardValueAsName(UBTNode NodeOwner,FBlackboardKeySelector Key,string Value) {}
+	public static void SetBlackboardValueAsVector(UBTNode NodeOwner,FBlackboardKeySelector Key,FVector Value) {}
+	public static void ClearBlackboardValueAsVector(UBTNode NodeOwner,FBlackboardKeySelector Key) {}
+	public static void SetBlackboardValueAsRotator(UBTNode NodeOwner,FBlackboardKeySelector Key,FRotator Value) {}
+	public static void ClearBlackboardValue(UBTNode NodeOwner,FBlackboardKeySelector Key) {}
+	public static void StartUsingExternalEvent(UBTNode NodeOwner,AActor OwningActor) {}
+	public static void StopUsingExternalEvent(UBTNode NodeOwner) {}
 }

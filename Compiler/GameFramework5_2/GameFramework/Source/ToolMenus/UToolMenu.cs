@@ -4,12 +4,12 @@ using CSharpToCpp.Utilities;
 [CppInclude("ToolMenu.h")]
 public partial class UToolMenu : UToolMenuBase {
 // ToolMenu
-	public void InitMenu(FToolMenuOwner Owner,string Name,string Parent/*=NAME_None*/,EMultiBoxType Type/*=EMultiBoxType.Menu*/) {}
-	public void AddSectionScript(string SectionName,string Label/*=new FText()*/,string InsertName/*=NAME_None*/,EToolMenuInsertType InsertType/*=EToolMenuInsertType.Default*/) {}
-	public void AddDynamicSectionScript(string SectionName,UObject Object) {}
-	public void AddMenuEntry(string SectionName,FToolMenuEntry Args) {}
-	public void AddMenuEntryObject(UObject InObject) {}
-	public UObject AddSubMenuScript(string Owner,string SectionName,string Name,string Label,string ToolTip/*=new FText()*/) { return default; }
+	public  void InitMenu(FToolMenuOwner Owner,string Name,string Parent/*=NAME_None*/,EMultiBoxType Type/*=EMultiBoxType.Menu*/) {}
+	public  void AddSectionScript(string SectionName,string Label/*=new FText()*/,string InsertName/*=NAME_None*/,EToolMenuInsertType InsertType/*=EToolMenuInsertType.Default*/) {}
+	public  void AddDynamicSectionScript(string SectionName,UToolMenuSectionDynamic Object) {}
+	public  void AddMenuEntry(string SectionName,FToolMenuEntry Args) {}
+	public  void AddMenuEntryObject(UToolMenuEntryScript InObject) {}
+	public  UToolMenu AddSubMenuScript(string Owner,string SectionName,string Name,string Label,string ToolTip/*=new FText()*/) { return default; }
 	public string MenuName;
 	public string MenuParent;
 	public string StyleName;

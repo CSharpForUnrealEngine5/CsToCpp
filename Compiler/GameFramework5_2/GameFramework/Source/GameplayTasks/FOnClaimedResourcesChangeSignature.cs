@@ -4,4 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("GameplayTasksComponent.h")]
 public partial struct FOnClaimedResourcesChangeSignature {
 // OnClaimedResourcesChangeSignature__DelegateSignature
+	void AddDynamic(object obj, string functionName) {}
 }

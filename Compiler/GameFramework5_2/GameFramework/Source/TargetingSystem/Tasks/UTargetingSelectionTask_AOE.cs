@@ -5,8 +5,8 @@ using CSharpToCpp.Utilities;
 ///<summary>@class UTargetingSelectionTask_AOE</summary>
 public partial class UTargetingSelectionTask_AOE : UTargetingTask {
 // TargetingSelectionTask_AOE
-	public FVector GetSourceLocation(FTargetingRequestHandle TargetingHandle) { return default; }
-	public FVector GetSourceOffset(FTargetingRequestHandle TargetingHandle) { return default; }
+	public  FVector GetSourceLocation(FTargetingRequestHandle TargetingHandle) { return default; }
+	public  FVector GetSourceOffset(FTargetingRequestHandle TargetingHandle) { return default; }
 	public ETargetingAOEShape ShapeType;
 	public byte CollisionChannel;
 	public FCollisionProfileName CollisionProfileName;

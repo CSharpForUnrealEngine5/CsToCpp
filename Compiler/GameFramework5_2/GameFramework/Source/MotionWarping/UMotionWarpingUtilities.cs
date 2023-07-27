@@ -4,7 +4,7 @@ using CSharpToCpp.Utilities;
 [CppInclude("MotionWarpingComponent.h")]
 public partial class UMotionWarpingUtilities : UBlueprintFunctionLibrary {
 // MotionWarpingUtilities
-	public FTransform ExtractRootMotionFromAnimation(UObject Animation,float StartTime,float EndTime) { return default; }
-	public void GetMotionWarpingWindowsFromAnimation(UObject Animation,TArray<FMotionWarpingWindowData> OutWindows) {}
-	public void GetMotionWarpingWindowsForWarpTargetFromAnimation(UObject Animation,string WarpTargetName,TArray<FMotionWarpingWindowData> OutWindows) {}
+	public static FTransform ExtractRootMotionFromAnimation(UAnimSequenceBase Animation,float StartTime,float EndTime) { return default; }
+	public static void GetMotionWarpingWindowsFromAnimation(UAnimSequenceBase Animation,TArray<FMotionWarpingWindowData> OutWindows) {}
+	public static void GetMotionWarpingWindowsForWarpTargetFromAnimation(UAnimSequenceBase Animation,string WarpTargetName,TArray<FMotionWarpingWindowData> OutWindows) {}
 }

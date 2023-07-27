@@ -5,8 +5,8 @@ using CSharpToCpp.Utilities;
 ///<summary>Actor class for DMX Control Console</summary>
 public partial class ADMXControlConsoleActor : AActor {
 // DMXControlConsoleActor
-	public void StartSendingDMX() {}
-	public void StopSendingDMX() {}
+	public  void StartSendingDMX() {}
+	public  void StopSendingDMX() {}
 	public UDMXControlConsoleData ControlConsoleData;
 	public bool bAutoActivate;
 	public bool bSendDMXInEditor;

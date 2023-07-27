@@ -8,5 +8,5 @@ public partial class ANavModifierVolume : AVolume {
 	public UClass AreaClass;
 	public bool bMaskFillCollisionUnderneathForNavmesh;
 	public ENavigationDataResolution NavMeshResolution;
-	public void SetAreaClass(UClass NewAreaClass/*=nullptr*/) {}
+	public  void SetAreaClass(UClass NewAreaClass/*=nullptr*/) {}
 }

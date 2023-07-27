@@ -4,4 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("Sequencer/MovieSceneGameplayCueTrack.h")]
 public partial struct FMovieSceneGameplayCueEvent {
 // MovieSceneGameplayCueEvent__DelegateSignature
+	void AddDynamic(object obj, string functionName) {}
 }

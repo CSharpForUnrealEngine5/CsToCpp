@@ -6,12 +6,12 @@ using CSharpToCpp.Utilities;
 public partial class UAbilitySystemGlobals : UObject {
 // AbilitySystemGlobals
 	public FSoftClassPath AbilitySystemGlobalsClassName;
-	public void ToggleIgnoreAbilitySystemCooldowns() {}
-	public void ToggleIgnoreAbilitySystemCosts() {}
-	public void ListPlayerAbilities() {}
-	public void ServerActivatePlayerAbility(string AbilityNameMatch) {}
-	public void ServerEndPlayerAbility(string AbilityNameMatch) {}
-	public void ServerCancelPlayerAbility(string AbilityNameMatch) {}
+	public  void ToggleIgnoreAbilitySystemCooldowns() {}
+	public  void ToggleIgnoreAbilitySystemCosts() {}
+	public  void ListPlayerAbilities() {}
+	public  void ServerActivatePlayerAbility(string AbilityNameMatch) {}
+	public  void ServerEndPlayerAbility(string AbilityNameMatch) {}
+	public  void ServerCancelPlayerAbility(string AbilityNameMatch) {}
 	public bool bUseDebugTargetFromHud;
 	public FGameplayTag ActivateFailIsDeadTag;
 	public string ActivateFailIsDeadName;

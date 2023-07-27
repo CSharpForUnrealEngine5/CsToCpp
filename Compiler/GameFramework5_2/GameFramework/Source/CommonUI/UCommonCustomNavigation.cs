@@ -5,6 +5,6 @@ using CSharpToCpp.Utilities;
 ///<summary>Exposes a bindable event that can be used to stomp default border navigation with custom behaviors.</summary>
 public partial class UCommonCustomNavigation : UBorder {
 // CommonCustomNavigation
-	public bool FOnCustomNavigationEvent(EUINavigation NavigationType) { return default; }
+	public  bool FOnCustomNavigationEvent(EUINavigation NavigationType) { return default; }
 	public FOnCustomNavigationEvent OnNavigationEvent;
 }

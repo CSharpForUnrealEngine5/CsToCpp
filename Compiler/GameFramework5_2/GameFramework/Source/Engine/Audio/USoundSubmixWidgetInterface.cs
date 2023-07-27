@@ -4,5 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("Audio/SoundSubmixWidgetInterface.h")]
 public partial class USoundSubmixWidgetInterface : UInterface {
 // SoundSubmixWidgetInterface
-	public void OnConstructed(UObject SoundSubmix) {}
+	public  void OnConstructed(USoundSubmixBase SoundSubmix) {}
 }

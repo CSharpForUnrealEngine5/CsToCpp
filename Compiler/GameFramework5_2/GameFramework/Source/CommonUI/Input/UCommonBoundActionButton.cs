@@ -4,6 +4,6 @@ using CSharpToCpp.Utilities;
 [CppInclude("Input/CommonBoundActionButton.h")]
 public partial class UCommonBoundActionButton : UCommonButtonBase {
 // CommonBoundActionButton
-	public void OnUpdateInputAction() {}
+	public  void OnUpdateInputAction() {}
 	public UCommonTextBlock Text_ActionName;
 }

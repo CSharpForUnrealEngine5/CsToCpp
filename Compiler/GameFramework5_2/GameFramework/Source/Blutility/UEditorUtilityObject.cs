@@ -4,5 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("EditorUtilityObject.h")]
 public partial class UEditorUtilityObject : UObject {
 // EditorUtilityObject
-	public void Run() {}
+	public  void Run() {}
 }

@@ -5,16 +5,16 @@ using CSharpToCpp.Utilities;
 ///<summary>The base for widgets that are capable of being "activated" and "deactivated" during their lifetime without being otherwise modified or destroyed.</summary>
 public partial class UCommonActivatableWidget : UCommonUserWidget {
 // CommonActivatableWidget
-	public bool IsActivated() { return default; }
-	public void ActivateWidget() {}
-	public void DeactivateWidget() {}
-	public void SetBindVisibilities(ESlateVisibility OnActivatedVisibility,ESlateVisibility OnDeactivatedVisibility,bool bInAllActive) {}
-	public void BindVisibilityToActivation(UObject ActivatableWidget) {}
-	public UObject GetDesiredFocusTarget() { return default; }
-	public UObject BP_GetDesiredFocusTarget() { return default; }
-	public void BP_OnActivated() {}
-	public void BP_OnDeactivated() {}
-	public bool BP_OnHandleBackAction() { return default; }
+	public  bool IsActivated() { return default; }
+	public  void ActivateWidget() {}
+	public  void DeactivateWidget() {}
+	public  void SetBindVisibilities(ESlateVisibility OnActivatedVisibility,ESlateVisibility OnDeactivatedVisibility,bool bInAllActive) {}
+	public  void BindVisibilityToActivation(UCommonActivatableWidget ActivatableWidget) {}
+	public  UWidget GetDesiredFocusTarget() { return default; }
+	public  UWidget BP_GetDesiredFocusTarget() { return default; }
+	public  void BP_OnActivated() {}
+	public  void BP_OnDeactivated() {}
+	public  bool BP_OnHandleBackAction() { return default; }
 	public bool bIsBackHandler;
 	public bool bIsBackActionDisplayedInActionBar;
 	public bool bAutoActivate;

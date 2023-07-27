@@ -16,5 +16,5 @@ public partial class AFunctionalAITestBase : AFunctionalTest {
 	public FVector NavMeshDebugExtent;
 	public bool bWaitForNavMesh;
 	public bool bDebugNavMeshOnTimeout;
-	public bool IsOneOfSpawnedPawns(UObject Actor) { return default; }
+	public  bool IsOneOfSpawnedPawns(AActor Actor) { return default; }
 }

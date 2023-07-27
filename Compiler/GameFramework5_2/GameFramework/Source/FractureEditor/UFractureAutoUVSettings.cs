@@ -6,19 +6,19 @@ using CSharpToCpp.Utilities;
 public partial class UFractureAutoUVSettings : UFractureToolSettings {
 // FractureAutoUVSettings
 	public string UVChannel;
-	public TArray<string> GetUVChannelNamesFunc() { return default; }
+	public  TArray<string> GetUVChannelNamesFunc() { return default; }
 	public TArray<string> UVChannelNamesList;
-	public void AddUVChannel() {}
-	public void DeleteUVChannel() {}
-	public void LayoutUVs() {}
-	public void BakeTexture() {}
-	public void DisableBoneColors() {}
+	public  void AddUVChannel() {}
+	public  void DeleteUVChannel() {}
+	public  void LayoutUVs() {}
+	public  void BakeTexture() {}
+	public  void DisableBoneColors() {}
 	public FVector ProjectionScale;
 	public bool bAutoFitToBounds;
 	public bool bUniformProjectionScale;
 	public FVector2D ProjectionUVOffset;
 	public bool bCenterAtPivot;
-	public void BoxProjectUVs() {}
+	public  void BoxProjectUVs() {}
 	public ETargetMaterialIDs TargetMaterialIDs;
 	public TArray<int> MaterialIDs;
 	public EAutoUVTextureResolution Resolution;

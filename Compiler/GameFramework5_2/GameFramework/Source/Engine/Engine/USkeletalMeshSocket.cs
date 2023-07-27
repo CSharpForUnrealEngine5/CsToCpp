@@ -10,6 +10,6 @@ public partial class USkeletalMeshSocket : UObject {
 	public FRotator RelativeRotation;
 	public FVector RelativeScale;
 	public bool bForceAlwaysAnimated;
-	public FVector GetSocketLocation(UObject SkelComp) { return default; }
-	public void InitializeSocketFromLocation(UObject SkelComp,FVector WorldLocation,FVector WorldNormal) {}
+	public  FVector GetSocketLocation(USkeletalMeshComponent SkelComp) { return default; }
+	public  void InitializeSocketFromLocation(USkeletalMeshComponent SkelComp,FVector WorldLocation,FVector WorldNormal) {}
 }

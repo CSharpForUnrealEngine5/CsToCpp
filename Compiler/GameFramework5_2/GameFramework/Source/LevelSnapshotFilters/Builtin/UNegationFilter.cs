@@ -5,9 +5,9 @@ using CSharpToCpp.Utilities;
 ///<summary>Returns the results of a child filter optionally negated.</summary>
 public partial class UNegationFilter : ULevelSnapshotFilter {
 // NegationFilter
-	public UObject CreateChild(UClass ChildClass) { return default; }
-	public void SetExternalChild(UObject NewChild) {}
-	public UObject GetChild() { return default; }
+	public  ULevelSnapshotFilter CreateChild(UClass ChildClass) { return default; }
+	public  void SetExternalChild(ULevelSnapshotFilter NewChild) {}
+	public  ULevelSnapshotFilter GetChild() { return default; }
 	public bool bShouldNegate;
 	public ULevelSnapshotFilter Child;
 	public ULevelSnapshotFilter InstancedChild;

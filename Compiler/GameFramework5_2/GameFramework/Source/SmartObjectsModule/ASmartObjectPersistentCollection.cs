@@ -5,8 +5,8 @@ using CSharpToCpp.Utilities;
 ///<summary>Actor holding smart object persistent data</summary>
 public partial class ASmartObjectPersistentCollection : AActor {
 // SmartObjectPersistentCollection
-	public void ClearCollection() {}
-	public void RebuildCollection() {}
+	public  void ClearCollection() {}
+	public  void RebuildCollection() {}
 	public FSmartObjectContainer SmartObjectContainer;
 	public UBillboardComponent SpriteComponent;
 	public USmartObjectContainerRenderingComponent RenderingComponent;

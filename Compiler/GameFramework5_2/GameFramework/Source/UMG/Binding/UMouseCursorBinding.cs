@@ -4,5 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("Binding/MouseCursorBinding.h")]
 public partial class UMouseCursorBinding : UPropertyBinding {
 // MouseCursorBinding
-	public EMouseCursor GetValue() { return default; }
+	public  EMouseCursor GetValue() { return default; }
 }

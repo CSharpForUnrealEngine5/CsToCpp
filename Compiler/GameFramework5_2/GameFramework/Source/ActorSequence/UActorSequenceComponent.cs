@@ -5,9 +5,9 @@ using CSharpToCpp.Utilities;
 ///<summary>Movie scene animation embedded within an actor.</summary>
 public partial class UActorSequenceComponent : UActorComponent {
 // ActorSequenceComponent
-	public void PlaySequence() {}
-	public void PauseSequence() {}
-	public void StopSequence() {}
+	public  void PlaySequence() {}
+	public  void PauseSequence() {}
+	public  void StopSequence() {}
 	public FMovieSceneSequencePlaybackSettings PlaybackSettings;
 	public UActorSequence Sequence;
 	public UActorSequencePlayer SequencePlayer;

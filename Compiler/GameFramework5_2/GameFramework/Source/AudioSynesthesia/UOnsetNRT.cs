@@ -6,6 +6,6 @@ using CSharpToCpp.Utilities;
 public partial class UOnsetNRT : UAudioSynesthesiaNRT {
 // OnsetNRT
 	public UOnsetNRTSettings Settings;
-	public void GetChannelOnsetsBetweenTimes(float InStartSeconds,float InEndSeconds,int InChannel,TArray<float> OutOnsetTimestamps,TArray<float> OutOnsetStrengths) {}
-	public void GetNormalizedChannelOnsetsBetweenTimes(float InStartSeconds,float InEndSeconds,int InChannel,TArray<float> OutOnsetTimestamps,TArray<float> OutOnsetStrengths) {}
+	public  void GetChannelOnsetsBetweenTimes(float InStartSeconds,float InEndSeconds,int InChannel,TArray<float> OutOnsetTimestamps,TArray<float> OutOnsetStrengths) {}
+	public  void GetNormalizedChannelOnsetsBetweenTimes(float InStartSeconds,float InEndSeconds,int InChannel,TArray<float> OutOnsetTimestamps,TArray<float> OutOnsetStrengths) {}
 }

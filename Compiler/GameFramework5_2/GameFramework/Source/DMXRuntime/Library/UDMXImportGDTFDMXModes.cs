@@ -5,5 +5,5 @@ using CSharpToCpp.Utilities;
 public partial class UDMXImportGDTFDMXModes : UDMXImportDMXModes {
 // DMXImportGDTFDMXModes
 	public TArray<FDMXImportGDTFDMXMode> DMXModes;
-	public TArray<FDMXImportGDTFChannelFunction> GetDMXChannelFunctions(FDMXImportGDTFDMXMode InMode) { return default; }
+	public  TArray<FDMXImportGDTFChannelFunction> GetDMXChannelFunctions(FDMXImportGDTFDMXMode InMode) { return default; }
 }

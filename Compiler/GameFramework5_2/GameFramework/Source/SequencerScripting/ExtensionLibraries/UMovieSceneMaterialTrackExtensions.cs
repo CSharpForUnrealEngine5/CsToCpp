@@ -5,6 +5,6 @@ using CSharpToCpp.Utilities;
 ///<summary>Function library containing methods that should be hoisted onto UMovieSceneMaterialTrack for scripting</summary>
 public partial class UMovieSceneMaterialTrackExtensions : UBlueprintFunctionLibrary {
 // MovieSceneMaterialTrackExtensions
-	public void SetMaterialIndex(UObject Track,int MaterialIndex) {}
-	public int GetMaterialIndex(UObject Track) { return default; }
+	public static void SetMaterialIndex(UMovieSceneComponentMaterialTrack Track,int MaterialIndex) {}
+	public static int GetMaterialIndex(UMovieSceneComponentMaterialTrack Track) { return default; }
 }

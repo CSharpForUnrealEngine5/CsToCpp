@@ -5,6 +5,6 @@ using CSharpToCpp.Utilities;
 ///<summary>Base actor for preview actors used in UNiagaraPreviewAxis.</summary>
 public partial class ANiagaraPreviewBase : AActor {
 // NiagaraPreviewBase
-	public void SetSystem(UObject InSystem) {}
-	public void SetLabelText(string InXAxisText,string InYAxisText) {}
+	public  void SetSystem(UNiagaraSystem InSystem) {}
+	public  void SetLabelText(string InXAxisText,string InYAxisText) {}
 }

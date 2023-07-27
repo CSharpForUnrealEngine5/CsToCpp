@@ -5,22 +5,22 @@ using CSharpToCpp.Utilities;
 ///<summary>Take recorder UI panel interop object</summary>
 public partial class UTakeRecorderPanel : UObject {
 // TakeRecorderPanel
-	public ETakeRecorderPanelMode GetMode() { return default; }
-	public void SetupForRecording_TakePreset(UObject TakePresetAsset) {}
-	public void SetupForRecording_LevelSequence(UObject LevelSequenceAsset) {}
-	public void SetupForRecordingInto_LevelSequence(UObject LevelSequenceAsset) {}
-	public void SetupForEditing(UObject TakePreset) {}
-	public void SetupForViewing(UObject LevelSequenceAsset) {}
-	public void NewTake() {}
-	public void ClearPendingTake() {}
-	public UObject GetLevelSequence() { return default; }
-	public UObject GetLastRecordedLevelSequence() { return default; }
-	public UObject GetTakeMetaData() { return default; }
-	public FFrameRate GetFrameRate() { return default; }
-	public void SetFrameRate(FFrameRate InFrameRate) {}
-	public void SetFrameRateFromTimecode(bool bInFromTimecode) {}
-	public UObject GetSources() { return default; }
-	public void StartRecording() {}
-	public void StopRecording() {}
-	public bool CanStartRecording(string OutErrorText) { return default; }
+	public  ETakeRecorderPanelMode GetMode() { return default; }
+	public  void SetupForRecording_TakePreset(UTakePreset TakePresetAsset) {}
+	public  void SetupForRecording_LevelSequence(ULevelSequence LevelSequenceAsset) {}
+	public  void SetupForRecordingInto_LevelSequence(ULevelSequence LevelSequenceAsset) {}
+	public  void SetupForEditing(UTakePreset TakePreset) {}
+	public  void SetupForViewing(ULevelSequence LevelSequenceAsset) {}
+	public  void NewTake() {}
+	public  void ClearPendingTake() {}
+	public  ULevelSequence GetLevelSequence() { return default; }
+	public  ULevelSequence GetLastRecordedLevelSequence() { return default; }
+	public  UTakeMetaData GetTakeMetaData() { return default; }
+	public  FFrameRate GetFrameRate() { return default; }
+	public  void SetFrameRate(FFrameRate InFrameRate) {}
+	public  void SetFrameRateFromTimecode(bool bInFromTimecode) {}
+	public  UTakeRecorderSources GetSources() { return default; }
+	public  void StartRecording() {}
+	public  void StopRecording() {}
+	public  bool CanStartRecording(string OutErrorText) { return default; }
 }

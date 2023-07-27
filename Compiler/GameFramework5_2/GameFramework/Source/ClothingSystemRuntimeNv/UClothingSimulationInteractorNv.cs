@@ -4,5 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("ClothingSimulationInteractorNv.h")]
 public partial class UClothingSimulationInteractorNv : UClothingSimulationInteractor {
 // ClothingSimulationInteractorNv
-	public void SetAnimDriveDamperStiffness(float InStiffness) {}
+	public  void SetAnimDriveDamperStiffness(float InStiffness) {}
 }

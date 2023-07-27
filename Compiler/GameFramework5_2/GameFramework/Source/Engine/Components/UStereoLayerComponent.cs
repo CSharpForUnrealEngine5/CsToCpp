@@ -5,18 +5,18 @@ using CSharpToCpp.Utilities;
 ///<summary>A geometry layer within the stereo rendered viewport.</summary>
 public partial class UStereoLayerComponent : USceneComponent {
 // StereoLayerComponent
-	public void SetTexture(UObject InTexture) {}
-	public void SetLeftTexture(UObject InTexture) {}
-	public UObject GetTexture() { return default; }
-	public UObject GetLeftTexture() { return default; }
-	public void SetQuadSize(FVector2D InQuadSize) {}
-	public FVector2D GetQuadSize() { return default; }
-	public void SetUVRect(FBox2D InUVRect) {}
-	public FBox2D GetUVRect() { return default; }
-	public void SetEquirectProps(FEquirectProps InScaleBiases) {}
-	public void SetPriority(int InPriority) {}
-	public int GetPriority() { return default; }
-	public void MarkTextureForUpdate() {}
+	public  void SetTexture(UTexture InTexture) {}
+	public  void SetLeftTexture(UTexture InTexture) {}
+	public  UTexture GetTexture() { return default; }
+	public  UTexture GetLeftTexture() { return default; }
+	public  void SetQuadSize(FVector2D InQuadSize) {}
+	public  FVector2D GetQuadSize() { return default; }
+	public  void SetUVRect(FBox2D InUVRect) {}
+	public  FBox2D GetUVRect() { return default; }
+	public  void SetEquirectProps(FEquirectProps InScaleBiases) {}
+	public  void SetPriority(int InPriority) {}
+	public  int GetPriority() { return default; }
+	public  void MarkTextureForUpdate() {}
 	public bool bLiveTexture;
 	public bool bSupportsDepth;
 	public bool bNoAlphaChannel;

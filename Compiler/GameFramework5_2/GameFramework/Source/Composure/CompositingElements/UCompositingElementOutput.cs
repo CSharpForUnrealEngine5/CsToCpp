@@ -4,5 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("CompositingElements/CompositingElementPasses.h")]
 public partial class UCompositingElementOutput : UCompositingElementPass {
 // CompositingElementOutput
-	public void RelayOutput(UObject FinalResult,UObject PostProcessProxy) {}
+	public  void RelayOutput(UTexture FinalResult,UComposurePostProcessingPassProxy PostProcessProxy) {}
 }

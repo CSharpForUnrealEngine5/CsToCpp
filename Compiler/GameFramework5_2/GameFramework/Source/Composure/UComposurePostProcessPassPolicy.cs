@@ -5,5 +5,5 @@ using CSharpToCpp.Utilities;
 ///<summary>Abstract base class for setting up post passes. Used in conjuntion with UComposurePostProcessingPassProxy.</summary>
 public partial class UComposurePostProcessPassPolicy : UObject {
 // ComposurePostProcessPassPolicy
-	public void SetupPostProcess(UObject SceneCapture,UObject TonemapperOverride) {}
+	public  void SetupPostProcess(USceneCaptureComponent2D SceneCapture,UMaterialInterface TonemapperOverride) {}
 }

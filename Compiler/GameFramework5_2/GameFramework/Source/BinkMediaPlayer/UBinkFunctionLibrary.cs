@@ -4,7 +4,7 @@ using CSharpToCpp.Utilities;
 [CppInclude("BinkFunctionLibrary.h")]
 public partial class UBinkFunctionLibrary : UBlueprintFunctionLibrary {
 // BinkFunctionLibrary
-	public void Bink_DrawOverlays() {}
-	public FTimespan BinkLoadingMovie_GetDuration() { return default; }
-	public FTimespan BinkLoadingMovie_GetTime() { return default; }
+	public static void Bink_DrawOverlays() {}
+	public static FTimespan BinkLoadingMovie_GetDuration() { return default; }
+	public static FTimespan BinkLoadingMovie_GetTime() { return default; }
 }

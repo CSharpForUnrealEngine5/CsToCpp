@@ -35,7 +35,7 @@ public partial class UFbxImportUI : UObject {
 	public UFbxAnimSequenceImportData AnimSequenceImportData;
 	public UFbxTextureImportData TextureImportData;
 	public bool bAutomatedImportShouldDetectType;
-	public void ResetToDefault() {}
+	public  void ResetToDefault() {}
 	public string FileVersion;
 	public string FileCreator;
 	public string FileCreatorApplication;

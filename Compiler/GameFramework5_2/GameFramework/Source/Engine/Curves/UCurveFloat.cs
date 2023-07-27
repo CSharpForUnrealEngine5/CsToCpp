@@ -6,5 +6,5 @@ public partial class UCurveFloat : UCurveBase {
 // CurveFloat
 	public FRichCurve FloatCurve;
 	public bool bIsEventCurve;
-	public float GetFloatValue(float InTime) { return default; }
+	public  float GetFloatValue(float InTime) { return default; }
 }

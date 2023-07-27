@@ -5,8 +5,8 @@ using CSharpToCpp.Utilities;
 ///<summary>Actor for testing ZoneGraph functionality.</summary>
 public partial class UZoneGraphTestingComponent : UPrimitiveComponent {
 // ZoneGraphTestingComponent
-	public void EnableCustomTests() {}
-	public void DisableCustomTests() {}
+	public  void EnableCustomTests() {}
+	public  void DisableCustomTests() {}
 	public UZoneGraphSubsystem ZoneGraph;
 	public FZoneGraphLaneLocation LaneLocation;
 	public FZoneGraphLaneLocation NextLaneLocation;

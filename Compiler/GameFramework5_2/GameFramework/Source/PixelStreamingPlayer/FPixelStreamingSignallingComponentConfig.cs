@@ -4,4 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("PixelStreamingSignallingComponent.h")]
 public partial struct FPixelStreamingSignallingComponentConfig {
 // PixelStreamingSignallingComponentConfig__DelegateSignature
+	void AddDynamic(object obj, string functionName) {}
 }

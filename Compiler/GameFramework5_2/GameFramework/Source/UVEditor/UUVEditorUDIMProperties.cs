@@ -6,10 +6,10 @@ using CSharpToCpp.Utilities;
 public partial class UUVEditorUDIMProperties : UInteractiveToolPropertySet {
 // UVEditorUDIMProperties
 	public string UDIMSourceAsset;
-	public TArray<string> GetAssetNames() { return default; }
-	public int AssetByIndex() { return default; }
-	public void SetUDIMsFromAsset() {}
+	public  TArray<string> GetAssetNames() { return default; }
+	public  int AssetByIndex() { return default; }
+	public  void SetUDIMsFromAsset() {}
 	public UTexture2D UDIMSourceTexture;
-	public void SetUDIMsFromTexture() {}
+	public  void SetUDIMsFromTexture() {}
 	public TArray<FUDIMSpecifier> ActiveUDIMs;
 }

@@ -5,6 +5,6 @@ using CSharpToCpp.Utilities;
 ///<summary>A beacon client used for quality timings to a specified session</summary>
 public partial class AQosBeaconClient : AOnlineBeaconClient {
 // QosBeaconClient
-	public void ServerQosRequest(string InSessionId) {}
-	public void ClientQosResponse(EQosResponseType Response) {}
+	public  void ServerQosRequest(string InSessionId) {}
+	public  void ClientQosResponse(EQosResponseType Response) {}
 }

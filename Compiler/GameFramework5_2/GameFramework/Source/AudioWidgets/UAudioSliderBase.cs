@@ -22,19 +22,19 @@ public partial class UAudioSliderBase : UWidget {
 	public FGetLinearColor SliderThumbColorDelegate;
 	public FLinearColor WidgetBackgroundColor;
 	public FGetLinearColor WidgetBackgroundColorDelegate;
-	public float GetOutputValue(float InSliderValue) { return default; }
-	public float GetLinValue(float OutputValue) { return default; }
-	public float GetSliderValue(float OutputValue) { return default; }
-	public void SetTextLabelBackgroundColor(FSlateColor InColor) {}
-	public void SetUnitsText(string Units) {}
-	public void SetUnitsTextReadOnly(bool bIsReadOnly) {}
-	public void SetValueTextReadOnly(bool bIsReadOnly) {}
-	public void SetShowLabelOnlyOnHover(bool bShowLabelOnlyOnHover) {}
-	public void SetShowUnitsText(bool bShowUnitsText) {}
+	public  float GetOutputValue(float InSliderValue) { return default; }
+	public  float GetLinValue(float OutputValue) { return default; }
+	public  float GetSliderValue(float OutputValue) { return default; }
+	public  void SetTextLabelBackgroundColor(FSlateColor InColor) {}
+	public  void SetUnitsText(string Units) {}
+	public  void SetUnitsTextReadOnly(bool bIsReadOnly) {}
+	public  void SetValueTextReadOnly(bool bIsReadOnly) {}
+	public  void SetShowLabelOnlyOnHover(bool bShowLabelOnlyOnHover) {}
+	public  void SetShowUnitsText(bool bShowUnitsText) {}
 	public byte Orientation;
 	public FOnFloatValueChangedEvent OnValueChanged;
-	public void SetSliderBackgroundColor(FLinearColor InValue) {}
-	public void SetSliderBarColor(FLinearColor InValue) {}
-	public void SetSliderThumbColor(FLinearColor InValue) {}
-	public void SetWidgetBackgroundColor(FLinearColor InValue) {}
+	public  void SetSliderBackgroundColor(FLinearColor InValue) {}
+	public  void SetSliderBarColor(FLinearColor InValue) {}
+	public  void SetSliderThumbColor(FLinearColor InValue) {}
+	public  void SetWidgetBackgroundColor(FLinearColor InValue) {}
 }

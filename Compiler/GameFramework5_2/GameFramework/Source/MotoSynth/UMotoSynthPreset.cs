@@ -7,7 +7,7 @@ public partial class UMotoSynthPreset : UObject {
 // MotoSynthPreset
 	public FRuntimeFloatCurve EnginePreviewRPMCurve;
 	public FMotoSynthRuntimeSettings Settings;
-	public void StartEnginePreview() {}
-	public void StopEnginePreview() {}
-	public void DumpRuntimeMemoryUsage() {}
+	public  void StartEnginePreview() {}
+	public  void StopEnginePreview() {}
+	public  void DumpRuntimeMemoryUsage() {}
 }

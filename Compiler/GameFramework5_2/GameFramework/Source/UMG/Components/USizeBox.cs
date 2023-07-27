@@ -21,20 +21,20 @@ public partial class USizeBox : UContentWidget {
 	public bool bOverride_MaxDesiredHeight;
 	public bool bOverride_MinAspectRatio;
 	public bool bOverride_MaxAspectRatio;
-	public void SetWidthOverride(float InWidthOverride) {}
-	public void ClearWidthOverride() {}
-	public void SetHeightOverride(float InHeightOverride) {}
-	public void ClearHeightOverride() {}
-	public void SetMinDesiredWidth(float InMinDesiredWidth) {}
-	public void ClearMinDesiredWidth() {}
-	public void SetMinDesiredHeight(float InMinDesiredHeight) {}
-	public void ClearMinDesiredHeight() {}
-	public void SetMaxDesiredWidth(float InMaxDesiredWidth) {}
-	public void ClearMaxDesiredWidth() {}
-	public void SetMaxDesiredHeight(float InMaxDesiredHeight) {}
-	public void ClearMaxDesiredHeight() {}
-	public void SetMinAspectRatio(float InMinAspectRatio) {}
-	public void ClearMinAspectRatio() {}
-	public void SetMaxAspectRatio(float InMaxAspectRatio) {}
-	public void ClearMaxAspectRatio() {}
+	public  void SetWidthOverride(float InWidthOverride) {}
+	public  void ClearWidthOverride() {}
+	public  void SetHeightOverride(float InHeightOverride) {}
+	public  void ClearHeightOverride() {}
+	public  void SetMinDesiredWidth(float InMinDesiredWidth) {}
+	public  void ClearMinDesiredWidth() {}
+	public  void SetMinDesiredHeight(float InMinDesiredHeight) {}
+	public  void ClearMinDesiredHeight() {}
+	public  void SetMaxDesiredWidth(float InMaxDesiredWidth) {}
+	public  void ClearMaxDesiredWidth() {}
+	public  void SetMaxDesiredHeight(float InMaxDesiredHeight) {}
+	public  void ClearMaxDesiredHeight() {}
+	public  void SetMinAspectRatio(float InMinAspectRatio) {}
+	public  void ClearMinAspectRatio() {}
+	public  void SetMaxAspectRatio(float InMaxAspectRatio) {}
+	public  void ClearMaxAspectRatio() {}
 }

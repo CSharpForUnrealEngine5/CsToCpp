@@ -4,6 +4,6 @@ using CSharpToCpp.Utilities;
 [CppInclude("PCGGraph.h")]
 public partial class UPCGGraphInterface : UObject {
 // PCGGraphInterface
-	public UObject GetMutablePCGGraph() { return default; }
-	public UObject GetConstPCGGraph() { return default; }
+	public  UPCGGraph GetMutablePCGGraph() { return default; }
+	public  UPCGGraph GetConstPCGGraph() { return default; }
 }

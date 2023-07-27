@@ -14,18 +14,18 @@ public partial class UPhysicsHandleComponent : UActorComponent {
 	public float AngularDamping;
 	public float AngularStiffness;
 	public float InterpolationSpeed;
-	public void GrabComponent(UObject Component,string InBoneName,FVector GrabLocation,bool bConstrainRotation) {}
-	public void GrabComponentAtLocation(UObject Component,string InBoneName,FVector GrabLocation) {}
-	public void GrabComponentAtLocationWithRotation(UObject Component,string InBoneName,FVector Location,FRotator Rotation) {}
-	public void ReleaseComponent() {}
-	public UObject GetGrabbedComponent() { return default; }
-	public void SetTargetLocation(FVector NewLocation) {}
-	public void SetTargetRotation(FRotator NewRotation) {}
-	public void SetTargetLocationAndRotation(FVector NewLocation,FRotator NewRotation) {}
-	public void GetTargetLocationAndRotation(FVector TargetLocation,FRotator TargetRotation) {}
-	public void SetLinearDamping(float NewLinearDamping) {}
-	public void SetLinearStiffness(float NewLinearStiffness) {}
-	public void SetAngularDamping(float NewAngularDamping) {}
-	public void SetAngularStiffness(float NewAngularStiffness) {}
-	public void SetInterpolationSpeed(float NewInterpolationSpeed) {}
+	public  void GrabComponent(UPrimitiveComponent Component,string InBoneName,FVector GrabLocation,bool bConstrainRotation) {}
+	public  void GrabComponentAtLocation(UPrimitiveComponent Component,string InBoneName,FVector GrabLocation) {}
+	public  void GrabComponentAtLocationWithRotation(UPrimitiveComponent Component,string InBoneName,FVector Location,FRotator Rotation) {}
+	public  void ReleaseComponent() {}
+	public  UPrimitiveComponent GetGrabbedComponent() { return default; }
+	public  void SetTargetLocation(FVector NewLocation) {}
+	public  void SetTargetRotation(FRotator NewRotation) {}
+	public  void SetTargetLocationAndRotation(FVector NewLocation,FRotator NewRotation) {}
+	public  void GetTargetLocationAndRotation(FVector TargetLocation,FRotator TargetRotation) {}
+	public  void SetLinearDamping(float NewLinearDamping) {}
+	public  void SetLinearStiffness(float NewLinearStiffness) {}
+	public  void SetAngularDamping(float NewAngularDamping) {}
+	public  void SetAngularStiffness(float NewAngularStiffness) {}
+	public  void SetInterpolationSpeed(float NewInterpolationSpeed) {}
 }

@@ -4,10 +4,10 @@ using CSharpToCpp.Utilities;
 [CppInclude("Builtin/BlueprintOnly/ParentFilter.h")]
 public partial class UParentFilter : ULevelSnapshotFilter {
 // ParentFilter
-	public void AddChild(UObject Filter) {}
-	public bool RemovedChild(UObject Filter) { return default; }
-	public UObject CreateChild(UClass Class) { return default; }
-	public TArray<UObject> GetChildren() { return default; }
+	public  void AddChild(ULevelSnapshotFilter Filter) {}
+	public  bool RemovedChild(ULevelSnapshotFilter Filter) { return default; }
+	public  ULevelSnapshotFilter CreateChild(UClass Class) { return default; }
+	public  TArray<ULevelSnapshotFilter> GetChildren() { return default; }
 	public TArray<ULevelSnapshotFilter> Children;
 	public TArray<ULevelSnapshotFilter> InstancedChildren;
 }

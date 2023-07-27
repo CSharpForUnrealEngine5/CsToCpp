@@ -5,5 +5,5 @@ using CSharpToCpp.Utilities;
 ///<summary>Object passed to comp shot elements to initialize them for export.</summary>
 public partial class UMovieSceneComposureExportInitializer : UObject {
 // MovieSceneComposureExportInitializer
-	public void ExportSceneCaptureBuffers(UObject CompShotElement,UObject SceneCapture,TArray<string> BuffersToExport) {}
+	public  void ExportSceneCaptureBuffers(ACompositingElement CompShotElement,USceneCaptureComponent2D SceneCapture,TArray<string> BuffersToExport) {}
 }

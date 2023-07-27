@@ -5,5 +5,5 @@ using CSharpToCpp.Utilities;
 public partial class UISMEditorToolReplacePropertySet : UISMEditorToolActionPropertySetBase {
 // ISMEditorToolReplacePropertySet
 	public UStaticMesh ReplaceWith;
-	public void Replace() {}
+	public  void Replace() {}
 }

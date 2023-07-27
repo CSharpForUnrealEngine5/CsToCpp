@@ -4,6 +4,6 @@ using CSharpToCpp.Utilities;
 [CppInclude("GameplayCueInterface.h")]
 public partial class UGameplayCueInterface : UInterface {
 // GameplayCueInterface
-	public void BlueprintCustomHandler(EGameplayCueEvent EventType,FGameplayCueParameters Parameters) {}
-	public void ForwardGameplayCueToParent() {}
+	public  void BlueprintCustomHandler(EGameplayCueEvent EventType,FGameplayCueParameters Parameters) {}
+	public  void ForwardGameplayCueToParent() {}
 }

@@ -18,17 +18,17 @@ public partial class UTextRenderComponent : UPrimitiveComponent {
 	public float HorizSpacingAdjust;
 	public float VertSpacingAdjust;
 	public bool bAlwaysRenderAsText;
-	public void K2_SetText(string Value) {}
-	public void SetTextMaterial(UObject Material) {}
-	public void SetFont(UObject Value) {}
-	public void SetHorizontalAlignment(EHorizTextAligment Value) {}
-	public void SetVerticalAlignment(EVerticalTextAligment Value) {}
-	public void SetTextRenderColor(FColor Value) {}
-	public void SetXScale(float Value) {}
-	public void SetYScale(float Value) {}
-	public void SetHorizSpacingAdjust(float Value) {}
-	public void SetVertSpacingAdjust(float Value) {}
-	public void SetWorldSize(float Value) {}
-	public FVector GetTextLocalSize() { return default; }
-	public FVector GetTextWorldSize() { return default; }
+	public  void K2_SetText(string Value) {}
+	public  void SetTextMaterial(UMaterialInterface Material) {}
+	public  void SetFont(UFont Value) {}
+	public  void SetHorizontalAlignment(EHorizTextAligment Value) {}
+	public  void SetVerticalAlignment(EVerticalTextAligment Value) {}
+	public  void SetTextRenderColor(FColor Value) {}
+	public  void SetXScale(float Value) {}
+	public  void SetYScale(float Value) {}
+	public  void SetHorizSpacingAdjust(float Value) {}
+	public  void SetVertSpacingAdjust(float Value) {}
+	public  void SetWorldSize(float Value) {}
+	public  FVector GetTextLocalSize() { return default; }
+	public  FVector GetTextWorldSize() { return default; }
 }

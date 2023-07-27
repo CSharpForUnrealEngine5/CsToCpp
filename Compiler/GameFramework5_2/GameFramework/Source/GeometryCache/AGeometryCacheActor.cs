@@ -6,5 +6,5 @@ using CSharpToCpp.Utilities;
 public partial class AGeometryCacheActor : AActor {
 // GeometryCacheActor
 	public UGeometryCacheComponent GeometryCacheComponent;
-	public UObject GetGeometryCacheComponent() { return default; }
+	public  UGeometryCacheComponent GetGeometryCacheComponent() { return default; }
 }

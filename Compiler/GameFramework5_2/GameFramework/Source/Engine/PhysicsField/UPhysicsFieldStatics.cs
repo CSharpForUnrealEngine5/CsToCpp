@@ -5,7 +5,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Static function with world field evaluation</summary>
 public partial class UPhysicsFieldStatics : UBlueprintFunctionLibrary {
 // PhysicsFieldStatics
-	public FVector EvalPhysicsVectorField(UObject WorldContextObject,FVector WorldPosition,EFieldVectorType VectorType) { return default; }
-	public float EvalPhysicsScalarField(UObject WorldContextObject,FVector WorldPosition,EFieldScalarType ScalarType) { return default; }
-	public int EvalPhysicsIntegerField(UObject WorldContextObject,FVector WorldPosition,EFieldIntegerType IntegerType) { return default; }
+	public static FVector EvalPhysicsVectorField(UObject WorldContextObject,FVector WorldPosition,EFieldVectorType VectorType) { return default; }
+	public static float EvalPhysicsScalarField(UObject WorldContextObject,FVector WorldPosition,EFieldScalarType ScalarType) { return default; }
+	public static int EvalPhysicsIntegerField(UObject WorldContextObject,FVector WorldPosition,EFieldIntegerType IntegerType) { return default; }
 }

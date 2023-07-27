@@ -5,5 +5,5 @@ using CSharpToCpp.Utilities;
 ///<summary>Allows widgets to be laid out in a flow horizontally.</summary>
 public partial class UHorizontalBox : UPanelWidget {
 // HorizontalBox
-	public UObject AddChildToHorizontalBox(UObject Content) { return default; }
+	public  UHorizontalBoxSlot AddChildToHorizontalBox(UWidget Content) { return default; }
 }

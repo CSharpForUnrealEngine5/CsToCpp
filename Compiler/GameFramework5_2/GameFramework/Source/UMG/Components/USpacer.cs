@@ -6,5 +6,5 @@ using CSharpToCpp.Utilities;
 public partial class USpacer : UWidget {
 // Spacer
 	public FVector2D Size;
-	public void SetSize(FVector2D InSize) {}
+	public  void SetSize(FVector2D InSize) {}
 }

@@ -5,6 +5,6 @@ using CSharpToCpp.Utilities;
 public partial class APointLight : ALight {
 // PointLight
 	public UPointLightComponent PointLightComponent;
-	public void SetRadius(float NewRadius) {}
-	public void SetLightFalloffExponent(float NewLightFalloffExponent) {}
+	public  void SetRadius(float NewRadius) {}
+	public  void SetLightFalloffExponent(float NewLightFalloffExponent) {}
 }

@@ -4,4 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("SequencerTools.h")]
 public partial struct FOnRenderMovieStopped {
 // OnRenderMovieStopped__DelegateSignature
+	void AddDynamic(object obj, string functionName) {}
 }

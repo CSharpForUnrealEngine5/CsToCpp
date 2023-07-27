@@ -6,6 +6,6 @@ using CSharpToCpp.Utilities;
 public partial class UStackBox : UPanelWidget {
 // StackBox
 	public byte Orientation;
-	public UObject AddChildToStackBox(UObject Content) { return default; }
-	public bool ReplaceStackBoxChildAt(int Index,UObject Content) { return default; }
+	public  UStackBoxSlot AddChildToStackBox(UWidget Content) { return default; }
+	public  bool ReplaceStackBoxChildAt(int Index,UWidget Content) { return default; }
 }

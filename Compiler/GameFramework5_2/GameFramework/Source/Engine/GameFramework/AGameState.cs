@@ -8,6 +8,6 @@ public partial class AGameState : AGameStateBase {
 	public string MatchState;
 	public string PreviousMatchState;
 	public int ElapsedTime;
-	public void OnRep_MatchState() {}
-	public void OnRep_ElapsedTime() {}
+	public  void OnRep_MatchState() {}
+	public  void OnRep_ElapsedTime() {}
 }

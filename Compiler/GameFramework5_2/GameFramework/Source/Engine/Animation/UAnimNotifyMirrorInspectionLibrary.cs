@@ -5,6 +5,6 @@ using CSharpToCpp.Utilities;
 ///<summary>A library of commonly used functionality for Notifies related to mirroring, exposed to blueprint.</summary>
 public partial class UAnimNotifyMirrorInspectionLibrary : UBlueprintFunctionLibrary {
 // AnimNotifyMirrorInspectionLibrary
-	public bool IsTriggeredByMirroredAnimation(FAnimNotifyEventReference EventReference) { return default; }
-	public UObject GetMirrorDataTable(FAnimNotifyEventReference EventReference) { return default; }
+	public static bool IsTriggeredByMirroredAnimation(FAnimNotifyEventReference EventReference) { return default; }
+	public static UMirrorDataTable GetMirrorDataTable(FAnimNotifyEventReference EventReference) { return default; }
 }

@@ -5,10 +5,10 @@ using CSharpToCpp.Utilities;
 ///<summary>This component acts as the Driver for the FMockRootMotionSimulation</summary>
 public partial class UMockRootMotionComponent : UBaseMovementComponent {
 // MockRootMotionComponent
-	public UObject CreateRootMotionSource(UClass Source) { return default; }
-	public void Input_PlayRootMotionSource(UObject Source) {}
-	public void Input_PlayRootMotionSourceByClass(UClass Source) {}
-	public void PlayRootMotionSource(UObject Source) {}
-	public void PlayRootMotionSourceByClass(UClass Source) {}
+	public  UMockRootMotionSource CreateRootMotionSource(UClass Source) { return default; }
+	public  void Input_PlayRootMotionSource(UMockRootMotionSource Source) {}
+	public  void Input_PlayRootMotionSourceByClass(UClass Source) {}
+	public  void PlayRootMotionSource(UMockRootMotionSource Source) {}
+	public  void PlayRootMotionSourceByClass(UClass Source) {}
 	public FRootMotionSourceCache RootMotionSourceCache;
 }

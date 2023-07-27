@@ -5,10 +5,10 @@ using CSharpToCpp.Utilities;
 ///<summary>Async BP action that represents a pending prediction that is dispatched on a playing sequence.</summary>
 public partial class UMovieSceneAsyncAction_SequencePrediction : UBlueprintAsyncActionBase {
 // MovieSceneAsyncAction_SequencePrediction
-	public UObject PredictWorldTransformAtTime(UObject Player,UObject TargetComponent,float TimeInSeconds) { return default; }
-	public UObject PredictWorldTransformAtFrame(UObject Player,UObject TargetComponent,FFrameTime FrameTime) { return default; }
-	public UObject PredictLocalTransformAtTime(UObject Player,UObject TargetComponent,float TimeInSeconds) { return default; }
-	public UObject PredictLocalTransformAtFrame(UObject Player,UObject TargetComponent,FFrameTime FrameTime) { return default; }
+	public static UMovieSceneAsyncAction_SequencePrediction PredictWorldTransformAtTime(UMovieSceneSequencePlayer Player,USceneComponent TargetComponent,float TimeInSeconds) { return default; }
+	public static UMovieSceneAsyncAction_SequencePrediction PredictWorldTransformAtFrame(UMovieSceneSequencePlayer Player,USceneComponent TargetComponent,FFrameTime FrameTime) { return default; }
+	public static UMovieSceneAsyncAction_SequencePrediction PredictLocalTransformAtTime(UMovieSceneSequencePlayer Player,USceneComponent TargetComponent,float TimeInSeconds) { return default; }
+	public static UMovieSceneAsyncAction_SequencePrediction PredictLocalTransformAtFrame(UMovieSceneSequencePlayer Player,USceneComponent TargetComponent,FFrameTime FrameTime) { return default; }
 	public FMovieSceneActorPredictionResult Result;
 	public FMovieSceneActorPredictionFailure Failure;
 	public UMovieSceneSequencePlayer SequencePlayer;

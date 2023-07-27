@@ -5,18 +5,18 @@ using CSharpToCpp.Utilities;
 ///<summary>SensingComponent encapsulates sensory (ie sight and hearing) settings and functionality for an Actor,</summary>
 public partial class UPawnSensingComponent : UActorComponent {
 // PawnSensingComponent
-	public void FSeePawnDelegate(UObject Pawn) {}
-	public void FHearNoiseDelegate(UObject Instigator,FVector Location,float Volume) {}
+	public  void FSeePawnDelegate(APawn Pawn) {}
+	public  void FHearNoiseDelegate(APawn Instigator,FVector Location,float Volume) {}
 	public float HearingThreshold;
 	public float LOSHearingThreshold;
 	public float SightRadius;
 	public float SensingInterval;
 	public float HearingMaxSoundAge;
-	public void SetSensingInterval(float NewSensingInterval) {}
-	public void SetSensingUpdatesEnabled(bool bEnabled) {}
-	public void SetPeripheralVisionAngle(float NewPeripheralVisionAngle) {}
-	public float GetPeripheralVisionAngle() { return default; }
-	public float GetPeripheralVisionCosine() { return default; }
+	public  void SetSensingInterval(float NewSensingInterval) {}
+	public  void SetSensingUpdatesEnabled(bool bEnabled) {}
+	public  void SetPeripheralVisionAngle(float NewPeripheralVisionAngle) {}
+	public  float GetPeripheralVisionAngle() { return default; }
+	public  float GetPeripheralVisionCosine() { return default; }
 	public bool bEnableSensingUpdates;
 	public bool bOnlySensePlayers;
 	public bool bSeePawns;

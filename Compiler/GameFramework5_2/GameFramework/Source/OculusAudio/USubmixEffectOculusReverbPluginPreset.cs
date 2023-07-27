@@ -4,6 +4,6 @@ using CSharpToCpp.Utilities;
 [CppInclude("OculusAudioReverb.h")]
 public partial class USubmixEffectOculusReverbPluginPreset : USoundEffectSubmixPreset {
 // SubmixEffectOculusReverbPluginPreset
-	public void SetSettings(FSubmixEffectOculusReverbPluginSettings InSettings) {}
+	public  void SetSettings(FSubmixEffectOculusReverbPluginSettings InSettings) {}
 	public FSubmixEffectOculusReverbPluginSettings Settings;
 }

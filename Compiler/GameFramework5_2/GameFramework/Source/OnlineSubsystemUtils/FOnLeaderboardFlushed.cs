@@ -4,4 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("LeaderboardFlushCallbackProxy.h")]
 public partial struct FOnLeaderboardFlushed {
 // OnLeaderboardFlushed__DelegateSignature
+	void AddDynamic(object obj, string functionName) {}
 }

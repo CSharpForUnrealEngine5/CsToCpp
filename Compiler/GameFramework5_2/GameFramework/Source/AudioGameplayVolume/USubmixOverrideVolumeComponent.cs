@@ -5,6 +5,6 @@ using CSharpToCpp.Utilities;
 ///<summary>USubmixOverrideVolumeComponent - Audio Gameplay Volume component for submix effect chain overrides</summary>
 public partial class USubmixOverrideVolumeComponent : UAudioGameplayVolumeMutator {
 // SubmixOverrideVolumeComponent
-	public void SetSubmixOverrideSettings(TArray<FAudioVolumeSubmixOverrideSettings> NewSubmixOverrideSettings) {}
+	public  void SetSubmixOverrideSettings(TArray<FAudioVolumeSubmixOverrideSettings> NewSubmixOverrideSettings) {}
 	public TArray<FAudioVolumeSubmixOverrideSettings> SubmixOverrideSettings;
 }

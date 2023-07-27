@@ -5,5 +5,5 @@ using CSharpToCpp.Utilities;
 ///<summary>Base class for the gerstner water wave generation. This can be overridden by either C++ classes or Blueprint classes.</summary>
 public partial class UGerstnerWaterWaveGeneratorBase : UObject {
 // GerstnerWaterWaveGeneratorBase
-	public void GenerateGerstnerWaves(TArray<FGerstnerWave> OutWaves) {}
+	public  void GenerateGerstnerWaves(TArray<FGerstnerWave> OutWaves) {}
 }

@@ -5,6 +5,6 @@ using CSharpToCpp.Utilities;
 ///<summary>The Library Node represents a function invocation of a</summary>
 public partial class URigVMLibraryNode : URigVMTemplateNode {
 // RigVMLibraryNode
-	public UObject GetLibrary() { return default; }
-	public UObject GetContainedGraph() { return default; }
+	public  URigVMFunctionLibrary GetLibrary() { return default; }
+	public  URigVMGraph GetContainedGraph() { return default; }
 }

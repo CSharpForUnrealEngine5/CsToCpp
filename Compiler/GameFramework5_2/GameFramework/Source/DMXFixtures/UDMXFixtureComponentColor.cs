@@ -9,5 +9,5 @@ public partial class UDMXFixtureComponentColor : UDMXFixtureComponent {
 	public FDMXAttributeName DMXChannel2;
 	public FDMXAttributeName DMXChannel3;
 	public FDMXAttributeName DMXChannel4;
-	public void SetColorNoInterp(FLinearColor NewColor) {}
+	public  void SetColorNoInterp(FLinearColor NewColor) {}
 }

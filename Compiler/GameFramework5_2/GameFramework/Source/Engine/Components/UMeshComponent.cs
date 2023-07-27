@@ -6,17 +6,17 @@ using CSharpToCpp.Utilities;
 public partial class UMeshComponent : UPrimitiveComponent {
 // MeshComponent
 	public TArray<UMaterialInterface> OverrideMaterials;
-	public TArray<UObject> GetMaterials() { return default; }
-	public int GetMaterialIndex(string MaterialSlotName) { return default; }
-	public TArray<string> GetMaterialSlotNames() { return default; }
-	public bool IsMaterialSlotNameValid(string MaterialSlotName) { return default; }
+	public  TArray<UMaterialInterface> GetMaterials() { return default; }
+	public  int GetMaterialIndex(string MaterialSlotName) { return default; }
+	public  TArray<string> GetMaterialSlotNames() { return default; }
+	public  bool IsMaterialSlotNameValid(string MaterialSlotName) { return default; }
 	public UMaterialInterface OverlayMaterial;
 	public float OverlayMaterialMaxDrawDistance;
-	public UObject GetOverlayMaterial() { return default; }
-	public void SetOverlayMaterial(UObject NewOverlayMaterial) {}
-	public void SetOverlayMaterialMaxDrawDistance(float InMaxDrawDistance) {}
-	public void PrestreamTextures(float Seconds,bool bPrioritizeCharacterTextures,int CinematicTextureGroups/*=0*/) {}
-	public void SetScalarParameterValueOnMaterials(string ParameterName,float ParameterValue) {}
-	public void SetVectorParameterValueOnMaterials(string ParameterName,FVector ParameterValue) {}
+	public  UMaterialInterface GetOverlayMaterial() { return default; }
+	public  void SetOverlayMaterial(UMaterialInterface NewOverlayMaterial) {}
+	public  void SetOverlayMaterialMaxDrawDistance(float InMaxDrawDistance) {}
+	public  void PrestreamTextures(float Seconds,bool bPrioritizeCharacterTextures,int CinematicTextureGroups/*=0*/) {}
+	public  void SetScalarParameterValueOnMaterials(string ParameterName,float ParameterValue) {}
+	public  void SetVectorParameterValueOnMaterials(string ParameterName,FVector ParameterValue) {}
 	public bool bEnableMaterialParameterCaching;
 }

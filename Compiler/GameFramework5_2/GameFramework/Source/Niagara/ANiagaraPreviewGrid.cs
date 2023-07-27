@@ -4,10 +4,10 @@ using CSharpToCpp.Utilities;
 [CppInclude("NiagaraPreviewGrid.h")]
 public partial class ANiagaraPreviewGrid : AActor {
 // NiagaraPreviewGrid
-	public void ActivatePreviews(bool bReset) {}
-	public void DeactivatePreviews() {}
-	public void SetPaused(bool bPaused) {}
-	public void GetPreviews(TArray<UObject> OutPreviews) {}
+	public  void ActivatePreviews(bool bReset) {}
+	public  void DeactivatePreviews() {}
+	public  void SetPaused(bool bPaused) {}
+	public  void GetPreviews(TArray<UNiagaraComponent> OutPreviews) {}
 	public UNiagaraSystem System;
 	public ENiagaraPreviewGridResetMode ResetMode;
 	public UNiagaraPreviewAxis PreviewAxisX;

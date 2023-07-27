@@ -4,4 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("Components/TreeView.h")]
 public partial struct FOnGetItemChildrenDynamic {
 // OnGetItemChildrenDynamic__DelegateSignature
+	void AddDynamic(object obj, string functionName) {}
 }

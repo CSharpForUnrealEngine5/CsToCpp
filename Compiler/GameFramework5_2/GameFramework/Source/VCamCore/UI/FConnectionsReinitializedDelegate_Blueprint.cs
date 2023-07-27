@@ -4,4 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("UI/VCamWidget.h")]
 public partial struct FConnectionsReinitializedDelegate_Blueprint {
 // ConnectionsReinitializedDelegate_Blueprint__DelegateSignature
+	void AddDynamic(object obj, string functionName) {}
 }

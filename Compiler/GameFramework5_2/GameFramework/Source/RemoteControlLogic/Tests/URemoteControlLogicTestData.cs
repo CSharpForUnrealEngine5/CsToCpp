@@ -6,5 +6,5 @@ public partial class URemoteControlLogicTestData : UObject {
 // RemoteControlLogicTestData
 	public FColor Color;
 	public int TestInt;
-	public void TestIntFunction() {}
+	public  void TestIntFunction() {}
 }

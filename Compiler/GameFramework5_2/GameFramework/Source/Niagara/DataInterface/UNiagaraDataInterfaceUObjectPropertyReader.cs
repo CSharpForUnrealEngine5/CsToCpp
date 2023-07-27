@@ -9,5 +9,5 @@ public partial class UNiagaraDataInterfaceUObjectPropertyReader : UNiagaraDataIn
 	public TArray<FNiagaraUObjectPropertyReaderRemap> PropertyRemap;
 	public TSoftObjectPtr<AActor> SourceActor;
 	public UClass SourceActorComponentClass;
-	public void SetUObjectReaderPropertyRemap(UObject NiagaraComponent,string UserParameterName,string GraphName,string RemapName) {}
+	public static void SetUObjectReaderPropertyRemap(UNiagaraComponent NiagaraComponent,string UserParameterName,string GraphName,string RemapName) {}
 }

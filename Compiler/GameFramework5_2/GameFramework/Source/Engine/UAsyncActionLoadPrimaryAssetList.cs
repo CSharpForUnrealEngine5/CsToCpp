@@ -4,6 +4,6 @@ using CSharpToCpp.Utilities;
 [CppInclude("AsyncActionLoadPrimaryAsset.h")]
 public partial class UAsyncActionLoadPrimaryAssetList : UAsyncActionLoadPrimaryAssetBase {
 // AsyncActionLoadPrimaryAssetList
-	public UObject AsyncLoadPrimaryAssetList(UObject WorldContextObject,TArray<FPrimaryAssetId> PrimaryAssetList,TArray<string> LoadBundles) { return default; }
+	public static UAsyncActionLoadPrimaryAssetList AsyncLoadPrimaryAssetList(UObject WorldContextObject,TArray<FPrimaryAssetId> PrimaryAssetList,TArray<string> LoadBundles) { return default; }
 	public FOnPrimaryAssetListLoaded Completed;
 }

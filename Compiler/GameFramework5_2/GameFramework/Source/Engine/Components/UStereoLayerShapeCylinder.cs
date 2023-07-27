@@ -7,7 +7,7 @@ public partial class UStereoLayerShapeCylinder : UStereoLayerShape {
 	public float Radius;
 	public float OverlayArc;
 	public int Height;
-	public void SetRadius(float InRadius) {}
-	public void SetOverlayArc(float InOverlayArc) {}
-	public void SetHeight(int InHeight) {}
+	public  void SetRadius(float InRadius) {}
+	public  void SetOverlayArc(float InOverlayArc) {}
+	public  void SetHeight(int InHeight) {}
 }

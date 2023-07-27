@@ -4,9 +4,9 @@ using CSharpToCpp.Utilities;
 [CppInclude("AudioModulationStyle.h")]
 public partial class UAudioModulationStyle : UBlueprintFunctionLibrary {
 // AudioModulationStyle
-	public FColor GetModulationGeneratorColor() { return default; }
-	public FColor GetControlBusColor() { return default; }
-	public FColor GetControlBusMixColor() { return default; }
-	public FColor GetPatchColor() { return default; }
-	public FColor GetParameterColor() { return default; }
+	public static FColor GetModulationGeneratorColor() { return default; }
+	public static FColor GetControlBusColor() { return default; }
+	public static FColor GetControlBusMixColor() { return default; }
+	public static FColor GetPatchColor() { return default; }
+	public static FColor GetParameterColor() { return default; }
 }

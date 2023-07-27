@@ -4,4 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("SteamVRTrackingRefComponent.h")]
 public partial struct FComponentTrackingDeactivatedSignature {
 // ComponentTrackingDeactivatedSignature__DelegateSignature
+	void AddDynamic(object obj, string functionName) {}
 }

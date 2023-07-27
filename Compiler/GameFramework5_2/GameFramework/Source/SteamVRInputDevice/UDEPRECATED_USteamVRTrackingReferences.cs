@@ -6,8 +6,8 @@ public partial class UDEPRECATED_USteamVRTrackingReferences : UActorComponent {
 // USteamVRTrackingReferences
 	public FComponentTrackingActivatedSignature OnTrackedDeviceActivated;
 	public FComponentTrackingDeactivatedSignature OnTrackedDeviceDeactivated;
-	public bool ShowTrackingReferences(UObject TrackingReferenceMesh) { return default; }
-	public void HideTrackingReferences() {}
+	public  bool ShowTrackingReferences(UStaticMesh TrackingReferenceMesh) { return default; }
+	public  void HideTrackingReferences() {}
 	public float ActiveDevicePollFrequency;
 	public FVector TrackingReferenceScale;
 	public TArray<UStaticMeshComponent> TrackingReferences;

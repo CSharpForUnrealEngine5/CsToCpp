@@ -5,4 +5,5 @@ using CSharpToCpp.Utilities;
 ///<summary>Called while a sound plays and returns the sound's envelope value (using an envelope follower in the audio renderer).</summary>
 public partial struct FOnAudioSingleEnvelopeValue {
 // OnAudioSingleEnvelopeValue__DelegateSignature
+	void AddDynamic(object obj, string functionName) {}
 }

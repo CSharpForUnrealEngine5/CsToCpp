@@ -4,4 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("Async/AsyncAction_PerformTargeting.h")]
 public partial struct FPerformTargetingReady {
 // PerformTargetingReady__DelegateSignature
+	void AddDynamic(object obj, string functionName) {}
 }

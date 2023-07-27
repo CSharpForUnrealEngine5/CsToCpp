@@ -5,4 +5,5 @@ using CSharpToCpp.Utilities;
 ///<summary>Multicast delegate that is invoked when a media player's media has finished playing.</summary>
 public partial struct FOnBinkMediaPlayerMediaReachedEnd {
 // OnBinkMediaPlayerMediaReachedEnd__DelegateSignature
+	void AddDynamic(object obj, string functionName) {}
 }

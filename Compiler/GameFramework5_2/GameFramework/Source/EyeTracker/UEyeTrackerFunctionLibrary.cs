@@ -4,9 +4,9 @@ using CSharpToCpp.Utilities;
 [CppInclude("EyeTrackerFunctionLibrary.h")]
 public partial class UEyeTrackerFunctionLibrary : UBlueprintFunctionLibrary {
 // EyeTrackerFunctionLibrary
-	public bool IsEyeTrackerConnected() { return default; }
-	public bool IsStereoGazeDataAvailable() { return default; }
-	public bool GetGazeData(FEyeTrackerGazeData OutGazeData) { return default; }
-	public bool GetStereoGazeData(FEyeTrackerStereoGazeData OutGazeData) { return default; }
-	public void SetEyeTrackedPlayer(UObject PlayerController) {}
+	public static bool IsEyeTrackerConnected() { return default; }
+	public static bool IsStereoGazeDataAvailable() { return default; }
+	public static bool GetGazeData(FEyeTrackerGazeData OutGazeData) { return default; }
+	public static bool GetStereoGazeData(FEyeTrackerStereoGazeData OutGazeData) { return default; }
+	public static void SetEyeTrackedPlayer(APlayerController PlayerController) {}
 }

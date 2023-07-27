@@ -5,6 +5,6 @@ using CSharpToCpp.Utilities;
 ///<summary>The Auto destroy subsystem manages actors who have bAutoDestroyWhenFinished</summary>
 public partial class UAutoDestroySubsystem : UTickableWorldSubsystem {
 // AutoDestroySubsystem
-	public void OnActorEndPlay(UObject Actor,EEndPlayReason EndPlayReason) {}
+	public  void OnActorEndPlay(AActor Actor,EEndPlayReason EndPlayReason) {}
 	public TArray<AActor> ActorsToPoll;
 }

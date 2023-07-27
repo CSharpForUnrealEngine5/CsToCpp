@@ -4,4 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("ARTrackableNotifyComponent.h")]
 public partial struct FTrackablePointDelegate {
 // TrackablePointDelegate__DelegateSignature
+	void AddDynamic(object obj, string functionName) {}
 }

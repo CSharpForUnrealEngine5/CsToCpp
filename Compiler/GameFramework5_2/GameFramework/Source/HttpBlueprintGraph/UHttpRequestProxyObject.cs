@@ -5,6 +5,6 @@ using CSharpToCpp.Utilities;
 public partial class UHttpRequestProxyObject : UObject {
 // HttpRequestProxyObject
 	public FOnRequestComplete OnRequestComplete;
-	public UObject CreateHttpRequestProxyObject(string InUrl,string InVerb,FHttpHeader InHeader,string InBody) { return default; }
+	public static UHttpRequestProxyObject CreateHttpRequestProxyObject(string InUrl,string InVerb,FHttpHeader InHeader,string InBody) { return default; }
 	public FHttpHeader CachedHeader;
 }

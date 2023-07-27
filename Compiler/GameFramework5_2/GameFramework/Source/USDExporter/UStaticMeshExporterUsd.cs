@@ -4,5 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("StaticMeshExporterUSD.h")]
 public partial class UStaticMeshExporterUsd : UExporter {
 // StaticMeshExporterUsd
-	public bool IsUsdAvailable() { return default; }
+	public static bool IsUsdAvailable() { return default; }
 }

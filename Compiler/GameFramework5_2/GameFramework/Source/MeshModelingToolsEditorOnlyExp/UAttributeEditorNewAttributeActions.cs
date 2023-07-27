@@ -7,6 +7,6 @@ public partial class UAttributeEditorNewAttributeActions : UAttributeEditorActio
 	public string NewName;
 	public EAttributeEditorElementType ElementType;
 	public EAttributeEditorAttribType DataType;
-	public void AddWeightMapLayer() {}
-	public void AddPolyGroupLayer() {}
+	public  void AddWeightMapLayer() {}
+	public  void AddPolyGroupLayer() {}
 }

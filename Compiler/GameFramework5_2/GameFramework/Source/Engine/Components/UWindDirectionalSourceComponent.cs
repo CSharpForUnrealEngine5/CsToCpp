@@ -11,10 +11,10 @@ public partial class UWindDirectionalSourceComponent : USceneComponent {
 	public float MaxGustAmount;
 	public float Radius;
 	public bool bPointWind;
-	public void SetStrength(float InNewStrength) {}
-	public void SetSpeed(float InNewSpeed) {}
-	public void SetMinimumGustAmount(float InNewMinGust) {}
-	public void SetMaximumGustAmount(float InNewMaxGust) {}
-	public void SetRadius(float InNewRadius) {}
-	public void SetWindType(EWindSourceType InNewType) {}
+	public  void SetStrength(float InNewStrength) {}
+	public  void SetSpeed(float InNewSpeed) {}
+	public  void SetMinimumGustAmount(float InNewMinGust) {}
+	public  void SetMaximumGustAmount(float InNewMaxGust) {}
+	public  void SetRadius(float InNewRadius) {}
+	public  void SetWindType(EWindSourceType InNewType) {}
 }

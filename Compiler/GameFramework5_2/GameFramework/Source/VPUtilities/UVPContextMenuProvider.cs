@@ -4,5 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("IVPContextMenuProvider.h")]
 public partial class UVPContextMenuProvider : UInterface {
 // VPContextMenuProvider
-	public void OnCreateContextMenu() {}
+	public  void OnCreateContextMenu() {}
 }

@@ -6,7 +6,7 @@ using CSharpToCpp.Utilities;
 public partial class AGameModeBase : AInfo {
 // GameModeBase
 	public string OptionsString;
-	public UClass GetDefaultPawnClassForController(UObject InController) { return default; }
+	public  UClass GetDefaultPawnClassForController(AController InController) { return default; }
 	public UClass GameSessionClass;
 	public UClass GameStateClass;
 	public UClass PlayerControllerClass;
@@ -19,35 +19,35 @@ public partial class AGameModeBase : AInfo {
 	public AGameSession GameSession;
 	public AGameStateBase GameState;
 	public AServerStatReplicator ServerStatReplicator;
-	public int GetNumPlayers() { return default; }
-	public int GetNumSpectators() { return default; }
-	public void StartPlay() {}
-	public bool HasMatchStarted() { return default; }
-	public bool HasMatchEnded() { return default; }
-	public bool ShouldReset(UObject ActorToReset) { return default; }
-	public void ResetLevel() {}
-	public void ReturnToMainMenuHost() {}
-	public void K2_PostLogin(UObject NewPlayer) {}
-	public void K2_OnLogout(UObject ExitingController) {}
-	public void HandleStartingNewPlayer(UObject NewPlayer) {}
-	public bool MustSpectate(UObject NewPlayerController) { return default; }
-	public bool CanSpectate(UObject Viewer,UObject ViewTarget) { return default; }
+	public  int GetNumPlayers() { return default; }
+	public  int GetNumSpectators() { return default; }
+	public  void StartPlay() {}
+	public  bool HasMatchStarted() { return default; }
+	public  bool HasMatchEnded() { return default; }
+	public  bool ShouldReset(AActor ActorToReset) { return default; }
+	public  void ResetLevel() {}
+	public  void ReturnToMainMenuHost() {}
+	public  void K2_PostLogin(APlayerController NewPlayer) {}
+	public  void K2_OnLogout(AController ExitingController) {}
+	public  void HandleStartingNewPlayer(APlayerController NewPlayer) {}
+	public  bool MustSpectate(APlayerController NewPlayerController) { return default; }
+	public  bool CanSpectate(APlayerController Viewer,APlayerState ViewTarget) { return default; }
 	public string DefaultPlayerName;
-	public void ChangeName(UObject Controller,string NewName,bool bNameChange) {}
-	public void K2_OnChangeName(UObject Other,string NewName,bool bNameChange) {}
-	public UObject ChoosePlayerStart(UObject Player) { return default; }
-	public UObject FindPlayerStart(UObject Player,string IncomingName) { return default; }
-	public UObject K2_FindPlayerStart(UObject Player,string IncomingName/*=TEXT("")*/) { return default; }
-	public bool PlayerCanRestart(UObject Player) { return default; }
-	public void RestartPlayer(UObject NewPlayer) {}
-	public void RestartPlayerAtPlayerStart(UObject NewPlayer,UObject StartSpot) {}
-	public void RestartPlayerAtTransform(UObject NewPlayer,FTransform SpawnTransform) {}
-	public UObject SpawnDefaultPawnFor(UObject NewPlayer,UObject StartSpot) { return default; }
-	public UObject SpawnDefaultPawnAtTransform(UObject NewPlayer,FTransform SpawnTransform) { return default; }
-	public void InitStartSpot(UObject StartSpot,UObject NewPlayer) {}
-	public void K2_OnRestartPlayer(UObject NewPlayer) {}
-	public void InitializeHUDForPlayer(UObject NewPlayer) {}
-	public void K2_OnSwapPlayerControllers(UObject OldPC,UObject NewPC) {}
+	public  void ChangeName(AController Controller,string NewName,bool bNameChange) {}
+	public  void K2_OnChangeName(AController Other,string NewName,bool bNameChange) {}
+	public  AActor ChoosePlayerStart(AController Player) { return default; }
+	public  AActor FindPlayerStart(AController Player,string IncomingName) { return default; }
+	public  AActor K2_FindPlayerStart(AController Player,string IncomingName/*=TEXT("")*/) { return default; }
+	public  bool PlayerCanRestart(APlayerController Player) { return default; }
+	public  void RestartPlayer(AController NewPlayer) {}
+	public  void RestartPlayerAtPlayerStart(AController NewPlayer,AActor StartSpot) {}
+	public  void RestartPlayerAtTransform(AController NewPlayer,FTransform SpawnTransform) {}
+	public  APawn SpawnDefaultPawnFor(AController NewPlayer,AActor StartSpot) { return default; }
+	public  APawn SpawnDefaultPawnAtTransform(AController NewPlayer,FTransform SpawnTransform) { return default; }
+	public  void InitStartSpot(AActor StartSpot,AController NewPlayer) {}
+	public  void K2_OnRestartPlayer(AController NewPlayer) {}
+	public  void InitializeHUDForPlayer(APlayerController NewPlayer) {}
+	public  void K2_OnSwapPlayerControllers(APlayerController OldPC,APlayerController NewPC) {}
 	public bool bUseSeamlessTravel;
 	public bool bStartPlayersAsSpectators;
 	public bool bPauseable;

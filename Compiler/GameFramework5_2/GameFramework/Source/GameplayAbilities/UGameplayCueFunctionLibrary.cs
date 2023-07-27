@@ -5,8 +5,8 @@ using CSharpToCpp.Utilities;
 ///<summary>UGameplayCueFunctionLibrary</summary>
 public partial class UGameplayCueFunctionLibrary : UBlueprintFunctionLibrary {
 // GameplayCueFunctionLibrary
-	public FGameplayCueParameters MakeGameplayCueParametersFromHitResult(FHitResult HitResult) { return default; }
-	public void ExecuteGameplayCueOnActor(UObject Target,FGameplayTag GameplayCueTag,FGameplayCueParameters Parameters) {}
-	public void AddGameplayCueOnActor(UObject Target,FGameplayTag GameplayCueTag,FGameplayCueParameters Parameters) {}
-	public void RemoveGameplayCueOnActor(UObject Target,FGameplayTag GameplayCueTag,FGameplayCueParameters Parameters) {}
+	public static FGameplayCueParameters MakeGameplayCueParametersFromHitResult(FHitResult HitResult) { return default; }
+	public static void ExecuteGameplayCueOnActor(AActor Target,FGameplayTag GameplayCueTag,FGameplayCueParameters Parameters) {}
+	public static void AddGameplayCueOnActor(AActor Target,FGameplayTag GameplayCueTag,FGameplayCueParameters Parameters) {}
+	public static void RemoveGameplayCueOnActor(AActor Target,FGameplayTag GameplayCueTag,FGameplayCueParameters Parameters) {}
 }

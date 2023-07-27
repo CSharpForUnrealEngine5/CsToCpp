@@ -4,17 +4,17 @@ using CSharpToCpp.Utilities;
 [CppInclude("ControlRigBlueprintEditorLibrary.h")]
 public partial class UControlRigBlueprintEditorLibrary : UBlueprintFunctionLibrary {
 // ControlRigBlueprintEditorLibrary
-	public void CastToControlRigBlueprint(UObject Object,ECastToControlRigBlueprintCases Branches,UObject AsControlRigBlueprint) {}
-	public void SetPreviewMesh(UObject InRigBlueprint,UObject PreviewMesh,bool bMarkAsDirty/*=true*/) {}
-	public UObject GetPreviewMesh(UObject InRigBlueprint) { return default; }
-	public void RecompileVM(UObject InRigBlueprint) {}
-	public void RecompileVMIfRequired(UObject InRigBlueprint) {}
-	public void RequestAutoVMRecompilation(UObject InRigBlueprint) {}
-	public void RequestControlRigInit(UObject InRigBlueprint) {}
-	public UObject GetModel(UObject InRigBlueprint) { return default; }
-	public UObject GetController(UObject InRigBlueprint) { return default; }
-	public TArray<UObject> GetCurrentlyOpenRigBlueprints() { return default; }
-	public TArray<UObject> GetAvailableRigUnits() { return default; }
-	public UObject GetHierarchy(UObject InRigBlueprint) { return default; }
-	public UObject GetHierarchyController(UObject InRigBlueprint) { return default; }
+	public static void CastToControlRigBlueprint(UObject Object,ECastToControlRigBlueprintCases Branches,UControlRigBlueprint AsControlRigBlueprint) {}
+	public static void SetPreviewMesh(UControlRigBlueprint InRigBlueprint,USkeletalMesh PreviewMesh,bool bMarkAsDirty/*=true*/) {}
+	public static USkeletalMesh GetPreviewMesh(UControlRigBlueprint InRigBlueprint) { return default; }
+	public static void RecompileVM(UControlRigBlueprint InRigBlueprint) {}
+	public static void RecompileVMIfRequired(UControlRigBlueprint InRigBlueprint) {}
+	public static void RequestAutoVMRecompilation(UControlRigBlueprint InRigBlueprint) {}
+	public static void RequestControlRigInit(UControlRigBlueprint InRigBlueprint) {}
+	public static URigVMGraph GetModel(UControlRigBlueprint InRigBlueprint) { return default; }
+	public static URigVMController GetController(UControlRigBlueprint InRigBlueprint) { return default; }
+	public static TArray<UControlRigBlueprint> GetCurrentlyOpenRigBlueprints() { return default; }
+	public static TArray<UStruct> GetAvailableRigUnits() { return default; }
+	public static URigHierarchy GetHierarchy(UControlRigBlueprint InRigBlueprint) { return default; }
+	public static URigHierarchyController GetHierarchyController(UControlRigBlueprint InRigBlueprint) { return default; }
 }

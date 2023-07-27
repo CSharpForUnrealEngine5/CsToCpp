@@ -5,6 +5,6 @@ using CSharpToCpp.Utilities;
 ///<summary>Base class for building modifiers.</summary>
 public partial class UInputModifier : UObject {
 // InputModifier
-	public FInputActionValue ModifyRaw(UObject PlayerInput,FInputActionValue CurrentValue,float DeltaTime) { return default; }
-	public FLinearColor GetVisualizationColor(FInputActionValue SampleValue,FInputActionValue FinalValue) { return default; }
+	public  FInputActionValue ModifyRaw(UEnhancedPlayerInput PlayerInput,FInputActionValue CurrentValue,float DeltaTime) { return default; }
+	public  FLinearColor GetVisualizationColor(FInputActionValue SampleValue,FInputActionValue FinalValue) { return default; }
 }

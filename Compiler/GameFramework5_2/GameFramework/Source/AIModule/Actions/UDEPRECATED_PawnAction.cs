@@ -14,7 +14,7 @@ public partial class UDEPRECATED_PawnAction : UObject {
 	public bool bReplaceActiveSameClassInstance;
 	public bool bShouldPauseMovement;
 	public bool bAlwaysNotifyOnFinished;
-	public byte GetActionPriority() { return default; }
-	public UObject CreateActionInstance(UObject WorldContextObject,UClass ActionClass) { return default; }
-	public void Finish(byte WithResult) {}
+	public  byte GetActionPriority() { return default; }
+	public static UDEPRECATED_PawnAction CreateActionInstance(UObject WorldContextObject,UClass ActionClass) { return default; }
+	public  void Finish(byte WithResult) {}
 }

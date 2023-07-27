@@ -4,4 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("Blueprint/DragDropOperation.h")]
 public partial struct FOnDragDropMulticast {
 // OnDragDropMulticast__DelegateSignature
+	void AddDynamic(object obj, string functionName) {}
 }

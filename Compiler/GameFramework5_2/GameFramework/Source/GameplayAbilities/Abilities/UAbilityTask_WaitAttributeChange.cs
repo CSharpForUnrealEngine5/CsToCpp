@@ -6,7 +6,7 @@ using CSharpToCpp.Utilities;
 public partial class UAbilityTask_WaitAttributeChange : UAbilityTask {
 // AbilityTask_WaitAttributeChange
 	public FWaitAttributeChangeDelegate OnChange;
-	public UObject WaitForAttributeChange(UObject OwningAbility,FGameplayAttribute Attribute,FGameplayTag WithSrcTag,FGameplayTag WithoutSrcTag,bool TriggerOnce/*=true*/,UObject OptionalExternalOwner/*=nullptr*/) { return default; }
-	public UObject WaitForAttributeChangeWithComparison(UObject OwningAbility,FGameplayAttribute InAttribute,FGameplayTag InWithTag,FGameplayTag InWithoutTag,byte InComparisonType,float InComparisonValue,bool TriggerOnce/*=true*/,UObject OptionalExternalOwner/*=nullptr*/) { return default; }
+	public static UAbilityTask_WaitAttributeChange WaitForAttributeChange(UGameplayAbility OwningAbility,FGameplayAttribute Attribute,FGameplayTag WithSrcTag,FGameplayTag WithoutSrcTag,bool TriggerOnce/*=true*/,AActor OptionalExternalOwner/*=nullptr*/) { return default; }
+	public static UAbilityTask_WaitAttributeChange WaitForAttributeChangeWithComparison(UGameplayAbility OwningAbility,FGameplayAttribute InAttribute,FGameplayTag InWithTag,FGameplayTag InWithoutTag,byte InComparisonType,float InComparisonValue,bool TriggerOnce/*=true*/,AActor OptionalExternalOwner/*=nullptr*/) { return default; }
 	public UAbilitySystemComponent ExternalOwner;
 }

@@ -5,6 +5,6 @@ using CSharpToCpp.Utilities;
 ///<summary>A shader node is a named set of inputs and outputs. It can be connected to other shader nodes and finally to a shader graph input.</summary>
 public partial class UInterchangeShaderNode : UInterchangeBaseNode {
 // InterchangeShaderNode
-	public bool GetCustomShaderType(string AttributeValue) { return default; }
-	public bool SetCustomShaderType(string AttributeValue) { return default; }
+	public  bool GetCustomShaderType(string AttributeValue) { return default; }
+	public  bool SetCustomShaderType(string AttributeValue) { return default; }
 }

@@ -4,5 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("Abilities/Async/AbilityAsync_WaitGameplayTag.h")]
 public partial class UAbilityAsync_WaitGameplayTag : UAbilityAsync {
 // AbilityAsync_WaitGameplayTag
-	public void FAsyncWaitGameplayTagDelegate() {}
+	public  void FAsyncWaitGameplayTagDelegate() {}
 }

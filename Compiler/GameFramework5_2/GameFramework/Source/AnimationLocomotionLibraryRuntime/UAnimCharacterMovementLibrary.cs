@@ -5,6 +5,6 @@ using CSharpToCpp.Utilities;
 ///<summary>Library of common techniques for driving character locomotion animations.</summary>
 public partial class UAnimCharacterMovementLibrary : UBlueprintFunctionLibrary {
 // AnimCharacterMovementLibrary
-	public FVector PredictGroundMovementStopLocation(FVector Velocity,bool bUseSeparateBrakingFriction,float BrakingFriction,float GroundFriction,float BrakingFrictionFactor,float BrakingDecelerationWalking) { return default; }
-	public FVector PredictGroundMovementPivotLocation(FVector Acceleration,FVector Velocity,float GroundFriction) { return default; }
+	public static FVector PredictGroundMovementStopLocation(FVector Velocity,bool bUseSeparateBrakingFriction,float BrakingFriction,float GroundFriction,float BrakingFrictionFactor,float BrakingDecelerationWalking) { return default; }
+	public static FVector PredictGroundMovementPivotLocation(FVector Acceleration,FVector Velocity,float GroundFriction) { return default; }
 }

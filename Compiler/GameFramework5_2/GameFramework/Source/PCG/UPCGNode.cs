@@ -4,12 +4,12 @@ using CSharpToCpp.Utilities;
 [CppInclude("PCGNode.h")]
 public partial class UPCGNode : UObject {
 // PCGNode
-	public UObject GetGraph() { return default; }
-	public UObject AddEdgeTo(string FromPinLabel,UObject To,string ToPinLabel) { return default; }
-	public bool RemoveEdgeTo(string FromPinLable,UObject To,string ToPinLabel) { return default; }
-	public UObject GetSettings() { return default; }
-	public void GetNodePosition(int OutPositionX,int OutPositionY) {}
-	public void SetNodePosition(int InPositionX,int InPositionY) {}
+	public  UPCGGraph GetGraph() { return default; }
+	public  UPCGNode AddEdgeTo(string FromPinLabel,UPCGNode To,string ToPinLabel) { return default; }
+	public  bool RemoveEdgeTo(string FromPinLable,UPCGNode To,string ToPinLabel) { return default; }
+	public  UPCGSettings GetSettings() { return default; }
+	public  void GetNodePosition(int OutPositionX,int OutPositionY) {}
+	public  void SetNodePosition(int InPositionX,int InPositionY) {}
 	public UPCGSettings DefaultSettings_DEPRECATED;
 	public string NodeTitle;
 	public FLinearColor NodeTitleColor;

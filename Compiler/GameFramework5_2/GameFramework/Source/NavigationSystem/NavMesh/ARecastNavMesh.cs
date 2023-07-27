@@ -73,5 +73,5 @@ public partial class ARecastNavMesh : ANavigationData {
 	public float TileSetUpdateInterval;
 	public float HeuristicScale;
 	public float VerticalDeviationFromGroundCompensation;
-	public bool K2_ReplaceAreaInTileBounds(FBox Bounds,UClass OldArea,UClass NewArea,bool ReplaceLinks/*=true*/) { return default; }
+	public  bool K2_ReplaceAreaInTileBounds(FBox Bounds,UClass OldArea,UClass NewArea,bool ReplaceLinks/*=true*/) { return default; }
 }

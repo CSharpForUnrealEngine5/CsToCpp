@@ -5,12 +5,12 @@ using CSharpToCpp.Utilities;
 ///<summary>* UDatasmithMeshActorElement</summary>
 public partial class UDatasmithMeshActorElement : UDatasmithActorElement {
 // DatasmithMeshActorElement
-	public void AddMaterialOverride(UObject Material) {}
-	public int GetMaterialOverridesCount() { return default; }
-	public TArray<UObject> GetMaterials() { return default; }
-	public void RemoveMaterialOverride(UObject Material) {}
-	public string GetStaticMeshPathName() { return default; }
-	public void SetStaticMeshPathName(string InStaticMeshName) {}
-	public UObject GetMeshElement() { return default; }
-	public FVector GetBoundingBoxSize() { return default; }
+	public  void AddMaterialOverride(UDatasmithMaterialIDElement Material) {}
+	public  int GetMaterialOverridesCount() { return default; }
+	public  TArray<UDatasmithMaterialIDElement> GetMaterials() { return default; }
+	public  void RemoveMaterialOverride(UDatasmithMaterialIDElement Material) {}
+	public  string GetStaticMeshPathName() { return default; }
+	public  void SetStaticMeshPathName(string InStaticMeshName) {}
+	public  UDatasmithMeshElement GetMeshElement() { return default; }
+	public  FVector GetBoundingBoxSize() { return default; }
 }

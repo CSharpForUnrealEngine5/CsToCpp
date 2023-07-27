@@ -4,4 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("Animation/WidgetAnimationEvents.h")]
 public partial struct FOnWidgetAnimationPlaybackStatusChanged {
 // OnWidgetAnimationPlaybackStatusChanged__DelegateSignature
+	void AddDynamic(object obj, string functionName) {}
 }

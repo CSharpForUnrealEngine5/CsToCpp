@@ -15,12 +15,12 @@ public partial class UMediaTexture : UTexture {
 	public byte OutputFormat;
 	public float CurrentAspectRatio;
 	public byte CurrentOrientation;
-	public float GetAspectRatio() { return default; }
-	public int GetHeight() { return default; }
-	public int GetWidth() { return default; }
-	public int GetTextureNumMips() { return default; }
-	public UObject GetMediaPlayer() { return default; }
-	public void SetMediaPlayer(UObject NewMediaPlayer) {}
-	public void UpdateResource() {}
+	public  float GetAspectRatio() { return default; }
+	public  int GetHeight() { return default; }
+	public  int GetWidth() { return default; }
+	public  int GetTextureNumMips() { return default; }
+	public  UMediaPlayer GetMediaPlayer() { return default; }
+	public  void SetMediaPlayer(UMediaPlayer NewMediaPlayer) {}
+	public  void UpdateResource() {}
 	public UMediaPlayer MediaPlayer;
 }

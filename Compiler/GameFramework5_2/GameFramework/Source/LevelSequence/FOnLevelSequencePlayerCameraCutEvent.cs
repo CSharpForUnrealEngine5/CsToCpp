@@ -4,4 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("LevelSequencePlayer.h")]
 public partial struct FOnLevelSequencePlayerCameraCutEvent {
 // OnLevelSequencePlayerCameraCutEvent__DelegateSignature
+	void AddDynamic(object obj, string functionName) {}
 }

@@ -5,7 +5,7 @@ using CSharpToCpp.Utilities;
 public partial class UEditMeshMaterialsToolProperties : UInteractiveToolPropertySet {
 // EditMeshMaterialsToolProperties
 	public string ActiveMaterial;
-	public TArray<string> GetMaterialNamesFunc() { return default; }
+	public  TArray<string> GetMaterialNamesFunc() { return default; }
 	public TArray<string> MaterialNamesList;
 	public TArray<UMaterialInterface> Materials;
 }

@@ -6,5 +6,5 @@ public partial class UWaterSplineComponent : USplineComponent {
 // WaterSplineComponent
 	public FWaterSplineCurveDefaults WaterSplineDefaults;
 	public FWaterSplineCurveDefaults PreviousWaterSplineDefaults;
-	public void K2_SynchronizeAndBroadcastDataChange() {}
+	public  void K2_SynchronizeAndBroadcastDataChange() {}
 }

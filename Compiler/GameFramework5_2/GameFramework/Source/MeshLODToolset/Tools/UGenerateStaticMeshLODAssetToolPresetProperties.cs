@@ -5,6 +5,6 @@ using CSharpToCpp.Utilities;
 public partial class UGenerateStaticMeshLODAssetToolPresetProperties : UInteractiveToolPropertySet {
 // GenerateStaticMeshLODAssetToolPresetProperties
 	public TWeakObjectPtr<UStaticMeshLODGenerationSettings> Preset;
-	public void ReadFromPreset() {}
-	public void WriteToPreset() {}
+	public  void ReadFromPreset() {}
+	public  void WriteToPreset() {}
 }

@@ -4,4 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("OculusIdentityCallbackProxy.h")]
 public partial struct FOculusIdentitySuccessResult {
 // OculusIdentitySuccessResult__DelegateSignature
+	void AddDynamic(object obj, string functionName) {}
 }

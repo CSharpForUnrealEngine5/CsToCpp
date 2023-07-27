@@ -4,4 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("VCamInputTypes.h")]
 public partial struct FMotionInputEvent {
 // MotionInputEvent__DelegateSignature
+	void AddDynamic(object obj, string functionName) {}
 }

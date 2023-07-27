@@ -4,7 +4,7 @@ using CSharpToCpp.Utilities;
 [CppInclude("VRNotificationsComponent.h")]
 public partial class UVRNotificationsComponent : UActorComponent {
 // VRNotificationsComponent
-	public void FVRNotificationsDelegate() {}
+	public  void FVRNotificationsDelegate() {}
 	public FVRNotificationsDelegate HMDTrackingInitializingAndNeedsHMDToBeTrackedDelegate;
 	public FVRNotificationsDelegate HMDTrackingInitializedDelegate;
 	public FVRNotificationsDelegate HMDRecenteredDelegate;

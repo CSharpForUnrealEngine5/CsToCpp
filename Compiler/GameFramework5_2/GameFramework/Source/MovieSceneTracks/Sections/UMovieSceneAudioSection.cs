@@ -5,10 +5,10 @@ using CSharpToCpp.Utilities;
 ///<summary>Audio section, for use in the audio track, or by attached audio objects</summary>
 public partial class UMovieSceneAudioSection : UMovieSceneSection {
 // MovieSceneAudioSection
-	public void SetSound(UObject InSound) {}
-	public UObject GetSound() { return default; }
-	public void SetStartOffset(FFrameNumber InStartOffset) {}
-	public FFrameNumber GetStartOffset() { return default; }
+	public  void SetSound(USoundBase InSound) {}
+	public  USoundBase GetSound() { return default; }
+	public  void SetStartOffset(FFrameNumber InStartOffset) {}
+	public  FFrameNumber GetStartOffset() { return default; }
 	public USoundBase Sound;
 	public FFrameNumber StartFrameOffset;
 	public float StartOffset_DEPRECATED;

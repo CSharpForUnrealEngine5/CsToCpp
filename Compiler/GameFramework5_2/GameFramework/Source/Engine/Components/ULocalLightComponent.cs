@@ -10,7 +10,7 @@ public partial class ULocalLightComponent : ULightComponent {
 	public float Radius_DEPRECATED;
 	public float AttenuationRadius;
 	public FLightmassPointLightSettings LightmassSettings;
-	public void SetAttenuationRadius(float NewRadius) {}
-	public void SetIntensityUnits(ELightUnits NewIntensityUnits) {}
-	public float GetUnitsConversionFactor(ELightUnits SrcUnits,ELightUnits TargetUnits,float CosHalfConeAngle/*=-1f*/) { return default; }
+	public  void SetAttenuationRadius(float NewRadius) {}
+	public  void SetIntensityUnits(ELightUnits NewIntensityUnits) {}
+	public static float GetUnitsConversionFactor(ELightUnits SrcUnits,ELightUnits TargetUnits,float CosHalfConeAngle/*=-1f*/) { return default; }
 }

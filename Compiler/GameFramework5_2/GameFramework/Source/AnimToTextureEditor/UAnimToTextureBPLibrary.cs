@@ -5,8 +5,8 @@ using CSharpToCpp.Utilities;
 ///<summary>* TODO:</summary>
 public partial class UAnimToTextureBPLibrary : UBlueprintFunctionLibrary {
 // AnimToTextureBPLibrary
-	public void AnimationToTexture(UObject DataAsset,FTransform RootTransform,bool bSuccess) {}
-	public UObject ConvertSkeletalMeshToStaticMesh(UObject SkeletalMesh,string PackageName,int LODIndex/*=-1*/) { return default; }
-	public bool SetLightMapIndex(UObject StaticMesh,int LODIndex,int LightmapIndex/*=1*/,bool bGenerateLightmapUVs/*=true*/) { return default; }
-	public void UpdateMaterialInstanceFromDataAsset(UObject DataAsset,UObject MaterialInstance,bool bAnimate/*=false*/,EAnimToTextureNumBoneInfluences NumBoneInfluences/*=EAnimToTextureNumBoneInfluences.One*/,EMaterialParameterAssociation MaterialParameterAssociation/*=EMaterialParameterAssociation.LayerParameter*/) {}
+	public static void AnimationToTexture(UAnimToTextureDataAsset DataAsset,FTransform RootTransform,bool bSuccess) {}
+	public static UStaticMesh ConvertSkeletalMeshToStaticMesh(USkeletalMesh SkeletalMesh,string PackageName,int LODIndex/*=-1*/) { return default; }
+	public static bool SetLightMapIndex(UStaticMesh StaticMesh,int LODIndex,int LightmapIndex/*=1*/,bool bGenerateLightmapUVs/*=true*/) { return default; }
+	public static void UpdateMaterialInstanceFromDataAsset(UAnimToTextureDataAsset DataAsset,UMaterialInstanceConstant MaterialInstance,bool bAnimate/*=false*/,EAnimToTextureNumBoneInfluences NumBoneInfluences/*=EAnimToTextureNumBoneInfluences.One*/,EMaterialParameterAssociation MaterialParameterAssociation/*=EMaterialParameterAssociation.LayerParameter*/) {}
 }

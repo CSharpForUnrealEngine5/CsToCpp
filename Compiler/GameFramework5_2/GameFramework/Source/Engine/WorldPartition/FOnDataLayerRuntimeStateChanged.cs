@@ -4,4 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("WorldPartition/DataLayer/DataLayerSubsystem.h")]
 public partial struct FOnDataLayerRuntimeStateChanged {
 // OnDataLayerRuntimeStateChanged__DelegateSignature
+	void AddDynamic(object obj, string functionName) {}
 }

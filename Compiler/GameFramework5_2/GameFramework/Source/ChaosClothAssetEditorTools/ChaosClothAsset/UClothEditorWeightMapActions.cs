@@ -5,6 +5,6 @@ using CSharpToCpp.Utilities;
 public partial class UClothEditorWeightMapActions : UClothEditorWeightMapPaintToolActionPropertySet {
 // ClothEditorWeightMapActions
 	public string NewWeightMapName;
-	public void AddNewWeightMap() {}
-	public void DeleteSelectedWeightMap() {}
+	public  void AddNewWeightMap() {}
+	public  void DeleteSelectedWeightMap() {}
 }

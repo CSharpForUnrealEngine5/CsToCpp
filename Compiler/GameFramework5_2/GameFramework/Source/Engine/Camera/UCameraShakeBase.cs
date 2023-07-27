@@ -7,8 +7,8 @@ public partial class UCameraShakeBase : UObject {
 // CameraShakeBase
 	public bool bSingleInstance;
 	public float ShakeScale;
-	public UObject GetRootShakePattern() { return default; }
-	public void SetRootShakePattern(UObject InPattern) {}
+	public  UCameraShakePattern GetRootShakePattern() { return default; }
+	public  void SetRootShakePattern(UCameraShakePattern InPattern) {}
 	public UCameraShakePattern RootShakePattern;
 	public APlayerCameraManager CameraManager;
 }

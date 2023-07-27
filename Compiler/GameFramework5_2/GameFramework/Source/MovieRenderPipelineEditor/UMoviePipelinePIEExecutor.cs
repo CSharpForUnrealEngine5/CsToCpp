@@ -5,9 +5,9 @@ using CSharpToCpp.Utilities;
 ///<summary>This is the implementation responsible for executing the rendering of</summary>
 public partial class UMoviePipelinePIEExecutor : UMoviePipelineLinearExecutorBase {
 // MoviePipelinePIEExecutor
-	public void SetInitializationTime(FDateTime InInitializationTime) {}
-	public void SetIsRenderingOffscreen(bool bInRenderOffscreen) {}
-	public bool IsRenderingOffscreen() { return default; }
+	public  void SetInitializationTime(FDateTime InInitializationTime) {}
+	public  void SetIsRenderingOffscreen(bool bInRenderOffscreen) {}
+	public  bool IsRenderingOffscreen() { return default; }
 	public FOnMoviePipelineIndividualJobFinished OnIndividualJobFinishedDelegate;
 	public FMoviePipelineWorkFinished OnIndividualJobWorkFinishedDelegate;
 	public FMoviePipelineWorkFinished OnIndividualShotWorkFinishedDelegate;

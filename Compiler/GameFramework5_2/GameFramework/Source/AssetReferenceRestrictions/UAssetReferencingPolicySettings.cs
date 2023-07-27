@@ -9,8 +9,8 @@ public partial class UAssetReferencingPolicySettings : UDeveloperSettings {
 	public FARPDomainSettingsForPlugins ProjectPlugins;
 	public FARPDefaultProjectDomainRules DefaultProjectContentRule;
 	public TArray<FARPDomainDefinitionByContentRoot> AdditionalDomains;
-	public TArray<string> GetListOfDomains_All() { return default; }
-	public TArray<string> GetListOfDomains_NoEngine() { return default; }
-	public TArray<string> GetListOfDomains_NoEngineOrGame() { return default; }
-	public TArray<string> GetListOfDomains_NoPluginsOrEngine() { return default; }
+	public  TArray<string> GetListOfDomains_All() { return default; }
+	public  TArray<string> GetListOfDomains_NoEngine() { return default; }
+	public  TArray<string> GetListOfDomains_NoEngineOrGame() { return default; }
+	public  TArray<string> GetListOfDomains_NoPluginsOrEngine() { return default; }
 }

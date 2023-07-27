@@ -4,4 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("Blueprint/UserWidget.h")]
 public partial struct FOnConstructEvent {
 // OnConstructEvent__DelegateSignature
+	void AddDynamic(object obj, string functionName) {}
 }

@@ -6,13 +6,13 @@ using CSharpToCpp.Utilities;
 public partial class UCommonWidgetCarousel : UPanelWidget {
 // CommonWidgetCarousel
 	public int ActiveWidgetIndex;
-	public int GetActiveWidgetIndex() { return default; }
-	public void SetActiveWidgetIndex(int Index) {}
-	public void SetActiveWidget(UObject Widget) {}
-	public UObject GetWidgetAtIndex(int Index) { return default; }
-	public void BeginAutoScrolling(float ScrollInterval/*=10f*/) {}
-	public void EndAutoScrolling() {}
-	public void NextPage() {}
-	public void PreviousPage() {}
+	public  int GetActiveWidgetIndex() { return default; }
+	public  void SetActiveWidgetIndex(int Index) {}
+	public  void SetActiveWidget(UWidget Widget) {}
+	public  UWidget GetWidgetAtIndex(int Index) { return default; }
+	public  void BeginAutoScrolling(float ScrollInterval/*=10f*/) {}
+	public  void EndAutoScrolling() {}
+	public  void NextPage() {}
+	public  void PreviousPage() {}
 	public FOnCurrentPageIndexChanged OnCurrentPageIndexChanged;
 }

@@ -17,5 +17,5 @@ public partial class UNiagaraDataInterfaceStaticMesh : UNiagaraDataInterface {
 	public int LODIndex;
 	public FNiagaraUserParameterBinding LODIndexUserParameter;
 	public TArray<string> FilteredSockets;
-	public void OnSourceEndPlay(UObject InSource,EEndPlayReason Reason) {}
+	public  void OnSourceEndPlay(AActor InSource,EEndPlayReason Reason) {}
 }

@@ -7,5 +7,5 @@ public partial class UOculusIdentityCallbackProxy : UOnlineBlueprintCallProxyBas
 // OculusIdentityCallbackProxy
 	public FOculusIdentitySuccessResult OnSuccess;
 	public FOculusIdentityFailureResult OnFailure;
-	public UObject GetOculusIdentity(int LocalUserNum) { return default; }
+	public static UOculusIdentityCallbackProxy GetOculusIdentity(int LocalUserNum) { return default; }
 }

@@ -5,7 +5,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Sphere scalar field that will be defined only within a sphere</summary>
 public partial class URadialFalloff : UFieldNodeFloat {
 // RadialFalloff
-	public UObject SetRadialFalloff(float Magnitude,float MinRange,float MaxRange,float Default,float Radius,FVector Position,EFieldFalloffType Falloff) { return default; }
+	public  URadialFalloff SetRadialFalloff(float Magnitude,float MinRange,float MaxRange,float Default,float Radius,FVector Position,EFieldFalloffType Falloff) { return default; }
 	public float Magnitude;
 	public float MinRange;
 	public float MaxRange;

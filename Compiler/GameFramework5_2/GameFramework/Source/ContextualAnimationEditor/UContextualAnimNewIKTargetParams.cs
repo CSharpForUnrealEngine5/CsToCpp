@@ -12,7 +12,7 @@ public partial class UContextualAnimNewIKTargetParams : UObject {
 	public FBoneReference TargetBone;
 	public string GoalName;
 	public int SectionIdx;
-	public TArray<string> GetTargetRoleOptions() { return default; }
+	public  TArray<string> GetTargetRoleOptions() { return default; }
 	public TWeakObjectPtr<UContextualAnimSceneAsset> SceneAssetPtr;
 	public TArray<string> CachedRoles;
 }

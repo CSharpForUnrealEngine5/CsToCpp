@@ -4,8 +4,8 @@ using CSharpToCpp.Utilities;
 [CppInclude("Tests/RemoteControlDeltaAPITestData.h")]
 public partial class URemoteControlDeltaAPITestObject : UObject {
 // RemoteControlDeltaAPITestObject
-	public int GetInt32WithSetterValue() { return default; }
-	public void SetInt32WithSetterValue(int NewValue) {}
+	public  int GetInt32WithSetterValue() { return default; }
+	public  void SetInt32WithSetterValue(int NewValue) {}
 	public int Int32Value;
 	public float FloatValue;
 	public FVector VectorValue;

@@ -4,5 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("MeshSpaceDeformerTool.h")]
 public partial class UMeshSpaceDeformerToolActionPropertySet : UInteractiveToolPropertySet {
 // MeshSpaceDeformerToolActionPropertySet
-	public void ShiftToCenter() {}
+	public  void ShiftToCenter() {}
 }

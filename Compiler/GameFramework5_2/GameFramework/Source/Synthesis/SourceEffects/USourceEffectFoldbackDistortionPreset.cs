@@ -4,6 +4,6 @@ using CSharpToCpp.Utilities;
 [CppInclude("SourceEffects/SourceEffectFoldbackDistortion.h")]
 public partial class USourceEffectFoldbackDistortionPreset : USoundEffectSourcePreset {
 // SourceEffectFoldbackDistortionPreset
-	public void SetSettings(FSourceEffectFoldbackDistortionSettings InSettings) {}
+	public  void SetSettings(FSourceEffectFoldbackDistortionSettings InSettings) {}
 	public FSourceEffectFoldbackDistortionSettings Settings;
 }

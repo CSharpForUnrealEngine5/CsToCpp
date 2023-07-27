@@ -4,5 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("MovieScene/IMovieSceneComposureExportClient.h")]
 public partial class UMovieSceneComposureExportClient : UInterface {
 // MovieSceneComposureExportClient
-	public void InitializeForExport(UObject ExportInitializer) {}
+	public  void InitializeForExport(UMovieSceneComposureExportInitializer ExportInitializer) {}
 }

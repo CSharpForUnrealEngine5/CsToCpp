@@ -5,9 +5,9 @@ using CSharpToCpp.Utilities;
 ///<summary>The Slot for the UWindowTitleBarArea</summary>
 public partial class UWindowTitleBarAreaSlot : UPanelSlot {
 // WindowTitleBarAreaSlot
-	public void SetPadding(FMargin InPadding) {}
-	public void SetHorizontalAlignment(EHorizontalAlignment InHorizontalAlignment) {}
-	public void SetVerticalAlignment(EVerticalAlignment InVerticalAlignment) {}
+	public  void SetPadding(FMargin InPadding) {}
+	public  void SetHorizontalAlignment(EHorizontalAlignment InHorizontalAlignment) {}
+	public  void SetVerticalAlignment(EVerticalAlignment InVerticalAlignment) {}
 	public FMargin Padding;
 	public byte HorizontalAlignment;
 	public byte VerticalAlignment;

@@ -5,9 +5,9 @@ using CSharpToCpp.Utilities;
 ///<summary>Object to bind to a APlayerCameraManager with a UTextureRenderTarget2D to be used as a player's render target.</summary>
 public partial class UComposurePlayerCompositingTarget : UObject {
 // ComposurePlayerCompositingTarget
-	public UObject GetPlayerCameraManager() { return default; }
-	public UObject SetPlayerCameraManager(UObject PlayerCameraManager) { return default; }
-	public void SetRenderTarget(UObject RenderTarget) {}
+	public  APlayerCameraManager GetPlayerCameraManager() { return default; }
+	public  APlayerCameraManager SetPlayerCameraManager(APlayerCameraManager PlayerCameraManager) { return default; }
+	public  void SetRenderTarget(UTextureRenderTarget2D RenderTarget) {}
 	public APlayerCameraManager PlayerCameraManager;
 	public UComposurePlayerCompositingCameraModifier PlayerCameraModifier;
 	public UMaterialInstanceDynamic ReplaceTonemapperMID;

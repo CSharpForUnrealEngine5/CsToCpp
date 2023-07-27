@@ -5,5 +5,5 @@ using CSharpToCpp.Utilities;
 ///<summary>UScriptableInteractiveToolPropertySet is a Blueprintable extension of UInteractiveToolPropertySet.</summary>
 public partial class UScriptableInteractiveToolPropertySet : UInteractiveToolPropertySet {
 // ScriptableInteractiveToolPropertySet
-	public UObject GetOwningTool(EToolsFrameworkOutcomePins Outcome) { return default; }
+	public  UScriptableInteractiveTool GetOwningTool(EToolsFrameworkOutcomePins Outcome) { return default; }
 }

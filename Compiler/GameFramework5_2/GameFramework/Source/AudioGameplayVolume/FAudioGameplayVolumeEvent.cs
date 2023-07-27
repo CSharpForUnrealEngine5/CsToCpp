@@ -4,4 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("AudioGameplayVolume.h")]
 public partial struct FAudioGameplayVolumeEvent {
 // AudioGameplayVolumeEvent__DelegateSignature
+	void AddDynamic(object obj, string functionName) {}
 }

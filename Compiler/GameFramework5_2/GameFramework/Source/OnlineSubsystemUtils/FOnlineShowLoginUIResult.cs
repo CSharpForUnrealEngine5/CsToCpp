@@ -4,4 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("ShowLoginUICallbackProxy.h")]
 public partial struct FOnlineShowLoginUIResult {
 // OnlineShowLoginUIResult__DelegateSignature
+	void AddDynamic(object obj, string functionName) {}
 }

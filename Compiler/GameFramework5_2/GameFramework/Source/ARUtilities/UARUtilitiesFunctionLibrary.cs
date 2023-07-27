@@ -4,7 +4,7 @@ using CSharpToCpp.Utilities;
 [CppInclude("ARUtilitiesFunctionLibrary.h")]
 public partial class UARUtilitiesFunctionLibrary : UBlueprintFunctionLibrary {
 // ARUtilitiesFunctionLibrary
-	public void UpdateCameraTextureParam(UObject MaterialInstance,UObject CameraTexture,float ColorScale/*=1.0f*/) {}
-	public void UpdateSceneDepthTexture(UObject MaterialInstance,UObject SceneDepthTexture,float DepthToMeterScale/*=1.0f*/) {}
-	public void UpdateWorldToMeterScale(UObject MaterialInstance,float WorldToMeterScale/*=100.0f*/) {}
+	public static void UpdateCameraTextureParam(UMaterialInstanceDynamic MaterialInstance,UTexture CameraTexture,float ColorScale/*=1.0f*/) {}
+	public static void UpdateSceneDepthTexture(UMaterialInstanceDynamic MaterialInstance,UTexture SceneDepthTexture,float DepthToMeterScale/*=1.0f*/) {}
+	public static void UpdateWorldToMeterScale(UMaterialInstanceDynamic MaterialInstance,float WorldToMeterScale/*=100.0f*/) {}
 }

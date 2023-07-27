@@ -4,4 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("Kismet/BlueprintPlatformLibrary.h")]
 public partial struct FPlatformDelegate {
 // PlatformDelegate__DelegateSignature
+	void AddDynamic(object obj, string functionName) {}
 }

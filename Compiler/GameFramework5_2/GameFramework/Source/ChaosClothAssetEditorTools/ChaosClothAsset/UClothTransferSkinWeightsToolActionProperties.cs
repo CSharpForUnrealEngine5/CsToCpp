@@ -4,5 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("ChaosClothAsset/ClothTransferSkinWeightsTool.h")]
 public partial class UClothTransferSkinWeightsToolActionProperties : UObject {
 // ClothTransferSkinWeightsToolActionProperties
-	public void TransferWeights() {}
+	public  void TransferWeights() {}
 }

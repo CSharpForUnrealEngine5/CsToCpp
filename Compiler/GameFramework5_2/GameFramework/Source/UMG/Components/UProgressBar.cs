@@ -14,7 +14,7 @@ public partial class UProgressBar : UWidget {
 	public FGetFloat PercentDelegate;
 	public FLinearColor FillColorAndOpacity;
 	public FGetLinearColor FillColorAndOpacityDelegate;
-	public void SetPercent(float InPercent) {}
-	public void SetIsMarquee(bool InbIsMarquee) {}
-	public void SetFillColorAndOpacity(FLinearColor InColor) {}
+	public  void SetPercent(float InPercent) {}
+	public  void SetIsMarquee(bool InbIsMarquee) {}
+	public  void SetFillColorAndOpacity(FLinearColor InColor) {}
 }

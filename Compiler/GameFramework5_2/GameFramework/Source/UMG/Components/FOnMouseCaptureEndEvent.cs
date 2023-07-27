@@ -4,4 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("Components/Slider.h")]
 public partial struct FOnMouseCaptureEndEvent {
 // OnMouseCaptureEndEvent__DelegateSignature
+	void AddDynamic(object obj, string functionName) {}
 }

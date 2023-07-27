@@ -4,4 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("CommonNumericTextBlock.h")]
 public partial struct FOnInterpolationStarted {
 // OnInterpolationStarted__DelegateSignature
+	void AddDynamic(object obj, string functionName) {}
 }

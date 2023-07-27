@@ -4,5 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("EditMeshPolygonsTool.h")]
 public partial class UEditMeshPolygonsToolUVActions : UEditMeshPolygonsToolActionPropertySet {
 // EditMeshPolygonsToolUVActions
-	public void PlanarProjection() {}
+	public  void PlanarProjection() {}
 }

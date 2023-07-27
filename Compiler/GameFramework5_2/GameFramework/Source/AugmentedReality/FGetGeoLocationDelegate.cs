@@ -4,4 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("ARGeoTrackingSupport.h")]
 public partial struct FGetGeoLocationDelegate {
 // GetGeoLocationDelegate__DelegateSignature
+	void AddDynamic(object obj, string functionName) {}
 }

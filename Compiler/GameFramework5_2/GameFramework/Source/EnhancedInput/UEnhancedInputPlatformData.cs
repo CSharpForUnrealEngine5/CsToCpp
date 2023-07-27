@@ -5,6 +5,6 @@ using CSharpToCpp.Utilities;
 ///<summary>A base class that can be used to store platform specific data for Enhanced Input.</summary>
 public partial class UEnhancedInputPlatformData : UObject {
 // EnhancedInputPlatformData
-	public UObject GetContextRedirect(UObject InContext) { return default; }
+	public  UInputMappingContext GetContextRedirect(UInputMappingContext InContext) { return default; }
 	public TMap<UInputMappingContext,UInputMappingContext> MappingContextRedirects;
 }

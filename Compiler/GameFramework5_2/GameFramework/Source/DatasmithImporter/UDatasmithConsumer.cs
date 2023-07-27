@@ -6,7 +6,7 @@ public partial class UDatasmithConsumer : UDataprepContentConsumer {
 // DatasmithConsumer
 	public TSoftObjectPtr<UDatasmithScene> DatasmithScene_DEPRECATED;
 	public string UniqueID;
-	public UObject GetDatasmithScene() { return default; }
+	public  UDatasmithScene GetDatasmithScene() { return default; }
 	public string DatasmithSceneObjectPath;
 	public string OutputLevelObjectPath;
 	public FSoftObjectPath OutputLevelSoftObject_DEPRECATED;

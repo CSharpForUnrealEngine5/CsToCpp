@@ -13,8 +13,8 @@ public partial class USoundWave : USoundBase {
 	public ESoundAssetCompressionType SoundAssetCompressionType;
 	public bool bSeekableStreaming;
 	public bool bUseBinkAudio;
-	public ESoundAssetCompressionType GetSoundAssetCompressionType() { return default; }
-	public void SetSoundAssetCompressionType(ESoundAssetCompressionType InSoundAssetCompressionType,bool bMarkDirty/*=true*/) {}
+	public  ESoundAssetCompressionType GetSoundAssetCompressionType() { return default; }
+	public  void SetSoundAssetCompressionType(ESoundAssetCompressionType InSoundAssetCompressionType,bool bMarkDirty/*=true*/) {}
 	public USoundWave OverrideSoundToUseForAnalysis;
 	public bool TreatFileAsLoopingForAnalysis;
 	public bool bEnableBakedFFTAnalysis;

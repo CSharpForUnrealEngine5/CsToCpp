@@ -4,4 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("Components/ApplicationLifecycleComponent.h")]
 public partial struct FOnTemperatureChangeDelegate {
 // OnTemperatureChangeDelegate__DelegateSignature
+	void AddDynamic(object obj, string functionName) {}
 }

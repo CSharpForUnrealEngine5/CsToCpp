@@ -6,6 +6,6 @@ using CSharpToCpp.Utilities;
 public partial class UDEPRECATED_K2Node_CastPatchToType : UK2Node_EditablePinBase {
 // K2Node_CastPatchToType
 	public bool bIsExposed;
-	public void ExposeAttributes() {}
-	public void ResetAttributes() {}
+	public  void ExposeAttributes() {}
+	public  void ResetAttributes() {}
 }

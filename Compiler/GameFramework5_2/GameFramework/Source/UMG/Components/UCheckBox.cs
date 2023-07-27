@@ -14,12 +14,12 @@ public partial class UCheckBox : UContentWidget {
 	public byte PressMethod;
 	public bool IsFocusable;
 	public FOnCheckBoxComponentStateChanged OnCheckStateChanged;
-	public bool IsPressed() { return default; }
-	public bool IsChecked() { return default; }
-	public ECheckBoxState GetCheckedState() { return default; }
-	public void SetIsChecked(bool InIsChecked) {}
-	public void SetCheckedState(ECheckBoxState InCheckedState) {}
-	public void SetClickMethod(EButtonClickMethod InClickMethod) {}
-	public void SetTouchMethod(EButtonTouchMethod InTouchMethod) {}
-	public void SetPressMethod(EButtonPressMethod InPressMethod) {}
+	public  bool IsPressed() { return default; }
+	public  bool IsChecked() { return default; }
+	public  ECheckBoxState GetCheckedState() { return default; }
+	public  void SetIsChecked(bool InIsChecked) {}
+	public  void SetCheckedState(ECheckBoxState InCheckedState) {}
+	public  void SetClickMethod(EButtonClickMethod InClickMethod) {}
+	public  void SetTouchMethod(EButtonTouchMethod InTouchMethod) {}
+	public  void SetPressMethod(EButtonPressMethod InPressMethod) {}
 }

@@ -4,4 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("Components/InputKeySelector.h")]
 public partial struct FOnIsSelectingKeyChanged {
 // OnIsSelectingKeyChanged__DelegateSignature
+	void AddDynamic(object obj, string functionName) {}
 }

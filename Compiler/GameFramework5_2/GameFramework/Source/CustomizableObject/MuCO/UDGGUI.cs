@@ -4,6 +4,6 @@ using CSharpToCpp.Utilities;
 [CppInclude("MuCO/CustomizableObjectDGGUI.h")]
 public partial class UDGGUI : UUserWidget {
 // DGGUI
-	public UObject GetCustomizableSkeletalComponent() { return default; }
-	public void SetCustomizableSkeletalComponent(UObject CustomizableSkeletalComponent) {}
+	public  UCustomizableSkeletalComponent GetCustomizableSkeletalComponent() { return default; }
+	public  void SetCustomizableSkeletalComponent(UCustomizableSkeletalComponent CustomizableSkeletalComponent) {}
 }

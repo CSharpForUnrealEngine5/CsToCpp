@@ -6,5 +6,5 @@ public partial class ASkyLight : AInfo {
 // SkyLight
 	public USkyLightComponent LightComponent;
 	public bool bEnabled;
-	public void OnRep_bEnabled() {}
+	public  void OnRep_bEnabled() {}
 }

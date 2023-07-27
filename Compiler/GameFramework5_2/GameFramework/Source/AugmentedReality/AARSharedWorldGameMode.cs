@@ -5,8 +5,8 @@ using CSharpToCpp.Utilities;
 public partial class AARSharedWorldGameMode : AGameMode {
 // ARSharedWorldGameMode
 	public int BufferSizePerChunk;
-	public void SetPreviewImageData(TArray<byte> ImageData) {}
-	public void SetARSharedWorldData(TArray<byte> ARWorldData) {}
-	public void SetARWorldSharingIsReady() {}
-	public UObject GetARSharedWorldGameState() { return default; }
+	public  void SetPreviewImageData(TArray<byte> ImageData) {}
+	public  void SetARSharedWorldData(TArray<byte> ARWorldData) {}
+	public  void SetARWorldSharingIsReady() {}
+	public  AARSharedWorldGameState GetARSharedWorldGameState() { return default; }
 }

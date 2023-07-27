@@ -4,4 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("GameFramework/GameUserSettings.h")]
 public partial struct FOnGameUserSettingsUINeedsUpdate {
 // OnGameUserSettingsUINeedsUpdate__DelegateSignature
+	void AddDynamic(object obj, string functionName) {}
 }

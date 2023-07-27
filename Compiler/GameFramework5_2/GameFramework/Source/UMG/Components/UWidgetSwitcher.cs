@@ -6,10 +6,10 @@ using CSharpToCpp.Utilities;
 public partial class UWidgetSwitcher : UPanelWidget {
 // WidgetSwitcher
 	public int ActiveWidgetIndex;
-	public int GetNumWidgets() { return default; }
-	public int GetActiveWidgetIndex() { return default; }
-	public void SetActiveWidgetIndex(int Index) {}
-	public void SetActiveWidget(UObject Widget) {}
-	public UObject GetWidgetAtIndex(int Index) { return default; }
-	public UObject GetActiveWidget() { return default; }
+	public  int GetNumWidgets() { return default; }
+	public  int GetActiveWidgetIndex() { return default; }
+	public  void SetActiveWidgetIndex(int Index) {}
+	public  void SetActiveWidget(UWidget Widget) {}
+	public  UWidget GetWidgetAtIndex(int Index) { return default; }
+	public  UWidget GetActiveWidget() { return default; }
 }

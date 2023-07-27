@@ -4,4 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("Tasks/GameplayTask_TimeLimitedExecution.h")]
 public partial struct FTaskFinishDelegate {
 // TaskFinishDelegate__DelegateSignature
+	void AddDynamic(object obj, string functionName) {}
 }

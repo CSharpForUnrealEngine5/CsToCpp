@@ -8,5 +8,5 @@ public partial class UMaterialExpressionMaterialFunctionCall : UMaterialExpressi
 	public TArray<FFunctionExpressionInput> FunctionInputs;
 	public TArray<FFunctionExpressionOutput> FunctionOutputs;
 	public FMaterialParameterInfo FunctionParameterInfo;
-	public bool SetMaterialFunction(UObject NewMaterialFunction) { return default; }
+	public  bool SetMaterialFunction(UMaterialFunctionInterface NewMaterialFunction) { return default; }
 }

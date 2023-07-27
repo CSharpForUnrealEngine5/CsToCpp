@@ -15,6 +15,6 @@ public partial class UMeshTopologySelectionMechanicProperties : UInteractiveTool
 	public bool bPreferProjectedElement;
 	public bool bSelectDownRay;
 	public bool bIgnoreOcclusion;
-	public void InvertSelection() {}
-	public void SelectAll() {}
+	public  void InvertSelection() {}
+	public  void SelectAll() {}
 }

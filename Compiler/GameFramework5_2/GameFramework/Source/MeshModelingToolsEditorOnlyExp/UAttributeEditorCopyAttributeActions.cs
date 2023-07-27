@@ -6,5 +6,5 @@ public partial class UAttributeEditorCopyAttributeActions : UAttributeEditorActi
 // AttributeEditorCopyAttributeActions
 	public TArray<string> FromAttribute;
 	public TArray<string> ToAttribute;
-	public void CopyFromTo() {}
+	public  void CopyFromTo() {}
 }

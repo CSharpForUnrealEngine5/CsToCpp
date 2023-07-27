@@ -9,8 +9,8 @@ public partial class UCircularThrobber : UWidget {
 	public float Period;
 	public float Radius;
 	public FSlateBrush Image;
-	public void SetNumberOfPieces(int InNumberOfPieces) {}
-	public void SetPeriod(float InPeriod) {}
-	public void SetRadius(float InRadius) {}
+	public  void SetNumberOfPieces(int InNumberOfPieces) {}
+	public  void SetPeriod(float InPeriod) {}
+	public  void SetRadius(float InRadius) {}
 	public bool bEnableRadius;
 }

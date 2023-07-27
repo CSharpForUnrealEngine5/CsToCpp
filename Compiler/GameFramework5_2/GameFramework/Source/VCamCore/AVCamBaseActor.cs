@@ -5,6 +5,6 @@ using CSharpToCpp.Utilities;
 ///<summary>Utility base class which sets up a UVCamComponent with a Cine Camera.</summary>
 public partial class AVCamBaseActor : ACineCameraActor {
 // VCamBaseActor
-	public UObject GetVCamComponent() { return default; }
+	public  UVCamComponent GetVCamComponent() { return default; }
 	public UVCamComponent VCamComponent;
 }

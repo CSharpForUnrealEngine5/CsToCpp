@@ -29,34 +29,34 @@ public partial class UChaosVehicleMovementComponent : UPawnMovementComponent {
 	public bool bRawGearDownInput;
 	public bool bWasAvoidanceUpdated;
 	public bool bParkEnabled;
-	public void SetThrottleInput(float Throttle) {}
-	public void IncreaseThrottleInput(float ThrottleDelta) {}
-	public void DecreaseThrottleInput(float ThrottleDelta) {}
-	public void SetBrakeInput(float Brake) {}
-	public void SetSteeringInput(float Steering) {}
-	public void SetPitchInput(float Pitch) {}
-	public void SetRollInput(float Roll) {}
-	public void SetYawInput(float Yaw) {}
-	public void SetHandbrakeInput(bool bNewHandbrake) {}
-	public void SetParked(bool bParked) {}
-	public void SetSleeping(bool bEnableSleep) {}
-	public void SetChangeUpInput(bool bNewGearUp) {}
-	public void SetChangeDownInput(bool bNewGearDown) {}
-	public void SetTargetGear(int GearNum,bool bImmediate) {}
-	public void SetUseAutomaticGears(bool bUseAuto) {}
-	public void SetRequiresControllerForInputs(bool bRequiresController) {}
-	public int GetCurrentGear() { return default; }
-	public int GetTargetGear() { return default; }
-	public bool GetUseAutoGears() { return default; }
-	public float GetForwardSpeed() { return default; }
-	public float GetForwardSpeedMPH() { return default; }
-	public float GetThrottleInput() { return default; }
-	public float GetBrakeInput() { return default; }
-	public bool GetHandbrakeInput() { return default; }
-	public float GetSteeringInput() { return default; }
-	public bool IsParked() { return default; }
-	public void ResetVehicle() {}
-	public void EnableSelfRighting(bool InState) {}
+	public  void SetThrottleInput(float Throttle) {}
+	public  void IncreaseThrottleInput(float ThrottleDelta) {}
+	public  void DecreaseThrottleInput(float ThrottleDelta) {}
+	public  void SetBrakeInput(float Brake) {}
+	public  void SetSteeringInput(float Steering) {}
+	public  void SetPitchInput(float Pitch) {}
+	public  void SetRollInput(float Roll) {}
+	public  void SetYawInput(float Yaw) {}
+	public  void SetHandbrakeInput(bool bNewHandbrake) {}
+	public  void SetParked(bool bParked) {}
+	public  void SetSleeping(bool bEnableSleep) {}
+	public  void SetChangeUpInput(bool bNewGearUp) {}
+	public  void SetChangeDownInput(bool bNewGearDown) {}
+	public  void SetTargetGear(int GearNum,bool bImmediate) {}
+	public  void SetUseAutomaticGears(bool bUseAuto) {}
+	public  void SetRequiresControllerForInputs(bool bRequiresController) {}
+	public  int GetCurrentGear() { return default; }
+	public  int GetTargetGear() { return default; }
+	public  bool GetUseAutoGears() { return default; }
+	public  float GetForwardSpeed() { return default; }
+	public  float GetForwardSpeedMPH() { return default; }
+	public  float GetThrottleInput() { return default; }
+	public  float GetBrakeInput() { return default; }
+	public  bool GetHandbrakeInput() { return default; }
+	public  float GetSteeringInput() { return default; }
+	public  bool IsParked() { return default; }
+	public  void ResetVehicle() {}
+	public  void EnableSelfRighting(bool InState) {}
 	public FVehicleReplicatedState ReplicatedState;
 	public float RawSteeringInput;
 	public float RawThrottleInput;
@@ -82,6 +82,6 @@ public partial class UChaosVehicleMovementComponent : UPawnMovementComponent {
 	public FVehicleInputRateConfig PitchInputRate;
 	public FVehicleInputRateConfig RollInputRate;
 	public FVehicleInputRateConfig YawInputRate;
-	public void ServerUpdateState(float InSteeringInput,float InThrottleInput,float InBrakeInput,float InHandbrakeInput,int InCurrentGear,float InRollInput,float InPitchInput,float InYawInput) {}
+	public  void ServerUpdateState(float InSteeringInput,float InThrottleInput,float InBrakeInput,float InHandbrakeInput,int InCurrentGear,float InRollInput,float InPitchInput,float InYawInput) {}
 	public AController OverrideController;
 }

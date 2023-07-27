@@ -4,4 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("Components/InputComponent.h")]
 public partial struct FInputGestureHandlerDynamicSignature {
 // InputGestureHandlerDynamicSignature__DelegateSignature
+	void AddDynamic(object obj, string functionName) {}
 }

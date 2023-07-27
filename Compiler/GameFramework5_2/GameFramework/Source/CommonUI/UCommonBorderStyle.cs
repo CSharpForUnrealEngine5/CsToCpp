@@ -6,5 +6,5 @@ using CSharpToCpp.Utilities;
 public partial class UCommonBorderStyle : UObject {
 // CommonBorderStyle
 	public FSlateBrush Background;
-	public void GetBackgroundBrush(FSlateBrush Brush) {}
+	public  void GetBackgroundBrush(FSlateBrush Brush) {}
 }

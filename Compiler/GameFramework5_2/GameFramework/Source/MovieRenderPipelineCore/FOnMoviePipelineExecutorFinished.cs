@@ -4,4 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("MoviePipelineExecutor.h")]
 public partial struct FOnMoviePipelineExecutorFinished {
 // OnMoviePipelineExecutorFinished__DelegateSignature
+	void AddDynamic(object obj, string functionName) {}
 }

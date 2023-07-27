@@ -5,26 +5,26 @@ using CSharpToCpp.Utilities;
 ///<summary>@todo_water: Remove Blueprintable</summary>
 public partial class AWaterBody : AActor {
 // WaterBody
-	public EWaterBodyType GetWaterBodyType() { return default; }
-	public UObject GetWaterSpline() { return default; }
-	public void SetWaterWaves(UObject InWaterWaves) {}
-	public UObject GetWaterBodyComponent() { return default; }
+	public  EWaterBodyType GetWaterBodyType() { return default; }
+	public  UWaterSplineComponent GetWaterSpline() { return default; }
+	public  void SetWaterWaves(UWaterWavesBase InWaterWaves) {}
+	public  UWaterBodyComponent GetWaterBodyComponent() { return default; }
 	public UWaterSplineComponent SplineComp;
 	public UWaterSplineMetadata WaterSplineMetadata;
 	public UWaterBodyComponent WaterBodyComponent;
 	public int WaterBodyIndex;
 	public EWaterBodyType WaterBodyType;
 	public UWaterWavesBase WaterWaves;
-	public UObject GetRiverToLakeTransitionMaterialInstance() { return default; }
-	public UObject GetRiverToOceanTransitionMaterialInstance() { return default; }
-	public void SetWaterMaterial(UObject InMaterial) {}
-	public UObject GetWaterMaterialInstance() { return default; }
-	public float GetWaterVelocityAtSplineInputKey(float InKey) { return default; }
-	public FVector GetWaterVelocityVectorAtSplineInputKey(float InKey) { return default; }
-	public float GetAudioIntensityAtSplineInputKey(float InKey) { return default; }
-	public TArray<UObject> GetIslands() { return default; }
-	public TArray<UObject> GetExclusionVolumes() { return default; }
-	public void OnWaterBodyChanged(bool bShapeOrPositionChanged,bool bWeightmapSettingsChanged/*=false*/) {}
+	public  UMaterialInstanceDynamic GetRiverToLakeTransitionMaterialInstance() { return default; }
+	public  UMaterialInstanceDynamic GetRiverToOceanTransitionMaterialInstance() { return default; }
+	public  void SetWaterMaterial(UMaterialInterface InMaterial) {}
+	public  UMaterialInstanceDynamic GetWaterMaterialInstance() { return default; }
+	public  float GetWaterVelocityAtSplineInputKey(float InKey) { return default; }
+	public  FVector GetWaterVelocityVectorAtSplineInputKey(float InKey) { return default; }
+	public  float GetAudioIntensityAtSplineInputKey(float InKey) { return default; }
+	public  TArray<AWaterBodyIsland> GetIslands() { return default; }
+	public  TArray<AWaterBodyExclusionVolume> GetExclusionVolumes() { return default; }
+	public  void OnWaterBodyChanged(bool bShapeOrPositionChanged,bool bWeightmapSettingsChanged/*=false*/) {}
 	public UPhysicalMaterial PhysicalMaterial_DEPRECATED;
 	public float TargetWaveMaskDepth_DEPRECATED;
 	public float MaxWaveHeightOffset_DEPRECATED;

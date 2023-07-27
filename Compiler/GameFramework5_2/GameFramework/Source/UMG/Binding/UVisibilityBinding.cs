@@ -4,5 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("Binding/VisibilityBinding.h")]
 public partial class UVisibilityBinding : UPropertyBinding {
 // VisibilityBinding
-	public ESlateVisibility GetValue() { return default; }
+	public  ESlateVisibility GetValue() { return default; }
 }

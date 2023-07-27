@@ -5,8 +5,8 @@ using CSharpToCpp.Utilities;
 ///<summary>Actor that tick in the Editor viewport with the event EditorTick.</summary>
 public partial class AVPViewportTickableActorBase : AActor {
 // VPViewportTickableActorBase
-	public void EditorTick(float DeltaSeconds) {}
-	public void EditorDestroyed() {}
-	public void EditorLockLocation(bool bSetLockLocation) {}
+	public  void EditorTick(float DeltaSeconds) {}
+	public  void EditorDestroyed() {}
+	public  void EditorLockLocation(bool bSetLockLocation) {}
 	public EVPViewportTickableFlags ViewportTickType;
 }

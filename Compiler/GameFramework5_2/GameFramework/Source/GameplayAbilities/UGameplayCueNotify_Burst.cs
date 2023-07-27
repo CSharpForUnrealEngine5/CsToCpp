@@ -5,7 +5,7 @@ using CSharpToCpp.Utilities;
 ///<summary>UGameplayCueNotify_Burst</summary>
 public partial class UGameplayCueNotify_Burst : UGameplayCueNotify_Static {
 // GameplayCueNotify_Burst
-	public void OnBurst(UObject Target,FGameplayCueParameters Parameters,FGameplayCueNotify_SpawnResult SpawnResults) {}
+	public  void OnBurst(AActor Target,FGameplayCueParameters Parameters,FGameplayCueNotify_SpawnResult SpawnResults) {}
 	public FGameplayCueNotify_SpawnCondition DefaultSpawnCondition;
 	public FGameplayCueNotify_PlacementInfo DefaultPlacementInfo;
 	public FGameplayCueNotify_BurstEffects BurstEffects;

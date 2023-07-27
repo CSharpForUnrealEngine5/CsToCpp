@@ -5,7 +5,7 @@ using CSharpToCpp.Utilities;
 public partial class ULODManagerPreviewLODProperties : UInteractiveToolPropertySet {
 // LODManagerPreviewLODProperties
 	public string VisibleLOD;
-	public TArray<string> GetLODNamesFunc() { return default; }
+	public  TArray<string> GetLODNamesFunc() { return default; }
 	public TArray<string> LODNamesList;
 	public bool bShowSeams;
 }

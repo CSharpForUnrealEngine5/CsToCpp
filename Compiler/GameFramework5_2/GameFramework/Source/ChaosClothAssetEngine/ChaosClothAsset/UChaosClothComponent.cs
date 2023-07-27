@@ -5,14 +5,14 @@ using CSharpToCpp.Utilities;
 ///<summary>Chaos cloth simulation component.</summary>
 public partial class UChaosClothComponent : USkinnedMeshComponent {
 // ChaosClothComponent
-	public void SetClothAsset(UObject InClothAsset) {}
-	public UObject GetClothAsset() { return default; }
-	public void ResetTeleportMode() {}
-	public void ForceNextUpdateTeleport() {}
-	public void ForceNextUpdateTeleportAndReset() {}
-	public void SuspendSimulation() {}
-	public void ResumeSimulation() {}
-	public bool IsSimulationSuspended() { return default; }
+	public  void SetClothAsset(UChaosClothAsset InClothAsset) {}
+	public  UChaosClothAsset GetClothAsset() { return default; }
+	public  void ResetTeleportMode() {}
+	public  void ForceNextUpdateTeleport() {}
+	public  void ForceNextUpdateTeleportAndReset() {}
+	public  void SuspendSimulation() {}
+	public  void ResumeSimulation() {}
+	public  bool IsSimulationSuspended() { return default; }
 	public UChaosClothAsset ClothAsset;
 	public bool bUseAttachedParentAsPoseComponent;
 	public bool bWaitForParallelTask;

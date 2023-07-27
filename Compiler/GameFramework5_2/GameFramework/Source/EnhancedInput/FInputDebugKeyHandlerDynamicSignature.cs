@@ -4,4 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("EnhancedInputComponent.h")]
 public partial struct FInputDebugKeyHandlerDynamicSignature {
 // InputDebugKeyHandlerDynamicSignature__DelegateSignature
+	void AddDynamic(object obj, string functionName) {}
 }

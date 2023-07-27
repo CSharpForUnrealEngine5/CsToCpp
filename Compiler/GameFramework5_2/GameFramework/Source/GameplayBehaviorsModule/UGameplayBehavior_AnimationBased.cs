@@ -5,6 +5,6 @@ using CSharpToCpp.Utilities;
 ///<summary>Note that this behavior is supporting playing only a single montage for a</summary>
 public partial class UGameplayBehavior_AnimationBased : UGameplayBehavior {
 // GameplayBehavior_AnimationBased
-	public void OnMontageFinished(UObject Montage,bool bInterrupted,UObject InAvatar) {}
+	public  void OnMontageFinished(UAnimMontage Montage,bool bInterrupted,AActor InAvatar) {}
 	public TArray<FMontagePlaybackData> ActivePlayback;
 }

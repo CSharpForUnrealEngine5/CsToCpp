@@ -4,5 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("Modifier/VCamModifierInterface.h")]
 public partial class UVCamModifierInterface : UInterface {
 // VCamModifierInterface
-	public void OnVCamComponentChanged(UObject VCam) {}
+	public  void OnVCamComponentChanged(UVCamComponent VCam) {}
 }

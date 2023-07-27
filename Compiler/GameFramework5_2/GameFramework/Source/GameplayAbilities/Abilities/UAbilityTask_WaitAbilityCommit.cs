@@ -6,7 +6,7 @@ using CSharpToCpp.Utilities;
 public partial class UAbilityTask_WaitAbilityCommit : UAbilityTask {
 // AbilityTask_WaitAbilityCommit
 	public FWaitAbilityCommitDelegate OnCommit;
-	public void OnAbilityCommit(UObject ActivatedAbility) {}
-	public UObject WaitForAbilityCommit(UObject OwningAbility,FGameplayTag WithTag,FGameplayTag WithoutTage,bool TriggerOnce/*=true*/) { return default; }
-	public UObject WaitForAbilityCommit_Query(UObject OwningAbility,FGameplayTagQuery Query,bool TriggerOnce/*=true*/) { return default; }
+	public  void OnAbilityCommit(UGameplayAbility ActivatedAbility) {}
+	public static UAbilityTask_WaitAbilityCommit WaitForAbilityCommit(UGameplayAbility OwningAbility,FGameplayTag WithTag,FGameplayTag WithoutTage,bool TriggerOnce/*=true*/) { return default; }
+	public static UAbilityTask_WaitAbilityCommit WaitForAbilityCommit_Query(UGameplayAbility OwningAbility,FGameplayTagQuery Query,bool TriggerOnce/*=true*/) { return default; }
 }

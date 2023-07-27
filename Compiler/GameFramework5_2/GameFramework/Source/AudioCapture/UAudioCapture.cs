@@ -5,8 +5,8 @@ using CSharpToCpp.Utilities;
 ///<summary>Class which opens up a handle to an audio capture device.</summary>
 public partial class UAudioCapture : UAudioGenerator {
 // AudioCapture
-	public bool GetAudioCaptureDeviceInfo(FAudioCaptureDeviceInfo OutInfo) { return default; }
-	public void StartCapturingAudio() {}
-	public void StopCapturingAudio() {}
-	public bool IsCapturingAudio() { return default; }
+	public  bool GetAudioCaptureDeviceInfo(FAudioCaptureDeviceInfo OutInfo) { return default; }
+	public  void StartCapturingAudio() {}
+	public  void StopCapturingAudio() {}
+	public  bool IsCapturingAudio() { return default; }
 }

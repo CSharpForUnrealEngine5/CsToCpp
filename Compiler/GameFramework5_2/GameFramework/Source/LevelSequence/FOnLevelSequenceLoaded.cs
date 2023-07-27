@@ -4,4 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("LevelSequenceActor.h")]
 public partial struct FOnLevelSequenceLoaded {
 // OnLevelSequenceLoaded__DelegateSignature
+	void AddDynamic(object obj, string functionName) {}
 }

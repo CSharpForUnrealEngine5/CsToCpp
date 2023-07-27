@@ -4,4 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("WebBrowser.h")]
 public partial struct FOnUrlChanged {
 // OnUrlChanged__DelegateSignature
+	void AddDynamic(object obj, string functionName) {}
 }

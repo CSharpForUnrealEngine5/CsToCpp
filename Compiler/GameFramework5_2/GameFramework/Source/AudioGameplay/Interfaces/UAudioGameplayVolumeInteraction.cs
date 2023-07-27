@@ -4,6 +4,6 @@ using CSharpToCpp.Utilities;
 [CppInclude("Interfaces/IAudioGameplayVolumeInteraction.h")]
 public partial class UAudioGameplayVolumeInteraction : UInterface {
 // AudioGameplayVolumeInteraction
-	public void OnListenerEnter() {}
-	public void OnListenerExit() {}
+	public  void OnListenerEnter() {}
+	public  void OnListenerExit() {}
 }

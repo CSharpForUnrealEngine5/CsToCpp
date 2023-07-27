@@ -5,6 +5,6 @@ using CSharpToCpp.Utilities;
 ///<summary>Blueprint library for altering and analyzing animation / skeletal data</summary>
 public partial class UEditorTestsUtilityLibrary : UBlueprintFunctionLibrary {
 // EditorTestsUtilityLibrary
-	public void BakeMaterialsForComponent(UObject InStaticMeshComponent,UObject MaterialOptions,UObject MaterialMergeOptions) {}
-	public void MergeStaticMeshComponents(TArray<UObject> InStaticMeshComponents,FMeshMergingSettings MergeSettings,bool bReplaceActors,TArray<int> OutLODIndices) {}
+	public static void BakeMaterialsForComponent(UStaticMeshComponent InStaticMeshComponent,UMaterialOptions MaterialOptions,UMaterialMergeOptions MaterialMergeOptions) {}
+	public static void MergeStaticMeshComponents(TArray<UStaticMeshComponent> InStaticMeshComponents,FMeshMergingSettings MergeSettings,bool bReplaceActors,TArray<int> OutLODIndices) {}
 }

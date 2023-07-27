@@ -10,6 +10,6 @@ public partial class UFractureConvexSettings : UFractureToolSettings {
 	public EConvexOverlapRemoval RemoveOverlaps;
 	public double OverlapRemovalShrinkPercent;
 	public double FractionAllowRemove;
-	public void DeleteFromSelected() {}
-	public void ClearCustomConvex() {}
+	public  void DeleteFromSelected() {}
+	public  void ClearCustomConvex() {}
 }

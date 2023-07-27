@@ -11,7 +11,7 @@ public partial class UDisplaceMeshCommonProperties : UInteractiveToolPropertySet
 	public EDisplaceMeshToolSubdivisionType SubdivisionType;
 	public int Subdivisions;
 	public string WeightMap;
-	public TArray<string> GetWeightMapsFunc() { return default; }
+	public  TArray<string> GetWeightMapsFunc() { return default; }
 	public TArray<string> WeightMapsList;
 	public bool bInvertWeightMap;
 	public bool bShowWireframe;

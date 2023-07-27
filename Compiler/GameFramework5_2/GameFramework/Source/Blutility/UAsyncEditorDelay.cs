@@ -4,6 +4,6 @@ using CSharpToCpp.Utilities;
 [CppInclude("EditorUtilityLibrary.h")]
 public partial class UAsyncEditorDelay : UEditorUtilityBlueprintAsyncActionBase {
 // AsyncEditorDelay
-	public UObject AsyncEditorDelay(float Seconds,int MinimumFrames/*=30*/) { return default; }
+	public static UAsyncEditorDelay AsyncEditorDelay(float Seconds,int MinimumFrames/*=30*/) { return default; }
 	public FAsyncDelayComplete Complete;
 }

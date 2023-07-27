@@ -4,7 +4,7 @@ using CSharpToCpp.Utilities;
 [CppInclude("Engine/StreamableRenderAsset.h")]
 public partial class UStreamableRenderAsset : UObject {
 // StreamableRenderAsset
-	public void SetForceMipLevelsToBeResident(float Seconds,int CinematicLODGroupMask/*=0*/) {}
+	public  void SetForceMipLevelsToBeResident(float Seconds,int CinematicLODGroupMask/*=0*/) {}
 	public double ForceMipLevelsToBeResidentTimestamp;
 	public int NumCinematicMipLevels;
 	public FPerQualityLevelInt NoRefStreamingLODBias;

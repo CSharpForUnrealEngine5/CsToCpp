@@ -20,7 +20,7 @@ public partial class UGameMapsSettings : UObject {
 	public FSoftClassPath GlobalDefaultServerGameMode;
 	public TArray<FGameModeName> GameModeMapPrefixes;
 	public TArray<FGameModeName> GameModeClassAliases;
-	public UObject GetGameMapsSettings() { return default; }
-	public void SetSkipAssigningGamepadToPlayer1(bool bSkipFirstPlayer/*=true*/) {}
-	public bool GetSkipAssigningGamepadToPlayer1() { return default; }
+	public static UGameMapsSettings GetGameMapsSettings() { return default; }
+	public  void SetSkipAssigningGamepadToPlayer1(bool bSkipFirstPlayer/*=true*/) {}
+	public  bool GetSkipAssigningGamepadToPlayer1() { return default; }
 }

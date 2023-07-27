@@ -5,11 +5,11 @@ using CSharpToCpp.Utilities;
 ///<summary>Base class for baseline controllers. These can are responsible for spawning and manipulating the FX needed for the baseline perf tests.</summary>
 public partial class UNiagaraBaselineController : UObject {
 // NiagaraBaselineController
-	public void OnBeginTest() {}
-	public bool OnTickTest() { return default; }
-	public void OnEndTest(FNiagaraPerfBaselineStats Stats) {}
-	public void OnOwnerTick(float DeltaTime) {}
-	public UObject GetSystem() { return default; }
+	public  void OnBeginTest() {}
+	public  bool OnTickTest() { return default; }
+	public  void OnEndTest(FNiagaraPerfBaselineStats Stats) {}
+	public  void OnOwnerTick(float DeltaTime) {}
+	public  UNiagaraSystem GetSystem() { return default; }
 	public float TestDuration;
 	public UNiagaraEffectType EffectType;
 	public ANiagaraPerfBaselineActor Owner;

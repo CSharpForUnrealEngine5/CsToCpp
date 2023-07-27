@@ -4,7 +4,7 @@ using CSharpToCpp.Utilities;
 [CppInclude("SubmixEffects/SubmixEffectDelay.h")]
 public partial class USubmixEffectDelayStatics : UBlueprintFunctionLibrary {
 // SubmixEffectDelayStatics
-	public FSubmixEffectDelaySettings SetMaximumDelayLength(FSubmixEffectDelaySettings DelaySettings,float MaximumDelayLength) { return default; }
-	public FSubmixEffectDelaySettings SetInterpolationTime(FSubmixEffectDelaySettings DelaySettings,float InterpolationTime) { return default; }
-	public FSubmixEffectDelaySettings SetDelayLength(FSubmixEffectDelaySettings DelaySettings,float DelayLength) { return default; }
+	public static FSubmixEffectDelaySettings SetMaximumDelayLength(FSubmixEffectDelaySettings DelaySettings,float MaximumDelayLength) { return default; }
+	public static FSubmixEffectDelaySettings SetInterpolationTime(FSubmixEffectDelaySettings DelaySettings,float InterpolationTime) { return default; }
+	public static FSubmixEffectDelaySettings SetDelayLength(FSubmixEffectDelaySettings DelaySettings,float DelayLength) { return default; }
 }

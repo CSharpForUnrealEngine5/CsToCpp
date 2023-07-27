@@ -7,9 +7,9 @@ public partial class UAIPerceptionSystem : UAISubsystem {
 // AIPerceptionSystem
 	public TArray<UAISense> Senses;
 	public float PerceptionAgingRate;
-	public void ReportEvent(UObject PerceptionEvent) {}
-	public void ReportPerceptionEvent(UObject WorldContextObject,UObject PerceptionEvent) {}
-	public bool RegisterPerceptionStimuliSource(UObject WorldContextObject,UClass Sense,UObject Target) { return default; }
-	public UClass GetSenseClassForStimulus(UObject WorldContextObject,FAIStimulus Stimulus) { return default; }
-	public void OnPerceptionStimuliSourceEndPlay(UObject Actor,EEndPlayReason EndPlayReason) {}
+	public  void ReportEvent(UAISenseEvent PerceptionEvent) {}
+	public static void ReportPerceptionEvent(UObject WorldContextObject,UAISenseEvent PerceptionEvent) {}
+	public static bool RegisterPerceptionStimuliSource(UObject WorldContextObject,UClass Sense,AActor Target) { return default; }
+	public static UClass GetSenseClassForStimulus(UObject WorldContextObject,FAIStimulus Stimulus) { return default; }
+	public  void OnPerceptionStimuliSourceEndPlay(AActor Actor,EEndPlayReason EndPlayReason) {}
 }

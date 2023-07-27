@@ -4,4 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("Navigation/NavLinkProxy.h")]
 public partial struct FSmartLinkReachedSignature {
 // SmartLinkReachedSignature__DelegateSignature
+	void AddDynamic(object obj, string functionName) {}
 }

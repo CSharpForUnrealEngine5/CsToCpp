@@ -4,6 +4,6 @@ using CSharpToCpp.Utilities;
 [CppInclude("SourceEffects/SourceEffectDynamicsProcessor.h")]
 public partial class USourceEffectDynamicsProcessorPreset : USoundEffectSourcePreset {
 // SourceEffectDynamicsProcessorPreset
-	public void SetSettings(FSourceEffectDynamicsProcessorSettings InSettings) {}
+	public  void SetSettings(FSourceEffectDynamicsProcessorSettings InSettings) {}
 	public FSourceEffectDynamicsProcessorSettings Settings;
 }

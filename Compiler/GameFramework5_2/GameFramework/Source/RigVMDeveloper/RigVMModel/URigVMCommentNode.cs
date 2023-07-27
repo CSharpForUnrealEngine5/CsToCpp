@@ -5,10 +5,10 @@ using CSharpToCpp.Utilities;
 ///<summary>Comment Nodes can be used to annotate a Graph by adding</summary>
 public partial class URigVMCommentNode : URigVMNode {
 // RigVMCommentNode
-	public string GetCommentText() { return default; }
-	public int GetCommentFontSize() { return default; }
-	public bool GetCommentBubbleVisible() { return default; }
-	public bool GetCommentColorBubble() { return default; }
+	public  string GetCommentText() { return default; }
+	public  int GetCommentFontSize() { return default; }
+	public  bool GetCommentBubbleVisible() { return default; }
+	public  bool GetCommentColorBubble() { return default; }
 	public string CommentText;
 	public int FontSize;
 	public bool bBubbleVisible;

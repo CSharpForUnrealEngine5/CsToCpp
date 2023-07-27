@@ -4,4 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("Elements/Framework/TypedElementSelectionSet.h")]
 public partial struct FOnPreChangeDynamic {
 // OnPreChangeDynamic__DelegateSignature
+	void AddDynamic(object obj, string functionName) {}
 }

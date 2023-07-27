@@ -4,11 +4,11 @@ using CSharpToCpp.Utilities;
 [CppInclude("LocationServicesBPLibrary.h")]
 public partial class ULocationServices : UBlueprintFunctionLibrary {
 // LocationServices
-	public bool InitLocationServices(ELocationAccuracy Accuracy,float UpdateFrequency,float MinDistanceFilter) { return default; }
-	public bool StartLocationServices() { return default; }
-	public bool StopLocationServices() { return default; }
-	public FLocationServicesData GetLastKnownLocation() { return default; }
-	public bool AreLocationServicesEnabled() { return default; }
-	public bool IsLocationAccuracyAvailable(ELocationAccuracy Accuracy) { return default; }
-	public UObject GetLocationServicesImpl() { return default; }
+	public static bool InitLocationServices(ELocationAccuracy Accuracy,float UpdateFrequency,float MinDistanceFilter) { return default; }
+	public static bool StartLocationServices() { return default; }
+	public static bool StopLocationServices() { return default; }
+	public static FLocationServicesData GetLastKnownLocation() { return default; }
+	public static bool AreLocationServicesEnabled() { return default; }
+	public static bool IsLocationAccuracyAvailable(ELocationAccuracy Accuracy) { return default; }
+	public static ULocationServicesImpl GetLocationServicesImpl() { return default; }
 }

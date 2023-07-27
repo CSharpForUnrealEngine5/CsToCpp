@@ -4,4 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("Camera/PlayerCameraManager.h")]
 public partial struct FOnAudioFadeChangeSignature {
 // OnAudioFadeChangeSignature__DelegateSignature
+	void AddDynamic(object obj, string functionName) {}
 }

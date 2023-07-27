@@ -4,7 +4,7 @@ using CSharpToCpp.Utilities;
 [CppInclude("Navigation/CrowdFollowingComponent.h")]
 public partial class UCrowdFollowingComponent : UPathFollowingComponent {
 // CrowdFollowingComponent
-	public void SuspendCrowdSteering(bool bSuspend) {}
+	public  void SuspendCrowdSteering(bool bSuspend) {}
 	public FVector CrowdAgentMoveDirection;
 	public UCharacterMovementComponent CharacterMovement;
 	public FNavAvoidanceMask AvoidanceGroup_DEPRECATED;

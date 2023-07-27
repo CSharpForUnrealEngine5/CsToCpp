@@ -14,6 +14,6 @@ public partial class ULatticeDeformerToolProperties : UInteractiveToolPropertySe
 	public EToolContextCoordinateSystem GizmoCoordinateSystem;
 	public bool bSetPivotMode;
 	public bool bSoftDeformation;
-	public void Constrain() {}
-	public void ClearConstraints() {}
+	public  void Constrain() {}
+	public  void ClearConstraints() {}
 }

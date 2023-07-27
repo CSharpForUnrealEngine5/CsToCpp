@@ -9,5 +9,5 @@ public partial class UProceduralFoliageSpawner : UObject {
 	public int NumUniqueTiles;
 	public float MinimumQuadTreeSize;
 	public TArray<FFoliageTypeObject> FoliageTypes;
-	public void Simulate(int NumSteps/*=-1*/) {}
+	public  void Simulate(int NumSteps/*=-1*/) {}
 }

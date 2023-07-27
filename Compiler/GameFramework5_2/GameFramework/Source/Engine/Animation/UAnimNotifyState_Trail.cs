@@ -5,7 +5,7 @@ using CSharpToCpp.Utilities;
 public partial class UAnimNotifyState_Trail : UAnimNotifyState {
 // AnimNotifyState_Trail
 	public UParticleSystem PSTemplate;
-	public UObject OverridePSTemplate(UObject MeshComp,UObject Animation) { return default; }
+	public  UParticleSystem OverridePSTemplate(USkeletalMeshComponent MeshComp,UAnimSequenceBase Animation) { return default; }
 	public string FirstSocketName;
 	public string SecondSocketName;
 	public byte WidthScaleMode;

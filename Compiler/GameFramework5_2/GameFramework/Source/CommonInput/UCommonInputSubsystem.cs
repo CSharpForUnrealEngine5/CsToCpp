@@ -4,15 +4,15 @@ using CSharpToCpp.Utilities;
 [CppInclude("CommonInputSubsystem.h")]
 public partial class UCommonInputSubsystem : ULocalPlayerSubsystem {
 // CommonInputSubsystem
-	public bool IsInputMethodActive(ECommonInputType InputMethod) { return default; }
-	public ECommonInputType GetCurrentInputType() { return default; }
-	public ECommonInputType GetDefaultInputType() { return default; }
-	public void SetCurrentInputType(ECommonInputType NewInputType) {}
-	public string GetCurrentGamepadName() { return default; }
-	public void SetGamepadInputType(string InGamepadInputType) {}
-	public bool IsUsingPointerInput() { return default; }
-	public bool ShouldShowInputKeys() { return default; }
-	public void BroadcastInputMethodChanged() {}
+	public  bool IsInputMethodActive(ECommonInputType InputMethod) { return default; }
+	public  ECommonInputType GetCurrentInputType() { return default; }
+	public  ECommonInputType GetDefaultInputType() { return default; }
+	public  void SetCurrentInputType(ECommonInputType NewInputType) {}
+	public  string GetCurrentGamepadName() { return default; }
+	public  void SetGamepadInputType(string InGamepadInputType) {}
+	public  bool IsUsingPointerInput() { return default; }
+	public  bool ShouldShowInputKeys() { return default; }
+	public  void BroadcastInputMethodChanged() {}
 	public FInputMethodChangedDelegate OnInputMethodChanged;
 	public int NumberOfInputMethodChangesRecently;
 	public double LastInputMethodChangeTime;

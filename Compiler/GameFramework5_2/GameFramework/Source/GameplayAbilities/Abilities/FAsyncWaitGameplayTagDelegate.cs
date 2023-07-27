@@ -4,4 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("Abilities/Async/AbilityAsync_WaitGameplayTag.h")]
 public partial struct FAsyncWaitGameplayTagDelegate {
 // AsyncWaitGameplayTagDelegate__DelegateSignature
+	void AddDynamic(object obj, string functionName) {}
 }

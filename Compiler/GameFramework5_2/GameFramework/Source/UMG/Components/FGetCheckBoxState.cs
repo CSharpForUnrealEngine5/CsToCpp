@@ -4,4 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("Components/Widget.h")]
 public partial struct FGetCheckBoxState {
 // GetCheckBoxState__DelegateSignature
+	void AddDynamic(object obj, string functionName) {}
 }

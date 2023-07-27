@@ -7,9 +7,9 @@ public partial class UAbilityTask_ApplyRootMotionJumpForce : UAbilityTask_ApplyR
 // AbilityTask_ApplyRootMotionJumpForce
 	public FApplyRootMotionJumpForceDelegate OnFinish;
 	public FApplyRootMotionJumpForceDelegate OnLanded;
-	public void Finish() {}
-	public void OnLandedCallback(FHitResult Hit) {}
-	public UObject ApplyRootMotionJumpForce(UObject OwningAbility,string TaskInstanceName,FRotator Rotation,float Distance,float Height,float Duration,float MinimumLandedTriggerTime,bool bFinishOnLanded,ERootMotionFinishVelocityMode VelocityOnFinishMode,FVector SetVelocityOnFinish,float ClampVelocityOnFinish,UObject PathOffsetCurve,UObject TimeMappingCurve) { return default; }
+	public  void Finish() {}
+	public  void OnLandedCallback(FHitResult Hit) {}
+	public static UAbilityTask_ApplyRootMotionJumpForce ApplyRootMotionJumpForce(UGameplayAbility OwningAbility,string TaskInstanceName,FRotator Rotation,float Distance,float Height,float Duration,float MinimumLandedTriggerTime,bool bFinishOnLanded,ERootMotionFinishVelocityMode VelocityOnFinishMode,FVector SetVelocityOnFinish,float ClampVelocityOnFinish,UCurveVector PathOffsetCurve,UCurveFloat TimeMappingCurve) { return default; }
 	public FRotator Rotation;
 	public float Distance;
 	public float Height;

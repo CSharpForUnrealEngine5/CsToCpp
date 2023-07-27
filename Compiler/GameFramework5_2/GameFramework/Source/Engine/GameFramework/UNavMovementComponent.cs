@@ -12,11 +12,11 @@ public partial class UNavMovementComponent : UMovementComponent {
 	public bool bUseFixedBrakingDistanceForPaths;
 	public FMovementProperties MovementState;
 	public UObject PathFollowingComp;
-	public void StopActiveMovement() {}
-	public void StopMovementKeepPathing() {}
-	public bool IsCrouching() { return default; }
-	public bool IsFalling() { return default; }
-	public bool IsMovingOnGround() { return default; }
-	public bool IsSwimming() { return default; }
-	public bool IsFlying() { return default; }
+	public  void StopActiveMovement() {}
+	public  void StopMovementKeepPathing() {}
+	public  bool IsCrouching() { return default; }
+	public  bool IsFalling() { return default; }
+	public  bool IsMovingOnGround() { return default; }
+	public  bool IsSwimming() { return default; }
+	public  bool IsFlying() { return default; }
 }

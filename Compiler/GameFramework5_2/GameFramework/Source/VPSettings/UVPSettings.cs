@@ -8,7 +8,7 @@ public partial class UVPSettings : UObject {
 	public TArray<float> AperturePresets;
 	public TArray<float> DefaultShutterSpeedPresets;
 	public TArray<float> DefaultISOPresets;
-	public UObject GetVPSettings() { return default; }
+	public static UVPSettings GetVPSettings() { return default; }
 	public bool bShowRoleInEditor;
 	public string DirectorName;
 	public string ShowName;

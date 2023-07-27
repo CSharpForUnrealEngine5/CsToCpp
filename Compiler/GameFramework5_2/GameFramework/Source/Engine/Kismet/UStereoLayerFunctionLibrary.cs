@@ -5,8 +5,8 @@ using CSharpToCpp.Utilities;
 ///<summary>StereoLayer Extensions Function Library</summary>
 public partial class UStereoLayerFunctionLibrary : UBlueprintFunctionLibrary {
 // StereoLayerFunctionLibrary
-	public void SetSplashScreen(UObject Texture,FVector2D Scale/*=new FVector2D(1.0f,1.0f)*/,FVector Offset/*=new FVector(0.0f,0.0f,0.0f)*/,bool bShowLoadingMovie/*=false*/,bool bShowOnSet/*=false*/) {}
-	public void ShowSplashScreen() {}
-	public void HideSplashScreen() {}
-	public void EnableAutoLoadingSplashScreen(bool InAutoShowEnabled) {}
+	public static void SetSplashScreen(UTexture Texture,FVector2D Scale/*=new FVector2D(1.0f,1.0f)*/,FVector Offset/*=new FVector(0.0f,0.0f,0.0f)*/,bool bShowLoadingMovie/*=false*/,bool bShowOnSet/*=false*/) {}
+	public static void ShowSplashScreen() {}
+	public static void HideSplashScreen() {}
+	public static void EnableAutoLoadingSplashScreen(bool InAutoShowEnabled) {}
 }

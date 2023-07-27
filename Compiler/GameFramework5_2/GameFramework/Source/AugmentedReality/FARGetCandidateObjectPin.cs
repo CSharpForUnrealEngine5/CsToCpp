@@ -4,4 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("ARBlueprintProxy.h")]
 public partial struct FARGetCandidateObjectPin {
 // ARGetCandidateObjectPin__DelegateSignature
+	void AddDynamic(object obj, string functionName) {}
 }

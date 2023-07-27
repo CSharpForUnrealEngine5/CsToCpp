@@ -4,4 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("Abilities/Tasks/AbilityTask_StartAbilityState.h")]
 public partial struct FAbilityStateDelegate {
 // AbilityStateDelegate__DelegateSignature
+	void AddDynamic(object obj, string functionName) {}
 }

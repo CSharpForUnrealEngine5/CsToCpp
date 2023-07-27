@@ -4,4 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("Animation/AnimData/AnimDataNotifications.h")]
 public partial struct FAnimDataModelModifiedDynamicEvent {
 // AnimDataModelModifiedDynamicEvent__DelegateSignature
+	void AddDynamic(object obj, string functionName) {}
 }

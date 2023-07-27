@@ -5,7 +5,7 @@ using CSharpToCpp.Utilities;
 ///<summary>The Enum Node represents a constant enum value for use within the graph.</summary>
 public partial class URigVMEnumNode : URigVMNode {
 // RigVMEnumNode
-	public UObject GetEnum() { return default; }
-	public string GetCPPType() { return default; }
-	public UObject GetCPPTypeObject() { return default; }
+	public  UEnum GetEnum() { return default; }
+	public  string GetCPPType() { return default; }
+	public  UObject GetCPPTypeObject() { return default; }
 }

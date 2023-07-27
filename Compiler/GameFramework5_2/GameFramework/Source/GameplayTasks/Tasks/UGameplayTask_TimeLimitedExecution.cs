@@ -5,7 +5,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Adds time limit for running a child task</summary>
 public partial class UGameplayTask_TimeLimitedExecution : UGameplayTask {
 // GameplayTask_TimeLimitedExecution
-	public void FTaskFinishDelegate() {}
+	public  void FTaskFinishDelegate() {}
 	public FTaskFinishDelegate OnFinished;
 	public FTaskFinishDelegate OnTimeExpired;
 }

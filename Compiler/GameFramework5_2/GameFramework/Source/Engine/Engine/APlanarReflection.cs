@@ -7,5 +7,5 @@ public partial class APlanarReflection : ASceneCapture {
 	public UPlanarReflectionComponent PlanarReflectionComponent;
 	public UBillboardComponent SpriteComponent;
 	public bool bShowPreviewPlane_DEPRECATED;
-	public void OnInterpToggle(bool bEnable) {}
+	public  void OnInterpToggle(bool bEnable) {}
 }

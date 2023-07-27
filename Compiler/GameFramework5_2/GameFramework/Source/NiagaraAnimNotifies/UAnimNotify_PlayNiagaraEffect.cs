@@ -9,7 +9,7 @@ public partial class UAnimNotify_PlayNiagaraEffect : UAnimNotify {
 	public FRotator RotationOffset;
 	public FVector Scale;
 	public bool bAbsoluteScale;
-	public UObject GetSpawnedEffect() { return default; }
+	public  UFXSystemComponent GetSpawnedEffect() { return default; }
 	public bool Attached;
 	public string SocketName;
 }

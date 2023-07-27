@@ -7,8 +7,8 @@ public partial class AGameplayAbilityTargetActor : AActor {
 // GameplayAbilityTargetActor
 	public bool ShouldProduceTargetDataOnServer;
 	public FGameplayAbilityTargetingLocationInfo StartLocation;
-	public void ConfirmTargeting() {}
-	public void CancelTargeting() {}
+	public  void ConfirmTargeting() {}
+	public  void CancelTargeting() {}
 	public APlayerController PrimaryPC;
 	public UGameplayAbility OwningAbility;
 	public bool bDestroyOnConfirmation;

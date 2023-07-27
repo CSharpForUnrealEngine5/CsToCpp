@@ -5,6 +5,6 @@ using CSharpToCpp.Utilities;
 ///<summary>UFUNCTION actions to manage default proximity detection settings for geometry collections</summary>
 public partial class UFractureProximityActions : UFractureToolSettings {
 // FractureProximityActions
-	public void SaveAsDefaults() {}
-	public void SetFromDefaults() {}
+	public  void SaveAsDefaults() {}
+	public  void SetFromDefaults() {}
 }

@@ -4,4 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("Components/EditableTextBox.h")]
 public partial struct FOnEditableTextBoxChangedEvent {
 // OnEditableTextBoxChangedEvent__DelegateSignature
+	void AddDynamic(object obj, string functionName) {}
 }

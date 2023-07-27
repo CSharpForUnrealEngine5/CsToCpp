@@ -12,8 +12,8 @@ public partial class UPhysicsSpringComponent : USceneComponent {
 	public byte SpringChannel;
 	public bool bIgnoreSelf;
 	public float SpringCompression;
-	public float GetNormalizedCompressionScalar() { return default; }
-	public FVector GetSpringRestingPoint() { return default; }
-	public FVector GetSpringCurrentEndPoint() { return default; }
-	public FVector GetSpringDirection() { return default; }
+	public  float GetNormalizedCompressionScalar() { return default; }
+	public  FVector GetSpringRestingPoint() { return default; }
+	public  FVector GetSpringCurrentEndPoint() { return default; }
+	public  FVector GetSpringDirection() { return default; }
 }

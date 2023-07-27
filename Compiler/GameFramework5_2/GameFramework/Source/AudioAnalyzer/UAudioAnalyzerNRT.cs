@@ -7,5 +7,5 @@ public partial class UAudioAnalyzerNRT : UAudioAnalyzerAssetBase {
 // AudioAnalyzerNRT
 	public USoundWave Sound;
 	public float DurationInSeconds;
-	public void AnalyzeAudio() {}
+	public  void AnalyzeAudio() {}
 }

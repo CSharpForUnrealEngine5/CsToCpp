@@ -4,5 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("ToolMenusBlueprintLibrary.h")]
 public partial class UToolMenuContextExtensions : UObject {
 // ToolMenuContextExtensions
-	public UObject FindByClass(FToolMenuContext Context,UClass InClass) { return default; }
+	public static UObject FindByClass(FToolMenuContext Context,UClass InClass) { return default; }
 }

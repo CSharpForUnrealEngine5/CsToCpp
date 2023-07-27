@@ -4,4 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("GameFramework/Pawn.h")]
 public partial struct FPawnControllerChangedSignature {
 // PawnControllerChangedSignature__DelegateSignature
+	void AddDynamic(object obj, string functionName) {}
 }

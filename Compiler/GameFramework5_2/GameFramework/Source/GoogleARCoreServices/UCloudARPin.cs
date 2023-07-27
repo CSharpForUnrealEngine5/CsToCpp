@@ -5,6 +5,6 @@ using CSharpToCpp.Utilities;
 ///<summary>A CloudARPin will be created when you host an existing ARPin, or resolved a</summary>
 public partial class UCloudARPin : UARPin {
 // CloudARPin
-	public string GetCloudID() { return default; }
-	public ECloudARPinCloudState GetARPinCloudState() { return default; }
+	public  string GetCloudID() { return default; }
+	public  ECloudARPinCloudState GetARPinCloudState() { return default; }
 }

@@ -5,5 +5,5 @@ using CSharpToCpp.Utilities;
 public partial class UControlRigTransformWorkflowOptions : UControlRigWorkflowOptions {
 // ControlRigTransformWorkflowOptions
 	public byte TransformType;
-	public TArray<FRigVMUserWorkflow> ProvideWorkflows(UObject InSubject) { return default; }
+	public  TArray<FRigVMUserWorkflow> ProvideWorkflows(UObject InSubject) { return default; }
 }

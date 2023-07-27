@@ -12,5 +12,5 @@ public partial class ACompositingCaptureBase : ACompositingElement {
 	public float OriginalFocalLength;
 	public UMaterialInstanceDynamic LastDistortionMID;
 	public FDistortionHandlerPicker DistortionSource_DEPRECATED;
-	public void UpdateDistortion() {}
+	public  void UpdateDistortion() {}
 }

@@ -5,6 +5,6 @@ using CSharpToCpp.Utilities;
 public partial class UAbilityTask_WaitConfirm : UAbilityTask {
 // AbilityTask_WaitConfirm
 	public FGenericGameplayTaskDelegate OnConfirm;
-	public void OnConfirmCallback(UObject InAbility) {}
-	public UObject WaitConfirm(UObject OwningAbility) { return default; }
+	public  void OnConfirmCallback(UGameplayAbility InAbility) {}
+	public static UAbilityTask_WaitConfirm WaitConfirm(UGameplayAbility OwningAbility) { return default; }
 }

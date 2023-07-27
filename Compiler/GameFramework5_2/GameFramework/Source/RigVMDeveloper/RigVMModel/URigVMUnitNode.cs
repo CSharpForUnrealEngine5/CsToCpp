@@ -5,8 +5,8 @@ using CSharpToCpp.Utilities;
 ///<summary>The Struct Node represents a Function Invocation of a RIGVM_METHOD</summary>
 public partial class URigVMUnitNode : URigVMTemplateNode {
 // RigVMUnitNode
-	public string GetMethodName() { return default; }
-	public string GetStructDefaultValue() { return default; }
+	public  string GetMethodName() { return default; }
+	public  string GetStructDefaultValue() { return default; }
 	public UScriptStruct ScriptStruct_DEPRECATED;
 	public string MethodName_DEPRECATED;
 }

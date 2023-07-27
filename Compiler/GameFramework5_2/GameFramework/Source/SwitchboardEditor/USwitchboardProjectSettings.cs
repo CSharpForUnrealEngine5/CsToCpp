@@ -5,5 +5,5 @@ using CSharpToCpp.Utilities;
 public partial class USwitchboardProjectSettings : UObject {
 // SwitchboardProjectSettings
 	public FSoftObjectPath SwitchboardOSCListener;
-	public UObject GetSwitchboardProjectSettings() { return default; }
+	public static USwitchboardProjectSettings GetSwitchboardProjectSettings() { return default; }
 }

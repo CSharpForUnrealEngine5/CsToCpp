@@ -4,4 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("GameFramework/ProjectileMovementComponent.h")]
 public partial struct FOnProjectileBounceDelegate {
 // OnProjectileBounceDelegate__DelegateSignature
+	void AddDynamic(object obj, string functionName) {}
 }

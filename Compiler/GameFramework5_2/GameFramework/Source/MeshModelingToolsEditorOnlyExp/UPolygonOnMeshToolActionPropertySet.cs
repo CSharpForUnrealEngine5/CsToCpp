@@ -4,5 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("PolygonOnMeshTool.h")]
 public partial class UPolygonOnMeshToolActionPropertySet : UInteractiveToolPropertySet {
 // PolygonOnMeshToolActionPropertySet
-	public void DrawPolygon() {}
+	public  void DrawPolygon() {}
 }

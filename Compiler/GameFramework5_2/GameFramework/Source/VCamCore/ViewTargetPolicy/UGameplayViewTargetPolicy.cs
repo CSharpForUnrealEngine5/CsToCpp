@@ -5,6 +5,6 @@ using CSharpToCpp.Utilities;
 ///<summary>A gameplay view target policy determines which player controller should change its view target when gameplay is started,</summary>
 public partial class UGameplayViewTargetPolicy : UObject {
 // GameplayViewTargetPolicy
-	public TArray<UObject> DeterminePlayerControllers(FDeterminePlayerControllersTargetPolicyParams Params) { return default; }
-	public void UpdateViewTarget(FUpdateViewTargetPolicyParams Params) {}
+	public  TArray<APlayerController> DeterminePlayerControllers(FDeterminePlayerControllersTargetPolicyParams Params) { return default; }
+	public  void UpdateViewTarget(FUpdateViewTargetPolicyParams Params) {}
 }

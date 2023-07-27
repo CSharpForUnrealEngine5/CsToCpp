@@ -10,7 +10,7 @@ public partial class UStaticMeshComponent : UMeshComponent {
 	public int MinLOD;
 	public int SubDivisionStepSize;
 	public UStaticMesh StaticMesh;
-	public void OnRep_StaticMesh(UObject OldStaticMesh) {}
+	public  void OnRep_StaticMesh(UStaticMesh OldStaticMesh) {}
 	public FColor WireframeColorOverride;
 	public bool bDisallowNanite;
 	public bool bForceDisableNanite;
@@ -49,13 +49,13 @@ public partial class UStaticMeshComponent : UMeshComponent {
 	public string StaticMeshDerivedDataKey;
 	public TArray<uint> MaterialStreamingRelativeBoxes;
 	public FLightmassPrimitiveSettings LightmassSettings;
-	public bool SetStaticMesh(UObject NewMesh) { return default; }
-	public void SetForcedLodModel(int NewForcedLodModel) {}
-	public void SetDistanceFieldSelfShadowBias(float NewValue) {}
-	public void SetEvaluateWorldPositionOffsetInRayTracing(bool NewValue) {}
-	public void SetEvaluateWorldPositionOffset(bool NewValue) {}
-	public bool GetInitialEvaluateWorldPositionOffset() { return default; }
-	public void GetLocalBounds(FVector Min,FVector Max) {}
-	public void SetReverseCulling(bool ReverseCulling) {}
-	public void SetForceDisableNanite(bool bInForceDisableNanite) {}
+	public  bool SetStaticMesh(UStaticMesh NewMesh) { return default; }
+	public  void SetForcedLodModel(int NewForcedLodModel) {}
+	public  void SetDistanceFieldSelfShadowBias(float NewValue) {}
+	public  void SetEvaluateWorldPositionOffsetInRayTracing(bool NewValue) {}
+	public  void SetEvaluateWorldPositionOffset(bool NewValue) {}
+	public  bool GetInitialEvaluateWorldPositionOffset() { return default; }
+	public  void GetLocalBounds(FVector Min,FVector Max) {}
+	public  void SetReverseCulling(bool ReverseCulling) {}
+	public  void SetForceDisableNanite(bool bInForceDisableNanite) {}
 }

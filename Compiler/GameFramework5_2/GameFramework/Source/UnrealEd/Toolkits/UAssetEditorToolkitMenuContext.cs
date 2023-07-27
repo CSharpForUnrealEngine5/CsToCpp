@@ -4,5 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("Toolkits/AssetEditorToolkitMenuContext.h")]
 public partial class UAssetEditorToolkitMenuContext : UObject {
 // AssetEditorToolkitMenuContext
-	public TArray<UObject> GetEditingObjects() { return default; }
+	public  TArray<UObject> GetEditingObjects() { return default; }
 }

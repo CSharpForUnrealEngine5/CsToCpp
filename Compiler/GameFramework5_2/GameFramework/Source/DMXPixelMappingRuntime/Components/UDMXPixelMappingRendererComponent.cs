@@ -5,8 +5,8 @@ using CSharpToCpp.Utilities;
 ///<summary>Component for rendering input texture.</summary>
 public partial class UDMXPixelMappingRendererComponent : UDMXPixelMappingOutputComponent {
 // DMXPixelMappingRendererComponent
-	public void RendererInputTexture() {}
-	public bool GetPixelMappingComponentModulators(FDMXEntityFixturePatchRef FixturePatchRef,TArray<UObject> DMXModulators) { return default; }
+	public  void RendererInputTexture() {}
+	public  bool GetPixelMappingComponentModulators(FDMXEntityFixturePatchRef FixturePatchRef,TArray<UDMXModulator> DMXModulators) { return default; }
 	public EDMXPixelMappingRendererType RendererType;
 	public UTexture InputTexture;
 	public UMaterialInterface InputMaterial;

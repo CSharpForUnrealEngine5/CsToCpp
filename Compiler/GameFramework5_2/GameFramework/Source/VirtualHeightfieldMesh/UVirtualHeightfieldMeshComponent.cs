@@ -21,5 +21,5 @@ public partial class UVirtualHeightfieldMeshComponent : UPrimitiveComponent {
 	public int NumOcclusionLods;
 	public bool bHiddenInEditor;
 	public bool bWorldPositionOffsetVelocity;
-	public void GatherHideFlags(bool InOutHidePrimitivesInEditor,bool InOutHidePrimitivesInGame) {}
+	public  void GatherHideFlags(bool InOutHidePrimitivesInEditor,bool InOutHidePrimitivesInGame) {}
 }

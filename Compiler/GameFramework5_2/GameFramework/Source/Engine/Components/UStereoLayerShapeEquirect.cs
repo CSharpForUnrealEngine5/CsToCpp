@@ -10,5 +10,5 @@ public partial class UStereoLayerShapeEquirect : UStereoLayerShape {
 	public FVector2D RightScale;
 	public FVector2D LeftBias;
 	public FVector2D RightBias;
-	public void SetEquirectProps(FEquirectProps InScaleBiases) {}
+	public  void SetEquirectProps(FEquirectProps InScaleBiases) {}
 }

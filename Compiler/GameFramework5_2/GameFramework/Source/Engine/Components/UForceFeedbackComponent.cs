@@ -15,10 +15,10 @@ public partial class UForceFeedbackComponent : USceneComponent {
 	public UForceFeedbackAttenuation AttenuationSettings;
 	public FForceFeedbackAttenuationSettings AttenuationOverrides;
 	public FOnForceFeedbackFinished OnForceFeedbackFinished;
-	public void SetForceFeedbackEffect(UObject NewForceFeedbackEffect) {}
-	public void Play(float StartTime/*=0.0f*/) {}
-	public void Stop() {}
-	public void SetIntensityMultiplier(float NewIntensityMultiplier) {}
-	public void AdjustAttenuation(FForceFeedbackAttenuationSettings InAttenuationSettings) {}
-	public bool BP_GetAttenuationSettingsToApply(FForceFeedbackAttenuationSettings OutAttenuationSettings) { return default; }
+	public  void SetForceFeedbackEffect(UForceFeedbackEffect NewForceFeedbackEffect) {}
+	public  void Play(float StartTime/*=0.0f*/) {}
+	public  void Stop() {}
+	public  void SetIntensityMultiplier(float NewIntensityMultiplier) {}
+	public  void AdjustAttenuation(FForceFeedbackAttenuationSettings InAttenuationSettings) {}
+	public  bool BP_GetAttenuationSettingsToApply(FForceFeedbackAttenuationSettings OutAttenuationSettings) { return default; }
 }

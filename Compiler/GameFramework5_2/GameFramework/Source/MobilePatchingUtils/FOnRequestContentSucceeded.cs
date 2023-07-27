@@ -4,4 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("MobilePatchingLibrary.h")]
 public partial struct FOnRequestContentSucceeded {
 // OnRequestContentSucceeded__DelegateSignature
+	void AddDynamic(object obj, string functionName) {}
 }

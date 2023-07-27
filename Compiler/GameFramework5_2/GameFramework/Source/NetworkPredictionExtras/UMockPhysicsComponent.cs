@@ -6,11 +6,11 @@ using CSharpToCpp.Utilities;
 public partial class UMockPhysicsComponent : UBaseMovementComponent {
 // MockPhysicsComponent
 	public FMockPhysicsInputCmd PendingInputCmd;
-	public void FPhysicsJumpCueEvent(FVector Location,float ElapsedTimeSeconds) {}
+	public  void FPhysicsJumpCueEvent(FVector Location,float ElapsedTimeSeconds) {}
 	public FPhysicsJumpCueEvent OnJumpActivatedEvent;
-	public void FPhysicsChargeCueEvent(FVector Location,float ElapsedTimeSeconds) {}
+	public  void FPhysicsChargeCueEvent(FVector Location,float ElapsedTimeSeconds) {}
 	public FPhysicsChargeCueEvent OnChargeActivatedEvent;
-	public void FMockPhysicsNotifyStateChange(bool bNewStateValue) {}
+	public  void FMockPhysicsNotifyStateChange(bool bNewStateValue) {}
 	public FMockPhysicsNotifyStateChange OnChargeStateChange;
 	public bool bIsCharging;
 }

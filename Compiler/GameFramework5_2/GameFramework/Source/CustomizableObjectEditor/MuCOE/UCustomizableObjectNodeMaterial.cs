@@ -10,7 +10,7 @@ public partial class UCustomizableObjectNodeMaterial : UCustomizableObjectNodeMa
 	public int MeshComponentIndex;
 	public TMap<FGuid,FEdGraphPinReference> PinsParameter;
 	public TMap<FGuid,EPinMode> PinsImagePinMode;
-	public void MeshPostEditChangeProperty(FPostEditChangePropertyDelegateParameters Parameters) {}
+	public  void MeshPostEditChangeProperty(FPostEditChangePropertyDelegateParameters Parameters) {}
 	public bool bDefaultPinModeMutable_DEPRECATED;
 	public TArray<FCustomizableObjectNodeMaterialImage> Images_DEPRECATED;
 	public TArray<FCustomizableObjectNodeMaterialVector> VectorParams_DEPRECATED;

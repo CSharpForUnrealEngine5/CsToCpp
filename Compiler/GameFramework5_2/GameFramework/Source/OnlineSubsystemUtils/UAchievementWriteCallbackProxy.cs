@@ -6,5 +6,5 @@ public partial class UAchievementWriteCallbackProxy : UOnlineBlueprintCallProxyB
 // AchievementWriteCallbackProxy
 	public FAchievementWriteDelegate OnSuccess;
 	public FAchievementWriteDelegate OnFailure;
-	public UObject WriteAchievementProgress(UObject WorldContextObject,UObject PlayerController,string AchievementName,float Progress/*=100.0f*/,int UserTag/*=0*/) { return default; }
+	public static UAchievementWriteCallbackProxy WriteAchievementProgress(UObject WorldContextObject,APlayerController PlayerController,string AchievementName,float Progress/*=100.0f*/,int UserTag/*=0*/) { return default; }
 }

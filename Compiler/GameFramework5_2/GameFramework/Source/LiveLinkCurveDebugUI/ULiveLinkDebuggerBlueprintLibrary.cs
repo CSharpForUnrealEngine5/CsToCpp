@@ -4,6 +4,6 @@ using CSharpToCpp.Utilities;
 [CppInclude("LiveLinkDebuggerBlueprintLibrary.h")]
 public partial class ULiveLinkDebuggerBlueprintLibrary : UBlueprintFunctionLibrary {
 // LiveLinkDebuggerBlueprintLibrary
-	public void DisplayLiveLinkDebugger(string SubjectName) {}
-	public void HideLiveLinkDebugger() {}
+	public static void DisplayLiveLinkDebugger(string SubjectName) {}
+	public static void HideLiveLinkDebugger() {}
 }

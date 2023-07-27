@@ -7,8 +7,8 @@ public partial class UBinkMediaTexture : UTexture {
 // BinkMediaTexture
 	public byte AddressX;
 	public byte AddressY;
-	public void SetMediaPlayer(UObject InMediaPlayer) {}
-	public void Clear() {}
+	public  void SetMediaPlayer(UBinkMediaPlayer InMediaPlayer) {}
+	public  void Clear() {}
 	public UBinkMediaPlayer MediaPlayer;
 	public byte PixelFormat;
 	public bool Tonemap;

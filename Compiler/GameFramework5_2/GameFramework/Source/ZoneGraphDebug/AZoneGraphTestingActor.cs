@@ -5,7 +5,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Debug actor to visually test zone graph.</summary>
 public partial class AZoneGraphTestingActor : AActor {
 // ZoneGraphTestingActor
-	public void EnableCustomTests() {}
-	public void DisableCustomTests() {}
+	public  void EnableCustomTests() {}
+	public  void DisableCustomTests() {}
 	public UZoneGraphTestingComponent DebugComp;
 }

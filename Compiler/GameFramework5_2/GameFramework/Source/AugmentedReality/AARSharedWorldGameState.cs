@@ -10,5 +10,5 @@ public partial class AARSharedWorldGameState : AGameState {
 	public int ARWorldBytesTotal;
 	public int PreviewImageBytesDelivered;
 	public int ARWorldBytesDelivered;
-	public void K2_OnARWorldMapIsReady() {}
+	public  void K2_OnARWorldMapIsReady() {}
 }

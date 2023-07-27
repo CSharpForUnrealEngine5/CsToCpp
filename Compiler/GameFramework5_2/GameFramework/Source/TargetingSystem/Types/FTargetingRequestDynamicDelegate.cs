@@ -4,4 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("Types/TargetingSystemTypes.h")]
 public partial struct FTargetingRequestDynamicDelegate {
 // TargetingRequestDynamicDelegate__DelegateSignature
+	void AddDynamic(object obj, string functionName) {}
 }

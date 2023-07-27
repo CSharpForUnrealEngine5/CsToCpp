@@ -4,5 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("ChaosClothAsset/ClothTrainingTool.h")]
 public partial class UClothTrainingToolActionProperties : UObject {
 // ClothTrainingToolActionProperties
-	public void StartTraining() {}
+	public  void StartTraining() {}
 }

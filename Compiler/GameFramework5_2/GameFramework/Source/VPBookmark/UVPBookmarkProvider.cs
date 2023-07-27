@@ -4,9 +4,9 @@ using CSharpToCpp.Utilities;
 [CppInclude("IVPBookmarkProvider.h")]
 public partial class UVPBookmarkProvider : UInterface {
 // VPBookmarkProvider
-	public void OnBookmarkActivation(UObject Bookmark,bool bActivate) {}
-	public void OnBookmarkChanged(UObject Bookmark) {}
-	public void UpdateBookmarkSplineMeshIndicator() {}
-	public void HideBookmarkSplineMeshIndicator() {}
-	public void GenerateBookmarkName() {}
+	public  void OnBookmarkActivation(UVPBookmark Bookmark,bool bActivate) {}
+	public  void OnBookmarkChanged(UVPBookmark Bookmark) {}
+	public  void UpdateBookmarkSplineMeshIndicator() {}
+	public  void HideBookmarkSplineMeshIndicator() {}
+	public  void GenerateBookmarkName() {}
 }

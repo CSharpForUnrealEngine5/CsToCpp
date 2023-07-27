@@ -13,6 +13,6 @@ public partial class UBoundsCopyComponent : UActorComponent {
 	public bool bCopyXBounds;
 	public bool bCopyYBounds;
 	public bool bCopyZBounds;
-	public void SetRotation() {}
-	public void SetTransformToBounds() {}
+	public  void SetRotation() {}
+	public  void SetTransformToBounds() {}
 }

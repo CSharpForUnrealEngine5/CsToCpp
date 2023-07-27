@@ -4,6 +4,6 @@ using CSharpToCpp.Utilities;
 [CppInclude("Binding/TextBinding.h")]
 public partial class UTextBinding : UPropertyBinding {
 // TextBinding
-	public string GetTextValue() { return default; }
-	public string GetStringValue() { return default; }
+	public  string GetTextValue() { return default; }
+	public  string GetStringValue() { return default; }
 }

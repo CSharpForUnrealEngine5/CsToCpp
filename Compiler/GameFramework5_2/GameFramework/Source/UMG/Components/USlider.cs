@@ -24,14 +24,14 @@ public partial class USlider : UWidget {
 	public FOnControllerCaptureBeginEvent OnControllerCaptureBegin;
 	public FOnControllerCaptureEndEvent OnControllerCaptureEnd;
 	public FOnFloatValueChangedEvent OnValueChanged;
-	public float GetValue() { return default; }
-	public float GetNormalizedValue() { return default; }
-	public void SetValue(float InValue) {}
-	public void SetMinValue(float InValue) {}
-	public void SetMaxValue(float InValue) {}
-	public void SetIndentHandle(bool InValue) {}
-	public void SetLocked(bool InValue) {}
-	public void SetStepSize(float InValue) {}
-	public void SetSliderBarColor(FLinearColor InValue) {}
-	public void SetSliderHandleColor(FLinearColor InValue) {}
+	public  float GetValue() { return default; }
+	public  float GetNormalizedValue() { return default; }
+	public  void SetValue(float InValue) {}
+	public  void SetMinValue(float InValue) {}
+	public  void SetMaxValue(float InValue) {}
+	public  void SetIndentHandle(bool InValue) {}
+	public  void SetLocked(bool InValue) {}
+	public  void SetStepSize(float InValue) {}
+	public  void SetSliderBarColor(FLinearColor InValue) {}
+	public  void SetSliderHandleColor(FLinearColor InValue) {}
 }

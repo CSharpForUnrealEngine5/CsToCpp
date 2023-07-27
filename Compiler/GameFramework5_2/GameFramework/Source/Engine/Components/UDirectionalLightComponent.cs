@@ -46,22 +46,22 @@ public partial class UDirectionalLightComponent : ULightComponent {
 	public bool bCastModulatedShadows;
 	public FColor ModulatedShadowColor;
 	public float ShadowAmount;
-	public void SetDynamicShadowDistanceMovableLight(float NewValue) {}
-	public void SetDynamicShadowDistanceStationaryLight(float NewValue) {}
-	public void SetDynamicShadowCascades(int NewValue) {}
-	public void SetCascadeDistributionExponent(float NewValue) {}
-	public void SetCascadeTransitionFraction(float NewValue) {}
-	public void SetShadowDistanceFadeoutFraction(float NewValue) {}
-	public void SetShadowCascadeBiasDistribution(float NewValue) {}
-	public void SetEnableLightShaftOcclusion(bool bNewValue) {}
-	public void SetOcclusionMaskDarkness(float NewValue) {}
-	public void SetOcclusionDepthRange(float NewValue) {}
-	public void SetLightShaftOverrideDirection(FVector NewValue) {}
-	public void SetLightSourceAngle(float NewValue) {}
-	public void SetLightSourceSoftAngle(float NewValue) {}
-	public void SetShadowSourceAngleFactor(float NewValue) {}
-	public void SetShadowAmount(float NewValue) {}
-	public void SetAtmosphereSunLight(bool bNewValue) {}
-	public void SetAtmosphereSunLightIndex(int NewValue) {}
-	public void SetForwardShadingPriority(int NewValue) {}
+	public  void SetDynamicShadowDistanceMovableLight(float NewValue) {}
+	public  void SetDynamicShadowDistanceStationaryLight(float NewValue) {}
+	public  void SetDynamicShadowCascades(int NewValue) {}
+	public  void SetCascadeDistributionExponent(float NewValue) {}
+	public  void SetCascadeTransitionFraction(float NewValue) {}
+	public  void SetShadowDistanceFadeoutFraction(float NewValue) {}
+	public  void SetShadowCascadeBiasDistribution(float NewValue) {}
+	public  void SetEnableLightShaftOcclusion(bool bNewValue) {}
+	public  void SetOcclusionMaskDarkness(float NewValue) {}
+	public  void SetOcclusionDepthRange(float NewValue) {}
+	public  void SetLightShaftOverrideDirection(FVector NewValue) {}
+	public  void SetLightSourceAngle(float NewValue) {}
+	public  void SetLightSourceSoftAngle(float NewValue) {}
+	public  void SetShadowSourceAngleFactor(float NewValue) {}
+	public  void SetShadowAmount(float NewValue) {}
+	public  void SetAtmosphereSunLight(bool bNewValue) {}
+	public  void SetAtmosphereSunLightIndex(int NewValue) {}
+	public  void SetForwardShadingPriority(int NewValue) {}
 }

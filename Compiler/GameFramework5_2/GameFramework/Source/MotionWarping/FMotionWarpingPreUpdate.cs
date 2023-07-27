@@ -4,4 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("MotionWarpingComponent.h")]
 public partial struct FMotionWarpingPreUpdate {
 // MotionWarpingPreUpdate__DelegateSignature
+	void AddDynamic(object obj, string functionName) {}
 }

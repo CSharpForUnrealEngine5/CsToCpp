@@ -4,9 +4,9 @@ using CSharpToCpp.Utilities;
 [CppInclude("PythonAutomationTest.h")]
 public partial class UPyAutomationTestLibrary : UBlueprintFunctionLibrary {
 // PyAutomationTestLibrary
-	public void SetIsRunningPyLatentCommand(bool isRunning) {}
-	public bool GetIsRunningPyLatentCommand() { return default; }
-	public void SetPyLatentCommandTimeout(float Seconds) {}
-	public float GetPyLatentCommandTimeout() { return default; }
-	public void ResetPyLatentCommand() {}
+	public static void SetIsRunningPyLatentCommand(bool isRunning) {}
+	public static bool GetIsRunningPyLatentCommand() { return default; }
+	public static void SetPyLatentCommandTimeout(float Seconds) {}
+	public static float GetPyLatentCommandTimeout() { return default; }
+	public static void ResetPyLatentCommand() {}
 }

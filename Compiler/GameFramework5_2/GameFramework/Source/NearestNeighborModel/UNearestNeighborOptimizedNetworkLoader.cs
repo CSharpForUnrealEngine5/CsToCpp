@@ -5,7 +5,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Helper class to load the optimized network from disk.</summary>
 public partial class UNearestNeighborOptimizedNetworkLoader : UObject {
 // NearestNeighborOptimizedNetworkLoader
-	public bool LoadOptimizedNetwork(string OnnxPath) { return default; }
-	public bool DoesMeetPrerequisites() { return default; }
-	public UObject GetOptimizedNetwork() { return default; }
+	public  bool LoadOptimizedNetwork(string OnnxPath) { return default; }
+	public  bool DoesMeetPrerequisites() { return default; }
+	public  UNearestNeighborOptimizedNetwork GetOptimizedNetwork() { return default; }
 }

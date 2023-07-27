@@ -4,4 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("MoviePipelinePIEExecutor.h")]
 public partial struct FOnMoviePipelineIndividualJobStarted {
 // OnMoviePipelineIndividualJobStarted__DelegateSignature
+	void AddDynamic(object obj, string functionName) {}
 }

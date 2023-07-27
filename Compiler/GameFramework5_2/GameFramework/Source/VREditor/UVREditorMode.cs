@@ -5,9 +5,9 @@ using CSharpToCpp.Utilities;
 ///<summary>VR Editor Mode. Extends editor viewports with functionality for VR controls and object manipulation</summary>
 public partial class UVREditorMode : UVREditorModeBase {
 // VREditorMode
-	public void SetGameView(bool bGameView) {}
-	public bool IsInGameView() { return default; }
-	public float GetWorldScaleFactor() { return default; }
+	public  void SetGameView(bool bGameView) {}
+	public  bool IsInGameView() { return default; }
+	public  float GetWorldScaleFactor() { return default; }
 	public AVREditorAvatarActor AvatarActor;
 	public UVREditorUISystem UISystem;
 	public AVREditorTeleporter TeleportActor;

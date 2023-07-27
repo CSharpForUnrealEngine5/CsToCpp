@@ -5,5 +5,5 @@ using CSharpToCpp.Utilities;
 ///<summary>Static library to supply "for free" functionality to widgets that implement IUserListEntry</summary>
 public partial class UUserObjectListEntryLibrary : UBlueprintFunctionLibrary {
 // UserObjectListEntryLibrary
-	public UObject GetListItemObject(object /*UserObjectListEntry*/ UserObjectListEntry) { return default; }
+	public static UObject GetListItemObject(object /*UserObjectListEntry*/ UserObjectListEntry) { return default; }
 }

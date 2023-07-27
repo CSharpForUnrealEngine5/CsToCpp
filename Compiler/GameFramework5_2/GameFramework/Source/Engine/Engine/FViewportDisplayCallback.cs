@@ -4,4 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("Engine/ViewportStatsSubsystem.h")]
 public partial struct FViewportDisplayCallback {
 // ViewportDisplayCallback__DelegateSignature
+	void AddDynamic(object obj, string functionName) {}
 }

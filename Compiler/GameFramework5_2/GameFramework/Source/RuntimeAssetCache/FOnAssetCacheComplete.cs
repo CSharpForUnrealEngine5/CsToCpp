@@ -4,4 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("RuntimeAssetCacheBuilders.h")]
 public partial struct FOnAssetCacheComplete {
 // OnAssetCacheComplete__DelegateSignature
+	void AddDynamic(object obj, string functionName) {}
 }

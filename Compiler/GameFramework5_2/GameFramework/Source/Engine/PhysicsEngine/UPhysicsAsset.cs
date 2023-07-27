@@ -19,8 +19,8 @@ public partial class UPhysicsAsset : UObject {
 	public EPhysicsAssetSolverType SolverType;
 	public bool bNotForDedicatedServer;
 	public UThumbnailInfo ThumbnailInfo;
-	public FConstraintInstanceAccessor GetConstraintByName(string ConstraintName) { return default; }
-	public FConstraintInstanceAccessor GetConstraintByBoneNames(string Bone1Name,string Bone2Name) { return default; }
-	public void GetConstraints(bool bIncludesTerminated,TArray<FConstraintInstanceAccessor> OutConstraints) {}
+	public  FConstraintInstanceAccessor GetConstraintByName(string ConstraintName) { return default; }
+	public  FConstraintInstanceAccessor GetConstraintByBoneNames(string Bone1Name,string Bone2Name) { return default; }
+	public  void GetConstraints(bool bIncludesTerminated,TArray<FConstraintInstanceAccessor> OutConstraints) {}
 	public TArray<UBodySetup> BodySetup_DEPRECATED;
 }

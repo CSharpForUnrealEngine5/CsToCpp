@@ -5,5 +5,5 @@ using CSharpToCpp.Utilities;
 ///<summary>Direct base class for all UE objects</summary>
 public partial class UObject  {
 // Object
-	public void ExecuteUbergraph(int EntryPoint) {}
+	public  void ExecuteUbergraph(int EntryPoint) {}
 }

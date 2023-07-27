@@ -5,6 +5,6 @@ using CSharpToCpp.Utilities;
 ///<summary>Convert a scalar field to a integer one</summary>
 public partial class UToIntegerField : UFieldNodeInt {
 // ToIntegerField
-	public UObject SetToIntegerField(UObject FloatField) { return default; }
+	public  UToIntegerField SetToIntegerField(UFieldNodeFloat FloatField) { return default; }
 	public UFieldNodeFloat FloatField;
 }

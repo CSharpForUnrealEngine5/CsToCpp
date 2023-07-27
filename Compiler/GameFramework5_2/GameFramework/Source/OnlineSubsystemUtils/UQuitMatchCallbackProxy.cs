@@ -6,5 +6,5 @@ public partial class UQuitMatchCallbackProxy : UOnlineBlueprintCallProxyBase {
 // QuitMatchCallbackProxy
 	public FEmptyOnlineDelegate OnSuccess;
 	public FEmptyOnlineDelegate OnFailure;
-	public UObject QuitMatch(UObject WorldContextObject,UObject PlayerController,string MatchID,EMPMatchOutcome Outcome,int TurnTimeoutInSeconds) { return default; }
+	public static UQuitMatchCallbackProxy QuitMatch(UObject WorldContextObject,APlayerController PlayerController,string MatchID,EMPMatchOutcome Outcome,int TurnTimeoutInSeconds) { return default; }
 }

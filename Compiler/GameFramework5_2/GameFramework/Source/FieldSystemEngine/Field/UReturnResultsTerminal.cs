@@ -5,5 +5,5 @@ using CSharpToCpp.Utilities;
 ///<summary>Terminal field of a graph</summary>
 public partial class UReturnResultsTerminal : UFieldNodeBase {
 // ReturnResultsTerminal
-	public UObject SetReturnResultsTerminal() { return default; }
+	public  UReturnResultsTerminal SetReturnResultsTerminal() { return default; }
 }

@@ -55,11 +55,11 @@ public partial class AWaterBrushManager : AWaterLandscapeBrush {
 	public bool bNeedsForceUpdate;
 	public UMaterialInterface FinalizeVelocityHeightMaterial_DEPRECATED;
 	public UMaterialInstanceDynamic FinalizeVelocityHeightMID_DEPRECATED;
-	public void ForceUpdate() {}
-	public void SingleBlurStep() {}
-	public void FindEdges() {}
-	public void SingleJumpStep() {}
-	public void GetWaterCacheKey(UObject WaterBrush,UObject ContainerObject,FWaterBodyBrushCache Value) {}
-	public void SortWaterBodiesForBrushRender(TArray<UObject> InOutWaterBodies) {}
-	public void SetupDefaultMaterials() {}
+	public  void ForceUpdate() {}
+	public  void SingleBlurStep() {}
+	public  void FindEdges() {}
+	public  void SingleJumpStep() {}
+	public  void GetWaterCacheKey(AActor WaterBrush,UWaterBodyBrushCacheContainer ContainerObject,FWaterBodyBrushCache Value) {}
+	public  void SortWaterBodiesForBrushRender(TArray<AWaterBody> InOutWaterBodies) {}
+	public  void SetupDefaultMaterials() {}
 }

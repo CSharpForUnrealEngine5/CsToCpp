@@ -10,8 +10,8 @@ public partial class UAnimationAsset : UObject {
 	public TArray<UAnimationAsset> ChildrenAssets;
 	public UAssetMappingTable AssetMappingTable;
 	public TArray<UAssetUserData> AssetUserData;
-	public float GetPlayLength() { return default; }
-	public void SetPreviewSkeletalMesh(UObject PreviewMesh) {}
+	public  float GetPlayLength() { return default; }
+	public  void SetPreviewSkeletalMesh(USkeletalMesh PreviewMesh) {}
 	public UThumbnailInfo ThumbnailInfo;
 	public UPoseAsset PreviewPoseAsset;
 	public TSoftObjectPtr<USkeletalMesh> PreviewSkeletalMesh;

@@ -4,5 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("BaseGizmos/GizmoInterfaces.h")]
 public partial class UGizmoRenderMultiTarget : UInterface {
 // GizmoRenderMultiTarget
-	public void UpdateVisibilityState(bool bVisible,uint InPartIdentifier) {}
+	public  void UpdateVisibilityState(bool bVisible,uint InPartIdentifier) {}
 }

@@ -6,5 +6,5 @@ public partial class ULidarToolActionsNormals : UInteractiveToolPropertySet {
 // LidarToolActionsNormals
 	public int Quality;
 	public float NoiseTolerance;
-	public void CalculateNormals() {}
+	public  void CalculateNormals() {}
 }

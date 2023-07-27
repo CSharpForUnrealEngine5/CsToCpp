@@ -5,11 +5,11 @@ using CSharpToCpp.Utilities;
 ///<summary>A non instantiated UObject that acts as a handler for a GameplayCue. These are useful for one-off "burst" effects.</summary>
 public partial class UGameplayCueNotify_Static : UObject {
 // GameplayCueNotify_Static
-	public void K2_HandleGameplayCue(UObject MyTarget,EGameplayCueEvent EventType,FGameplayCueParameters Parameters) {}
-	public bool OnExecute(UObject MyTarget,FGameplayCueParameters Parameters) { return default; }
-	public bool OnActive(UObject MyTarget,FGameplayCueParameters Parameters) { return default; }
-	public bool WhileActive(UObject MyTarget,FGameplayCueParameters Parameters) { return default; }
-	public bool OnRemove(UObject MyTarget,FGameplayCueParameters Parameters) { return default; }
+	public  void K2_HandleGameplayCue(AActor MyTarget,EGameplayCueEvent EventType,FGameplayCueParameters Parameters) {}
+	public  bool OnExecute(AActor MyTarget,FGameplayCueParameters Parameters) { return default; }
+	public  bool OnActive(AActor MyTarget,FGameplayCueParameters Parameters) { return default; }
+	public  bool WhileActive(AActor MyTarget,FGameplayCueParameters Parameters) { return default; }
+	public  bool OnRemove(AActor MyTarget,FGameplayCueParameters Parameters) { return default; }
 	public FGameplayTag GameplayCueTag;
 	public string GameplayCueName;
 	public bool IsOverride;

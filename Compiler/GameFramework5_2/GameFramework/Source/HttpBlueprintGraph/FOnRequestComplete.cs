@@ -4,4 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("HttpRequestProxyObject.h")]
 public partial struct FOnRequestComplete {
 // OnRequestComplete__DelegateSignature
+	void AddDynamic(object obj, string functionName) {}
 }

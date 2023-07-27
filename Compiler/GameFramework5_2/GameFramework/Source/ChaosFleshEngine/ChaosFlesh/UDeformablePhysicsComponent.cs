@@ -5,7 +5,7 @@ using CSharpToCpp.Utilities;
 ///<summary>UDeformablePhysicsComponent</summary>
 public partial class UDeformablePhysicsComponent : UPrimitiveComponent {
 // DeformablePhysicsComponent
-	public void EnableSimulation(UObject DeformableSolverComponent) {}
-	public void EnableSimulationFromActor(UObject DeformableSolverActor) {}
+	public  void EnableSimulation(UDeformableSolverComponent DeformableSolverComponent) {}
+	public  void EnableSimulationFromActor(ADeformableSolverActor DeformableSolverActor) {}
 	public UDeformableSolverComponent PrimarySolverComponent;
 }

@@ -5,12 +5,12 @@ using CSharpToCpp.Utilities;
 ///<summary>An individual Pose made of Control Rig Controls</summary>
 public partial class UControlRigPoseAsset : UObject {
 // ControlRigPoseAsset
-	public void SavePose(UObject InControlRig,bool bUseAll) {}
-	public void PastePose(UObject InControlRig,bool bDoKey/*=false*/,bool bDoMirror/*=false*/) {}
-	public void SelectControls(UObject InControlRig,bool bDoMirror/*=false*/) {}
-	public void GetCurrentPose(UObject InControlRig,FControlRigControlPose OutPose) {}
-	public TArray<string> GetControlNames() { return default; }
-	public void ReplaceControlName(string CurrentName,string NewName) {}
-	public bool DoesMirrorMatch(UObject ControlRig,string ControlName) { return default; }
+	public  void SavePose(UControlRig InControlRig,bool bUseAll) {}
+	public  void PastePose(UControlRig InControlRig,bool bDoKey/*=false*/,bool bDoMirror/*=false*/) {}
+	public  void SelectControls(UControlRig InControlRig,bool bDoMirror/*=false*/) {}
+	public  void GetCurrentPose(UControlRig InControlRig,FControlRigControlPose OutPose) {}
+	public  TArray<string> GetControlNames() { return default; }
+	public  void ReplaceControlName(string CurrentName,string NewName) {}
+	public  bool DoesMirrorMatch(UControlRig ControlRig,string ControlName) { return default; }
 	public FControlRigControlPose Pose;
 }

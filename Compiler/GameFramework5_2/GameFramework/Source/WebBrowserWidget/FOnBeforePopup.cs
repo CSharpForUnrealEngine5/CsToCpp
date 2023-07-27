@@ -4,4 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("WebBrowser.h")]
 public partial struct FOnBeforePopup {
 // OnBeforePopup__DelegateSignature
+	void AddDynamic(object obj, string functionName) {}
 }

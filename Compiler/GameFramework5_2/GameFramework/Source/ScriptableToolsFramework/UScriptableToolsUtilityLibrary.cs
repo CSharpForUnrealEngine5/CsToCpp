@@ -4,7 +4,7 @@ using CSharpToCpp.Utilities;
 [CppInclude("ScriptableInteractiveTool.h")]
 public partial class UScriptableToolsUtilityLibrary : UBlueprintFunctionLibrary {
 // ScriptableToolsUtilityLibrary
-	public FInputRayHit MakeInputRayHit_Miss() { return default; }
-	public FInputRayHit MakeInputRayHit_MaxDepth() { return default; }
-	public FInputRayHit MakeInputRayHit(double HitDepth,UObject OptionalHitObject) { return default; }
+	public static FInputRayHit MakeInputRayHit_Miss() { return default; }
+	public static FInputRayHit MakeInputRayHit_MaxDepth() { return default; }
+	public static FInputRayHit MakeInputRayHit(double HitDepth,UObject OptionalHitObject) { return default; }
 }

@@ -34,7 +34,7 @@ public partial class UNiagaraScript : UNiagaraScriptBase {
 	public string CollapsedViewFormat_DEPRECATED;
 	public TMap<string,string> ScriptMetaData_DEPRECATED;
 	public UNiagaraScriptSourceBase Source_DEPRECATED;
-	public void RaiseOnGPUCompilationComplete() {}
+	public  void RaiseOnGPUCompilationComplete() {}
 	public FNiagaraScriptExecutionParameterStore ScriptExecutionParamStoreCPU;
 	public FNiagaraScriptExecutionParameterStore ScriptExecutionParamStoreGPU;
 	public FNiagaraScriptExecutionParameterStore ScriptExecutionParamStore;

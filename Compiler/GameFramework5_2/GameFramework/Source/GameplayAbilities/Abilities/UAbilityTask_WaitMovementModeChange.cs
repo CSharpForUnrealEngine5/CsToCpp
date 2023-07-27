@@ -5,6 +5,6 @@ using CSharpToCpp.Utilities;
 public partial class UAbilityTask_WaitMovementModeChange : UAbilityTask {
 // AbilityTask_WaitMovementModeChange
 	public FMovementModeChangedDelegate OnChange;
-	public void OnMovementModeChange(UObject Character,EMovementMode PrevMovementMode,byte PreviousCustomMode) {}
-	public UObject CreateWaitMovementModeChange(UObject OwningAbility,EMovementMode NewMode) { return default; }
+	public  void OnMovementModeChange(ACharacter Character,EMovementMode PrevMovementMode,byte PreviousCustomMode) {}
+	public static UAbilityTask_WaitMovementModeChange CreateWaitMovementModeChange(UGameplayAbility OwningAbility,EMovementMode NewMode) { return default; }
 }

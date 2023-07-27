@@ -4,21 +4,21 @@ using CSharpToCpp.Utilities;
 [CppInclude("EnhancedInputLibrary.h")]
 public partial class UEnhancedInputLibrary : UBlueprintFunctionLibrary {
 // EnhancedInputLibrary
-	public void RequestRebuildControlMappingsUsingContext(UObject Context,bool bForceImmediately/*=false*/) {}
-	public void BreakInputActionValue(FInputActionValue InActionValue,double X,double Y,double Z,EInputActionValueType Type) {}
-	public FInputActionValue MakeInputActionValueOfType(double X,double Y,double Z,EInputActionValueType ValueType) { return default; }
-	public FInputActionValue MakeInputActionValue(double X,double Y,double Z,FInputActionValue MatchValueType) { return default; }
-	public UObject GetPlayerMappableKeySettings(FEnhancedActionKeyMapping ActionKeyMapping) { return default; }
-	public string GetMappingName(FEnhancedActionKeyMapping ActionKeyMapping) { return default; }
-	public bool IsActionKeyMappingPlayerMappable(FEnhancedActionKeyMapping ActionKeyMapping) { return default; }
-	public FInputActionValue GetBoundActionValue(UObject Actor,UObject Action) { return default; }
-	public bool Conv_InputActionValueToBool(FInputActionValue InValue) { return default; }
-	public double Conv_InputActionValueToAxis1D(FInputActionValue InValue) { return default; }
-	public FVector2D Conv_InputActionValueToAxis2D(FInputActionValue InValue) { return default; }
-	public FVector Conv_InputActionValueToAxis3D(FInputActionValue ActionValue) { return default; }
-	public string Conv_InputActionValueToString(FInputActionValue ActionValue) { return default; }
-	public FPlayerMappableKeySlot GetFirstPlayerMappableKeySlot() { return default; }
-	public FPlayerMappableKeySlot GetSecondPlayerMappableKeySlot() { return default; }
-	public FPlayerMappableKeySlot GetThirdPlayerMappableKeySlot() { return default; }
-	public FPlayerMappableKeySlot GetFourthPlayerMappableKeySlot() { return default; }
+	public static void RequestRebuildControlMappingsUsingContext(UInputMappingContext Context,bool bForceImmediately/*=false*/) {}
+	public static void BreakInputActionValue(FInputActionValue InActionValue,double X,double Y,double Z,EInputActionValueType Type) {}
+	public static FInputActionValue MakeInputActionValueOfType(double X,double Y,double Z,EInputActionValueType ValueType) { return default; }
+	public static FInputActionValue MakeInputActionValue(double X,double Y,double Z,FInputActionValue MatchValueType) { return default; }
+	public static UPlayerMappableKeySettings GetPlayerMappableKeySettings(FEnhancedActionKeyMapping ActionKeyMapping) { return default; }
+	public static string GetMappingName(FEnhancedActionKeyMapping ActionKeyMapping) { return default; }
+	public static bool IsActionKeyMappingPlayerMappable(FEnhancedActionKeyMapping ActionKeyMapping) { return default; }
+	public static FInputActionValue GetBoundActionValue(AActor Actor,UInputAction Action) { return default; }
+	public static bool Conv_InputActionValueToBool(FInputActionValue InValue) { return default; }
+	public static double Conv_InputActionValueToAxis1D(FInputActionValue InValue) { return default; }
+	public static FVector2D Conv_InputActionValueToAxis2D(FInputActionValue InValue) { return default; }
+	public static FVector Conv_InputActionValueToAxis3D(FInputActionValue ActionValue) { return default; }
+	public static string Conv_InputActionValueToString(FInputActionValue ActionValue) { return default; }
+	public static FPlayerMappableKeySlot GetFirstPlayerMappableKeySlot() { return default; }
+	public static FPlayerMappableKeySlot GetSecondPlayerMappableKeySlot() { return default; }
+	public static FPlayerMappableKeySlot GetThirdPlayerMappableKeySlot() { return default; }
+	public static FPlayerMappableKeySlot GetFourthPlayerMappableKeySlot() { return default; }
 }

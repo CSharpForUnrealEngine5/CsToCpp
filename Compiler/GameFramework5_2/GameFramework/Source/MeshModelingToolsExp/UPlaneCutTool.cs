@@ -8,8 +8,8 @@ public partial class UPlaneCutTool : UMultiSelectionMeshEditingTool {
 	public UPlaneCutToolProperties BasicProperties;
 	public UAcceptOutputProperties AcceptProperties;
 	public TArray<UMeshOpPreviewWithBackgroundCompute> Previews;
-	public void Cut() {}
-	public void FlipPlane() {}
+	public  void Cut() {}
+	public  void FlipPlane() {}
 	public TArray<UDynamicMeshReplacementChangeTarget> MeshesToCut;
 	public UConstructionPlaneMechanic PlaneMechanic;
 }

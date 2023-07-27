@@ -4,8 +4,8 @@ using CSharpToCpp.Utilities;
 [CppInclude("Profile/MediaProfileBlueprintLibrary.h")]
 public partial class UMediaProfileBlueprintLibrary : UBlueprintFunctionLibrary {
 // MediaProfileBlueprintLibrary
-	public UObject GetMediaProfile() { return default; }
-	public void SetMediaProfile(UObject MediaProfile) {}
-	public TArray<UObject> GetAllMediaSourceProxy() { return default; }
-	public TArray<UObject> GetAllMediaOutputProxy() { return default; }
+	public static UMediaProfile GetMediaProfile() { return default; }
+	public static void SetMediaProfile(UMediaProfile MediaProfile) {}
+	public static TArray<UProxyMediaSource> GetAllMediaSourceProxy() { return default; }
+	public static TArray<UProxyMediaOutput> GetAllMediaOutputProxy() { return default; }
 }

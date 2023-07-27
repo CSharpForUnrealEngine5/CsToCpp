@@ -5,6 +5,6 @@ using CSharpToCpp.Utilities;
 public partial class UAbilityTask_WaitGameplayEffectBlockedImmunity : UAbilityTask {
 // AbilityTask_WaitGameplayEffectBlockedImmunity
 	public FGameplayEffectBlockedDelegate Blocked;
-	public UObject WaitGameplayEffectBlockedByImmunity(UObject OwningAbility,FGameplayTagRequirements SourceTagRequirements,FGameplayTagRequirements TargetTagRequirements,UObject OptionalExternalTarget/*=nullptr*/,bool OnlyTriggerOnce/*=false*/) { return default; }
+	public static UAbilityTask_WaitGameplayEffectBlockedImmunity WaitGameplayEffectBlockedByImmunity(UGameplayAbility OwningAbility,FGameplayTagRequirements SourceTagRequirements,FGameplayTagRequirements TargetTagRequirements,AActor OptionalExternalTarget/*=nullptr*/,bool OnlyTriggerOnce/*=false*/) { return default; }
 	public UAbilitySystemComponent ExternalOwner;
 }

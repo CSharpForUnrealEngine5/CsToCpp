@@ -4,4 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("Components/CheckBox.h")]
 public partial struct FOnCheckBoxComponentStateChanged {
 // OnCheckBoxComponentStateChanged__DelegateSignature
+	void AddDynamic(object obj, string functionName) {}
 }

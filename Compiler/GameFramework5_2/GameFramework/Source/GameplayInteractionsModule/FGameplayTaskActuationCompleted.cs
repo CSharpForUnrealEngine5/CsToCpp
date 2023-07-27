@@ -4,4 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("GameplayInteractionsTypes.h")]
 public partial struct FGameplayTaskActuationCompleted {
 // GameplayTaskActuationCompleted__DelegateSignature
+	void AddDynamic(object obj, string functionName) {}
 }

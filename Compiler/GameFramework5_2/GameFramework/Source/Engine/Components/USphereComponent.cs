@@ -6,8 +6,8 @@ using CSharpToCpp.Utilities;
 public partial class USphereComponent : UShapeComponent {
 // SphereComponent
 	public float SphereRadius;
-	public void SetSphereRadius(float InSphereRadius,bool bUpdateOverlaps/*=true*/) {}
-	public float GetScaledSphereRadius() { return default; }
-	public float GetUnscaledSphereRadius() { return default; }
-	public float GetShapeScale() { return default; }
+	public  void SetSphereRadius(float InSphereRadius,bool bUpdateOverlaps/*=true*/) {}
+	public  float GetScaledSphereRadius() { return default; }
+	public  float GetUnscaledSphereRadius() { return default; }
+	public  float GetShapeScale() { return default; }
 }

@@ -5,7 +5,7 @@ using CSharpToCpp.Utilities;
 public partial class ALightWeightInstanceStaticMeshManager : ALightWeightInstanceManager {
 // LightWeightInstanceStaticMeshManager
 	public TSoftObjectPtr<UStaticMesh> StaticMesh;
-	public void OnRep_StaticMesh() {}
+	public  void OnRep_StaticMesh() {}
 	public UHierarchicalInstancedStaticMeshComponent InstancedStaticMeshComponent;
 	public TArray<int> RenderingIndicesToDataIndices;
 	public TArray<int> DataIndicesToRenderingIndices;

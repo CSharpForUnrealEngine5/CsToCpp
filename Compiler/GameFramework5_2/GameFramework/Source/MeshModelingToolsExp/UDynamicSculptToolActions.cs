@@ -4,5 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("DynamicMeshSculptTool.h")]
 public partial class UDynamicSculptToolActions : UInteractiveToolPropertySet {
 // DynamicSculptToolActions
-	public void DiscardAttributes() {}
+	public  void DiscardAttributes() {}
 }

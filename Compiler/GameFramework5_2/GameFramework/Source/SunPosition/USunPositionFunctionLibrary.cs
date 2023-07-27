@@ -4,5 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("SunPosition.h")]
 public partial class USunPositionFunctionLibrary : UBlueprintFunctionLibrary {
 // SunPositionFunctionLibrary
-	public void GetSunPosition(float Latitude,float Longitude,float TimeZone,bool bIsDaylightSavingTime,int Year,int Month,int Day,int Hours,int Minutes,int Seconds,FSunPositionData SunPositionData) {}
+	public static void GetSunPosition(float Latitude,float Longitude,float TimeZone,bool bIsDaylightSavingTime,int Year,int Month,int Day,int Hours,int Minutes,int Seconds,FSunPositionData SunPositionData) {}
 }

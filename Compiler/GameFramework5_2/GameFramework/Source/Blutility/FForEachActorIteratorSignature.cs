@@ -4,4 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("GlobalEditorUtilityBase.h")]
 public partial struct FForEachActorIteratorSignature {
 // ForEachActorIteratorSignature__DelegateSignature
+	void AddDynamic(object obj, string functionName) {}
 }

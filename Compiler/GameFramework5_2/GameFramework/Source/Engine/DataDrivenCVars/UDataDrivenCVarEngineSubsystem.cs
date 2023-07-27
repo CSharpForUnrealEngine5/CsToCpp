@@ -4,6 +4,6 @@ using CSharpToCpp.Utilities;
 [CppInclude("DataDrivenCVars/DataDrivenCVars.h")]
 public partial class UDataDrivenCVarEngineSubsystem : UEngineSubsystem {
 // DataDrivenCVarEngineSubsystem
-	public void FOnDataDrivenCVarChanged(string CVarName) {}
+	public  void FOnDataDrivenCVarChanged(string CVarName) {}
 	public FOnDataDrivenCVarChanged OnDataDrivenCVarDelegate;
 }

@@ -5,9 +5,9 @@ using CSharpToCpp.Utilities;
 ///<summary>World subsystem that holds global objects for handling camera animation sequences.</summary>
 public partial class UGameplayCamerasSubsystem : UWorldSubsystem {
 // GameplayCamerasSubsystem
-	public FCameraAnimationHandle PlayCameraAnimation(UObject PlayerController,UObject Sequence,FCameraAnimationParams Params) { return default; }
-	public bool IsCameraAnimationActive(UObject PlayerController,FCameraAnimationHandle Handle) { return default; }
-	public void StopCameraAnimation(UObject PlayerController,FCameraAnimationHandle Handle,bool bImmediate/*=false*/) {}
-	public void StopAllCameraAnimationsOf(UObject PlayerController,UObject Sequence,bool bImmediate/*=false*/) {}
-	public void StopAllCameraAnimations(UObject PlayerController,bool bImmediate/*=false*/) {}
+	public  FCameraAnimationHandle PlayCameraAnimation(APlayerController PlayerController,UCameraAnimationSequence Sequence,FCameraAnimationParams Params) { return default; }
+	public  bool IsCameraAnimationActive(APlayerController PlayerController,FCameraAnimationHandle Handle) { return default; }
+	public  void StopCameraAnimation(APlayerController PlayerController,FCameraAnimationHandle Handle,bool bImmediate/*=false*/) {}
+	public  void StopAllCameraAnimationsOf(APlayerController PlayerController,UCameraAnimationSequence Sequence,bool bImmediate/*=false*/) {}
+	public  void StopAllCameraAnimations(APlayerController PlayerController,bool bImmediate/*=false*/) {}
 }

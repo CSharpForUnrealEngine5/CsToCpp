@@ -29,5 +29,5 @@ public partial class UGLTFExportOptions : UObject {
 	public bool bExportLights;
 	public bool bExportCameras;
 	public EGLTFMaterialVariantMode ExportMaterialVariants;
-	public void ResetToDefault() {}
+	public  void ResetToDefault() {}
 }

@@ -5,11 +5,11 @@ using CSharpToCpp.Utilities;
 public partial class UXRDeviceVisualizationComponent : UStaticMeshComponent {
 // XRDeviceVisualizationComponent
 	public bool bIsVisualizationActive;
-	public void SetIsVisualizationActive(bool bNewVisualizationState) {}
+	public  void SetIsVisualizationActive(bool bNewVisualizationState) {}
 	public string DisplayModelSource;
-	public void SetDisplayModelSource(string NewDisplayModelSource) {}
+	public  void SetDisplayModelSource(string NewDisplayModelSource) {}
 	public UStaticMesh CustomDisplayMesh;
-	public void SetCustomDisplayMesh(UObject NewDisplayMesh) {}
+	public  void SetCustomDisplayMesh(UStaticMesh NewDisplayMesh) {}
 	public TArray<UMaterialInterface> DisplayMeshMaterialOverrides;
-	public void SetIsRenderingActive(bool bRenderingIsActive) {}
+	public  void SetIsRenderingActive(bool bRenderingIsActive) {}
 }

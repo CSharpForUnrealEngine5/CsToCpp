@@ -4,8 +4,8 @@ using CSharpToCpp.Utilities;
 [CppInclude("Data/PCGUnionData.h")]
 public partial class UPCGUnionData : UPCGSpatialDataWithPointCache {
 // PCGUnionData
-	public void Initialize(UObject InA,UObject InB) {}
-	public void AddData(UObject InData) {}
+	public  void Initialize(UPCGSpatialData InA,UPCGSpatialData InB) {}
+	public  void AddData(UPCGSpatialData InData) {}
 	public TArray<UPCGSpatialData> Data;
 	public UPCGSpatialData FirstNonTrivialTransformData;
 	public EPCGUnionType UnionType;

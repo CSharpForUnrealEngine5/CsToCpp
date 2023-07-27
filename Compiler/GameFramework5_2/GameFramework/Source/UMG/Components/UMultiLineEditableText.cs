@@ -5,8 +5,8 @@ using CSharpToCpp.Utilities;
 ///<summary>Editable text box widget</summary>
 public partial class UMultiLineEditableText : UTextLayoutWidget {
 // MultiLineEditableText
-	public void FOnMultiLineEditableTextChangedEvent(string Text) {}
-	public void FOnMultiLineEditableTextCommittedEvent(string Text,ETextCommit CommitMethod) {}
+	public  void FOnMultiLineEditableTextChangedEvent(string Text) {}
+	public  void FOnMultiLineEditableTextCommittedEvent(string Text,ETextCommit CommitMethod) {}
 	public string Text;
 	public string HintText;
 	public FGetText HintTextDelegate;
@@ -21,14 +21,14 @@ public partial class UMultiLineEditableText : UTextLayoutWidget {
 	public EVirtualKeyboardDismissAction VirtualKeyboardDismissAction;
 	public FOnMultiLineEditableTextChangedEvent OnTextChanged;
 	public FOnMultiLineEditableTextCommittedEvent OnTextCommitted;
-	public string GetText() { return default; }
-	public void SetText(string InText) {}
-	public string GetHintText() { return default; }
-	public void SetHintText(string InHintText) {}
-	public void SetIsReadOnly(bool bReadOnly) {}
-	public void SetWidgetStyle(FTextBlockStyle InWidgetStyle) {}
-	public FSlateFontInfo GetFont() { return default; }
-	public void SetFont(FSlateFontInfo InFontInfo) {}
-	public void SetFontMaterial(UObject InMaterial) {}
-	public void SetFontOutlineMaterial(UObject InMaterial) {}
+	public  string GetText() { return default; }
+	public  void SetText(string InText) {}
+	public  string GetHintText() { return default; }
+	public  void SetHintText(string InHintText) {}
+	public  void SetIsReadOnly(bool bReadOnly) {}
+	public  void SetWidgetStyle(FTextBlockStyle InWidgetStyle) {}
+	public  FSlateFontInfo GetFont() { return default; }
+	public  void SetFont(FSlateFontInfo InFontInfo) {}
+	public  void SetFontMaterial(UMaterialInterface InMaterial) {}
+	public  void SetFontOutlineMaterial(UMaterialInterface InMaterial) {}
 }

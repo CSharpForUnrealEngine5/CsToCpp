@@ -4,6 +4,6 @@ using CSharpToCpp.Utilities;
 [CppInclude("SubmixEffects/SubmixEffectFlexiverb.h")]
 public partial class USubmixEffectFlexiverbPreset : USoundEffectSubmixPreset {
 // SubmixEffectFlexiverbPreset
-	public void SetSettings(FSubmixEffectFlexiverbSettings InSettings) {}
+	public  void SetSettings(FSubmixEffectFlexiverbSettings InSettings) {}
 	public FSubmixEffectFlexiverbSettings Settings;
 }

@@ -5,6 +5,6 @@ using CSharpToCpp.Utilities;
 ///<summary>Base class for custom modulators. Override Modulate and ModulateMatrix functions in the blueprints to implement functionality.</summary>
 public partial class UDMXModulator : UObject {
 // DMXModulator
-	public void Modulate(UObject FixturePatch,TMap<FDMXAttributeName,float> InNormalizedAttributeValues,TMap<FDMXAttributeName,float> OutNormalizedAttributeValues) {}
-	public void ModulateMatrix(UObject FixturePatch,TArray<FDMXNormalizedAttributeValueMap> InNormalizedMatrixAttributeValues,TArray<FDMXNormalizedAttributeValueMap> OutNormalizedMatrixAttributeValues) {}
+	public  void Modulate(UDMXEntityFixturePatch FixturePatch,TMap<FDMXAttributeName,float> InNormalizedAttributeValues,TMap<FDMXAttributeName,float> OutNormalizedAttributeValues) {}
+	public  void ModulateMatrix(UDMXEntityFixturePatch FixturePatch,TArray<FDMXNormalizedAttributeValueMap> InNormalizedMatrixAttributeValues,TArray<FDMXNormalizedAttributeValueMap> OutNormalizedMatrixAttributeValues) {}
 }

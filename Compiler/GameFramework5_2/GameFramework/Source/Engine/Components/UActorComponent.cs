@@ -22,34 +22,34 @@ public partial class UActorComponent : UObject {
 	public bool bIsVisualizationComponent;
 	public bool bNeedsUCSSerializationIndexEvaluted;
 	public EComponentCreationMethod CreationMethod;
-	public bool IsBeingDestroyed() { return default; }
-	public void OnRep_IsActive() {}
-	public UObject GetOwner() { return default; }
-	public bool ComponentHasTag(string Tag) { return default; }
+	public  bool IsBeingDestroyed() { return default; }
+	public  void OnRep_IsActive() {}
+	public  AActor GetOwner() { return default; }
+	public  bool ComponentHasTag(string Tag) { return default; }
 	public FActorComponentActivatedSignature OnComponentActivated;
 	public FActorComponentDeactivateSignature OnComponentDeactivated;
 	public TArray<FSimpleMemberReference> UCSModifiedProperties_DEPRECATED;
-	public void Activate(bool bReset/*=false*/) {}
-	public void Deactivate() {}
-	public void SetActive(bool bNewActive,bool bReset/*=false*/) {}
-	public void ToggleActive() {}
-	public bool IsActive() { return default; }
-	public void SetAutoActivate(bool bNewAutoActivate) {}
-	public void SetTickableWhenPaused(bool bTickableWhenPaused) {}
-	public void SetIsReplicated(bool ShouldReplicate) {}
-	public void ReceiveBeginPlay() {}
-	public void ReceiveEndPlay(EEndPlayReason EndPlayReason) {}
-	public void SetComponentTickEnabled(bool bEnabled) {}
-	public bool IsComponentTickEnabled() { return default; }
-	public void SetComponentTickInterval(float TickInterval) {}
-	public void SetComponentTickIntervalAndCooldown(float TickInterval) {}
-	public float GetComponentTickInterval() { return default; }
-	public void K2_DestroyComponent(UObject Object) {}
-	public void SetTickGroup(ETickingGroup NewTickGroup) {}
-	public void AddTickPrerequisiteActor(UObject PrerequisiteActor) {}
-	public void AddTickPrerequisiteComponent(UObject PrerequisiteComponent) {}
-	public void RemoveTickPrerequisiteActor(UObject PrerequisiteActor) {}
-	public void RemoveTickPrerequisiteComponent(UObject PrerequisiteComponent) {}
-	public void ReceiveTick(float DeltaSeconds) {}
-	public void ReceiveAsyncPhysicsTick(float DeltaSeconds,float SimSeconds) {}
+	public  void Activate(bool bReset/*=false*/) {}
+	public  void Deactivate() {}
+	public  void SetActive(bool bNewActive,bool bReset/*=false*/) {}
+	public  void ToggleActive() {}
+	public  bool IsActive() { return default; }
+	public  void SetAutoActivate(bool bNewAutoActivate) {}
+	public  void SetTickableWhenPaused(bool bTickableWhenPaused) {}
+	public  void SetIsReplicated(bool ShouldReplicate) {}
+	public  void ReceiveBeginPlay() {}
+	public  void ReceiveEndPlay(EEndPlayReason EndPlayReason) {}
+	public  void SetComponentTickEnabled(bool bEnabled) {}
+	public  bool IsComponentTickEnabled() { return default; }
+	public  void SetComponentTickInterval(float TickInterval) {}
+	public  void SetComponentTickIntervalAndCooldown(float TickInterval) {}
+	public  float GetComponentTickInterval() { return default; }
+	public  void K2_DestroyComponent(UObject Object) {}
+	public  void SetTickGroup(ETickingGroup NewTickGroup) {}
+	public  void AddTickPrerequisiteActor(AActor PrerequisiteActor) {}
+	public  void AddTickPrerequisiteComponent(UActorComponent PrerequisiteComponent) {}
+	public  void RemoveTickPrerequisiteActor(AActor PrerequisiteActor) {}
+	public  void RemoveTickPrerequisiteComponent(UActorComponent PrerequisiteComponent) {}
+	public  void ReceiveTick(float DeltaSeconds) {}
+	public  void ReceiveAsyncPhysicsTick(float DeltaSeconds,float SimSeconds) {}
 }

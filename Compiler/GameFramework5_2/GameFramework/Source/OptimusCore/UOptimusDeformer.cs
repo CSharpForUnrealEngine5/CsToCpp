@@ -5,9 +5,9 @@ using CSharpToCpp.Utilities;
 ///<summary>A Deformer Graph is an asset that is used to create and control custom deformations on</summary>
 public partial class UOptimusDeformer : UMeshDeformer {
 // OptimusDeformer
-	public TArray<UObject> GetVariables() { return default; }
-	public TArray<UObject> GetResources() { return default; }
-	public TArray<UObject> GetComponentBindings() { return default; }
+	public  TArray<UOptimusVariableDescription> GetVariables() { return default; }
+	public  TArray<UOptimusResourceDescription> GetResources() { return default; }
+	public  TArray<UOptimusComponentSourceBinding> GetComponentBindings() { return default; }
 	public USkeletalMesh Mesh;
 	public TArray<FOptimusComputeGraphInfo> ComputeGraphs;
 	public UOptimusActionStack ActionStack;

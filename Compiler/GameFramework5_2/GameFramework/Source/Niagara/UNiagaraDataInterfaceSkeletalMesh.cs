@@ -21,5 +21,5 @@ public partial class UNiagaraDataInterfaceSkeletalMesh : UNiagaraDataInterface {
 	public bool bExcludeBone;
 	public int UvSetIndex;
 	public bool bRequireCurrentFrameData;
-	public void OnSourceEndPlay(UObject InSource,EEndPlayReason Reason) {}
+	public  void OnSourceEndPlay(AActor InSource,EEndPlayReason Reason) {}
 }

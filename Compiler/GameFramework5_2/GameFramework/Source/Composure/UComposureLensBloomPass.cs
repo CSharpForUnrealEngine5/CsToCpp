@@ -6,7 +6,7 @@ using CSharpToCpp.Utilities;
 public partial class UComposureLensBloomPass : UComposurePostProcessPass {
 // ComposureLensBloomPass
 	public FLensBloomSettings Settings;
-	public void SetTonemapperReplacingMaterial(UObject Material) {}
-	public void BloomToRenderTarget() {}
+	public  void SetTonemapperReplacingMaterial(UMaterialInstanceDynamic Material) {}
+	public  void BloomToRenderTarget() {}
 	public UMaterialInstanceDynamic TonemapperReplacingMID;
 }

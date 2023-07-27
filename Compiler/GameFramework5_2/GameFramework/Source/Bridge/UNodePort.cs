@@ -4,6 +4,6 @@ using CSharpToCpp.Utilities;
 [CppInclude("NodePort.h")]
 public partial class UNodePort : UObject {
 // NodePort
-	public string GetNodePort() { return default; }
-	public bool IsNodeRunning() { return default; }
+	public  string GetNodePort() { return default; }
+	public  bool IsNodeRunning() { return default; }
 }

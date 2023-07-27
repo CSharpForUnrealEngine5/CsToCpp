@@ -10,8 +10,8 @@ public partial class ALandscapeBlueprintBrushBase : AActor {
 	public bool AffectWeightmap;
 	public TArray<string> AffectedWeightmapLayers;
 	public bool bIsVisible;
-	public UObject Render(bool InIsHeightmap,UObject InCombinedResult,string InWeightmapLayerName) { return default; }
-	public void Initialize(FTransform InLandscapeTransform,FIntPoint InLandscapeSize,FIntPoint InLandscapeRenderTargetSize) {}
-	public void RequestLandscapeUpdate(bool bInUserTriggered/*=false*/) {}
-	public void GetBlueprintRenderDependencies(TArray<UObject> OutStreamableAssets) {}
+	public  UTextureRenderTarget2D Render(bool InIsHeightmap,UTextureRenderTarget2D InCombinedResult,string InWeightmapLayerName) { return default; }
+	public  void Initialize(FTransform InLandscapeTransform,FIntPoint InLandscapeSize,FIntPoint InLandscapeRenderTargetSize) {}
+	public  void RequestLandscapeUpdate(bool bInUserTriggered/*=false*/) {}
+	public  void GetBlueprintRenderDependencies(TArray<UObject> OutStreamableAssets) {}
 }

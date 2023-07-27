@@ -4,4 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("ScriptableInteractiveTool.h")]
 public partial struct FToolFloatPropertyModifiedDelegate {
 // ToolFloatPropertyModifiedDelegate__DelegateSignature
+	void AddDynamic(object obj, string functionName) {}
 }

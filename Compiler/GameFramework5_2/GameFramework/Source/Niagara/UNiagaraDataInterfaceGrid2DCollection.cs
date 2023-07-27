@@ -9,9 +9,9 @@ public partial class UNiagaraDataInterfaceGrid2DCollection : UNiagaraDataInterfa
 	public bool bOverrideFormat;
 	public bool bPreviewGrid;
 	public string PreviewAttribute;
-	public bool FillTexture2D(UObject Component,UObject dest,int AttributeIndex) { return default; }
-	public bool FillRawTexture2D(UObject Component,UObject Dest,int TilesX,int TilesY) { return default; }
-	public void GetRawTextureSize(UObject Component,int SizeX,int SizeY) {}
-	public void GetTextureSize(UObject Component,int SizeX,int SizeY) {}
+	public  bool FillTexture2D(UNiagaraComponent Component,UTextureRenderTarget2D dest,int AttributeIndex) { return default; }
+	public  bool FillRawTexture2D(UNiagaraComponent Component,UTextureRenderTarget2D Dest,int TilesX,int TilesY) { return default; }
+	public  void GetRawTextureSize(UNiagaraComponent Component,int SizeX,int SizeY) {}
+	public  void GetTextureSize(UNiagaraComponent Component,int SizeX,int SizeY) {}
 	public TMap<ulong,UTextureRenderTarget2DArray> ManagedRenderTargets;
 }

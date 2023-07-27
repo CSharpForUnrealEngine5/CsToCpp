@@ -5,7 +5,7 @@ using CSharpToCpp.Utilities;
 ///<summary>UNetworkPredictionComponent</summary>
 public partial class UNetworkPredictionComponent : UActorComponent {
 // NetworkPredictionComponent
-	public void ServerReceiveClientInput(FServerReplicationRPCParameter ProxyParameter) {}
+	public  void ServerReceiveClientInput(FServerReplicationRPCParameter ProxyParameter) {}
 	public FNetworkPredictionProxy NetworkPredictionProxy;
 	public FReplicationProxy ReplicationProxy_ServerRPC;
 	public FReplicationProxy ReplicationProxy_Autonomous;

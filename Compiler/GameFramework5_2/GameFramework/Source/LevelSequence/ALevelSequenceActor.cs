@@ -5,7 +5,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Actor responsible for controlling a specific level sequence in the world.</summary>
 public partial class ALevelSequenceActor : AActor {
 // LevelSequenceActor
-	public void FOnLevelSequenceLoaded() {}
+	public  void FOnLevelSequenceLoaded() {}
 	public FMovieSceneSequencePlaybackSettings PlaybackSettings;
 	public ULevelSequencePlayer SequencePlayer;
 	public ULevelSequence LevelSequenceAsset;
@@ -17,23 +17,23 @@ public partial class ALevelSequenceActor : AActor {
 	public bool bOverrideInstanceData;
 	public bool bReplicatePlayback;
 	public UObject DefaultInstanceData;
-	public UObject GetSequence() { return default; }
-	public UObject LoadSequence() { return default; }
-	public void SetSequence(UObject InSequence) {}
-	public void SetReplicatePlayback(bool ReplicatePlayback) {}
-	public UObject GetSequencePlayer() { return default; }
-	public void HideBurnin() {}
-	public void ShowBurnin() {}
-	public void SetBinding(FMovieSceneObjectBindingID Binding,TArray<UObject> Actors,bool bAllowBindingsFromAsset/*=false*/) {}
-	public void SetBindingByTag(string BindingTag,TArray<UObject> Actors,bool bAllowBindingsFromAsset/*=false*/) {}
-	public void AddBinding(FMovieSceneObjectBindingID Binding,UObject Actor,bool bAllowBindingsFromAsset/*=false*/) {}
-	public void AddBindingByTag(string BindingTag,UObject Actor,bool bAllowBindingsFromAsset/*=false*/) {}
-	public void RemoveBinding(FMovieSceneObjectBindingID Binding,UObject Actor) {}
-	public void RemoveBindingByTag(string Tag,UObject Actor) {}
-	public void ResetBinding(FMovieSceneObjectBindingID Binding) {}
-	public void ResetBindings() {}
-	public FMovieSceneObjectBindingID FindNamedBinding(string Tag) { return default; }
-	public TArray<FMovieSceneObjectBindingID> FindNamedBindings(string Tag) { return default; }
+	public  ULevelSequence GetSequence() { return default; }
+	public  ULevelSequence LoadSequence() { return default; }
+	public  void SetSequence(ULevelSequence InSequence) {}
+	public  void SetReplicatePlayback(bool ReplicatePlayback) {}
+	public  ULevelSequencePlayer GetSequencePlayer() { return default; }
+	public  void HideBurnin() {}
+	public  void ShowBurnin() {}
+	public  void SetBinding(FMovieSceneObjectBindingID Binding,TArray<AActor> Actors,bool bAllowBindingsFromAsset/*=false*/) {}
+	public  void SetBindingByTag(string BindingTag,TArray<AActor> Actors,bool bAllowBindingsFromAsset/*=false*/) {}
+	public  void AddBinding(FMovieSceneObjectBindingID Binding,AActor Actor,bool bAllowBindingsFromAsset/*=false*/) {}
+	public  void AddBindingByTag(string BindingTag,AActor Actor,bool bAllowBindingsFromAsset/*=false*/) {}
+	public  void RemoveBinding(FMovieSceneObjectBindingID Binding,AActor Actor) {}
+	public  void RemoveBindingByTag(string Tag,AActor Actor) {}
+	public  void ResetBinding(FMovieSceneObjectBindingID Binding) {}
+	public  void ResetBindings() {}
+	public  FMovieSceneObjectBindingID FindNamedBinding(string Tag) { return default; }
+	public  TArray<FMovieSceneObjectBindingID> FindNamedBindings(string Tag) { return default; }
 	public ULevelSequenceBurnIn BurnInInstance;
 	public bool bShowBurnin;
 }

@@ -6,5 +6,5 @@ public partial class UMLAdapterSensor_EnhancedInput : UMLAdapterSensor {
 // MLAdapterSensor_EnhancedInput
 	public TArray<UInputAction> TrackedActions;
 	public UEnhancedInputComponent InputComponent;
-	public void OnInputAction(FInputActionInstance ActionInstance) {}
+	public  void OnInputAction(FInputActionInstance ActionInstance) {}
 }

@@ -6,5 +6,5 @@ public partial class UARGetCandidateObjectAsyncTaskBlueprintProxy : UARBaseAsync
 // ARGetCandidateObjectAsyncTaskBlueprintProxy
 	public FARGetCandidateObjectPin OnSuccess;
 	public FARGetCandidateObjectPin OnFailed;
-	public UObject ARGetCandidateObject(UObject WorldContextObject,FVector Location,FVector Extent) { return default; }
+	public static UARGetCandidateObjectAsyncTaskBlueprintProxy ARGetCandidateObject(UObject WorldContextObject,FVector Location,FVector Extent) { return default; }
 }

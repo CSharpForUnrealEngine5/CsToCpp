@@ -7,8 +7,8 @@ public partial class USinglePropertyView : UPropertyViewBase {
 // SinglePropertyView
 	public string PropertyName;
 	public string NameOverride;
-	public string GetPropertyName() { return default; }
-	public void SetPropertyName(string NewPropertyName) {}
-	public string GetNameOverride() { return default; }
-	public void SetNameOverride(string NewPropertyName) {}
+	public  string GetPropertyName() { return default; }
+	public  void SetPropertyName(string NewPropertyName) {}
+	public  string GetNameOverride() { return default; }
+	public  void SetNameOverride(string NewPropertyName) {}
 }

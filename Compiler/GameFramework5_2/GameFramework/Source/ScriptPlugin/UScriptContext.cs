@@ -5,5 +5,5 @@ using CSharpToCpp.Utilities;
 ///<summary>Script context subobject</summary>
 public partial class UScriptContext : UObject {
 // ScriptContext
-	public void CallScriptFunction(string FunctionName) {}
+	public  void CallScriptFunction(string FunctionName) {}
 }

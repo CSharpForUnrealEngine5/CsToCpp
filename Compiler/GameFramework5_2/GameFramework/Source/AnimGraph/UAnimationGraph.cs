@@ -5,5 +5,5 @@ using CSharpToCpp.Utilities;
 public partial class UAnimationGraph : UEdGraph {
 // AnimationGraph
 	public FAnimGraphBlendOptions BlendOptions;
-	public void GetGraphNodesOfClass(UClass NodeClass,TArray<UObject> GraphNodes,bool bIncludeChildClasses/*=true*/) {}
+	public  void GetGraphNodesOfClass(UClass NodeClass,TArray<UAnimGraphNode_Base> GraphNodes,bool bIncludeChildClasses/*=true*/) {}
 }

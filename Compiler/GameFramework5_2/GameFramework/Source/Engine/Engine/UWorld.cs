@@ -34,7 +34,7 @@ public partial class UWorld : UObject {
 	public UAvoidanceManager AvoidanceManager;
 	public TArray<ULevel> Levels;
 	public TArray<FLevelCollection> LevelCollections;
-	public void HandleTimelineScrubbed() {}
+	public  void HandleTimelineScrubbed() {}
 	public ULevel CurrentLevel;
 	public UGameInstance OwningGameInstance;
 	public TArray<UMaterialParameterCollectionInstance> ParameterCollectionInstances;
@@ -49,6 +49,6 @@ public partial class UWorld : UObject {
 	public TArray<ULevel> SelectedLevels;
 	public UWorldComposition WorldComposition;
 	public UContentBundleManager ContentBundleManager;
-	public UObject K2_GetWorldSettings() { return default; }
+	public  AWorldSettings K2_GetWorldSettings() { return default; }
 	public FWorldPSCPool PSCPool;
 }

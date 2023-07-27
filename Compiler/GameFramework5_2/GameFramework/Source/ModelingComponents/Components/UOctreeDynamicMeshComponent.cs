@@ -6,5 +6,5 @@ using CSharpToCpp.Utilities;
 public partial class UOctreeDynamicMeshComponent : UBaseDynamicMeshComponent {
 // OctreeDynamicMeshComponent
 	public UDynamicMesh MeshObject;
-	public void SetDynamicMesh(UObject NewMesh) {}
+	public  void SetDynamicMesh(UDynamicMesh NewMesh) {}
 }

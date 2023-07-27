@@ -28,9 +28,9 @@ public partial class UMotoSynthSource : UObject {
 	public int RPMEstimationOctaveOffset;
 	public bool bWriteAnalysisInputToFile;
 	public string AnalysisInputFilePath;
-	public void PerformGrainTableAnalysis() {}
-	public void PlayToneMatch() {}
-	public void StopToneMatch() {}
+	public  void PerformGrainTableAnalysis() {}
+	public  void PlayToneMatch() {}
+	public  void StopToneMatch() {}
 	public TArray<float> SourceData_DEPRECATED;
 	public TArray<short> SourceDataPCM;
 	public int SourceSampleRate;

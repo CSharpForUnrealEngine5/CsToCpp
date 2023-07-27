@@ -10,6 +10,6 @@ public partial class UBakeMultiMeshInputToolProperties : UInteractiveToolPropert
 	public string TargetUVLayer;
 	public TArray<FBakeMultiMeshDetailProperties> SourceMeshes;
 	public float ProjectionDistance;
-	public TArray<string> GetTargetUVLayerNamesFunc() { return default; }
+	public  TArray<string> GetTargetUVLayerNamesFunc() { return default; }
 	public TArray<string> TargetUVLayerNamesList;
 }

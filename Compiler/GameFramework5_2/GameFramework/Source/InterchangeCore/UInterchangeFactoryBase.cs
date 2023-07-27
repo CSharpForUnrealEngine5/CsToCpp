@@ -5,6 +5,6 @@ using CSharpToCpp.Utilities;
 ///<summary>UObject asset factory implementation:</summary>
 public partial class UInterchangeFactoryBase : UObject {
 // InterchangeFactoryBase
-	public UClass GetFactoryClass() { return default; }
+	public  UClass GetFactoryClass() { return default; }
 	public UInterchangeResultsContainer Results;
 }

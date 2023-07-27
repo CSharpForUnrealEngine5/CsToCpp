@@ -5,11 +5,11 @@ using CSharpToCpp.Utilities;
 ///<summary>Actor containing data layers instances within a world.</summary>
 public partial class AWorldDataLayers : AInfo {
 // WorldDataLayers
-	public void OnDataLayerRuntimeStateChanged(UObject InDataLayer,EDataLayerRuntimeState InState) {}
-	public void OnRep_ActiveDataLayerNames() {}
-	public void OnRep_LoadedDataLayerNames() {}
-	public void OnRep_EffectiveActiveDataLayerNames() {}
-	public void OnRep_EffectiveLoadedDataLayerNames() {}
+	public  void OnDataLayerRuntimeStateChanged(UDataLayerInstance InDataLayer,EDataLayerRuntimeState InState) {}
+	public  void OnRep_ActiveDataLayerNames() {}
+	public  void OnRep_LoadedDataLayerNames() {}
+	public  void OnRep_EffectiveActiveDataLayerNames() {}
+	public  void OnRep_EffectiveLoadedDataLayerNames() {}
 	public bool bAllowRuntimeDataLayerEditing;
 	public FActorPlacementDataLayers CurrentDataLayers;
 	public TSet<UDataLayerInstance> DataLayerInstances;

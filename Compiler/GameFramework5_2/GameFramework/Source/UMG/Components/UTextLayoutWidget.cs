@@ -5,7 +5,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Base class for all widgets that use a text layout.</summary>
 public partial class UTextLayoutWidget : UWidget {
 // TextLayoutWidget
-	public void SetJustification(ETextJustify InJustification) {}
+	public  void SetJustification(ETextJustify InJustification) {}
 	public FShapedTextOptions ShapedTextOptions;
 	public byte Justification;
 	public ETextWrappingPolicy WrappingPolicy;

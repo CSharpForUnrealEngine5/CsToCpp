@@ -5,6 +5,6 @@ using CSharpToCpp.Utilities;
 public partial class UAISense_Prediction : UAISense {
 // AISense_Prediction
 	public TArray<FAIPredictionEvent> RegisteredEvents;
-	public void RequestControllerPredictionEvent(UObject Requestor,UObject PredictedActor,float PredictionTime) {}
-	public void RequestPawnPredictionEvent(UObject Requestor,UObject PredictedActor,float PredictionTime) {}
+	public static void RequestControllerPredictionEvent(AAIController Requestor,AActor PredictedActor,float PredictionTime) {}
+	public static void RequestPawnPredictionEvent(APawn Requestor,AActor PredictedActor,float PredictionTime) {}
 }

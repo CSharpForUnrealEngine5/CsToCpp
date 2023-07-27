@@ -7,5 +7,5 @@ public partial class UAbilityTask_StartAbilityState : UAbilityTask {
 // AbilityTask_StartAbilityState
 	public FAbilityStateDelegate OnStateEnded;
 	public FAbilityStateDelegate OnStateInterrupted;
-	public UObject StartAbilityState(UObject OwningAbility,string StateName,bool bEndCurrentState/*=true*/) { return default; }
+	public static UAbilityTask_StartAbilityState StartAbilityState(UGameplayAbility OwningAbility,string StateName,bool bEndCurrentState/*=true*/) { return default; }
 }

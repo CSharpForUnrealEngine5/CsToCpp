@@ -5,6 +5,6 @@ using CSharpToCpp.Utilities;
 ///<summary>Set a uniform integer value independently of the sample position. The output is equal to magnitude</summary>
 public partial class UUniformInteger : UFieldNodeInt {
 // UniformInteger
-	public UObject SetUniformInteger(int Magnitude) { return default; }
+	public  UUniformInteger SetUniformInteger(int Magnitude) { return default; }
 	public int Magnitude;
 }

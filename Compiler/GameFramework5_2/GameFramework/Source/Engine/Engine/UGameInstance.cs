@@ -9,12 +9,12 @@ public partial class UGameInstance : UObject {
 	public UOnlineSession OnlineSession;
 	public TArray<UObject> ReferencedObjects;
 	public FOnPawnControllerChanged OnPawnControllerChangedDelegates;
-	public void ReceiveInit() {}
-	public void ReceiveShutdown() {}
+	public  void ReceiveInit() {}
+	public  void ReceiveShutdown() {}
 	public FOnUserInputDeviceConnectionChange OnInputDeviceConnectionChange;
 	public FOnUserInputDevicePairingChange OnUserInputDevicePairingChange;
-	public void HandleNetworkError(ENetworkFailure FailureType,bool bIsServer) {}
-	public void HandleTravelError(ETravelFailure FailureType) {}
-	public void DebugCreatePlayer(int ControllerId) {}
-	public void DebugRemovePlayer(int ControllerId) {}
+	public  void HandleNetworkError(ENetworkFailure FailureType,bool bIsServer) {}
+	public  void HandleTravelError(ETravelFailure FailureType) {}
+	public  void DebugCreatePlayer(int ControllerId) {}
+	public  void DebugRemovePlayer(int ControllerId) {}
 }

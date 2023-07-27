@@ -4,5 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("Audio/ActorSoundParameterInterface.h")]
 public partial class UActorSoundParameterInterface : UInterface {
 // ActorSoundParameterInterface
-	public void GetActorSoundParams(TArray<FAudioParameter> Params) {}
+	public  void GetActorSoundParams(TArray<FAudioParameter> Params) {}
 }

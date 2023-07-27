@@ -28,26 +28,26 @@ public partial class USkyAtmosphereComponent : USceneComponent {
 	public float HeightFogContribution;
 	public float TransmittanceMinLightElevationAngle;
 	public float AerialPerspectiveStartDepth;
-	public void OverrideAtmosphereLightDirection(int AtmosphereLightIndex,FVector LightDirection) {}
-	public bool IsAtmosphereLightDirectionOverriden(int AtmosphereLightIndex) { return default; }
-	public FVector GetOverridenAtmosphereLightDirection(int AtmosphereLightIndex) { return default; }
-	public void ResetAtmosphereLightDirectionOverride(int AtmosphereLightIndex) {}
-	public void SetAtmosphereHeight(float NewValue) {}
-	public void SetMultiScatteringFactor(float NewValue) {}
-	public void SetRayleighScatteringScale(float NewValue) {}
-	public void SetRayleighScattering(FLinearColor NewValue) {}
-	public void SetRayleighExponentialDistribution(float NewValue) {}
-	public void SetMieScatteringScale(float NewValue) {}
-	public void SetMieScattering(FLinearColor NewValue) {}
-	public void SetMieAbsorptionScale(float NewValue) {}
-	public void SetMieAbsorption(FLinearColor NewValue) {}
-	public void SetMieAnisotropy(float NewValue) {}
-	public void SetMieExponentialDistribution(float NewValue) {}
-	public void SetOtherAbsorptionScale(float NewValue) {}
-	public void SetOtherAbsorption(FLinearColor NewValue) {}
-	public void SetSkyLuminanceFactor(FLinearColor NewValue) {}
-	public void SetAerialPespectiveViewDistanceScale(float NewValue) {}
-	public void SetHeightFogContribution(float NewValue) {}
-	public FLinearColor GetAtmosphereTransmitanceOnGroundAtPlanetTop(UObject DirectionalLight) { return default; }
+	public  void OverrideAtmosphereLightDirection(int AtmosphereLightIndex,FVector LightDirection) {}
+	public  bool IsAtmosphereLightDirectionOverriden(int AtmosphereLightIndex) { return default; }
+	public  FVector GetOverridenAtmosphereLightDirection(int AtmosphereLightIndex) { return default; }
+	public  void ResetAtmosphereLightDirectionOverride(int AtmosphereLightIndex) {}
+	public  void SetAtmosphereHeight(float NewValue) {}
+	public  void SetMultiScatteringFactor(float NewValue) {}
+	public  void SetRayleighScatteringScale(float NewValue) {}
+	public  void SetRayleighScattering(FLinearColor NewValue) {}
+	public  void SetRayleighExponentialDistribution(float NewValue) {}
+	public  void SetMieScatteringScale(float NewValue) {}
+	public  void SetMieScattering(FLinearColor NewValue) {}
+	public  void SetMieAbsorptionScale(float NewValue) {}
+	public  void SetMieAbsorption(FLinearColor NewValue) {}
+	public  void SetMieAnisotropy(float NewValue) {}
+	public  void SetMieExponentialDistribution(float NewValue) {}
+	public  void SetOtherAbsorptionScale(float NewValue) {}
+	public  void SetOtherAbsorption(FLinearColor NewValue) {}
+	public  void SetSkyLuminanceFactor(FLinearColor NewValue) {}
+	public  void SetAerialPespectiveViewDistanceScale(float NewValue) {}
+	public  void SetHeightFogContribution(float NewValue) {}
+	public  FLinearColor GetAtmosphereTransmitanceOnGroundAtPlanetTop(UDirectionalLightComponent DirectionalLight) { return default; }
 	public FGuid bStaticLightingBuiltGUID;
 }

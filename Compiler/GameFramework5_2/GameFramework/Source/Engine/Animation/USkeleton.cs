@@ -13,13 +13,13 @@ public partial class USkeleton : UObject {
 	public TArray<USkeletalMeshSocket> Sockets;
 	public FSmartNameContainer SmartNames;
 	public TArray<UBlendProfile> BlendProfiles;
-	public UObject GetBlendProfile(string InProfileName) { return default; }
+	public  UBlendProfile GetBlendProfile(string InProfileName) { return default; }
 	public TArray<FAnimSlotGroup> SlotGroups;
 	public TSoftObjectPtr<USkeletalMesh> PreviewSkeletalMesh;
 	public TSoftObjectPtr<UDataAsset> AdditionalPreviewSkeletalMeshes;
 	public FRigConfiguration RigConfig;
 	public TArray<string> AnimationNotifies;
 	public FPreviewAssetAttachContainer PreviewAttachedAssetContainer;
-	public void AddCompatibleSkeleton(UObject SourceSkeleton) {}
+	public  void AddCompatibleSkeleton(USkeleton SourceSkeleton) {}
 	public TArray<UAssetUserData> AssetUserData;
 }

@@ -7,9 +7,9 @@ public partial class UAbilityTask_WaitConfirmCancel : UAbilityTask {
 // AbilityTask_WaitConfirmCancel
 	public FWaitConfirmCancelDelegate OnConfirm;
 	public FWaitConfirmCancelDelegate OnCancel;
-	public void OnConfirmCallback() {}
-	public void OnCancelCallback() {}
-	public void OnLocalConfirmCallback() {}
-	public void OnLocalCancelCallback() {}
-	public UObject WaitConfirmCancel(UObject OwningAbility) { return default; }
+	public  void OnConfirmCallback() {}
+	public  void OnCancelCallback() {}
+	public  void OnLocalConfirmCallback() {}
+	public  void OnLocalCancelCallback() {}
+	public static UAbilityTask_WaitConfirmCancel WaitConfirmCancel(UGameplayAbility OwningAbility) { return default; }
 }

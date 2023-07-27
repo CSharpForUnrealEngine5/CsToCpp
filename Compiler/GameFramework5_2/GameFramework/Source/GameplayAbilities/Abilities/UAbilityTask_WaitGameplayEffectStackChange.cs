@@ -7,6 +7,6 @@ public partial class UAbilityTask_WaitGameplayEffectStackChange : UAbilityTask {
 // AbilityTask_WaitGameplayEffectStackChange
 	public FWaitGameplayEffectStackChangeDelegate OnChange;
 	public FWaitGameplayEffectStackChangeDelegate InvalidHandle;
-	public void OnGameplayEffectStackChange(FActiveGameplayEffectHandle Handle,int NewCount,int OldCount) {}
-	public UObject WaitForGameplayEffectStackChange(UObject OwningAbility,FActiveGameplayEffectHandle Handle) { return default; }
+	public  void OnGameplayEffectStackChange(FActiveGameplayEffectHandle Handle,int NewCount,int OldCount) {}
+	public static UAbilityTask_WaitGameplayEffectStackChange WaitForGameplayEffectStackChange(UGameplayAbility OwningAbility,FActiveGameplayEffectHandle Handle) { return default; }
 }

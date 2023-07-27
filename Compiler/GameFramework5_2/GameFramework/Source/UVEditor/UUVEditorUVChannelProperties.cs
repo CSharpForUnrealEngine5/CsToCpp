@@ -6,7 +6,7 @@ using CSharpToCpp.Utilities;
 public partial class UUVEditorUVChannelProperties : UInteractiveToolPropertySet {
 // UVEditorUVChannelProperties
 	public string Asset;
-	public TArray<string> GetAssetNames() { return default; }
+	public  TArray<string> GetAssetNames() { return default; }
 	public string UVChannel;
-	public TArray<string> GetUVChannelNames() { return default; }
+	public  TArray<string> GetUVChannelNames() { return default; }
 }

@@ -5,7 +5,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Compute an operation between 2 incoming fields</summary>
 public partial class UOperatorField : UFieldNodeBase {
 // OperatorField
-	public UObject SetOperatorField(float Magnitude,UObject LeftField,UObject RightField,EFieldOperationType Operation) { return default; }
+	public  UOperatorField SetOperatorField(float Magnitude,UFieldNodeBase LeftField,UFieldNodeBase RightField,EFieldOperationType Operation) { return default; }
 	public float Magnitude;
 	public UFieldNodeBase RightField;
 	public UFieldNodeBase LeftField;

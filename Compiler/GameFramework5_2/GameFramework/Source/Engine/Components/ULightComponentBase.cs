@@ -28,13 +28,13 @@ public partial class ULightComponentBase : USceneComponent {
 	public float StaticEditorTextureScale;
 	public UTexture2D DynamicEditorTexture;
 	public float DynamicEditorTextureScale;
-	public void SetCastShadows(bool bNewValue) {}
-	public FLinearColor GetLightColor() { return default; }
-	public void SetCastVolumetricShadow(bool bNewValue) {}
-	public void SetCastDeepShadow(bool bNewValue) {}
-	public void SetAffectReflection(bool bNewValue) {}
-	public void SetAffectGlobalIllumination(bool bNewValue) {}
-	public void SetCastRaytracedShadow(bool bNewValue) {}
-	public void SetCastRaytracedShadows(ECastRayTracedShadow bNewValue) {}
-	public void SetSamplesPerPixel(int NewValue) {}
+	public  void SetCastShadows(bool bNewValue) {}
+	public  FLinearColor GetLightColor() { return default; }
+	public  void SetCastVolumetricShadow(bool bNewValue) {}
+	public  void SetCastDeepShadow(bool bNewValue) {}
+	public  void SetAffectReflection(bool bNewValue) {}
+	public  void SetAffectGlobalIllumination(bool bNewValue) {}
+	public  void SetCastRaytracedShadow(bool bNewValue) {}
+	public  void SetCastRaytracedShadows(ECastRayTracedShadow bNewValue) {}
+	public  void SetSamplesPerPixel(int NewValue) {}
 }

@@ -5,7 +5,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Set a temporal wave scalar value according to the sample distance from the field position.</summary>
 public partial class UWaveScalar : UFieldNodeFloat {
 // WaveScalar
-	public UObject SetWaveScalar(float Magnitude,FVector Position,float Wavelength,float Period,float Time,EWaveFunctionType Function,EFieldFalloffType Falloff) { return default; }
+	public  UWaveScalar SetWaveScalar(float Magnitude,FVector Position,float Wavelength,float Period,float Time,EWaveFunctionType Function,EFieldFalloffType Falloff) { return default; }
 	public float Magnitude;
 	public FVector Position;
 	public float Wavelength;

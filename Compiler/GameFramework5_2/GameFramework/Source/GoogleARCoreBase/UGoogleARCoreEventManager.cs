@@ -5,6 +5,6 @@ using CSharpToCpp.Utilities;
 ///<summary>Manager for ARCore delegates.</summary>
 public partial class UGoogleARCoreEventManager : UObject {
 // GoogleARCoreEventManager
-	public void FGoogleARCoreOnConfigCameraDynamicDelegate(TArray<FGoogleARCoreCameraConfig> SupportedCameraConfig) {}
+	public  void FGoogleARCoreOnConfigCameraDynamicDelegate(TArray<FGoogleARCoreCameraConfig> SupportedCameraConfig) {}
 	public FGoogleARCoreOnConfigCameraDynamicDelegate OnConfigCamera;
 }

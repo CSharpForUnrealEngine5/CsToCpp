@@ -25,7 +25,7 @@ public partial class USceneCaptureComponent2D : USceneCaptureComponent {
 	public FVector ClipPlaneNormal;
 	public bool bCameraCutThisFrame;
 	public bool bConsiderUnrenderedOpaquePixelAsFullyTranslucent;
-	public void AddOrUpdateBlendable(object /*InBlendableObject*/ InBlendableObject,float InWeight/*=1.0f*/) {}
-	public void RemoveBlendable(object /*InBlendableObject*/ InBlendableObject) {}
-	public void CaptureScene() {}
+	public  void AddOrUpdateBlendable(object /*InBlendableObject*/ InBlendableObject,float InWeight/*=1.0f*/) {}
+	public  void RemoveBlendable(object /*InBlendableObject*/ InBlendableObject) {}
+	public  void CaptureScene() {}
 }

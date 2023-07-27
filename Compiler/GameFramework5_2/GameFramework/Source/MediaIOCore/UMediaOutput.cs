@@ -6,6 +6,6 @@ using CSharpToCpp.Utilities;
 public partial class UMediaOutput : UObject {
 // MediaOutput
 	public int NumberOfTextureBuffers;
-	public UObject CreateMediaCapture() { return default; }
-	public bool Validate(string OutFailureReason) { return default; }
+	public  UMediaCapture CreateMediaCapture() { return default; }
+	public  bool Validate(string OutFailureReason) { return default; }
 }

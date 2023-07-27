@@ -5,5 +5,5 @@ using CSharpToCpp.Utilities;
 ///<summary>The canvas panel is a designer friendly panel that allows widgets to be laid out at arbitrary</summary>
 public partial class UCanvasPanel : UPanelWidget {
 // CanvasPanel
-	public UObject AddChildToCanvas(UObject Content) { return default; }
+	public  UCanvasPanelSlot AddChildToCanvas(UWidget Content) { return default; }
 }

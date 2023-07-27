@@ -4,4 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("CommonWidgetCarousel.h")]
 public partial struct FOnCurrentPageIndexChanged {
 // OnCurrentPageIndexChanged__DelegateSignature
+	void AddDynamic(object obj, string functionName) {}
 }

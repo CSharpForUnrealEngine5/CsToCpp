@@ -5,5 +5,5 @@ using CSharpToCpp.Utilities;
 ///<summary>C++ Base Class for the debug widget that is drawn onto the game viewport</summary>
 public partial class UMovieRenderDebugWidget : UUserWidget {
 // MovieRenderDebugWidget
-	public void OnInitializedForPipeline(UObject ForPipeline) {}
+	public  void OnInitializedForPipeline(UMoviePipeline ForPipeline) {}
 }

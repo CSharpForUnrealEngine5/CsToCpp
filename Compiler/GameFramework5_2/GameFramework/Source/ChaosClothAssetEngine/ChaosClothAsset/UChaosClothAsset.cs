@@ -5,7 +5,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Cloth asset for pattern based simulation.</summary>
 public partial class UChaosClothAsset : USkinnedAsset {
 // ChaosClothAsset
-	public UObject GetShadowPhysicsAsset() { return default; }
+	public  UPhysicsAsset GetShadowPhysicsAsset() { return default; }
 	public UDataflow DataflowAsset;
 	public string DataflowTerminal;
 	public TArray<FSkeletalMaterial> Materials;

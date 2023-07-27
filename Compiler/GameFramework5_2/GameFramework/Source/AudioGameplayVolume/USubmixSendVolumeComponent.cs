@@ -5,6 +5,6 @@ using CSharpToCpp.Utilities;
 ///<summary>USubmixSendVolumeComponent - Audio Gameplay Volume component for submix sends</summary>
 public partial class USubmixSendVolumeComponent : UAudioGameplayVolumeMutator {
 // SubmixSendVolumeComponent
-	public void SetSubmixSendSettings(TArray<FAudioVolumeSubmixSendSettings> NewSubmixSendSettings) {}
+	public  void SetSubmixSendSettings(TArray<FAudioVolumeSubmixSendSettings> NewSubmixSendSettings) {}
 	public TArray<FAudioVolumeSubmixSendSettings> SubmixSendSettings;
 }

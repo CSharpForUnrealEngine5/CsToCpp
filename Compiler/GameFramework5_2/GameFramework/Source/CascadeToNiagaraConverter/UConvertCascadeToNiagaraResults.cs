@@ -5,7 +5,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Wrapper class for passing results back from the ConvertCascadeToNiagara python script.</summary>
 public partial class UConvertCascadeToNiagaraResults : UObject {
 // ConvertCascadeToNiagaraResults
-	public void Init() {}
+	public  void Init() {}
 	public bool bCancelledByUser;
 	public bool bCancelledByPythonError;
 }

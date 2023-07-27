@@ -18,8 +18,8 @@ public partial class UTakeRecorderActorSource : UTakeRecorderSource {
 	public TArray<UMovieSceneTrackRecorder> TrackRecorders;
 	public UTakeRecorderActorSource ParentSource;
 	public bool bShowProgressDialog;
-	public UObject AddSourceForActor(UObject InActor,UObject InSources) { return default; }
-	public void RemoveActorFromSources(UObject InActor,UObject InSources) {}
-	public void SetSourceActor(TSoftObjectPtr<AActor> InTarget) {}
-	public TSoftObjectPtr<AActor> GetSourceActor() { return default; }
+	public static UTakeRecorderSource AddSourceForActor(AActor InActor,UTakeRecorderSources InSources) { return default; }
+	public static void RemoveActorFromSources(AActor InActor,UTakeRecorderSources InSources) {}
+	public  void SetSourceActor(TSoftObjectPtr<AActor> InTarget) {}
+	public  TSoftObjectPtr<AActor> GetSourceActor() { return default; }
 }

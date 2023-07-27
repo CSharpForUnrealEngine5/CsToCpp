@@ -4,8 +4,8 @@ using CSharpToCpp.Utilities;
 [CppInclude("OptionalMobileFeaturesBPLibrary.h")]
 public partial class UOptionalMobileFeaturesBPLibrary : UBlueprintFunctionLibrary {
 // OptionalMobileFeaturesBPLibrary
-	public int GetVolumeState() { return default; }
-	public int GetBatteryLevel() { return default; }
-	public float GetBatteryTemperature() { return default; }
-	public bool AreHeadphonesPluggedIn() { return default; }
+	public static int GetVolumeState() { return default; }
+	public static int GetBatteryLevel() { return default; }
+	public static float GetBatteryTemperature() { return default; }
+	public static bool AreHeadphonesPluggedIn() { return default; }
 }

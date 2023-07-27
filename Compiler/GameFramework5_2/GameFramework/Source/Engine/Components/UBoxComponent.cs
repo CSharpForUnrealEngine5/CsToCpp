@@ -7,8 +7,8 @@ public partial class UBoxComponent : UShapeComponent {
 // BoxComponent
 	public FVector BoxExtent;
 	public float LineThickness;
-	public void SetBoxExtent(FVector InBoxExtent,bool bUpdateOverlaps/*=true*/) {}
-	public void SetLineThickness(float Thickness) {}
-	public FVector GetScaledBoxExtent() { return default; }
-	public FVector GetUnscaledBoxExtent() { return default; }
+	public  void SetBoxExtent(FVector InBoxExtent,bool bUpdateOverlaps/*=true*/) {}
+	public  void SetLineThickness(float Thickness) {}
+	public  FVector GetScaledBoxExtent() { return default; }
+	public  FVector GetUnscaledBoxExtent() { return default; }
 }

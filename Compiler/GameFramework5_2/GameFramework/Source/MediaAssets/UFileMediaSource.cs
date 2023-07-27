@@ -6,5 +6,5 @@ public partial class UFileMediaSource : UBaseMediaSource {
 // FileMediaSource
 	public string FilePath;
 	public bool PrecacheFile;
-	public void SetFilePath(string Path) {}
+	public  void SetFilePath(string Path) {}
 }

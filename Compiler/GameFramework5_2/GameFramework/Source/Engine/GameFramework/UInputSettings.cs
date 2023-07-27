@@ -37,15 +37,15 @@ public partial class UInputSettings : UObject {
 	public TSoftObjectPtr<UClass> DefaultInputComponentClass;
 	public FSoftObjectPath DefaultTouchInterface;
 	public TArray<FKey> ConsoleKeys;
-	public UObject GetInputSettings() { return default; }
-	public void AddActionMapping(FInputActionKeyMapping KeyMapping,bool bForceRebuildKeymaps/*=true*/) {}
-	public void GetActionMappingByName(string InActionName,TArray<FInputActionKeyMapping> OutMappings) {}
-	public void RemoveActionMapping(FInputActionKeyMapping KeyMapping,bool bForceRebuildKeymaps/*=true*/) {}
-	public void AddAxisMapping(FInputAxisKeyMapping KeyMapping,bool bForceRebuildKeymaps/*=true*/) {}
-	public void GetAxisMappingByName(string InAxisName,TArray<FInputAxisKeyMapping> OutMappings) {}
-	public void RemoveAxisMapping(FInputAxisKeyMapping KeyMapping,bool bForceRebuildKeymaps/*=true*/) {}
-	public void SaveKeyMappings() {}
-	public void GetActionNames(TArray<string> ActionNames) {}
-	public void GetAxisNames(TArray<string> AxisNames) {}
-	public void ForceRebuildKeymaps() {}
+	public static UInputSettings GetInputSettings() { return default; }
+	public  void AddActionMapping(FInputActionKeyMapping KeyMapping,bool bForceRebuildKeymaps/*=true*/) {}
+	public  void GetActionMappingByName(string InActionName,TArray<FInputActionKeyMapping> OutMappings) {}
+	public  void RemoveActionMapping(FInputActionKeyMapping KeyMapping,bool bForceRebuildKeymaps/*=true*/) {}
+	public  void AddAxisMapping(FInputAxisKeyMapping KeyMapping,bool bForceRebuildKeymaps/*=true*/) {}
+	public  void GetAxisMappingByName(string InAxisName,TArray<FInputAxisKeyMapping> OutMappings) {}
+	public  void RemoveAxisMapping(FInputAxisKeyMapping KeyMapping,bool bForceRebuildKeymaps/*=true*/) {}
+	public  void SaveKeyMappings() {}
+	public  void GetActionNames(TArray<string> ActionNames) {}
+	public  void GetAxisNames(TArray<string> AxisNames) {}
+	public  void ForceRebuildKeymaps() {}
 }

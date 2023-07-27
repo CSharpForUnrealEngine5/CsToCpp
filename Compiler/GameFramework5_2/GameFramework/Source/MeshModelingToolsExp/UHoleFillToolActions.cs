@@ -4,6 +4,6 @@ using CSharpToCpp.Utilities;
 [CppInclude("HoleFillTool.h")]
 public partial class UHoleFillToolActions : UInteractiveToolPropertySet {
 // HoleFillToolActions
-	public void SelectAll() {}
-	public void Clear() {}
+	public  void SelectAll() {}
+	public  void Clear() {}
 }

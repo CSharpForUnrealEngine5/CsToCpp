@@ -7,8 +7,8 @@ public partial class UInputTrigger : UObject {
 // InputTrigger
 	public float ActuationThreshold;
 	public bool bShouldAlwaysTick;
-	public bool IsActuated(FInputActionValue ForValue) { return default; }
+	public  bool IsActuated(FInputActionValue ForValue) { return default; }
 	public FInputActionValue LastValue;
-	public ETriggerType GetTriggerType() { return default; }
-	public ETriggerState UpdateState(UObject PlayerInput,FInputActionValue ModifiedValue,float DeltaTime) { return default; }
+	public  ETriggerType GetTriggerType() { return default; }
+	public  ETriggerState UpdateState(UEnhancedPlayerInput PlayerInput,FInputActionValue ModifiedValue,float DeltaTime) { return default; }
 }

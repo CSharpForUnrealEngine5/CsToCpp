@@ -10,7 +10,7 @@ public partial class UGameplayTasksComponent : UActorComponent {
 	public TArray<UGameplayTask> TickingTasks;
 	public TArray<UGameplayTask> KnownTasks;
 	public FOnClaimedResourcesChangeSignature OnClaimedResourcesChange;
-	public void OnRep_SimulatedTasks(TArray<UObject> PreviousSimulatedTasks) {}
-	public EGameplayTaskRunResult K2_RunGameplayTask(object /*TaskOwner*/ TaskOwner,UObject Task,byte Priority,TArray<UClass> AdditionalRequiredResources,TArray<UClass> AdditionalClaimedResources) { return default; }
+	public  void OnRep_SimulatedTasks(TArray<UGameplayTask> PreviousSimulatedTasks) {}
+	public static EGameplayTaskRunResult K2_RunGameplayTask(object /*TaskOwner*/ TaskOwner,UGameplayTask Task,byte Priority,TArray<UClass> AdditionalRequiredResources,TArray<UClass> AdditionalClaimedResources) { return default; }
 	public TArray<UGameplayTask> SimulatedTasks;
 }

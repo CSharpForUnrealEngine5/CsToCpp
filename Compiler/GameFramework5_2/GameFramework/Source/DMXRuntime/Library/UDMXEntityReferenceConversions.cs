@@ -5,10 +5,10 @@ using CSharpToCpp.Utilities;
 ///<summary>Extend type conversions to handle Entity Reference structs</summary>
 public partial class UDMXEntityReferenceConversions : UBlueprintFunctionLibrary {
 // DMXEntityReferenceConversions
-	public UObject Conv_ControllerRefToObj(FDMXEntityControllerRef InControllerRef) { return default; }
-	public UObject Conv_FixtureTypeRefToObj(FDMXEntityFixtureTypeRef InFixtureTypeRef) { return default; }
-	public UObject Conv_FixturePatchRefToObj(FDMXEntityFixturePatchRef InFixturePatchRef) { return default; }
-	public FDMXEntityControllerRef Conv_ControllerObjToRef(UObject InController) { return default; }
-	public FDMXEntityFixtureTypeRef Conv_FixtureTypeObjToRef(UObject InFixtureType) { return default; }
-	public FDMXEntityFixturePatchRef Conv_FixturePatchObjToRef(UObject InFixturePatch) { return default; }
+	public static UDMXEntityController Conv_ControllerRefToObj(FDMXEntityControllerRef InControllerRef) { return default; }
+	public static UDMXEntityFixtureType Conv_FixtureTypeRefToObj(FDMXEntityFixtureTypeRef InFixtureTypeRef) { return default; }
+	public static UDMXEntityFixturePatch Conv_FixturePatchRefToObj(FDMXEntityFixturePatchRef InFixturePatchRef) { return default; }
+	public static FDMXEntityControllerRef Conv_ControllerObjToRef(UDMXEntityController InController) { return default; }
+	public static FDMXEntityFixtureTypeRef Conv_FixtureTypeObjToRef(UDMXEntityFixtureType InFixtureType) { return default; }
+	public static FDMXEntityFixturePatchRef Conv_FixturePatchObjToRef(UDMXEntityFixturePatch InFixturePatch) { return default; }
 }

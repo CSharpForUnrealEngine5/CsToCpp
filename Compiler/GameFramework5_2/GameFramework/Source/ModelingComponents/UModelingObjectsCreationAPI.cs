@@ -5,6 +5,6 @@ using CSharpToCpp.Utilities;
 ///<summary>UModelingObjectsCreationAPI is a base interface for functions that can be used to</summary>
 public partial class UModelingObjectsCreationAPI : UObject {
 // ModelingObjectsCreationAPI
-	public FCreateMeshObjectResult CreateMeshObject(FCreateMeshObjectParams CreateMeshParams) { return default; }
-	public FCreateTextureObjectResult CreateTextureObject(FCreateTextureObjectParams CreateTexParams) { return default; }
+	public  FCreateMeshObjectResult CreateMeshObject(FCreateMeshObjectParams CreateMeshParams) { return default; }
+	public  FCreateTextureObjectResult CreateTextureObject(FCreateTextureObjectParams CreateTexParams) { return default; }
 }

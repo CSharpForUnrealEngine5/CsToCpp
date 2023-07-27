@@ -5,5 +5,5 @@ using CSharpToCpp.Utilities;
 ///<summary>A value Oscillator that can be used in the DMX Control Console. Outputs float (normalized values)</summary>
 public partial class UDMXControlConsoleFloatOscillator : UObject {
 // DMXControlConsoleFloatOscillator
-	public float GetNormalizedValue(float DeltaTime) { return default; }
+	public  float GetNormalizedValue(float DeltaTime) { return default; }
 }

@@ -5,5 +5,5 @@ using CSharpToCpp.Utilities;
 ///<summary>Blueprint API function library</summary>
 public partial class UDisplayClusterProjectionBlueprintLib : UBlueprintFunctionLibrary {
 // DisplayClusterProjectionBlueprintLib
-	public void GetAPI(object /*OutAPI*/ OutAPI) {}
+	public static void GetAPI(object /*OutAPI*/ OutAPI) {}
 }

@@ -18,11 +18,11 @@ public partial class UMaterialInterface : UObject {
 	public TMap<string,bool> ParameterOverviewExpansion;
 	public UAssetImportData AssetImportData;
 	public FGuid LightingGuid;
-	public UObject GetBaseMaterial() { return default; }
-	public UObject GetPhysicalMaterial() { return default; }
-	public UObject GetPhysicalMaterialMask() { return default; }
-	public UObject GetPhysicalMaterialFromMap(int Index) { return default; }
-	public FMaterialParameterInfo GetParameterInfo(EMaterialParameterAssociation Association,string ParameterName,UObject LayerFunction) { return default; }
-	public EBlendMode GetBlendMode() { return default; }
-	public void SetForceMipLevelsToBeResident(bool OverrideForceMiplevelsToBeResident,bool bForceMiplevelsToBeResidentValue,float ForceDuration,int CinematicTextureGroups/*=0*/,bool bFastResponse/*=false*/) {}
+	public  UMaterial GetBaseMaterial() { return default; }
+	public  UPhysicalMaterial GetPhysicalMaterial() { return default; }
+	public  UPhysicalMaterialMask GetPhysicalMaterialMask() { return default; }
+	public  UPhysicalMaterial GetPhysicalMaterialFromMap(int Index) { return default; }
+	public  FMaterialParameterInfo GetParameterInfo(EMaterialParameterAssociation Association,string ParameterName,UMaterialFunctionInterface LayerFunction) { return default; }
+	public  EBlendMode GetBlendMode() { return default; }
+	public  void SetForceMipLevelsToBeResident(bool OverrideForceMiplevelsToBeResident,bool bForceMiplevelsToBeResidentValue,float ForceDuration,int CinematicTextureGroups/*=0*/,bool bFastResponse/*=false*/) {}
 }

@@ -4,4 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("Abilities/Tasks/AbilityTask_WaitInputRelease.h")]
 public partial struct FInputReleaseDelegate {
 // InputReleaseDelegate__DelegateSignature
+	void AddDynamic(object obj, string functionName) {}
 }

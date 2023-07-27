@@ -4,7 +4,7 @@ using CSharpToCpp.Utilities;
 [CppInclude("Widgets/UIFCanvasBox.h")]
 public partial class UUIFrameworkCanvasBox : UUIFrameworkWidget {
 // UIFrameworkCanvasBox
-	public void AddWidget(FUIFrameworkCanvasBoxSlot Widget) {}
-	public void RemoveWidget(UObject Widget) {}
+	public  void AddWidget(FUIFrameworkCanvasBoxSlot Widget) {}
+	public  void RemoveWidget(UUIFrameworkWidget Widget) {}
 	public FUIFrameworkCanvasBoxSlotList ReplicatedSlotList;
 }

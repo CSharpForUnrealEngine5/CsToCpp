@@ -5,22 +5,22 @@ using CSharpToCpp.Utilities;
 ///<summary>Camera Calibration subsystem</summary>
 public partial class UCameraCalibrationSubsystem : UEngineSubsystem {
 // CameraCalibrationSubsystem
-	public UObject GetDefaultLensFile() { return default; }
-	public void SetDefaultLensFile(UObject NewDefaultLensFile) {}
-	public UObject GetLensFile(FLensFilePicker Picker) { return default; }
-	public TArray<UObject> GetDistortionModelHandlers(UObject Component) { return default; }
-	public UObject FindDistortionModelHandler(FDistortionHandlerPicker DistortionHandlerPicker,bool bUpdatePicker/*=true*/) { return default; }
-	public UObject FindOrCreateDistortionModelHandler(FDistortionHandlerPicker DistortionHandlerPicker,UClass LensModelClass) { return default; }
-	public void UnregisterDistortionModelHandler(UObject Component,UObject Handler) {}
-	public UClass GetRegisteredLensModel(string ModelName) { return default; }
-	public UClass GetCameraNodalOffsetAlgo(string Name) { return default; }
-	public TArray<string> GetCameraNodalOffsetAlgos() { return default; }
-	public UClass GetCameraImageCenterAlgo(string Name) { return default; }
-	public TArray<string> GetCameraImageCenterAlgos() { return default; }
-	public UObject GetOverlayMaterial(string OverlayName) { return default; }
-	public TArray<string> GetOverlayMaterialNames() { return default; }
-	public TArray<string> GetCameraCalibrationSteps() { return default; }
-	public UClass GetCameraCalibrationStep(string Name) { return default; }
+	public  ULensFile GetDefaultLensFile() { return default; }
+	public  void SetDefaultLensFile(ULensFile NewDefaultLensFile) {}
+	public  ULensFile GetLensFile(FLensFilePicker Picker) { return default; }
+	public  TArray<ULensDistortionModelHandlerBase> GetDistortionModelHandlers(UCineCameraComponent Component) { return default; }
+	public  ULensDistortionModelHandlerBase FindDistortionModelHandler(FDistortionHandlerPicker DistortionHandlerPicker,bool bUpdatePicker/*=true*/) { return default; }
+	public  ULensDistortionModelHandlerBase FindOrCreateDistortionModelHandler(FDistortionHandlerPicker DistortionHandlerPicker,UClass LensModelClass) { return default; }
+	public  void UnregisterDistortionModelHandler(UCineCameraComponent Component,ULensDistortionModelHandlerBase Handler) {}
+	public  UClass GetRegisteredLensModel(string ModelName) { return default; }
+	public  UClass GetCameraNodalOffsetAlgo(string Name) { return default; }
+	public  TArray<string> GetCameraNodalOffsetAlgos() { return default; }
+	public  UClass GetCameraImageCenterAlgo(string Name) { return default; }
+	public  TArray<string> GetCameraImageCenterAlgos() { return default; }
+	public  UMaterialInterface GetOverlayMaterial(string OverlayName) { return default; }
+	public  TArray<string> GetOverlayMaterialNames() { return default; }
+	public  TArray<string> GetCameraCalibrationSteps() { return default; }
+	public  UClass GetCameraCalibrationStep(string Name) { return default; }
 	public ULensFile DefaultLensFile;
 	public TMap<string,UClass> LensModelMap;
 	public TMap<string,UClass> CameraNodalOffsetAlgosMap;

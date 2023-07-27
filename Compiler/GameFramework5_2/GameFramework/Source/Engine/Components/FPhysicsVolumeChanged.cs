@@ -4,4 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("Components/SceneComponent.h")]
 public partial struct FPhysicsVolumeChanged {
 // PhysicsVolumeChanged__DelegateSignature
+	void AddDynamic(object obj, string functionName) {}
 }

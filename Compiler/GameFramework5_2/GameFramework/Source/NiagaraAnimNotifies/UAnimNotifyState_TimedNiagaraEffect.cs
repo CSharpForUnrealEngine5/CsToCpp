@@ -10,5 +10,5 @@ public partial class UAnimNotifyState_TimedNiagaraEffect : UAnimNotifyState {
 	public FVector LocationOffset;
 	public FRotator RotationOffset;
 	public bool bDestroyAtEnd;
-	public UObject GetSpawnedEffect(UObject MeshComp) { return default; }
+	public  UFXSystemComponent GetSpawnedEffect(UMeshComponent MeshComp) { return default; }
 }

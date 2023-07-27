@@ -18,5 +18,5 @@ public partial class AInteractiveFoliageActor : AStaticMeshActor {
 	public float MaxTouchImpulse;
 	public float MaxForce;
 	public float Mass;
-	public void CapsuleTouched(UObject OverlappedComp,UObject Other,UObject OtherComp,int OtherBodyIndex,bool bFromSweep,FHitResult OverlapInfo) {}
+	public  void CapsuleTouched(UPrimitiveComponent OverlappedComp,AActor Other,UPrimitiveComponent OtherComp,int OtherBodyIndex,bool bFromSweep,FHitResult OverlapInfo) {}
 }

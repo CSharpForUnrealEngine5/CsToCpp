@@ -4,4 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("AIController.h")]
 public partial struct FAIMoveCompletedSignature {
 // AIMoveCompletedSignature__DelegateSignature
+	void AddDynamic(object obj, string functionName) {}
 }

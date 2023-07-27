@@ -4,9 +4,9 @@ using CSharpToCpp.Utilities;
 [CppInclude("PropertyValue.h")]
 public partial class UPropertyValue : UObject {
 // PropertyValue
-	public string GetPropertyTooltip() { return default; }
-	public string GetFullDisplayString() { return default; }
-	public bool HasRecordedData() { return default; }
+	public  string GetPropertyTooltip() { return default; }
+	public  string GetFullDisplayString() { return default; }
+	public  bool HasRecordedData() { return default; }
 	public TArray<object> Properties_DEPRECATED;
 	public TArray<int> PropertyIndices_DEPRECATED;
 	public TArray<FCapturedPropSegment> CapturedPropSegments;

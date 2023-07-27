@@ -4,4 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("Tasks/GameplayTask_WaitDelay.h")]
 public partial struct FTaskDelayDelegate {
 // TaskDelayDelegate__DelegateSignature
+	void AddDynamic(object obj, string functionName) {}
 }

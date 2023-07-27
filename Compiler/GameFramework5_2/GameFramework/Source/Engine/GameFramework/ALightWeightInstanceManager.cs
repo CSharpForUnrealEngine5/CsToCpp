@@ -7,7 +7,7 @@ public partial class ALightWeightInstanceManager : AActor {
 	public UClass RepresentedClass;
 	public UClass AcceptedClass;
 	public TArray<FTransform> InstanceTransforms;
-	public void OnRep_Transforms() {}
+	public  void OnRep_Transforms() {}
 	public TArray<int> FreeIndices;
 	public TArray<bool> ValidIndices;
 }

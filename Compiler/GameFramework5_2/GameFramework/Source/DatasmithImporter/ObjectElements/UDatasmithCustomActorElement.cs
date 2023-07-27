@@ -5,11 +5,11 @@ using CSharpToCpp.Utilities;
 ///<summary>UDatasmithCustomActorElement</summary>
 public partial class UDatasmithCustomActorElement : UDatasmithActorElement {
 // DatasmithCustomActorElement
-	public string GetClassOrPathName() { return default; }
-	public void SetClassOrPathName(string InPathName) {}
-	public int GetPropertiesCount() { return default; }
-	public UObject GetProperty(int i) { return default; }
-	public UObject GetPropertyByName(string InName) { return default; }
-	public void AddProperty(UObject Property) {}
-	public void RemoveProperty(UObject Property) {}
+	public  string GetClassOrPathName() { return default; }
+	public  void SetClassOrPathName(string InPathName) {}
+	public  int GetPropertiesCount() { return default; }
+	public  UDatasmithKeyValueProperty GetProperty(int i) { return default; }
+	public  UDatasmithKeyValueProperty GetPropertyByName(string InName) { return default; }
+	public  void AddProperty(UDatasmithKeyValueProperty Property) {}
+	public  void RemoveProperty(UDatasmithKeyValueProperty Property) {}
 }

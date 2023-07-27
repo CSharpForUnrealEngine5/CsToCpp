@@ -7,10 +7,10 @@ public partial class UPlayerInput : UObject {
 // PlayerInput
 	public TArray<FKeyBind> DebugExecBindings;
 	public TArray<string> InvertedAxis;
-	public void SetMouseSensitivity(float Sensitivity) {}
-	public void SetBind(string BindName,string Command) {}
-	public void InvertAxisKey(FKey AxisKey) {}
-	public void InvertAxis(string AxisName) {}
-	public void ClearSmoothing() {}
-	public UObject GetOuterAPlayerController() { return default; }
+	public  void SetMouseSensitivity(float Sensitivity) {}
+	public  void SetBind(string BindName,string Command) {}
+	public  void InvertAxisKey(FKey AxisKey) {}
+	public  void InvertAxis(string AxisName) {}
+	public  void ClearSmoothing() {}
+	public  APlayerController GetOuterAPlayerController() { return default; }
 }

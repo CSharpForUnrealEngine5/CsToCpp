@@ -4,12 +4,12 @@ using CSharpToCpp.Utilities;
 [CppInclude("ContextualAnimManager.h")]
 public partial class UContextualAnimManager : UObject {
 // ContextualAnimManager
-	public bool TryStopSceneWithActor(UObject Actor) { return default; }
-	public bool IsActorInAnyScene(UObject Actor) { return default; }
-	public UObject GetSceneWithActor(UObject Actor) { return default; }
-	public UObject GetContextualAnimManager(UObject WorldContextObject) { return default; }
-	public UObject BP_TryStartScene(UObject SceneAsset,FContextualAnimStartSceneParams Params) { return default; }
+	public  bool TryStopSceneWithActor(AActor Actor) { return default; }
+	public  bool IsActorInAnyScene(AActor Actor) { return default; }
+	public  UContextualAnimSceneInstance GetSceneWithActor(AActor Actor) { return default; }
+	public static UContextualAnimManager GetContextualAnimManager(UObject WorldContextObject) { return default; }
+	public  UContextualAnimSceneInstance BP_TryStartScene(UContextualAnimSceneAsset SceneAsset,FContextualAnimStartSceneParams Params) { return default; }
 	public TSet<UContextualAnimSceneActorComponent> SceneActorCompContainer;
 	public TArray<UContextualAnimSceneInstance> Instances;
-	public void OnSceneInstanceEnded(UObject SceneInstance) {}
+	public  void OnSceneInstanceEnded(UContextualAnimSceneInstance SceneInstance) {}
 }

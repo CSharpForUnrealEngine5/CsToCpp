@@ -4,5 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("Binding/BoolBinding.h")]
 public partial class UBoolBinding : UPropertyBinding {
 // BoolBinding
-	public bool GetValue() { return default; }
+	public  bool GetValue() { return default; }
 }
