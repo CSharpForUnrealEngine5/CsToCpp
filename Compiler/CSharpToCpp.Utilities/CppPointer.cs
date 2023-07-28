@@ -9,7 +9,7 @@ namespace CSharpToCpp.Utilities
     /// <summary>
     /// Translate this type to a pointer type.  So UObject will become UObject*
     /// </summary>
-    [AttributeUsage(AttributeTargets.Class | AttributeTargets.Interface | AttributeTargets.Struct)]
+    [AttributeUsage(AttributeTargets.Class | AttributeTargets.Interface | AttributeTargets.Struct|AttributeTargets.Parameter)]
     public class CppPointer : Attribute
     {
     }

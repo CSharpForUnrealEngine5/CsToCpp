@@ -19,6 +19,7 @@ public partial class UObject
     /// <param name="cppCode"></param>
     /// <returns></returns>
     public T Code<T>(string cppCode) { return default(T); }
+    public string TEXT(string Text) { return Text; }
 
     [CppCode("Log", "GLog->Log")]
     public void Log(string message) { }

@@ -125,7 +125,11 @@ let compileMethod m pc (arity,attrList,returnType,ei,
                         constraintClauseList,block,arrowExpr,_) =
     let (rty,_) = compileType m returnType
     let pl = compileParameterList m paramList false
-    h.Add "UFUNCTION(BlueprintCallable)"
+    let method = returnType.Parent
+    let ds = m.GetDeclaredSymbol method
+    let attrs = ds.GetAttributes()
+    if hasAttr "CppNoUFunction" attrs |> not then
+        h.Add "UFUNCTION(BlueprintCallable)"
     cpp.Add $"{rty} {pc}::{id}({pl})"
     h.Add $"virtual {rty} {id}({pl});"
     compileBlock m block
@@ -326,7 +330,7 @@ let hasAttr (attr : string) (attrs : AttributeData seq) =
 
 let compileParameterList m paramList forDelegate =
     let pc = paramList.ChildNodes()
-    let f1 p =
+    let f1 (p : ParameterSyntax) =
         match p with
         | Parameter (attrList,ty,Token id, def) ->
             if def <> null then
@@ -335,6 +339,11 @@ let compileParameterList m paramList forDelegate =
             let dsPar = m.GetDeclaredSymbol ty.Parent
             let attrsPar = dsPar.GetAttributes()
             let hasConstRef = hasAttr "CppConstRef" attrsPar
+            let ty'' = m.GetTypeInfo p
+            let ds'' = m.GetDeclaredSymbol p
+            let attrsDs = ds''.GetAttributes()
+            //let tyAttrs = ty''.Type.GetAttributes()
+            let hasPointer = hasAttr "CppPointer" attrsDs
             let hasCppInclude = hasAttr "CppInclude" attrsPar
             let hasEnumInNamespace = 
                 let ty' = m.GetTypeInfo ty
@@ -343,11 +352,13 @@ let compileParameterList m paramList forDelegate =
                     hasAttr "CppEnumInNamespace" attrs
                 else
                     false
-            match hasConstRef,hasEnumInNamespace,forDelegate with
-            | false,false,true -> $"{ts},{id}"
-            | false,false,false -> $"{ts} {id}"
-            | true,_,_ -> $"const {ts}& {id}"
-            | _,true,_ -> $"{ts}::Type {id}"
+            match hasConstRef,hasEnumInNamespace,hasPointer,forDelegate with
+            | false,false,false,true -> $"{ts},{id}"
+            | false,false,false,false -> $"{ts} {id}"
+            | true,_,_,_ -> $"const {ts}& {id}"
+            | _,true,_,_ -> $"{ts}::Type {id}"
+            | _,_,true,_ -> $"{ts}* {id}"
+
             
     let mutable addComma = false
     let f2 ps =

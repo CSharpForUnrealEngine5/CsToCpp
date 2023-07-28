@@ -1,6 +1,4 @@
-﻿using System.Numerics;
-
-namespace GameFramework;
+﻿namespace GameFramework;
 
 public partial struct FVector
 {
@@ -10,6 +8,11 @@ public partial struct FVector
     public static FVector operator *(FVector v, float f) { return new FVector(); }
     public static FVector operator +(FVector v, FVector f) { return new FVector(); }
     public static FVector operator -(FVector v, FVector f) { return new FVector(); }
+
+
+    public FVector GetClampedToMaxSize(float MaxSize) { return default; }
+
+    public bool IsNearlyZero() { return false; }
 
     /** A zero vector (0,0,0) */
     public static FVector ZeroVector;
@@ -47,3 +50,8 @@ public partial struct FVector
     public static implicit operator FVector(FVector_NetQuantize fv) { return default; }
 }
 
+
+public partial struct FVector_NetQuantize
+{
+    public static implicit operator FVector_NetQuantize(FVector fv) { return default; }
+}
