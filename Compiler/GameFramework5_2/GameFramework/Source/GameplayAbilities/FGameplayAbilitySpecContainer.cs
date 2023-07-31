@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("GameplayAbilitySpec.h")]
 ///<summary>Fast serializer wrapper for above struct</summary>
+[CppInclude("GameplayAbilitySpec.h")]
 public partial struct FGameplayAbilitySpecContainer {
-// GameplayAbilitySpecContainer
 	public TArray<FGameplayAbilitySpec> Items;
 	public UAbilitySystemComponent Owner;
 }

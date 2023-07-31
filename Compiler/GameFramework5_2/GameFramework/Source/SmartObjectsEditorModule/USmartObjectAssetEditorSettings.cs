@@ -1,9 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("SmartObjectAssetEditorSettings.h")]
 ///<summary>Settings for the SmartObject asset editor</summary>
+[CppInclude("SmartObjectAssetEditorSettings.h")]
 public partial class USmartObjectAssetEditorSettings : UObject {
-// SmartObjectAssetEditorSettings
+	///<summary>Indicates whether or not the grid must be shown by default when the editor is opened</summary>
 	public bool bShowGridByDefault;
 }

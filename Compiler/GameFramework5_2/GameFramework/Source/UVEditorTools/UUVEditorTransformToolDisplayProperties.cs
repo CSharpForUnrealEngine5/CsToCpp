@@ -1,9 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("UVEditorTransformTool.h")]
 ///<summary>Visualization settings for the TransformTool</summary>
+[CppInclude("UVEditorTransformTool.h")]
 public partial class UUVEditorTransformToolDisplayProperties : UInteractiveToolPropertySet {
-// UVEditorTransformToolDisplayProperties
+	///<summary>Draw the tool&#39;s active pivot location if needed.</summary>
 	public bool bDrawPivots;
 }

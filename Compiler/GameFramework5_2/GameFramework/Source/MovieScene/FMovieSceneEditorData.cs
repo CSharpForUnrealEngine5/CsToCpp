@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("MovieScene.h")]
 ///<summary>Editor only data that needs to be saved between sessions for editing but has no runtime purpose</summary>
+[CppInclude("MovieScene.h")]
 public partial struct FMovieSceneEditorData {
-// MovieSceneEditorData
 	public TMap<string,FMovieSceneExpansionState> ExpansionStates;
 	public TArray<string> PinnedNodes;
 	public double ViewStart;

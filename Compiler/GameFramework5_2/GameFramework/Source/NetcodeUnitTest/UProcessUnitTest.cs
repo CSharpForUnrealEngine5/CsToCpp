@@ -1,8 +1,7 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("ProcessUnitTest.h")]
 ///<summary>Base class for all unit tests which launch child processes, whether they be UE child processes, or other arbitrary programs.</summary>
+[CppInclude("ProcessUnitTest.h")]
 public partial class UProcessUnitTest : UUnitTest {
-// ProcessUnitTest
 }

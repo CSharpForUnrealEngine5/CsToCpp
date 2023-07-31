@@ -1,9 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("AnimGraphNode_AssetPlayerBase.h")]
 ///<summary>Helper / intermediate for asset player graphical nodes</summary>
+[CppInclude("AnimGraphNode_AssetPlayerBase.h")]
 public partial class UAnimGraphNode_AssetPlayerBase : UAnimGraphNode_Base {
-// AnimGraphNode_AssetPlayerBase
+	///<summary>Deprecated - sync group data is held on the contained FAnimNode_Base</summary>
 	public FAnimationGroupReference SyncGroup_DEPRECATED;
 }

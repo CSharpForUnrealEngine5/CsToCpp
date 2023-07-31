@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Sections/MovieSceneColorSection.h")]
 ///<summary>Proxy structure for color section key data.</summary>
+[CppInclude("Sections/MovieSceneColorSection.h")]
 public partial struct FMovieSceneColorKeyStruct {
-// MovieSceneColorKeyStruct
 	public FLinearColor Color;
 	public FFrameNumber Time;
 }

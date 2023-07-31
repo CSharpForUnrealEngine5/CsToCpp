@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("GroomCacheData.h")]
 ///<summary>Relevant information about a groom animation</summary>
+[CppInclude("GroomCacheData.h")]
 public partial struct FGroomAnimationInfo {
-// GroomAnimationInfo
 	public uint NumFrames;
 	public float SecondsPerFrame;
 	public float Duration;

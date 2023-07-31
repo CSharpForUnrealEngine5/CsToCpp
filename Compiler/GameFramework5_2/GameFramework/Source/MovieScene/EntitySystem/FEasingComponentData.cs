@@ -1,9 +1,8 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("EntitySystem/BuiltInComponentTypes.h")]
 ///<summary>Easing component data.</summary>
+[CppInclude("EntitySystem/BuiltInComponentTypes.h")]
 public partial struct FEasingComponentData {
-// EasingComponentData
 	public UMovieSceneSection Section;
 }

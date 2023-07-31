@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Units/Highlevel/Hierarchy/RigUnit_SpringIK.h")]
 ///<summary>The Spring IK solver uses a verlet integrator to perform an IK solve.</summary>
+[CppInclude("Units/Highlevel/Hierarchy/RigUnit_SpringIK.h")]
 public partial struct FRigUnit_SpringIK {
-// RigUnit_SpringIK
 	public string StartBone;
 	public string EndBone;
 	public float HierarchyStrength;

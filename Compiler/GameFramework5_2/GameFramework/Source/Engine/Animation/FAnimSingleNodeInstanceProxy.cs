@@ -1,8 +1,7 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Animation/AnimSingleNodeInstanceProxy.h")]
 ///<summary>Proxy override for this UAnimInstance-derived class</summary>
+[CppInclude("Animation/AnimSingleNodeInstanceProxy.h")]
 public partial struct FAnimSingleNodeInstanceProxy {
-// AnimSingleNodeInstanceProxy
 }

@@ -1,8 +1,7 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("WaterBodyActor.h")]
 ///<summary>For internal use.</summary>
+[CppInclude("WaterBodyActor.h")]
 public partial class UDEPRECATED_WaterBodyGenerator : UObject {
-// WaterBodyGenerator
 }

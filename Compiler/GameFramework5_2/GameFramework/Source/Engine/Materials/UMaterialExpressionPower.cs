@@ -1,10 +1,12 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Materials/MaterialExpressionPower.h")]
 public partial class UMaterialExpressionPower : UMaterialExpression {
-// MaterialExpressionPower
+	///<summary>Base</summary>
 	public FExpressionInput Base;
+	///<summary>Defaults to &#39;ConstExponent&#39; if not specified</summary>
 	public FExpressionInput Exponent;
+	///<summary>only used if Exponent is not hooked up</summary>
 	public float ConstExponent;
 }

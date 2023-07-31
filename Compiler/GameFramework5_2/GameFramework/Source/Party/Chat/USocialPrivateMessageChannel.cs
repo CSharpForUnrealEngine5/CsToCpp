@@ -1,9 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Chat/SocialPrivateMessageChannel.h")]
 ///<summary>A modified version of a chat room that only contains two participants - the current user and a private recipient of their messages.</summary>
+[CppInclude("Chat/SocialPrivateMessageChannel.h")]
 public partial class USocialPrivateMessageChannel : USocialChatChannel {
-// SocialPrivateMessageChannel
+	///<summary>The recipient of the current user&#39;s messages</summary>
 	public USocialUser TargetUser;
 }

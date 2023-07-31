@@ -1,9 +1,8 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("MIDIDeviceManager.h")]
 public partial struct FFoundMIDIDevice {
-// FoundMIDIDevice
 	public int DeviceID;
 	public string DeviceName;
 	public bool bCanReceiveFrom;

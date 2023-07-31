@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("PhysicsEngine/ConstraintTypes.h")]
 ///<summary>Distance constraint</summary>
+[CppInclude("PhysicsEngine/ConstraintTypes.h")]
 public partial struct FLinearConstraint {
-// LinearConstraint
 	public float Limit;
 	public ELinearConstraintMotion XMotion;
 	public ELinearConstraintMotion YMotion;

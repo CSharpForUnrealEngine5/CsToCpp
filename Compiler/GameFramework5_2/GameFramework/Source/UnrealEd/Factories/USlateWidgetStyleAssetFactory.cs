@@ -1,9 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Factories/SlateWidgetStyleAssetFactory.h")]
 ///<summary>Factory for creating SlateStyles</summary>
+[CppInclude("Factories/SlateWidgetStyleAssetFactory.h")]
 public partial class USlateWidgetStyleAssetFactory : UFactory {
-// SlateWidgetStyleAssetFactory
+	///<summary>StyleType</summary>
 	public UClass StyleType;
 }

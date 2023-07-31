@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("GroomDesc.h")]
 ///<summary>Note: If a new field is added to this struct, think to update GroomComponentDestailsCustomization.cpp to handle override flags</summary>
+[CppInclude("GroomDesc.h")]
 public partial struct FHairGroupDesc {
-// HairGroupDesc
 	public float HairLength;
 	public float HairWidth;
 	public bool HairWidth_Override;

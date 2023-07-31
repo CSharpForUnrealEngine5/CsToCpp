@@ -1,8 +1,7 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("ActorFactoryGeometryCache.h")]
 ///<summary>Factory class for spawning and creating GeometryCacheActors</summary>
+[CppInclude("ActorFactoryGeometryCache.h")]
 public partial class UActorFactoryGeometryCache : UActorFactory {
-// ActorFactoryGeometryCache
 }

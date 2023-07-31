@@ -1,10 +1,11 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Fetchers/DataprepBoolFetcherLibrary.h")]
 ///<summary>Filter objects based of their selected class.</summary>
+[CppInclude("Fetchers/DataprepBoolFetcherLibrary.h")]
 public partial class UDataprepIsClassOfFetcher : UDataprepBoolFetcher {
-// DataprepIsClassOfFetcher
+	///<summary>The key for the for the string</summary>
 	public UClass Class;
+	///<summary>bShouldIncludeChildClass</summary>
 	public bool bShouldIncludeChildClass;
 }

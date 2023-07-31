@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Animation/AnimMontage.h")]
 ///<summary>Each slot data referenced by Animation Slot</summary>
+[CppInclude("Animation/AnimMontage.h")]
 public partial struct FSlotAnimationTrack {
-// SlotAnimationTrack
 	public string SlotName;
 	public FAnimTrack AnimTrack;
 }

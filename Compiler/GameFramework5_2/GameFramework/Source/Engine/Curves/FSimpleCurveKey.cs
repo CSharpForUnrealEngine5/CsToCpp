@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Curves/SimpleCurve.h")]
 ///<summary>One key in a rich, editable float curve</summary>
+[CppInclude("Curves/SimpleCurve.h")]
 public partial struct FSimpleCurveKey {
-// SimpleCurveKey
 	public float Time;
 	public float Value;
 }

@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Engine/StaticMesh.h")]
 ///<summary>Old optimization settings.</summary>
+[CppInclude("Engine/StaticMesh.h")]
 public partial struct FStaticMeshOptimizationSettings {
-// StaticMeshOptimizationSettings
 	public EOptimizationType ReductionMethod;
 	public float NumOfTrianglesPercentage;
 	public float MaxDeviationPercentage;

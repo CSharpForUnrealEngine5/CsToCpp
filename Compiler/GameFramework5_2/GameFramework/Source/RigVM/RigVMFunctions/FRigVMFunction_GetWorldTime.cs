@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("RigVMFunctions/Animation/RigVMFunction_GetWorldTime.h")]
 ///<summary>Returns the current time (year, month, day, hour, minute)</summary>
+[CppInclude("RigVMFunctions/Animation/RigVMFunction_GetWorldTime.h")]
 public partial struct FRigVMFunction_GetWorldTime {
-// RigVMFunction_GetWorldTime
 	public float Year;
 	public float Month;
 	public float Day;

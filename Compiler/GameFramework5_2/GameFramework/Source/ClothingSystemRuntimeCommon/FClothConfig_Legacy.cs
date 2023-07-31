@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("ClothConfig_Legacy.h")]
 ///<summary>Deprecated, legacy definition kept for backward compatibility only.</summary>
+[CppInclude("ClothConfig_Legacy.h")]
 public partial struct FClothConfig_Legacy {
-// ClothConfig_Legacy
 	public EClothingWindMethod_Legacy WindMethod;
 	public FClothConstraintSetup_Legacy VerticalConstraintConfig;
 	public FClothConstraintSetup_Legacy HorizontalConstraintConfig;

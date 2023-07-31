@@ -1,9 +1,8 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
+///<summary>Any property that doesn&#39;t have any other option will end up using this.</summary>
 [CppInclude("Iris/Serialization/InternalNetSerializers.h")]
-///<summary>Any property that doesn't have any other option will end up using this.</summary>
 public partial struct FLastResortPropertyNetSerializerConfig {
-// LastResortPropertyNetSerializerConfig
 	public object Property;
 }

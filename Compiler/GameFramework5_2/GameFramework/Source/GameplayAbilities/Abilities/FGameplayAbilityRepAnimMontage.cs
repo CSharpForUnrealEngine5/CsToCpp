@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Abilities/GameplayAbilityRepAnimMontage.h")]
 ///<summary>Data about montages that is replicated to simulated clients</summary>
+[CppInclude("Abilities/GameplayAbilityRepAnimMontage.h")]
 public partial struct FGameplayAbilityRepAnimMontage {
-// GameplayAbilityRepAnimMontage
 	public UAnimMontage AnimMontage;
 	public float PlayRate;
 	public float Position;

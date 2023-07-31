@@ -1,13 +1,18 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("ObjectTemplates/DatasmithCineCameraComponentTemplate.h")]
 public partial class UDatasmithCineCameraComponentTemplate : UDatasmithObjectTemplate {
-// DatasmithCineCameraComponentTemplate
+	///<summary>FilmbackSettings</summary>
 	public FDatasmithCameraFilmbackSettingsTemplate FilmbackSettings;
+	///<summary>LensSettings</summary>
 	public FDatasmithCameraLensSettingsTemplate LensSettings;
+	///<summary>FocusSettings</summary>
 	public FDatasmithCameraFocusSettingsTemplate FocusSettings;
+	///<summary>CurrentFocalLength</summary>
 	public float CurrentFocalLength;
+	///<summary>CurrentAperture</summary>
 	public float CurrentAperture;
+	///<summary>PostProcessSettings</summary>
 	public FDatasmithPostProcessSettingsTemplate PostProcessSettings;
 }

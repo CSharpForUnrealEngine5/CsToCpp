@@ -1,9 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Engine/SplineMeshActor.h")]
 ///<summary>SplineMeshActor is an actor with a SplineMeshComponent.</summary>
+[CppInclude("Engine/SplineMeshActor.h")]
 public partial class ASplineMeshActor : AActor {
-// SplineMeshActor
+	///<summary>SplineMeshComponent</summary>
 	public USplineMeshComponent SplineMeshComponent;
 }

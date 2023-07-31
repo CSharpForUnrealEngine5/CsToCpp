@@ -1,9 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("NiagaraDataInterfaceRigidMeshCollisionQuery.h")]
 ///<summary>C++ and Blueprint library for accessing array types</summary>
+[CppInclude("NiagaraDataInterfaceRigidMeshCollisionQuery.h")]
 public partial class UNiagaraDIRigidMeshCollisionFunctionLibrary : UBlueprintFunctionLibrary {
-// NiagaraDIRigidMeshCollisionFunctionLibrary
+	///<summary>SetSourceActors</summary>
 	public static void SetSourceActors(UNiagaraComponent NiagaraSystem,string OverrideName,TArray<AActor> SourceActors) {}
 }

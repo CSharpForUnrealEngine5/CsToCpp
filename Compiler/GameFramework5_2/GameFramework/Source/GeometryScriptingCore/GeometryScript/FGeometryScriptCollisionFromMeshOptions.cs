@@ -1,9 +1,8 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("GeometryScript/CollisionFunctions.h")]
 public partial struct FGeometryScriptCollisionFromMeshOptions {
-// GeometryScriptCollisionFromMeshOptions
 	public bool bEmitTransaction;
 	public EGeometryScriptCollisionGenerationMethod Method;
 	public bool bAutoDetectSpheres;

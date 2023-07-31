@@ -1,10 +1,12 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("AI/AISystemBase.h")]
 public partial class UAISystemBase : UObject {
-// AISystemBase
+	///<summary>List of specific AI system class to create, can be game-specific</summary>
 	public FSoftClassPath AISystemClassName;
+	///<summary>Name of a module used to spawn the AI system. If not empty, this module has to implement IAISystemModule</summary>
 	public string AISystemModuleName;
+	///<summary>Whether the AI system class should be spawned when connecting as a client</summary>
 	public bool bInstantiateAISystemOnClient;
 }

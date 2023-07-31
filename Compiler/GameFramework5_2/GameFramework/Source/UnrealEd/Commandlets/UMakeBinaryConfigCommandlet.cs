@@ -1,8 +1,7 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Commandlets/MakeBinaryConfigCommandlet.h")]
 ///<summary>* Commandlet for creating a binary GConfig to read in quickly</summary>
+[CppInclude("Commandlets/MakeBinaryConfigCommandlet.h")]
 public partial class UMakeBinaryConfigCommandlet : UCommandlet {
-// MakeBinaryConfigCommandlet
 }

@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("GameFramework/InputDeviceProperties.h")]
 ///<summary>Data required for setting the Input Device Color</summary>
+[CppInclude("GameFramework/InputDeviceProperties.h")]
 public partial struct FDeviceColorData {
-// DeviceColorData
 	public bool bEnable;
 	public bool bResetAfterCompletion;
 	public FColor LightColor;

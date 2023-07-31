@@ -1,12 +1,16 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("WaterBodyRiverComponent.h")]
 public partial class UWaterBodyRiverComponent : UWaterBodyComponent {
-// WaterBodyRiverComponent
+	///<summary>SplineMeshComponents</summary>
 	public TArray<USplineMeshComponent> SplineMeshComponents;
+	///<summary>Material used when a river is overlapping a lake.</summary>
 	public UMaterialInterface LakeTransitionMaterial;
+	///<summary>LakeTransitionMID</summary>
 	public UMaterialInstanceDynamic LakeTransitionMID;
+	///<summary>This is the material used when a river is overlapping the ocean.</summary>
 	public UMaterialInterface OceanTransitionMaterial;
+	///<summary>OceanTransitionMID</summary>
 	public UMaterialInstanceDynamic OceanTransitionMID;
 }

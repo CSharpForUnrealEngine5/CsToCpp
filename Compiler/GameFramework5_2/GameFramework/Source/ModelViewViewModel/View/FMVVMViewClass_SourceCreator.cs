@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("View/MVVMViewClass.h")]
 ///<summary>Shared data to find or create a ViewModel at runtime.</summary>
+[CppInclude("View/MVVMViewClass.h")]
 public partial struct FMVVMViewClass_SourceCreator {
-// MVVMViewClass_SourceCreator
 	public UClass ExpectedSourceType;
 	public FMVVMViewModelContext GlobalViewModelInstance;
 	public FMVVMVCompiledFieldPath FieldPath;

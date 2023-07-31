@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Dataflow/ChaosFleshPositionTargetInitializationNodes.h")]
 ///<summary>USTRUCT(meta = (DataflowFlesh))</summary>
+[CppInclude("Dataflow/ChaosFleshPositionTargetInitializationNodes.h")]
 public partial struct FSetVertexTetrahedraPositionTargetBindingDataflowNode {
-// SetVertexTetrahedraPositionTargetBindingDataflowNode
 	public FManagedArrayCollection Collection;
 	public TArray<int> TargetIndicesIn;
 	public TArray<string> GeometryGroupGuidsIn;

@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("NiagaraRibbonRendererProperties.h")]
 ///<summary>Defines settings for UV behavior for a UV channel on ribbons.</summary>
+[CppInclude("NiagaraRibbonRendererProperties.h")]
 public partial struct FNiagaraRibbonUVSettings {
-// NiagaraRibbonUVSettings
 	public ENiagaraRibbonUVDistributionMode DistributionMode;
 	public ENiagaraRibbonUVEdgeMode LeadingEdgeMode;
 	public ENiagaraRibbonUVEdgeMode TrailingEdgeMode;

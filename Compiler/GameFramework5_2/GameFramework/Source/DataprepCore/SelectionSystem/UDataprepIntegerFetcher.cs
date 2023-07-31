@@ -1,9 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("SelectionSystem/DataprepIntegerFetcher.h")]
 ///<summary>The integer fetcher is a specialized type of fetcher for the integer</summary>
+[CppInclude("SelectionSystem/DataprepIntegerFetcher.h")]
 public partial class UDataprepIntegerFetcher : UDataprepFetcher {
-// DataprepIntegerFetcher
+	///<summary>This function is called when the fetcher is executed.</summary>
 	public  int Fetch(UObject Object,bool bOutFetchSucceded) { return default; }
 }

@@ -1,10 +1,11 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("CommonBorder.h")]
 ///<summary>* ---- All properties must be EditDefaultsOnly, BlueprintReadOnly !!! -----</summary>
+[CppInclude("CommonBorder.h")]
 public partial class UCommonBorderStyle : UObject {
-// CommonBorderStyle
+	///<summary>The brush for the background of the border</summary>
 	public FSlateBrush Background;
+	///<summary>GetBackgroundBrush</summary>
 	public  void GetBackgroundBrush(FSlateBrush Brush) {}
 }

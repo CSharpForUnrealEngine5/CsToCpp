@@ -1,10 +1,11 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Sound/SoundNodeModulatorContinuous.h")]
 ///<summary>Allows named parameter based manipulation of pitch and volume</summary>
+[CppInclude("Sound/SoundNodeModulatorContinuous.h")]
 public partial class USoundNodeModulatorContinuous : USoundNode {
-// SoundNodeModulatorContinuous
+	///<summary>PitchModulationParams</summary>
 	public FModulatorContinuousParams PitchModulationParams;
+	///<summary>VolumeModulationParams</summary>
 	public FModulatorContinuousParams VolumeModulationParams;
 }

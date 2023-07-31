@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("ModelProto.h")]
 ///<summary>Level 3 - FNodeProto</summary>
+[CppInclude("ModelProto.h")]
 public partial struct FNodeProto {
-// NodeProto
 	public TArray<string> Input;
 	public TArray<string> Output;
 	public string Name;

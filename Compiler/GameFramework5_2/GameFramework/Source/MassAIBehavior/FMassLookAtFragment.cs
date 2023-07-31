@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("MassLookAtFragments.h")]
 ///<summary>Struct that holds all parameters of the current entity look at</summary>
+[CppInclude("MassLookAtFragments.h")]
 public partial struct FMassLookAtFragment {
-// MassLookAtFragment
 	public FVector Direction;
 	public FVector GazeDirection;
 	public FMassEntityHandle TrackedEntity;

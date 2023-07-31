@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("HLOD/HLODProxyMesh.h")]
 ///<summary>A mesh proxy entry</summary>
+[CppInclude("HLOD/HLODProxyMesh.h")]
 public partial struct FHLODProxyMesh {
-// HLODProxyMesh
 	public TLazyObjectPtr<ALODActor> LODActor;
 	public UStaticMesh StaticMesh;
 	public string Key;

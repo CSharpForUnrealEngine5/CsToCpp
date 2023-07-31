@@ -1,8 +1,8 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Styling/StyleColors.h")]
-///<summary>Note: If you add another color here, you should update the Dark.json theme file in Engine\Content\Slate\Themes & FUMGColors in UMGCoreStyle.cpp for consistency</summary>
+///<summary>Note: If you add another color here, you should update the Dark.json theme file in Engine\Content\Slate\Themes &amp; FUMGColors in UMGCoreStyle.cpp for consistency</summary>
 public enum EStyleColor {
 	Black=0,
 	Background=1,

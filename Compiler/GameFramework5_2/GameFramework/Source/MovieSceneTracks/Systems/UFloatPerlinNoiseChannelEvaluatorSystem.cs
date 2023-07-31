@@ -1,8 +1,7 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Systems/FloatPerlinNoiseChannelEvaluatorSystem.h")]
 ///<summary>System that is responsible for evaluating double perlin noise channels.</summary>
+[CppInclude("Systems/FloatPerlinNoiseChannelEvaluatorSystem.h")]
 public partial class UFloatPerlinNoiseChannelEvaluatorSystem : UMovieSceneEntitySystem {
-// FloatPerlinNoiseChannelEvaluatorSystem
 }

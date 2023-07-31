@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Animation/AnimNodeFunctionRef.h")]
 ///<summary>Cached function name/ptr that is resolved at init time</summary>
+[CppInclude("Animation/AnimNodeFunctionRef.h")]
 public partial struct FAnimNodeFunctionRef {
-// AnimNodeFunctionRef
 	public string ClassName;
 	public string FunctionName;
 	public UClass Class;

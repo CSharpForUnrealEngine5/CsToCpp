@@ -1,9 +1,8 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("GameplayCueInterface.h")]
 ///<summary>An alternative way to replicating gameplay cues. This does not use fast TArray serialization and does not serialize gameplaycue parameters. The parameters are created on the receiving side with default information.</summary>
+[CppInclude("GameplayCueInterface.h")]
 public partial struct FMinimalGameplayCueReplicationProxy {
-// MinimalGameplayCueReplicationProxy
 	public UAbilitySystemComponent Owner;
 }

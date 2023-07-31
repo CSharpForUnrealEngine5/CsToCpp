@@ -1,11 +1,13 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
+///<summary>-&gt; will be exported to EngineDecalClasses.h</summary>
 [CppInclude("Components/BoxReflectionCaptureComponent.h")]
-///<summary>-> will be exported to EngineDecalClasses.h</summary>
 public partial class UBoxReflectionCaptureComponent : UReflectionCaptureComponent {
-// BoxReflectionCaptureComponent
+	///<summary>Adjust capture transition distance</summary>
 	public float BoxTransitionDistance;
+	///<summary>PreviewInfluenceBox</summary>
 	public UBoxComponent PreviewInfluenceBox;
+	///<summary>PreviewCaptureBox</summary>
 	public UBoxComponent PreviewCaptureBox;
 }

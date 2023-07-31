@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("RemoteControlProtocolBinding.h")]
 ///<summary>These structures serve both as properties mapping as well as UI generation</summary>
+[CppInclude("RemoteControlProtocolBinding.h")]
 public partial struct FRemoteControlProtocolEntity {
-// RemoteControlProtocolEntity
 	public TWeakObjectPtr<URemoteControlPreset> Owner;
 	public FGuid PropertyId;
 	public TSet<FRemoteControlProtocolMapping> Mappings;

@@ -1,10 +1,11 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("GoogleARCoreServicesEditorSettings.h")]
 ///<summary>Helper class used to expose GoogleARCoreServices setting in the Editor plugin settings.</summary>
+[CppInclude("GoogleARCoreServicesEditorSettings.h")]
 public partial class UGoogleARCoreServicesEditorSettings : UObject {
-// GoogleARCoreServicesEditorSettings
+	///<summary>The API key for GoogleARCoreServices on Android platform.</summary>
 	public string AndroidAPIKey;
+	///<summary>The API key for GoogleARCoreServices on iOS platform.</summary>
 	public string IOSAPIKey;
 }

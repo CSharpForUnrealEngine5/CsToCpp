@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("MovieSceneSequencePlaybackSettings.h")]
 ///<summary>Settings for the level sequence player actor.</summary>
+[CppInclude("MovieSceneSequencePlaybackSettings.h")]
 public partial struct FMovieSceneSequencePlaybackSettings {
-// MovieSceneSequencePlaybackSettings
 	public bool bAutoPlay;
 	public FMovieSceneSequenceLoopCount LoopCount;
 	public FMovieSceneSequenceTickInterval TickInterval;

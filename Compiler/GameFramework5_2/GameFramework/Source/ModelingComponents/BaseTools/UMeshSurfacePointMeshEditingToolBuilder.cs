@@ -1,8 +1,7 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("BaseTools/MeshSurfacePointMeshEditingTool.h")]
 ///<summary>Base tool builder class for UMeshSurfacePointTools with mesh editing requirements.</summary>
+[CppInclude("BaseTools/MeshSurfacePointMeshEditingTool.h")]
 public partial class UMeshSurfacePointMeshEditingToolBuilder : UMeshSurfacePointToolBuilder {
-// MeshSurfacePointMeshEditingToolBuilder
 }

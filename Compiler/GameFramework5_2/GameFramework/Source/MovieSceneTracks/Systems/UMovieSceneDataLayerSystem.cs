@@ -1,8 +1,7 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Systems/MovieSceneDataLayerSystem.h")]
 ///<summary>System that applies all data layer changes to the world</summary>
+[CppInclude("Systems/MovieSceneDataLayerSystem.h")]
 public partial class UMovieSceneDataLayerSystem : UMovieSceneEntitySystem {
-// MovieSceneDataLayerSystem
 }

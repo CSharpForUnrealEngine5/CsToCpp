@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("AssetViewerSettings.h")]
 ///<summary>Preview scene profile settings structure.</summary>
+[CppInclude("AssetViewerSettings.h")]
 public partial struct FPreviewSceneProfile {
-// PreviewSceneProfile
 	public string ProfileName;
 	public bool bSharedProfile;
 	public bool bUseSkyLighting;

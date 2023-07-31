@@ -1,9 +1,10 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("ObjectMixerEditorSettings.h")]
 public partial class UObjectMixerEditorSettings : UObject {
-// ObjectMixerEditorSettings
+	///<summary>If enabled, clicking an item in the mixer list will also select the item in the Scene Outliner.</summary>
 	public bool bSyncSelection;
+	///<summary>If false, a new object will be created every time the filter object is accessed.</summary>
 	public bool bExpandTreeViewItemsByDefault;
 }

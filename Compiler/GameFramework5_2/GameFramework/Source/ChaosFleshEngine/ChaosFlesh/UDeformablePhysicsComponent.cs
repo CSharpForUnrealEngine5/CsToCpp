@@ -1,11 +1,13 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("ChaosFlesh/ChaosDeformablePhysicsComponent.h")]
 ///<summary>UDeformablePhysicsComponent</summary>
+[CppInclude("ChaosFlesh/ChaosDeformablePhysicsComponent.h")]
 public partial class UDeformablePhysicsComponent : UPrimitiveComponent {
-// DeformablePhysicsComponent
+	///<summary>EnableSimulation</summary>
 	public  void EnableSimulation(UDeformableSolverComponent DeformableSolverComponent) {}
+	///<summary>EnableSimulationFromActor</summary>
 	public  void EnableSimulationFromActor(ADeformableSolverActor DeformableSolverActor) {}
+	///<summary>PrimarySolverComponent</summary>
 	public UDeformableSolverComponent PrimarySolverComponent;
 }

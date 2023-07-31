@@ -1,9 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("BlueprintRuntimeSettings.h")]
 ///<summary>Implements the settings for the BlueprintRuntime module</summary>
+[CppInclude("BlueprintRuntimeSettings.h")]
 public partial class UBlueprintRuntimeSettings : UObject {
-// BlueprintRuntimeSettings
+	///<summary>WarningSettings</summary>
 	public TArray<FBlueprintWarningSettings> WarningSettings;
 }

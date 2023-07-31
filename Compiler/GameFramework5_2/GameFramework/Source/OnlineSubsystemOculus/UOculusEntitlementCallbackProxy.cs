@@ -1,11 +1,13 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("OculusEntitlementCallbackProxy.h")]
 ///<summary>Exposes some of the Platform SDK for blueprint use.</summary>
+[CppInclude("OculusEntitlementCallbackProxy.h")]
 public partial class UOculusEntitlementCallbackProxy : UOnlineBlueprintCallProxyBase {
-// OculusEntitlementCallbackProxy
+	///<summary>Called when there is a successful entitlement check</summary>
 	public FOculusEntitlementCheckResult OnSuccess;
+	///<summary>Called when there is an unsuccessful entitlement check</summary>
 	public FOculusEntitlementCheckResult OnFailure;
+	///<summary>Kick off entitlement check. Asynchronous-- see OnUserPrivilegeCompleteDelegate for results.</summary>
 	public static UOculusEntitlementCallbackProxy VerifyEntitlement() { return default; }
 }

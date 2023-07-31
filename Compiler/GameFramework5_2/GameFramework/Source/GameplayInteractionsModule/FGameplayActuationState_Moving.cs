@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("GameplayActuationState.h")]
 ///<summary>Describes movement state.</summary>
+[CppInclude("GameplayActuationState.h")]
 public partial struct FGameplayActuationState_Moving {
-// GameplayActuationState_Moving
 	public FVector3f HeadingDirection;
 	public FGameplayActuationPredictedLocation Prediction;
 }

@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Abilities/GameplayAbilityTypes.h")]
 ///<summary>Used as a key for storing internal ability data</summary>
+[CppInclude("Abilities/GameplayAbilityTypes.h")]
 public partial struct FGameplayAbilitySpecHandleAndPredictionKey {
-// GameplayAbilitySpecHandleAndPredictionKey
 	public FGameplayAbilitySpecHandle AbilityHandle;
 	public int PredictionKeyAtCreation;
 }

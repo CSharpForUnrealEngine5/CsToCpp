@@ -1,9 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("MassStateTreeSubsystem.h")]
 ///<summary>A subsystem managing StateTree assets in Mass</summary>
+[CppInclude("MassStateTreeSubsystem.h")]
 public partial class UMassStateTreeSubsystem : UWorldSubsystem {
-// MassStateTreeSubsystem
+	///<summary>InstanceDataArray</summary>
 	public TArray<FMassStateTreeInstanceDataItem> InstanceDataArray;
 }

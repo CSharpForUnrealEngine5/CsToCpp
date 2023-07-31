@@ -1,9 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("TargetingSystem/TargetingPreset.h")]
 ///<summary>@class UTargetingPreset</summary>
+[CppInclude("TargetingSystem/TargetingPreset.h")]
 public partial class UTargetingPreset : UDataAsset {
-// TargetingPreset
+	///<summary>The tasks that make up this targeting preset</summary>
 	public FTargetingTaskSet TargetingTaskSet;
 }

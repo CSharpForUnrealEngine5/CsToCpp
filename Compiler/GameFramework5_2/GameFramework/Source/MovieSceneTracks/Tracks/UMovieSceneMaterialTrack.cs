@@ -1,9 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Tracks/MovieSceneMaterialTrack.h")]
 ///<summary>Handles manipulation of material parameters in a movie scene.</summary>
+[CppInclude("Tracks/MovieSceneMaterialTrack.h")]
 public partial class UMovieSceneMaterialTrack : UMovieSceneNameableTrack {
-// MovieSceneMaterialTrack
+	///<summary>The sections owned by this track .</summary>
 	public TArray<UMovieSceneSection> Sections;
 }

@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Units/Hierarchy/RigUnit_Metadata.h")]
 ///<summary>Returns true if a given item in the hierarchy has all of the provided tags</summary>
+[CppInclude("Units/Hierarchy/RigUnit_Metadata.h")]
 public partial struct FRigUnit_HasMetadataTagArray {
-// RigUnit_HasMetadataTagArray
 	public FRigElementKey Item;
 	public TArray<string> Tags;
 	public bool Found;

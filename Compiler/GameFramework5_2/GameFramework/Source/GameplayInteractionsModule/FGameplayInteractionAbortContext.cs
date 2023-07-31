@@ -1,9 +1,8 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("GameplayInteractionsTypes.h")]
 ///<summary>Struct holding data related to the abort action</summary>
+[CppInclude("GameplayInteractionsTypes.h")]
 public partial struct FGameplayInteractionAbortContext {
-// GameplayInteractionAbortContext
 	public EGameplayInteractionAbortReason Reason;
 }

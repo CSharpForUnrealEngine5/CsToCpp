@@ -1,9 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("DataInterfaces/OptimusDataInterfaceCloth.h")]
 ///<summary>Compute Framework Data Provider for reading skeletal mesh.</summary>
+[CppInclude("DataInterfaces/OptimusDataInterfaceCloth.h")]
 public partial class UOptimusClothDataProvider : UComputeDataProvider {
-// OptimusClothDataProvider
+	///<summary>SkinnedMesh</summary>
 	public USkinnedMeshComponent SkinnedMesh;
 }

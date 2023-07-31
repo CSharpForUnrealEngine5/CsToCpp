@@ -1,14 +1,19 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("PoseSearchFeatureChannel_Pose.h")]
 ///<summary>UPoseSearchFeatureChannel_Pose</summary>
+[CppInclude("PoseSearchFeatureChannel_Pose.h")]
 public partial class UPoseSearchFeatureChannel_Pose : UPoseSearchFeatureChannel_GroupBase {
-// PoseSearchFeatureChannel_Pose
+	///<summary>Weight</summary>
 	public float Weight;
+	///<summary>SampledBones</summary>
 	public TArray<FPoseSearchBone> SampledBones;
+	///<summary>SchemaBoneIdx</summary>
 	public TArray<short> SchemaBoneIdx;
+	///<summary>InputQueryPose</summary>
 	public EInputQueryPose InputQueryPose;
+	///<summary>if bUseCharacterSpaceVelocities is true, velocities will be calculated from the positions in character space, otherwise they will be calculated using global space positions</summary>
 	public bool bUseCharacterSpaceVelocities;
+	///<summary>SubChannels</summary>
 	public TArray<UPoseSearchFeatureChannel> SubChannels;
 }

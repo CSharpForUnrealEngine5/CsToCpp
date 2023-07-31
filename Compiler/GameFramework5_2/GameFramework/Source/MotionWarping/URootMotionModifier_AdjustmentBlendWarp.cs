@@ -1,14 +1,19 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
+///<summary>EXPERIMENTAL: Marked with &#39;hidedropdown&#39; to prevent it from showing up in the UI since it is not ready for production.</summary>
 [CppInclude("RootMotionModifier_AdjustmentBlendWarp.h")]
-///<summary>EXPERIMENTAL: Marked with 'hidedropdown' to prevent it from showing up in the UI since it is not ready for production.</summary>
 public partial class URootMotionModifier_AdjustmentBlendWarp : URootMotionModifier_Warp {
-// RootMotionModifier_AdjustmentBlendWarp
+	///<summary>bWarpIKBones</summary>
 	public bool bWarpIKBones;
+	///<summary>IKBones</summary>
 	public TArray<string> IKBones;
+	///<summary>CachedMeshTransform</summary>
 	public FTransform CachedMeshTransform;
+	///<summary>CachedMeshRelativeTransform</summary>
 	public FTransform CachedMeshRelativeTransform;
+	///<summary>CachedRootMotion</summary>
 	public FTransform CachedRootMotion;
+	///<summary>Result</summary>
 	public FAnimSequenceTrackContainer Result;
 }

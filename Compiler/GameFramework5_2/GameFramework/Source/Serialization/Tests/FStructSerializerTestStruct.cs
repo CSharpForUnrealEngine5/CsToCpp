@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Tests/StructSerializerTestTypes.h")]
 ///<summary>Test structure for all supported types.</summary>
+[CppInclude("Tests/StructSerializerTestTypes.h")]
 public partial struct FStructSerializerTestStruct {
-// StructSerializerTestStruct
 	public FStructSerializerNumericTestStruct Numerics;
 	public FStructSerializerBooleanTestStruct Booleans;
 	public FStructSerializerObjectTestStruct Objects;

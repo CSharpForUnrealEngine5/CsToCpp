@@ -1,11 +1,13 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Dataflow/DataflowObject.h")]
 ///<summary>UDataflow (UObject)</summary>
+[CppInclude("Dataflow/DataflowObject.h")]
 public partial class UDataflow : UEdGraph {
-// Dataflow
+	///<summary>bActive</summary>
 	public bool bActive;
+	///<summary>Targets</summary>
 	public TArray<UObject> Targets;
+	///<summary>Material</summary>
 	public UMaterial Material;
 }

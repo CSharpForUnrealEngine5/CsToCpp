@@ -1,8 +1,8 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Materials/MaterialInstanceActor.h")]
 public partial class AMaterialInstanceActor : AActor {
-// MaterialInstanceActor
+	///<summary>Pointer to actors that we want to control paramters of using Matinee.</summary>
 	public TArray<AActor> TargetActors;
 }

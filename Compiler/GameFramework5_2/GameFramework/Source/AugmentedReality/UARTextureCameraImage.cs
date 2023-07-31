@@ -1,8 +1,7 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("ARTextures.h")]
 ///<summary>Base class for all AR textures that represent the camera image data</summary>
+[CppInclude("ARTextures.h")]
 public partial class UARTextureCameraImage : UARTexture {
-// ARTextureCameraImage
 }

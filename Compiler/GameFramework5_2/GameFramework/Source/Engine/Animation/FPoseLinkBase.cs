@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Animation/AnimNodeBase.h")]
 ///<summary>A pose link to another node</summary>
+[CppInclude("Animation/AnimNodeBase.h")]
 public partial struct FPoseLinkBase {
-// PoseLinkBase
 	public int LinkID;
 	public int SourceLinkID;
 }

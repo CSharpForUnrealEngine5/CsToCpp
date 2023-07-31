@@ -1,9 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("EdModeInteractiveToolsContext.h")]
 ///<summary>UModeManagerInteractiveToolsContext extends UEditorInteractiveToolsContext with various functions for handling</summary>
+[CppInclude("EdModeInteractiveToolsContext.h")]
 public partial class UModeManagerInteractiveToolsContext : UEditorInteractiveToolsContext {
-// ModeManagerInteractiveToolsContext
+	///<summary>EdModeToolsContexts</summary>
 	public TArray<UEdModeInteractiveToolsContext> EdModeToolsContexts;
 }

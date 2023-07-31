@@ -1,9 +1,8 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("SourceEffects/SourceEffectStereoDelay.h")]
 public partial struct FSourceEffectStereoDelaySettings {
-// SourceEffectStereoDelaySettings
 	public EStereoDelaySourceEffect DelayMode;
 	public float DelayTimeMsec;
 	public float Feedback;

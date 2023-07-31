@@ -1,10 +1,12 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Nodes/OptimusNode_ResourceAccessorBase.h")]
 public partial class UOptimusNode_ResourceAccessorBase : UOptimusNode {
-// OptimusNode_ResourceAccessorBase
+	///<summary>ResourceDesc</summary>
 	public TWeakObjectPtr<UOptimusResourceDescription> ResourceDesc;
+	///<summary>Logical operation when writing to the resource.</summary>
 	public EOptimusBufferWriteType WriteType;
+	///<summary>DuplicationInfo</summary>
 	public FOptimusNode_ResourceAccessorBase_DuplicationInfo DuplicationInfo;
 }

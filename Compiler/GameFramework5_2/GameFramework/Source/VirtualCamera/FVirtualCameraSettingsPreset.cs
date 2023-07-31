@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("VirtualCameraSaveGame.h")]
 ///<summary>Keeps track of all data associated with settings presets.</summary>
+[CppInclude("VirtualCameraSaveGame.h")]
 public partial struct FVirtualCameraSettingsPreset {
-// VirtualCameraSettingsPreset
 	public bool bIsCameraSettingsSaved;
 	public bool bIsStabilizationSettingsSaved;
 	public bool bIsAxisLockingSettingsSaved;

@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("LandscapeComponent.h")]
 ///<summary>FLandscapeEditToolRenderData</summary>
+[CppInclude("LandscapeComponent.h")]
 public partial struct FLandscapeEditToolRenderData {
-// LandscapeEditToolRenderData
 	public UMaterialInterface ToolMaterial;
 	public UMaterialInterface GizmoMaterial;
 	public int SelectedType;

@@ -1,11 +1,13 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("NiagaraStackGraphUtilitiesAdapterLibrary.h")]
 ///<summary>Wrapper class for passing results back from the ConvertCascadeToNiagara python script.</summary>
+[CppInclude("NiagaraStackGraphUtilitiesAdapterLibrary.h")]
 public partial class UConvertCascadeToNiagaraResults : UObject {
-// ConvertCascadeToNiagaraResults
+	///<summary>Init</summary>
 	public  void Init() {}
+	///<summary>Whether the converter process was cancelled by the user.</summary>
 	public bool bCancelledByUser;
+	///<summary>Whether the converter process was cancelled due to an unrecoverable error in the python script process.</summary>
 	public bool bCancelledByPythonError;
 }

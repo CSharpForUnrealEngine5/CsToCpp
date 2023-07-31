@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Animation/AnimCompositeBase.h")]
 ///<summary>this is anim segment that defines what animation and how *</summary>
+[CppInclude("Animation/AnimCompositeBase.h")]
 public partial struct FAnimSegment {
-// AnimSegment
 	public UAnimSequenceBase AnimReference;
 	public float CachedPlayLength;
 	public float StartPos;

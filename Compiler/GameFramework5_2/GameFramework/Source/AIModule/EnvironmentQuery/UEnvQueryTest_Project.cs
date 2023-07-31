@@ -1,9 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("EnvironmentQuery/Tests/EnvQueryTest_Project.h")]
 ///<summary>Projects points on navigation or geometry, will modify value of projected items.</summary>
+[CppInclude("EnvironmentQuery/Tests/EnvQueryTest_Project.h")]
 public partial class UEnvQueryTest_Project : UEnvQueryTest {
-// EnvQueryTest_Project
+	///<summary>trace params</summary>
 	public FEnvTraceData ProjectionData;
 }

@@ -1,9 +1,8 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("BoneControllers/AnimNode_AnimDynamics.h")]
 public partial struct FAnimNode_AnimDynamics {
-// AnimNode_AnimDynamics
 	public float LinearDampingOverride;
 	public float AngularDampingOverride;
 	public FBoneReference RelativeSpaceBone;

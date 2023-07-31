@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("RigVMFunctions/Math/RigVMFunction_MathDouble.h")]
 ///<summary>Remaps the given value from a source range to a target range.</summary>
+[CppInclude("RigVMFunctions/Math/RigVMFunction_MathDouble.h")]
 public partial struct FRigVMFunction_MathDoubleRemap {
-// RigVMFunction_MathDoubleRemap
 	public double Value;
 	public double SourceMinimum;
 	public double SourceMaximum;

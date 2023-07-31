@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("StateTreeTypes.h")]
 ///<summary>Describes a state tree transition. Source is the state where the transition started, Target describes the state where the transition pointed at,</summary>
+[CppInclude("StateTreeTypes.h")]
 public partial struct FStateTreeTransitionResult {
-// StateTreeTransitionResult
 	public FStateTreeActiveStates CurrentActiveStates;
 	public EStateTreeRunStatus CurrentRunStatus;
 	public FStateTreeStateHandle SourceState;

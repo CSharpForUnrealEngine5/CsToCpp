@@ -1,9 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("PinnedCommandListSettings.h")]
 ///<summary>A persistent set of pinned commands</summary>
+[CppInclude("PinnedCommandListSettings.h")]
 public partial class UPinnedCommandListSettings : UObject {
-// PinnedCommandListSettings
+	///<summary>Persistent pinned command contexts</summary>
 	public TArray<FPinnedCommandListContext> Contexts;
 }

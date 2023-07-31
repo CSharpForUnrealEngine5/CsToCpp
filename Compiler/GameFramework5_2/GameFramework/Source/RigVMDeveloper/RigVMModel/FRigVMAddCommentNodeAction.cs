@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("RigVMModel/RigVMControllerActions.h")]
 ///<summary>An action adding a comment node to the graph.</summary>
+[CppInclude("RigVMModel/RigVMControllerActions.h")]
 public partial struct FRigVMAddCommentNodeAction {
-// RigVMAddCommentNodeAction
 	public string CommentText;
 	public FVector2D Position;
 	public FVector2D Size;

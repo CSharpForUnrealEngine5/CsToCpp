@@ -1,9 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("InputEditorModule.h")]
 ///<summary>Asset factories</summary>
+[CppInclude("InputEditorModule.h")]
 public partial class UInputMappingContext_Factory : UFactory {
-// InputMappingContext_Factory
+	///<summary>InputMappingContextClass</summary>
 	public UClass InputMappingContextClass;
 }

@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("BaseGizmos/GizmoElementRenderState.h")]
 ///<summary>Mesh render state structure.</summary>
+[CppInclude("BaseGizmos/GizmoElementRenderState.h")]
 public partial struct FGizmoElementMeshRenderStateAttributes {
-// GizmoElementMeshRenderStateAttributes
 	public FGizmoElementMaterialAttribute Material;
 	public FGizmoElementMaterialAttribute HoverMaterial;
 	public FGizmoElementMaterialAttribute InteractMaterial;

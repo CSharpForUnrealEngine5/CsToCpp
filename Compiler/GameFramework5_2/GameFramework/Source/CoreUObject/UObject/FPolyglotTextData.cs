@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("UObject/NoExportTypes.h")]
 ///<summary>Polyglot data that may be registered to the text localization manager at runtime.</summary>
+[CppInclude("UObject/NoExportTypes.h")]
 public partial struct FPolyglotTextData {
-// PolyglotTextData
 	public ELocalizedTextSourceCategory Category;
 	public string NativeCulture;
 	public string Namespace;

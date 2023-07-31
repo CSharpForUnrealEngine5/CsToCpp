@@ -1,12 +1,15 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("GameFramework/ForceFeedbackEffect.h")]
 ///<summary>A predefined force-feedback effect to be played on a controller</summary>
+[CppInclude("GameFramework/ForceFeedbackEffect.h")]
 public partial class UForceFeedbackEffect : UObject {
-// ForceFeedbackEffect
+	///<summary>ChannelDetails</summary>
 	public TArray<FForceFeedbackChannelDetails> ChannelDetails;
+	///<summary>A map of platform name -&gt; ForceFeedback channel details</summary>
 	public TMap<string,FForceFeedbackEffectOverridenChannelDetails> PerDeviceOverrides;
+	///<summary>A map of input device properties that we want to set while this effect is playing</summary>
 	public TArray<UInputDeviceProperty> DeviceProperties;
+	///<summary>Duration of force feedback pattern in seconds.</summary>
 	public float Duration;
 }

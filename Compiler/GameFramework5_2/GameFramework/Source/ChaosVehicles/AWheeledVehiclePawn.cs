@@ -1,10 +1,11 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("WheeledVehiclePawn.h")]
 ///<summary>ChaosWheeledVehicle is the base wheeled vehicle pawn actor.</summary>
+[CppInclude("WheeledVehiclePawn.h")]
 public partial class AWheeledVehiclePawn : APawn {
-// WheeledVehiclePawn
+	///<summary>The main skeletal mesh associated with this Vehicle</summary>
 	public USkeletalMeshComponent Mesh;
+	///<summary>vehicle simulation component</summary>
 	public UChaosVehicleMovementComponent VehicleMovementComponent;
 }

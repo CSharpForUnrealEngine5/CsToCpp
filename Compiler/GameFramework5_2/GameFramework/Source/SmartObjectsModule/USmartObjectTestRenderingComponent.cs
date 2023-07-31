@@ -1,8 +1,7 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("SmartObjectTestingActor.h")]
 ///<summary>Debug rendering component for SmartObject tests.</summary>
+[CppInclude("SmartObjectTestingActor.h")]
 public partial class USmartObjectTestRenderingComponent : USmartObjectDebugRenderingComponent {
-// SmartObjectTestRenderingComponent
 }

@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("GameFramework/PlayerInput.h")]
 ///<summary>Struct containing mappings for legacy method of binding keys to exec commands.</summary>
+[CppInclude("GameFramework/PlayerInput.h")]
 public partial struct FKeyBind {
-// KeyBind
 	public FKey Key;
 	public string Command;
 	public bool Control;

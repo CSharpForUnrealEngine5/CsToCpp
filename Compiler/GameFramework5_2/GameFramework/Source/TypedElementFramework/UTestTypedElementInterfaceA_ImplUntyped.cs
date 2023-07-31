@@ -1,8 +1,7 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("TypedElementFrameworkTests.h")]
 ///<summary>Test untyped</summary>
+[CppInclude("TypedElementFrameworkTests.h")]
 public partial class UTestTypedElementInterfaceA_ImplUntyped : UObject {
-// TestTypedElementInterfaceA_ImplUntyped
 }

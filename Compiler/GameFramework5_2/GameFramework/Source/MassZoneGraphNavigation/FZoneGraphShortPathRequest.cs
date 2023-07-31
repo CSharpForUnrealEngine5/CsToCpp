@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("MassZoneGraphNavigationTypes.h")]
 ///<summary>Describes path request along one ZoneGraph lane. If the NextLaneHandle is set, lane is changed when path finishes.</summary>
+[CppInclude("MassZoneGraphNavigationTypes.h")]
 public partial struct FZoneGraphShortPathRequest {
-// ZoneGraphShortPathRequest
 	public FVector StartPosition;
 	public FVector EndOfPathPosition;
 	public FZoneGraphLaneHandle NextLaneHandle;

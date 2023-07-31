@@ -1,11 +1,13 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Materials/MaterialExpressionComposite.h")]
 ///<summary>Composite (subgraph) expression. Exists purely for organzational purposes.</summary>
+[CppInclude("Materials/MaterialExpressionComposite.h")]
 public partial class UMaterialExpressionComposite : UMaterialExpression {
-// MaterialExpressionComposite
+	///<summary>SubgraphName</summary>
 	public string SubgraphName;
+	///<summary>InputExpressions</summary>
 	public UMaterialExpressionPinBase InputExpressions;
+	///<summary>OutputExpressions</summary>
 	public UMaterialExpressionPinBase OutputExpressions;
 }

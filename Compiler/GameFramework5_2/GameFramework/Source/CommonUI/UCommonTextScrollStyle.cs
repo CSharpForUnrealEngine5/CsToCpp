@@ -1,13 +1,17 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("CommonTextBlock.h")]
 ///<summary>* ---- All properties must be EditDefaultsOnly, BlueprintReadOnly !!! -----</summary>
+[CppInclude("CommonTextBlock.h")]
 public partial class UCommonTextScrollStyle : UObject {
-// CommonTextScrollStyle
+	///<summary>Speed</summary>
 	public float Speed;
+	///<summary>StartDelay</summary>
 	public float StartDelay;
+	///<summary>EndDelay</summary>
 	public float EndDelay;
+	///<summary>FadeInDelay</summary>
 	public float FadeInDelay;
+	///<summary>FadeOutDelay</summary>
 	public float FadeOutDelay;
 }

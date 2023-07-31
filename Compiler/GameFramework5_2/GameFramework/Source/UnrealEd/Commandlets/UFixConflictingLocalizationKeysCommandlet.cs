@@ -1,8 +1,7 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Commandlets/FixConflictingLocalizationKeys.h")]
 ///<summary>Internal commandlet to fix any conflicting localization keys that are found in a manifest.</summary>
+[CppInclude("Commandlets/FixConflictingLocalizationKeys.h")]
 public partial class UFixConflictingLocalizationKeysCommandlet : UCommandlet {
-// FixConflictingLocalizationKeysCommandlet
 }

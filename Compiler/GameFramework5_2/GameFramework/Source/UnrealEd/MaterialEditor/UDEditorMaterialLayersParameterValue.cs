@@ -1,9 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("MaterialEditor/DEditorMaterialLayersParameterValue.h")]
 ///<summary>FMaterialLayersFunctions are no longer treated as material parameters, so this should maybe be refactored at some point</summary>
+[CppInclude("MaterialEditor/DEditorMaterialLayersParameterValue.h")]
 public partial class UDEditorMaterialLayersParameterValue : UDEditorParameterValue {
-// DEditorMaterialLayersParameterValue
+	///<summary>ParameterValue</summary>
 	public FMaterialLayersFunctions ParameterValue;
 }

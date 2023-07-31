@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("AnimNode_ControlRig.h")]
 ///<summary>Animation node that allows animation ControlRig output to be used in an animation graph</summary>
+[CppInclude("AnimNode_ControlRig.h")]
 public partial struct FAnimNode_ControlRig {
-// AnimNode_ControlRig
 	public UClass ControlRigClass;
 	public UControlRig ControlRig;
 	public float Alpha;

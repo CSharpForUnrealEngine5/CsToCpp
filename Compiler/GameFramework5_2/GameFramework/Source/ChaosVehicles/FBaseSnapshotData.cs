@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("SnapshotData.h")]
 ///<summary>: public UObject</summary>
+[CppInclude("SnapshotData.h")]
 public partial struct FBaseSnapshotData {
-// BaseSnapshotData
 	public FTransform Transform;
 	public FVector LinearVelocity;
 	public FVector AngularVelocity;

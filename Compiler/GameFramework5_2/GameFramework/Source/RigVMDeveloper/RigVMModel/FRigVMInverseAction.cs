@@ -1,8 +1,7 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("RigVMModel/RigVMControllerActions.h")]
 ///<summary>An action which inverses the child actions,</summary>
+[CppInclude("RigVMModel/RigVMControllerActions.h")]
 public partial struct FRigVMInverseAction {
-// RigVMInverseAction
 }

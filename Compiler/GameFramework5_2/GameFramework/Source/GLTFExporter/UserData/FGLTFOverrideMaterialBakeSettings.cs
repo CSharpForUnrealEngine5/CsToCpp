@@ -1,9 +1,8 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("UserData/GLTFMaterialUserData.h")]
 public partial struct FGLTFOverrideMaterialBakeSettings {
-// GLTFOverrideMaterialBakeSettings
 	public bool bOverrideSize;
 	public EGLTFMaterialBakeSizePOT Size;
 	public bool bOverrideFilter;

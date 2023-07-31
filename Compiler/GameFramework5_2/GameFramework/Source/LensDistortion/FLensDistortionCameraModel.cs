@@ -1,9 +1,8 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("LensDistortionAPI.h")]
 public partial struct FLensDistortionCameraModel {
-// LensDistortionCameraModel
 	public float K1;
 	public float K2;
 	public float K3;

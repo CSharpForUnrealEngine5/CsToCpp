@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("PhysicsControlActor.h")]
 ///<summary>Structure that determines a Physics Control used during initialization of the physics control actor</summary>
+[CppInclude("PhysicsControlActor.h")]
 public partial struct FInitialPhysicsControl {
-// InitialPhysicsControl
 	public AActor ParentActor;
 	public string ParentMeshComponentName;
 	public string ParentBoneName;

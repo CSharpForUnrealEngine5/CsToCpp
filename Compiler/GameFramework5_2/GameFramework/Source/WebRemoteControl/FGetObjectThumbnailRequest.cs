@@ -1,9 +1,8 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
+///<summary>Holds a request to get an asset&#39;s thumbnail.</summary>
 [CppInclude("RemoteControlRequest.h")]
-///<summary>Holds a request to get an asset's thumbnail.</summary>
 public partial struct FGetObjectThumbnailRequest {
-// GetObjectThumbnailRequest
 	public string ObjectPath;
 }

@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
+///<summary>Implements the Level Editor&#39;s per-instance view port settings.</summary>
 [CppInclude("Settings/LevelEditorViewportSettings.h")]
-///<summary>Implements the Level Editor's per-instance view port settings.</summary>
 public partial struct FLevelEditorViewportInstanceSettings {
-// LevelEditorViewportInstanceSettings
 	public ELevelViewportType ViewportType;
 	public EViewModeIndex PerspViewModeIndex;
 	public EViewModeIndex OrthoViewModeIndex;

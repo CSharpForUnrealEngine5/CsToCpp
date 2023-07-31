@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
+///<summary>Constrains an item&#39;s transform to multiple items&#39; transforms</summary>
 [CppInclude("Units/Highlevel/Hierarchy/RigUnit_TransformConstraint.h")]
-///<summary>Constrains an item's transform to multiple items' transforms</summary>
 public partial struct FRigUnit_TransformConstraintPerItem {
-// RigUnit_TransformConstraintPerItem
 	public FRigElementKey Item;
 	public ETransformSpaceMode BaseTransformSpace;
 	public FTransform BaseTransform;

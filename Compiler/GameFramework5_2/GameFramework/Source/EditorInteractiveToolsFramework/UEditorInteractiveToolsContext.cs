@@ -1,9 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("EdModeInteractiveToolsContext.h")]
 ///<summary>UEditorInteractiveToolsContext is an extension/adapter of an InteractiveToolsContext designed</summary>
+[CppInclude("EdModeInteractiveToolsContext.h")]
 public partial class UEditorInteractiveToolsContext : UInteractiveToolsContext {
-// EditorInteractiveToolsContext
+	///<summary>StandardVertexColorMaterial</summary>
 	public UMaterialInterface StandardVertexColorMaterial;
 }

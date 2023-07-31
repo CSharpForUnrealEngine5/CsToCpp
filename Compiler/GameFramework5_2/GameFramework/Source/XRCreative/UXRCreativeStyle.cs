@@ -1,12 +1,16 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("XRCreativeToolset.h")]
 public partial class UXRCreativeStyle : UPrimaryDataAsset {
-// XRCreativeStyle
+	///<summary>RegularTextStyle</summary>
 	public UClass RegularTextStyle;
+	///<summary>BoldTextStyle</summary>
 	public UClass BoldTextStyle;
+	///<summary>ItalicTextStyle</summary>
 	public UClass ItalicTextStyle;
+	///<summary>RegularButtonStyle</summary>
 	public UClass RegularButtonStyle;
+	///<summary>LargeButtonStyle</summary>
 	public UClass LargeButtonStyle;
 }

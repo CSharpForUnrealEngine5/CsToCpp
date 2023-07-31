@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Dataflow/GeometryCollectionNodes.h")]
 ///<summary>Description for this node</summary>
+[CppInclude("Dataflow/GeometryCollectionNodes.h")]
 public partial struct FVectorToStringDataflowNode {
-// VectorToStringDataflowNode
 	public FVector Vector;
 	public string String;
 }

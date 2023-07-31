@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("LandscapeSplinesComponent.h")]
 ///<summary>structs for ForeignWorldSplineDataMap</summary>
+[CppInclude("LandscapeSplinesComponent.h")]
 public partial struct FForeignControlPointData {
-// ForeignControlPointData
 	public FGuid ModificationKey;
 	public UControlPointMeshComponent MeshComponent;
 	public TLazyObjectPtr<ULandscapeSplineControlPoint> Identifier;

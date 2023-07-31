@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Units/Hierarchy/RigUnit_SetTransform.h")]
 ///<summary>SetScale is used to set a single scale on hierarchy.</summary>
+[CppInclude("Units/Hierarchy/RigUnit_SetTransform.h")]
 public partial struct FRigUnit_SetScale {
-// RigUnit_SetScale
 	public FRigElementKey Item;
 	public ERigVMTransformSpace Space;
 	public bool bInitial;

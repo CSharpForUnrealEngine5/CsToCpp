@@ -1,9 +1,8 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
+///<summary>Temporary array for tracking &#39;solo&#39; emitter mode.</summary>
 [CppInclude("Particles/ParticleSystem.h")]
-///<summary>Temporary array for tracking 'solo' emitter mode.</summary>
 public partial struct FLODSoloTrack {
-// LODSoloTrack
 	public TArray<byte> SoloEnableSetting;
 }

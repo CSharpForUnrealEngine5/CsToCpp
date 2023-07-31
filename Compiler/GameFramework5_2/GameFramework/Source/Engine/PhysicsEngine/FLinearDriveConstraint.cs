@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("PhysicsEngine/ConstraintDrives.h")]
 ///<summary>Linear Drive</summary>
+[CppInclude("PhysicsEngine/ConstraintDrives.h")]
 public partial struct FLinearDriveConstraint {
-// LinearDriveConstraint
 	public FVector PositionTarget;
 	public FVector VelocityTarget;
 	public FConstraintDrive XDrive;

@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("ModelingObjectsCreationAPI.h")]
 ///<summary>FCreateMeshObjectParams is a collection of input data intended to be passed to</summary>
+[CppInclude("ModelingObjectsCreationAPI.h")]
 public partial struct FCreateMeshObjectParams {
-// CreateMeshObjectParams
 	public UPrimitiveComponent SourceComponent;
 	public ECreateObjectTypeHint TypeHint;
 	public UClass TypeHintClass;

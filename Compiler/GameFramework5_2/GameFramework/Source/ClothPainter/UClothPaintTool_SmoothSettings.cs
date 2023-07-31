@@ -1,9 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("ClothPaintTools.h")]
 ///<summary>Unique settings for the smoothing tool</summary>
+[CppInclude("ClothPaintTools.h")]
 public partial class UClothPaintTool_SmoothSettings : UObject {
-// ClothPaintTool_SmoothSettings
+	///<summary>Strength of the smoothing effect</summary>
 	public float Strength;
 }

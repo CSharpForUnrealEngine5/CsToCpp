@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Engine/CullDistanceVolume.h")]
 ///<summary>Helper structure containing size and cull distance pair.</summary>
+[CppInclude("Engine/CullDistanceVolume.h")]
 public partial struct FCullDistanceSizePair {
-// CullDistanceSizePair
 	public float Size;
 	public float CullDistance;
 }

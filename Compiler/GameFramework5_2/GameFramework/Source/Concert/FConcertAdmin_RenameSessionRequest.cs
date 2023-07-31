@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("ConcertMessages.h")]
 ///<summary>Rename a session.</summary>
+[CppInclude("ConcertMessages.h")]
 public partial struct FConcertAdmin_RenameSessionRequest {
-// ConcertAdmin_RenameSessionRequest
 	public FGuid SessionId;
 	public string NewName;
 	public string UserName;

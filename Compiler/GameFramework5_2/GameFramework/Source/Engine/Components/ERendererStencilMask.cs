@@ -1,8 +1,8 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Components/PrimitiveComponent.h")]
-///<summary>Exposed enum to parallel RHI's EStencilMask and show up in the editor. Has a paired struct to convert between the two.</summary>
+///<summary>Exposed enum to parallel RHI&#39;s EStencilMask and show up in the editor. Has a paired struct to convert between the two.</summary>
 public enum ERendererStencilMask {
 	ERSM_Default=0,
 	ERSM_255=1,

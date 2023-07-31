@@ -1,8 +1,7 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Animation/AnimInstance.h")]
-///<summary>Delegate called by 'PlayMontageNotify' and 'PlayMontageNotifyWindow' *</summary>
+///<summary>Delegate called by &#39;PlayMontageNotify&#39; and &#39;PlayMontageNotifyWindow&#39; *</summary>
 public partial struct FPlayMontageAnimNotifyDelegate {
 // PlayMontageAnimNotifyDelegate__DelegateSignature
 	void AddDynamic(object obj, string functionName) {}

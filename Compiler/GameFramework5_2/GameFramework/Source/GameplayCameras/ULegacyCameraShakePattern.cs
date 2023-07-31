@@ -1,8 +1,7 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("LegacyCameraShake.h")]
 ///<summary>Shake pattern for the ULegacyCameraShake class.</summary>
+[CppInclude("LegacyCameraShake.h")]
 public partial class ULegacyCameraShakePattern : UCameraShakePattern {
-// LegacyCameraShakePattern
 }

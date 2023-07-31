@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("AudioMeterStyle.h")]
 ///<summary>Represents the appearance of an SAudioMeter</summary>
+[CppInclude("AudioMeterStyle.h")]
 public partial struct FAudioMeterStyle {
-// AudioMeterStyle
 	public FSlateBrush MeterValueImage;
 	public FSlateBrush BackgroundImage;
 	public FSlateBrush MeterBackgroundImage;

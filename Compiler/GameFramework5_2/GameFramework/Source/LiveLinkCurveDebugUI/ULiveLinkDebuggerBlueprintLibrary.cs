@@ -1,9 +1,10 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("LiveLinkDebuggerBlueprintLibrary.h")]
 public partial class ULiveLinkDebuggerBlueprintLibrary : UBlueprintFunctionLibrary {
-// LiveLinkDebuggerBlueprintLibrary
+	///<summary>DisplayLiveLinkDebugger</summary>
 	public static void DisplayLiveLinkDebugger(string SubjectName) {}
+	///<summary>HideLiveLinkDebugger</summary>
 	public static void HideLiveLinkDebugger() {}
 }

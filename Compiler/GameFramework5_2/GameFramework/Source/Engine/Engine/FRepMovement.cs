@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Engine/ReplicatedState.h")]
 ///<summary>Replicated movement data of our RootComponent.</summary>
+[CppInclude("Engine/ReplicatedState.h")]
 public partial struct FRepMovement {
-// RepMovement
 	public FVector LinearVelocity;
 	public FVector AngularVelocity;
 	public FVector Location;

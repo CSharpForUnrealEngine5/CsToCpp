@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("BoneControllers/AnimNode_CopyBoneDelta.h")]
 ///<summary>Simple controller to copy a transform relative to the ref pose to the target bone,</summary>
+[CppInclude("BoneControllers/AnimNode_CopyBoneDelta.h")]
 public partial struct FAnimNode_CopyBoneDelta {
-// AnimNode_CopyBoneDelta
 	public FBoneReference SourceBone;
 	public FBoneReference TargetBone;
 	public bool bCopyTranslation;

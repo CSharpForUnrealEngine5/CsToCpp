@@ -1,8 +1,8 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("AnimGraphNode_RotationMultiplier.h")]
 public partial class UAnimGraphNode_RotationMultiplier : UAnimGraphNode_SkeletalControlBase {
-// AnimGraphNode_RotationMultiplier
+	///<summary>Node</summary>
 	public FAnimNode_RotationMultiplier Node;
 }

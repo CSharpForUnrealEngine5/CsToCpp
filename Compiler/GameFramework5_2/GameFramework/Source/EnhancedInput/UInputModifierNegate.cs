@@ -1,11 +1,13 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("InputModifiers.h")]
 ///<summary>Negate</summary>
+[CppInclude("InputModifiers.h")]
 public partial class UInputModifierNegate : UInputModifier {
-// InputModifierNegate
+	///<summary>bX</summary>
 	public bool bX;
+	///<summary>bY</summary>
 	public bool bY;
+	///<summary>bZ</summary>
 	public bool bZ;
 }

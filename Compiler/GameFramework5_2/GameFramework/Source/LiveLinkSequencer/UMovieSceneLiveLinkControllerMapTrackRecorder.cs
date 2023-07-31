@@ -1,9 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
+///<summary>Movie Scene track recorder for LiveLink Component&#39;s Controller Map</summary>
 [CppInclude("MovieSceneLiveLinkControllerMapTrackRecorder.h")]
-///<summary>Movie Scene track recorder for LiveLink Component's Controller Map</summary>
 public partial class UMovieSceneLiveLinkControllerMapTrackRecorder : UMovieSceneTrackRecorder {
-// MovieSceneLiveLinkControllerMapTrackRecorder
+	///<summary>Array of track recorders that will record each of the LiveLink controller&#39;s in the Controller Map</summary>
 	public TArray<UMovieSceneLiveLinkControllerTrackRecorder> ControllerRecorders;
 }

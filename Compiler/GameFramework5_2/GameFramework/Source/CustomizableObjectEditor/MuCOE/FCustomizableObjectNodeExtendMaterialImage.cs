@@ -1,9 +1,8 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("MuCOE/CustomizableObjectEditor_Deprecated.h")]
 ///<summary>UCustomizableObjectNodeExtendMaterial</summary>
+[CppInclude("MuCOE/CustomizableObjectEditor_Deprecated.h")]
 public partial struct FCustomizableObjectNodeExtendMaterialImage {
-// CustomizableObjectNodeExtendMaterialImage
 	public string Name;
 }

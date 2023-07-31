@@ -1,22 +1,35 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Components/MeshComponent.h")]
 ///<summary>MeshComponent is an abstract base for any component that is an instance of a renderable collection of triangles.</summary>
+[CppInclude("Components/MeshComponent.h")]
 public partial class UMeshComponent : UPrimitiveComponent {
-// MeshComponent
+	///<summary>Material overrides.</summary>
 	public TArray<UMaterialInterface> OverrideMaterials;
+	///<summary>GetMaterials</summary>
 	public  TArray<UMaterialInterface> GetMaterials() { return default; }
+	///<summary>GetMaterialIndex</summary>
 	public  int GetMaterialIndex(string MaterialSlotName) { return default; }
+	///<summary>GetMaterialSlotNames</summary>
 	public  TArray<string> GetMaterialSlotNames() { return default; }
+	///<summary>IsMaterialSlotNameValid</summary>
 	public  bool IsMaterialSlotNameValid(string MaterialSlotName) { return default; }
+	///<summary>Translucent material to blend on top of this mesh. Mesh will be rendered twice - once with a base material and once with overlay material</summary>
 	public UMaterialInterface OverlayMaterial;
+	///<summary>The max draw distance for overlay material. A distance of 0 indicates that overlay will be culled using primitive max distance.</summary>
 	public float OverlayMaterialMaxDrawDistance;
+	///<summary>Get the overlay material used by this instance</summary>
 	public  UMaterialInterface GetOverlayMaterial() { return default; }
+	///<summary>Change the overlay material used by this instance</summary>
 	public  void SetOverlayMaterial(UMaterialInterface NewOverlayMaterial) {}
+	///<summary>Change the overlay material max draw distance used by this instance</summary>
 	public  void SetOverlayMaterialMaxDrawDistance(float InMaxDrawDistance) {}
+	///<summary>Tell the streaming system to start loading all textures with all mip-levels.</summary>
 	public  void PrestreamTextures(float Seconds,bool bPrioritizeCharacterTextures,int CinematicTextureGroups/*=0*/) {}
+	///<summary>Set all occurrences of Scalar Material Parameters with ParameterName in the set of materials of the SkeletalMesh to ParameterValue</summary>
 	public  void SetScalarParameterValueOnMaterials(string ParameterName,float ParameterValue) {}
+	///<summary>Set all occurrences of Vector Material Parameters with ParameterName in the set of materials of the SkeletalMesh to ParameterValue</summary>
 	public  void SetVectorParameterValueOnMaterials(string ParameterName,FVector ParameterValue) {}
+	///<summary>bEnableMaterialParameterCaching</summary>
 	public bool bEnableMaterialParameterCaching;
 }

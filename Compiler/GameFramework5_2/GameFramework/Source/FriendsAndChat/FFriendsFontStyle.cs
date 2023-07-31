@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("FriendsFontStyle.h")]
 ///<summary>Interface for the services manager.</summary>
+[CppInclude("FriendsFontStyle.h")]
 public partial struct FFriendsFontStyle {
-// FriendsFontStyle
 	public FSlateFontInfo FriendsFontSmall;
 	public FSlateFontInfo FriendsFontSmallBold;
 	public FSlateFontInfo FriendsFontNormal;

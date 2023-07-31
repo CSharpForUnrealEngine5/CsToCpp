@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("DataInterface/NiagaraDataInterfaceDataChannelCommon.h")]
 ///<summary>Stores info for a function called on a DataChannel DI.</summary>
+[CppInclude("DataInterface/NiagaraDataInterfaceDataChannelCommon.h")]
 public partial struct FNDIDataChannelFunctionInfo {
-// NDIDataChannelFunctionInfo
 	public string FunctionName;
 	public TArray<FNiagaraVariableBase> Inputs;
 	public TArray<FNiagaraVariableBase> Outputs;

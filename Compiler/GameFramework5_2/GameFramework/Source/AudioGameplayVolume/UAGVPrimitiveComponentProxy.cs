@@ -1,8 +1,7 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
+///<summary>UAGVPrimitiveComponentProxy - Proxy based on a volume&#39;s primitive component</summary>
 [CppInclude("AudioGameplayVolumeProxy.h")]
-///<summary>UAGVPrimitiveComponentProxy - Proxy based on a volume's primitive component</summary>
 public partial class UAGVPrimitiveComponentProxy : UAudioGameplayVolumeProxy {
-// AGVPrimitiveComponentProxy
 }

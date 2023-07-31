@@ -1,10 +1,11 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("HeightfieldMinMaxTextureMaterialExpression.h")]
 ///<summary>Node which outputs a texture object contained in a UHeightfieldMinMaxTexture.</summary>
+[CppInclude("HeightfieldMinMaxTextureMaterialExpression.h")]
 public partial class UMaterialExpressionHeightfieldMinMaxTexture : UMaterialExpression {
-// MaterialExpressionHeightfieldMinMaxTexture
+	///<summary>MinMaxTexture</summary>
 	public UHeightfieldMinMaxTexture MinMaxTexture;
+	///<summary>SamplerType</summary>
 	public EMaterialSamplerType SamplerType;
 }

@@ -1,9 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("CompositingElements/CompositingElementTransforms.h")]
 ///<summary>UCompositingOpenColorIOPass</summary>
+[CppInclude("CompositingElements/CompositingElementTransforms.h")]
 public partial class UCompositingOpenColorIOPass : UCompositingElementTransform {
-// CompositingOpenColorIOPass
+	///<summary>Color grading settings.</summary>
 	public FOpenColorIOColorConversionSettings ColorConversionSettings;
 }

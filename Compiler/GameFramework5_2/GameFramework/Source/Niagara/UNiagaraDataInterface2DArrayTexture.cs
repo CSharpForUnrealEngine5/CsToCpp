@@ -1,10 +1,11 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("NiagaraDataInterface2DArrayTexture.h")]
 ///<summary>Data Interface allowing sampling of a texture</summary>
+[CppInclude("NiagaraDataInterface2DArrayTexture.h")]
 public partial class UNiagaraDataInterface2DArrayTexture : UNiagaraDataInterface {
-// NiagaraDataInterface2DArrayTexture
+	///<summary>Texture</summary>
 	public UTexture Texture;
+	///<summary>When valid the user parameter is used as the texture rather than the one on the data interface</summary>
 	public FNiagaraUserParameterBinding TextureUserParameter;
 }

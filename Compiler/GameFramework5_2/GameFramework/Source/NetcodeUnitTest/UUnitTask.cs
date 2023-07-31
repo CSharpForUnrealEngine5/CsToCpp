@@ -1,9 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
+///<summary>UnitTask&#39;s are used to implement supporting code for UnitTest&#39;s, for handling complex behind-the-scenes setup prior to test execution</summary>
 [CppInclude("UnitTask.h")]
-///<summary>UnitTask's are used to implement supporting code for UnitTest's, for handling complex behind-the-scenes setup prior to test execution</summary>
 public partial class UUnitTask : UObject {
-// UnitTask
+	///<summary>The UnitTest that owns this task</summary>
 	public UUnitTest Owner;
 }

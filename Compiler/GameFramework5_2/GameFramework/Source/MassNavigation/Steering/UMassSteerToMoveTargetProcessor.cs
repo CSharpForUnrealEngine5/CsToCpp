@@ -1,8 +1,7 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Steering/MassSteeringProcessors.h")]
 ///<summary>Processor for updating steering towards MoveTarget.</summary>
+[CppInclude("Steering/MassSteeringProcessors.h")]
 public partial class UMassSteerToMoveTargetProcessor : UMassProcessor {
-// MassSteerToMoveTargetProcessor
 }

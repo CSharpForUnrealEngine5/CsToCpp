@@ -1,8 +1,7 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("MuCOE/RemapPins/CustomizableObjectNodeRemapPinsByPosition.h")]
 ///<summary>Remap pins by position.</summary>
+[CppInclude("MuCOE/RemapPins/CustomizableObjectNodeRemapPinsByPosition.h")]
 public partial class UCustomizableObjectNodeRemapPinsByPosition : UCustomizableObjectNodeRemapPins {
-// CustomizableObjectNodeRemapPinsByPosition
 }

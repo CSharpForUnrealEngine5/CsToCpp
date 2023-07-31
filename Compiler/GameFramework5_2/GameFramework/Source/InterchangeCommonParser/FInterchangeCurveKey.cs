@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("InterchangeCommonAnimationPayload.h")]
 ///<summary>This struct contains only the key data, this is only used to pass animation data from translators to factories</summary>
+[CppInclude("InterchangeCommonAnimationPayload.h")]
 public partial struct FInterchangeCurveKey {
-// InterchangeCurveKey
 	public EInterchangeCurveInterpMode InterpMode;
 	public EInterchangeCurveTangentMode TangentMode;
 	public EInterchangeCurveTangentWeightMode TangentWeightMode;

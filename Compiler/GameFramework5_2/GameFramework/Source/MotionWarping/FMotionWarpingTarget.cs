@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("RootMotionModifier.h")]
 ///<summary>Represents a point of alignment in the world</summary>
+[CppInclude("RootMotionModifier.h")]
 public partial struct FMotionWarpingTarget {
-// MotionWarpingTarget
 	public string Name;
 	public FVector Location;
 	public FRotator Rotation;

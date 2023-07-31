@@ -1,9 +1,8 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("DataInterface/NiagaraDataInterfaceDataChannelWrite.h")]
 ///<summary>Additional compile time information used by the Write DI.</summary>
+[CppInclude("DataInterface/NiagaraDataInterfaceDataChannelWrite.h")]
 public partial struct FNDIDataChannelWriteCompiledData {
-// NDIDataChannelWriteCompiledData
 	public FNiagaraDataSetCompiledData DataLayout;
 }

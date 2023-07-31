@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Engine/EngineTypes.h")]
 ///<summary>Specifies which lighting channels are relevant</summary>
+[CppInclude("Engine/EngineTypes.h")]
 public partial struct FLightingChannels {
-// LightingChannels
 	public bool bChannel0;
 	public bool bChannel1;
 	public bool bChannel2;

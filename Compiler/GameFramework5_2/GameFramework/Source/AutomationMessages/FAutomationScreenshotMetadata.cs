@@ -1,9 +1,8 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("AutomationWorkerMessages.h")]
 public partial struct FAutomationScreenshotMetadata {
-// AutomationScreenshotMetadata
 	public string ScreenShotName;
 	public string Context;
 	public string TestName;

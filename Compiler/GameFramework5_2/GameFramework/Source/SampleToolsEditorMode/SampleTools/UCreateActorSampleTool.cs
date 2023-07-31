@@ -1,9 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("SampleTools/CreateActorSampleTool.h")]
 ///<summary>UCreateActorSampleTool is an example Tool that drops an empty Actor at each position the user</summary>
+[CppInclude("SampleTools/CreateActorSampleTool.h")]
 public partial class UCreateActorSampleTool : USingleClickTool {
-// CreateActorSampleTool
+	///<summary>Properties</summary>
 	public UCreateActorSampleToolProperties Properties;
 }

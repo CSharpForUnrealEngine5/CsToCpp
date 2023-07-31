@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("UI/VREditorFloatingUI.h")]
 ///<summary>Creation parameters for AVREditorFloatingUI</summary>
+[CppInclude("UI/VREditorFloatingUI.h")]
 public partial struct FVREditorFloatingUICreationContext {
-// VREditorFloatingUICreationContext
 	public UClass WidgetClass;
 	public string PanelID;
 	public AActor ParentActor;

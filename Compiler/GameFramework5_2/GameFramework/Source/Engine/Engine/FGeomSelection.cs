@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Engine/Brush.h")]
 ///<summary>Selection information for geometry mode</summary>
+[CppInclude("Engine/Brush.h")]
 public partial struct FGeomSelection {
-// GeomSelection
 	public int Type;
 	public int Index;
 	public int SelectionIndex;

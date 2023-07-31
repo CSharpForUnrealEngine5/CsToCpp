@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Units/Execution/RigUnit_Collection.h")]
 ///<summary>Replaces all names within the item array</summary>
+[CppInclude("Units/Execution/RigUnit_Collection.h")]
 public partial struct FRigUnit_CollectionReplaceItemsArray {
-// RigUnit_CollectionReplaceItemsArray
 	public TArray<FRigElementKey> Items;
 	public string Old;
 	public string New;

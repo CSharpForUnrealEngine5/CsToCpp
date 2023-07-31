@@ -1,9 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("InteractiveToolObjects.h")]
 ///<summary>AInternalToolFrameworkActor is a base class for internal Actors that the</summary>
+[CppInclude("InteractiveToolObjects.h")]
 public partial class AInternalToolFrameworkActor : AActor {
-// InternalToolFrameworkActor
+	///<summary>Controls whether this InternalToolFrameworkActor can be selected in the Editor.</summary>
 	public bool bIsSelectableInEditor;
 }

@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("UObject/NoExportTypes.h")]
 ///<summary>A timecode that stores time in HH:MM:SS format with the remainder of time represented by an integer frame count.</summary>
+[CppInclude("UObject/NoExportTypes.h")]
 public partial struct FTimecode {
-// Timecode
 	public int Hours;
 	public int Minutes;
 	public int Seconds;

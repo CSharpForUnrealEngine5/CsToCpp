@@ -1,8 +1,7 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Commands/ModifyGeometrySelectionCommand.h")]
 ///<summary>Command to Invert the current Selection, only considering connected geometry</summary>
+[CppInclude("Commands/ModifyGeometrySelectionCommand.h")]
 public partial class UModifyGeometrySelectionCommand_InvertConnected : UModifyGeometrySelectionCommand {
-// ModifyGeometrySelectionCommand_InvertConnected
 }

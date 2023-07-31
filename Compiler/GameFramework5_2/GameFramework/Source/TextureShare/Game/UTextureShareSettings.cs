@@ -1,10 +1,11 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Game/Settings/TextureShareSettings.h")]
 ///<summary>TextureShare plugin settings</summary>
+[CppInclude("Game/Settings/TextureShareSettings.h")]
 public partial class UTextureShareSettings : UObject {
-// TextureShareSettings
+	///<summary>Enable base textureshare object creation by default</summary>
 	public bool bCreateDefaults;
+	///<summary>Process name for this app</summary>
 	public string ProcessName;
 }

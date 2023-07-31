@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("ReplicationGraphTypes.h")]
 ///<summary>Per-Class actor data about how the actor replicates</summary>
+[CppInclude("ReplicationGraphTypes.h")]
 public partial struct FClassReplicationInfo {
-// ClassReplicationInfo
 	public float DistancePriorityScale;
 	public float StarvationPriorityScale;
 	public float AccumulatedNetPriorityBias;

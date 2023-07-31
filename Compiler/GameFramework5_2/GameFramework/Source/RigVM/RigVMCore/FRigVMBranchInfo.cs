@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
+///<summary>A description of a branch in the VM&#39;s bytecode</summary>
 [CppInclude("RigVMCore/RigVMMemoryStorage.h")]
-///<summary>A description of a branch in the VM's bytecode</summary>
 public partial struct FRigVMBranchInfo {
-// RigVMBranchInfo
 	public int Index;
 	public string Label;
 	public int InstructionIndex;

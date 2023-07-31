@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Animation/WidgetAnimationBinding.h")]
 ///<summary>A single object bound to a UMG sequence.</summary>
+[CppInclude("Animation/WidgetAnimationBinding.h")]
 public partial struct FWidgetAnimationBinding {
-// WidgetAnimationBinding
 	public string WidgetName;
 	public string SlotWidgetName;
 	public FGuid AnimationGuid;

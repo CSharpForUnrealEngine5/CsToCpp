@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("MuCO/MultilayerProjector.h")]
 ///<summary>Multilayer Projector Helper. Eases the management of Layers and Virtual Layers.</summary>
+[CppInclude("MuCO/MultilayerProjector.h")]
 public partial struct FMultilayerProjector {
-// MultilayerProjector
 	public string ParamName;
 	public TMap<string,int> VirtualLayersMapping;
 	public TMap<string,int> VirtualLayersOrder;

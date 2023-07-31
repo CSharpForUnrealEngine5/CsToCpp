@@ -1,8 +1,7 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("UnitTests/Engine/PackedVectorTest.h")]
 ///<summary>Basic unit test for WritePackedValue and ReadPackedValue</summary>
+[CppInclude("UnitTests/Engine/PackedVectorTest.h")]
 public partial class UPackedVectorTest : UUnitTest {
-// PackedVectorTest
 }

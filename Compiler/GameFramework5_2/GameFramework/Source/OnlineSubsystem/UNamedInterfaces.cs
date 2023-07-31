@@ -1,10 +1,11 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("NamedInterfaces.h")]
 ///<summary>Named interfaces are a registry of UObjects accessible by an FName key that will persist for the lifetime of the process</summary>
+[CppInclude("NamedInterfaces.h")]
 public partial class UNamedInterfaces : UObject {
-// NamedInterfaces
+	///<summary>Holds the set of registered named interfaces</summary>
 	public TArray<FNamedInterface> NamedInterfaces;
+	///<summary>The list of named interfaces to automatically create and store</summary>
 	public TArray<FNamedInterfaceDef> NamedInterfaceDefs;
 }

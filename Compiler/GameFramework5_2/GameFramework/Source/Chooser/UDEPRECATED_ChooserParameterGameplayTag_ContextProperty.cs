@@ -1,9 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("GameplayTagColumn.h")]
 ///<summary>deprecated class versions for converting old data</summary>
+[CppInclude("GameplayTagColumn.h")]
 public partial class UDEPRECATED_ChooserParameterGameplayTag_ContextProperty : UObject {
-// ChooserParameterGameplayTag_ContextProperty
+	///<summary>PropertyBindingChain</summary>
 	public TArray<string> PropertyBindingChain;
 }

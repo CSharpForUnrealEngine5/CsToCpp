@@ -1,10 +1,11 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("TakeRecorderCameraCutSource.h")]
 ///<summary>A recording source that detects camera switching and creates a camera cut track</summary>
+[CppInclude("TakeRecorderCameraCutSource.h")]
 public partial class UTakeRecorderCameraCutSource : UTakeRecorderSource {
-// TakeRecorderCameraCutSource
+	///<summary>World</summary>
 	public UWorld World;
+	///<summary>The root or uppermost level sequence that this source is being recorded into. Set during PreRecording, null after PostRecording.</summary>
 	public ULevelSequence RootLevelSequence;
 }

@@ -1,8 +1,7 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("InputModifiers.h")]
 ///<summary>Smooth</summary>
+[CppInclude("InputModifiers.h")]
 public partial class UInputModifierSmooth : UInputModifier {
-// InputModifierSmooth
 }

@@ -1,8 +1,8 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("SelectActorBySize.h")]
 public partial class USelectActorBySize : UUTBBaseCommand {
-// SelectActorBySize
+	///<summary>SizeThreshold</summary>
 	public float SizeThreshold;
 }

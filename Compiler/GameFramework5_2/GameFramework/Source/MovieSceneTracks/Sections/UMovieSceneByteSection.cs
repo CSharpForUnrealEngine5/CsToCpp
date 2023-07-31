@@ -1,9 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Sections/MovieSceneByteSection.h")]
 ///<summary>A single byte section.</summary>
+[CppInclude("Sections/MovieSceneByteSection.h")]
 public partial class UMovieSceneByteSection : UMovieSceneSection {
-// MovieSceneByteSection
+	///<summary>Ordered curve data</summary>
 	public FMovieSceneByteChannel ByteCurve;
 }

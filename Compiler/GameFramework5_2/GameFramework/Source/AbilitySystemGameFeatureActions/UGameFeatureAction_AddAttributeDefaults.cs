@@ -1,9 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("GameFeatureAction_AddAttributeDefaults.h")]
 ///<summary>Adds ability system attribute defaults from this game feature</summary>
+[CppInclude("GameFeatureAction_AddAttributeDefaults.h")]
 public partial class UGameFeatureAction_AddAttributeDefaults : UGameFeatureAction {
-// GameFeatureAction_AddAttributeDefaults
+	///<summary>List of attribute default tables to add</summary>
 	public TArray<FSoftObjectPath> AttribDefaultTableNames;
 }

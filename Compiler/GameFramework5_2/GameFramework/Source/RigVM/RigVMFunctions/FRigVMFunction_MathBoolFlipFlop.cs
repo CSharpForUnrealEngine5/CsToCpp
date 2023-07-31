@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("RigVMFunctions/Math/RigVMFunction_MathBool.h")]
 ///<summary>Returns true and false as a sequence.</summary>
+[CppInclude("RigVMFunctions/Math/RigVMFunction_MathBool.h")]
 public partial struct FRigVMFunction_MathBoolFlipFlop {
-// RigVMFunction_MathBoolFlipFlop
 	public bool StartValue;
 	public float Duration;
 	public bool Result;

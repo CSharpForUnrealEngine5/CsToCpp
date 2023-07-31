@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Particles/TypeData/ParticleModuleTypeDataGpu.h")]
 ///<summary>The data needed by the runtime to simulate sprites.</summary>
+[CppInclude("Particles/TypeData/ParticleModuleTypeDataGpu.h")]
 public partial struct FGPUSpriteEmitterInfo {
-// GPUSpriteEmitterInfo
 	public UParticleModuleRequired RequiredModule;
 	public UParticleModuleSpawn SpawnModule;
 	public UParticleModuleSpawnPerUnit SpawnPerUnitModule;

@@ -1,9 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Abilities/GameplayAbilityTargetActor_Radius.h")]
 ///<summary>Selects everything within a given radius of the source actor.</summary>
+[CppInclude("Abilities/GameplayAbilityTargetActor_Radius.h")]
 public partial class AGameplayAbilityTargetActor_Radius : AGameplayAbilityTargetActor {
-// GameplayAbilityTargetActor_Radius
+	///<summary>Radius of target acquisition around the ability&#39;s start location.</summary>
 	public float Radius;
 }

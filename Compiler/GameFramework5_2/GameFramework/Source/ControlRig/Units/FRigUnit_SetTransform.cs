@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Units/Hierarchy/RigUnit_SetTransform.h")]
 ///<summary>SetTransform is used to set a single transform on hierarchy.</summary>
+[CppInclude("Units/Hierarchy/RigUnit_SetTransform.h")]
 public partial struct FRigUnit_SetTransform {
-// RigUnit_SetTransform
 	public FRigElementKey Item;
 	public ERigVMTransformSpace Space;
 	public bool bInitial;

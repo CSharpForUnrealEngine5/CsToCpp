@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("BoneControllers/AnimNode_LookAt.h")]
 ///<summary>Simple controller that make a bone to look at the point or another bone</summary>
+[CppInclude("BoneControllers/AnimNode_LookAt.h")]
 public partial struct FAnimNode_LookAt {
-// AnimNode_LookAt
 	public FBoneReference BoneToModify;
 	public FBoneSocketTarget LookAtTarget;
 	public FVector LookAtLocation;

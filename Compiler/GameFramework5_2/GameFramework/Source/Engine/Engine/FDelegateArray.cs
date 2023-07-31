@@ -1,9 +1,8 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
+///<summary>Helper struct, since UnrealScript doesn&#39;t allow arrays of arrays, but</summary>
 [CppInclude("Engine/PlatformInterfaceBase.h")]
-///<summary>Helper struct, since UnrealScript doesn't allow arrays of arrays, but</summary>
 public partial struct FDelegateArray {
-// DelegateArray
 	public TArray<FPlatformInterfaceDelegate> Delegates;
 }

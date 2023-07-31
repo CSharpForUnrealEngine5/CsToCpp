@@ -1,4 +1,5 @@
-﻿using CSharpToCpp.Utilities;
+﻿#pragma warning disable CS8618,CS8603,CS1587,CS1591
+using CSharpToCpp.Utilities;
 
 namespace GameFramework
 {

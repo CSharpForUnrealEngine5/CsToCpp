@@ -1,8 +1,7 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("ZoneGraphAnnotationTypes.h")]
 ///<summary>Base structs for all events for UZoneGraphAnnotationSubsystem.</summary>
+[CppInclude("ZoneGraphAnnotationTypes.h")]
 public partial struct FZoneGraphAnnotationEventBase {
-// ZoneGraphAnnotationEventBase
 }

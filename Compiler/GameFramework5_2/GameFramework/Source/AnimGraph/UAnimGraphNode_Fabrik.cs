@@ -1,9 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("AnimGraphNode_Fabrik.h")]
 ///<summary>Editor node for FABRIK IK skeletal controller</summary>
+[CppInclude("AnimGraphNode_Fabrik.h")]
 public partial class UAnimGraphNode_Fabrik : UAnimGraphNode_SkeletalControlBase {
-// AnimGraphNode_Fabrik
+	///<summary>Node</summary>
 	public FAnimNode_Fabrik Node;
 }

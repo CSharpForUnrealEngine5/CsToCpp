@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("SubmixEffects/AudioMixerSubmixEffectEQ.h")]
 ///<summary>A multiband EQ submix effect.</summary>
+[CppInclude("SubmixEffects/AudioMixerSubmixEffectEQ.h")]
 public partial struct FSubmixEffectEQBand {
-// SubmixEffectEQBand
 	public float Frequency;
 	public float Bandwidth;
 	public float GainDb;

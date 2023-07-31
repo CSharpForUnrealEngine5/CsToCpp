@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Particles/TypeData/ParticleModuleTypeDataBeam2.h")]
 ///<summary>Beam Multi-target Variables.</summary>
+[CppInclude("Particles/TypeData/ParticleModuleTypeDataBeam2.h")]
 public partial struct FBeamTargetData {
-// BeamTargetData
 	public string TargetName;
 	public float TargetPercentage;
 }

@@ -1,9 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("CommonListView.h")]
 ///<summary>UCommonListView</summary>
+[CppInclude("CommonListView.h")]
 public partial class UCommonListView : UListView {
-// CommonListView
+	///<summary>SetEntrySpacing</summary>
 	public  void SetEntrySpacing(float InEntrySpacing) {}
 }

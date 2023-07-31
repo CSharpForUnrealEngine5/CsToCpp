@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("SmartObjectZoneAnnotations.h")]
 ///<summary>Per ZoneGraphData smart object look up data.</summary>
+[CppInclude("SmartObjectZoneAnnotations.h")]
 public partial struct FSmartObjectAnnotationData {
-// SmartObjectAnnotationData
 	public FZoneGraphDataHandle DataHandle;
 	public TArray<int> AffectedLanes;
 	public TArray<FSmartObjectLaneLocation> SmartObjectLaneLocations;

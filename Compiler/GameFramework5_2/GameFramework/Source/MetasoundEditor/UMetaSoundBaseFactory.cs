@@ -1,8 +1,8 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("MetasoundFactory.h")]
 public partial class UMetaSoundBaseFactory : UFactory {
-// MetaSoundBaseFactory
+	///<summary>Set to initialize MetaSound type as Preset,</summary>
 	public UObject ReferencedMetaSoundObject;
 }

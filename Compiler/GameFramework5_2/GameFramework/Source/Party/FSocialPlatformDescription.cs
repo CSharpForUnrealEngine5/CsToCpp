@@ -1,9 +1,8 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("SocialSettings.h")]
 public partial struct FSocialPlatformDescription {
-// SocialPlatformDescription
 	public string Name;
 	public string PlatformType;
 	public string OnlineSubsystem;

@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("AnimNode_ControlRigBase.h")]
 ///<summary>Animation node that allows animation ControlRig output to be used in an animation graph</summary>
+[CppInclude("AnimNode_ControlRigBase.h")]
 public partial struct FAnimNode_ControlRigBase {
-// AnimNode_ControlRigBase
 	public FPoseLink Source;
 	public bool bResetInputPoseToInitial;
 	public bool bTransferInputPose;

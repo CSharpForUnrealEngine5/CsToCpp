@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("ChaosClothAsset/ClothSimulationModel.h")]
 ///<summary>Cloth simulation model.</summary>
+[CppInclude("ChaosClothAsset/ClothSimulationModel.h")]
 public partial struct FChaosClothSimulationModel {
-// ChaosClothSimulationModel
 	public TArray<FChaosClothSimulationLodModel> ClothSimulationLodModels;
 	public TArray<string> UsedBoneNames;
 	public TArray<int> UsedBoneIndices;

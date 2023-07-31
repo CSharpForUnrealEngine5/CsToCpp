@@ -1,8 +1,7 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Commands/DisconnectGeometrySelectionCommand.h")]
 ///<summary>UDisconnectGeometrySelectionCommand disconnects the geometric elements identified by the Selection.</summary>
+[CppInclude("Commands/DisconnectGeometrySelectionCommand.h")]
 public partial class UDisconnectGeometrySelectionCommand : UGeometrySelectionEditCommand {
-// DisconnectGeometrySelectionCommand
 }

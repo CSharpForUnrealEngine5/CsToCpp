@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("NiagaraTypes.h")]
 ///<summary>Information about how this type should be laid out in an FNiagaraDataSet</summary>
+[CppInclude("NiagaraTypes.h")]
 public partial struct FNiagaraTypeLayoutInfo {
-// NiagaraTypeLayoutInfo
 	public TArray<uint> FloatComponentByteOffsets;
 	public TArray<uint> FloatComponentRegisterOffsets;
 	public TArray<uint> Int32ComponentByteOffsets;

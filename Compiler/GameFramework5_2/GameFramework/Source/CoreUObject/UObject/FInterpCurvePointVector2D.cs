@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("UObject/NoExportTypes.h")]
 ///<summary>Describes one specific point on an interpolation curve.</summary>
+[CppInclude("UObject/NoExportTypes.h")]
 public partial struct FInterpCurvePointVector2D {
-// InterpCurvePointVector2D
 	public float InVal;
 	public FVector2D OutVal;
 	public FVector2D ArriveTangent;

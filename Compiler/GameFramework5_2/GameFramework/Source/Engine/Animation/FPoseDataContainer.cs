@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Animation/PoseAsset.h")]
 ///<summary>Pose data container</summary>
+[CppInclude("Animation/PoseAsset.h")]
 public partial struct FPoseDataContainer {
-// PoseDataContainer
 	public TArray<FSmartName> PoseNames;
 	public TArray<string> Tracks;
 	public TArray<int> TrackBoneIndices;

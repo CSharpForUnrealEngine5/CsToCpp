@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Units/Hierarchy/RigUnit_SetRelativeTransform.h")]
 ///<summary>SetRelativeTranslation is used to set a single translation from a hierarchy in the space of another item</summary>
+[CppInclude("Units/Hierarchy/RigUnit_SetRelativeTransform.h")]
 public partial struct FRigUnit_SetRelativeTranslationForItem {
-// RigUnit_SetRelativeTranslationForItem
 	public FRigElementKey Child;
 	public FRigElementKey Parent;
 	public bool bParentInitial;

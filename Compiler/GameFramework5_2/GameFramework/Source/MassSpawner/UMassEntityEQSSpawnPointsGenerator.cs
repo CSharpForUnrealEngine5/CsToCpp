@@ -1,9 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("MassEntityEQSSpawnPointsGenerator.h")]
 ///<summary>Describes the SpawnPoints Generator when we want to leverage the points given by an EQS Query</summary>
+[CppInclude("MassEntityEQSSpawnPointsGenerator.h")]
 public partial class UMassEntityEQSSpawnPointsGenerator : UMassEntitySpawnDataGeneratorBase {
-// MassEntityEQSSpawnPointsGenerator
+	///<summary>EQSRequest</summary>
 	public FEQSParametrizedQueryExecutionRequest EQSRequest;
 }

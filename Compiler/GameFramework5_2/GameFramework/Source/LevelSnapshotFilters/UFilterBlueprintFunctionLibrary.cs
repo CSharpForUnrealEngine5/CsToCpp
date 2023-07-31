@@ -1,8 +1,8 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("FilterBlueprintFunctionLibrary.h")]
 public partial class UFilterBlueprintFunctionLibrary : UBlueprintFunctionLibrary {
-// FilterBlueprintFunctionLibrary
+	///<summary>CreateFilterByClass</summary>
 	public static ULevelSnapshotFilter CreateFilterByClass(UClass Class,string Name/*=NAME_None*/,UObject Outer/*=nullptr*/) { return default; }
 }

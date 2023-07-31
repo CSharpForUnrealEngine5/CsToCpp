@@ -1,8 +1,7 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Engine/DeveloperSettings.h")]
 ///<summary>The base class of any auto discovered settings object.</summary>
+[CppInclude("Engine/DeveloperSettings.h")]
 public partial class UDeveloperSettings : UObject {
-// DeveloperSettings
 }

@@ -1,11 +1,13 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("EnvironmentQuery/Generators/EnvQueryGenerator_SimpleGrid.h")]
 ///<summary>Simple grid, generates points in 2D square around context</summary>
+[CppInclude("EnvironmentQuery/Generators/EnvQueryGenerator_SimpleGrid.h")]
 public partial class UEnvQueryGenerator_SimpleGrid : UEnvQueryGenerator_ProjectedPoints {
-// EnvQueryGenerator_SimpleGrid
+	///<summary>half of square&#39;s extent, like a radius</summary>
 	public FAIDataProviderFloatValue GridSize;
+	///<summary>generation density</summary>
 	public FAIDataProviderFloatValue SpaceBetween;
+	///<summary>context</summary>
 	public UClass GenerateAround;
 }

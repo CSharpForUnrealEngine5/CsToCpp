@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Engine/CollisionProfile.h")]
 ///<summary>Structure for collision response templates.</summary>
+[CppInclude("Engine/CollisionProfile.h")]
 public partial struct FCollisionResponseTemplate {
-// CollisionResponseTemplate
 	public string Name;
 	public ECollisionEnabled CollisionEnabled;
 	public bool bCanModify;

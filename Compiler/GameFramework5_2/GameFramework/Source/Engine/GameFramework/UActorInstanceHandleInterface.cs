@@ -1,8 +1,7 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("GameFramework/LightWeightInstanceManager.h")]
 ///<summary>Base class for interfaces for each handle</summary>
+[CppInclude("GameFramework/LightWeightInstanceManager.h")]
 public partial class UActorInstanceHandleInterface : UObject {
-// ActorInstanceHandleInterface
 }

@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Animation/AnimationAsset.h")]
 ///<summary>Utility struct to accumulate root motion.</summary>
+[CppInclude("Animation/AnimationAsset.h")]
 public partial struct FRootMotionMovementParams {
-// RootMotionMovementParams
 	public bool bHasRootMotion;
 	public float BlendWeight;
 	public FTransform RootMotionTransform;

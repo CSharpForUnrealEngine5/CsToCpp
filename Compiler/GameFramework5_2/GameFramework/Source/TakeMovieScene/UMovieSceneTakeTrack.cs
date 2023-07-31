@@ -1,9 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("MovieSceneTakeTrack.h")]
 ///<summary>Handles manipulation of takes in a movie scene</summary>
+[CppInclude("MovieSceneTakeTrack.h")]
 public partial class UMovieSceneTakeTrack : UMovieSceneNameableTrack {
-// MovieSceneTakeTrack
+	///<summary>The track&#39;s sections.</summary>
 	public TArray<UMovieSceneSection> Sections;
 }

@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("SteamVRInputDeviceFunctionLibrary.h")]
 ///<summary>SteamVR finger splays</summary>
+[CppInclude("SteamVRInputDeviceFunctionLibrary.h")]
 public partial struct FSteamVRFingerSplays {
-// SteamVRFingerSplays
 	public float Thumb_Index;
 	public float Index_Middle;
 	public float Middle_Ring;

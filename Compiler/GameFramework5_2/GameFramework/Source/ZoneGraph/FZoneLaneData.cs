@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("ZoneGraphTypes.h")]
 ///<summary>TODO: We could replace *End with *Num, and use uint16. Begin probably needs to be int32/uint32</summary>
+[CppInclude("ZoneGraphTypes.h")]
 public partial struct FZoneLaneData {
-// ZoneLaneData
 	public float Width;
 	public FZoneGraphTagMask Tags;
 	public int PointsBegin;

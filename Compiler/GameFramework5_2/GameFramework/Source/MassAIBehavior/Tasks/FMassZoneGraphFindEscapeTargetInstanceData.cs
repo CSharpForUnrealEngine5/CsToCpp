@@ -1,9 +1,8 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Tasks/MassZoneGraphFindEscapeTarget.h")]
 ///<summary>Updates TargetLocation to a escape target based on the agents current location on ZoneGraph, and disturbance annotation.</summary>
+[CppInclude("Tasks/MassZoneGraphFindEscapeTarget.h")]
 public partial struct FMassZoneGraphFindEscapeTargetInstanceData {
-// MassZoneGraphFindEscapeTargetInstanceData
 	public FMassZoneGraphTargetLocation EscapeTargetLocation;
 }

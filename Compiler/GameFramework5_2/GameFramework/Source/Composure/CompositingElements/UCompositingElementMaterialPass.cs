@@ -1,12 +1,15 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("CompositingElements/CompositingElementTransforms.h")]
 ///<summary>UCompositingElementMaterialPass</summary>
+[CppInclude("CompositingElements/CompositingElementTransforms.h")]
 public partial class UCompositingElementMaterialPass : UCompositingPostProcessPass {
-// CompositingElementMaterialPass
+	///<summary>Material</summary>
 	public FCompositingMaterial Material;
+	///<summary>Set the material interface used by current material pass.</summary>
 	public  void SetMaterialInterface(UMaterialInterface NewMaterial) {}
+	///<summary>Set the parameter mappings between texture parameters and composure layers. Users can not create new entries into the map as the keys are read only.</summary>
 	public  bool SetParameterMapping(string TextureParamName,string ComposureLayerName) { return default; }
+	///<summary>ApplyMaterialParams</summary>
 	public  void ApplyMaterialParams(UMaterialInstanceDynamic MID) {}
 }

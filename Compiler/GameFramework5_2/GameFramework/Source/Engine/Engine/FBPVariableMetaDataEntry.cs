@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Engine/Blueprint.h")]
 ///<summary>One metadata entry for a variable</summary>
+[CppInclude("Engine/Blueprint.h")]
 public partial struct FBPVariableMetaDataEntry {
-// BPVariableMetaDataEntry
 	public string DataKey;
 	public string DataValue;
 }

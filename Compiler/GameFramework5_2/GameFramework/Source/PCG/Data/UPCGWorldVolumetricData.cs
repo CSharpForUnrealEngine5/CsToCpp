@@ -1,11 +1,13 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Data/PCGWorldData.h")]
 ///<summary>Queries volume for presence of world collision or not. Can be used to voxelize environment.</summary>
+[CppInclude("Data/PCGWorldData.h")]
 public partial class UPCGWorldVolumetricData : UPCGVolumeData {
-// PCGWorldVolumetricData
+	///<summary>World</summary>
 	public TWeakObjectPtr<UWorld> World;
+	///<summary>OriginatingComponent</summary>
 	public TWeakObjectPtr<UPCGComponent> OriginatingComponent;
+	///<summary>QueryParams</summary>
 	public FPCGWorldVolumetricQueryParams QueryParams;
 }

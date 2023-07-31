@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Data/WorldSnapshotData.h")]
 ///<summary>Holds saved world data. See WorldDataUtil for operations.</summary>
+[CppInclude("Data/WorldSnapshotData.h")]
 public partial struct FWorldSnapshotData {
-// WorldSnapshotData
 	public TWeakObjectPtr<UWorld> SnapshotWorld;
 	public TArray<UWorld> SnapshotSublevels;
 	public FSnapshotVersionInfo SnapshotVersionInfo;

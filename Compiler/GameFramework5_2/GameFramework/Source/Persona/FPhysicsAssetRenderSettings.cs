@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("PhysicsAssetRenderUtils.h")]
 ///<summary>Per Physics Asset parameters that determine how debug draw functions</summary>
+[CppInclude("PhysicsAssetRenderUtils.h")]
 public partial struct FPhysicsAssetRenderSettings {
-// PhysicsAssetRenderSettings
 	public EPhysicsAssetEditorCollisionViewMode CollisionViewMode;
 	public EPhysicsAssetEditorConstraintViewMode ConstraintViewMode;
 	public EConstraintTransformComponentFlags ConstraintViewportManipulationFlags;

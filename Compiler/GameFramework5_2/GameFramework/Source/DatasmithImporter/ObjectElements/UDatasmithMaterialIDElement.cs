@@ -1,9 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("ObjectElements/DatasmithUObjectElements.h")]
 ///<summary>UDatasmithMaterialIDElement</summary>
+[CppInclude("ObjectElements/DatasmithUObjectElements.h")]
 public partial class UDatasmithMaterialIDElement : UDatasmithObjectElement {
-// DatasmithMaterialIDElement
+	///<summary>GetId</summary>
 	public  int GetId() { return default; }
 }

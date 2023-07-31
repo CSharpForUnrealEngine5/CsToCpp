@@ -1,9 +1,8 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("SmartObjectTypes.h")]
 ///<summary>Handle to a smartobject user.</summary>
+[CppInclude("SmartObjectTypes.h")]
 public partial struct FSmartObjectUserHandle {
-// SmartObjectUserHandle
 	public uint ID;
 }

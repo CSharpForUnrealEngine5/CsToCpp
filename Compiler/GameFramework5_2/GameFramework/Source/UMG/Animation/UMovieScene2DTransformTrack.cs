@@ -1,8 +1,7 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Animation/MovieScene2DTransformTrack.h")]
 ///<summary>Handles manipulation of 2D transforms in a movie scene</summary>
+[CppInclude("Animation/MovieScene2DTransformTrack.h")]
 public partial class UMovieScene2DTransformTrack : UMovieScenePropertyTrack {
-// MovieScene2DTransformTrack
 }

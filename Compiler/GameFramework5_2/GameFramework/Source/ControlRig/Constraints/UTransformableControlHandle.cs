@@ -1,10 +1,11 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Constraints/ControlRigTransformableHandle.h")]
 ///<summary>UTransformableControlHandle</summary>
+[CppInclude("Constraints/ControlRigTransformableHandle.h")]
 public partial class UTransformableControlHandle : UTransformableHandle {
-// TransformableControlHandle
+	///<summary>The ControlRig that this handle is pointing at.</summary>
 	public TSoftObjectPtr<UControlRig> ControlRig;
+	///<summary>The ControlName of the control that this handle is pointing at.</summary>
 	public string ControlName;
 }

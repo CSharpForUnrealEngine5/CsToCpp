@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Roles/LiveLinkLightTypes.h")]
 ///<summary>Static data for Light data.</summary>
+[CppInclude("Roles/LiveLinkLightTypes.h")]
 public partial struct FLiveLinkLightStaticData {
-// LiveLinkLightStaticData
 	public bool bIsTemperatureSupported;
 	public bool bIsIntensitySupported;
 	public bool bIsLightColorSupported;

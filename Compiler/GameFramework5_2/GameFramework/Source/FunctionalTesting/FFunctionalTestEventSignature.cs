@@ -1,7 +1,6 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("FunctionalTest.h")]
 public partial struct FFunctionalTestEventSignature {
 // FunctionalTestEventSignature__DelegateSignature
 	void AddDynamic(object obj, string functionName) {}

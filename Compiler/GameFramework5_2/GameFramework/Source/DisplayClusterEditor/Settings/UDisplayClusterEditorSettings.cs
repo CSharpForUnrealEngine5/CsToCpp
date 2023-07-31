@@ -1,9 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Settings/DisplayClusterEditorSettings.h")]
 ///<summary>Implements nDisplay settings</summary>
+[CppInclude("Settings/DisplayClusterEditorSettings.h")]
 public partial class UDisplayClusterEditorSettings : UObject {
-// DisplayClusterEditorSettings
+	///<summary>When enabled, replaces the original GameEngine to DisplayClusterGameEngine</summary>
 	public bool bEnabled;
 }

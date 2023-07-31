@@ -1,11 +1,13 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
+///<summary>Takes care of spawning UK2Node_AddComponent nodes. Acts as the &quot;action&quot;</summary>
 [CppInclude("BlueprintComponentNodeSpawner.h")]
-///<summary>Takes care of spawning UK2Node_AddComponent nodes. Acts as the "action"</summary>
 public partial class UBlueprintComponentNodeSpawner : UBlueprintNodeSpawner {
-// BlueprintComponentNodeSpawner
+	///<summary>The component class to configure new nodes with.</summary>
 	public UClass ComponentClass;
+	///<summary>The name of the component class to configure new nodes with.</summary>
 	public string ComponentName;
+	///<summary>The name of the asset name that needs to be loaded</summary>
 	public string ComponentAssetName;
 }

@@ -1,9 +1,8 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("SmartObjectComponent.h")]
 ///<summary>Used to store SmartObjectComponent data during RerunConstructionScripts</summary>
+[CppInclude("SmartObjectComponent.h")]
 public partial struct FSmartObjectComponentInstanceData {
-// SmartObjectComponentInstanceData
 	public USmartObjectDefinition DefinitionAsset;
 }

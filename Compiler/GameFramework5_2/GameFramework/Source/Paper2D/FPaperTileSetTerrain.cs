@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("PaperTileSet.h")]
 ///<summary>Information about a terrain type</summary>
+[CppInclude("PaperTileSet.h")]
 public partial struct FPaperTileSetTerrain {
-// PaperTileSetTerrain
 	public string TerrainName;
 	public int CenterTileIndex;
 }

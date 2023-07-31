@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Abilities/GameplayAbilityTypes.h")]
 ///<summary>Used to initialize default values for attributes</summary>
+[CppInclude("Abilities/GameplayAbilityTypes.h")]
 public partial struct FAttributeDefaults {
-// AttributeDefaults
 	public UClass Attributes;
 	public UDataTable DefaultStartingTable;
 }

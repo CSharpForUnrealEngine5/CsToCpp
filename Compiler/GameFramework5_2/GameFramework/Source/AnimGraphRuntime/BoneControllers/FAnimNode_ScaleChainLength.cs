@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("BoneControllers/AnimNode_ScaleChainLength.h")]
 ///<summary>Scale the length of a chain of bones.</summary>
+[CppInclude("BoneControllers/AnimNode_ScaleChainLength.h")]
 public partial struct FAnimNode_ScaleChainLength {
-// AnimNode_ScaleChainLength
 	public FPoseLink InputPose;
 	public float DefaultChainLength;
 	public FBoneReference ChainStartBone;

@@ -1,10 +1,11 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("DataSourceFilterSet.h")]
 ///<summary>Engine implementation of IDataSourceFilterSetInterface</summary>
+[CppInclude("DataSourceFilterSet.h")]
 public partial class UDataSourceFilterSet : UDataSourceFilter {
-// DataSourceFilterSet
+	///<summary>Contained Filter instance</summary>
 	public TArray<UDataSourceFilter> Filters;
+	///<summary>Current Filter set operation</summary>
 	public EFilterSetMode Mode;
 }

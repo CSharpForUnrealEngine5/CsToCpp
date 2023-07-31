@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("AudioWidgetsSlateTypes.h")]
 ///<summary>Represents the appearance of an Audio Slider</summary>
+[CppInclude("AudioWidgetsSlateTypes.h")]
 public partial struct FAudioSliderStyle {
-// AudioSliderStyle
 	public FSliderStyle SliderStyle;
 	public FAudioTextBoxStyle TextBoxStyle;
 	public FSlateBrush WidgetBackgroundImage;

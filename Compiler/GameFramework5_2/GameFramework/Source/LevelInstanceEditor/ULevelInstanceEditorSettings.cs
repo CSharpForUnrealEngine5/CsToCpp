@@ -1,9 +1,10 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("LevelInstanceEditorSettings.h")]
 public partial class ULevelInstanceEditorSettings : UObject {
-// LevelInstanceEditorSettings
+	///<summary>List of info for all known LevelInstance template maps</summary>
 	public TArray<FTemplateMapInfo> TemplateMapInfos;
+	///<summary>LevelInstanceClassName</summary>
 	public string LevelInstanceClassName;
 }

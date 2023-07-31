@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Data/ActorSnapshotData.h")]
 ///<summary>Holds saved actor data. See ActorUtil for operations.</summary>
+[CppInclude("Data/ActorSnapshotData.h")]
 public partial struct FActorSnapshotData {
-// ActorSnapshotData
 	public string ActorLabel;
 	public FSoftClassPath ActorClass_DEPRECATED;
 	public int ClassIndex;

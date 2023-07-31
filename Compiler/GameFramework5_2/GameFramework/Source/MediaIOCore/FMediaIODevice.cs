@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("MediaIOCoreDefinitions.h")]
 ///<summary>Identifies a device.</summary>
+[CppInclude("MediaIOCoreDefinitions.h")]
 public partial struct FMediaIODevice {
-// MediaIODevice
 	public string DeviceName;
 	public int DeviceIdentifier;
 }

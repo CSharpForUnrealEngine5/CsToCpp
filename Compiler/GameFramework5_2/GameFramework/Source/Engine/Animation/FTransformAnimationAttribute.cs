@@ -1,9 +1,8 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
+///<summary>Attribute type supporting the legacy TVariant&lt;FTransform&gt; attributes</summary>
 [CppInclude("Animation/BuiltInAttributeTypes.h")]
-///<summary>Attribute type supporting the legacy TVariant<FTransform> attributes</summary>
 public partial struct FTransformAnimationAttribute {
-// TransformAnimationAttribute
 	public FTransform Value;
 }

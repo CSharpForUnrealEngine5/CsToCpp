@@ -1,8 +1,7 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Tasks/TargetingFilterTask_BasicFilterTemplate.h")]
 ///<summary>@class UTargetingFilterTask_BasicFilterTemplate</summary>
+[CppInclude("Tasks/TargetingFilterTask_BasicFilterTemplate.h")]
 public partial class UTargetingFilterTask_BasicFilterTemplate : UTargetingTask {
-// TargetingFilterTask_BasicFilterTemplate
 }

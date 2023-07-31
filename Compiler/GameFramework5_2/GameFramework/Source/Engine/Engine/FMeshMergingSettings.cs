@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Engine/MeshMerging.h")]
 ///<summary>Mesh merging settings</summary>
+[CppInclude("Engine/MeshMerging.h")]
 public partial struct FMeshMergingSettings {
-// MeshMergingSettings
 	public int TargetLightMapResolution;
 	public EUVOutput OutputUVs;
 	public FMaterialProxySettings MaterialSettings;

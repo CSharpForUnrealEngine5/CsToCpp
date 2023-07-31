@@ -1,9 +1,8 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("UObject/NoExportTypes.h")]
 ///<summary>Represents a single input device such as a gamepad, keyboard, or mouse.</summary>
+[CppInclude("UObject/NoExportTypes.h")]
 public partial struct FInputDeviceId {
-// InputDeviceId
 	public int InternalId;
 }

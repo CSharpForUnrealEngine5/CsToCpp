@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("GameplayEffect.h")]
 ///<summary>Structure to encapsulate magnitudes that are calculated via custom calculation</summary>
+[CppInclude("GameplayEffect.h")]
 public partial struct FCustomCalculationBasedFloat {
-// CustomCalculationBasedFloat
 	public UClass CalculationClassMagnitude;
 	public FScalableFloat Coefficient;
 	public FScalableFloat PreMultiplyAdditiveValue;

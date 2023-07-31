@@ -1,9 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("UVProjectionTool.h")]
 ///<summary>Factory with enough info to spawn the background-thread Operator to do a chunk of work for the tool</summary>
+[CppInclude("UVProjectionTool.h")]
 public partial class UUVProjectionOperatorFactory : UObject {
-// UVProjectionOperatorFactory
+	///<summary>Tool</summary>
 	public UUVProjectionTool Tool;
 }

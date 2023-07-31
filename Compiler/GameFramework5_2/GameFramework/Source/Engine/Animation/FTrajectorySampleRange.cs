@@ -1,9 +1,8 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Animation/MotionTrajectoryTypes.h")]
 ///<summary>A container of ordered trajectory samples and associated sampling rate</summary>
+[CppInclude("Animation/MotionTrajectoryTypes.h")]
 public partial struct FTrajectorySampleRange {
-// TrajectorySampleRange
 	public TArray<FTrajectorySample> Samples;
 }

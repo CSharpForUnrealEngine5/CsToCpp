@@ -1,10 +1,11 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
+///<summary>Note that this sensor doesn&#39;t buffer input state between GetObservations call</summary>
 [CppInclude("Sensors/MLAdapterSensor_Input.h")]
-///<summary>Note that this sensor doesn't buffer input state between GetObservations call</summary>
 public partial class UMLAdapterSensor_Input : UMLAdapterSensor {
-// MLAdapterSensor_Input
+	///<summary>GameViewport</summary>
 	public UGameViewportClient GameViewport;
+	///<summary>bRecordKeyRelease</summary>
 	public bool bRecordKeyRelease;
 }

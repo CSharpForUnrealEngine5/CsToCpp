@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("CurveDataAbstraction.h")]
 ///<summary>Extended attributes that the curve editor understands</summary>
+[CppInclude("CurveDataAbstraction.h")]
 public partial struct FKeyAttributes {
-// KeyAttributes
 	public bool bHasArriveTangent;
 	public bool bHasLeaveTangent;
 	public bool bHasInterpMode;

@@ -1,9 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("PresetAsset.h")]
 ///<summary>Implements an asset that can be used to store tool settings as a named preset</summary>
+[CppInclude("PresetAsset.h")]
 public partial class UInteractiveToolsPresetCollectionAsset : UObject {
-// InteractiveToolsPresetCollectionAsset
+	///<summary>TODO: Currently there are no helper methods within this class, simply providing</summary>
 	public TMap<string,FInteractiveToolPresetStore> PerToolPresets;
 }

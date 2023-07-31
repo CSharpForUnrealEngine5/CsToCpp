@@ -1,9 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("AISubsystem.h")]
 ///<summary>A class representing a common interface and behavior for AI subsystems</summary>
+[CppInclude("AISubsystem.h")]
 public partial class UAISubsystem : UObject {
-// AISubsystem
+	///<summary>AISystem</summary>
 	public UAISystem AISystem;
 }

@@ -1,8 +1,7 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Components/AudioComponent.h")]
-///<summary>Called when sound's PlayState changes.</summary>
+///<summary>Called when sound&#39;s PlayState changes.</summary>
 public partial struct FOnAudioPlayStateChanged {
 // OnAudioPlayStateChanged__DelegateSignature
 	void AddDynamic(object obj, string functionName) {}

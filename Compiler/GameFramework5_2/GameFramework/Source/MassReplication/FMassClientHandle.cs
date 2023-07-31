@@ -1,8 +1,7 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("MassReplicationTypes.h")]
 ///<summary>Handle of each Client on the server. A Client is defined as a player controller with a non nullptr parent NetConnection</summary>
+[CppInclude("MassReplicationTypes.h")]
 public partial struct FMassClientHandle {
-// MassClientHandle
 }

@@ -1,9 +1,8 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("DisplayClusterConfigurationTypes_Postprocess.h")]
 public partial struct FDisplayClusterConfigurationViewport_PerViewportColorGrading {
-// DisplayClusterConfigurationViewport_PerViewportColorGrading
 	public string Name;
 	public bool bIsEnabled;
 	public bool bIsEntireClusterEnabled;

@@ -1,10 +1,12 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("MassCrowdServerRepresentationLODProcessor.h")]
 public partial class UMassCrowdServerRepresentationLODProcessor : UMassProcessor {
-// MassCrowdServerRepresentationLODProcessor
+	///<summary>Distance where each LOD becomes relevant</summary>
 	public float LODDistance;
+	///<summary>Hysteresis percentage on delta between the LOD distances</summary>
 	public float BufferHysteresisOnDistancePercentage;
+	///<summary>Maximum limit of entity per LOD</summary>
 	public int LODMaxCount;
 }

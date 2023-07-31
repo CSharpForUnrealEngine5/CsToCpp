@@ -1,9 +1,8 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("NiagaraDebuggerCommon.h")]
 ///<summary>Message containing updated outliner information sent from the client to the debugger.</summary>
+[CppInclude("NiagaraDebuggerCommon.h")]
 public partial struct FNiagaraDebuggerOutlinerUpdate {
-// NiagaraDebuggerOutlinerUpdate
 	public FNiagaraOutlinerData OutlinerData;
 }

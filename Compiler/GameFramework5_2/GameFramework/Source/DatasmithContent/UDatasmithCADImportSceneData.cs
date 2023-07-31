@@ -1,9 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("DatasmithAssetImportData.h")]
 ///<summary>Import data and options specific to tessellated Datasmith scenes</summary>
+[CppInclude("DatasmithAssetImportData.h")]
 public partial class UDatasmithCADImportSceneData : UDatasmithSceneImportData {
-// DatasmithCADImportSceneData
+	///<summary>TessellationOptions</summary>
 	public FDatasmithTessellationOptions TessellationOptions;
 }

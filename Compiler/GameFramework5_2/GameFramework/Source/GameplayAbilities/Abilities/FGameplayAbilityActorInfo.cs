@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Abilities/GameplayAbilityTypes.h")]
 ///<summary>FGameplayAbilityActorInfo</summary>
+[CppInclude("Abilities/GameplayAbilityTypes.h")]
 public partial struct FGameplayAbilityActorInfo {
-// GameplayAbilityActorInfo
 	public TWeakObjectPtr<AActor> OwnerActor;
 	public TWeakObjectPtr<AActor> AvatarActor;
 	public TWeakObjectPtr<APlayerController> PlayerController;

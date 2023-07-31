@@ -1,9 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("BaseTools/BaseVoxelTool.h")]
 ///<summary>Base for Voxel tools</summary>
+[CppInclude("BaseTools/BaseVoxelTool.h")]
 public partial class UBaseVoxelTool : UBaseCreateFromSelectedTool {
-// BaseVoxelTool
+	///<summary>VoxProperties</summary>
 	public UVoxelProperties VoxProperties;
 }

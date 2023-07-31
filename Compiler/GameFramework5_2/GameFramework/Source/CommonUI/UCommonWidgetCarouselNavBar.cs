@@ -1,16 +1,23 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("CommonWidgetCarouselNavBar.h")]
 ///<summary>A Navigation control for a Carousel</summary>
+[CppInclude("CommonWidgetCarouselNavBar.h")]
 public partial class UCommonWidgetCarouselNavBar : UWidget {
-// CommonWidgetCarouselNavBar
+	///<summary>ButtonWidgetType</summary>
 	public UClass ButtonWidgetType;
+	///<summary>ButtonPadding</summary>
 	public FMargin ButtonPadding;
+	///<summary>Establishes the Widget Carousel instance that this Nav Bar should interact with</summary>
 	public  void SetLinkedCarousel(UCommonWidgetCarousel CommonCarousel) {}
+	///<summary>HandlePageChanged</summary>
 	public  void HandlePageChanged(UCommonWidgetCarousel CommonCarousel,int PageIndex) {}
+	///<summary>HandleButtonClicked</summary>
 	public  void HandleButtonClicked(UCommonButtonBase AssociatedButton,int ButtonIndex) {}
+	///<summary>LinkedCarousel</summary>
 	public UCommonWidgetCarousel LinkedCarousel;
+	///<summary>ButtonGroup</summary>
 	public UCommonButtonGroupBase ButtonGroup;
+	///<summary>Buttons</summary>
 	public TArray<UCommonButtonBase> Buttons;
 }

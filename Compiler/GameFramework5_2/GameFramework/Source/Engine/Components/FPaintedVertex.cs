@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Components/StaticMeshComponent.h")]
 ///<summary>Cached vertex information at the time the mesh was painted.</summary>
+[CppInclude("Components/StaticMeshComponent.h")]
 public partial struct FPaintedVertex {
-// PaintedVertex
 	public FVector Position;
 	public FColor Color;
 	public FVector4 Normal;

@@ -1,9 +1,10 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("MuCOE/Nodes/CustomizableObjectNodeMaterialVariation.h")]
 public partial class UCustomizableObjectNodeMaterialVariation : UCustomizableObjectNodeMaterialBase {
-// CustomizableObjectNodeMaterialVariation
+	///<summary>Type</summary>
 	public ECustomizableObjectNodeMaterialVariationType Type;
+	///<summary>Variations</summary>
 	public TArray<FCustomizableObjectMaterialVariation> Variations;
 }

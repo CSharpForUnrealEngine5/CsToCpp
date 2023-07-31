@@ -1,12 +1,15 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("ARTrackable.h")]
 ///<summary>A tracked environment texture probe that gives you a cube map for reflections</summary>
+[CppInclude("ARTrackable.h")]
 public partial class UAREnvironmentCaptureProbe : UARTrackedGeometry {
-// AREnvironmentCaptureProbe
+	///<summary>See: Extent</summary>
 	public  FVector GetExtent() { return default; }
+	///<summary>See: EnvironmentCaptureTexture</summary>
 	public  UAREnvironmentCaptureProbeTexture GetEnvironmentCaptureTexture() { return default; }
+	///<summary>The size of area this probe covers</summary>
 	public FVector Extent;
+	///<summary>The cube map of the reflected environment</summary>
 	public UAREnvironmentCaptureProbeTexture EnvironmentCaptureTexture;
 }

@@ -1,8 +1,7 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
+///<summary>Action to add a &#39;comment&#39; node to the graph</summary>
 [CppInclude("PCGEditorGraphSchemaActions.h")]
-///<summary>Action to add a 'comment' node to the graph</summary>
 public partial struct FPCGEditorGraphSchemaAction_NewComment {
-// PCGEditorGraphSchemaAction_NewComment
 }

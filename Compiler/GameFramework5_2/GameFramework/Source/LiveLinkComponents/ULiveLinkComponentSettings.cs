@@ -1,9 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("LiveLinkComponentSettings.h")]
 ///<summary>Settings for LiveLink.</summary>
+[CppInclude("LiveLinkComponentSettings.h")]
 public partial class ULiveLinkComponentSettings : UObject {
-// LiveLinkComponentSettings
+	///<summary>Default Controller class to use for the specified role</summary>
 	public TMap<UClass,UClass> DefaultControllerForRole;
 }

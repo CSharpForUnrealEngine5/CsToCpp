@@ -1,8 +1,8 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Sections/MovieSceneCameraShakeSourceTriggerSection.h")]
 public partial class UMovieSceneCameraShakeSourceTriggerSection : UMovieSceneSection {
-// MovieSceneCameraShakeSourceTriggerSection
+	///<summary>Channel</summary>
 	public FMovieSceneCameraShakeSourceTriggerChannel Channel;
 }

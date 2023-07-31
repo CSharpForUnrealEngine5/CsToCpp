@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("RigVMFunctions/Math/RigVMFunction_MathTransform.h")]
 ///<summary>Makes a quaternion based transform from a euler based transform</summary>
+[CppInclude("RigVMFunctions/Math/RigVMFunction_MathTransform.h")]
 public partial struct FRigVMFunction_MathTransformFromEulerTransform {
-// RigVMFunction_MathTransformFromEulerTransform
 	public FEulerTransform EulerTransform;
 	public FTransform Result;
 }

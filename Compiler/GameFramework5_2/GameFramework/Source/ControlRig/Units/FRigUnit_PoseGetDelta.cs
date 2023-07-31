@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Units/Execution/RigUnit_Hierarchy.h")]
 ///<summary>Compares two pose caches and compares their values.</summary>
+[CppInclude("Units/Execution/RigUnit_Hierarchy.h")]
 public partial struct FRigUnit_PoseGetDelta {
-// RigUnit_PoseGetDelta
 	public FRigPose PoseA;
 	public FRigPose PoseB;
 	public float PositionThreshold;

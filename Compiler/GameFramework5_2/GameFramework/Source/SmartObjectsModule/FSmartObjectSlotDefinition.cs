@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("SmartObjectDefinition.h")]
 ///<summary>Persistent and sharable definition of a smart object slot.</summary>
+[CppInclude("SmartObjectDefinition.h")]
 public partial struct FSmartObjectSlotDefinition {
-// SmartObjectSlotDefinition
 	public string Name;
 	public FColor DEBUG_DrawColor;
 	public FGuid ID;

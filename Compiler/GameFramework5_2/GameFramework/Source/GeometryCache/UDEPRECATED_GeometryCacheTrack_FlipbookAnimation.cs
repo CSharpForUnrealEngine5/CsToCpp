@@ -1,10 +1,11 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("GeometryCacheTrackFlipbookAnimation.h")]
 ///<summary>Derived GeometryCacheTrack class, used for Transform animation.</summary>
+[CppInclude("GeometryCacheTrackFlipbookAnimation.h")]
 public partial class UDEPRECATED_GeometryCacheTrack_FlipbookAnimation : UGeometryCacheTrack {
-// GeometryCacheTrack_FlipbookAnimation
+	///<summary>Add a GeometryCacheMeshData sample to the Track</summary>
 	public  void AddMeshSample(FGeometryCacheMeshData MeshData,float SampleTime) {}
+	///<summary>Number of Mesh Sample within this track</summary>
 	public uint NumMeshSamples;
 }

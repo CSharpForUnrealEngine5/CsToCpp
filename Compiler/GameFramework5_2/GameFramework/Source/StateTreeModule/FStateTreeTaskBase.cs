@@ -1,8 +1,7 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("StateTreeTaskBase.h")]
 ///<summary>Base struct for StateTree Tasks.</summary>
+[CppInclude("StateTreeTaskBase.h")]
 public partial struct FStateTreeTaskBase {
-// StateTreeTaskBase
 }

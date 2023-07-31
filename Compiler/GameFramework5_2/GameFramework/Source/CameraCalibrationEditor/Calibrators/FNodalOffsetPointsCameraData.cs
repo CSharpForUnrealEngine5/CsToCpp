@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Calibrators/CameraNodalOffsetAlgoPoints.h")]
 ///<summary>Holds information of the camera pose for a given sample of a 2d-3d correlation</summary>
+[CppInclude("Calibrators/CameraNodalOffsetAlgoPoints.h")]
 public partial struct FNodalOffsetPointsCameraData {
-// NodalOffsetPointsCameraData
 	public bool bIsValid;
 	public uint UniqueId;
 	public FTransform Pose;

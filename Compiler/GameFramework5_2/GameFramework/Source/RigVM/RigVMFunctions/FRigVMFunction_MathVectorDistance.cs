@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("RigVMFunctions/Math/RigVMFunction_MathVector.h")]
 ///<summary>Returns the distance from A to B</summary>
+[CppInclude("RigVMFunctions/Math/RigVMFunction_MathVector.h")]
 public partial struct FRigVMFunction_MathVectorDistance {
-// RigVMFunction_MathVectorDistance
 	public FVector A;
 	public FVector B;
 	public float Result;

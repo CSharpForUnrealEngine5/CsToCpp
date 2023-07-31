@@ -1,9 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("VCamSubsystem.h")]
 ///<summary>Base class for auto instanced and initialized subsystem that share the lifetime of UVCamComponents.</summary>
+[CppInclude("VCamSubsystem.h")]
 public partial class UVCamSubsystem : USubsystem {
-// VCamSubsystem
+	///<summary>GetVCamComponent</summary>
 	public  UVCamComponent GetVCamComponent() { return default; }
 }

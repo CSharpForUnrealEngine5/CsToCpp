@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Sound/SoundMix.h")]
 ///<summary>Elements of data for sound group volume control</summary>
+[CppInclude("Sound/SoundMix.h")]
 public partial struct FSoundClassAdjuster {
-// SoundClassAdjuster
 	public USoundClass SoundClassObject;
 	public float VolumeAdjuster;
 	public float PitchAdjuster;

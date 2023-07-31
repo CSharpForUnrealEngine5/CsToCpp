@@ -1,9 +1,8 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Engine/MaterialMerging.h")]
 public partial struct FMaterialProxySettings {
-// MaterialProxySettings
 	public ETextureSizingType TextureSizingType;
 	public FIntPoint TextureSize;
 	public float TargetTexelDensityPerMeter;

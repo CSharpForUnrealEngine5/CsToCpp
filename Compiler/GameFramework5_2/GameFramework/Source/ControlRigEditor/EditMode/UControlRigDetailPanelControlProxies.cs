@@ -1,10 +1,11 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("EditMode/ControlRigControlsProxy.h")]
 ///<summary>Proxy in Details Panel</summary>
+[CppInclude("EditMode/ControlRigControlsProxy.h")]
 public partial class UControlRigDetailPanelControlProxies : UObject {
-// ControlRigDetailPanelControlProxies
+	///<summary>AllProxies</summary>
 	public TMap<UControlRig,FControlToProxyMap> AllProxies;
+	///<summary>proxies themselves contain weakobjectptr to the controlrig</summary>
 	public TArray<UControlRigControlsProxy> SelectedProxies;
 }

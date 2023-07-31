@@ -1,8 +1,7 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Behaviour/Builtin/Bind/RCBehaviourBind.h")]
 ///<summary>[Bind Behaviour]</summary>
+[CppInclude("Behaviour/Builtin/Bind/RCBehaviourBind.h")]
 public partial class URCBehaviourBind : URCBehaviour {
-// RCBehaviourBind
 }

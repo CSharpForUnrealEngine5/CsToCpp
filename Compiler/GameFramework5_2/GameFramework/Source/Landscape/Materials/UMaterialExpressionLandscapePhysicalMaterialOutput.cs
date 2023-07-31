@@ -1,9 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Materials/MaterialExpressionLandscapePhysicalMaterialOutput.h")]
 ///<summary>Custom output node to write out physical material weights.</summary>
+[CppInclude("Materials/MaterialExpressionLandscapePhysicalMaterialOutput.h")]
 public partial class UMaterialExpressionLandscapePhysicalMaterialOutput : UMaterialExpressionCustomOutput {
-// MaterialExpressionLandscapePhysicalMaterialOutput
+	///<summary>Array of physical material inputs.</summary>
 	public TArray<FPhysicalMaterialInput> Inputs;
 }

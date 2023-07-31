@@ -1,9 +1,8 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("ChaosSolverConfiguration.h")]
 public partial struct FChaosSolverConfiguration {
-// ChaosSolverConfiguration
 	public int PositionIterations;
 	public int VelocityIterations;
 	public int ProjectionIterations;

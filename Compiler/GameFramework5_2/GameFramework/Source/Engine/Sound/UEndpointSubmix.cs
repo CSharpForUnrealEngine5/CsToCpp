@@ -1,11 +1,13 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Sound/SoundSubmix.h")]
 ///<summary>Sound Submix class meant for sending audio to an external endpoint, such as controller haptics or an additional audio device.</summary>
+[CppInclude("Sound/SoundSubmix.h")]
 public partial class UEndpointSubmix : USoundSubmixBase {
-// EndpointSubmix
+	///<summary>Currently used format.</summary>
 	public string EndpointType;
+	///<summary>EndpointSettingsClass</summary>
 	public UClass EndpointSettingsClass;
+	///<summary>EndpointSettings</summary>
 	public UAudioEndpointSettingsBase EndpointSettings;
 }

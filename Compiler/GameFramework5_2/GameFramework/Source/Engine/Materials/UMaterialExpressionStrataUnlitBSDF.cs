@@ -1,9 +1,10 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Materials/MaterialExpressionStrata.h")]
 public partial class UMaterialExpressionStrataUnlitBSDF : UMaterialExpressionStrataBSDF {
-// MaterialExpressionStrataUnlitBSDF
+	///<summary>Emissive color on top of the surface (type = float3, unit = Luminance, default = 0)</summary>
 	public FExpressionInput EmissiveColor;
+	///<summary>The amount of transmitted light from the back side of the surface to the front side of the surface (type = float3, unit = unitless, defaults to 1)</summary>
 	public FExpressionInput TransmittanceColor;
 }

@@ -1,8 +1,7 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("EditorScriptableInteractiveTool.h")]
 ///<summary>Editor-Only variant of UScriptableInteractiveTool, which gives access to Editor-Only BP functions</summary>
+[CppInclude("EditorScriptableInteractiveTool.h")]
 public partial class UEditorScriptableInteractiveTool : UScriptableInteractiveTool {
-// EditorScriptableInteractiveTool
 }

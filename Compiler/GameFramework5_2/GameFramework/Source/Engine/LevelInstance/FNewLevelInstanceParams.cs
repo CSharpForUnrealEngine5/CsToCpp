@@ -1,9 +1,8 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("LevelInstance/LevelInstanceTypes.h")]
 public partial struct FNewLevelInstanceParams {
-// NewLevelInstanceParams
 	public ELevelInstanceCreationType Type;
 	public ELevelInstancePivotType PivotType;
 	public AActor PivotActor;

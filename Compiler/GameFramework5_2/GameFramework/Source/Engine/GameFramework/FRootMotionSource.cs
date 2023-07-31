@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("GameFramework/RootMotionSource.h")]
 ///<summary>Generalized source of Root Motion to a CharacterMovementComponent.</summary>
+[CppInclude("GameFramework/RootMotionSource.h")]
 public partial struct FRootMotionSource {
-// RootMotionSource
 	public ushort Priority;
 	public ushort LocalID;
 	public ERootMotionAccumulateMode AccumulateMode;

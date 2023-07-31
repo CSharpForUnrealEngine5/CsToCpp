@@ -1,8 +1,7 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("StateTreeSchema.h")]
 ///<summary>Schema describing which inputs, evaluators, and tasks a StateTree can contain.</summary>
+[CppInclude("StateTreeSchema.h")]
 public partial class UStateTreeSchema : UObject {
-// StateTreeSchema
 }

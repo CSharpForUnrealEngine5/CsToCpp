@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Animation/MirrorDataTable.h")]
 ///<summary>Find and Replace expressions used to generate mirror tables</summary>
+[CppInclude("Animation/MirrorDataTable.h")]
 public partial struct FMirrorFindReplaceExpression {
-// MirrorFindReplaceExpression
 	public string FindExpression;
 	public string ReplaceExpression;
 	public EMirrorFindReplaceMethod FindReplaceMethod;

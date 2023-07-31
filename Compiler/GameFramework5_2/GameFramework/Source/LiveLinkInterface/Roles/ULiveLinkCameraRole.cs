@@ -1,8 +1,7 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Roles/LiveLinkCameraRole.h")]
 ///<summary>Role associated for Camera data.</summary>
+[CppInclude("Roles/LiveLinkCameraRole.h")]
 public partial class ULiveLinkCameraRole : ULiveLinkTransformRole {
-// LiveLinkCameraRole
 }

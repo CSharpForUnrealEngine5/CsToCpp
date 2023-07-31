@@ -1,10 +1,11 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("BaseGizmos/ParameterSourcesFloat.h")]
 ///<summary>UGizmoLocalFloatParameterSource is an implementation of IGizmoFloatParameterSource</summary>
+[CppInclude("BaseGizmos/ParameterSourcesFloat.h")]
 public partial class UGizmoLocalFloatParameterSource : UGizmoBaseFloatParameterSource {
-// GizmoLocalFloatParameterSource
+	///<summary>Value</summary>
 	public float Value;
+	///<summary>LastChange</summary>
 	public FGizmoFloatParameterChange LastChange;
 }

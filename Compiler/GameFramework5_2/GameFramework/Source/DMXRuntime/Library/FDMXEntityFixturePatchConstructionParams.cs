@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Library/DMXEntityFixturePatch.h")]
 ///<summary>Parameters to construct a Fixture Patch.</summary>
+[CppInclude("Library/DMXEntityFixturePatch.h")]
 public partial struct FDMXEntityFixturePatchConstructionParams {
-// DMXEntityFixturePatchConstructionParams
 	public FDMXEntityFixtureTypeRef FixtureTypeRef;
 	public int ActiveMode;
 	public int UniverseID;

@@ -1,8 +1,8 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("MoviePipelineDeferredPasses.h")]
 public partial class UMoviePipelineDeferredPass_PathTracer : UMoviePipelineDeferredPassBase {
-// MoviePipelineDeferredPass_PathTracer
+	///<summary>When enabled, the path tracer will blend all spatial and temporal samples prior to the denoising and will disable post-processed motion blur.</summary>
 	public bool bReferenceMotionBlur;
 }

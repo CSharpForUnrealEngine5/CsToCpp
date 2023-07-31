@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("MediaAssetMultiUserManager.h")]
 ///<summary>The event that is transfered over MU.</summary>
+[CppInclude("MediaAssetMultiUserManager.h")]
 public partial struct FConcertMediaStateChangedEvent {
-// ConcertMediaStateChangedEvent
 	public TArray<string> ActorsPathNames;
 	public byte State;
 }

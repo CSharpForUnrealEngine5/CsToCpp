@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("MetasoundFrontendDocument.h")]
 ///<summary>Contains graph data associated with a variable.</summary>
+[CppInclude("MetasoundFrontendDocument.h")]
 public partial struct FMetasoundFrontendVariable {
-// MetasoundFrontendVariable
 	public string Name;
 	public string DisplayName;
 	public string Description;

@@ -1,9 +1,8 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Styling/TargetBasedWidgetStyleDefinitions.h")]
 public partial struct FTargettedModifierStyleConfig {
-// TargettedModifierStyleConfig
 	public FWidgetStyleDataArray ModifierStyles;
 	public TMap<string,FWidgetStyleDataArray> ConnectionPointStyles;
 }

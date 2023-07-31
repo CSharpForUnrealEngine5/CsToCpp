@@ -1,8 +1,8 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Animation/EditorSkeletonNotifyObj.h")]
 public partial class UEditorSkeletonNotifyObj : UObject {
-// EditorSkeletonNotifyObj
+	///<summary>The name of the notify we represent</summary>
 	public string Name;
 }

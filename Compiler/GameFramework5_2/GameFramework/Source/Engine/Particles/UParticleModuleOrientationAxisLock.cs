@@ -1,8 +1,8 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Particles/Orientation/ParticleModuleOrientationAxisLock.h")]
 public partial class UParticleModuleOrientationAxisLock : UParticleModuleOrientationBase {
-// ParticleModuleOrientationAxisLock
+	///<summary>The lock axis flag setting.</summary>
 	public EParticleAxisLock LockAxisFlags;
 }

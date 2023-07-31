@@ -1,9 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("SoundCueTemplate.h")]
 ///<summary>Base Sound Cue Template class, which builds the sound node graph procedurally and hides more complex Sound Cue functionality</summary>
+[CppInclude("SoundCueTemplate.h")]
 public partial class USoundCueTemplate : USoundCue {
-// SoundCueTemplate
+	///<summary>AddSoundWavesToTemplate</summary>
 	public  void AddSoundWavesToTemplate(TArray<UObject> SelectedObjects) {}
 }

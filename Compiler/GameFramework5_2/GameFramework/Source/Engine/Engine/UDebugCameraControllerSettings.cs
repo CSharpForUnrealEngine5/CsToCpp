@@ -1,9 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Engine/DebugCameraControllerSettings.h")]
 ///<summary>Default debug camera controller settings.</summary>
+[CppInclude("Engine/DebugCameraControllerSettings.h")]
 public partial class UDebugCameraControllerSettings : UDeveloperSettings {
-// DebugCameraControllerSettings
+	///<summary>CycleViewModes</summary>
 	public TArray<FDebugCameraControllerSettingsViewModeIndex> CycleViewModes;
 }

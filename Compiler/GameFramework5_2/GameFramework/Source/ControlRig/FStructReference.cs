@@ -1,8 +1,7 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
+///<summary>Base class used to reference a struct in the graph. Don&#39;t use this directly, only derived classes.</summary>
 [CppInclude("StructReference.h")]
-///<summary>Base class used to reference a struct in the graph. Don't use this directly, only derived classes.</summary>
 public partial struct FStructReference {
-// StructReference
 }

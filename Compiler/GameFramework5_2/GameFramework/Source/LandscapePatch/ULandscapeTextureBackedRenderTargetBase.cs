@@ -1,14 +1,19 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("LandscapeTextureBackedRenderTarget.h")]
 ///<summary>A combination of a render target and UTexture2D that allows render target to be saved across save/load/etc</summary>
+[CppInclude("LandscapeTextureBackedRenderTarget.h")]
 public partial class ULandscapeTextureBackedRenderTargetBase : UObject {
-// LandscapeTextureBackedRenderTargetBase
+	///<summary>PostLoadRT</summary>
 	public UTextureRenderTarget2D PostLoadRT;
+	///<summary>InternalTexture</summary>
 	public UTexture2D InternalTexture;
+	///<summary>RenderTarget</summary>
 	public UTextureRenderTarget2D RenderTarget;
+	///<summary>SizeX</summary>
 	public int SizeX;
+	///<summary>SizeY</summary>
 	public int SizeY;
+	///<summary>bUseInternalTextureOnly</summary>
 	public bool bUseInternalTextureOnly;
 }

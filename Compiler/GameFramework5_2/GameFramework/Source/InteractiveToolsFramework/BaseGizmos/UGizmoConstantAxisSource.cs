@@ -1,10 +1,11 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("BaseGizmos/AxisSources.h")]
 ///<summary>UGizmoConstantAxisSource is an IGizmoAxisSource implementation that</summary>
+[CppInclude("BaseGizmos/AxisSources.h")]
 public partial class UGizmoConstantAxisSource : UObject {
-// GizmoConstantAxisSource
+	///<summary>Origin</summary>
 	public FVector Origin;
+	///<summary>Direction</summary>
 	public FVector Direction;
 }

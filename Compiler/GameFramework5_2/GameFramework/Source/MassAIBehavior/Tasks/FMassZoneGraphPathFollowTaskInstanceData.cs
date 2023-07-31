@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Tasks/MassZoneGraphPathFollowTask.h")]
 ///<summary>Follows a path long the current lane to a specified point.</summary>
+[CppInclude("Tasks/MassZoneGraphPathFollowTask.h")]
 public partial struct FMassZoneGraphPathFollowTaskInstanceData {
-// MassZoneGraphPathFollowTaskInstanceData
 	public FStateTreeStructRef TargetLocation;
 	public FMassMovementStyleRef MovementStyle;
 	public float SpeedScale;

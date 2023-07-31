@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Fonts/SlateFontInfo.h")]
 ///<summary>A representation of a font in Slate.</summary>
+[CppInclude("Fonts/SlateFontInfo.h")]
 public partial struct FSlateFontInfo {
-// SlateFontInfo
 	public UObject FontObject;
 	public UObject FontMaterial;
 	public FFontOutlineSettings OutlineSettings;

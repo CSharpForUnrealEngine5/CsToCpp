@@ -1,9 +1,8 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("AbilitySystemGlobals.h")]
 ///<summary>Container for safely replicating  script struct references (constrained to a specified parent struct)</summary>
+[CppInclude("AbilitySystemGlobals.h")]
 public partial struct FNetSerializeScriptStructCache {
-// NetSerializeScriptStructCache
 	public TArray<UScriptStruct> ScriptStructs;
 }

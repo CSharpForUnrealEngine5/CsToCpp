@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Components/TextWidgetTypes.h")]
 ///<summary>Common data for all widgets that use shaped text.</summary>
+[CppInclude("Components/TextWidgetTypes.h")]
 public partial struct FShapedTextOptions {
-// ShapedTextOptions
 	public bool bOverride_TextShapingMethod;
 	public bool bOverride_TextFlowDirection;
 	public ETextShapingMethod TextShapingMethod;

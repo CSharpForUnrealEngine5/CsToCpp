@@ -1,10 +1,11 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("AnimationSharingSetup.h")]
 ///<summary>The Animation Sharing Setup asset contains all the information that will be shared across the specified Actors</summary>
+[CppInclude("AnimationSharingSetup.h")]
 public partial class UAnimationSharingSetup : UObject {
-// AnimationSharingSetup
+	///<summary>SkeletonSetups</summary>
 	public TArray<FPerSkeletonAnimationSharingSetup> SkeletonSetups;
+	///<summary>ScalabilitySettings</summary>
 	public FAnimationSharingScalability ScalabilitySettings;
 }

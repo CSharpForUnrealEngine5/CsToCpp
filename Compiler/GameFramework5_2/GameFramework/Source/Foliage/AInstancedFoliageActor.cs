@@ -1,9 +1,10 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("InstancedFoliageActor.h")]
 public partial class AInstancedFoliageActor : AISMPartitionActor {
-// InstancedFoliageActor
+	///<summary>AddInstances</summary>
 	public static void AddInstances(UObject WorldContextObject,UFoliageType InFoliageType,TArray<FTransform> InTransforms) {}
+	///<summary>RemoveAllInstances</summary>
 	public static void RemoveAllInstances(UObject WorldContextObject,UFoliageType InFoliageType) {}
 }

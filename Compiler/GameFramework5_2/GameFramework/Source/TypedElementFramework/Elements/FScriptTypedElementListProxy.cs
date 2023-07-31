@@ -1,8 +1,7 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Elements/Framework/TypedElementListProxy.h")]
 ///<summary>A list of script element handles (proxy to a FScriptTypedElementList instance).</summary>
+[CppInclude("Elements/Framework/TypedElementListProxy.h")]
 public partial struct FScriptTypedElementListProxy {
-// ScriptTypedElementListProxy
 }

@@ -1,8 +1,7 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Sections/MovieSceneBaseCacheSection.h")]
 ///<summary>Movie scene section that control base cache playback</summary>
+[CppInclude("Sections/MovieSceneBaseCacheSection.h")]
 public partial class UMovieSceneBaseCacheSection : UMovieSceneSection {
-// MovieSceneBaseCacheSection
 }

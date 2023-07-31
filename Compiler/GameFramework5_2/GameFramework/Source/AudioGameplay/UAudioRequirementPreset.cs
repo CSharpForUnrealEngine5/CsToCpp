@@ -1,9 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("AudioGameplayRequirements.h")]
 ///<summary>UAudioRequirementPreset - A reusable GameplayTagQuery for audio</summary>
+[CppInclude("AudioGameplayRequirements.h")]
 public partial class UAudioRequirementPreset : UDataAsset {
-// AudioRequirementPreset
+	///<summary>Query</summary>
 	public FGameplayTagQuery Query;
 }

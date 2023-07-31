@@ -1,8 +1,8 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Factories/SubUVAnimationFactory.h")]
 public partial class USubUVAnimationFactory : UFactory {
-// SubUVAnimationFactory
+	///<summary>An initial texture to use</summary>
 	public UTexture2D InitialTexture;
 }

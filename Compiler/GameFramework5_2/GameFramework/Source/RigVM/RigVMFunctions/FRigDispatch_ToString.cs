@@ -1,8 +1,7 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("RigVMFunctions/RigVMFunction_String.h")]
 ///<summary>* Converts any value to string</summary>
+[CppInclude("RigVMFunctions/RigVMFunction_String.h")]
 public partial struct FRigDispatch_ToString {
-// RigDispatch_ToString
 }

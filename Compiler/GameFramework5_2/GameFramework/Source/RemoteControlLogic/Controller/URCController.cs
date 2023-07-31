@@ -1,9 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Controller/RCController.h")]
 ///<summary>Remote Control Controller. Container for Behaviours and Actions</summary>
+[CppInclude("Controller/RCController.h")]
 public partial class URCController : URCVirtualPropertyInContainer {
-// RCController
+	///<summary>Set of the behaviours</summary>
 	public TSet<URCBehaviour> Behaviours;
 }

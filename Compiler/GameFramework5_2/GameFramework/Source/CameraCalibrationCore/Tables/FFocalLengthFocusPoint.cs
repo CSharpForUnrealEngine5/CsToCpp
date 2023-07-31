@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Tables/FocalLengthTable.h")]
 ///<summary>Contains list of focal length points associated to zoom value</summary>
+[CppInclude("Tables/FocalLengthTable.h")]
 public partial struct FFocalLengthFocusPoint {
-// FocalLengthFocusPoint
 	public float Focus;
 	public FRichCurve Fx;
 	public FRichCurve Fy;

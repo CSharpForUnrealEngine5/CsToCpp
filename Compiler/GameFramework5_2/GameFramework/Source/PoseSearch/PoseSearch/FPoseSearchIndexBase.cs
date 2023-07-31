@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("PoseSearch/PoseSearchIndex.h")]
 ///<summary>case class for FPoseSearchIndex. building block used to gather data for data mining and calculate weights, pca, kdtree stuff</summary>
+[CppInclude("PoseSearch/PoseSearchIndex.h")]
 public partial struct FPoseSearchIndexBase {
-// PoseSearchIndexBase
 	public int NumPoses;
 	public TArray<float> Values;
 	public TArray<FPoseSearchPoseMetadata> PoseMetadata;

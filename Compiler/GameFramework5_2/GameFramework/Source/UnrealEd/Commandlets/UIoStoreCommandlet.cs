@@ -1,8 +1,7 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Commandlets/IoStoreCommandlet.h")]
 ///<summary>* Commandlet for creating container file(s) used by the IoDispatcher.</summary>
+[CppInclude("Commandlets/IoStoreCommandlet.h")]
 public partial class UIoStoreCommandlet : UCommandlet {
-// IoStoreCommandlet
 }

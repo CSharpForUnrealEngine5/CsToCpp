@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("CodeGen/WebAPICodeGeneratorSettings.h")]
 ///<summary>Encapsulates settings for WebAPI code generation.</summary>
+[CppInclude("CodeGen/WebAPICodeGeneratorSettings.h")]
 public partial struct FWebAPICodeGeneratorSettings {
-// WebAPICodeGeneratorSettings
 	public bool bOverrideGeneratorClass;
 	public TSoftObjectPtr<UClass> CodeGeneratorClass;
 	public string CopyrightNotice;

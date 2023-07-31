@@ -1,9 +1,8 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("GameFramework/ForceFeedbackEffect.h")]
 ///<summary>A wrapper struct for setting channel details on a per-platform basis</summary>
+[CppInclude("GameFramework/ForceFeedbackEffect.h")]
 public partial struct FForceFeedbackEffectOverridenChannelDetails {
-// ForceFeedbackEffectOverridenChannelDetails
 	public TArray<FForceFeedbackChannelDetails> ChannelDetails;
 }

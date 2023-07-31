@@ -1,9 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
+///<summary>USingleClickInputBehavior implements a standard &quot;button-click&quot;-style input behavior.</summary>
 [CppInclude("BaseBehaviors/SingleClickBehavior.h")]
-///<summary>USingleClickInputBehavior implements a standard "button-click"-style input behavior.</summary>
 public partial class USingleClickInputBehavior : UAnyButtonInputBehavior {
-// SingleClickInputBehavior
+	///<summary>Hit-test is repeated on release (standard behavior). If false,</summary>
 	public bool HitTestOnRelease;
 }

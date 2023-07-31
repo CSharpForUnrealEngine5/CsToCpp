@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("NiagaraStackGraphUtilitiesAdapterLibrary.h")]
 ///<summary>BlueprintType wrapper around FOrbitOptions to allow managing in blueprint/python logic.</summary>
+[CppInclude("NiagaraStackGraphUtilitiesAdapterLibrary.h")]
 public partial struct FOrbitOptionsBP {
-// OrbitOptionsBP
 	public bool bProcessDuringSpawn;
 	public bool bProcessDuringUpdate;
 	public bool bUseEmitterTime;

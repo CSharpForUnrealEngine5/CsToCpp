@@ -1,11 +1,13 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("MediaAssets/ProxyMediaOutput.h")]
 ///<summary>A media output that redirect to another media output.</summary>
+[CppInclude("MediaAssets/ProxyMediaOutput.h")]
 public partial class UProxyMediaOutput : UMediaOutput {
-// ProxyMediaOutput
+	///<summary>Dynamic media output proxy.</summary>
 	public UMediaOutput DynamicProxy;
+	///<summary>Media output proxy.</summary>
 	public UMediaOutput Proxy;
+	///<summary>Is the media proxy has a valid proxy.</summary>
 	public  bool IsProxyValid() { return default; }
 }

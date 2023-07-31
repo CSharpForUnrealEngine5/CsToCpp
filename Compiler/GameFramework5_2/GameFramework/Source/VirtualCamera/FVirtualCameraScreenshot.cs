@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("VirtualCameraSaveGame.h")]
 ///<summary>Keeps track of all the data associated with a screenshot that was taken by the user</summary>
+[CppInclude("VirtualCameraSaveGame.h")]
 public partial struct FVirtualCameraScreenshot {
-// VirtualCameraScreenshot
 	public FVirtualCameraWaypoint Waypoint;
 	public FVirtualCameraSettings CameraSettings;
 }

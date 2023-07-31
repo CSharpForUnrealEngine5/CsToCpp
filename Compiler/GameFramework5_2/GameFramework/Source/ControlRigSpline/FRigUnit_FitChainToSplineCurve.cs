@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("ControlRigSplineUnits.h")]
 ///<summary>Fits a given chain to a spline curve.</summary>
+[CppInclude("ControlRigSplineUnits.h")]
 public partial struct FRigUnit_FitChainToSplineCurve {
-// RigUnit_FitChainToSplineCurve
 	public FRigElementKeyCollection Items;
 	public FControlRigSpline Spline;
 	public EControlRigCurveAlignment Alignment;

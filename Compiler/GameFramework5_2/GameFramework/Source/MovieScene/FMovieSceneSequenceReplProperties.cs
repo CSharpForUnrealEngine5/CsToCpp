@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
+///<summary>Properties that are broadcast from server-&gt;clients for time/state synchronization</summary>
 [CppInclude("MovieSceneSequencePlayer.h")]
-///<summary>Properties that are broadcast from server->clients for time/state synchronization</summary>
 public partial struct FMovieSceneSequenceReplProperties {
-// MovieSceneSequenceReplProperties
 	public FFrameTime LastKnownPosition;
 	public EMovieScenePlayerStatus LastKnownStatus;
 	public int LastKnownNumLoops;

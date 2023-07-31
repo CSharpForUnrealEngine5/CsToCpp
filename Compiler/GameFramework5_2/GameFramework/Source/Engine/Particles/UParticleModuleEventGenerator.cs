@@ -1,8 +1,8 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Particles/Event/ParticleModuleEventGenerator.h")]
 public partial class UParticleModuleEventGenerator : UParticleModuleEventBase {
-// ParticleModuleEventGenerator
+	///<summary>Events</summary>
 	public TArray<FParticleEvent_GenerateInfo> Events;
 }

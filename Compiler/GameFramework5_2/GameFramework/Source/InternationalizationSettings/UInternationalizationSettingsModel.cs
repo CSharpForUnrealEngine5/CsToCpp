@@ -1,9 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("InternationalizationSettingsModel.h")]
 ///<summary>Implements loading and saving of internationalization settings.</summary>
+[CppInclude("InternationalizationSettingsModel.h")]
 public partial class UInternationalizationSettingsModel : UObject {
-// InternationalizationSettingsModel
+	///<summary>Timezone to use for display purposes in FDateTime</summary>
 	public ETimezoneSetting DisplayTimezone;
 }

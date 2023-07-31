@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Sound/AudioVolume.h")]
 ///<summary>Struct encapsulating settings for interior areas.</summary>
+[CppInclude("Sound/AudioVolume.h")]
 public partial struct FInteriorSettings {
-// InteriorSettings
 	public bool bIsWorldSettings;
 	public float ExteriorVolume;
 	public float ExteriorTime;

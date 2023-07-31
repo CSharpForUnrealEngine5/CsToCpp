@@ -1,8 +1,7 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
+///<summary>UGerstnerWaterWaveSubsystem manages all UGerstnerWaterWaves objects, regardless of which world they belong to (it&#39;s a UEngineSubsystem)</summary>
 [CppInclude("GerstnerWaterWaveSubsystem.h")]
-///<summary>UGerstnerWaterWaveSubsystem manages all UGerstnerWaterWaves objects, regardless of which world they belong to (it's a UEngineSubsystem)</summary>
 public partial class UGerstnerWaterWaveSubsystem : UEngineSubsystem {
-// GerstnerWaterWaveSubsystem
 }

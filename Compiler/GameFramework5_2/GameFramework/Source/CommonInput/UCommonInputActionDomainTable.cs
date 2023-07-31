@@ -1,11 +1,13 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("CommonInputActionDomain.h")]
 ///<summary>An ordered array of ActionDomains.</summary>
+[CppInclude("CommonInputActionDomain.h")]
 public partial class UCommonInputActionDomainTable : UDataAsset {
-// CommonInputActionDomainTable
+	///<summary>Domains will receive events in ascending index order</summary>
 	public TArray<UCommonInputActionDomain> ActionDomains;
+	///<summary>InputMode</summary>
 	public ECommonInputMode InputMode;
+	///<summary>MouseCaptureMode</summary>
 	public EMouseCaptureMode MouseCaptureMode;
 }

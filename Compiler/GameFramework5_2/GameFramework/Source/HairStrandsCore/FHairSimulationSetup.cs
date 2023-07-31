@@ -1,9 +1,8 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("GroomAssetPhysics.h")]
 public partial struct FHairSimulationSetup {
-// HairSimulationSetup
 	public bool bResetSimulation;
 	public bool bDebugSimulation;
 	public bool bLocalSimulation;

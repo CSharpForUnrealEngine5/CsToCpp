@@ -1,11 +1,13 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("CombineMeshesTool.h")]
 ///<summary>Simple tool to combine multiple meshes into a single mesh asset</summary>
+[CppInclude("CombineMeshesTool.h")]
 public partial class UCombineMeshesTool : UMultiSelectionMeshEditingTool {
-// CombineMeshesTool
+	///<summary>BasicProperties</summary>
 	public UCombineMeshesToolProperties BasicProperties;
+	///<summary>OutputTypeProperties</summary>
 	public UCreateMeshObjectTypeProperties OutputTypeProperties;
+	///<summary>HandleSourceProperties</summary>
 	public UOnAcceptHandleSourcesPropertiesBase HandleSourceProperties;
 }

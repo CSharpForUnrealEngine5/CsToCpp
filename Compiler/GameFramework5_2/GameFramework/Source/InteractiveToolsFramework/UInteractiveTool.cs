@@ -1,10 +1,11 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("InteractiveTool.h")]
 ///<summary>UInteractiveTool is the base class for all Tools in the InteractiveToolsFramework.</summary>
+[CppInclude("InteractiveTool.h")]
 public partial class UInteractiveTool : UObject {
-// InteractiveTool
+	///<summary>The current set of InputBehaviors provided by this Tool</summary>
 	public UInputBehaviorSet InputBehaviors;
+	///<summary>The current set of Property UObjects provided by this Tool. May contain pointer to itself.</summary>
 	public TArray<UObject> ToolPropertyObjects;
 }

@@ -1,9 +1,8 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("MotoSynthPreset.h")]
 public partial struct FMotoSynthRuntimeSettings {
-// MotoSynthRuntimeSettings
 	public bool bSynthToneEnabled;
 	public float SynthToneVolume_DEPRECATED;
 	public float SynthToneFilterFrequency_DEPRECATED;

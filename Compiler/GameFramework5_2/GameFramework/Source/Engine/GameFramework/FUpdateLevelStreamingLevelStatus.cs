@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("GameFramework/PlayerController.h")]
 ///<summary>This structure is used to pass arguments to ClientUpdateMultipleLevelsStreamingStatus() client RPC function</summary>
+[CppInclude("GameFramework/PlayerController.h")]
 public partial struct FUpdateLevelStreamingLevelStatus {
-// UpdateLevelStreamingLevelStatus
 	public string PackageName;
 	public int LODIndex;
 	public bool bNewShouldBeLoaded;

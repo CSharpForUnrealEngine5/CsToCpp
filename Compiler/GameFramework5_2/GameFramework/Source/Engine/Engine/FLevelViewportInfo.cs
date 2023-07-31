@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Engine/World.h")]
 ///<summary>Saved editor viewport state information</summary>
+[CppInclude("Engine/World.h")]
 public partial struct FLevelViewportInfo {
-// LevelViewportInfo
 	public FVector CamPosition;
 	public FRotator CamRotation;
 	public float CamOrthoZoom;

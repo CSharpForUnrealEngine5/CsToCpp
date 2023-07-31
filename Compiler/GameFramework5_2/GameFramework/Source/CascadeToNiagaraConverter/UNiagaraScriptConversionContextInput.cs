@@ -1,12 +1,15 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("NiagaraStackGraphUtilitiesAdapterLibrary.h")]
 ///<summary>Wrapper for setting the value on a parameter of a UNiagaraScript, applied through a UNiagaraScriptConversionContext.</summary>
+[CppInclude("NiagaraStackGraphUtilitiesAdapterLibrary.h")]
 public partial class UNiagaraScriptConversionContextInput : UObject {
-// NiagaraScriptConversionContextInput
+	///<summary>Init</summary>
 	public  void Init(UNiagaraClipboardFunctionInput InClipboardFunctionInput,ENiagaraScriptInputType InInputType,FNiagaraTypeDefinition InTypeDefinition) {}
+	///<summary>ClipboardFunctionInput</summary>
 	public UNiagaraClipboardFunctionInput ClipboardFunctionInput;
+	///<summary>InputType</summary>
 	public ENiagaraScriptInputType InputType;
+	///<summary>TypeDefinition</summary>
 	public FNiagaraTypeDefinition TypeDefinition;
 }

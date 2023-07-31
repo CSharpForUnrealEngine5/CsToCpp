@@ -1,8 +1,7 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Gizmo/VIStretchGizmoHandle.h")]
 ///<summary>Gizmo handle for stretching/scaling</summary>
+[CppInclude("Gizmo/VIStretchGizmoHandle.h")]
 public partial class UStretchGizmoHandleGroup : UGizmoHandleGroup {
-// StretchGizmoHandleGroup
 }

@@ -1,9 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Dom/WebAPITypeRegistry.h")]
 ///<summary>Holds Type information for a given Schema.</summary>
+[CppInclude("Dom/WebAPITypeRegistry.h")]
 public partial class UWebAPITypeRegistry : UObject {
-// WebAPITypeRegistry
+	///<summary>Array of TypeInfo objects to generate (no built-in types).</summary>
 	public TArray<UWebAPITypeInfo> GeneratedTypes;
 }

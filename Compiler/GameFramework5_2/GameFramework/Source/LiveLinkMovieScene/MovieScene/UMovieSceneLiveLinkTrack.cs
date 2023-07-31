@@ -1,9 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("MovieScene/MovieSceneLiveLinkTrack.h")]
 ///<summary>A track for animating FMoveSceneLiveLinkTrack properties.</summary>
+[CppInclude("MovieScene/MovieSceneLiveLinkTrack.h")]
 public partial class UMovieSceneLiveLinkTrack : UMovieScenePropertyTrack {
-// MovieSceneLiveLinkTrack
+	///<summary>TrackRole</summary>
 	public UClass TrackRole;
 }

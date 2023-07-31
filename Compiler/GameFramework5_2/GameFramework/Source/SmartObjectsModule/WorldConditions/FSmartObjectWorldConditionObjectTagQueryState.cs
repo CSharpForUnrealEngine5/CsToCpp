@@ -1,8 +1,7 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
+///<summary>World condition to match Smart Object&#39;s runtime tags.</summary>
 [CppInclude("WorldConditions/SmartObjectWorldConditionObjectTagQuery.h")]
-///<summary>World condition to match Smart Object's runtime tags.</summary>
 public partial struct FSmartObjectWorldConditionObjectTagQueryState {
-// SmartObjectWorldConditionObjectTagQueryState
 }

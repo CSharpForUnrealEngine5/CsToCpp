@@ -1,12 +1,16 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("TraceQueryTestResults.h")]
 public partial class UTraceQueryTestResults : UObject {
-// TraceQueryTestResults
+	///<summary>Results for channel trace</summary>
 	public FTraceQueryTestResultsInner ChannelResults;
+	///<summary>Results for object trace</summary>
 	public FTraceQueryTestResultsInner ObjectResults;
+	///<summary>Results for profile trace</summary>
 	public FTraceQueryTestResultsInner ProfileResults;
+	///<summary>BatchOptions</summary>
 	public FTraceChannelTestBatchOptions BatchOptions;
+	///<summary>Output string value</summary>
 	public  string ToString() { return default; }
 }

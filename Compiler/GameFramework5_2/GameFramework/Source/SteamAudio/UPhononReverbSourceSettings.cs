@@ -1,9 +1,10 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("PhononReverbSourceSettings.h")]
 public partial class UPhononReverbSourceSettings : UReverbPluginSourceSettingsBase {
-// PhononReverbSourceSettings
+	///<summary>How to simulate source-centric reverb.</summary>
 	public EIplSimulationType SourceReverbSimulationType;
+	///<summary>Scale factor to make the indirect contribution louder or softer.</summary>
 	public float SourceReverbContribution;
 }

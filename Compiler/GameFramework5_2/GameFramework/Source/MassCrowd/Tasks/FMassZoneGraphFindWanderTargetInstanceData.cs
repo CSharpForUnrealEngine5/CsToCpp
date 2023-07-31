@@ -1,9 +1,8 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Tasks/MassZoneGraphFindWanderTarget.h")]
 ///<summary>Updates TargetLocation to a wander target based on the agents current location on ZoneGraph.</summary>
+[CppInclude("Tasks/MassZoneGraphFindWanderTarget.h")]
 public partial struct FMassZoneGraphFindWanderTargetInstanceData {
-// MassZoneGraphFindWanderTargetInstanceData
 	public FMassZoneGraphTargetLocation WanderTargetLocation;
 }

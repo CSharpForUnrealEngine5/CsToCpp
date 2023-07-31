@@ -1,8 +1,8 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("NiagaraSpriteRendererProperties.h")]
-///<summary>This enum decides how a sprite particle will orient its "up" axis. Must keep these in sync with NiagaraSpriteVertexFactory.ush</summary>
+///<summary>This enum decides how a sprite particle will orient its &quot;up&quot; axis. Must keep these in sync with NiagaraSpriteVertexFactory.ush</summary>
 public enum ENiagaraSpriteAlignment {
 	Unaligned=0,
 	VelocityAligned=1,

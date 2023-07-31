@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Dataflow/GeometryCollectionNodes.h")]
 ///<summary>Normalize the selected float data in a FloatArray</summary>
+[CppInclude("Dataflow/GeometryCollectionNodes.h")]
 public partial struct FFloatArrayNormalizeDataflowNode {
-// FloatArrayNormalizeDataflowNode
 	public TArray<float> InFloatArray;
 	public FDataflowVertexSelection Selection;
 	public float MinRange;

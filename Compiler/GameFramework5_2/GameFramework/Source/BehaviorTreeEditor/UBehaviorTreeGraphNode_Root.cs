@@ -1,9 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("BehaviorTreeGraphNode_Root.h")]
 ///<summary>Root node of this behavior tree, holds Blackboard data</summary>
+[CppInclude("BehaviorTreeGraphNode_Root.h")]
 public partial class UBehaviorTreeGraphNode_Root : UBehaviorTreeGraphNode {
-// BehaviorTreeGraphNode_Root
+	///<summary>BlackboardAsset</summary>
 	public UBlackboardData BlackboardAsset;
 }

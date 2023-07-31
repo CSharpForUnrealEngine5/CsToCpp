@@ -1,11 +1,13 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("BehaviorTree/Decorators/BTDecorator_CompareBBEntries.h")]
 ///<summary>Blackboard comparison decorator node.</summary>
+[CppInclude("BehaviorTree/Decorators/BTDecorator_CompareBBEntries.h")]
 public partial class UBTDecorator_CompareBBEntries : UBTDecorator {
-// BTDecorator_CompareBBEntries
+	///<summary>operation type</summary>
 	public EBlackBoardEntryComparison Operator;
+	///<summary>blackboard key selector</summary>
 	public FBlackboardKeySelector BlackboardKeyA;
+	///<summary>blackboard key selector</summary>
 	public FBlackboardKeySelector BlackboardKeyB;
 }

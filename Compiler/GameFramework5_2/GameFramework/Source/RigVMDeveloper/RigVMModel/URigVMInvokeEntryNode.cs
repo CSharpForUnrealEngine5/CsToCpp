@@ -1,9 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("RigVMModel/Nodes/RigVMInvokeEntryNode.h")]
 ///<summary>The Invoke Entry Node is used to invoke another entry from the</summary>
+[CppInclude("RigVMModel/Nodes/RigVMInvokeEntryNode.h")]
 public partial class URigVMInvokeEntryNode : URigVMNode {
-// RigVMInvokeEntryNode
+	///<summary>Returns the name of the entry to run</summary>
 	public  string GetEntryName() { return default; }
 }

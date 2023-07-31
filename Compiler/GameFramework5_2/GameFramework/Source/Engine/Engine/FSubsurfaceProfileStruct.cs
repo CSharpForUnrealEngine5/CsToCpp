@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Engine/SubsurfaceProfile.h")]
 ///<summary>struct with all the settings we want in USubsurfaceProfile, separate to make it easer to pass this data around in the engine.</summary>
+[CppInclude("Engine/SubsurfaceProfile.h")]
 public partial struct FSubsurfaceProfileStruct {
-// SubsurfaceProfileStruct
 	public FLinearColor SurfaceAlbedo;
 	public FLinearColor MeanFreePathColor;
 	public float MeanFreePathDistance;

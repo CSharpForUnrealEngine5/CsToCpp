@@ -1,19 +1,29 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("ParameterizeMeshTool.h")]
 ///<summary>UParameterizeMeshTool automatically decomposes the input mesh into charts, solves for UVs,</summary>
+[CppInclude("ParameterizeMeshTool.h")]
 public partial class UParameterizeMeshTool : USingleSelectionMeshEditingTool {
-// ParameterizeMeshTool
+	///<summary>UVChannelProperties</summary>
 	public UMeshUVChannelProperties UVChannelProperties;
+	///<summary>Settings</summary>
 	public UParameterizeMeshToolProperties Settings;
+	///<summary>UVAtlasProperties</summary>
 	public UParameterizeMeshToolUVAtlasProperties UVAtlasProperties;
+	///<summary>XAtlasProperties</summary>
 	public UParameterizeMeshToolXAtlasProperties XAtlasProperties;
+	///<summary>PatchBuilderProperties</summary>
 	public UParameterizeMeshToolPatchBuilderProperties PatchBuilderProperties;
+	///<summary>PolygroupLayerProperties</summary>
 	public UPolygroupLayersProperties PolygroupLayerProperties;
+	///<summary>MaterialSettings</summary>
 	public UExistingMeshMaterialProperties MaterialSettings;
+	///<summary>bCreateUVLayoutViewOnSetup</summary>
 	public bool bCreateUVLayoutViewOnSetup;
+	///<summary>UVLayoutView</summary>
 	public UUVLayoutPreview UVLayoutView;
+	///<summary>Preview</summary>
 	public UMeshOpPreviewWithBackgroundCompute Preview;
+	///<summary>Factory</summary>
 	public UParameterizeMeshOperatorFactory Factory;
 }

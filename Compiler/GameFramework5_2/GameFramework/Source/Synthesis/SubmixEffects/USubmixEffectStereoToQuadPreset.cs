@@ -1,10 +1,11 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("SubmixEffects/SubmixEffectStereoToQuad.h")]
 ///<summary>Submix effect which sends stereo audio to quad (left surround and right surround) if the channel count is greater than 2.</summary>
+[CppInclude("SubmixEffects/SubmixEffectStereoToQuad.h")]
 public partial class USubmixEffectStereoToQuadPreset : USoundEffectSubmixPreset {
-// SubmixEffectStereoToQuadPreset
+	///<summary>Set all tap delay settings. This will replace any dynamically added or modified taps.</summary>
 	public  void SetSettings(FSubmixEffectStereoToQuadSettings InSettings) {}
+	///<summary>Settings</summary>
 	public FSubmixEffectStereoToQuadSettings Settings;
 }

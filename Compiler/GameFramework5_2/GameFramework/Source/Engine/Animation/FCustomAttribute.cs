@@ -1,9 +1,8 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Animation/CustomAttributes.h")]
 public partial struct FCustomAttribute {
-// CustomAttribute
 	public string Name;
 	public int VariantType;
 	public TArray<float> Times;

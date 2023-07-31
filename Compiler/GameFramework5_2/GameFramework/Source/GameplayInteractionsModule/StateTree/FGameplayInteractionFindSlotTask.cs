@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("StateTree/GameplayInteractionFindSlotTask.h")]
 ///<summary>Task to find a Smart Object slot based on a reference slot.</summary>
+[CppInclude("StateTree/GameplayInteractionFindSlotTask.h")]
 public partial struct FGameplayInteractionFindSlotTask {
-// GameplayInteractionFindSlotTask
 	public EGameplayInteractionSlotReferenceType ReferenceType;
 	public FGameplayTag FindByTag;
 }

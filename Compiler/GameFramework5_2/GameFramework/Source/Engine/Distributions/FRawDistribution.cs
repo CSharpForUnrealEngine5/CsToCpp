@@ -1,9 +1,8 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Distributions/Distribution.h")]
 ///<summary>Base class for raw (baked out) Distribution type</summary>
+[CppInclude("Distributions/Distribution.h")]
 public partial struct FRawDistribution {
-// RawDistribution
 	public FDistributionLookupTable Table;
 }

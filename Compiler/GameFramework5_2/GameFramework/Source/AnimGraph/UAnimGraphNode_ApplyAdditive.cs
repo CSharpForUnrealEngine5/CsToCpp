@@ -1,8 +1,8 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("AnimGraphNode_ApplyAdditive.h")]
 public partial class UAnimGraphNode_ApplyAdditive : UAnimGraphNode_Base {
-// AnimGraphNode_ApplyAdditive
+	///<summary>Node</summary>
 	public FAnimNode_ApplyAdditive Node;
 }

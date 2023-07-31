@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("IO/LidarPointCloudFileIO_ASCII.h")]
 ///<summary>Used to help expose the import settings to Blueprints</summary>
+[CppInclude("IO/LidarPointCloudFileIO_ASCII.h")]
 public partial struct FLidarPointCloudImportSettings_ASCII_Columns {
-// LidarPointCloudImportSettings_ASCII_Columns
 	public int LocationX;
 	public int LocationY;
 	public int LocationZ;

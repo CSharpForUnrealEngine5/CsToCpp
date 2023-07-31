@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("MediaIOCoreDefinitions.h")]
 ///<summary>Identifies an media connection.</summary>
+[CppInclude("MediaIOCoreDefinitions.h")]
 public partial struct FMediaIOConnection {
-// MediaIOConnection
 	public FMediaIODevice Device;
 	public string Protocol;
 	public EMediaIOTransportType TransportType;

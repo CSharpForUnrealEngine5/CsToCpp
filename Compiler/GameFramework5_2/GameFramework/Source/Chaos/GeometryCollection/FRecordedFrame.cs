@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("GeometryCollection/RecordedTransformTrack.h")]
 ///<summary>Structure describing necessary data to record the results of a physics simulation for rigids.</summary>
+[CppInclude("GeometryCollection/RecordedTransformTrack.h")]
 public partial struct FRecordedFrame {
-// RecordedFrame
 	public TArray<FTransform> Transforms;
 	public TArray<int> TransformIndices;
 	public TArray<int> PreviousTransformIndices;

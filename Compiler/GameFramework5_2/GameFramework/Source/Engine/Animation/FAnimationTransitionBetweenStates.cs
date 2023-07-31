@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Animation/AnimStateMachineTypes.h")]
 ///<summary>This represents a baked transition</summary>
+[CppInclude("Animation/AnimStateMachineTypes.h")]
 public partial struct FAnimationTransitionBetweenStates {
-// AnimationTransitionBetweenStates
 	public int PreviousState;
 	public int NextState;
 	public float CrossfadeDuration;

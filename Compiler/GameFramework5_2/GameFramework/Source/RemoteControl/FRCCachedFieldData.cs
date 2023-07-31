@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("RemoteControlPreset.h")]
 ///<summary>Data cached for every exposed field.</summary>
+[CppInclude("RemoteControlPreset.h")]
 public partial struct FRCCachedFieldData {
-// RCCachedFieldData
 	public FGuid LayoutGroupId;
 	public string OwnerObjectAlias;
 }

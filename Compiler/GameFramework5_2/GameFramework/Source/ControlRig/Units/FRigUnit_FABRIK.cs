@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Units/Highlevel/Hierarchy/RigUnit_FABRIK.h")]
 ///<summary>The FABRIK solver can solve N-Bone chains using</summary>
+[CppInclude("Units/Highlevel/Hierarchy/RigUnit_FABRIK.h")]
 public partial struct FRigUnit_FABRIK {
-// RigUnit_FABRIK
 	public string StartBone;
 	public string EffectorBone;
 	public FTransform EffectorTransform;

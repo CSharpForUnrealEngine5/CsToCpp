@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("AssetDefinition.h")]
 ///<summary>Revision information for a single revision of a file in source control</summary>
+[CppInclude("AssetDefinition.h")]
 public partial struct FRevisionInfo {
-// RevisionInfo
 	public string Revision;
 	public int Changelist;
 	public FDateTime Date;

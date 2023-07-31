@@ -1,9 +1,8 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("PCGPin.h")]
 public partial struct FPCGPinProperties {
-// PCGPinProperties
 	public string Label;
 	public EPCGDataType AllowedTypes;
 	public bool bAllowMultipleData;

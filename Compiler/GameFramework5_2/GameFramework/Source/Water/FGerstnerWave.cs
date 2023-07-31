@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("GerstnerWaterWaves.h")]
 ///<summary>Raw wave parameters for one gerstner wave</summary>
+[CppInclude("GerstnerWaterWaves.h")]
 public partial struct FGerstnerWave {
-// GerstnerWave
 	public float WaveLength;
 	public float Amplitude;
 	public float Steepness;

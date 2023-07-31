@@ -1,12 +1,15 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("SelectionSet.h")]
 ///<summary>UMeshSelectionSet is an implementation of USelectionSet that represents selections on indexed meshes.</summary>
+[CppInclude("SelectionSet.h")]
 public partial class UMeshSelectionSet : USelectionSet {
-// MeshSelectionSet
+	///<summary>Vertices</summary>
 	public TArray<int> Vertices;
+	///<summary>Edges</summary>
 	public TArray<int> Edges;
+	///<summary>Faces</summary>
 	public TArray<int> Faces;
+	///<summary>Groups</summary>
 	public TArray<int> Groups;
 }

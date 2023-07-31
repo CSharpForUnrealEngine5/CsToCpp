@@ -1,8 +1,8 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("GameplayTask_SuddenTurnTransition.h")]
 public partial class UGameplayTask_SuddenTurnTransition : UGameplayTask {
-// GameplayTask_SuddenTurnTransition
+	///<summary>MovementComponent</summary>
 	public UCharacterMovementComponent MovementComponent;
 }

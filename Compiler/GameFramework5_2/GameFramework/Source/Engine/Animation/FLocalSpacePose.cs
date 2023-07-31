@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Animation/AnimationTypes.h")]
 ///<summary>A pose in local space (i.e. each transform is relative to its parent)</summary>
+[CppInclude("Animation/AnimationTypes.h")]
 public partial struct FLocalSpacePose {
-// LocalSpacePose
 	public TArray<FTransform> Transforms;
 	public TArray<string> Names;
 }

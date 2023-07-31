@@ -1,9 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("VoxelBlendMeshesTool.h")]
 ///<summary>Tool to smoothly blend meshes together</summary>
+[CppInclude("VoxelBlendMeshesTool.h")]
 public partial class UVoxelBlendMeshesTool : UBaseVoxelTool {
-// VoxelBlendMeshesTool
+	///<summary>BlendProperties</summary>
 	public UVoxelBlendMeshesToolProperties BlendProperties;
 }

@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("PoseSearch/PoseSearchDatabase.h")]
 ///<summary>An entry in a UPoseSearchDatabase.</summary>
+[CppInclude("PoseSearch/PoseSearchDatabase.h")]
 public partial struct FPoseSearchDatabaseAnimComposite {
-// PoseSearchDatabaseAnimComposite
 	public UAnimComposite AnimComposite;
 	public bool bEnabled;
 	public FFloatInterval SamplingRange;

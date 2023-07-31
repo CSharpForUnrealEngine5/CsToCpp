@@ -1,10 +1,11 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
+///<summary>Movie scene track that exports a single pass (either the element&#39;s output, or an internal transform pass) during burnouts</summary>
 [CppInclude("MovieScene/MovieSceneComposureExportTrack.h")]
-///<summary>Movie scene track that exports a single pass (either the element's output, or an internal transform pass) during burnouts</summary>
 public partial class UMovieSceneComposureExportTrack : UMovieSceneTrack {
-// MovieSceneComposureExportTrack
+	///<summary>Configuration options for the pass to export</summary>
 	public FMovieSceneComposureExportPass Pass;
+	///<summary>Sections</summary>
 	public TArray<UMovieSceneSection> Sections;
 }

@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("ConversationContext.h")]
 ///<summary>Information about a currently active conversation</summary>
+[CppInclude("ConversationContext.h")]
 public partial struct FConversationContext {
-// ConversationContext
 	public UConversationRegistry ConversationRegistry;
 	public UConversationInstance ActiveConversation;
 	public UConversationParticipantComponent ClientParticipant;

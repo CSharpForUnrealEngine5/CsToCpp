@@ -1,8 +1,8 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("EdGraph/EdGraphNode.h")]
-///<summary>Enum to indicate a node's enabled state.</summary>
+///<summary>Enum to indicate a node&#39;s enabled state.</summary>
 public enum ENodeEnabledState {
 	Enabled=0,
 	Disabled=1,

@@ -1,9 +1,8 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Sound/SlateSound.h")]
 ///<summary>An intermediary to make UBaseSound available for Slate to play sounds</summary>
+[CppInclude("Sound/SlateSound.h")]
 public partial struct FSlateSound {
-// SlateSound
 	public UObject ResourceObject;
 }

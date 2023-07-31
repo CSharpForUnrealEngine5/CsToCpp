@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("NiagaraEmitter.h")]
 ///<summary>Legacy struct for spawn count scale overrides. This is now done in FNiagaraEmitterScalabilityOverrides</summary>
+[CppInclude("NiagaraEmitter.h")]
 public partial struct FNiagaraDetailsLevelScaleOverrides {
-// NiagaraDetailsLevelScaleOverrides
 	public float Low;
 	public float Medium;
 	public float High;

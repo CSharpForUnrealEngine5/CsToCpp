@@ -1,12 +1,15 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("USDPrimTwin.h")]
 ///<summary>The Unreal equivalent (twin) of a USD prim</summary>
+[CppInclude("USDPrimTwin.h")]
 public partial class UUsdPrimTwin : UObject {
-// UsdPrimTwin
+	///<summary>PrimPath</summary>
 	public string PrimPath;
+	///<summary>SceneComponent</summary>
 	public TWeakObjectPtr<USceneComponent> SceneComponent;
+	///<summary>Children</summary>
 	public TMap<string,UUsdPrimTwin> Children;
+	///<summary>Parent</summary>
 	public TWeakObjectPtr<UUsdPrimTwin> Parent;
 }

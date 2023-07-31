@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Navigation/CrowdManager.h")]
 ///<summary>Crowd manager is responsible for handling crowds using Detour (Recast library)</summary>
+[CppInclude("Navigation/CrowdManager.h")]
 public partial struct FCrowdAvoidanceConfig {
-// CrowdAvoidanceConfig
 	public float VelocityBias;
 	public float DesiredVelocityWeight;
 	public float CurrentVelocityWeight;

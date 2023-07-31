@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Engine/DataTable.h")]
 ///<summary>Handle to a particular row in a table</summary>
+[CppInclude("Engine/DataTable.h")]
 public partial struct FDataTableRowHandle {
-// DataTableRowHandle
 	public UDataTable DataTable;
 	public string RowName;
 }

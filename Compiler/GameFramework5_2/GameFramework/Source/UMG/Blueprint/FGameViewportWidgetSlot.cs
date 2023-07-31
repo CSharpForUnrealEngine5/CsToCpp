@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Blueprint/GameViewportSubsystem.h")]
 ///<summary>The default value fills the entire screen / player region.</summary>
+[CppInclude("Blueprint/GameViewportSubsystem.h")]
 public partial struct FGameViewportWidgetSlot {
-// GameViewportWidgetSlot
 	public FAnchors Anchors;
 	public FMargin Offsets;
 	public FVector2D Alignment;

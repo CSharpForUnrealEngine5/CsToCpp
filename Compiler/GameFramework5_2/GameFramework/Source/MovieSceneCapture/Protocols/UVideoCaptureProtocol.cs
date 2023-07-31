@@ -1,9 +1,10 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Protocols/VideoCaptureProtocol.h")]
 public partial class UVideoCaptureProtocol : UFrameGrabberProtocol {
-// VideoCaptureProtocol
+	///<summary>bUseCompression</summary>
 	public bool bUseCompression;
+	///<summary>CompressionQuality</summary>
 	public float CompressionQuality;
 }

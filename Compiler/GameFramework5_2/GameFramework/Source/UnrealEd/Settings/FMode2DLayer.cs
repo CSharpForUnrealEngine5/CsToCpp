@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Settings/EditorProjectSettings.h")]
 ///<summary>2D layer settings</summary>
+[CppInclude("Settings/EditorProjectSettings.h")]
 public partial struct FMode2DLayer {
-// Mode2DLayer
 	public string Name;
 	public float Depth;
 }

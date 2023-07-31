@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Units/Execution/RigUnit_Collection.h")]
 ///<summary>Returns an array of relative parent indices for each item. Several options here</summary>
+[CppInclude("Units/Execution/RigUnit_Collection.h")]
 public partial struct FRigUnit_CollectionGetParentIndicesItemArray {
-// RigUnit_CollectionGetParentIndicesItemArray
 	public TArray<FRigElementKey> Items;
 	public TArray<int> ParentIndices;
 }

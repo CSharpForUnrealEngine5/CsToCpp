@@ -1,9 +1,8 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Framework/MultiBox/ToolMenuBase.h")]
 public partial struct FCustomizedToolMenu {
-// CustomizedToolMenu
 	public string Name;
 	public TMap<string,FCustomizedToolMenuEntry> Entries;
 	public TMap<string,FCustomizedToolMenuSection> Sections;

@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Settings/LevelEditorPlaySettings.h")]
 ///<summary>Holds information about a screen resolution to be used for playing.</summary>
+[CppInclude("Settings/LevelEditorPlaySettings.h")]
 public partial struct FPlayScreenResolution {
-// PlayScreenResolution
 	public string Description;
 	public int Width;
 	public int Height;

@@ -1,8 +1,7 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("ToolTargets/VolumeComponentToolTarget.h")]
 ///<summary>Factory for UVolumeComponentToolTarget to be used by the target manager.</summary>
+[CppInclude("ToolTargets/VolumeComponentToolTarget.h")]
 public partial class UVolumeComponentToolTargetFactory : UToolTargetFactory {
-// VolumeComponentToolTargetFactory
 }

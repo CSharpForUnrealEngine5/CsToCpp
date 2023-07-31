@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("RigVMFunctions/Debug/RigVMFunction_DebugPrimitives.h")]
 ///<summary>Draws an arc in the viewport, can take in different min and max degrees</summary>
+[CppInclude("RigVMFunctions/Debug/RigVMFunction_DebugPrimitives.h")]
 public partial struct FRigVMFunction_DebugArcNoSpace {
-// RigVMFunction_DebugArcNoSpace
 	public FTransform Transform;
 	public FLinearColor Color;
 	public float Radius;

@@ -1,9 +1,8 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("MassObserverRegistry.h")]
 ///<summary>A wrapper type for a TMap to support having array-of-maps UPROPERTY members in UMassObserverRegistry</summary>
+[CppInclude("MassObserverRegistry.h")]
 public partial struct FMassEntityObserverClassesMap {
-// MassEntityObserverClassesMap
 	public TMap<UScriptStruct,FMassProcessorClassCollection> Container;
 }

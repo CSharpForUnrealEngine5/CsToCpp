@@ -1,9 +1,10 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Particles/Event/ParticleModuleEventReceiverBase.h")]
 public partial class UParticleModuleEventReceiverBase : UParticleModuleEventBase {
-// ParticleModuleEventReceiverBase
+	///<summary>The type of event that will generate the kill.</summary>
 	public EParticleEventType EventGeneratorType;
+	///<summary>The name of the emitter of interest for generating the event.</summary>
 	public string EventName;
 }

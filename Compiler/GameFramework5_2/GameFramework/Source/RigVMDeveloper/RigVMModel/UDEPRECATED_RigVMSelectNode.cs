@@ -1,8 +1,7 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("RigVMModel/Nodes/RigVMSelectNode.h")]
 ///<summary>A select node is used to select between multiple values</summary>
+[CppInclude("RigVMModel/Nodes/RigVMSelectNode.h")]
 public partial class UDEPRECATED_RigVMSelectNode : URigVMTemplateNode {
-// RigVMSelectNode
 }

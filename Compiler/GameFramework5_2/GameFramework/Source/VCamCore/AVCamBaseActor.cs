@@ -1,10 +1,11 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("VCamBaseActor.h")]
 ///<summary>Utility base class which sets up a UVCamComponent with a Cine Camera.</summary>
+[CppInclude("VCamBaseActor.h")]
 public partial class AVCamBaseActor : ACineCameraActor {
-// VCamBaseActor
+	///<summary>GetVCamComponent</summary>
 	public  UVCamComponent GetVCamComponent() { return default; }
+	///<summary>VCamComponent</summary>
 	public UVCamComponent VCamComponent;
 }

@@ -1,11 +1,13 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("EnvironmentQuery/Generators/EnvQueryGenerator_PathingGrid.h")]
 ///<summary>Navigation grid, generates points on navmesh</summary>
+[CppInclude("EnvironmentQuery/Generators/EnvQueryGenerator_PathingGrid.h")]
 public partial class UEnvQueryGenerator_PathingGrid : UEnvQueryGenerator_SimpleGrid {
-// EnvQueryGenerator_PathingGrid
+	///<summary>pathfinding direction</summary>
 	public FAIDataProviderBoolValue PathToItem;
+	///<summary>navigation filter to use in pathfinding</summary>
 	public UClass NavigationFilter;
+	///<summary>multiplier for max distance between point and context</summary>
 	public FAIDataProviderFloatValue ScanRangeMultiplier;
 }

@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
+///<summary>The register represents an address with the VM&#39;s memory. Within a register</summary>
 [CppInclude("RigVMCore/RigVMMemoryDeprecated.h")]
-///<summary>The register represents an address with the VM's memory. Within a register</summary>
 public partial struct FRigVMRegister {
-// RigVMRegister
 	public ERigVMRegisterType Type;
 	public uint ByteIndex;
 	public ushort ElementSize;

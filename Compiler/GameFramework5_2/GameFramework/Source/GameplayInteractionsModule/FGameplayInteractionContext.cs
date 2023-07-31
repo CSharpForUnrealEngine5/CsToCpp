@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("GameplayInteractionContext.h")]
 ///<summary>Struct that holds data required to perform the interaction</summary>
+[CppInclude("GameplayInteractionContext.h")]
 public partial struct FGameplayInteractionContext {
-// GameplayInteractionContext
 	public FStateTreeInstanceData StateTreeInstanceData;
 	public FSmartObjectClaimHandle ClaimedHandle;
 	public FGameplayInteractionAbortContext AbortContext;

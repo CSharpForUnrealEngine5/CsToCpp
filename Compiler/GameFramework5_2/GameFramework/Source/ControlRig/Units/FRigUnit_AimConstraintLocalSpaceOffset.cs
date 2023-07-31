@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Units/Highlevel/Hierarchy/RigUnit_AimBone.h")]
 ///<summary>Orients an item such that its aim axis points towards a global target.</summary>
+[CppInclude("Units/Highlevel/Hierarchy/RigUnit_AimBone.h")]
 public partial struct FRigUnit_AimConstraintLocalSpaceOffset {
-// RigUnit_AimConstraintLocalSpaceOffset
 	public FRigElementKey Child;
 	public bool bMaintainOffset;
 	public FFilterOptionPerAxis Filter;

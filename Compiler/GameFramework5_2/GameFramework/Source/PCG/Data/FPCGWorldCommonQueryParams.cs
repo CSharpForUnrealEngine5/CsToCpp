@@ -1,9 +1,8 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Data/PCGWorldData.h")]
 public partial struct FPCGWorldCommonQueryParams {
-// PCGWorldCommonQueryParams
 	public bool bIgnorePCGHits;
 	public bool bIgnoreSelfHits;
 	public ECollisionChannel CollisionChannel;

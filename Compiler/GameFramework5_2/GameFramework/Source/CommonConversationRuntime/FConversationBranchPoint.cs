@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("ConversationTypes.h")]
 ///<summary>You can think of the FConversationBranchPoint as the owner of FClientConversationOptionEntry.</summary>
+[CppInclude("ConversationTypes.h")]
 public partial struct FConversationBranchPoint {
-// ConversationBranchPoint
 	public TArray<FConversationNodeHandle> ReturnScopeStack;
 	public FClientConversationOptionEntry ClientChoice;
 }

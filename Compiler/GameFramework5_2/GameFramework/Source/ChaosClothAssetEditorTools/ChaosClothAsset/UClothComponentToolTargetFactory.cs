@@ -1,8 +1,7 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("ChaosClothAsset/ClothComponentToolTarget.h")]
 ///<summary>Factory for UClothComponentToolTarget to be used by the target manager.</summary>
+[CppInclude("ChaosClothAsset/ClothComponentToolTarget.h")]
 public partial class UClothComponentToolTargetFactory : UToolTargetFactory {
-// ClothComponentToolTargetFactory
 }

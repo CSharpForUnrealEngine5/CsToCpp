@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("DestructibleMesh.h")]
 ///<summary>Parameters that pertain to chunk debris-level settings.</summary>
+[CppInclude("DestructibleMesh.h")]
 public partial struct FDestructibleDebrisParameters {
-// DestructibleDebrisParameters
 	public float DebrisLifetimeMin;
 	public float DebrisLifetimeMax;
 	public float DebrisMaxSeparationMin;

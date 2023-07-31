@@ -1,11 +1,14 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Factories/DMXGDTFImportUI.h")]
 public partial class UDMXGDTFImportUI : UObject {
-// DMXGDTFImportUI
+	///<summary>bUseSubDirectory</summary>
 	public bool bUseSubDirectory;
+	///<summary>bImportXML</summary>
 	public bool bImportXML;
+	///<summary>bImportTextures</summary>
 	public bool bImportTextures;
+	///<summary>bImportModels</summary>
 	public bool bImportModels;
 }

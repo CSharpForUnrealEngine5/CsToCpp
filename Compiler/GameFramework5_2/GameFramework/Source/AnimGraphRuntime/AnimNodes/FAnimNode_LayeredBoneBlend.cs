@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("AnimNodes/AnimNode_LayeredBoneBlend.h")]
 ///<summary>Layered blend (per bone); has dynamic number of blendposes that can blend per different bone sets</summary>
+[CppInclude("AnimNodes/AnimNode_LayeredBoneBlend.h")]
 public partial struct FAnimNode_LayeredBoneBlend {
-// AnimNode_LayeredBoneBlend
 	public FPoseLink BasePose;
 	public TArray<FPoseLink> BlendPoses;
 	public ELayeredBoneBlendMode BlendMode;

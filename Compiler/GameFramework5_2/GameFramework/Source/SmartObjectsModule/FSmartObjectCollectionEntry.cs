@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("SmartObjectPersistentCollection.h")]
 ///<summary>Struct representing a unique registered component in the collection actor</summary>
+[CppInclude("SmartObjectPersistentCollection.h")]
 public partial struct FSmartObjectCollectionEntry {
-// SmartObjectCollectionEntry
 	public FGameplayTagContainer Tags;
 	public FSoftObjectPath Path;
 	public FTransform Transform;

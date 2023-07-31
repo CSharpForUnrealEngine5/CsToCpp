@@ -1,9 +1,8 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("NiagaraEditorSettings.h")]
 public partial struct FNiagaraNamespaceMetadata {
-// NiagaraNamespaceMetadata
 	public TArray<string> Namespaces;
 	public string RequiredNamespaceModifier;
 	public string DisplayName;

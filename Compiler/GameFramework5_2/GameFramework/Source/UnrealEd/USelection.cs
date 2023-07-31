@@ -1,9 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Selection.h")]
 ///<summary>Manages selections of objects.</summary>
+[CppInclude("Selection.h")]
 public partial class USelection : UObject {
-// Selection
+	///<summary>Underlying element selection set (if any).</summary>
 	public UTypedElementSelectionSet ElementSelectionSet;
 }

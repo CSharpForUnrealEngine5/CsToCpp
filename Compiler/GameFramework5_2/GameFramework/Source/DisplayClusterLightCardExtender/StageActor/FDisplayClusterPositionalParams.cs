@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("StageActor/DisplayClusterPositionalParams.h")]
 ///<summary>Positional location and rotation parameters for use with nDisplay stage actors.</summary>
+[CppInclude("StageActor/DisplayClusterPositionalParams.h")]
 public partial struct FDisplayClusterPositionalParams {
-// DisplayClusterPositionalParams
 	public double DistanceFromCenter;
 	public double Longitude;
 	public double Latitude;

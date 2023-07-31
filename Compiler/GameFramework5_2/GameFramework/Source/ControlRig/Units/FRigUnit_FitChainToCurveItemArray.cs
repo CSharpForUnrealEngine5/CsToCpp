@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Units/Highlevel/Hierarchy/RigUnit_FitChainToCurve.h")]
 ///<summary>Fits a given chain to a four point bezier curve.</summary>
+[CppInclude("Units/Highlevel/Hierarchy/RigUnit_FitChainToCurve.h")]
 public partial struct FRigUnit_FitChainToCurveItemArray {
-// RigUnit_FitChainToCurveItemArray
 	public TArray<FRigElementKey> Items;
 	public FRigVMFourPointBezier Bezier;
 	public EControlRigCurveAlignment Alignment;

@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("RigVMModel/RigVMControllerActions.h")]
 ///<summary>An action marking a function as public/private.</summary>
+[CppInclude("RigVMModel/RigVMControllerActions.h")]
 public partial struct FRigVMMarkFunctionPublicAction {
-// RigVMMarkFunctionPublicAction
 	public string FunctionName;
 	public bool bIsPublic;
 }

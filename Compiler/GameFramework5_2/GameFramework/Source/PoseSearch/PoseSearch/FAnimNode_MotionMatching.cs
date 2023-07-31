@@ -1,9 +1,8 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("PoseSearch/AnimNode_MotionMatching.h")]
 public partial struct FAnimNode_MotionMatching {
-// AnimNode_MotionMatching
 	public FPoseLink Source;
 	public UPoseSearchSearchableAsset Searchable;
 	public FGameplayTagContainer ActiveTagsContainer;

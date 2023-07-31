@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Data/PCGSplineStruct.h")]
 ///<summary>Subset of the Spline Component API in a standalone struct</summary>
+[CppInclude("Data/PCGSplineStruct.h")]
 public partial struct FPCGSplineStruct {
-// PCGSplineStruct
 	public FSplineCurves SplineCurves;
 	public FTransform Transform;
 	public FVector DefaultUpVector;

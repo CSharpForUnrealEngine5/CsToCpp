@@ -1,9 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("FloatRangeColumn.h")]
 ///<summary>deprecated class version to support upgrading old data</summary>
+[CppInclude("FloatRangeColumn.h")]
 public partial class UDEPRECATED_ChooserParameterFloat_ContextProperty : UObject {
-// ChooserParameterFloat_ContextProperty
+	///<summary>PropertyBindingChain</summary>
 	public TArray<string> PropertyBindingChain;
 }

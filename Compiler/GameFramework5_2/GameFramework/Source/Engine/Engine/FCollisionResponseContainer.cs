@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Engine/EngineTypes.h")]
 ///<summary>Container for indicating a set of collision channels that this object will collide with.</summary>
+[CppInclude("Engine/EngineTypes.h")]
 public partial struct FCollisionResponseContainer {
-// CollisionResponseContainer
 	public ECollisionResponse WorldStatic;
 	public ECollisionResponse WorldDynamic;
 	public ECollisionResponse Pawn;

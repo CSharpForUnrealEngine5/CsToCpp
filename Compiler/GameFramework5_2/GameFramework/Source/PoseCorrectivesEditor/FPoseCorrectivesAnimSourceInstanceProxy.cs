@@ -1,8 +1,7 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("PoseCorrectivesAnimInstanceProxy.h")]
 ///<summary>Proxy override for this UAnimInstance-derived class</summary>
+[CppInclude("PoseCorrectivesAnimInstanceProxy.h")]
 public partial struct FPoseCorrectivesAnimSourceInstanceProxy {
-// PoseCorrectivesAnimSourceInstanceProxy
 }

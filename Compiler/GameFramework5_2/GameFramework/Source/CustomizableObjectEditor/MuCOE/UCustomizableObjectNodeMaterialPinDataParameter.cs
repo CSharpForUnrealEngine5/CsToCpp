@@ -1,9 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("MuCOE/Nodes/CustomizableObjectNodeMaterial.h")]
 ///<summary>Base class for all Material Parameters.</summary>
+[CppInclude("MuCOE/Nodes/CustomizableObjectNodeMaterial.h")]
 public partial class UCustomizableObjectNodeMaterialPinDataParameter : UCustomizableObjectNodePinData {
-// CustomizableObjectNodeMaterialPinDataParameter
+	///<summary>Texture Parameter Id.</summary>
 	public FGuid ParameterId;
 }

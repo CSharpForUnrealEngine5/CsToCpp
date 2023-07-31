@@ -1,9 +1,8 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Engine/SkeletalMeshLODSettings.h")]
 public partial struct FSkeletalMeshLODGroupSettings {
-// SkeletalMeshLODGroupSettings
 	public FPerPlatformFloat ScreenSize;
 	public float LODHysteresis;
 	public EBoneFilterActionOption BoneFilterActionOption;

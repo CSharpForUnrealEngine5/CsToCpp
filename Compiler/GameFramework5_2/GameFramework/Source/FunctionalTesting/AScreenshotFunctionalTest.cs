@@ -1,9 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("ScreenshotFunctionalTest.h")]
 ///<summary>No UI</summary>
+[CppInclude("ScreenshotFunctionalTest.h")]
 public partial class AScreenshotFunctionalTest : AScreenshotFunctionalTestBase {
-// ScreenshotFunctionalTest
+	///<summary>Tests not relying on temporal effects can force a camera cut to flush stale data</summary>
 	public bool bCameraCutOnScreenshotPrep;
 }

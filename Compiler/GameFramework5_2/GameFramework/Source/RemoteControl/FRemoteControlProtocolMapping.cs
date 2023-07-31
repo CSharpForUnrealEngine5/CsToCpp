@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("RemoteControlProtocolBinding.h")]
 ///<summary>* Mapping of the range of the values for the protocol</summary>
+[CppInclude("RemoteControlProtocolBinding.h")]
 public partial struct FRemoteControlProtocolMapping {
-// RemoteControlProtocolMapping
 	public FGuid Id;
 	public TArray<byte> InterpolationRangePropertyData;
 	public TArray<byte> InterpolationMappingPropertyData;

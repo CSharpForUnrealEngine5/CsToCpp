@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("WorldPartition/WorldPartitionBlueprintLibrary.h")]
 ///<summary>Snapshot of an actor descriptor, which represents the state of an actor on disk.</summary>
+[CppInclude("WorldPartition/WorldPartitionBlueprintLibrary.h")]
 public partial struct FActorDesc {
-// ActorDesc
 	public FGuid Guid;
 	public FSoftObjectPath Class;
 	public string Name;

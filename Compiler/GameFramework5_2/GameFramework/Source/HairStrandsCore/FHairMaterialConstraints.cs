@@ -1,9 +1,8 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("GroomAssetPhysics.h")]
 public partial struct FHairMaterialConstraints {
-// HairMaterialConstraints
 	public FHairBendConstraint BendConstraint;
 	public FHairStretchConstraint StretchConstraint;
 	public FHairCollisionConstraint CollisionConstraint;

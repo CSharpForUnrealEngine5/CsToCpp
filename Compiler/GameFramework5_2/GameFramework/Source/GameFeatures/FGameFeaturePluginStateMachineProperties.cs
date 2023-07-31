@@ -1,9 +1,8 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("GameFeaturePluginStateMachine.h")]
 ///<summary>The common properties that can be accessed by the states of the state machine</summary>
+[CppInclude("GameFeaturePluginStateMachine.h")]
 public partial struct FGameFeaturePluginStateMachineProperties {
-// GameFeaturePluginStateMachineProperties
 	public UGameFeatureData GameFeatureData;
 }

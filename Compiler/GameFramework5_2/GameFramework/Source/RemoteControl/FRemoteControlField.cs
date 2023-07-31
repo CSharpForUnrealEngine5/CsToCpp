@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("RemoteControlField.h")]
 ///<summary>Represents a property or function that has been exposed to remote control.</summary>
+[CppInclude("RemoteControlField.h")]
 public partial struct FRemoteControlField {
-// RemoteControlField
 	public EExposedFieldType FieldType;
 	public string FieldName;
 	public FRCFieldPathInfo FieldPathInfo;

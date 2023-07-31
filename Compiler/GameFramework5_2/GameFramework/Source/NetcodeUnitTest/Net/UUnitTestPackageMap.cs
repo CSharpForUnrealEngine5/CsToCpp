@@ -1,9 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Net/UnitTestPackageMap.h")]
 ///<summary>Package map override, for blocking the creation of actor channels for specific actors (by detecting the actor class being created)</summary>
+[CppInclude("Net/UnitTestPackageMap.h")]
 public partial class UUnitTestPackageMap : UPackageMapClient {
-// UnitTestPackageMap
+	///<summary>Cached reference to the minimal client that owns this package map</summary>
 	public UMinimalClient MinClient;
 }

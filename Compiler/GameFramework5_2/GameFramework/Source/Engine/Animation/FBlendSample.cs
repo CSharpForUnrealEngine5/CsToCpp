@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Animation/BlendSpace.h")]
 ///<summary>Sample data</summary>
+[CppInclude("Animation/BlendSpace.h")]
 public partial struct FBlendSample {
-// BlendSample
 	public UAnimSequence Animation;
 	public FVector SampleValue;
 	public float RateScale;

@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Engine/BrushBuilder.h")]
 ///<summary>Internal state, not accessible to script.</summary>
+[CppInclude("Engine/BrushBuilder.h")]
 public partial struct FBuilderPoly {
-// BuilderPoly
 	public TArray<int> VertexIndices;
 	public int Direction;
 	public string ItemName;

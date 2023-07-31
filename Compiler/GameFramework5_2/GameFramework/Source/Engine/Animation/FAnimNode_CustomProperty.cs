@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
+///<summary>Custom property node that you&#39;d like to expand pin by reflecting internal instance (we call TargetInstance here)</summary>
 [CppInclude("Animation/AnimNode_CustomProperty.h")]
-///<summary>Custom property node that you'd like to expand pin by reflecting internal instance (we call TargetInstance here)</summary>
 public partial struct FAnimNode_CustomProperty {
-// AnimNode_CustomProperty
 	public TArray<string> SourcePropertyNames;
 	public TArray<string> DestPropertyNames;
 	public UObject TargetInstance;

@@ -1,11 +1,13 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("PhononGeometryComponent.h")]
 ///<summary>Phonon Geometry components are used to tag an actor as containing geometry relevant to acoustics calculations.</summary>
+[CppInclude("PhononGeometryComponent.h")]
 public partial class UPhononGeometryComponent : USceneComponent {
-// PhononGeometryComponent
+	///<summary>Whether or not to export all actors attached to this actor.</summary>
 	public bool ExportAllChildren;
+	///<summary>The number of vertices exported to Steam Audio.</summary>
 	public uint NumVertices;
+	///<summary>The number of triangles exported to Steam Audio.</summary>
 	public uint NumTriangles;
 }

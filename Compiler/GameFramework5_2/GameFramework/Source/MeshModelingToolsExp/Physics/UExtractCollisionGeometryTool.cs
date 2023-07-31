@@ -1,14 +1,19 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Physics/ExtractCollisionGeometryTool.h")]
 ///<summary>Mesh Inspector Tool for visualizing mesh information</summary>
+[CppInclude("Physics/ExtractCollisionGeometryTool.h")]
 public partial class UExtractCollisionGeometryTool : USingleSelectionMeshEditingTool {
-// ExtractCollisionGeometryTool
+	///<summary>Property set for type of output object (StaticMesh, Volume, etc)</summary>
 	public UCreateMeshObjectTypeProperties OutputTypeProperties;
+	///<summary>Settings</summary>
 	public UExtractCollisionToolProperties Settings;
+	///<summary>VizSettings</summary>
 	public UCollisionGeometryVisualizationProperties VizSettings;
+	///<summary>ObjectProps</summary>
 	public UPhysicsObjectToolPropertySet ObjectProps;
+	///<summary>PreviewElements</summary>
 	public UPreviewGeometry PreviewElements;
+	///<summary>PreviewMesh</summary>
 	public UPreviewMesh PreviewMesh;
 }

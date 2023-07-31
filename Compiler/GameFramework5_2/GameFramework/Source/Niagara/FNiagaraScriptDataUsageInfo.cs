@@ -1,9 +1,8 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("NiagaraCommon.h")]
 ///<summary>Struct containing usage information about a script. Things such as whether it reads attribute data, reads or writes events data etc.</summary>
+[CppInclude("NiagaraCommon.h")]
 public partial struct FNiagaraScriptDataUsageInfo {
-// NiagaraScriptDataUsageInfo
 	public bool bReadsAttributeData;
 }

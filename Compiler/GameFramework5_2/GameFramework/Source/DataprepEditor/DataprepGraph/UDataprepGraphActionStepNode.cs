@@ -1,10 +1,11 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("DataprepGraph/DataprepGraphActionNode.h")]
 ///<summary>The UDataprepGraphActionStepNode class is used as the UEdGraphNode associated</summary>
+[CppInclude("DataprepGraph/DataprepGraphActionNode.h")]
 public partial class UDataprepGraphActionStepNode : UEdGraphNode {
-// DataprepGraphActionStepNode
+	///<summary>DataprepActionAsset</summary>
 	public UDataprepActionAsset DataprepActionAsset;
+	///<summary>StepIndex</summary>
 	public int StepIndex;
 }

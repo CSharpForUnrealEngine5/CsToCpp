@@ -1,8 +1,7 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Camera/CameraShakeBase.h")]
 ///<summary>The result of a camera shake update.</summary>
+[CppInclude("Camera/CameraShakeBase.h")]
 public partial struct FCameraShakeUpdateResult {
-// CameraShakeUpdateResult
 }

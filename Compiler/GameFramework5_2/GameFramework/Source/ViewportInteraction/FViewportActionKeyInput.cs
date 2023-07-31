@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("ViewportInteractionTypes.h")]
 ///<summary>Represents a generic action</summary>
+[CppInclude("ViewportInteractionTypes.h")]
 public partial struct FViewportActionKeyInput {
-// ViewportActionKeyInput
 	public string ActionType;
 	public EInputEvent Event;
 	public bool bIsInputCaptured;

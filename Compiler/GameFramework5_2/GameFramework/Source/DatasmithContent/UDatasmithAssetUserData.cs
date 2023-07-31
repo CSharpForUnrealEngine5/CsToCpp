@@ -1,10 +1,11 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("DatasmithAssetUserData.h")]
 ///<summary>Asset user data that can be used with Datasmith on Actors and other objects</summary>
+[CppInclude("DatasmithAssetUserData.h")]
 public partial class UDatasmithAssetUserData : UAssetUserData {
-// DatasmithAssetUserData
+	///<summary>MetaData</summary>
 	public TMap<string,string> MetaData;
+	///<summary>ObjectTemplates</summary>
 	public TMap<UClass,UDatasmithObjectTemplate> ObjectTemplates;
 }

@@ -1,9 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("OptimusActionStack.h")]
 ///<summary>Base action class</summary>
+[CppInclude("OptimusActionStack.h")]
 public partial class UOptimusActionStack : UObject {
-// OptimusActionStack
+	///<summary>TransactedActionIndex</summary>
 	public int TransactedActionIndex;
 }

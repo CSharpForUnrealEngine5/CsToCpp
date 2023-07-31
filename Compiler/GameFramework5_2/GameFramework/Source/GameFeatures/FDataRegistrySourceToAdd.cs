@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("GameFeatureAction_DataRegistrySource.h")]
 ///<summary>Defines which source assets to add and conditions for adding</summary>
+[CppInclude("GameFeatureAction_DataRegistrySource.h")]
 public partial struct FDataRegistrySourceToAdd {
-// DataRegistrySourceToAdd
 	public string RegistryToAddTo;
 	public int AssetPriority;
 	public bool bClientSource;

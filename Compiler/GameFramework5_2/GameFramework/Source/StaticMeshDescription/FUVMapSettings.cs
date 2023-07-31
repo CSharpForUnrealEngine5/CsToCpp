@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("UVMapSettings.h")]
 ///<summary>UV map generation settings that are exposed to the user for scripting and through the editor</summary>
+[CppInclude("UVMapSettings.h")]
 public partial struct FUVMapSettings {
-// UVMapSettings
 	public FVector Size;
 	public FVector2D UVTile;
 	public FVector Position;

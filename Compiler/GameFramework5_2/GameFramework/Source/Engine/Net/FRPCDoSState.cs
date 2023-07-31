@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Net/RPCDoSDetection.h")]
 ///<summary>Stores the RPC DoS detection state (either settings from the config file, or the active DDoS detection state)</summary>
+[CppInclude("Net/RPCDoSDetection.h")]
 public partial struct FRPCDoSState {
-// RPCDoSState
 	public bool bLogEscalate;
 	public bool bSendEscalateAnalytics;
 	public bool bKickPlayer;

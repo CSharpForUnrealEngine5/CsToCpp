@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("StageMonitorUtils.h")]
 ///<summary>Message containing information about frame timings.</summary>
+[CppInclude("StageMonitorUtils.h")]
 public partial struct FFramePerformanceProviderMessage {
-// FramePerformanceProviderMessage
 	public EStageMonitorNodeStatus Status;
 	public string AssetInStatus;
 	public float AverageFPS;

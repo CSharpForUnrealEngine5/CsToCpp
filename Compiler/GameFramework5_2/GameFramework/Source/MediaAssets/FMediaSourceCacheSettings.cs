@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("MediaSource.h")]
 ///<summary>Cache settings to pass to the player.</summary>
+[CppInclude("MediaSource.h")]
 public partial struct FMediaSourceCacheSettings {
-// MediaSourceCacheSettings
 	public bool bOverride;
 	public float TimeToLookAhead;
 }

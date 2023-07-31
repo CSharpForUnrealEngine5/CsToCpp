@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("StaticParameterSet.h")]
 ///<summary>Contains all the information needed to identify a single permutation of static parameters.</summary>
+[CppInclude("StaticParameterSet.h")]
 public partial struct FStaticParameterSet {
-// StaticParameterSet
 	public FStaticParameterSetEditorOnlyData EditorOnly;
 	public TArray<FStaticMaterialLayersParameter> MaterialLayersParameters_DEPRECATED;
 	public TArray<FStaticSwitchParameter> StaticSwitchParameters_DEPRECATED;

@@ -1,9 +1,10 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("WaterBodyOceanActor.h")]
 public partial class UDEPRECATED_OceanGenerator : UDEPRECATED_WaterBodyGenerator {
-// OceanGenerator
+	///<summary>CollisionBoxes</summary>
 	public TArray<UOceanBoxCollisionComponent> CollisionBoxes;
+	///<summary>CollisionHullSets</summary>
 	public TArray<UOceanCollisionComponent> CollisionHullSets;
 }

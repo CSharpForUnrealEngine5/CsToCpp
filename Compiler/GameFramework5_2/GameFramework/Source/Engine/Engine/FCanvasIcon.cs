@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Engine/Canvas.h")]
 ///<summary>Holds texture information with UV coordinates as well.</summary>
+[CppInclude("Engine/Canvas.h")]
 public partial struct FCanvasIcon {
-// CanvasIcon
 	public UTexture Texture;
 	public float U;
 	public float V;

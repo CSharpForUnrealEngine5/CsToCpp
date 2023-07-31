@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("MVVMPropertyPath.h")]
 ///<summary>A single item in a Property Path</summary>
+[CppInclude("MVVMPropertyPath.h")]
 public partial struct FMVVMBlueprintFieldPath {
-// MVVMBlueprintFieldPath
 	public FMemberReference BindingReference;
 	public EBindingKind BindingKind;
 }

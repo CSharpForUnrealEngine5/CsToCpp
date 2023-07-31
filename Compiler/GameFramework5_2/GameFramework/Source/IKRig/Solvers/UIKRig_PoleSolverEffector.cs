@@ -1,10 +1,12 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Solvers/IKRig_PoleSolver.h")]
 public partial class UIKRig_PoleSolverEffector : UObject {
-// IKRig_PoleSolverEffector
+	///<summary>GoalName</summary>
 	public string GoalName;
+	///<summary>BoneName</summary>
 	public string BoneName;
+	///<summary>Blend the effector on/off. Range is 0-1. Default is 1.0.</summary>
 	public float Alpha;
 }

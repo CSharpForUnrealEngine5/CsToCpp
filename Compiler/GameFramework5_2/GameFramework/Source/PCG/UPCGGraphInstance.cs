@@ -1,9 +1,10 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("PCGGraph.h")]
 public partial class UPCGGraphInstance : UPCGGraphInterface {
-// PCGGraphInstance
+	///<summary>Graph</summary>
 	public UPCGGraphInterface Graph;
+	///<summary>ParametersOverrides</summary>
 	public FPCGOverrideInstancedPropertyBag ParametersOverrides;
 }

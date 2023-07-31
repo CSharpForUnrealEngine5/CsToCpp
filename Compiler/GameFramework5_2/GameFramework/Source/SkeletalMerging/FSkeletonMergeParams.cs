@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("SkeletalMergingLibrary.h")]
 ///<summary>Struct containing all parameters used to perform a Skeleton merge.</summary>
+[CppInclude("SkeletalMergingLibrary.h")]
 public partial struct FSkeletonMergeParams {
-// SkeletonMergeParams
 	public TArray<USkeleton> SkeletonsToMerge;
 	public bool bMergeSockets;
 	public bool bMergeVirtualBones;

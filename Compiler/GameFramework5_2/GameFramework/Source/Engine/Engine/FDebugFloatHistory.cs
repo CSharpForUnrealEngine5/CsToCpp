@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Engine/EngineTypes.h")]
 ///<summary>Structure for recording float values and displaying them as an Histogram through DrawDebugFloatHistory.</summary>
+[CppInclude("Engine/EngineTypes.h")]
 public partial struct FDebugFloatHistory {
-// DebugFloatHistory
 	public TArray<float> Samples;
 	public int MaxSamples;
 	public float MinValue;

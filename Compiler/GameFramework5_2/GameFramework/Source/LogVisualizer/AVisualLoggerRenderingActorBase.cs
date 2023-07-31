@@ -1,8 +1,7 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("VisualLoggerRenderingActorBase.h")]
 ///<summary>Transient actor used to draw visual logger data on level</summary>
+[CppInclude("VisualLoggerRenderingActorBase.h")]
 public partial class AVisualLoggerRenderingActorBase : AActor {
-// VisualLoggerRenderingActorBase
 }

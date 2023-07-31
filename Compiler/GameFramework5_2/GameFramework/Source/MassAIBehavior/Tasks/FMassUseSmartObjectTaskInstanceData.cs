@@ -1,9 +1,8 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Tasks/MassUseSmartObjectTask.h")]
 ///<summary>Task to tell an entity to start using a claimed smart object.</summary>
+[CppInclude("Tasks/MassUseSmartObjectTask.h")]
 public partial struct FMassUseSmartObjectTaskInstanceData {
-// MassUseSmartObjectTaskInstanceData
 	public FSmartObjectClaimHandle ClaimedSlot;
 }

@@ -1,8 +1,7 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Animation/AnimBlueprintGeneratedClass.h")]
 ///<summary>This structure represents debugging information for a frame snapshot</summary>
+[CppInclude("Animation/AnimBlueprintGeneratedClass.h")]
 public partial struct FAnimationFrameSnapshot {
-// AnimationFrameSnapshot
 }

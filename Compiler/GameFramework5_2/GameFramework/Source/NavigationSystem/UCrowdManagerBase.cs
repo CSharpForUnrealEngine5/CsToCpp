@@ -1,8 +1,7 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("CrowdManagerBase.h")]
 ///<summary>Base class for Crowd Managers. If you want to create a custom crowd manager</summary>
+[CppInclude("CrowdManagerBase.h")]
 public partial class UCrowdManagerBase : UObject {
-// CrowdManagerBase
 }

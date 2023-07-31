@@ -1,9 +1,8 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("UserDefinedStructure/UserDefinedStructEditorData.h")]
 public partial struct FStructVariableDescription {
-// StructVariableDescription
 	public string VarName;
 	public FGuid VarGuid;
 	public string FriendlyName;

@@ -1,12 +1,16 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("SelectionSystem/DataprepIntegerFilter.h")]
 public partial class UDataprepIntegerFilter : UDataprepFilter {
-// DataprepIntegerFilter
+	///<summary>The source of int selected by the user</summary>
 	public UDataprepIntegerFetcher IntFetcher;
+	///<summary>The matching criteria used when checking if a fetched value can pass the filter</summary>
 	public EDataprepIntegerMatchType IntegerMatchingCriteria;
+	///<summary>The value to use when doing the comparison against the fetched value</summary>
 	public int EqualValue;
+	///<summary>A value used for the in-between check</summary>
 	public int FromValue;
+	///<summary>A value used for the in-between check</summary>
 	public int ToValue;
 }

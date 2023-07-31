@@ -1,10 +1,11 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("RootMotionModifier.h")]
 ///<summary>URootMotionModifier_Scale</summary>
+[CppInclude("RootMotionModifier.h")]
 public partial class URootMotionModifier_Scale : URootMotionModifier {
-// RootMotionModifier_Scale
+	///<summary>Vector used to scale each component of the translation</summary>
 	public FVector Scale;
+	///<summary>AddRootMotionModifierScale</summary>
 	public static URootMotionModifier_Scale AddRootMotionModifierScale(UMotionWarpingComponent InMotionWarpingComp,UAnimSequenceBase InAnimation,float InStartTime,float InEndTime,FVector InScale/*=new FVector(1.0f)*/) { return default; }
 }

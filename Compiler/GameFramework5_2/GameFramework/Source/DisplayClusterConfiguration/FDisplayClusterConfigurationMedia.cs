@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("DisplayClusterConfigurationTypes_Media.h")]
 ///<summary>* Media settings for viewports and backbuffer</summary>
+[CppInclude("DisplayClusterConfigurationTypes_Media.h")]
 public partial struct FDisplayClusterConfigurationMedia {
-// DisplayClusterConfigurationMedia
 	public bool bEnable;
 	public UMediaSource MediaSource;
 	public UMediaOutput MediaOutput;

@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Units/Highlevel/Hierarchy/RigUnit_SlideChain.h")]
 ///<summary>Slides an existing chain along itself with control over extrapolation.</summary>
+[CppInclude("Units/Highlevel/Hierarchy/RigUnit_SlideChain.h")]
 public partial struct FRigUnit_SlideChain {
-// RigUnit_SlideChain
 	public string StartBone;
 	public string EndBone;
 	public float SlideAmount;

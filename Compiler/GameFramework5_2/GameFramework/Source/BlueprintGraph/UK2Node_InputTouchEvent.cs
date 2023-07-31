@@ -1,11 +1,14 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("K2Node_InputTouchEvent.h")]
 public partial class UK2Node_InputTouchEvent : UK2Node_Event {
-// K2Node_InputTouchEvent
+	///<summary>InputKeyEvent</summary>
 	public EInputEvent InputKeyEvent;
+	///<summary>bConsumeInput</summary>
 	public bool bConsumeInput;
+	///<summary>bExecuteWhenPaused</summary>
 	public bool bExecuteWhenPaused;
+	///<summary>bOverrideParentBinding</summary>
 	public bool bOverrideParentBinding;
 }

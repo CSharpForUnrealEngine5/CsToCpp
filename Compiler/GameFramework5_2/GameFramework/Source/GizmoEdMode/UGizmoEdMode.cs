@@ -1,9 +1,10 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("GizmoEdMode.h")]
 public partial class UGizmoEdMode : UEdMode {
-// GizmoEdMode
+	///<summary>GizmoFactories</summary>
 	public TArray<object /*GizmoFactories*/> GizmoFactories;
+	///<summary>InteractiveGizmos</summary>
 	public TArray<UInteractiveGizmo> InteractiveGizmos;
 }

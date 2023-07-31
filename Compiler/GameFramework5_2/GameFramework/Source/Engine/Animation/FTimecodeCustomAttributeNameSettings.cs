@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Animation/CustomAttributes.h")]
 ///<summary>Settings that identify the names of custom attributes that represent the individual components of a timecode and a subframe along with a take name.</summary>
+[CppInclude("Animation/CustomAttributes.h")]
 public partial struct FTimecodeCustomAttributeNameSettings {
-// TimecodeCustomAttributeNameSettings
 	public string HourAttributeName;
 	public string MinuteAttributeName;
 	public string SecondAttributeName;

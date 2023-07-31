@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("ChaosRemovalEventFilter.h")]
 ///<summary>A Removal event data structure.</summary>
+[CppInclude("ChaosRemovalEventFilter.h")]
 public partial struct FChaosRemovalEventData {
-// ChaosRemovalEventData
 	public FVector Location;
 	public float Mass;
 	public int ParticleIndex;

@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("AnimationBudgetAllocatorParameters.h")]
 ///<summary>Parameter block used to control the behavior of the budget allocator</summary>
+[CppInclude("AnimationBudgetAllocatorParameters.h")]
 public partial struct FAnimationBudgetAllocatorParameters {
-// AnimationBudgetAllocatorParameters
 	public float BudgetInMs;
 	public float MinQuality;
 	public int MaxTickRate;

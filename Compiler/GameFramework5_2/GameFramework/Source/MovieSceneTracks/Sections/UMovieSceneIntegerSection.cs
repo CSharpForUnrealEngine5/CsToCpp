@@ -1,9 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Sections/MovieSceneIntegerSection.h")]
 ///<summary>A single integer section.</summary>
+[CppInclude("Sections/MovieSceneIntegerSection.h")]
 public partial class UMovieSceneIntegerSection : UMovieSceneSection {
-// MovieSceneIntegerSection
+	///<summary>Ordered curve data</summary>
 	public FMovieSceneIntegerChannel IntegerCurve;
 }

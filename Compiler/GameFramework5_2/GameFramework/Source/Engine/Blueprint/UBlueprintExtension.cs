@@ -1,8 +1,7 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Blueprint/BlueprintExtension.h")]
 ///<summary>Per-instance extension object that can be added to UBlueprint::Extensions in order to augment built-in blueprint functionality</summary>
+[CppInclude("Blueprint/BlueprintExtension.h")]
 public partial class UBlueprintExtension : UObject {
-// BlueprintExtension
 }

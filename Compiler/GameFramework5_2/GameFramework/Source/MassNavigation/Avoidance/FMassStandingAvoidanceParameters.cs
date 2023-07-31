@@ -1,9 +1,8 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Avoidance/MassAvoidanceFragments.h")]
 public partial struct FMassStandingAvoidanceParameters {
-// MassStandingAvoidanceParameters
 	public float GhostObstacleDetectionDistance;
 	public float GhostToTargetMaxDeviation;
 	public float GhostSteeringReactionTime;

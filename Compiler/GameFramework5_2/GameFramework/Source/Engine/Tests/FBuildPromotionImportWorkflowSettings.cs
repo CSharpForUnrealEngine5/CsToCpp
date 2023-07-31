@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Tests/AutomationTestSettings.h")]
 ///<summary>Holds settings for the import workflow stage of the build promotion test</summary>
+[CppInclude("Tests/AutomationTestSettings.h")]
 public partial struct FBuildPromotionImportWorkflowSettings {
-// BuildPromotionImportWorkflowSettings
 	public FEditorImportWorkflowDefinition Diffuse;
 	public FEditorImportWorkflowDefinition Normal;
 	public FEditorImportWorkflowDefinition StaticMesh;

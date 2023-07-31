@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("DisasterRecoverySessionInfo.h")]
 ///<summary>Information about a single session info.</summary>
+[CppInclude("DisasterRecoverySessionInfo.h")]
 public partial struct FDisasterRecoverySession {
-// DisasterRecoverySession
 	public FGuid RepositoryId;
 	public string RepositoryRootDir;
 	public string SessionName;

@@ -1,8 +1,7 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Field/FieldSystemObjects.h")]
 ///<summary>Field Evaluation</summary>
+[CppInclude("Field/FieldSystemObjects.h")]
 public partial class UFieldNodeBase : UActorComponent {
-// FieldNodeBase
 }

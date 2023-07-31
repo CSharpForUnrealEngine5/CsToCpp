@@ -1,8 +1,7 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("ControlRigValidationPass.h")]
 ///<summary>todo DECLARE_DELEGATE_TwoParams(FControlRigValidationControlRigChangedDelegate, UControlRigValidator*, UControlRig*);</summary>
+[CppInclude("ControlRigValidationPass.h")]
 public partial struct FControlRigValidationContext {
-// ControlRigValidationContext
 }

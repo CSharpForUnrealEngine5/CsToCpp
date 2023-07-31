@@ -1,9 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Materials/MaterialExpressionAbsorptionMediumMaterialOutput.h")]
 ///<summary>Material output expression for setting absorption properties of solid refractive glass (for the Path Tracer Only).</summary>
+[CppInclude("Materials/MaterialExpressionAbsorptionMediumMaterialOutput.h")]
 public partial class UMaterialExpressionAbsorptionMediumMaterialOutput : UMaterialExpressionCustomOutput {
-// MaterialExpressionAbsorptionMediumMaterialOutput
+	///<summary>Input for the transmittance color seen after travelling a distance of 100 units into the object. Valid range is [0,1].</summary>
 	public FExpressionInput TransmittanceColor;
 }

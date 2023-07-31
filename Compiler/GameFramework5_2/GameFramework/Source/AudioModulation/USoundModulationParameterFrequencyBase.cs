@@ -1,8 +1,7 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("SoundModulationParameter.h")]
 ///<summary>Modulation Parameter that scales normalized, unitless value to logarithmic frequency unit space.</summary>
+[CppInclude("SoundModulationParameter.h")]
 public partial class USoundModulationParameterFrequencyBase : USoundModulationParameter {
-// SoundModulationParameterFrequencyBase
 }

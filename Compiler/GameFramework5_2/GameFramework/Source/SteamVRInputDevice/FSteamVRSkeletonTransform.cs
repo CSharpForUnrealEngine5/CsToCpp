@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("SteamVRInputDeviceFunctionLibrary.h")]
 ///<summary>UE4 Bone definition of the SteamVR Skeleton</summary>
+[CppInclude("SteamVRInputDeviceFunctionLibrary.h")]
 public partial struct FSteamVRSkeletonTransform {
-// SteamVRSkeletonTransform
 	public FTransform Root;
 	public FTransform Wrist;
 	public FTransform Thumb_0;

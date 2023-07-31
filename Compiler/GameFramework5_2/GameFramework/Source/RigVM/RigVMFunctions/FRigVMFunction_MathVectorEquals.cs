@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("RigVMFunctions/Math/RigVMFunction_MathVector.h")]
 ///<summary>Returns true if the value A equals B</summary>
+[CppInclude("RigVMFunctions/Math/RigVMFunction_MathVector.h")]
 public partial struct FRigVMFunction_MathVectorEquals {
-// RigVMFunction_MathVectorEquals
 	public FVector A;
 	public FVector B;
 	public bool Result;

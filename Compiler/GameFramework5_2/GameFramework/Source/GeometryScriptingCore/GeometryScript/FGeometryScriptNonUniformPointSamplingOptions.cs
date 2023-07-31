@@ -1,9 +1,8 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("GeometryScript/MeshSamplingFunctions.h")]
 public partial struct FGeometryScriptNonUniformPointSamplingOptions {
-// GeometryScriptNonUniformPointSamplingOptions
 	public float MaxSamplingRadius;
 	public EGeometryScriptSamplingDistributionMode SizeDistribution;
 	public double SizeDistributionPower;

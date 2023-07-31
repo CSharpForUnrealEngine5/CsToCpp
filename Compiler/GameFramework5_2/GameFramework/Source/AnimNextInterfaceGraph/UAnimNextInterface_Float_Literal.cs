@@ -1,8 +1,8 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("AnimNextInterface_Float.h")]
 public partial class UAnimNextInterface_Float_Literal : UAnimNextInterfaceFloat {
-// AnimNextInterface_Float_Literal
+	///<summary>Value</summary>
 	public float Value;
 }

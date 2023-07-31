@@ -1,8 +1,7 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Components/DisplayClusterSceneComponentSyncThis.h")]
 ///<summary>Synchronization component. Synchronizes itself</summary>
+[CppInclude("Components/DisplayClusterSceneComponentSyncThis.h")]
 public partial class UDisplayClusterSceneComponentSyncThis : UDisplayClusterSceneComponentSync {
-// DisplayClusterSceneComponentSyncThis
 }

@@ -1,9 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("CameraAnimationSequenceSubsystem.h")]
 ///<summary>World subsystem that holds global objects for handling camera animation sequences.</summary>
+[CppInclude("CameraAnimationSequenceSubsystem.h")]
 public partial class UCameraAnimationSequenceSubsystem : UWorldSubsystem {
-// CameraAnimationSequenceSubsystem
+	///<summary>The global Sequencer linker that contains all the shakes and camera animations</summary>
 	public UMovieSceneEntitySystemLinker Linker;
 }

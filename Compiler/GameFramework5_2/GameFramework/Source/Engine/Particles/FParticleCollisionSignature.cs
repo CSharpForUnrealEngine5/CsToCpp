@@ -1,7 +1,6 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Particles/Emitter.h")]
 ///<summary>Fires when a particle dies</summary>
 public partial struct FParticleCollisionSignature {
 // ParticleCollisionSignature__DelegateSignature

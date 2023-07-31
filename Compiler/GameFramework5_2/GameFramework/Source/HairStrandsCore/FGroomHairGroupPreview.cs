@@ -1,9 +1,8 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("GroomImportOptions.h")]
 public partial struct FGroomHairGroupPreview {
-// GroomHairGroupPreview
 	public string GroupName;
 	public int GroupID;
 	public int CurveCount;

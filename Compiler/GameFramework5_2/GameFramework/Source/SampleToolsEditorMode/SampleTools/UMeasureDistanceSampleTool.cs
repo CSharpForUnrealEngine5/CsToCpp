@@ -1,9 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("SampleTools/MeasureDistanceSampleTool.h")]
 ///<summary>UMeasureDistanceSampleTool is an example Tool that allows the user to measure the</summary>
+[CppInclude("SampleTools/MeasureDistanceSampleTool.h")]
 public partial class UMeasureDistanceSampleTool : UInteractiveTool {
-// MeasureDistanceSampleTool
+	///<summary>Properties of the tool are stored here</summary>
 	public UMeasureDistanceProperties Properties;
 }

@@ -1,9 +1,8 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("SmartObjectZoneAnnotations.h")]
 ///<summary>Struct to store indices to all entry points on a given lane.</summary>
+[CppInclude("SmartObjectZoneAnnotations.h")]
 public partial struct FSmartObjectLaneLocationIndices {
-// SmartObjectLaneLocationIndices
 	public TArray<int> SmartObjectLaneLocationIndices;
 }

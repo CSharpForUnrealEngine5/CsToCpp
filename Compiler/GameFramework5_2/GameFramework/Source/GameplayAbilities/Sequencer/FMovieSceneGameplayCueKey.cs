@@ -1,9 +1,8 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Sequencer/MovieSceneGameplayCueSections.h")]
 public partial struct FMovieSceneGameplayCueKey {
-// MovieSceneGameplayCueKey
 	public FGameplayCueTag Cue;
 	public FVector Location;
 	public FVector Normal;

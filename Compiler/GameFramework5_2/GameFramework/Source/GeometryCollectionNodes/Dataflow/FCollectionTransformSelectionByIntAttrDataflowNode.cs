@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Dataflow/GeometryCollectionSelectionNodes.h")]
 ///<summary>Selects bones by an int attribute</summary>
+[CppInclude("Dataflow/GeometryCollectionSelectionNodes.h")]
 public partial struct FCollectionTransformSelectionByIntAttrDataflowNode {
-// CollectionTransformSelectionByIntAttrDataflowNode
 	public FManagedArrayCollection Collection;
 	public string GroupName;
 	public string AttrName;

@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("RigVMFunctions/Math/RigVMFunction_MathTransform.h")]
 ///<summary>Treats the provided transforms as a chain with global / local transforms, and</summary>
+[CppInclude("RigVMFunctions/Math/RigVMFunction_MathTransform.h")]
 public partial struct FRigVMFunction_MathTransformAccumulateArray {
-// RigVMFunction_MathTransformAccumulateArray
 	public TArray<FTransform> Transforms;
 	public ERigVMTransformSpace TargetSpace;
 	public FTransform Root;

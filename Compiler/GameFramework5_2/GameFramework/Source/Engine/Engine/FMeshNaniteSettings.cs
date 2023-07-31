@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Engine/EngineTypes.h")]
 ///<summary>Settings applied when building Nanite data.</summary>
+[CppInclude("Engine/EngineTypes.h")]
 public partial struct FMeshNaniteSettings {
-// MeshNaniteSettings
 	public bool bEnabled;
 	public bool bPreserveArea;
 	public int PositionPrecision;

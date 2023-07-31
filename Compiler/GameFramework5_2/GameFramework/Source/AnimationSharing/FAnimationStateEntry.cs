@@ -1,9 +1,8 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("AnimationSharingTypes.h")]
 public partial struct FAnimationStateEntry {
-// AnimationStateEntry
 	public byte State;
 	public TArray<FAnimationSetup> AnimationSetups;
 	public bool bOnDemand;

@@ -1,10 +1,11 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("MetasoundEditorGraph.h")]
 ///<summary>UMetasoundEditorGraphMember is a base class for non-node graph level members</summary>
+[CppInclude("MetasoundEditorGraph.h")]
 public partial class UMetasoundEditorGraphMember : UObject {
-// MetasoundEditorGraphMember
+	///<summary>Default literal value of member</summary>
 	public UMetasoundEditorGraphMemberDefaultLiteral Literal;
+	///<summary>Metasound Data Type.</summary>
 	public string TypeName;
 }

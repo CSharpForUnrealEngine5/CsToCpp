@@ -1,9 +1,8 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Blueprint/StateTreeTaskBlueprintBase.h")]
 ///<summary>Wrapper for Blueprint based Tasks.</summary>
+[CppInclude("Blueprint/StateTreeTaskBlueprintBase.h")]
 public partial struct FStateTreeBlueprintTaskWrapper {
-// StateTreeBlueprintTaskWrapper
 	public UClass TaskClass;
 }

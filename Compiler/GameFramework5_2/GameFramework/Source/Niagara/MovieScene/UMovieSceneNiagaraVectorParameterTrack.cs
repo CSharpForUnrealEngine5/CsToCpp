@@ -1,9 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("MovieScene/Parameters/MovieSceneNiagaraVectorParameterTrack.h")]
 ///<summary>A track for animating float niagara parameters.</summary>
+[CppInclude("MovieScene/Parameters/MovieSceneNiagaraVectorParameterTrack.h")]
 public partial class UMovieSceneNiagaraVectorParameterTrack : UMovieSceneNiagaraParameterTrack {
-// MovieSceneNiagaraVectorParameterTrack
+	///<summary>ChannelsUsed</summary>
 	public int ChannelsUsed;
 }

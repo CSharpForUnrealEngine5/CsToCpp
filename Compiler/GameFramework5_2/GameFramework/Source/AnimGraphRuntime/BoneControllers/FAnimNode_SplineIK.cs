@@ -1,9 +1,8 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("BoneControllers/AnimNode_SplineIK.h")]
 public partial struct FAnimNode_SplineIK {
-// AnimNode_SplineIK
 	public FBoneReference StartBone;
 	public FBoneReference EndBone;
 	public ESplineBoneAxis BoneAxis;

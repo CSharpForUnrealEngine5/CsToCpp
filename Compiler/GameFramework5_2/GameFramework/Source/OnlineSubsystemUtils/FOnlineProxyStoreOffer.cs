@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("InAppPurchaseQueryCallbackProxy2.h")]
 ///<summary>Offer entry for display from online store</summary>
+[CppInclude("InAppPurchaseQueryCallbackProxy2.h")]
 public partial struct FOnlineProxyStoreOffer {
-// OnlineProxyStoreOffer
 	public string OfferId;
 	public string Title;
 	public string Description;

@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("MrcVideoCaptureDevice.h")]
 ///<summary>FMrcVideoCaptureFeedIndex</summary>
+[CppInclude("MrcVideoCaptureDevice.h")]
 public partial struct FMrcVideoCaptureFeedIndex {
-// MrcVideoCaptureFeedIndex
 	public string DeviceURL;
 	public int StreamIndex;
 	public int FormatIndex;

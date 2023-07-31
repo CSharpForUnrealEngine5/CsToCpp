@@ -1,9 +1,8 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("SceneTypes.h")]
 ///<summary>Custom primitive data payload.</summary>
+[CppInclude("SceneTypes.h")]
 public partial struct FCustomPrimitiveData {
-// CustomPrimitiveData
 	public TArray<float> Data;
 }

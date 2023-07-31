@@ -1,13 +1,17 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("SpectatorBeaconState.h")]
 ///<summary>A beacon host used for taking reservations for an existing game session</summary>
+[CppInclude("SpectatorBeaconState.h")]
 public partial class USpectatorBeaconState : UObject {
-// SpectatorBeaconState
+	///<summary>Session tied to the beacon</summary>
 	public string SessionName;
+	///<summary>Number of currently consumed reservations</summary>
 	public int NumConsumedReservations;
+	///<summary>Maximum allowed reservations</summary>
 	public int MaxReservations;
+	///<summary>Are multiple consoles types allowed to play together</summary>
 	public bool bRestrictCrossConsole;
+	///<summary>Current reservations in the system</summary>
 	public TArray<FSpectatorReservation> Reservations;
 }

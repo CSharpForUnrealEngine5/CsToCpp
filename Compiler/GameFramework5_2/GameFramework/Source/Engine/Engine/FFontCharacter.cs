@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Engine/Font.h")]
 ///<summary>This struct is serialized using native serialization so any changes to it require a package version bump.</summary>
+[CppInclude("Engine/Font.h")]
 public partial struct FFontCharacter {
-// FontCharacter
 	public int StartU;
 	public int StartV;
 	public int USize;

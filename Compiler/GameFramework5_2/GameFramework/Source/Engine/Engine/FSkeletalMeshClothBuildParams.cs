@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Engine/SkeletalMesh.h")]
 ///<summary>Struct holding parameters needed when creating a new clothing asset or sub asset (LOD)</summary>
+[CppInclude("Engine/SkeletalMesh.h")]
 public partial struct FSkeletalMeshClothBuildParams {
-// SkeletalMeshClothBuildParams
 	public TWeakObjectPtr<UClothingAssetBase> TargetAsset;
 	public int TargetLod;
 	public bool bRemapParameters;

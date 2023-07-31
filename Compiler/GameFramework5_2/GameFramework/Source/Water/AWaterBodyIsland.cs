@@ -1,13 +1,18 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("WaterBodyIslandActor.h")]
 public partial class AWaterBodyIsland : AActor {
-// WaterBodyIsland
+	///<summary>GetWaterSpline</summary>
 	public  UWaterSplineComponent GetWaterSpline() { return default; }
+	///<summary>WaterCurveSettings</summary>
 	public FWaterCurveSettings WaterCurveSettings;
+	///<summary>WaterHeightmapSettings</summary>
 	public FWaterBodyHeightmapSettings WaterHeightmapSettings;
+	///<summary>WaterWeightmapSettings</summary>
 	public TMap<string,FWaterBodyWeightmapSettings> WaterWeightmapSettings;
+	///<summary>ActorIcon</summary>
 	public UBillboardComponent ActorIcon;
+	///<summary>The spline data attached to this water type.</summary>
 	public UWaterSplineComponent SplineComp;
 }

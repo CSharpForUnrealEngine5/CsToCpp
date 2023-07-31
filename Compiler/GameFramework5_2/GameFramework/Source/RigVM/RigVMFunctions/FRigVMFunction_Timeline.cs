@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("RigVMFunctions/Simulation/RigVMFunction_Timeline.h")]
 ///<summary>Simulates a time value - can act as a timeline playing back</summary>
+[CppInclude("RigVMFunctions/Simulation/RigVMFunction_Timeline.h")]
 public partial struct FRigVMFunction_Timeline {
-// RigVMFunction_Timeline
 	public float Speed;
 	public float Time;
 	public float AccumulatedValue;

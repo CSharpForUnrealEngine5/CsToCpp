@@ -1,9 +1,8 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("ResonanceAudioReverb.h")]
 public partial struct FResonanceAudioReverbPluginSettings {
-// ResonanceAudioReverbPluginSettings
 	public bool bEnableRoomEffects;
 	public bool bGetTransformFromAudioVolume;
 	public FVector RoomPosition;

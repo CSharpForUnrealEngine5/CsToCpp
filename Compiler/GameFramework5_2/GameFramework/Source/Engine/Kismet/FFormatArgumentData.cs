@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Kismet/KismetTextLibrary.h")]
 ///<summary>Used to pass argument/value pairs into FText::Format.</summary>
+[CppInclude("Kismet/KismetTextLibrary.h")]
 public partial struct FFormatArgumentData {
-// FormatArgumentData
 	public string ArgumentName;
 	public EFormatArgumentType ArgumentValueType;
 	public string ArgumentValue;

@@ -1,8 +1,8 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("BoneControllers/AnimNode_Constraint.h")]
-///<summary>Enum value to describe how you'd like to maintain offset</summary>
+///<summary>Enum value to describe how you&#39;d like to maintain offset</summary>
 public enum EConstraintOffsetOption {
 	None=0,
 	Offset_RefPose=1,

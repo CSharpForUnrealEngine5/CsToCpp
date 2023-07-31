@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Roles/LiveLinkLightTypes.h")]
 ///<summary>Dynamic data for light.</summary>
+[CppInclude("Roles/LiveLinkLightTypes.h")]
 public partial struct FLiveLinkLightFrameData {
-// LiveLinkLightFrameData
 	public float Temperature;
 	public float Intensity;
 	public FColor LightColor;

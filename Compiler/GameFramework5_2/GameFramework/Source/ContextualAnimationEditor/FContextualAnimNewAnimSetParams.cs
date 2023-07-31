@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("ContextualAnimEditorTypes.h")]
 ///<summary>Struct used to construct the widget for adding a new set</summary>
+[CppInclude("ContextualAnimEditorTypes.h")]
 public partial struct FContextualAnimNewAnimSetParams {
-// ContextualAnimNewAnimSetParams
 	public string SectionName;
 	public TArray<FContextualAnimNewAnimSetData> Data;
 	public float RandomWeight;

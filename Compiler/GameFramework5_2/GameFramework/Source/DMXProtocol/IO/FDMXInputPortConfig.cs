@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("IO/DMXInputPortConfig.h")]
 ///<summary>Blueprint Configuration of a Port, used in DXM Settings to specify inputs and outputs.</summary>
+[CppInclude("IO/DMXInputPortConfig.h")]
 public partial struct FDMXInputPortConfig {
-// DMXInputPortConfig
 	public string PortName;
 	public string ProtocolName;
 	public EDMXCommunicationType CommunicationType;

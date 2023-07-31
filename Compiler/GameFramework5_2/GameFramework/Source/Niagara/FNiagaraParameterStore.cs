@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("NiagaraParameterStore.h")]
 ///<summary>Base storage class for Niagara parameter values.</summary>
+[CppInclude("NiagaraParameterStore.h")]
 public partial struct FNiagaraParameterStore {
-// NiagaraParameterStore
 	public TWeakObjectPtr<UObject> Owner;
 	public TMap<FNiagaraVariable,int> ParameterOffsets;
 	public TArray<FNiagaraVariableWithOffset> SortedParameterOffsets;

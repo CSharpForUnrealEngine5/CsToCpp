@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("GameplayCueNotifyTypes.h")]
 ///<summary>FGameplayCueNotify_PlacementInfo</summary>
+[CppInclude("GameplayCueNotifyTypes.h")]
 public partial struct FGameplayCueNotify_PlacementInfo {
-// GameplayCueNotify_PlacementInfo
 	public string SocketName;
 	public EGameplayCueNotify_AttachPolicy AttachPolicy;
 	public EAttachmentRule AttachmentRule;

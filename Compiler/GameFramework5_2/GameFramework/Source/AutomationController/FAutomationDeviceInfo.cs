@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("AutomationDeviceClusterManager.h")]
 ///<summary>Hold information about the Device</summary>
+[CppInclude("AutomationDeviceClusterManager.h")]
 public partial struct FAutomationDeviceInfo {
-// AutomationDeviceInfo
 	public string DeviceName;
 	public string Instance;
 	public string Platform;

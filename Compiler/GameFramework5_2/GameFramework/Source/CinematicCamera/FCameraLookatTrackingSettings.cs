@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
+///<summary>Settings to control the camera&#39;s lookat feature</summary>
 [CppInclude("CineCameraActor.h")]
-///<summary>Settings to control the camera's lookat feature</summary>
 public partial struct FCameraLookatTrackingSettings {
-// CameraLookatTrackingSettings
 	public bool bEnableLookAtTracking;
 	public bool bDrawDebugLookAtTrackingPosition;
 	public float LookAtTrackingInterpSpeed;

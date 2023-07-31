@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Engine/SkeletalMesh.h")]
 ///<summary>Legacy object for back-compat loading, no longer used by clothing system</summary>
+[CppInclude("Engine/SkeletalMesh.h")]
 public partial struct FClothPhysicsProperties_Legacy {
-// ClothPhysicsProperties_Legacy
 	public float VerticalResistance;
 	public float HorizontalResistance;
 	public float BendResistance;

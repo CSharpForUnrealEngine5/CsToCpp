@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("LiveLinkCameraController.h")]
 ///<summary>Flags to control whether incoming values from LiveLink Camera FrameData should be applied or not</summary>
+[CppInclude("LiveLinkCameraController.h")]
 public partial struct FLiveLinkCameraControllerUpdateFlags {
-// LiveLinkCameraControllerUpdateFlags
 	public bool bApplyFieldOfView;
 	public bool bApplyAspectRatio;
 	public bool bApplyFocalLength;

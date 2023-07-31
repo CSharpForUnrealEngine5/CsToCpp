@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("RigVMCore/RigVMMemoryDeprecated.h")]
 ///<summary>The FRigVMMemoryContainer provides a heterogeneous memory container to store arbitrary</summary>
+[CppInclude("RigVMCore/RigVMMemoryDeprecated.h")]
 public partial struct FRigVMMemoryContainer {
-// RigVMMemoryContainer
 	public bool bUseNameMap;
 	public ERigVMMemoryType MemoryType;
 	public TArray<FRigVMRegister> Registers;

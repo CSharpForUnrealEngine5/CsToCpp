@@ -1,11 +1,13 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("RivermaxCustomTimeStep.h")]
 ///<summary>Genlock using PTP time from a rivermax card</summary>
+[CppInclude("RivermaxCustomTimeStep.h")]
 public partial class URivermaxCustomTimeStep : UGenlockedCustomTimeStep {
-// RivermaxCustomTimeStep
+	///<summary>Target frame rate to which to genlock. Uses ST2059 standard to align PTP time to standard genlock</summary>
 	public FFrameRate FrameRate;
+	///<summary>When enabled, will warn for skipped frames when engine is too slow</summary>
 	public bool bEnableOverrunDetection;
+	///<summary>Engine used to initialize the Provider</summary>
 	public UEngine InitializedEngine;
 }

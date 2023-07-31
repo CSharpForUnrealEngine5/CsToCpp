@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Engine/AssetManagerTypes.h")]
 ///<summary>Structure with publicly exposed information about an asset type. These can be loaded out of a config file.</summary>
+[CppInclude("Engine/AssetManagerTypes.h")]
 public partial struct FPrimaryAssetTypeInfo {
-// PrimaryAssetTypeInfo
 	public string PrimaryAssetType;
 	public TSoftObjectPtr<UClass> AssetBaseClass;
 	public UClass AssetBaseClassLoaded;

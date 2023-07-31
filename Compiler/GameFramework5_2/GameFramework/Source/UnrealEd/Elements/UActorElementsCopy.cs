@@ -1,8 +1,8 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Elements/Actor/ActorElementEditorCopyAndPaste.h")]
 public partial class UActorElementsCopy : UObject {
-// ActorElementsCopy
+	///<summary>ActorsToCopy</summary>
 	public TArray<AActor> ActorsToCopy;
 }

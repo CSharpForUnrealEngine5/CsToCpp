@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Recorder/TakeRecorderParameters.h")]
 ///<summary>Structure housing all configurable parameters for a take recorder instance</summary>
+[CppInclude("Recorder/TakeRecorderParameters.h")]
 public partial struct FTakeRecorderParameters {
-// TakeRecorderParameters
 	public FTakeRecorderUserParameters User;
 	public FTakeRecorderProjectParameters Project;
 	public ETakeRecorderMode TakeRecorderMode;

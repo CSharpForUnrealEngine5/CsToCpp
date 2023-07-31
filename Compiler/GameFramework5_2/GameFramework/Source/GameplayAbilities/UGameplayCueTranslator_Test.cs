@@ -1,8 +1,7 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("GameplayCueTranslator.h")]
 ///<summary>This is an example translator class.</summary>
+[CppInclude("GameplayCueTranslator.h")]
 public partial class UGameplayCueTranslator_Test : UGameplayCueTranslator {
-// GameplayCueTranslator_Test
 }

@@ -1,8 +1,7 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("MetasoundEditor.h")]
 ///<summary>Simple class for the interfaces details tab to keep track of its corresponding Metasound</summary>
+[CppInclude("MetasoundEditor.h")]
 public partial class UMetasoundInterfacesView : UObject {
-// MetasoundInterfacesView
 }

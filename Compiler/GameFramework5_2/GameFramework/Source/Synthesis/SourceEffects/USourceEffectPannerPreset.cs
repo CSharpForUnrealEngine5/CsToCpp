@@ -1,9 +1,10 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("SourceEffects/SourceEffectPanner.h")]
 public partial class USourceEffectPannerPreset : USoundEffectSourcePreset {
-// SourceEffectPannerPreset
+	///<summary>SetSettings</summary>
 	public  void SetSettings(FSourceEffectPannerSettings InSettings) {}
+	///<summary>Settings</summary>
 	public FSourceEffectPannerSettings Settings;
 }

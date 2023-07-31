@@ -1,9 +1,8 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("WorldPartition/WorldPartitionRuntimeCell.h")]
 public partial struct FWorldPartitionRuntimeCellObjectMapping {
-// WorldPartitionRuntimeCellObjectMapping
 	public string Package;
 	public string Path;
 	public FActorContainerID ContainerID;

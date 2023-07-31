@@ -1,9 +1,8 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("GroomCacheImportOptions.h")]
 public partial struct FGroomCacheImportSettings {
-// GroomCacheImportSettings
 	public bool bImportGroomCache;
 	public EGroomCacheImportType ImportType;
 	public int FrameStart;

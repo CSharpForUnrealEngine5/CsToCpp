@@ -1,8 +1,7 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("ToolTargets/DynamicMeshComponentToolTarget.h")]
 ///<summary>A ToolTarget backed by a DynamicMeshComponent</summary>
+[CppInclude("ToolTargets/DynamicMeshComponentToolTarget.h")]
 public partial class UDynamicMeshComponentToolTarget : UPrimitiveComponentToolTarget {
-// DynamicMeshComponentToolTarget
 }

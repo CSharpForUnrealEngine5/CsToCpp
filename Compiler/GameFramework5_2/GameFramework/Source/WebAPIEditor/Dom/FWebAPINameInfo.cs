@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
+///<summary>Holds information for a name and it&#39;s alternatives.</summary>
 [CppInclude("Dom/WebAPISchema.h")]
-///<summary>Holds information for a name and it's alternatives.</summary>
 public partial struct FWebAPINameInfo {
-// WebAPINameInfo
 	public string Name;
 	public string JsonName;
 	public string Prefix;

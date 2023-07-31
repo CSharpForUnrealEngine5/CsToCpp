@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Animation/AnimLinkableElement.h")]
 ///<summary>Used to describe an element that can be linked to a segment in a montage or sequence.</summary>
+[CppInclude("Animation/AnimLinkableElement.h")]
 public partial struct FAnimLinkableElement {
-// AnimLinkableElement
 	public UAnimMontage LinkedMontage;
 	public int SlotIndex;
 	public int SegmentIndex;

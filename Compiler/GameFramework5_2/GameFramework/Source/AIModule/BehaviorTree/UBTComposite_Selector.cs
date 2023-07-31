@@ -1,8 +1,7 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("BehaviorTree/Composites/BTComposite_Selector.h")]
 ///<summary>Selector composite node.</summary>
+[CppInclude("BehaviorTree/Composites/BTComposite_Selector.h")]
 public partial class UBTComposite_Selector : UBTCompositeNode {
-// BTComposite_Selector
 }

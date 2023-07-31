@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
+///<summary>Float (Non LWC) version of FOrientedBox since the float version doesn&#39;t exist yet</summary>
 [CppInclude("Tests/StructSerializerTestTypes.h")]
-///<summary>Float (Non LWC) version of FOrientedBox since the float version doesn't exist yet</summary>
 public partial struct FOrientedBoxFloat {
-// OrientedBoxFloat
 	public FVector3f Center;
 	public FVector3f AxisX;
 	public FVector3f AxisY;

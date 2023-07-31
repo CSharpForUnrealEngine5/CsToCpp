@@ -1,10 +1,11 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Controllers/LiveLinkLightController.h")]
 ///<summary>Controller that uses LiveLink light data to drive a light component.</summary>
+[CppInclude("Controllers/LiveLinkLightController.h")]
 public partial class ULiveLinkLightController : ULiveLinkControllerBase {
-// LiveLinkLightController
+	///<summary>ComponentToControl_DEPRECATED</summary>
 	public FComponentReference ComponentToControl_DEPRECATED;
+	///<summary>TransformData_DEPRECATED</summary>
 	public FLiveLinkTransformControllerData TransformData_DEPRECATED;
 }

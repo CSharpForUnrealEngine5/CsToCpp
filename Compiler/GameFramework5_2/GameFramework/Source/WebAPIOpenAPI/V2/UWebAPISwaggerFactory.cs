@@ -1,8 +1,7 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("V2/WebAPISwaggerFactory.h")]
 ///<summary>Handles importing for Swagger (OpenAPI V2) files.</summary>
+[CppInclude("V2/WebAPISwaggerFactory.h")]
 public partial class UWebAPISwaggerFactory : UWebAPIOpenAPIFactoryBase {
-// WebAPISwaggerFactory
 }

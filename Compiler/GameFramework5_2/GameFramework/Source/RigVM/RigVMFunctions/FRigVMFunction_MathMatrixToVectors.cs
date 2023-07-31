@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("RigVMFunctions/Math/RigVMFunction_MathMatrix.h")]
 ///<summary>Converts the matrix to its vectors</summary>
+[CppInclude("RigVMFunctions/Math/RigVMFunction_MathMatrix.h")]
 public partial struct FRigVMFunction_MathMatrixToVectors {
-// RigVMFunction_MathMatrixToVectors
 	public FMatrix Value;
 	public FVector Origin;
 	public FVector X;

@@ -1,9 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("ImageWriteBlueprintLibrary.h")]
 ///<summary>Function library containing utility methods for writing images on a global async queue</summary>
+[CppInclude("ImageWriteBlueprintLibrary.h")]
 public partial class UImageWriteBlueprintLibrary : UBlueprintFunctionLibrary {
-// ImageWriteBlueprintLibrary
+	///<summary>Export the specified texture to disk</summary>
 	public static void ExportToDisk(UTexture Texture,string Filename,FImageWriteOptions Options) {}
 }

@@ -1,7 +1,6 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("NUTActor.h")]
 ///<summary>Delegate for executing a unit test function on the server</summary>
 public partial struct FExecuteOnServer {
 // ExecuteOnServer__DelegateSignature

@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("SmartObjectSubsystem.h")]
 ///<summary>Struct that can be used to filter results of a smart object request when trying to find or claim a smart object</summary>
+[CppInclude("SmartObjectSubsystem.h")]
 public partial struct FSmartObjectRequestFilter {
-// SmartObjectRequestFilter
 	public AActor UserActor;
 	public FGameplayTagContainer UserTags;
 	public FGameplayTagQuery ActivityRequirements;

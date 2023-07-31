@@ -1,9 +1,8 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("LensData.h")]
 ///<summary>Normalized focal length information for both width and height dimension</summary>
+[CppInclude("LensData.h")]
 public partial struct FFocalLengthInfo {
-// FocalLengthInfo
 	public FVector2D FxFy;
 }

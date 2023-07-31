@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("BlueprintEditorSettings.h")]
 ///<summary>Blueprint Editor settings that are different for each</summary>
+[CppInclude("BlueprintEditorSettings.h")]
 public partial struct FPerBlueprintSettings {
-// PerBlueprintSettings
 	public TArray<FBlueprintBreakpoint> Breakpoints;
 	public TArray<FBlueprintWatchedPin> WatchedPins;
 }

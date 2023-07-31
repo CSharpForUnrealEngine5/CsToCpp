@@ -1,8 +1,7 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("BlueprintBoundNodeSpawner.h")]
 ///<summary>Takes care of spawning various bound nodes. Acts as the</summary>
+[CppInclude("BlueprintBoundNodeSpawner.h")]
 public partial class UBlueprintBoundNodeSpawner : UBlueprintNodeSpawner {
-// BlueprintBoundNodeSpawner
 }

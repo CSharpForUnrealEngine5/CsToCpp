@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("LevelSequenceAnimSequenceLink.h")]
 ///<summary>Link To Anim Sequence that we are linked too.</summary>
+[CppInclude("LevelSequenceAnimSequenceLink.h")]
 public partial struct FLevelSequenceAnimSequenceLinkItem {
-// LevelSequenceAnimSequenceLinkItem
 	public FGuid SkelTrackGuid;
 	public FSoftObjectPath PathToAnimSequence;
 	public bool bExportTransforms;

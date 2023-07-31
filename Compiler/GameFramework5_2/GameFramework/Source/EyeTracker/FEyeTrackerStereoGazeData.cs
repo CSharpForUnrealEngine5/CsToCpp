@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("EyeTrackerTypes.h")]
 ///<summary>Stereo gaze data that contains information for each eye individually.</summary>
+[CppInclude("EyeTrackerTypes.h")]
 public partial struct FEyeTrackerStereoGazeData {
-// EyeTrackerStereoGazeData
 	public FVector LeftEyeOrigin;
 	public FVector LeftEyeDirection;
 	public FVector RightEyeOrigin;

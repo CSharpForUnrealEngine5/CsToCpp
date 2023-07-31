@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("RigUnit_FullbodyIK.h")]
 ///<summary>Based on Jacobian solver at core, this can solve multi chains within a root using multi effectors</summary>
+[CppInclude("RigUnit_FullbodyIK.h")]
 public partial struct FRigUnit_FullbodyIK {
-// RigUnit_FullbodyIK
 	public FRigElementKey Root;
 	public TArray<FFBIKEndEffector> Effectors;
 	public TArray<FFBIKConstraintOption> Constraints;

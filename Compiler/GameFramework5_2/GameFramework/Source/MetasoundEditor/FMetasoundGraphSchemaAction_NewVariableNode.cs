@@ -1,9 +1,8 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("MetasoundEditorGraphSchema.h")]
 ///<summary>Adds a variable node to the graph</summary>
+[CppInclude("MetasoundEditorGraphSchema.h")]
 public partial struct FMetasoundGraphSchemaAction_NewVariableNode {
-// MetasoundGraphSchemaAction_NewVariableNode
 	public FGuid VariableID;
 }

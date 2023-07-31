@@ -1,8 +1,7 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("IKRigSkeleton.h")]
 ///<summary>Data used just to initialize an IKRigSkeleton from outside systems</summary>
+[CppInclude("IKRigSkeleton.h")]
 public partial struct FIKRigInputSkeleton {
-// IKRigInputSkeleton
 }

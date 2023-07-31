@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Net/Serialization/FastArraySerializer.h")]
 ///<summary>Base struct for items using Fast TArray Replication</summary>
+[CppInclude("Net/Serialization/FastArraySerializer.h")]
 public partial struct FFastArraySerializerItem {
-// FastArraySerializerItem
 	public int ReplicationID;
 	public int ReplicationKey;
 	public int MostRecentArrayReplicationKey;

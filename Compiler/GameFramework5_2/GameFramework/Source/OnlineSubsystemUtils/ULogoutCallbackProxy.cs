@@ -1,10 +1,12 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("LogoutCallbackProxy.h")]
 public partial class ULogoutCallbackProxy : UBlueprintAsyncActionBase {
-// LogoutCallbackProxy
+	///<summary>Called when the logout completed successfully</summary>
 	public FOnlineLogoutResult OnSuccess;
+	///<summary>Called when the logout completed unsuccessfully</summary>
 	public FOnlineLogoutResult OnFailure;
+	///<summary>Logs out of the online service</summary>
 	public static ULogoutCallbackProxy Logout(UObject WorldContextObject,APlayerController PlayerController) { return default; }
 }

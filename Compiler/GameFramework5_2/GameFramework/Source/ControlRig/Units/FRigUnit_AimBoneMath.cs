@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Units/Highlevel/Hierarchy/RigUnit_AimBone.h")]
 ///<summary>Outputs an aligned transform of a primary and secondary axis of an input transform to a world target.</summary>
+[CppInclude("Units/Highlevel/Hierarchy/RigUnit_AimBone.h")]
 public partial struct FRigUnit_AimBoneMath {
-// RigUnit_AimBoneMath
 	public FTransform InputTransform;
 	public FRigUnit_AimItem_Target Primary;
 	public FRigUnit_AimItem_Target Secondary;

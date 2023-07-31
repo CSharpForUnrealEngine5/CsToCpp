@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
+///<summary>An FGameplayTagQuery is a logical query that can be run against an FGameplayTagContainer.  A query that succeeds is said to &quot;match&quot;.</summary>
 [CppInclude("GameplayTagContainer.h")]
-///<summary>An FGameplayTagQuery is a logical query that can be run against an FGameplayTagContainer.  A query that succeeds is said to "match".</summary>
 public partial struct FGameplayTagQuery {
-// GameplayTagQuery
 	public int TokenStreamVersion;
 	public TArray<FGameplayTag> TagDictionary;
 	public TArray<byte> QueryTokenStream;

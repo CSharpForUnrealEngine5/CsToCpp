@@ -1,9 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Chaos/Sequencer/MovieSceneChaosCacheTrack.h")]
 ///<summary>Handles animation of ChaosCache</summary>
+[CppInclude("Chaos/Sequencer/MovieSceneChaosCacheTrack.h")]
 public partial class UMovieSceneChaosCacheTrack : UMovieSceneNameableTrack {
-// MovieSceneChaosCacheTrack
+	///<summary>List of all animation sections</summary>
 	public TArray<UMovieSceneSection> AnimationSections;
 }

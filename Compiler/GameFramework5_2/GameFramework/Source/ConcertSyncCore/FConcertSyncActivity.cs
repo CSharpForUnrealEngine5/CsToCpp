@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("ConcertSyncSessionTypes.h")]
 ///<summary>Data for an activity entry in a Concert Sync Session</summary>
+[CppInclude("ConcertSyncSessionTypes.h")]
 public partial struct FConcertSyncActivity {
-// ConcertSyncActivity
 	public long ActivityId;
 	public bool bIgnored;
 	public EConcertSyncActivityFlags Flags;

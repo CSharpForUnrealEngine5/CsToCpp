@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Dataflow/GeometryCollectionSelectionNodes.h")]
 ///<summary>Selects pieces based on their size</summary>
+[CppInclude("Dataflow/GeometryCollectionSelectionNodes.h")]
 public partial struct FCollectionTransformSelectionBySizeDataflowNode {
-// CollectionTransformSelectionBySizeDataflowNode
 	public FManagedArrayCollection Collection;
 	public float SizeMin;
 	public float SizeMax;

@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Styling/ProtocolStyles.h")]
 ///<summary>Represents all custom protocol widgets.</summary>
+[CppInclude("Styling/ProtocolStyles.h")]
 public partial struct FProtocolWidgetStyle {
-// ProtocolWidgetStyle
 	public FTextBlockStyle BoldTextStyle;
 	public FSlateBrush ContentAreaBrush;
 	public FSlateBrush ContentAreaBrushDark;

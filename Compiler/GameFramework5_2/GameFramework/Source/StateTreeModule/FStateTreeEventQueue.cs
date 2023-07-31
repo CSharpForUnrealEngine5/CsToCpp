@@ -1,9 +1,8 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("StateTreeEvents.h")]
 ///<summary>Event queue buffering all the events to be processed by a State Tree.</summary>
+[CppInclude("StateTreeEvents.h")]
 public partial struct FStateTreeEventQueue {
-// StateTreeEventQueue
 	public TArray<FStateTreeEvent> Events;
 }

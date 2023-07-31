@@ -1,8 +1,7 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Chaos/CacheEvents.h")]
 ///<summary>Base type for all events, ALL events must derive from this so we have a fallback for serialization</summary>
+[CppInclude("Chaos/CacheEvents.h")]
 public partial struct FCacheEventBase {
-// CacheEventBase
 }

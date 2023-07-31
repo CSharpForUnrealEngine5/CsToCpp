@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("PhysicsEngine/ConstraintInstance.h")]
 ///<summary>Container for a physics representation of an object.</summary>
+[CppInclude("PhysicsEngine/ConstraintInstance.h")]
 public partial struct FConstraintInstance {
-// ConstraintInstance
 	public string JointName;
 	public string ConstraintBone1;
 	public string ConstraintBone2;

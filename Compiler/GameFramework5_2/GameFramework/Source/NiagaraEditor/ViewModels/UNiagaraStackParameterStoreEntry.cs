@@ -1,9 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("ViewModels/Stack/NiagaraStackParameterStoreEntry.h")]
 ///<summary>Represents a single module input in the module stack view model.</summary>
+[CppInclude("ViewModels/Stack/NiagaraStackParameterStoreEntry.h")]
 public partial class UNiagaraStackParameterStoreEntry : UNiagaraStackItemContent {
-// NiagaraStackParameterStoreEntry
+	///<summary>The stack entry for displaying the value object.</summary>
 	public UNiagaraStackObject ValueObjectEntry;
 }

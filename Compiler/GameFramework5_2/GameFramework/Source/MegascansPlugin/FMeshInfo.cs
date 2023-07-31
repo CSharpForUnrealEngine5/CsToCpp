@@ -1,9 +1,8 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("MSAssetImportData.h")]
 public partial struct FMeshInfo {
-// MeshInfo
 	public string meshID;
 	public string name;
 	public string path;

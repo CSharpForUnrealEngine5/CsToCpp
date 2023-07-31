@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("SoundscapeColor.h")]
 ///<summary>Struct containing Sound Scape Element Control Data</summary>
+[CppInclude("SoundscapeColor.h")]
 public partial struct FSoundscapeColorPlaybackSettings {
-// SoundscapeColorPlaybackSettings
 	public bool bRandomizeStartingSeekTime;
 	public bool bLimitPlaybackDuration;
 	public float MinPlaybackDuration;

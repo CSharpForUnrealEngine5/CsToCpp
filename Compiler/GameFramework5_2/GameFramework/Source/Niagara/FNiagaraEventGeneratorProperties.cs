@@ -1,9 +1,8 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("NiagaraEmitter.h")]
 public partial struct FNiagaraEventGeneratorProperties {
-// NiagaraEventGeneratorProperties
 	public int MaxEventsPerFrame;
 	public string ID;
 	public FNiagaraDataSetCompiledData DataSetCompiledData;

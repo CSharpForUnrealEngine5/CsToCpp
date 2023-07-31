@@ -1,10 +1,11 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("AudioSlider.h")]
 ///<summary>An audio slider widget with customizable curves.</summary>
+[CppInclude("AudioSlider.h")]
 public partial class UAudioSlider : UAudioSliderBase {
-// AudioSlider
+	///<summary>Curves for mapping linear to output values.</summary>
 	public TWeakObjectPtr<UCurveFloat> LinToOutputCurve;
+	///<summary>OutputToLinCurve</summary>
 	public TWeakObjectPtr<UCurveFloat> OutputToLinCurve;
 }

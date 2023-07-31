@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("USDUnrealAssetInfo.h")]
 ///<summary>Metadata added to a prim to indicate it was exported from a particular Unreal asset</summary>
+[CppInclude("USDUnrealAssetInfo.h")]
 public partial struct FUsdUnrealAssetInfo {
-// UsdUnrealAssetInfo
 	public string Name;
 	public string Identifier;
 	public string Version;

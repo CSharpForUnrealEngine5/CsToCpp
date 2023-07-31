@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Party/PartyMember.h")]
 ///<summary>Join in progress response. Represents a response from a local party member to a remote party member that requested to join in progress.</summary>
+[CppInclude("Party/PartyMember.h")]
 public partial struct FPartyMemberJoinInProgressResponse {
-// PartyMemberJoinInProgressResponse
 	public FUniqueNetIdRepl Requester;
 	public long RequestTime;
 	public long ResponseTime;

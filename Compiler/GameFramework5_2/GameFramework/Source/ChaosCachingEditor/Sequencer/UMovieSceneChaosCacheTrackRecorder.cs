@@ -1,8 +1,7 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Sequencer/MovieSceneChaosCacheTrackRecorder.h")]
 ///<summary>Track recorder implementation for the chaos cache</summary>
+[CppInclude("Sequencer/MovieSceneChaosCacheTrackRecorder.h")]
 public partial class UMovieSceneChaosCacheTrackRecorder : UMovieSceneTrackRecorder {
-// MovieSceneChaosCacheTrackRecorder
 }

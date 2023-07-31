@@ -1,9 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Tracks/MovieSceneCVarTrack.h")]
 ///<summary>Track for setting (and restoring) Console Variables during playback.</summary>
+[CppInclude("Tracks/MovieSceneCVarTrack.h")]
 public partial class UMovieSceneCVarTrack : UMovieSceneNameableTrack {
-// MovieSceneCVarTrack
+	///<summary>All movie scene sections.</summary>
 	public TArray<UMovieSceneSection> Sections;
 }

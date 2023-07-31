@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("AnimNodes/AnimNode_PoseDriver.h")]
 ///<summary>RBF based orientation driver</summary>
+[CppInclude("AnimNodes/AnimNode_PoseDriver.h")]
 public partial struct FAnimNode_PoseDriver {
-// AnimNode_PoseDriver
 	public FPoseLink SourcePose;
 	public TArray<FBoneReference> SourceBones;
 	public TArray<FBoneReference> OnlyDriveBones;

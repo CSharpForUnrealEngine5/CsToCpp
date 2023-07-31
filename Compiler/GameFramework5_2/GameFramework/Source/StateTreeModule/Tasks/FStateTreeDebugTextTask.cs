@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Tasks/StateTreeDebugTextTask.h")]
 ///<summary>Draws debug text on the HUD associated to the player controller.</summary>
+[CppInclude("Tasks/StateTreeDebugTextTask.h")]
 public partial struct FStateTreeDebugTextTask {
-// StateTreeDebugTextTask
 	public string Text;
 	public FColor TextColor;
 	public float FontScale;

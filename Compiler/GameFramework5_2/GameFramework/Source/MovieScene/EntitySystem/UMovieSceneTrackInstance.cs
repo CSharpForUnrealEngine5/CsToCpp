@@ -1,12 +1,15 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("EntitySystem/TrackInstance/MovieSceneTrackInstance.h")]
 ///<summary>Base class for all track instances. Can also be used for root tracks where AnimatedObject will be nullptr</summary>
+[CppInclude("EntitySystem/TrackInstance/MovieSceneTrackInstance.h")]
 public partial class UMovieSceneTrackInstance : UObject {
-// MovieSceneTrackInstance
+	///<summary>AnimatedObject</summary>
 	public UObject AnimatedObject;
+	///<summary>bIsRootTrackInstance</summary>
 	public bool bIsRootTrackInstance;
+	///<summary>PrivateLinker</summary>
 	public UMovieSceneEntitySystemLinker PrivateLinker;
+	///<summary>Inputs</summary>
 	public TArray<FMovieSceneTrackInstanceInput> Inputs;
 }

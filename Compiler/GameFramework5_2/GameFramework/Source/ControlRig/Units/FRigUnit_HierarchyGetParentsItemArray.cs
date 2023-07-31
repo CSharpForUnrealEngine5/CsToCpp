@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
+///<summary>Returns the item&#39;s parents</summary>
 [CppInclude("Units/Execution/RigUnit_Hierarchy.h")]
-///<summary>Returns the item's parents</summary>
 public partial struct FRigUnit_HierarchyGetParentsItemArray {
-// RigUnit_HierarchyGetParentsItemArray
 	public FRigElementKey Child;
 	public bool bIncludeChild;
 	public bool bReverse;

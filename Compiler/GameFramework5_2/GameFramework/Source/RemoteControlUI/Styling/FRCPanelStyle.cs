@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Styling/RemoteControlStyles.h")]
 ///<summary>Represents the appearance of an RC Panel.</summary>
+[CppInclude("Styling/RemoteControlStyles.h")]
 public partial struct FRCPanelStyle {
-// RCPanelStyle
 	public FSlateBrush ContentAreaBrush;
 	public FSlateBrush ContentAreaBrushDark;
 	public FSlateBrush ContentAreaBrushLight;

@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Tests/StructSerializerTestTypes.h")]
 ///<summary>Test structure for boolean properties.</summary>
+[CppInclude("Tests/StructSerializerTestTypes.h")]
 public partial struct FStructSerializerBooleanTestStruct {
-// StructSerializerBooleanTestStruct
 	public bool BoolFalse;
 	public bool BoolTrue;
 	public bool Bitfield0;

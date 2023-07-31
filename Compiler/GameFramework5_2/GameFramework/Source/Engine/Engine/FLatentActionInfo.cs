@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Engine/LatentActionManager.h")]
 ///<summary>Latent action info</summary>
+[CppInclude("Engine/LatentActionManager.h")]
 public partial struct FLatentActionInfo {
-// LatentActionInfo
 	public int Linkage;
 	public int UUID;
 	public string ExecutionFunction;

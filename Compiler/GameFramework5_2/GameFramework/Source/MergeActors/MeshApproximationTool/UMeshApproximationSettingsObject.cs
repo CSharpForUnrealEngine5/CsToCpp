@@ -1,9 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("MeshApproximationTool/MeshApproximationTool.h")]
 ///<summary>Singleton wrapper to allow for using the setting structure in SSettingsView</summary>
+[CppInclude("MeshApproximationTool/MeshApproximationTool.h")]
 public partial class UMeshApproximationSettingsObject : UObject {
-// MeshApproximationSettingsObject
+	///<summary>Settings</summary>
 	public FMeshApproximationSettings Settings;
 }

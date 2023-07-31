@@ -1,8 +1,7 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("OptimusEditorGraphSchemaActions.h")]
 ///<summary>Reference to a UOptimusNodeGraph.</summary>
+[CppInclude("OptimusEditorGraphSchemaActions.h")]
 public partial struct FOptimusSchemaAction_Graph {
-// OptimusSchemaAction_Graph
 }

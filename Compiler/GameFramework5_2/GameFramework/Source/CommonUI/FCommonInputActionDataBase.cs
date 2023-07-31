@@ -1,9 +1,8 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("CommonUITypes.h")]
 public partial struct FCommonInputActionDataBase {
-// CommonInputActionDataBase
 	public string DisplayName;
 	public string HoldDisplayName;
 	public int NavBarPriority;

@@ -1,8 +1,7 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("AttributeSet.h")]
 ///<summary>Defines the set of all GameplayAttributes for your game</summary>
+[CppInclude("AttributeSet.h")]
 public partial class UAttributeSet : UObject {
-// AttributeSet
 }

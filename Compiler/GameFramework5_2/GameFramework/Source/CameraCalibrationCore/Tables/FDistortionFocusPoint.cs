@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Tables/DistortionParametersTable.h")]
 ///<summary>Contains list of distortion parameters points associated to zoom value</summary>
+[CppInclude("Tables/DistortionParametersTable.h")]
 public partial struct FDistortionFocusPoint {
-// DistortionFocusPoint
 	public float Focus;
 	public FRichCurve MapBlendingCurve;
 	public TArray<FDistortionZoomPoint> ZoomPoints;

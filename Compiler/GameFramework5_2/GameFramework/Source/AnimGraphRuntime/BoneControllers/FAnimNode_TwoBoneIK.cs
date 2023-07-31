@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("BoneControllers/AnimNode_TwoBoneIK.h")]
 ///<summary>Simple 2 Bone IK Controller.</summary>
+[CppInclude("BoneControllers/AnimNode_TwoBoneIK.h")]
 public partial struct FAnimNode_TwoBoneIK {
-// AnimNode_TwoBoneIK
 	public FBoneReference IKBone;
 	public double StartStretchRatio;
 	public double MaxStretchScale;

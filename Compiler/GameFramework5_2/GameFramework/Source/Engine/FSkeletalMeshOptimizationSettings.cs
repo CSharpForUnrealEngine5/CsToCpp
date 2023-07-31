@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("SkeletalMeshReductionSettings.h")]
 ///<summary>FSkeletalMeshOptimizationSettings - The settings used to optimize a skeletal mesh LOD.</summary>
+[CppInclude("SkeletalMeshReductionSettings.h")]
 public partial struct FSkeletalMeshOptimizationSettings {
-// SkeletalMeshOptimizationSettings
 	public SkeletalMeshTerminationCriterion TerminationCriterion;
 	public float NumOfTrianglesPercentage;
 	public float NumOfVertPercentage;

@@ -1,8 +1,7 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("GameFramework/CharacterMovementReplication.h")]
 ///<summary>Structure used internally to handle serialization of FCharacterNetworkMoveDataContainer over the network.</summary>
+[CppInclude("GameFramework/CharacterMovementReplication.h")]
 public partial struct FCharacterServerMovePackedBits {
-// CharacterServerMovePackedBits
 }

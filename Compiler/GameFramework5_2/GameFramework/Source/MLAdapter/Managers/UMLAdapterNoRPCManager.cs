@@ -1,8 +1,7 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
+///<summary>UMLAdapterNoRPCManager won&#39;t start the RPC server and will immediately start a session and spawn the default agent. This is</summary>
 [CppInclude("Managers/MLAdapterNoRPCManager.h")]
-///<summary>UMLAdapterNoRPCManager won't start the RPC server and will immediately start a session and spawn the default agent. This is</summary>
 public partial class UMLAdapterNoRPCManager : UMLAdapterManager {
-// MLAdapterNoRPCManager
 }

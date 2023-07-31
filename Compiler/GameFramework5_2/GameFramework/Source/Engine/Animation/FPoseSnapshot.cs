@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Animation/PoseSnapshot.h")]
 ///<summary>A pose for a skeletal mesh</summary>
+[CppInclude("Animation/PoseSnapshot.h")]
 public partial struct FPoseSnapshot {
-// PoseSnapshot
 	public TArray<FTransform> LocalTransforms;
 	public TArray<string> BoneNames;
 	public string SkeletalMeshName;

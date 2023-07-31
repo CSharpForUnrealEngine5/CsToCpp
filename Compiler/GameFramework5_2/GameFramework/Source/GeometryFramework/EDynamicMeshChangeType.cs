@@ -1,8 +1,8 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("UDynamicMesh.h")]
-///<summary>EDynamicMeshChangeType is used by FDynamicMeshChangeInfo to indicate a "type" of mesh change</summary>
+///<summary>EDynamicMeshChangeType is used by FDynamicMeshChangeInfo to indicate a &quot;type&quot; of mesh change</summary>
 public enum EDynamicMeshChangeType {
 	GeneralEdit=0,
 	MeshChange=1,

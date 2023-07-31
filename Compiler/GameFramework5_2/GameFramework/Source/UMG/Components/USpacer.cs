@@ -1,10 +1,11 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Components/Spacer.h")]
 ///<summary>A spacer widget; it does not have a visual representation, and just provides padding between other widgets.</summary>
+[CppInclude("Components/Spacer.h")]
 public partial class USpacer : UWidget {
-// Spacer
+	///<summary>The size of the spacer</summary>
 	public FVector2D Size;
+	///<summary>Sets the size of the spacer</summary>
 	public  void SetSize(FVector2D InSize) {}
 }

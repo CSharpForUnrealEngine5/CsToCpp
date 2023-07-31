@@ -1,14 +1,20 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Physics/CollisionPropertySets.h")]
 public partial class UPhysicsObjectToolPropertySet : UInteractiveToolPropertySet {
-// PhysicsObjectToolPropertySet
+	///<summary>Source Object Name</summary>
 	public string ObjectName;
+	///<summary>Collision Flags controlling how simple and complex collision shapes are used</summary>
 	public ECollisionGeometryMode CollisionType;
+	///<summary>Spheres</summary>
 	public TArray<FPhysicsSphereData> Spheres;
+	///<summary>Boxes</summary>
 	public TArray<FPhysicsBoxData> Boxes;
+	///<summary>Capsules</summary>
 	public TArray<FPhysicsCapsuleData> Capsules;
+	///<summary>Convexes</summary>
 	public TArray<FPhysicsConvexData> Convexes;
+	///<summary>LevelSets</summary>
 	public TArray<FPhysicsLevelSetData> LevelSets;
 }

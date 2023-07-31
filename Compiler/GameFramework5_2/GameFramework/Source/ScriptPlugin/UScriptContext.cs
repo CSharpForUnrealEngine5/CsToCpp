@@ -1,9 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("ScriptContext.h")]
 ///<summary>Script context subobject</summary>
+[CppInclude("ScriptContext.h")]
 public partial class UScriptContext : UObject {
-// ScriptContext
+	///<summary>CallScriptFunction</summary>
 	public  void CallScriptFunction(string FunctionName) {}
 }

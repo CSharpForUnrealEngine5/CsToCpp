@@ -1,15 +1,21 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Properties/UVLayoutProperties.h")]
 ///<summary>UV Layout Settings</summary>
+[CppInclude("Properties/UVLayoutProperties.h")]
 public partial class UUVLayoutProperties : UInteractiveToolPropertySet {
-// UVLayoutProperties
+	///<summary>Type of layout applied to input UVs</summary>
 	public EUVLayoutType LayoutType;
+	///<summary>Expected resolution of the output textures; this controls spacing left between UV islands to avoid interpolation artifacts</summary>
 	public int TextureResolution;
+	///<summary>Uniform scale applied to UVs after packing</summary>
 	public float Scale;
+	///<summary>Translation applied to UVs after packing, and after scaling</summary>
 	public FVector2D Translation;
+	///<summary>Allow the Repack layout type to flip the orientation of UV islands to save space. Note that this may cause problems for downstream operations, and therefore is disabled by default.</summary>
 	public bool bAllowFlips;
+	///<summary>Enable UDIM aware layout and keep islands within their originating UDIM tiles when laying out.</summary>
 	public bool bEnableUDIMLayout;
+	///<summary>bUDIMCVAREnabled</summary>
 	public bool bUDIMCVAREnabled;
 }

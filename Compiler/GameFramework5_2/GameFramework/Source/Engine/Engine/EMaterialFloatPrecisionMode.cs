@@ -1,8 +1,8 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Engine/EngineTypes.h")]
-///<summary>The default float precision for material's pixel shaders on mobile devices</summary>
+///<summary>The default float precision for material&#39;s pixel shaders on mobile devices</summary>
 public enum EMaterialFloatPrecisionMode {
 	MFPM_Default=0,
 	MFPM_Full_MaterialExpressionOnly=1,

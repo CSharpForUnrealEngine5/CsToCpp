@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("GameplayCueManager.h")]
 ///<summary>An ObjectLibrary for the GameplayCue Notifies. Wraps 2 underlying UObjectLibraries plus options/delegates for how they are loaded</summary>
+[CppInclude("GameplayCueManager.h")]
 public partial struct FGameplayCueObjectLibrary {
-// GameplayCueObjectLibrary
 	public TArray<string> Paths;
 	public UObjectLibrary ActorObjectLibrary;
 	public UObjectLibrary StaticObjectLibrary;

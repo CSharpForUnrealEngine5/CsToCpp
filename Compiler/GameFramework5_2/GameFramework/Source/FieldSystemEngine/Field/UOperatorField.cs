@@ -1,13 +1,17 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Field/FieldSystemObjects.h")]
 ///<summary>Compute an operation between 2 incoming fields</summary>
+[CppInclude("Field/FieldSystemObjects.h")]
 public partial class UOperatorField : UFieldNodeBase {
-// OperatorField
+	///<summary>Compute an operation between 2 incoming fields</summary>
 	public  UOperatorField SetOperatorField(float Magnitude,UFieldNodeBase LeftField,UFieldNodeBase RightField,EFieldOperationType Operation) { return default; }
+	///<summary>Magnitude of the operator field</summary>
 	public float Magnitude;
+	///<summary>Right field to be processed</summary>
 	public UFieldNodeBase RightField;
+	///<summary>Left field to be processed</summary>
 	public UFieldNodeBase LeftField;
+	///<summary>Type of operation you want to perform between the 2 fields</summary>
 	public EFieldOperationType Operation;
 }

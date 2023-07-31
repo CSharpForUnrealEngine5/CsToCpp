@@ -1,10 +1,11 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Behaviour/Builtin/Path/RCBehaviourSetAssetByPathNode.h")]
 ///<summary>Takes the string as a path and goes on to search for the Asset it is connected to, setting it to a Target Exposed Property.</summary>
+[CppInclude("Behaviour/Builtin/Path/RCBehaviourSetAssetByPathNode.h")]
 public partial class URCBehaviourSetAssetByPathNode : URCBehaviourNode {
-// RCBehaviourSetAssetByPathNode
+	///<summary>Execute</summary>
 	public  bool Execute(URCBehaviour InBehaviour) { return default; }
+	///<summary>IsSupported</summary>
 	public  bool IsSupported(URCBehaviour InBehaviour) { return default; }
 }

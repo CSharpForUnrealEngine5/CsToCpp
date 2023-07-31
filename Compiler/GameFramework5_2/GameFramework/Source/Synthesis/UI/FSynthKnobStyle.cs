@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("UI/SynthKnobStyle.h")]
 ///<summary>Represents the appearance of an SSynthKnob</summary>
+[CppInclude("UI/SynthKnobStyle.h")]
 public partial struct FSynthKnobStyle {
-// SynthKnobStyle
 	public FSlateBrush LargeKnob;
 	public FSlateBrush LargeKnobOverlay;
 	public FSlateBrush MediumKnob;

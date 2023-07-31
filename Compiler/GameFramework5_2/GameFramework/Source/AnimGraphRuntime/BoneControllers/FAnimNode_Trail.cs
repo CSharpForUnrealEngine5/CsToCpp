@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("BoneControllers/AnimNode_Trail.h")]
 ///<summary>Trail Controller</summary>
+[CppInclude("BoneControllers/AnimNode_Trail.h")]
 public partial struct FAnimNode_Trail {
-// AnimNode_Trail
 	public FBoneReference TrailBone;
 	public int ChainLength;
 	public EAxis ChainBoneAxis;

@@ -1,14 +1,19 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Loudness.h")]
 ///<summary>ULoudnessSettings</summary>
+[CppInclude("Loudness.h")]
 public partial class ULoudnessSettings : UAudioSynesthesiaSettings {
-// LoudnessSettings
+	///<summary>Number of seconds between loudness measurements</summary>
 	public float AnalysisPeriod;
+	///<summary>Minimum analysis frequency for calculating loudness.</summary>
 	public float MinimumFrequency;
+	///<summary>Maximum analysis frequency for calculating loudness.</summary>
 	public float MaximumFrequency;
+	///<summary>Type of equal loudness curve used in calculations</summary>
 	public ELoudnessCurveTypeEnum CurveType;
+	///<summary>dB level to denote silence.  Used when calculating normalized loudness.</summary>
 	public float NoiseFloorDb;
+	///<summary>dB level to denote silence.  Used when calculating normalized loudness.</summary>
 	public float ExpectedMaxLoudness;
 }

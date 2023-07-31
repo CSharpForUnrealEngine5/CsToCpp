@@ -1,10 +1,11 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("StyleSheet/CommonStyleSheet.h")]
 ///<summary>PROTOTYPE: DO NOT USE!!!</summary>
+[CppInclude("StyleSheet/CommonStyleSheet.h")]
 public partial class UCommonStyleSheet : UDataAsset {
-// CommonStyleSheet
+	///<summary>Properties</summary>
 	public TArray<UCommonStyleSheetTypeBase> Properties;
+	///<summary>ImportedStyleSheets</summary>
 	public TArray<UCommonStyleSheet> ImportedStyleSheets;
 }

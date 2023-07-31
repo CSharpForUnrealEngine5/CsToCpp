@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("MediaCapture.h")]
 ///<summary>Base class of additional data that can be stored for each requested capture.</summary>
+[CppInclude("MediaCapture.h")]
 public partial struct FMediaCaptureOptions {
-// MediaCaptureOptions
 	public bool bAutoRestartOnSourceSizeChange;
 	public EMediaCaptureOverrunAction OverrunAction;
 	public EMediaCaptureCroppingType Crop;

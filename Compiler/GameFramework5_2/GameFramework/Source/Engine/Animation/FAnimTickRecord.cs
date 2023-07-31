@@ -1,9 +1,8 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Animation/AnimationAsset.h")]
 ///<summary>Information about an animation asset that needs to be ticked</summary>
+[CppInclude("Animation/AnimationAsset.h")]
 public partial struct FAnimTickRecord {
-// AnimTickRecord
 	public UAnimationAsset SourceAsset;
 }

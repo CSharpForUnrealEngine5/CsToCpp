@@ -1,9 +1,8 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("GameplayDebuggerTypes.h")]
 public partial struct FGameplayDebuggerShape {
-// GameplayDebuggerShape
 	public TArray<FVector> ShapeData;
 	public string Description;
 	public FColor Color;

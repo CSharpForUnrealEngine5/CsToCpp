@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("CharacterMovementComponentAsync.h")]
 ///<summary>Data about the floor for walking movement, used by CharacterMovementComponent.</summary>
+[CppInclude("CharacterMovementComponentAsync.h")]
 public partial struct FFindFloorResult {
-// FindFloorResult
 	public bool bBlockingHit;
 	public bool bWalkableFloor;
 	public bool bLineTrace;

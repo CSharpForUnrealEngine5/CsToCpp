@@ -1,9 +1,8 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("SourceEffects/SourceEffectDynamicsProcessor.h")]
 public partial struct FSourceEffectDynamicsProcessorSettings {
-// SourceEffectDynamicsProcessorSettings
 	public ESourceEffectDynamicsProcessorType DynamicsProcessorType;
 	public ESourceEffectDynamicsPeakMode PeakMode;
 	public float LookAheadMsec;

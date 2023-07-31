@@ -1,10 +1,11 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("FlipbookEditor/FlipbookEditorSettings.h")]
 ///<summary>Settings for the Paper2D sprite editor</summary>
+[CppInclude("FlipbookEditor/FlipbookEditorSettings.h")]
 public partial class UFlipbookEditorSettings : UObject {
-// FlipbookEditorSettings
+	///<summary>Background color in the flipbook editor</summary>
 	public FColor BackgroundColor;
+	///<summary>Should the grid be shown by default when the editor is opened?</summary>
 	public bool bShowGridByDefault;
 }

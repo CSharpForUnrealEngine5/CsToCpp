@@ -1,11 +1,13 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("SampleTools/MeasureDistanceSampleTool.h")]
 ///<summary>Property set for the UMeasureDistanceSampleTool</summary>
+[CppInclude("SampleTools/MeasureDistanceSampleTool.h")]
 public partial class UMeasureDistanceProperties : UInteractiveToolPropertySet {
-// MeasureDistanceProperties
+	///<summary>First point of measurement</summary>
 	public FVector StartPoint;
+	///<summary>Second point of measurement</summary>
 	public FVector EndPoint;
+	///<summary>Current distance measurement</summary>
 	public float Distance;
 }

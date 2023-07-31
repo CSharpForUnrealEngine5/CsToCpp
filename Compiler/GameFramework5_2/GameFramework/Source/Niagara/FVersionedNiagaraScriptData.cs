@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("NiagaraScript.h")]
 ///<summary>Struct containing all of the data that can be different between different script versions.</summary>
+[CppInclude("NiagaraScript.h")]
 public partial struct FVersionedNiagaraScriptData {
-// VersionedNiagaraScriptData
 	public FNiagaraAssetVersion Version;
 	public string VersionChangeDescription;
 	public int ModuleUsageBitmask;

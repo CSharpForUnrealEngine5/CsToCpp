@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("MassEntitySpawnDataGeneratorBase.h")]
 ///<summary>The result of the spawn point generator.</summary>
+[CppInclude("MassEntitySpawnDataGeneratorBase.h")]
 public partial struct FMassEntitySpawnDataGeneratorResult {
-// MassEntitySpawnDataGeneratorResult
 	public FInstancedStruct SpawnData;
 	public UClass SpawnDataProcessor;
 	public TArray<UClass> PostSpawnProcessors;

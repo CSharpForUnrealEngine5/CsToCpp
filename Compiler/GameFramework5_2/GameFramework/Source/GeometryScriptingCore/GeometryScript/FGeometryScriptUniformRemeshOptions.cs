@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("GeometryScript/MeshRemeshFunctions.h")]
 ///<summary>Uniform Remeshing Options</summary>
+[CppInclude("GeometryScript/MeshRemeshFunctions.h")]
 public partial struct FGeometryScriptUniformRemeshOptions {
-// GeometryScriptUniformRemeshOptions
 	public EGeometryScriptUniformRemeshTargetType TargetType;
 	public int TargetTriangleCount;
 	public float TargetEdgeLength;

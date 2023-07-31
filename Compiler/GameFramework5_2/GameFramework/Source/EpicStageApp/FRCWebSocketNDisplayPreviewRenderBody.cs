@@ -1,9 +1,8 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("StageAppRequest.h")]
 ///<summary>Holds a request made via websocket to render a preview of a display cluster.</summary>
+[CppInclude("StageAppRequest.h")]
 public partial struct FRCWebSocketNDisplayPreviewRenderBody {
-// RCWebSocketNDisplayPreviewRenderBody
 	public int RendererId;
 }

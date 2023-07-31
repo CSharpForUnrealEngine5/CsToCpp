@@ -1,10 +1,11 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("SpriteEditor/SpriteEditorSettings.h")]
 ///<summary>Settings for the Paper2D sprite editor</summary>
+[CppInclude("SpriteEditor/SpriteEditorSettings.h")]
 public partial class USpriteEditorSettings : UObject {
-// SpriteEditorSettings
+	///<summary>Background color in the sprite editor</summary>
 	public FColor BackgroundColor;
+	///<summary>Should the grid be shown by default when the editor is opened?</summary>
 	public bool bShowGridByDefault;
 }

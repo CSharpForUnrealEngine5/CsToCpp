@@ -1,9 +1,8 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("GroomAssetCards.h")]
 public partial struct FHairGroupCardsTextures {
-// HairGroupCardsTextures
 	public UTexture2D DepthTexture;
 	public UTexture2D CoverageTexture;
 	public UTexture2D TangentTexture;

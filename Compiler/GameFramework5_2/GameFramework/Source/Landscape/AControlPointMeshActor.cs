@@ -1,9 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("ControlPointMeshActor.h")]
 ///<summary>ControlPointMeshActor is an actor with a ControlPointMeshComponent.</summary>
+[CppInclude("ControlPointMeshActor.h")]
 public partial class AControlPointMeshActor : AActor {
-// ControlPointMeshActor
+	///<summary>ControlPointMeshComponent</summary>
 	public UControlPointMeshComponent ControlPointMeshComponent;
 }

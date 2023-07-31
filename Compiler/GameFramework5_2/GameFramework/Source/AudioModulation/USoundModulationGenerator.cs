@@ -1,8 +1,7 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("SoundModulationGenerator.h")]
 ///<summary>Base class for modulators that algorithmically generate values that can effect</summary>
+[CppInclude("SoundModulationGenerator.h")]
 public partial class USoundModulationGenerator : USoundModulatorBase {
-// SoundModulationGenerator
 }

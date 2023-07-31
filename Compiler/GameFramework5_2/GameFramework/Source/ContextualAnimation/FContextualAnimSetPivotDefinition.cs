@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("ContextualAnimTypes.h")]
 ///<summary>Rules used to compute the pivot for a AnimSet</summary>
+[CppInclude("ContextualAnimTypes.h")]
 public partial struct FContextualAnimSetPivotDefinition {
-// ContextualAnimSetPivotDefinition
 	public string Name;
 	public string Origin;
 	public bool bAlongClosestDistance;

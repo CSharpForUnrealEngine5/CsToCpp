@@ -1,9 +1,8 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Conditions/StateTreeCommonConditions.h")]
 ///<summary>Condition comparing two booleans.</summary>
+[CppInclude("Conditions/StateTreeCommonConditions.h")]
 public partial struct FStateTreeCompareBoolCondition {
-// StateTreeCompareBoolCondition
 	public bool bInvert;
 }

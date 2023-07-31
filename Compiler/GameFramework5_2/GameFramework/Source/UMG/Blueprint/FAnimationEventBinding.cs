@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Blueprint/UserWidget.h")]
 ///<summary>Used to manage different animation event bindings that users want callbacks on.</summary>
+[CppInclude("Blueprint/UserWidget.h")]
 public partial struct FAnimationEventBinding {
-// AnimationEventBinding
 	public UWidgetAnimation Animation;
 	public FWidgetAnimationDynamicEvent Delegate;
 	public EWidgetAnimationEvent AnimationEvent;

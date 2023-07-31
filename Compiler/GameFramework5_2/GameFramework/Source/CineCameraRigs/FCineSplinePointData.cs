@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("CineSplinePointData.h")]
 ///<summary>Simple struct to hold spline point data</summary>
+[CppInclude("CineSplinePointData.h")]
 public partial struct FCineSplinePointData {
-// CineSplinePointData
 	public FVector Location;
 	public FRotator Rotation;
 	public float FocalLength;

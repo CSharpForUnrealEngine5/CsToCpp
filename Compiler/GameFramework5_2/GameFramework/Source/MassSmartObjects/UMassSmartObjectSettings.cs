@@ -1,10 +1,11 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("MassSmartObjectSettings.h")]
 ///<summary>Settings for the MassSmartObject module.</summary>
+[CppInclude("MassSmartObjectSettings.h")]
 public partial class UMassSmartObjectSettings : UMassModuleSettings {
-// MassSmartObjectSettings
+	///<summary>Tag used to indicate that smart objects are associated to a lane for queries using lanes.</summary>
 	public FZoneGraphTag SmartObjectTag;
+	///<summary>Extents used to find precomputed entry points to reach a smart object from a zone graph lane.</summary>
 	public float SearchExtents;
 }

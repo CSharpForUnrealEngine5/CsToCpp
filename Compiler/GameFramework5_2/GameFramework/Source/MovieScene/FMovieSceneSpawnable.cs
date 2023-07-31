@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("MovieSceneSpawnable.h")]
 ///<summary>MovieSceneSpawnable describes an object that can be spawned for this MovieScene</summary>
+[CppInclude("MovieSceneSpawnable.h")]
 public partial struct FMovieSceneSpawnable {
-// MovieSceneSpawnable
 	public FTransform SpawnTransform;
 	public TArray<string> Tags;
 	public bool bContinuouslyRespawn;

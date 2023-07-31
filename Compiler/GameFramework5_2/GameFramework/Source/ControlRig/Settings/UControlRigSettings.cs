@@ -1,9 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Settings/ControlRigSettings.h")]
 ///<summary>Default ControlRig settings.</summary>
+[CppInclude("Settings/ControlRigSettings.h")]
 public partial class UControlRigSettings : UDeveloperSettings {
-// ControlRigSettings
+	///<summary>DefaultShapeLibrary</summary>
 	public TSoftObjectPtr<UControlRigShapeLibrary> DefaultShapeLibrary;
 }

@@ -1,9 +1,8 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("SourceEffects/SourceEffectChorus.h")]
 public partial struct FSourceEffectChorusSettings {
-// SourceEffectChorusSettings
 	public float Depth;
 	public float Frequency;
 	public float Feedback;

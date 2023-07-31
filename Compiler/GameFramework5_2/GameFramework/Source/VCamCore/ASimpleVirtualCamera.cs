@@ -1,9 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("SimpleVirtualCamera.h")]
 ///<summary>A simple native virtual camera actor</summary>
+[CppInclude("SimpleVirtualCamera.h")]
 public partial class ASimpleVirtualCamera : ACineCameraActor {
-// SimpleVirtualCamera
+	///<summary>VCamComponent</summary>
 	public UVCamComponent VCamComponent;
 }

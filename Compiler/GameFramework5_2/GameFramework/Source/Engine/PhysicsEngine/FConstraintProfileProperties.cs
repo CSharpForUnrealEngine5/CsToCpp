@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("PhysicsEngine/ConstraintInstance.h")]
 ///<summary>Container for properties of a physics constraint that can be easily swapped at runtime. This is useful for switching different setups when going from ragdoll to standup for example</summary>
+[CppInclude("PhysicsEngine/ConstraintInstance.h")]
 public partial struct FConstraintProfileProperties {
-// ConstraintProfileProperties
 	public float ProjectionLinearTolerance;
 	public float ProjectionAngularTolerance;
 	public float ProjectionLinearAlpha;

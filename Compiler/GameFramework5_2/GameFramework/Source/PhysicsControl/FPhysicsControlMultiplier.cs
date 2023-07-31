@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("PhysicsControlData.h")]
 ///<summary>These parameters allow modification of the parameters in FPhysicsControlData for two reasons:</summary>
+[CppInclude("PhysicsControlData.h")]
 public partial struct FPhysicsControlMultiplier {
-// PhysicsControlMultiplier
 	public FVector LinearStrengthMultiplier;
 	public FVector LinearExtraDampingMultiplier;
 	public FVector MaxForceMultiplier;

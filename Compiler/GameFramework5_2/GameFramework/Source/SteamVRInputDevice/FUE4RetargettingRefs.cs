@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("SteamVRInputDeviceFunctionLibrary.h")]
 ///<summary>Retargetting information for the SteamVR skeleton to UE4 stock skeleton</summary>
+[CppInclude("SteamVRInputDeviceFunctionLibrary.h")]
 public partial struct FUE4RetargettingRefs {
-// UE4RetargettingRefs
 	public bool bIsInitialized;
 	public bool bIsRightHanded;
 	public FVector KnuckleAverageMS_UE4;

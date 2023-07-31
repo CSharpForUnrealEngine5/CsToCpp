@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Particles/TypeData/ParticleModuleTypeDataGpu.h")]
 ///<summary>Data needed for local vector fields.</summary>
+[CppInclude("Particles/TypeData/ParticleModuleTypeDataGpu.h")]
 public partial struct FGPUSpriteLocalVectorFieldInfo {
-// GPUSpriteLocalVectorFieldInfo
 	public UVectorField Field;
 	public FTransform Transform;
 	public FRotator MinInitialRotation;

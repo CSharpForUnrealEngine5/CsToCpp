@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Tools/ControlRigPose.h")]
 ///<summary>The Data Stored For Each Control in A Pose.</summary>
+[CppInclude("Tools/ControlRigPose.h")]
 public partial struct FRigControlCopy {
-// RigControlCopy
 	public string Name;
 	public ERigControlType ControlType;
 	public FRigControlValue Value;

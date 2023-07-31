@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Metadata/PCGMetadataTypesConstantStruct.h")]
 ///<summary>Struct to be re-used when you need to show constants types for a metadata type</summary>
+[CppInclude("Metadata/PCGMetadataTypesConstantStruct.h")]
 public partial struct FPCGMetadataTypesConstantStruct {
-// PCGMetadataTypesConstantStruct
 	public EPCGMetadataTypes Type;
 	public EPCGMetadataTypesConstantStructStringMode StringMode;
 	public float FloatValue;

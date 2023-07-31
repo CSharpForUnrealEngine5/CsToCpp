@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("GameplayAbilitySpec.h")]
 ///<summary>An activatable ability spec, hosted on the ability system component. This defines both what the ability is (what class, what level, input binding etc)</summary>
+[CppInclude("GameplayAbilitySpec.h")]
 public partial struct FGameplayAbilitySpec {
-// GameplayAbilitySpec
 	public FGameplayAbilitySpecHandle Handle;
 	public UGameplayAbility Ability;
 	public int Level;

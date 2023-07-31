@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("GameFramework/LocalMessage.h")]
 ///<summary>Handles the many pieces of data passed into Client Receive</summary>
+[CppInclude("GameFramework/LocalMessage.h")]
 public partial struct FClientReceiveData {
-// ClientReceiveData
 	public APlayerController LocalPC;
 	public string MessageType;
 	public int MessageIndex;

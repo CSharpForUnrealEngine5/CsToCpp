@@ -1,9 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("GameFramework/InputDeviceProperties.h")]
 ///<summary>A property that effect the triggers on a gamepad</summary>
+[CppInclude("GameFramework/InputDeviceProperties.h")]
 public partial class UInputDeviceTriggerEffect : UInputDeviceProperty {
-// InputDeviceTriggerEffect
+	///<summary>BaseTriggerData</summary>
 	public FDeviceTriggerBaseData BaseTriggerData;
 }

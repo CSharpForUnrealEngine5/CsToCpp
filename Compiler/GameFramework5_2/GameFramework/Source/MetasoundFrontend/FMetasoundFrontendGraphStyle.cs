@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("MetasoundFrontendDocument.h")]
 ///<summary>Styling for a class</summary>
+[CppInclude("MetasoundFrontendDocument.h")]
 public partial struct FMetasoundFrontendGraphStyle {
-// MetasoundFrontendGraphStyle
 	public bool bIsGraphEditable;
 	public TArray<FMetasoundFrontendEdgeStyle> EdgeStyles;
 }

@@ -1,9 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Tracks/MovieSceneMaterialTrack.h")]
 ///<summary>A material track which is specialized for animation materials which are owned by actor components.</summary>
+[CppInclude("Tracks/MovieSceneMaterialTrack.h")]
 public partial class UMovieSceneComponentMaterialTrack : UMovieSceneMaterialTrack {
-// MovieSceneComponentMaterialTrack
+	///<summary>The index of this material this track is animating.</summary>
 	public int MaterialIndex;
 }

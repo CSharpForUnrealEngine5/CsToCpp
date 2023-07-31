@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Engine/TextureLODSettings.h")]
 ///<summary>LOD settings for a single texture group.</summary>
+[CppInclude("Engine/TextureLODSettings.h")]
 public partial struct FTextureLODGroup {
-// TextureLODGroup
 	public TextureGroup Group;
 	public int LODBias;
 	public int LODBias_Smaller;

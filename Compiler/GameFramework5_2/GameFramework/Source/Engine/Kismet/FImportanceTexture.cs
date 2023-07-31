@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Kismet/ImportanceSamplingLibrary.h")]
 ///<summary>Texture processed for importance sampling</summary>
+[CppInclude("Kismet/ImportanceSamplingLibrary.h")]
 public partial struct FImportanceTexture {
-// ImportanceTexture
 	public FIntPoint Size;
 	public int NumMips;
 	public TArray<float> MarginalCDF;

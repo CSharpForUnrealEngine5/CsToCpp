@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("PoseSearch/PoseSearchIndex.h")]
 ///<summary>Information about a source animation asset used by a search index.</summary>
+[CppInclude("PoseSearch/PoseSearchIndex.h")]
 public partial struct FPoseSearchIndexAsset {
-// PoseSearchIndexAsset
 	public ESearchIndexAssetType Type;
 	public int SourceAssetIdx;
 	public bool bMirrored;

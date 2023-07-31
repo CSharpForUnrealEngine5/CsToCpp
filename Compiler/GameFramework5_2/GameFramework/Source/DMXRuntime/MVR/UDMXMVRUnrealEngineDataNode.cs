@@ -1,8 +1,7 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("MVR/Types/DMXMVRUnrealEngineDataNode.h")]
 ///<summary>This node contains a collection of data specified by the provider application.</summary>
+[CppInclude("MVR/Types/DMXMVRUnrealEngineDataNode.h")]
 public partial class UDMXMVRUnrealEngineDataNode : UObject {
-// DMXMVRUnrealEngineDataNode
 }

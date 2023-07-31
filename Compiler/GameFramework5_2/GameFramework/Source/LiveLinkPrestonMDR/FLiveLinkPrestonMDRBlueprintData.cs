@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("LiveLinkPrestonMDRTypes.h")]
 ///<summary>Facility structure to handle Preston MDR data in blueprint</summary>
+[CppInclude("LiveLinkPrestonMDRTypes.h")]
 public partial struct FLiveLinkPrestonMDRBlueprintData {
-// LiveLinkPrestonMDRBlueprintData
 	public FLiveLinkPrestonMDRStaticData StaticData;
 	public FLiveLinkPrestonMDRFrameData FrameData;
 }

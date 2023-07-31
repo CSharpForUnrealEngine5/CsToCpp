@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Preferences/UnrealEdKeyBindings.h")]
 ///<summary>An editor hotkey binding to a parameterless exec.</summary>
+[CppInclude("Preferences/UnrealEdKeyBindings.h")]
 public partial struct FEditorKeyBinding {
-// EditorKeyBinding
 	public bool bCtrlDown;
 	public bool bAltDown;
 	public bool bShiftDown;

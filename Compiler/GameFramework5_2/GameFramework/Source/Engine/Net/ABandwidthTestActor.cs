@@ -1,9 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Net/BandwidthTestActor.h")]
 ///<summary>This ABandwidthTestActor class is used to generate an easily controllable amount of bandwidth.</summary>
+[CppInclude("Net/BandwidthTestActor.h")]
 public partial class ABandwidthTestActor : AActor {
-// BandwidthTestActor
+	///<summary>BandwidthGenerator</summary>
 	public FBandwidthTestGenerator BandwidthGenerator;
 }

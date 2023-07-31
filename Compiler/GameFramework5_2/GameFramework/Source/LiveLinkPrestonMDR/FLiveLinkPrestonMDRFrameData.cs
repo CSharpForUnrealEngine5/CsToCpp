@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("LiveLinkPrestonMDRTypes.h")]
 ///<summary>Struct for dynamic (per-frame) Preston MDR data</summary>
+[CppInclude("LiveLinkPrestonMDRTypes.h")]
 public partial struct FLiveLinkPrestonMDRFrameData {
-// LiveLinkPrestonMDRFrameData
 	public ushort RawFocusEncoderValue;
 	public ushort RawIrisEncoderValue;
 	public ushort RawZoomEncoderValue;

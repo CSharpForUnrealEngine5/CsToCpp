@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("OpenColorIOColorSpace.h")]
 ///<summary>Structure to identify a ColorSpace as described in an OCIO configuration file.</summary>
+[CppInclude("OpenColorIOColorSpace.h")]
 public partial struct FOpenColorIOColorSpace {
-// OpenColorIOColorSpace
 	public string ColorSpaceName;
 	public int ColorSpaceIndex;
 	public string FamilyName;

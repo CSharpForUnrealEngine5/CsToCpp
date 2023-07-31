@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("BoneControllers/AnimNode_ObserveBone.h")]
 ///<summary>Debugging node that displays the current value of a bone in a specific space.</summary>
+[CppInclude("BoneControllers/AnimNode_ObserveBone.h")]
 public partial struct FAnimNode_ObserveBone {
-// AnimNode_ObserveBone
 	public FBoneReference BoneToObserve;
 	public EBoneControlSpace DisplaySpace;
 	public bool bRelativeToRefPose;

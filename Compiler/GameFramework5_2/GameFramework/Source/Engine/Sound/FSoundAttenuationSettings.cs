@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Sound/SoundAttenuation.h")]
 ///<summary>The settings for attenuating.</summary>
+[CppInclude("Sound/SoundAttenuation.h")]
 public partial struct FSoundAttenuationSettings {
-// SoundAttenuationSettings
 	public bool bAttenuate;
 	public bool bSpatialize;
 	public bool bAttenuateWithLPF;

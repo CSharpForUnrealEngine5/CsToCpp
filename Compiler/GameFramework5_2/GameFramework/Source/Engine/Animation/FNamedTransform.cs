@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Animation/AnimationTypes.h")]
 ///<summary>A named transform</summary>
+[CppInclude("Animation/AnimationTypes.h")]
 public partial struct FNamedTransform {
-// NamedTransform
 	public FTransform Value;
 	public string Name;
 }

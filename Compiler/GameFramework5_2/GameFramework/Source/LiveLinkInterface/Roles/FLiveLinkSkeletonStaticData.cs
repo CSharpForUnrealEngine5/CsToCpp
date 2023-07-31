@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
+///<summary>Static data for Animation purposes. Contains data about bones that shouldn&#39;t change every frame.</summary>
 [CppInclude("Roles/LiveLinkAnimationTypes.h")]
-///<summary>Static data for Animation purposes. Contains data about bones that shouldn't change every frame.</summary>
 public partial struct FLiveLinkSkeletonStaticData {
-// LiveLinkSkeletonStaticData
 	public TArray<string> BoneNames;
 	public TArray<int> BoneParents;
 }

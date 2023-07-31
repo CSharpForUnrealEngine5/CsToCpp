@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Engine/EngineTypes.h")]
 ///<summary>Point Of View structure used in Camera calculations</summary>
+[CppInclude("Engine/EngineTypes.h")]
 public partial struct FPOV {
-// POV
 	public FVector Location;
 	public FRotator Rotation;
 	public float FOV;

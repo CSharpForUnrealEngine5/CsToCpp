@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("AppleARKitCamera.h")]
 ///<summary>A model representing the camera and its properties at a single point in time.</summary>
+[CppInclude("AppleARKitCamera.h")]
 public partial struct FAppleARKitCamera {
-// AppleARKitCamera
 	public EARTrackingQuality TrackingQuality;
 	public EARTrackingQualityReason TrackingQualityReason;
 	public FTransform Transform;

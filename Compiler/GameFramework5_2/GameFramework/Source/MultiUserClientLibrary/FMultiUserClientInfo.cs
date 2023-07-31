@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("MultiUserClientStatics.h")]
 ///<summary>BP copy of FConcertSessionClientInfo</summary>
+[CppInclude("MultiUserClientStatics.h")]
 public partial struct FMultiUserClientInfo {
-// MultiUserClientInfo
 	public FGuid ClientEndpointId;
 	public string DisplayName;
 	public FLinearColor AvatarColor;

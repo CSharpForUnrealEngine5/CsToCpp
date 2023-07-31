@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Dataflow/GeometryCollectionSelectionNodes.h")]
 ///<summary>Selects the level of the selected bones</summary>
+[CppInclude("Dataflow/GeometryCollectionSelectionNodes.h")]
 public partial struct FCollectionTransformSelectionLevelDataflowNode {
-// CollectionTransformSelectionLevelDataflowNode
 	public FDataflowTransformSelection TransformSelection;
 	public FManagedArrayCollection Collection;
 }

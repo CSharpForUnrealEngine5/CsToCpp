@@ -1,10 +1,12 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("DataInterfaces/OptimusDataInterfaceRawBuffer.h")]
 public partial class UOptimusRawBufferDataInterface : UOptimusComputeDataInterface {
-// OptimusRawBufferDataInterface
+	///<summary>The value type we should be allocating elements for</summary>
 	public FShaderValueTypeHandle ValueType;
+	///<summary>The data domain this buffer covers</summary>
 	public FOptimusDataDomain DataDomain;
+	///<summary>The component source to query component domain validity and sizing</summary>
 	public TWeakObjectPtr<UOptimusComponentSourceBinding> ComponentSourceBinding;
 }

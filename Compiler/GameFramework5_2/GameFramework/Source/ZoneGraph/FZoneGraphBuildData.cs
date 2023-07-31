@@ -1,9 +1,8 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("ZoneGraphBuilder.h")]
 ///<summary>Build time data, can be used to map things between editor representation and baked data.</summary>
+[CppInclude("ZoneGraphBuilder.h")]
 public partial struct FZoneGraphBuildData {
-// ZoneGraphBuildData
 	public TMap<UZoneShapeComponent,FZoneShapeComponentBuildData> ZoneShapeComponentBuildData;
 }

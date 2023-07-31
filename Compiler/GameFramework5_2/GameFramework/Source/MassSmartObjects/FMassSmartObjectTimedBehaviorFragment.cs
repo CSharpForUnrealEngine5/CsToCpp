@@ -1,9 +1,8 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("MassSmartObjectFragments.h")]
 ///<summary>Fragment used to process time based smartobject interactions</summary>
+[CppInclude("MassSmartObjectFragments.h")]
 public partial struct FMassSmartObjectTimedBehaviorFragment {
-// MassSmartObjectTimedBehaviorFragment
 	public float UseTime;
 }

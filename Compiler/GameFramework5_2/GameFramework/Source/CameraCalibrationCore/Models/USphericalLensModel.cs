@@ -1,8 +1,7 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Models/SphericalLensModel.h")]
 ///<summary>Spherical lens model, using spherical lens distortion parameters</summary>
+[CppInclude("Models/SphericalLensModel.h")]
 public partial class USphericalLensModel : ULensModel {
-// SphericalLensModel
 }

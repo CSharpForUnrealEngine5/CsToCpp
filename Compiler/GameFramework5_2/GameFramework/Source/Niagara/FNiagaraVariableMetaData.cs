@@ -1,9 +1,8 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("NiagaraTypes.h")]
 public partial struct FNiagaraVariableMetaData {
-// NiagaraVariableMetaData
 	public string Description;
 	public string CategoryName;
 	public bool bAdvancedDisplay;

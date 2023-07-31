@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("ConcertDataStoreMessages.h")]
 ///<summary>Contains a key and its value, used by the client/server cache replication mechanism.</summary>
+[CppInclude("ConcertDataStoreMessages.h")]
 public partial struct FConcertDataStore_KeyValuePair {
-// ConcertDataStore_KeyValuePair
 	public string Key;
 	public FConcertDataStore_StoreValue Value;
 }

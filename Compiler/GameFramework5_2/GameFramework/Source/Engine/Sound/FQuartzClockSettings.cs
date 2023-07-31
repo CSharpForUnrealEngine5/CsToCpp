@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Sound/QuartzQuantizationUtilities.h")]
 ///<summary>UStruct version of settings struct used to initialized a clock</summary>
+[CppInclude("Sound/QuartzQuantizationUtilities.h")]
 public partial struct FQuartzClockSettings {
-// QuartzClockSettings
 	public FQuartzTimeSignature TimeSignature;
 	public bool bIgnoreLevelChange;
 }

@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("PCGComponent.h")]
 ///<summary>Used to store generated resources data during RerunConstructionScripts</summary>
+[CppInclude("PCGComponent.h")]
 public partial struct FPCGComponentInstanceData {
-// PCGComponentInstanceData
 	public TArray<UPCGManagedResource> GeneratedResources;
 	public UPCGComponent SourceComponent;
 }

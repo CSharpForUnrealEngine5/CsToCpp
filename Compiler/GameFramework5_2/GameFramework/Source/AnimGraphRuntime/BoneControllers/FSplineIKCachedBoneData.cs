@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("BoneControllers/AnimNode_SplineIK.h")]
 ///<summary>Data cached per bone in the chain</summary>
+[CppInclude("BoneControllers/AnimNode_SplineIK.h")]
 public partial struct FSplineIKCachedBoneData {
-// SplineIKCachedBoneData
 	public FBoneReference Bone;
 	public int RefSkeletonIndex;
 }

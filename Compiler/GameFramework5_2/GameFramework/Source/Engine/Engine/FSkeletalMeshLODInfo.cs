@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Engine/SkinnedAssetCommon.h")]
 ///<summary>Struct containing information for a particular LOD level, such as materials and info for when to use it.</summary>
+[CppInclude("Engine/SkinnedAssetCommon.h")]
 public partial struct FSkeletalMeshLODInfo {
-// SkeletalMeshLODInfo
 	public FPerPlatformFloat ScreenSize;
 	public float LODHysteresis;
 	public TArray<int> LODMaterialMap;

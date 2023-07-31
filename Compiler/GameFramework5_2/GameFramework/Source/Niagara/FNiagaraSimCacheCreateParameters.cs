@@ -1,9 +1,8 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("NiagaraSimCache.h")]
 public partial struct FNiagaraSimCacheCreateParameters {
-// NiagaraSimCacheCreateParameters
 	public ENiagaraSimCacheAttributeCaptureMode AttributeCaptureMode;
 	public bool bAllowRebasing;
 	public bool bAllowDataInterfaceCaching;

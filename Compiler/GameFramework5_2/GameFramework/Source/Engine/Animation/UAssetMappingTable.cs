@@ -1,9 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Animation/AssetMappingTable.h")]
 ///<summary>UAssetMappingTable : that has AssetMappingTableging data</summary>
+[CppInclude("Animation/AssetMappingTable.h")]
 public partial class UAssetMappingTable : UObject {
-// AssetMappingTable
+	///<summary>Mappin of asset between source and target *</summary>
 	public TArray<FAssetMapping> MappedAssets;
 }

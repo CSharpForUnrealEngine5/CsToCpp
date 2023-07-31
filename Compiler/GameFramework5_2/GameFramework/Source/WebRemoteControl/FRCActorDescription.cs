@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("RemoteControlModels.h")]
 ///<summary>A description of an actor that can both uniquely identify it and provide a user-friendly name.</summary>
+[CppInclude("RemoteControlModels.h")]
 public partial struct FRCActorDescription {
-// RCActorDescription
 	public string Name;
 	public string Path;
 }

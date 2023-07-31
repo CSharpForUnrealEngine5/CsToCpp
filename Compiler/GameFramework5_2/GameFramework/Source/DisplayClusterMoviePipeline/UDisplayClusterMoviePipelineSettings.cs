@@ -1,9 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("DisplayClusterMoviePipelineSettings.h")]
 ///<summary>nDisplay settings for MoviePipeline</summary>
+[CppInclude("DisplayClusterMoviePipelineSettings.h")]
 public partial class UDisplayClusterMoviePipelineSettings : UMoviePipelineSetting {
-// DisplayClusterMoviePipelineSettings
+	///<summary>Reference to Display Cluster Root Actor</summary>
 	public FDisplayClusterMoviePipelineConfiguration Configuration;
 }

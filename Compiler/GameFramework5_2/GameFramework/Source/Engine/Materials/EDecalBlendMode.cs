@@ -1,8 +1,8 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Materials/Material.h")]
-///<summary>Defines how the GBuffer channels are getting manipulated by a decal material pass. Actual index is used to control shader parameters so don't change order.</summary>
+///<summary>Defines how the GBuffer channels are getting manipulated by a decal material pass. Actual index is used to control shader parameters so don&#39;t change order.</summary>
 public enum EDecalBlendMode {
 	DBM_Translucent=0,
 	DBM_Stain=1,

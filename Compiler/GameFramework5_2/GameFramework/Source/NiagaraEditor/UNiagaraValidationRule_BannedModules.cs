@@ -1,10 +1,11 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("NiagaraValidationRules.h")]
 ///<summary>This validation rule can ban the use of certain modules on all or a subset of platforms.</summary>
+[CppInclude("NiagaraValidationRules.h")]
 public partial class UNiagaraValidationRule_BannedModules : UNiagaraValidationRule {
-// NiagaraValidationRule_BannedModules
+	///<summary>Platforms this validation rule will apply to.</summary>
 	public FNiagaraPlatformSet Platforms;
+	///<summary>BannedModules</summary>
 	public TArray<UNiagaraScript> BannedModules;
 }

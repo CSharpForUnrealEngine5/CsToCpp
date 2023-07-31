@@ -1,12 +1,15 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Physics/PhysicsInspectorTool.h")]
 ///<summary>Mesh Inspector Tool for visualizing mesh information</summary>
+[CppInclude("Physics/PhysicsInspectorTool.h")]
 public partial class UPhysicsInspectorTool : UMultiSelectionMeshEditingTool {
-// PhysicsInspectorTool
+	///<summary>VizSettings</summary>
 	public UCollisionGeometryVisualizationProperties VizSettings;
+	///<summary>ObjectData</summary>
 	public TArray<UPhysicsObjectToolPropertySet> ObjectData;
+	///<summary>LineMaterial</summary>
 	public UMaterialInterface LineMaterial;
+	///<summary>PreviewElements</summary>
 	public TArray<UPreviewGeometry> PreviewElements;
 }

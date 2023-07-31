@@ -1,8 +1,7 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("DatasmithImportOptions.h")]
 ///<summary>Base class for all import options in datasmith.</summary>
+[CppInclude("DatasmithImportOptions.h")]
 public partial class UDatasmithOptionsBase : UObject {
-// DatasmithOptionsBase
 }

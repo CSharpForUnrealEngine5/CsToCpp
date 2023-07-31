@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("NavFilters/NavigationQueryFilter.h")]
 ///<summary>Use UNavigationSystemV1.DescribeFilterFlags() to setup user friendly names of flags</summary>
+[CppInclude("NavFilters/NavigationQueryFilter.h")]
 public partial struct FNavigationFilterFlags {
-// NavigationFilterFlags
 	public bool bNavFlag0;
 	public bool bNavFlag1;
 	public bool bNavFlag2;

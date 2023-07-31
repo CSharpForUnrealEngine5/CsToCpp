@@ -1,9 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Blueprints/PFMExporterBlueprintLib.h")]
 ///<summary>Blueprint API function library</summary>
+[CppInclude("Blueprints/PFMExporterBlueprintLib.h")]
 public partial class UPFMExporterBlueprintLib : UBlueprintFunctionLibrary {
-// PFMExporterBlueprintLib
+	///<summary>Return Display Cluster API interface.</summary>
 	public static void GetAPI(object /*OutAPI*/ OutAPI) {}
 }

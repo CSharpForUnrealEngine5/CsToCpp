@@ -1,9 +1,8 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("CorrectivesRBFSolver.h")]
 ///<summary>Struct storing a particular entry within the RBF</summary>
+[CppInclude("CorrectivesRBFSolver.h")]
 public partial struct FCorrectivesRBFEntry {
-// CorrectivesRBFEntry
 	public TArray<float> Values;
 }

@@ -1,8 +1,7 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("BinkMediaPlayer.h")]
-///<summary>Multicast delegate that is invoked when a media player's media has finished playing.</summary>
+///<summary>Multicast delegate that is invoked when a media player&#39;s media has finished playing.</summary>
 public partial struct FOnBinkMediaPlayerMediaReachedEnd {
 // OnBinkMediaPlayerMediaReachedEnd__DelegateSignature
 	void AddDynamic(object obj, string functionName) {}

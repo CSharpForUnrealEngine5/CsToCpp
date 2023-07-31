@@ -1,9 +1,8 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("OculusPlatformToolSettings.h")]
 public partial struct FAssetConfig {
-// AssetConfig
 	public EOculusAssetType AssetType;
 	public bool Required;
 	public string Name;

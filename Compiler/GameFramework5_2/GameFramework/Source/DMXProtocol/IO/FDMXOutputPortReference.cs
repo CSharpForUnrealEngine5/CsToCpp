@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("IO/DMXOutputPortReference.h")]
 ///<summary>Reference of an input port</summary>
+[CppInclude("IO/DMXOutputPortReference.h")]
 public partial struct FDMXOutputPortReference {
-// DMXOutputPortReference
 	public FGuid PortGuid;
 	public bool bEnabledFlag;
 }

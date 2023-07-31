@@ -1,8 +1,7 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("RigVMCore/RigVMMemoryStorage.h")]
 ///<summary>The URigVMMemoryStorage represents an instance of heterogeneous memory.</summary>
+[CppInclude("RigVMCore/RigVMMemoryStorage.h")]
 public partial class URigVMMemoryStorage : UObject {
-// RigVMMemoryStorage
 }

@@ -1,9 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Tracks/MovieSceneEnumTrack.h")]
 ///<summary>Handles manipulation of byte properties in a movie scene</summary>
+[CppInclude("Tracks/MovieSceneEnumTrack.h")]
 public partial class UMovieSceneEnumTrack : UMovieScenePropertyTrack {
-// MovieSceneEnumTrack
+	///<summary>Enum</summary>
 	public UEnum Enum;
 }

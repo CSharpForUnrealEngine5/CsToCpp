@@ -1,9 +1,10 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("EnvironmentQueryGraphNode_Root.h")]
 public partial class UEnvironmentQueryGraphNode_Root : UEnvironmentQueryGraphNode {
-// EnvironmentQueryGraphNode_Root
+	///<summary>DebugMessages</summary>
 	public TArray<string> DebugMessages;
+	///<summary>bHasDebugError</summary>
 	public bool bHasDebugError;
 }

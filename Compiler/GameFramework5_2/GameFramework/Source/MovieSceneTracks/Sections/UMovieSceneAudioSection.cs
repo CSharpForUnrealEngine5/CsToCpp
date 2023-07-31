@@ -1,33 +1,57 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Sections/MovieSceneAudioSection.h")]
 ///<summary>Audio section, for use in the audio track, or by attached audio objects</summary>
+[CppInclude("Sections/MovieSceneAudioSection.h")]
 public partial class UMovieSceneAudioSection : UMovieSceneSection {
-// MovieSceneAudioSection
+	///<summary>Sets this section&#39;s sound</summary>
 	public  void SetSound(USoundBase InSound) {}
+	///<summary>Gets the sound for this section</summary>
 	public  USoundBase GetSound() { return default; }
+	///<summary>Set the offset into the beginning of the audio clip</summary>
 	public  void SetStartOffset(FFrameNumber InStartOffset) {}
+	///<summary>Get the offset into the beginning of the audio clip</summary>
 	public  FFrameNumber GetStartOffset() { return default; }
+	///<summary>The sound cue or wave that this section plays</summary>
 	public USoundBase Sound;
+	///<summary>The offset into the beginning of the audio clip</summary>
 	public FFrameNumber StartFrameOffset;
+	///<summary>The offset into the beginning of the audio clip</summary>
 	public float StartOffset_DEPRECATED;
+	///<summary>The absolute time that the sound starts playing at</summary>
 	public float AudioStartTime_DEPRECATED;
+	///<summary>The amount which this audio is time dilated by</summary>
 	public float AudioDilationFactor_DEPRECATED;
+	///<summary>The volume the sound will be played with.</summary>
 	public float AudioVolume_DEPRECATED;
+	///<summary>The volume the sound will be played with.</summary>
 	public FMovieSceneFloatChannel SoundVolume;
+	///<summary>The pitch multiplier the sound will be played with.</summary>
 	public FMovieSceneFloatChannel PitchMultiplier;
+	///<summary>Generic inputs for the sound</summary>
 	public TMap<string,FMovieSceneFloatChannel> Inputs_Float;
+	///<summary>Inputs_String</summary>
 	public TMap<string,FMovieSceneStringChannel> Inputs_String;
+	///<summary>Inputs_Bool</summary>
 	public TMap<string,FMovieSceneBoolChannel> Inputs_Bool;
+	///<summary>Inputs_Int</summary>
 	public TMap<string,FMovieSceneIntegerChannel> Inputs_Int;
+	///<summary>Inputs_Trigger</summary>
 	public TMap<string,FMovieSceneAudioTriggerChannel> Inputs_Trigger;
+	///<summary>AttachActorData</summary>
 	public FMovieSceneActorReferenceData AttachActorData;
+	///<summary>Allow looping if the section length is greater than the sound duration</summary>
 	public bool bLooping;
+	///<summary>bSuppressSubtitles</summary>
 	public bool bSuppressSubtitles;
+	///<summary>Should the attenuation settings on this section be used.</summary>
 	public bool bOverrideAttenuation;
+	///<summary>The attenuation settings to use.</summary>
 	public USoundAttenuation AttenuationSettings;
+	///<summary>Called when subtitles are sent to the SubtitleManager.  Set this delegate if you want to hijack the subtitles for other purposes</summary>
 	public FOnQueueSubtitles OnQueueSubtitles;
+	///<summary>called when we finish playing audio, either because it played to completion or because a Stop() call turned it off early</summary>
 	public FOnAudioFinished OnAudioFinished;
+	///<summary>OnAudioPlaybackPercent</summary>
 	public FOnAudioPlaybackPercent OnAudioPlaybackPercent;
 }

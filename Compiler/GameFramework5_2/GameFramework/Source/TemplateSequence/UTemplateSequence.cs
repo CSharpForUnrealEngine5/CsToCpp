@@ -1,11 +1,13 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("TemplateSequence.h")]
 ///<summary>* Movie scene animation that can be instanced multiple times inside a level sequence.</summary>
+[CppInclude("TemplateSequence.h")]
 public partial class UTemplateSequence : UMovieSceneSequence {
-// TemplateSequence
+	///<summary>MovieScene</summary>
 	public UMovieScene MovieScene;
+	///<summary>BoundActorClass</summary>
 	public TSoftObjectPtr<UClass> BoundActorClass;
+	///<summary>BoundActorComponents</summary>
 	public TMap<FGuid,string> BoundActorComponents;
 }

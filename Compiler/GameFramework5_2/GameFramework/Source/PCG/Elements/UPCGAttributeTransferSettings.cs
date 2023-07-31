@@ -1,10 +1,11 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Elements/PCGAttributeTransferElement.h")]
 ///<summary>Transfer an attribute from a source metadata to a target data.</summary>
+[CppInclude("Elements/PCGAttributeTransferElement.h")]
 public partial class UPCGAttributeTransferSettings : UPCGSettings {
-// PCGAttributeTransferSettings
+	///<summary>SourceAttributeName</summary>
 	public string SourceAttributeName;
+	///<summary>TargetAttributeName</summary>
 	public string TargetAttributeName;
 }

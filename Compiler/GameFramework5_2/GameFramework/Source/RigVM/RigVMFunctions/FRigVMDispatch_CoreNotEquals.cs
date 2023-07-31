@@ -1,8 +1,7 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("RigVMFunctions/RigVMDispatch_Core.h")]
 ///<summary>* Compares any two values and return true if they are identical</summary>
+[CppInclude("RigVMFunctions/RigVMDispatch_Core.h")]
 public partial struct FRigVMDispatch_CoreNotEquals {
-// RigVMDispatch_CoreNotEquals
 }

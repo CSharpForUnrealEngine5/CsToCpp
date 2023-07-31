@@ -1,10 +1,11 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("NiagaraPerfBaseline.h")]
 ///<summary>Actor that controls how the baseline system behaves and also controls stats gathering for.</summary>
+[CppInclude("NiagaraPerfBaseline.h")]
 public partial class ANiagaraPerfBaselineActor : AActor {
-// NiagaraPerfBaselineActor
+	///<summary>Controller</summary>
 	public UNiagaraBaselineController Controller;
+	///<summary>Label</summary>
 	public UTextRenderComponent Label;
 }

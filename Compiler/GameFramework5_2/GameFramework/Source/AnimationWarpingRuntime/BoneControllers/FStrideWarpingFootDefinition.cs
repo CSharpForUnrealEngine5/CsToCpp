@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("BoneControllers/AnimNode_StrideWarping.h")]
 ///<summary>Foot definition specifying the IK/FK foot bones and Thigh bone</summary>
+[CppInclude("BoneControllers/AnimNode_StrideWarping.h")]
 public partial struct FStrideWarpingFootDefinition {
-// StrideWarpingFootDefinition
 	public FBoneReference IKFootBone;
 	public FBoneReference FKFootBone;
 	public FBoneReference ThighBone;

@@ -1,11 +1,13 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("TakeRecorderMicrophoneAudioSource.h")]
 ///<summary>A recording source that records microphone audio</summary>
+[CppInclude("TakeRecorderMicrophoneAudioSource.h")]
 public partial class UTakeRecorderMicrophoneAudioSource : UTakeRecorderMicrophoneAudioSourceSettings {
-// TakeRecorderMicrophoneAudioSource
+	///<summary>Gain in decibels to apply to recorded audio</summary>
 	public float AudioGain;
+	///<summary>Whether or not to split mic channels into separate audio tracks. If not true, a max of 2 input channels is supported.</summary>
 	public bool bSplitAudioChannelsIntoSeparateTracks;
+	///<summary>Replace existing recorded audio with any newly recorded audio</summary>
 	public bool bReplaceRecordedAudio;
 }

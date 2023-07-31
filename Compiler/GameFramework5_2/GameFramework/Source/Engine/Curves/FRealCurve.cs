@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Curves/RealCurve.h")]
 ///<summary>A rich, editable float curve</summary>
+[CppInclude("Curves/RealCurve.h")]
 public partial struct FRealCurve {
-// RealCurve
 	public float DefaultValue;
 	public ERichCurveExtrapolation PreInfinityExtrap;
 	public ERichCurveExtrapolation PostInfinityExtrap;

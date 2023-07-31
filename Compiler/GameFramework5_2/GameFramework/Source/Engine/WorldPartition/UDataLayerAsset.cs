@@ -1,12 +1,16 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("WorldPartition/DataLayer/DataLayerAsset.h")]
 public partial class UDataLayerAsset : UObject {
-// DataLayerAsset
+	///<summary>GetType</summary>
 	public  EDataLayerType GetType() { return default; }
+	///<summary>IsRuntime</summary>
 	public  bool IsRuntime() { return default; }
+	///<summary>GetDebugColor</summary>
 	public  FColor GetDebugColor() { return default; }
+	///<summary>Whether the Data Layer affects actor runtime loading</summary>
 	public EDataLayerType DataLayerType;
+	///<summary>DebugColor</summary>
 	public FColor DebugColor;
 }

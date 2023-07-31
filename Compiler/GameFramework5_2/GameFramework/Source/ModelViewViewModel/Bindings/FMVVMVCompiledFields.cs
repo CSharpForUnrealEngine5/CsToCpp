@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Bindings/MVVMCompiledBindingLibrary.h")]
 ///<summary>The info to fetch a list of FProperty or UFunction from a Class that will be needed by bindings.</summary>
+[CppInclude("Bindings/MVVMCompiledBindingLibrary.h")]
 public partial struct FMVVMVCompiledFields {
-// MVVMVCompiledFields
 	public UStruct ClassOrScriptStruct;
 	public short LibraryStartIndex;
 	public short NumberOfProperties;

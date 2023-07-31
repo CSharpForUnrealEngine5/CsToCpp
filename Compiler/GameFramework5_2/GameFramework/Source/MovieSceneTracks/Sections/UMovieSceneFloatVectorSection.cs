@@ -1,10 +1,11 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Sections/MovieSceneVectorSection.h")]
 ///<summary>A float vector section.</summary>
+[CppInclude("Sections/MovieSceneVectorSection.h")]
 public partial class UMovieSceneFloatVectorSection : UMovieSceneSection {
-// MovieSceneFloatVectorSection
+	///<summary>Float functions for the X,Y,Z,W components of the vector</summary>
 	public FMovieSceneFloatChannel Curves;
+	///<summary>How many curves are actually used</summary>
 	public int ChannelsUsed;
 }

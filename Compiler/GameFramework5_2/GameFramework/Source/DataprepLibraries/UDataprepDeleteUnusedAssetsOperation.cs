@@ -1,8 +1,7 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("DataprepEditingOperations.h")]
 ///<summary>Delete assets that are not referenced by any objects</summary>
+[CppInclude("DataprepEditingOperations.h")]
 public partial class UDataprepDeleteUnusedAssetsOperation : UDataprepEditingOperation {
-// DataprepDeleteUnusedAssetsOperation
 }

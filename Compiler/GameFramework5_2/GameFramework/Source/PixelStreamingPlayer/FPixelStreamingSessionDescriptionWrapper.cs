@@ -1,8 +1,7 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("PixelStreamingWebRTCWrappers.h")]
 ///<summary>A blueprint wrapper for an SessionDescriptionInterface from webrtc so it can be passed around in blueprints.</summary>
+[CppInclude("PixelStreamingWebRTCWrappers.h")]
 public partial struct FPixelStreamingSessionDescriptionWrapper {
-// PixelStreamingSessionDescriptionWrapper
 }

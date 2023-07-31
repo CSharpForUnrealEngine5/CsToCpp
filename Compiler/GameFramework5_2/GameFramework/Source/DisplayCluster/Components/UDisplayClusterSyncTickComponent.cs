@@ -1,8 +1,7 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Components/DisplayClusterSyncTickComponent.h")]
 ///<summary>Helper component to trigger nDisplay sync for Tick sync group</summary>
+[CppInclude("Components/DisplayClusterSyncTickComponent.h")]
 public partial class UDisplayClusterSyncTickComponent : UActorComponent {
-// DisplayClusterSyncTickComponent
 }

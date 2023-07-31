@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Evaluation/MovieSceneEvaluationField.h")]
 ///<summary>A key that uniquely identifies an entity by its owner and ID</summary>
+[CppInclude("Evaluation/MovieSceneEvaluationField.h")]
 public partial struct FMovieSceneEvaluationFieldEntityKey {
-// MovieSceneEvaluationFieldEntityKey
 	public TWeakObjectPtr<UObject> EntityOwner;
 	public uint EntityID;
 }

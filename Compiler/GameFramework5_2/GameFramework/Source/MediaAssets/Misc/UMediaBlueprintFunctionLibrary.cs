@@ -1,11 +1,13 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Misc/MediaBlueprintFunctionLibrary.h")]
 ///<summary>Blueprint library for Media related functions.</summary>
+[CppInclude("Misc/MediaBlueprintFunctionLibrary.h")]
 public partial class UMediaBlueprintFunctionLibrary : UBlueprintFunctionLibrary {
-// MediaBlueprintFunctionLibrary
+	///<summary>Enumerate available audio capture devices.</summary>
 	public static void EnumerateAudioCaptureDevices(TArray<FMediaCaptureDevice> OutDevices,int Filter/*=-1*/) {}
+	///<summary>Enumerate available audio capture devices.</summary>
 	public static void EnumerateVideoCaptureDevices(TArray<FMediaCaptureDevice> OutDevices,int Filter/*=-1*/) {}
+	///<summary>Enumerate available audio capture devices.</summary>
 	public static void EnumerateWebcamCaptureDevices(TArray<FMediaCaptureDevice> OutDevices,int Filter/*=-1*/) {}
 }

@@ -1,8 +1,8 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("AudioMixerBlueprintLibrary.h")]
-///<summary>A copy of Audio::EAudioMixerChannel::Type to get around UHT's refusal of namespaces</summary>
+///<summary>A copy of Audio::EAudioMixerChannel::Type to get around UHT&#39;s refusal of namespaces</summary>
 public enum EAudioMixerChannelType {
 	FrontLeft=0,
 	FrontRight=1,

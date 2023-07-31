@@ -1,9 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
+///<summary>Base class for any &quot;data&quot; class in the PCG framework.</summary>
 [CppInclude("PCGData.h")]
-///<summary>Base class for any "data" class in the PCG framework.</summary>
 public partial class UPCGData : UObject {
-// PCGData
+	///<summary>Unique ID for this object instance.</summary>
 	public ulong UID;
 }

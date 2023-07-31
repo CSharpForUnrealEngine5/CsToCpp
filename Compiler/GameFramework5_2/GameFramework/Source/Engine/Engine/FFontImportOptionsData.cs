@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Engine/FontImportOptions.h")]
 ///<summary>Font import options</summary>
+[CppInclude("Engine/FontImportOptions.h")]
 public partial struct FFontImportOptionsData {
-// FontImportOptionsData
 	public string FontName;
 	public float Height;
 	public bool bEnableAntialiasing;

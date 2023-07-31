@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
+///<summary>Debug property display functionality to interact with this, use &quot;display&quot;, &quot;displayall&quot;, &quot;displayclear&quot;</summary>
 [CppInclude("Engine/DebugDisplayProperty.h")]
-///<summary>Debug property display functionality to interact with this, use "display", "displayall", "displayclear"</summary>
 public partial struct FDebugDisplayProperty {
-// DebugDisplayProperty
 	public UObject Obj;
 	public UClass WithinClass;
 }

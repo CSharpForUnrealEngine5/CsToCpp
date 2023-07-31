@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
+///<summary>An action setting a comment node&#39;s text in the graph.</summary>
 [CppInclude("RigVMModel/RigVMControllerActions.h")]
-///<summary>An action setting a comment node's text in the graph.</summary>
 public partial struct FRigVMSetCommentTextAction {
-// RigVMSetCommentTextAction
 	public string NodePath;
 	public string OldText;
 	public string NewText;

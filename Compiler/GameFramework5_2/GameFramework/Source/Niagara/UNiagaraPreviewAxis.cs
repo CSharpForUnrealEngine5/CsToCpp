@@ -1,10 +1,11 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("NiagaraPreviewGrid.h")]
 ///<summary>Base class for all preview axis types.</summary>
+[CppInclude("NiagaraPreviewGrid.h")]
 public partial class UNiagaraPreviewAxis : UObject {
-// NiagaraPreviewAxis
+	///<summary>Returns the number of previews for this axis.</summary>
 	public  int Num() { return default; }
+	///<summary>Applies this axis for the preview at PreviewIndex on this axis.</summary>
 	public  void ApplyToPreview(UNiagaraComponent PreviewComponent,int PreviewIndex,bool bIsXAxis,string OutLabelText) {}
 }

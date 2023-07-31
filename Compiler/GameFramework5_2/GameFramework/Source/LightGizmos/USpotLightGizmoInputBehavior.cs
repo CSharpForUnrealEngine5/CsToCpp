@@ -1,8 +1,7 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("SpotLightGizmo.h")]
 ///<summary>A behavior that forwards clicking and dragging to the gizmo.</summary>
+[CppInclude("SpotLightGizmo.h")]
 public partial class USpotLightGizmoInputBehavior : UAnyButtonInputBehavior {
-// SpotLightGizmoInputBehavior
 }

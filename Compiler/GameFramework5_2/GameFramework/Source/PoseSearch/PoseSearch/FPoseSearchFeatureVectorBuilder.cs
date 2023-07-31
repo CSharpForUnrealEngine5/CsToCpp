@@ -1,9 +1,8 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("PoseSearch/PoseSearchResult.h")]
 ///<summary>float buffer of features according to a UPoseSearchSchema layout.</summary>
+[CppInclude("PoseSearch/PoseSearchResult.h")]
 public partial struct FPoseSearchFeatureVectorBuilder {
-// PoseSearchFeatureVectorBuilder
 	public TWeakObjectPtr<UPoseSearchSchema> Schema;
 }

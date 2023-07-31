@@ -1,12 +1,15 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("TileMapBlueprintLibrary.h")]
 ///<summary>A collection of utility methods for working with tile map components</summary>
+[CppInclude("TileMapBlueprintLibrary.h")]
 public partial class UTileMapBlueprintLibrary : UBlueprintFunctionLibrary {
-// TileMapBlueprintLibrary
+	///<summary>Returns the user data name for the specified tile, or NAME_None if there is no user-specified data</summary>
 	public static string GetTileUserData(FPaperTileInfo Tile) { return default; }
+	///<summary>Returns the transform for a tile</summary>
 	public static FTransform GetTileTransform(FPaperTileInfo Tile) { return default; }
+	///<summary>Breaks out the information for a tile</summary>
 	public static void BreakTile(FPaperTileInfo Tile,int TileIndex,UPaperTileSet TileSet,bool bFlipH,bool bFlipV,bool bFlipD) {}
+	///<summary>Creates a tile from the specified information</summary>
 	public static FPaperTileInfo MakeTile(int TileIndex,UPaperTileSet TileSet,bool bFlipH,bool bFlipV,bool bFlipD) { return default; }
 }

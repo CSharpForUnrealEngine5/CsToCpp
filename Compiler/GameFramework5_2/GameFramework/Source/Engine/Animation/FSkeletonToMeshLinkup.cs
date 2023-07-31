@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Animation/Skeleton.h")]
 ///<summary>This is a mapping table between bone in a particular skeletal mesh and bone of this skeleton set.</summary>
+[CppInclude("Animation/Skeleton.h")]
 public partial struct FSkeletonToMeshLinkup {
-// SkeletonToMeshLinkup
 	public TArray<int> SkeletonToMeshTable;
 	public TArray<int> MeshToSkeletonTable;
 }

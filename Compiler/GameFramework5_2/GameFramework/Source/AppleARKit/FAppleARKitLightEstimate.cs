@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("AppleARKitLightEstimate.h")]
 ///<summary>A light estimate represented as spherical harmonics</summary>
+[CppInclude("AppleARKitLightEstimate.h")]
 public partial struct FAppleARKitLightEstimate {
-// AppleARKitLightEstimate
 	public bool bIsValid;
 	public float AmbientIntensity;
 	public float AmbientColorTemperatureKelvin;

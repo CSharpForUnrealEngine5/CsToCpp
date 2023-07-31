@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("NiagaraCommon.h")]
 ///<summary>Helper for reseting/reinitializing Niagara systems currently active when they are being edited.</summary>
+[CppInclude("NiagaraCommon.h")]
 public partial struct FNiagaraSystemUpdateContext {
-// NiagaraSystemUpdateContext
 	public TArray<UNiagaraComponent> ComponentsToReset;
 	public TArray<UNiagaraComponent> ComponentsToReInit;
 	public TArray<UNiagaraComponent> ComponentsToNotifySimDestroy;

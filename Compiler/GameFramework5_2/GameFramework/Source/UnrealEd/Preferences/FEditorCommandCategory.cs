@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Preferences/UnrealEdOptions.h")]
 ///<summary>A category to store a list of commands.</summary>
+[CppInclude("Preferences/UnrealEdOptions.h")]
 public partial struct FEditorCommandCategory {
-// EditorCommandCategory
 	public string Parent;
 	public string Name;
 }

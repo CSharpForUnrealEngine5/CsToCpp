@@ -1,9 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("DataprepSelectionTransforms.h")]
 ///<summary>Return assets directly used/referenced by the selected objects.</summary>
+[CppInclude("DataprepSelectionTransforms.h")]
 public partial class UDataprepReferenceSelectionTransform : UDataprepSelectionTransform {
-// DataprepReferenceSelectionTransform
+	///<summary>Include assets referenced/used by assets directly referenced/used by selected objects</summary>
 	public bool bAllowIndirectReferences;
 }

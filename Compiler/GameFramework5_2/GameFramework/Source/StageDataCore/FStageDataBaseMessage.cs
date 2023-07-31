@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("StageMessages.h")]
 ///<summary>Base structure for all stage monitoring messages</summary>
+[CppInclude("StageMessages.h")]
 public partial struct FStageDataBaseMessage {
-// StageDataBaseMessage
 	public int StageMessageVersion;
 	public FGuid Identifier;
 }

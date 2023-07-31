@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("MetasoundFrontendDocument.h")]
 ///<summary>An FMetasoundFrontendNode represents a single instance of a FMetasoundFrontendClass</summary>
+[CppInclude("MetasoundFrontendDocument.h")]
 public partial struct FMetasoundFrontendNode {
-// MetasoundFrontendNode
 	public FGuid ID;
 	public FGuid ClassID;
 	public string Name;

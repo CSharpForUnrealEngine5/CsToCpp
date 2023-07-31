@@ -1,9 +1,10 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("AlembicImportFactory.h")]
 public partial class UAlembicImportFactory : UFactory {
-// AlembicImportFactory
+	///<summary>Object used to show import options for Alembic</summary>
 	public UAbcImportSettings ImportSettings;
+	///<summary>bShowOption</summary>
 	public bool bShowOption;
 }

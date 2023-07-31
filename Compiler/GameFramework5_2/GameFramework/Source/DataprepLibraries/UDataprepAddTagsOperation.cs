@@ -1,9 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("DataprepOperations.h")]
 ///<summary>On each actor to process, add specified tags</summary>
+[CppInclude("DataprepOperations.h")]
 public partial class UDataprepAddTagsOperation : UDataprepOperation {
-// DataprepAddTagsOperation
+	///<summary>Array of tags to add</summary>
 	public TArray<string> Tags;
 }

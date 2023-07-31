@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("RigVMFunctions/Math/RigVMFunction_Random.h")]
 ///<summary>Generates a random float between a min and a max</summary>
+[CppInclude("RigVMFunctions/Math/RigVMFunction_Random.h")]
 public partial struct FRigVMFunction_RandomFloat {
-// RigVMFunction_RandomFloat
 	public int Seed;
 	public float Minimum;
 	public float Maximum;

@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("GameplayEffectTypes.h")]
 ///<summary>Data that describes what happened in an attribute modification. This is passed to ability set callbacks</summary>
+[CppInclude("GameplayEffectTypes.h")]
 public partial struct FGameplayModifierEvaluatedData {
-// GameplayModifierEvaluatedData
 	public FGameplayAttribute Attribute;
 	public EGameplayModOp ModifierOp;
 	public float Magnitude;

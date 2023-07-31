@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Tests/StructSerializerTestTypes.h")]
 ///<summary>Test structure for Non-LWC version of built in types.</summary>
+[CppInclude("Tests/StructSerializerTestTypes.h")]
 public partial struct FStructSerializerNonLWCTypesTest {
-// StructSerializerNonLWCTypesTest
 	public FVector3f Vector;
 	public FVector2f Vector2D;
 	public FVector4f Vector4;

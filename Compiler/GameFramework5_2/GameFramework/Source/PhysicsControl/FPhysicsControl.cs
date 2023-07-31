@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
+///<summary>Structure that determines a &quot;control&quot; - this contains all the information needed to drive (with spring-dampers)</summary>
 [CppInclude("PhysicsControlData.h")]
-///<summary>Structure that determines a "control" - this contains all the information needed to drive (with spring-dampers)</summary>
 public partial struct FPhysicsControl {
-// PhysicsControl
 	public UMeshComponent ParentMeshComponent;
 	public string ParentBoneName;
 	public UMeshComponent ChildMeshComponent;

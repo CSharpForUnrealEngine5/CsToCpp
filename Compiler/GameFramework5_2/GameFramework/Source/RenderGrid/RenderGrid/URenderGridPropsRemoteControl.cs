@@ -1,9 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("RenderGrid/RenderGridPropsSource.h")]
 ///<summary>The remote control properties implementation of the render grid properties abstraction.</summary>
+[CppInclude("RenderGrid/RenderGridPropsSource.h")]
 public partial class URenderGridPropsRemoteControl : URenderGridPropsBase {
-// RenderGridPropsRemoteControl
+	///<summary>The source of properties, which is a remote control preset.</summary>
 	public URemoteControlPreset RemoteControlPreset;
 }

@@ -1,10 +1,12 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("PCGManagedResource.h")]
 public partial class UPCGManagedISMComponent : UPCGManagedComponent {
-// PCGManagedISMComponent
+	///<summary>bHasDescriptor</summary>
 	public bool bHasDescriptor;
+	///<summary>Descriptor</summary>
 	public FISMComponentDescriptor Descriptor;
+	///<summary>SettingsUID</summary>
 	public ulong SettingsUID;
 }

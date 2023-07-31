@@ -1,9 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
+///<summary>Implements the Mesh Editor&#39;s settings.</summary>
 [CppInclude("MeshPaintModeSettings.h")]
-///<summary>Implements the Mesh Editor's settings.</summary>
 public partial class UMeshPaintModeSettings : UObject {
-// MeshPaintModeSettings
+	///<summary>Color view mode used to display Vertex Colors</summary>
 	public EMeshPaintDataColorViewMode ColorViewMode;
 }

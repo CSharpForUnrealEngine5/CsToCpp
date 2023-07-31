@@ -1,9 +1,8 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Util/VCamViewportLocker.h")]
 ///<summary>Keeps track of which viewports are locked</summary>
+[CppInclude("Util/VCamViewportLocker.h")]
 public partial struct FVCamViewportLocker {
-// VCamViewportLocker
 	public TMap<EVCamTargetViewportID,FVCamViewportLockState> Locks;
 }

@@ -1,7 +1,6 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Blueprint/DragDropOperation.h")]
 public partial struct FOnDragDropMulticast {
 // OnDragDropMulticast__DelegateSignature
 	void AddDynamic(object obj, string functionName) {}

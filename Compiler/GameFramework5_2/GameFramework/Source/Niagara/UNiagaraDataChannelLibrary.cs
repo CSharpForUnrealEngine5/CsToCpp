@@ -1,9 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("NiagaraDataChannel.h")]
 ///<summary>A C++ and Blueprint accessible library of utility functions for accessing Niagara DataChannel</summary>
+[CppInclude("NiagaraDataChannel.h")]
 public partial class UNiagaraDataChannelLibrary : UBlueprintFunctionLibrary {
-// NiagaraDataChannelLibrary
+	///<summary>GetNiagaraDataChannel</summary>
 	public static UNiagaraDataChannelHandler GetNiagaraDataChannel(UObject WorldContextObject,string Channel) { return default; }
 }

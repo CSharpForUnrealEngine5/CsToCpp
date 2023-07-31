@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
+///<summary>Properties of representation of an &#39;agent&#39; (or Pawn) used by AI navigation/pathfinding.</summary>
 [CppInclude("AI/Navigation/NavigationTypes.h")]
-///<summary>Properties of representation of an 'agent' (or Pawn) used by AI navigation/pathfinding.</summary>
 public partial struct FNavAgentProperties {
-// NavAgentProperties
 	public float AgentRadius;
 	public float AgentHeight;
 	public float AgentStepHeight;

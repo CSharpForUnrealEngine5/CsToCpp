@@ -1,14 +1,19 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("AnimTimeline/AnimTimelineClipboard.h")]
 ///<summary>Object used to export AnimCurves to clipboard</summary>
+[CppInclude("AnimTimeline/AnimTimelineClipboard.h")]
 public partial class UAnimCurveBaseCopyObject : UObject {
-// AnimCurveBaseCopyObject
+	///<summary>SmartName Start</summary>
 	public string DisplayName;
+	///<summary>UID</summary>
 	public ushort UID;
+	///<summary>SmartName End</summary>
 	public ERawCurveTrackTypes CurveType;
+	///<summary>Channel</summary>
 	public ETransformCurveChannel Channel;
+	///<summary>Axis</summary>
 	public EVectorCurveChannel Axis;
+	///<summary>This curve&#39;s data owner name (ex. UAnimSequenceBase Name), if any. Used internally to check if the user is attempting to paste curve data into source curve.</summary>
 	public string OriginName;
 }

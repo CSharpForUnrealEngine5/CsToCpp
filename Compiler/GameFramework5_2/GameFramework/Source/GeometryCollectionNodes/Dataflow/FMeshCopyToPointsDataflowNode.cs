@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Dataflow/GeometryCollectionMeshNodes.h")]
 ///<summary>Copies the same mesh with scale onto points</summary>
+[CppInclude("Dataflow/GeometryCollectionMeshNodes.h")]
 public partial struct FMeshCopyToPointsDataflowNode {
-// MeshCopyToPointsDataflowNode
 	public TArray<FVector> Points;
 	public UDynamicMesh MeshToCopy;
 	public float Scale;

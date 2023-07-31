@@ -1,9 +1,8 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Dataflow/ChaosFleshPositionTargetInitializationNodes.h")]
 public partial struct FAddKinematicParticlesDataflowNode {
-// AddKinematicParticlesDataflowNode
 	public float Radius;
 	public FTransform Transform;
 	public ESkeletalSeletionMode SkeletalSelectionMode;

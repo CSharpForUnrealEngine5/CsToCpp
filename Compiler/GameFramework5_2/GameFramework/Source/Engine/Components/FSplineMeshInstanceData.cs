@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Components/SplineMeshComponent.h")]
 ///<summary>Used to store spline mesh data during RerunConstructionScripts</summary>
+[CppInclude("Components/SplineMeshComponent.h")]
 public partial struct FSplineMeshInstanceData {
-// SplineMeshInstanceData
 	public FVector StartPos;
 	public FVector EndPos;
 	public FVector StartTangent;

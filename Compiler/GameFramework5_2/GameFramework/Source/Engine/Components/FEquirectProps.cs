@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Components/StereoLayerComponent.h")]
 ///<summary>Properties for equirect layers</summary>
+[CppInclude("Components/StereoLayerComponent.h")]
 public partial struct FEquirectProps {
-// EquirectProps
 	public FBox2D LeftUVRect;
 	public FBox2D RightUVRect;
 	public FVector2D LeftScale;

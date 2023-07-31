@@ -1,9 +1,8 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Sound/SoundSourceBusSend.h")]
 public partial struct FSoundSourceBusSendInfo {
-// SoundSourceBusSendInfo
 	public ESourceBusSendLevelControlMethod SourceBusSendLevelControlMethod;
 	public USoundSourceBus SoundSourceBus;
 	public UAudioBus AudioBus;

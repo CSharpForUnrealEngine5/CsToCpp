@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
+///<summary>SetBoneTranslation is used to perform a change in the hierarchy by setting a single bone&#39;s Translation.</summary>
 [CppInclude("Units/Hierarchy/RigUnit_SetBoneTranslation.h")]
-///<summary>SetBoneTranslation is used to perform a change in the hierarchy by setting a single bone's Translation.</summary>
 public partial struct FRigUnit_SetBoneTranslation {
-// RigUnit_SetBoneTranslation
 	public string Bone;
 	public FVector Translation;
 	public ERigVMTransformSpace Space;

@@ -1,9 +1,8 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Units/Execution/RigUnit_DynamicHierarchy.h")]
 public partial struct FRigUnit_HierarchyAddControlInteger_Settings {
-// RigUnit_HierarchyAddControlInteger_Settings
 	public ERigControlAxis PrimaryAxis;
 	public FRigUnit_HierarchyAddControlInteger_LimitSettings Limits;
 	public FRigUnit_HierarchyAddControl_ShapeSettings Shape;

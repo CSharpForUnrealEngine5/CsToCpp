@@ -1,9 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Blueprints/DisplayClusterProjectionBlueprintAPIImpl.h")]
 ///<summary>Blueprint API interface implementation</summary>
+[CppInclude("Blueprints/DisplayClusterProjectionBlueprintAPIImpl.h")]
 public partial class UDisplayClusterProjectionBlueprintAPIImpl : UObject {
-// DisplayClusterProjectionBlueprintAPIImpl
+	///<summary>Sets active camera component for camera policy</summary>
 	public  void CameraPolicySetCamera(string ViewportId,UCameraComponent NewCamera,float FOVMultiplier/*=1.0f*/) {}
 }

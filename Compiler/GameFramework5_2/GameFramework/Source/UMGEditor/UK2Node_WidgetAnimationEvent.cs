@@ -1,11 +1,14 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("K2Node_WidgetAnimationEvent.h")]
 public partial class UK2Node_WidgetAnimationEvent : UK2Node_Event {
-// K2Node_WidgetAnimationEvent
+	///<summary>The action to bind to.</summary>
 	public EWidgetAnimationEvent Action;
+	///<summary>Name of property in Blueprint class that pointer to component we want to bind to</summary>
 	public string AnimationPropertyName;
+	///<summary>Binds this to a specific user action.</summary>
 	public string UserTag;
+	///<summary>SourceWidgetBlueprint</summary>
 	public UWidgetBlueprint SourceWidgetBlueprint;
 }

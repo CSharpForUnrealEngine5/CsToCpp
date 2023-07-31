@@ -1,8 +1,7 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("GeometryScript/GeometryScriptTypes.h")]
 ///<summary>Spatial data structures</summary>
+[CppInclude("GeometryScript/GeometryScriptTypes.h")]
 public partial struct FGeometryScriptDynamicMeshBVH {
-// GeometryScriptDynamicMeshBVH
 }

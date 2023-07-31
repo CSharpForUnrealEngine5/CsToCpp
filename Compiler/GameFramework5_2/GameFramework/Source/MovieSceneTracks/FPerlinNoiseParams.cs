@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("MovieSceneTracksComponentTypes.h")]
 ///<summary>Component data for Perlin Noise channels</summary>
+[CppInclude("MovieSceneTracksComponentTypes.h")]
 public partial struct FPerlinNoiseParams {
-// PerlinNoiseParams
 	public float Frequency;
 	public double Amplitude;
 	public float Offset;

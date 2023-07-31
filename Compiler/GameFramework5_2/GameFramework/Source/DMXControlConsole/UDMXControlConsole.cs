@@ -1,9 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("DMXControlConsole.h")]
 ///<summary>The DMX Control Console</summary>
+[CppInclude("DMXControlConsole.h")]
 public partial class UDMXControlConsole : UObject {
-// DMXControlConsole
+	///<summary>Control Console reference</summary>
 	public UDMXControlConsoleData ControlConsoleData;
 }

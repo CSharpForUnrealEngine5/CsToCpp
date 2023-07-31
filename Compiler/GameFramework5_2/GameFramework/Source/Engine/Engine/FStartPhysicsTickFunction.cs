@@ -1,8 +1,7 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Engine/World.h")]
 ///<summary>Tick function that starts the physics tick</summary>
+[CppInclude("Engine/World.h")]
 public partial struct FStartPhysicsTickFunction {
-// StartPhysicsTickFunction
 }

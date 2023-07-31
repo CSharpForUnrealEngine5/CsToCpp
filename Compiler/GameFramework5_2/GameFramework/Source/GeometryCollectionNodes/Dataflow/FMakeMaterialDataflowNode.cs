@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Dataflow/GeometryCollectionMaterialNodes.h")]
 ///<summary>Makes a material</summary>
+[CppInclude("Dataflow/GeometryCollectionMaterialNodes.h")]
 public partial struct FMakeMaterialDataflowNode {
-// MakeMaterialDataflowNode
 	public UMaterial InMaterial;
 	public UMaterial Material;
 }

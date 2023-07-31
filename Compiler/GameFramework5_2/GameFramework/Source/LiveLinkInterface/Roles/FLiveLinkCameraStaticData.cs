@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Roles/LiveLinkCameraTypes.h")]
 ///<summary>Static data for Camera data.</summary>
+[CppInclude("Roles/LiveLinkCameraTypes.h")]
 public partial struct FLiveLinkCameraStaticData {
-// LiveLinkCameraStaticData
 	public bool bIsFieldOfViewSupported;
 	public bool bIsAspectRatioSupported;
 	public bool bIsFocalLengthSupported;

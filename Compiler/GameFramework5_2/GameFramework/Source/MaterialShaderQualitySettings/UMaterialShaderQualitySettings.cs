@@ -1,9 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("MaterialShaderQualitySettings.h")]
 ///<summary>UCLASS(config = Engine, defaultconfig)</summary>
+[CppInclude("MaterialShaderQualitySettings.h")]
 public partial class UMaterialShaderQualitySettings : UObject {
-// MaterialShaderQualitySettings
+	///<summary>ForwardSettingMap</summary>
 	public TMap<string,UShaderPlatformQualitySettings> ForwardSettingMap;
 }

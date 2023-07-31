@@ -1,9 +1,8 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("RigVMCore/RigVMStruct.h")]
 ///<summary>The base mutable class for all RigVM enabled structs.</summary>
+[CppInclude("RigVMCore/RigVMStruct.h")]
 public partial struct FRigVMStructMutable {
-// RigVMStructMutable
 	public FRigVMExecuteContext ExecuteContext;
 }

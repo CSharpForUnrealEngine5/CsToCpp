@@ -1,8 +1,8 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("SourceCodeAccessSettings.h")]
 public partial class USourceCodeAccessSettings : UObject {
-// SourceCodeAccessSettings
+	///<summary>The source code editor we prefer to use.</summary>
 	public string PreferredAccessor;
 }

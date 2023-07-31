@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("RigVMFunctions/RigVMFunction_ControlFlow.h")]
 ///<summary>Executes either the True or False branch based on the condition</summary>
+[CppInclude("RigVMFunctions/RigVMFunction_ControlFlow.h")]
 public partial struct FRigVMFunction_ControlFlowBranch {
-// RigVMFunction_ControlFlowBranch
 	public FRigVMExecuteContext ExecuteContext;
 	public bool Condition;
 	public FRigVMExecuteContext True;

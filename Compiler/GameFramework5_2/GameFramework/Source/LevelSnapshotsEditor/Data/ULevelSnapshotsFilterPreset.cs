@@ -1,9 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Data/Filters/LevelSnapshotsFilterPreset.h")]
 ///<summary>* Manages logic for combining filters in the editor.</summary>
+[CppInclude("Data/Filters/LevelSnapshotsFilterPreset.h")]
 public partial class ULevelSnapshotsFilterPreset : ULevelSnapshotFilter {
-// LevelSnapshotsFilterPreset
+	///<summary>Children</summary>
 	public TArray<UConjunctionFilter> Children;
 }

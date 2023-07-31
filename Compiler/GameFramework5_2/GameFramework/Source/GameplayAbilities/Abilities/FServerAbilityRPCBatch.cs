@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Abilities/GameplayAbilityTypes.h")]
 ///<summary>This struct holds state to batch server RPC calls: ServerTryActivateAbility, ServerSetReplicatedTargetData, ServerEndAbility.</summary>
+[CppInclude("Abilities/GameplayAbilityTypes.h")]
 public partial struct FServerAbilityRPCBatch {
-// ServerAbilityRPCBatch
 	public FGameplayAbilitySpecHandle AbilitySpecHandle;
 	public FPredictionKey PredictionKey;
 	public FGameplayAbilityTargetDataHandle TargetData;

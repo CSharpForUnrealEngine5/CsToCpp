@@ -1,9 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("IWaveformTransformation.h")]
 ///<summary>Object that holds an ordered list of transformations to perform on a sound wave</summary>
+[CppInclude("IWaveformTransformation.h")]
 public partial class UWaveformTransformationChain : UObject {
-// WaveformTransformationChain
+	///<summary>Transformations</summary>
 	public TArray<UWaveformTransformationBase> Transformations;
 }

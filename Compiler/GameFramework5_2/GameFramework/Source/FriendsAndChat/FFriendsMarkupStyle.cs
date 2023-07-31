@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("FriendsMarkupStyle.h")]
 ///<summary>Interface for the services manager.</summary>
+[CppInclude("FriendsMarkupStyle.h")]
 public partial struct FFriendsMarkupStyle {
-// FriendsMarkupStyle
 	public FButtonStyle MarkupButtonStyle;
 	public FTextBlockStyle MarkupTextStyle;
 	public FSlateBrush MarkupBackground;

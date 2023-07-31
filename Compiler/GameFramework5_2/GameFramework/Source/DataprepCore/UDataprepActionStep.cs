@@ -1,12 +1,16 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("DataprepActionAsset.h")]
 public partial class UDataprepActionStep : UObject {
-// DataprepActionStep
+	///<summary>End UObject Interface</summary>
 	public bool bIsEnabled;
+	///<summary>The actual object of the step</summary>
 	public UDataprepParameterizableObject StepObject;
+	///<summary>Will be used for future error message if the step object can&#39;t be loaded</summary>
 	public TSoftObjectPtr<UClass> PathOfStepObjectClass;
+	///<summary>The operation will only be not null if the step is a operation</summary>
 	public UDataprepOperation Operation_DEPRECATED;
+	///<summary>The Filter will only be not null if the step is a Filter/Selector</summary>
 	public UDataprepFilter Filter_DEPRECATED;
 }

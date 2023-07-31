@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("EditorTutorial.h")]
 ///<summary>Content that is displayed relative to a widget</summary>
+[CppInclude("EditorTutorial.h")]
 public partial struct FTutorialWidgetContent {
-// TutorialWidgetContent
 	public FTutorialContent Content;
 	public FTutorialContentAnchor WidgetAnchor;
 	public EHorizontalAlignment HorizontalAlignment;

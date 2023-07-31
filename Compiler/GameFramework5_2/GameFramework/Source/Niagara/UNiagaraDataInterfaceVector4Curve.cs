@@ -1,16 +1,23 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("NiagaraDataInterfaceVector4Curve.h")]
 ///<summary>Data Interface allowing sampling of vector curves.</summary>
+[CppInclude("NiagaraDataInterfaceVector4Curve.h")]
 public partial class UNiagaraDataInterfaceVector4Curve : UNiagaraDataInterfaceCurveBase {
-// NiagaraDataInterfaceVector4Curve
+	///<summary>XCurve</summary>
 	public FRichCurve XCurve;
+	///<summary>YCurve</summary>
 	public FRichCurve YCurve;
+	///<summary>ZCurve</summary>
 	public FRichCurve ZCurve;
+	///<summary>WCurve</summary>
 	public FRichCurve WCurve;
+	///<summary>XCurveCookedEditorCache</summary>
 	public FRichCurve XCurveCookedEditorCache;
+	///<summary>YCurveCookedEditorCache</summary>
 	public FRichCurve YCurveCookedEditorCache;
+	///<summary>ZCurveCookedEditorCache</summary>
 	public FRichCurve ZCurveCookedEditorCache;
+	///<summary>WCurveCookedEditorCache</summary>
 	public FRichCurve WCurveCookedEditorCache;
 }

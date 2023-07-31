@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("ModelProto.h")]
 ///<summary>Level 3 - FValueInfoProto</summary>
+[CppInclude("ModelProto.h")]
 public partial struct FValueInfoProto {
-// ValueInfoProto
 	public string Name;
 	public FTypeProto Type;
 	public string DocString;

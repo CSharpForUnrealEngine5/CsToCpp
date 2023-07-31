@@ -1,9 +1,10 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("ToolMenusEditor.h")]
 public partial class UToolMenuEditorDialogMenu : UToolMenuEditorDialogObject {
-// ToolMenuEditorDialogMenu
+	///<summary>Name</summary>
 	public string Name;
+	///<summary>Menu</summary>
 	public UToolMenu Menu;
 }

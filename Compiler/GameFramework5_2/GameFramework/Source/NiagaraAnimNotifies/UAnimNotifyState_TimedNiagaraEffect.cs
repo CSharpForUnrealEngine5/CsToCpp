@@ -1,14 +1,19 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("AnimNotifyState_TimedNiagaraEffect.h")]
 ///<summary>Timed Niagara Effect Notify</summary>
+[CppInclude("AnimNotifyState_TimedNiagaraEffect.h")]
 public partial class UAnimNotifyState_TimedNiagaraEffect : UAnimNotifyState {
-// AnimNotifyState_TimedNiagaraEffect
+	///<summary>The niagara system to spawn for the notify state</summary>
 	public UNiagaraSystem Template;
+	///<summary>The socket or bone to attach the system to</summary>
 	public string SocketName;
+	///<summary>Offset from the socket or bone to place the Niagara system</summary>
 	public FVector LocationOffset;
+	///<summary>Rotation offset from the socket or bone for the Niagara system</summary>
 	public FRotator RotationOffset;
+	///<summary>Whether the Niagara system should be immediately destroyed at the end of the notify state or be allowed to finish</summary>
 	public bool bDestroyAtEnd;
+	///<summary>Return FXSystemComponent created from SpawnEffect</summary>
 	public  UFXSystemComponent GetSpawnedEffect(UMeshComponent MeshComp) { return default; }
 }

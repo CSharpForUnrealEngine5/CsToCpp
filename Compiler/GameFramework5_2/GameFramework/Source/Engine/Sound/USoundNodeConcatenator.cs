@@ -1,9 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Sound/SoundNodeConcatenator.h")]
 ///<summary>Plays child nodes sequentially</summary>
+[CppInclude("Sound/SoundNodeConcatenator.h")]
 public partial class USoundNodeConcatenator : USoundNode {
-// SoundNodeConcatenator
+	///<summary>Volume multiplier for each input.</summary>
 	public TArray<float> InputVolume;
 }

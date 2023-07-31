@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Styling/SegmentedControlStyle.h")]
 ///<summary>Represents the appearance of an SSegmentedControl</summary>
+[CppInclude("Styling/SegmentedControlStyle.h")]
 public partial struct FSegmentedControlStyle {
-// SegmentedControlStyle
 	public FCheckBoxStyle ControlStyle;
 	public FCheckBoxStyle FirstControlStyle;
 	public FCheckBoxStyle LastControlStyle;

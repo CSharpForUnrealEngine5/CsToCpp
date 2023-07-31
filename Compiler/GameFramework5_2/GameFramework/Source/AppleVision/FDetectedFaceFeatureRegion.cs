@@ -1,9 +1,8 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("AppleVisionTypes.h")]
 ///<summary>Area of the image that the computer vision task detected as being part of a face</summary>
+[CppInclude("AppleVisionTypes.h")]
 public partial struct FDetectedFaceFeatureRegion {
-// DetectedFaceFeatureRegion
 	public EDetectedFaceFeatureType FeatureType;
 }

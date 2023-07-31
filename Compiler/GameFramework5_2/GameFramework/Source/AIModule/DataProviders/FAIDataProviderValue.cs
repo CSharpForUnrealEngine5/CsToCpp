@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("DataProviders/AIDataProvider.h")]
 ///<summary>AIDataProvider is an object that can provide collection of properties</summary>
+[CppInclude("DataProviders/AIDataProvider.h")]
 public partial struct FAIDataProviderValue {
-// AIDataProviderValue
 	public UAIDataProvider DataBinding;
 	public string DataField;
 }

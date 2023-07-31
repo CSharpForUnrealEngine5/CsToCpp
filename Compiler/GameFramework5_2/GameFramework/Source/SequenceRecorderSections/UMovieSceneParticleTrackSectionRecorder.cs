@@ -1,8 +1,8 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("MovieSceneParticleTrackSectionRecorder.h")]
 public partial class UMovieSceneParticleTrackSectionRecorder : UObject {
-// MovieSceneParticleTrackSectionRecorder
+	///<summary>OnTriggered</summary>
 	public  void OnTriggered(UParticleSystemComponent Component,bool bActivating) {}
 }

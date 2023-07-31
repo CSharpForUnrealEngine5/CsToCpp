@@ -1,9 +1,8 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Units/Deprecated/RigUnit_TwoBoneIKFK.h")]
 public partial struct FRigUnit_TwoBoneIKFK {
-// RigUnit_TwoBoneIKFK
 	public string StartJoint;
 	public string EndJoint;
 	public FVector PoleTarget;

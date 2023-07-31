@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
+///<summary>Converts a TArray&lt;float&gt; to a FDataflowVertexSelection</summary>
 [CppInclude("Dataflow/GeometryCollectionNodes.h")]
-///<summary>Converts a TArray<float> to a FDataflowVertexSelection</summary>
 public partial struct FFloatArrayToVertexSelectionDataflowNode {
-// FloatArrayToVertexSelectionDataflowNode
 	public TArray<float> FloatArray;
 	public ECompareOperationEnum Operation;
 	public float Threshold;

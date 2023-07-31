@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("PhysicsAssetUtils.h")]
 ///<summary>Parameters for PhysicsAsset creation</summary>
+[CppInclude("PhysicsAssetUtils.h")]
 public partial struct FPhysAssetCreateParams {
-// PhysAssetCreateParams
 	public float MinBoneSize;
 	public float MinWeldSize;
 	public EPhysAssetFitGeomType GeomType;

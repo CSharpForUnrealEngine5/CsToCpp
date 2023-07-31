@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("ProfilerServiceMessages.h")]
 ///<summary>Profiler Service data.</summary>
+[CppInclude("ProfilerServiceMessages.h")]
 public partial struct FProfilerServiceData2 {
-// ProfilerServiceData2
 	public FGuid InstanceId;
 	public long Frame;
 	public int CompressedSize;

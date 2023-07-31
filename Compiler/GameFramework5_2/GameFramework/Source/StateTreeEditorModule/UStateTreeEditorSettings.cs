@@ -1,8 +1,8 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("StateTreeEditorSettings.h")]
 public partial class UStateTreeEditorSettings : UDeveloperSettings {
-// StateTreeEditorSettings
+	///<summary>Determines when to save StateTrees post-compile</summary>
 	public EStateTreeSaveOnCompile SaveOnCompile;
 }

@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Components/SlateWrapperTypes.h")]
 ///<summary>A struct exposing size param related properties to UMG.</summary>
+[CppInclude("Components/SlateWrapperTypes.h")]
 public partial struct FSlateChildSize {
-// SlateChildSize
 	public float Value;
 	public ESlateSizeRule SizeRule;
 }

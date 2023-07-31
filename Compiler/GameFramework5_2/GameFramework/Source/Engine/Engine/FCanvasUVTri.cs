@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Engine/EngineTypes.h")]
 ///<summary>Simple 2d triangle with UVs</summary>
+[CppInclude("Engine/EngineTypes.h")]
 public partial struct FCanvasUVTri {
-// CanvasUVTri
 	public FVector2D V0_Pos;
 	public FVector2D V0_UV;
 	public FLinearColor V0_Color;

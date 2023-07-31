@@ -1,7 +1,6 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("WorldConditions/WorldCondition_SmartObjectActorTagQuery.h")]
 public partial struct FWorldCondition_SmartObjectActorTagQueryState {
-// WorldCondition_SmartObjectActorTagQueryState
 }

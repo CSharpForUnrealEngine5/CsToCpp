@@ -1,8 +1,8 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("MassCommands.h")]
-///<summary>Enum used by MassBatchCommands to declare their "type". This data is later used to group commands so that command</summary>
+///<summary>Enum used by MassBatchCommands to declare their &quot;type&quot;. This data is later used to group commands so that command</summary>
 public enum EMassCommandOperationType {
 	None=0,
 	Create=1,

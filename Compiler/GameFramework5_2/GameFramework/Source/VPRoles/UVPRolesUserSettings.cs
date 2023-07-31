@@ -1,10 +1,12 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("VPRolesSettings.h")]
 public partial class UVPRolesUserSettings : UObject {
-// VPRolesUserSettings
+	///<summary>The machine role(s) in a virtual production context.</summary>
 	public FGameplayTagContainer Roles;
+	///<summary>The files that contain the available VP Roles.</summary>
 	public TSet<string> RoleSources;
+	///<summary>Cached available roles since the list isn&#39;t available outside of editor.</summary>
 	public TArray<string> CachedRoles;
 }

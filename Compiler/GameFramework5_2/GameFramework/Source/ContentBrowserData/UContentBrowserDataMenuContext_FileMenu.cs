@@ -1,9 +1,10 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("ContentBrowserDataMenuContexts.h")]
 public partial class UContentBrowserDataMenuContext_FileMenu : UObject {
-// ContentBrowserDataMenuContext_FileMenu
+	///<summary>SelectedItems</summary>
 	public TArray<FContentBrowserItem> SelectedItems;
+	///<summary>bCanBeModified</summary>
 	public bool bCanBeModified;
 }

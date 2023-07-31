@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("PhysicsEngine/ShapeElem.h")]
 ///<summary>Base class of shapes used for collision, such as Sphere, Box, Sphyl, Convex, TaperedCapsule or LevelSet</summary>
+[CppInclude("PhysicsEngine/ShapeElem.h")]
 public partial struct FKShapeElem {
-// KShapeElem
 	public float RestOffset;
 	public bool bIsGenerated;
 	public string Name;

@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("StateTreeTypes.h")]
 ///<summary>Runtime representation of a StateTree transition.</summary>
+[CppInclude("StateTreeTypes.h")]
 public partial struct FCompactStateTransition {
-// CompactStateTransition
 	public FGameplayTag EventTag;
 	public ushort ConditionsBegin;
 	public FStateTreeStateHandle State;

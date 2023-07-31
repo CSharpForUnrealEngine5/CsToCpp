@@ -1,8 +1,7 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
+///<summary>Info on a culled Niagara Component for use by it&#39;s cull proxy.</summary>
 [CppInclude("NiagaraCullProxyComponent.h")]
-///<summary>Info on a culled Niagara Component for use by it's cull proxy.</summary>
 public partial struct FNiagaraCulledComponentInfo {
-// NiagaraCulledComponentInfo
 }

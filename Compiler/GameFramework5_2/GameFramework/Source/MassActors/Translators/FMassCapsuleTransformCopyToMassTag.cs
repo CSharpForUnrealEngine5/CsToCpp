@@ -1,8 +1,7 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Translators/MassCapsuleComponentTranslators.h")]
 ///<summary>@todo TBD</summary>
+[CppInclude("Translators/MassCapsuleComponentTranslators.h")]
 public partial struct FMassCapsuleTransformCopyToMassTag {
-// MassCapsuleTransformCopyToMassTag
 }

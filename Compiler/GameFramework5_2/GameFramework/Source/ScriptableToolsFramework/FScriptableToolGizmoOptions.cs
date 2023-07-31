@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("ScriptableInteractiveTool.h")]
 ///<summary>FScriptableToolGizmoOptions is a configuration struct passed to the CreateTRSGizmo function</summary>
+[CppInclude("ScriptableInteractiveTool.h")]
 public partial struct FScriptableToolGizmoOptions {
-// ScriptableToolGizmoOptions
 	public EScriptableToolGizmoMode GizmoMode;
 	public int TranslationParts;
 	public int RotationParts;

@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("ContextualAnimTypes.h")]
 ///<summary>Stores the result of a query function</summary>
+[CppInclude("ContextualAnimTypes.h")]
 public partial struct FContextualAnimQueryResult {
-// ContextualAnimQueryResult
 	public TWeakObjectPtr<UAnimMontage> Animation;
 	public FTransform EntryTransform;
 	public FTransform SyncTransform;

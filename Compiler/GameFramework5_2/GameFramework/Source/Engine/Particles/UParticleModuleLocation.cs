@@ -1,10 +1,12 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Particles/Location/ParticleModuleLocation.h")]
 public partial class UParticleModuleLocation : UParticleModuleLocationBase {
-// ParticleModuleLocation
+	///<summary>The location the particle should be emitted.</summary>
 	public FRawDistributionVector StartLocation;
+	///<summary>When set to a non-zero value this will force the particles to only spawn on evenly distributed</summary>
 	public float DistributeOverNPoints;
+	///<summary>When DistributeOverNPoints is set to a non-zero value, this specifies the ratio of particles spawned</summary>
 	public float DistributeThreshold;
 }

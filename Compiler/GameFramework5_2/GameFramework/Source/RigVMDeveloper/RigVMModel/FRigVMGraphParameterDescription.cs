@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("RigVMModel/Nodes/RigVMParameterNode.h")]
 ///<summary>The parameter description is used to convey information</summary>
+[CppInclude("RigVMModel/Nodes/RigVMParameterNode.h")]
 public partial struct FRigVMGraphParameterDescription {
-// RigVMGraphParameterDescription
 	public string Name;
 	public bool bIsInput;
 	public string CPPType;

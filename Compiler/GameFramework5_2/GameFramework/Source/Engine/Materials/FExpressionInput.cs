@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
+///<summary>@warning: FExpressionInput is mirrored in MaterialShared.h and manually &quot;subclassed&quot; in Material.h (FMaterialInput)</summary>
 [CppInclude("Materials/MaterialExpression.h")]
-///<summary>@warning: FExpressionInput is mirrored in MaterialShared.h and manually "subclassed" in Material.h (FMaterialInput)</summary>
 public partial struct FExpressionInput {
-// ExpressionInput
 	public UMaterialExpression Expression;
 	public int OutputIndex;
 	public string InputName;

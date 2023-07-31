@@ -1,9 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("DataprepOperations.h")]
 ///<summary>On each actor to process, replace any meshes used with the specified one</summary>
+[CppInclude("DataprepOperations.h")]
 public partial class UDataprepSetMeshOperation : UDataprepOperation {
-// DataprepSetMeshOperation
+	///<summary>Mesh to use as a substitute</summary>
 	public UStaticMesh StaticMesh;
 }

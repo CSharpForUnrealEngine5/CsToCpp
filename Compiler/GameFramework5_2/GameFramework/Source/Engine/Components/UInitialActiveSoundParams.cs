@@ -1,9 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
+///<summary>Convenience class to get audio parameters set on an active sound&#39;s playback</summary>
 [CppInclude("Components/AudioComponent.h")]
-///<summary>Convenience class to get audio parameters set on an active sound's playback</summary>
 public partial class UInitialActiveSoundParams : UObject {
-// InitialActiveSoundParams
+	///<summary>Collection of parameters to be sent to the active sound</summary>
 	public TArray<FAudioParameter> AudioParams;
 }

@@ -1,10 +1,11 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("AnimPreviewInstance.h")]
 ///<summary>This Instance only contains one AnimationAsset, and produce poses</summary>
+[CppInclude("AnimPreviewInstance.h")]
 public partial class UAnimPreviewInstance : UAnimSingleNodeInstance {
-// AnimPreviewInstance
+	///<summary>Shared parameters for previewing blendspace or animsequence *</summary>
 	public EMontagePreviewType MontagePreviewType;
+	///<summary>MontagePreviewStartSectionIdx</summary>
 	public int MontagePreviewStartSectionIdx;
 }

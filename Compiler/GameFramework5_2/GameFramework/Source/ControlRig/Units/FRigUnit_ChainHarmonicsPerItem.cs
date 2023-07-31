@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Units/Highlevel/Harmonics/RigUnit_ChainHarmonics.h")]
 ///<summary>Given a root will drive all items underneath in a chain based harmonics spectrum</summary>
+[CppInclude("Units/Highlevel/Harmonics/RigUnit_ChainHarmonics.h")]
 public partial struct FRigUnit_ChainHarmonicsPerItem {
-// RigUnit_ChainHarmonicsPerItem
 	public FRigElementKey ChainRoot;
 	public FVector Speed;
 	public FRigUnit_ChainHarmonics_Reach Reach;

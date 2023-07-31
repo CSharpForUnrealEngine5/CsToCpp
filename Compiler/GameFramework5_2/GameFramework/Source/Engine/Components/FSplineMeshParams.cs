@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Components/SplineMeshComponent.h")]
 ///<summary>Structure that holds info about spline, passed to renderer to deform UStaticMesh.</summary>
+[CppInclude("Components/SplineMeshComponent.h")]
 public partial struct FSplineMeshParams {
-// SplineMeshParams
 	public FVector StartPos;
 	public FVector StartTangent;
 	public FVector2D StartScale;

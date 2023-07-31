@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("ChaosCollisionEventFilter.h")]
 ///<summary>Settings used to define collision event requests</summary>
+[CppInclude("ChaosCollisionEventFilter.h")]
 public partial struct FChaosCollisionEventRequestSettings {
-// ChaosCollisionEventRequestSettings
 	public int MaxNumberResults;
 	public float MinMass;
 	public float MinSpeed;

@@ -1,10 +1,11 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
+///<summary>Visualization settings for the UUVEditorMode&#39;s Grid</summary>
 [CppInclude("UVEditorMode.h")]
-///<summary>Visualization settings for the UUVEditorMode's Grid</summary>
 public partial class UUVEditorGridProperties : UInteractiveToolPropertySet {
-// UVEditorGridProperties
+	///<summary>Should the grid be shown?</summary>
 	public bool bDrawGrid;
+	///<summary>Should the grid rulers be shown?</summary>
 	public bool bDrawRulers;
 }

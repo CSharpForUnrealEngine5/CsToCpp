@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Engine/Attenuation.h")]
 ///<summary>* Base class for attenuation settings.</summary>
+[CppInclude("Engine/Attenuation.h")]
 public partial struct FBaseAttenuationSettings {
-// BaseAttenuationSettings
 	public EAttenuationDistanceModel DistanceAlgorithm;
 	public EAttenuationShape AttenuationShape;
 	public ENaturalSoundFalloffMode FalloffMode;

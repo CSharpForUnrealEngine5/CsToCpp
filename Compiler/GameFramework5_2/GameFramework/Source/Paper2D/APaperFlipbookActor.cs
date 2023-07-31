@@ -1,9 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("PaperFlipbookActor.h")]
 ///<summary>An instance of a UPaperFlipbook in a level.</summary>
+[CppInclude("PaperFlipbookActor.h")]
 public partial class APaperFlipbookActor : AActor {
-// PaperFlipbookActor
+	///<summary>RenderComponent</summary>
 	public UPaperFlipbookComponent RenderComponent;
 }

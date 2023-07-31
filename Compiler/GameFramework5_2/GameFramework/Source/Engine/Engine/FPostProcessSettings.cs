@@ -1,9 +1,8 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Engine/Scene.h")]
 public partial struct FPostProcessSettings {
-// PostProcessSettings
 	public bool bOverride_TemperatureType;
 	public bool bOverride_WhiteTemp;
 	public bool bOverride_WhiteTint;

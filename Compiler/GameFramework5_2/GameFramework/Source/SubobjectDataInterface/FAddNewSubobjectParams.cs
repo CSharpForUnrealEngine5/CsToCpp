@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("SubobjectDataSubsystem.h")]
 ///<summary>Options when adding a new subobject</summary>
+[CppInclude("SubobjectDataSubsystem.h")]
 public partial struct FAddNewSubobjectParams {
-// AddNewSubobjectParams
 	public FSubobjectDataHandle ParentHandle;
 	public UClass NewClass;
 	public UBlueprint BlueprintContext;

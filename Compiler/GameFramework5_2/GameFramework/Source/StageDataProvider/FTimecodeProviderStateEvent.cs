@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("TimecodeProviderWatchdog.h")]
 ///<summary>Stage event to notify of TimecodeProvider state change</summary>
+[CppInclude("TimecodeProviderWatchdog.h")]
 public partial struct FTimecodeProviderStateEvent {
-// TimecodeProviderStateEvent
 	public string ProviderName;
 	public string ProviderType;
 	public FFrameRate FrameRate;

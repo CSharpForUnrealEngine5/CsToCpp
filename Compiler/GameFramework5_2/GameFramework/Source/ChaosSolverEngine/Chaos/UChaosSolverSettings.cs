@@ -1,9 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Chaos/ChaosSolverSettings.h")]
 ///<summary>Settings class for the Chaos Solver</summary>
+[CppInclude("Chaos/ChaosSolverSettings.h")]
 public partial class UChaosSolverSettings : UDeveloperSettings {
-// ChaosSolverSettings
+	///<summary>The class to use when auto-creating a default chaos solver actor</summary>
 	public FSoftClassPath DefaultChaosSolverActorClass;
 }

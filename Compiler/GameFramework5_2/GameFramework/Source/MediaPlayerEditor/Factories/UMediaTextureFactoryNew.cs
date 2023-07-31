@@ -1,8 +1,7 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Factories/MediaTextureFactoryNew.h")]
 ///<summary>Implements a factory for UMediaTexture objects.</summary>
+[CppInclude("Factories/MediaTextureFactoryNew.h")]
 public partial class UMediaTextureFactoryNew : UFactory {
-// MediaTextureFactoryNew
 }

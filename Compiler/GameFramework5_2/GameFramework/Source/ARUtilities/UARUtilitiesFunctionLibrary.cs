@@ -1,10 +1,12 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("ARUtilitiesFunctionLibrary.h")]
 public partial class UARUtilitiesFunctionLibrary : UBlueprintFunctionLibrary {
-// ARUtilitiesFunctionLibrary
+	///<summary>Update material texture parameter using pre-defined names:</summary>
 	public static void UpdateCameraTextureParam(UMaterialInstanceDynamic MaterialInstance,UTexture CameraTexture,float ColorScale/*=1.0f*/) {}
+	///<summary>Update material texture parameter using pre-defined names:</summary>
 	public static void UpdateSceneDepthTexture(UMaterialInstanceDynamic MaterialInstance,UTexture SceneDepthTexture,float DepthToMeterScale/*=1.0f*/) {}
+	///<summary>Update material texture parameter using pre-defined names:</summary>
 	public static void UpdateWorldToMeterScale(UMaterialInstanceDynamic MaterialInstance,float WorldToMeterScale/*=100.0f*/) {}
 }

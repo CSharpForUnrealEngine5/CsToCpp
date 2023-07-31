@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("MovieScene/MovieSceneLiveLinkSectionTemplate.h")]
 ///<summary>A movie scene evaluation template for post move settings live link sections.</summary>
+[CppInclude("MovieScene/MovieSceneLiveLinkSectionTemplate.h")]
 public partial struct FMovieSceneLiveLinkSectionTemplate {
-// MovieSceneLiveLinkSectionTemplate
 	public FLiveLinkSubjectPreset SubjectPreset;
 	public TArray<bool> ChannelMask;
 	public TArray<FLiveLinkSubSectionData> SubSectionsData;

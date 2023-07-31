@@ -1,9 +1,8 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("MuCO/CustomizableObject.h")]
 public partial struct FProfileParameterDat {
-// ProfileParameterDat
 	public string ProfileName;
 	public TArray<FCustomizableObjectBoolParameterValue> BoolParameters;
 	public TArray<FCustomizableObjectIntParameterValue> IntParameters;

@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("UI/WidgetSnapshots.h")]
 ///<summary>Saves a subset of properties of a widget.</summary>
+[CppInclude("UI/WidgetSnapshots.h")]
 public partial struct FWidgetSnapshot {
-// WidgetSnapshot
 	public UClass WidgetClass;
 	public TArray<byte> SavedBinaryData;
 }

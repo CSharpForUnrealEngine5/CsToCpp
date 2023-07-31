@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("CameraAnimationCameraModifier.h")]
 ///<summary>Information about an active camera animation inside UCameraAnimationCameraModifier.</summary>
+[CppInclude("CameraAnimationCameraModifier.h")]
 public partial struct FActiveCameraAnimationInfo {
-// ActiveCameraAnimationInfo
 	public UCameraAnimationSequence Sequence;
 	public FCameraAnimationParams Params;
 	public FCameraAnimationHandle Handle;

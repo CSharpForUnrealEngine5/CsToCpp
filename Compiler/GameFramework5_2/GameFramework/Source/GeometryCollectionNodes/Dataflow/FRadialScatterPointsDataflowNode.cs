@@ -1,9 +1,8 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Dataflow/GeometryCollectionFracturingNodes.h")]
 public partial struct FRadialScatterPointsDataflowNode {
-// RadialScatterPointsDataflowNode
 	public FVector Center;
 	public FVector Normal;
 	public float Radius;

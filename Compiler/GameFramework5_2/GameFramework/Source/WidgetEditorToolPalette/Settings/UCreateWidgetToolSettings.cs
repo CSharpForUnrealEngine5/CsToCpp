@@ -1,9 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Settings/CreateWidgetToolSettings.h")]
 ///<summary>Allows for create widget tool layout to be defined via settings.</summary>
+[CppInclude("Settings/CreateWidgetToolSettings.h")]
 public partial class UCreateWidgetToolSettings : UDeveloperSettings {
-// CreateWidgetToolSettings
+	///<summary>List of tool stacks to create</summary>
 	public TArray<FCreateWidgetStackInfo> CreateWidgetStacks;
 }

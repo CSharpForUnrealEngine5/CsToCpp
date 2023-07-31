@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Engine/EngineTypes.h")]
 ///<summary>Debug options for Swarm</summary>
+[CppInclude("Engine/EngineTypes.h")]
 public partial struct FSwarmDebugOptions {
-// SwarmDebugOptions
 	public bool bDistributionEnabled;
 	public bool bForceContentExport;
 	public bool bInitialized;

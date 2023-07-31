@@ -1,9 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("InterchangeManager.h")]
 ///<summary>This class is use to pass override pipelines in the ImportAssetTask Options member</summary>
+[CppInclude("InterchangeManager.h")]
 public partial class UInterchangePipelineStackOverride : UObject {
-// InterchangePipelineStackOverride
+	///<summary>OverridePipelines</summary>
 	public TArray<UInterchangePipelineBase> OverridePipelines;
 }

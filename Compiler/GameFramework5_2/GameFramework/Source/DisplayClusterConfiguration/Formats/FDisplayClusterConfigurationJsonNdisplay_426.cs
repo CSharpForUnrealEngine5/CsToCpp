@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
+///<summary>&quot;nDisplay&quot; category structure</summary>
 [CppInclude("Formats/JSON426/DisplayClusterConfigurationJsonTypes_426.h")]
-///<summary>"nDisplay" category structure</summary>
 public partial struct FDisplayClusterConfigurationJsonNdisplay_426 {
-// DisplayClusterConfigurationJsonNdisplay_426
 	public string Description;
 	public string Version;
 	public string AssetPath;

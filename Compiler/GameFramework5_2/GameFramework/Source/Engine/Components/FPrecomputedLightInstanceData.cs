@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Components/LightComponent.h")]
 ///<summary>Used to store lightmap data during RerunConstructionScripts</summary>
+[CppInclude("Components/LightComponent.h")]
 public partial struct FPrecomputedLightInstanceData {
-// PrecomputedLightInstanceData
 	public FTransform Transform;
 	public FGuid LightGuid;
 	public int PreviewShadowMapChannel;

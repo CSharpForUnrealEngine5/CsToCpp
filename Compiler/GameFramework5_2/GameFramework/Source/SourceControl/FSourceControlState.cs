@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("SourceControlHelpers.h")]
 ///<summary>Snapshot of source control state of a file</summary>
+[CppInclude("SourceControlHelpers.h")]
 public partial struct FSourceControlState {
-// SourceControlState
 	public string Filename;
 	public bool bIsValid;
 	public bool bIsUnknown;

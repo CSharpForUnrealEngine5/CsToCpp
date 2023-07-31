@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Units/Highlevel/Hierarchy/RigUnit_TwoBoneIKSimple.h")]
 ///<summary>Solves the two bone IK given positions</summary>
+[CppInclude("Units/Highlevel/Hierarchy/RigUnit_TwoBoneIKSimple.h")]
 public partial struct FRigUnit_TwoBoneIKSimpleVectors {
-// RigUnit_TwoBoneIKSimpleVectors
 	public FVector Root;
 	public FVector PoleVector;
 	public FVector Effector;

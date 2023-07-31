@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Styling/SlateBrush.h")]
 ///<summary>A brush which contains information about how to draw a Slate element</summary>
+[CppInclude("Styling/SlateBrush.h")]
 public partial struct FSlateBrush {
-// SlateBrush
 	public bool bIsDynamicallyLoaded;
 	public bool bHasUObject_DEPRECATED;
 	public ESlateBrushDrawType DrawAs;

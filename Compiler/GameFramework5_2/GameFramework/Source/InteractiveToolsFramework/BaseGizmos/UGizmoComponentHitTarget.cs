@@ -1,9 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("BaseGizmos/HitTargets.h")]
 ///<summary>UGizmoComponentHitTarget is an IGizmoClickTarget implementation that</summary>
+[CppInclude("BaseGizmos/HitTargets.h")]
 public partial class UGizmoComponentHitTarget : UObject {
-// GizmoComponentHitTarget
+	///<summary>Component-&gt;LineTraceComponent() is called to determine if the target is hit</summary>
 	public UPrimitiveComponent Component;
 }

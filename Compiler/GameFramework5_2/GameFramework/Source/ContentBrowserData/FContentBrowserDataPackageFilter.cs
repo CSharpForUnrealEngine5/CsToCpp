@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("ContentBrowserDataFilter.h")]
 ///<summary>Data used to filter object instances by their package.</summary>
+[CppInclude("ContentBrowserDataFilter.h")]
 public partial struct FContentBrowserDataPackageFilter {
-// ContentBrowserDataPackageFilter
 	public TArray<string> PackageNamesToInclude;
 	public TArray<string> PackageNamesToExclude;
 	public TArray<string> PackagePathsToInclude;

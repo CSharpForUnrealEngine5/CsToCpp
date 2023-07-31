@@ -1,9 +1,8 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("RigVMModel/RigVMControllerActions.h")]
 ///<summary>An action pushing a graph to the graph stack of the controller</summary>
+[CppInclude("RigVMModel/RigVMControllerActions.h")]
 public partial struct FRigVMPushGraphAction {
-// RigVMPushGraphAction
 	public FSoftObjectPath GraphPath;
 }

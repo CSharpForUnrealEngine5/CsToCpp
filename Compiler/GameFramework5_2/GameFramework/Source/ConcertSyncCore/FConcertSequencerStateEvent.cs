@@ -1,9 +1,8 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("ConcertSequencerMessages.h")]
 ///<summary>Event that signals a sequencer UI has changed the current state</summary>
+[CppInclude("ConcertSequencerMessages.h")]
 public partial struct FConcertSequencerStateEvent {
-// ConcertSequencerStateEvent
 	public FConcertSequencerState State;
 }

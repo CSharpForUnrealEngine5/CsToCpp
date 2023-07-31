@@ -1,9 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("GoogleARCoreTypes.h")]
 ///<summary>Helper class used to expose FGoogleARCoreSessionConfig setting in the Editor plugin settings.</summary>
+[CppInclude("GoogleARCoreTypes.h")]
 public partial class UGoogleARCoreEditorSettings : UObject {
-// GoogleARCoreEditorSettings
+	///<summary>Check this option if you app require ARCore to run on Android.</summary>
 	public bool bARCoreRequiredApp;
 }

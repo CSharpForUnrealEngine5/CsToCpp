@@ -1,10 +1,11 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
+///<summary>This Match &amp; Set object assigns randomly a value based on weighted ratios,</summary>
 [CppInclude("MatchAndSet/PCGMatchAndSetWeighted.h")]
-///<summary>This Match & Set object assigns randomly a value based on weighted ratios,</summary>
 public partial class UPCGMatchAndSetWeighted : UPCGMatchAndSetBase {
-// PCGMatchAndSetWeighted
+	///<summary>Values and their respective weights</summary>
 	public TArray<FPCGMatchAndSetWeightedEntry> Entries;
+	///<summary>Controls whether the output data should mutate its seed - prevents issues when doing multiple random processes in a row</summary>
 	public bool bShouldMutateSeed;
 }

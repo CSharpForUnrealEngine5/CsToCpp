@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("ConcertServerSessionRepositories.h")]
 ///<summary>Keep the information about a the session repository.</summary>
+[CppInclude("ConcertServerSessionRepositories.h")]
 public partial struct FConcertServerSessionRepository {
-// ConcertServerSessionRepository
 	public FGuid RepositoryId;
 	public string RepositoryRootDir;
 	public string WorkingDir;

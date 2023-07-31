@@ -1,9 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Tracks/MovieScene3DConstraintTrack.h")]
 ///<summary>Base class for constraint tracks (tracks that are dependent upon other objects).</summary>
+[CppInclude("Tracks/MovieScene3DConstraintTrack.h")]
 public partial class UMovieScene3DConstraintTrack : UMovieSceneTrack {
-// MovieScene3DConstraintTrack
+	///<summary>List of all constraint sections.</summary>
 	public TArray<UMovieSceneSection> ConstraintSections;
 }

@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("RigVMFunctions/Simulation/RigVMFunction_Verlet.h")]
 ///<summary>Simulates a single position over time using Verlet integration. It is recommended to use SpringInterp instead as it</summary>
+[CppInclude("RigVMFunctions/Simulation/RigVMFunction_Verlet.h")]
 public partial struct FRigVMFunction_VerletIntegrateVector {
-// RigVMFunction_VerletIntegrateVector
 	public FVector Target;
 	public float Strength;
 	public float Damp;

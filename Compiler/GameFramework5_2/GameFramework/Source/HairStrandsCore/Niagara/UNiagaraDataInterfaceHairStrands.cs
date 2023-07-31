@@ -1,10 +1,11 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Niagara/NiagaraDataInterfaceHairStrands.h")]
 ///<summary>Data Interface for the strand base</summary>
+[CppInclude("Niagara/NiagaraDataInterfaceHairStrands.h")]
 public partial class UNiagaraDataInterfaceHairStrands : UNiagaraDataInterface {
-// NiagaraDataInterfaceHairStrands
+	///<summary>Hair Strands Asset used to sample from when not overridden by a source actor from the scene. Also useful for previewing in the editor.</summary>
 	public UGroomAsset DefaultSource;
+	///<summary>The source actor from which to sample</summary>
 	public AActor SourceActor;
 }

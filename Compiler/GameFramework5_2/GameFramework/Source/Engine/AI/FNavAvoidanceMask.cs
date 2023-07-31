@@ -1,9 +1,8 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("AI/Navigation/NavigationAvoidanceTypes.h")]
 public partial struct FNavAvoidanceMask {
-// NavAvoidanceMask
 	public bool bGroup0;
 	public bool bGroup1;
 	public bool bGroup2;

@@ -1,8 +1,7 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("DataprepOperations.h")]
 ///<summary>Replace references to each asset with the first asset in the list</summary>
+[CppInclude("DataprepOperations.h")]
 public partial class UDataprepConsolidateObjectsOperation : UDataprepOperation {
-// DataprepConsolidateObjectsOperation
 }

@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Net/Core/Connection/NetConnectionFaultRecoveryBase.h")]
 ///<summary>Generic escalation state definition used to implement attempted recovery from faults/errors in the NetConnection level netcode.</summary>
+[CppInclude("Net/Core/Connection/NetConnectionFaultRecoveryBase.h")]
 public partial struct FNetFaultState {
-// NetFaultState
 	public bool bCloseConnection;
 	public short EscalateQuotaFaultsPerPeriod;
 	public short EscalateQuotaFaultPercentPerPeriod;

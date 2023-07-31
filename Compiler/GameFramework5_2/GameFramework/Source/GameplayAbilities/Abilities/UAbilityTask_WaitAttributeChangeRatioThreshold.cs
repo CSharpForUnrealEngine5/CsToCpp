@@ -1,11 +1,13 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Abilities/Tasks/AbilityTask_WaitAttributeChangeRatioThreshold.h")]
 ///<summary>Waits for the ratio between two attributes to match a threshold</summary>
+[CppInclude("Abilities/Tasks/AbilityTask_WaitAttributeChangeRatioThreshold.h")]
 public partial class UAbilityTask_WaitAttributeChangeRatioThreshold : UAbilityTask {
-// AbilityTask_WaitAttributeChangeRatioThreshold
+	///<summary>OnChange</summary>
 	public FWaitAttributeChangeRatioThresholdDelegate OnChange;
+	///<summary>Wait on attribute ratio change meeting a comparison threshold.</summary>
 	public static UAbilityTask_WaitAttributeChangeRatioThreshold WaitForAttributeChangeRatioThreshold(UGameplayAbility OwningAbility,FGameplayAttribute AttributeNumerator,FGameplayAttribute AttributeDenominator,EWaitAttributeChangeComparison ComparisonType,float ComparisonValue,bool bTriggerOnce,AActor OptionalExternalOwner/*=nullptr*/) { return default; }
+	///<summary>ExternalOwner</summary>
 	public UAbilitySystemComponent ExternalOwner;
 }

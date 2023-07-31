@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("ZoneGraphTypes.h")]
 ///<summary>Shape connectors represent locations where shapes can be connected together.</summary>
+[CppInclude("ZoneGraphTypes.h")]
 public partial struct FZoneShapeConnector {
-// ZoneShapeConnector
 	public FVector Position;
 	public FVector Normal;
 	public FVector Up;

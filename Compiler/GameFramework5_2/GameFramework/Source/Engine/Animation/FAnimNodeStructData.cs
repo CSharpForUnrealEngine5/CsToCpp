@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Animation/AnimNodeData.h")]
 ///<summary>Data about editor-side struct property indices.</summary>
+[CppInclude("Animation/AnimNodeData.h")]
 public partial struct FAnimNodeStructData {
-// AnimNodeStructData
 	public TMap<string,int> NameToIndexMap;
 	public int NumProperties;
 }

@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Models/AnamorphicLensModel.h")]
 ///<summary>Lens distortion parameters for the 3DE4 Anamorphic - Standard Degree 4 model</summary>
+[CppInclude("Models/AnamorphicLensModel.h")]
 public partial struct FAnamorphicDistortionParameters {
-// AnamorphicDistortionParameters
 	public float PixelAspect;
 	public float CX02;
 	public float CX04;

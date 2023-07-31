@@ -1,10 +1,11 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Data/Filters/ConjunctionFilter.h")]
 ///<summary>* Returns the result of and-ing all child filters.</summary>
+[CppInclude("Data/Filters/ConjunctionFilter.h")]
 public partial class UConjunctionFilter : ULevelSnapshotFilter {
-// ConjunctionFilter
+	///<summary>Children</summary>
 	public TArray<UNegatableFilter> Children;
+	///<summary>bIgnoreFilter</summary>
 	public bool bIgnoreFilter;
 }

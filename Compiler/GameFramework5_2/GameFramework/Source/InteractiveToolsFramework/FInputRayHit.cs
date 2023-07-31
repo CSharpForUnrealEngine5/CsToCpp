@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("InputState.h")]
 ///<summary>* FInputRayHit is returned by various hit-test interface functions.</summary>
+[CppInclude("InputState.h")]
 public partial struct FInputRayHit {
-// InputRayHit
 	public bool bHit;
 	public double HitDepth;
 	public FVector HitNormal;

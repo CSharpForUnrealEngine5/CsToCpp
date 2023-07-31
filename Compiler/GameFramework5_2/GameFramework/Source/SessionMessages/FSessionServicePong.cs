@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("SessionServiceMessages.h")]
 ///<summary>Implements a message that is published in response to FSessionServicePing.</summary>
+[CppInclude("SessionServiceMessages.h")]
 public partial struct FSessionServicePong {
-// SessionServicePong
 	public bool Authorized;
 	public string BuildDate;
 	public string DeviceName;

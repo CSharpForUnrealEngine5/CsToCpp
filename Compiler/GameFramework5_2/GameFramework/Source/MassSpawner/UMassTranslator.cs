@@ -1,8 +1,7 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
+///<summary>A class that&#39;s responsible for translation between UObjects and Mass. A translator knows how to initialize</summary>
 [CppInclude("MassTranslator.h")]
-///<summary>A class that's responsible for translation between UObjects and Mass. A translator knows how to initialize</summary>
 public partial class UMassTranslator : UMassProcessor {
-// MassTranslator
 }

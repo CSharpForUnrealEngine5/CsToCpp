@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Animation/AnimClassInterface.h")]
 ///<summary>Blending options for animation graphs in Linked Animation Blueprints.</summary>
+[CppInclude("Animation/AnimClassInterface.h")]
 public partial struct FAnimGraphBlendOptions {
-// AnimGraphBlendOptions
 	public float BlendInTime;
 	public UBlendProfile BlendInProfile;
 	public float BlendOutTime;

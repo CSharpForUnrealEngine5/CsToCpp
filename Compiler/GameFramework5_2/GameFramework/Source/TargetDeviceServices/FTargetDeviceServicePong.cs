@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("TargetDeviceServiceMessages.h")]
 ///<summary>Implements a message that is sent in response to target device service discovery messages.</summary>
+[CppInclude("TargetDeviceServiceMessages.h")]
 public partial struct FTargetDeviceServicePong {
-// TargetDeviceServicePong
 	public bool Connected;
 	public bool Authorized;
 	public string HostName;

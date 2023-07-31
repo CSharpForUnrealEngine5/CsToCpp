@@ -1,9 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("ReOrientRootBoneModifier.h")]
 ///<summary>Reorient root bone in the animation while maintaining mesh position and rotation</summary>
+[CppInclude("ReOrientRootBoneModifier.h")]
 public partial class UReOrientRootBoneModifier : UAnimationModifier {
-// ReOrientRootBoneModifier
+	///<summary>Rotation to apply to the root</summary>
 	public FRotator Rotator;
 }

@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("NiagaraDebuggerCommon.h")]
 ///<summary>Outliner information on a specific system instance.</summary>
+[CppInclude("NiagaraDebuggerCommon.h")]
 public partial struct FNiagaraOutlinerSystemInstanceData {
-// NiagaraOutlinerSystemInstanceData
 	public string ComponentName;
 	public FVector3f LWCTile;
 	public TArray<FNiagaraOutlinerEmitterInstanceData> Emitters;

@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("PhysicsControlActor.h")]
 ///<summary>Structure that holds the data necessary to set up a default set of limb controls for a character</summary>
+[CppInclude("PhysicsControlActor.h")]
 public partial struct FInitialCharacterControls {
-// InitialCharacterControls
 	public AActor CharacterActor;
 	public string SkeletalMeshComponentName;
 	public TArray<FPhysicsControlLimbSetupData> LimbSetupData;

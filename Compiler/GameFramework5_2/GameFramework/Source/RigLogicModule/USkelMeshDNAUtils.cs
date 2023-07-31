@@ -1,8 +1,7 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("SkelMeshDNAUtils.h")]
 ///<summary>A utility class for updating SkeletalMesh joints, base mesh, morph targets and skin weights according to DNA data.</summary>
+[CppInclude("SkelMeshDNAUtils.h")]
 public partial class USkelMeshDNAUtils : UObject {
-// SkelMeshDNAUtils
 }

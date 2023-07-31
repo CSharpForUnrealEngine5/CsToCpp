@@ -1,9 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Sections/TemplateSequenceSection.h")]
 ///<summary>Defines the section for a template sequence track.</summary>
+[CppInclude("Sections/TemplateSequenceSection.h")]
 public partial class UTemplateSequenceSection : UMovieSceneSubSection {
-// TemplateSequenceSection
+	///<summary>PropertyScales</summary>
 	public TArray<FTemplateSectionPropertyScale> PropertyScales;
 }

@@ -1,11 +1,13 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("BspConversionTool.h")]
 ///<summary>Converts BSP brushes to static meshes.</summary>
+[CppInclude("BspConversionTool.h")]
 public partial class UBspConversionTool : UInteractiveTool {
-// BspConversionTool
+	///<summary>Settings</summary>
 	public UBspConversionToolProperties Settings;
+	///<summary>ToolActions</summary>
 	public UBspConversionToolActionPropertySet ToolActions;
+	///<summary>PreviewMesh</summary>
 	public UPreviewMesh PreviewMesh;
 }

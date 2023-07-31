@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("LensFile.h")]
 ///<summary>Wrapper to facilitate default LensFile vs picker</summary>
+[CppInclude("LensFile.h")]
 public partial struct FLensFilePicker {
-// LensFilePicker
 	public bool bUseDefaultLensFile;
 	public ULensFile LensFile;
 }

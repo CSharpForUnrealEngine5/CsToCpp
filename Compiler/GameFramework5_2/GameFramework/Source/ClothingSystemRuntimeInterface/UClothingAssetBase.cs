@@ -1,10 +1,11 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("ClothingAssetBase.h")]
 ///<summary>An interface object for any clothing asset the engine can use.</summary>
+[CppInclude("ClothingAssetBase.h")]
 public partial class UClothingAssetBase : UObject {
-// ClothingAssetBase
+	///<summary>If this asset was imported from a file, this will be the original path</summary>
 	public string ImportedFilePath;
+	///<summary>Guid to identify this asset. Will be embedded into chunks that are created using this asset</summary>
 	public FGuid AssetGuid;
 }

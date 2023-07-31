@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("RigVMCore/RigVMMemoryCommon.h")]
 ///<summary>The FRigVMOperand represents an argument used for an operator</summary>
+[CppInclude("RigVMCore/RigVMMemoryCommon.h")]
 public partial struct FRigVMOperand {
-// RigVMOperand
 	public ERigVMMemoryType MemoryType;
 	public ushort RegisterIndex;
 	public ushort RegisterOffset;

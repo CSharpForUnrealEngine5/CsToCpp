@@ -1,9 +1,8 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Commandlets/ExportDialogueScriptCommandlet.h")]
 public partial struct FDialogueScriptEntry {
-// DialogueScriptEntry
 	public string SpeakingVoice;
 	public TArray<string> TargetVoices;
 	public string SpokenDialogue;

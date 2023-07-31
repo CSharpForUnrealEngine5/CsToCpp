@@ -1,9 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("WebAPIOperationObject.h")]
 ///<summary>Baseclass for an asynchronous Http request/response operation.</summary>
+[CppInclude("WebAPIOperationObject.h")]
 public partial class UWebAPIOperationObject : UObject {
-// WebAPIOperationObject
+	///<summary>Can contain a response or status message.</summary>
 	public string Message;
 }

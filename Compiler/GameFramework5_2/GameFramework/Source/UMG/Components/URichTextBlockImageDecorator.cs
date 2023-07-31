@@ -1,9 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Components/RichTextBlockImageDecorator.h")]
 ///<summary>Allows you to setup an image decorator that can be configured</summary>
+[CppInclude("Components/RichTextBlockImageDecorator.h")]
 public partial class URichTextBlockImageDecorator : URichTextBlockDecorator {
-// RichTextBlockImageDecorator
+	///<summary>ImageSet</summary>
 	public UDataTable ImageSet;
 }

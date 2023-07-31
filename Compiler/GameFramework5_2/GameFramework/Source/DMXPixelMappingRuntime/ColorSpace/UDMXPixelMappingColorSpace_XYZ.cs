@@ -1,12 +1,16 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("ColorSpace/DMXPixelMappingColorSpace_XYZ.h")]
 public partial class UDMXPixelMappingColorSpace_XYZ : UDMXPixelMappingColorSpace {
-// DMXPixelMappingColorSpace_XYZ
+	///<summary>Attribute sent for X</summary>
 	public FDMXAttributeName XAttribute;
+	///<summary>Attribute sent for Z</summary>
 	public FDMXAttributeName ZAttribute;
+	///<summary>Attribute sent for Y</summary>
 	public FDMXAttributeName LuminanceAttribute;
+	///<summary>Min Luminance</summary>
 	public float MinLuminance;
+	///<summary>Max Luminance</summary>
 	public float MaxLuminance;
 }

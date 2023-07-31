@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("DisplayClusterConfigurationTypes_Media.h")]
 ///<summary>* Input media group</summary>
+[CppInclude("DisplayClusterConfigurationTypes_Media.h")]
 public partial struct FDisplayClusterConfigurationMediaInputGroup {
-// DisplayClusterConfigurationMediaInputGroup
 	public FDisplayClusterConfigurationClusterItemReferenceList ClusterNodes;
 	public UMediaSource MediaSource;
 }

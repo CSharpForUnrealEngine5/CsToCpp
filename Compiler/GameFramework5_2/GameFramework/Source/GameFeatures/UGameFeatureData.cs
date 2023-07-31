@@ -1,10 +1,11 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("GameFeatureData.h")]
 ///<summary>Data related to a game feature, a collection of code and content that adds a separable discrete feature to the game</summary>
+[CppInclude("GameFeatureData.h")]
 public partial class UGameFeatureData : UPrimaryDataAsset {
-// GameFeatureData
+	///<summary>List of actions to perform as this game feature is loaded/activated/deactivated/unloaded</summary>
 	public TArray<UGameFeatureAction> Actions;
+	///<summary>List of asset types to scan at startup</summary>
 	public TArray<FPrimaryAssetTypeInfo> PrimaryAssetTypesToScan;
 }

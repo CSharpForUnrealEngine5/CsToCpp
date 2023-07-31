@@ -1,10 +1,12 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("MSSettings.h")]
 public partial class UMaterialAssetSettings : UObject {
-// MaterialAssetSettings
+	///<summary>MasterMaterial3d</summary>
 	public string MasterMaterial3d;
+	///<summary>MasterMaterialSurface</summary>
 	public string MasterMaterialSurface;
+	///<summary>MasterMaterialPlant</summary>
 	public string MasterMaterialPlant;
 }

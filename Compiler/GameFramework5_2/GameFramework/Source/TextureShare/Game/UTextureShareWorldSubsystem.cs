@@ -1,10 +1,11 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Game/WorldSubsystem/TextureShareWorldSubsystem.h")]
 ///<summary>Tickable TextureShare World Subsystem used to handle tick and react to level and world changes.</summary>
+[CppInclude("Game/WorldSubsystem/TextureShareWorldSubsystem.h")]
 public partial class UTextureShareWorldSubsystem : UTickableWorldSubsystem {
-// TextureShareWorldSubsystem
+	///<summary>Get textureshare API UObject</summary>
 	public  UTextureShare GetTextureShare() { return default; }
+	///<summary>This UObject implements configuration and API</summary>
 	public UTextureShare TextureShare;
 }

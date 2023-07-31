@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Conditions/StateTreeCommonConditions.h")]
 ///<summary>Condition comparing distance between two vectors.</summary>
+[CppInclude("Conditions/StateTreeCommonConditions.h")]
 public partial struct FStateTreeCompareDistanceCondition {
-// StateTreeCompareDistanceCondition
 	public bool bInvert;
 	public EGenericAICheck Operator;
 }

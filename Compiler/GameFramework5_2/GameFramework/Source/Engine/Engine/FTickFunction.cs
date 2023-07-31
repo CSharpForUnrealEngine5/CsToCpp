@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Engine/EngineBaseTypes.h")]
 ///<summary>Abstract Base class for all tick functions.</summary>
+[CppInclude("Engine/EngineBaseTypes.h")]
 public partial struct FTickFunction {
-// TickFunction
 	public ETickingGroup TickGroup;
 	public ETickingGroup EndTickGroup;
 	public bool bTickEvenWhenPaused;

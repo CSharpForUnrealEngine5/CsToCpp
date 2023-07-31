@@ -1,9 +1,8 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("ModelProto.h")]
 ///<summary>Level 6 - FTensorShapeProto</summary>
+[CppInclude("ModelProto.h")]
 public partial struct FTensorShapeProto {
-// TensorShapeProto
 	public TArray<FTensorShapeProtoDimension> Dim;
 }

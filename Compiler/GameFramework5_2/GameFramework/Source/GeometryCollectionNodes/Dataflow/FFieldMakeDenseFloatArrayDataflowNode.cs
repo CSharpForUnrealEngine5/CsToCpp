@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Dataflow/GeometryCollectionFieldNodes.h")]
 ///<summary>Converts a sparse FloatArray (a selected subset of the whole incoming array) into a dense FloatArray</summary>
+[CppInclude("Dataflow/GeometryCollectionFieldNodes.h")]
 public partial struct FFieldMakeDenseFloatArrayDataflowNode {
-// FieldMakeDenseFloatArrayDataflowNode
 	public TArray<float> FieldFloatInput;
 	public TArray<int> FieldRemap;
 	public int NumSamplePositions;

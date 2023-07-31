@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("GameplayEffectTypes.h")]
 ///<summary>Data structure that stores an instigator and related data, such as positions and targets</summary>
+[CppInclude("GameplayEffectTypes.h")]
 public partial struct FGameplayEffectContext {
-// GameplayEffectContext
 	public TWeakObjectPtr<AActor> Instigator;
 	public TWeakObjectPtr<AActor> EffectCauser;
 	public TWeakObjectPtr<UGameplayAbility> AbilityCDO;

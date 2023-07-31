@@ -1,10 +1,11 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("SparseVolumeTexture/SparseVolumeTexture.h")]
 ///<summary>UAnimatedSparseVolumeTexture inherit from USparseVolumeTexture to be viewed using the first frame by default.</summary>
+[CppInclude("SparseVolumeTexture/SparseVolumeTexture.h")]
 public partial class UAnimatedSparseVolumeTexture : USparseVolumeTexture {
-// AnimatedSparseVolumeTexture
+	///<summary>The asset frame count.</summary>
 	public int FrameCount;
+	///<summary>VolumeBounds</summary>
 	public FBox VolumeBounds;
 }

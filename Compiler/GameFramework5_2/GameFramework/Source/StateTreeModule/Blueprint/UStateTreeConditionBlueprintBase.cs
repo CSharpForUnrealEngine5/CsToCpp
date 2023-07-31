@@ -1,9 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Blueprint/StateTreeConditionBlueprintBase.h")]
 ///<summary>* Base class for Blueprint based Conditions.</summary>
+[CppInclude("Blueprint/StateTreeConditionBlueprintBase.h")]
 public partial class UStateTreeConditionBlueprintBase : UStateTreeNodeBlueprintBase {
-// StateTreeConditionBlueprintBase
+	///<summary>ReceiveTestCondition</summary>
 	public  bool ReceiveTestCondition() { return default; }
 }

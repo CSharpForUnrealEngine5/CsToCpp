@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("UnrealEd/CollisionAutomationTests.h")]
 ///<summary>Container for detailing collision automated test data.</summary>
+[CppInclude("UnrealEd/CollisionAutomationTests.h")]
 public partial struct FCollisionTestEntry {
-// CollisionTestEntry
 	public string RootShapeAsset;
 	public string ShapeType;
 	public FHitResult HitResult;

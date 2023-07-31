@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("GameplayEffectTypes.h")]
 ///<summary>Metadata about a gameplay cue execution</summary>
+[CppInclude("GameplayEffectTypes.h")]
 public partial struct FGameplayCueParameters {
-// GameplayCueParameters
 	public float NormalizedMagnitude;
 	public float RawMagnitude;
 	public FGameplayEffectContextHandle EffectContext;

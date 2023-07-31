@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("DisplaceMeshTool.h")]
 ///<summary>Per-layer properties for Perlin noise. Each layer has independent Frequency and Intensity.</summary>
+[CppInclude("DisplaceMeshTool.h")]
 public partial struct FPerlinLayerProperties {
-// PerlinLayerProperties
 	public float Frequency;
 	public float Intensity;
 }

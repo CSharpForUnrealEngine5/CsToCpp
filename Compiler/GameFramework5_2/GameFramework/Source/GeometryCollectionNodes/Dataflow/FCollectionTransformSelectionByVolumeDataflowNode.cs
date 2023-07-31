@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Dataflow/GeometryCollectionSelectionNodes.h")]
 ///<summary>Selects pieces based on their volume</summary>
+[CppInclude("Dataflow/GeometryCollectionSelectionNodes.h")]
 public partial struct FCollectionTransformSelectionByVolumeDataflowNode {
-// CollectionTransformSelectionByVolumeDataflowNode
 	public FManagedArrayCollection Collection;
 	public float VolumeMin;
 	public float VolumeMax;

@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Distributions/Distribution.h")]
 ///<summary>Lookup table for distributions.</summary>
+[CppInclude("Distributions/Distribution.h")]
 public partial struct FDistributionLookupTable {
-// DistributionLookupTable
 	public float TimeScale;
 	public float TimeBias;
 	public TArray<float> Values;

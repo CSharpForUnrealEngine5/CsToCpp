@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("InputAction.h")]
 ///<summary>Run time queryable action instance</summary>
+[CppInclude("InputAction.h")]
 public partial struct FInputActionInstance {
-// InputActionInstance
 	public UInputAction SourceAction;
 	public ETriggerEvent TriggerEvent;
 	public float LastTriggeredWorldTime;

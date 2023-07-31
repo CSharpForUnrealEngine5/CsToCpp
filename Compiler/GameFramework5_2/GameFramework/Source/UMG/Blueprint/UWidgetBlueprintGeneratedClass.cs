@@ -1,19 +1,29 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Blueprint/WidgetBlueprintGeneratedClass.h")]
 ///<summary>The widget blueprint generated class allows us to create blueprint-able widgets for UMG at runtime.</summary>
+[CppInclude("Blueprint/WidgetBlueprintGeneratedClass.h")]
 public partial class UWidgetBlueprintGeneratedClass : UBlueprintGeneratedClass {
-// WidgetBlueprintGeneratedClass
+	///<summary>A tree of the widget templates to be created</summary>
 	public UWidgetTree WidgetTree;
+	///<summary>The extension that are considered static to the class</summary>
 	public TArray<UWidgetBlueprintGeneratedClassExtension> Extensions;
+	///<summary>List Field Notifies. No index here on purpose to prevent saving them.</summary>
 	public TArray<FFieldNotificationId> FieldNotifyNames;
+	///<summary>The classes native parent requires a native tick</summary>
 	public bool bClassRequiresNativeTick;
+	///<summary>bCanCallPreConstruct</summary>
 	public bool bCanCallPreConstruct;
+	///<summary>Bindings</summary>
 	public TArray<FDelegateRuntimeBinding> Bindings;
+	///<summary>Animations</summary>
 	public TArray<UWidgetAnimation> Animations;
+	///<summary>All named slots, even the ones that have content already filled into them by a parent class and are not</summary>
 	public TArray<string> NamedSlots;
+	///<summary>All named slots mapped the assigned GUID of their UNamedSlot widget. *</summary>
 	public TMap<string,FGuid> NamedSlotsWithID;
+	///<summary>Available Named Slots for content in a subclass.  These are slots that are accumulated from all super</summary>
 	public TArray<string> AvailableNamedSlots;
+	///<summary>These are the set of named slots that can be used on an instance of the widget.  This set is slightly</summary>
 	public TArray<string> InstanceNamedSlots;
 }

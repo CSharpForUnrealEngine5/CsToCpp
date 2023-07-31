@@ -1,8 +1,7 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("ThumbnailRendering/ThumbnailRenderer.h")]
 ///<summary>This is an abstract base class that is used to define the interface that</summary>
+[CppInclude("ThumbnailRendering/ThumbnailRenderer.h")]
 public partial class UThumbnailRenderer : UObject {
-// ThumbnailRenderer
 }

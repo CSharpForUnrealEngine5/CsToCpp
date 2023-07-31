@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Meter.h")]
 ///<summary>The results of the meter analysis.</summary>
+[CppInclude("Meter.h")]
 public partial struct FMeterResults {
-// MeterResults
 	public float TimeSeconds;
 	public float MeterValue;
 	public float PeakValue;

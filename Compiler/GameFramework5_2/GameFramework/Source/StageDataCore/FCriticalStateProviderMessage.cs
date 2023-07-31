@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("StageMessages.h")]
 ///<summary>Message sent to notify about critical state change.</summary>
+[CppInclude("StageMessages.h")]
 public partial struct FCriticalStateProviderMessage {
-// CriticalStateProviderMessage
 	public EStageCriticalStateEvent State;
 	public string SourceName;
 }

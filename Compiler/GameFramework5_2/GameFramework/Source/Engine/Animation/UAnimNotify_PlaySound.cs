@@ -1,13 +1,18 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Animation/AnimNotifies/AnimNotify_PlaySound.h")]
 public partial class UAnimNotify_PlaySound : UAnimNotify {
-// AnimNotify_PlaySound
+	///<summary>Sound to Play</summary>
 	public USoundBase Sound;
+	///<summary>Volume Multiplier</summary>
 	public float VolumeMultiplier;
+	///<summary>Pitch Multiplier</summary>
 	public float PitchMultiplier;
+	///<summary>If this sound should follow its owner</summary>
 	public bool bFollow;
+	///<summary>bPreviewIgnoreAttenuation</summary>
 	public bool bPreviewIgnoreAttenuation;
+	///<summary>Socket or bone name to attach sound to</summary>
 	public string AttachName;
 }

@@ -1,8 +1,7 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("RootMotionModifier.h")]
 ///<summary>URootMotionModifier_SimpleWarp.</summary>
+[CppInclude("RootMotionModifier.h")]
 public partial class UDEPRECATED_RootMotionModifier_SimpleWarp : URootMotionModifier_Warp {
-// RootMotionModifier_SimpleWarp
 }

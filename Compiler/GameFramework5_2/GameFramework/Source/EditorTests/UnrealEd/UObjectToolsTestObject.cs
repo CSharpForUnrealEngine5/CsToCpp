@@ -1,9 +1,10 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("UnrealEd/ObjectToolsTests.h")]
 public partial class UObjectToolsTestObject : UObject {
-// ObjectToolsTestObject
+	///<summary>StrongReference</summary>
 	public UObject StrongReference;
+	///<summary>WeakReference</summary>
 	public TWeakObjectPtr<UObject> WeakReference;
 }

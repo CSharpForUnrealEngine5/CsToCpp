@@ -1,12 +1,16 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("AudioModulationStyle.h")]
 public partial class UAudioModulationStyle : UBlueprintFunctionLibrary {
-// AudioModulationStyle
+	///<summary>GetModulationGeneratorColor</summary>
 	public static FColor GetModulationGeneratorColor() { return default; }
+	///<summary>GetControlBusColor</summary>
 	public static FColor GetControlBusColor() { return default; }
+	///<summary>GetControlBusMixColor</summary>
 	public static FColor GetControlBusMixColor() { return default; }
+	///<summary>GetPatchColor</summary>
 	public static FColor GetPatchColor() { return default; }
+	///<summary>GetParameterColor</summary>
 	public static FColor GetParameterColor() { return default; }
 }

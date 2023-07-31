@@ -1,9 +1,8 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("GameFramework/WorldSettings.h")]
 public partial struct FLightmassWorldInfoSettings {
-// LightmassWorldInfoSettings
 	public float StaticLightingLevelScale;
 	public int NumIndirectLightingBounces;
 	public int NumSkyLightingBounces;

@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Engine/EngineTypes.h")]
 ///<summary>Rigid body error correction data</summary>
+[CppInclude("Engine/EngineTypes.h")]
 public partial struct FRigidBodyErrorCorrection {
-// RigidBodyErrorCorrection
 	public float PingExtrapolation;
 	public float PingLimit;
 	public float ErrorPerLinearDifference;

@@ -1,9 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("MuCOE/CustomizableObjectInstanceEditor.h")]
 ///<summary>Wrapper UObject class for the UCustomizableObjectInstance::FObjectInstanceUpdatedDelegate dynamic multicast delegate</summary>
+[CppInclude("MuCOE/CustomizableObjectInstanceEditor.h")]
 public partial class UUpdateClassWrapperClass : UObject {
-// UpdateClassWrapperClass
+	///<summary>Method to assign for the callback</summary>
 	public  void DelegatedCallback(UCustomizableObjectInstance Instance) {}
 }

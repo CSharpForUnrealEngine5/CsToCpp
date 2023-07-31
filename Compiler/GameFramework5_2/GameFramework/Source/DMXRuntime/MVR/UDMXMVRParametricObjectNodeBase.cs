@@ -1,10 +1,11 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
+///<summary>UE specific: The base class for all Children in a Child List Node, whereas the standard refers to them as &#39;Parametric Objects&#39;.</summary>
 [CppInclude("MVR/Types/DMXMVRParametricObjectNodeBase.h")]
-///<summary>UE specific: The base class for all Children in a Child List Node, whereas the standard refers to them as 'Parametric Objects'.</summary>
 public partial class UDMXMVRParametricObjectNodeBase : UObject {
-// DMXMVRParametricObjectNodeBase
+	///<summary>The unique identifier of the object.</summary>
 	public FGuid UUID;
+	///<summary>The location of the object inside the parent coordinate system.</summary>
 	public FDMXOptionalTransform Matrix;
 }

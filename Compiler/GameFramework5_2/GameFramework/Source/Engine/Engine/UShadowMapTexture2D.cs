@@ -1,8 +1,8 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Engine/ShadowMapTexture2D.h")]
 public partial class UShadowMapTexture2D : UTexture2D {
-// ShadowMapTexture2D
+	///<summary>Bit-field with shadowmap flags.</summary>
 	public EShadowMapFlags ShadowmapFlags;
 }

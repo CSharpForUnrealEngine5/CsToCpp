@@ -1,10 +1,11 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("RigVMModel/Nodes/RigVMRerouteNode.h")]
 ///<summary>A reroute node is used to visually improve the</summary>
+[CppInclude("RigVMModel/Nodes/RigVMRerouteNode.h")]
 public partial class URigVMRerouteNode : URigVMTemplateNode {
-// RigVMRerouteNode
+	///<summary>Returns true if this node should be shown as a full node,</summary>
 	public  bool GetShowsAsFullNode() { return default; }
+	///<summary>bShowAsFullNode</summary>
 	public bool bShowAsFullNode;
 }

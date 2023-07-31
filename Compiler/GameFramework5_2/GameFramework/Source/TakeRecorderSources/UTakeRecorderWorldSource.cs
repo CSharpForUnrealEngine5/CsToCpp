@@ -1,8 +1,7 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("TakeRecorderWorldSource.h")]
 ///<summary>A recording source that records world state</summary>
+[CppInclude("TakeRecorderWorldSource.h")]
 public partial class UTakeRecorderWorldSource : UTakeRecorderWorldSourceSettings {
-// TakeRecorderWorldSource
 }

@@ -1,10 +1,11 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("AnimationBudgetBlueprintLibrary.h")]
 ///<summary>Function library to expose the budget allocator to Blueprints</summary>
+[CppInclude("AnimationBudgetBlueprintLibrary.h")]
 public partial class UAnimationBudgetBlueprintLibrary : UBlueprintFunctionLibrary {
-// AnimationBudgetBlueprintLibrary
+	///<summary>Enable/disable the animation budgeting system.</summary>
 	public static void EnableAnimationBudget(UObject WorldContextObject,bool bEnabled) {}
+	///<summary>Set the parameters of the animation budgeting system.</summary>
 	public static void SetAnimationBudgetParameters(UObject WorldContextObject,FAnimationBudgetAllocatorParameters InParameters) {}
 }

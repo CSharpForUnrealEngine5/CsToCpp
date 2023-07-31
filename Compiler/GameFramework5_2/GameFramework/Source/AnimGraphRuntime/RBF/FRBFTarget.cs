@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("RBF/RBFSolver.h")]
 ///<summary>Data about a particular target in the RBF, including scaling factor</summary>
+[CppInclude("RBF/RBFSolver.h")]
 public partial struct FRBFTarget {
-// RBFTarget
 	public float ScaleFactor;
 	public bool bApplyCustomCurve;
 	public FRichCurve CustomCurve;

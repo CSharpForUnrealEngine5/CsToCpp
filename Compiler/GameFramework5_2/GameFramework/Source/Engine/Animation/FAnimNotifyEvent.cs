@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Animation/AnimTypes.h")]
 ///<summary>Triggers an animation notify.  Each AnimNotifyEvent contains an AnimNotify object</summary>
+[CppInclude("Animation/AnimTypes.h")]
 public partial struct FAnimNotifyEvent {
-// AnimNotifyEvent
 	public float DisplayTime_DEPRECATED;
 	public float TriggerTimeOffset;
 	public float EndTriggerTimeOffset;

@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("GameplayEffect.h")]
 ///<summary>Struct representing a float whose magnitude is dictated by a backing attribute and a calculation policy, follows basic form of:</summary>
+[CppInclude("GameplayEffect.h")]
 public partial struct FAttributeBasedFloat {
-// AttributeBasedFloat
 	public FScalableFloat Coefficient;
 	public FScalableFloat PreMultiplyAdditiveValue;
 	public FScalableFloat PostMultiplyAdditiveValue;

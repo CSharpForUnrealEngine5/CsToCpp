@@ -1,9 +1,8 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Units/Highlevel/Hierarchy/RigUnit_TwoBoneIKSimple.h")]
 public partial struct FRigUnit_TwoBoneIKSimple_DebugSettings {
-// RigUnit_TwoBoneIKSimple_DebugSettings
 	public bool bEnabled;
 	public float Scale;
 	public FTransform WorldOffset;

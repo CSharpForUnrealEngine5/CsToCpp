@@ -1,8 +1,8 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Animation/EditorCompositeSection.h")]
 public partial class UEditorCompositeSection : UEditorAnimBaseObj {
-// EditorCompositeSection
+	///<summary>Default blend in time.</summary>
 	public FCompositeSection CompositeSection;
 }

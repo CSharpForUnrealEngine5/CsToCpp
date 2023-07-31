@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("NiagaraScript.h")]
 ///<summary>Struct containing all of the data needed to run a Niagara VM executable script.</summary>
+[CppInclude("NiagaraScript.h")]
 public partial struct FNiagaraVMExecutableData {
-// NiagaraVMExecutableData
 	public FNiagaraVMExecutableByteCode ByteCode;
 	public FNiagaraVMExecutableByteCode OptimizedByteCode;
 	public int NumTempRegisters;

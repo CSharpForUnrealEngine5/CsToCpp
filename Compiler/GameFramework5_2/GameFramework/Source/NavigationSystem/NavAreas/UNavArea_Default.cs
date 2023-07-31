@@ -1,8 +1,7 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("NavAreas/NavArea_Default.h")]
 ///<summary>Regular navigation area, applied to entire navigation data by default</summary>
+[CppInclude("NavAreas/NavArea_Default.h")]
 public partial class UNavArea_Default : UNavArea {
-// NavArea_Default
 }

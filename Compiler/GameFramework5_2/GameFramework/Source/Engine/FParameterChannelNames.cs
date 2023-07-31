@@ -1,9 +1,8 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("MaterialTypes.h")]
 public partial struct FParameterChannelNames {
-// ParameterChannelNames
 	public string R;
 	public string G;
 	public string B;

@@ -1,10 +1,11 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
+///<summary>A property that can be used to change the color of an input device&#39;s light over time with a curve</summary>
 [CppInclude("GameFramework/InputDeviceProperties.h")]
-///<summary>A property that can be used to change the color of an input device's light over time with a curve</summary>
 public partial class UColorInputDeviceCurveProperty : UInputDeviceProperty {
-// ColorInputDeviceCurveProperty
+	///<summary>Default color data that will be used by default. Device Specific overrides will be used when the current input device matches</summary>
 	public FDeviceColorCurveData ColorData;
+	///<summary>A map of device specific color data. If no overrides are specified, the Default hardware data will be used</summary>
 	public TMap<string,FDeviceColorCurveData> DeviceOverrideData;
 }

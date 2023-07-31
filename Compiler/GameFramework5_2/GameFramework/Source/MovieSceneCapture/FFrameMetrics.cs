@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("MovieSceneCaptureProtocolBase.h")]
 ///<summary>Metrics that correspond to a particular frame</summary>
+[CppInclude("MovieSceneCaptureProtocolBase.h")]
 public partial struct FFrameMetrics {
-// FrameMetrics
 	public float TotalElapsedTime;
 	public float FrameDelta;
 	public int FrameNumber;

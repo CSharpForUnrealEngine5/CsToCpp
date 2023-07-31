@@ -1,9 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("SmoothMeshTool.h")]
 ///<summary>PropertySet for properties affecting the Smoother.</summary>
+[CppInclude("SmoothMeshTool.h")]
 public partial class USmoothMeshToolProperties : UInteractiveToolPropertySet {
-// SmoothMeshToolProperties
+	///<summary>Type of smoothing to apply</summary>
 	public ESmoothMeshToolSmoothType SmoothingType;
 }

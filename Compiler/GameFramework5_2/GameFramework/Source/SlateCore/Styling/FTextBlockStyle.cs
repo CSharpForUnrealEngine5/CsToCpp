@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Styling/SlateTypes.h")]
 ///<summary>Represents the appearance of an STextBlock</summary>
+[CppInclude("Styling/SlateTypes.h")]
 public partial struct FTextBlockStyle {
-// TextBlockStyle
 	public FSlateFontInfo Font;
 	public FSlateColor ColorAndOpacity;
 	public FDeprecateSlateVector2D ShadowOffset;

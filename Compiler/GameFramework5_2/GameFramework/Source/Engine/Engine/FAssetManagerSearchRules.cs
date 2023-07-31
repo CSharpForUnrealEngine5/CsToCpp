@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Engine/AssetManagerTypes.h")]
 ///<summary>Rules for how to scan the asset registry for assets matching path and type descriptions</summary>
+[CppInclude("Engine/AssetManagerTypes.h")]
 public partial struct FAssetManagerSearchRules {
-// AssetManagerSearchRules
 	public TArray<string> AssetScanPaths;
 	public TArray<string> IncludePatterns;
 	public TArray<string> ExcludePatterns;

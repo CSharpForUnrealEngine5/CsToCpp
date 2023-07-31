@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("FriendsChatChromeStyle.h")]
 ///<summary>Interface for the services manager.</summary>
+[CppInclude("FriendsChatChromeStyle.h")]
 public partial struct FFriendsChatChromeStyle {
-// FriendsChatChromeStyle
 	public FSlateBrush ChatBackgroundBrush;
 	public FSlateBrush ChatEntryBackgroundBrush;
 	public FSlateBrush ChannelBackgroundBrush;

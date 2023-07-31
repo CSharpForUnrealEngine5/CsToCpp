@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("StageAppRequest.h")]
 ///<summary>Holds a request made via websocket to duplicate one or more actors.</summary>
+[CppInclude("StageAppRequest.h")]
 public partial struct FRCWebSocketNDisplayActorDuplicateBody {
-// RCWebSocketNDisplayActorDuplicateBody
 	public TArray<string> Actors;
 	public int RequestId;
 }

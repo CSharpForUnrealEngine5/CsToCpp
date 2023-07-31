@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("WorldConditionTypes.h")]
 ///<summary>Result of a world condition evaluation.</summary>
+[CppInclude("WorldConditionTypes.h")]
 public partial struct FWorldConditionResult {
-// WorldConditionResult
 	public EWorldConditionResultValue Value;
 	public bool bCanBeCached;
 }

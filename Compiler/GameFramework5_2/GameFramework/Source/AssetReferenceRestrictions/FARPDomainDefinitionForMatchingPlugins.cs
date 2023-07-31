@@ -1,9 +1,8 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("AssetReferencingPolicySettings.h")]
 public partial struct FARPDomainDefinitionForMatchingPlugins {
-// ARPDomainDefinitionForMatchingPlugins
 	public string DisplayName;
 	public string ErrorMessageIfUsedElsewhere;
 	public EARPPluginMatchMode MatchRule;

@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
+///<summary>Payload data describing an individual font in a typeface. Keep this lean as it&#39;s also used as a key!</summary>
 [CppInclude("Fonts/CompositeFont.h")]
-///<summary>Payload data describing an individual font in a typeface. Keep this lean as it's also used as a key!</summary>
 public partial struct FFontData {
-// FontData
 	public string FontFilename;
 	public EFontHinting Hinting;
 	public EFontLoadingPolicy LoadingPolicy;

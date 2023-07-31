@@ -1,11 +1,14 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Elements/PCGDifferenceElement.h")]
 public partial class UPCGDifferenceSettings : UPCGSettings {
-// PCGDifferenceSettings
+	///<summary>DensityFunction</summary>
 	public EPCGDifferenceDensityFunction DensityFunction;
+	///<summary>Mode</summary>
 	public EPCGDifferenceMode Mode;
+	///<summary>bDiffMetadata</summary>
 	public bool bDiffMetadata;
+	///<summary>bKeepZeroDensityPoints</summary>
 	public bool bKeepZeroDensityPoints;
 }

@@ -1,10 +1,11 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("GameFramework/InputDeviceProperties.h")]
 ///<summary>Sets simple trigger feedback</summary>
+[CppInclude("GameFramework/InputDeviceProperties.h")]
 public partial class UInputDeviceTriggerFeedbackProperty : UInputDeviceTriggerEffect {
-// InputDeviceTriggerFeedbackProperty
+	///<summary>What position on the trigger that the feedback should be applied to over time (1-9)</summary>
 	public FDeviceTriggerFeedbackData TriggerData;
+	///<summary>A map of device specific color data. If no overrides are specified, the Default hardware data will be used</summary>
 	public TMap<string,FDeviceTriggerFeedbackData> DeviceOverrideData;
 }

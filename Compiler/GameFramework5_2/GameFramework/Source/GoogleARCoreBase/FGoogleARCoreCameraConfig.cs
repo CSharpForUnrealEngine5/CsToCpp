@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("GoogleARCoreTypes.h")]
 ///<summary>Camera configuration from ARCore.</summary>
+[CppInclude("GoogleARCoreTypes.h")]
 public partial struct FGoogleARCoreCameraConfig {
-// GoogleARCoreCameraConfig
 	public FIntPoint CameraImageResolution;
 	public FIntPoint CameraTextureResolution;
 	public string CameraID;

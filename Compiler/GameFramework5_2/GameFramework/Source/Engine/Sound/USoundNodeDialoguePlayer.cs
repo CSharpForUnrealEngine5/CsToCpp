@@ -1,10 +1,11 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Sound/SoundNodeDialoguePlayer.h")]
 ///<summary>Sound node that contains a reference to the dialogue table to pull from and be played</summary>
+[CppInclude("Sound/SoundNodeDialoguePlayer.h")]
 public partial class USoundNodeDialoguePlayer : USoundNode {
-// SoundNodeDialoguePlayer
+	///<summary>DialogueWaveParameter</summary>
 	public FDialogueWaveParameter DialogueWaveParameter;
+	///<summary>Whether the dialogue line should be played looping</summary>
 	public bool bLooping;
 }

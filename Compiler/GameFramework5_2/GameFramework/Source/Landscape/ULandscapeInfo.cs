@@ -1,16 +1,24 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("LandscapeInfo.h")]
 public partial class ULandscapeInfo : UObject {
-// LandscapeInfo
+	///<summary>LandscapeActor</summary>
 	public TWeakObjectPtr<ALandscape> LandscapeActor;
+	///<summary>LandscapeGuid</summary>
 	public FGuid LandscapeGuid;
+	///<summary>ComponentSizeQuads</summary>
 	public int ComponentSizeQuads;
+	///<summary>SubsectionSizeQuads</summary>
 	public int SubsectionSizeQuads;
+	///<summary>ComponentNumSubsections</summary>
 	public int ComponentNumSubsections;
+	///<summary>DrawScale</summary>
 	public FVector DrawScale;
+	///<summary>Layers</summary>
 	public TArray<FLandscapeInfoLayerSettings> Layers;
+	///<summary>StreamingProxies</summary>
 	public TArray<TWeakObjectPtr<ALandscapeStreamingProxy>> StreamingProxies;
+	///<summary>SORTED list of all actors implementing the spline interface that are registered with this landscape info</summary>
 	public TArray<object /*SplineActors*/> SplineActors;
 }

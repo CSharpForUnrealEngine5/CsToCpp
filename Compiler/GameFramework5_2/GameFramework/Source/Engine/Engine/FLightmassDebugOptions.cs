@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Engine/EngineTypes.h")]
 ///<summary>Debug options for Lightmass</summary>
+[CppInclude("Engine/EngineTypes.h")]
 public partial struct FLightmassDebugOptions {
-// LightmassDebugOptions
 	public bool bDebugMode;
 	public bool bStatsEnabled;
 	public bool bGatherBSPSurfacesAcrossComponents;

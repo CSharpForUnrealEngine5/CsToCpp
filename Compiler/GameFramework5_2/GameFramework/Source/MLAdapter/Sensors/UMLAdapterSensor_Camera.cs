@@ -1,14 +1,19 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
+///<summary>Observing player&#39;s camera</summary>
 [CppInclude("Sensors/MLAdapterSensor_Camera.h")]
-///<summary>Observing player's camera</summary>
 public partial class UMLAdapterSensor_Camera : UMLAdapterSensor {
-// MLAdapterSensor_Camera
+	///<summary>Width</summary>
 	public uint Width;
+	///<summary>Height</summary>
 	public uint Height;
+	///<summary>bShowUI</summary>
 	public bool bShowUI;
+	///<summary>CaptureComp</summary>
 	public USceneCaptureComponent2D CaptureComp;
+	///<summary>RenderTarget2D</summary>
 	public UTextureRenderTarget2D RenderTarget2D;
+	///<summary>CachedViewportClient</summary>
 	public UGameViewportClient CachedViewportClient;
 }

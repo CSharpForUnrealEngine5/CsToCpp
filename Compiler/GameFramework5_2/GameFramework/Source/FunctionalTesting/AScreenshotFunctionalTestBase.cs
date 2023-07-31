@@ -1,11 +1,13 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("ScreenshotFunctionalTestBase.h")]
 ///<summary>Base class for screenshot functional test</summary>
+[CppInclude("ScreenshotFunctionalTestBase.h")]
 public partial class AScreenshotFunctionalTestBase : AFunctionalTest {
-// ScreenshotFunctionalTestBase
+	///<summary>Notes</summary>
 	public string Notes;
+	///<summary>ScreenshotCamera</summary>
 	public UCameraComponent ScreenshotCamera;
+	///<summary>ScreenshotOptions</summary>
 	public FAutomationScreenshotOptions ScreenshotOptions;
 }

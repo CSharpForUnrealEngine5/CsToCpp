@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("CommonInputBaseTypes.h")]
 ///<summary>DEPRECATED Legacy!</summary>
+[CppInclude("CommonInputBaseTypes.h")]
 public partial struct FCommonInputPlatformBaseData {
-// CommonInputPlatformBaseData
 	public ECommonInputType DefaultInputType;
 	public bool bSupportsMouseAndKeyboard;
 	public bool bSupportsGamepad;

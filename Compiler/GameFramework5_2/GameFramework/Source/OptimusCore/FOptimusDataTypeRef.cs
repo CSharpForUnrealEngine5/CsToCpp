@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("OptimusDataType.h")]
 ///<summary>A reference object for an Optimus data type to use in UObjects and other UStruct-like things</summary>
+[CppInclude("OptimusDataType.h")]
 public partial struct FOptimusDataTypeRef {
-// OptimusDataTypeRef
 	public string TypeName;
 	public TWeakObjectPtr<UObject> TypeObject;
 }

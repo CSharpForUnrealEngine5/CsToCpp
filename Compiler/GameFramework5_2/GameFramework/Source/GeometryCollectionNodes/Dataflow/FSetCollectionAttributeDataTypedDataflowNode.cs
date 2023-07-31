@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Dataflow/GeometryCollectionNodes.h")]
 ///<summary>Set attribute data in a Collection</summary>
+[CppInclude("Dataflow/GeometryCollectionNodes.h")]
 public partial struct FSetCollectionAttributeDataTypedDataflowNode {
-// SetCollectionAttributeDataTypedDataflowNode
 	public FManagedArrayCollection Collection;
 	public EStandardGroupNameEnum GroupName;
 	public string CustomGroupName;

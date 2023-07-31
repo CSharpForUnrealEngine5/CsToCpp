@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Dataflow/ChaosFleshKinematicInitializationNodes.h")]
 ///<summary>Connects vertices to a rig so that the vertices can be animated</summary>
+[CppInclude("Dataflow/ChaosFleshKinematicInitializationNodes.h")]
 public partial struct FBindVerticesToSkeleton {
-// BindVerticesToSkeleton
 	public FManagedArrayCollection Collection;
 	public TArray<int> VertexIndices;
 	public int OriginBoneIndex;

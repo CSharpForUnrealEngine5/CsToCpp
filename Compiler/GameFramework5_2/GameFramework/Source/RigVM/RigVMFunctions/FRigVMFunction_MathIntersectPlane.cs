@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("RigVMFunctions/Math/RigVMFunction_MathVector.h")]
 ///<summary>Intersects a plane with a vector given a start and direction</summary>
+[CppInclude("RigVMFunctions/Math/RigVMFunction_MathVector.h")]
 public partial struct FRigVMFunction_MathIntersectPlane {
-// RigVMFunction_MathIntersectPlane
 	public FVector Start;
 	public FVector Direction;
 	public FVector PlanePoint;

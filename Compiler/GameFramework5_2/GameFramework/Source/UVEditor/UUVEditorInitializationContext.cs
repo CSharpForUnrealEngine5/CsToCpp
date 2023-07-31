@@ -1,8 +1,7 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("UVEditorInitializationContext.h")]
 ///<summary>An editor-only context used specifically to pass data from the asset editor to the</summary>
+[CppInclude("UVEditorInitializationContext.h")]
 public partial class UUVEditorInitializationContext : UUVToolContextObject {
-// UVEditorInitializationContext
 }

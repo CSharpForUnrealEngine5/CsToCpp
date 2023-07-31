@@ -1,8 +1,7 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("NiagaraNodeParameterMapBase.h")]
 ///<summary>Base node for parameter maps.</summary>
+[CppInclude("NiagaraNodeParameterMapBase.h")]
 public partial class UNiagaraNodeParameterMapBase : UNiagaraNodeWithDynamicPins {
-// NiagaraNodeParameterMapBase
 }

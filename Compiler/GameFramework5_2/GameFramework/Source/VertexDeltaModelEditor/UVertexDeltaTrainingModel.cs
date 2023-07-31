@@ -1,9 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("VertexDeltaTrainingModel.h")]
 ///<summary>The training model for the vertex delta model.</summary>
+[CppInclude("VertexDeltaTrainingModel.h")]
 public partial class UVertexDeltaTrainingModel : UMLDeformerTrainingModel {
-// VertexDeltaTrainingModel
+	///<summary>Main training function, with implementation in python.</summary>
 	public  int Train() { return default; }
 }

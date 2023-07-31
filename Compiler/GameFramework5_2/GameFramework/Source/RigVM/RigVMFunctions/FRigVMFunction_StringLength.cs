@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("RigVMFunctions/RigVMFunction_String.h")]
 ///<summary>Returns the length of a string</summary>
+[CppInclude("RigVMFunctions/RigVMFunction_String.h")]
 public partial struct FRigVMFunction_StringLength {
-// RigVMFunction_StringLength
 	public string Value;
 	public int Length;
 }

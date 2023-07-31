@@ -1,12 +1,15 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
+///<summary>* Mechanic for a rectangle &quot;marquee&quot; selection. It creates and maintains the 2D rectangle associated with a mouse drag.</summary>
 [CppInclude("Mechanics/RectangleMarqueeMechanic.h")]
-///<summary>* Mechanic for a rectangle "marquee" selection. It creates and maintains the 2D rectangle associated with a mouse drag.</summary>
 public partial class URectangleMarqueeMechanic : UInteractionMechanic {
-// RectangleMarqueeMechanic
+	///<summary>If true, then the URectangleMarqueeMechanic will not create an internal UClickDragInputBehavior in ::Setup(), allowing</summary>
 	public bool bUseExternalClickDragBehavior;
+	///<summary>If true, then the URectangleMarqueeMechanic will not query the tool manager for the current camera view state,</summary>
 	public bool bUseExternalUpdateCameraState;
+	///<summary>If the computation time for a single call to OnDragRectangleChanged ever exceeds this threshold then future calls</summary>
 	public double OnDragRectangleChangedDeferredThreshold;
+	///<summary>ClickDragBehavior</summary>
 	public UClickDragInputBehavior ClickDragBehavior;
 }

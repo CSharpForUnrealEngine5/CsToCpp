@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("ARTypes.h")]
 ///<summary>A specific AR video format</summary>
+[CppInclude("ARTypes.h")]
 public partial struct FARVideoFormat {
-// ARVideoFormat
 	public int FPS;
 	public int Width;
 	public int Height;

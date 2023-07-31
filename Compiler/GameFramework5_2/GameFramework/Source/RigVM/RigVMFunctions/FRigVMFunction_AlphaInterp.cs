@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("RigVMFunctions/Simulation/RigVMFunction_AlphaInterp.h")]
 ///<summary>Takes in a float value and outputs an accumulated value with a customized scale and clamp</summary>
+[CppInclude("RigVMFunctions/Simulation/RigVMFunction_AlphaInterp.h")]
 public partial struct FRigVMFunction_AlphaInterp {
-// RigVMFunction_AlphaInterp
 	public float Value;
 	public float Scale;
 	public float Bias;

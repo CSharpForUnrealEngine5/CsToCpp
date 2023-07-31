@@ -1,8 +1,7 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Units/RigUnit.h")]
 ///<summary>Base class for all rig units</summary>
+[CppInclude("Units/RigUnit.h")]
 public partial struct FRigUnit {
-// RigUnit
 }

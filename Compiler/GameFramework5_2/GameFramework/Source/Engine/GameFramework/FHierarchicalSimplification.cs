@@ -1,9 +1,8 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("GameFramework/WorldSettings.h")]
 public partial struct FHierarchicalSimplification {
-// HierarchicalSimplification
 	public float TransitionScreenSize;
 	public float OverrideDrawDistance;
 	public bool bUseOverrideDrawDistance;

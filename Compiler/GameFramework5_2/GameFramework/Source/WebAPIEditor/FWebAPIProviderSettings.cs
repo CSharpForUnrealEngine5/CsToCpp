@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("WebAPIProviderSettings.h")]
 ///<summary>Encapsulates settings for WebAPI providers.</summary>
+[CppInclude("WebAPIProviderSettings.h")]
 public partial struct FWebAPIProviderSettings {
-// WebAPIProviderSettings
 	public bool bEnableArbitraryJsonPayloads;
 	public string RequestTypeNameTemplate;
 	public string ResponseTypeNameTemplate;

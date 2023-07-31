@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Units/Highlevel/Hierarchy/RigUnit_AimBone.h")]
 ///<summary>Aligns the rotation of a primary and secondary axis of a bone to a global target.</summary>
+[CppInclude("Units/Highlevel/Hierarchy/RigUnit_AimBone.h")]
 public partial struct FRigUnit_AimItem {
-// RigUnit_AimItem
 	public FRigElementKey Item;
 	public FRigUnit_AimItem_Target Primary;
 	public FRigUnit_AimItem_Target Secondary;

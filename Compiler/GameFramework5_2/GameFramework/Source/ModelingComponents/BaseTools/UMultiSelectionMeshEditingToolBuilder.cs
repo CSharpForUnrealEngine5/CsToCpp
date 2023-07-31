@@ -1,8 +1,7 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("BaseTools/MultiSelectionMeshEditingTool.h")]
 ///<summary>UMultiSelectionMeshEditingToolBuilder is a base tool builder for multi</summary>
+[CppInclude("BaseTools/MultiSelectionMeshEditingTool.h")]
 public partial class UMultiSelectionMeshEditingToolBuilder : UInteractiveToolWithToolTargetsBuilder {
-// MultiSelectionMeshEditingToolBuilder
 }

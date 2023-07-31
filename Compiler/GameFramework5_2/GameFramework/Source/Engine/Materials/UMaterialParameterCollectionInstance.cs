@@ -1,9 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Materials/MaterialParameterCollectionInstance.h")]
 ///<summary>Class that stores per-world instance parameter data for a given UMaterialParameterCollection resource.</summary>
+[CppInclude("Materials/MaterialParameterCollectionInstance.h")]
 public partial class UMaterialParameterCollectionInstance : UObject {
-// MaterialParameterCollectionInstance
+	///<summary>Collection resource this instance is based off of.</summary>
 	public UMaterialParameterCollection Collection;
 }

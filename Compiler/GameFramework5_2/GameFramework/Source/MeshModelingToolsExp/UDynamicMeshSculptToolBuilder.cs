@@ -1,8 +1,7 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("DynamicMeshSculptTool.h")]
 ///<summary>Tool Builder</summary>
+[CppInclude("DynamicMeshSculptTool.h")]
 public partial class UDynamicMeshSculptToolBuilder : UMeshSurfacePointMeshEditingToolBuilder {
-// DynamicMeshSculptToolBuilder
 }

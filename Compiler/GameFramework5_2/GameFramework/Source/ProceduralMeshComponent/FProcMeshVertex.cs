@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("ProceduralMeshComponent.h")]
 ///<summary>One vertex for the procedural mesh, used for storing data internally</summary>
+[CppInclude("ProceduralMeshComponent.h")]
 public partial struct FProcMeshVertex {
-// ProcMeshVertex
 	public FVector Position;
 	public FVector Normal;
 	public FProcMeshTangent Tangent;

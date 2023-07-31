@@ -1,8 +1,7 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("ToolContexts/WidgetToolsContext.h")]
 ///<summary>UWidgetToolsContext extends UModeManagerInteractiveToolsContext with methods needed for</summary>
+[CppInclude("ToolContexts/WidgetToolsContext.h")]
 public partial class UWidgetToolsContext : UModeManagerInteractiveToolsContext {
-// WidgetToolsContext
 }

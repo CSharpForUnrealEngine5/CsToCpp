@@ -1,9 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Sections/MovieSceneStringSection.h")]
 ///<summary>A single string section</summary>
+[CppInclude("Sections/MovieSceneStringSection.h")]
 public partial class UMovieSceneStringSection : UMovieSceneSection {
-// MovieSceneStringSection
+	///<summary>Curve data</summary>
 	public FMovieSceneStringChannel StringCurve;
 }

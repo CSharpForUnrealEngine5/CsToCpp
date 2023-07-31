@@ -1,10 +1,11 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Styling/ClassBasedWidgetStyleDefinitions.h")]
 ///<summary>Assigns meta data based on modifier class. To every modifier class you can assign meta data.</summary>
+[CppInclude("Styling/ClassBasedWidgetStyleDefinitions.h")]
 public partial class UClassBasedWidgetStyleDefinitions : UModifierBoundWidgetStyleDefinitions {
-// ClassBasedWidgetStyleDefinitions
+	///<summary>Config</summary>
 	public TMap<UClass,FPerModifierClassWidgetSytleData> Config;
+	///<summary>Meta data that is not bound to any modifier but just to a simple name.</summary>
 	public TMap<string,FWidgetStyleDataArray> CategoriesWithoutModifier;
 }

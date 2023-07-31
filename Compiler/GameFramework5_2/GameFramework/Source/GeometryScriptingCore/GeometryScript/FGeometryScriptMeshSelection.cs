@@ -1,8 +1,7 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("GeometryScript/GeometryScriptSelectionTypes.h")]
 ///<summary>FGeometryScriptMeshSelection is a container for a Mesh Selection used in Geometry Script.</summary>
+[CppInclude("GeometryScript/GeometryScriptSelectionTypes.h")]
 public partial struct FGeometryScriptMeshSelection {
-// GeometryScriptMeshSelection
 }

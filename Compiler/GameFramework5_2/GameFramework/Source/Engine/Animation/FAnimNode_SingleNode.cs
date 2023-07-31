@@ -1,9 +1,8 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Animation/AnimSingleNodeInstanceProxy.h")]
 ///<summary>Local anim node for extensible processing.</summary>
+[CppInclude("Animation/AnimSingleNodeInstanceProxy.h")]
 public partial struct FAnimNode_SingleNode {
-// AnimNode_SingleNode
 	public FPoseLink SourcePose;
 }

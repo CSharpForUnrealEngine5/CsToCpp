@@ -1,9 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("ConversationSettings.h")]
 ///<summary>Conversation settings.</summary>
+[CppInclude("ConversationSettings.h")]
 public partial class UConversationSettings : UDeveloperSettings {
-// ConversationSettings
+	///<summary>ConversationInstanceClass</summary>
 	public TSoftObjectPtr<UClass> ConversationInstanceClass;
 }

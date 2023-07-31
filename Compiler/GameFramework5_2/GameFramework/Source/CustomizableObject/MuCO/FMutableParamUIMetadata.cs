@@ -1,9 +1,8 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("MuCO/CustomizableObjectUIData.h")]
 public partial struct FMutableParamUIMetadata {
-// MutableParamUIMetadata
 	public string ObjectFriendlyName;
 	public string UISectionName;
 	public int UIOrder;

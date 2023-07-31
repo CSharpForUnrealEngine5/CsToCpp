@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("WorldPartition/WorldPartitionStreamingSource.h")]
 ///<summary>Structure containing all properties required to query a streaming state</summary>
+[CppInclude("WorldPartition/WorldPartitionStreamingSource.h")]
 public partial struct FWorldPartitionStreamingQuerySource {
-// WorldPartitionStreamingQuerySource
 	public FVector Location;
 	public float Radius;
 	public bool bUseGridLoadingRange;

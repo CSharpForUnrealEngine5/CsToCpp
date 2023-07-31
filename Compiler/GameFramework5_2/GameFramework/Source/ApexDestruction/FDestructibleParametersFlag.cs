@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("DestructibleMesh.h")]
 ///<summary>Flags that apply to a destructible actor.</summary>
+[CppInclude("DestructibleMesh.h")]
 public partial struct FDestructibleParametersFlag {
-// DestructibleParametersFlag
 	public bool bAccumulateDamage;
 	public bool bAssetDefinedSupport;
 	public bool bWorldSupport;

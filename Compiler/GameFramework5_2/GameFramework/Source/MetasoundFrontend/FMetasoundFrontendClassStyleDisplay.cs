@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("MetasoundFrontendDocument.h")]
 ///<summary>Information regarding how to display a node class</summary>
+[CppInclude("MetasoundFrontendDocument.h")]
 public partial struct FMetasoundFrontendClassStyleDisplay {
-// MetasoundFrontendClassStyleDisplay
 	public string ImageName;
 	public bool bShowName;
 	public bool bShowInputNames;

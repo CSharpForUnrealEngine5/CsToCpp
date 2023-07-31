@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Dataflow/GeometryCollectionSelectionNodes.h")]
 ///<summary>Selects the leaves in the Collection</summary>
+[CppInclude("Dataflow/GeometryCollectionSelectionNodes.h")]
 public partial struct FCollectionTransformSelectionLeafDataflowNode {
-// CollectionTransformSelectionLeafDataflowNode
 	public FManagedArrayCollection Collection;
 	public FDataflowTransformSelection TransformSelection;
 }

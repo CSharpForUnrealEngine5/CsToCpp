@@ -1,9 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Tracks/MovieSceneVectorTrack.h")]
 ///<summary>Handles manipulation of float vectors in a movie scene</summary>
+[CppInclude("Tracks/MovieSceneVectorTrack.h")]
 public partial class UMovieSceneFloatVectorTrack : UMovieScenePropertyTrack {
-// MovieSceneFloatVectorTrack
+	///<summary>The number of channels used by the vector (2,3, or 4)</summary>
 	public int NumChannelsUsed;
 }

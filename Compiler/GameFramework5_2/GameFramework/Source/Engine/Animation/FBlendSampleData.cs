@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Animation/AnimationAsset.h")]
 ///<summary>Transform definition</summary>
+[CppInclude("Animation/AnimationAsset.h")]
 public partial struct FBlendSampleData {
-// BlendSampleData
 	public int SampleDataIndex;
 	public UAnimSequence Animation;
 	public float TotalWeight;

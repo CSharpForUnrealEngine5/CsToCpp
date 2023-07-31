@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("CryptoKeysSettings.h")]
 ///<summary>UStruct representing a named encryption key</summary>
+[CppInclude("CryptoKeysSettings.h")]
 public partial struct FCryptoEncryptionKey {
-// CryptoEncryptionKey
 	public FGuid Guid;
 	public string Name;
 	public string Key;

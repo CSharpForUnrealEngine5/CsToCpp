@@ -1,11 +1,14 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Materials/MaterialExpressionLandscapeLayerSwitch.h")]
 public partial class UMaterialExpressionLandscapeLayerSwitch : UMaterialExpression {
-// MaterialExpressionLandscapeLayerSwitch
+	///<summary>LayerUsed</summary>
 	public FExpressionInput LayerUsed;
+	///<summary>LayerNotUsed</summary>
 	public FExpressionInput LayerNotUsed;
+	///<summary>ParameterName</summary>
 	public string ParameterName;
+	///<summary>PreviewUsed</summary>
 	public bool PreviewUsed;
 }

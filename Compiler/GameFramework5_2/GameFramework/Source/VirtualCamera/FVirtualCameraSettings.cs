@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("VirtualCameraSaveGame.h")]
 ///<summary>Stores specific camera settings to be retrieved at a later time</summary>
+[CppInclude("VirtualCameraSaveGame.h")]
 public partial struct FVirtualCameraSettings {
-// VirtualCameraSettings
 	public float FocalLength;
 	public float Aperture;
 	public string FilmbackName;

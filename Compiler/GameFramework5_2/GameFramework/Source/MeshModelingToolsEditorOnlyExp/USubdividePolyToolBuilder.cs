@@ -1,8 +1,7 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("SubdividePolyTool.h")]
 ///<summary>Tool builder</summary>
+[CppInclude("SubdividePolyTool.h")]
 public partial class USubdividePolyToolBuilder : USingleSelectionMeshEditingToolBuilder {
-// SubdividePolyToolBuilder
 }

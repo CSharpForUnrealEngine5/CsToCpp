@@ -1,9 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("DataInterfaces/OptimusDataInterfaceDebugDraw.h")]
 ///<summary>Compute Framework Data Interface for writing skinned mesh.</summary>
+[CppInclude("DataInterfaces/OptimusDataInterfaceDebugDraw.h")]
 public partial class UOptimusDebugDrawDataInterface : UOptimusComputeDataInterface {
-// OptimusDebugDrawDataInterface
+	///<summary>DebugDrawParameters</summary>
 	public FOptimusDebugDrawParameters DebugDrawParameters;
 }

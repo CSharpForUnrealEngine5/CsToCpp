@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("AudioMixerBlueprintLibrary.h")]
 ///<summary>Out structure for use with AudioMixerBlueprintLibrary::SwapAudioOutputDevice</summary>
+[CppInclude("AudioMixerBlueprintLibrary.h")]
 public partial struct FSwapAudioOutputResult {
-// SwapAudioOutputResult
 	public string CurrentDeviceId;
 	public string RequestedDeviceId;
 	public ESwapAudioOutputDeviceResultState Result;

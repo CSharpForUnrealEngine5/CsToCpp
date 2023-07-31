@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("LensData.h")]
 ///<summary>Pre generate STMap and normalized focal length information</summary>
+[CppInclude("LensData.h")]
 public partial struct FSTMapInfo {
-// STMapInfo
 	public UTexture DistortionMap;
 	public FCalibratedMapFormat MapFormat;
 }

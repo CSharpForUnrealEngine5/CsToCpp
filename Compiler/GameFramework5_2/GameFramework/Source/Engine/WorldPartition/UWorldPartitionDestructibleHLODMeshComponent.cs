@@ -1,11 +1,14 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("WorldPartition/HLOD/DestructibleHLODComponent.h")]
 public partial class UWorldPartitionDestructibleHLODMeshComponent : UWorldPartitionDestructibleHLODComponent {
-// WorldPartitionDestructibleHLODMeshComponent
+	///<summary>DestructibleHLODMaterial</summary>
 	public UMaterialInterface DestructibleHLODMaterial;
+	///<summary>DestructibleHLODState</summary>
 	public FWorldPartitionDestructibleHLODState DestructibleHLODState;
+	///<summary>VisibilityMaterial</summary>
 	public UMaterialInstanceDynamic VisibilityMaterial;
+	///<summary>VisibilityTexture</summary>
 	public UTexture2DDynamic VisibilityTexture;
 }

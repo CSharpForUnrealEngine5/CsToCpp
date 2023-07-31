@@ -1,8 +1,7 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("IAudioEndpoint.h")]
 ///<summary>This opaque class should be used for specifying settings for how audio should be</summary>
+[CppInclude("IAudioEndpoint.h")]
 public partial class UAudioEndpointSettingsBase : UObject {
-// AudioEndpointSettingsBase
 }

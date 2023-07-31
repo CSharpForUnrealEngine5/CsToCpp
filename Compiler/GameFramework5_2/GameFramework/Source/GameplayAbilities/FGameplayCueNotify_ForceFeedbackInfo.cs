@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("GameplayCueNotifyTypes.h")]
 ///<summary>FGameplayCueNotify_ForceFeedbackInfo</summary>
+[CppInclude("GameplayCueNotifyTypes.h")]
 public partial struct FGameplayCueNotify_ForceFeedbackInfo {
-// GameplayCueNotify_ForceFeedbackInfo
 	public FGameplayCueNotify_SpawnCondition SpawnConditionOverride;
 	public FGameplayCueNotify_PlacementInfo PlacementInfoOverride;
 	public UForceFeedbackEffect ForceFeedbackEffect;

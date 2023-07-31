@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Dataflow/GeometryCollectionNodes.h")]
 ///<summary>Generates a hash value from a string</summary>
+[CppInclude("Dataflow/GeometryCollectionNodes.h")]
 public partial struct FHashStringDataflowNode {
-// HashStringDataflowNode
 	public string String;
 	public int Hash;
 }

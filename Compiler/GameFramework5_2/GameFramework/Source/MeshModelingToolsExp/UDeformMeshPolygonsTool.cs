@@ -1,10 +1,12 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("DeformMeshPolygonsTool.h")]
 public partial class UDeformMeshPolygonsTool : UMeshSurfacePointTool {
-// DeformMeshPolygonsTool
+	///<summary>PreviewMeshActor</summary>
 	public AInternalToolFrameworkActor PreviewMeshActor;
+	///<summary>DynamicMeshComponent</summary>
 	public UDynamicMeshComponent DynamicMeshComponent;
+	///<summary>TransformProps</summary>
 	public UDeformMeshPolygonsTransformProperties TransformProps;
 }

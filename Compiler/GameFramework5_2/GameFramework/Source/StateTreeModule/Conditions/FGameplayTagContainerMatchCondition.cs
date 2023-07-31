@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Conditions/StateTreeGameplayTagConditions.h")]
 ///<summary>Gameplay Tag Container match condition.</summary>
+[CppInclude("Conditions/StateTreeGameplayTagConditions.h")]
 public partial struct FGameplayTagContainerMatchCondition {
-// GameplayTagContainerMatchCondition
 	public EGameplayContainerMatchType MatchType;
 	public bool bExactMatch;
 	public bool bInvert;

@@ -1,10 +1,12 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("GameSessionSettings.h")]
 public partial class UGameSessionSettings : UObject {
-// GameSessionSettings
+	///<summary>Maximum number of spectators allowed by this server.</summary>
 	public int MaxSpectators;
+	///<summary>Maximum number of players allowed by this server.</summary>
 	public int MaxPlayers;
+	///<summary>Is voice enabled always or via a push to talk key binding.</summary>
 	public bool bRequiresPushToTalk;
 }

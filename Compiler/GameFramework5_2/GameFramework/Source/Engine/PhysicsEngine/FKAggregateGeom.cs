@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("PhysicsEngine/AggregateGeom.h")]
 ///<summary>Container for an aggregate of collision shapes</summary>
+[CppInclude("PhysicsEngine/AggregateGeom.h")]
 public partial struct FKAggregateGeom {
-// KAggregateGeom
 	public TArray<FKSphereElem> SphereElems;
 	public TArray<FKBoxElem> BoxElems;
 	public TArray<FKSphylElem> SphylElems;

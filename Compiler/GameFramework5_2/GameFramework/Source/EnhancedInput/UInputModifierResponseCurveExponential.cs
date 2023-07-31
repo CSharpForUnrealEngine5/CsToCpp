@@ -1,9 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("InputModifiers.h")]
 ///<summary>Response Curve Exponential</summary>
+[CppInclude("InputModifiers.h")]
 public partial class UInputModifierResponseCurveExponential : UInputModifier {
-// InputModifierResponseCurveExponential
+	///<summary>CurveExponent</summary>
 	public FVector CurveExponent;
 }

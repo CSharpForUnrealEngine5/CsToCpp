@@ -1,9 +1,10 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Nodes/OptimusNode_GraphTerminal.h")]
 public partial class UOptimusNode_GraphTerminal : UOptimusNode {
-// OptimusNode_GraphTerminal
+	///<summary>Indicates whether this is an entry or a return terminal node</summary>
 	public EOptimusTerminalType TerminalType;
+	///<summary>The graph that owns us. This contains all the necessary pin information to add on</summary>
 	public TWeakObjectPtr<UOptimusNodeSubGraph> OwningGraph;
 }

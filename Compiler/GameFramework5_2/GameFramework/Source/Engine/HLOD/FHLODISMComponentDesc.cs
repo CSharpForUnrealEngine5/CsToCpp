@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("HLOD/HLODProxyDesc.h")]
 ///<summary>Describe a LODActor ISM component</summary>
+[CppInclude("HLOD/HLODProxyDesc.h")]
 public partial struct FHLODISMComponentDesc {
-// HLODISMComponentDesc
 	public UStaticMesh StaticMesh;
 	public UMaterialInterface Material;
 	public TArray<FTransform> Instances;

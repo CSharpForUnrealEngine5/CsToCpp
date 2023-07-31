@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Kismet/GameplayStaticsTypes.h")]
 ///<summary>Input parameters to PredictProjectilePath functions.</summary>
+[CppInclude("Kismet/GameplayStaticsTypes.h")]
 public partial struct FPredictProjectilePathParams {
-// PredictProjectilePathParams
 	public FVector StartLocation;
 	public FVector LaunchVelocity;
 	public bool bTraceWithCollision;

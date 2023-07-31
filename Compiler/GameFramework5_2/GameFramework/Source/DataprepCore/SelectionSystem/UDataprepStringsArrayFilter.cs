@@ -1,12 +1,16 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("SelectionSystem/DataprepStringsArrayFilter.h")]
 public partial class UDataprepStringsArrayFilter : UDataprepFilter {
-// DataprepStringsArrayFilter
+	///<summary>The matching criteria used when checking if a fetched value can pass the filter</summary>
 	public EDataprepStringMatchType StringMatchingCriteria;
+	///<summary>The string used when doing the comparison</summary>
 	public string UserString;
+	///<summary>UserStringArray</summary>
 	public UDataprepStringFilterMatchingArray UserStringArray;
+	///<summary>bMatchInArray</summary>
 	public bool bMatchInArray;
+	///<summary>The source of string selected by the user</summary>
 	public UDataprepStringsArrayFetcher StringsArrayFetcher;
 }

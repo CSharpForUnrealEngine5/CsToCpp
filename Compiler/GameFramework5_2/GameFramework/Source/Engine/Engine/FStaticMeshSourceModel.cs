@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Engine/StaticMeshSourceData.h")]
 ///<summary>Source model from which a renderable static mesh is built.</summary>
+[CppInclude("Engine/StaticMeshSourceData.h")]
 public partial struct FStaticMeshSourceModel {
-// StaticMeshSourceModel
 	public UStaticMeshDescriptionBulkData StaticMeshDescriptionBulkData;
 	public FMeshBuildSettings BuildSettings;
 	public FMeshReductionSettings ReductionSettings;

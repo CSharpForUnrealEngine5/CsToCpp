@@ -1,8 +1,7 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("RigEditor/IKRigAnimInstanceProxy.h")]
 ///<summary>Proxy override for this UAnimInstance-derived class</summary>
+[CppInclude("RigEditor/IKRigAnimInstanceProxy.h")]
 public partial struct FIKRigAnimInstanceProxy {
-// IKRigAnimInstanceProxy
 }

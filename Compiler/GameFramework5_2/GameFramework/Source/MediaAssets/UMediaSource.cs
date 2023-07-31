@@ -1,16 +1,23 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("MediaSource.h")]
 ///<summary>Abstract base class for media sources.</summary>
+[CppInclude("MediaSource.h")]
 public partial class UMediaSource : UObject {
-// MediaSource
+	///<summary>Get the media source&#39;s URL string (must be implemented in child classes).</summary>
 	public  string GetUrl() { return default; }
+	///<summary>Validate the media source settings (must be implemented in child classes).</summary>
 	public  bool Validate() { return default; }
+	///<summary>Set a boolean parameter to pass to the player.</summary>
 	public  void SetMediaOptionBool(string Key,bool Value) {}
+	///<summary>Set a float parameter to pass to the player.</summary>
 	public  void SetMediaOptionFloat(string Key,float Value) {}
+	///<summary>Set an integer64 parameter to pass to the player.</summary>
 	public  void SetMediaOptionInt64(string Key,long Value) {}
+	///<summary>Set a string parameter to pass to the player.</summary>
 	public  void SetMediaOptionString(string Key,string Value) {}
+	///<summary>The thumbnail image.</summary>
 	public UTexture ThumbnailImage;
+	///<summary>Renders thumnbnails for us.</summary>
 	public UObject MediaSourceRenderer;
 }

@@ -1,8 +1,7 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("ViewportDragOperation.h")]
 ///<summary>Base class for interactable drag calculations</summary>
+[CppInclude("ViewportDragOperation.h")]
 public partial class UViewportDragOperation : UObject {
-// ViewportDragOperation
 }

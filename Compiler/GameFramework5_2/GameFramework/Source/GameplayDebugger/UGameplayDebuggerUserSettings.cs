@@ -1,11 +1,14 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("GameplayDebuggerConfig.h")]
 public partial class UGameplayDebuggerUserSettings : UDeveloperSettings {
-// GameplayDebuggerUserSettings
+	///<summary>Controls whether GameplayDebugger will be available in pure editor mode.</summary>
 	public bool bEnableGameplayDebuggerInEditor;
+	///<summary>Distance from view location under which actors can be selected</summary>
 	public float MaxViewDistance;
+	///<summary>Angle from view direction under which actors can be selected</summary>
 	public float MaxViewAngle;
+	///<summary>Font Size used by Gameplay Debugger</summary>
 	public int FontSize;
 }

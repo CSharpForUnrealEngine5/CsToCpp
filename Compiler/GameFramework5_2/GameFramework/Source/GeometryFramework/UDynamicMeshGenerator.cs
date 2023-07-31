@@ -1,8 +1,7 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("UDynamicMesh.h")]
 ///<summary>UDynamicMeshGenerator is an abstract base class for an implementation that can</summary>
+[CppInclude("UDynamicMesh.h")]
 public partial class UDynamicMeshGenerator : UObject {
-// DynamicMeshGenerator
 }

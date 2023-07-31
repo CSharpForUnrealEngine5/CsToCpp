@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("ConsoleVariablesAsset.h")]
 ///<summary>Data that will be serialized with this asset</summary>
+[CppInclude("ConsoleVariablesAsset.h")]
 public partial struct FConsoleVariablesEditorAssetSaveData {
-// ConsoleVariablesEditorAssetSaveData
 	public string CommandName;
 	public string CommandValueAsString;
 	public ECheckBoxState CheckedState;

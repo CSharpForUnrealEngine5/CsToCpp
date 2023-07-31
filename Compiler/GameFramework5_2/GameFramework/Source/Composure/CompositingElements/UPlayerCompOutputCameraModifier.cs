@@ -1,9 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("CompositingElements/PlayerViewportCompositingOutput.h")]
 ///<summary>UPlayerCompOutputCameraModifier</summary>
+[CppInclude("CompositingElements/PlayerViewportCompositingOutput.h")]
 public partial class UPlayerCompOutputCameraModifier : UCameraModifier {
-// PlayerCompOutputCameraModifier
+	///<summary>Owner</summary>
 	public UPlayerViewportCompositingOutput Owner;
 }

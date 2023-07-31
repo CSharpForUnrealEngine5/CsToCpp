@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("RemoteControlResponse.h")]
 ///<summary>Event triggered when an exposed entity struct is modified.</summary>
+[CppInclude("RemoteControlResponse.h")]
 public partial struct FRCPresetEntitiesModifiedEvent {
-// RCPresetEntitiesModifiedEvent
 	public string Type;
 	public string PresetName;
 	public string PresetId;

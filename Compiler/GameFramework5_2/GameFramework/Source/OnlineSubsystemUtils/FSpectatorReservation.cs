@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("SpectatorBeaconState.h")]
 ///<summary>A whole Spectator reservation</summary>
+[CppInclude("SpectatorBeaconState.h")]
 public partial struct FSpectatorReservation {
-// SpectatorReservation
 	public FUniqueNetIdRepl SpectatorId;
 	public FPlayerReservation Spectator;
 }

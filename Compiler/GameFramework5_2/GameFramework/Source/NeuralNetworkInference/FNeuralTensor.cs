@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("NeuralTensor.h")]
 ///<summary>For a general overview of NeuralNetworkInference (NNI), including documentation and code samples, @see UNeuralNetwork, the main class of NNI.</summary>
+[CppInclude("NeuralTensor.h")]
 public partial struct FNeuralTensor {
-// NeuralTensor
 	public ENeuralDataType DataType;
 	public TArray<long> Sizes;
 	public long Volume;

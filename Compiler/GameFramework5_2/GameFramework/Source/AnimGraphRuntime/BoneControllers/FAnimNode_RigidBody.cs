@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("BoneControllers/AnimNode_RigidBody.h")]
 ///<summary>Controller that simulates physics based on the physics asset of the skeletal mesh component</summary>
+[CppInclude("BoneControllers/AnimNode_RigidBody.h")]
 public partial struct FAnimNode_RigidBody {
-// AnimNode_RigidBody
 	public UPhysicsAsset OverridePhysicsAsset;
 	public FVector OverrideWorldGravity;
 	public FVector ExternalForce;

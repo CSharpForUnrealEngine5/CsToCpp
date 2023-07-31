@@ -1,9 +1,8 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Chaos/Adapters/GeometryCollectionComponentCacheAdapter.h")]
 public partial struct FBreakingEvent {
-// BreakingEvent
 	public int Index;
 	public FVector Location;
 	public FVector Velocity;

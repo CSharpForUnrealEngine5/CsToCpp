@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("RemoteControlRequest.h")]
 ///<summary>Holds a request to access an object</summary>
+[CppInclude("RemoteControlRequest.h")]
 public partial struct FRCObjectRequest {
-// RCObjectRequest
 	public string ObjectPath;
 	public string PropertyName;
 	public bool ResetToDefault;

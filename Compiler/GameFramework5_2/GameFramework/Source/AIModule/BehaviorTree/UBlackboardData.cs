@@ -1,11 +1,14 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("BehaviorTree/BlackboardData.h")]
 public partial class UBlackboardData : UDataAsset {
-// BlackboardData
+	///<summary>parent blackboard (keys can be overridden)</summary>
 	public UBlackboardData Parent;
+	///<summary>all keys inherited from parent chain</summary>
 	public TArray<FBlackboardEntry> ParentKeys;
+	///<summary>blackboard keys</summary>
 	public TArray<FBlackboardEntry> Keys;
+	///<summary>bHasSynchronizedKeys</summary>
 	public bool bHasSynchronizedKeys;
 }

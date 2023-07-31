@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("CameraCalibrationSettings.h")]
 ///<summary>Lens Data Table Editor Category color. Using for the color of the curves</summary>
+[CppInclude("CameraCalibrationSettings.h")]
 public partial struct FLensDataCategoryEditorColor {
-// LensDataCategoryEditorColor
 	public FColor Focus;
 	public FColor Iris;
 	public FColor Zoom;

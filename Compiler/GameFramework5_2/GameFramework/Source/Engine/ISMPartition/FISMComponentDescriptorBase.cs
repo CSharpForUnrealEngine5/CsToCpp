@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("ISMPartition/ISMComponentDescriptor.h")]
 ///<summary>Struct that holds the relevant properties that can help decide if instances of different</summary>
+[CppInclude("ISMPartition/ISMComponentDescriptor.h")]
 public partial struct FISMComponentDescriptorBase {
-// ISMComponentDescriptorBase
 	public uint Hash;
 	public UClass ComponentClass;
 	public EComponentMobility Mobility;

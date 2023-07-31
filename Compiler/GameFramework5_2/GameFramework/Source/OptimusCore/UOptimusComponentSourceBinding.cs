@@ -1,11 +1,14 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("OptimusComponentSource.h")]
 public partial class UOptimusComponentSourceBinding : UObject {
-// OptimusComponentSourceBinding
+	///<summary>The name to give the binding, to disambiguate it from other bindings of same component type.</summary>
 	public string BindingName;
+	///<summary>The component type that this binding applies to</summary>
 	public UClass ComponentType;
+	///<summary>Component tags to automatically bind this component binding to.</summary>
 	public TArray<string> ComponentTags;
+	///<summary>bIsPrimaryBinding</summary>
 	public bool bIsPrimaryBinding;
 }

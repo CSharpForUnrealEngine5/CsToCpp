@@ -1,9 +1,10 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("MuCOE/Nodes/CustomizableObjectNodeTextureLayer.h")]
 public partial class UCustomizableObjectNodeTextureLayer : UCustomizableObjectNode {
-// CustomizableObjectNodeTextureLayer
+	///<summary>Layers</summary>
 	public TArray<FCustomizableObjectTextureLayer> Layers;
+	///<summary>OutputPinReference</summary>
 	public FEdGraphPinReference OutputPinReference;
 }

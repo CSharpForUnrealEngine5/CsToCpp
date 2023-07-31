@@ -1,9 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("AnimGraphNode_CurveSource.h")]
 ///<summary>Supply curves from some external source (e.g. audio)</summary>
+[CppInclude("AnimGraphNode_CurveSource.h")]
 public partial class UAnimGraphNode_CurveSource : UAnimGraphNode_Base {
-// AnimGraphNode_CurveSource
+	///<summary>Node</summary>
 	public FAnimNode_CurveSource Node;
 }

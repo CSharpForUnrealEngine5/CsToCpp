@@ -1,8 +1,8 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("OculusInputFunctionLibrary.h")]
-///<summary>UE_DEPRECATED(5.1, "OculusVR plugin is deprecated; please use the built-in OpenXR plugin or OculusXR plugin from the Marketplace.")</summary>
+///<summary>UE_DEPRECATED(5.1, &quot;OculusVR plugin is deprecated; please use the built-in OpenXR plugin or OculusXR plugin from the Marketplace.&quot;)</summary>
 public enum EBone {
 	Wrist_Root=0,
 	Hand_Start=-1,

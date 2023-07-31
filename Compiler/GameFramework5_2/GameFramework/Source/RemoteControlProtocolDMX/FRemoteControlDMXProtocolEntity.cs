@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("RemoteControlProtocolDMX.h")]
 ///<summary>DMX protocol entity for remote control binding</summary>
+[CppInclude("RemoteControlProtocolDMX.h")]
 public partial struct FRemoteControlDMXProtocolEntity {
-// RemoteControlDMXProtocolEntity
 	public FRemoteControlDMXProtocolEntityExtraSetting ExtraSetting;
 	public uint RangeInputTemplate;
 	public int Universe_DEPRECATED;

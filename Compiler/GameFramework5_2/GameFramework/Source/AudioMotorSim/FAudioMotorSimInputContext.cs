@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("AudioMotorSimTypes.h")]
 ///<summary>collection of properties to be filled out by the vehicle in order to update the motor sim</summary>
+[CppInclude("AudioMotorSimTypes.h")]
 public partial struct FAudioMotorSimInputContext {
-// AudioMotorSimInputContext
 	public float DeltaTime;
 	public float Speed;
 	public float ForwardSpeed;

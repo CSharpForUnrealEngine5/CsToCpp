@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("RigVMFunctions/Math/RigVMFunction_MathQuaternion.h")]
 ///<summary>Makes a quaternion from its components</summary>
+[CppInclude("RigVMFunctions/Math/RigVMFunction_MathQuaternion.h")]
 public partial struct FRigVMFunction_MathQuaternionMake {
-// RigVMFunction_MathQuaternionMake
 	public float X;
 	public float Y;
 	public float Z;

@@ -1,10 +1,11 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("AnimationModifiersAssetUserData.h")]
 ///<summary>Asset user data which can be added to a USkeleton or UAnimSequence to keep track of Animation Modifiers</summary>
+[CppInclude("AnimationModifiersAssetUserData.h")]
 public partial class UAnimationModifiersAssetUserData : UAssetUserData {
-// AnimationModifiersAssetUserData
+	///<summary>AnimationModifierInstances</summary>
 	public TArray<UAnimationModifier> AnimationModifierInstances;
+	///<summary>Animation modifiers APPLIED on the owning animation sequence</summary>
 	public TMap<FSoftObjectPath,UAnimationModifier> AppliedModifiers;
 }

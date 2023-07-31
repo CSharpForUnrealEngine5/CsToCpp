@@ -1,9 +1,8 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("MovieSceneSection.h")]
 public partial struct FMovieSceneEasingSettings {
-// MovieSceneEasingSettings
 	public int AutoEaseInDuration;
 	public int AutoEaseOutDuration;
 	public object /*EaseIn*/ EaseIn;

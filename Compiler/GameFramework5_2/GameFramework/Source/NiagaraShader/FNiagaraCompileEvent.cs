@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("NiagaraShared.h")]
 ///<summary>Records necessary information to give UI cues for errors/logs/warnings during compile.</summary>
+[CppInclude("NiagaraShared.h")]
 public partial struct FNiagaraCompileEvent {
-// NiagaraCompileEvent
 	public FNiagaraCompileEventSeverity Severity;
 	public string Message;
 	public string ShortDescription;

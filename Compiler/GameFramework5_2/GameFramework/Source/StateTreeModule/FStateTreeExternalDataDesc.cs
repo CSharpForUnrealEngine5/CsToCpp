@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("StateTreeTypes.h")]
 ///<summary>Describes an external data. The data can point to a struct or object.</summary>
+[CppInclude("StateTreeTypes.h")]
 public partial struct FStateTreeExternalDataDesc {
-// StateTreeExternalDataDesc
 	public UStruct Struct;
 	public string Name;
 	public FStateTreeExternalDataHandle Handle;

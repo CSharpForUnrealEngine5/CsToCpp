@@ -1,9 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("StateTreeFactory.h")]
 ///<summary>Factory for UStateTree</summary>
+[CppInclude("StateTreeFactory.h")]
 public partial class UStateTreeFactory : UFactory {
-// StateTreeFactory
+	///<summary>StateTreeSchemaClass</summary>
 	public UClass StateTreeSchemaClass;
 }

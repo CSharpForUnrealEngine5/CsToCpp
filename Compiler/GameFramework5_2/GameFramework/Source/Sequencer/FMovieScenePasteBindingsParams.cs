@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("SequencerUtilities.h")]
 ///<summary>Paste bindings params</summary>
+[CppInclude("SequencerUtilities.h")]
 public partial struct FMovieScenePasteBindingsParams {
-// MovieScenePasteBindingsParams
 	public TArray<FMovieSceneBindingProxy> Bindings;
 	public UMovieSceneFolder ParentFolder;
 	public TArray<UMovieSceneFolder> Folders;

@@ -1,9 +1,8 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("RigVMFunctions/Debug/RigVMFunction_DebugPoint.h")]
 public partial struct FRigVMFunction_DebugPointMutable {
-// RigVMFunction_DebugPointMutable
 	public FVector Vector;
 	public ERigUnitDebugPointMode Mode;
 	public FLinearColor Color;

@@ -1,9 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("SignificanceManager.h")]
 ///<summary>The significance manager provides a framework for registering objects by tag to each have a significance</summary>
+[CppInclude("SignificanceManager.h")]
 public partial class USignificanceManager : UObject {
-// SignificanceManager
+	///<summary>Game specific significance class to instantiate</summary>
 	public FSoftClassPath SignificanceManagerClassName;
 }

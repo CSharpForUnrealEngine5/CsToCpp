@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Engine/MicroTransactionBase.h")]
 ///<summary>Purchase information structure</summary>
+[CppInclude("Engine/MicroTransactionBase.h")]
 public partial struct FPurchaseInfo {
-// PurchaseInfo
 	public string Identifier;
 	public string DisplayName;
 	public string DisplayDescription;

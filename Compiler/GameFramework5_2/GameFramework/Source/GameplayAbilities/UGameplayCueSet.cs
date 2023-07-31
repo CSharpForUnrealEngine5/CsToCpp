@@ -1,9 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("GameplayCueSet.h")]
 ///<summary>A set of gameplay cue actors to handle gameplay cue events</summary>
+[CppInclude("GameplayCueSet.h")]
 public partial class UGameplayCueSet : UDataAsset {
-// GameplayCueSet
+	///<summary>GameplayCueData</summary>
 	public TArray<FGameplayCueNotifyData> GameplayCueData;
 }

@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("BoneControllers/AnimNode_CCDIK.h")]
 ///<summary>Controller which implements the CCDIK IK approximation algorithm</summary>
+[CppInclude("BoneControllers/AnimNode_CCDIK.h")]
 public partial struct FAnimNode_CCDIK {
-// AnimNode_CCDIK
 	public FVector EffectorLocation;
 	public EBoneControlSpace EffectorLocationSpace;
 	public FBoneSocketTarget EffectorTarget;

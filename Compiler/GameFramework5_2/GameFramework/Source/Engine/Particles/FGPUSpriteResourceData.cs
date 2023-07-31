@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Particles/TypeData/ParticleModuleTypeDataGpu.h")]
 ///<summary>The source data for runtime resources.</summary>
+[CppInclude("Particles/TypeData/ParticleModuleTypeDataGpu.h")]
 public partial struct FGPUSpriteResourceData {
-// GPUSpriteResourceData
 	public TArray<FColor> QuantizedColorSamples;
 	public TArray<FColor> QuantizedMiscSamples;
 	public TArray<FColor> QuantizedSimulationAttrSamples;

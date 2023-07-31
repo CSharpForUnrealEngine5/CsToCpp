@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
+///<summary>Structure for &#39;parameterized&#39; Lightmass settings</summary>
 [CppInclude("Editor/UnrealEdTypes.h")]
-///<summary>Structure for 'parameterized' Lightmass settings</summary>
 public partial struct FLightmassParameterizedMaterialSettings {
-// LightmassParameterizedMaterialSettings
 	public FLightmassBooleanParameterValue CastShadowAsMasked;
 	public FLightmassScalarParameterValue EmissiveBoost;
 	public FLightmassScalarParameterValue DiffuseBoost;

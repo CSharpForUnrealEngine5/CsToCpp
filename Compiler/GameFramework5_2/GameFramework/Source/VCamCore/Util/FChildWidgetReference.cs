@@ -1,9 +1,8 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Util/WidgetReference.h")]
 ///<summary>A reference to any child widget within an UMG Blueprint; only widgets in the same widget tree can be referenced.</summary>
+[CppInclude("Util/WidgetReference.h")]
 public partial struct FChildWidgetReference {
-// ChildWidgetReference
 	public TSoftObjectPtr<UWidget> Template;
 }

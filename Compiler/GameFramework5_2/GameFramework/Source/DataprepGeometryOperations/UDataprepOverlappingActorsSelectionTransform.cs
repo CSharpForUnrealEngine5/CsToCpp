@@ -1,10 +1,11 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("DataprepGeometrySelectionTransforms.h")]
 ///<summary>Return all actors overlapping the selected actors</summary>
+[CppInclude("DataprepGeometrySelectionTransforms.h")]
 public partial class UDataprepOverlappingActorsSelectionTransform : UDataprepSelectionTransform {
-// DataprepOverlappingActorsSelectionTransform
+	///<summary>Accuracy of the distance field approximation</summary>
 	public float JacketingAccuracy;
+	///<summary>If checked, select fully inside + overlapping actors. Else, select only actors that are fully inside.</summary>
 	public bool bSelectOverlapping;
 }

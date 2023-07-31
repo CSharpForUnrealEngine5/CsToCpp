@@ -1,8 +1,7 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("EditMeshPolygonsTool.h")]
 ///<summary>ToolBuilder</summary>
+[CppInclude("EditMeshPolygonsTool.h")]
 public partial class UEditMeshPolygonsToolBuilder : USingleTargetWithSelectionToolBuilder {
-// EditMeshPolygonsToolBuilder
 }

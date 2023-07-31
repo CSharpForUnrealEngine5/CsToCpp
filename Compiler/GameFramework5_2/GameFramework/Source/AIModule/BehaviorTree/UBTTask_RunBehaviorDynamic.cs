@@ -1,11 +1,13 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("BehaviorTree/Tasks/BTTask_RunBehaviorDynamic.h")]
 ///<summary>RunBehaviorDynamic task allows pushing subtrees on execution stack.</summary>
+[CppInclude("BehaviorTree/Tasks/BTTask_RunBehaviorDynamic.h")]
 public partial class UBTTask_RunBehaviorDynamic : UBTTaskNode {
-// BTTask_RunBehaviorDynamic
+	///<summary>Gameplay tag that will identify this task for subtree injection</summary>
 	public FGameplayTag InjectionTag;
+	///<summary>default behavior to run</summary>
 	public UBehaviorTree DefaultBehaviorAsset;
+	///<summary>current subtree</summary>
 	public UBehaviorTree BehaviorAsset;
 }

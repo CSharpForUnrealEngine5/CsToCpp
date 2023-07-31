@@ -1,9 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
+///<summary>UEditorGeometryGenerationSubsystem manages recomputation of &quot;generated&quot; mesh actors, eg</summary>
 [CppInclude("GeometryActors/EditorGeometryGenerationSubsystem.h")]
-///<summary>UEditorGeometryGenerationSubsystem manages recomputation of "generated" mesh actors, eg</summary>
 public partial class UEditorGeometryGenerationSubsystem : UEditorSubsystem {
-// EditorGeometryGenerationSubsystem
+	///<summary>GenerationManager</summary>
 	public UEditorGeometryGenerationManager GenerationManager;
 }

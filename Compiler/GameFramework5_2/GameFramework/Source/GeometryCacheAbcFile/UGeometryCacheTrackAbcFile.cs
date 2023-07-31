@@ -1,8 +1,7 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("GeometryCacheTrackAbcFile.h")]
 ///<summary>GeometryCacheTrack for Alembic file querying</summary>
+[CppInclude("GeometryCacheTrackAbcFile.h")]
 public partial class UGeometryCacheTrackAbcFile : UGeometryCacheTrack {
-// GeometryCacheTrackAbcFile
 }

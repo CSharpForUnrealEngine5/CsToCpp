@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("OnlinePIESettings.h")]
 ///<summary>Stores PIE login credentials</summary>
+[CppInclude("OnlinePIESettings.h")]
 public partial struct FPIELoginSettingsInternal {
-// PIELoginSettingsInternal
 	public string Id;
 	public string Token;
 	public string Type;

@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("EyeTrackerTypes.h")]
 ///<summary>Represents a unified gaze ray that incorporates both eyes.</summary>
+[CppInclude("EyeTrackerTypes.h")]
 public partial struct FEyeTrackerGazeData {
-// EyeTrackerGazeData
 	public FVector GazeOrigin;
 	public FVector GazeDirection;
 	public FVector FixationPoint;

@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("ClothPhysicalMeshData.h")]
 ///<summary>Spatial simulation data for a mesh.</summary>
+[CppInclude("ClothPhysicalMeshData.h")]
 public partial struct FClothPhysicalMeshData {
-// ClothPhysicalMeshData
 	public TArray<FVector3f> Vertices;
 	public TArray<FVector3f> Normals;
 	public TArray<FColor> VertexColors;

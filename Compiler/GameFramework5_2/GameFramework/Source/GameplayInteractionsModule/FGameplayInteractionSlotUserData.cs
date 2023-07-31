@@ -1,8 +1,7 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("GameplayInteractionsTypes.h")]
 ///<summary>Data added to a Smart Object slot when interaction is started on it. Allows to look up the user.</summary>
+[CppInclude("GameplayInteractionsTypes.h")]
 public partial struct FGameplayInteractionSlotUserData {
-// GameplayInteractionSlotUserData
 }

@@ -1,12 +1,15 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("ISMPartition/ISMPartitionActor.h")]
 ///<summary>Actor base class for instance containers placed on a grid.</summary>
+[CppInclude("ISMPartition/ISMPartitionActor.h")]
 public partial class AISMPartitionActor : APartitionActor {
-// ISMPartitionActor
+	///<summary>Clients</summary>
 	public TArray<FGuid> Clients;
+	///<summary>Descriptors</summary>
 	public TArray<FISMComponentDescriptor> Descriptors;
+	///<summary>DescriptorComponents</summary>
 	public TArray<FISMComponentData> DescriptorComponents;
+	///<summary>ClientInstanceManagers</summary>
 	public TMap<FGuid,FISMClientInstanceManagerData> ClientInstanceManagers;
 }

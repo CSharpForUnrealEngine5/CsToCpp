@@ -1,10 +1,11 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("AssetViewerSettings.h")]
 ///<summary>Default asset viewer settings.</summary>
+[CppInclude("AssetViewerSettings.h")]
 public partial class UAssetViewerSettings : UObject {
-// AssetViewerSettings
+	///<summary>Collection of scene profiles</summary>
 	public TArray<FPreviewSceneProfile> Profiles;
+	///<summary>This will enforce mutable CDO of UAssetViewerSettings transacted</summary>
 	public bool bFakeConfigValue_HACK;
 }

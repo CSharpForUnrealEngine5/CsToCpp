@@ -1,9 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("GeometryCacheTrackTransformGroupAnimation.h")]
 ///<summary>Derived GeometryCacheTrack class, used for Transform animation.</summary>
+[CppInclude("GeometryCacheTrackTransformGroupAnimation.h")]
 public partial class UDEPRECATED_GeometryCacheTrack_TransformGroupAnimation : UGeometryCacheTrack {
-// GeometryCacheTrack_TransformGroupAnimation
+	///<summary>Sets/updates the MeshData for this track</summary>
 	public  void SetMesh(FGeometryCacheMeshData NewMeshData) {}
 }

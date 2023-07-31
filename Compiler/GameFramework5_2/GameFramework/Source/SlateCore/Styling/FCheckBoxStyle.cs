@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Styling/SlateTypes.h")]
 ///<summary>Represents the appearance of an SCheckBox</summary>
+[CppInclude("Styling/SlateTypes.h")]
 public partial struct FCheckBoxStyle {
-// CheckBoxStyle
 	public ESlateCheckBoxType CheckBoxType;
 	public FSlateBrush UncheckedImage;
 	public FSlateBrush UncheckedHoveredImage;

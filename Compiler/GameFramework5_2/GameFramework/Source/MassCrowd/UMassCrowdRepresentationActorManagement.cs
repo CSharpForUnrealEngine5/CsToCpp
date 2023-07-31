@@ -1,8 +1,7 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("MassCrowdRepresentationActorManagement.h")]
 ///<summary>Overridden representation processor to make it tied to the crowd via the requirements.</summary>
+[CppInclude("MassCrowdRepresentationActorManagement.h")]
 public partial class UMassCrowdRepresentationActorManagement : UMassRepresentationActorManagement {
-// MassCrowdRepresentationActorManagement
 }

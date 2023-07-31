@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Party/SocialParty.h")]
 ///<summary>Base struct used to replicate data about the state of the party to all members.</summary>
+[CppInclude("Party/SocialParty.h")]
 public partial struct FPartyRepData {
-// PartyRepData
 	public FPartyPrivacySettings PrivacySettings;
 	public TArray<FPartyPlatformSessionInfo> PlatformSessions;
 }

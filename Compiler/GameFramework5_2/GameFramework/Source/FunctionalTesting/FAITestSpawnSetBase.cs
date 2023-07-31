@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("FunctionalAITest.h")]
 ///<summary>FAITestSpawnSetBase</summary>
+[CppInclude("FunctionalAITest.h")]
 public partial struct FAITestSpawnSetBase {
-// AITestSpawnSetBase
 	public string Name;
 	public bool bEnabled;
 	public AActor FallbackSpawnLocation;

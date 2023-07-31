@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Behaviour/Builtin/Conditional/RCBehaviourConditional.h")]
 ///<summary>Struct representing a single Condition</summary>
+[CppInclude("Behaviour/Builtin/Conditional/RCBehaviourConditional.h")]
 public partial struct FRCBehaviourCondition {
-// RCBehaviourCondition
 	public ERCBehaviourConditionType ConditionType;
 	public URCVirtualPropertySelfContainer Comparand;
 }

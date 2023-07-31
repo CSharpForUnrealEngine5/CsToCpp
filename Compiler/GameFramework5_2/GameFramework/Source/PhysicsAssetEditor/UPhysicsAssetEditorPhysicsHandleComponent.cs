@@ -1,8 +1,7 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("PhysicsAssetEditorPhysicsHandleComponent.h")]
 ///<summary>Extend the Physics Handle for PhAt. This adds support for manipulating the physics</summary>
+[CppInclude("PhysicsAssetEditorPhysicsHandleComponent.h")]
 public partial class UPhysicsAssetEditorPhysicsHandleComponent : UPhysicsHandleComponent {
-// PhysicsAssetEditorPhysicsHandleComponent
 }

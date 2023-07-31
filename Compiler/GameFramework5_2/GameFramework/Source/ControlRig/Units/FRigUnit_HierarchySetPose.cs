@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
+///<summary>Sets the hierarchy&#39;s pose</summary>
 [CppInclude("Units/Execution/RigUnit_Hierarchy.h")]
-///<summary>Sets the hierarchy's pose</summary>
 public partial struct FRigUnit_HierarchySetPose {
-// RigUnit_HierarchySetPose
 	public FRigPose Pose;
 	public ERigElementType ElementType;
 	public ERigVMTransformSpace Space;

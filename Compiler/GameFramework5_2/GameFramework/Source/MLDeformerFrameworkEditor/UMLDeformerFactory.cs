@@ -1,8 +1,7 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("MLDeformerAssetFactory.h")]
 ///<summary>The factory for the ML Deformer asset type.</summary>
+[CppInclude("MLDeformerAssetFactory.h")]
 public partial class UMLDeformerFactory : UFactory {
-// MLDeformerFactory
 }

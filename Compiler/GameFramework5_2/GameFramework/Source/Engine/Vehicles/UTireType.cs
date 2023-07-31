@@ -1,9 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("Vehicles/TireType.h")]
 ///<summary>DEPRECATED - Only used to allow conversion to new TireConfig in PhysXVehicles plugin</summary>
+[CppInclude("Vehicles/TireType.h")]
 public partial class UTireType : UDataAsset {
-// TireType
+	///<summary>FrictionScale</summary>
 	public float FrictionScale;
 }

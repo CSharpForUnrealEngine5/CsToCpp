@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("MetasoundFrontendDocument.h")]
 ///<summary>General purpose version info for Metasound Frontend objects.</summary>
+[CppInclude("MetasoundFrontendDocument.h")]
 public partial struct FMetasoundFrontendVersion {
-// MetasoundFrontendVersion
 	public string Name;
 	public FMetasoundFrontendVersionNumber Number;
 }

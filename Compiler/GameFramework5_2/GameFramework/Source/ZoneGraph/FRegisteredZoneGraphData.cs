@@ -1,9 +1,8 @@
-#pragma warning disable CS8618,CS8603
+#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
-[CppInclude("ZoneGraphSubsystem.h")]
 ///<summary>Struct representing registered ZoneGraph data in the subsystem.</summary>
+[CppInclude("ZoneGraphSubsystem.h")]
 public partial struct FRegisteredZoneGraphData {
-// RegisteredZoneGraphData
 	public AZoneGraphData ZoneGraphData;
 }
