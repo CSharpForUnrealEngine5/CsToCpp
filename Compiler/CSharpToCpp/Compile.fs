@@ -7,9 +7,10 @@ open Microsoft.CodeAnalysis.CSharp
 open Microsoft.CodeAnalysis.CSharp.Strict
 open Microsoft.CodeAnalysis.CSharp.Syntax
 
-type NotSupportedException (node : CSharpSyntaxNode, msg : string) = 
-    inherit Exception($"{msg}: {node.ToFullString()}")
+type NotSupportedException (node : CSharpSyntaxNode, msg : string, writeToFile : string) = 
+    inherit Exception(msg)
     member _.node = node
+    member _.writeToFile = writeToFile
 
 let writeClass name =
     let _h = h
@@ -33,6 +34,7 @@ let compileAll (trees : SyntaxTree[]) (models : SemanticModel[]) =
     Array.iter2 (fun t m -> compile t m) trees models 
     ()
 
+
 let compile t m =
     try
         let root = t.GetRoot()
@@ -40,11 +42,18 @@ let compile t m =
         compileNode m root
     with
         | :? NotSupportedException as nse ->
-            let loc = nse.node.GetLocation()
-            let line = loc.GetLineSpan().StartLinePosition.Line
-            eprintfn "%s" $"{nse.Message}: {nse.node.ToFullString()} in {line}"
+            errorHandler nse
+            if nse.writeToFile <> "" then
+                writeClass nse.writeToFile
         | e ->
             eprintfn "%s" (e.ToString())
+
+let errorHandler nse =
+    let loc = nse.node.GetLocation()
+    let line = loc.GetLineSpan().StartLinePosition.Line
+    let message = $"{nse.Message}: {nse.node.Kind()} at line {line}"
+    h.Add $"#error {message}"
+    eprintfn "%s" message
 
 let rec compileNode m node =
     let node = node :?> CSharpSyntaxNode
@@ -54,15 +63,15 @@ let rec compileNode m node =
     | NamespaceDeclaration (attrList,_,Identifier name,_,externAliasList,usingList,memDeclList,_,_) -> 
         List.iter (compileNode m) memDeclList
     | FileScopedNamespaceDeclaration (attrList,_,Identifier name,_,externAliasList,usingList,memDeclList) ->
-            List.iter (compileNode m) memDeclList
+        List.iter (compileNode m) memDeclList
     | ClassDeclaration (attrList,_,Token name,typeParamList,baseList,
         typeParamConstraintList,_,memDeclList,_,_) ->
         if typeParamList <> null then
-            NotSupportedException(node, "Generic classes not supported") |> raise
+            NotSupportedException(node, "Generic classes not supported", "") |> raise
         compileClassDeclaration m name baseList memDeclList attrList
     | DelegateDeclaration dd ->
         compileDelegate m dd
-    | _ ->   NotSupportedException(node, "Unsuppprted node") |> raise
+    | _ ->   NotSupportedException(node, "Unsuppprted node", "") |> raise
 
 
 let compileClassDeclaration m name baseList memDeclList attrList =
@@ -86,7 +95,7 @@ let compileClassDeclaration m name baseList memDeclList attrList =
         writeClass name'
     with
         | :? NotSupportedException as nse ->
-            NotSupportedException(nse.node, $"In class {name}: {nse.Message}") |> raise
+            NotSupportedException(nse.node, $"In class {name}: {nse.Message}", name') |> raise
     ()
 
 let includesFromAttr m attrList =
@@ -118,7 +127,7 @@ let compileMemDecl m pc memDecl =
         compileConstructor m pc cd
     | DelegateDeclaration dd ->
         compileDelegate m dd
-    | n -> NotSupportedException(n, "Member not supported") |> raise
+    | n -> NotSupportedException(n, "Member not supported", "") |> raise
 
 let compileConstructor m pc (attrList,Token id,paramList,init,body,exprBody,_) =
     let pl = compileParameterList m paramList false
@@ -156,7 +165,7 @@ let compileBlock m block : unit=
         match block with
         | Block (attrList,_,stmtList,_) ->
             stmtList |> List.map (compileStatement m)
-        | b -> NotSupportedException(b, "Stataement not supported") |> raise
+        | b -> NotSupportedException(b, "Statement not supported", "") |> raise
     cpp.Add "}"
 
 let compileExpressionText m expr =
@@ -185,7 +194,7 @@ let rec compileStatement m stmt : unit =
         cpp.Add $"{compileExpressionText m e};"
     | :?BlockSyntax as b ->
         compileBlock m b
-    | _ -> NotSupportedException(stmt, "Stataement not supported") |> raise
+    | _ -> NotSupportedException(stmt, "Statement not supported", "") |> raise
 
 let compileVariableDeclaration m decl : unit =
     let v = compileVarDecls m decl true
@@ -220,7 +229,7 @@ let compileVariableDeclarator m (vdecl : VariableDeclaratorSyntax) =
         else 
             let e = compileExpressionText m eqValue.Value
             $"{id}={e}"
-    | _ -> NotSupportedException(vdecl, "Variable Declarator not supported") |> raise
+    | _ -> NotSupportedException(vdecl, "Variable Declarator not supported", "") |> raise
 
 let getSymbolName (sy : ISymbol) =
     if sy = null then "" else sy.Name
@@ -318,7 +327,7 @@ let compileExpression m expr : (string*(ITypeSymbol*ISymbol))=
         (estr,tOrS)
     | InterpolatedStringExpression (_,es,_) -> 
         compileInterpolatedStringExpression m tOrS es
-    | e -> NotSupportedException(e, "Expression not supported") |> raise
+    | e -> NotSupportedException(e, "Expression not supported", "") |> raise
    
 let compileInterpolatedStringExpression m tOrS es =
     let ss = es |> List.map 
@@ -330,8 +339,8 @@ let compileInterpolatedStringExpression m tOrS es =
                         let (e',(ty,sy)) = compileExpression m e
                         match ty.Name.ToLower() with
                         | "int32" -> $"FString::FromInt({e'})"
-                        | _ -> NotSupportedException(e, "Interpolated string") |> raise
-                    | _ -> NotSupportedException(e, "Interpolated string") |> raise
+                        | _ -> NotSupportedException(e, "Interpolated string", "") |> raise
+                    | _ -> NotSupportedException(e, "Interpolated string", "") |> raise
                 ) 
     let ss' = String.Join("+",ss)
     (ss',tOrS)
@@ -353,7 +362,7 @@ let compileParameterList m paramList forDelegate =
         match p with
         | Parameter (attrList,ty,Token id, def) ->
             if def <> null then
-                NotSupportedException(p, "parameter defaults") |> raise
+                NotSupportedException(p, "parameter defaults", "") |> raise
             let (ts,_) = compileType m ty
             let dsPar = m.GetDeclaredSymbol ty.Parent
             let attrsPar = dsPar.GetAttributes()
@@ -377,7 +386,7 @@ let compileParameterList m paramList forDelegate =
             | true,_,_,_ -> $"const {ts}& {id}"
             | _,true,_,_ -> $"{ts}::Type {id}"
             | _,_,true,_ -> $"{ts}* {id}"
-        | _ -> NotSupportedException(p, "Parameter not supported") |> raise
+        | _ -> NotSupportedException(p, "Parameter not supported", "") |> raise
 
             
     let mutable addComma = false
@@ -416,7 +425,7 @@ let compileType (m : SemanticModel) (tn : SyntaxNode)
     | QualifiedName (Identifier name, _, qn)->
         let (qn',(ty,sy)) = compileExpression m qn
         ($"{name[0]}::{qn'}",false)
-    | n -> NotSupportedException(n, "Type not supported") |> raise
+    | n -> NotSupportedException(n, "Type not supported", "") |> raise
 
 let getIncludes t : string list =
     let f2 (t : ITypeSymbol) =
@@ -445,7 +454,7 @@ let getIncludes t : string list =
 let compileBaseList baseList =
     let children = baseList.ChildNodes()
     if children.Count() = 0 then
-        NotSupportedException(baseList.Parent :?> CSharpSyntaxNode, "No parent class") |> raise
+        NotSupportedException(baseList.Parent :?> CSharpSyntaxNode, "No parent class", "") |> raise
     let bases = children |> Seq.map (fun c -> c.ToString().Trim())
     String.Join(",", bases)
     
