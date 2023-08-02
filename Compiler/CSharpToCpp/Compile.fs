@@ -400,7 +400,7 @@ let compileParameterList m paramList forDelegate =
                 |> List.map f2
     String.Join("",d)
 
-let compileType (m : SemanticModel) (tn : SyntaxNode)
+let rec compileType (m : SemanticModel) (tn : SyntaxNode)
     : string*bool =
     match tn :?> CSharpSyntaxNode with
     | Identifier id ->
@@ -425,6 +425,8 @@ let compileType (m : SemanticModel) (tn : SyntaxNode)
     | QualifiedName (Identifier name, _, qn)->
         let (qn',(ty,sy)) = compileExpression m qn
         ($"{name[0]}::{qn'}",false)
+    | NullableType (ty,_) ->
+        compileType m ty
     | n -> NotSupportedException(n, "Type not supported", "") |> raise
 
 let getIncludes t : string list =
