@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("ARSharedWorldGameState.h")]
 public partial class AARSharedWorldGameState : AGameState {
+	public static UClass StaticClass() {return default;}
 	///<summary>The image taken at the time of world saving for use when aligning the AR world later in the session</summary>
 	public TArray<byte> PreviewImageData;
 	///<summary>Each client and the host have a copy of the shared world data</summary>

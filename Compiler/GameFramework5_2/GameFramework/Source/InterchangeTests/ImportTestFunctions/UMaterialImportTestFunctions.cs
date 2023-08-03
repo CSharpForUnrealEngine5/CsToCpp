@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("ImportTestFunctions/MaterialImportTestFunctions.h")]
 public partial class UMaterialImportTestFunctions : UImportTestFunctionsBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>Check whether the expected number of materials are imported</summary>
 	public static FInterchangeTestFunctionResult CheckImportedMaterialCount(TArray<UMaterialInterface> MaterialInterfaces,int ExpectedNumberOfImportedMaterials) { return default; }
 	///<summary>Check whether the expected number of material instances are imported</summary>

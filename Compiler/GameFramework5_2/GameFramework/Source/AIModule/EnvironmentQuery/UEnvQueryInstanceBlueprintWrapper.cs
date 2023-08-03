@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("EnvironmentQuery/EnvQueryInstanceBlueprintWrapper.h")]
 public partial class UEnvQueryInstanceBlueprintWrapper : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>FEQSQueryDoneSignature</summary>
 	public  void FEQSQueryDoneSignature(UEnvQueryInstanceBlueprintWrapper QueryInstance,EEnvQueryStatus QueryStatus) {}
 	///<summary>QueryID</summary>

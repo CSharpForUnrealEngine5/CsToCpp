@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Statistics for the Texture Analyzer</summary>
 [CppInclude("MuCOE/CustomizableObjectEditor.h")]
 public partial class UCustomizableObjectEditorTextureStats : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Texture - double click to open</summary>
 	public string TextureName;
 	///<summary>Texture - double click to open</summary>

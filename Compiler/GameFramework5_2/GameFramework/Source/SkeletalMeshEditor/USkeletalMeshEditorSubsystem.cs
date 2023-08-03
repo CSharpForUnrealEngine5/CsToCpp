@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>USkeletalMeshEditorSubsystem</summary>
 [CppInclude("SkeletalMeshEditorSubsystem.h")]
 public partial class USkeletalMeshEditorSubsystem : UEditorSubsystem {
+	public static UClass StaticClass() {return default;}
 	///<summary>Regenerate LODs of the mesh</summary>
 	public static bool RegenerateLOD(USkeletalMesh SkeletalMesh,int NewLODCount/*=0*/,bool bRegenerateEvenIfImported/*=false*/,bool bGenerateBaseLOD/*=false*/) { return default; }
 	///<summary>Get number of mesh vertices for an LOD of a Skeletal Mesh</summary>

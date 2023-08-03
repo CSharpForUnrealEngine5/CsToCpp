@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Audio settings.</summary>
 [CppInclude("Sound/AudioSettings.h")]
 public partial class UAudioSettings : UDeveloperSettings {
+	public static UClass StaticClass() {return default;}
 	///<summary>The SoundClass assigned to newly created sounds</summary>
 	public FSoftObjectPath DefaultSoundClassName;
 	///<summary>The SoundClass assigned to media player assets</summary>

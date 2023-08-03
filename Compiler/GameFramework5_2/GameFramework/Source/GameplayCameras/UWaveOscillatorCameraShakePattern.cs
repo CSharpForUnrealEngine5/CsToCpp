@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A camera shake that uses oscillations to move the camera.</summary>
 [CppInclude("WaveOscillatorCameraShakePattern.h")]
 public partial class UWaveOscillatorCameraShakePattern : USimpleCameraShakePattern {
+	public static UClass StaticClass() {return default;}
 	///<summary>Amplitude multiplier for all location oscillation</summary>
 	public float LocationAmplitudeMultiplier;
 	///<summary>Frequency multiplier for all location oscillation</summary>

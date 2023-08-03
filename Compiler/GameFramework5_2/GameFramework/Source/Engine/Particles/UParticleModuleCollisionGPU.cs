@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Particles/Collision/ParticleModuleCollisionGPU.h")]
 public partial class UParticleModuleCollisionGPU : UParticleModuleCollisionBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>The bounciness of the particle.</summary>
 	public FRawDistributionFloat Resilience;
 	///<summary>Scales the bounciness of the particle over its life.</summary>

@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("AddPrimitiveTool.h")]
 public partial class UProceduralShapeToolProperties : UInteractiveToolPropertySet {
+	public static UClass StaticClass() {return default;}
 	///<summary>How PolyGroups are assigned to shape primitives.</summary>
 	public EMakeMeshPolygroupMode PolygroupMode;
 	///<summary>How the shape is placed in the scene.</summary>

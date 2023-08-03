@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Function library to expose FPaths to Blueprints and Python</summary>
 [CppInclude("Kismet/BlueprintPathsLibrary.h")]
 public partial class UBlueprintPathsLibrary : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>Should the &quot;saved&quot; directory structures be rooted in the user dir or relative to the &quot;engine/game&quot;</summary>
 	public static bool ShouldSaveToUserDir() { return default; }
 	///<summary>Returns the directory the application was launched from (useful for commandline utilities)</summary>

@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Curves/CurveLinearColor.h")]
 public partial class UCurveLinearColor : UCurveBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>Keyframe data, one curve for red, green, blue, and alpha</summary>
 	public FRichCurve FloatCurves;
 	///<summary>GetLinearColorValue</summary>

@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("AddPrimitiveTool.h")]
 public partial class UProceduralConeToolProperties : UProceduralShapeToolProperties {
+	public static UClass StaticClass() {return default;}
 	///<summary>Radius of the cone</summary>
 	public float Radius;
 	///<summary>Height of the cone</summary>

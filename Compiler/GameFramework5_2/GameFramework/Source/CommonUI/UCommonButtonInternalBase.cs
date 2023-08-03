@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Custom UButton override that allows us to disable clicking without disabling the widget entirely</summary>
 [CppInclude("CommonButtonBase.h")]
 public partial class UCommonButtonInternalBase : UButton {
+	public static UClass StaticClass() {return default;}
 	///<summary>Called when the button is clicked</summary>
 	public FOnButtonClickedEvent OnDoubleClicked;
 	///<summary>The minimum width of the button</summary>

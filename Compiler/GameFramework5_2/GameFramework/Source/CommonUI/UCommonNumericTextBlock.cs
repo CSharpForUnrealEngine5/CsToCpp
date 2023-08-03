@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Numeric text block that provides interpolation, and some type support (numbers, percents, seconds, distance).</summary>
 [CppInclude("CommonNumericTextBlock.h")]
 public partial class UCommonNumericTextBlock : UCommonTextBlock {
+	public static UClass StaticClass() {return default;}
 	///<summary>Returns the value this widget will ultimately show if it is interpolating, or the current value if it is not.</summary>
 	public  float GetTargetValue() { return default; }
 	///<summary>Sets the current numeric value. NOTE: Cancels any ongoing interpolation!</summary>

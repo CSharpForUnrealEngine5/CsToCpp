@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("ChaosWheeledVehicleMovementComponent.h")]
 public partial class UChaosWheeledVehicleMovementComponent : UChaosVehicleMovementComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>bSuspensionEnabled</summary>
 	public bool bSuspensionEnabled;
 	///<summary>bWheelFrictionEnabled</summary>

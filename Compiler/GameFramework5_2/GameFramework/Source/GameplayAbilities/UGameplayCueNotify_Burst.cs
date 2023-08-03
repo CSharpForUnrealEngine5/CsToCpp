@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>UGameplayCueNotify_Burst</summary>
 [CppInclude("GameplayCueNotify_Burst.h")]
 public partial class UGameplayCueNotify_Burst : UGameplayCueNotify_Static {
+	public static UClass StaticClass() {return default;}
 	///<summary>OnBurst</summary>
 	public  void OnBurst(AActor Target,FGameplayCueParameters Parameters,FGameplayCueNotify_SpawnResult SpawnResults) {}
 	///<summary>Default condition to check before spawning anything.  Applies for all spawns unless overridden.</summary>

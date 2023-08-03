@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Iris/ReplicationSystem/Prioritization/SphereNetObjectPrioritizer.h")]
 public partial class USphereNetObjectPrioritizerConfig : UNetObjectPrioritizerConfig {
+	public static UClass StaticClass() {return default;}
 	///<summary>InnerRadius</summary>
 	public float InnerRadius;
 	///<summary>OuterRadius</summary>

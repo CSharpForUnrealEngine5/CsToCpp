@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Tonemapper only rules used for configuring how UComposurePostProcessingPassProxy executes</summary>
 [CppInclude("ComposureTonemapperPass.h")]
 public partial class UComposureTonemapperPassPolicy : UComposurePostProcessPassPolicy {
+	public static UClass StaticClass() {return default;}
 	///<summary>Color grading settings.</summary>
 	public FColorGradingSettings ColorGradingSettings;
 	///<summary>Film stock settings.</summary>

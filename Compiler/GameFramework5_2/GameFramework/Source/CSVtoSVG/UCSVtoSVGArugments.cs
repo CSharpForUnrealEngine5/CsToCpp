@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("CSVtoSVGArguments.h")]
 public partial class UCSVtoSVGArugments : UEditorConfigBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>Specifies a list of CSVs separated by spaces</summary>
 	public FFilePath CSV;
 	///<summary>Sets the filename for the SVG output.</summary>

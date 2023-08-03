@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>The Shader Ports API manages a set of inputs and outputs attributes.</summary>
 [CppInclude("InterchangeShaderGraphNode.h")]
 public partial class UInterchangeShaderPortsAPI : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Makes an attribute key to represent a node being connected to an input (ie: Inputs:InputName:Connect).</summary>
 	public static string MakeInputConnectionKey(string InputName) { return default; }
 	///<summary>Makes an attribute key to represent a value being given to an input (ie: Inputs:InputName:Value).</summary>

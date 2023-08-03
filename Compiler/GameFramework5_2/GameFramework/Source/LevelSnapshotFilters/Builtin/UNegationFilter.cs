@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Returns the results of a child filter optionally negated.</summary>
 [CppInclude("Builtin/BlueprintOnly/NegationFilter.h")]
 public partial class UNegationFilter : ULevelSnapshotFilter {
+	public static UClass StaticClass() {return default;}
 	///<summary>Creates an instanced child.</summary>
 	public  ULevelSnapshotFilter CreateChild(UClass ChildClass) { return default; }
 	///<summary>Creates an instanced child.</summary>

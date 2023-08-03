@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A blueprintable capture protocol tailored to capturing and exporting frames as images</summary>
 [CppInclude("Protocols/UserDefinedCaptureProtocol.h")]
 public partial class UUserDefinedImageCaptureProtocol : UUserDefinedCaptureProtocol {
+	public static UClass StaticClass() {return default;}
 	///<summary>The image format to save as</summary>
 	public EDesiredImageFormat Format;
 	///<summary>Whether to save images with compression or not. Not supported for bitmaps.</summary>

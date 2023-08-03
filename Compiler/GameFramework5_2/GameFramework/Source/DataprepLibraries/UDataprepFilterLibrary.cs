@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("DataprepFilterLibrary.h")]
 public partial class UDataprepFilterLibrary : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>Filter the array based on the Object&#39;s class.</summary>
 	public static TArray<UObject> FilterByClass(TArray<UObject> TargetArray,UClass ObjectClass) { return default; }
 	///<summary>Filter the array based on the Object name.</summary>

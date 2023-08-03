@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Particles/Location/ParticleModuleLocationDirect.h")]
 public partial class UParticleModuleLocationDirect : UParticleModuleLocationBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>The location of the particle at a give time. Retrieved using the particle RelativeTime.</summary>
 	public FRawDistributionVector Location;
 	///<summary>An offset to apply to the position retrieved from the Location calculation.</summary>

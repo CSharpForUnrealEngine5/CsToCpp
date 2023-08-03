@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Settings UObject for UDrawCurveOnMeshSampleTool. This UClass inherits from UInteractiveToolPropertySet,</summary>
 [CppInclude("SampleTools/DrawCurveOnMeshSampleTool.h")]
 public partial class UDrawCurveOnMeshSampleToolProperties : UInteractiveToolPropertySet {
+	public static UClass StaticClass() {return default;}
 	///<summary>Color</summary>
 	public FLinearColor Color;
 	///<summary>Thickness</summary>

@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>UObject wrapper for FNavigationPath</summary>
 [CppInclude("NavigationPath.h")]
 public partial class UNavigationPath : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>PathUpdatedNotifier</summary>
 	public FOnNavigationPathUpdated PathUpdatedNotifier;
 	///<summary>PathPoints</summary>

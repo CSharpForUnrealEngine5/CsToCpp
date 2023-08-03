@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("ARTrackable.h")]
 public partial class UARFaceGeometry : UARTrackedGeometry {
+	public static UClass StaticClass() {return default;}
 	///<summary>GetBlendShapeValue</summary>
 	public  float GetBlendShapeValue(EARFaceBlendShape BlendShape) { return default; }
 	///<summary>GetBlendShapes</summary>

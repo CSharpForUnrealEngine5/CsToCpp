@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("LiveLinkPreset.h")]
 public partial class ULiveLinkPreset : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Sources</summary>
 	public TArray<FLiveLinkSourcePreset> Sources;
 	///<summary>Subjects</summary>

@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Standard properties of the Transform Meshes operation</summary>
 [CppInclude("TransformMeshesTool.h")]
 public partial class UTransformMeshesToolProperties : UInteractiveToolPropertySet {
+	public static UClass StaticClass() {return default;}
 	///<summary>Transformation Mode controls the overall behavior of the Gizmos in the Tool</summary>
 	public ETransformMeshesTransformMode TransformMode;
 	///<summary>When true, transformations are applied to the Instances of any Instanced Components (eg InstancedStaticMeshComponent) instead of to the Components</summary>

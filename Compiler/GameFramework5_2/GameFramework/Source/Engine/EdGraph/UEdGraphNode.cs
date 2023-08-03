@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("EdGraph/EdGraphNode.h")]
 public partial class UEdGraphNode : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>List of connector pins</summary>
 	public TArray<UEdGraphPin_Deprecated> DeprecatedPins;
 	///<summary>X position of node in the editor</summary>

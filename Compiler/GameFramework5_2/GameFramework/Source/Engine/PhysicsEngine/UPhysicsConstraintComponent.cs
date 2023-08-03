@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>This is effectively a joint that allows you to connect 2 rigid bodies together. You can create different types of joints using the various parameters of this component.</summary>
 [CppInclude("PhysicsEngine/PhysicsConstraintComponent.h")]
 public partial class UPhysicsConstraintComponent : USceneComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>Pointer to first Actor to constrain.</summary>
 	public AActor ConstraintActor1;
 	///<summary>Name of first component property to constrain. If Actor1 is NULL, will look within Owner.</summary>

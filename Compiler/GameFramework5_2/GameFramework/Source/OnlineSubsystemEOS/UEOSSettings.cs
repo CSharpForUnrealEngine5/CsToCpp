@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("EOSSettings.h")]
 public partial class UEOSSettings : URuntimeOptionsBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>The directory any PDS/TDS files are cached into. This is per artifact e.g.:</summary>
 	public string CacheDir;
 	///<summary>Used when launched from a store other than EGS or when the specified artifact name was not present</summary>

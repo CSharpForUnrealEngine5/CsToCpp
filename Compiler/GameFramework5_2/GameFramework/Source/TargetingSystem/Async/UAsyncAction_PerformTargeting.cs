@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>@class UAsyncAction_PerformTargeting</summary>
 [CppInclude("Async/AsyncAction_PerformTargeting.h")]
 public partial class UAsyncAction_PerformTargeting : UBlueprintAsyncActionBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>PerformTargetingRequest</summary>
 	public static UAsyncAction_PerformTargeting PerformTargetingRequest(AActor SourceActor,UTargetingPreset TargetingPreset,bool bUseAsyncTargeting) { return default; }
 	///<summary>PerformFilteringRequest</summary>

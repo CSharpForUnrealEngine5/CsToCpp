@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A numerical entry box that allows for direct entry of the number or allows the user to click and slide the number.</summary>
 [CppInclude("Components/SpinBox.h")]
 public partial class USpinBox : UWidget {
+	public static UClass StaticClass() {return default;}
 	///<summary>FOnSpinBoxValueChangedEvent</summary>
 	public  void FOnSpinBoxValueChangedEvent(float InValue) {}
 	///<summary>FOnSpinBoxValueCommittedEvent</summary>

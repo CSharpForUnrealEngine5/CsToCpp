@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("HierarchicalLOD.h")]
 public partial class UHierarchicalLODSettings : UDeveloperSettings {
+	public static UClass StaticClass() {return default;}
 	///<summary>If enabled will force the project set HLOD level settings to be used across all levels in the project when Building Clusters</summary>
 	public bool bForceSettingsInAllMaps;
 	///<summary>If enabled, will save LOD actors descriptions in the HLOD packages</summary>

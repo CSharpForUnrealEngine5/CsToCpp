@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("AttributeEditorTool.h")]
 public partial class UAttributeEditorNewAttributeActions : UAttributeEditorActionPropertySet {
+	public static UClass StaticClass() {return default;}
 	///<summary>NewName</summary>
 	public string NewName;
 	///<summary>UPROPERTY(EditAnywhere, Category = NewAttribute)</summary>

@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("EnvironmentQuery/Contexts/EnvQueryContext_BlueprintBase.h")]
 public partial class UEnvQueryContext_BlueprintBase : UEnvQueryContext {
+	public static UClass StaticClass() {return default;}
 	///<summary>ProvideSingleActor</summary>
 	public  void ProvideSingleActor(UObject QuerierObject,AActor QuerierActor,AActor ResultingActor) {}
 	///<summary>ProvideSingleLocation</summary>

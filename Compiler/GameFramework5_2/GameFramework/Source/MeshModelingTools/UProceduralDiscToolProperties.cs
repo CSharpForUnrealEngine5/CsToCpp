@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("AddPrimitiveTool.h")]
 public partial class UProceduralDiscToolProperties : UProceduralShapeToolProperties {
+	public static UClass StaticClass() {return default;}
 	///<summary>Type of disc</summary>
 	public EProceduralDiscType DiscType;
 	///<summary>Radius of the disc</summary>

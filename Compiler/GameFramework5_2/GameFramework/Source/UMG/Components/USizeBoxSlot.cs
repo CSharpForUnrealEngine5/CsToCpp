@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>The Slot for the USizeBoxSlot, contains the widget displayed in a button&#39;s single slot</summary>
 [CppInclude("Components/SizeBoxSlot.h")]
 public partial class USizeBoxSlot : UPanelSlot {
+	public static UClass StaticClass() {return default;}
 	///<summary>The padding area between the slot and the content it contains.</summary>
 	public FMargin Padding;
 	///<summary>The alignment of the object horizontally.</summary>

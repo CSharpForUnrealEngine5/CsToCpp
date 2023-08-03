@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Kismet/KismetRenderingLibrary.h")]
 public partial class UKismetRenderingLibrary : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>Clears the specified render target with the given ClearColor.</summary>
 	public static void ClearRenderTarget2D(UObject WorldContextObject,UTextureRenderTarget2D TextureRenderTarget,FLinearColor ClearColor/*=new FLinearColor(0,0,0,1)*/) {}
 	///<summary>Creates a new render target and initializes it to the specified dimensions</summary>

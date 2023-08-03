@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Experimental - Plane cut input meshes</summary>
 [CppInclude("DataprepGeometryOperations.h")]
 public partial class UDataprepPlaneCutOperation : UDataprepEditingOperation {
+	public static UClass StaticClass() {return default;}
 	///<summary>Origin of the cutting plane</summary>
 	public FVector CutPlaneOrigin;
 	///<summary>Euler angles of the normal to the cutting plane (default plane is XY plane)</summary>

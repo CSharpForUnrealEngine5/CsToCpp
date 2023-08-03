@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Asset user data that can be used on Camera Actors to manage lens distortion state and utilities</summary>
 [CppInclude("LensDistortionModelHandlerBase.h")]
 public partial class ULensDistortionModelHandlerBase : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Returns true if the input model is supported by this model handler, false otherwise.</summary>
 	public  bool IsModelSupported(UClass ModelToSupport) { return default; }
 	///<summary>Update the lens distortion state, recompute the overscan factor, and set all material parameters</summary>

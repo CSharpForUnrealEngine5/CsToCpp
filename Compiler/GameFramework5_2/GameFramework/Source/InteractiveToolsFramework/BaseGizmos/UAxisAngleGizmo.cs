@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("BaseGizmos/AxisAngleGizmo.h")]
 public partial class UAxisAngleGizmo : UInteractiveGizmo {
+	public static UClass StaticClass() {return default;}
 	///<summary>AxisSource</summary>
 	public object /*AxisSource*/ AxisSource;
 	///<summary>AngleSource</summary>

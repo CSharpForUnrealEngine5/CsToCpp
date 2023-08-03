@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("CompositingElement.h")]
 public partial class ACompositingElement : AComposurePipelineBaseActor {
+	public static UClass StaticClass() {return default;}
 	///<summary>CompositingTarget</summary>
 	public UComposureCompositingTargetComponent CompositingTarget;
 	///<summary>PostProcessProxy</summary>

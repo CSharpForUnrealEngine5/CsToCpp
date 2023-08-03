@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Represents a folder used for organizing objects in tracks in a movie scene.</summary>
 [CppInclude("MovieSceneFolder.h")]
 public partial class UMovieSceneFolder : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>The name of this folder.</summary>
 	public string FolderName;
 	///<summary>The folders contained by this folder.</summary>

@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Polymodeling/ExtrudeMeshSelectionTool.h")]
 public partial class UExtrudeMeshSelectionToolProperties : UInteractiveToolPropertySet {
+	public static UClass StaticClass() {return default;}
 	///<summary>Control how the Extruded Area should be Transformed</summary>
 	public EExtrudeMeshSelectionInteractionMode InputMode;
 	///<summary>The Extrusion Distance used in Fixed Input Mode</summary>

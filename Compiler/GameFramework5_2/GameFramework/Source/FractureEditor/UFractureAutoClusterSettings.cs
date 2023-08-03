@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("FractureToolAutoCluster.h")]
 public partial class UFractureAutoClusterSettings : UFractureToolSettings {
+	public static UClass StaticClass() {return default;}
 	///<summary>AutoClusterMode_DEPRECATED</summary>
 	public EFractureAutoClusterMode AutoClusterMode_DEPRECATED;
 	///<summary>How to choose the size of the clusters to create</summary>

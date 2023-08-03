@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("GeomModifier_Pen.h")]
 public partial class UGeomModifier_Pen : UGeomModifier_Edit {
+	public static UClass StaticClass() {return default;}
 	///<summary>If true, the shape will be automatically extruded into a brush upon completion.</summary>
 	public bool bAutoExtrude;
 	///<summary>If true, the tool will try and optimize the resulting triangles into convex polygons before creating the brush.</summary>

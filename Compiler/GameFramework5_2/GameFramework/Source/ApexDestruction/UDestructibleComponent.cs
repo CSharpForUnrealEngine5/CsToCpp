@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("DestructibleComponent.h")]
 public partial class UDestructibleComponent : USkinnedMeshComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>If set, use this actor&#39;s fracture effects instead of the asset&#39;s fracture effects.</summary>
 	public bool bFractureEffectOverride;
 	///<summary>Fracture effects for each fracture level. Used only if Fracture Effect Override is set.</summary>

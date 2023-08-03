@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("InterchangeGenericMaterialPipeline.h")]
 public partial class UInterchangeGenericMaterialPipeline : UInterchangePipelineBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>If enabled, imports the material assets found in the sources.</summary>
 	public bool bImportMaterials;
 	///<summary>MaterialImport</summary>

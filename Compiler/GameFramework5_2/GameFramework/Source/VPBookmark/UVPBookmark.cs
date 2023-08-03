@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("VPBookmark.h")]
 public partial class UVPBookmark : UBookmarkBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>bIsActive</summary>
 	public bool bIsActive;
 	///<summary>OwnedActor</summary>

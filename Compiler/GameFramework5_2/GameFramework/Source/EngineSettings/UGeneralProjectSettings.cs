@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("GeneralProjectSettings.h")]
 public partial class UGeneralProjectSettings : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>The name of the company (author, provider) that created the project.</summary>
 	public string CompanyName;
 	///<summary>The Distinguished Name of the company (author, provider) that created the project, which is used by publishing tools on some platforms.</summary>

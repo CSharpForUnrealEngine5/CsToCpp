@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Particles/Attractor/ParticleModuleAttractorPoint.h")]
 public partial class UParticleModuleAttractorPoint : UParticleModuleAttractorBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>The position of the point attractor from the source of the emitter.</summary>
 	public FRawDistributionVector Position;
 	///<summary>The radial range of the attractor.</summary>

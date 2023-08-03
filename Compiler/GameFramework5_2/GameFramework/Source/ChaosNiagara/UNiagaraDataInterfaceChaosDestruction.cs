@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Data Interface allowing sampling of Chaos Destruction data.</summary>
 [CppInclude("NiagaraDataInterfaceChaosDestruction.h")]
 public partial class UNiagaraDataInterfaceChaosDestruction : UNiagaraDataInterface {
+	public static UClass StaticClass() {return default;}
 	///<summary>Chaos Solver</summary>
 	public TSet<AChaosSolverActor> ChaosSolverActorSet;
 	///<summary>DataSourceType</summary>

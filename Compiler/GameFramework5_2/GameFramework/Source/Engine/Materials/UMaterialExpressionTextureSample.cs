@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Materials/MaterialExpressionTextureSample.h")]
 public partial class UMaterialExpressionTextureSample : UMaterialExpressionTextureBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>Defaults to &#39;ConstCoordinate&#39; if not specified</summary>
 	public FExpressionInput Coordinates;
 	///<summary>Defaults to &#39;Texture&#39; if not specified</summary>

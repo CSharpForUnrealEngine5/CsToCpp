@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("LocationServicesBPLibrary.h")]
 public partial class ULocationServices : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>Called to set up the Location Service before use</summary>
 	public static bool InitLocationServices(ELocationAccuracy Accuracy,float UpdateFrequency,float MinDistanceFilter) { return default; }
 	///<summary>Starts requesting location updates from the appropriate Location Service</summary>

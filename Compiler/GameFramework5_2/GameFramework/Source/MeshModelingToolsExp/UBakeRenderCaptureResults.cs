@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Tool Result</summary>
 [CppInclude("BakeRenderCaptureTool.h")]
 public partial class UBakeRenderCaptureResults : UInteractiveToolPropertySet {
+	public static UClass StaticClass() {return default;}
 	///<summary>BaseColorMap</summary>
 	public UTexture2D BaseColorMap;
 	///<summary>World space normal map</summary>

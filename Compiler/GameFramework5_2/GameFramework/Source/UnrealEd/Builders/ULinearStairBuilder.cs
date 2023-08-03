@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Builders/LinearStairBuilder.h")]
 public partial class ULinearStairBuilder : UEditorBrushBuilder {
+	public static UClass StaticClass() {return default;}
 	///<summary>The length of each step</summary>
 	public int StepLength;
 	///<summary>The height of each step</summary>

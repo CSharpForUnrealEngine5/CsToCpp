@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("PropertyValue.h")]
 public partial class UPropertyValue : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>GetPropertyTooltip</summary>
 	public  string GetPropertyTooltip() { return default; }
 	///<summary>GetFullDisplayString</summary>

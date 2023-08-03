@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Base class for baseline controllers. These can are responsible for spawning and manipulating the FX needed for the baseline perf tests.</summary>
 [CppInclude("NiagaraPerfBaseline.h")]
 public partial class UNiagaraBaselineController : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Called from the stats system when we begin gathering stats for the given System asset.</summary>
 	public  void OnBeginTest() {}
 	///<summary>Returns whether the baseline test is complete.</summary>

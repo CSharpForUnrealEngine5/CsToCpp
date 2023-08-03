@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A Material is an asset which can be applied to a mesh to control the visual look of the scene.</summary>
 [CppInclude("Materials/Material.h")]
 public partial class UMaterial : UMaterialInterface {
+	public static UClass StaticClass() {return default;}
 	///<summary>Physical material to use for this graphics material. Used for sounds, effects etc.</summary>
 	public UPhysicalMaterial PhysMaterial;
 	///<summary>Physical material mask to use for this graphics material. Used for sounds, effects etc.</summary>

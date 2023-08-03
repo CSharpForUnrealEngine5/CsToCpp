@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("DataprepGraph/DataprepGraphActionNode.h")]
 public partial class UDataprepGraphActionGroupNode : UEdGraphNode {
+	public static UClass StaticClass() {return default;}
 	///<summary>ExecutionOrder</summary>
 	public int ExecutionOrder;
 	///<summary>NodeTitle</summary>

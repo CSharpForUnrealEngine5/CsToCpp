@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Animation/AnimStreamable.h")]
 public partial class UAnimStreamable : UAnimSequenceBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>The number of keys expected within the individual animation tracks.</summary>
 	public int NumberOfKeys;
 	///<summary>This defines how values between keys are calculated *</summary>

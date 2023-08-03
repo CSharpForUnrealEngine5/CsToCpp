@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>USubmixEffectFilterPreset</summary>
 [CppInclude("SubmixEffects/SubmixEffectFilter.h")]
 public partial class USubmixEffectFilterPreset : USoundEffectSubmixPreset {
+	public static UClass StaticClass() {return default;}
 	///<summary>Set all filter effect settings</summary>
 	public  void SetSettings(FSubmixEffectFilterSettings InSettings) {}
 	///<summary>Sets the filter type</summary>

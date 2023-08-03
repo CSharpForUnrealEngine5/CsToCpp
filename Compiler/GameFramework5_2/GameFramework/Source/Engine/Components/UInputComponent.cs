@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Implement an Actor component for input bindings.</summary>
 [CppInclude("Components/InputComponent.h")]
 public partial class UInputComponent : UActorComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>CachedKeyToActionInfo</summary>
 	public TArray<FCachedKeyToActionInfo> CachedKeyToActionInfo;
 	///<summary>OnInputOwnerEndPlayed</summary>

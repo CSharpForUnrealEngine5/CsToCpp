@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Sound/DialogueWave.h")]
 public partial class UDialogueWave : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>true if this dialogue is considered to contain mature/adult content.</summary>
 	public bool bMature;
 	///<summary>bOverride_SubtitleOverride</summary>

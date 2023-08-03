@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Base class for settings-as-data in the PCG framework</summary>
 [CppInclude("PCGSettings.h")]
 public partial class UPCGSettings : UPCGSettingsInterface {
+	public static UClass StaticClass() {return default;}
 	///<summary>Seed</summary>
 	public int Seed;
 	///<summary>Warning - this is deprecated and will be removed soon since we have a Filter By Tag node for this specific purpose</summary>

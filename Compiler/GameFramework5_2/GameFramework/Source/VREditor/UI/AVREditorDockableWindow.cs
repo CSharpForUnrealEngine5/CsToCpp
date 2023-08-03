@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>An interactive floating UI panel that can be dragged around</summary>
 [CppInclude("UI/VREditorDockableWindow.h")]
 public partial class AVREditorDockableWindow : AVREditorFloatingUI {
+	public static UClass StaticClass() {return default;}
 	///<summary>Mesh underneath the window for docking it to the world</summary>
 	public UStaticMeshComponent DockButtonMeshComponent;
 	///<summary>Mesh underneath the window for easy selecting and dragging</summary>

@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>UV Layer Settings for the UVEditorMode</summary>
 [CppInclude("UVEditorModeChannelProperties.h")]
 public partial class UUVEditorUVChannelProperties : UInteractiveToolPropertySet {
+	public static UClass StaticClass() {return default;}
 	///<summary>Asset</summary>
 	public string Asset;
 	///<summary>GetAssetNames</summary>

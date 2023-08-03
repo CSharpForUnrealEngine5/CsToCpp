@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("CommonInputBaseTypes.h")]
 public partial class UCommonInputPlatformSettings : UPlatformSettings {
+	public static UClass StaticClass() {return default;}
 	///<summary>DefaultInputType</summary>
 	public ECommonInputType DefaultInputType;
 	///<summary>bSupportsMouseAndKeyboard</summary>

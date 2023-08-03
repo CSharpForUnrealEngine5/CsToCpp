@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Class used to perform custom gameplay effect modifier calculations, either via blueprint or native code</summary>
 [CppInclude("GameplayModMagnitudeCalculation.h")]
 public partial class UGameplayModMagnitudeCalculation : UGameplayEffectCalculation {
+	public static UClass StaticClass() {return default;}
 	///<summary>Calculate the base magnitude of the gameplay effect modifier, given the specified spec. Note that the owning spec def can still modify this base value</summary>
 	public  float CalculateBaseMagnitude(FGameplayEffectSpec Spec) { return default; }
 	///<summary>Whether the calculation allows non-net authorities to register the external dependency multi-cast delegate or not; Effectively</summary>

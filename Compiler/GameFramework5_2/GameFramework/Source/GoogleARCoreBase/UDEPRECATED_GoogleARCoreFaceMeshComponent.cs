@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>This component is updated by the ARSystem with face data on devices that have support for it.</summary>
 [CppInclude("GoogleARCoreFaceMeshComponent.h")]
 public partial class UDEPRECATED_GoogleARCoreFaceMeshComponent : UProceduralMeshComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>Create the initial face mesh from raw mesh data</summary>
 	public  void CreateMesh(TArray<FVector> Vertices,TArray<int> Triangles,TArray<FVector2D> UV0) {}
 	///<summary>Updates the face mesh vertices. The topology and UVs do not change post creation so only vertices are updated</summary>

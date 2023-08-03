@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("DisplayClusterLightCardActor.h")]
 public partial class ADisplayClusterLightCardActor : AActor {
+	public static UClass StaticClass() {return default;}
 	///<summary>Radius of light card polar coordinates. Does not include the effect of RadialOffset</summary>
 	public double DistanceFromCenter;
 	///<summary>Related to the Azimuth of light card polar coordinates</summary>

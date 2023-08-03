@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("NiagaraSimCache.h")]
 public partial class UNiagaraSimCache : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>A valid cache is one that contains at least 1 frames worth of data.</summary>
 	public  bool IsCacheValid() { return default; }
 	///<summary>An empty cache contains no frame data and can not be used</summary>

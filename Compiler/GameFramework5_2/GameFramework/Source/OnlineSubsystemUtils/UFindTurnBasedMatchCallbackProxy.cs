@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("FindTurnBasedMatchCallbackProxy.h")]
 public partial class UFindTurnBasedMatchCallbackProxy : UOnlineBlueprintCallProxyBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>Called when matchmaking succeeded.</summary>
 	public FOnlineTurnBasedMatchResult OnSuccess;
 	///<summary>Called when matchmaking failed</summary>

@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("XRCreativeToolset.h")]
 public partial class UXRCreativeBlueprintableTool : UXRCreativeTool {
+	public static UClass StaticClass() {return default;}
 	///<summary>ToolName</summary>
 	public string ToolName;
 	///<summary>DisplayName</summary>

@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("GeometryScript/PolyPathFunctions.h")]
 public partial class UGeometryScriptLibrary_PolyPathFunctions : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>GetPolyPathNumVertices</summary>
 	public static int GetPolyPathNumVertices(FGeometryScriptPolyPath PolyPath) { return default; }
 	///<summary>GetPolyPathLastIndex</summary>

@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Kismet/DataTableFunctionLibrary.h")]
 public partial class UDataTableFunctionLibrary : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>EvaluateCurveTableRow</summary>
 	public static void EvaluateCurveTableRow(UCurveTable CurveTable,string RowName,float InXY,EEvaluateCurveTableResult OutResult,float OutXY,string ContextString) {}
 	///<summary>Returns whether or not Table contains a row named RowName</summary>

@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Simple Mesh Normal Updating Tool</summary>
 [CppInclude("RemoveOccludedTrianglesTool.h")]
 public partial class URemoveOccludedTrianglesTool : UMultiSelectionMeshEditingTool {
+	public static UClass StaticClass() {return default;}
 	///<summary>BasicProperties</summary>
 	public URemoveOccludedTrianglesToolProperties BasicProperties;
 	///<summary>PolygroupLayersProperties</summary>

@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A beacon client used for quality timings to a specified session</summary>
 [CppInclude("LobbyBeaconClient.h")]
 public partial class ALobbyBeaconClient : AOnlineBeaconClient {
+	public static UClass StaticClass() {return default;}
 	///<summary>Client view of the lobby state</summary>
 	public ALobbyBeaconState LobbyState;
 	///<summary>Player state associated with this beacon (@todo not splitscreen safe)</summary>

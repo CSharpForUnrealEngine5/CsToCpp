@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Take meta-data that is stored on ULevelSequence assets that are recorded through the Take Recorder.</summary>
 [CppInclude("TakeMetaData.h")]
 public partial class UTakeMetaData : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Check whether this take is locked</summary>
 	public  bool IsLocked() { return default; }
 	///<summary>Check if this take was recorded (as opposed</summary>

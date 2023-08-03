@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("AnimNextInterfaceGraph_EditorData.h")]
 public partial class UAnimNextInterfaceGraph_EditorData : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>RootGraph</summary>
 	public UAnimNextInterfaceGraph_EdGraph RootGraph;
 	///<summary>EntryPointGraph</summary>

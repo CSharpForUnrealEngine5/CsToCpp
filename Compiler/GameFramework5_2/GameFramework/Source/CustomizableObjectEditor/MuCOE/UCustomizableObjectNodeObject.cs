@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("MuCOE/Nodes/CustomizableObjectNodeObject.h")]
 public partial class UCustomizableObjectNodeObject : UCustomizableObjectNode {
+	public static UClass StaticClass() {return default;}
 	///<summary>ObjectName</summary>
 	public string ObjectName;
 	///<summary>ParamUIMetadata</summary>

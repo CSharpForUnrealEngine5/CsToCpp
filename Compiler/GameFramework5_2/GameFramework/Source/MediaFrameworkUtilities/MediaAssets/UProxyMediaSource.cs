@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A media source that reditect to another media source.</summary>
 [CppInclude("MediaAssets/ProxyMediaSource.h")]
 public partial class UProxyMediaSource : UMediaSource {
+	public static UClass StaticClass() {return default;}
 	///<summary>Cached media source proxy.</summary>
 	public UMediaSource DynamicProxy;
 	///<summary>Media source proxy.</summary>

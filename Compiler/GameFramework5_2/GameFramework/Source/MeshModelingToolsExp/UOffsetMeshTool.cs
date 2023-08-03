@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Mesh Offsetting Tool</summary>
 [CppInclude("OffsetMeshTool.h")]
 public partial class UOffsetMeshTool : UBaseMeshProcessingTool {
+	public static UClass StaticClass() {return default;}
 	///<summary>OffsetProperties</summary>
 	public UOffsetMeshToolProperties OffsetProperties;
 	///<summary>IterativeProperties</summary>

@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Sound/AudioVolume.h")]
 public partial class AAudioVolume : AVolume {
+	public static UClass StaticClass() {return default;}
 	///<summary>Priority of this volume. In the case of overlapping volumes, the one with the highest priority</summary>
 	public float Priority;
 	///<summary>Whether this volume is currently enabled and able to affect sounds</summary>

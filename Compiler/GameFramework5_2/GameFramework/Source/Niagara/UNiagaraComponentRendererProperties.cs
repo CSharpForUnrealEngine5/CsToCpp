@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("NiagaraComponentRendererProperties.h")]
 public partial class UNiagaraComponentRendererProperties : UNiagaraRendererProperties {
+	public static UClass StaticClass() {return default;}
 	///<summary>The scene component class to instantiate</summary>
 	public UClass ComponentType;
 	///<summary>The max number of components that this emitter will spawn or update each frame.</summary>

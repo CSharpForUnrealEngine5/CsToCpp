@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Uses throttle input to run a physics simulation to drive RPM and shift gears when needed</summary>
 [CppInclude("MotorPhysicsSimComponent.h")]
 public partial class UMotorPhysicsSimComponent : UAudioMotorSimComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>Weight</summary>
 	public float Weight;
 	///<summary>EngineTorque</summary>

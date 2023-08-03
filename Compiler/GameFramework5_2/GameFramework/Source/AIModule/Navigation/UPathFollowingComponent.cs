@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Navigation/PathFollowingComponent.h")]
 public partial class UPathFollowingComponent : UActorComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>called when moving agent collides with another actor</summary>
 	public  void OnActorBump(AActor SelfActor,AActor OtherActor,FVector NormalImpulse,FHitResult Hit) {}
 	///<summary>GetPathActionType</summary>

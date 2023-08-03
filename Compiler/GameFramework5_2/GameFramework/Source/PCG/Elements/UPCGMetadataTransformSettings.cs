@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Elements/Metadata/PCGMetadataTransformOpElement.h")]
 public partial class UPCGMetadataTransformSettings : UPCGMetadataSettingsBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>Operation</summary>
 	public EPCGMedadataTransformOperation Operation;
 	///<summary>TransformLerpMode</summary>

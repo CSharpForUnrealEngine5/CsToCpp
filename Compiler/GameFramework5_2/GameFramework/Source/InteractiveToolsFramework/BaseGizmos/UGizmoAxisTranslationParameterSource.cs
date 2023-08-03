@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>UGizmoAxisTranslationParameterSource is an IGizmoFloatParameterSource implementation that</summary>
 [CppInclude("BaseGizmos/ParameterToTransformAdapters.h")]
 public partial class UGizmoAxisTranslationParameterSource : UGizmoBaseFloatParameterSource {
+	public static UClass StaticClass() {return default;}
 	///<summary>The Parameter line-equation value is converted to a 3D Translation along this Axis</summary>
 	public object /*AxisSource*/ AxisSource;
 	///<summary>This TransformSource is updated by applying the constructed 3D translation</summary>

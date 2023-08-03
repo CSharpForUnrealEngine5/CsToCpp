@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>AGameplayCueNotify_Looping</summary>
 [CppInclude("GameplayCueNotify_Looping.h")]
 public partial class AGameplayCueNotify_Looping : AGameplayCueNotify_Actor {
+	public static UClass StaticClass() {return default;}
 	///<summary>OnApplication</summary>
 	public  void OnApplication(AActor Target,FGameplayCueParameters Parameters,FGameplayCueNotify_SpawnResult SpawnResults) {}
 	///<summary>OnLoopingStart</summary>

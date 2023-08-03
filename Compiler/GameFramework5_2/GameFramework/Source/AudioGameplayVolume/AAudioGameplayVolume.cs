@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>AudioGameplayVolume - A spatial volume used to notify audio gameplay systems when the nearest audio listener</summary>
 [CppInclude("AudioGameplayVolume.h")]
 public partial class AAudioGameplayVolume : AVolume {
+	public static UClass StaticClass() {return default;}
 	///<summary>A representation of this volume for the audio thread</summary>
 	public UAudioGameplayVolumeComponent AGVComponent;
 	///<summary>Whether this volume is currently enabled.  Disabled volumes will not have a volume proxy,</summary>

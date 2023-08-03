@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("BaseGizmos/GizmoElementArrow.h")]
 public partial class UGizmoElementArrow : UGizmoElementBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>Arrow cylinder body</summary>
 	public UGizmoElementCylinder CylinderElement;
 	///<summary>Arrow cone head</summary>

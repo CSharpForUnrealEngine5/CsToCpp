@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Config-driven settings object for the social framework.</summary>
 [CppInclude("SocialSettings.h")]
 public partial class USocialSettings : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>The specific OSS&#39; that have their IDs stored with an additional prefix for the environment to which they pertain.</summary>
 	public TArray<string> OssNamesWithEnvironmentIdPrefix;
 	///<summary>How many players are in a party by default</summary>

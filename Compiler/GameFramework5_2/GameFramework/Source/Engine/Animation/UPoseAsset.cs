@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Pose Asset that can be blended by weight of curves</summary>
 [CppInclude("Animation/PoseAsset.h")]
 public partial class UPoseAsset : UAnimationAsset {
+	public static UClass StaticClass() {return default;}
 	///<summary>Animation Pose Data</summary>
 	public FPoseDataContainer PoseContainer;
 	///<summary>Whether or not Additive Pose or not - these are property that needs post process, so</summary>

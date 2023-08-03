@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Components/StereoLayerComponent.h")]
 public partial class UStereoLayerShapeEquirect : UStereoLayerShape {
+	public static UClass StaticClass() {return default;}
 	///<summary>Left source texture UVRect, specifying portion of input texture corresponding to left eye.</summary>
 	public FBox2D LeftUVRect;
 	///<summary>Right source texture UVRect, specifying portion of input texture corresponding to right eye.</summary>

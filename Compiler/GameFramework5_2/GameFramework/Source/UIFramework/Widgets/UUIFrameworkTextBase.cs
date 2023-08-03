@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Widgets/UIFTextBlock.h")]
 public partial class UUIFrameworkTextBase : UUIFrameworkWidget {
+	public static UClass StaticClass() {return default;}
 	///<summary>SetText</summary>
 	public  void SetText(string Text) {}
 	///<summary>GetText</summary>

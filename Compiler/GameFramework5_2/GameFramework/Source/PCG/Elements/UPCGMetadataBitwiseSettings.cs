@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Elements/Metadata/PCGMetadataBitwiseOpElement.h")]
 public partial class UPCGMetadataBitwiseSettings : UPCGMetadataSettingsBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>Operation</summary>
 	public EPCGMedadataBitwiseOperation Operation;
 	///<summary>InputSource1</summary>

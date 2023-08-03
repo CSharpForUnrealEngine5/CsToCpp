@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>* Subsystem used for VR Scouting</summary>
 [CppInclude("VPScoutingSubsystem.h")]
 public partial class UVPScoutingSubsystem : UEditorSubsystem {
+	public static UClass StaticClass() {return default;}
 	///<summary>Subsystems can&#39;t have any Blueprint implementations, so we attach this class for any BP logic that we to provide.</summary>
 	public UVPScoutingSubsystemHelpersBase VPSubsystemHelpers;
 	///<summary>GestureManager that manage some user input in VR editor.</summary>

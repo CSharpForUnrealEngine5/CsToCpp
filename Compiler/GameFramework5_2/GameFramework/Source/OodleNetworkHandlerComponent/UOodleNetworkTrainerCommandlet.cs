@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Commandlet for processing UE packet captures, through Oodle&#39;s training API, for generating compressed state dictionaries.</summary>
 [CppInclude("OodleNetworkTrainerCommandlet.h")]
 public partial class UOodleNetworkTrainerCommandlet : UCommandlet {
+	public static UClass StaticClass() {return default;}
 	///<summary>Whether or not compression testing should be performed after dictionary generation (uses up some of the packets)</summary>
 	public bool bCompressionTest;
 	///<summary>Whether or not to write oodle version 5 dictionaries for back compat</summary>

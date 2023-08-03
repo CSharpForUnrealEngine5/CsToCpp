@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("MuCO/CustomizableObjectInstance.h")]
 public partial class UCustomizableObjectInstance : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Broadcast at the beginning of an Instance update.</summary>
 	public FBeginUpdateDelegate BeginUpdateDelegate;
 	///<summary>Broadcast when the Customizable Object Instance is updated.</summary>

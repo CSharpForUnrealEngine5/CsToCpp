@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Mechanics/LatticeControlPointsMechanic.h")]
 public partial class ULatticeControlPointsMechanic : UInteractionMechanic {
+	public static UClass StaticClass() {return default;}
 	///<summary>Used for displaying points/segments</summary>
 	public APreviewGeometryActor PreviewGeometryActor;
 	///<summary>DrawnControlPoints</summary>

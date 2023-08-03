@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("WorldPartition/HLOD/HLODActor.h")]
 public partial class AWorldPartitionHLOD : AActor {
+	public static UClass StaticClass() {return default;}
 	///<summary>HLODSubActors</summary>
 	public TArray<FHLODSubActor> HLODSubActors;
 	///<summary>SubActorsHLODLayer</summary>

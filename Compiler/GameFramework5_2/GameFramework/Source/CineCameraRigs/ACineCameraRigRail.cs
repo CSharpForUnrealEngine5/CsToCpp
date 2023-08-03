@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("CineCameraRigRail.h")]
 public partial class ACineCameraRigRail : ACameraRig_Rail {
+	public static UClass StaticClass() {return default;}
 	///<summary>Returns CineSplineComponent</summary>
 	public  UCineSplineComponent GetCineSplineComponent() { return default; }
 	///<summary>Use AbsolutePosition metadata to parameterize the spline</summary>

@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("InterchangeProjectSettings.h")]
 public partial class UInterchangeProjectSettings : UDeveloperSettings {
+	public static UClass StaticClass() {return default;}
 	///<summary>Settings used when importing into the content browser.</summary>
 	public FInterchangeContentImportSettings ContentImportSettings;
 	///<summary>Settings used when importing into a level.</summary>

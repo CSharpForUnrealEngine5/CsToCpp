@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("MeshVertexSculptTool.h")]
 public partial class UVertexBrushSculptProperties : UInteractiveToolPropertySet {
+	public static UClass StaticClass() {return default;}
 	///<summary>Primary Brush Mode</summary>
 	public EMeshVertexSculptBrushType PrimaryBrushType;
 	///<summary>Primary Brush Falloff Type, multiplied by Alpha Mask where applicable</summary>

@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("AnimGraphNode_AnimDynamics.h")]
 public partial class UAnimGraphNode_AnimDynamics : UAnimGraphNode_SkeletalControlBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>Node</summary>
 	public FAnimNode_AnimDynamics Node;
 	///<summary>Preview the live physics object on the mesh</summary>

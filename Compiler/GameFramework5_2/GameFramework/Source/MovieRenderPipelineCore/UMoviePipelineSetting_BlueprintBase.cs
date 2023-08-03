@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A base class for all Movie Render Pipeline settings which can be implemented in Blueprints. This features</summary>
 [CppInclude("MoviePipelineSettingBlueprintBase.h")]
 public partial class UMoviePipelineSetting_BlueprintBase : UMoviePipelineSetting {
+	public static UClass StaticClass() {return default;}
 	///<summary>ReceiveSetupForPipelineImpl</summary>
 	public  void ReceiveSetupForPipelineImpl(UMoviePipeline InPipeline) {}
 	///<summary>ReceiveTeardownForPipelineImpl</summary>

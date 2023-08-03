@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>The DataprepParameterization contains the data for the parameterization of a pipeline</summary>
 [CppInclude("Parameterization/DataprepParameterization.h")]
 public partial class UDataprepParameterization : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>The containers for the bindings</summary>
 	public UDataprepParameterizationBindings BindingsContainer;
 	///<summary>CustomContainerClass</summary>

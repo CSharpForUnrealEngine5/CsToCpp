@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Tests/RemoteControlTestData.h")]
 public partial class URemoteControlTestObject : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>CStyleIntArray</summary>
 	public int CStyleIntArray;
 	///<summary>IntArray</summary>

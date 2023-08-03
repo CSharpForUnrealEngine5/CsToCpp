@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Engine/SkeletalMeshSocket.h")]
 public partial class USkeletalMeshSocket : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Defines a named attachment location on the USkeletalMesh.</summary>
 	public string SocketName;
 	///<summary>BoneName</summary>

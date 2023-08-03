@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("ClothConfigNv.h")]
 public partial class UClothConfigNv : UClothConfigCommon {
+	public static UClass StaticClass() {return default;}
 	///<summary>How wind should be processed, Accurate uses drag and lift to make the cloth react differently, legacy applies similar forces to all clothing without drag and lift (similar to APEX)</summary>
 	public EClothingWindMethodNv ClothingWindMethod;
 	///<summary>Constraint data for vertical constraints</summary>

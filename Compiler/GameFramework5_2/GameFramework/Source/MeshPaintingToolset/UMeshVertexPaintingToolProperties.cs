@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("MeshVertexPaintingTool.h")]
 public partial class UMeshVertexPaintingToolProperties : UBrushBaseProperties {
+	public static UClass StaticClass() {return default;}
 	///<summary>Color used for Applying Vertex Color Painting</summary>
 	public FLinearColor PaintColor;
 	///<summary>Color used for Erasing Vertex Color Painting</summary>

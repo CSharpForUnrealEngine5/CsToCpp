@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A function library of utilities for querying information about plugins.</summary>
 [CppInclude("PluginBlueprintLibrary.h")]
 public partial class UPluginBlueprintLibrary : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>Get the list of extra directories that are recursively searched for</summary>
 	public static TArray<string> GetAdditionalPluginSearchPaths() { return default; }
 	///<summary>Get the list of extra directories added by the project that are</summary>

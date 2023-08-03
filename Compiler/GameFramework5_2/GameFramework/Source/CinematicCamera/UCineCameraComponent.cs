@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A specialized version of a camera component, geared toward cinematic usage.</summary>
 [CppInclude("CineCameraComponent.h")]
 public partial class UCineCameraComponent : UCameraComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>FilmbackSettings_DEPRECATED</summary>
 	public FCameraFilmbackSettings FilmbackSettings_DEPRECATED;
 	///<summary>Controls the filmback of the camera.</summary>

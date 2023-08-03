@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Controllers are non-physical actors that can possess a Pawn to control</summary>
 [CppInclude("GameFramework/Controller.h")]
 public partial class AController : AActor {
+	public static UClass StaticClass() {return default;}
 	///<summary>PlayerState containing replicated information about the player using this controller (only exists for players, not NPCs).</summary>
 	public APlayerState PlayerState;
 	///<summary>Called when the controller has instigated damage in any way</summary>

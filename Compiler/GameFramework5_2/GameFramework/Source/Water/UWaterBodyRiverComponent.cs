@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("WaterBodyRiverComponent.h")]
 public partial class UWaterBodyRiverComponent : UWaterBodyComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>SplineMeshComponents</summary>
 	public TArray<USplineMeshComponent> SplineMeshComponents;
 	///<summary>Material used when a river is overlapping a lake.</summary>

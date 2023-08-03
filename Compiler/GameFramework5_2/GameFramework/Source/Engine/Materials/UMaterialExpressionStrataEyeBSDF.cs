@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Materials/MaterialExpressionStrata.h")]
 public partial class UMaterialExpressionStrataEyeBSDF : UMaterialExpressionStrataBSDF {
+	public static UClass StaticClass() {return default;}
 	///<summary>Hair fiber base color resulting from single and multiple scattering combined. (type = float3, unit = unitless, defaults to black)</summary>
 	public FExpressionInput DiffuseColor;
 	///<summary>Controls how rough the Material is. Roughness of 0 (smooth) is a mirror reflection and 1 (rough) is completely matte or diffuse (type = float, unit = unitless, defaults to 0.5)</summary>

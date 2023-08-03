@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Note: this component is still work in progress. Uses raycast springs for simple vehicle forces</summary>
 [CppInclude("PhysicsEngine/PhysicsSpringComponent.h")]
 public partial class UPhysicsSpringComponent : USceneComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>Specifies how much strength the spring has. The higher the SpringStiffness the more force the spring can push on a body with.</summary>
 	public float SpringStiffness;
 	///<summary>Specifies how quickly the spring can absorb energy of a body. The higher the damping the less oscillation</summary>

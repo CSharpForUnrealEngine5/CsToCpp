@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Materials/MaterialExpressionFresnel.h")]
 public partial class UMaterialExpressionFresnel : UMaterialExpression {
+	public static UClass StaticClass() {return default;}
 	///<summary>Defaults to &#39;Exponent&#39; if not specified</summary>
 	public FExpressionInput ExponentIn;
 	///<summary>The exponent to pass into the pow() function</summary>

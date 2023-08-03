@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Materials/MaterialExpressionMaterialFunctionCall.h")]
 public partial class UMaterialExpressionMaterialFunctionCall : UMaterialExpression {
+	public static UClass StaticClass() {return default;}
 	///<summary>The function to call.</summary>
 	public UMaterialFunctionInterface MaterialFunction;
 	///<summary>Array of all the function inputs that this function exposes.</summary>

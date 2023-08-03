@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Data Interface allowing sampling of vector curves.</summary>
 [CppInclude("NiagaraDataInterfaceVectorCurve.h")]
 public partial class UNiagaraDataInterfaceVectorCurve : UNiagaraDataInterfaceCurveBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>XCurve</summary>
 	public FRichCurve XCurve;
 	///<summary>YCurve</summary>

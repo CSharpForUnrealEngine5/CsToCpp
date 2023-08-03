@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Components/LightComponentBase.h")]
 public partial class ULightComponentBase : USceneComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>GUID used to associate a light component with precomputed shadowing information across levels.</summary>
 	public FGuid LightGuid;
 	///<summary>Brightness_DEPRECATED</summary>

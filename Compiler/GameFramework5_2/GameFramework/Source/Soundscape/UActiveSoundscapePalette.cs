@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("SoundScapePalette.h")]
 public partial class UActiveSoundscapePalette : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Play</summary>
 	public  void Play() {}
 	///<summary>Stop</summary>

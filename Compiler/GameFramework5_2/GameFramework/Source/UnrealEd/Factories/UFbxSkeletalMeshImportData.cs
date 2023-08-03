@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Import data and options used when importing a static mesh from fbx</summary>
 [CppInclude("Factories/FbxSkeletalMeshImportData.h")]
 public partial class UFbxSkeletalMeshImportData : UFbxMeshImportData {
+	public static UClass StaticClass() {return default;}
 	///<summary>Filter the content we want to import from the incoming FBX skeletal mesh.</summary>
 	public EFBXImportContentType ImportContentType;
 	///<summary>The value of the content type during the last import. This cannot be edited and is set only on successful import or re-import</summary>

@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A 3D Attach section</summary>
 [CppInclude("Sections/MovieScene3DAttachSection.h")]
 public partial class UMovieScene3DAttachSection : UMovieScene3DConstraintSection {
+	public static UClass StaticClass() {return default;}
 	///<summary>AttachSocketName</summary>
 	public string AttachSocketName;
 	///<summary>AttachComponentName</summary>

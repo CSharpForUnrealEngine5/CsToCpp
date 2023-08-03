@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("InterchangePipelineMeshesUtilities.h")]
 public partial class UInterchangePipelineMeshesUtilities : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Create an instance of UInterchangePipelineMeshesUtilities.</summary>
 	public static UInterchangePipelineMeshesUtilities CreateInterchangePipelineMeshesUtilities(UInterchangeBaseNodeContainer BaseNodeContainer) { return default; }
 	///<summary>Get all mesh instance unique ids.</summary>

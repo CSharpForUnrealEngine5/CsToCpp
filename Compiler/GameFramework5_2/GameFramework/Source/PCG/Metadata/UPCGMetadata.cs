@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Metadata/PCGMetadata.h")]
 public partial class UPCGMetadata : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Initializes the metadata from a parent metadata, if any (can be null). Copies attributes and values.</summary>
 	public  void Initialize(UPCGMetadata InParent) {}
 	///<summary>Initializes the metadata from a parent metadata. Copies attributes and values.</summary>

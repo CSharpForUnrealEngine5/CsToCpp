@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A recording source that records microphone audio</summary>
 [CppInclude("TakeRecorderMicrophoneAudioSource.h")]
 public partial class UTakeRecorderMicrophoneAudioSourceSettings : UTakeRecorderSource {
+	public static UClass StaticClass() {return default;}
 	///<summary>Name of the recorded audio track</summary>
 	public string AudioTrackName;
 	///<summary>The name of the audio asset.</summary>

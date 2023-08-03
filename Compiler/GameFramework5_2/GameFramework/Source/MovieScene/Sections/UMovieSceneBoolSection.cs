@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A single bool section.</summary>
 [CppInclude("Sections/MovieSceneBoolSection.h")]
 public partial class UMovieSceneBoolSection : UMovieSceneSection {
+	public static UClass StaticClass() {return default;}
 	///<summary>The default value to use when no keys are present - use GetCurve().SetDefaultValue()</summary>
 	public bool DefaultValue_DEPRECATED;
 	///<summary>Ordered curve data</summary>

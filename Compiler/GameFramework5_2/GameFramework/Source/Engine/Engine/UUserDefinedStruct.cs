@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Engine/UserDefinedStruct.h")]
 public partial class UUserDefinedStruct : UScriptStruct {
+	public static UClass StaticClass() {return default;}
 	///<summary>The original struct, when current struct isn&#39;t a temporary duplicate, the field should be null</summary>
 	public TWeakObjectPtr<UUserDefinedStruct> PrimaryStruct;
 	///<summary>ErrorMessage</summary>

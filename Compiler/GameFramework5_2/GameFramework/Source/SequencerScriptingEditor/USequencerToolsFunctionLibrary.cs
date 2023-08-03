@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>This is a set of helper functions to access various parts of the Sequencer API via Python. Because Sequencer itself is not suitable for exposing, most functionality</summary>
 [CppInclude("SequencerTools.h")]
 public partial class USequencerToolsFunctionLibrary : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>Attempts to render a sequence to movie based on the specified settings. This will automatically detect</summary>
 	public static bool RenderMovie(UMovieSceneCapture InCaptureSettings,FOnRenderMovieStopped OnFinishedCallback) { return default; }
 	///<summary>Returns if Render to Movie is currently in progress.</summary>

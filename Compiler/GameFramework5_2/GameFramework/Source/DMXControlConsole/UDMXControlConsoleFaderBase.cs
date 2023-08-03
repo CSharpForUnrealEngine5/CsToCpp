@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Base class for a Fader in the DMX Control Console.</summary>
 [CppInclude("DMXControlConsoleFaderBase.h")]
 public partial class UDMXControlConsoleFaderBase : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Cached Name of the Fader</summary>
 	public string FaderName;
 	///<summary>The end channel Address to send DMX to</summary>

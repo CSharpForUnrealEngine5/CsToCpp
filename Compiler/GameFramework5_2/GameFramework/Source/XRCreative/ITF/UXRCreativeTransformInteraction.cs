@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>UXRCreativeTransformInteraction manages a 3D Translate/Rotate/Scale (TRS) Gizmo.</summary>
 [CppInclude("ITF/TransformInteraction.h")]
 public partial class UXRCreativeTransformInteraction : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>SetEnableScaling</summary>
 	public  void SetEnableScaling(bool bEnable) {}
 	///<summary>SetEnableNonUniformScaling</summary>

@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Component that uses 1 DMX channel</summary>
 [CppInclude("DMXFixtureComponentSingle.h")]
 public partial class UDMXFixtureComponentSingle : UDMXFixtureComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>DMXChannel</summary>
 	public FDMXChannelData DMXChannel;
 	///<summary>Gets the interpolation delta value (step) for this frame</summary>

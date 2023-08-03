@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Kismet/BlueprintTypeConversions.h")]
 public partial class UBlueprintTypeConversions : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Container conversions</summary>
 	public static TArray<int> ConvertArrayType(TArray<int> InArray) { return default; }
 	///<summary>ConvertSetType</summary>

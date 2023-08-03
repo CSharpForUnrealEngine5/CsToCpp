@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A tile map is a 2D grid with a defined width and height (in tiles).  There can be multiple layers, each of which can specify which tile should appear in each cell of the map for that layer.</summary>
 [CppInclude("PaperTileMap.h")]
 public partial class UPaperTileMap : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Width of map (in tiles)</summary>
 	public int MapWidth;
 	///<summary>Height of map (in tiles)</summary>

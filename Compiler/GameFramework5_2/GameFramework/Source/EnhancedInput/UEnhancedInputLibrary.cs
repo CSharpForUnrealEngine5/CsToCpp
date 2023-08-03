@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("EnhancedInputLibrary.h")]
 public partial class UEnhancedInputLibrary : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>Flag all enhanced input subsystems making use of the mapping context for reapplication of all control mappings at the end of this frame.</summary>
 	public static void RequestRebuildControlMappingsUsingContext(UInputMappingContext Context,bool bForceImmediately/*=false*/) {}
 	///<summary>Breaks an ActionValue into X, Y, Z. Axes not supported by value type will be 0.</summary>

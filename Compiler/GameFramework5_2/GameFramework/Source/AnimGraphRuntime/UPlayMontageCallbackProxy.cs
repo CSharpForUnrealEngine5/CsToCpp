@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("PlayMontageCallbackProxy.h")]
 public partial class UPlayMontageCallbackProxy : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Called when Montage finished playing and wasn&#39;t interrupted</summary>
 	public FOnMontagePlayDelegate OnCompleted;
 	///<summary>Called when Montage starts blending out and is not interrupted</summary>

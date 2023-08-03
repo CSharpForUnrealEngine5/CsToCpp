@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Mesh Attribute Editor Tool</summary>
 [CppInclude("Tools/LODManagerTool.h")]
 public partial class ULODManagerTool : UMultiSelectionMeshEditingTool {
+	public static UClass StaticClass() {return default;}
 	///<summary>LODInfoProperties</summary>
 	public ULODManagerLODProperties LODInfoProperties;
 	///<summary>LODPreviewProperties</summary>

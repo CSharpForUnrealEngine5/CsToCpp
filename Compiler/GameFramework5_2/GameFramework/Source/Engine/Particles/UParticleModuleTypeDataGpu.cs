@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Particles/TypeData/ParticleModuleTypeDataGpu.h")]
 public partial class UParticleModuleTypeDataGpu : UParticleModuleTypeDataBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>Information for runtime simulation.</summary>
 	public FGPUSpriteEmitterInfo EmitterInfo;
 	///<summary>Data used to initialize runtime resources.</summary>

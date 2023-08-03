@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>UDynamicMesh is a UObject container for a FDynamicMesh3.</summary>
 [CppInclude("UDynamicMesh.h")]
 public partial class UDynamicMesh : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Clear the internal mesh to an empty mesh.</summary>
 	public  UDynamicMesh Reset() { return default; }
 	///<summary>Clear the internal mesh to a 100x100x100 cube with base at the origin.</summary>

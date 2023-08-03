@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Task for providing a generic sync point for client server (one can wait for a signal from the other)</summary>
 [CppInclude("Abilities/Tasks/AbilityTask_NetworkSyncPoint.h")]
 public partial class UAbilityTask_NetworkSyncPoint : UAbilityTask {
+	public static UClass StaticClass() {return default;}
 	///<summary>OnSync</summary>
 	public FNetworkSyncDelegate OnSync;
 	///<summary>OnSignalCallback</summary>

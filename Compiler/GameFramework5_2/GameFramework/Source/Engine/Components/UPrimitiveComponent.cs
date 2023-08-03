@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>PrimitiveComponents are SceneComponents that contain or generate some sort of geometry, generally to be rendered or used as collision data.</summary>
 [CppInclude("Components/PrimitiveComponent.h")]
 public partial class UPrimitiveComponent : USceneComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>The minimum distance at which the primitive should be rendered,</summary>
 	public float MinDrawDistance;
 	///<summary>Max draw distance exposed to LDs. The real max draw distance is the min (disregarding 0) of this and volumes affecting this object.</summary>

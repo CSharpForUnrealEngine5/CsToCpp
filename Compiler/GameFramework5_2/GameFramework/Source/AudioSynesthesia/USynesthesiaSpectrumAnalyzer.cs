@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>USynesthesiaSpectrumAnalysisAnalyzer</summary>
 [CppInclude("SynesthesiaSpectrumAnalysis.h")]
 public partial class USynesthesiaSpectrumAnalyzer : UAudioAnalyzer {
+	public static UClass StaticClass() {return default;}
 	///<summary>The settings for the SynesthesiaSpectrumAnalysis audio analyzer.</summary>
 	public USynesthesiaSpectrumAnalysisSettings Settings;
 	///<summary>Delegate to receive all Spectrum results, per-channel, since last delegate call. If bDownmixToMono setting is true, results will be in channel index 0.</summary>

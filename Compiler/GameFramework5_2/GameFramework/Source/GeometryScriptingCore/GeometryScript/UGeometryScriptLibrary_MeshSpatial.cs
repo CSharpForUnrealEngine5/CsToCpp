@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("GeometryScript/MeshSpatialFunctions.h")]
 public partial class UGeometryScriptLibrary_MeshSpatial : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>ResetBVH</summary>
 	public static void ResetBVH(FGeometryScriptDynamicMeshBVH ResetBVH) {}
 	///<summary>BuildBVHForMesh</summary>

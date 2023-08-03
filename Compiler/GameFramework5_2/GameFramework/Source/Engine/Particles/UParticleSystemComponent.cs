@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A particle emitter.</summary>
 [CppInclude("Particles/ParticleSystemComponent.h")]
 public partial class UParticleSystemComponent : UFXSystemComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>Template</summary>
 	public UParticleSystem Template;
 	///<summary>EmitterMaterials</summary>

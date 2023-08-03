@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Particles/Kill/ParticleModuleKillBox.h")]
 public partial class UParticleModuleKillBox : UParticleModuleKillBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>The lower left corner of the box.</summary>
 	public FRawDistributionVector LowerLeftCorner;
 	///<summary>The upper right corner of the box.</summary>

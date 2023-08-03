@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>UMediaFrameworkCaptureCameraViewportAssetUserData</summary>
 [CppInclude("MediaFrameworkWorldSettingsAssetUserData.h")]
 public partial class UMediaFrameworkWorldSettingsAssetUserData : UAssetUserData {
+	public static UClass StaticClass() {return default;}
 	///<summary>RenderTargetCaptures</summary>
 	public TArray<FMediaFrameworkCaptureRenderTargetCameraOutputInfo> RenderTargetCaptures;
 	///<summary>ViewportCaptures</summary>

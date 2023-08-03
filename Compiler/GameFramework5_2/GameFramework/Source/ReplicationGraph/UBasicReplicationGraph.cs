@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A basic implementation of replication graph. It only supports NetCullDistanceSquared, bAlwaysRelevant, bOnlyRelevantToOwner. These values cannot change per-actor at runtime.</summary>
 [CppInclude("BasicReplicationGraph.h")]
 public partial class UBasicReplicationGraph : UReplicationGraph {
+	public static UClass StaticClass() {return default;}
 	///<summary>GridNode</summary>
 	public UReplicationGraphNode_GridSpatialization2D GridNode;
 	///<summary>AlwaysRelevantNode</summary>

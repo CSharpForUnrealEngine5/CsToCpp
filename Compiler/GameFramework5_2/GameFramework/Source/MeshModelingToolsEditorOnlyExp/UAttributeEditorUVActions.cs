@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("AttributeEditorTool.h")]
 public partial class UAttributeEditorUVActions : UAttributeEditorActionPropertySet {
+	public static UClass StaticClass() {return default;}
 	///<summary>UVLayer</summary>
 	public string UVLayer;
 	///<summary>GetUVLayerNamesFunc</summary>

@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>The combobox allows you to display a list of options to the user in a dropdown menu for them to select one.</summary>
 [CppInclude("Components/ComboBoxString.h")]
 public partial class UComboBoxString : UWidget {
+	public static UClass StaticClass() {return default;}
 	///<summary>FOnSelectionChangedEvent</summary>
 	public  void FOnSelectionChangedEvent(string SelectedItem,ESelectInfo SelectionType) {}
 	///<summary>FOnOpeningEvent</summary>

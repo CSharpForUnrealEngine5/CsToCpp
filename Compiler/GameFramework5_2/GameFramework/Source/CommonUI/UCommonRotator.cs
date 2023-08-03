@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A button that can rotate between given text labels.</summary>
 [CppInclude("CommonRotator.h")]
 public partial class UCommonRotator : UCommonButtonBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>Set the array of texts available</summary>
 	public  void PopulateTextLabels(TArray<string> Labels) {}
 	///<summary>Gets the current text value of the slider.</summary>

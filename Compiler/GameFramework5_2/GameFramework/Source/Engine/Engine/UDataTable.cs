@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Imported spreadsheet table.</summary>
 [CppInclude("Engine/DataTable.h")]
 public partial class UDataTable : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Structure to use for each row of the table, must inherit from FTableRowBase</summary>
 	public UScriptStruct RowStruct;
 	///<summary>Set to true to not cook this data table into client builds. Useful for sensitive tables that only servers should know about.</summary>

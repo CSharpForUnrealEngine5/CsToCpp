@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("OculusHandComponent.h")]
 public partial class UDEPRECATED_UOculusHandComponent : UPoseableMeshComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>SkeletonType</summary>
 	public EOculusHandType SkeletonType;
 	///<summary>MeshType</summary>

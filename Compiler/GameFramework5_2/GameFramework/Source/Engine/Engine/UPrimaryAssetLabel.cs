@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A seed file that is created to mark referenced assets as part of this primary asset</summary>
 [CppInclude("Engine/PrimaryAssetLabel.h")]
 public partial class UPrimaryAssetLabel : UPrimaryDataAsset {
+	public static UClass StaticClass() {return default;}
 	///<summary>Management rules for this specific asset, if set it will override the type rules</summary>
 	public FPrimaryAssetRules Rules;
 	///<summary>True to Label everything in this directory and sub directories</summary>

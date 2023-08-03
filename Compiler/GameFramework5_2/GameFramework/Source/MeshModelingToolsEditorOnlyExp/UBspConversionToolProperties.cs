@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("BspConversionTool.h")]
 public partial class UBspConversionToolProperties : UInteractiveToolPropertySet {
+	public static UClass StaticClass() {return default;}
 	///<summary>ConversionMode</summary>
 	public EBspConversionMode ConversionMode;
 	///<summary>Whether to consider BSP volumes to be valid conversion targets.</summary>

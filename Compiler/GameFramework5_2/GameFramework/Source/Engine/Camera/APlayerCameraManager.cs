@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A PlayerCameraManager is responsible for managing the camera for a particular</summary>
 [CppInclude("Camera/PlayerCameraManager.h")]
 public partial class APlayerCameraManager : AActor {
+	public static UClass StaticClass() {return default;}
 	///<summary>PlayerController that owns this Camera actor</summary>
 	public APlayerController PCOwner;
 	///<summary>Dummy component we can use to attach things to the camera.</summary>

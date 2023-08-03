@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("ConcertSyncSettings.h")]
 public partial class UConcertSyncConfig : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Should we ask before hot-reloading changed packages?</summary>
 	public bool bInteractiveHotReload;
 	///<summary>Should we show presence when in PIE?</summary>

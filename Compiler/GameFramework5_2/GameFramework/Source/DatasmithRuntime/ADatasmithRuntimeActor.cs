@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("DatasmithRuntime.h")]
 public partial class ADatasmithRuntimeActor : AActor {
+	public static UClass StaticClass() {return default;}
 	///<summary>End ISceneChangeListener interface</summary>
 	public  bool IsConnected() { return default; }
 	///<summary>GetDestinationName</summary>

@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("FunctionalUIScreenshotTest.h")]
 public partial class AFunctionalUIScreenshotTest : AScreenshotFunctionalTestBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>WidgetClass</summary>
 	public UClass WidgetClass;
 	///<summary>SpawnedWidget</summary>

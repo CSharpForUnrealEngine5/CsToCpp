@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("HeadMountedDisplayFunctionLibrary.h")]
 public partial class UHeadMountedDisplayFunctionLibrary : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>Returns whether or not we are currently using the head mounted display.</summary>
 	public static bool IsHeadMountedDisplayEnabled() { return default; }
 	///<summary>Returns whether or not the HMD hardware is connected and ready to use.  It may or may not actually be in use.</summary>

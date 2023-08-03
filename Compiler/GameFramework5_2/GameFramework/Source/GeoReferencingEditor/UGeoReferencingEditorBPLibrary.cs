@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("GeoReferencingEditorBPLibrary.h")]
 public partial class UGeoReferencingEditorBPLibrary : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>Retrieve the Viewport-Space position of the mouse in the Level Editor Viewport. If the Level editor not are in focus it will return false.</summary>
 	public static void GetViewportCursorLocation(bool Focused,FVector2D ScreenLocation) {}
 	///<summary>Retrieve information about the viewport under the mouse cursor.</summary>

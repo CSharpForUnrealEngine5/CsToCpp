@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Properties/RecomputeUVsProperties.h")]
 public partial class URecomputeUVsToolProperties : UInteractiveToolPropertySet {
+	public static UClass StaticClass() {return default;}
 	///<summary>bEnablePolygroupSupport</summary>
 	public bool bEnablePolygroupSupport;
 	///<summary>Generation method for initial UV islands.</summary>

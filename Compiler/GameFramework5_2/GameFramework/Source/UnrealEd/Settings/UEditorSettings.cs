@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Settings/EditorSettings.h")]
 public partial class UEditorSettings : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Adjusts the Local Cache location. This affects every project on your computer that uses the UE-LocalDataCachePath environment environment variable override.</summary>
 	public FDirectoryPath GlobalLocalDDCPath;
 	///<summary>Adjusts the Shared cache location. This affects every project on your computer that uses the UE-SharedDataCachePath environment variable override.</summary>

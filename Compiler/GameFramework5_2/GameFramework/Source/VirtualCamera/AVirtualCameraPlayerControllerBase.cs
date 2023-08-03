@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("VirtualCameraPlayerControllerBase.h")]
 public partial class AVirtualCameraPlayerControllerBase : APlayerController {
+	public static UClass StaticClass() {return default;}
 	///<summary>Allows user to select which tracker input should be used</summary>
 	public ETrackerInputSource InputSource;
 	///<summary>Controller for level sequence playback</summary>

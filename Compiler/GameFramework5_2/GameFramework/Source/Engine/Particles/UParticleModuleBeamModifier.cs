@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Particles/Beam/ParticleModuleBeamModifier.h")]
 public partial class UParticleModuleBeamModifier : UParticleModuleBeamBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>Whether this module modifies the Source or the Target.</summary>
 	public BeamModifierType ModifierType;
 	///<summary>The options associated with the position.</summary>

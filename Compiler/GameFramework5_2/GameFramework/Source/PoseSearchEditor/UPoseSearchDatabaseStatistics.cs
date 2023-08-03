@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("PoseSearchDatabaseEditorReflection.h")]
 public partial class UPoseSearchDatabaseStatistics : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>General information</summary>
 	public uint AnimationSequences;
 	///<summary>TotalAnimationPosesInFrames</summary>

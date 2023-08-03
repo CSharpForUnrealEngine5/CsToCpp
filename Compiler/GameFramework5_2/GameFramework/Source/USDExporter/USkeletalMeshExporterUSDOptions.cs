@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Options for exporting skeletal meshes to USD format.</summary>
 [CppInclude("SkeletalMeshExporterUSDOptions.h")]
 public partial class USkeletalMeshExporterUSDOptions : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>StageOptions</summary>
 	public FUsdStageOptions StageOptions;
 	///<summary>MeshAssetOptions</summary>

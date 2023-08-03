@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("GeometryScript/ShapeFunctions.h")]
 public partial class UGeometryScriptLibrary_BoxFunctions : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>Create a Box from a Center point and X/Y/Z Dimensions (*not* Extents, which are half-dimensions)</summary>
 	public static FBox MakeBoxFromCenterSize(FVector Center,FVector Dimensions) { return default; }
 	///<summary>Create a Box from a Center point and X/Y/Z Extents (Extents are half-dimensions)</summary>

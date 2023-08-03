@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("NavModifierComponent.h")]
 public partial class UNavModifierComponent : UNavRelevantComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>AreaClass</summary>
 	public UClass AreaClass;
 	///<summary>box extent used ONLY when owning actor doesn&#39;t have collision component</summary>

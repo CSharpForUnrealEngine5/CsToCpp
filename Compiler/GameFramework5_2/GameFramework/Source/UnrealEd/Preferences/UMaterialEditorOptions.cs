@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Preferences/MaterialEditorOptions.h")]
 public partial class UMaterialEditorOptions : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>If true, render grid the preview scene.</summary>
 	public bool bShowGrid;
 	///<summary>If true, don&#39;t render connectors that are not connected to anything.</summary>

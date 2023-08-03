@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Settings for Per Element Scale in the Pattern Tool</summary>
 [CppInclude("PatternTool.h")]
 public partial class UPatternTool_ScaleSettings : UInteractiveToolPropertySet {
+	public static UClass StaticClass() {return default;}
 	///<summary>If true, changes to Start Scale, End Scale, and Jitter are proportional along all the axes</summary>
 	public bool bProportional;
 	///<summary>If true, Scale is linearly interpolated between StartScale and Scale values</summary>

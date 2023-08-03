@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Commandlets/DiffAssetRegistriesCommandlet.h")]
 public partial class UDiffAssetRegistriesCommandlet : UCommandlet {
+	public static UClass StaticClass() {return default;}
 	///<summary>AssetRegistrySearchPath</summary>
 	public TArray<string> AssetRegistrySearchPath;
 	///<summary>P4Repository</summary>

@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Subsystem that holds all registered smart object instances and offers the API for spatial queries and reservations.</summary>
 [CppInclude("SmartObjectSubsystem.h")]
 public partial class USmartObjectSubsystem : UWorldSubsystem {
+	public static UClass StaticClass() {return default;}
 	///<summary>Enables or disables the entire smart object represented by the provided handle.</summary>
 	public  bool SetEnabled(FSmartObjectHandle Handle,bool bEnabled) { return default; }
 	///<summary>Returns the component associated to the claim handle if still</summary>

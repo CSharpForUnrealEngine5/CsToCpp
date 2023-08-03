@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("CineCameraSettings.h")]
 public partial class UCineCameraSettings : UDeveloperSettings {
+	public static UClass StaticClass() {return default;}
 	///<summary>Name of the default lens preset</summary>
 	public string DefaultLensPresetName;
 	///<summary>Default focal length (will be constrained by default lens)</summary>

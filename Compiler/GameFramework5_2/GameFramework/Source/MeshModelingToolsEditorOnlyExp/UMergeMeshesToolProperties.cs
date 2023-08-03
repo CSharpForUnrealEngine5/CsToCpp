@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Standard properties of the Merge Meshes operation</summary>
 [CppInclude("MergeMeshesTool.h")]
 public partial class UMergeMeshesToolProperties : UInteractiveToolPropertySet {
+	public static UClass StaticClass() {return default;}
 	///<summary>The size of the geometry bounding box major axis measured in voxels.</summary>
 	public int VoxelCount;
 	///<summary>Remeshing adaptivity, prior to optional simplification</summary>

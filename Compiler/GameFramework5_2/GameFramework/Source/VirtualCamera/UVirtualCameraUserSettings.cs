@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Virtual Camera User Settings</summary>
 [CppInclude("VirtualCameraUserSettings.h")]
 public partial class UVirtualCameraUserSettings : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Controls interpolation speed when smoothing when changing focus distance. This is used to set the value of FocusSmoothingInterpSpeed in the Virtual camera CineCamera component</summary>
 	public float FocusInterpSpeed;
 	///<summary>Controls how fast the camera moves when using joysticks</summary>

@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Define a test plan</summary>
 [CppInclude("InterchangeImportTestPlan.h")]
 public partial class UInterchangeImportTestPlan : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Set of steps to perform to carry out this test plan</summary>
 	public TArray<UInterchangeImportTestStepBase> Steps;
 	///<summary>Whether or not this test plan is currently enabled</summary>

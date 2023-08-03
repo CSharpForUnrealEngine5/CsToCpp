@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("VCamInputSubsystem.h")]
 public partial class UDEPRECATED_VCamInputSubsystem : UEngineSubsystem {
+	public static UClass StaticClass() {return default;}
 	///<summary>SetShouldConsumeGamepadInput</summary>
 	public  void SetShouldConsumeGamepadInput(bool bInShouldConsumeGamepadInput) {}
 	///<summary>GetShouldConsumeGamepadInput</summary>

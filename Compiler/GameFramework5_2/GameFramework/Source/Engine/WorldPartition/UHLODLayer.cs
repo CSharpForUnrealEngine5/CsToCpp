@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("WorldPartition/HLOD/HLODLayer.h")]
 public partial class UHLODLayer : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Type of HLOD generation to use</summary>
 	public EHLODLayerType LayerType;
 	///<summary>HLOD Builder class</summary>

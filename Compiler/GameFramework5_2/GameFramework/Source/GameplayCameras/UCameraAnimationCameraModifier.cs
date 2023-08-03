@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A camera modifier that plays camera animation sequences.</summary>
 [CppInclude("CameraAnimationCameraModifier.h")]
 public partial class UCameraAnimationCameraModifier : UCameraModifier {
+	public static UClass StaticClass() {return default;}
 	///<summary>Play a new camera animation sequence.</summary>
 	public  FCameraAnimationHandle PlayCameraAnimation(UCameraAnimationSequence Sequence,FCameraAnimationParams Params) { return default; }
 	///<summary>Returns whether the given camera animation is playing.</summary>

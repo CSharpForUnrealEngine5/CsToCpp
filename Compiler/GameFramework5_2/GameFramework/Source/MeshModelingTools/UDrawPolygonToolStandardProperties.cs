@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("DrawPolygonTool.h")]
 public partial class UDrawPolygonToolStandardProperties : UInteractiveToolPropertySet {
+	public static UClass StaticClass() {return default;}
 	///<summary>Type of polygon to draw in the viewport</summary>
 	public EDrawPolygonDrawMode PolygonDrawMode;
 	///<summary>Allow freehand drawn polygons to self-intersect</summary>

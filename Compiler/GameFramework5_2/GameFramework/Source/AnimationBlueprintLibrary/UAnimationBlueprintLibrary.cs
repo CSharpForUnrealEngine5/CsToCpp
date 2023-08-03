@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Blueprint library for altering and analyzing animation / skeletal data</summary>
 [CppInclude("AnimationBlueprintLibrary.h")]
 public partial class UAnimationBlueprintLibrary : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>Retrieves the number of animation frames for the given Animation Sequence</summary>
 	public static void GetNumFrames(UAnimSequenceBase AnimationSequenceBase,int NumFrames) {}
 	///<summary>Retrieves the number of animation keys for the given Animation Sequence</summary>

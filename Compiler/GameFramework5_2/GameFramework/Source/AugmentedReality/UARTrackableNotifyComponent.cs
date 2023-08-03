@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Component used to listen to ar trackable object changes</summary>
 [CppInclude("ARTrackableNotifyComponent.h")]
 public partial class UARTrackableNotifyComponent : UActorComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>Event that happens when any new trackable ar item is added</summary>
 	public FTrackableDelegate OnAddTrackedGeometry;
 	///<summary>Event that happens when any trackable ar item is updated</summary>

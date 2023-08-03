@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Video/Encoders/SimpleVideoEncoder.h")]
 public partial class USimpleVideoEncoder : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>IsAsync</summary>
 	public  bool IsAsync() { return default; }
 	///<summary>IsOpen</summary>

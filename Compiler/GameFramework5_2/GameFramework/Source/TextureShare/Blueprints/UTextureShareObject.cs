@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>TextureShare UObject container</summary>
 [CppInclude("Blueprints/TextureShareBlueprintContainers.h")]
 public partial class UTextureShareObject : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Override CustomData SendParameters</summary>
 	public  void SendCustomData(TMap<string,string> InSendParameters) {}
 	///<summary>Enable this texture share object</summary>

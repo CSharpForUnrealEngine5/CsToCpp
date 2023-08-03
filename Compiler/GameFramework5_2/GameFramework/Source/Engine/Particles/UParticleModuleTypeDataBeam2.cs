@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Particles/TypeData/ParticleModuleTypeDataBeam2.h")]
 public partial class UParticleModuleTypeDataBeam2 : UParticleModuleTypeDataBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>The method with which to form the beam(s). Must be one of the following:</summary>
 	public EBeam2Method BeamMethod;
 	///<summary>The number of times to tile the texture along each beam.</summary>

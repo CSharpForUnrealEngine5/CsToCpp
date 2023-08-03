@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("NiagaraBakerOutputVolumeTexture.h")]
 public partial class UNiagaraBakerOutputVolumeTexture : UNiagaraBakerOutput {
+	public static UClass StaticClass() {return default;}
 	///<summary>SourceBinding</summary>
 	public FNiagaraBakerTextureSource SourceBinding;
 	///<summary>bGenerateAtlas</summary>

@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Base component to handle the vehicle simulation for an actor.</summary>
 [CppInclude("ChaosVehicleMovementComponent.h")]
 public partial class UChaosVehicleMovementComponent : UPawnMovementComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>If true, the brake and reverse controls will behave in a more arcade fashion where holding reverse also functions as brake. For a more realistic approach turn this off</summary>
 	public bool bReverseAsBrake;
 	///<summary>If true, when reversing the throttle will behave like a brake while the vehicle moving in a backwards direction - requires bReverseAsBrake to be enabled for operation</summary>

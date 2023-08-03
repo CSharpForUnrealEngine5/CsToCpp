@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Actor class for DMX Control Console</summary>
 [CppInclude("DMXControlConsoleActor.h")]
 public partial class ADMXControlConsoleActor : AActor {
+	public static UClass StaticClass() {return default;}
 	///<summary>Sets current DMX Control Console to start sending DMX data</summary>
 	public  void StartSendingDMX() {}
 	///<summary>Sets current DMX Control Console to stop sending DMX data</summary>

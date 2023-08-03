@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Defines a place to efficiently store and retrieve structure data, can be used as a wrapper around Data/Curve Tables or extended with other sources</summary>
 [CppInclude("DataRegistry.h")]
 public partial class UDataRegistry : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Globally unique name used to identify this registry</summary>
 	public string RegistryType;
 	///<summary>Rules for specifying valid item Ids, if default than any name can be used</summary>

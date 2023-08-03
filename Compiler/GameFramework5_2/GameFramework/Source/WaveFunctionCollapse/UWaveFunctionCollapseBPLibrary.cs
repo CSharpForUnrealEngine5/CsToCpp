@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("WaveFunctionCollapseBPLibrary.h")]
 public partial class UWaveFunctionCollapseBPLibrary : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>Calculates Shannon Entropy from an array of options and a given model</summary>
 	public static float CalculateShannonEntropy(TArray<FWaveFunctionCollapseOption> Options,UWaveFunctionCollapseModel WFCModel) { return default; }
 	///<summary>Convert 3D grid position to 2D array index</summary>

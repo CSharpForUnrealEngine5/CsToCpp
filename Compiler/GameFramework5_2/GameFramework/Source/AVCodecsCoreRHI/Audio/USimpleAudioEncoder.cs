@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Audio/Encoders/SimpleAudioEncoder.h")]
 public partial class USimpleAudioEncoder : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>IsAsync</summary>
 	public  bool IsAsync() { return default; }
 	///<summary>IsOpen</summary>

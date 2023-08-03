@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Materials/MaterialExpressionStrata.h")]
 public partial class UMaterialExpressionStrataSingleLayerWaterBSDF : UMaterialExpressionStrataBSDF {
+	public static UClass StaticClass() {return default;}
 	///<summary>Surface base color. (type = float3, unit = unitless, defaults to black)</summary>
 	public FExpressionInput BaseColor;
 	///<summary>Whether the surface represents a dielectric (such as plastic) or a conductor (such as metal). (type = float, unit = unitless, defaults to 0 = dielectric)</summary>

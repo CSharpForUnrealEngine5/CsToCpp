@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A package of the needed information for an asset being operated on by a</summary>
 [CppInclude("ToolTargets/UVEditorToolMeshInput.h")]
 public partial class UUVEditorToolMeshInput : UToolTarget {
+	public static UClass StaticClass() {return default;}
 	///<summary>Preview of the unwrapped UV layer, suitable for being manipulated by background ops.</summary>
 	public UMeshOpPreviewWithBackgroundCompute UnwrapPreview;
 	///<summary>3d preview of the asset with the UV layer updated, suitable for use with background ops.</summary>

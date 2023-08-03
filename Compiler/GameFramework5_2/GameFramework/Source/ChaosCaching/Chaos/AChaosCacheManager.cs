@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Chaos/CacheManagerActor.h")]
 public partial class AChaosCacheManager : AActor {
+	public static UClass StaticClass() {return default;}
 	///<summary>The Cache Collection asset to use for this observer. This can be used for playback and record simultaneously</summary>
 	public UChaosCacheCollection CacheCollection;
 	///<summary>How to use the cache - playback or record</summary>

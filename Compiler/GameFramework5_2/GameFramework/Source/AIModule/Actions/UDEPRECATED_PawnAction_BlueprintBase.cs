@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Actions/PawnAction_BlueprintBase.h")]
 public partial class UDEPRECATED_PawnAction_BlueprintBase : UDEPRECATED_PawnAction {
+	public static UClass StaticClass() {return default;}
 	///<summary>Blueprint interface</summary>
 	public  void ActionStart(APawn ControlledPawn) {}
 	///<summary>ActionTick</summary>

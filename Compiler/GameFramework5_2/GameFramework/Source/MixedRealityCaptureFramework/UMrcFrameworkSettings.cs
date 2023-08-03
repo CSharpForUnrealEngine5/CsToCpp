@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("MrcFrameworkSettings.h")]
 public partial class UMrcFrameworkSettings : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>DefaulVideoSource</summary>
 	public FSoftObjectPath DefaulVideoSource;
 	///<summary>DefaultVideoProcessingMat</summary>

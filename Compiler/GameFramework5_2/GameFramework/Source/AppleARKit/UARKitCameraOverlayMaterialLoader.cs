@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Helper class to ensure the ARKit camera material is cooked.</summary>
 [CppInclude("AppleARKitVideoOverlay.h")]
 public partial class UARKitCameraOverlayMaterialLoader : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>DefaultCameraOverlayMaterial</summary>
 	public UMaterialInterface DefaultCameraOverlayMaterial;
 	///<summary>DepthOcclusionOverlayMaterial</summary>

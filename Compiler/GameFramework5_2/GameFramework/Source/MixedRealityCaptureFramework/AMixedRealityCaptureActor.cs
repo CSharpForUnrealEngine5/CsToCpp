@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("MixedRealityCaptureActor.h")]
 public partial class AMixedRealityCaptureActor : AActor {
+	public static UClass StaticClass() {return default;}
 	///<summary>CaptureComponent</summary>
 	public UMixedRealityCaptureComponent CaptureComponent;
 	///<summary>bAutoAttachToVRPlayer</summary>

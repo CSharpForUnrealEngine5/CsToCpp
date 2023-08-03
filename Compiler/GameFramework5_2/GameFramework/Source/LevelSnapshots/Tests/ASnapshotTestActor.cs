@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Tests/Types/SnapshotTestActor.h")]
 public partial class ASnapshotTestActor : ACharacter {
+	public static UClass StaticClass() {return default;}
 	///<summary>***************** Skipped properties  *******************</summary>
 	public int DeprecatedProperty_DEPRECATED;
 	///<summary>TransientProperty</summary>

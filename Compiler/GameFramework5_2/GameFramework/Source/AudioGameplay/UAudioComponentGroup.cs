@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>* Automatic Handler for voices and parameters across any number of AudioComponents</summary>
 [CppInclude("AudioComponentGroup.h")]
 public partial class UAudioComponentGroup : USceneComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>StaticGetOrCreateComponentGroup</summary>
 	public static UAudioComponentGroup StaticGetOrCreateComponentGroup(AActor Actor) { return default; }
 	///<summary>Stop all instances of this Sound on any internal or external components</summary>

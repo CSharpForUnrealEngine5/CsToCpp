@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Materials/MaterialInterface.h")]
 public partial class UMaterialInterface : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>EditorOnlyData</summary>
 	public UMaterialInterfaceEditorOnlyData EditorOnlyData;
 	///<summary>SubsurfaceProfile, for Screen Space Subsurface Scattering</summary>

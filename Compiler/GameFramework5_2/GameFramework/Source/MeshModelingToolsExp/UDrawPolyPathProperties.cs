@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("DrawPolyPathTool.h")]
 public partial class UDrawPolyPathProperties : UInteractiveToolPropertySet {
+	public static UClass StaticClass() {return default;}
 	///<summary>How the drawn path width gets set</summary>
 	public EDrawPolyPathWidthMode WidthMode;
 	///<summary>Width of the drawn path when using Fixed width mode; also shows the width in Interactive width mode</summary>

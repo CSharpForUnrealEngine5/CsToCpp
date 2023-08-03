@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("DatasmithDeltaGenImportOptions.h")]
 public partial class UDatasmithDeltaGenImportOptions : UDatasmithFBXImportOptions {
+	public static UClass StaticClass() {return default;}
 	///<summary>Don&#39;t keep nodes that marked invisible in FBX(an din the original scene), except switch variants</summary>
 	public bool bRemoveInvisibleNodes;
 	///<summary>Collapse nodes that have identity transform, have no mesh and not used in animation/variants/switches</summary>

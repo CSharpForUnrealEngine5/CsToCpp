@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>The base for widgets that are capable of being &quot;activated&quot; and &quot;deactivated&quot; during their lifetime without being otherwise modified or destroyed.</summary>
 [CppInclude("CommonActivatableWidget.h")]
 public partial class UCommonActivatableWidget : UCommonUserWidget {
+	public static UClass StaticClass() {return default;}
 	///<summary>IsActivated</summary>
 	public  bool IsActivated() { return default; }
 	///<summary>ActivateWidget</summary>

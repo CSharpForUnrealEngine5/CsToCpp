@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Materials/MaterialExpressionSparseVolumeTextureSample.h")]
 public partial class UMaterialExpressionSparseVolumeTextureSampleParameter : UMaterialExpressionSparseVolumeTextureSample {
+	public static UClass StaticClass() {return default;}
 	///<summary>Name to be referenced when we want to find and set this parameter</summary>
 	public string ParameterName;
 	///<summary>GUID that should be unique within the material, this is used for parameter renaming.</summary>

@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Tests/TransactionDiffingTests.h")]
 public partial class UTransactionDiffingTestObject : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>NamesArray</summary>
 	public TArray<string> NamesArray;
 	///<summary>AdditionalName</summary>

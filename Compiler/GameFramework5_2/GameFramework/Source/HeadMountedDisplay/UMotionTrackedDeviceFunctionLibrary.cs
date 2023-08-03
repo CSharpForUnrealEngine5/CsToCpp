@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("MotionTrackedDeviceFunctionLibrary.h")]
 public partial class UMotionTrackedDeviceFunctionLibrary : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>Returns true if it is necessary for the game to manage how many motion tracked devices it is asking to be tracked simultaneously.</summary>
 	public static bool IsMotionTrackedDeviceCountManagementNecessary() { return default; }
 	///<summary>Set whether motion tracked controllers activate on creation by default, or do not and must be explicitly activated.</summary>

@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Recorder/TakeRecorderBlueprintLibrary.h")]
 public partial class UTakeRecorderBlueprintLibrary : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>Is the Take Recorder enabled in the build</summary>
 	public static bool IsTakeRecorderEnabled() { return default; }
 	///<summary>Start a new recording using the specified parameters. Will fail if a recording is currently in progress</summary>

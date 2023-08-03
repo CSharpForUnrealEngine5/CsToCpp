@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>The terrain visualization component for an associated spline component.</summary>
 [CppInclude("PaperTerrainComponent.h")]
 public partial class UPaperTerrainComponent : UPrimitiveComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>The terrain material to apply to this component (set of rules for which sprites are used on different surfaces or the interior)</summary>
 	public UPaperTerrainMaterial TerrainMaterial;
 	///<summary>bClosedSpline</summary>

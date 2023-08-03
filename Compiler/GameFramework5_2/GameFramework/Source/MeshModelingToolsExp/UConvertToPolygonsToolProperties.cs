@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("ConvertToPolygonsTool.h")]
 public partial class UConvertToPolygonsToolProperties : UInteractiveToolPropertySet {
+	public static UClass StaticClass() {return default;}
 	///<summary>Strategy to use to group triangles</summary>
 	public EConvertToPolygonsMode ConversionMode;
 	///<summary>Tolerance for planarity</summary>

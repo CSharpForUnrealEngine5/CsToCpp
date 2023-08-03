@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Materials/MaterialExpressionMakeMaterialAttributes.h")]
 public partial class UMaterialExpressionMakeMaterialAttributes : UMaterialExpression {
+	public static UClass StaticClass() {return default;}
 	///<summary>BaseColor</summary>
 	public FExpressionInput BaseColor;
 	///<summary>Metallic</summary>

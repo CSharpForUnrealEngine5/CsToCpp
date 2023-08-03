@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>set this to something larger than 0 to profile N runs</summary>
 [CppInclude("RigVMHost.h")]
 public partial class URigVMHost : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>FindRigVMHosts</summary>
 	public static TArray<URigVMHost> FindRigVMHosts(UObject Outer,UClass OptionalClass) { return default; }
 	///<summary>Gets the current absolute time</summary>

@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("LocomotionAnalysis.h")]
 public partial class ULocomotionAnalysisProperties : UAnalysisProperties {
+	public static UClass StaticClass() {return default;}
 	///<summary>Axis for the analysis function</summary>
 	public EAnalysisLocomotionAxis FunctionAxis;
 	///<summary>The primary bone or socket used for analysis</summary>

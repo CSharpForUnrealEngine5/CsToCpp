@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Fbx_AddToBlueprint UMETA(DisplayName = &quot;Add to an existing Blueprint asset&quot;),</summary>
 [CppInclude("Factories/FbxSceneImportOptions.h")]
 public partial class UFbxSceneImportOptions : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>If checked, a folder&#39;s hierarchy will be created under the import asset path. All the created folders will match the actor hierarchy. In case there is more than one actor that links to an asset, the shared asset will be placed at the first actor&#39;s place.</summary>
 	public bool bCreateContentFolderHierarchy;
 	///<summary>If checked, the mobility of all actors or components will be dynamic. If unchecked, they will be static.</summary>

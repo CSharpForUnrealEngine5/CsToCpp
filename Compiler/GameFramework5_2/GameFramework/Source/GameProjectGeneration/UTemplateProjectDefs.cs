@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("TemplateProjectDefs.h")]
 public partial class UTemplateProjectDefs : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>LocalizedDisplayNames</summary>
 	public TArray<FLocalizedTemplateString> LocalizedDisplayNames;
 	///<summary>LocalizedDescriptions</summary>

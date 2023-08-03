@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Standard properties of the Transfer operation</summary>
 [CppInclude("TransferMeshTool.h")]
 public partial class UTransferMeshToolProperties : UInteractiveToolPropertySet {
+	public static UClass StaticClass() {return default;}
 	///<summary>bTransferMaterials</summary>
 	public bool bTransferMaterials;
 	///<summary>Specify which LOD from the Source (First) mesh to copy from</summary>

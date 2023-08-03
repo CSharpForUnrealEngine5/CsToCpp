@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Elements/Metadata/PCGMetadataVectorOpElement.h")]
 public partial class UPCGMetadataVectorSettings : UPCGMetadataSettingsBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>Operation</summary>
 	public EPCGMedadataVectorOperation Operation;
 	///<summary>InputSource1</summary>

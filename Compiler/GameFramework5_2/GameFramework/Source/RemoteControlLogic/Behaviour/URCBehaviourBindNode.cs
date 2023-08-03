@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Behaviour Node class for Bind Behaviour</summary>
 [CppInclude("Behaviour/Builtin/Bind/RCBehaviourBindNode.h")]
 public partial class URCBehaviourBindNode : URCBehaviourNode {
+	public static UClass StaticClass() {return default;}
 	///<summary>Execute</summary>
 	public  bool Execute(URCBehaviour InBehaviour) { return default; }
 	///<summary>IsSupported</summary>

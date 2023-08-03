@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>UParameterizeMeshTool automatically decomposes the input mesh into charts, solves for UVs,</summary>
 [CppInclude("UVEditorParameterizeMeshTool.h")]
 public partial class UUVEditorParameterizeMeshTool : UInteractiveTool {
+	public static UClass StaticClass() {return default;}
 	///<summary>Targets</summary>
 	public TArray<UUVEditorToolMeshInput> Targets;
 	///<summary>Settings</summary>

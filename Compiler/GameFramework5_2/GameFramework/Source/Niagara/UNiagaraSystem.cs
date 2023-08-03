@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A Niagara System contains multiple Niagara Emitters to create various effects.</summary>
 [CppInclude("NiagaraSystem.h")]
 public partial class UNiagaraSystem : UFXSystemAsset {
+	public static UClass StaticClass() {return default;}
 	///<summary>Internal: The thumbnail image.</summary>
 	public UTexture2D ThumbnailImage;
 	///<summary>Deprecated library exposure bool. Use the LibraryVisibility enum instead. FNiagaraEditorUtilities has accessor functions that takes deprecation into account</summary>

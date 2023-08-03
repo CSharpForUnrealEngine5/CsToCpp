@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A C++ and Blueprint accessible library of utility functions for accessing Niagara simulations</summary>
 [CppInclude("NiagaraFunctionLibrary.h")]
 public partial class UNiagaraFunctionLibrary : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>SpawnSystemAtLocationWithParams</summary>
 	public static UNiagaraComponent SpawnSystemAtLocationWithParams(FFXSystemSpawnParameters SpawnParams) { return default; }
 	///<summary>SpawnSystemAttachedWithParams</summary>

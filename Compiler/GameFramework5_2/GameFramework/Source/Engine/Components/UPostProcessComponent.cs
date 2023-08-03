@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>PostProcessComponent. Enables Post process controls for blueprints.</summary>
 [CppInclude("Components/PostProcessComponent.h")]
 public partial class UPostProcessComponent : USceneComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>Post process settings to use for this volume.</summary>
 	public FPostProcessSettings Settings;
 	///<summary>Priority of this volume. In the case of overlapping volumes the one with the highest priority</summary>

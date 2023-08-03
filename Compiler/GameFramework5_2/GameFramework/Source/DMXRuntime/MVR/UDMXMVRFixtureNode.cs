@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>This node defines a light fixture object.</summary>
 [CppInclude("MVR/Types/DMXMVRFixtureNode.h")]
 public partial class UDMXMVRFixtureNode : UDMXMVRParametricObjectNodeBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>The name of the object.</summary>
 	public string Name;
 	///<summary>The name of the file containing the GDTF information for this light fixture.</summary>

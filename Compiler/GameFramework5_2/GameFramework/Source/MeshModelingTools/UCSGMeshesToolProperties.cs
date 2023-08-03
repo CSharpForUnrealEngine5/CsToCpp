@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Standard properties of the CSG operation</summary>
 [CppInclude("CSGMeshesTool.h")]
 public partial class UCSGMeshesToolProperties : UInteractiveToolPropertySet {
+	public static UClass StaticClass() {return default;}
 	///<summary>Type of Boolean operation</summary>
 	public ECSGOperation Operation;
 	///<summary>Try to fill holes created by the Boolean operation, e.g. due to numerical errors</summary>

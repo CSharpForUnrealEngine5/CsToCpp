@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>UV Distribute Settings</summary>
 [CppInclude("Operators/UVEditorUVTransformOp.h")]
 public partial class UUVEditorUVDistributeProperties : UUVEditorUVTransformPropertiesBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>Controls the distribution behavior</summary>
 	public EUVEditorDistributeMode DistributeMode;
 	///<summary>Controls how distribution considers grouping selected objects with respect to the distribution behavior.</summary>

@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>ShapeComponent is a PrimitiveComponent that is represented by a simple geometrical shape (sphere, capsule, box, etc).</summary>
 [CppInclude("Components/ShapeComponent.h")]
 public partial class UShapeComponent : UPrimitiveComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>Description of collision</summary>
 	public UBodySetup ShapeBodySetup;
 	///<summary>AreaClass</summary>

@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("FunctionalTest.h")]
 public partial class AFunctionalTest : AActor {
+	public static UClass StaticClass() {return default;}
 	///<summary>TestLabel</summary>
 	public string TestLabel;
 	///<summary>The author is the group or person responsible for the test.  Generally you should use a group name</summary>

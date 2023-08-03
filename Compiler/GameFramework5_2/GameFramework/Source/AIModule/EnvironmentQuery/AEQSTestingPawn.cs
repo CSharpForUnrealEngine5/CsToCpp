@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("EnvironmentQuery/EQSTestingPawn.h")]
 public partial class AEQSTestingPawn : ACharacter {
+	public static UClass StaticClass() {return default;}
 	///<summary>QueryTemplate</summary>
 	public UEnvQuery QueryTemplate;
 	///<summary>QueryParams</summary>

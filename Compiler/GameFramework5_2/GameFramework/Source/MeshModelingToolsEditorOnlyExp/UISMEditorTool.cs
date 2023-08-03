@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("ISMEditorTool.h")]
 public partial class UISMEditorTool : UInteractiveTool {
+	public static UClass StaticClass() {return default;}
 	///<summary>ClickOrDragBehavior</summary>
 	public USingleClickOrDragInputBehavior ClickOrDragBehavior;
 	///<summary>RectangleMarqueeMechanic</summary>

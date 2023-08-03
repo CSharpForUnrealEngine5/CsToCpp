@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Perception/AISenseConfig_Sight.h")]
 public partial class UAISenseConfig_Sight : UAISenseConfig {
+	public static UClass StaticClass() {return default;}
 	///<summary>Implementation</summary>
 	public UClass Implementation;
 	///<summary>Maximum sight distance to notice a target.</summary>

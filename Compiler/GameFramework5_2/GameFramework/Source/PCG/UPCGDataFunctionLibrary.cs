@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("PCGData.h")]
 public partial class UPCGDataFunctionLibrary : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>Blueprint methods to support interaction with FPCGDataCollection</summary>
 	public static TArray<FPCGTaggedData> GetInputs(FPCGDataCollection InCollection) { return default; }
 	///<summary>GetInputsByPin</summary>

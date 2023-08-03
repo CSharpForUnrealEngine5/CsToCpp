@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("AndroidFileServerRuntimeSettings.h")]
 public partial class UAndroidFileServerRuntimeSettings : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Enable Android FileServer for packaged builds and quick launch</summary>
 	public bool bEnablePlugin;
 	///<summary>Allow FileServer connection using network</summary>

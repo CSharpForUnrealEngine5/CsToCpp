@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("AbilitySystemTestAttributeSet.h")]
 public partial class UAbilitySystemTestAttributeSet : UAttributeSet {
+	public static UClass StaticClass() {return default;}
 	///<summary>NOTE ON MUTABLE:</summary>
 	public float MaxHealth;
 	///<summary>You can&#39;t make a GameplayEffect modify Health Directly (go through)</summary>

@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A simple static text widget.</summary>
 [CppInclude("Components/TextBlock.h")]
 public partial class UTextBlock : UTextLayoutWidget {
+	public static UClass StaticClass() {return default;}
 	///<summary>The text to display</summary>
 	public string Text;
 	///<summary>A bindable delegate to allow logic to drive the text of the widget</summary>

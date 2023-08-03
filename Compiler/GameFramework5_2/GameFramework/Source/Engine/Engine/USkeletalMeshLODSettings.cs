@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Engine/SkeletalMeshLODSettings.h")]
 public partial class USkeletalMeshLODSettings : UDataAsset {
+	public static UClass StaticClass() {return default;}
 	///<summary>Minimum Quality Level LOD to render. Can be overridden per mesh as well as set here for all mesh instances</summary>
 	public FPerQualityLevelInt MinQualityLevelLod;
 	///<summary>Minimum LOD to render. Can be overridden per mesh as well as set here for all mesh instances</summary>

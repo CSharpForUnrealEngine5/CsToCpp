@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Dynamic checkerboad actor</summary>
 [CppInclude("CameraCalibrationCheckerboard.h")]
 public partial class ACameraCalibrationCheckerboard : AActor {
+	public static UClass StaticClass() {return default;}
 	///<summary>Rebuilds the instanced components that make up this checkerboard</summary>
 	public  void Rebuild() {}
 	///<summary>Root component, gives the Actor a transform</summary>

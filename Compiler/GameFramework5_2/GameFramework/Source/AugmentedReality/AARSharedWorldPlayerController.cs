@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("ARSharedWorldPlayerController.h")]
 public partial class AARSharedWorldPlayerController : APlayerController {
+	public static UClass StaticClass() {return default;}
 	///<summary>Tells the server it is ready for receiving any shared world data</summary>
 	public  void ServerMarkReadyForReceiving() {}
 	///<summary>Used to setup the initial values and size the arrays (client)</summary>

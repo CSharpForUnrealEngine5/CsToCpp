@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>This class represents a render grid job, in other words, an entry (a row) of a render grid.</summary>
 [CppInclude("RenderGrid/RenderGrid.h")]
 public partial class URenderGridJob : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Gets the resolution that this job will be rendered in.</summary>
 	public  FIntPoint GetOutputResolution() { return default; }
 	///<summary>Gets the aspect ratio that this job will be rendered in.</summary>

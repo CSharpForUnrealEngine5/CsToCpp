@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Class representing a Compute Graph.</summary>
 [CppInclude("ComputeFramework/ComputeGraph.h")]
 public partial class UComputeGraph : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Kernels in the graph.</summary>
 	public TArray<UComputeKernel> KernelInvocations;
 	///<summary>Data interfaces in the graph.</summary>

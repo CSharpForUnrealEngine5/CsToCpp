@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Settings to tweak the performance of the editor</summary>
 [CppInclude("Editor/EditorPerformanceSettings.h")]
 public partial class UEditorPerformanceSettings : UDeveloperSettings {
+	public static UClass StaticClass() {return default;}
 	///<summary>When enabled, the application frame rate, memory and Unreal object count will be displayed in the main editor UI</summary>
 	public bool bShowFrameRateAndMemory;
 	///<summary>Lowers CPU usage when the editor is in the background and not the active application</summary>

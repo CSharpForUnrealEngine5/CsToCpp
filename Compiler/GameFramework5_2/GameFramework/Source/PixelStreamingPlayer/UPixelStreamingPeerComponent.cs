@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A blueprint representation of a Pixel Streaming Peer Connection. Should communicate with a Pixel Streaming Signalling Connection</summary>
 [CppInclude("PixelStreamingPeerComponent.h")]
 public partial class UPixelStreamingPeerComponent : UActorComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>Sets the RTC Configuration for this Peer Connection.</summary>
 	public  void SetConfig(FPixelStreamingRTCConfigWrapper Config) {}
 	///<summary>Creates an offer.</summary>

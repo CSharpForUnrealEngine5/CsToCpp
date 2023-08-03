@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Settings/SearchUserSettings.h")]
 public partial class USearchUserSettings : UDeveloperSettings {
+	public static UClass StaticClass() {return default;}
 	///<summary>Enable this to begin using search.</summary>
 	public bool bEnableSearch;
 	///<summary>IgnoredPaths</summary>

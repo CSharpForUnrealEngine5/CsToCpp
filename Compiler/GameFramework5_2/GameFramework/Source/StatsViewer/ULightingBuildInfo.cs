@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Statistics page for lighting.</summary>
 [CppInclude("LightingBuildInfo.h")]
 public partial class ULightingBuildInfo : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>The actor and/or object that is related to this info.</summary>
 	public TWeakObjectPtr<UObject> Object;
 	///<summary>The lighting time this object took.</summary>

@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Tool Properties</summary>
 [CppInclude("BakeRenderCaptureTool.h")]
 public partial class URenderCaptureProperties : UInteractiveToolPropertySet {
+	public static UClass StaticClass() {return default;}
 	///<summary>Resolution</summary>
 	public EBakeTextureResolution Resolution;
 	///<summary>Whether to generate a texture for the Base Color property</summary>

@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("CinePrestreamingRecorderSetting.h")]
 public partial class UCinePrestreamingRecorderSetting : UMoviePipelineOutputBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>* Specifies which directory the generated assets be placed in. Assumed to be relative to the root folder,</summary>
 	public FDirectoryPath PackageDirectory;
 	///<summary>Enable capture of virtual texture page requests.</summary>

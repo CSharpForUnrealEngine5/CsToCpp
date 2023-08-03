@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Skinned mesh component that supports bone skinned mesh rendering.</summary>
 [CppInclude("Components/SkinnedMeshComponent.h")]
 public partial class USkinnedMeshComponent : UMeshComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>SkeletalMesh</summary>
 	public USkeletalMesh SkeletalMesh;
 	///<summary>SkinnedAsset</summary>

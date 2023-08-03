@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("BehaviorTree/BlackboardComponent.h")]
 public partial class UBlackboardComponent : UActorComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>GetValueAsObject</summary>
 	public  UObject GetValueAsObject(string KeyName) { return default; }
 	///<summary>GetValueAsClass</summary>

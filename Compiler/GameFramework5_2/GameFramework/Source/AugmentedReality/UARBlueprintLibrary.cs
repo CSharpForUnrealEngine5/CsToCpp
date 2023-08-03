@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("ARBlueprintLibrary.h")]
 public partial class UARBlueprintLibrary : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>Checks if the current device can support AR</summary>
 	public static bool IsARSupported() { return default; }
 	///<summary>Begin a new Augmented Reality session. Subsequently, use the \c GetARSessionStatus() function to figure out the status of the session.</summary>

@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Rigs/RigHierarchy.h")]
 public partial class URigHierarchy : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Clears the whole hierarchy and removes all elements.</summary>
 	public  void Reset() {}
 	///<summary>Resets the hierarchy to the state of its default. This refers to the</summary>

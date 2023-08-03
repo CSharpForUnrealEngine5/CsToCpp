@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Implements the settings for garbage collection.</summary>
 [CppInclude("Engine/CoreSettings.h")]
 public partial class UGarbageCollectionSettings : UDeveloperSettings {
+	public static UClass StaticClass() {return default;}
 	///<summary>Time in seconds (game time) we should wait between purging object references to objects that are pending kill.</summary>
 	public float TimeBetweenPurgingPendingKillObjects;
 	///<summary>If enabled, streaming will be flushed each time garbage collection is triggered.</summary>

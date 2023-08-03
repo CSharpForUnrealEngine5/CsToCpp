@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Particles/Event/ParticleModuleEventReceiverSpawn.h")]
 public partial class UParticleModuleEventReceiverSpawn : UParticleModuleEventReceiverBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>The number of particles to spawn.</summary>
 	public FRawDistributionFloat SpawnCount;
 	///<summary>For Death-based event receiving, if this is true, it indicates that the</summary>

@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("MuCOE/Nodes/CustomizableObjectNodeMaterial.h")]
 public partial class UCustomizableObjectNodeMaterial : UCustomizableObjectNodeMaterialBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>Material</summary>
 	public UMaterialInterface Material;
 	///<summary>Set all Mateiral Texture Parameters to the specified mode. Each Texture Parameter Pin can override this mode.</summary>

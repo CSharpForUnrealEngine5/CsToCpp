@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("LiveLinkCameraController.h")]
 public partial class ULiveLinkCameraController : ULiveLinkControllerBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>ComponentToControl_DEPRECATED</summary>
 	public FComponentReference ComponentToControl_DEPRECATED;
 	///<summary>TransformData_DEPRECATED</summary>

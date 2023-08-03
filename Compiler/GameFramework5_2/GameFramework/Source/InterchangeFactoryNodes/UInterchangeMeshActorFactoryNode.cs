@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("InterchangeMeshActorFactoryNode.h")]
 public partial class UInterchangeMeshActorFactoryNode : UInterchangeActorFactoryNode {
+	public static UClass StaticClass() {return default;}
 	///<summary>Allow to retrieve the correspondence table between slot names and assigned materials for this object.</summary>
 	public  void GetSlotMaterialDependencies(TMap<string,string> OutMaterialDependencies) {}
 	///<summary>Allow to retrieve one Material dependency for a given slot of this object.</summary>

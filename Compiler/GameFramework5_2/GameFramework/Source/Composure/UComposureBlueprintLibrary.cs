@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("ComposureBlueprintLibrary.h")]
 public partial class UComposureBlueprintLibrary : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>Creates a Player Compositing Target which you can modify during gameplay.</summary>
 	public static UComposurePlayerCompositingTarget CreatePlayerCompositingTarget(UObject WorldContextObject) { return default; }
 	///<summary>Returns a non-centered projection matrix.</summary>

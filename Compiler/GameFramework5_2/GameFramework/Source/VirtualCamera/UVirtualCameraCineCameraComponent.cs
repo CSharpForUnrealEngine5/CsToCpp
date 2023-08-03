@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("VirtualCameraCineCameraComponent.h")]
 public partial class UVirtualCameraCineCameraComponent : UCineCameraComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>List of preset aperture options, aperture will always be one of these values</summary>
 	public TArray<float> ApertureOptions;
 	///<summary>List of preset focal length options, focal length will be one of these values, unless manually zooming</summary>

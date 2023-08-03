@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Basic switcher that toggles visibility on its children to only show one widget at a time. Activates visible widget if possible.</summary>
 [CppInclude("CommonVisibilitySwitcher.h")]
 public partial class UCommonVisibilitySwitcher : UOverlay {
+	public static UClass StaticClass() {return default;}
 	///<summary>SetActiveWidgetIndex</summary>
 	public  void SetActiveWidgetIndex(int Index) {}
 	///<summary>GetActiveWidgetIndex</summary>

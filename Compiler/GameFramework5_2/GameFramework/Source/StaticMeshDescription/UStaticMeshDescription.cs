@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A wrapper for MeshDescription, customized for static meshes</summary>
 [CppInclude("StaticMeshDescription.h")]
 public partial class UStaticMeshDescription : UMeshDescriptionBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>GetVertexInstanceUV</summary>
 	public  FVector2D GetVertexInstanceUV(FVertexInstanceID VertexInstanceID,int UVIndex/*=0*/) { return default; }
 	///<summary>SetVertexInstanceUV</summary>

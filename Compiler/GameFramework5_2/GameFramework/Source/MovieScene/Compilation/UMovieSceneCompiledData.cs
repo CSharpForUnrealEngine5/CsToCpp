@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Used for serialization only</summary>
 [CppInclude("Compilation/MovieSceneCompiledDataManager.h")]
 public partial class UMovieSceneCompiledData : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>352 Bytes</summary>
 	public FMovieSceneEvaluationTemplate EvaluationTemplate;
 	///<summary>352 Bytes</summary>

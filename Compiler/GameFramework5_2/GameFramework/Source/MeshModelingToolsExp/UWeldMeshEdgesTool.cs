@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Mesh Weld Edges Tool</summary>
 [CppInclude("WeldMeshEdgesTool.h")]
 public partial class UWeldMeshEdgesTool : USingleSelectionMeshEditingTool {
+	public static UClass StaticClass() {return default;}
 	///<summary>Settings</summary>
 	public UWeldMeshEdgesToolProperties Settings;
 	///<summary>PreviewCompute</summary>

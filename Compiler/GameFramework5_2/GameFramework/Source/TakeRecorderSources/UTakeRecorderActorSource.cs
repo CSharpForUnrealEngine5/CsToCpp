@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>This Take Recorder Source can record an actor from the World&#39;s properties.</summary>
 [CppInclude("TakeRecorderActorSource.h")]
 public partial class UTakeRecorderActorSource : UTakeRecorderSource {
+	public static UClass StaticClass() {return default;}
 	///<summary>Reference to the actor in the world that should have it&#39;s properties recorded.</summary>
 	public TSoftObjectPtr<AActor> Target;
 	///<summary>Should this actor be recorded as a Possessable in Sequencer? If so the resulting Object Binding</summary>

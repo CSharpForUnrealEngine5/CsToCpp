@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A function library that provides static/Blueprint functions associated with GoogleARCore session.</summary>
 [CppInclude("GoogleARCoreFunctionLibrary.h")]
 public partial class UGoogleARCoreSessionFunctionLibrary : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>CheckARCoreAvailability</summary>
 	public static void CheckARCoreAvailability(UObject WorldContextObject,FLatentActionInfo LatentInfo,EGoogleARCoreAvailability OutAvailability) {}
 	///<summary>InstallARCoreService</summary>

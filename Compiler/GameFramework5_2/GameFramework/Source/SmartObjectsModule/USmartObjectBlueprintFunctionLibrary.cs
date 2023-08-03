@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("SmartObjectBlueprintFunctionLibrary.h")]
 public partial class USmartObjectBlueprintFunctionLibrary : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>GetValueAsSOClaimHandle</summary>
 	public static FSmartObjectClaimHandle GetValueAsSOClaimHandle(UBlackboardComponent BlackboardComponent,string KeyName) { return default; }
 	///<summary>SetValueAsSOClaimHandle</summary>

@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Material output expression for writing single layer water volume material properties.</summary>
 [CppInclude("Materials/MaterialExpressionSingleLayerWaterMaterialOutput.h")]
 public partial class UMaterialExpressionSingleLayerWaterMaterialOutput : UMaterialExpressionCustomOutput {
+	public static UClass StaticClass() {return default;}
 	///<summary>Input for scattering coefficient describing how light scatter around and is absorbed. Valid range is [0,+inf[. Unit is 1/cm.</summary>
 	public FExpressionInput ScatteringCoefficients;
 	///<summary>Input for scattering coefficient describing how light bounce is absorbed. Valid range is [0,+inf[. Unit is 1/cm.</summary>

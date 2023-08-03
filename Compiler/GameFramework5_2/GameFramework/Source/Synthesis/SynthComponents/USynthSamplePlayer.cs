@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("SynthComponents/SynthComponentWaveTable.h")]
 public partial class USynthSamplePlayer : USynthComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>SoundWave</summary>
 	public USoundWave SoundWave;
 	///<summary>OnSampleLoaded</summary>

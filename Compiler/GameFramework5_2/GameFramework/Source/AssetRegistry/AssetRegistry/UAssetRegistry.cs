@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("AssetRegistry/IAssetRegistry.h")]
 public partial class UAssetRegistry : UInterface {
+	public static UClass StaticClass() {return default;}
 	///<summary>Does the given path contain assets, optionally also testing sub-paths?</summary>
 	public  bool HasAssets(string PackagePath,bool bRecursive/*=false*/) { return default; }
 	///<summary>Gets asset data for the assets in the package with the specified package name</summary>

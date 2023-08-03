@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("AssetTagsSubsystem.h")]
 public partial class UAssetTagsSubsystem : UEngineSubsystem {
+	public static UClass StaticClass() {return default;}
 	///<summary>Create a new collection with the given name and share type.</summary>
 	public  bool CreateCollection(string Name,ECollectionScriptingShareType ShareType) { return default; }
 	///<summary>Destroy the given collection.</summary>

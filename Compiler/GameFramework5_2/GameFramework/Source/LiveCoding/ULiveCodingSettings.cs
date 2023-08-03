@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("LiveCodingSettings.h")]
 public partial class ULiveCodingSettings : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>bEnabled</summary>
 	public bool bEnabled;
 	///<summary>Startup</summary>

@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Settings for the Asset Management framework, which can be used to discover, load, and audit game-specific asset types</summary>
 [CppInclude("RemoteSessionTypes.h")]
 public partial class URemoteSessionSettings : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Port that the host will listen on</summary>
 	public int HostPort;
 	///<summary>Time until a connection will timeout</summary>

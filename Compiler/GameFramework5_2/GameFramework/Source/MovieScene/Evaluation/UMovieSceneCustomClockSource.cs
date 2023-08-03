@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Evaluation/IMovieSceneCustomClockSource.h")]
 public partial class UMovieSceneCustomClockSource : UInterface {
+	public static UClass StaticClass() {return default;}
 	///<summary>OnTick</summary>
 	public  void OnTick(float DeltaSeconds,float InPlayRate) {}
 	///<summary>OnStartPlaying</summary>

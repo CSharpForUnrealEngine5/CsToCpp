@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Stores user settings for a game (for example graphics and sound settings), with the ability to save and load to and from a file.</summary>
 [CppInclude("GameFramework/GameUserSettings.h")]
 public partial class UGameUserSettings : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Applies all current user settings to the game and saves to permanent storage (e.g. file), optionally checking for command line overrides.</summary>
 	public  void ApplySettings(bool bCheckForCommandLineOverrides) {}
 	///<summary>ApplyNonResolutionSettings</summary>

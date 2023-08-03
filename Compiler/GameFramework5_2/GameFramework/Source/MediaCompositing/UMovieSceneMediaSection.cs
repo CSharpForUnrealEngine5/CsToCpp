@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Implements a movie scene section for media playback.</summary>
 [CppInclude("MovieSceneMediaSection.h")]
 public partial class UMovieSceneMediaSection : UMovieSceneSection {
+	public static UClass StaticClass() {return default;}
 	///<summary>The source to play with this video track if MediaSourceProxy is not available.</summary>
 	public UMediaSource MediaSource;
 	///<summary>The index to pass to MediaSourceProxy to get the media source.</summary>

@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>PCG node that creates a spline presentation from the input points data, with optional tangents</summary>
 [CppInclude("Elements/PCGCreateSpline.h")]
 public partial class UPCGCreateSplineSettings : UPCGSettings {
+	public static UClass StaticClass() {return default;}
 	///<summary>Mode</summary>
 	public EPCGCreateSplineMode Mode;
 	///<summary>bClosedLoop</summary>

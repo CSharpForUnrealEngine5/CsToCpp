@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("ImportTestFunctions/AnimationImportTestFunctions.h")]
 public partial class UAnimationImportTestFunctions : UImportTestFunctionsBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>Check whether the expected number of anim sequences are imported</summary>
 	public static FInterchangeTestFunctionResult CheckImportedAnimSequenceCount(TArray<UAnimSequence> AnimSequences,int ExpectedNumberOfImportedAnimSequences) { return default; }
 	///<summary>Check whether the animation length (second) is as expected</summary>

@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("GroomToMeshTool.h")]
 public partial class UGroomToMeshTool : UInteractiveTool {
+	public static UClass StaticClass() {return default;}
 	///<summary>Settings</summary>
 	public UGroomToMeshToolProperties Settings;
 	///<summary>PreviewMesh</summary>

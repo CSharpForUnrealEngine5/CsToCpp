@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Particles/ParticleEmitter.h")]
 public partial class UParticleEmitter : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>The name of the emitter.</summary>
 	public string EmitterName;
 	///<summary>SubUVDataOffset</summary>

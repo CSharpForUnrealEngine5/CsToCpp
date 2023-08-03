@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Mesh Inspector Tool for visualizing mesh information</summary>
 [CppInclude("Physics/PhysicsInspectorTool.h")]
 public partial class UPhysicsInspectorTool : UMultiSelectionMeshEditingTool {
+	public static UClass StaticClass() {return default;}
 	///<summary>VizSettings</summary>
 	public UCollisionGeometryVisualizationProperties VizSettings;
 	///<summary>ObjectData</summary>

@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Standard properties for a Brush-type Tool</summary>
 [CppInclude("BaseTools/BaseBrushTool.h")]
 public partial class UBrushBaseProperties : UInteractiveToolPropertySet {
+	public static UClass StaticClass() {return default;}
 	///<summary>Relative size of brush</summary>
 	public float BrushSize;
 	///<summary>If true, ignore relative Brush Size and use explicit world Radius</summary>

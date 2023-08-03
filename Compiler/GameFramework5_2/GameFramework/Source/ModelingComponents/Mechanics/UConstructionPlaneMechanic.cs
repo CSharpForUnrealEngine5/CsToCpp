@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>UConstructionPlaneMechanic implements an interaction in which a 3D plane can be</summary>
 [CppInclude("Mechanics/ConstructionPlaneMechanic.h")]
 public partial class UConstructionPlaneMechanic : UInteractionMechanic {
+	public static UClass StaticClass() {return default;}
 	///<summary>PlaneTransformGizmo</summary>
 	public UCombinedTransformGizmo PlaneTransformGizmo;
 	///<summary>PlaneTransformProxy</summary>

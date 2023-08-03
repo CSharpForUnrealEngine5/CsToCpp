@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("MoviePipelineAntiAliasingSetting.h")]
 public partial class UMoviePipelineAntiAliasingSetting : UMoviePipelineSetting {
+	public static UClass StaticClass() {return default;}
 	///<summary>How many frames should we accumulate together before contributing to one overall sample. This lets you</summary>
 	public int SpatialSampleCount;
 	///<summary>The number of frames we should combine together to produce each output frame. This blends the</summary>

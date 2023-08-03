@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Function library containing methods that should be hoisted onto UMovieScenePropertyTrack for scripting</summary>
 [CppInclude("ExtensionLibraries/MovieScenePropertyTrackExtensions.h")]
 public partial class UMovieScenePropertyTrackExtensions : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>Set this track&#39;s property name and path</summary>
 	public static void SetPropertyNameAndPath(UMovieScenePropertyTrack Track,string InPropertyName,string InPropertyPath) {}
 	///<summary>Get this track&#39;s property name</summary>

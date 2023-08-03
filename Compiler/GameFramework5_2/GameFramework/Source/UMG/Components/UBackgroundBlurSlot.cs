@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>The Slot for the UBackgroundBlurSlot, contains the widget displayed in a BackgroundBlur&#39;s single slot</summary>
 [CppInclude("Components/BackgroundBlurSlot.h")]
 public partial class UBackgroundBlurSlot : UPanelSlot {
+	public static UClass StaticClass() {return default;}
 	///<summary>SetPadding</summary>
 	public  void SetPadding(FMargin InPadding) {}
 	///<summary>SetHorizontalAlignment</summary>

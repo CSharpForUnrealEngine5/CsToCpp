@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A component used to inspect sparse volume textures.</summary>
 [CppInclude("SparseVolumeTexture/SparseVolumeTextureViewerComponent.h")]
 public partial class USparseVolumeTextureViewerComponent : UPrimitiveComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>SparseVolumeTexturePreview</summary>
 	public USparseVolumeTexture SparseVolumeTexturePreview;
 	///<summary>bAnimate</summary>

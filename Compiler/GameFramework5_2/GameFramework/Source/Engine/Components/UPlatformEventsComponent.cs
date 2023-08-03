@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Component to handle receiving notifications from the OS about platform events.</summary>
 [CppInclude("Components/PlatformEventsComponent.h")]
 public partial class UPlatformEventsComponent : UActorComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>Check whether a convertible laptop is laptop mode.</summary>
 	public  bool IsInLaptopMode() { return default; }
 	///<summary>Check whether a convertible laptop is laptop mode.</summary>

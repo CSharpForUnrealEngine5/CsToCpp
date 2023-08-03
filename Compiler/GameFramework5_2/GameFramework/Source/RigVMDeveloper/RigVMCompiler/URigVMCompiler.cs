@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("RigVMCompiler/RigVMCompiler.h")]
 public partial class URigVMCompiler : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Settings</summary>
 	public FRigVMCompileSettings Settings;
 	///<summary>Compile</summary>

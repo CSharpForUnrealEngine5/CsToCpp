@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("DrawPolygonTool.h")]
 public partial class UDrawPolygonToolSnapProperties : UInteractiveToolPropertySet {
+	public static UClass StaticClass() {return default;}
 	///<summary>Enables additional snapping controls. If false, all snapping is disabled.</summary>
 	public bool bEnableSnapping;
 	///<summary>bSnapToWorldGrid</summary>

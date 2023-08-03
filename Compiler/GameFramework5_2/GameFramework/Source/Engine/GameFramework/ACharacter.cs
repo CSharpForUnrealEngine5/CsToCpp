@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Characters are Pawns that have a mesh, collision, and built-in movement logic.</summary>
 [CppInclude("GameFramework/Character.h")]
 public partial class ACharacter : APawn {
+	public static UClass StaticClass() {return default;}
 	///<summary>The main skeletal mesh associated with this Character (optional sub-object).</summary>
 	public USkeletalMeshComponent Mesh;
 	///<summary>Movement component used for movement logic in various movement modes (walking, falling, etc), containing relevant settings and functions to control movement.</summary>

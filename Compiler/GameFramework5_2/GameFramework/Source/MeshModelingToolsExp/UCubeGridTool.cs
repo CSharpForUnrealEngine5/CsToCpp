@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Tool that allows for blocky boolean operations on an orientable power-of-two grid.</summary>
 [CppInclude("CubeGridTool.h")]
 public partial class UCubeGridTool : UInteractiveTool {
+	public static UClass StaticClass() {return default;}
 	///<summary>GridGizmo</summary>
 	public UCombinedTransformGizmo GridGizmo;
 	///<summary>GridGizmoAlignmentMechanic</summary>

@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Container for agents that exist in the world. Ticks the agents. Finds avatars for the agents.</summary>
 [CppInclude("Sessions/MLAdapterSession.h")]
 public partial class UMLAdapterSession : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>CachedGameMode</summary>
 	public AGameModeBase CachedGameMode;
 	///<summary>CachedWorld</summary>

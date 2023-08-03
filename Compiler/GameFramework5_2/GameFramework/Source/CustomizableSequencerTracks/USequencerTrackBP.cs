@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("SequencerTrackBP.h")]
 public partial class USequencerTrackBP : UMovieSceneNameableTrack {
+	public static UClass StaticClass() {return default;}
 	///<summary>bSupportsMultipleRows</summary>
 	public bool bSupportsMultipleRows;
 	///<summary>bSupportsBlending</summary>

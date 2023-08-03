@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Rendering settings.</summary>
 [CppInclude("Engine/RendererSettings.h")]
 public partial class URendererSettings : UDeveloperSettings {
+	public static UClass StaticClass() {return default;}
 	///<summary>The shading path to use on mobile platforms. Changing this setting requires restarting the editor.</summary>
 	public EMobileShadingPath MobileShadingPath;
 	///<summary>Whether to enable GPUScene on mobile. GPUScene is required for mesh auto-instancing. Changing this setting requires restarting the editor.</summary>

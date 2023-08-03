@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("InterchangeActorFactoryNode.h")]
 public partial class UInterchangeActorFactoryNode : UInterchangeFactoryBaseNode {
+	public static UClass StaticClass() {return default;}
 	///<summary>GetCustomGlobalTransform</summary>
 	public  bool GetCustomGlobalTransform(FTransform AttributeValue) { return default; }
 	///<summary>SetCustomGlobalTransform</summary>

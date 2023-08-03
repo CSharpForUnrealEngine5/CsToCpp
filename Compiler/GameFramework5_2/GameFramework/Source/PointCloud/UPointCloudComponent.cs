@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Component for rendering a point cloud</summary>
 [CppInclude("PointCloudComponent.h")]
 public partial class UPointCloudComponent : UMeshComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>If true, each tick the component will render its point cloud</summary>
 	public bool bIsVisible;
 	///<summary>If &gt; 0, will automatically update the point cloud data from AR system based on this interval (sec)</summary>

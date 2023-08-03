@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("RuntimeAssetCacheBuilders.h")]
 public partial class URuntimeAssetCacheBuilder_ObjectBase : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Call this to get the asset named AssetName from the runtime asset cache.</summary>
 	public  void GetFromCacheAsync(FOnAssetCacheComplete OnComplete) {}
 	///<summary>GetFromCacheAsyncComplete</summary>

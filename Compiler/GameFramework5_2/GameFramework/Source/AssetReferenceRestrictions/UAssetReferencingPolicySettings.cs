@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Settings for the Asset Referencing Policy, these settings are used to determine which plugins and game folders can reference content from each other</summary>
 [CppInclude("AssetReferencingPolicySettings.h")]
 public partial class UAssetReferencingPolicySettings : UDeveloperSettings {
+	public static UClass StaticClass() {return default;}
 	///<summary>Settings/rules for engine plugins</summary>
 	public FARPDomainSettingsForPlugins EnginePlugins;
 	///<summary>Settings/rules for project plugins</summary>

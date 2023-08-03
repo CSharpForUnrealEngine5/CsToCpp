@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Base class of the heads-up display. This has a canvas and a debug canvas on which primitives can be drawn.</summary>
 [CppInclude("GameFramework/HUD.h")]
 public partial class AHUD : AActor {
+	public static UClass StaticClass() {return default;}
 	///<summary>PlayerController which owns this HUD.</summary>
 	public APlayerController PlayerOwner;
 	///<summary>Tells whether the game was paused due to lost focus</summary>

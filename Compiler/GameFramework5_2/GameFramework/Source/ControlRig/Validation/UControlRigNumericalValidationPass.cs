@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Used to perform a numerical comparison of the poses</summary>
 [CppInclude("Validation/ControlRigNumericalValidationPass.h")]
 public partial class UControlRigNumericalValidationPass : UControlRigValidationPass {
+	public static UClass StaticClass() {return default;}
 	///<summary>If set to true the pass will validate the poses of all bones</summary>
 	public bool bCheckControls;
 	///<summary>If set to true the pass will validate the poses of all bones</summary>

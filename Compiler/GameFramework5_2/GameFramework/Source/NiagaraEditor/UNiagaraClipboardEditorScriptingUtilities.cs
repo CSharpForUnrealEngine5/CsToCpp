@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("NiagaraClipboard.h")]
 public partial class UNiagaraClipboardEditorScriptingUtilities : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>TryGetInputByName</summary>
 	public static void TryGetInputByName(TArray<UNiagaraClipboardFunctionInput> InInputs,string InInputName,bool bOutSucceeded,UNiagaraClipboardFunctionInput OutInput) {}
 	///<summary>TryGetLocalValueAsFloat</summary>

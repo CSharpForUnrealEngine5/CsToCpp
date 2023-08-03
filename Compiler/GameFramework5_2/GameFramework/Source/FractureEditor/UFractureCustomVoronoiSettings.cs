@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("FractureToolCustomVoronoi.h")]
 public partial class UFractureCustomVoronoiSettings : UFractureToolSettings {
+	public static UClass StaticClass() {return default;}
 	///<summary>Method to generate next group of voronoi sites</summary>
 	public EVoronoiPattern VoronoiPattern;
 	///<summary>Offset point samples in the vertex normal directions</summary>

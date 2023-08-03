@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>* Base class for Blueprint based Tasks.</summary>
 [CppInclude("Blueprint/StateTreeTaskBlueprintBase.h")]
 public partial class UStateTreeTaskBlueprintBase : UStateTreeNodeBlueprintBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>ReceiveEnterState</summary>
 	public  EStateTreeRunStatus ReceiveEnterState(FStateTreeTransitionResult Transition) { return default; }
 	///<summary>ReceiveExitState</summary>

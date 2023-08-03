@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("AsyncActionLoadPrimaryAsset.h")]
 public partial class UAsyncActionChangePrimaryAssetBundles : UAsyncActionLoadPrimaryAssetBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>Change the bundle state of all assets that match OldBundles to instead contain NewBundles.</summary>
 	public static UAsyncActionChangePrimaryAssetBundles AsyncChangeBundleStateForMatchingPrimaryAssets(UObject WorldContextObject,TArray<string> NewBundles,TArray<string> OldBundles) { return default; }
 	///<summary>Change the bundle state of specific assets in PrimaryAssetList.</summary>

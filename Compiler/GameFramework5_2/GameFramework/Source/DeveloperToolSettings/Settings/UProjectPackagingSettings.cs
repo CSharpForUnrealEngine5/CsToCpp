@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Implements the Editor&#39;s user settings.</summary>
 [CppInclude("Settings/ProjectPackagingSettings.h")]
 public partial class UProjectPackagingSettings : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Specifies whether to build the game executable during packaging.</summary>
 	public EProjectPackagingBuild Build;
 	///<summary>The build configuration for which the project is packaged.</summary>

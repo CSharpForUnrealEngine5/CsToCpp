@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>UPlayerViewportCompositingOutput</summary>
 [CppInclude("CompositingElements/PlayerViewportCompositingOutput.h")]
 public partial class UPlayerViewportCompositingOutput : UColorConverterOutputPass {
+	public static UClass StaticClass() {return default;}
 	///<summary>PlayerIndex</summary>
 	public int PlayerIndex;
 	///<summary>Enable or disable the tone curve (and expand gamut) when the tonemap pass settings are passed down to the main viewport post-processing.</summary>

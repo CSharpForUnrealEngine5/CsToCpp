@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Editable text box widget</summary>
 [CppInclude("Components/MultiLineEditableText.h")]
 public partial class UMultiLineEditableText : UTextLayoutWidget {
+	public static UClass StaticClass() {return default;}
 	///<summary>FOnMultiLineEditableTextChangedEvent</summary>
 	public  void FOnMultiLineEditableTextChangedEvent(string Text) {}
 	///<summary>FOnMultiLineEditableTextCommittedEvent</summary>

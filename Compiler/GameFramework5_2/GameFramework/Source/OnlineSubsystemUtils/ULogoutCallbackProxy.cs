@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("LogoutCallbackProxy.h")]
 public partial class ULogoutCallbackProxy : UBlueprintAsyncActionBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>Called when the logout completed successfully</summary>
 	public FOnlineLogoutResult OnSuccess;
 	///<summary>Called when the logout completed unsuccessfully</summary>

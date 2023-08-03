@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("LandscapeGizmoActiveActor.h")]
 public partial class ALandscapeGizmoActiveActor : ALandscapeGizmoActor {
+	public static UClass StaticClass() {return default;}
 	///<summary>DataType</summary>
 	public ELandscapeGizmoType DataType;
 	///<summary>GizmoTexture</summary>

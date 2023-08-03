@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("MuCO/CustomizableObjectSystem.h")]
 public partial class UCustomizableObjectSystem : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Get the singleton object. It will be created if it doesn&#39;t exist yet.</summary>
 	public static UCustomizableObjectSystem GetInstance() { return default; }
 	///<summary>PendingReleaseSkeletalMesh</summary>

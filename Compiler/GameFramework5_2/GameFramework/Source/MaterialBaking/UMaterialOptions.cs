@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Options object to define what and how a material should be baked out</summary>
 [CppInclude("MaterialOptions.h")]
 public partial class UMaterialOptions : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Properties which are supposed to be baked out for the material(s)</summary>
 	public TArray<FPropertyEntry> Properties;
 	///<summary>Size of the final texture(s) containing the baked out property data</summary>

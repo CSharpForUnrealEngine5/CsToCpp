@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("AI/AITask_UseGameplayInteraction.h")]
 public partial class UAITask_UseGameplayInteraction : UAITask {
+	public static UClass StaticClass() {return default;}
 	///<summary>UseClaimedGameplayInteractionSmartObject</summary>
 	public static UAITask_UseGameplayInteraction UseClaimedGameplayInteractionSmartObject(AAIController Controller,FSmartObjectClaimHandle ClaimHandle,bool bLockAILogic/*=true*/) { return default; }
 	///<summary>RequestAbort</summary>

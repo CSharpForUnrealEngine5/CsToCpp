@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Engine/TimelineTemplate.h")]
 public partial class UTimelineTemplate : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Length of this timeline</summary>
 	public float TimelineLength;
 	///<summary>How we want the timeline to determine its own length (e.g. specified length, last keyframe)</summary>

@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("BlueprintGameplayTagLibrary.h")]
 public partial class UBlueprintGameplayTagLibrary : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>Determine if TagOne matches against TagTwo</summary>
 	public static bool MatchesTag(FGameplayTag TagOne,FGameplayTag TagTwo,bool bExactMatch) { return default; }
 	///<summary>Determine if TagOne matches against any tag in OtherContainer</summary>

@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>UDatasmithCustomActorElement</summary>
 [CppInclude("ObjectElements/DatasmithUObjectElements.h")]
 public partial class UDatasmithCustomActorElement : UDatasmithActorElement {
+	public static UClass StaticClass() {return default;}
 	///<summary>The blueprint to instantiate.</summary>
 	public  string GetClassOrPathName() { return default; }
 	///<summary>SetClassOrPathName</summary>

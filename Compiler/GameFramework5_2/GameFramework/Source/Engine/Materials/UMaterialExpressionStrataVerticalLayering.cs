@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Materials/MaterialExpressionStrata.h")]
 public partial class UMaterialExpressionStrataVerticalLayering : UMaterialExpressionStrataBSDF {
+	public static UClass StaticClass() {return default;}
 	///<summary>Substrate material layer on top of the Base material layer</summary>
 	public FExpressionInput Top;
 	///<summary>Substrate material layer below the Top material layer</summary>

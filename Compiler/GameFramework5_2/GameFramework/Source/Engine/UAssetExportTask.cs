@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Contains data for a group of assets to export</summary>
 [CppInclude("AssetExportTask.h")]
 public partial class UAssetExportTask : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Asset to export</summary>
 	public UObject Object;
 	///<summary>Optional exporter, otherwise it will be determined automatically</summary>

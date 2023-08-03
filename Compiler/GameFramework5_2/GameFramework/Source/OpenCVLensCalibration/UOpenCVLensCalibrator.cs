@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("OpenCVLensCalibrator.h")]
 public partial class UOpenCVLensCalibrator : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>@param BoardWidth The width of the checkerboard used to calibrate the camera counted as number of inner edges.</summary>
 	public static UOpenCVLensCalibrator CreateCalibrator(int BoardWidth/*=7*/,int BoardHeight/*=5*/,float SquareSize/*=3.0f*/,bool bUseFisheyeModel/*=false*/) { return default; }
 	///<summary>Feeds a render target to the calibration. It must contain a checkerboard somewhere in the image.</summary>

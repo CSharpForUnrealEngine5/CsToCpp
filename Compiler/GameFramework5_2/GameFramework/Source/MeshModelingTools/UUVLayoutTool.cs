@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>The level editor version of the UV layout tool.</summary>
 [CppInclude("UVLayoutTool.h")]
 public partial class UUVLayoutTool : UMultiSelectionMeshEditingTool {
+	public static UClass StaticClass() {return default;}
 	///<summary>UVChannelProperties</summary>
 	public UMeshUVChannelProperties UVChannelProperties;
 	///<summary>BasicProperties</summary>

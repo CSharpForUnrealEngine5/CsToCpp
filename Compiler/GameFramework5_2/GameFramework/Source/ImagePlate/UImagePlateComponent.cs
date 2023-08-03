@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A 2d plate that will be rendered always facing the camera.</summary>
 [CppInclude("ImagePlateComponent.h")]
 public partial class UImagePlateComponent : UPrimitiveComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>Add an image plate to this actor</summary>
 	public  void SetImagePlate(FImagePlateParameters Plate) {}
 	///<summary>Get this actor&#39;s image plates</summary>

@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>The nearest neighbor model.</summary>
 [CppInclude("NearestNeighborModel.h")]
 public partial class UNearestNeighborModel : UMLDeformerMorphModel {
+	public static UClass StaticClass() {return default;}
 	///<summary>GetNumParts</summary>
 	public  int GetNumParts() { return default; }
 	///<summary>GetPartNumVerts</summary>

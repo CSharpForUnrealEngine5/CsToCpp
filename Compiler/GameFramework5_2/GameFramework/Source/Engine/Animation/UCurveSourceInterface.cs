@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Animation/CurveSourceInterface.h")]
 public partial class UCurveSourceInterface : UInterface {
+	public static UClass StaticClass() {return default;}
 	///<summary>Get the name that this curve source can be bound to by.</summary>
 	public  string GetBindingName() { return default; }
 	///<summary>Get the value for a specified curve</summary>

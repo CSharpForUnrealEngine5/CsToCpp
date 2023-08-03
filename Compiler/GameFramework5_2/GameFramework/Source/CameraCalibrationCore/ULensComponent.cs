@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Component for applying a post-process lens distortion effect to a CineCameraComponent on the same actor</summary>
 [CppInclude("LensComponent.h")]
 public partial class ULensComponent : UActorComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>Get the LensFile picker used by this component</summary>
 	public  FLensFilePicker GetLensFilePicker() { return default; }
 	///<summary>Get the LensFile used by this component</summary>

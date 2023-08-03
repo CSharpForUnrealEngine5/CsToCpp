@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A mini map to preview the world in world partition window. (editor-only)</summary>
 [CppInclude("WorldPartition/WorldPartitionMiniMap.h")]
 public partial class AWorldPartitionMiniMap : AInfo {
+	public static UClass StaticClass() {return default;}
 	///<summary>WorldBounds for MinMapTexture</summary>
 	public FBox MiniMapWorldBounds;
 	///<summary>UVOffset used to setup Virtual Texture</summary>

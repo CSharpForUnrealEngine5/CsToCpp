@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("WorldPartition/DataLayer/DataLayerSubsystem.h")]
 public partial class UDataLayerSubsystem : UWorldSubsystem {
+	public static UClass StaticClass() {return default;}
 	///<summary>Find a Data Layer by its asset.</summary>
 	public  UDataLayerInstance GetDataLayerInstanceFromAsset(UDataLayerAsset InDataLayerAsset) { return default; }
 	///<summary>GetDataLayerInstanceRuntimeState</summary>

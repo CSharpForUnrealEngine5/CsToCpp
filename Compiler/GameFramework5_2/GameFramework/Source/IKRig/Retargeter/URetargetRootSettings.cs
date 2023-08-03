@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Retargeter/IKRetargeter.h")]
 public partial class URetargetRootSettings : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>The settings used to control the motion of the target root bone.</summary>
 	public FTargetRootSettings Settings;
 	///<summary>Deprecated properties from before FTargetRootSettings / profile refactor</summary>

@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A 3D transform section</summary>
 [CppInclude("Sections/MovieScene3DTransformSection.h")]
 public partial class UMovieScene3DTransformSection : UMovieSceneSection {
+	public static UClass StaticClass() {return default;}
 	///<summary>TransformMask</summary>
 	public FMovieSceneTransformMask TransformMask;
 	///<summary>Translation curves</summary>

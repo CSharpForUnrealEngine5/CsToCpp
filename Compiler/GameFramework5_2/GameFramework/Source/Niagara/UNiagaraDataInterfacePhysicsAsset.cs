@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Data Interface for interacting with PhysicsAssets</summary>
 [CppInclude("NiagaraDataInterfacePhysicsAsset.h")]
 public partial class UNiagaraDataInterfacePhysicsAsset : UNiagaraDataInterface {
+	public static UClass StaticClass() {return default;}
 	///<summary>Skeletal Mesh from which the Physics Asset will be found.</summary>
 	public UPhysicsAsset DefaultSource;
 	///<summary>The source actor from which to sample</summary>

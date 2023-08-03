@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Materials/MaterialExpressionDistanceFieldApproxAO.h")]
 public partial class UMaterialExpressionDistanceFieldApproxAO : UMaterialExpression {
+	public static UClass StaticClass() {return default;}
 	///<summary>Defaults to current world position if not specified</summary>
 	public FExpressionInput Position;
 	///<summary>Defaults to current world normal if not specified</summary>

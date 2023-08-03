@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A material expression that computes a left-to-right bilinear value ramp.</summary>
 [CppInclude("MaterialX/MaterialExpressionRampLeftRight.h")]
 public partial class UMaterialExpressionRampLeftRight : UMaterialExpression {
+	public static UClass StaticClass() {return default;}
 	///<summary>Defaults to &#39;ConstCoordinate&#39; if not specified</summary>
 	public FExpressionInput Coordinates;
 	///<summary>A</summary>

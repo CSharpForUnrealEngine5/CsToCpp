@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Material Instances may be used to change the appearance of a material without incurring an expensive recompilation of the material.</summary>
 [CppInclude("Materials/MaterialInstanceConstant.h")]
 public partial class UMaterialInstanceConstant : UMaterialInstance {
+	public static UClass StaticClass() {return default;}
 	///<summary>Unique ID for this material instance&#39;s parameter set</summary>
 	public FGuid ParameterStateId;
 	///<summary>Physical material mask to use for this graphics material. Used for sounds, effects etc.</summary>

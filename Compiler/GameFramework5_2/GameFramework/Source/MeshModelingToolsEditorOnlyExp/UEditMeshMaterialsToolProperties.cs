@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("EditMeshMaterialsTool.h")]
 public partial class UEditMeshMaterialsToolProperties : UInteractiveToolPropertySet {
+	public static UClass StaticClass() {return default;}
 	///<summary>ActiveMaterial</summary>
 	public string ActiveMaterial;
 	///<summary>GetMaterialNamesFunc</summary>

@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Settings/EditorProjectSettings.h")]
 public partial class UDDCProjectSettings : UDeveloperSettings {
+	public static UClass StaticClass() {return default;}
 	///<summary>EnableWarnings</summary>
 	public bool EnableWarnings;
 	///<summary>RecommendEveryoneSetupAGlobalLocalDDCPath</summary>

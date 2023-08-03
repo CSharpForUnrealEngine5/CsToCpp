@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("DatasmithRuntimeBlueprintLibrary.h")]
 public partial class UDatasmithRuntimeLibrary : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>Load a file using the Datasmith translator associated with it</summary>
 	public static bool LoadFile(ADatasmithRuntimeActor DatasmithRuntimeActor,string FilePath) { return default; }
 	///<summary>ResetActor</summary>

@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Holds initial, asset level config for clothing actors. // Hiding categories that will be used in the future</summary>
 [CppInclude("ChaosCloth/ChaosClothConfig.h")]
 public partial class UChaosClothConfig : UClothConfigCommon {
+	public static UClass StaticClass() {return default;}
 	///<summary>How cloth particle mass is determined</summary>
 	public EClothMassMode MassMode;
 	///<summary>The value used when the Mass Mode is set to Uniform Mass.</summary>

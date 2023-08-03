@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("MeshDescriptionBase.h")]
 public partial class UMeshDescriptionBase : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Empty the mesh description</summary>
 	public  void Empty() {}
 	///<summary>Return whether the mesh description is empty</summary>

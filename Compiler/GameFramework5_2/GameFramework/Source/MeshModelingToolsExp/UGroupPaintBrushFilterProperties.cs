@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("MeshGroupPaintTool.h")]
 public partial class UGroupPaintBrushFilterProperties : UInteractiveToolPropertySet {
+	public static UClass StaticClass() {return default;}
 	///<summary>Primary Brush Mode //UPROPERTY(EditAnywhere, Category = Brush2, meta = (DisplayName = &quot;Brush Type&quot;))</summary>
 	public EMeshGroupPaintBrushType PrimaryBrushType;
 	///<summary>SubToolType</summary>

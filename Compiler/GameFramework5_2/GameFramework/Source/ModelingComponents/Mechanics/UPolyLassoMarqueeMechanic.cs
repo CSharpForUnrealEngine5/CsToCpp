@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>* Mechanic for a PolyLasso &quot;marquee&quot; selection. It creates and maintains the 2D PolyLasso associated with a mouse drag.</summary>
 [CppInclude("Mechanics/PolyLassoMarqueeMechanic.h")]
 public partial class UPolyLassoMarqueeMechanic : UInteractionMechanic {
+	public static UClass StaticClass() {return default;}
 	///<summary>Tolerance for PolyLasso points and closure test</summary>
 	public float SpacingTolerance;
 	///<summary>Thickness of the 2D PolyLasso drawing path</summary>

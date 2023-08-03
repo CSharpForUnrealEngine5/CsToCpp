@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Implements settings for the graph editor.</summary>
 [CppInclude("GraphEditorSettings.h")]
 public partial class UGraphEditorSettings : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>The visual styling to use for graph editor pins (in Blueprints, materials, etc...)</summary>
 	public EBlueprintPinStyleType DataPinStyle;
 	///<summary>Switch between using the right and middle mouse button for panning (defaults to right)</summary>

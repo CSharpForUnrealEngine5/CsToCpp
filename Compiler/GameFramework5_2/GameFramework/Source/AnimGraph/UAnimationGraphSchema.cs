@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("AnimationGraphSchema.h")]
 public partial class UAnimationGraphSchema : UEdGraphSchema_K2 {
+	public static UClass StaticClass() {return default;}
 	///<summary>Common PinNames</summary>
 	public string PN_SequenceName;
 	///<summary>PC_Object+PSC_Sequence</summary>

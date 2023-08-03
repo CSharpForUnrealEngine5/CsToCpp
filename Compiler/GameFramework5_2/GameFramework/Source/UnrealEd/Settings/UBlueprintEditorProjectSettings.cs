@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Settings/BlueprintEditorProjectSettings.h")]
 public partial class UBlueprintEditorProjectSettings : UDeveloperSettings {
+	public static UClass StaticClass() {return default;}
 	///<summary>bForceAllDependenciesToRecompile</summary>
 	public bool bForceAllDependenciesToRecompile;
 	///<summary>If enabled, the editor will load packages to look for soft references to actors when deleting/renaming them. This can be slow in large projects so disable this to improve performance but increase the chance of breaking blueprints/sequences that use soft actor references</summary>

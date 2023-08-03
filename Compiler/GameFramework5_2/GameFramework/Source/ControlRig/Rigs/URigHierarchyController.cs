@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Rigs/RigHierarchyController.h")]
 public partial class URigHierarchyController : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Returns the hierarchy currently linked to this controller</summary>
 	public  URigHierarchy GetHierarchy() { return default; }
 	///<summary>Sets the hierarchy currently linked to this controller</summary>

@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Data/PCGDifferenceData.h")]
 public partial class UPCGDifferenceData : UPCGSpatialDataWithPointCache {
+	public static UClass StaticClass() {return default;}
 	///<summary>Initialize</summary>
 	public  void Initialize(UPCGSpatialData InData) {}
 	///<summary>AddDifference</summary>

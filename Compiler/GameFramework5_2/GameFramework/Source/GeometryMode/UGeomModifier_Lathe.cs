@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("GeomModifier_Lathe.h")]
 public partial class UGeomModifier_Lathe : UGeomModifier_Edit {
+	public static UClass StaticClass() {return default;}
 	///<summary>TotalSegments</summary>
 	public int TotalSegments;
 	///<summary>Segments</summary>

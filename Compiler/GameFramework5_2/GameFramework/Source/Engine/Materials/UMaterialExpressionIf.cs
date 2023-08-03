@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Materials/MaterialExpressionIf.h")]
 public partial class UMaterialExpressionIf : UMaterialExpression {
+	public static UClass StaticClass() {return default;}
 	///<summary>A</summary>
 	public FExpressionInput A;
 	///<summary>Defaults to &#39;ConstB&#39; if not specified</summary>

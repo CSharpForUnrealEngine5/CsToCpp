@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Wrapped static conversion functions from the UsdUtilities module, so that they can be used via scripting</summary>
 [CppInclude("USDConversionBlueprintLibrary.h")]
 public partial class UUsdConversionBlueprintLibrary : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>Fully streams in and displays all levels whose names are not in LevelsToIgnore</summary>
 	public static void StreamInRequiredLevels(UWorld World,TSet<string> LevelsToIgnore) {}
 	///<summary>If we have the Sequencer open with a level sequence animating the level before export, this function can revert</summary>

@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>UPlayerMappableInputConfig</summary>
 [CppInclude("PlayerMappableInputConfig.h")]
 public partial class UPlayerMappableInputConfig : UPrimaryDataAsset {
+	public static UClass StaticClass() {return default;}
 	///<summary>Get all the player mappable keys in this config.</summary>
 	public  TArray<FEnhancedActionKeyMapping> GetPlayerMappableKeys() { return default; }
 	///<summary>Returns the action key mapping for the mapping that matches the given name</summary>

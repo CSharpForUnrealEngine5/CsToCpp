@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Animation/AnimData/IAnimationDataModel.h")]
 public partial class UAnimationDataModel : UInterface {
+	public static UClass StaticClass() {return default;}
 	///<summary>@return       Total length of play-able animation data</summary>
 	public  double GetPlayLength() { return default; }
 	///<summary>@return       Total number of frames of animation data stored</summary>

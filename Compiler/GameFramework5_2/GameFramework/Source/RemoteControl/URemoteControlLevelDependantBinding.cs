@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("RemoteControlBinding.h")]
 public partial class URemoteControlLevelDependantBinding : URemoteControlBinding {
+	public static UClass StaticClass() {return default;}
 	///<summary>BoundObjectMap_DEPRECATED</summary>
 	public TMap<TSoftObjectPtr<ULevel>,TSoftObjectPtr<UObject>> BoundObjectMap_DEPRECATED;
 	///<summary>SubLevelSelectionMap_DEPRECATED</summary>

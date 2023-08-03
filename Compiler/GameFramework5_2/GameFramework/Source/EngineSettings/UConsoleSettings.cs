@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Implements the settings for the UConsole class.</summary>
 [CppInclude("ConsoleSettings.h")]
 public partial class UConsoleSettings : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>The maximum number of lines the console keeps in its output history.</summary>
 	public int MaxScrollbackSize;
 	///<summary>Manual list of auto-complete commands and info specified in BaseInput.ini</summary>

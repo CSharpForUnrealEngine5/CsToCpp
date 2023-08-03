@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Editor/EditorPerProjectUserSettings.h")]
 public partial class UEditorPerProjectUserSettings : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>If enabled, any newly opened UI menus, menu bars, and toolbars will show the developer hooks that would accept extensions</summary>
 	public bool bDisplayUIExtensionPoints;
 	///<summary>If enabled, tooltips linked to documentation will show the developer the link bound to that UI item</summary>

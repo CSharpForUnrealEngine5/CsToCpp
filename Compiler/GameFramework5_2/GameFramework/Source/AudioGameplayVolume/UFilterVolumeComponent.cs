@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>UFilterVolumeComponent - Audio Gameplay Volume component for occlusion settings (volume filter)</summary>
 [CppInclude("FilterVolumeComponent.h")]
 public partial class UFilterVolumeComponent : UAudioGameplayVolumeMutator {
+	public static UClass StaticClass() {return default;}
 	///<summary>SetExteriorLPF</summary>
 	public  void SetExteriorLPF(float Volume,float InterpolateTime) {}
 	///<summary>SetInteriorLPF</summary>

@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Implement an Actor component for LOD Sync of different components</summary>
 [CppInclude("Components/LODSyncComponent.h")]
 public partial class ULODSyncComponent : UActorComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>if -1, it&#39;s default and it will calculate the max number of LODs from all sub components</summary>
 	public int NumLODs;
 	///<summary>if -1, it&#39;s automatically switching</summary>

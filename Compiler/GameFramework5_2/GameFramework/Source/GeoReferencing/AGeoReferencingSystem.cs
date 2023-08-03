@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>This AInfos enable you to define a correspondance between the UE origin and an actual geographic location on a planet</summary>
 [CppInclude("GeoReferencingSystem.h")]
 public partial class AGeoReferencingSystem : AInfo {
+	public static UClass StaticClass() {return default;}
 	///<summary>GetGeoReferencingSystem</summary>
 	public static AGeoReferencingSystem GetGeoReferencingSystem(UObject WorldContextObject) { return default; }
 	///<summary>EngineToProjected</summary>

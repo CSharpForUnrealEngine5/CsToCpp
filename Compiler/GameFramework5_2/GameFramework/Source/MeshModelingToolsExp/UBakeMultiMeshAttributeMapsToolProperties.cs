@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("BakeMultiMeshAttributeMapsTool.h")]
 public partial class UBakeMultiMeshAttributeMapsToolProperties : UInteractiveToolPropertySet {
+	public static UClass StaticClass() {return default;}
 	///<summary>The map types to generate</summary>
 	public int MapTypes;
 	///<summary>The map type index to preview</summary>

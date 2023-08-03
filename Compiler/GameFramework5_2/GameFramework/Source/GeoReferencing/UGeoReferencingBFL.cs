@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Blueprint function library to convert geospatial coordinates to text</summary>
 [CppInclude("GeoReferencingBFL.h")]
 public partial class UGeoReferencingBFL : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>Converts a LargeCoordinates value to localized formatted text, in the form &#39;X= Y= Z=&#39;</summary>
 	public static string ToFullText(FVector CartesianCoordinates,int IntegralDigits/*=3*/) { return default; }
 	///<summary>Converts a LargeCoordinates value to formatted text, in the form &#39;(X, Y, Z)&#39;</summary>

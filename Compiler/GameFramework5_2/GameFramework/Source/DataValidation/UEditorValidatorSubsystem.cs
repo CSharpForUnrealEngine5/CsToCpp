@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>UEditorValidatorSubsystem manages all the asset validation in the engine.</summary>
 [CppInclude("EditorValidatorSubsystem.h")]
 public partial class UEditorValidatorSubsystem : UEditorSubsystem {
+	public static UClass StaticClass() {return default;}
 	///<summary>* Adds a validator to the list, making sure it is a unique instance</summary>
 	public  void AddValidator(UEditorValidatorBase InValidator) {}
 	///<summary>@return Returns Valid if the object contains valid data; returns Invalid if the object contains invalid data; returns NotValidated if no validations was performed on the object</summary>

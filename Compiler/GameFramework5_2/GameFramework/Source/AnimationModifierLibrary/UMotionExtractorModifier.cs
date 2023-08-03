@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Extracts motion from a bone in the animation and bakes it into a curve</summary>
 [CppInclude("MotionExtractorModifier.h")]
 public partial class UMotionExtractorModifier : UAnimationModifier {
+	public static UClass StaticClass() {return default;}
 	///<summary>Bone we are going to generate the curve from</summary>
 	public string BoneName;
 	///<summary>Type of motion to extract</summary>

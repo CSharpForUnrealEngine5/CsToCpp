@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Factories/TextureFactory.h")]
 public partial class UTextureFactory : UFactory {
+	public static UClass StaticClass() {return default;}
 	///<summary>NoCompression</summary>
 	public bool NoCompression;
 	///<summary>If enabled, the texture&#39;s alpha channel will be discarded during compression</summary>

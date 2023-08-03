@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>* UDatasmithPostProcessElement</summary>
 [CppInclude("ObjectElements/DatasmithUObjectElements.h")]
 public partial class UDatasmithPostProcessElement : UDatasmithObjectElement {
+	public static UClass StaticClass() {return default;}
 	///<summary>Get color filter temperature in Kelvin</summary>
 	public  float GetTemperature() { return default; }
 	///<summary>Set color filter temperature in Kelvin</summary>

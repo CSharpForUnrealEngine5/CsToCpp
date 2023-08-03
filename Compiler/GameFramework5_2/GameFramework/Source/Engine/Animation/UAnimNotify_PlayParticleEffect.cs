@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Animation/AnimNotifies/AnimNotify_PlayParticleEffect.h")]
 public partial class UAnimNotify_PlayParticleEffect : UAnimNotify {
+	public static UClass StaticClass() {return default;}
 	///<summary>Particle System to Spawn</summary>
 	public UParticleSystem PSTemplate;
 	///<summary>Location offset from the socket</summary>

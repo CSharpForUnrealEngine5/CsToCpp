@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("KismetProceduralMeshLibrary.h")]
 public partial class UKismetProceduralMeshLibrary : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>Generate vertex and index buffer for a simple box, given the supplied dimensions. Normals, UVs and tangents are also generated for each vertex.</summary>
 	public static void GenerateBoxMesh(FVector BoxRadius,TArray<FVector> Vertices,TArray<int> Triangles,TArray<FVector> Normals,TArray<FVector2D> UVs,TArray<FProcMeshTangent> Tangents) {}
 	///<summary>Automatically generate normals and tangent vectors for a mesh</summary>

@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Cooldown decorator node.</summary>
 [CppInclude("BehaviorTree/Decorators/BTDecorator_DoesPathExist.h")]
 public partial class UBTDecorator_DoesPathExist : UBTDecorator {
+	public static UClass StaticClass() {return default;}
 	///<summary>blackboard key selector</summary>
 	public FBlackboardKeySelector BlackboardKeyA;
 	///<summary>blackboard key selector</summary>

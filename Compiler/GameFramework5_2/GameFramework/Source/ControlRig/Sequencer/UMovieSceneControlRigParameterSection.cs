@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Movie scene section that controls animation controller animation</summary>
 [CppInclude("Sequencer/MovieSceneControlRigParameterSection.h")]
 public partial class UMovieSceneControlRigParameterSection : UMovieSceneParameterSection {
+	public static UClass StaticClass() {return default;}
 	///<summary>Control Rig that controls us</summary>
 	public UControlRig ControlRig;
 	///<summary>The class of control rig to instantiate</summary>

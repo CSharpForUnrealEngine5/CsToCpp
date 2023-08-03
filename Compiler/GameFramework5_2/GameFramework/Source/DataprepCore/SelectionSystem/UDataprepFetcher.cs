@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>The Dataprep fetcher is a base class for Dataprep Selection system.</summary>
 [CppInclude("SelectionSystem/DataprepFetcher.h")]
 public partial class UDataprepFetcher : UDataprepParameterizableObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Allows to change the name of the fetcher for the ui if needed.</summary>
 	public  string GetDisplayFetcherName() { return default; }
 	///<summary>The name displayed on node title.</summary>

@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Animation/AnimData/IAnimationDataController.h")]
 public partial class UAnimationDataController : UInterface {
+	public static UClass StaticClass() {return default;}
 	///<summary>Sets the AnimDataModel instance this controller is supposed to be targeting</summary>
 	public  void SetModel(object /*InModel*/ InModel) {}
 	///<summary>@return               The IAnimationDataModel instance this controller is currently targeting</summary>

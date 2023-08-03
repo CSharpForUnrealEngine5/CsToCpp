@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>ACombinedTransformGizmoActor is an Actor type intended to be used with UCombinedTransformGizmo,</summary>
 [CppInclude("BaseGizmos/CombinedTransformGizmo.h")]
 public partial class ACombinedTransformGizmoActor : AGizmoActor {
+	public static UClass StaticClass() {return default;}
 	///<summary>X Axis Translation Component</summary>
 	public UPrimitiveComponent TranslateX;
 	///<summary>Y Axis Translation Component</summary>

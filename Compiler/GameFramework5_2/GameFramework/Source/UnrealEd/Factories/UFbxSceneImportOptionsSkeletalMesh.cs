@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Factories/FbxSceneImportOptionsSkeletalMesh.h")]
 public partial class UFbxSceneImportOptionsSkeletalMesh : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>If enabled, update the Skeleton (of the mesh being imported)&#39;s reference pose.</summary>
 	public bool bUpdateSkeletonReferencePose;
 	///<summary>If checked, create new PhysicsAsset if it doesn&#39;t have it</summary>

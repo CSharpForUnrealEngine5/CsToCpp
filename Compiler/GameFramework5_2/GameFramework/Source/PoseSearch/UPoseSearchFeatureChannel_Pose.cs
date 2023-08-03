@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>UPoseSearchFeatureChannel_Pose</summary>
 [CppInclude("PoseSearchFeatureChannel_Pose.h")]
 public partial class UPoseSearchFeatureChannel_Pose : UPoseSearchFeatureChannel_GroupBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>Weight</summary>
 	public float Weight;
 	///<summary>SampledBones</summary>

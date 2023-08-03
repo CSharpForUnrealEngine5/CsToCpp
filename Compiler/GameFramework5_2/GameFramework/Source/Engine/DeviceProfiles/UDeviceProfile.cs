@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("DeviceProfiles/DeviceProfile.h")]
 public partial class UDeviceProfile : UTextureLODSettings {
+	public static UClass StaticClass() {return default;}
 	///<summary>The type of this profile, I.e. IOS, Windows, PS4 etc</summary>
 	public string DeviceType;
 	///<summary>The name of the parent profile of this object</summary>

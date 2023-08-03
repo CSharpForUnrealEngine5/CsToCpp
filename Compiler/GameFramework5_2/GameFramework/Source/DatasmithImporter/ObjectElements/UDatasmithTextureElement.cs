@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>* UDatasmithTextureElement</summary>
 [CppInclude("ObjectElements/DatasmithUObjectElements.h")]
 public partial class UDatasmithTextureElement : UDatasmithObjectElement {
+	public static UClass StaticClass() {return default;}
 	///<summary>Get texture filename</summary>
 	public  string GetFile() { return default; }
 	///<summary>Set texture filename</summary>

@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>ULandscapeSplinesComponent</summary>
 [CppInclude("LandscapeSplinesComponent.h")]
 public partial class ULandscapeSplinesComponent : UPrimitiveComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>Resolution of the spline, in distance per point</summary>
 	public float SplineResolution;
 	///<summary>Color to use to draw the splines</summary>

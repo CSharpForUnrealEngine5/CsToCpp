@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A singleton (per-asset) class used to make modifications to a UIKRigDefinition asset</summary>
 [CppInclude("RigEditor/IKRigController.h")]
 public partial class UIKRigController : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Use this to get the controller for the given IKRig</summary>
 	public static UIKRigController GetController(UIKRigDefinition InIKRigDefinition) { return default; }
 	///<summary>Sets the preview mesh to use. Loads the hierarchy into the asset&#39;s IKRigSkeleton.</summary>

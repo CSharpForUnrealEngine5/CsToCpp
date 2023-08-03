@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Specifies the format of a pose search index. At runtime, queries are built according to the schema for searching.</summary>
 [CppInclude("PoseSearch/PoseSearchSchema.h")]
 public partial class UPoseSearchSchema : UDataAsset {
+	public static UClass StaticClass() {return default;}
 	///<summary>@todo: used only for indexing: cache it somewhere else</summary>
 	public USkeleton Skeleton;
 	///<summary>SampleRate</summary>

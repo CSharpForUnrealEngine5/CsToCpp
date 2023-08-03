@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("RootMotionAnalysis.h")]
 public partial class URootMotionAnalysisProperties : UAnalysisProperties {
+	public static UClass StaticClass() {return default;}
 	///<summary>Axis for the analysis function</summary>
 	public EAnalysisRootMotionAxis FunctionAxis;
 	///<summary>The bone or socket used for analysis</summary>

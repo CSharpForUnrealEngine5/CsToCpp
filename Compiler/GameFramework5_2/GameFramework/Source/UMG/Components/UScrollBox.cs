@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>An arbitrary scrollable collection of widgets.  Great for presenting 10-100 widgets in a list.  Doesn&#39;t support virtualization.</summary>
 [CppInclude("Components/ScrollBox.h")]
 public partial class UScrollBox : UPanelWidget {
+	public static UClass StaticClass() {return default;}
 	///<summary>The style</summary>
 	public FScrollBoxStyle WidgetStyle;
 	///<summary>The bar style</summary>

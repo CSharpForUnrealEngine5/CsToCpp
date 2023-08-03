@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Base class for movie scene sections</summary>
 [CppInclude("MovieSceneSection.h")]
 public partial class UMovieSceneSection : UMovieSceneSignedObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>EvalOptions</summary>
 	public FMovieSceneSectionEvalOptions EvalOptions;
 	///<summary>Gets this section&#39;s completion mode</summary>

@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("MeshSelectionTool.h")]
 public partial class UMeshSelectionEditActions : UMeshSelectionToolActionPropertySet {
+	public static UClass StaticClass() {return default;}
 	///<summary>Clear the active triangle selection</summary>
 	public  void Clear() {}
 	///<summary>Select all triangles in the mesh</summary>

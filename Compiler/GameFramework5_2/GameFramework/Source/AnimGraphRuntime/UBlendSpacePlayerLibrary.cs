@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Exposes operations to be performed on a blend space player anim node.</summary>
 [CppInclude("BlendSpacePlayerLibrary.h")]
 public partial class UBlendSpacePlayerLibrary : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>Get a blend space player context from an anim node context.</summary>
 	public static FBlendSpacePlayerReference ConvertToBlendSpacePlayer(FAnimNodeReference Node,EAnimNodeReferenceConversionResult Result) { return default; }
 	///<summary>Get a blend space player context from an anim node context (pure).</summary>

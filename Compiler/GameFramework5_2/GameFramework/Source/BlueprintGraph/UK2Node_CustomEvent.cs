@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("K2Node_CustomEvent.h")]
 public partial class UK2Node_CustomEvent : UK2Node_Event {
+	public static UClass StaticClass() {return default;}
 	///<summary>Optional message to display when the event is deprecated</summary>
 	public string DeprecationMessage;
 	///<summary>Specifies that usage of this event has been deprecated</summary>

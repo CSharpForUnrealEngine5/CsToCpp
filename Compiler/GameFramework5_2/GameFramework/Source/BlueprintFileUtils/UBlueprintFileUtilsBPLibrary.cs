@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("BlueprintFileUtilsBPLibrary.h")]
 public partial class UBlueprintFileUtilsBPLibrary : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>Finds all the files within the given directory, with optional file extension filter.</summary>
 	public static bool FindFiles(string Directory,TArray<string> FoundFiles,string FileExtension/*=TEXT("")*/) { return default; }
 	///<summary>Finds all the files and/or directories within the given directory and any sub-directories.  Files can be found with anoptional file extension filter.</summary>

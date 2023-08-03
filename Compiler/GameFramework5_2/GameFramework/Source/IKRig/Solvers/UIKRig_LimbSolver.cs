@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Solvers/IKRig_LimbSolver.h")]
 public partial class UIKRig_LimbSolver : UIKRigSolver {
+	public static UClass StaticClass() {return default;}
 	///<summary>RootName</summary>
 	public string RootName;
 	///<summary>Precision (distance to the target)</summary>

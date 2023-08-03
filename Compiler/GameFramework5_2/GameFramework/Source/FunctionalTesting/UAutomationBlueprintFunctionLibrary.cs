@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("AutomationBlueprintFunctionLibrary.h")]
 public partial class UAutomationBlueprintFunctionLibrary : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>FinishLoadingBeforeScreenshot</summary>
 	public static void FinishLoadingBeforeScreenshot() {}
 	///<summary>Takes a screenshot of the game&#39;s viewport.  Does not capture any UI.</summary>

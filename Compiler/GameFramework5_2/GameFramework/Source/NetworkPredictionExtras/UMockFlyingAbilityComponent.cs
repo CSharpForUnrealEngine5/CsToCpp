@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>ActorComponent for running Mock Ability Simulation</summary>
 [CppInclude("MockAbilitySimulation.h")]
 public partial class UMockFlyingAbilityComponent : UFlyingMovementComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>Ability State and Notifications</summary>
 	public  void FMockAbilityNotifyStateChange(bool bNewStateValue) {}
 	///<summary>Notifies when Sprint state changes</summary>

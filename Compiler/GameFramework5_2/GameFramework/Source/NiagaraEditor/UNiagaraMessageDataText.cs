@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("NiagaraMessages.h")]
 public partial class UNiagaraMessageDataText : UNiagaraMessageData {
+	public static UClass StaticClass() {return default;}
 	///<summary>MessageText</summary>
 	public string MessageText;
 	///<summary>ShortDescription</summary>

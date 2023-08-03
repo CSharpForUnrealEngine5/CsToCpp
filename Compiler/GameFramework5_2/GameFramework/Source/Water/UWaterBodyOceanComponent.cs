@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("WaterBodyOceanComponent.h")]
 public partial class UWaterBodyOceanComponent : UWaterBodyComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>CollisionBoxes</summary>
 	public TArray<UOceanBoxCollisionComponent> CollisionBoxes;
 	///<summary>CollisionHullSets</summary>

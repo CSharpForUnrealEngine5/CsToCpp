@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Security/WebAPIAuthentication.h")]
 public partial class UWebAPIOAuthSettings : UWebAPIAuthenticationSettings {
+	public static UClass StaticClass() {return default;}
 	///<summary>Public client identifier.</summary>
 	public string ClientId;
 	///<summary>Private client secret.</summary>

@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>UScriptableTool_HUDAPI is helper Object that is created internally by a UScriptableInteractiveTool</summary>
 [CppInclude("ScriptableInteractiveTool.h")]
 public partial class UScriptableTool_HUDAPI : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>DrawTextAtLocation</summary>
 	public  UScriptableTool_HUDAPI DrawTextAtLocation(FVector Location,string String,FLinearColor Color,bool bCentered,float ShiftRowsY) { return default; }
 	///<summary>DrawTextArrayAtLocation</summary>

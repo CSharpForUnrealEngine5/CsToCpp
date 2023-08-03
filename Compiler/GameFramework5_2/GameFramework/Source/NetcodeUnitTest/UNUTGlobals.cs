@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Stores globals/static-variables for NetcodeUnitTest - for compatibility with hot reload</summary>
 [CppInclude("NUTGlobals.h")]
 public partial class UNUTGlobals : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>For NUTActor - the UNetConnection that &#39;watch&#39; events will be sent to</summary>
 	public UNetConnection EventWatcher;
 	///<summary>For ClientUnitTest - the (+10) incremented port number, for each server instance</summary>

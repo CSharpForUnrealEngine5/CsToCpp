@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("VirtualCameraSubsystem.h")]
 public partial class UVirtualCameraSubsystem : UEngineSubsystem {
+	public static UClass StaticClass() {return default;}
 	///<summary>StartStreaming</summary>
 	public  bool StartStreaming() { return default; }
 	///<summary>StopStreaming</summary>

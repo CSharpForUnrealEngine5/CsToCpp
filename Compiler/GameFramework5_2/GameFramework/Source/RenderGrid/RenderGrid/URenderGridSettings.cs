@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>This class contains the default values of render grid jobs.</summary>
 [CppInclude("RenderGrid/RenderGrid.h")]
 public partial class URenderGridSettings : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>EditInstanceOnly, Category=&quot;Render Grid&quot;, Meta=(DisplayName=&quot;Properties Type&quot;)</summary>
 	public ERenderGridPropsSourceType PropsSourceType;
 	///<summary>, EditCondition=&quot;PropsSourceType == ERenderGridPropsSourceType::RemoteControl&quot;, EditConditionHides</summary>

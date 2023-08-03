@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("WaveformTransformationTrimFade.h")]
 public partial class UWaveformTransformationTrimFade : UWaveformTransformationBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>StartTime</summary>
 	public double StartTime;
 	///<summary>EndTime</summary>

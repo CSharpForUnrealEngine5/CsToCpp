@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A recording source for DMX data related to a DMX Library</summary>
 [CppInclude("Sequencer/TakeRecorderDMXLibrarySource.h")]
 public partial class UTakeRecorderDMXLibrarySource : UTakeRecorderSource {
+	public static UClass StaticClass() {return default;}
 	///<summary>DMX Library to record Patches&#39; Fixture Functions from</summary>
 	public UDMXLibrary DMXLibrary;
 	///<summary>Dummy property to be replaced with the &quot;Add all patches&quot; button.</summary>

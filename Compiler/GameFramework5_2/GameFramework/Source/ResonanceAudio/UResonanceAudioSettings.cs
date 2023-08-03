@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("ResonanceAudioSettings.h")]
 public partial class UResonanceAudioSettings : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Reference to submix where reverb plugin audio is routed.</summary>
 	public FSoftObjectPath OutputSubmix;
 	///<summary>Global Quality mode to use for directional sound sources.</summary>

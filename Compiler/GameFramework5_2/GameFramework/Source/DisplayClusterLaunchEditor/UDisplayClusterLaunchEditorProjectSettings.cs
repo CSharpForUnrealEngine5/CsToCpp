@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("DisplayClusterLaunchEditorProjectSettings.h")]
 public partial class UDisplayClusterLaunchEditorProjectSettings : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>If true, the editor will be closed on session launch to optimize session performance.</summary>
 	public bool bCloseEditorOnLaunch;
 	///<summary>If true, this command will attempt to connect to an existing</summary>

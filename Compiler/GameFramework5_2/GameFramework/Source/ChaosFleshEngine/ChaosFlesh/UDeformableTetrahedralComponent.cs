@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>UDeformableTetrahedralComponent</summary>
 [CppInclude("ChaosFlesh/ChaosDeformableTetrahedralComponent.h")]
 public partial class UDeformableTetrahedralComponent : UDeformablePhysicsComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>@deprecated Use GetSkeletalMeshEmbeddedPositions() instead.</summary>
 	public  TArray<FVector> GetSkeletalMeshBindingPositions(USkeletalMesh InSkeletalMesh) { return default; }
 	///<summary>Get the current positions of the transformation hierarchy from \c TargetDeformationSkeleton,</summary>

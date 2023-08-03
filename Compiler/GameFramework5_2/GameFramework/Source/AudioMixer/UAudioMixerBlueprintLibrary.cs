@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("AudioMixerBlueprintLibrary.h")]
 public partial class UAudioMixerBlueprintLibrary : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>Returns the device info in a human readable format</summary>
 	public static string Conv_AudioOutputDeviceInfoToString(FAudioOutputDeviceInfo Info) { return default; }
 	///<summary>Adds a submix effect preset to the master submix.</summary>

@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>UAudioImpulseResponse</summary>
 [CppInclude("EffectConvolutionReverb.h")]
 public partial class UAudioImpulseResponse : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>The interleaved audio samples used in convolution.</summary>
 	public TArray<float> ImpulseResponse;
 	///<summary>The number of channels in impulse response.</summary>

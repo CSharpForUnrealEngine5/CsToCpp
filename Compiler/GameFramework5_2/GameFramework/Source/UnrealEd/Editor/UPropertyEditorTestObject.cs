@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Editor/PropertyEditorTestObject.h")]
 public partial class UPropertyEditorTestObject : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Int8Property</summary>
 	public short Int8Property;
 	///<summary>Int16Property</summary>

@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Hide drop down will make sure the class is not showing in the class picker</summary>
 [CppInclude("InterchangeGenericMeshPipeline.h")]
 public partial class UInterchangeGenericMeshPipeline : UInterchangePipelineBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>Common Meshes Properties Settings Pointer</summary>
 	public TWeakObjectPtr<UInterchangeGenericCommonMeshesProperties> CommonMeshesProperties;
 	///<summary>Common SkeletalMeshes And Animations Properties Settings Pointer</summary>

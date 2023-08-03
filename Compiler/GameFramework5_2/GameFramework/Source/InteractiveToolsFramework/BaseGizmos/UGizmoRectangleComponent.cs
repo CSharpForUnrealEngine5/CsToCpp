@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Simple Component intended to be used as part of 3D Gizmos.</summary>
 [CppInclude("BaseGizmos/GizmoRectangleComponent.h")]
 public partial class UGizmoRectangleComponent : UGizmoBaseComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>DirectionX</summary>
 	public FVector DirectionX;
 	///<summary>DirectionY</summary>

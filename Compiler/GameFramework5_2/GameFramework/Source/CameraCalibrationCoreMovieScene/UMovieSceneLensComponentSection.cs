@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Movie Scene section for Lens Component</summary>
 [CppInclude("MovieSceneLensComponentSection.h")]
 public partial class UMovieSceneLensComponentSection : UMovieSceneHookSection {
+	public static UClass StaticClass() {return default;}
 	///<summary>If true, then every Update, the nodal offset will be re-evaluated on the lens component</summary>
 	public bool bReapplyNodalOffset;
 	///<summary>LensFile asset that should be used instead of the cached LensFile during playback</summary>

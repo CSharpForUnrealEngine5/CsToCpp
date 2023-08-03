@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>ns UE</summary>
 [CppInclude("InterchangeSkeletalMeshLodDataNode.h")]
 public partial class UInterchangeSkeletalMeshLodDataNode : UInterchangeFactoryBaseNode {
+	public static UClass StaticClass() {return default;}
 	///<summary>Query the LOD skeletal mesh factory skeleton reference. Return false if the attribute was not set.</summary>
 	public  bool GetCustomSkeletonUid(string AttributeValue) { return default; }
 	///<summary>Set the LOD skeletal mesh factory skeleton reference. Return false if the attribute cannot be set.</summary>

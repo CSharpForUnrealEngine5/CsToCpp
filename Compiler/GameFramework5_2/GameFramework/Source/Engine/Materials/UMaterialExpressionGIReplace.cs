@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Materials/MaterialExpressionGIReplace.h")]
 public partial class UMaterialExpressionGIReplace : UMaterialExpression {
+	public static UClass StaticClass() {return default;}
 	///<summary>Used for direct lighting computations e.g. real-time shaders</summary>
 	public FExpressionInput Default;
 	///<summary>Used for baked indirect lighting e.g. Lightmass</summary>

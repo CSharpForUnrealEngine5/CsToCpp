@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Materials/MaterialExpressionFunctionInput.h")]
 public partial class UMaterialExpressionFunctionInput : UMaterialExpression {
+	public static UClass StaticClass() {return default;}
 	///<summary>Used for previewing when editing the function, or when bUsePreviewValueAsDefault is enabled.</summary>
 	public FExpressionInput Preview;
 	///<summary>The input&#39;s name, which will be drawn on the connector in function call expressions that use this function.</summary>

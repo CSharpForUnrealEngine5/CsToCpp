@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>VR root. This contains nDisplay VR hierarchy in the game.</summary>
 [CppInclude("DisplayClusterRootActor.h")]
 public partial class ADisplayClusterRootActor : AActor {
+	public static UClass StaticClass() {return default;}
 	///<summary>GetFlushPositionAndNormal</summary>
 	public  bool GetFlushPositionAndNormal(FVector WorldPosition,FVector OutPosition,FVector OutNormal) { return default; }
 	///<summary>MakeStageActorFlushToWall</summary>

@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("OculusAudioSourceSettings.h")]
 public partial class UOculusAudioSourceSettings : USpatializationPluginSourceSettingsBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>EarlyReflectionsEnabled</summary>
 	public bool EarlyReflectionsEnabled;
 	///<summary>AttenuationEnabled</summary>

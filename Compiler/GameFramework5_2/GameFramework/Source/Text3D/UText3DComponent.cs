@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Text3DComponent.h")]
 public partial class UText3DComponent : USceneComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>The text to generate a 3d mesh</summary>
 	public string Text;
 	///<summary>Size of the extrude</summary>

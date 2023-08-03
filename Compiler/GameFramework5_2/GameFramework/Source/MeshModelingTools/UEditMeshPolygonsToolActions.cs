@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>PolyEdit Actions</summary>
 [CppInclude("EditMeshPolygonsTool.h")]
 public partial class UEditMeshPolygonsToolActions : UEditMeshPolygonsToolActionPropertySet {
+	public static UClass StaticClass() {return default;}
 	///<summary>Extrude the current set of selected faces by moving and stitching them.</summary>
 	public  void Extrude() {}
 	///<summary>Like Extrude/Offset, but performed in a boolean way, meaning that the faces can cut away the mesh or bridge mesh parts.</summary>

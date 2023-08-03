@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Standard properties of the polygon-on-mesh operations</summary>
 [CppInclude("PolygonOnMeshTool.h")]
 public partial class UPolygonOnMeshToolProperties : UInteractiveToolPropertySet {
+	public static UClass StaticClass() {return default;}
 	///<summary>What operation to apply using the Polygon</summary>
 	public EEmbeddedPolygonOpMethod Operation;
 	///<summary>Polygon Shape to use in this Operation</summary>

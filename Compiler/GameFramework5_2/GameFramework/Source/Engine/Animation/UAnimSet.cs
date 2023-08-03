@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Animation/AnimSet.h")]
 public partial class UAnimSet : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Indicates that only the rotation should be taken from the animation sequence and the translation should come from the USkeletalMesh ref pose.</summary>
 	public bool bAnimRotationOnly;
 	///<summary>Bone name that each track relates to. TrackBoneName.Num() == Number of tracks.</summary>

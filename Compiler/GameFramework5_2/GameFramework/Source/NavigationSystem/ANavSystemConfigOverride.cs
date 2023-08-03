@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("NavSystemConfigOverride.h")]
 public partial class ANavSystemConfigOverride : AActor {
+	public static UClass StaticClass() {return default;}
 	///<summary>SpriteComponent</summary>
 	public UBillboardComponent SpriteComponent;
 	///<summary>NavigationSystemConfig</summary>

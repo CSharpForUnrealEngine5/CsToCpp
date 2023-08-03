@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Particles/Kill/ParticleModuleKillHeight.h")]
 public partial class UParticleModuleKillHeight : UParticleModuleKillBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>The height at which to kill the particle.</summary>
 	public FRawDistributionFloat Height;
 	///<summary>If true, the height should be treated as a world-space position.</summary>

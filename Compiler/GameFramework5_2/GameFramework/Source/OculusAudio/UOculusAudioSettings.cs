@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("OculusAudioSettings.h")]
 public partial class UOculusAudioSettings : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>OutputSubmix</summary>
 	public FSoftObjectPath OutputSubmix;
 	///<summary>ReverbWetLevel</summary>

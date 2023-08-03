@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("AI/Navigation/AvoidanceManager.h")]
 public partial class UAvoidanceManager : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>How long an avoidance UID must not be updated before the system will put it back in the pool. Actual delay is up to 150% of this value.</summary>
 	public float DefaultTimeToLive;
 	///<summary>How long to stay on course (barring collision) after making an avoidance move</summary>

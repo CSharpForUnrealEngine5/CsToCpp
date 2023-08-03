@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Static class with useful gameplay utility functions that can be called from both Blueprint and C++</summary>
 [CppInclude("Kismet/GameplayStatics.h")]
 public partial class UGameplayStatics : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>--- Create Object</summary>
 	public static UObject SpawnObject(UClass ObjectClass,UObject Outer) { return default; }
 	///<summary>Spawns an instance of a blueprint, but does not automatically run its construction script.</summary>

@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Materials/MaterialExpressionClamp.h")]
 public partial class UMaterialExpressionClamp : UMaterialExpression {
+	public static UClass StaticClass() {return default;}
 	///<summary>Input</summary>
 	public FExpressionInput Input;
 	///<summary>Defaults to &#39;MinDefault&#39; if not specified</summary>

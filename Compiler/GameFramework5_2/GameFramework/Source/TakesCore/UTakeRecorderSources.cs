@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A list of sources to record for any given take. Stored as meta-data on ULevelSequence through ULevelSequence::FindMetaData&lt;UTakeRecorderSources&gt;</summary>
 [CppInclude("TakeRecorderSources.h")]
 public partial class UTakeRecorderSources : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Add a new source to this source list of the templated type</summary>
 	public  UTakeRecorderSource AddSource(UClass InSourceType) { return default; }
 	///<summary>Remove the specified source from this list</summary>

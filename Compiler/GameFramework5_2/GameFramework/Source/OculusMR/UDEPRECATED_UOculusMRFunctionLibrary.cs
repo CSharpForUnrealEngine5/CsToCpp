@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("OculusMRFunctionLibrary.h")]
 public partial class UDEPRECATED_UOculusMRFunctionLibrary : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>GetOculusMRSettings</summary>
 	public static UDEPRECATED_UOculusMR_Settings GetOculusMRSettings() { return default; }
 	///<summary>GetTrackingReferenceComponent</summary>

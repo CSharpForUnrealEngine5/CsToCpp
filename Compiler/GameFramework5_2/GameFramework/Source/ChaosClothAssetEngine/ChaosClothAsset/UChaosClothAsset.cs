@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Cloth asset for pattern based simulation.</summary>
 [CppInclude("ChaosClothAsset/ClothAsset.h")]
 public partial class UChaosClothAsset : USkinnedAsset {
+	public static UClass StaticClass() {return default;}
 	///<summary>GetShadowPhysicsAsset</summary>
 	public  UPhysicsAsset GetShadowPhysicsAsset() { return default; }
 	///<summary>Dataflow</summary>

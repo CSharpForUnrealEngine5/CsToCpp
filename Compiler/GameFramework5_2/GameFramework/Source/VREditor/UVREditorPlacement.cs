@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>VR Editor interaction with the 3D world</summary>
 [CppInclude("VREditorPlacement.h")]
 public partial class UVREditorPlacement : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Owning object</summary>
 	public UVREditorMode VRMode;
 	///<summary>The actual ViewportWorldInteraction</summary>

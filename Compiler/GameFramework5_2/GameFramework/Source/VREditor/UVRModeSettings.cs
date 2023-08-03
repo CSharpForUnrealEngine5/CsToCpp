@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Implements the settings for VR Mode.</summary>
 [CppInclude("VRModeSettings.h")]
 public partial class UVRModeSettings : UVISettings {
+	public static UClass StaticClass() {return default;}
 	///<summary>If true, wearing a Vive or Oculus Rift headset will automatically enter VR Editing mode</summary>
 	public bool bEnableAutoVREditMode;
 	///<summary>Whether or not sequences should be autokeyed</summary>

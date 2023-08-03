@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Blend nodes take two 1-4 channel inputs and apply the same operator to all channels.</summary>
 [CppInclude("MaterialX/MaterialExpressionDifference.h")]
 public partial class UMaterialExpressionDifference : UMaterialExpression {
+	public static UClass StaticClass() {return default;}
 	///<summary>A</summary>
 	public FExpressionInput A;
 	///<summary>B</summary>

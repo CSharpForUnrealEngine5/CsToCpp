@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Options/GLTFProxyOptions.h")]
 public partial class UGLTFProxyOptions : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>If enabled, a material input may be baked out to a texture (using a simple quad). Baking is only used for non-trivial material inputs (i.e. not simple texture or constant expressions).</summary>
 	public bool bBakeMaterialInputs;
 	///<summary>Default size of the baked out texture (containing the material input). Can be overridden by material- and input-specific bake settings, see GLTFMaterialExportOptions.</summary>

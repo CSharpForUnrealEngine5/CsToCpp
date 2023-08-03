@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>This is the API used to get information about water at runtime</summary>
 [CppInclude("WaterSubsystem.h")]
 public partial class UWaterSubsystem : UTickableWorldSubsystem {
+	public static UClass StaticClass() {return default;}
 	///<summary>IsShallowWaterSimulationEnabled</summary>
 	public  bool IsShallowWaterSimulationEnabled() { return default; }
 	///<summary>IsUnderwaterPostProcessEnabled</summary>

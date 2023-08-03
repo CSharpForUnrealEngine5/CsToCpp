@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("InterchangeTextureNode.h")]
 public partial class UInterchangeTextureNode : UInterchangeBaseNode {
+	public static UClass StaticClass() {return default;}
 	///<summary>SetPayLoadKey</summary>
 	public  void SetPayLoadKey(string PayloadKey) {}
 	///<summary>GetCustomSRGB</summary>

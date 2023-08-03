@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Holds global data for the ability system. Can be configured per project via config file</summary>
 [CppInclude("AbilitySystemGlobals.h")]
 public partial class UAbilitySystemGlobals : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>The class to instantiate as the globals object. Defaults to this class but can be overridden</summary>
 	public FSoftClassPath AbilitySystemGlobalsClassName;
 	///<summary>Toggles whether we should ignore ability cooldowns. Does nothing in shipping builds</summary>

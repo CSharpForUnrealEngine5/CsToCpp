@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Implements the Editor style settings.</summary>
 [CppInclude("Settings/EditorStyleSettings.h")]
 public partial class UEditorStyleSettings : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Enables high dpi support in the editor which will adjust the scale of elements in the UI to account for high DPI monitors</summary>
 	public bool bEnableHighDPIAwareness;
 	///<summary>Whether to enable the Editor UI Layout configuration tools for the user.</summary>

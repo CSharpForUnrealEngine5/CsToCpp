@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("EnvironmentQuery/EnvQueryGenerator.h")]
 public partial class UEnvQueryGenerator : UEnvQueryNode {
+	public static UClass StaticClass() {return default;}
 	///<summary>OptionName</summary>
 	public string OptionName;
 	///<summary>type of generated items</summary>

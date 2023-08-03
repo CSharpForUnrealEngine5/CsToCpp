@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Settings controlling how geometry is selected and merged into neighboring geometry</summary>
 [CppInclude("FractureToolFixTinyGeo.h")]
 public partial class UFractureTinyGeoSettings : UFractureToolSettings {
+	public static UClass StaticClass() {return default;}
 	///<summary>NeighborSelection</summary>
 	public ENeighborSelectionMethod NeighborSelection;
 	///<summary>Options for using the current bone selection</summary>

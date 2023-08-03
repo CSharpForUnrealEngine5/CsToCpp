@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Engine/NavigationObjectBase.h")]
 public partial class ANavigationObjectBase : AActor {
+	public static UClass StaticClass() {return default;}
 	///<summary>CapsuleComponent</summary>
 	public UCapsuleComponent CapsuleComponent;
 	///<summary>Normal editor sprite.</summary>

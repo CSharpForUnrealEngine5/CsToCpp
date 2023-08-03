@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("GameFramework/LightWeightInstanceStaticMeshManager.h")]
 public partial class ALightWeightInstanceStaticMeshManager : ALightWeightInstanceManager {
+	public static UClass StaticClass() {return default;}
 	///<summary>StaticMesh</summary>
 	public TSoftObjectPtr<UStaticMesh> StaticMesh;
 	///<summary>OnRep_StaticMesh</summary>

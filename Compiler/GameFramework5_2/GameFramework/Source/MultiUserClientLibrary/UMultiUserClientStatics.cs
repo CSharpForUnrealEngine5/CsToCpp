@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("MultiUserClientStatics.h")]
 public partial class UMultiUserClientStatics : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>Set whether presence is currently enabled and should be shown (unless hidden by other settings)</summary>
 	public static void SetMultiUserPresenceEnabled(bool IsEnabled/*=true*/) {}
 	///<summary>Set Presence Actor Visibility by display name</summary>

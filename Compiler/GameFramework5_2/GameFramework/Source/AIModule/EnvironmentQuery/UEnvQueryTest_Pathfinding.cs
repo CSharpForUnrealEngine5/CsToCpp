@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("EnvironmentQuery/Tests/EnvQueryTest_Pathfinding.h")]
 public partial class UEnvQueryTest_Pathfinding : UEnvQueryTest {
+	public static UClass StaticClass() {return default;}
 	///<summary>testing mode</summary>
 	public EEnvTestPathfinding TestMode;
 	///<summary>context: other end of pathfinding test</summary>

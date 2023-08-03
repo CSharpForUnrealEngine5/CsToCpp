@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("VirtualCameraActor.h")]
 public partial class AVirtualCameraActor : ACineCameraActor {
+	public static UClass StaticClass() {return default;}
 	///<summary>SceneCaptureComponent</summary>
 	public USceneCaptureComponent2D SceneCaptureComponent;
 	///<summary>LiveLinkSubject</summary>

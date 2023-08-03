@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Universal take recorder settings that apply to a whole take</summary>
 [CppInclude("TakeRecorderSettings.h")]
 public partial class UTakeRecorderUserSettings : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>User settings that should be passed to a recorder instance</summary>
 	public FTakeRecorderUserParameters Settings;
 	///<summary>The default location in which to save take presets</summary>

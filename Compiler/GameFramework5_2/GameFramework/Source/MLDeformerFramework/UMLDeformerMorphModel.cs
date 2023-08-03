@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("MLDeformerMorphModel.h")]
 public partial class UMLDeformerMorphModel : UMLDeformerGeomCacheModel {
+	public static UClass StaticClass() {return default;}
 	///<summary>Set the per vertex deltas, as a set of floats. Each vertex delta must have 3 floats.</summary>
 	public  void SetMorphTargetDeltaFloats(TArray<float> Deltas) {}
 	///<summary>Set the morph target model deltas as an array of 3D vectors.</summary>

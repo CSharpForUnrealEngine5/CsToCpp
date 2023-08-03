@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>* UDatasmithMeshActorElement</summary>
 [CppInclude("ObjectElements/DatasmithUObjectElements.h")]
 public partial class UDatasmithMeshActorElement : UDatasmithActorElement {
+	public static UClass StaticClass() {return default;}
 	///<summary>Adds a new material to the Actor Element</summary>
 	public  void AddMaterialOverride(UDatasmithMaterialIDElement Material) {}
 	///<summary>Get the amount of materials on this mesh</summary>

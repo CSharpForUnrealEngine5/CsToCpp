@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>* UDatasmithActorBindingElement</summary>
 [CppInclude("ObjectElements/DatasmithUObjectElements.h")]
 public partial class UDatasmithActorBindingElement : UDatasmithObjectElement {
+	public static UClass StaticClass() {return default;}
 	///<summary>Sets the actor that this binding will try capturing</summary>
 	public  void SetActor(UDatasmithActorElement Actor) {}
 	///<summary>Gets the actor that this binding will try capturing</summary>

@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>This class describes the main configuration for a Movie Render Pipeline.</summary>
 [CppInclude("MoviePipelinePrimaryConfig.h")]
 public partial class UMoviePipelinePrimaryConfig : UMoviePipelineConfigBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>Initializes a single instance of every setting so that even non-user-configured settings have a chance to apply their default values. Does nothing if they&#39;re already instanced for this configuration.</summary>
 	public  void InitializeTransientSettings() {}
 	///<summary>GetTransientSettings</summary>

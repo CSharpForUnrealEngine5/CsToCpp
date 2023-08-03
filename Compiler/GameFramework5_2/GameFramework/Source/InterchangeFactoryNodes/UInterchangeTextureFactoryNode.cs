@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("InterchangeTextureFactoryNode.h")]
 public partial class UInterchangeTextureFactoryNode : UInterchangeFactoryBaseNode {
+	public static UClass StaticClass() {return default;}
 	///<summary>Initialize node data</summary>
 	public  void InitializeTextureNode(string UniqueID,string DisplayLabel,string InAssetName) {}
 	///<summary>Get the class this node want to create</summary>

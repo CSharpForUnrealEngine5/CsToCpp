@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("OSCManager.h")]
 public partial class UOSCManager : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>Creates an OSC Server.  If ReceiveIPAddress left empty (or &#39;0&#39;),</summary>
 	public static UOSCServer CreateOSCServer(string ReceiveIPAddress,int Port,bool bMulticastLoopback,bool bStartListening,string ServerName,UObject Outer/*=nullptr*/) { return default; }
 	///<summary>Creates an OSC Client.  If SendIPAddress left empty (or &#39;0&#39;), attempts to use</summary>

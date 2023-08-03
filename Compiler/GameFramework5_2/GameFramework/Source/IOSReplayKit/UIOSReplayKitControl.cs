@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("IOSReplayKitControl.h")]
 public partial class UIOSReplayKitControl : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>StartRecording</summary>
 	public static void StartRecording(bool bMicrophoneEnabled/*=true*/) {}
 	///<summary>StopRecording</summary>

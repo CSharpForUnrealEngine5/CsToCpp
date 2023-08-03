@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A widget that allows you to specify the size it reports to have and desire.  Not all widgets report a desired size</summary>
 [CppInclude("Components/SizeBox.h")]
 public partial class USizeBox : UContentWidget {
+	public static UClass StaticClass() {return default;}
 	///<summary>When specified, ignore the content&#39;s desired size and report the WidthOverride as the Box&#39;s desired width.</summary>
 	public float WidthOverride;
 	///<summary>When specified, ignore the content&#39;s desired size and report the HeightOverride as the Box&#39;s desired height.</summary>

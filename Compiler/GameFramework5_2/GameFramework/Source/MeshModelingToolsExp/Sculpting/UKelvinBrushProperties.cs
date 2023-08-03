@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Sculpting/MeshSculptToolBase.h")]
 public partial class UKelvinBrushProperties : UInteractiveToolPropertySet {
+	public static UClass StaticClass() {return default;}
 	///<summary>Brush Fall off as fraction of brush size</summary>
 	public float FallOffDistance;
 	///<summary>How much the mesh resists shear</summary>

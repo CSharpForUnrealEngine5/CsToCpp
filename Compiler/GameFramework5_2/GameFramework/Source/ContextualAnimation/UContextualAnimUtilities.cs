@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("ContextualAnimUtilities.h")]
 public partial class UContextualAnimUtilities : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>BP_DrawDebugPose</summary>
 	public static void BP_DrawDebugPose(UObject WorldContextObject,UAnimSequenceBase Animation,float Time,FTransform LocalToWorldTransform,FLinearColor Color,float LifeTime,float Thickness) {}
 	///<summary>BP_CreateContextualAnimSceneBindings</summary>

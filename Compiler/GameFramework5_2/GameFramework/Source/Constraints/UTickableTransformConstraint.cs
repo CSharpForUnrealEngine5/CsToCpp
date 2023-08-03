@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>UTickableTransformConstraint</summary>
 [CppInclude("TransformConstraint.h")]
 public partial class UTickableTransformConstraint : UTickableConstraint {
+	public static UClass StaticClass() {return default;}
 	///<summary>The transformable handle representing the parent of that constraint.</summary>
 	public UTransformableHandle ParentTRSHandle;
 	///<summary>The transformable handle representing the child of that constraint.</summary>

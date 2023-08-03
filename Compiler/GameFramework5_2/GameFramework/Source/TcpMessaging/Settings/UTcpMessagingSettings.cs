@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Settings/TcpMessagingSettings.h")]
 public partial class UTcpMessagingSettings : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Whether the TCP transport channel is enabled</summary>
 	public bool EnableTransport;
 	///<summary>The IP endpoint to listen for incoming connections.</summary>

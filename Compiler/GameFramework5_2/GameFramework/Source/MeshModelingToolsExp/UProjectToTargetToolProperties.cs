@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Subclass URemeshMeshToolProperties just so we can set default values for some properties. Setting these values in the</summary>
 [CppInclude("ProjectToTargetTool.h")]
 public partial class UProjectToTargetToolProperties : URemeshMeshToolProperties {
+	public static UClass StaticClass() {return default;}
 	///<summary>bWorldSpace</summary>
 	public bool bWorldSpace;
 	///<summary>bParallel</summary>

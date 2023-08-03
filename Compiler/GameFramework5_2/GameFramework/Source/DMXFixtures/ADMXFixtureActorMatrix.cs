@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("DMXFixtureActorMatrix.h")]
 public partial class ADMXFixtureActorMatrix : ADMXFixtureActor {
+	public static UClass StaticClass() {return default;}
 	///<summary>MatrixHead</summary>
 	public UProceduralMeshComponent MatrixHead;
 	///<summary>MatrixWidth</summary>

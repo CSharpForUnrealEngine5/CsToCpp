@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Singleton manager object that handles dispatching gameplay cues and spawning GameplayCueNotify actors as needed</summary>
 [CppInclude("GameplayCueManager.h")]
 public partial class UGameplayCueManager : UDataAsset {
+	public static UClass StaticClass() {return default;}
 	///<summary>RuntimeGameplayCueObjectLibrary</summary>
 	public FGameplayCueObjectLibrary RuntimeGameplayCueObjectLibrary;
 	///<summary>EditorGameplayCueObjectLibrary</summary>

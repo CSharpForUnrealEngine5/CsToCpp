@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Commandlets/WorldPartitionDataLayerToAssetCommandLet.h")]
 public partial class UDataLayerToAssetCommandlet : UCommandlet {
+	public static UClass StaticClass() {return default;}
 	///<summary>DestinationFolder</summary>
 	public string DestinationFolder;
 	///<summary>ConversionFolder</summary>

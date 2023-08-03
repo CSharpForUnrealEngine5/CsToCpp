@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>ActorComponent is the base class for components that define reusable behavior that can be added to different types of Actors.</summary>
 [CppInclude("Components/ActorComponent.h")]
 public partial class UActorComponent : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Main tick function for the Component</summary>
 	public FActorComponentTickFunction PrimaryComponentTick;
 	///<summary>Array of tags that can be used for grouping and categorizing. Can also be accessed from scripting.</summary>

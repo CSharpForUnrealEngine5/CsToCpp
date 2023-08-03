@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>3D point in space used to render nDisplay viewports from</summary>
 [CppInclude("Components/DisplayClusterCameraComponent.h")]
 public partial class UDisplayClusterCameraComponent : USceneComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>Get interpupillary distance</summary>
 	public  float GetInterpupillaryDistance() { return default; }
 	///<summary>Set interpupillary distance</summary>

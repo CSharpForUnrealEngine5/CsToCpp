@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("GeometryScript/MeshPolygroupFunctions.h")]
 public partial class UGeometryScriptLibrary_MeshPolygroupFunctions : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>EnablePolygroups</summary>
 	public static UDynamicMesh EnablePolygroups(UDynamicMesh TargetMesh,UGeometryScriptDebug Debug/*=nullptr*/) { return default; }
 	///<summary>SetNumExtendedPolygroupLayers</summary>

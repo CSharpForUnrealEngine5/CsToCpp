@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>This class is the base drag drop operation for UMG, extend it to add additional data and add new functionality.</summary>
 [CppInclude("Blueprint/DragDropOperation.h")]
 public partial class UDragDropOperation : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>A simple string tag you can optionally use to provide extra metadata about the operation.</summary>
 	public string Tag;
 	///<summary>The payload of the drag operation.  This can be any UObject that you want to pass along as dragged data.  If you</summary>

@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Engine/LevelStreamingVolume.h")]
 public partial class ALevelStreamingVolume : AVolume {
+	public static UClass StaticClass() {return default;}
 	///<summary>Levels names affected by this level streaming volume.</summary>
 	public TArray<string> StreamingLevelNames;
 	///<summary>If true, this streaming volume should only be used for editor streaming level previs.</summary>

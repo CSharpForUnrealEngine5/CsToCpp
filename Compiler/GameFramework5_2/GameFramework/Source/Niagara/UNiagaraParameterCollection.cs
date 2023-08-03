@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Asset containing a collection of global parameters usable by Niagara.</summary>
 [CppInclude("NiagaraParameterCollection.h")]
 public partial class UNiagaraParameterCollection : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Namespace for this parameter collection. Is enforced to be unique across all parameter collections.</summary>
 	public string Namespace;
 	///<summary>Parameters</summary>

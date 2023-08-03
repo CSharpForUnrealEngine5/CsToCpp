@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Materials/MaterialExpressionDataDrivenShaderPlatformInfoSwitch.h")]
 public partial class UMaterialExpressionDataDrivenShaderPlatformInfoSwitch : UMaterialExpression {
+	public static UClass StaticClass() {return default;}
 	///<summary>InputTrue</summary>
 	public FExpressionInput InputTrue;
 	///<summary>InputFalse</summary>

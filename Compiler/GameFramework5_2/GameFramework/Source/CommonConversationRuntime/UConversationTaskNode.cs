@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>The ConversationTaskNode is the basis of any task in the conversation graph,</summary>
 [CppInclude("ConversationTaskNode.h")]
 public partial class UConversationTaskNode : UConversationNodeWithLinks {
+	public static UClass StaticClass() {return default;}
 	///<summary>Requirements and side effects</summary>
 	public TArray<UConversationSubNode> SubNodes;
 	///<summary>EDITOR ONLY VISUALS: Does this task internally have requirements?</summary>

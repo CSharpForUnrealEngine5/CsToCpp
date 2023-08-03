@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("GeometryScript/MeshDecompositionFunctions.h")]
 public partial class UGeometryScriptLibrary_MeshDecompositionFunctions : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>Create a new Mesh for each Connected Component of TargetMesh.</summary>
 	public static UDynamicMesh SplitMeshByComponents(UDynamicMesh TargetMesh,TArray<UDynamicMesh> ComponentMeshes,UDynamicMeshPool MeshPool,UGeometryScriptDebug Debug/*=nullptr*/) { return default; }
 	///<summary>Create a new Mesh for each MaterialID of TargetMesh.</summary>

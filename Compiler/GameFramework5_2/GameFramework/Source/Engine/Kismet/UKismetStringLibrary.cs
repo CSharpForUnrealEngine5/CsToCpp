@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Kismet/KismetStringLibrary.h")]
 public partial class UKismetStringLibrary : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>Converts a double value to a string</summary>
 	public static string Conv_DoubleToString(double InDouble) { return default; }
 	///<summary>Converts an integer value to a string</summary>

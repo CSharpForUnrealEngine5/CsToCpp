@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Media source description for Blackmagic.</summary>
 [CppInclude("BlackmagicMediaSource.h")]
 public partial class UBlackmagicMediaSource : UTimeSynchronizableMediaSource {
+	public static UClass StaticClass() {return default;}
 	///<summary>The device, port and video settings that correspond to the input.</summary>
 	public FMediaIOConfiguration MediaConfiguration;
 	///<summary>Use the time code embedded in the input stream.</summary>

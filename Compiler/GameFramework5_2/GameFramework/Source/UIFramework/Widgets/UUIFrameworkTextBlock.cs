@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Widgets/UIFTextBlock.h")]
 public partial class UUIFrameworkTextBlock : UUIFrameworkTextBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>SetShadowOffset</summary>
 	public  void SetShadowOffset(FVector2f ShadowOffset) {}
 	///<summary>GetShadowOffset</summary>

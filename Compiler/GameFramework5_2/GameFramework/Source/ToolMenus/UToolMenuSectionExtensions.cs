@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("ToolMenusBlueprintLibrary.h")]
 public partial class UToolMenuSectionExtensions : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>SetLabel</summary>
 	public static void SetLabel(FToolMenuSection Section,string Label) {}
 	///<summary>GetLabel</summary>

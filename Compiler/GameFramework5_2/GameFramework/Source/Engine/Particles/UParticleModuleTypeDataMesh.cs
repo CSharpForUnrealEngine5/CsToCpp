@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Particles/TypeData/ParticleModuleTypeDataMesh.h")]
 public partial class UParticleModuleTypeDataMesh : UParticleModuleTypeDataBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>The static mesh to render at the particle positions</summary>
 	public UStaticMesh Mesh;
 	///<summary>use the static mesh&#39;s LOD setup and switch LODs based on largest particle&#39;s screen size</summary>

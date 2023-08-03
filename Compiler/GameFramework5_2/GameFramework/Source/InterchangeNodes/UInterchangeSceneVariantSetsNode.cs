@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Class to represent a set of VariantSet nodes</summary>
 [CppInclude("InterchangeVariantSetNode.h")]
 public partial class UInterchangeSceneVariantSetsNode : UInterchangeBaseNode {
+	public static UClass StaticClass() {return default;}
 	///<summary>This function allow to retrieve the number of VariantSets for this object.</summary>
 	public  int GetCustomVariantSetUidCount() { return default; }
 	///<summary>This function allow to retrieve all the VariantSets&#39; unique ids for this object.</summary>

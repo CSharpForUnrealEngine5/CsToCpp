@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>AGeometryCollectionRenderLevelSetActor</summary>
 [CppInclude("GeometryCollection/GeometryCollectionRenderLevelSetActor.h")]
 public partial class AGeometryCollectionRenderLevelSetActor : AActor {
+	public static UClass StaticClass() {return default;}
 	///<summary>Volume texture to fill</summary>
 	public UVolumeTexture TargetVolumeTexture;
 	///<summary>Material that performs ray marching.  Note this must have certain parameters in order</summary>

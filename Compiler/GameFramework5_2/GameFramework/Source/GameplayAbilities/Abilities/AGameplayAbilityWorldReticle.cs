@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Reticles allow targeting to be visualized. Tasks can spawn these. Artists/designers can create BPs for these.</summary>
 [CppInclude("Abilities/GameplayAbilityWorldReticle.h")]
 public partial class AGameplayAbilityWorldReticle : AActor {
+	public static UClass StaticClass() {return default;}
 	///<summary>Called whenever bIsTargetValid changes value.</summary>
 	public  void OnValidTargetChanged(bool bNewValue) {}
 	///<summary>Called whenever bIsTargetAnActor changes value.</summary>

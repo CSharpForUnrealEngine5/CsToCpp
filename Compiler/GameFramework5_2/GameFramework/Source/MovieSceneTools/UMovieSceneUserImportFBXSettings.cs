@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("MovieSceneToolsUserSettings.h")]
 public partial class UMovieSceneUserImportFBXSettings : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Match fbx node names to sequencer node names</summary>
 	public bool bMatchByNameOnly;
 	///<summary>Convert the scene from FBX coordinate system to UE coordinate system with front X axis instead of -Y</summary>

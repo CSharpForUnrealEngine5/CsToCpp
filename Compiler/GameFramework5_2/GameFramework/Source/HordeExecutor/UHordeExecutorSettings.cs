@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("HordeExecutorSettings.h")]
 public partial class UHordeExecutorSettings : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>The Horde server content addressable storage address.</summary>
 	public string ContentAddressableStorageTarget;
 	///<summary>The Horde server execution address.</summary>

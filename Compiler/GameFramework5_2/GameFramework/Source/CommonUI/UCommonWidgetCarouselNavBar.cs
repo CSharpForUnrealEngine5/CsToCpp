@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A Navigation control for a Carousel</summary>
 [CppInclude("CommonWidgetCarouselNavBar.h")]
 public partial class UCommonWidgetCarouselNavBar : UWidget {
+	public static UClass StaticClass() {return default;}
 	///<summary>ButtonWidgetType</summary>
 	public UClass ButtonWidgetType;
 	///<summary>ButtonPadding</summary>

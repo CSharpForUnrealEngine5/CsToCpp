@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>CharacterMovementComponent handles movement logic for the associated Character owner.</summary>
 [CppInclude("GameFramework/CharacterMovementComponent.h")]
 public partial class UCharacterMovementComponent : UPawnMovementComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>Character movement component belongs to</summary>
 	public ACharacter CharacterOwner;
 	///<summary>Custom gravity scale. Gravity is multiplied by this amount for the character.</summary>

@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Implements a cinematic shot section.</summary>
 [CppInclude("Sections/MovieSceneCinematicShotSection.h")]
 public partial class UMovieSceneCinematicShotSection : UMovieSceneSubSection {
+	public static UClass StaticClass() {return default;}
 	///<summary>@return The shot display name. if empty, returns the sequence&#39;s name</summary>
 	public  string GetShotDisplayName() { return default; }
 	///<summary>Set the shot display name</summary>

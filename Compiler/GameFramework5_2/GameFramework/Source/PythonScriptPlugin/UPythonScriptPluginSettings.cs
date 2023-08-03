@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Configure the Python plug-in.</summary>
 [CppInclude("PythonScriptPluginSettings.h")]
 public partial class UPythonScriptPluginSettings : UDeveloperSettings {
+	public static UClass StaticClass() {return default;}
 	///<summary>Array of Python scripts to run at start-up (run before the first Tick after the Engine has initialized).</summary>
 	public TArray<string> StartupScripts;
 	///<summary>Array of additional paths to add to the Python system paths.</summary>

@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A geometry layer within the stereo rendered viewport.</summary>
 [CppInclude("Components/StereoLayerComponent.h")]
 public partial class UStereoLayerComponent : USceneComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>Change the texture displayed on the stereo layer.</summary>
 	public  void SetTexture(UTexture InTexture) {}
 	///<summary>Change the texture displayed on the stereo layer for left eye, if stereoscopic layer textures are supported on the platform.</summary>

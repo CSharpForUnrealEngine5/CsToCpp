@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Elements/Framework/TypedElementListLibrary.h")]
 public partial class UTypedElementListLibrary : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Create an empty list of elements associated with the given registry.</summary>
 	public static FScriptTypedElementListProxy CreateScriptElementList(UTypedElementRegistry Registry) { return default; }
 	///<summary>Clone this list instance.</summary>

@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("GameplayBehaviorsBlueprintFunctionLibrary.h")]
 public partial class UGameplayBehaviorsBlueprintFunctionLibrary : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>GetBlackboardValueAsGameplayTag</summary>
 	public static FGameplayTagContainer GetBlackboardValueAsGameplayTag(UBTNode NodeOwner,FBlackboardKeySelector Key) { return default; }
 	///<summary>SetBlackboardValueAsGameplayTag</summary>

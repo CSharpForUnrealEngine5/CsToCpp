@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("AIGraphNode.h")]
 public partial class UAIGraphNode : UEdGraphNode {
+	public static UClass StaticClass() {return default;}
 	///<summary>instance class</summary>
 	public FGraphNodeClassData ClassData;
 	///<summary>NodeInstance</summary>

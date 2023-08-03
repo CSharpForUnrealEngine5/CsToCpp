@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>VR Editor teleport manager and the visual representation of the teleport</summary>
 [CppInclude("Teleporter/VREditorTeleporter.h")]
 public partial class AVREditorTeleporter : AActor {
+	public static UClass StaticClass() {return default;}
 	///<summary>Initializes the teleporter</summary>
 	public  void Init(UVREditorMode InMode) {}
 	///<summary>Shuts down the teleporter</summary>

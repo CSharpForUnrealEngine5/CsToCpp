@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Ability task to simply play a montage. Many games will want to make a modified version of this task that looks for game-specific events</summary>
 [CppInclude("Abilities/Tasks/AbilityTask_PlayMontageAndWait.h")]
 public partial class UAbilityTask_PlayMontageAndWait : UAbilityTask {
+	public static UClass StaticClass() {return default;}
 	///<summary>OnCompleted</summary>
 	public FMontageWaitSimpleDelegate OnCompleted;
 	///<summary>OnBlendOut</summary>

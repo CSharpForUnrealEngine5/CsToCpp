@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Engine/PoseWatch.h")]
 public partial class UPoseWatch : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Node</summary>
 	public TWeakObjectPtr<UEdGraphNode> Node;
 	///<summary>ViewportMask_DEPRECATED</summary>

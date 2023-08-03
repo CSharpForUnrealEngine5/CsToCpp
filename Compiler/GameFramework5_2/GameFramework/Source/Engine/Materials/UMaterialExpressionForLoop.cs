@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Materials/MaterialExpressionForLoop.h")]
 public partial class UMaterialExpressionForLoop : UMaterialExpression {
+	public static UClass StaticClass() {return default;}
 	///<summary>LoopBody</summary>
 	public FExpressionExecOutput LoopBody;
 	///<summary>Completed</summary>

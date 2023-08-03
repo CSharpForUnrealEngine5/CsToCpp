@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Options for exporting skeletal mesh animations to USD format.</summary>
 [CppInclude("AnimSequenceExporterUSDOptions.h")]
 public partial class UAnimSequenceExporterUSDOptions : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Export options to use for the layer where the animation is emitted</summary>
 	public FUsdStageOptions StageOptions;
 	///<summary>Whether to also export the skeletal mesh data of the preview mesh</summary>

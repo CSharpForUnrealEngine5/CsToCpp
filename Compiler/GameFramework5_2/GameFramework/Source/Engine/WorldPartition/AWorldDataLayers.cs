@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Actor containing data layers instances within a world.</summary>
 [CppInclude("WorldPartition/DataLayer/WorldDataLayers.h")]
 public partial class AWorldDataLayers : AInfo {
+	public static UClass StaticClass() {return default;}
 	///<summary>OnDataLayerRuntimeStateChanged</summary>
 	public  void OnDataLayerRuntimeStateChanged(UDataLayerInstance InDataLayer,EDataLayerRuntimeState InState) {}
 	///<summary>OnRep_ActiveDataLayerNames</summary>

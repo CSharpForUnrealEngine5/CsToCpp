@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("MaterialGraph/MaterialGraph.h")]
 public partial class UMaterialGraph : UEdGraph {
+	public static UClass StaticClass() {return default;}
 	///<summary>Material this Graph represents</summary>
 	public UMaterial Material;
 	///<summary>Material Function this Graph represents (NULL for Materials)</summary>

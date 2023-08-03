@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Retargeter/IKRetargeter.h")]
 public partial class UIKRetargeter : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Returns the chain settings associated with a given Goal in an IK Retargeter Asset using the given profile name (optional)</summary>
 	public static FTargetChainSettings GetChainUsingGoalFromRetargetAsset(UIKRetargeter RetargetAsset,string IKGoalName) { return default; }
 	///<summary>Returns the chain settings associated with a given target chain in an IK Retargeter Asset using the given profile name (optional)</summary>

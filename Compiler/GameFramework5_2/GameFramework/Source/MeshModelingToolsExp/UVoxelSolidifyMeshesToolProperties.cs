@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Properties of the solidify operation</summary>
 [CppInclude("VoxelSolidifyMeshesTool.h")]
 public partial class UVoxelSolidifyMeshesToolProperties : UInteractiveToolPropertySet {
+	public static UClass StaticClass() {return default;}
 	///<summary>Winding number threshold to determine what is consider inside the mesh</summary>
 	public double WindingThreshold;
 	///<summary>How far we allow bounds of solid surface to go beyond the bounds of the original input surface before clamping / cutting the surface off</summary>

@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A component that spawns an Actor when registered, and destroys it when unregistered.</summary>
 [CppInclude("Components/ChildActorComponent.h")]
 public partial class UChildActorComponent : USceneComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>Sets the class to use for the child actor.</summary>
 	public  void SetChildActorClass(UClass InClass) {}
 	///<summary>The class of Actor to spawn</summary>

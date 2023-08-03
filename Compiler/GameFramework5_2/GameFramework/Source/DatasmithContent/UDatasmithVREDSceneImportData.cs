@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("DatasmithAssetImportData.h")]
 public partial class UDatasmithVREDSceneImportData : UDatasmithFBXSceneImportData {
+	public static UClass StaticClass() {return default;}
 	///<summary>bMergeNodes</summary>
 	public bool bMergeNodes;
 	///<summary>bOptimizeDuplicatedNodes</summary>

@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Elements/Metadata/PCGMetadataElement.h")]
 public partial class UPCGMetadataOperationSettings : UPCGSettings {
+	public static UClass StaticClass() {return default;}
 	///<summary>InputSource</summary>
 	public FPCGAttributePropertySelector InputSource;
 	///<summary>OutputTarget</summary>

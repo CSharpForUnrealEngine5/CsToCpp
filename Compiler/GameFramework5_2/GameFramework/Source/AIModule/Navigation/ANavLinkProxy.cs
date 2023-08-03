@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>ANavLinkProxy connects areas of Navmesh that don&#39;t have a direct navigation path.</summary>
 [CppInclude("Navigation/NavLinkProxy.h")]
 public partial class ANavLinkProxy : AActor {
+	public static UClass StaticClass() {return default;}
 	///<summary>Navigation links (point to point) added to navigation data</summary>
 	public TArray<FNavigationLink> PointLinks;
 	///<summary>Navigation links (segment to segment) added to navigation data</summary>

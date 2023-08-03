@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("EditorUtilityActor.h")]
 public partial class AEditorUtilityActor : AActor {
+	public static UClass StaticClass() {return default;}
 	///<summary>Standard function to execute</summary>
 	public  void Run() {}
 	///<summary>Returns the current InputComponent on this utility actor. This will be NULL unless bReceivesEditorInput is set to true.</summary>

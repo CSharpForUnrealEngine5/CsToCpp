@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>UEnhancedPlayerInput : UPlayerInput extensions for enhanced player input system</summary>
 [CppInclude("EnhancedPlayerInput.h")]
 public partial class UEnhancedPlayerInput : UPlayerInput {
+	public static UClass StaticClass() {return default;}
 	///<summary>Currently applied key mappings</summary>
 	public TMap<UInputMappingContext,int> AppliedInputContexts;
 	///<summary>This player&#39;s version of the Action Mappings</summary>

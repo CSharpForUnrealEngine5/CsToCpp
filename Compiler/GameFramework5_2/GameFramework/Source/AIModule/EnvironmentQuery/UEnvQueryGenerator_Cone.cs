@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("EnvironmentQuery/Generators/EnvQueryGenerator_Cone.h")]
 public partial class UEnvQueryGenerator_Cone : UEnvQueryGenerator_ProjectedPoints {
+	public static UClass StaticClass() {return default;}
 	///<summary>Distance between each point of the same angle</summary>
 	public FAIDataProviderFloatValue AlignedPointsDistance;
 	///<summary>Maximum degrees of the generated cone</summary>

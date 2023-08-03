@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("LidarPointCloudEditorTools.h")]
 public partial class ULidarToolActionsMeshing : UInteractiveToolPropertySet {
+	public static UClass StaticClass() {return default;}
 	///<summary>Max error around the meshed areas. Leave at 0 for max quality</summary>
 	public float MaxMeshingError;
 	///<summary>bMergeMeshes</summary>

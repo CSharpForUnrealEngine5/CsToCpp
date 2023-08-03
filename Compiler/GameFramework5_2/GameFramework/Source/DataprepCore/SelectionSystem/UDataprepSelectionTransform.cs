@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("SelectionSystem/DataprepSelectionTransform.h")]
 public partial class UDataprepSelectionTransform : UDataprepParameterizableObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Execute the transform</summary>
 	public  void Execute(TArray<UObject> InObjects,TArray<UObject> OutObjects) {}
 	///<summary>This function is called when the transform is executed.</summary>

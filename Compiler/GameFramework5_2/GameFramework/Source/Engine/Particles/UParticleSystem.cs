@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A ParticleSystem is a complete particle effect that contains any number of ParticleEmitters. By allowing multiple emitters</summary>
 [CppInclude("Particles/ParticleSystem.h")]
 public partial class UParticleSystem : UFXSystemAsset {
+	public static UClass StaticClass() {return default;}
 	///<summary>UpdateTime_FPS - the frame per second to update at in FixedTime mode</summary>
 	public float UpdateTime_FPS;
 	///<summary>UpdateTime_Delta       - internal</summary>

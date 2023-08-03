@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Material output expression for writing to a runtime virtual texture.</summary>
 [CppInclude("Materials/MaterialExpressionRuntimeVirtualTextureOutput.h")]
 public partial class UMaterialExpressionRuntimeVirtualTextureOutput : UMaterialExpressionCustomOutput {
+	public static UClass StaticClass() {return default;}
 	///<summary>Input for Base Color to output to virtual texture.</summary>
 	public FExpressionInput BaseColor;
 	///<summary>Input for Specular to output to virtual texture.</summary>

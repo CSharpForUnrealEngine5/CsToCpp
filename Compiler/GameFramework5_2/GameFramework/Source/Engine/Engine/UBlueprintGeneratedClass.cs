@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Engine/BlueprintGeneratedClass.h")]
 public partial class UBlueprintGeneratedClass : UClass {
+	public static UClass StaticClass() {return default;}
 	///<summary>NumReplicatedProperties</summary>
 	public int NumReplicatedProperties;
 	///<summary>bHasNativizedParent_DEPRECATED</summary>

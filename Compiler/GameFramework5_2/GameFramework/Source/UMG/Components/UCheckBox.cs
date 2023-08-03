@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>The checkbox widget allows you to display a toggled state of &#39;unchecked&#39;, &#39;checked&#39; and</summary>
 [CppInclude("Components/CheckBox.h")]
 public partial class UCheckBox : UContentWidget {
+	public static UClass StaticClass() {return default;}
 	///<summary>Whether the check box is currently in a checked state</summary>
 	public ECheckBoxState CheckedState;
 	///<summary>A bindable delegate for the IsChecked.</summary>

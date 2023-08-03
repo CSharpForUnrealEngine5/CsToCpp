@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Implements the settings for the Windows target platform. The first instance of this class is initialized in</summary>
 [CppInclude("WindowsTargetSettings.h")]
 public partial class UWindowsTargetSettings : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Select which RHI to use. Make sure its also selected as a Targeted RHI. Requires Editor restart.</summary>
 	public EDefaultGraphicsRHI DefaultGraphicsRHI;
 	///<summary>TargetedRHIs_DEPRECATED</summary>

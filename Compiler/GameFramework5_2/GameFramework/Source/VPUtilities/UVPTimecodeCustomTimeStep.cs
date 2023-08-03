@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Control the engine&#39;s time step via the engine&#39;s TimecodeProvider.</summary>
 [CppInclude("VPTimecodeCustomTimeStep.h")]
 public partial class UVPTimecodeCustomTimeStep : UFixedFrameRateCustomTimeStep {
+	public static UClass StaticClass() {return default;}
 	///<summary>If true, stop the CustomTimeStep if the new timecode value doesn&#39;t follow the previous timecode value.</summary>
 	public bool bErrorIfFrameAreNotConsecutive;
 	///<summary>If true, stop the CustomTimeStep if the engine&#39;s TimeProvider changed since last frame.</summary>

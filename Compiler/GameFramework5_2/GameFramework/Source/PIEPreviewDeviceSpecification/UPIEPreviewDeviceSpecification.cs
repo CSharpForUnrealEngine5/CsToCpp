@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("PIEPreviewDeviceSpecification.h")]
 public partial class UPIEPreviewDeviceSpecification : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>PreviewDeviceType</summary>
 	public EPIEPreviewDeviceType PreviewDeviceType;
 	///<summary>GPUFamily</summary>

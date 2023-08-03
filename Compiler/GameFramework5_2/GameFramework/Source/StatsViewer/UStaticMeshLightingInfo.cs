@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Statistics page for static meshes.</summary>
 [CppInclude("StaticMeshLightingInfo.h")]
 public partial class UStaticMeshLightingInfo : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>The actor that is related to this error/warning.</summary>
 	public TWeakObjectPtr<AActor> StaticMeshActor;
 	///<summary>The source StaticMesh that is related to this info.</summary>

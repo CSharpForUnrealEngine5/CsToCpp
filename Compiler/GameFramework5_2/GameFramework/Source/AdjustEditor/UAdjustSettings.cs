@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("AdjustSettings.h")]
 public partial class UAdjustSettings : UAnalyticsSettingsBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>Check to run in sandbox mode instead of production for non-distribution builds</summary>
 	public bool bSandboxNondistribution;
 	///<summary>Check to run in sandbox mode instead of production for distribution builds</summary>

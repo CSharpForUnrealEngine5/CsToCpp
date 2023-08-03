@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A 2d texture that will be rendered always facing the camera.</summary>
 [CppInclude("Components/BillboardComponent.h")]
 public partial class UBillboardComponent : UPrimitiveComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>Sprite</summary>
 	public UTexture2D Sprite;
 	///<summary>bIsScreenSizeScaled</summary>

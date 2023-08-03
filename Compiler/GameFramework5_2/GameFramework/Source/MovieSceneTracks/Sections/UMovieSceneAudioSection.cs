@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Audio section, for use in the audio track, or by attached audio objects</summary>
 [CppInclude("Sections/MovieSceneAudioSection.h")]
 public partial class UMovieSceneAudioSection : UMovieSceneSection {
+	public static UClass StaticClass() {return default;}
 	///<summary>Sets this section&#39;s sound</summary>
 	public  void SetSound(USoundBase InSound) {}
 	///<summary>Gets the sound for this section</summary>

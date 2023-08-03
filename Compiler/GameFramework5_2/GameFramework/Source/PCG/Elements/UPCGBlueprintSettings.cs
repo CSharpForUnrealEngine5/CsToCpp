@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Elements/PCGExecuteBlueprint.h")]
 public partial class UPCGBlueprintSettings : UPCGSettings {
+	public static UClass StaticClass() {return default;}
 	///<summary>SetElementType</summary>
 	public  void SetElementType(UClass InElementType,UPCGBlueprintElement ElementInstance) {}
 	///<summary>GetElementType</summary>

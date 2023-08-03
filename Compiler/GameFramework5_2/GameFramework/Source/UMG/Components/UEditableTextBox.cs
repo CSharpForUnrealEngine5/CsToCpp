@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Allows the user to type in custom text.  Only permits a single line of text to be entered.</summary>
 [CppInclude("Components/EditableTextBox.h")]
 public partial class UEditableTextBox : UWidget {
+	public static UClass StaticClass() {return default;}
 	///<summary>FOnEditableTextBoxChangedEvent</summary>
 	public  void FOnEditableTextBoxChangedEvent(string Text) {}
 	///<summary>FOnEditableTextBoxCommittedEvent</summary>

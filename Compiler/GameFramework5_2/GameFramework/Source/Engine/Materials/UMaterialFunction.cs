@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A Material Function is a collection of material expressions that can be reused in different materials</summary>
 [CppInclude("Materials/MaterialFunction.h")]
 public partial class UMaterialFunction : UMaterialFunctionInterface {
+	public static UClass StaticClass() {return default;}
 	///<summary>Used in the material editor, points to the function asset being edited, which this function is just a preview for.</summary>
 	public UMaterialFunction ParentFunction;
 	///<summary>Description of the function which will be displayed as a tooltip wherever the function is used.</summary>

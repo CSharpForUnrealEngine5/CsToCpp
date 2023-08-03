@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("NiagaraNodeDataSetBase.h")]
 public partial class UNiagaraNodeDataSetBase : UNiagaraNode {
+	public static UClass StaticClass() {return default;}
 	///<summary>DataSet</summary>
 	public FNiagaraDataSetID DataSet;
 	///<summary>Variables</summary>

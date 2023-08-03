@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Settings for the camera calibration when in editor and standalone.</summary>
 [CppInclude("CameraCalibrationSettings.h")]
 public partial class UCameraCalibrationEditorSettings : UDeveloperSettings {
+	public static UClass StaticClass() {return default;}
 	///<summary>True if a lens file button shortcut should be added to level editor toolbar.</summary>
 	public bool bShowEditorToolbarButton;
 	///<summary>Data Table category color settings</summary>

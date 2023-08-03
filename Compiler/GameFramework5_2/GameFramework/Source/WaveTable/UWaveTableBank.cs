@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("WaveTableBank.h")]
 public partial class UWaveTableBank : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Number of samples cached for each curve in the given bank.</summary>
 	public EWaveTableResolution Resolution;
 	///<summary>Determines if output from curve/wavetable are to be clamped between</summary>

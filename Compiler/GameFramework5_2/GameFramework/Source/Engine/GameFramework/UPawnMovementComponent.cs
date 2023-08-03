@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>PawnMovementComponent can be used to update movement for an associated Pawn.</summary>
 [CppInclude("GameFramework/PawnMovementComponent.h")]
 public partial class UPawnMovementComponent : UNavMovementComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>Adds the given vector to the accumulated input in world space. Input vectors are usually between 0 and 1 in magnitude.</summary>
 	public  void AddInputVector(FVector WorldVector,bool bForce/*=false*/) {}
 	///<summary>Return the pending input vector in world space. This is the most up-to-date value of the input vector, pending ConsumeMovementInputVector() which clears it.</summary>

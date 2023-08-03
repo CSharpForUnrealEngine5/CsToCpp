@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A spline component is a spline shape which can be used for other purposes (e.g. animating objects). It contains debug rendering capabilities.</summary>
 [CppInclude("Components/SplineComponent.h")]
 public partial class USplineComponent : UPrimitiveComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>SplineCurves</summary>
 	public FSplineCurves SplineCurves;
 	///<summary>Deprecated - please use GetSplinePointsPosition() to fetch this FInterpCurve</summary>

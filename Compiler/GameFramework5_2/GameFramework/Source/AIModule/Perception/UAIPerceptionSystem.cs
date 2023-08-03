@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>By design checks perception between hostile teams</summary>
 [CppInclude("Perception/AIPerceptionSystem.h")]
 public partial class UAIPerceptionSystem : UAISubsystem {
+	public static UClass StaticClass() {return default;}
 	///<summary>Senses</summary>
 	public TArray<UAISense> Senses;
 	///<summary>PerceptionAgingRate</summary>

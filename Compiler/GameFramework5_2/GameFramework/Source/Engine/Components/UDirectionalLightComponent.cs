@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A light component that has parallel rays. Will provide a uniform lighting across any affected surface (eg. The Sun). This will affect all objects in the defined light-mass importance volume.</summary>
 [CppInclude("Components/DirectionalLightComponent.h")]
 public partial class UDirectionalLightComponent : ULightComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>Controls the depth bias scaling across cascades. This allows to mitigage the shadow acne difference on shadow cascades transition.</summary>
 	public float ShadowCascadeBiasDistribution;
 	///<summary>Whether to occlude fog and atmosphere inscattering with screenspace blurred occlusion from this light.</summary>

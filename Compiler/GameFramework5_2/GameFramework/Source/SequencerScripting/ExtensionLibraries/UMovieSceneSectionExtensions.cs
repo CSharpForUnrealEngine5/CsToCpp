@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Function library containing methods that should be hoisted onto UMovieSceneSections for scripting</summary>
 [CppInclude("ExtensionLibraries/MovieSceneSectionExtensions.h")]
 public partial class UMovieSceneSectionExtensions : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>Has start frame</summary>
 	public static bool HasStartFrame(UMovieSceneSection Section) { return default; }
 	///<summary>Get start frame. Will throw an exception if section has no start frame, use HasStartFrame to check first.</summary>

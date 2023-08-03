@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("WaterLandscapeBrush.h")]
 public partial class AWaterLandscapeBrush : ALandscapeBlueprintBrush {
+	public static UClass StaticClass() {return default;}
 	///<summary>GetWaterBodies</summary>
 	public  void GetWaterBodies(UClass WaterBodyClass,TArray<AWaterBody> OutWaterBodies) {}
 	///<summary>GetWaterBodyIslands</summary>

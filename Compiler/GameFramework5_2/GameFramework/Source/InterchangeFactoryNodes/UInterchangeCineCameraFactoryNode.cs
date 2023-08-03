@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("InterchangeCineCameraFactoryNode.h")]
 public partial class UInterchangeCineCameraFactoryNode : UInterchangeActorFactoryNode {
+	public static UClass StaticClass() {return default;}
 	///<summary>GetCustomFocalLength</summary>
 	public  bool GetCustomFocalLength(float AttributeValue) { return default; }
 	///<summary>SetCustomFocalLength</summary>

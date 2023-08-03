@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("FractureToolProperties.h")]
 public partial class UFractureRemoveOnBreakSettings : UFractureToolSettings {
+	public static UClass StaticClass() {return default;}
 	///<summary>whether or not the remove on fracture is enabled</summary>
 	public bool Enabled;
 	///<summary>Min/Max time after break before removal starts</summary>

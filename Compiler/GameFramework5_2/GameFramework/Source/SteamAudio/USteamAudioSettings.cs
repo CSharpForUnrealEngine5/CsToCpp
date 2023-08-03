@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("SteamAudioSettings.h")]
 public partial class USteamAudioSettings : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>OutputSubmix</summary>
 	public FSoftObjectPath OutputSubmix;
 	///<summary>Which audio engine to use.</summary>

@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>UV Align Settings</summary>
 [CppInclude("Operators/UVEditorUVTransformOp.h")]
 public partial class UUVEditorUVAlignProperties : UUVEditorUVTransformPropertiesBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>Controls what geometry the alignment is to be relative to when performed.</summary>
 	public EUVEditorAlignAnchor AlignAnchor;
 	///<summary>Manual anchor location for relative alignment</summary>

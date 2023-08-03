@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>The progress bar widget is a simple bar that fills up that can be restyled to fit any number of uses.</summary>
 [CppInclude("Components/ProgressBar.h")]
 public partial class UProgressBar : UWidget {
+	public static UClass StaticClass() {return default;}
 	///<summary>The progress bar style</summary>
 	public FProgressBarStyle WidgetStyle;
 	///<summary>Used to determine the fill position of the progress bar ranging 0..1</summary>

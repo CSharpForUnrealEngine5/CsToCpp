@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("EditorUtilitySubsystem.h")]
 public partial class UEditorUtilitySubsystem : UEditorSubsystem {
+	public static UClass StaticClass() {return default;}
 	///<summary>LoadedUIs</summary>
 	public TArray<FSoftObjectPath> LoadedUIs;
 	///<summary>StartupObjects</summary>

@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>material settings for mesh inspector tool</summary>
 [CppInclude("MeshInspectorTool.h")]
 public partial class UMeshInspectorMaterialProperties : UInteractiveToolPropertySet {
+	public static UClass StaticClass() {return default;}
 	///<summary>Material that will be used to render the mesh</summary>
 	public EMeshInspectorMaterialMode MaterialMode;
 	///<summary>Number of checkerboard tiles within the 0 to 1 range; only available when Checkerboard is selected as material mode</summary>

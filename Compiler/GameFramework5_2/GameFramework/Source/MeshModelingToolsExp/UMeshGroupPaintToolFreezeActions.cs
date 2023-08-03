@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("MeshGroupPaintTool.h")]
 public partial class UMeshGroupPaintToolFreezeActions : UMeshGroupPaintToolActionPropertySet {
+	public static UClass StaticClass() {return default;}
 	///<summary>UnfreezeAll</summary>
 	public  void UnfreezeAll() {}
 	///<summary>FreezeCurrent</summary>

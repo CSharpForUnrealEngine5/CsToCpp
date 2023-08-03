@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Elements/PCGTransformPoints.h")]
 public partial class UPCGTransformPointsSettings : UPCGSettings {
+	public static UClass StaticClass() {return default;}
 	///<summary>bApplyToAttribute</summary>
 	public bool bApplyToAttribute;
 	///<summary>AttributeName</summary>

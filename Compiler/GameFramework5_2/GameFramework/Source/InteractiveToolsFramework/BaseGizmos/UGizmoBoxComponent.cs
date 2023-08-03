@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Simple Component intended to be used as part of 3D Gizmos.</summary>
 [CppInclude("BaseGizmos/GizmoBoxComponent.h")]
 public partial class UGizmoBoxComponent : UGizmoBaseComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>Origin</summary>
 	public FVector Origin;
 	///<summary>Rotation</summary>

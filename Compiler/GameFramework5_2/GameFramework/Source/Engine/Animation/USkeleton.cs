@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>USkeleton : that links between mesh and animation</summary>
 [CppInclude("Animation/Skeleton.h")]
 public partial class USkeleton : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Skeleton bone tree - each contains name and parent index*</summary>
 	public TArray<FBoneNode> BoneTree;
 	///<summary>Reference skeleton poses in local space</summary>

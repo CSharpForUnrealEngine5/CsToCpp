@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("ChaosClothAsset/ClothWeightMapPaintTool.h")]
 public partial class UClothEditorWeightMapPaintBrushFilterProperties : UInteractiveToolPropertySet {
+	public static UClass StaticClass() {return default;}
 	///<summary>Primary Brush Mode //UPROPERTY(EditAnywhere, Category = Brush2, meta = (DisplayName = &quot;Brush Type&quot;))</summary>
 	public EClothEditorWeightMapPaintInteractionType SubToolType;
 	///<summary>PrimaryBrushType</summary>

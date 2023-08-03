@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Settings that holds editor configurations. Not accessible in Project Settings. TODO: Idealy rename to UDMXEditorConfiguration</summary>
 [CppInclude("DMXEditorSettings.h")]
 public partial class UDMXEditorSettings : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>LastGDTFImportPath</summary>
 	public string LastGDTFImportPath;
 	///<summary>LastMVRImportPath</summary>

@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("MotionExtractorUtilities.h")]
 public partial class UMotionExtractorUtilityLibrary : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>Generates a curve name based on input settings.</summary>
 	public static string GenerateCurveName(string BoneName,EMotionExtractor_MotionType MotionType,EMotionExtractor_Axis Axis) { return default; }
 	///<summary>Returns the desired value from the extracted poses based on input settings.</summary>

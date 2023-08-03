@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Applies force to character&#39;s movement</summary>
 [CppInclude("Abilities/Tasks/AbilityTask_ApplyRootMotionConstantForce.h")]
 public partial class UAbilityTask_ApplyRootMotionConstantForce : UAbilityTask_ApplyRootMotion_Base {
+	public static UClass StaticClass() {return default;}
 	///<summary>OnFinish</summary>
 	public FApplyRootMotionConstantForceDelegate OnFinish;
 	///<summary>Apply force to character&#39;s movement</summary>

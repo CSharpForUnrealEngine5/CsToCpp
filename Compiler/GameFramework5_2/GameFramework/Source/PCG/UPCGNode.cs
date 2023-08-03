@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("PCGNode.h")]
 public partial class UPCGNode : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Returns the owning graph</summary>
 	public  UPCGGraph GetGraph() { return default; }
 	///<summary>Adds an edge in the owning graph to the given &quot;To&quot; node.</summary>

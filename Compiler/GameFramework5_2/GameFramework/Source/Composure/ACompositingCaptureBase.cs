@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Base class for CG Compositing Elements</summary>
 [CppInclude("CompositingCaptureBase.h")]
 public partial class ACompositingCaptureBase : ACompositingElement {
+	public static UClass StaticClass() {return default;}
 	///<summary>Component used to generate the scene capture for this CG Layer</summary>
 	public USceneCaptureComponent2D SceneCaptureComponent2D;
 	///<summary>Whether to apply distortion as a post-process effect on this CG Layer</summary>

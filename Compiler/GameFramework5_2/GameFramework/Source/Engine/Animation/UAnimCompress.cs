@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Animation/AnimCompress.h")]
 public partial class UAnimCompress : UAnimBoneCompressionCodec {
+	public static UClass StaticClass() {return default;}
 	///<summary>Compression algorithms requiring a skeleton should set this value to true.</summary>
 	public bool bNeedsSkeleton;
 	///<summary>Format for bitwise compression of translation data.</summary>

@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Holds the settings for the AGameNetworkManager class.</summary>
 [CppInclude("GameNetworkManagerSettings.h")]
 public partial class UGameNetworkManagerSettings : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Minimum bandwidth dynamically set per connection.</summary>
 	public int MinDynamicBandwidth;
 	///<summary>Maximum bandwidth dynamically set per connection.</summary>

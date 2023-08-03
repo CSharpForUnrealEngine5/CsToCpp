@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("WorldPartition/WorldPartitionBlueprintLibrary.h")]
 public partial class UWorldPartitionBlueprintLibrary : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>Gets the editor world bounds, which includes all actor descriptors.</summary>
 	public static FBox GetEditorWorldBounds() { return default; }
 	///<summary>Gets the runtime world bounds, which only includes actor descriptors that aren&#39;t editor only.</summary>

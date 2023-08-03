@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("NiagaraSettings.h")]
 public partial class UNiagaraSettings : UDeveloperSettings {
+	public static UClass StaticClass() {return default;}
 	///<summary>AdditionalParameterTypes</summary>
 	public TArray<FSoftObjectPath> AdditionalParameterTypes;
 	///<summary>AdditionalPayloadTypes</summary>

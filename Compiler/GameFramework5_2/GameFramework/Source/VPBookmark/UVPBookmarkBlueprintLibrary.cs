@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("VPBookmarkBlueprintLibrary.h")]
 public partial class UVPBookmarkBlueprintLibrary : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>FindVPBookmark</summary>
 	public static UVPBookmark FindVPBookmark(AActor Actor) { return default; }
 	///<summary>GetAllVPBookmarkActors</summary>

@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>AudioComponent is used to play a Sound</summary>
 [CppInclude("Components/AudioComponent.h")]
 public partial class UAudioComponent : USceneComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>The sound to be played</summary>
 	public USoundBase Sound;
 	///<summary>Array of parameters for this AudioComponent. Changes to this array directly will</summary>

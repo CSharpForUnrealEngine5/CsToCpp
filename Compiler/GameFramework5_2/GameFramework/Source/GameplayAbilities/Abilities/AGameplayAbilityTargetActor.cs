@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>TargetActors are spawned to assist with ability targeting. They are spawned by ability tasks and create/determine the outgoing targeting data passed from one task to another</summary>
 [CppInclude("Abilities/GameplayAbilityTargetActor.h")]
 public partial class AGameplayAbilityTargetActor : AActor {
+	public static UClass StaticClass() {return default;}
 	///<summary>The TargetData this class produces can be entirely generated on the server. We don&#39;t require the client to send us full or partial TargetData (possibly just a &#39;confirm&#39;)</summary>
 	public bool ShouldProduceTargetDataOnServer;
 	///<summary>Describes where the targeting action starts, usually the player character or a socket on the player character. //UPROPERTY(BlueprintReadOnly, meta=(ExposeOnSpawn=true), Category=Targeting)</summary>

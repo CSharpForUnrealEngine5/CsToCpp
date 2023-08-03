@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("MoviePipelineDeferredPasses.h")]
 public partial class UMoviePipelineDeferredPassBase : UMoviePipelineImagePassBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>Should multiple temporal/spatial samples accumulate the alpha channel? This requires r.PostProcessing.PropagateAlpha</summary>
 	public bool bAccumulatorIncludesAlpha;
 	///<summary>Certain passes don&#39;t support post-processing effects that blend pixels together. These include effects like</summary>

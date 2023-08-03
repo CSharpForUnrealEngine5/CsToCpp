@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("ModelingToolsEditorModeSettings.h")]
 public partial class UModelingToolsModeCustomizationSettings : UDeveloperSettings {
+	public static UClass StaticClass() {return default;}
 	///<summary>Add the names of Modeling Mode Tool Palette Sections to have them appear at the top of the Tool Palette, in the order listed below.</summary>
 	public TArray<string> ToolSectionOrder;
 	///<summary>Tool Names listed in the array below will appear in a Favorites section at the top of the Modeling Mode Tool Palette</summary>

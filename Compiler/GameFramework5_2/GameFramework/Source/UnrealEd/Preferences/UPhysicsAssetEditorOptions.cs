@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Preferences/PhysicsAssetEditorOptions.h")]
 public partial class UPhysicsAssetEditorOptions : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Lets you manually control the physics/animation</summary>
 	public float PhysicsBlend;
 	///<summary>Lets you manually control the physics/animation</summary>

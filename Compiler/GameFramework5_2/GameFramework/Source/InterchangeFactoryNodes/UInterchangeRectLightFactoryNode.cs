@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("InterchangeLightFactoryNode.h")]
 public partial class UInterchangeRectLightFactoryNode : UInterchangeLightFactoryNode {
+	public static UClass StaticClass() {return default;}
 	///<summary>GetCustomSourceWidth</summary>
 	public  bool GetCustomSourceWidth(float AttributeValue) { return default; }
 	///<summary>SetCustomSourceWidth</summary>

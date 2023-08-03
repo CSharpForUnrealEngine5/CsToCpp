@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("MetasoundSettings.h")]
 public partial class UMetaSoundSettings : UDeveloperSettings {
+	public static UClass StaticClass() {return default;}
 	///<summary>If true, AutoUpdate is enabled, increasing load times.  If false, skips AutoUpdate on load, but can result in MetaSounds failing to load,</summary>
 	public bool bAutoUpdateEnabled;
 	///<summary>List of native MetaSound classes whose node references should not be AutoUpdated.</summary>

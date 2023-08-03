@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Legacy camera shake which can do either oscillation or run camera anims.</summary>
 [CppInclude("LegacyCameraShake.h")]
 public partial class ULegacyCameraShake : UCameraShakeBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>Duration in seconds of current screen shake. Less than 0 means indefinite, 0 means no oscillation.</summary>
 	public float OscillationDuration;
 	///<summary>Duration of the blend-in, where the oscillation scales from 0 to 1.</summary>

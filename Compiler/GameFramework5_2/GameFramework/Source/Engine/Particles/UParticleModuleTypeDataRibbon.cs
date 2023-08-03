@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Particles/TypeData/ParticleModuleTypeDataRibbon.h")]
 public partial class UParticleModuleTypeDataRibbon : UParticleModuleTypeDataBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>The maximum amount to tessellate between two particles of the trail.</summary>
 	public int MaxTessellationBetweenParticles;
 	///<summary>The number of sheets to render for the trail.</summary>

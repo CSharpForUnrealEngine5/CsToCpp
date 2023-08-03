@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("LandscapeSettings.h")]
 public partial class ULandscapeSettings : UDeveloperSettings {
+	public static UClass StaticClass() {return default;}
 	///<summary>This option controls the maximum editing layers that can be added to a Landscape</summary>
 	public int MaxNumberOfLayers;
 	///<summary>LandscapeDirtyingMode</summary>

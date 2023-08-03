@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>UDirectionalLightGizmo provides a gizmo to allow for editing directional light properties in viewport</summary>
 [CppInclude("DirectionalLightGizmo.h")]
 public partial class UDirectionalLightGizmo : UInteractiveGizmo {
+	public static UClass StaticClass() {return default;}
 	///<summary>A transform proxy of the LightActor</summary>
 	public USubTransformProxy TransformProxy;
 	///<summary>World</summary>

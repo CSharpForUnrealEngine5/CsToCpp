@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("InterchangeDatasmithPipeline.h")]
 public partial class UInterchangeDatasmithPipeline : UInterchangePipelineBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>TexturePipeline</summary>
 	public UInterchangeDatasmithTexturePipeline TexturePipeline;
 	///<summary>MaterialPipeline</summary>

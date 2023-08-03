@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A AConcertClientDesktopPresenceActor is a child of AConcertClientPresenceActor that is used to represent users in desktop</summary>
 [CppInclude("ConcertClientDesktopPresenceActor.h")]
 public partial class AConcertClientDesktopPresenceActor : AConcertClientPresenceActor {
+	public static UClass StaticClass() {return default;}
 	///<summary>The camera mesh component to show visually where the camera is placed</summary>
 	public UStaticMeshComponent DesktopMeshComponent;
 	///<summary>Spline mesh representing laser</summary>

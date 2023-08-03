@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("DatasmithScene.h")]
 public partial class UDatasmithScene : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Importing data and options used for this Datasmith scene</summary>
 	public UDatasmithSceneImportData AssetImportData;
 	///<summary>BulkDataVersion</summary>

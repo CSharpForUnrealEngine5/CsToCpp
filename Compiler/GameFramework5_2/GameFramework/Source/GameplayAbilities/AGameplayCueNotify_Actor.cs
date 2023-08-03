@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>An instantiated Actor that acts as a handler of a GameplayCue. Since they are instantiated, they can maintain state and tick/update every frame if necessary.</summary>
 [CppInclude("GameplayCueNotify_Actor.h")]
 public partial class AGameplayCueNotify_Actor : AActor {
+	public static UClass StaticClass() {return default;}
 	///<summary>OnOwnerDestroyed</summary>
 	public  void OnOwnerDestroyed(AActor DestroyedActor) {}
 	///<summary>Ends the gameplay cue: either destroying it or recycling it. You must call this manually only if you do not use bAutoDestroyOnRemove/AutoDestroyDelay</summary>

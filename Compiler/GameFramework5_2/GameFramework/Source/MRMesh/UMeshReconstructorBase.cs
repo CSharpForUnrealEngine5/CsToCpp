@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("MeshReconstructorBase.h")]
 public partial class UMeshReconstructorBase : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>StartReconstruction</summary>
 	public  void StartReconstruction() {}
 	///<summary>StopReconstruction</summary>

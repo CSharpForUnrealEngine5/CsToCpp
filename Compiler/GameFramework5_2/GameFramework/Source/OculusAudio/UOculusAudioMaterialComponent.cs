@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>* OculusAudio material components are used to set the acoustic properties of the geometry.</summary>
 [CppInclude("OculusAudioMaterialComponent.h")]
 public partial class UOculusAudioMaterialComponent : UActorComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>Choose from a variety of preset physical materials, or choose Custom to specify values manually.</summary>
 	public EOculusAudioMaterial MaterialPreset;
 	///<summary>How much this material absorbs @ 63Hz</summary>

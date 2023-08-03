@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("NiagaraDataChannelHandler.h")]
 public partial class UNiagaraDataChannelHandler : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>GetDataChannelWriter</summary>
 	public  UNiagaraDataChannelWriter GetDataChannelWriter() { return default; }
 	///<summary>GetDataChannelReader</summary>

@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("ControlRigBlueprint.h")]
 public partial class UControlRigBlueprint : UBlueprint {
+	public static UClass StaticClass() {return default;}
 	///<summary>IInterface_PreviewMeshProvider interface</summary>
 	public  void SetPreviewMesh(USkeletalMesh PreviewMesh,bool bMarkAsDirty/*=true*/) {}
 	///<summary>GetPreviewMesh</summary>

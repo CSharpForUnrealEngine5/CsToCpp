@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Handles animation of skeletal mesh actors</summary>
 [CppInclude("Tracks/MovieSceneSkeletalAnimationTrack.h")]
 public partial class UMovieSceneSkeletalAnimationTrack : UMovieSceneNameableTrack {
+	public static UClass StaticClass() {return default;}
 	///<summary>List of all animation sections</summary>
 	public TArray<UMovieSceneSection> AnimationSections;
 	///<summary>bUseLegacySectionIndexBlend</summary>

@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("MoviePipelineHighResSetting.h")]
 public partial class UMoviePipelineHighResSetting : UMoviePipelineSetting {
+	public static UClass StaticClass() {return default;}
 	///<summary>How many tiles should the resulting movie render be broken into? A tile should be no larger than</summary>
 	public int TileCount;
 	///<summary>This bias encourages the engine to use a higher detail texture when it would normally use a lower detail</summary>

@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("PixelStreamingBlueprints.h")]
 public partial class UPixelStreamingBlueprints : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>Send a specified byte array over the WebRTC peer connection data channel. The extension and mime type are used for file reconstruction on the front end</summary>
 	public static void SendFileAsByteArray(TArray<byte> ByteArray,string MimeType,string FileExtension) {}
 	///<summary>Send a specified byte array over the WebRTC peer connection data channel. The extension and mime type are used for file reconstruction on the front end</summary>

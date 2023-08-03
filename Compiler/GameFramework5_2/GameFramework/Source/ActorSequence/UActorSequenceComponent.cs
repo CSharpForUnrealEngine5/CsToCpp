@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Movie scene animation embedded within an actor.</summary>
 [CppInclude("ActorSequenceComponent.h")]
 public partial class UActorSequenceComponent : UActorComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>Calls the Play function on the SequencePlayer if its valid.</summary>
 	public  void PlaySequence() {}
 	///<summary>Calls the Pause function on the SequencePlayer if its valid.</summary>

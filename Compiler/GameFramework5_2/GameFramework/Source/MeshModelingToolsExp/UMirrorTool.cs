@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Tool for mirroring one or more meshes across a plane.</summary>
 [CppInclude("MirrorTool.h")]
 public partial class UMirrorTool : UMultiSelectionMeshEditingTool {
+	public static UClass StaticClass() {return default;}
 	///<summary>Settings</summary>
 	public UMirrorToolProperties Settings;
 	///<summary>ToolActions</summary>

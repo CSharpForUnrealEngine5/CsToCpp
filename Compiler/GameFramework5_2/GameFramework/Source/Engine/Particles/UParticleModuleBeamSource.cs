@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Particles/Beam/ParticleModuleBeamSource.h")]
 public partial class UParticleModuleBeamSource : UParticleModuleBeamBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>The method flag.</summary>
 	public Beam2SourceTargetMethod SourceMethod;
 	///<summary>The strength of the tangent from the source point for each beam.</summary>

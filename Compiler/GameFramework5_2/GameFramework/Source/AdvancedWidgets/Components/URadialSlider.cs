@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A simple widget that shows a sliding bar with a handle that allows you to control the value between 0..1.</summary>
 [CppInclude("Components/RadialSlider.h")]
 public partial class URadialSlider : UWidget {
+	public static UClass StaticClass() {return default;}
 	///<summary>The slider value to display.</summary>
 	public float Value;
 	///<summary>A bindable delegate to allow logic to drive the value of the widget</summary>

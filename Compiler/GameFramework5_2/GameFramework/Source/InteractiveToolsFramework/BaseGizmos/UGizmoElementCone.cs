@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Simple object intended to be used as part of 3D Gizmos.</summary>
 [CppInclude("BaseGizmos/GizmoElementCone.h")]
 public partial class UGizmoElementCone : UGizmoElementBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>Cone tip location.</summary>
 	public FVector Origin;
 	///<summary>Cone axis direction pointing from tip toward base of cone.</summary>

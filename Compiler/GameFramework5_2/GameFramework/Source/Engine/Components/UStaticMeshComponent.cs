@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>StaticMeshComponent is used to create an instance of a UStaticMesh.</summary>
 [CppInclude("Components/StaticMeshComponent.h")]
 public partial class UStaticMeshComponent : UMeshComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>If 0, auto-select LOD level. if &gt;0, force to (ForcedLodModel-1).</summary>
 	public int ForcedLodModel;
 	///<summary>LOD that was desired for rendering this StaticMeshComponent last frame.</summary>

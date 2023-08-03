@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("GeomModifier.h")]
 public partial class UGeomModifier : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>A human readable name for this modifier (appears on buttons, menus, etc)</summary>
 	public string Description;
 	///<summary>The tooltip to be displayed for this modifier</summary>

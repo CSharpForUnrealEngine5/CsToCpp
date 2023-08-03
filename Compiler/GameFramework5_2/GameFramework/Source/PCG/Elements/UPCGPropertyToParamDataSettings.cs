@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Extract a property value from an actor/component into a ParamData.</summary>
 [CppInclude("Elements/PCGPropertyToParamData.h")]
 public partial class UPCGPropertyToParamDataSettings : UPCGSettings {
+	public static UClass StaticClass() {return default;}
 	///<summary>ActorSelector</summary>
 	public FPCGActorSelectorSettings ActorSelector;
 	///<summary>Allow to look for an actor component instead of an actor. It will need to be attached to the found actor.</summary>

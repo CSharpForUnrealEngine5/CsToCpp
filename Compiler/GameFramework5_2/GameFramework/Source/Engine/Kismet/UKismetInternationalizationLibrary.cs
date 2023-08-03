@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Kismet/KismetInternationalizationLibrary.h")]
 public partial class UKismetInternationalizationLibrary : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>Set the current culture.</summary>
 	public static bool SetCurrentCulture(string Culture,bool SaveToConfig/*=false*/) { return default; }
 	///<summary>Get the current culture as an IETF language tag:</summary>

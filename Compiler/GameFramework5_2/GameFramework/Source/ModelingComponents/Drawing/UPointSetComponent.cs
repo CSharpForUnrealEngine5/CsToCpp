@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>UPointSetComponent is a Component that draws a set of points, as small squares.</summary>
 [CppInclude("Drawing/PointSetComponent.h")]
 public partial class UPointSetComponent : UMeshComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>PointMaterial</summary>
 	public UMaterialInterface PointMaterial;
 	///<summary>Bounds</summary>

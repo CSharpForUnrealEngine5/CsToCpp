@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Mechanics/SpaceCurveDeformationMechanic.h")]
 public partial class USpaceCurveDeformationMechanic : UInteractionMechanic {
+	public static UClass StaticClass() {return default;}
 	///<summary>Behaviors used for moving points around and hovering them</summary>
 	public USingleClickInputBehavior ClickBehavior;
 	///<summary>HoverBehavior</summary>

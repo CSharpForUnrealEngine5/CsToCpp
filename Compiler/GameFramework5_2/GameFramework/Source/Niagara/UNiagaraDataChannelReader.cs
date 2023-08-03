@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Initial simple API for reading and writing data in a data channel from game code / BP.</summary>
 [CppInclude("NiagaraDataChannelAccessor.h")]
 public partial class UNiagaraDataChannelReader : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Owner</summary>
 	public UNiagaraDataChannelHandler Owner;
 	///<summary>Call before each access to the data channel to grab the correct data to read.</summary>

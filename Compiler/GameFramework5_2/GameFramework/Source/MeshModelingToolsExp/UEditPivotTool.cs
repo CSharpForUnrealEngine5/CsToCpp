@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("EditPivotTool.h")]
 public partial class UEditPivotTool : UMultiSelectionMeshEditingTool {
+	public static UClass StaticClass() {return default;}
 	///<summary>TransformProps</summary>
 	public UEditPivotToolProperties TransformProps;
 	///<summary>EditPivotActions</summary>

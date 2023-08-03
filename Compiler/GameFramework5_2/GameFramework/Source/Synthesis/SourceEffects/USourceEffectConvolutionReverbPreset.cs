@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("SourceEffects/SourceEffectConvolutionReverb.h")]
 public partial class USourceEffectConvolutionReverbPreset : USoundEffectSourcePreset {
+	public static UClass StaticClass() {return default;}
 	///<summary>Set the convolution reverb settings</summary>
 	public  void SetSettings(FSourceEffectConvolutionReverbSettings InSettings) {}
 	///<summary>Set the convolution reverb impulse response</summary>

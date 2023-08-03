@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("InterchangeLightFactoryNode.h")]
 public partial class UInterchangePointLightFactoryNode : UInterchangeLightFactoryNode {
+	public static UClass StaticClass() {return default;}
 	///<summary>GetCustomUseInverseSquaredFalloff</summary>
 	public  bool GetCustomUseInverseSquaredFalloff(bool AttributeValue) { return default; }
 	///<summary>SetCustomUseInverseSquaredFalloff</summary>

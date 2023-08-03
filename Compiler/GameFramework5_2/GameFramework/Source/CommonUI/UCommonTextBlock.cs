@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Text block with automatic scrolling for FX / large texts, also supports a larger set of default styling, &amp; custom mobile scaling.</summary>
 [CppInclude("CommonTextBlock.h")]
 public partial class UCommonTextBlock : UTextBlock {
+	public static UClass StaticClass() {return default;}
 	///<summary>SetWrapTextWidth</summary>
 	public  void SetWrapTextWidth(int InWrapTextAt) {}
 	///<summary>SetTextCase</summary>

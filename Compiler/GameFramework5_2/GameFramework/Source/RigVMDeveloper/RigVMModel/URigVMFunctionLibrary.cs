@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>The Function Library is a graph used only to store</summary>
 [CppInclude("RigVMModel/RigVMFunctionLibrary.h")]
 public partial class URigVMFunctionLibrary : URigVMGraph {
+	public static UClass StaticClass() {return default;}
 	///<summary>Returns all of the stored functions</summary>
 	public  TArray<URigVMLibraryNode> GetFunctions() { return default; }
 	///<summary>Finds a function by name</summary>

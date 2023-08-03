@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Standard properties of the plane cut operation</summary>
 [CppInclude("PlaneCutTool.h")]
 public partial class UPlaneCutToolProperties : UInteractiveToolPropertySet {
+	public static UClass StaticClass() {return default;}
 	///<summary>If true, both halves of the cut are computed</summary>
 	public bool bKeepBothHalves;
 	///<summary>If keeping both halves, separate the two pieces by this amount</summary>

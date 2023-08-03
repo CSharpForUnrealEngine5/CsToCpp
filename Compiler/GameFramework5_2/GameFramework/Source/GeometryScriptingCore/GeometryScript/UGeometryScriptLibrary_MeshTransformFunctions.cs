@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("GeometryScript/MeshTransformFunctions.h")]
 public partial class UGeometryScriptLibrary_MeshTransformFunctions : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>TransformMesh</summary>
 	public static UDynamicMesh TransformMesh(UDynamicMesh TargetMesh,FTransform Transform,bool bFixOrientationForNegativeScale/*=true*/,UGeometryScriptDebug Debug/*=nullptr*/) { return default; }
 	///<summary>TranslateMesh</summary>

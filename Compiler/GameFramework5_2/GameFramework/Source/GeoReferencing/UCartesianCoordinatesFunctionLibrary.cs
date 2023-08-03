@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("CartesianCoordinates.h")]
 public partial class UCartesianCoordinatesFunctionLibrary : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>ToFullText</summary>
 	public static string ToFullText(FCartesianCoordinates CartesianCoordinates,int IntegralDigits/*=3*/) { return default; }
 	///<summary>ToCompactText</summary>

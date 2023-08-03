@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("LandscapeSplineSegment.h")]
 public partial class ULandscapeSplineSegment : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Directly editable data:</summary>
 	public FLandscapeSplineSegmentConnection Connections;
 	///<summary>Name of blend layer to paint when applying spline to landscape</summary>

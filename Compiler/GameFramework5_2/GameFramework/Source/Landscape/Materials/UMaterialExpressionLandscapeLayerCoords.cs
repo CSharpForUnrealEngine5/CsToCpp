@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Materials/MaterialExpressionLandscapeLayerCoords.h")]
 public partial class UMaterialExpressionLandscapeLayerCoords : UMaterialExpression {
+	public static UClass StaticClass() {return default;}
 	///<summary>Determines the mapping place to use on the terrain.</summary>
 	public ETerrainCoordMappingType MappingType;
 	///<summary>Determines the mapping place to use on the terrain.</summary>

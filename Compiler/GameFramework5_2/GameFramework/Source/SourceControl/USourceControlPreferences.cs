@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Settings for the Source Control Integration</summary>
 [CppInclude("SourceControlPreferences.h")]
 public partial class USourceControlPreferences : UDeveloperSettings {
+	public static UClass StaticClass() {return default;}
 	///<summary>Adds validation tag to changelist description on submit.</summary>
 	public bool bEnableValidationTag;
 	///<summary>Deletes new files when reverted.</summary>

@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>UPlanePositionGizmo implements a gizmo interaction where 2D parameter value is manipulated</summary>
 [CppInclude("BaseGizmos/PlanePositionGizmo.h")]
 public partial class UPlanePositionGizmo : UInteractiveGizmo {
+	public static UClass StaticClass() {return default;}
 	///<summary>AxisSource provides the 3D plane on which the interaction happens</summary>
 	public object /*AxisSource*/ AxisSource;
 	///<summary>The 3D plane coordinates are converted to 2D coordinates in the plane tangent space, and the change in value is sent to this ParameterSource</summary>

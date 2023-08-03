@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Represents abstract Navigation Data (sub-classed as NavMesh, NavGraph, etc)</summary>
 [CppInclude("NavigationData.h")]
 public partial class ANavigationData : AActor {
+	public static UClass StaticClass() {return default;}
 	///<summary>RenderingComp</summary>
 	public UPrimitiveComponent RenderingComp;
 	///<summary>NavDataConfig</summary>

@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("DatasmithAreaLightActor.h")]
 public partial class ADatasmithAreaLightActor : AActor {
+	public static UClass StaticClass() {return default;}
 	///<summary>Mobility</summary>
 	public EComponentMobility Mobility;
 	///<summary>LightType</summary>

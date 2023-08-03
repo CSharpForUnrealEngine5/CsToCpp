@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Settings for the ImgMedia module.</summary>
 [CppInclude("ImgMediaSettings.h")]
 public partial class UImgMediaSettings : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Default frame rate to use if none was specified in image sequence or media source (default = 1/24).</summary>
 	public FFrameRate DefaultFrameRate;
 	///<summary>If there is not enough bandwidth to play the media, then lower it (for example by skipping frames) to try and get playback.</summary>

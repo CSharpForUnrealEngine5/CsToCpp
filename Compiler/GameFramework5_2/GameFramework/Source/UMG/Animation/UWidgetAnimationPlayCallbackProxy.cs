@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Animation/WidgetAnimationPlayCallbackProxy.h")]
 public partial class UWidgetAnimationPlayCallbackProxy : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Called when animation has been completed</summary>
 	public FWidgetAnimationResult Finished;
 	///<summary>Play Animation and trigger event on Finished</summary>

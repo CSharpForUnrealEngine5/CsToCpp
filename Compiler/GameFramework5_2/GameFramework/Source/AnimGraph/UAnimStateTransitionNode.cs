@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("AnimStateTransitionNode.h")]
 public partial class UAnimStateTransitionNode : UAnimStateNodeBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>The transition logic graph for this transition (returning a boolean)</summary>
 	public UEdGraph BoundGraph;
 	///<summary>The animation graph for this transition if it uses custom blending (returning a pose)</summary>

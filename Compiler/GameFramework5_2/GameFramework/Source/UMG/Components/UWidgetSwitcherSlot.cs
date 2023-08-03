@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>The Slot for the UWidgetSwitcher, contains the widget that is flowed vertically</summary>
 [CppInclude("Components/WidgetSwitcherSlot.h")]
 public partial class UWidgetSwitcherSlot : UPanelSlot {
+	public static UClass StaticClass() {return default;}
 	///<summary>The padding area between the slot and the content it contains.</summary>
 	public FMargin Padding;
 	///<summary>The alignment of the object horizontally.</summary>

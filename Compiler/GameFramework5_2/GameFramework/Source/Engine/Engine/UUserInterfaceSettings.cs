@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>User Interface settings that control Slate and UMG.</summary>
 [CppInclude("Engine/UserInterfaceSettings.h")]
 public partial class UUserInterfaceSettings : UDeveloperSettings {
+	public static UClass StaticClass() {return default;}
 	///<summary>Rule to determine if we should render the Focus Brush for widgets that have user focus.</summary>
 	public ERenderFocusRule RenderFocusRule;
 	///<summary>HardwareCursors</summary>

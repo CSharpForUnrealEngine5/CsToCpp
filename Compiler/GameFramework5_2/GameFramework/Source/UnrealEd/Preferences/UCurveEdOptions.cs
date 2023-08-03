@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Preferences/CurveEdOptions.h")]
 public partial class UCurveEdOptions : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>MinViewRange</summary>
 	public float MinViewRange;
 	///<summary>MaxViewRange</summary>

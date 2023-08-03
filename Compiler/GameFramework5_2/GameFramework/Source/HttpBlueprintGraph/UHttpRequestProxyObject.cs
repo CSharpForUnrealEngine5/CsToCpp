@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("HttpRequestProxyObject.h")]
 public partial class UHttpRequestProxyObject : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>OnRequestComplete</summary>
 	public FOnRequestComplete OnRequestComplete;
 	///<summary>CreateHttpRequestProxyObject</summary>

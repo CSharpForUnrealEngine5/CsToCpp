@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Materials/MaterialInstance.h")]
 public partial class UMaterialInstance : UMaterialInterface {
+	public static UClass StaticClass() {return default;}
 	///<summary>Physical material to use for this graphics material. Used for sounds, effects etc.</summary>
 	public UPhysicalMaterial PhysMaterial;
 	///<summary>Physical material map used with physical material mask, when it exists.</summary>

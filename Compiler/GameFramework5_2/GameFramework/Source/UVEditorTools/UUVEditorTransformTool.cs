@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("UVEditorTransformTool.h")]
 public partial class UUVEditorTransformTool : UInteractiveTool {
+	public static UClass StaticClass() {return default;}
 	///<summary>Targets</summary>
 	public TArray<UUVEditorToolMeshInput> Targets;
 	///<summary>Settings</summary>

@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("MuCOE/Nodes/CustomizableObjectNodeLayoutBlocks.h")]
 public partial class UCustomizableObjectNodeLayoutBlocks : UCustomizableObjectNode {
+	public static UClass StaticClass() {return default;}
 	///<summary>GridSize_DEPRECATED</summary>
 	public FIntPoint GridSize_DEPRECATED;
 	///<summary>Used with the fixed layout strategy.</summary>

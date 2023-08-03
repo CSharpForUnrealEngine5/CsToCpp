@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("NiagaraBakerOutputTexture2D.h")]
 public partial class UNiagaraBakerOutputTexture2D : UNiagaraBakerOutput {
+	public static UClass StaticClass() {return default;}
 	///<summary>Source visualization we should capture, i.e. Scene Color, World Normal, etc</summary>
 	public FNiagaraBakerTextureSource SourceBinding;
 	///<summary>bGenerateAtlas</summary>

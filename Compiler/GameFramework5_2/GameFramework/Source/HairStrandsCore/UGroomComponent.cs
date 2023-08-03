@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("GroomComponent.h")]
 public partial class UGroomComponent : UMeshComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>Groom asset .</summary>
 	public UGroomAsset GroomAsset;
 	///<summary>GroomCache</summary>

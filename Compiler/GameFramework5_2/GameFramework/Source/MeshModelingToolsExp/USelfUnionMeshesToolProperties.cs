@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Standard properties of the self-union operation</summary>
 [CppInclude("SelfUnionMeshesTool.h")]
 public partial class USelfUnionMeshesToolProperties : UInteractiveToolPropertySet {
+	public static UClass StaticClass() {return default;}
 	///<summary>If true, remove open, visible geometry</summary>
 	public bool bTrimFlaps;
 	///<summary>Try to fill holes created by the merge, e.g. due to numerical errors</summary>

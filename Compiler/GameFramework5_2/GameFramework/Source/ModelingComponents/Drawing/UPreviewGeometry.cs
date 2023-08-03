@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>UPreviewGeometry creates and manages an APreviewGeometryActor and a set of preview geometry Components.</summary>
 [CppInclude("Drawing/PreviewGeometryActor.h")]
 public partial class UPreviewGeometry : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Create preview mesh in the World with the given transform</summary>
 	public  void CreateInWorld(UWorld World,FTransform WithTransform) {}
 	///<summary>Remove and destroy preview mesh</summary>

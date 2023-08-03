@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Properties of the morphology tool</summary>
 [CppInclude("VoxelMorphologyMeshesTool.h")]
 public partial class UVoxelMorphologyMeshesToolProperties : UInteractiveToolPropertySet {
+	public static UClass StaticClass() {return default;}
 	///<summary>Operation</summary>
 	public EMorphologyOperation Operation;
 	///<summary>Distance</summary>

@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Base class for import data and options used when importing any asset from FBX</summary>
 [CppInclude("Factories/FbxAssetImportData.h")]
 public partial class UFbxAssetImportData : UAssetImportData {
+	public static UClass StaticClass() {return default;}
 	///<summary>ImportTranslation</summary>
 	public FVector ImportTranslation;
 	///<summary>ImportRotation</summary>

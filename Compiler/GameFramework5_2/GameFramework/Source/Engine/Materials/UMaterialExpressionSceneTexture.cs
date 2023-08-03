@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Materials/MaterialExpressionSceneTexture.h")]
 public partial class UMaterialExpressionSceneTexture : UMaterialExpression {
+	public static UClass StaticClass() {return default;}
 	///<summary>Ignored if not specified</summary>
 	public FExpressionInput Coordinates;
 	///<summary>Which scene texture (screen aligned texture) we want to make a lookup into</summary>

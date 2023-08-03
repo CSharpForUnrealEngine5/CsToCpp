@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>UConstantQNRT</summary>
 [CppInclude("ConstantQNRT.h")]
 public partial class UConstantQNRT : UAudioSynesthesiaNRT {
+	public static UClass StaticClass() {return default;}
 	///<summary>The settings for the audio analyzer.</summary>
 	public UConstantQNRTSettings Settings;
 	///<summary>Get a specific channel cqt of the analyzed sound at a given time.</summary>

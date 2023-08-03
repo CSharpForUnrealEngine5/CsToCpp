@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("AnimNotify_PlayNiagaraEffect.h")]
 public partial class UAnimNotify_PlayNiagaraEffect : UAnimNotify {
+	public static UClass StaticClass() {return default;}
 	///<summary>Niagara System to Spawn</summary>
 	public UNiagaraSystem Template;
 	///<summary>Location offset from the socket</summary>

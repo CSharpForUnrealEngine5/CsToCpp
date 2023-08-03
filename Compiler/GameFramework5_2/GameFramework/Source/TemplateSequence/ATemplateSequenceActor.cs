@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Actor responsible for controlling a specific template sequence in the world.</summary>
 [CppInclude("TemplateSequenceActor.h")]
 public partial class ATemplateSequenceActor : AActor {
+	public static UClass StaticClass() {return default;}
 	///<summary>PlaybackSettings</summary>
 	public FMovieSceneSequencePlaybackSettings PlaybackSettings;
 	///<summary>SequencePlayer</summary>

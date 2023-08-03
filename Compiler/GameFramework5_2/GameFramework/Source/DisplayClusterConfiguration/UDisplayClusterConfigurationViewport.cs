@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("DisplayClusterConfigurationTypes_Viewport.h")]
 public partial class UDisplayClusterConfigurationViewport : UDisplayClusterConfigurationData_Base {
+	public static UClass StaticClass() {return default;}
 	///<summary>Enables or disables rendering of this specific Viewport</summary>
 	public bool bAllowRendering;
 	///<summary>Reference to the nDisplay View Origin</summary>

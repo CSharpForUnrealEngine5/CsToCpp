@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("AnalyticsBlueprintLibrary.h")]
 public partial class UAnalyticsBlueprintLibrary : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>Starts an analytics session without any custom attributes specified</summary>
 	public static bool StartSession() { return default; }
 	///<summary>Starts an analytics session with custom attributes specified</summary>

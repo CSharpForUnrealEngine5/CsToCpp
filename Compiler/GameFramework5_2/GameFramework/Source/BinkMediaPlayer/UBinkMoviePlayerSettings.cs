@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Implements the settings for the Windows target platform.</summary>
 [CppInclude("BinkMoviePlayerSettings.h")]
 public partial class UBinkMoviePlayerSettings : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Used to specify the how the video should be buffered.</summary>
 	public EBinkMoviePlayerBinkBufferModes BinkBufferMode;
 	///<summary>Used to specify the sounds to open at playback.</summary>

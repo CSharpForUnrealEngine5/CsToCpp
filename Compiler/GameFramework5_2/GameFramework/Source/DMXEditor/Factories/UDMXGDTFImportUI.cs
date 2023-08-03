@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Factories/DMXGDTFImportUI.h")]
 public partial class UDMXGDTFImportUI : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>bUseSubDirectory</summary>
 	public bool bUseSubDirectory;
 	///<summary>bImportXML</summary>

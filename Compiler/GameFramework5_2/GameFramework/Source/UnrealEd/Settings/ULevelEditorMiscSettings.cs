@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Configure miscellaneous settings for the Level Editor.</summary>
 [CppInclude("Settings/LevelEditorMiscSettings.h")]
 public partial class ULevelEditorMiscSettings : UDeveloperSettings {
+	public static UClass StaticClass() {return default;}
 	///<summary>If checked lighting will be automatically applied to the level after a static lighting build is complete.</summary>
 	public bool bAutoApplyLightingEnable;
 	///<summary>If true, BSP will auto-update</summary>

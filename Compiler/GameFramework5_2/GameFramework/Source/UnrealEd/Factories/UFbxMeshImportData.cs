@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Import data and options used when importing any mesh from FBX</summary>
 [CppInclude("Factories/FbxMeshImportData.h")]
 public partial class UFbxMeshImportData : UFbxAssetImportData {
+	public static UClass StaticClass() {return default;}
 	///<summary>If this option is true the node absolute transform (transform, offset and pivot) will be apply to the mesh vertices.</summary>
 	public bool bTransformVertexToAbsolute;
 	///<summary>- Experimental - If this option is true the inverse node rotation pivot will be apply to the mesh vertices. The pivot from the DCC will then be the origin of the mesh. Note: &quot;TransformVertexToAbsolute&quot; must be false.</summary>

@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Solvers/IKRig_BodyMover.h")]
 public partial class UIKRig_BodyMover : UIKRigSolver {
+	public static UClass StaticClass() {return default;}
 	///<summary>The target bone to move with the effectors.</summary>
 	public string RootBone;
 	///<summary>Blend the translational effect of this solver on/off. Range is 0-1. Default is 1.0.</summary>

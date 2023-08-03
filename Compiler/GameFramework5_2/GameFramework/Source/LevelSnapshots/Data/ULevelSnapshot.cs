@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Holds the state of a world at a given time. This asset can be used to rollback certain properties in a UWorld.</summary>
 [CppInclude("Data/LevelSnapshot.h")]
 public partial class ULevelSnapshot : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Sets the name of this snapshot.</summary>
 	public  void SetSnapshotName(string InSnapshotName) {}
 	///<summary>SetSnapshotDescription</summary>

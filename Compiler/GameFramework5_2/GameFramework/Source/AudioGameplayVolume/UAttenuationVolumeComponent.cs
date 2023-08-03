@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>UAttenuationVolumeComponent - Audio Gameplay Volume component for occlusion settings (volume attenuation)</summary>
 [CppInclude("AttenuationVolumeComponent.h")]
 public partial class UAttenuationVolumeComponent : UAudioGameplayVolumeMutator {
+	public static UClass StaticClass() {return default;}
 	///<summary>SetExteriorVolume</summary>
 	public  void SetExteriorVolume(float Volume,float InterpolateTime) {}
 	///<summary>SetInteriorVolume</summary>

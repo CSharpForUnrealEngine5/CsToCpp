@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A game viewport (FViewport) is a high-level abstract interface for the</summary>
 [CppInclude("Engine/GameViewportClient.h")]
 public partial class UGameViewportClient : UScriptViewportClient {
+	public static UClass StaticClass() {return default;}
 	///<summary>The viewport&#39;s console.   Might be null on consoles</summary>
 	public UConsole ViewportConsole;
 	///<summary>Debug properties that have been added via one of the &quot;displayall&quot; commands</summary>

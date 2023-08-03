@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Kismet/KismetSystemLibrary.h")]
 public partial class UKismetSystemLibrary : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>Prints a stack trace to the log, so you can see how a blueprint got to this node</summary>
 	public static void StackTrace() {}
 	///<summary>Return true if the object is usable : non-null and not pending kill</summary>

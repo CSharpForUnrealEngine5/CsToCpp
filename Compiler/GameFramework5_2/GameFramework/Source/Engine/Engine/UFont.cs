@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A font object, for use by Slate, UMG, and Canvas.</summary>
 [CppInclude("Engine/Font.h")]
 public partial class UFont : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>What kind of font caching should we use? This controls which options we see</summary>
 	public EFontCacheType FontCacheType;
 	///<summary>List of characters in the font.  For a MultiFont, this will include all characters in all sub-fonts!  Thus,</summary>

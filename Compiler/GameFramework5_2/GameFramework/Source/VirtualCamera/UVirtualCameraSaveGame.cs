@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("VirtualCameraSaveGame.h")]
 public partial class UVirtualCameraSaveGame : USaveGame {
+	public static UClass StaticClass() {return default;}
 	///<summary>Waypoints</summary>
 	public TMap<string,FVirtualCameraWaypoint> Waypoints;
 	///<summary>Screenshots</summary>

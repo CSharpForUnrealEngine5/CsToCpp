@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>PhysicsVolume: A bounding volume which affects actor physics.</summary>
 [CppInclude("GameFramework/PhysicsVolume.h")]
 public partial class APhysicsVolume : AVolume {
+	public static UClass StaticClass() {return default;}
 	///<summary>Terminal velocity of pawns using CharacterMovement when falling.</summary>
 	public float TerminalVelocity;
 	///<summary>Determines which PhysicsVolume takes precedence if they overlap (higher number = higher priority).</summary>

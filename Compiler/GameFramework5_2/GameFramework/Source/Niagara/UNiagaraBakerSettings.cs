@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("NiagaraBakerSettings.h")]
 public partial class UNiagaraBakerSettings : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>This is the start time of the simulation where we begin the capture.</summary>
 	public float StartSeconds;
 	///<summary>Duration in seconds to take the capture over.</summary>

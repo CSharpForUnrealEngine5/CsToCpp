@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("ContentBrowserMenuContexts.h")]
 public partial class UContentBrowserFolderContext : UContentBrowserMenuContext {
+	public static UClass StaticClass() {return default;}
 	///<summary>bCanBeModified</summary>
 	public bool bCanBeModified;
 	///<summary>bNoFolderOnDisk</summary>

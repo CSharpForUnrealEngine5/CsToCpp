@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Factories/FbxImportUI.h")]
 public partial class UFbxImportUI : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Whether or not the imported file is in OBJ format</summary>
 	public bool bIsObjImport;
 	///<summary>The original detected type of this import</summary>

@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("VisualLogger/VisualLoggerKismetLibrary.h")]
 public partial class UVisualLoggerKismetLibrary : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>EnableRecording</summary>
 	public static void EnableRecording(bool bEnabled) {}
 	///<summary>Makes SourceOwner log to DestinationOwner&#39;s vislog</summary>

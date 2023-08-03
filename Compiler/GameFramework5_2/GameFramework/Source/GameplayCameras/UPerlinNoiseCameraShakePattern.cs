@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A camera shake that uses Perlin noise to shake the camera.</summary>
 [CppInclude("PerlinNoiseCameraShakePattern.h")]
 public partial class UPerlinNoiseCameraShakePattern : USimpleCameraShakePattern {
+	public static UClass StaticClass() {return default;}
 	///<summary>Amplitude multiplier for all location shake</summary>
 	public float LocationAmplitudeMultiplier;
 	///<summary>Frequency multiplier for all location shake</summary>

@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A class to transfer Camera data in MU session</summary>
 [CppInclude("VirtualCameraConcertCameraComponent.h")]
 public partial class UDEPRECATED_VirtualCameraConcertCameraComponent : UActorComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>The tracked name used by the multi user system to send the data.</summary>
 	public string TrackingName;
 	///<summary>Is that component sending the camera information or receiving it.</summary>

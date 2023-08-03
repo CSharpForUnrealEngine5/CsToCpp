@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Physical materials are used to define the response of a physical object when</summary>
 [CppInclude("Chaos/ChaosPhysicalMaterial.h")]
 public partial class UChaosPhysicalMaterial : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Friction value of a surface in motion, controls how easily things can slide on this surface (0 is frictionless, higher values increase the amount of friction)</summary>
 	public float Friction;
 	///<summary>Friction value of surface at rest, controls how easily things can slide on this surface (0 is frictionless, higher values increase the amount of friction)</summary>

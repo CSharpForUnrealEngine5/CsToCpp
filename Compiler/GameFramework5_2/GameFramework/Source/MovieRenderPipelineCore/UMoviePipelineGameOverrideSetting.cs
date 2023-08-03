@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("MoviePipelineGameOverrideSetting.h")]
 public partial class UMoviePipelineGameOverrideSetting : UMoviePipelineSetting {
+	public static UClass StaticClass() {return default;}
 	///<summary>Optional Game Mode to override the map&#39;s default game mode with. This can be useful if the game&#39;s normal mode displays UI elements or loading screens that you don&#39;t want captured.</summary>
 	public UClass GameModeOverride;
 	///<summary>If true, automatically set the engine to the Cinematic Scalability quality settings during render. See the Scalability Reference documentation for information on how to edit cvars to add/change default quality values.</summary>

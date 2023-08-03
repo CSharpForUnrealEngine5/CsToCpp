@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>ns UE</summary>
 [CppInclude("InterchangeMeshNode.h")]
 public partial class UInterchangeMeshNode : UInterchangeBaseNode {
+	public static UClass StaticClass() {return default;}
 	///<summary>Return true if this node represent a skinned mesh</summary>
 	public  bool IsSkinnedMesh() { return default; }
 	///<summary>Set the IsSkinnedMesh attribute to determine if this node represent a skinned mesh.</summary>

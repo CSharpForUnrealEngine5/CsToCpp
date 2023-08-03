@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>This class is a BP / Game thread wrapper around FQuartzClockProxy</summary>
 [CppInclude("Quartz/AudioMixerClockHandle.h")]
 public partial class UQuartzClockHandle : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Clock manipulation</summary>
 	public  void StartClock(UObject WorldContextObject,UQuartzClockHandle ClockHandle) {}
 	///<summary>StopClock</summary>

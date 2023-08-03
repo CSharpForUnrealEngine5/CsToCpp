@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("InterchangeMaterialFactoryNode.h")]
 public partial class UInterchangeMaterialInstanceFactoryNode : UInterchangeBaseMaterialFactoryNode {
+	public static UClass StaticClass() {return default;}
 	///<summary>GetCustomInstanceClassName</summary>
 	public  bool GetCustomInstanceClassName(string AttributeValue) { return default; }
 	///<summary>SetCustomInstanceClassName</summary>

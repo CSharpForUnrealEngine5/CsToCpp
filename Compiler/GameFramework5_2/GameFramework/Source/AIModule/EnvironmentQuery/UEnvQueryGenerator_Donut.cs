@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("EnvironmentQuery/Generators/EnvQueryGenerator_Donut.h")]
 public partial class UEnvQueryGenerator_Donut : UEnvQueryGenerator_ProjectedPoints {
+	public static UClass StaticClass() {return default;}
 	///<summary>min distance between point and context</summary>
 	public FAIDataProviderFloatValue InnerRadius;
 	///<summary>max distance between point and context</summary>

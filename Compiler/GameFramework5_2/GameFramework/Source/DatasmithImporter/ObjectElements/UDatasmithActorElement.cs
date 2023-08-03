@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>* UDatasmithActorElement</summary>
 [CppInclude("ObjectElements/DatasmithUObjectElements.h")]
 public partial class UDatasmithActorElement : UDatasmithObjectElement {
+	public static UClass StaticClass() {return default;}
 	///<summary>Get absolute translation of this entity</summary>
 	public  FVector GetTranslation() { return default; }
 	///<summary>Set absolute translation of this entity</summary>

@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("FractureToolSlice.h")]
 public partial class UFractureSliceSettings : UFractureToolSettings {
+	public static UClass StaticClass() {return default;}
 	///<summary>Number of slices along the X axis</summary>
 	public int SlicesX;
 	///<summary>Number of slices along the Y axis</summary>

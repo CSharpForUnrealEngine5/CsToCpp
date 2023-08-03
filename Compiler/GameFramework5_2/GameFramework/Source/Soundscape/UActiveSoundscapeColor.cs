@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("SoundscapeColor.h")]
 public partial class UActiveSoundscapeColor : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Function bound to the Parameter change delegate</summary>
 	public  void OnSoundscapeColorParameterChange(USoundscapeColor SoundscapeColor) {}
 	///<summary>Sound to Play</summary>

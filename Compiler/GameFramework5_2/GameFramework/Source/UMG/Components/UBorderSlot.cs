@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>The Slot for the UBorderSlot, contains the widget displayed in a border&#39;s single slot</summary>
 [CppInclude("Components/BorderSlot.h")]
 public partial class UBorderSlot : UPanelSlot {
+	public static UClass StaticClass() {return default;}
 	///<summary>SetPadding</summary>
 	public  void SetPadding(FMargin InPadding) {}
 	///<summary>SetHorizontalAlignment</summary>

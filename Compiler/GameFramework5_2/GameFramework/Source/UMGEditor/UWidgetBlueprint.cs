@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>The widget blueprint enables extending UUserWidget the user extensible UWidget.</summary>
 [CppInclude("WidgetBlueprint.h")]
 public partial class UWidgetBlueprint : UBaseWidgetBlueprint {
+	public static UClass StaticClass() {return default;}
 	///<summary>Bindings</summary>
 	public TArray<FDelegateEditorBinding> Bindings;
 	///<summary>AnimationData_DEPRECATED</summary>

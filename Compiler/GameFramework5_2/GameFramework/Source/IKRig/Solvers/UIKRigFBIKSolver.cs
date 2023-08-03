@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Solvers/IKRig_FBIKSolver.h")]
 public partial class UIKRigFBIKSolver : UIKRigSolver {
+	public static UClass StaticClass() {return default;}
 	///<summary>All bones above this bone in the hierarchy will be completely ignored by the solver. Typically this is set to</summary>
 	public string RootBone;
 	///<summary>High iteration counts can help solve complex joint configurations with competing constraints, but will increase runtime cost. Default is 20.</summary>

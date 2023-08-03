@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Sound/SoundClass.h")]
 public partial class USoundClass : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Configurable properties like volume and priority.</summary>
 	public FSoundClassProperties Properties;
 	///<summary>ChildClasses</summary>

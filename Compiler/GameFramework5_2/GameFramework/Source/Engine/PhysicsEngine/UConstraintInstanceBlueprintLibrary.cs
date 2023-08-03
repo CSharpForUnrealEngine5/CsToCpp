@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("PhysicsEngine/ConstraintInstanceBlueprintLibrary.h")]
 public partial class UConstraintInstanceBlueprintLibrary : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>Gets Attached body names</summary>
 	public static void GetAttachedBodyNames(FConstraintInstanceAccessor Accessor,string ParentBody,string ChildBody) {}
 	///<summary>Sets whether bodies attched to the constraint can collide or not</summary>

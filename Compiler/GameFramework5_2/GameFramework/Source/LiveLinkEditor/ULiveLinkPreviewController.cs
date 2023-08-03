@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("LiveLinkPreviewController.h")]
 public partial class ULiveLinkPreviewController : UPersonaPreviewSceneController {
+	public static UClass StaticClass() {return default;}
 	///<summary>SubjectName_DEPRECATED</summary>
 	public string SubjectName_DEPRECATED;
 	///<summary>LiveLinkSubjectName</summary>

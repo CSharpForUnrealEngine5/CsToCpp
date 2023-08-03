@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>DMX Screen(Grid) rendering component</summary>
 [CppInclude("Components/DMXPixelMappingScreenComponent.h")]
 public partial class UDMXPixelMappingScreenComponent : UDMXPixelMappingOutputDMXComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>If true, outputs to all DMX Output Ports</summary>
 	public bool bSendToAllOutputPorts;
 	///<summary>The port this render component outputs to</summary>

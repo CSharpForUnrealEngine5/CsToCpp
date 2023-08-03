@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Base class for curve data interfaces which facilitates handling the curve data in a standardized way.</summary>
 [CppInclude("NiagaraDataInterfaceCurveBase.h")]
 public partial class UNiagaraDataInterfaceCurveBase : UNiagaraDataInterface {
+	public static UClass StaticClass() {return default;}
 	///<summary>ShaderLUT</summary>
 	public TArray<float> ShaderLUT;
 	///<summary>LUTMinTime</summary>

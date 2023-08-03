@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A material function instance defines parameter overrides for a parent material function.</summary>
 [CppInclude("Materials/MaterialFunctionInstance.h")]
 public partial class UMaterialFunctionInstance : UMaterialFunctionInterface {
+	public static UClass StaticClass() {return default;}
 	///<summary>Parent function.</summary>
 	public UMaterialFunctionInterface Parent;
 	///<summary>Base function.</summary>

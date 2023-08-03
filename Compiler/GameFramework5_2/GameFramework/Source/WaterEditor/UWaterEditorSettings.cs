@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Implements the editor settings for the Water plugin.</summary>
 [CppInclude("WaterEditorSettings.h")]
 public partial class UWaterEditorSettings : UDeveloperSettings {
+	public static UClass StaticClass() {return default;}
 	///<summary>The texture group to use for generated textures such as the combined veloctiy and height texture</summary>
 	public TextureGroup TextureGroupForGeneratedTextures;
 	///<summary>Maximum size of the water velocity/height texture for a WaterZoneActor</summary>

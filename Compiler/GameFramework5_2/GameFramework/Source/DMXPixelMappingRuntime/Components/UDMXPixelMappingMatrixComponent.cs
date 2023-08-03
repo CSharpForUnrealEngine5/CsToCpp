@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>DMX Matrix group component</summary>
 [CppInclude("Components/DMXPixelMappingMatrixComponent.h")]
 public partial class UDMXPixelMappingMatrixComponent : UDMXPixelMappingOutputComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>FixturePatchMatrixRef_DEPRECATED</summary>
 	public FDMXEntityFixturePatchRef FixturePatchMatrixRef_DEPRECATED;
 	///<summary>FixturePatchRef</summary>

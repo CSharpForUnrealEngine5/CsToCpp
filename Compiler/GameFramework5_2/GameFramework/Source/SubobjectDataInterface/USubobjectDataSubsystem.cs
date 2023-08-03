@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>The Subobject Data Subsystem will produce the reflected subobject data</summary>
 [CppInclude("SubobjectDataSubsystem.h")]
 public partial class USubobjectDataSubsystem : UEngineSubsystem {
+	public static UClass StaticClass() {return default;}
 	///<summary>Gather all subobjects that the given Blueprint context has. Populates an array of</summary>
 	public  void K2_GatherSubobjectDataForBlueprint(UBlueprint Context,TArray<FSubobjectDataHandle> OutArray) {}
 	///<summary>Gather all subobjects that the given actor instance has. Populates an array of</summary>

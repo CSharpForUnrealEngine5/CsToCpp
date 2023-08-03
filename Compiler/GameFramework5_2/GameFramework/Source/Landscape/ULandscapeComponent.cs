@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("LandscapeComponent.h")]
 public partial class ULandscapeComponent : UPrimitiveComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>X offset from global components grid origin (in quads)</summary>
 	public int SectionBaseX;
 	///<summary>Y offset from global components grid origin (in quads)</summary>

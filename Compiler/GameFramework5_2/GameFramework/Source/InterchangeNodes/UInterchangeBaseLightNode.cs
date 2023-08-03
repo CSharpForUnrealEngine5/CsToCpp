@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("InterchangeLightNode.h")]
 public partial class UInterchangeBaseLightNode : UInterchangeBaseNode {
+	public static UClass StaticClass() {return default;}
 	///<summary>GetCustomLightColor</summary>
 	public  bool GetCustomLightColor(FLinearColor AttributeValue) { return default; }
 	///<summary>SetCustomLightColor</summary>

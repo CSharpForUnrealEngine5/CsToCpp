@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>This class represents a segment of work within the Executor Job. This should be owned</summary>
 [CppInclude("MoviePipelineQueue.h")]
 public partial class UMoviePipelineExecutorShot : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Set the status of this shot to the given value. This will be shown on the UI if progress</summary>
 	public  void SetStatusMessage(string InStatus) {}
 	///<summary>Get the current status message for this shot. May be an empty string.</summary>

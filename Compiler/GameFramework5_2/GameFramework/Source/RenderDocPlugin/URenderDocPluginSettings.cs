@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("RenderDocPluginSettings.h")]
 public partial class URenderDocPluginSettings : UDeveloperSettings {
+	public static UClass StaticClass() {return default;}
 	///<summary>If checked, RenderDoc will capture all activity in all viewports and editor windows for the entire frame instead of only the current viewport.</summary>
 	public bool bCaptureAllActivity;
 	///<summary>If checked, RenderDoc will capture callstacks for all API calls.</summary>

@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("MirrorTool.h")]
 public partial class UMirrorToolProperties : UInteractiveToolPropertySet {
+	public static UClass StaticClass() {return default;}
 	///<summary>Mode of operation.</summary>
 	public EMirrorOperationMode OperationMode;
 	///<summary>Cut off everything on the back side of the mirror plane before mirroring.</summary>

@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("K2Node_AnimGetter.h")]
 public partial class UK2Node_AnimGetter : UK2Node_CallFunction {
+	public static UClass StaticClass() {return default;}
 	///<summary>The node that is required for the getter</summary>
 	public UAnimGraphNode_Base SourceNode;
 	///<summary>UAnimStateNode doesn&#39;t use the same hierarchy so we need to have a seperate property here to handle</summary>

@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>The manager subsystem for game features</summary>
 [CppInclude("GameFeaturesSubsystem.h")]
 public partial class UGameFeaturesSubsystem : UEngineSubsystem {
+	public static UClass StaticClass() {return default;}
 	///<summary>The list of all game feature plugin state machine objects</summary>
 	public TMap<FGameFeaturePluginIdentifier,UGameFeaturePluginStateMachine> GameFeaturePluginStateMachines;
 	///<summary>Game feature plugin state machine objects that are being terminated. Used to prevent GC until termination is complete.</summary>

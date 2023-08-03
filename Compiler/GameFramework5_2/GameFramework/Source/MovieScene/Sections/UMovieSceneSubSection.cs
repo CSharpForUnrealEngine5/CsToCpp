@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Implements a section in sub-sequence tracks.</summary>
 [CppInclude("Sections/MovieSceneSubSection.h")]
 public partial class UMovieSceneSubSection : UMovieSceneSection {
+	public static UClass StaticClass() {return default;}
 	///<summary>Get the sequence that is assigned to this section.</summary>
 	public  UMovieSceneSequence GetSequence() { return default; }
 	///<summary>Sets the sequence played by this section.</summary>

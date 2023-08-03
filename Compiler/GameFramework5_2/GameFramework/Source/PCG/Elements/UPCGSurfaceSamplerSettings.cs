@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Elements/PCGSurfaceSampler.h")]
 public partial class UPCGSurfaceSamplerSettings : UPCGSettings {
+	public static UClass StaticClass() {return default;}
 	///<summary>PointsPerSquaredMeter</summary>
 	public float PointsPerSquaredMeter;
 	///<summary>PointExtents</summary>

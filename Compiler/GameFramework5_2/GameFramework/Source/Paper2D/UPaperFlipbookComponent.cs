@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("PaperFlipbookComponent.h")]
 public partial class UPaperFlipbookComponent : UMeshComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>Flipbook currently being played</summary>
 	public UPaperFlipbook SourceFlipbook;
 	///<summary>DEPRECATED in 4.5: The material override for this flipbook component (if any); replaced by the Materials array inherited from UMeshComponent</summary>

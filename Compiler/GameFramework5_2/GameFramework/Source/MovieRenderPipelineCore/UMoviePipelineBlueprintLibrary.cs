@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("MoviePipelineBlueprintLibrary.h")]
 public partial class UMoviePipelineBlueprintLibrary : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>Duplicates the specified sequence using a medium depth copy. Standard duplication will only duplicate</summary>
 	public static UMovieSceneSequence DuplicateSequence(UObject Outer,UMovieSceneSequence InSequence) { return default; }
 	///<summary>Resolves the provided InFormatString by converting {format_strings} into settings provided by the primary config.</summary>

@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("FoliageType_InstancedStaticMesh.h")]
 public partial class UFoliageType_InstancedStaticMesh : UFoliageType {
+	public static UClass StaticClass() {return default;}
 	///<summary>Mesh</summary>
 	public UStaticMesh Mesh;
 	///<summary>Material overrides for foliage instances.</summary>

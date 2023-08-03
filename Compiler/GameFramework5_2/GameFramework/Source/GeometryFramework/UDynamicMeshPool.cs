@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>UDynamicMeshPool manages a Pool of UDynamicMesh objects. This allows</summary>
 [CppInclude("UDynamicMesh.h")]
 public partial class UDynamicMeshPool : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>@return an available UDynamicMesh from the pool (possibly allocating a new mesh)</summary>
 	public  UDynamicMesh RequestMesh() { return default; }
 	///<summary>Release a UDynamicMesh returned by RequestMesh() back to the pool</summary>

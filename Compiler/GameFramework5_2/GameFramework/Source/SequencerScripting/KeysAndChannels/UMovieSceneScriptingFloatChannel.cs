@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("KeysAndChannels/MovieSceneScriptingFloat.h")]
 public partial class UMovieSceneScriptingFloatChannel : UMovieSceneScriptingChannel {
+	public static UClass StaticClass() {return default;}
 	///<summary>Add a key to this channel. This initializes a new key and returns a reference to it.</summary>
 	public  UMovieSceneScriptingFloatKey AddKey(FFrameNumber InTime,float NewValue,float SubFrame/*=0.0f*/,ESequenceTimeUnit TimeUnit/*=ESequenceTimeUnit.DisplayRate*/,EMovieSceneKeyInterpolation InInterpolation/*=EMovieSceneKeyInterpolation.Auto*/) { return default; }
 	///<summary>Removes the specified key. Does nothing if the key is not specified or the key belongs to another channel.</summary>

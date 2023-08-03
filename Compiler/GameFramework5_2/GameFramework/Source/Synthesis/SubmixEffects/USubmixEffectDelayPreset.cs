@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>USubmixEffectDelayPreset</summary>
 [CppInclude("SubmixEffects/SubmixEffectDelay.h")]
 public partial class USubmixEffectDelayPreset : USoundEffectSubmixPreset {
+	public static UClass StaticClass() {return default;}
 	///<summary>Sets runtime delay settings. This will replace any dynamically added or modified settings without modifying</summary>
 	public  void SetSettings(FSubmixEffectDelaySettings InSettings) {}
 	///<summary>Sets object&#39;s default settings. This will update both the default UObject settings (and mark it as dirty),</summary>

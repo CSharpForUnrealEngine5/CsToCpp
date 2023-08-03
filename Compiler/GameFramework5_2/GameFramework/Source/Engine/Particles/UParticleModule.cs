@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Particles/ParticleModule.h")]
 public partial class UParticleModule : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>If true, the module performs operations on particles during Spawning</summary>
 	public bool bSpawnModule;
 	///<summary>If true, the module performs operations on particles during Updating</summary>

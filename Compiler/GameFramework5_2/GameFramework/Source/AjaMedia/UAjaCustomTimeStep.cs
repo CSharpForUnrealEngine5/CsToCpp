@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Control the Engine TimeStep via the AJA card.</summary>
 [CppInclude("AjaCustomTimeStep.h")]
 public partial class UAjaCustomTimeStep : UGenlockedCustomTimeStep {
+	public static UClass StaticClass() {return default;}
 	///<summary>If true, the Engine will wait for a signal coming in from the Reference In pin.</summary>
 	public bool bUseReferenceIn;
 	///<summary>The device, port and video settings that correspond to where the Genlock signal will be coming from</summary>

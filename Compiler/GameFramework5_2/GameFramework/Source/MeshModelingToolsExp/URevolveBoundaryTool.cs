@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Tool that revolves the boundary of a mesh around an axis to create a new mesh. Mainly useful for</summary>
 [CppInclude("RevolveBoundaryTool.h")]
 public partial class URevolveBoundaryTool : UMeshBoundaryToolBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>Property set for type of output object (StaticMesh, Volume, etc)</summary>
 	public UCreateMeshObjectTypeProperties OutputTypeProperties;
 	///<summary>Settings</summary>

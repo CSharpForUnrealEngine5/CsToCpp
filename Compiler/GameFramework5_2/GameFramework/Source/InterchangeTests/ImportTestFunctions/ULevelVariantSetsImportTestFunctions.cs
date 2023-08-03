@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("ImportTestFunctions/LevelVariantSetsImportTestFunctions.h")]
 public partial class ULevelVariantSetsImportTestFunctions : UImportTestFunctionsBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>Check whether the expected number of LevelVariantSets are imported</summary>
 	public static FInterchangeTestFunctionResult CheckLevelVariantSetsCount(TArray<ULevelVariantSets> LevelVariantSetsAssets,int ExpectedNumberOfLevelVariantSets) { return default; }
 	///<summary>Check whether the imported LevelVariantSets has the expected number of variant sets</summary>

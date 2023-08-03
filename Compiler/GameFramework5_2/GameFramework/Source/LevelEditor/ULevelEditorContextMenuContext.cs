@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("LevelEditorMenuContext.h")]
 public partial class ULevelEditorContextMenuContext : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>ContextType</summary>
 	public ELevelEditorMenuContext ContextType;
 	///<summary>CurrentSelection</summary>

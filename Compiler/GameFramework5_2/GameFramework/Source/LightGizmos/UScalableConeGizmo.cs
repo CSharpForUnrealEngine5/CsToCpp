@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>UScalableConeGizmo provides a cone that can be scaled (changing its angle)</summary>
 [CppInclude("ScalableConeGizmo.h")]
 public partial class UScalableConeGizmo : UInteractiveGizmo {
+	public static UClass StaticClass() {return default;}
 	///<summary>The maximum angle the cone can be stretched to</summary>
 	public float MaxAngle;
 	///<summary>The minimum angle the cone can be stretched to</summary>

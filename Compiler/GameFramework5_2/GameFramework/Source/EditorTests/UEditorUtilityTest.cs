@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("EditorUtilityTest.h")]
 public partial class UEditorUtilityTest : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Called when the test is ready to prepare</summary>
 	public FEditorUtilityTestEventSignature OnTestPrepare;
 	///<summary>Called when the test is started</summary>

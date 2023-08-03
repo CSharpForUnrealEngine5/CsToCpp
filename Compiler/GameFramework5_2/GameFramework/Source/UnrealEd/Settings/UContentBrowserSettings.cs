@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Implements content browser settings.  These are global not per-project</summary>
 [CppInclude("Settings/ContentBrowserSettings.h")]
 public partial class UContentBrowserSettings : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>The number of objects to load at once in the Content Browser before displaying a warning about loading many assets</summary>
 	public int NumObjectsToLoadBeforeWarning;
 	///<summary>Whether the Content Browser should open the Sources Panel by default</summary>

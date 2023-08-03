@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("UIFWidget.h")]
 public partial class UUIFrameworkWidget : UMVVMViewModelBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>bIsEnabled</summary>
 	public bool bIsEnabled;
 	///<summary>Visibility</summary>

@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("GeometryScript/MeshBakeFunctions.h")]
 public partial class UGeometryScriptLibrary_MeshBakeFunctions : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>MakeBakeTypeTangentNormal</summary>
 	public static FGeometryScriptBakeTypeOptions MakeBakeTypeTangentNormal() { return default; }
 	///<summary>MakeBakeTypeObjectNormal</summary>

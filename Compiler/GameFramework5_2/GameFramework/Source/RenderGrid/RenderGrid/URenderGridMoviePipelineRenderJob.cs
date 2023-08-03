@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>This class is responsible for the movie pipeline part of the rendering of the given render grid job.</summary>
 [CppInclude("RenderGrid/RenderGridQueue.h")]
 public partial class URenderGridMoviePipelineRenderJob : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>The render grid job that will be rendered.</summary>
 	public URenderGridJob RenderGridJob;
 	///<summary>The render grid that the render grid job (that will be rendered) belongs to.</summary>

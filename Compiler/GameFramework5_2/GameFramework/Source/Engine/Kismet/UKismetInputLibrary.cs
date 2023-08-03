@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Kismet/KismetInputLibrary.h")]
 public partial class UKismetInputLibrary : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>Calibrate the tilt for the input device</summary>
 	public static void CalibrateTilt() {}
 	///<summary>Test if the input key are equal (A == B)</summary>

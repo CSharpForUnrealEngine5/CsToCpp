@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Class to represent an animation on the property of a camera, light or scene node</summary>
 [CppInclude("InterchangeAnimationTrackSetNode.h")]
 public partial class UInterchangeAnimationTrackNode : UInterchangeAnimationTrackBaseNode {
+	public static UClass StaticClass() {return default;}
 	///<summary>Set the actor dependency to this object.</summary>
 	public  bool SetCustomActorDependencyUid(string DependencyUid) { return default; }
 	///<summary>Get the actor dependency to this object.</summary>

@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Components/LightComponent.h")]
 public partial class ULightComponent : ULightComponentBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>Color temperature in Kelvin of the blackbody illuminant.</summary>
 	public float Temperature;
 	///<summary>MaxDrawDistance</summary>

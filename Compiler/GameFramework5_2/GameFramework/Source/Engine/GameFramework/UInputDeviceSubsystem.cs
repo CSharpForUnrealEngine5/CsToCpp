@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>The input device subsystem provides an interface to allow users to set Input Device Properties</summary>
 [CppInclude("GameFramework/InputDeviceSubsystem.h")]
 public partial class UInputDeviceSubsystem : UEngineSubsystem {
+	public static UClass StaticClass() {return default;}
 	///<summary>Spawn a new instance of the given device property class and activate it.</summary>
 	public  FInputDevicePropertyHandle ActivateDevicePropertyOfClass(UClass PropertyClass,FActivateDevicePropertyParams Params) { return default; }
 	///<summary>Returns a pointer to the active input device property with the given handle. Returns null if the property doesn&#39;t exist</summary>

@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>UConstantQNRTSettings</summary>
 [CppInclude("ConstantQNRT.h")]
 public partial class UConstantQNRTSettings : UAudioSynesthesiaNRTSettings {
+	public static UClass StaticClass() {return default;}
 	///<summary>Starting frequency for first bin of CQT</summary>
 	public float StartingFrequency;
 	///<summary>Total number of resulting constant Q bands.</summary>

@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A bundle of the Media Asset necessary to play a video &amp; audio</summary>
 [CppInclude("MediaBundle.h")]
 public partial class UMediaBundle : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Get the material interface.</summary>
 	public  UMaterialInterface GetMaterial() { return default; }
 	///<summary>Get the media player.</summary>

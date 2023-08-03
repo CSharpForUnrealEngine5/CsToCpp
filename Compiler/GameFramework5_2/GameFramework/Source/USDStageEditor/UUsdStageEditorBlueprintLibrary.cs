@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Library of functions that can be used from scripting to interact with the USD Stage Editor UI</summary>
 [CppInclude("USDStageEditorBlueprintLibrary.h")]
 public partial class UUsdStageEditorBlueprintLibrary : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>Opens the the USD Stage Editor window, or focus it in case it is already open.</summary>
 	public static bool OpenStageEditor() { return default; }
 	///<summary>Closes the USD Stage Editor window if it is opened. Does nothing in case it is already closed.</summary>

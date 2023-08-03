@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Set tag cooldown decorator node.</summary>
 [CppInclude("BehaviorTree/Decorators/BTDecorator_SetTagCooldown.h")]
 public partial class UBTDecorator_SetTagCooldown : UBTDecorator {
+	public static UClass StaticClass() {return default;}
 	///<summary>Gameplay tag that will be used for the cooldown.</summary>
 	public FGameplayTag CooldownTag;
 	///<summary>Value we will add or set to the Cooldown tag when this task runs.</summary>

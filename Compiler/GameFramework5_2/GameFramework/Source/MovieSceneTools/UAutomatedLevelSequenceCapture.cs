@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("AutomatedLevelSequenceCapture.h")]
 public partial class UAutomatedLevelSequenceCapture : UMovieSceneCapture {
+	public static UClass StaticClass() {return default;}
 	///<summary>A level sequence asset to playback at runtime - used where the level sequence does not already exist in the world.</summary>
 	public FSoftObjectPath LevelSequenceAsset;
 	///<summary>Optional shot name to render. The frame range to render will be set to the shot frame range.</summary>

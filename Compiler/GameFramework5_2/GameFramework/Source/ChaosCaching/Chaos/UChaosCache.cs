@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Chaos/ChaosCache.h")]
 public partial class UChaosCache : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>RecordedDuration</summary>
 	public float RecordedDuration;
 	///<summary>NumRecordedFrames</summary>

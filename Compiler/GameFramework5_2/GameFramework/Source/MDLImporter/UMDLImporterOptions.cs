@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("MDLImporterOptions.h")]
 public partial class UMDLImporterOptions : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Resolution for baking procedural textures.</summary>
 	public uint BakingResolution;
 	///<summary>Samples used for baking procedural textures.</summary>

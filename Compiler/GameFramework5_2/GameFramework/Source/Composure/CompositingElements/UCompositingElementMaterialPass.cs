@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>UCompositingElementMaterialPass</summary>
 [CppInclude("CompositingElements/CompositingElementTransforms.h")]
 public partial class UCompositingElementMaterialPass : UCompositingPostProcessPass {
+	public static UClass StaticClass() {return default;}
 	///<summary>Material</summary>
 	public FCompositingMaterial Material;
 	///<summary>Set the material interface used by current material pass.</summary>

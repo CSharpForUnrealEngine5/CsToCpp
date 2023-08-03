@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Types/MVVMViewModelCollection.h")]
 public partial class UMVVMViewModelCollectionObject : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>FindViewModelInstance</summary>
 	public  UMVVMViewModelBase FindViewModelInstance(FMVVMViewModelContext Context) { return default; }
 	///<summary>Finds a View Model of the given type.</summary>

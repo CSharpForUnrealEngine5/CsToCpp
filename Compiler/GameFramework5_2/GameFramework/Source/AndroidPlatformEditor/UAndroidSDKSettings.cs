@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Implements the settings for the Android SDK setup.</summary>
 [CppInclude("AndroidSDKSettings.h")]
 public partial class UAndroidSDKSettings : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Location on disk of the Android SDK (falls back to ANDROID_HOME environment variable if this is left blank)</summary>
 	public FDirectoryPath SDKPath;
 	///<summary>Location on disk of the Android NDK (falls back to NDKROOT environment variable if this is left blank)</summary>

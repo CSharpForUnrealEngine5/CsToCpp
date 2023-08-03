@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>VR Editor Mode. Extends editor viewports with functionality for VR controls and object manipulation</summary>
 [CppInclude("VREditorMode.h")]
 public partial class UVREditorMode : UVREditorModeBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>Display the scene more closely to how it would appear at runtime (as opposed to edit time).</summary>
 	public  void SetGameView(bool bGameView) {}
 	///<summary>Returns whether game view is currently active.</summary>

@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("ContentBrowserMenuContexts.h")]
 public partial class UContentBrowserAssetContextMenuContext : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>CommonAssetDefinition</summary>
 	public UAssetDefinition CommonAssetDefinition;
 	///<summary>The currently selected assets in the content browser.</summary>

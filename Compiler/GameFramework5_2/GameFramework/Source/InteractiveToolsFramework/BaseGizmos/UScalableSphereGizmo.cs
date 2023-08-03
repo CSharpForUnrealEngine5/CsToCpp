@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>UScalableSphereGizmo provides a sphere that can be scaled in all directions by dragging</summary>
 [CppInclude("BaseGizmos/ScalableSphereGizmo.h")]
 public partial class UScalableSphereGizmo : UInteractiveGizmo {
+	public static UClass StaticClass() {return default;}
 	///<summary>The error threshold for hit detection with the sphere</summary>
 	public float HitErrorThreshold;
 	///<summary>The text that will be used as the transaction description for undo/redo</summary>

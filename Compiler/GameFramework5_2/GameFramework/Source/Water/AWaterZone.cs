@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("WaterZoneActor.h")]
 public partial class AWaterZone : AActor {
+	public static UClass StaticClass() {return default;}
 	///<summary>WaterInfoTexture</summary>
 	public UTextureRenderTarget2D WaterInfoTexture;
 	///<summary>ForceUpdateWaterInfoTexture</summary>

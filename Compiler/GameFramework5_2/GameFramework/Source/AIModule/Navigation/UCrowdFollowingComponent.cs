@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Navigation/CrowdFollowingComponent.h")]
 public partial class UCrowdFollowingComponent : UPathFollowingComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>main switch for crowd steering &amp; avoidance</summary>
 	public  void SuspendCrowdSteering(bool bSuspend) {}
 	///<summary>CrowdAgentMoveDirection</summary>

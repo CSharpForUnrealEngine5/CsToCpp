@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Blueprint library for creating/editing Materials</summary>
 [CppInclude("MaterialEditingLibrary.h")]
 public partial class UMaterialEditingLibrary : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>Returns number of material expressions in the supplied material</summary>
 	public static int GetNumMaterialExpressions(UMaterial Material) { return default; }
 	///<summary>Delete all material expressions in the supplied material</summary>

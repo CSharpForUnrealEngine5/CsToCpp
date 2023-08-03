@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>TextureRenderTarget2D</summary>
 [CppInclude("Engine/TextureRenderTarget2D.h")]
 public partial class UTextureRenderTarget2D : UTextureRenderTarget {
+	public static UClass StaticClass() {return default;}
 	///<summary>The width of the texture.</summary>
 	public int SizeX;
 	///<summary>The height of the texture.</summary>

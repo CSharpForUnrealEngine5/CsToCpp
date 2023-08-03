@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("DrawAndRevolveTool.h")]
 public partial class URevolveToolProperties : URevolveProperties {
+	public static UClass StaticClass() {return default;}
 	///<summary>Determines how end caps are created. This is not relevant if the end caps are not visible or if the path is not closed.</summary>
 	public ERevolvePropertiesCapFillMode CapFillMode;
 	///<summary>Connect the ends of an open path to the axis to add caps to the top and bottom of the revolved result.</summary>

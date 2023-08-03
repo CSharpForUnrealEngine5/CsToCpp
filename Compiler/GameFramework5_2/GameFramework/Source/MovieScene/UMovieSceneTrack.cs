@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Base class for a track in a Movie Scene</summary>
 [CppInclude("MovieSceneTrack.h")]
 public partial class UMovieSceneTrack : UMovieSceneSignedObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>General evaluation options for a given track</summary>
 	public FMovieSceneTrackEvalOptions EvalOptions;
 	///<summary>General display options for a given track</summary>

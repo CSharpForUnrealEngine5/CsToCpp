@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>GameFrameworkComponentManager</summary>
 [CppInclude("Components/GameFrameworkComponentManager.h")]
 public partial class UGameFrameworkComponentManager : UGameInstanceSubsystem {
+	public static UClass StaticClass() {return default;}
 	///<summary>Adds an actor as a receiver for components. If it passes the actorclass filter on requests it will get the components.</summary>
 	public  void AddReceiver(AActor Receiver,bool bAddOnlyInGameWorlds/*=true*/) {}
 	///<summary>Removes an actor as a receiver for components.</summary>

@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("ConcertClientSettings.h")]
 public partial class UConcertClientConfig : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>True if this client should be &quot;headless&quot;? (ie, not display any UI).</summary>
 	public bool bIsHeadless;
 	///<summary>True if the Multi-User module should install shortcut button and its drop-down menu in the level editor toolbar.</summary>

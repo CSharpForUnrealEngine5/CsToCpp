@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Engine/PlanarReflection.h")]
 public partial class APlanarReflection : ASceneCapture {
+	public static UClass StaticClass() {return default;}
 	///<summary>Planar reflection component.</summary>
 	public UPlanarReflectionComponent PlanarReflectionComponent;
 	///<summary>SpriteComponent</summary>

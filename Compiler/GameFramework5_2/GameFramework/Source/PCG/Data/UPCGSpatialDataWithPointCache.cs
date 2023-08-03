@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Data/PCGSpatialData.h")]
 public partial class UPCGSpatialDataWithPointCache : UPCGSpatialData {
+	public static UClass StaticClass() {return default;}
 	///<summary>CachedPointData</summary>
 	public UPCGPointData CachedPointData;
 	///<summary>CachedBoundedPointDataBoxes</summary>

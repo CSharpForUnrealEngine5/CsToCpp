@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Controller Container which holds all virtual controller properties</summary>
 [CppInclude("Controller/RCControllerContainer.h")]
 public partial class URCControllerContainer : URCVirtualPropertyContainerBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>Slider exponent for Vector Controller sliders. Determines how fast the value change travels while scrubbing the X/Y/Z sliders in UI</summary>
 	public float VectorSliderDelta;
 	///<summary>Linear Delta Sensitivity for Vector Controller sliders. Multiplied inversely with mouse movement to determine actual slider change</summary>

@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>---- All properties must be EditDefaultsOnly, BlueprintReadOnly !!! -----</summary>
 [CppInclude("CommonButtonBase.h")]
 public partial class UCommonButtonStyle : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Whether or not the style uses a drop shadow</summary>
 	public bool bSingleMaterial;
 	///<summary>The normal (un-selected) brush to apply to each size of this button</summary>

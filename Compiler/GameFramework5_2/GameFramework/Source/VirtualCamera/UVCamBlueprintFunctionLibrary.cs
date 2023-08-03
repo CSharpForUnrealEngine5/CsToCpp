@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("VCamBlueprintFunctionLibrary.h")]
 public partial class UVCamBlueprintFunctionLibrary : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>Returns true if not in editor or if running the game in PIE or Simulate</summary>
 	public static bool IsGameRunning() { return default; }
 	///<summary>GetUserSettings</summary>

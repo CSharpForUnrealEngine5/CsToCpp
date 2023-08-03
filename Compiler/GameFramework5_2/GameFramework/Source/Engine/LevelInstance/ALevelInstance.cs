@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("LevelInstance/LevelInstanceActor.h")]
 public partial class ALevelInstance : AActor {
+	public static UClass StaticClass() {return default;}
 	///<summary>Level LevelInstance</summary>
 	public TSoftObjectPtr<UWorld> WorldAsset;
 	///<summary>CookedWorldAsset</summary>

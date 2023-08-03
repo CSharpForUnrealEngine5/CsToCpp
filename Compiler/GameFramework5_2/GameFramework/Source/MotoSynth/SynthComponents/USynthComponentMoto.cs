@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("SynthComponents/SynthComponentMoto.h")]
 public partial class USynthComponentMoto : USynthComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>The moto synth preset to use for the moto synth component.</summary>
 	public UMotoSynthPreset MotoSynthPreset;
 	///<summary>Sets the starting RPM of the engine</summary>

@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Engine/Brush.h")]
 public partial class ABrush : AActor {
+	public static UClass StaticClass() {return default;}
 	///<summary>Type of brush</summary>
 	public EBrushType BrushType;
 	///<summary>Information.</summary>

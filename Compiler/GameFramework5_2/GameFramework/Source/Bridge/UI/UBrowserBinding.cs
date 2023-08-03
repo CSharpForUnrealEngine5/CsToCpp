@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("UI/BrowserBinding.h")]
 public partial class UBrowserBinding : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>DialogSuccessCallback</summary>
 	public  void DialogSuccessCallback(FWebJSFunction DialogJSCallback) {}
 	///<summary>DialogFailCallback</summary>

@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("VPSettings.h")]
 public partial class UVPSettings : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Default Kit of Focal Lengths for Virtual Camera</summary>
 	public TArray<float> FocalLengthPresets;
 	///<summary>Default Apertures for for Virtual Camera</summary>

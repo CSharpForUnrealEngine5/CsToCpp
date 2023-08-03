@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>namespace UE</summary>
 [CppInclude("InterchangeStaticMeshLodDataNode.h")]
 public partial class UInterchangeStaticMeshLodDataNode : UInterchangeFactoryBaseNode {
+	public static UClass StaticClass() {return default;}
 	///<summary>Mesh Uids: It can be either a scene or a mesh node uid. If its a scene it mean we want the mesh factory to bake the geo payload with the global transform of the scene node.</summary>
 	public  int GetMeshUidsCount() { return default; }
 	///<summary>GetMeshUids</summary>

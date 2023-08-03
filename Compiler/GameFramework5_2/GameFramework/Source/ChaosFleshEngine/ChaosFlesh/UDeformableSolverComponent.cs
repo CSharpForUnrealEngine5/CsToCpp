@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>UDeformableSolverComponent</summary>
 [CppInclude("ChaosFlesh/ChaosDeformableSolverComponent.h")]
 public partial class UDeformableSolverComponent : USceneComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>Properties : Do NOT place ungrouped properties in this class</summary>
 	public FConnectedObjectsGroup ConnectedObjects;
 	///<summary>SolverTiming</summary>

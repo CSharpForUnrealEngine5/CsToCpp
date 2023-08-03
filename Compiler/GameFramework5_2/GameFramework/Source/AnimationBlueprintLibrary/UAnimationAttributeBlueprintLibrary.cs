@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("AnimationAttributeBlueprintLibrary.h")]
 public partial class UAnimationAttributeBlueprintLibrary : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>SetAttributeKey</summary>
 	public static bool SetAttributeKey(object /*AnimationDataController*/ AnimationDataController,FAnimationAttributeIdentifier AttributeIdentifier,float Time,int Value) { return default; }
 	///<summary>SetAttributeKeys</summary>

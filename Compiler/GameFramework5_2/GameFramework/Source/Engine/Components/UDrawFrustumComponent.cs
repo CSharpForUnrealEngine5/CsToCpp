@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Utility component for drawing a view frustum. Origin is at the component location, frustum points down position X axis.</summary>
 [CppInclude("Components/DrawFrustumComponent.h")]
 public partial class UDrawFrustumComponent : UPrimitiveComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>Enable or disable frustum visualization for this camera</summary>
 	public bool bFrustumEnabled;
 	///<summary>Color to draw the wireframe frustum.</summary>

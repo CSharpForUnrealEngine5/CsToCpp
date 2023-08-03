@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("ToolActivities/PolyEditInsetOutsetActivity.h")]
 public partial class UPolyEditInsetOutsetProperties : UInteractiveToolPropertySet {
+	public static UClass StaticClass() {return default;}
 	///<summary>Amount of smoothing applied to outset boundary</summary>
 	public float Softness;
 	///<summary>Controls whether outset operation will move interior vertices as well as border vertices</summary>

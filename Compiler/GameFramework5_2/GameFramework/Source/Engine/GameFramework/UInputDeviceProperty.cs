@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Base class that represents a single Input Device Property. An Input Device Property</summary>
 [CppInclude("GameFramework/InputDeviceProperties.h")]
 public partial class UInputDeviceProperty : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Evaluate this device property for a given duration.</summary>
 	public  void EvaluateDeviceProperty(FPlatformUserId PlatformUser,FInputDeviceId DeviceId,float DeltaTime,float Duration) {}
 	///<summary>Reset the current device property. Provides an opportunity to reset device state after evaluation is complete.</summary>

@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("ProceduralFoliageComponent.h")]
 public partial class UProceduralFoliageComponent : UActorComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>The procedural foliage spawner used to generate foliage instances within this volume.</summary>
 	public UProceduralFoliageSpawner FoliageSpawner;
 	///<summary>The amount of overlap between simulation tiles (in cm).</summary>

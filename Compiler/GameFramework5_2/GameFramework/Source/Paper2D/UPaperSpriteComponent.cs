@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A component that handles rendering and collision for a single instance of a UPaperSprite asset.</summary>
 [CppInclude("PaperSpriteComponent.h")]
 public partial class UPaperSpriteComponent : UMeshComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>The sprite asset used by this component</summary>
 	public UPaperSprite SourceSprite;
 	///<summary>DEPRECATED in 4.4: The material override for this sprite component (if any); replaced by the Materials array inherited from UMeshComponent</summary>

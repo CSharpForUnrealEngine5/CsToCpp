@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>In order to use PropertyEditorModule.CreateSingleProperty we have to give it an object instance</summary>
 [CppInclude("PropertyTemplateObject.h")]
 public partial class UPropertyTemplateObject : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Captured byte property</summary>
 	public byte CapturedByteProperty;
 	///<summary>Captured uint16 property</summary>

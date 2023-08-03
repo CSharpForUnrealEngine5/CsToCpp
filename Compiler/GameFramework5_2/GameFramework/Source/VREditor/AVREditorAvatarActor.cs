@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Avatar Actor</summary>
 [CppInclude("VREditorAvatarActor.h")]
 public partial class AVREditorAvatarActor : AActor {
+	public static UClass StaticClass() {return default;}
 	///<summary>Our avatar&#39;s head mesh</summary>
 	public UStaticMeshComponent HeadMeshComponent;
 	///<summary>The grid that appears while the user is dragging the world around</summary>

@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("AddPrimitiveTool.h")]
 public partial class UProceduralArrowToolProperties : UProceduralShapeToolProperties {
+	public static UClass StaticClass() {return default;}
 	///<summary>Radius of the arrow shaft</summary>
 	public float ShaftRadius;
 	///<summary>Height of arrow shaft</summary>

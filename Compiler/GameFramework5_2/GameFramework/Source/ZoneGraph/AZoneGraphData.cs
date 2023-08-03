@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("ZoneGraphData.h")]
 public partial class AZoneGraphData : AActor {
+	public static UClass StaticClass() {return default;}
 	///<summary>if set to true then this zone graph data will be drawing itself when requested as part of &quot;show navigation&quot;</summary>
 	public bool bEnableDrawing;
 	///<summary>RenderingComp</summary>

@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Navigation/CrowdManager.h")]
 public partial class UCrowdManager : UCrowdManagerBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>MyNavData</summary>
 	public ANavigationData MyNavData;
 	///<summary>obstacle avoidance params</summary>

@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>This is a component to allow interaction with the Widget Component.  This class allows you to</summary>
 [CppInclude("Components/WidgetInteractionComponent.h")]
 public partial class UWidgetInteractionComponent : USceneComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>Called when the hovered Widget Component changes.  The interaction component functions at the Slate</summary>
 	public FOnHoveredWidgetChanged OnHoveredWidgetChanged;
 	///<summary>Presses a key as if the mouse/pointer were the source of it.  Normally you would just use</summary>

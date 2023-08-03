@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Standard material property settings for tools that generate new meshes</summary>
 [CppInclude("Properties/MeshMaterialProperties.h")]
 public partial class UNewMeshMaterialProperties : UInteractiveToolPropertySet {
+	public static UClass StaticClass() {return default;}
 	///<summary>Material for new mesh</summary>
 	public TWeakObjectPtr<UMaterialInterface> Material;
 	///<summary>Scale factor for generated UVs</summary>

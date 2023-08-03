@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Mechanic for selecting elements of a dynamic mesh in the UV editor. Interacts</summary>
 [CppInclude("Selection/UVEditorMeshSelectionMechanic.h")]
 public partial class UUVEditorMeshSelectionMechanic : UInteractionMechanic {
+	public static UClass StaticClass() {return default;}
 	///<summary>SelectionAPI</summary>
 	public UUVToolSelectionAPI SelectionAPI;
 	///<summary>ViewportButtonsAPI</summary>

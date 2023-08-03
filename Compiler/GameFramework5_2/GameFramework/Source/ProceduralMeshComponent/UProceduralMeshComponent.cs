@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Component that allows you to specify custom triangle mesh geometry</summary>
 [CppInclude("ProceduralMeshComponent.h")]
 public partial class UProceduralMeshComponent : UMeshComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>Create/replace a section for this procedural mesh component.</summary>
 	public  void CreateMeshSection(int SectionIndex,TArray<FVector> Vertices,TArray<int> Triangles,TArray<FVector> Normals,TArray<FVector2D> UV0,TArray<FColor> VertexColors,TArray<FProcMeshTangent> Tangents,bool bCreateCollision) {}
 	///<summary>Create/replace a section for this procedural mesh component.</summary>

@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Standard properties</summary>
 [CppInclude("BakeTransformTool.h")]
 public partial class UBakeTransformToolProperties : UInteractiveToolPropertySet {
+	public static UClass StaticClass() {return default;}
 	///<summary>Bake rotation</summary>
 	public bool bBakeRotation;
 	///<summary>Bake scale</summary>

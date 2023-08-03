@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("MotionControllerComponent.h")]
 public partial class UMotionControllerComponent : UPrimitiveComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>Which player index this motion controller should automatically follow</summary>
 	public int PlayerIndex;
 	///<summary>DEPRECATED (use MotionSource instead) Which hand this component should automatically follow</summary>

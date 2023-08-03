@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Component that allows you to specify custom triangle mesh geometry</summary>
 [CppInclude("CableComponent.h")]
 public partial class UCableComponent : UMeshComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>Should we fix the start to something, or leave it free.</summary>
 	public bool bAttachStart;
 	///<summary>Should we fix the end to something (using AttachEndTo and EndLocation), or leave it free.</summary>

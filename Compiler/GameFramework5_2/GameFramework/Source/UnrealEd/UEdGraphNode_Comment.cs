@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("EdGraphNode_Comment.h")]
 public partial class UEdGraphNode_Comment : UEdGraphNode {
+	public static UClass StaticClass() {return default;}
 	///<summary>Color to style comment with</summary>
 	public FLinearColor CommentColor;
 	///<summary>Size of the text in the comment box</summary>

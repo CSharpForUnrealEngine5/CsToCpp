@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("MassProcessor.h")]
 public partial class UMassProcessor : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Whether this processor should be executed on StandAlone or Server or Client</summary>
 	public int ExecutionFlags;
 	///<summary>Processing phase this processor will be automatically run as part of.</summary>

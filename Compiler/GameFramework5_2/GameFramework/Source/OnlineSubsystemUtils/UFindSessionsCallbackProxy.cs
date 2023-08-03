@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("FindSessionsCallbackProxy.h")]
 public partial class UFindSessionsCallbackProxy : UOnlineBlueprintCallProxyBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>Called when there is a successful query</summary>
 	public FBlueprintFindSessionsResultDelegate OnSuccess;
 	///<summary>Called when there is an unsuccessful query</summary>

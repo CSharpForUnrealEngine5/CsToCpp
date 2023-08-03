@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Actor that tick in the Editor viewport with the event EditorTick.</summary>
 [CppInclude("VPViewportTickableActorBase.h")]
 public partial class AVPViewportTickableActorBase : AActor {
+	public static UClass StaticClass() {return default;}
 	///<summary>EditorTick</summary>
 	public  void EditorTick(float DeltaSeconds) {}
 	///<summary>EditorDestroyed</summary>

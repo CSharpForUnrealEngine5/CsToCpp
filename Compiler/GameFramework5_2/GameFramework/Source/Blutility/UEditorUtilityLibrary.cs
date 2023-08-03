@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Expose editor utility functions to Blutilities</summary>
 [CppInclude("EditorUtilityLibrary.h")]
 public partial class UEditorUtilityLibrary : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>GetSelectionSet</summary>
 	public static TArray<AActor> GetSelectionSet() { return default; }
 	///<summary>GetSelectionBounds</summary>

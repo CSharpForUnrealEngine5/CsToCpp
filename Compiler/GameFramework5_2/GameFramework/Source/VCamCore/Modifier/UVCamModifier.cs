@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Modifier/VCamModifier.h")]
 public partial class UVCamModifier : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>GetOwningVCamComponent</summary>
 	public  UVCamComponent GetOwningVCamComponent() { return default; }
 	///<summary>GetCurrentLiveLinkDataFromOwningComponent</summary>

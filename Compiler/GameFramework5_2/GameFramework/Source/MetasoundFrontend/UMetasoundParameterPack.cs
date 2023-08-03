@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Here is the UObject BlueprintType that can be used in c++ and blueprint code. It holds a FMetasoundParamStorage</summary>
 [CppInclude("MetasoundParameterPack.h")]
 public partial class UMetasoundParameterPack : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>MakeMetasoundParameterPack</summary>
 	public static UMetasoundParameterPack MakeMetasoundParameterPack() { return default; }
 	///<summary>SetBool</summary>

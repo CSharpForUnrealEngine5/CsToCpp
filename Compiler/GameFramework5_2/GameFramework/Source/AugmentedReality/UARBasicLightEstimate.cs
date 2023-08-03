@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("ARLightEstimate.h")]
 public partial class UARBasicLightEstimate : UARLightEstimate {
+	public static UClass StaticClass() {return default;}
 	///<summary>GetAmbientIntensityLumens</summary>
 	public  float GetAmbientIntensityLumens() { return default; }
 	///<summary>GetAmbientColorTemperatureKelvin</summary>

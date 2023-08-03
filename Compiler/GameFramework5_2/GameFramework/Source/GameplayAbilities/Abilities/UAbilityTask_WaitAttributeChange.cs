@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Waits for the actor to activate another ability</summary>
 [CppInclude("Abilities/Tasks/AbilityTask_WaitAttributeChange.h")]
 public partial class UAbilityTask_WaitAttributeChange : UAbilityTask {
+	public static UClass StaticClass() {return default;}
 	///<summary>OnChange</summary>
 	public FWaitAttributeChangeDelegate OnChange;
 	///<summary>Wait until an attribute changes.</summary>

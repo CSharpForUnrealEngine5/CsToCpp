@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Settings controlling how geometry is selected</summary>
 [CppInclude("FractureToolSelection.h")]
 public partial class UFractureSelectionSettings : UFractureToolSettings {
+	public static UClass StaticClass() {return default;}
 	///<summary>MouseSelectionMethod</summary>
 	public EMouseSelectionMethod MouseSelectionMethod;
 	///<summary>What values to use when filtering by volume.  Note all values are presented as cube roots to give more intuitive scales (e.g., to select bones with volume less than a 10x10x10 cube, choose CubeRootOfVolume and MaxVolume=10, rather than needing to multiply out to 1000)</summary>

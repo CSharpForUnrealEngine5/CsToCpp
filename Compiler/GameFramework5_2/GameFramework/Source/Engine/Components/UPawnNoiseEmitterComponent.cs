@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>PawnNoiseEmitterComponent tracks noise event data used by SensingComponents to hear a Pawn.</summary>
 [CppInclude("Components/PawnNoiseEmitterComponent.h")]
 public partial class UPawnNoiseEmitterComponent : UActorComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>If set to true (default value) will notify AIPerceptionSystem about noise events</summary>
 	public bool bAIPerceptionSystemCompatibilityMode;
 	///<summary>Most recent noise made by this pawn not at its own location</summary>

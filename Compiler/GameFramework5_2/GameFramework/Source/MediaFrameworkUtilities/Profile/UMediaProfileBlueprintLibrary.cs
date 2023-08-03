@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Profile/MediaProfileBlueprintLibrary.h")]
 public partial class UMediaProfileBlueprintLibrary : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>GetMediaProfile</summary>
 	public static UMediaProfile GetMediaProfile() { return default; }
 	///<summary>SetMediaProfile</summary>

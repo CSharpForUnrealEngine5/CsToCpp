@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Common properties for revolving a PolyPath to create a mesh.</summary>
 [CppInclude("Properties/RevolveProperties.h")]
 public partial class URevolveProperties : UInteractiveToolPropertySet {
+	public static UClass StaticClass() {return default;}
 	///<summary>Revolution extent in degrees. Clamped to a maximum of 360 if Height Offset Per Degree is set to 0.</summary>
 	public double RevolveDegreesClamped;
 	///<summary>Revolution extent in degrees. Clamped to a maximum of 360 if Height Offset Per Degree is set to 0.</summary>

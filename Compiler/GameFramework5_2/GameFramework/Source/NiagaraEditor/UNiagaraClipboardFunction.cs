@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("NiagaraClipboard.h")]
 public partial class UNiagaraClipboardFunction : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>FOnPastedFunctionCallNode</summary>
 	public  void FOnPastedFunctionCallNode(UNiagaraNodeFunctionCall PastedFunctionCall) {}
 	///<summary>FunctionName</summary>

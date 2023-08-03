@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("ToolMenus.h")]
 public partial class UToolMenus : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Get</summary>
 	public static UToolMenus Get() { return default; }
 	///<summary>Registers a menu by name</summary>

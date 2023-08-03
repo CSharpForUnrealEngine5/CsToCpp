@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Container for a UTexture2D that can be built from a FHeightfieldMinMaxTextureBuildDesc description.</summary>
 [CppInclude("HeightfieldMinMaxTexture.h")]
 public partial class UHeightfieldMinMaxTexture : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>The Height MinMax texture.</summary>
 	public UTexture2D Texture;
 	///<summary>A LodBias texture derived from the Height MinMax texture</summary>

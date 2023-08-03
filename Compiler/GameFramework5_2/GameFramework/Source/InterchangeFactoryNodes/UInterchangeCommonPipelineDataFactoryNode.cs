@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>This factory node is the place where pipeline can set global data that can be use by factories.</summary>
 [CppInclude("InterchangeCommonPipelineDataFactoryNode.h")]
 public partial class UInterchangeCommonPipelineDataFactoryNode : UInterchangeFactoryBaseNode {
+	public static UClass StaticClass() {return default;}
 	///<summary>Return the global offset transform set by the pipelines.</summary>
 	public  bool GetCustomGlobalOffsetTransform(FTransform AttributeValue) { return default; }
 	///<summary>Pipeline can set a global transform, factories will use this global offset when importing asset.</summary>

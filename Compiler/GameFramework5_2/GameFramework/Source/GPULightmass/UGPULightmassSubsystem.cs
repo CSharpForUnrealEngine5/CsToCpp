@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("GPULightmassSettings.h")]
 public partial class UGPULightmassSubsystem : UWorldSubsystem {
+	public static UClass StaticClass() {return default;}
 	///<summary>GetSettings</summary>
 	public  UGPULightmassSettings GetSettings() { return default; }
 	///<summary>Launch</summary>

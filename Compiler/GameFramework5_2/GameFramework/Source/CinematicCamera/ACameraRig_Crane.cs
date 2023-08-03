@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A simple rig for simulating crane-like camera movements.</summary>
 [CppInclude("CameraRig_Crane.h")]
 public partial class ACameraRig_Crane : AActor {
+	public static UClass StaticClass() {return default;}
 	///<summary>Controls the pitch of the crane arm.</summary>
 	public float CranePitch;
 	///<summary>Controls the yaw of the crane arm.</summary>

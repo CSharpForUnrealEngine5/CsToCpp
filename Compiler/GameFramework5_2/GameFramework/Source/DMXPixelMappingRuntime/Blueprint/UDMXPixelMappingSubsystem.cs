@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Blueprint/DMXPixelMappingSubsystem.h")]
 public partial class UDMXPixelMappingSubsystem : UEngineSubsystem {
+	public static UClass StaticClass() {return default;}
 	///<summary>Get a DMX PixelMapping Subsystem, pure version</summary>
 	public static UDMXPixelMappingSubsystem GetDMXPixelMappingSubsystem_Pure() { return default; }
 	///<summary>Get a DMX PixelMapping Subsystem, callable version</summary>

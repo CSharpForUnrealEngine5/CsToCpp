@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>An asset that points to an image to be detected in a scene and provides the size of the object in real life</summary>
 [CppInclude("ARTypes.h")]
 public partial class UARCandidateImage : UDataAsset {
+	public static UClass StaticClass() {return default;}
 	///<summary>See: CandidateTexture</summary>
 	public  UTexture2D GetCandidateTexture() { return default; }
 	///<summary>See: FriendlyName</summary>

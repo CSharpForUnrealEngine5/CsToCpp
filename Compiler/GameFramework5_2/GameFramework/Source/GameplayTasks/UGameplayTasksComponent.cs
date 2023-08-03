@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>The core ActorComponent for interfacing with the GameplayAbilities System</summary>
 [CppInclude("GameplayTasksComponent.h")]
 public partial class UGameplayTasksComponent : UActorComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>Set to indicate that GameplayTasksComponent needs immediate replication. @TODO could just use ForceReplication(), but this allows initial implementation to be game specific.</summary>
 	public bool bIsNetDirty;
 	///<summary>TaskPriorityQueue</summary>

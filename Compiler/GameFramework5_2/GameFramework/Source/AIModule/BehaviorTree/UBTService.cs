@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Behavior Tree service nodes is designed to perform &quot;background&quot; tasks that update AI&#39;s knowledge.</summary>
 [CppInclude("BehaviorTree/BTService.h")]
 public partial class UBTService : UBTAuxiliaryNode {
+	public static UClass StaticClass() {return default;}
 	///<summary>defines time span between subsequent ticks of the service</summary>
 	public float Interval;
 	///<summary>adds random range to service&#39;s Interval</summary>

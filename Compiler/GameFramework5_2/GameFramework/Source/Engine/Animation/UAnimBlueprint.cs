@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>An Anim Blueprint is essentially a specialized Blueprint whose graphs control the animation of a Skeletal Mesh.</summary>
 [CppInclude("Animation/AnimBlueprint.h")]
 public partial class UAnimBlueprint : UBlueprint {
+	public static UClass StaticClass() {return default;}
 	///<summary>This is the target skeleton asset for anim instances created from this blueprint; all animations</summary>
 	public USkeleton TargetSkeleton;
 	///<summary>List of animation sync groups</summary>

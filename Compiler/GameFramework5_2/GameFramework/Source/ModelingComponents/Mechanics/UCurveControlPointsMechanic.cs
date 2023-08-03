@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A mechanic for displaying a sequence of control points and moving them about. Has an interactive initialization mode for</summary>
 [CppInclude("Mechanics/CurveControlPointsMechanic.h")]
 public partial class UCurveControlPointsMechanic : UInteractionMechanic {
+	public static UClass StaticClass() {return default;}
 	///<summary>Behaviors used for moving points around and hovering them</summary>
 	public USingleClickInputBehavior ClickBehavior;
 	///<summary>HoverBehavior</summary>

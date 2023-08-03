@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Function library containing methods that should be hoisted onto the test struct in Python.</summary>
 [CppInclude("PyTest.h")]
 public partial class UPyTestStructLibrary : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>IsBoolSet</summary>
 	public static bool IsBoolSet(FPyTestStruct InStruct) { return default; }
 	///<summary>LegacyIsBoolSet</summary>

@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Engine/StaticMeshSocket.h")]
 public partial class UStaticMeshSocket : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Defines a named attachment location on the UStaticMesh.</summary>
 	public string SocketName;
 	///<summary>RelativeLocation</summary>

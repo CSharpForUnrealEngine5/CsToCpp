@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("ActorFactories/ActorFactory.h")]
 public partial class UActorFactory : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Name used as basis for &#39;New Actor&#39; menu.</summary>
 	public string DisplayName;
 	///<summary>Indicates how far up the menu item should be. The higher the number, the higher up the list.</summary>

@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Base-class for filtering a level snapshot in Blueprints.</summary>
 [CppInclude("LevelSnapshotFilters.h")]
 public partial class ULevelSnapshotBlueprintFilter : ULevelSnapshotFilter {
+	public static UClass StaticClass() {return default;}
 	///<summary>@return Whether the actor should be considered for the level snapshot.</summary>
 	public  EFilterResult IsActorValid(FIsActorValidParams Params) { return default; }
 	///<summary>@return Whether this property should be considered for rolling back to the version in the snapshot.</summary>

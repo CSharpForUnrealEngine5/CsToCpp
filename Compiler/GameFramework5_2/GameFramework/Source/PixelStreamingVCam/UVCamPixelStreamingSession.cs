@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("VCamPixelStreamingSession.h")]
 public partial class UVCamPixelStreamingSession : UVCamOutputProviderBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>If using the output from a Composure Output Provider, specify it here</summary>
 	public int FromComposureOutputProviderIndex;
 	///<summary>If true the streamed UE viewport will match the resolution of the remote device.</summary>

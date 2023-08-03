@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Selection/MeshTopologySelectionMechanic.h")]
 public partial class UMeshTopologySelectionMechanicProperties : UInteractiveToolPropertySet {
+	public static UClass StaticClass() {return default;}
 	///<summary>bSelectVertices</summary>
 	public bool bSelectVertices;
 	///<summary>bSelectEdges</summary>

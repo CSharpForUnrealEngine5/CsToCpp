@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Blueprint API function library</summary>
 [CppInclude("Blueprints/DisplayClusterBlueprintLib.h")]
 public partial class UDisplayClusterBlueprintLib : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>Return Display Cluster API interface.</summary>
 	public static void GetAPI(object /*OutAPI*/ OutAPI) {}
 	///<summary>Create a new light card parented to the given nDisplay root actor.</summary>

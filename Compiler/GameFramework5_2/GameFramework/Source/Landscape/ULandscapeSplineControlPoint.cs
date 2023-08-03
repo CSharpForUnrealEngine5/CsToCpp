@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("LandscapeSplineControlPoint.h")]
 public partial class ULandscapeSplineControlPoint : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Location in Landscape-space</summary>
 	public FVector Location;
 	///<summary>Rotation of tangent vector at this point (in landscape-space)</summary>

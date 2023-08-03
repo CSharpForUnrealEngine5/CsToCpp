@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A special box panel that auto-generates its entries at both design-time and runtime.</summary>
 [CppInclude("Components/DynamicEntryBox.h")]
 public partial class UDynamicEntryBox : UDynamicEntryBoxBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>Clear out the box entries, optionally deleting the underlying Slate widgets entirely as well.</summary>
 	public  void Reset(bool bDeleteWidgets/*=false*/) {}
 	///<summary>RemoveEntry</summary>

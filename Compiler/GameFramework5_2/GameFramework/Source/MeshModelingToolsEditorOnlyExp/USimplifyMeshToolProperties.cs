@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Standard properties of the Simplify operation</summary>
 [CppInclude("SimplifyMeshTool.h")]
 public partial class USimplifyMeshToolProperties : UMeshConstraintProperties {
+	public static UClass StaticClass() {return default;}
 	///<summary>Simplification Scheme</summary>
 	public ESimplifyType SimplifierType;
 	///<summary>Simplification Target Type</summary>

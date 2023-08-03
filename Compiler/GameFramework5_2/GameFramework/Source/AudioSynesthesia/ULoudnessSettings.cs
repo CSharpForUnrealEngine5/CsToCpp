@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>ULoudnessSettings</summary>
 [CppInclude("Loudness.h")]
 public partial class ULoudnessSettings : UAudioSynesthesiaSettings {
+	public static UClass StaticClass() {return default;}
 	///<summary>Number of seconds between loudness measurements</summary>
 	public float AnalysisPeriod;
 	///<summary>Minimum analysis frequency for calculating loudness.</summary>

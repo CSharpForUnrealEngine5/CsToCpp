@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>UTapDelaySubmixPreset</summary>
 [CppInclude("SubmixEffects/SubmixEffectTapDelay.h")]
 public partial class USubmixEffectTapDelayPreset : USoundEffectSubmixPreset {
+	public static UClass StaticClass() {return default;}
 	///<summary>Set all tap delay setting. This will replace any dynamically added or modified taps.</summary>
 	public  void SetSettings(FSubmixEffectTapDelaySettings InSettings) {}
 	///<summary>Adds a dynamic tap delay with the given settings. Returns the tap id.</summary>

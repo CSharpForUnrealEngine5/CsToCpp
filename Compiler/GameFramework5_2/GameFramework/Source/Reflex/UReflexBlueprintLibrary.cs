@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("ReflexBlueprint.h")]
 public partial class UReflexBlueprintLibrary : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>GetReflexAvailable</summary>
 	public static bool GetReflexAvailable() { return default; }
 	///<summary>SetReflexMode</summary>

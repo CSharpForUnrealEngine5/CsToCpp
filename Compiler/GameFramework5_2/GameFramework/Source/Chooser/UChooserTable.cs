@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Chooser.h")]
 public partial class UChooserTable : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>deprecated UObject Results</summary>
 	public TArray<object /*Results_DEPRECATED*/> Results_DEPRECATED;
 	///<summary>deprecated UObject Columns</summary>

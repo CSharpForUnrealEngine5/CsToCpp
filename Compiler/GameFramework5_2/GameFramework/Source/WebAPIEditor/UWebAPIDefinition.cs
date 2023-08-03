@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>The asset containing various options and the schema itself.</summary>
 [CppInclude("WebAPIDefinition.h")]
 public partial class UWebAPIDefinition : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Importing data and options used for this definition.</summary>
 	public UAssetImportData AssetImportData;
 	///<summary>Settings for the WebAPI provider.</summary>

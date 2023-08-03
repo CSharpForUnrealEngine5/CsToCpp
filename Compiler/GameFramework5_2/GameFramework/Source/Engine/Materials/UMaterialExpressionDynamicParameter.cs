@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Materials/MaterialExpressionDynamicParameter.h")]
 public partial class UMaterialExpressionDynamicParameter : UMaterialExpression {
+	public static UClass StaticClass() {return default;}
 	///<summary>The names of the parameters.</summary>
 	public TArray<string> ParamNames;
 	///<summary>DefaultValue</summary>

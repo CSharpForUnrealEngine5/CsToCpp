@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Exposes operations to be performed on a sequence evaluator anim node</summary>
 [CppInclude("SequenceEvaluatorLibrary.h")]
 public partial class USequenceEvaluatorLibrary : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>Get a sequence evaluator context from an anim node context</summary>
 	public static FSequenceEvaluatorReference ConvertToSequenceEvaluator(FAnimNodeReference Node,EAnimNodeReferenceConversionResult Result) { return default; }
 	///<summary>Get a sequence evaluator context from an anim node context (pure)</summary>

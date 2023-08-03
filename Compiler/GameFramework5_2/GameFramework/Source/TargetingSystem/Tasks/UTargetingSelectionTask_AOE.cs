@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>@class UTargetingSelectionTask_AOE</summary>
 [CppInclude("Tasks/TargetingSelectionTask_AOE.h")]
 public partial class UTargetingSelectionTask_AOE : UTargetingTask {
+	public static UClass StaticClass() {return default;}
 	///<summary>Native Event to get the source location for the AOE</summary>
 	public  FVector GetSourceLocation(FTargetingRequestHandle TargetingHandle) { return default; }
 	///<summary>Native Event to get a source location offset for the AOE</summary>

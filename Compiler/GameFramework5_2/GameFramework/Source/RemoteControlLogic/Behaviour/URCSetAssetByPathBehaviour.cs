@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Custom behaviour for Set Asset By Path</summary>
 [CppInclude("Behaviour/Builtin/Path/RCSetAssetByPathBehaviour.h")]
 public partial class URCSetAssetByPathBehaviour : URCBehaviour {
+	public static UClass StaticClass() {return default;}
 	///<summary>Pointer to property container</summary>
 	public URCVirtualPropertyContainerBase PropertyInContainer;
 	///<summary>Pointer to the current Class the Asset will use to set the Targeted Exposed Object.</summary>

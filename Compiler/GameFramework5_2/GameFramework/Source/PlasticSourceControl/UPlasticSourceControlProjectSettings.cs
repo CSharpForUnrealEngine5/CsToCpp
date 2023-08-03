@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Project Settings for Plastic SCM Source Control. Saved in Config/DefaultEditor.ini</summary>
 [CppInclude("PlasticSourceControlProjectSettings.h")]
 public partial class UPlasticSourceControlProjectSettings : UDeveloperSettings {
+	public static UClass StaticClass() {return default;}
 	///<summary>Map Plastic SCM user names (typically e-mail addresses or company domain names) to display names for brevity.</summary>
 	public TMap<string,string> UserNameToDisplayName;
 	///<summary>Hide the domain part of an username e-mail address (eg @gmail.com) if the UserNameToDisplayName map didn&#39;t match (enabled by default).</summary>

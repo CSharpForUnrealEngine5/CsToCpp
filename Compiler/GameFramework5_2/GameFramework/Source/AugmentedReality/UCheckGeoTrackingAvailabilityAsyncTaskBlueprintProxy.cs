@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Blueprint async task to check Geo tracking availability.</summary>
 [CppInclude("ARGeoTrackingSupport.h")]
 public partial class UCheckGeoTrackingAvailabilityAsyncTaskBlueprintProxy : UARBaseAsyncTaskBlueprintProxy {
+	public static UClass StaticClass() {return default;}
 	///<summary>FGeoTrackingAvailabilityDelegate</summary>
 	public  void FGeoTrackingAvailabilityDelegate(bool bIsAvailable,string Error) {}
 	///<summary>OnSuccess</summary>

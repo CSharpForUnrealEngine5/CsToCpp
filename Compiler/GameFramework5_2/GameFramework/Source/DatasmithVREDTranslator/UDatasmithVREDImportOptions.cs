@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("DatasmithVREDImportOptions.h")]
 public partial class UDatasmithVREDImportOptions : UDatasmithFBXImportOptions {
+	public static UClass StaticClass() {return default;}
 	///<summary>Uses the *.mats file saved alongside the exported FBX for a more accurate material reproduction</summary>
 	public bool bImportMats;
 	///<summary>Path to the *.mats file. By default it will search for a *.mats file in the same folder as the FBX file, with the same base filename as it</summary>

@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("MuCOE/CustomizableObjectLayout.h")]
 public partial class UCustomizableObjectLayout : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Blocks</summary>
 	public TArray<FCustomizableObjectLayoutBlock> Blocks;
 	///<summary>Mesh</summary>

@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Tasks/GameplayTask_WaitDelay.h")]
 public partial class UGameplayTask_WaitDelay : UGameplayTask {
+	public static UClass StaticClass() {return default;}
 	///<summary>FTaskDelayDelegate</summary>
 	public  void FTaskDelayDelegate() {}
 	///<summary>OnFinish</summary>

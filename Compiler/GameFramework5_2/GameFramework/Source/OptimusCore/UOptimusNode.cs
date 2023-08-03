@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("OptimusNode.h")]
 public partial class UOptimusNode : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Returns the node class category. This is used for categorizing the node for display.</summary>
 	public  string GetNodeCategory() { return default; }
 	///<summary>Returns the node class name. This name is immutable for the given node class.</summary>

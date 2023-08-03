@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Script exposed functionality for populating, retrieving data from and setting data on FAnimPose</summary>
 [CppInclude("AnimPose.h")]
 public partial class UAnimPoseExtensions : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>Returns whether the Anim Pose contains valid data</summary>
 	public static bool IsValid(FAnimPose Pose) { return default; }
 	///<summary>Returns an array of bone names contained by the pose</summary>

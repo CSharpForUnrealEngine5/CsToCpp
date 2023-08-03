@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A container that controls visibility based on Input type and Platform</summary>
 [CppInclude("CommonVisibilityWidgetBase.h")]
 public partial class UDEPRECATED_UCommonVisibilityWidgetBase : UCommonBorder {
+	public static UClass StaticClass() {return default;}
 	///<summary>VisibilityControls</summary>
 	public TMap<string,bool> VisibilityControls;
 	///<summary>bShowForGamepad</summary>

@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Implements a nodal offset calibration algorithm that relies on the idea that the nodal point of the lens</summary>
 [CppInclude("Calibrators/CameraNodalOffsetAlgoOpticalAxis.h")]
 public partial class UCameraNodalOffsetAlgoOpticalAxis : UCameraNodalOffsetAlgoPoints {
+	public static UClass StaticClass() {return default;}
 	///<summary>The current value of the nodal offset that has been written to the lens file, but not necessarily transacted</summary>
 	public FNodalPointOffset AdjustedNodalOffset;
 	///<summary>The last nodal offset to have been saved and transacted</summary>

@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Wait for targeting actor (spawned from parameter) to provide data. Can be set not to end upon outputting data. Can be ended by task name.</summary>
 [CppInclude("Abilities/Tasks/AbilityTask_WaitTargetData.h")]
 public partial class UAbilityTask_WaitTargetData : UAbilityTask {
+	public static UClass StaticClass() {return default;}
 	///<summary>ValidData</summary>
 	public FWaitTargetDataDelegate ValidData;
 	///<summary>Cancelled</summary>

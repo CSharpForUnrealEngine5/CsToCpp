@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("GoogleARCoreAPI.h")]
 public partial class UGoogleARCoreUObjectManager : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>LatestPointCloud</summary>
 	public UGoogleARCorePointCloud LatestPointCloud;
 	///<summary>pointer type is ArTrackable*</summary>

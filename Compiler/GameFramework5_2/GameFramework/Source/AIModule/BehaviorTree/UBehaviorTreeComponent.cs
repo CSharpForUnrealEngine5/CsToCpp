@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("BehaviorTree/BehaviorTreeComponent.h")]
 public partial class UBehaviorTreeComponent : UBrainComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>@return the cooldown tag end time, 0.0f if CooldownTag is not found</summary>
 	public  double GetTagCooldownEndTime(FGameplayTag CooldownTag) { return default; }
 	///<summary>add to the cooldown tag&#39;s duration</summary>

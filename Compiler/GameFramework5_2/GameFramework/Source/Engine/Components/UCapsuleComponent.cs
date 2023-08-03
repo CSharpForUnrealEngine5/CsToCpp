@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A capsule generally used for simple collision. Bounds are rendered as lines in the editor.</summary>
 [CppInclude("Components/CapsuleComponent.h")]
 public partial class UCapsuleComponent : UShapeComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>Half-height, from center of capsule to the end of top or bottom hemisphere.</summary>
 	public float CapsuleHalfHeight;
 	///<summary>Radius of cap hemispheres and center cylinder.</summary>

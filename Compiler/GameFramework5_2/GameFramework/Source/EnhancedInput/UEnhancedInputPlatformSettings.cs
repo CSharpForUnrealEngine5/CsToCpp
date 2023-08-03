@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Settings for Enhanced Input that can be set per-platform</summary>
 [CppInclude("EnhancedInputPlatformSettings.h")]
 public partial class UEnhancedInputPlatformSettings : UPlatformSettings {
+	public static UClass StaticClass() {return default;}
 	///<summary>Input data that can be populated with Enhanced Input Platform Data blueprints</summary>
 	public TArray<TSoftObjectPtr<UClass>> InputData;
 	///<summary>A transient array of the subclasses for the Enhanced Input Platform data. This will prevent us from</summary>

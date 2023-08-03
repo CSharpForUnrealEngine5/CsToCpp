@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Polymodeling/OffsetMeshSelectionTool.h")]
 public partial class UOffsetMeshSelectionToolProperties : UInteractiveToolPropertySet {
+	public static UClass StaticClass() {return default;}
 	///<summary>The Extrusion Distance used in Fixed Input Mode</summary>
 	public double OffsetDistance;
 	///<summary>Control how the Offset Area should be displaced</summary>

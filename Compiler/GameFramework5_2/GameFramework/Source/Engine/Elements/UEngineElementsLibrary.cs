@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Elements/Framework/EngineElementsLibrary.h")]
 public partial class UEngineElementsLibrary : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>K2_AcquireEditorObjectElementHandle</summary>
 	public static FScriptTypedElementHandle K2_AcquireEditorObjectElementHandle(UObject Object,bool bAllowCreate/*=true*/) { return default; }
 	///<summary>K2_AcquireEditorActorElementHandle</summary>

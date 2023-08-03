@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Data source that loads from a specific curve table asset</summary>
 [CppInclude("DataRegistrySource_CurveTable.h")]
 public partial class UDataRegistrySource_CurveTable : UDataRegistrySource {
+	public static UClass StaticClass() {return default;}
 	///<summary>What table to load from</summary>
 	public TSoftObjectPtr<UCurveTable> SourceTable;
 	///<summary>Access rules</summary>

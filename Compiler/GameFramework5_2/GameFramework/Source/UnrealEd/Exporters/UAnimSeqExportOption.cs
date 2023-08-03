@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Exporters/AnimSeqExportOption.h")]
 public partial class UAnimSeqExportOption : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>If enabled, export the transforms from the animation</summary>
 	public bool bExportTransforms;
 	///<summary>If enabled, export the morph targets from the animation</summary>

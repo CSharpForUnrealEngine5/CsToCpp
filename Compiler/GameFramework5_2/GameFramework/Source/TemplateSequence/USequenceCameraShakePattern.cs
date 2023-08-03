@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A camera shake pattern that plays a sequencer animation.</summary>
 [CppInclude("SequenceCameraShake.h")]
 public partial class USequenceCameraShakePattern : UCameraShakePattern {
+	public static UClass StaticClass() {return default;}
 	///<summary>Source camera animation sequence to play.</summary>
 	public UCameraAnimationSequence Sequence;
 	///<summary>Scalar defining how fast to play the anim.</summary>

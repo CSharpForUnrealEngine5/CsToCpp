@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("SubmixEffects/AudioMixerSubmixEffectReverb.h")]
 public partial class USubmixEffectReverbPreset : USoundEffectSubmixPreset {
+	public static UClass StaticClass() {return default;}
 	///<summary>SetSettings</summary>
 	public  void SetSettings(FSubmixEffectReverbSettings InSettings) {}
 	///<summary>SetSettingsWithReverbEffect</summary>

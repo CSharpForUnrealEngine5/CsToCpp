@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Abstract component interface for the minimum Motion Trajectory prediction and history API</summary>
 [CppInclude("MotionTrajectory.h")]
 public partial class UMotionTrajectoryComponent : UActorComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>Interface for computing a trajectory prediction</summary>
 	public  FTrajectorySampleRange GetTrajectory() { return default; }
 	///<summary>Interface for computing a trajectory prediction with overridden component settings</summary>

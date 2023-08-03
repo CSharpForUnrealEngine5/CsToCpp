@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Options for exporting levels to USD format.</summary>
 [CppInclude("LevelExporterUSDOptions.h")]
 public partial class ULevelExporterUSDOptions : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Basic options about the stage to export</summary>
 	public FUsdStageOptions StageOptions;
 	///<summary>StartTimeCode to be used for all exported layers</summary>

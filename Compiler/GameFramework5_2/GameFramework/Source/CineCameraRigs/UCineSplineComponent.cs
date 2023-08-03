@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("CineSplineComponent.h")]
 public partial class UCineSplineComponent : USplineComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>Defaults which are used to propagate values to spline points on instances of this in the world</summary>
 	public FCineSplineCurveDefaults CameraSplineDefaults;
 	///<summary>Pointer to metadata</summary>

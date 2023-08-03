@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("DatasmithConsumer.h")]
 public partial class UDatasmithConsumer : UDataprepContentConsumer {
+	public static UClass StaticClass() {return default;}
 	///<summary>DEPRECATED: Removing use of TSoftObjectPtr</summary>
 	public TSoftObjectPtr<UDatasmithScene> DatasmithScene_DEPRECATED;
 	///<summary>Stores the level used on the last call to UDatasmithConsumer::Run</summary>

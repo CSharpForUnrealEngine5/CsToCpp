@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("DatasmithImportOptions.h")]
 public partial class UDatasmithImportOptions : UDatasmithOptionsBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>Specifies where to search for assets</summary>
 	public EDatasmithImportSearchPackagePolicy SearchPackagePolicy;
 	///<summary>Specifies what to do when material conflicts</summary>

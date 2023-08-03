@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>@class UTargetingSelectionTask_Trace</summary>
 [CppInclude("Tasks/TargetingSelectionTask_Trace.h")]
 public partial class UTargetingSelectionTask_Trace : UTargetingTask {
+	public static UClass StaticClass() {return default;}
 	///<summary>Native Event to get the source location for the Trace</summary>
 	public  FVector GetSourceLocation(FTargetingRequestHandle TargetingHandle) { return default; }
 	///<summary>Native Event to get a source location offset for the Trace</summary>

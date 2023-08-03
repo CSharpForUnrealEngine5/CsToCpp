@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>ProjectileMovementComponent updates the position of another component during its tick.</summary>
 [CppInclude("GameFramework/ProjectileMovementComponent.h")]
 public partial class UProjectileMovementComponent : UMovementComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>FOnProjectileBounceDelegate</summary>
 	public  void FOnProjectileBounceDelegate(FHitResult ImpactResult,FVector ImpactVelocity) {}
 	///<summary>FOnProjectileStopDelegate</summary>

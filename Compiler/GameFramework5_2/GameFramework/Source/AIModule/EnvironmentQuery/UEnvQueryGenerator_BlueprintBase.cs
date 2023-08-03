@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("EnvironmentQuery/Generators/EnvQueryGenerator_BlueprintBase.h")]
 public partial class UEnvQueryGenerator_BlueprintBase : UEnvQueryGenerator {
+	public static UClass StaticClass() {return default;}
 	///<summary>A short description of what test does, like &quot;Generate pawn named Joe&quot;</summary>
 	public string GeneratorsActionDescription;
 	///<summary>context</summary>

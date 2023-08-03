@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>The RigVM is the main object for evaluating FRigVMByteCode instructions.</summary>
 [CppInclude("RigVMCore/RigVM.h")]
 public partial class URigVM : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Executes the VM.</summary>
 	public  bool Execute(string InEntryName/*=NAME_None*/) { return default; }
 	///<summary>Add a function for execute instructions to this VM.</summary>

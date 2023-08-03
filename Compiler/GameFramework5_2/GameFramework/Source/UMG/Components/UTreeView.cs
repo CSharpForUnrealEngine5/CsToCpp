@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Similar to ListView, but can display a hierarchical tree of elements.</summary>
 [CppInclude("Components/TreeView.h")]
 public partial class UTreeView : UListView {
+	public static UClass StaticClass() {return default;}
 	///<summary>Attempts to expand/collapse the given item (only relevant if the item has children)</summary>
 	public  void SetItemExpansion(UObject Item,bool bExpandItem) {}
 	///<summary>Expands all items with children</summary>

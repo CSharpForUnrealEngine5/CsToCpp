@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A recording source that records LiveLink</summary>
 [CppInclude("TakeRecorderSource/TakeRecorderLiveLinkSource.h")]
 public partial class UTakeRecorderLiveLinkSource : UTakeRecorderSource {
+	public static UClass StaticClass() {return default;}
 	///<summary>Whether to perform key-reduction algorithms as part of the recording</summary>
 	public bool bReduceKeys;
 	///<summary>Name of the subject to record</summary>

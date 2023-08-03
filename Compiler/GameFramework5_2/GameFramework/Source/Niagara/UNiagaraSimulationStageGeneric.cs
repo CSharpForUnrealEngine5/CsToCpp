@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("NiagaraSimulationStageBase.h")]
 public partial class UNiagaraSimulationStageGeneric : UNiagaraSimulationStageBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>Optional bool binding allowing scripts to control if the simulation stage is enabled or not.</summary>
 	public FNiagaraVariableAttributeBinding EnabledBinding;
 	///<summary>Select what we should be iterating over, particles or data interfaces.</summary>

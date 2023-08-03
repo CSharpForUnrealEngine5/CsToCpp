@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("ToolMenusBlueprintLibrary.h")]
 public partial class UToolMenuEntryExtensions : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>MakeScriptSlateIcon</summary>
 	public static FScriptSlateIcon MakeScriptSlateIcon(string StyleSetName,string StyleName,string SmallStyleName/*=NAME_None*/) { return default; }
 	///<summary>BreakScriptSlateIcon</summary>

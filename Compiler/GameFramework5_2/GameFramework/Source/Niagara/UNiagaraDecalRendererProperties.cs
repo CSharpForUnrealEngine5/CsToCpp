@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("NiagaraDecalRendererProperties.h")]
 public partial class UNiagaraDecalRendererProperties : UNiagaraRendererProperties {
+	public static UClass StaticClass() {return default;}
 	///<summary>What material to use for the decal.</summary>
 	public UMaterialInterface Material;
 	///<summary>MICMaterial</summary>

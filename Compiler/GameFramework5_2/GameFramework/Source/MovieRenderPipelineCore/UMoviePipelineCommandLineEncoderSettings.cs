@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("MoviePipelineCommandLineEncoderSettings.h")]
 public partial class UMoviePipelineCommandLineEncoderSettings : UDeveloperSettings {
+	public static UClass StaticClass() {return default;}
 	///<summary>Path to the executable (including extension). Can just be &quot;ffmpeg.exe&quot; if it can be located via PATH directories.</summary>
 	public string ExecutablePath;
 	///<summary>CodecHelpText</summary>

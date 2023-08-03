@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("MetasoundEditorSettings.h")]
 public partial class UMetasoundEditorSettings : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Whether to pin the MetaSound Patch asset type when creating new assets.</summary>
 	public bool bPinMetaSoundPatchInAssetMenu;
 	///<summary>Whether to pin the MetaSound Source asset type when creating new assets.</summary>

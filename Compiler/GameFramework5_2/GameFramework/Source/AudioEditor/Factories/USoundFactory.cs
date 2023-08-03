@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Factories/SoundFactory.h")]
 public partial class USoundFactory : UFactory {
+	public static UClass StaticClass() {return default;}
 	///<summary>If enabled, a sound cue will automatically be created for the sound</summary>
 	public bool bAutoCreateCue;
 	///<summary>If enabled, the created sound cue will include a attenuation node</summary>

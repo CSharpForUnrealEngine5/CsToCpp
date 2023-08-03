@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>The basic set of properties shared by (more or less) all DisplacementTypes.</summary>
 [CppInclude("DisplaceMeshTool.h")]
 public partial class UDisplaceMeshCommonProperties : UInteractiveToolPropertySet {
+	public static UClass StaticClass() {return default;}
 	///<summary>Displacement type</summary>
 	public EDisplaceMeshToolDisplaceType DisplacementType;
 	///<summary>Displacement intensity</summary>

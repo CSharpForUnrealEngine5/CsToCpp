@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Tests/MVVMBindingHelperTest.h")]
 public partial class UMVVMViewModelBindingHelperTest : UMVVMViewModelBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>PropertyA</summary>
 	public int PropertyA;
 	///<summary>PropertyB</summary>

@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("MuCOE/Nodes/CustomizableObjectNodeTextureParameter.h")]
 public partial class UCustomizableObjectNodeTextureParameter : UCustomizableObjectNode {
+	public static UClass StaticClass() {return default;}
 	///<summary>DefaultValue</summary>
 	public UTexture2D DefaultValue;
 	///<summary>ParameterName</summary>

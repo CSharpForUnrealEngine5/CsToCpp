@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Async BP action that represents a pending prediction that is dispatched on a playing sequence.</summary>
 [CppInclude("Systems/MovieScenePredictionSystem.h")]
 public partial class UMovieSceneAsyncAction_SequencePrediction : UBlueprintAsyncActionBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>Initiate an asynchronous prediction for the specified component&#39;s world transform at a specific time in a sequence</summary>
 	public static UMovieSceneAsyncAction_SequencePrediction PredictWorldTransformAtTime(UMovieSceneSequencePlayer Player,USceneComponent TargetComponent,float TimeInSeconds) { return default; }
 	///<summary>Initiate an asynchronous prediction for the specified component&#39;s world transform at a specific time in a sequence</summary>

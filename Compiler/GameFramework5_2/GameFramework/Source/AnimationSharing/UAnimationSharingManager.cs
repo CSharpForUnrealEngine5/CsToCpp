@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("AnimationSharingManager.h")]
 public partial class UAnimationSharingManager : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Returns the AnimationSharing Manager, nullptr if none was set up</summary>
 	public static UAnimationSharingManager GetAnimationSharingManager(UObject WorldContextObject) { return default; }
 	///<summary>Create an Animation Sharing Manager using the provided Setup</summary>

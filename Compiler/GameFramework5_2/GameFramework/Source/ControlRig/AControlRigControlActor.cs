@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("ControlRigControlActor.h")]
 public partial class AControlRigControlActor : AActor {
+	public static UClass StaticClass() {return default;}
 	///<summary>ActorToTrack</summary>
 	public AActor ActorToTrack;
 	///<summary>ControlRigClass</summary>

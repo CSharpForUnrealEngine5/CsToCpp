@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Simple Mesh Plane Cutting Tool</summary>
 [CppInclude("PolygonOnMeshTool.h")]
 public partial class UPolygonOnMeshTool : USingleSelectionMeshEditingTool {
+	public static UClass StaticClass() {return default;}
 	///<summary>BasicProperties</summary>
 	public UPolygonOnMeshToolProperties BasicProperties;
 	///<summary>ActionProperties</summary>

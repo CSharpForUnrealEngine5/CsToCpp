@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Physics/CollisionPropertySets.h")]
 public partial class UPhysicsObjectToolPropertySet : UInteractiveToolPropertySet {
+	public static UClass StaticClass() {return default;}
 	///<summary>Source Object Name</summary>
 	public string ObjectName;
 	///<summary>Collision Flags controlling how simple and complex collision shapes are used</summary>

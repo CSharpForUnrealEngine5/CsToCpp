@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("InterchangePhysicsAssetFactoryNode.h")]
 public partial class UInterchangePhysicsAssetFactoryNode : UInterchangeFactoryBaseNode {
+	public static UClass StaticClass() {return default;}
 	///<summary>Initialize node data</summary>
 	public  void InitializePhysicsAssetNode(string UniqueID,string DisplayLabel,string InAssetClass) {}
 	///<summary>Get the class this node want to create</summary>

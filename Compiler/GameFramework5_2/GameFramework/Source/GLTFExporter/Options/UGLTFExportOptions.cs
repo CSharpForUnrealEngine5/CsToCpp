@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Options/GLTFExportOptions.h")]
 public partial class UGLTFExportOptions : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Scale factor used for exporting all assets (0.01 by default) for conversion from centimeters (Unreal default) to meters (glTF).</summary>
 	public float ExportUniformScale;
 	///<summary>If enabled, the preview mesh for a standalone animation or material asset will also be exported.</summary>

@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("MetasoundEditorGraphMemberDefaults.h")]
 public partial class UMetasoundEditorGraphMemberDefaultFloat : UMetasoundEditorGraphMemberDefaultLiteral {
+	public static UClass StaticClass() {return default;}
 	///<summary>Default</summary>
 	public float Default;
 	///<summary>ClampDefault</summary>

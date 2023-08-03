@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("SourceEffects/SourceEffectBitCrusher.h")]
 public partial class USourceEffectBitCrusherPreset : USoundEffectSourcePreset {
+	public static UClass StaticClass() {return default;}
 	///<summary>SetBits</summary>
 	public  void SetBits(float Bits) {}
 	///<summary>SetBitModulator</summary>

@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Base class for live link source settings (can be replaced by sources themselves)</summary>
 [CppInclude("LiveLinkSourceSettings.h")]
 public partial class ULiveLinkSourceSettings : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>The the subject how to create the frame snapshot.</summary>
 	public ELiveLinkSourceMode Mode;
 	///<summary>How the frame buffers are managed.</summary>

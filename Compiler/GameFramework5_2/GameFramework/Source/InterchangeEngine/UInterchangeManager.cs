@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("InterchangeManager.h")]
 public partial class UInterchangeManager : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Return the interchange manager singleton pointer.</summary>
 	public static UInterchangeManager GetInterchangeManagerScripted() { return default; }
 	///<summary>Call this to start an import asset process, the caller must specify a source data.</summary>

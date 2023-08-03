@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>InteractiveToolsContext owns the core parts of an Interactive Tools Framework implementation - the</summary>
 [CppInclude("InteractiveToolsContext.h")]
 public partial class UInteractiveToolsContext : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>current UInputRouter for this Context</summary>
 	public UInputRouter InputRouter;
 	///<summary>current UToolTargetManager for this Context</summary>

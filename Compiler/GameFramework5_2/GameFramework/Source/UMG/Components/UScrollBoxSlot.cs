@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>The Slot for the UScrollBox, contains the widget that are scrollable</summary>
 [CppInclude("Components/ScrollBoxSlot.h")]
 public partial class UScrollBoxSlot : UPanelSlot {
+	public static UClass StaticClass() {return default;}
 	///<summary>How much space this slot should occupy in the direction of the panel.</summary>
 	public FSlateChildSize Size;
 	///<summary>The padding area between the slot and the content it contains.</summary>

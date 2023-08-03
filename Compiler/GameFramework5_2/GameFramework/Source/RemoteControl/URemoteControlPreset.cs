@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Holds exposed functions and properties.</summary>
 [CppInclude("RemoteControlPreset.h")]
 public partial class URemoteControlPreset : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>The visual layout for this preset.</summary>
 	public FRemoteControlPresetLayout Layout;
 	///<summary>This preset&#39;s metadata.</summary>

@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>PhysicsAsset contains a set of rigid bodies and constraints that make up a single ragdoll.</summary>
 [CppInclude("PhysicsEngine/PhysicsAsset.h")]
 public partial class UPhysicsAsset : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Default skeletal mesh to use when previewing this PhysicsAsset etc.</summary>
 	public USkeletalMesh DefaultSkelMesh_DEPRECATED;
 	///<summary>PreviewSkeletalMesh</summary>

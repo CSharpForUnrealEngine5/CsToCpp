@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("InterchangePipelineBase.h")]
 public partial class UInterchangePipelineBase : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>ScriptedExecutePreImportPipeline</summary>
 	public  void ScriptedExecutePreImportPipeline(UInterchangeBaseNodeContainer BaseNodeContainer,TArray<UInterchangeSourceData> SourceDatas) {}
 	///<summary>ScriptedExecutePipeline, is call after the translation and before we parse the graph to call the factory.</summary>

@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("ProceduralFoliageEditorLibrary.h")]
 public partial class UProceduralFoliageEditorLibrary : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>ResimulateProceduralFoliageVolumes</summary>
 	public static void ResimulateProceduralFoliageVolumes(TArray<AProceduralFoliageVolume> ProceduralFoliageVolumes) {}
 	///<summary>ResimulateProceduralFoliageComponents</summary>

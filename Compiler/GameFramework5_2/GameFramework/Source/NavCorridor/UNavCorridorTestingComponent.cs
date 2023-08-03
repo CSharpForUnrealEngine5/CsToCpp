@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Component for testing AI Locomotion functionality.</summary>
 [CppInclude("NavCorridorTestingComponent.h")]
 public partial class UNavCorridorTestingComponent : UDebugDrawComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>NavAgentProps</summary>
 	public FNavAgentProperties NavAgentProps;
 	///<summary>FilterClass</summary>

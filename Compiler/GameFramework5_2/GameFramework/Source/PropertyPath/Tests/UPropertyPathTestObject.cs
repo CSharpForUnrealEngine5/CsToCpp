@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Tests/PropertyPathHelpersTest.h")]
 public partial class UPropertyPathTestObject : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Bool</summary>
 	public bool Bool;
 	///<summary>EnumOne</summary>

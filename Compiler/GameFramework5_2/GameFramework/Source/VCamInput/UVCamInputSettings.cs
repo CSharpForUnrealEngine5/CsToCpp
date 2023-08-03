@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("VCamInputSettings.h")]
 public partial class UVCamInputSettings : UDeveloperSettings {
+	public static UClass StaticClass() {return default;}
 	///<summary>DefaultInputProfile</summary>
 	public string DefaultInputProfile;
 	///<summary>InputProfiles</summary>

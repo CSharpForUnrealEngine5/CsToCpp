@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Subsystem for common Virtual Production roles operations.</summary>
 [CppInclude("VPRolesSubsystem.h")]
 public partial class UVirtualProductionRolesSubsystem : UEngineSubsystem {
+	public static UClass StaticClass() {return default;}
 	///<summary>FOnRolesChanged</summary>
 	public  void FOnRolesChanged(TArray<string> EnabledRoles) {}
 	///<summary>Get the currently active Virtual Production roles.</summary>

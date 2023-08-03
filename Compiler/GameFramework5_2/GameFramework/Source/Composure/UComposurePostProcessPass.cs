@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>In engine post process based pass.</summary>
 [CppInclude("ComposurePostProcessPass.h")]
 public partial class UComposurePostProcessPass : USceneComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>Sets a custom setup post process material. The material location must be set at BeforeTranslucency.</summary>
 	public  void SetSetupMaterial(UMaterialInterface Material) {}
 	///<summary>Gets current setup material.</summary>

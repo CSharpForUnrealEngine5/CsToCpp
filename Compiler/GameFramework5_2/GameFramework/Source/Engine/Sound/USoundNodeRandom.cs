@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Selects sounds from a random set</summary>
 [CppInclude("Sound/SoundNodeRandom.h")]
 public partial class USoundNodeRandom : USoundNode {
+	public static UClass StaticClass() {return default;}
 	///<summary>Weights</summary>
 	public TArray<float> Weights;
 	///<summary>Internal state of which sounds have been played.  This is only used at runtime</summary>

@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Widgets/UIFImageBlock.h")]
 public partial class UUIFrameworkImageBlock : UUIFrameworkWidget {
+	public static UClass StaticClass() {return default;}
 	///<summary>SetMaterial</summary>
 	public  void SetMaterial(TSoftObjectPtr<UMaterialInterface> Material) {}
 	///<summary>GeResourceObject</summary>

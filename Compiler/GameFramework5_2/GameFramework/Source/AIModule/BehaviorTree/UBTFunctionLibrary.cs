@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("BehaviorTree/BTFunctionLibrary.h")]
 public partial class UBTFunctionLibrary : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>GetOwnersBlackboard</summary>
 	public static UBlackboardComponent GetOwnersBlackboard(UBTNode NodeOwner) { return default; }
 	///<summary>GetOwnerComponent</summary>

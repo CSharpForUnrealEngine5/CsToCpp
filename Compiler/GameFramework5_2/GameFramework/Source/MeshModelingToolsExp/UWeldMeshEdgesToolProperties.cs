@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("WeldMeshEdgesTool.h")]
 public partial class UWeldMeshEdgesToolProperties : UInteractiveToolPropertySet {
+	public static UClass StaticClass() {return default;}
 	///<summary>Edges are considered matching if both pairs of endpoint vertices are closer than this distance</summary>
 	public float Tolerance;
 	///<summary>Only merge unambiguous pairs that have unique duplicate-edge matches</summary>

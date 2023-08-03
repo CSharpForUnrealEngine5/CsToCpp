@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Kismet/BlueprintMapLibrary.h")]
 public partial class UBlueprintMapLibrary : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>Adds a key and value to the map. If something already uses the provided key it will be overwritten with the new value.</summary>
 	public static void Map_Add(TMap<int,int> TargetMap,int Key,int Value) {}
 	///<summary>Removes a key and its associated value from the map.</summary>

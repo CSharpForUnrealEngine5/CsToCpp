@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Exposes operations to be performed on anim node contexts</summary>
 [CppInclude("AnimExecutionContextLibrary.h")]
 public partial class UAnimExecutionContextLibrary : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>Prototype function for thread-safe anim node calls</summary>
 	public  void Prototype_ThreadSafeAnimNodeCall(FAnimExecutionContext Context,FAnimNodeReference Node) {}
 	///<summary>Prototype function for thread-safe anim update calls</summary>

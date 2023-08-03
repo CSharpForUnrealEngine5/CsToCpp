@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Animation/DebugSkelMeshComponent.h")]
 public partial class UDebugSkelMeshComponent : USkeletalMeshComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>Global drawing mode for this skeleton. Depends on context of specific editor using the component.</summary>
 	public ESkeletonDrawMode SkeletonDrawMode;
 	///<summary>If true then the skeletal mesh associated with the component is drawn.</summary>

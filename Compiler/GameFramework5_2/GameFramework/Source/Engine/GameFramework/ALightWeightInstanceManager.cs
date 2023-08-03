@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("GameFramework/LightWeightInstanceManager.h")]
 public partial class ALightWeightInstanceManager : AActor {
+	public static UClass StaticClass() {return default;}
 	///<summary>RepresentedClass</summary>
 	public UClass RepresentedClass;
 	///<summary>AcceptedClass</summary>

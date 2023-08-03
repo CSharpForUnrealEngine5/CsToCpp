@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>An individual Pose made of Control Rig Controls</summary>
 [CppInclude("Tools/ControlRigPose.h")]
 public partial class UControlRigPoseAsset : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>SavePose</summary>
 	public  void SavePose(UControlRig InControlRig,bool bUseAll) {}
 	///<summary>PastePose</summary>

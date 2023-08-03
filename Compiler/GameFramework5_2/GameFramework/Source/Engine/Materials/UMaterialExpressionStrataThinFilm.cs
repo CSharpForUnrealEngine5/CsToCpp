@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Materials/MaterialExpressionStrata.h")]
 public partial class UMaterialExpressionStrataThinFilm : UMaterialExpressionStrataUtilityBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>The normal of the surface to consider. This input respects the normal space setup on the root node (tangent or world)</summary>
 	public FExpressionInput Normal;
 	///<summary>Defines F0, the percentage of light reflected as specular from a surface when the view is perpendicular to the surface. (type = float3, unit = unitless, defaults to plastic 0.04)</summary>

@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Exposes FindSession of the Platform SDK for blueprint use.</summary>
 [CppInclude("OculusFindSessionsCallbackProxy.h")]
 public partial class UOculusFindSessionsCallbackProxy : UOnlineBlueprintCallProxyBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>Called when there is a successful query</summary>
 	public FBlueprintFindSessionsResultDelegate OnSuccess;
 	///<summary>Called when there is an unsuccessful query</summary>

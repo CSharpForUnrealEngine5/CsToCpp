@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("WaterSplineMetadata.h")]
 public partial class UWaterSplineMetadata : USplineMetadata {
+	public static UClass StaticClass() {return default;}
 	///<summary>Depth</summary>
 	public FInterpCurveFloat Depth;
 	///<summary>The Current of the water at this vertex.  Magnitude and direction</summary>

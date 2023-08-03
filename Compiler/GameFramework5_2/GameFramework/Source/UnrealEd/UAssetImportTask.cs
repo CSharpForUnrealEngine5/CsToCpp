@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Contains data for a group of assets to import</summary>
 [CppInclude("AssetImportTask.h")]
 public partial class UAssetImportTask : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Filename to import</summary>
 	public string Filename;
 	///<summary>Path where asset will be imported to</summary>

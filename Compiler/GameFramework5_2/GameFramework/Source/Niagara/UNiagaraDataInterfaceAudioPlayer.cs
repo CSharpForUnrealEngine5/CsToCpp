@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>This Data Interface can be used to play one-shot audio effects driven by particle data.</summary>
 [CppInclude("NiagaraDataInterfaceAudioPlayer.h")]
 public partial class UNiagaraDataInterfaceAudioPlayer : UNiagaraDataInterface {
+	public static UClass StaticClass() {return default;}
 	///<summary>Reference to the audio asset to play</summary>
 	public USoundBase SoundToPlay;
 	///<summary>Optional sound attenuation setting to use</summary>

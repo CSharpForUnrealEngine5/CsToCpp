@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("GameplayDebuggerLocalController.h")]
 public partial class UGameplayDebuggerLocalController : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>CachedReplicator</summary>
 	public AGameplayDebuggerCategoryReplicator CachedReplicator;
 	///<summary>CachedPlayerManager</summary>

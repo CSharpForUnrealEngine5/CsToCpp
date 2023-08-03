@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Animation/AnimationAsset.h")]
 public partial class UAnimationAsset : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Pointer to the Skeleton this asset can be played on .</summary>
 	public USkeleton Skeleton;
 	///<summary>Meta data that can be saved with the asset</summary>

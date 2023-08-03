@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("DataInterface/NiagaraDataInterfaceDataChannelWrite.h")]
 public partial class UNiagaraDataInterfaceDataChannelWrite : UNiagaraDataInterface {
+	public static UClass StaticClass() {return default;}
 	///<summary>How should we allocate the buffer into which we write data.</summary>
 	public ENiagaraDataChannelAllocationMode AllocationMode;
 	///<summary>How many elements to allocate for writing per frame? Usage is defendant on AllocationMode. TODO: Allow allocation count to be controlled dynamically from script?</summary>

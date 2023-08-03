@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("CaptureTab/MediaFrameworkCapturePanelBlueprintLibrary.h")]
 public partial class UMediaFrameworkCapturePanel : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Capture the camera&#39;s viewport and the render target.</summary>
 	public  void StartCapture() {}
 	///<summary>Stop the current capture.</summary>

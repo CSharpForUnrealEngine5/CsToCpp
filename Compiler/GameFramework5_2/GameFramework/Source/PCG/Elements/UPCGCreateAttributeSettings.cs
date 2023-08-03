@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Adds an attribute to Spatial data or to an Attribute Set, or creates a new Attribute Set if no</summary>
 [CppInclude("Elements/PCGCreateAttribute.h")]
 public partial class UPCGCreateAttributeSettings : UPCGSettings {
+	public static UClass StaticClass() {return default;}
 	///<summary>OutputAttributeName</summary>
 	public string OutputAttributeName;
 	///<summary>bFromSourceParam</summary>

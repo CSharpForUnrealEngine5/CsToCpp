@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Distributions/DistributionVectorParameterBase.h")]
 public partial class UDistributionVectorParameterBase : UDistributionVectorConstant {
+	public static UClass StaticClass() {return default;}
 	///<summary>ParameterName</summary>
 	public string ParameterName;
 	///<summary>MinInput</summary>

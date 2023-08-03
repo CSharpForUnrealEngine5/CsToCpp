@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Library of synchronous achievement calls</summary>
 [CppInclude("TurnBasedBlueprintLibrary.h")]
 public partial class UTurnBasedBlueprintLibrary : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>out</summary>
 	public static void GetIsMyTurn(UObject WorldContextObject,APlayerController PlayerController,string MatchID,bool bIsMyTurn) {}
 	///<summary>out</summary>

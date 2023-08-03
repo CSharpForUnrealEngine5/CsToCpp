@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("WaterBrushManager.h")]
 public partial class AWaterBrushManager : AWaterLandscapeBrush {
+	public static UClass StaticClass() {return default;}
 	///<summary>SceneCaptureComponent2D</summary>
 	public USceneCaptureComponent2D SceneCaptureComponent2D;
 	///<summary>JumpFloodComponent2D</summary>

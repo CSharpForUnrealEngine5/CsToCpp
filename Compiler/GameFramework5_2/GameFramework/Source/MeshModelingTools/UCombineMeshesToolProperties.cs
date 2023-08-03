@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Common properties</summary>
 [CppInclude("CombineMeshesTool.h")]
 public partial class UCombineMeshesToolProperties : UInteractiveToolPropertySet {
+	public static UClass StaticClass() {return default;}
 	///<summary>bIsDuplicateMode</summary>
 	public bool bIsDuplicateMode;
 	///<summary>Defines the object the tool output is written to.</summary>

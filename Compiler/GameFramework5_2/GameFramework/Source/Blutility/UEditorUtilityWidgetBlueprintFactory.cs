@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("EditorUtilityWidgetBlueprintFactory.h")]
 public partial class UEditorUtilityWidgetBlueprintFactory : UFactory {
+	public static UClass StaticClass() {return default;}
 	///<summary>The type of blueprint that will be created</summary>
 	public EBlueprintType BlueprintType;
 	///<summary>The parent class of the created blueprint</summary>

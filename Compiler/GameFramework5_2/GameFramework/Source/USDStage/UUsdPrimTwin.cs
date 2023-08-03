@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>The Unreal equivalent (twin) of a USD prim</summary>
 [CppInclude("USDPrimTwin.h")]
 public partial class UUsdPrimTwin : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>PrimPath</summary>
 	public string PrimPath;
 	///<summary>SceneComponent</summary>

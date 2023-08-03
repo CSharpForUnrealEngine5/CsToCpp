@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A material that is rendered onto the surface of a mesh. A kind of &#39;bumper sticker&#39; for a model.</summary>
 [CppInclude("Components/DecalComponent.h")]
 public partial class UDecalComponent : USceneComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>Decal material.</summary>
 	public UMaterialInterface DecalMaterial;
 	///<summary>Controls the order in which decal elements are rendered.  Higher values draw later (on top).</summary>

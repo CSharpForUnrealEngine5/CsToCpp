@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Utility class to altering and analyzing a SkeletalMesh and use the common functionalities of the SkeletalMesh Editor.</summary>
 [CppInclude("EditorSkeletalMeshLibrary.h")]
 public partial class UDEPRECATED_EditorSkeletalMeshLibrary : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>RegenerateLOD</summary>
 	public static bool RegenerateLOD(USkeletalMesh SkeletalMesh,int NewLODCount/*=0*/,bool bRegenerateEvenIfImported/*=false*/,bool bGenerateBaseLOD/*=false*/) { return default; }
 	///<summary>GetNumVerts</summary>

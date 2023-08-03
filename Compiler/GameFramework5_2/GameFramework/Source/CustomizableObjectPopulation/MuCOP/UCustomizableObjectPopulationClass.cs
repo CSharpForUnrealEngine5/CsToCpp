@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("MuCOP/CustomizableObjectPopulationClass.h")]
 public partial class UCustomizableObjectPopulationClass : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Name of the Customizable Object Population Class</summary>
 	public string Name;
 	///<summary>Customizable Object that defines this class</summary>

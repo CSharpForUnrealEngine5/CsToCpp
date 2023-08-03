@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Base class for all asset action-related utilities</summary>
 [CppInclude("AssetActionUtility.h")]
 public partial class UAssetActionUtility : UEditorUtilityObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>GetSupportedClass</summary>
 	public  UClass GetSupportedClass() { return default; }
 	///<summary>Returns whether or not this action is designed to work specifically on Blueprints (true) or on all assets (false).</summary>

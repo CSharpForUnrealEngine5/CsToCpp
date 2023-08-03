@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Bloom only pass implemented on top of the in-engine bloom.</summary>
 [CppInclude("ComposureLensBloomPass.h")]
 public partial class UComposureLensBloomPass : UComposurePostProcessPass {
+	public static UClass StaticClass() {return default;}
 	///<summary>Bloom settings.</summary>
 	public FLensBloomSettings Settings;
 	///<summary>Sets a custom tonemapper replacing material instance.</summary>

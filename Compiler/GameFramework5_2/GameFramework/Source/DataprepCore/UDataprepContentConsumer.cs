@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Abstract class providing the minimal services required for a DataprepConsumer</summary>
 [CppInclude("DataprepContentConsumer.h")]
 public partial class UDataprepContentConsumer : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Sets the name of the level the consumer should move objects to if applicable.</summary>
 	public  bool SetLevelName(string InLevelName,string OutFailureReason) { return default; }
 	///<summary>Sets the name of the level the consumer should move objects to if applicable.</summary>

@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("ToolMenuEntryScript.h")]
 public partial class UToolMenuEntryScript : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Execute</summary>
 	public  void Execute(FToolMenuContext Context) {}
 	///<summary>CanExecute</summary>

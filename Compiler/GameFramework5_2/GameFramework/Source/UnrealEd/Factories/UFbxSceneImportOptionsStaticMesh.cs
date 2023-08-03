@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Factories/FbxSceneImportOptionsStaticMesh.h")]
 public partial class UFbxSceneImportOptionsStaticMesh : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>For static meshes, enabling this option will combine all meshes in the FBX into a single monolithic mesh in Unreal</summary>
 	public string StaticMeshLODGroup;
 	///<summary>If checked, collision will automatically be generated (ignored if custom collision is imported or used).</summary>

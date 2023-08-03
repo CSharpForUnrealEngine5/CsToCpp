@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Describes a (usually) API-specific class representing an enum.</summary>
 [CppInclude("Dom/WebAPIEnum.h")]
 public partial class UWebAPIEnum : UWebAPIModelBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>Name of the Enum.</summary>
 	public FWebAPITypeNameVariant Name;
 	///<summary>Will be set based on dependent operations.</summary>

@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>The Load Guard behaves similarly to a Border, but with the ability to hide its primary content and display a loading spinner</summary>
 [CppInclude("CommonLoadGuard.h")]
 public partial class UCommonLoadGuard : UContentWidget {
+	public static UClass StaticClass() {return default;}
 	///<summary>SetLoadingText</summary>
 	public  void SetLoadingText(string InLoadingText) {}
 	///<summary>SetIsLoading</summary>

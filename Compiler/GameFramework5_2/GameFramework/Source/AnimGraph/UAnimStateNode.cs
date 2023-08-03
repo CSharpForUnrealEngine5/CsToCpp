@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("AnimStateNode.h")]
 public partial class UAnimStateNode : UAnimStateNodeBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>The animation graph for this state</summary>
 	public UEdGraph BoundGraph;
 	///<summary>The type of the contents of this state</summary>

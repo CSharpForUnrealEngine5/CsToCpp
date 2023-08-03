@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Exposes operations to be performed on a layered bone blend anim node.</summary>
 [CppInclude("LayeredBoneBlendLibrary.h")]
 public partial class ULayeredBoneBlendLibrary : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>Get a layered bone blend context from an anim node context.</summary>
 	public static FLayeredBoneBlendReference ConvertToLayeredBoneBlend(FAnimNodeReference Node,EAnimNodeReferenceConversionResult Result) { return default; }
 	///<summary>Get a layered bone blend context from an anim node context (pure).</summary>

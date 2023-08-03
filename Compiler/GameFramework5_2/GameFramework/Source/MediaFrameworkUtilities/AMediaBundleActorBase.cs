@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A base actor that</summary>
 [CppInclude("MediaBundleActorBase.h")]
 public partial class AMediaBundleActorBase : AActor {
+	public static UClass StaticClass() {return default;}
 	///<summary>Get the Media Bundle.</summary>
 	public  UMediaBundle GetMediaBundle() { return default; }
 	///<summary>Play the Media Source.</summary>

@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>An audio slider widget.</summary>
 [CppInclude("AudioSlider.h")]
 public partial class UAudioSliderBase : UWidget {
+	public static UClass StaticClass() {return default;}
 	///<summary>The normalized linear (0 - 1) slider value.</summary>
 	public float Value;
 	///<summary>The text label units</summary>

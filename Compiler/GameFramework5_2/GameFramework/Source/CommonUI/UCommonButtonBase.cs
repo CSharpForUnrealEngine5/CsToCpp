@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Button that disables itself when not active. Also updates actions for CommonActionWidget if bound to display platform-specific icons.</summary>
 [CppInclude("CommonButtonBase.h")]
 public partial class UCommonButtonBase : UCommonUserWidget {
+	public static UClass StaticClass() {return default;}
 	///<summary>Disables this button with a reason (use instead of SetIsEnabled)</summary>
 	public  void DisableButtonWithReason(string DisabledReason) {}
 	///<summary>Change whether this widget is selectable at all. If false and currently selected, will deselect.</summary>

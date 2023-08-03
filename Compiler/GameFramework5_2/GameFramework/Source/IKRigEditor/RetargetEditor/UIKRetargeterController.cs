@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A stateless singleton (1-per-asset) class used to make modifications to a UIKRetargeter asset.</summary>
 [CppInclude("RetargetEditor/IKRetargeterController.h")]
 public partial class UIKRetargeterController : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Use this to get the controller for the given retargeter asset</summary>
 	public static UIKRetargeterController GetController(UIKRetargeter InRetargeterAsset) { return default; }
 	///<summary>Set the IK Rig to use as the source or target (to copy animation FROM/TO)</summary>

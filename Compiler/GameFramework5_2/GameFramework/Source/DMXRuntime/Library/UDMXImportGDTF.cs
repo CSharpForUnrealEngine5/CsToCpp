@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Library/DMXImportGDTF.h")]
 public partial class UDMXImportGDTF : UDMXImport {
+	public static UClass StaticClass() {return default;}
 	///<summary>GetDMXModes</summary>
 	public  UDMXImportGDTFDMXModes GetDMXModes() { return default; }
 	///<summary>DEPRECATED 5.1 in favor of AssetImportData</summary>

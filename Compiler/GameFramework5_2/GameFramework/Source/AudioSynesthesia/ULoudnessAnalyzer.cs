@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>ULoudnessAnalyzer</summary>
 [CppInclude("Loudness.h")]
 public partial class ULoudnessAnalyzer : UAudioAnalyzer {
+	public static UClass StaticClass() {return default;}
 	///<summary>The settings for the audio analyzer.</summary>
 	public ULoudnessSettings Settings;
 	///<summary>Delegate to receive all overall loudness results since last delegate call.</summary>

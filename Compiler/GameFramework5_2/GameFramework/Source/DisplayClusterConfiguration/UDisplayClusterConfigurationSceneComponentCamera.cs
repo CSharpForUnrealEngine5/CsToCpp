@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("DisplayClusterConfigurationTypes.h")]
 public partial class UDisplayClusterConfigurationSceneComponentCamera : UDisplayClusterConfigurationSceneComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>InterpupillaryDistance</summary>
 	public float InterpupillaryDistance;
 	///<summary>bSwapEyes</summary>

@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Represents the interactor in the world</summary>
 [CppInclude("ViewportInteractor.h")]
 public partial class UViewportInteractor : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Gets the world interaction</summary>
 	public  UViewportWorldInteraction GetWorldInteraction() { return default; }
 	///<summary>Gets the paired interactor assigned by the world interaction, can return null when there is no other interactor</summary>

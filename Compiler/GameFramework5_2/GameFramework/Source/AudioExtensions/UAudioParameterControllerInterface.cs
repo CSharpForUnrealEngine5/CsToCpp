@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("AudioParameterControllerInterface.h")]
 public partial class UAudioParameterControllerInterface : UInterface {
+	public static UClass StaticClass() {return default;}
 	///<summary>Resets all parameters to their original values.</summary>
 	public  void ResetParameters() {}
 	///<summary>Executes a named trigger.  Does *not* cache trigger value, so only executes if the sound</summary>

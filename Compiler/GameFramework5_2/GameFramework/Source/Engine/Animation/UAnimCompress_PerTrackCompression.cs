@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Animation/AnimCompress_PerTrackCompression.h")]
 public partial class UAnimCompress_PerTrackCompression : UAnimCompress_RemoveLinearKeys {
+	public static UClass StaticClass() {return default;}
 	///<summary>Maximum threshold to use when replacing a component with zero. Lower values retain more keys, but yield less compression.</summary>
 	public float MaxZeroingThreshold;
 	///<summary>Maximum position difference to use when testing if an animation key may be removed. Lower values retain more keys, but yield less compression.</summary>

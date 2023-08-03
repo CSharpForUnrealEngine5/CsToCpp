@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Chaos/ChaosSolverActor.h")]
 public partial class AChaosSolverActor : AActor {
+	public static UClass StaticClass() {return default;}
 	///<summary>Properties</summary>
 	public FChaosSolverConfiguration Properties;
 	///<summary>Deprecated solver properties (moved to FChaosSolverConfiguration)</summary>

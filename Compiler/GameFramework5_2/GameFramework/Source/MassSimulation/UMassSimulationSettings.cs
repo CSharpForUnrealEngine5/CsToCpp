@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Implements the settings for MassSimulation</summary>
 [CppInclude("MassSimulationSettings.h")]
 public partial class UMassSimulationSettings : UMassModuleSettings {
+	public static UClass StaticClass() {return default;}
 	///<summary>The desired budget in seconds allowed to do actor spawning per frame</summary>
 	public double DesiredActorSpawningTimeSlicePerTick;
 	///<summary>The desired budget in seconds allowed to do actor destruction per frame</summary>

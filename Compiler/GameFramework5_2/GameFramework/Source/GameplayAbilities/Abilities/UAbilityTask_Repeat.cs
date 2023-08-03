@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Repeat a task a certain number of times at a given interval.</summary>
 [CppInclude("Abilities/Tasks/AbilityTask_Repeat.h")]
 public partial class UAbilityTask_Repeat : UAbilityTask {
+	public static UClass StaticClass() {return default;}
 	///<summary>OnPerformAction</summary>
 	public FRepeatedActionDelegate OnPerformAction;
 	///<summary>OnFinished</summary>

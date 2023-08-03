@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("CommonVideoPlayer.h")]
 public partial class UCommonVideoPlayer : UWidget {
+	public static UClass StaticClass() {return default;}
 	///<summary>Video</summary>
 	public UMediaSource Video;
 	///<summary>MediaPlayer</summary>

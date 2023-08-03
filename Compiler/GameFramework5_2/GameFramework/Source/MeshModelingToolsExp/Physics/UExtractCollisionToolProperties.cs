@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Physics/ExtractCollisionGeometryTool.h")]
 public partial class UExtractCollisionToolProperties : UInteractiveToolPropertySet {
+	public static UClass StaticClass() {return default;}
 	///<summary>Type of collision geometry to convert to Mesh</summary>
 	public EExtractCollisionOutputType CollisionType;
 	///<summary>Whether or not to weld coincident border edges of the Complex Collision Mesh (if possible)</summary>

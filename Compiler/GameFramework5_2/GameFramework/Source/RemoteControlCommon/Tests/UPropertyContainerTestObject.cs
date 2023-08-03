@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Tests/RCPropertyContainerTestData.h")]
 public partial class UPropertyContainerTestObject : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>bSomeBool</summary>
 	public bool bSomeBool;
 	///<summary>SomeUInt32</summary>

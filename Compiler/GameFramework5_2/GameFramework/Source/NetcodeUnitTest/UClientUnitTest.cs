@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Base class for all unit tests depending upon a MinimalClient connecting to a server.</summary>
 [CppInclude("ClientUnitTest.h")]
 public partial class UClientUnitTest : UProcessUnitTest {
+	public static UClass StaticClass() {return default;}
 	///<summary>Actors the server is allowed replicate to client (requires AllowActors flag). Use NotifyAllowNetActor for conditional allows.</summary>
 	public TArray<UClass> AllowedClientActors;
 	///<summary>The object which handles implementation of the minimal client</summary>

@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("GameSessionSettings.h")]
 public partial class UGameSessionSettings : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Maximum number of spectators allowed by this server.</summary>
 	public int MaxSpectators;
 	///<summary>Maximum number of players allowed by this server.</summary>

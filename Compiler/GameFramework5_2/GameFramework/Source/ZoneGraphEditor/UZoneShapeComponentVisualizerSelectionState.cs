@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Selection state data that will be captured by scoped transactions.</summary>
 [CppInclude("ZoneShapeComponentVisualizer.h")]
 public partial class UZoneShapeComponentVisualizerSelectionState : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Property path from the parent actor to the component</summary>
 	public FComponentPropertyPath ShapePropertyPath;
 	///<summary>Index of keys we have selected</summary>

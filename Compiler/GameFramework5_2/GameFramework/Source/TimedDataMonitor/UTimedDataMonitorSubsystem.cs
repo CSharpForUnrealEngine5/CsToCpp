@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("TimedDataMonitorSubsystem.h")]
 public partial class UTimedDataMonitorSubsystem : UEngineSubsystem {
+	public static UClass StaticClass() {return default;}
 	///<summary>Delegate of when an element is added or removed.</summary>
 	public FTimedDataIdentifierListChangedSignature OnIdentifierListChanged_Dynamic;
 	///<summary>Get the list of all the inputs.</summary>

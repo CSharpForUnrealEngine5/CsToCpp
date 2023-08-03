@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Widgets/UIFStackBox.h")]
 public partial class UUIFrameworkStackBox : UUIFrameworkWidget {
+	public static UClass StaticClass() {return default;}
 	///<summary>The orientation of the stack box.</summary>
 	public EOrientation Orientation;
 	///<summary>AddWidget</summary>

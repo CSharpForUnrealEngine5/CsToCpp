@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("TraceUtilLibrary.h")]
 public partial class UTraceUtilLibrary : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>StartTraceToFile</summary>
 	public static bool StartTraceToFile(string FileName,TArray<string> Channels) { return default; }
 	///<summary>StartTraceSendTo</summary>

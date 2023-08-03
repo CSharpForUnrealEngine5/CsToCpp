@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Instance of a contextual animation scene</summary>
 [CppInclude("ContextualAnimSceneInstance.h")]
 public partial class UContextualAnimSceneInstance : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Delegate to notify once the scene play time reaches the duration defined by the longest played montage of the selected section.</summary>
 	public FOnContextualAnimSceneEnded OnSectionEndTimeReached;
 	///<summary>Delegate to notify external objects when this is scene is completed after all montages played by the scene section blended out.</summary>

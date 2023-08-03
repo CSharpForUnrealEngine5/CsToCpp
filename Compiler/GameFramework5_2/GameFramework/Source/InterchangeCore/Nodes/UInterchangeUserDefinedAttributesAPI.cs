@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>UInterchangeUserDefinedAttributesAPI is used to store and retrieve user defined attributes (i.e. DCC node attributes, pipelines will have access to those attributes)</summary>
 [CppInclude("Nodes/InterchangeUserDefinedAttribute.h")]
 public partial class UInterchangeUserDefinedAttributesAPI : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>CreateUserDefinedAttribute_Boolean</summary>
 	public static bool CreateUserDefinedAttribute_Boolean(UInterchangeBaseNode InterchangeNode,string UserDefinedAttributeName,bool Value,string PayloadKey) { return default; }
 	///<summary>CreateUserDefinedAttribute_Float</summary>

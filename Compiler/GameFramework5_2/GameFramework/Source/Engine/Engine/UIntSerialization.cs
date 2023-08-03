@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Engine/IntSerialization.h")]
 public partial class UIntSerialization : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>New types</summary>
 	public ushort UnsignedInt16Variable;
 	///<summary>UnsignedInt32Variable</summary>

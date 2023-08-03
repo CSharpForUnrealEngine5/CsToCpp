@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("SequencerPlaylistItem.h")]
 public partial class USequencerPlaylistItem : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Number of frames by which to clip the in point of sections played from this item. Will also affect the first frame for hold.</summary>
 	public int StartFrameOffset;
 	///<summary>Number of frames by which to clip the out point of sections played from this item.</summary>

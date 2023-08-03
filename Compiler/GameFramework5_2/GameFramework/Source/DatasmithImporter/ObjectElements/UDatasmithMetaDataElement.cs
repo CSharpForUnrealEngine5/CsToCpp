@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>* UDatasmithMetaDataElement</summary>
 [CppInclude("ObjectElements/DatasmithUObjectElements.h")]
 public partial class UDatasmithMetaDataElement : UDatasmithObjectElement {
+	public static UClass StaticClass() {return default;}
 	///<summary>GetPropertiesCount</summary>
 	public  int GetPropertiesCount() { return default; }
 	///<summary>Get the property i-th of this meta data</summary>

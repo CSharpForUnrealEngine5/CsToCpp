@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("BakeMeshAttributeMapsTool.h")]
 public partial class UBakeMeshAttributeMapsToolProperties : UInteractiveToolPropertySet {
+	public static UClass StaticClass() {return default;}
 	///<summary>The bake output types to generate</summary>
 	public int MapTypes;
 	///<summary>The baked output type used for preview in the viewport</summary>

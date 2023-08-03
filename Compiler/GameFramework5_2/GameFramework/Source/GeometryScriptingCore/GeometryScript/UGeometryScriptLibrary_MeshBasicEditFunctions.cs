@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("GeometryScript/MeshBasicEditFunctions.h")]
 public partial class UGeometryScriptLibrary_MeshBasicEditFunctions : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>DiscardMeshAttributes</summary>
 	public static UDynamicMesh DiscardMeshAttributes(UDynamicMesh TargetMesh,bool bDeferChangeNotifications/*=false*/) { return default; }
 	///<summary>SetVertexPosition</summary>

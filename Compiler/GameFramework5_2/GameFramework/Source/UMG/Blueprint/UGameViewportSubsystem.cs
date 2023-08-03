@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Blueprint/GameViewportSubsystem.h")]
 public partial class UGameViewportSubsystem : UEngineSubsystem {
+	public static UClass StaticClass() {return default;}
 	///<summary>@return true if the widget was added to the viewport using AddWidget or AddWidgetForPlayer.</summary>
 	public  bool IsWidgetAdded(UWidget Widget) { return default; }
 	///<summary>Adds it to the game&#39;s viewport.</summary>

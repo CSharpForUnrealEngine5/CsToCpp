@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("EnvironmentQueryGraphNode_Test.h")]
 public partial class UEnvironmentQueryGraphNode_Test : UEnvironmentQueryGraphNode {
+	public static UClass StaticClass() {return default;}
 	///<summary>weight percent for display</summary>
 	public float TestWeightPct;
 	///<summary>weight is passed as named param</summary>

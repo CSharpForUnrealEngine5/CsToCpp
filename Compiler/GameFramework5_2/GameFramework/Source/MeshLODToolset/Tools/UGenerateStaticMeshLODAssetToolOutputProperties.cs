@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Tools/GenerateStaticMeshLODAssetTool.h")]
 public partial class UGenerateStaticMeshLODAssetToolOutputProperties : UInteractiveToolPropertySet {
+	public static UClass StaticClass() {return default;}
 	///<summary>Whether to modify the static mesh in place or create a new one.</summary>
 	public EGenerateLODAssetOutputMode OutputMode;
 	///<summary>Base name for newly-generated asset</summary>

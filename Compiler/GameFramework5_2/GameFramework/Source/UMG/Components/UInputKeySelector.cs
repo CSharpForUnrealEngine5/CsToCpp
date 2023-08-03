@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A widget for selecting a single key or a single key with a modifier.</summary>
 [CppInclude("Components/InputKeySelector.h")]
 public partial class UInputKeySelector : UWidget {
+	public static UClass StaticClass() {return default;}
 	///<summary>FOnKeySelected</summary>
 	public  void FOnKeySelected(FInputChord SelectedKey) {}
 	///<summary>FOnIsSelectingKeyChanged</summary>

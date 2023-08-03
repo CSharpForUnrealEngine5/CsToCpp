@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("InternationalizationExportSettings.h")]
 public partial class UInternationalizationExportSettings : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Which cultures should be exported</summary>
 	public TArray<string> CulturesToGenerate;
 	///<summary>The commandlet to run</summary>

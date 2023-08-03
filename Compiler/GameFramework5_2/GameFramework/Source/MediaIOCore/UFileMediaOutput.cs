@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Output information for a file media capture.</summary>
 [CppInclude("FileMediaOutput.h")]
 public partial class UFileMediaOutput : UMediaOutput {
+	public static UClass StaticClass() {return default;}
 	///<summary>Options on how to save the images.</summary>
 	public FImageWriteOptions WriteOptions;
 	///<summary>The file path for the images.</summary>

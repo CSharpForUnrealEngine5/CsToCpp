@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A font face asset contains the raw payload data for a source TTF/OTF file as used by FreeType.</summary>
 [CppInclude("Engine/FontFace.h")]
 public partial class UFontFace : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>The filename of the font face we were created from. This may not always exist on disk, as we may have previously loaded and cached the font data inside this asset.</summary>
 	public string SourceFilename;
 	///<summary>The hinting algorithm to use with the font face.</summary>

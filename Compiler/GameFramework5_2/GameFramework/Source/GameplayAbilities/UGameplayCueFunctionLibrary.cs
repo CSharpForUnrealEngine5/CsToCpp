@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>UGameplayCueFunctionLibrary</summary>
 [CppInclude("GameplayCueFunctionLibrary.h")]
 public partial class UGameplayCueFunctionLibrary : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>Builds gameplay cue parameters using data from a hit result.</summary>
 	public static FGameplayCueParameters MakeGameplayCueParametersFromHitResult(FHitResult HitResult) { return default; }
 	///<summary>Invoke a one time &quot;instant&quot; execute event for a gameplay cue on the target actor.</summary>

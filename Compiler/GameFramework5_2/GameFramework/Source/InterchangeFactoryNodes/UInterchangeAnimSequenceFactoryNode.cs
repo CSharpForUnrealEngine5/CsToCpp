@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>ns UE::Interchange</summary>
 [CppInclude("InterchangeAnimSequenceFactoryNode.h")]
 public partial class UInterchangeAnimSequenceFactoryNode : UInterchangeFactoryBaseNode {
+	public static UClass StaticClass() {return default;}
 	///<summary>Initialize node data</summary>
 	public  void InitializeAnimSequenceNode(string UniqueID,string DisplayLabel) {}
 	///<summary>Get the class this node want to create</summary>

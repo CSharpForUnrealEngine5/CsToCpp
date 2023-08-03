@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>The World is the top level object representing a map or a sandbox in which Actors and Components will exist and be rendered.</summary>
 [CppInclude("Engine/World.h")]
 public partial class UWorld : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>List of all the layers referenced by the world&#39;s actors</summary>
 	public TArray<ULayer> Layers;
 	///<summary>Group actors currently &quot;active&quot;</summary>

@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("ARBlueprintProxy.h")]
 public partial class UARSaveWorldAsyncTaskBlueprintProxy : UARBaseAsyncTaskBlueprintProxy {
+	public static UClass StaticClass() {return default;}
 	///<summary>OnSuccess</summary>
 	public FARSaveWorldPin OnSuccess;
 	///<summary>OnFailed</summary>

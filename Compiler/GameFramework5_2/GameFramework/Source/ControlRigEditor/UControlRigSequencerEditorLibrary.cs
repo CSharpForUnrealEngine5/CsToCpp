@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>This is a set of helper functions to access various parts of the Sequencer and Control Rig API via Python and Blueprints.</summary>
 [CppInclude("ControlRigSequencerEditorLibrary.h")]
 public partial class UControlRigSequencerEditorLibrary : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>Get all of the visible control rigs in the level</summary>
 	public static TArray<UControlRig> GetVisibleControlRigs() { return default; }
 	///<summary>Get all of the control rigs and their bindings in the level sequence</summary>

@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Tests/Types/ActorWithReferencesInCDO.h")]
 public partial class AActorWithReferencesInCDO : AActor {
+	public static UClass StaticClass() {return default;}
 	///<summary>***************** Properties  *******************</summary>
 	public TArray<FExternalReferenceDummy> Array;
 	///<summary>Set</summary>

@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("ChaosVehicleWheel.h")]
 public partial class UChaosVehicleWheel : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Static mesh with collision setup for wheel, will be used to create wheel shape</summary>
 	public UStaticMesh CollisionMesh;
 	///<summary>If left undefined then the bAffectedByEngine value is used, if defined then bAffectedByEngine is ignored and the differential setup on the vehicle defines which wheels get power from the engine</summary>

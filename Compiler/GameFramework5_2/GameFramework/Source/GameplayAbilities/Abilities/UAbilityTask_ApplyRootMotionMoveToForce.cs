@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Applies force to character&#39;s movement</summary>
 [CppInclude("Abilities/Tasks/AbilityTask_ApplyRootMotionMoveToForce.h")]
 public partial class UAbilityTask_ApplyRootMotionMoveToForce : UAbilityTask_ApplyRootMotion_Base {
+	public static UClass StaticClass() {return default;}
 	///<summary>OnTimedOut</summary>
 	public FApplyRootMotionMoveToForceDelegate OnTimedOut;
 	///<summary>OnTimedOutAndDestinationReached</summary>

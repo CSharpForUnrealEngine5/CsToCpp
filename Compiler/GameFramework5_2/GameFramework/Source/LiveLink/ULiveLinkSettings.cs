@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Settings for LiveLink.</summary>
 [CppInclude("LiveLinkSettings.h")]
 public partial class ULiveLinkSettings : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>DefaultRoleSettings</summary>
 	public TArray<FLiveLinkRoleProjectSetting> DefaultRoleSettings;
 	///<summary>The interpolation class to use for new Subjects if no specific settings we set for the Subject&#39;s role.</summary>

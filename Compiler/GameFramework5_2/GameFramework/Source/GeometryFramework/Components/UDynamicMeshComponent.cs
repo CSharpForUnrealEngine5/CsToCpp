@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>UDynamicMeshComponent is a mesh component similar to UProceduralMeshComponent,</summary>
 [CppInclude("Components/DynamicMeshComponent.h")]
 public partial class UDynamicMeshComponent : UBaseDynamicMeshComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>Set the child UDynamicMesh. This can be used to &#39;share&#39; a UDynamicMesh between Component instances.</summary>
 	public  void SetDynamicMesh(UDynamicMesh NewMesh) {}
 	///<summary>Internal FDynamicMesh is stored inside a UDynamicMesh container, which allows it to be</summary>

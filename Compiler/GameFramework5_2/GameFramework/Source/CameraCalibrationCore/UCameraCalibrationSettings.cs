@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Settings for the CameraCalibration plugin modules.</summary>
 [CppInclude("CameraCalibrationSettings.h")]
 public partial class UCameraCalibrationSettings : UDeveloperSettings {
+	public static UClass StaticClass() {return default;}
 	///<summary>Startup lens file for the project</summary>
 	public TSoftObjectPtr<ULensFile> StartupLensFile;
 	///<summary>Resolution used when creating new distortion and undistortion displacement maps</summary>

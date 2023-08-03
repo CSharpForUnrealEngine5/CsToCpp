@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>-&gt; will be exported to EngineDecalClasses.h</summary>
 [CppInclude("Components/ReflectionCaptureComponent.h")]
 public partial class UReflectionCaptureComponent : USceneComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>CaptureOffsetComponent</summary>
 	public UBillboardComponent CaptureOffsetComponent;
 	///<summary>Indicates where to get the reflection source from.</summary>

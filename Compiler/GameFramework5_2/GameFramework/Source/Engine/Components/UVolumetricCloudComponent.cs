@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A component that represents a participating media material around a planet, e.g. clouds.</summary>
 [CppInclude("Components/VolumetricCloudComponent.h")]
 public partial class UVolumetricCloudComponent : USceneComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>The altitude at which the cloud layer starts. (kilometers above the ground)</summary>
 	public float LayerBottomAltitude;
 	///<summary>The height of the the cloud layer. (kilometers above the layer bottom altitude)</summary>

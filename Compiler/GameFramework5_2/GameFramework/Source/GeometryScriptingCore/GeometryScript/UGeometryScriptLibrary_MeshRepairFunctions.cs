@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("GeometryScript/MeshRepairFunctions.h")]
 public partial class UGeometryScriptLibrary_MeshRepairFunctions : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>CompactMesh</summary>
 	public static UDynamicMesh CompactMesh(UDynamicMesh TargetMesh,UGeometryScriptDebug Debug/*=nullptr*/) { return default; }
 	///<summary>ResolveMeshTJunctions</summary>

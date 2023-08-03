@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Mesh Attribute Editor Tool</summary>
 [CppInclude("AttributeEditorTool.h")]
 public partial class UAttributeEditorTool : UMultiSelectionMeshEditingTool {
+	public static UClass StaticClass() {return default;}
 	///<summary>NormalsActions</summary>
 	public UAttributeEditorNormalsActions NormalsActions;
 	///<summary>UVActions</summary>

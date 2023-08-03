@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("AddPrimitiveTool.h")]
 public partial class UProceduralStairsToolProperties : UProceduralShapeToolProperties {
+	public static UClass StaticClass() {return default;}
 	///<summary>Type of staircase</summary>
 	public EProceduralStairsType StairsType;
 	///<summary>Number of steps</summary>

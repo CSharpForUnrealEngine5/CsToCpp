@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Sprite Asset</summary>
 [CppInclude("PaperSprite.h")]
 public partial class UPaperSprite : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Origin within SourceImage, prior to atlasing</summary>
 	public FVector2D OriginInSourceImageBeforeTrimming;
 	///<summary>Dimensions of SourceImage</summary>

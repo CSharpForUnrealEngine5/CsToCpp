@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>The base class for a playable sound object</summary>
 [CppInclude("Sound/SoundBase.h")]
 public partial class USoundBase : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Sound class this sound belongs to</summary>
 	public USoundClass SoundClassObject;
 	///<summary>When &quot;au.3dVisualize.Attenuation&quot; has been specified, draw this sound&#39;s attenuation shape when the sound is audible. For debugging purposes only.</summary>

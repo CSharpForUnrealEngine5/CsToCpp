@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Phonon Probe volumes generate a set of probes at which acoustic information will be sampled</summary>
 [CppInclude("PhononProbeVolume.h")]
 public partial class APhononProbeVolume : AVolume {
+	public static UClass StaticClass() {return default;}
 	///<summary>Method by which probes are placed within the volume.</summary>
 	public EPhononProbePlacementStrategy PlacementStrategy;
 	///<summary>How far apart to place probes.</summary>

@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("WaterBodyComponent.h")]
 public partial class UWaterBodyComponent : UPrimitiveComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>Returns body&#39;s collision components</summary>
 	public  TArray<UPrimitiveComponent> GetCollisionComponents(bool bInOnlyEnabledComponents/*=true*/) { return default; }
 	///<summary>Retrieves the list of primitive components that this water body uses when not being rendered by the water mesh (e.g. the static mesh component used when WaterMeshOverride is specified)</summary>

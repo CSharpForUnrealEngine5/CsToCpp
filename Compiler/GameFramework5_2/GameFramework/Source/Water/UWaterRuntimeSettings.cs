@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Implements the runtime settings for the Water plugin.</summary>
 [CppInclude("WaterRuntimeSettings.h")]
 public partial class UWaterRuntimeSettings : UDeveloperSettings {
+	public static UClass StaticClass() {return default;}
 	///<summary>Collision channel to use for tracing and blocking water bodies</summary>
 	public ECollisionChannel CollisionChannelForWaterTraces;
 	///<summary>Material Parameter Collection for everything water-related</summary>

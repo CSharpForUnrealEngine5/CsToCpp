@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Actor is the base class for an Object that can be placed or spawned in a level.</summary>
 [CppInclude("GameFramework/Actor.h")]
 public partial class AActor : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Primary Actor tick function, which calls TickActor().</summary>
 	public FActorTickFunction PrimaryActorTick;
 	///<summary>If true, when the actor is spawned it will be sent to the client but receive no further replication updates from the server afterwards.</summary>

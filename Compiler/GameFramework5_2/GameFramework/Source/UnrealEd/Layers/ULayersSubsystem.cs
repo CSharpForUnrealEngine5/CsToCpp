@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Layers/LayersSubsystem.h")]
 public partial class ULayersSubsystem : UEditorSubsystem {
+	public static UClass StaticClass() {return default;}
 	///<summary>Aggregates any information regarding layers associated with the level and it contents</summary>
 	public  void AddLevelLayerInformation(ULevel Level) {}
 	///<summary>Purges any information regarding layers associated with the level and it contents</summary>

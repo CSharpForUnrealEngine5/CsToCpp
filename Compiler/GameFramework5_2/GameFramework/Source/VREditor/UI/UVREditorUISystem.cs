@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>VR Editor user interface manager</summary>
 [CppInclude("UI/VREditorUISystem.h")]
 public partial class UVREditorUISystem : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Owning object</summary>
 	public UVREditorMode VRMode;
 	///<summary>All of the floating UIs.  These may or may not be visible (spawned)</summary>

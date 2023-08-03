@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("MIDIDeviceInputController.h")]
 public partial class UMIDIDeviceInputController : UMIDIDeviceControllerBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>Register with this to receive incoming MIDI Note On events from this device</summary>
 	public FOnMIDINoteOn OnMIDINoteOn;
 	///<summary>Register with this to receive incoming MIDI Note Off events from this device</summary>

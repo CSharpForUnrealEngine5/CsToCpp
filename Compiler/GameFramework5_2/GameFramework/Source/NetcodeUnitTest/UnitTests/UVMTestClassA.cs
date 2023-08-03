@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Test classes for testing different types/combinations of property reflection</summary>
 [CppInclude("UnitTests/VMReflection.h")]
 public partial class UVMTestClassA : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>AObjectRef</summary>
 	public UObject AObjectRef;
 	///<summary>ByteProp</summary>

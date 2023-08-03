@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Fetch the latest frames from the LiveLink subject and create a Timecode from it.</summary>
 [CppInclude("LiveLinkTimecodeProvider.h")]
 public partial class ULiveLinkTimecodeProvider : UTimecodeProvider {
+	public static UClass StaticClass() {return default;}
 	///<summary>The specific subject that we listen to.</summary>
 	public FLiveLinkSubjectKey SubjectKey;
 	///<summary>How to evaluate the timecode.</summary>

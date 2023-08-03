@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Sphere scalar field that will be defined only within a sphere</summary>
 [CppInclude("Field/FieldSystemObjects.h")]
 public partial class URadialFalloff : UFieldNodeFloat {
+	public static UClass StaticClass() {return default;}
 	///<summary>Sphere scalar field that will be defined only within a sphere</summary>
 	public  URadialFalloff SetRadialFalloff(float Magnitude,float MinRange,float MaxRange,float Default,float Radius,FVector Position,EFieldFalloffType Falloff) { return default; }
 	///<summary>Magnitude of the sphere falloff field</summary>

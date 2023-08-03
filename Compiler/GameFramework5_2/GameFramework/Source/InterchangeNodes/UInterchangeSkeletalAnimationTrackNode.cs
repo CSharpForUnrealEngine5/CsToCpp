@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>* Class to hold onto the relationships between a set of animation tracks and the bones, morph targets of a skeleton.</summary>
 [CppInclude("InterchangeAnimationTrackSetNode.h")]
 public partial class UInterchangeSkeletalAnimationTrackNode : UInterchangeAnimationTrackBaseNode {
+	public static UClass StaticClass() {return default;}
 	///<summary>Get the skeleton factory node unique id. Return false if the attribute is not set.</summary>
 	public  bool GetCustomSkeletonNodeUid(string AttributeValue) { return default; }
 	///<summary>Set the skeleton factory node unique id. Return false if the attribute cannot be set.</summary>

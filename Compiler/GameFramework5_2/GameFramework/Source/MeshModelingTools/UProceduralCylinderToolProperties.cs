@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("AddPrimitiveTool.h")]
 public partial class UProceduralCylinderToolProperties : UProceduralShapeToolProperties {
+	public static UClass StaticClass() {return default;}
 	///<summary>Radius of the cylinder</summary>
 	public float Radius;
 	///<summary>Height of the cylinder</summary>

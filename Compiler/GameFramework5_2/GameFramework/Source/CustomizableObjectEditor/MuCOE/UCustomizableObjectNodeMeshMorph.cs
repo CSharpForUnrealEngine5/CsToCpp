@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("MuCOE/Nodes/CustomizableObjectNodeMeshMorph.h")]
 public partial class UCustomizableObjectNodeMeshMorph : UCustomizableObjectNode {
+	public static UClass StaticClass() {return default;}
 	///<summary>MorphTargetName</summary>
 	public string MorphTargetName;
 	///<summary>Enable the deformation of the skeleton of the base mesh.</summary>

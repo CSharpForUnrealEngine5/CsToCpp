@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Tonemapper only pass implemented on top of the in-engine tonemapper.</summary>
 [CppInclude("ComposureTonemapperPass.h")]
 public partial class UComposureTonemapperPass : UComposurePostProcessPass {
+	public static UClass StaticClass() {return default;}
 	///<summary>Color grading settings.</summary>
 	public FColorGradingSettings ColorGradingSettings;
 	///<summary>Film stock settings.</summary>

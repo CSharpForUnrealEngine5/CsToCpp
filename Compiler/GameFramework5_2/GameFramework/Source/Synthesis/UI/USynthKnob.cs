@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A simple widget that shows a sliding bar with a handle that allows you to control the value between 0..1.</summary>
 [CppInclude("UI/SynthKnob.h")]
 public partial class USynthKnob : UWidget {
+	public static UClass StaticClass() {return default;}
 	///<summary>The volume value to display.</summary>
 	public float Value;
 	///<summary>The amount to adjust the value by, when using a controller or keyboard</summary>

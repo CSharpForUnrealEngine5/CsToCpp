@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Particles/ParticleSystemComponent.h")]
 public partial class UFXSystemComponent : UPrimitiveComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>Change a named boolean parameter, ParticleSystemComponent converts to float.</summary>
 	public  void SetBoolParameter(string ParameterName,bool Param) {}
 	///<summary>Change a named int parameter</summary>

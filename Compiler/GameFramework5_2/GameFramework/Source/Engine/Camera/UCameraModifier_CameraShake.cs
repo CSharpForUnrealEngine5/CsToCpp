@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A UCameraModifier_CameraShake is a camera modifier that can apply a UCameraShakeBase to</summary>
 [CppInclude("Camera/CameraModifier_CameraShake.h")]
 public partial class UCameraModifier_CameraShake : UCameraModifier {
+	public static UClass StaticClass() {return default;}
 	///<summary>List of active CameraShake instances</summary>
 	public TArray<FActiveCameraShakeInfo> ActiveShakes;
 	///<summary>ExpiredPooledShakesMap</summary>

@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Baseclass with common properties for various Schema classes.</summary>
 [CppInclude("Dom/WebAPISchema.h")]
 public partial class UWebAPIModelBase : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Describes this model.</summary>
 	public string Description;
 	///<summary>By default all properties are optional.</summary>

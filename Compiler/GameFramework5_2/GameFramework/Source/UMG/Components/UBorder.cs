@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A border is a container widget that can contain one child widget, providing an opportunity</summary>
 [CppInclude("Components/Border.h")]
 public partial class UBorder : UContentWidget {
+	public static UClass StaticClass() {return default;}
 	///<summary>The alignment of the content horizontally.</summary>
 	public EHorizontalAlignment HorizontalAlignment;
 	///<summary>The alignment of the content vertically.</summary>

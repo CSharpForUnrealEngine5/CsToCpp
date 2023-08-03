@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("GlobalEditorUtilityBase.h")]
 public partial class UDEPRECATED_GlobalEditorUtilityBase : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>HelpText</summary>
 	public string HelpText;
 	///<summary>bDirtiedSelectionSet</summary>

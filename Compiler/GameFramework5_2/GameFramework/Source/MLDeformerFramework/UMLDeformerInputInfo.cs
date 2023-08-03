@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>The neural network input information.</summary>
 [CppInclude("MLDeformerInputInfo.h")]
 public partial class UMLDeformerInputInfo : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>The path to the skeletal mesh that this model was trained on.</summary>
 	public FSoftObjectPath SkeletalMesh;
 	///<summary>The list of bone names, but as string. This is deprecated since UE 5.2.</summary>

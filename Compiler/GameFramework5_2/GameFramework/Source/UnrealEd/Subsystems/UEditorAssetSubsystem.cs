@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>UEditorAssetSubsystem</summary>
 [CppInclude("Subsystems/EditorAssetSubsystem.h")]
 public partial class UEditorAssetSubsystem : UEditorSubsystem {
+	public static UClass StaticClass() {return default;}
 	///<summary>Load an asset. It will verify if the object is already loaded and only load it if it&#39;s necessary.</summary>
 	public  UObject LoadAsset(string AssetPath) { return default; }
 	///<summary>Load a Blueprint asset and return its generated class. It will verify if the object is already loaded and only load it if it&#39;s necessary.</summary>

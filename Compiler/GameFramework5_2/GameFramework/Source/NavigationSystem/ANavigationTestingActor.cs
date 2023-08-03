@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("NavigationTestingActor.h")]
 public partial class ANavigationTestingActor : AActor {
+	public static UClass StaticClass() {return default;}
 	///<summary>CapsuleComponent</summary>
 	public UCapsuleComponent CapsuleComponent;
 	///<summary>Editor Preview</summary>

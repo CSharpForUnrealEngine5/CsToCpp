@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("VPUIBase.h")]
 public partial class UVPUIBase : UEditorUtilityWidget {
+	public static UClass StaticClass() {return default;}
 	///<summary>SelectedActor</summary>
 	public AActor SelectedActor;
 	///<summary>AppendVirtualProductionLog</summary>

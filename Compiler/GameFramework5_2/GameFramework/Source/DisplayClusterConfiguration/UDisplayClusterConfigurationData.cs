@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>/</summary>
 [CppInclude("DisplayClusterConfigurationTypes.h")]
 public partial class UDisplayClusterConfigurationData : UDisplayClusterConfigurationData_Base {
+	public static UClass StaticClass() {return default;}
 	///<summary>Viewports API</summary>
 	public  UDisplayClusterConfigurationViewport GetViewport(string NodeId,string ViewportId) { return default; }
 	///<summary>Update\Create node postprocess</summary>

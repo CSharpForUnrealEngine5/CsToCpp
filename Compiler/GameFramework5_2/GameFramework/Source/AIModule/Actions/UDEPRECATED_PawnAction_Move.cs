@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Actions/PawnAction_Move.h")]
 public partial class UDEPRECATED_PawnAction_Move : UDEPRECATED_PawnAction {
+	public static UClass StaticClass() {return default;}
 	///<summary>GoalActor</summary>
 	public AActor GoalActor;
 	///<summary>GoalLocation</summary>

@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("AnimGraphNode_BlendSpaceGraphBase.h")]
 public partial class UAnimGraphNode_BlendSpaceGraphBase : UAnimGraphNode_Base {
+	public static UClass StaticClass() {return default;}
 	///<summary>Internal blendspace</summary>
 	public UBlendSpace BlendSpace;
 	///<summary>Blendspace class, for template nodes</summary>

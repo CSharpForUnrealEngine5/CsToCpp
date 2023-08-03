@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("AnimToTextureInstancePlaybackHelpers.h")]
 public partial class UAnimToTextureInstancePlaybackLibrary : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>SetupInstancedMeshComponent</summary>
 	public static void SetupInstancedMeshComponent(UInstancedStaticMeshComponent InstancedMeshComponent,FAnimToTextureInstanceData InstanceData,int NumInstances) {}
 	///<summary>BatchUpdateInstancedMeshComponent</summary>

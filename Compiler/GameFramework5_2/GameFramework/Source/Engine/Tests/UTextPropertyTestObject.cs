@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Tests/TextPropertyTestObject.h")]
 public partial class UTextPropertyTestObject : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>DefaultedText</summary>
 	public string DefaultedText;
 	///<summary>UndefaultedText</summary>

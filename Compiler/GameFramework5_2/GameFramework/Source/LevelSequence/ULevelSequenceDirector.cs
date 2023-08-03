@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("LevelSequenceDirector.h")]
 public partial class ULevelSequenceDirector : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Called when this director is created</summary>
 	public  void OnCreated() {}
 	///<summary>Get the current time for the outermost (root) sequence</summary>

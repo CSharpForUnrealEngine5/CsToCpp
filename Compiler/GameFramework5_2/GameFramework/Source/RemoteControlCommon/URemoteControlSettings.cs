@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Global remote control settings</summary>
 [CppInclude("RemoteControlSettings.h")]
 public partial class URemoteControlSettings : UDeveloperSettings {
+	public static UClass StaticClass() {return default;}
 	///<summary>Should transactions be generated for events received through protocols (ie. MIDI, DMX etc.)</summary>
 	public bool bProtocolsGenerateTransactions;
 	///<summary>The remote control web app bind address.</summary>

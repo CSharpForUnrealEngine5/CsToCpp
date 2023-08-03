@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Asset container for viewport interaction.</summary>
 [CppInclude("ViewportInteractionAssetContainer.h")]
 public partial class UViewportInteractionAssetContainer : UDataAsset {
+	public static UClass StaticClass() {return default;}
 	///<summary>Sound</summary>
 	public USoundBase GizmoHandleSelectedSound;
 	///<summary>GizmoHandleDropSound</summary>

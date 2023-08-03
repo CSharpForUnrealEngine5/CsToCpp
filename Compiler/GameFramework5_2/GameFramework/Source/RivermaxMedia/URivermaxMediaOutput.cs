@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Output information for a Rivermax media capture.</summary>
 [CppInclude("RivermaxMediaOutput.h")]
 public partial class URivermaxMediaOutput : UMediaOutput {
+	public static UClass StaticClass() {return default;}
 	///<summary>Used by frame scheduler to know how to align the output</summary>
 	public ERivermaxMediaAlignmentMode AlignmentMode;
 	///<summary>Whether to produce a continuous output stream repeating last frame if no new frames provided</summary>

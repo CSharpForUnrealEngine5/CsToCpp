@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("NiagaraDataInterfaceGrid3DCollection.h")]
 public partial class UNiagaraDataInterfaceGrid3DCollection : UNiagaraDataInterfaceGrid3D {
+	public static UClass StaticClass() {return default;}
 	///<summary>Number of attributes stored on the grid</summary>
 	public int NumAttributes;
 	///<summary>Reference to a user parameter if we&#39;re reading one.</summary>

@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Axis Gizmo handle for rotation</summary>
 [CppInclude("Gizmo/VIPivotTransformGizmo.h")]
 public partial class UPivotRotationGizmoHandleGroup : UAxisGizmoHandleGroup {
+	public static UClass StaticClass() {return default;}
 	///<summary>Root component of all the mesh components that are used to visualize the rotation when dragging</summary>
 	public USceneComponent RootFullRotationHandleComponent;
 	///<summary>When dragging a rotation handle the full rotation circle appears</summary>

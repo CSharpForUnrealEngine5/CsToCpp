@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("BakeMeshAttributeToolCommon.h")]
 public partial class UBakeOcclusionMapToolProperties : UInteractiveToolPropertySet {
+	public static UClass StaticClass() {return default;}
 	///<summary>Number of occlusion rays per sample</summary>
 	public int OcclusionRays;
 	///<summary>Maximum distance for occlusion rays to test for intersections; a value of 0 means infinity</summary>

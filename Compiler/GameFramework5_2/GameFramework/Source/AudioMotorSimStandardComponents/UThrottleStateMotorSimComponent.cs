@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Provides events for when the throttle changes state</summary>
 [CppInclude("ThrottleStateMotorSimComponent.h")]
 public partial class UThrottleStateMotorSimComponent : UAudioMotorSimComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>OnThrottleEngaged</summary>
 	public FOnThrottleChanged OnThrottleEngaged;
 	///<summary>OnThrottleReleased</summary>

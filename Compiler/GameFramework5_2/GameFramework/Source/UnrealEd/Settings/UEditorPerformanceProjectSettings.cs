@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Configure per-project performance settings for the Editor</summary>
 [CppInclude("Settings/EditorProjectSettings.h")]
 public partial class UEditorPerformanceProjectSettings : UDeveloperSettings {
+	public static UClass StaticClass() {return default;}
 	///<summary>RealtimeScreenPercentageMode</summary>
 	public EScreenPercentageMode RealtimeScreenPercentageMode;
 	///<summary>PathTracerScreenPercentageMode</summary>

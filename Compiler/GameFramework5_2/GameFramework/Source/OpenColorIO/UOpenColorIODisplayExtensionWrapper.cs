@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>This Blueprintable object can hold an OCIO Scene View Extension.</summary>
 [CppInclude("OpenColorIODisplayExtensionWrapper.h")]
 public partial class UOpenColorIODisplayExtensionWrapper : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Gets the display extension OCIO configuration.</summary>
 	public  FOpenColorIODisplayConfiguration GetOpenColorIOConfiguration() { return default; }
 	///<summary>Sets the display extension OCIO configuration.</summary>

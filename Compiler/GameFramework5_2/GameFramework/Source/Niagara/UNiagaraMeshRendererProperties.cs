@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("NiagaraMeshRendererProperties.h")]
 public partial class UNiagaraMeshRendererProperties : UNiagaraRendererProperties {
+	public static UClass StaticClass() {return default;}
 	///<summary>The static mesh(es) to be instanced when rendering mesh particles.</summary>
 	public TArray<FNiagaraMeshRendererMeshProperties> Meshes;
 	///<summary>Whether or not to draw a single element for the Emitter or to draw the particles.</summary>

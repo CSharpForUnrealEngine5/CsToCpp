@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("SourceFilterCollection.h")]
 public partial class USourceFilterCollection : UDataAsset {
+	public static UClass StaticClass() {return default;}
 	///<summary>Root-level filter instances</summary>
 	public TArray<UDataSourceFilter> Filters;
 	///<summary>Class filters, used for high-level filtering of AActor instances inside of a UWorld</summary>

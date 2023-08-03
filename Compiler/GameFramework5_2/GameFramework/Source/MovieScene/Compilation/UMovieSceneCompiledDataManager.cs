@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Compilation/MovieSceneCompiledDataManager.h")]
 public partial class UMovieSceneCompiledDataManager : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Hierarchies</summary>
 	public TMap<int,FMovieSceneSequenceHierarchy> Hierarchies;
 	///<summary>TrackTemplates</summary>

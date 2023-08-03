@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>The Model represents the source data for animations. It contains both bone animation data as well as animated curves.</summary>
 [CppInclude("Animation/AnimData/AnimDataModel.h")]
 public partial class UAnimDataModel : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>BracketCounter</summary>
 	public int BracketCounter;
 	///<summary>Dynamic delegate event allows scripting to register to any broadcasted notify.</summary>

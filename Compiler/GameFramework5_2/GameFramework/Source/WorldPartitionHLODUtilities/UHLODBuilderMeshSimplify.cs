@@ -4,4 +4,5 @@ using CSharpToCpp.Utilities;
 ///<summary>Build a simplified mesh using geometry from the provided actors</summary>
 [CppInclude("HLODBuilderMeshSimplify.h")]
 public partial class UHLODBuilderMeshSimplify : UHLODBuilder {
+	public static UClass StaticClass() {return default;}
 }

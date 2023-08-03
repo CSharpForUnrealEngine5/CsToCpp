@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Function library containing methods that should be hoisted onto UMovieSceneFolders for scripting</summary>
 [CppInclude("ExtensionLibraries/MovieSceneFolderExtensions.h")]
 public partial class UMovieSceneFolderExtensions : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>Get the given folder&#39;s display name</summary>
 	public static string GetFolderName(UMovieSceneFolder Folder) { return default; }
 	///<summary>Set the name of the given folder</summary>

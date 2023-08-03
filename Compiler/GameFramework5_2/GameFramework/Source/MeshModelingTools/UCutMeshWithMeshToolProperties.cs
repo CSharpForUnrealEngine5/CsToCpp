@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Standard properties of the CutMeshWithMesh operation</summary>
 [CppInclude("CutMeshWithMeshTool.h")]
 public partial class UCutMeshWithMeshToolProperties : UInteractiveToolPropertySet {
+	public static UClass StaticClass() {return default;}
 	///<summary>Try to fill holes created by the Boolean operation, e.g. due to numerical errors</summary>
 	public bool bTryFixHoles;
 	///<summary>Try to collapse extra edges created by the Boolean operation</summary>

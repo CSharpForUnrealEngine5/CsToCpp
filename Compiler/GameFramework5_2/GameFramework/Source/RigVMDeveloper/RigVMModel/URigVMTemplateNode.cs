@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>The Template Node represents an unresolved function.</summary>
 [CppInclude("RigVMModel/Nodes/RigVMTemplateNode.h")]
 public partial class URigVMTemplateNode : URigVMNode {
+	public static UClass StaticClass() {return default;}
 	///<summary>Returns the UStruct for this unit node</summary>
 	public  UScriptStruct GetScriptStruct() { return default; }
 	///<summary>Returns the notation of the node</summary>

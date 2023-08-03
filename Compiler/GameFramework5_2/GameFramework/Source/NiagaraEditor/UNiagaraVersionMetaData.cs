@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("NiagaraVersionMetaData.h")]
 public partial class UNiagaraVersionMetaData : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>If true then this version is exposed to the user and is used as the default version for new assets.</summary>
 	public bool bIsExposedVersion;
 	///<summary>Changelist displayed to the user when upgrading to a new script version.</summary>

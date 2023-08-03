@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("BehaviorTree/BehaviorTree.h")]
 public partial class UBehaviorTree : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>root node of loaded tree</summary>
 	public UBTCompositeNode RootNode;
 	///<summary>Graph for Behavior Tree</summary>

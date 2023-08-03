@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("MotionTrajectoryLibrary.h")]
 public partial class UMotionTrajectoryBlueprintLibrary : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>Removes the Z axis motion contribution from a trajectory range</summary>
 	public static FTrajectorySampleRange FlattenTrajectory2D(FTrajectorySampleRange Trajectory) { return default; }
 	///<summary>Rotates the trajectory</summary>

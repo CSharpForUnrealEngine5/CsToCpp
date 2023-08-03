@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("AttributeEditorTool.h")]
 public partial class UAttributeEditorAttribProperties : UInteractiveToolPropertySet {
+	public static UClass StaticClass() {return default;}
 	///<summary>VertexAttributes</summary>
 	public TArray<string> VertexAttributes;
 	///<summary>InstanceAttributes</summary>

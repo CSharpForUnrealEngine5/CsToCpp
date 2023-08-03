@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("MobilePatchingLibrary.h")]
 public partial class UMobilePatchingLibrary : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>Get the installed content. Will return non-null object if there is an installed content at specified directory</summary>
 	public static UMobileInstalledContent GetInstalledContent(string InstallDirectory) { return default; }
 	///<summary>Attempt to download manifest file using specified manifest URL.</summary>

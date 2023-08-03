@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Factory used to pad out each individual tile in a tile sheet texture</summary>
 [CppInclude("TileSetEditor/TileSheetPaddingFactory.h")]
 public partial class UTileSheetPaddingFactory : UFactory {
+	public static UClass StaticClass() {return default;}
 	///<summary>Source tile sheet texture</summary>
 	public UPaperTileSet SourceTileSet;
 	///<summary>The amount to extrude out from each tile (in pixels)</summary>

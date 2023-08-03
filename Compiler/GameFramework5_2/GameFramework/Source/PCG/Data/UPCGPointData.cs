@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>TODO: Split this in &quot;concrete&quot; vs &quot;api&quot; class (needed for views)</summary>
 [CppInclude("Data/PCGPointData.h")]
 public partial class UPCGPointData : UPCGSpatialData {
+	public static UClass StaticClass() {return default;}
 	///<summary>GetPoints</summary>
 	public  TArray<FPCGPoint> GetPoints() { return default; }
 	///<summary>GetPoint</summary>

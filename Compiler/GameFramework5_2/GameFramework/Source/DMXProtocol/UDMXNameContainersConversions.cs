@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("DMXProtocolTypes.h")]
 public partial class UDMXNameContainersConversions : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>Conv_DMXProtocolNameToString</summary>
 	public static string Conv_DMXProtocolNameToString(FDMXProtocolName InProtocolName) { return default; }
 	///<summary>Conv_DMXProtocolNameToName</summary>

@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A DMX Fixture Patch section</summary>
 [CppInclude("Sequencer/MovieSceneDMXLibrarySection.h")]
 public partial class UMovieSceneDMXLibrarySection : UMovieSceneSection {
+	public static UClass StaticClass() {return default;}
 	///<summary>If true, all values are interpreted as normalized values (0.0 to 1.0)</summary>
 	public bool bUseNormalizedValues;
 	///<summary>Adds a single patch to the section</summary>

@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("MaterialEditor/MaterialEditorPreviewParameters.h")]
 public partial class UMaterialEditorPreviewParameters : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>ParameterGroups</summary>
 	public TArray<FEditorParameterGroup> ParameterGroups;
 	///<summary>PreviewMaterial</summary>

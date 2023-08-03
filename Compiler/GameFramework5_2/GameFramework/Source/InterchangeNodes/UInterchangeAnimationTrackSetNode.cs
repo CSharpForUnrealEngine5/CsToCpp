@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Class to represent a set of animation track nodes sharing the same frame rate</summary>
 [CppInclude("InterchangeAnimationTrackSetNode.h")]
 public partial class UInterchangeAnimationTrackSetNode : UInterchangeBaseNode {
+	public static UClass StaticClass() {return default;}
 	///<summary>This function allow to retrieve the number of track dependencies for this object.</summary>
 	public  int GetCustomAnimationTrackUidCount() { return default; }
 	///<summary>This function allow to retrieve the track dependency for this object.</summary>

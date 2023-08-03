@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Party game state that contains all information relevant to the communication within a party</summary>
 [CppInclude("Party/SocialParty.h")]
 public partial class USocialParty : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Reservation beacon class for getting server approval for new party members while in a game</summary>
 	public UClass ReservationBeaconClientClass;
 	///<summary>Spectator beacon class for getting server approval for new spectators while in a game</summary>

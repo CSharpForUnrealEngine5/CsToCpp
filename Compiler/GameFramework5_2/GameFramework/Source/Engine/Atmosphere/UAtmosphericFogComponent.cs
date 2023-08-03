@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Used to create fogging effects such as clouds.</summary>
 [CppInclude("Atmosphere/AtmosphericFogComponent.h")]
 public partial class UAtmosphericFogComponent : USkyAtmosphereComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>Deprecated</summary>
 	public  void SetDefaultBrightness(float NewBrightness) {}
 	///<summary>Deprecated</summary>

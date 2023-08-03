@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("ArchVisCharMovementComponent.h")]
 public partial class UArchVisCharMovementComponent : UCharacterMovementComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>Controls how fast the character&#39;s turn rate accelerates when rotating and looking up/down</summary>
 	public FRotator RotationalAcceleration;
 	///<summary>Controls how fast the character&#39;s turn rate decelerates to 0 when user stops turning</summary>

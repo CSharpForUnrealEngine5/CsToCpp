@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("InterchangeDatasmithAreaLightFactoryNode.h")]
 public partial class UInterchangeDatasmithAreaLightFactoryNode : UInterchangeActorFactoryNode {
+	public static UClass StaticClass() {return default;}
 	///<summary>GetCustomLightType</summary>
 	public  bool GetCustomLightType(EDatasmithAreaLightActorType AttributeValue) { return default; }
 	///<summary>SetCustomLightType</summary>

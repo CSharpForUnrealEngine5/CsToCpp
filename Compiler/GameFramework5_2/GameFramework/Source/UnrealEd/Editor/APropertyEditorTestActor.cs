@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Editor/PropertyEditorTestObject.h")]
 public partial class APropertyEditorTestActor : AActor {
+	public static UClass StaticClass() {return default;}
 	///<summary>InstancedUObjectArray</summary>
 	public TArray<UPropertyEditorTestInstancedObject> InstancedUObjectArray;
 	///<summary>GetOptionsValue</summary>

@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Components/SkyLightComponent.h")]
 public partial class USkyLightComponent : ULightComponentBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>When enabled, the sky will be captured and convolved to achieve dynamic diffuse and specular environment lighting.</summary>
 	public bool bRealTimeCapture;
 	///<summary>Indicates where to get the light contribution from.</summary>

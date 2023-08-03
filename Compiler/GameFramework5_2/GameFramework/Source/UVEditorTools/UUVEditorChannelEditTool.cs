@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("UVEditorLayerEditTool.h")]
 public partial class UUVEditorChannelEditTool : UInteractiveTool {
+	public static UClass StaticClass() {return default;}
 	///<summary>Targets</summary>
 	public TArray<UUVEditorToolMeshInput> Targets;
 	///<summary>ToolActions</summary>

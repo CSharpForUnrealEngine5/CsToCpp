@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("FoliageType_Actor.h")]
 public partial class UFoliageType_Actor : UFoliageType {
+	public static UClass StaticClass() {return default;}
 	///<summary>ActorClass</summary>
 	public UClass ActorClass;
 	///<summary>bShouldAttachToBaseComponent</summary>

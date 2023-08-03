@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Class to represent a set of variants</summary>
 [CppInclude("InterchangeVariantSetNode.h")]
 public partial class UInterchangeVariantSetNode : UInterchangeBaseNode {
+	public static UClass StaticClass() {return default;}
 	///<summary>This function allow to retrieve the text which is displayed in the UI for this VariantSet.</summary>
 	public  bool GetCustomDisplayText(string AttributeValue) { return default; }
 	///<summary>This function allow to set the text to be displayed in the UI for this VariantSet.</summary>

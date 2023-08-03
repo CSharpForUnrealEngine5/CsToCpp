@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("USDStageActor.h")]
 public partial class AUsdStageActor : AActor {
+	public static UClass StaticClass() {return default;}
 	///<summary>RootLayer</summary>
 	public FFilePath RootLayer;
 	///<summary>UsdAssetCache</summary>

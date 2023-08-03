@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Materials/MaterialExpressionPathTracingRayTypeSwitch.h")]
 public partial class UMaterialExpressionPathTracingRayTypeSwitch : UMaterialExpression {
+	public static UClass StaticClass() {return default;}
 	///<summary>Used for camera rays (or for non-path traced shading)</summary>
 	public FExpressionInput Main;
 	///<summary>Used by the path tracer on shadow rays (this only applies for non-opaque blend modes)</summary>

@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A media profile that configures the inputs, outputs, timecode provider and custom time step.</summary>
 [CppInclude("Profile/MediaProfile.h")]
 public partial class UMediaProfile : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Media sources.</summary>
 	public TArray<UMediaSource> MediaSources;
 	///<summary>Media outputs.</summary>

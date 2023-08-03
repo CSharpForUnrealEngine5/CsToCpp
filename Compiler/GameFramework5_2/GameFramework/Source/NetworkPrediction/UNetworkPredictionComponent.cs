@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>UNetworkPredictionComponent</summary>
 [CppInclude("NetworkPredictionComponent.h")]
 public partial class UNetworkPredictionComponent : UActorComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>The actual ServerRPC. This needs to be a UFUNCTION but is generic and not dependent on the simulation instance</summary>
 	public  void ServerReceiveClientInput(FServerReplicationRPCParameter ProxyParameter) {}
 	///<summary>Proxy to interface with the NetworkPrediction system</summary>

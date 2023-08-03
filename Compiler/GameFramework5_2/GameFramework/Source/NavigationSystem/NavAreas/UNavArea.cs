@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Class containing definition of a navigation area</summary>
 [CppInclude("NavAreas/NavArea.h")]
 public partial class UNavArea : UNavAreaBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>travel cost multiplier for path distance</summary>
 	public float DefaultCost;
 	///<summary>entering cost</summary>

@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Cheat Manager is a central blueprint to implement test and debug code and actions that are not to ship with the game.</summary>
 [CppInclude("GameFramework/CheatManager.h")]
 public partial class UCheatManager : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Debug camera - used to have independent camera without stopping gameplay</summary>
 	public ADebugCameraController DebugCameraControllerRef;
 	///<summary>Debug camera - used to have independent camera without stopping gameplay</summary>

@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>TODO: option to make tick size proportional to distance from camera to get a sense of perspective and scale</summary>
 [CppInclude("Tools/MotionTrailOptions.h")]
 public partial class UMotionTrailToolOptions : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>bShowTrails</summary>
 	public bool bShowTrails;
 	///<summary>TrailColor</summary>

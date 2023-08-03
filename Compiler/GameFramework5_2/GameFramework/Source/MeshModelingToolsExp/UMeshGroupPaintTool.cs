@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Mesh Element Paint Tool Class</summary>
 [CppInclude("MeshGroupPaintTool.h")]
 public partial class UMeshGroupPaintTool : UMeshSculptToolBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>PolygroupLayerProperties</summary>
 	public UPolygroupLayersProperties PolygroupLayerProperties;
 	///<summary>Filters on paint brush</summary>

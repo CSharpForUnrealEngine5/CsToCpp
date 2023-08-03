@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("CurveEditorCopyBuffer.h")]
 public partial class UCurveEditorCopyableCurveKeys : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>KeyPositions</summary>
 	public TArray<FKeyPosition> KeyPositions;
 	///<summary>KeyAttributes</summary>

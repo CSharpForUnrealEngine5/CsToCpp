@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Elements/PCGExecuteBlueprint.h")]
 public partial class UPCGBlueprintElement : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>~End UObject interface</summary>
 	public  void ExecuteWithContext(FPCGContext InContext,FPCGDataCollection Input,FPCGDataCollection Output) {}
 	///<summary>Execute</summary>

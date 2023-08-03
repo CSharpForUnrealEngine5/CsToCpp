@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("LevelSnapshotsEditorFunctionLibrary.h")]
 public partial class ULevelSnapshotsEditorFunctionLibrary : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>@brief Creates a new Level Snapshot asset in the content browser and then captures the target world</summary>
 	public static ULevelSnapshot TakeLevelSnapshotAndSaveToDisk(UObject WorldContextObject,string FileName,string FolderPath,string Description,bool bShouldCreateUniqueFileName/*=true*/) { return default; }
 	///<summary>Uses TakeLevelSnapshotAndSaveToDisk() and assumes Editor World</summary>

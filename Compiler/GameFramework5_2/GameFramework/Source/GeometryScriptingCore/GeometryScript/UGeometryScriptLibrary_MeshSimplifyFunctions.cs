@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("GeometryScript/MeshSimplifyFunctions.h")]
 public partial class UGeometryScriptLibrary_MeshSimplifyFunctions : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>ApplySimplifyToPlanar</summary>
 	public static UDynamicMesh ApplySimplifyToPlanar(UDynamicMesh TargetMesh,FGeometryScriptPlanarSimplifyOptions Options,UGeometryScriptDebug Debug/*=nullptr*/) { return default; }
 	///<summary>ApplySimplifyToPolygroupTopology</summary>

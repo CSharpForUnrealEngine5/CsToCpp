@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>MovementComponent is an abstract component class that defines functionality for moving a PrimitiveComponent (our UpdatedComponent) each tick.</summary>
 [CppInclude("GameFramework/MovementComponent.h")]
 public partial class UMovementComponent : UActorComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>The component we move and update.</summary>
 	public USceneComponent UpdatedComponent;
 	///<summary>UpdatedComponent, cast as a UPrimitiveComponent. May be invalid if UpdatedComponent was null or not a UPrimitiveComponent.</summary>

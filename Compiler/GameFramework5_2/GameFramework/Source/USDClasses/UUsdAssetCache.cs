@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Owns the assets generated and reused by the USD stage, allowing thread-safe retrieval/storage</summary>
 [CppInclude("USDAssetCache.h")]
 public partial class UUsdAssetCache : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>For now everything is NonPIEDuplicateTransient as this is mostly a subobject of AUsdStageActor. When the actor is duplicated</summary>
 	public TMap<string,UObject> TransientStorage;
 	///<summary>PersistentStorage</summary>

@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Tools/LODManagerTool.h")]
 public partial class ULODManagerLODProperties : UInteractiveToolPropertySet {
+	public static UClass StaticClass() {return default;}
 	///<summary>SourceLODs</summary>
 	public TArray<FLODManagerLODInfo> SourceLODs;
 	///<summary>HiResSource</summary>

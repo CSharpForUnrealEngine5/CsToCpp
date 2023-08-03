@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>SteamVR Extensions Function Library</summary>
 [CppInclude("SteamVRChaperoneComponent.h")]
 public partial class USteamVRChaperoneComponent : UActorComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>FSteamVRChaperoneEvent</summary>
 	public  void FSteamVRChaperoneEvent() {}
 	///<summary>OnLeaveBounds</summary>

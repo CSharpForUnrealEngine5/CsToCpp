@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("AISystem.h")]
 public partial class UAISystem : UAISystemBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>Class that will be used to spawn the perception system, can be game-specific</summary>
 	public FSoftClassPath PerceptionSystemClassName;
 	///<summary>Class that will be used to spawn the hot spot manager, can be game-specific</summary>

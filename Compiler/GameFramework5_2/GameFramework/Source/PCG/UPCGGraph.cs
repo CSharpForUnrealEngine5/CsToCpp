@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("PCGGraph.h")]
 public partial class UPCGGraph : UPCGGraphInterface {
+	public static UClass StaticClass() {return default;}
 	///<summary>bExposeToLibrary</summary>
 	public bool bExposeToLibrary;
 	///<summary>Category</summary>

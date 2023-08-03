@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>* ---- All properties must be EditDefaultsOnly, BlueprintReadOnly !!! -----</summary>
 [CppInclude("CommonTextBlock.h")]
 public partial class UCommonTextStyle : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>The font to apply at each size</summary>
 	public FSlateFontInfo Font;
 	///<summary>The color of the text</summary>

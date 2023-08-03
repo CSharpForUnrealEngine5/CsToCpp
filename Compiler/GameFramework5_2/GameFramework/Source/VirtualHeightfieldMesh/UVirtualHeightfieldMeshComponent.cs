@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Component to render a heightfield mesh using a virtual texture heightmap.</summary>
 [CppInclude("VirtualHeightfieldMeshComponent.h")]
 public partial class UVirtualHeightfieldMeshComponent : UPrimitiveComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>The RuntimeVirtualTextureVolume that contains virtual texture heightmap.</summary>
 	public TSoftObjectPtr<ARuntimeVirtualTextureVolume> VirtualTexture;
 	///<summary>UObject ref resolved from VirtualTexture weak ref.</summary>

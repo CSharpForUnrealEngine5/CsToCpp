@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("GeometryScript/MeshSelectionFunctions.h")]
 public partial class UGeometryScriptLibrary_MeshSelectionFunctions : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>Query information about a Mesh Selection</summary>
 	public static void GetMeshSelectionInfo(FGeometryScriptMeshSelection Selection,EGeometryScriptMeshSelectionType SelectionType,int NumSelected) {}
 	///<summary>Print information about the Mesh Selection to the Output Log</summary>

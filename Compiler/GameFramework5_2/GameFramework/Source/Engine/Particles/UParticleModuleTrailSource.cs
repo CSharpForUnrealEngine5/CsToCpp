@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Particles/Trail/ParticleModuleTrailSource.h")]
 public partial class UParticleModuleTrailSource : UParticleModuleTrailBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>The source method for the trail.</summary>
 	public ETrail2SourceMethod SourceMethod;
 	///<summary>The name of the source - either the emitter or Actor.</summary>

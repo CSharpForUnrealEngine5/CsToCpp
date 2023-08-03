@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>This is a component for AMediaPlate that can play and show media in the world.</summary>
 [CppInclude("MediaPlateComponent.h")]
 public partial class UMediaPlateComponent : UActorComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>Call this get our media player.</summary>
 	public  UMediaPlayer GetMediaPlayer() { return default; }
 	///<summary>Call this get our media texture.</summary>

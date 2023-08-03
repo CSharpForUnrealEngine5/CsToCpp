@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("InterchangeLightNode.h")]
 public partial class UInterchangeSpotLightNode : UInterchangePointLightNode {
+	public static UClass StaticClass() {return default;}
 	///<summary>GetCustomInnerConeAngle</summary>
 	public  bool GetCustomInnerConeAngle(float AttributeValue) { return default; }
 	///<summary>SetCustomInnerConeAngle</summary>

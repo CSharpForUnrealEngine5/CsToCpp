@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("ImagePlateFileSequence.h")]
 public partial class UImagePlateFileSequence : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Path to the directory in which the image sequence resides</summary>
 	public FDirectoryPath SequencePath;
 	///<summary>Wildcard used to find images within the directory (ie *.exr)</summary>

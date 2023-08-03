@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Data Interface allowing sampling of skeletal meshes.</summary>
 [CppInclude("NiagaraDataInterfaceSkeletalMesh.h")]
 public partial class UNiagaraDataInterfaceSkeletalMesh : UNiagaraDataInterface {
+	public static UClass StaticClass() {return default;}
 	///<summary>Controls how to retrieve the Skeletal Mesh Component to attach to.</summary>
 	public ENDISkeletalMesh_SourceMode SourceMode;
 	///<summary>Mesh used to sample from when not overridden by a source actor from the scene. Only available in editor for previewing. This is removed in cooked builds.</summary>

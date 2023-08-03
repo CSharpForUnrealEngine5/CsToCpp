@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Materials/MaterialExpressionBlendMaterialAttributes.h")]
 public partial class UMaterialExpressionBlendMaterialAttributes : UMaterialExpression {
+	public static UClass StaticClass() {return default;}
 	///<summary>A</summary>
 	public FMaterialAttributesInput A;
 	///<summary>B</summary>

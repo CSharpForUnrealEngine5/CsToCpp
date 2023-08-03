@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A container for all accessible properties for a UWidget that will be passed to the underlying SWidget.</summary>
 [CppInclude("Components/SlateWrapperTypes.h")]
 public partial class USlateAccessibleWidgetData : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>FGetText</summary>
 	public  string FGetText() { return default; }
 	///<summary>bCanChildrenBeAccessible</summary>

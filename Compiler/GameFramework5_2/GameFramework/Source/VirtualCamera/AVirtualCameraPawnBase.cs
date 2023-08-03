@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A class to handle aspects of virtual Camera related to general settings, and communicating with components.</summary>
 [CppInclude("VirtualCameraPawnBase.h")]
 public partial class AVirtualCameraPawnBase : APawn {
+	public static UClass StaticClass() {return default;}
 	///<summary>Cinematic camera used for view</summary>
 	public UVirtualCameraCineCameraComponent CineCamera;
 	///<summary>Determines if values should be saved between sessions</summary>

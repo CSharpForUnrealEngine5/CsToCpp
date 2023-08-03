@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Base class for all actor action-related utilities</summary>
 [CppInclude("ActorActionUtility.h")]
 public partial class UActorActionUtility : UEditorUtilityObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>GetSupportedClass</summary>
 	public  UClass GetSupportedClass() { return default; }
 	///<summary>Gets the statically determined supported classes, these classes are used as a first pass filter when determining</summary>

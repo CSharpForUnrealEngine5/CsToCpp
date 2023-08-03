@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Merge nodes take two 4-channel (color4) inputs and use the built-in alpha channel(s) to control the</summary>
 [CppInclude("MaterialX/MaterialExpressionOut.h")]
 public partial class UMaterialExpressionOut : UMaterialExpression {
+	public static UClass StaticClass() {return default;}
 	///<summary>A</summary>
 	public FExpressionInput A;
 	///<summary>B</summary>

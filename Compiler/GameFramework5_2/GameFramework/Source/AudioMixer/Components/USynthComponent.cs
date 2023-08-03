@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Components/SynthComponent.h")]
 public partial class USynthComponent : USceneComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>Starts the synth generating audio.</summary>
 	public  void Start() {}
 	///<summary>Stops the synth generating audio.</summary>

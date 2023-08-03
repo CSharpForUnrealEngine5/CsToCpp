@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Implements the settings for the HoloLens target platform.</summary>
 [CppInclude("HoloLensTargetSettings.h")]
 public partial class UHoloLensTargetSettings : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>When checked, a build that can be run via emulation is added</summary>
 	public bool bBuildForEmulation;
 	///<summary>When the box checked the final bundle has binaries of ARM64 OSes.</summary>

@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("MuCOE/Nodes/CustomizableObjectNodeTextureProject.h")]
 public partial class UCustomizableObjectNodeTextureProject : UCustomizableObjectNode {
+	public static UClass StaticClass() {return default;}
 	///<summary>Layout to use for the generated images.</summary>
 	public byte Layout;
 	///<summary>bEnableAngleFadeOutForRGB</summary>

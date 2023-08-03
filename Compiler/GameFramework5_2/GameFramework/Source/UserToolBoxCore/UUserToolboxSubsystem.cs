@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("UserToolBoxSubsystem.h")]
 public partial class UUserToolboxSubsystem : UEditorSubsystem {
+	public static UClass StaticClass() {return default;}
 	///<summary>RegisterTabData</summary>
 	public  void RegisterTabData() {}
 	///<summary>PickAnIcon</summary>

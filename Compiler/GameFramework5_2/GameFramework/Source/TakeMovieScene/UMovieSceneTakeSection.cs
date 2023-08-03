@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A section in a Take track</summary>
 [CppInclude("MovieSceneTakeSection.h")]
 public partial class UMovieSceneTakeSection : UMovieSceneSection {
+	public static UClass StaticClass() {return default;}
 	///<summary>Hours curve data</summary>
 	public FMovieSceneIntegerChannel HoursCurve;
 	///<summary>Minutes curve data</summary>

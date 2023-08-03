@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("CommonUIEditorSettings.h")]
 public partial class UCommonUIEditorSettings : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Newly created CommonText Widgets will use this style.</summary>
 	public TSoftObjectPtr<UClass> TemplateTextStyle;
 	///<summary>Newly created CommonButton Widgets will use this style.</summary>

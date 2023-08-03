@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("ReferenceViewer/ReferenceViewerSettings.h")]
 public partial class UReferenceViewerSettings : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Whether to limit the search depth for Referencers &amp; Dependencies</summary>
 	public bool bLimitSearchDepth;
 	///<summary>Whether to display the Referencers</summary>

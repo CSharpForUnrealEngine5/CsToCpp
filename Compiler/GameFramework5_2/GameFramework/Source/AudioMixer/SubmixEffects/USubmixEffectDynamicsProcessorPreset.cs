@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("SubmixEffects/AudioMixerSubmixEffectDynamicsProcessor.h")]
 public partial class USubmixEffectDynamicsProcessorPreset : USoundEffectSubmixPreset {
+	public static UClass StaticClass() {return default;}
 	///<summary>ResetKey</summary>
 	public  void ResetKey() {}
 	///<summary>Sets the source key input as the provided AudioBus&#39; output.  If no object is provided, key is set</summary>

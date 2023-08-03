@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Standard properties of the Transform Meshes operation</summary>
 [CppInclude("ISMEditorTool.h")]
 public partial class UISMEditorToolProperties : UInteractiveToolPropertySet {
+	public static UClass StaticClass() {return default;}
 	///<summary>Transformation Mode controls the overall behavior of the Gizmos in the Tool</summary>
 	public EISMEditorTransformMode TransformMode;
 	///<summary>When true, the Gizmo can be moved independently without affecting objects. This allows the Gizmo to be repositioned before transforming.</summary>

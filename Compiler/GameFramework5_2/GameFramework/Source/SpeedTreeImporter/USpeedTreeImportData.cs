@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("SpeedTreeImportData.h")]
 public partial class USpeedTreeImportData : UAssetImportData {
+	public static UClass StaticClass() {return default;}
 	///<summary>Specify the tree scale</summary>
 	public float TreeScale;
 	///<summary>Choose whether to import as a 3D asset, billboard or both</summary>

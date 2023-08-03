@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>UBaseBrushTool implements standard brush-style functionality for an InteractiveTool.</summary>
 [CppInclude("BaseTools/BaseBrushTool.h")]
 public partial class UBaseBrushTool : UMeshSurfacePointTool {
+	public static UClass StaticClass() {return default;}
 	///<summary>Properties that control brush size/etc</summary>
 	public UBrushBaseProperties BrushProperties;
 	///<summary>Set to true by Tool if user is currently in an active brush stroke</summary>

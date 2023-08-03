@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A component that represents a planet atmosphere material and simulates sky and light scattering within it.</summary>
 [CppInclude("Components/SkyAtmosphereComponent.h")]
 public partial class USkyAtmosphereComponent : USceneComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>The ground albedo that will tint the atmosphere when the sun light will bounce on it. Only taken into account when MultiScattering&gt;0.0.</summary>
 	public ESkyAtmosphereTransformMode TransformMode;
 	///<summary>The radius in kilometers from the center of the planet to the ground level.</summary>

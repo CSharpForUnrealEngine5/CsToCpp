@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Zero-centered 3D Fractal noise in 1, 2, 3 or 4 channels, created by summing several</summary>
 [CppInclude("MaterialX/MaterialExpressionFractal3D.h")]
 public partial class UMaterialExpressionFractal3D : UMaterialExpression {
+	public static UClass StaticClass() {return default;}
 	///<summary>The name of a vector3-type node specifying the 3D position at which the noise is evaluated. By default the vector is in local space</summary>
 	public FExpressionInput Position;
 	///<summary>Defaults to &#39;ConstAmplitude&#39; if not specified</summary>

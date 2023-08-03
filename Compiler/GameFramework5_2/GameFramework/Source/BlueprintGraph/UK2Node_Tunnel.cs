@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("K2Node_Tunnel.h")]
 public partial class UK2Node_Tunnel : UK2Node_EditablePinBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>The output pins of this tunnel node came from the input pins of OutputSourceNode</summary>
 	public UK2Node_Tunnel OutputSourceNode;
 	///<summary>The input pins of this tunnel go to the output pins of InputSinkNode</summary>

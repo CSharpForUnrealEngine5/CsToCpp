@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Elements/PCGTextureSampler.h")]
 public partial class UPCGTextureSamplerSettings : UPCGSettings {
+	public static UClass StaticClass() {return default;}
 	///<summary>Surface transform</summary>
 	public FTransform Transform;
 	///<summary>bUseAbsoluteTransform</summary>

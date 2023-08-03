@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Animation/AnimInstance.h")]
 public partial class UAnimInstance : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>This is used to extract animation. If Mesh exists, this will be overwritten by Mesh-&gt;Skeleton</summary>
 	public USkeleton CurrentSkeleton;
 	///<summary>Sets where this blueprint pulls Root Motion from</summary>

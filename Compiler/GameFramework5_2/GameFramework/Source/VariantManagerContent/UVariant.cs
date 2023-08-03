@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Variant.h")]
 public partial class UVariant : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>GetParent</summary>
 	public  UVariantSet GetParent() { return default; }
 	///<summary>SetDisplayText</summary>

@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Various cooker settings.</summary>
 [CppInclude("CookerSettings.h")]
 public partial class UCookerSettings : UDeveloperSettings {
+	public static UClass StaticClass() {return default;}
 	///<summary>bEnableCookOnTheSide</summary>
 	public bool bEnableCookOnTheSide;
 	///<summary>bEnableBuildDDCInBackground</summary>

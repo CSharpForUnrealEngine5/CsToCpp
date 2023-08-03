@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("WaveformEditorWidgetsSettings.h")]
 public partial class UWaveformEditorWidgetsSettings : UDeveloperSettings {
+	public static UClass StaticClass() {return default;}
 	///<summary>PlayheadColor</summary>
 	public FLinearColor PlayheadColor;
 	///<summary>WaveformColor</summary>

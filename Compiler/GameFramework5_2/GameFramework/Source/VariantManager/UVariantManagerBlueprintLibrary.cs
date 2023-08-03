@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Library of functions that can be used by the Python API to trigger VariantManager operations</summary>
 [CppInclude("VariantManagerBlueprintLibrary.h")]
 public partial class UVariantManagerBlueprintLibrary : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>Creates a new LevelVariantSetsAsset named AssetName (e.g. &#39;MyLevelVariantSets&#39;) in the content path AssetPath (e.g. &#39;/Game&#39;)</summary>
 	public static ULevelVariantSets CreateLevelVariantSetsAsset(string AssetName,string AssetPath) { return default; }
 	///<summary>Creates a new ALevelVariantSetsActor in the current scene and assigns LevelVariantSetsAsset to it</summary>

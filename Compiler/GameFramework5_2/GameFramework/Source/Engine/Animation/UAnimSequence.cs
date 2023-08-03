@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Animation/AnimSequence.h")]
 public partial class UAnimSequence : UAnimSequenceBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>The DCC framerate of the imported file. UI information only, unit are Hz</summary>
 	public float ImportFileFramerate;
 	///<summary>The resample framerate that was computed during import. UI information only, unit are Hz</summary>

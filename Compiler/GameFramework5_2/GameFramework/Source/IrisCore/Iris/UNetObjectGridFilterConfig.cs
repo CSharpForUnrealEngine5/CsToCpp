@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Iris/ReplicationSystem/Filtering/NetObjectGridFilter.h")]
 public partial class UNetObjectGridFilterConfig : UNetObjectFilterConfig {
+	public static UClass StaticClass() {return default;}
 	///<summary>How many frames a view position should be considered relevant. To avoid culling issues when player borders cells.</summary>
 	public uint ViewPosRelevancyFrameCount;
 	///<summary>CellSizeX</summary>

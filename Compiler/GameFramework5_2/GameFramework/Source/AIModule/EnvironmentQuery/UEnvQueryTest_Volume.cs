@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("EnvironmentQuery/Tests/EnvQueryTest_Volume.h")]
 public partial class UEnvQueryTest_Volume : UEnvQueryTest {
+	public static UClass StaticClass() {return default;}
 	///<summary>Context that populates a list of Actors derived from AVolume to test against</summary>
 	public UClass VolumeContext;
 	///<summary>If VolumeContext is null, AVolume Class will be used to populate a list of AVolume to test against</summary>

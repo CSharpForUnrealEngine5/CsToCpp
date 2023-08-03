@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Settings for the Fracture Editor Mode.</summary>
 [CppInclude("FractureModeSettings.h")]
 public partial class UFractureModeSettings : UDeveloperSettings {
+	public static UClass StaticClass() {return default;}
 	///<summary>Default fraction of geometry volume by which a cluster&#39;s convex hull volume can exceed the actual geometry volume before instead using the hulls of the children.  0 means the convex volume cannot exceed the geometry volume; 1 means the convex volume is allowed to be 100% larger (2x) the geometry volume.</summary>
 	public float ConvexCanExceedFraction;
 	///<summary>Default simplification threshold for convex hulls of new geometry collections</summary>

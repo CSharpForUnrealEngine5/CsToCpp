@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("MoviePipelineOutputSetting.h")]
 public partial class UMoviePipelineOutputSetting : UMoviePipelineSetting {
+	public static UClass StaticClass() {return default;}
 	///<summary>What directory should all of our output files be relative to.</summary>
 	public FDirectoryPath OutputDirectory;
 	///<summary>What format string should the final files use? Can include folder prefixes, and format string ({shot_name}, etc.)</summary>

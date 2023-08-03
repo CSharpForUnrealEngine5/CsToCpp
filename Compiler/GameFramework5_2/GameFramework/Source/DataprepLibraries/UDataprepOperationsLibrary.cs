@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("DataprepOperationsLibrary.h")]
 public partial class UDataprepOperationsLibrary : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>Generate LODs on the static meshes contained in the input array</summary>
 	public static void SetLods(TArray<UObject> SelectedObjects,FStaticMeshReductionOptions ReductionOptions,TArray<UObject> ModifiedObjects) {}
 	///<summary>Set one simple collision of the given shape type on the static meshes contained in the</summary>

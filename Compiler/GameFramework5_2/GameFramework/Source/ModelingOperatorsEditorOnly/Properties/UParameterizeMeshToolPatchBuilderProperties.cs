@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Properties/ParameterizeMeshProperties.h")]
 public partial class UParameterizeMeshToolPatchBuilderProperties : UInteractiveToolPropertySet {
+	public static UClass StaticClass() {return default;}
 	///<summary>Number of initial patches the mesh will be split into before island merging.</summary>
 	public int InitialPatches;
 	///<summary>Alignment of the initial patches to creases in the mesh.</summary>

@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A simple widget that shows a sliding bar with a handle that allows you to control the value between 0..1.</summary>
 [CppInclude("UI/Synth2DSlider.h")]
 public partial class USynth2DSlider : UWidget {
+	public static UClass StaticClass() {return default;}
 	///<summary>ValueX</summary>
 	public float ValueX;
 	///<summary>ValueY</summary>

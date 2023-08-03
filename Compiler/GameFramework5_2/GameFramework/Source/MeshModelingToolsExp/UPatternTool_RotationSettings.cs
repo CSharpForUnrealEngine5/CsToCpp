@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Settings for Per Element Rotation in the Pattern Tool</summary>
 [CppInclude("PatternTool.h")]
 public partial class UPatternTool_RotationSettings : UInteractiveToolPropertySet {
+	public static UClass StaticClass() {return default;}
 	///<summary>If true, Rotation is linearly interpolated between StartRotation and Rotation values</summary>
 	public bool bInterpolate;
 	///<summary>If true, Rotation at each Pattern Element is offset by a uniformly chosen random value in the range of [-RotationJitterRange, RotationJitterRange]</summary>

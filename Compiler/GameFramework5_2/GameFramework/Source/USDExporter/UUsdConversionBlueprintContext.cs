@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Wraps the UnrealToUsd component conversion functions from the USDUtilities module so that they can be used by</summary>
 [CppInclude("USDConversionBlueprintContext.h")]
 public partial class UUsdConversionBlueprintContext : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Opens or creates a USD stage using `StageRootLayerPath` as root layer, creating the root layer if needed.</summary>
 	public  void SetStageRootLayer(FFilePath StageRootLayerPath) {}
 	///<summary>Gets the file path of the root layer of our current stage</summary>

@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>This Data Interface can be used to gather particles at execution time and call either a</summary>
 [CppInclude("NiagaraDataInterfaceExport.h")]
 public partial class UNiagaraDataInterfaceExport : UNiagaraDataInterface {
+	public static UClass StaticClass() {return default;}
 	///<summary>Reference to a user parameter that should receive the particle data after the simulation tick. The supplied parameter object needs to implement the INiagaraParticleCallbackHandler interface.</summary>
 	public FNiagaraUserParameterBinding CallbackHandlerParameter;
 	///<summary>Sets the allocation scheme for the number of elements we reserve for the GPU.  The number of elements reserved should be as low as possible to improve performance.</summary>

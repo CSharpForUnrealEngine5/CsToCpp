@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Manages an arbitrary collection of CommonButton widgets.</summary>
 [CppInclude("Groups/CommonButtonGroupBase.h")]
 public partial class UCommonButtonGroupBase : UCommonWidgetGroupBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>Sets whether the group should always have a button selected.</summary>
 	public  void SetSelectionRequired(bool bRequireSelection) {}
 	///<summary>Deselects all buttons in the group.</summary>

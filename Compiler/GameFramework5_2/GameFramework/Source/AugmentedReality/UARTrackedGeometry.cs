@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("ARTrackable.h")]
 public partial class UARTrackedGeometry : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>GetLocalToWorldTransform</summary>
 	public  FTransform GetLocalToWorldTransform() { return default; }
 	///<summary>GetLocalToTrackingTransform</summary>

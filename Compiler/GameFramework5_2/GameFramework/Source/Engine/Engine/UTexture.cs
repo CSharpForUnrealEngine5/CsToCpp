@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Engine/Texture.h")]
 public partial class UTexture : UStreamableRenderAsset {
+	public static UClass StaticClass() {return default;}
 	///<summary>Dynamic textures will have ! Source.IsValid()</summary>
 	public FTextureSource Source;
 	///<summary>Unique ID for this material, used for caching during distributed lighting</summary>

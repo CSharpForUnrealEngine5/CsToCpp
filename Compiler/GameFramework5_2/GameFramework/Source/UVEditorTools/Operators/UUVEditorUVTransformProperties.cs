@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>UV Transform Settings</summary>
 [CppInclude("Operators/UVEditorUVTransformOp.h")]
 public partial class UUVEditorUVTransformProperties : UUVEditorUVTransformPropertiesBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>Scale applied to UVs, potentially non-uniform</summary>
 	public FVector2D Scale;
 	///<summary>Rotation applied to UVs after scaling, specified in degrees</summary>

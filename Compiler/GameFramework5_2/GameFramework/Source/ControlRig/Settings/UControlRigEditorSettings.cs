@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Customize Control Rig Editor.</summary>
 [CppInclude("Settings/ControlRigSettings.h")]
 public partial class UControlRigEditorSettings : UDeveloperSettings {
+	public static UClass StaticClass() {return default;}
 	///<summary>When this is checked mutable nodes (nodes with an execute pin)</summary>
 	public bool bAutoLinkMutableNodes;
 	///<summary>When this is checked all controls will return to their initial</summary>

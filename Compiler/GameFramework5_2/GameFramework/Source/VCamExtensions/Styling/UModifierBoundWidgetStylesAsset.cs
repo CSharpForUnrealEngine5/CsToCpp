@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>An asset intended to be referenced by Slate widgets.</summary>
 [CppInclude("Styling/ModifierBoundWidgetStylesAsset.h")]
 public partial class UModifierBoundWidgetStylesAsset : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Rules</summary>
 	public UModifierBoundWidgetStyleDefinitions Rules;
 	///<summary>Retrieves all meta data that is associated for a given modifier.</summary>

@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("LevelSnapshotsEditorSettings.h")]
 public partial class ULevelSnapshotsEditorSettings : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>ParseLevelSnapshotsTokensInText</summary>
 	public static string ParseLevelSnapshotsTokensInText(string InTextToParse,string InWorldName) { return default; }
 	///<summary>The base directory in which all snapshots will be saved. LevelSnapshotSaveDir specifies in which subdirectory snapshots are saved.</summary>

@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("SequenceRecorderActorGroup.h")]
 public partial class USequenceRecorderActorGroup : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>GroupName</summary>
 	public string GroupName;
 	///<summary>The base name of the sequence to record to. This name will also be used to auto-generate any assets created by this recording.</summary>

@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>One or more instances of this component can be added to an actor (e.g. a static mesh actor blueprint),</summary>
 [CppInclude("CalibrationPointComponent.h")]
 public partial class UCalibrationPointComponent : UProceduralMeshComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>A way to group many points in a single component</summary>
 	public TMap<string,FVector> SubPoints;
 	///<summary>Draws a visual representation of the calibration points</summary>

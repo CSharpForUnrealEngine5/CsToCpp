@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>This component tries to maintain its children at a fixed distance from the parent,</summary>
 [CppInclude("GameFramework/SpringArmComponent.h")]
 public partial class USpringArmComponent : USceneComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>Natural length of the spring arm when there are no collisions</summary>
 	public float TargetArmLength;
 	///<summary>offset at end of spring arm; use this instead of the relative offset of the attached component to ensure the line trace works as desired</summary>

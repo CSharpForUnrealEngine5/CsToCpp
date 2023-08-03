@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Tool</summary>
 [CppInclude("BakeRenderCaptureTool.h")]
 public partial class UBakeRenderCaptureTool : UMultiSelectionMeshEditingTool {
+	public static UClass StaticClass() {return default;}
 	///<summary>Actors</summary>
 	public TArray<AActor> Actors;
 	///<summary>Settings</summary>

@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("GeometryScript/MeshNormalsFunctions.h")]
 public partial class UGeometryScriptLibrary_MeshNormalsFunctions : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>Flip/Invert the normal vectors of TargetMesh by multiplying them by -1, as well as reversing the mesh triangle orientations, ie triangle (a,b,c) becomes (b,a,c)</summary>
 	public static UDynamicMesh FlipNormals(UDynamicMesh TargetMesh,UGeometryScriptDebug Debug/*=nullptr*/) { return default; }
 	///<summary>Attempt to repair inconsistent normals in TargetMesh. Currently this is done in two passes. In the first pass, triangles with</summary>

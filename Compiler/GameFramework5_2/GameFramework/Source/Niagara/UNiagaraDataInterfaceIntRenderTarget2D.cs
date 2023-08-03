@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("NiagaraDataInterfaceIntRenderTarget2D.h")]
 public partial class UNiagaraDataInterfaceIntRenderTarget2D : UNiagaraDataInterfaceRWBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>Size</summary>
 	public FIntPoint Size;
 	///<summary>bPreviewRenderTarget</summary>

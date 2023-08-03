@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("PixelStreamingDelegates.h")]
 public partial class UPixelStreamingDelegates : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>A connection to the signalling server was made.</summary>
 	public  void FConnectedToSignallingServer() {}
 	///<summary>OnConnectedToSignallingServer</summary>

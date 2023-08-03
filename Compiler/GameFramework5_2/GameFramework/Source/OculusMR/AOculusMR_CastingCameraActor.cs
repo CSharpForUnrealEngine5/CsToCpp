@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>The camera actor in the level that tracks the binded physical camera in game</summary>
 [CppInclude("OculusMR_CastingCameraActor.h")]
 public partial class AOculusMR_CastingCameraActor : ASceneCapture2D {
+	public static UClass StaticClass() {return default;}
 	///<summary>VRNotificationComponent</summary>
 	public UVRNotificationsComponent VRNotificationComponent;
 	///<summary>CameraColorTexture</summary>

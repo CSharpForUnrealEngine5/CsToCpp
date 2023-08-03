@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Data/ManifestUObject.h")]
 public partial class UBuildPatchManifest : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>ManifestFileVersion</summary>
 	public byte ManifestFileVersion;
 	///<summary>bIsFileData</summary>

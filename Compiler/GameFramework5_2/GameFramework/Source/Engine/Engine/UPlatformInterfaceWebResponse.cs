@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Engine/PlatformInterfaceWebResponse.h")]
 public partial class UPlatformInterfaceWebResponse : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>This holds the original requested URL</summary>
 	public string OriginalURL;
 	///<summary>Result code from the response (200=OK, 404=Not Found, etc)</summary>

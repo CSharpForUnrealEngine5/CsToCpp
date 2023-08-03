@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("MeshTexturePaintingTool.h")]
 public partial class UMeshTexturePaintingToolProperties : UBrushBaseProperties {
+	public static UClass StaticClass() {return default;}
 	///<summary>Color used for Applying Texture Color Painting</summary>
 	public FLinearColor PaintColor;
 	///<summary>Color used for Erasing Texture Color Painting</summary>

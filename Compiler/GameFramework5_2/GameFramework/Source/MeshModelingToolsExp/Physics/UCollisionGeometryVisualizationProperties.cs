@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Physics/CollisionPropertySets.h")]
 public partial class UCollisionGeometryVisualizationProperties : UInteractiveToolPropertySet {
+	public static UClass StaticClass() {return default;}
 	///<summary>Thickness of lines used to visualize collision shapes</summary>
 	public float LineThickness;
 	///<summary>Show occluded parts of the collision geometry, rendered with dashed lines</summary>

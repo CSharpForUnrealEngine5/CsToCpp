@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Used to verify if the generated Python stub is correctly type-hinted (if type hint is enabled). The stub is generated</summary>
 [CppInclude("PyTest.h")]
 public partial class UPyTestTypeHint : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Check type hinted constants</summary>
 	public static string GetStringConst() { return default; }
 	///<summary>GetIntConst</summary>

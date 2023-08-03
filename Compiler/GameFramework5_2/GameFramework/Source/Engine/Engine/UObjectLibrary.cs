@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Class that holds a library of Objects</summary>
 [CppInclude("Engine/ObjectLibrary.h")]
 public partial class UObjectLibrary : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Class that Objects must be of. If ContainsBlueprints is true, this is the native class that the blueprints are instances of and not UClass</summary>
 	public UClass ObjectBaseClass;
 	///<summary>True if this library holds blueprint classes, false if it holds other objects</summary>

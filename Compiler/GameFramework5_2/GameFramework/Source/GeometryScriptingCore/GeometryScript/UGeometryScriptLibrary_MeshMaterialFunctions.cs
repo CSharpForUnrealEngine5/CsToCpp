@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("GeometryScript/MeshMaterialFunctions.h")]
 public partial class UGeometryScriptLibrary_MeshMaterialFunctions : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>GetMaxMaterialID</summary>
 	public static int GetMaxMaterialID(UDynamicMesh TargetMesh,bool bHasMaterialIDs) { return default; }
 	///<summary>EnableMaterialIDs</summary>

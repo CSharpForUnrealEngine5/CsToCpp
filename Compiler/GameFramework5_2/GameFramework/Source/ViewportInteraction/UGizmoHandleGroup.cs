@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Base class for gizmo handles</summary>
 [CppInclude("VIGizmoHandle.h")]
 public partial class UGizmoHandleGroup : USceneComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>Gizmo material (opaque)</summary>
 	public UMaterialInterface GizmoMaterial;
 	///<summary>Gizmo material (translucent)</summary>

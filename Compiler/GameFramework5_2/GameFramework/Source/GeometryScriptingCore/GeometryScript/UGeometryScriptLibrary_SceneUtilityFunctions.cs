@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("GeometryScript/SceneUtilityFunctions.h")]
 public partial class UGeometryScriptLibrary_SceneUtilityFunctions : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>Create a new UDynamicMeshPool object.</summary>
 	public static UDynamicMeshPool CreateDynamicMeshPool() { return default; }
 	///<summary>Copy the mesh from a given Component to a Dynamic Mesh.</summary>

@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>@class UTargetingSubsystem</summary>
 [CppInclude("TargetingSystem/TargetingSubsystem.h")]
 public partial class UTargetingSubsystem : UGameInstanceSubsystem {
+	public static UClass StaticClass() {return default;}
 	///<summary>Method to execute an immediate targeting request based on a gameplay targeting preset.</summary>
 	public  void ExecuteTargetingRequest(UTargetingPreset TargetingPreset,FTargetingSourceContext InSourceContext,FTargetingRequestDynamicDelegate CompletionDynamicDelegate) {}
 	///<summary>Method to remove an async targeting request with a given targeting handle</summary>

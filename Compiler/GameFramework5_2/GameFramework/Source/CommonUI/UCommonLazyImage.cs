@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A special Image widget that can show unloaded images and takes care of the loading for you!</summary>
 [CppInclude("CommonLazyImage.h")]
 public partial class UCommonLazyImage : UImage {
+	public static UClass StaticClass() {return default;}
 	///<summary>Set the brush from a lazy texture asset pointer - will load the texture as needed.</summary>
 	public  void SetBrushFromLazyTexture(TSoftObjectPtr<UTexture2D> LazyTexture,bool bMatchSize/*=false*/) {}
 	///<summary>Set the brush from a lazy material asset pointer - will load the material as needed.</summary>

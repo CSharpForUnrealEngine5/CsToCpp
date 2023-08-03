@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("MeshPaintSettings.h")]
 public partial class UPaintBrushSettings : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Radius of the Brush used for Painting</summary>
 	public float BrushRadius;
 	///<summary>Strength of the brush (0.0 - 1.0)</summary>

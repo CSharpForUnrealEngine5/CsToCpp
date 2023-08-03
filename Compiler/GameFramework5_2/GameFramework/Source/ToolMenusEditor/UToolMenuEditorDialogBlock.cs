@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("ToolMenusEditor.h")]
 public partial class UToolMenuEditorDialogBlock : UToolMenuEditorDialogObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Name</summary>
 	public string Name;
 	///<summary>Type</summary>

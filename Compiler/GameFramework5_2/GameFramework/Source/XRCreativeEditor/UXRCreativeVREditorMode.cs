@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("XRCreativeVREditorMode.h")]
 public partial class UXRCreativeVREditorMode : UVREditorModeBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>GetRoomTransform</summary>
 	public  FTransform GetRoomTransform() { return default; }
 	///<summary>GetHeadTransform</summary>

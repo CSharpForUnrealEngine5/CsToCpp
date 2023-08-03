@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Active conversation participants should have this component on them.</summary>
 [CppInclude("ConversationParticipantComponent.h")]
 public partial class UConversationParticipantComponent : UActorComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>RequestServerAdvanceConversation</summary>
 	public  void RequestServerAdvanceConversation(FAdvanceConversationRequest InChoicePicked) {}
 	///<summary>GetParticipantDisplayName</summary>

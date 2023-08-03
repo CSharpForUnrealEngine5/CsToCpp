@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Subsystems/SubsystemBlueprintLibrary.h")]
 public partial class USubsystemBlueprintLibrary : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>Get a Game Instance Subsystem from the Game Instance associated with the provided context</summary>
 	public static UEngineSubsystem GetEngineSubsystem(UClass Class) { return default; }
 	///<summary>Get a Game Instance Subsystem from the Game Instance associated with the provided context</summary>

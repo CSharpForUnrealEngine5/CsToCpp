@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Materials/MaterialExpressionMaterialAttributeLayers.h")]
 public partial class UMaterialExpressionMaterialAttributeLayers : UMaterialExpression {
+	public static UClass StaticClass() {return default;}
 	///<summary>Input</summary>
 	public FMaterialAttributesInput Input;
 	///<summary>DefaultLayers</summary>

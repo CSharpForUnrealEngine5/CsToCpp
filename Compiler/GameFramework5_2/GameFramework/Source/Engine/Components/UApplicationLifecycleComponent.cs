@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Component to handle receiving notifications from the OS about application state (activated, suspended, termination, etc).</summary>
 [CppInclude("Components/ApplicationLifecycleComponent.h")]
 public partial class UApplicationLifecycleComponent : UActorComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>FApplicationLifetimeDelegate</summary>
 	public  void FApplicationLifetimeDelegate() {}
 	///<summary>FOnTemperatureChangeDelegate</summary>

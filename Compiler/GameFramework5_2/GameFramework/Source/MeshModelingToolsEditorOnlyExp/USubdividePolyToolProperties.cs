@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Properties</summary>
 [CppInclude("SubdividePolyTool.h")]
 public partial class USubdividePolyToolProperties : UInteractiveToolPropertySet {
+	public static UClass StaticClass() {return default;}
 	///<summary>Number of iterations/levels of subdivision to perform</summary>
 	public int SubdivisionLevel;
 	///<summary>Controls whether the user can select Catmull-Clark or is forced to use Loop</summary>

@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Function library containing methods that should be hoisted onto FMovieSceneBindingProxies for scripting</summary>
 [CppInclude("ExtensionLibraries/MovieSceneBindingExtensions.h")]
 public partial class UMovieSceneBindingExtensions : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>Check whether the specified binding is valid</summary>
 	public static bool IsValid(FMovieSceneBindingProxy InBinding) { return default; }
 	///<summary>Get this binding&#39;s ID</summary>

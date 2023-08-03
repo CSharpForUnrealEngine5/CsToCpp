@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Factories/FbxSceneImportFactory.h")]
 public partial class UFbxSceneImportFactory : USceneImportFactory {
+	public static UClass StaticClass() {return default;}
 	///<summary>Import options UI detail when importing fbx scene</summary>
 	public UFbxSceneImportOptions SceneImportOptions;
 	///<summary>Import options UI detail when importing fbx scene static mesh</summary>

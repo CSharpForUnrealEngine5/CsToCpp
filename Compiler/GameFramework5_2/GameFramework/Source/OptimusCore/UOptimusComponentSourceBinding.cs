@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("OptimusComponentSource.h")]
 public partial class UOptimusComponentSourceBinding : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>The name to give the binding, to disambiguate it from other bindings of same component type.</summary>
 	public string BindingName;
 	///<summary>The component type that this binding applies to</summary>

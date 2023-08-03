@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>The scene node represent a transform node in the scene</summary>
 [CppInclude("InterchangeSceneNode.h")]
 public partial class UInterchangeSceneNode : UInterchangeBaseNode {
+	public static UClass StaticClass() {return default;}
 	///<summary>IsSpecializedTypeContains</summary>
 	public  bool IsSpecializedTypeContains(string SpecializedType) { return default; }
 	///<summary>Get the Specialized type this scene node represent (Joint, LODGroup, ...).</summary>

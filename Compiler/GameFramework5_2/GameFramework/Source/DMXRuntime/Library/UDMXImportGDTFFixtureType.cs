@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Library/DMXImportGDTF.h")]
 public partial class UDMXImportGDTFFixtureType : UDMXImportFixtureType {
+	public static UClass StaticClass() {return default;}
 	///<summary>Name</summary>
 	public string Name;
 	///<summary>ShortName</summary>

@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("GameplayDebuggerCategoryReplicator.h")]
 public partial class AGameplayDebuggerCategoryReplicator : AActor {
+	public static UClass StaticClass() {return default;}
 	///<summary>OnRep_ReplicatedData</summary>
 	public  void OnRep_ReplicatedData() {}
 	///<summary>OwnerPC</summary>

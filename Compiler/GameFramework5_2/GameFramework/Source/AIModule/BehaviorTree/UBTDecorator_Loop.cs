@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Loop decorator node.</summary>
 [CppInclude("BehaviorTree/Decorators/BTDecorator_Loop.h")]
 public partial class UBTDecorator_Loop : UBTDecorator {
+	public static UClass StaticClass() {return default;}
 	///<summary>number of executions</summary>
 	public int NumLoops;
 	///<summary>infinite loop</summary>

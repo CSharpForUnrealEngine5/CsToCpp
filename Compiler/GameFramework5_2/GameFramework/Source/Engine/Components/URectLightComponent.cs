@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A light component which emits light from a rectangle.</summary>
 [CppInclude("Components/RectLightComponent.h")]
 public partial class URectLightComponent : ULocalLightComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>Width of light source rect.</summary>
 	public float SourceWidth;
 	///<summary>Height of light source rect.</summary>

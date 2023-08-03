@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("LiveLinkFreeDSourceSettings.h")]
 public partial class ULiveLinkFreeDSourceSettings : ULiveLinkSourceSettings {
+	public static UClass StaticClass() {return default;}
 	///<summary>Send extra string meta data (Camera ID and FrameCounter)</summary>
 	public bool bSendExtraMetaData;
 	///<summary>Default configurations for specific manufacturers</summary>

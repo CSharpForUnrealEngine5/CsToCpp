@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Base class for a list of selectable tabs that correspondingly activate and display an arbitrary widget in a linked switcher</summary>
 [CppInclude("CommonTabListWidgetBase.h")]
 public partial class UCommonTabListWidgetBase : UCommonUserWidget {
+	public static UClass StaticClass() {return default;}
 	///<summary>Delegate broadcast when a new tab is selected.</summary>
 	public  void FOnTabSelected(string TabId) {}
 	///<summary>Broadcasts when a new tab is selected.</summary>

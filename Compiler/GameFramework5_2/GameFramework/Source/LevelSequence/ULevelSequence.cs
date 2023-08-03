@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Movie scene animation for Actors.</summary>
 [CppInclude("LevelSequence.h")]
 public partial class ULevelSequence : UMovieSceneSequence {
+	public static UClass StaticClass() {return default;}
 	///<summary>Pointer to the movie scene that controls this animation.</summary>
 	public UMovieScene MovieScene;
 	///<summary>Legacy object references - should be read-only. Not deprecated because they need to still be saved</summary>

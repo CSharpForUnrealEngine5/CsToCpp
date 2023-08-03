@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("AppleVisionBlueprintProxy.h")]
 public partial class UAppleVisionDetectFacesAsyncTaskBlueprintProxy : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>OnSuccess</summary>
 	public FAppleVisionDetectFacesDelegate OnSuccess;
 	///<summary>OnFailure</summary>

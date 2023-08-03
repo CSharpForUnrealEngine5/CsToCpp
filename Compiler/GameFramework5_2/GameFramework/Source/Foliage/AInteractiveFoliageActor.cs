@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("InteractiveFoliageActor.h")]
 public partial class AInteractiveFoliageActor : AStaticMeshActor {
+	public static UClass StaticClass() {return default;}
 	///<summary>Collision cylinder</summary>
 	public UCapsuleComponent CapsuleComponent;
 	///<summary>Position of the last actor to enter the collision cylinder.</summary>

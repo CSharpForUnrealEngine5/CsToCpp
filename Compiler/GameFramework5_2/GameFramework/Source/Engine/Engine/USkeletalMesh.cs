@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>SkeletalMesh is geometry bound to a hierarchical skeleton of bones which can be animated for the purpose of deforming the mesh.</summary>
 [CppInclude("Engine/SkeletalMesh.h")]
 public partial class USkeletalMesh : USkinnedAsset {
+	public static UClass StaticClass() {return default;}
 	///<summary>MeshEditorDataObject</summary>
 	public USkeletalMeshEditorData MeshEditorDataObject;
 	///<summary>Skeleton</summary>

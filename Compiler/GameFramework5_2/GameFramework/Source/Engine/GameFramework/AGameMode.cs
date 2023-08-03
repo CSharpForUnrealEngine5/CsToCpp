@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>GameMode is a subclass of GameModeBase that behaves like a multiplayer match-based game.</summary>
 [CppInclude("GameFramework/GameMode.h")]
 public partial class AGameMode : AGameModeBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>Returns the current match state, this is an accessor to protect the state machine flow</summary>
 	public  string GetMatchState() { return default; }
 	///<summary>Returns true if the match state is InProgress or other gameplay state</summary>

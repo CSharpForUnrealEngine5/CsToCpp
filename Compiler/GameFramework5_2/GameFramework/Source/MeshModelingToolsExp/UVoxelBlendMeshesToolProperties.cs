@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Properties of the blend operation</summary>
 [CppInclude("VoxelBlendMeshesTool.h")]
 public partial class UVoxelBlendMeshesToolProperties : UInteractiveToolPropertySet {
+	public static UClass StaticClass() {return default;}
 	///<summary>Blend power controls the shape of the blend between shapes</summary>
 	public double BlendPower;
 	///<summary>Blend falloff controls the size of the blend region</summary>

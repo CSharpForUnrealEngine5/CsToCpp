@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("IAudioLinkBlueprintInterface.h")]
 public partial class UAudioLinkBlueprintInterface : UInterface {
+	public static UClass StaticClass() {return default;}
 	///<summary>SetLinkSound</summary>
 	public  void SetLinkSound(USoundBase NewSound) {}
 	///<summary>PlayLink</summary>

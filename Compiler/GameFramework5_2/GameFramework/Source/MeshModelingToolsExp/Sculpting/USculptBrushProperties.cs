@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Sculpting/MeshSculptToolBase.h")]
 public partial class USculptBrushProperties : UInteractiveToolPropertySet {
+	public static UClass StaticClass() {return default;}
 	///<summary>BrushSize</summary>
 	public FBrushToolRadius BrushSize;
 	///<summary>Amount of falloff to apply (0.0 - 1.0)</summary>

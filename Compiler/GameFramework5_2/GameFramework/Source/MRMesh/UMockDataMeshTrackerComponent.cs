@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>The MeshTrackerComponent class manages requests for environmental mesh data, processes the results and provides</summary>
 [CppInclude("MockDataMeshTrackerComponent.h")]
 public partial class UMockDataMeshTrackerComponent : USceneComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>Sets the procedural mesh component that will store and display the environmental mesh results.</summary>
 	public  void ConnectMRMesh(UMRMeshComponent InMRMeshPtr) {}
 	///<summary>Unlinks the current procedural mesh component from the mesh tracking system.</summary>

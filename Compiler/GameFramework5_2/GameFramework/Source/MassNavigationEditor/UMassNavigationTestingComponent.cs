@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Component for testing MassMovement functionality.</summary>
 [CppInclude("MassNavigationTestingActor.h")]
 public partial class UMassNavigationTestingComponent : UDebugDrawComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>ZoneGraph</summary>
 	public UZoneGraphSubsystem ZoneGraph;
 	///<summary>LaneLocation</summary>

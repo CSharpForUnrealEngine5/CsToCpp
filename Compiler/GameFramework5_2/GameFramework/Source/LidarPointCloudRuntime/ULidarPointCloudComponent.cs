@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Component that allows you to render specified point cloud section</summary>
 [CppInclude("LidarPointCloudComponent.h")]
 public partial class ULidarPointCloudComponent : UMeshComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>PointCloud</summary>
 	public ULidarPointCloud PointCloud;
 	///<summary>Allows using custom-built material for the point cloud.</summary>

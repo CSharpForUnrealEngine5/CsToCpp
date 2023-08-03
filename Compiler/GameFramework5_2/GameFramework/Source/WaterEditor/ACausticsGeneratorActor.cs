@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("CausticsGeneratorActor.h")]
 public partial class ACausticsGeneratorActor : AActor {
+	public static UClass StaticClass() {return default;}
 	///<summary>UPROPERTY(BlueprintReadWrite, NonTransactional, meta = (Category = &quot;Default&quot;))</summary>
 	public USceneComponent DefaultSceneRoot;
 	///<summary>EditorTick</summary>

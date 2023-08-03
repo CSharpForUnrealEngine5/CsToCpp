@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Materials/MaterialExpressionTransformPosition.h")]
 public partial class UMaterialExpressionTransformPosition : UMaterialExpression {
+	public static UClass StaticClass() {return default;}
 	///<summary>input expression for this transform</summary>
 	public FExpressionInput Input;
 	///<summary>source format of the position that will be transformed</summary>

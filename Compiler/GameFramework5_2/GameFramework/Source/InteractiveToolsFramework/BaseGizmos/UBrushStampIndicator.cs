@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>* UBrushStampIndicator is a simple 3D brush indicator.</summary>
 [CppInclude("BaseGizmos/BrushStampIndicator.h")]
 public partial class UBrushStampIndicator : UInteractiveGizmo {
+	public static UClass StaticClass() {return default;}
 	///<summary>Controls whether Gizmo will draw visual elements. Does not currently affect AttachedComponent.</summary>
 	public bool bVisible;
 	///<summary>BrushRadius</summary>

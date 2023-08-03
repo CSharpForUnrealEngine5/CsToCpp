@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Kismet/KismetArrayLibrary.h")]
 public partial class UKismetArrayLibrary : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>Add item to array</summary>
 	public static int Array_Add(TArray<int> TargetArray,int NewItem) { return default; }
 	///<summary>Add item to array (unique)</summary>

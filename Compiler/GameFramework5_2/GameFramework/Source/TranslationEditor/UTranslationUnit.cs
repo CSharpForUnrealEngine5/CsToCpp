@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("TranslationUnit.h")]
 public partial class UTranslationUnit : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>The localization namespace for this translation</summary>
 	public string Namespace;
 	///<summary>The localization key for this translation</summary>

@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Dom/WebAPIOperation.h")]
 public partial class UWebAPIOperation : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Name of the Operation.</summary>
 	public FWebAPITypeNameVariant Name;
 	///<summary>Can be disabled to skip generation of this Operation.</summary>

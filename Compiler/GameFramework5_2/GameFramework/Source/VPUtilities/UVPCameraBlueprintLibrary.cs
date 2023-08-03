@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("VPCameraBlueprintLibrary.h")]
 public partial class UVPCameraBlueprintLibrary : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>SpawnDollyTrackFromPoints</summary>
 	public static ACameraRig_Rail SpawnDollyTrackFromPoints(UObject WorldContextObject,TArray<FTransform> Points,ESplinePointType InterpType/*=ESplinePointType.Linear*/) { return default; }
 	///<summary>SpawnDollyTrackFromPointsSmooth</summary>

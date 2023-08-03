@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("MobilePatchingLibrary.h")]
 public partial class UMobilePendingContent : UMobileInstalledContent {
+	public static UClass StaticClass() {return default;}
 	///<summary>Get the total download size for this content installation</summary>
 	public  float GetDownloadSize() { return default; }
 	///<summary>Get the required disk space in megabytes for this content installation</summary>

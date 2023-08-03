@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Applies force to character&#39;s movement</summary>
 [CppInclude("Abilities/Tasks/AbilityTask_ApplyRootMotionRadialForce.h")]
 public partial class UAbilityTask_ApplyRootMotionRadialForce : UAbilityTask_ApplyRootMotion_Base {
+	public static UClass StaticClass() {return default;}
 	///<summary>OnFinish</summary>
 	public FApplyRootMotionRadialForceDelegate OnFinish;
 	///<summary>Apply force to character&#39;s movement</summary>

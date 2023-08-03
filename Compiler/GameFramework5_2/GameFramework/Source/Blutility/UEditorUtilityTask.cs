@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("EditorUtilityTask.h")]
 public partial class UEditorUtilityTask : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Run</summary>
 	public  void Run() {}
 	///<summary>FinishExecutingTask</summary>

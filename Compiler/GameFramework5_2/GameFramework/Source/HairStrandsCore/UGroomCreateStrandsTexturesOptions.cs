@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("GroomCreateStrandsTexturesOptions.h")]
 public partial class UGroomCreateStrandsTexturesOptions : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Resolution of the output texture maps (tangent, coverage, ...)</summary>
 	public int Resolution;
 	///<summary>Direction in which the tracing will be done: either from the mesh&#39;s surface to the outside, or from the mesh&#39;s surface to the inside.</summary>

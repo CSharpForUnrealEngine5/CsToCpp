@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>UStaticMeshEditorSubsystem</summary>
 [CppInclude("StaticMeshEditorSubsystem.h")]
 public partial class UStaticMeshEditorSubsystem : UEditorSubsystem {
+	public static UClass StaticClass() {return default;}
 	///<summary>Remove then add LODs on a static mesh.</summary>
 	public  int SetLodsWithNotification(UStaticMesh StaticMesh,FStaticMeshReductionOptions ReductionOptions,bool bApplyChanges) { return default; }
 	///<summary>Same as SetLodsWithNotification but changes are applied.</summary>

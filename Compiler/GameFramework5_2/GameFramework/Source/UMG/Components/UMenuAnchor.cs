@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>The Menu Anchor allows you to specify an location that a popup menu should be anchored to,</summary>
 [CppInclude("Components/MenuAnchor.h")]
 public partial class UMenuAnchor : UContentWidget {
+	public static UClass StaticClass() {return default;}
 	///<summary>FGetUserWidget</summary>
 	public  UUserWidget FGetUserWidget() { return default; }
 	///<summary>The widget class to spawn when the menu is required.  Creates the widget freshly each time.</summary>

@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Base class for creating virtual subjects in Blueprints</summary>
 [CppInclude("VirtualSubjects/LiveLinkBlueprintVirtualSubject.h")]
 public partial class ULiveLinkBlueprintVirtualSubject : ULiveLinkVirtualSubject {
+	public static UClass StaticClass() {return default;}
 	///<summary>OnInitialize</summary>
 	public  void OnInitialize() {}
 	///<summary>OnUpdate</summary>

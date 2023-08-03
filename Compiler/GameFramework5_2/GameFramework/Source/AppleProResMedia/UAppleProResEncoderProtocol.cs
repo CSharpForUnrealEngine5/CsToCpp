@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("AppleProResEncoderProtocol.h")]
 public partial class UAppleProResEncoderProtocol : UFrameGrabberProtocol {
+	public static UClass StaticClass() {return default;}
 	///<summary>EncodingFormat</summary>
 	public EAppleProResEncoderFormats EncodingFormat;
 	///<summary>ColorDescription</summary>

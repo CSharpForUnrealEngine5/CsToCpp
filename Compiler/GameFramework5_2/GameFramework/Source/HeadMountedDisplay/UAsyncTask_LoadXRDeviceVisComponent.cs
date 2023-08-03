@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("XRAssetFunctionLibrary.h")]
 public partial class UAsyncTask_LoadXRDeviceVisComponent : UBlueprintAsyncActionBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>AddNamedDeviceVisualizationComponentAsync</summary>
 	public static UAsyncTask_LoadXRDeviceVisComponent AddNamedDeviceVisualizationComponentAsync(AActor Target,string SystemName,string DeviceName,bool bManualAttachment,FTransform RelativeTransform,FXRDeviceId XRDeviceId,UPrimitiveComponent NewComponent) { return default; }
 	///<summary>AddDeviceVisualizationComponentAsync</summary>

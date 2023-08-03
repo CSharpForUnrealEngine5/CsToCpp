@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Base class for 2d and 3d primitive objects intended to be used as part of 3D Gizmos.</summary>
 [CppInclude("BaseGizmos/GizmoElementBase.h")]
 public partial class UGizmoElementBase : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Whether element is enabled. Render and LineTrace only occur when bEnabled is true.</summary>
 	public bool bEnabled;
 	///<summary>Whether element is enabled for perspective projection</summary>

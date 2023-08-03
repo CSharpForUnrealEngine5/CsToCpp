@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Blueprint/SlateBlueprintLibrary.h")]
 public partial class USlateBlueprintLibrary : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>Absolute coordinates could be either desktop or window space depending on what space the root of the widget hierarchy is in.</summary>
 	public static bool IsUnderLocation(FGeometry Geometry,FVector2D AbsoluteCoordinate) { return default; }
 	///<summary>Absolute coordinates could be either desktop or window space depending on what space the root of the widget hierarchy is in.</summary>

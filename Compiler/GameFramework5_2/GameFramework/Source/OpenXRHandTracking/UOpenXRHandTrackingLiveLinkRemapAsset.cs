@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>OpenXR HandTracking LiveLink remapping asset</summary>
 [CppInclude("OpenXRHandTrackingLiveLinkRemapAsset.h")]
 public partial class UOpenXRHandTrackingLiveLinkRemapAsset : ULiveLinkRetargetAsset {
+	public static UClass StaticClass() {return default;}
 	///<summary>If true, remap the full human hand skeleton including metacarpals</summary>
 	public bool bHasMetacarpals;
 	///<summary>Only apply the orientation to each bone</summary>

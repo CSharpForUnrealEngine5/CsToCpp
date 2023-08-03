@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("EditMeshPolygonsTool.h")]
 public partial class UEditMeshPolygonsTool : USingleTargetWithSelectionTool {
+	public static UClass StaticClass() {return default;}
 	///<summary>Preview</summary>
 	public UMeshOpPreviewWithBackgroundCompute Preview;
 	///<summary>CommonProps</summary>

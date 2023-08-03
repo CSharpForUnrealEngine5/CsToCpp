@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Will set the Widgets on a viewport either by Widgets are first rendered to a render target, then that render target is displayed in the world.</summary>
 [CppInclude("VPFullScreenUserWidget.h")]
 public partial class UVPFullScreenUserWidget : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>The display type when the world is an editor world.</summary>
 	public EVPWidgetDisplayType EditorDisplayType;
 	///<summary>The display type when the world is a game world.</summary>

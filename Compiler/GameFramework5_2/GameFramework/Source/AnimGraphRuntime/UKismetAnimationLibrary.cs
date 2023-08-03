@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A library of the most common animation blueprint functions.</summary>
 [CppInclude("KismetAnimationLibrary.h")]
 public partial class UKismetAnimationLibrary : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>Computes the transform for two bones using inverse kinematics.</summary>
 	public static void K2_TwoBoneIK(FVector RootPos,FVector JointPos,FVector EndPos,FVector JointTarget,FVector Effector,FVector OutJointPos,FVector OutEndPos,bool bAllowStretching,float StartStretchRatio,float MaxStretchScale) {}
 	///<summary>Computes the transform which is &quot;looking&quot; at target position with a local axis.</summary>

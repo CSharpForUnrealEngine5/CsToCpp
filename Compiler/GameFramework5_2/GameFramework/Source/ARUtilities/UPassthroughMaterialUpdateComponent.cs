@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Helper component that automatically pick the correct passthrough material to use</summary>
 [CppInclude("PassthroughMaterialUpdateComponent.h")]
 public partial class UPassthroughMaterialUpdateComponent : UActorComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>Add a component to be affected by the passthrough rendering</summary>
 	public  void AddAffectedComponent(UPrimitiveComponent InComponent) {}
 	///<summary>Remove the component from passthrough rendering</summary>

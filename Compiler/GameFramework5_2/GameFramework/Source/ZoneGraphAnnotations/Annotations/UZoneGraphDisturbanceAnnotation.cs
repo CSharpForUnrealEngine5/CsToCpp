@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>ZoneGraph Disturbance Annotation</summary>
 [CppInclude("Annotations/ZoneGraphDisturbanceAnnotation.h")]
 public partial class UZoneGraphDisturbanceAnnotation : UZoneGraphAnnotationComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>Tag to mark the lanes that should be fled.</summary>
 	public FZoneGraphTag DangerAnnotationTag;
 	///<summary>Tag to mark the lanes influenced by an obstacle.</summary>

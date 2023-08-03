@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Abilities/Tasks/AbilityTask_WaitConfirm.h")]
 public partial class UAbilityTask_WaitConfirm : UAbilityTask {
+	public static UClass StaticClass() {return default;}
 	///<summary>OnConfirm</summary>
 	public FGenericGameplayTaskDelegate OnConfirm;
 	///<summary>OnConfirmCallback</summary>

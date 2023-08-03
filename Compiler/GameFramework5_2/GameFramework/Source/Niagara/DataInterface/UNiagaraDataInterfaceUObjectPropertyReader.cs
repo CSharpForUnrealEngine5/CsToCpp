@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Data interface to read properties from UObjects.</summary>
 [CppInclude("DataInterface/NiagaraDataInterfaceUObjectPropertyReader.h")]
 public partial class UNiagaraDataInterfaceUObjectPropertyReader : UNiagaraDataInterface {
+	public static UClass StaticClass() {return default;}
 	///<summary>User parameter Object binding to read properties from.</summary>
 	public FNiagaraUserParameterBinding UObjectParameterBinding;
 	///<summary>PropertyRemap</summary>

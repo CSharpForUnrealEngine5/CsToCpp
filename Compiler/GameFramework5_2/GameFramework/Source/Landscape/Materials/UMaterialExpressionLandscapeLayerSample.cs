@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Materials/MaterialExpressionLandscapeLayerSample.h")]
 public partial class UMaterialExpressionLandscapeLayerSample : UMaterialExpression {
+	public static UClass StaticClass() {return default;}
 	///<summary>ParameterName</summary>
 	public string ParameterName;
 	///<summary>PreviewWeight</summary>

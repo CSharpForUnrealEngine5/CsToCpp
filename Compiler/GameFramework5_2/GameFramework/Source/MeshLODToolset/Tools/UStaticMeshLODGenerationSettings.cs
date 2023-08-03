@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>UStaticMeshLODGenerationSettings is intended to be a stored version of the settings used</summary>
 [CppInclude("Tools/LODGenerationSettingsAsset.h")]
 public partial class UStaticMeshLODGenerationSettings : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Preprocessing</summary>
 	public FGenerateStaticMeshLODProcess_PreprocessSettings Preprocessing;
 	///<summary>MeshGeneration</summary>

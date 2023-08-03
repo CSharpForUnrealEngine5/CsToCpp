@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Components/CanvasPanelSlot.h")]
 public partial class UCanvasPanelSlot : UPanelSlot {
+	public static UClass StaticClass() {return default;}
 	///<summary>The anchoring information for the slot</summary>
 	public FAnchorData LayoutData;
 	///<summary>When AutoSize is true we use the widget&#39;s desired size</summary>

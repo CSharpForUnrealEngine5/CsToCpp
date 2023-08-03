@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("MuCOE/Nodes/CustomizableObjectNodeMeshClipMorph.h")]
 public partial class UCustomizableObjectNodeMeshClipMorph : UCustomizableObjectNodeModifierBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>BoneName</summary>
 	public string BoneName;
 	///<summary>Tags</summary>

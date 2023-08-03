@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Waits until the input is pressed from activating an ability. This should be true immediately upon starting the ability, since the key was pressed to activate it.</summary>
 [CppInclude("Abilities/Tasks/AbilityTask_WaitInputPress.h")]
 public partial class UAbilityTask_WaitInputPress : UAbilityTask {
+	public static UClass StaticClass() {return default;}
 	///<summary>OnPress</summary>
 	public FInputPressDelegate OnPress;
 	///<summary>OnPressCallback</summary>

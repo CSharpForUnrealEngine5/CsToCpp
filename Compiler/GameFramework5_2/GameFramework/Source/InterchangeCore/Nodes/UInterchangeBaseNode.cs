@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>This struct is used to store and retrieve key value attributes. The attributes are store in a generic FAttributeStorage which serialize the value in a TArray64&lt;uint8&gt;</summary>
 [CppInclude("Nodes/InterchangeBaseNode.h")]
 public partial class UInterchangeBaseNode : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Initialize the base data of the node</summary>
 	public  void InitializeNode(string UniqueID,string DisplayLabel,EInterchangeNodeContainerType NodeContainerType) {}
 	///<summary>Remove any attribute from this node. Return false if we cannot remove it. If the attribute do not exist it will return true.</summary>

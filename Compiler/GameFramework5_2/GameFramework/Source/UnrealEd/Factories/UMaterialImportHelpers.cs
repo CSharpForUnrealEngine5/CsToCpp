@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Factories/MaterialImportHelpers.h")]
 public partial class UMaterialImportHelpers : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>FindExistingMaterialFromSearchLocation</summary>
 	public static UMaterialInterface FindExistingMaterialFromSearchLocation(string MaterialFullName,string BasePackagePath,EMaterialSearchLocation SearchLocation,string OutError) { return default; }
 	///<summary>FindExistingMaterial</summary>

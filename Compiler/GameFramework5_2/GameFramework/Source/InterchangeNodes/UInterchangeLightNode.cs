@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("InterchangeLightNode.h")]
 public partial class UInterchangeLightNode : UInterchangeBaseLightNode {
+	public static UClass StaticClass() {return default;}
 	///<summary>GetCustomIntensityUnits</summary>
 	public  bool GetCustomIntensityUnits(EInterchangeLightUnits AttributeValue) { return default; }
 	///<summary>SetCustomIntensityUnits</summary>

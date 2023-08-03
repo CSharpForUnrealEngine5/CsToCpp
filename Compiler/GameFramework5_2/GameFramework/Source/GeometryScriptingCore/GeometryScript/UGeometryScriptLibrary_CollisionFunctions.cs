@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("GeometryScript/CollisionFunctions.h")]
 public partial class UGeometryScriptLibrary_CollisionFunctions : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>SetStaticMeshCollisionFromMesh</summary>
 	public static UDynamicMesh SetStaticMeshCollisionFromMesh(UDynamicMesh FromDynamicMesh,UStaticMesh ToStaticMeshAsset,FGeometryScriptCollisionFromMeshOptions Options,UGeometryScriptDebug Debug/*=nullptr*/) { return default; }
 	///<summary>Copy the Simple Collision Geometry from the SourceComponent to the StaticMeshAsset</summary>

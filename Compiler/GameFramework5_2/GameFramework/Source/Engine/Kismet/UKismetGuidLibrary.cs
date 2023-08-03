@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Kismet/KismetGuidLibrary.h")]
 public partial class UKismetGuidLibrary : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>Returns true if the values are equal (A == B)</summary>
 	public static bool EqualEqual_GuidGuid(FGuid A,FGuid B) { return default; }
 	///<summary>Returns true if the values are not equal (A != B)</summary>

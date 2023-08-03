@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Animation/AnimBlueprintGeneratedClass.h")]
 public partial class UAnimBlueprintGeneratedClass : UBlueprintGeneratedClass {
+	public static UClass StaticClass() {return default;}
 	///<summary>List of state machines present in this blueprint class</summary>
 	public TArray<FBakedAnimationStateMachine> BakedStateMachines;
 	///<summary>Target skeleton for this blueprint class</summary>

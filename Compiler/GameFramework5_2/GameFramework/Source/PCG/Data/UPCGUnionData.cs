@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Data/PCGUnionData.h")]
 public partial class UPCGUnionData : UPCGSpatialDataWithPointCache {
+	public static UClass StaticClass() {return default;}
 	///<summary>Initialize</summary>
 	public  void Initialize(UPCGSpatialData InA,UPCGSpatialData InB) {}
 	///<summary>AddData</summary>

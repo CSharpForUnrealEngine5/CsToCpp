@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("ARLifeCycleComponent.h")]
 public partial class UARLifeCycleComponent : USceneComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>Called when an AR actor is spawned on the server</summary>
 	public  void FInstanceARActorSpawnedDelegate(UClass ComponentClass,FGuid NativeID,AARActor SpawnedActor) {}
 	///<summary>OnARActorSpawnedDelegate</summary>

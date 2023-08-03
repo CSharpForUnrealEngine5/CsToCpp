@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>ActorComponent for running MockPhysicsSimulation</summary>
 [CppInclude("MockPhysicsComponent.h")]
 public partial class UMockPhysicsComponent : UBaseMovementComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>Next local InputCmd that will be submitted. This is just one way to do it.</summary>
 	public FMockPhysicsInputCmd PendingInputCmd;
 	///<summary>Assignable delegates chosen so that owning actor can implement in BPs. May not be the best choice for all cases.</summary>

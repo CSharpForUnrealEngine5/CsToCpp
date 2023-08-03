@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("DynamicMeshSculptTool.h")]
 public partial class UDynamicMeshBrushSculptProperties : UInteractiveToolPropertySet {
+	public static UClass StaticClass() {return default;}
 	///<summary>This is a dupe of the bool in the tool class.  I needed it here so it could be checked as an EditCondition</summary>
 	public bool bIsRemeshingEnabled;
 	///<summary>Primary Brush Mode</summary>

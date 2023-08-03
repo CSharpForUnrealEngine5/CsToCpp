@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("LevelVariantSetsActor.h")]
 public partial class ALevelVariantSetsActor : AActor {
+	public static UClass StaticClass() {return default;}
 	///<summary>Returns the LevelVariantSets asset, optionally loading it if necessary</summary>
 	public  ULevelVariantSets GetLevelVariantSets(bool bLoad/*=false*/) { return default; }
 	///<summary>SetLevelVariantSets</summary>

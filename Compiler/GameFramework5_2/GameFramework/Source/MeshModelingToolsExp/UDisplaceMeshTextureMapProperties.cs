@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>PropertySet for properties affecting the Image Map displacement type.</summary>
 [CppInclude("DisplaceMeshTool.h")]
 public partial class UDisplaceMeshTextureMapProperties : UInteractiveToolPropertySet {
+	public static UClass StaticClass() {return default;}
 	///<summary>Displacement map. Only the first channel is used.</summary>
 	public UTexture2D DisplacementMap;
 	///<summary>Channel in the displacement map to use.</summary>

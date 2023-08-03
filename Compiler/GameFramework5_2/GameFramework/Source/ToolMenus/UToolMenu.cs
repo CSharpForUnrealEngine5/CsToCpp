@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("ToolMenu.h")]
 public partial class UToolMenu : UToolMenuBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>InitMenu</summary>
 	public  void InitMenu(FToolMenuOwner Owner,string Name,string Parent/*=NAME_None*/,EMultiBoxType Type/*=EMultiBoxType.Menu*/) {}
 	///<summary>AddSectionScript</summary>

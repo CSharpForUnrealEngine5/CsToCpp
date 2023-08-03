@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>This validation rule can be used to enforce a budget on the number of simulation stages and the iterations that may execute.</summary>
 [CppInclude("NiagaraValidationRules.h")]
 public partial class UNiagaraValidationRule_SimulationStageBudget : UNiagaraValidationRule {
+	public static UClass StaticClass() {return default;}
 	///<summary>bMaxSimulationStagesEnabled</summary>
 	public bool bMaxSimulationStagesEnabled;
 	///<summary>bMaxIterationsPerStageEnabled</summary>

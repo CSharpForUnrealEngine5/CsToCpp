@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Abstract base class for media sources.</summary>
 [CppInclude("MediaSource.h")]
 public partial class UMediaSource : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Get the media source&#39;s URL string (must be implemented in child classes).</summary>
 	public  string GetUrl() { return default; }
 	///<summary>Validate the media source settings (must be implemented in child classes).</summary>

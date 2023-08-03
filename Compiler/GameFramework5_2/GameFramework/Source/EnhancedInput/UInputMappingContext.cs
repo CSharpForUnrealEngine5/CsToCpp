@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>UInputMappingContext : A collection of key to action mappings for a specific input context</summary>
 [CppInclude("InputMappingContext.h")]
 public partial class UInputMappingContext : UDataAsset {
+	public static UClass StaticClass() {return default;}
 	///<summary>List of key to action mappings.</summary>
 	public TArray<FEnhancedActionKeyMapping> Mappings;
 	///<summary>Localized context descriptor</summary>

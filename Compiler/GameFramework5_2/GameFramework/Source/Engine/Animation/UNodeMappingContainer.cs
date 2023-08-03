@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Node Mapping Container Class</summary>
 [CppInclude("Animation/NodeMappingContainer.h")]
 public partial class UNodeMappingContainer : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>SourceItems</summary>
 	public TMap<string,FNodeItem> SourceItems;
 	///<summary>TargetItems</summary>

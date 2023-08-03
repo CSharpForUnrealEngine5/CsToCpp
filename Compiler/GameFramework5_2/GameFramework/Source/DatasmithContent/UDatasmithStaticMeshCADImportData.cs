@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("DatasmithAssetImportData.h")]
 public partial class UDatasmithStaticMeshCADImportData : UDatasmithStaticMeshImportData {
+	public static UClass StaticClass() {return default;}
 	///<summary>TessellationOptions</summary>
 	public FDatasmithTessellationOptions TessellationOptions;
 	///<summary>ModelUnit</summary>

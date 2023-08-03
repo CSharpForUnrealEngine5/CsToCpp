@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>SmartObject definition asset. Contains sharable information that can be used by multiple SmartObject instances at runtime.</summary>
 [CppInclude("SmartObjectDefinition.h")]
 public partial class USmartObjectDefinition : UDataAsset {
+	public static UClass StaticClass() {return default;}
 	///<summary>Actor class used for previewing the definition in the asset editor.</summary>
 	public TSoftObjectPtr<UClass> PreviewClass;
 	///<summary>Path of the static mesh used for previewing the definition in the asset editor.</summary>

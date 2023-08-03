@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>The Enhanced Input Editor Subsystem can be used to process input outside of PIE within the editor.</summary>
 [CppInclude("EnhancedInputEditorSubsystem.h")]
 public partial class UEnhancedInputEditorSubsystem : UEditorSubsystem {
+	public static UClass StaticClass() {return default;}
 	///<summary>Pushes this input component onto the stack to be processed by this subsystem&#39;s tick function</summary>
 	public  void PushInputComponent(UInputComponent InInputComponent) {}
 	///<summary>Removes this input component onto the stack to be processed by this subsystem&#39;s tick function</summary>

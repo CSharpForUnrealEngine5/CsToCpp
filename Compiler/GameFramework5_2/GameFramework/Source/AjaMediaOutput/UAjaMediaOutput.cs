@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Output information for an aja media capture.</summary>
 [CppInclude("AjaMediaOutput.h")]
 public partial class UAjaMediaOutput : UMediaOutput {
+	public static UClass StaticClass() {return default;}
 	///<summary>The device, port and video settings that correspond to the output.</summary>
 	public FMediaIOOutputConfiguration OutputConfiguration;
 	///<summary>The output of the Audio, Ancillary and/or video will be perform at the same time.</summary>

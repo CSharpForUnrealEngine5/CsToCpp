@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Elements/Metadata/PCGMetadataRotatorOpElement.h")]
 public partial class UPCGMetadataRotatorSettings : UPCGMetadataSettingsBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>Operation</summary>
 	public EPCGMedadataRotatorOperation Operation;
 	///<summary>InputSource1</summary>

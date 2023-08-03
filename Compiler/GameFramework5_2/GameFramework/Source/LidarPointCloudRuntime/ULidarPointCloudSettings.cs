@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("LidarPointCloudSettings.h")]
 public partial class ULidarPointCloudSettings : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Determines how to handle duplicate points (distance &lt; 0.0001).</summary>
 	public ELidarPointCloudDuplicateHandling DuplicateHandling;
 	///<summary>Maximum distance between points, within which they are considered to be duplicates</summary>

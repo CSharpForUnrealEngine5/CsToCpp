@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>*      Function library class.</summary>
 [CppInclude("BlueprintMaterialTextureNodesBPLibrary.h")]
 public partial class UBlueprintMaterialTextureNodesBPLibrary : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>Samples a texel from a Texture 2D with VectorDisplacement Compression</summary>
 	public static FLinearColor Texture2D_SampleUV_EditorOnly(UTexture2D Texture,FVector2D UV) { return default; }
 	///<summary>Samples an array of values from a Texture Render Target 2D. Currently only 4 channel formats are supported.</summary>

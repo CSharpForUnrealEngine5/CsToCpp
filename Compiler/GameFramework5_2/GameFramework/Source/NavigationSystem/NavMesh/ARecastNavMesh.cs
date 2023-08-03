@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("NavMesh/RecastNavMesh.h")]
 public partial class ARecastNavMesh : ANavigationData {
+	public static UClass StaticClass() {return default;}
 	///<summary>Draw edges of every navmesh&#39;s triangle</summary>
 	public bool bDrawTriangleEdges;
 	///<summary>Draw edges of every poly (i.e. not only border-edges)</summary>

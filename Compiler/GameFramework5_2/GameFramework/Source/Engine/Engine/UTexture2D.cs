@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Engine/Texture2D.h")]
 public partial class UTexture2D : UTexture {
+	public static UClass StaticClass() {return default;}
 	///<summary>keep track of first mip level used for ResourceMem creation</summary>
 	public int FirstResourceMemMip;
 	///<summary>True if streaming is temporarily disabled so we can update subregions of this texture&#39;s resource</summary>

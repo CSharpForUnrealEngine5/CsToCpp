@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Exporters/FbxExportOption.h")]
 public partial class UFbxExportOption : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>This will set the fbx sdk compatibility when exporting to fbx file. The default value is 2013</summary>
 	public EFbxExportCompatibility FbxExportCompatibility;
 	///<summary>If enabled, save as ascii instead of binary</summary>

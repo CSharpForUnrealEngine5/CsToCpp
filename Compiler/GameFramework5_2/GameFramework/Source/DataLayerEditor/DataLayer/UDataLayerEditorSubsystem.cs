@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("DataLayer/DataLayerEditorSubsystem.h")]
 public partial class UDataLayerEditorSubsystem : UEditorSubsystem {
+	public static UClass StaticClass() {return default;}
 	///<summary>Checks to see if the specified actor is in an appropriate state to interact with DataLayers</summary>
 	public  bool IsActorValidForDataLayer(AActor Actor) { return default; }
 	///<summary>Adds the actor to the DataLayer.</summary>

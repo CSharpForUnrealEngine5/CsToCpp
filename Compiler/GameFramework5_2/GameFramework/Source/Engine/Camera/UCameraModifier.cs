@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A CameraModifier is a base class for objects that may adjust the final camera properties after</summary>
 [CppInclude("Camera/CameraModifier.h")]
 public partial class UCameraModifier : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>If true, enables certain debug visualization features.</summary>
 	public bool bDebug;
 	///<summary>If true, no other modifiers of same priority allowed.</summary>

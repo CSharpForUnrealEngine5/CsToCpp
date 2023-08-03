@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("VRNotificationsComponent.h")]
 public partial class UVRNotificationsComponent : UActorComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>FVRNotificationsDelegate</summary>
 	public  void FVRNotificationsDelegate() {}
 	///<summary>This will be called on Morpheus if the HMD starts up and is not fully initialized (in NOT_STARTED or CALIBRATING states).</summary>

@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Contains data for a group of assets to import</summary>
 [CppInclude("AutomatedAssetImportData.h")]
 public partial class UAutomatedAssetImportData : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Display name of the group. This is for logging purposes only.</summary>
 	public string GroupName;
 	///<summary>Filenames to import</summary>

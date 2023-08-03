@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Implements a media player asset that can play movies and other media.</summary>
 [CppInclude("BinkMediaPlayer.h")]
 public partial class UBinkMediaPlayer : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Checks whether media playback can be paused right now.</summary>
 	public  bool CanPause() { return default; }
 	///<summary>Checks whether media playback can be started right now.</summary>

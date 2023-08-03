@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("ControlRigBlueprintEditorLibrary.h")]
 public partial class UControlRigBlueprintEditorLibrary : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>CastToControlRigBlueprint</summary>
 	public static void CastToControlRigBlueprint(UObject Object,ECastToControlRigBlueprintCases Branches,UControlRigBlueprint AsControlRigBlueprint) {}
 	///<summary>SetPreviewMesh</summary>

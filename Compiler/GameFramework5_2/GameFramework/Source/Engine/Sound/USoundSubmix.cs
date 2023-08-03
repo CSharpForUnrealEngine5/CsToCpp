@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Sound Submix class meant for applying an effect to the downmixed sum of multiple audio sources.</summary>
 [CppInclude("Sound/SoundSubmix.h")]
 public partial class USoundSubmix : USoundSubmixWithParentBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>Mute this submix when the application is muted or in the background. Used to prevent submix effect tails from continuing when tabbing out of application or if application is muted.</summary>
 	public bool bMuteWhenBackgrounded;
 	///<summary>SubmixEffectChain</summary>

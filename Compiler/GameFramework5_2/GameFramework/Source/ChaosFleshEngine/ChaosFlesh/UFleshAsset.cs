@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>UFleshAsset (UObject)</summary>
 [CppInclude("ChaosFlesh/FleshAsset.h")]
 public partial class UFleshAsset : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Dataflow</summary>
 	public UDataflow DataflowAsset;
 	///<summary>DataflowTerminal</summary>

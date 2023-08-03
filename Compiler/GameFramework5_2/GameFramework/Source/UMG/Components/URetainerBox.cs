@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>The Retainer Box renders children widgets to a render target first before</summary>
 [CppInclude("Components/RetainerBox.h")]
 public partial class URetainerBox : UContentWidget {
+	public static UClass StaticClass() {return default;}
 	///<summary>bRetainRender</summary>
 	public bool bRetainRender;
 	///<summary>Should this widget redraw the contents it has every time it receives an invalidation request</summary>

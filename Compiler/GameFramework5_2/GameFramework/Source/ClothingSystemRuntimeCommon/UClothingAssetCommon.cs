@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Implementation of non-solver specific, but common Engine related functionality.</summary>
 [CppInclude("ClothingAsset.h")]
 public partial class UClothingAssetCommon : UClothingAssetBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>The physics asset to extract collisions from when building a simulation.</summary>
 	public UPhysicsAsset PhysicsAsset;
 	///<summary>Simulation specific cloth parameters.</summary>

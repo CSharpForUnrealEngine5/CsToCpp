@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Controls playback of playlist items</summary>
 [CppInclude("SequencerPlaylistPlayer.h")]
 public partial class USequencerPlaylistPlayer : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>SetPlaylist</summary>
 	public  void SetPlaylist(USequencerPlaylist InPlaylist) {}
 	///<summary>GetPlaylist</summary>

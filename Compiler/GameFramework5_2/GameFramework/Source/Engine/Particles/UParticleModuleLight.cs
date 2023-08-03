@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Particles/Light/ParticleModuleLight.h")]
 public partial class UParticleModuleLight : UParticleModuleLightBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>Whether to use physically based inverse squared falloff from the light.  If unchecked, the LightExponent distribution will be used instead.</summary>
 	public bool bUseInverseSquaredFalloff;
 	///<summary>Whether lights from this module should affect translucency.</summary>

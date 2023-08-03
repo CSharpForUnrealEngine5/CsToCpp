@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("AddPrimitiveTool.h")]
 public partial class UProceduralTorusToolProperties : UProceduralShapeToolProperties {
+	public static UClass StaticClass() {return default;}
 	///<summary>Major radius of the torus, measured from the torus center to the center of the torus tube</summary>
 	public float MajorRadius;
 	///<summary>Minor radius of the torus, measured from the center ot the torus tube to the tube surface</summary>

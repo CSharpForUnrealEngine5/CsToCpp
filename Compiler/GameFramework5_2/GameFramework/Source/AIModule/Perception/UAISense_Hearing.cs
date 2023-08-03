@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Perception/AISense_Hearing.h")]
 public partial class UAISense_Hearing : UAISense {
+	public static UClass StaticClass() {return default;}
 	///<summary>NoiseEvents</summary>
 	public TArray<FAINoiseEvent> NoiseEvents;
 	///<summary>Defaults to 0 to have instant notification. Setting to &gt; 0 will result in delaying</summary>

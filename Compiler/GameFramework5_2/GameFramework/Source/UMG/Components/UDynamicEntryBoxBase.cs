@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Base for widgets that support a dynamic number of auto-generated entries at both design- and run-time.</summary>
 [CppInclude("Components/DynamicEntryBoxBase.h")]
 public partial class UDynamicEntryBoxBase : UWidget {
+	public static UClass StaticClass() {return default;}
 	///<summary>The padding to apply between entries in the box.</summary>
 	public FVector2D EntrySpacing;
 	///<summary>The looping sequence of entry paddings to apply as entries are created. Overlay boxes only. Ignores EntrySpacing if not empty.</summary>

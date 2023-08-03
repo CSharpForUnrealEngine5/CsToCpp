@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("USDStageImportOptions.h")]
 public partial class UUsdStageImportOptions : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>bImportActors</summary>
 	public bool bImportActors;
 	///<summary>bImportGeometry</summary>

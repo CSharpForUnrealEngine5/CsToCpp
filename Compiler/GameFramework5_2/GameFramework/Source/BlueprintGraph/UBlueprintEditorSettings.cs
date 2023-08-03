@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("BlueprintEditorSettings.h")]
 public partial class UBlueprintEditorSettings : UDeveloperSettings {
+	public static UClass StaticClass() {return default;}
 	///<summary>Should arrows indicating data/execution flow be drawn halfway along wires?</summary>
 	public bool bDrawMidpointArrowsInBlueprints;
 	///<summary>Determines if lightweight tutorial text shows up at the top of empty blueprint graphs</summary>

@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Kismet/KismetMaterialLibrary.h")]
 public partial class UKismetMaterialLibrary : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>Sets a scalar parameter value on the material collection instance. Logs if ParameterName is invalid.</summary>
 	public static void SetScalarParameterValue(UObject WorldContextObject,UMaterialParameterCollection Collection,string ParameterName,float ParameterValue) {}
 	///<summary>Sets a vector parameter value on the material collection instance. Logs if ParameterName is invalid.</summary>

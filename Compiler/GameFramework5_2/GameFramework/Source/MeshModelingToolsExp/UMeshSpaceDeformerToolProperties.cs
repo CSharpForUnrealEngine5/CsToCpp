@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("MeshSpaceDeformerTool.h")]
 public partial class UMeshSpaceDeformerToolProperties : UInteractiveToolPropertySet {
+	public static UClass StaticClass() {return default;}
 	///<summary>SelectedOperationType</summary>
 	public ENonlinearOperationType SelectedOperationType;
 	///<summary>The upper bound to the region of space which the operation will affect. Measured along the gizmo Z axis from the gizmo center.</summary>

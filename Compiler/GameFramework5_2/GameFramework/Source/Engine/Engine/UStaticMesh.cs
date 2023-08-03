@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A StaticMesh is a piece of geometry that consists of a static set of polygons.</summary>
 [CppInclude("Engine/StaticMesh.h")]
 public partial class UStaticMesh : UStreamableRenderAsset {
+	public static UClass StaticClass() {return default;}
 	///<summary>SourceModels</summary>
 	public TArray<FStaticMeshSourceModel> SourceModels;
 	///<summary>HiResSourceModel</summary>

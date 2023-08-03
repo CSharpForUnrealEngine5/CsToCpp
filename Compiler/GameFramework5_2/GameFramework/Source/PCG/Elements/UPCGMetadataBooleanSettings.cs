@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Elements/Metadata/PCGMetadataBooleanOpElement.h")]
 public partial class UPCGMetadataBooleanSettings : UPCGMetadataSettingsBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>Operation</summary>
 	public EPCGMedadataBooleanOperation Operation;
 	///<summary>InputSource1</summary>

@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>MeshComponent is an abstract base for any component that is an instance of a renderable collection of triangles.</summary>
 [CppInclude("Components/MeshComponent.h")]
 public partial class UMeshComponent : UPrimitiveComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>Material overrides.</summary>
 	public TArray<UMaterialInterface> OverrideMaterials;
 	///<summary>GetMaterials</summary>

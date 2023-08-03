@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Component that provides a directional wind source. Only affects SpeedTree assets.</summary>
 [CppInclude("Components/WindDirectionalSourceComponent.h")]
 public partial class UWindDirectionalSourceComponent : USceneComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>Strength</summary>
 	public float Strength;
 	///<summary>Speed</summary>

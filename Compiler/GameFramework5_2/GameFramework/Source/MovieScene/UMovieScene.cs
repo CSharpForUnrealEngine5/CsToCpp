@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Implements a movie scene asset.</summary>
 [CppInclude("MovieScene.h")]
 public partial class UMovieScene : UMovieSceneSignedObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Data-only blueprints for all of the objects that we we&#39;re able to spawn.</summary>
 	public TArray<FMovieSceneSpawnable> Spawnables;
 	///<summary>Typed slots for already-spawned objects that we are able to control with this MovieScene</summary>

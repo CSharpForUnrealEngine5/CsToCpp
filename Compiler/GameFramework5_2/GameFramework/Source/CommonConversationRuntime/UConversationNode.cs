@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Represents a single runtime node in the conversation database.</summary>
 [CppInclude("ConversationNode.h")]
 public partial class UConversationNode : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>GetDebugParticipantColor</summary>
 	public  FLinearColor GetDebugParticipantColor(FGameplayTag ParticipantID) { return default; }
 	///<summary>EvalWorldContextObj</summary>

@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A function library that provides static/Blueprint functions for AzureSpatialAnchors.</summary>
 [CppInclude("AzureSpatialAnchorsFunctionLibrary.h")]
 public partial class UAzureSpatialAnchorsLibrary : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>Create an ASA session.</summary>
 	public static bool CreateSession() { return default; }
 	///<summary>Configure the ASA session.</summary>

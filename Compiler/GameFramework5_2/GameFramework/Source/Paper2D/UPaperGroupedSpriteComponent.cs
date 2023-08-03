@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A component that handles rendering and collision for many instances of one or more UPaperSprite assets.</summary>
 [CppInclude("PaperGroupedSpriteComponent.h")]
 public partial class UPaperGroupedSpriteComponent : UMeshComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>Array of materials used by the instances</summary>
 	public TArray<UMaterialInterface> InstanceMaterials;
 	///<summary>Array of instances</summary>

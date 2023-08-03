@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A PlayerState is created for every player on a server (or in a standalone game).</summary>
 [CppInclude("GameFramework/PlayerState.h")]
 public partial class APlayerState : AInfo {
+	public static UClass StaticClass() {return default;}
 	///<summary>Score</summary>
 	public float Score;
 	///<summary>PlayerId</summary>

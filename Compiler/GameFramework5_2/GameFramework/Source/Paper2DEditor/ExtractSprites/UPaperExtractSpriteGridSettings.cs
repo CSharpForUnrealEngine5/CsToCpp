@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("ExtractSprites/PaperExtractSpritesSettings.h")]
 public partial class UPaperExtractSpriteGridSettings : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>The width of each sprite in grid mode</summary>
 	public int CellWidth;
 	///<summary>The height of each sprite in grid mode</summary>

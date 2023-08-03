@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Materials/MaterialExpressionNoise.h")]
 public partial class UMaterialExpressionNoise : UMaterialExpression {
+	public static UClass StaticClass() {return default;}
 	///<summary>2 to 3 dimensional vector</summary>
 	public FExpressionInput Position;
 	///<summary>scalar, to clamp the Levels at pixel level, can be computed like this: max(length(ddx(Position)), length(ddy(Position))</summary>

@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("EdGraph/EdGraph.h")]
 public partial class UEdGraph : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>The schema that this graph obeys</summary>
 	public UClass Schema;
 	///<summary>Set of all nodes in this graph</summary>

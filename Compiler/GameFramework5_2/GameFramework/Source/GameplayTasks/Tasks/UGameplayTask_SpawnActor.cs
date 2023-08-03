@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Convenience task for spawning actors (optionally limiting the spawning to the network authority). If not the net authority, we will not spawn</summary>
 [CppInclude("Tasks/GameplayTask_SpawnActor.h")]
 public partial class UGameplayTask_SpawnActor : UGameplayTask {
+	public static UClass StaticClass() {return default;}
 	///<summary>Success</summary>
 	public FGameplayTaskSpawnActorDelegate Success;
 	///<summary>Called when we can&#39;t spawn: on clients or potentially on server if they fail to spawn (rare)</summary>

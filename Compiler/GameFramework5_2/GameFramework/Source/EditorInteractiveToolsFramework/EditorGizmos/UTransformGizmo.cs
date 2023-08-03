@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>UTransformGizmo provides standard Transformation Gizmo interactions,</summary>
 [CppInclude("EditorGizmos/TransformGizmo.h")]
 public partial class UTransformGizmo : UInteractiveGizmo {
+	public static UClass StaticClass() {return default;}
 	///<summary>The active target object for the Gizmo</summary>
 	public UTransformProxy ActiveTarget;
 	///<summary>The hit target object</summary>

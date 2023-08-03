@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("SplineGeneratorPanel.h")]
 public partial class URectangleSplineGenerator : USplineGeneratorBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>Length</summary>
 	public float Length;
 	///<summary>Width</summary>

@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Base class for building triggers.</summary>
 [CppInclude("InputTriggers.h")]
 public partial class UInputTrigger : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Point at which this trigger fires</summary>
 	public float ActuationThreshold;
 	///<summary>Decides whether this trigger ticks every frame or not.</summary>

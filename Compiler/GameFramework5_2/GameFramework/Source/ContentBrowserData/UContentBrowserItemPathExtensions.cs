@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("ContentBrowserItemPath.h")]
 public partial class UContentBrowserItemPathExtensions : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>Set the path being stored</summary>
 	public static void SetPath(FContentBrowserItemPath ItemPath,string InPath,EContentBrowserPathType InPathType) {}
 	///<summary>Returns virtual path as FName (eg, &quot;/All/Plugins/PluginA/MyFile&quot;).</summary>

@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A singleton UObject that is responsible for loading and unloading PrimaryAssets, and maintaining game-specific asset references</summary>
 [CppInclude("Engine/AssetManager.h")]
 public partial class UAssetManager : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>List of UObjects that are being kept from being GCd, derived from the asset type map. Arrays are currently more efficient than Sets</summary>
 	public TArray<UObject> ObjectReferenceList;
 	///<summary>True if we are running a build that is already scanning assets globally so we can perhaps avoid scanning paths synchronously</summary>

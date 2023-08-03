@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>This component may be attached to an actor to allow UI interactions to be</summary>
 [CppInclude("PixelStreamingInputComponent.h")]
 public partial class UPixelStreamingInput : UActorComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>The delegate which will be notified about a UI interaction.</summary>
 	public  void FOnInput(string Descriptor) {}
 	///<summary>OnInputEvent</summary>

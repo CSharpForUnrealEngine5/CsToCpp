@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("VariantManagerTestActor.h")]
 public partial class AVariantManagerTestActor : AActor {
+	public static UClass StaticClass() {return default;}
 	///<summary>Captured byte property</summary>
 	public EVariantManagerTestEnum EnumWithNoDefault;
 	///<summary>Captured byte property</summary>

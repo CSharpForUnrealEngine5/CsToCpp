@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("MeshTangentsTool.h")]
 public partial class UMeshTangentsToolProperties : UInteractiveToolPropertySet {
+	public static UClass StaticClass() {return default;}
 	///<summary>Method used for calculating the tangents</summary>
 	public EMeshTangentsType CalculationMethod;
 	///<summary>Display the mesh tangents</summary>

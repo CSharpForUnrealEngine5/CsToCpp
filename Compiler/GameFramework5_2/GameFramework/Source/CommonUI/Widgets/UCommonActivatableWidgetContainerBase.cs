@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Base of widgets built to manage N activatable widgets, displaying one at a time.</summary>
 [CppInclude("Widgets/CommonActivatableWidgetContainer.h")]
 public partial class UCommonActivatableWidgetContainerBase : UWidget {
+	public static UClass StaticClass() {return default;}
 	///<summary>GetActiveWidget</summary>
 	public  UCommonActivatableWidget GetActiveWidget() { return default; }
 	///<summary>ClearWidgets</summary>

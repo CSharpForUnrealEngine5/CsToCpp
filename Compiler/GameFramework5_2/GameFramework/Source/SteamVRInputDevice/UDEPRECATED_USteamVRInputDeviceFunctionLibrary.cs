@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>* SteamVR Input Extended Functions</summary>
 [CppInclude("SteamVRInputDeviceFunctionLibrary.h")]
 public partial class UDEPRECATED_USteamVRInputDeviceFunctionLibrary : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>GetFingerCurlsAndSplays</summary>
 	public static void GetFingerCurlsAndSplays(EHand Hand,FSteamVRFingerCurls FingerCurls,FSteamVRFingerSplays FingerSplays,ESkeletalSummaryDataType SummaryDataType/*=ESkeletalSummaryDataType.VR_SummaryType_FromAnimation*/) {}
 	///<summary>PlaySteamVR_HapticFeedback</summary>

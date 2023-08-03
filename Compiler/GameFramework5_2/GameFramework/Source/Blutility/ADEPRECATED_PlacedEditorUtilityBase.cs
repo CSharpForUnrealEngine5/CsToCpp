@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("PlacedEditorUtilityBase.h")]
 public partial class ADEPRECATED_PlacedEditorUtilityBase : AActor {
+	public static UClass StaticClass() {return default;}
 	///<summary>HelpText</summary>
 	public string HelpText;
 	///<summary>Returns the current selection set in the editor.  Note that for non-editor builds, this will return an empty array</summary>

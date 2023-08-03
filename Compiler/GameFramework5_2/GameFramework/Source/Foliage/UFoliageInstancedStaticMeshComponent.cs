@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("FoliageInstancedStaticMeshComponent.h")]
 public partial class UFoliageInstancedStaticMeshComponent : UHierarchicalInstancedStaticMeshComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>OnInstanceTakePointDamage</summary>
 	public FInstancePointDamageSignature OnInstanceTakePointDamage;
 	///<summary>OnInstanceTakeRadialDamage</summary>

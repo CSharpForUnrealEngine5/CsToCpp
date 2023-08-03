@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("RigEditor/IKRigEditorController.h")]
 public partial class UIKRigBoneDetails : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>SelectedBone</summary>
 	public string SelectedBone;
 	///<summary>CurrentTransform</summary>

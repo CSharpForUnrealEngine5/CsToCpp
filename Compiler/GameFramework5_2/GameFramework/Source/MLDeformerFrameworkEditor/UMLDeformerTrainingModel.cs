@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>The training model base class.</summary>
 [CppInclude("MLDeformerTrainingModel.h")]
 public partial class UMLDeformerTrainingModel : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Get the runtime ML Deformer model object.</summary>
 	public  UMLDeformerModel GetModel() { return default; }
 	///<summary>Get the number of input transforms. This is the number of bones.</summary>

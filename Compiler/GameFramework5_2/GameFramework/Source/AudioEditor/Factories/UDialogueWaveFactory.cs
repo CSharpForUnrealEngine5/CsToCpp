@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Factories/DialogueWaveFactory.h")]
 public partial class UDialogueWaveFactory : UFactory {
+	public static UClass StaticClass() {return default;}
 	///<summary>An initial sound wave to place in the newly created dialogue wave</summary>
 	public USoundWave InitialSoundWave;
 	///<summary>An initial speaking dialogue voice to place in the newly created dialogue wave</summary>

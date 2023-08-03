@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Settings for the Asset Management framework, which can be used to discover, load, and audit game-specific asset types</summary>
 [CppInclude("Engine/AssetManagerSettings.h")]
 public partial class UAssetManagerSettings : UDeveloperSettings {
+	public static UClass StaticClass() {return default;}
 	///<summary>List of asset types to scan at startup</summary>
 	public TArray<FPrimaryAssetTypeInfo> PrimaryAssetTypesToScan;
 	///<summary>List of directories to exclude from scanning for Primary Assets, useful to exclude test assets</summary>

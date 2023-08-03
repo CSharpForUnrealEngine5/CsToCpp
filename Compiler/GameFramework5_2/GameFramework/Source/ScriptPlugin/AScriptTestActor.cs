@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Test Actor. To be removed at some point.</summary>
 [CppInclude("ScriptTestActor.h")]
 public partial class AScriptTestActor : AActor {
+	public static UClass StaticClass() {return default;}
 	///<summary>TestString</summary>
 	public string TestString;
 	///<summary>TestValue</summary>

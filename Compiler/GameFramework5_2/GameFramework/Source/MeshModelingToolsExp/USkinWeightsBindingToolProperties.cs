@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("SkinWeightsBindingTool.h")]
 public partial class USkinWeightsBindingToolProperties : UInteractiveToolPropertySet {
+	public static UClass StaticClass() {return default;}
 	///<summary>CurrentBone</summary>
 	public FBoneReference CurrentBone;
 	///<summary>Binding type to use</summary>

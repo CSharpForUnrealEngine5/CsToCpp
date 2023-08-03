@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Abstract base class for media capture.</summary>
 [CppInclude("MediaCapture.h")]
 public partial class UMediaCapture : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Stop the current capture if there is one.</summary>
 	public  bool CaptureActiveSceneViewport(FMediaCaptureOptions CaptureOptions) { return default; }
 	///<summary>Stop the actual capture if there is one.</summary>

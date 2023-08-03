@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Each player that is active on the current client/listen server has a LocalPlayer.</summary>
 [CppInclude("Engine/LocalPlayer.h")]
 public partial class ULocalPlayer : UPlayer {
+	public static UClass StaticClass() {return default;}
 	///<summary>The primary viewport containing this player&#39;s view.</summary>
 	public UGameViewportClient ViewportClient;
 	///<summary>How to constrain perspective viewport FOV</summary>

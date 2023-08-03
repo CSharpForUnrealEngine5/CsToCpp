@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Kismet/BlueprintPlatformLibrary.h")]
 public partial class UBlueprintPlatformLibrary : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>Clear all pending local notifications. Typically this will be done before scheduling new notifications when going into the background</summary>
 	public static void ClearAllLocalNotifications() {}
 	///<summary>Schedule a local notification at a specific time, inLocalTime specifies the current local time or if UTC time should be used</summary>

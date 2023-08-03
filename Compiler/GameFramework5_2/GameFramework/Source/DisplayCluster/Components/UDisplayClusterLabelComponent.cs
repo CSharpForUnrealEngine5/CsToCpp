@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A label component specific to nDisplay. Displays a widget with a consistent scale facing the root actor view origin.</summary>
 [CppInclude("Components/DisplayClusterLabelComponent.h")]
 public partial class UDisplayClusterLabelComponent : USceneComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>The root actor this label needs to know about</summary>
 	public TWeakObjectPtr<ADisplayClusterRootActor> RootActor;
 	///<summary>The widget component to display for this label</summary>

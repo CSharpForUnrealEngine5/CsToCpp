@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("AnimGraphNode_LinkedInputPose.h")]
 public partial class UAnimGraphNode_LinkedInputPose : UAnimGraphNode_Base {
+	public static UClass StaticClass() {return default;}
 	///<summary>Node</summary>
 	public FAnimNode_LinkedInputPose Node;
 	///<summary>Inputs</summary>

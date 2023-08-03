@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Component used to copy the bounds of another Actor.</summary>
 [CppInclude("Components/BoundsCopyComponent.h")]
 public partial class UBoundsCopyComponent : UActorComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>Actor to copy the bounds from to set up the transform.</summary>
 	public TSoftObjectPtr<AActor> BoundsSourceActor;
 	///<summary>If true, the source actor&#39;s bounds will include its colliding components bounds.</summary>

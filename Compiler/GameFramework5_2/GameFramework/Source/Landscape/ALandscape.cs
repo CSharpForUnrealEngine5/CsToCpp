@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Landscape.h")]
 public partial class ALandscape : ALandscapeProxy {
+	public static UClass StaticClass() {return default;}
 	///<summary>RenderHeightmap</summary>
 	public  void RenderHeightmap(FTransform InWorldTransform,FBox2D InExtents,UTextureRenderTarget2D OutRenderTarget) {}
 	///<summary>Use Nanite to render landscape as a mesh on supported platforms.</summary>

@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>XR Loading Screen Function Library</summary>
 [CppInclude("XRLoadingScreenFunctionLibrary.h")]
 public partial class UXRLoadingScreenFunctionLibrary : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>SetLoadingScreen</summary>
 	public static void SetLoadingScreen(UTexture Texture,FVector2D Scale/*=new FVector2D(1.0f,1.0f)*/,FVector Offset/*=FVector.ZeroVector*/,bool bShowLoadingMovie/*=false*/,bool bShowOnSet/*=false*/) {}
 	///<summary>ClearLoadingScreenSplashes</summary>

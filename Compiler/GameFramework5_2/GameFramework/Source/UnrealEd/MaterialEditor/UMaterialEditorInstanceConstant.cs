@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("MaterialEditor/MaterialEditorInstanceConstant.h")]
 public partial class UMaterialEditorInstanceConstant : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Physical material to use for this graphics material. Used for sounds, effects etc.</summary>
 	public UPhysicalMaterial PhysMaterial;
 	///<summary>since the Parent may point across levels and the property editor needs to import this text, it must be marked lazy so it doesn&#39;t set itself to NULL in FindImportedObject</summary>

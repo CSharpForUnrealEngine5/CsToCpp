@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Properties/MeshMaterialProperties.h")]
 public partial class UMeshEditingViewProperties : UInteractiveToolPropertySet {
+	public static UClass StaticClass() {return default;}
 	///<summary>Toggle drawing of wireframe overlay on/off [Alt+W]</summary>
 	public bool bShowWireframe;
 	///<summary>Set which material to use on object</summary>

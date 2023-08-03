@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Wrapper for setting the value on a parameter of a UNiagaraScript, applied through a UUpgradeNiagaraScriptResults.</summary>
 [CppInclude("UpgradeNiagaraScriptResults.h")]
 public partial class UNiagaraPythonScriptModuleInput : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Input</summary>
 	public UNiagaraClipboardFunctionInput Input;
 	///<summary>IsSet</summary>

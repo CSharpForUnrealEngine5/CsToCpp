@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A queue is a list of jobs that have been executed, are executing and are waiting to be executed. These can be saved</summary>
 [CppInclude("MoviePipelineQueue.h")]
 public partial class UMoviePipelineQueue : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Allocates a new Job in this Queue. The Queue owns the jobs for memory management purposes,</summary>
 	public  UMoviePipelineExecutorJob AllocateNewJob(UClass InJobType) { return default; }
 	///<summary>Deletes the specified job from the Queue.</summary>

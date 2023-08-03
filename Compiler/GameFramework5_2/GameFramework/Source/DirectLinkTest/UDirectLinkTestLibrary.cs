@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("DirectLinkTestLibrary.h")]
 public partial class UDirectLinkTestLibrary : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>TestParameters</summary>
 	public static bool TestParameters() { return default; }
 	///<summary>StartReceiver</summary>

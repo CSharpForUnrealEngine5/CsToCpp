@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("GeometryScript/MeshDeformFunctions.h")]
 public partial class UGeometryScriptLibrary_MeshDeformFunctions : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>ApplyBendWarpToMesh</summary>
 	public static UDynamicMesh ApplyBendWarpToMesh(UDynamicMesh TargetMesh,FGeometryScriptBendWarpOptions Options,FTransform BendOrientation,float BendAngle/*=45f*/,float BendExtent/*=50f*/,UGeometryScriptDebug Debug/*=nullptr*/) { return default; }
 	///<summary>ApplyTwistWarpToMesh</summary>

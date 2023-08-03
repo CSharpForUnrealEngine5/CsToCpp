@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>namespace UE</summary>
 [CppInclude("InterchangeStaticMeshFactoryNode.h")]
 public partial class UInterchangeStaticMeshFactoryNode : UInterchangeMeshFactoryNode {
+	public static UClass StaticClass() {return default;}
 	///<summary>Initialize node data</summary>
 	public  void InitializeStaticMeshNode(string UniqueID,string DisplayLabel,string InAssetClass) {}
 	///<summary>Get the class this node want to create</summary>

@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("ThumbnailRendering/WorldThumbnailRenderer.h")]
 public partial class UWorldThumbnailRenderer : UDefaultSizedThumbnailRenderer {
+	public static UClass StaticClass() {return default;}
 	///<summary>Offset used to orient all worlds to show a more vertical camera, if necessary. Individual thumbnail infos can provide additional offset.</summary>
 	public float GlobalOrbitPitchOffset;
 	///<summary>Offset used to orient all worlds to face the camera in degrees when using a perspective camera. Individual thumbnail infos can provide additional offset.</summary>

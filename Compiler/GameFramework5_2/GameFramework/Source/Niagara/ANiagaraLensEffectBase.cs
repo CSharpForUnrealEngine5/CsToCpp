@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Niagara equivalent of AEmitterCameraLensEffectBase.</summary>
 [CppInclude("NiagaraLensEffectBase.h")]
 public partial class ANiagaraLensEffectBase : ANiagaraActor {
+	public static UClass StaticClass() {return default;}
 	///<summary>Relative offset from the camera (where X is out from the camera)</summary>
 	public FTransform DesiredRelativeTransform;
 	///<summary>FOVs that differ from this may cause adjustments in positioning.</summary>

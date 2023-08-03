@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("AzureSpatialAnchorsEventComponent.h")]
 public partial class UAzureSpatialAnchorsEventComponent : UActorComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>Delegates that will be cast by the ASA platform implementations.</summary>
 	public  void FASAAnchorLocatedDelegate(int WatcherIdentifier,EAzureSpatialAnchorsLocateAnchorStatus Status,UAzureCloudSpatialAnchor CloudSpatialAnchor) {}
 	///<summary>ASAAnchorLocatedDelegate</summary>

@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Container for detailing collision automated test data.</summary>
 [CppInclude("Tests/FbxAutomationCommon.h")]
 public partial class UFbxTestPlan : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Name of the Test Plan</summary>
 	public string TestPlanName;
 	///<summary>Tell the system what we want to do</summary>

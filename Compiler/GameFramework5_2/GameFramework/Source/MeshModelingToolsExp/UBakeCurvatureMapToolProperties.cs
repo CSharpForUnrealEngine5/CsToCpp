@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("BakeMeshAttributeToolCommon.h")]
 public partial class UBakeCurvatureMapToolProperties : UInteractiveToolPropertySet {
+	public static UClass StaticClass() {return default;}
 	///<summary>Type of curvature</summary>
 	public EBakeCurvatureTypeMode CurvatureType;
 	///<summary>How to map calculated curvature values to colors</summary>

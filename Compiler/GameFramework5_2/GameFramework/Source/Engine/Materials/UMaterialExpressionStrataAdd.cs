@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Materials/MaterialExpressionStrata.h")]
 public partial class UMaterialExpressionStrataAdd : UMaterialExpressionStrataBSDF {
+	public static UClass StaticClass() {return default;}
 	///<summary>Substrate material</summary>
 	public FExpressionInput A;
 	///<summary>Substrate material</summary>

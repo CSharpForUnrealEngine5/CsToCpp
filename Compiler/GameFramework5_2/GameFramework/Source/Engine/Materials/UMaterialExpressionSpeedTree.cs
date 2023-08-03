@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Materials/MaterialExpressionSpeedTree.h")]
 public partial class UMaterialExpressionSpeedTree : UMaterialExpression {
+	public static UClass StaticClass() {return default;}
 	///<summary>Defaults to &#39;WindType&#39; if not specified</summary>
 	public FExpressionInput GeometryInput;
 	///<summary>Defaults to &#39;GeometryType&#39; if not specified</summary>

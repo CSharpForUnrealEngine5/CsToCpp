@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Exporters/Exporter.h")]
 public partial class UExporter : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Supported class of this exporter</summary>
 	public UClass SupportedClass;
 	///<summary>The root scope of objects to be exported, only used if PPF_ExportsNotFullyQualfied is set</summary>

@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Replicated actor class that is responsible for instigating various cinematic assets (Media, Audio, Level Sequences) in a synchronized fasion</summary>
 [CppInclude("SequenceMediaController.h")]
 public partial class ALevelSequenceMediaController : AActor {
+	public static UClass StaticClass() {return default;}
 	///<summary>Play</summary>
 	public  void Play() {}
 	///<summary>Access this actor&#39;s media component</summary>

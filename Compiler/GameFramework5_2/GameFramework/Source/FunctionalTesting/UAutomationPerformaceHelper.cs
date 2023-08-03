@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Class for use with functional tests which provides various performance measuring features.</summary>
 [CppInclude("FunctionalTest.h")]
 public partial class UAutomationPerformaceHelper : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Begin basic stat recording</summary>
 	public  void Tick(float DeltaSeconds) {}
 	///<summary>Adds a sample to the stats counters for the current performance stats record.</summary>

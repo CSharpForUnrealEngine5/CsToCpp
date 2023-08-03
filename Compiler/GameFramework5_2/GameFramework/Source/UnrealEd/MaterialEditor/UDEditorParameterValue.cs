@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("MaterialEditor/DEditorParameterValue.h")]
 public partial class UDEditorParameterValue : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>bOverride</summary>
 	public bool bOverride;
 	///<summary>ParameterInfo</summary>

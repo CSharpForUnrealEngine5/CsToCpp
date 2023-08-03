@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("ImportTestFunctions/LevelSequenceImportTestFunctions.h")]
 public partial class ULevelSequenceImportTestFunctions : UImportTestFunctionsBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>Check whether the expected number of level sequences are imported</summary>
 	public static FInterchangeTestFunctionResult CheckLevelSequenceCount(TArray<ULevelSequence> LevelSequences,int ExpectedNumberOfLevelSequences) { return default; }
 	///<summary>Check whether the level sequence length (second) is as expected</summary>

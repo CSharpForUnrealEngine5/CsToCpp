@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Data Interface allowing sampling of static meshes.</summary>
 [CppInclude("DataInterface/NiagaraDataInterfaceStaticMesh.h")]
 public partial class UNiagaraDataInterfaceStaticMesh : UNiagaraDataInterface {
+	public static UClass StaticClass() {return default;}
 	///<summary>Controls how to retrieve the Static Mesh Component to attach to.</summary>
 	public ENDIStaticMesh_SourceMode SourceMode;
 	///<summary>Mesh used to sample from when not overridden by a source actor from the scene. Only available in editor for previewing. This is removed in cooked builds.</summary>

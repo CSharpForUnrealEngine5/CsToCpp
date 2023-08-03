@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("MeshSelectionTool.h")]
 public partial class UMeshSelectionMeshEditActions : UMeshSelectionToolActionPropertySet {
+	public static UClass StaticClass() {return default;}
 	///<summary>Delete the selected triangles</summary>
 	public  void Delete() {}
 	///<summary>Disconnected the selected triangles from their neighbours, to create mesh boundaries along the selection borders</summary>

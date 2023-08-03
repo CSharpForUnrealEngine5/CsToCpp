@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Animation/AnimSequenceBase.h")]
 public partial class UAnimSequenceBase : UAnimationAsset {
+	public static UClass StaticClass() {return default;}
 	///<summary>Animation notifies, sorted by time (earliest notification first).</summary>
 	public TArray<FAnimNotifyEvent> Notifies;
 	///<summary>SequenceLength</summary>

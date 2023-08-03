@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("GeometryScript/ListUtilityFunctions.h")]
 public partial class UGeometryScriptLibrary_ListUtilityFunctions : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>GetIndexListLength</summary>
 	public static int GetIndexListLength(FGeometryScriptIndexList IndexList) { return default; }
 	///<summary>GetIndexListLastIndex</summary>

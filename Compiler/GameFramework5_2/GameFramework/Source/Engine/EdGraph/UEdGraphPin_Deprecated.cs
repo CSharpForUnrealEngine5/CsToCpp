@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("EdGraph/EdGraphPin.h")]
 public partial class UEdGraphPin_Deprecated : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Name of this pin</summary>
 	public string PinName;
 	///<summary>Used as the display name if set</summary>

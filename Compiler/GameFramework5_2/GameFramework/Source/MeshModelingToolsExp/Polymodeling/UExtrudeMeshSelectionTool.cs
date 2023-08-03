@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Polymodeling/ExtrudeMeshSelectionTool.h")]
 public partial class UExtrudeMeshSelectionTool : USingleTargetWithSelectionTool {
+	public static UClass StaticClass() {return default;}
 	///<summary>ExtrudeProperties</summary>
 	public UExtrudeMeshSelectionToolProperties ExtrudeProperties;
 	///<summary>SourcePreview</summary>

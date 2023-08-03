@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("EnvironmentQuery/Tests/EnvQueryTest_Trace.h")]
 public partial class UEnvQueryTest_Trace : UEnvQueryTest {
+	public static UClass StaticClass() {return default;}
 	///<summary>trace data</summary>
 	public FEnvTraceData TraceData;
 	///<summary>trace direction</summary>

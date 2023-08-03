@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>GameState is a subclass of GameStateBase that behaves like a multiplayer match-based game.</summary>
 [CppInclude("GameFramework/GameState.h")]
 public partial class AGameState : AGameStateBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>What match state we are currently in</summary>
 	public string MatchState;
 	///<summary>Previous map state, used to handle if multiple transitions happen per frame</summary>

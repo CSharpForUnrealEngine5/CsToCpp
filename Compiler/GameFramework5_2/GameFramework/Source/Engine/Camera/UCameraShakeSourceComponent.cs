@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Camera/CameraShakeSourceComponent.h")]
 public partial class UCameraShakeSourceComponent : USceneComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>The attenuation profile for how camera shakes&#39; intensity falls off with distance</summary>
 	public ECameraShakeAttenuation Attenuation;
 	///<summary>Under this distance from the source, the camera shakes are at full intensity</summary>

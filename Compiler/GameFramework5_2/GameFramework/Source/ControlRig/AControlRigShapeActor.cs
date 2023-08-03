@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>An actor used to represent a rig control</summary>
 [CppInclude("ControlRigGizmoActor.h")]
 public partial class AControlRigShapeActor : AActor {
+	public static UClass StaticClass() {return default;}
 	///<summary>this is the one holding transform for the controls</summary>
 	public USceneComponent ActorRootComponent;
 	///<summary>this is visual representation of the transform</summary>

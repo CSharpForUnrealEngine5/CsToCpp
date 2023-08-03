@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Materials/MaterialInstanceDynamic.h")]
 public partial class UMaterialInstanceDynamic : UMaterialInstance {
+	public static UClass StaticClass() {return default;}
 	///<summary>Set a MID scalar (float) parameter value</summary>
 	public  void SetScalarParameterValue(string ParameterName,float Value) {}
 	///<summary>Set a MID scalar (float) parameter value using MPI (to allow access to layer parameters)</summary>

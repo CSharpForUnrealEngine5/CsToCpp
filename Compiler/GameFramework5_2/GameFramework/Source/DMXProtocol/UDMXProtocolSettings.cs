@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>DMX Project Settings.</summary>
 [CppInclude("DMXProtocolSettings.h")]
 public partial class UDMXProtocolSettings : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>DMX Input Port Configs</summary>
 	public TArray<FDMXInputPortConfig> InputPortConfigs;
 	///<summary>DMX Output Port Configs</summary>

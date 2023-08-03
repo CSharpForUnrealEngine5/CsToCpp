@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>The Slot for the UWrapBox, contains the widget that is flowed vertically</summary>
 [CppInclude("Components/WrapBoxSlot.h")]
 public partial class UWrapBoxSlot : UPanelSlot {
+	public static UClass StaticClass() {return default;}
 	///<summary>The padding area between the slot and the content it contains.</summary>
 	public FMargin Padding;
 	///<summary>If the total available space in the wrap panel drops below this threshold, this slot will attempt to fill an entire line.</summary>

@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Static function with world field evaluation</summary>
 [CppInclude("PhysicsField/PhysicsFieldComponent.h")]
 public partial class UPhysicsFieldStatics : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>Evaluate the world physics vector field from BP</summary>
 	public static FVector EvalPhysicsVectorField(UObject WorldContextObject,FVector WorldPosition,EFieldVectorType VectorType) { return default; }
 	///<summary>Evaluate the world physics scalar field from BP</summary>

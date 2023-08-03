@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("DisplayClusterConfigurationTypes.h")]
 public partial class UDisplayClusterConfigurationClusterNode : UDisplayClusterConfigurationData_Base {
+	public static UClass StaticClass() {return default;}
 	///<summary>GetViewportIds</summary>
 	public  void GetViewportIds(TArray<string> OutViewportIds) {}
 	///<summary>GetViewport</summary>

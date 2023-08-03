@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("TraceSourceFilteringSettings.h")]
 public partial class UTraceSourceFilteringSettings : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Whether or not the filtering state for all considered AActor&#39;s inside for a UWorld should be drawn using a wire frame box</summary>
 	public bool bDrawFilteringStates;
 	///<summary>Whether or not only AActor&#39;s that are not filtered out should be considered for drawing their wireframe box</summary>

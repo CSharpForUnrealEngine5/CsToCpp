@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Builders/CubeBuilder.h")]
 public partial class UCubeBuilder : UEditorBrushBuilder {
+	public static UClass StaticClass() {return default;}
 	///<summary>The size of the cube in the X dimension</summary>
 	public float X;
 	///<summary>The size of the cube in the Y dimension</summary>

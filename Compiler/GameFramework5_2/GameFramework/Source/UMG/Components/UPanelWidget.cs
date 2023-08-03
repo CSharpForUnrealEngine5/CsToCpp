@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>The base class for all UMG panel widgets.  Panel widgets layout a collection of child widgets.</summary>
 [CppInclude("Components/PanelWidget.h")]
 public partial class UPanelWidget : UWidget {
+	public static UClass StaticClass() {return default;}
 	///<summary>The slots in the widget holding the child widgets of this panel.</summary>
 	public TArray<UPanelSlot> Slots;
 	///<summary>Gets number of child widgets in the container.</summary>

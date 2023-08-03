@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Actor containing all script accessible world properties.</summary>
 [CppInclude("GameFramework/WorldSettings.h")]
 public partial class AWorldSettings : AInfo {
+	public static UClass StaticClass() {return default;}
 	///<summary>World space size of precomputed visibility cells in x and y.</summary>
 	public int VisibilityCellSize;
 	///<summary>Determines how aggressive precomputed visibility should be.</summary>

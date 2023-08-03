@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>For each static mesh to process, enables/disables Nanite build and if enabled update settings.</summary>
 [CppInclude("DataprepOperations.h")]
 public partial class UDataprepSetNaniteSettingsOperation : UDataprepOperation {
+	public static UClass StaticClass() {return default;}
 	///<summary>If checked, Nanite data will be generated</summary>
 	public bool bNaniteEnabled;
 	///<summary>Step size is 2^(-PositionPrecision) cm. MIN_int32 is auto</summary>

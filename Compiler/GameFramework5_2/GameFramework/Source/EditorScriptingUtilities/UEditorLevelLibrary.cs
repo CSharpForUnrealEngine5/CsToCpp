@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Utility class to do most of the common functionalities in the World Editor.</summary>
 [CppInclude("EditorLevelLibrary.h")]
 public partial class UEditorLevelLibrary : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>GetAllLevelActors</summary>
 	public static TArray<AActor> GetAllLevelActors() { return default; }
 	///<summary>GetAllLevelActorsComponents</summary>

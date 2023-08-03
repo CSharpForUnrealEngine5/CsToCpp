@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A sound actor that can be placed in a level</summary>
 [CppInclude("Sound/AmbientSound.h")]
 public partial class AAmbientSound : AActor {
+	public static UClass StaticClass() {return default;}
 	///<summary>Audio component that handles sound playing</summary>
 	public UAudioComponent AudioComponent;
 	///<summary>BEGIN DEPRECATED (use component functions now in level script)</summary>

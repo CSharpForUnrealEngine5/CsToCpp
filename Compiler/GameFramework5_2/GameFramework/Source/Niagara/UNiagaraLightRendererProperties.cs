@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("NiagaraLightRendererProperties.h")]
 public partial class UNiagaraLightRendererProperties : UNiagaraRendererProperties {
+	public static UClass StaticClass() {return default;}
 	///<summary>Whether or not to draw a single element for the Emitter or to draw the particles.</summary>
 	public ENiagaraRendererSourceDataMode SourceMode;
 	///<summary>Whether to use physically based inverse squared falloff from the light.  If unchecked, the value from the LightExponent binding will be used instead.</summary>

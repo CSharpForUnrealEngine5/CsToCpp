@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Materials/MaterialExpressionScalarParameter.h")]
 public partial class UMaterialExpressionScalarParameter : UMaterialExpressionParameter {
+	public static UClass StaticClass() {return default;}
 	///<summary>DefaultValue</summary>
 	public float DefaultValue;
 	///<summary>bUseCustomPrimitiveData</summary>

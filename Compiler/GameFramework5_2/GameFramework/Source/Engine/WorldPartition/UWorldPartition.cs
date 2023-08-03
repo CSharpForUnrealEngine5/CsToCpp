@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("WorldPartition/WorldPartition.h")]
 public partial class UWorldPartition : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>EditorHash</summary>
 	public UWorldPartitionEditorHash EditorHash;
 	///<summary>Class of WorldPartitionStreamingPolicy to be used to manage world partition streaming.</summary>

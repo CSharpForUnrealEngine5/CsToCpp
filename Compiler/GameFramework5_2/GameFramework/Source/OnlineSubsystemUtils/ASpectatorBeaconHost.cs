@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A beacon host used for taking reservations for an existing game session</summary>
 [CppInclude("SpectatorBeaconHost.h")]
 public partial class ASpectatorBeaconHost : AOnlineBeaconHostObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>State of the beacon</summary>
 	public USpectatorBeaconState State;
 	///<summary>Do the timeouts below cause a player to be removed from the reservation list</summary>

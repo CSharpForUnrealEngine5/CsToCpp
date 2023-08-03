@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Stores all data shared across the editor&#39;s UI.</summary>
 [CppInclude("Data/LevelSnapshotsEditorData.h")]
 public partial class ULevelSnapshotsEditorData : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>FavoriteFilters</summary>
 	public UFavoriteFilterContainer FavoriteFilters;
 	///<summary>Stores user-defined filters in chain of ORs of ANDs.</summary>

@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>UEditorActorUtilitiesSubsystem</summary>
 [CppInclude("Subsystems/EditorActorSubsystem.h")]
 public partial class UEditorActorSubsystem : UEditorSubsystem {
+	public static UClass StaticClass() {return default;}
 	///<summary>OnNewActorsDropped</summary>
 	public FOnEditNewActorsDropped OnNewActorsDropped;
 	///<summary>OnNewActorsPlaced</summary>

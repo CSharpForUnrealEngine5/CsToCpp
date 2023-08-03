@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("ViewModels/HierarchyEditor/NiagaraHierarchyViewModelBase.h")]
 public partial class UNiagaraHierarchyItemBase : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Children</summary>
 	public TArray<UNiagaraHierarchyItemBase> Children;
 	///<summary>Identity</summary>

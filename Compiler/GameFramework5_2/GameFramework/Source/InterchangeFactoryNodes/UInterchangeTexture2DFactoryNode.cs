@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>ns UE::Interchange</summary>
 [CppInclude("InterchangeTexture2DFactoryNode.h")]
 public partial class UInterchangeTexture2DFactoryNode : UInterchangeTextureFactoryNode {
+	public static UClass StaticClass() {return default;}
 	///<summary>Return false if the Attribute was not set previously.</summary>
 	public  bool GetCustomAddressX(TextureAddress AttributeValue) { return default; }
 	///<summary>SetCustomAddressX</summary>

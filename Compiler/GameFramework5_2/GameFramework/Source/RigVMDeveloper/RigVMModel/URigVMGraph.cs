@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>The Graph represents a Function definition</summary>
 [CppInclude("RigVMModel/RigVMGraph.h")]
 public partial class URigVMGraph : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Returns all of the Nodes within this Graph.</summary>
 	public  TArray<URigVMNode> GetNodes() { return default; }
 	///<summary>Returns all of the Links within this Graph.</summary>

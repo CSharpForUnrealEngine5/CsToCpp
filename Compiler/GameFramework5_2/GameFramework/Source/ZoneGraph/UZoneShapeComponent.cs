@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("ZoneShapeComponent.h")]
 public partial class UZoneShapeComponent : UPrimitiveComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>@return Shape type.</summary>
 	public  FZoneShapeType GetShapeType() { return default; }
 	///<summary>Sets shape type.</summary>

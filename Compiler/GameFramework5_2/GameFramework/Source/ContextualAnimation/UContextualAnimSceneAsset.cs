@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("ContextualAnimSceneAsset.h")]
 public partial class UContextualAnimSceneAsset : UDataAsset {
+	public static UClass StaticClass() {return default;}
 	///<summary>GetRoles</summary>
 	public  TArray<string> GetRoles() { return default; }
 	///<summary>GetAlignmentPointsForSecondaryRole</summary>

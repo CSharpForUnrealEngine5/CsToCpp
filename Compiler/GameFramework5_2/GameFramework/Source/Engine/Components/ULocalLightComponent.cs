@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A light component which emits light from a single point equally in all directions.</summary>
 [CppInclude("Components/LocalLightComponent.h")]
 public partial class ULocalLightComponent : ULightComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>Units used for the intensity.</summary>
 	public ELightUnits IntensityUnits;
 	///<summary>Blend Factor used to blend between Intensity and Intensity/Exposure.</summary>

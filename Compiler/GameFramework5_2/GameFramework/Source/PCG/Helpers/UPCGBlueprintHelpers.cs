@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Helpers/PCGBlueprintHelpers.h")]
 public partial class UPCGBlueprintHelpers : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>ComputeSeedFromPosition</summary>
 	public static int ComputeSeedFromPosition(FVector InPosition) { return default; }
 	///<summary>SetSeedFromPosition</summary>

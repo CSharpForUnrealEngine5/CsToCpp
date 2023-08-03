@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Represents a camera viewpoint and settings, such as projection type, field of view, and post-process overrides.</summary>
 [CppInclude("Camera/CameraComponent.h")]
 public partial class UCameraComponent : USceneComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>The horizontal field of view (in degrees) in perspective mode (ignored in Orthographic mode)</summary>
 	public float FieldOfView;
 	///<summary>SetFieldOfView</summary>

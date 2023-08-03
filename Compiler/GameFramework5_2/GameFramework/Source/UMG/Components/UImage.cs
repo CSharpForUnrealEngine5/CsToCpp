@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>The image widget allows you to display a Slate Brush, or texture or material in the UI.</summary>
 [CppInclude("Components/Image.h")]
 public partial class UImage : UWidget {
+	public static UClass StaticClass() {return default;}
 	///<summary>Image to draw</summary>
 	public FSlateBrush Brush;
 	///<summary>A bindable delegate for the Image.</summary>

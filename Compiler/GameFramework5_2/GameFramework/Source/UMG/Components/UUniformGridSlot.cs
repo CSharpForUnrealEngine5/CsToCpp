@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A slot for UUniformGridPanel, these slots all share the same size as the largest slot</summary>
 [CppInclude("Components/UniformGridSlot.h")]
 public partial class UUniformGridSlot : UPanelSlot {
+	public static UClass StaticClass() {return default;}
 	///<summary>The alignment of the object horizontally.</summary>
 	public EHorizontalAlignment HorizontalAlignment;
 	///<summary>The alignment of the object vertically.</summary>

@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Preferences/UnrealEdOptions.h")]
 public partial class UUnrealEdOptions : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Categories of commands.</summary>
 	public TArray<FEditorCommandCategory> EditorCategories;
 	///<summary>Commands that can be bound to in the editor.</summary>

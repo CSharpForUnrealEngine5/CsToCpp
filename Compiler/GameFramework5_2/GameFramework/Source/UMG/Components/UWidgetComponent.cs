@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>The widget component provides a surface in the 3D environment on which to render widgets normally rendered to the screen.</summary>
 [CppInclude("Components/WidgetComponent.h")]
 public partial class UWidgetComponent : UMeshComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>Returns the user widget object displayed by this component</summary>
 	public  UUserWidget GetUserWidgetObject() { return default; }
 	///<summary>Returns the render target to which the user widget is rendered</summary>

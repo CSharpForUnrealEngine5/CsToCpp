@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Kismet/BlueprintSetLibrary.h")]
 public partial class UBlueprintSetLibrary : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>Adds item to set</summary>
 	public static void Set_Add(TSet<int> TargetSet,int NewItem) {}
 	///<summary>Adds all elements from an Array to a Set</summary>

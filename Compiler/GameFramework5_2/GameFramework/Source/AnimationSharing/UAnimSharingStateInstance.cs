@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("AnimationSharingInstances.h")]
 public partial class UAnimSharingStateInstance : UAnimInstance {
+	public static UClass StaticClass() {return default;}
 	///<summary>AnimationToPlay</summary>
 	public UAnimSequence AnimationToPlay;
 	///<summary>PermutationTimeOffset</summary>

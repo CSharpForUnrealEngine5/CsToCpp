@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("IVPBookmarkProvider.h")]
 public partial class UVPBookmarkProvider : UInterface {
+	public static UClass StaticClass() {return default;}
 	///<summary>OnBookmarkActivation</summary>
 	public  void OnBookmarkActivation(UVPBookmark Bookmark,bool bActivate) {}
 	///<summary>OnBookmarkChanged</summary>

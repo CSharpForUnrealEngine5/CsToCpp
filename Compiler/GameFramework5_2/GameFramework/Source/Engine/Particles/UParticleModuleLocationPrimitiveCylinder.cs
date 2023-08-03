@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Particles/Location/ParticleModuleLocationPrimitiveCylinder.h")]
 public partial class UParticleModuleLocationPrimitiveCylinder : UParticleModuleLocationPrimitiveBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>If true, get the particle velocity form the radial distance inside the primitive.</summary>
 	public bool RadialVelocity;
 	///<summary>The radius of the cylinder.</summary>

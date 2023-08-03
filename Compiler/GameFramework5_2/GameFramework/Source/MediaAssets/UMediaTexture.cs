@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Implements a texture asset for rendering video tracks from UMediaPlayer assets.</summary>
 [CppInclude("MediaTexture.h")]
 public partial class UMediaTexture : UTexture {
+	public static UClass StaticClass() {return default;}
 	///<summary>The addressing mode to use for the X axis.</summary>
 	public TextureAddress AddressX;
 	///<summary>The addressing mode to use for the Y axis.</summary>

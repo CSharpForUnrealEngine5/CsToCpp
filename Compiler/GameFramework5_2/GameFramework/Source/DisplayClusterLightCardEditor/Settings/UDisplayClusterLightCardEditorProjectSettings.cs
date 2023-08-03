@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Default settings shared across users of the project</summary>
 [CppInclude("Settings/DisplayClusterLightCardEditorSettings.h")]
 public partial class UDisplayClusterLightCardEditorProjectSettings : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>The default path to save new light card templates</summary>
 	public FDirectoryPath LightCardTemplateDefaultPath;
 	///<summary>The default template to use when creating a new light card</summary>

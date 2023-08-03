@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("LiveLinkBlueprintLibrary.h")]
 public partial class ULiveLinkBlueprintLibrary : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>Returns the value of a property stored in the Subject Frame</summary>
 	public static bool GetPropertyValue(FLiveLinkBasicBlueprintData BasicData,string PropertyName,float Value) { return default; }
 	///<summary>Returns the float curves stored in the Subject Frame as a map</summary>

@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Implements Editor settings for experimental features.</summary>
 [CppInclude("Settings/EditorExperimentalSettings.h")]
 public partial class UEditorExperimentalSettings : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Enable async texture compilation to improve PIE and map load time performance when compilation is required</summary>
 	public bool bEnableAsyncTextureCompilation;
 	///<summary>Enable async static mesh compilation to improve import and map load time performance when compilation is required</summary>

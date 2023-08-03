@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>World subsystem that holds global objects for handling camera animation sequences.</summary>
 [CppInclude("GameplayCamerasSubsystem.h")]
 public partial class UGameplayCamerasSubsystem : UWorldSubsystem {
+	public static UClass StaticClass() {return default;}
 	///<summary>Play a new camera animation sequence.</summary>
 	public  FCameraAnimationHandle PlayCameraAnimation(APlayerController PlayerController,UCameraAnimationSequence Sequence,FCameraAnimationParams Params) { return default; }
 	///<summary>Returns whether the given camera animation is playing.</summary>

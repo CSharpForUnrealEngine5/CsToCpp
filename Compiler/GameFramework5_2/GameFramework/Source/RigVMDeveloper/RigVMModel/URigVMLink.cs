@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>The Link represents a connection between two Pins</summary>
 [CppInclude("RigVMModel/RigVMLink.h")]
 public partial class URigVMLink : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Returns the current index of this Link within its owning Graph.</summary>
 	public  int GetLinkIndex() { return default; }
 	///<summary>Returns the Link&#39;s owning Graph/</summary>

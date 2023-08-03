@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("NearestNeighborTrainingModel.h")]
 public partial class UNearestNeighborTrainingModel : UMLDeformerTrainingModel {
+	public static UClass StaticClass() {return default;}
 	///<summary>Main training function, with implementation in python.</summary>
 	public  int Train() { return default; }
 	///<summary>UpdateNearestNeighborData</summary>

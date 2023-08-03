@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A section for use with the movie scene level visibility track, which controls streamed level visibility.</summary>
 [CppInclude("Sections/MovieSceneLevelVisibilitySection.h")]
 public partial class UMovieSceneLevelVisibilitySection : UMovieSceneSection {
+	public static UClass StaticClass() {return default;}
 	///<summary>GetVisibility</summary>
 	public  ELevelVisibility GetVisibility() { return default; }
 	///<summary>SetVisibility</summary>

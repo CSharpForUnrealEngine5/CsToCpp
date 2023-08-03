@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>URootMotionModifier</summary>
 [CppInclude("RootMotionModifier.h")]
 public partial class URootMotionModifier : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Source of the root motion we are warping</summary>
 	public TWeakObjectPtr<UAnimSequenceBase> Animation;
 	///<summary>Start time of the warping window</summary>

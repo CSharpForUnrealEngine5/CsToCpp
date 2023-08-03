@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("GameFramework/EngineMessage.h")]
 public partial class UEngineMessage : ULocalMessage {
+	public static UClass StaticClass() {return default;}
 	///<summary>Message displayed in message dialog when player pawn fails to spawn because no playerstart was available.</summary>
 	public string FailedPlaceMessage;
 	///<summary>Message when player join attempt is refused because the server is at capacity.</summary>

@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Class representing the source for a UComputeKernel</summary>
 [CppInclude("ComputeFramework/ComputeKernelSource.h")]
 public partial class UComputeKernelSource : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Kernel entry point.</summary>
 	public string EntryPoint;
 	///<summary>Kernel group size.</summary>

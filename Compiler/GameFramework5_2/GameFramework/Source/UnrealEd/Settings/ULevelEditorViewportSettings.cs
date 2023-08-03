@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Implements the Level Editor&#39;s view port settings.</summary>
 [CppInclude("Settings/LevelEditorViewportSettings.h")]
 public partial class ULevelEditorViewportSettings : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Enable the use of flight camera controls under various circumstances.</summary>
 	public EWASDType FlightCameraControlType;
 	///<summary>Enable the use of the experimental navigation in the flight camera controls.</summary>

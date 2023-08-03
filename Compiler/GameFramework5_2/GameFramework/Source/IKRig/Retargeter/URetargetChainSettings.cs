@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Retargeter/IKRetargeter.h")]
 public partial class URetargetChainSettings : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>The chain on the Source IK Rig asset to copy animation FROM.</summary>
 	public string SourceChain;
 	///<summary>The chain on the Target IK Rig asset to copy animation TO.</summary>

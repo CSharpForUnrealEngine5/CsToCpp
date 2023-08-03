@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>This subsystem is intended for use when rendering in a shipping game (but can also be used in PIE</summary>
 [CppInclude("MoviePipelineQueueEngineSubsystem.h")]
 public partial class UMoviePipelineQueueEngineSubsystem : UEngineSubsystem {
+	public static UClass StaticClass() {return default;}
 	///<summary>Returns the queue of Movie Pipelines that need to be rendered.</summary>
 	public  UMoviePipelineQueue GetQueue() { return default; }
 	///<summary>Returns the active executor (if there is one). This can be used to subscribe to events on an already in-progress render. May be null.</summary>

@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("MotionWarpingComponent.h")]
 public partial class UMotionWarpingComponent : UActorComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>Whether to look inside animations within montage when looking for warping windows</summary>
 	public bool bSearchForWindowsInAnimsWithinMontages;
 	///<summary>Event called before Root Motion Modifiers are updated</summary>

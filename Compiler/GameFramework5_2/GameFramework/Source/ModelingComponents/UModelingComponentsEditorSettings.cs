@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Editor preferences for the Modeling Components plug-in.</summary>
 [CppInclude("ModelingComponentsSettings.h")]
 public partial class UModelingComponentsEditorSettings : UDeveloperSettings {
+	public static UClass StaticClass() {return default;}
 	///<summary>The type of grid to draw in the viewport for modeling mode tools</summary>
 	public EModelingComponentsPlaneVisualizationMode GridMode;
 	///<summary>The number of lines to be drawn for the plane</summary>

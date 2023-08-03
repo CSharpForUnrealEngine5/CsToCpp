@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Exposes operations to be performed on anim node contexts</summary>
 [CppInclude("LinkedAnimGraphLibrary.h")]
 public partial class ULinkedAnimGraphLibrary : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>Get a linked anim graph reference from an anim node reference</summary>
 	public static FLinkedAnimGraphReference ConvertToLinkedAnimGraph(FAnimNodeReference Node,EAnimNodeReferenceConversionResult Result) { return default; }
 	///<summary>Get a linked anim graph reference from an anim node reference (pure)</summary>

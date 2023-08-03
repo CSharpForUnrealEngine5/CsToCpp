@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Materials/MaterialExpressionSphereMask.h")]
 public partial class UMaterialExpressionSphereMask : UMaterialExpression {
+	public static UClass StaticClass() {return default;}
 	///<summary>1 to 4 dimensional vector, should be the same type as B</summary>
 	public FExpressionInput A;
 	///<summary>1 to 4 dimensional vector, should be the same type as A</summary>

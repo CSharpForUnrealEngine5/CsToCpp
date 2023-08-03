@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Editor only data for systems.</summary>
 [CppInclude("NiagaraSystemEditorData.h")]
 public partial class UNiagaraSystemEditorData : UNiagaraEditorDataBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>If true then the preview viewport&#39;s orbit setting is saved in the asset data</summary>
 	public bool bSetOrbitModeByAsset;
 	///<summary>bSystemViewportInOrbitMode</summary>

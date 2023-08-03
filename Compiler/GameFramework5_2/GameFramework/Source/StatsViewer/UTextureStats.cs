@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Statistics page for textures.</summary>
 [CppInclude("TextureStats.h")]
 public partial class UTextureStats : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Texture - click to go to asset</summary>
 	public TWeakObjectPtr<UTexture> Texture;
 	///<summary>Actor(s) - click to select &amp; zoom Actor(s)</summary>

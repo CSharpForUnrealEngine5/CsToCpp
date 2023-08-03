@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("LiveLinkComponentController.h")]
 public partial class ULiveLinkComponentController : UActorComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>SubjectRepresentation</summary>
 	public FLiveLinkSubjectRepresentation SubjectRepresentation;
 	///<summary>Controller_DEPRECATED</summary>

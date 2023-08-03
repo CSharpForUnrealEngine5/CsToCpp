@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>SubUV animation asset, which caches bounding geometry for regions in the SubUVTexture with non-zero opacity.</summary>
 [CppInclude("Particles/SubUVAnimation.h")]
 public partial class USubUVAnimation : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Texture to generate bounding geometry from.</summary>
 	public UTexture2D SubUVTexture;
 	///<summary>The number of sub-images horizontally in the texture</summary>

@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Curves/CurveVector.h")]
 public partial class UCurveVector : UCurveBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>Keyframe data, one curve for X, Y and Z</summary>
 	public FRichCurve FloatCurves;
 	///<summary>Evaluate this float curve at the specified time</summary>

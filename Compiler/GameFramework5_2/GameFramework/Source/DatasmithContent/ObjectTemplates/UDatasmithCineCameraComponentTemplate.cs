@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("ObjectTemplates/DatasmithCineCameraComponentTemplate.h")]
 public partial class UDatasmithCineCameraComponentTemplate : UDatasmithObjectTemplate {
+	public static UClass StaticClass() {return default;}
 	///<summary>FilmbackSettings</summary>
 	public FDatasmithCameraFilmbackSettingsTemplate FilmbackSettings;
 	///<summary>LensSettings</summary>

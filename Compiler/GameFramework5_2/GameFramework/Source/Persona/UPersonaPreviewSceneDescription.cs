@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("PersonaPreviewSceneDescription.h")]
 public partial class UPersonaPreviewSceneDescription : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>The method by which the preview is animated</summary>
 	public UClass PreviewController;
 	///<summary>PreviewControllerInstance</summary>

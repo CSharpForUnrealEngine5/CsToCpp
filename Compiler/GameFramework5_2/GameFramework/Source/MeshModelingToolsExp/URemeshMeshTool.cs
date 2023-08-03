@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Simple Mesh Remeshing Tool</summary>
 [CppInclude("RemeshMeshTool.h")]
 public partial class URemeshMeshTool : UMultiSelectionMeshEditingTool {
+	public static UClass StaticClass() {return default;}
 	///<summary>BasicProperties</summary>
 	public URemeshMeshToolProperties BasicProperties;
 	///<summary>MeshStatisticsProperties</summary>

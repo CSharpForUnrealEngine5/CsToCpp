@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>/</summary>
 [CppInclude("ConversationDatabase.h")]
 public partial class UConversationDatabase : UPrimaryDataAsset {
+	public static UClass StaticClass() {return default;}
 	///<summary>Compiled: Entry points</summary>
 	public int CompilerVersion;
 	///<summary>Compiled: Reachable nodes</summary>

@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("FunctionalTestingManager.h")]
 public partial class UFunctionalTestingManager : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>TestsLeft</summary>
 	public TArray<AFunctionalTest> TestsLeft;
 	///<summary>AllTests</summary>

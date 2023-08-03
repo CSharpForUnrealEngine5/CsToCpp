@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("NiagaraNodeAssignment.h")]
 public partial class UNiagaraNodeAssignment : UNiagaraNodeFunctionCall {
+	public static UClass StaticClass() {return default;}
 	///<summary>AssignmentTarget_DEPRECATED</summary>
 	public FNiagaraVariable AssignmentTarget_DEPRECATED;
 	///<summary>AssignmentDefaultValue_DEPRECATED</summary>

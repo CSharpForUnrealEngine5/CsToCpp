@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("BehaviorTree/TestBTTask_LatentWithFlags.h")]
 public partial class UTestBTTask_LatentWithFlags : UBTTaskNode {
+	public static UClass StaticClass() {return default;}
 	///<summary>LogIndexExecuteStart</summary>
 	public int LogIndexExecuteStart;
 	///<summary>LogIndexExecuting</summary>

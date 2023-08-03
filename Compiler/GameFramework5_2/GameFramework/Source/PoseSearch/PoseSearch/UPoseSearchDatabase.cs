@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A data asset for indexing a collection of animation sequences.</summary>
 [CppInclude("PoseSearch/PoseSearchDatabase.h")]
 public partial class UPoseSearchDatabase : UPoseSearchSearchableAsset {
+	public static UClass StaticClass() {return default;}
 	///<summary>Motion Database Config asset to use with this database.</summary>
 	public UPoseSearchSchema Schema;
 	///<summary>ExtrapolationParameters</summary>

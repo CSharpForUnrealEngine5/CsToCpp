@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Abstract base class of container object encapsulating data required for streaming and providing</summary>
 [CppInclude("Engine/LevelStreaming.h")]
 public partial class ULevelStreaming : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Deprecated name of the package containing the level to load. Use GetWorldAsset() or GetWorldAssetPackageFName() instead.</summary>
 	public string PackageName_DEPRECATED;
 	///<summary>The reference to the world containing the level to load</summary>

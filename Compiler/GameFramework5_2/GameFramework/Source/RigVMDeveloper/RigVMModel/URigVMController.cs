@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>The Controller is the sole authority to perform changes</summary>
 [CppInclude("RigVMModel/RigVMController.h")]
 public partial class URigVMController : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Returns the currently edited Graph of this controller.</summary>
 	public  URigVMGraph GetGraph() { return default; }
 	///<summary>Sets the currently edited Graph of this controller.</summary>

@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("StereoCapturePawn.h")]
 public partial class AStereoCapturePawn : ADefaultPawn {
+	public static UClass StaticClass() {return default;}
 	///<summary>UpdateStereoAtlas</summary>
 	public  void UpdateStereoAtlas(UObject WorldContextObject,FLatentActionInfo LatentInfo) {}
 	///<summary>LeftEyeAtlas</summary>

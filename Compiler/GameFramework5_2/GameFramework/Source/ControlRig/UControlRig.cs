@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Runs logic for mapping input data to transforms (the &quot;Rig&quot;)</summary>
 [CppInclude("ControlRig.h")]
 public partial class UControlRig : URigVMHost {
+	public static UClass StaticClass() {return default;}
 	///<summary>To support Blueprints/scripting, we need a different delegate type (a &#39;Dynamic&#39; delegate) which supports looser style UFunction binding (using names).</summary>
 	public  void FOnControlSelectedBP(UControlRig Rig,FRigControlElement Control,bool bSelected) {}
 	///<summary>FindControlRigs</summary>

@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>* UDatasmithVariantSetElement</summary>
 [CppInclude("ObjectElements/DatasmithUObjectElements.h")]
 public partial class UDatasmithVariantSetElement : UDatasmithObjectElement {
+	public static UClass StaticClass() {return default;}
 	///<summary>Create a new variant and add it to the parent variant set</summary>
 	public  UDatasmithVariantElement CreateVariant(string InElementName) { return default; }
 	///<summary>Adds an existing variant to this variant set</summary>

@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Engine/PoseWatch.h")]
 public partial class UPoseWatchElement : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>If true will draw the node to the view port.</summary>
 	public bool bIsVisible;
 	///<summary>bHasColor</summary>

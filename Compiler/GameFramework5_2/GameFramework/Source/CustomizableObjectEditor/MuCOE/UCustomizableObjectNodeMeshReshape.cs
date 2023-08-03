@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("MuCOE/Nodes/CustomizableObjectNodeMeshReshape.h")]
 public partial class UCustomizableObjectNodeMeshReshape : UCustomizableObjectNode {
+	public static UClass StaticClass() {return default;}
 	///<summary>Enable the deformation of the skeleton of the base mesh.</summary>
 	public bool bReshapeSkeleton;
 	///<summary>Enable the deformation of physics volumes of the base mesh</summary>

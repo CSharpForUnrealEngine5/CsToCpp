@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>An instance of Color Correction Region. Used to aggregate all active regions.</summary>
 [CppInclude("ColorCorrectRegion.h")]
 public partial class AColorCorrectRegion : AActor {
+	public static UClass StaticClass() {return default;}
 	///<summary>Region type.</summary>
 	public EColorCorrectRegionsType Type;
 	///<summary>Render priority/order. The higher the number the later region will be applied.</summary>

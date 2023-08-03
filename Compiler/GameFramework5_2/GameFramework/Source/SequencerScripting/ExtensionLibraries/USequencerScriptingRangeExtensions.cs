@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Function library containing methods that should be hoisted onto FSequencerScriptingRanges</summary>
 [CppInclude("ExtensionLibraries/SequencerScriptingRangeExtensions.h")]
 public partial class USequencerScriptingRangeExtensions : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>Check whether this range has a start</summary>
 	public static bool HasStart(FSequencerScriptingRange Range) { return default; }
 	///<summary>Check whether this range has an end</summary>

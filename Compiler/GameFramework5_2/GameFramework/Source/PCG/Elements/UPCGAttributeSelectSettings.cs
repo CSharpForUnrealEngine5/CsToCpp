@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Take all the entries/points from the input and perform a select operation on the given attribute/property on the given axis</summary>
 [CppInclude("Elements/PCGAttributeSelectElement.h")]
 public partial class UPCGAttributeSelectSettings : UPCGSettings {
+	public static UClass StaticClass() {return default;}
 	///<summary>InputSource</summary>
 	public FPCGAttributePropertySelector InputSource;
 	///<summary>OutputAttributeName</summary>

@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>An asset that points to an object to be detected in a scene</summary>
 [CppInclude("ARTypes.h")]
 public partial class UARCandidateObject : UDataAsset {
+	public static UClass StaticClass() {return default;}
 	///<summary>See: CandidateObjectData</summary>
 	public  TArray<byte> GetCandidateObjectData() { return default; }
 	///<summary>SetCandidateObjectData</summary>

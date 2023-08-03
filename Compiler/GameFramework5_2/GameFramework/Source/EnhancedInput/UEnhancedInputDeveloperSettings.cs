@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Developer settings for Enhanced Input</summary>
 [CppInclude("EnhancedInputDeveloperSettings.h")]
 public partial class UEnhancedInputDeveloperSettings : UDeveloperSettingsBackedByCVars {
+	public static UClass StaticClass() {return default;}
 	///<summary>Array of any input mapping contexts that you want to be applied by default to the Enhanced Input local player subsystem.</summary>
 	public TArray<FDefaultContextSetting> DefaultMappingContexts;
 	///<summary>Array of any input mapping contexts that you want to be applied by default to the Enhanced Input world subsystem.</summary>

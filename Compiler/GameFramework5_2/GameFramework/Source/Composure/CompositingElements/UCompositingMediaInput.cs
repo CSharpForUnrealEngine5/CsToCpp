@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("CompositingElements/CompositingElementInputs.h")]
 public partial class UCompositingMediaInput : UCompositingElementInput {
+	public static UClass StaticClass() {return default;}
 	///<summary>MediaTransformMaterial</summary>
 	public FCompositingMaterial MediaTransformMaterial;
 	///<summary>DefaultMaterial</summary>

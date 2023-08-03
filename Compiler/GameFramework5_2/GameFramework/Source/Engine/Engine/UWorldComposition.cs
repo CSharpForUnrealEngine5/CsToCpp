@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>WorldComposition represents world structure:</summary>
 [CppInclude("Engine/WorldComposition.h")]
 public partial class UWorldComposition : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Streaming level objects for each tile</summary>
 	public TArray<ULevelStreaming> TilesStreaming;
 	///<summary>Time threshold between tile streaming state changes</summary>

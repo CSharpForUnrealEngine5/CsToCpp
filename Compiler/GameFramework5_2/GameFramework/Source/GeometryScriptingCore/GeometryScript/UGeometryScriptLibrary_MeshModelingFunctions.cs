@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("GeometryScript/MeshModelingFunctions.h")]
 public partial class UGeometryScriptLibrary_MeshModelingFunctions : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>Disconnect the triangles of TargetMesh identified by the Selection.</summary>
 	public static UDynamicMesh ApplyMeshDisconnectFaces(UDynamicMesh TargetMesh,FGeometryScriptMeshSelection Selection,bool bAllowBowtiesInOutput/*=true*/,UGeometryScriptDebug Debug/*=nullptr*/) { return default; }
 	///<summary>Duplicate the triangles of TargetMesh identified by the Selection</summary>

@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("ObjectTemplates/DatasmithSceneComponentTemplate.h")]
 public partial class UDatasmithSceneComponentTemplate : UDatasmithObjectTemplate {
+	public static UClass StaticClass() {return default;}
 	///<summary>RelativeTransform</summary>
 	public FTransform RelativeTransform;
 	///<summary>Mobility</summary>

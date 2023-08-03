@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>UV projection tool</summary>
 [CppInclude("UVProjectionTool.h")]
 public partial class UUVProjectionTool : USingleTargetWithSelectionTool {
+	public static UClass StaticClass() {return default;}
 	///<summary>UVChannelProperties</summary>
 	public UMeshUVChannelProperties UVChannelProperties;
 	///<summary>BasicProperties</summary>

@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>USpotLightGizmo provides a gizmo to allow for editing spot light properties in viewport</summary>
 [CppInclude("SpotLightGizmo.h")]
 public partial class USpotLightGizmo : UInteractiveGizmo {
+	public static UClass StaticClass() {return default;}
 	///<summary>The current target light the gizmo is attached to</summary>
 	public ASpotLight LightActor;
 	///<summary>World</summary>

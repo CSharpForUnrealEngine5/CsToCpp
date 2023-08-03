@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Defines how a sound oscillates</summary>
 [CppInclude("Sound/SoundNodeOscillator.h")]
 public partial class USoundNodeOscillator : USoundNode {
+	public static UClass StaticClass() {return default;}
 	///<summary>Whether to oscillate volume.</summary>
 	public bool bModulateVolume;
 	///<summary>Whether to oscillate pitch.</summary>

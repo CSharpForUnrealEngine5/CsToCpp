@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Engine/SCS_Node.h")]
 public partial class USCS_Node : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Component class</summary>
 	public UClass ComponentClass;
 	///<summary>Template for the component to create</summary>

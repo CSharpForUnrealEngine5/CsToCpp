@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Allows in-engine playback of incoming WebRTC audio from a particular Pixel Streaming player/peer using their mic in the browser.</summary>
 [CppInclude("PixelStreamingAudioComponent.h")]
 public partial class UPixelStreamingAudioComponent : USynthComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>The Pixel Streaming streamer of the player that we wish to listen to.</summary>
 	public string StreamerToHear;
 	///<summary>The Pixel Streaming player/peer whose audio we wish to listen to.</summary>

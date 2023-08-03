@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Forward Declare</summary>
 [CppInclude("MoviePipelineAppleProResOutput.h")]
 public partial class UMoviePipelineAppleProResOutput : UMoviePipelineVideoOutputBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>Which Apple ProRes codec should we use? See Apple documentation for more specifics. Uses Rec 709 color primaries.</summary>
 	public EAppleProResEncoderCodec Codec;
 	///<summary>Should the embedded timecode track be written using drop-frame format? Only applicable if the sequence framerate is 29.97</summary>

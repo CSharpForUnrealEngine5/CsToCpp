@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("GeometryScript/ShapeFunctions.h")]
 public partial class UGeometryScriptLibrary_TransformFunctions : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>Create a Transform at the given Location, with the ZAxis vector as the Z axis</summary>
 	public static FTransform MakeTransformFromZAxis(FVector Location,FVector ZAxis) { return default; }
 	///<summary>Create a Transform at the given Location, with the ZAxis vector as the Z axis</summary>

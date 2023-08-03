@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("CompositingElements/CompositingElementTransforms.h")]
 public partial class UCompositingTonemapPass : UCompositingElementTransform {
+	public static UClass StaticClass() {return default;}
 	///<summary>Color grading settings.</summary>
 	public FColorGradingSettings ColorGradingSettings;
 	///<summary>Film stock settings.</summary>

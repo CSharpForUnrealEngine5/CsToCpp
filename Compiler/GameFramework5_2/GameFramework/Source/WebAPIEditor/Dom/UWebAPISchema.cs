@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Describes the intermediate structure from which to generate code.</summary>
 [CppInclude("Dom/WebAPISchema.h")]
 public partial class UWebAPISchema : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Name of the API.</summary>
 	public string APIName;
 	///<summary>The API version can be any arbitrary string that is useful if there are several versions.</summary>

@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("AssetPlacementSettings.h")]
 public partial class UAssetPlacementSettings : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Set to true if the tool should automatically align placement to an axis.</summary>
 	public bool bAlignToNormal;
 	///<summary>The axis which the tool should use for alignment calculations. This axis is positive unless Invert Normal Axis is set.</summary>

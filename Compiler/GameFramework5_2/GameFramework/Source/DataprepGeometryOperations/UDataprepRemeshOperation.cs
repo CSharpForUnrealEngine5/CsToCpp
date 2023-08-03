@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Experimental - Remesh input meshes</summary>
 [CppInclude("DataprepGeometryOperations.h")]
 public partial class UDataprepRemeshOperation : UDataprepEditingOperation {
+	public static UClass StaticClass() {return default;}
 	///<summary>Target triangle count</summary>
 	public int TargetTriangleCount;
 	///<summary>Amount of Vertex Smoothing applied within Remeshing</summary>

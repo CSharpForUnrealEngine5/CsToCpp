@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>An audio meter widget.</summary>
 [CppInclude("AudioMeter.h")]
 public partial class UAudioMeter : UWidget {
+	public static UClass StaticClass() {return default;}
 	///<summary>FGetMeterChannelInfo</summary>
 	public  TArray<FMeterChannelInfo> FGetMeterChannelInfo() { return default; }
 	///<summary>The current meter value to display.</summary>

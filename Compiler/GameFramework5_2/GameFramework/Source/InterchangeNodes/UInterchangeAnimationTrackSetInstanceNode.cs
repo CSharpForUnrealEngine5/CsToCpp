@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Class to represent an animation which instances another animation track set node</summary>
 [CppInclude("InterchangeAnimationTrackSetNode.h")]
 public partial class UInterchangeAnimationTrackSetInstanceNode : UInterchangeAnimationTrackBaseNode {
+	public static UClass StaticClass() {return default;}
 	///<summary>Set the time scale used for the level sequence instance.</summary>
 	public  bool SetCustomTimeScale(float AttributeValue) { return default; }
 	///<summary>Get the time scale used for the level sequence instance.</summary>

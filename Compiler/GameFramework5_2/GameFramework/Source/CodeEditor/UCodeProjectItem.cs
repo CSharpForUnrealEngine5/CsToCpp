@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("CodeProjectItem.h")]
 public partial class UCodeProjectItem : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Type</summary>
 	public ECodeProjectItemType Type;
 	///<summary>Name</summary>

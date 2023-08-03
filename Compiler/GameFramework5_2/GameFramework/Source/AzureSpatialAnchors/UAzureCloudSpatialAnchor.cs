@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("AzureCloudSpatialAnchor.h")]
 public partial class UAzureCloudSpatialAnchor : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>The ARPin with which this cloud anchor is associated, or null.  Null could mean we are still trying to load the anchor or have not yet located it.</summary>
 	public UARPin ARPin;
 	///<summary>The Azure Cloud identifier of the spatial anchor is the persistent identifier by which a cloud anchor can be requested from the azure cloud service.  Empty if the anchor has not been saved or loaded yet.</summary>

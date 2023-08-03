@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A shader graph has its own set of inputs on which shader nodes can be connected to.</summary>
 [CppInclude("InterchangeShaderGraphNode.h")]
 public partial class UInterchangeShaderGraphNode : UInterchangeShaderNode {
+	public static UClass StaticClass() {return default;}
 	///<summary>GetCustomTwoSided</summary>
 	public  bool GetCustomTwoSided(bool AttributeValue) { return default; }
 	///<summary>Sets if this shader graph should be rendered two sided or not. Defaults to off.</summary>

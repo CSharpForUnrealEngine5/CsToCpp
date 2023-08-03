@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Actions/PawnActionsComponent.h")]
 public partial class UDEPRECATED_PawnActionsComponent : UActorComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>ControlledPawn</summary>
 	public APawn ControlledPawn;
 	///<summary>ActionStacks</summary>

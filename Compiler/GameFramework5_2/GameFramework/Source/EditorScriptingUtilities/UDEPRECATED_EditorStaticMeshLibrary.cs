@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Utility class to altering and analyzing a StaticMesh and use the common functionalities of the Mesh Editor.</summary>
 [CppInclude("EditorStaticMeshLibrary.h")]
 public partial class UDEPRECATED_EditorStaticMeshLibrary : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>GetLodReductionSettings</summary>
 	public static void GetLodReductionSettings(UStaticMesh StaticMesh,int LodIndex,FMeshReductionSettings OutReductionOptions) {}
 	///<summary>SetLodReductionSettings</summary>

@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("ActorComponents/IKRigComponent.h")]
 public partial class UIKRigComponent : UActorComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>Set an IK Rig Goal position and rotation (assumed in Component Space of Skeletal Mesh) with separate alpha values.</summary>
 	public  void SetIKRigGoalPositionAndRotation(string GoalName,FVector Position,FQuat Rotation,float PositionAlpha,float RotationAlpha) {}
 	///<summary>Set an IK Rig Goal transform (assumed in Component Space of Skeletal Mesh) with separate alpha values.</summary>

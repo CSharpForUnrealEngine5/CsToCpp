@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("NiagaraDataInterfaceGrid2DCollection.h")]
 public partial class UNiagaraDataInterfaceGrid2DCollection : UNiagaraDataInterfaceGrid2D {
+	public static UClass StaticClass() {return default;}
 	///<summary>Reference to a user parameter if we&#39;re reading one.</summary>
 	public FNiagaraUserParameterBinding RenderTargetUserParameter;
 	///<summary>When enabled overrides the format used to store data inside the grid, otherwise uses the project default setting.  Lower bit depth formats will save memory and performance at the cost of precision.</summary>

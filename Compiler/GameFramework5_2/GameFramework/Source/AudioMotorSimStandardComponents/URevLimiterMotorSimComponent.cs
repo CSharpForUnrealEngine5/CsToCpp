@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Temporarily cuts throttle and reduces RPM when drifting or in the air</summary>
 [CppInclude("RevLimiterMotorSimComponent.h")]
 public partial class URevLimiterMotorSimComponent : UAudioMotorSimComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>LimitTime</summary>
 	public float LimitTime;
 	///<summary>DecelScale</summary>

@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A widget switcher is like a tab control, but without tabs. At most one widget is visible at time.</summary>
 [CppInclude("CommonWidgetCarousel.h")]
 public partial class UCommonWidgetCarousel : UPanelWidget {
+	public static UClass StaticClass() {return default;}
 	///<summary>The slot index to display</summary>
 	public int ActiveWidgetIndex;
 	///<summary>Gets the slot index of the currently active widget</summary>

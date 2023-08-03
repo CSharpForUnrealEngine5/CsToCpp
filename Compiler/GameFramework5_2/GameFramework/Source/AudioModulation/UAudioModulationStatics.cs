@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>namespace AudioModulation</summary>
 [CppInclude("AudioModulationStatics.h")]
 public partial class UAudioModulationStatics : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>Manually activates a modulation bus. If called, deactivation will only occur</summary>
 	public static void ActivateBus(UObject WorldContextObject,USoundControlBus Bus) {}
 	///<summary>Manually activates a bus modulator mix. If called, deactivation will only occur</summary>

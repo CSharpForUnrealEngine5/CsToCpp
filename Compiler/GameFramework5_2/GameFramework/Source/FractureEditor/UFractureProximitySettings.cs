@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Settings controlling how proximity is detected for geometry collections</summary>
 [CppInclude("FractureToolProximity.h")]
 public partial class UFractureProximitySettings : UFractureToolSettings {
+	public static UClass StaticClass() {return default;}
 	///<summary>Which method to use to decide whether a given piece of geometry is in proximity with another</summary>
 	public EProximityMethod Method;
 	///<summary>If hull-based proximity detection is enabled, amount to expand hulls when searching for overlapping neighbors</summary>

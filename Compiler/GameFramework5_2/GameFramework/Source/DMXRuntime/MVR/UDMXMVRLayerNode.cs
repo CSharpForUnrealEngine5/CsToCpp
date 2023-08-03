@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A Layer node in the Layers Node of a Scene.</summary>
 [CppInclude("MVR/Types/DMXMVRLayerNode.h")]
 public partial class UDMXMVRLayerNode : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>The unique identifier of the object.</summary>
 	public FGuid UUID;
 	///<summary>The name of the object</summary>

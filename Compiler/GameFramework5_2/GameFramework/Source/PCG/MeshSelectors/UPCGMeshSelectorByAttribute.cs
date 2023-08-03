@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("MeshSelectors/PCGMeshSelectorByAttribute.h")]
 public partial class UPCGMeshSelectorByAttribute : UPCGMeshSelectorBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>AttributeName</summary>
 	public string AttributeName;
 	///<summary>TemplateDescriptor</summary>

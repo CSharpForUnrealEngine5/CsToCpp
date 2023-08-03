@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("FoliageType.h")]
 public partial class UFoliageType : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>A GUID that is updated every time the foliage type is modified,</summary>
 	public FGuid UpdateGuid;
 	///<summary>Foliage instances will be placed at this density, specified in instances per 1000x1000 unit area</summary>

@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Virtual Production utilities settings for editor</summary>
 [CppInclude("VPUtilitiesEditorSettings.h")]
 public partial class UVPUtilitiesEditorSettings : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>The default user interface that we&#39;ll use for virtual scouting</summary>
 	public TSoftObjectPtr<UClass> VirtualScoutingUI;
 	///<summary>Speed when flying in VR</summary>

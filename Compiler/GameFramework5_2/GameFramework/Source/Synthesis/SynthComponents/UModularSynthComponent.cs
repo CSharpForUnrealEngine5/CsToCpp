@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>UModularSynthComponent</summary>
 [CppInclude("SynthComponents/EpicSynth1Component.h")]
 public partial class UModularSynthComponent : USynthComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>The voice count to use for the synthesizer. Cannot be changed</summary>
 	public int VoiceCount;
 	///<summary>Play a new note. Optionally pass in a duration to automatically turn off the note.</summary>

@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Components/Viewport.h")]
 public partial class UViewport : UContentWidget {
+	public static UClass StaticClass() {return default;}
 	///<summary>BackgroundColor</summary>
 	public FLinearColor BackgroundColor;
 	///<summary>GetViewportWorld</summary>

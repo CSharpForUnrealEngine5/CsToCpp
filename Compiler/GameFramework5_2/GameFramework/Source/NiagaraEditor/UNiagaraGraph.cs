@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("NiagaraGraph.h")]
 public partial class UNiagaraGraph : UEdGraph {
+	public static UClass StaticClass() {return default;}
 	///<summary>The current change identifier for this graph overall. Used to sync status with UNiagaraScripts.</summary>
 	public FGuid ChangeId;
 	///<summary>Internal value used to invalidate a DDC key for the script no matter what.</summary>

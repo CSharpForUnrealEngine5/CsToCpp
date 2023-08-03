@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>AIPerceptionComponent is used to register as stimuli listener in AIPerceptionSystem</summary>
 [CppInclude("Perception/AIPerceptionComponent.h")]
 public partial class UAIPerceptionComponent : UActorComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>SensesConfig</summary>
 	public TArray<UAISenseConfig> SensesConfig;
 	///<summary>Indicated sense that takes precedence over other senses when determining sensed actor&#39;s location.</summary>

@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Standard properties of the Voxel CSG operation</summary>
 [CppInclude("VoxelCSGMeshesTool.h")]
 public partial class UVoxelCSGMeshesToolProperties : UInteractiveToolPropertySet {
+	public static UClass StaticClass() {return default;}
 	///<summary>The type of operation</summary>
 	public EVoxelCSGOperation Operation;
 	///<summary>The size of the geometry bounding box major axis measured in voxels.</summary>

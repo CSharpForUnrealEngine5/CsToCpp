@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Settings object used to show useful information in the details panel</summary>
 [CppInclude("EditMode/ControlRigEditModeSettings.h")]
 public partial class UControlRigEditModeSettings : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Whether to show all bones in the hierarchy</summary>
 	public bool bDisplayHierarchy;
 	///<summary>Whether to show all nulls in the hierarchy</summary>

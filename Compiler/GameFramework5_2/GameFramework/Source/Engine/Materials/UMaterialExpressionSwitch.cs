@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Materials/MaterialExpressionSwitch.h")]
 public partial class UMaterialExpressionSwitch : UMaterialExpression {
+	public static UClass StaticClass() {return default;}
 	///<summary>Description</summary>
 	public string Description;
 	///<summary>Defaults to &#39;ConstSwitchValue&#39; if not specified</summary>

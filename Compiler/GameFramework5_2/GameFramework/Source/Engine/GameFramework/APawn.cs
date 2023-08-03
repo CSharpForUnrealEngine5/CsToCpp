@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Pawn is the base class of all actors that can be possessed by players or AI.</summary>
 [CppInclude("GameFramework/Pawn.h")]
 public partial class APawn : AActor {
+	public static UClass StaticClass() {return default;}
 	///<summary>Return our PawnMovementComponent, if we have one.</summary>
 	public  UPawnMovementComponent GetMovementComponent() { return default; }
 	///<summary>If true, this Pawn&#39;s pitch will be updated to match the Controller&#39;s ControlRotation pitch, if controlled by a PlayerController.</summary>

@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>The widget blueprint generated class allows us to create blueprint-able widgets for UMG at runtime.</summary>
 [CppInclude("Blueprint/WidgetBlueprintGeneratedClass.h")]
 public partial class UWidgetBlueprintGeneratedClass : UBlueprintGeneratedClass {
+	public static UClass StaticClass() {return default;}
 	///<summary>A tree of the widget templates to be created</summary>
 	public UWidgetTree WidgetTree;
 	///<summary>The extension that are considered static to the class</summary>

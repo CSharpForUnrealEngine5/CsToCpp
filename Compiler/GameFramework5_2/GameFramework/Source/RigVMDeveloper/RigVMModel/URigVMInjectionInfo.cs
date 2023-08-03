@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>The Injected Info is used for injecting a node on a pin.</summary>
 [CppInclude("RigVMModel/RigVMPin.h")]
 public partial class URigVMInjectionInfo : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>UnitNode_DEPRECATED</summary>
 	public URigVMUnitNode UnitNode_DEPRECATED;
 	///<summary>Node</summary>

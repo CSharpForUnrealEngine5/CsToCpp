@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A ConcertClientVRPresenceActor is a child of AConcertClientPresenceActor that is used to represent users in VR</summary>
 [CppInclude("ConcertClientVRPresenceActor.h")]
 public partial class AConcertClientVRPresenceActor : AConcertClientPresenceActor {
+	public static UClass StaticClass() {return default;}
 	///<summary>The left controller mesh</summary>
 	public UStaticMeshComponent LeftControllerMeshComponent;
 	///<summary>The right controller mesh</summary>

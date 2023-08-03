@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("K2Node_InputAxisEvent.h")]
 public partial class UK2Node_InputAxisEvent : UK2Node_Event {
+	public static UClass StaticClass() {return default;}
 	///<summary>InputAxisName</summary>
 	public string InputAxisName;
 	///<summary>Prevents actors with lower priority from handling this input</summary>

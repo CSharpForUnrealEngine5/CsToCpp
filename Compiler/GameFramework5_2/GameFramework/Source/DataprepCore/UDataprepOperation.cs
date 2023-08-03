@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Base class for all Dataprep operations</summary>
 [CppInclude("DataprepOperation.h")]
 public partial class UDataprepOperation : UDataprepParameterizableObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Execute the operation</summary>
 	public  void Execute(TArray<UObject> InObjects) {}
 	///<summary>This function is called when the operation is executed.</summary>

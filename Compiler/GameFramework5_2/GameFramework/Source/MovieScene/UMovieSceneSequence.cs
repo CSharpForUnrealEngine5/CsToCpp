@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Abstract base class for movie scene animations (C++ version).</summary>
 [CppInclude("MovieSceneSequence.h")]
 public partial class UMovieSceneSequence : UMovieSceneSignedObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Find the first object binding ID associated with the specified tag name (set up through RMB-&gt;Expose on Object bindings from within sequencer)</summary>
 	public  FMovieSceneObjectBindingID FindBindingByTag(string InBindingName) { return default; }
 	///<summary>Find all object binding IDs associated with the specified tag name (set up through RMB-&gt;Expose on Object bindings from within sequencer)</summary>

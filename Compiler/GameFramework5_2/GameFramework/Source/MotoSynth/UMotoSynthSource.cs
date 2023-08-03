@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>UMotoSynthSource</summary>
 [CppInclude("MotoSynthSourceAsset.h")]
 public partial class UMotoSynthSource : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>The source to use for the moto synth source</summary>
 	public USoundWave SoundWaveSource;
 	///<summary>Whether or not to convert this moto synth source to 8 bit on load to use less memory</summary>

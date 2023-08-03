@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>USDImporter and defaultconfig here so this ends up at DefaultUSDImporter.ini in the editor, and is sent to the</summary>
 [CppInclude("USDProjectSettings.h")]
 public partial class UUsdProjectSettings : UDeveloperSettings {
+	public static UClass StaticClass() {return default;}
 	///<summary>Additional paths to check for USD plugins</summary>
 	public TArray<FDirectoryPath> AdditionalPluginDirectories;
 	///<summary>Material purposes to show on drop-downs in addition to the standard &quot;preview&quot; and &quot;full&quot;</summary>

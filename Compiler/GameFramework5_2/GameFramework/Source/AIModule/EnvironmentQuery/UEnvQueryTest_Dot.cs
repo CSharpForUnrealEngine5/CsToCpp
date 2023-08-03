@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("EnvironmentQuery/Tests/EnvQueryTest_Dot.h")]
 public partial class UEnvQueryTest_Dot : UEnvQueryTest {
+	public static UClass StaticClass() {return default;}
 	///<summary>defines direction of first line used by test</summary>
 	public FEnvDirection LineA;
 	///<summary>defines direction of second line used by test</summary>

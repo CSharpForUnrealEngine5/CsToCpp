@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Physics/AsyncPhysicsInputComponent.h")]
 public partial class UAsyncPhysicsInputComponent : UActorComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>ServerRPCBufferInput</summary>
 	public  void ServerRPCBufferInput(UAsyncPhysicsData AsyncPhysicsData) {}
 	///<summary>Get the async physics data to write to. This data will make its way to the async physics tick on client and server. Should not be called from async tick</summary>

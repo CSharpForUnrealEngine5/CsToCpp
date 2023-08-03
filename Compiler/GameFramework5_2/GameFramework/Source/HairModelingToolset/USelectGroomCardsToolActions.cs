@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("GroomCardsEditorTool.h")]
 public partial class USelectGroomCardsToolActions : UEditGroomCardsToolActionPropertySet {
+	public static UClass StaticClass() {return default;}
 	///<summary>Clear the current selection</summary>
 	public  void Clear() {}
 	///<summary>Select unselected points along curve between selected points</summary>

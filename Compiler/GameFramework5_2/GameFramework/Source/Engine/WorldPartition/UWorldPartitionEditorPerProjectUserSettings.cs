@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("WorldPartition/WorldPartitionEditorPerProjectUserSettings.h")]
 public partial class UWorldPartitionEditorPerProjectUserSettings : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>True when the Data Layer Outliner is displaying Editor Data Layers</summary>
 	public bool bHideEditorDataLayers;
 	///<summary>True when the Data Layer Outliner is displaying Runtime Data Layers</summary>

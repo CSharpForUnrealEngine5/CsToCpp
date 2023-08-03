@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>This class is responsible for rendering the given render grid jobs.</summary>
 [CppInclude("RenderGrid/RenderGridQueue.h")]
 public partial class URenderGridQueue : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Call this function to make it so that the editor will be closed when all rendering queues finish execution. This function has to be only called once.</summary>
 	public static void CloseEditorOnCompletion() {}
 	///<summary>Queues the given job.</summary>

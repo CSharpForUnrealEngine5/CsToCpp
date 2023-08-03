@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("BaseTools/BaseCreateFromSelectedTool.h")]
 public partial class UBaseCreateFromSelectedHandleSourceProperties : UOnAcceptHandleSourcesProperties {
+	public static UClass StaticClass() {return default;}
 	///<summary>Defines the object the tool output is written to.</summary>
 	public EBaseCreateFromSelectedTargetType OutputWriteTo;
 	///<summary>Base name of the newly generated object to which the output is written to.</summary>

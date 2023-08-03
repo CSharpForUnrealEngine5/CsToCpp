@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Shared/MediaPlayerEditorSettings.h")]
 public partial class UMediaPlayerEditorSettings : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>The name of the desired native media player to use for playback.</summary>
 	public string DesiredPlayerName;
 	///<summary>Whether to display overlay texts.</summary>

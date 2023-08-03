@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("MoviePipelineCameraSetting.h")]
 public partial class UMoviePipelineCameraSetting : UMoviePipelineSetting {
+	public static UClass StaticClass() {return default;}
 	///<summary>Shutter Timing allows you to bias the timing of your shutter angle to either be before, during, or after</summary>
 	public EMoviePipelineShutterTiming ShutterTiming;
 	///<summary>Overscan percent allows to render additional pixels beyond the set resolution and can be used in conjunction</summary>

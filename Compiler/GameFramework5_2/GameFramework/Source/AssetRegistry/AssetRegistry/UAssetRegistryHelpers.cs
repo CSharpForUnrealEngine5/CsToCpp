@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("AssetRegistry/AssetRegistryHelpers.h")]
 public partial class UAssetRegistryHelpers : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>GetAssetRegistry</summary>
 	public static object /*ReturnValue*/ GetAssetRegistry() { return default; }
 	///<summary>Creates asset data from a UObject.</summary>

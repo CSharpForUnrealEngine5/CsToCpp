@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("AnimationModifier.h")]
 public partial class UAnimationModifier : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Executed when the Animation is initialized (native event for debugging / testing purposes)</summary>
 	public  void OnApply(UAnimSequence AnimationSequence) {}
 	///<summary>OnRevert</summary>

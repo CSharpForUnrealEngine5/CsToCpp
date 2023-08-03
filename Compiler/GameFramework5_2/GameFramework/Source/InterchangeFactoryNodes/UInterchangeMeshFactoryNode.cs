@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>namespace Interchange</summary>
 [CppInclude("InterchangeMeshFactoryNode.h")]
 public partial class UInterchangeMeshFactoryNode : UInterchangeFactoryBaseNode {
+	public static UClass StaticClass() {return default;}
 	///<summary>Return The number of LOD this static mesh has.</summary>
 	public  int GetLodDataCount() { return default; }
 	///<summary>GetLodDataUniqueIds</summary>

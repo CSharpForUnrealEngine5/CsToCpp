@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>An asset used to track collections of console variables that can be recalled and edited using the Console Variables Editor.</summary>
 [CppInclude("ConsoleVariablesEditorFunctionLibrary.h")]
 public partial class UConsoleVariablesEditorFunctionLibrary : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>Return the currently loaded list of variables in the Console Variables Editor.</summary>
 	public static UConsoleVariablesAsset GetCurrentlyLoadedPreset() { return default; }
 	///<summary>Loads the given asset in the Console Variables Editor and sets all its variable values.</summary>

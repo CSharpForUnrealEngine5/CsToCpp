@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Mesh Element Paint Tool Class</summary>
 [CppInclude("ChaosClothAsset/ClothWeightMapPaintTool.h")]
 public partial class UClothEditorWeightMapPaintTool : UMeshSculptToolBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>WeightMapSetProperties</summary>
 	public UWeightMapSetProperties WeightMapSetProperties;
 	///<summary>Filters on paint brush</summary>

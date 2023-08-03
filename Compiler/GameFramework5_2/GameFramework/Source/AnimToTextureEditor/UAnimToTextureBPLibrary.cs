@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>* TODO:</summary>
 [CppInclude("AnimToTextureBPLibrary.h")]
 public partial class UAnimToTextureBPLibrary : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>Bakes Animation Data into Textures.</summary>
 	public static void AnimationToTexture(UAnimToTextureDataAsset DataAsset,FTransform RootTransform,bool bSuccess) {}
 	///<summary>Utility for converting SkeletalMesh into a StaticMesh</summary>

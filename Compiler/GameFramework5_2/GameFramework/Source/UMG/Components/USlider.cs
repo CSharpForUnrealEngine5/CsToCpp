@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A simple widget that shows a sliding bar with a handle that allows you to control the value between 0..1.</summary>
 [CppInclude("Components/Slider.h")]
 public partial class USlider : UWidget {
+	public static UClass StaticClass() {return default;}
 	///<summary>The volume value to display.</summary>
 	public float Value;
 	///<summary>A bindable delegate to allow logic to drive the value of the widget</summary>

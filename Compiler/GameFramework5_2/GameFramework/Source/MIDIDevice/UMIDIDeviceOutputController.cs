@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("MIDIDeviceOutputController.h")]
 public partial class UMIDIDeviceOutputController : UMIDIDeviceControllerBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>Sends MIDI event raw data for an event type</summary>
 	public  void SendMIDIEvent(EMIDIEventType EventType,int Channel,int data1,int data2) {}
 	///<summary>Sends MIDI Note On event type</summary>

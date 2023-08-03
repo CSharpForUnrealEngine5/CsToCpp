@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("JsonBlueprintFunctionLibrary.h")]
 public partial class UJsonBlueprintFunctionLibrary : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>Creates a JsonObject from the provided Json string.</summary>
 	public static bool FromString(UObject WorldContextObject,string JsonString,FJsonObjectWrapper OutJsonObject) { return default; }
 	///<summary>Creates a JsonObject from the provided Json file.</summary>

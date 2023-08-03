@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A blueprintable capture protocol that defines how to capture frames from the engine</summary>
 [CppInclude("Protocols/UserDefinedCaptureProtocol.h")]
 public partial class UUserDefinedCaptureProtocol : UMovieSceneImageCaptureProtocolBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>Called before the capture process itself is ticked, before each frame is set up for capture</summary>
 	public  void OnPreTick() {}
 	///<summary>Called after the capture process itself is ticked, after the frame is set up for capture, but before most actors have ticked</summary>

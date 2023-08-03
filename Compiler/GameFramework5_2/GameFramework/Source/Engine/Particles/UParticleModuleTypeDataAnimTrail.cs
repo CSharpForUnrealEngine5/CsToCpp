@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Particles/TypeData/ParticleModuleTypeDataAnimTrail.h")]
 public partial class UParticleModuleTypeDataAnimTrail : UParticleModuleTypeDataBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>If true, when the system is deactivated, mark trails as dead.</summary>
 	public bool bDeadTrailsOnDeactivate;
 	///<summary>If true, recalculate the previous tangent when a new particle is spawned</summary>

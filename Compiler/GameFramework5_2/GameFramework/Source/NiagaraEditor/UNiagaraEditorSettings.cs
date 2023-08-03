@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("NiagaraEditorSettings.h")]
 public partial class UNiagaraEditorSettings : UDeveloperSettings {
+	public static UClass StaticClass() {return default;}
 	///<summary>Niagara script to duplicate as the base of all new script assets created.</summary>
 	public FSoftObjectPath DefaultScript;
 	///<summary>Niagara script to duplicate as the base of all new script assets created.</summary>

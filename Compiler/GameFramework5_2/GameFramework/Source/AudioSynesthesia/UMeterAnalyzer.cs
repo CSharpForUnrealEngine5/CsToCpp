@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>UMeterAnalyzer</summary>
 [CppInclude("Meter.h")]
 public partial class UMeterAnalyzer : UAudioAnalyzer {
+	public static UClass StaticClass() {return default;}
 	///<summary>The settings for the meter audio analyzer.</summary>
 	public UMeterSettings Settings;
 	///<summary>Delegate to receive all overall meter results since last delegate call.</summary>

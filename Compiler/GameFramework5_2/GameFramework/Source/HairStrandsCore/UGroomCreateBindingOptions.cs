@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("GroomCreateBindingOptions.h")]
 public partial class UGroomCreateBindingOptions : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Type of mesh to create groom binding for</summary>
 	public EGroomBindingMeshType GroomBindingType;
 	///<summary>Skeletal mesh on which the groom has been authored. This is optional, and used only if the hair</summary>

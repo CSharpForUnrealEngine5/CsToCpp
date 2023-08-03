@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Blueprints/IDisplayClusterBlueprintAPI.h")]
 public partial class UDisplayClusterBlueprintAPI : UInterface {
+	public static UClass StaticClass() {return default;}
 	///<summary>Returns true if the module has been initialized.</summary>
 	public  bool IsModuleInitialized() { return default; }
 	///<summary>Returns current operation mode.</summary>

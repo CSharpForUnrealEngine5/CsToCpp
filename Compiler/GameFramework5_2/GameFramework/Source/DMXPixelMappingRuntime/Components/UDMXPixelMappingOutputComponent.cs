@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Base class for all Designer and configurable components</summary>
 [CppInclude("Components/DMXPixelMappingOutputComponent.h")]
 public partial class UDMXPixelMappingOutputComponent : UDMXPixelMappingBaseComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>ZOrder in the UI</summary>
 	public int ZOrder;
 	///<summary>The color displayed in editor</summary>

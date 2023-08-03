@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Waits for the actor to activate another ability</summary>
 [CppInclude("Abilities/Tasks/AbilityTask_WaitGameplayEffectRemoved.h")]
 public partial class UAbilityTask_WaitGameplayEffectRemoved : UAbilityTask {
+	public static UClass StaticClass() {return default;}
 	///<summary>OnRemoved</summary>
 	public FWaitGameplayEffectRemovedDelegate OnRemoved;
 	///<summary>InvalidHandle</summary>

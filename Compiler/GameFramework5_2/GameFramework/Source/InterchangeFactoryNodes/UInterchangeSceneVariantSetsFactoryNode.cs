@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("InterchangeSceneVariantSetsFactoryNode.h")]
 public partial class UInterchangeSceneVariantSetsFactoryNode : UInterchangeFactoryBaseNode {
+	public static UClass StaticClass() {return default;}
 	///<summary>Get the class this node want to create</summary>
 	public  UClass GetObjectClass() { return default; }
 	///<summary>This function allow to retrieve the number of translated VariantSets&#39; unique ids for this object.</summary>

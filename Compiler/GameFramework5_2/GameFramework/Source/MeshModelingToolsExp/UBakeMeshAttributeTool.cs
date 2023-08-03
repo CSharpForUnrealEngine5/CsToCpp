@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Base Mesh Bake tool</summary>
 [CppInclude("BakeMeshAttributeTool.h")]
 public partial class UBakeMeshAttributeTool : UMultiSelectionMeshEditingTool {
+	public static UClass StaticClass() {return default;}
 	///<summary>Bake tool property sets</summary>
 	public UBakeOcclusionMapToolProperties OcclusionSettings;
 	///<summary>CurvatureSettings</summary>

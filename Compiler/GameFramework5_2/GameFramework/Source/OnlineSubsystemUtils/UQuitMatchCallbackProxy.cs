@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("QuitMatchCallbackProxy.h")]
 public partial class UQuitMatchCallbackProxy : UOnlineBlueprintCallProxyBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>Called when there is a successful query</summary>
 	public FEmptyOnlineDelegate OnSuccess;
 	///<summary>Called when there is an unsuccessful query</summary>

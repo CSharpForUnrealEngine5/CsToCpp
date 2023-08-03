@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Unique settings for the Gradient tool</summary>
 [CppInclude("ClothPaintTools.h")]
 public partial class UClothPaintTool_GradientSettings : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Value of the gradient at the start points</summary>
 	public float GradientStartValue;
 	///<summary>Value of the gradient at the end points</summary>

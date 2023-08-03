@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Any property you&#39;re adding to AnimMontage and parent class has to be considered for Child Asset</summary>
 [CppInclude("Animation/AnimMontage.h")]
 public partial class UAnimMontage : UAnimCompositeBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>BlendModeIn</summary>
 	public EMontageBlendMode BlendModeIn;
 	///<summary>BlendModeOut</summary>

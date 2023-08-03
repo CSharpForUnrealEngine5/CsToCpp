@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("InterchangeGenericAnimationPipeline.h")]
 public partial class UInterchangeGenericAnimationPipeline : UInterchangePipelineBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>Common SkeletalMeshes And Animations Properties Settings Pointer</summary>
 	public TWeakObjectPtr<UInterchangeGenericCommonSkeletalMeshesAndAnimationsProperties> CommonSkeletalMeshesAndAnimationsProperties;
 	///<summary>If enable, import all animation assets find in the sources.</summary>

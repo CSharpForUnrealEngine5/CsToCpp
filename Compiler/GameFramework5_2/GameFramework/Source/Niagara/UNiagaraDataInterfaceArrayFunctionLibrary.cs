@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>C++ and Blueprint library for accessing array types</summary>
 [CppInclude("NiagaraDataInterfaceArrayFunctionLibrary.h")]
 public partial class UNiagaraDataInterfaceArrayFunctionLibrary : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>Sets Niagara Array Float Data.</summary>
 	public static void SetNiagaraArrayFloat(UNiagaraComponent NiagaraSystem,string OverrideName,TArray<float> ArrayData) {}
 	///<summary>Sets Niagara Array FVector2D Data.</summary>

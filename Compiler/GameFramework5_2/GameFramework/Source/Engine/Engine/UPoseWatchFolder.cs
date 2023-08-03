@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Engine/PoseWatch.h")]
 public partial class UPoseWatchFolder : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Label</summary>
 	public string Label;
 	///<summary>Parent</summary>

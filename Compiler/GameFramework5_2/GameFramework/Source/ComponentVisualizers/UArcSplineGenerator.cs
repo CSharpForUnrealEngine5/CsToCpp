@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("SplineGeneratorPanel.h")]
 public partial class UArcSplineGenerator : USplineGeneratorBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>Number of points making up shape</summary>
 	public int NumberOfPoints;
 	///<summary>Radius of arc</summary>

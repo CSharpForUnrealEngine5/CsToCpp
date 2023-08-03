@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Simulated GameplayTask that starts a contextual anim scene on multiple actors</summary>
 [CppInclude("GameplayTask_PlayContextualAnim.h")]
 public partial class UGameplayTask_PlayContextualAnim : UGameplayTask {
+	public static UClass StaticClass() {return default;}
 	///<summary>PlayContextualAnim</summary>
 	public static UGameplayTask_PlayContextualAnim PlayContextualAnim(AActor Interactor,string InteractorRole,AActor InteractableObject,string InteractableObjectRole,string SectionName,string ExitSectionName,UContextualAnimSceneAsset SceneAsset) { return default; }
 	///<summary>SetExit</summary>

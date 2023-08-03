@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>UMeterSettings</summary>
 [CppInclude("Meter.h")]
 public partial class UMeterSettings : UAudioSynesthesiaSettings {
+	public static UClass StaticClass() {return default;}
 	///<summary>Number of seconds between meter measurements</summary>
 	public float AnalysisPeriod;
 	///<summary>Meter envelope type type</summary>

@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Implements the settings for imported Paper2D assets, such as sprite sheet textures.</summary>
 [CppInclude("PaperImporterSettings.h")]
 public partial class UPaperImporterSettings : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Should the source texture be scanned when creating new sprites to determine the appropriate material? (if false, the Default Masked Material is always used)</summary>
 	public bool bPickBestMaterialWhenCreatingSprites;
 	///<summary>Should the source texture be scanned when creating new tile maps (from a tile set or via importing) to determine the appropriate material? (if false, the Default Masked Material is always used)</summary>

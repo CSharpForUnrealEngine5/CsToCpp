@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Settings/MultiUserServerColumnVisibilitySettings.h")]
 public partial class UMultiUserServerColumnVisibilitySettings : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>SessionBrowserColumnVisibility</summary>
 	public FColumnVisibilitySnapshot SessionBrowserColumnVisibility;
 	///<summary>DeleteActivityDialogColumnVisibility</summary>

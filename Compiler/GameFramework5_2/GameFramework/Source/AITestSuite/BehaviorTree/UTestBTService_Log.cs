@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("BehaviorTree/TestBTService_Log.h")]
 public partial class UTestBTService_Log : UBTService {
+	public static UClass StaticClass() {return default;}
 	///<summary>LogActivation</summary>
 	public int LogActivation;
 	///<summary>LogDeactivation</summary>

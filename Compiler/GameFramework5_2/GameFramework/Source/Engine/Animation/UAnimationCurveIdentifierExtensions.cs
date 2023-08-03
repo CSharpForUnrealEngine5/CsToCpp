@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Script-exposed functionality for wrapping native functionality and constructing valid FAnimationCurveIdentifier instances</summary>
 [CppInclude("Animation/AnimData/CurveIdentifier.h")]
 public partial class UAnimationCurveIdentifierExtensions : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>@return       Whether or not the Curve Identifier is valid</summary>
 	public static bool IsValid(FAnimationCurveIdentifier Identifier) { return default; }
 	///<summary>@return       The name used for displaying the Curve Identifier</summary>

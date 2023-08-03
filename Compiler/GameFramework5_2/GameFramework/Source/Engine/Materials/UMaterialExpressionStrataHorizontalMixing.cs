@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>/</summary>
 [CppInclude("Materials/MaterialExpressionStrata.h")]
 public partial class UMaterialExpressionStrataHorizontalMixing : UMaterialExpressionStrataBSDF {
+	public static UClass StaticClass() {return default;}
 	///<summary>Substrate material</summary>
 	public FExpressionInput Background;
 	///<summary>Substrate material</summary>

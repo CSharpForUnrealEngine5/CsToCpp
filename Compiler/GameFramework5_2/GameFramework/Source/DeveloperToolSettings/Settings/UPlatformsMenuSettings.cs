@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Settings/PlatformsMenuSettings.h")]
 public partial class UPlatformsMenuSettings : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>The directory to which the packaged project will be copied.</summary>
 	public FDirectoryPath StagingDirectory;
 	///<summary>Name of the target to use for LaunchOn (only Game/Client targets)</summary>

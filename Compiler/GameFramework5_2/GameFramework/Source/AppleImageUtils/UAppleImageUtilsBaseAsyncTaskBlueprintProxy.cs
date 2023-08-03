@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("AppleImageUtilsBlueprintProxy.h")]
 public partial class UAppleImageUtilsBaseAsyncTaskBlueprintProxy : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>OnSuccess</summary>
 	public FAppleImageConversionDelegate OnSuccess;
 	///<summary>OnFailure</summary>

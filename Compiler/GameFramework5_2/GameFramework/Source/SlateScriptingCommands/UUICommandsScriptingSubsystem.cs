@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>UEditorInputSubsystem</summary>
 [CppInclude("UICommandsScriptingSubsystem.h")]
 public partial class UUICommandsScriptingSubsystem : UEngineSubsystem {
+	public static UClass StaticClass() {return default;}
 	///<summary>Registers a command within the given context and set.</summary>
 	public  bool RegisterCommand(FScriptingCommandInfo CommandInfo,FExecuteCommand OnExecuteCommand,bool bOverrideExisting/*=false*/) { return default; }
 	///<summary>Registers a command within the given context and set.</summary>

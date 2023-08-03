@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>SkeletalMeshComponent is used to create an instance of an animated SkeletalMesh asset.</summary>
 [CppInclude("Components/SkeletalMeshComponent.h")]
 public partial class USkeletalMeshComponent : USkinnedMeshComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>SkeletalMeshAsset</summary>
 	public USkeletalMesh SkeletalMeshAsset;
 	///<summary>Set the SkeletalMesh rendered for this mesh.</summary>

@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("MoviePipeline.h")]
 public partial class UMoviePipeline : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Initialize the movie pipeline with the specified settings. This kicks off the rendering process.</summary>
 	public  void Initialize(UMoviePipelineExecutorJob InJob) {}
 	///<summary>Request the movie pipeline to shut down at the next available time. The pipeline will attempt to abandon</summary>

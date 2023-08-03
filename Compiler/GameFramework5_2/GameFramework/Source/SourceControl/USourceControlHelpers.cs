@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Editor source control common functionality.</summary>
 [CppInclude("SourceControlHelpers.h")]
 public partial class USourceControlHelpers : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Determine the name of the current source control provider.</summary>
 	public static string CurrentProvider() { return default; }
 	///<summary>Determine if there is a source control system enabled</summary>

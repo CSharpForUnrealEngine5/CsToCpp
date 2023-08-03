@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Solvers/IKRig_PoleSolver.h")]
 public partial class UIKRig_PoleSolverEffector : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>GoalName</summary>
 	public string GoalName;
 	///<summary>BoneName</summary>

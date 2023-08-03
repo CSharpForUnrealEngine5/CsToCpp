@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Component that receives DMX input each Tick from a fixture patch.</summary>
 [CppInclude("Game/DMXComponent.h")]
 public partial class UDMXComponent : UActorComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>FDMXComponentFixturePatchReceivedSignature</summary>
 	public  void FDMXComponentFixturePatchReceivedSignature(UDMXEntityFixturePatch FixturePatch,FDMXNormalizedAttributeValueMap ValuePerAttribute) {}
 	///<summary>FDMXOnDMXComponentTickSignature</summary>

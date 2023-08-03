@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Visualization settings UMeshElementsVisualizer</summary>
 [CppInclude("Drawing/MeshElementsVisualizer.h")]
 public partial class UMeshElementsVisualizerProperties : UInteractiveToolPropertySet {
+	public static UClass StaticClass() {return default;}
 	///<summary>Should any be mesh elements be shown</summary>
 	public bool bVisible;
 	///<summary>Should mesh wireframe be shown</summary>

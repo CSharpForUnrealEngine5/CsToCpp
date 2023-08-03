@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>UCombinedTransformGizmo provides standard Transformation Gizmo interactions,</summary>
 [CppInclude("BaseGizmos/CombinedTransformGizmo.h")]
 public partial class UCombinedTransformGizmo : UInteractiveGizmo {
+	public static UClass StaticClass() {return default;}
 	///<summary>The active target object for the Gizmo</summary>
 	public UTransformProxy ActiveTarget;
 	///<summary>bSnapToWorldGrid controls whether any position snapping is applied, if possible, for Axis and Plane translations, via the ContextQueriesAPI</summary>

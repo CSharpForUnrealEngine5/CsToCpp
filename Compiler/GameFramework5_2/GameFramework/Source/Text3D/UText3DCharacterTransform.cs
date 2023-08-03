@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Text3DCharacterTransform.h")]
 public partial class UText3DCharacterTransform : USceneComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>Location</summary>
 	public bool bLocationEnabled;
 	///<summary>LocationProgress</summary>

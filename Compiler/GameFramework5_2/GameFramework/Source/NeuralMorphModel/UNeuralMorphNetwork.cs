@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>The specialized neural network for the Neural Morph Model.</summary>
 [CppInclude("NeuralMorphNetwork.h")]
 public partial class UNeuralMorphNetwork : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>The MLP that acts as main network.</summary>
 	public UNeuralMorphMLP MainMLP;
 	///<summary>The MLP for the bone and curve groups, when in local mode.</summary>

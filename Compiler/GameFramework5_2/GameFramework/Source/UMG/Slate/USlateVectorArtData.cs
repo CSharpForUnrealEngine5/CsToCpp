@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Turn static mesh data into Slate&#39;s simple vector art format.</summary>
 [CppInclude("Slate/SlateVectorArtData.h")]
 public partial class USlateVectorArtData : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>The mesh data asset from which the vector art is sourced</summary>
 	public UStaticMesh MeshAsset;
 	///<summary>The material which we are using, or the material from with the MIC was constructed.</summary>

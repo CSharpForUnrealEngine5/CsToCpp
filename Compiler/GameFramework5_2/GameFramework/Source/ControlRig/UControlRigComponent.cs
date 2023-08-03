@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A component that hosts an animation ControlRig, manages control components and marshals data between the two</summary>
 [CppInclude("ControlRigComponent.h")]
 public partial class UControlRigComponent : UPrimitiveComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>The class of control rig to instantiate</summary>
 	public UClass ControlRigClass;
 	///<summary>Event fired just before this component&#39;s ControlRig is initialized</summary>

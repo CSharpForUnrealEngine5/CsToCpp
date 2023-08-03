@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Camera/CameraLensEffectInterface.h")]
 public partial class UCameraLensEffectInterfaceClassSupportLibrary : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>Returns the class represented by this lens effect wrapper...</summary>
 	public static UClass GetInterfaceClass(FCameraLensInterfaceClassSupport CameraLens) { return default; }
 	///<summary>Check whether or not the interface class is valid</summary>

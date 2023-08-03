@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("VPBookmarkActor.h")]
 public partial class AVPBookmarkActor : AVPViewportTickableActorBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>Mesh Representation in the world</summary>
 	public UStaticMeshComponent BookmarkMeshComponent;
 	///<summary>Textrender to display bookmark name</summary>

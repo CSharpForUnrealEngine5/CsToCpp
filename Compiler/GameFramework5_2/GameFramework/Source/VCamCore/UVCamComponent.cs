@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Provides a modular system for editing a UCineCameraComponent using user widgets.</summary>
 [CppInclude("VCamComponent.h")]
 public partial class UVCamComponent : USceneComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>There are situations in the editor where the component may be replaced by another component as part of the actor being reconstructed</summary>
 	public FOnComponentReplaced OnComponentReplaced;
 	///<summary>HandleObjectReplaced</summary>

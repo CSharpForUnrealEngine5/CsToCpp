@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("GeometryScript/MeshVertexColorFunctions.h")]
 public partial class UGeometryScriptLibrary_MeshVertexColorFunctions : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>Set all vertex colors (optionally specific channels) in the TargetMesh VertexColor Overlay to a constant value</summary>
 	public static UDynamicMesh SetMeshConstantVertexColor(UDynamicMesh TargetMesh,FLinearColor Color,FGeometryScriptColorFlags Flags,bool bClearExisting/*=false*/,UGeometryScriptDebug Debug/*=nullptr*/) { return default; }
 	///<summary>Set the colors in the TargetMesh VertexColor Overlay identified by the Selection to a constant value.</summary>

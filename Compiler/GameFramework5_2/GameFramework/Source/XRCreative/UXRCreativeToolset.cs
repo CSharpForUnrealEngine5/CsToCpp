@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("XRCreativeToolset.h")]
 public partial class UXRCreativeToolset : UPrimaryDataAsset {
+	public static UClass StaticClass() {return default;}
 	///<summary>Avatar</summary>
 	public UClass Avatar;
 	///<summary>Tools</summary>

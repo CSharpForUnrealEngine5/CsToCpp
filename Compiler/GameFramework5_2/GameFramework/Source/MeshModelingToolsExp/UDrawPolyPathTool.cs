@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("DrawPolyPathTool.h")]
 public partial class UDrawPolyPathTool : UInteractiveTool {
+	public static UClass StaticClass() {return default;}
 	///<summary>Property set for type of output object (StaticMesh, Volume, etc)</summary>
 	public UCreateMeshObjectTypeProperties OutputTypeProperties;
 	///<summary>TransformProps</summary>

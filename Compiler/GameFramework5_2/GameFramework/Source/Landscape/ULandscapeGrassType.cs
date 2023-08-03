@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("LandscapeGrassType.h")]
 public partial class ULandscapeGrassType : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>GrassVarieties</summary>
 	public TArray<FGrassVariety> GrassVarieties;
 	///<summary>Whether this grass type should be affected by the Engine Scalability system&#39;s Foliage grass.DensityScale setting.</summary>

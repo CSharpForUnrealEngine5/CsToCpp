@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Serializable options for curve editor.</summary>
 [CppInclude("CurveEditorSettings.h")]
 public partial class UCurveEditorSettings : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>bAutoFrameCurveEditor</summary>
 	public bool bAutoFrameCurveEditor;
 	///<summary>Number of pixels to add as padding in the input axis when framing curve keys</summary>

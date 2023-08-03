@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("ConvertToPolygonsTool.h")]
 public partial class UOutputPolygroupLayerProperties : UInteractiveToolPropertySet {
+	public static UClass StaticClass() {return default;}
 	///<summary>Select PolyGroup layer to use.</summary>
 	public string GroupLayer;
 	///<summary>Provides set of available group layers</summary>

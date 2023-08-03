@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Base class for all DMX Pixel Mapping components.</summary>
 [CppInclude("Components/DMXPixelMappingBaseComponent.h")]
 public partial class UDMXPixelMappingBaseComponent : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Reset all sending DMX channels to 0 for this component and all children</summary>
 	public  void ResetDMX() {}
 	///<summary>Send DMX values of this component and all children.</summary>

@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("NaniteToolsArguments.h")]
 public partial class UNaniteAuditOptimizeArguments : UEditorConfigBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>Ignore non-Nanite meshes with fewer triangles than this threshold.</summary>
 	public uint TriangleThreshold;
 	///<summary>Ignore non-Nanite meshes using an unsupported blend mode in the assigned materials.</summary>

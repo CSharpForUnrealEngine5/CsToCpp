@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Actor holding smart object persistent data</summary>
 [CppInclude("SmartObjectCollection.h")]
 public partial class ADEPRECATED_SmartObjectCollection : AActor {
+	public static UClass StaticClass() {return default;}
 	///<summary>Bounds</summary>
 	public FBox Bounds;
 	///<summary>CollectionEntries</summary>

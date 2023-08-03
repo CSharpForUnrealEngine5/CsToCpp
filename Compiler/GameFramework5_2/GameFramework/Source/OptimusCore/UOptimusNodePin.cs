@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("OptimusNodePin.h")]
 public partial class UOptimusNodePin : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>bIsGroupingPin</summary>
 	public bool bIsGroupingPin;
 	///<summary>Direction</summary>

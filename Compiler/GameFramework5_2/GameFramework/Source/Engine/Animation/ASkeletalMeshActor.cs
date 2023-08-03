@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>SkeletalMeshActor is an instance of a USkeletalMesh in the world.</summary>
 [CppInclude("Animation/SkeletalMeshActor.h")]
 public partial class ASkeletalMeshActor : AActor {
+	public static UClass StaticClass() {return default;}
 	///<summary>Whether or not this actor should respond to anim notifies - CURRENTLY ONLY AFFECTS PlayParticleEffect NOTIFIES*</summary>
 	public bool bShouldDoAnimNotifies;
 	///<summary>bWakeOnLevelStart_DEPRECATED</summary>

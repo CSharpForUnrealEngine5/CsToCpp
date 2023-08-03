@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A utility to handle higher-level common actions, but default via UTypedElementWorldInterface,</summary>
 [CppInclude("Elements/Framework/TypedElementCommonActions.h")]
 public partial class UTypedElementCommonActions : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Delete any elements from the given selection set that can be deleted.</summary>
 	public  bool DeleteSelectedElements(UTypedElementSelectionSet SelectionSet,UWorld World,FTypedElementDeletionOptions DeletionOptions) { return default; }
 	///<summary>Copy any elements from the given selection set that can be copied into the clipboard</summary>

@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("ConvertToPolygonsTool.h")]
 public partial class UConvertToPolygonsTool : USingleSelectionMeshEditingTool {
+	public static UClass StaticClass() {return default;}
 	///<summary>Settings</summary>
 	public UConvertToPolygonsToolProperties Settings;
 	///<summary>CopyFromLayerProperties</summary>

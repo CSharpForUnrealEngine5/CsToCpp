@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Functionality added to prototype the VR scouting tools</summary>
 [CppInclude("VPBlueprintLibrary.h")]
 public partial class UVPBlueprintLibrary : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>Refresh the desktop 3D viewport so that it updates changes even when not set to &#39;Realtime&#39;</summary>
 	public static void Refresh3DEditorViewport() {}
 	///<summary>Spawn a virtual production tickable actor</summary>

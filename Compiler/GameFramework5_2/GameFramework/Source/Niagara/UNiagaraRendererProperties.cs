@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Emitter properties base class</summary>
 [CppInclude("NiagaraRendererProperties.h")]
 public partial class UNiagaraRendererProperties : UNiagaraMergeable {
+	public static UClass StaticClass() {return default;}
 	///<summary>Platforms on which this renderer is enabled.</summary>
 	public FNiagaraPlatformSet Platforms;
 	///<summary>By default, emitters are drawn in the order that they are added to the system. This value will allow you to control the order in a more fine-grained manner.</summary>

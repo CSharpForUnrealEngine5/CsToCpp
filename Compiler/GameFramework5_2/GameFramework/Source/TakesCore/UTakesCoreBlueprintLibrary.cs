@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("TakesCoreBlueprintLibrary.h")]
 public partial class UTakesCoreBlueprintLibrary : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>Compute the next unused sequential take number for the specified slate</summary>
 	public static int ComputeNextTakeNumber(string Slate) { return default; }
 	///<summary>Find all the existing takes that were recorded with the specified slate</summary>

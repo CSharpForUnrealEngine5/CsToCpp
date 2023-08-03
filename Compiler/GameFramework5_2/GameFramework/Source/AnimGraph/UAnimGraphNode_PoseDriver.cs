@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("AnimGraphNode_PoseDriver.h")]
 public partial class UAnimGraphNode_PoseDriver : UAnimGraphNode_PoseHandler {
+	public static UClass StaticClass() {return default;}
 	///<summary>Node</summary>
 	public FAnimNode_PoseDriver Node;
 	///<summary>Length of axis in world units used for debug drawing</summary>

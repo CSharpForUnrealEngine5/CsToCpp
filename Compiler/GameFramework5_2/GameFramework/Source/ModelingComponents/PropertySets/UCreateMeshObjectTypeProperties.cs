@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>UCreateMeshObjectTypeProperties is a InteractiveTool PropertySet used to select</summary>
 [CppInclude("PropertySets/CreateMeshObjectTypeProperties.h")]
 public partial class UCreateMeshObjectTypeProperties : UInteractiveToolPropertySet {
+	public static UClass StaticClass() {return default;}
 	///<summary>Type of object to create</summary>
 	public string OutputType;
 	///<summary>Type of volume to create</summary>

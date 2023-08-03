@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A Level is a collection of Actors (lights, volumes, mesh instances etc.).</summary>
 [CppInclude("Engine/Level.h")]
 public partial class ULevel : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>List of modified, unsaved actors that needs to be duplicated for PIE</summary>
 	public TMap<string,AActor> ActorsModifiedForPIE;
 	///<summary>Use external actors, new actor spawned in this level will be external and existing external actors will be loaded on load.</summary>

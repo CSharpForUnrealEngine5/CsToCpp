@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Abstract base object for circle, torus and arc.</summary>
 [CppInclude("BaseGizmos/GizmoElementCircleBase.h")]
 public partial class UGizmoElementCircleBase : UGizmoElementLineBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>CircleBase center.</summary>
 	public FVector Center;
 	///<summary>Axis0 of plane in which circle lies, must perpendicular to normal.</summary>

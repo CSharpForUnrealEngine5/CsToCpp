@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Engine/Texture2DArray.h")]
 public partial class UTexture2DArray : UTexture {
+	public static UClass StaticClass() {return default;}
 	///<summary>The addressing mode to use for the X axis.</summary>
 	public TextureAddress AddressX;
 	///<summary>The addressing mode to use for the Y axis.</summary>

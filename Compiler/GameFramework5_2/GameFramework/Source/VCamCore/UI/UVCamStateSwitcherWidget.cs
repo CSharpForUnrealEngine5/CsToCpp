@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A widget that has a set of states you can switch between using SetCurrentState.</summary>
 [CppInclude("UI/Switcher/VCamStateSwitcherWidget.h")]
 public partial class UVCamStateSwitcherWidget : UVCamWidget {
+	public static UClass StaticClass() {return default;}
 	///<summary>K2_SetCurrentState</summary>
 	public  void K2_SetCurrentState(string NewState) {}
 	///<summary>Switches to given state - if the state transition is valid, UpdateConnectionTargets will be called.</summary>

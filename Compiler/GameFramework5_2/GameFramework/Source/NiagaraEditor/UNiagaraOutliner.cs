@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("NiagaraOutliner.h")]
 public partial class UNiagaraOutliner : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>CaptureSettings</summary>
 	public FNiagaraOutlinerCaptureSettings CaptureSettings;
 	///<summary>ViewSettings</summary>

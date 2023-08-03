@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Components/StateTreeComponent.h")]
 public partial class UStateTreeComponent : UBrainComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>Sets whether the State Tree is started automatically on being play.</summary>
 	public  void SetStartLogicAutomatically(bool bInStartLogicAutomatically) {}
 	///<summary>Sends event to the running StateTree.</summary>

@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Settings controlling how convex hulls are generated for geometry collections</summary>
 [CppInclude("FractureToolConvex.h")]
 public partial class UFractureConvexSettings : UFractureToolSettings {
+	public static UClass StaticClass() {return default;}
 	///<summary>Fraction (of geometry volume) by which a cluster&#39;s convex hull volume can exceed the actual geometry volume before instead using the hulls of the children.  0 means the convex volume cannot exceed the geometry volume; 1 means the convex volume is allowed to be 100% larger (2x) the geometry volume.</summary>
 	public double CanExceedFraction;
 	///<summary>We simplify the convex shape to keep points spaced at least this far apart (except to keep the hull from collapsing to zero volume)</summary>

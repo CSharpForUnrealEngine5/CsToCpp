@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("ToolActivities/PolyEditExtrudeActivity.h")]
 public partial class UPolyEditExtrudeProperties : UInteractiveToolPropertySet {
+	public static UClass StaticClass() {return default;}
 	///<summary>How the extrude distance is set.</summary>
 	public EPolyEditExtrudeDistanceMode DistanceMode;
 	///<summary>Distance to extrude.</summary>

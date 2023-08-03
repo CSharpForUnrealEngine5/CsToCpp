@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Test object for edit condition property checks</summary>
 [CppInclude("EditConditionParserTests.h")]
 public partial class UEditConditionTestObject : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>BoolProperty</summary>
 	public bool BoolProperty;
 	///<summary>EnumProperty</summary>

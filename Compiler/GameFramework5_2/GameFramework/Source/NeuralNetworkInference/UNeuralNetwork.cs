@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>NeuralNetworkInference (NNI) is Unreal Engine&#39;s framework for running deep learning and neural network inference. It is focused on:</summary>
 [CppInclude("NeuralNetwork.h")]
 public partial class UNeuralNetwork : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>The neural device type of the network. It defines whether the network will use CPU or GPU acceleration hardware during inference (on Run).</summary>
 	public ENeuralDeviceType DeviceType;
 	///<summary>It defines whether Run() will expect the input data in CPU memory (Run will upload the memory to the GPU) or GPU memory (no upload needed).</summary>

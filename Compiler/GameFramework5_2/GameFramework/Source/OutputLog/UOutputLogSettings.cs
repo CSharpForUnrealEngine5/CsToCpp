@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Implements the Editor style settings.</summary>
 [CppInclude("OutputLogSettings.h")]
 public partial class UOutputLogSettings : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>The font size used in the output log</summary>
 	public int LogFontSize;
 	///<summary>The display mode for timestamps in the output log window</summary>

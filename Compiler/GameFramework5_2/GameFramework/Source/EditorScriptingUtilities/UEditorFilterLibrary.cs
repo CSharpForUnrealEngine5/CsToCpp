@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Utility class to filter a list of objects. Object should be in the World Editor.</summary>
 [CppInclude("EditorFilterLibrary.h")]
 public partial class UEditorFilterLibrary : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>Filter the array based on the Object&#39;s class.</summary>
 	public static TArray<UObject> ByClass(TArray<UObject> TargetArray,UClass ObjectClass,EEditorScriptingFilterType FilterType/*=EEditorScriptingFilterType.Include*/) { return default; }
 	///<summary>Filter the array based on the Object&#39;s ID name.</summary>

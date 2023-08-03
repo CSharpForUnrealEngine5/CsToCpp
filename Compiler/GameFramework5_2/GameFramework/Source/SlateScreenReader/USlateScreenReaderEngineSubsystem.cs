@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>The engine subsystem for the Slate screen reader.</summary>
 [CppInclude("SlateScreenReaderEngineSubsystem.h")]
 public partial class USlateScreenReaderEngineSubsystem : UEngineSubsystem {
+	public static UClass StaticClass() {return default;}
 	///<summary>Activates the underlying screen reader. Use this to allow screen reader users to register with the screen reader</summary>
 	public  void ActivateScreenReader() {}
 	///<summary>Deactivates the underlying screen reader and prevents screen reader users from getting</summary>

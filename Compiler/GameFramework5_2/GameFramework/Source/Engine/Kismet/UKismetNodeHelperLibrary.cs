@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Kismet/KismetNodeHelperLibrary.h")]
 public partial class UKismetNodeHelperLibrary : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>Returns whether the bit at index &quot;Index&quot; is set or not in the data</summary>
 	public static bool BitIsMarked(int Data,int Index) { return default; }
 	///<summary>Sets the bit at index &quot;Index&quot; in the data</summary>

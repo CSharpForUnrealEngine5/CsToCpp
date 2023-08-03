@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Subsystem that provides access to Content Browser data.</summary>
 [CppInclude("ContentBrowserDataSubsystem.h")]
 public partial class UContentBrowserDataSubsystem : UEditorSubsystem {
+	public static UClass StaticClass() {return default;}
 	///<summary>Attempt to activate the named data source.</summary>
 	public  bool ActivateDataSource(string Name) { return default; }
 	///<summary>Attempt to deactivate the named data source.</summary>

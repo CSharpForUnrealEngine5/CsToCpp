@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Provides persistent access to clients</summary>
 [CppInclude("MQTTSubsystem.h")]
 public partial class UMQTTSubsystem : UEngineSubsystem {
+	public static UClass StaticClass() {return default;}
 	///<summary>GetOrCreateClient_WithProjectURL</summary>
 	public static UMQTTClientObject GetOrCreateClient_WithProjectURL(UObject InParent) { return default; }
 	///<summary>GetOrCreateClient</summary>

@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Settings specifically related to the one-time destructive fracturing of a mesh *</summary>
 [CppInclude("FractureToolCutter.h")]
 public partial class UFractureCutterSettings : UFractureToolSettings {
+	public static UClass StaticClass() {return default;}
 	///<summary>Random number generator seed for repeatability. If the value is -1, a different random seed will be used every time, otherwise the specified seed will always be used</summary>
 	public int RandomSeed;
 	///<summary>Chance to fracture each selected bone. If 0, no bones will fracture; if 1, all bones will fracture.</summary>

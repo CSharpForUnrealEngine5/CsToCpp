@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Preferences/PersonaOptions.h")]
 public partial class UPersonaOptions : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Whether or not the floor should be aligned to the Skeletal Mesh&#39;s bounds by default for the Animation Editor(s)</summary>
 	public bool bAutoAlignFloorToMesh;
 	///<summary>Whether or not the Animation Editor opens in an additional tab when double clicking an animation asset or if it reuses an already existing Animation Editor tab.</summary>

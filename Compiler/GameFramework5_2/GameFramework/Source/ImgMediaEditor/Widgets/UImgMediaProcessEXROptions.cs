@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Widgets/ImgMediaProcessEXROptions.h")]
 public partial class UImgMediaProcessEXROptions : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>The directory that contains the image sequence files.</summary>
 	public FFilePath InputPath;
 	///<summary>The directory to output the processed image sequence files to.</summary>

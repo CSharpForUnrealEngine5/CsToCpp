@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Class containing definition of a navigation area</summary>
 [CppInclude("NavAreas/NavAreaMeta_SwitchByAgent.h")]
 public partial class UNavAreaMeta_SwitchByAgent : UNavAreaMeta {
+	public static UClass StaticClass() {return default;}
 	///<summary>Agent0Area</summary>
 	public UClass Agent0Area;
 	///<summary>Agent1Area</summary>

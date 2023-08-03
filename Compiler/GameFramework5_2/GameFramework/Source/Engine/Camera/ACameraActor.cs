@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A CameraActor is a camera viewpoint that can be placed in a level.</summary>
 [CppInclude("Camera/CameraActor.h")]
 public partial class ACameraActor : AActor {
+	public static UClass StaticClass() {return default;}
 	///<summary>Specifies which player controller, if any, should automatically use this Camera when the controller is active.</summary>
 	public EAutoReceiveInput AutoActivateForPlayer;
 	///<summary>The camera component for this camera</summary>

@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Per-Platform input options</summary>
 [CppInclude("GameFramework/InputSettings.h")]
 public partial class UInputPlatformSettings : UPlatformSettings {
+	public static UClass StaticClass() {return default;}
 	///<summary>Returns an array of Hardware device names from every registered platform ini.</summary>
 	public static TArray<string> GetAllHardwareDeviceNames() { return default; }
 	///<summary>The maximum position that a trigger can be set to</summary>

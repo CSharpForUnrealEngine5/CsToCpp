@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Shared between every instances of the same View class.</summary>
 [CppInclude("View/MVVMViewClass.h")]
 public partial class UMVVMViewClass : UWidgetBlueprintGeneratedClassExtension {
+	public static UClass StaticClass() {return default;}
 	///<summary>Data to retrieve/create the sources (could be viewmodel, widget, ...).</summary>
 	public TArray<FMVVMViewClass_SourceCreator> SourceCreators;
 	///<summary>CompiledBindings</summary>

@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Actor responsible for controlling a specific level sequence in the world.</summary>
 [CppInclude("LevelSequenceActor.h")]
 public partial class ALevelSequenceActor : AActor {
+	public static UClass StaticClass() {return default;}
 	///<summary>FOnLevelSequenceLoaded</summary>
 	public  void FOnLevelSequenceLoaded() {}
 	///<summary>PlaybackSettings</summary>

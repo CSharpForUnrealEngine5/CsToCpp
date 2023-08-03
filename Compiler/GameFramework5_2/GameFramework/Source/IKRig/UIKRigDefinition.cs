@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("IKRigDefinition.h")]
 public partial class UIKRigDefinition : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>The skeletal mesh to run the IK solve on (loaded into viewport).</summary>
 	public TSoftObjectPtr<USkeletalMesh> PreviewSkeletalMesh;
 	///<summary>The size of the Bones in the editor viewport. This is set by callbacks from the viewport Character&gt;Bones menu</summary>

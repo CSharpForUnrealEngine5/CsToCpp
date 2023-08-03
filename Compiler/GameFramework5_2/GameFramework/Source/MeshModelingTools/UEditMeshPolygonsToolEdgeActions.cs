@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("EditMeshPolygonsTool.h")]
 public partial class UEditMeshPolygonsToolEdgeActions : UEditMeshPolygonsToolActionPropertySet {
+	public static UClass StaticClass() {return default;}
 	///<summary>Merge selected edges, moving the first edge to the second</summary>
 	public  void Weld() {}
 	///<summary>Make each selected polygroup edge follow a straight path between its endpoints</summary>

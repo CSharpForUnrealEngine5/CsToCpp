@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("NiagaraNodeCustomHlsl.h")]
 public partial class UNiagaraNodeCustomHlsl : UNiagaraNodeFunctionCall {
+	public static UClass StaticClass() {return default;}
 	///<summary>ScriptUsage</summary>
 	public ENiagaraScriptUsage ScriptUsage;
 	///<summary>CustomHlsl</summary>

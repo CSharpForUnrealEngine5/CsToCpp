@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("ClothPaintSettings.h")]
 public partial class UClothPainterSettings : UMeshPaintSettings {
+	public static UClass StaticClass() {return default;}
 	///<summary>When painting float/1D values, this is considered the zero or black point</summary>
 	public float ViewMin;
 	///<summary>When painting float/1D values, this is considered the one or white point</summary>

@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Kismet/KismetMathLibrary.h")]
 public partial class UKismetMathLibrary : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>Returns a uniformly distributed random bool</summary>
 	public static bool RandomBool() { return default; }
 	///<summary>Get a random chance with the specified weight. Range of weight is 0.0 - 1.0 E.g.,</summary>

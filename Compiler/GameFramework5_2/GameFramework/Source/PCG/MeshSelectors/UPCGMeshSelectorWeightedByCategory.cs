@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("MeshSelectors/PCGMeshSelectorWeightedByCategory.h")]
 public partial class UPCGMeshSelectorWeightedByCategory : UPCGMeshSelectorBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>CategoryAttribute</summary>
 	public string CategoryAttribute;
 	///<summary>Entries</summary>

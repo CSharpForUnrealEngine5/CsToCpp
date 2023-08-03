@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Settings for the Paper2D tile set editor</summary>
 [CppInclude("TileSetEditor/TileSetEditorSettings.h")]
 public partial class UTileSetEditorSettings : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Default background color for new tile set assets</summary>
 	public FColor DefaultBackgroundColor;
 	///<summary>Should the grid be shown by default when the editor is opened?</summary>

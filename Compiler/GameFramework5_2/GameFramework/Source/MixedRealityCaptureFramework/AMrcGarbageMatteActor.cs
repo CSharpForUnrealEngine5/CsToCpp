@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("MrcGarbageMatteCaptureComponent.h")]
 public partial class AMrcGarbageMatteActor : AActor {
+	public static UClass StaticClass() {return default;}
 	///<summary>ApplyCalibrationData</summary>
 	public  void ApplyCalibrationData(TArray<FMrcGarbageMatteSaveData> GarbageMatteData) {}
 	///<summary>AddNewGabageMatte</summary>

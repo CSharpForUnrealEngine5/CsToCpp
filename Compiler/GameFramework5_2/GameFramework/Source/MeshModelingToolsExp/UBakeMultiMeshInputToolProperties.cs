@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("BakeMultiMeshAttributeMapsTool.h")]
 public partial class UBakeMultiMeshInputToolProperties : UInteractiveToolPropertySet {
+	public static UClass StaticClass() {return default;}
 	///<summary>Target mesh to sample to</summary>
 	public UStaticMesh TargetStaticMesh;
 	///<summary>Target mesh to sample to</summary>

@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("EnvironmentQuery/EnvQueryManager.h")]
 public partial class UEnvQueryManager : UAISubsystem {
+	public static UClass StaticClass() {return default;}
 	///<summary>RunEQSQuery</summary>
 	public static UEnvQueryInstanceBlueprintWrapper RunEQSQuery(UObject WorldContextObject,UEnvQuery QueryTemplate,UObject Querier,EEnvQueryRunMode RunMode,UClass WrapperClass) { return default; }
 	///<summary>cache of instances</summary>

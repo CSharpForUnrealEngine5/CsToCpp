@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>The Node represents a single statement within a Graph.</summary>
 [CppInclude("RigVMModel/RigVMNode.h")]
 public partial class URigVMNode : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Returns the a . separated string containing all of the</summary>
 	public  string GetNodePath(bool bRecursive/*=false*/) { return default; }
 	///<summary>Returns the current index of the Node within the Graph.</summary>

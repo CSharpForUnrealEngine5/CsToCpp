@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Elements/PCGDensityNoise.h")]
 public partial class UPCGDensityNoiseSettings : UPCGSettings {
+	public static UClass StaticClass() {return default;}
 	///<summary>Density = (OriginalDensity op DensityNoise), DensityNoise in [DensityNoiseMin, DensityNoiseMax]</summary>
 	public EPCGDensityNoiseMode DensityMode;
 	///<summary>DensityNoiseMin</summary>

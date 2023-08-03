@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A base class for all Movie Render Pipeline settings.</summary>
 [CppInclude("MoviePipelineSetting.h")]
 public partial class UMoviePipelineSetting : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>BuildNewProcessCommandLine</summary>
 	public  void BuildNewProcessCommandLine(string InOutUnrealURLParams,string InOutCommandLineArgs) {}
 	///<summary>BuildNewProcessCommandLineArgs</summary>

@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A slot for UGridPanel, these slots all share the same size as the largest slot</summary>
 [CppInclude("Components/GridSlot.h")]
 public partial class UGridSlot : UPanelSlot {
+	public static UClass StaticClass() {return default;}
 	///<summary>The padding area between the slot and the content it contains.</summary>
 	public FMargin Padding;
 	///<summary>The alignment of the object horizontally.</summary>

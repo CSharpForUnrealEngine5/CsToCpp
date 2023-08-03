@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Point filter that allows to do &quot;A op B&quot; type filtering, where A is the input spatial data,</summary>
 [CppInclude("Elements/PCGPointFilter.h")]
 public partial class UPCGPointFilterSettings : UPCGSettings {
+	public static UClass StaticClass() {return default;}
 	///<summary>Operator</summary>
 	public EPCGPointFilterOperator Operator;
 	///<summary>Target property/attribute related properties</summary>

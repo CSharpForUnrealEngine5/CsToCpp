@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Animation/AnimNotifies/AnimNotify.h")]
 public partial class UAnimNotify : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Implementable event to get a custom name for the notify</summary>
 	public  string GetNotifyName() { return default; }
 	///<summary>Received_Notify</summary>

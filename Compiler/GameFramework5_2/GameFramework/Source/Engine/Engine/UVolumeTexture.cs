@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Engine/VolumeTexture.h")]
 public partial class UVolumeTexture : UTexture {
+	public static UClass StaticClass() {return default;}
 	///<summary>A (optional) reference texture from which the volume texture was built</summary>
 	public UTexture2D Source2DTexture;
 	///<summary>SourceLightingGuid_DEPRECATED</summary>

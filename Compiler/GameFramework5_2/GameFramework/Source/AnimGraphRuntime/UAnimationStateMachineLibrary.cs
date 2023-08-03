@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Exposes operations to be performed on anim state machine node contexts</summary>
 [CppInclude("AnimationStateMachineLibrary.h")]
 public partial class UAnimationStateMachineLibrary : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>Get an anim state reference from an anim node reference</summary>
 	public static void ConvertToAnimationStateResult(FAnimNodeReference Node,FAnimationStateResultReference AnimationState,EAnimNodeReferenceConversionResult Result) {}
 	///<summary>Get an anim state reference from an anim node reference (pure)</summary>

@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("InterchangeMaterialFactoryNode.h")]
 public partial class UInterchangeMaterialFunctionFactoryNode : UInterchangeBaseMaterialFactoryNode {
+	public static UClass StaticClass() {return default;}
 	///<summary>GetObjectClass</summary>
 	public  UClass GetObjectClass() { return default; }
 	///<summary>GetInputConnection</summary>

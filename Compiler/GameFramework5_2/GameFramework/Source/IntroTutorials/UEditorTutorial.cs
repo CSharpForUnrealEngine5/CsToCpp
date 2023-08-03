@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>An asset used to build a stage-by-stage tutorial in the editor</summary>
 [CppInclude("EditorTutorial.h")]
 public partial class UEditorTutorial : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Title of this tutorial, used when presented to the user</summary>
 	public string Title;
 	///<summary>Sorting priority, used by the tutorial browser</summary>

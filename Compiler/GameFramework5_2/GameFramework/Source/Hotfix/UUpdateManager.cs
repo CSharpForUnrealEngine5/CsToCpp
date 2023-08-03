@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Update manager</summary>
 [CppInclude("UpdateManager.h")]
 public partial class UUpdateManager : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Amount of time to wait between the internal hotfix check completing and advancing to the next stage</summary>
 	public float HotfixCheckCompleteDelay;
 	///<summary>Amount of time to wait at the end of the entire check before notifying listening entities</summary>

@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Simple object intended to be used as part of 3D Gizmos.</summary>
 [CppInclude("BaseGizmos/GizmoElementRectangle.h")]
 public partial class UGizmoElementRectangle : UGizmoElementLineBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>Location of rectangle center</summary>
 	public FVector Center;
 	///<summary>Width</summary>

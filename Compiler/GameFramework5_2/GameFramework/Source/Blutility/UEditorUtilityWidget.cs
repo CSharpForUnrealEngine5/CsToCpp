@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("EditorUtilityWidget.h")]
 public partial class UEditorUtilityWidget : UUserWidget {
+	public static UClass StaticClass() {return default;}
 	///<summary>The default action called when the widget is invoked if bAutoRunDefaultAction=true (it is never called otherwise)</summary>
 	public  void Run() {}
 	///<summary>The display name for tabs spawned with this widget</summary>

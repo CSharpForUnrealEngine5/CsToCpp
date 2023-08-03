@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>An asset used to track collections of console variables that can be recalled and edited using the Console Variables Editor.</summary>
 [CppInclude("ConsoleVariablesAsset.h")]
 public partial class UConsoleVariablesAsset : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Sets a description for this variable collection.</summary>
 	public  void SetVariableCollectionDescription(string InVariableCollectionDescription) {}
 	///<summary>GetVariableCollectionDescription</summary>

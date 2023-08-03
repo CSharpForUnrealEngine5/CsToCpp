@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Exposes the oculus id of the Platform SDK for blueprint use.</summary>
 [CppInclude("OculusIdentityCallbackProxy.h")]
 public partial class UOculusIdentityCallbackProxy : UOnlineBlueprintCallProxyBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>Called when it successfully gets back the oculus id</summary>
 	public FOculusIdentitySuccessResult OnSuccess;
 	///<summary>Called when it fails to get the oculus id</summary>

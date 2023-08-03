@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("SoundscapeSubsystem.h")]
 public partial class USoundscapeColorPointHashMapCollection : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Color Point Hash Maps</summary>
 	public USoundscapeColorPointHashMap ColorPointHashMapLOD1;
 	///<summary>ColorPointHashMapLOD2</summary>

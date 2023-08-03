@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>This is the implementation responsible for executing the rendering of</summary>
 [CppInclude("MoviePipelinePIEExecutor.h")]
 public partial class UMoviePipelinePIEExecutor : UMoviePipelineLinearExecutorBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>SetInitializationTime</summary>
 	public  void SetInitializationTime(FDateTime InInitializationTime) {}
 	///<summary>Should it render without any UI elements showing up (such as the rendering progress window)?</summary>

@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("DMXProtocolBlueprintLibrary.h")]
 public partial class UDMXProtocolBlueprintLibrary : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>Sets if DMX is sent to the network</summary>
 	public static void SetSendDMXEnabled(bool bSendDMXEnabled/*=true*/,bool bAffectEditor/*=false*/) {}
 	///<summary>Returns whether send DMX to the network is enabled globally.</summary>

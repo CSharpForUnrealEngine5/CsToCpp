@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("MeshSelectionTool.h")]
 public partial class UMeshSelectionTool : UDynamicMeshBrushTool {
+	public static UClass StaticClass() {return default;}
 	///<summary>SelectionProps</summary>
 	public UMeshSelectionToolProperties SelectionProps;
 	///<summary>SelectionActions</summary>

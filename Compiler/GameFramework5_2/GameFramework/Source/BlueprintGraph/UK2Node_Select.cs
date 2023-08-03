@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("K2Node_Select.h")]
 public partial class UK2Node_Select : UK2Node {
+	public static UClass StaticClass() {return default;}
 	///<summary>The number of selectable options this node currently has</summary>
 	public int NumOptionPins;
 	///<summary>The pin type of the index pin</summary>

@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("ActorRecording.h")]
 public partial class UActorRecording : USequenceRecordingBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>ActorSettings</summary>
 	public FActorRecordingSettings ActorSettings;
 	///<summary>Whether this actor is active and to be recorded when the &#39;Record&#39; button is pressed.</summary>

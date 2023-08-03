@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("XRCreativeSettings.h")]
 public partial class UXRCreativeSettings : UDeveloperSettingsBackedByCVars {
+	public static UClass StaticClass() {return default;}
 	///<summary>bUseImperial</summary>
 	public bool bUseImperial;
 	///<summary>FloatArray</summary>

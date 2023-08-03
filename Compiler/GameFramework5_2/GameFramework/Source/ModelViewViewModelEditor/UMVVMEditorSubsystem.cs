@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("MVVMEditorSubsystem.h")]
 public partial class UMVVMEditorSubsystem : UEditorSubsystem {
+	public static UClass StaticClass() {return default;}
 	///<summary>RequestView</summary>
 	public  UMVVMBlueprintView RequestView(UWidgetBlueprint WidgetBlueprint) { return default; }
 	///<summary>GetView</summary>

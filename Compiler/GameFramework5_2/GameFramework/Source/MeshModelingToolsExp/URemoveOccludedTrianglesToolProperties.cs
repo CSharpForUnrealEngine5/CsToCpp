@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Standard properties</summary>
 [CppInclude("RemoveOccludedTrianglesTool.h")]
 public partial class URemoveOccludedTrianglesToolProperties : UInteractiveToolPropertySet {
+	public static UClass StaticClass() {return default;}
 	///<summary>The method for deciding whether a triangle is occluded</summary>
 	public EOcclusionCalculationUIMode OcclusionTestMethod;
 	///<summary>Where to sample triangles to test occlusion</summary>

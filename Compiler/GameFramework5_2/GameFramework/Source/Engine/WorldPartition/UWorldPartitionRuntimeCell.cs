@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Represents a PIE/Game streaming cell which points to external actor/data chunk packages</summary>
 [CppInclude("WorldPartition/WorldPartitionRuntimeCell.h")]
 public partial class UWorldPartitionRuntimeCell : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>UnsavedActorsContainer</summary>
 	public UActorContainer UnsavedActorsContainer;
 	///<summary>bIsAlwaysLoaded</summary>

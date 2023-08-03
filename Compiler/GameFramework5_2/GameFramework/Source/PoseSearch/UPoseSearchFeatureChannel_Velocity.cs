@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("PoseSearchFeatureChannel_Velocity.h")]
 public partial class UPoseSearchFeatureChannel_Velocity : UPoseSearchFeatureChannel {
+	public static UClass StaticClass() {return default;}
 	///<summary>Bone</summary>
 	public FBoneReference Bone;
 	///<summary>Weight</summary>

@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>UParameterizeMeshTool automatically decomposes the input mesh into charts, solves for UVs,</summary>
 [CppInclude("ParameterizeMeshTool.h")]
 public partial class UParameterizeMeshTool : USingleSelectionMeshEditingTool {
+	public static UClass StaticClass() {return default;}
 	///<summary>UVChannelProperties</summary>
 	public UMeshUVChannelProperties UVChannelProperties;
 	///<summary>Settings</summary>

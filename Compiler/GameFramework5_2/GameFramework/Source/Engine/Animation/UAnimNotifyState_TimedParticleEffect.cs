@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Timed Particle Effect Notify</summary>
 [CppInclude("Animation/AnimNotifies/AnimNotifyState_TimedParticleEffect.h")]
 public partial class UAnimNotifyState_TimedParticleEffect : UAnimNotifyState {
+	public static UClass StaticClass() {return default;}
 	///<summary>The particle system to spawn for the notify state</summary>
 	public UParticleSystem PSTemplate;
 	///<summary>The socket or bone to attach the system to</summary>

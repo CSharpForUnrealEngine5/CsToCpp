@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("LidarPointCloudActor.h")]
 public partial class ALidarPointCloudActor : AActor {
+	public static UClass StaticClass() {return default;}
 	///<summary>PointCloudComponent</summary>
 	public ULidarPointCloudComponent PointCloudComponent;
 	///<summary>GetPointCloud</summary>

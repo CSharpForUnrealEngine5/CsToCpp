@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("NiagaraDataInterfaceAudioPlayer.h")]
 public partial class UNiagaraDataInterfaceAudioPlayerSettings : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>bOverrideConcurrency</summary>
 	public bool bOverrideConcurrency;
 	///<summary>Concurrency</summary>

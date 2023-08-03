@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>-&gt; will be exported to EngineDecalClasses.h</summary>
 [CppInclude("Components/SceneCaptureComponent.h")]
 public partial class USceneCaptureComponent : USceneComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>Controls what primitives get rendered into the scene capture.</summary>
 	public ESceneCapturePrimitiveRenderMode PrimitiveRenderMode;
 	///<summary>CaptureSource</summary>

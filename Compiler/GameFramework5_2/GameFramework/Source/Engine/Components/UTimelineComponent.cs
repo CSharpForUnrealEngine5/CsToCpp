@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>TimelineComponent holds a series of events, floats, vectors or colors with associated keyframes.</summary>
 [CppInclude("Components/TimelineComponent.h")]
 public partial class UTimelineComponent : UActorComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>The actual timeline structure</summary>
 	public FTimeline TheTimeline;
 	///<summary>True if global time dilation should be ignored by this timeline, false otherwise.</summary>

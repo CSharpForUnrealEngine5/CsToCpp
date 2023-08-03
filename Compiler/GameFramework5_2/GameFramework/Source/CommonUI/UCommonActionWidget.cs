@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A widget that shows a platform-specific icon for the given input action.</summary>
 [CppInclude("CommonActionWidget.h")]
 public partial class UCommonActionWidget : UWidget {
+	public static UClass StaticClass() {return default;}
 	///<summary>End UWidet</summary>
 	public  FSlateBrush GetIcon() { return default; }
 	///<summary>GetDisplayText</summary>

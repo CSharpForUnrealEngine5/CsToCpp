@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("GameMapsSettings.h")]
 public partial class UGameMapsSettings : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>If set, this map will be loaded when the Editor starts up.</summary>
 	public FSoftObjectPath EditorStartupMap;
 	///<summary>Map templates that should show up in the new level dialog. This will completely override the default maps chosen by the default editor</summary>

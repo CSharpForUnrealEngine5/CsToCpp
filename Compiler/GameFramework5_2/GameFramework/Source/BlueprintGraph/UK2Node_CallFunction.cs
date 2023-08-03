@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("K2Node_CallFunction.h")]
 public partial class UK2Node_CallFunction : UK2Node {
+	public static UClass StaticClass() {return default;}
 	///<summary>Indicates that this is a call to a pure function</summary>
 	public bool bIsPureFunc;
 	///<summary>Indicates that this is a call to a const function</summary>

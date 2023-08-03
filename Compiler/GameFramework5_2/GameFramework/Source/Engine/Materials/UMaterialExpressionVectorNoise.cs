@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Materials/MaterialExpressionVectorNoise.h")]
 public partial class UMaterialExpressionVectorNoise : UMaterialExpression {
+	public static UClass StaticClass() {return default;}
 	///<summary>2 to 3 dimensional vector</summary>
 	public FExpressionInput Position;
 	///<summary>Noise function, affects performance and look</summary>

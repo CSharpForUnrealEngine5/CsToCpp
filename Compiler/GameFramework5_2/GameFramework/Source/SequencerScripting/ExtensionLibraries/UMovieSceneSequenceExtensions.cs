@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Function library containing methods that should be hoisted onto UMovieSceneSequences for scripting purposes</summary>
 [CppInclude("ExtensionLibraries/MovieSceneSequenceExtensions.h")]
 public partial class UMovieSceneSequenceExtensions : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>Get this sequence&#39;s movie scene data</summary>
 	public static UMovieScene GetMovieScene(UMovieSceneSequence Sequence) { return default; }
 	///<summary>Get all tracks</summary>

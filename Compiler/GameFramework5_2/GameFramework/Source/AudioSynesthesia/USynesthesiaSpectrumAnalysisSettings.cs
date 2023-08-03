@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>USynesthesiaSpectrumAnalysisSettings</summary>
 [CppInclude("SynesthesiaSpectrumAnalysis.h")]
 public partial class USynesthesiaSpectrumAnalysisSettings : UAudioSynesthesiaSettings {
+	public static UClass StaticClass() {return default;}
 	///<summary>Number of seconds between SynesthesiaSpectrumAnalysis measurements</summary>
 	public float AnalysisPeriod;
 	///<summary>Size of FFT.</summary>

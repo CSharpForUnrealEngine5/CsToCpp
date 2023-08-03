@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("NiagaraNodeFunctionCall.h")]
 public partial class UNiagaraNodeFunctionCall : UNiagaraNodeWithDynamicPins {
+	public static UClass StaticClass() {return default;}
 	///<summary>FunctionScript</summary>
 	public UNiagaraScript FunctionScript;
 	///<summary>SelectedScriptVersion</summary>

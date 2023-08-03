@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("CinePrestreamingEditorSubsystem.h")]
 public partial class UCinePrestreamingEditorSubsystem : UEditorSubsystem {
+	public static UClass StaticClass() {return default;}
 	///<summary>IsRendering</summary>
 	public  bool IsRendering() { return default; }
 	///<summary>GeneratePrestreamingAsset</summary>

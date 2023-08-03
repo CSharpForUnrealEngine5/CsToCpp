@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Implements the settings for the Android runtime platform.</summary>
 [CppInclude("AndroidRuntimeSettings.h")]
 public partial class UAndroidRuntimeSettings : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>The official name of the product (same as the name you use on the Play Store web site). Note: Must have at least 2 sections separated by a period and be unique!</summary>
 	public string PackageName;
 	///<summary>The version number used to indicate newer versions in the Store</summary>

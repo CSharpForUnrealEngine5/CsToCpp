@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>UNiagaraComponent is the primitive component for a Niagara System.</summary>
 [CppInclude("NiagaraComponent.h")]
 public partial class UNiagaraComponent : UFXSystemComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>Asset</summary>
 	public UNiagaraSystem Asset;
 	///<summary>Allows you to control how Niagara selects the tick group, changing this while an instance is active will result in not change as it is cached.</summary>

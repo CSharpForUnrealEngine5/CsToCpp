@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("ParametricSurfaceData.h")]
 public partial class UParametricSurfaceData : UDatasmithAdditionalData {
+	public static UClass StaticClass() {return default;}
 	///<summary>SceneParameters</summary>
 	public FParametricSceneParameters SceneParameters;
 	///<summary>MeshParameters</summary>

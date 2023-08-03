@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>This pawn can be used to easily move around the globe while maintaining a</summary>
 [CppInclude("RoundPlanetPawn.h")]
 public partial class ARoundPlanetPawn : ADefaultPawn {
+	public static UClass StaticClass() {return default;}
 	///<summary>This curve dictates what percentage of the max altitude the pawn should take at a given time on the curve.</summary>
 	public UCurveFloat AltitudeProfileCurve;
 	///<summary>This curve is used to pick up a reference the maximum altitude when flying to a location.</summary>

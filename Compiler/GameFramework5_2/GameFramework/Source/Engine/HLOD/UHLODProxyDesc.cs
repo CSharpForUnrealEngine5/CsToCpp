@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Describe a LODActor</summary>
 [CppInclude("HLOD/HLODProxyDesc.h")]
 public partial class UHLODProxyDesc : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>SubActors</summary>
 	public TArray<string> SubActors;
 	///<summary>StaticMesh</summary>

@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>NavMovementComponent defines base functionality for MovementComponents that move any &#39;agent&#39; that may be involved in AI pathfinding.</summary>
 [CppInclude("GameFramework/NavMovementComponent.h")]
 public partial class UNavMovementComponent : UMovementComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>Properties that define how the component can move.</summary>
 	public FNavAgentProperties NavAgentProps;
 	///<summary>Braking distance override used with acceleration driven path following (bUseAccelerationForPaths)</summary>

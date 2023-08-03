@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Interface class for Geo tracking related features.</summary>
 [CppInclude("ARGeoTrackingSupport.h")]
 public partial class UARGeoTrackingSupport : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>@return the interface object to support Geo tracking, return null on platforms don&#39;t support the feature.</summary>
 	public static UARGeoTrackingSupport GetGeoTrackingSupport() { return default; }
 	///<summary>@return the current session&#39;s Geo tracking state.</summary>

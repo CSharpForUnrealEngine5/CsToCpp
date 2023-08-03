@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>@TODO: Add comments/tooltips.</summary>
 [CppInclude("AnimationModifiers/OrientationWarpingModifier.h")]
 public partial class UOrientationWarpingModifier : UAnimationModifier {
+	public static UClass StaticClass() {return default;}
 	///<summary>EnableWarpingCurveName</summary>
 	public string EnableWarpingCurveName;
 	///<summary>EnableOffsetCurveName</summary>

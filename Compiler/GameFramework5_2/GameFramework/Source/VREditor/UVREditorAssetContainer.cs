@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Asset container for VREditor.</summary>
 [CppInclude("VREditorAssetContainer.h")]
 public partial class UVREditorAssetContainer : UDataAsset {
+	public static UClass StaticClass() {return default;}
 	///<summary>Sounds</summary>
 	public USoundBase DockableWindowCloseSound;
 	///<summary>DockableWindowOpenSound</summary>

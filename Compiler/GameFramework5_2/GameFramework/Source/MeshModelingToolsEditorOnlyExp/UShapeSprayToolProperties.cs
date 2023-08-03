@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Settings UObject for UShapeSprayTool.</summary>
 [CppInclude("ShapeSprayTool.h")]
 public partial class UShapeSprayToolProperties : UInteractiveToolPropertySet {
+	public static UClass StaticClass() {return default;}
 	///<summary>Color</summary>
 	public FLinearColor Color;
 	///<summary>bRandomColor</summary>

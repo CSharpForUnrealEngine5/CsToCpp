@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Class representing an instance of an Optimus Mesh Deformer.</summary>
 [CppInclude("OptimusDeformerInstance.h")]
 public partial class UOptimusDeformerInstance : UMeshDeformerInstance {
+	public static UClass StaticClass() {return default;}
 	///<summary>Set the value of a boolean variable.</summary>
 	public  bool SetBoolVariable(string InVariableName,bool InValue) { return default; }
 	///<summary>Set the value of an integer variable.</summary>

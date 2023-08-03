@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Base class of UnrealEd brush builders.</summary>
 [CppInclude("Engine/BrushBuilder.h")]
 public partial class UBrushBuilder : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>BitmapFilename</summary>
 	public string BitmapFilename;
 	///<summary>localized FString that will be displayed as the name of this brush builder in the editor</summary>

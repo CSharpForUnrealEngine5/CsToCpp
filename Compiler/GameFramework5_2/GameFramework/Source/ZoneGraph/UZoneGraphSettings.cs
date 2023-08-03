@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Implements the settings for the ZoneGraph plugin.</summary>
 [CppInclude("ZoneGraphSettings.h")]
 public partial class UZoneGraphSettings : UDeveloperSettings {
+	public static UClass StaticClass() {return default;}
 	///<summary>LaneProfiles</summary>
 	public TArray<FZoneLaneProfile> LaneProfiles;
 	///<summary>Tags</summary>

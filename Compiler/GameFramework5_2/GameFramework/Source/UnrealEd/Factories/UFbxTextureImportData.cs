@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Import data and options used when importing any mesh from FBX</summary>
 [CppInclude("Factories/FbxTextureImportData.h")]
 public partial class UFbxTextureImportData : UFbxAssetImportData {
+	public static UClass StaticClass() {return default;}
 	///<summary>If importing textures is enabled, this option will cause normal map Y (Green) values to be inverted</summary>
 	public bool bInvertNormalMaps;
 	///<summary>Specify where we should search for matching materials when importing</summary>

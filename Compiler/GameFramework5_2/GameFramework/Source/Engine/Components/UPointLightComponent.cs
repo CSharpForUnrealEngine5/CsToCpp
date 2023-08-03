@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A light component which emits light from a single point equally in all directions.</summary>
 [CppInclude("Components/PointLightComponent.h")]
 public partial class UPointLightComponent : ULocalLightComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>Whether to use physically based inverse squared distance falloff, where AttenuationRadius is only clamping the light&#39;s contribution.</summary>
 	public bool bUseInverseSquaredFalloff;
 	///<summary>Controls the radial falloff of the light when UseInverseSquaredFalloff is disabled.</summary>

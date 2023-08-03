@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A gameplay ability that plays a single montage and applies a GameplayEffect</summary>
 [CppInclude("Abilities/GameplayAbility_Montage.h")]
 public partial class UGameplayAbility_Montage : UGameplayAbility {
+	public static UClass StaticClass() {return default;}
 	///<summary>MontageToPlay</summary>
 	public UAnimMontage MontageToPlay;
 	///<summary>PlayRate</summary>

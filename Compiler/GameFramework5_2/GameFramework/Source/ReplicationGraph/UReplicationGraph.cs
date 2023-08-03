@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Manages actor replication for an entire world / net driver</summary>
 [CppInclude("ReplicationGraph.h")]
 public partial class UReplicationGraph : UReplicationDriver {
+	public static UClass StaticClass() {return default;}
 	///<summary>The per-connection manager class to instantiate. This will be read off the instantiated UNetReplicationManager.</summary>
 	public UClass ReplicationConnectionManagerClass;
 	///<summary>NetDriver</summary>

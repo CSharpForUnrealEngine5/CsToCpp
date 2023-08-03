@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Library of functions that can be used via Python scripting to help testing the other USD functionality</summary>
 [CppInclude("USDTestsBlueprintLibrary.h")]
 public partial class USDTestsBlueprintLibrary : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>Helps test the effects of blueprint recompilation on the spawned actors and assets when a stage is opened.</summary>
 	public static bool RecompileBlueprintStageActor(AUsdStageActor BlueprintDerivedStageActor) { return default; }
 	///<summary>Intentionally dirties the UBlueprint for the given stage actor&#39;s generated class.</summary>

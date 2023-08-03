@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Base Tool for mesh sculpting tools, provides some shared functionality</summary>
 [CppInclude("Sculpting/MeshSculptToolBase.h")]
 public partial class UMeshSculptToolBase : UMeshSurfacePointTool {
+	public static UClass StaticClass() {return default;}
 	///<summary>Properties that control brush size/etc</summary>
 	public USculptBrushProperties BrushProperties;
 	///<summary>Properties for 3D workplane / gizmo</summary>

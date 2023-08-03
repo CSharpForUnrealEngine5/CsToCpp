@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>GeometryCacheComponent, encapsulates a GeometryCache asset instance and implements functionality for rendering/and playback of GeometryCaches</summary>
 [CppInclude("GeometryCacheComponent.h")]
 public partial class UGeometryCacheComponent : UMeshComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>Start playback of GeometryCache</summary>
 	public  void Play() {}
 	///<summary>Start playback of GeometryCache from the start</summary>

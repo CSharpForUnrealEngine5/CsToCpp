@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Lightweight representation of a player while connected to the game through the lobby</summary>
 [CppInclude("LobbyBeaconPlayerState.h")]
 public partial class ALobbyBeaconPlayerState : AInfo {
+	public static UClass StaticClass() {return default;}
 	///<summary>Visible friendly player name</summary>
 	public string DisplayName;
 	///<summary>Player unique id</summary>

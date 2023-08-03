@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("PropertySets/VoxelProperties.h")]
 public partial class UVoxelProperties : UInteractiveToolPropertySet {
+	public static UClass StaticClass() {return default;}
 	///<summary>The size of the geometry bounding box major axis measured in voxels</summary>
 	public int VoxelCount;
 	///<summary>Automatically simplify the result of voxel-based meshes.</summary>

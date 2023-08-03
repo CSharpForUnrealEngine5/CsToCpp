@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Draws a profile curve and revolves it around an axis.</summary>
 [CppInclude("DrawAndRevolveTool.h")]
 public partial class UDrawAndRevolveTool : UInteractiveTool {
+	public static UClass StaticClass() {return default;}
 	///<summary>ControlPointsMechanic</summary>
 	public UCurveControlPointsMechanic ControlPointsMechanic;
 	///<summary>PlaneMechanic</summary>

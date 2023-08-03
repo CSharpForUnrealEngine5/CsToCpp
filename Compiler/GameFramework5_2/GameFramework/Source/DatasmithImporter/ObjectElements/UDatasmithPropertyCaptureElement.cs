@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>* UDatasmithPropertyCaptureElement</summary>
 [CppInclude("ObjectElements/DatasmithUObjectElements.h")]
 public partial class UDatasmithPropertyCaptureElement : UDatasmithBasePropertyCaptureElement {
+	public static UClass StaticClass() {return default;}
 	///<summary>Get the recorded value for this property as a boolean.</summary>
 	public  bool GetValueBool() { return default; }
 	///<summary>Set the recorded value for this capture</summary>

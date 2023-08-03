@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A drawing canvas.</summary>
 [CppInclude("Engine/Canvas.h")]
 public partial class UCanvas : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Modifiable properties.</summary>
 	public float OrgX;
 	///<summary>Origin for drawing in X.</summary>

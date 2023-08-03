@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Components/SafeZoneSlot.h")]
 public partial class USafeZoneSlot : UPanelSlot {
+	public static UClass StaticClass() {return default;}
 	///<summary>bIsTitleSafe</summary>
 	public bool bIsTitleSafe;
 	///<summary>SafeAreaScale</summary>

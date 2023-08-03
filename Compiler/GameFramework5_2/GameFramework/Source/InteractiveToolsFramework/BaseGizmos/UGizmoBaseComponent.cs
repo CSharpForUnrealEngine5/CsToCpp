@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Base class for simple Components intended to be used as part of 3D Gizmos.</summary>
 [CppInclude("BaseGizmos/GizmoBaseComponent.h")]
 public partial class UGizmoBaseComponent : UPrimitiveComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>Color</summary>
 	public FLinearColor Color;
 	///<summary>HoverSizeMultiplier</summary>

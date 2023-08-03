@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>This Match &amp; Set object looks up an attribute on a given point,</summary>
 [CppInclude("MatchAndSet/PCGMatchAndSetByAttribute.h")]
 public partial class UPCGMatchAndSetByAttribute : UPCGMatchAndSetBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>Attribute to match on the data</summary>
 	public string MatchSourceAttribute;
 	///<summary>Type of the attribute to match against.</summary>

@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Distributions/DistributionVectorUniform.h")]
 public partial class UDistributionVectorUniform : UDistributionVector {
+	public static UClass StaticClass() {return default;}
 	///<summary>Upper end of FVector magnitude range.</summary>
 	public FVector Max;
 	///<summary>Lower end of FVector magnitude range.</summary>

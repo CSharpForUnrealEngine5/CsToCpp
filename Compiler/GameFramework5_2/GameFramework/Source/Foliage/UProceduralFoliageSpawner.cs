@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("ProceduralFoliageSpawner.h")]
 public partial class UProceduralFoliageSpawner : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>The seed used for generating the randomness of the simulation.</summary>
 	public int RandomSeed;
 	///<summary>Length of the tile (in cm) along one axis. The total area of the tile will be TileSize*TileSize.</summary>

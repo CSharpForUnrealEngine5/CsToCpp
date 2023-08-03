@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Defines a curve of interpolated points to evaluate over a given range</summary>
 [CppInclude("Curves/CurveBase.h")]
 public partial class UCurveBase : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Get the time range across all curves</summary>
 	public  void GetTimeRange(float MinTime,float MaxTime) {}
 	///<summary>Get the value range across all curves</summary>

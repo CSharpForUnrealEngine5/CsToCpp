@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A material expression that computes a left-right split matte, split at a specified u value.</summary>
 [CppInclude("MaterialX/MaterialExpressionSplitLeftRight.h")]
 public partial class UMaterialExpressionSplitLeftRight : UMaterialExpression {
+	public static UClass StaticClass() {return default;}
 	///<summary>Defaults to &#39;ConstCoordinate&#39; if not specified</summary>
 	public FExpressionInput Coordinates;
 	///<summary>A</summary>

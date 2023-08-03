@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("WorldPartition/DataLayer/DataLayer.h")]
 public partial class UDEPRECATED_DataLayer : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Equals</summary>
 	public  bool Equals(FActorDataLayer ActorDataLayer) { return default; }
 	///<summary>GetDataLayerLabel</summary>

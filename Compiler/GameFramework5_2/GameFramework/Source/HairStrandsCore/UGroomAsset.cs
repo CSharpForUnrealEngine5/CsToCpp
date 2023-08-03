@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Implements an asset that can be used to store hair strands</summary>
 [CppInclude("GroomAsset.h")]
 public partial class UGroomAsset : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>HairGroupsInfo</summary>
 	public TArray<FHairGroupInfoWithVisibility> HairGroupsInfo;
 	///<summary>HairGroupsRendering</summary>

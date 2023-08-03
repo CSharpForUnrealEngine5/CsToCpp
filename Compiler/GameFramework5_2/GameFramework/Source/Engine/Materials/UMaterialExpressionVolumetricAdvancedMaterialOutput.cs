@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Material output expression for writing advanced volumetric material properties.</summary>
 [CppInclude("Materials/MaterialExpressionVolumetricAdvancedMaterialOutput.h")]
 public partial class UMaterialExpressionVolumetricAdvancedMaterialOutput : UMaterialExpressionCustomOutput {
+	public static UClass StaticClass() {return default;}
 	///<summary>Parameter &#39;g&#39; input to the phase function  describing how much forward(g&lt;0) or backward (g&gt;0) light scatter around. Valid range is [-1,1]. Defaults to ConstPhaseG from properties panel if not specified. Evaluated per sample if EvaluatePhaseOncePerSample is true.</summary>
 	public FExpressionInput PhaseG;
 	///<summary>Parameter &#39;g&#39; input to the second phase function  describing how much forward(g&lt;0) or backward (g&gt;0) light scatter around. Valid range is [-1,1]. Defaults to ConstPhaseG2 from properties panel if not specified. Evaluated per sample if EvaluatePhaseOncePerSample is true.</summary>

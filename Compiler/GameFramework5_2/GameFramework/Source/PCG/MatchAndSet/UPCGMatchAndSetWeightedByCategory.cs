@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("MatchAndSet/PCGMatchAndSetWeightedByCategory.h")]
 public partial class UPCGMatchAndSetWeightedByCategory : UPCGMatchAndSetBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>Attribute to match against</summary>
 	public string CategoryAttribute;
 	///<summary>Type of the attribute to match against.</summary>

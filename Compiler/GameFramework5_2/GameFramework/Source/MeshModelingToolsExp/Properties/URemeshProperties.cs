@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Properties/RemeshProperties.h")]
 public partial class URemeshProperties : UMeshConstraintProperties {
+	public static UClass StaticClass() {return default;}
 	///<summary>Amount of Vertex Smoothing applied within Remeshing</summary>
 	public float SmoothingStrength;
 	///<summary>Enable edge flips in Remeshing (tends to lose edges/detail)</summary>

@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Default physics settings.</summary>
 [CppInclude("PhysicsSettingsCore.h")]
 public partial class UPhysicsSettingsCore : UDeveloperSettings {
+	public static UClass StaticClass() {return default;}
 	///<summary>Default gravity.</summary>
 	public float DefaultGravityZ;
 	///<summary>Default terminal velocity for Physics Volumes.</summary>

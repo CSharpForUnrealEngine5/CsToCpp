@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("VolumeCache.h")]
 public partial class UVolumeCache : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>File path to load</summary>
 	public string FilePath;
 	///<summary>CacheType</summary>

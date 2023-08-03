@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Proxy object used to display/edit bone transforms</summary>
 [CppInclude("BoneProxy.h")]
 public partial class UBoneProxy : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>The name of the bone we have selected</summary>
 	public string BoneName;
 	///<summary>Bone location</summary>

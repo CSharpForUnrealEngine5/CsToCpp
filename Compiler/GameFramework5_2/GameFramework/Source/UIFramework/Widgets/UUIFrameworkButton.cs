@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Widgets/UIFButton.h")]
 public partial class UUIFrameworkButton : UUIFrameworkWidget {
+	public static UClass StaticClass() {return default;}
 	///<summary>SetContent</summary>
 	public  void SetContent(FUIFrameworkSimpleSlot Content) {}
 	///<summary>GetContent</summary>

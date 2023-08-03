@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Simple Mesh Plane Cutting Tool</summary>
 [CppInclude("PlaneCutTool.h")]
 public partial class UPlaneCutTool : UMultiSelectionMeshEditingTool {
+	public static UClass StaticClass() {return default;}
 	///<summary>BasicProperties</summary>
 	public UPlaneCutToolProperties BasicProperties;
 	///<summary>AcceptProperties</summary>

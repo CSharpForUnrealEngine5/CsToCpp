@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>An Unreal Data Asset that defines what features are used in the AR session.</summary>
 [CppInclude("ARSessionConfig.h")]
 public partial class UARSessionConfig : UDataAsset {
+	public static UClass StaticClass() {return default;}
 	///<summary>See: EARWorldAlignment</summary>
 	public  EARWorldAlignment GetWorldAlignment() { return default; }
 	///<summary>See: SessionType</summary>

@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("AI/AITask_UseGameplayBehaviorSmartObject.h")]
 public partial class UAITask_UseGameplayBehaviorSmartObject : UAITask {
+	public static UClass StaticClass() {return default;}
 	///<summary>UseGameplayBehaviorSmartObject</summary>
 	public static UAITask_UseGameplayBehaviorSmartObject UseGameplayBehaviorSmartObject(AAIController Controller,AActor SmartObjectActor,USmartObjectComponent SmartObjectComponent,bool bLockAILogic/*=true*/) { return default; }
 	///<summary>UseClaimedGameplayBehaviorSmartObject</summary>

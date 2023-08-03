@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A panel that evenly divides up available space between all of its children.</summary>
 [CppInclude("Components/UniformGridPanel.h")]
 public partial class UUniformGridPanel : UPanelWidget {
+	public static UClass StaticClass() {return default;}
 	///<summary>Padding given to each slot</summary>
 	public FMargin SlotPadding;
 	///<summary>The minimum desired width of the slots</summary>

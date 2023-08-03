@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Actor designed to implement compositing pipeline in a blueprint.</summary>
 [CppInclude("ComposurePipelineBaseActor.h")]
 public partial class AComposurePipelineBaseActor : AActor {
+	public static UClass StaticClass() {return default;}
 	///<summary>When set, we&#39;ll call EnqueueRendering() each frame automatically. If left</summary>
 	public bool bAutoRun;
 	///<summary>With bAutoRun, this will run EnqueueRendering() in editor - enqueuing render calls along with Editor scene rendering.</summary>

@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>nDisplay Viewport preview component (Editor)</summary>
 [CppInclude("Components/DisplayClusterPreviewComponent.h")]
 public partial class UDisplayClusterPreviewComponent : UActorComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>Texture for preview material</summary>
 	public UTextureRenderTarget2D RenderTarget;
 	///<summary>Texture when DCRA has post process disabled but is requesting a post process render target.</summary>

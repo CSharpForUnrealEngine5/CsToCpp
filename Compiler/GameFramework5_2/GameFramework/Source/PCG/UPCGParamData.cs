@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Class to hold execution parameters that will be consumed in nodes of the graph</summary>
 [CppInclude("PCGParamData.h")]
 public partial class UPCGParamData : UPCGData {
+	public static UClass StaticClass() {return default;}
 	///<summary>~End UPCGData interface</summary>
 	public  UPCGMetadata ConstMetadata() { return default; }
 	///<summary>MutableMetadata</summary>

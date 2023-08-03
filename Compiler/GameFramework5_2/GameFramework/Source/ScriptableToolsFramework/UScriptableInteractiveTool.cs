@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>UScriptableInteractiveTool is an extension of UInteractiveTool that allows the Tool functionality to be</summary>
 [CppInclude("ScriptableInteractiveTool.h")]
 public partial class UScriptableInteractiveTool : UInteractiveTool {
+	public static UClass StaticClass() {return default;}
 	///<summary>Name of this Tool, will be used in (eg) Toolbars</summary>
 	public string ToolName;
 	///<summary>Long Name of this Tool, will be used in (eg) longer labels like the Accept/Cancel toolbar</summary>

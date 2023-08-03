@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Elements/PCGStaticMeshSpawner.h")]
 public partial class UPCGStaticMeshSpawnerSettings : UPCGSettings {
+	public static UClass StaticClass() {return default;}
 	///<summary>SetMeshSelectorType</summary>
 	public  void SetMeshSelectorType(UClass InMeshSelectorType) {}
 	///<summary>SetInstancePackerType</summary>

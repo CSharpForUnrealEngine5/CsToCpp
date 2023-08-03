@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("AsyncCaptureScene.h")]
 public partial class UAsyncCaptureScene : UBlueprintAsyncActionBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>CaptureSceneAsync</summary>
 	public static UAsyncCaptureScene CaptureSceneAsync(UCameraComponent ViewCamera,UClass SceneCaptureClass,int ResX,int ResY) { return default; }
 	///<summary>CaptureSceneWithWarmupAsync</summary>

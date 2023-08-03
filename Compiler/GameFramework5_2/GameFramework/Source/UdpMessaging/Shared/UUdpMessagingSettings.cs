@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Shared/UdpMessagingSettings.h")]
 public partial class UUdpMessagingSettings : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Whether UDP messaging is enabled by default. If false -messaging will need to be added</summary>
 	public bool EnabledByDefault;
 	///<summary>Whether the UDP transport channel is enabled.</summary>

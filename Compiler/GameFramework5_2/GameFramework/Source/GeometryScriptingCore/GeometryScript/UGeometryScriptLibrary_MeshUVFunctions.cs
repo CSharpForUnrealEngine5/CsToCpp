@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("GeometryScript/MeshUVFunctions.h")]
 public partial class UGeometryScriptLibrary_MeshUVFunctions : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>SetNumUVSets</summary>
 	public static UDynamicMesh SetNumUVSets(UDynamicMesh TargetMesh,int NumUVSets,UGeometryScriptDebug Debug/*=nullptr*/) { return default; }
 	///<summary>CopyUVSet</summary>

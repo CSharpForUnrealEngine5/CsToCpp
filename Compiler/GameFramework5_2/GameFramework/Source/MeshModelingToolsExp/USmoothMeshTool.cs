@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Mesh Smoothing Tool</summary>
 [CppInclude("SmoothMeshTool.h")]
 public partial class USmoothMeshTool : UBaseMeshProcessingTool {
+	public static UClass StaticClass() {return default;}
 	///<summary>SmoothProperties</summary>
 	public USmoothMeshToolProperties SmoothProperties;
 	///<summary>IterativeProperties</summary>

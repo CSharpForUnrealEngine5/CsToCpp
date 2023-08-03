@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>UGeometryCollectionObject (UObject)</summary>
 [CppInclude("GeometryCollection/GeometryCollectionObject.h")]
 public partial class UGeometryCollection : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>EnableClustering</summary>
 	public bool EnableClustering;
 	///<summary>Maximum level for cluster breaks.</summary>

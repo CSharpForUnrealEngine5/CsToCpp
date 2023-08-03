@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("MixedRealityCaptureComponent.h")]
 public partial class UMixedRealityCaptureComponent : USceneCaptureComponent2D {
+	public static UClass StaticClass() {return default;}
 	///<summary>MediaSource</summary>
 	public UMediaPlayer MediaSource;
 	///<summary>VideoProcessingMaterial</summary>

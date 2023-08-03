@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Model for the Layout View</summary>
 [CppInclude("ViewModels/DMXPixelMappingLayoutViewModel.h")]
 public partial class UDMXPixelMappingLayoutViewModel : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>The Renderer Component currently in use</summary>
 	public TWeakObjectPtr<UDMXPixelMappingRendererComponent> RendererComponent;
 	///<summary>The Screen Components currently in use</summary>

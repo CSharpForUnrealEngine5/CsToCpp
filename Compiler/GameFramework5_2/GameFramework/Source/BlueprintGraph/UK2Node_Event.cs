@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("K2Node_Event.h")]
 public partial class UK2Node_Event : UK2Node_EditablePinBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>Name of function signature that this event implements</summary>
 	public string EventSignatureName_DEPRECATED;
 	///<summary>Class that the function signature is from.</summary>

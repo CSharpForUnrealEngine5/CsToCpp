@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("ToolActivities/PolyEditInsertEdgeLoopActivity.h")]
 public partial class UEdgeLoopInsertionProperties : UInteractiveToolPropertySet {
+	public static UClass StaticClass() {return default;}
 	///<summary>Determines how edge loops position themselves vertically relative to loop direction.</summary>
 	public EEdgeLoopPositioningMode PositionMode;
 	///<summary>Determines how edge loops are added to the geometry</summary>

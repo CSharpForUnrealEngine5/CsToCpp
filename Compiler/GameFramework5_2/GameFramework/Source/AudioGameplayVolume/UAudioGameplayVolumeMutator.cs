@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>UAudioGameplayVolumeMutator - These components are used for more complex interactions with AudioGameplayVolumes.</summary>
 [CppInclude("AudioGameplayVolumeMutator.h")]
 public partial class UAudioGameplayVolumeMutator : UAudioGameplayComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>SetPriority</summary>
 	public  void SetPriority(int InPriority) {}
 	///<summary>The priority of this component.  In the case of overlapping volumes or multiple affecting components, the highest priority is chosen.</summary>

@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>AVPRootActor</summary>
 [CppInclude("VPRootActor.h")]
 public partial class AVPRootActor : AActor {
+	public static UClass StaticClass() {return default;}
 	///<summary>Actor used to show the size of the scene.</summary>
 	public UMeshComponent RealWorldSceneRepresentation;
 	///<summary>Actor used to show the size of the scene.</summary>

@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("IpNetDriver.h")]
 public partial class UIpNetDriver : UNetDriver {
+	public static UClass StaticClass() {return default;}
 	///<summary>Should port unreachable messages be logged</summary>
 	public bool LogPortUnreach;
 	///<summary>Does the game allow clients to remain after receiving ICMP port unreachable errors (handles flakey connections)</summary>

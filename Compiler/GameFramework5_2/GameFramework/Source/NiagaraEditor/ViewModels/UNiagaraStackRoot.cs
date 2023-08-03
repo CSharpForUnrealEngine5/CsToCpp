@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("ViewModels/Stack/NiagaraStackRoot.h")]
 public partial class UNiagaraStackRoot : UNiagaraStackEntry {
+	public static UClass StaticClass() {return default;}
 	///<summary>SystemPropertiesGroup</summary>
 	public UNiagaraStackSystemPropertiesGroup SystemPropertiesGroup;
 	///<summary>SystemUserParametersGroup</summary>

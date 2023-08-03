@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Blueprint/WidgetLayoutLibrary.h")]
 public partial class UWidgetLayoutLibrary : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>Gets the projected world to screen position for a player, then converts it into a widget</summary>
 	public static bool ProjectWorldLocationToWidgetPosition(APlayerController PlayerController,FVector WorldLocation,FVector2D ScreenPosition,bool bPlayerViewportRelative) { return default; }
 	///<summary>Gets the current DPI Scale being applied to the viewport and all the Widgets.</summary>

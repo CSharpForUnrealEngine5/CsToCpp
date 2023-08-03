@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Used to create fogging effects such as clouds but with a density that is related to the height of the fog.</summary>
 [CppInclude("Components/ExponentialHeightFogComponent.h")]
 public partial class UExponentialHeightFogComponent : USceneComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>Global density factor.</summary>
 	public float FogDensity;
 	///<summary>Height density factor, controls how the density increases as height decreases.</summary>

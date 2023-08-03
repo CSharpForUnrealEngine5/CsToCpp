@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>UENUM()</summary>
 [CppInclude("DatasmithC4DImportOptions.h")]
 public partial class UDatasmithC4DImportOptions : UDatasmithOptionsBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>Import Mesh With No Vertex, false by default</summary>
 	public bool bImportEmptyMesh;
 	///<summary>Remove empty actors that have only one child, false by default</summary>

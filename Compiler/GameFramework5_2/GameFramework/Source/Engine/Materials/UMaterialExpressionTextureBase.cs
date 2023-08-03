@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Materials/MaterialExpressionTextureBase.h")]
 public partial class UMaterialExpressionTextureBase : UMaterialExpression {
+	public static UClass StaticClass() {return default;}
 	///<summary>Texture</summary>
 	public UTexture Texture;
 	///<summary>SamplerType</summary>

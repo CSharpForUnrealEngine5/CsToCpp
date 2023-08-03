@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A tile set is a collection of tiles pulled from a texture that can be used to fill out a tile map.</summary>
 [CppInclude("PaperTileSet.h")]
 public partial class UPaperTileSet : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>The width and height of a single tile (in pixels)</summary>
 	public FIntPoint TileSize;
 	///<summary>The tile sheet texture associated with this tile set</summary>

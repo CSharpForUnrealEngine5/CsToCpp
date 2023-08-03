@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Blueprint/AIBlueprintHelperLibrary.h")]
 public partial class UAIBlueprintHelperLibrary : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>CreateMoveToProxyObject</summary>
 	public static UAIAsyncTaskBlueprintProxy CreateMoveToProxyObject(UObject WorldContextObject,APawn Pawn,FVector Destination,AActor TargetActor/*=NULL*/,float AcceptanceRadius/*=5.0f*/,bool bStopOnOverlap/*=false*/) { return default; }
 	///<summary>SendAIMessage</summary>

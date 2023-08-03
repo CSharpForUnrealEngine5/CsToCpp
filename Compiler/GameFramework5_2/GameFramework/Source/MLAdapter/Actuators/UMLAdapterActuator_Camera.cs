@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Allows an agent to rotate the camera.</summary>
 [CppInclude("Actuators/MLAdapterActuator_Camera.h")]
 public partial class UMLAdapterActuator_Camera : UMLAdapterActuator {
+	public static UClass StaticClass() {return default;}
 	///<summary>Stores the direction to point the camera as a rotator.</summary>
 	public FRotator HeadingRotator;
 	///<summary>Stores the direction to point the camera as a vector.</summary>

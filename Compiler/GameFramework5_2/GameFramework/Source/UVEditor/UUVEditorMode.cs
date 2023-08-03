@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>The UV editor mode is the mode used in the UV asset editor. It holds most of the inter-tool state.</summary>
 [CppInclude("UVEditorMode.h")]
 public partial class UUVEditorMode : UEdMode {
+	public static UClass StaticClass() {return default;}
 	///<summary>Holds the background visualiztion</summary>
 	public UUVEditorBackgroundPreview BackgroundVisualization;
 	///<summary>Hold a settings object to configure the grid</summary>

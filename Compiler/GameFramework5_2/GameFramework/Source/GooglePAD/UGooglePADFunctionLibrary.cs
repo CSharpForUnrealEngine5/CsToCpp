@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("GooglePADFunctionLibrary.h")]
 public partial class UGooglePADFunctionLibrary : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>Request information about a set of asset packs</summary>
 	public static EGooglePADErrorCode RequestInfo(TArray<string> AssetPacks) { return default; }
 	///<summary>Request download of a set of asset packs</summary>

@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Materials/MaterialExpressionStaticComponentMaskParameter.h")]
 public partial class UMaterialExpressionStaticComponentMaskParameter : UMaterialExpressionParameter {
+	public static UClass StaticClass() {return default;}
 	///<summary>Input</summary>
 	public FExpressionInput Input;
 	///<summary>DefaultR</summary>

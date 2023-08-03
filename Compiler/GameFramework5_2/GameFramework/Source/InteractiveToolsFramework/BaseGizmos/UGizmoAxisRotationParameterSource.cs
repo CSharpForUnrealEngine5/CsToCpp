@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>UGizmoAxisRotationParameterSource is an IGizmoFloatParameterSource implementation that</summary>
 [CppInclude("BaseGizmos/ParameterToTransformAdapters.h")]
 public partial class UGizmoAxisRotationParameterSource : UGizmoBaseFloatParameterSource {
+	public static UClass StaticClass() {return default;}
 	///<summary>float-parameter Angle is mapped to a 3D Rotation around this Axis</summary>
 	public object /*AxisSource*/ AxisSource;
 	///<summary>This TransformSource is updated by applying the constructed 3D rotation</summary>

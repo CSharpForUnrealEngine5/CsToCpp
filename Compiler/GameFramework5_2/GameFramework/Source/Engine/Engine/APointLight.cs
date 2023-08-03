@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Engine/PointLight.h")]
 public partial class APointLight : ALight {
+	public static UClass StaticClass() {return default;}
 	///<summary>PointLightComponent</summary>
 	public UPointLightComponent PointLightComponent;
 	///<summary>BEGIN DEPRECATED (use component functions now in level script)</summary>

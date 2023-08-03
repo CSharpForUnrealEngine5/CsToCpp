@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Sound Utilities Blueprint Function Library</summary>
 [CppInclude("SoundUtilities.h")]
 public partial class USoundUtilitiesBPFunctionLibrary : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>Calculates a beat time in seconds from the given BPM, beat multiplier and divisions of a whole note.</summary>
 	public static float GetBeatTempo(float BeatsPerMinute/*=120.0f*/,int BeatMultiplier/*=1*/,int DivisionsOfWholeNote/*=4*/) { return default; }
 	///<summary>Calculates Frequency values based on MIDI Pitch input</summary>

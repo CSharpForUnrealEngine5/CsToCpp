@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("InterchangeTexture2DArrayFactoryNode.h")]
 public partial class UInterchangeTexture2DArrayFactoryNode : UInterchangeTextureFactoryNode {
+	public static UClass StaticClass() {return default;}
 	///<summary>GetCustomAddressX</summary>
 	public  bool GetCustomAddressX(byte AttributeValue) { return default; }
 	///<summary>GetCustomAddressY</summary>

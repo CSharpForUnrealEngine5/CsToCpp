@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A component that holds a single Fixture Patch in the Pixel Mapping, and actually sends DMX.</summary>
 [CppInclude("Components/DMXPixelMappingFixtureGroupItemComponent.h")]
 public partial class UDMXPixelMappingFixtureGroupItemComponent : UDMXPixelMappingOutputDMXComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>FixturePatchRef</summary>
 	public FDMXEntityFixturePatchRef FixturePatchRef;
 	///<summary>Sets which color space Pixel Mapping sends</summary>

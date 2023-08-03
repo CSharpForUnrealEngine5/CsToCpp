@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("GeometryScript/MeshPrimitiveFunctions.h")]
 public partial class UGeometryScriptLibrary_MeshPrimitiveFunctions : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>AppendBox</summary>
 	public static UDynamicMesh AppendBox(UDynamicMesh TargetMesh,FGeometryScriptPrimitiveOptions PrimitiveOptions,FTransform Transform,float DimensionX/*=100f*/,float DimensionY/*=100f*/,float DimensionZ/*=100f*/,int StepsX/*=0*/,int StepsY/*=0*/,int StepsZ/*=0*/,EGeometryScriptPrimitiveOriginMode Origin/*=EGeometryScriptPrimitiveOriginMode.Base*/,UGeometryScriptDebug Debug/*=nullptr*/) { return default; }
 	///<summary>AppendSphereLatLong</summary>

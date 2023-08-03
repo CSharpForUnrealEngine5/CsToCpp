@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Chaos cloth simulation component.</summary>
 [CppInclude("ChaosClothAsset/ClothComponent.h")]
 public partial class UChaosClothComponent : USkinnedMeshComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>Set the cloth asset used by this component.</summary>
 	public  void SetClothAsset(UChaosClothAsset InClothAsset) {}
 	///<summary>Get the cloth asset used by this component.</summary>

@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Builders/CylinderBuilder.h")]
 public partial class UCylinderBuilder : UEditorBrushBuilder {
+	public static UClass StaticClass() {return default;}
 	///<summary>Distance from base to tip of cylinder</summary>
 	public float Z;
 	///<summary>Radius of cylinder</summary>

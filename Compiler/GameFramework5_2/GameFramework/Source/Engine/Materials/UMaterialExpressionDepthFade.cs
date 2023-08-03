@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Materials/MaterialExpressionDepthFade.h")]
 public partial class UMaterialExpressionDepthFade : UMaterialExpression {
+	public static UClass StaticClass() {return default;}
 	///<summary>Defaults to &#39;OpacityDefault&#39; if not specified</summary>
 	public FExpressionInput InOpacity;
 	///<summary>Defaults to &#39;FadeDistanceDefault&#39; if not specified</summary>

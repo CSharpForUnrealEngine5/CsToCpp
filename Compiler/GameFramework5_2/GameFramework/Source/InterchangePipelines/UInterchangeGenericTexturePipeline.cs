@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("InterchangeGenericTexturePipeline.h")]
 public partial class UInterchangeGenericTexturePipeline : UInterchangePipelineBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>If enabled, imports the texture assets found in the sources.</summary>
 	public bool bImportTextures;
 	///<summary>If enable, after a new import a test will be run to see if the texture is a normal map.</summary>

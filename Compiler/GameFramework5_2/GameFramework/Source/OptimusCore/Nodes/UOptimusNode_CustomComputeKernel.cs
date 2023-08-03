@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Nodes/OptimusNode_CustomComputeKernel.h")]
 public partial class UOptimusNode_CustomComputeKernel : UOptimusNode_ComputeKernelBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>FIXME: Use drop-down with a preset list + allow custom entry.</summary>
 	public string Category;
 	///<summary>Name of kernel. This is also used as the entry point function name in generated code.</summary>

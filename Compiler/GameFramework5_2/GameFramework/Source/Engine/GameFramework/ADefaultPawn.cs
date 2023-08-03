@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>DefaultPawn implements a simple Pawn with spherical collision and built-in flying movement.</summary>
 [CppInclude("GameFramework/DefaultPawn.h")]
 public partial class ADefaultPawn : APawn {
+	public static UClass StaticClass() {return default;}
 	///<summary>Input callback to move forward in local space (or backward if Val is negative).</summary>
 	public  void MoveForward(float Val) {}
 	///<summary>Input callback to strafe right in local space (or left if Val is negative).</summary>

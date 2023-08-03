@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Materials/MaterialExpressionSmoothStep.h")]
 public partial class UMaterialExpressionSmoothStep : UMaterialExpression {
+	public static UClass StaticClass() {return default;}
 	///<summary>Defaults to &#39;ConstMin&#39; if not specified</summary>
 	public FExpressionInput Min;
 	///<summary>Defaults to &#39;ConstMax&#39; if not specified</summary>

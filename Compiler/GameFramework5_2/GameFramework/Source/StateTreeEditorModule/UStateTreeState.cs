@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Editor representation of a state in StateTree</summary>
 [CppInclude("StateTreeState.h")]
 public partial class UStateTreeState : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>~StateTree Builder API</summary>
 	public string Name;
 	///<summary>Type</summary>

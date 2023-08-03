@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Factories/FbxStaticMeshImportData.h")]
 public partial class UFbxStaticMeshImportData : UFbxMeshImportData {
+	public static UClass StaticClass() {return default;}
 	///<summary>The LODGroup to associate with this mesh when it is imported</summary>
 	public string StaticMeshLODGroup;
 	///<summary>Specify how vertex colors should be imported</summary>

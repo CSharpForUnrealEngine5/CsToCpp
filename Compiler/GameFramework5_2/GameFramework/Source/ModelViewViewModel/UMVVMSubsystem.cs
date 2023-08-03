@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("MVVMSubsystem.h")]
 public partial class UMVVMSubsystem : UEngineSubsystem {
+	public static UClass StaticClass() {return default;}
 	///<summary>K2_GetViewFromUserWidget</summary>
 	public  UMVVMView K2_GetViewFromUserWidget(UUserWidget UserWidget) { return default; }
 	///<summary>DoesWidgetTreeContainedWidget</summary>

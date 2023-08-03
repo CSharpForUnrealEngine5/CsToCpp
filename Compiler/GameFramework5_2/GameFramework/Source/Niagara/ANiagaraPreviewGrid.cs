@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("NiagaraPreviewGrid.h")]
 public partial class ANiagaraPreviewGrid : AActor {
+	public static UClass StaticClass() {return default;}
 	///<summary>AActor Interface End</summary>
 	public  void ActivatePreviews(bool bReset) {}
 	///<summary>DeactivatePreviews</summary>

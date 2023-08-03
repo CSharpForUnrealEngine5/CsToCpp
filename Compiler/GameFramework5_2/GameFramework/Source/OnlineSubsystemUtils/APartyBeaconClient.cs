@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A beacon client used for making reservations with an existing game session</summary>
 [CppInclude("PartyBeaconClient.h")]
 public partial class APartyBeaconClient : AOnlineBeaconClient {
+	public static UClass StaticClass() {return default;}
 	///<summary>Response from the host session after making a reservation request</summary>
 	public  void ClientReservationResponse(EPartyReservationResult ReservationResponse) {}
 	///<summary>Response from the host session after making a cancellation request</summary>

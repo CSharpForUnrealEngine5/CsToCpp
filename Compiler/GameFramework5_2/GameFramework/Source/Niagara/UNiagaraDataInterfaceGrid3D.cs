@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("NiagaraDataInterfaceRW.h")]
 public partial class UNiagaraDataInterfaceGrid3D : UNiagaraDataInterfaceRWBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>Option to clear the buffer prior to a stage where the iteration count does not match the grid resolution.  Useful for stages where one wants to do sparse writes</summary>
 	public bool ClearBeforeNonIterationStage;
 	///<summary>Number of cells</summary>

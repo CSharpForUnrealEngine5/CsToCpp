@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Serializable options for sequencer.</summary>
 [CppInclude("SequencerSettings.h")]
 public partial class USequencerSettings : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>The auto change mode (auto-key, auto-track or none).</summary>
 	public EAutoChangeMode AutoChangeMode;
 	///<summary>Allow edits mode.</summary>

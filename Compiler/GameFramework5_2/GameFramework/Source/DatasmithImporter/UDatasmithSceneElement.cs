@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("DatasmithBlueprintLibrary.h")]
 public partial class UDatasmithSceneElement : UDatasmithSceneElementBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>Open an existing UDatasmith file from disk.</summary>
 	public static UDatasmithSceneElement ConstructDatasmithSceneFromFile(string FilePath) { return default; }
 	///<summary>Open an existing Datasmith source from the SourceUri.</summary>

@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>* A wrapper widget class that contains a set of VCam Connections</summary>
 [CppInclude("UI/VCamWidget.h")]
 public partial class UVCamWidget : UUserWidget {
+	public static UClass StaticClass() {return default;}
 	///<summary>* The VCam Connections associated with this Widget</summary>
 	public TMap<string,FVCamConnection> Connections;
 	///<summary>* Determines whether this widget will be automatically registered to receive input when the connections are initialized</summary>

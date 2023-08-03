@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Encoding can either use the &quot;Final&quot; or &quot;Fast&quot; speeds, for supported encoders (e.g. Oodle)</summary>
 [CppInclude("TextureEncodingSettings.h")]
 public partial class UTextureEncodingProjectSettings : UDeveloperSettings {
+	public static UClass StaticClass() {return default;}
 	///<summary>If true, Final encode speed enables rate-distortion optimization on supported encoders to</summary>
 	public bool bFinalUsesRDO;
 	///<summary>Ignored if UsesRDO is false. This value is used if a given texture is using &quot;Default&quot; LossyCompressionAmount.</summary>

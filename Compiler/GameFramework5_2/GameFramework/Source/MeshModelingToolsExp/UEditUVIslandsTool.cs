@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("EditUVIslandsTool.h")]
 public partial class UEditUVIslandsTool : UMeshSurfacePointTool {
+	public static UClass StaticClass() {return default;}
 	///<summary>MaterialSettings</summary>
 	public UExistingMeshMaterialProperties MaterialSettings;
 	///<summary>CheckerMaterial</summary>

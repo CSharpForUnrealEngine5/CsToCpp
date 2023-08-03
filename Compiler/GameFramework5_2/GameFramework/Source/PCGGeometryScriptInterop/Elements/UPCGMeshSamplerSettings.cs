@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Sample points on a mesh</summary>
 [CppInclude("Elements/PCGMeshSampler.h")]
 public partial class UPCGMeshSamplerSettings : UPCGSettings {
+	public static UClass StaticClass() {return default;}
 	///<summary>SamplingMethod</summary>
 	public EPCGMeshSamplingMethod SamplingMethod;
 	///<summary>Soft Object Path to the mesh to sample from. Will be loaded.</summary>

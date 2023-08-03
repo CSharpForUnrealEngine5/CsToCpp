@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("PCGComponent.h")]
 public partial class UPCGComponent : UActorComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>SetGraph</summary>
 	public  void SetGraph(UPCGGraphInterface InGraph) {}
 	///<summary>Registers some managed resource to the current component</summary>

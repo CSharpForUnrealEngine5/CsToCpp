@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Sound/SoundWave.h")]
 public partial class USoundWave : USoundBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>Platform agnostic compression quality. 1..100 with 1 being best compression and 100 being best quality. ADPCM and PCM sound asset compression types ignore this parameter.</summary>
 	public int CompressionQuality;
 	///<summary>StreamingPriority</summary>

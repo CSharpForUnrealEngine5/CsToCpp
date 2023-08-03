@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Contains settings and working data shared among many NiagaraSystems that share some commonality of type. For example ImpactFX vs EnvironmentalFX.</summary>
 [CppInclude("NiagaraEffectType.h")]
 public partial class UNiagaraEffectType : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Controls whether or not culling is allowed for FX that are owned by, attached to or instigated by a locally controlled pawn.</summary>
 	public bool bAllowCullingForLocalPlayers;
 	///<summary>How regularly effects of this type are checked for scalability.</summary>

@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Timed Niagara Effect Notify</summary>
 [CppInclude("AnimNotifyState_TimedNiagaraEffect.h")]
 public partial class UAnimNotifyState_TimedNiagaraEffect : UAnimNotifyState {
+	public static UClass StaticClass() {return default;}
 	///<summary>The niagara system to spawn for the notify state</summary>
 	public UNiagaraSystem Template;
 	///<summary>The socket or bone to attach the system to</summary>

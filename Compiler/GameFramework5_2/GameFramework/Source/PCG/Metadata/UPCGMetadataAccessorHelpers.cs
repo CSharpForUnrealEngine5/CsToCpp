@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Metadata/PCGMetadataAccessor.h")]
 public partial class UPCGMetadataAccessorHelpers : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>Id-based metadata functions</summary>
 	public static int GetInteger32AttributeByMetadataKey(long Key,UPCGMetadata Metadata,string AttributeName) { return default; }
 	///<summary>SetInteger32AttributeByMetadataKey</summary>

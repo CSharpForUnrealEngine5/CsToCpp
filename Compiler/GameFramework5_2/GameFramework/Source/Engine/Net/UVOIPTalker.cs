@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Net/VoiceConfig.h")]
 public partial class UVOIPTalker : UActorComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>function for creating and registering a UVOIPTalker.</summary>
 	public static UVOIPTalker CreateTalkerForPlayer(APlayerState OwningState) { return default; }
 	///<summary>This function sets up this talker with a specific player.</summary>

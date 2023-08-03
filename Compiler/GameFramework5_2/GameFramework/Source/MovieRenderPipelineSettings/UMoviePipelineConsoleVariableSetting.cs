@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("MoviePipelineConsoleVariableSetting.h")]
 public partial class UMoviePipelineConsoleVariableSetting : UMoviePipelineSetting {
+	public static UClass StaticClass() {return default;}
 	///<summary>An array of presets from the Console Variables Editor. The preset cvars will be applied (in the order they are</summary>
 	public TArray<object /*ConsoleVariablePresets*/> ConsoleVariablePresets;
 	///<summary>ConsoleVariables_DEPRECATED</summary>

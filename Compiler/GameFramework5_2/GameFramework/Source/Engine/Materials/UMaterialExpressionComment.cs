@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Materials/MaterialExpressionComment.h")]
 public partial class UMaterialExpressionComment : UMaterialExpression {
+	public static UClass StaticClass() {return default;}
 	///<summary>SizeX</summary>
 	public int SizeX;
 	///<summary>SizeY</summary>

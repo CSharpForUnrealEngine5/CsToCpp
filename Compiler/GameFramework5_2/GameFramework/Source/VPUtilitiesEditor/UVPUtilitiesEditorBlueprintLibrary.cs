@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("VPUtilitiesEditorBlueprintLibrary.h")]
 public partial class UVPUtilitiesEditorBlueprintLibrary : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>Spawn an editor-only virtual production tickable actor</summary>
 	public static AVPEditorTickableActorBase SpawnVPEditorTickableActor(UObject ContextObject,UClass ActorClass,FVector Location,FRotator Rotation) { return default; }
 	///<summary>Spawn an editor-only transient virtual production tickable actor</summary>

@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Move To task node.</summary>
 [CppInclude("BehaviorTree/Tasks/BTTask_MoveTo.h")]
 public partial class UBTTask_MoveTo : UBTTask_BlackboardBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>fixed distance added to threshold between AI and goal location in destination reach test</summary>
 	public float AcceptableRadius;
 	///<summary>&quot;None&quot; will result in default filter being used</summary>

@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Animation/AnimNotifies/AnimNotifyState_Trail.h")]
 public partial class UAnimNotifyState_Trail : UAnimNotifyState {
+	public static UClass StaticClass() {return default;}
 	///<summary>The particle system to use for this trail.</summary>
 	public UParticleSystem PSTemplate;
 	///<summary>OverridePSTemplate</summary>

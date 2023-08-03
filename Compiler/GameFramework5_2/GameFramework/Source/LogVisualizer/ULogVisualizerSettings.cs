@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("LogVisualizerSettings.h")]
 public partial class ULogVisualizerSettings : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Whether to show trivial logs, i.e. the ones with only one entry.</summary>
 	public bool bIgnoreTrivialLogs;
 	///<summary>Threshold for trivial Logs</summary>

@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("MRMeshComponent.h")]
 public partial class UMRMeshComponent : UPrimitiveComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>IsConnected</summary>
 	public  bool IsConnected() { return default; }
 	///<summary>Force navmesh generation to run using the current collision data.  This will run even if the collision data has not been udpated! Unless you are changing navmesh settings or similar RequestNavMeshUpdate is reccomended.</summary>

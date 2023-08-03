@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("WorldPartition/WorldPartitionRuntimeSpatialHash.h")]
 public partial class UWorldPartitionRuntimeSpatialHash : UWorldPartitionRuntimeHash {
+	public static UClass StaticClass() {return default;}
 	///<summary>Grids</summary>
 	public TArray<FSpatialHashRuntimeGrid> Grids;
 	///<summary>Whether to preview runtime grids.</summary>

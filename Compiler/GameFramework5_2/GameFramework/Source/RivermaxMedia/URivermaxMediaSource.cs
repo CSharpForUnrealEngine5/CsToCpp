@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Media source for Rivermax streams.</summary>
 [CppInclude("RivermaxMediaSource.h")]
 public partial class URivermaxMediaSource : UTimeSynchronizableMediaSource {
+	public static UClass StaticClass() {return default;}
 	///<summary>Player mode to be used.</summary>
 	public ERivermaxPlayerMode PlayerMode;
 	///<summary>If true, when looking for the sample to render, the current frame number will be looked for.</summary>

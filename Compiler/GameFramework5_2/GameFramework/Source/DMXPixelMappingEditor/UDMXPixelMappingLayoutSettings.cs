@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Layout options for the Pixel Mapping editor</summary>
 [CppInclude("DMXPixelMappingLayoutSettings.h")]
 public partial class UDMXPixelMappingLayoutSettings : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>If true, scales children when the parent component is resized</summary>
 	public bool bScaleChildrenWithParent;
 	///<summary>If true, selects parent when a child is clicked</summary>

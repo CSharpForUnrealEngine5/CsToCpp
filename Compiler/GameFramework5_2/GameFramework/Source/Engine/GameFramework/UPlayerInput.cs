@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Object within PlayerController that processes player input.</summary>
 [CppInclude("GameFramework/PlayerInput.h")]
 public partial class UPlayerInput : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Generic bindings of keys to Exec()-compatible strings for development purposes only</summary>
 	public TArray<FKeyBind> DebugExecBindings;
 	///<summary>List of Axis Mappings that have been inverted</summary>

@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("BuoyancyComponent.h")]
 public partial class UBuoyancyComponent : UActorComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>GetCurrentWaterBodyComponents</summary>
 	public  TArray<UWaterBodyComponent> GetCurrentWaterBodyComponents() { return default; }
 	///<summary>IsOverlappingWaterBody</summary>

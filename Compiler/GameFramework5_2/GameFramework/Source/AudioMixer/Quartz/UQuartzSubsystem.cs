@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Quartz/QuartzSubsystem.h")]
 public partial class UQuartzSubsystem : UTickableWorldSubsystem {
+	public static UClass StaticClass() {return default;}
 	///<summary>IsQuartzEnabled</summary>
 	public  bool IsQuartzEnabled() { return default; }
 	///<summary>Clock Creation</summary>

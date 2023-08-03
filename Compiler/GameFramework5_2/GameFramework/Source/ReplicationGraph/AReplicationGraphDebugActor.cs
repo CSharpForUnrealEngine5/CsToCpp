@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Specialized actor for replicating debug information about replication to specific connections. This actor is never spawned in shipping builds and never counts towards bandwidth limits</summary>
 [CppInclude("ReplicationGraph.h")]
 public partial class AReplicationGraphDebugActor : AActor {
+	public static UClass StaticClass() {return default;}
 	///<summary>ReplicationGraph</summary>
 	public UReplicationGraph ReplicationGraph;
 	///<summary>ServerStartDebugging</summary>

@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A re-usable Parameter.</summary>
 [CppInclude("Dom/WebAPIParameter.h")]
 public partial class UWebAPIParameter : UWebAPIModel {
+	public static UClass StaticClass() {return default;}
 	///<summary>Where this parameter is stored/encoded in the request.</summary>
 	public EWebAPIParameterStorage Storage;
 	///<summary>The optional media-type, ie. &quot;application/json&quot;.</summary>

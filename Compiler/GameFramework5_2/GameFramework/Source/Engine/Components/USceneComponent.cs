@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A SceneComponent has a transform and supports attachment, but has no rendering or collision capabilities.</summary>
 [CppInclude("Components/SceneComponent.h")]
 public partial class USceneComponent : UActorComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>Physics Volume in which this SceneComponent is located *</summary>
 	public TWeakObjectPtr<APhysicsVolume> PhysicsVolume;
 	///<summary>What we are currently attached to. If valid, RelativeLocation etc. are used relative to this object</summary>

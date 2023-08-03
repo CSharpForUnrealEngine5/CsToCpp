@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("LandscapeMaterialInstanceConstant.h")]
 public partial class ULandscapeMaterialInstanceConstant : UMaterialInstanceConstant {
+	public static UClass StaticClass() {return default;}
 	///<summary>TextureStreamingInfo</summary>
 	public TArray<FLandscapeMaterialTextureStreamingInfo> TextureStreamingInfo;
 	///<summary>bIsLayerThumbnail</summary>

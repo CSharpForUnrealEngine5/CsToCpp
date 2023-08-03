@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("AnimSequencerDataModel.h")]
 public partial class UAnimationSequencerDataModel : UMovieSceneSequence {
+	public static UClass StaticClass() {return default;}
 	///<summary>Dynamic delegate event allows scripting to register to any broadcast-ed notify.</summary>
 	public FAnimDataModelModifiedDynamicEvent ModifiedEventDynamic;
 	///<summary>LegacyCurveData</summary>

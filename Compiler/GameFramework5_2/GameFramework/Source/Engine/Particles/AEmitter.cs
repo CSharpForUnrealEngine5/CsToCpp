@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Particles/Emitter.h")]
 public partial class AEmitter : AActor {
+	public static UClass StaticClass() {return default;}
 	///<summary>ParticleSystemComponent</summary>
 	public UParticleSystemComponent ParticleSystemComponent;
 	///<summary>bDestroyOnSystemFinish</summary>

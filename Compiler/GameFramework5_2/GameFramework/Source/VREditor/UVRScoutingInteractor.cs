@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Represents the interactor in the world</summary>
 [CppInclude("VRScoutingInteractor.h")]
 public partial class UVRScoutingInteractor : UVREditorInteractor {
+	public static UClass StaticClass() {return default;}
 	///<summary>Sets the gizmo mode for selected object</summary>
 	public  void SetGizmoMode(EGizmoHandleTypes InGizmoMode) {}
 	///<summary>Gets the gizmo mode for selected object</summary>

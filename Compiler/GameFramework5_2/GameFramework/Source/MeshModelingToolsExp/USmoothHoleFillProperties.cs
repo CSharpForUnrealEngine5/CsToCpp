@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>* Properties. This class reflects the parameters in FSmoothFillOptions, but is decorated to allow use in the UI system.</summary>
 [CppInclude("HoleFillTool.h")]
 public partial class USmoothHoleFillProperties : UInteractiveToolPropertySet {
+	public static UClass StaticClass() {return default;}
 	///<summary>Allow smoothing and remeshing of triangles outside of the fill region</summary>
 	public bool bConstrainToHoleInterior;
 	///<summary>Number of vertex rings outside of the fill region to allow remeshing</summary>

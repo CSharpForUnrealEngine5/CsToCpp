@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("AutomationViewSettings.h")]
 public partial class UAutomationViewSettings : UDataAsset {
+	public static UClass StaticClass() {return default;}
 	///<summary>AntiAliasing</summary>
 	public bool AntiAliasing;
 	///<summary>MotionBlur</summary>

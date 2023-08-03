@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("JumpFloodComponent2D.h")]
 public partial class UJumpFloodComponent2D : UActorComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>CreateMIDs</summary>
 	public  bool CreateMIDs() { return default; }
 	///<summary>AssignRenderTargets</summary>

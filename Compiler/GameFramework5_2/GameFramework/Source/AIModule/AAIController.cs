@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>AIController is the base class of controllers for AI-controlled Pawns.</summary>
 [CppInclude("AIController.h")]
 public partial class AAIController : AController {
+	public static UClass StaticClass() {return default;}
 	///<summary>By default AI&#39;s logic does not start when controlled Pawn is possessed. Setting this flag to true</summary>
 	public bool bStartAILogicOnPossess;
 	///<summary>By default AI&#39;s logic gets stopped when controlled Pawn is unpossessed. Setting this flag to false</summary>

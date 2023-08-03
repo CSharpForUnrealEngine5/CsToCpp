@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Nodes/OptimusNode_ComputeKernelFunction.h")]
 public partial class UOptimusNode_ComputeKernelFunctionGeneratorClass : UClass {
+	public static UClass StaticClass() {return default;}
 	///<summary>Category</summary>
 	public string Category;
 	///<summary>KernelName</summary>

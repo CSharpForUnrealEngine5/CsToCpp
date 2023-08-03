@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("NiagaraSimCacheFunctionLibrary.h")]
 public partial class UAsyncNiagaraCaptureSimCache : UBlueprintAsyncActionBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>FOnCaptureComplete</summary>
 	public  void FOnCaptureComplete(bool bSuccess) {}
 	///<summary>CaptureSimCache</summary>

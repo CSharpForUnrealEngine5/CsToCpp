@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Holds information for an existing or pending type.</summary>
 [CppInclude("Dom/WebAPIType.h")]
 public partial class UWebAPITypeInfo : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Type Name without prefix or namespace, ie. &quot;Vector&quot;, not &quot;FVector&quot;.</summary>
 	public string Name;
 	///<summary>Optional display name, different to the actual name, ie. &quot;JsonObject&quot; vs. &quot;JsonObjectWrapper&quot;.</summary>

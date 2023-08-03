@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("MuCOE/Nodes/CustomizableObjectNodeSwitchBase.h")]
 public partial class UCustomizableObjectNodeSwitchBase : UCustomizableObjectNode {
+	public static UClass StaticClass() {return default;}
 	///<summary>OutputPinReference</summary>
 	public FEdGraphPinReference OutputPinReference;
 	///<summary>NodeEnumParameter property changed callback function. Reconstructs the node.</summary>

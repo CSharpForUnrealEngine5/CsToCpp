@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("MIDIDeviceManager.h")]
 public partial class UMIDIDeviceManager : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>Enumerates all of the connected MIDI devices and reports back with the IDs and names of those devices.  This operation is a little expensive</summary>
 	public static void FindMIDIDevices(TArray<FFoundMIDIDevice> OutMIDIDevices) {}
 	///<summary>Enumerates all of the MIDI input and output devices and reports back useful infos such as IDs and names of those devices. This operation is a little expensive</summary>

@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>UPatternTool takes input meshes and generates 3D Patterns of those meshes, by</summary>
 [CppInclude("PatternTool.h")]
 public partial class UPatternTool : UMultiSelectionMeshEditingTool {
+	public static UClass StaticClass() {return default;}
 	///<summary>Settings</summary>
 	public UPatternToolSettings Settings;
 	///<summary>BoundingBoxSettings</summary>

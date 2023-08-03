@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("ContextualAnimSceneActorComponent.h")]
 public partial class UContextualAnimSceneActorComponent : UPrimitiveComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>Event that happens when the actor owner of this component joins an scene</summary>
 	public FContextualAnimSceneActorCompDelegate OnJoinedSceneDelegate;
 	///<summary>Event that happens when the actor owner of this component leave an scene</summary>

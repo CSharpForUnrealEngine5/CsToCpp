@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Singleton manager that provides synchronous and asynchronous access to data registries</summary>
 [CppInclude("DataRegistrySubsystem.h")]
 public partial class UDataRegistrySubsystem : UEngineSubsystem {
+	public static UClass StaticClass() {return default;}
 	///<summary>Attempts to get cached structure data stored in a DataRegistry, modifying OutItem if the item is available</summary>
 	public static bool GetCachedItemBP(FDataRegistryId ItemId,FTableRowBase OutItem) { return default; }
 	///<summary>Attempts to get cached structure data stored in a DataRegistry, modifying OutItem if the item is available</summary>

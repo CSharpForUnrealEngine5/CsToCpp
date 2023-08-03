@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>UDMXSubsystem</summary>
 [CppInclude("DMXSubsystem.h")]
 public partial class UDMXSubsystem : UEngineSubsystem {
+	public static UClass StaticClass() {return default;}
 	///<summary>Send DMX using function names and integer values.</summary>
 	public  void SendDMX(UDMXEntityFixturePatch FixturePatch,TMap<FDMXAttributeName,int> AttributeMap,EDMXSendResult OutResult) {}
 	///<summary>DEPRECATED 4.27</summary>

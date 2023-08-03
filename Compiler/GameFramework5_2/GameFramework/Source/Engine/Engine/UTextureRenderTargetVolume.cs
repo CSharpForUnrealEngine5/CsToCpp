@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>TextureRenderTargetVolume</summary>
 [CppInclude("Engine/TextureRenderTargetVolume.h")]
 public partial class UTextureRenderTargetVolume : UTextureRenderTarget {
+	public static UClass StaticClass() {return default;}
 	///<summary>The width of the texture.</summary>
 	public int SizeX;
 	///<summary>The height of the texture.</summary>

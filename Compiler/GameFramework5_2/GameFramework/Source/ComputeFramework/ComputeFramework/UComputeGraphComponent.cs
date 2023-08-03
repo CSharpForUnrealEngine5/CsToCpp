@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Component which holds a context for a UComputeGraph.</summary>
 [CppInclude("ComputeFramework/ComputeGraphComponent.h")]
 public partial class UComputeGraphComponent : UActorComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>The Compute Graph asset.</summary>
 	public UComputeGraph ComputeGraph;
 	///<summary>Create all the Data Provider objects for a given binding object of the ComputeGraph.</summary>

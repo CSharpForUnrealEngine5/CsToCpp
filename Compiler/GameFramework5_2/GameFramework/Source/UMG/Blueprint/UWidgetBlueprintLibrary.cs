@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Blueprint/WidgetBlueprintLibrary.h")]
 public partial class UWidgetBlueprintLibrary : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>Creates a widget</summary>
 	public static UUserWidget Create(UObject WorldContextObject,UClass WidgetType,APlayerController OwningPlayer) { return default; }
 	///<summary>Creates a new drag and drop operation that can be returned from a drag begin to inform the UI what i</summary>

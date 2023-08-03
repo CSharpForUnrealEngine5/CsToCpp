@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("LevelSequenceEditorBlueprintLibrary.h")]
 public partial class ULevelSequenceEditorBlueprintLibrary : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>* Open a level sequence asset</summary>
 	public static bool OpenLevelSequence(ULevelSequence LevelSequence) { return default; }
 	///<summary>* Get the currently opened root level sequence asset</summary>

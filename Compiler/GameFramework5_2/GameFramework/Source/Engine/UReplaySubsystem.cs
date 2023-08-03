@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("ReplaySubsystem.h")]
 public partial class UReplaySubsystem : UGameInstanceSubsystem {
+	public static UClass StaticClass() {return default;}
 	///<summary>Get current recording/playing replay name</summary>
 	public  string GetActiveReplayName() { return default; }
 	///<summary>Get current recording/playing replay time</summary>

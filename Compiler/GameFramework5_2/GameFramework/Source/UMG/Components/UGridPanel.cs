@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A table-like panel that retains the width of every column throughout the table.</summary>
 [CppInclude("Components/GridPanel.h")]
 public partial class UGridPanel : UPanelWidget {
+	public static UClass StaticClass() {return default;}
 	///<summary>The column fill rules</summary>
 	public TArray<float> ColumnFill;
 	///<summary>The row fill rules</summary>

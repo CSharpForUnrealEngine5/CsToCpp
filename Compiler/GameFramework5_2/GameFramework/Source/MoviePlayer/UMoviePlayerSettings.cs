@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Implements the settings for the Windows target platform.</summary>
 [CppInclude("MoviePlayerSettings.h")]
 public partial class UMoviePlayerSettings : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>If enabled, The game waits for startup movies to complete even if loading has finished.</summary>
 	public bool bWaitForMoviesToComplete;
 	///<summary>If enabled, Startup movies can be skipped by the user when a mouse button is pressed.</summary>

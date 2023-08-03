@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("BlueprintEditorLibrary.h")]
 public partial class UBlueprintEditorLibrary : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>Replace any references of variables with the OldVarName to references of those with the NewVarName if possible</summary>
 	public static void ReplaceVariableReferences(UBlueprint Blueprint,string OldVarName,string NewVarName) {}
 	///<summary>Finds the event graph of the given blueprint. Null if it doesn&#39;t have one. This will only return</summary>

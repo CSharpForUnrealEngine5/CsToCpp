@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Container for created actions</summary>
 [CppInclude("Action/RCActionContainer.h")]
 public partial class URCActionContainer : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Set of child action container</summary>
 	public TSet<URCActionContainer> ActionContainers;
 	///<summary>Reference to Preset</summary>

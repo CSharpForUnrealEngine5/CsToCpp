@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>StereoLayer Extensions Function Library</summary>
 [CppInclude("Kismet/StereoLayerFunctionLibrary.h")]
 public partial class UStereoLayerFunctionLibrary : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>Set splash screen attributes</summary>
 	public static void SetSplashScreen(UTexture Texture,FVector2D Scale/*=new FVector2D(1.0f,1.0f)*/,FVector Offset/*=new FVector(0.0f,0.0f,0.0f)*/,bool bShowLoadingMovie/*=false*/,bool bShowOnSet/*=false*/) {}
 	///<summary>Show the splash screen and override the VR display</summary>

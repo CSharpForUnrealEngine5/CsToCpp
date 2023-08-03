@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("ConcertServerSettings.h")]
 public partial class UConcertServerConfig : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>If true, instruct the server to auto-archive sessions that were left in the working directory because the server did not exit properly rather than</summary>
 	public bool bAutoArchiveOnReboot;
 	///<summary>If true, instruct the server to auto-archive live sessions on shutdown.</summary>

@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("FractureToolMeshCut.h")]
 public partial class UFractureMeshCutSettings : UFractureToolSettings {
+	public static UClass StaticClass() {return default;}
 	///<summary>Static Mesh Actor to be used as a cutting surface. For best results, use a closed, watertight mesh</summary>
 	public TLazyObjectPtr<AStaticMeshActor> CuttingActor;
 	///<summary>How to arrange the mesh cuts in space</summary>

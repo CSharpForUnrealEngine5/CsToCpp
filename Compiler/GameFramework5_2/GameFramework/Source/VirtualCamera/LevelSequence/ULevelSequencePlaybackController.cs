@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("LevelSequence/LevelSequencePlaybackController.h")]
 public partial class ULevelSequencePlaybackController : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Returns the names of each level sequence actor that is present in the level.</summary>
 	public  void GetLevelSequences(TArray<FLevelSequenceData> OutLevelSequenceNames) {}
 	///<summary>@return the name of the currently selected sequence; returns empty string if no selected sequence</summary>

@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A material expression that computes a top-bottom split matte, split at a specified v value.</summary>
 [CppInclude("MaterialX/MaterialExpressionSplitTopBottom.h")]
 public partial class UMaterialExpressionSplitTopBottom : UMaterialExpression {
+	public static UClass StaticClass() {return default;}
 	///<summary>Defaults to &#39;ConstCoordinate&#39; if not specified</summary>
 	public FExpressionInput Coordinates;
 	///<summary>A</summary>

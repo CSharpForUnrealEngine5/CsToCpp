@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Editor/ControlRigContextMenuContext.h")]
 public partial class UControlRigContextMenuContext : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Get the control rig blueprint that we are editing</summary>
 	public  UControlRigBlueprint GetControlRigBlueprint() { return default; }
 	///<summary>Get the active control rig instance in the viewport</summary>

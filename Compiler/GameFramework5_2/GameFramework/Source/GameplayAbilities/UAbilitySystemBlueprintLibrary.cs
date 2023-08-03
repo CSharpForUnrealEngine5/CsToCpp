@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Blueprint library for ability system. Many of these functions are useful to call from native as well</summary>
 [CppInclude("AbilitySystemBlueprintLibrary.h")]
 public partial class UAbilitySystemBlueprintLibrary : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>Tries to find an ability system component on the actor, will use AbilitySystemInterface or fall back to a component search</summary>
 	public static UAbilitySystemComponent GetAbilitySystemComponent(AActor Actor) { return default; }
 	///<summary>This function can be used to trigger an ability on the actor in question with useful payload data.</summary>

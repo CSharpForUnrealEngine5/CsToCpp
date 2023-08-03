@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("WebBrowser.h")]
 public partial class UWebBrowser : UWidget {
+	public static UClass StaticClass() {return default;}
 	///<summary>FOnUrlChanged</summary>
 	public  void FOnUrlChanged(string Text) {}
 	///<summary>FOnBeforePopup</summary>

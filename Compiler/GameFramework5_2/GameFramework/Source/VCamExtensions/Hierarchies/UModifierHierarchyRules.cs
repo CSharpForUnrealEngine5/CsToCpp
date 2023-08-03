@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Defines a tree hierarchy. Each node is called a group.</summary>
 [CppInclude("Hierarchies/ModifierHierarchyRules.h")]
 public partial class UModifierHierarchyRules : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Gets the root of the tree.</summary>
 	public  string GetRootNode() { return default; }
 	///<summary>Gets the parent of this given group. Fails if called on the root node.</summary>

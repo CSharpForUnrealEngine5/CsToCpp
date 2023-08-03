@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("ImportVertexColorOptions.h")]
 public partial class UImportVertexColorOptions : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Texture Coordinate Channel to use for Sampling the Texture</summary>
 	public int UVIndex;
 	///<summary>LOD Index to import the Vertex Colors to</summary>

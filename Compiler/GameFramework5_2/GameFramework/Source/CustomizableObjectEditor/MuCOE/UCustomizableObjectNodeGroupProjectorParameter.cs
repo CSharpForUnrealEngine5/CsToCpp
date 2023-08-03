@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("MuCOE/Nodes/CustomizableObjectNodeGroupProjectorParameter.h")]
 public partial class UCustomizableObjectNodeGroupProjectorParameter : UCustomizableObjectNodeProjectorParameter {
+	public static UClass StaticClass() {return default;}
 	///<summary>Only used when connected to a Group node. Specifies which material channel in the Group node&#39;s child material nodes will be connected to the projection.</summary>
 	public string MaterialChannelNameToConnect;
 	///<summary>Only used when connected to a Group node. Specifies which material channel will be used to mask out the projection.</summary>

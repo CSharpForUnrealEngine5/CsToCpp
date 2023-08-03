@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>PlayerControllers are used by human players to control Pawns.</summary>
 [CppInclude("GameFramework/PlayerController.h")]
 public partial class APlayerController : AController {
+	public static UClass StaticClass() {return default;}
 	///<summary>UPlayer associated with this PlayerController.  Could be a local player or a net connection.</summary>
 	public UPlayer Player;
 	///<summary>Used in net games so client can acknowledge it possessed a specific pawn.</summary>

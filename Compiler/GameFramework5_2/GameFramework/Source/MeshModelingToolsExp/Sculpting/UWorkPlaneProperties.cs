@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Sculpting/MeshSculptToolBase.h")]
 public partial class UWorkPlaneProperties : UInteractiveToolPropertySet {
+	public static UClass StaticClass() {return default;}
 	///<summary>bPropertySetEnabled</summary>
 	public bool bPropertySetEnabled;
 	///<summary>Toggle whether Work Plane Positioning Gizmo is visible</summary>

@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("MuCO/CustomizableObject.h")]
 public partial class UCustomizableObject : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>All the SkeletalMeshes generated for this CustomizableObject instances will use the Reference Skeletal Mesh</summary>
 	public USkeletalMesh ReferenceSkeletalMesh_DEPRECATED;
 	///<summary>All the SkeletalMeshes generated for this CustomizableObject instances will use the Reference Skeletal Mesh</summary>

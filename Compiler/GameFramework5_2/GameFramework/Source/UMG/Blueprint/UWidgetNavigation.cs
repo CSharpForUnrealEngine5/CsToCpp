@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Blueprint/WidgetNavigation.h")]
 public partial class UWidgetNavigation : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Happens when the user presses up arrow, joystick, d-pad.</summary>
 	public FWidgetNavigationData Up;
 	///<summary>Happens when the user presses down arrow, joystick, d-pad.</summary>

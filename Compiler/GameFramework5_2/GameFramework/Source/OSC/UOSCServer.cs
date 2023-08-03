@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("OSCServer.h")]
 public partial class UOSCServer : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Gets whether or not to loopback if ReceiveIPAddress provided is multicast.</summary>
 	public  bool GetMulticastLoopback() { return default; }
 	///<summary>Returns whether server is actively listening to incoming messages.</summary>

@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("IAssetTools.h")]
 public partial class UAssetTools : UInterface {
+	public static UClass StaticClass() {return default;}
 	///<summary>Creates an asset with the specified name, path, and factory</summary>
 	public  UObject CreateAsset(string AssetName,string PackagePath,UClass AssetClass,UFactory Factory,string CallingContext/*=NAME_None*/) { return default; }
 	///<summary>Opens an asset picker dialog and creates an asset with the specified name and path</summary>

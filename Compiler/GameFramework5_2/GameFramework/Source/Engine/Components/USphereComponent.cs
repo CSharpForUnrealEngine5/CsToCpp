@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A sphere generally used for simple collision. Bounds are rendered as lines in the editor.</summary>
 [CppInclude("Components/SphereComponent.h")]
 public partial class USphereComponent : UShapeComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>The radius of the sphere *</summary>
 	public float SphereRadius;
 	///<summary>Change the sphere radius. This is the unscaled radius, before component scale is applied.</summary>

@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Materials/MaterialExpressionSobol.h")]
 public partial class UMaterialExpressionSobol : UMaterialExpression {
+	public static UClass StaticClass() {return default;}
 	///<summary>2D integer cell in 256x256 grid.</summary>
 	public FExpressionInput Cell;
 	///<summary>Sobol point number. Use Const Index if not connected.</summary>

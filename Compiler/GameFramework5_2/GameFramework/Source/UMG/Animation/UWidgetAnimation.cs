@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Animation/WidgetAnimation.h")]
 public partial class UWidgetAnimation : UMovieSceneSequence {
+	public static UClass StaticClass() {return default;}
 	///<summary>Get the start time of this animation.</summary>
 	public  float GetStartTime() { return default; }
 	///<summary>Get the end time of this animation.</summary>

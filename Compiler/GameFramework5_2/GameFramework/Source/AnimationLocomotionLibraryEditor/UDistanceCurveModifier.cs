@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Extracts traveling distance information from root motion and bakes it to a curve.</summary>
 [CppInclude("DistanceCurveModifier.h")]
 public partial class UDistanceCurveModifier : UAnimationModifier {
+	public static UClass StaticClass() {return default;}
 	///<summary>Rate used to sample the animation.</summary>
 	public int SampleRate;
 	///<summary>Name for the generated curve.</summary>

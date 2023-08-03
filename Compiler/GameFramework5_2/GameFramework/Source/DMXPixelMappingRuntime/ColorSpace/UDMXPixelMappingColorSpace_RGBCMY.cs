@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("ColorSpace/DMXPixelMappingColorSpace_RGBCMY.h")]
 public partial class UDMXPixelMappingColorSpace_RGBCMY : UDMXPixelMappingColorSpace {
+	public static UClass StaticClass() {return default;}
 	///<summary>The color space to use</summary>
 	public EDMXPixelMappingOutputColorSpace_RGBCMY PixelMappingOutputColorSpace;
 	///<summary>If set, converts Red to Cyan</summary>

@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("K2Node_InputKey.h")]
 public partial class UK2Node_InputKey : UK2Node {
+	public static UClass StaticClass() {return default;}
 	///<summary>The key that is bound</summary>
 	public FKey InputKey;
 	///<summary>Prevents actors with lower priority from handling this input</summary>

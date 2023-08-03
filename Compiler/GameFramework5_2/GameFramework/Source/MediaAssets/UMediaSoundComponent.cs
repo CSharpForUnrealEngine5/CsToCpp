@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Implements a sound component for playing a media player&#39;s audio output.</summary>
 [CppInclude("MediaSoundComponent.h")]
 public partial class UMediaSoundComponent : USynthComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>Media sound channel type.</summary>
 	public EMediaSoundChannels Channels;
 	///<summary>Dynamically adjust the sample rate if audio and media clock desynchronize.</summary>

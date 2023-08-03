@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>UCompositingElementPass</summary>
 [CppInclude("CompositingElements/CompositingElementPasses.h")]
 public partial class UCompositingElementPass : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>bEnabled</summary>
 	public bool bEnabled;
 	///<summary>PassName</summary>

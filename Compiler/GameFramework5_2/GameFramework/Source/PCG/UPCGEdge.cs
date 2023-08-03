@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("PCGEdge.h")]
 public partial class UPCGEdge : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>~End UObject interface</summary>
 	public string InboundLabel_DEPRECATED;
 	///<summary>InboundNode_DEPRECATED</summary>

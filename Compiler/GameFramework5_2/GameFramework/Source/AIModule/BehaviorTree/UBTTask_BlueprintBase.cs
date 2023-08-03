@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Base class for blueprint based task nodes. Do NOT use it for creating native c++ classes!</summary>
 [CppInclude("BehaviorTree/Tasks/BTTask_BlueprintBase.h")]
 public partial class UBTTask_BlueprintBase : UBTTaskNode {
+	public static UClass StaticClass() {return default;}
 	///<summary>Cached AIController owner of BehaviorTreeComponent.</summary>
 	public AAIController AIOwner;
 	///<summary>Cached actor owner of BehaviorTreeComponent.</summary>

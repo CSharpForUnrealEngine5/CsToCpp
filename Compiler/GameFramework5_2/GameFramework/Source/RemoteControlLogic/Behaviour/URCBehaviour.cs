@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Base class for remote control behaviour.</summary>
 [CppInclude("Behaviour/RCBehaviour.h")]
 public partial class URCBehaviour : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Associated cpp behaviour</summary>
 	public UClass BehaviourNodeClass;
 	///<summary>Class path to associated blueprint class behaviour</summary>

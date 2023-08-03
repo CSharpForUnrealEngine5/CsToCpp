@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Kismet/KismetTextLibrary.h")]
 public partial class UKismetTextLibrary : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>Converts a vector value to localized formatted text, in the form &#39;X= Y= Z=&#39;</summary>
 	public static string Conv_VectorToText(FVector InVec) { return default; }
 	///<summary>Converts a vector2d value to localized formatted text, in the form &#39;X= Y=&#39;</summary>

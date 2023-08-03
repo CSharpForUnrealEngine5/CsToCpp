@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>BodySetup contains all collision information that is associated with a single asset.</summary>
 [CppInclude("PhysicsEngine/BodySetup.h")]
 public partial class UBodySetup : UBodySetupCore {
+	public static UClass StaticClass() {return default;}
 	///<summary>Simplified collision representation of this</summary>
 	public FKAggregateGeom AggGeom;
 	///<summary>If true (and bEnableFullAnimWeightBodies in SkelMeshComp is true), the physics of this bone will always be blended into the skeletal mesh, regardless of what PhysicsWeight of the SkelMeshComp is.</summary>

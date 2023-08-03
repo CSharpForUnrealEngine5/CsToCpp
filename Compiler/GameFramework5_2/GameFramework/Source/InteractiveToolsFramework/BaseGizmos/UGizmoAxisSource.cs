@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("BaseGizmos/GizmoInterfaces.h")]
 public partial class UGizmoAxisSource : UInterface {
+	public static UClass StaticClass() {return default;}
 	///<summary>@return Origin Point of axis</summary>
 	public  FVector GetOrigin() { return default; }
 	///<summary>@return Direction Vector of axis</summary>

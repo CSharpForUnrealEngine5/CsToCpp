@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A function library that provides static/Blueprint functions for Google ARCore Services.</summary>
 [CppInclude("GoogleARCoreServicesFunctionLibrary.h")]
 public partial class UGoogleARCoreServicesFunctionLibrary : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>Configure the current Unreal AR session with the desired GoogleARCoreServices configuration.</summary>
 	public static bool ConfigGoogleARCoreServices(FGoogleARCoreServicesConfig ServiceConfig) { return default; }
 	///<summary>This will start a Latent Action to host the ARPin and creating a UCloudARPin from it.</summary>

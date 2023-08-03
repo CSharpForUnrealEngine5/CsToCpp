@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("GeometryScript/ShapeFunctions.h")]
 public partial class UGeometryScriptLibrary_RayFunctions : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>Create a Ray from two points, placing the Origin at A and the Direction as Normalize(B-A)</summary>
 	public static FRay MakeRayFromPoints(FVector A,FVector B) { return default; }
 	///<summary>Create a Ray from an Origin and Direction, with optionally non-normalized Direction</summary>

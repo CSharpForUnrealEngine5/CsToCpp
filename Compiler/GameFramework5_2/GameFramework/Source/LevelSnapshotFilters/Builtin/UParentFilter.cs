@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Builtin/BlueprintOnly/ParentFilter.h")]
 public partial class UParentFilter : ULevelSnapshotFilter {
+	public static UClass StaticClass() {return default;}
 	///<summary>Adds a child you already created to this filter</summary>
 	public  void AddChild(ULevelSnapshotFilter Filter) {}
 	///<summary>Removes a child from this filter</summary>

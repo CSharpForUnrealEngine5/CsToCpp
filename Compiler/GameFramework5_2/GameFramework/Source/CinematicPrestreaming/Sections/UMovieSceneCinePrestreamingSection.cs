@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Movie Scene Section representing a Prestreaming asset.</summary>
 [CppInclude("Sections/MovieSceneCinePrestreamingSection.h")]
 public partial class UMovieSceneCinePrestreamingSection : UMovieSceneSection {
+	public static UClass StaticClass() {return default;}
 	///<summary>Get the prestreaming asset soft pointer. Use for async loading.</summary>
 	public  TSoftObjectPtr<UCinePrestreamingData> GetPrestreamingAsset() { return default; }
 	///<summary>SetPrestreamingAsset</summary>

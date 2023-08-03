@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>The vertex delta model, which uses a GPU based neural network.</summary>
 [CppInclude("VertexDeltaModel.h")]
 public partial class UVertexDeltaModel : UMLDeformerGeomCacheModel {
+	public static UClass StaticClass() {return default;}
 	///<summary>The NNI neural network.</summary>
 	public UNeuralNetwork NNINetwork;
 	///<summary>The number of hidden layers that the neural network model will have.\nHigher numbers will slow down performance but can deal with more complex deformations.</summary>

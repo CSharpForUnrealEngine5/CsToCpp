@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Components/HierarchicalInstancedStaticMeshComponent.h")]
 public partial class UHierarchicalInstancedStaticMeshComponent : UInstancedStaticMeshComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>If true then we allow a translated space when building the cluster tree.</summary>
 	public bool bUseTranslatedInstanceSpace;
 	///<summary>Origin of the translated space used when building the cluster tree.</summary>

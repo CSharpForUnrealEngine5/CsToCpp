@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Protocols/CompositionGraphCaptureProtocol.h")]
 public partial class UCompositionGraphCaptureProtocol : UMovieSceneImageCaptureProtocolBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>A list of render passes to include in the capture. Leave empty to export all available passes.</summary>
 	public FCompositionGraphCapturePasses IncludeRenderPasses;
 	///<summary>Whether to capture the frames as HDR textures (*.exr format)</summary>

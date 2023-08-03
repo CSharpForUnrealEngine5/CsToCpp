@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Intermediate base class for all line-trace type targeting actors.</summary>
 [CppInclude("Abilities/GameplayAbilityTargetActor_Trace.h")]
 public partial class AGameplayAbilityTargetActor_Trace : AGameplayAbilityTargetActor {
+	public static UClass StaticClass() {return default;}
 	///<summary>MaxRange</summary>
 	public float MaxRange;
 	///<summary>TraceProfile</summary>

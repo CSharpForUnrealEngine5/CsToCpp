@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>This pipeline is the generic pipeline option for all meshes type and should be call before specialized Mesh pipeline (like generic static mesh or skeletal mesh pipelines)</summary>
 [CppInclude("InterchangeGenericAssetsPipeline.h")]
 public partial class UInterchangeGenericAssetsPipeline : UInterchangePipelineBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>Allow user to choose the re-import strategy.</summary>
 	public EReimportStrategyFlags ReimportStrategy;
 	///<summary>If enable and AssetName is empty and there is only one asset and one source data, we will name the asset like the source data name.</summary>

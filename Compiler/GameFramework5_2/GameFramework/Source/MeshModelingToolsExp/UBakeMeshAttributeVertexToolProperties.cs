@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("BakeMeshAttributeVertexTool.h")]
 public partial class UBakeMeshAttributeVertexToolProperties : UInteractiveToolPropertySet {
+	public static UClass StaticClass() {return default;}
 	///<summary>The bake output mode</summary>
 	public EBakeVertexOutput OutputMode;
 	///<summary>The bake output type to generate</summary>

@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("ShowLoginUICallbackProxy.h")]
 public partial class UShowLoginUICallbackProxy : UBlueprintAsyncActionBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>Called when there is a successful query</summary>
 	public FOnlineShowLoginUIResult OnSuccess;
 	///<summary>Called when there is an unsuccessful query</summary>

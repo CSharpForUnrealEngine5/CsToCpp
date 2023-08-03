@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Settings for the video input tab.</summary>
 [CppInclude("MediaFrameworkVideoInputSettings.h")]
 public partial class UMediaFrameworkVideoInputSettings : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>MediaBundles</summary>
 	public TArray<TSoftObjectPtr<UMediaBundle>> MediaBundles;
 	///<summary>MediaSources</summary>

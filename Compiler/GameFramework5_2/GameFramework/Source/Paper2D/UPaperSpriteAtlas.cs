@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Groups together a set of sprites that will try to share the same texture atlas (allowing them to be combined into a single draw call)</summary>
 [CppInclude("PaperSpriteAtlas.h")]
 public partial class UPaperSpriteAtlas : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Description of this atlas, which shows up in the content browser tooltip</summary>
 	public string AtlasDescription;
 	///<summary>Maximum atlas page width (single pages might be smaller)</summary>

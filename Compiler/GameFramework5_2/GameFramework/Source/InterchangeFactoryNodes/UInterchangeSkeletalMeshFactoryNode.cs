@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("InterchangeSkeletalMeshFactoryNode.h")]
 public partial class UInterchangeSkeletalMeshFactoryNode : UInterchangeMeshFactoryNode {
+	public static UClass StaticClass() {return default;}
 	///<summary>Initialize node data</summary>
 	public  void InitializeSkeletalMeshNode(string UniqueID,string DisplayLabel,string InAssetClass) {}
 	///<summary>Get the class this node want to create</summary>

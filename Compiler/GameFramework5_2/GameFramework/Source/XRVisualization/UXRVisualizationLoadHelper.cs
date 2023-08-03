@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("XRVisualizationFunctionLibrary.h")]
 public partial class UXRVisualizationLoadHelper : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>GenericHMD</summary>
 	public UStaticMesh GenericHMD;
 	///<summary>OculusControllerMesh</summary>

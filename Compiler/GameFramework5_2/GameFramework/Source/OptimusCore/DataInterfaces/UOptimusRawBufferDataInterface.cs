@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("DataInterfaces/OptimusDataInterfaceRawBuffer.h")]
 public partial class UOptimusRawBufferDataInterface : UOptimusComputeDataInterface {
+	public static UClass StaticClass() {return default;}
 	///<summary>The value type we should be allocating elements for</summary>
 	public FShaderValueTypeHandle ValueType;
 	///<summary>The data domain this buffer covers</summary>

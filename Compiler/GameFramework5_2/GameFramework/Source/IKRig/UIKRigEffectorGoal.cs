@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("IKRigDefinition.h")]
 public partial class UIKRigEffectorGoal : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>The name used to refer to this goal from outside systems.</summary>
 	public string GoalName;
 	///<summary>The name of the bone that this Goal is located at.</summary>

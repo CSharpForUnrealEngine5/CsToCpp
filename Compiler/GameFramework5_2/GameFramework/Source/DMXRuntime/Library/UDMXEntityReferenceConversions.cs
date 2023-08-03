@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Extend type conversions to handle Entity Reference structs</summary>
 [CppInclude("Library/DMXEntityReference.h")]
 public partial class UDMXEntityReferenceConversions : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>Conv_ControllerRefToObj</summary>
 	public static UDMXEntityController Conv_ControllerRefToObj(FDMXEntityControllerRef InControllerRef) { return default; }
 	///<summary>Conv_FixtureTypeRefToObj</summary>

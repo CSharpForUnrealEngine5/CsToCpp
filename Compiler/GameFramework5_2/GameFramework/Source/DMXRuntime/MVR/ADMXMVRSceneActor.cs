@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("MVR/DMXMVRSceneActor.h")]
 public partial class ADMXMVRSceneActor : AActor {
+	public static UClass StaticClass() {return default;}
 	///<summary>If checked, respawns Fixture Actors deleted from the MVR Scene</summary>
 	public bool bRespawnDeletedActorsOnRefresh;
 	///<summary>If checked, updates transforms from the DMX Library</summary>

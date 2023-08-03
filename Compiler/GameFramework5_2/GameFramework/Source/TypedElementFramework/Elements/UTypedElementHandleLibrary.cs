@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Script exposure for FScriptTypedElementHandle.</summary>
 [CppInclude("Elements/Framework/TypedElementHandle.h")]
 public partial class UTypedElementHandleLibrary : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Has this handle been initialized to a valid element?</summary>
 	public static bool IsSet(FScriptTypedElementHandle ElementHandle) { return default; }
 	///<summary>Release this handle and set it back to an empty state.</summary>

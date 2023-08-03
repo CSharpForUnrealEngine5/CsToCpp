@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("NavCollision.h")]
 public partial class UNavCollision : UNavCollisionBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>list of nav collision cylinders</summary>
 	public TArray<FNavCollisionCylinder> CylinderCollision;
 	///<summary>list of nav collision boxes</summary>

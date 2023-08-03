@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A material expression that Remap a value from one range to another.</summary>
 [CppInclude("MaterialX/MaterialExpressionRemap.h")]
 public partial class UMaterialExpressionRemap : UMaterialExpression {
+	public static UClass StaticClass() {return default;}
 	///<summary>Input</summary>
 	public FExpressionInput Input;
 	///<summary>Defaults to &#39;MinDefault1&#39; if not specified</summary>

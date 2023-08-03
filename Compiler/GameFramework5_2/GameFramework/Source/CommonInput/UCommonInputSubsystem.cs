@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("CommonInputSubsystem.h")]
 public partial class UCommonInputSubsystem : ULocalPlayerSubsystem {
+	public static UClass StaticClass() {return default;}
 	///<summary>IsInputMethodActive</summary>
 	public  bool IsInputMethodActive(ECommonInputType InputMethod) { return default; }
 	///<summary>The current input type based on the last input received on the device.</summary>

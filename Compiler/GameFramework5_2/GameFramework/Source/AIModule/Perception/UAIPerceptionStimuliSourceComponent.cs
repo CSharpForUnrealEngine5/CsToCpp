@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Gives owning actor a way to auto-register as perception system&#39;s sense stimuli source</summary>
 [CppInclude("Perception/AIPerceptionStimuliSourceComponent.h")]
 public partial class UAIPerceptionStimuliSourceComponent : UActorComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>bAutoRegisterAsSource</summary>
 	public bool bAutoRegisterAsSource;
 	///<summary>RegisterAsSourceForSenses</summary>

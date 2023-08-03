@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Project wide settings for input handling</summary>
 [CppInclude("GameFramework/InputSettings.h")]
 public partial class UInputSettings : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>List of Axis Properties</summary>
 	public TArray<FInputAxisConfigEntry> AxisConfig;
 	///<summary>Platform specific settings for Input.</summary>

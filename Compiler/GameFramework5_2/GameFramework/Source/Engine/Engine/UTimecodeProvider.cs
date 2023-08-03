@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A class responsible of fetching a timecode from a source.</summary>
 [CppInclude("Engine/TimecodeProvider.h")]
 public partial class UTimecodeProvider : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Number of frames to subtract from the qualified frame time when GetDelayedQualifiedFrameTime or GetDelayedTimecode is called.</summary>
 	public float FrameDelay;
 	///<summary>Fetch current timecode from its source. e.g. From hardware/network/file/etc.</summary>

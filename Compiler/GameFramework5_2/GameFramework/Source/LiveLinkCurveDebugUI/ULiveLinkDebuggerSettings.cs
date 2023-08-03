@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("LiveLinkDebuggerSettings.h")]
 public partial class ULiveLinkDebuggerSettings : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Color used when the CurveValue bar is at 0</summary>
 	public FSlateColor MinBarColor;
 	///<summary>Color used when the CurveValueBar is at 1.0</summary>

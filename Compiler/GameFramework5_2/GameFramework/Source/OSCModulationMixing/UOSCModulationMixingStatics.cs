@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("OSCModulationMixingStatics.h")]
 public partial class UOSCModulationMixingStatics : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>Returns OSC Address pattern for loading a mix</summary>
 	public static FOSCAddress GetMixLoadPattern() { return default; }
 	///<summary>Returns OSC Address path for loading a profile</summary>

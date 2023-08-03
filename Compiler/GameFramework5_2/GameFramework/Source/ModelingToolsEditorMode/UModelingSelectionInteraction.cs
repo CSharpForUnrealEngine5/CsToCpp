@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>UModelingSelectionInteraction provides element-level selection behavior (ie mesh triangles/edges/vertices)</summary>
 [CppInclude("ModelingSelectionInteraction.h")]
 public partial class UModelingSelectionInteraction : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>click-to-select behavior, various drag behaviors</summary>
 	public USingleClickOrDragInputBehavior ClickOrDragBehavior;
 	///<summary>mouse hover behavior</summary>

@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>This class allow a translator to add general source data that describe the whole source. Pipeline can use this information.</summary>
 [CppInclude("Nodes/InterchangeSourceNode.h")]
 public partial class UInterchangeSourceNode : UInterchangeBaseNode {
+	public static UClass StaticClass() {return default;}
 	///<summary>Initialize the base data of the node</summary>
 	public  void InitializeSourceNode(string UniqueID,string DisplayLabel) {}
 	///<summary>Query the source frame rate numerator.</summary>

@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("InterchangeAssetImportData.h")]
 public partial class UInterchangeAssetImportData : UAssetImportData {
+	public static UClass StaticClass() {return default;}
 	///<summary>Return the first filename stored in this data. The resulting filename will be absolute (ie, not relative to the asset).</summary>
 	public  string ScriptGetFirstFilename() { return default; }
 	///<summary>Extract all the (resolved) filenames.</summary>

@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Class to fetch a timecode via an AJA card.</summary>
 [CppInclude("AjaTimecodeProvider.h")]
 public partial class UAjaTimecodeProvider : UGenlockedTimecodeProvider {
+	public static UClass StaticClass() {return default;}
 	///<summary>Should we read the timecode from a dedicated LTC pin or an SDI input.</summary>
 	public bool bUseDedicatedPin;
 	///<summary>Read LTC timecode from reference pin. Will fail if device doesn&#39;t support that feature.</summary>

@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Particles/Location/ParticleModuleLocationPrimitiveBase.h")]
 public partial class UParticleModuleLocationPrimitiveBase : UParticleModuleLocationBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>Whether the positive X axis is valid for spawning.</summary>
 	public bool Positive_X;
 	///<summary>Whether the positive Y axis is valid for spawning.</summary>

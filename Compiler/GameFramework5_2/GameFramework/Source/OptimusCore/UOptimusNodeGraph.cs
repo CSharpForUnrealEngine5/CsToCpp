@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("OptimusNodeGraph.h")]
 public partial class UOptimusNodeGraph : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>GetGraphType</summary>
 	public  EOptimusNodeGraphType GetGraphType() { return default; }
 	///<summary>IsExecutionGraph</summary>

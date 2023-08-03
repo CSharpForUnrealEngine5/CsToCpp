@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Solvers/IKRig_FBIKSolver.h")]
 public partial class UIKRig_FBIKEffector : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>The Goal that is driving this effector&#39;s transform.</summary>
 	public string GoalName;
 	///<summary>The bone that this effector will pull on.</summary>

@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Implements an asset that can be used to store binding information between a groom and a skeletal mesh</summary>
 [CppInclude("GroomBindingAsset.h")]
 public partial class UGroomBindingAsset : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Type of mesh to create groom binding for</summary>
 	public EGroomBindingMeshType GroomBindingType;
 	///<summary>Groom to bind.</summary>

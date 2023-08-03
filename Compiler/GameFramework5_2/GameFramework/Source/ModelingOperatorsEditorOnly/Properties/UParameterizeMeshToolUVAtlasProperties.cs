@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Settings for the UVAtlas Automatic UV Generation Method</summary>
 [CppInclude("Properties/ParameterizeMeshProperties.h")]
 public partial class UParameterizeMeshToolUVAtlasProperties : UInteractiveToolPropertySet {
+	public static UClass StaticClass() {return default;}
 	///<summary>Maximum amount of stretch, from none to unbounded. If zero stretch is specified, each triangle will likely be its own UV island.</summary>
 	public float IslandStretch;
 	///<summary>Hint at number of UV islands. The default of 0 means it is determined automatically.</summary>

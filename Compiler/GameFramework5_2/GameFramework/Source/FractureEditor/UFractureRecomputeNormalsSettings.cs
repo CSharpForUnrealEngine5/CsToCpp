@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Settings for visualizing and recomputing normals and tangents</summary>
 [CppInclude("FractureToolRecomputeNormals.h")]
 public partial class UFractureRecomputeNormalsSettings : UFractureToolSettings {
+	public static UClass StaticClass() {return default;}
 	///<summary>Whether to display normal vectors</summary>
 	public bool bShowNormals;
 	///<summary>Whether to display tangent and bitangent vectors</summary>

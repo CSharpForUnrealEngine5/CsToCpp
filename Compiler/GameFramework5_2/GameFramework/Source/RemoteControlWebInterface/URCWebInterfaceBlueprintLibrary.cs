@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("RCWebInterfaceLibrary.h")]
 public partial class URCWebInterfaceBlueprintLibrary : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>Get a list of compatible actors to rebind the remote control preset properties</summary>
 	public static TMap<string,AActor> FindMatchingActorsToRebind(string PresetId,TArray<string> PropertyIds) { return default; }
 	///<summary>Get the label of the owner actor of the remote control preset properties</summary>

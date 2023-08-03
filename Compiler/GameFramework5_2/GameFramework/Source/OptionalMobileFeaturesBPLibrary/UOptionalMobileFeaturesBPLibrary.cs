@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("OptionalMobileFeaturesBPLibrary.h")]
 public partial class UOptionalMobileFeaturesBPLibrary : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>Returns the current volume state of the device in a range of 0-100 (%)</summary>
 	public static int GetVolumeState() { return default; }
 	///<summary>Returns the current battery level of the device in a range of [0, 100]</summary>

@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Represents the Point Cloud asset</summary>
 [CppInclude("LidarPointCloud.h")]
 public partial class ULidarPointCloud : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Stores the path to the original source file. Empty if dynamically created.</summary>
 	public FFilePath SourcePath;
 	///<summary>Determines the maximum error (in cm) of the collision for this point cloud.</summary>

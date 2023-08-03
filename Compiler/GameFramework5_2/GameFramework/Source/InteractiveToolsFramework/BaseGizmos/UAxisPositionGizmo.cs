@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>UAxisPositionGizmo implements a gizmo interaction where 1D parameter value is manipulated</summary>
 [CppInclude("BaseGizmos/AxisPositionGizmo.h")]
 public partial class UAxisPositionGizmo : UInteractiveGizmo {
+	public static UClass StaticClass() {return default;}
 	///<summary>AxisSource provides the 3D line on which the interaction happens</summary>
 	public object /*AxisSource*/ AxisSource;
 	///<summary>The 3D line-nearest-point is converted to a 1D coordinate along the line, and the change in value is sent to this ParameterSource</summary>

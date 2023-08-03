@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>UScriptableClickDragTool is an extension of UScriptableInteractiveTool that supports</summary>
 [CppInclude("BaseTools/ScriptableClickDragTool.h")]
 public partial class UScriptableClickDragTool : UScriptableInteractiveTool {
+	public static UClass StaticClass() {return default;}
 	///<summary>Enable Hover support API functions OnHoverHitTest / OnHoverBegin / OnHoverUpdate / OnHoverEnd for Mouse devices.</summary>
 	public bool bWantMouseHover;
 	///<summary>Allow Modifiers states to be updated during ClickDrag sequence. Defaults to enabled.</summary>

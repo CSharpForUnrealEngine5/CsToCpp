@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Wrapper for the Python Shotgrid Engine</summary>
 [CppInclude("ShotgridEngine.h")]
 public partial class UShotgridEngine : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Get the instance of the Python Shotgrid Engine</summary>
 	public static UShotgridEngine GetInstance() { return default; }
 	///<summary>Callback for when the Python Shotgrid Engine has finished initialization</summary>

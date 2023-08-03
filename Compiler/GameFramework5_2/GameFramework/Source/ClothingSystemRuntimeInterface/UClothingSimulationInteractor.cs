@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>If a clothing simulation is able to be interacted with at runtime then a derived</summary>
 [CppInclude("ClothingSimulationInteractor.h")]
 public partial class UClothingSimulationInteractor : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Called to update collision status without restarting the simulation.</summary>
 	public  void PhysicsAssetUpdated() {}
 	///<summary>Called to update the cloth config without restarting the simulation.</summary>

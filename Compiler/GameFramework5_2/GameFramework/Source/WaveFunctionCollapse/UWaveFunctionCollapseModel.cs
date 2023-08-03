@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A Model of WFC constraints.</summary>
 [CppInclude("WaveFunctionCollapseModel.h")]
 public partial class UWaveFunctionCollapseModel : UDataAsset {
+	public static UClass StaticClass() {return default;}
 	///<summary>Grid Tile Size in cm^3</summary>
 	public float TileSize;
 	///<summary>Constraints</summary>

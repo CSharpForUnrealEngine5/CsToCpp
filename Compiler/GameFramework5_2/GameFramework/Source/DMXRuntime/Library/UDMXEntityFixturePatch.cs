@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A DMX fixture patch that can be patch to channels in a DMX Universe via the DMX Library Editor.</summary>
 [CppInclude("Library/DMXEntityFixturePatch.h")]
 public partial class UDMXEntityFixturePatch : UDMXEntity {
+	public static UClass StaticClass() {return default;}
 	///<summary>FDMXOnFixturePatchReceivedDMXDelegate</summary>
 	public  void FDMXOnFixturePatchReceivedDMXDelegate(UDMXEntityFixturePatch FixturePatch,FDMXNormalizedAttributeValueMap ValuePerAttribute) {}
 	///<summary>Creates a new Fixture Patch in the DMX Library using the specified Fixture Type</summary>

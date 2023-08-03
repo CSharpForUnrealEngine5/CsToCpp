@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("GeometryScript/MeshComparisonFunctions.h")]
 public partial class UGeometryScriptLibrary_MeshComparisonFunctions : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>IsSameMeshAs</summary>
 	public static UDynamicMesh IsSameMeshAs(UDynamicMesh TargetMesh,UDynamicMesh OtherMesh,FGeometryScriptIsSameMeshOptions Options,bool bIsSameMesh,UGeometryScriptDebug Debug/*=nullptr*/) { return default; }
 	///<summary>MeasureDistancesBetweenMeshes</summary>

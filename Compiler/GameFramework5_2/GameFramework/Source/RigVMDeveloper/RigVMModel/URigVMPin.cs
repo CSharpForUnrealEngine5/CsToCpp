@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>The Pin represents a single connector / pin on a node in the RigVM model.</summary>
 [CppInclude("RigVMModel/RigVMPin.h")]
 public partial class URigVMPin : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Returns a . separated path containing all names of the pin and its owners,</summary>
 	public  string GetPinPath(bool bUseNodePath/*=false*/) { return default; }
 	///<summary>Returns a . separated path containing all names of the pin and its owners</summary>

@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("DatasmithFileProducer.h")]
 public partial class UDatasmithFileProducer : UDataprepContentProducer {
+	public static UClass StaticClass() {return default;}
 	///<summary>End UDataprepContentProducer overrides</summary>
 	public string FilePath;
 	///<summary>DatasmithScene</summary>

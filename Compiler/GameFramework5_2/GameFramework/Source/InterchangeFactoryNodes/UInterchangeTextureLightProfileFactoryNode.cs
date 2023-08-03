@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("InterchangeTextureLightProfileFactoryNode.h")]
 public partial class UInterchangeTextureLightProfileFactoryNode : UInterchangeTexture2DFactoryNode {
+	public static UClass StaticClass() {return default;}
 	///<summary>GetCustomBrightness</summary>
 	public  bool GetCustomBrightness(float AttributeValue) { return default; }
 	///<summary>SetCustomBrightness</summary>

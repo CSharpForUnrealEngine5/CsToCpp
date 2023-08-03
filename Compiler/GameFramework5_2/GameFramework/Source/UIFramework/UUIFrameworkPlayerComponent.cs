@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("UIFPlayerComponent.h")]
 public partial class UUIFrameworkPlayerComponent : UActorComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>AddWidget</summary>
 	public  void AddWidget(FUIFrameworkGameLayerSlot Widget) {}
 	///<summary>RemoveWidget</summary>

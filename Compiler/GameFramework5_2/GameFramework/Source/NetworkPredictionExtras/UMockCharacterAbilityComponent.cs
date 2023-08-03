@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>ActorComponent for running Mock Ability Simulation for CharacterMotion example</summary>
 [CppInclude("MockCharacterAbilitySimulation.h")]
 public partial class UMockCharacterAbilityComponent : UCharacterMotionComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>// NetSimCues</summary>
 	public  void FMockCharacterAbilityNotifyStateChange(bool bNewStateValue) {}
 	///<summary>Notifies when Sprint state changes</summary>

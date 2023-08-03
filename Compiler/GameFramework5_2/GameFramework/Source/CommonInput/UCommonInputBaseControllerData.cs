@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Derive from this class to store the Input data. It is referenced in the Common Input Settings, found in the project settings UI.</summary>
 [CppInclude("CommonInputBaseTypes.h")]
 public partial class UCommonInputBaseControllerData : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>SetButtonImageHeightTo</summary>
 	public int SetButtonImageHeightTo;
 	///<summary>InputType</summary>

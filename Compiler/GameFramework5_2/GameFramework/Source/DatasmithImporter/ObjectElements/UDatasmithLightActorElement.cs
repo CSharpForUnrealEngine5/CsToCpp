@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>* UDatasmithLightActorElement</summary>
 [CppInclude("ObjectElements/DatasmithUObjectElements.h")]
 public partial class UDatasmithLightActorElement : UDatasmithActorElement {
+	public static UClass StaticClass() {return default;}
 	///<summary>Return true on light enabled, false otherwise</summary>
 	public  bool IsEnabled() { return default; }
 	///<summary>Set enable property of the light</summary>

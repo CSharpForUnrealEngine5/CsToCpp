@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Handles game-specific networking management (cheat detection, bandwidth management, etc.).</summary>
 [CppInclude("GameFramework/GameNetworkManager.h")]
 public partial class AGameNetworkManager : AInfo {
+	public static UClass StaticClass() {return default;}
 	///<summary>If packet loss goes over this value, we have bad packet loss. Value is between 0 and 1.</summary>
 	public float BadPacketLossThreshold;
 	///<summary>If the packet loss goes over this threshold, we have severe packet loss. Value is between 0 and 1</summary>

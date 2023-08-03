@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("EditMeshPolygonsTool.h")]
 public partial class UEditMeshPolygonsToolEdgeActions_Triangles : UEditMeshPolygonsToolActionPropertySet {
+	public static UClass StaticClass() {return default;}
 	///<summary>Merge selected edges, moving the first edge to the second</summary>
 	public  void Weld() {}
 	///<summary>Fill the adjacent hole for any selected boundary edges</summary>

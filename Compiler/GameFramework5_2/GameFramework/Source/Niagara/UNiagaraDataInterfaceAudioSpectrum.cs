@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Data Interface allowing sampling of recent audio spectrum.</summary>
 [CppInclude("NiagaraDataInterfaceAudioSpectrum.h")]
 public partial class UNiagaraDataInterfaceAudioSpectrum : UNiagaraDataInterfaceAudioSubmix {
+	public static UClass StaticClass() {return default;}
 	///<summary>The number of spectrum samples to pass to the GPU</summary>
 	public int Resolution;
 	///<summary>The minimum frequency represented in the spectrum.</summary>

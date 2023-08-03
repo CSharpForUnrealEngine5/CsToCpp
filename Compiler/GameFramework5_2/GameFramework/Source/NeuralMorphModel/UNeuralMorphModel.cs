@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>The neural morph model.</summary>
 [CppInclude("NeuralMorphModel.h")]
 public partial class UNeuralMorphModel : UMLDeformerMorphModel {
+	public static UClass StaticClass() {return default;}
 	///<summary>The set of bones that are grouped together and generate morph targets together as a whole.</summary>
 	public TArray<FNeuralMorphBoneGroup> BoneGroups;
 	///<summary>The set of curves that are grouped together and generate morph targets together as a whole.</summary>

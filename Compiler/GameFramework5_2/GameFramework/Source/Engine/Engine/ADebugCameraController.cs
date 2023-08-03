@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Camera controller that allows you to fly around a level mostly unrestricted by normal movement rules.</summary>
 [CppInclude("Engine/DebugCameraController.h")]
 public partial class ADebugCameraController : APlayerController {
+	public static UClass StaticClass() {return default;}
 	///<summary>Whether to show information about the selected actor on the debug camera HUD.</summary>
 	public bool bShowSelectedInfo;
 	///<summary>Saves whether the FreezeRendering console command is active</summary>

@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Play indicated AnimationAsset on Pawn controlled by BT</summary>
 [CppInclude("BehaviorTree/Tasks/BTTask_PlayAnimation.h")]
 public partial class UBTTask_PlayAnimation : UBTTaskNode {
+	public static UClass StaticClass() {return default;}
 	///<summary>Animation asset to play. Note that it needs to match the skeleton of pawn this BT is controlling</summary>
 	public UAnimationAsset AnimationToPlay;
 	///<summary>bLooping</summary>

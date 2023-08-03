@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("RootMotionModifier.h")]
 public partial class URootMotionModifier_Warp : URootMotionModifier {
+	public static UClass StaticClass() {return default;}
 	///<summary>Name used to find the warp target for this modifier</summary>
 	public string WarpTargetName;
 	///<summary>WarpPointAnimProvider</summary>

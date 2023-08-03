@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>UInterchangeAnimationAPI is used to store and retrieve animation data(i.e. DCC node attributes, pipelines will have access to those attributes)</summary>
 [CppInclude("Nodes/InterchangeAnimationAPI.h")]
 public partial class UInterchangeAnimationAPI : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Get true if the node transform have animation. Return false if the Attribute is not set.</summary>
 	public static bool GetCustomIsNodeTransformAnimated(UInterchangeBaseNode InterchangeBaseNode,bool AttributeValue) { return default; }
 	///<summary>Set true if the node transform has animation.</summary>

@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>* Function Library primarily used for exposing functionality of UI related structs to Blueprints</summary>
 [CppInclude("UI/VCamUIFunctionLibrary.h")]
 public partial class UVCamUIFunctionLibrary : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>* Checks whether a given VCam Connection is successfully connected.</summary>
 	public static bool IsConnected_VCamConnection(FVCamConnection Connection) { return default; }
 	///<summary>* Gets the name of the associated Connection Point for a given VCam Connection.</summary>

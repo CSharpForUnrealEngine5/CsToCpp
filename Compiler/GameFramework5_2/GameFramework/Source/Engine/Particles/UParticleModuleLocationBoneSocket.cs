@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Particles/Location/ParticleModuleLocationBoneSocket.h")]
 public partial class UParticleModuleLocationBoneSocket : UParticleModuleLocationBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>Whether the module uses Bones or Sockets for locations.</summary>
 	public ELocationBoneSocketSource SourceType;
 	///<summary>An offset to apply to each bone/socket</summary>

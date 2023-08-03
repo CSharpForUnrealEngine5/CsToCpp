@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Settings for the MassCrowd plugin.</summary>
 [CppInclude("MassCrowdSettings.h")]
 public partial class UMassCrowdSettings : UMassModuleSettings {
+	public static UClass StaticClass() {return default;}
 	///<summary>Base thickness used to render lane data specific to crowd.</summary>
 	public float LaneBaseLineThickness;
 	///<summary>Z offset used to render lane data specific to crowd over the actual zone graph.</summary>

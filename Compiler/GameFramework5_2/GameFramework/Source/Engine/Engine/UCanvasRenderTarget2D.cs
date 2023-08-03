@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>CanvasRenderTarget2D is 2D render target which exposes a Canvas interface to allow you to draw elements onto</summary>
 [CppInclude("Engine/CanvasRenderTarget2D.h")]
 public partial class UCanvasRenderTarget2D : UTextureRenderTarget2D {
+	public static UClass StaticClass() {return default;}
 	///<summary>Updates the the canvas render target texture&#39;s resource. This is where the render target will create or</summary>
 	public  void UpdateResource() {}
 	///<summary>Creates a new canvas render target and initializes it to the specified dimensions</summary>

@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("DMXFixtureComponent.h")]
 public partial class UDMXFixtureComponent : UActorComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>Initializes the component</summary>
 	public  void Initialize() {}
 	///<summary>If used within a DMX Fixture Actor or Fixture Matrix Actor, the component only receives data when set to true. Else needs be implemented in blueprints.</summary>

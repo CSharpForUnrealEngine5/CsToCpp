@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Components/ExpandableArea.h")]
 public partial class UExpandableArea : UWidget {
+	public static UClass StaticClass() {return default;}
 	///<summary>Style</summary>
 	public FExpandableAreaStyle Style;
 	///<summary>BorderBrush</summary>

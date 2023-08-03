@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("GroomToMeshTool.h")]
 public partial class UGroomToMeshToolProperties : UInteractiveToolPropertySet {
+	public static UClass StaticClass() {return default;}
 	///<summary>The size of the geometry bounding box major axis measured in voxels</summary>
 	public int VoxelCount;
 	///<summary>BlendPower</summary>

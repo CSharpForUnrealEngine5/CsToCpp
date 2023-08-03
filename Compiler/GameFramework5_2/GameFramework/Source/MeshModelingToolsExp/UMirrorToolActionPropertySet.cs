@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("MirrorTool.h")]
 public partial class UMirrorToolActionPropertySet : UInteractiveToolPropertySet {
+	public static UClass StaticClass() {return default;}
 	///<summary>Move the mirror plane to center of bounding box without changing its normal.</summary>
 	public  void ShiftToCenter() {}
 	///<summary>Move the mirror plane and adjust its normal to mirror entire selection leftward.</summary>

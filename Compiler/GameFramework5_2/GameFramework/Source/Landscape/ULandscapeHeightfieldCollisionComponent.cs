@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("LandscapeHeightfieldCollisionComponent.h")]
 public partial class ULandscapeHeightfieldCollisionComponent : UPrimitiveComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>List of layers painted on this component. Matches the WeightmapLayerAllocations array in the LandscapeComponent.</summary>
 	public TArray<ULandscapeLayerInfoObject> ComponentLayerInfos;
 	///<summary>Offset of component in landscape quads</summary>

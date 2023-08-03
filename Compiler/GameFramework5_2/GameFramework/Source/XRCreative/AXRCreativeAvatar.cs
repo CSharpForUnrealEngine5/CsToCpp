@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("XRCreativeAvatar.h")]
 public partial class AXRCreativeAvatar : APawn {
+	public static UClass StaticClass() {return default;}
 	///<summary>GetHeadTransform</summary>
 	public  FTransform GetHeadTransform() { return default; }
 	///<summary>GetHeadTransformRoomSpace</summary>

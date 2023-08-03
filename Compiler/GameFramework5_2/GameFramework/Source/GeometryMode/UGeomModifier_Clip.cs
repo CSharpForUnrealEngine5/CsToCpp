@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("GeomModifier_Clip.h")]
 public partial class UGeomModifier_Clip : UGeomModifier_Edit {
+	public static UClass StaticClass() {return default;}
 	///<summary>bFlipNormal</summary>
 	public bool bFlipNormal;
 	///<summary>bSplit</summary>

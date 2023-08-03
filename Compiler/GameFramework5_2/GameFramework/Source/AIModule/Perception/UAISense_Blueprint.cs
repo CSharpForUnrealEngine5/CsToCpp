@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Perception/AISense_Blueprint.h")]
 public partial class UAISense_Blueprint : UAISense {
+	public static UClass StaticClass() {return default;}
 	///<summary>ListenerDataType</summary>
 	public UClass ListenerDataType;
 	///<summary>ListenerContainer</summary>

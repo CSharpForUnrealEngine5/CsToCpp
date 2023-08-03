@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("MovieSceneCaptureEnvironment.h")]
 public partial class UMovieSceneCaptureEnvironment : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Get the frame number of the current capture</summary>
 	public static int GetCaptureFrameNumber() { return default; }
 	///<summary>Get the total elapsed time of the current capture in seconds</summary>

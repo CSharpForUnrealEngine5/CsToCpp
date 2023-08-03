@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>UObject based class for handling mobile events. Having this object as an option gives the app lifetime access to these global delegates. The component UApplicationLifecycleComponent is destroyed at level loads</summary>
 [CppInclude("Kismet/BlueprintPlatformLibrary.h")]
 public partial class UPlatformGameInstance : UGameInstance {
+	public static UClass StaticClass() {return default;}
 	///<summary>FPlatformDelegate</summary>
 	public  void FPlatformDelegate() {}
 	///<summary>FPlatformStartupArgumentsDelegate</summary>

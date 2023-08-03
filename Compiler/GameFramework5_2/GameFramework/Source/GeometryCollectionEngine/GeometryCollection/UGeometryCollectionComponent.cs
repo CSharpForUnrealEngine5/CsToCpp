@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>GeometryCollectionComponent</summary>
 [CppInclude("GeometryCollection/GeometryCollectionComponent.h")]
 public partial class UGeometryCollectionComponent : UMeshComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>Chaos RBD Solver override. Will use the world&#39;s default solver actor if null.</summary>
 	public AChaosSolverActor ChaosSolverActor;
 	///<summary>Get local bounds of the geometry collection</summary>

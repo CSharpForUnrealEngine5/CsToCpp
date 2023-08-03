@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("PackageTools.h")]
 public partial class UPackageTools : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Replaces all invalid package name characters with _</summary>
 	public static string SanitizePackageName(string InPackageName) { return default; }
 	///<summary>Converts a long package name to a file name.</summary>

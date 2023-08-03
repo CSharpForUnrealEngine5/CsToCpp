@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("AppleARKitSettings.h")]
 public partial class UAppleARKitSettings : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>When True the project can only be installed on devices that support ARKit.</summary>
 	public bool bRequireARKitSupport;
 	///<summary>FaceTrackingLogDir</summary>

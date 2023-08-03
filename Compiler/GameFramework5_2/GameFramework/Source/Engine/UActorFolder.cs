@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("ActorFolder.h")]
 public partial class UActorFolder : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>ParentFolderGuid</summary>
 	public FGuid ParentFolderGuid;
 	///<summary>FolderGuid</summary>

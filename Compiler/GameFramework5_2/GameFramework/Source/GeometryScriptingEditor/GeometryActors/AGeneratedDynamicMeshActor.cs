@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>AGeneratedDynamicMeshActor is an Editor-only subclass of ADynamicMeshActor that provides</summary>
 [CppInclude("GeometryActors/GeneratedDynamicMeshActor.h")]
 public partial class AGeneratedDynamicMeshActor : ADynamicMeshActor {
+	public static UClass StaticClass() {return default;}
 	///<summary>If true, the DynamicMeshComponent will be &quot;Frozen&quot; in its current state, and automatic rebuilding will be disabled. However the DynamicMesh can still be modified by explicitly-called functions/etc.</summary>
 	public bool bFrozen;
 	///<summary>If true, the DynamicMeshComponent will be cleared before the OnRebuildGeneratedMesh event is executed.</summary>

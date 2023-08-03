@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Universal Movie Render Pipeline settings that apply to the whole project.</summary>
 [CppInclude("MovieRenderPipelineSettings.h")]
 public partial class UMovieRenderPipelineProjectSettings : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Which directory should we try to save presets in by default?</summary>
 	public FDirectoryPath PresetSaveDir;
 	///<summary>What was the last configuration preset the user used? Can be null.</summary>

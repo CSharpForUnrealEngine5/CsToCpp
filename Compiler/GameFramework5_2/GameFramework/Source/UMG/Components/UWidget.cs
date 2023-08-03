@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>This is the base class for all wrapped Slate controls that are exposed to UObjects.</summary>
 [CppInclude("Components/Widget.h")]
 public partial class UWidget : UVisual {
+	public static UClass StaticClass() {return default;}
 	///<summary>Common Bindings - If you add any new common binding, you must provide a UPropertyBinding for it.</summary>
 	public  bool FGetBool() { return default; }
 	///<summary>FGetFloat</summary>

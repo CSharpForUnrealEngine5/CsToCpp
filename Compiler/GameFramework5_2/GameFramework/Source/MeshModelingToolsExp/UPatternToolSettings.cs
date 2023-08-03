@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Settings for the Pattern Tool</summary>
 [CppInclude("PatternTool.h")]
 public partial class UPatternToolSettings : UInteractiveToolPropertySet {
+	public static UClass StaticClass() {return default;}
 	///<summary>The seed used to introduce random transform variations when enabled</summary>
 	public int Seed;
 	///<summary>Whether or not the pattern items should be projected along the negative Z axis of the plane mechanic</summary>

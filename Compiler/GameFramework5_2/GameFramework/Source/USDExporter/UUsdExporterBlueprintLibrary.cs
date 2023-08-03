@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Library of functions that can be used via Python scripting to help export Unreal scenes and assets to USD</summary>
 [CppInclude("USDExporterBlueprintLibrary.h")]
 public partial class UUsdExporterBlueprintLibrary : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>GetInstancedFoliageActorForLevel</summary>
 	public static AInstancedFoliageActor GetInstancedFoliageActorForLevel(bool bCreateIfNone/*=false*/,ULevel Level/*=nullptr*/) { return default; }
 	///<summary>GetUsedFoliageTypes</summary>

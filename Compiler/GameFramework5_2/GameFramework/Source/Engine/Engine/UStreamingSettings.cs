@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Streaming settings.</summary>
 [CppInclude("Engine/CoreSettings.h")]
 public partial class UStreamingSettings : UDeveloperSettings {
+	public static UClass StaticClass() {return default;}
 	///<summary>Enables separate thread for package streaming. Requires restart to take effect.</summary>
 	public bool AsyncLoadingThreadEnabled;
 	///<summary>Enables log warning if time limit for time-sliced package streaming has been exceeded.</summary>

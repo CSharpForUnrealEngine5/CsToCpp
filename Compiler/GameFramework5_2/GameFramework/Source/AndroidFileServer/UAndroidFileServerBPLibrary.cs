@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("AndroidFileServerBPLibrary.h")]
 public partial class UAndroidFileServerBPLibrary : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>Request startup of Android FileServer</summary>
 	public static bool StartFileServer(bool bUSB/*=true*/,bool bNetwork/*=false*/,int Port/*=57099*/) { return default; }
 	///<summary>Request termination of Android FileServer</summary>

@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A spawner you can put on a map and configure it to spawn different things</summary>
 [CppInclude("MassSpawner.h")]
 public partial class AMassSpawner : AActor {
+	public static UClass StaticClass() {return default;}
 	///<summary>DEBUG_Spawn</summary>
 	public  void DEBUG_Spawn() {}
 	///<summary>Remove all the entities</summary>

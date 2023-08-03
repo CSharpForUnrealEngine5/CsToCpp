@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("EnvironmentQuery/Generators/EnvQueryGenerator_OnCircle.h")]
 public partial class UEnvQueryGenerator_OnCircle : UEnvQueryGenerator_ProjectedPoints {
+	public static UClass StaticClass() {return default;}
 	///<summary>max distance of path between point and context</summary>
 	public FAIDataProviderFloatValue CircleRadius;
 	///<summary>items will be generated on a circle this much apart</summary>

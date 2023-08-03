@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("ImportTestFunctions/TextureImportTestFunctions.h")]
 public partial class UTextureImportTestFunctions : UImportTestFunctionsBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>Check whether the expected number of textures are imported</summary>
 	public static FInterchangeTestFunctionResult CheckImportedTextureCount(TArray<UTexture> Textures,int ExpectedNumberOfImportedTextures) { return default; }
 	///<summary>Check whether the imported texture has the expected filtering mode</summary>

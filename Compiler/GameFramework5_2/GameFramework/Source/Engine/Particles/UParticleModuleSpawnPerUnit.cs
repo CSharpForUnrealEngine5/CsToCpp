@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Particles/Spawn/ParticleModuleSpawnPerUnit.h")]
 public partial class UParticleModuleSpawnPerUnit : UParticleModuleSpawnBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>The scalar to apply to the distance traveled.</summary>
 	public float UnitScalar;
 	///<summary>The tolerance for moving vs. not moving w.r.t. the bIgnoreSpawnRateWhenMoving flag.</summary>

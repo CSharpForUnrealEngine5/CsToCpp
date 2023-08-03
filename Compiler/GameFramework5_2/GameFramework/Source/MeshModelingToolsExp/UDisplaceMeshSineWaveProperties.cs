@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>PropertySet for Sine wave displacement</summary>
 [CppInclude("DisplaceMeshTool.h")]
 public partial class UDisplaceMeshSineWaveProperties : UInteractiveToolPropertySet {
+	public static UClass StaticClass() {return default;}
 	///<summary>Sine wave displacement frequency</summary>
 	public float SineWaveFrequency;
 	///<summary>Sine wave phase shift</summary>

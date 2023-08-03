@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("GeometryCollection/GeometryCollectionDebugDrawActor.h")]
 public partial class AGeometryCollectionDebugDrawActor : AActor {
+	public static UClass StaticClass() {return default;}
 	///<summary>Warning message to explain that the debug draw properties have no effect until starting playing/simulating.</summary>
 	public FGeometryCollectionDebugDrawWarningMessage WarningMessage_DEPRECATED;
 	///<summary>Picking tool used to select a rigid body id.</summary>

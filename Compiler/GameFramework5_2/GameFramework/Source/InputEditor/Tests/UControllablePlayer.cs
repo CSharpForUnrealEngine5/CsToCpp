@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Tests/InputTestFramework.h")]
 public partial class UControllablePlayer : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Player</summary>
 	public APlayerController Player;
 	///<summary>BindingTargets</summary>

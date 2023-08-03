@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>UConstraintsManager</summary>
 [CppInclude("ConstraintsManager.h")]
 public partial class UConstraintsManager : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Dynamic blueprintable delegates for knowing when a constraints are added or deleted</summary>
 	public  void FOnConstraintAdded(UConstraintsManager Mananger,UTickableConstraint Constraint) {}
 	///<summary>FOnConstraintRemoved</summary>

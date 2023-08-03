@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Allows multiple animations to be blended between based on input parameters</summary>
 [CppInclude("Animation/BlendSpace.h")]
 public partial class UBlendSpace : UAnimationAsset {
+	public static UClass StaticClass() {return default;}
 	///<summary>Indicates whether any samples have the flag to apply rotation offsets in mesh space</summary>
 	public bool bContainsRotationOffsetMeshSpaceSamples;
 	///<summary>Input Smoothing parameters for each input axis</summary>

@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Blueprint library for the Point Cloud assets</summary>
 [CppInclude("LidarPointCloud.h")]
 public partial class ULidarPointCloudBlueprintLibrary : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>Returns new, empty Point Cloud object.</summary>
 	public static ULidarPointCloud CreatePointCloudEmpty() { return default; }
 	///<summary>Returns new Point Cloud object imported using default settings.</summary>

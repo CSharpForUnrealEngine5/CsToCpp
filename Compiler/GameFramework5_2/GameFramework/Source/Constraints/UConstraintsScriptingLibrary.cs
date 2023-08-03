@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>This is a set of helper functions to access various parts of the Sequencer and Control Rig API via Python and Blueprints.</summary>
 [CppInclude("ConstraintsScripting.h")]
 public partial class UConstraintsScriptingLibrary : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>Get the manager of the constraints. This object contains delegates to listen to for when constraints are added,deleted,</summary>
 	public static UConstraintsManager GetManager(UWorld InWorld) { return default; }
 	///<summary>Create the transformable handle that deals with getting and setting transforms on this scene component</summary>

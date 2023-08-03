@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A virtualized list that allows up to thousands of items to be displayed.</summary>
 [CppInclude("Components/ListView.h")]
 public partial class UListView : UListViewBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>Gets the list of all items in the list.</summary>
 	public  TArray<UObject> GetListItems() { return default; }
 	///<summary>Adds an the item to the list</summary>

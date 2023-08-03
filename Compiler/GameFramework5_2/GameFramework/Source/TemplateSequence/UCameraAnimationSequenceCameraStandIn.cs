@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A dummy class that we give to a sequence in lieu of an actual camera actor.</summary>
 [CppInclude("CameraAnimationSequencePlayer.h")]
 public partial class UCameraAnimationSequenceCameraStandIn : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Camera component properties</summary>
 	public float FieldOfView;
 	///<summary>bConstrainAspectRatio</summary>

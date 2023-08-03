@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Class used to replicate server &quot;stat net&quot; data over. For server only values, the client data is</summary>
 [CppInclude("Engine/ServerStatReplicator.h")]
 public partial class AServerStatReplicator : AInfo {
+	public static UClass StaticClass() {return default;}
 	///<summary>Whether to update stat net with data from the server or not</summary>
 	public bool bUpdateStatNet;
 	///<summary>Whether to overwrite client data stat net with data from the server or not</summary>

@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Abilities/Tasks/AbilityTask_WaitMovementModeChange.h")]
 public partial class UAbilityTask_WaitMovementModeChange : UAbilityTask {
+	public static UClass StaticClass() {return default;}
 	///<summary>OnChange</summary>
 	public FMovementModeChangedDelegate OnChange;
 	///<summary>OnMovementModeChange</summary>

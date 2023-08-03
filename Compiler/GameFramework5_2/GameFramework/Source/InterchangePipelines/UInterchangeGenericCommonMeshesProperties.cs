@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("InterchangeGenericAssetsPipelineSharedSettings.h")]
 public partial class UInterchangeGenericCommonMeshesProperties : UInterchangePipelineBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>Allow to convert mesh to a particular type</summary>
 	public EInterchangeForceMeshType ForceAllMeshAsType;
 	///<summary>If enable, meshes LODs will be imported. Note that it required the advanced bBakeMesh property to be enabled.</summary>

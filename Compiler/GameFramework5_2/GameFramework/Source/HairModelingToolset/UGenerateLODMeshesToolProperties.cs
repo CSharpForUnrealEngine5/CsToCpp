@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Standard properties of the Simplify operation</summary>
 [CppInclude("GenerateLODMeshesTool.h")]
 public partial class UGenerateLODMeshesToolProperties : UMeshConstraintProperties {
+	public static UClass StaticClass() {return default;}
 	///<summary>Simplification Target Type  //UPROPERTY(EditAnywhere, Category = Options)</summary>
 	public ESimplifyTargetType TargetMode;
 	///<summary>Simplification Scheme  //UPROPERTY(EditAnywhere, Category = Options)</summary>

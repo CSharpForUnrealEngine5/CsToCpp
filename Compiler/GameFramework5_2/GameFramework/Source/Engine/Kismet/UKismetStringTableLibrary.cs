@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Kismet/KismetStringTableLibrary.h")]
 public partial class UKismetStringTableLibrary : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>Returns true if the given table ID corresponds to a registered string table.</summary>
 	public static bool IsRegisteredTableId(string TableId) { return default; }
 	///<summary>Returns true if the given table ID corresponds to a registered string table, and that table has.</summary>

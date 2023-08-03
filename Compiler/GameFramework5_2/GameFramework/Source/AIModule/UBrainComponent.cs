@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("BrainComponent.h")]
 public partial class UBrainComponent : UActorComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>blackboard component</summary>
 	public UBlackboardComponent BlackboardComp;
 	///<summary>AIOwner</summary>

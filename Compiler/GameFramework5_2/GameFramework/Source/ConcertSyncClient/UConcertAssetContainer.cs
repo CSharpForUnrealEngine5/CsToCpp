@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Asset container for VREditor.</summary>
 [CppInclude("ConcertAssetContainer.h")]
 public partial class UConcertAssetContainer : UDataAsset {
+	public static UClass StaticClass() {return default;}
 	///<summary>Meshes</summary>
 	public UStaticMesh GenericDesktopMesh;
 	///<summary>GenericHMDMesh</summary>

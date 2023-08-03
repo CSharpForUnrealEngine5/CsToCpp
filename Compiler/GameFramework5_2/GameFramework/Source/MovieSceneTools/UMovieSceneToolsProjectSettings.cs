@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Settings for the level sequences</summary>
 [CppInclude("MovieSceneToolsProjectSettings.h")]
 public partial class UMovieSceneToolsProjectSettings : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>The default start time for new level sequences, in seconds.</summary>
 	public float DefaultStartTime;
 	///<summary>The default duration for new level sequences in seconds.</summary>

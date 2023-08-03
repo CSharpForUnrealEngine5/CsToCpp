@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A Lens file containing calibration mapping from FIZ data</summary>
 [CppInclude("LensFile.h")]
 public partial class ULensFile : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Returns interpolated distortion parameters</summary>
 	public  bool EvaluateDistortionParameters(float InFocus,float InZoom,FDistortionInfo OutEvaluatedValue) { return default; }
 	///<summary>Returns interpolated focal length</summary>

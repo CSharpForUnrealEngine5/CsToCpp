@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A widget switcher that activates / deactivates CommonActivatableWidgets, allowing for associated animations to trigger.</summary>
 [CppInclude("CommonAnimatedSwitcher.h")]
 public partial class UCommonAnimatedSwitcher : UWidgetSwitcher {
+	public static UClass StaticClass() {return default;}
 	///<summary>ActivateNextWidget</summary>
 	public  void ActivateNextWidget(bool bCanWrap) {}
 	///<summary>ActivatePreviousWidget</summary>

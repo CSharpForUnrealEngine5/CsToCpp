@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>An Enumeration is a list of named values.</summary>
 [CppInclude("Engine/UserDefinedEnum.h")]
 public partial class UUserDefinedEnum : UEnum {
+	public static UClass StaticClass() {return default;}
 	///<summary>UniqueNameIndex</summary>
 	public uint UniqueNameIndex;
 	///<summary>Shows up in the content browser when the enum asset is hovered</summary>

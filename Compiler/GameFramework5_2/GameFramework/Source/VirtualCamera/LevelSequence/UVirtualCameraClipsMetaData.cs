@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Clips meta-data that is stored on ULevelSequence assets that are recorded through the virtual camera.</summary>
 [CppInclude("LevelSequence/VirtualCameraClipsMetaData.h")]
 public partial class UVirtualCameraClipsMetaData : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>@return The focal length for this clip</summary>
 	public  float GetFocalLength() { return default; }
 	///<summary>@return Whether or not the clip is selected.</summary>

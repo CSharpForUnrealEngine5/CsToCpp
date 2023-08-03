@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A ConcertClientPresenceActor is a transient actor representing other client presences during a concert client session.</summary>
 [CppInclude("ConcertClientPresenceActor.h")]
 public partial class AConcertClientPresenceActor : AActor {
+	public static UClass StaticClass() {return default;}
 	///<summary>The device type that this presence represent (i.e Oculus, Vive, Desktop)</summary>
 	public string PresenceDeviceType;
 	///<summary>The camera mesh component to show visually where the camera is placed</summary>

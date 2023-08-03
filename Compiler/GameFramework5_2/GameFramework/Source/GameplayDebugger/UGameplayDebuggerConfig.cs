@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("GameplayDebuggerConfig.h")]
 public partial class UGameplayDebuggerConfig : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>key used to activate visual debugger tool</summary>
 	public FKey ActivationKey;
 	///<summary>select next category row</summary>

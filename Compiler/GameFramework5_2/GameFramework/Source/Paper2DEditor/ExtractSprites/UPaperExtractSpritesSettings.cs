@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("ExtractSprites/PaperExtractSpritesSettings.h")]
 public partial class UPaperExtractSpritesSettings : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Sprite extract mode</summary>
 	public ESpriteExtractMode SpriteExtractMode;
 	///<summary>The color of the sprite boundary outlines</summary>

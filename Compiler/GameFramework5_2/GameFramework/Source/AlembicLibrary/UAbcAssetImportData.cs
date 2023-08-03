@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Base class for import data and options used when importing any asset from Alembic</summary>
 [CppInclude("AbcAssetImportData.h")]
 public partial class UAbcAssetImportData : UAssetImportData {
+	public static UClass StaticClass() {return default;}
 	///<summary>TrackNames</summary>
 	public TArray<string> TrackNames;
 	///<summary>SamplingSettings</summary>

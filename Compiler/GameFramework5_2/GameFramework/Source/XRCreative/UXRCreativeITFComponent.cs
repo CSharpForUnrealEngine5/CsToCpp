@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("XRCreativeITFComponent.h")]
 public partial class UXRCreativeITFComponent : UActorComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>CanUndo</summary>
 	public  bool CanUndo() { return default; }
 	///<summary>CanRedo</summary>

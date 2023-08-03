@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A background blur is a container widget that can contain one child widget, providing an opportunity</summary>
 [CppInclude("Components/BackgroundBlur.h")]
 public partial class UBackgroundBlur : UContentWidget {
+	public static UClass StaticClass() {return default;}
 	///<summary>The padding area between the slot and the content it contains.</summary>
 	public FMargin Padding;
 	///<summary>The alignment of the content horizontally.</summary>

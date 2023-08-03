@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Fixme: this is still incomplete and probablyh not what most games want for melee systems.</summary>
 [CppInclude("Abilities/Tasks/AbilityTask_WaitOverlap.h")]
 public partial class UAbilityTask_WaitOverlap : UAbilityTask {
+	public static UClass StaticClass() {return default;}
 	///<summary>OnOverlap</summary>
 	public FWaitOverlapDelegate OnOverlap;
 	///<summary>OnHitCallback</summary>

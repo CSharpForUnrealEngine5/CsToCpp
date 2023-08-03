@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("SynthComponents/SynthComponentGranulator.h")]
 public partial class UGranularSynth : USynthComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>This will override the current sound wave if one is set, stop audio, and reload the new sound wave</summary>
 	public  void SetSoundWave(USoundWave InSoundWave) {}
 	///<summary>SetAttackTime</summary>

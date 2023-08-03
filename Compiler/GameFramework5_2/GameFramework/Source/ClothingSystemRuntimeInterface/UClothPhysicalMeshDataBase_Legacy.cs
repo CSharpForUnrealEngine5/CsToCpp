@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Deprecated, use FClothPhysicalMeshData instead.</summary>
 [CppInclude("ClothPhysicalMeshDataBase_Legacy.h")]
 public partial class UClothPhysicalMeshDataBase_Legacy : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Positions of each simulation vertex</summary>
 	public TArray<FVector3f> Vertices;
 	///<summary>Normal at each vertex</summary>

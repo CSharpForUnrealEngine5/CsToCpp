@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Implements the settings for the Widget Blueprint Designer.</summary>
 [CppInclude("Settings/WidgetDesignerSettings.h")]
 public partial class UWidgetDesignerSettings : UDeveloperSettings {
+	public static UClass StaticClass() {return default;}
 	///<summary>If enabled, actor positions will snap to the grid.</summary>
 	public bool GridSnapEnabled;
 	///<summary>GridSnapSize</summary>

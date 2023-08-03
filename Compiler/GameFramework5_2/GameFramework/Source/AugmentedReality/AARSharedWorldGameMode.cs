@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("ARSharedWorldGameMode.h")]
 public partial class AARSharedWorldGameMode : AGameMode {
+	public static UClass StaticClass() {return default;}
 	///<summary>The size of the buffer to use per send request. Must be between 1 and 65535, though should not be max to avoid saturation</summary>
 	public int BufferSizePerChunk;
 	///<summary>Sets the image data for the shared world game session</summary>

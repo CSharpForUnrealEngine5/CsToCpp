@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Tests/MVVMBindingExecuteTest.h")]
 public partial class UMVVMViewModelBindingExecTest : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>PropertyA</summary>
 	public FMVVMBindingExecTextCounter PropertyA;
 	///<summary>PropertyB</summary>

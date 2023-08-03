@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>This struct is used to store and retrieve key value attributes. The attributes are store in a generic FAttributeStorage which serialize the value in a TArray64&lt;uint8&gt;</summary>
 [CppInclude("Nodes/InterchangeFactoryBaseNode.h")]
 public partial class UInterchangeFactoryBaseNode : UInterchangeBaseNode {
+	public static UClass StaticClass() {return default;}
 	///<summary>Return the reimport strategy flags.</summary>
 	public  EReimportStrategyFlags GetReimportStrategyFlags() { return default; }
 	///<summary>Change the reimport strategy flags.</summary>

@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("NiagaraActor.h")]
 public partial class ANiagaraActor : AActor {
+	public static UClass StaticClass() {return default;}
 	///<summary>Set true for this actor to self-destruct when the Niagara system finishes, false otherwise</summary>
 	public  void SetDestroyOnSystemFinish(bool bShouldDestroyOnSystemFinish) {}
 	///<summary>Pointer to System component</summary>

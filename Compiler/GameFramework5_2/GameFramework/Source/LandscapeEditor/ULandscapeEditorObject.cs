@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("LandscapeEditorObject.h")]
 public partial class ULandscapeEditorObject : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Strength of the Sculpt tool. If you&#39;re using a pen/tablet with pressure-sensing, the pressure used affects the strength of the tool.</summary>
 	public float ToolStrength;
 	///<summary>Strength of the Paint tool. If you&#39;re using a pen/tablet with pressure-sensing, the pressure used affects the strength of the tool.</summary>

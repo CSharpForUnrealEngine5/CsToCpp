@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Manages gradient LUT textures for registered actors and assigns them to the corresponding materials on the actor</summary>
 [CppInclude("Curves/CurveLinearColorAtlas.h")]
 public partial class UCurveLinearColorAtlas : UTexture2D {
+	public static UClass StaticClass() {return default;}
 	///<summary>GetCurvePosition</summary>
 	public  bool GetCurvePosition(UCurveLinearColor InCurve,float Position) { return default; }
 	///<summary>bIsDirty</summary>

@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Engine/SpotLight.h")]
 public partial class ASpotLight : ALight {
+	public static UClass StaticClass() {return default;}
 	///<summary>SpotLightComponent</summary>
 	public USpotLightComponent SpotLightComponent;
 	///<summary>ArrowComponent</summary>

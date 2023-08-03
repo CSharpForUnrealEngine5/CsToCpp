@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A special Image widget that can show unloaded images and takes care of the loading for you!</summary>
 [CppInclude("CommonLazyWidget.h")]
 public partial class UCommonLazyWidget : UWidget {
+	public static UClass StaticClass() {return default;}
 	///<summary>SetLazyContent</summary>
 	public  void SetLazyContent(TSoftObjectPtr<UClass> SoftWidget) {}
 	///<summary>GetContent</summary>

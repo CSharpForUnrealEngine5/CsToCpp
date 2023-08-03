@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("ViewportWorldInteraction.h")]
 public partial class UViewportWorldInteraction : UEditorWorldExtension {
+	public static UClass StaticClass() {return default;}
 	///<summary>Adds interactor to the worldinteraction</summary>
 	public  void AddInteractor(UViewportInteractor Interactor) {}
 	///<summary>Removes interactor from the worldinteraction and removes the interactor from its paired interactor if any</summary>

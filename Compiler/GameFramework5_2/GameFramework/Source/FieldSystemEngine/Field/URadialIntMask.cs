@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>This function first defines a radial integer field equal to Interior-value inside a sphere / Exterior-value outside. This field will be used alongside the particle input value and the mask condition to compute the particle output value.</summary>
 [CppInclude("Field/FieldSystemObjects.h")]
 public partial class URadialIntMask : UFieldNodeInt {
+	public static UClass StaticClass() {return default;}
 	///<summary>This function first defines a radial integer field equal to Interior-value inside a sphere / Exterior-value outside. This field will be used alongside the particle input value and the mask condition to compute the particle output value.</summary>
 	public  URadialIntMask SetRadialIntMask(float Radius,FVector Position,int InteriorValue,int ExteriorValue,ESetMaskConditionType SetMaskConditionIn) { return default; }
 	///<summary>Radius of the radial mask field</summary>

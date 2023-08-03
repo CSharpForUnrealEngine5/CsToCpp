@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("InterchangeLightFactoryNode.h")]
 public partial class UInterchangeBaseLightFactoryNode : UInterchangeActorFactoryNode {
+	public static UClass StaticClass() {return default;}
 	///<summary>GetCustomLightColor</summary>
 	public  bool GetCustomLightColor(FColor AttributeValue) { return default; }
 	///<summary>SetCustomLightColor</summary>

@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Helper class that allows the user to explicitly request AR service installation and permission granting.</summary>
 [CppInclude("ARDependencyHandler.h")]
 public partial class UARDependencyHandler : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>@return the dependency handler for the current platform.</summary>
 	public static UARDependencyHandler GetARDependencyHandler() { return default; }
 	///<summary>Latent action to check AR availability on the current platform.</summary>

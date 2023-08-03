@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A UDataAsset that can be used to configure ARCore specific settings on top of</summary>
 [CppInclude("GoogleARCoreSessionConfig.h")]
 public partial class UGoogleARCoreSessionConfig : UARSessionConfig {
+	public static UClass StaticClass() {return default;}
 	///<summary>Get the augmented image database being used.</summary>
 	public  UGoogleARCoreAugmentedImageDatabase GetAugmentedImageDatabase() { return default; }
 	///<summary>Set the augmented image database to use.</summary>

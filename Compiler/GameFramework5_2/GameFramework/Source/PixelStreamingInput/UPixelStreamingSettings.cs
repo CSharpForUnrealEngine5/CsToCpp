@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Config loaded/saved to an .ini file.</summary>
 [CppInclude("EditorPixelStreamingSettings.h")]
 public partial class UPixelStreamingSettings : UDeveloperSettings {
+	public static UClass StaticClass() {return default;}
 	///<summary>Pixel streaming always requires various software cursors so they will be</summary>
 	public FSoftClassPath DefaultCursorClassName;
 	///<summary>TextEditBeamCursorClassName</summary>

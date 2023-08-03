@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("ViewportTransformer.h")]
 public partial class UViewportTransformer : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Init</summary>
 	public  void Init(UViewportWorldInteraction InitViewportWorldInteraction) {}
 	///<summary>Shutdown</summary>

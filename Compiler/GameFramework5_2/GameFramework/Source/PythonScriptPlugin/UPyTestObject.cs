@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Object to allow testing of the various UObject features that are exposed to Python wrapped types.</summary>
 [CppInclude("PyTest.h")]
 public partial class UPyTestObject : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Bool</summary>
 	public bool Bool;
 	///<summary>Int</summary>

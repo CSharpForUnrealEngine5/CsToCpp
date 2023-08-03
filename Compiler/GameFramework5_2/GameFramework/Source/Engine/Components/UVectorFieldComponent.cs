@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A Component referencing a vector field.</summary>
 [CppInclude("Components/VectorFieldComponent.h")]
 public partial class UVectorFieldComponent : UPrimitiveComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>The vector field asset.</summary>
 	public UVectorField VectorField;
 	///<summary>The intensity at which the vector field is applied.</summary>

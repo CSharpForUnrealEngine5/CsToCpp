@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Niagara Emitters are particle spawners that can be reused for different effects by putting them into Niagara Systems.</summary>
 [CppInclude("NiagaraEmitter.h")]
 public partial class UNiagaraEmitter : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>The exposed version is the version that is used by default when a user adds this emitter somewhere. It is basically the published version and allows a user to create and test newer versions.</summary>
 	public FGuid ExposedVersion;
 	///<summary>If true then this emitter asset uses active version control to track changes.</summary>

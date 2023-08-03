@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Renders text in the world with given font. Contains usual font related attributes such as Scale, Alignment, Color etc.</summary>
 [CppInclude("Components/TextRenderComponent.h")]
 public partial class UTextRenderComponent : UPrimitiveComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>Text content, can be multi line using &lt;br&gt; as line separator</summary>
 	public string Text;
 	///<summary>Text material</summary>

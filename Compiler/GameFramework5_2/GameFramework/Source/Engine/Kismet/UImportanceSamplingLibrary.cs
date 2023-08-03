@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Kismet/ImportanceSamplingLibrary.h")]
 public partial class UImportanceSamplingLibrary : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>@param Index - Which sequential point</summary>
 	public static float RandomSobolFloat(int Index,int Dimension,float Seed) { return default; }
 	///<summary>@param Index - Which sequential point</summary>

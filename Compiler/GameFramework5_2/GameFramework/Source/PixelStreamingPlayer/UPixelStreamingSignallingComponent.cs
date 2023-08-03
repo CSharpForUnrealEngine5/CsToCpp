@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A blueprint class representing a Pixel Streaming Signalling connection. Used to communicate with the signalling server and</summary>
 [CppInclude("PixelStreamingSignallingComponent.h")]
 public partial class UPixelStreamingSignallingComponent : UActorComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>Attempt to connect to a specified signalling server.</summary>
 	public  void Connect(string Url) {}
 	///<summary>Disconnect from the signalling server. No action if no connection exists.</summary>

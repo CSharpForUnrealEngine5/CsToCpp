@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("SynthComponents/SynthComponentMonoWaveTable.h")]
 public partial class USynthComponentMonoWaveTable : USynthComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>Start BP functionality // Get the number of table elements from Blueprint</summary>
 	public  int GetNumTableEntries() { return default; }
 	///<summary>Starts a new note (retrigs modulators, etc.)</summary>

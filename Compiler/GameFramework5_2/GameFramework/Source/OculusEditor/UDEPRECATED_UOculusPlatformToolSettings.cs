@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("OculusPlatformToolSettings.h")]
 public partial class UDEPRECATED_UOculusPlatformToolSettings : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>OculusRiftBuildDirectory</summary>
 	public string OculusRiftBuildDirectory;
 	///<summary>OculusRiftBuildVersion</summary>

@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Particles/Orbit/ParticleModuleOrbit.h")]
 public partial class UParticleModuleOrbit : UParticleModuleOrbitBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>Orbit modules will chain together in the order they appear in the module stack.</summary>
 	public EOrbitChainMode ChainMode;
 	///<summary>The amount to offset the sprite from the particle position.</summary>

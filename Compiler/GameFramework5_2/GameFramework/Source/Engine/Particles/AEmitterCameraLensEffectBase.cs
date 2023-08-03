@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Particles/EmitterCameraLensEffectBase.h")]
 public partial class AEmitterCameraLensEffectBase : AEmitter {
+	public static UClass StaticClass() {return default;}
 	///<summary>Particle System to use</summary>
 	public UParticleSystem PS_CameraEffect;
 	///<summary>Camera this emitter is attached to, will be notified when emitter is destroyed</summary>

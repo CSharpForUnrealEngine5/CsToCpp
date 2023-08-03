@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Utility class to do most of the common functionalities with the ContentBrowser.</summary>
 [CppInclude("EditorAssetLibrary.h")]
 public partial class UEditorAssetLibrary : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>Load an asset from the Content Browser. It will verify if the object is already loaded and only load it if it&#39;s necessary.</summary>
 	public static UObject LoadAsset(string AssetPath) { return default; }
 	///<summary>Load a Blueprint asset from the Content Browser and return its generated class. It will verify if the object is already loaded and only load it if it&#39;s necessary.</summary>

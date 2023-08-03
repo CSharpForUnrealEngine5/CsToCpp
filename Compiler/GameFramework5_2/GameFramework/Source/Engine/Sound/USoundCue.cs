@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>The behavior of audio playback is defined within Sound Cues.</summary>
 [CppInclude("Sound/SoundCue.h")]
 public partial class USoundCue : USoundBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>FirstNode</summary>
 	public USoundNode FirstNode;
 	///<summary>Base volume multiplier</summary>

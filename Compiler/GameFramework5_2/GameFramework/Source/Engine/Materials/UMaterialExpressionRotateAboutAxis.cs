@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Materials/MaterialExpressionRotateAboutAxis.h")]
 public partial class UMaterialExpressionRotateAboutAxis : UMaterialExpression {
+	public static UClass StaticClass() {return default;}
 	///<summary>NormalizedRotationAxis</summary>
 	public FExpressionInput NormalizedRotationAxis;
 	///<summary>RotationAngle</summary>

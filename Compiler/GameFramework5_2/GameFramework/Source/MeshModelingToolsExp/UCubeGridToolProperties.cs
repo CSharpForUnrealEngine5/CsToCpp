@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("CubeGridTool.h")]
 public partial class UCubeGridToolProperties : UInteractiveToolPropertySet {
+	public static UClass StaticClass() {return default;}
 	///<summary>GridFrameOrigin</summary>
 	public FVector GridFrameOrigin;
 	///<summary>GridFrameOrientation</summary>

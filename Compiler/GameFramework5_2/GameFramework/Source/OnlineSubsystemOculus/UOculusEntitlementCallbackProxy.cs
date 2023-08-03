@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Exposes some of the Platform SDK for blueprint use.</summary>
 [CppInclude("OculusEntitlementCallbackProxy.h")]
 public partial class UOculusEntitlementCallbackProxy : UOnlineBlueprintCallProxyBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>Called when there is a successful entitlement check</summary>
 	public FOculusEntitlementCheckResult OnSuccess;
 	///<summary>Called when there is an unsuccessful entitlement check</summary>

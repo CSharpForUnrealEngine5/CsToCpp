@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Sound/ReverbEffect.h")]
 public partial class UReverbEffect : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Bypasses early reflections</summary>
 	public bool bBypassEarlyReflections;
 	///<summary>Reflections Delay - 0.0 &lt; 0.007 &lt; 0.3 Seconds - the time between the listener receiving the direct path sound and the first reflection</summary>

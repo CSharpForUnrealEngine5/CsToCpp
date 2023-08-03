@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Base class for all unit tests</summary>
 [CppInclude("UnitTest.h")]
 public partial class UUnitTest : UUnitTestBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>Stores stats on the highest-ever reported memory usage, for this unit test - for estimating memory usage</summary>
 	public ulong PeakMemoryUsage;
 	///<summary>The amount of time it takes to reach &#39;PeakMemoryUsage&#39; (or within 90% of its value)</summary>

@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Class responsible for capturing scene data</summary>
 [CppInclude("MovieSceneCapture.h")]
 public partial class UMovieSceneCapture : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>The type of capture protocol to use for image data</summary>
 	public FSoftClassPath ImageCaptureProtocolType;
 	///<summary>The type of capture protocol to use for audio data.</summary>

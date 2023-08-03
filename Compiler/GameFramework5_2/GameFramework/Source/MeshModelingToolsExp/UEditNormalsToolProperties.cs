@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Standard properties</summary>
 [CppInclude("EditNormalsTool.h")]
 public partial class UEditNormalsToolProperties : UInteractiveToolPropertySet {
+	public static UClass StaticClass() {return default;}
 	///<summary>Recompute all mesh normals</summary>
 	public bool bRecomputeNormals;
 	///<summary>Choose the method for computing vertex normals</summary>

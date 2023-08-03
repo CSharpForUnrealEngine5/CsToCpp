@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Blackboard decorator node.</summary>
 [CppInclude("BehaviorTree/Decorators/BTDecorator_Blackboard.h")]
 public partial class UBTDecorator_Blackboard : UBTDecorator_BlackboardBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>value for arithmetic operations</summary>
 	public int IntValue;
 	///<summary>value for arithmetic operations</summary>

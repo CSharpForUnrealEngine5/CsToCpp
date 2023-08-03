@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("FractureToolClusterCutter.h")]
 public partial class UFractureClusterCutterSettings : UFractureToolSettings {
+	public static UClass StaticClass() {return default;}
 	///<summary>Minimum number of clusters of Voronoi sites to create. The amount of clusters created will be chosen at random between Min and Max</summary>
 	public int NumberClustersMin;
 	///<summary>Maximum number of clusters of Voronoi sites to create. The amount of clusters created will be chosen at random between Min and Max</summary>

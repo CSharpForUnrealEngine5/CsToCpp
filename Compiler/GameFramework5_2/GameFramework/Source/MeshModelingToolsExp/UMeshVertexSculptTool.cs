@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Mesh Vertex Sculpt Tool Class</summary>
 [CppInclude("MeshVertexSculptTool.h")]
 public partial class UMeshVertexSculptTool : UMeshSculptToolBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>Properties that control sculpting</summary>
 	public UVertexBrushSculptProperties SculptProperties;
 	///<summary>AlphaProperties</summary>

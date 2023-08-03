@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Component used to place a URuntimeVirtualTexture in the world.</summary>
 [CppInclude("Components/RuntimeVirtualTextureComponent.h")]
 public partial class URuntimeVirtualTextureComponent : USceneComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>Actor to align rotation to. If set this actor is always included in the bounds calculation.</summary>
 	public TSoftObjectPtr<AActor> BoundsAlignActor;
 	///<summary>Placeholder for details customization button.</summary>

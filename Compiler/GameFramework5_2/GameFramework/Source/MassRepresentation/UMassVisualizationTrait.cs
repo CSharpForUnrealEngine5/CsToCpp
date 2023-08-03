@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("MassVisualizationTrait.h")]
 public partial class UMassVisualizationTrait : UMassEntityTraitBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>Instanced static mesh information for this agent</summary>
 	public FStaticMeshInstanceVisualizationDesc StaticMeshInstanceDesc;
 	///<summary>Actor class of this agent when spawned in high resolution</summary>

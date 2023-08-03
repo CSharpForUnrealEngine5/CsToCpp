@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Particles/Location/ParticleModuleLocationEmitter.h")]
 public partial class UParticleModuleLocationEmitter : UParticleModuleLocationBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>The name of the emitter to use that the source location for particle.</summary>
 	public string EmitterName;
 	///<summary>The method to use when selecting a spawn target particle from the emitter.</summary>

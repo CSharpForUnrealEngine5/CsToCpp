@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>The ML mesh deformer component.</summary>
 [CppInclude("MLDeformerComponent.h")]
 public partial class UMLDeformerComponent : UActorComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>Get the current ML Deformer weight. A value of 0 means it is fully disabled, while 1 means fully active.</summary>
 	public  float GetWeight() { return default; }
 	///<summary>Set the ML Deformer weight. This determines how active the deformer is. You can see it as a blend weight.</summary>

@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Is At Location decorator node.</summary>
 [CppInclude("BehaviorTree/Decorators/BTDecorator_IsAtLocation.h")]
 public partial class UBTDecorator_IsAtLocation : UBTDecorator_BlackboardBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>distance threshold to accept as being at location</summary>
 	public float AcceptableRadius;
 	///<summary>ParametrizedAcceptableRadius</summary>

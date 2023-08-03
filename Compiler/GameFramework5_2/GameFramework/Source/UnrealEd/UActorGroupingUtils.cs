@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Helper class for grouping actors in the level editor</summary>
 [CppInclude("ActorGroupingUtils.h")]
 public partial class UActorGroupingUtils : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>IsGroupingActive</summary>
 	public static bool IsGroupingActive() { return default; }
 	///<summary>SetGroupingActive</summary>

@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("MoviePipelineQueueSubsystem.h")]
 public partial class UMoviePipelineQueueSubsystem : UEditorSubsystem {
+	public static UClass StaticClass() {return default;}
 	///<summary>Returns the queue of Movie Pipelines that need to be rendered.</summary>
 	public  UMoviePipelineQueue GetQueue() { return default; }
 	///<summary>Returns the active executor (if there is one). This can be used to subscribe to events on an already in-progress render. May be null.</summary>

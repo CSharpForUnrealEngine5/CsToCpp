@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>UWorldTileDetails</summary>
 [CppInclude("Tiles/WorldTileDetails.h")]
 public partial class UWorldTileDetails : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Whether this tile properties can be edited via details panel</summary>
 	public bool bTileEditable;
 	///<summary>Tile long package name (readonly)</summary>

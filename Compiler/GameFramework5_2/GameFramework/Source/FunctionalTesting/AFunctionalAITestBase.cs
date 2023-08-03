@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>AFunctionalAITestBase</summary>
 [CppInclude("FunctionalAITest.h")]
 public partial class AFunctionalAITestBase : AFunctionalTest {
+	public static UClass StaticClass() {return default;}
 	///<summary>SpawnLocationRandomizationRange</summary>
 	public float SpawnLocationRandomizationRange;
 	///<summary>SpawnedPawns</summary>

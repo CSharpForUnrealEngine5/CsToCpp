@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("DataprepActionAsset.h")]
 public partial class UDataprepActionStep : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>End UObject Interface</summary>
 	public bool bIsEnabled;
 	///<summary>The actual object of the step</summary>

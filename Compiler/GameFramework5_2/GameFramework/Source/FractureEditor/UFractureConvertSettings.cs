@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Settings related to geometry collection -&gt; static mesh conversion *</summary>
 [CppInclude("FractureToolConvert.h")]
 public partial class UFractureConvertSettings : UFractureToolSettings {
+	public static UClass StaticClass() {return default;}
 	///<summary>Whether to prompt user for a location and base name for the generated meshes, or automatically place them next to the source geometry collections</summary>
 	public bool bPromptForBaseName;
 	///<summary>Whether to generate a separate mesh for each bone, or one combined mesh</summary>

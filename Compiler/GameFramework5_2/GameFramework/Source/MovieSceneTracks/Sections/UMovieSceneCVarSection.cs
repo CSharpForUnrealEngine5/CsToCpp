@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A CVar section is responsible for applying a user-supplied value to the specified cvar, and then restoring the previous value after the section ends.</summary>
 [CppInclude("Sections/MovieSceneCVarSection.h")]
 public partial class UMovieSceneCVarSection : UMovieSceneSection {
+	public static UClass StaticClass() {return default;}
 	///<summary>SetFromString</summary>
 	public  void SetFromString(string InString) {}
 	///<summary>GetString</summary>

@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Base class for all Dataprep editing operations</summary>
 [CppInclude("DataprepOperation.h")]
 public partial class UDataprepEditingOperation : UDataprepOperation {
+	public static UClass StaticClass() {return default;}
 	///<summary>DUplicate and add an asset to the Dataprep&#39;s and action&#39;s working set</summary>
 	public  UObject AddAsset(UObject Asset,string AssetName) { return default; }
 	///<summary>Create and add an asset to the Dataprep&#39;s and action&#39;s working set</summary>

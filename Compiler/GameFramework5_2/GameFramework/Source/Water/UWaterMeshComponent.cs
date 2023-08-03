@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Water Mesh Component responsible for generating and rendering a continuous water mesh on top of all the existing water body actors in the world</summary>
 [CppInclude("WaterMeshComponent.h")]
 public partial class UWaterMeshComponent : UMeshComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>At above what density level a tile is allowed to force collapse even if not all leaf nodes in the subtree are present.</summary>
 	public int ForceCollapseDensityLevel;
 	///<summary>FarDistanceMaterial</summary>

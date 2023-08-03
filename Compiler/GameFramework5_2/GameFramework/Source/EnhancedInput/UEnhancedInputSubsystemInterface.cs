@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("EnhancedInputSubsystemInterface.h")]
 public partial class UEnhancedInputSubsystemInterface : UInterface {
+	public static UClass StaticClass() {return default;}
 	///<summary>Input simulation via injection. Runs modifiers and triggers delegates as if the input had come through the underlying input system as FKeys.</summary>
 	public  void InjectInputForAction(UInputAction Action,FInputActionValue RawValue,TArray<UInputModifier> Modifiers,TArray<UInputTrigger> Triggers) {}
 	///<summary>Input simulation via injection. Runs modifiers and triggers delegates as if the input had come through the underlying input system as FKeys.</summary>

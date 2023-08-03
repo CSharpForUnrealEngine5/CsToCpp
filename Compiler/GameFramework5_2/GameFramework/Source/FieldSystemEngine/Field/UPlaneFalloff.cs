@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Plane scalar field that will be defined only within a distance from a plane</summary>
 [CppInclude("Field/FieldSystemObjects.h")]
 public partial class UPlaneFalloff : UFieldNodeFloat {
+	public static UClass StaticClass() {return default;}
 	///<summary>Plane scalar field that will be defined only within a distance from a plane</summary>
 	public  UPlaneFalloff SetPlaneFalloff(float Magnitude,float MinRange,float MaxRange,float Default,float Distance,FVector Position,FVector Normal,EFieldFalloffType Falloff) { return default; }
 	///<summary>Magnitude of the plane falloff field</summary>

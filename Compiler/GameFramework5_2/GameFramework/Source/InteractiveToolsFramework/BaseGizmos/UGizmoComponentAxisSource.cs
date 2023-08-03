@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>UGizmoComponentAxisSource is an IGizmoAxisSource implementation that provides one of the</summary>
 [CppInclude("BaseGizmos/AxisSources.h")]
 public partial class UGizmoComponentAxisSource : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Component</summary>
 	public USceneComponent Component;
 	///<summary>Clamped internally to 0,1,2</summary>

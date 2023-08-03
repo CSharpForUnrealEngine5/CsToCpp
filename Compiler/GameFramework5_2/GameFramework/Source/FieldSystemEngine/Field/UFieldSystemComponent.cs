@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>FieldSystemComponent</summary>
 [CppInclude("Field/FieldSystemComponent.h")]
 public partial class UFieldSystemComponent : UPrimitiveComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>Field system asset to be used to store the construction fields. This asset is not required anymore and will be deprecated soon.</summary>
 	public UFieldSystem FieldSystem;
 	///<summary>If enabled the field will be pushed to the world fields and will be available to materials and niagara</summary>

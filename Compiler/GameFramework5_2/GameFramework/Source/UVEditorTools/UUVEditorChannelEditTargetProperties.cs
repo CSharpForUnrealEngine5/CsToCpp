@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("UVEditorLayerEditTool.h")]
 public partial class UUVEditorChannelEditTargetProperties : UInteractiveToolPropertySet {
+	public static UClass StaticClass() {return default;}
 	///<summary>Asset</summary>
 	public string Asset;
 	///<summary>GetAssetNames</summary>

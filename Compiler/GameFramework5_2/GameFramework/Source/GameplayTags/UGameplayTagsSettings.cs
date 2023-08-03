@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Class for importing GameplayTags directly from a config file.</summary>
 [CppInclude("GameplayTagsSettings.h")]
 public partial class UGameplayTagsSettings : UGameplayTagsList {
+	public static UClass StaticClass() {return default;}
 	///<summary>If true, will import tags from ini files in the config/tags folder</summary>
 	public bool ImportTagsFromConfig;
 	///<summary>If true, will give load warnings when reading in saved tag references that are not in the dictionary</summary>

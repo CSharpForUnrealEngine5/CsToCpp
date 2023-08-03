@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("PersonaToolMenuContext.h")]
 public partial class UPersonaToolMenuContext : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Get the skeleton that we are editing</summary>
 	public  USkeleton GetSkeleton() { return default; }
 	///<summary>Get the preview component that we are using</summary>

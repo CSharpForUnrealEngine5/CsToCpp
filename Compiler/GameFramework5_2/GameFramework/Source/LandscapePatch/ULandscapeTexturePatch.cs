@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("LandscapeTexturePatch.h")]
 public partial class ULandscapeTexturePatch : ULandscapePatchComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>Gets the transform from patch to world. The transform is based off of the component</summary>
 	public  FTransform GetPatchToWorldTransform() { return default; }
 	///<summary>Gives size in unscaled world coordinates (ie before applying patch transform) of the patch as measured</summary>

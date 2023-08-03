@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Base class for all factories</summary>
 [CppInclude("Factories/Factory.h")]
 public partial class UFactory : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Whether the specified file can be imported by this factory. (Implemented in script)</summary>
 	public  bool ScriptFactoryCanImport(string Filename) { return default; }
 	///<summary>Import object(s) using a task via script</summary>

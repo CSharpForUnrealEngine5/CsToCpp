@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A DataprepAsset is an implementation of the DataprepAssetInterface using</summary>
 [CppInclude("DataprepAsset.h")]
 public partial class UDataprepAsset : UDataprepAssetInterface {
+	public static UClass StaticClass() {return default;}
 	///<summary>DEPRECATED: Pointer to data preparation pipeline blueprint previously used to process input data</summary>
 	public UBlueprint DataprepRecipeBP_DEPRECATED;
 	///<summary>DEPRECATED: List of producers referenced by the asset</summary>

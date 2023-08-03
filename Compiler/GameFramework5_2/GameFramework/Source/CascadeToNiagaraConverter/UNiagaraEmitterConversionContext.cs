@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Wrapper for modifying a UNiagaraEmitter by adding Scripts and Renderers through UNiagaraScriptConversionContexts and</summary>
 [CppInclude("NiagaraStackGraphUtilitiesAdapterLibrary.h")]
 public partial class UNiagaraEmitterConversionContext : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>FOnPasteScript</summary>
 	public  void FOnPasteScript(int ScriptIdx) {}
 	///<summary>Cleanup</summary>

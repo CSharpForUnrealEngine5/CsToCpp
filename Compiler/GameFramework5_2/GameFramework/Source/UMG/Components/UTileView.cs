@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A ListView that presents the contents as a set of tiles all uniformly sized.</summary>
 [CppInclude("Components/TileView.h")]
 public partial class UTileView : UListView {
+	public static UClass StaticClass() {return default;}
 	///<summary>Sets the height of every tile entry</summary>
 	public  void SetEntryHeight(float NewHeight) {}
 	///<summary>Sets the width of every tile entry</summary>

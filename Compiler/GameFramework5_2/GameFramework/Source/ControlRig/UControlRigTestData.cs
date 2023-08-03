@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("ControlRigTestData.h")]
 public partial class UControlRigTestData : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>CreateNewAsset</summary>
 	public static UControlRigTestData CreateNewAsset(string InDesiredPackagePath,string InBlueprintPathName) { return default; }
 	///<summary>GetTimeRange</summary>

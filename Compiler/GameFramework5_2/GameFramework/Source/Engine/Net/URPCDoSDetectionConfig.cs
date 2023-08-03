@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Configuration for FRPCDoSDetection - using PerObjectConfig, to hack a single hardcoded section name</summary>
 [CppInclude("Net/RPCDoSDetectionConfig.h")]
 public partial class URPCDoSDetectionConfig : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Whether or not RPC DoS detection is presently enabled</summary>
 	public bool bRPCDoSDetection;
 	///<summary>Whether or not analytics for RPC DoS detection is enabled</summary>

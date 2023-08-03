@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("TraceQueryTestResults.h")]
 public partial class UTraceQueryTestResults : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Results for channel trace</summary>
 	public FTraceQueryTestResultsInner ChannelResults;
 	///<summary>Results for object trace</summary>

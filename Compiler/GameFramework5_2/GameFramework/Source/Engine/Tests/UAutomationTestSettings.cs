@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Implements the Editor&#39;s user settings.</summary>
 [CppInclude("Tests/AutomationTestSettings.h")]
 public partial class UAutomationTestSettings : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Modules to load that have engine tests</summary>
 	public TArray<string> EngineTestModules;
 	///<summary>Modules to load that have editor tests</summary>

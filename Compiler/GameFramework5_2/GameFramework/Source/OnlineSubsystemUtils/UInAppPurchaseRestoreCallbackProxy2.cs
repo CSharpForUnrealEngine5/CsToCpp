@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("InAppPurchaseRestoreCallbackProxy2.h")]
 public partial class UInAppPurchaseRestoreCallbackProxy2 : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Called when there is a successful In-App Purchase transaction</summary>
 	public FInAppPurchaseRestoreResult2 OnSuccess;
 	///<summary>Called when there is an unsuccessful In-App Purchase transaction</summary>

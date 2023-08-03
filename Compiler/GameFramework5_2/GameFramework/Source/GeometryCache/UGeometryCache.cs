@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A Geometry Cache is a piece/set of geometry that consists of individual Mesh/Transformation samples.</summary>
 [CppInclude("GeometryCache.h")]
 public partial class UGeometryCache : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Importing data and options used for this Geometry cache object</summary>
 	public UAssetImportData AssetImportData;
 	///<summary>Information for thumbnail rendering</summary>

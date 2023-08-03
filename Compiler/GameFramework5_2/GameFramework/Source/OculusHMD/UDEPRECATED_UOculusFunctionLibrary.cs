@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("OculusFunctionLibrary.h")]
 public partial class UDEPRECATED_UOculusFunctionLibrary : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>GetPose</summary>
 	public static void GetPose(FRotator DeviceRotation,FVector DevicePosition,FVector NeckPosition,bool bUseOrienationForPlayerCamera/*=false*/,bool bUsePositionForPlayerCamera/*=false*/,FVector PositionScale/*=FVector.ZeroVector*/) {}
 	///<summary>GetRawSensorData</summary>

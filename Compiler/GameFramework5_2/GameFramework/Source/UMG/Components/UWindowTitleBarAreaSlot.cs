@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>The Slot for the UWindowTitleBarArea</summary>
 [CppInclude("Components/WindowTitleBarAreaSlot.h")]
 public partial class UWindowTitleBarAreaSlot : UPanelSlot {
+	public static UClass StaticClass() {return default;}
 	///<summary>SetPadding</summary>
 	public  void SetPadding(FMargin InPadding) {}
 	///<summary>SetHorizontalAlignment</summary>

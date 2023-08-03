@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Components/WorldPartitionStreamingSourceComponent.h")]
 public partial class UWorldPartitionStreamingSourceComponent : UActorComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>Enable the component</summary>
 	public  void EnableStreamingSource() {}
 	///<summary>Disable the component</summary>

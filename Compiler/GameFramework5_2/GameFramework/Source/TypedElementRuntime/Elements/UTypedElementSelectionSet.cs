@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A wrapper around an element list that ensures mutation goes via the selection</summary>
 [CppInclude("Elements/Framework/TypedElementSelectionSet.h")]
 public partial class UTypedElementSelectionSet : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Clear the current selection.</summary>
 	public  bool ClearSelection(FTypedElementSelectionOptions InSelectionOptions) { return default; }
 	///<summary>Get the number of selected elements.</summary>

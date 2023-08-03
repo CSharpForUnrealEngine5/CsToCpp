@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("SequencerTrackInstanceBP.h")]
 public partial class USequencerTrackInstanceBP : UMovieSceneTrackInstance {
+	public static UClass StaticClass() {return default;}
 	///<summary>K2_OnInitialize</summary>
 	public  void K2_OnInitialize() {}
 	///<summary>K2_OnUpdate</summary>

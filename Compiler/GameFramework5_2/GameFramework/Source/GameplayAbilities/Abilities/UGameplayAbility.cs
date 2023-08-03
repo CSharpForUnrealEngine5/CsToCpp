@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Abilities define custom gameplay logic that can be activated by players or external game logic</summary>
 [CppInclude("Abilities/GameplayAbility.h")]
 public partial class UGameplayAbility : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Returns the actor info associated with this ability, has cached pointers to useful objects</summary>
 	public  FGameplayAbilityActorInfo GetActorInfo() { return default; }
 	///<summary>Returns the actor that owns this ability, which may not have a physical location</summary>

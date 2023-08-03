@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("LatticeDeformerTool.h")]
 public partial class ULatticeDeformerToolProperties : UInteractiveToolPropertySet {
+	public static UClass StaticClass() {return default;}
 	///<summary>Number of lattice vertices along the X axis</summary>
 	public int XAxisResolution;
 	///<summary>Number of lattice vertices along the Y axis</summary>

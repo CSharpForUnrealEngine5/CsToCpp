@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Builders/ConeBuilder.h")]
 public partial class UConeBuilder : UEditorBrushBuilder {
+	public static UClass StaticClass() {return default;}
 	///<summary>Distance from base to tip of cone</summary>
 	public float Z;
 	///<summary>Distance from base to the tip of inner cone (when hollow)</summary>

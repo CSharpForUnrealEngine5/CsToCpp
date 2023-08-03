@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("TimedDataMonitorEditorSettings.h")]
 public partial class UTimedDataMonitorEditorSettings : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Option to use when calibrating from the UI.</summary>
 	public FTimedDataMonitorCalibrationParameters CalibrationSettings;
 	///<summary>Option to use when calibrating from the UI.</summary>

@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Allows you to place content with a desired size and have it scale to meet the constraints placed on this box&#39;s alloted area.  If</summary>
 [CppInclude("Components/ScaleBox.h")]
 public partial class UScaleBox : UContentWidget {
+	public static UClass StaticClass() {return default;}
 	///<summary>The stretching rule to apply when content is stretched</summary>
 	public EStretch Stretch;
 	///<summary>Controls in what direction content can be scaled</summary>

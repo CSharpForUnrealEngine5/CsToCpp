@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Data/PCGTextureData.h")]
 public partial class UPCGBaseTextureData : UPCGSurfaceData {
+	public static UClass StaticClass() {return default;}
 	///<summary>DensityFunction</summary>
 	public EPCGTextureDensityFunction DensityFunction;
 	///<summary>ColorChannel</summary>

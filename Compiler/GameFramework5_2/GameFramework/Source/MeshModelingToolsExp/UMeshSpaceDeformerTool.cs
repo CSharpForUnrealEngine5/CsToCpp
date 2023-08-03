@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Applies non-linear deformations to a mesh</summary>
 [CppInclude("MeshSpaceDeformerTool.h")]
 public partial class UMeshSpaceDeformerTool : USingleSelectionMeshEditingTool {
+	public static UClass StaticClass() {return default;}
 	///<summary>Settings</summary>
 	public UMeshSpaceDeformerToolProperties Settings;
 	///<summary>ToolActions</summary>

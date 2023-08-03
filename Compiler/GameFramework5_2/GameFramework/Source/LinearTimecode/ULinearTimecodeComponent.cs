@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Implements a Linear timecode decoder.</summary>
 [CppInclude("LinearTimecodeComponent.h")]
 public partial class ULinearTimecodeComponent : USceneComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>The media player asset associated with this component.</summary>
 	public UMediaPlayer MediaPlayer;
 	///<summary>DropTimecode</summary>

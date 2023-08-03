@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("PCGEditorSettings.h")]
 public partial class UPCGEditorSettings : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Default node color</summary>
 	public FLinearColor DefaultNodeColor;
 	///<summary>Instanced node body tint color</summary>

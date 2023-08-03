@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Subsystem for interacting with the text to speech system via blueprints.</summary>
 [CppInclude("TextToSpeechEngineSubsystem.h")]
 public partial class UTextToSpeechEngineSubsystem : UEngineSubsystem {
+	public static UClass StaticClass() {return default;}
 	///<summary>Immediately vocalizes the requested string asynchronously on the requested text to speech channel, interrupting any string that is already being vocalized on the channel.</summary>
 	public  void SpeakOnChannel(string InChannelId,string InStringToSpeak) {}
 	///<summary>Immediately stops any currently vocalized string on the channel.</summary>

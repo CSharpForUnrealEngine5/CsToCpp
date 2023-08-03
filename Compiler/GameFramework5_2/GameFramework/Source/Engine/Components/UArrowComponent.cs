@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A simple arrow rendered using lines. Useful for indicating which way an object is facing.</summary>
 [CppInclude("Components/ArrowComponent.h")]
 public partial class UArrowComponent : UPrimitiveComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>Color to draw arrow</summary>
 	public FColor ArrowColor;
 	///<summary>Relative size to scale drawn arrow by</summary>

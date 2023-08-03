@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("BehaviorTreeGraphNode_CompositeDecorator.h")]
 public partial class UBehaviorTreeGraphNode_CompositeDecorator : UBehaviorTreeGraphNode {
+	public static UClass StaticClass() {return default;}
 	///<summary>The logic graph for this decorator (returning a boolean)</summary>
 	public UEdGraph BoundGraph;
 	///<summary>CompositeName</summary>

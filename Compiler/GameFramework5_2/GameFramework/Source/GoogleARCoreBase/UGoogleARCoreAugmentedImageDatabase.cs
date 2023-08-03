@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A collection of processed images for ARCore to track.</summary>
 [CppInclude("GoogleARCoreAugmentedImageDatabase.h")]
 public partial class UGoogleARCoreAugmentedImageDatabase : UDataAsset {
+	public static UClass StaticClass() {return default;}
 	///<summary>AddRuntimeAugmentedImageFromTexture</summary>
 	public  int AddRuntimeAugmentedImageFromTexture(UTexture2D ImageTexture,string ImageName,float ImageWidthInMeter/*=0f*/) { return default; }
 	///<summary>The individual instances of</summary>

@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A function library with wrappers around the getter/setter functions for FSubobjectData</summary>
 [CppInclude("SubobjectDataBlueprintFunctionLibrary.h")]
 public partial class USubobjectDataBlueprintFunctionLibrary : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>IsValid</summary>
 	public static bool IsValid(FSubobjectData Data) { return default; }
 	///<summary>IsHandleValid</summary>

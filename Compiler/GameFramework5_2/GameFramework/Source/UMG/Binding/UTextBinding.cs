@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Binding/TextBinding.h")]
 public partial class UTextBinding : UPropertyBinding {
+	public static UClass StaticClass() {return default;}
 	///<summary>GetTextValue</summary>
 	public  string GetTextValue() { return default; }
 	///<summary>GetStringValue</summary>

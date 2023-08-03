@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("ChaosCloth/ChaosClothingSimulationInteractor.h")]
 public partial class UChaosClothingInteractor : UClothingInteractor {
+	public static UClass StaticClass() {return default;}
 	///<summary>SetMaterialLinear</summary>
 	public  void SetMaterialLinear(float EdgeStiffness/*=1.0f*/,float BendingStiffness/*=1.0f*/,float AreaStiffness/*=1.0f*/) {}
 	///<summary>SetMaterial</summary>

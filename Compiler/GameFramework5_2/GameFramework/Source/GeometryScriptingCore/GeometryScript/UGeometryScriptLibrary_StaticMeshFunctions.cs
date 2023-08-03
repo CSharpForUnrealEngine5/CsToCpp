@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Although the class name indicates StaticMeshFunctions, that was a naming mistake that is difficult</summary>
 [CppInclude("GeometryScript/MeshAssetFunctions.h")]
 public partial class UGeometryScriptLibrary_StaticMeshFunctions : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>CopyMeshFromStaticMesh</summary>
 	public static UDynamicMesh CopyMeshFromStaticMesh(UStaticMesh FromStaticMeshAsset,UDynamicMesh ToDynamicMesh,FGeometryScriptCopyMeshFromAssetOptions AssetOptions,FGeometryScriptMeshReadLOD RequestedLOD,EGeometryScriptOutcomePins Outcome,UGeometryScriptDebug Debug/*=nullptr*/) { return default; }
 	///<summary>CopyMeshToStaticMesh</summary>

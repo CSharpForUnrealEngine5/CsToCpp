@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>UMeshWireframeComponent draws a mesh wireframe as lines, with line color/thickness</summary>
 [CppInclude("Drawing/MeshWireframeComponent.h")]
 public partial class UMeshWireframeComponent : UMeshComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>Depth bias of the lines, used to offset in depth to avoid z-fighting</summary>
 	public float LineDepthBias;
 	///<summary>Target-size depth bias scale. This is multiplied by LineDepthBias.</summary>

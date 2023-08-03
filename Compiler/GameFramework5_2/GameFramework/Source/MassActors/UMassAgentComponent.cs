@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>There are two primary use cases for this component:</summary>
 [CppInclude("MassAgentComponent.h")]
 public partial class UMassAgentComponent : UActorComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>Registers the component with the owner effectively turning it on. Calling it multiple times won&#39;t break anything</summary>
 	public  void Enable() {}
 	///<summary>Registers the component with the owner effectively turning it off</summary>

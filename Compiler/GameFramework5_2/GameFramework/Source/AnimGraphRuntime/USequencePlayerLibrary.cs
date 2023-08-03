@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Exposes operations to be performed on a sequence player anim node</summary>
 [CppInclude("SequencePlayerLibrary.h")]
 public partial class USequencePlayerLibrary : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>Get a sequence player context from an anim node context</summary>
 	public static FSequencePlayerReference ConvertToSequencePlayer(FAnimNodeReference Node,EAnimNodeReferenceConversionResult Result) { return default; }
 	///<summary>Get a sequence player context from an anim node context (pure)</summary>

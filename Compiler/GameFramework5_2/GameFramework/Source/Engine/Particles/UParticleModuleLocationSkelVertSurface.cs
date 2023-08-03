@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Particles/Location/ParticleModuleLocationSkelVertSurface.h")]
 public partial class UParticleModuleLocationSkelVertSurface : UParticleModuleLocationBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>Whether the module uses Verts or Surfaces for locations.</summary>
 	public ELocationSkelVertSurfaceSource SourceType;
 	///<summary>An offset to apply to each vert/surface</summary>

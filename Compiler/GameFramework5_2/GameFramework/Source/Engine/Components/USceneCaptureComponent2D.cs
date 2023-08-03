@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Used to capture a &#39;snapshot&#39; of the scene from a single plane and feed it to a render target.</summary>
 [CppInclude("Components/SceneCaptureComponent2D.h")]
 public partial class USceneCaptureComponent2D : USceneCaptureComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>ProjectionType</summary>
 	public ECameraProjectionMode ProjectionType;
 	///<summary>Camera field of view (in degrees).</summary>

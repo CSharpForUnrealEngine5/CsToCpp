@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("GroomCardsEditorTool.h")]
 public partial class UGroomCardsEditorTool : UMeshSurfacePointTool {
+	public static UClass StaticClass() {return default;}
 	///<summary>SelectActions</summary>
 	public USelectGroomCardsToolActions SelectActions;
 	///<summary>EditActions</summary>

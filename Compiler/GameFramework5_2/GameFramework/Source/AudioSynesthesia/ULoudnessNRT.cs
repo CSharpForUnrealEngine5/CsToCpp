@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>ULoudnessNRT</summary>
 [CppInclude("LoudnessNRT.h")]
 public partial class ULoudnessNRT : UAudioSynesthesiaNRT {
+	public static UClass StaticClass() {return default;}
 	///<summary>The settings for the audio analyzer.</summary>
 	public ULoudnessNRTSettings Settings;
 	///<summary>Get the overall loudness of the analyzed sound at a given time.</summary>

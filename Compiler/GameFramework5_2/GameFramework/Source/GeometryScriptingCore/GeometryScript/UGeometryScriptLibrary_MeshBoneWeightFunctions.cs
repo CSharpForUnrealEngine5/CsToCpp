@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("GeometryScript/MeshBoneWeightFunctions.h")]
 public partial class UGeometryScriptLibrary_MeshBoneWeightFunctions : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>Check whether the TargetMesh has a per-vertex Bone/Skin Weight Attribute set</summary>
 	public static UDynamicMesh MeshHasBoneWeights(UDynamicMesh TargetMesh,bool bHasBoneWeights,FGeometryScriptBoneWeightProfile Profile/*=new FGeometryScriptBoneWeightProfile()*/) { return default; }
 	///<summary>Create a new BoneWeights attribute on the TargetMesh, if it does not already exist. If it does exist,</summary>

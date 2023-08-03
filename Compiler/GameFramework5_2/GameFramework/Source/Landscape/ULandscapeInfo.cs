@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("LandscapeInfo.h")]
 public partial class ULandscapeInfo : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>LandscapeActor</summary>
 	public TWeakObjectPtr<ALandscape> LandscapeActor;
 	///<summary>LandscapeGuid</summary>

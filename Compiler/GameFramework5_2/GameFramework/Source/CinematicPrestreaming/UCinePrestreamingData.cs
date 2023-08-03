@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("CinePrestreamingData.h")]
 public partial class UCinePrestreamingData : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Times</summary>
 	public TArray<FFrameNumber> Times;
 	///<summary>VirtualTextureDatas</summary>

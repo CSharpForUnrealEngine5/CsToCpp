@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("GeometryScript/MeshQueryFunctions.h")]
 public partial class UGeometryScriptLibrary_MeshQueryFunctions : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>GetMeshInfoString</summary>
 	public static string GetMeshInfoString(UDynamicMesh TargetMesh) { return default; }
 	///<summary>GetIsDenseMesh</summary>

@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A class to handle the virtual Camera transform.</summary>
 [CppInclude("VirtualCameraMovement.h")]
 public partial class UVirtualCameraMovement : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Get the unmodified local transform.</summary>
 	public  FTransform GetLocalTransform() { return default; }
 	///<summary>Set the local transform that will be modified by the scaling factor.</summary>

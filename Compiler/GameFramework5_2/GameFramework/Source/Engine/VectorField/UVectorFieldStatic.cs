@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("VectorField/VectorFieldStatic.h")]
 public partial class UVectorFieldStatic : UVectorField {
+	public static UClass StaticClass() {return default;}
 	///<summary>Size of the vector field volume.</summary>
 	public int SizeX;
 	///<summary>Size of the vector field volume.</summary>

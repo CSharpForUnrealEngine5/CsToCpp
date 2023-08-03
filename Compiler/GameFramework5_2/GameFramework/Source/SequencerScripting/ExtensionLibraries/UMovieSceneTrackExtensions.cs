@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Function library containing methods that should be hoisted onto UMovieSceneTracks for scripting</summary>
 [CppInclude("ExtensionLibraries/MovieSceneTrackExtensions.h")]
 public partial class UMovieSceneTrackExtensions : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>Set this track&#39;s display name</summary>
 	public static void SetDisplayName(UMovieSceneTrack Track,string InName) {}
 	///<summary>Get this track&#39;s display name</summary>

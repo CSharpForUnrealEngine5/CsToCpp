@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("MrcGarbageMatteCaptureComponent.h")]
 public partial class UMrcGarbageMatteCaptureComponent : USceneCaptureComponent2D {
+	public static UClass StaticClass() {return default;}
 	///<summary>SetTrackingOrigin</summary>
 	public  void SetTrackingOrigin(USceneComponent TrackingOrigin) {}
 	///<summary>ApplyCalibrationData</summary>

@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Materials/MaterialExpressionRotator.h")]
 public partial class UMaterialExpressionRotator : UMaterialExpression {
+	public static UClass StaticClass() {return default;}
 	///<summary>Defaults to &#39;ConstCoordinate&#39; if not specified</summary>
 	public FExpressionInput Coordinate;
 	///<summary>Defaults to Game Time if not specified</summary>

@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("MuCO/CustomizableSkeletalMeshActor.h")]
 public partial class ACustomizableSkeletalMeshActor : ASkeletalMeshActor {
+	public static UClass StaticClass() {return default;}
 	///<summary>CustomizableSkeletalComponents</summary>
 	public TArray<UCustomizableSkeletalComponent> CustomizableSkeletalComponents;
 	///<summary>SkeletalMeshComponents</summary>

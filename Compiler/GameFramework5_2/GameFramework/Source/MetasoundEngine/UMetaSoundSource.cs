@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>This Metasound type can be played as an audio source.</summary>
 [CppInclude("MetasoundSource.h")]
 public partial class UMetaSoundSource : USoundWaveProcedural {
+	public static UClass StaticClass() {return default;}
 	///<summary>RootMetasoundDocument</summary>
 	public FMetasoundFrontendDocument RootMetasoundDocument;
 	///<summary>ReferencedAssetClassKeys</summary>

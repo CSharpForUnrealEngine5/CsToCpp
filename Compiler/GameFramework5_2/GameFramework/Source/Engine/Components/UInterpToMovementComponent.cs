@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Move the root component between a series of points over a given time *</summary>
 [CppInclude("Components/InterpToMovementComponent.h")]
 public partial class UInterpToMovementComponent : UMovementComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>FOnInterpToReverseDelegate</summary>
 	public  void FOnInterpToReverseDelegate(FHitResult ImpactResult,float Time) {}
 	///<summary>FOnInterpToStopDelegate</summary>

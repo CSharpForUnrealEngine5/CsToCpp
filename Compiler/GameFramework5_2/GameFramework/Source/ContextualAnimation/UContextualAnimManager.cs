@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("ContextualAnimManager.h")]
 public partial class UContextualAnimManager : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>TryStopSceneWithActor</summary>
 	public  bool TryStopSceneWithActor(AActor Actor) { return default; }
 	///<summary>IsActorInAnyScene</summary>

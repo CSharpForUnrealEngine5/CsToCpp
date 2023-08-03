@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Wrapper methods from FConversationContext</summary>
 [CppInclude("ConversationContext.h")]
 public partial class UConversationContextHelpers : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>Returns the conversation instance object associated with the conversation context provided, or nullptr if not valid</summary>
 	public static UConversationInstance GetConversationInstance(FConversationContext Context) { return default; }
 	///<summary>Returns the FConversationNodeHandle of the conversation instance associated with this context, or a handle with an invalid FGuid if not possible</summary>

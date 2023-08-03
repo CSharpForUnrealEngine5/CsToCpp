@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("NiagaraSpriteRendererProperties.h")]
 public partial class UNiagaraSpriteRendererProperties : UNiagaraRendererProperties {
+	public static UClass StaticClass() {return default;}
 	///<summary>The material used to render the particle. Note that it must have the Use with Niagara Sprites flag checked.</summary>
 	public UMaterialInterface Material;
 	///<summary>MICMaterial</summary>

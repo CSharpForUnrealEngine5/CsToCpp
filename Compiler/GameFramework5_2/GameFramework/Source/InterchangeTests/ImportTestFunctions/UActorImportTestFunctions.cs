@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("ImportTestFunctions/ActorImportTestFunctions.h")]
 public partial class UActorImportTestFunctions : UImportTestFunctionsBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>Check whether the expected number of actors are imported</summary>
 	public static FInterchangeTestFunctionResult CheckImportedActorCount(TArray<AActor> Actors,int ExpectedNumberOfImportedActors) { return default; }
 	///<summary>Check whether the expected number of actors with a given class are imported</summary>

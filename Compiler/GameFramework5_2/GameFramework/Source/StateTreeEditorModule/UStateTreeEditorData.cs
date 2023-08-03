@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Edit time data for StateTree asset. This data gets baked into runtime format before being used by the StateTreeInstance.</summary>
 [CppInclude("StateTreeEditorData.h")]
 public partial class UStateTreeEditorData : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Schema describing which inputs, evaluators, and tasks a StateTree can contain</summary>
 	public UStateTreeSchema Schema;
 	///<summary>Public parameters that could be used for bindings within the Tree.</summary>

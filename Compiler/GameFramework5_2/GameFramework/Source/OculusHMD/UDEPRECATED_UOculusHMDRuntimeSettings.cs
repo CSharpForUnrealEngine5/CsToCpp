@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Implements the settings for the OculusVR plugin.</summary>
 [CppInclude("OculusHMDRuntimeSettings.h")]
 public partial class UDEPRECATED_UOculusHMDRuntimeSettings : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>bAutoEnabled</summary>
 	public bool bAutoEnabled;
 	///<summary>SplashDescs</summary>

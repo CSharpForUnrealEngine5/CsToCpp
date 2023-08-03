@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("DataprepActionAsset.h")]
 public partial class UDataprepActionAsset : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Execute the action on a specific set of objects</summary>
 	public  void Execute(TArray<UObject> InObjects) {}
 	///<summary>bExecutionInterrupted</summary>

@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>* UDatasmithVariantElement</summary>
 [CppInclude("ObjectElements/DatasmithUObjectElements.h")]
 public partial class UDatasmithVariantElement : UDatasmithObjectElement {
+	public static UClass StaticClass() {return default;}
 	///<summary>Create a new actor binding and add it to this variant</summary>
 	public  UDatasmithActorBindingElement CreateActorBinding() { return default; }
 	///<summary>Adds an existing actor binding to this variant</summary>

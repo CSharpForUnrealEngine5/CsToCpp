@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Blueprints/WarpUtilsBlueprintLibrary.h")]
 public partial class UWarpUtilsBlueprintLibrary : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>Save data to a PFM file</summary>
 	public static bool SavePFM(string File,int TexWidth,int TexHeight,TArray<FVector> Vertices) { return default; }
 	///<summary>Save data to a PFM file. Since the float NaN value is not available in blueprints, we provide a flags array (false == NaN)</summary>

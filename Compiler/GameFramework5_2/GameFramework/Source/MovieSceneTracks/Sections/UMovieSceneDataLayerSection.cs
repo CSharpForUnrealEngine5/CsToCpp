@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Sections/MovieSceneDataLayerSection.h")]
 public partial class UMovieSceneDataLayerSection : UMovieSceneSection {
+	public static UClass StaticClass() {return default;}
 	///<summary>GetDesiredState</summary>
 	public  EDataLayerRuntimeState GetDesiredState() { return default; }
 	///<summary>SetDesiredState</summary>

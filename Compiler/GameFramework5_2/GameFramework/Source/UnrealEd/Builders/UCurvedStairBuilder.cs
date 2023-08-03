@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Builders/CurvedStairBuilder.h")]
 public partial class UCurvedStairBuilder : UEditorBrushBuilder {
+	public static UClass StaticClass() {return default;}
 	///<summary>The radius of the inner curve of the stair</summary>
 	public int InnerRadius;
 	///<summary>The height of each step</summary>

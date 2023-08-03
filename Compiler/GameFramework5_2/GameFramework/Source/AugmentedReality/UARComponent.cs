@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>ARComponent handles replication and visualization update for AR tracked geometries</summary>
 [CppInclude("ARComponent.h")]
 public partial class UARComponent : USceneComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>SetNativeID</summary>
 	public  void SetNativeID(FGuid NativeID) {}
 	///<summary>GetMRMesh</summary>

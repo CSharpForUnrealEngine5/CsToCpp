@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("BlendSpaceAnalysis.h")]
 public partial class ULinearAnalysisProperties : UAnalysisProperties {
+	public static UClass StaticClass() {return default;}
 	///<summary>Axis for the analysis function</summary>
 	public EAnalysisLinearAxis FunctionAxis;
 	///<summary>The bone or socket used for analysis</summary>

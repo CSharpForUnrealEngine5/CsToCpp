@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Statistics page for shader cooker stats.</summary>
 [CppInclude("ShaderCookerStats.h")]
 public partial class UShaderCookerStats : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Material name</summary>
 	public string Name;
 	///<summary>Material platform</summary>

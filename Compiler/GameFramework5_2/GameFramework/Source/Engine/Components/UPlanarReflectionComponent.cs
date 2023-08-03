@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>UPlanarReflectionComponent</summary>
 [CppInclude("Components/PlanarReflectionComponent.h")]
 public partial class UPlanarReflectionComponent : USceneCaptureComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>PreviewBox</summary>
 	public UBoxComponent PreviewBox;
 	///<summary>Controls the strength of normals when distorting the planar reflection.</summary>

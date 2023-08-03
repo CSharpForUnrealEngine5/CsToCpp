@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("VectorField/VectorFieldAnimated.h")]
 public partial class UVectorFieldAnimated : UVectorField {
+	public static UClass StaticClass() {return default;}
 	///<summary>The texture from which to create the vector field.</summary>
 	public UTexture2D Texture;
 	///<summary>The operation used to construct the vector field.</summary>

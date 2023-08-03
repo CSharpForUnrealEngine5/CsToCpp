@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>GameStateBase is a class that manages the game&#39;s global state, and is spawned by GameModeBase.</summary>
 [CppInclude("GameFramework/GameStateBase.h")]
 public partial class AGameStateBase : AInfo {
+	public static UClass StaticClass() {return default;}
 	///<summary>Class of the server&#39;s game mode, assigned by GameModeBase.</summary>
 	public UClass GameModeClass;
 	///<summary>Instance of the current game mode, exists only on the server. For non-authority clients, this will be NULL.</summary>

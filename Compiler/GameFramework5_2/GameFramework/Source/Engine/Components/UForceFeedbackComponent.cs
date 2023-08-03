@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>ForceFeedbackComponent allows placing a rumble effect in to the world and having it apply to player characters who come near it</summary>
 [CppInclude("Components/ForceFeedbackComponent.h")]
 public partial class UForceFeedbackComponent : USceneComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>The feedback effect to be played</summary>
 	public UForceFeedbackEffect ForceFeedbackEffect;
 	///<summary>Auto destroy this component on completion</summary>

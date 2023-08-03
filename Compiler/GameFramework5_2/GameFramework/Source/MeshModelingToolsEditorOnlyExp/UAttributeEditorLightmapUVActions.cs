@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("AttributeEditorTool.h")]
 public partial class UAttributeEditorLightmapUVActions : UAttributeEditorActionPropertySet {
+	public static UClass StaticClass() {return default;}
 	///<summary>Whether or not Lightmap UVs are enabled in the Static Mesh Build Settings. Use the Static Mesh Editor to change this value.</summary>
 	public bool bGenerateLightmapUVs;
 	///<summary>Source UV channel used to compute Lightmap UVs. Use the Static Mesh Editor to change this value.</summary>

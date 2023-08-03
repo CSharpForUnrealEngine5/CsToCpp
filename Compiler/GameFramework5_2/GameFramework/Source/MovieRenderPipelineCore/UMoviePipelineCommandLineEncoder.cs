@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("MoviePipelineCommandLineEncoder.h")]
 public partial class UMoviePipelineCommandLineEncoder : UMoviePipelineSetting {
+	public static UClass StaticClass() {return default;}
 	///<summary>File name format string override. If specified it will override the FileNameFormat from the Output setting.</summary>
 	public string FileNameFormatOverride;
 	///<summary>What encoding quality to use for this job? Exact command line arguments for each one are specified in Project Settings.</summary>

@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>The button is a click-able primitive widget to enable basic interaction, you</summary>
 [CppInclude("Components/Button.h")]
 public partial class UButton : UContentWidget {
+	public static UClass StaticClass() {return default;}
 	///<summary>The button style used at runtime</summary>
 	public FButtonStyle WidgetStyle;
 	///<summary>The color multiplier for the button content</summary>

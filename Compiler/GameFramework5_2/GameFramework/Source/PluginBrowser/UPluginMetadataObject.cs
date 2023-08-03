@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>We use this object to display plugin properties using details view.</summary>
 [CppInclude("PluginMetadataObject.h")]
 public partial class UPluginMetadataObject : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Version number for the plugin.  The version number must increase with every version of the plugin, so that the system</summary>
 	public int Version;
 	///<summary>Name of the version for this plugin.  This is the front-facing part of the version number.  It doesn&#39;t need to match</summary>

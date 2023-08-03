@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Simple Mesh Simplifying Tool</summary>
 [CppInclude("MeshTangentsTool.h")]
 public partial class UMeshTangentsTool : USingleSelectionMeshEditingTool {
+	public static UClass StaticClass() {return default;}
 	///<summary>Settings</summary>
 	public UMeshTangentsToolProperties Settings;
 	///<summary>DefaultMaterial</summary>

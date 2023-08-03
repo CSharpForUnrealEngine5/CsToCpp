@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Editor only UI data for emitters.</summary>
 [CppInclude("NiagaraEmitterEditorData.h")]
 public partial class UNiagaraEmitterEditorData : UNiagaraEditorDataBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>StackEditorData</summary>
 	public UNiagaraStackEditorData StackEditorData;
 	///<summary>PlaybackRangeMin</summary>

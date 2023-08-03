@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Associates information with modifiers and their connection points.</summary>
 [CppInclude("Styling/ModifierBoundWidgetStyleDefinitions.h")]
 public partial class UModifierBoundWidgetStyleDefinitions : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Retrieves all meta data that is associated for a given modifier.</summary>
 	public  TArray<UWidgetStyleData> GetStylesForModifier(UVCamModifier Modifier) { return default; }
 	///<summary>Retrieves all meta data that is associated for a given modifier and a sub-category name.</summary>

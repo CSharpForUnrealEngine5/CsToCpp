@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("ImportTestFunctions/SkeletalMeshImportTestFunctions.h")]
 public partial class USkeletalMeshImportTestFunctions : UImportTestFunctionsBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>Check whether the expected number of skeletal meshes are imported</summary>
 	public static FInterchangeTestFunctionResult CheckImportedSkeletalMeshCount(TArray<USkeletalMesh> Meshes,int ExpectedNumberOfImportedSkeletalMeshes) { return default; }
 	///<summary>Check whether the vertex count in the built render data for the given LOD is as expected</summary>

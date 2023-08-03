@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("NiagaraDataInterfaceRenderTargetVolume.h")]
 public partial class UNiagaraDataInterfaceRenderTargetVolume : UNiagaraDataInterfaceRWBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>Size</summary>
 	public FIntVector Size;
 	///<summary>When enabled overrides the format of the render target, otherwise uses the project default setting.</summary>

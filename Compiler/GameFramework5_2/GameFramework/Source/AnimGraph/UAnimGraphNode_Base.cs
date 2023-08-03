@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>This is the base class for any animation graph nodes that generate or consume an animation pose in</summary>
 [CppInclude("AnimGraphNode_Base.h")]
 public partial class UAnimGraphNode_Base : UK2Node {
+	public static UClass StaticClass() {return default;}
 	///<summary>ShowPinForProperties</summary>
 	public TArray<FOptionalPinFromProperty> ShowPinForProperties;
 	///<summary>Map from property name-&gt;binding info</summary>

@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("LandscapeLayerInfoObject.h")]
 public partial class ULandscapeLayerInfoObject : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>LayerName</summary>
 	public string LayerName;
 	///<summary>PhysMaterial</summary>

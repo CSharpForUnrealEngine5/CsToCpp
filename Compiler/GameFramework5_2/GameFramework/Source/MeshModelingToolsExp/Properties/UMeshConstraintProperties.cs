@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Properties/RemeshProperties.h")]
 public partial class UMeshConstraintProperties : UInteractiveToolPropertySet {
+	public static UClass StaticClass() {return default;}
 	///<summary>If true, sharp edges are preserved</summary>
 	public bool bPreserveSharpEdges;
 	///<summary>Mesh Boundary Constraint Type</summary>

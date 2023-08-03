@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("XRDeviceVisualizationComponent.h")]
 public partial class UXRDeviceVisualizationComponent : UStaticMeshComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>Whether the visualization offered by this component is being used.</summary>
 	public bool bIsVisualizationActive;
 	///<summary>SetIsVisualizationActive</summary>

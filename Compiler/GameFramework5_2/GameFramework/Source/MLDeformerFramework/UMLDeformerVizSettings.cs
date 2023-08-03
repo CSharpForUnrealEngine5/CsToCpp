@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>The vizualization settings.</summary>
 [CppInclude("MLDeformerVizSettings.h")]
 public partial class UMLDeformerVizSettings : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>The data to visualize.</summary>
 	public EMLDeformerVizMode VisualizationMode;
 	///<summary>The animation sequence to play on the skeletal mesh.</summary>

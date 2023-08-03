@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("NiagaraNodeOutput.h")]
 public partial class UNiagaraNodeOutput : UNiagaraNode {
+	public static UClass StaticClass() {return default;}
 	///<summary>Outputs</summary>
 	public TArray<FNiagaraVariable> Outputs;
 	///<summary>ScriptType</summary>

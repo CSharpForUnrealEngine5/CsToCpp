@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Implements the Editor&#39;s play settings.</summary>
 [CppInclude("Settings/LevelEditorPlaySettings.h")]
 public partial class ULevelEditorPlaySettings : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>The PlayerStart class used when spawning the player at the current camera location.</summary>
 	public string PlayFromHerePlayerStartClassName;
 	///<summary>Give the game mouse control when PIE starts or require a click in the viewport first</summary>

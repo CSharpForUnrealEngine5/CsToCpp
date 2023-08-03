@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("PhysicsEngine/RadialForceActor.h")]
 public partial class ARadialForceActor : ARigidBodyBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>Force component</summary>
 	public URadialForceComponent ForceComponent;
 	///<summary>SpriteComponent</summary>

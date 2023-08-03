@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Things to remember:</summary>
 [CppInclude("Actions/PawnAction.h")]
 public partial class UDEPRECATED_PawnAction : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Current child node executing on top of this Action</summary>
 	public UDEPRECATED_PawnAction ChildAction_DEPRECATED;
 	///<summary>ParentAction_DEPRECATED</summary>

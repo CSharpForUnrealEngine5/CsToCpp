@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Editor/UnrealEdEngine.h")]
 public partial class UUnrealEdEngine : UEditorEngine {
+	public static UClass StaticClass() {return default;}
 	///<summary>Global instance of the editor options class.</summary>
 	public UUnrealEdOptions EditorOptionsInst;
 	///<summary>Manager responsible for configuring auto reimport</summary>

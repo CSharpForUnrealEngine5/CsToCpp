@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Engine/NetDriver.h")]
 public partial class UNetDriver : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Used to specify the class to use for connections</summary>
 	public string NetConnectionClassName;
 	///<summary>ReplicationDriverClassName</summary>

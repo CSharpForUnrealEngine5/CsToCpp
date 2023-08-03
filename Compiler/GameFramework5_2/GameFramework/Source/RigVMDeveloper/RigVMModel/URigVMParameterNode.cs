@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>The Parameter Node represents an input or output argument / parameter</summary>
 [CppInclude("RigVMModel/Nodes/RigVMParameterNode.h")]
 public partial class URigVMParameterNode : URigVMNode {
+	public static UClass StaticClass() {return default;}
 	///<summary>Returns the name of the parameter</summary>
 	public  string GetParameterName() { return default; }
 	///<summary>Returns true if this node is an input</summary>

@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("EditorSupport/CompositingEditorSupportLibrary.h")]
 public partial class UCompositingPickerAsyncTask : UBlueprintAsyncActionBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>OpenCompositingPicker</summary>
 	public static UCompositingPickerAsyncTask OpenCompositingPicker(UTextureRenderTarget2D PickerTarget,UTexture DisplayImage,string WindowTitle,bool bAverageColorOnDrag/*=true*/,bool bUseImplicitGamma/*=true*/) { return default; }
 	///<summary>OnPick</summary>

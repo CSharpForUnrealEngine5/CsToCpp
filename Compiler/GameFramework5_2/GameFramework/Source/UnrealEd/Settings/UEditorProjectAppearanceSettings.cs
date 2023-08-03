@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Editor project appearance settings. Stored in default config, per-project</summary>
 [CppInclude("Settings/EditorProjectSettings.h")]
 public partial class UEditorProjectAppearanceSettings : UDeveloperSettings {
+	public static UClass StaticClass() {return default;}
 	///<summary>Whether to display units on editor properties where the property has units set.</summary>
 	public bool bDisplayUnits;
 	///<summary>Whether to display units on component transform properties</summary>

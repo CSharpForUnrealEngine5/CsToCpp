@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>* Tool</summary>
 [CppInclude("HoleFillTool.h")]
 public partial class UHoleFillTool : USingleSelectionMeshEditingTool {
+	public static UClass StaticClass() {return default;}
 	///<summary>SmoothHoleFillProperties</summary>
 	public USmoothHoleFillProperties SmoothHoleFillProperties;
 	///<summary>Properties</summary>

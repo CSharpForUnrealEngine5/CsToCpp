@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A transform gizmo on the pivot that allows you to interact with selected objects by moving, scaling and rotating.</summary>
 [CppInclude("Gizmo/VIPivotTransformGizmo.h")]
 public partial class APivotTransformGizmo : ABaseTransformGizmo {
+	public static UClass StaticClass() {return default;}
 	///<summary>Uniform scale handle group component</summary>
 	public UUniformScaleGizmoHandleGroup UniformScaleGizmoHandleGroup;
 	///<summary>Translation handle group component</summary>

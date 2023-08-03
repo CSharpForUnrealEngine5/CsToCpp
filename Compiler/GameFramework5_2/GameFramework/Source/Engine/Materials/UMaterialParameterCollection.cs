@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Asset class that contains a list of parameter names and their default values.</summary>
 [CppInclude("Materials/MaterialParameterCollection.h")]
 public partial class UMaterialParameterCollection : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Used by materials using this collection to know when to recompile.</summary>
 	public FGuid StateId;
 	///<summary>ScalarParameters</summary>

@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Comment Nodes can be used to annotate a Graph by adding</summary>
 [CppInclude("RigVMModel/Nodes/RigVMCommentNode.h")]
 public partial class URigVMCommentNode : URigVMNode {
+	public static UClass StaticClass() {return default;}
 	///<summary>Returns the current user provided text of this comment.</summary>
 	public  string GetCommentText() { return default; }
 	///<summary>Returns the current user provided font size of this comment.</summary>

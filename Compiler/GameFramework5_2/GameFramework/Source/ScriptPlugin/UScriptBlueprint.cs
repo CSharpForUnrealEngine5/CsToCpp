@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>The Script blueprint generates script-defined classes</summary>
 [CppInclude("ScriptBlueprint.h")]
 public partial class UScriptBlueprint : UBlueprint {
+	public static UClass StaticClass() {return default;}
 	///<summary>SourceFilePath_DEPRECATED</summary>
 	public string SourceFilePath_DEPRECATED;
 	///<summary>AssetImportData</summary>

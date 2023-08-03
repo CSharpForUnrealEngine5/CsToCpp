@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("SoundscapeSubsystem.h")]
 public partial class USoundscapeSubsystem : UGameInstanceSubsystem {
+	public static UClass StaticClass() {return default;}
 	///<summary>SetState</summary>
 	public  void SetState(FGameplayTag SoundscapeState) {}
 	///<summary>ClearState</summary>

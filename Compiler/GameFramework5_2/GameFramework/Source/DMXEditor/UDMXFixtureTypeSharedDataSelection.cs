@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>An Array of Fixture Types that supports a transaction history resp. undo / redo</summary>
 [CppInclude("DMXFixtureTypeSharedDataSelection.h")]
 public partial class UDMXFixtureTypeSharedDataSelection : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>The Fixture types being edited</summary>
 	public TArray<TWeakObjectPtr<UDMXEntityFixtureType>> SelectedFixtureTypes;
 	///<summary>The Mode indices in the Selected Fixture Types currently being selected</summary>

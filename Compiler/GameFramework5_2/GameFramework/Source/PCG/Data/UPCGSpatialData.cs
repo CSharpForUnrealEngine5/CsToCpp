@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>&quot;Concrete&quot; data base class for PCG generation</summary>
 [CppInclude("Data/PCGSpatialData.h")]
 public partial class UPCGSpatialData : UPCGData {
+	public static UClass StaticClass() {return default;}
 	///<summary>Returns the dimension of the data type, which has nothing to do with the dimension of its points</summary>
 	public  int GetDimension() { return default; }
 	///<summary>Returns the full bounds (including density fall-off) of the data</summary>

@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("ModelingToolsEditorMode.h")]
 public partial class UModelingToolsEditorMode : UBaseLegacyWidgetEdMode {
+	public static UClass StaticClass() {return default;}
 	///<summary>bEnableVolumeElementSelection</summary>
 	public bool bEnableVolumeElementSelection;
 	///<summary>bEnableStaticMeshElementSelection</summary>

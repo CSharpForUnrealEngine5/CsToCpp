@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("AchievementWriteCallbackProxy.h")]
 public partial class UAchievementWriteCallbackProxy : UOnlineBlueprintCallProxyBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>Called when there is a successful achievement write</summary>
 	public FAchievementWriteDelegate OnSuccess;
 	///<summary>Called when there is an unsuccessful achievement write</summary>

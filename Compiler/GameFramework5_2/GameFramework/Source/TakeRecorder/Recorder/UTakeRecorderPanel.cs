@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Take recorder UI panel interop object</summary>
 [CppInclude("Recorder/TakeRecorderPanel.h")]
 public partial class UTakeRecorderPanel : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Get the mode that the panel is currently in</summary>
 	public  ETakeRecorderPanelMode GetMode() { return default; }
 	///<summary>Setup this panel such that it is ready to start recording using the specified</summary>

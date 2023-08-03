@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Import data and options used when importing any mesh from FBX</summary>
 [CppInclude("Factories/FbxAnimSequenceImportData.h")]
 public partial class UFbxAnimSequenceImportData : UFbxAssetImportData {
+	public static UClass StaticClass() {return default;}
 	///<summary>If checked, meshes nested in bone hierarchies will be imported instead of being converted to bones.</summary>
 	public bool bImportMeshesInBoneHierarchy;
 	///<summary>Which animation range to import. The one defined at Exported, at Animated time or define a range manually</summary>

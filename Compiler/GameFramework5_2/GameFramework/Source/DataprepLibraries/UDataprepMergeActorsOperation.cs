@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Collect geometry from selected actors and merge them into single mesh.</summary>
 [CppInclude("DataprepEditingOperations.h")]
 public partial class UDataprepMergeActorsOperation : UDataprepEditingOperation {
+	public static UClass StaticClass() {return default;}
 	///<summary>Settings to use for the merge operation</summary>
 	public string NewActorLabel;
 	///<summary>Settings to use for the merge operation</summary>

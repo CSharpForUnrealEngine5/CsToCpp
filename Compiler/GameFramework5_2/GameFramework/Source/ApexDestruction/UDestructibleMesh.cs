@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Holds an APEX destructible asset as well as an associated USkeletalMesh.</summary>
 [CppInclude("DestructibleMesh.h")]
 public partial class UDestructibleMesh : USkeletalMesh {
+	public static UClass StaticClass() {return default;}
 	///<summary>Parameters controlling the destruction behavior.</summary>
 	public FDestructibleParameters DefaultDestructibleParameters;
 	///<summary>Fracture effects for each fracture level, unless overridden in the component.</summary>

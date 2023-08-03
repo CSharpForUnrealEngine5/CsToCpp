@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("EnvironmentQuery/EnvQueryTest.h")]
 public partial class UEnvQueryTest : UEnvQueryNode {
+	public static UClass StaticClass() {return default;}
 	///<summary>Number of test as defined in data asset</summary>
 	public int TestOrder;
 	///<summary>The purpose of this test.  Should it be used for filtering possible results, scoring them, or both?</summary>

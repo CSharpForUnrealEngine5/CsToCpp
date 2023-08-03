@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Import Options when importing an MVR File as DMX Library.</summary>
 [CppInclude("Factories/DMXLibraryFromMVRImportOptions.h")]
 public partial class UDMXLibraryFromMVRImportOptions : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>If true, show options for Reimport</summary>
 	public bool bIsReimport;
 	///<summary>If checked, creates a new DMX Library</summary>

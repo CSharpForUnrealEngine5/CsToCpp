@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("WaveFunctionCollapseSubsystem.h")]
 public partial class UWaveFunctionCollapseSubsystem : UEditorSubsystem {
+	public static UClass StaticClass() {return default;}
 	///<summary>WFCModel</summary>
 	public UWaveFunctionCollapseModel WFCModel;
 	///<summary>Resolution</summary>

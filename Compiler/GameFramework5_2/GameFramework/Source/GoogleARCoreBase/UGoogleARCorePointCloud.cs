@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A UObject that contains a set of observed 3D points and confidence values.</summary>
 [CppInclude("GoogleARCoreTypes.h")]
 public partial class UGoogleARCorePointCloud : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Checks if this point cloud has been updated in this frame.</summary>
 	public  bool IsUpdated() { return default; }
 	///<summary>Returns the number of point inside this point cloud.</summary>

@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("WaterBodyRiverActor.h")]
 public partial class AWaterBodyRiver : AWaterBody {
+	public static UClass StaticClass() {return default;}
 	///<summary>RiverGenerator_DEPRECATED</summary>
 	public UDEPRECATED_RiverGenerator RiverGenerator_DEPRECATED;
 	///<summary>Material used when a river is overlapping a lake.</summary>

@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Dynamic Mesh Sculpt Tool Class</summary>
 [CppInclude("DynamicMeshSculptTool.h")]
 public partial class UDynamicMeshSculptTool : UMeshSurfacePointTool {
+	public static UClass StaticClass() {return default;}
 	///<summary>Properties that control brush size/etc</summary>
 	public UDynamicMeshBrushProperties BrushProperties;
 	///<summary>Properties that control sculpting</summary>

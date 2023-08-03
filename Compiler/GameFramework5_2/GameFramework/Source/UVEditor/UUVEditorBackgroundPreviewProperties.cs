@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Visualization settings for the UUVEditorBackgroundPreview</summary>
 [CppInclude("UVEditorBackgroundPreview.h")]
 public partial class UUVEditorBackgroundPreviewProperties : UInteractiveToolPropertySet {
+	public static UClass StaticClass() {return default;}
 	///<summary>Should the background be shown (Alt+B)</summary>
 	public bool bVisible;
 	///<summary>Source of background visuals</summary>

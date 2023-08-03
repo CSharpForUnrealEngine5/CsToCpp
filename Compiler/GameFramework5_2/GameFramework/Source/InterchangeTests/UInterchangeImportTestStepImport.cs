@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("InterchangeImportTestStepImport.h")]
 public partial class UInterchangeImportTestStepImport : UInterchangeImportTestStepBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>The source file to import (path relative to the json script)</summary>
 	public FFilePath SourceFile;
 	///<summary>The pipeline stack to use when importing (an empty array will use the defaults)</summary>

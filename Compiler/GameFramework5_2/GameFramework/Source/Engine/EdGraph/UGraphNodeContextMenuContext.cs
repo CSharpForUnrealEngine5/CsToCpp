@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>This is the context for GetContextMenuActions and GetNodeContextMenuActions calls.</summary>
 [CppInclude("EdGraph/EdGraphNode.h")]
 public partial class UGraphNodeContextMenuContext : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>The blueprint associated with this context; may be NULL for non-Kismet related graphs.</summary>
 	public UBlueprint Blueprint;
 	///<summary>The graph associated with this context.</summary>

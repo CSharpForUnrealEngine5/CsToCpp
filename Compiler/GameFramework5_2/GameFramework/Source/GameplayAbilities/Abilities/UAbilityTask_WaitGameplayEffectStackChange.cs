@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Waits for the actor to activate another ability</summary>
 [CppInclude("Abilities/Tasks/AbilityTask_WaitGameplayEffectStackChange.h")]
 public partial class UAbilityTask_WaitGameplayEffectStackChange : UAbilityTask {
+	public static UClass StaticClass() {return default;}
 	///<summary>OnChange</summary>
 	public FWaitGameplayEffectStackChangeDelegate OnChange;
 	///<summary>InvalidHandle</summary>

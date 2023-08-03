@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>The Variable Node represents a mutable value / local state within the</summary>
 [CppInclude("RigVMModel/Nodes/RigVMVariableNode.h")]
 public partial class URigVMVariableNode : URigVMNode {
+	public static UClass StaticClass() {return default;}
 	///<summary>Returns the name of the variable</summary>
 	public  string GetVariableName() { return default; }
 	///<summary>Returns true if this node is a variable getter</summary>

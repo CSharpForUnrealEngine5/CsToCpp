@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A beacon host used for taking reservations for an existing game session</summary>
 [CppInclude("SpectatorBeaconState.h")]
 public partial class USpectatorBeaconState : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Session tied to the beacon</summary>
 	public string SessionName;
 	///<summary>Number of currently consumed reservations</summary>

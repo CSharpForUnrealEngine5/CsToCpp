@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A non instantiated UObject that acts as a handler for a GameplayCue. These are useful for one-off &quot;burst&quot; effects.</summary>
 [CppInclude("GameplayCueNotify_Static.h")]
 public partial class UGameplayCueNotify_Static : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Generic Event Graph event that will get called for every event type</summary>
 	public  void K2_HandleGameplayCue(AActor MyTarget,EGameplayCueEvent EventType,FGameplayCueParameters Parameters) {}
 	///<summary>Called when a GameplayCue is executed, this is used for instant effects or periodic ticks</summary>

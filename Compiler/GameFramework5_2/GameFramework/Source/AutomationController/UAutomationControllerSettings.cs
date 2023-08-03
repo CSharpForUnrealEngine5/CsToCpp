@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Implements the Editor&#39;s user settings.</summary>
 [CppInclude("AutomationControllerSettings.h")]
 public partial class UAutomationControllerSettings : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>List of user-defined test groups</summary>
 	public TArray<FAutomatedTestGroup> Groups;
 	///<summary>Whether to suppress log from test results (default=false)</summary>

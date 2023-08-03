@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Base class for MVVM viewmodel.</summary>
 [CppInclude("MVVMViewModelBase.h")]
 public partial class UMVVMViewModelBase : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>K2_AddFieldValueChangedDelegate</summary>
 	public  void K2_AddFieldValueChangedDelegate(FFieldNotificationId FieldId,FFieldValueChangedDynamicDelegate Delegate) {}
 	///<summary>K2_RemoveFieldValueChangedDelegate</summary>

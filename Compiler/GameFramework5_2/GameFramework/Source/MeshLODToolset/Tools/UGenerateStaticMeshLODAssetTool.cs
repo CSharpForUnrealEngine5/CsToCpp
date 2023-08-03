@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Simple tool to combine multiple meshes into a single mesh asset</summary>
 [CppInclude("Tools/GenerateStaticMeshLODAssetTool.h")]
 public partial class UGenerateStaticMeshLODAssetTool : UMultiSelectionMeshEditingTool {
+	public static UClass StaticClass() {return default;}
 	///<summary>OutputProperties</summary>
 	public UGenerateStaticMeshLODAssetToolOutputProperties OutputProperties;
 	///<summary>BasicProperties</summary>

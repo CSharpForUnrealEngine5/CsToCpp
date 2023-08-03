@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>UUserToolBoxBaseTab is the class that represent a configurable tab</summary>
 [CppInclude("UTBBaseTab.h")]
 public partial class UUserToolBoxBaseTab : UDataAsset {
+	public static UClass StaticClass() {return default;}
 	///<summary>The name of the toolbox</summary>
 	public string Name;
 	///<summary>The UI template to use to render this tab</summary>

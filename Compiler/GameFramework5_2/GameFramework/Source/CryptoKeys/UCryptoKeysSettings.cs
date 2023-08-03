@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Implements the settings for imported Paper2D assets, such as sprite sheet textures.</summary>
 [CppInclude("CryptoKeysSettings.h")]
 public partial class UCryptoKeysSettings : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>The default encryption key used to protect pak files</summary>
 	public string EncryptionKey;
 	///<summary>Secondary encryption keys that can be selected for use on different assets. Games are required to make these keys available to the pak platform file at runtime in order to access the data they protect.</summary>

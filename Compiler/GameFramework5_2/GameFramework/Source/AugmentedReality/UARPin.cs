@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("ARPin.h")]
 public partial class UARPin : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Maps from a Pin&#39;s Local Space to the Tracking Space.</summary>
 	public  FTransform GetLocalToTrackingTransform() { return default; }
 	///<summary>Convenience function. Same as LocalToTrackingTransform, but</summary>

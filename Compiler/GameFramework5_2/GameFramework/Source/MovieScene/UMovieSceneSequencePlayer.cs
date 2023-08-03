@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Abstract class that provides consistent player behaviour for various animation players</summary>
 [CppInclude("MovieSceneSequencePlayer.h")]
 public partial class UMovieSceneSequencePlayer : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Obeserver interface used for controlling whether the effects of this sequence can be seen even when it is playing back.</summary>
 	public object /*Observer*/ Observer;
 	///<summary>Start playback forwards from the current time cursor position, using the current play rate.</summary>

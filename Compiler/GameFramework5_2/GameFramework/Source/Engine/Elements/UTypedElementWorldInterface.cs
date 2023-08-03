@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Elements/Interfaces/TypedElementWorldInterface.h")]
 public partial class UTypedElementWorldInterface : UInterface {
+	public static UClass StaticClass() {return default;}
 	///<summary>Is this element considered a template within its world (eg, a CDO or archetype).</summary>
 	public  bool IsTemplateElement(FScriptTypedElementHandle InElementHandle) { return default; }
 	///<summary>Can this element actually be edited in the world?</summary>

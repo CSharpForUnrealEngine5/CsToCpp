@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("ImportTestFunctions/StaticMeshImportTestFunctions.h")]
 public partial class UStaticMeshImportTestFunctions : UImportTestFunctionsBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>Check whether the expected number of static meshes are imported</summary>
 	public static FInterchangeTestFunctionResult CheckImportedStaticMeshCount(TArray<UStaticMesh> Meshes,int ExpectedNumberOfImportedStaticMeshes) { return default; }
 	///<summary>Check whether the static mesh has the expected number of LODs</summary>

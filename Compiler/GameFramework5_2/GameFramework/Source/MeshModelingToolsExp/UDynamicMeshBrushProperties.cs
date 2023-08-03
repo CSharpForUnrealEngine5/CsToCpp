@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("DynamicMeshSculptTool.h")]
 public partial class UDynamicMeshBrushProperties : UInteractiveToolPropertySet {
+	public static UClass StaticClass() {return default;}
 	///<summary>BrushSize</summary>
 	public FBrushToolRadius BrushSize;
 	///<summary>Amount of falloff to apply (0.0 - 1.0)</summary>

@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Commandlets/WorldPartitionConvertCommandlet.h")]
 public partial class UWorldPartitionConvertCommandlet : UCommandlet {
+	public static UClass StaticClass() {return default;}
 	///<summary>EditorHashClass</summary>
 	public UClass EditorHashClass;
 	///<summary>RuntimeHashClass</summary>

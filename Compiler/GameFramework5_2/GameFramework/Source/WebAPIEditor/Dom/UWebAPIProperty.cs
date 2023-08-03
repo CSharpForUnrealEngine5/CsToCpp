@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Describes a single property within a model.</summary>
 [CppInclude("Dom/WebAPIModel.h")]
 public partial class UWebAPIProperty : UWebAPIModelBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>Name of the Property.</summary>
 	public FWebAPINameVariant Name;
 	///<summary>Type of the Property.</summary>

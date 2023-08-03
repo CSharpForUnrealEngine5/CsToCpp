@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Settings for Bounding Box adjustments in the Pattern Tool</summary>
 [CppInclude("PatternTool.h")]
 public partial class UPatternTool_BoundingBoxSettings : UInteractiveToolPropertySet {
+	public static UClass StaticClass() {return default;}
 	///<summary>If true, pattern element bounding boxes are not changed to account for StartScale or StartRotation</summary>
 	public bool bIgnoreTransforms;
 	///<summary>Value added to the all pattern elements&#39; bounding boxes for adjusting the behavior of packed spacing mode manually</summary>

@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("MeshSelectionTool.h")]
 public partial class UMeshSelectionToolProperties : UInteractiveToolPropertySet {
+	public static UClass StaticClass() {return default;}
 	///<summary>The Selection Mode defines the behavior of the selection brush</summary>
 	public EMeshSelectionToolPrimaryMode SelectionMode;
 	///<summary>Angle in Degrees used for Angle-based Selection Modes</summary>

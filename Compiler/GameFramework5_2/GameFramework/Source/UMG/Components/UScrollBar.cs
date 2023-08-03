@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Components/ScrollBar.h")]
 public partial class UScrollBar : UWidget {
+	public static UClass StaticClass() {return default;}
 	///<summary>Style of the scrollbar</summary>
 	public FScrollBarStyle WidgetStyle;
 	///<summary>bAlwaysShowScrollbar</summary>

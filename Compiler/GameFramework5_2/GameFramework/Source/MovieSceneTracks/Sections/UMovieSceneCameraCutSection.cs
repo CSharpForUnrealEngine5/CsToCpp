@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Movie CameraCuts are sections on the CameraCuts track, that show what the viewer &quot;sees&quot;</summary>
 [CppInclude("Sections/MovieSceneCameraCutSection.h")]
 public partial class UMovieSceneCameraCutSection : UMovieSceneSection {
+	public static UClass StaticClass() {return default;}
 	///<summary>Gets the camera binding for this CameraCut section</summary>
 	public  FMovieSceneObjectBindingID GetCameraBindingID() { return default; }
 	///<summary>Sets the camera binding for this CameraCut section</summary>

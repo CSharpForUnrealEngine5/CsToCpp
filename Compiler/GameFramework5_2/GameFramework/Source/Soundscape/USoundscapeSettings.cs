@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("SoundscapeSettings.h")]
 public partial class USoundscapeSettings : UDeveloperSettings {
+	public static UClass StaticClass() {return default;}
 	///<summary>Soundscape Palette Collection</summary>
 	public TSet<FSoftObjectPath> SoundscapePaletteCollection;
 	///<summary>bDebugDraw</summary>

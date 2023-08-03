@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Chaos config settings shared between all instances of a skeletal mesh.</summary>
 [CppInclude("ChaosCloth/ChaosClothConfig.h")]
 public partial class UChaosClothSharedSimConfig : UClothSharedConfigCommon {
+	public static UClass StaticClass() {return default;}
 	///<summary>The number of time step dependent solver iterations. This sets iterations at 60fps.</summary>
 	public int IterationCount;
 	///<summary>The maximum number of solver iterations.</summary>

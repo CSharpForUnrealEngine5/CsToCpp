@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>UInputTriggerCombo</summary>
 [CppInclude("InputTriggers.h")]
 public partial class UInputTriggerCombo : UInputTrigger {
+	public static UClass StaticClass() {return default;}
 	///<summary>Keeps track of what action we&#39;re currently at in the combo</summary>
 	public int CurrentComboStepIndex;
 	///<summary>Time elapsed between last combo InputAction trigger and current time</summary>

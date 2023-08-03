@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Preferences/CascadeOptions.h")]
 public partial class UCascadeOptions : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>bShowModuleDump</summary>
 	public bool bShowModuleDump;
 	///<summary>BackgroundColor</summary>

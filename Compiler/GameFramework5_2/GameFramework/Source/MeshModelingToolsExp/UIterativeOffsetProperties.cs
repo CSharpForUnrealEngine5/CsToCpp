@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Properties for Iterative Offsetting</summary>
 [CppInclude("OffsetMeshTool.h")]
 public partial class UIterativeOffsetProperties : UInteractiveToolPropertySet {
+	public static UClass StaticClass() {return default;}
 	///<summary>Number of Offsetting iterations</summary>
 	public int Steps;
 	///<summary>Control whether the boundary is allowed to move</summary>

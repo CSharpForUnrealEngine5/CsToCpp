@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Allows a user to enter multiple lines of text</summary>
 [CppInclude("Components/MultiLineEditableTextBox.h")]
 public partial class UMultiLineEditableTextBox : UTextLayoutWidget {
+	public static UClass StaticClass() {return default;}
 	///<summary>FOnMultiLineEditableTextBoxChangedEvent</summary>
 	public  void FOnMultiLineEditableTextBoxChangedEvent(string Text) {}
 	///<summary>FOnMultiLineEditableTextBoxCommittedEvent</summary>

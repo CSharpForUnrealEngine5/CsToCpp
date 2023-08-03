@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>FloatingPawnMovement is a movement component that provides simple movement for any Pawn class.</summary>
 [CppInclude("GameFramework/FloatingPawnMovement.h")]
 public partial class UFloatingPawnMovement : UPawnMovementComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>Maximum velocity magnitude allowed for the controlled Pawn.</summary>
 	public float MaxSpeed;
 	///<summary>Acceleration applied by input (rate of change of velocity)</summary>

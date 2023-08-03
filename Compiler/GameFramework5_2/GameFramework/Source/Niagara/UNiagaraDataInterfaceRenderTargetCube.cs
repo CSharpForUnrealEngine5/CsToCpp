@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("NiagaraDataInterfaceRenderTargetCube.h")]
 public partial class UNiagaraDataInterfaceRenderTargetCube : UNiagaraDataInterfaceRWBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>Size</summary>
 	public int Size;
 	///<summary>When enabled overrides the format of the render target, otherwise uses the project default setting.</summary>

@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>EnvQueryTest_GameplayTags attempts to cast items to IGameplayTagAssetInterface and test their tags with TagQueryToMatch.</summary>
 [CppInclude("EnvironmentQuery/Tests/EnvQueryTest_GameplayTags.h")]
 public partial class UEnvQueryTest_GameplayTags : UEnvQueryTest {
+	public static UClass StaticClass() {return default;}
 	///<summary>TagQueryToMatch</summary>
 	public FGameplayTagQuery TagQueryToMatch;
 	///<summary>This controls how to treat actors that do not implement IGameplayTagAssetInterface.</summary>

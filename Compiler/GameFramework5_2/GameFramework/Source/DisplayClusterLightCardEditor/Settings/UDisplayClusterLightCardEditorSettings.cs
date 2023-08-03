@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Editor preferences unique to this user</summary>
 [CppInclude("Settings/DisplayClusterLightCardEditorSettings.h")]
 public partial class UDisplayClusterLightCardEditorSettings : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Items recently placed by the user</summary>
 	public TArray<FDisplayClusterLightCardEditorRecentItem> RecentlyPlacedItems;
 	///<summary>Last used projection mode user has set</summary>

@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("ThumbnailRendering/ThumbnailManager.h")]
 public partial class UThumbnailManager : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>The render info to share across all object types when the object doesn&#39;t</summary>
 	public FThumbnailRenderingInfo NotSupported;
 	///<summary>All these meshes/materials/textures are preloaded via default properties</summary>

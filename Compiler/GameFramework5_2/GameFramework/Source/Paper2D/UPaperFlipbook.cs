@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Contains an animation sequence of sprite frames</summary>
 [CppInclude("PaperFlipbook.h")]
 public partial class UPaperFlipbook : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>The nominal frame rate to play this flipbook animation back at</summary>
 	public float FramesPerSecond;
 	///<summary>The set of key frames for this flipbook animation (each one has a duration and a sprite to display)</summary>

@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>UMeshSelectionSet is an implementation of USelectionSet that represents selections on indexed meshes.</summary>
 [CppInclude("SelectionSet.h")]
 public partial class UMeshSelectionSet : USelectionSet {
+	public static UClass StaticClass() {return default;}
 	///<summary>Vertices</summary>
 	public TArray<int> Vertices;
 	///<summary>Edges</summary>

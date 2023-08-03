@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Engine/TwitterIntegrationBase.h")]
 public partial class UTwitterIntegrationBase : UPlatformInterfaceBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>Perform any needed initialization</summary>
 	public  void Init() {}
 	///<summary>@return true if the user is allowed to use the Tweet UI</summary>

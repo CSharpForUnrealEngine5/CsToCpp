@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>An asset intended to be referenced by Slate widgets.</summary>
 [CppInclude("Hierarchies/ModifierHierarchyAsset.h")]
 public partial class UModifierHierarchyAsset : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Rules</summary>
 	public UModifierHierarchyRules Rules;
 	///<summary>Gets the root of the tree.</summary>

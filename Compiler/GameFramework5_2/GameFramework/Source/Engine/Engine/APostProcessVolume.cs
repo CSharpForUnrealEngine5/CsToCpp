@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>for FPostprocessSettings</summary>
 [CppInclude("Engine/PostProcessVolume.h")]
 public partial class APostProcessVolume : AVolume {
+	public static UClass StaticClass() {return default;}
 	///<summary>Post process settings to use for this volume.</summary>
 	public FPostProcessSettings Settings;
 	///<summary>Priority of this volume. In the case of overlapping volumes the one with the highest priority</summary>

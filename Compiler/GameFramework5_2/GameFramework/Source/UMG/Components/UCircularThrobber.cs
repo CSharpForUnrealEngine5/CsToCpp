@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A throbber widget that orients images in a spinning circle.</summary>
 [CppInclude("Components/CircularThrobber.h")]
 public partial class UCircularThrobber : UWidget {
+	public static UClass StaticClass() {return default;}
 	///<summary>How many pieces there are</summary>
 	public int NumberOfPieces;
 	///<summary>The amount of time for a full circle (in seconds)</summary>

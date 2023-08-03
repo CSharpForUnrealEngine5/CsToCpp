@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("LandscapeBlueprintBrushBase.h")]
 public partial class ALandscapeBlueprintBrushBase : AActor {
+	public static UClass StaticClass() {return default;}
 	///<summary>OwningLandscape</summary>
 	public ALandscape OwningLandscape;
 	///<summary>UpdateOnPropertyChange</summary>

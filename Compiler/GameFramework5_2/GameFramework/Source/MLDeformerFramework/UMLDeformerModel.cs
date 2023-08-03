@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>The ML Deformer runtime model base class.</summary>
 [CppInclude("MLDeformerModel.h")]
 public partial class UMLDeformerModel : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Cached number of skeletal mesh vertices.</summary>
 	public int NumBaseMeshVerts;
 	///<summary>Cached number of target mesh vertices.</summary>

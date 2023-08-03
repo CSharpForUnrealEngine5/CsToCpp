@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A Movie Pipeline Executor is responsible for executing an array of Movie Pipelines,</summary>
 [CppInclude("MoviePipelineExecutor.h")]
 public partial class UMoviePipelineExecutorBase : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Execute the provided Queue. You are responsible for deciding how to handle each job</summary>
 	public  void Execute(UMoviePipelineQueue InPipelineQueue) {}
 	///<summary>Report the current state of the executor. This is used to know if we can call Execute again.</summary>

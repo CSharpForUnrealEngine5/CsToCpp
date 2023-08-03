@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("TexAligner/TexAligner.h")]
 public partial class UTexAligner : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>The default alignment this aligner represents.</summary>
 	public ETexAlign DefTexAlign;
 	///<summary>TAxis</summary>

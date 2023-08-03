@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Serializes the multi-user session browser settings like the active filters.</summary>
 [CppInclude("Session/Browser/ConcertSessionBrowserSettings.h")]
 public partial class UConcertSessionBrowserSettings : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>LastModifiedTimeFormat</summary>
 	public ETimeFormat LastModifiedTimeFormat;
 	///<summary>bShowActiveSessions</summary>

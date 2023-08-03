@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Output/VCamOutputProviderBase.h")]
 public partial class UVCamOutputProviderBase : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>FActivationDelegate_Blueprint</summary>
 	public  void FActivationDelegate_Blueprint(bool bNewIsActive) {}
 	///<summary>Called when the activation state of this output provider changes.</summary>

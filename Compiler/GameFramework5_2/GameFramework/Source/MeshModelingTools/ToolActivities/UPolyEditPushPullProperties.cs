@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("ToolActivities/PolyEditExtrudeActivity.h")]
 public partial class UPolyEditPushPullProperties : UInteractiveToolPropertySet {
+	public static UClass StaticClass() {return default;}
 	///<summary>How the offset distance is set.</summary>
 	public EPolyEditExtrudeDistanceMode DistanceMode;
 	///<summary>Offset distance.</summary>

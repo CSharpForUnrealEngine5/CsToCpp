@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("GeographicCoordinates.h")]
 public partial class UGeographicCoordinatesFunctionLibrary : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>Converts a GeographicCoordinates value to localized formatted text, in the form &#39;X= Y= Z=&#39;</summary>
 	public static string ToFullText(FGeographicCoordinates GeographicCoordinates,int IntegralDigitsLatLon/*=8*/,int IntegralDigitsAlti/*=2*/,bool bAsDMS/*=false*/) { return default; }
 	///<summary>Converts a GeographicCoordinates value to formatted text, in the form &#39;(X, Y, Z)&#39;</summary>

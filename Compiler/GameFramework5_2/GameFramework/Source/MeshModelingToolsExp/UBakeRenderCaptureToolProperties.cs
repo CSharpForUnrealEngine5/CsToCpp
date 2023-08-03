@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("BakeRenderCaptureTool.h")]
 public partial class UBakeRenderCaptureToolProperties : UInteractiveToolPropertySet {
+	public static UClass StaticClass() {return default;}
 	///<summary>The map type to preview</summary>
 	public string MapPreview;
 	///<summary>GetMapPreviewNamesFunc</summary>

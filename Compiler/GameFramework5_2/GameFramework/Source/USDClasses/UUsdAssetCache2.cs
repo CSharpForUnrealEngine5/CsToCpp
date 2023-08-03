@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Owns the assets generated and reused by USD Stages, allowing thread-safe retrieval/storage.</summary>
 [CppInclude("USDAssetCache2.h")]
 public partial class UUsdAssetCache2 : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>The asset cache will always retain all currently used assets.</summary>
 	public double UnreferencedAssetStorageSizeMB;
 	///<summary>This limit specifies how much size is allocated to storing all persistent assets (i.e. assets that will be</summary>

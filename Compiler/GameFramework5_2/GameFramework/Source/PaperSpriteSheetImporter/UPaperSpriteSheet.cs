@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("PaperSpriteSheet.h")]
 public partial class UPaperSpriteSheet : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>The names of sprites during import</summary>
 	public TArray<string> SpriteNames;
 	///<summary>Sprites</summary>

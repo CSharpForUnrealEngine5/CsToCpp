@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>This is a dummy executor that is designed to host a executor implemented in</summary>
 [CppInclude("MoviePipelinePythonHostExecutor.h")]
 public partial class UMoviePipelinePythonHostExecutor : UMoviePipelineExecutorBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>Python/Blueprint API</summary>
 	public  void ExecuteDelayed(UMoviePipelineQueue InPipelineQueue) {}
 	///<summary>OnMapLoad</summary>

@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>SensingComponent encapsulates sensory (ie sight and hearing) settings and functionality for an Actor,</summary>
 [CppInclude("Perception/PawnSensingComponent.h")]
 public partial class UPawnSensingComponent : UActorComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>FSeePawnDelegate</summary>
 	public  void FSeePawnDelegate(APawn Pawn) {}
 	///<summary>FHearNoiseDelegate</summary>

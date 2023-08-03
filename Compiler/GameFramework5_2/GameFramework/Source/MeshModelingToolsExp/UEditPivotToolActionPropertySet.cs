@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("EditPivotTool.h")]
 public partial class UEditPivotToolActionPropertySet : UInteractiveToolPropertySet {
+	public static UClass StaticClass() {return default;}
 	///<summary>Use the World-Space Bounding Box of the target object, instead of the Object-space Bounding Box</summary>
 	public bool bUseWorldBox;
 	///<summary>Center</summary>

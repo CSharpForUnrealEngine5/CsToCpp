@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("XRCreativePointerComponent.h")]
 public partial class UXRCreativePointerComponent : USceneComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>If bScaledByImpact is false, this returns the raw input to the smoothing filter, `TraceMaxLength` units away the +X direction.</summary>
 	public  FVector GetRawTraceEnd(bool bScaledByImpact/*=true*/) { return default; }
 	///<summary>If bScaledByImpact is false, this is the smoothed filter output, roughly `TraceMaxLength` units away, roughly in the +X direction.</summary>

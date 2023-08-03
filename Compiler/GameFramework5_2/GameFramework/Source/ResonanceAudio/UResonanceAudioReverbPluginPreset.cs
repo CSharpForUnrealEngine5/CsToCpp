@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("ResonanceAudioReverb.h")]
 public partial class UResonanceAudioReverbPluginPreset : USoundEffectSubmixPreset {
+	public static UClass StaticClass() {return default;}
 	///<summary>Settings</summary>
 	public FResonanceAudioReverbPluginSettings Settings;
 	///<summary>Enables/disables Resonance Audio room effects</summary>

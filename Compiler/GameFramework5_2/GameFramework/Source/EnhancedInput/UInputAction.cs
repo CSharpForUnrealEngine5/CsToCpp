@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Input action definition. These are instanced per player (via FInputActionInstance)</summary>
 [CppInclude("InputAction.h")]
 public partial class UInputAction : UDataAsset {
+	public static UClass StaticClass() {return default;}
 	///<summary>A localized descriptor of this input action</summary>
 	public string ActionDescription;
 	///<summary>Should this action swallow any inputs bound to it or allow them to pass through to affect lower priority bound actions?</summary>

@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("TimeManagementBlueprintLibrary.h")]
 public partial class UTimeManagementBlueprintLibrary : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>Converts an FrameRate to a float ie: 1/30 returns 0.0333333</summary>
 	public static float Conv_FrameRateToSeconds(FFrameRate InFrameRate) { return default; }
 	///<summary>Converts an QualifiedFrameTime to seconds.</summary>

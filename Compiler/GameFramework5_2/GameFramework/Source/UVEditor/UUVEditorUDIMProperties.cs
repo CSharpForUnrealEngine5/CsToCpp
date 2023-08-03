@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Settings for UDIMs in the UVEditor</summary>
 [CppInclude("UVEditorMode.h")]
 public partial class UUVEditorUDIMProperties : UInteractiveToolPropertySet {
+	public static UClass StaticClass() {return default;}
 	///<summary>UDIMSourceAsset</summary>
 	public string UDIMSourceAsset;
 	///<summary>GetAssetNames</summary>

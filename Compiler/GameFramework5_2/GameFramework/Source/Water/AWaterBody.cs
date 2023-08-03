@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>@todo_water: Remove Blueprintable</summary>
 [CppInclude("WaterBodyActor.h")]
 public partial class AWaterBody : AActor {
+	public static UClass StaticClass() {return default;}
 	///<summary>Returns the type of body</summary>
 	public  EWaterBodyType GetWaterBodyType() { return default; }
 	///<summary>Returns water spline component</summary>

@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Universal take recorder settings that apply to a whole take</summary>
 [CppInclude("MovieSceneTakeSettings.h")]
 public partial class UMovieSceneTakeSettings : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Hours Name</summary>
 	public string HoursName;
 	///<summary>Minutes Name</summary>

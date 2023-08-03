@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Tests/RemoteControlDeltaAPITestData.h")]
 public partial class URemoteControlDeltaAPITestObject : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>GetInt32WithSetterValue</summary>
 	public  int GetInt32WithSetterValue() { return default; }
 	///<summary>SetInt32WithSetterValue</summary>

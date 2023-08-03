@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Base class for dynamic virtual properties</summary>
 [CppInclude("RCVirtualProperty.h")]
 public partial class URCVirtualPropertyBase : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Get Bool value from Virtual Property</summary>
 	public  bool GetValueBool(bool OutBoolValue) { return default; }
 	///<summary>Get Int8 value from Virtual Property</summary>

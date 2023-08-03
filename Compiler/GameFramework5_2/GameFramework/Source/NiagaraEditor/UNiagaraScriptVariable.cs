@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>* Used to store variable data and metadata per graph.</summary>
 [CppInclude("NiagaraScriptVariable.h")]
 public partial class UNiagaraScriptVariable : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>The default mode. Can be Value, Binding or Custom.</summary>
 	public ENiagaraDefaultMode DefaultMode;
 	///<summary>The default binding. Only used if DefaultMode == ENiagaraDefaultMode::Binding.</summary>

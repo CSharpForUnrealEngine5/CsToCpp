@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("DatasmithContentBlueprintLibrary.h")]
 public partial class UDatasmithContentBlueprintLibrary : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>Get the Datasmith User Data of a given object</summary>
 	public static UDatasmithAssetUserData GetDatasmithUserData(UObject Object) { return default; }
 	///<summary>Get the value of the given key for the Datasmith User Data of the given object.</summary>

@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("AbilityTasks/AbilityTask_PerformTargeting.h")]
 public partial class UAbilityTask_PerformTargeting : UAbilityTask {
+	public static UClass StaticClass() {return default;}
 	///<summary>Called when the targeting request has been completed and results are ready</summary>
 	public FTargetReadyDelegate OnTargetReady;
 	///<summary>Performs a targeting request based on a Targeting Preset from a GameplayAbility</summary>

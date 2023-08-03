@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A particular job within the Queue</summary>
 [CppInclude("MoviePipelineQueue.h")]
 public partial class UMoviePipelineExecutorJob : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Set the status of this job to the given value. This will be shown on the UI if progress</summary>
 	public  void SetStatusMessage(string InStatus) {}
 	///<summary>Get the current status message for this job. May be an empty string.</summary>

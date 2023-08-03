@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Data Interface allowing sampling of a texture</summary>
 [CppInclude("DataInterface/NiagaraDataInterfaceDynamicMesh.h")]
 public partial class UNiagaraDataInterfaceDynamicMesh : UNiagaraDataInterface {
+	public static UClass StaticClass() {return default;}
 	///<summary>Sections to render, each section will generally result in a draw call.</summary>
 	public TArray<FNiagaraDynamicMeshSection> Sections;
 	///<summary>List of materials to use</summary>

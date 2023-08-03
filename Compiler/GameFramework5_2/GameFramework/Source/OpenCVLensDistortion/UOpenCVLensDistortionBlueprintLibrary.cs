@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("OpenCVLensDistortionBlueprintLibrary.h")]
 public partial class UOpenCVLensDistortionBlueprintLibrary : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>Draws UV displacement map within the output render target.</summary>
 	public static void DrawDisplacementMapToRenderTarget(UObject WorldContextObject,UTextureRenderTarget2D OutputRenderTarget,UTexture2D PreComputedUndistortDisplacementMap) {}
 	///<summary>Creates a texture containing a DisplacementMap in the Red and the Green channel for undistorting a camera image.</summary>

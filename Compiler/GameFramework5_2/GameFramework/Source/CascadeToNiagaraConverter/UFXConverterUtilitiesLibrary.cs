@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A C++ and Blueprint accessible library for converting fx type assets (Cascade and Niagara)</summary>
 [CppInclude("NiagaraStackGraphUtilitiesAdapterLibrary.h")]
 public partial class UFXConverterUtilitiesLibrary : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>Generic Utilities</summary>
 	public static string GetLongPackagePath(string InLongPackageName) { return default; }
 	///<summary>Cascade Emitter and ParticleLodLevel Getters</summary>

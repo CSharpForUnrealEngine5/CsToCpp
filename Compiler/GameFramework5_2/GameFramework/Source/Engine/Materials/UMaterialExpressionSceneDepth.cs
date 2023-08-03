@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Materials/MaterialExpressionSceneDepth.h")]
 public partial class UMaterialExpressionSceneDepth : UMaterialExpression {
+	public static UClass StaticClass() {return default;}
 	///<summary>Coordinates - UV coordinates to apply to the scene depth lookup.</summary>
 	public EMaterialSceneAttributeInputMode InputMode;
 	///<summary>Defaults to &#39;ConstInput&#39; if not specified</summary>

@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("DeformMeshPolygonsTool.h")]
 public partial class UDeformMeshPolygonsTransformProperties : UInteractiveToolPropertySet {
+	public static UClass StaticClass() {return default;}
 	///<summary>Type of deformation used.</summary>
 	public EGroupTopologyDeformationStrategy DeformationStrategy;
 	///<summary>Type of transformation used.</summary>

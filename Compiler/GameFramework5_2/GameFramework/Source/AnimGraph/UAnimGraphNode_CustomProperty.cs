@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("AnimGraphNode_CustomProperty.h")]
 public partial class UAnimGraphNode_CustomProperty : UAnimGraphNode_Base {
+	public static UClass StaticClass() {return default;}
 	///<summary>List of property names we know to exist on the target class, so we can detect when</summary>
 	public TArray<string> KnownExposableProperties_DEPRECATED;
 	///<summary>Names of properties the user has chosen to expose. Deprecated, use CustomPinProperties instead.</summary>

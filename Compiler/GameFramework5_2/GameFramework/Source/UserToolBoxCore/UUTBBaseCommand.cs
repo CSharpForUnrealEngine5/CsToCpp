@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>UUTBBaseCommand is the base class for any command of the usertoolbox framework.</summary>
 [CppInclude("UTBBaseCommand.h")]
 public partial class UUTBBaseCommand : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>The name of the command</summary>
 	public string Name;
 	///<summary>The icon path for the command</summary>

@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("SequencerKeyActor.h")]
 public partial class ASequencerKeyActor : AActor {
+	public static UClass StaticClass() {return default;}
 	///<summary>The key mesh</summary>
 	public UStaticMeshComponent KeyMeshComponent;
 	///<summary>The actor whose transform was used to build this key</summary>

@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Actor holding smart object persistent data</summary>
 [CppInclude("SmartObjectPersistentCollection.h")]
 public partial class ASmartObjectPersistentCollection : AActor {
+	public static UClass StaticClass() {return default;}
 	///<summary>Removes all entries from the collection.</summary>
 	public  void ClearCollection() {}
 	///<summary>Rebuild entries in the collection using all the SmartObjectComponents currently loaded in the level.</summary>

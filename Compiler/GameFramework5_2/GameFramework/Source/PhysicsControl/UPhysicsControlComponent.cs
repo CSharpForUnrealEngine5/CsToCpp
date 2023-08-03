@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>This is the main Physics Control Component class which manages Controls and Body Modifiers associated</summary>
 [CppInclude("PhysicsControlComponent.h")]
 public partial class UPhysicsControlComponent : USceneComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>Creates a new control for mesh components</summary>
 	public  string CreateControl(UMeshComponent ParentMeshComponent,string ParentBoneName,UMeshComponent ChildMeshComponent,string ChildBoneName,FPhysicsControlData ControlData,FPhysicsControlTarget ControlTarget,FPhysicsControlSettings ControlSettings,string Set,bool bEnabled/*=true*/) { return default; }
 	///<summary>Creates a new control for mesh components</summary>

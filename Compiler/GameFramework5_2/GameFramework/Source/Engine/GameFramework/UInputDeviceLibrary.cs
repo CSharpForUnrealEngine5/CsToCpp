@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A static BP library that exposes Input Device data to blueprints</summary>
 [CppInclude("GameFramework/InputDeviceLibrary.h")]
 public partial class UInputDeviceLibrary : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>Get the player controller who has the given Platform User ID.</summary>
 	public static APlayerController GetPlayerControllerFromPlatformUser(FPlatformUserId UserId) { return default; }
 	///<summary>Get the player controller who owns the given input device id</summary>

@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>The details view allows you to display the value of an object properties.</summary>
 [CppInclude("Components/DetailsView.h")]
 public partial class UDetailsView : UPropertyViewBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>True if we allow filtering through search and the filter dropdown menu.</summary>
 	public bool bAllowFiltering;
 	///<summary>If false, the current properties editor will never display the favorite system</summary>

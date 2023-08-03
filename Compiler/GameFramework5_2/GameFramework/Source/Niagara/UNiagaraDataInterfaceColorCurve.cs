@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Data Interface allowing sampling of color curves.</summary>
 [CppInclude("NiagaraDataInterfaceColorCurve.h")]
 public partial class UNiagaraDataInterfaceColorCurve : UNiagaraDataInterfaceCurveBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>RedCurve</summary>
 	public FRichCurve RedCurve;
 	///<summary>GreenCurve</summary>

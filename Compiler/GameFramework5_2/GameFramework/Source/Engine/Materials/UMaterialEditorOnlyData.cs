@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Materials/Material.h")]
 public partial class UMaterialEditorOnlyData : UMaterialInterfaceEditorOnlyData {
+	public static UClass StaticClass() {return default;}
 	///<summary>Reflection</summary>
 	public FColorMaterialInput BaseColor;
 	///<summary>Metallic</summary>

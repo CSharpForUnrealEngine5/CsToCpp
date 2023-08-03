@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("FractureToolRadial.h")]
 public partial class UFractureRadialSettings : UFractureToolSettings {
+	public static UClass StaticClass() {return default;}
 	///<summary>Center of generated pattern. Only used when &quot;Use Gizmo&quot; is disabled</summary>
 	public FVector Center;
 	///<summary>Normal to plane in which sites are generated. Only used when &quot;Use Gizmo&quot; is disabled</summary>

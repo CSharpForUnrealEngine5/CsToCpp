@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("AudioMotorModelComponent.h")]
 public partial class UAudioMotorModelComponent : UActorComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>SimComponents</summary>
 	public TArray<FMotorSimEntry> SimComponents;
 	///<summary>AudioComponents</summary>

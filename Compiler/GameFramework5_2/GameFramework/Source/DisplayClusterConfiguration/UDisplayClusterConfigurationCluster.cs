@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("DisplayClusterConfigurationTypes.h")]
 public partial class UDisplayClusterConfigurationCluster : UDisplayClusterConfigurationData_Base {
+	public static UClass StaticClass() {return default;}
 	///<summary>PrimaryNode</summary>
 	public FDisplayClusterConfigurationPrimaryNode PrimaryNode;
 	///<summary>Sync</summary>

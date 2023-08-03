@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("BaseGizmos/GizmoInterfaces.h")]
 public partial class UGizmoFloatParameterSource : UInterface {
+	public static UClass StaticClass() {return default;}
 	///<summary>@return value of parameter</summary>
 	public  float GetParameter() { return default; }
 	///<summary>notify ParameterSource that a parameter modification is about to begin</summary>

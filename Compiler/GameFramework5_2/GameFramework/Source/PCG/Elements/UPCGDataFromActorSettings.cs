@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Builds a collection of PCG-compatible data from the selected actors.</summary>
 [CppInclude("Elements/PCGDataFromActor.h")]
 public partial class UPCGDataFromActorSettings : UPCGSettings {
+	public static UClass StaticClass() {return default;}
 	///<summary>ActorSelector</summary>
 	public FPCGActorSelectorSettings ActorSelector;
 	///<summary>Mode</summary>

@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Interchange UInterchangeBaseNode graph is a format used to feed asset/scene import/reimport/export factories/writer.</summary>
 [CppInclude("Nodes/InterchangeBaseNodeContainer.h")]
 public partial class UInterchangeBaseNodeContainer : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Add a node in the container, the node will be add into a TMap.</summary>
 	public  string AddNode(UInterchangeBaseNode Node) { return default; }
 	///<summary>Return true if the node unique ID exist in the container</summary>

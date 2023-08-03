@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("BaseGizmos/GizmoInterfaces.h")]
 public partial class UGizmoClickMultiTarget : UInterface {
+	public static UClass StaticClass() {return default;}
 	///<summary>* Updates the hover state of the specified gizmo part, indicating whether the input device is currently hovering</summary>
 	public  void UpdateHoverState(bool bHovering,uint InPartIdentifier) {}
 	///<summary>* Updates the interacting state of the specified gizmo part, indicating when interaction with the</summary>

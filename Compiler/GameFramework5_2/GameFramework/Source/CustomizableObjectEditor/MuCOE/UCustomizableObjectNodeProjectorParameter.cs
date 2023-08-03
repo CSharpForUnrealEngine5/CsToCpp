@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("MuCOE/Nodes/CustomizableObjectNodeProjectorParameter.h")]
 public partial class UCustomizableObjectNodeProjectorParameter : UCustomizableObjectNode {
+	public static UClass StaticClass() {return default;}
 	///<summary>DefaultValue</summary>
 	public FCustomizableObjectProjector DefaultValue;
 	///<summary>ParameterName</summary>

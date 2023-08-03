@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Manages actor replication for a specific connection</summary>
 [CppInclude("ReplicationGraph.h")]
 public partial class UNetReplicationGraphConnection : UReplicationConnectionDriver {
+	public static UClass StaticClass() {return default;}
 	///<summary>NetConnection</summary>
 	public UNetConnection NetConnection;
 	///<summary>DebugActor</summary>

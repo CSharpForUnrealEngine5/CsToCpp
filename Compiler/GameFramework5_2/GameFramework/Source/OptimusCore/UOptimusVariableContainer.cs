@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A container class that owns variable descriptors. This is used to ensure we don&#39;t end up</summary>
 [CppInclude("OptimusDeformer.h")]
 public partial class UOptimusVariableContainer : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Descriptions</summary>
 	public TArray<UOptimusVariableDescription> Descriptions;
 }

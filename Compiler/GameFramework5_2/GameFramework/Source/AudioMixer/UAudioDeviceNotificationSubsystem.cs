@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>UAudioDeviceNotificationSubsystem</summary>
 [CppInclude("AudioDeviceNotificationSubsystem.h")]
 public partial class UAudioDeviceNotificationSubsystem : UEngineSubsystem {
+	public static UClass StaticClass() {return default;}
 	///<summary>Multicast delegate triggered when default capture device changes</summary>
 	public FOnAudioDefaultDeviceChanged DefaultCaptureDeviceChanged;
 	///<summary>Multicast delegate triggered when default render device changes</summary>

@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Object used to construct the New IK Target Widget</summary>
 [CppInclude("ContextualAnimEditorTypes.h")]
 public partial class UContextualAnimNewIKTargetParams : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>SourceRole</summary>
 	public string SourceRole;
 	///<summary>SourceBone</summary>

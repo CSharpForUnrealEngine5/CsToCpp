@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("SteamVRTrackingRefComponent.h")]
 public partial class UDEPRECATED_USteamVRTrackingReferences : UActorComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>OnTrackedDeviceActivated</summary>
 	public FComponentTrackingActivatedSignature OnTrackedDeviceActivated;
 	///<summary>OnTrackedDeviceDeactivated</summary>

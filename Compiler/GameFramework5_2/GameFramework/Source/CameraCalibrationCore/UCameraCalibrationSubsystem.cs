@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Camera Calibration subsystem</summary>
 [CppInclude("CameraCalibrationSubsystem.h")]
 public partial class UCameraCalibrationSubsystem : UEngineSubsystem {
+	public static UClass StaticClass() {return default;}
 	///<summary>Get the default lens file.</summary>
 	public  ULensFile GetDefaultLensFile() { return default; }
 	///<summary>Get the default lens file.</summary>

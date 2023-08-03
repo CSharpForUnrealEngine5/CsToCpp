@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("SplineGeneratorPanel.h")]
 public partial class UEllipseSplineGenerator : USplineGeneratorBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>NumberOfPoints</summary>
 	public int NumberOfPoints;
 	///<summary>Length</summary>

@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Implements the Editor&#39;s user settings.</summary>
 [CppInclude("TextureEditorSettings.h")]
 public partial class UTextureEditorSettings : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>The type of background to draw in the texture editor view port.</summary>
 	public ETextureEditorBackgrounds Background;
 	///<summary>The texture sampling mode used to render textures in the texture editor view port.</summary>

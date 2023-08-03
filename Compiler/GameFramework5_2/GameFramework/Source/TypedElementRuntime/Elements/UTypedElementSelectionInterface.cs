@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Elements/Interfaces/TypedElementSelectionInterface.h")]
 public partial class UTypedElementSelectionInterface : UInterface {
+	public static UClass StaticClass() {return default;}
 	///<summary>Test to see whether the given element is currently considered selected.</summary>
 	public  bool IsElementSelected(FScriptTypedElementHandle InElementHandle,FScriptTypedElementListProxy InSelectionSet,FTypedElementIsSelectedOptions InSelectionOptions) { return default; }
 	///<summary>Test to see whether the given element can be selected.</summary>

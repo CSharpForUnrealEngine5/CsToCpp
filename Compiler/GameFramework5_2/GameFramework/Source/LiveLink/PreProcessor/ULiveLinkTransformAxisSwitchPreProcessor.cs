@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Allows to switch any axis of an incoming transform with another axis.</summary>
 [CppInclude("PreProcessor/LiveLinkAxisSwitchPreProcessor.h")]
 public partial class ULiveLinkTransformAxisSwitchPreProcessor : ULiveLinkFramePreProcessor {
+	public static UClass StaticClass() {return default;}
 	///<summary>OrientationAxisX_DEPRECATED</summary>
 	public ELiveLinkAxis OrientationAxisX_DEPRECATED;
 	///<summary>OrientationAxisY_DEPRECATED</summary>

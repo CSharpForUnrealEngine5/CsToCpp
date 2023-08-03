@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("MoviePipelineConfigBase.h")]
 public partial class UMoviePipelineConfigBase : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Removes the specific instance from our Setting list.</summary>
 	public  void RemoveSetting(UMoviePipelineSetting InSetting) {}
 	///<summary>Copy this configuration from another existing configuration.</summary>

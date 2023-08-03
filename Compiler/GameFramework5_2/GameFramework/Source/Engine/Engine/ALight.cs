@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Engine/Light.h")]
 public partial class ALight : AActor {
+	public static UClass StaticClass() {return default;}
 	///<summary>@todo document</summary>
 	public ULightComponent LightComponent;
 	///<summary>replicated copy of LightComponent&#39;s bEnabled property</summary>

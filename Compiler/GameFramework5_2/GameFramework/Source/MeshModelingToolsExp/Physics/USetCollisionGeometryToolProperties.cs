@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Physics/SetCollisionGeometryTool.h")]
 public partial class USetCollisionGeometryToolProperties : UInteractiveToolPropertySet {
+	public static UClass StaticClass() {return default;}
 	///<summary>GeometryType</summary>
 	public ECollisionGeometryType GeometryType;
 	///<summary>InputMode</summary>

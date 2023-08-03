@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("ArchVisCharacter.h")]
 public partial class AArchVisCharacter : ACharacter {
+	public static UClass StaticClass() {return default;}
 	///<summary>Axis name for direct look up/down inputs (e.g. mouse). This should match an Axis Binding in your input settings</summary>
 	public string LookUpAxisName;
 	///<summary>Axis name for rate-based look up/down inputs (e.g. joystick). This should match an Axis Binding in your input settings</summary>

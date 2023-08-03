@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Dom/WebAPICompositeModel.h")]
 public partial class UWebAPICompositeModel : UWebAPIModelBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>Name of the composition.</summary>
 	public FWebAPITypeNameVariant Name;
 	///<summary>Type of composition.</summary>

@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>ULevelSequenceEditorSubsystem</summary>
 [CppInclude("LevelSequenceEditorSubsystem.h")]
 public partial class ULevelSequenceEditorSubsystem : UEditorSubsystem {
+	public static UClass StaticClass() {return default;}
 	///<summary>Add existing actors to Sequencer. Tracks will be automatically added based on default track settings.</summary>
 	public  TArray<FMovieSceneBindingProxy> AddActors(TArray<AActor> Actors) { return default; }
 	///<summary>Create a cine camera actor and add it to Sequencer</summary>

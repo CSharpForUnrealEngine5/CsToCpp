@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Instances performing worst in some aspect</summary>
 [CppInclude("MuCOE/SCustomizableObjectEditorPerformanceReport.h")]
 public partial class UWorstCasePerformanceReportInstance : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>&quot;PerformanceReport|BiggestTextureSize&quot;</summary>
 	public UCustomizableObjectInstance WorstCaseInstance;
 	///<summary>&quot;PerformanceReport|BiggestTextureSize&quot;</summary>

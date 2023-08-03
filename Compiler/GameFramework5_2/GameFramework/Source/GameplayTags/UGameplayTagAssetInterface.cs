@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("GameplayTagAssetInterface.h")]
 public partial class UGameplayTagAssetInterface : UInterface {
+	public static UClass StaticClass() {return default;}
 	///<summary>Get any owned gameplay tags on the asset</summary>
 	public  void GetOwnedGameplayTags(FGameplayTagContainer TagContainer) {}
 	///<summary>Check if the asset has a gameplay tag that matches against the specified tag (expands to include parents of asset tags)</summary>

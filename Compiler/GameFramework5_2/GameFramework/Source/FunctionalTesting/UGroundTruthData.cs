@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("GroundTruthData.h")]
 public partial class UGroundTruthData : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>SaveObject</summary>
 	public  void SaveObject(UObject GroundTruth) {}
 	///<summary>LoadObject</summary>

@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Information to create an NxDestructibleAsset</summary>
 [CppInclude("DestructibleFractureSettings.h")]
 public partial class UDestructibleFractureSettings : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>The number of voronoi cell sites.</summary>
 	public int CellSiteCount;
 	///<summary>Stored interior material data.  Just need one as we only support Voronoi splitting.</summary>

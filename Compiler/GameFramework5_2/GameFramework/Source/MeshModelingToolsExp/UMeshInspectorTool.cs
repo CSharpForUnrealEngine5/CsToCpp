@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Mesh Inspector Tool for visualizing mesh information</summary>
 [CppInclude("MeshInspectorTool.h")]
 public partial class UMeshInspectorTool : USingleSelectionMeshEditingTool {
+	public static UClass StaticClass() {return default;}
 	///<summary>Settings</summary>
 	public UMeshInspectorProperties Settings;
 	///<summary>PolygroupLayerProperties</summary>

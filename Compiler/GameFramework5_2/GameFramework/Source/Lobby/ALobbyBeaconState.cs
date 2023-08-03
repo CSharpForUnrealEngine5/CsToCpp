@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Shared state of the game from the lobby perspective</summary>
 [CppInclude("LobbyBeaconState.h")]
 public partial class ALobbyBeaconState : AInfo {
+	public static UClass StaticClass() {return default;}
 	///<summary>Total number of players allowed in the lobby</summary>
 	public int MaxPlayers;
 	///<summary>Class to use for lobby beacon player states</summary>

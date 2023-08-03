@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Runtime script for a Niagara system</summary>
 [CppInclude("NiagaraScript.h")]
 public partial class UNiagaraScript : UNiagaraScriptBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>A set of rules to apply when this script is used in the stack. To create your own rules, write a custom class that extends UNiagaraValidationRule.</summary>
 	public TArray<UNiagaraValidationRule> ValidationRules;
 	///<summary>how this script is to be used. cannot be private due to use of GET_MEMBER_NAME_CHECKED</summary>

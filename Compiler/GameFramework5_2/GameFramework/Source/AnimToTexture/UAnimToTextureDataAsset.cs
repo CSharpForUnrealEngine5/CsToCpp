@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("AnimToTextureDataAsset.h")]
 public partial class UAnimToTextureDataAsset : UPrimaryDataAsset {
+	public static UClass StaticClass() {return default;}
 	///<summary>SkeletalMesh to bake animations from.</summary>
 	public TSoftObjectPtr<USkeletalMesh> SkeletalMesh;
 	///<summary>SkeletalMesh LOD to bake.</summary>

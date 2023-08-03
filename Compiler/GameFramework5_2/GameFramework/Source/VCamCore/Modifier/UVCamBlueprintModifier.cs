@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Modifier/VCamModifier.h")]
 public partial class UVCamBlueprintModifier : UVCamModifier {
+	public static UClass StaticClass() {return default;}
 	///<summary>OnInitialize</summary>
 	public  void OnInitialize(UVCamModifierContext Context) {}
 	///<summary>OnDeinitialize</summary>

@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A Spline Mesh Component is a derivation of a Static Mesh Component which can be deformed using a spline. Only a start and end position (and tangent) can be specified.</summary>
 [CppInclude("Components/SplineMeshComponent.h")]
 public partial class USplineMeshComponent : UStaticMeshComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>Spline that is used to deform mesh</summary>
 	public FSplineMeshParams SplineParams;
 	///<summary>Axis (in component space) that is used to determine X axis for co-ordinates along spline</summary>

@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("MuCOE/Nodes/CustomizableObjectNodeExtendMaterial.h")]
 public partial class UCustomizableObjectNodeExtendMaterial : UCustomizableObjectNodeMaterialBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>Tags</summary>
 	public TArray<string> Tags;
 	///<summary>ParentMaterialObject</summary>

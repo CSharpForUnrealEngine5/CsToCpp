@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("NavigationSystem.h")]
 public partial class UNavigationSystemV1 : UNavigationSystemBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>MainNavData</summary>
 	public ANavigationData MainNavData;
 	///<summary>special navigation data for managing direct paths, not part of NavDataSet!</summary>

@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>The rich text block</summary>
 [CppInclude("Components/RichTextBlock.h")]
 public partial class URichTextBlock : UTextLayoutWidget {
+	public static UClass StaticClass() {return default;}
 	///<summary>The text to display</summary>
 	public string Text;
 	///<summary>TextStyleSet</summary>

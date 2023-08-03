@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Default physics settings.</summary>
 [CppInclude("PhysicsEngine/PhysicsSettings.h")]
 public partial class UPhysicsSettings : UPhysicsSettingsCore {
+	public static UClass StaticClass() {return default;}
 	///<summary>Error correction data for replicating simulated physics (rigid bodies)</summary>
 	public FRigidBodyErrorCorrection PhysicErrorCorrection;
 	///<summary>LockedAxis_DEPRECATED</summary>

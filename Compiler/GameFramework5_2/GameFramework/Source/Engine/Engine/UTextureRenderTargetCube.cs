@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>TextureRenderTargetCube</summary>
 [CppInclude("Engine/TextureRenderTargetCube.h")]
 public partial class UTextureRenderTargetCube : UTextureRenderTarget {
+	public static UClass StaticClass() {return default;}
 	///<summary>The width of the texture.</summary>
 	public int SizeX;
 	///<summary>the color the texture is cleared to</summary>

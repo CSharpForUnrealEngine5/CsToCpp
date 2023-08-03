@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>UBaseDynamicMeshComponent is a base interface for a UMeshComponent based on a UDynamicMesh.</summary>
 [CppInclude("Components/BaseDynamicMeshComponent.h")]
 public partial class UBaseDynamicMeshComponent : UMeshComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>@return the child UDynamicMesh</summary>
 	public  UDynamicMesh GetDynamicMesh() { return default; }
 	///<summary>If true, render the Wireframe on top of the Shaded Mesh</summary>

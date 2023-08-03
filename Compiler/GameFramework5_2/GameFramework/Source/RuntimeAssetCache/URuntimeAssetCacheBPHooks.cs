@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("RuntimeAssetCacheBPHooks.h")]
 public partial class URuntimeAssetCacheBPHooks : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>GetSynchronous</summary>
 	public static FVoidPtrParam GetSynchronous(object /*CacheBuilder*/ CacheBuilder) { return default; }
 	///<summary>GetAsynchronous</summary>

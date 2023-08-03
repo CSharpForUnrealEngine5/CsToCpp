@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Base class for landscape patches: components that can be attached to meshes and moved around to make</summary>
 [CppInclude("LandscapePatchComponent.h")]
 public partial class ULandscapePatchComponent : USceneComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>RequestLandscapeUpdate</summary>
 	public  void RequestLandscapeUpdate(bool bInUserTriggeredUpdate/*=false*/) {}
 	///<summary>Allows the patch to be disabled, so that it no longer affects the landscape. This can be useful</summary>

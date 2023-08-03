@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Standard properties</summary>
 [CppInclude("Tools/GenerateStaticMeshLODAssetTool.h")]
 public partial class UGenerateStaticMeshLODAssetToolProperties : UInteractiveToolPropertySet {
+	public static UClass StaticClass() {return default;}
 	///<summary>Preprocessing</summary>
 	public FGenerateStaticMeshLODProcess_PreprocessSettings Preprocessing;
 	///<summary>MeshGeneration</summary>

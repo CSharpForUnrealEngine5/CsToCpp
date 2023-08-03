@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A component that efficiently renders multiple instances of the same StaticMesh.</summary>
 [CppInclude("Components/InstancedStaticMeshComponent.h")]
 public partial class UInstancedStaticMeshComponent : UStaticMeshComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>Array of instances, bulk serialized.</summary>
 	public TArray<FInstancedStaticMeshInstanceData> PerInstanceSMData;
 	///<summary>Array of prev instance transforms. Must match the length of PerInstanceSMData or have 0 elements</summary>

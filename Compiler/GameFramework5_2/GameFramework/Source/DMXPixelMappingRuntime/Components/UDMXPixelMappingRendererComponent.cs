@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Component for rendering input texture.</summary>
 [CppInclude("Components/DMXPixelMappingRendererComponent.h")]
 public partial class UDMXPixelMappingRendererComponent : UDMXPixelMappingOutputComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>Render input texture for downsampling</summary>
 	public  void RendererInputTexture() {}
 	///<summary>Returns the Modulators of the component corresponding to the patch specified.</summary>

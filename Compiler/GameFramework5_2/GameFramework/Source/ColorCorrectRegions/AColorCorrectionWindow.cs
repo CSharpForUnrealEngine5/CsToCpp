@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A Color Correction Window that functions the same way as Color Correction Regions except it modifies anything that is behind it.</summary>
 [CppInclude("ColorCorrectWindow.h")]
 public partial class AColorCorrectionWindow : AColorCorrectRegion {
+	public static UClass StaticClass() {return default;}
 	///<summary>MeshComponents</summary>
 	public TArray<UStaticMeshComponent> MeshComponents;
 	///<summary>Region type.</summary>

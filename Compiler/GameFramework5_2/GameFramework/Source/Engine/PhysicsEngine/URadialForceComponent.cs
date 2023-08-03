@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Used to emit a radial force or impulse that can affect physics objects and or destructible objects.</summary>
 [CppInclude("PhysicsEngine/RadialForceComponent.h")]
 public partial class URadialForceComponent : USceneComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>The radius to apply the force or impulse in</summary>
 	public float Radius;
 	///<summary>How the force or impulse should fall off as object are further away from the center</summary>

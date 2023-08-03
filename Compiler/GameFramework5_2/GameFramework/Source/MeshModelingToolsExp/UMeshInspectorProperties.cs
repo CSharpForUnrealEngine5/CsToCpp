@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("MeshInspectorTool.h")]
 public partial class UMeshInspectorProperties : UInteractiveToolPropertySet {
+	public static UClass StaticClass() {return default;}
 	///<summary>Toggle visibility of all mesh edges</summary>
 	public bool bWireframe;
 	///<summary>Toggle visibility of open boundary edges</summary>

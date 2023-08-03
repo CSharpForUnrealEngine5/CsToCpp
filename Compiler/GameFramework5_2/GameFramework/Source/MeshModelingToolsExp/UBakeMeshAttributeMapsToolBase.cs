@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Base Bake Maps tool</summary>
 [CppInclude("BakeMeshAttributeMapsToolBase.h")]
 public partial class UBakeMeshAttributeMapsToolBase : UBakeMeshAttributeTool {
+	public static UClass StaticClass() {return default;}
 	///<summary>Tool property sets</summary>
 	public UBakeVisualizationProperties VisualizationProps;
 	///<summary>Preview mesh and materials</summary>

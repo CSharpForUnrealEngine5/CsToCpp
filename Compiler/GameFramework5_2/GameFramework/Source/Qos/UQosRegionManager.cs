@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Main Qos interface for actions related to server quality of service</summary>
 [CppInclude("QosRegionManager.h")]
 public partial class UQosRegionManager : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Number of times to ping a given region using random sampling of available servers</summary>
 	public int NumTestsPerRegion;
 	///<summary>Timeout value for each ping request</summary>

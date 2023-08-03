@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("SynthComponents/SynthComponentToneGenerator.h")]
 public partial class USynthComponentToneGenerator : USynthComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>The frequency (in hz) of the tone generator.</summary>
 	public float Frequency;
 	///<summary>The linear volume of the tone generator.</summary>

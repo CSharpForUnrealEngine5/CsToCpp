@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>URecomputeUVsTool Recomputes UVs based on existing segmentations of the mesh</summary>
 [CppInclude("RecomputeUVsTool.h")]
 public partial class URecomputeUVsTool : USingleSelectionMeshEditingTool {
+	public static UClass StaticClass() {return default;}
 	///<summary>UVChannelProperties</summary>
 	public UMeshUVChannelProperties UVChannelProperties;
 	///<summary>Settings</summary>

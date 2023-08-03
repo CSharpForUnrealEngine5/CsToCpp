@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Settings for Radial Patterns in the Pattern Tool</summary>
 [CppInclude("PatternTool.h")]
 public partial class UPatternTool_RadialSettings : UInteractiveToolPropertySet {
+	public static UClass StaticClass() {return default;}
 	///<summary>Spacing Technique used to distribute Pattern Elements around the Circle/Arc</summary>
 	public EPatternToolAxisSpacingMode SpacingMode;
 	///<summary>Number of  Pattern Elements to place</summary>

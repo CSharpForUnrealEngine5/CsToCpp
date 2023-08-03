@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("WebAPILiquidJSSettings.h")]
 public partial class UWebAPILiquidJSSettings : UDeveloperSettings {
+	public static UClass StaticClass() {return default;}
 	///<summary>The web app http port.</summary>
 	public uint Port;
 	///<summary>Should force a build of the WebApp at startup.</summary>

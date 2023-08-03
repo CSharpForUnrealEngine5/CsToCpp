@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Manages centralized execution and tracking of unit tests, as well as handling console commands,</summary>
 [CppInclude("UnitTestManager.h")]
 public partial class UUnitTestManager : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Whether or not to cap the maximum number of unit tests that can be active at any given time</summary>
 	public bool bCapUnitTestCount;
 	///<summary>Specifies the maximum number of unit tests that can be run at any given time</summary>

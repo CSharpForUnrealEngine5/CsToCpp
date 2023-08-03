@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Options for level sequences to the USD format.</summary>
 [CppInclude("LevelSequenceExporterUSDOptions.h")]
 public partial class ULevelSequenceExporterUsdOptions : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Export options to use for the layer where the animation is emitted</summary>
 	public FUsdStageOptions StageOptions;
 	///<summary>Value to bake all generated USD layers with</summary>

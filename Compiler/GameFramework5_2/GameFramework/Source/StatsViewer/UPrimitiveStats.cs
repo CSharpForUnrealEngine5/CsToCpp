@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Statistics page for primitives.</summary>
 [CppInclude("PrimitiveStats.h")]
 public partial class UPrimitiveStats : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Resource (e.g. UStaticMesh, USkeletalMesh, UModelComponent, UTerrainComponent, etc</summary>
 	public TWeakObjectPtr<UObject> Object;
 	///<summary>Actor(s) that use the resource - click to select &amp; zoom Actor(s)</summary>

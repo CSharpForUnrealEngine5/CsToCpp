@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Fixme: this name is conflicting with AbilityTask_WaitConfirm</summary>
 [CppInclude("Abilities/Tasks/AbilityTask_WaitConfirmCancel.h")]
 public partial class UAbilityTask_WaitConfirmCancel : UAbilityTask {
+	public static UClass StaticClass() {return default;}
 	///<summary>OnConfirm</summary>
 	public FWaitConfirmCancelDelegate OnConfirm;
 	///<summary>OnCancel</summary>

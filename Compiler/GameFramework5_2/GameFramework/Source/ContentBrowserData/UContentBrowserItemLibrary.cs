@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>TODO: Script API exposure</summary>
 [CppInclude("ContentBrowserItem.h")]
 public partial class UContentBrowserItemLibrary : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>IsFolder</summary>
 	public static bool IsFolder(FContentBrowserItem Item) { return default; }
 	///<summary>IsFile</summary>

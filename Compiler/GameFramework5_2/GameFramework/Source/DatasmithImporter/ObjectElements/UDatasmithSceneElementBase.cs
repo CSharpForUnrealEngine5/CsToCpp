@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("ObjectElements/DatasmithUSceneElement.h")]
 public partial class UDatasmithSceneElementBase : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Sets the name of the host application which created the scene</summary>
 	public  string GetHost() { return default; }
 	///<summary>Returns the Datasmith version used to export the scene</summary>

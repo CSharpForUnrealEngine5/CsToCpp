@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("MassEntityTestFarmPlot.h")]
 public partial class AMassEntityTestFarmPlot : AActor {
+	public static UClass StaticClass() {return default;}
 	///<summary>GridCellWidth</summary>
 	public float GridCellWidth;
 	///<summary>GridCellHeight</summary>

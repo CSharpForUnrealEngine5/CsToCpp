@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>UPoseableMeshComponent that allows bone transforms to be driven by blueprint.</summary>
 [CppInclude("Components/PoseableMeshComponent.h")]
 public partial class UPoseableMeshComponent : USkinnedMeshComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>SetBoneTransformByName</summary>
 	public  void SetBoneTransformByName(string BoneName,FTransform InTransform,EBoneSpaces BoneSpace) {}
 	///<summary>SetBoneLocationByName</summary>

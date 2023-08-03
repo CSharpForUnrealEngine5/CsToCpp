@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A fully connected layer, which contains the weights and biases for those connections.</summary>
 [CppInclude("NeuralMorphNetwork.h")]
 public partial class UNeuralMorphMLPLayer : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>The weight matrix number of inputs (rows).</summary>
 	public int NumInputs;
 	///<summary>The weight matrix number of outputs (columns).</summary>

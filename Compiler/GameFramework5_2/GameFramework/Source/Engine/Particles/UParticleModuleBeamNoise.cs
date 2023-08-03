@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Particles/Beam/ParticleModuleBeamNoise.h")]
 public partial class UParticleModuleBeamNoise : UParticleModuleBeamBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>Is low frequency noise enabled.</summary>
 	public bool bLowFreq_Enabled;
 	///<summary>The frequency of noise points.</summary>

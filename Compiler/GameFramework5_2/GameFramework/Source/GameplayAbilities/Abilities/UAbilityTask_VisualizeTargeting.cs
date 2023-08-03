@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Abilities/Tasks/AbilityTask_VisualizeTargeting.h")]
 public partial class UAbilityTask_VisualizeTargeting : UAbilityTask {
+	public static UClass StaticClass() {return default;}
 	///<summary>TimeElapsed</summary>
 	public FVisualizeTargetingDelegate TimeElapsed;
 	///<summary>Spawns target actor and uses it for visualization.</summary>

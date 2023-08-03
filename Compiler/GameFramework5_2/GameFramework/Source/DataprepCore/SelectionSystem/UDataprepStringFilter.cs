@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("SelectionSystem/DataprepStringFilter.h")]
 public partial class UDataprepStringFilter : UDataprepFilter {
+	public static UClass StaticClass() {return default;}
 	///<summary>The matching criteria used when checking if a fetched value can pass the filter</summary>
 	public EDataprepStringMatchType StringMatchingCriteria;
 	///<summary>The string used when doing the comparison</summary>

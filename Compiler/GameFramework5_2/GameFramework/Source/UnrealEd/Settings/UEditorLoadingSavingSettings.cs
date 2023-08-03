@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Implements the Level Editor&#39;s loading and saving settings.</summary>
 [CppInclude("Settings/EditorLoadingSavingSettings.h")]
 public partial class UEditorLoadingSavingSettings : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Whether to load a default example map at startup</summary>
 	public ELoadLevelAtStartup LoadLevelAtStartup;
 	///<summary>Force project compilation at startup</summary>

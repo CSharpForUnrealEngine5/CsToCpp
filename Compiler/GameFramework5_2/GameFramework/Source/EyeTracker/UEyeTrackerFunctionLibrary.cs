@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("EyeTrackerFunctionLibrary.h")]
 public partial class UEyeTrackerFunctionLibrary : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>Returns whether or not the eye-tracking hardware is connected and ready to use. It may or may not actually be in use.</summary>
 	public static bool IsEyeTrackerConnected() { return default; }
 	///<summary>Returns whether or not the eye-tracking hardware is connected and ready to use. It may or may not actually be in use.</summary>

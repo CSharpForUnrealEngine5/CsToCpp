@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Defines an interface by which touch input can be controlled using any number of buttons and virtual joysticks</summary>
 [CppInclude("GameFramework/TouchInterface.h")]
 public partial class UTouchInterface : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Controls</summary>
 	public TArray<FTouchInputControl> Controls;
 	///<summary>Opacity (0.0 - 1.0) of all controls while any control is active</summary>

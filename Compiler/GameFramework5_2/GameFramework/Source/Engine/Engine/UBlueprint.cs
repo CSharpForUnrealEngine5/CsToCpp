@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Blueprints are special assets that provide an intuitive, node-based interface that can be used to create new types of Actors</summary>
 [CppInclude("Engine/Blueprint.h")]
 public partial class UBlueprint : UBlueprintCore {
+	public static UClass StaticClass() {return default;}
 	///<summary>Pointer to the parent class that the generated class should derive from. This *can* be null under rare circumstances,</summary>
 	public UClass ParentClass;
 	///<summary>The type of this blueprint</summary>

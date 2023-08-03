@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>The core ActorComponent for interfacing with the GameplayAbilities System</summary>
 [CppInclude("AbilitySystemComponent.h")]
 public partial class UAbilitySystemComponent : UGameplayTasksComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>UGameplayAbility*, Ability,</summary>
 	public  void FAbilityAbilityKey(int InputID) {}
 	///<summary>Used to register callbacks to confirm/cancel input</summary>

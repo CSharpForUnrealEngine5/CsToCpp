@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Base class for live link subject settings</summary>
 [CppInclude("LiveLinkSubjectSettings.h")]
 public partial class ULiveLinkSubjectSettings : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>List of available preprocessor the subject will use.</summary>
 	public TArray<ULiveLinkFramePreProcessor> PreProcessors;
 	///<summary>The interpolation processor the subject will use.</summary>

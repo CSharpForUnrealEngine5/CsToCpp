@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>UStruct Mono Wave Table Synth Preset</summary>
 [CppInclude("SynthComponents/SynthComponentMonoWaveTable.h")]
 public partial class UMonoWaveTableSynthPreset : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Name the preset</summary>
 	public string PresetName;
 	///<summary>Lock wavetables to evenly spaced keyframes that can be edited vertically only (will re-sample)</summary>

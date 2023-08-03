@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Actor for testing ZoneGraph functionality.</summary>
 [CppInclude("ZoneGraphTestingActor.h")]
 public partial class UZoneGraphTestingComponent : UPrimitiveComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>Allow custom tests to be notified when lane location is updated.</summary>
 	public  void EnableCustomTests() {}
 	///<summary>Prevent custom tests to be notified when lane location is updated. Currently active tests will get notified with an invalid location.</summary>

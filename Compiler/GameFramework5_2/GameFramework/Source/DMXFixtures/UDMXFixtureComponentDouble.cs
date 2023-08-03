@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Component that uses 2 DMX channels</summary>
 [CppInclude("DMXFixtureComponentDouble.h")]
 public partial class UDMXFixtureComponentDouble : UDMXFixtureComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>The first dmx attribute the component handles</summary>
 	public FDMXChannelData DMXChannel1;
 	///<summary>The second dmx attribute the component handles</summary>

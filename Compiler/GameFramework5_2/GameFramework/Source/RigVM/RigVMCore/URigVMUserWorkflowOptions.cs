@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("RigVMCore/RigVMUserWorkflow.h")]
 public partial class URigVMUserWorkflowOptions : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>IsValid</summary>
 	public  bool IsValid() { return default; }
 	///<summary>RequiresDialog</summary>

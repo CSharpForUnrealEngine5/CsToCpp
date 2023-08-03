@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("DMXFixtureActor.h")]
 public partial class ADMXFixtureActor : ADMXFixtureActorBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>Visual quality level that changes the number of samples in the volumetric beam</summary>
 	public EDMXFixtureQualityLevel QualityLevel;
 	///<summary>Visual quality for the light beam - small value is visually better but cost more on GPU</summary>

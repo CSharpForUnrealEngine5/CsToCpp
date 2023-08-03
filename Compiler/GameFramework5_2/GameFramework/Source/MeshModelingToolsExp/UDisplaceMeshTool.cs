@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Simple Mesh Displacement Tool</summary>
 [CppInclude("DisplaceMeshTool.h")]
 public partial class UDisplaceMeshTool : USingleSelectionMeshEditingTool {
+	public static UClass StaticClass() {return default;}
 	///<summary>Shared properties for all displacement modes.</summary>
 	public UDisplaceMeshCommonProperties CommonProperties;
 	///<summary>Properties defining the directional filter.</summary>

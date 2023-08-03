@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("K2Node_InputDebugKey.h")]
 public partial class UK2Node_InputDebugKey : UK2Node {
+	public static UClass StaticClass() {return default;}
 	///<summary>The key that is bound</summary>
 	public FKey InputKey;
 	///<summary>Should the binding execute even when the game is paused</summary>

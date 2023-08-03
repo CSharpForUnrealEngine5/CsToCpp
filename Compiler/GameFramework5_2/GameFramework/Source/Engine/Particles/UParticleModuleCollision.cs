@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Particles/Collision/ParticleModuleCollision.h")]
 public partial class UParticleModuleCollision : UParticleModuleCollisionBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>How much to `slow&#39; the velocity of the particle after a collision.</summary>
 	public FRawDistributionVector DampingFactor;
 	///<summary>How much to `slow&#39; the rotation of the particle after a collision.</summary>

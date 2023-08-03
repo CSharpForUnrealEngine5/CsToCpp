@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("NiagaraGeometryCacheRendererProperties.h")]
 public partial class UNiagaraGeometryCacheRendererProperties : UNiagaraRendererProperties {
+	public static UClass StaticClass() {return default;}
 	///<summary>Reference to the geometry cache assets to use. If ArrayIndexBinding is not set, a random element is used for each particle.</summary>
 	public TArray<FNiagaraGeometryCacheReference> GeometryCaches;
 	///<summary>If true, then the geometry cache keeps playing in a loop</summary>

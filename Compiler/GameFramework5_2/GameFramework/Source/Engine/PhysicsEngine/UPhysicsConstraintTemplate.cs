@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("PhysicsEngine/PhysicsConstraintTemplate.h")]
 public partial class UPhysicsConstraintTemplate : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>DefaultInstance</summary>
 	public FConstraintInstance DefaultInstance;
 	///<summary>Handles to the constraint profiles applicable to this constraint</summary>

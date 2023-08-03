@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("MovieSceneToolsUserSettings.h")]
 public partial class UMovieSceneUserImportFBXControlRigSettings : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Imported File Name</summary>
 	public string ImportedFileName;
 	///<summary>Imported File Duration in Seconds</summary>

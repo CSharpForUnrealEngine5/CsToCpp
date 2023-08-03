@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("MeshTexturePaintingTool.h")]
 public partial class UMeshTexturePaintingTool : UBaseBrushTool {
+	public static UClass StaticClass() {return default;}
 	///<summary>SelectionMechanic</summary>
 	public UMeshPaintSelectionMechanic SelectionMechanic;
 	///<summary>TextureProperties</summary>

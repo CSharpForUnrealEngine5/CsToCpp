@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("EditorLevelUtils.h")]
 public partial class UEditorLevelUtils : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Creates a new streaming level in the current world</summary>
 	public static ULevelStreaming CreateNewStreamingLevel(UClass LevelStreamingClass,string NewLevelPath/*=TEXT("")*/,bool bMoveSelectedActorsIntoNewLevel/*=false*/) { return default; }
 	///<summary>Makes the specified streaming level the current level for editing.</summary>

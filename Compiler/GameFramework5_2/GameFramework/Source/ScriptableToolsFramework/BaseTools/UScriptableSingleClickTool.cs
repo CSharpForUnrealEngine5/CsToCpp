@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>UScriptableSingleClickTool is an extension of UScriptableInteractiveTool that supports</summary>
 [CppInclude("BaseTools/ScriptableSingleClickTool.h")]
 public partial class UScriptableSingleClickTool : UScriptableInteractiveTool {
+	public static UClass StaticClass() {return default;}
 	///<summary>Enable Hover support API functions OnHoverHitTest / OnHoverBegin / OnHoverUpdate / OnHoverEnd for Mouse devices.</summary>
 	public bool bWantMouseHover;
 	///<summary>TestIfHitByClick is called to allow the Tool to indicate if it would like to consume a potential click at ClickPos.</summary>

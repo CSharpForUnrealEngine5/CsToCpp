@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("PhysicsControlActor.h")]
 public partial class UPhysicsControlInitializerComponent : USceneComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>This creates all the controls specified in the Initial properties. You can call it explicitly,</summary>
 	public  void CreateControls(UPhysicsControlComponent PhysicsControlComponent) {}
 	///<summary>This can be filled in to automatically create whole-character controls (by specifying limbs etc) for</summary>

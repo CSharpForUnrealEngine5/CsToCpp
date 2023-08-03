@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Object to bind to a APlayerCameraManager with a UTextureRenderTarget2D to be used as a player&#39;s render target.</summary>
 [CppInclude("ComposurePlayerCompositingTarget.h")]
 public partial class UComposurePlayerCompositingTarget : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Current player camera manager the target is bind on.</summary>
 	public  APlayerCameraManager GetPlayerCameraManager() { return default; }
 	///<summary>Set player camera manager to bind the render target to.</summary>

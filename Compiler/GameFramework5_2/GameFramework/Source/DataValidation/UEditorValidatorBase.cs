@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>* The EditorValidatorBase is a class which verifies that an asset meets a specific ruleset.</summary>
 [CppInclude("EditorValidatorBase.h")]
 public partial class UEditorValidatorBase : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Override this to determine whether or not you can use this validator given this usecase</summary>
 	public  bool CanValidate(EDataValidationUsecase InUsecase) { return default; }
 	///<summary>Override this to determine whether or not you can validate a given asset with this validator</summary>

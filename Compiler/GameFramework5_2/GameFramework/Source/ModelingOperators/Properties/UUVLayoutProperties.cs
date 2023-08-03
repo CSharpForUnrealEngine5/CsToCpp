@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>UV Layout Settings</summary>
 [CppInclude("Properties/UVLayoutProperties.h")]
 public partial class UUVLayoutProperties : UInteractiveToolPropertySet {
+	public static UClass StaticClass() {return default;}
 	///<summary>Type of layout applied to input UVs</summary>
 	public EUVLayoutType LayoutType;
 	///<summary>Expected resolution of the output textures; this controls spacing left between UV islands to avoid interpolation artifacts</summary>

@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Properties of the trim mode</summary>
 [CppInclude("CSGMeshesTool.h")]
 public partial class UTrimMeshesToolProperties : UInteractiveToolPropertySet {
+	public static UClass StaticClass() {return default;}
 	///<summary>Which object to trim</summary>
 	public ETrimOperation WhichMesh;
 	///<summary>Whether to remove the surface inside or outside of the trimming geometry</summary>

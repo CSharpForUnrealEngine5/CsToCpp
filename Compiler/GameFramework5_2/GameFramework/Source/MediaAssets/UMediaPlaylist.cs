@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Implements a media play list.</summary>
 [CppInclude("MediaPlaylist.h")]
 public partial class UMediaPlaylist : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Add a media source to the play list.</summary>
 	public  bool Add(UMediaSource MediaSource) { return default; }
 	///<summary>Add a media file path to the play list.</summary>

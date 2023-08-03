@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Movie scene section that control skeletal animation</summary>
 [CppInclude("Sections/MovieSceneSkeletalAnimationSection.h")]
 public partial class UMovieSceneSkeletalAnimationSection : UMovieSceneSection {
+	public static UClass StaticClass() {return default;}
 	///<summary>Params</summary>
 	public FMovieSceneSkeletalAnimationParams Params;
 	///<summary>AnimSequence_DEPRECATED</summary>

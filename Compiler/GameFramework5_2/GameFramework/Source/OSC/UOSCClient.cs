@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("OSCClient.h")]
 public partial class UOSCClient : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Gets the OSC Client IP address and port.</summary>
 	public  void GetSendIPAddress(string IPAddress,int Port) {}
 	///<summary>Sets the OSC Client IP address and port. Returns whether</summary>

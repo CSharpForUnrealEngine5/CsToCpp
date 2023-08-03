@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Draws 3D text in the world along with targeting line cues</summary>
 [CppInclude("VREditorFloatingText.h")]
 public partial class AFloatingText : AActor {
+	public static UClass StaticClass() {return default;}
 	///<summary>Scene component root of this actor</summary>
 	public USceneComponent SceneComponent;
 	///<summary>First line segment component.  Starts at the designation location, goes toward the line connection point.</summary>

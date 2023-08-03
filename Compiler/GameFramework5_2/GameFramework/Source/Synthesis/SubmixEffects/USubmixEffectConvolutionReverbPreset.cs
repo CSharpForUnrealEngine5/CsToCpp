@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("SubmixEffects/SubmixEffectConvolutionReverb.h")]
 public partial class USubmixEffectConvolutionReverbPreset : USoundEffectSubmixPreset {
+	public static UClass StaticClass() {return default;}
 	///<summary>Set the convolution reverb settings</summary>
 	public  void SetSettings(FSubmixEffectConvolutionReverbSettings InSettings) {}
 	///<summary>Set the convolution reverb impulse response</summary>

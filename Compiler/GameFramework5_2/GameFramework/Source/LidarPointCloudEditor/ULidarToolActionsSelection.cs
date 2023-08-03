@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("LidarPointCloudEditorTools.h")]
 public partial class ULidarToolActionsSelection : UInteractiveToolPropertySet {
+	public static UClass StaticClass() {return default;}
 	///<summary>ClearSelection</summary>
 	public  void ClearSelection() {}
 	///<summary>InvertSelection</summary>

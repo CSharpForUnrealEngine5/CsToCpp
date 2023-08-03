@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Particles/VectorField/ParticleModuleVectorFieldLocal.h")]
 public partial class UParticleModuleVectorFieldLocal : UParticleModuleVectorFieldBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>Vector field asset to use.</summary>
 	public UVectorField VectorField;
 	///<summary>Translation of the vector field relative to the emitter.</summary>

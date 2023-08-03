@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("AI/NavigationSystemConfig.h")]
 public partial class UNavigationSystemConfig : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>NavigationSystemClass</summary>
 	public FSoftClassPath NavigationSystemClass;
 	///<summary>NavigationSystem&#39;s properties in Project Settings define all possible supported agents,</summary>

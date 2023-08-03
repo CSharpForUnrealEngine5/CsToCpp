@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A combination of a render target and UTexture2D that allows render target to be saved across save/load/etc</summary>
 [CppInclude("LandscapeTextureBackedRenderTarget.h")]
 public partial class ULandscapeTextureBackedRenderTargetBase : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>PostLoadRT</summary>
 	public UTextureRenderTarget2D PostLoadRT;
 	///<summary>InternalTexture</summary>

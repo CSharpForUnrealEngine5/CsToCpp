@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Object used to export AnimCurves to clipboard</summary>
 [CppInclude("AnimTimeline/AnimTimelineClipboard.h")]
 public partial class UAnimCurveBaseCopyObject : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>SmartName Start</summary>
 	public string DisplayName;
 	///<summary>UID</summary>

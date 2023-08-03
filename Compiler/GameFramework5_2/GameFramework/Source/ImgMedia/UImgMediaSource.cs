@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Media source for EXR image sequences.</summary>
 [CppInclude("ImgMediaSource.h")]
 public partial class UImgMediaSource : UBaseMediaSource {
+	public static UClass StaticClass() {return default;}
 	///<summary>If true, then relative Sequence Paths are relative to the project root directory. If false, then relative to the Content directory.</summary>
 	public bool IsPathRelativeToProjectRoot_DEPRECATED;
 	///<summary>Overrides the default frame rate stored in the image files (0/0 = do not override).</summary>

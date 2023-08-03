@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("GameplayBehavior.h")]
 public partial class UGameplayBehavior : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>@NOTE on trigger functions - we&quot;ll trigger the most specific one that given behavior implements</summary>
 	public  void K2_OnTriggered(AActor Avatar,UGameplayBehaviorConfig Config,AActor SmartObjectOwner) {}
 	///<summary>K2_OnTriggeredPawn</summary>

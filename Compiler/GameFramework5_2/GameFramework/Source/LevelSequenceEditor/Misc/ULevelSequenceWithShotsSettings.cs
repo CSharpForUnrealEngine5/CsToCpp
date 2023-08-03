@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Level Sequence With Shots Settings.</summary>
 [CppInclude("Misc/LevelSequenceEditorSettings.h")]
 public partial class ULevelSequenceWithShotsSettings : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Sequence With Shots name.</summary>
 	public string Name;
 	///<summary>Sequence With Shots suffix.</summary>

@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("MQTTClientObject.h")]
 public partial class UMQTTClientObject : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>FOnConnectDelegate</summary>
 	public  void FOnConnectDelegate(EMQTTConnectReturnCode ReturnCode) {}
 	///<summary>FOnDisconnectDelegate</summary>

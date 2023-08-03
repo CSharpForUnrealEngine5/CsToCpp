@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Physical material masks are used to map multiple physical materials to a single rendering material</summary>
 [CppInclude("PhysicalMaterials/PhysicalMaterialMask.h")]
 public partial class UPhysicalMaterialMask : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>AssetImportData</summary>
 	public UAssetImportData AssetImportData;
 	///<summary>Mask input texture, square aspect ratio recommended. Recognized mask colors include: white, black, red, green, yellow, cyan, turquoise, and magenta.</summary>

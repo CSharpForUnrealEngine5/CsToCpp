@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Materials/MaterialExpressionStrata.h")]
 public partial class UMaterialExpressionStrataHairBSDF : UMaterialExpressionStrataBSDF {
+	public static UClass StaticClass() {return default;}
 	///<summary>Hair fiber base color resulting from single and multiple scattering combined. (type = float3, unit = unitless, defaults to black)</summary>
 	public FExpressionInput BaseColor;
 	///<summary>Amount of light scattering, only available for non-HairStrand rendering (type = float, unit = unitless, defaults to 0.0)</summary>

@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("GPULightmassSettings.h")]
 public partial class UGPULightmassSettings : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>If true, draw a green progress bar within each tile as it renders.</summary>
 	public bool bShowProgressBars;
 	///<summary>Full Bake mode renders the full lightmap resolution for every object in the scene.</summary>

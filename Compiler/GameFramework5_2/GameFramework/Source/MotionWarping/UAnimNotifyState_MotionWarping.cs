@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>AnimNotifyState used to define a motion warping window in the animation</summary>
 [CppInclude("AnimNotifyState_MotionWarping.h")]
 public partial class UAnimNotifyState_MotionWarping : UAnimNotifyState {
+	public static UClass StaticClass() {return default;}
 	///<summary>@TODO: Prevent notify callbacks and add comments explaining why we don&#39;t use those here.</summary>
 	public URootMotionModifier RootMotionModifier;
 	///<summary>Creates a root motion modifier from the config class defined in the notify</summary>

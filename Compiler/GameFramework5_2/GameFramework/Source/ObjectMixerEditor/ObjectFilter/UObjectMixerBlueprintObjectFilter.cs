@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Script class for filtering object types to Object Mixer.</summary>
 [CppInclude("ObjectFilter/ObjectMixerEditorObjectFilter.h")]
 public partial class UObjectMixerBlueprintObjectFilter : UObjectMixerObjectFilter {
+	public static UClass StaticClass() {return default;}
 	///<summary>Return the basic object types you want to filter for in your level.</summary>
 	public  TSet<UClass> GetObjectClassesToFilter() { return default; }
 	///<summary>Return the basic actor types you want to be able to place using the Add button.</summary>

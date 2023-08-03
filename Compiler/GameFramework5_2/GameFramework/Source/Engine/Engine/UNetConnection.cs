@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Engine/NetConnection.h")]
 public partial class UNetConnection : UPlayer {
+	public static UClass StaticClass() {return default;}
 	///<summary>child connections for secondary viewports</summary>
 	public TArray<UChildConnection> Children;
 	///<summary>Owning net driver</summary>

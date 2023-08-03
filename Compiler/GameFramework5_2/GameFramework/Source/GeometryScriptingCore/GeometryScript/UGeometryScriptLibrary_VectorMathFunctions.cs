@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("GeometryScript/VectorMathFunctions.h")]
 public partial class UGeometryScriptLibrary_VectorMathFunctions : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>Compute the length/magnitude of each vector in VectorListA and return in new ScalarList.</summary>
 	public static FGeometryScriptScalarList VectorLength(FGeometryScriptVectorList VectorList) { return default; }
 	///<summary>Compute the dot-product between each pair of vectors in VectorListA and VectorListB and return in new ScalarList</summary>

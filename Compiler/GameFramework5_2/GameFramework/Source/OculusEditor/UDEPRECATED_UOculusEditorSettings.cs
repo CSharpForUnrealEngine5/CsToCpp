@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("OculusEditorSettings.h")]
 public partial class UDEPRECATED_UOculusEditorSettings : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>PerfToolIgnoreList</summary>
 	public TMap<string,bool> PerfToolIgnoreList;
 	///<summary>PerfToolTargetPlatform</summary>

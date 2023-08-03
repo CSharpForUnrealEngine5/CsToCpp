@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("LandscapeProxy.h")]
 public partial class ALandscapeProxy : APartitionActor {
+	public static UClass StaticClass() {return default;}
 	///<summary>SplineComponent</summary>
 	public ULandscapeSplinesComponent SplineComponent;
 	///<summary>Guid for LandscapeEditorInfo *</summary>

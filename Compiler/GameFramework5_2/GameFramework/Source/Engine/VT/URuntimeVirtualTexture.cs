@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Runtime virtual texture UObject</summary>
 [CppInclude("VT/RuntimeVirtualTexture.h")]
 public partial class URuntimeVirtualTexture : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Size of virtual texture in tiles. (Actual values increase in powers of 2).</summary>
 	public int TileCount;
 	///<summary>Page tile size. (Actual values increase in powers of 2)</summary>

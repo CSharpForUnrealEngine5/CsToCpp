@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Animation/AnimSingleNodeInstance.h")]
 public partial class UAnimSingleNodeInstance : UAnimInstance {
+	public static UClass StaticClass() {return default;}
 	///<summary>Current Asset being played *</summary>
 	public UAnimationAsset CurrentAsset;
 	///<summary>PostEvaluateAnimEvent</summary>

@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Base class for a camera shake. A camera shake contains a root shake &quot;pattern&quot; which is</summary>
 [CppInclude("Camera/CameraShakeBase.h")]
 public partial class UCameraShakeBase : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>If true to only allow a single instance of this shake class to play at any given time.</summary>
 	public bool bSingleInstance;
 	///<summary>The overall scale to apply to the shake. Only valid when the shake is active.</summary>

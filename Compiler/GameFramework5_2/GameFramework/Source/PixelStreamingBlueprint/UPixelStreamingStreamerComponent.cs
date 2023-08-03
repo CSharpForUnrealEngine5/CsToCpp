@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("PixelStreamingStreamerComponent.h")]
 public partial class UPixelStreamingStreamerComponent : UActorComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>GetId</summary>
 	public  string GetId() { return default; }
 	///<summary>IsSignallingConnected</summary>

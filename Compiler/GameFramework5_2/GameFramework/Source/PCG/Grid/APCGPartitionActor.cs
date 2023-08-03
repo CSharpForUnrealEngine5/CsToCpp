@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>The APCGPartitionActor actor is used to store grid cell data</summary>
 [CppInclude("Grid/PCGPartitionActor.h")]
 public partial class APCGPartitionActor : APartitionActor {
+	public static UClass StaticClass() {return default;}
 	///<summary>TODO: Make this in-editor only; during runtime, we should keep a map of component to bounds/volume only</summary>
 	public  UPCGComponent GetLocalComponent(UPCGComponent OriginalComponent) { return default; }
 	///<summary>GetOriginalComponent</summary>

@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A fader matching a Fixture Patch Function in the DMX Control Console.</summary>
 [CppInclude("DMXControlConsoleFixturePatchFunctionFader.h")]
 public partial class UDMXControlConsoleFixturePatchFunctionFader : UDMXControlConsoleFaderBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>The universe DMX data should be send to</summary>
 	public int UniverseID;
 	///<summary>The starting channel Address to send DMX to</summary>

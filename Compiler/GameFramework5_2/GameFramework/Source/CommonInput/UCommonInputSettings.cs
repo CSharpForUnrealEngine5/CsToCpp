@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("CommonInputSettings.h")]
 public partial class UCommonInputSettings : UDeveloperSettings {
+	public static UClass StaticClass() {return default;}
 	///<summary>Static version of enhanced input support check, exists to hide based on edit condition</summary>
 	public static bool IsEnhancedInputSupportEnabled() { return default; }
 	///<summary>Create a derived asset from UCommonUIInputData to store Input data for your game.</summary>

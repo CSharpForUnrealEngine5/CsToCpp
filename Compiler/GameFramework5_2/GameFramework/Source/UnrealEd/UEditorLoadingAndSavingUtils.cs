@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>This class is a wrapper for editor loading and saving functionality</summary>
 [CppInclude("FileHelpers.h")]
 public partial class UEditorLoadingAndSavingUtils : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>NewBlankMap</summary>
 	public static UWorld NewBlankMap(bool bSaveExistingMap) { return default; }
 	///<summary>NewMapFromTemplate</summary>

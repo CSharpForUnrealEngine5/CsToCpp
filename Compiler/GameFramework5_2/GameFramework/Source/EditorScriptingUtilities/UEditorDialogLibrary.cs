@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Utility class to create simple pop-up dialogs to notify the user of task completion,</summary>
 [CppInclude("EditorDialogLibrary.h")]
 public partial class UEditorDialogLibrary : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>Open a modal message box dialog with the given message. If running in &quot;-unattended&quot; mode it will immediately</summary>
 	public static EAppReturnType ShowMessage(string Title,string Message,EAppMsgType MessageType,EAppReturnType DefaultValue/*=EAppReturnType.Type.No*/) { return default; }
 	///<summary>Open a modal suppressable warning window, if suppressed will return the default value</summary>

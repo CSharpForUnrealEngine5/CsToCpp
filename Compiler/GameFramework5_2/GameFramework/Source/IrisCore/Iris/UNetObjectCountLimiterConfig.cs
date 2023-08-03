@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Iris/ReplicationSystem/Prioritization/NetObjectCountLimiter.h")]
 public partial class UNetObjectCountLimiterConfig : UNetObjectPrioritizerConfig {
+	public static UClass StaticClass() {return default;}
 	///<summary>Mode</summary>
 	public ENetObjectCountLimiterMode Mode;
 	///<summary>How many objects to be considered for replication each frame.</summary>

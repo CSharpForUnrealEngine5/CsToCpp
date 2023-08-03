@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Calculates the distance between two points (inherently a n*n operation)</summary>
 [CppInclude("Elements/PCGDistance.h")]
 public partial class UPCGDistanceSettings : UPCGSettings {
+	public static UClass StaticClass() {return default;}
 	///<summary>The name of the attribute to store on the point.Use &#39;None&#39; to disable</summary>
 	public string AttributeName;
 	///<summary>Controls whether the attribute will be a scalar or a vector</summary>

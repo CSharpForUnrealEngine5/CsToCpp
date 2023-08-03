@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Editor-wide tutorial settings</summary>
 [CppInclude("EditorTutorialSettings.h")]
 public partial class UEditorTutorialSettings : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Disable the pulsing alert that indicates a new tutorial is available.</summary>
 	public bool bDisableAllTutorialAlerts;
 	///<summary>Categories for tutorials</summary>

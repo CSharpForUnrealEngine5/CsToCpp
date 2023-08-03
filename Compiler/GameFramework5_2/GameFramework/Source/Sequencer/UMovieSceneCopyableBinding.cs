@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("MovieSceneCopyableBinding.h")]
 public partial class UMovieSceneCopyableBinding : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Spawnables need to know about their Object Template but we cannot rely on automatic serialization due to the object</summary>
 	public UObject SpawnableObjectTemplate;
 	///<summary>Tracks are also owned by the owning Movie Sequence. We manually copy the tracks out of a binding when we copy,</summary>

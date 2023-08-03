@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Base of property view allows you to display the value of an object properties.</summary>
 [CppInclude("Components/PropertyViewBase.h")]
 public partial class UPropertyViewBase : UWidget {
+	public static UClass StaticClass() {return default;}
 	///<summary>The object to view.</summary>
 	public TSoftObjectPtr<UObject> Object;
 	///<summary>SoftObjectPath_DEPRECATED</summary>

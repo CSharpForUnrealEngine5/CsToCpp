@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>The Array Node represents one of a series available</summary>
 [CppInclude("RigVMModel/Nodes/RigVMArrayNode.h")]
 public partial class UDEPRECATED_RigVMArrayNode : URigVMTemplateNode {
+	public static UClass StaticClass() {return default;}
 	///<summary>Returns the op code of this node</summary>
 	public  ERigVMOpCode GetOpCode() { return default; }
 	///<summary>Returns the C++ data type of the element</summary>

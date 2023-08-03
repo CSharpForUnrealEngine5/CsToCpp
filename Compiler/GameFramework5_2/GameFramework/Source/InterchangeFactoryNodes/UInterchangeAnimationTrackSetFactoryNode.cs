@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("InterchangeAnimationTrackSetFactoryNode.h")]
 public partial class UInterchangeAnimationTrackSetFactoryNode : UInterchangeFactoryBaseNode {
+	public static UClass StaticClass() {return default;}
 	///<summary>Get the class this node want to create</summary>
 	public  UClass GetObjectClass() { return default; }
 	///<summary>This function allow to retrieve the number of track dependencies for this object.</summary>

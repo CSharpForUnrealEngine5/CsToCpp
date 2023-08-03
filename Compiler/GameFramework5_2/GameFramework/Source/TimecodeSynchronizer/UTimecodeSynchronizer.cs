@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("TimecodeSynchronizer.h")]
 public partial class UTimecodeSynchronizer : UTimecodeProvider {
+	public static UClass StaticClass() {return default;}
 	///<summary>Frame Rate Source.</summary>
 	public ETimecodeSynchronizationFrameRateSources FrameRateSource;
 	///<summary>The fixed framerate to use.</summary>

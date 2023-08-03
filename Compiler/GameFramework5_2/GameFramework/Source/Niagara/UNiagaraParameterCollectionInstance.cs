@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("NiagaraParameterCollection.h")]
 public partial class UNiagaraParameterCollectionInstance : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>TODO: Abstract to some interface to allow a hierarchy like UMaterialInstance?</summary>
 	public UNiagaraParameterCollection Collection;
 	///<summary>When editing instances, we must track which parameters are overridden so we can pull in any changes to the default.</summary>

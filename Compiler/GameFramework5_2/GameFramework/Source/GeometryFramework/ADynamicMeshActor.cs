@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>ADynamicMeshActor is an Actor that has a USimpleDynamicMeshComponent as it&#39;s RootObject.</summary>
 [CppInclude("DynamicMeshActor.h")]
 public partial class ADynamicMeshActor : AActor {
+	public static UClass StaticClass() {return default;}
 	///<summary>DynamicMeshComponent</summary>
 	public UDynamicMeshComponent DynamicMeshComponent;
 	///<summary>GetDynamicMeshComponent</summary>

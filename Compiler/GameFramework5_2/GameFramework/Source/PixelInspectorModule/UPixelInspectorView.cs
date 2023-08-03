@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("PixelInspectorView.h")]
 public partial class UPixelInspectorView : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Final RGBA 8bits Color after tone mapping, default value is black.</summary>
 	public FLinearColor FinalColor;
 	///<summary>HDR RGB Color.</summary>

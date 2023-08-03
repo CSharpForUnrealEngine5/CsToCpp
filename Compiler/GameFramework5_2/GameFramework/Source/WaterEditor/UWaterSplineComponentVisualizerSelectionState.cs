@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Selection state data that will be captured by scoped transactions.</summary>
 [CppInclude("WaterSplineComponentVisualizer.h")]
 public partial class UWaterSplineComponentVisualizerSelectionState : USplineComponentVisualizerSelectionState {
+	public static UClass StaticClass() {return default;}
 	///<summary>Whether water velocity handle is selected</summary>
 	public bool bWaterVelocityIsSelected;
 	///<summary>Whether water depth handle is selected</summary>

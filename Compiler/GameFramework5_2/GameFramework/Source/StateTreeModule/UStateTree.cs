@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>StateTree asset. Contains the StateTree definition in both editor and runtime (baked) formats.</summary>
 [CppInclude("StateTree.h")]
 public partial class UStateTree : UDataAsset {
+	public static UClass StaticClass() {return default;}
 	///<summary>Edit time data for the StateTree, instance of UStateTreeEditorData</summary>
 	public UObject EditorData;
 	///<summary>Hash of the editor data from last compile.</summary>

@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("ResonanceAudioSpatializationSourceSettings.h")]
 public partial class UResonanceAudioSpatializationSourceSettings : USpatializationPluginSourceSettingsBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>Spatialization method to use for sound object(s). NOTE: Has no effect if &#39;Stereo Panning&#39; global quality mode is selected for the project</summary>
 	public ERaSpatializationMethod SpatializationMethod;
 	///<summary>Directivity pattern: 0.0 (omnidirectional), 0.5 (cardioid), 1.0 (figure-of-8)</summary>

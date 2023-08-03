@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Utility class to do most expose most of the common functionalities of the dataprep editor plugin (Visual Dataprep).</summary>
 [CppInclude("EditorDataprepAssetLibrary.h")]
 public partial class UEditorDataprepAssetLibrary : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>Runs the Dataprep asset&#39;s producers, execute its recipe and finally runs the consumer to output the results.</summary>
 	public static bool ExecuteDataprep(UDataprepAssetInterface DataprepAssetInterface,EDataprepReportMethod LogReportingMethod,EDataprepReportMethod ProgressReportingMethod) { return default; }
 	///<summary>Get number of the producer of a dataprep asset</summary>

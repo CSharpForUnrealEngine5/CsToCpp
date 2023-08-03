@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Audio/SoundParameterControllerInterface.h")]
 public partial class UAudioParameterConversionStatics : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>BooleanToAudioParameter</summary>
 	public static FAudioParameter BooleanToAudioParameter(string Name,bool Bool) { return default; }
 	///<summary>FloatToAudioParameter</summary>

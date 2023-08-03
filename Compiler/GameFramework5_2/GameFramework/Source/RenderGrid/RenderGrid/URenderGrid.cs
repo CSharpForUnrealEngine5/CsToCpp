@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>This class represents a render grid, which is basically just a collection of render grid jobs.</summary>
 [CppInclude("RenderGrid/RenderGrid.h")]
 public partial class URenderGrid : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Event for when this asset is opened in the editor. The asset will also be closed and reopened during a blueprint compile.</summary>
 	public  void ReceiveBeginEditor() {}
 	///<summary>Event for when this asset is closed in the editor. The asset will also be closed and reopened during a blueprint compile.</summary>

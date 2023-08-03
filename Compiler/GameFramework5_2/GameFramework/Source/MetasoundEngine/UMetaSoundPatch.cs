@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>This asset type is used for Metasound assets that can only be used as nodes in other Metasound graphs.</summary>
 [CppInclude("Metasound.h")]
 public partial class UMetaSoundPatch : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>RootMetaSoundDocument</summary>
 	public FMetasoundFrontendDocument RootMetaSoundDocument;
 	///<summary>ReferencedAssetClassKeys</summary>

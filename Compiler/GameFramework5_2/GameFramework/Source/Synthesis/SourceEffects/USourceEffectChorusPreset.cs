@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("SourceEffects/SourceEffectChorus.h")]
 public partial class USourceEffectChorusPreset : USoundEffectSourcePreset {
+	public static UClass StaticClass() {return default;}
 	///<summary>SetDepth</summary>
 	public  void SetDepth(float Depth) {}
 	///<summary>SetDepthModulator</summary>

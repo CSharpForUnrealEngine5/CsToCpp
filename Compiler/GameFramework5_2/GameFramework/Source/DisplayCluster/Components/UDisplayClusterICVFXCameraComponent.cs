@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>nDisplay in-camera VFX camera representation</summary>
 [CppInclude("Components/DisplayClusterICVFXCameraComponent.h")]
 public partial class UDisplayClusterICVFXCameraComponent : UCineCameraComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>CameraSettings</summary>
 	public FDisplayClusterConfigurationICVFX_CameraSettings CameraSettings;
 	///<summary>IsEnabledRef</summary>

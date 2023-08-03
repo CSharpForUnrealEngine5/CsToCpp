@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Bare-bones base class to make creating custom UListView widgets easier.</summary>
 [CppInclude("Components/ListViewBase.h")]
 public partial class UListViewBase : UWidget {
+	public static UClass StaticClass() {return default;}
 	///<summary>Gets all of the list entry widgets currently being displayed by the list</summary>
 	public  TArray<UUserWidget> GetDisplayedEntryWidgets() { return default; }
 	///<summary>Get the scroll offset of this view (in items)</summary>

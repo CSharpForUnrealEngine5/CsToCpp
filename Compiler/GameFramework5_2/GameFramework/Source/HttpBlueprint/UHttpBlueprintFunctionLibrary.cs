@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("HttpBlueprintFunctionLibrary.h")]
 public partial class UHttpBlueprintFunctionLibrary : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>MakeRequestHeader</summary>
 	public static void MakeRequestHeader(TMap<string,string> Headers,FHttpHeader OutHeader) {}
 	///<summary>Get the value associated with a Header name</summary>

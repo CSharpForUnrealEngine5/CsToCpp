@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Editor/PropertyEditorTestObject.h")]
 public partial class UBlueprintPropertyTestObject : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>ShouldBeHidden</summary>
 	public int ShouldBeHidden;
 	///<summary>ShouldBeVisible</summary>

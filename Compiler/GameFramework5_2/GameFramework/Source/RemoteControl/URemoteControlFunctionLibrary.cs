@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("RemoteControlFunctionLibrary.h")]
 public partial class URemoteControlFunctionLibrary : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>Expose a property in a remote control preset.</summary>
 	public static bool ExposeProperty(URemoteControlPreset Preset,UObject SourceObject,string Property,FRemoteControlOptionalExposeArgs Args) { return default; }
 	///<summary>Expose a function in a remote control preset.</summary>

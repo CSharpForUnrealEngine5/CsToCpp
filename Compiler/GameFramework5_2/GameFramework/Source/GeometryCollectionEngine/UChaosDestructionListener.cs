@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Object allowing for retrieving Chaos Destruction data.</summary>
 [CppInclude("ChaosBlueprint.h")]
 public partial class UChaosDestructionListener : USceneComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>Whether or not collision event listening is enabled</summary>
 	public bool bIsCollisionEventListeningEnabled;
 	///<summary>Whether or not collision event listening is enabled</summary>

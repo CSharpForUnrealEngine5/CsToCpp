@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Implements the settings for MassEntity plugin</summary>
 [CppInclude("MassEntitySettings.h")]
 public partial class UMassEntitySettings : UMassModuleSettings {
+	public static UClass StaticClass() {return default;}
 	///<summary>The name of the file to dump the processor dependency graph. T</summary>
 	public string DumpDependencyGraphFileName;
 	///<summary>Lets users configure processing phases including the composite processor class to be used as a container for the phases&#39; processors.</summary>

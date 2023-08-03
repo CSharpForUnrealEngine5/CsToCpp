@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("SteamVRHQLayerShape.h")]
 public partial class USteamVRHQStereoLayerShape : UStereoLayerShapeQuad {
+	public static UClass StaticClass() {return default;}
 	///<summary>bCurved</summary>
 	public bool bCurved;
 	///<summary>bAntiAlias</summary>

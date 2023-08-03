@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("MuCOE/Nodes/CustomizableObjectNodeMeshClipWithMesh.h")]
 public partial class UCustomizableObjectNodeMeshClipWithMesh : UCustomizableObjectNodeModifierBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>Tags</summary>
 	public TArray<string> Tags;
 	///<summary>!&lt; If assigned, then a material inside this CO will be clipped by this node.</summary>

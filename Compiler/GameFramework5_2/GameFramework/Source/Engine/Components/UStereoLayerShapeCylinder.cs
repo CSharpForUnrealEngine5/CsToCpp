@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Components/StereoLayerComponent.h")]
 public partial class UStereoLayerShapeCylinder : UStereoLayerShape {
+	public static UClass StaticClass() {return default;}
 	///<summary>Radial size of the rendered stereo layer cylinder *</summary>
 	public float Radius;
 	///<summary>Arc angle for the stereo layer cylinder *</summary>

@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>The Action Stack can be used to track actions happening on a</summary>
 [CppInclude("RigVMModel/RigVMControllerActions.h")]
 public partial class URigVMActionStack : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Opens an undo bracket / scope to record actions into.</summary>
 	public  bool OpenUndoBracket(string InTitle) { return default; }
 	///<summary>Closes an undo bracket / scope.</summary>

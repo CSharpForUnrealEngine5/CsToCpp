@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("NiagaraRibbonRendererProperties.h")]
 public partial class UNiagaraRibbonRendererProperties : UNiagaraRendererProperties {
+	public static UClass StaticClass() {return default;}
 	///<summary>UNiagaraRendererProperties Interface END</summary>
 	public UMaterialInterface Material;
 	///<summary>MICMaterial</summary>

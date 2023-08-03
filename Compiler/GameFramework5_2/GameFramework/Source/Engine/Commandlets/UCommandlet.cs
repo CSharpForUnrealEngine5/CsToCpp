@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Commandlets/Commandlet.h")]
 public partial class UCommandlet : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Description of the commandlet&#39;s purpose</summary>
 	public string HelpDescription;
 	///<summary>Usage template to show for &quot;ucc help&quot;</summary>

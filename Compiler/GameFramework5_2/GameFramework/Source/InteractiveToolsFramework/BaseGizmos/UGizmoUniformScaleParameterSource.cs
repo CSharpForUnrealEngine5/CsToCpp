@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>UGizmoUniformScaleParameterSource is an IGizmoVec2ParameterSource implementation that</summary>
 [CppInclude("BaseGizmos/ParameterToTransformAdapters.h")]
 public partial class UGizmoUniformScaleParameterSource : UGizmoBaseVec2ParameterSource {
+	public static UClass StaticClass() {return default;}
 	///<summary>AxisSource provides the 3D plane (origin/normal/u/v) that is used to interpret the 2D parameters</summary>
 	public object /*AxisSource*/ AxisSource;
 	///<summary>This TransformSource is updated by applying the constructed 3D translation</summary>

@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("TrackRecorders/MovieSceneAnimationTrackRecorderSettings.h")]
 public partial class UMovieSceneAnimationTrackRecorderEditorSettings : UMovieSceneTrackRecorderSettings {
+	public static UClass StaticClass() {return default;}
 	///<summary>Name of the recorded animation track.</summary>
 	public string AnimationTrackName;
 	///<summary>The name of the animation asset.</summary>

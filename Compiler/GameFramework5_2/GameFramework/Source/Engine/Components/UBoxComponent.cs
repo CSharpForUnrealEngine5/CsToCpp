@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A box generally used for simple collision. Bounds are rendered as lines in the editor.</summary>
 [CppInclude("Components/BoxComponent.h")]
 public partial class UBoxComponent : UShapeComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>The extents (radii dimensions) of the box *</summary>
 	public FVector BoxExtent;
 	///<summary>Used to control the line thickness when rendering</summary>

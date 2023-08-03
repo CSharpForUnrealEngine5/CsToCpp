@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>These are properties that do not get enabled/disabled based on the action</summary>
 [CppInclude("EditMeshPolygonsTool.h")]
 public partial class UPolyEditCommonProperties : UInteractiveToolPropertySet {
+	public static UClass StaticClass() {return default;}
 	///<summary>bShowWireframe</summary>
 	public bool bShowWireframe;
 	///<summary>bShowSelectableCorners</summary>

@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>TextureShare UObject interface</summary>
 [CppInclude("Blueprints/TextureShareBlueprintContainers.h")]
 public partial class UTextureShare : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Create new or get exist UTextureShare object</summary>
 	public  UTextureShareObject GetOrCreateTextureShareObject(string InShareName) { return default; }
 	///<summary>RemoveTextureShareObject</summary>

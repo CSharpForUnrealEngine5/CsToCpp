@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("ARTrackable.h")]
 public partial class UARPlaneGeometry : UARTrackedGeometry {
+	public static UClass StaticClass() {return default;}
 	///<summary>GetCenter</summary>
 	public  FVector GetCenter() { return default; }
 	///<summary>GetExtent</summary>

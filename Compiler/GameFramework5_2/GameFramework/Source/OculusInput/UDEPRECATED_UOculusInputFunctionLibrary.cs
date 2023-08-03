@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("OculusInputFunctionLibrary.h")]
 public partial class UDEPRECATED_UOculusInputFunctionLibrary : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>ConvertBoneToFinger</summary>
 	public static EOculusFinger ConvertBoneToFinger(EBone Bone) { return default; }
 	///<summary>GetHandSkeletalMesh</summary>

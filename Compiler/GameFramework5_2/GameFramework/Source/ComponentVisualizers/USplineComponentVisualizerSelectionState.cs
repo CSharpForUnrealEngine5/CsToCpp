@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Selection state data that will be captured by scoped transactions.</summary>
 [CppInclude("SplineComponentVisualizer.h")]
 public partial class USplineComponentVisualizerSelectionState : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Property path from the parent actor to the component</summary>
 	public FComponentPropertyPath SplinePropertyPath;
 	///<summary>Indices of keys we have selected</summary>

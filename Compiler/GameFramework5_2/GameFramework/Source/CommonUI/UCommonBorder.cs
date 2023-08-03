@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Uses the border style template defined in CommonUI project settings by default</summary>
 [CppInclude("CommonBorder.h")]
 public partial class UCommonBorder : UBorder {
+	public static UClass StaticClass() {return default;}
 	///<summary>SetStyle</summary>
 	public  void SetStyle(UClass InStyle) {}
 	///<summary>References the border style to use</summary>

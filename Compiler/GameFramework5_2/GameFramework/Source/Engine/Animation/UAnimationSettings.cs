@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Default animation settings.</summary>
 [CppInclude("Animation/AnimationSettings.h")]
 public partial class UAnimationSettings : UDeveloperSettings {
+	public static UClass StaticClass() {return default;}
 	///<summary>Compression version for recompress commandlet, bump this to trigger full recompressed, otherwise only new imported animations will be recompressed</summary>
 	public int CompressCommandletVersion;
 	///<summary>List of bone names to treat with higher precision, in addition to any bones with sockets</summary>

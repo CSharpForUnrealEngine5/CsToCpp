@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Standard properties of the Remesh operation</summary>
 [CppInclude("RemeshMeshTool.h")]
 public partial class URemeshMeshToolProperties : URemeshProperties {
+	public static UClass StaticClass() {return default;}
 	///<summary>Target triangle count</summary>
 	public int TargetTriangleCount;
 	///<summary>Smoothing type</summary>

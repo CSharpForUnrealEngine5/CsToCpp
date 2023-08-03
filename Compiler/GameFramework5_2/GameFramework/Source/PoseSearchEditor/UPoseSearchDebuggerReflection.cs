@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Reflection UObject being observed in the details view panel of the debugger</summary>
 [CppInclude("PoseSearchDebuggerReflection.h")]
 public partial class UPoseSearchDebuggerReflection : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>CurrentDatabaseName</summary>
 	public string CurrentDatabaseName;
 	///<summary>Time since last PoseSearch jump</summary>

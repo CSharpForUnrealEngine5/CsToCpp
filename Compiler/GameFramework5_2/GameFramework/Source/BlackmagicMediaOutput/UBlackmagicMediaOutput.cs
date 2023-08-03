@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Output information for a MediaCapture.</summary>
 [CppInclude("BlackmagicMediaOutput.h")]
 public partial class UBlackmagicMediaOutput : UMediaOutput {
+	public static UClass StaticClass() {return default;}
 	///<summary>The device, port and video settings that correspond to the output.</summary>
 	public FMediaIOOutputConfiguration OutputConfiguration;
 	///<summary>Size of the buffer that holds rendered audio samples, a bigger buffer will produce an output of greater quality but will introduce more delay.</summary>

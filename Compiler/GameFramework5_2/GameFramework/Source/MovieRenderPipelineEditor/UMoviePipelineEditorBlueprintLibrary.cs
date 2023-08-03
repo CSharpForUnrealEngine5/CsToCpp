@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("MoviePipelineEditorBlueprintLibrary.h")]
 public partial class UMoviePipelineEditorBlueprintLibrary : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>ExportConfigToAsset</summary>
 	public static bool ExportConfigToAsset(UMoviePipelinePrimaryConfig InConfig,string InPackagePath,string InFileName,bool bInSaveAsset,UMoviePipelinePrimaryConfig OutAsset,string OutErrorReason) { return default; }
 	///<summary>Checks to see if any of the Jobs try to point to maps that wouldn&#39;t be valid on a remote render (ie: unsaved maps)</summary>

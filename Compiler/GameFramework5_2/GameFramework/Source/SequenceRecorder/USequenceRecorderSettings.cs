@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("SequenceRecorderSettings.h")]
 public partial class USequenceRecorderSettings : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Whether to create a level sequence when recording. Actors and animations will be inserted into this sequence</summary>
 	public bool bCreateLevelSequence;
 	///<summary>Whether to maximize the viewport when recording</summary>

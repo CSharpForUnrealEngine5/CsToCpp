@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("WaveformTransformationNormalize.h")]
 public partial class UWaveformTransformationNormalize : UWaveformTransformationBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>Target maximum volume for this soundwave, in decibels</summary>
 	public float Target;
 	///<summary>Will not apply more gain than this, even if the sound is very quiet</summary>

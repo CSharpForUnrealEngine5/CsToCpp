@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("MuCOE/Nodes/CustomizableObjectNodeSkeletalMesh.h")]
 public partial class UCustomizableObjectNodeSkeletalMesh : UCustomizableObjectNodeMesh {
+	public static UClass StaticClass() {return default;}
 	///<summary>SkeletalMesh</summary>
 	public USkeletalMesh SkeletalMesh;
 	///<summary>Images</summary>

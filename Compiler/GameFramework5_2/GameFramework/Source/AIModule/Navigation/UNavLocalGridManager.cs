@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Manager for local navigation grids</summary>
 [CppInclude("Navigation/NavLocalGridManager.h")]
 public partial class UNavLocalGridManager : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>SetLocalNavigationGridDensity</summary>
 	public static bool SetLocalNavigationGridDensity(UObject WorldContextObject,float CellSize) { return default; }
 	///<summary>creates new grid data for single point</summary>

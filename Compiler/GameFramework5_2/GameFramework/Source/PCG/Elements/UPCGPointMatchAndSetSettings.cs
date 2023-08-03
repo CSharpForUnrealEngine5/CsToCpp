@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>This settings class is used to create a PCG node that will apply a &quot;Match and Set&quot; operation</summary>
 [CppInclude("Elements/PCGPointMatchAndSet.h")]
 public partial class UPCGPointMatchAndSetSettings : UPCGSettings {
+	public static UClass StaticClass() {return default;}
 	///<summary>Recreates the match &amp; set instance stored in this settings object if needed.</summary>
 	public  void SetMatchAndSetType(UClass InMatchAndSetType) {}
 	///<summary>Defines the type of Match &amp; Set object to use.</summary>

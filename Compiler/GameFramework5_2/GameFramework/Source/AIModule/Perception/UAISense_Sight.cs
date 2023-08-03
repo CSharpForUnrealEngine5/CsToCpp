@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Perception/AISense_Sight.h")]
 public partial class UAISense_Sight : UAISense {
+	public static UClass StaticClass() {return default;}
 	///<summary>MaxTracesPerTick</summary>
 	public int MaxTracesPerTick;
 	///<summary>Maximum number of asynchronous traces that can be requested in a single update call</summary>

@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Object to hold the state of MR capture and capturing camera</summary>
 [CppInclude("OculusMR_State.h")]
 public partial class UOculusMR_State : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>TrackedCamera</summary>
 	public FTrackedCamera TrackedCamera;
 	///<summary>Component at the tracking origin that the camera calibration is applied to</summary>

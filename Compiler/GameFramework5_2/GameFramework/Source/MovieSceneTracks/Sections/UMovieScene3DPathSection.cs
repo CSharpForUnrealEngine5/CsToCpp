@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A 3D Path section</summary>
 [CppInclude("Sections/MovieScene3DPathSection.h")]
 public partial class UMovieScene3DPathSection : UMovieScene3DConstraintSection {
+	public static UClass StaticClass() {return default;}
 	///<summary>Timing Curve</summary>
 	public FMovieSceneFloatChannel TimingCurve;
 	///<summary>Front Axis</summary>

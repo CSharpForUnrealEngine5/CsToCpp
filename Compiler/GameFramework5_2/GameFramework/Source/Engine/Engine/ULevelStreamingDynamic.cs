@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Engine/LevelStreamingDynamic.h")]
 public partial class ULevelStreamingDynamic : ULevelStreaming {
+	public static UClass StaticClass() {return default;}
 	///<summary>Whether the level should be loaded at startup</summary>
 	public bool bInitiallyLoaded;
 	///<summary>Whether the level should be visible at startup if it is loaded</summary>

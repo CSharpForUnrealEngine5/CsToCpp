@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Simple object intended to be used as part of 3D Gizmos.</summary>
 [CppInclude("BaseGizmos/GizmoElementCircle.h")]
 public partial class UGizmoElementCircle : UGizmoElementCircleBase {
+	public static UClass StaticClass() {return default;}
 	///<summary>Whether to render solid circle.</summary>
 	public bool bDrawMesh;
 	///<summary>Whether to render line circle.</summary>

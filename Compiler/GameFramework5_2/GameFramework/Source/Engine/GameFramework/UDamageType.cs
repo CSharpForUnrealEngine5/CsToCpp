@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A DamageType is intended to define and describe a particular form of damage and to provide an avenue</summary>
 [CppInclude("GameFramework/DamageType.h")]
 public partial class UDamageType : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>True if this damagetype is caused by the world (falling off level, into lava, etc).</summary>
 	public bool bCausedByWorld;
 	///<summary>True to scale imparted momentum by the receiving pawn&#39;s mass for pawns using character movement</summary>

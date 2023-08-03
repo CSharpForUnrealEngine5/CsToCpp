@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("CubeGridTool.h")]
 public partial class UCubeGridToolActions : UInteractiveToolPropertySet {
+	public static UClass StaticClass() {return default;}
 	///<summary>Can also be invoked with E.</summary>
 	public  void Pull() {}
 	///<summary>Can also be invoked with Q.</summary>

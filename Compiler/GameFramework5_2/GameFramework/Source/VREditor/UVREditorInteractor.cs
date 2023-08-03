@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>VREditor default interactor</summary>
 [CppInclude("VREditorInteractor.h")]
 public partial class UVREditorInteractor : UViewportInteractor {
+	public static UClass StaticClass() {return default;}
 	///<summary>Initialize default values</summary>
 	public  void Init(UVREditorMode InVRMode) {}
 	///<summary>Sets up all components</summary>

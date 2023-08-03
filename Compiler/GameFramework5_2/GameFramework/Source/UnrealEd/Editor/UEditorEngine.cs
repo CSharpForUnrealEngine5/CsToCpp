@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Editor/EditorEngine.h")]
 public partial class UEditorEngine : UEngine {
+	public static UClass StaticClass() {return default;}
 	///<summary>Objects.</summary>
 	public UModel TempModel;
 	///<summary>ConversionTempModel</summary>

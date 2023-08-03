@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>The Dataprep Filter a base class for the Dataprep selection system</summary>
 [CppInclude("SelectionSystem/DataprepFilter.h")]
 public partial class UDataprepFilterNoFetcher : UDataprepParameterizableObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Allows to change the name of the filter for the ui if needed.</summary>
 	public  string GetDisplayFilterName() { return default; }
 	///<summary>The name displayed on node title.</summary>

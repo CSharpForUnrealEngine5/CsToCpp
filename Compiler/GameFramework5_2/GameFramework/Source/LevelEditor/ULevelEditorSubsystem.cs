@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>ULevelEditorSubsystem</summary>
 [CppInclude("LevelEditorSubsystem.h")]
 public partial class ULevelEditorSubsystem : UEditorSubsystem {
+	public static UClass StaticClass() {return default;}
 	///<summary>PilotLevelActor</summary>
 	public  void PilotLevelActor(AActor ActorToPilot,string ViewportConfigKey/*=NAME_None*/) {}
 	///<summary>EjectPilotLevelActor</summary>

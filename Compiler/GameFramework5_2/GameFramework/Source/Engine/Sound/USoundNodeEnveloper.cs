@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Allows manipulation of volume and pitch over a set time period</summary>
 [CppInclude("Sound/SoundNodeEnveloper.h")]
 public partial class USoundNodeEnveloper : USoundNode {
+	public static UClass StaticClass() {return default;}
 	///<summary>The time in seconds where the envelope&#39;s loop begins.</summary>
 	public float LoopStart;
 	///<summary>The time in seconds where the envelope&#39;s loop ends.</summary>

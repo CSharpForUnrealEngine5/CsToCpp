@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A component that handles rendering and collision for a single instance of a UPaperTileMap asset.</summary>
 [CppInclude("PaperTileMapComponent.h")]
 public partial class UPaperTileMapComponent : UMeshComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>MapWidth_DEPRECATED</summary>
 	public int MapWidth_DEPRECATED;
 	///<summary>MapHeight_DEPRECATED</summary>

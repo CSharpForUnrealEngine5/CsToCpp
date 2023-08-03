@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("AnimationSharingManager.h")]
 public partial class UAnimSharingInstance : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Actors currently registered to be animation driven by the AnimManager using this setup</summary>
 	public TArray<AActor> RegisteredActors;
 	///<summary>(Blueprint)class instance used for determining the state enum value for each registered actor</summary>

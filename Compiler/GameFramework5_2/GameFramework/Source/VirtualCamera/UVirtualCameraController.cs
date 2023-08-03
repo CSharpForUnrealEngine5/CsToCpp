@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("IVirtualCameraController.h")]
 public partial class UVirtualCameraController : UInterface {
+	public static UClass StaticClass() {return default;}
 	///<summary>Returns the target camera that is used to create the streamed view.</summary>
 	public  UCineCameraComponent GetStreamedCameraComponent() { return default; }
 	///<summary>GetSceneCaptureComponent</summary>

@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>UDatasmithMeshElement defines an actual geometry.</summary>
 [CppInclude("ObjectElements/DatasmithUObjectElements.h")]
 public partial class UDatasmithMeshElement : UDatasmithObjectElement {
+	public static UClass StaticClass() {return default;}
 	///<summary>Get the output filename, it can be absolute or relative to the scene file</summary>
 	public  string GetFile() { return default; }
 	///<summary>Get the bounding box width</summary>

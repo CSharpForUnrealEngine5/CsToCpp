@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Particles/ParticleLODLevel.h")]
 public partial class UParticleLODLevel : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>The index value of the LOD level</summary>
 	public int Level;
 	///<summary>True if the LOD level is enabled, meaning it should be updated and rendered.</summary>

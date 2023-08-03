@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Data Interface used to collide against static meshes - whether it is the mesh distance field or a physics asset&#39;s collision primitive</summary>
 [CppInclude("NiagaraDataInterfaceRigidMeshCollisionQuery.h")]
 public partial class UNiagaraDataInterfaceRigidMeshCollisionQuery : UNiagaraDataInterface {
+	public static UClass StaticClass() {return default;}
 	///<summary>Tag_DEPRECATED</summary>
 	public string Tag_DEPRECATED;
 	///<summary>Set of tags used to match against actors when searching for RigidBody providers.  Empty tags will be ignored, and only a single</summary>

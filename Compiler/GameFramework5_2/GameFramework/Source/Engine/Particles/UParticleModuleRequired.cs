@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Particles/ParticleModuleRequired.h")]
 public partial class UParticleModuleRequired : UParticleModule {
+	public static UClass StaticClass() {return default;}
 	///<summary>The material to utilize for the emitter at this LOD level.</summary>
 	public UMaterialInterface Material;
 	///<summary>The distance at which PSA_FacingCameraDistanceBlend    is fully PSA_Square</summary>

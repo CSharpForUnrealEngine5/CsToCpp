@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Blueprint API interface implementation</summary>
 [CppInclude("Blueprints/DisplayClusterBlueprintAPIImpl.h")]
 public partial class UDisplayClusterBlueprintAPIImpl : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>DisplayCluster module API</summary>
 	public  bool IsModuleInitialized() { return default; }
 	///<summary>Runtime Cluster API</summary>

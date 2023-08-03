@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>GameInstance: high-level manager object for an instance of the running game.</summary>
 [CppInclude("Engine/GameInstance.h")]
 public partial class UGameInstance : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>List of locally participating players in this game instance</summary>
 	public TArray<ULocalPlayer> LocalPlayers;
 	///<summary>Class to manage online services</summary>

@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Utility object for moving physics objects around.</summary>
 [CppInclude("PhysicsEngine/PhysicsHandleComponent.h")]
 public partial class UPhysicsHandleComponent : UActorComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>Component we are currently holding</summary>
 	public UPrimitiveComponent GrabbedComponent;
 	///<summary>bSoftAngularConstraint</summary>

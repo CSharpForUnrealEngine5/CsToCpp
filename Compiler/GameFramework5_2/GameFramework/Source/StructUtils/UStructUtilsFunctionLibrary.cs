@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("StructUtilsFunctionLibrary.h")]
 public partial class UStructUtilsFunctionLibrary : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>Create a new InstancedStruct from the given source value.</summary>
 	public static FInstancedStruct MakeInstancedStruct(int Value) { return default; }
 	///<summary>Sets the value of InstancedStruct from the given source value.</summary>

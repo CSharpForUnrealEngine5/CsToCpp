@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Standard properties</summary>
 [CppInclude("UVProjectionTool.h")]
 public partial class UUVProjectionToolProperties : UInteractiveToolPropertySet {
+	public static UClass StaticClass() {return default;}
 	///<summary>Shape and/or algorithm to use for UV projection</summary>
 	public EUVProjectionMethod ProjectionType;
 	///<summary>Width, length, and height of the projection shape before rotation</summary>

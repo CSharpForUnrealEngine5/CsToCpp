@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Sound/SoundMix.h")]
 public partial class USoundMix : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Whether to apply the EQ effect</summary>
 	public bool bApplyEQ;
 	///<summary>EQPriority</summary>

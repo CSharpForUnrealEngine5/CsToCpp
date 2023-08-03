@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>A single movie scene section which can contain data for multiple named parameters.</summary>
 [CppInclude("Sections/MovieSceneParameterSection.h")]
 public partial class UMovieSceneParameterSection : UMovieSceneSection {
+	public static UClass StaticClass() {return default;}
 	///<summary>Adds a a key for a specific scalar parameter at the specified time with the specified value.</summary>
 	public  void AddScalarParameterKey(string InParameterName,FFrameNumber InTime,float InValue) {}
 	///<summary>Adds a a key for a specific bool parameter at the specified time with the specified value.</summary>

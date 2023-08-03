@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>* UDatasmithCameraActorElement</summary>
 [CppInclude("ObjectElements/DatasmithUObjectElements.h")]
 public partial class UDatasmithCameraActorElement : UDatasmithActorElement {
+	public static UClass StaticClass() {return default;}
 	///<summary>Get camera sensor width in millimeters</summary>
 	public  float GetSensorWidth() { return default; }
 	///<summary>Set camera sensor width in millimeters</summary>

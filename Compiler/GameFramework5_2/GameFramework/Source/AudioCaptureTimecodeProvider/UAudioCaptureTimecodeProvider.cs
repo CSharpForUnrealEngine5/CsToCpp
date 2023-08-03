@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Read the LTC from the audio capture device.</summary>
 [CppInclude("AudioCaptureTimecodeProvider.h")]
 public partial class UAudioCaptureTimecodeProvider : UGenlockedTimecodeProvider {
+	public static UClass StaticClass() {return default;}
 	///<summary>Detect the frame rate from the audio source.</summary>
 	public bool bDetectFrameRate;
 	///<summary>When detecting the frame rate. Assume the frame rate is a drop frame format.</summary>

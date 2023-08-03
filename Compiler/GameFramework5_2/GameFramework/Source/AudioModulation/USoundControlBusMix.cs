@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("SoundControlBusMix.h")]
 public partial class USoundControlBusMix : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>Loads the mix from the provided profile index</summary>
 	public  void LoadMixFromProfile() {}
 	///<summary>Saves the mix to the provided profile index</summary>

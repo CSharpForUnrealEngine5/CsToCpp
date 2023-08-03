@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("NUTActor.h")]
 public partial class ANUTActor : AActor {
+	public static UClass StaticClass() {return default;}
 	///<summary>A delegate property, used solely for converting strings to delegates</summary>
 	public FExecuteOnServer TempDelegate;
 	///<summary>Executes a console command on the server</summary>

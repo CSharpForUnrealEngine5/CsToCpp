@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Encapsulates NavLinkCustomInterface interface, can be used with Actors not relevant for navigation</summary>
 [CppInclude("NavLinkCustomComponent.h")]
 public partial class UNavLinkCustomComponent : UNavRelevantComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>link Id assigned by navigation system</summary>
 	public uint NavLinkUserId;
 	///<summary>area class to use when link is enabled</summary>

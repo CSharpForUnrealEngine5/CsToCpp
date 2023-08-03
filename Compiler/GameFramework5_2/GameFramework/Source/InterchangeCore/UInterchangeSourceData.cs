@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>* Helper class to be able to read different source data</summary>
 [CppInclude("InterchangeSourceData.h")]
 public partial class UInterchangeSourceData : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>GetFilename</summary>
 	public  string GetFilename() { return default; }
 	///<summary>SetFilename</summary>

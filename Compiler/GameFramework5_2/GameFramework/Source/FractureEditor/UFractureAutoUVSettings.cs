@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Settings for UV layout and texture baking on the geometry collection *</summary>
 [CppInclude("FractureToolUV.h")]
 public partial class UFractureAutoUVSettings : UFractureToolSettings {
+	public static UClass StaticClass() {return default;}
 	///<summary>Which UV channel to use for layout and baking</summary>
 	public string UVChannel;
 	///<summary>GetUVChannelNamesFunc</summary>

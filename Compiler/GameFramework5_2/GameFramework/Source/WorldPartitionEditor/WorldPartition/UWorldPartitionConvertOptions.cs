@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("WorldPartition/WorldPartitionConvertOptions.h")]
 public partial class UWorldPartitionConvertOptions : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>CommandletClass</summary>
 	public UClass CommandletClass;
 	///<summary>Wether the conversion should create a new map with a _WP suffix or overwrite the source map</summary>

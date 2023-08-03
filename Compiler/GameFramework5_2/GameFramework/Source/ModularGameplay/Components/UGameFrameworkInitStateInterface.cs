@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Components/GameFrameworkInitStateInterface.h")]
 public partial class UGameFrameworkInitStateInterface : UInterface {
+	public static UClass StaticClass() {return default;}
 	///<summary>Returns the feature this object implements, this interface is only meant for simple objects with a single feature like Actor</summary>
 	public  string GetFeatureName() { return default; }
 	///<summary>Returns the current feature state of this object, the default behavior is to query the manager</summary>

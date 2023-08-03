@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("CineSplineMetadata.h")]
 public partial class UCineSplineMetadata : USplineMetadata {
+	public static UClass StaticClass() {return default;}
 	///<summary>AbsolutePosition</summary>
 	public FInterpCurveFloat AbsolutePosition;
 	///<summary>FocalLength</summary>

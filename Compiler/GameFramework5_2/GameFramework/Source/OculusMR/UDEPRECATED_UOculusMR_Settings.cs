@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("OculusMR_Settings.h")]
 public partial class UDEPRECATED_UOculusMR_Settings : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>ClippingReference</summary>
 	public EOculusMR_ClippingReference ClippingReference;
 	///<summary>bUseTrackedCameraResolution</summary>

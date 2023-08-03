@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("BehaviorTree/BTCompositeNode.h")]
 public partial class UBTCompositeNode : UBTNode {
+	public static UClass StaticClass() {return default;}
 	///<summary>child nodes</summary>
 	public TArray<FBTCompositeChild> Children;
 	///<summary>service nodes</summary>

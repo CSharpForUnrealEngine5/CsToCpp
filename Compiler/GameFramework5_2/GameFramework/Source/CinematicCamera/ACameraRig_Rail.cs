@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("CameraRig_Rail.h")]
 public partial class ACameraRig_Rail : AActor {
+	public static UClass StaticClass() {return default;}
 	///<summary>Defines current position of the mount point along the rail, in terms of normalized distance from the beginning of the rail.</summary>
 	public float CurrentPositionOnRail;
 	///<summary>Determines whether the orientation of the mount should be in the direction of the rail.</summary>

@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("VPBookmarkEditorBlueprintLibrary.h")]
 public partial class UVPBookmarkEditorBlueprintLibrary : UBlueprintFunctionLibrary {
+	public static UClass StaticClass() {return default;}
 	///<summary>JumpToBookmarkInLevelEditor</summary>
 	public static bool JumpToBookmarkInLevelEditor(UVPBookmark Bookmark) { return default; }
 	///<summary>JumpToBookmarkInLevelEditorByIndex</summary>

@@ -3,6 +3,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("MuCO/CustomizableInstancePrivateData.h")]
 public partial class UCustomizableInstancePrivateData : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>GeneratedMaterials</summary>
 	public TArray<FGeneratedMaterial> GeneratedMaterials;
 	///<summary>GeneratedTextures</summary>

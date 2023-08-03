@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>The GameModeBase defines the game being played. It governs the game rules, scoring, what actors</summary>
 [CppInclude("GameFramework/GameModeBase.h")]
 public partial class AGameModeBase : AInfo {
+	public static UClass StaticClass() {return default;}
 	///<summary>Save options string and parse it when needed</summary>
 	public string OptionsString;
 	///<summary>Returns default pawn class for given controller</summary>

@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Abstract base class of all Engine classes, responsible for management of systems critical to editor or game systems.</summary>
 [CppInclude("Engine/Engine.h")]
 public partial class UEngine : UObject {
+	public static UClass StaticClass() {return default;}
 	///<summary>TinyFont</summary>
 	public UFont TinyFont;
 	///<summary>Sets the font used for the smallest engine text</summary>

@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>This component is updated by the ARSystem with face data on devices that have support for it</summary>
 [CppInclude("AppleARKitFaceMeshComponent.h")]
 public partial class UAppleARKitFaceMeshComponent : UProceduralMeshComponent {
+	public static UClass StaticClass() {return default;}
 	///<summary>Create the initial face mesh from raw mesh data</summary>
 	public  void CreateMesh(TArray<FVector> Vertices,TArray<int> Triangles,TArray<FVector2D> UV0) {}
 	///<summary>Set all of the blend shapes for this instance from a set of blend shapes</summary>

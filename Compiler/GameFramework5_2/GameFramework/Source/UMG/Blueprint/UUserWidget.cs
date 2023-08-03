@@ -4,6 +4,7 @@ using CSharpToCpp.Utilities;
 ///<summary>The user widget is extensible by users through the WidgetBlueprint.</summary>
 [CppInclude("Blueprint/UserWidget.h")]
 public partial class UUserWidget : UWidget {
+	public static UClass StaticClass() {return default;}
 	///<summary>Adds it to the game&#39;s viewport and fills the entire screen, unless SetDesiredSizeInViewport is called</summary>
 	public  void AddToViewport(int ZOrder/*=0*/) {}
 	///<summary>Adds the widget to the game&#39;s viewport in a section dedicated to the player.  This is valuable in a split screen</summary>
