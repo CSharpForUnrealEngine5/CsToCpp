@@ -22,6 +22,9 @@ public partial class UObject
     public T Code<T>(string cppCode) { return default(T); }
     public string TEXT(string Text) { return Text; }
 
+    [CppCode("GameViewport", "GEngine->GameViewport")]
+    public UViewport GameViewport;
+
     [CppCode("Log", "GLog->Log")]
     public void Log(string message) { }
 

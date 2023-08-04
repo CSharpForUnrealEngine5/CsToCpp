@@ -6,6 +6,9 @@ using CSharpToCpp.Utilities;
 public partial class APawn
 {
     public virtual UPawnMovementComponent GetPawnMovementComponent() { return default; }
+    /** Allows a Pawn to set up custom input bindings. Called upon possession by a PlayerController, using the InputComponent created by CreatePlayerInputComponent(). */
+    protected virtual void SetupPlayerInputComponent(UInputComponent PlayerInputComponent) { /* No bindings by default.*/ }
+
 }
 
 [CppInclude("Components/CapsuleComponent.h","GameFramework/CharacterMovementComponent.h")]

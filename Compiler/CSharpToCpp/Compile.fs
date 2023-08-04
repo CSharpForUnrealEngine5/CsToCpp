@@ -339,7 +339,10 @@ let compileInterpolatedStringExpression m tOrS es =
                         let (e',(ty,sy)) = compileExpression m e
                         match ty.Name.ToLower() with
                         | "int32" -> $"FString::FromInt({e'})"
-                        | _ -> NotSupportedException(e, "Interpolated string", "") |> raise
+                        | "single" -> $"FString::SanitizeFloat({e'})"
+                        | "double" -> $"FString::SanitizeFloat({e'})"
+                        | "string" -> e'
+                        | _ -> NotSupportedException(e, $"Interpolated string {e'}", "") |> raise
                     | _ -> NotSupportedException(e, "Interpolated string", "") |> raise
                 ) 
     let ss' = String.Join("+",ss)

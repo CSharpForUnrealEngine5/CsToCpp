@@ -1,0 +1,14 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\unrealengine\\dev\\courses\\rtsproject\\plugins\\cstocpp\\source\\cstocpp\\private\\cstocpp.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\unrealengine\\dev\\courses\\rtsproject\\intermediate\\build\\win64\\x64\\rtsprojecteditor\\debuggame\\engine\\sharedpch.engine.nonoptimized.shadowerrors.inclorderunreal5_1.h.pch",
+        "Includes": [
+            "c:\\unrealengine\\dev\\courses\\rtsproject\\plugins\\cstocpp\\intermediate\\build\\win64\\x64\\unrealeditor\\debuggame\\cstocpp\\definitions.cstocpp.h",
+            "c:\\unrealengine\\dev\\courses\\rtsproject\\plugins\\cstocpp\\source\\cstocpp\\public\\cstocpp.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}
