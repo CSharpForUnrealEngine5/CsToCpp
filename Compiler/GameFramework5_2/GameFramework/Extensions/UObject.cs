@@ -43,11 +43,70 @@ public partial class UObject
     public T Cast<T>(object o) { return default(T); }
     public T CastChecked<T>(object o) { return default; }
 
-    public virtual void BeginDestroy() { throw new NotImplementedException(); }
+    public virtual void BeginDestroy() {}
 
-    public string GetFName() { throw new NotImplementedException(); }
+    public string GetFName() { return default; }
+    public string GetName() { return default; }
 
-    public static void FlushPersistentDebugLines(UWorld InWorld) { }
+    public bool IsValidLowLevel() { return default; }
+
+    public UClass GetClass() { return default; }
+    /// <summary>
+    ///  Add an object to the root set. This prevents the object and all
+	/// its descendants from being deleted during garbage collection.
+    /// </summary>
+    public void AddToRoot() { }
+    /// <summary>
+    /// Remove an object from the root set.
+    /// </summary>
+    public void RemoveFromRoot() { }
+    /// <summary>
+    /// Returns true if this object is explicitly rooted
+    /// </summary>
+    /// <returns></returns>
+    public bool IsRooted() { return false; }
+    /// <summary>
+    /// Returns the fully qualified pathname for this object as well as the name of the class, in the format:
+	/// 'ClassName Outermost[.Outer].Name'.
+    /// </summary>
+    /// <param name="StopOuter"></param>
+    /// <returns></returns>
+    public string GetFullName( UObject StopOuter = null) { return ""; }
+    /// <summary>
+    /// Walks up the list of outers until it finds a package directly associated with the object.
+    /// </summary>
+    /// <returns></returns>
+    public UPackage GetPackage() { return default; }
+    /// <summary>
+    /// Returns true if the object is contained in the specified outer. 
+    /// </summary>
+    /// <param name="SomeOuter"></param>
+    /// <returns></returns>
+    public bool IsInOuter(UObject SomeOuter) { return false; }
+    /// <summary>
+    /// Returns true if the object is contained in the specified package.
+    /// </summary>
+    /// <param name="SomePackage"></param>
+    /// <returns></returns>
+    public bool IsInPackage( UPackage SomePackage) { return false; }
+    /// <summary>
+    /// Returns true if this object is of the specified type.
+    /// </summary>
+    /// <param name="SomeBaseClass"></param>
+    /// <returns></returns>
+    public bool IsInA( UClass SomeBaseClass ) { return false; }
+    /// <summary>
+    /// Returns true if this object is of the specified type.
+    /// </summary>
+    /// <typeparam name="OtherClassType"></typeparam>
+    /// <param name="SomeBase"></param>
+    /// <returns></returns>
+    public bool IsA<OtherClassType>(OtherClassType SomeBase) { return false; }
+    /// <summary>
+    /// Returns whether this component was instanced from a component/subobject template, or if it is a component/subobject template.
+    /// </summary>
+    /// <returns></returns>
+    public bool IsDefaultSubobject() { return false; }
     public static void DrawDebugLine(UWorld InWorld, FVector LineStart, FVector LineEnd, FColor Color, bool bPersistentLines = false, float LifeTime = -1.0f, int DepthPriority = 0, float Thickness = 0.0f) { }
     public static void DrawDebugPoint(UWorld InWorld, FVector Position, float Size, FColor PointColor, bool bPersistentLines = false, float LifeTime = -1.0f, int DepthPriority = 0) { }
     public static void DrawDebugDirectionalArrow(UWorld InWorld, FVector LineStart, FVector LineEnd, float ArrowSize, FColor Color, bool bPersistentLines = false, float LifeTime = -1.0f, int DepthPriority = 0, float Thickness = 0.0f) { }
