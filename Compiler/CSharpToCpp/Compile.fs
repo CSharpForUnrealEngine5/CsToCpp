@@ -239,6 +239,11 @@ let compileExpression m expr : (string*(ITypeSymbol*ISymbol))=
     let ds = m.GetSymbolInfo expr
     let tOrS = (ty.Type,ds.Symbol)
     match expr with
+    | ConditionalExpression (e1,_,e2,_,e3) ->
+        let (e1',_) = compileExpression m e1
+        let (e2',_) = compileExpression m e2
+        let (e3',_) = compileExpression m e3
+        ($"{e1'}?{e2'}:{e3'}",tOrS)
     | MemberAccessExpression (expr,_,id) ->
         let (l,(ety,esy)) = compileExpression m expr
         let (id,ity) = compileExpression m id

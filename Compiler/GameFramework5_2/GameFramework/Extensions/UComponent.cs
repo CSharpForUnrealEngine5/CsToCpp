@@ -15,8 +15,16 @@ public partial class UActorComponent : UObject
     public UWorld GetWorld() { return default; }
 
     public virtual void TickComponent(float Delta, ELevelTick TickType, [CppPointer] FActorComponentTickFunction ThisTickFunction) { }
+
+    public T GetOwner<T>() { return default; }
 }
-    public partial class UCapsuleComponent : UShapeComponent
+public partial class UPrimitiveComponent : USceneComponent
+{
+}
+public partial class UShapeComponent : UPrimitiveComponent
+{
+}
+public partial class UCapsuleComponent : UShapeComponent
 {
     public void InitCapsuleSize(float InRadius, float InHalfHeight) { }
 }
