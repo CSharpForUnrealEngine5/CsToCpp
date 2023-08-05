@@ -18,16 +18,6 @@ public partial class UActorComponent : UObject
 
     public T GetOwner<T>() { return default; }
 }
-public partial class UPrimitiveComponent : USceneComponent
-{
-}
-public partial class UShapeComponent : UPrimitiveComponent
-{
-}
-public partial class UCapsuleComponent : UShapeComponent
-{
-    public void InitCapsuleSize(float InRadius, float InHalfHeight) { }
-}
 
 public partial class USceneComponent : UActorComponent
 {
@@ -38,10 +28,37 @@ public partial class USceneComponent : UActorComponent
     public void SetUsingAbsoluteRotation(bool bInAbsoluteRotation) { }
     public void SetRelativeRotation(FRotator NewRotation, bool bSweep = false) { }
 
+    public void SetRelativeRotation(FRotator NewRotation) { }
+    public void SetRelativeTransform(FTransform NewTransform) { }
+    public void AddRelativeLocation(FVector DeltaLocation) { }
+    public void AddRelativeRotation(FRotator DeltaRotation) { }
+    public void AddLocalOffset(FVector DeltaLocation) { }
+    public void AddLocalRotation(FRotator DeltaRotation) { }
+    public void AddLocalTransform(FTransform DeltaTransform) { }
+    public void SetWorldLocation(FVector NewLocation) { }
+    public void SetWorldRotation(FRotator NewRotation) { }
+
+    public void SetWorldTransform(FTransform NewTransform) { }
+    public void AddWorldOffset(FVector DeltaLocation) { }
+    public void AddWorldRotation(FRotator DeltaRotation) { }
+    public void AddWorldTransform(FTransform DeltaTransform) { }
+    public void AddWorldTransformKeepScale(FTransform DeltaTransform) { }
 
     public void AttachToComponent(USceneComponent Parent, FAttachmentTransformRules AttachmentRules, string SocketName) { }
 
     public FRotator GetComponentRotation() { return default; }
+}
+
+
+public partial class UPrimitiveComponent : USceneComponent
+{
+}
+public partial class UShapeComponent : UPrimitiveComponent
+{
+}
+public partial class UCapsuleComponent : UShapeComponent
+{
+    public void InitCapsuleSize(float InRadius, float InHalfHeight) { }
 }
 
 public partial class USpringArmComponent : USceneComponent
