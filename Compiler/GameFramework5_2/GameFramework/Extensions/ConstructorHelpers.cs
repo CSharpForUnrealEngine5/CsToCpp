@@ -3,6 +3,16 @@ namespace GameFramework;
 
 public partial struct ConstructorHelpers
 {
+
+    public struct FClassFinder<T>
+    {
+        public T Class;
+
+        public FClassFinder(string ClassToFind) {
+            Class = default;
+        }
+        public bool Succeeded() { return false; }
+    }
     public struct FObjectFinder<T>
     {
         public FObjectFinder(string path) {
