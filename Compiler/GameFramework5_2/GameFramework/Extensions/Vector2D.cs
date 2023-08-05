@@ -9,4 +9,9 @@ public partial struct FVector2D
     public static FVector2D UnitVector;
     public static FVector2D Unit45Vector;
 
+    public static FVector2D operator *(FVector2D v, float f) { return new FVector2D(); }
+    public static FVector2D operator +(FVector2D v, FVector2D f) { return new FVector2D(); }
+    public static FVector2D operator -(FVector2D v, FVector2D f) { return new FVector2D(); }
+
+
 }

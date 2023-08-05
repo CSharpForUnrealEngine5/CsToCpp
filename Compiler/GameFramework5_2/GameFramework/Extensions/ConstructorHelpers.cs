@@ -6,7 +6,7 @@ public partial struct ConstructorHelpers
 
     public struct FClassFinder<T>
     {
-        public T Class;
+        public UClass Class;
 
         public FClassFinder(string ClassToFind) {
             Class = default;
