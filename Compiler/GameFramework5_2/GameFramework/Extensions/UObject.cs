@@ -35,6 +35,8 @@ public partial class UObject
     public void Log(string category, ELogVerbosity verbosity, string message) { }
     [CppCode("AddOnScreenDebugMessage", "GEngine->AddOnScreenDebugMessage")]
     public void AddOnScreenDebugMessage(int Key, float TimeToDisplay, FColor DisplayColor, string DebugMessage, bool bNewerOnTop, FVector2D TextScale) { }
+    [CppCode("AddOnScreenDebugMessage", "GEngine->AddOnScreenDebugMessage")]
+    public void AddOnScreenDebugMessage(int Key, float TimeToDisplay, FColor DisplayColor, string DebugMessage) { }
 
     public T CreateDefaultSubobject<T>(string SubobjectName, bool bTransient = false) { return default(T); }
 
