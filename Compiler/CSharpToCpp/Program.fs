@@ -23,8 +23,10 @@ let compileProject (p : string) =
 
     let runtime = getAssembly "System.Runtime"
     let gameFramework = getAssembly "GameFramework"
+    let enumerationOptions = EnumerationOptions()
+    enumerationOptions.RecurseSubdirectories <- true
     let trees =
-       Directory.GetFiles(p,"*.cs") |> Seq.map
+       Directory.GetFiles(p,"*.cs",enumerationOptions) |> Seq.map
             (fun file ->
                 let source = File.ReadAllText file
                 let tree = 

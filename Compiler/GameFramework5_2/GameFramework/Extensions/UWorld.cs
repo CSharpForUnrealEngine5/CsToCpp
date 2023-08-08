@@ -7,9 +7,12 @@ public partial class UWorld
 
     public T SpawnActor<T>(FActorSpawnParameters p = new FActorSpawnParameters()) { return default; }
 
-    public T SpawnActor<T>(UObject klass, FVector location, FRotator rotation, FActorSpawnParameters p) { return default(T); }
+    public T SpawnActor<T>(UObject klass, FVector location, FRotator rotation, FActorSpawnParameters p) { return default; }
 
     public float GetDeltaSeconds() { return 0; }
+
+    public UMaterialParameterCollectionInstance GetParameterCollectionInstance(UMaterialParameterCollection Collection) { return default; }
+
 }
 
 public struct FActorSpawnParameters

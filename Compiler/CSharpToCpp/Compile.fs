@@ -192,6 +192,16 @@ let rec compileStatement m stmt : unit =
             compileStatement m elseClause.Statement
     | ExpressionStatement (b,attrList,e,_) ->
         cpp.Add $"{compileExpressionText m e};"
+    | :? ForStatementSyntax as f->
+        let decl = compileVarDeclsToString m f.Declaration
+        let inits = f.Initializers |> Seq.cast<ExpressionSyntax> |> Seq.map (compileExpressionText m)
+        let inits = String.Join(",", inits)
+        let (cond,_) = compileExpression m f.Condition
+        let incs = f.Incrementors |> Seq.cast<ExpressionSyntax> |> Seq.map (compileExpressionText m)
+        let incs = String.Join(",", incs)
+        cpp.Add $"for({decl};{cond};{incs})"
+        compileStatement m f.Statement
+        ()
     | :?BlockSyntax as b ->
         compileBlock m b
     | _ -> NotSupportedException(stmt, "Statement not supported", "") |> raise
@@ -199,12 +209,8 @@ let rec compileStatement m stmt : unit =
 let compileVariableDeclaration m decl : unit =
     let v = compileVarDecls m decl true
     ()
-    
-let compileVarDecls m varDecl isLocal =
-    let h_ = h
-    let cpp_ = cpp
-    let includes_ = includes
-    //TODO: Builtin types, enums, etc.
+  
+let compileVarDeclsToString m (varDecl : VariableDeclarationSyntax) =
     let vs = varDecl.ChildNodes()
     let tn = vs |> Seq.take 1 |> Seq.exactlyOne
 
@@ -213,13 +219,21 @@ let compileVarDecls m varDecl isLocal =
                 |> List.ofSeq
     let vs = String.Join(",", vs)
 
-    let (ty,uprop) = compileType m tn
+    let (ty,_) = compileType m tn
+    $"{ty} {vs}"
+
+let compileVarDecls m varDecl isLocal =
+    let h_ = h
+    let cpp_ = cpp
+    let includes_ = includes
+    //TODO: Builtin types, enums, etc.
+    let str = compileVarDeclsToString m varDecl
     if isLocal then
-        cpp.Add $"{ty} {vs};"
+        cpp.Add $"{str};"
     else
         //if uprop then
         h.Add "UPROPERTY(BlueprintReadWrite,EditAnywhere)"
-        h.Add $"{ty} {vs};"
+        h.Add $"{str};"
 
 let compileVariableDeclarator m (vdecl : VariableDeclaratorSyntax) =
     match vdecl with
@@ -317,14 +331,21 @@ let compileExpression m expr : (string*(ITypeSymbol*ISymbol))=
     | PostfixUnaryExpression (expr,Token op) ->
         let (e,ety) = compileExpression m expr
         ($"{e}{op}",ety)
-    | ObjectCreationExpression (_,tyId,argsList,initExppr) ->
+    | ObjectCreationExpression (_,tyId,argsList,initExpr) ->
         let (ty',needsNew) = compileType m tyId
         let exList = compileArgsList m argsList
-        let e = $"{ty'}({exList})"
+        let initExpr' = compileInitExpression m initExpr
+        let e = $"{ty'}({exList}){initExpr'}"
         if needsNew then
             ($"new {e}",tOrS)
         else
             (e,tOrS)
+    | ImplicitObjectCreationExpression (_,argsList,initExpr) ->
+        let tyStr = ty.Type.ToString().Replace("GameFramework.","").Replace(".","::")
+        let exList = compileArgsList m argsList
+        let initExpr' = compileInitExpression m initExpr
+        let e = $"{tyStr}({exList}){initExpr'}"
+        (e,tOrS)
     | CastExpression (_,ty,_,expr) ->
         let (ty',needsNew) = compileType m ty
         let (e,ety) = compileExpression m expr
@@ -333,7 +354,16 @@ let compileExpression m expr : (string*(ITypeSymbol*ISymbol))=
     | InterpolatedStringExpression (_,es,_) -> 
         compileInterpolatedStringExpression m tOrS es
     | e -> NotSupportedException(e, "Expression not supported", "") |> raise
-   
+  
+let compileInitExpression m initExpr =
+    if initExpr = null then
+        ""
+    else
+        let exprs = initExpr.Expressions |> Seq.cast<ExpressionSyntax> |> Seq.map (compileExpression m)
+                    |> Seq.map (fun (e,_) -> $".{e}")
+        let exprs' = String.Join(",",exprs)
+        $"={{{exprs'}}}"
+
 let compileInterpolatedStringExpression m tOrS es =
     let ss = es |> List.map 
                 (fun e -> 
@@ -433,6 +463,13 @@ let rec compileType (m : SemanticModel) (tn : SyntaxNode)
     | QualifiedName (Identifier name, _, qn)->
         let (qn',(ty,sy)) = compileExpression m qn
         ($"{name[0]}::{qn'}",false)
+    | GenericName (b,Token id,typeArgList) ->
+        let f (ty : TypeSyntax) =
+            let s = compileType m ty |> fst
+            s.Replace("*","")
+        let args = String.Join(",",
+            typeArgList.Arguments |> Seq.map f)
+        ($"{id}<{args}>",false)
     | NullableType (ty,_) ->
         compileType m ty
     | n -> NotSupportedException(n, "Type not supported", "") |> raise
