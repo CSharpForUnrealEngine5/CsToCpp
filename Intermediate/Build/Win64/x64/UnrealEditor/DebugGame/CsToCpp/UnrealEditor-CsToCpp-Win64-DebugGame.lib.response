@@ -6,7 +6,7 @@
 /NAME:"UnrealEditor-CsToCpp-Win64-DebugGame.dll"
 /IGNORE:4221
 /NODEFAULTLIB
-"C:\UnrealEngine\Dev\Courses\RTSProject\Intermediate\Build\Win64\x64\RTSProjectEditor\DebugGame\Engine\SharedPCH.Engine.NonOptimized.ShadowErrors.InclOrderUnreal5_1.h.obj"
-"C:\UnrealEngine\Dev\Courses\RTSProject\Plugins\CsToCpp\Intermediate\Build\Win64\x64\UnrealEditor\DebugGame\CsToCpp\CsToCpp.cpp.obj"
-"C:\UnrealEngine\Dev\Courses\RTSProject\Plugins\CsToCpp\Intermediate\Build\Win64\x64\UnrealEditor\DebugGame\CsToCpp\Default.rc2.res"
-/OUT:"C:\UnrealEngine\Dev\Courses\RTSProject\Plugins\CsToCpp\Intermediate\Build\Win64\x64\UnrealEditor\DebugGame\CsToCpp\UnrealEditor-CsToCpp-Win64-DebugGame.lib"
+"C:\UnrealEngine\Projects\RTS\Intermediate\Build\Win64\x64\RTSEditor\DebugGame\Engine\SharedPCH.Engine.NonOptimized.ShadowErrors.InclOrderUnreal5_1.h.obj"
+"C:\UnrealEngine\Projects\RTS\Plugins\CsToCpp\Intermediate\Build\Win64\x64\UnrealEditor\DebugGame\CsToCpp\CsToCpp.cpp.obj"
+"C:\UnrealEngine\Projects\RTS\Plugins\CsToCpp\Intermediate\Build\Win64\x64\UnrealEditor\DebugGame\CsToCpp\Default.rc2.res"
+/OUT:"C:\UnrealEngine\Projects\RTS\Plugins\CsToCpp\Intermediate\Build\Win64\x64\UnrealEditor\DebugGame\CsToCpp\UnrealEditor-CsToCpp-Win64-DebugGame.lib"

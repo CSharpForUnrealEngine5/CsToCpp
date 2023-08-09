@@ -33,9 +33,9 @@
 /NODEFAULTLIB:"LIBCD"
 /NODEFAULTLIB:"LIBCPD"
 /FUNCTIONPADMIN:6
-"C:\UnrealEngine\Projects\RTS\Intermediate\Build\Win64\x64\RTSEditor\DebugGame\Engine\SharedPCH.Engine.NonOptimized.ShadowErrors.InclOrderUnreal5_1.h.obj"
-"C:\UnrealEngine\Projects\RTS\Plugins\CsToCpp\Intermediate\Build\Win64\x64\UnrealEditor\DebugGame\CsToCpp\CsToCpp.cpp.obj"
-"C:\UnrealEngine\Projects\RTS\Plugins\CsToCpp\Intermediate\Build\Win64\x64\UnrealEditor\DebugGame\CsToCpp\Default.rc2.res"
+"C:\UnrealEngine\Dev\Courses\RTSProject\Intermediate\Build\Win64\x64\RTSProjectEditor\DebugGame\Engine\SharedPCH.Engine.NonOptimized.ShadowErrors.InclOrderUnreal5_1.h.obj"
+"C:\UnrealEngine\Dev\Courses\RTSProject\Plugins\CsToCpp\Intermediate\Build\Win64\x64\UnrealEditor\DebugGame\CsToCpp\CsToCpp.cpp.obj"
+"C:\UnrealEngine\Dev\Courses\RTSProject\Plugins\CsToCpp\Intermediate\Build\Win64\x64\UnrealEditor\DebugGame\CsToCpp\Default.rc2.res"
 "..\Intermediate\Build\Win64\x64\UnrealEditor\Development\CoreUObject\UnrealEditor-CoreUObject.lib"
 "..\Intermediate\Build\Win64\x64\UnrealEditor\Development\Engine\UnrealEditor-Engine.lib"
 "..\Intermediate\Build\Win64\x64\UnrealEditor\Development\Slate\UnrealEditor-Slate.lib"
@@ -65,7 +65,7 @@
 "setupapi.lib"
 "dwmapi.lib"
 "imm32.lib"
-/OUT:"C:\UnrealEngine\Projects\RTS\Plugins\CsToCpp\Binaries\Win64\UnrealEditor-CsToCpp-Win64-DebugGame.dll"
-/IMPLIB:"C:\UnrealEngine\Projects\RTS\Plugins\CsToCpp\Intermediate\Build\Win64\x64\UnrealEditor\DebugGame\CsToCpp\UnrealEditor-CsToCpp-Win64-DebugGame.suppressed.lib"
-/PDB:"C:\UnrealEngine\Projects\RTS\Plugins\CsToCpp\Binaries\Win64\UnrealEditor-CsToCpp-Win64-DebugGame.pdb"
+/OUT:"C:\UnrealEngine\Dev\Courses\RTSProject\Plugins\CsToCpp\Binaries\Win64\UnrealEditor-CsToCpp-Win64-DebugGame.dll"
+/IMPLIB:"C:\UnrealEngine\Dev\Courses\RTSProject\Plugins\CsToCpp\Intermediate\Build\Win64\x64\UnrealEditor\DebugGame\CsToCpp\UnrealEditor-CsToCpp-Win64-DebugGame.suppressed.lib"
+/PDB:"C:\UnrealEngine\Dev\Courses\RTSProject\Plugins\CsToCpp\Binaries\Win64\UnrealEditor-CsToCpp-Win64-DebugGame.pdb"
 /ignore:4078

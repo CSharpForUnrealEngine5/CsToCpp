@@ -65,11 +65,11 @@
 /DRHI_RAYTRACING=1
 /DNDEBUG=1
 /DUE_BUILD_DEVELOPMENT=1
-/DORIGINAL_FILE_NAME="UnrealEditor-CsToCpp.dll"
+/DORIGINAL_FILE_NAME="UnrealEditor-CsToCpp-Win64-DebugGame.dll"
 /DBUILT_FROM_CHANGELIST=26001984
 /DBUILD_VERSION=++UE5+Release-5.2-CL-26001984
 /DBUILD_ICON_FILE_NAME="\"..\\Build\\Windows\\Resources\\Default.ico\""
 /DPROJECT_COPYRIGHT_STRING="Fill out your copyright notice in the Description page of Project Settings."
-/DPROJECT_PRODUCT_IDENTIFIER=RTS
-/fo "C:\UnrealEngine\Projects\RTS\Plugins\CsToCpp\Intermediate\Build\Win64\x64\UnrealEditor\Development\CsToCpp\Default.rc2.res"
+/DPROJECT_PRODUCT_IDENTIFIER=RTSProject
+/fo "C:\UnrealEngine\Dev\Courses\RTSProject\Plugins\CsToCpp\Intermediate\Build\Win64\x64\UnrealEditor\DebugGame\CsToCpp\Default.rc2.res"
 "..\Build\Windows\Resources\Default.rc2"

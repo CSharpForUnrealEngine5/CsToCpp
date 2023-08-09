@@ -1,6 +1,6 @@
-C:\UnrealEngine\Projects\RTS\Plugins\CsToCpp\Source\CsToCpp\Private\CsToCpp.cpp
+C:\UnrealEngine\Dev\Courses\RTSProject\Plugins\CsToCpp\Source\CsToCpp\Private\CsToCpp.cpp
 /I .
-/I C:\UnrealEngine\Projects\RTS\Plugins\CsToCpp\Source\CsToCpp\Private
+/I C:\UnrealEngine\Dev\Courses\RTSProject\Plugins\CsToCpp\Source\CsToCpp\Private
 /I ..\Intermediate\Build\Win64\UnrealEditor\Inc\CoreUObject\UHT
 /I Runtime\CoreUObject\Public
 /I Runtime
@@ -273,8 +273,8 @@ C:\UnrealEngine\Projects\RTS\Plugins\CsToCpp\Source\CsToCpp\Private\CsToCpp.cpp
 /I Runtime\MovieSceneCapture\Public
 /I ..\Intermediate\Build\Win64\UnrealEditor\Inc\AnimationDataController\UHT
 /I Developer\AnimationDataController\Public
-/I C:\UnrealEngine\Projects\RTS\Plugins\CsToCpp\Source
-/I C:\UnrealEngine\Projects\RTS\Plugins\CsToCpp\Source\CsToCpp\Public
+/I C:\UnrealEngine\Dev\Courses\RTSProject\Plugins\CsToCpp\Source
+/I C:\UnrealEngine\Dev\Courses\RTSProject\Plugins\CsToCpp\Source\CsToCpp\Public
 /external:W0
 /external:I ThirdParty\mimalloc\include
 /external:I ThirdParty\LibTiff\Source\Win64
@@ -284,12 +284,12 @@ C:\UnrealEngine\Projects\RTS\Plugins\CsToCpp\Source\CsToCpp\Private\CsToCpp.cpp
 /external:I "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared"
 /external:I "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um"
 /external:I "C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\winrt"
-/FI"C:\UnrealEngine\Projects\RTS\Intermediate\Build\Win64\x64\RTSEditor\DebugGame\Engine\SharedPCH.Engine.NonOptimized.ShadowErrors.InclOrderUnreal5_1.h"
-/FI"C:\UnrealEngine\Projects\RTS\Plugins\CsToCpp\Intermediate\Build\Win64\x64\UnrealEditor\DebugGame\CsToCpp\Definitions.CsToCpp.h"
-/Yu"C:\UnrealEngine\Projects\RTS\Intermediate\Build\Win64\x64\RTSEditor\DebugGame\Engine\SharedPCH.Engine.NonOptimized.ShadowErrors.InclOrderUnreal5_1.h"
-/Fp"C:\UnrealEngine\Projects\RTS\Intermediate\Build\Win64\x64\RTSEditor\DebugGame\Engine\SharedPCH.Engine.NonOptimized.ShadowErrors.InclOrderUnreal5_1.h.pch"
-/Fo"C:\UnrealEngine\Projects\RTS\Plugins\CsToCpp\Intermediate\Build\Win64\x64\UnrealEditor\DebugGame\CsToCpp\CsToCpp.cpp.obj"
-/sourceDependencies C:\UnrealEngine\Projects\RTS\Plugins\CsToCpp\Intermediate\Build\Win64\x64\UnrealEditor\DebugGame\CsToCpp\CsToCpp.cpp.dep.json
+/FI"C:\UnrealEngine\Dev\Courses\RTSProject\Intermediate\Build\Win64\x64\RTSProjectEditor\DebugGame\Engine\SharedPCH.Engine.NonOptimized.ShadowErrors.InclOrderUnreal5_1.h"
+/FI"C:\UnrealEngine\Dev\Courses\RTSProject\Plugins\CsToCpp\Intermediate\Build\Win64\x64\UnrealEditor\DebugGame\CsToCpp\Definitions.CsToCpp.h"
+/Yu"C:\UnrealEngine\Dev\Courses\RTSProject\Intermediate\Build\Win64\x64\RTSProjectEditor\DebugGame\Engine\SharedPCH.Engine.NonOptimized.ShadowErrors.InclOrderUnreal5_1.h"
+/Fp"C:\UnrealEngine\Dev\Courses\RTSProject\Intermediate\Build\Win64\x64\RTSProjectEditor\DebugGame\Engine\SharedPCH.Engine.NonOptimized.ShadowErrors.InclOrderUnreal5_1.h.pch"
+/Fo"C:\UnrealEngine\Dev\Courses\RTSProject\Plugins\CsToCpp\Intermediate\Build\Win64\x64\UnrealEditor\DebugGame\CsToCpp\CsToCpp.cpp.obj"
+/sourceDependencies C:\UnrealEngine\Dev\Courses\RTSProject\Plugins\CsToCpp\Intermediate\Build\Win64\x64\UnrealEditor\DebugGame\CsToCpp\CsToCpp.cpp.dep.json
 /Zc:inline
 /nologo
 /Oi
