@@ -68,6 +68,7 @@ let rec compileNode m node =
         typeParamConstraintList,_,memDeclList,_,_) ->
         if typeParamList <> null then
             NotSupportedException(node, "Generic classes not supported", "") |> raise
+        dumpLog name m node
         compileClassDeclaration m name baseList memDeclList attrList
     | DelegateDeclaration dd ->
         compileDelegate m dd
@@ -193,7 +194,7 @@ let rec compileStatement m stmt : unit =
     | ExpressionStatement (b,attrList,e,_) ->
         cpp.Add $"{compileExpressionText m e};"
     | :? ForStatementSyntax as f->
-        let decl = compileVarDeclsToString m f.Declaration
+        let (decl,_) = compileVarDeclsToString m f.Declaration
         let inits = f.Initializers |> Seq.cast<ExpressionSyntax> |> Seq.map (compileExpressionText m)
         let inits = String.Join(",", inits)
         let (cond,_) = compileExpression m f.Condition
@@ -215,27 +216,37 @@ let compileVarDeclsToString m (varDecl : VariableDeclarationSyntax) =
     let tn = vs |> Seq.take 1 |> Seq.exactlyOne
 
     let vs = vs |> Seq.skip 1 |> Seq.cast<VariableDeclaratorSyntax>
+    let isStatic = declIsStatic m vs
     let vs = vs |> Seq.map (compileVariableDeclarator m) 
                 |> List.ofSeq
     let vs = String.Join(",", vs)
 
     let (ty,_) = compileType m tn
-    $"{ty} {vs}"
+    let s = if isStatic then "static " else ""
+    ($"{s} {ty} {vs}",isStatic)
+
+let declIsStatic (m : SemanticModel) (vs : VariableDeclaratorSyntax seq) =
+    let f = vs |> Seq.take 1 |> List.ofSeq |> List.exactlyOne
+    let ds = m.GetDeclaredSymbol f
+    ds.IsStatic
 
 let compileVarDecls m varDecl isLocal =
     let h_ = h
     let cpp_ = cpp
     let includes_ = includes
     //TODO: Builtin types, enums, etc.
-    let str = compileVarDeclsToString m varDecl
+    let (str,isStatic) = compileVarDeclsToString m varDecl
     if isLocal then
         cpp.Add $"{str};"
     else
-        //if uprop then
-        h.Add "UPROPERTY(BlueprintReadWrite,EditAnywhere)"
+        //TODO: Add static definition to cpp file
+        // type className::varName;
+        if isStatic |> not then
+            h.Add "UPROPERTY(BlueprintReadWrite,EditAnywhere)"
         h.Add $"{str};"
 
 let compileVariableDeclarator m (vdecl : VariableDeclaratorSyntax) =
+    let ds = m.GetDeclaredSymbol vdecl
     match vdecl with
     | VariableDeclarator (Token id,bracketdArgsList,eqValue) ->
         if eqValue = null then
@@ -353,6 +364,10 @@ let compileExpression m expr : (string*(ITypeSymbol*ISymbol))=
         (estr,tOrS)
     | InterpolatedStringExpression (_,es,_) -> 
         compileInterpolatedStringExpression m tOrS es
+    | ElementAccessExpression (expr, argsList) ->
+        let (e,_) = compileExpression m expr
+        let exList = compileBracketedArgsList m argsList
+        ($"{e}[{exList}]",tOrS)        
     | e -> NotSupportedException(e, "Expression not supported", "") |> raise
   
 let compileInitExpression m initExpr =
@@ -362,7 +377,7 @@ let compileInitExpression m initExpr =
         let exprs = initExpr.Expressions |> Seq.cast<ExpressionSyntax> |> Seq.map (compileExpression m)
                     |> Seq.map (fun (e,_) -> $".{e}")
         let exprs' = String.Join(",",exprs)
-        $"={{{exprs'}}}"
+        $"{{{exprs'}}}"
 
 let compileInterpolatedStringExpression m tOrS es =
     let ss = es |> List.map 
@@ -384,6 +399,13 @@ let compileInterpolatedStringExpression m tOrS es =
     (ss',tOrS)
 
 let compileArgsList m argsList =
+    let f (a : ArgumentSyntax) =
+        let (e,_) = compileExpression m a.Expression
+        e
+    let a = argsList.Arguments |> Seq.map f
+    String.Join(",",a)
+
+let compileBracketedArgsList m (argsList : BracketedArgumentListSyntax)=
     let f (a : ArgumentSyntax) =
         let (e,_) = compileExpression m a.Expression
         e
@@ -454,7 +476,10 @@ let rec compileType (m : SemanticModel) (tn : SyntaxNode)
                 (t.Name,false)
             | _ ->
                 getIncludes t |> includes.AddRange
-                ($"{t.Name}*",true)
+                if t.IsStatic then
+                    ($"static {t.Name}*",true)
+                else
+                    ($"{t.Name}*",true)
     | PredefinedType t ->
         if t.Text = "string" then
             ("FString",false)
@@ -466,7 +491,8 @@ let rec compileType (m : SemanticModel) (tn : SyntaxNode)
     | GenericName (b,Token id,typeArgList) ->
         let f (ty : TypeSyntax) =
             let s = compileType m ty |> fst
-            s.Replace("*","")
+            //TODO: Add attribute for cases where we want the type and not the pointer
+            s //s.Replace("*","")
         let args = String.Join(",",
             typeArgList.Arguments |> Seq.map f)
         ($"{id}<{args}>",false)
