@@ -1,6 +1,6 @@
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 public partial struct FWidgetAnimationResult {
-// WidgetAnimationResult__DelegateSignature
+// WidgetAnimationResult__DelegateSignature()
 	void AddDynamic(object obj, string functionName) {}
 }

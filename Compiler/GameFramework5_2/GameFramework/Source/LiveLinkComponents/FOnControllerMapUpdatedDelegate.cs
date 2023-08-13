@@ -1,6 +1,6 @@
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 public partial struct FOnControllerMapUpdatedDelegate {
-// OnControllerMapUpdatedDelegate__DelegateSignature
+// OnControllerMapUpdatedDelegate__DelegateSignature()
 	void AddDynamic(object obj, string functionName) {}
 }

@@ -1,6 +1,6 @@
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 public partial struct FNumTablesChanged {
-// NumTablesChanged__DelegateSignature
+// NumTablesChanged__DelegateSignature()
 	void AddDynamic(object obj, string functionName) {}
 }

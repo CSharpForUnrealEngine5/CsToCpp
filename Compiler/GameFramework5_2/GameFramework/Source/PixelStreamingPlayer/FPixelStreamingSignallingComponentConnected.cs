@@ -1,6 +1,6 @@
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 public partial struct FPixelStreamingSignallingComponentConnected {
-// PixelStreamingSignallingComponentConnected__DelegateSignature
+// PixelStreamingSignallingComponentConnected__DelegateSignature()
 	void AddDynamic(object obj, string functionName) {}
 }

@@ -1,6 +1,6 @@
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 public partial struct FOnGameUserSettingsUINeedsUpdate {
-// OnGameUserSettingsUINeedsUpdate__DelegateSignature
+// OnGameUserSettingsUINeedsUpdate__DelegateSignature()
 	void AddDynamic(object obj, string functionName) {}
 }

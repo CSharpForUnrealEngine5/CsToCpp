@@ -1,6 +1,6 @@
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 public partial struct FWaitCancelDelegate {
-// WaitCancelDelegate__DelegateSignature
+// WaitCancelDelegate__DelegateSignature()
 	void AddDynamic(object obj, string functionName) {}
 }

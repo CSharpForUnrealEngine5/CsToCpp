@@ -2,6 +2,6 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Delegate to receive all overall loudness results (time-stamped in an array) since last delegate call.</summary>
 public partial struct FOnOverallLoudnessResults {
-// OnOverallLoudnessResults__DelegateSignature
+// OnOverallLoudnessResults__DelegateSignature(TArray<FLoudnessResults> OverallLoudnessResults)
 	void AddDynamic(object obj, string functionName) {}
 }

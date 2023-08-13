@@ -1,6 +1,6 @@
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 public partial struct FEachComponentAnimInstanceClassDelegate {
-// EachComponentAnimInstanceClassDelegate__DelegateSignature
+// EachComponentAnimInstanceClassDelegate__DelegateSignature(int SlotIndex, UClass AnimInstClass)
 	void AddDynamic(object obj, string functionName) {}
 }

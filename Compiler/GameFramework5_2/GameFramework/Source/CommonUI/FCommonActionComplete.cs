@@ -1,6 +1,6 @@
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 public partial struct FCommonActionComplete {
-// CommonActionComplete__DelegateSignature
+// CommonActionComplete__DelegateSignature()
 	void AddDynamic(object obj, string functionName) {}
 }
