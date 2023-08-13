@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>GetRelativeTransform is used to retrieve a single transform from a hierarchy in the space of another transform</summary>

@@ -1,11 +1,10 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("WaterBodyIslandActor.h")]
 public partial class AWaterBodyIsland : AActor {
 	public static UClass StaticClass() {return default;}
 	///<summary>GetWaterSpline</summary>
-	public  UWaterSplineComponent GetWaterSpline() { return default; }
+	public UWaterSplineComponent GetWaterSpline() { return default; }
 	///<summary>WaterCurveSettings</summary>
 	public FWaterCurveSettings WaterCurveSettings;
 	///<summary>WaterHeightmapSettings</summary>

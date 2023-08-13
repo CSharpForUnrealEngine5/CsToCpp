@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>This node converts between hard and soft references, for both objects and classes. The name is historical from when they were called asset IDs</summary>

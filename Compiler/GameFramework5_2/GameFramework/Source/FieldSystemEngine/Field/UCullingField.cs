@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Evaluate the input field according to the result of the culling field</summary>
@@ -6,7 +5,7 @@ using CSharpToCpp.Utilities;
 public partial class UCullingField : UFieldNodeBase {
 	public static UClass StaticClass() {return default;}
 	///<summary>Evaluate the input field according to the result of the culling field.</summary>
-	public  UCullingField SetCullingField(UFieldNodeBase Culling,UFieldNodeBase Field,EFieldCullingOperationType Operation) { return default; }
+	public UCullingField SetCullingField(UFieldNodeBase Culling,UFieldNodeBase Field,EFieldCullingOperationType Operation) { return default; }
 	///<summary>Culling field to be used</summary>
 	public UFieldNodeBase Culling;
 	///<summary>Input field that will be evaluated according to the culling field result</summary>

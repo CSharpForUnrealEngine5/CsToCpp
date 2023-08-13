@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Package map override, for blocking the creation of actor channels for specific actors (by detecting the actor class being created)</summary>

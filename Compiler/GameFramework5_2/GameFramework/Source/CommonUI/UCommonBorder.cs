@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Uses the border style template defined in CommonUI project settings by default</summary>
@@ -6,7 +5,7 @@ using CSharpToCpp.Utilities;
 public partial class UCommonBorder : UBorder {
 	public static UClass StaticClass() {return default;}
 	///<summary>SetStyle</summary>
-	public  void SetStyle(UClass InStyle) {}
+	public void SetStyle(UClass InStyle) {}
 	///<summary>References the border style to use</summary>
 	public UClass Style;
 	///<summary>Turning this on will cause the safe zone size to be removed from this borders content padding down to the minimum specified</summary>

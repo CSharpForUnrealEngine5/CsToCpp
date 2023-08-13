@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Class responsible for capturing scene data</summary>
@@ -24,11 +23,11 @@ public partial class UMovieSceneCapture : UObject {
 	///<summary>Command line arguments inherited from this process</summary>
 	public string InheritedCommandLineArguments;
 	///<summary>Access the capture protocol we are using</summary>
-	public  UMovieSceneCaptureProtocolBase GetImageCaptureProtocol() { return default; }
+	public UMovieSceneCaptureProtocolBase GetImageCaptureProtocol() { return default; }
 	///<summary>GetAudioCaptureProtocol</summary>
-	public  UMovieSceneCaptureProtocolBase GetAudioCaptureProtocol() { return default; }
+	public UMovieSceneCaptureProtocolBase GetAudioCaptureProtocol() { return default; }
 	///<summary>SetImageCaptureProtocolType</summary>
-	public  void SetImageCaptureProtocolType(UClass ProtocolType) {}
+	public void SetImageCaptureProtocolType(UClass ProtocolType) {}
 	///<summary>SetAudioCaptureProtocolType</summary>
-	public  void SetAudioCaptureProtocolType(UClass ProtocolType) {}
+	public void SetAudioCaptureProtocolType(UClass ProtocolType) {}
 }

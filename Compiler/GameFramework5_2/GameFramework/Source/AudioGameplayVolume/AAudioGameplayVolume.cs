@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>AudioGameplayVolume - A spatial volume used to notify audio gameplay systems when the nearest audio listener</summary>
@@ -10,15 +9,15 @@ public partial class AAudioGameplayVolume : AVolume {
 	///<summary>Whether this volume is currently enabled.  Disabled volumes will not have a volume proxy,</summary>
 	public bool bEnabled;
 	///<summary>Sets whether the volume is enabled</summary>
-	public  void SetEnabled(bool bEnable) {}
+	public void SetEnabled(bool bEnable) {}
 	///<summary>Blueprint event for listener enter</summary>
-	public  void OnListenerEnter() {}
+	public void OnListenerEnter() {}
 	///<summary>Blueprint event for listener exit</summary>
-	public  void OnListenerExit() {}
+	public void OnListenerExit() {}
 	///<summary>OnListenerEnterEvent</summary>
 	public FAudioGameplayVolumeEvent OnListenerEnterEvent;
 	///<summary>OnListenerExitEvent</summary>
 	public FAudioGameplayVolumeEvent OnListenerExitEvent;
 	///<summary>OnRep_bEnabled</summary>
-	public  void OnRep_bEnabled() {}
+	public virtual void OnRep_bEnabled() {}
 }

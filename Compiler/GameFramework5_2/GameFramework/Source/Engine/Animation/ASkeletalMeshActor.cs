@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>SkeletalMeshActor is an instance of a USkeletalMesh in the world.</summary>
@@ -20,11 +19,11 @@ public partial class ASkeletalMeshActor : AActor {
 	///<summary>ReplicatedMaterial1</summary>
 	public UMaterialInterface ReplicatedMaterial1;
 	///<summary>Replication Notification Callbacks</summary>
-	public  void OnRep_ReplicatedMesh() {}
+	public virtual void OnRep_ReplicatedMesh() {}
 	///<summary>OnRep_ReplicatedPhysAsset</summary>
-	public  void OnRep_ReplicatedPhysAsset() {}
+	public virtual void OnRep_ReplicatedPhysAsset() {}
 	///<summary>OnRep_ReplicatedMaterial0</summary>
-	public  void OnRep_ReplicatedMaterial0() {}
+	public virtual void OnRep_ReplicatedMaterial0() {}
 	///<summary>OnRep_ReplicatedMaterial1</summary>
-	public  void OnRep_ReplicatedMaterial1() {}
+	public virtual void OnRep_ReplicatedMaterial1() {}
 }

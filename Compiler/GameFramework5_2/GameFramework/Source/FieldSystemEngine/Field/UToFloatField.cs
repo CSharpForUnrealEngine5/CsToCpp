@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Convert an integer field to a scalar one</summary>
@@ -6,7 +5,7 @@ using CSharpToCpp.Utilities;
 public partial class UToFloatField : UFieldNodeFloat {
 	public static UClass StaticClass() {return default;}
 	///<summary>Convert an integer field to a float one</summary>
-	public  UToFloatField SetToFloatField(UFieldNodeInt IntegerField) { return default; }
+	public UToFloatField SetToFloatField(UFieldNodeInt IntegerField) { return default; }
 	///<summary>Integer field to be converted to an a scalar one</summary>
 	public UFieldNodeInt IntField;
 }

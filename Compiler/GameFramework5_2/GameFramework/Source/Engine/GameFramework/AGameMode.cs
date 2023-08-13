@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>GameMode is a subclass of GameModeBase that behaves like a multiplayer match-based game.</summary>
@@ -6,25 +5,25 @@ using CSharpToCpp.Utilities;
 public partial class AGameMode : AGameModeBase {
 	public static UClass StaticClass() {return default;}
 	///<summary>Returns the current match state, this is an accessor to protect the state machine flow</summary>
-	public  string GetMatchState() { return default; }
+	public string GetMatchState() { return default; }
 	///<summary>Returns true if the match state is InProgress or other gameplay state</summary>
-	public  bool IsMatchInProgress() { return default; }
+	public virtual bool IsMatchInProgress() { return default; }
 	///<summary>Transition from WaitingToStart to InProgress. You can call this manually, will also get called if ReadyToStartMatch returns true</summary>
-	public  void StartMatch() {}
+	public virtual void StartMatch() {}
 	///<summary>Transition from InProgress to WaitingPostMatch. You can call this manually, will also get called if ReadyToEndMatch returns true</summary>
-	public  void EndMatch() {}
+	public virtual void EndMatch() {}
 	///<summary>Restart the game, by default travel to the current map</summary>
-	public  void RestartGame() {}
+	public virtual void RestartGame() {}
 	///<summary>Report that a match has failed due to unrecoverable error</summary>
-	public  void AbortMatch() {}
+	public virtual void AbortMatch() {}
 	///<summary>What match state we are currently in</summary>
 	public string MatchState;
 	///<summary>Implementable event to respond to match state changes</summary>
-	public  void K2_OnSetMatchState(string NewState) {}
+	public void K2_OnSetMatchState(string NewState) {}
 	///<summary>Returns true if ready to Start Match. Games should override this</summary>
-	public  bool ReadyToStartMatch() { return default; }
+	public bool ReadyToStartMatch() { return default; }
 	///<summary>Returns true if ready to End Match. Games should override this</summary>
-	public  bool ReadyToEndMatch() { return default; }
+	public bool ReadyToEndMatch() { return default; }
 	///<summary>Whether the game should immediately start when the first player logs in. Affects the default behavior of ReadyToStartMatch</summary>
 	public bool bDelayedStart;
 	///<summary>Current number of spectators.</summary>
@@ -48,5 +47,5 @@ public partial class AGameMode : AGameModeBase {
 	///<summary>If true, dedicated servers will record replays when HandleMatchHasStarted/HandleMatchHasStopped is called</summary>
 	public bool bHandleDedicatedServerReplays;
 	///<summary>Exec command to broadcast a string to all players</summary>
-	public  void Say(string Msg) {}
+	public virtual void Say(string Msg) {}
 }

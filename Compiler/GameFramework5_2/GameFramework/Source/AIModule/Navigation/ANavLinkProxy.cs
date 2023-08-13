@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>ANavLinkProxy connects areas of Navmesh that don&#39;t have a direct navigation path.</summary>
@@ -18,17 +17,17 @@ public partial class ANavLinkProxy : AActor {
 	///<summary>SpriteComponent</summary>
 	public UBillboardComponent SpriteComponent;
 	///<summary>called when agent reaches smart link during path following, use ResumePathFollowing() to give control back</summary>
-	public  void ReceiveSmartLinkReached(AActor Agent,FVector Destination) {}
+	public void ReceiveSmartLinkReached(AActor Agent,FVector Destination) {}
 	///<summary>resume normal path following</summary>
-	public  void ResumePathFollowing(AActor Agent) {}
+	public void ResumePathFollowing(AActor Agent) {}
 	///<summary>check if smart link is enabled</summary>
-	public  bool IsSmartLinkEnabled() { return default; }
+	public bool IsSmartLinkEnabled() { return default; }
 	///<summary>change state of smart link</summary>
-	public  void SetSmartLinkEnabled(bool bEnabled) {}
+	public void SetSmartLinkEnabled(bool bEnabled) {}
 	///<summary>check if any agent is moving through smart link right now</summary>
-	public  bool HasMovingAgents() { return default; }
+	public bool HasMovingAgents() { return default; }
 	///<summary>Copies navlink end points from the first entry in PointLinks array. This</summary>
-	public  void CopyEndPointsFromSimpleLinkToSmartLink() {}
+	public void CopyEndPointsFromSimpleLinkToSmartLink() {}
 	///<summary>OnSmartLinkReached</summary>
 	public FSmartLinkReachedSignature OnSmartLinkReached;
 }

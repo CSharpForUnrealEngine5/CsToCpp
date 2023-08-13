@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>ActorComponent for running basic Parametric movement.</summary>
@@ -6,7 +5,7 @@ using CSharpToCpp.Utilities;
 public partial class UParametricMovementComponent : UBaseMovementComponent {
 	public static UClass StaticClass() {return default;}
 	///<summary>EnableInterpolationMode</summary>
-	public  void EnableInterpolationMode(bool bValue) {}
+	public void EnableInterpolationMode(bool bValue) {}
 	///<summary>Disables starting the simulation. For development/testing ease of use</summary>
 	public bool bDisableParametricMovementSimulation;
 	///<summary>ParametricMotion</summary>

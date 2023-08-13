@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Represents a single runtime node in the conversation database.</summary>
@@ -6,7 +5,7 @@ using CSharpToCpp.Utilities;
 public partial class UConversationNode : UObject {
 	public static UClass StaticClass() {return default;}
 	///<summary>GetDebugParticipantColor</summary>
-	public  FLinearColor GetDebugParticipantColor(FGameplayTag ParticipantID) { return default; }
+	public FLinearColor GetDebugParticipantColor(FGameplayTag ParticipantID) { return default; }
 	///<summary>EvalWorldContextObj</summary>
 	public UObject EvalWorldContextObj;
 	///<summary>node name</summary>

@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>PostProcessComponent. Enables Post process controls for blueprints.</summary>
@@ -18,5 +17,5 @@ public partial class UPostProcessComponent : USceneComponent {
 	///<summary>set this to false to use the parent shape component as volume bounds. True affects the whole world regardless.</summary>
 	public bool bUnbound;
 	///<summary>Adds an Blendable (implements IBlendableInterface) to the array of Blendables (if it doesn&#39;t exist) and update the weight</summary>
-	public  void AddOrUpdateBlendable(object /*InBlendableObject*/ InBlendableObject,float InWeight/*=1.0f*/) {}
+	public void AddOrUpdateBlendable(object /*InBlendableObject*/ InBlendableObject,float InWeight/*=1.0f*/) {}
 }

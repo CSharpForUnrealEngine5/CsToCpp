@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Helper component that automatically pick the correct passthrough material to use</summary>
@@ -6,11 +5,11 @@ using CSharpToCpp.Utilities;
 public partial class UPassthroughMaterialUpdateComponent : UActorComponent {
 	public static UClass StaticClass() {return default;}
 	///<summary>Add a component to be affected by the passthrough rendering</summary>
-	public  void AddAffectedComponent(UPrimitiveComponent InComponent) {}
+	public void AddAffectedComponent(UPrimitiveComponent InComponent) {}
 	///<summary>Remove the component from passthrough rendering</summary>
-	public  void RemoveAffectedComponent(UPrimitiveComponent InComponent) {}
+	public void RemoveAffectedComponent(UPrimitiveComponent InComponent) {}
 	///<summary>Update the passthrough debug color</summary>
-	public  void SetPassthroughDebugColor(FLinearColor NewDebugColor) {}
+	public void SetPassthroughDebugColor(FLinearColor NewDebugColor) {}
 	///<summary>Which AR texture to use as the camera texture</summary>
 	public EARTextureType TextureType;
 	///<summary>Which material to use for a regular camera texture</summary>

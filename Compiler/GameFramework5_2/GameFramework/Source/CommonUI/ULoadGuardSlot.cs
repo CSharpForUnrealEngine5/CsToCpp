@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Virtually identical to a UBorderSlot, but unfortunately that assumes (fairly) that its parent widget is a UBorder.</summary>
@@ -6,11 +5,11 @@ using CSharpToCpp.Utilities;
 public partial class ULoadGuardSlot : UPanelSlot {
 	public static UClass StaticClass() {return default;}
 	///<summary>SetPadding</summary>
-	public  void SetPadding(FMargin InPadding) {}
+	public void SetPadding(FMargin InPadding) {}
 	///<summary>SetHorizontalAlignment</summary>
-	public  void SetHorizontalAlignment(EHorizontalAlignment InHorizontalAlignment) {}
+	public void SetHorizontalAlignment(EHorizontalAlignment InHorizontalAlignment) {}
 	///<summary>SetVerticalAlignment</summary>
-	public  void SetVerticalAlignment(EVerticalAlignment InVerticalAlignment) {}
+	public void SetVerticalAlignment(EVerticalAlignment InVerticalAlignment) {}
 	///<summary>Padding</summary>
 	public FMargin Padding;
 	///<summary>HorizontalAlignment</summary>

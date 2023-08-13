@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Abstract base class for movie scene animations (C++ version).</summary>
@@ -6,11 +5,11 @@ using CSharpToCpp.Utilities;
 public partial class UMovieSceneSequence : UMovieSceneSignedObject {
 	public static UClass StaticClass() {return default;}
 	///<summary>Find the first object binding ID associated with the specified tag name (set up through RMB-&gt;Expose on Object bindings from within sequencer)</summary>
-	public  FMovieSceneObjectBindingID FindBindingByTag(string InBindingName) { return default; }
+	public FMovieSceneObjectBindingID FindBindingByTag(string InBindingName) { return default; }
 	///<summary>Find all object binding IDs associated with the specified tag name (set up through RMB-&gt;Expose on Object bindings from within sequencer)</summary>
-	public  TArray<FMovieSceneObjectBindingID> FindBindingsByTag(string InBindingName) { return default; }
+	public TArray<FMovieSceneObjectBindingID> FindBindingsByTag(string InBindingName) { return default; }
 	///<summary>Get the earliest timecode source out of all of the movie scene sections contained within this sequence&#39;s movie scene.</summary>
-	public  FMovieSceneTimecodeSource GetEarliestTimecodeSource() { return default; }
+	public FMovieSceneTimecodeSource GetEarliestTimecodeSource() { return default; }
 	///<summary>Serialized compiled data - should only be used through UMovieSceneCompiledDataManager</summary>
 	public UMovieSceneCompiledData CompiledData;
 	///<summary>The default completion mode for this movie scene when a section&#39;s completion mode is set to project default</summary>

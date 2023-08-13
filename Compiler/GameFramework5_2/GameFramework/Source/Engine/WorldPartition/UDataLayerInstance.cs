@@ -1,23 +1,22 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("WorldPartition/DataLayer/DataLayerInstance.h")]
 public partial class UDataLayerInstance : UObject {
 	public static UClass StaticClass() {return default;}
 	///<summary>GetType</summary>
-	public  EDataLayerType GetType() { return default; }
+	public virtual EDataLayerType GetType() { return default; }
 	///<summary>IsInitiallyVisible</summary>
-	public  bool IsInitiallyVisible() { return default; }
+	public bool IsInitiallyVisible() { return default; }
 	///<summary>IsVisible</summary>
-	public  bool IsVisible() { return default; }
+	public bool IsVisible() { return default; }
 	///<summary>IsEffectiveVisible</summary>
-	public  bool IsEffectiveVisible() { return default; }
+	public bool IsEffectiveVisible() { return default; }
 	///<summary>IsRuntime</summary>
-	public  bool IsRuntime() { return default; }
+	public virtual bool IsRuntime() { return default; }
 	///<summary>GetDebugColor</summary>
-	public  FColor GetDebugColor() { return default; }
+	public virtual FColor GetDebugColor() { return default; }
 	///<summary>GetInitialRuntimeState</summary>
-	public  EDataLayerRuntimeState GetInitialRuntimeState() { return default; }
+	public EDataLayerRuntimeState GetInitialRuntimeState() { return default; }
 	///<summary>Whether actors associated with the DataLayer are visible in the viewport</summary>
 	public bool bIsVisible;
 	///<summary>Whether actors associated with the Data Layer should be initially visible in the viewport when loading the map</summary>

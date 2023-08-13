@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>ForceFeedbackComponent allows placing a rumble effect in to the world and having it apply to player characters who come near it</summary>
@@ -26,15 +25,15 @@ public partial class UForceFeedbackComponent : USceneComponent {
 	///<summary>called when we finish playing audio, either because it played to completion or because a Stop() call turned it off early</summary>
 	public FOnForceFeedbackFinished OnForceFeedbackFinished;
 	///<summary>Set what force feedback effect is played by this component</summary>
-	public  void SetForceFeedbackEffect(UForceFeedbackEffect NewForceFeedbackEffect) {}
+	public void SetForceFeedbackEffect(UForceFeedbackEffect NewForceFeedbackEffect) {}
 	///<summary>Start a feedback effect playing</summary>
-	public  void Play(float StartTime/*=0.0f*/) {}
+	public virtual void Play(float StartTime/*=0.0f*/) {}
 	///<summary>Stop playing the feedback effect</summary>
-	public  void Stop() {}
+	public virtual void Stop() {}
 	///<summary>Set a new intensity multiplier</summary>
-	public  void SetIntensityMultiplier(float NewIntensityMultiplier) {}
+	public void SetIntensityMultiplier(float NewIntensityMultiplier) {}
 	///<summary>Modify the attenuation settings of the component</summary>
-	public  void AdjustAttenuation(FForceFeedbackAttenuationSettings InAttenuationSettings) {}
+	public void AdjustAttenuation(FForceFeedbackAttenuationSettings InAttenuationSettings) {}
 	///<summary>BP_GetAttenuationSettingsToApply</summary>
-	public  bool BP_GetAttenuationSettingsToApply(FForceFeedbackAttenuationSettings OutAttenuationSettings) { return default; }
+	public bool BP_GetAttenuationSettingsToApply(FForceFeedbackAttenuationSettings OutAttenuationSettings) { return default; }
 }

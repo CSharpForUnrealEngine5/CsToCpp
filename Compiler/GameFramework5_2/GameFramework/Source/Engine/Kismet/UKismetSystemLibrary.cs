@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Kismet/KismetSystemLibrary.h")]
@@ -127,11 +126,11 @@ public partial class UKismetSystemLibrary : UBlueprintFunctionLibrary {
 	///<summary>Conv_ClassToSoftClassReference</summary>
 	public static TSoftObjectPtr<UClass> Conv_ClassToSoftClassReference(UClass Class) { return default; }
 	///<summary>FOnAssetLoaded</summary>
-	public  void FOnAssetLoaded(UObject Loaded) {}
+	public void FOnAssetLoaded(UObject Loaded) {}
 	///<summary>LoadAsset</summary>
 	public static void LoadAsset(UObject WorldContextObject,TSoftObjectPtr<UObject> Asset,FOnAssetLoaded OnLoaded,FLatentActionInfo LatentInfo) {}
 	///<summary>FOnAssetClassLoaded</summary>
-	public  void FOnAssetClassLoaded(UClass Loaded) {}
+	public void FOnAssetClassLoaded(UClass Loaded) {}
 	///<summary>LoadAssetClass</summary>
 	public static void LoadAssetClass(UObject WorldContextObject,TSoftObjectPtr<UClass> AssetClass,FOnAssetClassLoaded OnLoaded,FLatentActionInfo LatentInfo) {}
 	///<summary>Creates a literal integer</summary>
@@ -149,17 +148,17 @@ public partial class UKismetSystemLibrary : UBlueprintFunctionLibrary {
 	///<summary>Creates a literal string</summary>
 	public static string MakeLiteralString(string Value) { return default; }
 	///<summary>Creates a literal FText</summary>
-	public static string MakeLiteralText(string Value) { return default; }
+	public static FText MakeLiteralText(FText Value) { return default; }
 	///<summary>Prints a string to the log</summary>
 	public static void LogString(string InString/*=new FString(TEXT("Hello"))*/,bool bPrintToLog/*=true*/) {}
 	///<summary>Prints a string to the log, and optionally, to the screen</summary>
 	public static void PrintString(UObject WorldContextObject,string InString/*=new FString(TEXT("Hello"))*/,bool bPrintToScreen/*=true*/,bool bPrintToLog/*=true*/,FLinearColor TextColor/*=new FLinearColor(0.0,0.66,1.0)*/,float Duration/*=2.0f*/,string Key/*=NAME_None*/) {}
 	///<summary>Prints text to the log, and optionally, to the screen</summary>
-	public static void PrintText(UObject WorldContextObject,string InText/*=INVTEXT("Hello")*/,bool bPrintToScreen/*=true*/,bool bPrintToLog/*=true*/,FLinearColor TextColor/*=new FLinearColor(0.0,0.66,1.0)*/,float Duration/*=2.0f*/,string Key/*=NAME_None*/) {}
+	public static void PrintText(UObject WorldContextObject,FText InText/*=INVTEXT("Hello")*/,bool bPrintToScreen/*=true*/,bool bPrintToLog/*=true*/,FLinearColor TextColor/*=new FLinearColor(0.0,0.66,1.0)*/,float Duration/*=2.0f*/,string Key/*=NAME_None*/) {}
 	///<summary>Prints a warning string to the log and the screen. Meant to be used as a way to inform the user that they misused the node.</summary>
 	public static void PrintWarning(string InString) {}
 	///<summary>Sets the game window title</summary>
-	public static void SetWindowTitle(string Title) {}
+	public static void SetWindowTitle(FText Title) {}
 	///<summary>Executes a console command, optionally on a specific controller</summary>
 	public static void ExecuteConsoleCommand(UObject WorldContextObject,string Command,APlayerController SpecificPlayer/*=NULL*/) {}
 	///<summary>Attempts to retrieve the value of the specified string console variable, if it exists.</summary>
@@ -269,7 +268,7 @@ public partial class UKismetSystemLibrary : UBlueprintFunctionLibrary {
 	///<summary>Set a STRING property by name</summary>
 	public static void SetStringPropertyByName(UObject Object,string PropertyName,string Value) {}
 	///<summary>Set a TEXT property by name</summary>
-	public static void SetTextPropertyByName(UObject Object,string PropertyName,string Value) {}
+	public static void SetTextPropertyByName(UObject Object,string PropertyName,FText Value) {}
 	///<summary>Set a VECTOR property by name</summary>
 	public static void SetVectorPropertyByName(UObject Object,string PropertyName,FVector Value) {}
 	///<summary>Set a VECTOR3F property by name</summary>
@@ -493,7 +492,7 @@ public partial class UKismetSystemLibrary : UBlueprintFunctionLibrary {
 	///<summary>Attempts to set the value of a named property on the given object.</summary>
 	public static bool SetEditorProperty(UObject Object,string PropertyName,int PropertyValue,EPropertyAccessChangeNotifyMode ChangeNotifyMode) { return default; }
 	///<summary>Begin a new undo transaction. An undo transaction is defined as all actions which take place when the user selects &quot;undo&quot; a single time.</summary>
-	public static int BeginTransaction(string Context,string Description,UObject PrimaryObject) { return default; }
+	public static int BeginTransaction(string Context,FText Description,UObject PrimaryObject) { return default; }
 	///<summary>Attempt to end the current undo transaction. Only successful if the transaction&#39;s action counter is 1.</summary>
 	public static int EndTransaction() { return default; }
 	///<summary>Cancel the current transaction, and no longer capture actions to be placed in the undo buffer.</summary>

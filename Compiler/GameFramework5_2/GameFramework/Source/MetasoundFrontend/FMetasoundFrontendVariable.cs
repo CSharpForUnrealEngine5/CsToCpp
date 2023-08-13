@@ -1,12 +1,11 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Contains graph data associated with a variable.</summary>
 [CppInclude("MetasoundFrontendDocument.h")]
 public partial struct FMetasoundFrontendVariable {
 	public string Name;
-	public string DisplayName;
-	public string Description;
+	public FText DisplayName;
+	public FText Description;
 	public string TypeName;
 	public FMetasoundFrontendLiteral Literal;
 	public FGuid ID;

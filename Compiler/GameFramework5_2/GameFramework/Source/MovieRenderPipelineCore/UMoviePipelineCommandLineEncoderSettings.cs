@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("MoviePipelineCommandLineEncoderSettings.h")]
@@ -7,7 +6,7 @@ public partial class UMoviePipelineCommandLineEncoderSettings : UDeveloperSettin
 	///<summary>Path to the executable (including extension). Can just be &quot;ffmpeg.exe&quot; if it can be located via PATH directories.</summary>
 	public string ExecutablePath;
 	///<summary>CodecHelpText</summary>
-	public string CodecHelpText;
+	public FText CodecHelpText;
 	///<summary>Which video codec should we use? Run &#39;MovieRenderPipeline.DumpCLIEncoderCodecs&#39; for options.</summary>
 	public string VideoCodec;
 	///<summary>Which audio codec should we use? Run &#39;MovieRenderPipeline.DumpCLIEncoderCodecs&#39; for options.</summary>

@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>USubmixEffectDelayPreset</summary>
@@ -6,7 +5,7 @@ using CSharpToCpp.Utilities;
 public partial class USubmixEffectStereoDelayPreset : USoundEffectSubmixPreset {
 	public static UClass StaticClass() {return default;}
 	///<summary>Set all tap delay settings. This will replace any dynamically added or modified taps.</summary>
-	public  void SetSettings(FSubmixEffectStereoDelaySettings InSettings) {}
+	public void SetSettings(FSubmixEffectStereoDelaySettings InSettings) {}
 	///<summary>Settings</summary>
 	public FSubmixEffectStereoDelaySettings Settings;
 }

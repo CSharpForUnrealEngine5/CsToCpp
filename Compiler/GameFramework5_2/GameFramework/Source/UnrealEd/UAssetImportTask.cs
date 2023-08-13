@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Contains data for a group of assets to import</summary>
@@ -26,9 +25,9 @@ public partial class UAssetImportTask : UObject {
 	///<summary>Import options specific to the type of asset</summary>
 	public UObject Options;
 	///<summary>Get the list of imported objects.</summary>
-	public  TArray<UObject> GetObjects() { return default; }
+	public TArray<UObject> GetObjects() { return default; }
 	///<summary>Query whether this asynchronous import task is complete, and the results are ready to read.</summary>
-	public  bool IsAsyncImportComplete() { return default; }
+	public bool IsAsyncImportComplete() { return default; }
 	///<summary>Paths to objects created or updated after import</summary>
 	public TArray<string> ImportedObjectPaths;
 	///<summary>Result</summary>

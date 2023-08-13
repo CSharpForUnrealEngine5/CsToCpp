@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Shared state of the game from the lobby perspective</summary>
@@ -16,7 +15,7 @@ public partial class ALobbyBeaconState : AInfo {
 	///<summary>Array of players currently in the game, lobby or otherwise</summary>
 	public FLobbyPlayerStateInfoArray Players;
 	///<summary>Handle the lobby starting</summary>
-	public  void OnRep_LobbyStarted() {}
+	public void OnRep_LobbyStarted() {}
 	///<summary>Handle notification of time left to wait for lobby to start</summary>
-	public  void OnRep_WaitForPlayersTimeRemaining() {}
+	public void OnRep_WaitForPlayersTimeRemaining() {}
 }

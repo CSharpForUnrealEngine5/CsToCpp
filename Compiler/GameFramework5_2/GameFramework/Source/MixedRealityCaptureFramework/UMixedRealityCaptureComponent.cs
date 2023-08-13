@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("MixedRealityCaptureComponent.h")]
@@ -27,51 +26,51 @@ public partial class UMixedRealityCaptureComponent : USceneCaptureComponent2D {
 	///<summary>Enabled by default, the projection plane tracks with the HMD to simulate the depth of the player. Disable to keep the projection plane from moving.</summary>
 	public bool bProjectionDepthTracking;
 	///<summary>SaveAsDefaultConfiguration_K2</summary>
-	public  bool SaveAsDefaultConfiguration_K2() { return default; }
+	public bool SaveAsDefaultConfiguration_K2() { return default; }
 	///<summary>SaveConfiguration_K2</summary>
-	public  bool SaveConfiguration_K2(string SlotName,int UserIndex) { return default; }
+	public bool SaveConfiguration_K2(string SlotName,int UserIndex) { return default; }
 	///<summary>LoadDefaultConfiguration</summary>
-	public  bool LoadDefaultConfiguration() { return default; }
+	public bool LoadDefaultConfiguration() { return default; }
 	///<summary>LoadConfiguration</summary>
-	public  bool LoadConfiguration(string SlotName,int UserIndex) { return default; }
+	public bool LoadConfiguration(string SlotName,int UserIndex) { return default; }
 	///<summary>ConstructCalibrationData</summary>
-	public  UMrcCalibrationData ConstructCalibrationData() { return default; }
+	public UMrcCalibrationData ConstructCalibrationData() { return default; }
 	///<summary>FillOutCalibrationData</summary>
-	public  void FillOutCalibrationData(UMrcCalibrationData Dst) {}
+	public void FillOutCalibrationData(UMrcCalibrationData Dst) {}
 	///<summary>ApplyCalibrationData</summary>
-	public  void ApplyCalibrationData(UMrcCalibrationData ConfigData) {}
+	public void ApplyCalibrationData(UMrcCalibrationData ConfigData) {}
 	///<summary>Set an external garbage matte actor to be used instead of the mixed reality component&#39;s</summary>
-	public  bool SetGarbageMatteActor(AMrcGarbageMatteActor Actor) { return default; }
+	public bool SetGarbageMatteActor(AMrcGarbageMatteActor Actor) { return default; }
 	///<summary>SetVidProjectionMat</summary>
-	public  void SetVidProjectionMat(UMaterialInterface NewMaterial) {}
+	public void SetVidProjectionMat(UMaterialInterface NewMaterial) {}
 	///<summary>SetVidProcessingParams</summary>
-	public  void SetVidProcessingParams(FMrcVideoProcessingParams NewVidProcessingParams) {}
+	public void SetVidProcessingParams(FMrcVideoProcessingParams NewVidProcessingParams) {}
 	///<summary>SetDeviceAttachment</summary>
-	public  void SetDeviceAttachment(string SourceName) {}
+	public void SetDeviceAttachment(string SourceName) {}
 	///<summary>DetatchFromDevice</summary>
-	public  void DetatchFromDevice() {}
+	public void DetatchFromDevice() {}
 	///<summary>IsTracked</summary>
-	public  bool IsTracked() { return default; }
+	public bool IsTracked() { return default; }
 	///<summary>SetCaptureDevice</summary>
-	public  void SetCaptureDevice(FMrcVideoCaptureFeedIndex FeedRef) {}
+	public void SetCaptureDevice(FMrcVideoCaptureFeedIndex FeedRef) {}
 	///<summary>SetLensDistortionParameters</summary>
-	public  void SetLensDistortionParameters(FOpenCVLensDistortionParameters ModelRef) {}
+	public void SetLensDistortionParameters(FOpenCVLensDistortionParameters ModelRef) {}
 	///<summary>GetTrackingDelay</summary>
-	public  int GetTrackingDelay() { return default; }
+	public int GetTrackingDelay() { return default; }
 	///<summary>SetTrackingDelay</summary>
-	public  void SetTrackingDelay(int DelayMS) {}
+	public void SetTrackingDelay(int DelayMS) {}
 	///<summary>SetProjectionDepthOffset</summary>
-	public  void SetProjectionDepthOffset(float DepthOffset) {}
+	public void SetProjectionDepthOffset(float DepthOffset) {}
 	///<summary>GetProjectionActor_K2</summary>
-	public  AActor GetProjectionActor_K2() { return default; }
+	public AActor GetProjectionActor_K2() { return default; }
 	///<summary>FMRCaptureFeedOpenedDelegate</summary>
-	public  void FMRCaptureFeedOpenedDelegate(FMrcVideoCaptureFeedIndex FeedRef) {}
+	public void FMRCaptureFeedOpenedDelegate(FMrcVideoCaptureFeedIndex FeedRef) {}
 	///<summary>OnCaptureSourceOpened</summary>
 	public FMRCaptureFeedOpenedDelegate OnCaptureSourceOpened;
 	///<summary>Enabled by default, the projection plane tracks with the HMD to simulate</summary>
-	public  void SetEnableProjectionDepthTracking(bool bEnable/*=true*/) {}
+	public void SetEnableProjectionDepthTracking(bool bEnable/*=true*/) {}
 	///<summary>needs to be a UFunction for binding purposes</summary>
-	public  void OnVideoFeedOpened(FMrcVideoCaptureFeedIndex FeedRef) {}
+	public void OnVideoFeedOpened(FMrcVideoCaptureFeedIndex FeedRef) {}
 	///<summary>ProxyMesh</summary>
 	public UStaticMesh ProxyMesh;
 	///<summary>ProxyMeshComponent</summary>

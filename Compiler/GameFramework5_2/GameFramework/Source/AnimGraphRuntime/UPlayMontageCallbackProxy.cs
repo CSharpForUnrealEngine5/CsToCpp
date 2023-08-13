@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("PlayMontageCallbackProxy.h")]
@@ -17,11 +16,11 @@ public partial class UPlayMontageCallbackProxy : UObject {
 	///<summary>Called to perform the query internally</summary>
 	public static UPlayMontageCallbackProxy CreateProxyObjectForPlayMontage(USkeletalMeshComponent InSkeletalMeshComponent,UAnimMontage MontageToPlay,float PlayRate/*=1.0f*/,float StartingPosition/*=0.0f*/,string StartingSection/*=NAME_None*/) { return default; }
 	///<summary>OnMontageBlendingOut</summary>
-	public  void OnMontageBlendingOut(UAnimMontage Montage,bool bInterrupted) {}
+	public void OnMontageBlendingOut(UAnimMontage Montage,bool bInterrupted) {}
 	///<summary>OnMontageEnded</summary>
-	public  void OnMontageEnded(UAnimMontage Montage,bool bInterrupted) {}
+	public void OnMontageEnded(UAnimMontage Montage,bool bInterrupted) {}
 	///<summary>OnNotifyBeginReceived</summary>
-	public  void OnNotifyBeginReceived(string NotifyName,FBranchingPointNotifyPayload BranchingPointNotifyPayload) {}
+	public void OnNotifyBeginReceived(string NotifyName,FBranchingPointNotifyPayload BranchingPointNotifyPayload) {}
 	///<summary>OnNotifyEndReceived</summary>
-	public  void OnNotifyEndReceived(string NotifyName,FBranchingPointNotifyPayload BranchingPointNotifyPayload) {}
+	public void OnNotifyEndReceived(string NotifyName,FBranchingPointNotifyPayload BranchingPointNotifyPayload) {}
 }

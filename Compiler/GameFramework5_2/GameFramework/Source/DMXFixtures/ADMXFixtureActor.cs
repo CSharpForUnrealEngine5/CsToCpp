@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("DMXFixtureActor.h")]
@@ -17,19 +16,19 @@ public partial class ADMXFixtureActor : ADMXFixtureActorBase {
 	///<summary>Head</summary>
 	public USceneComponent Head;
 	///<summary>FUNCTIONS---------------------------------</summary>
-	public  void InitializeFixture(UStaticMeshComponent StaticMeshLens,UStaticMeshComponent StaticMeshBeam) {}
+	public void InitializeFixture(UStaticMeshComponent StaticMeshLens,UStaticMeshComponent StaticMeshBeam) {}
 	///<summary>Sets the a new max light intensity</summary>
-	public  void SetLightIntensityMax(float NewLightIntensityMax) {}
+	public void SetLightIntensityMax(float NewLightIntensityMax) {}
 	///<summary>Sets a new max light distance</summary>
-	public  void SetLightDistanceMax(float NewLightDistanceMax) {}
+	public void SetLightDistanceMax(float NewLightDistanceMax) {}
 	///<summary>Sets a new light color temperature</summary>
-	public  void SetLightColorTemp(float NewLightColorTemp) {}
+	public void SetLightColorTemp(float NewLightColorTemp) {}
 	///<summary>Sets a new spotlight intensity scale</summary>
-	public  void SetSpotlightIntensityScale(float NewSpotlightIntensityScale) {}
+	public void SetSpotlightIntensityScale(float NewSpotlightIntensityScale) {}
 	///<summary>Sets a new pointlight intensity scale</summary>
-	public  void SetPointlightIntensityScale(float NewPointlightIntensityScale) {}
+	public void SetPointlightIntensityScale(float NewPointlightIntensityScale) {}
 	///<summary>Sets if the light should cast shadows</summary>
-	public  void SetLightCastShadow(bool bLightShouldCastShadow) {}
+	public void SetLightCastShadow(bool bLightShouldCastShadow) {}
 	///<summary>Light intensity at 1 steradian (32.77deg half angle)</summary>
 	public float LightIntensityMax;
 	///<summary>Sets Attenuation Radius on the spotlight and pointlight</summary>

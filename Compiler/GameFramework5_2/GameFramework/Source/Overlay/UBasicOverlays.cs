@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Implements an asset that contains a set of overlay data (which includes timing, text, and position) to be displayed for any</summary>

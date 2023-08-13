@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>A base widget to display on actor labels.</summary>
@@ -6,5 +5,5 @@ using CSharpToCpp.Utilities;
 public partial class UDisplayClusterLabelWidget : UUserWidget {
 	public static UClass StaticClass() {return default;}
 	///<summary>SetLabelText</summary>
-	public  void SetLabelText(string InText) {}
+	public void SetLabelText(FText InText) {}
 }

@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>The combobox allows you to display a list of options to the user in a dropdown menu for them to select one.</summary>
@@ -6,9 +5,9 @@ using CSharpToCpp.Utilities;
 public partial class UComboBoxString : UWidget {
 	public static UClass StaticClass() {return default;}
 	///<summary>FOnSelectionChangedEvent</summary>
-	public  void FOnSelectionChangedEvent(string SelectedItem,ESelectInfo SelectionType) {}
+	public void FOnSelectionChangedEvent(string SelectedItem,ESelectInfo SelectionType) {}
 	///<summary>FOnOpeningEvent</summary>
-	public  void FOnOpeningEvent() {}
+	public void FOnOpeningEvent() {}
 	///<summary>The default list of items to be displayed on the combobox.</summary>
 	public TArray<string> DefaultOptions;
 	///<summary>The item in the combobox to select by default</summary>
@@ -40,29 +39,29 @@ public partial class UComboBoxString : UWidget {
 	///<summary>Called when the combobox is opening</summary>
 	public FOnOpeningEvent OnOpening;
 	///<summary>AddOption</summary>
-	public  void AddOption(string Option) {}
+	public void AddOption(string Option) {}
 	///<summary>RemoveOption</summary>
-	public  bool RemoveOption(string Option) { return default; }
+	public bool RemoveOption(string Option) { return default; }
 	///<summary>FindOptionIndex</summary>
-	public  int FindOptionIndex(string Option) { return default; }
+	public int FindOptionIndex(string Option) { return default; }
 	///<summary>GetOptionAtIndex</summary>
-	public  string GetOptionAtIndex(int Index) { return default; }
+	public string GetOptionAtIndex(int Index) { return default; }
 	///<summary>ClearOptions</summary>
-	public  void ClearOptions() {}
+	public void ClearOptions() {}
 	///<summary>ClearSelection</summary>
-	public  void ClearSelection() {}
+	public void ClearSelection() {}
 	///<summary>Refreshes the list of options.  If you added new ones, and want to update the list even if it&#39;s</summary>
-	public  void RefreshOptions() {}
+	public void RefreshOptions() {}
 	///<summary>SetSelectedOption</summary>
-	public  void SetSelectedOption(string Option) {}
+	public void SetSelectedOption(string Option) {}
 	///<summary>SetSelectedIndex</summary>
-	public  void SetSelectedIndex(int Index) {}
+	public void SetSelectedIndex(int Index) {}
 	///<summary>GetSelectedOption</summary>
-	public  string GetSelectedOption() { return default; }
+	public string GetSelectedOption() { return default; }
 	///<summary>GetSelectedIndex</summary>
-	public  int GetSelectedIndex() { return default; }
+	public int GetSelectedIndex() { return default; }
 	///<summary>Returns the number of options</summary>
-	public  int GetOptionCount() { return default; }
+	public int GetOptionCount() { return default; }
 	///<summary>IsOpen</summary>
-	public  bool IsOpen() { return default; }
+	public bool IsOpen() { return default; }
 }

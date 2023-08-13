@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Allows in-engine playback of incoming WebRTC audio from a particular Pixel Streaming player/peer using their mic in the browser.</summary>
@@ -12,11 +11,11 @@ public partial class UPixelStreamingAudioComponent : USynthComponent {
 	///<summary>If not already listening to a player/peer will try to attach for listening to the &quot;PlayerToHear&quot; each tick.</summary>
 	public bool bAutoFindPeer;
 	///<summary>Listen to a specific player on the default streamer. If the player is not found this component will be silent.</summary>
-	public  bool ListenTo(string PlayerToListenTo) { return default; }
+	public bool ListenTo(string PlayerToListenTo) { return default; }
 	///<summary>Listen to a specific player. If the player is not found this component will be silent.</summary>
-	public  bool StreamerListenTo(string StreamerId,string PlayerToListenTo) { return default; }
+	public bool StreamerListenTo(string StreamerId,string PlayerToListenTo) { return default; }
 	///<summary>True if listening to a connected WebRTC peer through Pixel Streaming.</summary>
-	public  bool IsListeningToPlayer() { return default; }
+	public bool IsListeningToPlayer() { return default; }
 	///<summary>Stops listening to any connected player/peer and resets internal state so component is ready to listen again.</summary>
-	public  void Reset() {}
+	public void Reset() {}
 }

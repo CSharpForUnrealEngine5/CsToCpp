@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Things to remember:</summary>
@@ -24,9 +23,9 @@ public partial class UDEPRECATED_PawnAction : UObject {
 	///<summary>if set, action will call OnFinished notify even when ending as FailedToStart</summary>
 	public bool bAlwaysNotifyOnFinished;
 	///<summary>Blueprint interface</summary>
-	public  EAIRequestPriority GetActionPriority() { return default; }
+	public EAIRequestPriority GetActionPriority() { return default; }
 	///<summary>CreateActionInstance</summary>
 	public static UDEPRECATED_PawnAction CreateActionInstance(UObject WorldContextObject,UClass ActionClass) { return default; }
 	///<summary>Finish</summary>
-	public  void Finish(EPawnActionResult WithResult) {}
+	public virtual void Finish(EPawnActionResult WithResult) {}
 }

@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>This is the &#39;source version&#39; of a bone driven controller, which maps part of the state from one bone to another (e.g., 2 * source.x -&gt; target.z)</summary>

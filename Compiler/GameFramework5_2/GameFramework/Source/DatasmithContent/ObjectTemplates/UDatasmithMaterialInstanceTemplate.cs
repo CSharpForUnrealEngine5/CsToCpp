@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Applies material instance data to a material instance if it hasn&#39;t changed since the last time we&#39;ve applied a template.</summary>

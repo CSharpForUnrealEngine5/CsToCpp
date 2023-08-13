@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Container for a UTexture2D that can be built from a FHeightfieldMinMaxTextureBuildDesc description.</summary>

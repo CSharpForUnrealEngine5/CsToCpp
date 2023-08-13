@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("LatticeDeformerTool.h")]
@@ -25,7 +24,7 @@ public partial class ULatticeDeformerToolProperties : UInteractiveToolPropertySe
 	///<summary>Whether to use soft deformation of the lattice</summary>
 	public bool bSoftDeformation;
 	///<summary>Constrain selected lattice points</summary>
-	public  void Constrain() {}
+	public void Constrain() {}
 	///<summary>Clear all constrained lattice points</summary>
-	public  void ClearConstraints() {}
+	public void ClearConstraints() {}
 }

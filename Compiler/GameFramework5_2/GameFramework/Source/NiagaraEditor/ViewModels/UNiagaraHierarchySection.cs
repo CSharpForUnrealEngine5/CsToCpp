@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("ViewModels/HierarchyEditor/NiagaraHierarchyViewModelBase.h")]
@@ -7,5 +6,5 @@ public partial class UNiagaraHierarchySection : UNiagaraHierarchyItemBase {
 	///<summary>Section</summary>
 	public string Section;
 	///<summary>The tooltip used when the user is hovering this section</summary>
-	public string Tooltip;
+	public FText Tooltip;
 }

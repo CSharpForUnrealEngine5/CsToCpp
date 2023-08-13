@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Utility object for moving physics objects around.</summary>
@@ -24,31 +23,31 @@ public partial class UPhysicsHandleComponent : UActorComponent {
 	///<summary>How quickly we interpolate the physics target transform</summary>
 	public float InterpolationSpeed;
 	///<summary>GrabComponent</summary>
-	public  void GrabComponent(UPrimitiveComponent Component,string InBoneName,FVector GrabLocation,bool bConstrainRotation) {}
+	public virtual void GrabComponent(UPrimitiveComponent Component,string InBoneName,FVector GrabLocation,bool bConstrainRotation) {}
 	///<summary>Grab the specified component at a given location. Does NOT constraint rotation which means the handle will pivot about GrabLocation.</summary>
-	public  void GrabComponentAtLocation(UPrimitiveComponent Component,string InBoneName,FVector GrabLocation) {}
+	public void GrabComponentAtLocation(UPrimitiveComponent Component,string InBoneName,FVector GrabLocation) {}
 	///<summary>Grab the specified component at a given location and rotation. Constrains rotation.</summary>
-	public  void GrabComponentAtLocationWithRotation(UPrimitiveComponent Component,string InBoneName,FVector Location,FRotator Rotation) {}
+	public void GrabComponentAtLocationWithRotation(UPrimitiveComponent Component,string InBoneName,FVector Location,FRotator Rotation) {}
 	///<summary>Release the currently held component</summary>
-	public  void ReleaseComponent() {}
+	public virtual void ReleaseComponent() {}
 	///<summary>Returns the currently grabbed component, or null if nothing is grabbed.</summary>
-	public  UPrimitiveComponent GetGrabbedComponent() { return default; }
+	public UPrimitiveComponent GetGrabbedComponent() { return default; }
 	///<summary>Set the target location</summary>
-	public  void SetTargetLocation(FVector NewLocation) {}
+	public void SetTargetLocation(FVector NewLocation) {}
 	///<summary>Set the target rotation</summary>
-	public  void SetTargetRotation(FRotator NewRotation) {}
+	public void SetTargetRotation(FRotator NewRotation) {}
 	///<summary>Set target location and rotation</summary>
-	public  void SetTargetLocationAndRotation(FVector NewLocation,FRotator NewRotation) {}
+	public void SetTargetLocationAndRotation(FVector NewLocation,FRotator NewRotation) {}
 	///<summary>Get the current location and rotation</summary>
-	public  void GetTargetLocationAndRotation(FVector TargetLocation,FRotator TargetRotation) {}
+	public void GetTargetLocationAndRotation(FVector TargetLocation,FRotator TargetRotation) {}
 	///<summary>Set linear damping</summary>
-	public  void SetLinearDamping(float NewLinearDamping) {}
+	public void SetLinearDamping(float NewLinearDamping) {}
 	///<summary>Set linear stiffness</summary>
-	public  void SetLinearStiffness(float NewLinearStiffness) {}
+	public void SetLinearStiffness(float NewLinearStiffness) {}
 	///<summary>Set angular damping</summary>
-	public  void SetAngularDamping(float NewAngularDamping) {}
+	public void SetAngularDamping(float NewAngularDamping) {}
 	///<summary>Set angular stiffness</summary>
-	public  void SetAngularStiffness(float NewAngularStiffness) {}
+	public void SetAngularStiffness(float NewAngularStiffness) {}
 	///<summary>Set interpolation speed</summary>
-	public  void SetInterpolationSpeed(float NewInterpolationSpeed) {}
+	public void SetInterpolationSpeed(float NewInterpolationSpeed) {}
 }

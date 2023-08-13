@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("LandscapeComponent.h")]
@@ -119,13 +118,13 @@ public partial class ULandscapeComponent : UPrimitiveComponent {
 	///<summary>MobileCombinationMaterialInstance_DEPRECATED</summary>
 	public UMaterialInstanceConstant MobileCombinationMaterialInstance_DEPRECATED;
 	///<summary>Gets the landscape material instance dynamic for this component</summary>
-	public  UMaterialInstanceDynamic GetMaterialInstanceDynamic(int InIndex) { return default; }
+	public UMaterialInstanceDynamic GetMaterialInstanceDynamic(int InIndex) { return default; }
 	///<summary>Gets the landscape paint layer weight value at the given position using LandscapeLayerInfo . Returns 0 in case it fails.</summary>
-	public  float EditorGetPaintLayerWeightAtLocation(FVector InLocation,ULandscapeLayerInfoObject PaintLayer) { return default; }
+	public float EditorGetPaintLayerWeightAtLocation(FVector InLocation,ULandscapeLayerInfoObject PaintLayer) { return default; }
 	///<summary>Gets the landscape paint layer weight value at the given position using layer name. Returns 0 in case it fails.</summary>
-	public  float EditorGetPaintLayerWeightByNameAtLocation(FVector InLocation,string InPaintLayerName) { return default; }
+	public float EditorGetPaintLayerWeightByNameAtLocation(FVector InLocation,string InPaintLayerName) { return default; }
 	///<summary>SetForcedLOD</summary>
-	public  void SetForcedLOD(int InForcedLOD) {}
+	public void SetForcedLOD(int InForcedLOD) {}
 	///<summary>SetLODBias</summary>
-	public  void SetLODBias(int InLODBias) {}
+	public void SetLODBias(int InLODBias) {}
 }

@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>PrimitiveComponents are SceneComponents that contain or generate some sort of geometry, generally to be rendered or used as collision data.</summary>
@@ -32,13 +31,13 @@ public partial class UPrimitiveComponent : USceneComponent {
 	///<summary>Indicates if we&#39;d like to create physics state all the time (for collision and simulation).</summary>
 	public bool bAlwaysCreatePhysicsState;
 	///<summary>If true, this component will generate overlap events when it is overlapping other components (eg Begin Overlap).</summary>
-	public  bool GetGenerateOverlapEvents() { return default; }
+	public bool GetGenerateOverlapEvents() { return default; }
 	///<summary>Modifies value returned by GetGenerateOverlapEvents()</summary>
-	public  void SetGenerateOverlapEvents(bool bInGenerateOverlapEvents) {}
+	public void SetGenerateOverlapEvents(bool bInGenerateOverlapEvents) {}
 	///<summary>SetLightingChannels</summary>
-	public  void SetLightingChannels(bool bChannel0,bool bChannel1,bool bChannel2) {}
+	public void SetLightingChannels(bool bChannel0,bool bChannel1,bool bChannel2) {}
 	///<summary>Invalidates Lumen surface cache and forces it to be refreshed. Useful to make material updates more responsive.</summary>
-	public  void InvalidateLumenSurfaceCache() {}
+	public void InvalidateLumenSurfaceCache() {}
 	///<summary>bGenerateOverlapEvents</summary>
 	public bool bGenerateOverlapEvents;
 	///<summary>If true, this component will generate individual overlaps for each overlapping physics body if it is a multi-body component. When false, this component will</summary>
@@ -158,13 +157,13 @@ public partial class UPrimitiveComponent : USceneComponent {
 	///<summary>ExcludeForSpecificHLODLevels_DEPRECATED</summary>
 	public TArray<int> ExcludeForSpecificHLODLevels_DEPRECATED;
 	///<summary>Whether this primitive is excluded from the specified HLOD level</summary>
-	public  bool IsExcludedFromHLODLevel(EHLODLevelExclusion HLODLevel) { return default; }
+	public bool IsExcludedFromHLODLevel(EHLODLevelExclusion HLODLevel) { return default; }
 	///<summary>Exclude this primitive from the specified HLOD level</summary>
-	public  void SetExcludedFromHLODLevel(EHLODLevelExclusion HLODLevel,bool bExcluded) {}
+	public void SetExcludedFromHLODLevel(EHLODLevelExclusion HLODLevel,bool bExcluded) {}
 	///<summary>SetExcludeForSpecificHLODLevels</summary>
-	public  void SetExcludeForSpecificHLODLevels(TArray<int> InExcludeForSpecificHLODLevels) {}
+	public void SetExcludeForSpecificHLODLevels(TArray<int> InExcludeForSpecificHLODLevels) {}
 	///<summary>GetExcludeForSpecificHLODLevels</summary>
-	public  TArray<int> GetExcludeForSpecificHLODLevels() { return default; }
+	public TArray<int> GetExcludeForSpecificHLODLevels() { return default; }
 	///<summary>CanBeCharacterBase_DEPRECATED</summary>
 	public ECanBeCharacterBase CanBeCharacterBase_DEPRECATED;
 	///<summary>Deprecated - represented by HLODBatchingPolicy == EHLODBatchingPolicy::MeshSection</summary>
@@ -202,59 +201,59 @@ public partial class UPrimitiveComponent : USceneComponent {
 	///<summary>Scales the bounds of the object.</summary>
 	public float BoundsScale;
 	///<summary>Returns true if this component has been rendered &quot;recently&quot;, with a tolerance in seconds to define what &quot;recent&quot; means.</summary>
-	public  bool WasRecentlyRendered(float Tolerance/*=0.2f*/) { return default; }
+	public bool WasRecentlyRendered(float Tolerance/*=0.2f*/) { return default; }
 	///<summary>Set of actors to ignore during component sweeps in MoveComponent().</summary>
 	public TArray<AActor> MoveIgnoreActors;
 	///<summary>Tells this component whether to ignore collision with all components of a specific Actor when this component is moved.</summary>
-	public  void IgnoreActorWhenMoving(AActor Actor,bool bShouldIgnore) {}
+	public void IgnoreActorWhenMoving(AActor Actor,bool bShouldIgnore) {}
 	///<summary>Returns the list of actors we currently ignore when moving.</summary>
-	public  TArray<AActor> CopyArrayOfMoveIgnoreActors() { return default; }
+	public TArray<AActor> CopyArrayOfMoveIgnoreActors() { return default; }
 	///<summary>Clear the list of actors we ignore when moving.</summary>
-	public  void ClearMoveIgnoreActors() {}
+	public void ClearMoveIgnoreActors() {}
 	///<summary>Set of components to ignore during component sweeps in MoveComponent().</summary>
 	public TArray<UPrimitiveComponent> MoveIgnoreComponents;
 	///<summary>Tells this component whether to ignore collision with another component when this component is moved.</summary>
-	public  void IgnoreComponentWhenMoving(UPrimitiveComponent Component,bool bShouldIgnore) {}
+	public void IgnoreComponentWhenMoving(UPrimitiveComponent Component,bool bShouldIgnore) {}
 	///<summary>Returns the list of actors we currently ignore when moving.</summary>
-	public  TArray<UPrimitiveComponent> CopyArrayOfMoveIgnoreComponents() { return default; }
+	public TArray<UPrimitiveComponent> CopyArrayOfMoveIgnoreComponents() { return default; }
 	///<summary>Clear the list of components we ignore when moving.</summary>
-	public  void ClearMoveIgnoreComponents() {}
+	public void ClearMoveIgnoreComponents() {}
 	///<summary>Gets the index of the scalar parameter for the custom primitive data array</summary>
-	public  int GetCustomPrimitiveDataIndexForScalarParameter(string ParameterName) { return default; }
+	public int GetCustomPrimitiveDataIndexForScalarParameter(string ParameterName) { return default; }
 	///<summary>Gets the index of the vector parameter for the custom primitive data array</summary>
-	public  int GetCustomPrimitiveDataIndexForVectorParameter(string ParameterName) { return default; }
+	public int GetCustomPrimitiveDataIndexForVectorParameter(string ParameterName) { return default; }
 	///<summary>Set a scalar parameter for custom primitive data. This sets the run-time data only, so it doesn&#39;t serialize.</summary>
-	public  void SetScalarParameterForCustomPrimitiveData(string ParameterName,float Value) {}
+	public void SetScalarParameterForCustomPrimitiveData(string ParameterName,float Value) {}
 	///<summary>Set a vector parameter for custom primitive data. This sets the run-time data only, so it doesn&#39;t serialize.</summary>
-	public  void SetVectorParameterForCustomPrimitiveData(string ParameterName,FVector4 Value) {}
+	public void SetVectorParameterForCustomPrimitiveData(string ParameterName,FVector4 Value) {}
 	///<summary>Set custom primitive data at index DataIndex. This sets the run-time data only, so it doesn&#39;t serialize.</summary>
-	public  void SetCustomPrimitiveDataFloat(int DataIndex,float Value) {}
+	public void SetCustomPrimitiveDataFloat(int DataIndex,float Value) {}
 	///<summary>Set custom primitive data, two floats at once, from index DataIndex to index DataIndex + 1. This sets the run-time data only, so it doesn&#39;t serialize.</summary>
-	public  void SetCustomPrimitiveDataVector2(int DataIndex,FVector2D Value) {}
+	public void SetCustomPrimitiveDataVector2(int DataIndex,FVector2D Value) {}
 	///<summary>Set custom primitive data, three floats at once, from index DataIndex to index DataIndex + 2. This sets the run-time data only, so it doesn&#39;t serialize.</summary>
-	public  void SetCustomPrimitiveDataVector3(int DataIndex,FVector Value) {}
+	public void SetCustomPrimitiveDataVector3(int DataIndex,FVector Value) {}
 	///<summary>Set custom primitive data, four floats at once, from index DataIndex to index DataIndex + 3. This sets the run-time data only, so it doesn&#39;t serialize.</summary>
-	public  void SetCustomPrimitiveDataVector4(int DataIndex,FVector4 Value) {}
+	public void SetCustomPrimitiveDataVector4(int DataIndex,FVector4 Value) {}
 	///<summary>Set a scalar parameter for default custom primitive data. This will be serialized and is useful in construction scripts.</summary>
-	public  void SetScalarParameterForDefaultCustomPrimitiveData(string ParameterName,float Value) {}
+	public void SetScalarParameterForDefaultCustomPrimitiveData(string ParameterName,float Value) {}
 	///<summary>Set a vector parameter for default custom primitive data. This will be serialized and is useful in construction scripts.</summary>
-	public  void SetVectorParameterForDefaultCustomPrimitiveData(string ParameterName,FVector4 Value) {}
+	public void SetVectorParameterForDefaultCustomPrimitiveData(string ParameterName,FVector4 Value) {}
 	///<summary>Set default custom primitive data at index DataIndex, and marks the render state dirty</summary>
-	public  void SetDefaultCustomPrimitiveDataFloat(int DataIndex,float Value) {}
+	public void SetDefaultCustomPrimitiveDataFloat(int DataIndex,float Value) {}
 	///<summary>Set default custom primitive data, two floats at once, from index DataIndex to index DataIndex + 1, and marks the render state dirty</summary>
-	public  void SetDefaultCustomPrimitiveDataVector2(int DataIndex,FVector2D Value) {}
+	public void SetDefaultCustomPrimitiveDataVector2(int DataIndex,FVector2D Value) {}
 	///<summary>Set default custom primitive data, three floats at once, from index DataIndex to index DataIndex + 2, and marks the render state dirty</summary>
-	public  void SetDefaultCustomPrimitiveDataVector3(int DataIndex,FVector Value) {}
+	public void SetDefaultCustomPrimitiveDataVector3(int DataIndex,FVector Value) {}
 	///<summary>Set default custom primitive data, four floats at once, from index DataIndex to index DataIndex + 3, and marks the render state dirty</summary>
-	public  void SetDefaultCustomPrimitiveDataVector4(int DataIndex,FVector4 Value) {}
+	public void SetDefaultCustomPrimitiveDataVector4(int DataIndex,FVector4 Value) {}
 	///<summary>Check whether this component is overlapping another component.</summary>
-	public  bool IsOverlappingComponent(UPrimitiveComponent OtherComp) { return default; }
+	public bool IsOverlappingComponent(UPrimitiveComponent OtherComp) { return default; }
 	///<summary>Check whether this component is overlapping any component of the given Actor.</summary>
-	public  bool IsOverlappingActor(AActor Other) { return default; }
+	public bool IsOverlappingActor(AActor Other) { return default; }
 	///<summary>Returns a list of actors that this component is overlapping.</summary>
-	public  void GetOverlappingActors(TArray<AActor> OverlappingActors,UClass ClassFilter/*=nullptr*/) {}
+	public void GetOverlappingActors(TArray<AActor> OverlappingActors,UClass ClassFilter/*=nullptr*/) {}
 	///<summary>Returns unique list of components this component is overlapping.</summary>
-	public  void GetOverlappingComponents(TArray<UPrimitiveComponent> OutOverlappingComponents) {}
+	public void GetOverlappingComponents(TArray<UPrimitiveComponent> OutOverlappingComponents) {}
 	///<summary>Physics scene information for this component, holds a single rigid body with multiple shapes.</summary>
 	public FBodyInstance BodyInstance;
 	///<summary>Event called when a component hits (or is hit by) something solid. This could happen due to things like Character movement, using Set Location with &#39;sweep&#39; enabled, or physics simulation.</summary>
@@ -290,221 +289,221 @@ public partial class UPrimitiveComponent : USceneComponent {
 	///<summary>Mask used for stencil buffer writes.</summary>
 	public ERendererStencilMask CustomDepthStencilWriteMask;
 	///<summary>Scale the bounds of this object, used for frustum culling. Useful for features like WorldPositionOffset.</summary>
-	public  void SetBoundsScale(float NewBoundsScale/*=1.0f*/) {}
+	public void SetBoundsScale(float NewBoundsScale/*=1.0f*/) {}
 	///<summary>Returns the material used by the element at the specified index</summary>
-	public  UMaterialInterface GetMaterial(int ElementIndex) { return default; }
+	public virtual UMaterialInterface GetMaterial(int ElementIndex) { return default; }
 	///<summary>Changes the material applied to an element of the mesh.</summary>
-	public  void SetMaterial(int ElementIndex,UMaterialInterface Material) {}
+	public virtual void SetMaterial(int ElementIndex,UMaterialInterface Material) {}
 	///<summary>Changes the material applied to an element of the mesh.</summary>
-	public  void SetMaterialByName(string MaterialSlotName,UMaterialInterface Material) {}
+	public virtual void SetMaterialByName(string MaterialSlotName,UMaterialInterface Material) {}
 	///<summary>Creates a Dynamic Material Instance for the specified element index.  The parent of the instance is set to the material being replaced.</summary>
-	public  UMaterialInstanceDynamic CreateAndSetMaterialInstanceDynamic(int ElementIndex) { return default; }
+	public virtual UMaterialInstanceDynamic CreateAndSetMaterialInstanceDynamic(int ElementIndex) { return default; }
 	///<summary>Creates a Dynamic Material Instance for the specified element index.  The parent of the instance is set to the material being replaced.</summary>
-	public  UMaterialInstanceDynamic CreateAndSetMaterialInstanceDynamicFromMaterial(int ElementIndex,UMaterialInterface Parent) { return default; }
+	public virtual UMaterialInstanceDynamic CreateAndSetMaterialInstanceDynamicFromMaterial(int ElementIndex,UMaterialInterface Parent) { return default; }
 	///<summary>Creates a Dynamic Material Instance for the specified element index, optionally from the supplied material.</summary>
-	public  UMaterialInstanceDynamic CreateDynamicMaterialInstance(int ElementIndex,UMaterialInterface SourceMaterial/*=NULL*/,string OptionalName/*=NAME_None*/) { return default; }
+	public virtual UMaterialInstanceDynamic CreateDynamicMaterialInstance(int ElementIndex,UMaterialInterface SourceMaterial/*=NULL*/,string OptionalName/*=NAME_None*/) { return default; }
 	///<summary>Try and retrieve the material applied to a particular collision face of mesh. Used with face index returned from collision trace.</summary>
-	public  UMaterialInterface GetMaterialFromCollisionFaceIndex(int FaceIndex,int SectionIndex) { return default; }
+	public virtual UMaterialInterface GetMaterialFromCollisionFaceIndex(int FaceIndex,int SectionIndex) { return default; }
 	///<summary>Returns the slope override struct for this component.</summary>
-	public  FWalkableSlopeOverride GetWalkableSlopeOverride() { return default; }
+	public FWalkableSlopeOverride GetWalkableSlopeOverride() { return default; }
 	///<summary>Sets a new slope override for this component instance.</summary>
-	public  void SetWalkableSlopeOverride(FWalkableSlopeOverride NewOverride) {}
+	public virtual void SetWalkableSlopeOverride(FWalkableSlopeOverride NewOverride) {}
 	///<summary>Sets whether or not a single body should use physics simulation, or should be &#39;fixed&#39; (kinematic).</summary>
-	public  void SetSimulatePhysics(bool bSimulate) {}
+	public virtual void SetSimulatePhysics(bool bSimulate) {}
 	///<summary>SetStaticWhenNotMoveable</summary>
-	public  void SetStaticWhenNotMoveable(bool bInStaticWhenNotMoveable) {}
+	public void SetStaticWhenNotMoveable(bool bInStaticWhenNotMoveable) {}
 	///<summary>GetStaticWhenNotMoveable</summary>
-	public  bool GetStaticWhenNotMoveable() { return default; }
+	public bool GetStaticWhenNotMoveable() { return default; }
 	///<summary>Sets the constraint mode of the component.</summary>
-	public  void SetConstraintMode(EDOFMode ConstraintMode) {}
+	public virtual void SetConstraintMode(EDOFMode ConstraintMode) {}
 	///<summary>Add an impulse to a single rigid body. Good for one time instant burst.</summary>
-	public  void AddImpulse(FVector Impulse,string BoneName/*=NAME_None*/,bool bVelChange/*=false*/) {}
+	public virtual void AddImpulse(FVector Impulse,string BoneName/*=NAME_None*/,bool bVelChange/*=false*/) {}
 	///<summary>Add an angular impulse to a single rigid body. Good for one time instant burst.</summary>
-	public  void AddAngularImpulseInRadians(FVector Impulse,string BoneName/*=NAME_None*/,bool bVelChange/*=false*/) {}
+	public virtual void AddAngularImpulseInRadians(FVector Impulse,string BoneName/*=NAME_None*/,bool bVelChange/*=false*/) {}
 	///<summary>Add an angular impulse to a single rigid body. Good for one time instant burst.</summary>
-	public  void AddAngularImpulseInDegrees(FVector Impulse,string BoneName/*=NAME_None*/,bool bVelChange/*=false*/) {}
+	public void AddAngularImpulseInDegrees(FVector Impulse,string BoneName/*=NAME_None*/,bool bVelChange/*=false*/) {}
 	///<summary>Add an impulse to a single rigid body at a specific location.</summary>
-	public  void AddImpulseAtLocation(FVector Impulse,FVector Location,string BoneName/*=NAME_None*/) {}
+	public virtual void AddImpulseAtLocation(FVector Impulse,FVector Location,string BoneName/*=NAME_None*/) {}
 	///<summary>Add an impulse to a single rigid body at a specific location. The Strength is taken as a change in angular velocity instead of an impulse (ie. mass will have no effect).</summary>
-	public  void AddVelocityChangeImpulseAtLocation(FVector Impulse,FVector Location,string BoneName/*=NAME_None*/) {}
+	public virtual void AddVelocityChangeImpulseAtLocation(FVector Impulse,FVector Location,string BoneName/*=NAME_None*/) {}
 	///<summary>Add an impulse to all rigid bodies in this component, radiating out from the specified position.</summary>
-	public  void AddRadialImpulse(FVector Origin,float Radius,float Strength,ERadialImpulseFalloff Falloff,bool bVelChange/*=false*/) {}
+	public virtual void AddRadialImpulse(FVector Origin,float Radius,float Strength,ERadialImpulseFalloff Falloff,bool bVelChange/*=false*/) {}
 	///<summary>Add a force to a single rigid body.</summary>
-	public  void AddForce(FVector Force,string BoneName/*=NAME_None*/,bool bAccelChange/*=false*/) {}
+	public virtual void AddForce(FVector Force,string BoneName/*=NAME_None*/,bool bAccelChange/*=false*/) {}
 	///<summary>Add a force to a single rigid body at a particular location in world space.</summary>
-	public  void AddForceAtLocation(FVector Force,FVector Location,string BoneName/*=NAME_None*/) {}
+	public virtual void AddForceAtLocation(FVector Force,FVector Location,string BoneName/*=NAME_None*/) {}
 	///<summary>Add a force to a single rigid body at a particular location. Both Force and Location should be in body space.</summary>
-	public  void AddForceAtLocationLocal(FVector Force,FVector Location,string BoneName/*=NAME_None*/) {}
+	public virtual void AddForceAtLocationLocal(FVector Force,FVector Location,string BoneName/*=NAME_None*/) {}
 	///<summary>Add a force to all bodies in this component, originating from the supplied world-space location.</summary>
-	public  void AddRadialForce(FVector Origin,float Radius,float Strength,ERadialImpulseFalloff Falloff,bool bAccelChange/*=false*/) {}
+	public virtual void AddRadialForce(FVector Origin,float Radius,float Strength,ERadialImpulseFalloff Falloff,bool bAccelChange/*=false*/) {}
 	///<summary>Add a torque to a single rigid body.</summary>
-	public  void AddTorqueInRadians(FVector Torque,string BoneName/*=NAME_None*/,bool bAccelChange/*=false*/) {}
+	public virtual void AddTorqueInRadians(FVector Torque,string BoneName/*=NAME_None*/,bool bAccelChange/*=false*/) {}
 	///<summary>Add a torque to a single rigid body.</summary>
-	public  void AddTorqueInDegrees(FVector Torque,string BoneName/*=NAME_None*/,bool bAccelChange/*=false*/) {}
+	public void AddTorqueInDegrees(FVector Torque,string BoneName/*=NAME_None*/,bool bAccelChange/*=false*/) {}
 	///<summary>Set the linear velocity of a single body.</summary>
-	public  void SetPhysicsLinearVelocity(FVector NewVel,bool bAddToCurrent/*=false*/,string BoneName/*=NAME_None*/) {}
+	public virtual void SetPhysicsLinearVelocity(FVector NewVel,bool bAddToCurrent/*=false*/,string BoneName/*=NAME_None*/) {}
 	///<summary>Get the linear velocity of a single body.</summary>
-	public  FVector GetPhysicsLinearVelocity(string BoneName/*=NAME_None*/) { return default; }
+	public FVector GetPhysicsLinearVelocity(string BoneName/*=NAME_None*/) { return default; }
 	///<summary>Get the linear velocity of a point on a single body.</summary>
-	public  FVector GetPhysicsLinearVelocityAtPoint(FVector Point,string BoneName/*=NAME_None*/) { return default; }
+	public FVector GetPhysicsLinearVelocityAtPoint(FVector Point,string BoneName/*=NAME_None*/) { return default; }
 	///<summary>Set the linear velocity of all bodies in this component.</summary>
-	public  void SetAllPhysicsLinearVelocity(FVector NewVel,bool bAddToCurrent/*=false*/) {}
+	public virtual void SetAllPhysicsLinearVelocity(FVector NewVel,bool bAddToCurrent/*=false*/) {}
 	///<summary>Set the angular velocity of a single body.</summary>
-	public  void SetPhysicsAngularVelocityInRadians(FVector NewAngVel,bool bAddToCurrent/*=false*/,string BoneName/*=NAME_None*/) {}
+	public virtual void SetPhysicsAngularVelocityInRadians(FVector NewAngVel,bool bAddToCurrent/*=false*/,string BoneName/*=NAME_None*/) {}
 	///<summary>Set the angular velocity of a single body.</summary>
-	public  void SetPhysicsAngularVelocityInDegrees(FVector NewAngVel,bool bAddToCurrent/*=false*/,string BoneName/*=NAME_None*/) {}
+	public void SetPhysicsAngularVelocityInDegrees(FVector NewAngVel,bool bAddToCurrent/*=false*/,string BoneName/*=NAME_None*/) {}
 	///<summary>Set the maximum angular velocity of a single body.</summary>
-	public  void SetPhysicsMaxAngularVelocityInDegrees(float NewMaxAngVel,bool bAddToCurrent/*=false*/,string BoneName/*=NAME_None*/) {}
+	public void SetPhysicsMaxAngularVelocityInDegrees(float NewMaxAngVel,bool bAddToCurrent/*=false*/,string BoneName/*=NAME_None*/) {}
 	///<summary>Set the maximum angular velocity of a single body.</summary>
-	public  void SetPhysicsMaxAngularVelocityInRadians(float NewMaxAngVel,bool bAddToCurrent/*=false*/,string BoneName/*=NAME_None*/) {}
+	public void SetPhysicsMaxAngularVelocityInRadians(float NewMaxAngVel,bool bAddToCurrent/*=false*/,string BoneName/*=NAME_None*/) {}
 	///<summary>Get the angular velocity of a single body, in degrees per second.</summary>
-	public  FVector GetPhysicsAngularVelocityInDegrees(string BoneName/*=NAME_None*/) { return default; }
+	public FVector GetPhysicsAngularVelocityInDegrees(string BoneName/*=NAME_None*/) { return default; }
 	///<summary>Get the angular velocity of a single body, in radians per second.</summary>
-	public  FVector GetPhysicsAngularVelocityInRadians(string BoneName/*=NAME_None*/) { return default; }
+	public FVector GetPhysicsAngularVelocityInRadians(string BoneName/*=NAME_None*/) { return default; }
 	///<summary>Get the center of mass of a single body. In the case of a welded body this will return the center of mass of the entire welded body (including its parent and children)</summary>
-	public  FVector GetCenterOfMass(string BoneName/*=NAME_None*/) { return default; }
+	public FVector GetCenterOfMass(string BoneName/*=NAME_None*/) { return default; }
 	///<summary>Set the center of mass of a single body. This will offset the physx-calculated center of mass.</summary>
-	public  void SetCenterOfMass(FVector CenterOfMassOffset,string BoneName/*=NAME_None*/) {}
+	public void SetCenterOfMass(FVector CenterOfMassOffset,string BoneName/*=NAME_None*/) {}
 	///<summary>&#39;Wake&#39; physics simulation for a single body.</summary>
-	public  void WakeRigidBody(string BoneName/*=NAME_None*/) {}
+	public virtual void WakeRigidBody(string BoneName/*=NAME_None*/) {}
 	///<summary>Force a single body back to sleep.</summary>
-	public  void PutRigidBodyToSleep(string BoneName/*=NAME_None*/) {}
+	public void PutRigidBodyToSleep(string BoneName/*=NAME_None*/) {}
 	///<summary>Changes the value of bNotifyRigidBodyCollision</summary>
-	public  void SetNotifyRigidBodyCollision(bool bNewNotifyRigidBodyCollision) {}
+	public virtual void SetNotifyRigidBodyCollision(bool bNewNotifyRigidBodyCollision) {}
 	///<summary>Changes the value of bOwnerNoSee.</summary>
-	public  void SetOwnerNoSee(bool bNewOwnerNoSee) {}
+	public void SetOwnerNoSee(bool bNewOwnerNoSee) {}
 	///<summary>Changes the value of bOnlyOwnerSee.</summary>
-	public  void SetOnlyOwnerSee(bool bNewOnlyOwnerSee) {}
+	public void SetOnlyOwnerSee(bool bNewOnlyOwnerSee) {}
 	///<summary>Changes the value of bIsVisibleInRayTracing.</summary>
-	public  void SetVisibleInRayTracing(bool bNewVisibleInRayTracing) {}
+	public void SetVisibleInRayTracing(bool bNewVisibleInRayTracing) {}
 	///<summary>Changes the value of CastShadow.</summary>
-	public  void SetCastShadow(bool NewCastShadow) {}
+	public void SetCastShadow(bool NewCastShadow) {}
 	///<summary>Changes the value of EmissiveLightSource.</summary>
-	public  void SetEmissiveLightSource(bool NewEmissiveLightSource) {}
+	public void SetEmissiveLightSource(bool NewEmissiveLightSource) {}
 	///<summary>Changes the value of CastHiddenShadow.</summary>
-	public  void SetCastHiddenShadow(bool NewCastHiddenShadow) {}
+	public void SetCastHiddenShadow(bool NewCastHiddenShadow) {}
 	///<summary>Changes the value of CastInsetShadow.</summary>
-	public  void SetCastInsetShadow(bool bInCastInsetShadow) {}
+	public void SetCastInsetShadow(bool bInCastInsetShadow) {}
 	///<summary>Changes the value of bCastContactShadow.</summary>
-	public  void SetCastContactShadow(bool bInCastContactShadow) {}
+	public void SetCastContactShadow(bool bInCastContactShadow) {}
 	///<summary>Changes the value of LightAttachmentsAsGroup.</summary>
-	public  void SetLightAttachmentsAsGroup(bool bInLightAttachmentsAsGroup) {}
+	public void SetLightAttachmentsAsGroup(bool bInLightAttachmentsAsGroup) {}
 	///<summary>Changes the value of ExcludeFromLightAttachmentGroup.</summary>
-	public  void SetExcludeFromLightAttachmentGroup(bool bInExcludeFromLightAttachmentGroup) {}
+	public void SetExcludeFromLightAttachmentGroup(bool bInExcludeFromLightAttachmentGroup) {}
 	///<summary>Changes the value of bSingleSampleShadowFromStationaryLights.</summary>
-	public  void SetSingleSampleShadowFromStationaryLights(bool bNewSingleSampleShadowFromStationaryLights) {}
+	public void SetSingleSampleShadowFromStationaryLights(bool bNewSingleSampleShadowFromStationaryLights) {}
 	///<summary>Changes the value of TranslucentSortPriority.</summary>
-	public  void SetTranslucentSortPriority(int NewTranslucentSortPriority) {}
+	public void SetTranslucentSortPriority(int NewTranslucentSortPriority) {}
 	///<summary>Changes the value of TranslucencySortDistanceOffset.</summary>
-	public  void SetTranslucencySortDistanceOffset(float NewTranslucencySortDistanceOffset) {}
+	public void SetTranslucencySortDistanceOffset(float NewTranslucencySortDistanceOffset) {}
 	///<summary>Changes the value of Affect Distance Field Lighting</summary>
-	public  void SetAffectDistanceFieldLighting(bool NewAffectDistanceFieldLighting) {}
+	public void SetAffectDistanceFieldLighting(bool NewAffectDistanceFieldLighting) {}
 	///<summary>Changes the value of bReceivesDecals.</summary>
-	public  void SetReceivesDecals(bool bNewReceivesDecals) {}
+	public void SetReceivesDecals(bool bNewReceivesDecals) {}
 	///<summary>Changes the value of bHoldout (Path Tracing only feature)</summary>
-	public  void SetHoldout(bool bNewHoldout) {}
+	public void SetHoldout(bool bNewHoldout) {}
 	///<summary>Changes the value of bAffectDynamicIndirectLighting</summary>
-	public  void SetAffectDynamicIndirectLighting(bool bNewAffectDynamicIndirectLighting) {}
+	public void SetAffectDynamicIndirectLighting(bool bNewAffectDynamicIndirectLighting) {}
 	///<summary>Changes the value of bAffectIndirectLightingWhileHidden</summary>
-	public  void SetAffectIndirectLightingWhileHidden(bool bNewAffectIndirectLightingWhileHidden) {}
+	public void SetAffectIndirectLightingWhileHidden(bool bNewAffectIndirectLightingWhileHidden) {}
 	///<summary>Controls what kind of collision is enabled for this body</summary>
-	public  void SetCollisionEnabled(ECollisionEnabled NewType) {}
+	public virtual void SetCollisionEnabled(ECollisionEnabled NewType) {}
 	///<summary>Set Collision Profile Name</summary>
-	public  void SetCollisionProfileName(string InCollisionProfileName,bool bUpdateOverlaps/*=true*/) {}
+	public virtual void SetCollisionProfileName(string InCollisionProfileName,bool bUpdateOverlaps/*=true*/) {}
 	///<summary>Get the collision profile name</summary>
-	public  string GetCollisionProfileName() { return default; }
+	public string GetCollisionProfileName() { return default; }
 	///<summary>Changes the collision channel that this object uses when it moves</summary>
-	public  void SetCollisionObjectType(ECollisionChannel Channel) {}
+	public virtual void SetCollisionObjectType(ECollisionChannel Channel) {}
 	///<summary>Perform a line trace against a single component</summary>
-	public  bool K2_LineTraceComponent(FVector TraceStart,FVector TraceEnd,bool bTraceComplex,bool bShowTrace,bool bPersistentShowTrace,FVector HitLocation,FVector HitNormal,string BoneName,FHitResult OutHit) { return default; }
+	public bool K2_LineTraceComponent(FVector TraceStart,FVector TraceEnd,bool bTraceComplex,bool bShowTrace,bool bPersistentShowTrace,FVector HitLocation,FVector HitNormal,string BoneName,FHitResult OutHit) { return default; }
 	///<summary>Perform a sphere trace against a single component</summary>
-	public  bool K2_SphereTraceComponent(FVector TraceStart,FVector TraceEnd,float SphereRadius,bool bTraceComplex,bool bShowTrace,bool bPersistentShowTrace,FVector HitLocation,FVector HitNormal,string BoneName,FHitResult OutHit) { return default; }
+	public bool K2_SphereTraceComponent(FVector TraceStart,FVector TraceEnd,float SphereRadius,bool bTraceComplex,bool bShowTrace,bool bPersistentShowTrace,FVector HitLocation,FVector HitNormal,string BoneName,FHitResult OutHit) { return default; }
 	///<summary>Perform a box overlap against a single component as an AABB (No rotation)</summary>
-	public  bool K2_BoxOverlapComponent(FVector InBoxCentre,FBox InBox,bool bTraceComplex,bool bShowTrace,bool bPersistentShowTrace,FVector HitLocation,FVector HitNormal,string BoneName,FHitResult OutHit) { return default; }
+	public bool K2_BoxOverlapComponent(FVector InBoxCentre,FBox InBox,bool bTraceComplex,bool bShowTrace,bool bPersistentShowTrace,FVector HitLocation,FVector HitNormal,string BoneName,FHitResult OutHit) { return default; }
 	///<summary>Perform a sphere overlap against a single component</summary>
-	public  bool K2_SphereOverlapComponent(FVector InSphereCentre,float InSphereRadius,bool bTraceComplex,bool bShowTrace,bool bPersistentShowTrace,FVector HitLocation,FVector HitNormal,string BoneName,FHitResult OutHit) { return default; }
+	public bool K2_SphereOverlapComponent(FVector InSphereCentre,float InSphereRadius,bool bTraceComplex,bool bShowTrace,bool bPersistentShowTrace,FVector HitLocation,FVector HitNormal,string BoneName,FHitResult OutHit) { return default; }
 	///<summary>Sets the bRenderCustomDepth property and marks the render state dirty.</summary>
-	public  void SetRenderCustomDepth(bool bValue) {}
+	public void SetRenderCustomDepth(bool bValue) {}
 	///<summary>Sets the CustomDepth stencil value (0 - 255) and marks the render state dirty.</summary>
-	public  void SetCustomDepthStencilValue(int Value) {}
+	public void SetCustomDepthStencilValue(int Value) {}
 	///<summary>Sets the CustomDepth stencil write mask and marks the render state dirty.</summary>
-	public  void SetCustomDepthStencilWriteMask(ERendererStencilMask WriteMaskBit) {}
+	public void SetCustomDepthStencilWriteMask(ERendererStencilMask WriteMaskBit) {}
 	///<summary>Sets bRenderInMainPass property and marks the render state dirty.</summary>
-	public  void SetRenderInMainPass(bool bValue) {}
+	public void SetRenderInMainPass(bool bValue) {}
 	///<summary>Sets bRenderInDepthPass property and marks the render state dirty.</summary>
-	public  void SetRenderInDepthPass(bool bValue) {}
+	public void SetRenderInDepthPass(bool bValue) {}
 	///<summary>Sets bVisibleInSceneCaptureOnly property and marks the render state dirty.</summary>
-	public  void SetVisibleInSceneCaptureOnly(bool bValue) {}
+	public void SetVisibleInSceneCaptureOnly(bool bValue) {}
 	///<summary>Sets bHideInSceneCapture property and marks the render state dirty.</summary>
-	public  void SetHiddenInSceneCapture(bool bValue) {}
+	public void SetHiddenInSceneCapture(bool bValue) {}
 	///<summary>Which specific HLOD levels this component should be excluded from</summary>
 	public byte ExcludeFromHLODLevels;
 	///<summary>LOD parent primitive to draw instead of this one (multiple UPrim&#39;s will point to the same LODParent )</summary>
 	public UPrimitiveComponent LODParentPrimitive;
 	///<summary>Return number of material elements in this primitive</summary>
-	public  int GetNumMaterials() { return default; }
+	public virtual int GetNumMaterials() { return default; }
 	///<summary>Returns BodyInstanceAsyncPhysicsTickHandle of the component. For use in the Async Physics Tick event</summary>
-	public  FBodyInstanceAsyncPhysicsTickHandle GetBodyInstanceAsyncPhysicsTickHandle(string BoneName/*=NAME_None*/,bool bGetWelded/*=true*/,int Index/*=-1*/) { return default; }
+	public FBodyInstanceAsyncPhysicsTickHandle GetBodyInstanceAsyncPhysicsTickHandle(string BoneName/*=NAME_None*/,bool bGetWelded/*=true*/,int Index/*=-1*/) { return default; }
 	///<summary>Returns the distance and closest point to the collision surface.</summary>
-	public  float GetClosestPointOnCollision(FVector Point,FVector OutPointOnBody,string BoneName/*=NAME_None*/) { return default; }
+	public float GetClosestPointOnCollision(FVector Point,FVector OutPointOnBody,string BoneName/*=NAME_None*/) { return default; }
 	///<summary>Returns the form of collision for this component</summary>
-	public  ECollisionEnabled GetCollisionEnabled() { return default; }
+	public virtual ECollisionEnabled GetCollisionEnabled() { return default; }
 	///<summary>Utility to see if there is any form of collision (query or physics) enabled on this component.</summary>
-	public  bool K2_IsCollisionEnabled() { return default; }
+	public bool K2_IsCollisionEnabled() { return default; }
 	///<summary>Utility to see if there is any query collision enabled on this component.</summary>
-	public  bool K2_IsQueryCollisionEnabled() { return default; }
+	public bool K2_IsQueryCollisionEnabled() { return default; }
 	///<summary>Utility to see if there is any physics collision enabled on this component.</summary>
-	public  bool K2_IsPhysicsCollisionEnabled() { return default; }
+	public bool K2_IsPhysicsCollisionEnabled() { return default; }
 	///<summary>Gets the response type given a specific channel</summary>
-	public  ECollisionResponse GetCollisionResponseToChannel(ECollisionChannel Channel) { return default; }
+	public virtual ECollisionResponse GetCollisionResponseToChannel(ECollisionChannel Channel) { return default; }
 	///<summary>Gets the collision object type</summary>
-	public  ECollisionChannel GetCollisionObjectType() { return default; }
+	public virtual ECollisionChannel GetCollisionObjectType() { return default; }
 	///<summary>Set the angular velocity of all bodies in this component.</summary>
-	public  void SetAllPhysicsAngularVelocityInDegrees(FVector NewAngVel,bool bAddToCurrent/*=false*/) {}
+	public void SetAllPhysicsAngularVelocityInDegrees(FVector NewAngVel,bool bAddToCurrent/*=false*/) {}
 	///<summary>Set the angular velocity of all bodies in this component.</summary>
-	public  void SetAllPhysicsAngularVelocityInRadians(FVector NewAngVel,bool bAddToCurrent/*=false*/) {}
+	public virtual void SetAllPhysicsAngularVelocityInRadians(FVector NewAngVel,bool bAddToCurrent/*=false*/) {}
 	///<summary>Ensure simulation is running for all bodies in this component.</summary>
-	public  void WakeAllRigidBodies() {}
+	public virtual void WakeAllRigidBodies() {}
 	///<summary>Enables/disables whether this component is affected by gravity. This applies only to components with bSimulatePhysics set to true.</summary>
-	public  void SetEnableGravity(bool bGravityEnabled) {}
+	public virtual void SetEnableGravity(bool bGravityEnabled) {}
 	///<summary>Returns whether this component is affected by gravity. Returns always false if the component is not simulated.</summary>
-	public  bool IsGravityEnabled() { return default; }
+	public virtual bool IsGravityEnabled() { return default; }
 	///<summary>Sets the linear damping of this component.</summary>
-	public  void SetLinearDamping(float InDamping) {}
+	public virtual void SetLinearDamping(float InDamping) {}
 	///<summary>Returns the linear damping of this component.</summary>
-	public  float GetLinearDamping() { return default; }
+	public virtual float GetLinearDamping() { return default; }
 	///<summary>Sets the angular damping of this component.</summary>
-	public  void SetAngularDamping(float InDamping) {}
+	public virtual void SetAngularDamping(float InDamping) {}
 	///<summary>Returns the angular damping of this component.</summary>
-	public  float GetAngularDamping() { return default; }
+	public virtual float GetAngularDamping() { return default; }
 	///<summary>Change the mass scale used to calculate the mass of a single physics body</summary>
-	public  void SetMassScale(string BoneName/*=NAME_None*/,float InMassScale/*=1.0f*/) {}
+	public virtual void SetMassScale(string BoneName/*=NAME_None*/,float InMassScale/*=1.0f*/) {}
 	///<summary>Returns the mass scale used to calculate the mass of a single physics body</summary>
-	public  float GetMassScale(string BoneName/*=NAME_None*/) { return default; }
+	public virtual float GetMassScale(string BoneName/*=NAME_None*/) { return default; }
 	///<summary>Change the mass scale used fo all bodies in this component</summary>
-	public  void SetAllMassScale(float InMassScale/*=1.0f*/) {}
+	public virtual void SetAllMassScale(float InMassScale/*=1.0f*/) {}
 	///<summary>Override the mass (in Kg) of a single physics body.</summary>
-	public  void SetMassOverrideInKg(string BoneName/*=NAME_None*/,float MassInKg/*=1.0f*/,bool bOverrideMass/*=true*/) {}
+	public virtual void SetMassOverrideInKg(string BoneName/*=NAME_None*/,float MassInKg/*=1.0f*/,bool bOverrideMass/*=true*/) {}
 	///<summary>Returns the mass of this component in kg.</summary>
-	public  float GetMass() { return default; }
+	public virtual float GetMass() { return default; }
 	///<summary>Returns the inertia tensor of this component in kg cm^2. The inertia tensor is in local component space.</summary>
-	public  FVector GetInertiaTensor(string BoneName/*=NAME_None*/) { return default; }
+	public virtual FVector GetInertiaTensor(string BoneName/*=NAME_None*/) { return default; }
 	///<summary>Scales the given vector by the world space moment of inertia. Useful for computing the torque needed to rotate an object.</summary>
-	public  FVector ScaleByMomentOfInertia(FVector InputVector,string BoneName/*=NAME_None*/) { return default; }
+	public virtual FVector ScaleByMomentOfInertia(FVector InputVector,string BoneName/*=NAME_None*/) { return default; }
 	///<summary>Set whether this component should use Continuous Collision Detection</summary>
-	public  void SetUseCCD(bool InUseCCD,string BoneName/*=NAME_None*/) {}
+	public virtual void SetUseCCD(bool InUseCCD,string BoneName/*=NAME_None*/) {}
 	///<summary>Set whether all bodies in this component should use Continuous Collision Detection</summary>
-	public  void SetAllUseCCD(bool InUseCCD) {}
+	public virtual void SetAllUseCCD(bool InUseCCD) {}
 	///<summary>Returns if any body in this component is currently awake and simulating.</summary>
-	public  bool IsAnyRigidBodyAwake() { return default; }
+	public virtual bool IsAnyRigidBodyAwake() { return default; }
 	///<summary>Changes a member of the ResponseToChannels container for this PrimitiveComponent.</summary>
-	public  void SetCollisionResponseToChannel(ECollisionChannel Channel,ECollisionResponse NewResponse) {}
+	public virtual void SetCollisionResponseToChannel(ECollisionChannel Channel,ECollisionResponse NewResponse) {}
 	///<summary>Changes all ResponseToChannels container for this PrimitiveComponent. to be NewResponse</summary>
-	public  void SetCollisionResponseToAllChannels(ECollisionResponse NewResponse) {}
+	public virtual void SetCollisionResponseToAllChannels(ECollisionResponse NewResponse) {}
 	///<summary>Changes the current PhysMaterialOverride for this component.</summary>
-	public  void SetPhysMaterialOverride(UPhysicalMaterial NewPhysMaterial) {}
+	public virtual void SetPhysMaterialOverride(UPhysicalMaterial NewPhysMaterial) {}
 	///<summary>Changes the value of CullDistance.</summary>
-	public  void SetCullDistance(float NewCullDistance) {}
+	public void SetCullDistance(float NewCullDistance) {}
 	///<summary>Return true if the given Pawn can step up onto this component.</summary>
-	public  bool CanCharacterStepUp(APawn Pawn) { return default; }
+	public virtual bool CanCharacterStepUp(APawn Pawn) { return default; }
 }

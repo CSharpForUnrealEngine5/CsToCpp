@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Base class for simple Components intended to be used as part of 3D Gizmos.</summary>
@@ -12,9 +11,9 @@ public partial class UGizmoBaseComponent : UPrimitiveComponent {
 	///<summary>PixelHitDistanceThreshold</summary>
 	public float PixelHitDistanceThreshold;
 	///<summary>UpdateHoverState</summary>
-	public  void UpdateHoverState(bool bHoveringIn) {}
+	public void UpdateHoverState(bool bHoveringIn) {}
 	///<summary>UpdateWorldLocalState</summary>
-	public  void UpdateWorldLocalState(bool bWorldIn) {}
+	public void UpdateWorldLocalState(bool bWorldIn) {}
 	///<summary>GizmoViewContext</summary>
 	public UGizmoViewContext GizmoViewContext;
 }

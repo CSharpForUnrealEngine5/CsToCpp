@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>UScalableSphereGizmo provides a sphere that can be scaled in all directions by dragging</summary>
@@ -8,7 +7,7 @@ public partial class UScalableSphereGizmo : UInteractiveGizmo {
 	///<summary>The error threshold for hit detection with the sphere</summary>
 	public float HitErrorThreshold;
 	///<summary>The text that will be used as the transaction description for undo/redo</summary>
-	public string TransactionDescription;
+	public FText TransactionDescription;
 	///<summary>The radius of the sphere</summary>
 	public float Radius;
 	///<summary>Whether the sphere is currently being hovered over</summary>

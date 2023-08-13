@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Simple projection policy screen component</summary>
@@ -6,9 +5,9 @@ using CSharpToCpp.Utilities;
 public partial class UDisplayClusterScreenComponent : UStaticMeshComponent {
 	public static UClass StaticClass() {return default;}
 	///<summary>Return the screen size adjusted by its transform scale.</summary>
-	public  FVector2D GetScreenSize() { return default; }
+	public FVector2D GetScreenSize() { return default; }
 	///<summary>Set screen size (update transform scale).</summary>
-	public  void SetScreenSize(FVector2D Size) {}
+	public void SetScreenSize(FVector2D Size) {}
 	///<summary>Adjust the size of the screen.</summary>
 	public FVector2D Size;
 }

@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Implements a movie scene asset.</summary>
@@ -38,7 +37,7 @@ public partial class UMovieScene : UMovieSceneSignedObject {
 	///<summary>User-defined playback range is locked.</summary>
 	public bool bPlaybackRangeLocked;
 	///<summary>Maps object GUIDs to user defined display names.</summary>
-	public TMap<string,string> ObjectsToDisplayNames;
+	public TMap<string,FText> ObjectsToDisplayNames;
 	///<summary>Maps object GUIDs to user defined labels.</summary>
 	public TMap<string,FMovieSceneTrackLabels> ObjectsToLabels;
 	///<summary>Editor only data that needs to be saved between sessions for editing but has no runtime purpose</summary>

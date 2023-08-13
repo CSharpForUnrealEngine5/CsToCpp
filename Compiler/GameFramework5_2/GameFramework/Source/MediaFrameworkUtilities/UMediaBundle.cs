@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>A bundle of the Media Asset necessary to play a video &amp; audio</summary>
@@ -6,17 +5,17 @@ using CSharpToCpp.Utilities;
 public partial class UMediaBundle : UObject {
 	public static UClass StaticClass() {return default;}
 	///<summary>Get the material interface.</summary>
-	public  UMaterialInterface GetMaterial() { return default; }
+	public UMaterialInterface GetMaterial() { return default; }
 	///<summary>Get the media player.</summary>
-	public  UMediaPlayer GetMediaPlayer() { return default; }
+	public UMediaPlayer GetMediaPlayer() { return default; }
 	///<summary>Get the media texture.</summary>
-	public  UMediaTexture GetMediaTexture() { return default; }
+	public UMediaTexture GetMediaTexture() { return default; }
 	///<summary>Get the lens displacement Render Target.</summary>
-	public  UTextureRenderTarget2D GetLensDisplacementTexture() { return default; }
+	public UTextureRenderTarget2D GetLensDisplacementTexture() { return default; }
 	///<summary>Get the media source.</summary>
-	public  UMediaSource GetMediaSource() { return default; }
+	public UMediaSource GetMediaSource() { return default; }
 	///<summary>Get the undistorted space camera view information.</summary>
-	public  FOpenCVCameraViewInfo GetUndistortedCameraViewInfo() { return default; }
+	public FOpenCVCameraViewInfo GetUndistortedCameraViewInfo() { return default; }
 	///<summary>MediaBundle internal MediaSource</summary>
 	public UMediaSource MediaSource;
 	///<summary>Controls MediaPlayer looping option</summary>
@@ -48,9 +47,9 @@ public partial class UMediaBundle : UObject {
 	///<summary>Default Actor Class from the plugin</summary>
 	public UClass DefaultActorClass;
 	///<summary>Callback function to show the DefaultTexture</summary>
-	public  void OnMediaClosed() {}
+	public void OnMediaClosed() {}
 	///<summary>OnMediaOpenOpened</summary>
-	public  void OnMediaOpenOpened(string DeviceUrl) {}
+	public void OnMediaOpenOpened(string DeviceUrl) {}
 	///<summary>OnMediaOpenFailed</summary>
-	public  void OnMediaOpenFailed(string DeviceUrl) {}
+	public void OnMediaOpenFailed(string DeviceUrl) {}
 }

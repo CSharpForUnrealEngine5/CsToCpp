@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("GameMapsSettings.h")]
@@ -39,7 +38,7 @@ public partial class UGameMapsSettings : UObject {
 	///<summary>Returns the game local maps settings</summary>
 	public static UGameMapsSettings GetGameMapsSettings() { return default; }
 	///<summary>Modify &quot;Skip Assigning Gamepad to Player 1&quot; GameMapsSettings option</summary>
-	public  void SetSkipAssigningGamepadToPlayer1(bool bSkipFirstPlayer/*=true*/) {}
+	public void SetSkipAssigningGamepadToPlayer1(bool bSkipFirstPlayer/*=true*/) {}
 	///<summary>GetSkipAssigningGamepadToPlayer1</summary>
-	public  bool GetSkipAssigningGamepadToPlayer1() { return default; }
+	public bool GetSkipAssigningGamepadToPlayer1() { return default; }
 }

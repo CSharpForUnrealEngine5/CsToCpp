@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Used to emit a radial force or impulse that can affect physics objects and or destructible objects.</summary>
@@ -20,11 +19,11 @@ public partial class URadialForceComponent : USceneComponent {
 	///<summary>If &gt; 0.f, will cause damage to destructible meshes as well</summary>
 	public float DestructibleDamage;
 	///<summary>Fire a single impulse</summary>
-	public  void FireImpulse() {}
+	public virtual void FireImpulse() {}
 	///<summary>Add an object type for this radial force to affect</summary>
-	public  void AddObjectTypeToAffect(EObjectTypeQuery ObjectType) {}
+	public virtual void AddObjectTypeToAffect(EObjectTypeQuery ObjectType) {}
 	///<summary>Remove an object type that is affected by this radial force</summary>
-	public  void RemoveObjectTypeToAffect(EObjectTypeQuery ObjectType) {}
+	public virtual void RemoveObjectTypeToAffect(EObjectTypeQuery ObjectType) {}
 	///<summary>The object types that are affected by this radial force</summary>
 	public TArray<EObjectTypeQuery> ObjectTypesToAffect;
 }

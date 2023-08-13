@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Debug actor to test Mass ZoneGraph Annotations.</summary>
@@ -6,7 +5,7 @@ using CSharpToCpp.Utilities;
 public partial class AZoneGraphAnnotationTestingActor : AActor {
 	public static UClass StaticClass() {return default;}
 	///<summary>Simple trigger function to trigger something on the tests.</summary>
-	public  void Trigger() {}
+	public void Trigger() {}
 	///<summary>TestingComp</summary>
 	public UZoneGraphAnnotationTestingComponent TestingComp;
 }

@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("NavModifierComponent.h")]
@@ -11,5 +10,5 @@ public partial class UNavModifierComponent : UNavRelevantComponent {
 	///<summary>Setting to &#39;true&#39; will result in expanding lower bounding box of the nav</summary>
 	public bool bIncludeAgentHeight;
 	///<summary>SetAreaClass</summary>
-	public  void SetAreaClass(UClass NewAreaClass) {}
+	public void SetAreaClass(UClass NewAreaClass) {}
 }

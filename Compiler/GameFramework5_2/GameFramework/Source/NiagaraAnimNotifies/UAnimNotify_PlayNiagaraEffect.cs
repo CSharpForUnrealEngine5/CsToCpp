@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("AnimNotify_PlayNiagaraEffect.h")]
@@ -15,7 +14,7 @@ public partial class UAnimNotify_PlayNiagaraEffect : UAnimNotify {
 	///<summary>Whether or not we are in absolute scale mode</summary>
 	public bool bAbsoluteScale;
 	///<summary>Return FXSystemComponent created from SpawnEffect</summary>
-	public  UFXSystemComponent GetSpawnedEffect() { return default; }
+	public UFXSystemComponent GetSpawnedEffect() { return default; }
 	///<summary>Should attach to the bone/socket</summary>
 	public bool Attached;
 	///<summary>SocketName to attach to</summary>

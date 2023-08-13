@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Factories/FbxImportUI.h")]
@@ -67,7 +66,7 @@ public partial class UFbxImportUI : UObject {
 	///<summary>If true the automated import path should detect the import type.  If false the import type was specified by the user</summary>
 	public bool bAutomatedImportShouldDetectType;
 	///<summary>ResetToDefault</summary>
-	public  void ResetToDefault() {}
+	public void ResetToDefault() {}
 	///<summary>The fbx file version</summary>
 	public string FileVersion;
 	///<summary>The file creator information</summary>

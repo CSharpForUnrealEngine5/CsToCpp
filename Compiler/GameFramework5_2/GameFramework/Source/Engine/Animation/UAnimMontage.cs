@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Any property you&#39;re adding to AnimMontage and parent class has to be considered for Child Asset</summary>
@@ -20,13 +19,13 @@ public partial class UAnimMontage : UAnimCompositeBase {
 	///<summary>Time from Sequence End to trigger blend out.</summary>
 	public float BlendOutTriggerTime;
 	///<summary>GetBlendInArgs</summary>
-	public  FAlphaBlendArgs GetBlendInArgs() { return default; }
+	public FAlphaBlendArgs GetBlendInArgs() { return default; }
 	///<summary>GetBlendOutArgs</summary>
-	public  FAlphaBlendArgs GetBlendOutArgs() { return default; }
+	public FAlphaBlendArgs GetBlendOutArgs() { return default; }
 	///<summary>GetDefaultBlendInTime</summary>
-	public  float GetDefaultBlendInTime() { return default; }
+	public float GetDefaultBlendInTime() { return default; }
 	///<summary>GetDefaultBlendOutTime</summary>
-	public  float GetDefaultBlendOutTime() { return default; }
+	public float GetDefaultBlendOutTime() { return default; }
 	///<summary>If you&#39;re using marker based sync for this montage, make sure to add sync group name. For now we only support one group</summary>
 	public string SyncGroup;
 	///<summary>wip: until we have UI working</summary>
@@ -54,13 +53,13 @@ public partial class UAnimMontage : UAnimCompositeBase {
 	///<summary>Preview Base pose for additive BlendSpace *</summary>
 	public UAnimSequence PreviewBasePose;
 	///<summary>Get SectionIndex from SectionName. Returns INDEX_None if not found</summary>
-	public  int GetSectionIndex(string InSectionName) { return default; }
+	public int GetSectionIndex(string InSectionName) { return default; }
 	///<summary>Get SectionName from SectionIndex. Returns NAME_None if not found</summary>
-	public  string GetSectionName(int SectionIndex) { return default; }
+	public string GetSectionName(int SectionIndex) { return default; }
 	///<summary>Returns the number of sections this montage has</summary>
-	public  int GetNumSections() { return default; }
+	public int GetNumSections() { return default; }
 	///<summary>@return true if valid section</summary>
-	public  bool IsValidSectionName(string InSectionName) { return default; }
+	public bool IsValidSectionName(string InSectionName) { return default; }
 	///<summary>Cached list of Branching Point markers</summary>
 	public TArray<FBranchingPointMarker> BranchingPointMarkers;
 	///<summary>Keep track of which AnimNotify_State are marked as BranchingPoints, so we can update their state when the Montage is ticked</summary>

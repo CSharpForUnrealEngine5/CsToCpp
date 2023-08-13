@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>In order to use PropertyEditorModule.CreateSingleProperty we have to give it an object instance</summary>
@@ -38,7 +37,7 @@ public partial class UPropertyTemplateObject : UObject {
 	///<summary>Captured FString property</summary>
 	public string CapturedStrProperty;
 	///<summary>Captured FText property</summary>
-	public string CapturedTextProperty;
+	public FText CapturedTextProperty;
 	///<summary>Captured FVector property</summary>
 	public FVector CapturedVectorProperty;
 }

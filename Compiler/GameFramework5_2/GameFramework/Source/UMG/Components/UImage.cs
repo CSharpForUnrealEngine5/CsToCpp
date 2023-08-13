@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>The image widget allows you to display a Slate Brush, or texture or material in the UI.</summary>
@@ -18,31 +17,31 @@ public partial class UImage : UWidget {
 	///<summary>OnMouseButtonDownEvent</summary>
 	public FOnPointerEvent OnMouseButtonDownEvent;
 	///<summary>SetColorAndOpacity</summary>
-	public  void SetColorAndOpacity(FLinearColor InColorAndOpacity) {}
+	public void SetColorAndOpacity(FLinearColor InColorAndOpacity) {}
 	///<summary>SetOpacity</summary>
-	public  void SetOpacity(float InOpacity) {}
+	public void SetOpacity(float InOpacity) {}
 	///<summary>SetDesiredSizeOverride</summary>
-	public  void SetDesiredSizeOverride(FVector2D DesiredSize) {}
+	public void SetDesiredSizeOverride(FVector2D DesiredSize) {}
 	///<summary>SetBrushTintColor</summary>
-	public  void SetBrushTintColor(FSlateColor TintColor) {}
+	public void SetBrushTintColor(FSlateColor TintColor) {}
 	///<summary>SetBrushResourceObject</summary>
-	public  void SetBrushResourceObject(UObject ResourceObject) {}
+	public void SetBrushResourceObject(UObject ResourceObject) {}
 	///<summary>SetBrush</summary>
-	public  void SetBrush(FSlateBrush InBrush) {}
+	public virtual void SetBrush(FSlateBrush InBrush) {}
 	///<summary>SetBrushFromAsset</summary>
-	public  void SetBrushFromAsset(USlateBrushAsset Asset) {}
+	public virtual void SetBrushFromAsset(USlateBrushAsset Asset) {}
 	///<summary>Sets the Brush to the specified Texture.</summary>
-	public  void SetBrushFromTexture(UTexture2D Texture,bool bMatchSize/*=false*/) {}
+	public virtual void SetBrushFromTexture(UTexture2D Texture,bool bMatchSize/*=false*/) {}
 	///<summary>Sets the Brush to the specified Atlas Region.</summary>
-	public  void SetBrushFromAtlasInterface(object /*AtlasRegion*/ AtlasRegion,bool bMatchSize/*=false*/) {}
+	public virtual void SetBrushFromAtlasInterface(object /*AtlasRegion*/ AtlasRegion,bool bMatchSize/*=false*/) {}
 	///<summary>Sets the Brush to the specified Dynamic Texture.</summary>
-	public  void SetBrushFromTextureDynamic(UTexture2DDynamic Texture,bool bMatchSize/*=false*/) {}
+	public virtual void SetBrushFromTextureDynamic(UTexture2DDynamic Texture,bool bMatchSize/*=false*/) {}
 	///<summary>SetBrushFromMaterial</summary>
-	public  void SetBrushFromMaterial(UMaterialInterface Material) {}
+	public virtual void SetBrushFromMaterial(UMaterialInterface Material) {}
 	///<summary>Sets the Brush to the specified Soft Texture.</summary>
-	public  void SetBrushFromSoftTexture(TSoftObjectPtr<UTexture2D> SoftTexture,bool bMatchSize/*=false*/) {}
+	public virtual void SetBrushFromSoftTexture(TSoftObjectPtr<UTexture2D> SoftTexture,bool bMatchSize/*=false*/) {}
 	///<summary>SetBrushFromSoftMaterial</summary>
-	public  void SetBrushFromSoftMaterial(TSoftObjectPtr<UMaterialInterface> SoftMaterial) {}
+	public virtual void SetBrushFromSoftMaterial(TSoftObjectPtr<UMaterialInterface> SoftMaterial) {}
 	///<summary>GetDynamicMaterial</summary>
-	public  UMaterialInstanceDynamic GetDynamicMaterial() { return default; }
+	public UMaterialInstanceDynamic GetDynamicMaterial() { return default; }
 }

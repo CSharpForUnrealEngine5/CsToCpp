@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Base component to handle the vehicle simulation for an actor.</summary>
@@ -54,61 +53,61 @@ public partial class UChaosVehicleMovementComponent : UPawnMovementComponent {
 	///<summary>bParkEnabled</summary>
 	public bool bParkEnabled;
 	///<summary>Set the user input for the vehicle throttle [range 0 to 1]</summary>
-	public  void SetThrottleInput(float Throttle) {}
+	public void SetThrottleInput(float Throttle) {}
 	///<summary>Increase the vehicle throttle position [throttle range normalized 0 to 1]</summary>
-	public  void IncreaseThrottleInput(float ThrottleDelta) {}
+	public void IncreaseThrottleInput(float ThrottleDelta) {}
 	///<summary>Decrease the vehicle throttle position  [throttle range normalized 0 to 1]</summary>
-	public  void DecreaseThrottleInput(float ThrottleDelta) {}
+	public void DecreaseThrottleInput(float ThrottleDelta) {}
 	///<summary>Set the user input for the vehicle Brake [range 0 to 1]</summary>
-	public  void SetBrakeInput(float Brake) {}
+	public void SetBrakeInput(float Brake) {}
 	///<summary>Set the user input for the vehicle steering [range -1 to 1]</summary>
-	public  void SetSteeringInput(float Steering) {}
+	public void SetSteeringInput(float Steering) {}
 	///<summary>Set the user input for the vehicle pitch [range -1 to 1]</summary>
-	public  void SetPitchInput(float Pitch) {}
+	public void SetPitchInput(float Pitch) {}
 	///<summary>Set the user input for the vehicle roll [range -1 to 1]</summary>
-	public  void SetRollInput(float Roll) {}
+	public void SetRollInput(float Roll) {}
 	///<summary>Set the user input for the vehicle yaw [range -1 to 1]</summary>
-	public  void SetYawInput(float Yaw) {}
+	public void SetYawInput(float Yaw) {}
 	///<summary>Set the user input for handbrake</summary>
-	public  void SetHandbrakeInput(bool bNewHandbrake) {}
+	public void SetHandbrakeInput(bool bNewHandbrake) {}
 	///<summary>Set the vehicle in park mode</summary>
-	public  void SetParked(bool bParked) {}
+	public void SetParked(bool bParked) {}
 	///<summary>Set the vehicle sleeping (bEnableSleep=true) or wake it up (bEnableSleep=false)</summary>
-	public  void SetSleeping(bool bEnableSleep) {}
+	public void SetSleeping(bool bEnableSleep) {}
 	///<summary>Set the user input for gear up</summary>
-	public  void SetChangeUpInput(bool bNewGearUp) {}
+	public void SetChangeUpInput(bool bNewGearUp) {}
 	///<summary>Set the user input for gear down</summary>
-	public  void SetChangeDownInput(bool bNewGearDown) {}
+	public void SetChangeDownInput(bool bNewGearDown) {}
 	///<summary>Set the user input for gear (-1 reverse, 0 neutral, 1+ forward)</summary>
-	public  void SetTargetGear(int GearNum,bool bImmediate) {}
+	public void SetTargetGear(int GearNum,bool bImmediate) {}
 	///<summary>Set the flag that will be used to select auto-gears</summary>
-	public  void SetUseAutomaticGears(bool bUseAuto) {}
+	public void SetUseAutomaticGears(bool bUseAuto) {}
 	///<summary>Set the flag that determines whether a controller is required to set control inputs</summary>
-	public  void SetRequiresControllerForInputs(bool bRequiresController) {}
+	public void SetRequiresControllerForInputs(bool bRequiresController) {}
 	///<summary>Get current gear</summary>
-	public  int GetCurrentGear() { return default; }
+	public int GetCurrentGear() { return default; }
 	///<summary>Get target gear</summary>
-	public  int GetTargetGear() { return default; }
+	public int GetTargetGear() { return default; }
 	///<summary>Are gears being changed automatically?</summary>
-	public  bool GetUseAutoGears() { return default; }
+	public bool GetUseAutoGears() { return default; }
 	///<summary>How fast the vehicle is moving forward</summary>
-	public  float GetForwardSpeed() { return default; }
+	public float GetForwardSpeed() { return default; }
 	///<summary>How fast the vehicle is moving forward</summary>
-	public  float GetForwardSpeedMPH() { return default; }
+	public float GetForwardSpeedMPH() { return default; }
 	///<summary>Get the user input for the vehicle throttle - can use this to feed control to a connected trailer</summary>
-	public  float GetThrottleInput() { return default; }
+	public float GetThrottleInput() { return default; }
 	///<summary>Get the user input for the vehicle brake - can use this to feed control to a connected trailer</summary>
-	public  float GetBrakeInput() { return default; }
+	public float GetBrakeInput() { return default; }
 	///<summary>Get the user input for the vehicle handbrake - can use this to feed control to a connected trailer</summary>
-	public  bool GetHandbrakeInput() { return default; }
+	public bool GetHandbrakeInput() { return default; }
 	///<summary>Get the user input for the vehicle steering - can use this to feed control to a connected trailer</summary>
-	public  float GetSteeringInput() { return default; }
+	public float GetSteeringInput() { return default; }
 	///<summary>Is the vehicle in park mode</summary>
-	public  bool IsParked() { return default; }
+	public bool IsParked() { return default; }
 	///<summary>Reset some vehicle state - call this if you are say creating pool of vehicles that get reused and you don&#39;t want to carry over the previous state</summary>
-	public  void ResetVehicle() {}
+	public void ResetVehicle() {}
 	///<summary>EnableSelfRighting</summary>
-	public  void EnableSelfRighting(bool InState) {}
+	public void EnableSelfRighting(bool InState) {}
 	///<summary>replicated state of vehicle</summary>
 	public FVehicleReplicatedState ReplicatedState;
 	///<summary>What the player has the steering set to. Range -1...1</summary>
@@ -160,7 +159,7 @@ public partial class UChaosVehicleMovementComponent : UPawnMovementComponent {
 	///<summary>Rate at which input yaw can rise and fall</summary>
 	public FVehicleInputRateConfig YawInputRate;
 	///<summary>Pass current state to server</summary>
-	public  void ServerUpdateState(float InSteeringInput,float InThrottleInput,float InBrakeInput,float InHandbrakeInput,int InCurrentGear,float InRollInput,float InPitchInput,float InYawInput) {}
+	public void ServerUpdateState(float InSteeringInput,float InThrottleInput,float InBrakeInput,float InHandbrakeInput,int InCurrentGear,float InRollInput,float InPitchInput,float InYawInput) {}
 	///<summary>simulation code running on the physics thread async callback</summary>
 	public AController OverrideController;
 }

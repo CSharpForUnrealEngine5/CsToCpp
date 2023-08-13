@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>An actor used to represent a rig control</summary>
@@ -20,33 +19,33 @@ public partial class AControlRigShapeActor : AActor {
 	///<summary>the name of the color parameter on the material</summary>
 	public string ColorParameterName;
 	///<summary>Set the control to be enabled/disabled</summary>
-	public  void SetEnabled(bool bInEnabled) {}
+	public virtual void SetEnabled(bool bInEnabled) {}
 	///<summary>Get whether the control is enabled/disabled</summary>
-	public  bool IsEnabled() { return default; }
+	public virtual bool IsEnabled() { return default; }
 	///<summary>Set the control to be selected/unselected</summary>
-	public  void SetSelected(bool bInSelected) {}
+	public virtual void SetSelected(bool bInSelected) {}
 	///<summary>Get whether the control is selected/unselected</summary>
-	public  bool IsSelectedInEditor() { return default; }
+	public virtual bool IsSelectedInEditor() { return default; }
 	///<summary>Set the control to be selected/unselected</summary>
-	public  void SetSelectable(bool bInSelectable) {}
+	public virtual void SetSelectable(bool bInSelectable) {}
 	///<summary>Set the control to be hovered</summary>
-	public  void SetHovered(bool bInHovered) {}
+	public virtual void SetHovered(bool bInHovered) {}
 	///<summary>Get whether the control is hovered</summary>
-	public  bool IsHovered() { return default; }
+	public virtual bool IsHovered() { return default; }
 	///<summary>Event called when the transform of this control has changed</summary>
-	public  void OnTransformChanged(FTransform NewTransform) {}
+	public void OnTransformChanged(FTransform NewTransform) {}
 	///<summary>Event called when the enabled state of this control has changed</summary>
-	public  void OnEnabledChanged(bool bIsEnabled) {}
+	public void OnEnabledChanged(bool bIsEnabled) {}
 	///<summary>Event called when the selection state of this control has changed</summary>
-	public  void OnSelectionChanged(bool bIsSelected) {}
+	public void OnSelectionChanged(bool bIsSelected) {}
 	///<summary>Event called when the hovered state of this control has changed</summary>
-	public  void OnHoveredChanged(bool bIsSelected) {}
+	public void OnHoveredChanged(bool bIsSelected) {}
 	///<summary>Event called when the manipulating state of this control has changed</summary>
-	public  void OnManipulatingChanged(bool bIsManipulating) {}
+	public void OnManipulatingChanged(bool bIsManipulating) {}
 	///<summary>this returns root component transform based on attach</summary>
-	public  void SetGlobalTransform(FTransform InTransform) {}
+	public void SetGlobalTransform(FTransform InTransform) {}
 	///<summary>GetGlobalTransform</summary>
-	public  FTransform GetGlobalTransform() { return default; }
+	public FTransform GetGlobalTransform() { return default; }
 	///<summary>Whether this control is selected</summary>
 	public bool bSelected;
 	///<summary>Whether this control is hovered</summary>

@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Tests/RemoteControlPropertyHandleTestData.h")]
@@ -39,7 +38,7 @@ public partial class URemoteControlAPITestObject : UObject {
 	///<summary>NameValue</summary>
 	public string NameValue;
 	///<summary>TextValue</summary>
-	public string TextValue;
+	public FText TextValue;
 	///<summary>bValue</summary>
 	public bool bValue;
 	///<summary>ByteValue</summary>

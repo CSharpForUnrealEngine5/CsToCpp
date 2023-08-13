@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Runtime virtual texture UObject</summary>
@@ -36,13 +35,13 @@ public partial class URuntimeVirtualTexture : UObject {
 	///<summary>Deprecated texture object containing streamed low mips.</summary>
 	public URuntimeVirtualTextureStreamingProxy StreamingTexture_DEPRECATED;
 	///<summary>Public getter for virtual texture tile count</summary>
-	public  int GetTileCount() { return default; }
+	public int GetTileCount() { return default; }
 	///<summary>Public getter for virtual texture tile size</summary>
-	public  int GetTileSize() { return default; }
+	public int GetTileSize() { return default; }
 	///<summary>Public getter for virtual texture tile border size</summary>
-	public  int GetTileBorderSize() { return default; }
+	public int GetTileBorderSize() { return default; }
 	///<summary>Public getter for virtual texture size. This is derived from the TileCount and TileSize.</summary>
-	public  int GetSize() { return default; }
+	public int GetSize() { return default; }
 	///<summary>Public getter for virtual texture page table size. This is only different from GetTileCount() when using an adaptive page table.</summary>
-	public  int GetPageTableSize() { return default; }
+	public int GetPageTableSize() { return default; }
 }

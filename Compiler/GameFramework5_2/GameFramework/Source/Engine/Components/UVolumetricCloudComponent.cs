@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>A component that represents a participating media material around a planet, e.g. clouds.</summary>
@@ -54,37 +53,37 @@ public partial class UVolumetricCloudComponent : USceneComponent {
 	///<summary>Specify the distance over which the Rayleigh scattering will linearly ramp up to ful leffect. (kilometers)</summary>
 	public float AerialPespectiveMieScatteringFadeDistance;
 	///<summary>SetLayerBottomAltitude</summary>
-	public  void SetLayerBottomAltitude(float NewValue) {}
+	public void SetLayerBottomAltitude(float NewValue) {}
 	///<summary>SetLayerHeight</summary>
-	public  void SetLayerHeight(float NewValue) {}
+	public void SetLayerHeight(float NewValue) {}
 	///<summary>SetTracingStartMaxDistance</summary>
-	public  void SetTracingStartMaxDistance(float NewValue) {}
+	public void SetTracingStartMaxDistance(float NewValue) {}
 	///<summary>SetTracingMaxDistance</summary>
-	public  void SetTracingMaxDistance(float NewValue) {}
+	public void SetTracingMaxDistance(float NewValue) {}
 	///<summary>SetPlanetRadius</summary>
-	public  void SetPlanetRadius(float NewValue) {}
+	public void SetPlanetRadius(float NewValue) {}
 	///<summary>SetGroundAlbedo</summary>
-	public  void SetGroundAlbedo(FColor NewValue) {}
+	public void SetGroundAlbedo(FColor NewValue) {}
 	///<summary>SetbUsePerSampleAtmosphericLightTransmittance</summary>
-	public  void SetbUsePerSampleAtmosphericLightTransmittance(bool NewValue) {}
+	public void SetbUsePerSampleAtmosphericLightTransmittance(bool NewValue) {}
 	///<summary>SetSkyLightCloudBottomOcclusion</summary>
-	public  void SetSkyLightCloudBottomOcclusion(float NewValue) {}
+	public void SetSkyLightCloudBottomOcclusion(float NewValue) {}
 	///<summary>SetViewSampleCountScale</summary>
-	public  void SetViewSampleCountScale(float NewValue) {}
+	public void SetViewSampleCountScale(float NewValue) {}
 	///<summary>SetReflectionViewSampleCountScale</summary>
-	public  void SetReflectionViewSampleCountScale(float NewValue) {}
+	public void SetReflectionViewSampleCountScale(float NewValue) {}
 	///<summary>SetShadowViewSampleCountScale</summary>
-	public  void SetShadowViewSampleCountScale(float NewValue) {}
+	public void SetShadowViewSampleCountScale(float NewValue) {}
 	///<summary>SetShadowReflectionViewSampleCountScale</summary>
-	public  void SetShadowReflectionViewSampleCountScale(float NewValue) {}
+	public void SetShadowReflectionViewSampleCountScale(float NewValue) {}
 	///<summary>SetShadowTracingDistance</summary>
-	public  void SetShadowTracingDistance(float NewValue) {}
+	public void SetShadowTracingDistance(float NewValue) {}
 	///<summary>SetStopTracingTransmittanceThreshold</summary>
-	public  void SetStopTracingTransmittanceThreshold(float NewValue) {}
+	public void SetStopTracingTransmittanceThreshold(float NewValue) {}
 	///<summary>SetMaterial</summary>
-	public  void SetMaterial(UMaterialInterface NewValue) {}
+	public void SetMaterial(UMaterialInterface NewValue) {}
 	///<summary>SetReflectionSampleCountScale</summary>
-	public  void SetReflectionSampleCountScale(float NewValue) {}
+	public void SetReflectionSampleCountScale(float NewValue) {}
 	///<summary>SetShadowReflectionSampleCountScale</summary>
-	public  void SetShadowReflectionSampleCountScale(float NewValue) {}
+	public void SetShadowReflectionSampleCountScale(float NewValue) {}
 }

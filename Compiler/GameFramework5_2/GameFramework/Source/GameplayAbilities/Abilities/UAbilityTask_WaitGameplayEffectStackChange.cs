@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Waits for the actor to activate another ability</summary>
@@ -10,7 +9,7 @@ public partial class UAbilityTask_WaitGameplayEffectStackChange : UAbilityTask {
 	///<summary>InvalidHandle</summary>
 	public FWaitGameplayEffectStackChangeDelegate InvalidHandle;
 	///<summary>OnGameplayEffectStackChange</summary>
-	public  void OnGameplayEffectStackChange(FActiveGameplayEffectHandle Handle,int NewCount,int OldCount) {}
+	public void OnGameplayEffectStackChange(FActiveGameplayEffectHandle Handle,int NewCount,int OldCount) {}
 	///<summary>Wait until the specified gameplay effect is removed.</summary>
 	public static UAbilityTask_WaitGameplayEffectStackChange WaitForGameplayEffectStackChange(UGameplayAbility OwningAbility,FActiveGameplayEffectHandle Handle) { return default; }
 }

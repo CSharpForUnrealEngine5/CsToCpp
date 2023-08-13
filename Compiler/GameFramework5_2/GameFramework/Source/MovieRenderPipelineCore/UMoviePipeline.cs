@@ -1,21 +1,20 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("MoviePipeline.h")]
 public partial class UMoviePipeline : UObject {
 	public static UClass StaticClass() {return default;}
 	///<summary>Initialize the movie pipeline with the specified settings. This kicks off the rendering process.</summary>
-	public  void Initialize(UMoviePipelineExecutorJob InJob) {}
+	public void Initialize(UMoviePipelineExecutorJob InJob) {}
 	///<summary>Request the movie pipeline to shut down at the next available time. The pipeline will attempt to abandon</summary>
-	public  void RequestShutdown(bool bIsError/*=false*/) {}
+	public void RequestShutdown(bool bIsError/*=false*/) {}
 	///<summary>Abandons any future work on this Movie Pipeline and runs through the shutdown flow to ensure already</summary>
-	public  void Shutdown(bool bError/*=false*/) {}
+	public void Shutdown(bool bError/*=false*/) {}
 	///<summary>Has RequestShutdown() been called?</summary>
-	public  bool IsShutdownRequested() { return default; }
+	public bool IsShutdownRequested() { return default; }
 	///<summary>Returns the time this movie pipeline was initialized at.</summary>
-	public  FDateTime GetInitializationTime() { return default; }
+	public FDateTime GetInitializationTime() { return default; }
 	///<summary>Override the time this movie pipeline was initialized at. This can be used for render farms</summary>
-	public  void SetInitializationTime(FDateTime InDateTime) {}
+	public void SetInitializationTime(FDateTime InDateTime) {}
 	///<summary>OnMoviePipelineFinishedDelegate</summary>
 	public FMoviePipelineFinished OnMoviePipelineFinishedDelegate;
 	///<summary>Called when we have completely finished this pipeline. This means that all frames have been rendered,</summary>
@@ -23,15 +22,15 @@ public partial class UMoviePipeline : UObject {
 	///<summary>Only called if `IsFlushDiskWritesPerShot()` is set!</summary>
 	public FMoviePipelineWorkFinished OnMoviePipelineShotWorkFinishedDelegate;
 	///<summary>Get the Primary Configuration used to render this shot. This contains the global settings for the shot, as well as per-shot</summary>
-	public  UMoviePipelinePrimaryConfig GetPipelinePrimaryConfig() { return default; }
+	public UMoviePipelinePrimaryConfig GetPipelinePrimaryConfig() { return default; }
 	///<summary>GetPipelineMasterConfig</summary>
-	public  UMoviePipelinePrimaryConfig GetPipelineMasterConfig() { return default; }
+	public UMoviePipelinePrimaryConfig GetPipelineMasterConfig() { return default; }
 	///<summary>GetPreviewTexture</summary>
-	public  UTexture GetPreviewTexture() { return default; }
+	public UTexture GetPreviewTexture() { return default; }
 	///<summary>GetCurrentJob</summary>
-	public  UMoviePipelineExecutorJob GetCurrentJob() { return default; }
+	public UMoviePipelineExecutorJob GetCurrentJob() { return default; }
 	///<summary>This function should be called by the Executor when execution has finished (this should still be called in the event of an error)</summary>
-	public  void OnMoviePipelineFinishedImpl() {}
+	public virtual void OnMoviePipelineFinishedImpl() {}
 	///<summary>Custom TimeStep used to drive the engine while rendering.</summary>
 	public UMoviePipelineCustomTimeStep CustomTimeStep;
 	///<summary>Hold a reference to the existing custom time step (if any) so we can restore it after we&#39;re done using our custom one.</summary>

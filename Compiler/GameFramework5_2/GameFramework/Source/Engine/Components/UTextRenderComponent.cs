@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Renders text in the world with given font. Contains usual font related attributes such as Scale, Alignment, Color etc.</summary>
@@ -6,7 +5,7 @@ using CSharpToCpp.Utilities;
 public partial class UTextRenderComponent : UPrimitiveComponent {
 	public static UClass StaticClass() {return default;}
 	///<summary>Text content, can be multi line using &lt;br&gt; as line separator</summary>
-	public string Text;
+	public FText Text;
 	///<summary>Text material</summary>
 	public UMaterialInterface TextMaterial;
 	///<summary>Text font</summary>
@@ -32,29 +31,29 @@ public partial class UTextRenderComponent : UPrimitiveComponent {
 	///<summary>Allows text to draw unmodified when using debug visualization modes. *</summary>
 	public bool bAlwaysRenderAsText;
 	///<summary>Change the text value and signal the primitives to be rebuilt</summary>
-	public  void K2_SetText(string Value) {}
+	public void K2_SetText(FText Value) {}
 	///<summary>Change the text material and signal the primitives to be rebuilt</summary>
-	public  void SetTextMaterial(UMaterialInterface Material) {}
+	public void SetTextMaterial(UMaterialInterface Material) {}
 	///<summary>Change the font and signal the primitives to be rebuilt</summary>
-	public  void SetFont(UFont Value) {}
+	public void SetFont(UFont Value) {}
 	///<summary>Change the horizontal alignment and signal the primitives to be rebuilt</summary>
-	public  void SetHorizontalAlignment(EHorizTextAligment Value) {}
+	public void SetHorizontalAlignment(EHorizTextAligment Value) {}
 	///<summary>Change the vertical alignment and signal the primitives to be rebuilt</summary>
-	public  void SetVerticalAlignment(EVerticalTextAligment Value) {}
+	public void SetVerticalAlignment(EVerticalTextAligment Value) {}
 	///<summary>Change the text render color and signal the primitives to be rebuilt</summary>
-	public  void SetTextRenderColor(FColor Value) {}
+	public void SetTextRenderColor(FColor Value) {}
 	///<summary>Change the text X scale and signal the primitives to be rebuilt</summary>
-	public  void SetXScale(float Value) {}
+	public void SetXScale(float Value) {}
 	///<summary>Change the text Y scale and signal the primitives to be rebuilt</summary>
-	public  void SetYScale(float Value) {}
+	public void SetYScale(float Value) {}
 	///<summary>Change the text horizontal spacing adjustment and signal the primitives to be rebuilt</summary>
-	public  void SetHorizSpacingAdjust(float Value) {}
+	public void SetHorizSpacingAdjust(float Value) {}
 	///<summary>Change the text vertical spacing adjustment and signal the primitives to be rebuilt</summary>
-	public  void SetVertSpacingAdjust(float Value) {}
+	public void SetVertSpacingAdjust(float Value) {}
 	///<summary>Change the world size of the text and signal the primitives to be rebuilt</summary>
-	public  void SetWorldSize(float Value) {}
+	public void SetWorldSize(float Value) {}
 	///<summary>Get local size of text</summary>
-	public  FVector GetTextLocalSize() { return default; }
+	public FVector GetTextLocalSize() { return default; }
 	///<summary>Get world space size of text</summary>
-	public  FVector GetTextWorldSize() { return default; }
+	public FVector GetTextWorldSize() { return default; }
 }

@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("LandscapeHeightfieldCollisionComponent.h")]
@@ -27,7 +26,7 @@ public partial class ULandscapeHeightfieldCollisionComponent : UPrimitiveCompone
 	///<summary>Reference to render component</summary>
 	public ULandscapeComponent RenderComponentRef;
 	///<summary>Returns associated landscape component</summary>
-	public  ULandscapeComponent GetRenderComponent() { return default; }
+	public ULandscapeComponent GetRenderComponent() { return default; }
 	///<summary>CollisionHash</summary>
 	public uint CollisionHash;
 	///<summary>Physical materials objects referenced by the indices in PhysicalMaterialRenderData. Stripped from cooked content</summary>

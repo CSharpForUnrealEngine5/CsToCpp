@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Editor source control common functionality.</summary>
@@ -12,7 +11,7 @@ public partial class USourceControlHelpers : UObject {
 	///<summary>Quick check if currently set source control provider is enabled and available for use</summary>
 	public static bool IsAvailable() { return default; }
 	///<summary>Get status text set by SourceControl system if an error occurs regardless whether bSilent is set or not.</summary>
-	public static string LastErrorMsg() { return default; }
+	public static FText LastErrorMsg() { return default; }
 	///<summary>Use currently set source control provider to sync a file or directory to the head revision.</summary>
 	public static bool SyncFile(string InFile,bool bSilent/*=false*/) { return default; }
 	///<summary>Use currently set source control provider to sync files or directories to the head revision.</summary>
@@ -52,7 +51,7 @@ public partial class USourceControlHelpers : UObject {
 	///<summary>Use currently set source control provider to query a file&#39;s source control state.</summary>
 	public static FSourceControlState QueryFileState(string InFile,bool bSilent/*=false*/) { return default; }
 	///<summary>Delegate to broadcast FileState upon AsyncQueryFileState completion</summary>
-	public  void FQueryFileStateDelegate(FSourceControlState FileStateOut) {}
+	public void FQueryFileStateDelegate(FSourceControlState FileStateOut) {}
 	///<summary>Query the source control state of the specified file, asynchronously.</summary>
 	public static void AsyncQueryFileState(FQueryFileStateDelegate FileStateCallback,string InFile,bool bSilent/*=false*/) {}
 }

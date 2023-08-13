@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>This class is a wrapper for editor loading and saving functionality</summary>
@@ -34,7 +33,7 @@ public partial class UEditorLoadingAndSavingUtils : UObject {
 	///<summary>Exports the current scene</summary>
 	public static void ExportScene(bool bExportSelectedActorsOnly) {}
 	///<summary>Unloads a list of packages</summary>
-	public static void UnloadPackages(TArray<UPackage> PackagesToUnload,bool bOutAnyPackagesUnloaded,string OutErrorMessage) {}
+	public static void UnloadPackages(TArray<UPackage> PackagesToUnload,bool bOutAnyPackagesUnloaded,FText OutErrorMessage) {}
 	///<summary>Helper function that attempts to reload the specified top-level packages.</summary>
-	public static void ReloadPackages(TArray<UPackage> PackagesToReload,bool bOutAnyPackagesReloaded,string OutErrorMessage,EReloadPackagesInteractionMode InteractionMode/*=EReloadPackagesInteractionMode.Interactive*/) {}
+	public static void ReloadPackages(TArray<UPackage> PackagesToReload,bool bOutAnyPackagesReloaded,FText OutErrorMessage,EReloadPackagesInteractionMode InteractionMode/*=EReloadPackagesInteractionMode.Interactive*/) {}
 }

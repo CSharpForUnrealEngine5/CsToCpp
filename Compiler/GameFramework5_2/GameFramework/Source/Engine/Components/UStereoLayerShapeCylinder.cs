@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Components/StereoLayerComponent.h")]
@@ -11,9 +10,9 @@ public partial class UStereoLayerShapeCylinder : UStereoLayerShape {
 	///<summary>Height of the stereo layer cylinder *</summary>
 	public int Height;
 	///<summary>SetRadius</summary>
-	public  void SetRadius(float InRadius) {}
+	public void SetRadius(float InRadius) {}
 	///<summary>SetOverlayArc</summary>
-	public  void SetOverlayArc(float InOverlayArc) {}
+	public void SetOverlayArc(float InOverlayArc) {}
 	///<summary>SetHeight</summary>
-	public  void SetHeight(int InHeight) {}
+	public void SetHeight(int InHeight) {}
 }

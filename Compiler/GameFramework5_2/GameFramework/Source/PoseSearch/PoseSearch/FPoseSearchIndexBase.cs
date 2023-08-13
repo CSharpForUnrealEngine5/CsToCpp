@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>case class for FPoseSearchIndex. building block used to gather data for data mining and calculate weights, pca, kdtree stuff</summary>

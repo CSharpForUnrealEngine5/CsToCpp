@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Actor containing data layers instances within a world.</summary>
@@ -6,15 +5,15 @@ using CSharpToCpp.Utilities;
 public partial class AWorldDataLayers : AInfo {
 	public static UClass StaticClass() {return default;}
 	///<summary>OnDataLayerRuntimeStateChanged</summary>
-	public  void OnDataLayerRuntimeStateChanged(UDataLayerInstance InDataLayer,EDataLayerRuntimeState InState) {}
+	public void OnDataLayerRuntimeStateChanged(UDataLayerInstance InDataLayer,EDataLayerRuntimeState InState) {}
 	///<summary>OnRep_ActiveDataLayerNames</summary>
-	public  void OnRep_ActiveDataLayerNames() {}
+	public void OnRep_ActiveDataLayerNames() {}
 	///<summary>OnRep_LoadedDataLayerNames</summary>
-	public  void OnRep_LoadedDataLayerNames() {}
+	public void OnRep_LoadedDataLayerNames() {}
 	///<summary>OnRep_EffectiveActiveDataLayerNames</summary>
-	public  void OnRep_EffectiveActiveDataLayerNames() {}
+	public void OnRep_EffectiveActiveDataLayerNames() {}
 	///<summary>OnRep_EffectiveLoadedDataLayerNames</summary>
-	public  void OnRep_EffectiveLoadedDataLayerNames() {}
+	public void OnRep_EffectiveLoadedDataLayerNames() {}
 	///<summary>True when Runtime Data Layer editing is allowed.</summary>
 	public bool bAllowRuntimeDataLayerEditing;
 	///<summary>CurrentDataLayers</summary>

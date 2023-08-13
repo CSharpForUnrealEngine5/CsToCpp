@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("VariantManagerTestActor.h")]
@@ -25,7 +24,7 @@ public partial class AVariantManagerTestActor : AActor {
 	///<summary>Captured FString property</summary>
 	public string CapturedStrProperty;
 	///<summary>Captured FText property</summary>
-	public string CapturedTextProperty;
+	public FText CapturedTextProperty;
 	///<summary>Captured FRotator property</summary>
 	public FRotator CapturedRotatorProperty;
 	///<summary>Captured FColor property</summary>

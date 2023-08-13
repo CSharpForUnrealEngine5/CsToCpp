@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Base of property view allows you to display the value of an object properties.</summary>
@@ -14,7 +13,7 @@ public partial class UPropertyViewBase : UWidget {
 	///<summary>Sets a delegate called when the property value changes</summary>
 	public FOnPropertyValueChanged OnPropertyChanged;
 	///<summary>GetObject</summary>
-	public  UObject GetObject() { return default; }
+	public UObject GetObject() { return default; }
 	///<summary>SetObject</summary>
-	public  void SetObject(UObject NewObject) {}
+	public void SetObject(UObject NewObject) {}
 }

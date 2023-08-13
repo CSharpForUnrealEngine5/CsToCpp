@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Implements a texture asset for rendering video tracks from UMediaPlayer assets.</summary>
@@ -26,19 +25,19 @@ public partial class UMediaTexture : UTexture {
 	///<summary>Current media orientation</summary>
 	public MediaTextureOrientation CurrentOrientation;
 	///<summary>Gets the current aspect ratio of the texture.</summary>
-	public  float GetAspectRatio() { return default; }
+	public float GetAspectRatio() { return default; }
 	///<summary>Gets the current height of the texture.</summary>
-	public  int GetHeight() { return default; }
+	public int GetHeight() { return default; }
 	///<summary>Gets the current width of the texture.</summary>
-	public  int GetWidth() { return default; }
+	public int GetWidth() { return default; }
 	///<summary>Gets the current numbe of mips of the texture.</summary>
-	public  int GetTextureNumMips() { return default; }
+	public int GetTextureNumMips() { return default; }
 	///<summary>Get the media player that provides the video samples.</summary>
-	public  UMediaPlayer GetMediaPlayer() { return default; }
+	public UMediaPlayer GetMediaPlayer() { return default; }
 	///<summary>Set the media player that provides the video samples.</summary>
-	public  void SetMediaPlayer(UMediaPlayer NewMediaPlayer) {}
+	public void SetMediaPlayer(UMediaPlayer NewMediaPlayer) {}
 	///<summary>Creates a new resource for the texture, and updates any cached references to the resource.</summary>
-	public  void UpdateResource() {}
+	public virtual void UpdateResource() {}
 	///<summary>The media player asset associated with this texture.</summary>
 	public UMediaPlayer MediaPlayer;
 }

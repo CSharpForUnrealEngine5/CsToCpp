@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("GroomComponent.h")]
@@ -39,29 +38,29 @@ public partial class UGroomComponent : UMeshComponent {
 	///<summary>Optional socket name, where the groom component should be attached at, when parented with a skeletal mesh</summary>
 	public string AttachmentName;
 	///<summary>Accessor function for changing Groom asset from blueprint/sequencer</summary>
-	public  void SetGroomAsset(UGroomAsset Asset) {}
+	public void SetGroomAsset(UGroomAsset Asset) {}
 	///<summary>Accessor function for changing Groom binding asset from blueprint/sequencer</summary>
-	public  void SetBindingAsset(UGroomBindingAsset InBinding) {}
+	public void SetBindingAsset(UGroomBindingAsset InBinding) {}
 	///<summary>Accessor function for changing Groom physics asset from blueprint/sequencer</summary>
-	public  void SetPhysicsAsset(UPhysicsAsset InPhysicsAsset) {}
+	public void SetPhysicsAsset(UPhysicsAsset InPhysicsAsset) {}
 	///<summary>Change the MeshDeformer that is used for this Component.</summary>
-	public  void SetMeshDeformer(UMeshDeformer InMeshDeformer) {}
+	public void SetMeshDeformer(UMeshDeformer InMeshDeformer) {}
 	///<summary>Add a skeletal mesh to the collision components</summary>
-	public  void AddCollisionComponent(USkeletalMeshComponent SkeletalMeshComponent) {}
+	public void AddCollisionComponent(USkeletalMeshComponent SkeletalMeshComponent) {}
 	///<summary>Reset the collision components</summary>
-	public  void ResetCollisionComponents() {}
+	public void ResetCollisionComponents() {}
 	///<summary>Accessor function for changing the enable simulation flag from blueprint/sequencer</summary>
-	public  void SetEnableSimulation(bool bInEnableSimulation) {}
+	public void SetEnableSimulation(bool bInEnableSimulation) {}
 	///<summary>Reset the simulation, if enabled</summary>
-	public  void ResetSimulation() {}
+	public void ResetSimulation() {}
 	///<summary>Given the group index return the matching niagara component</summary>
-	public  UNiagaraComponent GetNiagaraComponent(int GroupIndex) { return default; }
+	public UNiagaraComponent GetNiagaraComponent(int GroupIndex) { return default; }
 	///<summary>Accessor function for changing hair length scale from blueprint/sequencer</summary>
-	public  void SetHairLengthScale(float Scale) {}
+	public void SetHairLengthScale(float Scale) {}
 	///<summary>SetHairLengthScaleEnable</summary>
-	public  void SetHairLengthScaleEnable(bool bEnable) {}
+	public void SetHairLengthScaleEnable(bool bEnable) {}
 	///<summary>GetIsHairLengthScaleEnabled</summary>
-	public  bool GetIsHairLengthScaleEnabled() { return default; }
+	public bool GetIsHairLengthScaleEnabled() { return default; }
 	///<summary>Groom&#39;s groups info.</summary>
 	public TArray<FHairGroupDesc> GroomGroupsDesc;
 	///<summary>Force the groom to use cards/meshes geometry instead of strands.</summary>

@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Chaos cloth simulation component.</summary>
@@ -6,21 +5,21 @@ using CSharpToCpp.Utilities;
 public partial class UChaosClothComponent : USkinnedMeshComponent {
 	public static UClass StaticClass() {return default;}
 	///<summary>Set the cloth asset used by this component.</summary>
-	public  void SetClothAsset(UChaosClothAsset InClothAsset) {}
+	public void SetClothAsset(UChaosClothAsset InClothAsset) {}
 	///<summary>Get the cloth asset used by this component.</summary>
-	public  UChaosClothAsset GetClothAsset() { return default; }
+	public UChaosClothAsset GetClothAsset() { return default; }
 	///<summary>Reset the teleport mode.</summary>
-	public  void ResetTeleportMode() {}
+	public void ResetTeleportMode() {}
 	///<summary>Teleport the cloth particles to the new reference bone location keeping pose and velocities prior to advancing the simulation.</summary>
-	public  void ForceNextUpdateTeleport() {}
+	public void ForceNextUpdateTeleport() {}
 	///<summary>Teleport the cloth particles to the new reference bone location while reseting the pose and velocities prior to advancing the simulation.</summary>
-	public  void ForceNextUpdateTeleportAndReset() {}
+	public void ForceNextUpdateTeleportAndReset() {}
 	///<summary>Stop the simulation, and keep the cloth in its last pose.</summary>
-	public  void SuspendSimulation() {}
+	public void SuspendSimulation() {}
 	///<summary>Resume a previously suspended simulation.</summary>
-	public  void ResumeSimulation() {}
+	public void ResumeSimulation() {}
 	///<summary>Return whether or not the simulation is currently suspended.</summary>
-	public  bool IsSimulationSuspended() { return default; }
+	public bool IsSimulationSuspended() { return default; }
 	///<summary>ClothAsset</summary>
 	public UChaosClothAsset ClothAsset;
 	///<summary>If enabled, and the parent is another Skinned Mesh Component (e.g. another Cloth Component, Poseable Mesh Component, Skeletal Mesh Component, ...etc.), use its pose.</summary>

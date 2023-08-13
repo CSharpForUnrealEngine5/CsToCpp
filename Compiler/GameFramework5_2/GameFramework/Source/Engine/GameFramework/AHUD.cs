@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Base class of the heads-up display. This has a canvas and a debug canvas on which primitives can be drawn.</summary>
@@ -34,65 +33,65 @@ public partial class AHUD : AActor {
 	///<summary>List of debug strings attached to actors, sorted by actor first, then by order of addition</summary>
 	public TArray<FDebugTextInfo> DebugTextList;
 	///<summary>hides or shows HUD</summary>
-	public  void ShowHUD() {}
+	public virtual void ShowHUD() {}
 	///<summary>Toggles displaying properties of player&#39;s current ViewTarget</summary>
-	public  void ShowDebug(string DebugType/*=NAME_None*/) {}
+	public virtual void ShowDebug(string DebugType/*=NAME_None*/) {}
 	///<summary>Toggles sub categories of show debug to customize display</summary>
-	public  void ShowDebugToggleSubCategory(string Category) {}
+	public void ShowDebugToggleSubCategory(string Category) {}
 	///<summary>Toggles &#39;ShowDebug&#39; from showing debug info between reticle target actor (of subclass &lt;DesiredClass&gt;) and camera view target</summary>
-	public  void ShowDebugForReticleTargetToggle(UClass DesiredClass) {}
+	public void ShowDebugForReticleTargetToggle(UClass DesiredClass) {}
 	///<summary>Class filter for selecting &#39;ShowDebugTargetActor&#39; when &#39;bShowDebugForReticleTarget&#39; is true.</summary>
 	public UClass ShowDebugTargetDesiredClass;
 	///<summary>Show Debug Actor used if &#39;bShowDebugForReticleTarget&#39; is true, only updated if trace from reticle hit a new Actor of class &#39;ShowDebugTargetDesiredClass&#39;</summary>
 	public AActor ShowDebugTargetActor;
 	///<summary>Add debug text for a specific actor to be displayed via DrawDebugTextList().  If the debug text is invalid then it will</summary>
-	public  void AddDebugText(string DebugText,AActor SrcActor,float Duration,FVector Offset,FVector DesiredOffset,FColor TextColor,bool bSkipOverwriteCheck,bool bAbsoluteLocation,bool bKeepAttachedToActor,UFont InFont,float FontScale,bool bDrawShadow) {}
+	public void AddDebugText(string DebugText,AActor SrcActor,float Duration,FVector Offset,FVector DesiredOffset,FColor TextColor,bool bSkipOverwriteCheck,bool bAbsoluteLocation,bool bKeepAttachedToActor,UFont InFont,float FontScale,bool bDrawShadow) {}
 	///<summary>Remove all debug strings added via AddDebugText</summary>
-	public  void RemoveAllDebugStrings() {}
+	public void RemoveAllDebugStrings() {}
 	///<summary>Remove debug strings for the given actor</summary>
-	public  void RemoveDebugText(AActor SrcActor,bool bLeaveDurationText) {}
+	public void RemoveDebugText(AActor SrcActor,bool bLeaveDurationText) {}
 	///<summary>Hook to allow blueprints to do custom HUD drawing. See: bSuppressNativeHUD to control HUD drawing in base class.</summary>
-	public  void ReceiveDrawHUD(int SizeX,int SizeY) {}
+	public void ReceiveDrawHUD(int SizeX,int SizeY) {}
 	///<summary>Called when a hit box is clicked on. Provides the name associated with that box.</summary>
-	public  void ReceiveHitBoxClick(string BoxName) {}
+	public void ReceiveHitBoxClick(string BoxName) {}
 	///<summary>Called when a hit box is unclicked. Provides the name associated with that box.</summary>
-	public  void ReceiveHitBoxRelease(string BoxName) {}
+	public void ReceiveHitBoxRelease(string BoxName) {}
 	///<summary>Called when a hit box is moused over.</summary>
-	public  void ReceiveHitBoxBeginCursorOver(string BoxName) {}
+	public void ReceiveHitBoxBeginCursorOver(string BoxName) {}
 	///<summary>Called when a hit box no longer has the mouse over it.</summary>
-	public  void ReceiveHitBoxEndCursorOver(string BoxName) {}
+	public void ReceiveHitBoxEndCursorOver(string BoxName) {}
 	///<summary>Returns the width and height of a string.</summary>
-	public  void GetTextSize(string Text,float OutWidth,float OutHeight,UFont Font/*=NULL*/,float Scale/*=1.0f*/) {}
+	public void GetTextSize(string Text,float OutWidth,float OutHeight,UFont Font/*=NULL*/,float Scale/*=1.0f*/) {}
 	///<summary>Draws a string on the HUD.</summary>
-	public  void DrawText(string Text,FLinearColor TextColor,float ScreenX,float ScreenY,UFont Font/*=NULL*/,float Scale/*=1.0f*/,bool bScalePosition/*=false*/) {}
+	public void DrawText(string Text,FLinearColor TextColor,float ScreenX,float ScreenY,UFont Font/*=NULL*/,float Scale/*=1.0f*/,bool bScalePosition/*=false*/) {}
 	///<summary>Draws a 2D line on the HUD.</summary>
-	public  void DrawLine(float StartScreenX,float StartScreenY,float EndScreenX,float EndScreenY,FLinearColor LineColor,float LineThickness/*=0.0f*/) {}
+	public void DrawLine(float StartScreenX,float StartScreenY,float EndScreenX,float EndScreenY,FLinearColor LineColor,float LineThickness/*=0.0f*/) {}
 	///<summary>Draws a colored untextured quad on the HUD.</summary>
-	public  void DrawRect(FLinearColor RectColor,float ScreenX,float ScreenY,float ScreenW,float ScreenH) {}
+	public void DrawRect(FLinearColor RectColor,float ScreenX,float ScreenY,float ScreenW,float ScreenH) {}
 	///<summary>Draws a textured quad on the HUD.</summary>
-	public  void DrawTexture(UTexture Texture,float ScreenX,float ScreenY,float ScreenW,float ScreenH,float TextureU,float TextureV,float TextureUWidth,float TextureVHeight,FLinearColor TintColor/*=FLinearColor.White*/,EBlendMode BlendMode/*=BLEND_Translucent*/,float Scale/*=1.0f*/,bool bScalePosition/*=false*/,float Rotation/*=0.0f*/,FVector2D RotPivot/*=FVector2D.ZeroVector*/) {}
+	public void DrawTexture(UTexture Texture,float ScreenX,float ScreenY,float ScreenW,float ScreenH,float TextureU,float TextureV,float TextureUWidth,float TextureVHeight,FLinearColor TintColor/*=FLinearColor.White*/,EBlendMode BlendMode/*=BLEND_Translucent*/,float Scale/*=1.0f*/,bool bScalePosition/*=false*/,float Rotation/*=0.0f*/,FVector2D RotPivot/*=FVector2D.ZeroVector*/) {}
 	///<summary>Draws a textured quad on the HUD. Assumes 1:1 texel density.</summary>
-	public  void DrawTextureSimple(UTexture Texture,float ScreenX,float ScreenY,float Scale/*=1.0f*/,bool bScalePosition/*=false*/) {}
+	public void DrawTextureSimple(UTexture Texture,float ScreenX,float ScreenY,float Scale/*=1.0f*/,bool bScalePosition/*=false*/) {}
 	///<summary>Draws a material-textured quad on the HUD.</summary>
-	public  void DrawMaterial(UMaterialInterface Material,float ScreenX,float ScreenY,float ScreenW,float ScreenH,float MaterialU,float MaterialV,float MaterialUWidth,float MaterialVHeight,float Scale/*=1.0f*/,bool bScalePosition/*=false*/,float Rotation/*=0.0f*/,FVector2D RotPivot/*=FVector2D.ZeroVector*/) {}
+	public void DrawMaterial(UMaterialInterface Material,float ScreenX,float ScreenY,float ScreenW,float ScreenH,float MaterialU,float MaterialV,float MaterialUWidth,float MaterialVHeight,float Scale/*=1.0f*/,bool bScalePosition/*=false*/,float Rotation/*=0.0f*/,FVector2D RotPivot/*=FVector2D.ZeroVector*/) {}
 	///<summary>Draws a material-textured quad on the HUD.  Assumes UVs such that the entire material is shown.</summary>
-	public  void DrawMaterialSimple(UMaterialInterface Material,float ScreenX,float ScreenY,float ScreenW,float ScreenH,float Scale/*=1.0f*/,bool bScalePosition/*=false*/) {}
+	public void DrawMaterialSimple(UMaterialInterface Material,float ScreenX,float ScreenY,float ScreenW,float ScreenH,float Scale/*=1.0f*/,bool bScalePosition/*=false*/) {}
 	///<summary>DrawMaterialTriangle</summary>
-	public  void DrawMaterialTriangle(UMaterialInterface Material,FVector2D V0_Pos,FVector2D V1_Pos,FVector2D V2_Pos,FVector2D V0_UV,FVector2D V1_UV,FVector2D V2_UV,FLinearColor V0_Color/*=FLinearColor.White*/,FLinearColor V1_Color/*=FLinearColor.White*/,FLinearColor V2_Color/*=FLinearColor.White*/) {}
+	public void DrawMaterialTriangle(UMaterialInterface Material,FVector2D V0_Pos,FVector2D V1_Pos,FVector2D V2_Pos,FVector2D V0_UV,FVector2D V1_UV,FVector2D V2_UV,FLinearColor V0_Color/*=FLinearColor.White*/,FLinearColor V1_Color/*=FLinearColor.White*/,FLinearColor V2_Color/*=FLinearColor.White*/) {}
 	///<summary>Transforms a 3D world-space vector into 2D screen coordinates</summary>
-	public  FVector Project(FVector Location,bool bClampToZeroPlane/*=true*/) { return default; }
+	public FVector Project(FVector Location,bool bClampToZeroPlane/*=true*/) { return default; }
 	///<summary>Transforms a 2D screen location into a 3D location and direction</summary>
-	public  void Deproject(float ScreenX,float ScreenY,FVector WorldPosition,FVector WorldDirection) {}
+	public void Deproject(float ScreenX,float ScreenY,FVector WorldPosition,FVector WorldDirection) {}
 	///<summary>Returns the array of actors inside a selection rectangle, with a class filter.</summary>
-	public  void GetActorsInSelectionRectangle(UClass ClassFilter,FVector2D FirstPoint,FVector2D SecondPoint,TArray<AActor> OutActors,bool bIncludeNonCollidingComponents/*=true*/,bool bActorMustBeFullyEnclosed/*=false*/) {}
+	public void GetActorsInSelectionRectangle(UClass ClassFilter,FVector2D FirstPoint,FVector2D SecondPoint,TArray<AActor> OutActors,bool bIncludeNonCollidingComponents/*=true*/,bool bActorMustBeFullyEnclosed/*=false*/) {}
 	///<summary>Add a hitbox to the hud</summary>
-	public  void AddHitBox(FVector2D Position,FVector2D Size,string InName,bool bConsumesInput,int Priority/*=0*/) {}
+	public void AddHitBox(FVector2D Position,FVector2D Size,string InName,bool bConsumesInput,int Priority/*=0*/) {}
 	///<summary>Returns the PlayerController for this HUD&#39;s player.</summary>
-	public  APlayerController GetOwningPlayerController() { return default; }
+	public APlayerController GetOwningPlayerController() { return default; }
 	///<summary>Returns the Pawn for this HUD&#39;s player.</summary>
-	public  APawn GetOwningPawn() { return default; }
+	public APawn GetOwningPawn() { return default; }
 	///<summary>Cycle to next target in our considered targets list for &#39;showdebug&#39;</summary>
-	public  void NextDebugTarget() {}
+	public virtual void NextDebugTarget() {}
 	///<summary>Cycle to previous target in our considered targets list for &#39;showdebug&#39;</summary>
-	public  void PreviousDebugTarget() {}
+	public virtual void PreviousDebugTarget() {}
 }

@@ -1,11 +1,10 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("NiagaraSimCacheFunctionLibrary.h")]
 public partial class UAsyncNiagaraCaptureSimCache : UBlueprintAsyncActionBase {
 	public static UClass StaticClass() {return default;}
 	///<summary>FOnCaptureComplete</summary>
-	public  void FOnCaptureComplete(bool bSuccess) {}
+	public void FOnCaptureComplete(bool bSuccess) {}
 	///<summary>CaptureSimCache</summary>
 	public UNiagaraSimCache CaptureSimCache;
 	///<summary>CaptureComponent</summary>

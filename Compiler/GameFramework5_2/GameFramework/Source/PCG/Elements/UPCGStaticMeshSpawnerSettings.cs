@@ -1,13 +1,12 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Elements/PCGStaticMeshSpawner.h")]
 public partial class UPCGStaticMeshSpawnerSettings : UPCGSettings {
 	public static UClass StaticClass() {return default;}
 	///<summary>SetMeshSelectorType</summary>
-	public  void SetMeshSelectorType(UClass InMeshSelectorType) {}
+	public void SetMeshSelectorType(UClass InMeshSelectorType) {}
 	///<summary>SetInstancePackerType</summary>
-	public  void SetInstancePackerType(UClass InInstancePackerType) {}
+	public void SetInstancePackerType(UClass InInstancePackerType) {}
 	///<summary>Defines the method of mesh selection per input data</summary>
 	public UClass MeshSelectorType;
 	///<summary>MeshSelectorInstance</summary>

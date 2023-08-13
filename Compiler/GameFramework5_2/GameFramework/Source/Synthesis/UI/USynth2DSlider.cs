@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>A simple widget that shows a sliding bar with a handle that allows you to control the value between 0..1.</summary>
@@ -38,15 +37,15 @@ public partial class USynth2DSlider : UWidget {
 	///<summary>Called when the value is changed by slider or typing.</summary>
 	public FOnFloatValueChangedEventSynth2D OnValueChangedY;
 	///<summary>Gets the current value of the slider.</summary>
-	public  FVector2D GetValue() { return default; }
+	public FVector2D GetValue() { return default; }
 	///<summary>Sets the current value of the slider.</summary>
-	public  void SetValue(FVector2D InValue) {}
+	public void SetValue(FVector2D InValue) {}
 	///<summary>Sets if the slidable area should be indented to fit the handle</summary>
-	public  void SetIndentHandle(bool InValue) {}
+	public void SetIndentHandle(bool InValue) {}
 	///<summary>Sets the handle to be interactive or fixed</summary>
-	public  void SetLocked(bool InValue) {}
+	public void SetLocked(bool InValue) {}
 	///<summary>Sets the amount to adjust the value by, when using a controller or keyboard</summary>
-	public  void SetStepSize(float InValue) {}
+	public void SetStepSize(float InValue) {}
 	///<summary>Sets the color of the handle bar</summary>
-	public  void SetSliderHandleColor(FLinearColor InValue) {}
+	public void SetSliderHandleColor(FLinearColor InValue) {}
 }

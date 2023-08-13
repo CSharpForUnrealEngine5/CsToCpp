@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Components/HorizontalBoxSlot.h")]
@@ -13,11 +12,11 @@ public partial class UHorizontalBoxSlot : UPanelSlot {
 	///<summary>VerticalAlignment</summary>
 	public EVerticalAlignment VerticalAlignment;
 	///<summary>SetPadding</summary>
-	public  void SetPadding(FMargin InPadding) {}
+	public void SetPadding(FMargin InPadding) {}
 	///<summary>SetSize</summary>
-	public  void SetSize(FSlateChildSize InSize) {}
+	public void SetSize(FSlateChildSize InSize) {}
 	///<summary>SetHorizontalAlignment</summary>
-	public  void SetHorizontalAlignment(EHorizontalAlignment InHorizontalAlignment) {}
+	public void SetHorizontalAlignment(EHorizontalAlignment InHorizontalAlignment) {}
 	///<summary>SetVerticalAlignment</summary>
-	public  void SetVerticalAlignment(EVerticalAlignment InVerticalAlignment) {}
+	public void SetVerticalAlignment(EVerticalAlignment InVerticalAlignment) {}
 }

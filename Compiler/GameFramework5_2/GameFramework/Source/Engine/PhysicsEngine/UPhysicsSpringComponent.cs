@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Note: this component is still work in progress. Uses raycast springs for simple vehicle forces</summary>
@@ -20,11 +19,11 @@ public partial class UPhysicsSpringComponent : USceneComponent {
 	///<summary>The current compression of the spring. A spring at rest will have SpringCompression 0.</summary>
 	public float SpringCompression;
 	///<summary>Returns the spring compression as a normalized scalar along spring direction.</summary>
-	public  float GetNormalizedCompressionScalar() { return default; }
+	public float GetNormalizedCompressionScalar() { return default; }
 	///<summary>Returns the spring resting point in world space.</summary>
-	public  FVector GetSpringRestingPoint() { return default; }
+	public FVector GetSpringRestingPoint() { return default; }
 	///<summary>Returns the spring current end point in world space.</summary>
-	public  FVector GetSpringCurrentEndPoint() { return default; }
+	public FVector GetSpringCurrentEndPoint() { return default; }
 	///<summary>Returns the spring direction from start to resting point</summary>
-	public  FVector GetSpringDirection() { return default; }
+	public FVector GetSpringDirection() { return default; }
 }

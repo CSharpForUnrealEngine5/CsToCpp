@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>USkeleton : that links between mesh and animation</summary>
@@ -22,7 +21,7 @@ public partial class USkeleton : UObject {
 	///<summary>List of blend profiles available in this skeleton</summary>
 	public TArray<UBlendProfile> BlendProfiles;
 	///<summary>Get the specified blend profile by name</summary>
-	public  UBlendProfile GetBlendProfile(string InProfileName) { return default; }
+	public UBlendProfile GetBlendProfile(string InProfileName) { return default; }
 	///<summary>serialized slot groups and slot names.</summary>
 	public TArray<FAnimSlotGroup> SlotGroups;
 	///<summary>The default skeletal mesh to use when previewing this skeleton</summary>
@@ -36,7 +35,7 @@ public partial class USkeleton : UObject {
 	///<summary>Attached assets component for this skeleton</summary>
 	public FPreviewAssetAttachContainer PreviewAttachedAssetContainer;
 	///<summary>AddCompatibleSkeleton</summary>
-	public  void AddCompatibleSkeleton(USkeleton SourceSkeleton) {}
+	public void AddCompatibleSkeleton(USkeleton SourceSkeleton) {}
 	///<summary>Array of user data stored with the asset</summary>
 	public TArray<UAssetUserData> AssetUserData;
 }

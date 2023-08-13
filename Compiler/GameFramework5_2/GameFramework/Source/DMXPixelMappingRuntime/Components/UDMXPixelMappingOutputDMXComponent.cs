@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Parent class for DMX sending components</summary>
@@ -6,5 +5,5 @@ using CSharpToCpp.Utilities;
 public partial class UDMXPixelMappingOutputDMXComponent : UDMXPixelMappingOutputComponent {
 	public static UClass StaticClass() {return default;}
 	///<summary>Render input texture for downsample texture, donwsample and send DMX for this component</summary>
-	public  void RenderWithInputAndSendDMX() {}
+	public virtual void RenderWithInputAndSendDMX() {}
 }

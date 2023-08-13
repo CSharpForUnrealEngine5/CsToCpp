@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Abilities/Tasks/AbilityTask_VisualizeTargeting.h")]
@@ -11,7 +10,7 @@ public partial class UAbilityTask_VisualizeTargeting : UAbilityTask {
 	///<summary>Visualize target using a specified target actor.</summary>
 	public static UAbilityTask_VisualizeTargeting VisualizeTargetingUsingActor(UGameplayAbility OwningAbility,AGameplayAbilityTargetActor TargetActor,string TaskInstanceName,float Duration/*=-1.0f*/) { return default; }
 	///<summary>BeginSpawningActor</summary>
-	public  bool BeginSpawningActor(UGameplayAbility OwningAbility,UClass Class,AGameplayAbilityTargetActor SpawnedActor) { return default; }
+	public bool BeginSpawningActor(UGameplayAbility OwningAbility,UClass Class,AGameplayAbilityTargetActor SpawnedActor) { return default; }
 	///<summary>FinishSpawningActor</summary>
-	public  void FinishSpawningActor(UGameplayAbility OwningAbility,AGameplayAbilityTargetActor SpawnedActor) {}
+	public void FinishSpawningActor(UGameplayAbility OwningAbility,AGameplayAbilityTargetActor SpawnedActor) {}
 }

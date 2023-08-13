@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Phonon Material components are used to customize an actor&#39;s acoustic properties. Only valid on actors that also</summary>

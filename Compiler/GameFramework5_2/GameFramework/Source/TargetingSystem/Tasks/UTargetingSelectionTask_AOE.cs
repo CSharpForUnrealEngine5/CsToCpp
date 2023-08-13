@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>@class UTargetingSelectionTask_AOE</summary>
@@ -6,9 +5,9 @@ using CSharpToCpp.Utilities;
 public partial class UTargetingSelectionTask_AOE : UTargetingTask {
 	public static UClass StaticClass() {return default;}
 	///<summary>Native Event to get the source location for the AOE</summary>
-	public  FVector GetSourceLocation(FTargetingRequestHandle TargetingHandle) { return default; }
+	public FVector GetSourceLocation(FTargetingRequestHandle TargetingHandle) { return default; }
 	///<summary>Native Event to get a source location offset for the AOE</summary>
-	public  FVector GetSourceOffset(FTargetingRequestHandle TargetingHandle) { return default; }
+	public FVector GetSourceOffset(FTargetingRequestHandle TargetingHandle) { return default; }
 	///<summary>The shape type to use for the AOE</summary>
 	public ETargetingAOEShape ShapeType;
 	///<summary>The collision channel to use for the overlap check (as long as Collision Profile Name is not set)</summary>

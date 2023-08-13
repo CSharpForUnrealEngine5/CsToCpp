@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Standard material property settings for tools that visualize materials on existing meshes (e.g. to help show UVs)</summary>
@@ -16,7 +15,7 @@ public partial class UExistingMeshMaterialProperties : UInteractiveToolPropertyS
 	///<summary>UVChannelNamesList</summary>
 	public TArray<string> UVChannelNamesList;
 	///<summary>GetUVChannelNamesFunc</summary>
-	public  TArray<string> GetUVChannelNamesFunc() { return default; }
+	public TArray<string> GetUVChannelNamesFunc() { return default; }
 	///<summary>CheckerMaterial</summary>
 	public UMaterialInstanceDynamic CheckerMaterial;
 }

@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("InteractiveFoliageActor.h")]
@@ -33,5 +32,5 @@ public partial class AInteractiveFoliageActor : AStaticMeshActor {
 	///<summary>@todo - hook this up     @todo document</summary>
 	public float Mass;
 	///<summary>Called when capsule is touched</summary>
-	public  void CapsuleTouched(UPrimitiveComponent OverlappedComp,AActor Other,UPrimitiveComponent OtherComp,int OtherBodyIndex,bool bFromSweep,FHitResult OverlapInfo) {}
+	public void CapsuleTouched(UPrimitiveComponent OverlappedComp,AActor Other,UPrimitiveComponent OtherComp,int OtherBodyIndex,bool bFromSweep,FHitResult OverlapInfo) {}
 }

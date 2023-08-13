@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>ULevelSequencePlayer is used to actually &quot;play&quot; an level sequence asset at runtime.</summary>
@@ -10,5 +9,5 @@ public partial class ULevelSequencePlayer : UMovieSceneSequencePlayer {
 	///<summary>Event triggered when there is a camera cut</summary>
 	public FOnLevelSequencePlayerCameraCutEvent OnCameraCut;
 	///<summary>Get the active camera cut camera</summary>
-	public  UCameraComponent GetActiveCameraComponent() { return default; }
+	public UCameraComponent GetActiveCameraComponent() { return default; }
 }

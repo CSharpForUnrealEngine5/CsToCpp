@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>* UDatasmithObjectPropertyCaptureElement</summary>
@@ -6,7 +5,7 @@ using CSharpToCpp.Utilities;
 public partial class UDatasmithObjectPropertyCaptureElement : UDatasmithBasePropertyCaptureElement {
 	public static UClass StaticClass() {return default;}
 	///<summary>Gets the category of this property capture</summary>
-	public  void SetRecordedObject(UDatasmithObjectElement Object) {}
+	public void SetRecordedObject(UDatasmithObjectElement Object) {}
 	///<summary>Gets the category of this property capture</summary>
-	public  UDatasmithObjectElement GetRecordedObject() { return default; }
+	public UDatasmithObjectElement GetRecordedObject() { return default; }
 }

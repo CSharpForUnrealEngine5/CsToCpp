@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Component to render a heightfield mesh using a virtual texture heightmap.</summary>
@@ -38,5 +37,5 @@ public partial class UVirtualHeightfieldMeshComponent : UPrimitiveComponent {
 	///<summary>Allows material World Position Offset to contribute to velocity rendering.</summary>
 	public bool bWorldPositionOffsetVelocity;
 	///<summary>Function used by the VirtualTexture delegate to retrieve our HidePrimitives flags.</summary>
-	public  void GatherHideFlags(bool InOutHidePrimitivesInEditor,bool InOutHidePrimitivesInGame) {}
+	public void GatherHideFlags(bool InOutHidePrimitivesInEditor,bool InOutHidePrimitivesInGame) {}
 }

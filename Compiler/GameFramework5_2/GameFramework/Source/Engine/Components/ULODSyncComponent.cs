@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Implement an Actor component for LOD Sync of different components</summary>
@@ -16,7 +15,7 @@ public partial class ULODSyncComponent : UActorComponent {
 	///<summary>by default, the mapping will be one to one</summary>
 	public TMap<string,FLODMappingData> CustomLODMapping;
 	///<summary>Returns a string detailing</summary>
-	public  string GetLODSyncDebugText() { return default; }
+	public string GetLODSyncDebugText() { return default; }
 	///<summary>CurrentLOD</summary>
 	public int CurrentLOD;
 	///<summary>num of LODs</summary>

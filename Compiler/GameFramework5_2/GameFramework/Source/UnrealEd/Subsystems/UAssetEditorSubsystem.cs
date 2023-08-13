@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>UAssetEditorSubsystem</summary>
@@ -6,9 +5,9 @@ using CSharpToCpp.Utilities;
 public partial class UAssetEditorSubsystem : UEditorSubsystem {
 	public static UClass StaticClass() {return default;}
 	///<summary>Tries to open an editor for all of the specified assets.</summary>
-	public  bool OpenEditorForAssets(TArray<UObject> Assets,EAssetTypeActivationOpenedMethod OpenedMethod/*=EAssetTypeActivationOpenedMethod.Edit*/) { return default; }
+	public bool OpenEditorForAssets(TArray<UObject> Assets,EAssetTypeActivationOpenedMethod OpenedMethod/*=EAssetTypeActivationOpenedMethod.Edit*/) { return default; }
 	///<summary>Close all active editors for the supplied asset and return the number of asset editors that were closed</summary>
-	public  int CloseAllEditorsForAsset(UObject Asset) { return default; }
+	public int CloseAllEditorsForAsset(UObject Asset) { return default; }
 	///<summary>OwnedAssetEditors</summary>
 	public TArray<UAssetEditor> OwnedAssetEditors;
 }

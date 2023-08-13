@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Animation/AnimationAsset.h")]
@@ -17,9 +16,9 @@ public partial class UAnimationAsset : UObject {
 	///<summary>Array of user data stored with the asset</summary>
 	public TArray<UAssetUserData> AssetUserData;
 	///<summary>GetPlayLength</summary>
-	public  float GetPlayLength() { return default; }
+	public virtual float GetPlayLength() { return default; }
 	///<summary>Sets or updates the preview skeletal mesh</summary>
-	public  void SetPreviewSkeletalMesh(USkeletalMesh PreviewMesh) {}
+	public void SetPreviewSkeletalMesh(USkeletalMesh PreviewMesh) {}
 	///<summary>Information for thumbnail rendering</summary>
 	public UThumbnailInfo ThumbnailInfo;
 	///<summary>The default skeletal mesh to use when previewing this asset - this only applies when you open Persona using this asset// @todo: note that this doesn&#39;t retarget right now</summary>

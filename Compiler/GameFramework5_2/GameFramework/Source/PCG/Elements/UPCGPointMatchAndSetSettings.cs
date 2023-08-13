@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>This settings class is used to create a PCG node that will apply a &quot;Match and Set&quot; operation</summary>
@@ -6,7 +5,7 @@ using CSharpToCpp.Utilities;
 public partial class UPCGPointMatchAndSetSettings : UPCGSettings {
 	public static UClass StaticClass() {return default;}
 	///<summary>Recreates the match &amp; set instance stored in this settings object if needed.</summary>
-	public  void SetMatchAndSetType(UClass InMatchAndSetType) {}
+	public void SetMatchAndSetType(UClass InMatchAndSetType) {}
 	///<summary>Defines the type of Match &amp; Set object to use.</summary>
 	public UClass MatchAndSetType;
 	///<summary>Instance of MatchAndSetType, stores the data that will be used in these settings.</summary>

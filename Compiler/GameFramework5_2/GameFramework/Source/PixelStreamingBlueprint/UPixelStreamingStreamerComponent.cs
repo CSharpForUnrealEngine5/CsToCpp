@@ -1,27 +1,26 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("PixelStreamingStreamerComponent.h")]
 public partial class UPixelStreamingStreamerComponent : UActorComponent {
 	public static UClass StaticClass() {return default;}
 	///<summary>GetId</summary>
-	public  string GetId() { return default; }
+	public string GetId() { return default; }
 	///<summary>IsSignallingConnected</summary>
-	public  bool IsSignallingConnected() { return default; }
+	public bool IsSignallingConnected() { return default; }
 	///<summary>StartStreaming</summary>
-	public  void StartStreaming() {}
+	public void StartStreaming() {}
 	///<summary>StopStreaming</summary>
-	public  void StopStreaming() {}
+	public void StopStreaming() {}
 	///<summary>IsStreaming</summary>
-	public  bool IsStreaming() { return default; }
+	public bool IsStreaming() { return default; }
 	///<summary>ForceKeyFrame</summary>
-	public  void ForceKeyFrame() {}
+	public void ForceKeyFrame() {}
 	///<summary>FreezeStream</summary>
-	public  void FreezeStream(UTexture2D Texture) {}
+	public void FreezeStream(UTexture2D Texture) {}
 	///<summary>UnfreezeStream</summary>
-	public  void UnfreezeStream() {}
+	public void UnfreezeStream() {}
 	///<summary>SendPlayerMessage</summary>
-	public  void SendPlayerMessage(byte Type,string Descriptor) {}
+	public void SendPlayerMessage(byte Type,string Descriptor) {}
 	///<summary>StreamerId</summary>
 	public string StreamerId;
 	///<summary>SignallingServerURL</summary>

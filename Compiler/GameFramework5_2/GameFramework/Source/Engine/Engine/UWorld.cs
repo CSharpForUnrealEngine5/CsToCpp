@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>The World is the top level object representing a map or a sandbox in which Actors and Components will exist and be rendered.</summary>
@@ -64,7 +63,7 @@ public partial class UWorld : UObject {
 	///<summary>Array of level collections currently in this world.</summary>
 	public TArray<FLevelCollection> LevelCollections;
 	///<summary>Called from DemoNetDriver when playing back a replay and the timeline is successfully scrubbed</summary>
-	public  void HandleTimelineScrubbed() {}
+	public void HandleTimelineScrubbed() {}
 	///<summary>Pointer to the current level being edited. Level has to be in the Levels array and == PersistentLevel in the game.</summary>
 	public ULevel CurrentLevel;
 	///<summary>OwningGameInstance</summary>
@@ -94,7 +93,7 @@ public partial class UWorld : UObject {
 	///<summary>ContentBundleManager</summary>
 	public UContentBundleManager ContentBundleManager;
 	///<summary>Returns the AWorldSettings actor associated with this world.</summary>
-	public  AWorldSettings K2_GetWorldSettings() { return default; }
+	public AWorldSettings K2_GetWorldSettings() { return default; }
 	///<summary>PSCPool</summary>
 	public FWorldPSCPool PSCPool;
 }

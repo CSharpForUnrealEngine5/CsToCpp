@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Wrapped static conversion functions from the UsdUtilities module, so that they can be used via scripting</summary>

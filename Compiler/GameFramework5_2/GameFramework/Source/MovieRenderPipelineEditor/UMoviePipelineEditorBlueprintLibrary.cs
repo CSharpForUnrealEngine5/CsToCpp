@@ -1,11 +1,10 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("MoviePipelineEditorBlueprintLibrary.h")]
 public partial class UMoviePipelineEditorBlueprintLibrary : UBlueprintFunctionLibrary {
 	public static UClass StaticClass() {return default;}
 	///<summary>ExportConfigToAsset</summary>
-	public static bool ExportConfigToAsset(UMoviePipelinePrimaryConfig InConfig,string InPackagePath,string InFileName,bool bInSaveAsset,UMoviePipelinePrimaryConfig OutAsset,string OutErrorReason) { return default; }
+	public static bool ExportConfigToAsset(UMoviePipelinePrimaryConfig InConfig,string InPackagePath,string InFileName,bool bInSaveAsset,UMoviePipelinePrimaryConfig OutAsset,FText OutErrorReason) { return default; }
 	///<summary>Checks to see if any of the Jobs try to point to maps that wouldn&#39;t be valid on a remote render (ie: unsaved maps)</summary>
 	public static bool IsMapValidForRemoteRender(TArray<UMoviePipelineExecutorJob> InJobs) { return default; }
 	///<summary>Pop a dialog box that specifies that they cannot render due to never saved map. Only shows OK button.</summary>

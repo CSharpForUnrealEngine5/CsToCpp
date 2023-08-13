@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>This component tries to maintain its children at a fixed distance from the parent,</summary>
@@ -44,9 +43,9 @@ public partial class USpringArmComponent : USceneComponent {
 	///<summary>If true AND the view target is simulating using physics then use the same max timestep cap as the physics system. Prevents camera jitter when delta time is clamped within Chaos Physics.</summary>
 	public bool bClampToMaxPhysicsDeltaTime;
 	///<summary>Get the target rotation we inherit, used as the base target for the boom rotation.</summary>
-	public  FRotator GetTargetRotation() { return default; }
+	public FRotator GetTargetRotation() { return default; }
 	///<summary>Get the position where the camera should be without applying the Collision Test displacement</summary>
-	public  FVector GetUnfixedCameraPosition() { return default; }
+	public FVector GetUnfixedCameraPosition() { return default; }
 	///<summary>Is the Collision Test displacement being applied?</summary>
-	public  bool IsCollisionFixApplied() { return default; }
+	public bool IsCollisionFixApplied() { return default; }
 }

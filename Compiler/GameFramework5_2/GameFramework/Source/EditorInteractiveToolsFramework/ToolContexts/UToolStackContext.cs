@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Context needed to support tool stacks, add this to your ContextObjectStore if you want to use tool stacks</summary>

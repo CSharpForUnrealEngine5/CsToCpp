@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>UReverbVolumeComponent - Audio Gameplay Volume component for reverb settings</summary>
@@ -6,7 +5,7 @@ using CSharpToCpp.Utilities;
 public partial class UReverbVolumeComponent : UAudioGameplayVolumeMutator {
 	public static UClass StaticClass() {return default;}
 	///<summary>SetReverbSettings</summary>
-	public  void SetReverbSettings(FReverbSettings NewReverbSettings) {}
+	public void SetReverbSettings(FReverbSettings NewReverbSettings) {}
 	///<summary>Reverb settings to use with this component</summary>
 	public FReverbSettings ReverbSettings;
 }

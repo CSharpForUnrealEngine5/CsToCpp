@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>A general network layer that contains a list of parameters. The Run() method should be implemented by child classes</summary>
@@ -12,5 +11,5 @@ public partial class UNearestNeighborNetworkLayer : UObject {
 	///<summary>The parameters of the layer</summary>
 	public TArray<FNearestNeighborNetworkParameter> Parameters;
 	///<summary>AddParameter</summary>
-	public  void AddParameter(TArray<float> Values,TArray<int> Shape) {}
+	public void AddParameter(TArray<float> Values,TArray<int> Shape) {}
 }

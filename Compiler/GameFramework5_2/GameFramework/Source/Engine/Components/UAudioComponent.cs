@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>AudioComponent is used to play a Sound</summary>
@@ -100,79 +99,79 @@ public partial class UAudioComponent : USceneComponent {
 	///<summary>Called when subtitles are sent to the SubtitleManager.  Set this delegate if you want to hijack the subtitles for other purposes</summary>
 	public FOnQueueSubtitles OnQueueSubtitles;
 	///<summary>Set what sound is played by this component</summary>
-	public  void SetSound(USoundBase NewSound) {}
+	public void SetSound(USoundBase NewSound) {}
 	///<summary>This function allows designers to call Play on an Audio Component instance while applying a volume curve over time.</summary>
-	public  void FadeIn(float FadeInDuration,float FadeVolumeLevel/*=1.0f*/,float StartTime/*=0.0f*/,EAudioFaderCurve FadeCurve/*=EAudioFaderCurve.Linear*/) {}
+	public virtual void FadeIn(float FadeInDuration,float FadeVolumeLevel/*=1.0f*/,float StartTime/*=0.0f*/,EAudioFaderCurve FadeCurve/*=EAudioFaderCurve.Linear*/) {}
 	///<summary>This function allows designers to call a delayed Stop on an Audio Component instance while applying a</summary>
-	public  void FadeOut(float FadeOutDuration,float FadeVolumeLevel,EAudioFaderCurve FadeCurve/*=EAudioFaderCurve.Linear*/) {}
+	public virtual void FadeOut(float FadeOutDuration,float FadeVolumeLevel,EAudioFaderCurve FadeCurve/*=EAudioFaderCurve.Linear*/) {}
 	///<summary>Begins playing the targeted Audio Component&#39;s sound at the designated Start Time, seeking into a sound.</summary>
-	public  void Play(float StartTime/*=0.0f*/) {}
+	public virtual void Play(float StartTime/*=0.0f*/) {}
 	///<summary>Start a sound playing on an audio component on a given quantization boundary with the handle to an existing clock</summary>
-	public  void PlayQuantized(UObject WorldContextObject,UQuartzClockHandle InClockHandle,FQuartzQuantizationBoundary InQuantizationBoundary,FOnQuartzCommandEventBP InDelegate,float InStartTime/*=0.0f*/,float InFadeInDuration/*=0.0f*/,float InFadeVolumeLevel/*=1.0f*/,EAudioFaderCurve InFadeCurve/*=EAudioFaderCurve.Linear*/) {}
+	public virtual void PlayQuantized(UObject WorldContextObject,UQuartzClockHandle InClockHandle,FQuartzQuantizationBoundary InQuantizationBoundary,FOnQuartzCommandEventBP InDelegate,float InStartTime/*=0.0f*/,float InFadeInDuration/*=0.0f*/,float InFadeVolumeLevel/*=1.0f*/,EAudioFaderCurve InFadeCurve/*=EAudioFaderCurve.Linear*/) {}
 	///<summary>Sets a named Boolean</summary>
-	public  void SetBoolParameter(string InName,bool InBool) {}
+	public virtual void SetBoolParameter(string InName,bool InBool) {}
 	///<summary>Sets a named Int32</summary>
-	public  void SetIntParameter(string InName,int InInt) {}
+	public virtual void SetIntParameter(string InName,int InInt) {}
 	///<summary>Sets a named Float</summary>
-	public  void SetFloatParameter(string InName,float InFloat) {}
+	public virtual void SetFloatParameter(string InName,float InFloat) {}
 	///<summary>Stop an audio component&#39;s sound, issue any delegates if needed</summary>
-	public  void Stop() {}
+	public virtual void Stop() {}
 	///<summary>Cues request to stop sound after the provided delay (in seconds), stopping immediately if delay is zero or negative</summary>
-	public  void StopDelayed(float DelayTime) {}
+	public void StopDelayed(float DelayTime) {}
 	///<summary>Pause an audio component playing its sound cue, issue any delegates if needed</summary>
-	public  void SetPaused(bool bPause) {}
+	public void SetPaused(bool bPause) {}
 	///<summary>Returns TRUE if the targeted Audio Component’s sound is playing.</summary>
-	public  bool IsPlaying() { return default; }
+	public virtual bool IsPlaying() { return default; }
 	///<summary>Returns if the sound is virtualized.</summary>
-	public  bool IsVirtualized() { return default; }
+	public bool IsVirtualized() { return default; }
 	///<summary>Returns the enumerated play states of the audio component.</summary>
-	public  EAudioComponentPlayState GetPlayState() { return default; }
+	public EAudioComponentPlayState GetPlayState() { return default; }
 	///<summary>This function allows designers to trigger an adjustment to the sound instance’s playback Volume with options for smoothly applying a curve over time.</summary>
-	public  void AdjustVolume(float AdjustVolumeDuration,float AdjustVolumeLevel,EAudioFaderCurve FadeCurve/*=EAudioFaderCurve.Linear*/) {}
+	public void AdjustVolume(float AdjustVolumeDuration,float AdjustVolumeLevel,EAudioFaderCurve FadeCurve/*=EAudioFaderCurve.Linear*/) {}
 	///<summary>Sets the parameter matching the name indicated to the provided Wave. Provided for convenience/backward compatibility</summary>
-	public  void SetWaveParameter(string InName,USoundWave InWave) {}
+	public void SetWaveParameter(string InName,USoundWave InWave) {}
 	///<summary>Set a new volume multiplier</summary>
-	public  void SetVolumeMultiplier(float NewVolumeMultiplier) {}
+	public void SetVolumeMultiplier(float NewVolumeMultiplier) {}
 	///<summary>Set a new pitch multiplier</summary>
-	public  void SetPitchMultiplier(float NewPitchMultiplier) {}
+	public void SetPitchMultiplier(float NewPitchMultiplier) {}
 	///<summary>Set whether sounds generated by this audio component should be considered UI sounds</summary>
-	public  void SetUISound(bool bInUISound) {}
+	public void SetUISound(bool bInUISound) {}
 	///<summary>This function is used to modify the Attenuation Settings on the targeted Audio Component instance. It is worth noting that Attenuation Settings are only passed to new Active Sounds on start, so modified Attenuation data should be set before sound playback.</summary>
-	public  void AdjustAttenuation(FSoundAttenuationSettings InAttenuationSettings) {}
+	public void AdjustAttenuation(FSoundAttenuationSettings InAttenuationSettings) {}
 	///<summary>Allows designers to target a specific Audio Component instance’s sound set the send level (volume of sound copied) to the indicated Submix.</summary>
-	public  void SetSubmixSend(USoundSubmixBase Submix,float SendLevel) {}
+	public void SetSubmixSend(USoundSubmixBase Submix,float SendLevel) {}
 	///<summary>Allows designers to target a specific Audio Component instance’s sound and set the send level (volume of sound copied)</summary>
-	public  void SetSourceBusSendPreEffect(USoundSourceBus SoundSourceBus,float SourceBusSendLevel) {}
+	public void SetSourceBusSendPreEffect(USoundSourceBus SoundSourceBus,float SourceBusSendLevel) {}
 	///<summary>Allows designers to target a specific Audio Component instance’s sound and set the send level (volume of sound copied)</summary>
-	public  void SetSourceBusSendPostEffect(USoundSourceBus SoundSourceBus,float SourceBusSendLevel) {}
+	public void SetSourceBusSendPostEffect(USoundSourceBus SoundSourceBus,float SourceBusSendLevel) {}
 	///<summary>Sets how much audio the sound should send to the given Audio Bus (PRE Source Effects).</summary>
-	public  void SetAudioBusSendPreEffect(UAudioBus AudioBus,float AudioBusSendLevel) {}
+	public void SetAudioBusSendPreEffect(UAudioBus AudioBus,float AudioBusSendLevel) {}
 	///<summary>Sets how much audio the sound should send to the given Audio Bus (POST Source Effects).</summary>
-	public  void SetAudioBusSendPostEffect(UAudioBus AudioBus,float AudioBusSendLevel) {}
+	public void SetAudioBusSendPostEffect(UAudioBus AudioBus,float AudioBusSendLevel) {}
 	///<summary>When set to TRUE, enables an additional Low Pass Filter Frequency to be calculated in with the</summary>
-	public  void SetLowPassFilterEnabled(bool InLowPassFilterEnabled) {}
+	public void SetLowPassFilterEnabled(bool InLowPassFilterEnabled) {}
 	///<summary>Sets a cutoff frequency, in Hz, for the targeted Audio Component’s sound’s Low Pass Filter calculation.</summary>
-	public  void SetLowPassFilterFrequency(float InLowPassFilterFrequency) {}
+	public void SetLowPassFilterFrequency(float InLowPassFilterFrequency) {}
 	///<summary>Sets whether or not to output the audio to bus only.</summary>
-	public  void SetOutputToBusOnly(bool bInOutputToBusOnly) {}
+	public void SetOutputToBusOnly(bool bInOutputToBusOnly) {}
 	///<summary>Queries if the sound wave playing in this audio component has cooked FFT data, returns FALSE if none found.</summary>
-	public  bool HasCookedFFTData() { return default; }
+	public bool HasCookedFFTData() { return default; }
 	///<summary>Queries whether or not the targeted Audio Component instance’s sound has Amplitude Envelope Data, returns FALSE if none found.</summary>
-	public  bool HasCookedAmplitudeEnvelopeData() { return default; }
+	public bool HasCookedAmplitudeEnvelopeData() { return default; }
 	///<summary>Retrieves the current-time cooked spectral data of the sounds playing on the audio component.</summary>
-	public  bool GetCookedFFTData(TArray<float> FrequenciesToGet,TArray<FSoundWaveSpectralData> OutSoundWaveSpectralData) { return default; }
+	public bool GetCookedFFTData(TArray<float> FrequenciesToGet,TArray<FSoundWaveSpectralData> OutSoundWaveSpectralData) { return default; }
 	///<summary>Retrieves the current-time cooked spectral data of the sounds playing on the audio component.</summary>
-	public  bool GetCookedFFTDataForAllPlayingSounds(TArray<FSoundWaveSpectralDataPerSound> OutSoundWaveSpectralData) { return default; }
+	public bool GetCookedFFTDataForAllPlayingSounds(TArray<FSoundWaveSpectralDataPerSound> OutSoundWaveSpectralData) { return default; }
 	///<summary>Retrieves Cooked Amplitude Envelope Data at the current playback time. If there are multiple</summary>
-	public  bool GetCookedEnvelopeData(float OutEnvelopeData) { return default; }
+	public bool GetCookedEnvelopeData(float OutEnvelopeData) { return default; }
 	///<summary>Retrieves the current-time amplitude envelope data of the sounds playing on the audio component.</summary>
-	public  bool GetCookedEnvelopeDataForAllPlayingSounds(TArray<FSoundWaveEnvelopeDataPerSound> OutEnvelopeData) { return default; }
+	public bool GetCookedEnvelopeDataForAllPlayingSounds(TArray<FSoundWaveEnvelopeDataPerSound> OutEnvelopeData) { return default; }
 	///<summary>Sets the routing for one of the given Audio component&#39;s Modulation Destinations.</summary>
-	public  void SetModulationRouting(TSet<USoundModulatorBase> Modulators,EModulationDestination Destination,EModulationRouting RoutingMethod/*=EModulationRouting.Inherit*/) {}
+	public void SetModulationRouting(TSet<USoundModulatorBase> Modulators,EModulationDestination Destination,EModulationRouting RoutingMethod/*=EModulationRouting.Inherit*/) {}
 	///<summary>Gets the set of currently active modulators for a given Modulation Destination.</summary>
-	public  TSet<USoundModulatorBase> GetModulators(EModulationDestination Destination) { return default; }
+	public TSet<USoundModulatorBase> GetModulators(EModulationDestination Destination) { return default; }
 	///<summary>Retrieves Attenuation Settings data on the targeted Audio Component. Returns FALSE if no settings were found.</summary>
-	public  bool BP_GetAttenuationSettingsToApply(FSoundAttenuationSettings OutAttenuationSettings) { return default; }
+	public bool BP_GetAttenuationSettingsToApply(FSoundAttenuationSettings OutAttenuationSettings) { return default; }
 	///<summary>Component we automatically attach to when activated, if bAutoManageAttachment is true.</summary>
 	public TWeakObjectPtr<USceneComponent> AutoAttachParent;
 	///<summary>Socket we automatically attach to on the AutoAttachParent, if bAutoManageAttachment is true.</summary>

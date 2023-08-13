@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("SequenceRecorderSettings.h")]
@@ -29,7 +28,7 @@ public partial class USequenceRecorderSettings : UObject {
 	///<summary>Replace existing recorded audio with any newly recorded audio</summary>
 	public bool bReplaceRecordedAudio;
 	///<summary>Name of the recorded audio track name</summary>
-	public string AudioTrackName;
+	public FText AudioTrackName;
 	///<summary>The name of the subdirectory audio will be placed in. Leave this empty to place into the same directory as the sequence base path</summary>
 	public string AudioSubDirectory;
 	///<summary>Whether to record nearby spawned actors. If an actor matches a class in the ActorFilter, this state will be bypassed.</summary>

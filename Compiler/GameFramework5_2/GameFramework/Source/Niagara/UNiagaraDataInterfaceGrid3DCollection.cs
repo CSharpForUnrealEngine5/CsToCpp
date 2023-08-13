@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("NiagaraDataInterfaceGrid3DCollection.h")]
@@ -17,11 +16,11 @@ public partial class UNiagaraDataInterfaceGrid3DCollection : UNiagaraDataInterfa
 	///<summary>When enabled allows you to preview the grid in a debug display</summary>
 	public string PreviewAttribute;
 	///<summary>Fills a texture render target 2d with the current data from the simulation</summary>
-	public  bool FillVolumeTexture(UNiagaraComponent Component,UVolumeTexture dest,int AttributeIndex) { return default; }
+	public virtual bool FillVolumeTexture(UNiagaraComponent Component,UVolumeTexture dest,int AttributeIndex) { return default; }
 	///<summary>FillRawVolumeTexture</summary>
-	public  bool FillRawVolumeTexture(UNiagaraComponent Component,UVolumeTexture Dest,int TilesX,int TilesY,int TileZ) { return default; }
+	public virtual bool FillRawVolumeTexture(UNiagaraComponent Component,UVolumeTexture Dest,int TilesX,int TilesY,int TileZ) { return default; }
 	///<summary>GetRawTextureSize</summary>
-	public  void GetRawTextureSize(UNiagaraComponent Component,int SizeX,int SizeY,int SizeZ) {}
+	public virtual void GetRawTextureSize(UNiagaraComponent Component,int SizeX,int SizeY,int SizeZ) {}
 	///<summary>GetTextureSize</summary>
-	public  void GetTextureSize(UNiagaraComponent Component,int SizeX,int SizeY,int SizeZ) {}
+	public virtual void GetTextureSize(UNiagaraComponent Component,int SizeX,int SizeY,int SizeZ) {}
 }

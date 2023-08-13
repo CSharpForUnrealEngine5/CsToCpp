@@ -1,15 +1,14 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Data/PCGDifferenceData.h")]
 public partial class UPCGDifferenceData : UPCGSpatialDataWithPointCache {
 	public static UClass StaticClass() {return default;}
 	///<summary>Initialize</summary>
-	public  void Initialize(UPCGSpatialData InData) {}
+	public void Initialize(UPCGSpatialData InData) {}
 	///<summary>AddDifference</summary>
-	public  void AddDifference(UPCGSpatialData InDifference) {}
+	public void AddDifference(UPCGSpatialData InDifference) {}
 	///<summary>SetDensityFunction</summary>
-	public  void SetDensityFunction(EPCGDifferenceDensityFunction InDensityFunction) {}
+	public void SetDensityFunction(EPCGDifferenceDensityFunction InDensityFunction) {}
 	///<summary>bDiffMetadata</summary>
 	public bool bDiffMetadata;
 	///<summary>Source</summary>

@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("NiagaraDataInterfaceGrid2DCollection.h")]
@@ -15,13 +14,13 @@ public partial class UNiagaraDataInterfaceGrid2DCollection : UNiagaraDataInterfa
 	///<summary>When enabled allows you to preview the grid in a debug display</summary>
 	public string PreviewAttribute;
 	///<summary>Fills a texture render target 2d with the current data from the simulation</summary>
-	public  bool FillTexture2D(UNiagaraComponent Component,UTextureRenderTarget2D dest,int AttributeIndex) { return default; }
+	public virtual bool FillTexture2D(UNiagaraComponent Component,UTextureRenderTarget2D dest,int AttributeIndex) { return default; }
 	///<summary>FillRawTexture2D</summary>
-	public  bool FillRawTexture2D(UNiagaraComponent Component,UTextureRenderTarget2D Dest,int TilesX,int TilesY) { return default; }
+	public virtual bool FillRawTexture2D(UNiagaraComponent Component,UTextureRenderTarget2D Dest,int TilesX,int TilesY) { return default; }
 	///<summary>GetRawTextureSize</summary>
-	public  void GetRawTextureSize(UNiagaraComponent Component,int SizeX,int SizeY) {}
+	public virtual void GetRawTextureSize(UNiagaraComponent Component,int SizeX,int SizeY) {}
 	///<summary>GetTextureSize</summary>
-	public  void GetTextureSize(UNiagaraComponent Component,int SizeX,int SizeY) {}
+	public virtual void GetTextureSize(UNiagaraComponent Component,int SizeX,int SizeY) {}
 	///<summary>ManagedRenderTargets</summary>
 	public TMap<ulong,UTextureRenderTarget2DArray> ManagedRenderTargets;
 }

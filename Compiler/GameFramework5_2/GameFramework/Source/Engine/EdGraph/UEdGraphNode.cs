@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("EdGraph/EdGraphNode.h")]
@@ -39,7 +38,7 @@ public partial class UEdGraphNode : UObject {
 	///<summary>If true, this node can be renamed in the editor</summary>
 	public bool bCanRenameNode;
 	///<summary>Note for a node that lingers until saved</summary>
-	public string NodeUpgradeMessage;
+	public FText NodeUpgradeMessage;
 	///<summary>Comment string that is drawn on the node</summary>
 	public string NodeComment;
 	///<summary>Flag to store node specific compile error/warning</summary>

@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("FractureToolProperties.h")]
@@ -13,5 +12,5 @@ public partial class UFractureRemoveOnBreakSettings : UFractureToolSettings {
 	///<summary>Min/Max time for how long removal lasts - not applicable when cluster crumbling is on</summary>
 	public FVector2f RemovalTimer;
 	///<summary>remove the remove on break attribute from the geometry collection, usefull to save memory on the asset if not needed</summary>
-	public  void DeleteRemoveOnBreakData() {}
+	public void DeleteRemoveOnBreakData() {}
 }

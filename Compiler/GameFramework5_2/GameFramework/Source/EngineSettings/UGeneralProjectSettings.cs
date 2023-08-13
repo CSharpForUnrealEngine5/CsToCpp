@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("GeneralProjectSettings.h")]
@@ -27,9 +26,9 @@ public partial class UGeneralProjectSettings : UObject {
 	///<summary>The project&#39;s support contact information.</summary>
 	public string SupportContact;
 	///<summary>The project&#39;s title as displayed on the window title bar (can include the tokens {GameName}, {PlatformArchitecture}, {BuildConfiguration} or {RHIName}, which will be replaced with the specified text)</summary>
-	public string ProjectDisplayedTitle;
+	public FText ProjectDisplayedTitle;
 	///<summary>Additional data to be displayed on the window title bar in non-shipping configurations (can include the tokens {GameName}, {PlatformArchitecture}, {BuildConfiguration} or {RHIName}, which will be replaced with the specified text)</summary>
-	public string ProjectDebugTitleInfo;
+	public FText ProjectDebugTitleInfo;
 	///<summary>Should the game&#39;s window preserve its aspect ratio when resized by user.</summary>
 	public bool bShouldWindowPreserveAspectRatio;
 	///<summary>Should the game use a borderless Slate window instead of a window with system title bar and border</summary>

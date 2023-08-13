@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Runs logic for mapping input data to transforms (the &quot;Rig&quot;)</summary>
@@ -6,29 +5,29 @@ using CSharpToCpp.Utilities;
 public partial class UControlRig : URigVMHost {
 	public static UClass StaticClass() {return default;}
 	///<summary>To support Blueprints/scripting, we need a different delegate type (a &#39;Dynamic&#39; delegate) which supports looser style UFunction binding (using names).</summary>
-	public  void FOnControlSelectedBP(UControlRig Rig,FRigControlElement Control,bool bSelected) {}
+	public void FOnControlSelectedBP(UControlRig Rig,FRigControlElement Control,bool bSelected) {}
 	///<summary>FindControlRigs</summary>
 	public static TArray<UControlRig> FindControlRigs(UObject Outer,UClass OptionalClass) { return default; }
 	///<summary>Creates a transformable control handle for the specified control to be used by the constraints system. Should use the UObject from</summary>
-	public  UTransformableControlHandle CreateTransformableControlHandle(UObject Outer,string ControlName) { return default; }
+	public UTransformableControlHandle CreateTransformableControlHandle(UObject Outer,string ControlName) { return default; }
 	///<summary>Find the actor the rig is bound to, if any</summary>
-	public  AActor GetHostingActor() { return default; }
+	public AActor GetHostingActor() { return default; }
 	///<summary>GetHierarchy</summary>
-	public  URigHierarchy GetHierarchy() { return default; }
+	public URigHierarchy GetHierarchy() { return default; }
 	///<summary>END UObject interface</summary>
 	public ERigExecutionType ExecutionType;
 	///<summary>HierarchySettings</summary>
 	public FRigHierarchySettings HierarchySettings;
 	///<summary>Requests to perform construction during the next execution</summary>
-	public  void RequestConstruction() {}
+	public void RequestConstruction() {}
 	///<summary>SelectControl</summary>
-	public  void SelectControl(string InControlName,bool bSelect/*=true*/) {}
+	public virtual void SelectControl(string InControlName,bool bSelect/*=true*/) {}
 	///<summary>ClearControlSelection</summary>
-	public  bool ClearControlSelection() { return default; }
+	public virtual bool ClearControlSelection() { return default; }
 	///<summary>CurrentControlSelection</summary>
-	public  TArray<string> CurrentControlSelection() { return default; }
+	public virtual TArray<string> CurrentControlSelection() { return default; }
 	///<summary>IsControlSelected</summary>
-	public  bool IsControlSelected(string InControlName) { return default; }
+	public virtual bool IsControlSelected(string InControlName) { return default; }
 	///<summary>ControlCustomizations</summary>
 	public TMap<FRigElementKey,FRigControlElementCustomization> ControlCustomizations;
 	///<summary>DynamicHierarchy</summary>
@@ -50,13 +49,13 @@ public partial class UControlRig : URigVMHost {
 	///<summary>InteractionRigClass</summary>
 	public UClass InteractionRigClass;
 	///<summary>GetInteractionRig</summary>
-	public  UControlRig GetInteractionRig() { return default; }
+	public UControlRig GetInteractionRig() { return default; }
 	///<summary>SetInteractionRig</summary>
-	public  void SetInteractionRig(UControlRig InInteractionRig) {}
+	public void SetInteractionRig(UControlRig InInteractionRig) {}
 	///<summary>GetInteractionRigClass</summary>
-	public  UClass GetInteractionRigClass() { return default; }
+	public UClass GetInteractionRigClass() { return default; }
 	///<summary>SetInteractionRigClass</summary>
-	public  void SetInteractionRigClass(UClass InInteractionRigClass) {}
+	public void SetInteractionRigClass(UClass InInteractionRigClass) {}
 	///<summary>OnControlSelected_BP</summary>
 	public FOnControlSelectedBP OnControlSelected_BP;
 	///<summary>Whether controls are visible</summary>

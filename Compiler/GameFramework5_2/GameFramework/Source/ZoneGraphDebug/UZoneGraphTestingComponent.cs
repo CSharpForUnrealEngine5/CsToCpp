@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Actor for testing ZoneGraph functionality.</summary>
@@ -6,9 +5,9 @@ using CSharpToCpp.Utilities;
 public partial class UZoneGraphTestingComponent : UPrimitiveComponent {
 	public static UClass StaticClass() {return default;}
 	///<summary>Allow custom tests to be notified when lane location is updated.</summary>
-	public  void EnableCustomTests() {}
+	public void EnableCustomTests() {}
 	///<summary>Prevent custom tests to be notified when lane location is updated. Currently active tests will get notified with an invalid location.</summary>
-	public  void DisableCustomTests() {}
+	public void DisableCustomTests() {}
 	///<summary>ZoneGraph</summary>
 	public UZoneGraphSubsystem ZoneGraph;
 	///<summary>LaneLocation</summary>

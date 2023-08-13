@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("ActorRecording.h")]
@@ -13,7 +12,7 @@ public partial class UActorRecording : USequenceRecordingBase {
 	///<summary>The level sequence to record into</summary>
 	public ULevelSequence TargetLevelSequence;
 	///<summary>Optional target name to record to. If not specified, the actor label will be used</summary>
-	public string TargetName;
+	public FText TargetName;
 	///<summary>Specify the take number for the new recording</summary>
 	public uint TakeNumber;
 	///<summary>Whether we should specify the target animation or auto-create it</summary>

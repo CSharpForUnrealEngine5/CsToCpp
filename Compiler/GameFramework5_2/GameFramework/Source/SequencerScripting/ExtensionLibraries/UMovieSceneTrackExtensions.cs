@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Function library containing methods that should be hoisted onto UMovieSceneTracks for scripting</summary>
@@ -6,13 +5,13 @@ using CSharpToCpp.Utilities;
 public partial class UMovieSceneTrackExtensions : UBlueprintFunctionLibrary {
 	public static UClass StaticClass() {return default;}
 	///<summary>Set this track&#39;s display name</summary>
-	public static void SetDisplayName(UMovieSceneTrack Track,string InName) {}
+	public static void SetDisplayName(UMovieSceneTrack Track,FText InName) {}
 	///<summary>Get this track&#39;s display name</summary>
-	public static string GetDisplayName(UMovieSceneTrack Track) { return default; }
+	public static FText GetDisplayName(UMovieSceneTrack Track) { return default; }
 	///<summary>Set this track row&#39;s display name</summary>
-	public static void SetTrackRowDisplayName(UMovieSceneTrack Track,string InName,int RowIndex) {}
+	public static void SetTrackRowDisplayName(UMovieSceneTrack Track,FText InName,int RowIndex) {}
 	///<summary>Get this track row&#39;s display name</summary>
-	public static string GetTrackRowDisplayName(UMovieSceneTrack Track,int RowIndex) { return default; }
+	public static FText GetTrackRowDisplayName(UMovieSceneTrack Track,int RowIndex) { return default; }
 	///<summary>Add a new section to this track</summary>
 	public static UMovieSceneSection AddSection(UMovieSceneTrack Track) { return default; }
 	///<summary>Access all this track&#39;s sections</summary>

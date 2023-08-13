@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Animation/AnimSequence.h")]
@@ -65,17 +64,17 @@ public partial class UAnimSequence : UAnimSequenceBase {
 	///<summary>Authored Sync markers</summary>
 	public TArray<FAnimSyncMarker> AuthoredSyncMarkers;
 	///<summary>AddBoneFloatCustomAttribute</summary>
-	public  void AddBoneFloatCustomAttribute(string BoneName,string AttributeName,TArray<float> TimeKeys,TArray<float> ValueKeys) {}
+	public void AddBoneFloatCustomAttribute(string BoneName,string AttributeName,TArray<float> TimeKeys,TArray<float> ValueKeys) {}
 	///<summary>AddBoneIntegerCustomAttribute</summary>
-	public  void AddBoneIntegerCustomAttribute(string BoneName,string AttributeName,TArray<float> TimeKeys,TArray<int> ValueKeys) {}
+	public void AddBoneIntegerCustomAttribute(string BoneName,string AttributeName,TArray<float> TimeKeys,TArray<int> ValueKeys) {}
 	///<summary>AddBoneStringCustomAttribute</summary>
-	public  void AddBoneStringCustomAttribute(string BoneName,string AttributeName,TArray<float> TimeKeys,TArray<string> ValueKeys) {}
+	public void AddBoneStringCustomAttribute(string BoneName,string AttributeName,TArray<float> TimeKeys,TArray<string> ValueKeys) {}
 	///<summary>RemoveCustomAttribute</summary>
-	public  void RemoveCustomAttribute(string BoneName,string AttributeName) {}
+	public void RemoveCustomAttribute(string BoneName,string AttributeName) {}
 	///<summary>RemoveAllCustomAttributesForBone</summary>
-	public  void RemoveAllCustomAttributesForBone(string BoneName) {}
+	public void RemoveAllCustomAttributesForBone(string BoneName) {}
 	///<summary>RemoveAllCustomAttributes</summary>
-	public  void RemoveAllCustomAttributes() {}
+	public void RemoveAllCustomAttributes() {}
 	///<summary>TargetFrameRate</summary>
 	public FFrameRate TargetFrameRate;
 	///<summary>PlatformTargetFrameRate</summary>

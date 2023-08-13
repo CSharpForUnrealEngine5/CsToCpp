@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>An object that represents an acquired CPU-accessible camera image.</summary>
@@ -6,11 +5,11 @@ using CSharpToCpp.Utilities;
 public partial class UGoogleARCoreCameraImage : UObject {
 	public static UClass StaticClass() {return default;}
 	///<summary>Explicitly release the ARCore resources owned by this object.</summary>
-	public  void Release() {}
+	public void Release() {}
 	///<summary>Get the width of the image in pixels.</summary>
-	public  int GetWidth() { return default; }
+	public int GetWidth() { return default; }
 	///<summary>Get the height of the image in pixels.</summary>
-	public  int GetHeight() { return default; }
+	public int GetHeight() { return default; }
 	///<summary>Get the number of data planes in the image.</summary>
-	public  int GetPlaneCount() { return default; }
+	public int GetPlaneCount() { return default; }
 }

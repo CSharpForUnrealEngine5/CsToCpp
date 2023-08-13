@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Button that disables itself when not active. Also updates actions for CommonActionWidget if bound to display platform-specific icons.</summary>
@@ -6,153 +5,153 @@ using CSharpToCpp.Utilities;
 public partial class UCommonButtonBase : UCommonUserWidget {
 	public static UClass StaticClass() {return default;}
 	///<summary>Disables this button with a reason (use instead of SetIsEnabled)</summary>
-	public  void DisableButtonWithReason(string DisabledReason) {}
+	public void DisableButtonWithReason(FText DisabledReason) {}
 	///<summary>Change whether this widget is selectable at all. If false and currently selected, will deselect.</summary>
-	public  void SetIsInteractionEnabled(bool bInIsInteractionEnabled) {}
+	public void SetIsInteractionEnabled(bool bInIsInteractionEnabled) {}
 	///<summary>SetHideInputAction</summary>
-	public  void SetHideInputAction(bool bInHideInputAction) {}
+	public void SetHideInputAction(bool bInHideInputAction) {}
 	///<summary>Is this button currently interactable? (use instead of GetIsEnabled)</summary>
-	public  bool IsInteractionEnabled() { return default; }
+	public bool IsInteractionEnabled() { return default; }
 	///<summary>Is this button currently pressed?</summary>
-	public  bool IsPressed() { return default; }
+	public bool IsPressed() { return default; }
 	///<summary>Set the click method for mouse interaction</summary>
-	public  void SetClickMethod(EButtonClickMethod InClickMethod) {}
+	public void SetClickMethod(EButtonClickMethod InClickMethod) {}
 	///<summary>Set the click method for touch interaction</summary>
-	public  void SetTouchMethod(EButtonTouchMethod InTouchMethod) {}
+	public void SetTouchMethod(EButtonTouchMethod InTouchMethod) {}
 	///<summary>Set the click method for keyboard/gamepad button press interaction</summary>
-	public  void SetPressMethod(EButtonPressMethod InPressMethod) {}
+	public void SetPressMethod(EButtonPressMethod InPressMethod) {}
 	///<summary>Change whether this widget is selectable at all. If false and currently selected, will deselect.</summary>
-	public  void SetIsSelectable(bool bInIsSelectable) {}
+	public void SetIsSelectable(bool bInIsSelectable) {}
 	///<summary>Change whether this widget is selectable at all. If false and currently selected, will deselect.</summary>
-	public  void SetIsInteractableWhenSelected(bool bInInteractableWhenSelected) {}
+	public void SetIsInteractableWhenSelected(bool bInInteractableWhenSelected) {}
 	///<summary>Change whether this widget is toggleable. If toggleable, clicking when selected will deselect.</summary>
-	public  void SetIsToggleable(bool bInIsToggleable) {}
+	public void SetIsToggleable(bool bInIsToggleable) {}
 	///<summary>Change whether this widget should use the fallback default input action.</summary>
-	public  void SetShouldUseFallbackDefaultInputAction(bool bInShouldUseFallbackDefaultInputAction) {}
+	public void SetShouldUseFallbackDefaultInputAction(bool bInShouldUseFallbackDefaultInputAction) {}
 	///<summary>Change the selected state manually.</summary>
-	public  void SetIsSelected(bool InSelected,bool bGiveClickFeedback/*=true*/) {}
+	public void SetIsSelected(bool InSelected,bool bGiveClickFeedback/*=true*/) {}
 	///<summary>Change whether this widget is locked. If locked, the button can be focusable and responsive to mouse input but will not broadcast OnClicked events.</summary>
-	public  void SetIsLocked(bool bInIsLocked) {}
+	public void SetIsLocked(bool bInIsLocked) {}
 	///<summary>@returns True if the button is currently in a selected state, False otherwise</summary>
-	public  bool GetSelected() { return default; }
+	public bool GetSelected() { return default; }
 	///<summary>@returns True if the button is currently locked, False otherwise</summary>
-	public  bool GetLocked() { return default; }
+	public bool GetLocked() { return default; }
 	///<summary>ClearSelection</summary>
-	public  void ClearSelection() {}
+	public void ClearSelection() {}
 	///<summary>Set whether the button should become selected upon receiving focus or not; Only settable for buttons that are selectable</summary>
-	public  void SetShouldSelectUponReceivingFocus(bool bInShouldSelectUponReceivingFocus) {}
+	public void SetShouldSelectUponReceivingFocus(bool bInShouldSelectUponReceivingFocus) {}
 	///<summary>Get whether the button should become selected upon receiving focus or not</summary>
-	public  bool GetShouldSelectUponReceivingFocus() { return default; }
+	public bool GetShouldSelectUponReceivingFocus() { return default; }
 	///<summary>Sets the style of this button, rebuilds the internal styling</summary>
-	public  void SetStyle(UClass InStyle/*=nullptr*/) {}
+	public void SetStyle(UClass InStyle/*=nullptr*/) {}
 	///<summary>@Returns Current button style</summary>
-	public  UCommonButtonStyle GetStyle() { return default; }
+	public UCommonButtonStyle GetStyle() { return default; }
 	///<summary>@return The current button padding that corresponds to the current size and selection state</summary>
-	public  void GetCurrentButtonPadding(FMargin OutButtonPadding) {}
+	public void GetCurrentButtonPadding(FMargin OutButtonPadding) {}
 	///<summary>@return The custom padding that corresponds to the current size and selection state</summary>
-	public  void GetCurrentCustomPadding(FMargin OutCustomPadding) {}
+	public void GetCurrentCustomPadding(FMargin OutCustomPadding) {}
 	///<summary>@return The text style that corresponds to the current size and selection state</summary>
-	public  UCommonTextStyle GetCurrentTextStyle() { return default; }
+	public UCommonTextStyle GetCurrentTextStyle() { return default; }
 	///<summary>@return The class of the text style that corresponds to the current size and selection state</summary>
-	public  UClass GetCurrentTextStyleClass() { return default; }
+	public UClass GetCurrentTextStyleClass() { return default; }
 	///<summary>Sets the minimum dimensions of this button</summary>
-	public  void SetMinDimensions(int InMinWidth,int InMinHeight) {}
+	public void SetMinDimensions(int InMinWidth,int InMinHeight) {}
 	///<summary>Updates the current triggered action</summary>
-	public  void SetTriggeredInputAction(FDataTableRowHandle InputActionRow) {}
+	public void SetTriggeredInputAction(FDataTableRowHandle InputActionRow) {}
 	///<summary>Updates the current triggering action</summary>
-	public  void SetTriggeringInputAction(FDataTableRowHandle InputActionRow) {}
+	public void SetTriggeringInputAction(FDataTableRowHandle InputActionRow) {}
 	///<summary>Updates the current triggering enhanced input action, requires enhanced input enabled in CommonUI settings</summary>
-	public  void SetTriggeringEnhancedInputAction(UInputAction InInputAction) {}
+	public void SetTriggeringEnhancedInputAction(UInputAction InInputAction) {}
 	///<summary>Gets the appropriate input action that is set</summary>
-	public  bool GetInputAction(FDataTableRowHandle InputActionRow) { return default; }
+	public bool GetInputAction(FDataTableRowHandle InputActionRow) { return default; }
 	///<summary>Gets the appropriate enhanced input action that is set</summary>
-	public  UInputAction GetEnhancedInputAction() { return default; }
+	public UInputAction GetEnhancedInputAction() { return default; }
 	///<summary>Updates the bIsFocusable flag</summary>
-	public  void SetIsFocusable(bool bInIsFocusable) {}
+	public void SetIsFocusable(bool bInIsFocusable) {}
 	///<summary>Gets the bIsFocusable flag</summary>
-	public  bool GetIsFocusable() { return default; }
+	public bool GetIsFocusable() { return default; }
 	///<summary>Returns the dynamic instance of the material being used for this button, if it is using a single material style.</summary>
-	public  UMaterialInstanceDynamic GetSingleMaterialStyleMID() { return default; }
+	public UMaterialInstanceDynamic GetSingleMaterialStyleMID() { return default; }
 	///<summary>SetInputActionProgressMaterial</summary>
-	public  void SetInputActionProgressMaterial(FSlateBrush InProgressMaterialBrush,string InProgressMaterialParam) {}
+	public void SetInputActionProgressMaterial(FSlateBrush InProgressMaterialBrush,string InProgressMaterialParam) {}
 	///<summary>SetPressedSoundOverride</summary>
-	public  void SetPressedSoundOverride(USoundBase Sound) {}
+	public void SetPressedSoundOverride(USoundBase Sound) {}
 	///<summary>SetHoveredSoundOverride</summary>
-	public  void SetHoveredSoundOverride(USoundBase Sound) {}
+	public void SetHoveredSoundOverride(USoundBase Sound) {}
 	///<summary>SetSelectedPressedSoundOverride</summary>
-	public  void SetSelectedPressedSoundOverride(USoundBase Sound) {}
+	public void SetSelectedPressedSoundOverride(USoundBase Sound) {}
 	///<summary>SetSelectedHoveredSoundOverride</summary>
-	public  void SetSelectedHoveredSoundOverride(USoundBase Sound) {}
+	public void SetSelectedHoveredSoundOverride(USoundBase Sound) {}
 	///<summary>SetLockedPressedSoundOverride</summary>
-	public  void SetLockedPressedSoundOverride(USoundBase Sound) {}
+	public void SetLockedPressedSoundOverride(USoundBase Sound) {}
 	///<summary>SetLockedHoveredSoundOverride</summary>
-	public  void SetLockedHoveredSoundOverride(USoundBase Sound) {}
+	public void SetLockedHoveredSoundOverride(USoundBase Sound) {}
 	///<summary>Called via delegate when the input method changes</summary>
-	public  void OnInputMethodChanged(ECommonInputType CurrentInputType) {}
+	public virtual void OnInputMethodChanged(ECommonInputType CurrentInputType) {}
 	///<summary>HandleTriggeringActionCommited</summary>
-	public  void HandleTriggeringActionCommited(bool bPassthrough) {}
+	public virtual void HandleTriggeringActionCommited(bool bPassthrough) {}
 	///<summary>Handler function registered to the underlying button&#39;s click.</summary>
-	public  void HandleButtonClicked() {}
+	public void HandleButtonClicked() {}
 	///<summary>Helper function registered to the underlying button receiving focus</summary>
-	public  void HandleFocusReceived() {}
+	public virtual void HandleFocusReceived() {}
 	///<summary>Helper function registered to the underlying button losing focus</summary>
-	public  void HandleFocusLost() {}
+	public virtual void HandleFocusLost() {}
 	///<summary>Helper function registered to the underlying button when pressed</summary>
-	public  void HandleButtonPressed() {}
+	public void HandleButtonPressed() {}
 	///<summary>Helper function registered to the underlying button when released</summary>
-	public  void HandleButtonReleased() {}
+	public void HandleButtonReleased() {}
 	///<summary>BP_OnSelected</summary>
-	public  void BP_OnSelected() {}
+	public void BP_OnSelected() {}
 	///<summary>BP_OnDeselected</summary>
-	public  void BP_OnDeselected() {}
+	public void BP_OnDeselected() {}
 	///<summary>BP_OnHovered</summary>
-	public  void BP_OnHovered() {}
+	public void BP_OnHovered() {}
 	///<summary>BP_OnUnhovered</summary>
-	public  void BP_OnUnhovered() {}
+	public void BP_OnUnhovered() {}
 	///<summary>BP_OnFocusReceived</summary>
-	public  void BP_OnFocusReceived() {}
+	public void BP_OnFocusReceived() {}
 	///<summary>BP_OnFocusLost</summary>
-	public  void BP_OnFocusLost() {}
+	public void BP_OnFocusLost() {}
 	///<summary>BP_OnLockedChanged</summary>
-	public  void BP_OnLockedChanged(bool bIsLocked) {}
+	public void BP_OnLockedChanged(bool bIsLocked) {}
 	///<summary>BP_OnLockClicked</summary>
-	public  void BP_OnLockClicked() {}
+	public void BP_OnLockClicked() {}
 	///<summary>BP_OnLockDoubleClicked</summary>
-	public  void BP_OnLockDoubleClicked() {}
+	public void BP_OnLockDoubleClicked() {}
 	///<summary>BP_OnClicked</summary>
-	public  void BP_OnClicked() {}
+	public void BP_OnClicked() {}
 	///<summary>BP_OnDoubleClicked</summary>
-	public  void BP_OnDoubleClicked() {}
+	public void BP_OnDoubleClicked() {}
 	///<summary>Unless this is called, we will assume the double click should be converted into a normal click.</summary>
-	public  void StopDoubleClickPropagation() {}
+	public void StopDoubleClickPropagation() {}
 	///<summary>BP_OnPressed</summary>
-	public  void BP_OnPressed() {}
+	public void BP_OnPressed() {}
 	///<summary>BP_OnReleased</summary>
-	public  void BP_OnReleased() {}
+	public void BP_OnReleased() {}
 	///<summary>BP_OnEnabled</summary>
-	public  void BP_OnEnabled() {}
+	public void BP_OnEnabled() {}
 	///<summary>BP_OnDisabled</summary>
-	public  void BP_OnDisabled() {}
+	public void BP_OnDisabled() {}
 	///<summary>BP_OnInputMethodChanged</summary>
-	public  void BP_OnInputMethodChanged(ECommonInputType CurrentInputType) {}
+	public void BP_OnInputMethodChanged(ECommonInputType CurrentInputType) {}
 	///<summary>Allows derived classes to take action when the current text style has changed</summary>
-	public  void OnCurrentTextStyleChanged() {}
+	public void OnCurrentTextStyleChanged() {}
 	///<summary>Internal method to allow the selected state to be set regardless of selectability or toggleability</summary>
-	public  void SetSelectedInternal(bool bInSelected,bool bAllowSound/*=true*/,bool bBroadcast/*=true*/) {}
+	public void SetSelectedInternal(bool bInSelected,bool bAllowSound/*=true*/,bool bBroadcast/*=true*/) {}
 	///<summary>Callback fired when input action datatable row changes</summary>
-	public  void OnTriggeredInputActionChanged(FDataTableRowHandle NewTriggeredAction) {}
+	public void OnTriggeredInputActionChanged(FDataTableRowHandle NewTriggeredAction) {}
 	///<summary>Callback fired when triggered input action datatable row changes</summary>
-	public  void OnTriggeringInputActionChanged(FDataTableRowHandle NewTriggeredAction) {}
+	public void OnTriggeringInputActionChanged(FDataTableRowHandle NewTriggeredAction) {}
 	///<summary>Callback fired when enhanced input action changes</summary>
-	public  void OnTriggeringEnhancedInputActionChanged(UInputAction InInputAction) {}
+	public void OnTriggeringEnhancedInputActionChanged(UInputAction InInputAction) {}
 	///<summary>Callback fired continously during hold interactions</summary>
-	public  void OnActionProgress(float HeldPercent) {}
+	public void OnActionProgress(float HeldPercent) {}
 	///<summary>NativeOnActionProgress</summary>
-	public  void NativeOnActionProgress(float HeldPercent) {}
+	public virtual void NativeOnActionProgress(float HeldPercent) {}
 	///<summary>Callback fired when hold events complete</summary>
-	public  void OnActionComplete() {}
+	public void OnActionComplete() {}
 	///<summary>NativeOnActionComplete</summary>
-	public  void NativeOnActionComplete() {}
+	public virtual void NativeOnActionComplete() {}
 	///<summary>The minimum width of the button (only used if greater than the style&#39;s minimum)</summary>
 	public int MinWidth;
 	///<summary>The minimum height of the button (only used if greater than the style&#39;s minimum)</summary>

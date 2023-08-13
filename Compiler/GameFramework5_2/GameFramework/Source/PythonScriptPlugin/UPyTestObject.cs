@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Object to allow testing of the various UObject features that are exposed to Python wrapped types.</summary>
@@ -18,7 +17,7 @@ public partial class UPyTestObject : UObject {
 	///<summary>Name</summary>
 	public string Name;
 	///<summary>Text</summary>
-	public string Text;
+	public FText Text;
 	///<summary>FieldPath</summary>
 	public object FieldPath;
 	///<summary>StructFieldPath</summary>
@@ -44,33 +43,33 @@ public partial class UPyTestObject : UObject {
 	///<summary>BoolDefaultsOnly</summary>
 	public bool BoolDefaultsOnly;
 	///<summary>FuncBlueprintImplementable</summary>
-	public  int FuncBlueprintImplementable(int InValue) { return default; }
+	public int FuncBlueprintImplementable(int InValue) { return default; }
 	///<summary>FuncBlueprintNative</summary>
-	public  int FuncBlueprintNative(int InValue) { return default; }
+	public int FuncBlueprintNative(int InValue) { return default; }
 	///<summary>FuncBlueprintNativeRef</summary>
-	public  void FuncBlueprintNativeRef(FPyTestStruct InOutStruct) {}
+	public void FuncBlueprintNativeRef(FPyTestStruct InOutStruct) {}
 	///<summary>CallFuncBlueprintImplementable</summary>
-	public  int CallFuncBlueprintImplementable(int InValue) { return default; }
+	public int CallFuncBlueprintImplementable(int InValue) { return default; }
 	///<summary>CallFuncBlueprintNative</summary>
-	public  int CallFuncBlueprintNative(int InValue) { return default; }
+	public int CallFuncBlueprintNative(int InValue) { return default; }
 	///<summary>CallFuncBlueprintNativeRef</summary>
-	public  void CallFuncBlueprintNativeRef(FPyTestStruct InOutStruct) {}
+	public void CallFuncBlueprintNativeRef(FPyTestStruct InOutStruct) {}
 	///<summary>FuncTakingPyTestStruct</summary>
-	public  void FuncTakingPyTestStruct(FPyTestStruct InStruct) {}
+	public void FuncTakingPyTestStruct(FPyTestStruct InStruct) {}
 	///<summary>FuncTakingPyTestChildStruct</summary>
-	public  void FuncTakingPyTestChildStruct(FPyTestChildStruct InStruct) {}
+	public void FuncTakingPyTestChildStruct(FPyTestChildStruct InStruct) {}
 	///<summary>LegacyFuncTakingPyTestStruct</summary>
-	public  void LegacyFuncTakingPyTestStruct(FPyTestStruct InStruct) {}
+	public void LegacyFuncTakingPyTestStruct(FPyTestStruct InStruct) {}
 	///<summary>FuncTakingPyTestStructDefault</summary>
-	public  void FuncTakingPyTestStructDefault(FPyTestStruct InStruct/*=new FPyTestStruct()*/) {}
+	public void FuncTakingPyTestStructDefault(FPyTestStruct InStruct/*=new FPyTestStruct()*/) {}
 	///<summary>FuncTakingPyTestDelegate</summary>
-	public  int FuncTakingPyTestDelegate(FPyTestDelegate InDelegate,int InValue) { return default; }
+	public int FuncTakingPyTestDelegate(FPyTestDelegate InDelegate,int InValue) { return default; }
 	///<summary>FuncTakingFieldPath</summary>
-	public  void FuncTakingFieldPath(object InFieldPath) {}
+	public void FuncTakingFieldPath(object InFieldPath) {}
 	///<summary>UHT couldn&#39;t parse any default value for the FieldPath.</summary>
-	public  int DelegatePropertyCallback(int InValue) { return default; }
+	public int DelegatePropertyCallback(int InValue) { return default; }
 	///<summary>MulticastDelegatePropertyCallback</summary>
-	public  void MulticastDelegatePropertyCallback(string InStr) {}
+	public void MulticastDelegatePropertyCallback(string InStr) {}
 	///<summary>ReturnArray</summary>
 	public static TArray<int> ReturnArray() { return default; }
 	///<summary>ReturnSet</summary>

@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>A simple widget that shows a sliding bar with a handle that allows you to control the value between 0..1.</summary>
@@ -44,23 +43,23 @@ public partial class USlider : UWidget {
 	///<summary>Called when the value is changed by slider or typing.</summary>
 	public FOnFloatValueChangedEvent OnValueChanged;
 	///<summary>Gets the current value of the slider.</summary>
-	public  float GetValue() { return default; }
+	public float GetValue() { return default; }
 	///<summary>Get the current value scaled from 0 to 1</summary>
-	public  float GetNormalizedValue() { return default; }
+	public float GetNormalizedValue() { return default; }
 	///<summary>Sets the current value of the slider.</summary>
-	public  void SetValue(float InValue) {}
+	public void SetValue(float InValue) {}
 	///<summary>Sets the minimum value of the slider.</summary>
-	public  void SetMinValue(float InValue) {}
+	public void SetMinValue(float InValue) {}
 	///<summary>Sets the maximum value of the slider.</summary>
-	public  void SetMaxValue(float InValue) {}
+	public void SetMaxValue(float InValue) {}
 	///<summary>Sets if the slidable area should be indented to fit the handle.</summary>
-	public  void SetIndentHandle(bool InValue) {}
+	public void SetIndentHandle(bool InValue) {}
 	///<summary>Sets the handle to be interactive or fixed.</summary>
-	public  void SetLocked(bool InValue) {}
+	public void SetLocked(bool InValue) {}
 	///<summary>Sets the amount to adjust the value by, when using a controller or keyboard.</summary>
-	public  void SetStepSize(float InValue) {}
+	public void SetStepSize(float InValue) {}
 	///<summary>Sets the color of the slider bar.</summary>
-	public  void SetSliderBarColor(FLinearColor InValue) {}
+	public void SetSliderBarColor(FLinearColor InValue) {}
 	///<summary>Sets the color of the handle bar</summary>
-	public  void SetSliderHandleColor(FLinearColor InValue) {}
+	public void SetSliderHandleColor(FLinearColor InValue) {}
 }

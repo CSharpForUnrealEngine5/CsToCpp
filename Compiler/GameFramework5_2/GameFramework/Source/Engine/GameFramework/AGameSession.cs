@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Acts as a game-specific wrapper around the session interface. The game code makes calls to this when it needs to interact with the session interface.</summary>

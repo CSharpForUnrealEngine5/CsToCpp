@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Component for rendering input texture.</summary>
@@ -6,9 +5,9 @@ using CSharpToCpp.Utilities;
 public partial class UDMXPixelMappingRendererComponent : UDMXPixelMappingOutputComponent {
 	public static UClass StaticClass() {return default;}
 	///<summary>Render input texture for downsampling</summary>
-	public  void RendererInputTexture() {}
+	public void RendererInputTexture() {}
 	///<summary>Returns the Modulators of the component corresponding to the patch specified.</summary>
-	public  bool GetPixelMappingComponentModulators(FDMXEntityFixturePatchRef FixturePatchRef,TArray<UDMXModulator> DMXModulators) { return default; }
+	public bool GetPixelMappingComponentModulators(FDMXEntityFixturePatchRef FixturePatchRef,TArray<UDMXModulator> DMXModulators) { return default; }
 	///<summary>Type of rendering, Texture, Material, UMG, etc...</summary>
 	public EDMXPixelMappingRendererType RendererType;
 	///<summary>Texture to Downsampling</summary>

@@ -1,23 +1,22 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("ZoneShapeComponent.h")]
 public partial class UZoneShapeComponent : UPrimitiveComponent {
 	public static UClass StaticClass() {return default;}
 	///<summary>@return Shape type.</summary>
-	public  FZoneShapeType GetShapeType() { return default; }
+	public FZoneShapeType GetShapeType() { return default; }
 	///<summary>Sets shape type.</summary>
-	public  void SetShapeType(FZoneShapeType Type) {}
+	public void SetShapeType(FZoneShapeType Type) {}
 	///<summary>@return Shape&#39;s tags.</summary>
-	public  FZoneGraphTagMask GetTags() { return default; }
+	public FZoneGraphTagMask GetTags() { return default; }
 	///<summary>Sets shape tags.</summary>
-	public  void SetTags(FZoneGraphTagMask NewTags) {}
+	public void SetTags(FZoneGraphTagMask NewTags) {}
 	///<summary>@return True if common lane profile is reversed.</summary>
-	public  bool IsLaneProfileReversed() { return default; }
+	public bool IsLaneProfileReversed() { return default; }
 	///<summary>Set whether common lane profile should be reversed.</summary>
-	public  bool SetReverseLaneProfile(bool bReverse) { return default; }
+	public bool SetReverseLaneProfile(bool bReverse) { return default; }
 	///<summary>Sets the polygon routing type.</summary>
-	public  void SetPolygonRoutingType(EZoneShapePolygonRoutingType NewType) {}
+	public void SetPolygonRoutingType(EZoneShapePolygonRoutingType NewType) {}
 	///<summary>Common lane template for whole shape</summary>
 	public FZoneLaneProfileRef LaneProfile;
 	///<summary>True if lane profile should be reversed</summary>

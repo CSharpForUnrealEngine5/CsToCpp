@@ -1,11 +1,10 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Engine/StreamableRenderAsset.h")]
 public partial class UStreamableRenderAsset : UObject {
 	public static UClass StaticClass() {return default;}
 	///<summary>Tells the streaming system that it should force all mip-levels to be resident for a number of seconds.</summary>
-	public  void SetForceMipLevelsToBeResident(float Seconds,int CinematicLODGroupMask/*=0*/) {}
+	public void SetForceMipLevelsToBeResident(float Seconds,int CinematicLODGroupMask/*=0*/) {}
 	///<summary>WorldSettings timestamp that tells the streamer to force all miplevels to be resident up until that time.</summary>
 	public double ForceMipLevelsToBeResidentTimestamp;
 	///<summary>Number of mip-levels to use for cinematic quality.</summary>

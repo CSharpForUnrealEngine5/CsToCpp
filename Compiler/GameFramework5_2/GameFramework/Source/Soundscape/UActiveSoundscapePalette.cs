@@ -1,13 +1,12 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("SoundScapePalette.h")]
 public partial class UActiveSoundscapePalette : UObject {
 	public static UClass StaticClass() {return default;}
 	///<summary>Play</summary>
-	public  void Play() {}
+	public void Play() {}
 	///<summary>Stop</summary>
-	public  void Stop() {}
+	public void Stop() {}
 	///<summary>World</summary>
 	public UWorld World;
 	///<summary>ActiveSoundscapeColors</summary>

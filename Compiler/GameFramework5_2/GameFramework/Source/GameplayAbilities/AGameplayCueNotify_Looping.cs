@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>AGameplayCueNotify_Looping</summary>
@@ -6,13 +5,13 @@ using CSharpToCpp.Utilities;
 public partial class AGameplayCueNotify_Looping : AGameplayCueNotify_Actor {
 	public static UClass StaticClass() {return default;}
 	///<summary>OnApplication</summary>
-	public  void OnApplication(AActor Target,FGameplayCueParameters Parameters,FGameplayCueNotify_SpawnResult SpawnResults) {}
+	public void OnApplication(AActor Target,FGameplayCueParameters Parameters,FGameplayCueNotify_SpawnResult SpawnResults) {}
 	///<summary>OnLoopingStart</summary>
-	public  void OnLoopingStart(AActor Target,FGameplayCueParameters Parameters,FGameplayCueNotify_SpawnResult SpawnResults) {}
+	public void OnLoopingStart(AActor Target,FGameplayCueParameters Parameters,FGameplayCueNotify_SpawnResult SpawnResults) {}
 	///<summary>OnRecurring</summary>
-	public  void OnRecurring(AActor Target,FGameplayCueParameters Parameters,FGameplayCueNotify_SpawnResult SpawnResults) {}
+	public void OnRecurring(AActor Target,FGameplayCueParameters Parameters,FGameplayCueNotify_SpawnResult SpawnResults) {}
 	///<summary>OnRemoval</summary>
-	public  void OnRemoval(AActor Target,FGameplayCueParameters Parameters,FGameplayCueNotify_SpawnResult SpawnResults) {}
+	public void OnRemoval(AActor Target,FGameplayCueParameters Parameters,FGameplayCueNotify_SpawnResult SpawnResults) {}
 	///<summary>Default condition to check before spawning anything.  Applies for all spawns unless overridden.</summary>
 	public FGameplayCueNotify_SpawnCondition DefaultSpawnCondition;
 	///<summary>Default placement rules.  Applies for all spawns unless overridden.</summary>

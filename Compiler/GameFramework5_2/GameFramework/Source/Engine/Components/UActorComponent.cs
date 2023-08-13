@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>ActorComponent is the base class for components that define reusable behavior that can be added to different types of Actors.</summary>
@@ -40,13 +39,13 @@ public partial class UActorComponent : UObject {
 	///<summary>Describes how a component instance will be created</summary>
 	public EComponentCreationMethod CreationMethod;
 	///<summary>Returns whether the component is in the process of being destroyed.</summary>
-	public  bool IsBeingDestroyed() { return default; }
+	public bool IsBeingDestroyed() { return default; }
 	///<summary>Handles replication of active state, handles ticking by default but should be overridden as needed</summary>
-	public  void OnRep_IsActive() {}
+	public virtual void OnRep_IsActive() {}
 	///<summary>Follow the Outer chain to get the  AActor  that &#39;Owns&#39; this component</summary>
-	public  AActor GetOwner() { return default; }
+	public AActor GetOwner() { return default; }
 	///<summary>See if this component contains the supplied tag</summary>
-	public  bool ComponentHasTag(string Tag) { return default; }
+	public bool ComponentHasTag(string Tag) { return default; }
 	///<summary>Called when the component has been activated, with parameter indicating if it was from a reset</summary>
 	public FActorComponentActivatedSignature OnComponentActivated;
 	///<summary>Called when the component has been deactivated</summary>
@@ -54,49 +53,49 @@ public partial class UActorComponent : UObject {
 	///<summary>UCSModifiedProperties_DEPRECATED</summary>
 	public TArray<FSimpleMemberReference> UCSModifiedProperties_DEPRECATED;
 	///<summary>Activates the SceneComponent, should be overridden by native child classes.</summary>
-	public  void Activate(bool bReset/*=false*/) {}
+	public virtual void Activate(bool bReset/*=false*/) {}
 	///<summary>Deactivates the SceneComponent.</summary>
-	public  void Deactivate() {}
+	public virtual void Deactivate() {}
 	///<summary>Sets whether the component is active or not</summary>
-	public  void SetActive(bool bNewActive,bool bReset/*=false*/) {}
+	public virtual void SetActive(bool bNewActive,bool bReset/*=false*/) {}
 	///<summary>Toggles the active state of the component</summary>
-	public  void ToggleActive() {}
+	public virtual void ToggleActive() {}
 	///<summary>Returns whether the component is active or not</summary>
-	public  bool IsActive() { return default; }
+	public bool IsActive() { return default; }
 	///<summary>Sets whether the component should be auto activate or not. Only safe during construction scripts.</summary>
-	public  void SetAutoActivate(bool bNewAutoActivate) {}
+	public virtual void SetAutoActivate(bool bNewAutoActivate) {}
 	///<summary>Sets whether this component can tick when paused.</summary>
-	public  void SetTickableWhenPaused(bool bTickableWhenPaused) {}
+	public void SetTickableWhenPaused(bool bTickableWhenPaused) {}
 	///<summary>Enable or disable replication. This is the equivalent of RemoteRole for actors (only a bool is required for components)</summary>
-	public  void SetIsReplicated(bool ShouldReplicate) {}
+	public void SetIsReplicated(bool ShouldReplicate) {}
 	///<summary>Blueprint implementable event for when the component is beginning play, called before its owning actor&#39;s BeginPlay</summary>
-	public  void ReceiveBeginPlay() {}
+	public void ReceiveBeginPlay() {}
 	///<summary>Blueprint implementable event for when the component ends play, generally via destruction or its Actor&#39;s EndPlay.</summary>
-	public  void ReceiveEndPlay(EEndPlayReason EndPlayReason) {}
+	public void ReceiveEndPlay(EEndPlayReason EndPlayReason) {}
 	///<summary>Set this component&#39;s tick functions to be enabled or disabled. Only has an effect if the function is registered</summary>
-	public  void SetComponentTickEnabled(bool bEnabled) {}
+	public virtual void SetComponentTickEnabled(bool bEnabled) {}
 	///<summary>Returns whether this component has tick enabled or not</summary>
-	public  bool IsComponentTickEnabled() { return default; }
+	public virtual bool IsComponentTickEnabled() { return default; }
 	///<summary>Sets the tick interval for this component&#39;s primary tick function. Does not enable the tick interval. Takes effect on next tick.</summary>
-	public  void SetComponentTickInterval(float TickInterval) {}
+	public void SetComponentTickInterval(float TickInterval) {}
 	///<summary>Sets the tick interval for this component&#39;s primary tick function. Does not enable the tick interval. Takes effect imediately.</summary>
-	public  void SetComponentTickIntervalAndCooldown(float TickInterval) {}
+	public void SetComponentTickIntervalAndCooldown(float TickInterval) {}
 	///<summary>Returns the tick interval for this component&#39;s primary tick function, which is the frequency in seconds at which it will be executed</summary>
-	public  float GetComponentTickInterval() { return default; }
+	public float GetComponentTickInterval() { return default; }
 	///<summary>Unregister and mark for pending kill a component.  This may not be used to destroy a component that is owned by an actor unless the owning actor is calling the function.</summary>
-	public  void K2_DestroyComponent(UObject Object) {}
+	public void K2_DestroyComponent(UObject Object) {}
 	///<summary>Changes the ticking group for this component</summary>
-	public  void SetTickGroup(ETickingGroup NewTickGroup) {}
+	public void SetTickGroup(ETickingGroup NewTickGroup) {}
 	///<summary>Make this component tick after PrerequisiteActor</summary>
-	public  void AddTickPrerequisiteActor(AActor PrerequisiteActor) {}
+	public virtual void AddTickPrerequisiteActor(AActor PrerequisiteActor) {}
 	///<summary>Make this component tick after PrerequisiteComponent.</summary>
-	public  void AddTickPrerequisiteComponent(UActorComponent PrerequisiteComponent) {}
+	public virtual void AddTickPrerequisiteComponent(UActorComponent PrerequisiteComponent) {}
 	///<summary>Remove tick dependency on PrerequisiteActor.</summary>
-	public  void RemoveTickPrerequisiteActor(AActor PrerequisiteActor) {}
+	public virtual void RemoveTickPrerequisiteActor(AActor PrerequisiteActor) {}
 	///<summary>Remove tick dependency on PrerequisiteComponent.</summary>
-	public  void RemoveTickPrerequisiteComponent(UActorComponent PrerequisiteComponent) {}
+	public virtual void RemoveTickPrerequisiteComponent(UActorComponent PrerequisiteComponent) {}
 	///<summary>Event called every frame if tick is enabled</summary>
-	public  void ReceiveTick(float DeltaSeconds) {}
+	public void ReceiveTick(float DeltaSeconds) {}
 	///<summary>Event called every async physics tick if bAsyncPhysicsTickEnabled is true</summary>
-	public  void ReceiveAsyncPhysicsTick(float DeltaSeconds,float SimSeconds) {}
+	public void ReceiveAsyncPhysicsTick(float DeltaSeconds,float SimSeconds) {}
 }

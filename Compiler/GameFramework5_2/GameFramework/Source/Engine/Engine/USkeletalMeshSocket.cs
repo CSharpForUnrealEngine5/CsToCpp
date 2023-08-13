@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Engine/SkeletalMeshSocket.h")]
@@ -17,7 +16,7 @@ public partial class USkeletalMeshSocket : UObject {
 	///<summary>If true then the hierarchy of bones this socket is attached to will always be</summary>
 	public bool bForceAlwaysAnimated;
 	///<summary>GetSocketLocation</summary>
-	public  FVector GetSocketLocation(USkeletalMeshComponent SkelComp) { return default; }
+	public FVector GetSocketLocation(USkeletalMeshComponent SkelComp) { return default; }
 	///<summary>Sets BoneName, RelativeLocation and RelativeRotation based on closest bone to WorldLocation and WorldNormal</summary>
-	public  void InitializeSocketFromLocation(USkeletalMeshComponent SkelComp,FVector WorldLocation,FVector WorldNormal) {}
+	public void InitializeSocketFromLocation(USkeletalMeshComponent SkelComp,FVector WorldLocation,FVector WorldNormal) {}
 }

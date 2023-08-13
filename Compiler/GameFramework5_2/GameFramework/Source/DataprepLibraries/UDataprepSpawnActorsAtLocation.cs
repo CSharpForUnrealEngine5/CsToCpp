@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>For each actor in the input set, spawn an actor from the specified Asset at the same position and orientation than the reference</summary>

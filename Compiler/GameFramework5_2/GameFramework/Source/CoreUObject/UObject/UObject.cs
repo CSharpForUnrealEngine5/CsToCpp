@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Direct base class for all UE objects</summary>
@@ -6,5 +5,5 @@ using CSharpToCpp.Utilities;
 public partial class UObject  {
 	public static UClass StaticClass() {return default;}
 	///<summary>Executes some portion of the ubergraph.</summary>
-	public  void ExecuteUbergraph(int EntryPoint) {}
+	public void ExecuteUbergraph(int EntryPoint) {}
 }

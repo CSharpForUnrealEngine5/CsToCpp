@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Abstract class that provides consistent player behaviour for various animation players</summary>
@@ -8,83 +7,83 @@ public partial class UMovieSceneSequencePlayer : UObject {
 	///<summary>Obeserver interface used for controlling whether the effects of this sequence can be seen even when it is playing back.</summary>
 	public object /*Observer*/ Observer;
 	///<summary>Start playback forwards from the current time cursor position, using the current play rate.</summary>
-	public  void Play() {}
+	public void Play() {}
 	///<summary>Reverse playback.</summary>
-	public  void PlayReverse() {}
+	public void PlayReverse() {}
 	///<summary>Changes the direction of playback (go in reverse if it was going forward, or vice versa)</summary>
-	public  void ChangePlaybackDirection() {}
+	public void ChangePlaybackDirection() {}
 	///<summary>Start playback from the current time cursor position, looping the specified number of times.</summary>
-	public  void PlayLooping(int NumLoops/*=-1*/) {}
+	public void PlayLooping(int NumLoops/*=-1*/) {}
 	///<summary>Pause playback.</summary>
-	public  void Pause() {}
+	public void Pause() {}
 	///<summary>Scrub playback.</summary>
-	public  void Scrub() {}
+	public void Scrub() {}
 	///<summary>Stop playback and move the cursor to the end (or start, for reversed playback) of the sequence.</summary>
-	public  void Stop() {}
+	public void Stop() {}
 	///<summary>Stop playback without moving the cursor.</summary>
-	public  void StopAtCurrentTime() {}
+	public void StopAtCurrentTime() {}
 	///<summary>Go to end of the sequence and stop. Adheres to &#39;When Finished&#39; section rules.</summary>
-	public  void GoToEndAndStop() {}
+	public void GoToEndAndStop() {}
 	///<summary>Get the current playback position</summary>
-	public  FQualifiedFrameTime GetCurrentTime() { return default; }
+	public FQualifiedFrameTime GetCurrentTime() { return default; }
 	///<summary>Get the total duration of the sequence</summary>
-	public  FQualifiedFrameTime GetDuration() { return default; }
+	public FQualifiedFrameTime GetDuration() { return default; }
 	///<summary>Get this sequence&#39;s duration in frames</summary>
-	public  int GetFrameDuration() { return default; }
+	public int GetFrameDuration() { return default; }
 	///<summary>Get this sequence&#39;s display rate.</summary>
-	public  FFrameRate GetFrameRate() { return default; }
+	public FFrameRate GetFrameRate() { return default; }
 	///<summary>Set the frame-rate that this player should play with, making all frame numbers in the specified time-space</summary>
-	public  void SetFrameRate(FFrameRate FrameRate) {}
+	public void SetFrameRate(FFrameRate FrameRate) {}
 	///<summary>Get the offset within the level sequence to start playing</summary>
-	public  FQualifiedFrameTime GetStartTime() { return default; }
+	public FQualifiedFrameTime GetStartTime() { return default; }
 	///<summary>Get the offset within the level sequence to finish playing</summary>
-	public  FQualifiedFrameTime GetEndTime() { return default; }
+	public FQualifiedFrameTime GetEndTime() { return default; }
 	///<summary>Set a manual weight to be multiplied with all blendable elements within this sequence</summary>
-	public  void SetWeight(double InWeight) {}
+	public void SetWeight(double InWeight) {}
 	///<summary>Removes a previously assigned weight</summary>
-	public  void RemoveWeight() {}
+	public void RemoveWeight() {}
 	///<summary>Set the valid play range for this sequence, determined by a starting frame number (in this sequence player&#39;s plaback frame), and a number of frames duration</summary>
-	public  void SetFrameRange(int StartFrame,int Duration,float SubFrames/*=0.0f*/) {}
+	public void SetFrameRange(int StartFrame,int Duration,float SubFrames/*=0.0f*/) {}
 	///<summary>Set the valid play range for this sequence, determined by a starting time  and a duration (in seconds)</summary>
-	public  void SetTimeRange(float StartTime,float Duration) {}
+	public void SetTimeRange(float StartTime,float Duration) {}
 	///<summary>Play from the current position to the requested position and pause. If requested position is before the current position,</summary>
-	public  void PlayTo(FMovieSceneSequencePlaybackParams PlaybackParams,FMovieSceneSequencePlayToParams PlayToParams) {}
+	public void PlayTo(FMovieSceneSequencePlaybackParams PlaybackParams,FMovieSceneSequencePlayToParams PlayToParams) {}
 	///<summary>Set the current time of the player by evaluating from the current time to the specified time, as if the sequence is playing.</summary>
-	public  void SetPlaybackPosition(FMovieSceneSequencePlaybackParams PlaybackParams) {}
+	public void SetPlaybackPosition(FMovieSceneSequencePlaybackParams PlaybackParams) {}
 	///<summary>Restore any changes made by this player to their original state</summary>
-	public  void RestoreState() {}
+	public void RestoreState() {}
 	///<summary>PlayToFrame</summary>
-	public  void PlayToFrame(FFrameTime NewPosition) {}
+	public void PlayToFrame(FFrameTime NewPosition) {}
 	///<summary>ScrubToFrame</summary>
-	public  void ScrubToFrame(FFrameTime NewPosition) {}
+	public void ScrubToFrame(FFrameTime NewPosition) {}
 	///<summary>JumpToFrame</summary>
-	public  void JumpToFrame(FFrameTime NewPosition) {}
+	public void JumpToFrame(FFrameTime NewPosition) {}
 	///<summary>PlayToSeconds</summary>
-	public  void PlayToSeconds(float TimeInSeconds) {}
+	public void PlayToSeconds(float TimeInSeconds) {}
 	///<summary>ScrubToSeconds</summary>
-	public  void ScrubToSeconds(float TimeInSeconds) {}
+	public void ScrubToSeconds(float TimeInSeconds) {}
 	///<summary>JumpToSeconds</summary>
-	public  void JumpToSeconds(float TimeInSeconds) {}
+	public void JumpToSeconds(float TimeInSeconds) {}
 	///<summary>PlayToMarkedFrame</summary>
-	public  bool PlayToMarkedFrame(string InLabel) { return default; }
+	public bool PlayToMarkedFrame(string InLabel) { return default; }
 	///<summary>ScrubToMarkedFrame</summary>
-	public  bool ScrubToMarkedFrame(string InLabel) { return default; }
+	public bool ScrubToMarkedFrame(string InLabel) { return default; }
 	///<summary>JumpToMarkedFrame</summary>
-	public  bool JumpToMarkedFrame(string InLabel) { return default; }
+	public bool JumpToMarkedFrame(string InLabel) { return default; }
 	///<summary>Check whether the sequence is actively playing.</summary>
-	public  bool IsPlaying() { return default; }
+	public bool IsPlaying() { return default; }
 	///<summary>Check whether the sequence is paused.</summary>
-	public  bool IsPaused() { return default; }
+	public bool IsPaused() { return default; }
 	///<summary>Check whether playback is reversed.</summary>
-	public  bool IsReversed() { return default; }
+	public bool IsReversed() { return default; }
 	///<summary>Get the playback rate of this player.</summary>
-	public  float GetPlayRate() { return default; }
+	public float GetPlayRate() { return default; }
 	///<summary>Set the playback rate of this player. Negative values will play the animation in reverse.</summary>
-	public  void SetPlayRate(float PlayRate) {}
+	public void SetPlayRate(float PlayRate) {}
 	///<summary>Set whether to disable camera cuts</summary>
-	public  void SetDisableCameraCuts(bool bInDisableCameraCuts) {}
+	public void SetDisableCameraCuts(bool bInDisableCameraCuts) {}
 	///<summary>Set whether to disable camera cuts</summary>
-	public  bool GetDisableCameraCuts() { return default; }
+	public bool GetDisableCameraCuts() { return default; }
 	///<summary>Event triggered when the level sequence player is played</summary>
 	public FOnMovieSceneSequencePlayerEvent OnPlay;
 	///<summary>Event triggered when the level sequence player is played in reverse</summary>
@@ -96,19 +95,19 @@ public partial class UMovieSceneSequencePlayer : UObject {
 	///<summary>Event triggered when the level sequence player finishes naturally (without explicitly calling stop)</summary>
 	public FOnMovieSceneSequencePlayerEvent OnFinished;
 	///<summary>Retrieve all objects currently bound to the specified binding identifier</summary>
-	public  TArray<UObject> GetBoundObjects(FMovieSceneObjectBindingID ObjectBinding) { return default; }
+	public TArray<UObject> GetBoundObjects(FMovieSceneObjectBindingID ObjectBinding) { return default; }
 	///<summary>Get the object bindings for the requested object</summary>
-	public  TArray<FMovieSceneObjectBindingID> GetObjectBindings(UObject InObject) { return default; }
+	public TArray<FMovieSceneObjectBindingID> GetObjectBindings(UObject InObject) { return default; }
 	///<summary>Access the sequence this player is playing</summary>
-	public  UMovieSceneSequence GetSequence() { return default; }
+	public UMovieSceneSequence GetSequence() { return default; }
 	///<summary>Get the name of the sequence this player is playing</summary>
-	public  string GetSequenceName(bool bAddClientInfo/*=false*/) { return default; }
+	public string GetSequenceName(bool bAddClientInfo/*=false*/) { return default; }
 	///<summary>Called on the server whenever an explicit change in time has occurred through one of the (Play|Jump|Scrub)To methods</summary>
-	public  void RPC_ExplicitServerUpdateEvent(EUpdatePositionMethod Method,FFrameTime RelevantTime) {}
+	public void RPC_ExplicitServerUpdateEvent(EUpdatePositionMethod Method,FFrameTime RelevantTime) {}
 	///<summary>Called on the server when Stop() is called in order to differentiate Stops from Pauses.</summary>
-	public  void RPC_OnStopEvent(FFrameTime StoppedTime) {}
+	public void RPC_OnStopEvent(FFrameTime StoppedTime) {}
 	///<summary>Called on the server when playback has reached the end. Could lead to stopping or pausing.</summary>
-	public  void RPC_OnFinishPlaybackEvent(FFrameTime StoppedTime) {}
+	public void RPC_OnFinishPlaybackEvent(FFrameTime StoppedTime) {}
 	///<summary>Movie player status.</summary>
 	public EMovieScenePlayerStatus Status;
 	///<summary>Whether we&#39;re currently playing in reverse.</summary>

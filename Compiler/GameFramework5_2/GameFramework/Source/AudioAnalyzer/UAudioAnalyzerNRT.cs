@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>UAudioAnalyzerNRT</summary>
@@ -10,5 +9,5 @@ public partial class UAudioAnalyzerNRT : UAudioAnalyzerAssetBase {
 	///<summary>The duration of the analyzed audio in seconds.</summary>
 	public float DurationInSeconds;
 	///<summary>Performs the analaysis of the audio</summary>
-	public  void AnalyzeAudio() {}
+	public void AnalyzeAudio() {}
 }

@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>A geometry layer within the stereo rendered viewport.</summary>
@@ -6,29 +5,29 @@ using CSharpToCpp.Utilities;
 public partial class UStereoLayerComponent : USceneComponent {
 	public static UClass StaticClass() {return default;}
 	///<summary>Change the texture displayed on the stereo layer.</summary>
-	public  void SetTexture(UTexture InTexture) {}
+	public void SetTexture(UTexture InTexture) {}
 	///<summary>Change the texture displayed on the stereo layer for left eye, if stereoscopic layer textures are supported on the platform.</summary>
-	public  void SetLeftTexture(UTexture InTexture) {}
+	public void SetLeftTexture(UTexture InTexture) {}
 	///<summary>@return the texture mapped to the stereo layer.</summary>
-	public  UTexture GetTexture() { return default; }
+	public UTexture GetTexture() { return default; }
 	///<summary>@return the texture mapped to the stereo layer for left eye, if stereoscopic layer textures are supported on the platform.</summary>
-	public  UTexture GetLeftTexture() { return default; }
+	public UTexture GetLeftTexture() { return default; }
 	///<summary>Change the quad size. This is the unscaled height and width, before component scale is applied.</summary>
-	public  void SetQuadSize(FVector2D InQuadSize) {}
+	public void SetQuadSize(FVector2D InQuadSize) {}
 	///<summary>@return the height and width of the rendered quad</summary>
-	public  FVector2D GetQuadSize() { return default; }
+	public FVector2D GetQuadSize() { return default; }
 	///<summary>Change the UV coordinates mapped to the quad face</summary>
-	public  void SetUVRect(FBox2D InUVRect) {}
+	public void SetUVRect(FBox2D InUVRect) {}
 	///<summary>@return the UV coordinates mapped to the quad face</summary>
-	public  FBox2D GetUVRect() { return default; }
+	public FBox2D GetUVRect() { return default; }
 	///<summary>Set Equirect layer properties: UVRect, Scale, and Bias</summary>
-	public  void SetEquirectProps(FEquirectProps InScaleBiases) {}
+	public void SetEquirectProps(FEquirectProps InScaleBiases) {}
 	///<summary>Change the layer&#39;s render priority, higher priorities render on top of lower priorities</summary>
-	public  void SetPriority(int InPriority) {}
+	public void SetPriority(int InPriority) {}
 	///<summary>@return the render priority</summary>
-	public  int GetPriority() { return default; }
+	public int GetPriority() { return default; }
 	///<summary>Manually mark the stereo layer texture for updating</summary>
-	public  void MarkTextureForUpdate() {}
+	public void MarkTextureForUpdate() {}
 	///<summary>True if the stereo layer texture needs to update itself every frame(scene capture, video, etc.)</summary>
 	public bool bLiveTexture;
 	///<summary>True if the stereo layer needs to support depth intersections with the scene geometry, if available on the platform</summary>

@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("AnimationSharingInstances.h")]
@@ -13,7 +12,7 @@ public partial class UAnimSharingStateInstance : UAnimInstance {
 	///<summary>bStateBool</summary>
 	public bool bStateBool;
 	///<summary>GetInstancedActors</summary>
-	public  void GetInstancedActors(TArray<AActor> Actors) {}
+	public void GetInstancedActors(TArray<AActor> Actors) {}
 	///<summary>Instance</summary>
 	public UAnimSharingInstance Instance;
 }

@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Box scalar field that will be defined only within a box</summary>
@@ -6,7 +5,7 @@ using CSharpToCpp.Utilities;
 public partial class UBoxFalloff : UFieldNodeFloat {
 	public static UClass StaticClass() {return default;}
 	///<summary>Box scalar field that will be defined only within a box</summary>
-	public  UBoxFalloff SetBoxFalloff(float Magnitude,float MinRange,float MaxRange,float Default,FTransform Transform,EFieldFalloffType Falloff) { return default; }
+	public UBoxFalloff SetBoxFalloff(float Magnitude,float MinRange,float MaxRange,float Default,FTransform Transform,EFieldFalloffType Falloff) { return default; }
 	///<summary>Magnitude of the box falloff field</summary>
 	public float Magnitude;
 	///<summary>The initial function value between 0 and 1 will be scaled between MinRange and MaxRange before being multiplied by magnitude</summary>

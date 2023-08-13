@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>A widget that allows you to specify the size it reports to have and desire.  Not all widgets report a desired size</summary>
@@ -38,35 +37,35 @@ public partial class USizeBox : UContentWidget {
 	///<summary>bOverride_MaxAspectRatio</summary>
 	public bool bOverride_MaxAspectRatio;
 	///<summary>When specified, ignore the content&#39;s desired size and report the WidthOverride as the Box&#39;s desired width.</summary>
-	public  void SetWidthOverride(float InWidthOverride) {}
+	public void SetWidthOverride(float InWidthOverride) {}
 	///<summary>ClearWidthOverride</summary>
-	public  void ClearWidthOverride() {}
+	public void ClearWidthOverride() {}
 	///<summary>When specified, ignore the content&#39;s desired size and report the HeightOverride as the Box&#39;s desired height.</summary>
-	public  void SetHeightOverride(float InHeightOverride) {}
+	public void SetHeightOverride(float InHeightOverride) {}
 	///<summary>ClearHeightOverride</summary>
-	public  void ClearHeightOverride() {}
+	public void ClearHeightOverride() {}
 	///<summary>When specified, will report the MinDesiredWidth if larger than the content&#39;s desired width.</summary>
-	public  void SetMinDesiredWidth(float InMinDesiredWidth) {}
+	public void SetMinDesiredWidth(float InMinDesiredWidth) {}
 	///<summary>ClearMinDesiredWidth</summary>
-	public  void ClearMinDesiredWidth() {}
+	public void ClearMinDesiredWidth() {}
 	///<summary>When specified, will report the MinDesiredHeight if larger than the content&#39;s desired height.</summary>
-	public  void SetMinDesiredHeight(float InMinDesiredHeight) {}
+	public void SetMinDesiredHeight(float InMinDesiredHeight) {}
 	///<summary>ClearMinDesiredHeight</summary>
-	public  void ClearMinDesiredHeight() {}
+	public void ClearMinDesiredHeight() {}
 	///<summary>When specified, will report the MaxDesiredWidth if smaller than the content&#39;s desired width.</summary>
-	public  void SetMaxDesiredWidth(float InMaxDesiredWidth) {}
+	public void SetMaxDesiredWidth(float InMaxDesiredWidth) {}
 	///<summary>ClearMaxDesiredWidth</summary>
-	public  void ClearMaxDesiredWidth() {}
+	public void ClearMaxDesiredWidth() {}
 	///<summary>When specified, will report the MaxDesiredHeight if smaller than the content&#39;s desired height.</summary>
-	public  void SetMaxDesiredHeight(float InMaxDesiredHeight) {}
+	public void SetMaxDesiredHeight(float InMaxDesiredHeight) {}
 	///<summary>ClearMaxDesiredHeight</summary>
-	public  void ClearMaxDesiredHeight() {}
+	public void ClearMaxDesiredHeight() {}
 	///<summary>SetMinAspectRatio</summary>
-	public  void SetMinAspectRatio(float InMinAspectRatio) {}
+	public void SetMinAspectRatio(float InMinAspectRatio) {}
 	///<summary>ClearMinAspectRatio</summary>
-	public  void ClearMinAspectRatio() {}
+	public void ClearMinAspectRatio() {}
 	///<summary>SetMaxAspectRatio</summary>
-	public  void SetMaxAspectRatio(float InMaxAspectRatio) {}
+	public void SetMaxAspectRatio(float InMaxAspectRatio) {}
 	///<summary>ClearMaxAspectRatio</summary>
-	public  void ClearMaxAspectRatio() {}
+	public void ClearMaxAspectRatio() {}
 }

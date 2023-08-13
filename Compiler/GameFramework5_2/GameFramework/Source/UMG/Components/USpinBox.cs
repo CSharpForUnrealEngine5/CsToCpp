@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>A numerical entry box that allows for direct entry of the number or allows the user to click and slide the number.</summary>
@@ -6,11 +5,11 @@ using CSharpToCpp.Utilities;
 public partial class USpinBox : UWidget {
 	public static UClass StaticClass() {return default;}
 	///<summary>FOnSpinBoxValueChangedEvent</summary>
-	public  void FOnSpinBoxValueChangedEvent(float InValue) {}
+	public void FOnSpinBoxValueChangedEvent(float InValue) {}
 	///<summary>FOnSpinBoxValueCommittedEvent</summary>
-	public  void FOnSpinBoxValueCommittedEvent(float InValue,ETextCommit CommitMethod) {}
+	public void FOnSpinBoxValueCommittedEvent(float InValue,ETextCommit CommitMethod) {}
 	///<summary>FOnSpinBoxBeginSliderMovement</summary>
-	public  void FOnSpinBoxBeginSliderMovement() {}
+	public void FOnSpinBoxBeginSliderMovement() {}
 	///<summary>Value stored in this spin box</summary>
 	public float Value;
 	///<summary>A bindable delegate to allow logic to drive the value of the widget</summary>
@@ -52,51 +51,51 @@ public partial class USpinBox : UWidget {
 	///<summary>Called right after the slider handle is released by the user</summary>
 	public FOnSpinBoxValueChangedEvent OnEndSliderMovement;
 	///<summary>Get the current value of the spin box.</summary>
-	public  float GetValue() { return default; }
+	public float GetValue() { return default; }
 	///<summary>Set the value of the spin box.</summary>
-	public  void SetValue(float NewValue) {}
+	public void SetValue(float NewValue) {}
 	///<summary>Get the current Min Fractional Digits for the spin box.</summary>
-	public  int GetMinFractionalDigits() { return default; }
+	public int GetMinFractionalDigits() { return default; }
 	///<summary>Set the Min Fractional Digits for the spin box.</summary>
-	public  void SetMinFractionalDigits(int NewValue) {}
+	public void SetMinFractionalDigits(int NewValue) {}
 	///<summary>Get the current Max Fractional Digits for the spin box.</summary>
-	public  int GetMaxFractionalDigits() { return default; }
+	public int GetMaxFractionalDigits() { return default; }
 	///<summary>Set the Max Fractional Digits for the spin box.</summary>
-	public  void SetMaxFractionalDigits(int NewValue) {}
+	public void SetMaxFractionalDigits(int NewValue) {}
 	///<summary>Get whether the spin box uses delta snap on type.</summary>
-	public  bool GetAlwaysUsesDeltaSnap() { return default; }
+	public bool GetAlwaysUsesDeltaSnap() { return default; }
 	///<summary>Set whether the spin box uses delta snap on type.</summary>
-	public  void SetAlwaysUsesDeltaSnap(bool bNewValue) {}
+	public void SetAlwaysUsesDeltaSnap(bool bNewValue) {}
 	///<summary>Get the current delta for the spin box.</summary>
-	public  float GetDelta() { return default; }
+	public float GetDelta() { return default; }
 	///<summary>Set the delta for the spin box.</summary>
-	public  void SetDelta(float NewValue) {}
+	public void SetDelta(float NewValue) {}
 	///<summary>Get the current minimum value that can be manually set in the spin box.</summary>
-	public  float GetMinValue() { return default; }
+	public float GetMinValue() { return default; }
 	///<summary>Set the minimum value that can be manually set in the spin box.</summary>
-	public  void SetMinValue(float NewValue) {}
+	public void SetMinValue(float NewValue) {}
 	///<summary>Clear the minimum value that can be manually set in the spin box.</summary>
-	public  void ClearMinValue() {}
+	public void ClearMinValue() {}
 	///<summary>Get the current maximum value that can be manually set in the spin box.</summary>
-	public  float GetMaxValue() { return default; }
+	public float GetMaxValue() { return default; }
 	///<summary>Set the maximum value that can be manually set in the spin box.</summary>
-	public  void SetMaxValue(float NewValue) {}
+	public void SetMaxValue(float NewValue) {}
 	///<summary>Clear the maximum value that can be manually set in the spin box.</summary>
-	public  void ClearMaxValue() {}
+	public void ClearMaxValue() {}
 	///<summary>Get the current minimum value that can be specified using the slider.</summary>
-	public  float GetMinSliderValue() { return default; }
+	public float GetMinSliderValue() { return default; }
 	///<summary>Set the minimum value that can be specified using the slider.</summary>
-	public  void SetMinSliderValue(float NewValue) {}
+	public void SetMinSliderValue(float NewValue) {}
 	///<summary>Clear the minimum value that can be specified using the slider.</summary>
-	public  void ClearMinSliderValue() {}
+	public void ClearMinSliderValue() {}
 	///<summary>Get the current maximum value that can be specified using the slider.</summary>
-	public  float GetMaxSliderValue() { return default; }
+	public float GetMaxSliderValue() { return default; }
 	///<summary>Set the maximum value that can be specified using the slider.</summary>
-	public  void SetMaxSliderValue(float NewValue) {}
+	public void SetMaxSliderValue(float NewValue) {}
 	///<summary>Clear the maximum value that can be specified using the slider.</summary>
-	public  void ClearMaxSliderValue() {}
+	public void ClearMaxSliderValue() {}
 	///<summary>SetForegroundColor</summary>
-	public  void SetForegroundColor(FSlateColor InForegroundColor) {}
+	public void SetForegroundColor(FSlateColor InForegroundColor) {}
 	///<summary>Whether the optional MinValue attribute of the widget is set</summary>
 	public bool bOverride_MinValue;
 	///<summary>Whether the optional MaxValue attribute of the widget is set</summary>

@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("ResonanceAudioSpatializationSourceSettings.h")]
@@ -23,7 +22,7 @@ public partial class UResonanceAudioSpatializationSourceSettings : USpatializati
 	///<summary>Maximum distance to apply the chosen attenuation method ((default = 50000.0 cm)</summary>
 	public float MaxDistance;
 	///<summary>Sets the sound source directivity, applies, and updates</summary>
-	public  void SetSoundSourceDirectivity(float InPattern,float InSharpness) {}
+	public void SetSoundSourceDirectivity(float InPattern,float InSharpness) {}
 	///<summary>Sets the sound source spread (width), applies, and updates</summary>
-	public  void SetSoundSourceSpread(float InSpread) {}
+	public void SetSoundSourceSpread(float InSpread) {}
 }

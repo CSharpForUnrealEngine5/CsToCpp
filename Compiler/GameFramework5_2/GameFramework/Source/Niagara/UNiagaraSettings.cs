@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("NiagaraSettings.h")]
@@ -27,9 +26,9 @@ public partial class UNiagaraSettings : UDeveloperSettings {
 	///<summary>Position pin type color. The other pin colors are defined in the general editor settings.</summary>
 	public FLinearColor PositionPinTypeColor;
 	///<summary>The quality levels Niagara uses.</summary>
-	public TArray<string> QualityLevels;
+	public TArray<FText> QualityLevels;
 	///<summary>Info texts that the component renderer shows the user depending on the selected component class.</summary>
-	public TMap<string,string> ComponentRendererWarningsPerClass;
+	public TMap<string,FText> ComponentRendererWarningsPerClass;
 	///<summary>The default render target format used by all Niagara Render Target Data Interfaces unless overridden.</summary>
 	public ETextureRenderTargetFormat DefaultRenderTargetFormat;
 	///<summary>The default buffer format used by all Niagara Grid Data Interfaces unless overridden.</summary>

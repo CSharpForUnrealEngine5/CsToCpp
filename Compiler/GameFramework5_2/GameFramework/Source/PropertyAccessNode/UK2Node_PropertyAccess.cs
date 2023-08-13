@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("K2Node_PropertyAccess.h")]
@@ -7,7 +6,7 @@ public partial class UK2Node_PropertyAccess : UK2Node {
 	///<summary>Path that this access exposes</summary>
 	public TArray<string> Path;
 	///<summary>Path as text, for display</summary>
-	public string TextPath;
+	public FText TextPath;
 	///<summary>Resolved pin type</summary>
 	public FEdGraphPinType ResolvedPinType;
 	///<summary>Generated property created during compilation</summary>

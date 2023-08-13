@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>This class represents a single layer in a tile map.  All layers in the map must have the size dimensions.</summary>
@@ -6,7 +5,7 @@ using CSharpToCpp.Utilities;
 public partial class UPaperTileLayer : UObject {
 	public static UClass StaticClass() {return default;}
 	///<summary>Name of the layer</summary>
-	public string LayerName;
+	public FText LayerName;
 	///<summary>Width of the layer (in tiles)</summary>
 	public int LayerWidth;
 	///<summary>Height of the layer (in tiles)</summary>

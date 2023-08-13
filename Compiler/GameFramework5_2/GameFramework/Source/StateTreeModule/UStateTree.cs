@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>StateTree asset. Contains the StateTree definition in both editor and runtime (baked) formats.</summary>

@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Implements a Linear timecode decoder.</summary>
@@ -10,7 +9,7 @@ public partial class ULinearTimecodeComponent : USceneComponent {
 	///<summary>DropTimecode</summary>
 	public FDropTimecode DropTimecode;
 	///<summary>Get the Frame Number</summary>
-	public  int GetDropFrameNumber() { return default; }
+	public int GetDropFrameNumber() { return default; }
 	///<summary>Convert a drop timecode into a frame number</summary>
 	public static void GetDropTimeCodeFrameNumber(FDropTimecode Timecode,int FrameNumber) {}
 	///<summary>Convert frame number into a drop timecode</summary>

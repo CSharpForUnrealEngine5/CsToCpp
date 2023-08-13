@@ -1,71 +1,70 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("LandscapeTexturePatch.h")]
 public partial class ULandscapeTexturePatch : ULandscapePatchComponent {
 	public static UClass StaticClass() {return default;}
 	///<summary>Gets the transform from patch to world. The transform is based off of the component</summary>
-	public  FTransform GetPatchToWorldTransform() { return default; }
+	public virtual FTransform GetPatchToWorldTransform() { return default; }
 	///<summary>Gives size in unscaled world coordinates (ie before applying patch transform) of the patch as measured</summary>
-	public  FVector2D GetUnscaledCoverage() { return default; }
+	public virtual FVector2D GetUnscaledCoverage() { return default; }
 	///<summary>Set the patch coverage (see GetUnscaledCoverage for description).</summary>
-	public  void SetUnscaledCoverage(FVector2D Coverage) {}
+	public virtual void SetUnscaledCoverage(FVector2D Coverage) {}
 	///<summary>Gives size in unscaled world coordinates of the patch in the world, based off of UnscaledCoverage and</summary>
-	public  FVector2D GetFullUnscaledWorldSize() { return default; }
+	public virtual FVector2D GetFullUnscaledWorldSize() { return default; }
 	///<summary>Gets the size (in pixels) of the internal textures used by the patch. Does not reflect the resolution</summary>
-	public  FVector2D GetResolution() { return default; }
+	public virtual FVector2D GetResolution() { return default; }
 	///<summary>Sets the resolution of the currently used internal texture or render target. Has no effect</summary>
-	public  void SetResolution(FVector2D ResolutionIn) {}
+	public virtual void SetResolution(FVector2D ResolutionIn) {}
 	///<summary>Given the landscape resolution, current patch coverage, and a landscape resolution multiplier, gives the</summary>
-	public  bool GetInitResolutionFromLandscape(float ResolutionMultiplier,FVector2D ResolutionOut) { return default; }
+	public virtual bool GetInitResolutionFromLandscape(float ResolutionMultiplier,FVector2D ResolutionOut) { return default; }
 	///<summary>SetFalloff</summary>
-	public  void SetFalloff(float FalloffIn) {}
+	public void SetFalloff(float FalloffIn) {}
 	///<summary>SetBlendMode</summary>
-	public  void SetBlendMode(ELandscapeTexturePatchBlendMode BlendModeIn) {}
+	public void SetBlendMode(ELandscapeTexturePatchBlendMode BlendModeIn) {}
 	///<summary>Height related functions:</summary>
-	public  ELandscapeTexturePatchSourceMode GetHeightSourceMode() { return default; }
+	public virtual ELandscapeTexturePatchSourceMode GetHeightSourceMode() { return default; }
 	///<summary>Changes source mode. When changing between sources, existing data is copied from one to the other</summary>
-	public  void SetHeightSourceMode(ELandscapeTexturePatchSourceMode NewMode) {}
+	public virtual void SetHeightSourceMode(ELandscapeTexturePatchSourceMode NewMode) {}
 	///<summary>Sets the texture used for height when the height source mode is set to texture asset. Note that</summary>
-	public  void SetHeightTextureAsset(UTexture TextureIn) {}
+	public void SetHeightTextureAsset(UTexture TextureIn) {}
 	///<summary>GetHeightRenderTarget</summary>
-	public  UTextureRenderTarget2D GetHeightRenderTarget() { return default; }
+	public virtual UTextureRenderTarget2D GetHeightRenderTarget() { return default; }
 	///<summary>SetHeightRenderTargetFormat</summary>
-	public  void SetHeightRenderTargetFormat(ETextureRenderTargetFormat Format) {}
+	public void SetHeightRenderTargetFormat(ETextureRenderTargetFormat Format) {}
 	///<summary>SetUseAlphaChannelForHeight</summary>
-	public  void SetUseAlphaChannelForHeight(bool bUse) {}
+	public void SetUseAlphaChannelForHeight(bool bUse) {}
 	///<summary>Set the height encoding mode for the patch, which determines how stored values in the patch</summary>
-	public  void SetHeightEncodingMode(ELandscapeTextureHeightPatchEncoding EncodingMode) {}
+	public void SetHeightEncodingMode(ELandscapeTextureHeightPatchEncoding EncodingMode) {}
 	///<summary>Just like SetSourceEncodingMode, but resets ZeroInEncoding and WorldSpaceEncodingScale to mode-specific defaults.</summary>
-	public  void ResetHeightEncodingMode(ELandscapeTextureHeightPatchEncoding EncodingMode) {}
+	public void ResetHeightEncodingMode(ELandscapeTextureHeightPatchEncoding EncodingMode) {}
 	///<summary>Set settings that determine how values in the patch are translated into heights. This is only</summary>
-	public  void SetHeightEncodingSettings(FLandscapeTexturePatchEncodingSettings Settings) {}
+	public void SetHeightEncodingSettings(FLandscapeTexturePatchEncodingSettings Settings) {}
 	///<summary>Set how zero height is interpreted, see comments in ELandscapeTextureHeightPatchZeroHeightMeaning.</summary>
-	public  void SetZeroHeightMeaning(ELandscapeTextureHeightPatchZeroHeightMeaning ZeroHeightMeaningIn) {}
+	public void SetZeroHeightMeaning(ELandscapeTextureHeightPatchZeroHeightMeaning ZeroHeightMeaningIn) {}
 	///<summary>By default, the layer is added with source mode set to be a texture-backed render target.</summary>
-	public  void AddWeightPatch(string InWeightmapLayerName,ELandscapeTexturePatchSourceMode SourceMode,bool bUseAlphaChannel) {}
+	public virtual void AddWeightPatch(string InWeightmapLayerName,ELandscapeTexturePatchSourceMode SourceMode,bool bUseAlphaChannel) {}
 	///<summary>RemoveWeightPatch</summary>
-	public  void RemoveWeightPatch(string InWeightmapLayerName) {}
+	public virtual void RemoveWeightPatch(string InWeightmapLayerName) {}
 	///<summary>RemoveAllWeightPatches</summary>
-	public  void RemoveAllWeightPatches() {}
+	public virtual void RemoveAllWeightPatches() {}
 	///<summary>Sets the soure mode of all weight patches to &quot;None&quot;.</summary>
-	public  void DisableAllWeightPatches() {}
+	public virtual void DisableAllWeightPatches() {}
 	///<summary>GetAllWeightPatchLayerNames</summary>
-	public  TArray<string> GetAllWeightPatchLayerNames() { return default; }
+	public TArray<string> GetAllWeightPatchLayerNames() { return default; }
 	///<summary>GetWeightPatchSourceMode</summary>
-	public  ELandscapeTexturePatchSourceMode GetWeightPatchSourceMode(string InWeightmapLayerName) { return default; }
+	public virtual ELandscapeTexturePatchSourceMode GetWeightPatchSourceMode(string InWeightmapLayerName) { return default; }
 	///<summary>SetWeightPatchSourceMode</summary>
-	public  void SetWeightPatchSourceMode(string InWeightmapLayerName,ELandscapeTexturePatchSourceMode NewMode) {}
+	public virtual void SetWeightPatchSourceMode(string InWeightmapLayerName,ELandscapeTexturePatchSourceMode NewMode) {}
 	///<summary>SetWeightPatchTextureAsset</summary>
-	public  void SetWeightPatchTextureAsset(string InWeightmapLayerName,UTexture TextureIn) {}
+	public void SetWeightPatchTextureAsset(string InWeightmapLayerName,UTexture TextureIn) {}
 	///<summary>GetWeightPatchRenderTarget</summary>
-	public  UTextureRenderTarget2D GetWeightPatchRenderTarget(string InWeightmapLayerName) { return default; }
+	public virtual UTextureRenderTarget2D GetWeightPatchRenderTarget(string InWeightmapLayerName) { return default; }
 	///<summary>SetUseAlphaChannelForWeightPatch</summary>
-	public  void SetUseAlphaChannelForWeightPatch(string InWeightmapLayerName,bool bUseAlphaChannel) {}
+	public virtual void SetUseAlphaChannelForWeightPatch(string InWeightmapLayerName,bool bUseAlphaChannel) {}
 	///<summary>SetWeightPatchBlendModeOverride</summary>
-	public  void SetWeightPatchBlendModeOverride(string InWeightmapLayerName,ELandscapeTexturePatchBlendMode BlendMode) {}
+	public virtual void SetWeightPatchBlendModeOverride(string InWeightmapLayerName,ELandscapeTexturePatchBlendMode BlendMode) {}
 	///<summary>ClearWeightPatchBlendModeOverride</summary>
-	public  void ClearWeightPatchBlendModeOverride(string InWeightmapLayerName) {}
+	public virtual void ClearWeightPatchBlendModeOverride(string InWeightmapLayerName) {}
 	///<summary>ResolutionX</summary>
 	public int ResolutionX;
 	///<summary>ResolutionY</summary>
@@ -101,11 +100,11 @@ public partial class ULandscapeTexturePatch : ULandscapePatchComponent {
 	///<summary>Used to detect changes to the number of weight patches via the detail panel, so that we can</summary>
 	public int NumWeightPatches;
 	///<summary>Given the current initialization settings, reinitialize the height patch.</summary>
-	public  void ReinitializeHeight() {}
+	public void ReinitializeHeight() {}
 	///<summary>ReinitializeWeights</summary>
-	public  void ReinitializeWeights() {}
+	public void ReinitializeWeights() {}
 	///<summary>Adjusts patch rotation to be aligned to a 90 degree increment relative to the landscape,</summary>
-	public  void SnapToLandscape() {}
+	public void SnapToLandscape() {}
 	///<summary>When initializing from landscape, set resolution based off of the landscape (and a multiplier).</summary>
 	public bool bBaseResolutionOffLandscape;
 	///<summary>Multiplier to apply to landscape resolution when initializing patch resolution. A value greater than 1.0 will use higher</summary>

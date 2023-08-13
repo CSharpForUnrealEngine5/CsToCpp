@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Base class for all widgets that use a text layout.</summary>
@@ -6,7 +5,7 @@ using CSharpToCpp.Utilities;
 public partial class UTextLayoutWidget : UWidget {
 	public static UClass StaticClass() {return default;}
 	///<summary>SetJustification</summary>
-	public  void SetJustification(ETextJustify InJustification) {}
+	public virtual void SetJustification(ETextJustify InJustification) {}
 	///<summary>Controls how the text within this widget should be shaped.</summary>
 	public FShapedTextOptions ShapedTextOptions;
 	///<summary>How the text should be aligned with the margin.</summary>

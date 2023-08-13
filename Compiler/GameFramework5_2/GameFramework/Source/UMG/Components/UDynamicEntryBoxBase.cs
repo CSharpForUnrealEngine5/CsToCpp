@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Base for widgets that support a dynamic number of auto-generated entries at both design- and run-time.</summary>
@@ -22,13 +21,13 @@ public partial class UDynamicEntryBoxBase : UWidget {
 	///<summary>Settings only relevant to RadialBox</summary>
 	public FRadialBoxSettings RadialBoxSettings;
 	///<summary>GetAllEntries</summary>
-	public  TArray<UUserWidget> GetAllEntries() { return default; }
+	public TArray<UUserWidget> GetAllEntries() { return default; }
 	///<summary>GetNumEntries</summary>
-	public  int GetNumEntries() { return default; }
+	public int GetNumEntries() { return default; }
 	///<summary>SetEntrySpacing</summary>
-	public  void SetEntrySpacing(FVector2D InEntrySpacing) {}
+	public void SetEntrySpacing(FVector2D InEntrySpacing) {}
 	///<summary>SetRadialSettings</summary>
-	public  void SetRadialSettings(FRadialBoxSettings InSettings) {}
+	public void SetRadialSettings(FRadialBoxSettings InSettings) {}
 	///<summary>EntryWidgetPool</summary>
 	public FUserWidgetPool EntryWidgetPool;
 }

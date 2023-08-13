@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Phonon Source Components can be placed alongside statically positioned Audio Components in order to bake impulse response data</summary>

@@ -1,13 +1,12 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("XRCreativeToolset.h")]
 public partial class UXRCreativeTool : UObject {
 	public static UClass StaticClass() {return default;}
 	///<summary>GetToolName</summary>
-	public  string GetToolName() { return default; }
+	public virtual string GetToolName() { return default; }
 	///<summary>GetDisplayName</summary>
-	public  string GetDisplayName() { return default; }
+	public virtual FText GetDisplayName() { return default; }
 	///<summary>GetPaletteTabClass</summary>
-	public  UClass GetPaletteTabClass() { return default; }
+	public virtual UClass GetPaletteTabClass() { return default; }
 }

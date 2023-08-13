@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Input action definition. These are instanced per player (via FInputActionInstance)</summary>
@@ -6,7 +5,7 @@ using CSharpToCpp.Utilities;
 public partial class UInputAction : UDataAsset {
 	public static UClass StaticClass() {return default;}
 	///<summary>A localized descriptor of this input action</summary>
-	public string ActionDescription;
+	public FText ActionDescription;
 	///<summary>Should this action swallow any inputs bound to it or allow them to pass through to affect lower priority bound actions?</summary>
 	public bool bConsumeInput;
 	///<summary>Should this action be able to trigger whilst the game is paused - Replaces bExecuteWhenPaused</summary>

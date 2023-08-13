@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("ARSharedWorldGameState.h")]
@@ -17,5 +16,5 @@ public partial class AARSharedWorldGameState : AGameState {
 	///<summary>The amount of the AR world data that has been replicated to this client so far</summary>
 	public int ARWorldBytesDelivered;
 	///<summary>K2_OnARWorldMapIsReady</summary>
-	public  void K2_OnARWorldMapIsReady() {}
+	public void K2_OnARWorldMapIsReady() {}
 }

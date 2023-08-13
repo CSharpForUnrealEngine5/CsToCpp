@@ -1,15 +1,14 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("UIFPlayerComponent.h")]
 public partial class UUIFrameworkPlayerComponent : UActorComponent {
 	public static UClass StaticClass() {return default;}
 	///<summary>AddWidget</summary>
-	public  void AddWidget(FUIFrameworkGameLayerSlot Widget) {}
+	public void AddWidget(FUIFrameworkGameLayerSlot Widget) {}
 	///<summary>RemoveWidget</summary>
-	public  void RemoveWidget(UUIFrameworkWidget Widget) {}
+	public void RemoveWidget(UUIFrameworkWidget Widget) {}
 	///<summary>ServerRemoveWidgetRootFromTree</summary>
-	public  void ServerRemoveWidgetRootFromTree(FUIFrameworkWidgetId WidgetId) {}
+	public void ServerRemoveWidgetRootFromTree(FUIFrameworkWidgetId WidgetId) {}
 	///<summary>RootList</summary>
 	public FUIFrameworkGameLayerSlotList RootList;
 	///<summary>WidgetTree</summary>

@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>SmartObject definition asset. Contains sharable information that can be used by multiple SmartObject instances at runtime.</summary>

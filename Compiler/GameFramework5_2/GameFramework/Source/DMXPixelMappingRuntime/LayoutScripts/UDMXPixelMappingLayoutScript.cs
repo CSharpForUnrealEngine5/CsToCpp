@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Allows scripting of Pixel Mapping Component Layouts.</summary>
@@ -6,7 +5,7 @@ using CSharpToCpp.Utilities;
 public partial class UDMXPixelMappingLayoutScript : UObject {
 	public static UClass StaticClass() {return default;}
 	///<summary>Lays out children of the selection according to OutTokens. Tokens that are not returned remain unchanged.</summary>
-	public  void Layout(TArray<FDMXPixelMappingLayoutToken> InTokens,TArray<FDMXPixelMappingLayoutToken> OutTokens) {}
+	public void Layout(TArray<FDMXPixelMappingLayoutToken> InTokens,TArray<FDMXPixelMappingLayoutToken> OutTokens) {}
 	///<summary>The number of tokens in the Layout.</summary>
 	public int NumTokens;
 	///<summary>The position of the parent component where the components that are being layouted reside in.</summary>

@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Simulated GameplayTask that starts a contextual anim scene on multiple actors</summary>
@@ -8,11 +7,11 @@ public partial class UGameplayTask_PlayContextualAnim : UGameplayTask {
 	///<summary>PlayContextualAnim</summary>
 	public static UGameplayTask_PlayContextualAnim PlayContextualAnim(AActor Interactor,string InteractorRole,AActor InteractableObject,string InteractableObjectRole,string SectionName,string ExitSectionName,UContextualAnimSceneAsset SceneAsset) { return default; }
 	///<summary>SetExit</summary>
-	public  void SetExit(EPlayContextualAnimExitMode ExitMode,string NewExitSectionName) {}
+	public void SetExit(EPlayContextualAnimExitMode ExitMode,string NewExitSectionName) {}
 	///<summary>GetStatus</summary>
-	public  EPlayContextualAnimStatus GetStatus() { return default; }
+	public EPlayContextualAnimStatus GetStatus() { return default; }
 	///<summary>OnSectionEndTimeReached</summary>
-	public  void OnSectionEndTimeReached(UContextualAnimSceneInstance SceneInstance) {}
+	public void OnSectionEndTimeReached(UContextualAnimSceneInstance SceneInstance) {}
 	///<summary>OnRequestFailed</summary>
 	public FGenericGameplayTaskDelegate OnRequestFailed;
 	///<summary>OnCompleted</summary>

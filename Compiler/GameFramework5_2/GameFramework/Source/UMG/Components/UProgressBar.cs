@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>The progress bar widget is a simple bar that fills up that can be restyled to fit any number of uses.</summary>
@@ -24,9 +23,9 @@ public partial class UProgressBar : UWidget {
 	///<summary>FillColorAndOpacityDelegate</summary>
 	public FGetLinearColor FillColorAndOpacityDelegate;
 	///<summary>Sets the current value of the ProgressBar.</summary>
-	public  void SetPercent(float InPercent) {}
+	public void SetPercent(float InPercent) {}
 	///<summary>Sets the progress bar to show as a marquee.</summary>
-	public  void SetIsMarquee(bool InbIsMarquee) {}
+	public void SetIsMarquee(bool InbIsMarquee) {}
 	///<summary>Sets the fill color of the progress bar.</summary>
-	public  void SetFillColorAndOpacity(FLinearColor InColor) {}
+	public void SetFillColorAndOpacity(FLinearColor InColor) {}
 }

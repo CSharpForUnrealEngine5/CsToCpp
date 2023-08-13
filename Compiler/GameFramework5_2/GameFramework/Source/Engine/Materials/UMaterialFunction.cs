@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>A Material Function is a collection of material expressions that can be reused in different materials</summary>
@@ -20,7 +19,7 @@ public partial class UMaterialFunction : UMaterialFunctionInterface {
 	///<summary>Categories that this function belongs to in the material function library.</summary>
 	public TArray<string> LibraryCategories_DEPRECATED;
 	///<summary>Categories that this function belongs to in the material function library.</summary>
-	public TArray<string> LibraryCategoriesText;
+	public TArray<FText> LibraryCategoriesText;
 	///<summary>PreviewMaterial</summary>
 	public UMaterial PreviewMaterial;
 	///<summary>DependentFunctionExpressionCandidates</summary>

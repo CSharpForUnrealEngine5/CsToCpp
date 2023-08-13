@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Legacy camera shake which can do either oscillation or run camera anims.</summary>
@@ -34,13 +33,13 @@ public partial class ULegacyCameraShake : UCameraShakeBase {
 	///<summary>Time remaining for oscillation shakes. Less than 0.f means shake infinitely.</summary>
 	public float OscillatorTimeRemaining;
 	///<summary>Called when the shake starts playing</summary>
-	public  void ReceivePlayShake(float Scale) {}
+	public void ReceivePlayShake(float Scale) {}
 	///<summary>Called every tick to let the shake modify the point of view</summary>
-	public  void BlueprintUpdateCameraShake(float DeltaTime,float Alpha,FMinimalViewInfo POV,FMinimalViewInfo ModifiedPOV) {}
+	public void BlueprintUpdateCameraShake(float DeltaTime,float Alpha,FMinimalViewInfo POV,FMinimalViewInfo ModifiedPOV) {}
 	///<summary>Called to allow a shake to decide when it&#39;s finished playing.</summary>
-	public  bool ReceiveIsFinished() { return default; }
+	public bool ReceiveIsFinished() { return default; }
 	///<summary>Called when the shake is explicitly stopped.</summary>
-	public  void ReceiveStopShake(bool bImmediately) {}
+	public void ReceiveStopShake(bool bImmediately) {}
 	///<summary>Backwards compatible method used by core BP redirectors. This is needed because the return value is specifically a legacy camera shake,</summary>
 	public static ULegacyCameraShake StartLegacyCameraShake(APlayerCameraManager PlayerCameraManager,UClass ShakeClass,float Scale/*=1.0f*/,ECameraShakePlaySpace PlaySpace/*=ECameraShakePlaySpace.CameraLocal*/,FRotator UserPlaySpaceRot/*=FRotator.ZeroRotator*/) { return default; }
 	///<summary>Backwards compatible method used by core BP redirectors. This is needed because the return value is specifically a legacy camera shake,</summary>

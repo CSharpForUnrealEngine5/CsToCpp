@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Engine/PlatformInterfaceWebResponse.h")]
@@ -15,9 +14,9 @@ public partial class UPlatformInterfaceWebResponse : UObject {
 	///<summary>For non-string results, this is the response</summary>
 	public TArray<byte> BinaryResponse;
 	///<summary>@return the number of header/value pairs</summary>
-	public  int GetNumHeaders() { return default; }
+	public virtual int GetNumHeaders() { return default; }
 	///<summary>Retrieve the header and value for the given index of header/value pair</summary>
-	public  void GetHeader(int HeaderIndex,string Header,string Value) {}
+	public virtual void GetHeader(int HeaderIndex,string Header,string Value) {}
 	///<summary>@return the value for the given header (or &quot;&quot; if no matching header)</summary>
-	public  string GetHeaderValue(string HeaderName) { return default; }
+	public virtual string GetHeaderValue(string HeaderName) { return default; }
 }

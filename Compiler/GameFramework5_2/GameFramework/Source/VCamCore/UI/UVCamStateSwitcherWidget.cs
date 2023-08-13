@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>A widget that has a set of states you can switch between using SetCurrentState.</summary>
@@ -6,15 +5,15 @@ using CSharpToCpp.Utilities;
 public partial class UVCamStateSwitcherWidget : UVCamWidget {
 	public static UClass StaticClass() {return default;}
 	///<summary>K2_SetCurrentState</summary>
-	public  void K2_SetCurrentState(string NewState) {}
+	public void K2_SetCurrentState(string NewState) {}
 	///<summary>Switches to given state - if the state transition is valid, UpdateConnectionTargets will be called.</summary>
-	public  bool SetCurrentState(string NewState,bool bForceUpdate/*=false*/,bool bReinitializeConnections/*=true*/) { return default; }
+	public bool SetCurrentState(string NewState,bool bForceUpdate/*=false*/,bool bReinitializeConnections/*=true*/) { return default; }
 	///<summary>GetCurrentState</summary>
-	public  string GetCurrentState() { return default; }
+	public string GetCurrentState() { return default; }
 	///<summary>GetStates</summary>
-	public  TArray<string> GetStates() { return default; }
+	public TArray<string> GetStates() { return default; }
 	///<summary>GetStateInfo</summary>
-	public  bool GetStateInfo(string State,FVCamWidgetConnectionState OutStateInfo) { return default; }
+	public bool GetStateInfo(string State,FVCamWidgetConnectionState OutStateInfo) { return default; }
 	///<summary>Executes when the state is about to be changed</summary>
 	public FChangeConnectionStateEvent OnPreStateChanged;
 	///<summary>Executes when after the state has been changed</summary>

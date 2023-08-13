@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("LiveLinkBlueprintLibrary.h")]
@@ -45,13 +44,13 @@ public partial class ULiveLinkBlueprintLibrary : UBlueprintFunctionLibrary {
 	///<summary>Requests the given LiveLink Source to shut down via its handle</summary>
 	public static bool RemoveSource(FLiveLinkSourceHandle SourceHandle) { return default; }
 	///<summary>Get the text status of a LiveLink Source via its handle</summary>
-	public static string GetSourceStatus(FLiveLinkSourceHandle SourceHandle) { return default; }
+	public static FText GetSourceStatus(FLiveLinkSourceHandle SourceHandle) { return default; }
 	///<summary>Get the type of a LiveLink Source via its handle</summary>
-	public static string GetSourceType(FLiveLinkSourceHandle SourceHandle) { return default; }
+	public static FText GetSourceType(FLiveLinkSourceHandle SourceHandle) { return default; }
 	///<summary>Get the machine name of a LiveLink Source via its handle</summary>
-	public static string GetSourceMachineName(FLiveLinkSourceHandle SourceHandle) { return default; }
+	public static FText GetSourceMachineName(FLiveLinkSourceHandle SourceHandle) { return default; }
 	///<summary>Get the type of a source from the given GUID</summary>
-	public static string GetSourceTypeFromGuid(FGuid SourceGuid) { return default; }
+	public static FText GetSourceTypeFromGuid(FGuid SourceGuid) { return default; }
 	///<summary>Get a list of all enabled subject names</summary>
 	public static TArray<FLiveLinkSubjectName> GetLiveLinkEnabledSubjectNames(bool bIncludeVirtualSubject) { return default; }
 	///<summary>Get a list of all subjects</summary>

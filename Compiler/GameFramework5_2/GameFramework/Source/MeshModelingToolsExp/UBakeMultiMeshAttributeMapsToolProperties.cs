@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("BakeMultiMeshAttributeMapsTool.h")]
@@ -17,7 +16,7 @@ public partial class UBakeMultiMeshAttributeMapsToolProperties : UInteractiveToo
 	///<summary>Mask texture for filtering out samples/pixels from the output texture</summary>
 	public UTexture2D SampleFilterMask;
 	///<summary>GetMapPreviewNamesFunc</summary>
-	public  TArray<string> GetMapPreviewNamesFunc() { return default; }
+	public TArray<string> GetMapPreviewNamesFunc() { return default; }
 	///<summary>MapPreviewNamesList</summary>
 	public TArray<string> MapPreviewNamesList;
 }

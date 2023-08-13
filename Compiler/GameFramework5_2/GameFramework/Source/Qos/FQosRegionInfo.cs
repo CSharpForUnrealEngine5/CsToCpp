@@ -1,10 +1,9 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Metadata about regions made up of datacenters</summary>
 [CppInclude("QosRegionManager.h")]
 public partial struct FQosRegionInfo {
-	public string DisplayName;
+	public FText DisplayName;
 	public string RegionId;
 	public bool bEnabled;
 	public bool bVisible;

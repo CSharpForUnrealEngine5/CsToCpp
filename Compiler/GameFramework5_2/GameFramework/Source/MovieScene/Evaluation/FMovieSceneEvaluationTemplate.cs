@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Template that is used for efficient runtime evaluation of a movie scene sequence. Potentially serialized into the asset.</summary>

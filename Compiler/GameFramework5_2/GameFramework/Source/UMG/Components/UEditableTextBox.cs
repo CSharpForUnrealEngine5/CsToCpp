@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Allows the user to type in custom text.  Only permits a single line of text to be entered.</summary>
@@ -6,17 +5,17 @@ using CSharpToCpp.Utilities;
 public partial class UEditableTextBox : UWidget {
 	public static UClass StaticClass() {return default;}
 	///<summary>FOnEditableTextBoxChangedEvent</summary>
-	public  void FOnEditableTextBoxChangedEvent(string Text) {}
+	public void FOnEditableTextBoxChangedEvent(FText Text) {}
 	///<summary>FOnEditableTextBoxCommittedEvent</summary>
-	public  void FOnEditableTextBoxCommittedEvent(string Text,ETextCommit CommitMethod) {}
+	public void FOnEditableTextBoxCommittedEvent(FText Text,ETextCommit CommitMethod) {}
 	///<summary>The text content for this editable text box widget</summary>
-	public string Text;
+	public FText Text;
 	///<summary>A bindable delegate to allow logic to drive the text of the widget</summary>
 	public FGetText TextDelegate;
 	///<summary>The style</summary>
 	public FEditableTextBoxStyle WidgetStyle;
 	///<summary>Hint text that appears when there is no text in the text box</summary>
-	public string HintText;
+	public FText HintText;
 	///<summary>A bindable delegate to allow logic to drive the hint text of the widget</summary>
 	public FGetText HintTextDelegate;
 	///<summary>Sets the Text Box as Readonly to prevent it from being modified interactively by the user</summary>
@@ -56,27 +55,27 @@ public partial class UEditableTextBox : UWidget {
 	///<summary>Called whenever the text is committed.  This happens when the user presses enter or the text box loses focus.</summary>
 	public FOnEditableTextBoxCommittedEvent OnTextCommitted;
 	///<summary>Gets the widget text</summary>
-	public  string GetText() { return default; }
+	public FText GetText() { return default; }
 	///<summary>Directly sets the widget text.</summary>
-	public  void SetText(string InText) {}
+	public void SetText(FText InText) {}
 	///<summary>Sets the Hint text that appears when there is no text in the text box</summary>
-	public  void SetHintText(string InText) {}
+	public void SetHintText(FText InText) {}
 	///<summary>SetError</summary>
-	public  void SetError(string InError) {}
+	public void SetError(FText InError) {}
 	///<summary>Sets the Text as Readonly to prevent it from being modified interactively by the user</summary>
-	public  void SetIsReadOnly(bool bReadOnly) {}
+	public void SetIsReadOnly(bool bReadOnly) {}
 	///<summary>SetIsPassword</summary>
-	public  void SetIsPassword(bool bIsPassword) {}
+	public void SetIsPassword(bool bIsPassword) {}
 	///<summary>ClearError</summary>
-	public  void ClearError() {}
+	public void ClearError() {}
 	///<summary>HasError</summary>
-	public  bool HasError() { return default; }
+	public bool HasError() { return default; }
 	///<summary>SetJustification</summary>
-	public  void SetJustification(ETextJustify InJustification) {}
+	public void SetJustification(ETextJustify InJustification) {}
 	///<summary>Set the text overflow policy for this text box.</summary>
-	public  void SetTextOverflowPolicy(ETextOverflowPolicy InOverflowPolicy) {}
+	public void SetTextOverflowPolicy(ETextOverflowPolicy InOverflowPolicy) {}
 	///<summary>SetForegroundColor</summary>
-	public  void SetForegroundColor(FLinearColor color) {}
+	public void SetForegroundColor(FLinearColor color) {}
 	///<summary>bIsFontDeprecationDone</summary>
 	public bool bIsFontDeprecationDone;
 }

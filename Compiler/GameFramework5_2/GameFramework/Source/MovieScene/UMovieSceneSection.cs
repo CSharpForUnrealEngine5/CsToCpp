@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Base class for movie scene sections</summary>
@@ -8,41 +7,41 @@ public partial class UMovieSceneSection : UMovieSceneSignedObject {
 	///<summary>EvalOptions</summary>
 	public FMovieSceneSectionEvalOptions EvalOptions;
 	///<summary>Gets this section&#39;s completion mode</summary>
-	public  EMovieSceneCompletionMode GetCompletionMode() { return default; }
+	public EMovieSceneCompletionMode GetCompletionMode() { return default; }
 	///<summary>* Sets this section&#39;s completion mode</summary>
-	public  void SetCompletionMode(EMovieSceneCompletionMode InCompletionMode) {}
+	public void SetCompletionMode(EMovieSceneCompletionMode InCompletionMode) {}
 	///<summary>Gets this section&#39;s blend type</summary>
-	public  FOptionalMovieSceneBlendType GetBlendType() { return default; }
+	public FOptionalMovieSceneBlendType GetBlendType() { return default; }
 	///<summary>Sets this section&#39;s blend type</summary>
-	public  void SetBlendType(EMovieSceneBlendType InBlendType) {}
+	public virtual void SetBlendType(EMovieSceneBlendType InBlendType) {}
 	///<summary>Sets this section&#39;s new row index</summary>
-	public  void SetRowIndex(int NewRowIndex) {}
+	public void SetRowIndex(int NewRowIndex) {}
 	///<summary>Gets the row index for this section</summary>
-	public  int GetRowIndex() { return default; }
+	public int GetRowIndex() { return default; }
 	///<summary>Sets this section&#39;s priority over overlapping sections (higher wins)</summary>
-	public  void SetOverlapPriority(int NewPriority) {}
+	public void SetOverlapPriority(int NewPriority) {}
 	///<summary>Gets this section&#39;s priority over overlapping sections (higher wins)</summary>
-	public  int GetOverlapPriority() { return default; }
+	public int GetOverlapPriority() { return default; }
 	///<summary>Whether or not this section is active.</summary>
-	public  void SetIsActive(bool bInIsActive) {}
+	public void SetIsActive(bool bInIsActive) {}
 	///<summary>IsActive</summary>
-	public  bool IsActive() { return default; }
+	public bool IsActive() { return default; }
 	///<summary>Whether or not this section is locked.</summary>
-	public  void SetIsLocked(bool bInIsLocked) {}
+	public void SetIsLocked(bool bInIsLocked) {}
 	///<summary>IsLocked</summary>
-	public  bool IsLocked() { return default; }
+	public bool IsLocked() { return default; }
 	///<summary>Gets the number of frames to prepare this section for evaluation before it actually starts.</summary>
-	public  void SetPreRollFrames(int InPreRollFrames) {}
+	public void SetPreRollFrames(int InPreRollFrames) {}
 	///<summary>GetPreRollFrames</summary>
-	public  int GetPreRollFrames() { return default; }
+	public int GetPreRollFrames() { return default; }
 	///<summary>Gets/sets the number of frames to continue &#39;postrolling&#39; this section for after evaluation has ended.</summary>
-	public  void SetPostRollFrames(int InPostRollFrames) {}
+	public void SetPostRollFrames(int InPostRollFrames) {}
 	///<summary>GetPostRollFrames</summary>
-	public  int GetPostRollFrames() { return default; }
+	public int GetPostRollFrames() { return default; }
 	///<summary>Set this section&#39;s color tint.</summary>
-	public  void SetColorTint(FColor InColorTint) {}
+	public void SetColorTint(FColor InColorTint) {}
 	///<summary>Get this section&#39;s color tint.</summary>
-	public  FColor GetColorTint() { return default; }
+	public FColor GetColorTint() { return default; }
 	///<summary>Easing</summary>
 	public FMovieSceneEasingSettings Easing;
 	///<summary>The range in which this section is active</summary>

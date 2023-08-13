@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>A function library with wrappers around the getter/setter functions for FSubobjectData</summary>
@@ -14,7 +13,7 @@ public partial class USubobjectDataBlueprintFunctionLibrary : UBlueprintFunction
 	///<summary>@return Get the handle for this subobject data</summary>
 	public static void GetHandle(FSubobjectData Data,FSubobjectDataHandle OutHandle) {}
 	///<summary>GetDisplayName</summary>
-	public  string GetDisplayName(FSubobjectData Data) { return default; }
+	public FText GetDisplayName(FSubobjectData Data) { return default; }
 	///<summary>GetVariableName</summary>
 	public static string GetVariableName(FSubobjectData Data) { return default; }
 	///<summary>IsAttachedTo</summary>
@@ -36,7 +35,7 @@ public partial class USubobjectDataBlueprintFunctionLibrary : UBlueprintFunction
 	///<summary>GetObjectForBlueprint</summary>
 	public static UObject GetObjectForBlueprint(FSubobjectData Data,UBlueprint Blueprint) { return default; }
 	///<summary>GetBlueprint</summary>
-	public  UBlueprint GetBlueprint(FSubobjectData Data) { return default; }
+	public UBlueprint GetBlueprint(FSubobjectData Data) { return default; }
 	///<summary>IsInstancedComponent</summary>
 	public static bool IsInstancedComponent(FSubobjectData Data) { return default; }
 	///<summary>IsInstancedActor</summary>

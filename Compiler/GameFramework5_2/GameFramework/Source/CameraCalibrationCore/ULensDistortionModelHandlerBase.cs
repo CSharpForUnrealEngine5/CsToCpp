@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Asset user data that can be used on Camera Actors to manage lens distortion state and utilities</summary>
@@ -6,13 +5,13 @@ using CSharpToCpp.Utilities;
 public partial class ULensDistortionModelHandlerBase : UObject {
 	public static UClass StaticClass() {return default;}
 	///<summary>Returns true if the input model is supported by this model handler, false otherwise.</summary>
-	public  bool IsModelSupported(UClass ModelToSupport) { return default; }
+	public bool IsModelSupported(UClass ModelToSupport) { return default; }
 	///<summary>Update the lens distortion state, recompute the overscan factor, and set all material parameters</summary>
-	public  void SetDistortionState(FLensDistortionState InNewState) {}
+	public void SetDistortionState(FLensDistortionState InNewState) {}
 	///<summary>Get the UV displacement map used to undistort a distorted image</summary>
-	public  UTextureRenderTarget2D GetUndistortionDisplacementMap() { return default; }
+	public UTextureRenderTarget2D GetUndistortionDisplacementMap() { return default; }
 	///<summary>Get the UV displacement map used to distort an undistorted image</summary>
-	public  UTextureRenderTarget2D GetDistortionDisplacementMap() { return default; }
+	public UTextureRenderTarget2D GetDistortionDisplacementMap() { return default; }
 	///<summary>Lens Model describing how to interpret the distortion parameters</summary>
 	public UClass LensModelClass;
 	///<summary>Dynamically created post-process material instance for the currently specified lens model</summary>

@@ -1,15 +1,14 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("NiagaraClipboard.h")]
 public partial class UNiagaraClipboardFunction : UObject {
 	public static UClass StaticClass() {return default;}
 	///<summary>FOnPastedFunctionCallNode</summary>
-	public  void FOnPastedFunctionCallNode(UNiagaraNodeFunctionCall PastedFunctionCall) {}
+	public void FOnPastedFunctionCallNode(UNiagaraNodeFunctionCall PastedFunctionCall) {}
 	///<summary>FunctionName</summary>
 	public string FunctionName;
 	///<summary>DisplayName</summary>
-	public string DisplayName;
+	public FText DisplayName;
 	///<summary>ScriptMode</summary>
 	public ENiagaraClipboardFunctionScriptMode ScriptMode;
 	///<summary>Script</summary>

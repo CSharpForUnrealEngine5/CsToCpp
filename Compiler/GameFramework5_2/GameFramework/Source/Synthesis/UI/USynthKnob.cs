@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>A simple widget that shows a sliding bar with a handle that allows you to control the value between 0..1.</summary>
@@ -16,9 +15,9 @@ public partial class USynthKnob : UWidget {
 	///<summary>Enable tool tip window to show parameter information while knob turns</summary>
 	public bool ShowTooltipInfo;
 	///<summary>The name of the pararameter. Will show when knob turns.</summary>
-	public string ParameterName;
+	public FText ParameterName;
 	///<summary>The parameter units (e.g. hz). Will append to synth tooltip info.</summary>
-	public string ParameterUnits;
+	public FText ParameterUnits;
 	///<summary>A bindable delegate to allow logic to drive the value of the widget</summary>
 	public FGetFloat ValueDelegate;
 	///<summary>The synth knob style</summary>
@@ -38,11 +37,11 @@ public partial class USynthKnob : UWidget {
 	///<summary>Called when the value is changed by slider or typing.</summary>
 	public FOnFloatValueChangedEvent OnValueChanged;
 	///<summary>Gets the current value of the slider.</summary>
-	public  float GetValue() { return default; }
+	public float GetValue() { return default; }
 	///<summary>Sets the current value of the slider.</summary>
-	public  void SetValue(float InValue) {}
+	public void SetValue(float InValue) {}
 	///<summary>Sets the handle to be interactive or fixed</summary>
-	public  void SetLocked(bool InValue) {}
+	public void SetLocked(bool InValue) {}
 	///<summary>Sets the amount to adjust the value by, when using a controller or keyboard</summary>
-	public  void SetStepSize(float InValue) {}
+	public void SetStepSize(float InValue) {}
 }

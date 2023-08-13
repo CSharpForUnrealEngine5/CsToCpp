@@ -1,47 +1,46 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("WaterBodyComponent.h")]
 public partial class UWaterBodyComponent : UPrimitiveComponent {
 	public static UClass StaticClass() {return default;}
 	///<summary>Returns body&#39;s collision components</summary>
-	public  TArray<UPrimitiveComponent> GetCollisionComponents(bool bInOnlyEnabledComponents/*=true*/) { return default; }
+	public virtual TArray<UPrimitiveComponent> GetCollisionComponents(bool bInOnlyEnabledComponents/*=true*/) { return default; }
 	///<summary>Retrieves the list of primitive components that this water body uses when not being rendered by the water mesh (e.g. the static mesh component used when WaterMeshOverride is specified)</summary>
-	public  TArray<UPrimitiveComponent> GetStandardRenderableComponents() { return default; }
+	public virtual TArray<UPrimitiveComponent> GetStandardRenderableComponents() { return default; }
 	///<summary>Returns River to lake transition material instance (For internal use. Please use AWaterBodyRiver instead.)</summary>
-	public  UMaterialInstanceDynamic GetRiverToLakeTransitionMaterialInstance() { return default; }
+	public virtual UMaterialInstanceDynamic GetRiverToLakeTransitionMaterialInstance() { return default; }
 	///<summary>Returns River to ocean transition material instance (For internal use. Please use AWaterBodyRiver instead.)</summary>
-	public  UMaterialInstanceDynamic GetRiverToOceanTransitionMaterialInstance() { return default; }
+	public virtual UMaterialInstanceDynamic GetRiverToOceanTransitionMaterialInstance() { return default; }
 	///<summary>Returns the WaterBodyActor who owns this component</summary>
-	public  AWaterBody GetWaterBodyActor() { return default; }
+	public AWaterBody GetWaterBodyActor() { return default; }
 	///<summary>Returns water spline component</summary>
-	public  UWaterSplineComponent GetWaterSpline() { return default; }
+	public UWaterSplineComponent GetWaterSpline() { return default; }
 	///<summary>GetWaterWaves</summary>
-	public  UWaterWavesBase GetWaterWaves() { return default; }
+	public UWaterWavesBase GetWaterWaves() { return default; }
 	///<summary>Returns water material</summary>
-	public  UMaterialInterface GetWaterMaterial() { return default; }
+	public UMaterialInterface GetWaterMaterial() { return default; }
 	///<summary>Returns water MID</summary>
-	public  UMaterialInstanceDynamic GetWaterMaterialInstance() { return default; }
+	public UMaterialInstanceDynamic GetWaterMaterialInstance() { return default; }
 	///<summary>Returns water LOD MID</summary>
-	public  UMaterialInstanceDynamic GetWaterLODMaterialInstance() { return default; }
+	public UMaterialInstanceDynamic GetWaterLODMaterialInstance() { return default; }
 	///<summary>Returns under water post process MID</summary>
-	public  UMaterialInstanceDynamic GetUnderwaterPostProcessMaterialInstance() { return default; }
+	public UMaterialInstanceDynamic GetUnderwaterPostProcessMaterialInstance() { return default; }
 	///<summary>Returns water info MID</summary>
-	public  UMaterialInstanceDynamic GetWaterInfoMaterialInstance() { return default; }
+	public UMaterialInstanceDynamic GetWaterInfoMaterialInstance() { return default; }
 	///<summary>SetWaterAndUnderWaterPostProcessMaterial</summary>
-	public  void SetWaterAndUnderWaterPostProcessMaterial(UMaterialInterface InWaterMaterial,UMaterialInterface InUnderWaterPostProcessMaterial) {}
+	public void SetWaterAndUnderWaterPostProcessMaterial(UMaterialInterface InWaterMaterial,UMaterialInterface InUnderWaterPostProcessMaterial) {}
 	///<summary>GetWaterSurfaceInfoAtLocation</summary>
-	public  void GetWaterSurfaceInfoAtLocation(FVector InLocation,FVector OutWaterSurfaceLocation,FVector OutWaterSurfaceNormal,FVector OutWaterVelocity,float OutWaterDepth,bool bIncludeDepth/*=false*/) {}
+	public void GetWaterSurfaceInfoAtLocation(FVector InLocation,FVector OutWaterSurfaceLocation,FVector OutWaterSurfaceNormal,FVector OutWaterVelocity,float OutWaterDepth,bool bIncludeDepth/*=false*/) {}
 	///<summary>* Spline queries specific to metadata type</summary>
-	public  float GetWaterVelocityAtSplineInputKey(float InKey) { return default; }
+	public virtual float GetWaterVelocityAtSplineInputKey(float InKey) { return default; }
 	///<summary>Gets the islands that influence this water body</summary>
-	public  TArray<AWaterBodyIsland> GetIslands() { return default; }
+	public TArray<AWaterBodyIsland> GetIslands() { return default; }
 	///<summary>Gets the exclusion volume that influence this water body</summary>
-	public  TArray<AWaterBodyExclusionVolume> GetExclusionVolumes() { return default; }
+	public TArray<AWaterBodyExclusionVolume> GetExclusionVolumes() { return default; }
 	///<summary>OnWaterBodyChanged</summary>
-	public  void OnWaterBodyChanged(bool bShapeOrPositionChanged,bool bWeightmapSettingsChanged/*=false*/) {}
+	public void OnWaterBodyChanged(bool bShapeOrPositionChanged,bool bWeightmapSettingsChanged/*=false*/) {}
 	///<summary>Returns the max height that this water body&#39;s waves can hit. Can be called regardless of whether the water body supports waves or not</summary>
-	public  float GetMaxWaveHeight() { return default; }
+	public float GetMaxWaveHeight() { return default; }
 	///<summary>PhysicalMaterial</summary>
 	public UPhysicalMaterial PhysicalMaterial;
 	///<summary>Water depth at which waves start being attenuated.</summary>

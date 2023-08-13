@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("BoneControllers/AnimNode_SkeletalControlBase.h")]
@@ -13,5 +12,5 @@ public partial struct FAnimNode_SkeletalControlBase {
 	public FInputAlphaBoolBlend AlphaBoolBlend;
 	public string AlphaCurveName;
 	public FInputScaleBiasClamp AlphaScaleBiasClamp;
-	public string ValidationVisualWarningMessage;
+	public FText ValidationVisualWarningMessage;
 }

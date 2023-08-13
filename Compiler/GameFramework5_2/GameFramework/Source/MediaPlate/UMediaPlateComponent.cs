@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>This is a component for AMediaPlate that can play and show media in the world.</summary>
@@ -6,27 +5,27 @@ using CSharpToCpp.Utilities;
 public partial class UMediaPlateComponent : UActorComponent {
 	public static UClass StaticClass() {return default;}
 	///<summary>Call this get our media player.</summary>
-	public  UMediaPlayer GetMediaPlayer() { return default; }
+	public UMediaPlayer GetMediaPlayer() { return default; }
 	///<summary>Call this get our media texture.</summary>
-	public  UMediaTexture GetMediaTexture(int Index/*=0*/) { return default; }
+	public UMediaTexture GetMediaTexture(int Index/*=0*/) { return default; }
 	///<summary>Call this to open the media.</summary>
-	public  void Open() {}
+	public void Open() {}
 	///<summary>Call this to start playing.</summary>
-	public  void Play() {}
+	public void Play() {}
 	///<summary>Call this to pause playback.</summary>
-	public  void Pause() {}
+	public void Pause() {}
 	///<summary>Rewinds the media to the beginning.</summary>
-	public  bool Rewind() { return default; }
+	public bool Rewind() { return default; }
 	///<summary>Call this to seek to the specified playback time.</summary>
-	public  bool Seek(FTimespan Time) { return default; }
+	public bool Seek(FTimespan Time) { return default; }
 	///<summary>Call this to close the media.</summary>
-	public  void Close() {}
+	public void Close() {}
 	///<summary>Call this to see if the media plate is playing.</summary>
-	public  bool IsMediaPlatePlaying() { return default; }
+	public bool IsMediaPlatePlaying() { return default; }
 	///<summary>Call this to see if we want to loop.</summary>
-	public  bool GetLoop() { return default; }
+	public bool GetLoop() { return default; }
 	///<summary>Call this enable/disable looping.</summary>
-	public  void SetLoop(bool bInLoop) {}
+	public void SetLoop(bool bInLoop) {}
 	///<summary>If set then play when opening the media.</summary>
 	public bool bPlayOnOpen;
 	///<summary>If set then start playing when this object is active.</summary>
@@ -48,19 +47,19 @@ public partial class UMediaPlateComponent : UActorComponent {
 	///<summary>Override the default cache settings.</summary>
 	public FMediaSourceCacheSettings CacheSettings;
 	///<summary>Set the arc size in degrees used for visible mips and tiles calculations, specific to the sphere.</summary>
-	public  void SetMeshRange(FVector2D InMeshRange) {}
+	public void SetMeshRange(FVector2D InMeshRange) {}
 	///<summary>Return the arc size in degrees used for visible mips and tiles calculations, specific to the sphere.</summary>
-	public  FVector2D GetMeshRange() { return default; }
+	public FVector2D GetMeshRange() { return default; }
 	///<summary>Call this to set bPlayOnlyWhenVisible.</summary>
-	public  void SetPlayOnlyWhenVisible(bool bInPlayOnlyWhenVisible) {}
+	public void SetPlayOnlyWhenVisible(bool bInPlayOnlyWhenVisible) {}
 	///<summary>Gets whether automatic aspect ratio is enabled.</summary>
-	public  bool GetIsAspectRatioAuto() { return default; }
+	public bool GetIsAspectRatioAuto() { return default; }
 	///<summary>Sets whether automatic aspect ratio is enabled.</summary>
-	public  void SetIsAspectRatioAuto(bool bInIsAspectRatioAuto) {}
+	public void SetIsAspectRatioAuto(bool bInIsAspectRatioAuto) {}
 	///<summary>Call this to get the aspect ratio of the screen.</summary>
-	public  float GetLetterboxAspectRatio() { return default; }
+	public float GetLetterboxAspectRatio() { return default; }
 	///<summary>Call this to set the aspect ratio of the screen.</summary>
-	public  void SetLetterboxAspectRatio(float AspectRatio) {}
+	public void SetLetterboxAspectRatio(float AspectRatio) {}
 	///<summary>If true, then we want the media plate to play.</summary>
 	public bool bIsMediaPlatePlaying;
 	///<summary>If true then only allow playback when the media plate is visible.</summary>
@@ -88,7 +87,7 @@ public partial class UMediaPlateComponent : UActorComponent {
 	///<summary>This component&#39;s media player</summary>
 	public UMediaPlayer MediaPlayer;
 	///<summary>Called by the media player when the media opens.</summary>
-	public  void OnMediaOpened(string DeviceUrl) {}
+	public void OnMediaOpened(string DeviceUrl) {}
 	///<summary>Called by the media player when the video ends.</summary>
-	public  void OnMediaEnd() {}
+	public void OnMediaEnd() {}
 }

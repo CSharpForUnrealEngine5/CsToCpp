@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>A Spline Mesh Component is a derivation of a Static Mesh Component which can be deformed using a spline. Only a start and end position (and tangent) can be specified.</summary>
@@ -32,63 +31,63 @@ public partial class USplineMeshComponent : UStaticMeshComponent {
 	///<summary>TODO Chaos this is to opt out of CreatePhysicsMeshes for certain meshes</summary>
 	public bool bNeverNeedsCookedCollisionData;
 	///<summary>Update the collision and render state on the spline mesh following changes to its geometry</summary>
-	public  void UpdateMesh() {}
+	public void UpdateMesh() {}
 	///<summary>Get the start position of spline in local space</summary>
-	public  FVector GetStartPosition() { return default; }
+	public FVector GetStartPosition() { return default; }
 	///<summary>Set the start position of spline in local space</summary>
-	public  void SetStartPosition(FVector StartPos,bool bUpdateMesh/*=true*/) {}
+	public void SetStartPosition(FVector StartPos,bool bUpdateMesh/*=true*/) {}
 	///<summary>Get the start tangent vector of spline in local space</summary>
-	public  FVector GetStartTangent() { return default; }
+	public FVector GetStartTangent() { return default; }
 	///<summary>Set the start tangent vector of spline in local space</summary>
-	public  void SetStartTangent(FVector StartTangent,bool bUpdateMesh/*=true*/) {}
+	public void SetStartTangent(FVector StartTangent,bool bUpdateMesh/*=true*/) {}
 	///<summary>Get the end position of spline in local space</summary>
-	public  FVector GetEndPosition() { return default; }
+	public FVector GetEndPosition() { return default; }
 	///<summary>Set the end position of spline in local space</summary>
-	public  void SetEndPosition(FVector EndPos,bool bUpdateMesh/*=true*/) {}
+	public void SetEndPosition(FVector EndPos,bool bUpdateMesh/*=true*/) {}
 	///<summary>Get the end tangent vector of spline in local space</summary>
-	public  FVector GetEndTangent() { return default; }
+	public FVector GetEndTangent() { return default; }
 	///<summary>Set the end tangent vector of spline in local space</summary>
-	public  void SetEndTangent(FVector EndTangent,bool bUpdateMesh/*=true*/) {}
+	public void SetEndTangent(FVector EndTangent,bool bUpdateMesh/*=true*/) {}
 	///<summary>Set the start and end, position and tangent, all in local space</summary>
-	public  void SetStartAndEnd(FVector StartPos,FVector StartTangent,FVector EndPos,FVector EndTangent,bool bUpdateMesh/*=true*/) {}
+	public void SetStartAndEnd(FVector StartPos,FVector StartTangent,FVector EndPos,FVector EndTangent,bool bUpdateMesh/*=true*/) {}
 	///<summary>Get the start scaling</summary>
-	public  FVector2D GetStartScale() { return default; }
+	public FVector2D GetStartScale() { return default; }
 	///<summary>Set the start scaling</summary>
-	public  void SetStartScale(FVector2D StartScale/*=new FVector2D(1,1)*/,bool bUpdateMesh/*=true*/) {}
+	public void SetStartScale(FVector2D StartScale/*=new FVector2D(1,1)*/,bool bUpdateMesh/*=true*/) {}
 	///<summary>Get the start roll</summary>
-	public  float GetStartRoll() { return default; }
+	public float GetStartRoll() { return default; }
 	///<summary>Set the start roll</summary>
-	public  void SetStartRoll(float StartRoll,bool bUpdateMesh/*=true*/) {}
+	public void SetStartRoll(float StartRoll,bool bUpdateMesh/*=true*/) {}
 	///<summary>Get the start offset</summary>
-	public  FVector2D GetStartOffset() { return default; }
+	public FVector2D GetStartOffset() { return default; }
 	///<summary>Set the start offset</summary>
-	public  void SetStartOffset(FVector2D StartOffset,bool bUpdateMesh/*=true*/) {}
+	public void SetStartOffset(FVector2D StartOffset,bool bUpdateMesh/*=true*/) {}
 	///<summary>Get the end scaling</summary>
-	public  FVector2D GetEndScale() { return default; }
+	public FVector2D GetEndScale() { return default; }
 	///<summary>Set the end scaling</summary>
-	public  void SetEndScale(FVector2D EndScale/*=new FVector2D(1,1)*/,bool bUpdateMesh/*=true*/) {}
+	public void SetEndScale(FVector2D EndScale/*=new FVector2D(1,1)*/,bool bUpdateMesh/*=true*/) {}
 	///<summary>Get the end roll</summary>
-	public  float GetEndRoll() { return default; }
+	public float GetEndRoll() { return default; }
 	///<summary>Set the end roll</summary>
-	public  void SetEndRoll(float EndRoll,bool bUpdateMesh/*=true*/) {}
+	public void SetEndRoll(float EndRoll,bool bUpdateMesh/*=true*/) {}
 	///<summary>Get the end offset</summary>
-	public  FVector2D GetEndOffset() { return default; }
+	public FVector2D GetEndOffset() { return default; }
 	///<summary>Set the end offset</summary>
-	public  void SetEndOffset(FVector2D EndOffset,bool bUpdateMesh/*=true*/) {}
+	public void SetEndOffset(FVector2D EndOffset,bool bUpdateMesh/*=true*/) {}
 	///<summary>Get the forward axis</summary>
-	public  ESplineMeshAxis GetForwardAxis() { return default; }
+	public ESplineMeshAxis GetForwardAxis() { return default; }
 	///<summary>Set the forward axis</summary>
-	public  void SetForwardAxis(ESplineMeshAxis InForwardAxis,bool bUpdateMesh/*=true*/) {}
+	public void SetForwardAxis(ESplineMeshAxis InForwardAxis,bool bUpdateMesh/*=true*/) {}
 	///<summary>Get the spline up direction</summary>
-	public  FVector GetSplineUpDir() { return default; }
+	public FVector GetSplineUpDir() { return default; }
 	///<summary>Set the spline up direction</summary>
-	public  void SetSplineUpDir(FVector InSplineUpDir,bool bUpdateMesh/*=true*/) {}
+	public void SetSplineUpDir(FVector InSplineUpDir,bool bUpdateMesh/*=true*/) {}
 	///<summary>Get the boundary min</summary>
-	public  float GetBoundaryMin() { return default; }
+	public float GetBoundaryMin() { return default; }
 	///<summary>Set the boundary min</summary>
-	public  void SetBoundaryMin(float InBoundaryMin,bool bUpdateMesh/*=true*/) {}
+	public void SetBoundaryMin(float InBoundaryMin,bool bUpdateMesh/*=true*/) {}
 	///<summary>Get the boundary max</summary>
-	public  float GetBoundaryMax() { return default; }
+	public float GetBoundaryMax() { return default; }
 	///<summary>Set the boundary max</summary>
-	public  void SetBoundaryMax(float InBoundaryMax,bool bUpdateMesh/*=true*/) {}
+	public void SetBoundaryMax(float InBoundaryMax,bool bUpdateMesh/*=true*/) {}
 }

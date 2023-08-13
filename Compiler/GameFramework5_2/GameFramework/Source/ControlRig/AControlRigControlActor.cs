@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("ControlRigControlActor.h")]
@@ -19,11 +18,11 @@ public partial class AControlRigControlActor : AActor {
 	///<summary>bCastShadows</summary>
 	public bool bCastShadows;
 	///<summary>ResetControlActor</summary>
-	public  void ResetControlActor() {}
+	public void ResetControlActor() {}
 	///<summary>Clear</summary>
-	public  void Clear() {}
+	public void Clear() {}
 	///<summary>Refresh</summary>
-	public  void Refresh() {}
+	public void Refresh() {}
 	///<summary>ActorRootComponent</summary>
 	public USceneComponent ActorRootComponent;
 	///<summary>ControlRig</summary>

@@ -1,11 +1,10 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("VRNotificationsComponent.h")]
 public partial class UVRNotificationsComponent : UActorComponent {
 	public static UClass StaticClass() {return default;}
 	///<summary>FVRNotificationsDelegate</summary>
-	public  void FVRNotificationsDelegate() {}
+	public void FVRNotificationsDelegate() {}
 	///<summary>This will be called on Morpheus if the HMD starts up and is not fully initialized (in NOT_STARTED or CALIBRATING states).</summary>
 	public FVRNotificationsDelegate HMDTrackingInitializingAndNeedsHMDToBeTrackedDelegate;
 	///<summary>This will be called on Morpheus when the HMD is done initializing and therefore</summary>

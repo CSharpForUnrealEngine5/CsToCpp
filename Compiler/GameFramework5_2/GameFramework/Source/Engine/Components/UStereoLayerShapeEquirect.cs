@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Components/StereoLayerComponent.h")]
@@ -17,5 +16,5 @@ public partial class UStereoLayerShapeEquirect : UStereoLayerShape {
 	///<summary>Right eye&#39;s texture coordinate bias after mapping to 2D.</summary>
 	public FVector2D RightBias;
 	///<summary>Set Equirect layer properties: UVRect, Scale, and Bias</summary>
-	public  void SetEquirectProps(FEquirectProps InScaleBiases) {}
+	public void SetEquirectProps(FEquirectProps InScaleBiases) {}
 }

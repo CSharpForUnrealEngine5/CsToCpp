@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Derive from this class to store the Input data. It is referenced in the Common Input Settings, found in the project settings UI.</summary>
@@ -12,11 +11,11 @@ public partial class UCommonInputBaseControllerData : UObject {
 	///<summary>GamepadName</summary>
 	public string GamepadName;
 	///<summary>GamepadDisplayName</summary>
-	public string GamepadDisplayName;
+	public FText GamepadDisplayName;
 	///<summary>GamepadCategory</summary>
-	public string GamepadCategory;
+	public FText GamepadCategory;
 	///<summary>GamepadPlatformName</summary>
-	public string GamepadPlatformName;
+	public FText GamepadPlatformName;
 	///<summary>GamepadHardwareIdMapping</summary>
 	public TArray<FInputDeviceIdentifierPair> GamepadHardwareIdMapping;
 	///<summary>ControllerTexture</summary>

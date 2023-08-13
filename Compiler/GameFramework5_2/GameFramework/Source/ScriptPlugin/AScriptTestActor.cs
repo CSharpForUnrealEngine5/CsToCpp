@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Test Actor. To be removed at some point.</summary>
@@ -12,5 +11,5 @@ public partial class AScriptTestActor : AActor {
 	///<summary>TestBool</summary>
 	public bool TestBool;
 	///<summary>TestFunction</summary>
-	public  float TestFunction(float InValue,float InFactor,bool bMultiply) { return default; }
+	public float TestFunction(float InValue,float InFactor,bool bMultiply) { return default; }
 }

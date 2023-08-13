@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Default animation settings.</summary>
@@ -28,7 +27,7 @@ public partial class UAnimationSettings : UDeveloperSettings {
 	///<summary>List of animation attribute names to import directly on their corresponding bone names. The meaning field allows to contextualize the attribute name and customize tooling for it.</summary>
 	public TArray<FCustomAttributeSetting> BoneCustomAttributesNames;
 	///<summary>Gets the complete list of bone animation attribute names to consider for import.</summary>
-	public  TArray<string> GetBoneCustomAttributeNamesToImport() { return default; }
+	public TArray<string> GetBoneCustomAttributeNamesToImport() { return default; }
 	///<summary>List of bone names for which all animation attributes are directly imported on the bone.</summary>
 	public TArray<string> BoneNamesWithCustomAttributes;
 	///<summary>Animation Attribute specific blend types (by name)</summary>

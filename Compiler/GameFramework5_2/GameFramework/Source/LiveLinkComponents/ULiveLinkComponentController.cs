@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("LiveLinkComponentController.h")]
@@ -25,7 +24,7 @@ public partial class ULiveLinkComponentController : UActorComponent {
 	///<summary>If true, will tick when the world is a preview (i.e Blueprint editors)</summary>
 	public bool bUpdateInPreviewEditor;
 	///<summary>Return Representation of Subject that is used in the controller</summary>
-	public  FLiveLinkSubjectRepresentation GetSubjectRepresentation() { return default; }
+	public FLiveLinkSubjectRepresentation GetSubjectRepresentation() { return default; }
 	///<summary>Set Representation of Subject that is used in the controller and update the controller map</summary>
-	public  void SetSubjectRepresentation(FLiveLinkSubjectRepresentation InSubjectRepresentation) {}
+	public void SetSubjectRepresentation(FLiveLinkSubjectRepresentation InSubjectRepresentation) {}
 }

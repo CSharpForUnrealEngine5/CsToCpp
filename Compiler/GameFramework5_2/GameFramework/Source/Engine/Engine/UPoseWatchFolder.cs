@@ -1,11 +1,10 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Engine/PoseWatch.h")]
 public partial class UPoseWatchFolder : UObject {
 	public static UClass StaticClass() {return default;}
 	///<summary>Label</summary>
-	public string Label;
+	public FText Label;
 	///<summary>Parent</summary>
 	public TWeakObjectPtr<UPoseWatchFolder> Parent;
 	///<summary>bIsVisible</summary>

@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>This asset type is used for Metasound assets that can only be used as nodes in other Metasound graphs.</summary>

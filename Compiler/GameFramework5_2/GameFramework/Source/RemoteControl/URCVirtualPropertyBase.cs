@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Base class for dynamic virtual properties</summary>
@@ -6,81 +5,81 @@ using CSharpToCpp.Utilities;
 public partial class URCVirtualPropertyBase : UObject {
 	public static UClass StaticClass() {return default;}
 	///<summary>Get Bool value from Virtual Property</summary>
-	public  bool GetValueBool(bool OutBoolValue) { return default; }
+	public bool GetValueBool(bool OutBoolValue) { return default; }
 	///<summary>Get Int8 value from Virtual Property</summary>
-	public  bool GetValueInt8(short OutInt8) { return default; }
+	public bool GetValueInt8(short OutInt8) { return default; }
 	///<summary>Get Byte value from Virtual Property</summary>
-	public  bool GetValueByte(byte OutByte) { return default; }
+	public bool GetValueByte(byte OutByte) { return default; }
 	///<summary>Get Int16 value from Virtual Property</summary>
-	public  bool GetValueInt16(short OutInt16) { return default; }
+	public bool GetValueInt16(short OutInt16) { return default; }
 	///<summary>Get Uint16 value from Virtual Property</summary>
-	public  bool GetValueUint16(ushort OutUInt16) { return default; }
+	public bool GetValueUint16(ushort OutUInt16) { return default; }
 	///<summary>Get Int32 value from Virtual Property</summary>
-	public  bool GetValueInt32(int OutInt32) { return default; }
+	public bool GetValueInt32(int OutInt32) { return default; }
 	///<summary>Get Uint32 value from Virtual Property</summary>
-	public  bool GetValueUInt32(uint OutUInt32) { return default; }
+	public bool GetValueUInt32(uint OutUInt32) { return default; }
 	///<summary>Get Int64 value from Virtual Property</summary>
-	public  bool GetValueInt64(long OuyInt64) { return default; }
+	public bool GetValueInt64(long OuyInt64) { return default; }
 	///<summary>Get Uint64 value from Virtual Property</summary>
-	public  bool GetValueUint64(ulong OuyUInt64) { return default; }
+	public bool GetValueUint64(ulong OuyUInt64) { return default; }
 	///<summary>Get Float value from Virtual Property</summary>
-	public  bool GetValueFloat(float OutFloat) { return default; }
+	public bool GetValueFloat(float OutFloat) { return default; }
 	///<summary>Get Double value from Virtual Property</summary>
-	public  bool GetValueDouble(double OutDouble) { return default; }
+	public bool GetValueDouble(double OutDouble) { return default; }
 	///<summary>Get String value from Virtual Property</summary>
-	public  bool GetValueString(string OutStringValue) { return default; }
+	public bool GetValueString(string OutStringValue) { return default; }
 	///<summary>Get Name value from Virtual Property</summary>
-	public  bool GetValueName(string OutNameValue) { return default; }
+	public bool GetValueName(string OutNameValue) { return default; }
 	///<summary>Get Text value from Virtual Property</summary>
-	public  bool GetValueText(string OutTextValue) { return default; }
+	public bool GetValueText(FText OutTextValue) { return default; }
 	///<summary>Get Numeric value from Virtual Property</summary>
-	public  bool GetValueNumericInteger(long OutInt64Value) { return default; }
+	public bool GetValueNumericInteger(long OutInt64Value) { return default; }
 	///<summary>Get Vector value from Virtual Property</summary>
-	public  bool GetValueVector(FVector OutVector) { return default; }
+	public bool GetValueVector(FVector OutVector) { return default; }
 	///<summary>Get Rotator value from Virtual Property</summary>
-	public  bool GetValueRotator(FRotator OutRotator) { return default; }
+	public bool GetValueRotator(FRotator OutRotator) { return default; }
 	///<summary>Get Color value from Virtual Property</summary>
-	public  bool GetValueColor(FColor OutColor) { return default; }
+	public bool GetValueColor(FColor OutColor) { return default; }
 	///<summary>Infers correct type internally, fetches value from memory and returns the value as a string</summary>
-	public  string GetDisplayValueAsString() { return default; }
+	public string GetDisplayValueAsString() { return default; }
 	///<summary>Set Bool value from Virtual Property</summary>
-	public  bool SetValueBool(bool InBoolValue) { return default; }
+	public bool SetValueBool(bool InBoolValue) { return default; }
 	///<summary>Set Int8 value from Virtual Property</summary>
-	public  bool SetValueInt8(short InInt8) { return default; }
+	public bool SetValueInt8(short InInt8) { return default; }
 	///<summary>Set Byte value from Virtual Property</summary>
-	public  bool SetValueByte(byte InByte) { return default; }
+	public bool SetValueByte(byte InByte) { return default; }
 	///<summary>Set Int16 value from Virtual Property</summary>
-	public  bool SetValueInt16(short InInt16) { return default; }
+	public bool SetValueInt16(short InInt16) { return default; }
 	///<summary>Set Uint16 value from Virtual Property</summary>
-	public  bool SetValueUint16(ushort InUInt16) { return default; }
+	public bool SetValueUint16(ushort InUInt16) { return default; }
 	///<summary>Set Int32 value from Virtual Property</summary>
-	public  bool SetValueInt32(int InInt32) { return default; }
+	public bool SetValueInt32(int InInt32) { return default; }
 	///<summary>Set Uint32 value from Virtual Property</summary>
-	public  bool SetValueUInt32(uint InUInt32) { return default; }
+	public bool SetValueUInt32(uint InUInt32) { return default; }
 	///<summary>Set Int64 value from Virtual Property</summary>
-	public  bool SetValueInt64(long InInt64) { return default; }
+	public bool SetValueInt64(long InInt64) { return default; }
 	///<summary>Set Uint64 value from Virtual Property</summary>
-	public  bool SetValueUint64(ulong InUInt64) { return default; }
+	public bool SetValueUint64(ulong InUInt64) { return default; }
 	///<summary>Set Float value from Virtual Property</summary>
-	public  bool SetValueFloat(float InFloat) { return default; }
+	public bool SetValueFloat(float InFloat) { return default; }
 	///<summary>Set Double value from Virtual Property</summary>
-	public  bool SetValueDouble(double InDouble) { return default; }
+	public bool SetValueDouble(double InDouble) { return default; }
 	///<summary>Set String value from Virtual Property</summary>
-	public  bool SetValueString(string InStringValue) { return default; }
+	public bool SetValueString(string InStringValue) { return default; }
 	///<summary>Set Name value from Virtual Property</summary>
-	public  bool SetValueName(string InNameValue) { return default; }
+	public bool SetValueName(string InNameValue) { return default; }
 	///<summary>Set Text value from Virtual Property</summary>
-	public  bool SetValueText(string InTextValue) { return default; }
+	public bool SetValueText(FText InTextValue) { return default; }
 	///<summary>Set Numeric value from Virtual Property</summary>
-	public  bool SetValueNumericInteger(long InInt64Value) { return default; }
+	public bool SetValueNumericInteger(long InInt64Value) { return default; }
 	///<summary>Set Vector value from Virtual Property</summary>
-	public  bool SetValueVector(FVector InVector) { return default; }
+	public bool SetValueVector(FVector InVector) { return default; }
 	///<summary>Set Rotator value from Virtual Property</summary>
-	public  bool SetValueRotator(FRotator InRotator) { return default; }
+	public bool SetValueRotator(FRotator InRotator) { return default; }
 	///<summary>Set Color value from Virtual Property</summary>
-	public  bool SetValueColor(FColor InColor) { return default; }
+	public bool SetValueColor(FColor InColor) { return default; }
 	///<summary>Get FProperty Name</summary>
-	public  string GetPropertyName() { return default; }
+	public string GetPropertyName() { return default; }
 	///<summary>Unique property name</summary>
 	public string PropertyName;
 	///<summary>Property Id</summary>

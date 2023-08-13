@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Allows widgets to be stacked on top of each other, uses simple flow layout for content on each layer.</summary>
@@ -6,7 +5,7 @@ using CSharpToCpp.Utilities;
 public partial class UOverlay : UPanelWidget {
 	public static UClass StaticClass() {return default;}
 	///<summary>AddChildToOverlay</summary>
-	public  UOverlaySlot AddChildToOverlay(UWidget Content) { return default; }
+	public UOverlaySlot AddChildToOverlay(UWidget Content) { return default; }
 	///<summary>Replace the widget at the given index it with a different widget.</summary>
-	public  bool ReplaceOverlayChildAt(int Index,UWidget Content) { return default; }
+	public bool ReplaceOverlayChildAt(int Index,UWidget Content) { return default; }
 }

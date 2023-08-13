@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>TargetActors are spawned to assist with ability targeting. They are spawned by ability tasks and create/determine the outgoing targeting data passed from one task to another</summary>
@@ -10,9 +9,9 @@ public partial class AGameplayAbilityTargetActor : AActor {
 	///<summary>Describes where the targeting action starts, usually the player character or a socket on the player character. //UPROPERTY(BlueprintReadOnly, meta=(ExposeOnSpawn=true), Category=Targeting)</summary>
 	public FGameplayAbilityTargetingLocationInfo StartLocation;
 	///<summary>Outside code is saying &#39;stop and just give me what you have.&#39; Returns true if the ability accepts this and can be forgotten.</summary>
-	public  void ConfirmTargeting() {}
+	public virtual void ConfirmTargeting() {}
 	///<summary>Outside code is saying &#39;stop everything and just forget about it&#39;</summary>
-	public  void CancelTargeting() {}
+	public virtual void CancelTargeting() {}
 	///<summary>PrimaryPC</summary>
 	public APlayerController PrimaryPC;
 	///<summary>OwningAbility</summary>

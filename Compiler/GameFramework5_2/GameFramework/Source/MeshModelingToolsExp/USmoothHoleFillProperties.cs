@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>* Properties. This class reflects the parameters in FSmoothFillOptions, but is decorated to allow use in the UI system.</summary>

@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Used to create fogging effects such as clouds but with a density that is related to the height of the fog.</summary>
@@ -62,51 +61,51 @@ public partial class UExponentialHeightFogComponent : USceneComponent {
 	///<summary>Whether to use FogInscatteringColor for the Sky Light volumetric scattering color and DirectionalInscatteringColor for the Directional Light scattering color.</summary>
 	public bool bOverrideLightColorsWithFogInscatteringColors;
 	///<summary>SetFogDensity</summary>
-	public  void SetFogDensity(float Value) {}
+	public void SetFogDensity(float Value) {}
 	///<summary>SetSecondFogDensity</summary>
-	public  void SetSecondFogDensity(float Value) {}
+	public void SetSecondFogDensity(float Value) {}
 	///<summary>SetFogInscatteringColor</summary>
-	public  void SetFogInscatteringColor(FLinearColor Value) {}
+	public void SetFogInscatteringColor(FLinearColor Value) {}
 	///<summary>SetInscatteringColorCubemap</summary>
-	public  void SetInscatteringColorCubemap(UTextureCube Value) {}
+	public void SetInscatteringColorCubemap(UTextureCube Value) {}
 	///<summary>SetInscatteringColorCubemapAngle</summary>
-	public  void SetInscatteringColorCubemapAngle(float Value) {}
+	public void SetInscatteringColorCubemapAngle(float Value) {}
 	///<summary>SetFullyDirectionalInscatteringColorDistance</summary>
-	public  void SetFullyDirectionalInscatteringColorDistance(float Value) {}
+	public void SetFullyDirectionalInscatteringColorDistance(float Value) {}
 	///<summary>SetNonDirectionalInscatteringColorDistance</summary>
-	public  void SetNonDirectionalInscatteringColorDistance(float Value) {}
+	public void SetNonDirectionalInscatteringColorDistance(float Value) {}
 	///<summary>SetInscatteringTextureTint</summary>
-	public  void SetInscatteringTextureTint(FLinearColor Value) {}
+	public void SetInscatteringTextureTint(FLinearColor Value) {}
 	///<summary>SetDirectionalInscatteringExponent</summary>
-	public  void SetDirectionalInscatteringExponent(float Value) {}
+	public void SetDirectionalInscatteringExponent(float Value) {}
 	///<summary>SetDirectionalInscatteringStartDistance</summary>
-	public  void SetDirectionalInscatteringStartDistance(float Value) {}
+	public void SetDirectionalInscatteringStartDistance(float Value) {}
 	///<summary>SetDirectionalInscatteringColor</summary>
-	public  void SetDirectionalInscatteringColor(FLinearColor Value) {}
+	public void SetDirectionalInscatteringColor(FLinearColor Value) {}
 	///<summary>SetSecondFogHeightOffset</summary>
-	public  void SetSecondFogHeightOffset(float Value) {}
+	public void SetSecondFogHeightOffset(float Value) {}
 	///<summary>SetFogHeightFalloff</summary>
-	public  void SetFogHeightFalloff(float Value) {}
+	public void SetFogHeightFalloff(float Value) {}
 	///<summary>SetSecondFogHeightFalloff</summary>
-	public  void SetSecondFogHeightFalloff(float Value) {}
+	public void SetSecondFogHeightFalloff(float Value) {}
 	///<summary>SetFogMaxOpacity</summary>
-	public  void SetFogMaxOpacity(float Value) {}
+	public void SetFogMaxOpacity(float Value) {}
 	///<summary>SetStartDistance</summary>
-	public  void SetStartDistance(float Value) {}
+	public void SetStartDistance(float Value) {}
 	///<summary>SetFogCutoffDistance</summary>
-	public  void SetFogCutoffDistance(float Value) {}
+	public void SetFogCutoffDistance(float Value) {}
 	///<summary>SetVolumetricFog</summary>
-	public  void SetVolumetricFog(bool bNewValue) {}
+	public void SetVolumetricFog(bool bNewValue) {}
 	///<summary>SetVolumetricFogScatteringDistribution</summary>
-	public  void SetVolumetricFogScatteringDistribution(float NewValue) {}
+	public void SetVolumetricFogScatteringDistribution(float NewValue) {}
 	///<summary>SetVolumetricFogExtinctionScale</summary>
-	public  void SetVolumetricFogExtinctionScale(float NewValue) {}
+	public void SetVolumetricFogExtinctionScale(float NewValue) {}
 	///<summary>SetVolumetricFogAlbedo</summary>
-	public  void SetVolumetricFogAlbedo(FColor NewValue) {}
+	public void SetVolumetricFogAlbedo(FColor NewValue) {}
 	///<summary>SetVolumetricFogEmissive</summary>
-	public  void SetVolumetricFogEmissive(FLinearColor NewValue) {}
+	public void SetVolumetricFogEmissive(FLinearColor NewValue) {}
 	///<summary>SetVolumetricFogDistance</summary>
-	public  void SetVolumetricFogDistance(float NewValue) {}
+	public void SetVolumetricFogDistance(float NewValue) {}
 	///<summary>SetSecondFogData</summary>
-	public  void SetSecondFogData(FExponentialHeightFogData NewValue) {}
+	public void SetSecondFogData(FExponentialHeightFogData NewValue) {}
 }

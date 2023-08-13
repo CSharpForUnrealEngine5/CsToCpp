@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>-&gt; will be exported to EngineDecalClasses.h</summary>
@@ -36,23 +35,23 @@ public partial class USceneCaptureComponent : USceneComponent {
 	///<summary>Name of the profiling event.</summary>
 	public string ProfilingEventName;
 	///<summary>Adds the component to our list of hidden components.</summary>
-	public  void HideComponent(UPrimitiveComponent InComponent) {}
+	public void HideComponent(UPrimitiveComponent InComponent) {}
 	///<summary>Adds all primitive components in the actor to our list of hidden components.</summary>
-	public  void HideActorComponents(AActor InActor,bool bIncludeFromChildActors/*=false*/) {}
+	public void HideActorComponents(AActor InActor,bool bIncludeFromChildActors/*=false*/) {}
 	///<summary>Adds the component to our list of show-only components.</summary>
-	public  void ShowOnlyComponent(UPrimitiveComponent InComponent) {}
+	public void ShowOnlyComponent(UPrimitiveComponent InComponent) {}
 	///<summary>Adds all primitive components in the actor to our list of show-only components.</summary>
-	public  void ShowOnlyActorComponents(AActor InActor,bool bIncludeFromChildActors/*=false*/) {}
+	public void ShowOnlyActorComponents(AActor InActor,bool bIncludeFromChildActors/*=false*/) {}
 	///<summary>Removes a component from the Show Only list.</summary>
-	public  void RemoveShowOnlyComponent(UPrimitiveComponent InComponent) {}
+	public void RemoveShowOnlyComponent(UPrimitiveComponent InComponent) {}
 	///<summary>Removes an actor&#39;s components from the Show Only list.</summary>
-	public  void RemoveShowOnlyActorComponents(AActor InActor,bool bIncludeFromChildActors/*=false*/) {}
+	public void RemoveShowOnlyActorComponents(AActor InActor,bool bIncludeFromChildActors/*=false*/) {}
 	///<summary>Clears the Show Only list.</summary>
-	public  void ClearShowOnlyComponents() {}
+	public void ClearShowOnlyComponents() {}
 	///<summary>Clears the hidden list.</summary>
-	public  void ClearHiddenComponents() {}
+	public void ClearHiddenComponents() {}
 	///<summary>Changes the value of TranslucentSortPriority.</summary>
-	public  void SetCaptureSortPriority(int NewCaptureSortPriority) {}
+	public void SetCaptureSortPriority(int NewCaptureSortPriority) {}
 	///<summary>The mesh used by ProxyMeshComponent</summary>
 	public UStaticMesh CaptureMesh;
 }

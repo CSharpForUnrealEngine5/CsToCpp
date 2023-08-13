@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Editable text box widget</summary>
@@ -6,13 +5,13 @@ using CSharpToCpp.Utilities;
 public partial class UMultiLineEditableText : UTextLayoutWidget {
 	public static UClass StaticClass() {return default;}
 	///<summary>FOnMultiLineEditableTextChangedEvent</summary>
-	public  void FOnMultiLineEditableTextChangedEvent(string Text) {}
+	public void FOnMultiLineEditableTextChangedEvent(FText Text) {}
 	///<summary>FOnMultiLineEditableTextCommittedEvent</summary>
-	public  void FOnMultiLineEditableTextCommittedEvent(string Text,ETextCommit CommitMethod) {}
+	public void FOnMultiLineEditableTextCommittedEvent(FText Text,ETextCommit CommitMethod) {}
 	///<summary>The text content for this editable text box widget</summary>
-	public string Text;
+	public FText Text;
 	///<summary>Hint text that appears when there is no text in the text box</summary>
-	public string HintText;
+	public FText HintText;
 	///<summary>A bindable delegate to allow logic to drive the hint text of the widget</summary>
 	public FGetText HintTextDelegate;
 	///<summary>The style</summary>
@@ -38,23 +37,23 @@ public partial class UMultiLineEditableText : UTextLayoutWidget {
 	///<summary>Called whenever the text is committed.  This happens when the user presses enter or the text box loses focus.</summary>
 	public FOnMultiLineEditableTextCommittedEvent OnTextCommitted;
 	///<summary>Gets the widget text</summary>
-	public  string GetText() { return default; }
+	public FText GetText() { return default; }
 	///<summary>Directly sets the widget text.</summary>
-	public  void SetText(string InText) {}
+	public void SetText(FText InText) {}
 	///<summary>Returns the Hint text that appears when there is no text in the text box</summary>
-	public  string GetHintText() { return default; }
+	public FText GetHintText() { return default; }
 	///<summary>Sets the Hint text that appears when there is no text in the text box</summary>
-	public  void SetHintText(string InHintText) {}
+	public void SetHintText(FText InHintText) {}
 	///<summary>Sets the Text as Readonly to prevent it from being modified interactively by the user</summary>
-	public  void SetIsReadOnly(bool bReadOnly) {}
+	public void SetIsReadOnly(bool bReadOnly) {}
 	///<summary>SetWidgetStyle</summary>
-	public  void SetWidgetStyle(FTextBlockStyle InWidgetStyle) {}
+	public void SetWidgetStyle(FTextBlockStyle InWidgetStyle) {}
 	///<summary>GetFont</summary>
-	public  FSlateFontInfo GetFont() { return default; }
+	public FSlateFontInfo GetFont() { return default; }
 	///<summary>SetFont</summary>
-	public  void SetFont(FSlateFontInfo InFontInfo) {}
+	public void SetFont(FSlateFontInfo InFontInfo) {}
 	///<summary>SetFontMaterial</summary>
-	public  void SetFontMaterial(UMaterialInterface InMaterial) {}
+	public void SetFontMaterial(UMaterialInterface InMaterial) {}
 	///<summary>SetFontOutlineMaterial</summary>
-	public  void SetFontOutlineMaterial(UMaterialInterface InMaterial) {}
+	public void SetFontOutlineMaterial(UMaterialInterface InMaterial) {}
 }

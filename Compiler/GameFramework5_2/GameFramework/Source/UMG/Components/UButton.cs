@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>The button is a click-able primitive widget to enable basic interaction, you</summary>
@@ -30,17 +29,17 @@ public partial class UButton : UContentWidget {
 	///<summary>OnUnhovered</summary>
 	public FOnButtonHoverEvent OnUnhovered;
 	///<summary>Sets the color multiplier for the button background</summary>
-	public  void SetStyle(FButtonStyle InStyle) {}
+	public void SetStyle(FButtonStyle InStyle) {}
 	///<summary>Sets the color multiplier for the button content</summary>
-	public  void SetColorAndOpacity(FLinearColor InColorAndOpacity) {}
+	public void SetColorAndOpacity(FLinearColor InColorAndOpacity) {}
 	///<summary>Sets the color multiplier for the button background</summary>
-	public  void SetBackgroundColor(FLinearColor InBackgroundColor) {}
+	public void SetBackgroundColor(FLinearColor InBackgroundColor) {}
 	///<summary>Returns true if the user is actively pressing the button.  Do not use this for detecting &#39;Clicks&#39;, use the OnClicked event instead.</summary>
-	public  bool IsPressed() { return default; }
+	public bool IsPressed() { return default; }
 	///<summary>SetClickMethod</summary>
-	public  void SetClickMethod(EButtonClickMethod InClickMethod) {}
+	public void SetClickMethod(EButtonClickMethod InClickMethod) {}
 	///<summary>SetTouchMethod</summary>
-	public  void SetTouchMethod(EButtonTouchMethod InTouchMethod) {}
+	public void SetTouchMethod(EButtonTouchMethod InTouchMethod) {}
 	///<summary>SetPressMethod</summary>
-	public  void SetPressMethod(EButtonPressMethod InPressMethod) {}
+	public void SetPressMethod(EButtonPressMethod InPressMethod) {}
 }

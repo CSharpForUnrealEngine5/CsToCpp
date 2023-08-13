@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Implements a texture asset for rendering video tracks from UBinkMediaPlayer assets.</summary>
@@ -10,9 +9,9 @@ public partial class UBinkMediaTexture : UTexture {
 	///<summary>The addressing mode to use for the Y axis.</summary>
 	public TextureAddress AddressY;
 	///<summary>Sets the media player asset to be used for this texture.</summary>
-	public  void SetMediaPlayer(UBinkMediaPlayer InMediaPlayer) {}
+	public void SetMediaPlayer(UBinkMediaPlayer InMediaPlayer) {}
 	///<summary>Clears this texture to transparent-black.</summary>
-	public  void Clear() {}
+	public void Clear() {}
 	///<summary>The MediaPlayer asset to stream video from.</summary>
 	public UBinkMediaPlayer MediaPlayer;
 	///<summary>The Pixel Format for the texture.</summary>

@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>AVPRootActor</summary>
@@ -18,9 +17,9 @@ public partial class AVPRootActor : AActor {
 	///<summary>bMoveLevelWithActor</summary>
 	public bool bMoveLevelWithActor;
 	///<summary>Get the current camera used by the virtual production.</summary>
-	public  ACineCameraActor GetCineCameraActor() { return default; }
+	public ACineCameraActor GetCineCameraActor() { return default; }
 	///<summary>ToggleComponentsVisibility</summary>
-	public  void ToggleComponentsVisibility() {}
+	public void ToggleComponentsVisibility() {}
 	///<summary>MoveLevelToRootActor</summary>
-	public  void MoveLevelToRootActor() {}
+	public void MoveLevelToRootActor() {}
 }

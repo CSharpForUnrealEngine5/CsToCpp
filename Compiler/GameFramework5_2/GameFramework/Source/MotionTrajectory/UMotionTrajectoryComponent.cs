@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Abstract component interface for the minimum Motion Trajectory prediction and history API</summary>
@@ -6,11 +5,11 @@ using CSharpToCpp.Utilities;
 public partial class UMotionTrajectoryComponent : UActorComponent {
 	public static UClass StaticClass() {return default;}
 	///<summary>Interface for computing a trajectory prediction</summary>
-	public  FTrajectorySampleRange GetTrajectory() { return default; }
+	public virtual FTrajectorySampleRange GetTrajectory() { return default; }
 	///<summary>Interface for computing a trajectory prediction with overridden component settings</summary>
-	public  FTrajectorySampleRange GetTrajectoryWithSettings(FMotionTrajectorySettings Settings,bool bIncludeHistory) { return default; }
+	public virtual FTrajectorySampleRange GetTrajectoryWithSettings(FMotionTrajectorySettings Settings,bool bIncludeHistory) { return default; }
 	///<summary>Retrieves the historical trajectory</summary>
-	public  FTrajectorySampleRange GetHistory() { return default; }
+	public FTrajectorySampleRange GetHistory() { return default; }
 	///<summary>Prediction trajectory simulation settings</summary>
 	public FMotionTrajectorySettings PredictionSettings;
 	///<summary>Historical trajectory settings</summary>

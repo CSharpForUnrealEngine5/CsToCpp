@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>CharacterMovementComponent handles movement logic for the associated Character owner.</summary>
@@ -168,11 +167,11 @@ public partial class UCharacterMovementComponent : UPawnMovementComponent {
 	///<summary>Modifier to applied to values such as acceleration and max speed due to analog input.</summary>
 	public float AnalogInputModifier;
 	///<summary>Returns the location at the end of the last tick.</summary>
-	public  FVector GetLastUpdateLocation() { return default; }
+	public FVector GetLastUpdateLocation() { return default; }
 	///<summary>Returns the rotation at the end of the last tick.</summary>
-	public  FRotator GetLastUpdateRotation() { return default; }
+	public FRotator GetLastUpdateRotation() { return default; }
 	///<summary>Returns the velocity at the end of the last tick.</summary>
-	public  FVector GetLastUpdateVelocity() { return default; }
+	public FVector GetLastUpdateVelocity() { return default; }
 	///<summary>Max time delta for each discrete simulation step.</summary>
 	public float MaxSimulationTimeStep;
 	///<summary>Max number of iterations used for each discrete simulation step.</summary>
@@ -290,27 +289,27 @@ public partial class UCharacterMovementComponent : UPawnMovementComponent {
 	///<summary>Velocity requested by path following during last Update</summary>
 	public FVector LastUpdateRequestedVelocity;
 	///<summary>Returns velocity requested by path following</summary>
-	public  FVector GetLastUpdateRequestedVelocity() { return default; }
+	public FVector GetLastUpdateRequestedVelocity() { return default; }
 	///<summary>No default value, for now it&#39;s assumed to be valid if GetAvoidanceManager() returns non-NULL.</summary>
 	public int AvoidanceUID;
 	///<summary>Moving actor&#39;s group mask</summary>
 	public FNavAvoidanceMask AvoidanceGroup;
 	///<summary>SetAvoidanceGroup</summary>
-	public  void SetAvoidanceGroup(int GroupFlags) {}
+	public void SetAvoidanceGroup(int GroupFlags) {}
 	///<summary>SetAvoidanceGroupMask</summary>
-	public  void SetAvoidanceGroupMask(FNavAvoidanceMask GroupMask) {}
+	public void SetAvoidanceGroupMask(FNavAvoidanceMask GroupMask) {}
 	///<summary>Will avoid other agents if they are in one of specified groups</summary>
 	public FNavAvoidanceMask GroupsToAvoid;
 	///<summary>SetGroupsToAvoid</summary>
-	public  void SetGroupsToAvoid(int GroupFlags) {}
+	public void SetGroupsToAvoid(int GroupFlags) {}
 	///<summary>SetGroupsToAvoidMask</summary>
-	public  void SetGroupsToAvoidMask(FNavAvoidanceMask GroupMask) {}
+	public void SetGroupsToAvoidMask(FNavAvoidanceMask GroupMask) {}
 	///<summary>Will NOT avoid other agents if they are in one of specified groups, higher priority than GroupsToAvoid</summary>
 	public FNavAvoidanceMask GroupsToIgnore;
 	///<summary>SetGroupsToIgnore</summary>
-	public  void SetGroupsToIgnore(int GroupFlags) {}
+	public void SetGroupsToIgnore(int GroupFlags) {}
 	///<summary>SetGroupsToIgnoreMask</summary>
-	public  void SetGroupsToIgnoreMask(FNavAvoidanceMask GroupMask) {}
+	public void SetGroupsToIgnoreMask(FNavAvoidanceMask GroupMask) {}
 	///<summary>De facto default value 0.5 (due to that being the default in the avoidance registration function), indicates RVO behavior.</summary>
 	public float AvoidanceWeight;
 	///<summary>Temporarily holds launch velocity when pawn is to be launched so it happens at end of movement.</summary>
@@ -328,67 +327,67 @@ public partial class UCharacterMovementComponent : UPawnMovementComponent {
 	///<summary>Ignore small differences in ground height between server and client data during NavWalking mode</summary>
 	public float NavWalkingFloorDistTolerance;
 	///<summary>Change avoidance state and registers in RVO manager if needed</summary>
-	public  void SetAvoidanceEnabled(bool bEnable) {}
+	public void SetAvoidanceEnabled(bool bEnable) {}
 	///<summary>Get the Character that owns UpdatedComponent.</summary>
-	public  ACharacter GetCharacterOwner() { return default; }
+	public ACharacter GetCharacterOwner() { return default; }
 	///<summary>Change movement mode.</summary>
-	public  void SetMovementMode(EMovementMode NewMovementMode,byte NewCustomMode/*=0*/) {}
+	public virtual void SetMovementMode(EMovementMode NewMovementMode,byte NewCustomMode/*=0*/) {}
 	///<summary>Returns true if the character is in the &#39;Walking&#39; movement mode.</summary>
-	public  bool IsWalking() { return default; }
+	public bool IsWalking() { return default; }
 	///<summary>Make movement impossible (sets movement mode to MOVE_None).</summary>
-	public  void DisableMovement() {}
+	public virtual void DisableMovement() {}
 	///<summary>Return PrimitiveComponent we are based on (standing and walking on).</summary>
-	public  UPrimitiveComponent GetMovementBase() { return default; }
+	public UPrimitiveComponent GetMovementBase() { return default; }
 	///<summary>If we have a movement base, get the velocity that should be imparted by that base, usually when jumping off of it.</summary>
-	public  FVector GetImpartedMovementBaseVelocity() { return default; }
+	public virtual FVector GetImpartedMovementBaseVelocity() { return default; }
 	///<summary>Updates Velocity and Acceleration based on the current state, applying the effects of friction and acceleration or deceleration. Does not apply gravity.</summary>
-	public  void CalcVelocity(float DeltaTime,float Friction,bool bFluid,float BrakingDeceleration) {}
+	public virtual void CalcVelocity(float DeltaTime,float Friction,bool bFluid,float BrakingDeceleration) {}
 	///<summary>Compute the max jump height based on the JumpZVelocity velocity and gravity.</summary>
-	public  float GetMaxJumpHeight() { return default; }
+	public virtual float GetMaxJumpHeight() { return default; }
 	///<summary>Compute the max jump height based on the JumpZVelocity velocity and gravity.</summary>
-	public  float GetMaxJumpHeightWithJumpTime() { return default; }
+	public virtual float GetMaxJumpHeightWithJumpTime() { return default; }
 	///<summary>Returns maximum acceleration for the current state.</summary>
-	public  float GetMinAnalogSpeed() { return default; }
+	public virtual float GetMinAnalogSpeed() { return default; }
 	///<summary>Returns maximum acceleration for the current state.</summary>
-	public  float GetMaxAcceleration() { return default; }
+	public virtual float GetMaxAcceleration() { return default; }
 	///<summary>Returns maximum deceleration for the current state when braking (ie when there is no acceleration).</summary>
-	public  float GetMaxBrakingDeceleration() { return default; }
+	public virtual float GetMaxBrakingDeceleration() { return default; }
 	///<summary>Returns current acceleration, computed from input vector each update.</summary>
-	public  FVector GetCurrentAcceleration() { return default; }
+	public FVector GetCurrentAcceleration() { return default; }
 	///<summary>Returns modifier [0..1] based on the magnitude of the last input vector, which is used to modify the acceleration and max speed during movement.</summary>
-	public  float GetAnalogInputModifier() { return default; }
+	public float GetAnalogInputModifier() { return default; }
 	///<summary>Clears forces accumulated through AddImpulse() and AddForce(), and also pending launch velocity.</summary>
-	public  void ClearAccumulatedForces() {}
+	public virtual void ClearAccumulatedForces() {}
 	///<summary>Sets collision half-height when crouching and updates dependent computations</summary>
-	public  void SetCrouchedHalfHeight(float NewValue) {}
+	public void SetCrouchedHalfHeight(float NewValue) {}
 	///<summary>Returns the collision half-height when crouching (component scale is applied separately)</summary>
-	public  float GetCrouchedHalfHeight() { return default; }
+	public float GetCrouchedHalfHeight() { return default; }
 	///<summary>Add impulse to character. Impulses are accumulated each tick and applied together</summary>
-	public  void AddImpulse(FVector Impulse,bool bVelocityChange/*=false*/) {}
+	public virtual void AddImpulse(FVector Impulse,bool bVelocityChange/*=false*/) {}
 	///<summary>Add force to character. Forces are accumulated each tick and applied together</summary>
-	public  void AddForce(FVector Force) {}
+	public virtual void AddForce(FVector Force) {}
 	///<summary>Returns The distance from the edge of the capsule within which we don&#39;t allow the character to perch on the edge of a surface.</summary>
-	public  float GetPerchRadiusThreshold() { return default; }
+	public float GetPerchRadiusThreshold() { return default; }
 	///<summary>Returns the radius within which we can stand on the edge of a surface without falling (if this is a walkable surface).</summary>
-	public  float GetValidPerchRadius() { return default; }
+	public float GetValidPerchRadius() { return default; }
 	///<summary>Return true if the hit result should be considered a walkable surface for the character.</summary>
-	public  bool IsWalkable(FHitResult Hit) { return default; }
+	public virtual bool IsWalkable(FHitResult Hit) { return default; }
 	///<summary>Get the max angle in degrees of a walkable surface for the character.</summary>
-	public  float K2_GetWalkableFloorAngle() { return default; }
+	public float K2_GetWalkableFloorAngle() { return default; }
 	///<summary>Set the max angle in degrees of a walkable surface for the character. Also computes WalkableFloorZ.</summary>
-	public  void SetWalkableFloorAngle(float InWalkableFloorAngle) {}
+	public void SetWalkableFloorAngle(float InWalkableFloorAngle) {}
 	///<summary>Get the Z component of the normal of the steepest walkable surface for the character. Any lower than this and it is not walkable.</summary>
-	public  float K2_GetWalkableFloorZ() { return default; }
+	public float K2_GetWalkableFloorZ() { return default; }
 	///<summary>Set the Z component of the normal of the steepest walkable surface for the character. Also computes WalkableFloorAngle.</summary>
-	public  void SetWalkableFloorZ(float InWalkableFloorZ) {}
+	public void SetWalkableFloorZ(float InWalkableFloorZ) {}
 	///<summary>Post-physics tick function for this character</summary>
 	public FCharacterMovementComponentPostPhysicsTickFunction PostPhysicsTickFunction;
 	///<summary>Sweeps a vertical trace to find the floor for the capsule at the given location. Will attempt to perch if ShouldComputePerchResult() returns true for the downward sweep result.</summary>
-	public  void K2_FindFloor(FVector CapsuleLocation,FFindFloorResult FloorResult) {}
+	public virtual void K2_FindFloor(FVector CapsuleLocation,FFindFloorResult FloorResult) {}
 	///<summary>Compute distance to the floor from bottom sphere of capsule and store the result in FloorResult.</summary>
-	public  void K2_ComputeFloorDist(FVector CapsuleLocation,float LineDistance,float SweepDistance,float SweepRadius,FFindFloorResult FloorResult) {}
+	public virtual void K2_ComputeFloorDist(FVector CapsuleLocation,float LineDistance,float SweepDistance,float SweepRadius,FFindFloorResult FloorResult) {}
 	///<summary>Called when the collision capsule touches another primitive component</summary>
-	public  void CapsuleTouched(UPrimitiveComponent OverlappedComp,AActor Other,UPrimitiveComponent OtherComp,int OtherBodyIndex,bool bFromSweep,FHitResult SweepResult) {}
+	public virtual void CapsuleTouched(UPrimitiveComponent OverlappedComp,AActor Other,UPrimitiveComponent OtherComp,int OtherBodyIndex,bool bFromSweep,FHitResult SweepResult) {}
 	///<summary>Minimum time between client TimeStamp resets.</summary>
 	public float MinTimeBetweenTimeStampResets;
 	///<summary>Root Motion Group containing active root motion sources being applied to movement</summary>

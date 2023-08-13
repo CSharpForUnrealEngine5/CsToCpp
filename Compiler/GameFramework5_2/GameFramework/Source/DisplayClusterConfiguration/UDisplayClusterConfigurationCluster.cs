@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("DisplayClusterConfigurationTypes.h")]
@@ -17,9 +16,9 @@ public partial class UDisplayClusterConfigurationCluster : UDisplayClusterConfig
 	///<summary>HostDisplayData</summary>
 	public TMap<string,UDisplayClusterConfigurationHostDisplayData> HostDisplayData;
 	///<summary>Return all references to meshes from policy, and other</summary>
-	public  void GetReferencedMeshNames(TArray<string> OutMeshNames) {}
+	public void GetReferencedMeshNames(TArray<string> OutMeshNames) {}
 	///<summary>Nodes API</summary>
-	public  void GetNodeIds(TArray<string> OutNodeIds) {}
+	public void GetNodeIds(TArray<string> OutNodeIds) {}
 	///<summary>GetNode</summary>
-	public  UDisplayClusterConfigurationClusterNode GetNode(string NodeId) { return default; }
+	public UDisplayClusterConfigurationClusterNode GetNode(string NodeId) { return default; }
 }

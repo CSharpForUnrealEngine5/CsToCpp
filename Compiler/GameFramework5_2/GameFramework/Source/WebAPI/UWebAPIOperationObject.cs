@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Baseclass for an asynchronous Http request/response operation.</summary>
@@ -6,5 +5,5 @@ using CSharpToCpp.Utilities;
 public partial class UWebAPIOperationObject : UObject {
 	public static UClass StaticClass() {return default;}
 	///<summary>Can contain a response or status message.</summary>
-	public string Message;
+	public FText Message;
 }

@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>StaticMeshComponent is used to create an instance of a UStaticMesh.</summary>
@@ -16,7 +15,7 @@ public partial class UStaticMeshComponent : UMeshComponent {
 	///<summary>StaticMesh</summary>
 	public UStaticMesh StaticMesh;
 	///<summary>OnRep_StaticMesh</summary>
-	public  void OnRep_StaticMesh(UStaticMesh OldStaticMesh) {}
+	public void OnRep_StaticMesh(UStaticMesh OldStaticMesh) {}
 	///<summary>Wireframe color to use if bOverrideWireframeColor is true</summary>
 	public FColor WireframeColorOverride;
 	///<summary>Forces this component to use fallback mesh for rendering if Nanite is enabled on the mesh.</summary>
@@ -94,21 +93,21 @@ public partial class UStaticMeshComponent : UMeshComponent {
 	///<summary>The Lightmass settings for this object.</summary>
 	public FLightmassPrimitiveSettings LightmassSettings;
 	///<summary>Change the StaticMesh used by this instance.</summary>
-	public  bool SetStaticMesh(UStaticMesh NewMesh) { return default; }
+	public virtual bool SetStaticMesh(UStaticMesh NewMesh) { return default; }
 	///<summary>SetForcedLodModel</summary>
-	public  void SetForcedLodModel(int NewForcedLodModel) {}
+	public void SetForcedLodModel(int NewForcedLodModel) {}
 	///<summary>Sets the component&#39;s DistanceFieldSelfShadowBias.  bOverrideDistanceFieldSelfShadowBias must be enabled for this to have an effect.</summary>
-	public  void SetDistanceFieldSelfShadowBias(float NewValue) {}
+	public void SetDistanceFieldSelfShadowBias(float NewValue) {}
 	///<summary>SetEvaluateWorldPositionOffsetInRayTracing</summary>
-	public  void SetEvaluateWorldPositionOffsetInRayTracing(bool NewValue) {}
+	public void SetEvaluateWorldPositionOffsetInRayTracing(bool NewValue) {}
 	///<summary>SetEvaluateWorldPositionOffset</summary>
-	public  void SetEvaluateWorldPositionOffset(bool NewValue) {}
+	public void SetEvaluateWorldPositionOffset(bool NewValue) {}
 	///<summary>Get the initial value of bEvaluateWorldPositionOffset. This is the value when BeginPlay() was last called.</summary>
-	public  bool GetInitialEvaluateWorldPositionOffset() { return default; }
+	public bool GetInitialEvaluateWorldPositionOffset() { return default; }
 	///<summary>Get Local bounds</summary>
-	public  void GetLocalBounds(FVector Min,FVector Max) {}
+	public void GetLocalBounds(FVector Min,FVector Max) {}
 	///<summary>Set forced reverse culling</summary>
-	public  void SetReverseCulling(bool ReverseCulling) {}
+	public void SetReverseCulling(bool ReverseCulling) {}
 	///<summary>Force disabling of Nanite rendering. When true, Will swap to the the fallback mesh instead.</summary>
-	public  void SetForceDisableNanite(bool bInForceDisableNanite) {}
+	public void SetForceDisableNanite(bool bInForceDisableNanite) {}
 }

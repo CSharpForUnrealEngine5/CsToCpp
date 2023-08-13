@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>GeometryCollectionComponent</summary>
@@ -8,43 +7,43 @@ public partial class UGeometryCollectionComponent : UMeshComponent {
 	///<summary>Chaos RBD Solver override. Will use the world&#39;s default solver actor if null.</summary>
 	public AChaosSolverActor ChaosSolverActor;
 	///<summary>Get local bounds of the geometry collection</summary>
-	public  FBox GetLocalBounds() { return default; }
+	public FBox GetLocalBounds() { return default; }
 	///<summary>Apply an external strain to specific piece of the geometry collection</summary>
-	public  void ApplyExternalStrain(int ItemIndex,FVector Location,float Radius/*=0f*/,int PropagationDepth/*=0*/,float PropagationFactor/*=1f*/,float Strain/*=0f*/) {}
+	public void ApplyExternalStrain(int ItemIndex,FVector Location,float Radius/*=0f*/,int PropagationDepth/*=0*/,float PropagationFactor/*=1f*/,float Strain/*=0f*/) {}
 	///<summary>Apply an internal strain to specific piece of the geometry collection</summary>
-	public  void ApplyInternalStrain(int ItemIndex,FVector Location,float Radius/*=0f*/,int PropagationDepth/*=0*/,float PropagationFactor/*=1f*/,float Strain/*=0f*/) {}
+	public void ApplyInternalStrain(int ItemIndex,FVector Location,float Radius/*=0f*/,int PropagationDepth/*=0*/,float PropagationFactor/*=1f*/,float Strain/*=0f*/) {}
 	///<summary>Crumbe a cluster into all its pieces</summary>
-	public  void CrumbleCluster(int ItemIndex) {}
+	public void CrumbleCluster(int ItemIndex) {}
 	///<summary>Crumbe active clusters for this entire geometry collection</summary>
-	public  void CrumbleActiveClusters() {}
+	public void CrumbleActiveClusters() {}
 	///<summary>Set a piece or cluster to be anchored or not</summary>
-	public  void SetAnchoredByIndex(int Index,bool bAnchored) {}
+	public void SetAnchoredByIndex(int Index,bool bAnchored) {}
 	///<summary>Set all pieces within a world space bounding box to be anchored or not</summary>
-	public  void SetAnchoredByBox(FBox WorldSpaceBox,bool bAnchored,int MaxLevel/*=-1*/) {}
+	public void SetAnchoredByBox(FBox WorldSpaceBox,bool bAnchored,int MaxLevel/*=-1*/) {}
 	///<summary>Set all pieces within a world transformed bounding box to be anchored or not</summary>
-	public  void SetAnchoredByTransformedBox(FBox Box,FTransform Transform,bool bAnchored,int MaxLevel/*=-1*/) {}
+	public void SetAnchoredByTransformedBox(FBox Box,FTransform Transform,bool bAnchored,int MaxLevel/*=-1*/) {}
 	///<summary>this will remove anchors on all the pieces ( including the static and kinematic initial states ones ) of the geometry colection</summary>
-	public  void RemoveAllAnchors() {}
+	public void RemoveAllAnchors() {}
 	///<summary>Apply linear velocity on breaking pieces for a specific cluster</summary>
-	public  void ApplyBreakingLinearVelocity(int ItemIndex,FVector LinearVelocity) {}
+	public void ApplyBreakingLinearVelocity(int ItemIndex,FVector LinearVelocity) {}
 	///<summary>Apply linear velocity on breaking pieces for a specific cluster</summary>
-	public  void ApplyBreakingAngularVelocity(int ItemIndex,FVector AngularVelocity) {}
+	public void ApplyBreakingAngularVelocity(int ItemIndex,FVector AngularVelocity) {}
 	///<summary>Apply linear velocity on specific piece</summary>
-	public  void ApplyLinearVelocity(int ItemIndex,FVector LinearVelocity) {}
+	public void ApplyLinearVelocity(int ItemIndex,FVector LinearVelocity) {}
 	///<summary>Apply angular velocity on specific piece</summary>
-	public  void ApplyAngularVelocity(int ItemIndex,FVector AngularVelocity) {}
+	public void ApplyAngularVelocity(int ItemIndex,FVector AngularVelocity) {}
 	///<summary>Get the initial level of a specific piece</summary>
-	public  int GetInitialLevel(int ItemIndex) { return default; }
+	public int GetInitialLevel(int ItemIndex) { return default; }
 	///<summary>Get the root item index of the hierarchy</summary>
-	public  int GetRootIndex() { return default; }
+	public int GetRootIndex() { return default; }
 	///<summary>Get mass and extent of a specific piece</summary>
-	public  void GetMassAndExtents(int ItemIndex,float OutMass,FBox OutExtents) {}
+	public void GetMassAndExtents(int ItemIndex,float OutMass,FBox OutExtents) {}
 	///<summary>RestCollection</summary>
-	public  void SetRestCollection(UGeometryCollection RestCollectionIn) {}
+	public void SetRestCollection(UGeometryCollection RestCollectionIn) {}
 	///<summary>RestCollection</summary>
-	public  string GetDebugInfo() { return default; }
+	public string GetDebugInfo() { return default; }
 	///<summary>SetEnableDamageFromCollision</summary>
-	public  void SetEnableDamageFromCollision(bool bValue) {}
+	public void SetEnableDamageFromCollision(bool bValue) {}
 	///<summary>RestCollection</summary>
 	public UGeometryCollection RestCollection;
 	///<summary>InitializationFields</summary>
@@ -98,23 +97,23 @@ public partial class UGeometryCollectionComponent : UMeshComponent {
 	///<summary>Optional transforms to initialize scene proxy if difference from the RestCollection.</summary>
 	public TArray<FTransform> RestTransforms;
 	///<summary>SetDynamicState</summary>
-	public  void ApplyKinematicField(float Radius,FVector Position) {}
+	public void ApplyKinematicField(float Radius,FVector Position) {}
 	///<summary>AddPhysicsField</summary>
-	public  void ApplyPhysicsField(bool Enabled,EGeometryCollectionPhysicsTypeEnum Target,UFieldSystemMetaData MetaData,UFieldNodeBase Field) {}
+	public void ApplyPhysicsField(bool Enabled,EGeometryCollectionPhysicsTypeEnum Target,UFieldSystemMetaData MetaData,UFieldNodeBase Field) {}
 	///<summary>Blueprint event</summary>
-	public  void FNotifyGeometryCollectionPhysicsStateChange(UGeometryCollectionComponent FracturedComponent) {}
+	public void FNotifyGeometryCollectionPhysicsStateChange(UGeometryCollectionComponent FracturedComponent) {}
 	///<summary>NotifyGeometryCollectionPhysicsStateChange</summary>
 	public FNotifyGeometryCollectionPhysicsStateChange NotifyGeometryCollectionPhysicsStateChange;
 	///<summary>FNotifyGeometryCollectionPhysicsLoadingStateChange</summary>
-	public  void FNotifyGeometryCollectionPhysicsLoadingStateChange(UGeometryCollectionComponent FracturedComponent) {}
+	public void FNotifyGeometryCollectionPhysicsLoadingStateChange(UGeometryCollectionComponent FracturedComponent) {}
 	///<summary>NotifyGeometryCollectionPhysicsLoadingStateChange</summary>
 	public FNotifyGeometryCollectionPhysicsLoadingStateChange NotifyGeometryCollectionPhysicsLoadingStateChange;
 	///<summary>Changes whether or not this component will get future break notifications.</summary>
-	public  void SetNotifyBreaks(bool bNewNotifyBreaks) {}
+	public void SetNotifyBreaks(bool bNewNotifyBreaks) {}
 	///<summary>Changes whether or not this component will get future removal notifications.</summary>
-	public  void SetNotifyRemovals(bool bNewNotifyRemovals) {}
+	public void SetNotifyRemovals(bool bNewNotifyRemovals) {}
 	///<summary>Changes whether or not this component will get future break notifications.</summary>
-	public  void SetNotifyCrumblings(bool bNewNotifyCrumblings,bool bNewCrumblingEventIncludesChildren/*=false*/) {}
+	public void SetNotifyCrumblings(bool bNewNotifyCrumblings,bool bNewCrumblingEventIncludesChildren/*=false*/) {}
 	///<summary>OnChaosBreakEvent</summary>
 	public FOnChaosBreakEvent OnChaosBreakEvent;
 	///<summary>OnChaosRemovalEvent</summary>
@@ -128,7 +127,7 @@ public partial class UGeometryCollectionComponent : UMeshComponent {
 	///<summary>OnChaosPhysicsCollision</summary>
 	public FOnChaosPhysicsCollision OnChaosPhysicsCollision;
 	///<summary>ReceivePhysicsCollision</summary>
-	public  void ReceivePhysicsCollision(FChaosPhysicsCollisionInfo CollisionInfo) {}
+	public void ReceivePhysicsCollision(FChaosPhysicsCollisionInfo CollisionInfo) {}
 	///<summary>If true, this component will generate breaking events that other systems may subscribe to.</summary>
 	public bool bNotifyBreaks;
 	///<summary>If true, this component will generate collision events that other systems may subscribe to.</summary>

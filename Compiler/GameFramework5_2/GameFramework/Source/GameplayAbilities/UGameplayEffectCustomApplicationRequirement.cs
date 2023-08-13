@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Class used to perform custom gameplay effect modifier calculations, either via blueprint or native code</summary>
@@ -6,5 +5,5 @@ using CSharpToCpp.Utilities;
 public partial class UGameplayEffectCustomApplicationRequirement : UObject {
 	public static UClass StaticClass() {return default;}
 	///<summary>Return whether the gameplay effect should be applied or not</summary>
-	public  bool CanApplyGameplayEffect(UGameplayEffect GameplayEffect,FGameplayEffectSpec Spec,UAbilitySystemComponent ASC) { return default; }
+	public bool CanApplyGameplayEffect(UGameplayEffect GameplayEffect,FGameplayEffectSpec Spec,UAbilitySystemComponent ASC) { return default; }
 }

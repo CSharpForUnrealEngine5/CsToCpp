@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Component used to place a URuntimeVirtualTexture in the world.</summary>
@@ -32,5 +31,5 @@ public partial class URuntimeVirtualTextureComponent : USceneComponent {
 	///<summary>Build the streaming low mips using debug coloring. This can help show where streaming mips are being used.</summary>
 	public bool bBuildDebugStreamingMips;
 	///<summary>This function marks an area of the runtime virtual texture as dirty.</summary>
-	public  void Invalidate(FBoxSphereBounds WorldBounds) {}
+	public void Invalidate(FBoxSphereBounds WorldBounds) {}
 }

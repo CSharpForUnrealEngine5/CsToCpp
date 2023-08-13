@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Settings controlling how convex hulls are generated for geometry collections</summary>
@@ -16,7 +15,7 @@ public partial class UFractureConvexSettings : UFractureToolSettings {
 	///<summary>Fraction of the convex hulls for a cluster that we can remove before using the hulls of the children</summary>
 	public double FractionAllowRemove;
 	///<summary>Delete convex hulls from selected clusters.  Does not affect hulls on leaves.</summary>
-	public  void DeleteFromSelected() {}
+	public void DeleteFromSelected() {}
 	///<summary>Clear any manual adjustments to convex hulls on the selected bones</summary>
-	public  void ClearCustomConvex() {}
+	public void ClearCustomConvex() {}
 }

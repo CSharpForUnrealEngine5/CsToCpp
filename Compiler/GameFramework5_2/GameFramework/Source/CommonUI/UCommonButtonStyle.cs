@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>---- All properties must be EditDefaultsOnly, BlueprintReadOnly !!! -----</summary>
@@ -54,33 +53,33 @@ public partial class UCommonButtonStyle : UObject {
 	///<summary>The sound to play when the button is hovered while locked</summary>
 	public FCommonButtonStyleOptionalSlateSound LockedHoveredSlateSound;
 	///<summary>GetMaterialBrush</summary>
-	public  void GetMaterialBrush(FSlateBrush Brush) {}
+	public void GetMaterialBrush(FSlateBrush Brush) {}
 	///<summary>GetNormalBaseBrush</summary>
-	public  void GetNormalBaseBrush(FSlateBrush Brush) {}
+	public void GetNormalBaseBrush(FSlateBrush Brush) {}
 	///<summary>GetNormalHoveredBrush</summary>
-	public  void GetNormalHoveredBrush(FSlateBrush Brush) {}
+	public void GetNormalHoveredBrush(FSlateBrush Brush) {}
 	///<summary>GetNormalPressedBrush</summary>
-	public  void GetNormalPressedBrush(FSlateBrush Brush) {}
+	public void GetNormalPressedBrush(FSlateBrush Brush) {}
 	///<summary>GetSelectedBaseBrush</summary>
-	public  void GetSelectedBaseBrush(FSlateBrush Brush) {}
+	public void GetSelectedBaseBrush(FSlateBrush Brush) {}
 	///<summary>GetSelectedHoveredBrush</summary>
-	public  void GetSelectedHoveredBrush(FSlateBrush Brush) {}
+	public void GetSelectedHoveredBrush(FSlateBrush Brush) {}
 	///<summary>GetSelectedPressedBrush</summary>
-	public  void GetSelectedPressedBrush(FSlateBrush Brush) {}
+	public void GetSelectedPressedBrush(FSlateBrush Brush) {}
 	///<summary>GetDisabledBrush</summary>
-	public  void GetDisabledBrush(FSlateBrush Brush) {}
+	public void GetDisabledBrush(FSlateBrush Brush) {}
 	///<summary>GetButtonPadding</summary>
-	public  void GetButtonPadding(FMargin OutButtonPadding) {}
+	public void GetButtonPadding(FMargin OutButtonPadding) {}
 	///<summary>GetCustomPadding</summary>
-	public  void GetCustomPadding(FMargin OutCustomPadding) {}
+	public void GetCustomPadding(FMargin OutCustomPadding) {}
 	///<summary>GetNormalTextStyle</summary>
-	public  UCommonTextStyle GetNormalTextStyle() { return default; }
+	public UCommonTextStyle GetNormalTextStyle() { return default; }
 	///<summary>GetNormalHoveredTextStyle</summary>
-	public  UCommonTextStyle GetNormalHoveredTextStyle() { return default; }
+	public UCommonTextStyle GetNormalHoveredTextStyle() { return default; }
 	///<summary>GetSelectedTextStyle</summary>
-	public  UCommonTextStyle GetSelectedTextStyle() { return default; }
+	public UCommonTextStyle GetSelectedTextStyle() { return default; }
 	///<summary>GetSelectedHoveredTextStyle</summary>
-	public  UCommonTextStyle GetSelectedHoveredTextStyle() { return default; }
+	public UCommonTextStyle GetSelectedHoveredTextStyle() { return default; }
 	///<summary>GetDisabledTextStyle</summary>
-	public  UCommonTextStyle GetDisabledTextStyle() { return default; }
+	public UCommonTextStyle GetDisabledTextStyle() { return default; }
 }

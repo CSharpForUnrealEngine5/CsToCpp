@@ -1,11 +1,10 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Landscape.h")]
 public partial class ALandscape : ALandscapeProxy {
 	public static UClass StaticClass() {return default;}
 	///<summary>RenderHeightmap</summary>
-	public  void RenderHeightmap(FTransform InWorldTransform,FBox2D InExtents,UTextureRenderTarget2D OutRenderTarget) {}
+	public void RenderHeightmap(FTransform InWorldTransform,FBox2D InExtents,UTextureRenderTarget2D OutRenderTarget) {}
 	///<summary>Use Nanite to render landscape as a mesh on supported platforms.</summary>
 	public bool bEnableNanite;
 	///<summary>LOD level of the landscape when generating the Nanite mesh. Mostly there for debug reasons, since Nanite is meant to allow high density meshes, we want to use 0 most of the times.</summary>

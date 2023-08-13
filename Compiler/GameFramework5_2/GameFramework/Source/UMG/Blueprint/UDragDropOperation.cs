@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>This class is the base drag drop operation for UMG, extend it to add additional data and add new functionality.</summary>
@@ -22,9 +21,9 @@ public partial class UDragDropOperation : UObject {
 	///<summary>OnDragged</summary>
 	public FOnDragDropMulticast OnDragged;
 	///<summary>Drop</summary>
-	public  void Drop(FPointerEvent PointerEvent) {}
+	public void Drop(FPointerEvent PointerEvent) {}
 	///<summary>DragCancelled</summary>
-	public  void DragCancelled(FPointerEvent PointerEvent) {}
+	public void DragCancelled(FPointerEvent PointerEvent) {}
 	///<summary>Dragged</summary>
-	public  void Dragged(FPointerEvent PointerEvent) {}
+	public void Dragged(FPointerEvent PointerEvent) {}
 }

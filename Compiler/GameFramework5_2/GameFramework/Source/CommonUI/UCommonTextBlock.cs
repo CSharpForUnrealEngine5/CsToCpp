@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Text block with automatic scrolling for FX / large texts, also supports a larger set of default styling, &amp; custom mobile scaling.</summary>
@@ -6,25 +5,25 @@ using CSharpToCpp.Utilities;
 public partial class UCommonTextBlock : UTextBlock {
 	public static UClass StaticClass() {return default;}
 	///<summary>SetWrapTextWidth</summary>
-	public  void SetWrapTextWidth(int InWrapTextAt) {}
+	public void SetWrapTextWidth(int InWrapTextAt) {}
 	///<summary>SetTextCase</summary>
-	public  void SetTextCase(bool bUseAllCaps) {}
+	public void SetTextCase(bool bUseAllCaps) {}
 	///<summary>SetLineHeightPercentage</summary>
-	public  void SetLineHeightPercentage(float InLineHeightPercentage) {}
+	public void SetLineHeightPercentage(float InLineHeightPercentage) {}
 	///<summary>SetStyle</summary>
-	public  void SetStyle(UClass InStyle) {}
+	public void SetStyle(UClass InStyle) {}
 	///<summary>GetMargin</summary>
-	public  FMargin GetMargin() { return default; }
+	public FMargin GetMargin() { return default; }
 	///<summary>SetMargin</summary>
-	public  void SetMargin(FMargin InMargin) {}
+	public void SetMargin(FMargin InMargin) {}
 	///<summary>GetMobileFontSizeMultiplier</summary>
-	public  float GetMobileFontSizeMultiplier() { return default; }
+	public float GetMobileFontSizeMultiplier() { return default; }
 	///<summary>Sets the new value and then applies the FontSizeMultiplier</summary>
-	public  void SetMobileFontSizeMultiplier(float InMobileFontSizeMultiplier) {}
+	public void SetMobileFontSizeMultiplier(float InMobileFontSizeMultiplier) {}
 	///<summary>ResetScrollState</summary>
-	public  void ResetScrollState() {}
+	public void ResetScrollState() {}
 	///<summary>SetScrollingEnabled</summary>
-	public  void SetScrollingEnabled(bool bInIsScrollingEnabled) {}
+	public void SetScrollingEnabled(bool bInIsScrollingEnabled) {}
 	///<summary>Mobile font size multiplier. Activated by default on mobile. See CVar Mobile_PreviewFontSize</summary>
 	public float MobileFontSizeMultiplier;
 	///<summary>References the text style to use</summary>

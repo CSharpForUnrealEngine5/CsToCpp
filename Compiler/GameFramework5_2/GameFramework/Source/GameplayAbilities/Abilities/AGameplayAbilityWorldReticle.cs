@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Reticles allow targeting to be visualized. Tasks can spawn these. Artists/designers can create BPs for these.</summary>
@@ -6,17 +5,17 @@ using CSharpToCpp.Utilities;
 public partial class AGameplayAbilityWorldReticle : AActor {
 	public static UClass StaticClass() {return default;}
 	///<summary>Called whenever bIsTargetValid changes value.</summary>
-	public  void OnValidTargetChanged(bool bNewValue) {}
+	public void OnValidTargetChanged(bool bNewValue) {}
 	///<summary>Called whenever bIsTargetAnActor changes value.</summary>
-	public  void OnTargetingAnActor(bool bNewValue) {}
+	public void OnTargetingAnActor(bool bNewValue) {}
 	///<summary>OnParametersInitialized</summary>
-	public  void OnParametersInitialized() {}
+	public void OnParametersInitialized() {}
 	///<summary>SetReticleMaterialParamFloat</summary>
-	public  void SetReticleMaterialParamFloat(string ParamName,float value) {}
+	public void SetReticleMaterialParamFloat(string ParamName,float value) {}
 	///<summary>SetReticleMaterialParamVector</summary>
-	public  void SetReticleMaterialParamVector(string ParamName,FVector value) {}
+	public void SetReticleMaterialParamVector(string ParamName,FVector value) {}
 	///<summary>FaceTowardSource</summary>
-	public  void FaceTowardSource(bool bFaceIn2D) {}
+	public void FaceTowardSource(bool bFaceIn2D) {}
 	///<summary>Parameters</summary>
 	public FWorldReticleParameters Parameters;
 	///<summary>Makes the reticle&#39;s default owner-facing behavior operate in 2D (flat) instead of 3D (pitched). Defaults to true.</summary>

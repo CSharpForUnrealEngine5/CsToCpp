@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("BakeMultiMeshAttributeMapsTool.h")]
@@ -17,7 +16,7 @@ public partial class UBakeMultiMeshInputToolProperties : UInteractiveToolPropert
 	///<summary>Maximum allowed distance for the projection from target mesh to source mesh for the sample to be considered valid.</summary>
 	public float ProjectionDistance;
 	///<summary>GetTargetUVLayerNamesFunc</summary>
-	public  TArray<string> GetTargetUVLayerNamesFunc() { return default; }
+	public TArray<string> GetTargetUVLayerNamesFunc() { return default; }
 	///<summary>TargetUVLayerNamesList</summary>
 	public TArray<string> TargetUVLayerNamesList;
 }

@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("K2Node_Select.h")]
@@ -13,7 +12,7 @@ public partial class UK2Node_Select : UK2Node {
 	///<summary>List of the current entries in the enum (Pin Names)</summary>
 	public TArray<string> EnumEntries;
 	///<summary>List of the current entries in the enum (Pin Friendly Names)</summary>
-	public TArray<string> EnumEntryFriendlyNames;
+	public TArray<FText> EnumEntryFriendlyNames;
 	///<summary>Whether we need to reconstruct the node after the pins have changed</summary>
 	public bool bReconstructNode;
 }

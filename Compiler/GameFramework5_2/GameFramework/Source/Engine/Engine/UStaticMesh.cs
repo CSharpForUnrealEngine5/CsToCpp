@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>A StaticMesh is a piece of geometry that consists of a static set of polygons.</summary>
@@ -30,33 +29,33 @@ public partial class UStaticMesh : UStreamableRenderAsset {
 	///<summary>Settings related to building Nanite data.</summary>
 	public FMeshNaniteSettings NaniteSettings;
 	///<summary>IsLODScreenSizeAutoComputed</summary>
-	public  bool IsLODScreenSizeAutoComputed() { return default; }
+	public bool IsLODScreenSizeAutoComputed() { return default; }
 	///<summary>Allow more flexibility to set various values driven by the Scalability or Device Profile.</summary>
 	public FPerQualityLevelInt MinQualityLevelLOD;
 	///<summary>GetMinimumLODForQualityLevels</summary>
-	public  void GetMinimumLODForQualityLevels(TMap<string,int> QualityLevelMinimumLODs) {}
+	public void GetMinimumLODForQualityLevels(TMap<string,int> QualityLevelMinimumLODs) {}
 	///<summary>GetMinimumLODForQualityLevel</summary>
-	public  int GetMinimumLODForQualityLevel(string QualityLevel) { return default; }
+	public int GetMinimumLODForQualityLevel(string QualityLevel) { return default; }
 	///<summary>Allow to override min lod quality levels on a staticMesh and it Default value (-1 value for Default dont override its value).</summary>
-	public  void SetMinLODForQualityLevels(TMap<EPerQualityLevels,int> QualityLevelMinimumLODs,int Default/*=-1*/) {}
+	public void SetMinLODForQualityLevels(TMap<EPerQualityLevels,int> QualityLevelMinimumLODs,int Default/*=-1*/) {}
 	///<summary>GetMinLODForQualityLevels</summary>
-	public  void GetMinLODForQualityLevels(TMap<EPerQualityLevels,int> QualityLevelMinimumLODs,int Default) {}
+	public void GetMinLODForQualityLevels(TMap<EPerQualityLevels,int> QualityLevelMinimumLODs,int Default) {}
 	///<summary>MinLOD</summary>
 	public FPerPlatformInt MinLOD;
 	///<summary>GetMinimumLODForPlatforms</summary>
-	public  void GetMinimumLODForPlatforms(TMap<string,int> PlatformMinimumLODs) {}
+	public void GetMinimumLODForPlatforms(TMap<string,int> PlatformMinimumLODs) {}
 	///<summary>GetMinimumLODForPlatform</summary>
-	public  int GetMinimumLODForPlatform(string PlatformName) { return default; }
+	public int GetMinimumLODForPlatform(string PlatformName) { return default; }
 	///<summary>SetMinimumLODForPlatforms</summary>
-	public  void SetMinimumLODForPlatforms(TMap<string,int> PlatformMinimumLODs) {}
+	public void SetMinimumLODForPlatforms(TMap<string,int> PlatformMinimumLODs) {}
 	///<summary>SetMinimumLODForPlatform</summary>
-	public  void SetMinimumLODForPlatform(string PlatformName,int InMinLOD) {}
+	public void SetMinimumLODForPlatform(string PlatformName,int InMinLOD) {}
 	///<summary>StaticMaterials</summary>
 	public TArray<FStaticMaterial> StaticMaterials;
 	///<summary>GetStaticMaterials</summary>
-	public  TArray<FStaticMaterial> GetStaticMaterials() { return default; }
+	public TArray<FStaticMaterial> GetStaticMaterials() { return default; }
 	///<summary>SetStaticMaterials</summary>
-	public  void SetStaticMaterials(TArray<FStaticMaterial> InStaticMaterials) {}
+	public void SetStaticMaterials(TArray<FStaticMaterial> InStaticMaterials) {}
 	///<summary>LightmapUVDensity</summary>
 	public float LightmapUVDensity;
 	///<summary>The light map resolution</summary>
@@ -120,37 +119,37 @@ public partial class UStaticMesh : UStreamableRenderAsset {
 	///<summary>Create an empty StaticMeshDescription object, to describe a static mesh at runtime</summary>
 	public static UStaticMeshDescription CreateStaticMeshDescription(UObject Outer/*=nullptr*/) { return default; }
 	///<summary>Builds static mesh LODs from the array of StaticMeshDescriptions passed in</summary>
-	public  void BuildFromStaticMeshDescriptions(TArray<UStaticMeshDescription> StaticMeshDescriptions,bool bBuildSimpleCollision/*=false*/,bool bFastBuild/*=true*/) {}
+	public void BuildFromStaticMeshDescriptions(TArray<UStaticMeshDescription> StaticMeshDescriptions,bool bBuildSimpleCollision/*=false*/,bool bFastBuild/*=true*/) {}
 	///<summary>Return a new StaticMeshDescription referencing the MeshDescription of the given LOD</summary>
-	public  UStaticMeshDescription GetStaticMeshDescription(int LODIndex) { return default; }
+	public UStaticMeshDescription GetStaticMeshDescription(int LODIndex) { return default; }
 	///<summary>NavCollision</summary>
 	public UNavCollisionBase NavCollision;
 	///<summary>SetNumSourceModels</summary>
-	public  void SetNumSourceModels(int Num) {}
+	public void SetNumSourceModels(int Num) {}
 	///<summary>Returns the number of triangles in the render data for the specified LOD.</summary>
-	public  int GetNumTriangles(int LODIndex) { return default; }
+	public int GetNumTriangles(int LODIndex) { return default; }
 	///<summary>Returns the number of LODs used by the mesh.</summary>
-	public  int GetNumLODs() { return default; }
+	public int GetNumLODs() { return default; }
 	///<summary>Returns the number of bounds of the mesh.</summary>
-	public  FBoxSphereBounds GetBounds() { return default; }
+	public FBoxSphereBounds GetBounds() { return default; }
 	///<summary>Returns the bounding box, in local space including bounds extension(s), of the StaticMesh asset</summary>
-	public  FBox GetBoundingBox() { return default; }
+	public FBox GetBoundingBox() { return default; }
 	///<summary>Returns number of Sections that this StaticMesh has, in the supplied LOD (LOD 0 is the highest)</summary>
-	public  int GetNumSections(int InLOD) { return default; }
+	public int GetNumSections(int InLOD) { return default; }
 	///<summary>Gets a Material given a Material Index and an LOD number</summary>
-	public  UMaterialInterface GetMaterial(int MaterialIndex) { return default; }
+	public UMaterialInterface GetMaterial(int MaterialIndex) { return default; }
 	///<summary>Adds a new material and return its slot name</summary>
-	public  string AddMaterial(UMaterialInterface Material) { return default; }
+	public string AddMaterial(UMaterialInterface Material) { return default; }
 	///<summary>Gets a Material index given a slot name</summary>
-	public  int GetMaterialIndex(string MaterialSlotName) { return default; }
+	public int GetMaterialIndex(string MaterialSlotName) { return default; }
 	///<summary>Add a socket object in this StaticMesh.</summary>
-	public  void AddSocket(UStaticMeshSocket Socket) {}
+	public void AddSocket(UStaticMeshSocket Socket) {}
 	///<summary>Find a socket object in this StaticMesh by name.</summary>
-	public  UStaticMeshSocket FindSocket(string InSocketName) { return default; }
+	public UStaticMeshSocket FindSocket(string InSocketName) { return default; }
 	///<summary>Remove a socket object in this StaticMesh by providing it&#39;s pointer. Use FindSocket() if needed.</summary>
-	public  void RemoveSocket(UStaticMeshSocket Socket) {}
+	public void RemoveSocket(UStaticMeshSocket Socket) {}
 	///<summary>Returns a list of sockets with the provided tag.</summary>
-	public  TArray<UStaticMeshSocket> GetSocketsByTag(string InSocketTag) { return default; }
+	public TArray<UStaticMeshSocket> GetSocketsByTag(string InSocketTag) { return default; }
 	///<summary>Sets a Material given a Material Index</summary>
-	public  void SetMaterial(int MaterialIndex,UMaterialInterface NewMaterial) {}
+	public void SetMaterial(int MaterialIndex,UMaterialInterface NewMaterial) {}
 }

@@ -1,17 +1,16 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("ARTrackable.h")]
 public partial class UARFaceGeometry : UARTrackedGeometry {
 	public static UClass StaticClass() {return default;}
 	///<summary>GetBlendShapeValue</summary>
-	public  float GetBlendShapeValue(EARFaceBlendShape BlendShape) { return default; }
+	public float GetBlendShapeValue(EARFaceBlendShape BlendShape) { return default; }
 	///<summary>GetBlendShapes</summary>
-	public  TMap<EARFaceBlendShape,float> GetBlendShapes() { return default; }
+	public TMap<EARFaceBlendShape,float> GetBlendShapes() { return default; }
 	///<summary>GetLocalSpaceEyeTransform</summary>
-	public  FTransform GetLocalSpaceEyeTransform(EAREye Eye) { return default; }
+	public FTransform GetLocalSpaceEyeTransform(EAREye Eye) { return default; }
 	///<summary>GetWorldSpaceEyeTransform</summary>
-	public  FTransform GetWorldSpaceEyeTransform(EAREye Eye) { return default; }
+	public FTransform GetWorldSpaceEyeTransform(EAREye Eye) { return default; }
 	///<summary>The target the eyes are looking at</summary>
 	public FVector LookAtTarget;
 	///<summary>Whether the face is currently being tracked by the AR system</summary>

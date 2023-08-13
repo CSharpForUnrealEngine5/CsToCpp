@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Chaos/ChaosSolverActor.h")]
@@ -39,9 +38,9 @@ public partial class AChaosSolverActor : AActor {
 	///<summary>* Control to pause/step/substep the solver to the next synchronization point.</summary>
 	public FChaosDebugSubstepControl ChaosDebugSubstepControl;
 	///<summary>Makes this solver the current world solver. Dynamically spawned objects will have their physics state created in this solver.</summary>
-	public  void SetAsCurrentWorldSolver() {}
+	public void SetAsCurrentWorldSolver() {}
 	///<summary>Controls whether the solver is able to simulate particles it controls</summary>
-	public  void SetSolverActive(bool bActive) {}
+	public virtual void SetSolverActive(bool bActive) {}
 	///<summary>* Display icon in the editor</summary>
 	public UBillboardComponent SpriteComponent;
 	///<summary>Component responsible for harvesting and triggering physics-related gameplay events (hits, breaks, etc)</summary>

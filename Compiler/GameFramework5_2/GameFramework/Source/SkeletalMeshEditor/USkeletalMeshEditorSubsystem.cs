@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>USkeletalMeshEditorSubsystem</summary>
@@ -8,27 +7,27 @@ public partial class USkeletalMeshEditorSubsystem : UEditorSubsystem {
 	///<summary>Regenerate LODs of the mesh</summary>
 	public static bool RegenerateLOD(USkeletalMesh SkeletalMesh,int NewLODCount/*=0*/,bool bRegenerateEvenIfImported/*=false*/,bool bGenerateBaseLOD/*=false*/) { return default; }
 	///<summary>Get number of mesh vertices for an LOD of a Skeletal Mesh</summary>
-	public  int GetNumVerts(USkeletalMesh SkeletalMesh,int LODIndex) { return default; }
+	public int GetNumVerts(USkeletalMesh SkeletalMesh,int LODIndex) { return default; }
 	///<summary>Get number of sections for a LOD of a Skeletal Mesh</summary>
-	public  int GetNumSections(USkeletalMesh SkeletalMesh,int LODIndex) { return default; }
+	public int GetNumSections(USkeletalMesh SkeletalMesh,int LODIndex) { return default; }
 	///<summary>Get bRecomputeTangent from a section of a LOD of a Skeletal Mesh</summary>
-	public  bool GetSectionRecomputeTangent(USkeletalMesh SkeletalMesh,int LODIndex,int SectionIndex,bool bOutRecomputeTangent) { return default; }
+	public bool GetSectionRecomputeTangent(USkeletalMesh SkeletalMesh,int LODIndex,int SectionIndex,bool bOutRecomputeTangent) { return default; }
 	///<summary>Set bRecomputeTangent for a section of a LOD of a Skeletal Mesh.</summary>
-	public  bool SetSectionRecomputeTangent(USkeletalMesh SkeletalMesh,int LODIndex,int SectionIndex,bool bRecomputeTangent) { return default; }
+	public bool SetSectionRecomputeTangent(USkeletalMesh SkeletalMesh,int LODIndex,int SectionIndex,bool bRecomputeTangent) { return default; }
 	///<summary>Get RecomputeTangentsVertexMaskChannel from a section of a LOD of a Skeletal Mesh</summary>
-	public  bool GetSectionRecomputeTangentsVertexMaskChannel(USkeletalMesh SkeletalMesh,int LODIndex,int SectionIndex,byte OutRecomputeTangentsVertexMaskChannel) { return default; }
+	public bool GetSectionRecomputeTangentsVertexMaskChannel(USkeletalMesh SkeletalMesh,int LODIndex,int SectionIndex,byte OutRecomputeTangentsVertexMaskChannel) { return default; }
 	///<summary>Set RecomputeTangentsVertexMaskChannel for a section of a LOD of a Skeletal Mesh.</summary>
-	public  bool SetSectionRecomputeTangentsVertexMaskChannel(USkeletalMesh SkeletalMesh,int LODIndex,int SectionIndex,byte RecomputeTangentsVertexMaskChannel) { return default; }
+	public bool SetSectionRecomputeTangentsVertexMaskChannel(USkeletalMesh SkeletalMesh,int LODIndex,int SectionIndex,byte RecomputeTangentsVertexMaskChannel) { return default; }
 	///<summary>Get bCastShadow from a section of a LOD of a Skeletal Mesh</summary>
-	public  bool GetSectionCastShadow(USkeletalMesh SkeletalMesh,int LODIndex,int SectionIndex,bool bOutCastShadow) { return default; }
+	public bool GetSectionCastShadow(USkeletalMesh SkeletalMesh,int LODIndex,int SectionIndex,bool bOutCastShadow) { return default; }
 	///<summary>Set bCastShadow for a section of a LOD of a Skeletal Mesh.</summary>
-	public  bool SetSectionCastShadow(USkeletalMesh SkeletalMesh,int LODIndex,int SectionIndex,bool bCastShadow) { return default; }
+	public bool SetSectionCastShadow(USkeletalMesh SkeletalMesh,int LODIndex,int SectionIndex,bool bCastShadow) { return default; }
 	///<summary>Get bVisibleInRayTracing from a section of a LOD of a Skeletal Mesh</summary>
-	public  bool GetSectionVisibleInRayTracing(USkeletalMesh SkeletalMesh,int LODIndex,int SectionIndex,bool bOutVisibleInRayTracing) { return default; }
+	public bool GetSectionVisibleInRayTracing(USkeletalMesh SkeletalMesh,int LODIndex,int SectionIndex,bool bOutVisibleInRayTracing) { return default; }
 	///<summary>Set bVisibleInRayTracing for a section of a LOD of a Skeletal Mesh.</summary>
-	public  bool SetSectionVisibleInRayTracing(USkeletalMesh SkeletalMesh,int LODIndex,int SectionIndex,bool bVisibleInRayTracing) { return default; }
+	public bool SetSectionVisibleInRayTracing(USkeletalMesh SkeletalMesh,int LODIndex,int SectionIndex,bool bVisibleInRayTracing) { return default; }
 	///<summary>Gets the material slot used for a specific LOD section.</summary>
-	public  int GetLODMaterialSlot(USkeletalMesh SkeletalMesh,int LODIndex,int SectionIndex) { return default; }
+	public int GetLODMaterialSlot(USkeletalMesh SkeletalMesh,int LODIndex,int SectionIndex) { return default; }
 	///<summary>Rename a socket within a skeleton</summary>
 	public static bool RenameSocket(USkeletalMesh SkeletalMesh,string OldName,string NewName) { return default; }
 	///<summary>Retrieve the number of LOD contain in the specified skeletal mesh.</summary>

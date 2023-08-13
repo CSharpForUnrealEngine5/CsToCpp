@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("NavigationSystem.h")]
@@ -77,19 +76,19 @@ public partial class UNavigationSystemV1 : UNavigationSystemBase {
 	///<summary>Performs navigation raycast on NavigationData appropriate for given Querier.</summary>
 	public static bool NavigationRaycast(UObject WorldContextObject,FVector RayStart,FVector RayEnd,FVector HitLocation,UClass FilterClass/*=NULL*/,AController Querier/*=NULL*/) { return default; }
 	///<summary>will limit the number of simultaneously running navmesh tile generation jobs to specified number.</summary>
-	public  void SetMaxSimultaneousTileGenerationJobsCount(int MaxNumberOfJobs) {}
+	public void SetMaxSimultaneousTileGenerationJobsCount(int MaxNumberOfJobs) {}
 	///<summary>Brings limit of simultaneous navmesh tile generation jobs back to Project Setting&#39;s default value</summary>
-	public  void ResetMaxSimultaneousTileGenerationJobsCount() {}
+	public void ResetMaxSimultaneousTileGenerationJobsCount() {}
 	///<summary>Registers given actor as a &quot;navigation enforcer&quot; which means navigation system will</summary>
-	public  void RegisterNavigationInvoker(AActor Invoker,float TileGenerationRadius/*=3000f*/,float TileRemovalRadius/*=5000f*/) {}
+	public void RegisterNavigationInvoker(AActor Invoker,float TileGenerationRadius/*=3000f*/,float TileRemovalRadius/*=5000f*/) {}
 	///<summary>Removes given actor from the list of active navigation enforcers.</summary>
-	public  void UnregisterNavigationInvoker(AActor Invoker) {}
+	public void UnregisterNavigationInvoker(AActor Invoker) {}
 	///<summary>SetGeometryGatheringMode</summary>
-	public  void SetGeometryGatheringMode(ENavDataGatheringModeConfig NewMode) {}
+	public void SetGeometryGatheringMode(ENavDataGatheringModeConfig NewMode) {}
 	///<summary>K2_ReplaceAreaInOctreeData</summary>
-	public  bool K2_ReplaceAreaInOctreeData(UObject Object,UClass OldArea,UClass NewArea) { return default; }
+	public bool K2_ReplaceAreaInOctreeData(UObject Object,UClass OldArea,UClass NewArea) { return default; }
 	///<summary>@todo document</summary>
-	public  void OnNavigationBoundsUpdated(ANavMeshBoundsVolume NavVolume) {}
+	public void OnNavigationBoundsUpdated(ANavMeshBoundsVolume NavVolume) {}
 	///<summary>OperationMode</summary>
 	public FNavigationSystemRunMode OperationMode;
 	///<summary>K2_GetRandomPointInNavigableRadius</summary>

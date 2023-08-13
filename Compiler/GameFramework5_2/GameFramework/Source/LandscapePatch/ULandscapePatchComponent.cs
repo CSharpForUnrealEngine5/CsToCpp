@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Base class for landscape patches: components that can be attached to meshes and moved around to make</summary>
@@ -6,21 +5,21 @@ using CSharpToCpp.Utilities;
 public partial class ULandscapePatchComponent : USceneComponent {
 	public static UClass StaticClass() {return default;}
 	///<summary>RequestLandscapeUpdate</summary>
-	public  void RequestLandscapeUpdate(bool bInUserTriggeredUpdate/*=false*/) {}
+	public void RequestLandscapeUpdate(bool bInUserTriggeredUpdate/*=false*/) {}
 	///<summary>Allows the patch to be disabled, so that it no longer affects the landscape. This can be useful</summary>
-	public  void SetIsEnabled(bool bEnabledIn) {}
+	public void SetIsEnabled(bool bEnabledIn) {}
 	///<summary>@return false if the patch is marked as disabled and therefore can&#39;t affect the landscape.</summary>
-	public  bool IsEnabled() { return default; }
+	public virtual bool IsEnabled() { return default; }
 	///<summary>GetLandscapeHeightmapCoordsToWorld</summary>
-	public  FTransform GetLandscapeHeightmapCoordsToWorld() { return default; }
+	public FTransform GetLandscapeHeightmapCoordsToWorld() { return default; }
 	///<summary>SetLandscape</summary>
-	public  void SetLandscape(ALandscape NewLandscape) {}
+	public virtual void SetLandscape(ALandscape NewLandscape) {}
 	///<summary>SetPatchManager</summary>
-	public  void SetPatchManager(ALandscapePatchManager NewPatchManager) {}
+	public virtual void SetPatchManager(ALandscapePatchManager NewPatchManager) {}
 	///<summary>GetPatchManager</summary>
-	public  ALandscapePatchManager GetPatchManager() { return default; }
+	public virtual ALandscapePatchManager GetPatchManager() { return default; }
 	///<summary>Move the patch to be the last processed patch in the current patch manager. This is a way to</summary>
-	public  void MoveToTop() {}
+	public void MoveToTop() {}
 	///<summary>Landscape</summary>
 	public TSoftObjectPtr<ALandscape> Landscape;
 	///<summary>PatchManager</summary>

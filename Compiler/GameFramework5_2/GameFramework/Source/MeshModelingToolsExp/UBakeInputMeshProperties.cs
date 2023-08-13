@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("BakeMeshAttributeToolCommon.h")]
@@ -35,11 +34,11 @@ public partial class UBakeInputMeshProperties : UInteractiveToolPropertySet {
 	///<summary>If true, uses the world space positions for the projection from target mesh to source mesh, otherwise it uses their object space positions.</summary>
 	public bool bProjectionInWorldSpace;
 	///<summary>GetTargetUVLayerNamesFunc</summary>
-	public  TArray<string> GetTargetUVLayerNamesFunc() { return default; }
+	public TArray<string> GetTargetUVLayerNamesFunc() { return default; }
 	///<summary>TargetUVLayerNamesList</summary>
 	public TArray<string> TargetUVLayerNamesList;
 	///<summary>GetSourceUVLayerNamesFunc</summary>
-	public  TArray<string> GetSourceUVLayerNamesFunc() { return default; }
+	public TArray<string> GetSourceUVLayerNamesFunc() { return default; }
 	///<summary>SourceUVLayerNamesList</summary>
 	public TArray<string> SourceUVLayerNamesList;
 }

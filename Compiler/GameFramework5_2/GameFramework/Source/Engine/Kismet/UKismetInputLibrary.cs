@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Kismet/KismetInputLibrary.h")]
@@ -43,7 +42,7 @@ public partial class UKismetInputLibrary : UBlueprintFunctionLibrary {
 	///<summary>Returns the navigation action corresponding to this key, or Invalid if not found</summary>
 	public static EUINavigation Key_GetNavigationDirectionFromAnalog(FAnalogInputEvent InAnalogEvent) { return default; }
 	///<summary>Returns the display name of the key.</summary>
-	public static string Key_GetDisplayName(FKey Key,bool bLongDisplayName/*=true*/) { return default; }
+	public static FText Key_GetDisplayName(FKey Key,bool bLongDisplayName/*=true*/) { return default; }
 	///<summary>Returns whether or not this character is an auto-repeated keystroke</summary>
 	public static bool InputEvent_IsRepeat(FInputEvent Input) { return default; }
 	///<summary>Returns true if either shift key was down when this event occurred</summary>
@@ -81,7 +80,7 @@ public partial class UKismetInputLibrary : UBlueprintFunctionLibrary {
 	///<summary>Returns a snapshot of the cached modifier-keys state for the application.</summary>
 	public static FSlateModifierKeysState GetModifierKeysState() { return default; }
 	///<summary>@return The display name of the input chord</summary>
-	public static string InputChord_GetDisplayName(FInputChord Key) { return default; }
+	public static FText InputChord_GetDisplayName(FInputChord Key) { return default; }
 	///<summary>Returns the key for this event.</summary>
 	public static FKey GetKey(FKeyEvent Input) { return default; }
 	///<summary>GetUserIndex</summary>

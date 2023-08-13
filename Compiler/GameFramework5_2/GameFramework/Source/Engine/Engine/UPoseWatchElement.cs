@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Engine/PoseWatch.h")]
@@ -11,7 +10,7 @@ public partial class UPoseWatchElement : UObject {
 	///<summary>Color</summary>
 	public FColor Color;
 	///<summary>Label</summary>
-	public string Label;
+	public FText Label;
 	///<summary>IconName</summary>
 	public string IconName;
 	///<summary>Parent</summary>

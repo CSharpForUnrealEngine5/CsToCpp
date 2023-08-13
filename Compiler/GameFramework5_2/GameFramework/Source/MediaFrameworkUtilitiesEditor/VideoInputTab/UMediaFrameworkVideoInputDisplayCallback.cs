@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Callback object for SMediaFrameworkVideoInputDisplay</summary>
@@ -6,5 +5,5 @@ using CSharpToCpp.Utilities;
 public partial class UMediaFrameworkVideoInputDisplayCallback : UObject {
 	public static UClass StaticClass() {return default;}
 	///<summary>OnMediaClosed</summary>
-	public  void OnMediaClosed() {}
+	public void OnMediaClosed() {}
 }

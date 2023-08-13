@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Editable text box widget</summary>
@@ -6,15 +5,15 @@ using CSharpToCpp.Utilities;
 public partial class UEditableText : UWidget {
 	public static UClass StaticClass() {return default;}
 	///<summary>FOnEditableTextChangedEvent</summary>
-	public  void FOnEditableTextChangedEvent(string Text) {}
+	public void FOnEditableTextChangedEvent(FText Text) {}
 	///<summary>FOnEditableTextCommittedEvent</summary>
-	public  void FOnEditableTextCommittedEvent(string Text,ETextCommit CommitMethod) {}
+	public void FOnEditableTextCommittedEvent(FText Text,ETextCommit CommitMethod) {}
 	///<summary>The text content for this editable text box widget</summary>
-	public string Text;
+	public FText Text;
 	///<summary>A bindable delegate to allow logic to drive the text of the widget</summary>
 	public FGetText TextDelegate;
 	///<summary>Hint text that appears when there is no text in the text box</summary>
-	public string HintText;
+	public FText HintText;
 	///<summary>A bindable delegate to allow logic to drive the hint text of the widget</summary>
 	public FGetText HintTextDelegate;
 	///<summary>The style</summary>
@@ -56,31 +55,31 @@ public partial class UEditableText : UWidget {
 	///<summary>Called whenever the text is committed.  This happens when the user presses enter or the text box loses focus.</summary>
 	public FOnEditableTextCommittedEvent OnTextCommitted;
 	///<summary>Gets the widget text</summary>
-	public  string GetText() { return default; }
+	public FText GetText() { return default; }
 	///<summary>Directly sets the widget text.</summary>
-	public  void SetText(string InText) {}
+	public void SetText(FText InText) {}
 	///<summary>SetIsPassword</summary>
-	public  void SetIsPassword(bool InbIsPassword) {}
+	public void SetIsPassword(bool InbIsPassword) {}
 	///<summary>Gets the Hint text that appears when there is no text in the text box</summary>
-	public  string GetHintText() { return default; }
+	public FText GetHintText() { return default; }
 	///<summary>SetHintText</summary>
-	public  void SetHintText(string InHintText) {}
+	public void SetHintText(FText InHintText) {}
 	///<summary>Set the minimum desired width for this text box</summary>
-	public  void SetMinimumDesiredWidth(float InMinDesiredWidth) {}
+	public void SetMinimumDesiredWidth(float InMinDesiredWidth) {}
 	///<summary>SetIsReadOnly</summary>
-	public  void SetIsReadOnly(bool InbIsReadyOnly) {}
+	public void SetIsReadOnly(bool InbIsReadyOnly) {}
 	///<summary>GetJustification</summary>
-	public  ETextJustify GetJustification() { return default; }
+	public ETextJustify GetJustification() { return default; }
 	///<summary>SetJustification</summary>
-	public  void SetJustification(ETextJustify InJustification) {}
+	public void SetJustification(ETextJustify InJustification) {}
 	///<summary>SetTextOverflowPolicy</summary>
-	public  void SetTextOverflowPolicy(ETextOverflowPolicy InOverflowPolicy) {}
+	public void SetTextOverflowPolicy(ETextOverflowPolicy InOverflowPolicy) {}
 	///<summary>GetFont</summary>
-	public  FSlateFontInfo GetFont() { return default; }
+	public FSlateFontInfo GetFont() { return default; }
 	///<summary>SetFont</summary>
-	public  void SetFont(FSlateFontInfo InFontInfo) {}
+	public void SetFont(FSlateFontInfo InFontInfo) {}
 	///<summary>SetFontMaterial</summary>
-	public  void SetFontMaterial(UMaterialInterface InMaterial) {}
+	public void SetFontMaterial(UMaterialInterface InMaterial) {}
 	///<summary>SetFontOutlineMaterial</summary>
-	public  void SetFontOutlineMaterial(UMaterialInterface InMaterial) {}
+	public void SetFontOutlineMaterial(UMaterialInterface InMaterial) {}
 }

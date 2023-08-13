@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("VPBookmarkActor.h")]
@@ -21,27 +20,27 @@ public partial class AVPBookmarkActor : AVPViewportTickableActorBase {
 	///<summary>Texture reference to store render of viewpoint</summary>
 	public UTexture2D SnapshotTexture;
 	///<summary>Update the mesh color and BookmarkColor variable. Intended for use with multiuser initialization</summary>
-	public  void UpdateBookmarkColor(FLinearColor Color) {}
+	public void UpdateBookmarkColor(FLinearColor Color) {}
 	///<summary>DynamicMaterial</summary>
 	public UMaterialInstanceDynamic DynamicMaterial;
 	///<summary>BookmarkMaterial</summary>
 	public UMaterialInterface BookmarkMaterial;
 	///<summary>VPBookmark Interface events</summary>
-	public  void OnBookmarkActivation_Implementation(UVPBookmark Bookmark,bool bActivate) {}
+	public void OnBookmarkActivation_Implementation(UVPBookmark Bookmark,bool bActivate) {}
 	///<summary>OnBookmarkChanged_Implementation</summary>
-	public  void OnBookmarkChanged_Implementation(UVPBookmark Bookmark) {}
+	public void OnBookmarkChanged_Implementation(UVPBookmark Bookmark) {}
 	///<summary>UpdateBookmarkSplineMeshIndicator_Implementation</summary>
-	public  void UpdateBookmarkSplineMeshIndicator_Implementation() {}
+	public void UpdateBookmarkSplineMeshIndicator_Implementation() {}
 	///<summary>HideBookmarkSplineMeshIndicator_Implementation</summary>
-	public  void HideBookmarkSplineMeshIndicator_Implementation() {}
+	public void HideBookmarkSplineMeshIndicator_Implementation() {}
 	///<summary>GenerateBookmarkName_Implementation</summary>
-	public  void GenerateBookmarkName_Implementation() {}
+	public void GenerateBookmarkName_Implementation() {}
 	///<summary>VPInteraction Interface Events</summary>
-	public  void OnActorDroppedFromCarry_Implementation() {}
+	public void OnActorDroppedFromCarry_Implementation() {}
 	///<summary>OnActorSelectedForTransform_Implementation</summary>
-	public  void OnActorSelectedForTransform_Implementation() {}
+	public void OnActorSelectedForTransform_Implementation() {}
 	///<summary>OnActorDroppedFromTransform_Implementation</summary>
-	public  void OnActorDroppedFromTransform_Implementation() {}
+	public void OnActorDroppedFromTransform_Implementation() {}
 	///<summary>Actor&#39;s rotation</summary>
 	public UStaticMesh BookmarkStaticMesh;
 	///<summary>Mesh to use main static mesh component</summary>

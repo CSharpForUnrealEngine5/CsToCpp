@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>An instantiated Actor that acts as a handler of a GameplayCue. Since they are instantiated, they can maintain state and tick/update every frame if necessary.</summary>
@@ -6,9 +5,9 @@ using CSharpToCpp.Utilities;
 public partial class AGameplayCueNotify_Actor : AActor {
 	public static UClass StaticClass() {return default;}
 	///<summary>OnOwnerDestroyed</summary>
-	public  void OnOwnerDestroyed(AActor DestroyedActor) {}
+	public virtual void OnOwnerDestroyed(AActor DestroyedActor) {}
 	///<summary>Ends the gameplay cue: either destroying it or recycling it. You must call this manually only if you do not use bAutoDestroyOnRemove/AutoDestroyDelay</summary>
-	public  void K2_EndGameplayCue() {}
+	public virtual void K2_EndGameplayCue() {}
 	///<summary>We will auto destroy (recycle) this GameplayCueActor when the OnRemove event fires (after OnRemove is called).</summary>
 	public bool bAutoDestroyOnRemove;
 	///<summary>If bAutoDestroyOnRemove is true, the actor will stay alive for this many seconds before being auto destroyed.</summary>
@@ -18,15 +17,15 @@ public partial class AGameplayCueNotify_Actor : AActor {
 	///<summary>Warn if we have a latent action (delay, etc) running when we cleanup this gameplay cue (we will kill the latent action either way)</summary>
 	public bool WarnIfLatentActionIsStillRunning;
 	///<summary>Generic Event Graph event that will get called for every event type</summary>
-	public  void K2_HandleGameplayCue(AActor MyTarget,EGameplayCueEvent EventType,FGameplayCueParameters Parameters) {}
+	public void K2_HandleGameplayCue(AActor MyTarget,EGameplayCueEvent EventType,FGameplayCueParameters Parameters) {}
 	///<summary>Called when a GameplayCue is executed, this is used for instant effects or periodic ticks</summary>
-	public  bool OnExecute(AActor MyTarget,FGameplayCueParameters Parameters) { return default; }
+	public bool OnExecute(AActor MyTarget,FGameplayCueParameters Parameters) { return default; }
 	///<summary>Called when a GameplayCue with duration is first activated, this will only be called if the client witnessed the activation</summary>
-	public  bool OnActive(AActor MyTarget,FGameplayCueParameters Parameters) { return default; }
+	public bool OnActive(AActor MyTarget,FGameplayCueParameters Parameters) { return default; }
 	///<summary>Called when a GameplayCue with duration is first seen as active, even if it wasn&#39;t actually just applied (Join in progress, etc)</summary>
-	public  bool WhileActive(AActor MyTarget,FGameplayCueParameters Parameters) { return default; }
+	public bool WhileActive(AActor MyTarget,FGameplayCueParameters Parameters) { return default; }
 	///<summary>Called when a GameplayCue with duration is removed</summary>
-	public  bool OnRemove(AActor MyTarget,FGameplayCueParameters Parameters) { return default; }
+	public bool OnRemove(AActor MyTarget,FGameplayCueParameters Parameters) { return default; }
 	///<summary>Tag this notify is activated by</summary>
 	public FGameplayTag GameplayCueTag;
 	///<summary>Mirrors GameplayCueTag in order to be asset registry searchable</summary>

@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>We use this object to display plugin properties using details view.</summary>
@@ -36,5 +35,5 @@ public partial class UPluginMetadataObject : UObject {
 	///<summary>Plugins used by this plugin</summary>
 	public TArray<FPluginReferenceMetadata> Plugins;
 	///<summary>GetAvailablePluginDependencies</summary>
-	public  TArray<string> GetAvailablePluginDependencies() { return default; }
+	public TArray<string> GetAvailablePluginDependencies() { return default; }
 }

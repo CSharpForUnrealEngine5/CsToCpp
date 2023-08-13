@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>UObject based class for handling mobile events. Having this object as an option gives the app lifetime access to these global delegates. The component UApplicationLifecycleComponent is destroyed at level loads</summary>
@@ -6,21 +5,21 @@ using CSharpToCpp.Utilities;
 public partial class UPlatformGameInstance : UGameInstance {
 	public static UClass StaticClass() {return default;}
 	///<summary>FPlatformDelegate</summary>
-	public  void FPlatformDelegate() {}
+	public void FPlatformDelegate() {}
 	///<summary>FPlatformStartupArgumentsDelegate</summary>
-	public  void FPlatformStartupArgumentsDelegate(TArray<string> StartupArguments) {}
+	public void FPlatformStartupArgumentsDelegate(TArray<string> StartupArguments) {}
 	///<summary>FPlatformRegisteredForRemoteNotificationsDelegate</summary>
-	public  void FPlatformRegisteredForRemoteNotificationsDelegate(TArray<byte> inArray) {}
+	public void FPlatformRegisteredForRemoteNotificationsDelegate(TArray<byte> inArray) {}
 	///<summary>FPlatformRegisteredForUserNotificationsDelegate</summary>
-	public  void FPlatformRegisteredForUserNotificationsDelegate(int inInt) {}
+	public void FPlatformRegisteredForUserNotificationsDelegate(int inInt) {}
 	///<summary>FPlatformFailedToRegisterForRemoteNotificationsDelegate</summary>
-	public  void FPlatformFailedToRegisterForRemoteNotificationsDelegate(string inString) {}
+	public void FPlatformFailedToRegisterForRemoteNotificationsDelegate(string inString) {}
 	///<summary>FPlatformReceivedRemoteNotificationDelegate</summary>
-	public  void FPlatformReceivedRemoteNotificationDelegate(string inString,EApplicationState inAppState) {}
+	public void FPlatformReceivedRemoteNotificationDelegate(string inString,EApplicationState inAppState) {}
 	///<summary>FPlatformReceivedLocalNotificationDelegate</summary>
-	public  void FPlatformReceivedLocalNotificationDelegate(string inString,int inInt,EApplicationState inAppState) {}
+	public void FPlatformReceivedLocalNotificationDelegate(string inString,int inInt,EApplicationState inAppState) {}
 	///<summary>FPlatformScreenOrientationChangedDelegate</summary>
-	public  void FPlatformScreenOrientationChangedDelegate(EScreenOrientation inScreenOrientation) {}
+	public void FPlatformScreenOrientationChangedDelegate(EScreenOrientation inScreenOrientation) {}
 	///<summary>This is called when the application is about to be deactivated (e.g., due to a phone call or SMS or the sleep button).</summary>
 	public FPlatformDelegate ApplicationWillDeactivateDelegate;
 	///<summary>Called when the application has been reactivated (reverse any processing done in the Deactivate delegate)</summary>

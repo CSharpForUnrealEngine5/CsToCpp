@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Text block that supports custom scaling for mobile platforms, with option to only show icons if space is sparse.</summary>
@@ -6,7 +5,7 @@ using CSharpToCpp.Utilities;
 public partial class UCommonRichTextBlock : URichTextBlock {
 	public static UClass StaticClass() {return default;}
 	///<summary>SetScrollingEnabled</summary>
-	public  void SetScrollingEnabled(bool bInIsScrollingEnabled) {}
+	public void SetScrollingEnabled(bool bInIsScrollingEnabled) {}
 	///<summary>InlineIconDisplayMode</summary>
 	public ERichTextInlineIconDisplayMode InlineIconDisplayMode;
 	///<summary>Toggle it on if the text color should also tint the inline icons.</summary>

@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("MrcVideoCaptureDevice.h")]
@@ -9,9 +8,9 @@ public partial class UAsyncTask_OpenMrcVidCaptureFeedBase : UBlueprintAsyncActio
 	///<summary>OnFail</summary>
 	public FMRCaptureFeedDelegate OnFail;
 	///<summary>OnVideoFeedOpened</summary>
-	public  void OnVideoFeedOpened(string DeviceUrl) {}
+	public virtual void OnVideoFeedOpened(string DeviceUrl) {}
 	///<summary>OnVideoFeedOpenFailure</summary>
-	public  void OnVideoFeedOpenFailure(string DeviceUrl) {}
+	public virtual void OnVideoFeedOpenFailure(string DeviceUrl) {}
 	///<summary>MediaPlayer</summary>
 	public UMediaPlayer MediaPlayer;
 }

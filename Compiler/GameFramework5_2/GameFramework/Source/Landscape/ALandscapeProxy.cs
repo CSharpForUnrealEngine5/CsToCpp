@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("LandscapeProxy.h")]
@@ -67,7 +66,7 @@ public partial class ALandscapeProxy : APartitionActor {
 	///<summary>Controls if this component draws in the main pass as well as in the virtual texture.</summary>
 	public ERuntimeVirtualTextureMainPassType VirtualTextureRenderPassType;
 	///<summary>SetVirtualTextureRenderPassType</summary>
-	public  void SetVirtualTextureRenderPassType(ERuntimeVirtualTextureMainPassType InType) {}
+	public void SetVirtualTextureRenderPassType(ERuntimeVirtualTextureMainPassType InType) {}
 	///<summary>Allows overriding the landscape bounds. This is useful if you distort the landscape with world-position-offset, for example</summary>
 	public float NegativeZBoundsExtension;
 	///<summary>Allows overriding the landscape bounds. This is useful if you distort the landscape with world-position-offset, for example</summary>
@@ -155,27 +154,27 @@ public partial class ALandscapeProxy : APartitionActor {
 	///<summary>Flag that tell if we have some layers content *</summary>
 	public bool bHasLayersContent;
 	///<summary>Change the Level of Detail distance factor</summary>
-	public  void ChangeLODDistanceFactor(float InLODDistanceFactor) {}
+	public virtual void ChangeLODDistanceFactor(float InLODDistanceFactor) {}
 	///<summary>Change ComponentScreenSizeToUseSubSections value on the render proxy.</summary>
-	public  void ChangeComponentScreenSizeToUseSubSections(float InComponentScreenSizeToUseSubSections) {}
+	public virtual void ChangeComponentScreenSizeToUseSubSections(float InComponentScreenSizeToUseSubSections) {}
 	///<summary>Setter for LandscapeMaterial. Has no effect outside the editor.</summary>
-	public  void EditorSetLandscapeMaterial(UMaterialInterface NewLandscapeMaterial) {}
+	public void EditorSetLandscapeMaterial(UMaterialInterface NewLandscapeMaterial) {}
 	///<summary>Deform landscape using a given spline</summary>
-	public  void EditorApplySpline(USplineComponent InSplineComponent,float StartWidth/*=200f*/,float EndWidth/*=200f*/,float StartSideFalloff/*=200f*/,float EndSideFalloff/*=200f*/,float StartRoll/*=0f*/,float EndRoll/*=0f*/,int NumSubdivisions/*=20*/,bool bRaiseHeights/*=true*/,bool bLowerHeights/*=true*/,ULandscapeLayerInfoObject PaintLayer/*=nullptr*/,string EditLayerName/*=TEXT("")*/) {}
+	public void EditorApplySpline(USplineComponent InSplineComponent,float StartWidth/*=200f*/,float EndWidth/*=200f*/,float StartSideFalloff/*=200f*/,float EndSideFalloff/*=200f*/,float StartRoll/*=0f*/,float EndRoll/*=0f*/,int NumSubdivisions/*=20*/,bool bRaiseHeights/*=true*/,bool bLowerHeights/*=true*/,ULandscapeLayerInfoObject PaintLayer/*=nullptr*/,string EditLayerName/*=TEXT("")*/) {}
 	///<summary>Set an MID texture parameter value for all landscape components.</summary>
-	public  void SetLandscapeMaterialTextureParameterValue(string ParameterName,UTexture Value) {}
+	public void SetLandscapeMaterialTextureParameterValue(string ParameterName,UTexture Value) {}
 	///<summary>Set an MID vector parameter value for all landscape components.</summary>
-	public  void SetLandscapeMaterialVectorParameterValue(string ParameterName,FLinearColor Value) {}
+	public void SetLandscapeMaterialVectorParameterValue(string ParameterName,FLinearColor Value) {}
 	///<summary>Set a MID scalar (float) parameter value for all landscape components.</summary>
-	public  void SetLandscapeMaterialScalarParameterValue(string ParameterName,float Value) {}
+	public void SetLandscapeMaterialScalarParameterValue(string ParameterName,float Value) {}
 	///<summary>GetLandscapeActor</summary>
-	public  ALandscape GetLandscapeActor() { return default; }
+	public virtual ALandscape GetLandscapeActor() { return default; }
 	///<summary>Output a landscape heightmap to a render target</summary>
-	public  bool LandscapeExportHeightmapToRenderTarget(UTextureRenderTarget2D InRenderTarget,bool InExportHeightIntoRGChannel/*=false*/,bool InExportLandscapeProxies/*=true*/) { return default; }
+	public bool LandscapeExportHeightmapToRenderTarget(UTextureRenderTarget2D InRenderTarget,bool InExportHeightIntoRGChannel/*=false*/,bool InExportLandscapeProxies/*=true*/) { return default; }
 	///<summary>Overwrites a landscape heightmap with render target data</summary>
-	public  bool LandscapeImportHeightmapFromRenderTarget(UTextureRenderTarget2D InRenderTarget,bool InImportHeightFromRGChannel/*=false*/) { return default; }
+	public bool LandscapeImportHeightmapFromRenderTarget(UTextureRenderTarget2D InRenderTarget,bool InImportHeightFromRGChannel/*=false*/) { return default; }
 	///<summary>Overwrites a landscape weightmap with render target data</summary>
-	public  bool LandscapeImportWeightmapFromRenderTarget(UTextureRenderTarget2D InRenderTarget,string InLayerName) { return default; }
+	public bool LandscapeImportWeightmapFromRenderTarget(UTextureRenderTarget2D InRenderTarget,string InLayerName) { return default; }
 	///<summary>Output a landscape weightmap to a render target</summary>
-	public  bool LandscapeExportWeightmapToRenderTarget(UTextureRenderTarget2D InRenderTarget,string InLayerName) { return default; }
+	public bool LandscapeExportWeightmapToRenderTarget(UTextureRenderTarget2D InRenderTarget,string InLayerName) { return default; }
 }

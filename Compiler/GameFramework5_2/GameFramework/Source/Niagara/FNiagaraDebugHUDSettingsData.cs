@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Settings for Niagara debug HUD. Contained in it&#39;s own struct so that we can pass it whole in a message to the debugger client.</summary>

@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Asset user data which can be added to a USkeleton or UAnimSequence to keep track of Animation Modifiers</summary>

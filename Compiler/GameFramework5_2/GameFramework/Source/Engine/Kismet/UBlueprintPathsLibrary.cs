@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Function library to expose FPaths to Blueprints and Python</summary>
@@ -162,7 +161,7 @@ public partial class UBlueprintPathsLibrary : UBlueprintFunctionLibrary {
 	///<summary>Returns a string that is safe to use as a filename because all items in</summary>
 	public static string MakeValidFileName(string InString,string InReplacementChar/*=TEXT("")*/) { return default; }
 	///<summary>Validates that the parts that make up the path contain no invalid characters as dictated by the operating system</summary>
-	public static void ValidatePath(string InPath,bool bDidSucceed,string OutReason) {}
+	public static void ValidatePath(string InPath,bool bDidSucceed,FText OutReason) {}
 	///<summary>Parses a fully qualified or relative filename into its components (filename, path, extension).</summary>
 	public static void Split(string InPath,string PathPart,string FilenamePart,string ExtensionPart) {}
 	///<summary>Gets the relative path to get from BaseDir to RootDirectory</summary>

@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>A spawner you can put on a map and configure it to spawn different things</summary>
@@ -6,23 +5,23 @@ using CSharpToCpp.Utilities;
 public partial class AMassSpawner : AActor {
 	public static UClass StaticClass() {return default;}
 	///<summary>DEBUG_Spawn</summary>
-	public  void DEBUG_Spawn() {}
+	public void DEBUG_Spawn() {}
 	///<summary>Remove all the entities</summary>
-	public  void DEBUG_Clear() {}
+	public void DEBUG_Clear() {}
 	///<summary>Starts the spawning of all the agent types of this spawner</summary>
-	public  void DoSpawning() {}
+	public void DoSpawning() {}
 	///<summary>Despawn all mass agent that was spawned by this spawner</summary>
-	public  void DoDespawning() {}
+	public void DoDespawning() {}
 	///<summary>ClearTemplates</summary>
-	public  void ClearTemplates() {}
+	public void ClearTemplates() {}
 	///<summary>UnloadConfig</summary>
-	public  void UnloadConfig() {}
+	public void UnloadConfig() {}
 	///<summary>Scales the spawning counts</summary>
-	public  void ScaleSpawningCount(float Scale) {}
+	public void ScaleSpawningCount(float Scale) {}
 	///<summary>GetCount</summary>
-	public  int GetCount() { return default; }
+	public int GetCount() { return default; }
 	///<summary>GetSpawningCountScale</summary>
-	public  float GetSpawningCountScale() { return default; }
+	public float GetSpawningCountScale() { return default; }
 	///<summary>Called once DoSpawning completes and all entities have been spawned.</summary>
 	public FMassSpawnerOnSpawningFinishedEvent OnSpawningFinishedEvent;
 	///<summary>Called once DoDespawning completes and all mass agents spawned by this spawner have been despawned.</summary>

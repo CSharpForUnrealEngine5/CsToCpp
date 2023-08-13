@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Modify Transforms is used to perform a change in the hierarchy by setting one or more bones&#39; transforms</summary>

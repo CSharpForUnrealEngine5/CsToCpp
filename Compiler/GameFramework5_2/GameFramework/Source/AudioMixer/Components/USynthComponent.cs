@@ -1,31 +1,30 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Components/SynthComponent.h")]
 public partial class USynthComponent : USceneComponent {
 	public static UClass StaticClass() {return default;}
 	///<summary>Starts the synth generating audio.</summary>
-	public  void Start() {}
+	public void Start() {}
 	///<summary>Stops the synth generating audio.</summary>
-	public  void Stop() {}
+	public void Stop() {}
 	///<summary>Returns true if this component is currently playing.</summary>
-	public  bool IsPlaying() { return default; }
+	public bool IsPlaying() { return default; }
 	///<summary>Set a new volume multiplier</summary>
-	public  void SetVolumeMultiplier(float VolumeMultiplier) {}
+	public void SetVolumeMultiplier(float VolumeMultiplier) {}
 	///<summary>Sets how much audio the sound should send to the given submix.</summary>
-	public  void SetSubmixSend(USoundSubmixBase Submix,float SendLevel) {}
+	public void SetSubmixSend(USoundSubmixBase Submix,float SendLevel) {}
 	///<summary>Sets whether or not the low pass filter is enabled on the audio component.</summary>
-	public  void SetLowPassFilterEnabled(bool InLowPassFilterEnabled) {}
+	public void SetLowPassFilterEnabled(bool InLowPassFilterEnabled) {}
 	///<summary>Sets lowpass filter frequency of the audio component.</summary>
-	public  void SetLowPassFilterFrequency(float InLowPassFilterFrequency) {}
+	public virtual void SetLowPassFilterFrequency(float InLowPassFilterFrequency) {}
 	///<summary>Sets whether or not the synth component outputs its audio to any source or audio buses.</summary>
-	public  void SetOutputToBusOnly(bool bInOutputToBusOnly) {}
+	public void SetOutputToBusOnly(bool bInOutputToBusOnly) {}
 	///<summary>This function allows designers to call Play on an Audio Component instance while applying a volume curve over time.</summary>
-	public  void FadeIn(float FadeInDuration,float FadeVolumeLevel/*=1.0f*/,float StartTime/*=0.0f*/,EAudioFaderCurve FadeCurve/*=EAudioFaderCurve.Linear*/) {}
+	public void FadeIn(float FadeInDuration,float FadeVolumeLevel/*=1.0f*/,float StartTime/*=0.0f*/,EAudioFaderCurve FadeCurve/*=EAudioFaderCurve.Linear*/) {}
 	///<summary>This function allows designers to call a delayed Stop on an Audio Component instance while applying a</summary>
-	public  void FadeOut(float FadeOutDuration,float FadeVolumeLevel,EAudioFaderCurve FadeCurve/*=EAudioFaderCurve.Linear*/) {}
+	public void FadeOut(float FadeOutDuration,float FadeVolumeLevel,EAudioFaderCurve FadeCurve/*=EAudioFaderCurve.Linear*/) {}
 	///<summary>This function allows designers to trigger an adjustment to the sound instance’s playback Volume with options for smoothly applying a curve over time.</summary>
-	public  void AdjustVolume(float AdjustVolumeDuration,float AdjustVolumeLevel,EAudioFaderCurve FadeCurve/*=EAudioFaderCurve.Linear*/) {}
+	public void AdjustVolume(float AdjustVolumeDuration,float AdjustVolumeLevel,EAudioFaderCurve FadeCurve/*=EAudioFaderCurve.Linear*/) {}
 	///<summary>Auto destroy this component on completion</summary>
 	public bool bAutoDestroy;
 	///<summary>Stop sound when owner is destroyed</summary>

@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>GetControlVector2D is used to retrieve a single Vector2D from a hierarchy.</summary>

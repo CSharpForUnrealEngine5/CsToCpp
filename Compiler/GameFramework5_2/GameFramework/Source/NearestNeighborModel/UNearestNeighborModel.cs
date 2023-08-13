@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>The nearest neighbor model.</summary>
@@ -6,53 +5,53 @@ using CSharpToCpp.Utilities;
 public partial class UNearestNeighborModel : UMLDeformerMorphModel {
 	public static UClass StaticClass() {return default;}
 	///<summary>GetNumParts</summary>
-	public  int GetNumParts() { return default; }
+	public int GetNumParts() { return default; }
 	///<summary>GetPartNumVerts</summary>
-	public  int GetPartNumVerts(int PartId) { return default; }
+	public int GetPartNumVerts(int PartId) { return default; }
 	///<summary>GetPCACoeffStart</summary>
-	public  int GetPCACoeffStart(int PartId) { return default; }
+	public int GetPCACoeffStart(int PartId) { return default; }
 	///<summary>GetPCACoeffNum</summary>
-	public  int GetPCACoeffNum(int PartId) { return default; }
+	public int GetPCACoeffNum(int PartId) { return default; }
 	///<summary>GetNumNeighbors</summary>
-	public  int GetNumNeighbors(int PartId) { return default; }
+	public int GetNumNeighbors(int PartId) { return default; }
 	///<summary>PCABasis</summary>
-	public  TArray<float> PCABasis(int PartId) { return default; }
+	public TArray<float> PCABasis(int PartId) { return default; }
 	///<summary>SetPCABasis</summary>
-	public  void SetPCABasis(int PartId,TArray<float> PCABasis) {}
+	public void SetPCABasis(int PartId,TArray<float> PCABasis) {}
 	///<summary>VertexMean</summary>
-	public  TArray<float> VertexMean(int PartId) { return default; }
+	public TArray<float> VertexMean(int PartId) { return default; }
 	///<summary>SetVertexMean</summary>
-	public  void SetVertexMean(int PartId,TArray<float> VertexMean) {}
+	public void SetVertexMean(int PartId,TArray<float> VertexMean) {}
 	///<summary>SetNumNeighbors</summary>
-	public  void SetNumNeighbors(int PartId,int InNumNeighbors) {}
+	public void SetNumNeighbors(int PartId,int InNumNeighbors) {}
 	///<summary>NeighborCoeffs</summary>
-	public  TArray<float> NeighborCoeffs(int PartId) { return default; }
+	public TArray<float> NeighborCoeffs(int PartId) { return default; }
 	///<summary>SetNeighborCoeffs</summary>
-	public  void SetNeighborCoeffs(int PartId,TArray<float> NeighborCoeffs) {}
+	public void SetNeighborCoeffs(int PartId,TArray<float> NeighborCoeffs) {}
 	///<summary>NeighborOffsets</summary>
-	public  TArray<float> NeighborOffsets(int PartId) { return default; }
+	public TArray<float> NeighborOffsets(int PartId) { return default; }
 	///<summary>SetNeighborOffsets</summary>
-	public  void SetNeighborOffsets(int PartId,TArray<float> NeighborOffsets) {}
+	public void SetNeighborOffsets(int PartId,TArray<float> NeighborOffsets) {}
 	///<summary>ClipInputs</summary>
-	public  TArray<float> ClipInputs(TArray<float> Input) { return default; }
+	public TArray<float> ClipInputs(TArray<float> Input) { return default; }
 	///<summary>GetInputDim</summary>
-	public  int GetInputDim() { return default; }
+	public int GetInputDim() { return default; }
 	///<summary>GetHiddenLayerDims</summary>
-	public  TArray<int> GetHiddenLayerDims() { return default; }
+	public TArray<int> GetHiddenLayerDims() { return default; }
 	///<summary>GetOutputDim</summary>
-	public  int GetOutputDim() { return default; }
+	public int GetOutputDim() { return default; }
 	///<summary>GetNumEpochs</summary>
-	public  int GetNumEpochs() { return default; }
+	public int GetNumEpochs() { return default; }
 	///<summary>GetBatchSize</summary>
-	public  int GetBatchSize() { return default; }
+	public int GetBatchSize() { return default; }
 	///<summary>GetLearningRate</summary>
-	public  float GetLearningRate() { return default; }
+	public float GetLearningRate() { return default; }
 	///<summary>GetClothPartEditorData</summary>
-	public  TArray<FClothPartEditorData> GetClothPartEditorData() { return default; }
+	public TArray<FClothPartEditorData> GetClothPartEditorData() { return default; }
 	///<summary>GetNearestNeighborData</summary>
-	public  TArray<FSkeletonCachePair> GetNearestNeighborData() { return default; }
+	public TArray<FSkeletonCachePair> GetNearestNeighborData() { return default; }
 	///<summary>GetModelDir</summary>
-	public  string GetModelDir() { return default; }
+	public string GetModelDir() { return default; }
 	///<summary>InputDim</summary>
 	public int InputDim;
 	///<summary>HiddenLayerDims</summary>

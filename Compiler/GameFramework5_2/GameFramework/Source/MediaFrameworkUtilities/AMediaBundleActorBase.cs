@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>A base actor that</summary>
@@ -6,13 +5,13 @@ using CSharpToCpp.Utilities;
 public partial class AMediaBundleActorBase : AActor {
 	public static UClass StaticClass() {return default;}
 	///<summary>Get the Media Bundle.</summary>
-	public  UMediaBundle GetMediaBundle() { return default; }
+	public UMediaBundle GetMediaBundle() { return default; }
 	///<summary>Play the Media Source.</summary>
-	public  bool RequestOpenMediaSource() { return default; }
+	public bool RequestOpenMediaSource() { return default; }
 	///<summary>Close the Media Source.</summary>
-	public  void RequestCloseMediaSource() {}
+	public void RequestCloseMediaSource() {}
 	///<summary>Assign the primitive to render on. Will change the material for the Media material.</summary>
-	public  void SetComponent(UPrimitiveComponent InPrimitive,UMediaSoundComponent InMediaSound) {}
+	public void SetComponent(UPrimitiveComponent InPrimitive,UMediaSoundComponent InMediaSound) {}
 	///<summary>Texture containging 2D garbage matte mask</summary>
 	public UTextureRenderTarget2D GarbageMatteMask;
 	///<summary>Associated MediaBundle</summary>

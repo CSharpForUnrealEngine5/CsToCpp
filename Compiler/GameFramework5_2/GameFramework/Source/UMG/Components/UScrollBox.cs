@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>An arbitrary scrollable collection of widgets.  Great for presenting 10-100 widgets in a list.  Doesn&#39;t support virtualization.</summary>
@@ -42,45 +41,45 @@ public partial class UScrollBox : UPanelWidget {
 	///<summary>The multiplier to apply when wheel scrolling</summary>
 	public float WheelScrollMultiplier;
 	///<summary>SetConsumeMouseWheel</summary>
-	public  void SetConsumeMouseWheel(EConsumeMouseWheel NewConsumeMouseWheel) {}
+	public void SetConsumeMouseWheel(EConsumeMouseWheel NewConsumeMouseWheel) {}
 	///<summary>SetOrientation</summary>
-	public  void SetOrientation(EOrientation NewOrientation) {}
+	public void SetOrientation(EOrientation NewOrientation) {}
 	///<summary>SetScrollBarVisibility</summary>
-	public  void SetScrollBarVisibility(ESlateVisibility NewScrollBarVisibility) {}
+	public void SetScrollBarVisibility(ESlateVisibility NewScrollBarVisibility) {}
 	///<summary>SetScrollbarThickness</summary>
-	public  void SetScrollbarThickness(FVector2D NewScrollbarThickness) {}
+	public void SetScrollbarThickness(FVector2D NewScrollbarThickness) {}
 	///<summary>SetScrollbarPadding</summary>
-	public  void SetScrollbarPadding(FMargin NewScrollbarPadding) {}
+	public void SetScrollbarPadding(FMargin NewScrollbarPadding) {}
 	///<summary>SetAlwaysShowScrollbar</summary>
-	public  void SetAlwaysShowScrollbar(bool NewAlwaysShowScrollbar) {}
+	public void SetAlwaysShowScrollbar(bool NewAlwaysShowScrollbar) {}
 	///<summary>SetAllowOverscroll</summary>
-	public  void SetAllowOverscroll(bool NewAllowOverscroll) {}
+	public void SetAllowOverscroll(bool NewAllowOverscroll) {}
 	///<summary>SetAnimateWheelScrolling</summary>
-	public  void SetAnimateWheelScrolling(bool bShouldAnimateWheelScrolling) {}
+	public void SetAnimateWheelScrolling(bool bShouldAnimateWheelScrolling) {}
 	///<summary>SetWheelScrollMultiplier</summary>
-	public  void SetWheelScrollMultiplier(float NewWheelScrollMultiplier) {}
+	public void SetWheelScrollMultiplier(float NewWheelScrollMultiplier) {}
 	///<summary>SetScrollWhenFocusChanges</summary>
-	public  void SetScrollWhenFocusChanges(EScrollWhenFocusChanges NewScrollWhenFocusChanges) {}
+	public void SetScrollWhenFocusChanges(EScrollWhenFocusChanges NewScrollWhenFocusChanges) {}
 	///<summary>SetNavigationDestination</summary>
-	public  void SetNavigationDestination(EDescendantScrollDestination NewNavigationDestination) {}
+	public void SetNavigationDestination(EDescendantScrollDestination NewNavigationDestination) {}
 	///<summary>Instantly stops any inertial scrolling that is currently in progress</summary>
-	public  void EndInertialScrolling() {}
+	public void EndInertialScrolling() {}
 	///<summary>Called when the scroll has changed</summary>
 	public FOnUserScrolledEvent OnUserScrolled;
 	///<summary>Updates the scroll offset of the scrollbox.</summary>
-	public  void SetScrollOffset(float NewScrollOffset) {}
+	public void SetScrollOffset(float NewScrollOffset) {}
 	///<summary>Gets the scroll offset of the scrollbox in Slate Units.</summary>
-	public  float GetScrollOffset() { return default; }
+	public float GetScrollOffset() { return default; }
 	///<summary>Gets the scroll offset of the bottom of the ScrollBox in Slate Units.</summary>
-	public  float GetScrollOffsetOfEnd() { return default; }
+	public float GetScrollOffsetOfEnd() { return default; }
 	///<summary>Gets the fraction currently visible in the scrollbox</summary>
-	public  float GetViewFraction() { return default; }
+	public float GetViewFraction() { return default; }
 	///<summary>GetViewOffsetFraction</summary>
-	public  float GetViewOffsetFraction() { return default; }
+	public float GetViewOffsetFraction() { return default; }
 	///<summary>Scrolls the ScrollBox to the top instantly</summary>
-	public  void ScrollToStart() {}
+	public void ScrollToStart() {}
 	///<summary>Scrolls the ScrollBox to the bottom instantly during the next layout pass.</summary>
-	public  void ScrollToEnd() {}
+	public void ScrollToEnd() {}
 	///<summary>Scrolls the ScrollBox to the widget during the next layout pass.</summary>
-	public  void ScrollWidgetIntoView(UWidget WidgetToFind,bool AnimateScroll/*=true*/,EDescendantScrollDestination ScrollDestination/*=EDescendantScrollDestination.IntoView*/,float Padding/*=0f*/) {}
+	public void ScrollWidgetIntoView(UWidget WidgetToFind,bool AnimateScroll/*=true*/,EDescendantScrollDestination ScrollDestination/*=EDescendantScrollDestination.IntoView*/,float Padding/*=0f*/) {}
 }

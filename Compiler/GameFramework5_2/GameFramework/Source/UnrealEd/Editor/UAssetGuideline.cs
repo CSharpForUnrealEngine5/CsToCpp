@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>User data that can be attached to assets to check on load for guidlelines (plugins, project settings, etc).</summary>

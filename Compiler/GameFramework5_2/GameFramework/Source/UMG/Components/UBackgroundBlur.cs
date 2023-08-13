@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>A background blur is a container widget that can contain one child widget, providing an opportunity</summary>
@@ -24,19 +23,19 @@ public partial class UBackgroundBlur : UContentWidget {
 	///<summary>An image to draw instead of applying a blur when low quality override mode is enabled.</summary>
 	public FSlateBrush LowQualityFallbackBrush;
 	///<summary>SetPadding</summary>
-	public  void SetPadding(FMargin InPadding) {}
+	public void SetPadding(FMargin InPadding) {}
 	///<summary>SetHorizontalAlignment</summary>
-	public  void SetHorizontalAlignment(EHorizontalAlignment InHorizontalAlignment) {}
+	public void SetHorizontalAlignment(EHorizontalAlignment InHorizontalAlignment) {}
 	///<summary>SetVerticalAlignment</summary>
-	public  void SetVerticalAlignment(EVerticalAlignment InVerticalAlignment) {}
+	public void SetVerticalAlignment(EVerticalAlignment InVerticalAlignment) {}
 	///<summary>SetApplyAlphaToBlur</summary>
-	public  void SetApplyAlphaToBlur(bool bInApplyAlphaToBlur) {}
+	public void SetApplyAlphaToBlur(bool bInApplyAlphaToBlur) {}
 	///<summary>SetBlurRadius</summary>
-	public  void SetBlurRadius(int InBlurRadius) {}
+	public void SetBlurRadius(int InBlurRadius) {}
 	///<summary>SetBlurStrength</summary>
-	public  void SetBlurStrength(float InStrength) {}
+	public virtual void SetBlurStrength(float InStrength) {}
 	///<summary>SetCornerRadius</summary>
-	public  void SetCornerRadius(FVector4 InCornerRadius) {}
+	public virtual void SetCornerRadius(FVector4 InCornerRadius) {}
 	///<summary>SetLowQualityFallbackBrush</summary>
-	public  void SetLowQualityFallbackBrush(FSlateBrush InBrush) {}
+	public void SetLowQualityFallbackBrush(FSlateBrush InBrush) {}
 }

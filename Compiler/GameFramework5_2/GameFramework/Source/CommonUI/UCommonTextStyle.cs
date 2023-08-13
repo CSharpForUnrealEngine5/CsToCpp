@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>* ---- All properties must be EditDefaultsOnly, BlueprintReadOnly !!! -----</summary>
@@ -22,17 +21,17 @@ public partial class UCommonTextStyle : UObject {
 	///<summary>The amount to scale each lines height by at each size</summary>
 	public float LineHeightPercentage;
 	///<summary>GetFont</summary>
-	public  void GetFont(FSlateFontInfo OutFont) {}
+	public void GetFont(FSlateFontInfo OutFont) {}
 	///<summary>GetColor</summary>
-	public  void GetColor(FLinearColor OutColor) {}
+	public void GetColor(FLinearColor OutColor) {}
 	///<summary>GetMargin</summary>
-	public  void GetMargin(FMargin OutMargin) {}
+	public void GetMargin(FMargin OutMargin) {}
 	///<summary>GetLineHeightPercentage</summary>
-	public  float GetLineHeightPercentage() { return default; }
+	public float GetLineHeightPercentage() { return default; }
 	///<summary>GetShadowOffset</summary>
-	public  void GetShadowOffset(FVector2D OutShadowOffset) {}
+	public void GetShadowOffset(FVector2D OutShadowOffset) {}
 	///<summary>GetShadowColor</summary>
-	public  void GetShadowColor(FLinearColor OutColor) {}
+	public void GetShadowColor(FLinearColor OutColor) {}
 	///<summary>GetStrikeBrush</summary>
-	public  void GetStrikeBrush(FSlateBrush OutStrikeBrush) {}
+	public void GetStrikeBrush(FSlateBrush OutStrikeBrush) {}
 }

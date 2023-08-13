@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Instance of a contextual animation scene</summary>
@@ -18,13 +17,13 @@ public partial class UContextualAnimSceneInstance : UObject {
 	///<summary>Delegate to notify external objects when an animation hits a &#39;PlayMontageNotify&#39; or &#39;PlayMontageNotifyWindow&#39; end</summary>
 	public FOnContextualAnimSceneNotify OnNotifyEnd;
 	///<summary>GetActorByRole</summary>
-	public  AActor GetActorByRole(string Role) { return default; }
+	public AActor GetActorByRole(string Role) { return default; }
 	///<summary>OnMontageBlendingOut</summary>
-	public  void OnMontageBlendingOut(UAnimMontage Montage,bool bInterrupted) {}
+	public void OnMontageBlendingOut(UAnimMontage Montage,bool bInterrupted) {}
 	///<summary>OnNotifyBeginReceived</summary>
-	public  void OnNotifyBeginReceived(string NotifyName,FBranchingPointNotifyPayload BranchingPointNotifyPayload) {}
+	public void OnNotifyBeginReceived(string NotifyName,FBranchingPointNotifyPayload BranchingPointNotifyPayload) {}
 	///<summary>OnNotifyEndReceived</summary>
-	public  void OnNotifyEndReceived(string NotifyName,FBranchingPointNotifyPayload BranchingPointNotifyPayload) {}
+	public void OnNotifyEndReceived(string NotifyName,FBranchingPointNotifyPayload BranchingPointNotifyPayload) {}
 	///<summary>Scene asset this instance was created from</summary>
 	public UContextualAnimSceneAsset SceneAsset;
 	///<summary>Bindings</summary>

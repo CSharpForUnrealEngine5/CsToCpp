@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("VCamBlueprintFunctionLibrary.h")]
@@ -77,7 +76,7 @@ public partial class UVCamBlueprintFunctionLibrary : UBlueprintFunctionLibrary {
 	///<summary>Check whether a recording is currently active</summary>
 	public static bool IsRecording() { return default; }
 	///<summary>FOnTakeRecorderSlateChanged_VCam</summary>
-	public  void FOnTakeRecorderSlateChanged_VCam(string Slate) {}
+	public void FOnTakeRecorderSlateChanged_VCam(string Slate) {}
 	///<summary>Called when the slate is changed.</summary>
 	public static void SetOnTakeRecorderSlateChanged(FOnTakeRecorderSlateChanged_VCam OnTakeRecorderSlateChanged) {}
 }

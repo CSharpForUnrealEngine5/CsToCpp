@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>A Component referencing a vector field.</summary>
@@ -14,5 +13,5 @@ public partial class UVectorFieldComponent : UPrimitiveComponent {
 	///<summary>If true, the vector field is only used for preview visualizations.</summary>
 	public bool bPreviewVectorField;
 	///<summary>Set the intensity of the vector field.</summary>
-	public  void SetIntensity(float NewIntensity) {}
+	public virtual void SetIntensity(float NewIntensity) {}
 }

@@ -1,23 +1,22 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("VirtualCameraSubsystem.h")]
 public partial class UVirtualCameraSubsystem : UEngineSubsystem {
 	public static UClass StaticClass() {return default;}
 	///<summary>StartStreaming</summary>
-	public  bool StartStreaming() { return default; }
+	public bool StartStreaming() { return default; }
 	///<summary>StopStreaming</summary>
-	public  bool StopStreaming() { return default; }
+	public bool StopStreaming() { return default; }
 	///<summary>IsStreaming</summary>
-	public  bool IsStreaming() { return default; }
+	public bool IsStreaming() { return default; }
 	///<summary>HandleSelectionChangedEvent</summary>
-	public  void HandleSelectionChangedEvent(UObject SelectedObject) {}
+	public void HandleSelectionChangedEvent(UObject SelectedObject) {}
 	///<summary>HandleSelectObjectEvent</summary>
-	public  void HandleSelectObjectEvent(UObject SelectedObject) {}
+	public void HandleSelectObjectEvent(UObject SelectedObject) {}
 	///<summary>GetVirtualCameraController</summary>
-	public  object /*ReturnValue*/ GetVirtualCameraController() { return default; }
+	public object /*ReturnValue*/ GetVirtualCameraController() { return default; }
 	///<summary>SetVirtualCameraController</summary>
-	public  void SetVirtualCameraController(object /*VirtualCamera*/ VirtualCamera) {}
+	public void SetVirtualCameraController(object /*VirtualCamera*/ VirtualCamera) {}
 	///<summary>SequencePlaybackController</summary>
 	public ULevelSequencePlaybackController SequencePlaybackController;
 	///<summary>OnStreamStartedDelegate</summary>

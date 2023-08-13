@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>A light component which emits light from a single point equally in all directions.</summary>
@@ -16,9 +15,9 @@ public partial class ULocalLightComponent : ULightComponent {
 	///<summary>The Lightmass settings for this object.</summary>
 	public FLightmassPointLightSettings LightmassSettings;
 	///<summary>SetAttenuationRadius</summary>
-	public  void SetAttenuationRadius(float NewRadius) {}
+	public void SetAttenuationRadius(float NewRadius) {}
 	///<summary>Set the units used for the intensity of the light</summary>
-	public  void SetIntensityUnits(ELightUnits NewIntensityUnits) {}
+	public void SetIntensityUnits(ELightUnits NewIntensityUnits) {}
 	///<summary>GetUnitsConversionFactor</summary>
 	public static float GetUnitsConversionFactor(ELightUnits SrcUnits,ELightUnits TargetUnits,float CosHalfConeAngle/*=-1f*/) { return default; }
 }

@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>DecalActor contains a DecalComponent which can be used to render material modifications on top of existing geometry.</summary>
@@ -14,9 +13,9 @@ public partial class ADecalActor : AActor {
 	///<summary>formerly we used this component to draw a box, now we use the DecalComponentVisualizer</summary>
 	public UBoxComponent BoxComponent_DEPRECATED;
 	///<summary>BEGIN DEPRECATED (use component functions now in level script)</summary>
-	public  void SetDecalMaterial(UMaterialInterface NewDecalMaterial) {}
+	public void SetDecalMaterial(UMaterialInterface NewDecalMaterial) {}
 	///<summary>GetDecalMaterial</summary>
-	public  UMaterialInterface GetDecalMaterial() { return default; }
+	public UMaterialInterface GetDecalMaterial() { return default; }
 	///<summary>CreateDynamicMaterialInstance</summary>
-	public  UMaterialInstanceDynamic CreateDynamicMaterialInstance() { return default; }
+	public virtual UMaterialInstanceDynamic CreateDynamicMaterialInstance() { return default; }
 }

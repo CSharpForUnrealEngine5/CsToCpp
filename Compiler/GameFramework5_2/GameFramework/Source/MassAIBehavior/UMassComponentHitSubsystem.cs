@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Subsystem that keeps track of the latest component hits and allow mass entities to retrieve and handle them</summary>
@@ -6,7 +5,7 @@ using CSharpToCpp.Utilities;
 public partial class UMassComponentHitSubsystem : UTickableWorldSubsystem {
 	public static UClass StaticClass() {return default;}
 	///<summary>OnHitCallback</summary>
-	public  void OnHitCallback(UPrimitiveComponent HitComp,AActor OtherActor,UPrimitiveComponent OtherComp,FVector NormalImpulse,FHitResult Hit) {}
+	public void OnHitCallback(UPrimitiveComponent HitComp,AActor OtherActor,UPrimitiveComponent OtherComp,FVector NormalImpulse,FHitResult Hit) {}
 	///<summary>SignalSubsystem</summary>
 	public UMassSignalSubsystem SignalSubsystem;
 	///<summary>AgentSubsystem</summary>

@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>A light component which emits light from a single point equally in all directions.</summary>
@@ -16,15 +15,15 @@ public partial class UPointLightComponent : ULocalLightComponent {
 	///<summary>Length of light source shape.</summary>
 	public float SourceLength;
 	///<summary>SetUseInverseSquaredFalloff</summary>
-	public  void SetUseInverseSquaredFalloff(bool bNewValue) {}
+	public void SetUseInverseSquaredFalloff(bool bNewValue) {}
 	///<summary>SetLightFalloffExponent</summary>
-	public  void SetLightFalloffExponent(float NewLightFalloffExponent) {}
+	public void SetLightFalloffExponent(float NewLightFalloffExponent) {}
 	///<summary>SetInverseExposureBlend</summary>
-	public  void SetInverseExposureBlend(float NewInverseExposureBlend) {}
+	public void SetInverseExposureBlend(float NewInverseExposureBlend) {}
 	///<summary>SetSourceRadius</summary>
-	public  void SetSourceRadius(float bNewValue) {}
+	public void SetSourceRadius(float bNewValue) {}
 	///<summary>SetSoftSourceRadius</summary>
-	public  void SetSoftSourceRadius(float bNewValue) {}
+	public void SetSoftSourceRadius(float bNewValue) {}
 	///<summary>SetSourceLength</summary>
-	public  void SetSourceLength(float NewValue) {}
+	public void SetSourceLength(float NewValue) {}
 }

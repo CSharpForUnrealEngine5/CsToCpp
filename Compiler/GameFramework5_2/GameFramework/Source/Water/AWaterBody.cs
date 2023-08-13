@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>@todo_water: Remove Blueprintable</summary>
@@ -6,13 +5,13 @@ using CSharpToCpp.Utilities;
 public partial class AWaterBody : AActor {
 	public static UClass StaticClass() {return default;}
 	///<summary>Returns the type of body</summary>
-	public  EWaterBodyType GetWaterBodyType() { return default; }
+	public virtual EWaterBodyType GetWaterBodyType() { return default; }
 	///<summary>Returns water spline component</summary>
-	public  UWaterSplineComponent GetWaterSpline() { return default; }
+	public UWaterSplineComponent GetWaterSpline() { return default; }
 	///<summary>SetWaterWaves</summary>
-	public  void SetWaterWaves(UWaterWavesBase InWaterWaves) {}
+	public void SetWaterWaves(UWaterWavesBase InWaterWaves) {}
 	///<summary>Returns the water body component</summary>
-	public  UWaterBodyComponent GetWaterBodyComponent() { return default; }
+	public UWaterBodyComponent GetWaterBodyComponent() { return default; }
 	///<summary>The spline data attached to this water type.</summary>
 	public UWaterSplineComponent SplineComp;
 	///<summary>WaterSplineMetadata</summary>
@@ -26,25 +25,25 @@ public partial class AWaterBody : AActor {
 	///<summary>WaterWaves</summary>
 	public UWaterWavesBase WaterWaves;
 	///<summary>GetRiverToLakeTransitionMaterialInstance</summary>
-	public  UMaterialInstanceDynamic GetRiverToLakeTransitionMaterialInstance() { return default; }
+	public virtual UMaterialInstanceDynamic GetRiverToLakeTransitionMaterialInstance() { return default; }
 	///<summary>GetRiverToOceanTransitionMaterialInstance</summary>
-	public  UMaterialInstanceDynamic GetRiverToOceanTransitionMaterialInstance() { return default; }
+	public virtual UMaterialInstanceDynamic GetRiverToOceanTransitionMaterialInstance() { return default; }
 	///<summary>SetWaterMaterial</summary>
-	public  void SetWaterMaterial(UMaterialInterface InMaterial) {}
+	public void SetWaterMaterial(UMaterialInterface InMaterial) {}
 	///<summary>GetWaterMaterialInstance</summary>
-	public  UMaterialInstanceDynamic GetWaterMaterialInstance() { return default; }
+	public UMaterialInstanceDynamic GetWaterMaterialInstance() { return default; }
 	///<summary>GetWaterVelocityAtSplineInputKey</summary>
-	public  float GetWaterVelocityAtSplineInputKey(float InKey) { return default; }
+	public virtual float GetWaterVelocityAtSplineInputKey(float InKey) { return default; }
 	///<summary>GetWaterVelocityVectorAtSplineInputKey</summary>
-	public  FVector GetWaterVelocityVectorAtSplineInputKey(float InKey) { return default; }
+	public virtual FVector GetWaterVelocityVectorAtSplineInputKey(float InKey) { return default; }
 	///<summary>GetAudioIntensityAtSplineInputKey</summary>
-	public  float GetAudioIntensityAtSplineInputKey(float InKey) { return default; }
+	public virtual float GetAudioIntensityAtSplineInputKey(float InKey) { return default; }
 	///<summary>GetIslands</summary>
-	public  TArray<AWaterBodyIsland> GetIslands() { return default; }
+	public TArray<AWaterBodyIsland> GetIslands() { return default; }
 	///<summary>GetExclusionVolumes</summary>
-	public  TArray<AWaterBodyExclusionVolume> GetExclusionVolumes() { return default; }
+	public TArray<AWaterBodyExclusionVolume> GetExclusionVolumes() { return default; }
 	///<summary>OnWaterBodyChanged</summary>
-	public  void OnWaterBodyChanged(bool bShapeOrPositionChanged,bool bWeightmapSettingsChanged/*=false*/) {}
+	public void OnWaterBodyChanged(bool bShapeOrPositionChanged,bool bWeightmapSettingsChanged/*=false*/) {}
 	///<summary>PhysicalMaterial_DEPRECATED</summary>
 	public UPhysicalMaterial PhysicalMaterial_DEPRECATED;
 	///<summary>TargetWaveMaskDepth_DEPRECATED</summary>

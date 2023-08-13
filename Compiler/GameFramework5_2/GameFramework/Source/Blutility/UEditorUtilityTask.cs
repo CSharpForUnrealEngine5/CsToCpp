@@ -1,21 +1,20 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("EditorUtilityTask.h")]
 public partial class UEditorUtilityTask : UObject {
 	public static UClass StaticClass() {return default;}
 	///<summary>Run</summary>
-	public  void Run() {}
+	public void Run() {}
 	///<summary>FinishExecutingTask</summary>
-	public  void FinishExecutingTask() {}
+	public void FinishExecutingTask() {}
 	///<summary>SetTaskNotificationText</summary>
-	public  void SetTaskNotificationText(string Text) {}
+	public void SetTaskNotificationText(FText Text) {}
 	///<summary>WasCancelRequested</summary>
-	public  bool WasCancelRequested() { return default; }
+	public bool WasCancelRequested() { return default; }
 	///<summary>ReceiveBeginExecution</summary>
-	public  void ReceiveBeginExecution() {}
+	public void ReceiveBeginExecution() {}
 	///<summary>ReceiveCancelRequested</summary>
-	public  void ReceiveCancelRequested() {}
+	public void ReceiveCancelRequested() {}
 	///<summary>MyTaskManager</summary>
 	public UEditorUtilitySubsystem MyTaskManager;
 	///<summary>MyParentTask</summary>

@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("USDStageActor.h")]
@@ -29,47 +28,47 @@ public partial class AUsdStageActor : AActor {
 	///<summary>Describes what to add to the root bone animation within generated AnimSequences, if anything</summary>
 	public EUsdRootMotionHandling RootMotionHandling;
 	///<summary>SetRootLayer</summary>
-	public  void SetRootLayer(string RootFilePath) {}
+	public void SetRootLayer(string RootFilePath) {}
 	///<summary>SetAssetCache</summary>
-	public  void SetAssetCache(UUsdAssetCache2 NewCache) {}
+	public void SetAssetCache(UUsdAssetCache2 NewCache) {}
 	///<summary>SetInitialLoadSet</summary>
-	public  void SetInitialLoadSet(EUsdInitialLoadSet NewLoadSet) {}
+	public void SetInitialLoadSet(EUsdInitialLoadSet NewLoadSet) {}
 	///<summary>SetInterpolationType</summary>
-	public  void SetInterpolationType(EUsdInterpolationType NewType) {}
+	public void SetInterpolationType(EUsdInterpolationType NewType) {}
 	///<summary>SetKindsToCollapse</summary>
-	public  void SetKindsToCollapse(int NewKindsToCollapse) {}
+	public void SetKindsToCollapse(int NewKindsToCollapse) {}
 	///<summary>SetMergeIdenticalMaterialSlots</summary>
-	public  void SetMergeIdenticalMaterialSlots(bool bMerge) {}
+	public void SetMergeIdenticalMaterialSlots(bool bMerge) {}
 	///<summary>SetCollapseTopLevelPointInstancers</summary>
-	public  void SetCollapseTopLevelPointInstancers(bool bCollapse) {}
+	public void SetCollapseTopLevelPointInstancers(bool bCollapse) {}
 	///<summary>SetPurposesToLoad</summary>
-	public  void SetPurposesToLoad(int NewPurposesToLoad) {}
+	public void SetPurposesToLoad(int NewPurposesToLoad) {}
 	///<summary>SetNaniteTriangleThreshold</summary>
-	public  void SetNaniteTriangleThreshold(int NewNaniteTriangleThreshold) {}
+	public void SetNaniteTriangleThreshold(int NewNaniteTriangleThreshold) {}
 	///<summary>SetRenderContext</summary>
-	public  void SetRenderContext(string NewRenderContext) {}
+	public void SetRenderContext(string NewRenderContext) {}
 	///<summary>SetMaterialPurpose</summary>
-	public  void SetMaterialPurpose(string NewMaterialPurpose) {}
+	public void SetMaterialPurpose(string NewMaterialPurpose) {}
 	///<summary>SetRootMotionHandling</summary>
-	public  void SetRootMotionHandling(EUsdRootMotionHandling NewHandlingStrategy) {}
+	public void SetRootMotionHandling(EUsdRootMotionHandling NewHandlingStrategy) {}
 	///<summary>GetTime</summary>
-	public  float GetTime() { return default; }
+	public float GetTime() { return default; }
 	///<summary>SetTime</summary>
-	public  void SetTime(float InTime) {}
+	public void SetTime(float InTime) {}
 	///<summary>GetLevelSequence</summary>
-	public  ULevelSequence GetLevelSequence() { return default; }
+	public ULevelSequence GetLevelSequence() { return default; }
 	///<summary>Gets the transient component that was generated for a prim with a given prim path.</summary>
-	public  USceneComponent GetGeneratedComponent(string PrimPath) { return default; }
+	public USceneComponent GetGeneratedComponent(string PrimPath) { return default; }
 	///<summary>Gets the transient assets that were generated for a prim with a given prim path. Likely one asset (e.g. UStaticMesh), but can be multiple (USkeletalMesh, USkeleton, etc.)</summary>
-	public  TArray<UObject> GetGeneratedAssets(string PrimPath) { return default; }
+	public TArray<UObject> GetGeneratedAssets(string PrimPath) { return default; }
 	///<summary>Gets the path to the prim that was parsed to generate the given `Object`.</summary>
-	public  string GetSourcePrimPath(UObject Object) { return default; }
+	public string GetSourcePrimPath(UObject Object) { return default; }
 	///<summary>Creates a brand new, memory-only USD stage and opens it</summary>
-	public  void NewStage() {}
+	public void NewStage() {}
 	///<summary>If IsolatedStageRootLayer is the identifier of one of the sublayers of the currently opened stage, this will</summary>
-	public  void SetIsolatedRootLayer(string IsolatedStageRootLayer) {}
+	public void SetIsolatedRootLayer(string IsolatedStageRootLayer) {}
 	///<summary>Returns the root layer identifier of the currently isolated stage if we&#39;re in isolated mode, and the empty</summary>
-	public  string GetIsolatedRootLayer() { return default; }
+	public string GetIsolatedRootLayer() { return default; }
 	///<summary>SceneComponent</summary>
 	public USceneComponent SceneComponent;
 	///<summary>TimeCode to evaluate the USD stage at</summary>

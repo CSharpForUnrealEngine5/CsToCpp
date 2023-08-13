@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>The APCGPartitionActor actor is used to store grid cell data</summary>
@@ -6,9 +5,9 @@ using CSharpToCpp.Utilities;
 public partial class APCGPartitionActor : APartitionActor {
 	public static UClass StaticClass() {return default;}
 	///<summary>TODO: Make this in-editor only; during runtime, we should keep a map of component to bounds/volume only</summary>
-	public  UPCGComponent GetLocalComponent(UPCGComponent OriginalComponent) { return default; }
+	public UPCGComponent GetLocalComponent(UPCGComponent OriginalComponent) { return default; }
 	///<summary>GetOriginalComponent</summary>
-	public  UPCGComponent GetOriginalComponent(UPCGComponent LocalComponent) { return default; }
+	public UPCGComponent GetOriginalComponent(UPCGComponent LocalComponent) { return default; }
 	///<summary>PCGGuid</summary>
 	public FGuid PCGGuid;
 	///<summary>LocalToOriginal</summary>

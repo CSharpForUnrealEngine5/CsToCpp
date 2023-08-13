@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Animation/AnimNotifies/AnimNotifyState_Trail.h")]
@@ -7,7 +6,7 @@ public partial class UAnimNotifyState_Trail : UAnimNotifyState {
 	///<summary>The particle system to use for this trail.</summary>
 	public UParticleSystem PSTemplate;
 	///<summary>OverridePSTemplate</summary>
-	public  UParticleSystem OverridePSTemplate(USkeletalMeshComponent MeshComp,UAnimSequenceBase Animation) { return default; }
+	public UParticleSystem OverridePSTemplate(USkeletalMeshComponent MeshComp,UAnimSequenceBase Animation) { return default; }
 	///<summary>Name of the first socket defining this trail.</summary>
 	public string FirstSocketName;
 	///<summary>Name of the second socket defining this trail.</summary>

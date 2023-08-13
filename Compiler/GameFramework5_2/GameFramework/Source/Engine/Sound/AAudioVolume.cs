@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Sound/AudioVolume.h")]
@@ -17,17 +16,17 @@ public partial class AAudioVolume : AVolume {
 	///<summary>Submix effect chain override settings. Will override the effect chains on the given submixes when the conditions are met.</summary>
 	public TArray<FAudioVolumeSubmixOverrideSettings> SubmixOverrideSettings;
 	///<summary>SetPriority</summary>
-	public  void SetPriority(float NewPriority) {}
+	public void SetPriority(float NewPriority) {}
 	///<summary>SetEnabled</summary>
-	public  void SetEnabled(bool bNewEnabled) {}
+	public void SetEnabled(bool bNewEnabled) {}
 	///<summary>SetReverbSettings</summary>
-	public  void SetReverbSettings(FReverbSettings NewReverbSettings) {}
+	public void SetReverbSettings(FReverbSettings NewReverbSettings) {}
 	///<summary>SetInteriorSettings</summary>
-	public  void SetInteriorSettings(FInteriorSettings NewInteriorSettings) {}
+	public void SetInteriorSettings(FInteriorSettings NewInteriorSettings) {}
 	///<summary>SetSubmixSendSettings</summary>
-	public  void SetSubmixSendSettings(TArray<FAudioVolumeSubmixSendSettings> NewSubmixSendSettings) {}
+	public void SetSubmixSendSettings(TArray<FAudioVolumeSubmixSendSettings> NewSubmixSendSettings) {}
 	///<summary>SetSubmixOverrideSettings</summary>
-	public  void SetSubmixOverrideSettings(TArray<FAudioVolumeSubmixOverrideSettings> NewSubmixOverrideSettings) {}
+	public void SetSubmixOverrideSettings(TArray<FAudioVolumeSubmixOverrideSettings> NewSubmixOverrideSettings) {}
 	///<summary>OnRep_bEnabled</summary>
-	public  void OnRep_bEnabled() {}
+	public virtual void OnRep_bEnabled() {}
 }

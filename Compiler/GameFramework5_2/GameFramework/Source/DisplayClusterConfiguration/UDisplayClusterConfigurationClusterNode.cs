@@ -1,15 +1,14 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("DisplayClusterConfigurationTypes.h")]
 public partial class UDisplayClusterConfigurationClusterNode : UDisplayClusterConfigurationData_Base {
 	public static UClass StaticClass() {return default;}
 	///<summary>GetViewportIds</summary>
-	public  void GetViewportIds(TArray<string> OutViewportIds) {}
+	public void GetViewportIds(TArray<string> OutViewportIds) {}
 	///<summary>GetViewport</summary>
-	public  UDisplayClusterConfigurationViewport GetViewport(string ViewportId) { return default; }
+	public UDisplayClusterConfigurationViewport GetViewport(string ViewportId) { return default; }
 	///<summary>Return all references to meshes from policy, and other</summary>
-	public  void GetReferencedMeshNames(TArray<string> OutMeshNames) {}
+	public void GetReferencedMeshNames(TArray<string> OutMeshNames) {}
 	///<summary>IP address of this specific cluster Node</summary>
 	public string Host;
 	///<summary>Enables or disables sound on nDisplay primary Node</summary>

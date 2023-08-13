@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>USynesthesiaSpectrumAnalysisAnalyzer</summary>
@@ -12,7 +11,7 @@ public partial class USynesthesiaSpectrumAnalyzer : UAudioAnalyzer {
 	///<summary>Delegate to receive the latest per-channel Spectrum results. If bDownmixToMono setting is true, results will be in channel index 0.</summary>
 	public FOnLatestSpectrumResults OnLatestSpectrumResults;
 	///<summary>GetCenterFrequencies</summary>
-	public  void GetCenterFrequencies(float InSampleRate,TArray<float> OutCenterFrequencies) {}
+	public void GetCenterFrequencies(float InSampleRate,TArray<float> OutCenterFrequencies) {}
 	///<summary>GetNumCenterFrequencies</summary>
-	public  int GetNumCenterFrequencies() { return default; }
+	public int GetNumCenterFrequencies() { return default; }
 }

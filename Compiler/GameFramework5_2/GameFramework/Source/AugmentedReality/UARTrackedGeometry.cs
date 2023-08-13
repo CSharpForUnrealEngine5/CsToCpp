@@ -1,33 +1,32 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("ARTrackable.h")]
 public partial class UARTrackedGeometry : UObject {
 	public static UClass StaticClass() {return default;}
 	///<summary>GetLocalToWorldTransform</summary>
-	public  FTransform GetLocalToWorldTransform() { return default; }
+	public FTransform GetLocalToWorldTransform() { return default; }
 	///<summary>GetLocalToTrackingTransform</summary>
-	public  FTransform GetLocalToTrackingTransform() { return default; }
+	public FTransform GetLocalToTrackingTransform() { return default; }
 	///<summary>GetTrackingState</summary>
-	public  EARTrackingState GetTrackingState() { return default; }
+	public EARTrackingState GetTrackingState() { return default; }
 	///<summary>IsTracked</summary>
-	public  bool IsTracked() { return default; }
+	public bool IsTracked() { return default; }
 	///<summary>GetDebugName</summary>
-	public  string GetDebugName() { return default; }
+	public string GetDebugName() { return default; }
 	///<summary>GetName</summary>
-	public  string GetName() { return default; }
+	public string GetName() { return default; }
 	///<summary>GetLastUpdateFrameNumber</summary>
-	public  int GetLastUpdateFrameNumber() { return default; }
+	public int GetLastUpdateFrameNumber() { return default; }
 	///<summary>GetLastUpdateTimestamp</summary>
-	public  float GetLastUpdateTimestamp() { return default; }
+	public float GetLastUpdateTimestamp() { return default; }
 	///<summary>GetUnderlyingMesh</summary>
-	public  UMRMeshComponent GetUnderlyingMesh() { return default; }
+	public UMRMeshComponent GetUnderlyingMesh() { return default; }
 	///<summary>UniqueId</summary>
 	public FGuid UniqueId;
 	///<summary>GetObjectClassification</summary>
-	public  EARObjectClassification GetObjectClassification() { return default; }
+	public EARObjectClassification GetObjectClassification() { return default; }
 	///<summary>HasSpatialMeshUsageFlag</summary>
-	public  bool HasSpatialMeshUsageFlag(EARSpatialMeshUsageFlags InFlag) { return default; }
+	public bool HasSpatialMeshUsageFlag(EARSpatialMeshUsageFlags InFlag) { return default; }
 	///<summary>LocalToTrackingTransform</summary>
 	public FTransform LocalToTrackingTransform;
 	///<summary>LocalToAlignedTrackingTransform</summary>

@@ -1,29 +1,28 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Sections/MovieSceneDataLayerSection.h")]
 public partial class UMovieSceneDataLayerSection : UMovieSceneSection {
 	public static UClass StaticClass() {return default;}
 	///<summary>GetDesiredState</summary>
-	public  EDataLayerRuntimeState GetDesiredState() { return default; }
+	public EDataLayerRuntimeState GetDesiredState() { return default; }
 	///<summary>SetDesiredState</summary>
-	public  void SetDesiredState(EDataLayerRuntimeState InDesiredState) {}
+	public void SetDesiredState(EDataLayerRuntimeState InDesiredState) {}
 	///<summary>GetPrerollState</summary>
-	public  EDataLayerRuntimeState GetPrerollState() { return default; }
+	public EDataLayerRuntimeState GetPrerollState() { return default; }
 	///<summary>SetPrerollState</summary>
-	public  void SetPrerollState(EDataLayerRuntimeState InPrerollState) {}
+	public void SetPrerollState(EDataLayerRuntimeState InPrerollState) {}
 	///<summary>GetFlushOnUnload</summary>
-	public  bool GetFlushOnUnload() { return default; }
+	public bool GetFlushOnUnload() { return default; }
 	///<summary>SetFlushOnUnload</summary>
-	public  void SetFlushOnUnload(bool bFlushOnUnload) {}
+	public void SetFlushOnUnload(bool bFlushOnUnload) {}
 	///<summary>GetDataLayerAssets</summary>
-	public  TArray<UDataLayerAsset> GetDataLayerAssets() { return default; }
+	public TArray<UDataLayerAsset> GetDataLayerAssets() { return default; }
 	///<summary>SetDataLayerAssets</summary>
-	public  void SetDataLayerAssets(TArray<UDataLayerAsset> InDataLayerAssets) {}
+	public void SetDataLayerAssets(TArray<UDataLayerAsset> InDataLayerAssets) {}
 	///<summary>GetDataLayers</summary>
-	public  TArray<FActorDataLayer> GetDataLayers() { return default; }
+	public TArray<FActorDataLayer> GetDataLayers() { return default; }
 	///<summary>SetDataLayers</summary>
-	public  void SetDataLayers(TArray<FActorDataLayer> InDataLayers) {}
+	public void SetDataLayers(TArray<FActorDataLayer> InDataLayers) {}
 	///<summary>DataLayers</summary>
 	public TArray<FActorDataLayer> DataLayers;
 	///<summary>A list of data layers that should be loaded or unloaded by this section</summary>

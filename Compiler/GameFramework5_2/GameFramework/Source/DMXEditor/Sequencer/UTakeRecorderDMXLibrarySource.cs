@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>A recording source for DMX data related to a DMX Library</summary>
@@ -14,7 +13,7 @@ public partial class UTakeRecorderDMXLibrarySource : UTakeRecorderSource {
 	///<summary>If true, all values are recorded as normalized values (0.0 to 1.0).</summary>
 	public bool bRecordNormalizedValues;
 	///<summary>Adds all Patches from the active DMX Library as recording sources</summary>
-	public  void AddAllPatches() {}
+	public void AddAllPatches() {}
 	///<summary>Track recorder used by this source</summary>
 	public UMovieSceneDMXLibraryTrackRecorder TrackRecorder;
 }

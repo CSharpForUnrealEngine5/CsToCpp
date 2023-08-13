@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Options/GLTFProxyOptions.h")]
@@ -15,5 +14,5 @@ public partial class UGLTFProxyOptions : UObject {
 	///<summary>Input-specific default bake settings that override the general defaults above.</summary>
 	public TMap<EGLTFMaterialPropertyGroup,FGLTFOverrideMaterialBakeSettings> DefaultInputBakeSettings;
 	///<summary>ResetToDefault</summary>
-	public  void ResetToDefault() {}
+	public void ResetToDefault() {}
 }

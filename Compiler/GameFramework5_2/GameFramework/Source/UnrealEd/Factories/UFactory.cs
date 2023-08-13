@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Base class for all factories</summary>
@@ -6,9 +5,9 @@ using CSharpToCpp.Utilities;
 public partial class UFactory : UObject {
 	public static UClass StaticClass() {return default;}
 	///<summary>Whether the specified file can be imported by this factory. (Implemented in script)</summary>
-	public  bool ScriptFactoryCanImport(string Filename) { return default; }
+	public bool ScriptFactoryCanImport(string Filename) { return default; }
 	///<summary>Import object(s) using a task via script</summary>
-	public  bool ScriptFactoryCreateFile(UAssetImportTask InTask) { return default; }
+	public bool ScriptFactoryCreateFile(UAssetImportTask InTask) { return default; }
 	///<summary>The default value to return from CanCreateNew()</summary>
 	public bool bCreateNew;
 	///<summary>The class manufactured by this factory.</summary>

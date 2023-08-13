@@ -1,15 +1,14 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Recorder/TakeRecorder.h")]
 public partial class UTakeRecorder : UObject {
 	public static UClass StaticClass() {return default;}
 	///<summary>Access the number of seconds remaining before this recording will start</summary>
-	public  float GetCountdownSeconds() { return default; }
+	public float GetCountdownSeconds() { return default; }
 	///<summary>Access the sequence asset that this recorder is recording into</summary>
-	public  ULevelSequence GetSequence() { return default; }
+	public ULevelSequence GetSequence() { return default; }
 	///<summary>Get the current state of this recorder</summary>
-	public  ETakeRecorderState GetState() { return default; }
+	public ETakeRecorderState GetState() { return default; }
 	///<summary>The asset that we should output recorded data into</summary>
 	public ULevelSequence SequenceAsset;
 	///<summary>The overlay widget for this recording</summary>

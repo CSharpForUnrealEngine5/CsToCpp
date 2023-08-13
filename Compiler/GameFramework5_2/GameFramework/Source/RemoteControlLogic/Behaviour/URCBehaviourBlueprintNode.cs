@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Base blueprint class for behaviour node which holds the logic to execute behaviour</summary>
@@ -6,11 +5,11 @@ using CSharpToCpp.Utilities;
 public partial class URCBehaviourBlueprintNode : URCBehaviourNode {
 	public static UClass StaticClass() {return default;}
 	///<summary>IsSupported</summary>
-	public  bool IsSupported(URCBehaviour InBehaviour) { return default; }
+	public bool IsSupported(URCBehaviour InBehaviour) { return default; }
 	///<summary>Execute</summary>
-	public  bool Execute(URCBehaviour InBehaviour) { return default; }
+	public bool Execute(URCBehaviour InBehaviour) { return default; }
 	///<summary>PreExecute</summary>
-	public  void PreExecute(URCBehaviour InBehaviour) {}
+	public void PreExecute(URCBehaviour InBehaviour) {}
 	///<summary>OnPassed</summary>
-	public  void OnPassed(URCBehaviour InBehaviour) {}
+	public void OnPassed(URCBehaviour InBehaviour) {}
 }

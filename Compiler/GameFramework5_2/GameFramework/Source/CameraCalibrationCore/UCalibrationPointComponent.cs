@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>One or more instances of this component can be added to an actor (e.g. a static mesh actor blueprint),</summary>
@@ -14,11 +13,11 @@ public partial class UCalibrationPointComponent : UProceduralMeshComponent {
 	///<summary>Shape used to visualize the calibration (sub)points</summary>
 	public ECalibrationPointVisualization VisualizationShape;
 	///<summary>Returns the World location of the subpoint (or the component) specified by name</summary>
-	public  bool GetWorldLocation(string InPointName,FVector OutLocation) { return default; }
+	public bool GetWorldLocation(string InPointName,FVector OutLocation) { return default; }
 	///<summary>Namespaces the given subpoint name. Does not check that the subpoint exists.</summary>
-	public  bool NamespacedSubpointName(string InSubpointName,string OutNamespacedName) { return default; }
+	public bool NamespacedSubpointName(string InSubpointName,string OutNamespacedName) { return default; }
 	///<summary>Gathers the namespaced names of the subpoints and the component itself.</summary>
-	public  void GetNamespacedPointNames(TArray<string> OutNamespacedNames) {}
+	public void GetNamespacedPointNames(TArray<string> OutNamespacedNames) {}
 	///<summary>Rebuilds the point visualization.</summary>
-	public  void RebuildVertices() {}
+	public void RebuildVertices() {}
 }

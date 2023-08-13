@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>UNiagaraComponent is the primitive component for a Niagara System.</summary>
@@ -40,151 +39,151 @@ public partial class UNiagaraComponent : UFXSystemComponent {
 	///<summary>Time between forced UpdateTransforms for systems that use dynamically calculated bounds,</summary>
 	public float MaxTimeBeforeForceUpdateTransform;
 	///<summary>Switch which asset the component is using.</summary>
-	public  void SetAsset(UNiagaraSystem InAsset,bool bResetExistingOverrideParameters/*=true*/) {}
+	public void SetAsset(UNiagaraSystem InAsset,bool bResetExistingOverrideParameters/*=true*/) {}
 	///<summary>GetAsset</summary>
-	public  UNiagaraSystem GetAsset() { return default; }
+	public UNiagaraSystem GetAsset() { return default; }
 	///<summary>SetForceSolo</summary>
-	public  void SetForceSolo(bool bInForceSolo) {}
+	public void SetForceSolo(bool bInForceSolo) {}
 	///<summary>GetForceSolo</summary>
-	public  bool GetForceSolo() { return default; }
+	public bool GetForceSolo() { return default; }
 	///<summary>SetGpuComputeDebug</summary>
-	public  void SetGpuComputeDebug(bool bEnableDebug) {}
+	public void SetGpuComputeDebug(bool bEnableDebug) {}
 	///<summary>Sets the custom time dilation value for the component.</summary>
-	public  void SetCustomTimeDilation(float Dilation/*=1.0f*/) {}
+	public void SetCustomTimeDilation(float Dilation/*=1.0f*/) {}
 	///<summary>GetCustomTimeDilation</summary>
-	public  float GetCustomTimeDilation() { return default; }
+	public float GetCustomTimeDilation() { return default; }
 	///<summary>GetAgeUpdateMode</summary>
-	public  ENiagaraAgeUpdateMode GetAgeUpdateMode() { return default; }
+	public ENiagaraAgeUpdateMode GetAgeUpdateMode() { return default; }
 	///<summary>Sets the age update mode for the System instance.</summary>
-	public  void SetAgeUpdateMode(ENiagaraAgeUpdateMode InAgeUpdateMode) {}
+	public void SetAgeUpdateMode(ENiagaraAgeUpdateMode InAgeUpdateMode) {}
 	///<summary>Gets the desired age of the System instance.  This is only relevant when using the DesiredAge age update mode.</summary>
-	public  float GetDesiredAge() { return default; }
+	public float GetDesiredAge() { return default; }
 	///<summary>Sets the desired age of the System instance.  This is only relevant when using the DesiredAge age update mode.</summary>
-	public  void SetDesiredAge(float InDesiredAge) {}
+	public void SetDesiredAge(float InDesiredAge) {}
 	///<summary>Sets the desired age of the System instance and designates that this change is a seek.  When seeking to a desired age the</summary>
-	public  void SeekToDesiredAge(float InDesiredAge) {}
+	public void SeekToDesiredAge(float InDesiredAge) {}
 	///<summary>Sets whether or not the system can render while seeking.</summary>
-	public  void SetCanRenderWhileSeeking(bool bInCanRenderWhileSeeking) {}
+	public void SetCanRenderWhileSeeking(bool bInCanRenderWhileSeeking) {}
 	///<summary>Gets the delta value which is used when seeking from the current age, to the desired age.  This is only relevant</summary>
-	public  float GetSeekDelta() { return default; }
+	public float GetSeekDelta() { return default; }
 	///<summary>Sets the delta value which is used when seeking from the current age, to the desired age.  This is only relevant</summary>
-	public  void SetSeekDelta(float InSeekDelta) {}
+	public void SetSeekDelta(float InSeekDelta) {}
 	///<summary>Gets whether or not the delta time used to tick the system instance when using desired age is locked to the seek delta.  When true, the system instance</summary>
-	public  bool GetLockDesiredAgeDeltaTimeToSeekDelta() { return default; }
+	public bool GetLockDesiredAgeDeltaTimeToSeekDelta() { return default; }
 	///<summary>Sets whether or not the delta time used to tick the system instance when using desired age is locked to the seek delta.  When true, the system instance</summary>
-	public  void SetLockDesiredAgeDeltaTimeToSeekDelta(bool bLock) {}
+	public void SetLockDesiredAgeDeltaTimeToSeekDelta(bool bLock) {}
 	///<summary>Get the maximum CPU time in seconds we will simulate to the desired age, when we go beyond this limit ticks will be processed in the next frame.</summary>
-	public  float GetMaxSimTime() { return default; }
+	public float GetMaxSimTime() { return default; }
 	///<summary>Sets the maximum CPU time in seconds we will simulate to the desired age, when we go beyond this limit ticks will be processed in the next frame.</summary>
-	public  void SetMaxSimTime(float InMaxTime) {}
+	public void SetMaxSimTime(float InMaxTime) {}
 	///<summary>SetAutoDestroy</summary>
-	public  void SetAutoDestroy(bool bInAutoDestroy) {}
+	public void SetAutoDestroy(bool bInAutoDestroy) {}
 	///<summary>SetTickBehavior</summary>
-	public  void SetTickBehavior(ENiagaraTickBehavior NewTickBehavior) {}
+	public void SetTickBehavior(ENiagaraTickBehavior NewTickBehavior) {}
 	///<summary>GetTickBehavior</summary>
-	public  ENiagaraTickBehavior GetTickBehavior() { return default; }
+	public ENiagaraTickBehavior GetTickBehavior() { return default; }
 	///<summary>Sets the fixed bounds for the system instance, this overrides all other bounds.</summary>
-	public  void SetSystemFixedBounds(FBox LocalBounds) {}
+	public void SetSystemFixedBounds(FBox LocalBounds) {}
 	///<summary>Gets the fixed bounds for the system instance.</summary>
-	public  FBox GetSystemFixedBounds() { return default; }
+	public FBox GetSystemFixedBounds() { return default; }
 	///<summary>Clear any previously set fixed bounds for the system instance.</summary>
-	public  void ClearSystemFixedBounds() {}
+	public void ClearSystemFixedBounds() {}
 	///<summary>Sets the fixed bounds for an emitter instance, this overrides all other bounds.</summary>
-	public  void SetEmitterFixedBounds(string EmitterName,FBox LocalBounds) {}
+	public void SetEmitterFixedBounds(string EmitterName,FBox LocalBounds) {}
 	///<summary>Gets the fixed bounds for an emitter instance.</summary>
-	public  FBox GetEmitterFixedBounds(string EmitterName) { return default; }
+	public FBox GetEmitterFixedBounds(string EmitterName) { return default; }
 	///<summary>Clear any previously set fixed bounds for the emitter instance.</summary>
-	public  void ClearEmitterFixedBounds(string EmitterName) {}
+	public void ClearEmitterFixedBounds(string EmitterName) {}
 	///<summary>SetRandomSeedOffset</summary>
-	public  void SetRandomSeedOffset(int NewRandomSeedOffset) {}
+	public void SetRandomSeedOffset(int NewRandomSeedOffset) {}
 	///<summary>GetRandomSeedOffset</summary>
-	public  int GetRandomSeedOffset() { return default; }
+	public int GetRandomSeedOffset() { return default; }
 	///<summary>Sets a Niagara FLinearColor parameter by name, overriding locally if necessary.</summary>
-	public  void SetNiagaraVariableLinearColor(string InVariableName,FLinearColor InValue) {}
+	public void SetNiagaraVariableLinearColor(string InVariableName,FLinearColor InValue) {}
 	///<summary>Sets a Niagara FLinearColor parameter by name, overriding locally if necessary.</summary>
-	public  void SetVariableLinearColor(string InVariableName,FLinearColor InValue) {}
+	public void SetVariableLinearColor(string InVariableName,FLinearColor InValue) {}
 	///<summary>Sets a Niagara Vector4 parameter by name, overriding locally if necessary.</summary>
-	public  void SetNiagaraVariableVec4(string InVariableName,FVector4 InValue) {}
+	public void SetNiagaraVariableVec4(string InVariableName,FVector4 InValue) {}
 	///<summary>Sets a Niagara Vector4 parameter by name, overriding locally if necessary.</summary>
-	public  void SetVariableVec4(string InVariableName,FVector4 InValue) {}
+	public void SetVariableVec4(string InVariableName,FVector4 InValue) {}
 	///<summary>Sets a Niagara quaternion parameter by name, overriding locally if necessary.</summary>
-	public  void SetNiagaraVariableQuat(string InVariableName,FQuat InValue) {}
+	public void SetNiagaraVariableQuat(string InVariableName,FQuat InValue) {}
 	///<summary>Sets a Niagara quaternion parameter by name, overriding locally if necessary.</summary>
-	public  void SetVariableQuat(string InVariableName,FQuat InValue) {}
+	public void SetVariableQuat(string InVariableName,FQuat InValue) {}
 	///<summary>Sets a Niagara matrix parameter by name, overriding locally if necessary.</summary>
-	public  void SetNiagaraVariableMatrix(string InVariableName,FMatrix InValue) {}
+	public void SetNiagaraVariableMatrix(string InVariableName,FMatrix InValue) {}
 	///<summary>Sets a Niagara matrix parameter by name, overriding locally if necessary.</summary>
-	public  void SetVariableMatrix(string InVariableName,FMatrix InValue) {}
+	public void SetVariableMatrix(string InVariableName,FMatrix InValue) {}
 	///<summary>Sets a Niagara Vector3 parameter by name, overriding locally if necessary.</summary>
-	public  void SetNiagaraVariableVec3(string InVariableName,FVector InValue) {}
+	public void SetNiagaraVariableVec3(string InVariableName,FVector InValue) {}
 	///<summary>Sets a Niagara Vector3 parameter by name, overriding locally if necessary.</summary>
-	public  void SetVariableVec3(string InVariableName,FVector InValue) {}
+	public void SetVariableVec3(string InVariableName,FVector InValue) {}
 	///<summary>Sets a Niagara Position parameter by name, overriding locally if necessary.</summary>
-	public  void SetNiagaraVariablePosition(string InVariableName,FVector InValue) {}
+	public void SetNiagaraVariablePosition(string InVariableName,FVector InValue) {}
 	///<summary>Sets a Niagara Position parameter by name, overriding locally if necessary.</summary>
-	public  void SetVariablePosition(string InVariableName,FVector InValue) {}
+	public void SetVariablePosition(string InVariableName,FVector InValue) {}
 	///<summary>Sets a Niagara Vector2 parameter by name, overriding locally if necessary.</summary>
-	public  void SetNiagaraVariableVec2(string InVariableName,FVector2D InValue) {}
+	public void SetNiagaraVariableVec2(string InVariableName,FVector2D InValue) {}
 	///<summary>Sets a Niagara Vector2 parameter by name, overriding locally if necessary.</summary>
-	public  void SetVariableVec2(string InVariableName,FVector2D InValue) {}
+	public void SetVariableVec2(string InVariableName,FVector2D InValue) {}
 	///<summary>Sets a Niagara float parameter by name, overriding locally if necessary.</summary>
-	public  void SetNiagaraVariableFloat(string InVariableName,float InValue) {}
+	public void SetNiagaraVariableFloat(string InVariableName,float InValue) {}
 	///<summary>Sets a Niagara float parameter by name, overriding locally if necessary.</summary>
-	public  void SetVariableFloat(string InVariableName,float InValue) {}
+	public void SetVariableFloat(string InVariableName,float InValue) {}
 	///<summary>Sets a Niagara int parameter by name, overriding locally if necessary.</summary>
-	public  void SetNiagaraVariableInt(string InVariableName,int InValue) {}
+	public void SetNiagaraVariableInt(string InVariableName,int InValue) {}
 	///<summary>Sets a Niagara int parameter by name, overriding locally if necessary.</summary>
-	public  void SetVariableInt(string InVariableName,int InValue) {}
+	public void SetVariableInt(string InVariableName,int InValue) {}
 	///<summary>Sets a Niagara bool parameter by name, overriding locally if necessary.</summary>
-	public  void SetNiagaraVariableBool(string InVariableName,bool InValue) {}
+	public void SetNiagaraVariableBool(string InVariableName,bool InValue) {}
 	///<summary>Sets a Niagara bool parameter by name, overriding locally if necessary.</summary>
-	public  void SetVariableBool(string InVariableName,bool InValue) {}
+	public void SetVariableBool(string InVariableName,bool InValue) {}
 	///<summary>SetNiagaraVariableActor</summary>
-	public  void SetNiagaraVariableActor(string InVariableName,AActor Actor) {}
+	public void SetNiagaraVariableActor(string InVariableName,AActor Actor) {}
 	///<summary>SetVariableActor</summary>
-	public  void SetVariableActor(string InVariableName,AActor Actor) {}
+	public void SetVariableActor(string InVariableName,AActor Actor) {}
 	///<summary>SetNiagaraVariableObject</summary>
-	public  void SetNiagaraVariableObject(string InVariableName,UObject Object) {}
+	public void SetNiagaraVariableObject(string InVariableName,UObject Object) {}
 	///<summary>SetVariableObject</summary>
-	public  void SetVariableObject(string InVariableName,UObject Object) {}
+	public void SetVariableObject(string InVariableName,UObject Object) {}
 	///<summary>SetVariableMaterial</summary>
-	public  void SetVariableMaterial(string InVariableName,UMaterialInterface Object) {}
+	public void SetVariableMaterial(string InVariableName,UMaterialInterface Object) {}
 	///<summary>SetVariableStaticMesh</summary>
-	public  void SetVariableStaticMesh(string InVariableName,UStaticMesh InValue) {}
+	public void SetVariableStaticMesh(string InVariableName,UStaticMesh InValue) {}
 	///<summary>SetVariableTexture</summary>
-	public  void SetVariableTexture(string InVariableName,UTexture Texture) {}
+	public void SetVariableTexture(string InVariableName,UTexture Texture) {}
 	///<summary>SetVariableTextureRenderTarget</summary>
-	public  void SetVariableTextureRenderTarget(string InVariableName,UTextureRenderTarget TextureRenderTarget) {}
+	public void SetVariableTextureRenderTarget(string InVariableName,UTextureRenderTarget TextureRenderTarget) {}
 	///<summary>Debug accessors for getting positions in blueprints.</summary>
-	public  TArray<FVector> GetNiagaraParticlePositions_DebugOnly(string InEmitterName) { return default; }
+	public TArray<FVector> GetNiagaraParticlePositions_DebugOnly(string InEmitterName) { return default; }
 	///<summary>Debug accessors for getting a float attribute array in blueprints.  The attribute name should be without namespaces. For example for &quot;Particles.Position&quot;, send &quot;Position&quot;.</summary>
-	public  TArray<float> GetNiagaraParticleValues_DebugOnly(string InEmitterName,string InValueName) { return default; }
+	public TArray<float> GetNiagaraParticleValues_DebugOnly(string InEmitterName,string InValueName) { return default; }
 	///<summary>Debug accessors for getting a FVector attribute array in blueprints. The attribute name should be without namespaces. For example for &quot;Particles.Position&quot;, send &quot;Position&quot;.</summary>
-	public  TArray<FVector> GetNiagaraParticleValueVec3_DebugOnly(string InEmitterName,string InValueName) { return default; }
+	public TArray<FVector> GetNiagaraParticleValueVec3_DebugOnly(string InEmitterName,string InValueName) { return default; }
 	///<summary>Resets the System to it&#39;s initial pre-simulated state.</summary>
-	public  void ResetSystem() {}
+	public void ResetSystem() {}
 	///<summary>Called on when an external object wishes to force this System to reinitialize itself from the System data.</summary>
-	public  void ReinitializeSystem() {}
+	public void ReinitializeSystem() {}
 	///<summary>Sets whether or not rendering is enabled for this component.</summary>
-	public  void SetRenderingEnabled(bool bInRenderingEnabled) {}
+	public void SetRenderingEnabled(bool bInRenderingEnabled) {}
 	///<summary>Advances this system&#39;s simulation by the specified number of ticks and delta time.</summary>
-	public  void AdvanceSimulation(int TickCount,float TickDeltaSeconds) {}
+	public void AdvanceSimulation(int TickCount,float TickDeltaSeconds) {}
 	///<summary>Advances this system&#39;s simulation by the specified time in seconds and delta time. Advancement is done in whole ticks of TickDeltaSeconds so actual simulated time will be the nearest lower multiple of TickDeltaSeconds.</summary>
-	public  void AdvanceSimulationByTime(float SimulateTime,float TickDeltaSeconds) {}
+	public void AdvanceSimulationByTime(float SimulateTime,float TickDeltaSeconds) {}
 	///<summary>SetPaused</summary>
-	public  void SetPaused(bool bInPaused) {}
+	public void SetPaused(bool bInPaused) {}
 	///<summary>IsPaused</summary>
-	public  bool IsPaused() { return default; }
+	public bool IsPaused() { return default; }
 	///<summary>GetDataInterface</summary>
-	public  UNiagaraDataInterface GetDataInterface(string Name) { return default; }
+	public UNiagaraDataInterface GetDataInterface(string Name) { return default; }
 	///<summary>SetPreviewLODDistance</summary>
-	public  void SetPreviewLODDistance(bool bEnablePreviewLODDistance,float PreviewLODDistance,float PreviewMaxDistance) {}
+	public void SetPreviewLODDistance(bool bEnablePreviewLODDistance,float PreviewLODDistance,float PreviewMaxDistance) {}
 	///<summary>GetPreviewLODDistanceEnabled</summary>
-	public  bool GetPreviewLODDistanceEnabled() { return default; }
+	public bool GetPreviewLODDistanceEnabled() { return default; }
 	///<summary>GetPreviewLODDistance</summary>
-	public  float GetPreviewLODDistance() { return default; }
+	public float GetPreviewLODDistance() { return default; }
 	///<summary>Initializes this component for capturing a performance baseline.</summary>
-	public  void InitForPerformanceBaseline() {}
+	public void InitForPerformanceBaseline() {}
 	///<summary>Called when the particle system is done</summary>
 	public FOnNiagaraSystemFinished OnSystemFinished;
 	///<summary>Component we automatically attach to when activated, if bAutoManageAttachment is true.</summary>
@@ -200,19 +199,19 @@ public partial class UNiagaraComponent : UFXSystemComponent {
 	///<summary>bWaitForCompilationOnActivate</summary>
 	public bool bWaitForCompilationOnActivate;
 	///<summary>Sets the simulation cache to use for the component.</summary>
-	public  void SetSimCache(UNiagaraSimCache SimCache,bool bResetSystem/*=false*/) {}
+	public void SetSimCache(UNiagaraSimCache SimCache,bool bResetSystem/*=false*/) {}
 	///<summary>Get the active simulation cache, will return null if we do not have an active one.</summary>
-	public  UNiagaraSimCache GetSimCache() { return default; }
+	public UNiagaraSimCache GetSimCache() { return default; }
 	///<summary>Clear any active simulation cache.</summary>
-	public  void ClearSimCache(bool bResetSystem/*=false*/) {}
+	public void ClearSimCache(bool bResetSystem/*=false*/) {}
 	///<summary>Set whether this component is allowed to perform scalability checks and potentially be culled etc. Occasionally it is useful to disable this for specific components. E.g. Effects on the local player.</summary>
-	public  void SetAllowScalability(bool bAllow) {}
+	public void SetAllowScalability(bool bAllow) {}
 	///<summary>GetAllowScalability</summary>
-	public  bool GetAllowScalability() { return default; }
+	public bool GetAllowScalability() { return default; }
 	///<summary>SetForceLocalPlayerEffect</summary>
-	public  void SetForceLocalPlayerEffect(bool bIsPlayerEffect) {}
+	public void SetForceLocalPlayerEffect(bool bIsPlayerEffect) {}
 	///<summary>GetForceLocalPlayerEffect</summary>
-	public  bool GetForceLocalPlayerEffect() { return default; }
+	public bool GetForceLocalPlayerEffect() { return default; }
 	///<summary>Controls whether we allow scalability culling for this component. If enabled, this component&#39;s FX may be culled due to things such as distance, visibility, instance counts and performance.</summary>
 	public bool bAllowScalability;
 	///<summary>SimCache</summary>

@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>UWorldPartitionSubsystem</summary>
@@ -6,7 +5,7 @@ using CSharpToCpp.Utilities;
 public partial class UWorldPartitionSubsystem : UTickableWorldSubsystem {
 	public static UClass StaticClass() {return default;}
 	///<summary>IsStreamingCompleted</summary>
-	public  bool IsStreamingCompleted(EWorldPartitionRuntimeCellState QueryState,TArray<FWorldPartitionStreamingQuerySource> QuerySources,bool bExactState) { return default; }
+	public bool IsStreamingCompleted(EWorldPartitionRuntimeCellState QueryState,TArray<FWorldPartitionStreamingQuerySource> QuerySources,bool bExactState) { return default; }
 	///<summary>Returns true if world partition is done streaming levels, adding them to the world or removing them from the world.</summary>
-	public  bool IsAllStreamingCompleted() { return default; }
+	public bool IsAllStreamingCompleted() { return default; }
 }

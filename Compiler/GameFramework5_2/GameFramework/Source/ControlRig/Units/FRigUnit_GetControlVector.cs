@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>GetControlVector is used to retrieve a single Vector from a hierarchy, can be used for Controls of type &quot;Position&quot; or &quot;Scale&quot;.</summary>

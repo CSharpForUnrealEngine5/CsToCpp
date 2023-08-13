@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("UVEditorLayerEditTool.h")]
@@ -7,13 +6,13 @@ public partial class UUVEditorChannelEditTargetProperties : UInteractiveToolProp
 	///<summary>Asset</summary>
 	public string Asset;
 	///<summary>GetAssetNames</summary>
-	public  TArray<string> GetAssetNames() { return default; }
+	public TArray<string> GetAssetNames() { return default; }
 	///<summary>TargetChannel</summary>
 	public string TargetChannel;
 	///<summary>ReferenceChannel</summary>
 	public string ReferenceChannel;
 	///<summary>GetUVChannelNames</summary>
-	public  TArray<string> GetUVChannelNames() { return default; }
+	public TArray<string> GetUVChannelNames() { return default; }
 	///<summary>bActionNeedsAsset</summary>
 	public bool bActionNeedsAsset;
 	///<summary>bActionNeedsReference</summary>

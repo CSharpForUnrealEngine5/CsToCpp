@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>USDImporter and defaultconfig here so this ends up at DefaultUSDImporter.ini in the editor, and is sent to the</summary>

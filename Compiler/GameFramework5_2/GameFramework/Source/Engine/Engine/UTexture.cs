@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Engine/Texture.h")]
@@ -115,11 +114,11 @@ public partial class UTexture : UStreamableRenderAsset {
 	///<summary>If true, the RHI texture will be created without TexCreate_OfflineProcessed.</summary>
 	public bool bNotOfflineProcessed;
 	///<summary>Gets the memory size of the texture, in bytes.</summary>
-	public  long Blueprint_GetMemorySize() { return default; }
+	public long Blueprint_GetMemorySize() { return default; }
 	///<summary>Gets the memory size of the texture source top mip, in bytes, and the size on disk of the asset, which may be compressed.</summary>
-	public  void Blueprint_GetTextureSourceDiskAndMemorySize(long OutDiskSize,long OutMemorySize) {}
+	public void Blueprint_GetTextureSourceDiskAndMemorySize(long OutDiskSize,long OutMemorySize) {}
 	///<summary>Scan the texture source pixels to compute the min &amp; max values of the RGBA channels.</summary>
-	public  bool ComputeTextureSourceChannelMinMax(FLinearColor OutColorMin,FLinearColor OutColorMax) { return default; }
+	public bool ComputeTextureSourceChannelMinMax(FLinearColor OutColorMin,FLinearColor OutColorMax) { return default; }
 	///<summary>Whether the async resource release process has already been kicked off or not</summary>
 	public bool bAsyncResourceReleaseHasBeenStarted;
 	///<summary>Array of user data stored with the asset</summary>

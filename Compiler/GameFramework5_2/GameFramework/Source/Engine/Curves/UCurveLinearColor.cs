@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Curves/CurveLinearColor.h")]
@@ -7,11 +6,11 @@ public partial class UCurveLinearColor : UCurveBase {
 	///<summary>Keyframe data, one curve for red, green, blue, and alpha</summary>
 	public FRichCurve FloatCurves;
 	///<summary>GetLinearColorValue</summary>
-	public  FLinearColor GetLinearColorValue(float InTime) { return default; }
+	public virtual FLinearColor GetLinearColorValue(float InTime) { return default; }
 	///<summary>GetClampedLinearColorValue</summary>
-	public  FLinearColor GetClampedLinearColorValue(float InTime) { return default; }
+	public virtual FLinearColor GetClampedLinearColorValue(float InTime) { return default; }
 	///<summary>GetUnadjustedLinearColorValue</summary>
-	public  FLinearColor GetUnadjustedLinearColorValue(float InTime) { return default; }
+	public FLinearColor GetUnadjustedLinearColorValue(float InTime) { return default; }
 	///<summary>Properties for adjusting the color of the gradient</summary>
 	public float AdjustHue;
 	///<summary>AdjustSaturation</summary>

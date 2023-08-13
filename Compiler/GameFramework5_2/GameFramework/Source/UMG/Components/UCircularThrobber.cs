@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>A throbber widget that orients images in a spinning circle.</summary>
@@ -14,11 +13,11 @@ public partial class UCircularThrobber : UWidget {
 	///<summary>The throbber image.</summary>
 	public FSlateBrush Image;
 	///<summary>Sets how many pieces there are.</summary>
-	public  void SetNumberOfPieces(int InNumberOfPieces) {}
+	public void SetNumberOfPieces(int InNumberOfPieces) {}
 	///<summary>Sets the amount of time for a full circle (in seconds).</summary>
-	public  void SetPeriod(float InPeriod) {}
+	public void SetPeriod(float InPeriod) {}
 	///<summary>Sets the radius of the circle.</summary>
-	public  void SetRadius(float InRadius) {}
+	public void SetRadius(float InRadius) {}
 	///<summary>bEnableRadius</summary>
 	public bool bEnableRadius;
 }

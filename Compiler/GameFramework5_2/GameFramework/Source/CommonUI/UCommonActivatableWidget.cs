@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>The base for widgets that are capable of being &quot;activated&quot; and &quot;deactivated&quot; during their lifetime without being otherwise modified or destroyed.</summary>
@@ -6,25 +5,25 @@ using CSharpToCpp.Utilities;
 public partial class UCommonActivatableWidget : UCommonUserWidget {
 	public static UClass StaticClass() {return default;}
 	///<summary>IsActivated</summary>
-	public  bool IsActivated() { return default; }
+	public bool IsActivated() { return default; }
 	///<summary>ActivateWidget</summary>
-	public  void ActivateWidget() {}
+	public void ActivateWidget() {}
 	///<summary>DeactivateWidget</summary>
-	public  void DeactivateWidget() {}
+	public void DeactivateWidget() {}
 	///<summary>Visibilities to use for when bound widgets in BindVisibilityToActivation are activated.</summary>
-	public  void SetBindVisibilities(ESlateVisibility OnActivatedVisibility,ESlateVisibility OnDeactivatedVisibility,bool bInAllActive) {}
+	public void SetBindVisibilities(ESlateVisibility OnActivatedVisibility,ESlateVisibility OnDeactivatedVisibility,bool bInAllActive) {}
 	///<summary>Bind our visibility to the activation of another widget, useful for making mouse collisions behave similiar to console navigation w.r.t activation</summary>
-	public  void BindVisibilityToActivation(UCommonActivatableWidget ActivatableWidget) {}
+	public void BindVisibilityToActivation(UCommonActivatableWidget ActivatableWidget) {}
 	///<summary>Returns the desired widget to focus when this Widget Activates.</summary>
-	public  UWidget GetDesiredFocusTarget() { return default; }
+	public UWidget GetDesiredFocusTarget() { return default; }
 	///<summary>Implement to provide the desired widget to focus if/when this activatable becomes the primary active widget.</summary>
-	public  UWidget BP_GetDesiredFocusTarget() { return default; }
+	public UWidget BP_GetDesiredFocusTarget() { return default; }
 	///<summary>BP_OnActivated</summary>
-	public  void BP_OnActivated() {}
+	public void BP_OnActivated() {}
 	///<summary>BP_OnDeactivated</summary>
-	public  void BP_OnDeactivated() {}
+	public void BP_OnDeactivated() {}
 	///<summary>Override in BP implementations to provide custom behavior when receiving a back action</summary>
-	public  bool BP_OnHandleBackAction() { return default; }
+	public bool BP_OnHandleBackAction() { return default; }
 	///<summary>True to receive &quot;Back&quot; actions automatically. Custom back handler behavior can be provided, default is to deactivate.</summary>
 	public bool bIsBackHandler;
 	///<summary>True to receive &quot;Back&quot; actions automatically. Custom back handler behavior can be provided, default is to deactivate.</summary>

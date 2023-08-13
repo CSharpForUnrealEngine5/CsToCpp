@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Actor is the base class for an Object that can be placed or spawned in a level.</summary>
@@ -14,7 +13,7 @@ public partial class AActor : UObject {
 	///<summary>Always relevant for network (overrides bOnlyRelevantToOwner).</summary>
 	public bool bAlwaysRelevant;
 	///<summary>Called on client when updated bReplicateMovement value is received for this actor.</summary>
-	public  void OnRep_ReplicateMovement() {}
+	public virtual void OnRep_ReplicateMovement() {}
 	///<summary>If true, replicate movement/location related properties.</summary>
 	public bool bReplicateMovement;
 	///<summary>bCallPreReplication</summary>
@@ -30,7 +29,7 @@ public partial class AActor : UObject {
 	///<summary>Whether this actor belongs to a level instance which is currently being edited.</summary>
 	public bool bIsInEditingLevelInstance;
 	///<summary>Networking - Server - TearOff this actor to stop replication to clients. Will set bTearOff to true.</summary>
-	public  void TearOff() {}
+	public virtual void TearOff() {}
 	///<summary>Whether we have already exchanged Role/RemoteRole on the client, as when removing then re-adding a streaming level.</summary>
 	public bool bExchangedRoles;
 	///<summary>This actor will be loaded on network clients during map load</summary>
@@ -66,11 +65,11 @@ public partial class AActor : UObject {
 	///<summary>Indicates the actor was pulled through a seamless travel.</summary>
 	public bool bActorSeamlessTraveled;
 	///<summary>SetAutoDestroyWhenFinished</summary>
-	public  void SetAutoDestroyWhenFinished(bool bVal) {}
+	public void SetAutoDestroyWhenFinished(bool bVal) {}
 	///<summary>If true, this actor will replicate to remote machines</summary>
 	public bool bReplicates;
 	///<summary>Called when owner changes, does nothing by default but can be overridden</summary>
-	public  void OnRep_Owner() {}
+	public virtual void OnRep_Owner() {}
 	///<summary>If true, this actor can be put inside of a GC Cluster to improve Garbage Collection performance</summary>
 	public bool bCanBeInCluster;
 	///<summary>If false, the Blueprint ReceiveTick() event will be disabled on dedicated servers.</summary>
@@ -88,13 +87,13 @@ public partial class AActor : UObject {
 	///<summary>Default value taken from config file for this class when &#39;UseConfigDefault&#39; is chosen for</summary>
 	public EActorUpdateOverlapsMethod DefaultUpdateOverlapsMethodDuringLevelStreaming;
 	///<summary>Set whether this actor replicates to network clients. When this actor is spawned on the server it will be sent to clients as well.</summary>
-	public  void SetReplicates(bool bInReplicates) {}
+	public void SetReplicates(bool bInReplicates) {}
 	///<summary>Set whether this actor&#39;s movement replicates to network clients.</summary>
-	public  void SetReplicateMovement(bool bInReplicateMovement) {}
+	public virtual void SetReplicateMovement(bool bInReplicateMovement) {}
 	///<summary>Returns how much control the local machine has over this actor.</summary>
-	public  ENetRole GetLocalRole() { return default; }
+	public ENetRole GetLocalRole() { return default; }
 	///<summary>Returns how much control the remote machine has over this actor.</summary>
-	public  ENetRole GetRemoteRole() { return default; }
+	public ENetRole GetRemoteRole() { return default; }
 	///<summary>How long this Actor lives before dying, 0=forever. Note this is the INITIAL value and should not be modified once play has begun.</summary>
 	public float InitialLifeSpan;
 	///<summary>Allow each actor to run at a different time speed. The DeltaTime for a frame is multiplied by the global TimeDilation (in WorldSettings) and this CustomTimeDilation for this actor&#39;s tick.</summary>
@@ -116,7 +115,7 @@ public partial class AActor : UObject {
 	///<summary>Used to specify the net driver to replicate on (NAME_None || NAME_GameNetDriver is the default net driver)</summary>
 	public string NetDriverName;
 	///<summary>Called on client when updated AttachmentReplication value is received for this actor.</summary>
-	public  void OnRep_AttachmentReplication() {}
+	public virtual void OnRep_AttachmentReplication() {}
 	///<summary>Describes how much control the local machine has over the actor.</summary>
 	public ENetRole Role;
 	///<summary>Dormancy setting for actor to take itself off of the replication list without being destroyed on clients.</summary>
@@ -142,7 +141,7 @@ public partial class AActor : UObject {
 	///<summary>Pawn responsible for damage and other gameplay events caused by this actor.</summary>
 	public APawn Instigator;
 	///<summary>Called on clients when Instigator is replicated.</summary>
-	public  void OnRep_Instigator() {}
+	public virtual void OnRep_Instigator() {}
 	///<summary>Array of all Actors whose Owner is this actor, these are not necessarily spawned by UChildActorComponent</summary>
 	public TArray<AActor> Children;
 	///<summary>The component that defines the transform (location, rotation, scale) of this Actor in the world, all other components must be attached to this one somehow</summary>
@@ -150,9 +149,9 @@ public partial class AActor : UObject {
 	///<summary>Local space pivot offset for the actor, only used in the editor</summary>
 	public FVector PivotOffset;
 	///<summary>Specify a RayTracingGroupId for this actors. Components with invalid RayTracingGroupId will inherit the actors.</summary>
-	public  void SetRayTracingGroupId(int InRaytracingGroupId) {}
+	public void SetRayTracingGroupId(int InRaytracingGroupId) {}
 	///<summary>Return the RayTracingGroupId for this actor.</summary>
-	public  int GetRayTracingGroupId() { return default; }
+	public int GetRayTracingGroupId() { return default; }
 	///<summary>The UHLODLayer in which this actor should be included.</summary>
 	public UHLODLayer HLODLayer;
 	///<summary>Layers the actor belongs to.  This is outside of the editoronly data to allow hiding of LD-specified layers at runtime for profiling.</summary>
@@ -238,279 +237,279 @@ public partial class AActor : UObject {
 	///<summary>Called when this Actor hits (or is hit by) something solid. This could happen due to things like Character movement, using Set Location with &#39;sweep&#39; enabled, or physics simulation.</summary>
 	public FActorHitSignature OnActorHit;
 	///<summary>Pushes this actor on to the stack of input being handled by a PlayerController.</summary>
-	public  void EnableInput(APlayerController PlayerController) {}
+	public virtual void EnableInput(APlayerController PlayerController) {}
 	///<summary>Creates an input component from the input component passed in</summary>
-	public  void CreateInputComponent(UClass InputComponentToCreate) {}
+	public virtual void CreateInputComponent(UClass InputComponentToCreate) {}
 	///<summary>Removes this actor from the stack of input being handled by a PlayerController.</summary>
-	public  void DisableInput(APlayerController PlayerController) {}
+	public virtual void DisableInput(APlayerController PlayerController) {}
 	///<summary>Gets the value of the input axis if input is enabled for this actor.</summary>
-	public  float GetInputAxisValue(string InputAxisName) { return default; }
+	public float GetInputAxisValue(string InputAxisName) { return default; }
 	///<summary>Gets the value of the input axis key if input is enabled for this actor.</summary>
-	public  float GetInputAxisKeyValue(FKey InputAxisKey) { return default; }
+	public float GetInputAxisKeyValue(FKey InputAxisKey) { return default; }
 	///<summary>Gets the value of the input axis key if input is enabled for this actor.</summary>
-	public  FVector GetInputVectorAxisValue(FKey InputAxisKey) { return default; }
+	public FVector GetInputVectorAxisValue(FKey InputAxisKey) { return default; }
 	///<summary>Returns the instigator for this actor, or nullptr if there is none.</summary>
-	public  APawn GetInstigator() { return default; }
+	public APawn GetInstigator() { return default; }
 	///<summary>Returns the instigator&#39;s controller for this actor, or nullptr if there is none.</summary>
-	public  AController GetInstigatorController() { return default; }
+	public AController GetInstigatorController() { return default; }
 	///<summary>Get the actor-to-world transform.</summary>
-	public  FTransform GetTransform() { return default; }
+	public FTransform GetTransform() { return default; }
 	///<summary>Returns the location of the RootComponent of this Actor</summary>
-	public  FVector K2_GetActorLocation() { return default; }
+	public FVector K2_GetActorLocation() { return default; }
 	///<summary>Move the Actor to the specified location.</summary>
-	public  bool K2_SetActorLocation(FVector NewLocation,bool bSweep,FHitResult SweepHitResult,bool bTeleport) { return default; }
+	public bool K2_SetActorLocation(FVector NewLocation,bool bSweep,FHitResult SweepHitResult,bool bTeleport) { return default; }
 	///<summary>Returns rotation of the RootComponent of this Actor.</summary>
-	public  FRotator K2_GetActorRotation() { return default; }
+	public FRotator K2_GetActorRotation() { return default; }
 	///<summary>Get the forward (X) vector (length 1.0) from this Actor, in world space.</summary>
-	public  FVector GetActorForwardVector() { return default; }
+	public FVector GetActorForwardVector() { return default; }
 	///<summary>Get the up (Z) vector (length 1.0) from this Actor, in world space.</summary>
-	public  FVector GetActorUpVector() { return default; }
+	public FVector GetActorUpVector() { return default; }
 	///<summary>Get the right (Y) vector (length 1.0) from this Actor, in world space.</summary>
-	public  FVector GetActorRightVector() { return default; }
+	public FVector GetActorRightVector() { return default; }
 	///<summary>Returns the bounding box of all components that make up this Actor (excluding ChildActorComponents).</summary>
-	public  void GetActorBounds(bool bOnlyCollidingComponents,FVector Origin,FVector BoxExtent,bool bIncludeFromChildActors/*=false*/) {}
+	public virtual void GetActorBounds(bool bOnlyCollidingComponents,FVector Origin,FVector BoxExtent,bool bIncludeFromChildActors/*=false*/) {}
 	///<summary>Returns the RootComponent of this Actor</summary>
-	public  USceneComponent K2_GetRootComponent() { return default; }
+	public USceneComponent K2_GetRootComponent() { return default; }
 	///<summary>Returns velocity (in cm/s (Unreal Units/second) of the rootcomponent if it is either using physics or has an associated MovementComponent</summary>
-	public  FVector GetVelocity() { return default; }
+	public virtual FVector GetVelocity() { return default; }
 	///<summary>Set the Actor&#39;s rotation instantly to the specified rotation.</summary>
-	public  bool K2_SetActorRotation(FRotator NewRotation,bool bTeleportPhysics) { return default; }
+	public bool K2_SetActorRotation(FRotator NewRotation,bool bTeleportPhysics) { return default; }
 	///<summary>Move the actor instantly to the specified location and rotation.</summary>
-	public  bool K2_SetActorLocationAndRotation(FVector NewLocation,FRotator NewRotation,bool bSweep,FHitResult SweepHitResult,bool bTeleport) { return default; }
+	public bool K2_SetActorLocationAndRotation(FVector NewLocation,FRotator NewRotation,bool bSweep,FHitResult SweepHitResult,bool bTeleport) { return default; }
 	///<summary>Set the Actor&#39;s world-space scale.</summary>
-	public  void SetActorScale3D(FVector NewScale3D) {}
+	public void SetActorScale3D(FVector NewScale3D) {}
 	///<summary>Returns the Actor&#39;s world-space scale.</summary>
-	public  FVector GetActorScale3D() { return default; }
+	public FVector GetActorScale3D() { return default; }
 	///<summary>Returns the distance from this Actor to OtherActor.</summary>
-	public  float GetDistanceTo(AActor OtherActor) { return default; }
+	public float GetDistanceTo(AActor OtherActor) { return default; }
 	///<summary>Returns the squared distance from this Actor to OtherActor.</summary>
-	public  float GetSquaredDistanceTo(AActor OtherActor) { return default; }
+	public float GetSquaredDistanceTo(AActor OtherActor) { return default; }
 	///<summary>Returns the distance from this Actor to OtherActor, ignoring Z.</summary>
-	public  float GetHorizontalDistanceTo(AActor OtherActor) { return default; }
+	public float GetHorizontalDistanceTo(AActor OtherActor) { return default; }
 	///<summary>Returns the squared distance from this Actor to OtherActor, ignoring Z.</summary>
-	public  float GetSquaredHorizontalDistanceTo(AActor OtherActor) { return default; }
+	public float GetSquaredHorizontalDistanceTo(AActor OtherActor) { return default; }
 	///<summary>Returns the distance from this Actor to OtherActor, ignoring XY.</summary>
-	public  float GetVerticalDistanceTo(AActor OtherActor) { return default; }
+	public float GetVerticalDistanceTo(AActor OtherActor) { return default; }
 	///<summary>Returns the dot product from this Actor to OtherActor. Returns -2.0 on failure. Returns 0.0 for coincidental actors.</summary>
-	public  float GetDotProductTo(AActor OtherActor) { return default; }
+	public float GetDotProductTo(AActor OtherActor) { return default; }
 	///<summary>Returns the dot product from this Actor to OtherActor, ignoring Z. Returns -2.0 on failure. Returns 0.0 for coincidental actors.</summary>
-	public  float GetHorizontalDotProductTo(AActor OtherActor) { return default; }
+	public float GetHorizontalDotProductTo(AActor OtherActor) { return default; }
 	///<summary>Adds a delta to the location of this actor in world space.</summary>
-	public  void K2_AddActorWorldOffset(FVector DeltaLocation,bool bSweep,FHitResult SweepHitResult,bool bTeleport) {}
+	public void K2_AddActorWorldOffset(FVector DeltaLocation,bool bSweep,FHitResult SweepHitResult,bool bTeleport) {}
 	///<summary>Adds a delta to the rotation of this actor in world space.</summary>
-	public  void K2_AddActorWorldRotation(FRotator DeltaRotation,bool bSweep,FHitResult SweepHitResult,bool bTeleport) {}
+	public void K2_AddActorWorldRotation(FRotator DeltaRotation,bool bSweep,FHitResult SweepHitResult,bool bTeleport) {}
 	///<summary>Adds a delta to the transform of this actor in world space. Ignores scale and sets it to (1,1,1).</summary>
-	public  void K2_AddActorWorldTransform(FTransform DeltaTransform,bool bSweep,FHitResult SweepHitResult,bool bTeleport) {}
+	public void K2_AddActorWorldTransform(FTransform DeltaTransform,bool bSweep,FHitResult SweepHitResult,bool bTeleport) {}
 	///<summary>Adds a delta to the transform of this actor in world space. Scale is unchanged.</summary>
-	public  void K2_AddActorWorldTransformKeepScale(FTransform DeltaTransform,bool bSweep,FHitResult SweepHitResult,bool bTeleport) {}
+	public void K2_AddActorWorldTransformKeepScale(FTransform DeltaTransform,bool bSweep,FHitResult SweepHitResult,bool bTeleport) {}
 	///<summary>Set the Actors transform to the specified one.</summary>
-	public  bool K2_SetActorTransform(FTransform NewTransform,bool bSweep,FHitResult SweepHitResult,bool bTeleport) { return default; }
+	public bool K2_SetActorTransform(FTransform NewTransform,bool bSweep,FHitResult SweepHitResult,bool bTeleport) { return default; }
 	///<summary>Adds a delta to the location of this component in its local reference frame.</summary>
-	public  void K2_AddActorLocalOffset(FVector DeltaLocation,bool bSweep,FHitResult SweepHitResult,bool bTeleport) {}
+	public void K2_AddActorLocalOffset(FVector DeltaLocation,bool bSweep,FHitResult SweepHitResult,bool bTeleport) {}
 	///<summary>Adds a delta to the rotation of this component in its local reference frame</summary>
-	public  void K2_AddActorLocalRotation(FRotator DeltaRotation,bool bSweep,FHitResult SweepHitResult,bool bTeleport) {}
+	public void K2_AddActorLocalRotation(FRotator DeltaRotation,bool bSweep,FHitResult SweepHitResult,bool bTeleport) {}
 	///<summary>Adds a delta to the transform of this component in its local reference frame</summary>
-	public  void K2_AddActorLocalTransform(FTransform NewTransform,bool bSweep,FHitResult SweepHitResult,bool bTeleport) {}
+	public void K2_AddActorLocalTransform(FTransform NewTransform,bool bSweep,FHitResult SweepHitResult,bool bTeleport) {}
 	///<summary>Set the actor&#39;s RootComponent to the specified relative location.</summary>
-	public  void K2_SetActorRelativeLocation(FVector NewRelativeLocation,bool bSweep,FHitResult SweepHitResult,bool bTeleport) {}
+	public void K2_SetActorRelativeLocation(FVector NewRelativeLocation,bool bSweep,FHitResult SweepHitResult,bool bTeleport) {}
 	///<summary>Set the actor&#39;s RootComponent to the specified relative rotation</summary>
-	public  void K2_SetActorRelativeRotation(FRotator NewRelativeRotation,bool bSweep,FHitResult SweepHitResult,bool bTeleport) {}
+	public void K2_SetActorRelativeRotation(FRotator NewRelativeRotation,bool bSweep,FHitResult SweepHitResult,bool bTeleport) {}
 	///<summary>Set the actor&#39;s RootComponent to the specified relative transform</summary>
-	public  void K2_SetActorRelativeTransform(FTransform NewRelativeTransform,bool bSweep,FHitResult SweepHitResult,bool bTeleport) {}
+	public void K2_SetActorRelativeTransform(FTransform NewRelativeTransform,bool bSweep,FHitResult SweepHitResult,bool bTeleport) {}
 	///<summary>Set the actor&#39;s RootComponent to the specified relative scale 3d</summary>
-	public  void SetActorRelativeScale3D(FVector NewRelativeScale) {}
+	public void SetActorRelativeScale3D(FVector NewRelativeScale) {}
 	///<summary>Return the actor&#39;s relative scale 3d</summary>
-	public  FVector GetActorRelativeScale3D() { return default; }
+	public FVector GetActorRelativeScale3D() { return default; }
 	///<summary>Sets the actor to be hidden in the game</summary>
-	public  void SetActorHiddenInGame(bool bNewHidden) {}
+	public virtual void SetActorHiddenInGame(bool bNewHidden) {}
 	///<summary>Allows enabling/disabling collision for the whole actor</summary>
-	public  void SetActorEnableCollision(bool bNewActorEnableCollision) {}
+	public void SetActorEnableCollision(bool bNewActorEnableCollision) {}
 	///<summary>Get current state of collision for the whole actor</summary>
-	public  bool GetActorEnableCollision() { return default; }
+	public bool GetActorEnableCollision() { return default; }
 	///<summary>Destroy the actor</summary>
-	public  void K2_DestroyActor() {}
+	public virtual void K2_DestroyActor() {}
 	///<summary>Returns whether this actor has network authority</summary>
-	public  bool HasAuthority() { return default; }
+	public bool HasAuthority() { return default; }
 	///<summary>Creates a new component and assigns ownership to the Actor this is</summary>
-	public  UActorComponent AddComponent(string TemplateName,bool bManualAttachment,FTransform RelativeTransform,UObject ComponentTemplateContext,bool bDeferredFinish/*=false*/) { return default; }
+	public UActorComponent AddComponent(string TemplateName,bool bManualAttachment,FTransform RelativeTransform,UObject ComponentTemplateContext,bool bDeferredFinish/*=false*/) { return default; }
 	///<summary>Creates a new component and assigns ownership to the Actor this is</summary>
-	public  UActorComponent AddComponentByClass(UClass Class,bool bManualAttachment,FTransform RelativeTransform,bool bDeferredFinish) { return default; }
+	public UActorComponent AddComponentByClass(UClass Class,bool bManualAttachment,FTransform RelativeTransform,bool bDeferredFinish) { return default; }
 	///<summary>Completes the creation of a new actor component. Called either from blueprint after</summary>
-	public  void FinishAddComponent(UActorComponent Component,bool bManualAttachment,FTransform RelativeTransform) {}
+	public void FinishAddComponent(UActorComponent Component,bool bManualAttachment,FTransform RelativeTransform) {}
 	///<summary>K2_AttachRootComponentTo</summary>
-	public  void K2_AttachRootComponentTo(USceneComponent InParent,string InSocketName/*=NAME_None*/,EAttachLocation AttachLocationType/*=EAttachLocation.KeepRelativeOffset*/,bool bWeldSimulatedBodies/*=true*/) {}
+	public void K2_AttachRootComponentTo(USceneComponent InParent,string InSocketName/*=NAME_None*/,EAttachLocation AttachLocationType/*=EAttachLocation.KeepRelativeOffset*/,bool bWeldSimulatedBodies/*=true*/) {}
 	///<summary>Attaches the RootComponent of this Actor to the supplied component, optionally at a named socket. It is not valid to call this on components that are not Registered.</summary>
-	public  bool K2_AttachToComponent(USceneComponent Parent,string SocketName,EAttachmentRule LocationRule,EAttachmentRule RotationRule,EAttachmentRule ScaleRule,bool bWeldSimulatedBodies) { return default; }
+	public bool K2_AttachToComponent(USceneComponent Parent,string SocketName,EAttachmentRule LocationRule,EAttachmentRule RotationRule,EAttachmentRule ScaleRule,bool bWeldSimulatedBodies) { return default; }
 	///<summary>K2_AttachRootComponentToActor</summary>
-	public  void K2_AttachRootComponentToActor(AActor InParentActor,string InSocketName/*=NAME_None*/,EAttachLocation AttachLocationType/*=EAttachLocation.KeepRelativeOffset*/,bool bWeldSimulatedBodies/*=true*/) {}
+	public void K2_AttachRootComponentToActor(AActor InParentActor,string InSocketName/*=NAME_None*/,EAttachLocation AttachLocationType/*=EAttachLocation.KeepRelativeOffset*/,bool bWeldSimulatedBodies/*=true*/) {}
 	///<summary>Attaches the RootComponent of this Actor to the supplied actor, optionally at a named socket.</summary>
-	public  bool K2_AttachToActor(AActor ParentActor,string SocketName,EAttachmentRule LocationRule,EAttachmentRule RotationRule,EAttachmentRule ScaleRule,bool bWeldSimulatedBodies) { return default; }
+	public bool K2_AttachToActor(AActor ParentActor,string SocketName,EAttachmentRule LocationRule,EAttachmentRule RotationRule,EAttachmentRule ScaleRule,bool bWeldSimulatedBodies) { return default; }
 	///<summary>DetachRootComponentFromParent</summary>
-	public  void DetachRootComponentFromParent(bool bMaintainWorldPosition/*=true*/) {}
+	public void DetachRootComponentFromParent(bool bMaintainWorldPosition/*=true*/) {}
 	///<summary>Detaches the RootComponent of this Actor from any SceneComponent it is currently attached to.</summary>
-	public  void K2_DetachFromActor(EDetachmentRule LocationRule/*=EDetachmentRule.KeepRelative*/,EDetachmentRule RotationRule/*=EDetachmentRule.KeepRelative*/,EDetachmentRule ScaleRule/*=EDetachmentRule.KeepRelative*/) {}
+	public void K2_DetachFromActor(EDetachmentRule LocationRule/*=EDetachmentRule.KeepRelative*/,EDetachmentRule RotationRule/*=EDetachmentRule.KeepRelative*/,EDetachmentRule ScaleRule/*=EDetachmentRule.KeepRelative*/) {}
 	///<summary>See if this actor&#39;s Tags array contains the supplied name tag</summary>
-	public  bool ActorHasTag(string Tag) { return default; }
+	public bool ActorHasTag(string Tag) { return default; }
 	///<summary>Get ActorTimeDilation - this can be used for input control or speed control for slomo.</summary>
-	public  float GetActorTimeDilation() { return default; }
+	public float GetActorTimeDilation() { return default; }
 	///<summary>Make this actor tick after PrerequisiteActor. This only applies to this actor&#39;s tick function; dependencies for owned components must be set up separately if desired.</summary>
-	public  void AddTickPrerequisiteActor(AActor PrerequisiteActor) {}
+	public virtual void AddTickPrerequisiteActor(AActor PrerequisiteActor) {}
 	///<summary>Make this actor tick after PrerequisiteComponent. This only applies to this actor&#39;s tick function; dependencies for owned components must be set up separately if desired.</summary>
-	public  void AddTickPrerequisiteComponent(UActorComponent PrerequisiteComponent) {}
+	public virtual void AddTickPrerequisiteComponent(UActorComponent PrerequisiteComponent) {}
 	///<summary>Remove tick dependency on PrerequisiteActor.</summary>
-	public  void RemoveTickPrerequisiteActor(AActor PrerequisiteActor) {}
+	public virtual void RemoveTickPrerequisiteActor(AActor PrerequisiteActor) {}
 	///<summary>Remove tick dependency on PrerequisiteComponent.</summary>
-	public  void RemoveTickPrerequisiteComponent(UActorComponent PrerequisiteComponent) {}
+	public virtual void RemoveTickPrerequisiteComponent(UActorComponent PrerequisiteComponent) {}
 	///<summary>Gets whether this actor can tick when paused.</summary>
-	public  bool GetTickableWhenPaused() { return default; }
+	public bool GetTickableWhenPaused() { return default; }
 	///<summary>Sets whether this actor can tick when paused.</summary>
-	public  void SetTickableWhenPaused(bool bTickableWhenPaused) {}
+	public void SetTickableWhenPaused(bool bTickableWhenPaused) {}
 	///<summary>The number of seconds (in game time) since this Actor was created, relative to Get Game Time In Seconds.</summary>
-	public  float GetGameTimeSinceCreation() { return default; }
+	public float GetGameTimeSinceCreation() { return default; }
 	///<summary>Event when play begins for this actor.</summary>
-	public  void ReceiveBeginPlay() {}
+	public void ReceiveBeginPlay() {}
 	///<summary>Event to notify blueprints this actor is being deleted or removed from a level.</summary>
-	public  void ReceiveEndPlay(EEndPlayReason EndPlayReason) {}
+	public void ReceiveEndPlay(EEndPlayReason EndPlayReason) {}
 	///<summary>Returns true if this actor is currently being destroyed, some gameplay events may be unsafe</summary>
-	public  bool IsActorBeingDestroyed() { return default; }
+	public bool IsActorBeingDestroyed() { return default; }
 	///<summary>Event when this actor takes ANY damage</summary>
-	public  void ReceiveAnyDamage(float Damage,UDamageType DamageType,AController InstigatedBy,AActor DamageCauser) {}
+	public void ReceiveAnyDamage(float Damage,UDamageType DamageType,AController InstigatedBy,AActor DamageCauser) {}
 	///<summary>Event when this actor takes RADIAL damage</summary>
-	public  void ReceiveRadialDamage(float DamageReceived,UDamageType DamageType,FVector Origin,FHitResult HitInfo,AController InstigatedBy,AActor DamageCauser) {}
+	public void ReceiveRadialDamage(float DamageReceived,UDamageType DamageType,FVector Origin,FHitResult HitInfo,AController InstigatedBy,AActor DamageCauser) {}
 	///<summary>Event when this actor takes POINT damage</summary>
-	public  void ReceivePointDamage(float Damage,UDamageType DamageType,FVector HitLocation,FVector HitNormal,UPrimitiveComponent HitComponent,string BoneName,FVector ShotFromDirection,AController InstigatedBy,AActor DamageCauser,FHitResult HitInfo) {}
+	public void ReceivePointDamage(float Damage,UDamageType DamageType,FVector HitLocation,FVector HitNormal,UPrimitiveComponent HitComponent,string BoneName,FVector ShotFromDirection,AController InstigatedBy,AActor DamageCauser,FHitResult HitInfo) {}
 	///<summary>Event called every frame, if ticking is enabled</summary>
-	public  void ReceiveTick(float DeltaSeconds) {}
+	public void ReceiveTick(float DeltaSeconds) {}
 	///<summary>Event called every physics tick if bAsyncPhysicsTickEnabled is true</summary>
-	public  void ReceiveAsyncPhysicsTick(float DeltaSeconds,float SimSeconds) {}
+	public void ReceiveAsyncPhysicsTick(float DeltaSeconds,float SimSeconds) {}
 	///<summary>Event when this actor overlaps another actor, for example a player walking into a trigger.</summary>
-	public  void ReceiveActorBeginOverlap(AActor OtherActor) {}
+	public void ReceiveActorBeginOverlap(AActor OtherActor) {}
 	///<summary>Event when an actor no longer overlaps another actor, and they have separated.</summary>
-	public  void ReceiveActorEndOverlap(AActor OtherActor) {}
+	public void ReceiveActorEndOverlap(AActor OtherActor) {}
 	///<summary>Event when this actor has the mouse moved over it with the clickable interface.</summary>
-	public  void ReceiveActorBeginCursorOver() {}
+	public void ReceiveActorBeginCursorOver() {}
 	///<summary>Event when this actor has the mouse moved off of it with the clickable interface.</summary>
-	public  void ReceiveActorEndCursorOver() {}
+	public void ReceiveActorEndCursorOver() {}
 	///<summary>Event when this actor is clicked by the mouse when using the clickable interface.</summary>
-	public  void ReceiveActorOnClicked(FKey ButtonPressed) {}
+	public void ReceiveActorOnClicked(FKey ButtonPressed) {}
 	///<summary>Event when this actor is under the mouse when left mouse button is released while using the clickable interface.</summary>
-	public  void ReceiveActorOnReleased(FKey ButtonReleased) {}
+	public void ReceiveActorOnReleased(FKey ButtonReleased) {}
 	///<summary>Event when this actor is touched when click events are enabled.</summary>
-	public  void ReceiveActorOnInputTouchBegin(ETouchIndex FingerIndex) {}
+	public void ReceiveActorOnInputTouchBegin(ETouchIndex FingerIndex) {}
 	///<summary>Event when this actor is under the finger when untouched when click events are enabled.</summary>
-	public  void ReceiveActorOnInputTouchEnd(ETouchIndex FingerIndex) {}
+	public void ReceiveActorOnInputTouchEnd(ETouchIndex FingerIndex) {}
 	///<summary>Event when this actor has a finger moved over it with the clickable interface.</summary>
-	public  void ReceiveActorOnInputTouchEnter(ETouchIndex FingerIndex) {}
+	public void ReceiveActorOnInputTouchEnter(ETouchIndex FingerIndex) {}
 	///<summary>Event when this actor has a finger moved off of it with the clickable interface.</summary>
-	public  void ReceiveActorOnInputTouchLeave(ETouchIndex FingerIndex) {}
+	public void ReceiveActorOnInputTouchLeave(ETouchIndex FingerIndex) {}
 	///<summary>Returns list of actors this actor is overlapping (any component overlapping any component). Does not return itself.</summary>
-	public  void GetOverlappingActors(TArray<AActor> OverlappingActors,UClass ClassFilter/*=nullptr*/) {}
+	public void GetOverlappingActors(TArray<AActor> OverlappingActors,UClass ClassFilter/*=nullptr*/) {}
 	///<summary>Returns list of components this actor is overlapping.</summary>
-	public  void GetOverlappingComponents(TArray<UPrimitiveComponent> OverlappingComponents) {}
+	public void GetOverlappingComponents(TArray<UPrimitiveComponent> OverlappingComponents) {}
 	///<summary>Event when this actor bumps into a blocking object, or blocks another actor that bumps into it.</summary>
-	public  void ReceiveHit(UPrimitiveComponent MyComp,AActor Other,UPrimitiveComponent OtherComp,bool bSelfMoved,FVector HitLocation,FVector HitNormal,FVector NormalImpulse,FHitResult Hit) {}
+	public void ReceiveHit(UPrimitiveComponent MyComp,AActor Other,UPrimitiveComponent OtherComp,bool bSelfMoved,FVector HitLocation,FVector HitNormal,FVector NormalImpulse,FHitResult Hit) {}
 	///<summary>Set the lifespan of this actor. When it expires the object will be destroyed. If requested lifespan is 0, the timer is cleared and the actor will not be destroyed.</summary>
-	public  void SetLifeSpan(float InLifespan) {}
+	public virtual void SetLifeSpan(float InLifespan) {}
 	///<summary>Get the remaining lifespan of this actor. If zero is returned the actor lives forever.</summary>
-	public  float GetLifeSpan() { return default; }
+	public virtual float GetLifeSpan() { return default; }
 	///<summary>Construction script, the place to spawn components and do other setup.</summary>
-	public  void UserConstructionScript() {}
+	public void UserConstructionScript() {}
 	///<summary>Called when the actor has been explicitly destroyed.</summary>
-	public  void ReceiveDestroyed() {}
+	public void ReceiveDestroyed() {}
 	///<summary>Event triggered when the actor has been explicitly destroyed.</summary>
 	public FActorDestroyedSignature OnDestroyed;
 	///<summary>Event triggered when the actor is being deleted or removed from a level.</summary>
 	public FActorEndPlaySignature OnEndPlay;
 	///<summary>Returns true if the actor is hidden upon editor startup/by default, false if it is not</summary>
-	public  bool IsHiddenEdAtStartup() { return default; }
+	public bool IsHiddenEdAtStartup() { return default; }
 	///<summary>Returns true if this actor is hidden in the editor viewports, also checking temporary flags.</summary>
-	public  bool IsHiddenEd() { return default; }
+	public virtual bool IsHiddenEd() { return default; }
 	///<summary>Explicitly sets whether or not this actor is hidden in the editor for the duration of the current editor session</summary>
-	public  void SetIsTemporarilyHiddenInEditor(bool bIsHidden) {}
+	public virtual void SetIsTemporarilyHiddenInEditor(bool bIsHidden) {}
 	///<summary>Returns whether or not this actor was explicitly hidden in the editor for the duration of the current editor session</summary>
-	public  bool IsTemporarilyHiddenInEditor(bool bIncludeParent/*=false*/) { return default; }
+	public bool IsTemporarilyHiddenInEditor(bool bIncludeParent/*=false*/) { return default; }
 	///<summary>Returns true if this actor is allowed to be displayed, selected and manipulated by the editor.</summary>
-	public  bool IsEditable() { return default; }
+	public bool IsEditable() { return default; }
 	///<summary>Returns true if this actor can EVER be selected in a level in the editor.  Can be overridden by specific actors to make them unselectable.</summary>
-	public  bool IsSelectable() { return default; }
+	public virtual bool IsSelectable() { return default; }
 	///<summary>Returns this actor&#39;s default label (does not include any numeric suffix).  Actor labels are only available in development builds.</summary>
-	public  string GetDefaultActorLabel() { return default; }
+	public virtual string GetDefaultActorLabel() { return default; }
 	///<summary>Returns this actor&#39;s current label.  Actor labels are only available in development builds.</summary>
-	public  string GetActorLabel(bool bCreateIfNone/*=true*/) { return default; }
+	public string GetActorLabel(bool bCreateIfNone/*=true*/) { return default; }
 	///<summary>Assigns a new label to this actor.  Actor labels are only available in development builds.</summary>
-	public  void SetActorLabel(string NewActorLabel,bool bMarkDirty/*=true*/) {}
+	public void SetActorLabel(string NewActorLabel,bool bMarkDirty/*=true*/) {}
 	///<summary>Returns this actor&#39;s folder path. Actor folder paths are only available in development builds.</summary>
-	public  string GetFolderPath() { return default; }
+	public string GetFolderPath() { return default; }
 	///<summary>Assigns a new folder to this actor. Actor folder paths are only available in development builds.</summary>
-	public  void SetFolderPath(string NewFolderPath) {}
+	public void SetFolderPath(string NewFolderPath) {}
 	///<summary>Set this actor&#39;s tick functions to be enabled or disabled. Only has an effect if the function is registered</summary>
-	public  void SetActorTickEnabled(bool bEnabled) {}
+	public void SetActorTickEnabled(bool bEnabled) {}
 	///<summary>Returns whether this actor has tick enabled or not</summary>
-	public  bool IsActorTickEnabled() { return default; }
+	public bool IsActorTickEnabled() { return default; }
 	///<summary>Sets the tick interval of this actor&#39;s primary tick function. Will not enable a disabled tick function. Takes effect on next tick.</summary>
-	public  void SetActorTickInterval(float TickInterval) {}
+	public void SetActorTickInterval(float TickInterval) {}
 	///<summary>Returns the tick interval of this actor&#39;s primary tick function</summary>
-	public  float GetActorTickInterval() { return default; }
+	public float GetActorTickInterval() { return default; }
 	///<summary>ReplicatedMovement struct replication event</summary>
-	public  void OnRep_ReplicatedMovement() {}
+	public virtual void OnRep_ReplicatedMovement() {}
 	///<summary>Set the owner of this Actor, used primarily for network replication.</summary>
-	public  void SetOwner(AActor NewOwner) {}
+	public virtual void SetOwner(AActor NewOwner) {}
 	///<summary>Get the owner of this Actor, used primarily for network replication.</summary>
-	public  AActor GetOwner() { return default; }
+	public AActor GetOwner() { return default; }
 	///<summary>Check whether any component of this Actor is overlapping any component of another Actor.</summary>
-	public  bool IsOverlappingActor(AActor Other) { return default; }
+	public bool IsOverlappingActor(AActor Other) { return default; }
 	///<summary>Puts actor in dormant networking state</summary>
-	public  void SetNetDormancy(ENetDormancy NewDormancy) {}
+	public void SetNetDormancy(ENetDormancy NewDormancy) {}
 	///<summary>Forces dormant actor to replicate but doesn&#39;t change NetDormancy state (i.e., they will go dormant again if left dormant)</summary>
-	public  void FlushNetDormancy() {}
+	public void FlushNetDormancy() {}
 	///<summary>Returns whether this Actor was spawned by a child actor component</summary>
-	public  bool IsChildActor() { return default; }
+	public bool IsChildActor() { return default; }
 	///<summary>Returns a list of all actors spawned by our Child Actor Components, including children of children.</summary>
-	public  void GetAllChildActors(TArray<AActor> ChildActors,bool bIncludeDescendants/*=true*/) {}
+	public void GetAllChildActors(TArray<AActor> ChildActors,bool bIncludeDescendants/*=true*/) {}
 	///<summary>If this Actor was created by a Child Actor Component returns that Child Actor Component</summary>
-	public  UChildActorComponent GetParentComponent() { return default; }
+	public UChildActorComponent GetParentComponent() { return default; }
 	///<summary>If this Actor was created by a Child Actor Component returns the Actor that owns that Child Actor Component</summary>
-	public  AActor GetParentActor() { return default; }
+	public AActor GetParentActor() { return default; }
 	///<summary>Teleport this actor to a new location. If the actor doesn&#39;t fit exactly at the location specified, tries to slightly move it out of walls and such.</summary>
-	public  bool K2_TeleportTo(FVector DestLocation,FRotator DestRotation) { return default; }
+	public bool K2_TeleportTo(FVector DestLocation,FRotator DestRotation) { return default; }
 	///<summary>Return the ULevel that this Actor is part of.</summary>
-	public  ULevel GetLevel() { return default; }
+	public ULevel GetLevel() { return default; }
 	///<summary>Return the FTransform of the level this actor is a part of.</summary>
-	public  FTransform GetLevelTransform() { return default; }
+	public FTransform GetLevelTransform() { return default; }
 	///<summary>Walk up the attachment chain from RootComponent until we encounter a different actor, and return it. If we are not attached to a component in a different actor, returns nullptr</summary>
-	public  AActor GetAttachParentActor() { return default; }
+	public AActor GetAttachParentActor() { return default; }
 	///<summary>Walk up the attachment chain from RootComponent until we encounter a different actor, and return the socket name in the component. If we are not attached to a component in a different actor, returns NAME_None</summary>
-	public  string GetAttachParentSocketName() { return default; }
+	public string GetAttachParentSocketName() { return default; }
 	///<summary>Find all Actors which are attached directly to a component in this actor</summary>
-	public  void GetAttachedActors(TArray<AActor> OutActors,bool bResetArray/*=true*/,bool bRecursivelyIncludeAttachedActors/*=false*/) {}
+	public void GetAttachedActors(TArray<AActor> OutActors,bool bResetArray/*=true*/,bool bRecursivelyIncludeAttachedActors/*=false*/) {}
 	///<summary>Sets the ticking group for this actor.</summary>
-	public  void SetTickGroup(ETickingGroup NewTickGroup) {}
+	public void SetTickGroup(ETickingGroup NewTickGroup) {}
 	///<summary>Event called when this Actor becomes the view target for the given PlayerController.</summary>
-	public  void K2_OnBecomeViewTarget(APlayerController PC) {}
+	public void K2_OnBecomeViewTarget(APlayerController PC) {}
 	///<summary>Event called when this Actor is no longer the view target for the given PlayerController.</summary>
-	public  void K2_OnEndViewTarget(APlayerController PC) {}
+	public void K2_OnEndViewTarget(APlayerController PC) {}
 	///<summary>Event called when this Actor is reset to its initial state - used when restarting level without reloading.</summary>
-	public  void K2_OnReset() {}
+	public void K2_OnReset() {}
 	///<summary>Returns true if this actor has been rendered &quot;recently&quot;, with a tolerance in seconds to define what &quot;recent&quot; means.</summary>
-	public  bool WasRecentlyRendered(float Tolerance/*=0.2f*/) { return default; }
+	public bool WasRecentlyRendered(float Tolerance/*=0.2f*/) { return default; }
 	///<summary>Force actor to be updated to clients/demo net drivers</summary>
-	public  void ForceNetUpdate() {}
+	public virtual void ForceNetUpdate() {}
 	///<summary>Calls PrestreamTextures() for all the actor&#39;s meshcomponents.</summary>
-	public  void PrestreamTextures(float Seconds,bool bEnableStreaming,int CinematicTextureGroups/*=0*/) {}
+	public virtual void PrestreamTextures(float Seconds,bool bEnableStreaming,int CinematicTextureGroups/*=0*/) {}
 	///<summary>Returns the point of view of the actor.</summary>
-	public  void GetActorEyesViewPoint(FVector OutLocation,FRotator OutRotation) {}
+	public virtual void GetActorEyesViewPoint(FVector OutLocation,FRotator OutRotation) {}
 	///<summary>Searches components array and returns first encountered component of the specified class</summary>
-	public  UActorComponent GetComponentByClass(UClass ComponentClass) { return default; }
+	public UActorComponent GetComponentByClass(UClass ComponentClass) { return default; }
 	///<summary>Gets all the components that inherit from the given class.</summary>
-	public  TArray<UActorComponent> K2_GetComponentsByClass(UClass ComponentClass) { return default; }
+	public TArray<UActorComponent> K2_GetComponentsByClass(UClass ComponentClass) { return default; }
 	///<summary>Gets all the components that inherit from the given class with a given tag.</summary>
-	public  TArray<UActorComponent> GetComponentsByTag(UClass ComponentClass,string Tag) { return default; }
+	public TArray<UActorComponent> GetComponentsByTag(UClass ComponentClass,string Tag) { return default; }
 	///<summary>Gets all the components that implements the given interface.</summary>
-	public  TArray<UActorComponent> GetComponentsByInterface(UClass Interface) { return default; }
+	public TArray<UActorComponent> GetComponentsByInterface(UClass Interface) { return default; }
 	///<summary>Array of ActorComponents that have been added by the user on a per-instance basis.</summary>
 	public TArray<UActorComponent> InstanceComponents;
 	///<summary>Array of ActorComponents that are created by blueprints and serialized per-instance.</summary>
 	public TArray<UActorComponent> BlueprintCreatedComponents;
 	///<summary>Trigger a noise caused by a given Pawn, at a given location.</summary>
-	public  void MakeNoise(float Loudness/*=1.0f*/,APawn NoiseInstigator/*=nullptr*/,FVector NoiseLocation/*=FVector.ZeroVector*/,float MaxRange/*=0.0f*/,string Tag/*=NAME_None*/) {}
+	public void MakeNoise(float Loudness/*=1.0f*/,APawn NoiseInstigator/*=nullptr*/,FVector NoiseLocation/*=FVector.ZeroVector*/,float MaxRange/*=0.0f*/,string Tag/*=NAME_None*/) {}
 }

@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Serves as a container for the background texture/material display in the UVEditor. This class is responsible for managing the quad</summary>

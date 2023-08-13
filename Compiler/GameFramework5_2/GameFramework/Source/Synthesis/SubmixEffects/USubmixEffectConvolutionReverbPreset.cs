@@ -1,13 +1,12 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("SubmixEffects/SubmixEffectConvolutionReverb.h")]
 public partial class USubmixEffectConvolutionReverbPreset : USoundEffectSubmixPreset {
 	public static UClass StaticClass() {return default;}
 	///<summary>Set the convolution reverb settings</summary>
-	public  void SetSettings(FSubmixEffectConvolutionReverbSettings InSettings) {}
+	public void SetSettings(FSubmixEffectConvolutionReverbSettings InSettings) {}
 	///<summary>Set the convolution reverb impulse response</summary>
-	public  void SetImpulseResponse(UAudioImpulseResponse InImpulseResponse) {}
+	public void SetImpulseResponse(UAudioImpulseResponse InImpulseResponse) {}
 	///<summary>The impulse response used for convolution.</summary>
 	public UAudioImpulseResponse ImpulseResponse;
 	///<summary>ConvolutionReverbPreset Preset Settings.</summary>

@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>A Niagara System contains multiple Niagara Emitters to create various effects.</summary>
@@ -16,9 +15,9 @@ public partial class UNiagaraSystem : UFXSystemAsset {
 	///<summary>If this system is a regular system, a template or a behavior example.</summary>
 	public ENiagaraScriptTemplateSpecification TemplateSpecification;
 	///<summary>TemplateAssetDescription</summary>
-	public string TemplateAssetDescription;
+	public FText TemplateAssetDescription;
 	///<summary>Category of this system.</summary>
-	public string Category;
+	public FText Category;
 	///<summary>ScratchPadScripts</summary>
 	public TArray<UNiagaraScript> ScratchPadScripts;
 	///<summary>EditorOnlyAddedParameters</summary>

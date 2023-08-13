@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Pose Asset that can be blended by weight of curves</summary>
@@ -22,9 +21,9 @@ public partial class UPoseAsset : UAnimationAsset {
 	///<summary>GUID cached when the contained poses were last updated according to SourceAnimation - used to keep track of out-of-date/sync data</summary>
 	public FGuid SourceAnimationRawDataGUID;
 	///<summary>Renames a specific pose</summary>
-	public  void RenamePose(string OriginalPoseName,string NewPoseName) {}
+	public void RenamePose(string OriginalPoseName,string NewPoseName) {}
 	///<summary>Returns the name of all contained poses</summary>
-	public  void GetPoseNames(TArray<string> PoseNames) {}
+	public void GetPoseNames(TArray<string> PoseNames) {}
 	///<summary>Contained poses are re-generated from the provided Animation Sequence</summary>
-	public  void UpdatePoseFromAnimation(UAnimSequence AnimSequence) {}
+	public void UpdatePoseFromAnimation(UAnimSequence AnimSequence) {}
 }

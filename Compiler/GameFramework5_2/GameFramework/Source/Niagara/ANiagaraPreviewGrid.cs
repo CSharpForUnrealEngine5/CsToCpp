@@ -1,17 +1,16 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("NiagaraPreviewGrid.h")]
 public partial class ANiagaraPreviewGrid : AActor {
 	public static UClass StaticClass() {return default;}
 	///<summary>AActor Interface End</summary>
-	public  void ActivatePreviews(bool bReset) {}
+	public void ActivatePreviews(bool bReset) {}
 	///<summary>DeactivatePreviews</summary>
-	public  void DeactivatePreviews() {}
+	public void DeactivatePreviews() {}
 	///<summary>SetPaused</summary>
-	public  void SetPaused(bool bPaused) {}
+	public void SetPaused(bool bPaused) {}
 	///<summary>GetPreviews</summary>
-	public  void GetPreviews(TArray<UNiagaraComponent> OutPreviews) {}
+	public void GetPreviews(TArray<UNiagaraComponent> OutPreviews) {}
 	///<summary>System</summary>
 	public UNiagaraSystem System;
 	///<summary>ResetMode</summary>

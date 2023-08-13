@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("LandscapeBlueprintBrushBase.h")]
@@ -17,11 +16,11 @@ public partial class ALandscapeBlueprintBrushBase : AActor {
 	///<summary>bIsVisible</summary>
 	public bool bIsVisible;
 	///<summary>Render</summary>
-	public  UTextureRenderTarget2D Render(bool InIsHeightmap,UTextureRenderTarget2D InCombinedResult,string InWeightmapLayerName) { return default; }
+	public UTextureRenderTarget2D Render(bool InIsHeightmap,UTextureRenderTarget2D InCombinedResult,string InWeightmapLayerName) { return default; }
 	///<summary>Initialize</summary>
-	public  void Initialize(FTransform InLandscapeTransform,FIntPoint InLandscapeSize,FIntPoint InLandscapeRenderTargetSize) {}
+	public void Initialize(FTransform InLandscapeTransform,FIntPoint InLandscapeSize,FIntPoint InLandscapeRenderTargetSize) {}
 	///<summary>RequestLandscapeUpdate</summary>
-	public  void RequestLandscapeUpdate(bool bInUserTriggered/*=false*/) {}
+	public void RequestLandscapeUpdate(bool bInUserTriggered/*=false*/) {}
 	///<summary>GetBlueprintRenderDependencies</summary>
-	public  void GetBlueprintRenderDependencies(TArray<UObject> OutStreamableAssets) {}
+	public void GetBlueprintRenderDependencies(TArray<UObject> OutStreamableAssets) {}
 }

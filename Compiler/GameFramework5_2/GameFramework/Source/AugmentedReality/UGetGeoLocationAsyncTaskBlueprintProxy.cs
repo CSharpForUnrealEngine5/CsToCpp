@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Blueprint async task to convert Geo location.</summary>
@@ -6,7 +5,7 @@ using CSharpToCpp.Utilities;
 public partial class UGetGeoLocationAsyncTaskBlueprintProxy : UARBaseAsyncTaskBlueprintProxy {
 	public static UClass StaticClass() {return default;}
 	///<summary>FGetGeoLocationDelegate</summary>
-	public  void FGetGeoLocationDelegate(float Longitude,float Latitude,float Altitude,string Error) {}
+	public void FGetGeoLocationDelegate(float Longitude,float Latitude,float Altitude,string Error) {}
 	///<summary>OnSuccess</summary>
 	public FGetGeoLocationDelegate OnSuccess;
 	///<summary>OnFailed</summary>

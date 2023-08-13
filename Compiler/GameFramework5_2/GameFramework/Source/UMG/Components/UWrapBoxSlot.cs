@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>The Slot for the UWrapBox, contains the widget that is flowed vertically</summary>
@@ -18,15 +17,15 @@ public partial class UWrapBoxSlot : UPanelSlot {
 	///<summary>Should this slot start on a new line?</summary>
 	public bool bForceNewLine;
 	///<summary>SetPadding</summary>
-	public  void SetPadding(FMargin InPadding) {}
+	public void SetPadding(FMargin InPadding) {}
 	///<summary>SetFillEmptySpace</summary>
-	public  void SetFillEmptySpace(bool InbFillEmptySpace) {}
+	public void SetFillEmptySpace(bool InbFillEmptySpace) {}
 	///<summary>SetFillSpanWhenLessThan</summary>
-	public  void SetFillSpanWhenLessThan(float InFillSpanWhenLessThan) {}
+	public void SetFillSpanWhenLessThan(float InFillSpanWhenLessThan) {}
 	///<summary>SetHorizontalAlignment</summary>
-	public  void SetHorizontalAlignment(EHorizontalAlignment InHorizontalAlignment) {}
+	public void SetHorizontalAlignment(EHorizontalAlignment InHorizontalAlignment) {}
 	///<summary>SetVerticalAlignment</summary>
-	public  void SetVerticalAlignment(EVerticalAlignment InVerticalAlignment) {}
+	public void SetVerticalAlignment(EVerticalAlignment InVerticalAlignment) {}
 	///<summary>SetNewLine</summary>
-	public  void SetNewLine(bool InForceNewLine) {}
+	public void SetNewLine(bool InForceNewLine) {}
 }

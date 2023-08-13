@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>The widget blueprint generated class allows us to create blueprint-able widgets for UMG at runtime.</summary>

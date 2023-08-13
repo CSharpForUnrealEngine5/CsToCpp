@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Side effects are actions that are performed just after a task is executed</summary>
@@ -6,7 +5,7 @@ using CSharpToCpp.Utilities;
 public partial class UConversationSideEffectNode : UConversationSubNode {
 	public static UClass StaticClass() {return default;}
 	///<summary>ServerCauseSideEffect</summary>
-	public  void ServerCauseSideEffect(FConversationContext Context) {}
+	public void ServerCauseSideEffect(FConversationContext Context) {}
 	///<summary>ClientCauseSideEffect</summary>
-	public  void ClientCauseSideEffect(FConversationContext Context) {}
+	public void ClientCauseSideEffect(FConversationContext Context) {}
 }

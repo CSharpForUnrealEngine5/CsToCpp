@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Data Interface allowing sampling of skeletal meshes.</summary>
@@ -38,5 +37,5 @@ public partial class UNiagaraDataInterfaceSkeletalMesh : UNiagaraDataInterface {
 	///<summary>When this option is disabled, we use the previous frame&#39;s data for the skeletal mesh and can often issue the simulation early. This greatly</summary>
 	public bool bRequireCurrentFrameData;
 	///<summary>OnSourceEndPlay</summary>
-	public  void OnSourceEndPlay(AActor InSource,EEndPlayReason Reason) {}
+	public void OnSourceEndPlay(AActor InSource,EEndPlayReason Reason) {}
 }

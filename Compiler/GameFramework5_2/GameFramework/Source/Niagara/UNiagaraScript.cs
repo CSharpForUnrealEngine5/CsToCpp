@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Runtime script for a Niagara system</summary>
@@ -28,7 +27,7 @@ public partial class UNiagaraScript : UNiagaraScriptBase {
 	///<summary>Use property in struct returned from GetScriptData() instead</summary>
 	public int ModuleUsageBitmask_DEPRECATED;
 	///<summary>Use property in struct returned from GetScriptData() instead</summary>
-	public string Category_DEPRECATED;
+	public FText Category_DEPRECATED;
 	///<summary>Use property in struct returned from GetScriptData() instead</summary>
 	public TArray<string> ProvidedDependencies_DEPRECATED;
 	///<summary>Use property in struct returned from GetScriptData() instead</summary>
@@ -36,7 +35,7 @@ public partial class UNiagaraScript : UNiagaraScriptBase {
 	///<summary>Use property in struct returned from GetScriptData() instead</summary>
 	public bool bDeprecated_DEPRECATED;
 	///<summary>Use property in struct returned from GetScriptData() instead</summary>
-	public string DeprecationMessage_DEPRECATED;
+	public FText DeprecationMessage_DEPRECATED;
 	///<summary>Use property in struct returned from GetScriptData() instead</summary>
 	public UNiagaraScript DeprecationRecommendation_DEPRECATED;
 	///<summary>Use property in struct returned from GetScriptData() instead</summary>
@@ -44,9 +43,9 @@ public partial class UNiagaraScript : UNiagaraScriptBase {
 	///<summary>Use property in struct returned from GetScriptData() instead</summary>
 	public bool bExperimental_DEPRECATED;
 	///<summary>Use property in struct returned from GetScriptData() instead</summary>
-	public string ExperimentalMessage_DEPRECATED;
+	public FText ExperimentalMessage_DEPRECATED;
 	///<summary>Use property in struct returned from GetScriptData() instead</summary>
-	public string NoteMessage_DEPRECATED;
+	public FText NoteMessage_DEPRECATED;
 	///<summary>Deprecated, use LibraryVisibility instead.</summary>
 	public bool bExposeToLibrary_DEPRECATED;
 	///<summary>Use property in struct returned from GetScriptData() instead</summary>
@@ -54,17 +53,17 @@ public partial class UNiagaraScript : UNiagaraScriptBase {
 	///<summary>Use property in struct returned from GetScriptData() instead</summary>
 	public ENiagaraNumericOutputTypeSelectionMode NumericOutputTypeSelectionMode_DEPRECATED;
 	///<summary>Use property in struct returned from GetScriptData() instead</summary>
-	public string Description_DEPRECATED;
+	public FText Description_DEPRECATED;
 	///<summary>Use property in struct returned from GetScriptData() instead</summary>
-	public string Keywords_DEPRECATED;
+	public FText Keywords_DEPRECATED;
 	///<summary>Deprecated, use LibraryVisibility instead.</summary>
-	public string CollapsedViewFormat_DEPRECATED;
+	public FText CollapsedViewFormat_DEPRECATED;
 	///<summary>Deprecated, use LibraryVisibility instead.</summary>
 	public TMap<string,string> ScriptMetaData_DEPRECATED;
 	///<summary>&#39;Source&#39; data/graphs for this script</summary>
 	public UNiagaraScriptSourceBase Source_DEPRECATED;
 	///<summary>RaiseOnGPUCompilationComplete</summary>
-	public  void RaiseOnGPUCompilationComplete() {}
+	public void RaiseOnGPUCompilationComplete() {}
 	///<summary>ScriptExecutionParamStoreCPU</summary>
 	public FNiagaraScriptExecutionParameterStore ScriptExecutionParamStoreCPU;
 	///<summary>ScriptExecutionParamStoreGPU</summary>

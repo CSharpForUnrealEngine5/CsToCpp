@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Script context subobject</summary>
@@ -6,5 +5,5 @@ using CSharpToCpp.Utilities;
 public partial class UScriptContext : UObject {
 	public static UClass StaticClass() {return default;}
 	///<summary>CallScriptFunction</summary>
-	public  void CallScriptFunction(string FunctionName) {}
+	public void CallScriptFunction(string FunctionName) {}
 }

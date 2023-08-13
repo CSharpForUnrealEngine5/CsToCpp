@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("MetasoundFrontendDocument.h")]
@@ -6,16 +5,16 @@ public partial struct FMetasoundFrontendClassMetadata {
 	public FMetasoundFrontendClassName ClassName;
 	public FMetasoundFrontendVersionNumber Version;
 	public EMetasoundFrontendClassType Type;
-	public string DisplayName;
-	public string DisplayNameTransient;
-	public string Description;
-	public string DescriptionTransient;
-	public string PromptIfMissingTransient;
+	public FText DisplayName;
+	public FText DisplayNameTransient;
+	public FText Description;
+	public FText DescriptionTransient;
+	public FText PromptIfMissingTransient;
 	public string Author;
-	public TArray<string> Keywords;
-	public TArray<string> KeywordsTransient;
-	public TArray<string> CategoryHierarchy;
-	public TArray<string> CategoryHierarchyTransient;
+	public TArray<FText> Keywords;
+	public TArray<FText> KeywordsTransient;
+	public TArray<FText> CategoryHierarchy;
+	public TArray<FText> CategoryHierarchyTransient;
 	public bool bIsDeprecated;
 	public bool bAutoUpdateManagesInterface;
 	public bool bSerializeText;

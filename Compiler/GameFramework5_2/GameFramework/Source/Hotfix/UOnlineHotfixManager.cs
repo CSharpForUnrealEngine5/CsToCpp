@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>This class manages the downloading and application of hotfix data</summary>
@@ -12,7 +11,7 @@ public partial class UOnlineHotfixManager : UObject {
 	///<summary>Used to prevent development work from interfering with playtests, etc.</summary>
 	public string DebugPrefix;
 	///<summary>Starts the fetching of hotfix data from the OnlineTitleFileInterface that is registered for this game</summary>
-	public  void StartHotfixProcess() {}
+	public virtual void StartHotfixProcess() {}
 	///<summary>Array of objects that we&#39;re forcing to remain resident because we&#39;ve applied live hotfixes and won&#39;t get an</summary>
 	public TArray<UObject> AssetsHotfixedFromIniFiles;
 }

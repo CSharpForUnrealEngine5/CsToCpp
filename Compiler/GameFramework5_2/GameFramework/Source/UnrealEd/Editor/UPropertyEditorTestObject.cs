@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Editor/PropertyEditorTestObject.h")]
@@ -31,7 +30,7 @@ public partial class UPropertyEditorTestObject : UObject {
 	///<summary>StringProperty</summary>
 	public string StringProperty;
 	///<summary>TextProperty</summary>
-	public string TextProperty;
+	public FText TextProperty;
 	///<summary>IntPointProperty</summary>
 	public FIntPoint IntPointProperty;
 	///<summary>Vector3Property</summary>
@@ -87,7 +86,7 @@ public partial class UPropertyEditorTestObject : UObject {
 	///<summary>StringPropertyArray</summary>
 	public TArray<string> StringPropertyArray;
 	///<summary>TextPropertyArray</summary>
-	public TArray<string> TextPropertyArray;
+	public TArray<FText> TextPropertyArray;
 	///<summary>Vector3PropertyArray</summary>
 	public TArray<FVector> Vector3PropertyArray;
 	///<summary>Vector2PropertyArray</summary>
@@ -147,7 +146,7 @@ public partial class UPropertyEditorTestObject : UObject {
 	///<summary>StringPasswordProperty</summary>
 	public string StringPasswordProperty;
 	///<summary>TextPasswordProperty</summary>
-	public string TextPasswordProperty;
+	public FText TextPasswordProperty;
 	///<summary>ThisIsBrokenIfItsVisibleInADetailsView</summary>
 	public FPropertyEditorTestBasicStruct ThisIsBrokenIfItsVisibleInADetailsView;
 	///<summary>StructWithMultipleInstances1</summary>
@@ -227,7 +226,7 @@ public partial class UPropertyEditorTestObject : UObject {
 	///<summary>Int32ToStringMap</summary>
 	public TMap<int,string> Int32ToStringMap;
 	///<summary>StringToMultilineTextMap</summary>
-	public TMap<string,string> StringToMultilineTextMap;
+	public TMap<string,FText> StringToMultilineTextMap;
 	///<summary>StringToColorMap</summary>
 	public TMap<string,FLinearColor> StringToColorMap;
 	///<summary>Int32ToStructMap</summary>

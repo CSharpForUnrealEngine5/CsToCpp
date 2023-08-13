@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Blueprint async task to check Geo tracking availability.</summary>
@@ -6,7 +5,7 @@ using CSharpToCpp.Utilities;
 public partial class UCheckGeoTrackingAvailabilityAsyncTaskBlueprintProxy : UARBaseAsyncTaskBlueprintProxy {
 	public static UClass StaticClass() {return default;}
 	///<summary>FGeoTrackingAvailabilityDelegate</summary>
-	public  void FGeoTrackingAvailabilityDelegate(bool bIsAvailable,string Error) {}
+	public void FGeoTrackingAvailabilityDelegate(bool bIsAvailable,string Error) {}
 	///<summary>OnSuccess</summary>
 	public FGeoTrackingAvailabilityDelegate OnSuccess;
 	///<summary>OnFailed</summary>

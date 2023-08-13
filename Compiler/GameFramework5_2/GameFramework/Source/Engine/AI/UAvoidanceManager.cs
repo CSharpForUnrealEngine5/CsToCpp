@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("AI/Navigation/AvoidanceManager.h")]
@@ -19,11 +18,11 @@ public partial class UAvoidanceManager : UObject {
 	///<summary>Allowable height margin between obstacles and agents. This is over and above the difference in agent heights.</summary>
 	public float HeightCheckMargin;
 	///<summary>Get the number of avoidance objects currently in the manager.</summary>
-	public  int GetObjectCount() { return default; }
+	public int GetObjectCount() { return default; }
 	///<summary>Get appropriate UID for use when reporting to this function or requesting RVO assistance.</summary>
-	public  int GetNewAvoidanceUID() { return default; }
+	public int GetNewAvoidanceUID() { return default; }
 	///<summary>Register with the given avoidance manager.</summary>
-	public  bool RegisterMovementComponent(UMovementComponent MovementComp,float AvoidanceWeight/*=0.5f*/) { return default; }
+	public bool RegisterMovementComponent(UMovementComponent MovementComp,float AvoidanceWeight/*=0.5f*/) { return default; }
 	///<summary>Calculate avoidance velocity for component (avoids collisions with the supplied component)</summary>
-	public  FVector GetAvoidanceVelocityForComponent(UMovementComponent MovementComp) { return default; }
+	public FVector GetAvoidanceVelocityForComponent(UMovementComponent MovementComp) { return default; }
 }

@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>JumpForce moves the target in a jump-like manner (ends when landing, applied force is relative)</summary>

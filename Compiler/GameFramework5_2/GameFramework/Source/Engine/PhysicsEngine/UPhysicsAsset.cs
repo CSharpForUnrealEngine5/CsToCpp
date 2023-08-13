@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>PhysicsAsset contains a set of rigid bodies and constraints that make up a single ragdoll.</summary>
@@ -34,11 +33,11 @@ public partial class UPhysicsAsset : UObject {
 	///<summary>Information for thumbnail rendering</summary>
 	public UThumbnailInfo ThumbnailInfo;
 	///<summary>Gets a constraint by its joint name</summary>
-	public  FConstraintInstanceAccessor GetConstraintByName(string ConstraintName) { return default; }
+	public FConstraintInstanceAccessor GetConstraintByName(string ConstraintName) { return default; }
 	///<summary>Gets a constraint by its joint name</summary>
-	public  FConstraintInstanceAccessor GetConstraintByBoneNames(string Bone1Name,string Bone2Name) { return default; }
+	public FConstraintInstanceAccessor GetConstraintByBoneNames(string Bone1Name,string Bone2Name) { return default; }
 	///<summary>Gets all constraints</summary>
-	public  void GetConstraints(bool bIncludesTerminated,TArray<FConstraintInstanceAccessor> OutConstraints) {}
+	public void GetConstraints(bool bIncludesTerminated,TArray<FConstraintInstanceAccessor> OutConstraints) {}
 	///<summary>BodySetup_DEPRECATED</summary>
 	public TArray<UBodySetup> BodySetup_DEPRECATED;
 }

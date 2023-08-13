@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>TODO Come up with a better way to let people forward a lot of keyboard input without a bunch of glue</summary>

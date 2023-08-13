@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Expose editor utility functions to Blutilities</summary>
@@ -20,7 +19,7 @@ public partial class UEditorUtilityLibrary : UBlueprintFunctionLibrary {
 	///<summary>Renames an asset (cannot move folders)</summary>
 	public static void RenameAsset(UObject Asset,string NewName) {}
 	///<summary>Attempts to find the actor specified by PathToActor in the current editor world</summary>
-	public  AActor GetActorReference(string PathToActor) { return default; }
+	public AActor GetActorReference(string PathToActor) { return default; }
 	///<summary>Attempts to get the path for the active content browser, returns false if there is no active content browser</summary>
 	public static bool GetCurrentContentBrowserPath(string OutPath) { return default; }
 	///<summary>Gets the path to the currently selected folder in the content browser</summary>

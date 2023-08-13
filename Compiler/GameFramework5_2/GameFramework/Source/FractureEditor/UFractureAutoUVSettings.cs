@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Settings for UV layout and texture baking on the geometry collection *</summary>
@@ -8,19 +7,19 @@ public partial class UFractureAutoUVSettings : UFractureToolSettings {
 	///<summary>Which UV channel to use for layout and baking</summary>
 	public string UVChannel;
 	///<summary>GetUVChannelNamesFunc</summary>
-	public  TArray<string> GetUVChannelNamesFunc() { return default; }
+	public TArray<string> GetUVChannelNamesFunc() { return default; }
 	///<summary>UVChannelNamesList</summary>
 	public TArray<string> UVChannelNamesList;
 	///<summary>Add a UV channel to the Geometry Collection</summary>
-	public  void AddUVChannel() {}
+	public void AddUVChannel() {}
 	///<summary>Remove the last UV channel from the Geometry Collection</summary>
-	public  void DeleteUVChannel() {}
+	public void DeleteUVChannel() {}
 	///<summary>Immediately layout and update the UVs of the selected Geometry Collection, for faces with the Target Material IDs</summary>
-	public  void LayoutUVs() {}
+	public void LayoutUVs() {}
 	///<summary>Bake a new texture with the chosen attributes, aligned to the current UV layout</summary>
-	public  void BakeTexture() {}
+	public void BakeTexture() {}
 	///<summary>Disable &quot;Show Bone Colors&quot; on the selected Geometry Collection Components, so textures are visible. This setting can also be toggled directly on the Component itself</summary>
-	public  void DisableBoneColors() {}
+	public void DisableBoneColors() {}
 	///<summary>The scale factor to use for UV box projection</summary>
 	public FVector ProjectionScale;
 	///<summary>Set the scale factor for UV box projection based on the bounding box of the geometry</summary>
@@ -32,7 +31,7 @@ public partial class UFractureAutoUVSettings : UFractureToolSettings {
 	///<summary>Optionally center the UV projection around the object pivot</summary>
 	public bool bCenterAtPivot;
 	///<summary>Immediately perform a box projection to update the internal UVs of the selected Geometry Collection</summary>
-	public  void BoxProjectUVs() {}
+	public void BoxProjectUVs() {}
 	///<summary>Choose whether to texture only faces with odd material IDs (corresponding to internal faces) or a custom selection</summary>
 	public ETargetMaterialIDs TargetMaterialIDs;
 	///<summary>Custom selection of material IDs to target for texturing</summary>

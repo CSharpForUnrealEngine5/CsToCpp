@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>VR root. This contains nDisplay VR hierarchy in the game.</summary>
@@ -6,21 +5,21 @@ using CSharpToCpp.Utilities;
 public partial class ADisplayClusterRootActor : AActor {
 	public static UClass StaticClass() {return default;}
 	///<summary>GetFlushPositionAndNormal</summary>
-	public  bool GetFlushPositionAndNormal(FVector WorldPosition,FVector OutPosition,FVector OutNormal) { return default; }
+	public bool GetFlushPositionAndNormal(FVector WorldPosition,FVector OutPosition,FVector OutNormal) { return default; }
 	///<summary>MakeStageActorFlushToWall</summary>
-	public  bool MakeStageActorFlushToWall(object /*StageActor*/ StageActor,double DesiredOffsetFromFlush/*=0.0f*/) { return default; }
+	public bool MakeStageActorFlushToWall(object /*StageActor*/ StageActor,double DesiredOffsetFromFlush/*=0.0f*/) { return default; }
 	///<summary>GetStageGeometryComponent</summary>
-	public  UDisplayClusterStageGeometryComponent GetStageGeometryComponent() { return default; }
+	public UDisplayClusterStageGeometryComponent GetStageGeometryComponent() { return default; }
 	///<summary>GetDefaultCamera</summary>
-	public  UDisplayClusterCameraComponent GetDefaultCamera() { return default; }
+	public UDisplayClusterCameraComponent GetDefaultCamera() { return default; }
 	///<summary>Get the view origin most commonly used by viewports in this cluster.</summary>
-	public  USceneComponent GetCommonViewPoint() { return default; }
+	public USceneComponent GetCommonViewPoint() { return default; }
 	///<summary>SetReplaceTextureFlagForAllViewports</summary>
-	public  bool SetReplaceTextureFlagForAllViewports(bool bReplace) { return default; }
+	public bool SetReplaceTextureFlagForAllViewports(bool bReplace) { return default; }
 	///<summary>SetFreezeOuterViewports</summary>
-	public  bool SetFreezeOuterViewports(bool bEnable) { return default; }
+	public bool SetFreezeOuterViewports(bool bEnable) { return default; }
 	///<summary>Update the geometry of the procedural mesh component(s) referenced inside nDisplay</summary>
-	public  void UpdateProceduralMeshComponentData(UProceduralMeshComponent InProceduralMeshComponent/*=nullptr*/) {}
+	public void UpdateProceduralMeshComponentData(UProceduralMeshComponent InProceduralMeshComponent/*=nullptr*/) {}
 	///<summary>ViewportScreenPercentageMultiplierRef</summary>
 	public FDisplayClusterEditorPropertyReference ViewportScreenPercentageMultiplierRef;
 	///<summary>Adjust resolution scaling for an individual viewport.  Viewport Screen Percentage Multiplier is applied to this value.</summary>

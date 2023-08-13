@@ -1,13 +1,12 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Tests/RemoteControlDeltaAPITestData.h")]
 public partial class URemoteControlDeltaAPITestObject : UObject {
 	public static UClass StaticClass() {return default;}
 	///<summary>GetInt32WithSetterValue</summary>
-	public  int GetInt32WithSetterValue() { return default; }
+	public int GetInt32WithSetterValue() { return default; }
 	///<summary>SetInt32WithSetterValue</summary>
-	public  void SetInt32WithSetterValue(int NewValue) {}
+	public void SetInt32WithSetterValue(int NewValue) {}
 	///<summary>Int32Value</summary>
 	public int Int32Value;
 	///<summary>FloatValue</summary>

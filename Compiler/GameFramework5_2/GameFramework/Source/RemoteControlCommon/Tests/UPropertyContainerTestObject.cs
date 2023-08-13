@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Tests/RCPropertyContainerTestData.h")]
@@ -29,7 +28,7 @@ public partial class UPropertyContainerTestObject : UObject {
 	///<summary>SomeString</summary>
 	public string SomeString;
 	///<summary>SomeText</summary>
-	public string SomeText;
+	public FText SomeText;
 	///<summary>SomeFloatArray</summary>
 	public TArray<float> SomeFloatArray;
 }

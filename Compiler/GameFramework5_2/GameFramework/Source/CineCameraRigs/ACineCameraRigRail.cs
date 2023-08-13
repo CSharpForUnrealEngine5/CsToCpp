@@ -1,11 +1,10 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("CineCameraRigRail.h")]
 public partial class ACineCameraRigRail : ACameraRig_Rail {
 	public static UClass StaticClass() {return default;}
 	///<summary>Returns CineSplineComponent</summary>
-	public  UCineSplineComponent GetCineSplineComponent() { return default; }
+	public UCineSplineComponent GetCineSplineComponent() { return default; }
 	///<summary>Use AbsolutePosition metadata to parameterize the spline</summary>
 	public bool bUseAbsolutePosition;
 	///<summary>Custom parameter to drive current position</summary>
@@ -37,9 +36,9 @@ public partial class ACineCameraRigRail : ACameraRig_Rail {
 	///<summary>Determines if it can drive focus distance on the attached actors</summary>
 	public bool bInheritFocusDistance;
 	///<summary>Set spline mesh material</summary>
-	public  void SetSplineMeshMaterial(UMaterialInterface InMaterial) {}
+	public void SetSplineMeshMaterial(UMaterialInterface InMaterial) {}
 	///<summary>Set texture used in the spline mesh material</summary>
-	public  void SetSplineMeshTexture(UTexture2D InTexture) {}
+	public void SetSplineMeshTexture(UTexture2D InTexture) {}
 	///<summary>Calculate internal velocity at the given position</summary>
-	public  FVector GetVelocityAtPosition(float InPosition,float delta/*=0.001f*/) { return default; }
+	public FVector GetVelocityAtPosition(float InPosition,float delta/*=0.001f*/) { return default; }
 }

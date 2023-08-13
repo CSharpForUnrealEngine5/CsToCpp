@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Zero-centered 3D Fractal noise in 1, 2, 3 or 4 channels, created by summing several</summary>

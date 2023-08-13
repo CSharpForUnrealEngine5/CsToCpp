@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>A particle emitter.</summary>
@@ -76,53 +75,53 @@ public partial class UParticleSystemComponent : UFXSystemComponent {
 	///<summary>Options for how we handle our scale when we attach to the AutoAttachParent, if bAutoManageAttachment is true.</summary>
 	public EAttachmentRule AutoAttachScaleRule;
 	///<summary>DEPRECATED: Set AutoAttachParent, AutoAttachSocketName, AutoAttachLocationType to the specified parameters. Does not change bAutoManageAttachment; that must be set separately.</summary>
-	public  void SetAutoAttachParams(USceneComponent Parent,string SocketName/*=NAME_None*/,EAttachLocation LocationType/*=EAttachLocation.KeepRelativeOffset*/) {}
+	public void SetAutoAttachParams(USceneComponent Parent,string SocketName/*=NAME_None*/,EAttachLocation LocationType/*=EAttachLocation.KeepRelativeOffset*/) {}
 	///<summary>Called when the particle system is done</summary>
 	public FOnSystemFinished OnSystemFinished;
 	///<summary>Set the beam end point</summary>
-	public  void SetBeamEndPoint(int EmitterIndex,FVector NewEndPoint) {}
+	public virtual void SetBeamEndPoint(int EmitterIndex,FVector NewEndPoint) {}
 	///<summary>Set the beam source point</summary>
-	public  void SetBeamSourcePoint(int EmitterIndex,FVector NewSourcePoint,int SourceIndex) {}
+	public virtual void SetBeamSourcePoint(int EmitterIndex,FVector NewSourcePoint,int SourceIndex) {}
 	///<summary>Set the beam source tangent</summary>
-	public  void SetBeamSourceTangent(int EmitterIndex,FVector NewTangentPoint,int SourceIndex) {}
+	public virtual void SetBeamSourceTangent(int EmitterIndex,FVector NewTangentPoint,int SourceIndex) {}
 	///<summary>Set the beam source strength</summary>
-	public  void SetBeamSourceStrength(int EmitterIndex,float NewSourceStrength,int SourceIndex) {}
+	public virtual void SetBeamSourceStrength(int EmitterIndex,float NewSourceStrength,int SourceIndex) {}
 	///<summary>Set the beam target point</summary>
-	public  void SetBeamTargetPoint(int EmitterIndex,FVector NewTargetPoint,int TargetIndex) {}
+	public virtual void SetBeamTargetPoint(int EmitterIndex,FVector NewTargetPoint,int TargetIndex) {}
 	///<summary>Set the beam target tangent</summary>
-	public  void SetBeamTargetTangent(int EmitterIndex,FVector NewTangentPoint,int TargetIndex) {}
+	public virtual void SetBeamTargetTangent(int EmitterIndex,FVector NewTangentPoint,int TargetIndex) {}
 	///<summary>Set the beam target strength</summary>
-	public  void SetBeamTargetStrength(int EmitterIndex,float NewTargetStrength,int TargetIndex) {}
+	public virtual void SetBeamTargetStrength(int EmitterIndex,float NewTargetStrength,int TargetIndex) {}
 	///<summary>Get the beam end point</summary>
-	public  bool GetBeamEndPoint(int EmitterIndex,FVector OutEndPoint) { return default; }
+	public virtual bool GetBeamEndPoint(int EmitterIndex,FVector OutEndPoint) { return default; }
 	///<summary>Get the beam source point</summary>
-	public  bool GetBeamSourcePoint(int EmitterIndex,int SourceIndex,FVector OutSourcePoint) { return default; }
+	public virtual bool GetBeamSourcePoint(int EmitterIndex,int SourceIndex,FVector OutSourcePoint) { return default; }
 	///<summary>Get the beam source tangent</summary>
-	public  bool GetBeamSourceTangent(int EmitterIndex,int SourceIndex,FVector OutTangentPoint) { return default; }
+	public virtual bool GetBeamSourceTangent(int EmitterIndex,int SourceIndex,FVector OutTangentPoint) { return default; }
 	///<summary>Get the beam source strength</summary>
-	public  bool GetBeamSourceStrength(int EmitterIndex,int SourceIndex,float OutSourceStrength) { return default; }
+	public virtual bool GetBeamSourceStrength(int EmitterIndex,int SourceIndex,float OutSourceStrength) { return default; }
 	///<summary>Get the beam target point</summary>
-	public  bool GetBeamTargetPoint(int EmitterIndex,int TargetIndex,FVector OutTargetPoint) { return default; }
+	public virtual bool GetBeamTargetPoint(int EmitterIndex,int TargetIndex,FVector OutTargetPoint) { return default; }
 	///<summary>Get the beam target tangent</summary>
-	public  bool GetBeamTargetTangent(int EmitterIndex,int TargetIndex,FVector OutTangentPoint) { return default; }
+	public virtual bool GetBeamTargetTangent(int EmitterIndex,int TargetIndex,FVector OutTangentPoint) { return default; }
 	///<summary>Get the beam target strength</summary>
-	public  bool GetBeamTargetStrength(int EmitterIndex,int TargetIndex,float OutTargetStrength) { return default; }
+	public virtual bool GetBeamTargetStrength(int EmitterIndex,int TargetIndex,float OutTargetStrength) { return default; }
 	///<summary>Set a named material instance parameter on this ParticleSystemComponent.</summary>
-	public  void SetMaterialParameter(string ParameterName,UMaterialInterface Param) {}
+	public void SetMaterialParameter(string ParameterName,UMaterialInterface Param) {}
 	///<summary>Change the ParticleSystem used by this ParticleSystemComponent</summary>
-	public  void SetTemplate(UParticleSystem NewTemplate) {}
+	public void SetTemplate(UParticleSystem NewTemplate) {}
 	///<summary>Get the current number of active particles in this system</summary>
-	public  int GetNumActiveParticles() { return default; }
+	public int GetNumActiveParticles() { return default; }
 	///<summary>Begins all trail emitters in this component.</summary>
-	public  void BeginTrails(string InFirstSocketName,string InSecondSocketName,ETrailWidthMode InWidthMode,float InWidth) {}
+	public void BeginTrails(string InFirstSocketName,string InSecondSocketName,ETrailWidthMode InWidthMode,float InWidth) {}
 	///<summary>Ends all trail emitters in this component.</summary>
-	public  void EndTrails() {}
+	public void EndTrails() {}
 	///<summary>Sets the defining data for all trails in this component.</summary>
-	public  void SetTrailSourceData(string InFirstSocketName,string InSecondSocketName,ETrailWidthMode InWidthMode,float InWidth) {}
+	public void SetTrailSourceData(string InFirstSocketName,string InSecondSocketName,ETrailWidthMode InWidthMode,float InWidth) {}
 	///<summary>Creates a Dynamic Material Instance for the specified named material override, optionally from the supplied material.</summary>
-	public  UMaterialInstanceDynamic CreateNamedDynamicMaterialInstance(string InName,UMaterialInterface SourceMaterial/*=NULL*/) { return default; }
+	public virtual UMaterialInstanceDynamic CreateNamedDynamicMaterialInstance(string InName,UMaterialInterface SourceMaterial/*=NULL*/) { return default; }
 	///<summary>Returns a named material. If this named material is not found, returns NULL.</summary>
-	public  UMaterialInterface GetNamedMaterial(string InName) { return default; }
+	public virtual UMaterialInterface GetNamedMaterial(string InName) { return default; }
 	///<summary>Record a kismet event.</summary>
-	public  void GenerateParticleEvent(string InEventName,float InEmitterTime,FVector InLocation,FVector InDirection,FVector InVelocity) {}
+	public void GenerateParticleEvent(string InEventName,float InEmitterTime,FVector InLocation,FVector InDirection,FVector InVelocity) {}
 }

@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Data interface for handling latent (delayed 1 frame) traces against the scene for GPU simulations.</summary>

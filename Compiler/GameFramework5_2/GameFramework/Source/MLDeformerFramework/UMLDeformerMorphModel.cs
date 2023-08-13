@@ -1,17 +1,16 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("MLDeformerMorphModel.h")]
 public partial class UMLDeformerMorphModel : UMLDeformerGeomCacheModel {
 	public static UClass StaticClass() {return default;}
 	///<summary>Set the per vertex deltas, as a set of floats. Each vertex delta must have 3 floats.</summary>
-	public  void SetMorphTargetDeltaFloats(TArray<float> Deltas) {}
+	public void SetMorphTargetDeltaFloats(TArray<float> Deltas) {}
 	///<summary>Set the morph target model deltas as an array of 3D vectors.</summary>
-	public  void SetMorphTargetDeltas(TArray<FVector3f> Deltas) {}
+	public void SetMorphTargetDeltas(TArray<FVector3f> Deltas) {}
 	///<summary>Set the order of importance during LOD, for the morph targets.</summary>
-	public  void SetMorphTargetsErrorOrder(TArray<int> MorphTargetOrder,TArray<float> ErrorValues) {}
+	public void SetMorphTargetsErrorOrder(TArray<int> MorphTargetOrder,TArray<float> ErrorValues) {}
 	///<summary>Set the maximum weights for each morph target when we pass the training inputs into the trained neural network.</summary>
-	public  void SetMorphTargetsMaxWeights(TArray<float> MaxWeights) {}
+	public void SetMorphTargetsMaxWeights(TArray<float> MaxWeights) {}
 	///<summary>The entire set of uncompressed morph target deltas, 3 per vertex, for each morph target, as one flattened buffer.</summary>
 	public TArray<FVector3f> MorphTargetDeltas;
 	///<summary>The number of morph targets.</summary>

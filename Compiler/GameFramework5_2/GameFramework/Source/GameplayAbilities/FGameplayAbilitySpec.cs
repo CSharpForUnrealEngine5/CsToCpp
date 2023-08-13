@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>An activatable ability spec, hosted on the ability system component. This defines both what the ability is (what class, what level, input binding etc)</summary>

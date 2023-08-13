@@ -1,21 +1,20 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("KeysAndChannels/MovieSceneScriptingObjectPath.h")]
 public partial class UMovieSceneScriptingObjectPathChannel : UMovieSceneScriptingChannel {
 	public static UClass StaticClass() {return default;}
 	///<summary>Add a key to this channel. This initializes a new key and returns a reference to it.</summary>
-	public  UMovieSceneScriptingObjectPathKey AddKey(FFrameNumber InTime,UObject NewValue,float SubFrame/*=0.0f*/,ESequenceTimeUnit TimeUnit/*=ESequenceTimeUnit.DisplayRate*/) { return default; }
+	public UMovieSceneScriptingObjectPathKey AddKey(FFrameNumber InTime,UObject NewValue,float SubFrame/*=0.0f*/,ESequenceTimeUnit TimeUnit/*=ESequenceTimeUnit.DisplayRate*/) { return default; }
 	///<summary>Removes the specified key. Does nothing if the key is not specified or the key belongs to another channel.</summary>
-	public  void RemoveKey(UMovieSceneScriptingKey Key) {}
+	public virtual void RemoveKey(UMovieSceneScriptingKey Key) {}
 	///<summary>Gets all of the keys in this channel.</summary>
-	public  TArray<UMovieSceneScriptingKey> GetKeys() { return default; }
+	public virtual TArray<UMovieSceneScriptingKey> GetKeys() { return default; }
 	///<summary>Set this channel&#39;s default value that should be used when no keys are present.</summary>
-	public  void SetDefault(UObject InDefaultValue) {}
+	public void SetDefault(UObject InDefaultValue) {}
 	///<summary>Get this channel&#39;s default value that will be used when no keys are present. Only a valid</summary>
-	public  UObject GetDefault() { return default; }
+	public UObject GetDefault() { return default; }
 	///<summary>Remove this channel&#39;s default value causing the channel to have no effect where no keys are present</summary>
-	public  void RemoveDefault() {}
+	public void RemoveDefault() {}
 	///<summary>@return Does this channel have a default value set?</summary>
-	public  bool HasDefault() { return default; }
+	public bool HasDefault() { return default; }
 }

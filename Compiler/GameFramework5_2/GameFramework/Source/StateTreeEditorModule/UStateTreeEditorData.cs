@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Edit time data for StateTree asset. This data gets baked into runtime format before being used by the StateTreeInstance.</summary>

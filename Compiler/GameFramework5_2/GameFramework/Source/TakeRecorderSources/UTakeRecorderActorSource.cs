@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>This Take Recorder Source can record an actor from the World&#39;s properties.</summary>
@@ -36,7 +35,7 @@ public partial class UTakeRecorderActorSource : UTakeRecorderSource {
 	///<summary>* Remove the given actor from TakeRecorderSources.</summary>
 	public static void RemoveActorFromSources(AActor InActor,UTakeRecorderSources InSources) {}
 	///<summary>Set the Target actor that we are going to record. Will reset the Recorded Property Map to defaults.</summary>
-	public  void SetSourceActor(TSoftObjectPtr<AActor> InTarget) {}
+	public void SetSourceActor(TSoftObjectPtr<AActor> InTarget) {}
 	///<summary>GetSourceActor</summary>
-	public  TSoftObjectPtr<AActor> GetSourceActor() { return default; }
+	public TSoftObjectPtr<AActor> GetSourceActor() { return default; }
 }

@@ -1,27 +1,26 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("PCGComponent.h")]
 public partial class UPCGComponent : UActorComponent {
 	public static UClass StaticClass() {return default;}
 	///<summary>SetGraph</summary>
-	public  void SetGraph(UPCGGraphInterface InGraph) {}
+	public void SetGraph(UPCGGraphInterface InGraph) {}
 	///<summary>Registers some managed resource to the current component</summary>
-	public  void AddToManagedResources(UPCGManagedResource InResource) {}
+	public void AddToManagedResources(UPCGManagedResource InResource) {}
 	///<summary>Starts generation from a local (vs. remote) standpoint. Will not be replicated. Will be delayed.</summary>
-	public  void GenerateLocal(bool bForce) {}
+	public void GenerateLocal(bool bForce) {}
 	///<summary>Cleans up the generation from a local (vs. remote) standpoint. Will not be replicated. Will be delayed.</summary>
-	public  void CleanupLocal(bool bRemoveComponents,bool bSave/*=false*/) {}
+	public void CleanupLocal(bool bRemoveComponents,bool bSave/*=false*/) {}
 	///<summary>Networked generation call that also activates the component as needed</summary>
-	public  void Generate(bool bForce) {}
+	public void Generate(bool bForce) {}
 	///<summary>Networked cleanup call</summary>
-	public  void Cleanup(bool bRemoveComponents,bool bSave/*=false*/) {}
+	public void Cleanup(bool bRemoveComponents,bool bSave/*=false*/) {}
 	///<summary>Notify properties changed, used in runtime cases, will dirty &amp; trigger a regeneration if needed</summary>
-	public  void NotifyPropertiesChangedFromBlueprint() {}
+	public void NotifyPropertiesChangedFromBlueprint() {}
 	///<summary>Retrieves generated data</summary>
-	public  FPCGDataCollection GetGeneratedGraphOutput() { return default; }
+	public FPCGDataCollection GetGeneratedGraphOutput() { return default; }
 	///<summary>Move all generated resources under a new actor, following a template (AActor if not provided), clearing all link to this PCG component. Returns the new actor.</summary>
-	public  AActor ClearPCGLink(UClass TemplateActor/*=nullptr*/) { return default; }
+	public AActor ClearPCGLink(UClass TemplateActor/*=nullptr*/) { return default; }
 	///<summary>InputType</summary>
 	public EPCGComponentInput InputType;
 	///<summary>bParseActorComponents</summary>

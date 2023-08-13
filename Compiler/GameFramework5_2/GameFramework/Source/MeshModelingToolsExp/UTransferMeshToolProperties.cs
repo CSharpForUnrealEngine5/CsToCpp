@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Standard properties of the Transfer operation</summary>
@@ -14,11 +13,11 @@ public partial class UTransferMeshToolProperties : UInteractiveToolPropertySet {
 	///<summary>non-exposed properties used to provide custom lists to SourceLOD/TargetLOD</summary>
 	public bool bIsStaticMeshSource;
 	///<summary>GetSourceLODNamesFunc</summary>
-	public  TArray<string> GetSourceLODNamesFunc() { return default; }
+	public TArray<string> GetSourceLODNamesFunc() { return default; }
 	///<summary>SourceLODNamesList</summary>
 	public TArray<string> SourceLODNamesList;
 	///<summary>GetTargetLODNamesFunc</summary>
-	public  TArray<string> GetTargetLODNamesFunc() { return default; }
+	public TArray<string> GetTargetLODNamesFunc() { return default; }
 	///<summary>TargetLODNamesList</summary>
 	public TArray<string> TargetLODNamesList;
 	///<summary>bIsStaticMeshTarget</summary>

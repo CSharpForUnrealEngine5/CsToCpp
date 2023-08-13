@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Implements a media player asset that can play movies and other media sources.</summary>
@@ -6,149 +5,149 @@ using CSharpToCpp.Utilities;
 public partial class UMediaPlayer : UObject {
 	public static UClass StaticClass() {return default;}
 	///<summary>Check whether media playback can be paused right now.</summary>
-	public  bool CanPause() { return default; }
+	public bool CanPause() { return default; }
 	///<summary>Check whether the specified media source can be played by this player.</summary>
-	public  bool CanPlaySource(UMediaSource MediaSource) { return default; }
+	public bool CanPlaySource(UMediaSource MediaSource) { return default; }
 	///<summary>Check whether the specified URL can be played by this player.</summary>
-	public  bool CanPlayUrl(string Url) { return default; }
+	public bool CanPlayUrl(string Url) { return default; }
 	///<summary>Close the currently open media, if any.</summary>
-	public  void Close() {}
+	public void Close() {}
 	///<summary>Get the number of channels in the specified audio track.</summary>
-	public  int GetAudioTrackChannels(int TrackIndex,int FormatIndex) { return default; }
+	public int GetAudioTrackChannels(int TrackIndex,int FormatIndex) { return default; }
 	///<summary>Get the sample rate of the specified audio track.</summary>
-	public  int GetAudioTrackSampleRate(int TrackIndex,int FormatIndex) { return default; }
+	public int GetAudioTrackSampleRate(int TrackIndex,int FormatIndex) { return default; }
 	///<summary>Get the type of the specified audio track format.</summary>
-	public  string GetAudioTrackType(int TrackIndex,int FormatIndex) { return default; }
+	public string GetAudioTrackType(int TrackIndex,int FormatIndex) { return default; }
 	///<summary>Get the name of the current desired native player.</summary>
-	public  string GetDesiredPlayerName() { return default; }
+	public string GetDesiredPlayerName() { return default; }
 	///<summary>Get the media&#39;s duration.</summary>
-	public  FTimespan GetDuration() { return default; }
+	public FTimespan GetDuration() { return default; }
 	///<summary>Get the current horizontal field of view (only for 360 videos).</summary>
-	public  float GetHorizontalFieldOfView() { return default; }
+	public float GetHorizontalFieldOfView() { return default; }
 	///<summary>Get the human readable name of the currently loaded media source.</summary>
-	public  string GetMediaName() { return default; }
+	public virtual FText GetMediaName() { return default; }
 	///<summary>Get the number of tracks of the given type.</summary>
-	public  int GetNumTracks(EMediaPlayerTrack TrackType) { return default; }
+	public int GetNumTracks(EMediaPlayerTrack TrackType) { return default; }
 	///<summary>Get the number of formats of the specified track.</summary>
-	public  int GetNumTrackFormats(EMediaPlayerTrack TrackType,int TrackIndex) { return default; }
+	public int GetNumTrackFormats(EMediaPlayerTrack TrackType,int TrackIndex) { return default; }
 	///<summary>Get the name of the current native media player.</summary>
-	public  string GetPlayerName() { return default; }
+	public string GetPlayerName() { return default; }
 	///<summary>Get the current play list.</summary>
-	public  UMediaPlaylist GetPlaylist() { return default; }
+	public UMediaPlaylist GetPlaylist() { return default; }
 	///<summary>Get the current play list index.</summary>
-	public  int GetPlaylistIndex() { return default; }
+	public int GetPlaylistIndex() { return default; }
 	///<summary>Get the media&#39;s current playback rate.</summary>
-	public  float GetRate() { return default; }
+	public float GetRate() { return default; }
 	///<summary>Get the index of the currently selected track of the given type.</summary>
-	public  int GetSelectedTrack(EMediaPlayerTrack TrackType) { return default; }
+	public int GetSelectedTrack(EMediaPlayerTrack TrackType) { return default; }
 	///<summary>Get the supported playback rates.</summary>
-	public  void GetSupportedRates(TArray<FFloatRange> OutRates,bool Unthinned) {}
+	public void GetSupportedRates(TArray<FFloatRange> OutRates,bool Unthinned) {}
 	///<summary>Get the media&#39;s current playback time.</summary>
-	public  FTimespan GetTime() { return default; }
+	public FTimespan GetTime() { return default; }
 	///<summary>Get the media&#39;s current playback timestamp.</summary>
-	public  UMediaTimeStampInfo GetTimeStamp() { return default; }
+	public UMediaTimeStampInfo GetTimeStamp() { return default; }
 	///<summary>Get the human readable name of the specified track.</summary>
-	public  string GetTrackDisplayName(EMediaPlayerTrack TrackType,int TrackIndex) { return default; }
+	public FText GetTrackDisplayName(EMediaPlayerTrack TrackType,int TrackIndex) { return default; }
 	///<summary>Get the index of the active format of the specified track type.</summary>
-	public  int GetTrackFormat(EMediaPlayerTrack TrackType,int TrackIndex) { return default; }
+	public int GetTrackFormat(EMediaPlayerTrack TrackType,int TrackIndex) { return default; }
 	///<summary>Get the language tag of the specified track.</summary>
-	public  string GetTrackLanguage(EMediaPlayerTrack TrackType,int TrackIndex) { return default; }
+	public string GetTrackLanguage(EMediaPlayerTrack TrackType,int TrackIndex) { return default; }
 	///<summary>Get the URL of the currently loaded media, if any.</summary>
-	public  string GetUrl() { return default; }
+	public string GetUrl() { return default; }
 	///<summary>Get the current vertical field of view (only for 360 videos).</summary>
-	public  float GetVerticalFieldOfView() { return default; }
+	public float GetVerticalFieldOfView() { return default; }
 	///<summary>Get the aspect ratio of the specified video track.</summary>
-	public  float GetVideoTrackAspectRatio(int TrackIndex,int FormatIndex) { return default; }
+	public float GetVideoTrackAspectRatio(int TrackIndex,int FormatIndex) { return default; }
 	///<summary>Get the current dimensions of the specified video track.</summary>
-	public  FIntPoint GetVideoTrackDimensions(int TrackIndex,int FormatIndex) { return default; }
+	public FIntPoint GetVideoTrackDimensions(int TrackIndex,int FormatIndex) { return default; }
 	///<summary>Get the frame rate of the specified video track.</summary>
-	public  float GetVideoTrackFrameRate(int TrackIndex,int FormatIndex) { return default; }
+	public float GetVideoTrackFrameRate(int TrackIndex,int FormatIndex) { return default; }
 	///<summary>Get the supported range of frame rates of the specified video track.</summary>
-	public  FFloatRange GetVideoTrackFrameRates(int TrackIndex,int FormatIndex) { return default; }
+	public FFloatRange GetVideoTrackFrameRates(int TrackIndex,int FormatIndex) { return default; }
 	///<summary>Get the type of the specified video track format.</summary>
-	public  string GetVideoTrackType(int TrackIndex,int FormatIndex) { return default; }
+	public string GetVideoTrackType(int TrackIndex,int FormatIndex) { return default; }
 	///<summary>Get the current view rotation (only for 360 videos).</summary>
-	public  FRotator GetViewRotation() { return default; }
+	public FRotator GetViewRotation() { return default; }
 	///<summary>Delay of the player&#39;s time.</summary>
-	public  FTimespan GetTimeDelay() { return default; }
+	public FTimespan GetTimeDelay() { return default; }
 	///<summary>Check whether the player is in an error state.</summary>
-	public  bool HasError() { return default; }
+	public bool HasError() { return default; }
 	///<summary>Check whether playback is buffering data.</summary>
-	public  bool IsBuffering() { return default; }
+	public bool IsBuffering() { return default; }
 	///<summary>Check whether the player is currently connecting to a media source.</summary>
-	public  bool IsConnecting() { return default; }
+	public bool IsConnecting() { return default; }
 	///<summary>Check whether playback is looping.</summary>
-	public  bool IsLooping() { return default; }
+	public bool IsLooping() { return default; }
 	///<summary>Check whether playback is currently paused.</summary>
-	public  bool IsPaused() { return default; }
+	public bool IsPaused() { return default; }
 	///<summary>Check whether playback has started.</summary>
-	public  bool IsPlaying() { return default; }
+	public bool IsPlaying() { return default; }
 	///<summary>Check whether the media is currently opening or buffering.</summary>
-	public  bool IsPreparing() { return default; }
+	public bool IsPreparing() { return default; }
 	///<summary>Whether media is currently closed.</summary>
-	public  bool IsClosed() { return default; }
+	public bool IsClosed() { return default; }
 	///<summary>Check whether media is ready for playback.</summary>
-	public  bool IsReady() { return default; }
+	public bool IsReady() { return default; }
 	///<summary>Open the next item in the current play list.</summary>
-	public  bool Next() { return default; }
+	public bool Next() { return default; }
 	///<summary>Opens the specified media file path.</summary>
-	public  bool OpenFile(string FilePath) { return default; }
+	public bool OpenFile(string FilePath) { return default; }
 	///<summary>Open the first media source in the specified play list.</summary>
-	public  bool OpenPlaylist(UMediaPlaylist InPlaylist) { return default; }
+	public bool OpenPlaylist(UMediaPlaylist InPlaylist) { return default; }
 	///<summary>Open a particular media source in the specified play list.</summary>
-	public  bool OpenPlaylistIndex(UMediaPlaylist InPlaylist,int Index) { return default; }
+	public bool OpenPlaylistIndex(UMediaPlaylist InPlaylist,int Index) { return default; }
 	///<summary>Open the specified media source.</summary>
-	public  bool OpenSource(UMediaSource MediaSource) { return default; }
+	public bool OpenSource(UMediaSource MediaSource) { return default; }
 	///<summary>Open the specified media source with supplied options applied.</summary>
-	public  bool OpenSourceWithOptions(UMediaSource MediaSource,FMediaPlayerOptions Options) { return default; }
+	public bool OpenSourceWithOptions(UMediaSource MediaSource,FMediaPlayerOptions Options) { return default; }
 	///<summary>Open the specified media source with options using a latent action.</summary>
-	public  void OpenSourceLatent(UObject WorldContextObject,FLatentActionInfo LatentInfo,UMediaSource MediaSource,FMediaPlayerOptions Options,bool bSuccess) {}
+	public void OpenSourceLatent(UObject WorldContextObject,FLatentActionInfo LatentInfo,UMediaSource MediaSource,FMediaPlayerOptions Options,bool bSuccess) {}
 	///<summary>Opens the specified media URL.</summary>
-	public  bool OpenUrl(string Url) { return default; }
+	public bool OpenUrl(string Url) { return default; }
 	///<summary>Pauses media playback.</summary>
-	public  bool Pause() { return default; }
+	public bool Pause() { return default; }
 	///<summary>Starts media playback.</summary>
-	public  bool Play() { return default; }
+	public bool Play() { return default; }
 	///<summary>Starts playback from the media opened event, but can be used elsewhere.</summary>
-	public  void PlayAndSeek() {}
+	public void PlayAndSeek() {}
 	///<summary>Open the previous item in the current play list.</summary>
-	public  bool Previous() { return default; }
+	public bool Previous() { return default; }
 	///<summary>Reopens the currently opened media or play list.</summary>
-	public  bool Reopen() { return default; }
+	public bool Reopen() { return default; }
 	///<summary>Rewinds the media to the beginning.</summary>
-	public  bool Rewind() { return default; }
+	public bool Rewind() { return default; }
 	///<summary>Seeks to the specified playback time.</summary>
-	public  bool Seek(FTimespan Time) { return default; }
+	public bool Seek(FTimespan Time) { return default; }
 	///<summary>Select the active track of the given type.</summary>
-	public  bool SelectTrack(EMediaPlayerTrack TrackType,int TrackIndex) { return default; }
+	public bool SelectTrack(EMediaPlayerTrack TrackType,int TrackIndex) { return default; }
 	///<summary>Set the time on which to block.</summary>
-	public  void SetBlockOnTime(FTimespan Time) {}
+	public void SetBlockOnTime(FTimespan Time) {}
 	///<summary>Set the name of the desired native player.</summary>
-	public  void SetDesiredPlayerName(string PlayerName) {}
+	public void SetDesiredPlayerName(string PlayerName) {}
 	///<summary>Enables or disables playback looping.</summary>
-	public  bool SetLooping(bool Looping) { return default; }
+	public bool SetLooping(bool Looping) { return default; }
 	///<summary>Sets the media options used by the player.</summary>
-	public  void SetMediaOptions(UMediaSource Options) {}
+	public void SetMediaOptions(UMediaSource Options) {}
 	///<summary>Changes the media&#39;s playback rate.</summary>
-	public  bool SetRate(float Rate) { return default; }
+	public bool SetRate(float Rate) { return default; }
 	///<summary>Set the volume on the native player if not mixing with Sound Wave asset.</summary>
-	public  bool SetNativeVolume(float Volume) { return default; }
+	public bool SetNativeVolume(float Volume) { return default; }
 	///<summary>Set the format on the specified track.</summary>
-	public  bool SetTrackFormat(EMediaPlayerTrack TrackType,int TrackIndex,int FormatIndex) { return default; }
+	public bool SetTrackFormat(EMediaPlayerTrack TrackType,int TrackIndex,int FormatIndex) { return default; }
 	///<summary>Set the frame rate of the specified video track.</summary>
-	public  bool SetVideoTrackFrameRate(int TrackIndex,int FormatIndex,float FrameRate) { return default; }
+	public bool SetVideoTrackFrameRate(int TrackIndex,int FormatIndex,float FrameRate) { return default; }
 	///<summary>Set the field of view (only for 360 videos).</summary>
-	public  bool SetViewField(float Horizontal,float Vertical,bool Absolute) { return default; }
+	public bool SetViewField(float Horizontal,float Vertical,bool Absolute) { return default; }
 	///<summary>Set the view&#39;s rotation (only for 360 videos).</summary>
-	public  bool SetViewRotation(FRotator Rotation,bool Absolute) { return default; }
+	public bool SetViewRotation(FRotator Rotation,bool Absolute) { return default; }
 	///<summary>Delay of the player&#39;s time.</summary>
-	public  void SetTimeDelay(FTimespan TimeDelay) {}
+	public void SetTimeDelay(FTimespan TimeDelay) {}
 	///<summary>Check whether the specified playback rate is supported.</summary>
-	public  bool SupportsRate(float Rate,bool Unthinned) { return default; }
+	public bool SupportsRate(float Rate,bool Unthinned) { return default; }
 	///<summary>Check whether the currently loaded media supports scrubbing.</summary>
-	public  bool SupportsScrubbing() { return default; }
+	public bool SupportsScrubbing() { return default; }
 	///<summary>Check whether the currently loaded media can jump to a certain position.</summary>
-	public  bool SupportsSeeking() { return default; }
+	public bool SupportsSeeking() { return default; }
 	///<summary>A delegate that is invoked when playback has reached the end of the media.</summary>
 	public FOnMediaPlayerMediaEvent OnEndReached;
 	///<summary>A delegate that is invoked when a media source has been closed.</summary>

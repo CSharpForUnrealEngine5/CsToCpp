@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Provides a modular system for editing a UCineCameraComponent using user widgets.</summary>
@@ -8,115 +7,115 @@ public partial class UVCamComponent : USceneComponent {
 	///<summary>There are situations in the editor where the component may be replaced by another component as part of the actor being reconstructed</summary>
 	public FOnComponentReplaced OnComponentReplaced;
 	///<summary>HandleObjectReplaced</summary>
-	public  void HandleObjectReplaced(TMap<UObject,UObject> ReplacementMap) {}
+	public void HandleObjectReplaced(TMap<UObject,UObject> ReplacementMap) {}
 	///<summary>Attempts to apply key mapping settings from an input profile defined in VCam Input Settings</summary>
-	public  bool SetInputProfileFromName(string ProfileName) { return default; }
+	public bool SetInputProfileFromName(string ProfileName) { return default; }
 	///<summary>Tries to add a new Input Profile to the VCam Input Settings and populates it with any currently active player mappable keys</summary>
-	public  bool AddInputProfileWithCurrentlyActiveMappings(string ProfileName,bool bUpdateIfProfileAlreadyExists/*=true*/) { return default; }
+	public bool AddInputProfileWithCurrentlyActiveMappings(string ProfileName,bool bUpdateIfProfileAlreadyExists/*=true*/) { return default; }
 	///<summary>Saves the current input profile settings to the VCam Input Settings using the provided Profile Name</summary>
-	public  bool SaveCurrentInputProfileToSettings(string ProfileName) { return default; }
+	public bool SaveCurrentInputProfileToSettings(string ProfileName) { return default; }
 	///<summary>Searches the currently active input system for all registered key mappings that are marked as Player Mappable.</summary>
-	public  TArray<FEnhancedActionKeyMapping> GetAllPlayerMappableActionKeyMappings() { return default; }
+	public TArray<FEnhancedActionKeyMapping> GetAllPlayerMappableActionKeyMappings() { return default; }
 	///<summary>Searches the currently active input system for the current key mapped to a given input mapping</summary>
-	public  FKey GetPlayerMappedKey(string MappingName) { return default; }
+	public FKey GetPlayerMappedKey(string MappingName) { return default; }
 	///<summary>Sets whether the VCamComponent will update every frame</summary>
-	public  void SetEnabled(bool bNewEnabled) {}
+	public void SetEnabled(bool bNewEnabled) {}
 	///<summary>@return Whether the VCamComponent will update every frame</summary>
-	public  bool IsEnabled() { return default; }
+	public bool IsEnabled() { return default; }
 	///<summary>GetTargetCamera</summary>
-	public  UCineCameraComponent GetTargetCamera() { return default; }
+	public UCineCameraComponent GetTargetCamera() { return default; }
 	///<summary>Add a modifier to the stack with a given name.</summary>
-	public  bool AddModifier(string Name,UClass ModifierClass,UVCamModifier CreatedModifier) { return default; }
+	public bool AddModifier(string Name,UClass ModifierClass,UVCamModifier CreatedModifier) { return default; }
 	///<summary>Insert a modifier to the stack with a given name and index.</summary>
-	public  bool InsertModifier(string Name,int Index,UClass ModifierClass,UVCamModifier CreatedModifier) { return default; }
+	public bool InsertModifier(string Name,int Index,UClass ModifierClass,UVCamModifier CreatedModifier) { return default; }
 	///<summary>Moves an existing modifier in the stack from its current index to a new index</summary>
-	public  bool SetModifierIndex(int OriginalIndex,int NewIndex) { return default; }
+	public bool SetModifierIndex(int OriginalIndex,int NewIndex) { return default; }
 	///<summary>Remove all Modifiers from the Stack.</summary>
-	public  void RemoveAllModifiers() {}
+	public void RemoveAllModifiers() {}
 	///<summary>@return Whether the modifier was removed successfully</summary>
-	public  bool RemoveModifier(UVCamModifier Modifier) { return default; }
+	public bool RemoveModifier(UVCamModifier Modifier) { return default; }
 	///<summary>@return Whether the modifier was removed successfully</summary>
-	public  bool RemoveModifierByIndex(int ModifierIndex) { return default; }
+	public bool RemoveModifierByIndex(int ModifierIndex) { return default; }
 	///<summary>@return Whether the modifier was removed successfully.</summary>
-	public  bool RemoveModifierByName(string Name) { return default; }
+	public bool RemoveModifierByName(string Name) { return default; }
 	///<summary>GetNumberOfModifiers</summary>
-	public  int GetNumberOfModifiers() { return default; }
+	public int GetNumberOfModifiers() { return default; }
 	///<summary>Returns all the Modifiers in the Component&#39;s Stack</summary>
-	public  void GetAllModifiers(TArray<UVCamModifier> Modifiers) {}
+	public void GetAllModifiers(TArray<UVCamModifier> Modifiers) {}
 	///<summary>Returns all the modifier names used to identifying connection points.</summary>
-	public  TArray<string> GetAllModifierNames() { return default; }
+	public TArray<string> GetAllModifierNames() { return default; }
 	///<summary>Returns the Modifier in the Stack with the given index if it exist.</summary>
-	public  UVCamModifier GetModifierByIndex(int Index) { return default; }
+	public UVCamModifier GetModifierByIndex(int Index) { return default; }
 	///<summary>Tries to find a Modifier in the Stack with the given name. The returned Modifier must be checked before it is used.</summary>
-	public  UVCamModifier GetModifierByName(string Name) { return default; }
+	public UVCamModifier GetModifierByName(string Name) { return default; }
 	///<summary>Given a specific Modifier class, returns a list of matching Modifiers</summary>
-	public  void GetModifiersByClass(UClass ModifierClass,TArray<UVCamModifier> FoundModifiers) {}
+	public void GetModifiersByClass(UClass ModifierClass,TArray<UVCamModifier> FoundModifiers) {}
 	///<summary>Given a specific Interface class, returns a list of matching Modifiers</summary>
-	public  void GetModifiersByInterface(UClass InterfaceClass,TArray<UVCamModifier> FoundModifiers) {}
+	public void GetModifiersByInterface(UClass InterfaceClass,TArray<UVCamModifier> FoundModifiers) {}
 	///<summary>Sets the Modifier Context to a new instance of the provided class</summary>
-	public  void SetModifierContextClass(UClass ContextClass,UVCamModifierContext CreatedContext) {}
+	public void SetModifierContextClass(UClass ContextClass,UVCamModifierContext CreatedContext) {}
 	///<summary>Get the current Modifier Context</summary>
-	public  UVCamModifierContext GetModifierContext() { return default; }
+	public UVCamModifierContext GetModifierContext() { return default; }
 	///<summary>***************** Output Provider access *******************</summary>
-	public  bool AddOutputProvider(UClass ProviderClass,UVCamOutputProviderBase CreatedProvider) { return default; }
+	public bool AddOutputProvider(UClass ProviderClass,UVCamOutputProviderBase CreatedProvider) { return default; }
 	///<summary>InsertOutputProvider</summary>
-	public  bool InsertOutputProvider(int Index,UClass ProviderClass,UVCamOutputProviderBase CreatedProvider) { return default; }
+	public bool InsertOutputProvider(int Index,UClass ProviderClass,UVCamOutputProviderBase CreatedProvider) { return default; }
 	///<summary>Moves an existing Output Provider in the stack from its current index to a new index</summary>
-	public  bool SetOutputProviderIndex(int OriginalIndex,int NewIndex) { return default; }
+	public bool SetOutputProviderIndex(int OriginalIndex,int NewIndex) { return default; }
 	///<summary>RemoveAllOutputProviders</summary>
-	public  void RemoveAllOutputProviders() {}
+	public void RemoveAllOutputProviders() {}
 	///<summary>RemoveOutputProvider</summary>
-	public  bool RemoveOutputProvider(UVCamOutputProviderBase Provider) { return default; }
+	public bool RemoveOutputProvider(UVCamOutputProviderBase Provider) { return default; }
 	///<summary>RemoveOutputProviderByIndex</summary>
-	public  bool RemoveOutputProviderByIndex(int ProviderIndex) { return default; }
+	public bool RemoveOutputProviderByIndex(int ProviderIndex) { return default; }
 	///<summary>GetNumberOfOutputProviders</summary>
-	public  int GetNumberOfOutputProviders() { return default; }
+	public int GetNumberOfOutputProviders() { return default; }
 	///<summary>GetAllOutputProviders</summary>
-	public  void GetAllOutputProviders(TArray<UVCamOutputProviderBase> Providers) {}
+	public void GetAllOutputProviders(TArray<UVCamOutputProviderBase> Providers) {}
 	///<summary>GetOutputProviderByIndex</summary>
-	public  UVCamOutputProviderBase GetOutputProviderByIndex(int ProviderIndex) { return default; }
+	public UVCamOutputProviderBase GetOutputProviderByIndex(int ProviderIndex) { return default; }
 	///<summary>GetOutputProvidersByClass</summary>
-	public  void GetOutputProvidersByClass(UClass ProviderClass,TArray<UVCamOutputProviderBase> FoundProviders) {}
+	public void GetOutputProvidersByClass(UClass ProviderClass,TArray<UVCamOutputProviderBase> FoundProviders) {}
 	///<summary>GetLiveLinkDataForCurrentFrame</summary>
-	public  void GetLiveLinkDataForCurrentFrame(FLiveLinkCameraBlueprintData LiveLinkData) {}
+	public void GetLiveLinkDataForCurrentFrame(FLiveLinkCameraBlueprintData LiveLinkData) {}
 	///<summary>Registers the given object with the VCamComponent&#39;s Input Component</summary>
-	public  void RegisterObjectForInput(UObject Object) {}
+	public void RegisterObjectForInput(UObject Object) {}
 	///<summary>Unregisters the given object with the VCamComponent&#39;s Input Component</summary>
-	public  void UnregisterObjectForInput(UObject Object) {}
+	public void UnregisterObjectForInput(UObject Object) {}
 	///<summary>Returns a list of all player mappable keys that have been registered</summary>
-	public  TArray<FEnhancedActionKeyMapping> GetPlayerMappableKeys() { return default; }
+	public TArray<FEnhancedActionKeyMapping> GetPlayerMappableKeys() { return default; }
 	///<summary>Injects an input action.</summary>
-	public  void InjectInputForAction(UInputAction Action,FInputActionValue RawValue,TArray<UInputModifier> Modifiers,TArray<UInputTrigger> Triggers) {}
+	public virtual void InjectInputForAction(UInputAction Action,FInputActionValue RawValue,TArray<UInputModifier> Modifiers,TArray<UInputTrigger> Triggers) {}
 	///<summary>Injects an input vector for action.</summary>
-	public  void InjectInputVectorForAction(UInputAction Action,FVector Value,TArray<UInputModifier> Modifiers,TArray<UInputTrigger> Triggers) {}
+	public virtual void InjectInputVectorForAction(UInputAction Action,FVector Value,TArray<UInputModifier> Modifiers,TArray<UInputTrigger> Triggers) {}
 	///<summary>***************** Blueprint Getters &amp; Setters *******************</summary>
-	public  FGameplayTag GetRole() { return default; }
+	public FGameplayTag GetRole() { return default; }
 	///<summary>SetRole</summary>
-	public  void SetRole(FGameplayTag Value) {}
+	public void SetRole(FGameplayTag Value) {}
 	///<summary>GetLiveLinkSubobject</summary>
-	public  FLiveLinkSubjectName GetLiveLinkSubobject() { return default; }
+	public FLiveLinkSubjectName GetLiveLinkSubobject() { return default; }
 	///<summary>SetLiveLinkSubobject</summary>
-	public  void SetLiveLinkSubobject(FLiveLinkSubjectName Value) {}
+	public void SetLiveLinkSubobject(FLiveLinkSubjectName Value) {}
 	///<summary>GetDisableComponentWhenSpawnedBySequencer</summary>
-	public  bool GetDisableComponentWhenSpawnedBySequencer() { return default; }
+	public bool GetDisableComponentWhenSpawnedBySequencer() { return default; }
 	///<summary>SetDisableComponentWhenSpawnedBySequencer</summary>
-	public  void SetDisableComponentWhenSpawnedBySequencer(bool bValue) {}
+	public void SetDisableComponentWhenSpawnedBySequencer(bool bValue) {}
 	///<summary>GetDisableOutputOnMultiUserReceiver</summary>
-	public  bool GetDisableOutputOnMultiUserReceiver() { return default; }
+	public bool GetDisableOutputOnMultiUserReceiver() { return default; }
 	///<summary>SetDisableOutputOnMultiUserReceiver</summary>
-	public  void SetDisableOutputOnMultiUserReceiver(bool bValue) {}
+	public void SetDisableOutputOnMultiUserReceiver(bool bValue) {}
 	///<summary>GetInputProfile</summary>
-	public  FVCamInputProfile GetInputProfile() { return default; }
+	public FVCamInputProfile GetInputProfile() { return default; }
 	///<summary>SetInputProfile</summary>
-	public  void SetInputProfile(FVCamInputProfile NewInputProfile) {}
+	public void SetInputProfile(FVCamInputProfile NewInputProfile) {}
 	///<summary>Gets the current input device settings being used (if this component is enabled) or that will be used (if not enabled).</summary>
-	public  FVCamInputDeviceConfig GetInputDeviceSettings() { return default; }
+	public FVCamInputDeviceConfig GetInputDeviceSettings() { return default; }
 	///<summary>Propagates devices settings all the way to the player input. Causes input to be filtered / consumed differently.</summary>
-	public  void SetInputDeviceSettings(FVCamInputDeviceConfig NewInputProfile) {}
+	public void SetInputDeviceSettings(FVCamInputDeviceConfig NewInputProfile) {}
 	///<summary>Gets all subsystems implementing this interface</summary>
-	public  TArray<UVCamSubsystem> GetSubsystemArray(UClass Class) { return default; }
+	public TArray<UVCamSubsystem> GetSubsystemArray(UClass Class) { return default; }
 	///<summary>Gets the subsystem responsible for input handling.</summary>
-	public  UInputVCamSubsystem GetInputVCamSubsystem() { return default; }
+	public UInputVCamSubsystem GetInputVCamSubsystem() { return default; }
 	///<summary>Whether the VCamComponent will update every frame</summary>
 	public bool bEnabled;
 	///<summary>The role of this virtual camera.  If this value is set and the corresponding tag set on the editor matches this value, then this</summary>

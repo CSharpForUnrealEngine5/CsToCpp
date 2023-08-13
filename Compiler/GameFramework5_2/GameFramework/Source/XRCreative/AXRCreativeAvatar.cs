@@ -1,31 +1,30 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("XRCreativeAvatar.h")]
 public partial class AXRCreativeAvatar : APawn {
 	public static UClass StaticClass() {return default;}
 	///<summary>GetHeadTransform</summary>
-	public  FTransform GetHeadTransform() { return default; }
+	public FTransform GetHeadTransform() { return default; }
 	///<summary>GetHeadTransformRoomSpace</summary>
-	public  FTransform GetHeadTransformRoomSpace() { return default; }
+	public FTransform GetHeadTransformRoomSpace() { return default; }
 	///<summary>SetComponentTickInEditor</summary>
-	public  void SetComponentTickInEditor(UActorComponent Component,bool bShouldTickInEditor) {}
+	public void SetComponentTickInEditor(UActorComponent Component,bool bShouldTickInEditor) {}
 	///<summary>Registers the given object with the Avatar&#39;s Input Component</summary>
-	public  void RegisterObjectForInput(UObject Object) {}
+	public void RegisterObjectForInput(UObject Object) {}
 	///<summary>Unregisters the given object with the Avatar&#39;s Input Component</summary>
-	public  void UnregisterObjectForInput(UObject Object) {}
+	public void UnregisterObjectForInput(UObject Object) {}
 	///<summary>Adds an explicitly provided Input Mapping Context to the input system</summary>
-	public  void AddInputMappingContext(UInputMappingContext Context,int Priority) {}
+	public void AddInputMappingContext(UInputMappingContext Context,int Priority) {}
 	///<summary>Removes an explicitly provided Input Mapping Context to the input system</summary>
-	public  void RemoveInputMappingContext(UInputMappingContext Context) {}
+	public void RemoveInputMappingContext(UInputMappingContext Context) {}
 	///<summary>Play haptic feedback asset on a given hand - only left and right supported</summary>
-	public  void PlayHapticEffect(UHapticFeedbackEffect_Base HapticEffect,int ControllerID,EControllerHand Hand,float Scale,bool bLoop) {}
+	public virtual void PlayHapticEffect(UHapticFeedbackEffect_Base HapticEffect,int ControllerID,EControllerHand Hand,float Scale,bool bLoop) {}
 	///<summary>Instantly stop a haptic feedback for a given hand - only left and right supported</summary>
-	public  void StopHapticEffect(EControllerHand Hand,int ControllerID) {}
+	public void StopHapticEffect(EControllerHand Hand,int ControllerID) {}
 	///<summary>Includes special handling to not dirty editor worlds.</summary>
-	public  AActor SpawnTransientActor(UClass ActorClass,string ActorName) { return default; }
+	public AActor SpawnTransientActor(UClass ActorClass,string ActorName) { return default; }
 	///<summary>OpenLevelSequence</summary>
-	public  ALevelSequenceActor OpenLevelSequence(ULevelSequence LevelSequence) { return default; }
+	public ALevelSequenceActor OpenLevelSequence(ULevelSequence LevelSequence) { return default; }
 	///<summary>LeftController</summary>
 	public UMotionControllerComponent LeftController;
 	///<summary>LeftControllerAim</summary>

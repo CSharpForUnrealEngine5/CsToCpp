@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Abstract base class for setting up post passes. Used in conjuntion with UComposurePostProcessingPassProxy.</summary>
@@ -6,5 +5,5 @@ using CSharpToCpp.Utilities;
 public partial class UComposurePostProcessPassPolicy : UObject {
 	public static UClass StaticClass() {return default;}
 	///<summary>SetupPostProcess</summary>
-	public  void SetupPostProcess(USceneCaptureComponent2D SceneCapture,UMaterialInterface TonemapperOverride) {}
+	public void SetupPostProcess(USceneCaptureComponent2D SceneCapture,UMaterialInterface TonemapperOverride) {}
 }

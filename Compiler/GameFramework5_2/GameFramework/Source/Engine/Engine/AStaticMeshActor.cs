@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>StaticMeshActor is an instance of a UStaticMesh in the world.</summary>
@@ -12,5 +11,5 @@ public partial class AStaticMeshActor : AActor {
 	///<summary>NavigationGeometryGatheringMode</summary>
 	public ENavDataGatheringMode NavigationGeometryGatheringMode;
 	///<summary>Function to change mobility type</summary>
-	public  void SetMobility(EComponentMobility InMobility) {}
+	public void SetMobility(EComponentMobility InMobility) {}
 }

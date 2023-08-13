@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>A component that represents a planet atmosphere material and simulates sky and light scattering within it.</summary>
@@ -52,47 +51,47 @@ public partial class USkyAtmosphereComponent : USceneComponent {
 	///<summary>The distance (kilometers) at which we start evaluating the aerial perspective. Having the aerial perspective starts away from the camera can help with performance: pixels not affected by the aerial perspective will have their computation skipped using early depth test.</summary>
 	public float AerialPerspectiveStartDepth;
 	///<summary>OverrideAtmosphereLightDirection</summary>
-	public  void OverrideAtmosphereLightDirection(int AtmosphereLightIndex,FVector LightDirection) {}
+	public void OverrideAtmosphereLightDirection(int AtmosphereLightIndex,FVector LightDirection) {}
 	///<summary>IsAtmosphereLightDirectionOverriden</summary>
-	public  bool IsAtmosphereLightDirectionOverriden(int AtmosphereLightIndex) { return default; }
+	public bool IsAtmosphereLightDirectionOverriden(int AtmosphereLightIndex) { return default; }
 	///<summary>GetOverridenAtmosphereLightDirection</summary>
-	public  FVector GetOverridenAtmosphereLightDirection(int AtmosphereLightIndex) { return default; }
+	public FVector GetOverridenAtmosphereLightDirection(int AtmosphereLightIndex) { return default; }
 	///<summary>ResetAtmosphereLightDirectionOverride</summary>
-	public  void ResetAtmosphereLightDirectionOverride(int AtmosphereLightIndex) {}
+	public void ResetAtmosphereLightDirectionOverride(int AtmosphereLightIndex) {}
 	///<summary>SetAtmosphereHeight</summary>
-	public  void SetAtmosphereHeight(float NewValue) {}
+	public void SetAtmosphereHeight(float NewValue) {}
 	///<summary>SetMultiScatteringFactor</summary>
-	public  void SetMultiScatteringFactor(float NewValue) {}
+	public void SetMultiScatteringFactor(float NewValue) {}
 	///<summary>SetRayleighScatteringScale</summary>
-	public  void SetRayleighScatteringScale(float NewValue) {}
+	public void SetRayleighScatteringScale(float NewValue) {}
 	///<summary>SetRayleighScattering</summary>
-	public  void SetRayleighScattering(FLinearColor NewValue) {}
+	public void SetRayleighScattering(FLinearColor NewValue) {}
 	///<summary>SetRayleighExponentialDistribution</summary>
-	public  void SetRayleighExponentialDistribution(float NewValue) {}
+	public void SetRayleighExponentialDistribution(float NewValue) {}
 	///<summary>SetMieScatteringScale</summary>
-	public  void SetMieScatteringScale(float NewValue) {}
+	public void SetMieScatteringScale(float NewValue) {}
 	///<summary>SetMieScattering</summary>
-	public  void SetMieScattering(FLinearColor NewValue) {}
+	public void SetMieScattering(FLinearColor NewValue) {}
 	///<summary>SetMieAbsorptionScale</summary>
-	public  void SetMieAbsorptionScale(float NewValue) {}
+	public void SetMieAbsorptionScale(float NewValue) {}
 	///<summary>SetMieAbsorption</summary>
-	public  void SetMieAbsorption(FLinearColor NewValue) {}
+	public void SetMieAbsorption(FLinearColor NewValue) {}
 	///<summary>SetMieAnisotropy</summary>
-	public  void SetMieAnisotropy(float NewValue) {}
+	public void SetMieAnisotropy(float NewValue) {}
 	///<summary>SetMieExponentialDistribution</summary>
-	public  void SetMieExponentialDistribution(float NewValue) {}
+	public void SetMieExponentialDistribution(float NewValue) {}
 	///<summary>SetOtherAbsorptionScale</summary>
-	public  void SetOtherAbsorptionScale(float NewValue) {}
+	public void SetOtherAbsorptionScale(float NewValue) {}
 	///<summary>SetOtherAbsorption</summary>
-	public  void SetOtherAbsorption(FLinearColor NewValue) {}
+	public void SetOtherAbsorption(FLinearColor NewValue) {}
 	///<summary>SetSkyLuminanceFactor</summary>
-	public  void SetSkyLuminanceFactor(FLinearColor NewValue) {}
+	public void SetSkyLuminanceFactor(FLinearColor NewValue) {}
 	///<summary>SetAerialPespectiveViewDistanceScale</summary>
-	public  void SetAerialPespectiveViewDistanceScale(float NewValue) {}
+	public void SetAerialPespectiveViewDistanceScale(float NewValue) {}
 	///<summary>SetHeightFogContribution</summary>
-	public  void SetHeightFogContribution(float NewValue) {}
+	public void SetHeightFogContribution(float NewValue) {}
 	///<summary>GetAtmosphereTransmitanceOnGroundAtPlanetTop</summary>
-	public  FLinearColor GetAtmosphereTransmitanceOnGroundAtPlanetTop(UDirectionalLightComponent DirectionalLight) { return default; }
+	public FLinearColor GetAtmosphereTransmitanceOnGroundAtPlanetTop(UDirectionalLightComponent DirectionalLight) { return default; }
 	///<summary>GUID used to associate a atmospheric component with precomputed lighting/shadowing information across levels.</summary>
 	public FGuid bStaticLightingBuiltGUID;
 }

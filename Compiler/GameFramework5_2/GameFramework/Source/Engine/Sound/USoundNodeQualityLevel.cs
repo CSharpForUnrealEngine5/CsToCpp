@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>This SoundNode uses GameUserSettings AudioQualityLevel (or the editor override) to choose which branch to play</summary>

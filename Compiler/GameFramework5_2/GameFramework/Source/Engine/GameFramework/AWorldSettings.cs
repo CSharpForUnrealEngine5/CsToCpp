@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Actor containing all script accessible world properties.</summary>
@@ -76,7 +75,7 @@ public partial class AWorldSettings : AInfo {
 	///<summary>current gravity actually being used</summary>
 	public float WorldGravityZ;
 	///<summary>OnRep_WorldGravityZ</summary>
-	public  void OnRep_WorldGravityZ() {}
+	public virtual void OnRep_WorldGravityZ() {}
 	///<summary>optional level specific gravity override set by level designer</summary>
 	public float GlobalGravityZ;
 	///<summary>level specific default physics volume</summary>

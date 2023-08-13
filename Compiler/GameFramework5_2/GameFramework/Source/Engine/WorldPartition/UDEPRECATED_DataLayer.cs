@@ -1,31 +1,30 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("WorldPartition/DataLayer/DataLayer.h")]
 public partial class UDEPRECATED_DataLayer : UObject {
 	public static UClass StaticClass() {return default;}
 	///<summary>Equals</summary>
-	public  bool Equals(FActorDataLayer ActorDataLayer) { return default; }
+	public bool Equals(FActorDataLayer ActorDataLayer) { return default; }
 	///<summary>GetDataLayerLabel</summary>
-	public  string GetDataLayerLabel() { return default; }
+	public string GetDataLayerLabel() { return default; }
 	///<summary>IsInitiallyVisible</summary>
-	public  bool IsInitiallyVisible() { return default; }
+	public bool IsInitiallyVisible() { return default; }
 	///<summary>IsVisible</summary>
-	public  bool IsVisible() { return default; }
+	public bool IsVisible() { return default; }
 	///<summary>IsEffectiveVisible</summary>
-	public  bool IsEffectiveVisible() { return default; }
+	public bool IsEffectiveVisible() { return default; }
 	///<summary>GetDebugColor</summary>
-	public  FColor GetDebugColor() { return default; }
+	public FColor GetDebugColor() { return default; }
 	///<summary>IsRuntime</summary>
-	public  bool IsRuntime() { return default; }
+	public bool IsRuntime() { return default; }
 	///<summary>GetInitialRuntimeState</summary>
-	public  EDataLayerRuntimeState GetInitialRuntimeState() { return default; }
+	public EDataLayerRuntimeState GetInitialRuntimeState() { return default; }
 	///<summary>IsDynamicallyLoaded</summary>
-	public  bool IsDynamicallyLoaded() { return default; }
+	public bool IsDynamicallyLoaded() { return default; }
 	///<summary>IsInitiallyActive</summary>
-	public  bool IsInitiallyActive() { return default; }
+	public bool IsInitiallyActive() { return default; }
 	///<summary>GetInitialState</summary>
-	public  EDataLayerState GetInitialState() { return default; }
+	public EDataLayerState GetInitialState() { return default; }
 	///<summary>bIsInitiallyActive_DEPRECATED</summary>
 	public bool bIsInitiallyActive_DEPRECATED;
 	///<summary>Whether actors associated with the DataLayer are visible in the viewport</summary>

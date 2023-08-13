@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>There are two primary use cases for this component:</summary>
@@ -6,13 +5,13 @@ using CSharpToCpp.Utilities;
 public partial class UMassAgentComponent : UActorComponent {
 	public static UClass StaticClass() {return default;}
 	///<summary>Registers the component with the owner effectively turning it on. Calling it multiple times won&#39;t break anything</summary>
-	public  void Enable() {}
+	public void Enable() {}
 	///<summary>Registers the component with the owner effectively turning it off</summary>
-	public  void Disable() {}
+	public void Disable() {}
 	///<summary>KillEntity</summary>
-	public  void KillEntity(bool bDestroyActor) {}
+	public void KillEntity(bool bDestroyActor) {}
 	///<summary>OnRep_NetID</summary>
-	public  void OnRep_NetID() {}
+	public virtual void OnRep_NetID() {}
 	///<summary>EntityConfig</summary>
 	public FMassEntityConfig EntityConfig;
 	///<summary>NetID</summary>

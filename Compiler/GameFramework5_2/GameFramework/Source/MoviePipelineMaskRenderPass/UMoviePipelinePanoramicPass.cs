@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Generates a panoramic image (potentially in stereo, stored top/bottom in the final sheet) in equirectangular projection space.</summary>

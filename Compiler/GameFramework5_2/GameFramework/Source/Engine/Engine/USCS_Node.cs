@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Engine/SCS_Node.h")]
@@ -11,7 +10,7 @@ public partial class USCS_Node : UObject {
 	///<summary>Cached data for faster runtime instancing (only used in cooked builds)</summary>
 	public FBlueprintCookedComponentInstancingData CookedComponentInstancingData;
 	///<summary>If non-None, the assigned category name</summary>
-	public string CategoryName;
+	public FText CategoryName;
 	///<summary>Socket/Bone that Node might attach to</summary>
 	public string AttachToName;
 	///<summary>Component template or variable that Node might be parented to</summary>

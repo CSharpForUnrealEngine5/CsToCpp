@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Cloth asset for pattern based simulation.</summary>
@@ -6,7 +5,7 @@ using CSharpToCpp.Utilities;
 public partial class UChaosClothAsset : USkinnedAsset {
 	public static UClass StaticClass() {return default;}
 	///<summary>GetShadowPhysicsAsset</summary>
-	public  UPhysicsAsset GetShadowPhysicsAsset() { return default; }
+	public virtual UPhysicsAsset GetShadowPhysicsAsset() { return default; }
 	///<summary>Dataflow</summary>
 	public UDataflow DataflowAsset;
 	///<summary>DataflowTerminal</summary>

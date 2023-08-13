@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>A struct to serve as a filter for Asset Registry queries. (mirrored in ARFilter.h)</summary>

@@ -1,21 +1,20 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("ToolMenu.h")]
 public partial class UToolMenu : UToolMenuBase {
 	public static UClass StaticClass() {return default;}
 	///<summary>InitMenu</summary>
-	public  void InitMenu(FToolMenuOwner Owner,string Name,string Parent/*=NAME_None*/,EMultiBoxType Type/*=EMultiBoxType.Menu*/) {}
+	public void InitMenu(FToolMenuOwner Owner,string Name,string Parent/*=NAME_None*/,EMultiBoxType Type/*=EMultiBoxType.Menu*/) {}
 	///<summary>AddSectionScript</summary>
-	public  void AddSectionScript(string SectionName,string Label/*=new FText()*/,string InsertName/*=NAME_None*/,EToolMenuInsertType InsertType/*=EToolMenuInsertType.Default*/) {}
+	public void AddSectionScript(string SectionName,FText Label/*=new FText()*/,string InsertName/*=NAME_None*/,EToolMenuInsertType InsertType/*=EToolMenuInsertType.Default*/) {}
 	///<summary>AddDynamicSectionScript</summary>
-	public  void AddDynamicSectionScript(string SectionName,UToolMenuSectionDynamic Object) {}
+	public void AddDynamicSectionScript(string SectionName,UToolMenuSectionDynamic Object) {}
 	///<summary>AddMenuEntry</summary>
-	public  void AddMenuEntry(string SectionName,FToolMenuEntry Args) {}
+	public void AddMenuEntry(string SectionName,FToolMenuEntry Args) {}
 	///<summary>AddMenuEntryObject</summary>
-	public  void AddMenuEntryObject(UToolMenuEntryScript InObject) {}
+	public void AddMenuEntryObject(UToolMenuEntryScript InObject) {}
 	///<summary>AddSubMenuScript</summary>
-	public  UToolMenu AddSubMenuScript(string Owner,string SectionName,string Name,string Label,string ToolTip/*=new FText()*/) { return default; }
+	public UToolMenu AddSubMenuScript(string Owner,string SectionName,string Name,FText Label,FText ToolTip/*=new FText()*/) { return default; }
 	///<summary>MenuName</summary>
 	public string MenuName;
 	///<summary>MenuParent</summary>

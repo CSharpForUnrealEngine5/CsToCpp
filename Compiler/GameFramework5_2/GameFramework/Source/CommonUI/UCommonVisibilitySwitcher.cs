@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Basic switcher that toggles visibility on its children to only show one widget at a time. Activates visible widget if possible.</summary>
@@ -6,21 +5,21 @@ using CSharpToCpp.Utilities;
 public partial class UCommonVisibilitySwitcher : UOverlay {
 	public static UClass StaticClass() {return default;}
 	///<summary>SetActiveWidgetIndex</summary>
-	public  void SetActiveWidgetIndex(int Index) {}
+	public void SetActiveWidgetIndex(int Index) {}
 	///<summary>GetActiveWidgetIndex</summary>
-	public  int GetActiveWidgetIndex() { return default; }
+	public int GetActiveWidgetIndex() { return default; }
 	///<summary>GetActiveWidget</summary>
-	public  UWidget GetActiveWidget() { return default; }
+	public UWidget GetActiveWidget() { return default; }
 	///<summary>SetActiveWidget</summary>
-	public  void SetActiveWidget(UWidget Widget) {}
+	public void SetActiveWidget(UWidget Widget) {}
 	///<summary>IncrementActiveWidgetIndex</summary>
-	public  void IncrementActiveWidgetIndex(bool bAllowWrapping/*=true*/) {}
+	public void IncrementActiveWidgetIndex(bool bAllowWrapping/*=true*/) {}
 	///<summary>DecrementActiveWidgetIndex</summary>
-	public  void DecrementActiveWidgetIndex(bool bAllowWrapping/*=true*/) {}
+	public void DecrementActiveWidgetIndex(bool bAllowWrapping/*=true*/) {}
 	///<summary>ActivateVisibleSlot</summary>
-	public  void ActivateVisibleSlot() {}
+	public void ActivateVisibleSlot() {}
 	///<summary>DeactivateVisibleSlot</summary>
-	public  void DeactivateVisibleSlot() {}
+	public void DeactivateVisibleSlot() {}
 	///<summary>ShownVisibility</summary>
 	public ESlateVisibility ShownVisibility;
 	///<summary>ActiveWidgetIndex</summary>

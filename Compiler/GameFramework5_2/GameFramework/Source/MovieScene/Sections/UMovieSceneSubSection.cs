@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Implements a section in sub-sequence tracks.</summary>
@@ -6,9 +5,9 @@ using CSharpToCpp.Utilities;
 public partial class UMovieSceneSubSection : UMovieSceneSection {
 	public static UClass StaticClass() {return default;}
 	///<summary>Get the sequence that is assigned to this section.</summary>
-	public  UMovieSceneSequence GetSequence() { return default; }
+	public UMovieSceneSequence GetSequence() { return default; }
 	///<summary>Sets the sequence played by this section.</summary>
-	public  void SetSequence(UMovieSceneSequence Sequence) {}
+	public void SetSequence(UMovieSceneSequence Sequence) {}
 	///<summary>Parameters</summary>
 	public FMovieSceneSectionParameters Parameters;
 	///<summary>StartOffset_DEPRECATED</summary>

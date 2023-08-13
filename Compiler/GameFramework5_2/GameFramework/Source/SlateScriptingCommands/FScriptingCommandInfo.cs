@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>The data defining a scripting command. At the exception of its delegates.</summary>
@@ -7,7 +6,7 @@ public partial struct FScriptingCommandInfo {
 	public string ContextName;
 	public string Set;
 	public string Name;
-	public string Label;
-	public string Description;
+	public FText Label;
+	public FText Description;
 	public FInputChord InputChord;
 }

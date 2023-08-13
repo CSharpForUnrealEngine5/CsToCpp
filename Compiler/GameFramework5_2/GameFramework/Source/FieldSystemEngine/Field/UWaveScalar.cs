@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Set a temporal wave scalar value according to the sample distance from the field position.</summary>
@@ -6,7 +5,7 @@ using CSharpToCpp.Utilities;
 public partial class UWaveScalar : UFieldNodeFloat {
 	public static UClass StaticClass() {return default;}
 	///<summary>Set a temporal wave scalar value according to the sample distance from the field position.</summary>
-	public  UWaveScalar SetWaveScalar(float Magnitude,FVector Position,float Wavelength,float Period,float Time,EWaveFunctionType Function,EFieldFalloffType Falloff) { return default; }
+	public UWaveScalar SetWaveScalar(float Magnitude,FVector Position,float Wavelength,float Period,float Time,EWaveFunctionType Function,EFieldFalloffType Falloff) { return default; }
 	///<summary>Magnitude of the wave function</summary>
 	public float Magnitude;
 	///<summary>Center position of the wave field</summary>

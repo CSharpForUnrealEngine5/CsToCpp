@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("FunctionalTest.h")]
@@ -29,7 +28,7 @@ public partial class AFunctionalTest : AActor {
 	///<summary>Test&#39;s time limit. &#39;0&#39; means no limit</summary>
 	public float TimeLimit;
 	///<summary>TimesUpMessage</summary>
-	public string TimesUpMessage;
+	public FText TimesUpMessage;
 	///<summary>If test is limited by time this is the result that will be returned when time runs out</summary>
 	public EFunctionalTestResult TimesUpResult;
 	///<summary>Called when the test is ready to prepare</summary>
@@ -45,105 +44,105 @@ public partial class AFunctionalTest : AActor {
 	///<summary>TestName</summary>
 	public UTextRenderComponent TestName;
 	///<summary>Assert that a boolean value is true.</summary>
-	public  bool AssertTrue(bool Condition,string Message,UObject ContextObject/*=nullptr*/) { return default; }
+	public virtual bool AssertTrue(bool Condition,string Message,UObject ContextObject/*=nullptr*/) { return default; }
 	///<summary>Assert that a boolean value is false.</summary>
-	public  bool AssertFalse(bool Condition,string Message,UObject ContextObject/*=nullptr*/) { return default; }
+	public virtual bool AssertFalse(bool Condition,string Message,UObject ContextObject/*=nullptr*/) { return default; }
 	///<summary>Assert that a UObject is valid</summary>
-	public  bool AssertIsValid(UObject Object,string Message,UObject ContextObject/*=nullptr*/) { return default; }
+	public virtual bool AssertIsValid(UObject Object,string Message,UObject ContextObject/*=nullptr*/) { return default; }
 	///<summary>Assert on a relationship between two integers.</summary>
-	public  bool AssertValue_Int(int Actual,EComparisonMethod ShouldBe,int Expected,string What,UObject ContextObject/*=nullptr*/) { return default; }
+	public virtual bool AssertValue_Int(int Actual,EComparisonMethod ShouldBe,int Expected,string What,UObject ContextObject/*=nullptr*/) { return default; }
 	///<summary>Assert on a relationship between two floats.</summary>
-	public  bool AssertValue_Float(float Actual,EComparisonMethod ShouldBe,float Expected,string What,UObject ContextObject/*=nullptr*/) { return default; }
+	public virtual bool AssertValue_Float(float Actual,EComparisonMethod ShouldBe,float Expected,string What,UObject ContextObject/*=nullptr*/) { return default; }
 	///<summary>Assert on a relationship between two doubles.</summary>
-	public  bool AssertValue_Double(double Actual,EComparisonMethod ShouldBe,double Expected,string What,UObject ContextObject/*=nullptr*/) { return default; }
+	public bool AssertValue_Double(double Actual,EComparisonMethod ShouldBe,double Expected,string What,UObject ContextObject/*=nullptr*/) { return default; }
 	///<summary>Assert on a relationship between two DateTimes.</summary>
-	public  bool AssertValue_DateTime(FDateTime Actual,EComparisonMethod ShouldBe,FDateTime Expected,string What,UObject ContextObject/*=nullptr*/) { return default; }
+	public virtual bool AssertValue_DateTime(FDateTime Actual,EComparisonMethod ShouldBe,FDateTime Expected,string What,UObject ContextObject/*=nullptr*/) { return default; }
 	///<summary>Assert that two transforms are (components memberwise - translation, rotation, scale) equal within a small tolerance.</summary>
-	public  bool AssertEqual_Transform(FTransform Actual,FTransform Expected,string What,float Tolerance/*=1.0e-4f*/,UObject ContextObject/*=nullptr*/) { return default; }
+	public virtual bool AssertEqual_Transform(FTransform Actual,FTransform Expected,string What,float Tolerance/*=1.0e-4f*/,UObject ContextObject/*=nullptr*/) { return default; }
 	///<summary>Assert that two floats are equal within tolerance between two floats.</summary>
-	public  bool AssertEqual_Float(float Actual,float Expected,string What,float Tolerance/*=1.0e-4f*/,UObject ContextObject/*=nullptr*/) { return default; }
+	public virtual bool AssertEqual_Float(float Actual,float Expected,string What,float Tolerance/*=1.0e-4f*/,UObject ContextObject/*=nullptr*/) { return default; }
 	///<summary>Assert that two double are equal within tolerance between two doubles.</summary>
-	public  bool AssertEqual_Double(double Actual,double Expected,string What,double Tolerance/*=1.0e-4*/,UObject ContextObject/*=nullptr*/) { return default; }
+	public bool AssertEqual_Double(double Actual,double Expected,string What,double Tolerance/*=1.0e-4*/,UObject ContextObject/*=nullptr*/) { return default; }
 	///<summary>Assert that two bools are equal</summary>
-	public  bool AssertEqual_Bool(bool Actual,bool Expected,string What,UObject ContextObject/*=nullptr*/) { return default; }
+	public virtual bool AssertEqual_Bool(bool Actual,bool Expected,string What,UObject ContextObject/*=nullptr*/) { return default; }
 	///<summary>Assert that two ints are equal</summary>
-	public  bool AssertEqual_Int(int Actual,int Expected,string What,UObject ContextObject/*=nullptr*/) { return default; }
+	public virtual bool AssertEqual_Int(int Actual,int Expected,string What,UObject ContextObject/*=nullptr*/) { return default; }
 	///<summary>Assert that two FNames are equal</summary>
-	public  bool AssertEqual_Name(string Actual,string Expected,string What,UObject ContextObject/*=nullptr*/) { return default; }
+	public virtual bool AssertEqual_Name(string Actual,string Expected,string What,UObject ContextObject/*=nullptr*/) { return default; }
 	///<summary>Assert that two Objects are equal</summary>
-	public  bool AssertEqual_Object(UObject Actual,UObject Expected,string What,UObject ContextObject/*=nullptr*/) { return default; }
+	public virtual bool AssertEqual_Object(UObject Actual,UObject Expected,string What,UObject ContextObject/*=nullptr*/) { return default; }
 	///<summary>Assert that two transforms are (components memberwise - translation, rotation, scale) not equal within a small tolerance.</summary>
-	public  bool AssertNotEqual_Transform(FTransform Actual,FTransform NotExpected,string What,UObject ContextObject/*=nullptr*/) { return default; }
+	public virtual bool AssertNotEqual_Transform(FTransform Actual,FTransform NotExpected,string What,UObject ContextObject/*=nullptr*/) { return default; }
 	///<summary>Assert that the component angles of two rotators are all equal within a small tolerance.</summary>
-	public  bool AssertEqual_Rotator(FRotator Actual,FRotator Expected,string What,float Tolerance/*=1.0e-4f*/,UObject ContextObject/*=nullptr*/) { return default; }
+	public virtual bool AssertEqual_Rotator(FRotator Actual,FRotator Expected,string What,float Tolerance/*=1.0e-4f*/,UObject ContextObject/*=nullptr*/) { return default; }
 	///<summary>Assert that the component angles of two rotators are all not equal within a small tolerance.</summary>
-	public  bool AssertNotEqual_Rotator(FRotator Actual,FRotator NotExpected,string What,UObject ContextObject/*=nullptr*/) { return default; }
+	public virtual bool AssertNotEqual_Rotator(FRotator Actual,FRotator NotExpected,string What,UObject ContextObject/*=nullptr*/) { return default; }
 	///<summary>Assert that two vectors are (memberwise) equal within a small tolerance.</summary>
-	public  bool AssertEqual_Vector(FVector Actual,FVector Expected,string What,float Tolerance/*=1.0e-4f*/,UObject ContextObject/*=nullptr*/) { return default; }
+	public virtual bool AssertEqual_Vector(FVector Actual,FVector Expected,string What,float Tolerance/*=1.0e-4f*/,UObject ContextObject/*=nullptr*/) { return default; }
 	///<summary>Assert that two vectors are (memberwise) not equal within a small tolerance.</summary>
-	public  bool AssertNotEqual_Vector(FVector Actual,FVector NotExpected,string What,UObject ContextObject/*=nullptr*/) { return default; }
+	public virtual bool AssertNotEqual_Vector(FVector Actual,FVector NotExpected,string What,UObject ContextObject/*=nullptr*/) { return default; }
 	///<summary>Assert that two two-component vectors are (memberwise) equal within a small tolerance.</summary>
-	public  bool AssertEqual_Vector2D(FVector2D Actual,FVector2D Expected,string What,float Tolerance/*=1.0e-4f*/,UObject ContextObject/*=nullptr*/) { return default; }
+	public virtual bool AssertEqual_Vector2D(FVector2D Actual,FVector2D Expected,string What,float Tolerance/*=1.0e-4f*/,UObject ContextObject/*=nullptr*/) { return default; }
 	///<summary>Assert that two two-component vectors are (memberwise) not equal within a small tolerance.</summary>
-	public  bool AssertNotEqual_Vector2D(FVector2D Actual,FVector2D NotExpected,string What,UObject ContextObject/*=nullptr*/) { return default; }
+	public virtual bool AssertNotEqual_Vector2D(FVector2D Actual,FVector2D NotExpected,string What,UObject ContextObject/*=nullptr*/) { return default; }
 	///<summary>Assert that two two-component boxes are (memberwise) equal within a small tolerance.</summary>
-	public  bool AssertEqual_Box2D(FBox2D Actual,FBox2D Expected,string What,float Tolerance/*=1.0e-4f*/,UObject ContextObject/*=nullptr*/) { return default; }
+	public virtual bool AssertEqual_Box2D(FBox2D Actual,FBox2D Expected,string What,float Tolerance/*=1.0e-4f*/,UObject ContextObject/*=nullptr*/) { return default; }
 	///<summary>Assert that two two-component boxes are (memberwise) not equal within a small tolerance.</summary>
-	public  bool AssertNotEqual_Box2D(FBox2D Actual,FBox2D NotExpected,string What,UObject ContextObject/*=nullptr*/) { return default; }
+	public virtual bool AssertNotEqual_Box2D(FBox2D Actual,FBox2D NotExpected,string What,UObject ContextObject/*=nullptr*/) { return default; }
 	///<summary>Assert that two four-component vectors are (memberwise) equal within a small tolerance.</summary>
-	public  bool AssertEqual_Vector4(FVector4 Actual,FVector4 Expected,string What,float Tolerance/*=1.0e-4f*/,UObject ContextObject/*=nullptr*/) { return default; }
+	public virtual bool AssertEqual_Vector4(FVector4 Actual,FVector4 Expected,string What,float Tolerance/*=1.0e-4f*/,UObject ContextObject/*=nullptr*/) { return default; }
 	///<summary>Assert that two four-component vectors are (memberwise) not equal within a small tolerance.</summary>
-	public  bool AssertNotEqual_Vector4(FVector4 Actual,FVector4 NotExpected,string What,UObject ContextObject/*=nullptr*/) { return default; }
+	public virtual bool AssertNotEqual_Vector4(FVector4 Actual,FVector4 NotExpected,string What,UObject ContextObject/*=nullptr*/) { return default; }
 	///<summary>Assert that two planes are (memberwise) equal within a small tolerance.</summary>
-	public  bool AssertEqual_Plane(FPlane Actual,FPlane Expected,string What,float Tolerance/*=1.0e-4f*/,UObject ContextObject/*=nullptr*/) { return default; }
+	public virtual bool AssertEqual_Plane(FPlane Actual,FPlane Expected,string What,float Tolerance/*=1.0e-4f*/,UObject ContextObject/*=nullptr*/) { return default; }
 	///<summary>Assert that two planes are (memberwise) not equal within a small tolerance.</summary>
-	public  bool AssertNotEqual_Plane(FPlane Actual,FPlane NotExpected,string What,UObject ContextObject/*=nullptr*/) { return default; }
+	public virtual bool AssertNotEqual_Plane(FPlane Actual,FPlane NotExpected,string What,UObject ContextObject/*=nullptr*/) { return default; }
 	///<summary>Assert that two quats are (memberwise) equal within a small tolerance.</summary>
-	public  bool AssertEqual_Quat(FQuat Actual,FQuat Expected,string What,float Tolerance/*=1.0e-4f*/,UObject ContextObject/*=nullptr*/) { return default; }
+	public virtual bool AssertEqual_Quat(FQuat Actual,FQuat Expected,string What,float Tolerance/*=1.0e-4f*/,UObject ContextObject/*=nullptr*/) { return default; }
 	///<summary>Assert that two quats are (memberwise) not equal within a small tolerance.</summary>
-	public  bool AssertNotEqual_Quat(FQuat Actual,FQuat NotExpected,string What,UObject ContextObject/*=nullptr*/) { return default; }
+	public virtual bool AssertNotEqual_Quat(FQuat Actual,FQuat NotExpected,string What,UObject ContextObject/*=nullptr*/) { return default; }
 	///<summary>Assert that two 4x4 matrices are (memberwise) equal within a small tolerance.</summary>
-	public  bool AssertEqual_Matrix(FMatrix Actual,FMatrix Expected,string What,float Tolerance/*=1.0e-4f*/,UObject ContextObject/*=nullptr*/) { return default; }
+	public virtual bool AssertEqual_Matrix(FMatrix Actual,FMatrix Expected,string What,float Tolerance/*=1.0e-4f*/,UObject ContextObject/*=nullptr*/) { return default; }
 	///<summary>Assert that two 4x4 matrices are (memberwise) not equal within a small tolerance.</summary>
-	public  bool AssertNotEqual_Matrix(FMatrix Actual,FMatrix NotExpected,string What,UObject ContextObject/*=nullptr*/) { return default; }
+	public virtual bool AssertNotEqual_Matrix(FMatrix Actual,FMatrix NotExpected,string What,UObject ContextObject/*=nullptr*/) { return default; }
 	///<summary>Assert that two Strings are equal.</summary>
-	public  bool AssertEqual_String(string Actual,string Expected,string What,UObject ContextObject/*=nullptr*/) { return default; }
+	public virtual bool AssertEqual_String(string Actual,string Expected,string What,UObject ContextObject/*=nullptr*/) { return default; }
 	///<summary>Assert that two Strings are not equal.</summary>
-	public  bool AssertNotEqual_String(string Actual,string NotExpected,string What,UObject ContextObject/*=nullptr*/) { return default; }
+	public virtual bool AssertNotEqual_String(string Actual,string NotExpected,string What,UObject ContextObject/*=nullptr*/) { return default; }
 	///<summary>Assert that two TraceQueryResults are equal.</summary>
-	public  bool AssertEqual_TraceQueryResults(UTraceQueryTestResults Actual,UTraceQueryTestResults Expected,string What,UObject ContextObject/*=nullptr*/) { return default; }
+	public virtual bool AssertEqual_TraceQueryResults(UTraceQueryTestResults Actual,UTraceQueryTestResults Expected,string What,UObject ContextObject/*=nullptr*/) { return default; }
 	///<summary>AddWarning</summary>
-	public  void AddWarning(string Message) {}
+	public void AddWarning(string Message) {}
 	///<summary>AddError</summary>
-	public  void AddError(string Message) {}
+	public virtual void AddError(string Message) {}
 	///<summary>FinishTest</summary>
-	public  void FinishTest(EFunctionalTestResult TestResult,string Message) {}
+	public virtual void FinishTest(EFunctionalTestResult TestResult,string Message) {}
 	///<summary>LogMessage</summary>
-	public  void LogMessage(string Message) {}
+	public virtual void LogMessage(string Message) {}
 	///<summary>SetTimeLimit</summary>
-	public  void SetTimeLimit(float NewTimeLimit,EFunctionalTestResult ResultWhenTimeRunsOut) {}
+	public virtual void SetTimeLimit(float NewTimeLimit,EFunctionalTestResult ResultWhenTimeRunsOut) {}
 	///<summary>Used by debug drawing to gather actors this test is using and point at them on the level to better understand test&#39;s setup</summary>
-	public  TArray<AActor> DebugGatherRelevantActors() { return default; }
+	public TArray<AActor> DebugGatherRelevantActors() { return default; }
 	///<summary>retrieves information whether test wants to have another run just after finishing</summary>
-	public  bool OnWantsReRunCheck() { return default; }
+	public bool OnWantsReRunCheck() { return default; }
 	///<summary>Causes the test to be rerun for a specific named reason.</summary>
-	public  void AddRerun(string Reason) {}
+	public void AddRerun(string Reason) {}
 	///<summary>Returns the current re-run reason if we&#39;re in a named re-run.</summary>
-	public  string GetCurrentRerunReason() { return default; }
+	public string GetCurrentRerunReason() { return default; }
 	///<summary>OnAdditionalTestFinishedMessageRequest</summary>
-	public  string OnAdditionalTestFinishedMessageRequest(EFunctionalTestResult TestResult) { return default; }
+	public string OnAdditionalTestFinishedMessageRequest(EFunctionalTestResult TestResult) { return default; }
 	///<summary>Actors registered this way will be automatically destroyed (by limiting their lifespan)</summary>
-	public  void RegisterAutoDestroyActor(AActor ActorToAutoDestroy) {}
+	public virtual void RegisterAutoDestroyActor(AActor ActorToAutoDestroy) {}
 	///<summary>AActor interface end</summary>
-	public  bool IsRunning() { return default; }
+	public bool IsRunning() { return default; }
 	///<summary>IsEnabled</summary>
-	public  bool IsEnabled() { return default; }
+	public bool IsEnabled() { return default; }
 	///<summary>Prepare Test is fired once the test starts up, before the test IsReady() and thus before Start Test is called.</summary>
-	public  void ReceivePrepareTest() {}
+	public void ReceivePrepareTest() {}
 	///<summary>Called once the IsReady() check for the test returns true.  After that happens the test has Officially started,</summary>
-	public  void ReceiveStartTest() {}
+	public void ReceiveStartTest() {}
 	///<summary>IsReady() is called once per frame after a test is run, until it returns true.  You should use this function to</summary>
-	public  bool IsReady() { return default; }
+	public bool IsReady() { return default; }
 	///<summary>AG TEMP - solving a compile issue in a temp way to unblock the bui.d</summary>
 	public bool bIsRunning;
 	///<summary>TotalTime</summary>

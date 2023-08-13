@@ -1,13 +1,12 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("EditorUtilityWidget.h")]
 public partial class UEditorUtilityWidget : UUserWidget {
 	public static UClass StaticClass() {return default;}
 	///<summary>The default action called when the widget is invoked if bAutoRunDefaultAction=true (it is never called otherwise)</summary>
-	public  void Run() {}
+	public void Run() {}
 	///<summary>The display name for tabs spawned with this widget</summary>
-	public string TabDisplayName;
+	public FText TabDisplayName;
 	///<summary>HelpText</summary>
 	public string HelpText;
 	///<summary>Should this widget always be re-added to the windows menu once it&#39;s opened</summary>

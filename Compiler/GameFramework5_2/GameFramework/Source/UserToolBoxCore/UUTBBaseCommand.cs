@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>UUTBBaseCommand is the base class for any command of the usertoolbox framework.</summary>
@@ -24,9 +23,9 @@ public partial class UUTBBaseCommand : UObject {
 	///<summary>bIsTransaction</summary>
 	public bool bIsTransaction;
 	///<summary>ExecuteCommand</summary>
-	public  void ExecuteCommand() {}
+	public void ExecuteCommand() {}
 	///<summary>AddObjectToTransaction</summary>
-	public  void AddObjectToTransaction(UObject Object) {}
+	public void AddObjectToTransaction(UObject Object) {}
 	///<summary>AddObjectsToTransaction</summary>
-	public  void AddObjectsToTransaction(TArray<UObject> Objects) {}
+	public void AddObjectsToTransaction(TArray<UObject> Objects) {}
 }

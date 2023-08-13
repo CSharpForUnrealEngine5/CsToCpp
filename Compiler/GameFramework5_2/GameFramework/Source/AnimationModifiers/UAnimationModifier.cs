@@ -1,13 +1,12 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("AnimationModifier.h")]
 public partial class UAnimationModifier : UObject {
 	public static UClass StaticClass() {return default;}
 	///<summary>Executed when the Animation is initialized (native event for debugging / testing purposes)</summary>
-	public  void OnApply(UAnimSequence AnimationSequence) {}
+	public void OnApply(UAnimSequence AnimationSequence) {}
 	///<summary>OnRevert</summary>
-	public  void OnRevert(UAnimSequence AnimationSequence) {}
+	public void OnRevert(UAnimSequence AnimationSequence) {}
 	///<summary>If this is set to true then the animation modifier will call it&#39;s reapply function after any change made to the owning asset.</summary>
 	public bool bReapplyPostOwnerChange;
 	///<summary>VisibleAnywhere for testing, Category = Revision</summary>

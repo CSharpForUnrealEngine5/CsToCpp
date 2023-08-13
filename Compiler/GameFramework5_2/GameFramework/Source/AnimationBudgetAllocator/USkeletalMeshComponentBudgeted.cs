@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>A skeletal mesh component that has its tick rate governed by a global animation budget</summary>
@@ -6,7 +5,7 @@ using CSharpToCpp.Utilities;
 public partial class USkeletalMeshComponentBudgeted : USkeletalMeshComponent {
 	public static UClass StaticClass() {return default;}
 	///<summary>Set this component to automatically register with the budget allocator</summary>
-	public  void SetAutoRegisterWithBudgetAllocator(bool bInAutoRegisterWithBudgetAllocator) {}
+	public void SetAutoRegisterWithBudgetAllocator(bool bInAutoRegisterWithBudgetAllocator) {}
 	///<summary>Whether this component should automatically register with the budget allocator in OnRegister/OnUnregister</summary>
 	public bool bAutoRegisterWithBudgetAllocator;
 	///<summary>Whether this component should automatically calculate its significance (rather than some external system pushing the significance to it)</summary>

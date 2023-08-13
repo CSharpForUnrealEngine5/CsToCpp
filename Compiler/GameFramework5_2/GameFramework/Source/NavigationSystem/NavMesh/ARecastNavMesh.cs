@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("NavMesh/RecastNavMesh.h")]
@@ -143,5 +142,5 @@ public partial class ARecastNavMesh : ANavigationData {
 	///<summary>Value added to each search height to compensate for error between navmesh polys and walkable geometry</summary>
 	public float VerticalDeviationFromGroundCompensation;
 	///<summary>@return true if any polygon/link has been touched</summary>
-	public  bool K2_ReplaceAreaInTileBounds(FBox Bounds,UClass OldArea,UClass NewArea,bool ReplaceLinks/*=true*/) { return default; }
+	public bool K2_ReplaceAreaInTileBounds(FBox Bounds,UClass OldArea,UClass NewArea,bool ReplaceLinks/*=true*/) { return default; }
 }

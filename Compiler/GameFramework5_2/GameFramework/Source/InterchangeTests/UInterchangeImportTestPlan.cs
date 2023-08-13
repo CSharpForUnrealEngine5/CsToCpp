@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Define a test plan</summary>
@@ -12,5 +11,5 @@ public partial class UInterchangeImportTestPlan : UObject {
 	///<summary>Why is the test plan disabled.</summary>
 	public string DisabledTestReason;
 	///<summary>Click here to immediately run this single test through the automation framework</summary>
-	public  void RunThisTest() {}
+	public void RunThisTest() {}
 }

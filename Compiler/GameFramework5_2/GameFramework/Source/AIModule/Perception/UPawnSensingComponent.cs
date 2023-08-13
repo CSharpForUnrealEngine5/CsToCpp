@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>SensingComponent encapsulates sensory (ie sight and hearing) settings and functionality for an Actor,</summary>
@@ -6,9 +5,9 @@ using CSharpToCpp.Utilities;
 public partial class UPawnSensingComponent : UActorComponent {
 	public static UClass StaticClass() {return default;}
 	///<summary>FSeePawnDelegate</summary>
-	public  void FSeePawnDelegate(APawn Pawn) {}
+	public void FSeePawnDelegate(APawn Pawn) {}
 	///<summary>FHearNoiseDelegate</summary>
-	public  void FHearNoiseDelegate(APawn Instigator,FVector Location,float Volume) {}
+	public void FHearNoiseDelegate(APawn Instigator,FVector Location,float Volume) {}
 	///<summary>Max distance at which a makenoise(1.0) loudness sound can be heard, regardless of occlusion</summary>
 	public float HearingThreshold;
 	///<summary>Max distance at which a makenoise(1.0) loudness sound can be heard if unoccluded (LOSHearingThreshold should be &gt; HearingThreshold)</summary>
@@ -20,15 +19,15 @@ public partial class UPawnSensingComponent : UActorComponent {
 	///<summary>Max age of sounds we can hear. Should be greater than SensingInterval, or you might miss hearing some sounds!</summary>
 	public float HearingMaxSoundAge;
 	///<summary>Changes the SensingInterval.</summary>
-	public  void SetSensingInterval(float NewSensingInterval) {}
+	public virtual void SetSensingInterval(float NewSensingInterval) {}
 	///<summary>Enables or disables sensing updates. The timer is reset in either case.</summary>
-	public  void SetSensingUpdatesEnabled(bool bEnabled) {}
+	public virtual void SetSensingUpdatesEnabled(bool bEnabled) {}
 	///<summary>Sets PeripheralVisionAngle. Calculates PeripheralVisionCosine from PeripheralVisionAngle</summary>
-	public  void SetPeripheralVisionAngle(float NewPeripheralVisionAngle) {}
+	public virtual void SetPeripheralVisionAngle(float NewPeripheralVisionAngle) {}
 	///<summary>GetPeripheralVisionAngle</summary>
-	public  float GetPeripheralVisionAngle() { return default; }
+	public float GetPeripheralVisionAngle() { return default; }
 	///<summary>GetPeripheralVisionCosine</summary>
-	public  float GetPeripheralVisionCosine() { return default; }
+	public float GetPeripheralVisionCosine() { return default; }
 	///<summary>If true, component will perform sensing updates. At runtime change this using SetSensingUpdatesEnabled().</summary>
 	public bool bEnableSensingUpdates;
 	///<summary>If true, will only sense player-controlled pawns in the world. Default: true</summary>

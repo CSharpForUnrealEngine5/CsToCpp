@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Groups together a set of sprites that will try to share the same texture atlas (allowing them to be combined into a single draw call)</summary>

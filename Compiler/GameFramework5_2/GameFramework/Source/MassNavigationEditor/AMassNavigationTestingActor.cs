@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Debug actor to visually test zone graph.</summary>
@@ -6,9 +5,9 @@ using CSharpToCpp.Utilities;
 public partial class AMassNavigationTestingActor : AActor {
 	public static UClass StaticClass() {return default;}
 	///<summary>PinLane</summary>
-	public  void PinLane() {}
+	public void PinLane() {}
 	///<summary>ClearPinnedLane</summary>
-	public  void ClearPinnedLane() {}
+	public void ClearPinnedLane() {}
 	///<summary>DebugComp</summary>
 	public UMassNavigationTestingComponent DebugComp;
 }

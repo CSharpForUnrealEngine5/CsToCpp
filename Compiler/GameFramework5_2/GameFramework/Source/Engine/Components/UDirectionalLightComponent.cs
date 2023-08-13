@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>A light component that has parallel rays. Will provide a uniform lighting across any affected surface (eg. The Sun). This will affect all objects in the defined light-mass importance volume.</summary>
@@ -88,39 +87,39 @@ public partial class UDirectionalLightComponent : ULightComponent {
 	///<summary>Control the amount of shadow occlusion. A value of 0 means no occlusion, thus no shadow.</summary>
 	public float ShadowAmount;
 	///<summary>SetDynamicShadowDistanceMovableLight</summary>
-	public  void SetDynamicShadowDistanceMovableLight(float NewValue) {}
+	public void SetDynamicShadowDistanceMovableLight(float NewValue) {}
 	///<summary>SetDynamicShadowDistanceStationaryLight</summary>
-	public  void SetDynamicShadowDistanceStationaryLight(float NewValue) {}
+	public void SetDynamicShadowDistanceStationaryLight(float NewValue) {}
 	///<summary>SetDynamicShadowCascades</summary>
-	public  void SetDynamicShadowCascades(int NewValue) {}
+	public void SetDynamicShadowCascades(int NewValue) {}
 	///<summary>SetCascadeDistributionExponent</summary>
-	public  void SetCascadeDistributionExponent(float NewValue) {}
+	public void SetCascadeDistributionExponent(float NewValue) {}
 	///<summary>SetCascadeTransitionFraction</summary>
-	public  void SetCascadeTransitionFraction(float NewValue) {}
+	public void SetCascadeTransitionFraction(float NewValue) {}
 	///<summary>SetShadowDistanceFadeoutFraction</summary>
-	public  void SetShadowDistanceFadeoutFraction(float NewValue) {}
+	public void SetShadowDistanceFadeoutFraction(float NewValue) {}
 	///<summary>SetShadowCascadeBiasDistribution</summary>
-	public  void SetShadowCascadeBiasDistribution(float NewValue) {}
+	public void SetShadowCascadeBiasDistribution(float NewValue) {}
 	///<summary>SetEnableLightShaftOcclusion</summary>
-	public  void SetEnableLightShaftOcclusion(bool bNewValue) {}
+	public void SetEnableLightShaftOcclusion(bool bNewValue) {}
 	///<summary>SetOcclusionMaskDarkness</summary>
-	public  void SetOcclusionMaskDarkness(float NewValue) {}
+	public void SetOcclusionMaskDarkness(float NewValue) {}
 	///<summary>SetOcclusionDepthRange</summary>
-	public  void SetOcclusionDepthRange(float NewValue) {}
+	public void SetOcclusionDepthRange(float NewValue) {}
 	///<summary>SetLightShaftOverrideDirection</summary>
-	public  void SetLightShaftOverrideDirection(FVector NewValue) {}
+	public void SetLightShaftOverrideDirection(FVector NewValue) {}
 	///<summary>SetLightSourceAngle</summary>
-	public  void SetLightSourceAngle(float NewValue) {}
+	public void SetLightSourceAngle(float NewValue) {}
 	///<summary>SetLightSourceSoftAngle</summary>
-	public  void SetLightSourceSoftAngle(float NewValue) {}
+	public void SetLightSourceSoftAngle(float NewValue) {}
 	///<summary>SetShadowSourceAngleFactor</summary>
-	public  void SetShadowSourceAngleFactor(float NewValue) {}
+	public void SetShadowSourceAngleFactor(float NewValue) {}
 	///<summary>SetShadowAmount</summary>
-	public  void SetShadowAmount(float NewValue) {}
+	public void SetShadowAmount(float NewValue) {}
 	///<summary>SetAtmosphereSunLight</summary>
-	public  void SetAtmosphereSunLight(bool bNewValue) {}
+	public void SetAtmosphereSunLight(bool bNewValue) {}
 	///<summary>SetAtmosphereSunLightIndex</summary>
-	public  void SetAtmosphereSunLightIndex(int NewValue) {}
+	public void SetAtmosphereSunLightIndex(int NewValue) {}
 	///<summary>SetForwardShadingPriority</summary>
-	public  void SetForwardShadingPriority(int NewValue) {}
+	public void SetForwardShadingPriority(int NewValue) {}
 }

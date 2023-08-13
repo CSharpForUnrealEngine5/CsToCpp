@@ -1,15 +1,14 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Components/StateTreeComponent.h")]
 public partial class UStateTreeComponent : UBrainComponent {
 	public static UClass StaticClass() {return default;}
 	///<summary>Sets whether the State Tree is started automatically on being play.</summary>
-	public  void SetStartLogicAutomatically(bool bInStartLogicAutomatically) {}
+	public void SetStartLogicAutomatically(bool bInStartLogicAutomatically) {}
 	///<summary>Sends event to the running StateTree.</summary>
-	public  void SendStateTreeEvent(FStateTreeEvent Event) {}
+	public void SendStateTreeEvent(FStateTreeEvent Event) {}
 	///<summary>Returns the current run status of the StateTree.</summary>
-	public  EStateTreeRunStatus GetStateTreeRunStatus() { return default; }
+	public EStateTreeRunStatus GetStateTreeRunStatus() { return default; }
 	///<summary>Called when the run status of the StateTree has changed</summary>
 	public FStateTreeRunStatusChanged OnStateTreeRunStatusChanged;
 	///<summary>StateTree_DEPRECATED</summary>

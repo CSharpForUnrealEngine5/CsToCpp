@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("AttributeEditorTool.h")]
@@ -11,9 +10,9 @@ public partial class UAttributeEditorLightmapUVActions : UAttributeEditorActionP
 	///<summary>Lightmap UVs are stored in this UV Channel. Use the Static Mesh Editor to change this value.</summary>
 	public int DestinationUVIndex;
 	///<summary>Enable</summary>
-	public  void Enable() {}
+	public void Enable() {}
 	///<summary>Disable</summary>
-	public  void Disable() {}
+	public void Disable() {}
 	///<summary>Reset Lightmap UV channels to Source Channel UV0 and Destination as UVMax+1</summary>
-	public  void Reset() {}
+	public void Reset() {}
 }

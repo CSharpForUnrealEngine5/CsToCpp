@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("AISystem.h")]
@@ -49,7 +48,7 @@ public partial class UAISystem : UAISystemBase {
 	///<summary>NavLocalGrids</summary>
 	public UNavLocalGridManager NavLocalGrids;
 	///<summary>cheats</summary>
-	public  void AIIgnorePlayers() {}
+	public virtual void AIIgnorePlayers() {}
 	///<summary>AILoggingVerbose</summary>
-	public  void AILoggingVerbose() {}
+	public virtual void AILoggingVerbose() {}
 }

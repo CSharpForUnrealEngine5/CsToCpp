@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>AbilityAsync is a base class for ability-specific BlueprintAsyncActions.</summary>
@@ -6,5 +5,5 @@ using CSharpToCpp.Utilities;
 public partial class UAbilityAsync : UCancellableAsyncAction {
 	public static UClass StaticClass() {return default;}
 	///<summary>Explicitly end the action, will disable any callbacks and allow action to be destroyed</summary>
-	public  void EndAction() {}
+	public virtual void EndAction() {}
 }

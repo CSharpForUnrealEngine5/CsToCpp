@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>An asset used to build a stage-by-stage tutorial in the editor</summary>
@@ -6,7 +5,7 @@ using CSharpToCpp.Utilities;
 public partial class UEditorTutorial : UObject {
 	public static UClass StaticClass() {return default;}
 	///<summary>Title of this tutorial, used when presented to the user</summary>
-	public string Title;
+	public FText Title;
 	///<summary>Sorting priority, used by the tutorial browser</summary>
 	public int SortOrder;
 	///<summary>Icon name for this tutorial, used when presented to the user in the tutorial browser. This is a name for the icon in the Slate editor style. Only used if there isn&#39;t a valid texture to use.</summary>
@@ -24,7 +23,7 @@ public partial class UEditorTutorial : UObject {
 	///<summary>Tutorial to optionally chain onto after this tutorial completes</summary>
 	public FSoftClassPath NextTutorial;
 	///<summary>Attempts to find the actor specified by PathToActor in the current editor world</summary>
-	public  AActor GetActorReference(string PathToActor) { return default; }
+	public AActor GetActorReference(string PathToActor) { return default; }
 	///<summary>A standalone tutorial displays no navigation buttons and each content widget has a close button</summary>
 	public bool bIsStandalone;
 	///<summary>Asset to open &amp; attach the tutorial to. Non-widget-bound content will appear in the asset&#39;s window</summary>
@@ -34,15 +33,15 @@ public partial class UEditorTutorial : UObject {
 	///<summary>Hide this tutorial in the tutorials browser</summary>
 	public bool bHideInBrowser;
 	///<summary>Comma seperated list of tags the search will use to help find this tutorial</summary>
-	public string SearchTags;
+	public FText SearchTags;
 	///<summary>Event fired when a tutorial stage begins</summary>
-	public  void OnTutorialStageStarted(string StageName) {}
+	public void OnTutorialStageStarted(string StageName) {}
 	///<summary>Event fired when a tutorial stage ends</summary>
-	public  void OnTutorialStageEnded(string StageName) {}
+	public void OnTutorialStageEnded(string StageName) {}
 	///<summary>Event fired when a tutorial is launched</summary>
-	public  void OnTutorialLaunched() {}
+	public void OnTutorialLaunched() {}
 	///<summary>Event fired when a tutorial is closed</summary>
-	public  void OnTutorialClosed() {}
+	public void OnTutorialClosed() {}
 	///<summary>Advance to the next stage of a tutorial</summary>
 	public static void GoToNextTutorialStage() {}
 	///<summary>Advance to the previous stage of a tutorial</summary>

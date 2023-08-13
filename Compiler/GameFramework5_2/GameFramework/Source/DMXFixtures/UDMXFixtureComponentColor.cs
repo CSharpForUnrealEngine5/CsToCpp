@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Specific class to handle color mixing using 4 channels (rgb, cmy, rgbw).</summary>
@@ -14,5 +13,5 @@ public partial class UDMXFixtureComponentColor : UDMXFixtureComponent {
 	///<summary>DMXChannel4</summary>
 	public FDMXAttributeName DMXChannel4;
 	///<summary>Sets the color of the component. Note DMX Fixture Component Color does not support interpolation</summary>
-	public  void SetColorNoInterp(FLinearColor NewColor) {}
+	public void SetColorNoInterp(FLinearColor NewColor) {}
 }

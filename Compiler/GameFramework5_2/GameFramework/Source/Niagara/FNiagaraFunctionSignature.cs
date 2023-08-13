@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("NiagaraCommon.h")]
@@ -11,7 +10,7 @@ public partial struct FNiagaraFunctionSignature {
 	public bool bRequiresExecPin;
 	public bool bMemberFunction;
 	public bool bExperimental;
-	public string ExperimentalMessage;
+	public FText ExperimentalMessage;
 	public uint FunctionVersion;
 	public bool bSupportsCPU;
 	public bool bSupportsGPU;
@@ -25,7 +24,7 @@ public partial struct FNiagaraFunctionSignature {
 	public short RequiredInputs;
 	public short RequiredOutputs;
 	public TMap<string,string> FunctionSpecifiers;
-	public string Description;
-	public TMap<FNiagaraVariableBase,string> InputDescriptions;
-	public TMap<FNiagaraVariableBase,string> OutputDescriptions;
+	public FText Description;
+	public TMap<FNiagaraVariableBase,FText> InputDescriptions;
+	public TMap<FNiagaraVariableBase,FText> OutputDescriptions;
 }

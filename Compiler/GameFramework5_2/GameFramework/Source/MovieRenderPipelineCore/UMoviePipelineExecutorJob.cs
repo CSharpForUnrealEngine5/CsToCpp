@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>A particular job within the Queue</summary>
@@ -6,33 +5,33 @@ using CSharpToCpp.Utilities;
 public partial class UMoviePipelineExecutorJob : UObject {
 	public static UClass StaticClass() {return default;}
 	///<summary>Set the status of this job to the given value. This will be shown on the UI if progress</summary>
-	public  void SetStatusMessage(string InStatus) {}
+	public void SetStatusMessage(string InStatus) {}
 	///<summary>Get the current status message for this job. May be an empty string.</summary>
-	public  string GetStatusMessage() { return default; }
+	public string GetStatusMessage() { return default; }
 	///<summary>Set the progress of this job to the given value. If a positive value is provided</summary>
-	public  void SetStatusProgress(float InProgress) {}
+	public void SetStatusProgress(float InProgress) {}
 	///<summary>Get the current progress as last set by SetStatusProgress. 0 by default.</summary>
-	public  float GetStatusProgress() { return default; }
+	public float GetStatusProgress() { return default; }
 	///<summary>Set the job to be consumed. A consumed job is disabled in the UI and should not be</summary>
-	public  void SetConsumed(bool bInConsumed) {}
+	public void SetConsumed(bool bInConsumed) {}
 	///<summary>Gets whether or not the job has been marked as being consumed. A consumed job is not editable</summary>
-	public  bool IsConsumed() { return default; }
+	public bool IsConsumed() { return default; }
 	///<summary>Set the job to be enabled/disabled. This is exposed to the user in the Queue UI</summary>
-	public  void SetIsEnabled(bool bInEnabled) {}
+	public void SetIsEnabled(bool bInEnabled) {}
 	///<summary>Gets whether or not the job has been marked as being enabled.</summary>
-	public  bool IsEnabled() { return default; }
+	public bool IsEnabled() { return default; }
 	///<summary>Should be called to clear status and user data after duplication so that jobs stay</summary>
-	public  void OnDuplicated() {}
+	public void OnDuplicated() {}
 	///<summary>SetPresetOrigin</summary>
-	public  void SetPresetOrigin(UMoviePipelinePrimaryConfig InPreset) {}
+	public void SetPresetOrigin(UMoviePipelinePrimaryConfig InPreset) {}
 	///<summary>Gets the preset for this job, but only if the preset has not been modified. If it has been modified, or the preset</summary>
-	public  UMoviePipelinePrimaryConfig GetPresetOrigin() { return default; }
+	public UMoviePipelinePrimaryConfig GetPresetOrigin() { return default; }
 	///<summary>Gets the configuration for the job. This configuration is either standalone (not associated with any preset), or</summary>
-	public  UMoviePipelinePrimaryConfig GetConfiguration() { return default; }
+	public UMoviePipelinePrimaryConfig GetConfiguration() { return default; }
 	///<summary>SetConfiguration</summary>
-	public  void SetConfiguration(UMoviePipelinePrimaryConfig InPreset) {}
+	public void SetConfiguration(UMoviePipelinePrimaryConfig InPreset) {}
 	///<summary>SetSequence</summary>
-	public  void SetSequence(FSoftObjectPath InSequence) {}
+	public void SetSequence(FSoftObjectPath InSequence) {}
 	///<summary>(Optional) Name of the job. Shown on the default burn-in.</summary>
 	public string JobName;
 	///<summary>Which sequence should this job render?</summary>

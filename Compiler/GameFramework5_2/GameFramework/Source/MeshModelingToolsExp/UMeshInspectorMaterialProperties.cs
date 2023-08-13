@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>material settings for mesh inspector tool</summary>
@@ -16,7 +15,7 @@ public partial class UMeshInspectorMaterialProperties : UInteractiveToolProperty
 	///<summary>UVChannelNamesList</summary>
 	public TArray<string> UVChannelNamesList;
 	///<summary>GetUVChannelNamesFunc</summary>
-	public  TArray<string> GetUVChannelNamesFunc() { return default; }
+	public TArray<string> GetUVChannelNamesFunc() { return default; }
 	///<summary>Toggle flat shading on/off</summary>
 	public bool bFlatShading;
 	///<summary>Main Color of Material</summary>

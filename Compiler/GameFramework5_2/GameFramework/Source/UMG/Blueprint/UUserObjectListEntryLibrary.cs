@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Static library to supply &quot;for free&quot; functionality to widgets that implement IUserListEntry</summary>

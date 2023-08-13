@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>The rich text block</summary>
@@ -6,7 +5,7 @@ using CSharpToCpp.Utilities;
 public partial class URichTextBlock : UTextLayoutWidget {
 	public static UClass StaticClass() {return default;}
 	///<summary>The text to display</summary>
-	public string Text;
+	public FText Text;
 	///<summary>TextStyleSet</summary>
 	public UDataTable TextStyleSet;
 	///<summary>DecoratorClasses</summary>
@@ -22,45 +21,45 @@ public partial class URichTextBlock : UTextLayoutWidget {
 	///<summary>Sets what happens to text that is clipped and doesn&#39;t fit within the clip rect for this widget</summary>
 	public ETextOverflowPolicy TextOverflowPolicy;
 	///<summary>Sets the color and opacity of the default text in this rich text block</summary>
-	public  void SetDefaultColorAndOpacity(FSlateColor InColorAndOpacity) {}
+	public void SetDefaultColorAndOpacity(FSlateColor InColorAndOpacity) {}
 	///<summary>Sets the color and opacity of the default text drop shadow</summary>
-	public  void SetDefaultShadowColorAndOpacity(FLinearColor InShadowColorAndOpacity) {}
+	public void SetDefaultShadowColorAndOpacity(FLinearColor InShadowColorAndOpacity) {}
 	///<summary>Sets the offset that the default text drop shadow should be drawn at</summary>
-	public  void SetDefaultShadowOffset(FVector2D InShadowOffset) {}
+	public void SetDefaultShadowOffset(FVector2D InShadowOffset) {}
 	///<summary>Dynamically set the default font info for this rich text block</summary>
-	public  void SetDefaultFont(FSlateFontInfo InFontInfo) {}
+	public void SetDefaultFont(FSlateFontInfo InFontInfo) {}
 	///<summary>Dynamically set the default strike brush for this rich text block</summary>
-	public  void SetDefaultStrikeBrush(FSlateBrush InStrikeBrush) {}
+	public void SetDefaultStrikeBrush(FSlateBrush InStrikeBrush) {}
 	///<summary>Set the minimum desired width for this rich text block</summary>
-	public  void SetMinDesiredWidth(float InMinDesiredWidth) {}
+	public void SetMinDesiredWidth(float InMinDesiredWidth) {}
 	///<summary>Set the auto wrap for this rich text block</summary>
-	public  void SetAutoWrapText(bool InAutoTextWrap) {}
+	public void SetAutoWrapText(bool InAutoTextWrap) {}
 	///<summary>Set the text transformation policy for this text block.</summary>
-	public  void SetTextTransformPolicy(ETextTransformPolicy InTransformPolicy) {}
+	public void SetTextTransformPolicy(ETextTransformPolicy InTransformPolicy) {}
 	///<summary>Set the text overflow policy for this text block.</summary>
-	public  void SetTextOverflowPolicy(ETextOverflowPolicy InOverflowPolicy) {}
+	public void SetTextOverflowPolicy(ETextOverflowPolicy InOverflowPolicy) {}
 	///<summary>Wholesale override of the currently established default text style</summary>
-	public  void SetDefaultTextStyle(FTextBlockStyle InDefaultTextStyle) {}
+	public void SetDefaultTextStyle(FTextBlockStyle InDefaultTextStyle) {}
 	///<summary>SetDefaultMaterial</summary>
-	public  void SetDefaultMaterial(UMaterialInterface InMaterial) {}
+	public void SetDefaultMaterial(UMaterialInterface InMaterial) {}
 	///<summary>Remove all overrides made to the default text style and return to the style specified in the style set data table</summary>
-	public  void ClearAllDefaultStyleOverrides() {}
+	public void ClearAllDefaultStyleOverrides() {}
 	///<summary>Creates a dynamic material for the default font or returns it if it already</summary>
-	public  UMaterialInstanceDynamic GetDefaultDynamicMaterial() { return default; }
+	public UMaterialInstanceDynamic GetDefaultDynamicMaterial() { return default; }
 	///<summary>Replaces the existing decorators with the list provided</summary>
-	public  void SetDecorators(TArray<UClass> InDecoratorClasses) {}
+	public void SetDecorators(TArray<UClass> InDecoratorClasses) {}
 	///<summary>Returns widgets text.</summary>
-	public  string GetText() { return default; }
+	public FText GetText() { return default; }
 	///<summary>Directly sets the widget text.</summary>
-	public  void SetText(string InText) {}
+	public virtual void SetText(FText InText) {}
 	///<summary>GetTextStyleSet</summary>
-	public  UDataTable GetTextStyleSet() { return default; }
+	public UDataTable GetTextStyleSet() { return default; }
 	///<summary>SetTextStyleSet</summary>
-	public  void SetTextStyleSet(UDataTable NewTextStyleSet) {}
+	public void SetTextStyleSet(UDataTable NewTextStyleSet) {}
 	///<summary>GetDecoratorByClass</summary>
-	public  URichTextBlockDecorator GetDecoratorByClass(UClass DecoratorClass) { return default; }
+	public URichTextBlockDecorator GetDecoratorByClass(UClass DecoratorClass) { return default; }
 	///<summary>Causes the text to reflow it&#39;s layout and re-evaluate any decorators</summary>
-	public  void RefreshTextLayout() {}
+	public void RefreshTextLayout() {}
 	///<summary>DefaultTextStyle</summary>
 	public FTextBlockStyle DefaultTextStyle;
 	///<summary>InstanceDecorators</summary>

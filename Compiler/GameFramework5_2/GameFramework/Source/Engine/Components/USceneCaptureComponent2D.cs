@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Used to capture a &#39;snapshot&#39; of the scene from a single plane and feed it to a render target.</summary>
@@ -46,9 +45,9 @@ public partial class USceneCaptureComponent2D : USceneCaptureComponent {
 	///<summary>Treat unrendered opaque pixels as fully translucent. This is important for effects such as exponential weight fog, so it does not get applied on unrendered opaque pixels.</summary>
 	public bool bConsiderUnrenderedOpaquePixelAsFullyTranslucent;
 	///<summary>Adds an Blendable (implements IBlendableInterface) to the array of Blendables (if it doesn&#39;t exist) and update the weight</summary>
-	public  void AddOrUpdateBlendable(object /*InBlendableObject*/ InBlendableObject,float InWeight/*=1.0f*/) {}
+	public void AddOrUpdateBlendable(object /*InBlendableObject*/ InBlendableObject,float InWeight/*=1.0f*/) {}
 	///<summary>Removes a blendable.</summary>
-	public  void RemoveBlendable(object /*InBlendableObject*/ InBlendableObject) {}
+	public void RemoveBlendable(object /*InBlendableObject*/ InBlendableObject) {}
 	///<summary>Render the scene to the texture target immediately.</summary>
-	public  void CaptureScene() {}
+	public void CaptureScene() {}
 }

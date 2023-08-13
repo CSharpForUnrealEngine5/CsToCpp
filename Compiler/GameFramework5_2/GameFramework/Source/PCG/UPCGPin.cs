@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("PCGPin.h")]
@@ -13,7 +12,7 @@ public partial class UPCGPin : UObject {
 	///<summary>Properties</summary>
 	public FPCGPinProperties Properties;
 	///<summary>GetTooltip</summary>
-	public  string GetTooltip() { return default; }
+	public FText GetTooltip() { return default; }
 	///<summary>SetTooltip</summary>
-	public  void SetTooltip(string InTooltip) {}
+	public void SetTooltip(FText InTooltip) {}
 }

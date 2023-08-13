@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>A mechanic for displaying a sequence of control points and moving them about. Has an interactive initialization mode for</summary>

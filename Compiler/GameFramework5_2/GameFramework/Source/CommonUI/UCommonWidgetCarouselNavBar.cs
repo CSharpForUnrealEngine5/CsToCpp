@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>A Navigation control for a Carousel</summary>
@@ -10,11 +9,11 @@ public partial class UCommonWidgetCarouselNavBar : UWidget {
 	///<summary>ButtonPadding</summary>
 	public FMargin ButtonPadding;
 	///<summary>Establishes the Widget Carousel instance that this Nav Bar should interact with</summary>
-	public  void SetLinkedCarousel(UCommonWidgetCarousel CommonCarousel) {}
+	public void SetLinkedCarousel(UCommonWidgetCarousel CommonCarousel) {}
 	///<summary>HandlePageChanged</summary>
-	public  void HandlePageChanged(UCommonWidgetCarousel CommonCarousel,int PageIndex) {}
+	public void HandlePageChanged(UCommonWidgetCarousel CommonCarousel,int PageIndex) {}
 	///<summary>HandleButtonClicked</summary>
-	public  void HandleButtonClicked(UCommonButtonBase AssociatedButton,int ButtonIndex) {}
+	public void HandleButtonClicked(UCommonButtonBase AssociatedButton,int ButtonIndex) {}
 	///<summary>LinkedCarousel</summary>
 	public UCommonWidgetCarousel LinkedCarousel;
 	///<summary>ButtonGroup</summary>

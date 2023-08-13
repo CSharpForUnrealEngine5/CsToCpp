@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Base class for CG Compositing Elements</summary>
@@ -20,5 +19,5 @@ public partial class ACompositingCaptureBase : ACompositingElement {
 	///<summary>DistortionSource_DEPRECATED</summary>
 	public FDistortionHandlerPicker DistortionSource_DEPRECATED;
 	///<summary>Update the state of the Lens Distortion Data Handler, and updates or removes the Distortion MID from the SceneCaptureComponent&#39;s post process materials, depending on whether distortion should be applied</summary>
-	public  void UpdateDistortion() {}
+	public void UpdateDistortion() {}
 }

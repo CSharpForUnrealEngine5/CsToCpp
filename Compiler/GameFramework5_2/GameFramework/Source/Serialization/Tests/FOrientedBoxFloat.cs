@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Float (Non LWC) version of FOrientedBox since the float version doesn&#39;t exist yet</summary>

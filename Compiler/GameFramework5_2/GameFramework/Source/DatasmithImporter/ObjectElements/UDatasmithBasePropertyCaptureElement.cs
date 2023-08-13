@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>* UDatasmithBasePropertyCaptureElement</summary>
@@ -6,11 +5,11 @@ using CSharpToCpp.Utilities;
 public partial class UDatasmithBasePropertyCaptureElement : UDatasmithObjectElement {
 	public static UClass StaticClass() {return default;}
 	///<summary>Sets the path used when attempting to capture a generic property</summary>
-	public  void SetPropertyPath(string Path) {}
+	public void SetPropertyPath(string Path) {}
 	///<summary>Gets the path used when attempting to capture a generic property</summary>
-	public  string GetPropertyPath() { return default; }
+	public string GetPropertyPath() { return default; }
 	///<summary>Sets the category of this property capture</summary>
-	public  void SetCategory(EDatasmithPropertyCategory Category) {}
+	public void SetCategory(EDatasmithPropertyCategory Category) {}
 	///<summary>Gets the category of this property capture</summary>
-	public  EDatasmithPropertyCategory GetCategory() { return default; }
+	public EDatasmithPropertyCategory GetCategory() { return default; }
 }

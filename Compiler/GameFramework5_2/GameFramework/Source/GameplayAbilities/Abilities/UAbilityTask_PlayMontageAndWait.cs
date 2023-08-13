@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Ability task to simply play a montage. Many games will want to make a modified version of this task that looks for game-specific events</summary>
@@ -14,11 +13,11 @@ public partial class UAbilityTask_PlayMontageAndWait : UAbilityTask {
 	///<summary>OnCancelled</summary>
 	public FMontageWaitSimpleDelegate OnCancelled;
 	///<summary>OnMontageBlendingOut</summary>
-	public  void OnMontageBlendingOut(UAnimMontage Montage,bool bInterrupted) {}
+	public void OnMontageBlendingOut(UAnimMontage Montage,bool bInterrupted) {}
 	///<summary>OnMontageInterrupted</summary>
-	public  void OnMontageInterrupted() {}
+	public void OnMontageInterrupted() {}
 	///<summary>OnMontageEnded</summary>
-	public  void OnMontageEnded(UAnimMontage Montage,bool bInterrupted) {}
+	public void OnMontageEnded(UAnimMontage Montage,bool bInterrupted) {}
 	///<summary>Start playing an animation montage on the avatar actor and wait for it to finish</summary>
 	public static UAbilityTask_PlayMontageAndWait CreatePlayMontageAndWaitProxy(UGameplayAbility OwningAbility,string TaskInstanceName,UAnimMontage MontageToPlay,float Rate/*=1.0f*/,string StartSection/*=NAME_None*/,bool bStopWhenAbilityEnds/*=true*/,float AnimRootMotionTranslationScale/*=1.0f*/,float StartTimeSeconds/*=0.0f*/) { return default; }
 	///<summary>MontageToPlay</summary>

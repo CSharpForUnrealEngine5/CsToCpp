@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Base component for movement. This essentially has the generic glue for selecting an UpdatedComponent and moving it along the world</summary>
@@ -6,9 +5,9 @@ using CSharpToCpp.Utilities;
 public partial class UBaseMovementComponent : UNetworkPredictionComponent {
 	public static UClass StaticClass() {return default;}
 	///<summary>Callbacks</summary>
-	public  void OnBeginOverlap(UPrimitiveComponent OverlappedComp,AActor Other,UPrimitiveComponent OtherComp,int OtherBodyIndex,bool bFromSweep,FHitResult SweepResult) {}
+	public virtual void OnBeginOverlap(UPrimitiveComponent OverlappedComp,AActor Other,UPrimitiveComponent OtherComp,int OtherBodyIndex,bool bFromSweep,FHitResult SweepResult) {}
 	///<summary>PhysicsVolumeChanged</summary>
-	public  void PhysicsVolumeChanged(APhysicsVolume NewVolume) {}
+	public virtual void PhysicsVolumeChanged(APhysicsVolume NewVolume) {}
 	///<summary>UpdatedComponent</summary>
 	public USceneComponent UpdatedComponent;
 	///<summary>UpdatedPrimitive</summary>

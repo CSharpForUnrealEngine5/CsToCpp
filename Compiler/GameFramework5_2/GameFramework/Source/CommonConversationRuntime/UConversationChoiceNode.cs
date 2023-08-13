@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>A choice on a task indicates that an option be presented to the user when the owning task is one of</summary>
@@ -6,9 +5,9 @@ using CSharpToCpp.Utilities;
 public partial class UConversationChoiceNode : UConversationSubNode {
 	public static UClass StaticClass() {return default;}
 	///<summary>DefaultChoiceDisplayText</summary>
-	public string DefaultChoiceDisplayText;
+	public FText DefaultChoiceDisplayText;
 	///<summary>ChoiceTags</summary>
 	public FGameplayTagContainer ChoiceTags;
 	///<summary>FillChoice</summary>
-	public  void FillChoice(FConversationContext Context,FClientConversationOptionEntry ChoiceEntry) {}
+	public void FillChoice(FConversationContext Context,FClientConversationOptionEntry ChoiceEntry) {}
 }

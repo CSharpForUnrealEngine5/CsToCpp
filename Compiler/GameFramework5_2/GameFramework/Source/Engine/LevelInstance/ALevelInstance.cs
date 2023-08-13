@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("LevelInstance/LevelInstanceActor.h")]
@@ -13,5 +12,5 @@ public partial class ALevelInstance : AActor {
 	///<summary>DesiredRuntimeBehavior</summary>
 	public ELevelInstanceRuntimeBehavior DesiredRuntimeBehavior;
 	///<summary>OnRep_LevelInstanceSpawnGuid</summary>
-	public  void OnRep_LevelInstanceSpawnGuid() {}
+	public void OnRep_LevelInstanceSpawnGuid() {}
 }

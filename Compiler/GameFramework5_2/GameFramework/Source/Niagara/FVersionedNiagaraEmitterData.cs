@@ -1,16 +1,15 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Struct containing all of the data that can be different between different emitter versions.</summary>
 [CppInclude("NiagaraEmitter.h")]
 public partial struct FVersionedNiagaraEmitterData {
 	public FNiagaraAssetVersion Version;
-	public string VersionChangeDescription;
+	public FText VersionChangeDescription;
 	public ENiagaraPythonUpdateScriptReference UpdateScriptExecution;
 	public string PythonUpdateScript;
 	public FFilePath ScriptAsset;
 	public bool bDeprecated;
-	public string DeprecationMessage;
+	public FText DeprecationMessage;
 	public bool bLocalSpace;
 	public bool bDeterminism;
 	public int RandomSeed;

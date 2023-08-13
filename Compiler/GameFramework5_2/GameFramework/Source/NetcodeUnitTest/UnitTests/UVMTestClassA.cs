@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Test classes for testing different types/combinations of property reflection</summary>
@@ -42,7 +41,7 @@ public partial class UVMTestClassA : UObject {
 	///<summary>StringProp</summary>
 	public string StringProp;
 	///<summary>TextProp</summary>
-	public string TextProp;
+	public FText TextProp;
 	///<summary>BytePropArray</summary>
 	public byte BytePropArray;
 	///<summary>ObjectPropArray</summary>
@@ -76,7 +75,7 @@ public partial class UVMTestClassA : UObject {
 	///<summary>DynStringPropArray</summary>
 	public TArray<string> DynStringPropArray;
 	///<summary>DynTextPropArray</summary>
-	public TArray<string> DynTextPropArray;
+	public TArray<FText> DynTextPropArray;
 	///<summary>DynClassPropArray</summary>
 	public TArray<UClass> DynClassPropArray;
 	///<summary>DynPawnPropArray</summary>

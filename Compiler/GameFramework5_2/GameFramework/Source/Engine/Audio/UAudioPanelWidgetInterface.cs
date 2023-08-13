@@ -1,11 +1,10 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Audio/AudioPanelWidgetInterface.h")]
 public partial class UAudioPanelWidgetInterface : UInterface {
 	public static UClass StaticClass() {return default;}
 	///<summary>GetEditorName</summary>
-	public  string GetEditorName() { return default; }
+	public FText GetEditorName() { return default; }
 	///<summary>GetIconBrushName</summary>
-	public  string GetIconBrushName() { return default; }
+	public string GetIconBrushName() { return default; }
 }

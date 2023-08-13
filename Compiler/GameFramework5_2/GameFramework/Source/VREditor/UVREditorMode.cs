@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>VR Editor Mode. Extends editor viewports with functionality for VR controls and object manipulation</summary>
@@ -6,11 +5,11 @@ using CSharpToCpp.Utilities;
 public partial class UVREditorMode : UVREditorModeBase {
 	public static UClass StaticClass() {return default;}
 	///<summary>Display the scene more closely to how it would appear at runtime (as opposed to edit time).</summary>
-	public  void SetGameView(bool bGameView) {}
+	public void SetGameView(bool bGameView) {}
 	///<summary>Returns whether game view is currently active.</summary>
-	public  bool IsInGameView() { return default; }
+	public bool IsInGameView() { return default; }
 	///<summary>Gets the world scale factor, which can be multiplied by a scale vector to convert to room space</summary>
-	public  float GetWorldScaleFactor() { return default; }
+	public float GetWorldScaleFactor() { return default; }
 	///<summary>Actor with components to represent the VR avatar in the world, including motion controller meshes</summary>
 	public AVREditorAvatarActor AvatarActor;
 	///<summary>VR UI system</summary>

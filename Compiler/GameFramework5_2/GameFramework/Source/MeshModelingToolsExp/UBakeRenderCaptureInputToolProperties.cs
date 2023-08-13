@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("BakeRenderCaptureTool.h")]
@@ -9,9 +8,9 @@ public partial class UBakeRenderCaptureInputToolProperties : UInteractiveToolPro
 	///<summary>UV channel to use for the target mesh</summary>
 	public string TargetUVLayer;
 	///<summary>GetTargetUVLayerIndex</summary>
-	public  int GetTargetUVLayerIndex() { return default; }
+	public int GetTargetUVLayerIndex() { return default; }
 	///<summary>GetTargetUVLayerNamesFunc</summary>
-	public  TArray<string> GetTargetUVLayerNamesFunc() { return default; }
+	public TArray<string> GetTargetUVLayerNamesFunc() { return default; }
 	///<summary>TargetUVLayerNamesList</summary>
 	public TArray<string> TargetUVLayerNamesList;
 }

@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>SkeletalMesh is geometry bound to a hierarchical skeleton of bones which can be animated for the purpose of deforming the mesh.</summary>
@@ -10,9 +9,9 @@ public partial class USkeletalMesh : USkinnedAsset {
 	///<summary>Skeleton</summary>
 	public USkeleton Skeleton;
 	///<summary>USkinnedAsset interface.</summary>
-	public  USkeleton GetSkeleton() { return default; }
+	public virtual USkeleton GetSkeleton() { return default; }
 	///<summary>SetSkeleton</summary>
-	public  void SetSkeleton(USkeleton InSkeleton) {}
+	public void SetSkeleton(USkeleton InSkeleton) {}
 	///<summary>ImportedBounds</summary>
 	public FBoxSphereBounds ImportedBounds;
 	///<summary>ExtendedBounds</summary>
@@ -22,15 +21,15 @@ public partial class USkeletalMesh : USkinnedAsset {
 	///<summary>NegativeBoundsExtension</summary>
 	public FVector NegativeBoundsExtension;
 	///<summary>Get the extended bounds of this mesh (imported bounds plus bounds extension). USkinnedAsset interface.</summary>
-	public  FBoxSphereBounds GetBounds() { return default; }
+	public virtual FBoxSphereBounds GetBounds() { return default; }
 	///<summary>Get the original imported bounds of the skel mesh</summary>
-	public  FBoxSphereBounds GetImportedBounds() { return default; }
+	public FBoxSphereBounds GetImportedBounds() { return default; }
 	///<summary>Materials</summary>
 	public TArray<FSkeletalMaterial> Materials;
 	///<summary>USkinnedAsset interface.</summary>
-	public  TArray<FSkeletalMaterial> GetMaterials() { return default; }
+	public virtual TArray<FSkeletalMaterial> GetMaterials() { return default; }
 	///<summary>SetMaterials</summary>
-	public  void SetMaterials(TArray<FSkeletalMaterial> InMaterials) {}
+	public void SetMaterials(TArray<FSkeletalMaterial> InMaterials) {}
 	///<summary>SkelMirrorTable</summary>
 	public TArray<FBoneMirrorInfo> SkelMirrorTable;
 	///<summary>LODInfo</summary>
@@ -38,9 +37,9 @@ public partial class USkeletalMesh : USkinnedAsset {
 	///<summary>MinQualityLevelLOD</summary>
 	public FPerQualityLevelInt MinQualityLevelLOD;
 	///<summary>Allow to override min lod quality levels on a skeletalMesh and it Default value (-1 value for Default dont override its value).</summary>
-	public  void SetMinLODForQualityLevels(TMap<EPerQualityLevels,int> QualityLevelMinimumLODs,int Default/*=-1*/) {}
+	public void SetMinLODForQualityLevels(TMap<EPerQualityLevels,int> QualityLevelMinimumLODs,int Default/*=-1*/) {}
 	///<summary>GetMinLODForQualityLevels</summary>
-	public  void GetMinLODForQualityLevels(TMap<EPerQualityLevels,int> QualityLevelMinimumLODs,int Default) {}
+	public void GetMinLODForQualityLevels(TMap<EPerQualityLevels,int> QualityLevelMinimumLODs,int Default) {}
 	///<summary>MinLod</summary>
 	public FPerPlatformInt MinLod;
 	///<summary>DisableBelowMinLodStripping</summary>
@@ -58,13 +57,13 @@ public partial class USkeletalMesh : USkinnedAsset {
 	///<summary>DefaultAnimatingRig</summary>
 	public TSoftObjectPtr<UObject> DefaultAnimatingRig;
 	///<summary>GetLODSettings</summary>
-	public  USkeletalMeshLODSettings GetLODSettings() { return default; }
+	public USkeletalMeshLODSettings GetLODSettings() { return default; }
 	///<summary>SetLODSettings</summary>
-	public  void SetLODSettings(USkeletalMeshLODSettings InLODSettings) {}
+	public void SetLODSettings(USkeletalMeshLODSettings InLODSettings) {}
 	///<summary>SetDefaultAnimatingRig</summary>
-	public  void SetDefaultAnimatingRig(TSoftObjectPtr<UObject> InAnimatingRig) {}
+	public void SetDefaultAnimatingRig(TSoftObjectPtr<UObject> InAnimatingRig) {}
 	///<summary>GetDefaultAnimatingRig</summary>
-	public  TSoftObjectPtr<UObject> GetDefaultAnimatingRig() { return default; }
+	public TSoftObjectPtr<UObject> GetDefaultAnimatingRig() { return default; }
 	///<summary>SkelMirrorAxis</summary>
 	public EAxis SkelMirrorAxis;
 	///<summary>SkelMirrorFlipAxis</summary>
@@ -86,17 +85,17 @@ public partial class USkeletalMesh : USkinnedAsset {
 	///<summary>PhysicsAsset</summary>
 	public UPhysicsAsset PhysicsAsset;
 	///<summary>USkinnedAsset interface.</summary>
-	public  UPhysicsAsset GetPhysicsAsset() { return default; }
+	public virtual UPhysicsAsset GetPhysicsAsset() { return default; }
 	///<summary>ShadowPhysicsAsset</summary>
 	public UPhysicsAsset ShadowPhysicsAsset;
 	///<summary>USkinnedAsset interface.</summary>
-	public  UPhysicsAsset GetShadowPhysicsAsset() { return default; }
+	public virtual UPhysicsAsset GetShadowPhysicsAsset() { return default; }
 	///<summary>NodeMappingData</summary>
 	public TArray<UNodeMappingContainer> NodeMappingData;
 	///<summary>GetNodeMappingData</summary>
-	public  TArray<UNodeMappingContainer> GetNodeMappingData() { return default; }
+	public TArray<UNodeMappingContainer> GetNodeMappingData() { return default; }
 	///<summary>GetNodeMappingContainer</summary>
-	public  UNodeMappingContainer GetNodeMappingContainer(UBlueprint SourceAsset) { return default; }
+	public UNodeMappingContainer GetNodeMappingContainer(UBlueprint SourceAsset) { return default; }
 	///<summary>AssetImportData</summary>
 	public UAssetImportData AssetImportData;
 	///<summary>Path to the resource used to construct this skeletal mesh</summary>
@@ -126,11 +125,11 @@ public partial class USkeletalMesh : USkinnedAsset {
 	///<summary>MorphTargets</summary>
 	public TArray<UMorphTarget> MorphTargets;
 	///<summary>NOTE: BP compiler doesn&#39;t support TObjectPtr as an argument type for UFUNCTION so this converting call is</summary>
-	public  TArray<UMorphTarget> GetMorphTargetsPtrConv() { return default; }
+	public TArray<UMorphTarget> GetMorphTargetsPtrConv() { return default; }
 	///<summary>SetMorphTargets</summary>
-	public  void SetMorphTargets(TArray<UMorphTarget> InMorphTargets) {}
+	public void SetMorphTargets(TArray<UMorphTarget> InMorphTargets) {}
 	///<summary>Returns the list of all morph targets of this skeletal mesh</summary>
-	public  TArray<string> K2_GetAllMorphTargetNames() { return default; }
+	public TArray<string> K2_GetAllMorphTargetNames() { return default; }
 	///<summary>FloorOffset</summary>
 	public float FloorOffset;
 	///<summary>RetargetBasePose</summary>
@@ -142,9 +141,9 @@ public partial class USkeletalMesh : USkinnedAsset {
 	///<summary>MeshClothingAssets</summary>
 	public TArray<UClothingAssetBase> MeshClothingAssets;
 	///<summary>GetMeshClothingAssets</summary>
-	public  TArray<UClothingAssetBase> GetMeshClothingAssets() { return default; }
+	public TArray<UClothingAssetBase> GetMeshClothingAssets() { return default; }
 	///<summary>SetMeshClothingAssets</summary>
-	public  void SetMeshClothingAssets(TArray<UClothingAssetBase> InMeshClothingAssets) {}
+	public void SetMeshClothingAssets(TArray<UClothingAssetBase> InMeshClothingAssets) {}
 	///<summary>SamplingInfo</summary>
 	public FSkeletalMeshSamplingInfo SamplingInfo;
 	///<summary>Array of user data stored with the asset</summary>
@@ -152,15 +151,15 @@ public partial class USkeletalMesh : USkinnedAsset {
 	///<summary>Array of named socket locations, set up in editor and used as a shortcut instead of specifying</summary>
 	public TArray<USkeletalMeshSocket> Sockets;
 	///<summary>Add a skeletal socket object to this SkeletalMesh, and optionally promotes it to USkeleton socket.</summary>
-	public  void AddSocket(USkeletalMeshSocket InSocket,bool bAddToSkeleton/*=false*/) {}
+	public void AddSocket(USkeletalMeshSocket InSocket,bool bAddToSkeleton/*=false*/) {}
 	///<summary>Find a socket object in this SkeletalMesh by name.</summary>
-	public  USkeletalMeshSocket FindSocketAndIndex(string InSocketName,int OutIndex) { return default; }
+	public USkeletalMeshSocket FindSocketAndIndex(string InSocketName,int OutIndex) { return default; }
 	///<summary>Returns the number of sockets available. Both on this mesh and it&#39;s skeleton.</summary>
-	public  int NumSockets() { return default; }
+	public int NumSockets() { return default; }
 	///<summary>Returns a socket by index. Max index is NumSockets(). The meshes sockets are accessed first, then the skeletons.</summary>
-	public  USkeletalMeshSocket GetSocketByIndex(int Index) { return default; }
+	public USkeletalMeshSocket GetSocketByIndex(int Index) { return default; }
 	///<summary>Checks whether the provided section is using APEX cloth. if bCheckCorrespondingSections is true</summary>
-	public  bool IsSectionUsingCloth(int InSectionIndex,bool bCheckCorrespondingSections/*=true*/) { return default; }
+	public bool IsSectionUsingCloth(int InSectionIndex,bool bCheckCorrespondingSections/*=true*/) { return default; }
 	///<summary>SkinWeightProfiles</summary>
 	public TArray<FSkinWeightProfileInfo> SkinWeightProfiles;
 	///<summary>DefaultMeshDeformer</summary>

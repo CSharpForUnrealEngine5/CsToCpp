@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>An agent capable of controlling a single avatar (e.g. a Pawn or Controller). Contains sensors for</summary>
@@ -6,9 +5,9 @@ using CSharpToCpp.Utilities;
 public partial class UMLAdapterAgent : UObject {
 	public static UClass StaticClass() {return default;}
 	///<summary>When the agent&#39;s avatar is destroyed, we need to cleanup callbacks and references to the avatar. Will request a new avatar if AgentConfig.bAutoRequestNewAvatarUponClearingPrev is true.</summary>
-	public  void OnAvatarDestroyed(AActor DestroyedActor) {}
+	public virtual void OnAvatarDestroyed(AActor DestroyedActor) {}
 	///<summary>Will be bound to UGameInstance.OnPawnControllerChanged if current avatar is a pawn or a controller.</summary>
-	public  void OnPawnControllerChanged(APawn InPawn,AController InController) {}
+	public void OnPawnControllerChanged(APawn InPawn,AController InController) {}
 	///<summary>Sensors</summary>
 	public TArray<UMLAdapterSensor> Sensors;
 	///<summary>Actuators</summary>

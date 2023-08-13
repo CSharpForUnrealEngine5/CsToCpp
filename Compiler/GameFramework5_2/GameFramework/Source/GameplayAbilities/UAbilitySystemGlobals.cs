@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Holds global data for the ability system. Can be configured per project via config file</summary>
@@ -8,17 +7,17 @@ public partial class UAbilitySystemGlobals : UObject {
 	///<summary>The class to instantiate as the globals object. Defaults to this class but can be overridden</summary>
 	public FSoftClassPath AbilitySystemGlobalsClassName;
 	///<summary>Toggles whether we should ignore ability cooldowns. Does nothing in shipping builds</summary>
-	public  void ToggleIgnoreAbilitySystemCooldowns() {}
+	public virtual void ToggleIgnoreAbilitySystemCooldowns() {}
 	///<summary>Toggles whether we should ignore ability costs. Does nothing in shipping builds</summary>
-	public  void ToggleIgnoreAbilitySystemCosts() {}
+	public virtual void ToggleIgnoreAbilitySystemCosts() {}
 	///<summary>Show all abilities currently assigned to the local player</summary>
-	public  void ListPlayerAbilities() {}
+	public void ListPlayerAbilities() {}
 	///<summary>Force server activation of a specific player ability (useful for cheat testing)</summary>
-	public  void ServerActivatePlayerAbility(string AbilityNameMatch) {}
+	public void ServerActivatePlayerAbility(string AbilityNameMatch) {}
 	///<summary>Force server deactivation of a specific player ability (useful for cheat testing)</summary>
-	public  void ServerEndPlayerAbility(string AbilityNameMatch) {}
+	public void ServerEndPlayerAbility(string AbilityNameMatch) {}
 	///<summary>Force server cancellation of a specific player ability (useful for cheat testing)</summary>
-	public  void ServerCancelPlayerAbility(string AbilityNameMatch) {}
+	public void ServerCancelPlayerAbility(string AbilityNameMatch) {}
 	///<summary>Set to true if you want the &quot;ShowDebug AbilitySystem&quot; cheat to use the hud&#39;s debug target instead of the ability system&#39;s debug target.</summary>
 	public bool bUseDebugTargetFromHud;
 	///<summary>TryActivate failed due to being dead</summary>

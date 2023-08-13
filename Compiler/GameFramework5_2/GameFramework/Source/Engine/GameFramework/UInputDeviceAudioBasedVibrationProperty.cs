@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Plays a sound to an input device&#39;s speaker. On platforms that support it, this sound will be played</summary>

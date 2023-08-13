@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Water Mesh Component responsible for generating and rendering a continuous water mesh on top of all the existing water body actors in the world</summary>
@@ -12,7 +11,7 @@ public partial class UWaterMeshComponent : UMeshComponent {
 	///<summary>FarDistanceMeshExtent</summary>
 	public float FarDistanceMeshExtent;
 	///<summary>IsEnabled</summary>
-	public  bool IsEnabled() { return default; }
+	public bool IsEnabled() { return default; }
 	///<summary>World size of the water tiles at LOD0. Multiply this with the ExtentInTiles to get the world extents of the system</summary>
 	public float TileSize;
 	///<summary>The extent of the system in number of tiles. Maximum number of tiles for this system will be ExtentInTiles.X*2*ExtentInTiles.Y*2</summary>

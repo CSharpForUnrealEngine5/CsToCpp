@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>* Subsystem used for VR Scouting</summary>
@@ -14,15 +13,15 @@ public partial class UVPScoutingSubsystem : UEditorSubsystem {
 	///<summary>This is a multiplier for grip nav speed so we can keep the grip nav value in the range 0-1 and increase this variable if we need a bigger range</summary>
 	public float GripNavSpeedCoeff;
 	///<summary>Open a widget UI in front of the user. Opens default VProd UI (defined via the &#39;Virtual Scouting User Interface&#39; setting) if null.</summary>
-	public  void ToggleVRScoutingUI(FVREditorFloatingUICreationContext CreationContext) {}
+	public void ToggleVRScoutingUI(FVREditorFloatingUICreationContext CreationContext) {}
 	///<summary>Hide VR Sequencer Window</summary>
-	public  void HideInfoDisplayPanel() {}
+	public void HideInfoDisplayPanel() {}
 	///<summary>Check whether a widget UI is open</summary>
-	public  bool IsVRScoutingUIOpen(string PanelID) { return default; }
+	public bool IsVRScoutingUIOpen(string PanelID) { return default; }
 	///<summary>Get UI panel Actor from the passed ID</summary>
-	public  AVREditorFloatingUI GetPanelActor(string PanelID) { return default; }
+	public AVREditorFloatingUI GetPanelActor(string PanelID) { return default; }
 	///<summary>Get UI panel widget from the passed ID</summary>
-	public  UUserWidget GetPanelWidget(string PanelID) { return default; }
+	public UUserWidget GetPanelWidget(string PanelID) { return default; }
 	///<summary>GetActiveEditorVRControllers</summary>
 	public static TArray<UVREditorInteractor> GetActiveEditorVRControllers() { return default; }
 	///<summary>GetVProdPanelID</summary>

@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("UIFWidget.h")]
@@ -9,9 +8,9 @@ public partial class UUIFrameworkWidget : UMVVMViewModelBase {
 	///<summary>Visibility</summary>
 	public ESlateVisibility Visibility;
 	///<summary>OnRep_IsEnabled</summary>
-	public  void OnRep_IsEnabled() {}
+	public void OnRep_IsEnabled() {}
 	///<summary>OnRep_Visibility</summary>
-	public  void OnRep_Visibility() {}
+	public void OnRep_Visibility() {}
 	///<summary>WidgetClass</summary>
 	public TSoftObjectPtr<UClass> WidgetClass;
 	///<summary>Id</summary>

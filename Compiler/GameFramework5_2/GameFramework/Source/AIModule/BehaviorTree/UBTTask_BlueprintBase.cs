@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Base class for blueprint based task nodes. Do NOT use it for creating native c++ classes!</summary>
@@ -16,27 +15,27 @@ public partial class UBTTask_BlueprintBase : UBTTaskNode {
 	///<summary>show detailed information about properties</summary>
 	public bool bShowPropertyDetails;
 	///<summary>entry point, task will stay active until FinishExecute is called.</summary>
-	public  void ReceiveExecute(AActor OwnerActor) {}
+	public void ReceiveExecute(AActor OwnerActor) {}
 	///<summary>if blueprint graph contains this event, task will stay active until FinishAbort is called</summary>
-	public  void ReceiveAbort(AActor OwnerActor) {}
+	public void ReceiveAbort(AActor OwnerActor) {}
 	///<summary>tick function</summary>
-	public  void ReceiveTick(AActor OwnerActor,float DeltaSeconds) {}
+	public void ReceiveTick(AActor OwnerActor,float DeltaSeconds) {}
 	///<summary>Alternative AI version of ReceiveExecute</summary>
-	public  void ReceiveExecuteAI(AAIController OwnerController,APawn ControlledPawn) {}
+	public void ReceiveExecuteAI(AAIController OwnerController,APawn ControlledPawn) {}
 	///<summary>Alternative AI version of ReceiveAbort</summary>
-	public  void ReceiveAbortAI(AAIController OwnerController,APawn ControlledPawn) {}
+	public void ReceiveAbortAI(AAIController OwnerController,APawn ControlledPawn) {}
 	///<summary>Alternative AI version of tick function.</summary>
-	public  void ReceiveTickAI(AAIController OwnerController,APawn ControlledPawn,float DeltaSeconds) {}
+	public void ReceiveTickAI(AAIController OwnerController,APawn ControlledPawn,float DeltaSeconds) {}
 	///<summary>finishes task execution with Success or Fail result</summary>
-	public  void FinishExecute(bool bSuccess) {}
+	public void FinishExecute(bool bSuccess) {}
 	///<summary>aborts task execution</summary>
-	public  void FinishAbort() {}
+	public void FinishAbort() {}
 	///<summary>task execution will be finished (with result &#39;Success&#39;) after receiving specified message</summary>
-	public  void SetFinishOnMessage(string MessageName) {}
+	public void SetFinishOnMessage(string MessageName) {}
 	///<summary>task execution will be finished (with result &#39;Success&#39;) after receiving specified message with indicated ID</summary>
-	public  void SetFinishOnMessageWithId(string MessageName,int RequestID/*=-1*/) {}
+	public void SetFinishOnMessageWithId(string MessageName,int RequestID/*=-1*/) {}
 	///<summary>check if task is currently being executed</summary>
-	public  bool IsTaskExecuting() { return default; }
+	public bool IsTaskExecuting() { return default; }
 	///<summary>check if task is currently being aborted</summary>
-	public  bool IsTaskAborting() { return default; }
+	public bool IsTaskAborting() { return default; }
 }

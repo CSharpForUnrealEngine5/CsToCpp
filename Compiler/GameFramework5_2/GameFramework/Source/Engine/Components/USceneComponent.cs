@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>A SceneComponent has a transform and supports attachment, but has no rendering or collision capabilities.</summary>
@@ -56,9 +55,9 @@ public partial class USceneComponent : UActorComponent {
 	///<summary>If true, this component has already cached its bounds during cooking or in PIE and will never recompute it again.</summary>
 	public bool bComputedBoundsOnceForGame;
 	///<summary>Gets whether or not the cached PhysicsVolume this component overlaps should be updated when the component is moved.</summary>
-	public  bool GetShouldUpdatePhysicsVolume() { return default; }
+	public bool GetShouldUpdatePhysicsVolume() { return default; }
 	///<summary>Sets whether or not the cached PhysicsVolume this component overlaps should be updated when the component is moved.</summary>
-	public  void SetShouldUpdatePhysicsVolume(bool bInShouldUpdatePhysicsVolume) {}
+	public void SetShouldUpdatePhysicsVolume(bool bInShouldUpdatePhysicsVolume) {}
 	///<summary>If true, this component stops the the walk up the attachment chain in GetActorPositionForRenderer(). Instead this component&#39;s child will be used as the attachment root.</summary>
 	public bool bIsNotRenderAttachmentRoot;
 	///<summary>This component should create a sprite component for visualization in the editor</summary>
@@ -72,121 +71,121 @@ public partial class USceneComponent : UActorComponent {
 	///<summary>@todo_ow: This is needed because of order of registration of Actors</summary>
 	public USceneComponent ReplacementSceneComponent;
 	///<summary>OnRep_Transform</summary>
-	public  void OnRep_Transform() {}
+	public void OnRep_Transform() {}
 	///<summary>OnRep_AttachParent</summary>
-	public  void OnRep_AttachParent() {}
+	public void OnRep_AttachParent() {}
 	///<summary>OnRep_AttachChildren</summary>
-	public  void OnRep_AttachChildren() {}
+	public void OnRep_AttachChildren() {}
 	///<summary>OnRep_AttachSocketName</summary>
-	public  void OnRep_AttachSocketName() {}
+	public void OnRep_AttachSocketName() {}
 	///<summary>OnRep_Visibility</summary>
-	public  void OnRep_Visibility(bool OldValue) {}
+	public void OnRep_Visibility(bool OldValue) {}
 	///<summary>Set the location of the component relative to its parent</summary>
-	public  void K2_SetRelativeLocation(FVector NewLocation,bool bSweep,FHitResult SweepHitResult,bool bTeleport) {}
+	public void K2_SetRelativeLocation(FVector NewLocation,bool bSweep,FHitResult SweepHitResult,bool bTeleport) {}
 	///<summary>Set the rotation of the component relative to its parent</summary>
-	public  void K2_SetRelativeRotation(FRotator NewRotation,bool bSweep,FHitResult SweepHitResult,bool bTeleport) {}
+	public void K2_SetRelativeRotation(FRotator NewRotation,bool bSweep,FHitResult SweepHitResult,bool bTeleport) {}
 	///<summary>Set the transform of the component relative to its parent</summary>
-	public  void K2_SetRelativeTransform(FTransform NewTransform,bool bSweep,FHitResult SweepHitResult,bool bTeleport) {}
+	public void K2_SetRelativeTransform(FTransform NewTransform,bool bSweep,FHitResult SweepHitResult,bool bTeleport) {}
 	///<summary>Returns the transform of the component relative to its parent</summary>
-	public  FTransform GetRelativeTransform() { return default; }
+	public FTransform GetRelativeTransform() { return default; }
 	///<summary>Reset the transform of the component relative to its parent. Sets relative location to zero, relative rotation to no rotation, and Scale to 1.</summary>
-	public  void ResetRelativeTransform() {}
+	public void ResetRelativeTransform() {}
 	///<summary>Set the non-uniform scale of the component relative to its parent</summary>
-	public  void SetRelativeScale3D(FVector NewScale3D) {}
+	public void SetRelativeScale3D(FVector NewScale3D) {}
 	///<summary>Adds a delta to the translation of the component relative to its parent</summary>
-	public  void K2_AddRelativeLocation(FVector DeltaLocation,bool bSweep,FHitResult SweepHitResult,bool bTeleport) {}
+	public void K2_AddRelativeLocation(FVector DeltaLocation,bool bSweep,FHitResult SweepHitResult,bool bTeleport) {}
 	///<summary>Adds a delta the rotation of the component relative to its parent</summary>
-	public  void K2_AddRelativeRotation(FRotator DeltaRotation,bool bSweep,FHitResult SweepHitResult,bool bTeleport) {}
+	public void K2_AddRelativeRotation(FRotator DeltaRotation,bool bSweep,FHitResult SweepHitResult,bool bTeleport) {}
 	///<summary>Adds a delta to the location of the component in its local reference frame</summary>
-	public  void K2_AddLocalOffset(FVector DeltaLocation,bool bSweep,FHitResult SweepHitResult,bool bTeleport) {}
+	public void K2_AddLocalOffset(FVector DeltaLocation,bool bSweep,FHitResult SweepHitResult,bool bTeleport) {}
 	///<summary>Adds a delta to the rotation of the component in its local reference frame</summary>
-	public  void K2_AddLocalRotation(FRotator DeltaRotation,bool bSweep,FHitResult SweepHitResult,bool bTeleport) {}
+	public void K2_AddLocalRotation(FRotator DeltaRotation,bool bSweep,FHitResult SweepHitResult,bool bTeleport) {}
 	///<summary>Adds a delta to the transform of the component in its local reference frame. Scale is unchanged.</summary>
-	public  void K2_AddLocalTransform(FTransform DeltaTransform,bool bSweep,FHitResult SweepHitResult,bool bTeleport) {}
+	public void K2_AddLocalTransform(FTransform DeltaTransform,bool bSweep,FHitResult SweepHitResult,bool bTeleport) {}
 	///<summary>Put this component at the specified location in world space. Updates relative location to achieve the final world location.</summary>
-	public  void K2_SetWorldLocation(FVector NewLocation,bool bSweep,FHitResult SweepHitResult,bool bTeleport) {}
+	public void K2_SetWorldLocation(FVector NewLocation,bool bSweep,FHitResult SweepHitResult,bool bTeleport) {}
 	///<summary>* Put this component at the specified rotation in world space. Updates relative rotation to achieve the final world rotation.</summary>
-	public  void K2_SetWorldRotation(FRotator NewRotation,bool bSweep,FHitResult SweepHitResult,bool bTeleport) {}
+	public void K2_SetWorldRotation(FRotator NewRotation,bool bSweep,FHitResult SweepHitResult,bool bTeleport) {}
 	///<summary>Set the relative scale of the component to put it at the supplied scale in world space.</summary>
-	public  void SetWorldScale3D(FVector NewScale) {}
+	public void SetWorldScale3D(FVector NewScale) {}
 	///<summary>Set the transform of the component in world space.</summary>
-	public  void K2_SetWorldTransform(FTransform NewTransform,bool bSweep,FHitResult SweepHitResult,bool bTeleport) {}
+	public void K2_SetWorldTransform(FTransform NewTransform,bool bSweep,FHitResult SweepHitResult,bool bTeleport) {}
 	///<summary>Adds a delta to the location of the component in world space.</summary>
-	public  void K2_AddWorldOffset(FVector DeltaLocation,bool bSweep,FHitResult SweepHitResult,bool bTeleport) {}
+	public void K2_AddWorldOffset(FVector DeltaLocation,bool bSweep,FHitResult SweepHitResult,bool bTeleport) {}
 	///<summary>Adds a delta to the rotation of the component in world space.</summary>
-	public  void K2_AddWorldRotation(FRotator DeltaRotation,bool bSweep,FHitResult SweepHitResult,bool bTeleport) {}
+	public void K2_AddWorldRotation(FRotator DeltaRotation,bool bSweep,FHitResult SweepHitResult,bool bTeleport) {}
 	///<summary>Adds a delta to the transform of the component in world space. Ignores scale and sets it to (1,1,1).</summary>
-	public  void K2_AddWorldTransform(FTransform DeltaTransform,bool bSweep,FHitResult SweepHitResult,bool bTeleport) {}
+	public void K2_AddWorldTransform(FTransform DeltaTransform,bool bSweep,FHitResult SweepHitResult,bool bTeleport) {}
 	///<summary>Adds a delta to the transform of the component in world space. Scale is unchanged.</summary>
-	public  void K2_AddWorldTransformKeepScale(FTransform DeltaTransform,bool bSweep,FHitResult SweepHitResult,bool bTeleport) {}
+	public void K2_AddWorldTransformKeepScale(FTransform DeltaTransform,bool bSweep,FHitResult SweepHitResult,bool bTeleport) {}
 	///<summary>Return location of the component, in world space</summary>
-	public  FVector K2_GetComponentLocation() { return default; }
+	public FVector K2_GetComponentLocation() { return default; }
 	///<summary>Returns rotation of the component, in world space.</summary>
-	public  FRotator K2_GetComponentRotation() { return default; }
+	public FRotator K2_GetComponentRotation() { return default; }
 	///<summary>Returns scale of the component, in world space.</summary>
-	public  FVector K2_GetComponentScale() { return default; }
+	public FVector K2_GetComponentScale() { return default; }
 	///<summary>Get the current component-to-world transform for this component</summary>
-	public  FTransform K2_GetComponentToWorld() { return default; }
+	public FTransform K2_GetComponentToWorld() { return default; }
 	///<summary>Get the forward (X) unit direction vector from this component, in world space.</summary>
-	public  FVector GetForwardVector() { return default; }
+	public FVector GetForwardVector() { return default; }
 	///<summary>Get the up (Z) unit direction vector from this component, in world space.</summary>
-	public  FVector GetUpVector() { return default; }
+	public FVector GetUpVector() { return default; }
 	///<summary>Get the right (Y) unit direction vector from this component, in world space.</summary>
-	public  FVector GetRightVector() { return default; }
+	public FVector GetRightVector() { return default; }
 	///<summary>Returns whether the specified body is currently using physics simulation</summary>
-	public  bool IsSimulatingPhysics(string BoneName/*=NAME_None*/) { return default; }
+	public virtual bool IsSimulatingPhysics(string BoneName/*=NAME_None*/) { return default; }
 	///<summary>Returns whether the specified body is currently using physics simulation</summary>
-	public  bool IsAnySimulatingPhysics() { return default; }
+	public virtual bool IsAnySimulatingPhysics() { return default; }
 	///<summary>Get the SceneComponent we are attached to.</summary>
-	public  USceneComponent GetAttachParent() { return default; }
+	public USceneComponent GetAttachParent() { return default; }
 	///<summary>Get the socket we are attached to.</summary>
-	public  string GetAttachSocketName() { return default; }
+	public string GetAttachSocketName() { return default; }
 	///<summary>Gets all attachment parent components up to and including the root component</summary>
-	public  void GetParentComponents(TArray<USceneComponent> Parents) {}
+	public void GetParentComponents(TArray<USceneComponent> Parents) {}
 	///<summary>Gets the number of attached children components</summary>
-	public  int GetNumChildrenComponents() { return default; }
+	public int GetNumChildrenComponents() { return default; }
 	///<summary>Gets the attached child component at the specified location</summary>
-	public  USceneComponent GetChildComponent(int ChildIndex) { return default; }
+	public USceneComponent GetChildComponent(int ChildIndex) { return default; }
 	///<summary>Gets all components that are attached to this component, possibly recursively</summary>
-	public  void GetChildrenComponents(bool bIncludeAllDescendants,TArray<USceneComponent> Children) {}
+	public void GetChildrenComponents(bool bIncludeAllDescendants,TArray<USceneComponent> Children) {}
 	///<summary>K2_AttachTo</summary>
-	public  bool K2_AttachTo(USceneComponent InParent,string InSocketName/*=NAME_None*/,EAttachLocation AttachType/*=EAttachLocation.KeepRelativeOffset*/,bool bWeldSimulatedBodies/*=true*/) { return default; }
+	public bool K2_AttachTo(USceneComponent InParent,string InSocketName/*=NAME_None*/,EAttachLocation AttachType/*=EAttachLocation.KeepRelativeOffset*/,bool bWeldSimulatedBodies/*=true*/) { return default; }
 	///<summary>Attach this component to another scene component, optionally at a named socket. It is valid to call this on components whether or not they have been Registered.</summary>
-	public  bool K2_AttachToComponent(USceneComponent Parent,string SocketName,EAttachmentRule LocationRule,EAttachmentRule RotationRule,EAttachmentRule ScaleRule,bool bWeldSimulatedBodies) { return default; }
+	public bool K2_AttachToComponent(USceneComponent Parent,string SocketName,EAttachmentRule LocationRule,EAttachmentRule RotationRule,EAttachmentRule ScaleRule,bool bWeldSimulatedBodies) { return default; }
 	///<summary>DetachFromParent</summary>
-	public  void DetachFromParent(bool bMaintainWorldPosition/*=false*/,bool bCallModify/*=true*/) {}
+	public virtual void DetachFromParent(bool bMaintainWorldPosition/*=false*/,bool bCallModify/*=true*/) {}
 	///<summary>Detach this component from whatever it is attached to. Automatically unwelds components that are welded together (See WeldTo)</summary>
-	public  void K2_DetachFromComponent(EDetachmentRule LocationRule/*=EDetachmentRule.KeepRelative*/,EDetachmentRule RotationRule/*=EDetachmentRule.KeepRelative*/,EDetachmentRule ScaleRule/*=EDetachmentRule.KeepRelative*/,bool bCallModify/*=true*/) {}
+	public void K2_DetachFromComponent(EDetachmentRule LocationRule/*=EDetachmentRule.KeepRelative*/,EDetachmentRule RotationRule/*=EDetachmentRule.KeepRelative*/,EDetachmentRule ScaleRule/*=EDetachmentRule.KeepRelative*/,bool bCallModify/*=true*/) {}
 	///<summary>Gets the names of all the sockets on the component.</summary>
-	public  TArray<string> GetAllSocketNames() { return default; }
+	public TArray<string> GetAllSocketNames() { return default; }
 	///<summary>Get world-space socket transform.</summary>
-	public  FTransform GetSocketTransform(string InSocketName,ERelativeTransformSpace TransformSpace/*=RTS_World*/) { return default; }
+	public virtual FTransform GetSocketTransform(string InSocketName,ERelativeTransformSpace TransformSpace/*=RTS_World*/) { return default; }
 	///<summary>Get world-space socket or bone location.</summary>
-	public  FVector GetSocketLocation(string InSocketName) { return default; }
+	public virtual FVector GetSocketLocation(string InSocketName) { return default; }
 	///<summary>Get world-space socket or bone  FRotator rotation.</summary>
-	public  FRotator GetSocketRotation(string InSocketName) { return default; }
+	public virtual FRotator GetSocketRotation(string InSocketName) { return default; }
 	///<summary>Get world-space socket or bone FQuat rotation.</summary>
-	public  FQuat GetSocketQuaternion(string InSocketName) { return default; }
+	public virtual FQuat GetSocketQuaternion(string InSocketName) { return default; }
 	///<summary>Return true if socket with the given name exists</summary>
-	public  bool DoesSocketExist(string InSocketName) { return default; }
+	public virtual bool DoesSocketExist(string InSocketName) { return default; }
 	///<summary>Get velocity of the component: either ComponentVelocity, or the velocity of the physics body if simulating physics.</summary>
-	public  FVector GetComponentVelocity() { return default; }
+	public virtual FVector GetComponentVelocity() { return default; }
 	///<summary>Returns true if this component is visible in the current context</summary>
-	public  bool IsVisible() { return default; }
+	public virtual bool IsVisible() { return default; }
 	///<summary>Set visibility of the component, if during game use this to turn on/off</summary>
-	public  void SetVisibility(bool bNewVisibility,bool bPropagateToChildren/*=false*/) {}
+	public void SetVisibility(bool bNewVisibility,bool bPropagateToChildren/*=false*/) {}
 	///<summary>Toggle visibility of the component</summary>
-	public  void ToggleVisibility(bool bPropagateToChildren/*=false*/) {}
+	public void ToggleVisibility(bool bPropagateToChildren/*=false*/) {}
 	///<summary>Changes the value of bHiddenInGame, if false this will disable Visibility during gameplay</summary>
-	public  void SetHiddenInGame(bool NewHidden,bool bPropagateToChildren/*=false*/) {}
+	public void SetHiddenInGame(bool NewHidden,bool bPropagateToChildren/*=false*/) {}
 	///<summary>Get the PhysicsVolume overlapping this component.</summary>
-	public  APhysicsVolume GetPhysicsVolume() { return default; }
+	public APhysicsVolume GetPhysicsVolume() { return default; }
 	///<summary>Set the location and rotation of the component relative to its parent</summary>
-	public  void K2_SetRelativeLocationAndRotation(FVector NewLocation,FRotator NewRotation,bool bSweep,FHitResult SweepHitResult,bool bTeleport) {}
+	public void K2_SetRelativeLocationAndRotation(FVector NewLocation,FRotator NewRotation,bool bSweep,FHitResult SweepHitResult,bool bTeleport) {}
 	///<summary>Set which parts of the relative transform should be relative to parent, and which should be relative to world</summary>
-	public  void SetAbsolute(bool bNewAbsoluteLocation/*=false*/,bool bNewAbsoluteRotation/*=false*/,bool bNewAbsoluteScale/*=false*/) {}
+	public void SetAbsolute(bool bNewAbsoluteLocation/*=false*/,bool bNewAbsoluteRotation/*=false*/,bool bNewAbsoluteScale/*=false*/) {}
 	///<summary>Set the relative location and rotation of the component to put it at the supplied pose in world space.</summary>
-	public  void K2_SetWorldLocationAndRotation(FVector NewLocation,FRotator NewRotation,bool bSweep,FHitResult SweepHitResult,bool bTeleport) {}
+	public void K2_SetWorldLocationAndRotation(FVector NewLocation,FRotator NewRotation,bool bSweep,FHitResult SweepHitResult,bool bTeleport) {}
 	///<summary>Set how often this component is allowed to move during runtime. Causes a component re-register if the component is already registered</summary>
-	public  void SetMobility(EComponentMobility NewMobility) {}
+	public virtual void SetMobility(EComponentMobility NewMobility) {}
 }

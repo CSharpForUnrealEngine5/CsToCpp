@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("ChaosVehicleWheel.h")]
@@ -97,21 +96,21 @@ public partial class UChaosVehicleWheel : UObject {
 	///<summary>Current velocity of the wheel center (change in location over time)</summary>
 	public FVector Velocity;
 	///<summary>GetSteerAngle</summary>
-	public  float GetSteerAngle() { return default; }
+	public float GetSteerAngle() { return default; }
 	///<summary>GetRotationAngle</summary>
-	public  float GetRotationAngle() { return default; }
+	public float GetRotationAngle() { return default; }
 	///<summary>GetRotationAngularVelocity</summary>
-	public  float GetRotationAngularVelocity() { return default; }
+	public float GetRotationAngularVelocity() { return default; }
 	///<summary>GetSuspensionOffset</summary>
-	public  float GetSuspensionOffset() { return default; }
+	public float GetSuspensionOffset() { return default; }
 	///<summary>GetWheelRadius</summary>
-	public  float GetWheelRadius() { return default; }
+	public float GetWheelRadius() { return default; }
 	///<summary>GetWheelAngularVelocity</summary>
-	public  float GetWheelAngularVelocity() { return default; }
+	public float GetWheelAngularVelocity() { return default; }
 	///<summary>GetSuspensionAxis</summary>
-	public  FVector GetSuspensionAxis() { return default; }
+	public FVector GetSuspensionAxis() { return default; }
 	///<summary>IsInAir</summary>
-	public  bool IsInAir() { return default; }
+	public bool IsInAir() { return default; }
 	///<summary>GetAxleType</summary>
-	public  EAxleType GetAxleType() { return default; }
+	public EAxleType GetAxleType() { return default; }
 }

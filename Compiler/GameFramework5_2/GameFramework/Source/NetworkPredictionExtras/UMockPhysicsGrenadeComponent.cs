@@ -1,11 +1,10 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("MockPhysicsGrenade.h")]
 public partial class UMockPhysicsGrenadeComponent : UNetworkPredictionPhysicsComponent {
 	public static UClass StaticClass() {return default;}
 	///<summary>FMockGrenadeOnExplode</summary>
-	public  void FMockGrenadeOnExplode() {}
+	public void FMockGrenadeOnExplode() {}
 	///<summary>OnExplode</summary>
 	public FMockGrenadeOnExplode OnExplode;
 	///<summary>FuseTimeSeconds</summary>

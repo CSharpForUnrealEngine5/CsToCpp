@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>A ListView that presents the contents as a set of tiles all uniformly sized.</summary>
@@ -6,13 +5,13 @@ using CSharpToCpp.Utilities;
 public partial class UTileView : UListView {
 	public static UClass StaticClass() {return default;}
 	///<summary>Sets the height of every tile entry</summary>
-	public  void SetEntryHeight(float NewHeight) {}
+	public void SetEntryHeight(float NewHeight) {}
 	///<summary>Sets the width of every tile entry</summary>
-	public  void SetEntryWidth(float NewWidth) {}
+	public void SetEntryWidth(float NewWidth) {}
 	///<summary>Gets the height of tile entries</summary>
-	public  float GetEntryHeight() { return default; }
+	public float GetEntryHeight() { return default; }
 	///<summary>Gets the width of tile entries</summary>
-	public  float GetEntryWidth() { return default; }
+	public float GetEntryWidth() { return default; }
 	///<summary>The height of each tile</summary>
 	public float EntryHeight;
 	///<summary>The width of each tile</summary>

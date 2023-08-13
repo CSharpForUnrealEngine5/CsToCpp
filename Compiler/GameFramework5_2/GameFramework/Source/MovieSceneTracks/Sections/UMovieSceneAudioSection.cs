@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Audio section, for use in the audio track, or by attached audio objects</summary>
@@ -6,13 +5,13 @@ using CSharpToCpp.Utilities;
 public partial class UMovieSceneAudioSection : UMovieSceneSection {
 	public static UClass StaticClass() {return default;}
 	///<summary>Sets this section&#39;s sound</summary>
-	public  void SetSound(USoundBase InSound) {}
+	public void SetSound(USoundBase InSound) {}
 	///<summary>Gets the sound for this section</summary>
-	public  USoundBase GetSound() { return default; }
+	public USoundBase GetSound() { return default; }
 	///<summary>Set the offset into the beginning of the audio clip</summary>
-	public  void SetStartOffset(FFrameNumber InStartOffset) {}
+	public void SetStartOffset(FFrameNumber InStartOffset) {}
 	///<summary>Get the offset into the beginning of the audio clip</summary>
-	public  FFrameNumber GetStartOffset() { return default; }
+	public FFrameNumber GetStartOffset() { return default; }
 	///<summary>The sound cue or wave that this section plays</summary>
 	public USoundBase Sound;
 	///<summary>The offset into the beginning of the audio clip</summary>

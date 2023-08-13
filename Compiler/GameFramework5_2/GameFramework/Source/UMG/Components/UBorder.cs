@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>A border is a container widget that can contain one child widget, providing an opportunity</summary>
@@ -38,27 +37,27 @@ public partial class UBorder : UContentWidget {
 	///<summary>OnMouseDoubleClickEvent</summary>
 	public FOnPointerEvent OnMouseDoubleClickEvent;
 	///<summary>SetContentColorAndOpacity</summary>
-	public  void SetContentColorAndOpacity(FLinearColor InContentColorAndOpacity) {}
+	public void SetContentColorAndOpacity(FLinearColor InContentColorAndOpacity) {}
 	///<summary>SetPadding</summary>
-	public  void SetPadding(FMargin InPadding) {}
+	public void SetPadding(FMargin InPadding) {}
 	///<summary>SetHorizontalAlignment</summary>
-	public  void SetHorizontalAlignment(EHorizontalAlignment InHorizontalAlignment) {}
+	public void SetHorizontalAlignment(EHorizontalAlignment InHorizontalAlignment) {}
 	///<summary>SetVerticalAlignment</summary>
-	public  void SetVerticalAlignment(EVerticalAlignment InVerticalAlignment) {}
+	public void SetVerticalAlignment(EVerticalAlignment InVerticalAlignment) {}
 	///<summary>SetBrushColor</summary>
-	public  void SetBrushColor(FLinearColor InBrushColor) {}
+	public void SetBrushColor(FLinearColor InBrushColor) {}
 	///<summary>SetBrush</summary>
-	public  void SetBrush(FSlateBrush InBrush) {}
+	public void SetBrush(FSlateBrush InBrush) {}
 	///<summary>SetBrushFromAsset</summary>
-	public  void SetBrushFromAsset(USlateBrushAsset Asset) {}
+	public void SetBrushFromAsset(USlateBrushAsset Asset) {}
 	///<summary>SetBrushFromTexture</summary>
-	public  void SetBrushFromTexture(UTexture2D Texture) {}
+	public void SetBrushFromTexture(UTexture2D Texture) {}
 	///<summary>SetBrushFromMaterial</summary>
-	public  void SetBrushFromMaterial(UMaterialInterface Material) {}
+	public void SetBrushFromMaterial(UMaterialInterface Material) {}
 	///<summary>SetShowEffectWhenDisabled</summary>
-	public  void SetShowEffectWhenDisabled(bool bInShowEffectWhenDisabled) {}
+	public void SetShowEffectWhenDisabled(bool bInShowEffectWhenDisabled) {}
 	///<summary>GetDynamicMaterial</summary>
-	public  UMaterialInstanceDynamic GetDynamicMaterial() { return default; }
+	public UMaterialInstanceDynamic GetDynamicMaterial() { return default; }
 	///<summary>Sets the DesiredSizeScale of this border.</summary>
-	public  void SetDesiredSizeScale(FVector2D InScale) {}
+	public void SetDesiredSizeScale(FVector2D InScale) {}
 }

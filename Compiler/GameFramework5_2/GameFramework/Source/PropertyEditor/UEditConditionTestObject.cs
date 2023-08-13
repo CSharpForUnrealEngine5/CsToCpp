@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Test object for edit condition property checks</summary>
@@ -24,27 +23,27 @@ public partial class UEditConditionTestObject : UObject {
 	///<summary>WeakObjectPtr</summary>
 	public TWeakObjectPtr<UObject> WeakObjectPtr;
 	///<summary>Used in test cases that should fail, should not be able to execute a void function in edit condition</summary>
-	public  void VoidFunction() {}
+	public void VoidFunction() {}
 	///<summary>GetBoolFunction</summary>
-	public  bool GetBoolFunction() { return default; }
+	public bool GetBoolFunction() { return default; }
 	///<summary>GetEnumFunction</summary>
-	public  EditConditionTestEnum GetEnumFunction() { return default; }
+	public EditConditionTestEnum GetEnumFunction() { return default; }
 	///<summary>GetByteEnumFunction</summary>
-	public  EditConditionByteEnum GetByteEnumFunction() { return default; }
+	public EditConditionByteEnum GetByteEnumFunction() { return default; }
 	///<summary>GetDoubleFunction</summary>
-	public  double GetDoubleFunction() { return default; }
+	public double GetDoubleFunction() { return default; }
 	///<summary>GetIntegerFunction</summary>
-	public  int GetIntegerFunction() { return default; }
+	public int GetIntegerFunction() { return default; }
 	///<summary>GetUintBitfieldFunction</summary>
-	public  byte GetUintBitfieldFunction() { return default; }
+	public byte GetUintBitfieldFunction() { return default; }
 	///<summary>GetUObjectPtrFunction</summary>
-	public  UObject GetUObjectPtrFunction() { return default; }
+	public UObject GetUObjectPtrFunction() { return default; }
 	///<summary>GetSoftClassPtrFunction</summary>
-	public  TSoftObjectPtr<UClass> GetSoftClassPtrFunction() { return default; }
+	public TSoftObjectPtr<UClass> GetSoftClassPtrFunction() { return default; }
 	///<summary>GetWeakObjectPtrFunction</summary>
-	public  TWeakObjectPtr<UObject> GetWeakObjectPtrFunction() { return default; }
+	public TWeakObjectPtr<UObject> GetWeakObjectPtrFunction() { return default; }
 	///<summary>Used in test cases that should fail, should not be able to execute a void function in edit condition</summary>
-	public  void StaticVoidFunction() {}
+	public void StaticVoidFunction() {}
 	///<summary>StaticGetBoolFunction</summary>
 	public static bool StaticGetBoolFunction() { return default; }
 	///<summary>StaticGetEnumFunction</summary>

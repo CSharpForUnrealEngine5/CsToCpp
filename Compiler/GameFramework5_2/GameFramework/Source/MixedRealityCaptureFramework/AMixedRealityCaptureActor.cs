@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("MixedRealityCaptureActor.h")]
@@ -15,13 +14,13 @@ public partial class AMixedRealityCaptureActor : AActor {
 	///<summary>If true the capture texture will automatically be applied to the Spectator Screen.</summary>
 	public bool bAutoBroadcast;
 	///<summary>SetAutoBroadcast</summary>
-	public  void SetAutoBroadcast(bool bNewValue) {}
+	public void SetAutoBroadcast(bool bNewValue) {}
 	///<summary>IsBroadcasting</summary>
-	public  bool IsBroadcasting() { return default; }
+	public bool IsBroadcasting() { return default; }
 	///<summary>GetCaptureTexture</summary>
-	public  UTexture GetCaptureTexture() { return default; }
+	public UTexture GetCaptureTexture() { return default; }
 	///<summary>OnTargetDestroyed</summary>
-	public  void OnTargetDestroyed(AActor DestroyedActor) {}
+	public void OnTargetDestroyed(AActor DestroyedActor) {}
 	///<summary>DebugVisualizerMesh</summary>
 	public UStaticMesh DebugVisualizerMesh;
 }

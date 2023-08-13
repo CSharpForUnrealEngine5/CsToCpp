@@ -1,9 +1,8 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("EditorUtilityObject.h")]
 public partial class UEditorUtilityObject : UObject {
 	public static UClass StaticClass() {return default;}
 	///<summary>Standard function to execute</summary>
-	public  void Run() {}
+	public void Run() {}
 }

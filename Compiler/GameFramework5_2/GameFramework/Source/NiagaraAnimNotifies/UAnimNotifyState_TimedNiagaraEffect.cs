@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Timed Niagara Effect Notify</summary>
@@ -16,5 +15,5 @@ public partial class UAnimNotifyState_TimedNiagaraEffect : UAnimNotifyState {
 	///<summary>Whether the Niagara system should be immediately destroyed at the end of the notify state or be allowed to finish</summary>
 	public bool bDestroyAtEnd;
 	///<summary>Return FXSystemComponent created from SpawnEffect</summary>
-	public  UFXSystemComponent GetSpawnedEffect(UMeshComponent MeshComp) { return default; }
+	public UFXSystemComponent GetSpawnedEffect(UMeshComponent MeshComp) { return default; }
 }

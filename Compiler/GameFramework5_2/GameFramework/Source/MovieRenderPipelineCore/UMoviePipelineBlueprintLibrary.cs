@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("MoviePipelineBlueprintLibrary.h")]
@@ -17,13 +16,13 @@ public partial class UMoviePipelineBlueprintLibrary : UBlueprintFunctionLibrary 
 	///<summary>GetCurrentSegmentState</summary>
 	public static EMovieRenderShotState GetCurrentSegmentState(UMoviePipeline InMoviePipeline) { return default; }
 	///<summary>GetJobName</summary>
-	public static string GetJobName(UMoviePipeline InMoviePipeline) { return default; }
+	public static FText GetJobName(UMoviePipeline InMoviePipeline) { return default; }
 	///<summary>GetJobAuthor</summary>
-	public static string GetJobAuthor(UMoviePipeline InMoviePipeline) { return default; }
+	public static FText GetJobAuthor(UMoviePipeline InMoviePipeline) { return default; }
 	///<summary>GetOverallOutputFrames</summary>
 	public static void GetOverallOutputFrames(UMoviePipeline InMoviePipeline,int OutCurrentIndex,int OutTotalCount) {}
 	///<summary>GetCurrentSegmentName</summary>
-	public static void GetCurrentSegmentName(UMoviePipeline InMoviePipeline,string OutOuterName,string OutInnerName) {}
+	public static void GetCurrentSegmentName(UMoviePipeline InMoviePipeline,FText OutOuterName,FText OutInnerName) {}
 	///<summary>GetOverallSegmentCounts</summary>
 	public static void GetOverallSegmentCounts(UMoviePipeline InMoviePipeline,int OutCurrentIndex,int OutTotalCount) {}
 	///<summary>GetCurrentSegmentWorkMetrics</summary>
@@ -65,5 +64,5 @@ public partial class UMoviePipelineBlueprintLibrary : UBlueprintFunctionLibrary 
 	///<summary>GetCurrentExecutorShot</summary>
 	public static UMoviePipelineExecutorShot GetCurrentExecutorShot(UMoviePipeline InMoviePipeline) { return default; }
 	///<summary>Get a string to represent the Changelist Number for the burn in. This can be driven by a Modular Feature if you want to permanently replace it with different information.</summary>
-	public static string GetMoviePipelineEngineChangelistLabel(UMoviePipeline InMoviePipeline) { return default; }
+	public static FText GetMoviePipelineEngineChangelistLabel(UMoviePipeline InMoviePipeline) { return default; }
 }

@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Component for applying a post-process lens distortion effect to a CineCameraComponent on the same actor</summary>
@@ -6,61 +5,61 @@ using CSharpToCpp.Utilities;
 public partial class ULensComponent : UActorComponent {
 	public static UClass StaticClass() {return default;}
 	///<summary>Get the LensFile picker used by this component</summary>
-	public  FLensFilePicker GetLensFilePicker() { return default; }
+	public FLensFilePicker GetLensFilePicker() { return default; }
 	///<summary>Get the LensFile used by this component</summary>
-	public  ULensFile GetLensFile() { return default; }
+	public ULensFile GetLensFile() { return default; }
 	///<summary>Set the LensFile picker used by this component</summary>
-	public  void SetLensFilePicker(FLensFilePicker LensFile) {}
+	public void SetLensFilePicker(FLensFilePicker LensFile) {}
 	///<summary>Set the LensFile used by this component</summary>
-	public  void SetLensFile(ULensFile LensFile) {}
+	public void SetLensFile(ULensFile LensFile) {}
 	///<summary>Get the evaluation mode used to evaluate the LensFile</summary>
-	public  EFIZEvaluationMode GetFIZEvaluationMode() { return default; }
+	public EFIZEvaluationMode GetFIZEvaluationMode() { return default; }
 	///<summary>Set the evaluation mode used to evaluate the LensFile</summary>
-	public  void SetFIZEvaluationMode(EFIZEvaluationMode Mode) {}
+	public void SetFIZEvaluationMode(EFIZEvaluationMode Mode) {}
 	///<summary>Get the evaluation mode used to evaluate the LensFile</summary>
-	public  float GetOverscanMultiplier() { return default; }
+	public float GetOverscanMultiplier() { return default; }
 	///<summary>Set the LensFile used by this component</summary>
-	public  void SetOverscanMultiplier(float Multiplier) {}
+	public void SetOverscanMultiplier(float Multiplier) {}
 	///<summary>Get the filmback override setting</summary>
-	public  EFilmbackOverrideSource GetFilmbackOverrideSetting() { return default; }
+	public EFilmbackOverrideSource GetFilmbackOverrideSetting() { return default; }
 	///<summary>Set the filmback override setting</summary>
-	public  void SetFilmbackOverrideSetting(EFilmbackOverrideSource Setting) {}
+	public void SetFilmbackOverrideSetting(EFilmbackOverrideSource Setting) {}
 	///<summary>Get the cropped filmback (only relevant if the filmback override setting is set to use the CroppedFilmback</summary>
-	public  FCameraFilmbackSettings GetCroppedFilmback() { return default; }
+	public FCameraFilmbackSettings GetCroppedFilmback() { return default; }
 	///<summary>Set the cropped filmback (only relevant if the filmback override setting is set to use the CroppedFilmback</summary>
-	public  void SetCroppedFilmback(FCameraFilmbackSettings Filmback) {}
+	public void SetCroppedFilmback(FCameraFilmbackSettings Filmback) {}
 	///<summary>Returns true if nodal offset will be automatically applied during this component&#39;s tick, false otherwise</summary>
-	public  bool ShouldApplyNodalOffsetOnTick() { return default; }
+	public bool ShouldApplyNodalOffsetOnTick() { return default; }
 	///<summary>Set whether nodal offset should be automatically applied during this component&#39;s tick</summary>
-	public  void SetApplyNodalOffsetOnTick(bool bApplyNodalOffset) {}
+	public void SetApplyNodalOffsetOnTick(bool bApplyNodalOffset) {}
 	///<summary>Get the distortion source setting</summary>
-	public  EDistortionSource GetDistortionSource() { return default; }
+	public EDistortionSource GetDistortionSource() { return default; }
 	///<summary>Set the distortion source setting</summary>
-	public  void SetDistortionSource(EDistortionSource Source) {}
+	public void SetDistortionSource(EDistortionSource Source) {}
 	///<summary>Whether distortion should be applied to the target camera</summary>
-	public  bool ShouldApplyDistortion() { return default; }
+	public bool ShouldApplyDistortion() { return default; }
 	///<summary>Set whether distortion should be applied to the target camera</summary>
-	public  void SetApplyDistortion(bool bApply) {}
+	public void SetApplyDistortion(bool bApply) {}
 	///<summary>Get the current lens model</summary>
-	public  UClass GetLensModel() { return default; }
+	public UClass GetLensModel() { return default; }
 	///<summary>Set the current lens model</summary>
-	public  void SetLensModel(UClass Model) {}
+	public void SetLensModel(UClass Model) {}
 	///<summary>Get the current distortion state</summary>
-	public  FLensDistortionState GetDistortionState() { return default; }
+	public FLensDistortionState GetDistortionState() { return default; }
 	///<summary>Set the current distortion state</summary>
-	public  void SetDistortionState(FLensDistortionState State) {}
+	public void SetDistortionState(FLensDistortionState State) {}
 	///<summary>Reset the distortion state to defaults to represent &quot;no distortion&quot;</summary>
-	public  void ClearDistortionState() {}
+	public void ClearDistortionState() {}
 	///<summary>Get the original (not adjusted for overscan) focal length of the camera</summary>
-	public  float GetOriginalFocalLength() { return default; }
+	public float GetOriginalFocalLength() { return default; }
 	///<summary>Get the data used by this component to evaluate the LensFile</summary>
-	public  FLensFileEvaluationInputs GetLensFileEvaluationInputs() { return default; }
+	public FLensFileEvaluationInputs GetLensFileEvaluationInputs() { return default; }
 	///<summary>Returns true if nodal offset was applied during the current tick, false otherwise</summary>
-	public  bool WasNodalOffsetAppliedThisTick() { return default; }
+	public bool WasNodalOffsetAppliedThisTick() { return default; }
 	///<summary>Returns true if distortion was evaluated this tick</summary>
-	public  bool WasDistortionEvaluated() { return default; }
+	public bool WasDistortionEvaluated() { return default; }
 	///<summary>Manually apply nodal offset to the specified component.</summary>
-	public  void ApplyNodalOffset(USceneComponent ComponentToOffset,bool bUseManualInputs/*=false*/,float ManualFocusInput/*=0.0f*/,float ManualZoomInput/*=0.0f*/) {}
+	public void ApplyNodalOffset(USceneComponent ComponentToOffset,bool bUseManualInputs/*=false*/,float ManualFocusInput/*=0.0f*/,float ManualZoomInput/*=0.0f*/) {}
 	///<summary>Lens File used to drive distortion with current camera settings</summary>
 	public FLensFilePicker LensFilePicker;
 	///<summary>Specify how the Lens File should be evaluated</summary>

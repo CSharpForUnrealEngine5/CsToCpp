@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Due to BulkSerialize we can&#39;t edit the struct, so we must deprecated this one and create a new one</summary>

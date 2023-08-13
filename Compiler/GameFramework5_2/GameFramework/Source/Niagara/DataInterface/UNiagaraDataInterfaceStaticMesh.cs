@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Data Interface allowing sampling of static meshes.</summary>
@@ -30,5 +29,5 @@ public partial class UNiagaraDataInterfaceStaticMesh : UNiagaraDataInterface {
 	///<summary>List of filtered sockets to use.</summary>
 	public TArray<string> FilteredSockets;
 	///<summary>OnSourceEndPlay</summary>
-	public  void OnSourceEndPlay(AActor InSource,EEndPlayReason Reason) {}
+	public void OnSourceEndPlay(AActor InSource,EEndPlayReason Reason) {}
 }

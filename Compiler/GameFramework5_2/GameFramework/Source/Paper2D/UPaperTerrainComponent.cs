@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>The terrain visualization component for an associated spline component.</summary>
@@ -26,7 +25,7 @@ public partial class UPaperTerrainComponent : UPrimitiveComponent {
 	///<summary>The extrusion thickness of collision geometry when using a 3D collision domain</summary>
 	public float CollisionThickness;
 	///<summary>Set color of the terrain</summary>
-	public  void SetTerrainColor(FLinearColor NewColor) {}
+	public void SetTerrainColor(FLinearColor NewColor) {}
 	///<summary>Description of collision</summary>
 	public UBodySetup CachedBodySetup;
 }

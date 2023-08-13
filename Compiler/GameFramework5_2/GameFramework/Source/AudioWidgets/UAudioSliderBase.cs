@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>An audio slider widget.</summary>
@@ -8,7 +7,7 @@ public partial class UAudioSliderBase : UWidget {
 	///<summary>The normalized linear (0 - 1) slider value.</summary>
 	public float Value;
 	///<summary>The text label units</summary>
-	public string UnitsText;
+	public FText UnitsText;
 	///<summary>The color to draw the text label background.</summary>
 	public FLinearColor TextLabelBackgroundColor;
 	///<summary>A bindable delegate for the TextLabelBackgroundColor.</summary>
@@ -40,33 +39,33 @@ public partial class UAudioSliderBase : UWidget {
 	///<summary>A bindable delegate for the WidgetBackgroundColor.</summary>
 	public FGetLinearColor WidgetBackgroundColorDelegate;
 	///<summary>Get output value from normalized linear (0 - 1) based on internal lin to output mapping.</summary>
-	public  float GetOutputValue(float InSliderValue) { return default; }
+	public float GetOutputValue(float InSliderValue) { return default; }
 	///<summary>Get normalized linear (0 - 1) value from output based on internal lin to output mapping.</summary>
-	public  float GetLinValue(float OutputValue) { return default; }
+	public float GetLinValue(float OutputValue) { return default; }
 	///<summary>Get normalized linear (0 - 1) slider value from output based on internal lin to output mapping.</summary>
-	public  float GetSliderValue(float OutputValue) { return default; }
+	public float GetSliderValue(float OutputValue) { return default; }
 	///<summary>Sets the label background color</summary>
-	public  void SetTextLabelBackgroundColor(FSlateColor InColor) {}
+	public void SetTextLabelBackgroundColor(FSlateColor InColor) {}
 	///<summary>Sets the units text</summary>
-	public  void SetUnitsText(string Units) {}
+	public void SetUnitsText(FText Units) {}
 	///<summary>Sets whether the units text is read only</summary>
-	public  void SetUnitsTextReadOnly(bool bIsReadOnly) {}
+	public void SetUnitsTextReadOnly(bool bIsReadOnly) {}
 	///<summary>Sets whether the value text is read only</summary>
-	public  void SetValueTextReadOnly(bool bIsReadOnly) {}
+	public void SetValueTextReadOnly(bool bIsReadOnly) {}
 	///<summary>If true, show text label only on hover; if false always show label.</summary>
-	public  void SetShowLabelOnlyOnHover(bool bShowLabelOnlyOnHover) {}
+	public void SetShowLabelOnlyOnHover(bool bShowLabelOnlyOnHover) {}
 	///<summary>Sets whether to show the units text</summary>
-	public  void SetShowUnitsText(bool bShowUnitsText) {}
+	public void SetShowUnitsText(bool bShowUnitsText) {}
 	///<summary>The slider&#39;s orientation.</summary>
 	public EOrientation Orientation;
 	///<summary>Called when the value is changed by slider or typing.</summary>
 	public FOnFloatValueChangedEvent OnValueChanged;
 	///<summary>Sets the slider background color</summary>
-	public  void SetSliderBackgroundColor(FLinearColor InValue) {}
+	public void SetSliderBackgroundColor(FLinearColor InValue) {}
 	///<summary>Sets the slider bar color</summary>
-	public  void SetSliderBarColor(FLinearColor InValue) {}
+	public void SetSliderBarColor(FLinearColor InValue) {}
 	///<summary>Sets the slider thumb color</summary>
-	public  void SetSliderThumbColor(FLinearColor InValue) {}
+	public void SetSliderThumbColor(FLinearColor InValue) {}
 	///<summary>Sets the widget background color</summary>
-	public  void SetWidgetBackgroundColor(FLinearColor InValue) {}
+	public void SetWidgetBackgroundColor(FLinearColor InValue) {}
 }

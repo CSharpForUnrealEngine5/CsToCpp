@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>@class UTargetingSelectionTask_Trace</summary>
@@ -6,17 +5,17 @@ using CSharpToCpp.Utilities;
 public partial class UTargetingSelectionTask_Trace : UTargetingTask {
 	public static UClass StaticClass() {return default;}
 	///<summary>Native Event to get the source location for the Trace</summary>
-	public  FVector GetSourceLocation(FTargetingRequestHandle TargetingHandle) { return default; }
+	public FVector GetSourceLocation(FTargetingRequestHandle TargetingHandle) { return default; }
 	///<summary>Native Event to get a source location offset for the Trace</summary>
-	public  FVector GetSourceOffset(FTargetingRequestHandle TargetingHandle) { return default; }
+	public FVector GetSourceOffset(FTargetingRequestHandle TargetingHandle) { return default; }
 	///<summary>Native Event to get the direction for the Trace</summary>
-	public  FVector GetTraceDirection(FTargetingRequestHandle TargetingHandle) { return default; }
+	public FVector GetTraceDirection(FTargetingRequestHandle TargetingHandle) { return default; }
 	///<summary>Native Event to get the length for the Trace</summary>
-	public  float GetTraceLength(FTargetingRequestHandle TargetingHandle) { return default; }
+	public float GetTraceLength(FTargetingRequestHandle TargetingHandle) { return default; }
 	///<summary>Native Event to get the swept trace radius (only called if bSweptTrace is true)</summary>
-	public  float GetSweptTraceRadius(FTargetingRequestHandle TargetingHandle) { return default; }
+	public float GetSweptTraceRadius(FTargetingRequestHandle TargetingHandle) { return default; }
 	///<summary>Native Event to get additional actors the Trace should ignore</summary>
-	public  void GetAdditionalActorsToIgnore(FTargetingRequestHandle TargetingHandle,TArray<AActor> OutAdditionalActorsToIgnore) {}
+	public void GetAdditionalActorsToIgnore(FTargetingRequestHandle TargetingHandle,TArray<AActor> OutAdditionalActorsToIgnore) {}
 	///<summary>The trace type to use</summary>
 	public ETargetingTraceType TraceType;
 	///<summary>The trace channel to use</summary>

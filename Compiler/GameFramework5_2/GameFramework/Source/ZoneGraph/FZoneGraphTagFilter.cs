@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Filter passes if any of the &#39;AnyTags&#39;, and all of the &#39;AllTags&#39;, and none of the &#39;NotTags&#39; are present.</summary>

@@ -1,13 +1,12 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Elements/PCGExecuteBlueprint.h")]
 public partial class UPCGBlueprintSettings : UPCGSettings {
 	public static UClass StaticClass() {return default;}
 	///<summary>SetElementType</summary>
-	public  void SetElementType(UClass InElementType,UPCGBlueprintElement ElementInstance) {}
+	public void SetElementType(UClass InElementType,UPCGBlueprintElement ElementInstance) {}
 	///<summary>GetElementType</summary>
-	public  UClass GetElementType() { return default; }
+	public UClass GetElementType() { return default; }
 	///<summary>BlueprintElement_DEPRECATED</summary>
 	public UClass BlueprintElement_DEPRECATED;
 	///<summary>BlueprintElementType</summary>

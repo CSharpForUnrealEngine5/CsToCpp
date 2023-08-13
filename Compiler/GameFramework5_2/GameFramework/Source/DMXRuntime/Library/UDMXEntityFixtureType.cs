@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Class to describe a type of Fixture. Fixture Patches can be created from Fixture Types (see UDMXEntityFixturePatch::ParentFixtureTypeTemplate).</summary>
@@ -10,7 +9,7 @@ public partial class UDMXEntityFixtureType : UDMXEntity {
 	///<summary>Removes a Fixture Type from a DMX Library</summary>
 	public static void RemoveFixtureTypeFromLibrary(FDMXEntityFixtureTypeRef FixtureTypeRef) {}
 	///<summary>SetModesFromDMXImport</summary>
-	public  void SetModesFromDMXImport(UDMXImport DMXImportAsset) {}
+	public void SetModesFromDMXImport(UDMXImport DMXImportAsset) {}
 	///<summary>The GDTF file from which the Fixture Type was setup</summary>
 	public UDMXImport DMXImport;
 	///<summary>The Category of the Fixture, useful for Filtering</summary>

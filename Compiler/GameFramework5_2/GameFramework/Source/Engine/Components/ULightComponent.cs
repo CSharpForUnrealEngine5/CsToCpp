@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Components/LightComponent.h")]
@@ -77,57 +76,57 @@ public partial class ULightComponent : ULightComponentBase {
 	///<summary>Controls how large of an offset ray traced shadows have from the receiving surface as the camera gets further away.</summary>
 	public float RayStartOffsetDepthScale;
 	///<summary>Set intensity of the light</summary>
-	public  void SetIntensity(float NewIntensity) {}
+	public void SetIntensity(float NewIntensity) {}
 	///<summary>SetIndirectLightingIntensity</summary>
-	public  void SetIndirectLightingIntensity(float NewIntensity) {}
+	public void SetIndirectLightingIntensity(float NewIntensity) {}
 	///<summary>SetVolumetricScatteringIntensity</summary>
-	public  void SetVolumetricScatteringIntensity(float NewIntensity) {}
+	public void SetVolumetricScatteringIntensity(float NewIntensity) {}
 	///<summary>Set color of the light</summary>
-	public  void SetLightColor(FLinearColor NewLightColor,bool bSRGB/*=true*/) {}
+	public void SetLightColor(FLinearColor NewLightColor,bool bSRGB/*=true*/) {}
 	///<summary>Set color of the light</summary>
-	public  void SetLightFColor(FColor NewLightColor) {}
+	public void SetLightFColor(FColor NewLightColor) {}
 	///<summary>SetTemperature</summary>
-	public  void SetTemperature(float NewTemperature) {}
+	public void SetTemperature(float NewTemperature) {}
 	///<summary>SetUseTemperature</summary>
-	public  void SetUseTemperature(bool bNewValue) {}
+	public void SetUseTemperature(bool bNewValue) {}
 	///<summary>SetLightFunctionMaterial</summary>
-	public  void SetLightFunctionMaterial(UMaterialInterface NewLightFunctionMaterial) {}
+	public void SetLightFunctionMaterial(UMaterialInterface NewLightFunctionMaterial) {}
 	///<summary>SetLightFunctionScale</summary>
-	public  void SetLightFunctionScale(FVector NewLightFunctionScale) {}
+	public void SetLightFunctionScale(FVector NewLightFunctionScale) {}
 	///<summary>SetLightFunctionFadeDistance</summary>
-	public  void SetLightFunctionFadeDistance(float NewLightFunctionFadeDistance) {}
+	public void SetLightFunctionFadeDistance(float NewLightFunctionFadeDistance) {}
 	///<summary>SetLightFunctionDisabledBrightness</summary>
-	public  void SetLightFunctionDisabledBrightness(float NewValue) {}
+	public void SetLightFunctionDisabledBrightness(float NewValue) {}
 	///<summary>SetAffectDynamicIndirectLighting</summary>
-	public  void SetAffectDynamicIndirectLighting(bool bNewValue) {}
+	public void SetAffectDynamicIndirectLighting(bool bNewValue) {}
 	///<summary>SetAffectTranslucentLighting</summary>
-	public  void SetAffectTranslucentLighting(bool bNewValue) {}
+	public void SetAffectTranslucentLighting(bool bNewValue) {}
 	///<summary>SetTransmission</summary>
-	public  void SetTransmission(bool bNewValue) {}
+	public void SetTransmission(bool bNewValue) {}
 	///<summary>SetEnableLightShaftBloom</summary>
-	public  void SetEnableLightShaftBloom(bool bNewValue) {}
+	public void SetEnableLightShaftBloom(bool bNewValue) {}
 	///<summary>SetBloomScale</summary>
-	public  void SetBloomScale(float NewValue) {}
+	public void SetBloomScale(float NewValue) {}
 	///<summary>SetBloomThreshold</summary>
-	public  void SetBloomThreshold(float NewValue) {}
+	public void SetBloomThreshold(float NewValue) {}
 	///<summary>SetBloomMaxBrightness</summary>
-	public  void SetBloomMaxBrightness(float NewValue) {}
+	public void SetBloomMaxBrightness(float NewValue) {}
 	///<summary>SetBloomTint</summary>
-	public  void SetBloomTint(FColor NewValue) {}
+	public void SetBloomTint(FColor NewValue) {}
 	///<summary>SetIESTexture</summary>
-	public  void SetIESTexture(UTextureLightProfile NewValue) {}
+	public void SetIESTexture(UTextureLightProfile NewValue) {}
 	///<summary>SetUseIESBrightness</summary>
-	public  void SetUseIESBrightness(bool bNewValue) {}
+	public void SetUseIESBrightness(bool bNewValue) {}
 	///<summary>SetIESBrightnessScale</summary>
-	public  void SetIESBrightnessScale(float NewValue) {}
+	public void SetIESBrightnessScale(float NewValue) {}
 	///<summary>SetShadowBias</summary>
-	public  void SetShadowBias(float NewValue) {}
+	public void SetShadowBias(float NewValue) {}
 	///<summary>SetShadowSlopeBias</summary>
-	public  void SetShadowSlopeBias(float NewValue) {}
+	public void SetShadowSlopeBias(float NewValue) {}
 	///<summary>SetSpecularScale</summary>
-	public  void SetSpecularScale(float NewValue) {}
+	public void SetSpecularScale(float NewValue) {}
 	///<summary>SetForceCachedShadowsForMovablePrimitives</summary>
-	public  void SetForceCachedShadowsForMovablePrimitives(bool bNewValue) {}
+	public void SetForceCachedShadowsForMovablePrimitives(bool bNewValue) {}
 	///<summary>SetLightingChannels</summary>
-	public  void SetLightingChannels(bool bChannel0,bool bChannel1,bool bChannel2) {}
+	public void SetLightingChannels(bool bChannel0,bool bChannel1,bool bChannel2) {}
 }

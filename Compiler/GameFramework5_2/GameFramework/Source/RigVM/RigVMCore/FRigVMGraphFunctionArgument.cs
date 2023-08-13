@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("RigVMCore/RigVMGraphFunctionDefinition.h")]
@@ -11,5 +10,5 @@ public partial struct FRigVMGraphFunctionArgument {
 	public ERigVMPinDirection Direction;
 	public string DefaultValue;
 	public bool bIsConst;
-	public TMap<string,string> PathToTooltip;
+	public TMap<string,FText> PathToTooltip;
 }

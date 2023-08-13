@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Dynamic checkerboad actor</summary>
@@ -6,7 +5,7 @@ using CSharpToCpp.Utilities;
 public partial class ACameraCalibrationCheckerboard : AActor {
 	public static UClass StaticClass() {return default;}
 	///<summary>Rebuilds the instanced components that make up this checkerboard</summary>
-	public  void Rebuild() {}
+	public void Rebuild() {}
 	///<summary>Root component, gives the Actor a transform</summary>
 	public USceneComponent Root;
 	///<summary>TopLeft calibration point</summary>

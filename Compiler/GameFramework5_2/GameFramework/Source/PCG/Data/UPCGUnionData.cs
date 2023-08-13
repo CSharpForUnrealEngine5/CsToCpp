@@ -1,13 +1,12 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Data/PCGUnionData.h")]
 public partial class UPCGUnionData : UPCGSpatialDataWithPointCache {
 	public static UClass StaticClass() {return default;}
 	///<summary>Initialize</summary>
-	public  void Initialize(UPCGSpatialData InA,UPCGSpatialData InB) {}
+	public void Initialize(UPCGSpatialData InA,UPCGSpatialData InB) {}
 	///<summary>AddData</summary>
-	public  void AddData(UPCGSpatialData InData) {}
+	public void AddData(UPCGSpatialData InData) {}
 	///<summary>Data</summary>
 	public TArray<UPCGSpatialData> Data;
 	///<summary>FirstNonTrivialTransformData</summary>

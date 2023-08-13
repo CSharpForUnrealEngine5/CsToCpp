@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>An audio meter widget.</summary>
@@ -6,7 +5,7 @@ using CSharpToCpp.Utilities;
 public partial class UAudioMeter : UWidget {
 	public static UClass StaticClass() {return default;}
 	///<summary>FGetMeterChannelInfo</summary>
-	public  TArray<FMeterChannelInfo> FGetMeterChannelInfo() { return default; }
+	public TArray<FMeterChannelInfo> FGetMeterChannelInfo() { return default; }
 	///<summary>The current meter value to display.</summary>
 	public TArray<FMeterChannelInfo> MeterChannelInfo;
 	///<summary>A bindable delegate to allow logic to drive the value of the meter</summary>
@@ -30,21 +29,21 @@ public partial class UAudioMeter : UWidget {
 	///<summary>The color to draw the meter scale label.</summary>
 	public FLinearColor MeterScaleLabelColor;
 	///<summary>Gets the current linear value of the meter.</summary>
-	public  TArray<FMeterChannelInfo> GetMeterChannelInfo() { return default; }
+	public TArray<FMeterChannelInfo> GetMeterChannelInfo() { return default; }
 	///<summary>Sets the current meter values.</summary>
-	public  void SetMeterChannelInfo(TArray<FMeterChannelInfo> InMeterChannelInfo) {}
+	public void SetMeterChannelInfo(TArray<FMeterChannelInfo> InMeterChannelInfo) {}
 	///<summary>Sets the background color</summary>
-	public  void SetBackgroundColor(FLinearColor InValue) {}
+	public void SetBackgroundColor(FLinearColor InValue) {}
 	///<summary>Sets the meter background color</summary>
-	public  void SetMeterBackgroundColor(FLinearColor InValue) {}
+	public void SetMeterBackgroundColor(FLinearColor InValue) {}
 	///<summary>Sets the meter value color</summary>
-	public  void SetMeterValueColor(FLinearColor InValue) {}
+	public void SetMeterValueColor(FLinearColor InValue) {}
 	///<summary>Sets the meter peak color</summary>
-	public  void SetMeterPeakColor(FLinearColor InValue) {}
+	public void SetMeterPeakColor(FLinearColor InValue) {}
 	///<summary>Sets the meter clipping color</summary>
-	public  void SetMeterClippingColor(FLinearColor InValue) {}
+	public void SetMeterClippingColor(FLinearColor InValue) {}
 	///<summary>Sets the meter scale color</summary>
-	public  void SetMeterScaleColor(FLinearColor InValue) {}
+	public void SetMeterScaleColor(FLinearColor InValue) {}
 	///<summary>Sets the meter scale color</summary>
-	public  void SetMeterScaleLabelColor(FLinearColor InValue) {}
+	public void SetMeterScaleLabelColor(FLinearColor InValue) {}
 }

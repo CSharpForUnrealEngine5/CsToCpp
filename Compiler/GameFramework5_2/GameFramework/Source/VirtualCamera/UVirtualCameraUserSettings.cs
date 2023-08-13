@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Virtual Camera User Settings</summary>
@@ -28,41 +27,41 @@ public partial class UVirtualCameraUserSettings : UObject {
 	///<summary>ActionMappings</summary>
 	public TArray<FInputActionKeyMapping> ActionMappings;
 	///<summary>Get FocusInterpSpeed variable</summary>
-	public  float GetFocusInterpSpeed() { return default; }
+	public float GetFocusInterpSpeed() { return default; }
 	///<summary>Set FocusInterpSpeed variable</summary>
-	public  void SetFocusInterpSpeed(float InFocusInterpSpeed) {}
+	public void SetFocusInterpSpeed(float InFocusInterpSpeed) {}
 	///<summary>Get JoysticksSpeed variable</summary>
-	public  float GetJoysticksSpeed() { return default; }
+	public float GetJoysticksSpeed() { return default; }
 	///<summary>Set JoysticksSpeed variable</summary>
-	public  void SetJoysticksSpeed(float InJoysticksSpeed) {}
+	public void SetJoysticksSpeed(float InJoysticksSpeed) {}
 	///<summary>Get MaxJoysticksSpeed variable</summary>
-	public  float GetMaxJoysticksSpeed() { return default; }
+	public float GetMaxJoysticksSpeed() { return default; }
 	///<summary>Set MaxJoysticksSpeed variable</summary>
-	public  void SetMaxJoysticksSpeed(float InMaxJoysticksSpeed) {}
+	public void SetMaxJoysticksSpeed(float InMaxJoysticksSpeed) {}
 	///<summary>Get bIsMapGrayscale variable</summary>
-	public  bool IsMapGrayscle() { return default; }
+	public bool IsMapGrayscle() { return default; }
 	///<summary>Set bIsMapGrayscale variable</summary>
-	public  void SetIsMapGrayscle(bool bInIsMapGrayscle) {}
+	public void SetIsMapGrayscle(bool bInIsMapGrayscle) {}
 	///<summary>Get bOverrideCameraSettingsOnTeleportToScreenshot variable</summary>
-	public  bool GetShouldOverrideCameraSettingsOnTeleport() { return default; }
+	public bool GetShouldOverrideCameraSettingsOnTeleport() { return default; }
 	///<summary>Set bOverrideCameraSettingsOnTeleportToScreenshot variable</summary>
-	public  void SetShouldOverrideCameraSettingsOnTeleport(bool bInOverrideCameraSettings) {}
+	public void SetShouldOverrideCameraSettingsOnTeleport(bool bInOverrideCameraSettings) {}
 	///<summary>Get VirtualCameraFilmback variable</summary>
-	public  string GetSavedVirtualCameraFilmbackPresetName() { return default; }
+	public string GetSavedVirtualCameraFilmbackPresetName() { return default; }
 	///<summary>Set VirtualCameraFilmback variable</summary>
-	public  void SetSavedVirtualCameraFilmbackPresetName(string InFilmback) {}
+	public void SetSavedVirtualCameraFilmbackPresetName(string InFilmback) {}
 	///<summary>Get bDisplayFilmLeader variable</summary>
-	public  bool GetShouldDisplayFilmLeader() { return default; }
+	public bool GetShouldDisplayFilmLeader() { return default; }
 	///<summary>Set bDisplayFilmLeader variable</summary>
-	public  void SetShouldDisplayFilmLeader(bool bInDisplayFilmLeader) {}
+	public void SetShouldDisplayFilmLeader(bool bInDisplayFilmLeader) {}
 	///<summary>Get bTeleportOnStart variable</summary>
-	public  bool GetTeleportOnStart() { return default; }
+	public bool GetTeleportOnStart() { return default; }
 	///<summary>Set bTeleportOnStart variable</summary>
-	public  void SetTeleportOnStart(bool bInTeleportOnStart) {}
+	public void SetTeleportOnStart(bool bInTeleportOnStart) {}
 	///<summary>Fills the Axis/Action mappings with assosiated gamepad bindings</summary>
-	public  void InjectGamepadKeybinds() {}
+	public void InjectGamepadKeybinds() {}
 	///<summary>Retrieve all VirtualCamera action mappings by a certain name.</summary>
-	public  void GetActionMappingsByName(string InActionName,TArray<FInputActionKeyMapping> OutMappings) {}
+	public void GetActionMappingsByName(string InActionName,TArray<FInputActionKeyMapping> OutMappings) {}
 	///<summary>Retrieve all VirtualCamera axis mappings by a certain name.</summary>
-	public  void GetAxisMappingsByName(string InAxisName,TArray<FInputAxisKeyMapping> OutMappings) {}
+	public void GetAxisMappingsByName(string InAxisName,TArray<FInputAxisKeyMapping> OutMappings) {}
 }

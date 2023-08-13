@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>ProjectileMovementComponent updates the position of another component during its tick.</summary>
@@ -6,9 +5,9 @@ using CSharpToCpp.Utilities;
 public partial class UProjectileMovementComponent : UMovementComponent {
 	public static UClass StaticClass() {return default;}
 	///<summary>FOnProjectileBounceDelegate</summary>
-	public  void FOnProjectileBounceDelegate(FHitResult ImpactResult,FVector ImpactVelocity) {}
+	public void FOnProjectileBounceDelegate(FHitResult ImpactResult,FVector ImpactVelocity) {}
 	///<summary>FOnProjectileStopDelegate</summary>
-	public  void FOnProjectileStopDelegate(FHitResult ImpactResult) {}
+	public void FOnProjectileStopDelegate(FHitResult ImpactResult) {}
 	///<summary>Initial speed of projectile. If greater than zero, this will override the initial Velocity value and instead treat Velocity as a direction.</summary>
 	public float InitialSpeed;
 	///<summary>Limit on speed of projectile (0 means no limit).</summary>
@@ -54,7 +53,7 @@ public partial class UProjectileMovementComponent : UMovementComponent {
 	///<summary>When bounce angle affects friction, apply at least this fraction of normal friction.</summary>
 	public float MinFrictionFraction;
 	///<summary>Returns true if velocity magnitude is less than BounceVelocityStopSimulatingThreshold.</summary>
-	public  bool IsVelocityUnderSimulationThreshold() { return default; }
+	public bool IsVelocityUnderSimulationThreshold() { return default; }
 	///<summary>Called when projectile impacts something and bounces are enabled.</summary>
 	public FOnProjectileBounceDelegate OnProjectileBounce;
 	///<summary>Called when projectile has come to a stop (velocity is below simulation threshold, bounces are disabled, or it is forcibly stopped).</summary>
@@ -64,9 +63,9 @@ public partial class UProjectileMovementComponent : UMovementComponent {
 	///<summary>The current target we are homing towards. Can only be set at runtime (when projectile is spawned or updating).</summary>
 	public TWeakObjectPtr<USceneComponent> HomingTargetComponent;
 	///<summary>Sets the velocity to the new value, rotated into Actor space.</summary>
-	public  void SetVelocityInLocalSpace(FVector NewVelocity) {}
+	public virtual void SetVelocityInLocalSpace(FVector NewVelocity) {}
 	///<summary>Clears the reference to UpdatedComponent, fires stop event (OnProjectileStop), and stops ticking (if bAutoUpdateTickRegistration is true).</summary>
-	public  void StopSimulating(FHitResult HitResult) {}
+	public virtual void StopSimulating(FHitResult HitResult) {}
 	///<summary>Max time delta for each discrete simulation step.</summary>
 	public float MaxSimulationTimeStep;
 	///<summary>Max number of iterations used for each discrete simulation step.</summary>
@@ -74,11 +73,11 @@ public partial class UProjectileMovementComponent : UMovementComponent {
 	///<summary>On the first few bounces (up to this amount), allow extra iterations over MaxSimulationIterations if necessary.</summary>
 	public int BounceAdditionalIterations;
 	///<summary>Assigns the component that will be used for network interpolation/smoothing. It is expected that this is a component attached somewhere below the UpdatedComponent.</summary>
-	public  void SetInterpolatedComponent(USceneComponent Component) {}
+	public virtual void SetInterpolatedComponent(USceneComponent Component) {}
 	///<summary>Moves the UpdatedComponent, which is also the interpolation target for the interpolated component. If there is not interpolated component, this simply moves UpdatedComponent.</summary>
-	public  void MoveInterpolationTarget(FVector NewLocation,FRotator NewRotation) {}
+	public virtual void MoveInterpolationTarget(FVector NewLocation,FRotator NewRotation) {}
 	///<summary>Resets interpolation so that interpolated component snaps back to the initial location/rotation without any additional offsets.</summary>
-	public  void ResetInterpolation() {}
+	public virtual void ResetInterpolation() {}
 	///<summary>&quot;Time&quot; over which most of the location interpolation occurs, when the UpdatedComponent (target) moves ahead of the interpolated component.</summary>
 	public float InterpLocationTime;
 	///<summary>&quot;Time&quot; over which most of the rotation interpolation occurs, when the UpdatedComponent (target) moves ahead of the interpolated component.</summary>
@@ -88,7 +87,7 @@ public partial class UProjectileMovementComponent : UMovementComponent {
 	///<summary>Max distance behind UpdatedComponent beyond which the interpolated component is snapped to the target location instead.</summary>
 	public float InterpLocationSnapToTargetDistance;
 	///<summary>Returns whether interpolation is complete because the target has been reached. True when interpolation is disabled.</summary>
-	public  bool IsInterpolationComplete() { return default; }
+	public bool IsInterpolationComplete() { return default; }
 	///<summary>Don&#39;t allow velocity magnitude to exceed MaxSpeed, if MaxSpeed is non-zero.</summary>
-	public  FVector LimitVelocity(FVector NewVelocity) { return default; }
+	public FVector LimitVelocity(FVector NewVelocity) { return default; }
 }

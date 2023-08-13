@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Niagara Emitters are particle spawners that can be reused for different effects by putting them into Niagara Systems.</summary>
@@ -14,9 +13,9 @@ public partial class UNiagaraEmitter : UObject {
 	///<summary>TemplateSpecification</summary>
 	public ENiagaraScriptTemplateSpecification TemplateSpecification;
 	///<summary>TemplateAssetDescription</summary>
-	public string TemplateAssetDescription;
+	public FText TemplateAssetDescription;
 	///<summary>Category to collate this emitter into for &quot;add new emitter&quot; dialogs.</summary>
-	public string Category;
+	public FText Category;
 	///<summary>Internal: The thumbnail image.</summary>
 	public UTexture2D ThumbnailImage;
 	///<summary>If this emitter is exposed to the library, or should be explicitly hidden.</summary>

@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Represents the Point Cloud asset</summary>
@@ -28,123 +27,123 @@ public partial class ULidarPointCloud : UObject {
 	///<summary>NewBodySetup</summary>
 	public UBodySetup NewBodySetup;
 	///<summary>End UObject Interface.</summary>
-	public  int GetNumLODs() { return default; }
+	public int GetNumLODs() { return default; }
 	///<summary>GetNumPoints</summary>
-	public  long GetNumPoints() { return default; }
+	public long GetNumPoints() { return default; }
 	///<summary>GetNumVisiblePoints</summary>
-	public  long GetNumVisiblePoints() { return default; }
+	public long GetNumVisiblePoints() { return default; }
 	///<summary>GetNumNodes</summary>
-	public  int GetNumNodes() { return default; }
+	public int GetNumNodes() { return default; }
 	///<summary>GetEstimatedPointSpacing</summary>
-	public  float GetEstimatedPointSpacing() { return default; }
+	public float GetEstimatedPointSpacing() { return default; }
 	///<summary>Returns the amount of memory in MB used to store the point cloud.</summary>
-	public  int GetDataSize() { return default; }
+	public int GetDataSize() { return default; }
 	///<summary>GetSourcePath</summary>
-	public  string GetSourcePath() { return default; }
+	public string GetSourcePath() { return default; }
 	///<summary>IsOptimizedForDynamicData</summary>
-	public  bool IsOptimizedForDynamicData() { return default; }
+	public bool IsOptimizedForDynamicData() { return default; }
 	///<summary>GetBounds</summary>
-	public  FBox GetBounds(bool bUseOriginalCoordinates/*=false*/) { return default; }
+	public FBox GetBounds(bool bUseOriginalCoordinates/*=false*/) { return default; }
 	///<summary>Recalculates and updates points bounds.</summary>
-	public  void RefreshBounds() {}
+	public void RefreshBounds() {}
 	///<summary>Returns true, if the Octree has collision built</summary>
-	public  bool HasCollisionData() { return default; }
+	public bool HasCollisionData() { return default; }
 	///<summary>Returns the number of polygons in the collider or 0 if no collider is built</summary>
-	public  int GetColliderPolys() { return default; }
+	public int GetColliderPolys() { return default; }
 	///<summary>RefreshRendering</summary>
-	public  void RefreshRendering() {}
+	public void RefreshRendering() {}
 	///<summary>Returns true if there are any points within the given sphere.</summary>
-	public  bool HasPointsInSphere(FVector Center,float Radius,bool bVisibleOnly) { return default; }
+	public bool HasPointsInSphere(FVector Center,float Radius,bool bVisibleOnly) { return default; }
 	///<summary>Returns true if there are any points within the given box.</summary>
-	public  bool HasPointsInBox(FVector Center,FVector Extent,bool bVisibleOnly) { return default; }
+	public bool HasPointsInBox(FVector Center,FVector Extent,bool bVisibleOnly) { return default; }
 	///<summary>Returns true if there are any points hit by the given ray.</summary>
-	public  bool HasPointsByRay(FVector Origin,FVector Direction,float Radius,bool bVisibleOnly) { return default; }
+	public bool HasPointsByRay(FVector Origin,FVector Direction,float Radius,bool bVisibleOnly) { return default; }
 	///<summary>Returns an array with copies of points from the tree</summary>
-	public  TArray<FLidarPointCloudPoint> GetPointsAsCopies(bool bReturnWorldSpace,int StartIndex/*=0*/,int Count/*=-1*/) { return default; }
+	public TArray<FLidarPointCloudPoint> GetPointsAsCopies(bool bReturnWorldSpace,int StartIndex/*=0*/,int Count/*=-1*/) { return default; }
 	///<summary>Returns an array with copies of points within the given sphere</summary>
-	public  TArray<FLidarPointCloudPoint> GetPointsInSphereAsCopies(FVector Center,float Radius,bool bVisibleOnly,bool bReturnWorldSpace) { return default; }
+	public TArray<FLidarPointCloudPoint> GetPointsInSphereAsCopies(FVector Center,float Radius,bool bVisibleOnly,bool bReturnWorldSpace) { return default; }
 	///<summary>Returns an array with copies of points within the given box</summary>
-	public  TArray<FLidarPointCloudPoint> GetPointsInBoxAsCopies(FVector Center,FVector Extent,bool bVisibleOnly,bool bReturnWorldSpace) { return default; }
+	public TArray<FLidarPointCloudPoint> GetPointsInBoxAsCopies(FVector Center,FVector Extent,bool bVisibleOnly,bool bReturnWorldSpace) { return default; }
 	///<summary>Performs a raycast test against the point cloud. Returns the pointer if hit or nullptr otherwise.</summary>
-	public  bool LineTraceSingle(FVector Origin,FVector Direction,float Radius,bool bVisibleOnly,FLidarPointCloudPoint PointHit) { return default; }
+	public bool LineTraceSingle(FVector Origin,FVector Direction,float Radius,bool bVisibleOnly,FLidarPointCloudPoint PointHit) { return default; }
 	///<summary>Performs a raycast test against the point cloud.</summary>
-	public  bool LineTraceMulti(FVector Origin,FVector Direction,float Radius,bool bVisibleOnly,bool bReturnWorldSpace,TArray<FLidarPointCloudPoint> OutHits) { return default; }
+	public bool LineTraceMulti(FVector Origin,FVector Direction,float Radius,bool bVisibleOnly,bool bReturnWorldSpace,TArray<FLidarPointCloudPoint> OutHits) { return default; }
 	///<summary>Sets visibility of points within the given sphere.</summary>
-	public  void SetVisibilityOfPointsInSphere(bool bNewVisibility,FVector Center,float Radius) {}
+	public void SetVisibilityOfPointsInSphere(bool bNewVisibility,FVector Center,float Radius) {}
 	///<summary>Sets visibility of points within the given box.</summary>
-	public  void SetVisibilityOfPointsInBox(bool bNewVisibility,FVector Center,FVector Extent) {}
+	public void SetVisibilityOfPointsInBox(bool bNewVisibility,FVector Center,FVector Extent) {}
 	///<summary>Sets visibility of the first point hit by the given ray.</summary>
-	public  void SetVisibilityOfFirstPointByRay(bool bNewVisibility,FVector Origin,FVector Direction,float Radius) {}
+	public void SetVisibilityOfFirstPointByRay(bool bNewVisibility,FVector Origin,FVector Direction,float Radius) {}
 	///<summary>Sets visibility of points hit by the given ray.</summary>
-	public  void SetVisibilityOfPointsByRay(bool bNewVisibility,FVector Origin,FVector Direction,float Radius) {}
+	public void SetVisibilityOfPointsByRay(bool bNewVisibility,FVector Origin,FVector Direction,float Radius) {}
 	///<summary>Marks all points hidden</summary>
-	public  void HideAll() {}
+	public void HideAll() {}
 	///<summary>Marks all points visible</summary>
-	public  void UnhideAll() {}
+	public void UnhideAll() {}
 	///<summary>Applies the given color to all points</summary>
-	public  void ApplyColorToAllPoints(FColor NewColor,bool bVisibleOnly) {}
+	public void ApplyColorToAllPoints(FColor NewColor,bool bVisibleOnly) {}
 	///<summary>Applies the given color to all points within the sphere</summary>
-	public  void ApplyColorToPointsInSphere(FColor NewColor,FVector Center,float Radius,bool bVisibleOnly) {}
+	public void ApplyColorToPointsInSphere(FColor NewColor,FVector Center,float Radius,bool bVisibleOnly) {}
 	///<summary>Applies the given color to all points within the box</summary>
-	public  void ApplyColorToPointsInBox(FColor NewColor,FVector Center,FVector Extent,bool bVisibleOnly) {}
+	public void ApplyColorToPointsInBox(FColor NewColor,FVector Center,FVector Extent,bool bVisibleOnly) {}
 	///<summary>Applies the given color to the first point hit by the given ray</summary>
-	public  void ApplyColorToFirstPointByRay(FColor NewColor,FVector Origin,FVector Direction,float Radius,bool bVisibleOnly) {}
+	public void ApplyColorToFirstPointByRay(FColor NewColor,FVector Origin,FVector Direction,float Radius,bool bVisibleOnly) {}
 	///<summary>Applies the given color to all points hit by the given ray</summary>
-	public  void ApplyColorToPointsByRay(FColor NewColor,FVector Origin,FVector Direction,float Radius,bool bVisibleOnly) {}
+	public void ApplyColorToPointsByRay(FColor NewColor,FVector Origin,FVector Direction,float Radius,bool bVisibleOnly) {}
 	///<summary>This should to be called if any manual modification to individual points&#39; visibility has been made.</summary>
-	public  void MarkPointVisibilityDirty() {}
+	public void MarkPointVisibilityDirty() {}
 	///<summary>SetSourcePath</summary>
-	public  void SetSourcePath(string NewSourcePath) {}
+	public void SetSourcePath(string NewSourcePath) {}
 	///<summary>SetOptimizedForDynamicData</summary>
-	public  void SetOptimizedForDynamicData(bool bNewOptimizedForDynamicData) {}
+	public void SetOptimizedForDynamicData(bool bNewOptimizedForDynamicData) {}
 	///<summary>Re-initializes the asset with new bounds.</summary>
-	public  void Initialize(FBox NewBounds) {}
+	public void Initialize(FBox NewBounds) {}
 	///<summary>SetOptimalCollisionError</summary>
-	public  void SetOptimalCollisionError() {}
+	public void SetOptimalCollisionError() {}
 	///<summary>Builds collision mesh for the cloud, using current collision settings</summary>
-	public  void BuildCollision() {}
+	public void BuildCollision() {}
 	///<summary>BuildCollisionWithCallback</summary>
-	public  void BuildCollisionWithCallback(UObject WorldContextObject,FLatentActionInfo LatentInfo,bool bSuccess) {}
+	public void BuildCollisionWithCallback(UObject WorldContextObject,FLatentActionInfo LatentInfo,bool bSuccess) {}
 	///<summary>Removes collision mesh from the cloud.</summary>
-	public  void RemoveCollision() {}
+	public void RemoveCollision() {}
 	///<summary>Returns true, if the cloud is fully and persistently loaded.</summary>
-	public  bool IsFullyLoaded() { return default; }
+	public bool IsFullyLoaded() { return default; }
 	///<summary>Persistently loads all nodes.</summary>
-	public  void LoadAllNodes() {}
+	public void LoadAllNodes() {}
 	///<summary>Applies given offset to this point cloud.</summary>
-	public  void SetLocationOffset(FVector Offset) {}
+	public void SetLocationOffset(FVector Offset) {}
 	///<summary>Centers this cloud</summary>
-	public  void CenterPoints() {}
+	public void CenterPoints() {}
 	///<summary>Restores original coordinates</summary>
-	public  void RestoreOriginalCoordinates() {}
+	public void RestoreOriginalCoordinates() {}
 	///<summary>Returns true, if the cloud has been centered.</summary>
-	public  bool IsCentered() { return default; }
+	public bool IsCentered() { return default; }
 	///<summary>Re-imports the cloud from it&#39;s original source file, overwriting any current point information.</summary>
-	public  void Reimport(UObject WorldContextObject,bool bUseAsync,FLatentActionInfo LatentInfo,ELidarPointCloudAsyncMode AsyncMode,float Progress) {}
+	public void Reimport(UObject WorldContextObject,bool bUseAsync,FLatentActionInfo LatentInfo,ELidarPointCloudAsyncMode AsyncMode,float Progress) {}
 	///<summary>Exports this Point Cloud to the given filename.</summary>
-	public  bool Export(string Filename) { return default; }
+	public bool Export(string Filename) { return default; }
 	///<summary>Inserts the given point into the Octree structure.</summary>
-	public  void InsertPoint(FLidarPointCloudPoint Point,ELidarPointCloudDuplicateHandling DuplicateHandling,bool bRefreshPointsBounds,FVector Translation) {}
+	public void InsertPoint(FLidarPointCloudPoint Point,ELidarPointCloudDuplicateHandling DuplicateHandling,bool bRefreshPointsBounds,FVector Translation) {}
 	///<summary>Inserts group of points into the Octree structure, multi-threaded.</summary>
-	public  void InsertPoints(TArray<FLidarPointCloudPoint> Points,ELidarPointCloudDuplicateHandling DuplicateHandling,bool bRefreshPointsBounds,FVector Translation) {}
+	public void InsertPoints(TArray<FLidarPointCloudPoint> Points,ELidarPointCloudDuplicateHandling DuplicateHandling,bool bRefreshPointsBounds,FVector Translation) {}
 	///<summary>Attempts to remove the given point.</summary>
-	public  void RemovePoint(FLidarPointCloudPoint Point) {}
+	public void RemovePoint(FLidarPointCloudPoint Point) {}
 	///<summary>Removes all points within the given sphere</summary>
-	public  void RemovePointsInSphere(FVector Center,float Radius,bool bVisibleOnly) {}
+	public void RemovePointsInSphere(FVector Center,float Radius,bool bVisibleOnly) {}
 	///<summary>Removes all points within the given box</summary>
-	public  void RemovePointsInBox(FVector Center,FVector Extent,bool bVisibleOnly) {}
+	public void RemovePointsInBox(FVector Center,FVector Extent,bool bVisibleOnly) {}
 	///<summary>Removes the first point hit by the given ray</summary>
-	public  void RemoveFirstPointByRay(FVector Origin,FVector Direction,float Radius,bool bVisibleOnly) {}
+	public void RemoveFirstPointByRay(FVector Origin,FVector Direction,float Radius,bool bVisibleOnly) {}
 	///<summary>Removes all points hit by the given ray</summary>
-	public  void RemovePointsByRay(FVector Origin,FVector Direction,float Radius,bool bVisibleOnly) {}
+	public void RemovePointsByRay(FVector Origin,FVector Direction,float Radius,bool bVisibleOnly) {}
 	///<summary>Removes all hidden points</summary>
-	public  void RemoveHiddenPoints() {}
+	public void RemoveHiddenPoints() {}
 	///<summary>Reinitializes the cloud with the new set of data.</summary>
-	public  bool SetData(TArray<FLidarPointCloudPoint> Points) { return default; }
+	public bool SetData(TArray<FLidarPointCloudPoint> Points) { return default; }
 	///<summary>Merges this point cloud with the ones provided</summary>
-	public  void Merge(TArray<ULidarPointCloud> PointCloudsToMerge) {}
+	public void Merge(TArray<ULidarPointCloud> PointCloudsToMerge) {}
 	///<summary>Merges this point cloud with the one provided</summary>
-	public  void MergeSingle(ULidarPointCloud PointCloudToMerge) {}
+	public void MergeSingle(ULidarPointCloud PointCloudToMerge) {}
 	///<summary>Calculates Normals for this point cloud</summary>
-	public  void CalculateNormals(FLatentActionInfo LatentInfo) {}
+	public void CalculateNormals(FLatentActionInfo LatentInfo) {}
 }

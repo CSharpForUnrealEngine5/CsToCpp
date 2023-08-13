@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Sound/SoundWave.h")]
@@ -23,9 +22,9 @@ public partial class USoundWave : USoundBase {
 	///<summary>bUseBinkAudio</summary>
 	public bool bUseBinkAudio;
 	///<summary>Returns the sound&#39;s asset compression type.</summary>
-	public  ESoundAssetCompressionType GetSoundAssetCompressionType() { return default; }
+	public ESoundAssetCompressionType GetSoundAssetCompressionType() { return default; }
 	///<summary>Procedurally set the compression type.</summary>
-	public  void SetSoundAssetCompressionType(ESoundAssetCompressionType InSoundAssetCompressionType,bool bMarkDirty/*=true*/) {}
+	public void SetSoundAssetCompressionType(ESoundAssetCompressionType InSoundAssetCompressionType,bool bMarkDirty/*=true*/) {}
 	///<summary>Specify a sound to use for the baked analysis. Will default to this USoundWave if not set.</summary>
 	public USoundWave OverrideSoundToUseForAnalysis;
 	///<summary>Whether or not we should treat the sound wave used for analysis (this or the override) as looping while performing analysis.</summary>

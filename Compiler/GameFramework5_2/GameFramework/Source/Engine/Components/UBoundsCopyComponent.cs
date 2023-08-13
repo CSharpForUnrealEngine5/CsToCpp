@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Component used to copy the bounds of another Actor.</summary>
@@ -22,7 +21,7 @@ public partial class UBoundsCopyComponent : UActorComponent {
 	///<summary>bCopyZBounds</summary>
 	public bool bCopyZBounds;
 	///<summary>Copy the rotation from BoundsSourceActor to this component</summary>
-	public  void SetRotation() {}
+	public void SetRotation() {}
 	///<summary>Set this component transform to include the BoundsSourceActor bounds</summary>
-	public  void SetTransformToBounds() {}
+	public void SetTransformToBounds() {}
 }

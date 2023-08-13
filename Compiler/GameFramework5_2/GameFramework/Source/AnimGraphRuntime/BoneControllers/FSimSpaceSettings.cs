@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Settings for the system which passes motion of the simulation&#39;s space into the simulation. This allows the simulation to pass a</summary>

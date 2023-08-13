@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>UDeformableCollisionsComponent</summary>
@@ -6,9 +5,9 @@ using CSharpToCpp.Utilities;
 public partial class UDeformableCollisionsComponent : UDeformablePhysicsComponent {
 	public static UClass StaticClass() {return default;}
 	///<summary>AddStaticMeshComponent</summary>
-	public  void AddStaticMeshComponent(UStaticMeshComponent StaticMeshComponent) {}
+	public void AddStaticMeshComponent(UStaticMeshComponent StaticMeshComponent) {}
 	///<summary>RemoveStaticMeshComponent</summary>
-	public  void RemoveStaticMeshComponent(UStaticMeshComponent StaticMeshComponent) {}
+	public void RemoveStaticMeshComponent(UStaticMeshComponent StaticMeshComponent) {}
 	///<summary>CollisionBodies</summary>
 	public TArray<UStaticMeshComponent> CollisionBodies;
 }

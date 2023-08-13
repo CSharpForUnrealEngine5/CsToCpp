@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>WaterBodyExclusionVolume allows players not enter surface swimming when touching a water volume</summary>

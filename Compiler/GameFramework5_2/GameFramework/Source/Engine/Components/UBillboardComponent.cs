@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>A 2d texture that will be rendered always facing the camera.</summary>
@@ -30,11 +29,11 @@ public partial class UBillboardComponent : UPrimitiveComponent {
 	///<summary>bShowLockedLocation</summary>
 	public bool bShowLockedLocation;
 	///<summary>Change the sprite texture used by this component</summary>
-	public  void SetSprite(UTexture2D NewSprite) {}
+	public virtual void SetSprite(UTexture2D NewSprite) {}
 	///<summary>Change the sprite&#39;s UVs</summary>
-	public  void SetUV(int NewU,int NewUL,int NewV,int NewVL) {}
+	public virtual void SetUV(int NewU,int NewUL,int NewV,int NewVL) {}
 	///<summary>Change the sprite texture and the UV&#39;s used by this component</summary>
-	public  void SetSpriteAndUV(UTexture2D NewSprite,int NewU,int NewUL,int NewV,int NewVL) {}
+	public virtual void SetSpriteAndUV(UTexture2D NewSprite,int NewU,int NewUL,int NewV,int NewVL) {}
 	///<summary>Changed the opacity masked used by this component</summary>
-	public  void SetOpacityMaskRefVal(float RefVal) {}
+	public void SetOpacityMaskRefVal(float RefVal) {}
 }

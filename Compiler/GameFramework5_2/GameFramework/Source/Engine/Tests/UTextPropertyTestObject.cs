@@ -1,13 +1,12 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Tests/TextPropertyTestObject.h")]
 public partial class UTextPropertyTestObject : UObject {
 	public static UClass StaticClass() {return default;}
 	///<summary>DefaultedText</summary>
-	public string DefaultedText;
+	public FText DefaultedText;
 	///<summary>UndefaultedText</summary>
-	public string UndefaultedText;
+	public FText UndefaultedText;
 	///<summary>TransientText</summary>
-	public string TransientText;
+	public FText TransientText;
 }

@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>A simple arrow rendered using lines. Useful for indicating which way an object is facing.</summary>
@@ -26,19 +25,19 @@ public partial class UArrowComponent : UPrimitiveComponent {
 	///<summary>Whether to use in-editor arrow scaling (i.e. to be affected by the global arrow scale)</summary>
 	public bool bUseInEditorScaling;
 	///<summary>Updates the arrow&#39;s colour, and tells it to refresh</summary>
-	public  void SetArrowColor(FLinearColor NewColor) {}
+	public virtual void SetArrowColor(FLinearColor NewColor) {}
 	///<summary>SetArrowFColor</summary>
-	public  void SetArrowFColor(FColor NewColor) {}
+	public void SetArrowFColor(FColor NewColor) {}
 	///<summary>SetArrowSize</summary>
-	public  void SetArrowSize(float NewSize) {}
+	public void SetArrowSize(float NewSize) {}
 	///<summary>SetArrowLength</summary>
-	public  void SetArrowLength(float NewLength) {}
+	public void SetArrowLength(float NewLength) {}
 	///<summary>SetScreenSize</summary>
-	public  void SetScreenSize(float NewScreenSize) {}
+	public void SetScreenSize(float NewScreenSize) {}
 	///<summary>SetIsScreenSizeScaled</summary>
-	public  void SetIsScreenSizeScaled(bool bNewValue) {}
+	public void SetIsScreenSizeScaled(bool bNewValue) {}
 	///<summary>SetTreatAsASprite</summary>
-	public  void SetTreatAsASprite(bool bNewValue) {}
+	public void SetTreatAsASprite(bool bNewValue) {}
 	///<summary>SetUseInEditorScaling</summary>
-	public  void SetUseInEditorScaling(bool bNewValue) {}
+	public void SetUseInEditorScaling(bool bNewValue) {}
 }

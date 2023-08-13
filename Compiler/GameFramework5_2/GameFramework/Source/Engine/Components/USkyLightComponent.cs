@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Components/SkyLightComponent.h")]
@@ -47,31 +46,31 @@ public partial class USkyLightComponent : ULightComponentBase {
 	///<summary>When enabled, visualize on screen the sky cube map as well as the integrate half hemisphere of luminance, together with the sky illuminance contribution at the position of the skylight component.</summary>
 	public bool bShowIlluminanceMeter;
 	///<summary>SetIntensity</summary>
-	public  void SetIntensity(float NewIntensity) {}
+	public void SetIntensity(float NewIntensity) {}
 	///<summary>SetIndirectLightingIntensity</summary>
-	public  void SetIndirectLightingIntensity(float NewIntensity) {}
+	public void SetIndirectLightingIntensity(float NewIntensity) {}
 	///<summary>SetVolumetricScatteringIntensity</summary>
-	public  void SetVolumetricScatteringIntensity(float NewIntensity) {}
+	public void SetVolumetricScatteringIntensity(float NewIntensity) {}
 	///<summary>Set color of the light</summary>
-	public  void SetLightColor(FLinearColor NewLightColor) {}
+	public void SetLightColor(FLinearColor NewLightColor) {}
 	///<summary>Sets the cubemap used when SourceType is set to SpecifiedCubemap, and causes a skylight update on the next tick.</summary>
-	public  void SetCubemap(UTextureCube NewCubemap) {}
+	public void SetCubemap(UTextureCube NewCubemap) {}
 	///<summary>Sets the angle of the cubemap used when SourceType is set to SpecifiedCubemap and it is non static. It will cause the skylight to update on the next tick.</summary>
-	public  void SetSourceCubemapAngle(float NewValue) {}
+	public void SetSourceCubemapAngle(float NewValue) {}
 	///<summary>Creates sky lighting from a blend between two cubemaps, which is only valid when SourceType is set to SpecifiedCubemap.</summary>
-	public  void SetCubemapBlend(UTextureCube SourceCubemap,UTextureCube DestinationCubemap,float InBlendFraction) {}
+	public void SetCubemapBlend(UTextureCube SourceCubemap,UTextureCube DestinationCubemap,float InBlendFraction) {}
 	///<summary>SetLowerHemisphereColor</summary>
-	public  void SetLowerHemisphereColor(FLinearColor InLowerHemisphereColor) {}
+	public void SetLowerHemisphereColor(FLinearColor InLowerHemisphereColor) {}
 	///<summary>SetOcclusionTint</summary>
-	public  void SetOcclusionTint(FColor InTint) {}
+	public void SetOcclusionTint(FColor InTint) {}
 	///<summary>SetOcclusionContrast</summary>
-	public  void SetOcclusionContrast(float InOcclusionContrast) {}
+	public void SetOcclusionContrast(float InOcclusionContrast) {}
 	///<summary>SetOcclusionExponent</summary>
-	public  void SetOcclusionExponent(float InOcclusionExponent) {}
+	public void SetOcclusionExponent(float InOcclusionExponent) {}
 	///<summary>SetMinOcclusion</summary>
-	public  void SetMinOcclusion(float InMinOcclusion) {}
+	public void SetMinOcclusion(float InMinOcclusion) {}
 	///<summary>Recaptures the scene for the skylight.</summary>
-	public  void RecaptureSky() {}
+	public void RecaptureSky() {}
 	///<summary>BlendDestinationCubemap</summary>
 	public UTextureCube BlendDestinationCubemap;
 }

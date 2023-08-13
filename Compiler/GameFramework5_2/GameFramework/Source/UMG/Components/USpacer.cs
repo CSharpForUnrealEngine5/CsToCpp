@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>A spacer widget; it does not have a visual representation, and just provides padding between other widgets.</summary>
@@ -8,5 +7,5 @@ public partial class USpacer : UWidget {
 	///<summary>The size of the spacer</summary>
 	public FVector2D Size;
 	///<summary>Sets the size of the spacer</summary>
-	public  void SetSize(FVector2D InSize) {}
+	public void SetSize(FVector2D InSize) {}
 }

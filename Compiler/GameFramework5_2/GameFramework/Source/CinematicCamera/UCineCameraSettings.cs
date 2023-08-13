@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("CineCameraSettings.h")]
@@ -21,33 +20,33 @@ public partial class UCineCameraSettings : UDeveloperSettings {
 	///<summary>List of available crop presets</summary>
 	public TArray<FNamedPlateCropPreset> CropPresets;
 	///<summary>Gets the Lens settings associated with a given preset name</summary>
-	public  bool GetLensPresetByName(string PresetName,FCameraLensSettings LensSettings) { return default; }
+	public bool GetLensPresetByName(string PresetName,FCameraLensSettings LensSettings) { return default; }
 	///<summary>Gets the Filmback settings associated with a given preset name</summary>
-	public  bool GetFilmbackPresetByName(string PresetName,FCameraFilmbackSettings FilmbackSettings) { return default; }
+	public bool GetFilmbackPresetByName(string PresetName,FCameraFilmbackSettings FilmbackSettings) { return default; }
 	///<summary>Gets the Crop settings associated with a given preset name</summary>
-	public  bool GetCropPresetByName(string PresetName,FPlateCropSettings CropSettings) { return default; }
+	public bool GetCropPresetByName(string PresetName,FPlateCropSettings CropSettings) { return default; }
 	///<summary>GetCineCameraSettings</summary>
 	public static UCineCameraSettings GetCineCameraSettings() { return default; }
 	///<summary>Internal Blueprint Setter functions that call SaveConfig after setting the variable to ensure settings persist</summary>
-	public  void SetDefaultLensPresetName(string InDefaultLensPresetName) {}
+	public void SetDefaultLensPresetName(string InDefaultLensPresetName) {}
 	///<summary>SetDefaultLensFocalLength</summary>
-	public  void SetDefaultLensFocalLength(float InDefaultLensFocalLength) {}
+	public void SetDefaultLensFocalLength(float InDefaultLensFocalLength) {}
 	///<summary>SetDefaultLensFStop</summary>
-	public  void SetDefaultLensFStop(float InDefaultLensFStop) {}
+	public void SetDefaultLensFStop(float InDefaultLensFStop) {}
 	///<summary>SetLensPresets</summary>
-	public  void SetLensPresets(TArray<FNamedLensPreset> InLensPresets) {}
+	public void SetLensPresets(TArray<FNamedLensPreset> InLensPresets) {}
 	///<summary>SetDefaultFilmbackPreset</summary>
-	public  void SetDefaultFilmbackPreset(string InDefaultFilmbackPreset) {}
+	public void SetDefaultFilmbackPreset(string InDefaultFilmbackPreset) {}
 	///<summary>SetFilmbackPresets</summary>
-	public  void SetFilmbackPresets(TArray<FNamedFilmbackPreset> InFilmbackPresets) {}
+	public void SetFilmbackPresets(TArray<FNamedFilmbackPreset> InFilmbackPresets) {}
 	///<summary>SetDefaultCropPresetName</summary>
-	public  void SetDefaultCropPresetName(string InDefaultCropPresetName) {}
+	public void SetDefaultCropPresetName(string InDefaultCropPresetName) {}
 	///<summary>SetCropPresets</summary>
-	public  void SetCropPresets(TArray<FNamedPlateCropPreset> InCropPresets) {}
+	public void SetCropPresets(TArray<FNamedPlateCropPreset> InCropPresets) {}
 	///<summary>Functions used for the GetOptions metadata</summary>
-	public  TArray<string> GetLensPresetNames() { return default; }
+	public TArray<string> GetLensPresetNames() { return default; }
 	///<summary>GetFilmbackPresetNames</summary>
-	public  TArray<string> GetFilmbackPresetNames() { return default; }
+	public TArray<string> GetFilmbackPresetNames() { return default; }
 	///<summary>GetCropPresetNames</summary>
-	public  TArray<string> GetCropPresetNames() { return default; }
+	public TArray<string> GetCropPresetNames() { return default; }
 }

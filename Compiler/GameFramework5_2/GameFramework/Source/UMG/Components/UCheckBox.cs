@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>The checkbox widget allows you to display a toggled state of &#39;unchecked&#39;, &#39;checked&#39; and</summary>
@@ -24,19 +23,19 @@ public partial class UCheckBox : UContentWidget {
 	///<summary>Called when the checked state has changed</summary>
 	public FOnCheckBoxComponentStateChanged OnCheckStateChanged;
 	///<summary>Returns true if this button is currently pressed</summary>
-	public  bool IsPressed() { return default; }
+	public bool IsPressed() { return default; }
 	///<summary>Returns true if the checkbox is currently checked</summary>
-	public  bool IsChecked() { return default; }
+	public bool IsChecked() { return default; }
 	///<summary>Returns the full current checked state.</summary>
-	public  ECheckBoxState GetCheckedState() { return default; }
+	public ECheckBoxState GetCheckedState() { return default; }
 	///<summary>Sets the checked state.</summary>
-	public  void SetIsChecked(bool InIsChecked) {}
+	public void SetIsChecked(bool InIsChecked) {}
 	///<summary>Sets the checked state.</summary>
-	public  void SetCheckedState(ECheckBoxState InCheckedState) {}
+	public void SetCheckedState(ECheckBoxState InCheckedState) {}
 	///<summary>Sets the click method.</summary>
-	public  void SetClickMethod(EButtonClickMethod InClickMethod) {}
+	public void SetClickMethod(EButtonClickMethod InClickMethod) {}
 	///<summary>Sets the touch method.</summary>
-	public  void SetTouchMethod(EButtonTouchMethod InTouchMethod) {}
+	public void SetTouchMethod(EButtonTouchMethod InTouchMethod) {}
 	///<summary>Sets the press method.</summary>
-	public  void SetPressMethod(EButtonPressMethod InPressMethod) {}
+	public void SetPressMethod(EButtonPressMethod InPressMethod) {}
 }

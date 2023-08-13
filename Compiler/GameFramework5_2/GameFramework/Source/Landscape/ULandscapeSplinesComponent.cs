@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>ULandscapeSplinesComponent</summary>
@@ -24,5 +23,5 @@ public partial class ULandscapeSplinesComponent : UPrimitiveComponent {
 	///<summary>References to components owned by landscape splines in other levels</summary>
 	public TArray<UMeshComponent> CookedForeignMeshComponents;
 	///<summary>Get a list of spline mesh components representing this landscape spline (Editor only)</summary>
-	public  TArray<USplineMeshComponent> GetSplineMeshComponents() { return default; }
+	public TArray<USplineMeshComponent> GetSplineMeshComponents() { return default; }
 }

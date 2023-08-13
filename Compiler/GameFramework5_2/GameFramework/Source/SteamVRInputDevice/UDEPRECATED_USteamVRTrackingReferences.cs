@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("SteamVRTrackingRefComponent.h")]
@@ -9,9 +8,9 @@ public partial class UDEPRECATED_USteamVRTrackingReferences : UActorComponent {
 	///<summary>OnTrackedDeviceDeactivated</summary>
 	public FComponentTrackingDeactivatedSignature OnTrackedDeviceDeactivated;
 	///<summary>ShowTrackingReferences</summary>
-	public  bool ShowTrackingReferences(UStaticMesh TrackingReferenceMesh) { return default; }
+	public bool ShowTrackingReferences(UStaticMesh TrackingReferenceMesh) { return default; }
 	///<summary>HideTrackingReferences</summary>
-	public  void HideTrackingReferences() {}
+	public void HideTrackingReferences() {}
 	///<summary>ActiveDevicePollFrequency</summary>
 	public float ActiveDevicePollFrequency;
 	///<summary>TrackingReferenceScale</summary>

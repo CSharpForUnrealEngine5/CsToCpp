@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Subclass URemeshMeshToolProperties just so we can set default values for some properties. Setting these values in the</summary>

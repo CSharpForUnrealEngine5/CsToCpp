@@ -1,31 +1,30 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("MRMeshComponent.h")]
 public partial class UMRMeshComponent : UPrimitiveComponent {
 	public static UClass StaticClass() {return default;}
 	///<summary>IsConnected</summary>
-	public  bool IsConnected() { return default; }
+	public bool IsConnected() { return default; }
 	///<summary>Force navmesh generation to run using the current collision data.  This will run even if the collision data has not been udpated! Unless you are changing navmesh settings or similar RequestNavMeshUpdate is reccomended.</summary>
-	public  void ForceNavMeshUpdate() {}
+	public void ForceNavMeshUpdate() {}
 	///<summary>Generate nav mesh if collision data has changed since the last nav mesh generation.</summary>
-	public  void RequestNavMeshUpdate() {}
+	public void RequestNavMeshUpdate() {}
 	///<summary>Clear</summary>
-	public  void Clear() {}
+	public void Clear() {}
 	///<summary>Set the wireframe material.</summary>
-	public  void SetWireframeMaterial(UMaterialInterface InMaterial) {}
+	public virtual void SetWireframeMaterial(UMaterialInterface InMaterial) {}
 	///<summary>SetEnableMeshOcclusion</summary>
-	public  void SetEnableMeshOcclusion(bool bEnable) {}
+	public void SetEnableMeshOcclusion(bool bEnable) {}
 	///<summary>GetEnableMeshOcclusion</summary>
-	public  bool GetEnableMeshOcclusion() { return default; }
+	public bool GetEnableMeshOcclusion() { return default; }
 	///<summary>SetUseWireframe</summary>
-	public  void SetUseWireframe(bool bUseWireframe) {}
+	public void SetUseWireframe(bool bUseWireframe) {}
 	///<summary>GetUseWireframe</summary>
-	public  bool GetUseWireframe() { return default; }
+	public bool GetUseWireframe() { return default; }
 	///<summary>SetWireframeColor</summary>
-	public  void SetWireframeColor(FLinearColor InColor) {}
+	public void SetWireframeColor(FLinearColor InColor) {}
 	///<summary>GetWireframeColor</summary>
-	public  FLinearColor GetWireframeColor() { return default; }
+	public FLinearColor GetWireframeColor() { return default; }
 	///<summary>Material</summary>
 	public UMaterialInterface Material;
 	///<summary>WireframeMaterial</summary>

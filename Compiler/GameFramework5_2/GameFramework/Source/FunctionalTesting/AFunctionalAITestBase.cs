@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>AFunctionalAITestBase</summary>
@@ -28,5 +27,5 @@ public partial class AFunctionalAITestBase : AFunctionalTest {
 	///<summary>if set, ftest will postpone start until navmesh is fully generated</summary>
 	public bool bDebugNavMeshOnTimeout;
 	///<summary>IsOneOfSpawnedPawns</summary>
-	public  bool IsOneOfSpawnedPawns(AActor Actor) { return default; }
+	public virtual bool IsOneOfSpawnedPawns(AActor Actor) { return default; }
 }

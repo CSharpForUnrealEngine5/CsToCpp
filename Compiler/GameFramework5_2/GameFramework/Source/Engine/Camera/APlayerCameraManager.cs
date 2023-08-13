@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>A PlayerCameraManager is responsible for managing the camera for a particular</summary>
@@ -70,65 +69,65 @@ public partial class APlayerCameraManager : AActor {
 	///<summary>Maximum view roll, in degrees.</summary>
 	public float ViewRollMax;
 	///<summary>Implementable blueprint hook to allow a PlayerCameraManager subclass to</summary>
-	public  void PhotographyCameraModify(FVector NewCameraLocation,FVector PreviousCameraLocation,FVector OriginalCameraLocation,FVector ResultCameraLocation) {}
+	public void PhotographyCameraModify(FVector NewCameraLocation,FVector PreviousCameraLocation,FVector OriginalCameraLocation,FVector ResultCameraLocation) {}
 	///<summary>Event triggered upon entering Photography mode (before pausing, if</summary>
-	public  void OnPhotographySessionStart() {}
+	public void OnPhotographySessionStart() {}
 	///<summary>Event triggered upon leaving Photography mode (after unpausing, if</summary>
-	public  void OnPhotographySessionEnd() {}
+	public void OnPhotographySessionEnd() {}
 	///<summary>Event triggered upon the start of a multi-part photograph capture (i.e. a</summary>
-	public  void OnPhotographyMultiPartCaptureStart() {}
+	public void OnPhotographyMultiPartCaptureStart() {}
 	///<summary>Event triggered upon the end of a multi-part photograph capture, when manual</summary>
-	public  void OnPhotographyMultiPartCaptureEnd() {}
+	public void OnPhotographyMultiPartCaptureEnd() {}
 	///<summary>Blueprint hook to allow blueprints to override existing camera behavior or implement custom cameras.</summary>
-	public  bool BlueprintUpdateCamera(AActor CameraTarget,FVector NewCameraLocation,FRotator NewCameraRotation,float NewCameraFOV) { return default; }
+	public bool BlueprintUpdateCamera(AActor CameraTarget,FVector NewCameraLocation,FRotator NewCameraRotation,float NewCameraFOV) { return default; }
 	///<summary>Returns the PlayerController that owns this camera.</summary>
-	public  APlayerController GetOwningPlayerController() { return default; }
+	public virtual APlayerController GetOwningPlayerController() { return default; }
 	///<summary>Timeout in seconds used to determine when to force a call to ServerUpdateCamera</summary>
 	public float ServerUpdateCameraTimeout;
 	///<summary>Creates and initializes a new camera modifier of the specified class.</summary>
-	public  UCameraModifier AddNewCameraModifier(UClass ModifierClass) { return default; }
+	public virtual UCameraModifier AddNewCameraModifier(UClass ModifierClass) { return default; }
 	///<summary>Returns camera modifier for this camera of the given class, if it exists.</summary>
-	public  UCameraModifier FindCameraModifierByClass(UClass ModifierClass) { return default; }
+	public virtual UCameraModifier FindCameraModifierByClass(UClass ModifierClass) { return default; }
 	///<summary>Removes the given camera modifier from this camera (if it&#39;s on the camera in the first place) and discards it.</summary>
-	public  bool RemoveCameraModifier(UCameraModifier ModifierToRemove) { return default; }
+	public virtual bool RemoveCameraModifier(UCameraModifier ModifierToRemove) { return default; }
 	///<summary>Returns the camera&#39;s current full FOV angle, in degrees.</summary>
-	public  float GetFOVAngle() { return default; }
+	public virtual float GetFOVAngle() { return default; }
 	///<summary>Returns camera&#39;s current rotation.</summary>
-	public  FRotator GetCameraRotation() { return default; }
+	public virtual FRotator GetCameraRotation() { return default; }
 	///<summary>Returns camera&#39;s current location.</summary>
-	public  FVector GetCameraLocation() { return default; }
+	public virtual FVector GetCameraLocation() { return default; }
 	///<summary>Creates a camera lens effect of the given class on this camera.</summary>
-	public  object /*ReturnValue*/ AddGenericCameraLensEffect(UClass LensEffectEmitterClass) { return default; }
+	public virtual object /*ReturnValue*/ AddGenericCameraLensEffect(UClass LensEffectEmitterClass) { return default; }
 	///<summary>Removes the given lens effect from the camera.</summary>
-	public  void RemoveGenericCameraLensEffect(object /*Emitter*/ Emitter) {}
+	public virtual void RemoveGenericCameraLensEffect(object /*Emitter*/ Emitter) {}
 	///<summary>Removes all camera lens effects.</summary>
-	public  void ClearCameraLensEffects() {}
+	public virtual void ClearCameraLensEffects() {}
 	///<summary>AddCameraLensEffect</summary>
-	public  AEmitterCameraLensEffectBase AddCameraLensEffect(UClass LensEffectEmitterClass) { return default; }
+	public virtual AEmitterCameraLensEffectBase AddCameraLensEffect(UClass LensEffectEmitterClass) { return default; }
 	///<summary>RemoveCameraLensEffect</summary>
-	public  void RemoveCameraLensEffect(AEmitterCameraLensEffectBase Emitter) {}
+	public virtual void RemoveCameraLensEffect(AEmitterCameraLensEffectBase Emitter) {}
 	///<summary>Plays a camera shake on this camera.</summary>
-	public  UCameraShakeBase StartCameraShake(UClass ShakeClass,float Scale/*=1.0f*/,ECameraShakePlaySpace PlaySpace/*=ECameraShakePlaySpace.CameraLocal*/,FRotator UserPlaySpaceRot/*=FRotator.ZeroRotator*/) { return default; }
+	public virtual UCameraShakeBase StartCameraShake(UClass ShakeClass,float Scale/*=1.0f*/,ECameraShakePlaySpace PlaySpace/*=ECameraShakePlaySpace.CameraLocal*/,FRotator UserPlaySpaceRot/*=FRotator.ZeroRotator*/) { return default; }
 	///<summary>Plays a camera shake on this camera.</summary>
-	public  UCameraShakeBase StartCameraShakeFromSource(UClass ShakeClass,UCameraShakeSourceComponent SourceComponent,float Scale/*=1.0f*/,ECameraShakePlaySpace PlaySpace/*=ECameraShakePlaySpace.CameraLocal*/,FRotator UserPlaySpaceRot/*=FRotator.ZeroRotator*/) { return default; }
+	public virtual UCameraShakeBase StartCameraShakeFromSource(UClass ShakeClass,UCameraShakeSourceComponent SourceComponent,float Scale/*=1.0f*/,ECameraShakePlaySpace PlaySpace/*=ECameraShakePlaySpace.CameraLocal*/,FRotator UserPlaySpaceRot/*=FRotator.ZeroRotator*/) { return default; }
 	///<summary>Immediately stops the given shake instance and invalidates it.</summary>
-	public  void StopCameraShake(UCameraShakeBase ShakeInstance,bool bImmediately/*=true*/) {}
+	public virtual void StopCameraShake(UCameraShakeBase ShakeInstance,bool bImmediately/*=true*/) {}
 	///<summary>Stops playing all shakes of the given class.</summary>
-	public  void StopAllInstancesOfCameraShake(UClass Shake,bool bImmediately/*=true*/) {}
+	public virtual void StopAllInstancesOfCameraShake(UClass Shake,bool bImmediately/*=true*/) {}
 	///<summary>Stops all active camera shakes on this camera.</summary>
-	public  void StopAllCameraShakes(bool bImmediately/*=true*/) {}
+	public virtual void StopAllCameraShakes(bool bImmediately/*=true*/) {}
 	///<summary>Stops playing all shakes of the given class originating from the given source.</summary>
-	public  void StopAllInstancesOfCameraShakeFromSource(UClass Shake,UCameraShakeSourceComponent SourceComponent,bool bImmediately/*=true*/) {}
+	public virtual void StopAllInstancesOfCameraShakeFromSource(UClass Shake,UCameraShakeSourceComponent SourceComponent,bool bImmediately/*=true*/) {}
 	///<summary>Stops playing all shakes originating from the given source.</summary>
-	public  void StopAllCameraShakesFromSource(UCameraShakeSourceComponent SourceComponent,bool bImmediately/*=true*/) {}
+	public virtual void StopAllCameraShakesFromSource(UCameraShakeSourceComponent SourceComponent,bool bImmediately/*=true*/) {}
 	///<summary>Does a camera fade to/from a solid color.  Animates automatically.</summary>
-	public  void StartCameraFade(float FromAlpha,float ToAlpha,float Duration,FLinearColor Color,bool bShouldFadeAudio/*=false*/,bool bHoldWhenFinished/*=false*/) {}
+	public virtual void StartCameraFade(float FromAlpha,float ToAlpha,float Duration,FLinearColor Color,bool bShouldFadeAudio/*=false*/,bool bHoldWhenFinished/*=false*/) {}
 	///<summary>Stops camera fading.</summary>
-	public  void StopCameraFade() {}
+	public virtual void StopCameraFade() {}
 	///<summary>Turns on camera fading at the given opacity. Does not auto-animate, allowing user to animate themselves.</summary>
-	public  void SetManualCameraFade(float InFadeAmount,FLinearColor Color,bool bInFadeAudio) {}
+	public virtual void SetManualCameraFade(float InFadeAmount,FLinearColor Color,bool bInFadeAudio) {}
 	///<summary>Sets the bGameCameraCutThisFrame flag to true (indicating we did a camera cut this frame; useful for game code to call, e.g., when performing a teleport that should be seamless)</summary>
-	public  void SetGameCameraCutThisFrame() {}
+	public virtual void SetGameCameraCutThisFrame() {}
 	///<summary>ClientSide camera updates prevents DoUpdateCamera from swapping PendingViewTarget in when the blend is complete, just use a timer to swap</summary>
-	public  void SwapPendingViewTargetWhenUsingClientSideCameraUpdates() {}
+	public void SwapPendingViewTargetWhenUsingClientSideCameraUpdates() {}
 }

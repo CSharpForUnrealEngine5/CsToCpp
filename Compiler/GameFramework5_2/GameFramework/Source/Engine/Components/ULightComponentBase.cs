@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Components/LightComponentBase.h")]
@@ -53,21 +52,21 @@ public partial class ULightComponentBase : USceneComponent {
 	///<summary>Sprite scaling for dynamic light in the editor.</summary>
 	public float DynamicEditorTextureScale;
 	///<summary>Sets whether this light casts shadows</summary>
-	public  void SetCastShadows(bool bNewValue) {}
+	public void SetCastShadows(bool bNewValue) {}
 	///<summary>Gets the light color as a linear color</summary>
-	public  FLinearColor GetLightColor() { return default; }
+	public FLinearColor GetLightColor() { return default; }
 	///<summary>SetCastVolumetricShadow</summary>
-	public  void SetCastVolumetricShadow(bool bNewValue) {}
+	public void SetCastVolumetricShadow(bool bNewValue) {}
 	///<summary>SetCastDeepShadow</summary>
-	public  void SetCastDeepShadow(bool bNewValue) {}
+	public void SetCastDeepShadow(bool bNewValue) {}
 	///<summary>SetAffectReflection</summary>
-	public  void SetAffectReflection(bool bNewValue) {}
+	public void SetAffectReflection(bool bNewValue) {}
 	///<summary>SetAffectGlobalIllumination</summary>
-	public  void SetAffectGlobalIllumination(bool bNewValue) {}
+	public void SetAffectGlobalIllumination(bool bNewValue) {}
 	///<summary>SetCastRaytracedShadow</summary>
-	public  void SetCastRaytracedShadow(bool bNewValue) {}
+	public void SetCastRaytracedShadow(bool bNewValue) {}
 	///<summary>SetCastRaytracedShadows</summary>
-	public  void SetCastRaytracedShadows(ECastRayTracedShadow bNewValue) {}
+	public void SetCastRaytracedShadows(ECastRayTracedShadow bNewValue) {}
 	///<summary>SetSamplesPerPixel</summary>
-	public  void SetSamplesPerPixel(int NewValue) {}
+	public void SetSamplesPerPixel(int NewValue) {}
 }

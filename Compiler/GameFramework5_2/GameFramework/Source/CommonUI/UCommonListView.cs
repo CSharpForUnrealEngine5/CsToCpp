@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>UCommonListView</summary>
@@ -6,5 +5,5 @@ using CSharpToCpp.Utilities;
 public partial class UCommonListView : UListView {
 	public static UClass StaticClass() {return default;}
 	///<summary>SetEntrySpacing</summary>
-	public  void SetEntrySpacing(float InEntrySpacing) {}
+	public void SetEntrySpacing(float InEntrySpacing) {}
 }

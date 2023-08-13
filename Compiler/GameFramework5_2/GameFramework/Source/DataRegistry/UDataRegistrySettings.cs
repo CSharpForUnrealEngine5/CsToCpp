@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Settings for the Data Registry subsystem, these settings are used to scan for registry assets and set runtime access rules</summary>

@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Actor responsible for controlling a specific level sequence in the world.</summary>
@@ -6,7 +5,7 @@ using CSharpToCpp.Utilities;
 public partial class ALevelSequenceActor : AActor {
 	public static UClass StaticClass() {return default;}
 	///<summary>FOnLevelSequenceLoaded</summary>
-	public  void FOnLevelSequenceLoaded() {}
+	public void FOnLevelSequenceLoaded() {}
 	///<summary>PlaybackSettings</summary>
 	public FMovieSceneSequencePlaybackSettings PlaybackSettings;
 	///<summary>SequencePlayer</summary>
@@ -30,39 +29,39 @@ public partial class ALevelSequenceActor : AActor {
 	///<summary>Instance data that can be used to dynamically control sequence evaluation at runtime</summary>
 	public UObject DefaultInstanceData;
 	///<summary>Get the level sequence being played by this actor.</summary>
-	public  ULevelSequence GetSequence() { return default; }
+	public ULevelSequence GetSequence() { return default; }
 	///<summary>LoadSequence</summary>
-	public  ULevelSequence LoadSequence() { return default; }
+	public ULevelSequence LoadSequence() { return default; }
 	///<summary>Set the level sequence being played by this actor.</summary>
-	public  void SetSequence(ULevelSequence InSequence) {}
+	public void SetSequence(ULevelSequence InSequence) {}
 	///<summary>Set whether or not to replicate playback for this actor</summary>
-	public  void SetReplicatePlayback(bool ReplicatePlayback) {}
+	public void SetReplicatePlayback(bool ReplicatePlayback) {}
 	///<summary>Access this actor&#39;s sequence player, or None if it is not yet initialized</summary>
-	public  ULevelSequencePlayer GetSequencePlayer() { return default; }
+	public ULevelSequencePlayer GetSequencePlayer() { return default; }
 	///<summary>Hide burnin</summary>
-	public  void HideBurnin() {}
+	public void HideBurnin() {}
 	///<summary>Show burnin</summary>
-	public  void ShowBurnin() {}
+	public void ShowBurnin() {}
 	///<summary>Overrides the specified binding with the specified actors, optionally still allowing the bindings defined in the Level Sequence asset</summary>
-	public  void SetBinding(FMovieSceneObjectBindingID Binding,TArray<AActor> Actors,bool bAllowBindingsFromAsset/*=false*/) {}
+	public void SetBinding(FMovieSceneObjectBindingID Binding,TArray<AActor> Actors,bool bAllowBindingsFromAsset/*=false*/) {}
 	///<summary>Assigns an set of actors to all the bindings tagged with the specified name in this sequence. Object Bindings can be tagged within the sequence UI by RMB -&gt; Tags... on the object binding in the tree.</summary>
-	public  void SetBindingByTag(string BindingTag,TArray<AActor> Actors,bool bAllowBindingsFromAsset/*=false*/) {}
+	public void SetBindingByTag(string BindingTag,TArray<AActor> Actors,bool bAllowBindingsFromAsset/*=false*/) {}
 	///<summary>Adds the specified actor to the overridden bindings for the specified binding ID, optionally still allowing the bindings defined in the Level Sequence asset</summary>
-	public  void AddBinding(FMovieSceneObjectBindingID Binding,AActor Actor,bool bAllowBindingsFromAsset/*=false*/) {}
+	public void AddBinding(FMovieSceneObjectBindingID Binding,AActor Actor,bool bAllowBindingsFromAsset/*=false*/) {}
 	///<summary>Binds an actor to all the bindings tagged with the specified name in this sequence. Does not remove any exising bindings that have been set up through this API. Object Bindings can be tagged within the sequence UI by RMB -&gt; Tags... on the object binding in the tree.</summary>
-	public  void AddBindingByTag(string BindingTag,AActor Actor,bool bAllowBindingsFromAsset/*=false*/) {}
+	public void AddBindingByTag(string BindingTag,AActor Actor,bool bAllowBindingsFromAsset/*=false*/) {}
 	///<summary>Removes the specified actor from the specified binding&#39;s actor array</summary>
-	public  void RemoveBinding(FMovieSceneObjectBindingID Binding,AActor Actor) {}
+	public void RemoveBinding(FMovieSceneObjectBindingID Binding,AActor Actor) {}
 	///<summary>Removes the specified actor from the specified binding&#39;s actor array</summary>
-	public  void RemoveBindingByTag(string Tag,AActor Actor) {}
+	public void RemoveBindingByTag(string Tag,AActor Actor) {}
 	///<summary>Resets the specified binding back to the defaults defined by the Level Sequence asset</summary>
-	public  void ResetBinding(FMovieSceneObjectBindingID Binding) {}
+	public void ResetBinding(FMovieSceneObjectBindingID Binding) {}
 	///<summary>Resets all overridden bindings back to the defaults defined by the Level Sequence asset</summary>
-	public  void ResetBindings() {}
+	public void ResetBindings() {}
 	///<summary>Retrieve the first object binding that has been tagged with the specified name</summary>
-	public  FMovieSceneObjectBindingID FindNamedBinding(string Tag) { return default; }
+	public FMovieSceneObjectBindingID FindNamedBinding(string Tag) { return default; }
 	///<summary>Retrieve all the bindings that have been tagged with the specified name</summary>
-	public  TArray<FMovieSceneObjectBindingID> FindNamedBindings(string Tag) { return default; }
+	public TArray<FMovieSceneObjectBindingID> FindNamedBindings(string Tag) { return default; }
 	///<summary>Burn-in widget</summary>
 	public ULevelSequenceBurnIn BurnInInstance;
 	///<summary>bShowBurnin</summary>

@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Components/ExpandableArea.h")]
@@ -21,11 +20,11 @@ public partial class UExpandableArea : UWidget {
 	///<summary>A bindable delegate for the IsChecked.</summary>
 	public FOnExpandableAreaExpansionChanged OnExpansionChanged;
 	///<summary>GetIsExpanded</summary>
-	public  bool GetIsExpanded() { return default; }
+	public bool GetIsExpanded() { return default; }
 	///<summary>SetIsExpanded</summary>
-	public  void SetIsExpanded(bool IsExpanded) {}
+	public void SetIsExpanded(bool IsExpanded) {}
 	///<summary>SetIsExpanded_Animated</summary>
-	public  void SetIsExpanded_Animated(bool IsExpanded) {}
+	public void SetIsExpanded_Animated(bool IsExpanded) {}
 	///<summary>HeaderContent</summary>
 	public UWidget HeaderContent;
 	///<summary>BodyContent</summary>

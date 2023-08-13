@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Exporters/Exporter.h")]
@@ -27,7 +26,7 @@ public partial class UExporter : UObject {
 	///<summary>Export the given object to file.  Child classes do not override this, but they do provide an Export() function</summary>
 	public static bool RunAssetExportTask(UAssetExportTask Task) { return default; }
 	///<summary>Export the given object to file.  Overridden by script based exporters.</summary>
-	public  bool ScriptRunAssetExportTask(UAssetExportTask Task) { return default; }
+	public bool ScriptRunAssetExportTask(UAssetExportTask Task) { return default; }
 	///<summary>Export the given objects to files.  Child classes do not override this, but they do provide an Export() function</summary>
 	public static bool RunAssetExportTasks(TArray<UAssetExportTask> ExportTasks) { return default; }
 }

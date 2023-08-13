@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Options/GLTFExportOptions.h")]
@@ -55,5 +54,5 @@ public partial class UGLTFExportOptions : UObject {
 	///<summary>Mode determining if and how to export material variants that change the materials property on a static or skeletal mesh component.</summary>
 	public EGLTFMaterialVariantMode ExportMaterialVariants;
 	///<summary>ResetToDefault</summary>
-	public  void ResetToDefault() {}
+	public void ResetToDefault() {}
 }

@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>UMotoSynthSource</summary>
@@ -52,11 +51,11 @@ public partial class UMotoSynthSource : UObject {
 	///<summary>The path to write the audio analysis data (LPF and normalized asset)</summary>
 	public string AnalysisInputFilePath;
 	///<summary>PerformGrainTableAnalysis</summary>
-	public  void PerformGrainTableAnalysis() {}
+	public void PerformGrainTableAnalysis() {}
 	///<summary>PlayToneMatch</summary>
-	public  void PlayToneMatch() {}
+	public void PlayToneMatch() {}
 	///<summary>StopToneMatch</summary>
-	public  void StopToneMatch() {}
+	public void StopToneMatch() {}
 	///<summary>Data containing PCM audio of the imported source asset (filled out by the factory)</summary>
 	public TArray<float> SourceData_DEPRECATED;
 	///<summary>SourceDataPCM</summary>

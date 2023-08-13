@@ -1,13 +1,12 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Components/ContentWidget.h")]
 public partial class UContentWidget : UPanelWidget {
 	public static UClass StaticClass() {return default;}
 	///<summary>GetContentSlot</summary>
-	public  UPanelSlot GetContentSlot() { return default; }
+	public UPanelSlot GetContentSlot() { return default; }
 	///<summary>SetContent</summary>
-	public  UPanelSlot SetContent(UWidget Content) { return default; }
+	public UPanelSlot SetContent(UWidget Content) { return default; }
 	///<summary>GetContent</summary>
-	public  UWidget GetContent() { return default; }
+	public UWidget GetContent() { return default; }
 }

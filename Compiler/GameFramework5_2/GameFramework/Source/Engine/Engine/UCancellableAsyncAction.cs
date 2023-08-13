@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>base class for asynchronous actions that can be spawned from UK2Node_AsyncAction or C++ code.</summary>
@@ -6,7 +5,7 @@ using CSharpToCpp.Utilities;
 public partial class UCancellableAsyncAction : UBlueprintAsyncActionBase {
 	public static UClass StaticClass() {return default;}
 	///<summary>Cancel an asynchronous action, this attempts to cancel any lower level processes and also prevents delegates from being fired</summary>
-	public  void Cancel() {}
+	public virtual void Cancel() {}
 	///<summary>Returns true if this action is still active and has not completed or been cancelled</summary>
-	public  bool IsActive() { return default; }
+	public virtual bool IsActive() { return default; }
 }

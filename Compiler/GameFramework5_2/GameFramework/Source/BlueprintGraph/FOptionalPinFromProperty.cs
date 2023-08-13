@@ -1,11 +1,10 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("K2Node.h")]
 public partial struct FOptionalPinFromProperty {
 	public string PropertyName;
 	public string PropertyFriendlyName;
-	public string PropertyTooltip;
+	public FText PropertyTooltip;
 	public string CategoryName;
 	public bool bShowPin;
 	public bool bCanToggleVisibility;

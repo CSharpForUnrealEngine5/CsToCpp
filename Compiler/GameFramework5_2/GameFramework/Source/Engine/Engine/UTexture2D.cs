@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Engine/Texture2D.h")]
@@ -17,7 +16,7 @@ public partial class UTexture2D : UTexture {
 	///<summary>The imported size of the texture. Only valid on cooked builds when texture source is not</summary>
 	public FIntPoint ImportedSize;
 	///<summary>Gets the X size of the texture, in pixels</summary>
-	public  int Blueprint_GetSizeX() { return default; }
+	public int Blueprint_GetSizeX() { return default; }
 	///<summary>Gets the Y size of the texture, in pixels</summary>
-	public  int Blueprint_GetSizeY() { return default; }
+	public int Blueprint_GetSizeY() { return default; }
 }

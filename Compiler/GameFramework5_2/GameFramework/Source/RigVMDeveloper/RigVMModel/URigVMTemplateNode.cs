@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>The Template Node represents an unresolved function.</summary>
@@ -6,15 +5,15 @@ using CSharpToCpp.Utilities;
 public partial class URigVMTemplateNode : URigVMNode {
 	public static UClass StaticClass() {return default;}
 	///<summary>Returns the UStruct for this unit node</summary>
-	public  UScriptStruct GetScriptStruct() { return default; }
+	public virtual UScriptStruct GetScriptStruct() { return default; }
 	///<summary>Returns the notation of the node</summary>
-	public  string GetNotation() { return default; }
+	public virtual string GetNotation() { return default; }
 	///<summary>IsSingleton</summary>
-	public  bool IsSingleton() { return default; }
+	public virtual bool IsSingleton() { return default; }
 	///<summary>returns true if the template node is resolved</summary>
-	public  bool IsResolved() { return default; }
+	public bool IsResolved() { return default; }
 	///<summary>returns true if the template is fully unresolved</summary>
-	public  bool IsFullyUnresolved() { return default; }
+	public bool IsFullyUnresolved() { return default; }
 	///<summary>TemplateNotation</summary>
 	public string TemplateNotation;
 	///<summary>ResolvedFunctionName</summary>

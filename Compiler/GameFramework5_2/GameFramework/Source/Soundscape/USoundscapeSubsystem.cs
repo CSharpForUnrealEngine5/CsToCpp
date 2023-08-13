@@ -1,19 +1,18 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("SoundscapeSubsystem.h")]
 public partial class USoundscapeSubsystem : UGameInstanceSubsystem {
 	public static UClass StaticClass() {return default;}
 	///<summary>SetState</summary>
-	public  void SetState(FGameplayTag SoundscapeState) {}
+	public void SetState(FGameplayTag SoundscapeState) {}
 	///<summary>ClearState</summary>
-	public  void ClearState(FGameplayTag SoundscapeState) {}
+	public void ClearState(FGameplayTag SoundscapeState) {}
 	///<summary>RestartSoundscape</summary>
-	public  void RestartSoundscape() {}
+	public void RestartSoundscape() {}
 	///<summary>AddPaletteCollection</summary>
-	public  bool AddPaletteCollection(string PaletteCollectionName,FSoundscapePaletteCollection PaletteCollection) { return default; }
+	public bool AddPaletteCollection(string PaletteCollectionName,FSoundscapePaletteCollection PaletteCollection) { return default; }
 	///<summary>RemovePaletteCollection</summary>
-	public  bool RemovePaletteCollection(string PaletteCollectionName) { return default; }
+	public bool RemovePaletteCollection(string PaletteCollectionName) { return default; }
 	///<summary>LoadedPaletteCollectionSet</summary>
 	public TSet<USoundscapePalette> LoadedPaletteCollectionSet;
 	///<summary>UnloadedPaletteCollections</summary>
@@ -21,11 +20,11 @@ public partial class USoundscapeSubsystem : UGameInstanceSubsystem {
 	///<summary>ActivePalettes</summary>
 	public TMap<USoundscapePalette,UActiveSoundscapePalette> ActivePalettes;
 	///<summary>Add a Color Point Collection to the Subsystem, returns true if successful</summary>
-	public  void AddColorPointCollection(string ColorPointCollectionName,FSoundscapeColorPointCollection ColorPointCollection) {}
+	public void AddColorPointCollection(string ColorPointCollectionName,FSoundscapeColorPointCollection ColorPointCollection) {}
 	///<summary>Remove a Color Point Collection from the Subsystem, returns true if successful</summary>
-	public  bool RemoveColorPointCollection(string ColorPointCollectionName) { return default; }
+	public bool RemoveColorPointCollection(string ColorPointCollectionName) { return default; }
 	///<summary>Check Color Point Density for a Location Cell</summary>
-	public  int CheckColorPointDensity(FVector Location,FGameplayTag ColorPoint) { return default; }
+	public int CheckColorPointDensity(FVector Location,FGameplayTag ColorPoint) { return default; }
 	///<summary>Stored Hash Map Collections</summary>
 	public TArray<USoundscapeColorPointHashMapCollection> ColorPointHashMapCollections;
 	///<summary>Color Point Hash Maps</summary>

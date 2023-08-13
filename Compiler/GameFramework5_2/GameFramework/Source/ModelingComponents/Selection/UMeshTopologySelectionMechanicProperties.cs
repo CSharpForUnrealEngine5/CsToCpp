@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Selection/MeshTopologySelectionMechanic.h")]
@@ -27,7 +26,7 @@ public partial class UMeshTopologySelectionMechanicProperties : UInteractiveTool
 	///<summary>Do not check whether the closest element is occluded from the current view.</summary>
 	public bool bIgnoreOcclusion;
 	///<summary>Invert current selection. If selection is empty, has same effect as Select All, and is similarly dependent on selection filter.</summary>
-	public  void InvertSelection() {}
+	public void InvertSelection() {}
 	///<summary>Select all elements. Depends on selection filter, where vertices are preferred to edges to faces.</summary>
-	public  void SelectAll() {}
+	public void SelectAll() {}
 }

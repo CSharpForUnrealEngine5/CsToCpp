@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>A CameraActor is a camera viewpoint that can be placed in a level.</summary>
@@ -12,7 +11,7 @@ public partial class ACameraActor : AActor {
 	///<summary>SceneComponent</summary>
 	public USceneComponent SceneComponent;
 	///<summary>Returns index of the player for whom we auto-activate, or INDEX_NONE (-1) if disabled.</summary>
-	public  int GetAutoActivatePlayerIndex() { return default; }
+	public int GetAutoActivatePlayerIndex() { return default; }
 	///<summary>bConstrainAspectRatio_DEPRECATED</summary>
 	public bool bConstrainAspectRatio_DEPRECATED;
 	///<summary>AspectRatio_DEPRECATED</summary>

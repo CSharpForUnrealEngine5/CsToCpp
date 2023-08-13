@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>UDynamicMeshComponent is a mesh component similar to UProceduralMeshComponent,</summary>
@@ -6,27 +5,27 @@ using CSharpToCpp.Utilities;
 public partial class UDynamicMeshComponent : UBaseDynamicMeshComponent {
 	public static UClass StaticClass() {return default;}
 	///<summary>Set the child UDynamicMesh. This can be used to &#39;share&#39; a UDynamicMesh between Component instances.</summary>
-	public  void SetDynamicMesh(UDynamicMesh NewMesh) {}
+	public void SetDynamicMesh(UDynamicMesh NewMesh) {}
 	///<summary>Internal FDynamicMesh is stored inside a UDynamicMesh container, which allows it to be</summary>
 	public UDynamicMesh MeshObject;
 	///<summary>Set new list of Materials for the Mesh. Dynamic Mesh Component does not have</summary>
-	public  void ConfigureMaterialSet(TArray<UMaterialInterface> NewMaterialSet) {}
+	public void ConfigureMaterialSet(TArray<UMaterialInterface> NewMaterialSet) {}
 	///<summary>Compute the maximum MaterialID on the DynamicMesh, and ensure that Material Slots match.</summary>
-	public  bool ValidateMaterialSlots(bool bCreateIfMissing/*=true*/,bool bDeleteExtraSlots/*=true*/) { return default; }
+	public bool ValidateMaterialSlots(bool bCreateIfMissing/*=true*/,bool bDeleteExtraSlots/*=true*/) { return default; }
 	///<summary>SetTangentsType</summary>
-	public  void SetTangentsType(EDynamicMeshComponentTangentsMode NewTangentsType) {}
+	public void SetTangentsType(EDynamicMeshComponentTangentsMode NewTangentsType) {}
 	///<summary>GetTangentsType</summary>
-	public  EDynamicMeshComponentTangentsMode GetTangentsType() { return default; }
+	public EDynamicMeshComponentTangentsMode GetTangentsType() { return default; }
 	///<summary>How should Tangents be calculated/handled</summary>
 	public EDynamicMeshComponentTangentsMode TangentsType;
 	///<summary>calls SetComplexAsSimpleCollisionEnabled(true, true)</summary>
-	public  void EnableComplexAsSimpleCollision() {}
+	public void EnableComplexAsSimpleCollision() {}
 	///<summary>If bEnabled=true, sets bEnableComplexCollision=true and CollisionType=CTF_UseComplexAsSimple</summary>
-	public  void SetComplexAsSimpleCollisionEnabled(bool bEnabled,bool bImmediateUpdate/*=true*/) {}
+	public void SetComplexAsSimpleCollisionEnabled(bool bEnabled,bool bImmediateUpdate/*=true*/) {}
 	///<summary>Set value of bDeferCollisionUpdates, when enabled, collision is not automatically recomputed each time the mesh changes.</summary>
-	public  void SetDeferredCollisionUpdatesEnabled(bool bEnabled,bool bImmediateUpdate/*=true*/) {}
+	public void SetDeferredCollisionUpdatesEnabled(bool bEnabled,bool bImmediateUpdate/*=true*/) {}
 	///<summary>Force an update of the Collision/Physics data for this Component.</summary>
-	public  void UpdateCollision(bool bOnlyIfPending/*=true*/) {}
+	public virtual void UpdateCollision(bool bOnlyIfPending/*=true*/) {}
 	///<summary>Type of Collision Geometry to use for this Mesh</summary>
 	public ECollisionTraceFlag CollisionType;
 	///<summary>Controls whether the physics cooking should be done off the game thread.</summary>

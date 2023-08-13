@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Raw keyframe data for one track.Each array will contain either NumFrames elements or 1 element.</summary>

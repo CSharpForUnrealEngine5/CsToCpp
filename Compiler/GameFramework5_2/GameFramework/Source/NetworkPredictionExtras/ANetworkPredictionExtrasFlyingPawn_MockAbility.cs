@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Example subclass of ANetworkPredictionExtrasFlyingPawn that uses the MockAbility simulation</summary>
@@ -6,11 +5,11 @@ using CSharpToCpp.Utilities;
 public partial class ANetworkPredictionExtrasFlyingPawn_MockAbility : ANetworkPredictionExtrasFlyingPawn {
 	public static UClass StaticClass() {return default;}
 	///<summary>GetMockFlyingAbilityComponent</summary>
-	public  UMockFlyingAbilityComponent GetMockFlyingAbilityComponent() { return default; }
+	public UMockFlyingAbilityComponent GetMockFlyingAbilityComponent() { return default; }
 	///<summary>AbilityInputPreset</summary>
 	public ENetworkPredictionExtrasMockAbilityInputPreset AbilityInputPreset;
 	///<summary>GetStamina</summary>
-	public  float GetStamina() { return default; }
+	public float GetStamina() { return default; }
 	///<summary>GetMaxStamina</summary>
-	public  float GetMaxStamina() { return default; }
+	public float GetMaxStamina() { return default; }
 }

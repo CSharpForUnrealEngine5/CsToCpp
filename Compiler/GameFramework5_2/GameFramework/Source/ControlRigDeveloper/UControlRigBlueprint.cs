@@ -1,43 +1,42 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("ControlRigBlueprint.h")]
 public partial class UControlRigBlueprint : UBlueprint {
 	public static UClass StaticClass() {return default;}
 	///<summary>IInterface_PreviewMeshProvider interface</summary>
-	public  void SetPreviewMesh(USkeletalMesh PreviewMesh,bool bMarkAsDirty/*=true*/) {}
+	public virtual void SetPreviewMesh(USkeletalMesh PreviewMesh,bool bMarkAsDirty/*=true*/) {}
 	///<summary>GetPreviewMesh</summary>
-	public  USkeletalMesh GetPreviewMesh() { return default; }
+	public virtual USkeletalMesh GetPreviewMesh() { return default; }
 	///<summary>RecompileVM</summary>
-	public  void RecompileVM() {}
+	public void RecompileVM() {}
 	///<summary>RecompileVMIfRequired</summary>
-	public  void RecompileVMIfRequired() {}
+	public void RecompileVMIfRequired() {}
 	///<summary>RequestAutoVMRecompilation</summary>
-	public  void RequestAutoVMRecompilation() {}
+	public void RequestAutoVMRecompilation() {}
 	///<summary>SetAutoVMRecompile</summary>
-	public  void SetAutoVMRecompile(bool bAutoRecompile) {}
+	public void SetAutoVMRecompile(bool bAutoRecompile) {}
 	///<summary>RequestControlRigInit</summary>
-	public  void RequestControlRigInit() {}
+	public void RequestControlRigInit() {}
 	///<summary>GetModel</summary>
-	public  URigVMGraph GetModel(UEdGraph InEdGraph/*=nullptr*/) { return default; }
+	public URigVMGraph GetModel(UEdGraph InEdGraph/*=nullptr*/) { return default; }
 	///<summary>GetDefaultModel</summary>
-	public  URigVMGraph GetDefaultModel() { return default; }
+	public URigVMGraph GetDefaultModel() { return default; }
 	///<summary>GetAllModels</summary>
-	public  TArray<URigVMGraph> GetAllModels() { return default; }
+	public TArray<URigVMGraph> GetAllModels() { return default; }
 	///<summary>GetLocalFunctionLibrary</summary>
-	public  URigVMFunctionLibrary GetLocalFunctionLibrary() { return default; }
+	public URigVMFunctionLibrary GetLocalFunctionLibrary() { return default; }
 	///<summary>AddModel</summary>
-	public  URigVMGraph AddModel(string InName/*=TEXT("Rig Graph")*/,bool bSetupUndoRedo/*=true*/,bool bPrintPythonCommand/*=true*/) { return default; }
+	public URigVMGraph AddModel(string InName/*=TEXT("Rig Graph")*/,bool bSetupUndoRedo/*=true*/,bool bPrintPythonCommand/*=true*/) { return default; }
 	///<summary>RemoveModel</summary>
-	public  bool RemoveModel(string InName/*=TEXT("Rig Graph")*/,bool bSetupUndoRedo/*=true*/,bool bPrintPythonCommand/*=true*/) { return default; }
+	public bool RemoveModel(string InName/*=TEXT("Rig Graph")*/,bool bSetupUndoRedo/*=true*/,bool bPrintPythonCommand/*=true*/) { return default; }
 	///<summary>GetController</summary>
-	public  URigVMController GetController(URigVMGraph InGraph/*=nullptr*/) { return default; }
+	public URigVMController GetController(URigVMGraph InGraph/*=nullptr*/) { return default; }
 	///<summary>GetControllerByName</summary>
-	public  URigVMController GetControllerByName(string InGraphName/*=TEXT("")*/) { return default; }
+	public URigVMController GetControllerByName(string InGraphName/*=TEXT("")*/) { return default; }
 	///<summary>GetOrCreateController</summary>
-	public  URigVMController GetOrCreateController(URigVMGraph InGraph/*=nullptr*/) { return default; }
+	public URigVMController GetOrCreateController(URigVMGraph InGraph/*=nullptr*/) { return default; }
 	///<summary>GeneratePythonCommands</summary>
-	public  TArray<string> GeneratePythonCommands(string InNewBlueprintName) { return default; }
+	public TArray<string> GeneratePythonCommands(string InNewBlueprintName) { return default; }
 	///<summary>FunctionLibraryEdGraph</summary>
 	public UControlRigGraph FunctionLibraryEdGraph;
 	///<summary>RigGraphDisplaySettings</summary>
@@ -71,21 +70,21 @@ public partial class UControlRigBlueprint : UBlueprint {
 	///<summary>GetCurrentlyOpenRigBlueprints</summary>
 	public static TArray<UControlRigBlueprint> GetCurrentlyOpenRigBlueprints() { return default; }
 	///<summary>GetControlRigClass</summary>
-	public  UClass GetControlRigClass() { return default; }
+	public UClass GetControlRigClass() { return default; }
 	///<summary>CreateControlRig</summary>
-	public  UControlRig CreateControlRig() { return default; }
+	public UControlRig CreateControlRig() { return default; }
 	///<summary>GetAvailableRigUnits</summary>
 	public static TArray<UStruct> GetAvailableRigUnits() { return default; }
 	///<summary>GetMemberVariables</summary>
-	public  TArray<FRigVMGraphVariableDescription> GetMemberVariables() { return default; }
+	public TArray<FRigVMGraphVariableDescription> GetMemberVariables() { return default; }
 	///<summary>AddMemberVariable</summary>
-	public  string AddMemberVariable(string InName,string InCPPType,bool bIsPublic/*=false*/,bool bIsReadOnly/*=false*/,string InDefaultValue/*=TEXT("")*/) { return default; }
+	public string AddMemberVariable(string InName,string InCPPType,bool bIsPublic/*=false*/,bool bIsReadOnly/*=false*/,string InDefaultValue/*=TEXT("")*/) { return default; }
 	///<summary>RemoveMemberVariable</summary>
-	public  bool RemoveMemberVariable(string InName) { return default; }
+	public bool RemoveMemberVariable(string InName) { return default; }
 	///<summary>RenameMemberVariable</summary>
-	public  bool RenameMemberVariable(string InOldName,string InNewName) { return default; }
+	public bool RenameMemberVariable(string InOldName,string InNewName) { return default; }
 	///<summary>ChangeMemberVariableType</summary>
-	public  bool ChangeMemberVariableType(string InName,string InCPPType,bool bIsPublic/*=false*/,bool bIsReadOnly/*=false*/,string InDefaultValue/*=TEXT("")*/) { return default; }
+	public bool ChangeMemberVariableType(string InName,string InCPPType,bool bIsPublic/*=false*/,bool bIsReadOnly/*=false*/,string InDefaultValue/*=TEXT("")*/) { return default; }
 	///<summary>GizmoLibrary_DEPRECATED</summary>
 	public TSoftObjectPtr<UControlRigShapeLibrary> GizmoLibrary_DEPRECATED;
 	///<summary>ShapeLibraries</summary>
@@ -101,7 +100,7 @@ public partial class UControlRigBlueprint : UBlueprint {
 	///<summary>Hierarchy</summary>
 	public URigHierarchy Hierarchy;
 	///<summary>GetHierarchyController</summary>
-	public  URigHierarchyController GetHierarchyController() { return default; }
+	public URigHierarchyController GetHierarchyController() { return default; }
 	///<summary>Whether or not this rig has an Inversion Event</summary>
 	public bool bSupportsInversion;
 	///<summary>Whether or not this rig has Controls on It</summary>
@@ -125,7 +124,7 @@ public partial class UControlRigBlueprint : UBlueprint {
 	///<summary>VMRecompilationBracket</summary>
 	public int VMRecompilationBracket;
 	///<summary>SuspendNotifications</summary>
-	public  void SuspendNotifications(bool bSuspendNotifs) {}
+	public void SuspendNotifications(bool bSuspendNotifs) {}
 	///<summary>Validator</summary>
 	public UControlRigValidator Validator;
 	///<summary>DebugBoneRadius</summary>

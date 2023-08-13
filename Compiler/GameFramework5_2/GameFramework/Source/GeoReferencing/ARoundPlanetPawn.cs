@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>This pawn can be used to easily move around the globe while maintaining a</summary>
@@ -36,19 +35,19 @@ public partial class ARoundPlanetPawn : ADefaultPawn {
 	///<summary>The distance between the geographic ellipsoid surface and the pawn</summary>
 	public float Altitude;
 	///<summary>Begin a smooth camera flight to the given ECEF destination such that the camera ends at the specified yaw and pitch.</summary>
-	public  void FlyToLocationECEF(FVector ECEFDestination,double YawAtDestination,double PitchAtDestination,bool CanInterruptByMoving) {}
+	public void FlyToLocationECEF(FVector ECEFDestination,double YawAtDestination,double PitchAtDestination,bool CanInterruptByMoving) {}
 	///<summary>Begin a smooth camera flight to the given Latitude/Longitude destination such that the camera ends at the specified yaw and pitch.</summary>
-	public  void FlyToLocationGeographic(FGeographicCoordinates GeographicDestination,double YawAtDestination,double PitchAtDestination,bool CanInterruptByMoving) {}
+	public void FlyToLocationGeographic(FGeographicCoordinates GeographicDestination,double YawAtDestination,double PitchAtDestination,bool CanInterruptByMoving) {}
 	///<summary>Begin a smooth camera flight to the given Latitude/Longitude destination such that the camera ends at the specified yaw and pitch.</summary>
-	public  void FlyToLocationLatitudeLongitudeAltitude(double InLatitude,double InLongitude,double InAltitude,double YawAtDestination,double PitchAtDestination,bool CanInterruptByMoving) {}
+	public void FlyToLocationLatitudeLongitudeAltitude(double InLatitude,double InLongitude,double InAltitude,double YawAtDestination,double PitchAtDestination,bool CanInterruptByMoving) {}
 	///<summary>Stop the current Fly To Location motion</summary>
-	public  void InterruptFlyToLocation() {}
+	public void InterruptFlyToLocation() {}
 	///<summary>Reset the Speed Scalar to its default value - Middle-mouse button click equivalent</summary>
-	public  void ResetSpeedScalar() {}
+	public void ResetSpeedScalar() {}
 	///<summary>Increase the Speed Scalar - MouseWheel Up equivalent</summary>
-	public  void IncreaseSpeedScalar() {}
+	public void IncreaseSpeedScalar() {}
 	///<summary>Decrease the Speed Scalar - MouseWheel Down equivalent</summary>
-	public  void DecreaseSpeedScalar() {}
+	public void DecreaseSpeedScalar() {}
 	///<summary>GeoReferencingSystem</summary>
 	public AGeoReferencingSystem GeoReferencingSystem;
 }

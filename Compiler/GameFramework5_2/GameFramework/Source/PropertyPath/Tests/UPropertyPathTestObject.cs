@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Tests/PropertyPathHelpersTest.h")]
@@ -29,19 +28,19 @@ public partial class UPropertyPathTestObject : UObject {
 	///<summary>InnerObject</summary>
 	public UPropertyPathTestObject InnerObject;
 	///<summary>SetFloat</summary>
-	public  void SetFloat(float InFloat) {}
+	public void SetFloat(float InFloat) {}
 	///<summary>GetFloat</summary>
-	public  float GetFloat() { return default; }
+	public float GetFloat() { return default; }
 	///<summary>SetStruct</summary>
-	public  void SetStruct(FPropertyPathTestStruct InStruct) {}
+	public void SetStruct(FPropertyPathTestStruct InStruct) {}
 	///<summary>GetStruct</summary>
-	public  FPropertyPathTestStruct GetStruct() { return default; }
+	public FPropertyPathTestStruct GetStruct() { return default; }
 	///<summary>SetStructRef</summary>
-	public  void SetStructRef(FPropertyPathTestStruct InStruct) {}
+	public void SetStructRef(FPropertyPathTestStruct InStruct) {}
 	///<summary>GetStructRef</summary>
-	public  FPropertyPathTestStruct GetStructRef() { return default; }
+	public FPropertyPathTestStruct GetStructRef() { return default; }
 	///<summary>SetStructConstRef</summary>
-	public  void SetStructConstRef(FPropertyPathTestStruct InStruct) {}
+	public void SetStructConstRef(FPropertyPathTestStruct InStruct) {}
 	///<summary>GetStructConstRef</summary>
-	public  FPropertyPathTestStruct GetStructConstRef() { return default; }
+	public FPropertyPathTestStruct GetStructConstRef() { return default; }
 }

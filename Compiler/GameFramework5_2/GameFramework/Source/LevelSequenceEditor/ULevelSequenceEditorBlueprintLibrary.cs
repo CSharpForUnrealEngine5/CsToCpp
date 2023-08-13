@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("LevelSequenceEditorBlueprintLibrary.h")]
@@ -81,11 +80,11 @@ public partial class ULevelSequenceEditorBlueprintLibrary : UBlueprintFunctionLi
 	///<summary>Sets the lock for the viewport to the camera cuts.</summary>
 	public static void SetLockCameraCutToViewport(bool bLock) {}
 	///<summary>Gets whether the specified track filter is on/off</summary>
-	public static bool IsTrackFilterEnabled(string TrackFilterName) { return default; }
+	public static bool IsTrackFilterEnabled(FText TrackFilterName) { return default; }
 	///<summary>Sets the specified track filter to be on or off</summary>
-	public static void SetTrackFilterEnabled(string TrackFilterName,bool bEnabled) {}
+	public static void SetTrackFilterEnabled(FText TrackFilterName,bool bEnabled) {}
 	///<summary>Gets all the available track filter names</summary>
-	public static TArray<string> GetTrackFilterNames() { return default; }
+	public static TArray<FText> GetTrackFilterNames() { return default; }
 	///<summary>Get if a custom color for specified channel idendified by it&#39;s class and identifier exists</summary>
 	public static bool HasCustomColorForChannel(UClass Class,string Identifier) { return default; }
 	///<summary>Get custom color for specified channel idendified by it&#39;s class and identifier,if none exists will return white</summary>

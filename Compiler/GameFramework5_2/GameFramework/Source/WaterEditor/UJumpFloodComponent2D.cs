@@ -1,23 +1,22 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("JumpFloodComponent2D.h")]
 public partial class UJumpFloodComponent2D : UActorComponent {
 	public static UClass StaticClass() {return default;}
 	///<summary>CreateMIDs</summary>
-	public  bool CreateMIDs() { return default; }
+	public virtual bool CreateMIDs() { return default; }
 	///<summary>AssignRenderTargets</summary>
-	public  void AssignRenderTargets(UTextureRenderTarget2D InRTA,UTextureRenderTarget2D InRTB) {}
+	public void AssignRenderTargets(UTextureRenderTarget2D InRTA,UTextureRenderTarget2D InRTB) {}
 	///<summary>JumpFlood</summary>
-	public  void JumpFlood(UTextureRenderTarget2D SeedRT,float SceneCaptureZ,FLinearColor Curl,bool UseDepth,float ZxLocationT) {}
+	public void JumpFlood(UTextureRenderTarget2D SeedRT,float SceneCaptureZ,FLinearColor Curl,bool UseDepth,float ZxLocationT) {}
 	///<summary>SingleJumpStep</summary>
-	public  UTextureRenderTarget2D SingleJumpStep() { return default; }
+	public UTextureRenderTarget2D SingleJumpStep() { return default; }
 	///<summary>FindEdges</summary>
-	public  UTextureRenderTarget2D FindEdges(UTextureRenderTarget2D SeedRT,float CaptureZ,FLinearColor Curl,bool UseDepth,float ZxLocationT) { return default; }
+	public UTextureRenderTarget2D FindEdges(UTextureRenderTarget2D SeedRT,float CaptureZ,FLinearColor Curl,bool UseDepth,float ZxLocationT) { return default; }
 	///<summary>FindEdges_Debug</summary>
-	public  void FindEdges_Debug(UTextureRenderTarget2D SeedRT,float CaptureZ,FLinearColor Curl,UTextureRenderTarget2D DestRT,float ZOffset) {}
+	public void FindEdges_Debug(UTextureRenderTarget2D SeedRT,float CaptureZ,FLinearColor Curl,UTextureRenderTarget2D DestRT,float ZOffset) {}
 	///<summary>SingleBlurStep</summary>
-	public  UTextureRenderTarget2D SingleBlurStep() { return default; }
+	public UTextureRenderTarget2D SingleBlurStep() { return default; }
 	///<summary>JumpStepMaterial</summary>
 	public UMaterialInterface JumpStepMaterial;
 	///<summary>FindEdgesMaterial</summary>

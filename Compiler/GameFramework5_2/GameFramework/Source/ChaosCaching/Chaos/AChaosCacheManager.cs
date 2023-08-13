@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Chaos/CacheManagerActor.h")]
@@ -13,17 +12,17 @@ public partial class AChaosCacheManager : AActor {
 	///<summary>Defines the (random access) time that represents the rest pose of the components managed by this cache.</summary>
 	public float StartTime;
 	///<summary>Expose StartTime property to Sequencer. GetStartTime will be called on keys.</summary>
-	public  void SetStartTime(float InStartTime) {}
+	public void SetStartTime(float InStartTime) {}
 	///<summary>Resets all components back to the world space transform they had when the cache for them was originally recorded</summary>
-	public  void ResetAllComponentTransforms() {}
+	public void ResetAllComponentTransforms() {}
 	///<summary>Resets the component at the specified index in the observed list back to the world space transform it had when the</summary>
-	public  void ResetSingleTransform(int InIndex) {}
+	public void ResetSingleTransform(int InIndex) {}
 	///<summary>Triggers a component to play or record.</summary>
-	public  void TriggerComponent(UPrimitiveComponent InComponent) {}
+	public void TriggerComponent(UPrimitiveComponent InComponent) {}
 	///<summary>Triggers a component to play or record.</summary>
-	public  void TriggerComponentByCache(string InCacheName) {}
+	public void TriggerComponentByCache(string InCacheName) {}
 	///<summary>Triggers the recording or playback of all observed components</summary>
-	public  void TriggerAll() {}
+	public void TriggerAll() {}
 	///<summary>List of observed objects and their caches</summary>
 	public TArray<FObservedComponent> ObservedComponents;
 }

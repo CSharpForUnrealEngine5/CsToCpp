@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>NavMovementComponent defines base functionality for MovementComponents that move any &#39;agent&#39; that may be involved in AI pathfinding.</summary>
@@ -20,17 +19,17 @@ public partial class UNavMovementComponent : UMovementComponent {
 	///<summary>object implementing IPathFollowingAgentInterface. Is private to control access to it.</summary>
 	public UObject PathFollowingComp;
 	///<summary>Stops applying further movement (usually zeros acceleration).</summary>
-	public  void StopActiveMovement() {}
+	public virtual void StopActiveMovement() {}
 	///<summary>Stops movement immediately (reset velocity) but keeps following current path</summary>
-	public  void StopMovementKeepPathing() {}
+	public void StopMovementKeepPathing() {}
 	///<summary>Returns true if currently crouching</summary>
-	public  bool IsCrouching() { return default; }
+	public virtual bool IsCrouching() { return default; }
 	///<summary>Returns true if currently falling (not flying, in a non-fluid volume, and not on the ground)</summary>
-	public  bool IsFalling() { return default; }
+	public virtual bool IsFalling() { return default; }
 	///<summary>Returns true if currently moving on the ground (e.g. walking or driving)</summary>
-	public  bool IsMovingOnGround() { return default; }
+	public virtual bool IsMovingOnGround() { return default; }
 	///<summary>Returns true if currently swimming (moving through a fluid volume)</summary>
-	public  bool IsSwimming() { return default; }
+	public virtual bool IsSwimming() { return default; }
 	///<summary>Returns true if currently flying (moving through a non-fluid volume without resting on the ground)</summary>
-	public  bool IsFlying() { return default; }
+	public virtual bool IsFlying() { return default; }
 }

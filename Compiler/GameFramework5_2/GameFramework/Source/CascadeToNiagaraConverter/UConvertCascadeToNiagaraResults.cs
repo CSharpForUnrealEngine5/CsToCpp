@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Wrapper class for passing results back from the ConvertCascadeToNiagara python script.</summary>
@@ -6,7 +5,7 @@ using CSharpToCpp.Utilities;
 public partial class UConvertCascadeToNiagaraResults : UObject {
 	public static UClass StaticClass() {return default;}
 	///<summary>Init</summary>
-	public  void Init() {}
+	public void Init() {}
 	///<summary>Whether the converter process was cancelled by the user.</summary>
 	public bool bCancelledByUser;
 	///<summary>Whether the converter process was cancelled due to an unrecoverable error in the python script process.</summary>

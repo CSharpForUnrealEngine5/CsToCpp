@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>A slot for UGridPanel, these slots all share the same size as the largest slot</summary>
@@ -24,21 +23,21 @@ public partial class UGridSlot : UPanelSlot {
 	///<summary>Offset this slot&#39;s content by some amount; positive values offset to lower right</summary>
 	public FVector2D Nudge;
 	///<summary>SetPadding</summary>
-	public  void SetPadding(FMargin InPadding) {}
+	public void SetPadding(FMargin InPadding) {}
 	///<summary>Sets the row index of the slot, this determines what cell the slot is in the panel</summary>
-	public  void SetRow(int InRow) {}
+	public void SetRow(int InRow) {}
 	///<summary>How many rows this this slot spans over</summary>
-	public  void SetRowSpan(int InRowSpan) {}
+	public void SetRowSpan(int InRowSpan) {}
 	///<summary>Sets the column index of the slot, this determines what cell the slot is in the panel</summary>
-	public  void SetColumn(int InColumn) {}
+	public void SetColumn(int InColumn) {}
 	///<summary>How many columns this slot spans over</summary>
-	public  void SetColumnSpan(int InColumnSpan) {}
+	public void SetColumnSpan(int InColumnSpan) {}
 	///<summary>Sets positive values offset this cell to be hit-tested and drawn on top of others.</summary>
-	public  void SetLayer(int InLayer) {}
+	public void SetLayer(int InLayer) {}
 	///<summary>Sets the offset for this slot&#39;s content by some amount; positive values offset to lower right</summary>
-	public  void SetNudge(FVector2D InNudge) {}
+	public void SetNudge(FVector2D InNudge) {}
 	///<summary>SetHorizontalAlignment</summary>
-	public  void SetHorizontalAlignment(EHorizontalAlignment InHorizontalAlignment) {}
+	public void SetHorizontalAlignment(EHorizontalAlignment InHorizontalAlignment) {}
 	///<summary>SetVerticalAlignment</summary>
-	public  void SetVerticalAlignment(EVerticalAlignment InVerticalAlignment) {}
+	public void SetVerticalAlignment(EVerticalAlignment InVerticalAlignment) {}
 }

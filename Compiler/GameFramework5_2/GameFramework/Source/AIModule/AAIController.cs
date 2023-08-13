@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>AIController is the base class of controllers for AI-controlled Pawns.</summary>
@@ -34,49 +33,49 @@ public partial class AAIController : AController {
 	///<summary>DefaultNavigationFilterClass</summary>
 	public UClass DefaultNavigationFilterClass;
 	///<summary>Makes AI go toward specified Goal actor (destination will be continuously updated), aborts any active path following</summary>
-	public  EPathFollowingRequestResult MoveToActor(AActor Goal,float AcceptanceRadius/*=-1f*/,bool bStopOnOverlap/*=true*/,bool bUsePathfinding/*=true*/,bool bCanStrafe/*=true*/,UClass FilterClass/*=NULL*/,bool bAllowPartialPath/*=true*/) { return default; }
+	public EPathFollowingRequestResult MoveToActor(AActor Goal,float AcceptanceRadius/*=-1f*/,bool bStopOnOverlap/*=true*/,bool bUsePathfinding/*=true*/,bool bCanStrafe/*=true*/,UClass FilterClass/*=NULL*/,bool bAllowPartialPath/*=true*/) { return default; }
 	///<summary>Makes AI go toward specified Dest location, aborts any active path following</summary>
-	public  EPathFollowingRequestResult MoveToLocation(FVector Dest,float AcceptanceRadius/*=-1f*/,bool bStopOnOverlap/*=true*/,bool bUsePathfinding/*=true*/,bool bProjectDestinationToNavigation/*=false*/,bool bCanStrafe/*=true*/,UClass FilterClass/*=NULL*/,bool bAllowPartialPath/*=true*/) { return default; }
+	public EPathFollowingRequestResult MoveToLocation(FVector Dest,float AcceptanceRadius/*=-1f*/,bool bStopOnOverlap/*=true*/,bool bUsePathfinding/*=true*/,bool bProjectDestinationToNavigation/*=false*/,bool bCanStrafe/*=true*/,UClass FilterClass/*=NULL*/,bool bAllowPartialPath/*=true*/) { return default; }
 	///<summary>Blueprint notification that we&#39;ve completed the current movement request</summary>
 	public FAIMoveCompletedSignature ReceiveMoveCompleted;
 	///<summary>Returns status of path following</summary>
-	public  EPathFollowingStatus GetMoveStatus() { return default; }
+	public EPathFollowingStatus GetMoveStatus() { return default; }
 	///<summary>Returns true if the current PathFollowingComponent&#39;s path is partial (does not reach desired destination).</summary>
-	public  bool HasPartialPath() { return default; }
+	public bool HasPartialPath() { return default; }
 	///<summary>Returns position of current path segment&#39;s end.</summary>
-	public  FVector GetImmediateMoveDestination() { return default; }
+	public FVector GetImmediateMoveDestination() { return default; }
 	///<summary>Updates state of movement block detection.</summary>
-	public  void SetMoveBlockDetection(bool bEnable) {}
+	public void SetMoveBlockDetection(bool bEnable) {}
 	///<summary>Starts executing behavior tree.</summary>
-	public  bool RunBehaviorTree(UBehaviorTree BTAsset) { return default; }
+	public virtual bool RunBehaviorTree(UBehaviorTree BTAsset) { return default; }
 	///<summary>Makes AI use the specified Blackboard asset &amp; creates a Blackboard Component if one does not already exist.</summary>
-	public  bool UseBlackboard(UBlackboardData BlackboardAsset,UBlackboardComponent BlackboardComponent) { return default; }
+	public bool UseBlackboard(UBlackboardData BlackboardAsset,UBlackboardComponent BlackboardComponent) { return default; }
 	///<summary>ClaimTaskResource</summary>
-	public  void ClaimTaskResource(UClass ResourceClass) {}
+	public void ClaimTaskResource(UClass ResourceClass) {}
 	///<summary>UnclaimTaskResource</summary>
-	public  void UnclaimTaskResource(UClass ResourceClass) {}
+	public void UnclaimTaskResource(UClass ResourceClass) {}
 	///<summary>OnUsingBlackBoard</summary>
-	public  void OnUsingBlackBoard(UBlackboardComponent BlackboardComp,UBlackboardData BlackboardAsset) {}
+	public void OnUsingBlackBoard(UBlackboardComponent BlackboardComp,UBlackboardData BlackboardAsset) {}
 	///<summary>Retrieve the final position that controller should be looking at.</summary>
-	public  FVector GetFocalPoint() { return default; }
+	public FVector GetFocalPoint() { return default; }
 	///<summary>Retrieve the focal point this controller should focus to on given actor.</summary>
-	public  FVector GetFocalPointOnActor(AActor Actor) { return default; }
+	public virtual FVector GetFocalPointOnActor(AActor Actor) { return default; }
 	///<summary>Set the position that controller should be looking at.</summary>
-	public  void K2_SetFocalPoint(FVector FP) {}
+	public void K2_SetFocalPoint(FVector FP) {}
 	///<summary>Set Focus for actor, will set FocalPoint as a result.</summary>
-	public  void K2_SetFocus(AActor NewFocus) {}
+	public void K2_SetFocus(AActor NewFocus) {}
 	///<summary>Get the focused actor.</summary>
-	public  AActor GetFocusActor() { return default; }
+	public AActor GetFocusActor() { return default; }
 	///<summary>Clears Focus, will also clear FocalPoint as a result</summary>
-	public  void K2_ClearFocus() {}
+	public void K2_ClearFocus() {}
 	///<summary>OnGameplayTaskResourcesClaimed</summary>
-	public  void OnGameplayTaskResourcesClaimed(FGameplayResourceSet NewlyClaimed,FGameplayResourceSet FreshlyReleased) {}
+	public virtual void OnGameplayTaskResourcesClaimed(FGameplayResourceSet NewlyClaimed,FGameplayResourceSet FreshlyReleased) {}
 	///<summary>Returns PathFollowingComponent subobject *</summary>
-	public  UPathFollowingComponent GetPathFollowingComponent() { return default; }
+	public UPathFollowingComponent GetPathFollowingComponent() { return default; }
 	///<summary>GetAIPerceptionComponent</summary>
-	public  UAIPerceptionComponent GetAIPerceptionComponent() { return default; }
+	public UAIPerceptionComponent GetAIPerceptionComponent() { return default; }
 	///<summary>Note that this function does not do any pathfollowing state transfer.</summary>
-	public  void SetPathFollowingComponent(UPathFollowingComponent NewPFComponent) {}
+	public void SetPathFollowingComponent(UPathFollowingComponent NewPFComponent) {}
 	///<summary>GetDeprecatedActionsComponent</summary>
-	public  UDEPRECATED_PawnActionsComponent GetDeprecatedActionsComponent() { return default; }
+	public UDEPRECATED_PawnActionsComponent GetDeprecatedActionsComponent() { return default; }
 }

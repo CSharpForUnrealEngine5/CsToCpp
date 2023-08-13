@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("ToolMenusBlueprintLibrary.h")]
@@ -17,17 +16,17 @@ public partial class UToolMenuEntryExtensions : UObject {
 	///<summary>BreakToolMenuOwner</summary>
 	public static void BreakToolMenuOwner(FToolMenuOwner InValue,string Name) {}
 	///<summary>SetLabel</summary>
-	public static void SetLabel(FToolMenuEntry Target,string Label) {}
+	public static void SetLabel(FToolMenuEntry Target,FText Label) {}
 	///<summary>GetLabel</summary>
-	public static string GetLabel(FToolMenuEntry Target) { return default; }
+	public static FText GetLabel(FToolMenuEntry Target) { return default; }
 	///<summary>SetToolTip</summary>
-	public static void SetToolTip(FToolMenuEntry Target,string ToolTip) {}
+	public static void SetToolTip(FToolMenuEntry Target,FText ToolTip) {}
 	///<summary>GetToolTip</summary>
-	public static string GetToolTip(FToolMenuEntry Target) { return default; }
+	public static FText GetToolTip(FToolMenuEntry Target) { return default; }
 	///<summary>SetIcon</summary>
 	public static void SetIcon(FToolMenuEntry Target,string StyleSetName,string StyleName/*=NAME_None*/,string SmallStyleName/*=NAME_None*/) {}
 	///<summary>SetStringCommand</summary>
 	public static void SetStringCommand(FToolMenuEntry Target,EToolMenuStringCommandType Type,string CustomType,string String) {}
 	///<summary>InitMenuEntry</summary>
-	public static FToolMenuEntry InitMenuEntry(string InOwner,string InName,string InLabel,string InToolTip,EToolMenuStringCommandType CommandType,string CustomCommandType,string CommandString) { return default; }
+	public static FToolMenuEntry InitMenuEntry(string InOwner,string InName,FText InLabel,FText InToolTip,EToolMenuStringCommandType CommandType,string CustomCommandType,string CommandString) { return default; }
 }

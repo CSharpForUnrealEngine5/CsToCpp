@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Sound Submix class meant for sending audio to an external endpoint, such as controller haptics or an additional audio device.</summary>

@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>The combobox allows you to display a list of options to the user in a dropdown menu for them to select one.</summary>
@@ -6,11 +5,11 @@ using CSharpToCpp.Utilities;
 public partial class UComboBoxKey : UWidget {
 	public static UClass StaticClass() {return default;}
 	///<summary>FOnSelectionChangedEvent</summary>
-	public  void FOnSelectionChangedEvent(string SelectedItem,ESelectInfo SelectionType) {}
+	public void FOnSelectionChangedEvent(string SelectedItem,ESelectInfo SelectionType) {}
 	///<summary>FOnOpeningEvent</summary>
-	public  void FOnOpeningEvent() {}
+	public void FOnOpeningEvent() {}
 	///<summary>FGenerateWidgetEvent</summary>
-	public  UWidget FGenerateWidgetEvent(string Item) { return default; }
+	public UWidget FGenerateWidgetEvent(string Item) { return default; }
 	///<summary>Options</summary>
 	public TArray<string> Options;
 	///<summary>SelectedOption</summary>
@@ -42,17 +41,17 @@ public partial class UComboBoxKey : UWidget {
 	///<summary>Called when the combobox is opening</summary>
 	public FOnOpeningEvent OnOpening;
 	///<summary>Add an element to the option list.</summary>
-	public  void AddOption(string Option) {}
+	public void AddOption(string Option) {}
 	///<summary>Remove an element to the option list.</summary>
-	public  bool RemoveOption(string Option) { return default; }
+	public bool RemoveOption(string Option) { return default; }
 	///<summary>Remove all the elements of the option list.</summary>
-	public  void ClearOptions() {}
+	public void ClearOptions() {}
 	///<summary>Clear the current selection.</summary>
-	public  void ClearSelection() {}
+	public void ClearSelection() {}
 	///<summary>Set the current selected option.</summary>
-	public  void SetSelectedOption(string Option) {}
+	public void SetSelectedOption(string Option) {}
 	///<summary>Get the current selected option</summary>
-	public  string GetSelectedOption() { return default; }
+	public string GetSelectedOption() { return default; }
 	///<summary>Is the combobox menu opened.</summary>
-	public  bool IsOpen() { return default; }
+	public bool IsOpen() { return default; }
 }

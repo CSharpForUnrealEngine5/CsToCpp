@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>UOctreeDynamicMeshComponent is a mesh component similar to UProceduralMeshComponent,</summary>
@@ -8,5 +7,5 @@ public partial class UOctreeDynamicMeshComponent : UBaseDynamicMeshComponent {
 	///<summary>MeshObject</summary>
 	public UDynamicMesh MeshObject;
 	///<summary>SetDynamicMesh</summary>
-	public  void SetDynamicMesh(UDynamicMesh NewMesh) {}
+	public void SetDynamicMesh(UDynamicMesh NewMesh) {}
 }

@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>A generic class for FBX parser warnings, with no additional metadata, and where the text is specified by the user</summary>
@@ -6,7 +5,7 @@ using CSharpToCpp.Utilities;
 public partial class UInterchangeResultTextureWarning_TextureFileDoNotExist : UInterchangeResultTextureWarning {
 	public static UClass StaticClass() {return default;}
 	///<summary>Text</summary>
-	public string Text;
+	public FText Text;
 	///<summary>MaterialName</summary>
 	public string MaterialName;
 }

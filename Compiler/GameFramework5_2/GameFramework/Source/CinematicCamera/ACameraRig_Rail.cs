@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("CameraRig_Rail.h")]
@@ -13,7 +12,7 @@ public partial class ACameraRig_Rail : AActor {
 	///<summary>Determines the scale of the rail mesh preview</summary>
 	public float PreviewMeshScale;
 	///<summary>Returns the spline component that defines the rail path</summary>
-	public  USplineComponent GetRailSplineComponent() { return default; }
+	public USplineComponent GetRailSplineComponent() { return default; }
 	///<summary>Root component to give the whole actor a transform.</summary>
 	public USceneComponent TransformComponent;
 	///<summary>Spline component to define the rail path.</summary>

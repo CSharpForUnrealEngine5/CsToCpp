@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("K2Node_AnimGetter.h")]
@@ -13,7 +12,7 @@ public partial class UK2Node_AnimGetter : UK2Node_CallFunction {
 	///<summary>The anim blueprint that generated this getter</summary>
 	public UAnimBlueprint SourceAnimBlueprint;
 	///<summary>Cached node title</summary>
-	public string CachedTitle;
+	public FText CachedTitle;
 	///<summary>List of valid contexts for the node</summary>
 	public TArray<string> Contexts;
 }

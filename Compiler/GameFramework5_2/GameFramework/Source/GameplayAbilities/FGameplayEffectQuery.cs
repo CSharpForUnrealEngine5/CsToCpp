@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Every set condition within this query must match in order for the query to match. i.e. individual query elements are ANDed together.</summary>

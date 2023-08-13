@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("SynthComponents/SynthComponentToneGenerator.h")]
@@ -15,7 +14,7 @@ public partial class USynthComponentToneGenerator : USynthComponent {
 	///<summary>An attenuation, in decibels, to apply to the sound at max range.</summary>
 	public float AttenuationDbAtMaxRange;
 	///<summary>Sets the frequency of the tone generator</summary>
-	public  void SetFrequency(float InFrequency) {}
+	public void SetFrequency(float InFrequency) {}
 	///<summary>Sets the volume of the tone generator</summary>
-	public  void SetVolume(float InVolume) {}
+	public void SetVolume(float InVolume) {}
 }

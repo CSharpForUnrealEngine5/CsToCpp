@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Base class for settings-as-data in the PCG framework</summary>
@@ -20,9 +19,9 @@ public partial class UPCGSettings : UPCGSettingsInterface {
 	///<summary>bExposeToLibrary</summary>
 	public bool bExposeToLibrary;
 	///<summary>Category</summary>
-	public string Category;
+	public FText Category;
 	///<summary>Description</summary>
-	public string Description;
+	public FText Description;
 	///<summary>By default, settings won&#39;t use a seed. Set this bool to true in the child ctor to allow edition and use it.</summary>
 	public bool bUseSeed;
 	///<summary>Needs to be serialized since property metadata (used to populate this array) is not available at runtime.</summary>

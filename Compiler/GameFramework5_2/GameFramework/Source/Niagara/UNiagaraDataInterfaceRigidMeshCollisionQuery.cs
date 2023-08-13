@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Data Interface used to collide against static meshes - whether it is the mesh distance field or a physics asset&#39;s collision primitive</summary>

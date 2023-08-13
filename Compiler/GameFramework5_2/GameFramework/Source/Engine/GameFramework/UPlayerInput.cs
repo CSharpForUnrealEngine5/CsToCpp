@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Object within PlayerController that processes player input.</summary>
@@ -10,15 +9,15 @@ public partial class UPlayerInput : UObject {
 	///<summary>List of Axis Mappings that have been inverted</summary>
 	public TArray<string> InvertedAxis;
 	///<summary>Sets both X and Y axis sensitivity to the supplied value.</summary>
-	public  void SetMouseSensitivity(float Sensitivity) {}
+	public void SetMouseSensitivity(float Sensitivity) {}
 	///<summary>Exec function to add a debug exec command</summary>
-	public  void SetBind(string BindName,string Command) {}
+	public void SetBind(string BindName,string Command) {}
 	///<summary>Exec function to invert an axis key</summary>
-	public  void InvertAxisKey(FKey AxisKey) {}
+	public void InvertAxisKey(FKey AxisKey) {}
 	///<summary>Exec function to invert an axis mapping</summary>
-	public  void InvertAxis(string AxisName) {}
+	public void InvertAxis(string AxisName) {}
 	///<summary>Exec function to reset mouse smoothing values</summary>
-	public  void ClearSmoothing() {}
+	public void ClearSmoothing() {}
 	///<summary>Return&#39;s this object casted to a player controller. This can be null if there is no player controller.</summary>
-	public  APlayerController GetOuterAPlayerController() { return default; }
+	public APlayerController GetOuterAPlayerController() { return default; }
 }

@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>xyY color representation in the CIE 1931 color space, as typically used in GDTF and MVR</summary>

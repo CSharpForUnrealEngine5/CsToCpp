@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>A container for all accessible properties for a UWidget that will be passed to the underlying SWidget.</summary>
@@ -6,7 +5,7 @@ using CSharpToCpp.Utilities;
 public partial class USlateAccessibleWidgetData : UObject {
 	public static UClass StaticClass() {return default;}
 	///<summary>FGetText</summary>
-	public  string FGetText() { return default; }
+	public FText FGetText() { return default; }
 	///<summary>bCanChildrenBeAccessible</summary>
 	public bool bCanChildrenBeAccessible;
 	///<summary>AccessibleBehavior</summary>
@@ -14,11 +13,11 @@ public partial class USlateAccessibleWidgetData : UObject {
 	///<summary>AccessibleSummaryBehavior</summary>
 	public ESlateAccessibleBehavior AccessibleSummaryBehavior;
 	///<summary>AccessibleText</summary>
-	public string AccessibleText;
+	public FText AccessibleText;
 	///<summary>AccessibleTextDelegate</summary>
 	public FGetText AccessibleTextDelegate;
 	///<summary>AccessibleSummaryText</summary>
-	public string AccessibleSummaryText;
+	public FText AccessibleSummaryText;
 	///<summary>AccessibleSummaryTextDelegate</summary>
 	public FGetText AccessibleSummaryTextDelegate;
 }

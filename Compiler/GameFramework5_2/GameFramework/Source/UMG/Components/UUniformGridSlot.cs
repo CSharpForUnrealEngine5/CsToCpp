@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>A slot for UUniformGridPanel, these slots all share the same size as the largest slot</summary>
@@ -14,11 +13,11 @@ public partial class UUniformGridSlot : UPanelSlot {
 	///<summary>The column index of the cell this slot is in</summary>
 	public int Column;
 	///<summary>Sets the row index of the slot, this determines what cell the slot is in the panel</summary>
-	public  void SetRow(int InRow) {}
+	public void SetRow(int InRow) {}
 	///<summary>Sets the column index of the slot, this determines what cell the slot is in the panel</summary>
-	public  void SetColumn(int InColumn) {}
+	public void SetColumn(int InColumn) {}
 	///<summary>SetHorizontalAlignment</summary>
-	public  void SetHorizontalAlignment(EHorizontalAlignment InHorizontalAlignment) {}
+	public void SetHorizontalAlignment(EHorizontalAlignment InHorizontalAlignment) {}
 	///<summary>SetVerticalAlignment</summary>
-	public  void SetVerticalAlignment(EVerticalAlignment InVerticalAlignment) {}
+	public void SetVerticalAlignment(EVerticalAlignment InVerticalAlignment) {}
 }

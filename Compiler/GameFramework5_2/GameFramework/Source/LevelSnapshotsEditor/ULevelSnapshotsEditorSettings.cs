@@ -1,11 +1,10 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("LevelSnapshotsEditorSettings.h")]
 public partial class ULevelSnapshotsEditorSettings : UObject {
 	public static UClass StaticClass() {return default;}
 	///<summary>ParseLevelSnapshotsTokensInText</summary>
-	public static string ParseLevelSnapshotsTokensInText(string InTextToParse,string InWorldName) { return default; }
+	public static FText ParseLevelSnapshotsTokensInText(FText InTextToParse,string InWorldName) { return default; }
 	///<summary>The base directory in which all snapshots will be saved. LevelSnapshotSaveDir specifies in which subdirectory snapshots are saved.</summary>
 	public FDirectoryPath RootLevelSnapshotSaveDir;
 	///<summary>The format to use for the resulting filename. Extension will be added automatically. Any tokens of the form {token} will be replaced with the corresponding value:</summary>

@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Materials/MaterialInterface.h")]
@@ -33,17 +32,17 @@ public partial class UMaterialInterface : UObject {
 	///<summary>Unique ID for this material, used for caching during distributed lighting</summary>
 	public FGuid LightingGuid;
 	///<summary>Walks up parent chain and finds the base Material that this is an instance of. Just calls the virtual GetMaterial()</summary>
-	public  UMaterial GetBaseMaterial() { return default; }
+	public UMaterial GetBaseMaterial() { return default; }
 	///<summary>Return a pointer to the physical material used by this material instance.</summary>
-	public  UPhysicalMaterial GetPhysicalMaterial() { return default; }
+	public virtual UPhysicalMaterial GetPhysicalMaterial() { return default; }
 	///<summary>Return a pointer to the physical material mask used by this material instance.</summary>
-	public  UPhysicalMaterialMask GetPhysicalMaterialMask() { return default; }
+	public virtual UPhysicalMaterialMask GetPhysicalMaterialMask() { return default; }
 	///<summary>Return a pointer to the physical material from mask map at given index.</summary>
-	public  UPhysicalMaterial GetPhysicalMaterialFromMap(int Index) { return default; }
+	public virtual UPhysicalMaterial GetPhysicalMaterialFromMap(int Index) { return default; }
 	///<summary>GetParameterInfo</summary>
-	public  FMaterialParameterInfo GetParameterInfo(EMaterialParameterAssociation Association,string ParameterName,UMaterialFunctionInterface LayerFunction) { return default; }
+	public FMaterialParameterInfo GetParameterInfo(EMaterialParameterAssociation Association,string ParameterName,UMaterialFunctionInterface LayerFunction) { return default; }
 	///<summary>GetBlendMode</summary>
-	public  EBlendMode GetBlendMode() { return default; }
+	public virtual EBlendMode GetBlendMode() { return default; }
 	///<summary>Force the streaming system to disregard the normal logic for the specified duration and</summary>
-	public  void SetForceMipLevelsToBeResident(bool OverrideForceMiplevelsToBeResident,bool bForceMiplevelsToBeResidentValue,float ForceDuration,int CinematicTextureGroups/*=0*/,bool bFastResponse/*=false*/) {}
+	public virtual void SetForceMipLevelsToBeResident(bool OverrideForceMiplevelsToBeResident,bool bForceMiplevelsToBeResidentValue,float ForceDuration,int CinematicTextureGroups/*=0*/,bool bFastResponse/*=false*/) {}
 }

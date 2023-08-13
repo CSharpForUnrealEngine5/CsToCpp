@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Function library containing methods that should be hoisted onto FMovieSceneBindingProxies for scripting</summary>
@@ -10,9 +9,9 @@ public partial class UMovieSceneBindingExtensions : UBlueprintFunctionLibrary {
 	///<summary>Get this binding&#39;s ID</summary>
 	public static FGuid GetId(FMovieSceneBindingProxy InBinding) { return default; }
 	///<summary>Get this binding&#39;s name</summary>
-	public static string GetDisplayName(FMovieSceneBindingProxy InBinding) { return default; }
+	public static FText GetDisplayName(FMovieSceneBindingProxy InBinding) { return default; }
 	///<summary>Set this binding&#39;s name</summary>
-	public static void SetDisplayName(FMovieSceneBindingProxy InBinding,string InDisplayName) {}
+	public static void SetDisplayName(FMovieSceneBindingProxy InBinding,FText InDisplayName) {}
 	///<summary>Get this binding&#39;s object non-display name</summary>
 	public static string GetName(FMovieSceneBindingProxy InBinding) { return default; }
 	///<summary>Set this binding&#39;s object non-display name</summary>

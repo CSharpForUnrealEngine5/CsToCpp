@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>An agent element is any object that can be attached to an agent. Base class for UMLAdapterSensor and UMLAdapterActuator.</summary>

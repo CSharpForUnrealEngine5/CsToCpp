@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>The core ActorComponent for interfacing with the GameplayAbilities System</summary>
@@ -16,7 +15,7 @@ public partial class UGameplayTasksComponent : UActorComponent {
 	///<summary>OnClaimedResourcesChange</summary>
 	public FOnClaimedResourcesChangeSignature OnClaimedResourcesChange;
 	///<summary>OnRep_SimulatedTasks</summary>
-	public  void OnRep_SimulatedTasks(TArray<UGameplayTask> PreviousSimulatedTasks) {}
+	public void OnRep_SimulatedTasks(TArray<UGameplayTask> PreviousSimulatedTasks) {}
 	///<summary>K2_RunGameplayTask</summary>
 	public static EGameplayTaskRunResult K2_RunGameplayTask(object /*TaskOwner*/ TaskOwner,UGameplayTask Task,byte Priority,TArray<UClass> AdditionalRequiredResources,TArray<UClass> AdditionalClaimedResources) { return default; }
 	///<summary>Tasks that run on simulated proxies</summary>

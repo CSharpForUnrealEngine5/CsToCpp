@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>A beacon client used for making reservations with an existing game session</summary>
@@ -6,7 +5,7 @@ using CSharpToCpp.Utilities;
 public partial class ATestBeaconClient : AOnlineBeaconClient {
 	public static UClass StaticClass() {return default;}
 	///<summary>Send a ping RPC to the client</summary>
-	public  void ClientPing() {}
+	public virtual void ClientPing() {}
 	///<summary>Send a pong RPC to the host</summary>
-	public  void ServerPong() {}
+	public virtual void ServerPong() {}
 }

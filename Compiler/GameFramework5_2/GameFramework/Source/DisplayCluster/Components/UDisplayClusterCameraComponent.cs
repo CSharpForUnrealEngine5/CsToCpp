@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>3D point in space used to render nDisplay viewports from</summary>
@@ -6,19 +5,19 @@ using CSharpToCpp.Utilities;
 public partial class UDisplayClusterCameraComponent : USceneComponent {
 	public static UClass StaticClass() {return default;}
 	///<summary>Get interpupillary distance</summary>
-	public  float GetInterpupillaryDistance() { return default; }
+	public float GetInterpupillaryDistance() { return default; }
 	///<summary>Set interpupillary distance</summary>
-	public  void SetInterpupillaryDistance(float Distance) {}
+	public void SetInterpupillaryDistance(float Distance) {}
 	///<summary>Get swap eyes state</summary>
-	public  bool GetSwapEyes() { return default; }
+	public bool GetSwapEyes() { return default; }
 	///<summary>Set swap eyes state</summary>
-	public  void SetSwapEyes(bool SwapEyes) {}
+	public void SetSwapEyes(bool SwapEyes) {}
 	///<summary>Toggles eyes swap state</summary>
-	public  bool ToggleSwapEyes() { return default; }
+	public bool ToggleSwapEyes() { return default; }
 	///<summary>Get stereo offset type</summary>
-	public  EDisplayClusterEyeStereoOffset GetStereoOffset() { return default; }
+	public EDisplayClusterEyeStereoOffset GetStereoOffset() { return default; }
 	///<summary>Set stereo offset type</summary>
-	public  void SetStereoOffset(EDisplayClusterEyeStereoOffset InStereoOffset) {}
+	public void SetStereoOffset(EDisplayClusterEyeStereoOffset InStereoOffset) {}
 	///<summary>Gizmo visibility</summary>
 	public bool bEnableGizmo;
 	///<summary>Base gizmo scale</summary>

@@ -1,11 +1,10 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("TrackRecorders/MovieSceneAnimationTrackRecorderSettings.h")]
 public partial class UMovieSceneAnimationTrackRecorderEditorSettings : UMovieSceneTrackRecorderSettings {
 	public static UClass StaticClass() {return default;}
 	///<summary>Name of the recorded animation track.</summary>
-	public string AnimationTrackName;
+	public FText AnimationTrackName;
 	///<summary>The name of the animation asset.</summary>
 	public string AnimationAssetName;
 	///<summary>The name of the subdirectory animations will be placed in. Leave this empty to place into the same directory as the sequence base path.</summary>

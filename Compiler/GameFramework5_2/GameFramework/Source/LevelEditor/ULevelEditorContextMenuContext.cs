@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("LevelEditorMenuContext.h")]
@@ -15,5 +14,5 @@ public partial class ULevelEditorContextMenuContext : UObject {
 	///<summary>If the ContextType is Viewport this property can be set to the HitProxy actor that triggered the ContextMenu.</summary>
 	public TWeakObjectPtr<AActor> HitProxyActor;
 	///<summary>GetScriptHitProxyElement</summary>
-	public  FScriptTypedElementHandle GetScriptHitProxyElement() { return default; }
+	public FScriptTypedElementHandle GetScriptHitProxyElement() { return default; }
 }

@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("ProceduralFoliageSpawner.h")]
@@ -15,5 +14,5 @@ public partial class UProceduralFoliageSpawner : UObject {
 	///<summary>The types of foliage to procedurally spawn.</summary>
 	public TArray<FFoliageTypeObject> FoliageTypes;
 	///<summary>Simulate</summary>
-	public  void Simulate(int NumSteps/*=-1*/) {}
+	public void Simulate(int NumSteps/*=-1*/) {}
 }

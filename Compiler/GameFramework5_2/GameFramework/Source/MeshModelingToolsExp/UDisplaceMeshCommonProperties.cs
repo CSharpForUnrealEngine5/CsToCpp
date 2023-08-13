@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>The basic set of properties shared by (more or less) all DisplacementTypes.</summary>
@@ -18,7 +17,7 @@ public partial class UDisplaceMeshCommonProperties : UInteractiveToolPropertySet
 	///<summary>Select vertex weight map. If configured, the weight map value will be sampled to modulate displacement intensity.</summary>
 	public string WeightMap;
 	///<summary>GetWeightMapsFunc</summary>
-	public  TArray<string> GetWeightMapsFunc() { return default; }
+	public TArray<string> GetWeightMapsFunc() { return default; }
 	///<summary>WeightMapsList</summary>
 	public TArray<string> WeightMapsList;
 	///<summary>bInvertWeightMap</summary>

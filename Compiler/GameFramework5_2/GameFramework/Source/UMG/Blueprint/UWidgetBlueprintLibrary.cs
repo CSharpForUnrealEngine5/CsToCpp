@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Blueprint/WidgetBlueprintLibrary.h")]
@@ -27,7 +26,7 @@ public partial class UWidgetBlueprintLibrary : UBlueprintFunctionLibrary {
 	///<summary>Draws text.</summary>
 	public static void DrawText(FPaintContext Context,string InString,FVector2D Position,FLinearColor Tint/*=FLinearColor.White*/) {}
 	///<summary>Draws text.</summary>
-	public static void DrawTextFormatted(FPaintContext Context,string Text,FVector2D Position,UFont Font,int FontSize/*=16*/,string FontTypeFace/*=new FName(TEXT("Regular"))*/,FLinearColor Tint/*=FLinearColor.White*/) {}
+	public static void DrawTextFormatted(FPaintContext Context,FText Text,FVector2D Position,UFont Font,int FontSize/*=16*/,string FontTypeFace/*=new FName(TEXT("Regular"))*/,FLinearColor Tint/*=FLinearColor.White*/) {}
 	///<summary>The event reply to use when you choose to handle an event.  This will prevent the event</summary>
 	public static FEventReply Handled() { return default; }
 	///<summary>The event reply to use when you choose not to handle an event.</summary>
@@ -109,7 +108,7 @@ public partial class UWidgetBlueprintLibrary : UBlueprintFunctionLibrary {
 	///<summary>RestorePreviousWindowTitleBarState</summary>
 	public static void RestorePreviousWindowTitleBarState() {}
 	///<summary>FOnGameWindowCloseButtonClickedDelegate</summary>
-	public  void FOnGameWindowCloseButtonClickedDelegate() {}
+	public void FOnGameWindowCloseButtonClickedDelegate() {}
 	///<summary>SetWindowTitleBarOnCloseClickedDelegate</summary>
 	public static void SetWindowTitleBarOnCloseClickedDelegate(FOnGameWindowCloseButtonClickedDelegate Delegate) {}
 	///<summary>SetWindowTitleBarCloseButtonActive</summary>

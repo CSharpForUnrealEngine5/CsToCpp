@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("EdGraph/EdGraphPin.h")]
@@ -7,7 +6,7 @@ public partial class UEdGraphPin_Deprecated : UObject {
 	///<summary>Name of this pin</summary>
 	public string PinName;
 	///<summary>Used as the display name if set</summary>
-	public string PinFriendlyName;
+	public FText PinFriendlyName;
 	///<summary>The tool-tip describing this pin&#39;s purpose</summary>
 	public string PinToolTip;
 	///<summary>Direction of flow of this pin (input or output)</summary>
@@ -21,7 +20,7 @@ public partial class UEdGraphPin_Deprecated : UObject {
 	///<summary>If the default value for this pin should be an object, we store a pointer to it</summary>
 	public UObject DefaultObject;
 	///<summary>If the default value for this pin should be an FText, it is stored here.</summary>
-	public string DefaultTextValue;
+	public FText DefaultTextValue;
 	///<summary>Set of pins that we are linked to</summary>
 	public TArray<UEdGraphPin_Deprecated> LinkedTo;
 	///<summary>The pins created when a pin is split and hidden</summary>

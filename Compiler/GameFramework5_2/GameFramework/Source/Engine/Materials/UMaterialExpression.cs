@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Materials/MaterialExpression.h")]
@@ -43,7 +42,7 @@ public partial class UMaterialExpression : UObject {
 	///<summary>Whether to draw the expression&#39;s outputs.</summary>
 	public bool bShowOutputs;
 	///<summary>Localized categories to sort this expression into...</summary>
-	public TArray<string> MenuCategories;
+	public TArray<FText> MenuCategories;
 	///<summary>The expression&#39;s outputs, which are set in default properties by derived classes.</summary>
 	public TArray<FExpressionOutput> Outputs;
 }

@@ -1,17 +1,16 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Components/WorldPartitionStreamingSourceComponent.h")]
 public partial class UWorldPartitionStreamingSourceComponent : UActorComponent {
 	public static UClass StaticClass() {return default;}
 	///<summary>Enable the component</summary>
-	public  void EnableStreamingSource() {}
+	public void EnableStreamingSource() {}
 	///<summary>Disable the component</summary>
-	public  void DisableStreamingSource() {}
+	public void DisableStreamingSource() {}
 	///<summary>Returns true if the component is active.</summary>
-	public  bool IsStreamingSourceEnabled() { return default; }
+	public bool IsStreamingSourceEnabled() { return default; }
 	///<summary>Returns true if streaming is completed for this streaming source component.</summary>
-	public  bool IsStreamingCompleted() { return default; }
+	public bool IsStreamingCompleted() { return default; }
 	///<summary>Value used by debug visualizer when grid loading range is chosen.</summary>
 	public float DefaultVisualizerLoadingRange;
 	///<summary>When TargetGrids or TargetHLODLayers are specified, this indicates the behavior.</summary>

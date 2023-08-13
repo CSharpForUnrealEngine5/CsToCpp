@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>* This object is used to wrap a bone compression codec. It allows a clean integration in the editor by avoiding the need</summary>

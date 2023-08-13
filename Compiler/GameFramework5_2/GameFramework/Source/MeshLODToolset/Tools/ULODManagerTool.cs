@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Mesh Attribute Editor Tool</summary>
@@ -14,11 +13,11 @@ public partial class ULODManagerTool : UMultiSelectionMeshEditingTool {
 	///<summary>MaterialActions</summary>
 	public ULODManagerMaterialActions MaterialActions;
 	///<summary>DeleteHiResSourceModel</summary>
-	public  void DeleteHiResSourceModel() {}
+	public void DeleteHiResSourceModel() {}
 	///<summary>MoveHiResToLOD0</summary>
-	public  void MoveHiResToLOD0() {}
+	public void MoveHiResToLOD0() {}
 	///<summary>RemoveUnreferencedMaterials</summary>
-	public  void RemoveUnreferencedMaterials() {}
+	public void RemoveUnreferencedMaterials() {}
 	///<summary>LODPreview</summary>
 	public UPreviewMesh LODPreview;
 	///<summary>LODPreviewLines</summary>

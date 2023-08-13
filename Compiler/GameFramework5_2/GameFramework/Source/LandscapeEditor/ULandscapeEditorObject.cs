@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("LandscapeEditorObject.h")]
@@ -125,7 +124,7 @@ public partial class ULandscapeEditorObject : UObject {
 	///<summary>ImportLandscape_HeightmapImportResult</summary>
 	public ELandscapeImportResult ImportLandscape_HeightmapImportResult;
 	///<summary>ImportLandscape_HeightmapErrorMessage</summary>
-	public string ImportLandscape_HeightmapErrorMessage;
+	public FText ImportLandscape_HeightmapErrorMessage;
 	///<summary>Specify a height map file in 16-bit RAW or PNG format</summary>
 	public string ImportLandscape_HeightmapFilename;
 	///<summary>ImportLandscape_Width</summary>

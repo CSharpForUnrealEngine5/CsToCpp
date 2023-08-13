@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Key value type for object path channels that stores references to objects as both a hard and soft reference, to ensure compatability with both sub objects and async loading</summary>

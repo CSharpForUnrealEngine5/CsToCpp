@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Default implementation of a gerstner wave generator using a simple custom range based set of parameters to generate waves.</summary>

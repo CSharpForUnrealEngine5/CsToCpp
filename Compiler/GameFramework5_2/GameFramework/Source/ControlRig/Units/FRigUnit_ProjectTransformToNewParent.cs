@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Gets the relative offset between the child and the old parent, then multiplies by new parent&#39;s transform.</summary>

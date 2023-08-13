@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Struct indicating a variable in the generated class</summary>
@@ -8,7 +7,7 @@ public partial struct FBPVariableDescription {
 	public FGuid VarGuid;
 	public FEdGraphPinType VarType;
 	public string FriendlyName;
-	public string Category;
+	public FText Category;
 	public ulong PropertyFlags;
 	public string RepNotifyFunc;
 	public ELifetimeCondition ReplicationCondition;

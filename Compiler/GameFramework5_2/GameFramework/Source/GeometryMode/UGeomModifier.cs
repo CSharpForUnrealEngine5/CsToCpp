@@ -1,13 +1,12 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("GeomModifier.h")]
 public partial class UGeomModifier : UObject {
 	public static UClass StaticClass() {return default;}
 	///<summary>A human readable name for this modifier (appears on buttons, menus, etc)</summary>
-	public string Description;
+	public FText Description;
 	///<summary>The tooltip to be displayed for this modifier</summary>
-	public string Tooltip;
+	public FText Tooltip;
 	///<summary>Icon name for showing this modifier in a toolbar</summary>
 	public string ToolbarIconName;
 	///<summary>If true, this modifier should be displayed as a push button instead of a radio button</summary>

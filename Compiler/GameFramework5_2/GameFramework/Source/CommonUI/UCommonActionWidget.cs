@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>A widget that shows a platform-specific icon for the given input action.</summary>
@@ -6,21 +5,21 @@ using CSharpToCpp.Utilities;
 public partial class UCommonActionWidget : UWidget {
 	public static UClass StaticClass() {return default;}
 	///<summary>End UWidet</summary>
-	public  FSlateBrush GetIcon() { return default; }
+	public virtual FSlateBrush GetIcon() { return default; }
 	///<summary>GetDisplayText</summary>
-	public  string GetDisplayText() { return default; }
+	public FText GetDisplayText() { return default; }
 	///<summary>SetEnhancedInputAction</summary>
-	public  void SetEnhancedInputAction(UInputAction InInputAction) {}
+	public void SetEnhancedInputAction(UInputAction InInputAction) {}
 	///<summary>SetInputAction</summary>
-	public  void SetInputAction(FDataTableRowHandle InputActionRow) {}
+	public void SetInputAction(FDataTableRowHandle InputActionRow) {}
 	///<summary>SetInputActions</summary>
-	public  void SetInputActions(TArray<FDataTableRowHandle> NewInputActions) {}
+	public void SetInputActions(TArray<FDataTableRowHandle> NewInputActions) {}
 	///<summary>SetIconRimBrush</summary>
-	public  void SetIconRimBrush(FSlateBrush InIconRimBrush) {}
+	public void SetIconRimBrush(FSlateBrush InIconRimBrush) {}
 	///<summary>IsHeldAction</summary>
-	public  bool IsHeldAction() { return default; }
+	public bool IsHeldAction() { return default; }
 	///<summary>FOnInputMethodChanged</summary>
-	public  void FOnInputMethodChanged(bool bUsingGamepad) {}
+	public void FOnInputMethodChanged(bool bUsingGamepad) {}
 	///<summary>OnInputMethodChanged</summary>
 	public FOnInputMethodChanged OnInputMethodChanged;
 	///<summary>The material to use when showing held progress, the progress will be sent using the material parameter</summary>

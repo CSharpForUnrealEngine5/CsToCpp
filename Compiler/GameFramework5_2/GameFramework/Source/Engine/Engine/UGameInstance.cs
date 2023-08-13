@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>GameInstance: high-level manager object for an instance of the running game.</summary>
@@ -14,19 +13,19 @@ public partial class UGameInstance : UObject {
 	///<summary>gets triggered shortly after a pawn&#39;s controller is set. Most of the time</summary>
 	public FOnPawnControllerChanged OnPawnControllerChangedDelegates;
 	///<summary>Opportunity for blueprints to handle the game instance being initialized.</summary>
-	public  void ReceiveInit() {}
+	public void ReceiveInit() {}
 	///<summary>Opportunity for blueprints to handle the game instance being shutdown.</summary>
-	public  void ReceiveShutdown() {}
+	public void ReceiveShutdown() {}
 	///<summary>Callback for when an input device connection state has changed (a new gamepad was connected or disconnected)</summary>
 	public FOnUserInputDeviceConnectionChange OnInputDeviceConnectionChange;
 	///<summary>Callback when an input device has changed pairings (the owning platform user has changed for that device)</summary>
 	public FOnUserInputDevicePairingChange OnUserInputDevicePairingChange;
 	///<summary>Opportunity for blueprints to handle network errors.</summary>
-	public  void HandleNetworkError(ENetworkFailure FailureType,bool bIsServer) {}
+	public void HandleNetworkError(ENetworkFailure FailureType,bool bIsServer) {}
 	///<summary>Opportunity for blueprints to handle travel errors.</summary>
-	public  void HandleTravelError(ETravelFailure FailureType) {}
+	public void HandleTravelError(ETravelFailure FailureType) {}
 	///<summary>Debug console command to create a player.</summary>
-	public  void DebugCreatePlayer(int ControllerId) {}
+	public virtual void DebugCreatePlayer(int ControllerId) {}
 	///<summary>Debug console command to remove the player with a given controller ID.</summary>
-	public  void DebugRemovePlayer(int ControllerId) {}
+	public virtual void DebugRemovePlayer(int ControllerId) {}
 }

@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>The Load Guard behaves similarly to a Border, but with the ability to hide its primary content and display a loading spinner</summary>
@@ -6,17 +5,17 @@ using CSharpToCpp.Utilities;
 public partial class UCommonLoadGuard : UContentWidget {
 	public static UClass StaticClass() {return default;}
 	///<summary>SetLoadingText</summary>
-	public  void SetLoadingText(string InLoadingText) {}
+	public void SetLoadingText(FText InLoadingText) {}
 	///<summary>SetIsLoading</summary>
-	public  void SetIsLoading(bool bInIsLoading) {}
+	public void SetIsLoading(bool bInIsLoading) {}
 	///<summary>IsLoading</summary>
-	public  bool IsLoading() { return default; }
+	public bool IsLoading() { return default; }
 	///<summary>FOnAssetLoaded</summary>
-	public  void FOnAssetLoaded(UObject Object) {}
+	public void FOnAssetLoaded(UObject Object) {}
 	///<summary>bShowLoading</summary>
 	public bool bShowLoading;
 	///<summary>BP_GuardAndLoadAsset</summary>
-	public  void BP_GuardAndLoadAsset(TSoftObjectPtr<UObject> InLazyAsset,FOnAssetLoaded OnAssetLoaded) {}
+	public void BP_GuardAndLoadAsset(TSoftObjectPtr<UObject> InLazyAsset,FOnAssetLoaded OnAssetLoaded) {}
 	///<summary>The background brush to display while loading the content</summary>
 	public FSlateBrush LoadingBackgroundBrush;
 	///<summary>The horizontal alignment of the loading throbber &amp; message</summary>
@@ -24,7 +23,7 @@ public partial class UCommonLoadGuard : UContentWidget {
 	///<summary>The horizontal alignment of the loading throbber &amp; message</summary>
 	public FMargin ThrobberPadding;
 	///<summary>Loading message to display alongside the throbber</summary>
-	public string LoadingText;
+	public FText LoadingText;
 	///<summary>Style to apply to the loading message</summary>
 	public UClass TextStyle;
 	///<summary>BP_OnLoadingStateChanged</summary>

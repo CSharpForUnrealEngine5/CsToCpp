@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("WaterBrushManager.h")]
@@ -107,17 +106,17 @@ public partial class AWaterBrushManager : AWaterLandscapeBrush {
 	///<summary>FinalizeVelocityHeightMID_DEPRECATED</summary>
 	public UMaterialInstanceDynamic FinalizeVelocityHeightMID_DEPRECATED;
 	///<summary>Debug Buttons</summary>
-	public  void ForceUpdate() {}
+	public virtual void ForceUpdate() {}
 	///<summary>SingleBlurStep</summary>
-	public  void SingleBlurStep() {}
+	public virtual void SingleBlurStep() {}
 	///<summary>FindEdges</summary>
-	public  void FindEdges() {}
+	public virtual void FindEdges() {}
 	///<summary>SingleJumpStep</summary>
-	public  void SingleJumpStep() {}
+	public virtual void SingleJumpStep() {}
 	///<summary>out</summary>
-	public  void GetWaterCacheKey(AActor WaterBrush,UWaterBodyBrushCacheContainer ContainerObject,FWaterBodyBrushCache Value) {}
+	public virtual void GetWaterCacheKey(AActor WaterBrush,UWaterBodyBrushCacheContainer ContainerObject,FWaterBodyBrushCache Value) {}
 	///<summary>Sorts the water bodies in the order they should be rendered when rendering the water brush</summary>
-	public  void SortWaterBodiesForBrushRender(TArray<AWaterBody> InOutWaterBodies) {}
+	public void SortWaterBodiesForBrushRender(TArray<AWaterBody> InOutWaterBodies) {}
 	///<summary>SetupDefaultMaterials</summary>
-	public  void SetupDefaultMaterials() {}
+	public void SetupDefaultMaterials() {}
 }

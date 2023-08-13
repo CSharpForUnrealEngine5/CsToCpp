@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("DestructibleComponent.h")]
@@ -15,13 +14,13 @@ public partial class UDestructibleComponent : USkinnedMeshComponent {
 	///<summary>Provide a blueprint interface for setting the destructible mesh</summary>
 	public UDestructibleMesh DestructibleMesh_DEPRECATED;
 	///<summary>Take damage</summary>
-	public  void ApplyDamage(float DamageAmount,FVector HitLocation,FVector ImpulseDir,float ImpulseStrength) {}
+	public virtual void ApplyDamage(float DamageAmount,FVector HitLocation,FVector ImpulseDir,float ImpulseStrength) {}
 	///<summary>Take radius damage</summary>
-	public  void ApplyRadiusDamage(float BaseDamage,FVector HurtOrigin,float DamageRadius,float ImpulseStrength,bool bFullDamage) {}
+	public virtual void ApplyRadiusDamage(float BaseDamage,FVector HurtOrigin,float DamageRadius,float ImpulseStrength,bool bFullDamage) {}
 	///<summary>SetDestructibleMesh</summary>
-	public  void SetDestructibleMesh(UDestructibleMesh NewMesh) {}
+	public void SetDestructibleMesh(UDestructibleMesh NewMesh) {}
 	///<summary>GetDestructibleMesh</summary>
-	public  UDestructibleMesh GetDestructibleMesh() { return default; }
+	public UDestructibleMesh GetDestructibleMesh() { return default; }
 	///<summary>Called when a component is touched</summary>
 	public FComponentFractureSignature OnComponentFracture;
 }

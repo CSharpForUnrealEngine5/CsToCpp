@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>UScalableConeGizmo provides a cone that can be scaled (changing its angle)</summary>
@@ -14,7 +13,7 @@ public partial class UScalableConeGizmo : UInteractiveGizmo {
 	///<summary>The error threshold for hit detection with the cone</summary>
 	public float HitErrorThreshold;
 	///<summary>The text that will be used as the transaction description for undo/redo</summary>
-	public string TransactionDescription;
+	public FText TransactionDescription;
 	///<summary>The ConeLength</summary>
 	public float Length;
 	///<summary>Angle</summary>

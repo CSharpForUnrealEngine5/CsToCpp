@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("AnimToTextureDataAsset.h")]
@@ -59,17 +58,17 @@ public partial class UAnimToTextureDataAsset : UPrimaryDataAsset {
 	///<summary>Animations</summary>
 	public TArray<FAnimInfo> Animations;
 	///<summary>GetIndexFromAnimSequence</summary>
-	public  int GetIndexFromAnimSequence(UAnimSequence Sequence) { return default; }
+	public int GetIndexFromAnimSequence(UAnimSequence Sequence) { return default; }
 	///<summary>ResetInfo</summary>
-	public  void ResetInfo() {}
+	public void ResetInfo() {}
 	///<summary>BP_GetStaticMesh</summary>
-	public  UStaticMesh BP_GetStaticMesh() { return default; }
+	public UStaticMesh BP_GetStaticMesh() { return default; }
 	///<summary>BP_GetSkeletalMesh</summary>
-	public  USkeletalMesh BP_GetSkeletalMesh() { return default; }
+	public USkeletalMesh BP_GetSkeletalMesh() { return default; }
 	///<summary>BP_GetBonePositionTexture</summary>
-	public  UTexture2D BP_GetBonePositionTexture() { return default; }
+	public UTexture2D BP_GetBonePositionTexture() { return default; }
 	///<summary>BP_GetBoneRotationTexture</summary>
-	public  UTexture2D BP_GetBoneRotationTexture() { return default; }
+	public UTexture2D BP_GetBoneRotationTexture() { return default; }
 	///<summary>BP_GetBoneWeightTexture</summary>
-	public  UTexture2D BP_GetBoneWeightTexture() { return default; }
+	public UTexture2D BP_GetBoneWeightTexture() { return default; }
 }

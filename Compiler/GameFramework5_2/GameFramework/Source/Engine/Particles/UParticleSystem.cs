@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>A ParticleSystem is a complete particle effect that contains any number of ParticleEmitters. By allowing multiple emitters</summary>
@@ -100,5 +99,5 @@ public partial class UParticleSystem : UFXSystemAsset {
 	///<summary>Array of named material slots for use by emitters of this system.</summary>
 	public TArray<FNamedEmitterMaterial> NamedMaterialSlots;
 	///<summary>Returns true if this system contains an emitter of the pasesd type.</summary>
-	public  bool ContainsEmitterType(UClass TypeData) { return default; }
+	public bool ContainsEmitterType(UClass TypeData) { return default; }
 }

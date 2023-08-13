@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Standard properties</summary>
@@ -22,7 +21,7 @@ public partial class UGenerateStaticMeshLODAssetToolProperties : UInteractiveToo
 	///<summary>Group layer to use for partitioning the mesh for simple collision generation</summary>
 	public string CollisionGroupLayerName;
 	///<summary>this function is called provide set of available group layers</summary>
-	public  TArray<string> GetGroupLayersFunc() { return default; }
+	public TArray<string> GetGroupLayersFunc() { return default; }
 	///<summary>internal list used to implement above</summary>
 	public TArray<string> GroupLayersList;
 }

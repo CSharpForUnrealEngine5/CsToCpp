@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Component that allows you to specify custom triangle mesh geometry</summary>
@@ -16,15 +15,15 @@ public partial class UCableComponent : UMeshComponent {
 	///<summary>End location of cable, relative to AttachEndTo (or AttachEndToSocketName) if specified, otherwise relative to cable component.</summary>
 	public FVector EndLocation;
 	///<summary>Attaches the end of the cable to a specific Component *</summary>
-	public  void SetAttachEndToComponent(USceneComponent Component,string SocketName/*=NAME_None*/) {}
+	public void SetAttachEndToComponent(USceneComponent Component,string SocketName/*=NAME_None*/) {}
 	///<summary>Attaches the end of the cable to a specific Component within an Actor *</summary>
-	public  void SetAttachEndTo(AActor Actor,string ComponentProperty,string SocketName/*=NAME_None*/) {}
+	public void SetAttachEndTo(AActor Actor,string ComponentProperty,string SocketName/*=NAME_None*/) {}
 	///<summary>Gets the Actor that the cable is attached to *</summary>
-	public  AActor GetAttachedActor() { return default; }
+	public AActor GetAttachedActor() { return default; }
 	///<summary>Gets the specific USceneComponent that the cable is attached to *</summary>
-	public  USceneComponent GetAttachedComponent() { return default; }
+	public USceneComponent GetAttachedComponent() { return default; }
 	///<summary>Get array of locations of particles (in world space) making up the cable simulation.</summary>
-	public  void GetCableParticleLocations(TArray<FVector> Locations) {}
+	public void GetCableParticleLocations(TArray<FVector> Locations) {}
 	///<summary>Rest length of the cable</summary>
 	public float CableLength;
 	///<summary>How many segments the cable has</summary>

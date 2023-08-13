@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>Project wide settings for input handling</summary>
@@ -72,23 +71,23 @@ public partial class UInputSettings : UObject {
 	///<summary>Returns the game local input settings (action mappings, axis mappings, etc...)</summary>
 	public static UInputSettings GetInputSettings() { return default; }
 	///<summary>Programmatically add an action mapping to the project defaults</summary>
-	public  void AddActionMapping(FInputActionKeyMapping KeyMapping,bool bForceRebuildKeymaps/*=true*/) {}
+	public void AddActionMapping(FInputActionKeyMapping KeyMapping,bool bForceRebuildKeymaps/*=true*/) {}
 	///<summary>GetActionMappingByName</summary>
-	public  void GetActionMappingByName(string InActionName,TArray<FInputActionKeyMapping> OutMappings) {}
+	public void GetActionMappingByName(string InActionName,TArray<FInputActionKeyMapping> OutMappings) {}
 	///<summary>Programmatically remove an action mapping to the project defaults</summary>
-	public  void RemoveActionMapping(FInputActionKeyMapping KeyMapping,bool bForceRebuildKeymaps/*=true*/) {}
+	public void RemoveActionMapping(FInputActionKeyMapping KeyMapping,bool bForceRebuildKeymaps/*=true*/) {}
 	///<summary>Programmatically add an axis mapping to the project defaults</summary>
-	public  void AddAxisMapping(FInputAxisKeyMapping KeyMapping,bool bForceRebuildKeymaps/*=true*/) {}
+	public void AddAxisMapping(FInputAxisKeyMapping KeyMapping,bool bForceRebuildKeymaps/*=true*/) {}
 	///<summary>Retrieve all axis mappings by a certain name.</summary>
-	public  void GetAxisMappingByName(string InAxisName,TArray<FInputAxisKeyMapping> OutMappings) {}
+	public void GetAxisMappingByName(string InAxisName,TArray<FInputAxisKeyMapping> OutMappings) {}
 	///<summary>Programmatically remove an axis mapping to the project defaults</summary>
-	public  void RemoveAxisMapping(FInputAxisKeyMapping KeyMapping,bool bForceRebuildKeymaps/*=true*/) {}
+	public void RemoveAxisMapping(FInputAxisKeyMapping KeyMapping,bool bForceRebuildKeymaps/*=true*/) {}
 	///<summary>Flush the current mapping values to the config file</summary>
-	public  void SaveKeyMappings() {}
+	public void SaveKeyMappings() {}
 	///<summary>Populate a list of all defined action names</summary>
-	public  void GetActionNames(TArray<string> ActionNames) {}
+	public void GetActionNames(TArray<string> ActionNames) {}
 	///<summary>Populate a list of all defined axis names</summary>
-	public  void GetAxisNames(TArray<string> AxisNames) {}
+	public void GetAxisNames(TArray<string> AxisNames) {}
 	///<summary>When changes are made to the default mappings, push those changes out to PlayerInput key maps</summary>
-	public  void ForceRebuildKeymaps() {}
+	public void ForceRebuildKeymaps() {}
 }

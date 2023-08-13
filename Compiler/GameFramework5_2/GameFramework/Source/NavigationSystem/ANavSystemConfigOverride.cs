@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("NavSystemConfigOverride.h")]
@@ -13,5 +12,5 @@ public partial class ANavSystemConfigOverride : AActor {
 	///<summary>bLoadOnClient</summary>
 	public bool bLoadOnClient;
 	///<summary>made an explicit function since rebuilding navigation system can be expensive</summary>
-	public  void ApplyChanges() {}
+	public void ApplyChanges() {}
 }

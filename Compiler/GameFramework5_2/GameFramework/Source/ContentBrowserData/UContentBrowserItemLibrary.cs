@@ -1,4 +1,3 @@
-#pragma warning disable CS8618,CS8603,CS1587,CS1591
 namespace GameFramework;
 using CSharpToCpp.Utilities;
 ///<summary>TODO: Script API exposure</summary>
@@ -12,5 +11,5 @@ public partial class UContentBrowserItemLibrary : UBlueprintFunctionLibrary {
 	///<summary>GetVirtualPath</summary>
 	public static string GetVirtualPath(FContentBrowserItem Item) { return default; }
 	///<summary>GetDisplayName</summary>
-	public static string GetDisplayName(FContentBrowserItem Item) { return default; }
+	public static FText GetDisplayName(FContentBrowserItem Item) { return default; }
 }
