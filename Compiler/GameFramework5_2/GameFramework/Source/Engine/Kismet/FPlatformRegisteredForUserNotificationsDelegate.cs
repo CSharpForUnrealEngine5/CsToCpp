@@ -2,5 +2,5 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 public partial struct FPlatformRegisteredForUserNotificationsDelegate {
 // PlatformRegisteredForUserNotificationsDelegate__DelegateSignature(int inInt)
-	void AddDynamic(object obj, string functionName) {}
+	public void AddDynamic(object obj, string functionName) {}
 }

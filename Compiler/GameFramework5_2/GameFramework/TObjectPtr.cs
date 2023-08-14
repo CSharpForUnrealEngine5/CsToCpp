@@ -15,4 +15,5 @@ public struct TSoftObjectPtr<T>
 
 public struct TWeakObjectPtr<T>
 {
+    public T Get() { return default; }
 }

@@ -4,4 +4,6 @@ namespace GameFramework;
 public partial struct FHitResult
 {
     public bool IsValidBlockingHit() { return false; }
+
+    public AActor GetActor() { return default; }
 }
