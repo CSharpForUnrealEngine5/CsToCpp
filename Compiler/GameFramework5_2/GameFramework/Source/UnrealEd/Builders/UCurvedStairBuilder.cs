@@ -16,7 +16,7 @@ public partial class UCurvedStairBuilder : UEditorBrushBuilder {
 	///<summary>The distance below the first step</summary>
 	public int AddToFirstStep;
 	///<summary>GroupName</summary>
-	public string GroupName;
+	public FName GroupName;
 	///<summary>Whether the stair curves clockwise or counter-clockwise</summary>
 	public bool CounterClockwise;
 }

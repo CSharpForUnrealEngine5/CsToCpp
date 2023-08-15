@@ -6,5 +6,5 @@ public partial class UContentBrowserConfig : UEditorConfigBase {
 	///<summary>Favorites</summary>
 	public TSet<string> Favorites;
 	///<summary>Instances</summary>
-	public TMap<string,FContentBrowserInstanceConfig> Instances;
+	public TMap<FName,FContentBrowserInstanceConfig> Instances;
 }

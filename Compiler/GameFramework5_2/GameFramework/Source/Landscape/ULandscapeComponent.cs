@@ -122,7 +122,7 @@ public partial class ULandscapeComponent : UPrimitiveComponent {
 	///<summary>Gets the landscape paint layer weight value at the given position using LandscapeLayerInfo . Returns 0 in case it fails.</summary>
 	public float EditorGetPaintLayerWeightAtLocation(FVector InLocation,ULandscapeLayerInfoObject PaintLayer) { return default; }
 	///<summary>Gets the landscape paint layer weight value at the given position using layer name. Returns 0 in case it fails.</summary>
-	public float EditorGetPaintLayerWeightByNameAtLocation(FVector InLocation,string InPaintLayerName) { return default; }
+	public float EditorGetPaintLayerWeightByNameAtLocation(FVector InLocation,FName InPaintLayerName) { return default; }
 	///<summary>SetForcedLOD</summary>
 	public void SetForcedLOD(int InForcedLOD) {}
 	///<summary>SetLODBias</summary>

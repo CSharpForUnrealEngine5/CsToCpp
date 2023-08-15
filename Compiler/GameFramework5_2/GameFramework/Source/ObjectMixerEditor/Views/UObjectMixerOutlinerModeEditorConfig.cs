@@ -4,5 +4,5 @@ using CSharpToCpp.Utilities;
 public partial class UObjectMixerOutlinerModeEditorConfig : UEditorConfigBase {
 	public static UClass StaticClass() {return default;}
 	///<summary>Browsers</summary>
-	public TMap<string,FObjectMixerOutlinerModeConfig> Browsers;
+	public TMap<FName,FObjectMixerOutlinerModeConfig> Browsers;
 }

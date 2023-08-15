@@ -4,5 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("ConcertSyncSessionTypes.h")]
 public partial struct FConcertSyncLockEvent {
 	public EConcertSyncLockEventType LockEventType;
-	public TArray<string> ResourceNames;
+	public TArray<FName> ResourceNames;
 }

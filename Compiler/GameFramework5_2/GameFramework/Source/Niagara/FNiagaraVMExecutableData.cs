@@ -15,7 +15,7 @@ public partial struct FNiagaraVMExecutableData {
 	public TArray<byte> ScriptLiterals;
 	public TArray<FNiagaraVariable> Attributes;
 	public FNiagaraScriptDataUsageInfo DataUsage;
-	public TMap<string,FNiagaraParameters> DataSetToParameters;
+	public TMap<FName,FNiagaraParameters> DataSetToParameters;
 	public TArray<FNiagaraFunctionSignature> AdditionalExternalFunctions;
 	public TArray<FNiagaraScriptDataInterfaceCompileInfo> DataInterfaceInfo;
 	public TArray<FVMExternalFunctionBindingInfo> CalledVMExternalFunctions;

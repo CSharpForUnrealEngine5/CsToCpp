@@ -8,13 +8,13 @@ public partial class UAnimNotifyState_Trail : UAnimNotifyState {
 	///<summary>OverridePSTemplate</summary>
 	public UParticleSystem OverridePSTemplate(USkeletalMeshComponent MeshComp,UAnimSequenceBase Animation) { return default; }
 	///<summary>Name of the first socket defining this trail.</summary>
-	public string FirstSocketName;
+	public FName FirstSocketName;
 	///<summary>Name of the second socket defining this trail.</summary>
-	public string SecondSocketName;
+	public FName SecondSocketName;
 	///<summary>Controls the way width scale is applied. In each method a width scale of 1.0 will mean the width is unchanged from the position of the sockets. A width scale of 0.0 will cause a trail of zero width.</summary>
 	public ETrailWidthMode WidthScaleMode;
 	///<summary>Name of the curve to drive the width scale.</summary>
-	public string WidthScaleCurve;
+	public FName WidthScaleCurve;
 	///<summary>bRecycleSpawnedSystems</summary>
 	public bool bRecycleSpawnedSystems;
 	///<summary>If true, render the trail geometry (this should typically be on)</summary>

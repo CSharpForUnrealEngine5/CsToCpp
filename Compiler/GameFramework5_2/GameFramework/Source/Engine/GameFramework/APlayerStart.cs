@@ -5,7 +5,7 @@ using CSharpToCpp.Utilities;
 public partial class APlayerStart : ANavigationObjectBase {
 	public static UClass StaticClass() {return default;}
 	///<summary>Used when searching for which playerstart to use.</summary>
-	public string PlayerStartTag;
+	public FName PlayerStartTag;
 	///<summary>ArrowComponent</summary>
 	public UArrowComponent ArrowComponent;
 }

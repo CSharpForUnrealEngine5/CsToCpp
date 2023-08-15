@@ -5,7 +5,7 @@ using CSharpToCpp.Utilities;
 public partial class UPartyBeaconState : UObject {
 	public static UClass StaticClass() {return default;}
 	///<summary>Session tied to the beacon</summary>
-	public string SessionName;
+	public FName SessionName;
 	///<summary>Number of currently consumed reservations</summary>
 	public int NumConsumedReservations;
 	///<summary>Maximum allowed reservations</summary>
@@ -15,7 +15,7 @@ public partial class UPartyBeaconState : UObject {
 	///<summary>Number of players on each team for balancing</summary>
 	public int NumPlayersPerTeam;
 	///<summary>Team assignment method</summary>
-	public string TeamAssignmentMethod;
+	public FName TeamAssignmentMethod;
 	///<summary>Team that the host has been assigned to</summary>
 	public int ReservedHostTeamNum;
 	///<summary>Team that everyone is forced to in single team games</summary>

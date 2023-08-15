@@ -21,15 +21,15 @@ public partial class AWorldDataLayers : AInfo {
 	///<summary>DataLayerInstances</summary>
 	public TSet<UDataLayerInstance> DataLayerInstances;
 	///<summary>DeprecatedDataLayerNameToDataLayerInstance</summary>
-	public TMap<string,TWeakObjectPtr<UDataLayerInstance>> DeprecatedDataLayerNameToDataLayerInstance;
+	public TMap<FName,TWeakObjectPtr<UDataLayerInstance>> DeprecatedDataLayerNameToDataLayerInstance;
 	///<summary>WorldDataLayers_DEPRECATED</summary>
 	public TSet<UDEPRECATED_DataLayer> WorldDataLayers_DEPRECATED;
 	///<summary>RepActiveDataLayerNames</summary>
-	public TArray<string> RepActiveDataLayerNames;
+	public TArray<FName> RepActiveDataLayerNames;
 	///<summary>RepLoadedDataLayerNames</summary>
-	public TArray<string> RepLoadedDataLayerNames;
+	public TArray<FName> RepLoadedDataLayerNames;
 	///<summary>RepEffectiveActiveDataLayerNames</summary>
-	public TArray<string> RepEffectiveActiveDataLayerNames;
+	public TArray<FName> RepEffectiveActiveDataLayerNames;
 	///<summary>RepEffectiveLoadedDataLayerNames</summary>
-	public TArray<string> RepEffectiveLoadedDataLayerNames;
+	public TArray<FName> RepEffectiveLoadedDataLayerNames;
 }

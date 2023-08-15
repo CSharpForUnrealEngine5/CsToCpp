@@ -159,7 +159,7 @@ public partial class ULevelEditorViewportSettings : UObject {
 	///<summary>When dropping a texture in the viewport, create an instance of this material instead of creating a new material. Populate MaterialParamsForDroppedTextures to specify the parameter names.</summary>
 	public TSoftObjectPtr<UMaterialInterface> MaterialForDroppedTextures;
 	///<summary>When dropping a texture in the viewport, determines which material parameter to assign for each found texture type. Only relevant if MaterialForDroppedTextures is assigned.</summary>
-	public TMap<EMaterialKind,string> MaterialParamsForDroppedTextures;
+	public TMap<EMaterialKind,FName> MaterialParamsForDroppedTextures;
 	///<summary>Per-instance viewport settings.</summary>
 	public TArray<FLevelEditorViewportInstanceSettingsKeyValuePair> PerInstanceSettings;
 }

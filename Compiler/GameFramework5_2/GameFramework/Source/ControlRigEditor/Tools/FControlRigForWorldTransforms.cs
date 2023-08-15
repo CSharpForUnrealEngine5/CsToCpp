@@ -4,5 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("Tools/ControlRigSnapper.h")]
 public partial struct FControlRigForWorldTransforms {
 	public TWeakObjectPtr<UControlRig> ControlRig;
-	public TArray<string> ControlNames;
+	public TArray<FName> ControlNames;
 }

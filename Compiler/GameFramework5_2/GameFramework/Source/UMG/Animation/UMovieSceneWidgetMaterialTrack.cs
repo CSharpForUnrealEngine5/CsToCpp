@@ -5,7 +5,7 @@ using CSharpToCpp.Utilities;
 public partial class UMovieSceneWidgetMaterialTrack : UMovieSceneMaterialTrack {
 	public static UClass StaticClass() {return default;}
 	///<summary>The name of the brush property which will be animated by this track.</summary>
-	public TArray<string> BrushPropertyNamePath;
+	public TArray<FName> BrushPropertyNamePath;
 	///<summary>The name of this track, generated from the property name path.</summary>
-	public string TrackName;
+	public FName TrackName;
 }

@@ -65,7 +65,7 @@ public partial class UParticleSystemComponent : UFXSystemComponent {
 	///<summary>Component we automatically attach to when activated, if bAutoManageAttachment is true.</summary>
 	public TWeakObjectPtr<USceneComponent> AutoAttachParent;
 	///<summary>Socket we automatically attach to on the AutoAttachParent, if bAutoManageAttachment is true.</summary>
-	public string AutoAttachSocketName;
+	public FName AutoAttachSocketName;
 	///<summary>DEPRECATED: Options for how we handle our location when we attach to the AutoAttachParent, if bAutoManageAttachment is true.</summary>
 	public EAttachLocation AutoAttachLocationType_DEPRECATED;
 	///<summary>Options for how we handle our location when we attach to the AutoAttachParent, if bAutoManageAttachment is true.</summary>
@@ -75,7 +75,7 @@ public partial class UParticleSystemComponent : UFXSystemComponent {
 	///<summary>Options for how we handle our scale when we attach to the AutoAttachParent, if bAutoManageAttachment is true.</summary>
 	public EAttachmentRule AutoAttachScaleRule;
 	///<summary>DEPRECATED: Set AutoAttachParent, AutoAttachSocketName, AutoAttachLocationType to the specified parameters. Does not change bAutoManageAttachment; that must be set separately.</summary>
-	public void SetAutoAttachParams(USceneComponent Parent,string SocketName/*=NAME_None*/,EAttachLocation LocationType/*=EAttachLocation.KeepRelativeOffset*/) {}
+	public void SetAutoAttachParams(USceneComponent Parent,FName SocketName/*=NAME_None*/,EAttachLocation LocationType/*=EAttachLocation.KeepRelativeOffset*/) {}
 	///<summary>Called when the particle system is done</summary>
 	public FOnSystemFinished OnSystemFinished;
 	///<summary>Set the beam end point</summary>
@@ -107,21 +107,21 @@ public partial class UParticleSystemComponent : UFXSystemComponent {
 	///<summary>Get the beam target strength</summary>
 	public virtual bool GetBeamTargetStrength(int EmitterIndex,int TargetIndex,float OutTargetStrength) { return default; }
 	///<summary>Set a named material instance parameter on this ParticleSystemComponent.</summary>
-	public void SetMaterialParameter(string ParameterName,UMaterialInterface Param) {}
+	public void SetMaterialParameter(FName ParameterName,UMaterialInterface Param) {}
 	///<summary>Change the ParticleSystem used by this ParticleSystemComponent</summary>
 	public void SetTemplate(UParticleSystem NewTemplate) {}
 	///<summary>Get the current number of active particles in this system</summary>
 	public int GetNumActiveParticles() { return default; }
 	///<summary>Begins all trail emitters in this component.</summary>
-	public void BeginTrails(string InFirstSocketName,string InSecondSocketName,ETrailWidthMode InWidthMode,float InWidth) {}
+	public void BeginTrails(FName InFirstSocketName,FName InSecondSocketName,ETrailWidthMode InWidthMode,float InWidth) {}
 	///<summary>Ends all trail emitters in this component.</summary>
 	public void EndTrails() {}
 	///<summary>Sets the defining data for all trails in this component.</summary>
-	public void SetTrailSourceData(string InFirstSocketName,string InSecondSocketName,ETrailWidthMode InWidthMode,float InWidth) {}
+	public void SetTrailSourceData(FName InFirstSocketName,FName InSecondSocketName,ETrailWidthMode InWidthMode,float InWidth) {}
 	///<summary>Creates a Dynamic Material Instance for the specified named material override, optionally from the supplied material.</summary>
-	public virtual UMaterialInstanceDynamic CreateNamedDynamicMaterialInstance(string InName,UMaterialInterface SourceMaterial/*=NULL*/) { return default; }
+	public virtual UMaterialInstanceDynamic CreateNamedDynamicMaterialInstance(FName InName,UMaterialInterface SourceMaterial/*=NULL*/) { return default; }
 	///<summary>Returns a named material. If this named material is not found, returns NULL.</summary>
-	public virtual UMaterialInterface GetNamedMaterial(string InName) { return default; }
+	public virtual UMaterialInterface GetNamedMaterial(FName InName) { return default; }
 	///<summary>Record a kismet event.</summary>
-	public void GenerateParticleEvent(string InEventName,float InEmitterTime,FVector InLocation,FVector InDirection,FVector InVelocity) {}
+	public void GenerateParticleEvent(FName InEventName,float InEmitterTime,FVector InLocation,FVector InDirection,FVector InVelocity) {}
 }

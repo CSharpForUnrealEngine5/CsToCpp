@@ -19,13 +19,13 @@ public partial class UAbilityTask_PlayMontageAndWait : UAbilityTask {
 	///<summary>OnMontageEnded</summary>
 	public void OnMontageEnded(UAnimMontage Montage,bool bInterrupted) {}
 	///<summary>Start playing an animation montage on the avatar actor and wait for it to finish</summary>
-	public static UAbilityTask_PlayMontageAndWait CreatePlayMontageAndWaitProxy(UGameplayAbility OwningAbility,string TaskInstanceName,UAnimMontage MontageToPlay,float Rate/*=1.0f*/,string StartSection/*=NAME_None*/,bool bStopWhenAbilityEnds/*=true*/,float AnimRootMotionTranslationScale/*=1.0f*/,float StartTimeSeconds/*=0.0f*/) { return default; }
+	public static UAbilityTask_PlayMontageAndWait CreatePlayMontageAndWaitProxy(UGameplayAbility OwningAbility,FName TaskInstanceName,UAnimMontage MontageToPlay,float Rate/*=1.0f*/,FName StartSection/*=NAME_None*/,bool bStopWhenAbilityEnds/*=true*/,float AnimRootMotionTranslationScale/*=1.0f*/,float StartTimeSeconds/*=0.0f*/) { return default; }
 	///<summary>MontageToPlay</summary>
 	public UAnimMontage MontageToPlay;
 	///<summary>Rate</summary>
 	public float Rate;
 	///<summary>StartSection</summary>
-	public string StartSection;
+	public FName StartSection;
 	///<summary>AnimRootMotionTranslationScale</summary>
 	public float AnimRootMotionTranslationScale;
 	///<summary>StartTimeSeconds</summary>

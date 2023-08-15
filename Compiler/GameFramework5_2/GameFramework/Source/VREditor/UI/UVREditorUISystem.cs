@@ -7,9 +7,9 @@ public partial class UVREditorUISystem : UObject {
 	///<summary>Owning object</summary>
 	public UVREditorMode VRMode;
 	///<summary>All of the floating UIs.  These may or may not be visible (spawned)</summary>
-	public TMap<string,AVREditorFloatingUI> FloatingUIs;
+	public TMap<FName,AVREditorFloatingUI> FloatingUIs;
 	///<summary>All of the preview window info.</summary>
-	public TMap<string,AActor> PreviewWindowInfo;
+	public TMap<FName,AActor> PreviewWindowInfo;
 	///<summary>Our Quick Menu UI</summary>
 	public AVREditorFloatingUI InfoDisplayPanel;
 	///<summary>The Radial Menu UI</summary>

@@ -12,7 +12,7 @@ public partial class UPCGMetadataCompareSettings : UPCGMetadataSettingsBase {
 	///<summary>Tolerance</summary>
 	public double Tolerance;
 	///<summary>Input1AttributeName_DEPRECATED</summary>
-	public string Input1AttributeName_DEPRECATED;
+	public FName Input1AttributeName_DEPRECATED;
 	///<summary>Input2AttributeName_DEPRECATED</summary>
-	public string Input2AttributeName_DEPRECATED;
+	public FName Input2AttributeName_DEPRECATED;
 }

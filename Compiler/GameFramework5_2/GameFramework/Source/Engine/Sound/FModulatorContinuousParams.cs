@@ -2,7 +2,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Sound/SoundNodeModulatorContinuous.h")]
 public partial struct FModulatorContinuousParams {
-	public string ParameterName;
+	public FName ParameterName;
 	public float Default;
 	public float MinInput;
 	public float MaxInput;

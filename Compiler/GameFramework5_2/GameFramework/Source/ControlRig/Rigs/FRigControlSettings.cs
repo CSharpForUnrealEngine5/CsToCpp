@@ -4,7 +4,7 @@ using CSharpToCpp.Utilities;
 public partial struct FRigControlSettings {
 	public ERigControlAnimationType AnimationType;
 	public ERigControlType ControlType;
-	public string DisplayName;
+	public FName DisplayName;
 	public ERigControlAxis PrimaryAxis;
 	public bool bIsCurve;
 	public TArray<FRigControlLimitEnabled> LimitEnabled;
@@ -13,7 +13,7 @@ public partial struct FRigControlSettings {
 	public FRigControlValue MaximumValue;
 	public bool bShapeVisible;
 	public ERigControlVisibility ShapeVisibility;
-	public string ShapeName;
+	public FName ShapeName;
 	public FLinearColor ShapeColor;
 	public bool bIsTransientControl;
 	public UEnum ControlEnum;

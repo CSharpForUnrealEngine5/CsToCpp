@@ -19,9 +19,9 @@ public partial struct FTargetDeviceServicePong {
 	public bool SupportsReboot;
 	public bool SupportsVariants;
 	public string Type;
-	public string DefaultVariant;
+	public FName DefaultVariant;
 	public TArray<FTargetDeviceVariant> Variants;
 	public bool Aggregated;
 	public string AllDevicesName;
-	public string AllDevicesDefaultVariant;
+	public FName AllDevicesDefaultVariant;
 }

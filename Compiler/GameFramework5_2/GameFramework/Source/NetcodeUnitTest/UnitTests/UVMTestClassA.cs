@@ -37,7 +37,7 @@ public partial class UVMTestClassA : UObject {
 	///<summary>bBoolPropE</summary>
 	public bool bBoolPropE;
 	///<summary>NameProp</summary>
-	public string NameProp;
+	public FName NameProp;
 	///<summary>StringProp</summary>
 	public string StringProp;
 	///<summary>TextProp</summary>
@@ -53,7 +53,7 @@ public partial class UVMTestClassA : UObject {
 	///<summary>DynObjectPropArray</summary>
 	public TArray<UObject> DynObjectPropArray;
 	///<summary>DynNamePropArray</summary>
-	public TArray<string> DynNamePropArray;
+	public TArray<FName> DynNamePropArray;
 	///<summary>DynDoublePropArray</summary>
 	public TArray<double> DynDoublePropArray;
 	///<summary>DynFloatPropArray</summary>

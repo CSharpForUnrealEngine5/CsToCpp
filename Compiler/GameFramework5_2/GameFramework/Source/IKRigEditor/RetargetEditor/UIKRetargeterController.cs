@@ -23,39 +23,39 @@ public partial class UIKRetargeterController : UObject {
 	///<summary>Get a copy of the global settings for this asset.</summary>
 	public void SetGlobalSettings(FRetargetGlobalSettings GlobalSettings) {}
 	///<summary>Get a copy of the settings for the target chain by name.</summary>
-	public FTargetChainSettings GetRetargetChainSettings(string TargetChainName) { return default; }
+	public FTargetChainSettings GetRetargetChainSettings(FName TargetChainName) { return default; }
 	///<summary>Set the settings for the target chain by name. Returns true if the chain settings were applied, false otherwise.</summary>
-	public bool SetRetargetChainSettings(string TargetChainName,FTargetChainSettings Settings) { return default; }
+	public bool SetRetargetChainSettings(FName TargetChainName,FTargetChainSettings Settings) { return default; }
 	///<summary>Use fuzzy string search to find &quot;best&quot; Source chain to map to each Target chain</summary>
 	public void AutoMapChains(EAutoMapChainType AutoMapType,bool bForceRemap) {}
 	///<summary>Assign a source chain to the given target chain. Animation will be copied from the source to the target.</summary>
-	public bool SetSourceChain(string SourceChainName,string TargetChainName) { return default; }
+	public bool SetSourceChain(FName SourceChainName,FName TargetChainName) { return default; }
 	///<summary>Get the name of the source chain mapped to a given target chain (the chain animation is copied FROM).</summary>
-	public string GetSourceChain(string TargetChainName) { return default; }
+	public FName GetSourceChain(FName TargetChainName) { return default; }
 	///<summary>Get read-only access to the list of settings for each target chain</summary>
 	public TArray<URetargetChainSettings> GetAllChainSettings() { return default; }
 	///<summary>Add new retarget pose. Returns the name of the new retarget pose.</summary>
-	public string CreateRetargetPose(string NewPoseName,ERetargetSourceOrTarget SourceOrTarget) { return default; }
+	public FName CreateRetargetPose(FName NewPoseName,ERetargetSourceOrTarget SourceOrTarget) { return default; }
 	///<summary>Remove a retarget pose. Returns true if the pose was found and removed.</summary>
-	public bool RemoveRetargetPose(string PoseToRemove,ERetargetSourceOrTarget SourceOrTarget) { return default; }
+	public bool RemoveRetargetPose(FName PoseToRemove,ERetargetSourceOrTarget SourceOrTarget) { return default; }
 	///<summary>Duplicate a retarget pose. Returns the name of the new, duplicate pose (or NAME_None if PoseToDuplicate is not found).</summary>
-	public string DuplicateRetargetPose(string PoseToDuplicate,string NewName,ERetargetSourceOrTarget SourceOrTarget) { return default; }
+	public FName DuplicateRetargetPose(FName PoseToDuplicate,FName NewName,ERetargetSourceOrTarget SourceOrTarget) { return default; }
 	///<summary>Rename current retarget pose. Returns true if a pose was renamed.</summary>
-	public bool RenameRetargetPose(string OldPoseName,string NewPoseName,ERetargetSourceOrTarget SourceOrTarget) { return default; }
+	public bool RenameRetargetPose(FName OldPoseName,FName NewPoseName,ERetargetSourceOrTarget SourceOrTarget) { return default; }
 	///<summary>Change which retarget pose is used by the retargeter at runtime</summary>
-	public bool SetCurrentRetargetPose(string CurrentPose,ERetargetSourceOrTarget SourceOrTarget) { return default; }
+	public bool SetCurrentRetargetPose(FName CurrentPose,ERetargetSourceOrTarget SourceOrTarget) { return default; }
 	///<summary>Get the current retarget pose</summary>
-	public string GetCurrentRetargetPoseName(ERetargetSourceOrTarget SourceOrTarget) { return default; }
+	public FName GetCurrentRetargetPoseName(ERetargetSourceOrTarget SourceOrTarget) { return default; }
 	///<summary>Get access to array of retarget poses</summary>
-	public TMap<string,FIKRetargetPose> GetRetargetPoses(ERetargetSourceOrTarget SourceOrTarget) { return default; }
+	public TMap<FName,FIKRetargetPose> GetRetargetPoses(ERetargetSourceOrTarget SourceOrTarget) { return default; }
 	///<summary>Get the current retarget pose</summary>
 	public FIKRetargetPose GetCurrentRetargetPose(ERetargetSourceOrTarget SourceOrTarget) { return default; }
 	///<summary>Reset a retarget pose for the specified bones.</summary>
-	public void ResetRetargetPose(string PoseToReset,TArray<string> BonesToReset,ERetargetSourceOrTarget SourceOrTarget) {}
+	public void ResetRetargetPose(FName PoseToReset,TArray<FName> BonesToReset,ERetargetSourceOrTarget SourceOrTarget) {}
 	///<summary>Set a delta rotation for a given bone for the current retarget pose</summary>
-	public void SetRotationOffsetForRetargetPoseBone(string BoneName,FQuat RotationOffset,ERetargetSourceOrTarget SkeletonMode) {}
+	public void SetRotationOffsetForRetargetPoseBone(FName BoneName,FQuat RotationOffset,ERetargetSourceOrTarget SkeletonMode) {}
 	///<summary>Get a delta rotation for a given bone for the current retarget pose</summary>
-	public FQuat GetRotationOffsetForRetargetPoseBone(string BoneName,ERetargetSourceOrTarget SourceOrTarget) { return default; }
+	public FQuat GetRotationOffsetForRetargetPoseBone(FName BoneName,ERetargetSourceOrTarget SourceOrTarget) { return default; }
 	///<summary>Set the translation offset on the retarget root bone for the current retarget pose</summary>
 	public void SetRootOffsetInRetargetPose(FVector TranslationOffset,ERetargetSourceOrTarget SourceOrTarget) {}
 	///<summary>Get the translation offset on the retarget root bone for the current retarget pose</summary>

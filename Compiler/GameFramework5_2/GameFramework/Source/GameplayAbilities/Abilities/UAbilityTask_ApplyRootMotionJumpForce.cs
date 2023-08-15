@@ -13,7 +13,7 @@ public partial class UAbilityTask_ApplyRootMotionJumpForce : UAbilityTask_ApplyR
 	///<summary>OnLandedCallback</summary>
 	public void OnLandedCallback(FHitResult Hit) {}
 	///<summary>Apply force to character&#39;s movement</summary>
-	public static UAbilityTask_ApplyRootMotionJumpForce ApplyRootMotionJumpForce(UGameplayAbility OwningAbility,string TaskInstanceName,FRotator Rotation,float Distance,float Height,float Duration,float MinimumLandedTriggerTime,bool bFinishOnLanded,ERootMotionFinishVelocityMode VelocityOnFinishMode,FVector SetVelocityOnFinish,float ClampVelocityOnFinish,UCurveVector PathOffsetCurve,UCurveFloat TimeMappingCurve) { return default; }
+	public static UAbilityTask_ApplyRootMotionJumpForce ApplyRootMotionJumpForce(UGameplayAbility OwningAbility,FName TaskInstanceName,FRotator Rotation,float Distance,float Height,float Duration,float MinimumLandedTriggerTime,bool bFinishOnLanded,ERootMotionFinishVelocityMode VelocityOnFinishMode,FVector SetVelocityOnFinish,float ClampVelocityOnFinish,UCurveVector PathOffsetCurve,UCurveFloat TimeMappingCurve) { return default; }
 	///<summary>Rotation</summary>
 	public FRotator Rotation;
 	///<summary>Distance</summary>

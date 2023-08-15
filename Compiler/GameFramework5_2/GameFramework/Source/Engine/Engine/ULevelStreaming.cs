@@ -5,15 +5,15 @@ using CSharpToCpp.Utilities;
 public partial class ULevelStreaming : UObject {
 	public static UClass StaticClass() {return default;}
 	///<summary>Deprecated name of the package containing the level to load. Use GetWorldAsset() or GetWorldAssetPackageFName() instead.</summary>
-	public string PackageName_DEPRECATED;
+	public FName PackageName_DEPRECATED;
 	///<summary>The reference to the world containing the level to load</summary>
 	public TSoftObjectPtr<UWorld> WorldAsset;
 	///<summary>The relative priority of considering the streaming level. Changing the priority will not interrupt the currently considered level, but will affect the next time a level is being selected for evaluation.</summary>
 	public int StreamingPriority;
 	///<summary>If this isn&#39;t Name_None, then we load from this package on disk to the new package named PackageName</summary>
-	public string PackageNameToLoad;
+	public FName PackageNameToLoad;
 	///<summary>LOD versions of this level</summary>
-	public TArray<string> LODPackageNames;
+	public TArray<FName> LODPackageNames;
 	///<summary>Transform applied to actors after loading.</summary>
 	public FTransform LevelTransform;
 	///<summary>Applied to LoadedLevel</summary>
@@ -61,7 +61,7 @@ public partial class ULevelStreaming : UObject {
 	///<summary>Sets if the streaming level should be unloaded and removed.</summary>
 	public void SetIsRequestingUnloadAndRemoval(bool bInIsRequestingUnloadAndRemoval) {}
 	///<summary>Gets the package name for the world asset referred to by this level streaming as an FName</summary>
-	public virtual string GetWorldAssetPackageFName() { return default; }
+	public virtual FName GetWorldAssetPackageFName() { return default; }
 	///<summary>Return whether this level should be present in memory which in turn tells the</summary>
 	public virtual bool ShouldBeLoaded() { return default; }
 	///<summary>Gets a pointer to the LoadedLevel value</summary>
@@ -89,5 +89,5 @@ public partial class ULevelStreaming : UObject {
 	///<summary>Pointer to a Level object that was previously active and was replaced with a new LoadedLevel (for LOD switching)</summary>
 	public ULevel PendingUnloadLevel;
 	///<summary>The folder path for this level within the world browser. This is only available in editor builds.</summary>
-	public string FolderPath;
+	public FName FolderPath;
 }

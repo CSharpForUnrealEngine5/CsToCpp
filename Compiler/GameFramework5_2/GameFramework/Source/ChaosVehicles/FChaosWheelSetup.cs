@@ -3,6 +3,6 @@ using CSharpToCpp.Utilities;
 [CppInclude("ChaosWheeledVehicleMovementComponent.h")]
 public partial struct FChaosWheelSetup {
 	public UClass WheelClass;
-	public string BoneName;
+	public FName BoneName;
 	public FVector AdditionalOffset;
 }

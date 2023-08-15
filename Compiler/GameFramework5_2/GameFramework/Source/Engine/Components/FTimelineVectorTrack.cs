@@ -5,6 +5,6 @@ using CSharpToCpp.Utilities;
 public partial struct FTimelineVectorTrack {
 	public UCurveVector VectorCurve;
 	public FOnTimelineVector InterpFunc;
-	public string TrackName;
-	public string VectorPropertyName;
+	public FName TrackName;
+	public FName VectorPropertyName;
 }

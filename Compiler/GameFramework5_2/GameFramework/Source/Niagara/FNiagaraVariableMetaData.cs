@@ -16,9 +16,9 @@ public partial struct FNiagaraVariableMetaData {
 	public bool bInlineEditConditionToggle;
 	public FNiagaraInputConditionMetadata EditCondition;
 	public FNiagaraInputConditionMetadata VisibleCondition;
-	public TMap<string,string> PropertyMetaData;
-	public string ParentAttribute;
-	public TArray<string> AlternateAliases;
+	public TMap<FName,string> PropertyMetaData;
+	public FName ParentAttribute;
+	public TArray<FName> AlternateAliases;
 	public FGuid VariableGuid;
 	public bool bIsStaticSwitch_DEPRECATED;
 	public int StaticSwitchDefaultValue_DEPRECATED;

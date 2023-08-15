@@ -4,7 +4,7 @@ using CSharpToCpp.Utilities;
 public partial class UFbxSceneImportOptionsStaticMesh : UObject {
 	public static UClass StaticClass() {return default;}
 	///<summary>For static meshes, enabling this option will combine all meshes in the FBX into a single monolithic mesh in Unreal</summary>
-	public string StaticMeshLODGroup;
+	public FName StaticMeshLODGroup;
 	///<summary>If checked, collision will automatically be generated (ignored if custom collision is imported or used).</summary>
 	public bool bAutoGenerateCollision;
 	///<summary>Specify how vertex colors should be imported</summary>

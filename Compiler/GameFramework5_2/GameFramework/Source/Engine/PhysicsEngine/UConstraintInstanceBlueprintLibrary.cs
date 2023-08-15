@@ -4,7 +4,7 @@ using CSharpToCpp.Utilities;
 public partial class UConstraintInstanceBlueprintLibrary : UBlueprintFunctionLibrary {
 	public static UClass StaticClass() {return default;}
 	///<summary>Gets Attached body names</summary>
-	public static void GetAttachedBodyNames(FConstraintInstanceAccessor Accessor,string ParentBody,string ChildBody) {}
+	public static void GetAttachedBodyNames(FConstraintInstanceAccessor Accessor,FName ParentBody,FName ChildBody) {}
 	///<summary>Sets whether bodies attched to the constraint can collide or not</summary>
 	public static void SetDisableCollision(FConstraintInstanceAccessor Accessor,bool bDisableCollision) {}
 	///<summary>Gets whether bodies attched to the constraint can collide or not</summary>

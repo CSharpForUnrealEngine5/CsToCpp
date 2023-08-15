@@ -121,7 +121,7 @@ public partial class UUserWidget : UWidget {
 	///<summary>UnbindAllFromAnimationFinished</summary>
 	public void UnbindAllFromAnimationFinished(UWidgetAnimation Animation) {}
 	///<summary>Allows binding to a specific animation&#39;s event.</summary>
-	public void BindToAnimationEvent(UWidgetAnimation Animation,FWidgetAnimationDynamicEvent Delegate,EWidgetAnimationEvent AnimationEvent,string UserTag/*=NAME_None*/) {}
+	public void BindToAnimationEvent(UWidgetAnimation Animation,FWidgetAnimationDynamicEvent Delegate,EWidgetAnimationEvent AnimationEvent,FName UserTag/*=NAME_None*/) {}
 	///<summary>Called when an animation is started.</summary>
 	public void OnAnimationStarted(UWidgetAnimation Animation) {}
 	///<summary>Called when an animation has either played all the way through or is stopped</summary>
@@ -221,9 +221,9 @@ public partial class UUserWidget : UWidget {
 	///<summary>If a widget has an implemented paint blueprint function</summary>
 	public bool bHasScriptImplementedPaint;
 	///<summary>Listens for a particular Player Input Action by name.  This requires that those actions are being executed, and</summary>
-	public void ListenForInputAction(string ActionName,EInputEvent EventType,bool bConsume,FOnInputAction Callback) {}
+	public void ListenForInputAction(FName ActionName,EInputEvent EventType,bool bConsume,FOnInputAction Callback) {}
 	///<summary>Removes the binding for a particular action&#39;s callback.</summary>
-	public void StopListeningForInputAction(string ActionName,EInputEvent EventType) {}
+	public void StopListeningForInputAction(FName ActionName,EInputEvent EventType) {}
 	///<summary>Stops listening to all input actions, and unregisters the input component with the player controller.</summary>
 	public void StopListeningForAllInputActions() {}
 	///<summary>ListenForInputAction will automatically Register an Input Component with the player input system.</summary>
@@ -231,7 +231,7 @@ public partial class UUserWidget : UWidget {
 	///<summary>StopListeningForAllInputActions will automatically Register an Input Component with the player input system.</summary>
 	public void UnregisterInputComponent() {}
 	///<summary>Checks if the action has a registered callback with the input component.</summary>
-	public bool IsListeningForInputAction(string ActionName) { return default; }
+	public bool IsListeningForInputAction(FName ActionName) { return default; }
 	///<summary>SetInputActionPriority</summary>
 	public void SetInputActionPriority(int NewPriority) {}
 	///<summary>SetInputActionBlocking</summary>

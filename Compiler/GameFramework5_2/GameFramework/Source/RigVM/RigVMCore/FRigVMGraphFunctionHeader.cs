@@ -3,7 +3,7 @@ using CSharpToCpp.Utilities;
 [CppInclude("RigVMCore/RigVMGraphFunctionDefinition.h")]
 public partial struct FRigVMGraphFunctionHeader {
 	public FRigVMGraphFunctionIdentifier LibraryPointer;
-	public string Name;
+	public FName Name;
 	public string NodeTitle;
 	public FLinearColor NodeColor;
 	public FText Tooltip;

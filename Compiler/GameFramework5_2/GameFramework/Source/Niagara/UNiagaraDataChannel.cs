@@ -4,7 +4,7 @@ using CSharpToCpp.Utilities;
 public partial class UNiagaraDataChannel : UObject {
 	public static UClass StaticClass() {return default;}
 	///<summary>ChannelName</summary>
-	public string ChannelName;
+	public FName ChannelName;
 	///<summary>The variables that define the data contained in this Data Channel.</summary>
 	public TArray<FNiagaraVariable> Variables;
 	///<summary>If true, we keep our previous frame&#39;s data. Some users will prefer a frame of latency to tick dependency.</summary>

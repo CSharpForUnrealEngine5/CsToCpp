@@ -8,8 +8,8 @@ public partial struct FAnimNode_TwoBoneIK {
 	public double MaxStretchScale;
 	public FVector2D StretchLimits_DEPRECATED;
 	public bool bNoTwist_DEPRECATED;
-	public string JointTargetSpaceBoneName_DEPRECATED;
-	public string EffectorSpaceBoneName_DEPRECATED;
+	public FName JointTargetSpaceBoneName_DEPRECATED;
+	public FName EffectorSpaceBoneName_DEPRECATED;
 	public FVector EffectorLocation;
 	public FBoneSocketTarget EffectorTarget;
 	public FVector JointTargetLocation;

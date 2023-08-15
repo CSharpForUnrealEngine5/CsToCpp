@@ -4,7 +4,7 @@ using CSharpToCpp.Utilities;
 public partial class UMaterialExpressionLandscapeLayerSample : UMaterialExpression {
 	public static UClass StaticClass() {return default;}
 	///<summary>ParameterName</summary>
-	public string ParameterName;
+	public FName ParameterName;
 	///<summary>PreviewWeight</summary>
 	public float PreviewWeight;
 }

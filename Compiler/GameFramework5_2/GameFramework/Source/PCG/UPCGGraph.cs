@@ -20,9 +20,9 @@ public partial class UPCGGraph : UPCGGraphInterface {
 	///<summary>Removes a node from the graph.</summary>
 	public void RemoveNode(UPCGNode InNode) {}
 	///<summary>Adds a directed edge in the graph. Returns the &quot;To&quot; node for easy chaining</summary>
-	public UPCGNode AddEdge(UPCGNode From,string FromPinLabel,UPCGNode To,string ToPinLabel) { return default; }
+	public UPCGNode AddEdge(UPCGNode From,FName FromPinLabel,UPCGNode To,FName ToPinLabel) { return default; }
 	///<summary>Removes an edge in the graph. Returns true if an edge was removed.</summary>
-	public bool RemoveEdge(UPCGNode From,string FromLabel,UPCGNode To,string ToLabel) { return default; }
+	public bool RemoveEdge(UPCGNode From,FName FromLabel,UPCGNode To,FName ToLabel) { return default; }
 	///<summary>Returns the graph input node</summary>
 	public UPCGNode GetInputNode() { return default; }
 	///<summary>Returns the graph output node</summary>

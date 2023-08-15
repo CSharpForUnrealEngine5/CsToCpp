@@ -5,5 +5,5 @@ using CSharpToCpp.Utilities;
 public partial class UAnimNotify_PlayMontageNotify : UAnimNotify {
 	public static UClass StaticClass() {return default;}
 	///<summary>Name of notify that is passed to the PlayMontage K2Node.</summary>
-	public string NotifyName;
+	public FName NotifyName;
 }

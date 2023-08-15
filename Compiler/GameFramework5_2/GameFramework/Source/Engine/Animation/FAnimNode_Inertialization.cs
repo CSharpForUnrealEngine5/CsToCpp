@@ -4,6 +4,6 @@ using CSharpToCpp.Utilities;
 public partial struct FAnimNode_Inertialization {
 	public FPoseLink Source;
 	public UBlendProfile DefaultBlendProfile;
-	public TArray<string> FilteredCurves;
+	public TArray<FName> FilteredCurves;
 	public TArray<FInertializationRequest> RequestQueue;
 }

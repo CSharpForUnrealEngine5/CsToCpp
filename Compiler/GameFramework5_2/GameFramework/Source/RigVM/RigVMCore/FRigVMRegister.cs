@@ -10,10 +10,10 @@ public partial struct FRigVMRegister {
 	public ushort SliceCount;
 	public byte AlignmentBytes;
 	public ushort TrailingBytes;
-	public string Name;
+	public FName Name;
 	public int ScriptStructIndex;
 	public bool bIsArray;
 	public bool bIsDynamic;
-	public string BaseCPPType;
+	public FName BaseCPPType;
 	public UObject BaseCPPTypeObject;
 }

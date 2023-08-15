@@ -4,7 +4,7 @@ using CSharpToCpp.Utilities;
 public partial class UNiagaraPreviewAxis_InterpParamBase : UNiagaraPreviewAxis {
 	public static UClass StaticClass() {return default;}
 	///<summary>Param</summary>
-	public string Param;
+	public FName Param;
 	///<summary>Count</summary>
 	public int Count;
 }

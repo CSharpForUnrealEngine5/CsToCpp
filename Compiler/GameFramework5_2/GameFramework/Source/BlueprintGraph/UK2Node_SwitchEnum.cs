@@ -6,7 +6,7 @@ public partial class UK2Node_SwitchEnum : UK2Node_Switch {
 	///<summary>Name of the enum being switched on</summary>
 	public UEnum Enum;
 	///<summary>List of the current entries in the enum</summary>
-	public TArray<string> EnumEntries;
+	public TArray<FName> EnumEntries;
 	///<summary>List of the current entries in the enum</summary>
 	public TArray<FText> EnumFriendlyNames;
 }

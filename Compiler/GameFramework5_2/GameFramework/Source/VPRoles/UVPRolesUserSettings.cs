@@ -6,7 +6,7 @@ public partial class UVPRolesUserSettings : UObject {
 	///<summary>The machine role(s) in a virtual production context.</summary>
 	public FGameplayTagContainer Roles;
 	///<summary>The files that contain the available VP Roles.</summary>
-	public TSet<string> RoleSources;
+	public TSet<FName> RoleSources;
 	///<summary>Cached available roles since the list isn&#39;t available outside of editor.</summary>
 	public TArray<string> CachedRoles;
 }

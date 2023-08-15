@@ -3,7 +3,7 @@ using CSharpToCpp.Utilities;
 [CppInclude("ChaosVehicleMovementComponent.h")]
 public partial struct FVehicleAerofoilConfig {
 	public EVehicleAerofoilType AerofoilType;
-	public string BoneName;
+	public FName BoneName;
 	public FVector Offset;
 	public FVector UpAxis;
 	public float Area;

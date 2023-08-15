@@ -3,7 +3,7 @@ using CSharpToCpp.Utilities;
 [CppInclude("GroomAssetMeshes.h")]
 public partial struct FHairGroupsMeshesSourceDescription {
 	public UMaterialInterface Material;
-	public string MaterialSlotName;
+	public FName MaterialSlotName;
 	public UStaticMesh ImportedMesh;
 	public FHairGroupCardsTextures Textures;
 	public int GroupIndex;

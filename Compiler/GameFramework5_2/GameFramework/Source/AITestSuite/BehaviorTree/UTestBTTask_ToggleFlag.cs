@@ -6,7 +6,7 @@ public partial class UTestBTTask_ToggleFlag : UBTTaskNode {
 	///<summary>LogIndex</summary>
 	public int LogIndex;
 	///<summary>KeyName</summary>
-	public string KeyName;
+	public FName KeyName;
 	///<summary>NumToggles</summary>
 	public int NumToggles;
 	///<summary>TaskResult</summary>

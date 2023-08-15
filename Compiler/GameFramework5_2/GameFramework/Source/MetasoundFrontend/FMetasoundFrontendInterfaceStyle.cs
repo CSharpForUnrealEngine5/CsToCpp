@@ -4,5 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("MetasoundFrontendDocument.h")]
 public partial struct FMetasoundFrontendInterfaceStyle {
 	public TArray<int> DefaultSortOrder;
-	public TMap<string,FText> RequiredMembers;
+	public TMap<FName,FText> RequiredMembers;
 }

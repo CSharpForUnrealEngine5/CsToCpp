@@ -4,19 +4,19 @@ using CSharpToCpp.Utilities;
 public partial class ULiveLinkBlueprintLibrary : UBlueprintFunctionLibrary {
 	public static UClass StaticClass() {return default;}
 	///<summary>Returns the value of a property stored in the Subject Frame</summary>
-	public static bool GetPropertyValue(FLiveLinkBasicBlueprintData BasicData,string PropertyName,float Value) { return default; }
+	public static bool GetPropertyValue(FLiveLinkBasicBlueprintData BasicData,FName PropertyName,float Value) { return default; }
 	///<summary>Returns the float curves stored in the Subject Frame as a map</summary>
-	public static void GetCurves(FSubjectFrameHandle SubjectFrameHandle,TMap<string,float> Curves) {}
+	public static void GetCurves(FSubjectFrameHandle SubjectFrameHandle,TMap<FName,float> Curves) {}
 	///<summary>Returns the number of Transforms stored in the Subject Frame</summary>
 	public static int NumberOfTransforms(FSubjectFrameHandle SubjectFrameHandle) { return default; }
 	///<summary>Returns an array of Transform Names stored in the Subject Frame</summary>
-	public static void TransformNames(FSubjectFrameHandle SubjectFrameHandle,TArray<string> TransformNames) {}
+	public static void TransformNames(FSubjectFrameHandle SubjectFrameHandle,TArray<FName> TransformNames) {}
 	///<summary>Returns the Root Transform for the Subject Frame as a LiveLink Transform or the Identity if there are no transforms.</summary>
 	public static void GetRootTransform(FSubjectFrameHandle SubjectFrameHandle,FLiveLinkTransform LiveLinkTransform) {}
 	///<summary>Returns the LiveLink Transform stored in a Subject Frame at a given index. Returns an Identity transform if Transform Index is invalid.</summary>
 	public static void GetTransformByIndex(FSubjectFrameHandle SubjectFrameHandle,int TransformIndex,FLiveLinkTransform LiveLinkTransform) {}
 	///<summary>Returns the LiveLink Transform stored in a Subject Frame with a given name. Returns an Identity transform if Transform Name is invalid.</summary>
-	public static void GetTransformByName(FSubjectFrameHandle SubjectFrameHandle,string TransformName,FLiveLinkTransform LiveLinkTransform) {}
+	public static void GetTransformByName(FSubjectFrameHandle SubjectFrameHandle,FName TransformName,FLiveLinkTransform LiveLinkTransform) {}
 	///<summary>Returns the Subject Metadata structure stored in the Subject Frame</summary>
 	public static void GetMetadata(FSubjectFrameHandle SubjectFrameHandle,FSubjectMetadata Metadata) {}
 	///<summary>Returns the Subject base structure stored in the Subject Frame</summary>
@@ -26,7 +26,7 @@ public partial class ULiveLinkBlueprintLibrary : UBlueprintFunctionLibrary {
 	///<summary>Returns the Subject&#39;s frame data stored in the Subject Frame. Returns false if no valid data found.</summary>
 	public static bool GetAnimationFrameData(FSubjectFrameHandle SubjectFrameHandle,FLiveLinkAnimationFrameData AnimationFrameData) { return default; }
 	///<summary>Returns the Name of a given LiveLink Transform</summary>
-	public static void TransformName(FLiveLinkTransform LiveLinkTransform,string Name) {}
+	public static void TransformName(FLiveLinkTransform LiveLinkTransform,FName Name) {}
 	///<summary>Returns the Transform value in Parent Space for a given LiveLink Transform</summary>
 	public static void ParentBoneSpaceTransform(FLiveLinkTransform LiveLinkTransform,FTransform Transform) {}
 	///<summary>Returns the Transform value in Root Space for a given LiveLink Transform</summary>

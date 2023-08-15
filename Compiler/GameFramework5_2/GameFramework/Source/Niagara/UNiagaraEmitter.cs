@@ -105,7 +105,7 @@ public partial class UNiagaraEmitter : UObject {
 	///<summary>Use property in struct returned from GetEmitterData() instead</summary>
 	public UNiagaraScript GPUComputeScript_DEPRECATED;
 	///<summary>Use property in struct returned from GetEmitterData() instead</summary>
-	public TArray<string> SharedEventGeneratorIds_DEPRECATED;
+	public TArray<FName> SharedEventGeneratorIds_DEPRECATED;
 	///<summary>Parent_DEPRECATED</summary>
 	public UNiagaraEmitter Parent_DEPRECATED;
 	///<summary>ParentAtLastMerge_DEPRECATED</summary>

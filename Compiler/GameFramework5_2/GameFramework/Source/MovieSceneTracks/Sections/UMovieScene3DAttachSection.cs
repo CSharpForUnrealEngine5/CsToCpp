@@ -5,9 +5,9 @@ using CSharpToCpp.Utilities;
 public partial class UMovieScene3DAttachSection : UMovieScene3DConstraintSection {
 	public static UClass StaticClass() {return default;}
 	///<summary>AttachSocketName</summary>
-	public string AttachSocketName;
+	public FName AttachSocketName;
 	///<summary>AttachComponentName</summary>
-	public string AttachComponentName;
+	public FName AttachComponentName;
 	///<summary>bFullRevertOnDetach</summary>
 	public bool bFullRevertOnDetach;
 	///<summary>ReAttachOnDetach</summary>

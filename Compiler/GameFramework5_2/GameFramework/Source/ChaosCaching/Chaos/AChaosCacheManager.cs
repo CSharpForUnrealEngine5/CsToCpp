@@ -20,7 +20,7 @@ public partial class AChaosCacheManager : AActor {
 	///<summary>Triggers a component to play or record.</summary>
 	public void TriggerComponent(UPrimitiveComponent InComponent) {}
 	///<summary>Triggers a component to play or record.</summary>
-	public void TriggerComponentByCache(string InCacheName) {}
+	public void TriggerComponentByCache(FName InCacheName) {}
 	///<summary>Triggers the recording or playback of all observed components</summary>
 	public void TriggerAll() {}
 	///<summary>List of observed objects and their caches</summary>

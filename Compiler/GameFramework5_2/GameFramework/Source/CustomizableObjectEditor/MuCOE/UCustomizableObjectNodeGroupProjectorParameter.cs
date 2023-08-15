@@ -20,7 +20,7 @@ public partial class UCustomizableObjectNodeGroupProjectorParameter : UCustomiza
 	///<summary>OptionPoses</summary>
 	public TArray<FGroupProjectorParameterPose> OptionPoses;
 	///<summary>Name of the column in the Option Images Data Table with the additional option images, (UTexture2D assets).</summary>
-	public string DataTableTextureColumnName;
+	public FName DataTableTextureColumnName;
 	///<summary>Table where additional option images besides Option Images are read. The elements in this table have priority</summary>
 	public UDataTable OptionImagesDataTable;
 	///<summary>AlternateProjectionResolutionStateName</summary>

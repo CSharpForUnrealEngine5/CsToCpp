@@ -4,6 +4,6 @@ using CSharpToCpp.Utilities;
 [CppInclude("Engine/DataTable.h")]
 public partial struct FDataTableCategoryHandle {
 	public UDataTable DataTable;
-	public string ColumnName;
-	public string RowContents;
+	public FName ColumnName;
+	public FName RowContents;
 }

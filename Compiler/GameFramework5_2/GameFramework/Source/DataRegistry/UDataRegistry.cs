@@ -5,7 +5,7 @@ using CSharpToCpp.Utilities;
 public partial class UDataRegistry : UObject {
 	public static UClass StaticClass() {return default;}
 	///<summary>Globally unique name used to identify this registry</summary>
-	public string RegistryType;
+	public FName RegistryType;
 	///<summary>Rules for specifying valid item Ids, if default than any name can be used</summary>
 	public FDataRegistryIdFormat IdFormat;
 	///<summary>Structure type of all for items in this registry</summary>

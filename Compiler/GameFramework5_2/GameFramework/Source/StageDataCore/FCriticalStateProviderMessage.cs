@@ -4,5 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("StageMessages.h")]
 public partial struct FCriticalStateProviderMessage {
 	public EStageCriticalStateEvent State;
-	public string SourceName;
+	public FName SourceName;
 }

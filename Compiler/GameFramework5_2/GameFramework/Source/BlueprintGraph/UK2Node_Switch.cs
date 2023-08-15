@@ -6,7 +6,7 @@ public partial class UK2Node_Switch : UK2Node {
 	///<summary>If true switch has a default pin</summary>
 	public bool bHasDefaultPin;
 	///<summary>The function underpining the switch, if required</summary>
-	public string FunctionName;
+	public FName FunctionName;
 	///<summary>The class that the function is from.</summary>
 	public UClass FunctionClass;
 }

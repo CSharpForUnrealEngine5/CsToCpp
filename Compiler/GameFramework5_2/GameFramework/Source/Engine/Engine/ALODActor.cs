@@ -11,7 +11,7 @@ public partial class ALODActor : AActor {
 	///<summary>The mesh proxy used to display this LOD</summary>
 	public UHLODProxy Proxy;
 	///<summary>The key used to validate this actor against the proxy</summary>
-	public string Key;
+	public FName Key;
 	///<summary>what distance do you want this to show up instead of SubActors</summary>
 	public float LODDrawDistance;
 	///<summary>The hierarchy level of this actor; the first tier of HLOD is level 1, the second tier is level 2 and so on.</summary>

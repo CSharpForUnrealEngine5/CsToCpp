@@ -123,7 +123,7 @@ public partial class UAbilitySystemBlueprintLibrary : UBlueprintFunctionLibrary 
 	///<summary>Native break, to avoid having to deal with quantized vector types</summary>
 	public static void BreakGameplayCueParameters(FGameplayCueParameters Parameters,float NormalizedMagnitude,float RawMagnitude,FGameplayEffectContextHandle EffectContext,FGameplayTag MatchedTagName,FGameplayTag OriginalTag,FGameplayTagContainer AggregatedSourceTags,FGameplayTagContainer AggregatedTargetTags,FVector Location,FVector Normal,AActor Instigator,AActor EffectCauser,UObject SourceObject,UPhysicalMaterial PhysicalMaterial,int GameplayEffectLevel,int AbilityLevel,USceneComponent TargetAttachComponent,bool bReplicateLocationWhenUsingMinimalRepProxy) {}
 	///<summary>Sets a raw name Set By Caller magnitude value, the tag version should normally be used</summary>
-	public static FGameplayEffectSpecHandle AssignSetByCallerMagnitude(FGameplayEffectSpecHandle SpecHandle,string DataName,float Magnitude) { return default; }
+	public static FGameplayEffectSpecHandle AssignSetByCallerMagnitude(FGameplayEffectSpecHandle SpecHandle,FName DataName,float Magnitude) { return default; }
 	///<summary>Sets a gameplay tag Set By Caller magnitude value</summary>
 	public static FGameplayEffectSpecHandle AssignTagSetByCallerMagnitude(FGameplayEffectSpecHandle SpecHandle,FGameplayTag DataTag,float Magnitude) { return default; }
 	///<summary>Manually sets the duration on a specific effect</summary>

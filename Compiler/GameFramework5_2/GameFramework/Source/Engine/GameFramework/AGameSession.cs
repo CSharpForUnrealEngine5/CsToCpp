@@ -15,5 +15,5 @@ public partial class AGameSession : AInfo {
 	///<summary>Is voice enabled always or via a push to talk keybinding</summary>
 	public bool bRequiresPushToTalk;
 	///<summary>SessionName local copy from PlayerState class.  should really be define in this class, but need to address replication issues</summary>
-	public string SessionName;
+	public FName SessionName;
 }

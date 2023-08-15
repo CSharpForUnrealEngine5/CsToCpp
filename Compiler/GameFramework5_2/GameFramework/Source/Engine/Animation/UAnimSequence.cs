@@ -16,7 +16,7 @@ public partial class UAnimSequence : UAnimSequenceBase {
 	///<summary>RawDataGuid</summary>
 	public FGuid RawDataGuid;
 	///<summary>AnimationTrackNames</summary>
-	public TArray<string> AnimationTrackNames;
+	public TArray<FName> AnimationTrackNames;
 	///<summary>Allow frame stripping to be performed on this animation if the platform requests it</summary>
 	public bool bAllowFrameStripping;
 	///<summary>Set a scale for error threshold on compression. This is useful if the animation will</summary>
@@ -34,7 +34,7 @@ public partial class UAnimSequence : UAnimSequenceBase {
 	///<summary>Additive reference animation if it&#39;s relevant - i.e. AnimScaled or AnimFrame *</summary>
 	public UAnimSequence RefPoseSeq;
 	///<summary>Base pose to use when retargeting</summary>
-	public string RetargetSource;
+	public FName RetargetSource;
 	///<summary>If RetargetSource is set to Default (None), this is asset for the base pose to use when retargeting. Transform data will be saved in RetargetSourceAssetReferencePose.</summary>
 	public TSoftObjectPtr<USkeletalMesh> RetargetSourceAsset;
 	///<summary>When using RetargetSourceAsset, use the post stored here</summary>
@@ -64,15 +64,15 @@ public partial class UAnimSequence : UAnimSequenceBase {
 	///<summary>Authored Sync markers</summary>
 	public TArray<FAnimSyncMarker> AuthoredSyncMarkers;
 	///<summary>AddBoneFloatCustomAttribute</summary>
-	public void AddBoneFloatCustomAttribute(string BoneName,string AttributeName,TArray<float> TimeKeys,TArray<float> ValueKeys) {}
+	public void AddBoneFloatCustomAttribute(FName BoneName,FName AttributeName,TArray<float> TimeKeys,TArray<float> ValueKeys) {}
 	///<summary>AddBoneIntegerCustomAttribute</summary>
-	public void AddBoneIntegerCustomAttribute(string BoneName,string AttributeName,TArray<float> TimeKeys,TArray<int> ValueKeys) {}
+	public void AddBoneIntegerCustomAttribute(FName BoneName,FName AttributeName,TArray<float> TimeKeys,TArray<int> ValueKeys) {}
 	///<summary>AddBoneStringCustomAttribute</summary>
-	public void AddBoneStringCustomAttribute(string BoneName,string AttributeName,TArray<float> TimeKeys,TArray<string> ValueKeys) {}
+	public void AddBoneStringCustomAttribute(FName BoneName,FName AttributeName,TArray<float> TimeKeys,TArray<string> ValueKeys) {}
 	///<summary>RemoveCustomAttribute</summary>
-	public void RemoveCustomAttribute(string BoneName,string AttributeName) {}
+	public void RemoveCustomAttribute(FName BoneName,FName AttributeName) {}
 	///<summary>RemoveAllCustomAttributesForBone</summary>
-	public void RemoveAllCustomAttributesForBone(string BoneName) {}
+	public void RemoveAllCustomAttributesForBone(FName BoneName) {}
 	///<summary>RemoveAllCustomAttributes</summary>
 	public void RemoveAllCustomAttributes() {}
 	///<summary>TargetFrameRate</summary>

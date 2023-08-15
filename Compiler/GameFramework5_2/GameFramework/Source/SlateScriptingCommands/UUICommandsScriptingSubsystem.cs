@@ -21,27 +21,27 @@ public partial class UUICommandsScriptingSubsystem : UEngineSubsystem {
 	///<summary>Unregisters all commands dynamically registered within all contexts and sets.</summary>
 	public void UnregisterAllSets() {}
 	///<summary>Registers a new command set</summary>
-	public bool RegisterCommandSet(string SetName) { return default; }
+	public bool RegisterCommandSet(FName SetName) { return default; }
 	///<summary>Checks whether the given set is currently registered in the subsystem</summary>
-	public bool IsCommandSetRegistered(string SetName) { return default; }
+	public bool IsCommandSetRegistered(FName SetName) { return default; }
 	///<summary>Unregisters the corresponding command set with all commands registered within it</summary>
-	public bool UnregisterCommandSet(string SetName) { return default; }
+	public bool UnregisterCommandSet(FName SetName) { return default; }
 	///<summary>Enables or disables execution of commands registered within the given set</summary>
-	public void SetCanSetExecuteCommands(string SetName,bool bShouldExecuteCommands) {}
+	public void SetCanSetExecuteCommands(FName SetName,bool bShouldExecuteCommands) {}
 	///<summary>Checks whether commands in the given set can be executed. This will also check CanExecuteCommands at a global scope</summary>
-	public bool CanSetExecuteCommands(string SetName) { return default; }
+	public bool CanSetExecuteCommands(FName SetName) { return default; }
 	///<summary>Retrieves the list of names for all contexts currently registered in the subsystem.</summary>
-	public TArray<string> GetAvailableContexts() { return default; }
+	public TArray<FName> GetAvailableContexts() { return default; }
 	///<summary>Checks whether the context with the given name is currently registered in the subsystem</summary>
-	public bool IsContextRegistered(string ContextName) { return default; }
+	public bool IsContextRegistered(FName ContextName) { return default; }
 	///<summary>Retrieves the number of UI Command Lists registered within this context through the subsystem.</summary>
-	public int GetBindingCountForContext(string ContextName) { return default; }
+	public int GetBindingCountForContext(FName ContextName) { return default; }
 	///<summary>Checks whether the given input chord is already mapped to a command in the given context.</summary>
-	public bool IsInputChordMapped(string ContextName,FInputChord InputChord) { return default; }
+	public bool IsInputChordMapped(FName ContextName,FInputChord InputChord) { return default; }
 	///<summary>The delegate bound to registered commands. It will broadcast back to the given dynamic delegate</summary>
 	public static void HandleExecuteAction(FExecuteCommand OnExecuteAction,FScriptingCommandInfo CommandInfo) {}
 	///<summary>The delegate used to check whether a command can be executed.</summary>
 	public bool HandleCanExecuteAction(FCanExecuteCommand OnCanExecuteAction,FScriptingCommandInfo CommandInfo) { return default; }
 	///<summary>The default delegate to check if a command can be executed (when the user does not provide a specific delegate).</summary>
-	public bool DefaultCanExecuteAction(string SetName) { return default; }
+	public bool DefaultCanExecuteAction(FName SetName) { return default; }
 }

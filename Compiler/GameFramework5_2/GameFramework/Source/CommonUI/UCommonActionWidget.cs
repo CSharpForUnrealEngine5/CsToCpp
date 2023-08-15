@@ -25,7 +25,7 @@ public partial class UCommonActionWidget : UWidget {
 	///<summary>The material to use when showing held progress, the progress will be sent using the material parameter</summary>
 	public FSlateBrush ProgressMaterialBrush;
 	///<summary>The material parameter on ProgressMaterialBrush to update the held percentage.  This value will be 0..1.</summary>
-	public string ProgressMaterialParam;
+	public FName ProgressMaterialParam;
 	///<summary>IconRimBrush</summary>
 	public FSlateBrush IconRimBrush;
 	///<summary>List all the input actions that this common action widget is intended to represent.  In some cases you might have multiple actions</summary>

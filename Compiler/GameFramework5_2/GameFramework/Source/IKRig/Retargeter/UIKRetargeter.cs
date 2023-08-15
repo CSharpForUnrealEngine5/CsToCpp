@@ -4,17 +4,17 @@ using CSharpToCpp.Utilities;
 public partial class UIKRetargeter : UObject {
 	public static UClass StaticClass() {return default;}
 	///<summary>Returns the chain settings associated with a given Goal in an IK Retargeter Asset using the given profile name (optional)</summary>
-	public static FTargetChainSettings GetChainUsingGoalFromRetargetAsset(UIKRetargeter RetargetAsset,string IKGoalName) { return default; }
+	public static FTargetChainSettings GetChainUsingGoalFromRetargetAsset(UIKRetargeter RetargetAsset,FName IKGoalName) { return default; }
 	///<summary>Returns the chain settings associated with a given target chain in an IK Retargeter Asset using the given profile name (optional)</summary>
-	public static FTargetChainSettings GetChainSettingsFromRetargetAsset(UIKRetargeter RetargetAsset,string TargetChainName,string OptionalProfileName) { return default; }
+	public static FTargetChainSettings GetChainSettingsFromRetargetAsset(UIKRetargeter RetargetAsset,FName TargetChainName,FName OptionalProfileName) { return default; }
 	///<summary>Returns the chain settings associated with a given target chain in the supplied Retarget Profile.</summary>
-	public static FTargetChainSettings GetChainSettingsFromRetargetProfile(FRetargetProfile RetargetProfile,string TargetChainName) { return default; }
+	public static FTargetChainSettings GetChainSettingsFromRetargetProfile(FRetargetProfile RetargetProfile,FName TargetChainName) { return default; }
 	///<summary>Returns the root settings in an IK Retargeter Asset using the given profile name (optional)</summary>
-	public static void GetRootSettingsFromRetargetAsset(UIKRetargeter RetargetAsset,string OptionalProfileName,FTargetRootSettings OutSettings) {}
+	public static void GetRootSettingsFromRetargetAsset(UIKRetargeter RetargetAsset,FName OptionalProfileName,FTargetRootSettings OutSettings) {}
 	///<summary>Returns the root settings in the supplied Retarget Profile.</summary>
 	public static FTargetRootSettings GetRootSettingsFromRetargetProfile(FRetargetProfile RetargetProfile) { return default; }
 	///<summary>Returns the global settings in an IK Retargeter Asset using the given profile name (optional)</summary>
-	public static void GetGlobalSettingsFromRetargetAsset(UIKRetargeter RetargetAsset,string OptionalProfileName,FRetargetGlobalSettings OutSettings) {}
+	public static void GetGlobalSettingsFromRetargetAsset(UIKRetargeter RetargetAsset,FName OptionalProfileName,FRetargetGlobalSettings OutSettings) {}
 	///<summary>Returns the global settings in the supplied Retarget Profile.</summary>
 	public static FRetargetGlobalSettings GetGlobalSettingsFromRetargetProfile(FRetargetProfile RetargetProfile) { return default; }
 	///<summary>Set the global settings in a retarget profile (will set bApplyGlobalSettings to true).</summary>
@@ -22,13 +22,13 @@ public partial class UIKRetargeter : UObject {
 	///<summary>Set the root settings in a retarget profile (will set bApplyRootSettings to true).</summary>
 	public static void SetRootSettingsInRetargetProfile(FRetargetProfile RetargetProfile,FTargetRootSettings RootSettings) {}
 	///<summary>Set the chain settings in a retarget profile (will set bApplyChainSettings to true).</summary>
-	public static void SetChainSettingsInRetargetProfile(FRetargetProfile RetargetProfile,FTargetChainSettings ChainSettings,string TargetChainName) {}
+	public static void SetChainSettingsInRetargetProfile(FRetargetProfile RetargetProfile,FTargetChainSettings ChainSettings,FName TargetChainName) {}
 	///<summary>Set the chain FK settings in a retarget profile (will set bApplyChainSettings to true).</summary>
-	public static void SetChainFKSettingsInRetargetProfile(FRetargetProfile RetargetProfile,FTargetChainFKSettings FKSettings,string TargetChainName) {}
+	public static void SetChainFKSettingsInRetargetProfile(FRetargetProfile RetargetProfile,FTargetChainFKSettings FKSettings,FName TargetChainName) {}
 	///<summary>Set the chain IK settings in a retarget profile (will set bApplyChainSettings to true).</summary>
-	public static void SetChainIKSettingsInRetargetProfile(FRetargetProfile RetargetProfile,FTargetChainIKSettings IKSettings,string TargetChainName) {}
+	public static void SetChainIKSettingsInRetargetProfile(FRetargetProfile RetargetProfile,FTargetChainIKSettings IKSettings,FName TargetChainName) {}
 	///<summary>Set the chain Speed Plant settings in a retarget profile (will set bApplyChainSettings to true).</summary>
-	public static void SetChainSpeedPlantSettingsInRetargetProfile(FRetargetProfile RetargetProfile,FTargetChainSpeedPlantSettings SpeedPlantSettings,string TargetChainName) {}
+	public static void SetChainSpeedPlantSettingsInRetargetProfile(FRetargetProfile RetargetProfile,FTargetChainSpeedPlantSettings SpeedPlantSettings,FName TargetChainName) {}
 	///<summary>The rig to copy animation FROM.</summary>
 	public TSoftObjectPtr<UIKRigDefinition> SourceIKRigAsset;
 	///<summary>Optional. Override the Skeletal Mesh to copy animation from. Uses the preview mesh from the Source IK Rig asset by default.</summary>
@@ -78,19 +78,19 @@ public partial class UIKRetargeter : UObject {
 	///<summary>the retarget root settings</summary>
 	public UIKRetargetGlobalSettings GlobalSettings;
 	///<summary>settings profiles stored in this asset</summary>
-	public TMap<string,FRetargetProfile> Profiles;
+	public TMap<FName,FRetargetProfile> Profiles;
 	///<summary>CurrentProfile</summary>
-	public string CurrentProfile;
+	public FName CurrentProfile;
 	///<summary>The set of retarget poses for the SOURCE skeleton.</summary>
-	public TMap<string,FIKRetargetPose> SourceRetargetPoses;
+	public TMap<FName,FIKRetargetPose> SourceRetargetPoses;
 	///<summary>The set of retarget poses for the TARGET skeleton.</summary>
-	public TMap<string,FIKRetargetPose> TargetRetargetPoses;
+	public TMap<FName,FIKRetargetPose> TargetRetargetPoses;
 	///<summary>The current retarget pose to use for the SOURCE.</summary>
-	public string CurrentSourceRetargetPose;
+	public FName CurrentSourceRetargetPose;
 	///<summary>The current retarget pose to use for the TARGET.</summary>
-	public string CurrentTargetRetargetPose;
+	public FName CurrentTargetRetargetPose;
 	///<summary>RetargetPoses_DEPRECATED</summary>
-	public TMap<string,FIKRetargetPose> RetargetPoses_DEPRECATED;
+	public TMap<FName,FIKRetargetPose> RetargetPoses_DEPRECATED;
 	///<summary>CurrentRetargetPose_DEPRECATED</summary>
-	public string CurrentRetargetPose_DEPRECATED;
+	public FName CurrentRetargetPose_DEPRECATED;
 }

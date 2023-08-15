@@ -4,5 +4,5 @@ using CSharpToCpp.Utilities;
 public partial class UAnimNextInterface_Name_Literal : UObject {
 	public static UClass StaticClass() {return default;}
 	///<summary>Value</summary>
-	public string Value;
+	public FName Value;
 }

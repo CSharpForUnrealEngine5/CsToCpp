@@ -7,5 +7,5 @@ public partial class UBlueprintEventNodeSpawner : UBlueprintNodeSpawner {
 	///<summary>The function to configure new nodes with.</summary>
 	public UFunction EventFunc;
 	///<summary>The custom name to configure new event nodes with.</summary>
-	public string CustomEventName;
+	public FName CustomEventName;
 }

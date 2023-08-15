@@ -12,11 +12,11 @@ public partial class UChaosCache : UObject {
 	///<summary>Per-particle data, includes transforms, velocities and other per-particle, per-frame data</summary>
 	public TArray<FPerParticleCacheData> ParticleTracks;
 	///<summary>Per-particle data, includes transforms, velocities and other per-particle, per-frame data</summary>
-	public TMap<string,FRichCurves> ChannelsTracks;
+	public TMap<FName,FRichCurves> ChannelsTracks;
 	///<summary>Per component/cache curve data, any continuous data that isn&#39;t per-particle can be stored here</summary>
-	public TMap<string,FRichCurve> CurveData;
+	public TMap<FName,FRichCurve> CurveData;
 	///<summary>Timestamped generic event tracks</summary>
-	public TMap<string,FCacheEventTrack> EventTracks;
+	public TMap<FName,FCacheEventTrack> EventTracks;
 	///<summary>Spawn template for an actor that can play this cache</summary>
 	public FCacheSpawnableTemplate Spawnable;
 	///<summary>GUID identifier for the adapter that spawned this cache</summary>

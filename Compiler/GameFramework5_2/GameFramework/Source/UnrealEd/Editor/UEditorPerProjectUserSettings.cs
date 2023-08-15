@@ -74,15 +74,15 @@ public partial class UEditorPerProjectUserSettings : UObject {
 	///<summary>The feature level we should use when loading or creating a new world</summary>
 	public int PreviewFeatureLevel;
 	///<summary>The platform name to preview, or NAME_None if there is no preview platform</summary>
-	public string PreviewPlatformName;
+	public FName PreviewPlatformName;
 	///<summary>The shader format to preview, or NAME_None if there is no preview platform</summary>
-	public string PreviewShaderFormatName;
+	public FName PreviewShaderFormatName;
 	///<summary>The shader platform to preview, or NAME_None if there is no preview platform</summary>
-	public string PreviewShaderPlatformName;
+	public FName PreviewShaderPlatformName;
 	///<summary>Is feature level preview currently active</summary>
 	public bool bPreviewFeatureLevelActive;
 	///<summary>bPreviewFeatureLevelWasDefault</summary>
 	public bool bPreviewFeatureLevelWasDefault;
 	///<summary>PreviewDeviceProfileName</summary>
-	public string PreviewDeviceProfileName;
+	public FName PreviewDeviceProfileName;
 }

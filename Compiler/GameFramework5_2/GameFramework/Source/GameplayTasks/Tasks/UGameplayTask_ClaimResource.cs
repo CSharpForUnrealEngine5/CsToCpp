@@ -4,7 +4,7 @@ using CSharpToCpp.Utilities;
 public partial class UGameplayTask_ClaimResource : UGameplayTask {
 	public static UClass StaticClass() {return default;}
 	///<summary>ClaimResource</summary>
-	public static UGameplayTask_ClaimResource ClaimResource(object /*InTaskOwner*/ InTaskOwner,UClass ResourceClass,byte Priority/*=192*/,string TaskInstanceName/*=NAME_None*/) { return default; }
+	public static UGameplayTask_ClaimResource ClaimResource(object /*InTaskOwner*/ InTaskOwner,UClass ResourceClass,byte Priority/*=192*/,FName TaskInstanceName/*=NAME_None*/) { return default; }
 	///<summary>ClaimResources</summary>
-	public static UGameplayTask_ClaimResource ClaimResources(object /*InTaskOwner*/ InTaskOwner,TArray<UClass> ResourceClasses,byte Priority/*=192*/,string TaskInstanceName/*=NAME_None*/) { return default; }
+	public static UGameplayTask_ClaimResource ClaimResources(object /*InTaskOwner*/ InTaskOwner,TArray<UClass> ResourceClasses,byte Priority/*=192*/,FName TaskInstanceName/*=NAME_None*/) { return default; }
 }

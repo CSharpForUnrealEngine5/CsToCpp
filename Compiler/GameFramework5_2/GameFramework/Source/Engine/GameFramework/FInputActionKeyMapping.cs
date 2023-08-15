@@ -3,7 +3,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Defines a mapping between an action and key</summary>
 [CppInclude("GameFramework/PlayerInput.h")]
 public partial struct FInputActionKeyMapping {
-	public string ActionName;
+	public FName ActionName;
 	public bool bShift;
 	public bool bCtrl;
 	public bool bAlt;

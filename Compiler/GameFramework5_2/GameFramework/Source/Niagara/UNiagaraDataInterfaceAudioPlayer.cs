@@ -11,7 +11,7 @@ public partial class UNiagaraDataInterfaceAudioPlayer : UNiagaraDataInterface {
 	///<summary>Optional sound concurrency setting to use</summary>
 	public USoundConcurrency Concurrency;
 	///<summary>A set of parameter names that can be referenced via index when setting sound cue parameters on persistent audio</summary>
-	public TArray<string> ParameterNames;
+	public TArray<FName> ParameterNames;
 	///<summary>If bound to a valid user parameter object of type UNiagaraDataInterfaceAudioPlayerSettings, then configured settings like sound attenuation are set via the user parameter. This allows the sound settings to be dynamically changed via blueprint or C++.</summary>
 	public FNiagaraUserParameterBinding ConfigurationUserParameter;
 	///<summary>bLimitPlaysPerTick</summary>

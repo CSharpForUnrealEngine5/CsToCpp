@@ -4,5 +4,5 @@ using CSharpToCpp.Utilities;
 public partial class UDetailsConfig : UEditorConfigBase {
 	public static UClass StaticClass() {return default;}
 	///<summary>Views</summary>
-	public TMap<string,FDetailsViewConfig> Views;
+	public TMap<FName,FDetailsViewConfig> Views;
 }

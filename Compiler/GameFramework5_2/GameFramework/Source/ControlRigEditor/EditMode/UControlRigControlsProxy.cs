@@ -6,5 +6,5 @@ public partial class UControlRigControlsProxy : UObject {
 	///<summary>bSelected</summary>
 	public bool bSelected;
 	///<summary>ControlName</summary>
-	public string ControlName;
+	public FName ControlName;
 }

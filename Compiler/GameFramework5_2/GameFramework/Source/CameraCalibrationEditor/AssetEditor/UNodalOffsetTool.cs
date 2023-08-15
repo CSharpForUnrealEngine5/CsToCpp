@@ -7,5 +7,5 @@ public partial class UNodalOffsetTool : UCameraCalibrationStep {
 	///<summary>The currently selected nodal offset algorithm</summary>
 	public UCameraNodalOffsetAlgo NodalOffsetAlgo;
 	///<summary>Map of algo names to overlay MIDs used by those algos</summary>
-	public TMap<string,UMaterialInstanceDynamic> AlgoOverlayMIDs;
+	public TMap<FName,UMaterialInstanceDynamic> AlgoOverlayMIDs;
 }

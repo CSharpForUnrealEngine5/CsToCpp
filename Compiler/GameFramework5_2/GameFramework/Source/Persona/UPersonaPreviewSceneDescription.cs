@@ -16,7 +16,7 @@ public partial class UPersonaPreviewSceneDescription : UObject {
 	///<summary>The method by which a preview animation blueprint is applied, either as an overlay layer, or as a linked instance</summary>
 	public EPreviewAnimationBlueprintApplicationMethod ApplicationMethod;
 	///<summary>The tag to use when applying a preview animation blueprint via LinkAnimGraphByTag</summary>
-	public string LinkedAnimGraphTag;
+	public FName LinkedAnimGraphTag;
 	///<summary>AdditionalMeshes</summary>
 	public TSoftObjectPtr<UDataAsset> AdditionalMeshes;
 	///<summary>DefaultAdditionalMeshes</summary>

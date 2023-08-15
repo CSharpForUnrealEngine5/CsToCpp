@@ -15,6 +15,6 @@ public partial struct FSlateBrush {
 	public FSlateColor TintColor;
 	public FSlateBrushOutlineSettings OutlineSettings;
 	public UObject ResourceObject;
-	public string ResourceName;
+	public FName ResourceName;
 	public FBox2f UVRegion;
 }

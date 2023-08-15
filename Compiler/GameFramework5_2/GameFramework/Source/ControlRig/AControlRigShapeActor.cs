@@ -13,11 +13,11 @@ public partial class AControlRigShapeActor : AActor {
 	///<summary>control rig this actor is referencing we can have multiple control rig&#39;s visible</summary>
 	public TWeakObjectPtr<UControlRig> ControlRig;
 	///<summary>the name of the control this actor is referencing</summary>
-	public string ControlName;
+	public FName ControlName;
 	///<summary>the name of the shape to use on this actor</summary>
-	public string ShapeName;
+	public FName ShapeName;
 	///<summary>the name of the color parameter on the material</summary>
-	public string ColorParameterName;
+	public FName ColorParameterName;
 	///<summary>Set the control to be enabled/disabled</summary>
 	public virtual void SetEnabled(bool bInEnabled) {}
 	///<summary>Get whether the control is enabled/disabled</summary>

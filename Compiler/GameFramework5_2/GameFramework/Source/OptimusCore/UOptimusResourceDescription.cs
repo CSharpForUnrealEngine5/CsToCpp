@@ -4,7 +4,7 @@ using CSharpToCpp.Utilities;
 public partial class UOptimusResourceDescription : UObject {
 	public static UClass StaticClass() {return default;}
 	///<summary>ResourceName</summary>
-	public string ResourceName;
+	public FName ResourceName;
 	///<summary>The the data type of each element of the resource</summary>
 	public FOptimusDataTypeRef DataType;
 	///<summary>The component binding that this resource description is bound to</summary>

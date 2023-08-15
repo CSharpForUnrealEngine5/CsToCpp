@@ -21,13 +21,13 @@ public partial class UPCGPointFilterSettings : UPCGSettings {
 	///<summary>TargetPointProperty_DEPRECATED</summary>
 	public EPCGPointProperties TargetPointProperty_DEPRECATED;
 	///<summary>TargetAttributeName_DEPRECATED</summary>
-	public string TargetAttributeName_DEPRECATED;
+	public FName TargetAttributeName_DEPRECATED;
 	///<summary>ThresholdFilterType_DEPRECATED</summary>
 	public EPCGPointThresholdType ThresholdFilterType_DEPRECATED;
 	///<summary>ThresholdPointProperty_DEPRECATED</summary>
 	public EPCGPointProperties ThresholdPointProperty_DEPRECATED;
 	///<summary>ThresholdAttributeName_DEPRECATED</summary>
-	public string ThresholdAttributeName_DEPRECATED;
+	public FName ThresholdAttributeName_DEPRECATED;
 	///<summary>ThresholdConstantType_DEPRECATED</summary>
 	public EPCGPointFilterConstantType ThresholdConstantType_DEPRECATED;
 	///<summary>Integer64Constant_DEPRECATED</summary>

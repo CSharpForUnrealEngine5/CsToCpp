@@ -5,7 +5,7 @@ using CSharpToCpp.Utilities;
 public partial class UTileMapBlueprintLibrary : UBlueprintFunctionLibrary {
 	public static UClass StaticClass() {return default;}
 	///<summary>Returns the user data name for the specified tile, or NAME_None if there is no user-specified data</summary>
-	public static string GetTileUserData(FPaperTileInfo Tile) { return default; }
+	public static FName GetTileUserData(FPaperTileInfo Tile) { return default; }
 	///<summary>Returns the transform for a tile</summary>
 	public static FTransform GetTileTransform(FPaperTileInfo Tile) { return default; }
 	///<summary>Breaks out the information for a tile</summary>

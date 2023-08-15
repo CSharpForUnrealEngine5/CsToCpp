@@ -4,7 +4,7 @@ using CSharpToCpp.Utilities;
 [CppInclude("EditorTutorial.h")]
 public partial struct FTutorialContentAnchor {
 	public ETutorialAnchorIdentifier Type;
-	public string WrapperIdentifier;
+	public FName WrapperIdentifier;
 	public FSoftObjectPath Asset;
 	public bool bDrawHighlight;
 	public string TabToFocusOrOpen;

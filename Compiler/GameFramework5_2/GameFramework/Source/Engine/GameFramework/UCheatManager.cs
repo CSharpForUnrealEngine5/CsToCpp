@@ -43,15 +43,15 @@ public partial class UCheatManager : UObject {
 	///<summary>View from the point of view of player with PlayerName S.</summary>
 	public virtual void ViewPlayer(string S) {}
 	///<summary>View from the point of view of AActor with Name ActorName.</summary>
-	public virtual void ViewActor(string ActorName) {}
+	public virtual void ViewActor(FName ActorName) {}
 	///<summary>View from the point of view of an AActor of class DesiredClass.  Each subsequent ViewClass cycles through the list of actors of that class.</summary>
 	public virtual void ViewClass(UClass DesiredClass) {}
 	///<summary>Stream in the given level.</summary>
-	public virtual void StreamLevelIn(string PackageName) {}
+	public virtual void StreamLevelIn(FName PackageName) {}
 	///<summary>Load the given level.</summary>
-	public virtual void OnlyLoadLevel(string PackageName) {}
+	public virtual void OnlyLoadLevel(FName PackageName) {}
 	///<summary>Stream out the given level.</summary>
-	public virtual void StreamLevelOut(string PackageName) {}
+	public virtual void StreamLevelOut(FName PackageName) {}
 	///<summary>Toggle between debug camera/player camera without locking gameplay and with locking local player controller input.</summary>
 	public virtual void ToggleDebugCamera() {}
 	///<summary>toggles AI logging</summary>

@@ -5,7 +5,7 @@ using CSharpToCpp.Utilities;
 public partial class UMovieSceneNodeGroup : UObject {
 	public static UClass StaticClass() {return default;}
 	///<summary>Name</summary>
-	public string Name;
+	public FName Name;
 	///<summary>Nodes that are part of this node group, stored as node tree paths</summary>
 	public TArray<string> Nodes;
 }

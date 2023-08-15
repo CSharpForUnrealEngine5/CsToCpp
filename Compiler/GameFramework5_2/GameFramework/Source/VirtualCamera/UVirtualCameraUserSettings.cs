@@ -61,7 +61,7 @@ public partial class UVirtualCameraUserSettings : UObject {
 	///<summary>Fills the Axis/Action mappings with assosiated gamepad bindings</summary>
 	public void InjectGamepadKeybinds() {}
 	///<summary>Retrieve all VirtualCamera action mappings by a certain name.</summary>
-	public void GetActionMappingsByName(string InActionName,TArray<FInputActionKeyMapping> OutMappings) {}
+	public void GetActionMappingsByName(FName InActionName,TArray<FInputActionKeyMapping> OutMappings) {}
 	///<summary>Retrieve all VirtualCamera axis mappings by a certain name.</summary>
-	public void GetAxisMappingsByName(string InAxisName,TArray<FInputAxisKeyMapping> OutMappings) {}
+	public void GetAxisMappingsByName(FName InAxisName,TArray<FInputAxisKeyMapping> OutMappings) {}
 }

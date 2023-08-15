@@ -7,7 +7,7 @@ public partial class USelectiveTessellationProperties : UInteractiveToolProperty
 	///<summary>Optionally, restrict tessellation to a subset of the triangles.</summary>
 	public EDisplaceMeshToolTriangleSelectionType SelectionType;
 	///<summary>Name of the selected material.</summary>
-	public string ActiveMaterial;
+	public FName ActiveMaterial;
 	///<summary>GetMaterialIDsFunc</summary>
 	public TArray<string> GetMaterialIDsFunc() { return default; }
 	///<summary>MaterialIDList</summary>

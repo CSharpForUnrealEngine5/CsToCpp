@@ -7,5 +7,5 @@ public partial struct FAIDamageEvent {
 	public FVector HitLocation;
 	public AActor DamagedActor;
 	public AActor Instigator;
-	public string Tag;
+	public FName Tag;
 }

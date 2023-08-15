@@ -6,5 +6,5 @@ public partial class UMediaPlayerEditorMediaContext : UToolMenuContextBase {
 	///<summary>SelectedAsset</summary>
 	public UObject SelectedAsset;
 	///<summary>StyleSetName</summary>
-	public string StyleSetName;
+	public FName StyleSetName;
 }

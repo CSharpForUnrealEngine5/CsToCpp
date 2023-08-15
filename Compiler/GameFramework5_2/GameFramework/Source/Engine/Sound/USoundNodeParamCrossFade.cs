@@ -5,5 +5,5 @@ using CSharpToCpp.Utilities;
 public partial class USoundNodeParamCrossFade : USoundNodeDistanceCrossFade {
 	public static UClass StaticClass() {return default;}
 	///<summary>Parameter controlling cross fades.</summary>
-	public string ParamName;
+	public FName ParamName;
 }

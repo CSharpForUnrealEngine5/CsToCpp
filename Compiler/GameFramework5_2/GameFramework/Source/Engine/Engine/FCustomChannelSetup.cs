@@ -7,5 +7,5 @@ public partial struct FCustomChannelSetup {
 	public ECollisionResponse DefaultResponse;
 	public bool bTraceType;
 	public bool bStaticObject;
-	public string Name;
+	public FName Name;
 }

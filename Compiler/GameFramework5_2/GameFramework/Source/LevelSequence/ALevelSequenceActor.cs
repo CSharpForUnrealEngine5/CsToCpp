@@ -45,23 +45,23 @@ public partial class ALevelSequenceActor : AActor {
 	///<summary>Overrides the specified binding with the specified actors, optionally still allowing the bindings defined in the Level Sequence asset</summary>
 	public void SetBinding(FMovieSceneObjectBindingID Binding,TArray<AActor> Actors,bool bAllowBindingsFromAsset/*=false*/) {}
 	///<summary>Assigns an set of actors to all the bindings tagged with the specified name in this sequence. Object Bindings can be tagged within the sequence UI by RMB -&gt; Tags... on the object binding in the tree.</summary>
-	public void SetBindingByTag(string BindingTag,TArray<AActor> Actors,bool bAllowBindingsFromAsset/*=false*/) {}
+	public void SetBindingByTag(FName BindingTag,TArray<AActor> Actors,bool bAllowBindingsFromAsset/*=false*/) {}
 	///<summary>Adds the specified actor to the overridden bindings for the specified binding ID, optionally still allowing the bindings defined in the Level Sequence asset</summary>
 	public void AddBinding(FMovieSceneObjectBindingID Binding,AActor Actor,bool bAllowBindingsFromAsset/*=false*/) {}
 	///<summary>Binds an actor to all the bindings tagged with the specified name in this sequence. Does not remove any exising bindings that have been set up through this API. Object Bindings can be tagged within the sequence UI by RMB -&gt; Tags... on the object binding in the tree.</summary>
-	public void AddBindingByTag(string BindingTag,AActor Actor,bool bAllowBindingsFromAsset/*=false*/) {}
+	public void AddBindingByTag(FName BindingTag,AActor Actor,bool bAllowBindingsFromAsset/*=false*/) {}
 	///<summary>Removes the specified actor from the specified binding&#39;s actor array</summary>
 	public void RemoveBinding(FMovieSceneObjectBindingID Binding,AActor Actor) {}
 	///<summary>Removes the specified actor from the specified binding&#39;s actor array</summary>
-	public void RemoveBindingByTag(string Tag,AActor Actor) {}
+	public void RemoveBindingByTag(FName Tag,AActor Actor) {}
 	///<summary>Resets the specified binding back to the defaults defined by the Level Sequence asset</summary>
 	public void ResetBinding(FMovieSceneObjectBindingID Binding) {}
 	///<summary>Resets all overridden bindings back to the defaults defined by the Level Sequence asset</summary>
 	public void ResetBindings() {}
 	///<summary>Retrieve the first object binding that has been tagged with the specified name</summary>
-	public FMovieSceneObjectBindingID FindNamedBinding(string Tag) { return default; }
+	public FMovieSceneObjectBindingID FindNamedBinding(FName Tag) { return default; }
 	///<summary>Retrieve all the bindings that have been tagged with the specified name</summary>
-	public TArray<FMovieSceneObjectBindingID> FindNamedBindings(string Tag) { return default; }
+	public TArray<FMovieSceneObjectBindingID> FindNamedBindings(FName Tag) { return default; }
 	///<summary>Burn-in widget</summary>
 	public ULevelSequenceBurnIn BurnInInstance;
 	///<summary>bShowBurnin</summary>

@@ -7,7 +7,7 @@ public partial class URigVMTemplateNode : URigVMNode {
 	///<summary>Returns the UStruct for this unit node</summary>
 	public virtual UScriptStruct GetScriptStruct() { return default; }
 	///<summary>Returns the notation of the node</summary>
-	public virtual string GetNotation() { return default; }
+	public virtual FName GetNotation() { return default; }
 	///<summary>IsSingleton</summary>
 	public virtual bool IsSingleton() { return default; }
 	///<summary>returns true if the template node is resolved</summary>
@@ -15,7 +15,7 @@ public partial class URigVMTemplateNode : URigVMNode {
 	///<summary>returns true if the template is fully unresolved</summary>
 	public bool IsFullyUnresolved() { return default; }
 	///<summary>TemplateNotation</summary>
-	public string TemplateNotation;
+	public FName TemplateNotation;
 	///<summary>ResolvedFunctionName</summary>
 	public string ResolvedFunctionName;
 	///<summary>Indicates a preferred permutation using the types of the arguments</summary>

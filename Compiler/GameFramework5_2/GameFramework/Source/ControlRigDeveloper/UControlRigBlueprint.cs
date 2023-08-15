@@ -78,13 +78,13 @@ public partial class UControlRigBlueprint : UBlueprint {
 	///<summary>GetMemberVariables</summary>
 	public TArray<FRigVMGraphVariableDescription> GetMemberVariables() { return default; }
 	///<summary>AddMemberVariable</summary>
-	public string AddMemberVariable(string InName,string InCPPType,bool bIsPublic/*=false*/,bool bIsReadOnly/*=false*/,string InDefaultValue/*=TEXT("")*/) { return default; }
+	public FName AddMemberVariable(FName InName,string InCPPType,bool bIsPublic/*=false*/,bool bIsReadOnly/*=false*/,string InDefaultValue/*=TEXT("")*/) { return default; }
 	///<summary>RemoveMemberVariable</summary>
-	public bool RemoveMemberVariable(string InName) { return default; }
+	public bool RemoveMemberVariable(FName InName) { return default; }
 	///<summary>RenameMemberVariable</summary>
-	public bool RenameMemberVariable(string InOldName,string InNewName) { return default; }
+	public bool RenameMemberVariable(FName InOldName,FName InNewName) { return default; }
 	///<summary>ChangeMemberVariableType</summary>
-	public bool ChangeMemberVariableType(string InName,string InCPPType,bool bIsPublic/*=false*/,bool bIsReadOnly/*=false*/,string InDefaultValue/*=TEXT("")*/) { return default; }
+	public bool ChangeMemberVariableType(FName InName,string InCPPType,bool bIsPublic/*=false*/,bool bIsReadOnly/*=false*/,string InDefaultValue/*=TEXT("")*/) { return default; }
 	///<summary>GizmoLibrary_DEPRECATED</summary>
 	public TSoftObjectPtr<UControlRigShapeLibrary> GizmoLibrary_DEPRECATED;
 	///<summary>ShapeLibraries</summary>
@@ -112,7 +112,7 @@ public partial class UControlRigBlueprint : UBlueprint {
 	///<summary>The skeleton from import into a curve</summary>
 	public TSoftObjectPtr<UObject> SourceCurveImport;
 	///<summary>The event names this control rig blueprint contains</summary>
-	public TArray<string> SupportedEventNames;
+	public TArray<FName> SupportedEventNames;
 	///<summary>If set to true, this control rig has animatable controls</summary>
 	public bool bExposesAnimatableControls;
 	///<summary>bAutoRecompileVM</summary>

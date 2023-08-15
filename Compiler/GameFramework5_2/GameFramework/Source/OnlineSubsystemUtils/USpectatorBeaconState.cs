@@ -5,7 +5,7 @@ using CSharpToCpp.Utilities;
 public partial class USpectatorBeaconState : UObject {
 	public static UClass StaticClass() {return default;}
 	///<summary>Session tied to the beacon</summary>
-	public string SessionName;
+	public FName SessionName;
 	///<summary>Number of currently consumed reservations</summary>
 	public int NumConsumedReservations;
 	///<summary>Maximum allowed reservations</summary>

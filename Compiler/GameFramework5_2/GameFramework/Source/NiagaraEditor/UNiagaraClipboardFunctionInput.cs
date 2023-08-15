@@ -4,7 +4,7 @@ using CSharpToCpp.Utilities;
 public partial class UNiagaraClipboardFunctionInput : UObject {
 	public static UClass StaticClass() {return default;}
 	///<summary>InputName</summary>
-	public string InputName;
+	public FName InputName;
 	///<summary>InputType</summary>
 	public FNiagaraTypeDefinition InputType;
 	///<summary>bHasEditCondition</summary>
@@ -16,7 +16,7 @@ public partial class UNiagaraClipboardFunctionInput : UObject {
 	///<summary>Local</summary>
 	public TArray<byte> Local;
 	///<summary>Linked</summary>
-	public string Linked;
+	public FName Linked;
 	///<summary>Data</summary>
 	public UNiagaraDataInterface Data;
 	///<summary>Expression</summary>

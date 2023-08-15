@@ -4,5 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("NiagaraNodeConvert.h")]
 public partial struct FNiagaraConvertPinRecord {
 	public FGuid PinId;
-	public TArray<string> Path;
+	public TArray<FName> Path;
 }

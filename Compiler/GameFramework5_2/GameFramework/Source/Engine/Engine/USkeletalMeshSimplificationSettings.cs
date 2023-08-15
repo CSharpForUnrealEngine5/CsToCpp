@@ -5,5 +5,5 @@ using CSharpToCpp.Utilities;
 public partial class USkeletalMeshSimplificationSettings : UDeveloperSettings {
 	public static UClass StaticClass() {return default;}
 	///<summary>Mesh reduction plugin to use when simplifying skeletal meshes</summary>
-	public string SkeletalMeshReductionModuleName;
+	public FName SkeletalMeshReductionModuleName;
 }

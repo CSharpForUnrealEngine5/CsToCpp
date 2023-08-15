@@ -8,5 +8,5 @@ public partial class ULeaderboardQueryCallbackProxy : UObject {
 	///<summary>Called when there is an unsuccessful leaderboard query</summary>
 	public FLeaderboardQueryResult OnFailure;
 	///<summary>Queries a leaderboard for an integer value</summary>
-	public static ULeaderboardQueryCallbackProxy CreateProxyObjectForIntQuery(APlayerController PlayerController,string StatName) { return default; }
+	public static ULeaderboardQueryCallbackProxy CreateProxyObjectForIntQuery(APlayerController PlayerController,FName StatName) { return default; }
 }

@@ -18,7 +18,7 @@ public partial class UContextualAnimSceneActorComponent : UPrimitiveComponent {
 	///<summary>GetIKTargets</summary>
 	public TArray<FContextualAnimIKTarget> GetIKTargets() { return default; }
 	///<summary>GetIKTargetByGoalName</summary>
-	public FContextualAnimIKTarget GetIKTargetByGoalName(string GoalName) { return default; }
+	public FContextualAnimIKTarget GetIKTargetByGoalName(FName GoalName) { return default; }
 	///<summary>StartContextualAnimScene</summary>
 	public bool StartContextualAnimScene(FContextualAnimSceneBindings InBindings) { return default; }
 	///<summary>Replicated copy of the bindings so we can start the action on simulated proxies</summary>

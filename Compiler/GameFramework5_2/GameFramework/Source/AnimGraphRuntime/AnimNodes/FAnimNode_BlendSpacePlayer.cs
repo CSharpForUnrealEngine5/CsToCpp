@@ -3,7 +3,7 @@ using CSharpToCpp.Utilities;
 ///<summary>@TODO: Comment</summary>
 [CppInclude("AnimNodes/AnimNode_BlendSpacePlayer.h")]
 public partial struct FAnimNode_BlendSpacePlayer {
-	public string GroupName;
+	public FName GroupName;
 	public EAnimGroupRole GroupRole;
 	public EAnimSyncMethod Method;
 	public bool bIgnoreForRelevancyTest;

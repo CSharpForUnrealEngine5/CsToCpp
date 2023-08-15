@@ -145,19 +145,19 @@ public partial class UGameplayAbility : UObject {
 	///<summary>This ability is blocked if the target actor/component has any of these tags</summary>
 	public FGameplayTagContainer TargetBlockedTags;
 	///<summary>Finds all currently active tasks named InstanceName and confirms them. What this means depends on the individual task. By default, this does nothing other than ending if bEndTask is true.</summary>
-	public void ConfirmTaskByInstanceName(string InstanceName,bool bEndTask) {}
+	public void ConfirmTaskByInstanceName(FName InstanceName,bool bEndTask) {}
 	///<summary>Add any task with this instance name to a list to be ended (not canceled) next frame.  See also CancelTaskByInstanceName.</summary>
-	public void EndTaskByInstanceName(string InstanceName) {}
+	public void EndTaskByInstanceName(FName InstanceName) {}
 	///<summary>Add any task with this instance name to a list to be canceled (not ended) next frame.  See also EndTaskByInstanceName.</summary>
-	public void CancelTaskByInstanceName(string InstanceName) {}
+	public void CancelTaskByInstanceName(FName InstanceName) {}
 	///<summary>Ends any active ability state task with the given name. If name is &#39;None&#39; all active states will be ended (in an arbitrary order).</summary>
-	public void EndAbilityState(string OptionalStateNameToEnd) {}
+	public void EndAbilityState(FName OptionalStateNameToEnd) {}
 	///<summary>List of currently active tasks, do not modify directly</summary>
 	public TArray<UGameplayTask> ActiveTasks;
 	///<summary>Immediately jumps the active montage to a section</summary>
-	public void MontageJumpToSection(string SectionName) {}
+	public void MontageJumpToSection(FName SectionName) {}
 	///<summary>Sets pending section on active montage</summary>
-	public void MontageSetNextSectionName(string FromSectionName,string ToSectionName) {}
+	public void MontageSetNextSectionName(FName FromSectionName,FName ToSectionName) {}
 	///<summary>Stops the current animation montage.</summary>
 	public void MontageStop(float OverrideBlendOutTime/*=-1.0f*/) {}
 	///<summary>Active montage being played by this ability</summary>
@@ -165,7 +165,7 @@ public partial class UGameplayAbility : UObject {
 	///<summary>Creates a target location from where the owner avatar is</summary>
 	public FGameplayAbilityTargetingLocationInfo MakeTargetLocationInfoFromOwnerActor() { return default; }
 	///<summary>Creates a target location from a socket on the owner avatar&#39;s skeletal mesh</summary>
-	public FGameplayAbilityTargetingLocationInfo MakeTargetLocationInfoFromOwnerSkeletalMeshComponent(string SocketName) { return default; }
+	public FGameplayAbilityTargetingLocationInfo MakeTargetLocationInfoFromOwnerSkeletalMeshComponent(FName SocketName) { return default; }
 	///<summary>True if the ability is currently active. For instance per owner abilities</summary>
 	public bool bIsActive;
 	///<summary>True if the end ability has been called, but has not yet completed.</summary>

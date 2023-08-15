@@ -7,5 +7,5 @@ public partial class URemoteControlLogicConfig : UObject {
 	///<summary>PropertyBag types that are supported for use as Controllers</summary>
 	public TArray<EPropertyBagPropertyType> SupportedControllerTypes;
 	///<summary>Certain types such as FVector / FRotator / FColor are specializations of UStructProperty</summary>
-	public TArray<string> SupportedControllerStructTypes;
+	public TArray<FName> SupportedControllerStructTypes;
 }

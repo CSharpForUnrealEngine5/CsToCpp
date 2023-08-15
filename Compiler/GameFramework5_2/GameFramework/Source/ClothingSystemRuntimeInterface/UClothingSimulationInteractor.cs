@@ -35,5 +35,5 @@ public partial class UClothingSimulationInteractor : UObject {
 	///<summary>Return a cloth interactor for this simulation.</summary>
 	public UClothingInteractor GetClothingInteractor(string ClothingAssetName) { return default; }
 	///<summary>Cloth interactors currently created.</summary>
-	public TMap<string,UClothingInteractor> ClothingInteractors;
+	public TMap<FName,UClothingInteractor> ClothingInteractors;
 }

@@ -20,7 +20,7 @@ public partial class UParticleModuleLocationBoneSocket : UParticleModuleLocation
 	///<summary>A scale on how much of the bone&#39;s velocity a particle will inherit.</summary>
 	public float InheritVelocityScale;
 	///<summary>The parameter name of the skeletal mesh actor that supplies the SkelMeshComponent for in-game.</summary>
-	public string SkelMeshActorParamName;
+	public FName SkelMeshActorParamName;
 	///<summary>When we have no source locations and we need to track bone velocities due to bInheritBoneVelocity, we pre select a set of bones to use each frame. This property determines how big the list is.</summary>
 	public int NumPreSelectedIndices;
 	///<summary>The name of the skeletal mesh to use in the editor</summary>

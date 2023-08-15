@@ -4,5 +4,5 @@ using CSharpToCpp.Utilities;
 public partial struct FFunctionInputSummaryViewKey {
 	public FGuid FunctionGuid;
 	public FGuid InputGuid;
-	public string InputName;
+	public FName InputName;
 }

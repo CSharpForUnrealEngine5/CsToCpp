@@ -9,7 +9,7 @@ public partial class UComposureLensBloomPassPolicy : UComposurePostProcessPassPo
 	///<summary>ReplacementMaterial</summary>
 	public UMaterialInterface ReplacementMaterial;
 	///<summary>BloomIntensityParamName</summary>
-	public string BloomIntensityParamName;
+	public FName BloomIntensityParamName;
 	///<summary>TonemapperReplacmentMID</summary>
 	public UMaterialInstanceDynamic TonemapperReplacmentMID;
 }

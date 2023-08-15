@@ -16,5 +16,5 @@ public partial class UMovieSceneCopyableBinding : UObject {
 	///<summary>BoundObjectNames</summary>
 	public TArray<string> BoundObjectNames;
 	///<summary>FolderPath</summary>
-	public TArray<string> FolderPath;
+	public TArray<FName> FolderPath;
 }

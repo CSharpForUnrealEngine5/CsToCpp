@@ -5,7 +5,7 @@ using CSharpToCpp.Utilities;
 public partial class ALevelScriptActor : AActor {
 	public static UClass StaticClass() {return default;}
 	///<summary>Tries to find an event named &quot;EventName&quot; on all other levels, and calls it</summary>
-	public virtual bool RemoteEvent(string EventName) { return default; }
+	public virtual bool RemoteEvent(FName EventName) { return default; }
 	///<summary>Sets the cinematic mode on all PlayerControllers</summary>
 	public virtual void SetCinematicMode(bool bCinematicMode,bool bHidePlayer/*=true*/,bool bAffectsHUD/*=true*/,bool bAffectsMovement/*=false*/,bool bAffectsTurning/*=false*/) {}
 	///<summary>@todo document</summary>

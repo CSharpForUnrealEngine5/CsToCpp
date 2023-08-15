@@ -24,7 +24,7 @@ public partial class UBTFunctionLibrary : UBlueprintFunctionLibrary {
 	///<summary>GetBlackboardValueAsString</summary>
 	public static string GetBlackboardValueAsString(UBTNode NodeOwner,FBlackboardKeySelector Key) { return default; }
 	///<summary>GetBlackboardValueAsName</summary>
-	public static string GetBlackboardValueAsName(UBTNode NodeOwner,FBlackboardKeySelector Key) { return default; }
+	public static FName GetBlackboardValueAsName(UBTNode NodeOwner,FBlackboardKeySelector Key) { return default; }
 	///<summary>GetBlackboardValueAsVector</summary>
 	public static FVector GetBlackboardValueAsVector(UBTNode NodeOwner,FBlackboardKeySelector Key) { return default; }
 	///<summary>GetBlackboardValueAsRotator</summary>
@@ -44,7 +44,7 @@ public partial class UBTFunctionLibrary : UBlueprintFunctionLibrary {
 	///<summary>SetBlackboardValueAsString</summary>
 	public static void SetBlackboardValueAsString(UBTNode NodeOwner,FBlackboardKeySelector Key,string Value) {}
 	///<summary>SetBlackboardValueAsName</summary>
-	public static void SetBlackboardValueAsName(UBTNode NodeOwner,FBlackboardKeySelector Key,string Value) {}
+	public static void SetBlackboardValueAsName(UBTNode NodeOwner,FBlackboardKeySelector Key,FName Value) {}
 	///<summary>SetBlackboardValueAsVector</summary>
 	public static void SetBlackboardValueAsVector(UBTNode NodeOwner,FBlackboardKeySelector Key,FVector Value) {}
 	///<summary>(DEPRECATED) Use ClearBlackboardValue instead</summary>

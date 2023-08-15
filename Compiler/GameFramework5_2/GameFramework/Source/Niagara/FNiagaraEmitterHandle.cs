@@ -4,9 +4,9 @@ using CSharpToCpp.Utilities;
 [CppInclude("NiagaraEmitterHandle.h")]
 public partial struct FNiagaraEmitterHandle {
 	public FGuid Id;
-	public string IdName;
+	public FName IdName;
 	public bool bIsEnabled;
-	public string Name;
+	public FName Name;
 	public UNiagaraEmitter Source_DEPRECATED;
 	public UNiagaraEmitter LastMergedSource_DEPRECATED;
 	public bool bIsolated;

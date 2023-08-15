@@ -3,7 +3,7 @@ using CSharpToCpp.Utilities;
 [CppInclude("HeadMountedDisplayTypes.h")]
 public partial struct FXRMotionControllerData {
 	public bool bValid;
-	public string DeviceName;
+	public FName DeviceName;
 	public FGuid ApplicationInstanceID;
 	public EXRVisualType DeviceVisualType;
 	public EControllerHand HandIndex;

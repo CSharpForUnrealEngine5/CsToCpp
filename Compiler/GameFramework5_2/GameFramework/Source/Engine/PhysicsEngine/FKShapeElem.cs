@@ -5,7 +5,7 @@ using CSharpToCpp.Utilities;
 public partial struct FKShapeElem {
 	public float RestOffset;
 	public bool bIsGenerated;
-	public string Name;
+	public FName Name;
 	public bool bContributeToMass;
 	public ECollisionEnabled CollisionEnabled;
 }

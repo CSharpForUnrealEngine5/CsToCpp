@@ -19,7 +19,7 @@ public partial class UWorldPartitionResaveActorsBuilder : UWorldPartitionBuilder
 	///<summary>bEnableActorFolders</summary>
 	public bool bEnableActorFolders;
 	///<summary>ActorTags</summary>
-	public TSet<string> ActorTags;
+	public TSet<FName> ActorTags;
 	///<summary>ActorProperties</summary>
-	public TMap<string,string> ActorProperties;
+	public TMap<FName,FName> ActorProperties;
 }

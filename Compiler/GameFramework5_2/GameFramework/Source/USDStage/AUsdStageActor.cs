@@ -22,9 +22,9 @@ public partial class AUsdStageActor : AActor {
 	///<summary>Try enabling Nanite for static meshes that are generated with at least this many triangles</summary>
 	public int NaniteTriangleThreshold;
 	///<summary>Specifies which set of shaders to use when parsing USD materials, in addition to the universal render context.</summary>
-	public string RenderContext;
+	public FName RenderContext;
 	///<summary>Specifies which material purbose to use when parsing USD material bindings, in addition to the &quot;allPurpose&quot; fallback.</summary>
-	public string MaterialPurpose;
+	public FName MaterialPurpose;
 	///<summary>Describes what to add to the root bone animation within generated AnimSequences, if anything</summary>
 	public EUsdRootMotionHandling RootMotionHandling;
 	///<summary>SetRootLayer</summary>
@@ -46,9 +46,9 @@ public partial class AUsdStageActor : AActor {
 	///<summary>SetNaniteTriangleThreshold</summary>
 	public void SetNaniteTriangleThreshold(int NewNaniteTriangleThreshold) {}
 	///<summary>SetRenderContext</summary>
-	public void SetRenderContext(string NewRenderContext) {}
+	public void SetRenderContext(FName NewRenderContext) {}
 	///<summary>SetMaterialPurpose</summary>
-	public void SetMaterialPurpose(string NewMaterialPurpose) {}
+	public void SetMaterialPurpose(FName NewMaterialPurpose) {}
 	///<summary>SetRootMotionHandling</summary>
 	public void SetRootMotionHandling(EUsdRootMotionHandling NewHandlingStrategy) {}
 	///<summary>GetTime</summary>

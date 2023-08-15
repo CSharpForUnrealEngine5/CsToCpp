@@ -21,6 +21,6 @@ public partial struct FHitResult {
 	public TWeakObjectPtr<UPhysicalMaterial> PhysMaterial;
 	public FActorInstanceHandle HitObjectHandle;
 	public TWeakObjectPtr<UPrimitiveComponent> Component;
-	public string BoneName;
-	public string MyBoneName;
+	public FName BoneName;
+	public FName MyBoneName;
 }

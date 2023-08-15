@@ -7,7 +7,7 @@ public partial class UDeformableTetrahedralComponent : UDeformablePhysicsCompone
 	///<summary>@deprecated Use GetSkeletalMeshEmbeddedPositions() instead.</summary>
 	public TArray<FVector> GetSkeletalMeshBindingPositions(USkeletalMesh InSkeletalMesh) { return default; }
 	///<summary>Get the current positions of the transformation hierarchy from \c TargetDeformationSkeleton,</summary>
-	public TArray<FVector> GetSkeletalMeshEmbeddedPositions(ChaosDeformableBindingOption Format,FTransform TargetDeformationSkeletonOffset,string TargetBone/*=""*/,float SimulationBlendWeight/*=1.0f*/) { return default; }
+	public TArray<FVector> GetSkeletalMeshEmbeddedPositions(ChaosDeformableBindingOption Format,FTransform TargetDeformationSkeletonOffset,FName TargetBone/*=""*/,float SimulationBlendWeight/*=1.0f*/) { return default; }
 	///<summary>SimulationSpace</summary>
 	public FFleshSimulationSpaceGroup SimulationSpace;
 	///<summary>BodyForces</summary>

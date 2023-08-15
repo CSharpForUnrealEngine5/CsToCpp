@@ -6,7 +6,7 @@ public partial class URemoteControlExposeRegistry : UObject {
 	///<summary>Holds the exposed entities.</summary>
 	public TSet<FRCEntityWrapper> ExposedEntities;
 	///<summary>Cache of label to ids.</summary>
-	public TMap<string,FGuid> LabelToIdCache;
+	public TMap<FName,FGuid> LabelToIdCache;
 	///<summary>Holds the types of entities exposed in the registry.</summary>
 	public TSet<UScriptStruct> ExposedTypes;
 }

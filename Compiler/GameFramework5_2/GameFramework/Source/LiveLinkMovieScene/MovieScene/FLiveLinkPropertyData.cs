@@ -2,7 +2,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("MovieScene/MovieSceneLiveLinkStructProperties.h")]
 public partial struct FLiveLinkPropertyData {
-	public string PropertyName;
+	public FName PropertyName;
 	public TArray<FMovieSceneFloatChannel> FloatChannel;
 	public TArray<FMovieSceneStringChannel> StringChannel;
 	public TArray<FMovieSceneIntegerChannel> IntegerChannel;

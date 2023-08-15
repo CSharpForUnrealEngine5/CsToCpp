@@ -50,9 +50,9 @@ public partial class UARBlueprintLibrary : UBlueprintFunctionLibrary {
 	///<summary>An AugmentedReality session can be configured to provide light estimates.</summary>
 	public static UARLightEstimate GetCurrentLightEstimate() { return default; }
 	///<summary>Pin an Unreal Component to a location in tracking spce (i.e. the real world).</summary>
-	public static UARPin PinComponent(USceneComponent ComponentToPin,FTransform PinToWorldTransform,UARTrackedGeometry TrackedGeometry/*=nullptr*/,string DebugName/*=NAME_None*/) { return default; }
+	public static UARPin PinComponent(USceneComponent ComponentToPin,FTransform PinToWorldTransform,UARTrackedGeometry TrackedGeometry/*=nullptr*/,FName DebugName/*=NAME_None*/) { return default; }
 	///<summary>A convenient version of \c PinComponent() that can be used in conjunction</summary>
-	public static UARPin PinComponentToTraceResult(USceneComponent ComponentToPin,FARTraceResult TraceResult,string DebugName/*=NAME_None*/) { return default; }
+	public static UARPin PinComponentToTraceResult(USceneComponent ComponentToPin,FARTraceResult TraceResult,FName DebugName/*=NAME_None*/) { return default; }
 	///<summary>Associate a component with an ARPin, so that its transform will be updated by the pin.  Any previously associated component will be detached.</summary>
 	public static bool PinComponentToARPin(USceneComponent ComponentToPin,UARPin Pin) { return default; }
 	///<summary>Given a pinned \c ComponentToUnpin, remove its attachment to the real world.</summary>
@@ -66,11 +66,11 @@ public partial class UARBlueprintLibrary : UBlueprintFunctionLibrary {
 	///<summary>Is ARPin Local Store Ready</summary>
 	public static bool IsARPinLocalStoreReady() { return default; }
 	///<summary>Load all ARPins from local save</summary>
-	public static TMap<string,UARPin> LoadARPinsFromLocalStore() { return default; }
+	public static TMap<FName,UARPin> LoadARPinsFromLocalStore() { return default; }
 	///<summary>Save an ARPin to local store</summary>
-	public static bool SaveARPinToLocalStore(string InSaveName,UARPin InPin) { return default; }
+	public static bool SaveARPinToLocalStore(FName InSaveName,UARPin InPin) { return default; }
 	///<summary>Remove an ARPin from the local store</summary>
-	public static void RemoveARPinFromLocalStore(string InSaveName) {}
+	public static void RemoveARPinFromLocalStore(FName InSaveName) {}
 	///<summary>Remove all ARPins from the local store</summary>
 	public static void RemoveAllARPinsFromLocalStore() {}
 	///<summary>GetAllTrackedPlanes</summary>

@@ -7,9 +7,9 @@ public partial class UAnimGraphNode_Base : UK2Node {
 	///<summary>ShowPinForProperties</summary>
 	public TArray<FOptionalPinFromProperty> ShowPinForProperties;
 	///<summary>Map from property name-&gt;binding info</summary>
-	public TMap<string,FAnimGraphNodePropertyBinding> PropertyBindings;
+	public TMap<FName,FAnimGraphNodePropertyBinding> PropertyBindings;
 	///<summary>Properties marked as always dynamic, so they can be set externally</summary>
-	public TSet<string> AlwaysDynamicProperties;
+	public TSet<FName> AlwaysDynamicProperties;
 	///<summary>BlueprintUsage</summary>
 	public EBlueprintUsage BlueprintUsage;
 	///<summary>Function called before the node is updated for the first time</summary>
@@ -19,5 +19,5 @@ public partial class UAnimGraphNode_Base : UK2Node {
 	///<summary>Function called when the node is updated</summary>
 	public FMemberReference UpdateFunction;
 	///<summary>Optional reference tag name. If this is set then this node can be referenced from elsewhere in this animation blueprint using an anim node reference</summary>
-	public string Tag;
+	public FName Tag;
 }

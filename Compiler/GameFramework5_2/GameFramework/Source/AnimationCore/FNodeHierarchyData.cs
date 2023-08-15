@@ -5,5 +5,5 @@ using CSharpToCpp.Utilities;
 public partial struct FNodeHierarchyData {
 	public TArray<FNodeObject> Nodes;
 	public TArray<FTransform> Transforms;
-	public TMap<string,int> NodeNameToIndexMapping;
+	public TMap<FName,int> NodeNameToIndexMapping;
 }

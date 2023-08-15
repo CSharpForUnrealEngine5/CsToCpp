@@ -8,5 +8,5 @@ public partial class UAnimGraphNode_BlendListByEnum : UAnimGraphNode_BlendListBa
 	///<summary>Name of the enum being switched on</summary>
 	public UEnum BoundEnum;
 	///<summary>VisibleEnumEntries</summary>
-	public TArray<string> VisibleEnumEntries;
+	public TArray<FName> VisibleEnumEntries;
 }

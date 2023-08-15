@@ -5,6 +5,6 @@ using CSharpToCpp.Utilities;
 public partial struct FLatentActionInfo {
 	public int Linkage;
 	public int UUID;
-	public string ExecutionFunction;
+	public FName ExecutionFunction;
 	public UObject CallbackTarget;
 }

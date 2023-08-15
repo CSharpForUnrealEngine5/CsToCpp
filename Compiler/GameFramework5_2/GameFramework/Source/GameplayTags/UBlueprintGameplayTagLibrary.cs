@@ -14,7 +14,7 @@ public partial class UBlueprintGameplayTagLibrary : UBlueprintFunctionLibrary {
 	///<summary>Returns true if the passed in gameplay tag is non-null</summary>
 	public static bool IsGameplayTagValid(FGameplayTag GameplayTag) { return default; }
 	///<summary>Returns FName of this tag</summary>
-	public static string GetTagName(FGameplayTag GameplayTag) { return default; }
+	public static FName GetTagName(FGameplayTag GameplayTag) { return default; }
 	///<summary>Creates a literal FGameplayTag</summary>
 	public static FGameplayTag MakeLiteralGameplayTag(FGameplayTag Value) { return default; }
 	///<summary>Get the number of gameplay tags in the specified container</summary>

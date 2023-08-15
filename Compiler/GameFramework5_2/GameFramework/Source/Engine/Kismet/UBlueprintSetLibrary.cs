@@ -30,5 +30,5 @@ public partial class UBlueprintSetLibrary : UBlueprintFunctionLibrary {
 	///<summary>Assigns Result to the relative difference of two sets, A and B. That is, Result will</summary>
 	public static void Set_Difference(TSet<int> A,TSet<int> B,TSet<int> Result) {}
 	///<summary>Not exposed to users. Supports setting a set property on an object by name.</summary>
-	public static void SetSetPropertyByName(UObject Object,string PropertyName,TSet<int> Value) {}
+	public static void SetSetPropertyByName(UObject Object,FName PropertyName,TSet<int> Value) {}
 }

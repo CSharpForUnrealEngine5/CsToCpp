@@ -4,7 +4,7 @@ using CSharpToCpp.Utilities;
 [CppInclude("RemoteControlField.h")]
 public partial struct FRemoteControlField {
 	public EExposedFieldType FieldType;
-	public string FieldName;
+	public FName FieldName;
 	public FRCFieldPathInfo FieldPathInfo;
 	public TArray<string> ComponentHierarchy_DEPRECATED;
 	public TSet<FRemoteControlProtocolBinding> ProtocolBindings;

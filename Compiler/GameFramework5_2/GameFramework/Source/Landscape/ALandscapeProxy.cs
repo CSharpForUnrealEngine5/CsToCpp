@@ -30,7 +30,7 @@ public partial class ALandscapeProxy : APartitionActor {
 	///<summary>LOD level to use when exporting the landscape to obj or FBX</summary>
 	public int ExportLOD;
 	///<summary>Display Order of the targets</summary>
-	public TArray<string> TargetDisplayOrderList;
+	public TArray<FName> TargetDisplayOrderList;
 	///<summary>Display Order mode for the targets</summary>
 	public ELandscapeLayerDisplayMode TargetDisplayOrder;
 	///<summary>LOD level to use when running lightmass (increase to 1 or 2 for large landscapes to stop lightmass crashing)</summary>
@@ -160,13 +160,13 @@ public partial class ALandscapeProxy : APartitionActor {
 	///<summary>Setter for LandscapeMaterial. Has no effect outside the editor.</summary>
 	public void EditorSetLandscapeMaterial(UMaterialInterface NewLandscapeMaterial) {}
 	///<summary>Deform landscape using a given spline</summary>
-	public void EditorApplySpline(USplineComponent InSplineComponent,float StartWidth/*=200f*/,float EndWidth/*=200f*/,float StartSideFalloff/*=200f*/,float EndSideFalloff/*=200f*/,float StartRoll/*=0f*/,float EndRoll/*=0f*/,int NumSubdivisions/*=20*/,bool bRaiseHeights/*=true*/,bool bLowerHeights/*=true*/,ULandscapeLayerInfoObject PaintLayer/*=nullptr*/,string EditLayerName/*=TEXT("")*/) {}
+	public void EditorApplySpline(USplineComponent InSplineComponent,float StartWidth/*=200f*/,float EndWidth/*=200f*/,float StartSideFalloff/*=200f*/,float EndSideFalloff/*=200f*/,float StartRoll/*=0f*/,float EndRoll/*=0f*/,int NumSubdivisions/*=20*/,bool bRaiseHeights/*=true*/,bool bLowerHeights/*=true*/,ULandscapeLayerInfoObject PaintLayer/*=nullptr*/,FName EditLayerName/*=TEXT("")*/) {}
 	///<summary>Set an MID texture parameter value for all landscape components.</summary>
-	public void SetLandscapeMaterialTextureParameterValue(string ParameterName,UTexture Value) {}
+	public void SetLandscapeMaterialTextureParameterValue(FName ParameterName,UTexture Value) {}
 	///<summary>Set an MID vector parameter value for all landscape components.</summary>
-	public void SetLandscapeMaterialVectorParameterValue(string ParameterName,FLinearColor Value) {}
+	public void SetLandscapeMaterialVectorParameterValue(FName ParameterName,FLinearColor Value) {}
 	///<summary>Set a MID scalar (float) parameter value for all landscape components.</summary>
-	public void SetLandscapeMaterialScalarParameterValue(string ParameterName,float Value) {}
+	public void SetLandscapeMaterialScalarParameterValue(FName ParameterName,float Value) {}
 	///<summary>GetLandscapeActor</summary>
 	public virtual ALandscape GetLandscapeActor() { return default; }
 	///<summary>Output a landscape heightmap to a render target</summary>
@@ -174,7 +174,7 @@ public partial class ALandscapeProxy : APartitionActor {
 	///<summary>Overwrites a landscape heightmap with render target data</summary>
 	public bool LandscapeImportHeightmapFromRenderTarget(UTextureRenderTarget2D InRenderTarget,bool InImportHeightFromRGChannel/*=false*/) { return default; }
 	///<summary>Overwrites a landscape weightmap with render target data</summary>
-	public bool LandscapeImportWeightmapFromRenderTarget(UTextureRenderTarget2D InRenderTarget,string InLayerName) { return default; }
+	public bool LandscapeImportWeightmapFromRenderTarget(UTextureRenderTarget2D InRenderTarget,FName InLayerName) { return default; }
 	///<summary>Output a landscape weightmap to a render target</summary>
-	public bool LandscapeExportWeightmapToRenderTarget(UTextureRenderTarget2D InRenderTarget,string InLayerName) { return default; }
+	public bool LandscapeExportWeightmapToRenderTarget(UTextureRenderTarget2D InRenderTarget,FName InLayerName) { return default; }
 }

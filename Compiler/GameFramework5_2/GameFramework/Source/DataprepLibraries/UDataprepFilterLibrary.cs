@@ -10,5 +10,5 @@ public partial class UDataprepFilterLibrary : UBlueprintFunctionLibrary {
 	///<summary>Filter the array based on the geometry size.</summary>
 	public static TArray<UObject> FilterBySize(TArray<UObject> TargetArray,EDataprepSizeSource SizeSource,EDataprepSizeFilterMode FilterMode,float Threshold) { return default; }
 	///<summary>Filter the array based on a tag.</summary>
-	public static TArray<AActor> FilterByTag(TArray<AActor> TargetArray,string Tag) { return default; }
+	public static TArray<AActor> FilterByTag(TArray<AActor> TargetArray,FName Tag) { return default; }
 }

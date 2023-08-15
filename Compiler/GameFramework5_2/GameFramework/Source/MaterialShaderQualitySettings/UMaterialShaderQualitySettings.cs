@@ -5,5 +5,5 @@ using CSharpToCpp.Utilities;
 public partial class UMaterialShaderQualitySettings : UObject {
 	public static UClass StaticClass() {return default;}
 	///<summary>ForwardSettingMap</summary>
-	public TMap<string,UShaderPlatformQualitySettings> ForwardSettingMap;
+	public TMap<FName,UShaderPlatformQualitySettings> ForwardSettingMap;
 }

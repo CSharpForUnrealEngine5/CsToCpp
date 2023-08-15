@@ -6,5 +6,5 @@ public partial class UHudSettings : UObject {
 	///<summary>Whether the HUD is visible at all.</summary>
 	public bool bShowHUD;
 	///<summary>Collection of names specifying what debug info to display for ViewTarget actor.</summary>
-	public TArray<string> DebugDisplay;
+	public TArray<FName> DebugDisplay;
 }

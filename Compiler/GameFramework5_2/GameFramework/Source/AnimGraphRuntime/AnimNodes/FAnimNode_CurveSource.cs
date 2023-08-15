@@ -4,7 +4,7 @@ using CSharpToCpp.Utilities;
 [CppInclude("AnimNodes/AnimNode_CurveSource.h")]
 public partial struct FAnimNode_CurveSource {
 	public FPoseLink SourcePose;
-	public string SourceBinding;
+	public FName SourceBinding;
 	public float Alpha;
 	public object /*CurveSource*/ CurveSource;
 }

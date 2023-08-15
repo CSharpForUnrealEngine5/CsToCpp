@@ -6,7 +6,7 @@ public partial class UPhysicsObjectBlueprintLibrary : UBlueprintFunctionLibrary 
 	///<summary>GetClosestPhysicsObjectFromWorldLocation</summary>
 	public static FClosestPhysicsObjectResult GetClosestPhysicsObjectFromWorldLocation(UPrimitiveComponent Component,FVector WorldLocation) { return default; }
 	///<summary>ExtractClosestPhysicsObjectResults</summary>
-	public static bool ExtractClosestPhysicsObjectResults(FClosestPhysicsObjectResult Result,string OutName) { return default; }
+	public static bool ExtractClosestPhysicsObjectResults(FClosestPhysicsObjectResult Result,FName OutName) { return default; }
 	///<summary>GetPhysicsObjectWorldTransform</summary>
-	public static FTransform GetPhysicsObjectWorldTransform(UPrimitiveComponent Component,string BoneName) { return default; }
+	public static FTransform GetPhysicsObjectWorldTransform(UPrimitiveComponent Component,FName BoneName) { return default; }
 }

@@ -4,5 +4,5 @@ using CSharpToCpp.Utilities;
 public partial class URootMotionModifier_SkewWarp : URootMotionModifier_Warp {
 	public static UClass StaticClass() {return default;}
 	///<summary>AddRootMotionModifierSkewWarp</summary>
-	public static URootMotionModifier_SkewWarp AddRootMotionModifierSkewWarp(UMotionWarpingComponent InMotionWarpingComp,UAnimSequenceBase InAnimation,float InStartTime,float InEndTime,string InWarpTargetName,EWarpPointAnimProvider InWarpPointAnimProvider,FTransform InWarpPointAnimTransform,string InWarpPointAnimBoneName,bool bInWarpTranslation/*=true*/,bool bInIgnoreZAxis/*=true*/,bool bInWarpRotation/*=true*/,EMotionWarpRotationType InRotationType/*=EMotionWarpRotationType.Default*/,float InWarpRotationTimeMultiplier/*=1.0f*/) { return default; }
+	public static URootMotionModifier_SkewWarp AddRootMotionModifierSkewWarp(UMotionWarpingComponent InMotionWarpingComp,UAnimSequenceBase InAnimation,float InStartTime,float InEndTime,FName InWarpTargetName,EWarpPointAnimProvider InWarpPointAnimProvider,FTransform InWarpPointAnimTransform,FName InWarpPointAnimBoneName,bool bInWarpTranslation/*=true*/,bool bInIgnoreZAxis/*=true*/,bool bInWarpRotation/*=true*/,EMotionWarpRotationType InRotationType/*=EMotionWarpRotationType.Default*/,float InWarpRotationTimeMultiplier/*=1.0f*/) { return default; }
 }

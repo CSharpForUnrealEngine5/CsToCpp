@@ -7,5 +7,5 @@ public partial class UXRAssetFunctionLibrary : UBlueprintFunctionLibrary {
 	///<summary>Spawns a render component for the specified XR device.</summary>
 	public static UPrimitiveComponent AddDeviceVisualizationComponentBlocking(AActor Target,FXRDeviceId XRDeviceId,bool bManualAttachment,FTransform RelativeTransform) { return default; }
 	///<summary>Spawns a render component for the specified XR device.</summary>
-	public static UPrimitiveComponent AddNamedDeviceVisualizationComponentBlocking(AActor Target,string SystemName,string DeviceName,bool bManualAttachment,FTransform RelativeTransform,FXRDeviceId XRDeviceId) { return default; }
+	public static UPrimitiveComponent AddNamedDeviceVisualizationComponentBlocking(AActor Target,FName SystemName,FName DeviceName,bool bManualAttachment,FTransform RelativeTransform,FXRDeviceId XRDeviceId) { return default; }
 }

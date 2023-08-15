@@ -79,59 +79,59 @@ public partial class UControlRigComponent : UPrimitiveComponent {
 	///<summary>When checked the rig&#39;s debug drawing instructions are drawn in the viewport</summary>
 	public bool bShowDebugDrawing;
 	///<summary>Returns all of the names for a given element type (Bone, Control, etc)</summary>
-	public TArray<string> GetElementNames(ERigElementType ElementType/*=ERigElementType.Bone*/) { return default; }
+	public TArray<FName> GetElementNames(ERigElementType ElementType/*=ERigElementType.Bone*/) { return default; }
 	///<summary>Returns true if an element given a type and name exists in the rig</summary>
-	public bool DoesElementExist(string Name,ERigElementType ElementType/*=ERigElementType.Bone*/) { return default; }
+	public bool DoesElementExist(FName Name,ERigElementType ElementType/*=ERigElementType.Bone*/) { return default; }
 	///<summary>Returns the transform of the bone in the requested space</summary>
-	public FTransform GetBoneTransform(string BoneName,EControlRigComponentSpace Space/*=EControlRigComponentSpace.RigSpace*/) { return default; }
+	public FTransform GetBoneTransform(FName BoneName,EControlRigComponentSpace Space/*=EControlRigComponentSpace.RigSpace*/) { return default; }
 	///<summary>Returns the initial transform of the bone in the requested space</summary>
-	public FTransform GetInitialBoneTransform(string BoneName,EControlRigComponentSpace Space/*=EControlRigComponentSpace.RigSpace*/) { return default; }
+	public FTransform GetInitialBoneTransform(FName BoneName,EControlRigComponentSpace Space/*=EControlRigComponentSpace.RigSpace*/) { return default; }
 	///<summary>Sets the transform of the bone in the requested space</summary>
-	public void SetBoneTransform(string BoneName,FTransform Transform,EControlRigComponentSpace Space/*=EControlRigComponentSpace.RigSpace*/,float Weight/*=1.0f*/,bool bPropagateToChildren/*=true*/) {}
+	public void SetBoneTransform(FName BoneName,FTransform Transform,EControlRigComponentSpace Space/*=EControlRigComponentSpace.RigSpace*/,float Weight/*=1.0f*/,bool bPropagateToChildren/*=true*/) {}
 	///<summary>Sets the initial transform of the bone in the requested space</summary>
-	public void SetInitialBoneTransform(string BoneName,FTransform InitialTransform,EControlRigComponentSpace Space/*=EControlRigComponentSpace.RigSpace*/,bool bPropagateToChildren/*=false*/) {}
+	public void SetInitialBoneTransform(FName BoneName,FTransform InitialTransform,EControlRigComponentSpace Space/*=EControlRigComponentSpace.RigSpace*/,bool bPropagateToChildren/*=false*/) {}
 	///<summary>Returns the value of a bool control</summary>
-	public bool GetControlBool(string ControlName) { return default; }
+	public bool GetControlBool(FName ControlName) { return default; }
 	///<summary>Returns the value of a float control</summary>
-	public float GetControlFloat(string ControlName) { return default; }
+	public float GetControlFloat(FName ControlName) { return default; }
 	///<summary>Returns the value of an integer control</summary>
-	public int GetControlInt(string ControlName) { return default; }
+	public int GetControlInt(FName ControlName) { return default; }
 	///<summary>Returns the value of a Vector3D control</summary>
-	public FVector2D GetControlVector2D(string ControlName) { return default; }
+	public FVector2D GetControlVector2D(FName ControlName) { return default; }
 	///<summary>Returns the value of a position control</summary>
-	public FVector GetControlPosition(string ControlName,EControlRigComponentSpace Space/*=EControlRigComponentSpace.LocalSpace*/) { return default; }
+	public FVector GetControlPosition(FName ControlName,EControlRigComponentSpace Space/*=EControlRigComponentSpace.LocalSpace*/) { return default; }
 	///<summary>Returns the value of a rotator control</summary>
-	public FRotator GetControlRotator(string ControlName,EControlRigComponentSpace Space/*=EControlRigComponentSpace.LocalSpace*/) { return default; }
+	public FRotator GetControlRotator(FName ControlName,EControlRigComponentSpace Space/*=EControlRigComponentSpace.LocalSpace*/) { return default; }
 	///<summary>Returns the value of a scale control</summary>
-	public FVector GetControlScale(string ControlName,EControlRigComponentSpace Space/*=EControlRigComponentSpace.LocalSpace*/) { return default; }
+	public FVector GetControlScale(FName ControlName,EControlRigComponentSpace Space/*=EControlRigComponentSpace.LocalSpace*/) { return default; }
 	///<summary>Returns the value of a transform control</summary>
-	public FTransform GetControlTransform(string ControlName,EControlRigComponentSpace Space/*=EControlRigComponentSpace.RigSpace*/) { return default; }
+	public FTransform GetControlTransform(FName ControlName,EControlRigComponentSpace Space/*=EControlRigComponentSpace.RigSpace*/) { return default; }
 	///<summary>Sets the value of a bool control</summary>
-	public void SetControlBool(string ControlName,bool Value) {}
+	public void SetControlBool(FName ControlName,bool Value) {}
 	///<summary>Sets the value of a float control</summary>
-	public void SetControlFloat(string ControlName,float Value) {}
+	public void SetControlFloat(FName ControlName,float Value) {}
 	///<summary>Sets the value of an integer control</summary>
-	public void SetControlInt(string ControlName,int Value) {}
+	public void SetControlInt(FName ControlName,int Value) {}
 	///<summary>Sets the value of a vector2D control</summary>
-	public void SetControlVector2D(string ControlName,FVector2D Value) {}
+	public void SetControlVector2D(FName ControlName,FVector2D Value) {}
 	///<summary>Sets the value of a position control</summary>
-	public void SetControlPosition(string ControlName,FVector Value,EControlRigComponentSpace Space/*=EControlRigComponentSpace.LocalSpace*/) {}
+	public void SetControlPosition(FName ControlName,FVector Value,EControlRigComponentSpace Space/*=EControlRigComponentSpace.LocalSpace*/) {}
 	///<summary>Sets the value of a rotator control</summary>
-	public void SetControlRotator(string ControlName,FRotator Value,EControlRigComponentSpace Space/*=EControlRigComponentSpace.LocalSpace*/) {}
+	public void SetControlRotator(FName ControlName,FRotator Value,EControlRigComponentSpace Space/*=EControlRigComponentSpace.LocalSpace*/) {}
 	///<summary>Sets the value of a scale control</summary>
-	public void SetControlScale(string ControlName,FVector Value,EControlRigComponentSpace Space/*=EControlRigComponentSpace.LocalSpace*/) {}
+	public void SetControlScale(FName ControlName,FVector Value,EControlRigComponentSpace Space/*=EControlRigComponentSpace.LocalSpace*/) {}
 	///<summary>Sets the value of a transform control</summary>
-	public void SetControlTransform(string ControlName,FTransform Value,EControlRigComponentSpace Space/*=EControlRigComponentSpace.RigSpace*/) {}
+	public void SetControlTransform(FName ControlName,FTransform Value,EControlRigComponentSpace Space/*=EControlRigComponentSpace.RigSpace*/) {}
 	///<summary>Returns the offset transform of a control</summary>
-	public FTransform GetControlOffset(string ControlName,EControlRigComponentSpace Space/*=EControlRigComponentSpace.RigSpace*/) { return default; }
+	public FTransform GetControlOffset(FName ControlName,EControlRigComponentSpace Space/*=EControlRigComponentSpace.RigSpace*/) { return default; }
 	///<summary>Sets the offset transform of a control</summary>
-	public void SetControlOffset(string ControlName,FTransform OffsetTransform,EControlRigComponentSpace Space/*=EControlRigComponentSpace.RigSpace*/) {}
+	public void SetControlOffset(FName ControlName,FTransform OffsetTransform,EControlRigComponentSpace Space/*=EControlRigComponentSpace.RigSpace*/) {}
 	///<summary>Returns the transform of the space in the requested space</summary>
-	public FTransform GetSpaceTransform(string SpaceName,EControlRigComponentSpace Space/*=EControlRigComponentSpace.RigSpace*/) { return default; }
+	public FTransform GetSpaceTransform(FName SpaceName,EControlRigComponentSpace Space/*=EControlRigComponentSpace.RigSpace*/) { return default; }
 	///<summary>Returns the initial transform of the space in the requested space</summary>
-	public FTransform GetInitialSpaceTransform(string SpaceName,EControlRigComponentSpace Space/*=EControlRigComponentSpace.RigSpace*/) { return default; }
+	public FTransform GetInitialSpaceTransform(FName SpaceName,EControlRigComponentSpace Space/*=EControlRigComponentSpace.RigSpace*/) { return default; }
 	///<summary>Sets the transform of the space in the requested space</summary>
-	public void SetInitialSpaceTransform(string SpaceName,FTransform InitialTransform,EControlRigComponentSpace Space/*=EControlRigComponentSpace.RigSpace*/) {}
+	public void SetInitialSpaceTransform(FName SpaceName,FTransform InitialTransform,EControlRigComponentSpace Space/*=EControlRigComponentSpace.RigSpace*/) {}
 	///<summary>SetControlRigClass</summary>
 	public void SetControlRigClass(UClass InControlRigClass) {}
 	///<summary>SetObjectBinding</summary>

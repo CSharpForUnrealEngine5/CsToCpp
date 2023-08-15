@@ -6,7 +6,7 @@ public partial class UUserToolBoxFunctionLibrary : UBlueprintFunctionLibrary {
 	///<summary>GetBrushById</summary>
 	public static FSlateBrush GetBrushById(string Name) { return default; }
 	///<summary>GetAllSlateStyle</summary>
-	public static TArray<string> GetAllSlateStyle() { return default; }
+	public static TArray<FName> GetAllSlateStyle() { return default; }
 	///<summary>GetBrushByStyleAndId</summary>
-	public static FSlateBrush GetBrushByStyleAndId(string StyleName,string Id) { return default; }
+	public static FSlateBrush GetBrushByStyleAndId(FName StyleName,FName Id) { return default; }
 }

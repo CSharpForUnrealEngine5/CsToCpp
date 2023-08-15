@@ -5,5 +5,5 @@ using CSharpToCpp.Utilities;
 public partial class UDataprepAddTagsOperation : UDataprepOperation {
 	public static UClass StaticClass() {return default;}
 	///<summary>Array of tags to add</summary>
-	public TArray<string> Tags;
+	public TArray<FName> Tags;
 }

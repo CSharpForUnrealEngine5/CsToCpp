@@ -4,5 +4,5 @@ using CSharpToCpp.Utilities;
 public partial struct FBlueprintInputKeyDelegateBinding {
 	public FInputChord InputChord;
 	public EInputEvent InputKeyEvent;
-	public string FunctionNameToBind;
+	public FName FunctionNameToBind;
 }

@@ -4,7 +4,7 @@ using CSharpToCpp.Utilities;
 public partial class UNiagaraHierarchyCategory : UNiagaraHierarchyItemBase {
 	public static UClass StaticClass() {return default;}
 	///<summary>Category</summary>
-	public string Category;
+	public FName Category;
 	///<summary>The tooltip used when the user is hovering this category</summary>
 	public FText Tooltip;
 	///<summary>Section</summary>

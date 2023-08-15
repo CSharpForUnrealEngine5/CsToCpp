@@ -16,8 +16,8 @@ public partial struct FTextureLODGroup {
 	public int MaxLODSize_VT;
 	public int OptionalLODBias;
 	public int OptionalMaxLODSize;
-	public string MinMagFilter;
-	public string MipFilter;
+	public FName MinMagFilter;
+	public FName MipFilter;
 	public ETextureMipLoadOptions MipLoadOptions;
 	public bool HighPriorityLoad;
 	public bool DuplicateNonOptionalMips;

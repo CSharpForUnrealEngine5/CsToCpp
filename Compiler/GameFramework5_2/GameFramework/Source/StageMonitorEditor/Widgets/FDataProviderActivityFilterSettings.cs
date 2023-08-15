@@ -5,9 +5,9 @@ using CSharpToCpp.Utilities;
 public partial struct FDataProviderActivityFilterSettings {
 	public TArray<UScriptStruct> ExistingPeriodicTypes;
 	public TArray<UScriptStruct> RestrictedTypes;
-	public TArray<string> RestrictedProviders;
-	public TArray<string> RestrictedRoles;
-	public TArray<string> RestrictedSources;
+	public TArray<FName> RestrictedProviders;
+	public TArray<FName> RestrictedRoles;
+	public TArray<FName> RestrictedSources;
 	public bool bEnableCriticalStateFilter;
 	public bool bEnableTimeFilter;
 	public uint MaxMessageAgeInMinutes;

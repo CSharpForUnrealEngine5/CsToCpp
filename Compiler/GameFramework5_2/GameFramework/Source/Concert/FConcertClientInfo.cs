@@ -11,7 +11,7 @@ public partial struct FConcertClientInfo {
 	public FLinearColor AvatarColor;
 	public string DesktopAvatarActorClass;
 	public string VRAvatarActorClass;
-	public TArray<string> Tags;
+	public TArray<FName> Tags;
 	public bool bHasEditorData;
 	public bool bRequiresCookedData;
 }

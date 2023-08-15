@@ -22,7 +22,7 @@ public partial class UParticleModuleTypeDataBeam2 : UParticleModuleTypeDataBase 
 	///<summary>The approach to use for determining the Up vector(s) for the beam.</summary>
 	public int UpVectorStepSize;
 	///<summary>The name of the emitter to branch from (if mode is PEB2M_Branch)</summary>
-	public string BranchParentName;
+	public FName BranchParentName;
 	///<summary>The distance along the X-axis to stretch the beam</summary>
 	public FRawDistributionFloat Distance;
 	///<summary>Tapering mode - one of the following:</summary>

@@ -4,5 +4,5 @@ using CSharpToCpp.Utilities;
 public partial class UMassSettings : UDeveloperSettings {
 	public static UClass StaticClass() {return default;}
 	///<summary>ModuleSettings</summary>
-	public TMap<string,UMassModuleSettings> ModuleSettings;
+	public TMap<FName,UMassModuleSettings> ModuleSettings;
 }

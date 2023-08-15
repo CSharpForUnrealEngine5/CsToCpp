@@ -7,11 +7,11 @@ public partial class UDatasmithMaterialInstanceTemplate : UDatasmithObjectTempla
 	///<summary>ParentMaterial</summary>
 	public TSoftObjectPtr<UMaterialInterface> ParentMaterial;
 	///<summary>ScalarParameterValues</summary>
-	public TMap<string,float> ScalarParameterValues;
+	public TMap<FName,float> ScalarParameterValues;
 	///<summary>VectorParameterValues</summary>
-	public TMap<string,FLinearColor> VectorParameterValues;
+	public TMap<FName,FLinearColor> VectorParameterValues;
 	///<summary>TextureParameterValues</summary>
-	public TMap<string,TSoftObjectPtr<UTexture>> TextureParameterValues;
+	public TMap<FName,TSoftObjectPtr<UTexture>> TextureParameterValues;
 	///<summary>StaticParameters</summary>
 	public FDatasmithStaticParameterSetTemplate StaticParameters;
 }

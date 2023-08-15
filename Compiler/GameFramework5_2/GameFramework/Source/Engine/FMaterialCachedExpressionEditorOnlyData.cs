@@ -14,5 +14,5 @@ public partial struct FMaterialCachedExpressionEditorOnlyData {
 	public TArray<FParameterChannelNames> TextureChannelNameValues;
 	public FMaterialLayersFunctionsEditorOnlyData MaterialLayers;
 	public TArray<string> AssetPaths;
-	public TArray<string> LandscapeLayerNames;
+	public TArray<FName> LandscapeLayerNames;
 }

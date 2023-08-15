@@ -27,7 +27,7 @@ public partial class UNiagaraDataInterfaceCurveBase : UNiagaraDataInterface {
 	///<summary>Threshold used to optimize the LUT.</summary>
 	public float OptimizeThreshold;
 	///<summary>Sets a custom name for the binding to make it easier to identify.</summary>
-	public string ExposedName;
+	public FName ExposedName;
 	///<summary>The texture generated and exposed to materials, will be nullptr if we do not expose to the renderers.</summary>
 	public UTexture2D ExposedTexture;
 }

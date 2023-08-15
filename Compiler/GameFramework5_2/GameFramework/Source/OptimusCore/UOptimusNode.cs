@@ -4,9 +4,9 @@ using CSharpToCpp.Utilities;
 public partial class UOptimusNode : UObject {
 	public static UClass StaticClass() {return default;}
 	///<summary>Returns the node class category. This is used for categorizing the node for display.</summary>
-	public virtual string GetNodeCategory() { return default; }
+	public virtual FName GetNodeCategory() { return default; }
 	///<summary>Returns the node class name. This name is immutable for the given node class.</summary>
-	public string GetNodeName() { return default; }
+	public FName GetNodeName() { return default; }
 	///<summary>Returns the display name to use on the graphical node in the graph editor.</summary>
 	public virtual FText GetDisplayName() { return default; }
 	///<summary>Sets the position in the graph UI that the node should be shown at.</summary>
@@ -20,7 +20,7 @@ public partial class UOptimusNode : UObject {
 	///<summary>The list of pins. Non-transactional for the same reason as above.</summary>
 	public TArray<UOptimusNodePin> Pins;
 	///<summary>The list of pins that should be shown as expanded in the graph view.</summary>
-	public TSet<string> ExpandedPins;
+	public TSet<FName> ExpandedPins;
 	///<summary>DiagnosticLevel</summary>
 	public EOptimusDiagnosticLevel DiagnosticLevel;
 }

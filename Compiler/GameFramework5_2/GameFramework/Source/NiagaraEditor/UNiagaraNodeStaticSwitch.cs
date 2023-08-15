@@ -4,7 +4,7 @@ using CSharpToCpp.Utilities;
 public partial class UNiagaraNodeStaticSwitch : UNiagaraNodeUsageSelector {
 	public static UClass StaticClass() {return default;}
 	///<summary>InputParameterName</summary>
-	public string InputParameterName;
+	public FName InputParameterName;
 	///<summary>SwitchTypeData</summary>
 	public FStaticSwitchTypeData SwitchTypeData;
 }

@@ -4,5 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("PerPlatformProperties.h")]
 public partial struct FPerPlatformFloat {
 	public float Default;
-	public TMap<string,float> PerPlatform;
+	public TMap<FName,float> PerPlatform;
 }

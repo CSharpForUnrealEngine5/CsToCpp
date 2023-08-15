@@ -3,7 +3,7 @@ using CSharpToCpp.Utilities;
 [CppInclude("RemoteControlResponse.h")]
 public partial struct FRCPresetFieldsAddedEvent {
 	public string Type;
-	public string PresetName;
+	public FName PresetName;
 	public string PresetId;
 	public FRCPresetDescription Description;
 }

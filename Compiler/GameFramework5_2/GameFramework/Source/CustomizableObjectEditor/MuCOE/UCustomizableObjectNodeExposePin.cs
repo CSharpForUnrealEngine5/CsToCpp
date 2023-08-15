@@ -4,7 +4,7 @@ using CSharpToCpp.Utilities;
 public partial class UCustomizableObjectNodeExposePin : UCustomizableObjectNode {
 	public static UClass StaticClass() {return default;}
 	///<summary>This is actually PinCategory</summary>
-	public string PinType;
+	public FName PinType;
 	///<summary>Name</summary>
 	public string Name;
 }

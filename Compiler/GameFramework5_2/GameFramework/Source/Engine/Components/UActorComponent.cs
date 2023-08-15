@@ -7,7 +7,7 @@ public partial class UActorComponent : UObject {
 	///<summary>Main tick function for the Component</summary>
 	public FActorComponentTickFunction PrimaryComponentTick;
 	///<summary>Array of tags that can be used for grouping and categorizing. Can also be accessed from scripting.</summary>
-	public TArray<string> ComponentTags;
+	public TArray<FName> ComponentTags;
 	///<summary>Array of user data stored with the component</summary>
 	public TArray<UAssetUserData> AssetUserData;
 	///<summary>Populated when the component is created and tracks the often used order of creation on a per archetype/per actor basis</summary>
@@ -45,7 +45,7 @@ public partial class UActorComponent : UObject {
 	///<summary>Follow the Outer chain to get the  AActor  that &#39;Owns&#39; this component</summary>
 	public AActor GetOwner() { return default; }
 	///<summary>See if this component contains the supplied tag</summary>
-	public bool ComponentHasTag(string Tag) { return default; }
+	public bool ComponentHasTag(FName Tag) { return default; }
 	///<summary>Called when the component has been activated, with parameter indicating if it was from a reset</summary>
 	public FActorComponentActivatedSignature OnComponentActivated;
 	///<summary>Called when the component has been deactivated</summary>

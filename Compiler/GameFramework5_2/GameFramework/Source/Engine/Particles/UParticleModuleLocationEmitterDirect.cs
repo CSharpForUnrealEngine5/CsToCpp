@@ -4,5 +4,5 @@ using CSharpToCpp.Utilities;
 public partial class UParticleModuleLocationEmitterDirect : UParticleModuleLocationBase {
 	public static UClass StaticClass() {return default;}
 	///<summary>The name of the emitter to use as a source for the location of the particles.</summary>
-	public string EmitterName;
+	public FName EmitterName;
 }

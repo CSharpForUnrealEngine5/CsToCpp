@@ -65,7 +65,7 @@ public partial class AWaterBody : AActor {
 	///<summary>WaterHeightmapSettings_DEPRECATED</summary>
 	public FWaterBodyHeightmapSettings WaterHeightmapSettings_DEPRECATED;
 	///<summary>LayerWeightmapSettings_DEPRECATED</summary>
-	public TMap<string,FWaterBodyWeightmapSettings> LayerWeightmapSettings_DEPRECATED;
+	public TMap<FName,FWaterBodyWeightmapSettings> LayerWeightmapSettings_DEPRECATED;
 	///<summary>bAffectsLandscape_DEPRECATED</summary>
 	public bool bAffectsLandscape_DEPRECATED;
 	///<summary>bGenerateCollisions_DEPRECATED</summary>
@@ -77,7 +77,7 @@ public partial class AWaterBody : AActor {
 	///<summary>OverlapMaterialPriority_DEPRECATED</summary>
 	public int OverlapMaterialPriority_DEPRECATED;
 	///<summary>CollisionProfileName_DEPRECATED</summary>
-	public string CollisionProfileName_DEPRECATED;
+	public FName CollisionProfileName_DEPRECATED;
 	///<summary>WaterMID_DEPRECATED</summary>
 	public UMaterialInstanceDynamic WaterMID_DEPRECATED;
 	///<summary>UnderwaterPostProcessMID_DEPRECATED</summary>

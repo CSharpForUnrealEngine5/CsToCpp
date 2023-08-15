@@ -10,7 +10,7 @@ public partial class UCommonInputSettings : UDeveloperSettings {
 	///<summary>PlatformInput</summary>
 	public FPerPlatformSettings PlatformInput;
 	///<summary>CommonInputPlatformData_DEPRECATED</summary>
-	public TMap<string,FCommonInputPlatformBaseData> CommonInputPlatformData_DEPRECATED;
+	public TMap<FName,FCommonInputPlatformBaseData> CommonInputPlatformData_DEPRECATED;
 	///<summary>bEnableInputMethodThrashingProtection</summary>
 	public bool bEnableInputMethodThrashingProtection;
 	///<summary>InputMethodThrashingLimit</summary>

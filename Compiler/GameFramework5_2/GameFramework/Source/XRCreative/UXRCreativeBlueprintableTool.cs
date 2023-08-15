@@ -4,7 +4,7 @@ using CSharpToCpp.Utilities;
 public partial class UXRCreativeBlueprintableTool : UXRCreativeTool {
 	public static UClass StaticClass() {return default;}
 	///<summary>ToolName</summary>
-	public string ToolName;
+	public FName ToolName;
 	///<summary>DisplayName</summary>
 	public FText DisplayName;
 	///<summary>PaletteTabClass</summary>

@@ -5,7 +5,7 @@ using CSharpToCpp.Utilities;
 public partial struct FRigVMRegisterOffset {
 	public TArray<int> Segments;
 	public ERigVMRegisterType Type;
-	public string CPPType;
+	public FName CPPType;
 	public UScriptStruct ScriptStruct;
 	public UScriptStruct ParentScriptStruct;
 	public int ArrayIndex;

@@ -5,7 +5,7 @@ using CSharpToCpp.Utilities;
 public partial class UAudioCurveSourceComponent : UAudioComponent {
 	public static UClass StaticClass() {return default;}
 	///<summary>Get the name that this curve source can be bound to by.</summary>
-	public string CurveSourceBindingName;
+	public FName CurveSourceBindingName;
 	///<summary>Offset in time applied to audio position when evaluating curves</summary>
 	public float CurveSyncOffset;
 }

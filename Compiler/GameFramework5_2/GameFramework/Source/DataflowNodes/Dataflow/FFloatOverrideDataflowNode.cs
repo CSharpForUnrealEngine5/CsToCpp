@@ -2,7 +2,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Dataflow/DataflowContextOverridesNodes.h")]
 public partial struct FFloatOverrideDataflowNode {
-	public string PropertyName;
-	public string KeyName;
+	public FName PropertyName;
+	public FName KeyName;
 	public float ValueOut;
 }

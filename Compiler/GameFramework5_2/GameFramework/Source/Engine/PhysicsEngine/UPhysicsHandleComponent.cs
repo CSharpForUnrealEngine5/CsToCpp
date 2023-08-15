@@ -23,11 +23,11 @@ public partial class UPhysicsHandleComponent : UActorComponent {
 	///<summary>How quickly we interpolate the physics target transform</summary>
 	public float InterpolationSpeed;
 	///<summary>GrabComponent</summary>
-	public virtual void GrabComponent(UPrimitiveComponent Component,string InBoneName,FVector GrabLocation,bool bConstrainRotation) {}
+	public virtual void GrabComponent(UPrimitiveComponent Component,FName InBoneName,FVector GrabLocation,bool bConstrainRotation) {}
 	///<summary>Grab the specified component at a given location. Does NOT constraint rotation which means the handle will pivot about GrabLocation.</summary>
-	public void GrabComponentAtLocation(UPrimitiveComponent Component,string InBoneName,FVector GrabLocation) {}
+	public void GrabComponentAtLocation(UPrimitiveComponent Component,FName InBoneName,FVector GrabLocation) {}
 	///<summary>Grab the specified component at a given location and rotation. Constrains rotation.</summary>
-	public void GrabComponentAtLocationWithRotation(UPrimitiveComponent Component,string InBoneName,FVector Location,FRotator Rotation) {}
+	public void GrabComponentAtLocationWithRotation(UPrimitiveComponent Component,FName InBoneName,FVector Location,FRotator Rotation) {}
 	///<summary>Release the currently held component</summary>
 	public virtual void ReleaseComponent() {}
 	///<summary>Returns the currently grabbed component, or null if nothing is grabbed.</summary>

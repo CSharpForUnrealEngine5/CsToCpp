@@ -4,7 +4,7 @@ using CSharpToCpp.Utilities;
 [CppInclude("Tests/StructSerializerTestTypes.h")]
 public partial struct FStructSerializerBuiltinTestStruct {
 	public FGuid Guid;
-	public string Name;
+	public FName Name;
 	public string String;
 	public FText Text;
 	public FVector Vector;

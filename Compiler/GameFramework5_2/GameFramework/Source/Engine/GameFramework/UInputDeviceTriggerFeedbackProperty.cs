@@ -7,5 +7,5 @@ public partial class UInputDeviceTriggerFeedbackProperty : UInputDeviceTriggerEf
 	///<summary>What position on the trigger that the feedback should be applied to over time (1-9)</summary>
 	public FDeviceTriggerFeedbackData TriggerData;
 	///<summary>A map of device specific color data. If no overrides are specified, the Default hardware data will be used</summary>
-	public TMap<string,FDeviceTriggerFeedbackData> DeviceOverrideData;
+	public TMap<FName,FDeviceTriggerFeedbackData> DeviceOverrideData;
 }

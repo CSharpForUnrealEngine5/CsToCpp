@@ -4,7 +4,7 @@ using CSharpToCpp.Utilities;
 public partial class UParticleModuleLocationEmitter : UParticleModuleLocationBase {
 	public static UClass StaticClass() {return default;}
 	///<summary>The name of the emitter to use that the source location for particle.</summary>
-	public string EmitterName;
+	public FName EmitterName;
 	///<summary>The method to use when selecting a spawn target particle from the emitter.</summary>
 	public ELocationEmitterSelectionMethod SelectionMethod;
 	///<summary>If true, the spawned particle should inherit the velocity of the source particle.</summary>

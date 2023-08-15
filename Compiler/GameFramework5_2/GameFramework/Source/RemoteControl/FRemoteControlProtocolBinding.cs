@@ -4,7 +4,7 @@ using CSharpToCpp.Utilities;
 [CppInclude("RemoteControlProtocolBinding.h")]
 public partial struct FRemoteControlProtocolBinding {
 	public FGuid Id;
-	public string ProtocolName;
+	public FName ProtocolName;
 	public FGuid PropertyId;
-	public string MappingPropertyName;
+	public FName MappingPropertyName;
 }

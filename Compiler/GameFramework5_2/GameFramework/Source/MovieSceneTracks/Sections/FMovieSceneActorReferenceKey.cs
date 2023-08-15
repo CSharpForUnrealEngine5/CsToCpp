@@ -3,6 +3,6 @@ using CSharpToCpp.Utilities;
 [CppInclude("Sections/MovieSceneActorReferenceSection.h")]
 public partial struct FMovieSceneActorReferenceKey {
 	public FMovieSceneObjectBindingID Object;
-	public string ComponentName;
-	public string SocketName;
+	public FName ComponentName;
+	public FName SocketName;
 }

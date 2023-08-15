@@ -13,7 +13,7 @@ public partial class UDMXProtocolSettings : UObject {
 	///<summary>Rate at which DMX is received, in Hz from 1 to 1000. 44Hz is recommended</summary>
 	public uint ReceivingRefreshRate_DEPRECATED;
 	///<summary>Fixture Categories ENum</summary>
-	public TSet<string> FixtureCategories;
+	public TSet<FName> FixtureCategories;
 	///<summary>Common names to map Fixture Functions to and access them easily on Blueprints</summary>
 	public TSet<FDMXAttribute> Attributes;
 	///<summary>Whether DMX is sent to the network. Recalled whenever editor or game starts.</summary>

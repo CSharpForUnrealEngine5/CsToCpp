@@ -12,5 +12,5 @@ public partial class UDataflowSettings : UDeveloperSettings {
 	///<summary>FSphere pin type color. The other pin colors are defined in the general editor settings.</summary>
 	public FLinearColor SpherePinTypeColor;
 	///<summary>NodeColorsMap</summary>
-	public TMap<string,FNodeColors> NodeColorsMap;
+	public TMap<FName,FNodeColors> NodeColorsMap;
 }

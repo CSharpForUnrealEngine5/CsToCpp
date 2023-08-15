@@ -29,5 +29,5 @@ public partial class UAnimBlueprint : UBlueprint {
 	///<summary>The method by which a preview animation blueprint is applied, either as an overlay layer, or as a linked instance</summary>
 	public EPreviewAnimationBlueprintApplicationMethod PreviewAnimationBlueprintApplicationMethod;
 	///<summary>The tag to use when applying a preview animation blueprint via LinkAnimGraphByTag</summary>
-	public string PreviewAnimationBlueprintTag;
+	public FName PreviewAnimationBlueprintTag;
 }

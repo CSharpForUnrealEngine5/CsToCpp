@@ -17,9 +17,9 @@ public partial class UStaticMeshEditorSubsystem : UEditorSubsystem {
 	///<summary>Set the LOD build options for the specified LOD index.</summary>
 	public void SetLodBuildSettings(UStaticMesh StaticMesh,int LodIndex,FMeshBuildSettings BuildOptions) {}
 	///<summary>Get the LODGroup for the specified static mesh</summary>
-	public string GetLODGroup(UStaticMesh StaticMesh) { return default; }
+	public FName GetLODGroup(UStaticMesh StaticMesh) { return default; }
 	///<summary>Set the LODGroup for the specified static mesh</summary>
-	public bool SetLODGroup(UStaticMesh StaticMesh,string LODGroup,bool bRebuildImmediately/*=true*/) { return default; }
+	public bool SetLODGroup(UStaticMesh StaticMesh,FName LODGroup,bool bRebuildImmediately/*=true*/) { return default; }
 	///<summary>Import or re-import a LOD into the specified base mesh. If the LOD do not exist it will import it and add it to the base static mesh. If the LOD already exist it will re-import the specified LOD.</summary>
 	public int ImportLOD(UStaticMesh BaseStaticMesh,int LODIndex,string SourceFilename) { return default; }
 	///<summary>Re-import all the custom LODs present in the specified static mesh.</summary>

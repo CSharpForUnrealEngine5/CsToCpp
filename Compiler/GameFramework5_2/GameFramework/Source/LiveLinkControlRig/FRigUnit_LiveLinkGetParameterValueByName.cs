@@ -4,6 +4,6 @@ using CSharpToCpp.Utilities;
 [CppInclude("LiveLinkRigUnits.h")]
 public partial struct FRigUnit_LiveLinkGetParameterValueByName {
 	public FSubjectFrameHandle SubjectFrame;
-	public string ParameterName;
+	public FName ParameterName;
 	public float Value;
 }

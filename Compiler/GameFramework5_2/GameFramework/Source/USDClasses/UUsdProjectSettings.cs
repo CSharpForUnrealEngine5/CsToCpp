@@ -7,7 +7,7 @@ public partial class UUsdProjectSettings : UDeveloperSettings {
 	///<summary>Additional paths to check for USD plugins</summary>
 	public TArray<FDirectoryPath> AdditionalPluginDirectories;
 	///<summary>Material purposes to show on drop-downs in addition to the standard &quot;preview&quot; and &quot;full&quot;</summary>
-	public TArray<string> AdditionalMaterialPurposes;
+	public TArray<FName> AdditionalMaterialPurposes;
 	///<summary>USD Asset Cache to use for USD Stage Actors that don&#39;t have any asset cache specified.</summary>
 	public FSoftObjectPath DefaultAssetCache;
 	///<summary>bShowCreateDefaultAssetCacheDialog</summary>

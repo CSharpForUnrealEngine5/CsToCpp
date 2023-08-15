@@ -16,29 +16,29 @@ public partial class UNiagaraSimCache : UObject {
 	///<summary>Get number of emitters stored inside the cache.</summary>
 	public int GetNumEmitters() { return default; }
 	///<summary>Get the emitter name at the provided index.</summary>
-	public string GetEmitterName(int EmitterIndex) { return default; }
+	public FName GetEmitterName(int EmitterIndex) { return default; }
 	///<summary>Returns a list of emitters we have captured in the SimCache.</summary>
-	public TArray<string> GetEmitterNames() { return default; }
+	public TArray<FName> GetEmitterNames() { return default; }
 	///<summary>Reads Niagara int attributes by name from the cache frame and appends them into the OutValues array.</summary>
-	public void ReadIntAttribute(TArray<int> OutValues,string AttributeName,string EmitterName,int FrameIndex/*=0*/) {}
+	public void ReadIntAttribute(TArray<int> OutValues,FName AttributeName,FName EmitterName,int FrameIndex/*=0*/) {}
 	///<summary>Reads Niagara float attributes by name from the cache frame and appends them into the OutValues array.</summary>
-	public void ReadFloatAttribute(TArray<float> OutValues,string AttributeName,string EmitterName,int FrameIndex/*=0*/) {}
+	public void ReadFloatAttribute(TArray<float> OutValues,FName AttributeName,FName EmitterName,int FrameIndex/*=0*/) {}
 	///<summary>Reads Niagara Vec2 attributes by name from the cache frame and appends them into the OutValues array.</summary>
-	public void ReadVector2Attribute(TArray<FVector2D> OutValues,string AttributeName,string EmitterName,int FrameIndex/*=0*/) {}
+	public void ReadVector2Attribute(TArray<FVector2D> OutValues,FName AttributeName,FName EmitterName,int FrameIndex/*=0*/) {}
 	///<summary>Reads Niagara Vec3 attributes by name from the cache frame and appends them into the OutValues array.</summary>
-	public void ReadVectorAttribute(TArray<FVector> OutValues,string AttributeName,string EmitterName,int FrameIndex/*=0*/) {}
+	public void ReadVectorAttribute(TArray<FVector> OutValues,FName AttributeName,FName EmitterName,int FrameIndex/*=0*/) {}
 	///<summary>Reads Niagara Vec4 attributes by name from the cache frame and appends them into the OutValues array.</summary>
-	public void ReadVector4Attribute(TArray<FVector4> OutValues,string AttributeName,string EmitterName,int FrameIndex/*=0*/) {}
+	public void ReadVector4Attribute(TArray<FVector4> OutValues,FName AttributeName,FName EmitterName,int FrameIndex/*=0*/) {}
 	///<summary>Reads Niagara Color attributes by name from the cache frame and appends them into the OutValues array.</summary>
-	public void ReadColorAttribute(TArray<FLinearColor> OutValues,string AttributeName/*=new FName("Color")*/,string EmitterName/*=NAME_None*/,int FrameIndex/*=0*/) {}
+	public void ReadColorAttribute(TArray<FLinearColor> OutValues,FName AttributeName/*=new FName("Color")*/,FName EmitterName/*=NAME_None*/,int FrameIndex/*=0*/) {}
 	///<summary>Reads Niagara Position attributes by name from the cache frame and appends them into the OutValues array.</summary>
-	public void ReadPositionAttribute(TArray<FVector> OutValues,string AttributeName/*=new FName("Position")*/,string EmitterName/*=NAME_None*/,bool bLocalSpaceToWorld/*=true*/,int FrameIndex/*=0*/) {}
+	public void ReadPositionAttribute(TArray<FVector> OutValues,FName AttributeName/*=new FName("Position")*/,FName EmitterName/*=NAME_None*/,bool bLocalSpaceToWorld/*=true*/,int FrameIndex/*=0*/) {}
 	///<summary>Reads Niagara Position attributes by name from the cache frame and appends them into the OutValues array.</summary>
-	public void ReadPositionAttributeWithRebase(TArray<FVector> OutValues,FTransform Transform,string AttributeName/*=new FName("Position")*/,string EmitterName/*=NAME_None*/,int FrameIndex/*=0*/) {}
+	public void ReadPositionAttributeWithRebase(TArray<FVector> OutValues,FTransform Transform,FName AttributeName/*=new FName("Position")*/,FName EmitterName/*=NAME_None*/,int FrameIndex/*=0*/) {}
 	///<summary>Reads Niagara Quaternion attributes by name from the cache frame and appends them into the OutValues array.</summary>
-	public void ReadQuatAttribute(TArray<FQuat> OutValues,string AttributeName/*=new FName("MeshOrientation")*/,string EmitterName/*=NAME_None*/,bool bLocalSpaceToWorld/*=true*/,int FrameIndex/*=0*/) {}
+	public void ReadQuatAttribute(TArray<FQuat> OutValues,FName AttributeName/*=new FName("MeshOrientation")*/,FName EmitterName/*=NAME_None*/,bool bLocalSpaceToWorld/*=true*/,int FrameIndex/*=0*/) {}
 	///<summary>Reads Niagara Quaternion attributes by name from the cache frame and appends them into the OutValues array.</summary>
-	public void ReadQuatAttributeWithRebase(TArray<FQuat> OutValues,FQuat Quat,string AttributeName/*=new FName("MeshOrientation")*/,string EmitterName/*=NAME_None*/,int FrameIndex/*=0*/) {}
+	public void ReadQuatAttributeWithRebase(TArray<FQuat> OutValues,FQuat Quat,FName AttributeName/*=new FName("MeshOrientation")*/,FName EmitterName/*=NAME_None*/,int FrameIndex/*=0*/) {}
 	///<summary>CacheGuid</summary>
 	public FGuid CacheGuid;
 	///<summary>SoftNiagaraSystem</summary>

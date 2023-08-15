@@ -5,7 +5,7 @@ using CSharpToCpp.Utilities;
 public partial class UPCGAttributeTransferSettings : UPCGSettings {
 	public static UClass StaticClass() {return default;}
 	///<summary>SourceAttributeName</summary>
-	public string SourceAttributeName;
+	public FName SourceAttributeName;
 	///<summary>TargetAttributeName</summary>
-	public string TargetAttributeName;
+	public FName TargetAttributeName;
 }

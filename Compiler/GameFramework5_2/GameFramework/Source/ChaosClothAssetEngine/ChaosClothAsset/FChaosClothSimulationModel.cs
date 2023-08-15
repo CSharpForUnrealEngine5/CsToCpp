@@ -4,7 +4,7 @@ using CSharpToCpp.Utilities;
 [CppInclude("ChaosClothAsset/ClothSimulationModel.h")]
 public partial struct FChaosClothSimulationModel {
 	public TArray<FChaosClothSimulationLodModel> ClothSimulationLodModels;
-	public TArray<string> UsedBoneNames;
+	public TArray<FName> UsedBoneNames;
 	public TArray<int> UsedBoneIndices;
 	public int ReferenceBoneIndex;
 }

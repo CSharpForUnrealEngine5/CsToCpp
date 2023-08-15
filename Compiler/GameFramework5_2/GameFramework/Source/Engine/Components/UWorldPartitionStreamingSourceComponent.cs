@@ -16,9 +16,9 @@ public partial class UWorldPartitionStreamingSourceComponent : UActorComponent {
 	///<summary>When TargetGrids or TargetHLODLayers are specified, this indicates the behavior.</summary>
 	public EStreamingSourceTargetBehavior TargetBehavior;
 	///<summary>Optional target grids affected by streaming source.</summary>
-	public TArray<string> TargetGrids;
+	public TArray<FName> TargetGrids;
 	///<summary>TargetGrid_DEPRECATED</summary>
-	public string TargetGrid_DEPRECATED;
+	public FName TargetGrid_DEPRECATED;
 	///<summary>Color used for debugging.</summary>
 	public FColor DebugColor;
 	///<summary>Optional target HLODLayers affected by the streaming source.</summary>

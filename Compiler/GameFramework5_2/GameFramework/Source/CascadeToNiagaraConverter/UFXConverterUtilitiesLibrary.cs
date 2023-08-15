@@ -21,7 +21,7 @@ public partial class UFXConverterUtilitiesLibrary : UBlueprintFunctionLibrary {
 	///<summary>GetLodLevelTypeDataModule</summary>
 	public static UParticleModuleTypeDataBase GetLodLevelTypeDataModule(UParticleLODLevel LodLevel) { return default; }
 	///<summary>GetCascadeEmitterName</summary>
-	public static string GetCascadeEmitterName(UParticleEmitter Emitter) { return default; }
+	public static FName GetCascadeEmitterName(UParticleEmitter Emitter) { return default; }
 	///<summary>Niagara Script and Script Input Helpers</summary>
 	public static UNiagaraScriptConversionContext CreateScriptContext(FCreateScriptContextArgs Args) { return default; }
 	///<summary>CreateAssetData</summary>
@@ -153,9 +153,9 @@ public partial class UFXConverterUtilitiesLibrary : UBlueprintFunctionLibrary {
 	///<summary>GetParticleModuleAccelerationOverLifetimeProps</summary>
 	public static void GetParticleModuleAccelerationOverLifetimeProps(UParticleModuleAccelerationOverLifetime ParticleModule,UDistribution OutAccelOverLife) {}
 	///<summary>GetParticleModuleTrailSourceProps</summary>
-	public static void GetParticleModuleTrailSourceProps(UParticleModuleTrailSource ParticleModule,ETrail2SourceMethod OutSourceMethod,string OutSourceName,UDistribution OutSourceStrength,bool bOutLockSourceStrength,int OutSourceOffsetCount,TArray<FVector> OutSourceOffsetDefaults,EParticleSourceSelectionMethod OutSelectionMethod,bool bOutInheritRotation) {}
+	public static void GetParticleModuleTrailSourceProps(UParticleModuleTrailSource ParticleModule,ETrail2SourceMethod OutSourceMethod,FName OutSourceName,UDistribution OutSourceStrength,bool bOutLockSourceStrength,int OutSourceOffsetCount,TArray<FVector> OutSourceOffsetDefaults,EParticleSourceSelectionMethod OutSelectionMethod,bool bOutInheritRotation) {}
 	///<summary>GetParticleModuleAttractorParticleProps</summary>
-	public static void GetParticleModuleAttractorParticleProps(UParticleModuleAttractorParticle ParticleModule,string OutEmitterName,UDistribution OutRange,bool bOutStrengthByDistance,UDistribution OutStrength,bool bOutAffectBaseVelocity,EAttractorParticleSelectionMethod OutSelectionMethod,bool bOutRenewSource,bool bOutInheritSourceVelocity) {}
+	public static void GetParticleModuleAttractorParticleProps(UParticleModuleAttractorParticle ParticleModule,FName OutEmitterName,UDistribution OutRange,bool bOutStrengthByDistance,UDistribution OutStrength,bool bOutAffectBaseVelocity,EAttractorParticleSelectionMethod OutSelectionMethod,bool bOutRenewSource,bool bOutInheritSourceVelocity) {}
 	///<summary>GetParticleModuleAttractorPointProps</summary>
 	public static void GetParticleModuleAttractorPointProps(UParticleModuleAttractorPoint ParticleModule,UDistribution OutPosition,UDistribution OutRange,UDistribution OutStrength,bool boutStrengthByDistance,bool bOutAffectsBaseVelocity,bool bOutOverrideVelocity,bool bOutUseWorldSpacePosition,bool bOutPositiveX,bool bOutPositiveY,bool bOutPositiveZ,bool bOutNegativeX,bool bOutNegativeY,bool bOutNegativeZ) {}
 	///<summary>GetParticleModuleAttractorLineProps</summary>
@@ -165,7 +165,7 @@ public partial class UFXConverterUtilitiesLibrary : UBlueprintFunctionLibrary {
 	///<summary>GetParticleModuleLocationProps</summary>
 	public static void GetParticleModuleLocationProps(UParticleModuleLocation ParticleModule,UDistribution OutStartLocation,float OutDistributeOverNPoints,float OutDistributeThreshold) {}
 	///<summary>GetParticleModuleLocationBoneSocketProps</summary>
-	public static void GetParticleModuleLocationBoneSocketProps(UParticleModuleLocationBoneSocket ParticleModule,ELocationBoneSocketSource OutSourceType,FVector OutUniversalOffset,TArray<FLocationBoneSocketInfoBP> OutSourceLocations,ELocationBoneSocketSelectionMethod OutSelectionMethod,bool bOutUpdatePositionEachFrame,bool bOutOrientMeshEmitters,bool bOutInheritBoneVelocity,float OutInheritVelocityScale,string OutSkelMeshActorParamName,int OutNumPreSelectedIndices,USkeletalMesh OutEditorSkelMesh) {}
+	public static void GetParticleModuleLocationBoneSocketProps(UParticleModuleLocationBoneSocket ParticleModule,ELocationBoneSocketSource OutSourceType,FVector OutUniversalOffset,TArray<FLocationBoneSocketInfoBP> OutSourceLocations,ELocationBoneSocketSelectionMethod OutSelectionMethod,bool bOutUpdatePositionEachFrame,bool bOutOrientMeshEmitters,bool bOutInheritBoneVelocity,float OutInheritVelocityScale,FName OutSkelMeshActorParamName,int OutNumPreSelectedIndices,USkeletalMesh OutEditorSkelMesh) {}
 	///<summary>GetParticleModuleKillBoxProps</summary>
 	public static void GetParticleModuleKillBoxProps(UParticleModuleKillBox ParticleModule,UDistribution OutLowerLeftCorner,UDistribution OutUpperRightCorner,bool bOutWorldSpaceCoords,bool bOutKillInside,bool bOutAxisAlignedAndFixedSize) {}
 	///<summary>GetParticleModuleLightProps</summary>
@@ -197,9 +197,9 @@ public partial class UFXConverterUtilitiesLibrary : UBlueprintFunctionLibrary {
 	///<summary>GetVectorDistributionUniformCurveValues</summary>
 	public static void GetVectorDistributionUniformCurveValues(UDistributionVectorUniformCurve Distribution,FInterpCurveTwoVectors OutInterpCurveTwoVectors) {}
 	///<summary>GetFloatDistributionParameterValues</summary>
-	public static void GetFloatDistributionParameterValues(UDistributionFloatParameterBase Distribution,string OutParameterName,float OutMinInput,float OutMaxInput,float OutMinOutput,float OutMaxOutput) {}
+	public static void GetFloatDistributionParameterValues(UDistributionFloatParameterBase Distribution,FName OutParameterName,float OutMinInput,float OutMaxInput,float OutMinOutput,float OutMaxOutput) {}
 	///<summary>GetVectorDistributionParameterValues</summary>
-	public static void GetVectorDistributionParameterValues(UDistributionVectorParameterBase Distribution,string OutParameterName,FVector OutMinInput,FVector OutMaxInput,FVector OutMinOutput,FVector OutMaxOutput) {}
+	public static void GetVectorDistributionParameterValues(UDistributionVectorParameterBase Distribution,FName OutParameterName,FVector OutMinInput,FVector OutMaxInput,FVector OutMinOutput,FVector OutMaxOutput) {}
 	///<summary>Cascade curve helpers</summary>
 	public static TArray<FRichCurveKeyBP> KeysFromInterpCurveFloat(FInterpCurveFloat Curve) { return default; }
 	///<summary>KeysFromInterpCurveVector</summary>

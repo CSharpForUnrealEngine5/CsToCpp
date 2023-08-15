@@ -4,9 +4,9 @@ using CSharpToCpp.Utilities;
 [CppInclude("RigVMCore/RigVM.h")]
 public partial struct FRigVMParameter {
 	public ERigVMParameterType Type;
-	public string Name;
+	public FName Name;
 	public int RegisterIndex;
 	public string CPPType;
 	public UScriptStruct ScriptStruct;
-	public string ScriptStructPath;
+	public FName ScriptStructPath;
 }

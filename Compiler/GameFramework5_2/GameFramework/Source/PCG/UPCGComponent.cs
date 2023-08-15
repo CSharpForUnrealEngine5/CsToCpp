@@ -44,7 +44,7 @@ public partial class UPCGComponent : UActorComponent {
 	///<summary>Property that will automatically be set on BP templates, to allow for &quot;Generate on add to world&quot; in editor.</summary>
 	public bool bForceGenerateOnBPAddedToWorld;
 	///<summary>Can specify a list of functions from the owner of this component to be called when generation is done, in order.</summary>
-	public TArray<string> PostGenerateFunctionNames;
+	public TArray<FName> PostGenerateFunctionNames;
 	///<summary>GraphInstance</summary>
 	public UPCGGraphInstance GraphInstance;
 	///<summary>Graph_DEPRECATED</summary>

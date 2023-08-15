@@ -65,17 +65,17 @@ public partial class UEditorAssetSubsystem : UEditorSubsystem {
 	///<summary>Return the list of all the assets found in the DirectoryPath.</summary>
 	public TArray<string> ListAssets(string DirectoryPath,bool bRecursive/*=true*/,bool bIncludeFolder/*=false*/) { return default; }
 	///<summary>Return the list of all the assets that have the pair of Tag/Value.</summary>
-	public TArray<string> ListAssetsByTagValue(string TagName,string TagValue) { return default; }
+	public TArray<string> ListAssetsByTagValue(FName TagName,string TagValue) { return default; }
 	///<summary>Gets all TagValues (from Asset Registry) associated with an (unloaded) asset as strings value.</summary>
-	public TMap<string,string> GetTagValues(string AssetPath) { return default; }
+	public TMap<FName,string> GetTagValues(string AssetPath) { return default; }
 	///<summary>Get all tags/values of a loaded asset&#39;s metadata.</summary>
-	public TMap<string,string> GetMetadataTagValues(UObject Object) { return default; }
+	public TMap<FName,string> GetMetadataTagValues(UObject Object) { return default; }
 	///<summary>Get the value associated with the given tag of a loaded asset&#39;s metadata.</summary>
-	public string GetMetadataTag(UObject Object,string Tag) { return default; }
+	public string GetMetadataTag(UObject Object,FName Tag) { return default; }
 	///<summary>Set the value associated with a given tag of a loaded asset&#39;s metadata.</summary>
-	public void SetMetadataTag(UObject Object,string Tag,string Value) {}
+	public void SetMetadataTag(UObject Object,FName Tag,string Value) {}
 	///<summary>Remove the given tag from a loaded asset&#39;s metadata.</summary>
-	public void RemoveMetadataTag(UObject Object,string Tag) {}
+	public void RemoveMetadataTag(UObject Object,FName Tag) {}
 	///<summary>Dynamic version of FOnExtractAssetFromFile.</summary>
 	public void FOnExtractAssetFromFileDynamic(TArray<string> Files,TArray<FAssetData> AssetDataArray) {}
 	///<summary>Call this to add a callback to extract an asset from a file,</summary>

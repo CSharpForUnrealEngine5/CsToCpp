@@ -9,5 +9,5 @@ public partial class UAssetGuideline : UAssetUserData {
 	///<summary>Project settings to check for on load. Look at your .ini&#39;s to populate this.</summary>
 	public TArray<FIniStringValue> ProjectSettings;
 	///<summary>Name of this guideline, we will only check once per unique guideline name.</summary>
-	public string GuidelineName;
+	public FName GuidelineName;
 }

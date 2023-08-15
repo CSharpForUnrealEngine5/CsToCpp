@@ -8,7 +8,7 @@ public partial class UGeomModifier : UObject {
 	///<summary>The tooltip to be displayed for this modifier</summary>
 	public FText Tooltip;
 	///<summary>Icon name for showing this modifier in a toolbar</summary>
-	public string ToolbarIconName;
+	public FName ToolbarIconName;
 	///<summary>If true, this modifier should be displayed as a push button instead of a radio button</summary>
 	public bool bPushButton;
 	///<summary>true if the modifier has been initialized.</summary>

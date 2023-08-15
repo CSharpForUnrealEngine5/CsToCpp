@@ -12,7 +12,7 @@ public partial class UPoseWatchElement : UObject {
 	///<summary>Label</summary>
 	public FText Label;
 	///<summary>IconName</summary>
-	public string IconName;
+	public FName IconName;
 	///<summary>Parent</summary>
 	public TWeakObjectPtr<UPoseWatch> Parent;
 }

@@ -4,5 +4,5 @@ using CSharpToCpp.Utilities;
 public partial class UMaterialExpressionGetLocal : UMaterialExpression {
 	public static UClass StaticClass() {return default;}
 	///<summary>LocalName</summary>
-	public string LocalName;
+	public FName LocalName;
 }

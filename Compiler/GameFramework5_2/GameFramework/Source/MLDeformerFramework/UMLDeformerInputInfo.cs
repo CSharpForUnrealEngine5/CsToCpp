@@ -11,9 +11,9 @@ public partial class UMLDeformerInputInfo : UObject {
 	///<summary>The list of curve names, but as string. This is deprecated since UE 5.2.</summary>
 	public TArray<string> CurveNameStrings_DEPRECATED;
 	///<summary>The name of each bone. The inputs to the network are in the order of this array.</summary>
-	public TArray<string> BoneNames;
+	public TArray<FName> BoneNames;
 	///<summary>The name of each curve. The inputs to the network are in the order of this array.</summary>
-	public TArray<string> CurveNames;
+	public TArray<FName> CurveNames;
 	///<summary>Number of imported base mesh vertices, so not render vertices.</summary>
 	public int NumBaseMeshVertices;
 	///<summary>Number of imported target mesh vertices, so not render vertices.</summary>

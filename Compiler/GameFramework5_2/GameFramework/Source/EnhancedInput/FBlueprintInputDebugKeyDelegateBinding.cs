@@ -4,6 +4,6 @@ using CSharpToCpp.Utilities;
 public partial struct FBlueprintInputDebugKeyDelegateBinding {
 	public FInputChord InputChord;
 	public EInputEvent InputKeyEvent;
-	public string FunctionNameToBind;
+	public FName FunctionNameToBind;
 	public bool bExecuteWhenPaused;
 }

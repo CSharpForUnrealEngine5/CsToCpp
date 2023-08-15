@@ -4,8 +4,8 @@ using CSharpToCpp.Utilities;
 [CppInclude("OptimusDataDomain.h")]
 public partial struct FOptimusDataDomain {
 	public EOptimusDataDomainType Type;
-	public TArray<string> DimensionNames;
+	public TArray<FName> DimensionNames;
 	public int Multiplier;
 	public string Expression;
-	public TArray<string> LevelNames_DEPRECATED;
+	public TArray<FName> LevelNames_DEPRECATED;
 }

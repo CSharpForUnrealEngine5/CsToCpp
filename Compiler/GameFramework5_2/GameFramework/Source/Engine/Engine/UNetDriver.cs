@@ -52,11 +52,11 @@ public partial class UNetDriver : UObject {
 	///<summary>ReplicationBridgeClass</summary>
 	public UClass ReplicationBridgeClass;
 	///<summary>Used to specify the net driver to filter actors with (NAME_None || NAME_GameNetDriver is the default net driver)</summary>
-	public string NetDriverName;
+	public FName NetDriverName;
 	///<summary>Used to specify available channel types and their associated UClass</summary>
 	public TArray<FChannelDefinition> ChannelDefinitions;
 	///<summary>Used for faster lookup of channel definitions by name.</summary>
-	public TMap<string,FChannelDefinition> ChannelDefinitionMap;
+	public TMap<FName,FChannelDefinition> ChannelDefinitionMap;
 	///<summary>List of channels that were previously used and can be used again</summary>
 	public TArray<UChannel> ActorChannelPool;
 	///<summary>If true, ignore timeouts completely.  Should be used only in development</summary>

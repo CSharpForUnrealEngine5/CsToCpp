@@ -22,9 +22,9 @@ public partial class UAnimInstance : UObject {
 	///<summary>kismet event functions</summary>
 	public virtual APawn TryGetPawnOwner() { return default; }
 	///<summary>Takes a snapshot of the current skeletal mesh component pose &amp; saves it internally.</summary>
-	public virtual void SavePoseSnapshot(string SnapshotName) {}
+	public virtual void SavePoseSnapshot(FName SnapshotName) {}
 	///<summary>Remove a previously saved pose snapshot from the internal snapshot cache</summary>
-	public void RemovePoseSnapshot(string SnapshotName) {}
+	public void RemovePoseSnapshot(FName SnapshotName) {}
 	///<summary>Takes a snapshot of the current skeletal mesh component pose and saves it to the specified snapshot.</summary>
 	public virtual void SnapshotPose(FPoseSnapshot Snapshot) {}
 	///<summary>Get whether to process notifies from any linked anim instances</summary>
@@ -56,15 +56,15 @@ public partial class UAnimInstance : UObject {
 	///<summary>Executed when the Animation Blueprint is updated on a worker thread, just prior to graph update</summary>
 	public void BlueprintThreadSafeUpdateAnimation(float DeltaTime) {}
 	///<summary>Play normal animation asset on the slot node by creating a dynamic UAnimMontage. You can only play one asset (whether montage or animsequence) at a time per SlotGroup.</summary>
-	public UAnimMontage PlaySlotAnimationAsDynamicMontage(UAnimSequenceBase Asset,string SlotNodeName,float BlendInTime/*=0.25f*/,float BlendOutTime/*=0.25f*/,float InPlayRate/*=1.0f*/,int LoopCount/*=1*/,float BlendOutTriggerTime/*=-1.0f*/,float InTimeToStartMontageAt/*=0.0f*/) { return default; }
+	public UAnimMontage PlaySlotAnimationAsDynamicMontage(UAnimSequenceBase Asset,FName SlotNodeName,float BlendInTime/*=0.25f*/,float BlendOutTime/*=0.25f*/,float InPlayRate/*=1.0f*/,int LoopCount/*=1*/,float BlendOutTriggerTime/*=-1.0f*/,float InTimeToStartMontageAt/*=0.0f*/) { return default; }
 	///<summary>Play normal animation asset on the slot node by creating a dynamic UAnimMontage with blend in arguments. You can only play one asset (whether montage or animsequence) at a time per SlotGroup.</summary>
-	public UAnimMontage PlaySlotAnimationAsDynamicMontage_WithBlendArgs(UAnimSequenceBase Asset,string SlotNodeName,FAlphaBlendArgs BlendIn,FAlphaBlendArgs BlendOut,float InPlayRate/*=1.0f*/,int LoopCount/*=1*/,float BlendOutTriggerTime/*=-1.0f*/,float InTimeToStartMontageAt/*=0.0f*/) { return default; }
+	public UAnimMontage PlaySlotAnimationAsDynamicMontage_WithBlendArgs(UAnimSequenceBase Asset,FName SlotNodeName,FAlphaBlendArgs BlendIn,FAlphaBlendArgs BlendOut,float InPlayRate/*=1.0f*/,int LoopCount/*=1*/,float BlendOutTriggerTime/*=-1.0f*/,float InTimeToStartMontageAt/*=0.0f*/) { return default; }
 	///<summary>Play normal animation asset on the slot node by creating a dynamic UAnimMontage with blend in settings. You can only play one asset (whether montage or animsequence) at a time per SlotGroup.</summary>
-	public UAnimMontage PlaySlotAnimationAsDynamicMontage_WithBlendSettings(UAnimSequenceBase Asset,string SlotNodeName,FMontageBlendSettings BlendInSettings,FMontageBlendSettings BlendOutSettings,float InPlayRate/*=1.0f*/,int LoopCount/*=1*/,float BlendOutTriggerTime/*=-1.0f*/,float InTimeToStartMontageAt/*=0.0f*/) { return default; }
+	public UAnimMontage PlaySlotAnimationAsDynamicMontage_WithBlendSettings(UAnimSequenceBase Asset,FName SlotNodeName,FMontageBlendSettings BlendInSettings,FMontageBlendSettings BlendOutSettings,float InPlayRate/*=1.0f*/,int LoopCount/*=1*/,float BlendOutTriggerTime/*=-1.0f*/,float InTimeToStartMontageAt/*=0.0f*/) { return default; }
 	///<summary>Stops currently playing slot animation slot or all</summary>
-	public void StopSlotAnimation(float InBlendOutTime/*=0.25f*/,string SlotNodeName/*=NAME_None*/) {}
+	public void StopSlotAnimation(float InBlendOutTime/*=0.25f*/,FName SlotNodeName/*=NAME_None*/) {}
 	///<summary>Return true if it&#39;s playing the slot animation</summary>
-	public bool IsPlayingSlotAnimation(UAnimSequenceBase Asset,string SlotNodeName) { return default; }
+	public bool IsPlayingSlotAnimation(UAnimSequenceBase Asset,FName SlotNodeName) { return default; }
 	///<summary>Plays an animation montage. Returns the length of the animation montage in seconds. Returns 0.f if failed to play.</summary>
 	public float Montage_Play(UAnimMontage MontageToPlay,float InPlayRate/*=1.0f*/,EMontagePlayReturnType ReturnValueType/*=EMontagePlayReturnType.MontageLength*/,float InTimeToStartMontageAt/*=0.0f*/,bool bStopAllMontages/*=true*/) { return default; }
 	///<summary>Plays an animation montage. Same as Montage_Play, but you can specify an AlphaBlend for Blend In settings.</summary>
@@ -78,17 +78,17 @@ public partial class UAnimInstance : UObject {
 	///<summary>Same as Montage_Stop, but all blend settings are provided instead of using the ones on the montage asset</summary>
 	public void Montage_StopWithBlendSettings(FMontageBlendSettings BlendOutSettings,UAnimMontage Montage/*=nullptr*/) {}
 	///<summary>Stops all active montages belonging to a group.</summary>
-	public void Montage_StopGroupByName(float InBlendOutTime,string GroupName) {}
+	public void Montage_StopGroupByName(float InBlendOutTime,FName GroupName) {}
 	///<summary>Pauses the animation montage. If reference is NULL, it will pause ALL active montages.</summary>
 	public void Montage_Pause(UAnimMontage Montage/*=NULL*/) {}
 	///<summary>Resumes a paused animation montage. If reference is NULL, it will resume ALL active montages.</summary>
 	public void Montage_Resume(UAnimMontage Montage) {}
 	///<summary>Makes a montage jump to a named section. If Montage reference is NULL, it will do that to all active montages.</summary>
-	public void Montage_JumpToSection(string SectionName,UAnimMontage Montage/*=NULL*/) {}
+	public void Montage_JumpToSection(FName SectionName,UAnimMontage Montage/*=NULL*/) {}
 	///<summary>Makes a montage jump to the end of a named section. If Montage reference is NULL, it will do that to all active montages.</summary>
-	public void Montage_JumpToSectionsEnd(string SectionName,UAnimMontage Montage/*=NULL*/) {}
+	public void Montage_JumpToSectionsEnd(FName SectionName,UAnimMontage Montage/*=NULL*/) {}
 	///<summary>Relink new next section AFTER SectionNameToChange in run-time</summary>
-	public void Montage_SetNextSection(string SectionNameToChange,string NextSection,UAnimMontage Montage/*=NULL*/) {}
+	public void Montage_SetNextSection(FName SectionNameToChange,FName NextSection,UAnimMontage Montage/*=NULL*/) {}
 	///<summary>Change AnimMontage play rate. NewPlayRate = 1.0 is the default playback rate.</summary>
 	public void Montage_SetPlayRate(UAnimMontage Montage,float NewPlayRate/*=1.0f*/) {}
 	///<summary>Returns true if the animation montage is active. If the Montage reference is NULL, it will return true if any Montage is active.</summary>
@@ -96,7 +96,7 @@ public partial class UAnimInstance : UObject {
 	///<summary>Returns true if the animation montage is currently active and playing.</summary>
 	public bool Montage_IsPlaying(UAnimMontage Montage) { return default; }
 	///<summary>Returns the name of the current animation montage section.</summary>
-	public string Montage_GetCurrentSection(UAnimMontage Montage/*=NULL*/) { return default; }
+	public FName Montage_GetCurrentSection(UAnimMontage Montage/*=NULL*/) { return default; }
 	///<summary>Get Current Montage Position</summary>
 	public float Montage_GetPosition(UAnimMontage Montage) { return default; }
 	///<summary>Set position.</summary>
@@ -126,25 +126,25 @@ public partial class UAnimInstance : UObject {
 	///<summary>Called when all Montage instances have ended.</summary>
 	public FOnAllMontageInstancesEndedMCDelegate OnAllMontageInstancesEnded;
 	///<summary>Runs through all nodes, attempting to find the first linked instance by name/tag</summary>
-	public UAnimInstance GetLinkedAnimGraphInstanceByTag(string InTag) { return default; }
+	public UAnimInstance GetLinkedAnimGraphInstanceByTag(FName InTag) { return default; }
 	///<summary>GetLinkedAnimGraphInstancesByTag</summary>
-	public void GetLinkedAnimGraphInstancesByTag(string InTag,TArray<UAnimInstance> OutLinkedInstances) {}
+	public void GetLinkedAnimGraphInstancesByTag(FName InTag,TArray<UAnimInstance> OutLinkedInstances) {}
 	///<summary>Runs through all nodes, attempting to find a linked instance by name/tag, then sets the class of each node if the tag matches</summary>
-	public void LinkAnimGraphByTag(string InTag,UClass InClass) {}
+	public void LinkAnimGraphByTag(FName InTag,UClass InClass) {}
 	///<summary>Runs through all layer nodes, attempting to find layer nodes that are implemented by the specified class, then sets up a linked instance of the class for each.</summary>
 	public virtual void LinkAnimClassLayers(UClass InClass) {}
 	///<summary>Runs through all layer nodes, attempting to find layer nodes that are currently running the specified class, then resets each to its default value.</summary>
 	public virtual void UnlinkAnimClassLayers(UClass InClass) {}
 	///<summary>Gets the layer linked instance corresponding to the specified group</summary>
-	public UAnimInstance GetLinkedAnimLayerInstanceByGroup(string InGroup) { return default; }
+	public UAnimInstance GetLinkedAnimLayerInstanceByGroup(FName InGroup) { return default; }
 	///<summary>Runs through all nodes, attempting to find all distinct layer linked instances in the group</summary>
-	public void GetLinkedAnimLayerInstancesByGroup(string InGroup,TArray<UAnimInstance> OutLinkedInstances) {}
+	public void GetLinkedAnimLayerInstancesByGroup(FName InGroup,TArray<UAnimInstance> OutLinkedInstances) {}
 	///<summary>Gets layer linked instance that matches group and class</summary>
-	public UAnimInstance GetLinkedAnimLayerInstanceByGroupAndClass(string InGroup,UClass InClass) { return default; }
+	public UAnimInstance GetLinkedAnimLayerInstanceByGroupAndClass(FName InGroup,UClass InClass) { return default; }
 	///<summary>Gets the first layer linked instance corresponding to the specified class</summary>
 	public UAnimInstance GetLinkedAnimLayerInstanceByClass(UClass InClass) { return default; }
 	///<summary>Requests an inertial blend during the next anim graph update. Requires your anim graph to have a slot node belonging to the specified group name</summary>
-	public void RequestSlotGroupInertialization(string InSlotGroupName,float Duration,UBlendProfile BlendProfile/*=nullptr*/) {}
+	public void RequestSlotGroupInertialization(FName InSlotGroupName,float Duration,UBlendProfile BlendProfile/*=nullptr*/) {}
 	///<summary>Set RootMotionMode</summary>
 	public void SetRootMotionMode(ERootMotionMode Value) {}
 	///<summary>Gets the length in seconds of the asset referenced in an asset player node</summary>
@@ -188,27 +188,27 @@ public partial class UAnimInstance : UObject {
 	///<summary>Get whether the most relevant animation was in a particular notify state last tick.</summary>
 	public bool WasAnimNotifyTriggeredInSourceState(int MachineIndex,int StateIndex,UClass AnimNotifyType) { return default; }
 	///<summary>Get whether the most relevant animation triggered the animation notify with the specified name last tick..</summary>
-	public bool WasAnimNotifyNameTriggeredInSourceState(int MachineIndex,int StateIndex,string NotifyName) { return default; }
+	public bool WasAnimNotifyNameTriggeredInSourceState(int MachineIndex,int StateIndex,FName NotifyName) { return default; }
 	///<summary>Get whether a particular notify type was active in a specific state machine last tick.</summary>
 	public bool WasAnimNotifyTriggeredInStateMachine(int MachineIndex,UClass AnimNotifyType) { return default; }
 	///<summary>Get whether the given state machine triggered the animation notify with the specified name last tick.</summary>
-	public bool WasAnimNotifyNameTriggeredInStateMachine(int MachineIndex,string NotifyName) { return default; }
+	public bool WasAnimNotifyNameTriggeredInStateMachine(int MachineIndex,FName NotifyName) { return default; }
 	///<summary>Get whether an animation notify of a given type was triggered last tick.</summary>
 	public bool WasAnimNotifyTriggeredInAnyState(UClass AnimNotifyType) { return default; }
 	///<summary>Get whether the animation notify with the specified name triggered last tick.</summary>
-	public bool WasAnimNotifyNameTriggeredInAnyState(string NotifyName) { return default; }
+	public bool WasAnimNotifyNameTriggeredInAnyState(FName NotifyName) { return default; }
 	///<summary>Returns the value of a named curve.</summary>
-	public float GetCurveValue(string CurveName) { return default; }
+	public float GetCurveValue(FName CurveName) { return default; }
 	///<summary>Returns whether a named curve was found, its value, and a default value when it&#39;s not found.</summary>
-	public bool GetCurveValueWithDefault(string CurveName,float DefaultValue,float OutValue) { return default; }
+	public bool GetCurveValueWithDefault(FName CurveName,float DefaultValue,float OutValue) { return default; }
 	///<summary>This returns last up-to-date list of active curve names</summary>
-	public void GetActiveCurveNames(EAnimCurveType CurveType,TArray<string> OutNames) {}
+	public void GetActiveCurveNames(EAnimCurveType CurveType,TArray<FName> OutNames) {}
 	///<summary>This returns all curve names</summary>
-	public void GetAllCurveNames(TArray<string> OutNames) {}
+	public void GetAllCurveNames(TArray<FName> OutNames) {}
 	///<summary>Returns the name of a currently active state in a state machine.</summary>
-	public string GetCurrentStateName(int MachineIndex) { return default; }
+	public FName GetCurrentStateName(int MachineIndex) { return default; }
 	///<summary>Sets a morph target to a certain weight.</summary>
-	public void SetMorphTarget(string MorphTargetName,float Value) {}
+	public void SetMorphTarget(FName MorphTargetName,float Value) {}
 	///<summary>Clears the current morph targets.</summary>
 	public void ClearMorphTargets() {}
 	///<summary>CalculateDirection</summary>
@@ -218,23 +218,23 @@ public partial class UAnimInstance : UObject {
 	///<summary>unlocks indicated AI resources of animated pawn. Will unlock only animation-locked resources.</summary>
 	public void UnlockAIResources(bool bUnlockMovement,bool UnlockAILogic) {}
 	///<summary>--- AI communication end ---</summary>
-	public bool GetTimeToClosestMarker(string SyncGroup,string MarkerName,float OutMarkerTime) { return default; }
+	public bool GetTimeToClosestMarker(FName SyncGroup,FName MarkerName,float OutMarkerTime) { return default; }
 	///<summary>HasMarkerBeenHitThisFrame</summary>
-	public bool HasMarkerBeenHitThisFrame(string SyncGroup,string MarkerName) { return default; }
+	public bool HasMarkerBeenHitThisFrame(FName SyncGroup,FName MarkerName) { return default; }
 	///<summary>IsSyncGroupBetweenMarkers</summary>
-	public bool IsSyncGroupBetweenMarkers(string InSyncGroupName,string PreviousMarker,string NextMarker,bool bRespectMarkerOrder/*=true*/) { return default; }
+	public bool IsSyncGroupBetweenMarkers(FName InSyncGroupName,FName PreviousMarker,FName NextMarker,bool bRespectMarkerOrder/*=true*/) { return default; }
 	///<summary>GetSyncGroupPosition</summary>
-	public FMarkerSyncAnimPosition GetSyncGroupPosition(string InSyncGroupName) { return default; }
+	public FMarkerSyncAnimPosition GetSyncGroupPosition(FName InSyncGroupName) { return default; }
 	///<summary>Attempts to queue a transition request, returns true if the request was successful</summary>
-	public bool RequestTransitionEvent(string EventName,double RequestTimeout,ETransitionRequestQueueMode QueueMode,ETransitionRequestOverwriteMode OverwriteMode) { return default; }
+	public bool RequestTransitionEvent(FName EventName,double RequestTimeout,ETransitionRequestQueueMode QueueMode,ETransitionRequestOverwriteMode OverwriteMode) { return default; }
 	///<summary>Removes all queued transition requests with the given event name</summary>
-	public void ClearTransitionEvents(string EventName) {}
+	public void ClearTransitionEvents(FName EventName) {}
 	///<summary>Removes all queued transition requests</summary>
 	public void ClearAllTransitionEvents() {}
 	///<summary>Returns whether or not the given event transition request has been queued</summary>
-	public bool QueryTransitionEvent(int MachineIndex,int TransitionIndex,string EventName) { return default; }
+	public bool QueryTransitionEvent(int MachineIndex,int TransitionIndex,FName EventName) { return default; }
 	///<summary>Behaves like QueryTransitionEvent but additionally marks the event for consumption</summary>
-	public bool QueryAndMarkTransitionEvent(int MachineIndex,int TransitionIndex,string EventName) { return default; }
+	public bool QueryAndMarkTransitionEvent(int MachineIndex,int TransitionIndex,FName EventName) { return default; }
 	///<summary>Name of Class to do Post Compile Validation.</summary>
 	public FSoftClassPath PostCompileValidationClassName;
 	///<summary>Reset any dynamics running simulation-style updates (e.g. on teleport, time skip etc.)</summary>

@@ -13,7 +13,7 @@ public partial class ULODSyncComponent : UActorComponent {
 	///<summary>Array of components whose LOD may drive or be driven by this component.</summary>
 	public TArray<FComponentSync> ComponentsToSync;
 	///<summary>by default, the mapping will be one to one</summary>
-	public TMap<string,FLODMappingData> CustomLODMapping;
+	public TMap<FName,FLODMappingData> CustomLODMapping;
 	///<summary>Returns a string detailing</summary>
 	public string GetLODSyncDebugText() { return default; }
 	///<summary>CurrentLOD</summary>

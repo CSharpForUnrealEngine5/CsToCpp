@@ -4,7 +4,7 @@ using CSharpToCpp.Utilities;
 public partial class UIKRig_LimbSolver : UIKRigSolver {
 	public static UClass StaticClass() {return default;}
 	///<summary>RootName</summary>
-	public string RootName;
+	public FName RootName;
 	///<summary>Precision (distance to the target)</summary>
 	public float ReachPrecision;
 	///<summary>Hinge Bones Rotation Axis. This is essentially the plane normal for (hip - knee - foot).</summary>

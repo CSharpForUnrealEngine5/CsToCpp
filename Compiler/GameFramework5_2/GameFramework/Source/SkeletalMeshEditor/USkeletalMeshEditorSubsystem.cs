@@ -29,7 +29,7 @@ public partial class USkeletalMeshEditorSubsystem : UEditorSubsystem {
 	///<summary>Gets the material slot used for a specific LOD section.</summary>
 	public int GetLODMaterialSlot(USkeletalMesh SkeletalMesh,int LODIndex,int SectionIndex) { return default; }
 	///<summary>Rename a socket within a skeleton</summary>
-	public static bool RenameSocket(USkeletalMesh SkeletalMesh,string OldName,string NewName) { return default; }
+	public static bool RenameSocket(USkeletalMesh SkeletalMesh,FName OldName,FName NewName) { return default; }
 	///<summary>Retrieve the number of LOD contain in the specified skeletal mesh.</summary>
 	public static int GetLODCount(USkeletalMesh SkeletalMesh) { return default; }
 	///<summary>Import or re-import a LOD into the specified base mesh. If the LOD do not exist it will import it and add it to the base static mesh. If the LOD already exist it will re-import the specified LOD.</summary>

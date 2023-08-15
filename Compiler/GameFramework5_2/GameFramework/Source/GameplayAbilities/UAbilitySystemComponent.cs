@@ -19,7 +19,7 @@ public partial class UAbilitySystemComponent : UGameplayTasksComponent {
 	///<summary>DefaultStartingData</summary>
 	public TArray<FAttributeDefaults> DefaultStartingData;
 	///<summary>The linked Anim Instance that this component will play montages in. Use NAME_None for the main anim instance.</summary>
-	public string AffectedAnimInstanceTag;
+	public FName AffectedAnimInstanceTag;
 	///<summary>Applies a previously created gameplay effect spec to a target</summary>
 	public FActiveGameplayEffectHandle BP_ApplyGameplayEffectSpecToTarget(FGameplayEffectSpecHandle SpecHandle,UAbilitySystemComponent Target) { return default; }
 	///<summary>Applies a previously created gameplay effect spec to this component</summary>
@@ -219,9 +219,9 @@ public partial class UAbilitySystemComponent : UGameplayTasksComponent {
 	///<summary>OnRep_ReplicatedAnimMontage</summary>
 	public virtual void OnRep_ReplicatedAnimMontage() {}
 	///<summary>RPC function called from CurrentMontageSetNextSectopnName, replicates to other clients</summary>
-	public void ServerCurrentMontageSetNextSectionName(UAnimMontage ClientAnimMontage,float ClientPosition,string SectionName,string NextSectionName) {}
+	public void ServerCurrentMontageSetNextSectionName(UAnimMontage ClientAnimMontage,float ClientPosition,FName SectionName,FName NextSectionName) {}
 	///<summary>RPC function called from CurrentMontageJumpToSection, replicates to other clients</summary>
-	public void ServerCurrentMontageJumpToSectionName(UAnimMontage ClientAnimMontage,string SectionName) {}
+	public void ServerCurrentMontageJumpToSectionName(UAnimMontage ClientAnimMontage,FName SectionName) {}
 	///<summary>RPC function called from CurrentMontageSetPlayRate, replicates to other clients</summary>
 	public void ServerCurrentMontageSetPlayRate(UAnimMontage ClientAnimMontage,float InPlayRate) {}
 	///<summary>Contains all of the gameplay effects that are currently active on this component</summary>

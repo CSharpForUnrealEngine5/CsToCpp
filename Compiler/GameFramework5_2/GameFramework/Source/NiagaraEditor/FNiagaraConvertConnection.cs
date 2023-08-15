@@ -4,9 +4,9 @@ using CSharpToCpp.Utilities;
 [CppInclude("NiagaraNodeConvert.h")]
 public partial struct FNiagaraConvertConnection {
 	public FGuid SourcePinId;
-	public TArray<string> SourcePath;
+	public TArray<FName> SourcePath;
 	public FGuid DestinationPinId;
-	public TArray<string> DestinationPath;
+	public TArray<FName> DestinationPath;
 	public FGuid SourcePropertyId;
 	public FGuid DestinationPropertyId;
 }

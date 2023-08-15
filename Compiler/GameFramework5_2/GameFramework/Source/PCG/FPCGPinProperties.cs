@@ -2,7 +2,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("PCGPin.h")]
 public partial struct FPCGPinProperties {
-	public string Label;
+	public FName Label;
 	public EPCGDataType AllowedTypes;
 	public bool bAllowMultipleData;
 	public bool bAllowMultipleConnections;

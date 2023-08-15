@@ -6,7 +6,7 @@ public partial class UPCGSpawnActorSettings : UPCGBaseSubgraphSettings {
 	///<summary>TemplateActorClass</summary>
 	public UClass TemplateActorClass;
 	///<summary>Can specify a list of functions from the template class to be called on each actor spawned, in order. Need to be parameter-less and with &quot;CallInEditor&quot; flag enabled.</summary>
-	public TArray<string> PostSpawnFunctionNames;
+	public TArray<FName> PostSpawnFunctionNames;
 	///<summary>Option</summary>
 	public EPCGSpawnActorOption Option;
 	///<summary>bForceDisableActorParsing</summary>
@@ -16,7 +16,7 @@ public partial class UPCGSpawnActorSettings : UPCGBaseSubgraphSettings {
 	///<summary>Warning: inheriting parent actor tags work only in non-collapsed actor hierarchies</summary>
 	public bool bInheritActorTags;
 	///<summary>TagsToAddOnActors</summary>
-	public TArray<string> TagsToAddOnActors;
+	public TArray<FName> TagsToAddOnActors;
 	///<summary>TemplateActor</summary>
 	public AActor TemplateActor;
 	///<summary>ActorOverrides</summary>

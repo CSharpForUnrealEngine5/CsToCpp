@@ -30,13 +30,13 @@ public partial class UTimelineTemplate : UObject {
 	///<summary>Allow control of Timeline component TickGroup assignment via TimelineTemplates</summary>
 	public ETickingGroup TimelineTickGroup;
 	///<summary>VariableName</summary>
-	public string VariableName;
+	public FName VariableName;
 	///<summary>DirectionPropertyName</summary>
-	public string DirectionPropertyName;
+	public FName DirectionPropertyName;
 	///<summary>UpdateFunctionName</summary>
-	public string UpdateFunctionName;
+	public FName UpdateFunctionName;
 	///<summary>FinishedFunctionName</summary>
-	public string FinishedFunctionName;
+	public FName FinishedFunctionName;
 	///<summary>Whether or not this track is expanded in the UI.</summary>
 	public TArray<FTTTrackId> TrackDisplayOrder;
 }

@@ -27,7 +27,7 @@ public partial class URigVMGraph : UObject {
 	///<summary>Returns the name of this graph (as defined by the node path)</summary>
 	public string GetGraphName() { return default; }
 	///<summary>Returns a Node given its name (or nullptr).</summary>
-	public URigVMNode FindNodeByName(string InNodeName) { return default; }
+	public URigVMNode FindNodeByName(FName InNodeName) { return default; }
 	///<summary>Returns a Node given its path (or nullptr).</summary>
 	public URigVMNode FindNode(string InNodePath) { return default; }
 	///<summary>Returns a Pin given its path, for example &quot;Node.Color.R&quot;.</summary>
@@ -35,9 +35,9 @@ public partial class URigVMGraph : UObject {
 	///<summary>Returns a link given its string representation,</summary>
 	public URigVMLink FindLink(string InLinkPinPathRepresentation) { return default; }
 	///<summary>Returns true if a Node with a given name is selected.</summary>
-	public bool IsNodeSelected(string InNodeName) { return default; }
+	public bool IsNodeSelected(FName InNodeName) { return default; }
 	///<summary>Returns the names of all currently selected Nodes.</summary>
-	public TArray<string> GetSelectNodes() { return default; }
+	public TArray<FName> GetSelectNodes() { return default; }
 	///<summary>Returns true if this graph is the top level graph</summary>
 	public bool IsTopLevelGraph() { return default; }
 	///<summary>Returns the locally available function library</summary>
@@ -55,7 +55,7 @@ public partial class URigVMGraph : UObject {
 	///<summary>Links</summary>
 	public TArray<URigVMLink> Links;
 	///<summary>SelectedNodes</summary>
-	public TArray<string> SelectedNodes;
+	public TArray<FName> SelectedNodes;
 	///<summary>DefaultFunctionLibraryPtr</summary>
 	public TWeakObjectPtr<URigVMGraph> DefaultFunctionLibraryPtr;
 	///<summary>ExecuteContextStruct</summary>

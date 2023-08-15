@@ -11,7 +11,7 @@ public partial class UWaterRuntimeSettings : UDeveloperSettings {
 	///<summary>Offset in Z for the water body icon in world-space.</summary>
 	public float WaterBodyIconWorldZOffset;
 	///<summary>Default collision profile name of water bodies</summary>
-	public string DefaultWaterCollisionProfileName;
+	public FName DefaultWaterCollisionProfileName;
 	///<summary>DefaultWaterInfoMaterial</summary>
 	public TSoftObjectPtr<UMaterialInterface> DefaultWaterInfoMaterial;
 	///<summary>WaterBodyRiverComponentClass</summary>

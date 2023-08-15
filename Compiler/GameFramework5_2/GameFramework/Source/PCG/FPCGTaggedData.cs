@@ -4,6 +4,6 @@ using CSharpToCpp.Utilities;
 public partial struct FPCGTaggedData {
 	public UPCGData Data;
 	public TSet<string> Tags;
-	public string Pin;
+	public FName Pin;
 	public bool bPinlessData;
 }

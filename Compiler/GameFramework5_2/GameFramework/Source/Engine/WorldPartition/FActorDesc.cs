@@ -5,12 +5,12 @@ using CSharpToCpp.Utilities;
 public partial struct FActorDesc {
 	public FGuid Guid;
 	public FSoftObjectPath Class;
-	public string Name;
-	public string Label;
+	public FName Name;
+	public FName Label;
 	public FBox Bounds;
-	public string RuntimeGrid;
+	public FName RuntimeGrid;
 	public bool bIsSpatiallyLoaded;
 	public bool bActorIsEditorOnly;
-	public string ActorPackage;
-	public string ActorPath;
+	public FName ActorPackage;
+	public FName ActorPath;
 }

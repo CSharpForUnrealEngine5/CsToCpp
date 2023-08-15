@@ -7,5 +7,5 @@ public partial class UColorInputDeviceCurveProperty : UInputDeviceProperty {
 	///<summary>Default color data that will be used by default. Device Specific overrides will be used when the current input device matches</summary>
 	public FDeviceColorCurveData ColorData;
 	///<summary>A map of device specific color data. If no overrides are specified, the Default hardware data will be used</summary>
-	public TMap<string,FDeviceColorCurveData> DeviceOverrideData;
+	public TMap<FName,FDeviceColorCurveData> DeviceOverrideData;
 }

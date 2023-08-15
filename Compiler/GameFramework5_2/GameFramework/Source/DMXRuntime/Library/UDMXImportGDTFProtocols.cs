@@ -4,5 +4,5 @@ using CSharpToCpp.Utilities;
 public partial class UDMXImportGDTFProtocols : UDMXImportProtocols {
 	public static UClass StaticClass() {return default;}
 	///<summary>Protocols</summary>
-	public TArray<string> Protocols;
+	public TArray<FName> Protocols;
 }

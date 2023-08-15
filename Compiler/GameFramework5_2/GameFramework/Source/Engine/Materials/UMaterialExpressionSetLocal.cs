@@ -8,5 +8,5 @@ public partial class UMaterialExpressionSetLocal : UMaterialExpression {
 	///<summary>Value</summary>
 	public FExpressionInput Value;
 	///<summary>LocalName</summary>
-	public string LocalName;
+	public FName LocalName;
 }

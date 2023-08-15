@@ -6,5 +6,5 @@ public partial class URuntimeSpatialHashExternalStreamingObject : URuntimeHashEx
 	///<summary>StreamingGrids</summary>
 	public TArray<FSpatialHashStreamingGrid> StreamingGrids;
 	///<summary>CellToLevelStreamingPackage</summary>
-	public TMap<string,string> CellToLevelStreamingPackage;
+	public TMap<FName,FName> CellToLevelStreamingPackage;
 }

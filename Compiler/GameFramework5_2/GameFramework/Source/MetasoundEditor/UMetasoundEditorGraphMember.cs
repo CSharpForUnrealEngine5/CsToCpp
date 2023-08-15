@@ -7,5 +7,5 @@ public partial class UMetasoundEditorGraphMember : UObject {
 	///<summary>Default literal value of member</summary>
 	public UMetasoundEditorGraphMemberDefaultLiteral Literal;
 	///<summary>Metasound Data Type.</summary>
-	public string TypeName;
+	public FName TypeName;
 }

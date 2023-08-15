@@ -28,7 +28,7 @@ public partial class AControlRigControlActor : AActor {
 	///<summary>ControlRig</summary>
 	public TSoftObjectPtr<UControlRig> ControlRig;
 	///<summary>ControlNames</summary>
-	public TArray<string> ControlNames;
+	public TArray<FName> ControlNames;
 	///<summary>ShapeTransforms</summary>
 	public TArray<FTransform> ShapeTransforms;
 	///<summary>Components</summary>
@@ -36,5 +36,5 @@ public partial class AControlRigControlActor : AActor {
 	///<summary>Materials</summary>
 	public TArray<UMaterialInstanceDynamic> Materials;
 	///<summary>ColorParameterName</summary>
-	public string ColorParameterName;
+	public FName ColorParameterName;
 }

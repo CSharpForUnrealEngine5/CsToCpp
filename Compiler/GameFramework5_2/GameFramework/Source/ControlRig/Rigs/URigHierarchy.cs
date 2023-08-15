@@ -52,99 +52,99 @@ public partial class URigHierarchy : UObject {
 	///<summary>Returns all root element keys</summary>
 	public TArray<FRigElementKey> GetRootElementKeys() { return default; }
 	///<summary>Returns the name of metadata for a given element</summary>
-	public TArray<string> GetMetadataNames(FRigElementKey InItem) { return default; }
+	public TArray<FName> GetMetadataNames(FRigElementKey InItem) { return default; }
 	///<summary>Returns the type of metadata given its name the item it is stored under</summary>
-	public ERigMetadataType GetMetadataType(FRigElementKey InItem,string InMetadataName) { return default; }
+	public ERigMetadataType GetMetadataType(FRigElementKey InItem,FName InMetadataName) { return default; }
 	///<summary>Removes the metadata under a given element</summary>
-	public bool RemoveMetadata(FRigElementKey InItem,string InMetadataName) { return default; }
+	public bool RemoveMetadata(FRigElementKey InItem,FName InMetadataName) { return default; }
 	///<summary>Removes all of the metadata under a given item</summary>
 	public bool RemoveAllMetadata(FRigElementKey InItem) { return default; }
 	///<summary>Queries and returns the value of bool metadata</summary>
-	public bool GetBoolMetadata(FRigElementKey InItem,string InMetadataName,bool DefaultValue) { return default; }
+	public bool GetBoolMetadata(FRigElementKey InItem,FName InMetadataName,bool DefaultValue) { return default; }
 	///<summary>Queries and returns the value of bool array metadata</summary>
-	public TArray<bool> GetBoolArrayMetadata(FRigElementKey InItem,string InMetadataName) { return default; }
+	public TArray<bool> GetBoolArrayMetadata(FRigElementKey InItem,FName InMetadataName) { return default; }
 	///<summary>Sets the metadata to a bool value</summary>
-	public bool SetBoolMetadata(FRigElementKey InItem,string InMetadataName,bool InValue) { return default; }
+	public bool SetBoolMetadata(FRigElementKey InItem,FName InMetadataName,bool InValue) { return default; }
 	///<summary>Sets the metadata to a bool array value</summary>
-	public bool SetBoolArrayMetadata(FRigElementKey InItem,string InMetadataName,TArray<bool> InValue) { return default; }
+	public bool SetBoolArrayMetadata(FRigElementKey InItem,FName InMetadataName,TArray<bool> InValue) { return default; }
 	///<summary>Queries and returns the value of float metadata</summary>
-	public float GetFloatMetadata(FRigElementKey InItem,string InMetadataName,float DefaultValue) { return default; }
+	public float GetFloatMetadata(FRigElementKey InItem,FName InMetadataName,float DefaultValue) { return default; }
 	///<summary>Queries and returns the value of float array metadata</summary>
-	public TArray<float> GetFloatArrayMetadata(FRigElementKey InItem,string InMetadataName) { return default; }
+	public TArray<float> GetFloatArrayMetadata(FRigElementKey InItem,FName InMetadataName) { return default; }
 	///<summary>Sets the metadata to a float value</summary>
-	public bool SetFloatMetadata(FRigElementKey InItem,string InMetadataName,float InValue) { return default; }
+	public bool SetFloatMetadata(FRigElementKey InItem,FName InMetadataName,float InValue) { return default; }
 	///<summary>Sets the metadata to a float array value</summary>
-	public bool SetFloatArrayMetadata(FRigElementKey InItem,string InMetadataName,TArray<float> InValue) { return default; }
+	public bool SetFloatArrayMetadata(FRigElementKey InItem,FName InMetadataName,TArray<float> InValue) { return default; }
 	///<summary>Queries and returns the value of int32 metadata</summary>
-	public int GetInt32Metadata(FRigElementKey InItem,string InMetadataName,int DefaultValue) { return default; }
+	public int GetInt32Metadata(FRigElementKey InItem,FName InMetadataName,int DefaultValue) { return default; }
 	///<summary>Queries and returns the value of int32 array metadata</summary>
-	public TArray<int> GetInt32ArrayMetadata(FRigElementKey InItem,string InMetadataName) { return default; }
+	public TArray<int> GetInt32ArrayMetadata(FRigElementKey InItem,FName InMetadataName) { return default; }
 	///<summary>Sets the metadata to a int32 value</summary>
-	public bool SetInt32Metadata(FRigElementKey InItem,string InMetadataName,int InValue) { return default; }
+	public bool SetInt32Metadata(FRigElementKey InItem,FName InMetadataName,int InValue) { return default; }
 	///<summary>Sets the metadata to a int32 array value</summary>
-	public bool SetInt32ArrayMetadata(FRigElementKey InItem,string InMetadataName,TArray<int> InValue) { return default; }
+	public bool SetInt32ArrayMetadata(FRigElementKey InItem,FName InMetadataName,TArray<int> InValue) { return default; }
 	///<summary>Queries and returns the value of FName metadata</summary>
-	public string GetNameMetadata(FRigElementKey InItem,string InMetadataName,string DefaultValue) { return default; }
+	public FName GetNameMetadata(FRigElementKey InItem,FName InMetadataName,FName DefaultValue) { return default; }
 	///<summary>Queries and returns the value of FName array metadata</summary>
-	public TArray<string> GetNameArrayMetadata(FRigElementKey InItem,string InMetadataName) { return default; }
+	public TArray<FName> GetNameArrayMetadata(FRigElementKey InItem,FName InMetadataName) { return default; }
 	///<summary>Sets the metadata to a FName value</summary>
-	public bool SetNameMetadata(FRigElementKey InItem,string InMetadataName,string InValue) { return default; }
+	public bool SetNameMetadata(FRigElementKey InItem,FName InMetadataName,FName InValue) { return default; }
 	///<summary>Sets the metadata to a FName array value</summary>
-	public bool SetNameArrayMetadata(FRigElementKey InItem,string InMetadataName,TArray<string> InValue) { return default; }
+	public bool SetNameArrayMetadata(FRigElementKey InItem,FName InMetadataName,TArray<FName> InValue) { return default; }
 	///<summary>Queries and returns the value of FVector metadata</summary>
-	public FVector GetVectorMetadata(FRigElementKey InItem,string InMetadataName,FVector DefaultValue) { return default; }
+	public FVector GetVectorMetadata(FRigElementKey InItem,FName InMetadataName,FVector DefaultValue) { return default; }
 	///<summary>Queries and returns the value of FVector array metadata</summary>
-	public TArray<FVector> GetVectorArrayMetadata(FRigElementKey InItem,string InMetadataName) { return default; }
+	public TArray<FVector> GetVectorArrayMetadata(FRigElementKey InItem,FName InMetadataName) { return default; }
 	///<summary>Sets the metadata to a FVector value</summary>
-	public bool SetVectorMetadata(FRigElementKey InItem,string InMetadataName,FVector InValue) { return default; }
+	public bool SetVectorMetadata(FRigElementKey InItem,FName InMetadataName,FVector InValue) { return default; }
 	///<summary>Sets the metadata to a FVector array value</summary>
-	public bool SetVectorArrayMetadata(FRigElementKey InItem,string InMetadataName,TArray<FVector> InValue) { return default; }
+	public bool SetVectorArrayMetadata(FRigElementKey InItem,FName InMetadataName,TArray<FVector> InValue) { return default; }
 	///<summary>Queries and returns the value of FRotator metadata</summary>
-	public FRotator GetRotatorMetadata(FRigElementKey InItem,string InMetadataName,FRotator DefaultValue) { return default; }
+	public FRotator GetRotatorMetadata(FRigElementKey InItem,FName InMetadataName,FRotator DefaultValue) { return default; }
 	///<summary>Queries and returns the value of FRotator array metadata</summary>
-	public TArray<FRotator> GetRotatorArrayMetadata(FRigElementKey InItem,string InMetadataName) { return default; }
+	public TArray<FRotator> GetRotatorArrayMetadata(FRigElementKey InItem,FName InMetadataName) { return default; }
 	///<summary>Sets the metadata to a FRotator value</summary>
-	public bool SetRotatorMetadata(FRigElementKey InItem,string InMetadataName,FRotator InValue) { return default; }
+	public bool SetRotatorMetadata(FRigElementKey InItem,FName InMetadataName,FRotator InValue) { return default; }
 	///<summary>Sets the metadata to a FRotator array value</summary>
-	public bool SetRotatorArrayMetadata(FRigElementKey InItem,string InMetadataName,TArray<FRotator> InValue) { return default; }
+	public bool SetRotatorArrayMetadata(FRigElementKey InItem,FName InMetadataName,TArray<FRotator> InValue) { return default; }
 	///<summary>Queries and returns the value of FQuat metadata</summary>
-	public FQuat GetQuatMetadata(FRigElementKey InItem,string InMetadataName,FQuat DefaultValue) { return default; }
+	public FQuat GetQuatMetadata(FRigElementKey InItem,FName InMetadataName,FQuat DefaultValue) { return default; }
 	///<summary>Queries and returns the value of FQuat array metadata</summary>
-	public TArray<FQuat> GetQuatArrayMetadata(FRigElementKey InItem,string InMetadataName) { return default; }
+	public TArray<FQuat> GetQuatArrayMetadata(FRigElementKey InItem,FName InMetadataName) { return default; }
 	///<summary>Sets the metadata to a FQuat value</summary>
-	public bool SetQuatMetadata(FRigElementKey InItem,string InMetadataName,FQuat InValue) { return default; }
+	public bool SetQuatMetadata(FRigElementKey InItem,FName InMetadataName,FQuat InValue) { return default; }
 	///<summary>Sets the metadata to a FQuat array value</summary>
-	public bool SetQuatArrayMetadata(FRigElementKey InItem,string InMetadataName,TArray<FQuat> InValue) { return default; }
+	public bool SetQuatArrayMetadata(FRigElementKey InItem,FName InMetadataName,TArray<FQuat> InValue) { return default; }
 	///<summary>Queries and returns the value of FTransform metadata</summary>
-	public FTransform GetTransformMetadata(FRigElementKey InItem,string InMetadataName,FTransform DefaultValue) { return default; }
+	public FTransform GetTransformMetadata(FRigElementKey InItem,FName InMetadataName,FTransform DefaultValue) { return default; }
 	///<summary>Queries and returns the value of FTransform array metadata</summary>
-	public TArray<FTransform> GetTransformArrayMetadata(FRigElementKey InItem,string InMetadataName) { return default; }
+	public TArray<FTransform> GetTransformArrayMetadata(FRigElementKey InItem,FName InMetadataName) { return default; }
 	///<summary>Sets the metadata to a FTransform value</summary>
-	public bool SetTransformMetadata(FRigElementKey InItem,string InMetadataName,FTransform InValue) { return default; }
+	public bool SetTransformMetadata(FRigElementKey InItem,FName InMetadataName,FTransform InValue) { return default; }
 	///<summary>Sets the metadata to a FTransform array value</summary>
-	public bool SetTransformArrayMetadata(FRigElementKey InItem,string InMetadataName,TArray<FTransform> InValue) { return default; }
+	public bool SetTransformArrayMetadata(FRigElementKey InItem,FName InMetadataName,TArray<FTransform> InValue) { return default; }
 	///<summary>Queries and returns the value of FLinearColor metadata</summary>
-	public FLinearColor GetLinearColorMetadata(FRigElementKey InItem,string InMetadataName,FLinearColor DefaultValue) { return default; }
+	public FLinearColor GetLinearColorMetadata(FRigElementKey InItem,FName InMetadataName,FLinearColor DefaultValue) { return default; }
 	///<summary>Queries and returns the value of FLinearColor array metadata</summary>
-	public TArray<FLinearColor> GetLinearColorArrayMetadata(FRigElementKey InItem,string InMetadataName) { return default; }
+	public TArray<FLinearColor> GetLinearColorArrayMetadata(FRigElementKey InItem,FName InMetadataName) { return default; }
 	///<summary>Sets the metadata to a FLinearColor value</summary>
-	public bool SetLinearColorMetadata(FRigElementKey InItem,string InMetadataName,FLinearColor InValue) { return default; }
+	public bool SetLinearColorMetadata(FRigElementKey InItem,FName InMetadataName,FLinearColor InValue) { return default; }
 	///<summary>Sets the metadata to a FLinearColor array value</summary>
-	public bool SetLinearColorArrayMetadata(FRigElementKey InItem,string InMetadataName,TArray<FLinearColor> InValue) { return default; }
+	public bool SetLinearColorArrayMetadata(FRigElementKey InItem,FName InMetadataName,TArray<FLinearColor> InValue) { return default; }
 	///<summary>Queries and returns the value of FRigElementKey metadata</summary>
-	public FRigElementKey GetRigElementKeyMetadata(FRigElementKey InItem,string InMetadataName,FRigElementKey DefaultValue) { return default; }
+	public FRigElementKey GetRigElementKeyMetadata(FRigElementKey InItem,FName InMetadataName,FRigElementKey DefaultValue) { return default; }
 	///<summary>Queries and returns the value of FRigElementKey array metadata</summary>
-	public TArray<FRigElementKey> GetRigElementKeyArrayMetadata(FRigElementKey InItem,string InMetadataName) { return default; }
+	public TArray<FRigElementKey> GetRigElementKeyArrayMetadata(FRigElementKey InItem,FName InMetadataName) { return default; }
 	///<summary>Sets the metadata to a FRigElementKey value</summary>
-	public bool SetRigElementKeyMetadata(FRigElementKey InItem,string InMetadataName,FRigElementKey InValue) { return default; }
+	public bool SetRigElementKeyMetadata(FRigElementKey InItem,FName InMetadataName,FRigElementKey InValue) { return default; }
 	///<summary>Sets the metadata to a FRigElementKey array value</summary>
-	public bool SetRigElementKeyArrayMetadata(FRigElementKey InItem,string InMetadataName,TArray<FRigElementKey> InValue) { return default; }
+	public bool SetRigElementKeyArrayMetadata(FRigElementKey InItem,FName InMetadataName,TArray<FRigElementKey> InValue) { return default; }
 	///<summary>* Returns the tags for a given item</summary>
-	public TArray<string> GetTags(FRigElementKey InItem) { return default; }
+	public TArray<FName> GetTags(FRigElementKey InItem) { return default; }
 	///<summary>* Returns true if a given item has a certain tag</summary>
-	public bool HasTag(FRigElementKey InItem,string InTag) { return default; }
+	public bool HasTag(FRigElementKey InItem,FName InTag) { return default; }
 	///<summary>* Sets a tag on an element in the hierarchy</summary>
-	public bool SetTag(FRigElementKey InItem,string InTag) { return default; }
+	public bool SetTag(FRigElementKey InItem,FName InTag) { return default; }
 	///<summary>Returns the keys of selected elements</summary>
 	public TArray<FRigElementKey> GetSelectedKeys(ERigElementType InTypeFilter/*=ERigElementType.All*/) { return default; }
 	///<summary>Returns true if a given element is selected</summary>
@@ -306,7 +306,7 @@ public partial class URigHierarchy : UObject {
 	///<summary>Returns the contained FTransformNoScale value from a a Rig Control Value</summary>
 	public static FTransformNoScale GetTransformNoScaleFromControlValue(FRigControlValue InValue) { return default; }
 	///<summary>Returns the previous name of an element prior to a rename operation</summary>
-	public string GetPreviousName(FRigElementKey InKey) { return default; }
+	public FName GetPreviousName(FRigElementKey InKey) { return default; }
 	///<summary>Returns the previous parent of an element prior to a reparent operation</summary>
 	public FRigElementKey GetPreviousParent(FRigElementKey InKey) { return default; }
 	///<summary>The topology version of the hierarchy changes when elements are</summary>

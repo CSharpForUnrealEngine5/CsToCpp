@@ -22,7 +22,7 @@ public partial class UDatasmithSceneElementBase : UObject {
 	///<summary>Physical Sky could be generated in a large amount of modes, like material, lights etc</summary>
 	public bool GetUsePhysicalSky() { return default; }
 	///<summary>Create a new Mesh and add it to the Datasmith scene</summary>
-	public UDatasmithMeshElement CreateMesh(string InElementName) { return default; }
+	public UDatasmithMeshElement CreateMesh(FName InElementName) { return default; }
 	///<summary>Create an array with all the Mesh in the Datasmith scene. Use CreateMesh -or- RemoveMesh to modify the Datasmith scene.</summary>
 	public TArray<UDatasmithMeshElement> GetMeshes() { return default; }
 	///<summary>Find in the Datasmith scene the MeshElement that correspond to the mesh path name.</summary>
@@ -30,7 +30,7 @@ public partial class UDatasmithSceneElementBase : UObject {
 	///<summary>Remove the mesh from the Datasmith scene</summary>
 	public void RemoveMesh(UDatasmithMeshElement InMesh) {}
 	///<summary>Create a new MeshActor and add it to the Datasmith scene</summary>
-	public UDatasmithMeshActorElement CreateMeshActor(string InElementName) { return default; }
+	public UDatasmithMeshActorElement CreateMeshActor(FName InElementName) { return default; }
 	///<summary>Create an array with the MeshActor in the Datasmith scene that are at the root level of the hierarchy.</summary>
 	public TArray<UDatasmithMeshActorElement> GetMeshActors() { return default; }
 	///<summary>Create an array with all the MeshActor in the Datasmith scene without taking into account the hierarchy.</summary>
@@ -44,7 +44,7 @@ public partial class UDatasmithSceneElementBase : UObject {
 	///<summary>Remove the LightActor from the Datasmith scene</summary>
 	public void RemoveLightActor(UDatasmithLightActorElement InLightActor,EDatasmithActorRemovalRule RemoveRule/*=EDatasmithActorRemovalRule.RemoveChildren*/) {}
 	///<summary>Create a new Camera Actor and add it to the Datasmith scene</summary>
-	public UDatasmithCameraActorElement CreateCameraActor(string InElementName) { return default; }
+	public UDatasmithCameraActorElement CreateCameraActor(FName InElementName) { return default; }
 	///<summary>Create an array with the CameraActor in the Datasmith scene that are at the root level of the hierarchy.</summary>
 	public TArray<UDatasmithCameraActorElement> GetCameraActors() { return default; }
 	///<summary>Create an array with all the CameraActor in the Datasmith scene without taking into account the hierarchy.</summary>
@@ -58,7 +58,7 @@ public partial class UDatasmithSceneElementBase : UObject {
 	///<summary>Remove the LightActor from the Datasmith scene</summary>
 	public void RemoveCustomActor(UDatasmithCustomActorElement InCustomActor,EDatasmithActorRemovalRule RemoveRule/*=EDatasmithActorRemovalRule.RemoveChildren*/) {}
 	///<summary>Create a new Texture and add it to the Datasmith scene</summary>
-	public UDatasmithTextureElement CreateTexture(string InElementName) { return default; }
+	public UDatasmithTextureElement CreateTexture(FName InElementName) { return default; }
 	///<summary>Create an array with all the Textures in the Datasmith scene. Call CreateTexture -or- RemoveTexture to modify the Datasmith scene.</summary>
 	public TArray<UDatasmithTextureElement> GetTextures() { return default; }
 	///<summary>Remove the Texture from the Datasmith scene</summary>
@@ -80,7 +80,7 @@ public partial class UDatasmithSceneElementBase : UObject {
 	///<summary>Find all objects of the given type that have a metadata element that contains the given key and their associated values.</summary>
 	public void GetAllObjectsAndValuesForKey(string Key,UClass ObjectClass,TArray<UDatasmithObjectElement> OutObjects,TArray<string> OutValues) {}
 	///<summary>Create a new level variant sets and add it to the Datasmith scene</summary>
-	public UDatasmithLevelVariantSetsElement CreateLevelVariantSets(string InElementName) { return default; }
+	public UDatasmithLevelVariantSetsElement CreateLevelVariantSets(FName InElementName) { return default; }
 	///<summary>Create an array with all the level variants sets from the Datasmith scene</summary>
 	public TArray<UDatasmithLevelVariantSetsElement> GetAllLevelVariantSets() { return default; }
 	///<summary>Remove the level variant sets from the Datasmith scene</summary>

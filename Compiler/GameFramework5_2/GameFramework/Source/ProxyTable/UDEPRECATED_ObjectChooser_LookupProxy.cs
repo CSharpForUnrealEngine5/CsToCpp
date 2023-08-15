@@ -6,5 +6,5 @@ public partial class UDEPRECATED_ObjectChooser_LookupProxy : UObject {
 	///<summary>ProxyTable</summary>
 	public object /*ProxyTable*/ ProxyTable;
 	///<summary>Key</summary>
-	public string Key;
+	public FName Key;
 }

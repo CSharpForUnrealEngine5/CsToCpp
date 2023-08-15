@@ -15,7 +15,7 @@ public partial class UBrushBuilder : UObject {
 	///<summary>Polys</summary>
 	public TArray<FBuilderPoly> Polys;
 	///<summary>Layer</summary>
-	public string Layer;
+	public FName Layer;
 	///<summary>MergeCoplanars</summary>
 	public bool MergeCoplanars;
 }

@@ -2,5 +2,5 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("FloatRangeColumn.h")]
 public partial struct FFloatContextProperty {
-	public TArray<string> PropertyBindingChain;
+	public TArray<FName> PropertyBindingChain;
 }

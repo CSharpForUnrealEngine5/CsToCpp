@@ -8,7 +8,7 @@ public partial class UNavigationSystemV1 : UNavigationSystemBase {
 	///<summary>special navigation data for managing direct paths, not part of NavDataSet!</summary>
 	public ANavigationData AbstractNavData;
 	///<summary>If not None indicates which of navigation datas and supported agents are</summary>
-	public string DefaultAgentName;
+	public FName DefaultAgentName;
 	///<summary>CrowdManagerClass</summary>
 	public TSoftObjectPtr<UClass> CrowdManagerClass;
 	///<summary>Should navigation system spawn default Navigation Data when there&#39;s none and there are navigation bounds present?</summary>

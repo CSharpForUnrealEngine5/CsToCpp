@@ -38,13 +38,13 @@ public partial class AEmitter : AActor {
 	///<summary>SetTemplate</summary>
 	public virtual void SetTemplate(UParticleSystem NewTemplate) {}
 	///<summary>SetFloatParameter</summary>
-	public void SetFloatParameter(string ParameterName,float Param) {}
+	public void SetFloatParameter(FName ParameterName,float Param) {}
 	///<summary>SetVectorParameter</summary>
-	public void SetVectorParameter(string ParameterName,FVector Param) {}
+	public void SetVectorParameter(FName ParameterName,FVector Param) {}
 	///<summary>SetColorParameter</summary>
-	public void SetColorParameter(string ParameterName,FLinearColor Param) {}
+	public void SetColorParameter(FName ParameterName,FLinearColor Param) {}
 	///<summary>SetActorParameter</summary>
-	public void SetActorParameter(string ParameterName,AActor Param) {}
+	public void SetActorParameter(FName ParameterName,AActor Param) {}
 	///<summary>SetMaterialParameter</summary>
-	public void SetMaterialParameter(string ParameterName,UMaterialInterface Param) {}
+	public void SetMaterialParameter(FName ParameterName,UMaterialInterface Param) {}
 }

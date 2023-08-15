@@ -5,7 +5,7 @@ using CSharpToCpp.Utilities;
 public partial struct FExpressionInput {
 	public UMaterialExpression Expression;
 	public int OutputIndex;
-	public string InputName;
+	public FName InputName;
 	public int Mask;
 	public int MaskR;
 	public int MaskG;

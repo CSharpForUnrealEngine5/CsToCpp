@@ -3,5 +3,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("NiagaraStackGraphUtilitiesAdapterLibrary.h")]
 public partial struct FStackEntryID {
 	public EScriptExecutionCategory ScriptExecutionCategory;
-	public string EventName;
+	public FName EventName;
 }

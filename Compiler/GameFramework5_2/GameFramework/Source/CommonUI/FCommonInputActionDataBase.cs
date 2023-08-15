@@ -7,6 +7,6 @@ public partial struct FCommonInputActionDataBase {
 	public int NavBarPriority;
 	public FCommonInputTypeInfo KeyboardInputTypeInfo;
 	public FCommonInputTypeInfo DefaultGamepadInputTypeInfo;
-	public TMap<string,FCommonInputTypeInfo> GamepadInputOverrides;
+	public TMap<FName,FCommonInputTypeInfo> GamepadInputOverrides;
 	public FCommonInputTypeInfo TouchInputTypeInfo;
 }

@@ -5,9 +5,9 @@ using CSharpToCpp.Utilities;
 public partial class AGameState : AGameStateBase {
 	public static UClass StaticClass() {return default;}
 	///<summary>What match state we are currently in</summary>
-	public string MatchState;
+	public FName MatchState;
 	///<summary>Previous map state, used to handle if multiple transitions happen per frame</summary>
-	public string PreviousMatchState;
+	public FName PreviousMatchState;
 	///<summary>Elapsed game time since match has started.</summary>
 	public int ElapsedTime;
 	///<summary>Match state has changed</summary>

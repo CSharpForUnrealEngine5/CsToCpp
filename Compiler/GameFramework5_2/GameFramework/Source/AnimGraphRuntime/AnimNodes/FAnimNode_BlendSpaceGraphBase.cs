@@ -5,7 +5,7 @@ using CSharpToCpp.Utilities;
 public partial struct FAnimNode_BlendSpaceGraphBase {
 	public float X;
 	public float Y;
-	public string GroupName;
+	public FName GroupName;
 	public EAnimGroupRole GroupRole;
 	public UBlendSpace BlendSpace;
 	public TArray<FPoseLink> SamplePoseLinks;

@@ -31,9 +31,9 @@ public partial class UBTTask_BlueprintBase : UBTTaskNode {
 	///<summary>aborts task execution</summary>
 	public void FinishAbort() {}
 	///<summary>task execution will be finished (with result &#39;Success&#39;) after receiving specified message</summary>
-	public void SetFinishOnMessage(string MessageName) {}
+	public void SetFinishOnMessage(FName MessageName) {}
 	///<summary>task execution will be finished (with result &#39;Success&#39;) after receiving specified message with indicated ID</summary>
-	public void SetFinishOnMessageWithId(string MessageName,int RequestID/*=-1*/) {}
+	public void SetFinishOnMessageWithId(FName MessageName,int RequestID/*=-1*/) {}
 	///<summary>check if task is currently being executed</summary>
 	public bool IsTaskExecuting() { return default; }
 	///<summary>check if task is currently being aborted</summary>

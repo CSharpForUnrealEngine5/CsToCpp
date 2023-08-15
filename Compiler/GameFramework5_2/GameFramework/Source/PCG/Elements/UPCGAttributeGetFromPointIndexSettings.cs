@@ -9,7 +9,7 @@ public partial class UPCGAttributeGetFromPointIndexSettings : UPCGSettings {
 	///<summary>Index</summary>
 	public int Index;
 	///<summary>OutputAttributeName</summary>
-	public string OutputAttributeName;
+	public FName OutputAttributeName;
 	///<summary>InputAttributeName_DEPRECATED</summary>
-	public string InputAttributeName_DEPRECATED;
+	public FName InputAttributeName_DEPRECATED;
 }

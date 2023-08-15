@@ -6,5 +6,5 @@ public partial struct FMultiUserClientInfo {
 	public FGuid ClientEndpointId;
 	public string DisplayName;
 	public FLinearColor AvatarColor;
-	public TArray<string> Tags;
+	public TArray<FName> Tags;
 }

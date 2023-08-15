@@ -4,7 +4,7 @@ using CSharpToCpp.Utilities;
 [CppInclude("RigVMModel/RigVMControllerActions.h")]
 public partial struct FRigVMAddEnumNodeAction {
 	public string CPPType;
-	public string CPPTypeObjectPath;
+	public FName CPPTypeObjectPath;
 	public FVector2D Position;
 	public string NodePath;
 }

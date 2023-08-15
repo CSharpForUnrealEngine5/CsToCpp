@@ -2,7 +2,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("GroomImportOptions.h")]
 public partial struct FGroomHairGroupPreview {
-	public string GroupName;
+	public FName GroupName;
 	public int GroupID;
 	public int CurveCount;
 	public int GuideCount;

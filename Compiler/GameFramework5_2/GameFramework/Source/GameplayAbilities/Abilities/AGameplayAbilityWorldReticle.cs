@@ -11,9 +11,9 @@ public partial class AGameplayAbilityWorldReticle : AActor {
 	///<summary>OnParametersInitialized</summary>
 	public void OnParametersInitialized() {}
 	///<summary>SetReticleMaterialParamFloat</summary>
-	public void SetReticleMaterialParamFloat(string ParamName,float value) {}
+	public void SetReticleMaterialParamFloat(FName ParamName,float value) {}
 	///<summary>SetReticleMaterialParamVector</summary>
-	public void SetReticleMaterialParamVector(string ParamName,FVector value) {}
+	public void SetReticleMaterialParamVector(FName ParamName,FVector value) {}
 	///<summary>FaceTowardSource</summary>
 	public void FaceTowardSource(bool bFaceIn2D) {}
 	///<summary>Parameters</summary>

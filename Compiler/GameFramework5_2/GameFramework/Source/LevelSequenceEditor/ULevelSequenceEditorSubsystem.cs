@@ -47,5 +47,5 @@ public partial class ULevelSequenceEditorSubsystem : UEditorSubsystem {
 	///<summary>Remove missing objects bound to this track</summary>
 	public void RemoveInvalidBindings(FMovieSceneBindingProxy ObjectBinding) {}
 	///<summary>Rebind the component binding to the requested component</summary>
-	public void RebindComponent(TArray<FMovieSceneBindingProxy> ComponentBindings,string ComponentName) {}
+	public void RebindComponent(TArray<FMovieSceneBindingProxy> ComponentBindings,FName ComponentName) {}
 }

@@ -7,7 +7,7 @@ public partial class UAbilityTask_ApplyRootMotionRadialForce : UAbilityTask_Appl
 	///<summary>OnFinish</summary>
 	public FApplyRootMotionRadialForceDelegate OnFinish;
 	///<summary>Apply force to character&#39;s movement</summary>
-	public static UAbilityTask_ApplyRootMotionRadialForce ApplyRootMotionRadialForce(UGameplayAbility OwningAbility,string TaskInstanceName,FVector Location,AActor LocationActor,float Strength,float Duration,float Radius,bool bIsPush,bool bIsAdditive,bool bNoZForce,UCurveFloat StrengthDistanceFalloff,UCurveFloat StrengthOverTime,bool bUseFixedWorldDirection,FRotator FixedWorldDirection,ERootMotionFinishVelocityMode VelocityOnFinishMode,FVector SetVelocityOnFinish,float ClampVelocityOnFinish) { return default; }
+	public static UAbilityTask_ApplyRootMotionRadialForce ApplyRootMotionRadialForce(UGameplayAbility OwningAbility,FName TaskInstanceName,FVector Location,AActor LocationActor,float Strength,float Duration,float Radius,bool bIsPush,bool bIsAdditive,bool bNoZForce,UCurveFloat StrengthDistanceFalloff,UCurveFloat StrengthOverTime,bool bUseFixedWorldDirection,FRotator FixedWorldDirection,ERootMotionFinishVelocityMode VelocityOnFinishMode,FVector SetVelocityOnFinish,float ClampVelocityOnFinish) { return default; }
 	///<summary>Location</summary>
 	public FVector Location;
 	///<summary>LocationActor</summary>

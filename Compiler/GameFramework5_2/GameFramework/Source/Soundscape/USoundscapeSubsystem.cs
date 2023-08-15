@@ -10,19 +10,19 @@ public partial class USoundscapeSubsystem : UGameInstanceSubsystem {
 	///<summary>RestartSoundscape</summary>
 	public void RestartSoundscape() {}
 	///<summary>AddPaletteCollection</summary>
-	public bool AddPaletteCollection(string PaletteCollectionName,FSoundscapePaletteCollection PaletteCollection) { return default; }
+	public bool AddPaletteCollection(FName PaletteCollectionName,FSoundscapePaletteCollection PaletteCollection) { return default; }
 	///<summary>RemovePaletteCollection</summary>
-	public bool RemovePaletteCollection(string PaletteCollectionName) { return default; }
+	public bool RemovePaletteCollection(FName PaletteCollectionName) { return default; }
 	///<summary>LoadedPaletteCollectionSet</summary>
 	public TSet<USoundscapePalette> LoadedPaletteCollectionSet;
 	///<summary>UnloadedPaletteCollections</summary>
-	public TMap<string,FSoundscapePaletteCollection> UnloadedPaletteCollections;
+	public TMap<FName,FSoundscapePaletteCollection> UnloadedPaletteCollections;
 	///<summary>ActivePalettes</summary>
 	public TMap<USoundscapePalette,UActiveSoundscapePalette> ActivePalettes;
 	///<summary>Add a Color Point Collection to the Subsystem, returns true if successful</summary>
-	public void AddColorPointCollection(string ColorPointCollectionName,FSoundscapeColorPointCollection ColorPointCollection) {}
+	public void AddColorPointCollection(FName ColorPointCollectionName,FSoundscapeColorPointCollection ColorPointCollection) {}
 	///<summary>Remove a Color Point Collection from the Subsystem, returns true if successful</summary>
-	public bool RemoveColorPointCollection(string ColorPointCollectionName) { return default; }
+	public bool RemoveColorPointCollection(FName ColorPointCollectionName) { return default; }
 	///<summary>Check Color Point Density for a Location Cell</summary>
 	public int CheckColorPointDensity(FVector Location,FGameplayTag ColorPoint) { return default; }
 	///<summary>Stored Hash Map Collections</summary>

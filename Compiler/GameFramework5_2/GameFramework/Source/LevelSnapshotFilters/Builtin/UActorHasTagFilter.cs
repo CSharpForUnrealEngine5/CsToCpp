@@ -7,7 +7,7 @@ public partial class UActorHasTagFilter : UActorSelectorFilter {
 	///<summary>How to match AllowedTags in each actor.</summary>
 	public ETagCheckingBehavior TagCheckingBehavior;
 	///<summary>The tags to check the actor for.</summary>
-	public TSet<string> AllowedTags;
+	public TSet<FName> AllowedTags;
 	///<summary>Which of the actors we should check the tags on.</summary>
 	public EActorToCheck ActorToCheck;
 }

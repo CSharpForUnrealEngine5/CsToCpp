@@ -4,5 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("UObject/NoExportTypes.h")]
 public partial struct FPrimaryAssetId {
 	public FPrimaryAssetType PrimaryAssetType;
-	public string PrimaryAssetName;
+	public FName PrimaryAssetName;
 }

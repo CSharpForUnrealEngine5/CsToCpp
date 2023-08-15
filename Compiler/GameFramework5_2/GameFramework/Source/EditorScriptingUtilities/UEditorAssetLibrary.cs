@@ -65,17 +65,17 @@ public partial class UEditorAssetLibrary : UBlueprintFunctionLibrary {
 	///<summary>Return the list of all the assets found in the DirectoryPath.</summary>
 	public static TArray<string> ListAssets(string DirectoryPath,bool bRecursive/*=true*/,bool bIncludeFolder/*=false*/) { return default; }
 	///<summary>Return the list of all the assets that have the pair of Tag/Value.</summary>
-	public static TArray<string> ListAssetByTagValue(string TagName,string TagValue) { return default; }
+	public static TArray<string> ListAssetByTagValue(FName TagName,string TagValue) { return default; }
 	///<summary>Gets all TagValues (from Asset Registry) associated with an (unloaded) asset as strings value.</summary>
-	public static TMap<string,string> GetTagValues(string AssetPath) { return default; }
+	public static TMap<FName,string> GetTagValues(string AssetPath) { return default; }
 	///<summary>Get all tags/values of a loaded asset&#39;s metadata.</summary>
-	public static TMap<string,string> GetMetadataTagValues(UObject Object) { return default; }
+	public static TMap<FName,string> GetMetadataTagValues(UObject Object) { return default; }
 	///<summary>Get the value associated with the given tag of a loaded asset&#39;s metadata.</summary>
-	public static string GetMetadataTag(UObject Object,string Tag) { return default; }
+	public static string GetMetadataTag(UObject Object,FName Tag) { return default; }
 	///<summary>Set the value associated with a given tag of a loaded asset&#39;s metadata.</summary>
-	public static void SetMetadataTag(UObject Object,string Tag,string Value) {}
+	public static void SetMetadataTag(UObject Object,FName Tag,string Value) {}
 	///<summary>Remove the given tag from a loaded asset&#39;s metadata.</summary>
-	public static void RemoveMetadataTag(UObject Object,string Tag) {}
+	public static void RemoveMetadataTag(UObject Object,FName Tag) {}
 	///<summary>Sync the Content Browser to the given asset(s)</summary>
 	public static void SyncBrowserToObjects(TArray<string> AssetPaths) {}
 }

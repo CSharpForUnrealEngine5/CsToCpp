@@ -8,5 +8,5 @@ public partial class UDEPRECATED_AppleARKitPoseTrackingLiveLinkRemapAsset : ULiv
 	///<summary>MeshForward</summary>
 	public FVector MeshForward;
 	///<summary>AppleARKitBoneNamesToMeshBoneNames</summary>
-	public TMap<string,string> AppleARKitBoneNamesToMeshBoneNames;
+	public TMap<FName,FName> AppleARKitBoneNamesToMeshBoneNames;
 }

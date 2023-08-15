@@ -5,7 +5,7 @@ using CSharpToCpp.Utilities;
 public partial class USoundfieldSubmix : USoundSubmixWithParentBase {
 	public static UClass StaticClass() {return default;}
 	///<summary>Currently used format.</summary>
-	public string SoundfieldEncodingFormat;
+	public FName SoundfieldEncodingFormat;
 	///<summary>Which encoding settings to use the sound field.</summary>
 	public USoundfieldEncodingSettingsBase EncodingSettings;
 	///<summary>Soundfield effect chain to use for the sound field.</summary>

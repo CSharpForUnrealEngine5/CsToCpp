@@ -2,7 +2,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Animation/Skeleton.h")]
 public partial struct FVirtualBone {
-	public string SourceBoneName;
-	public string TargetBoneName;
-	public string VirtualBoneName;
+	public FName SourceBoneName;
+	public FName TargetBoneName;
+	public FName VirtualBoneName;
 }

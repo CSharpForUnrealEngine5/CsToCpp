@@ -14,7 +14,7 @@ public partial class AWorldPartitionHLOD : AActor {
 	///<summary>HLODHash</summary>
 	public uint HLODHash;
 	///<summary>HLODStats</summary>
-	public TMap<string,long> HLODStats;
+	public TMap<FName,long> HLODStats;
 	///<summary>LODLevel</summary>
 	public uint LODLevel;
 	///<summary>bRequireWarmup</summary>
@@ -22,7 +22,7 @@ public partial class AWorldPartitionHLOD : AActor {
 	///<summary>SourceCell_DEPRECATED</summary>
 	public TSoftObjectPtr<UWorldPartitionRuntimeCell> SourceCell_DEPRECATED;
 	///<summary>SourceCellName_DEPRECATED</summary>
-	public string SourceCellName_DEPRECATED;
+	public FName SourceCellName_DEPRECATED;
 	///<summary>SourceCellGuid</summary>
 	public FGuid SourceCellGuid;
 }

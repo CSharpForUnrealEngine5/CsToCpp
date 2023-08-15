@@ -5,7 +5,7 @@ using CSharpToCpp.Utilities;
 public partial class UDEPRECATED_VirtualCameraConcertCameraComponent : UActorComponent {
 	public static UClass StaticClass() {return default;}
 	///<summary>The tracked name used by the multi user system to send the data.</summary>
-	public string TrackingName;
+	public FName TrackingName;
 	///<summary>Is that component sending the camera information or receiving it.</summary>
 	public bool bHasAuthority;
 	///<summary>When the component has the authority and we are in the editor, we should broadcast the update.</summary>

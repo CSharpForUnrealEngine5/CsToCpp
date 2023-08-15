@@ -5,5 +5,5 @@ using CSharpToCpp.Utilities;
 public partial class UBaseModifierGroup : UObject {
 	public static UClass StaticClass() {return default;}
 	///<summary>NodeName</summary>
-	public string NodeName;
+	public FName NodeName;
 }

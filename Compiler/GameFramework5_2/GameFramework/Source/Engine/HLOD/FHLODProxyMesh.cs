@@ -5,5 +5,5 @@ using CSharpToCpp.Utilities;
 public partial struct FHLODProxyMesh {
 	public TLazyObjectPtr<ALODActor> LODActor;
 	public UStaticMesh StaticMesh;
-	public string Key;
+	public FName Key;
 }

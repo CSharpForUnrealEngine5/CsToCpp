@@ -26,15 +26,15 @@ public partial class UEnhancedInputSubsystemInterface : UInterface {
 	///<summary>Get an array of the currently applied key mappings that are marked as Player Mappable.</summary>
 	public virtual TArray<FEnhancedActionKeyMapping> GetAllPlayerMappableActionKeyMappings() { return default; }
 	///<summary>Emplace or replace any currently applied key in KeySlot for mapping of MappingName.</summary>
-	public virtual int K2_AddPlayerMappedKeyInSlot(string MappingName,FKey NewKey,FPlayerMappableKeySlot KeySlot/*=new FPlayerMappableKeySlot()*/,FModifyContextOptions Options/*=new FModifyContextOptions()*/) { return default; }
+	public virtual int K2_AddPlayerMappedKeyInSlot(FName MappingName,FKey NewKey,FPlayerMappableKeySlot KeySlot/*=new FPlayerMappableKeySlot()*/,FModifyContextOptions Options/*=new FModifyContextOptions()*/) { return default; }
 	///<summary>Removes player mapped key in the KeySlot for mapping of MappingName.</summary>
-	public virtual int K2_RemovePlayerMappedKeyInSlot(string MappingName,FPlayerMappableKeySlot KeySlot/*=new FPlayerMappableKeySlot()*/,FModifyContextOptions Options/*=new FModifyContextOptions()*/) { return default; }
+	public virtual int K2_RemovePlayerMappedKeyInSlot(FName MappingName,FPlayerMappableKeySlot KeySlot/*=new FPlayerMappableKeySlot()*/,FModifyContextOptions Options/*=new FModifyContextOptions()*/) { return default; }
 	///<summary>Removes all player mapped keys for mapping of MappingName.</summary>
-	public virtual int RemoveAllPlayerMappedKeysForMapping(string MappingName,FModifyContextOptions Options/*=new FModifyContextOptions()*/) { return default; }
+	public virtual int RemoveAllPlayerMappedKeysForMapping(FName MappingName,FModifyContextOptions Options/*=new FModifyContextOptions()*/) { return default; }
 	///<summary>Get the player mapped key in first slot to the given mapping name. If there is not a player mapped key, then this will return</summary>
-	public virtual FKey K2_GetPlayerMappedKeyInSlot(string MappingName,FPlayerMappableKeySlot KeySlot/*=new FPlayerMappableKeySlot()*/) { return default; }
+	public virtual FKey K2_GetPlayerMappedKeyInSlot(FName MappingName,FPlayerMappableKeySlot KeySlot/*=new FPlayerMappableKeySlot()*/) { return default; }
 	///<summary>Get all the player mapped keys to the given mapping name. If there is not a player mapped key, then this will return</summary>
-	public virtual TArray<FKey> GetAllPlayerMappedKeys(string MappingName) { return default; }
+	public virtual TArray<FKey> GetAllPlayerMappedKeys(FName MappingName) { return default; }
 	///<summary>Remove All PlayerMappedKeys</summary>
 	public virtual void RemoveAllPlayerMappedKeys(FModifyContextOptions Options/*=new FModifyContextOptions()*/) {}
 	///<summary>Adds all the input mapping contexts inside of this mappable config.</summary>

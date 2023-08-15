@@ -14,7 +14,7 @@ public partial class UCustomizableObject : UObject {
 	///<summary>List of Materials referenced by this or any child customizable object.</summary>
 	public TArray<TSoftObjectPtr<UMaterialInterface>> ReferencedMaterials;
 	///<summary>List of Material slot names for the materials referenced by this or any child customizable object.</summary>
-	public TArray<string> ReferencedMaterialSlotNames;
+	public TArray<FName> ReferencedMaterialSlotNames;
 	///<summary>List of skeletons referenced by any of the parts of this customizable object.</summary>
 	public TArray<TSoftObjectPtr<USkeleton>> ReferencedSkeletons;
 	///<summary>LODSettings</summary>

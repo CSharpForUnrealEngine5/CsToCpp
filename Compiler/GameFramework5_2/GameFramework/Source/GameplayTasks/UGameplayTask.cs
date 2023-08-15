@@ -10,7 +10,7 @@ public partial class UGameplayTask : UObject {
 	///<summary>Called explicitly to end the task (usually by the task itself). Calls OnDestroy.</summary>
 	public void EndTask() {}
 	///<summary>This name allows us to find the task later so that we can end it.</summary>
-	public string InstanceName;
+	public FName InstanceName;
 	///<summary>ResourceOverlapPolicy</summary>
 	public ETaskResourceOverlapPolicy ResourceOverlapPolicy;
 	///<summary>child task instance</summary>

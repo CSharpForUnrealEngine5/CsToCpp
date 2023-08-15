@@ -142,7 +142,7 @@ public partial class UKismetSystemLibrary : UBlueprintFunctionLibrary {
 	///<summary>Creates a literal bool</summary>
 	public static bool MakeLiteralBool(bool Value) { return default; }
 	///<summary>Creates a literal name</summary>
-	public static string MakeLiteralName(string Value) { return default; }
+	public static FName MakeLiteralName(FName Value) { return default; }
 	///<summary>Creates a literal byte</summary>
 	public static byte MakeLiteralByte(byte Value) { return default; }
 	///<summary>Creates a literal string</summary>
@@ -152,9 +152,9 @@ public partial class UKismetSystemLibrary : UBlueprintFunctionLibrary {
 	///<summary>Prints a string to the log</summary>
 	public static void LogString(string InString/*=new FString(TEXT("Hello"))*/,bool bPrintToLog/*=true*/) {}
 	///<summary>Prints a string to the log, and optionally, to the screen</summary>
-	public static void PrintString(UObject WorldContextObject,string InString/*=new FString(TEXT("Hello"))*/,bool bPrintToScreen/*=true*/,bool bPrintToLog/*=true*/,FLinearColor TextColor/*=new FLinearColor(0.0,0.66,1.0)*/,float Duration/*=2.0f*/,string Key/*=NAME_None*/) {}
+	public static void PrintString(UObject WorldContextObject,string InString/*=new FString(TEXT("Hello"))*/,bool bPrintToScreen/*=true*/,bool bPrintToLog/*=true*/,FLinearColor TextColor/*=new FLinearColor(0.0,0.66,1.0)*/,float Duration/*=2.0f*/,FName Key/*=NAME_None*/) {}
 	///<summary>Prints text to the log, and optionally, to the screen</summary>
-	public static void PrintText(UObject WorldContextObject,FText InText/*=INVTEXT("Hello")*/,bool bPrintToScreen/*=true*/,bool bPrintToLog/*=true*/,FLinearColor TextColor/*=new FLinearColor(0.0,0.66,1.0)*/,float Duration/*=2.0f*/,string Key/*=NAME_None*/) {}
+	public static void PrintText(UObject WorldContextObject,FText InText/*=INVTEXT("Hello")*/,bool bPrintToScreen/*=true*/,bool bPrintToLog/*=true*/,FLinearColor TextColor/*=new FLinearColor(0.0,0.66,1.0)*/,float Duration/*=2.0f*/,FName Key/*=NAME_None*/) {}
 	///<summary>Prints a warning string to the log and the screen. Meant to be used as a way to inform the user that they misused the node.</summary>
 	public static void PrintWarning(string InString) {}
 	///<summary>Sets the game window title</summary>
@@ -244,49 +244,49 @@ public partial class UKismetSystemLibrary : UBlueprintFunctionLibrary {
 	///<summary>Returns time until the timer will next execute its delegate.</summary>
 	public static float K2_GetTimerRemainingTime(UObject Object,string FunctionName) { return default; }
 	///<summary>Set an int32 property by name</summary>
-	public static void SetIntPropertyByName(UObject Object,string PropertyName,int Value) {}
+	public static void SetIntPropertyByName(UObject Object,FName PropertyName,int Value) {}
 	///<summary>Set an int64 property by name</summary>
-	public static void SetInt64PropertyByName(UObject Object,string PropertyName,long Value) {}
+	public static void SetInt64PropertyByName(UObject Object,FName PropertyName,long Value) {}
 	///<summary>Set an uint8 or enum property by name</summary>
-	public static void SetBytePropertyByName(UObject Object,string PropertyName,byte Value) {}
+	public static void SetBytePropertyByName(UObject Object,FName PropertyName,byte Value) {}
 	///<summary>Set a double property by name</summary>
-	public static void SetDoublePropertyByName(UObject Object,string PropertyName,double Value) {}
+	public static void SetDoublePropertyByName(UObject Object,FName PropertyName,double Value) {}
 	///<summary>Set a bool property by name</summary>
-	public static void SetBoolPropertyByName(UObject Object,string PropertyName,bool Value) {}
+	public static void SetBoolPropertyByName(UObject Object,FName PropertyName,bool Value) {}
 	///<summary>Set an OBJECT property by name</summary>
-	public static void SetObjectPropertyByName(UObject Object,string PropertyName,UObject Value) {}
+	public static void SetObjectPropertyByName(UObject Object,FName PropertyName,UObject Value) {}
 	///<summary>Set a CLASS property by name</summary>
-	public static void SetClassPropertyByName(UObject Object,string PropertyName,UClass Value) {}
+	public static void SetClassPropertyByName(UObject Object,FName PropertyName,UClass Value) {}
 	///<summary>Set an INTERFACE property by name</summary>
-	public static void SetInterfacePropertyByName(UObject Object,string PropertyName,object /*Value*/ Value) {}
+	public static void SetInterfacePropertyByName(UObject Object,FName PropertyName,object /*Value*/ Value) {}
 	///<summary>Set a NAME property by name</summary>
-	public static void SetNamePropertyByName(UObject Object,string PropertyName,string Value) {}
+	public static void SetNamePropertyByName(UObject Object,FName PropertyName,FName Value) {}
 	///<summary>Set a SOFTOBJECT property by name</summary>
-	public static void SetSoftObjectPropertyByName(UObject Object,string PropertyName,TSoftObjectPtr<UObject> Value) {}
+	public static void SetSoftObjectPropertyByName(UObject Object,FName PropertyName,TSoftObjectPtr<UObject> Value) {}
 	///<summary>Set a SOFTCLASS property by name</summary>
-	public static void SetSoftClassPropertyByName(UObject Object,string PropertyName,TSoftObjectPtr<UClass> Value) {}
+	public static void SetSoftClassPropertyByName(UObject Object,FName PropertyName,TSoftObjectPtr<UClass> Value) {}
 	///<summary>Set a STRING property by name</summary>
-	public static void SetStringPropertyByName(UObject Object,string PropertyName,string Value) {}
+	public static void SetStringPropertyByName(UObject Object,FName PropertyName,string Value) {}
 	///<summary>Set a TEXT property by name</summary>
-	public static void SetTextPropertyByName(UObject Object,string PropertyName,FText Value) {}
+	public static void SetTextPropertyByName(UObject Object,FName PropertyName,FText Value) {}
 	///<summary>Set a VECTOR property by name</summary>
-	public static void SetVectorPropertyByName(UObject Object,string PropertyName,FVector Value) {}
+	public static void SetVectorPropertyByName(UObject Object,FName PropertyName,FVector Value) {}
 	///<summary>Set a VECTOR3F property by name</summary>
-	public static void SetVector3fPropertyByName(UObject Object,string PropertyName,FVector3f Value) {}
+	public static void SetVector3fPropertyByName(UObject Object,FName PropertyName,FVector3f Value) {}
 	///<summary>Set a ROTATOR property by name</summary>
-	public static void SetRotatorPropertyByName(UObject Object,string PropertyName,FRotator Value) {}
+	public static void SetRotatorPropertyByName(UObject Object,FName PropertyName,FRotator Value) {}
 	///<summary>Set a LINEAR COLOR property by name</summary>
-	public static void SetLinearColorPropertyByName(UObject Object,string PropertyName,FLinearColor Value) {}
+	public static void SetLinearColorPropertyByName(UObject Object,FName PropertyName,FLinearColor Value) {}
 	///<summary>Set a COLOR property by name</summary>
-	public static void SetColorPropertyByName(UObject Object,string PropertyName,FColor Value) {}
+	public static void SetColorPropertyByName(UObject Object,FName PropertyName,FColor Value) {}
 	///<summary>Set a TRANSFORM property by name</summary>
-	public static void SetTransformPropertyByName(UObject Object,string PropertyName,FTransform Value) {}
+	public static void SetTransformPropertyByName(UObject Object,FName PropertyName,FTransform Value) {}
 	///<summary>Set a CollisionProfileName property by name</summary>
-	public static void SetCollisionProfileNameProperty(UObject Object,string PropertyName,FCollisionProfileName Value) {}
+	public static void SetCollisionProfileNameProperty(UObject Object,FName PropertyName,FCollisionProfileName Value) {}
 	///<summary>Set a SOFTOBJECT property by name</summary>
-	public static void SetFieldPathPropertyByName(UObject Object,string PropertyName,object Value) {}
+	public static void SetFieldPathPropertyByName(UObject Object,FName PropertyName,object Value) {}
 	///<summary>Set a custom structure property by name</summary>
-	public static void SetStructurePropertyByName(UObject Object,string PropertyName,FGenericStruct Value) {}
+	public static void SetStructurePropertyByName(UObject Object,FName PropertyName,FGenericStruct Value) {}
 	///<summary>Returns an array of actors that overlap the given sphere.</summary>
 	public static bool SphereOverlapActors(UObject WorldContextObject,FVector SpherePos,float SphereRadius,TArray<EObjectTypeQuery> ObjectTypes,UClass ActorClassFilter,TArray<AActor> ActorsToIgnore,TArray<AActor> OutActors) { return default; }
 	///<summary>Returns an array of components that overlap the given sphere.</summary>
@@ -336,21 +336,21 @@ public partial class UKismetSystemLibrary : UBlueprintFunctionLibrary {
 	///<summary>Sweeps a capsule along the given line and returns all hits encountered.</summary>
 	public static bool CapsuleTraceMultiForObjects(UObject WorldContextObject,FVector Start,FVector End,float Radius,float HalfHeight,TArray<EObjectTypeQuery> ObjectTypes,bool bTraceComplex,TArray<AActor> ActorsToIgnore,EDrawDebugTrace DrawDebugType,TArray<FHitResult> OutHits,bool bIgnoreSelf,FLinearColor TraceColor/*=FLinearColor.Red*/,FLinearColor TraceHitColor/*=FLinearColor.Green*/,float DrawTime/*=5.0f*/) { return default; }
 	///<summary>Trace a ray against the world using a specific profile and return the first blocking hit</summary>
-	public static bool LineTraceSingleByProfile(UObject WorldContextObject,FVector Start,FVector End,string ProfileName,bool bTraceComplex,TArray<AActor> ActorsToIgnore,EDrawDebugTrace DrawDebugType,FHitResult OutHit,bool bIgnoreSelf,FLinearColor TraceColor/*=FLinearColor.Red*/,FLinearColor TraceHitColor/*=FLinearColor.Green*/,float DrawTime/*=5.0f*/) { return default; }
+	public static bool LineTraceSingleByProfile(UObject WorldContextObject,FVector Start,FVector End,FName ProfileName,bool bTraceComplex,TArray<AActor> ActorsToIgnore,EDrawDebugTrace DrawDebugType,FHitResult OutHit,bool bIgnoreSelf,FLinearColor TraceColor/*=FLinearColor.Red*/,FLinearColor TraceHitColor/*=FLinearColor.Green*/,float DrawTime/*=5.0f*/) { return default; }
 	///<summary>Trace a ray against the world using a specific profile and return overlapping hits and then first blocking hit</summary>
-	public static bool LineTraceMultiByProfile(UObject WorldContextObject,FVector Start,FVector End,string ProfileName,bool bTraceComplex,TArray<AActor> ActorsToIgnore,EDrawDebugTrace DrawDebugType,TArray<FHitResult> OutHits,bool bIgnoreSelf,FLinearColor TraceColor/*=FLinearColor.Red*/,FLinearColor TraceHitColor/*=FLinearColor.Green*/,float DrawTime/*=5.0f*/) { return default; }
+	public static bool LineTraceMultiByProfile(UObject WorldContextObject,FVector Start,FVector End,FName ProfileName,bool bTraceComplex,TArray<AActor> ActorsToIgnore,EDrawDebugTrace DrawDebugType,TArray<FHitResult> OutHits,bool bIgnoreSelf,FLinearColor TraceColor/*=FLinearColor.Red*/,FLinearColor TraceHitColor/*=FLinearColor.Green*/,float DrawTime/*=5.0f*/) { return default; }
 	///<summary>Sweep a sphere against the world and return the first blocking hit using a specific profile</summary>
-	public static bool SphereTraceSingleByProfile(UObject WorldContextObject,FVector Start,FVector End,float Radius,string ProfileName,bool bTraceComplex,TArray<AActor> ActorsToIgnore,EDrawDebugTrace DrawDebugType,FHitResult OutHit,bool bIgnoreSelf,FLinearColor TraceColor/*=FLinearColor.Red*/,FLinearColor TraceHitColor/*=FLinearColor.Green*/,float DrawTime/*=5.0f*/) { return default; }
+	public static bool SphereTraceSingleByProfile(UObject WorldContextObject,FVector Start,FVector End,float Radius,FName ProfileName,bool bTraceComplex,TArray<AActor> ActorsToIgnore,EDrawDebugTrace DrawDebugType,FHitResult OutHit,bool bIgnoreSelf,FLinearColor TraceColor/*=FLinearColor.Red*/,FLinearColor TraceHitColor/*=FLinearColor.Green*/,float DrawTime/*=5.0f*/) { return default; }
 	///<summary>Sweep a sphere against the world and return all initial overlaps using a specific profile, then overlapping hits and then first blocking hit</summary>
-	public static bool SphereTraceMultiByProfile(UObject WorldContextObject,FVector Start,FVector End,float Radius,string ProfileName,bool bTraceComplex,TArray<AActor> ActorsToIgnore,EDrawDebugTrace DrawDebugType,TArray<FHitResult> OutHits,bool bIgnoreSelf,FLinearColor TraceColor/*=FLinearColor.Red*/,FLinearColor TraceHitColor/*=FLinearColor.Green*/,float DrawTime/*=5.0f*/) { return default; }
+	public static bool SphereTraceMultiByProfile(UObject WorldContextObject,FVector Start,FVector End,float Radius,FName ProfileName,bool bTraceComplex,TArray<AActor> ActorsToIgnore,EDrawDebugTrace DrawDebugType,TArray<FHitResult> OutHits,bool bIgnoreSelf,FLinearColor TraceColor/*=FLinearColor.Red*/,FLinearColor TraceHitColor/*=FLinearColor.Green*/,float DrawTime/*=5.0f*/) { return default; }
 	///<summary>Sweep a box against the world and return the first blocking hit using a specific profile</summary>
-	public static bool BoxTraceSingleByProfile(UObject WorldContextObject,FVector Start,FVector End,FVector HalfSize,FRotator Orientation,string ProfileName,bool bTraceComplex,TArray<AActor> ActorsToIgnore,EDrawDebugTrace DrawDebugType,FHitResult OutHit,bool bIgnoreSelf,FLinearColor TraceColor/*=FLinearColor.Red*/,FLinearColor TraceHitColor/*=FLinearColor.Green*/,float DrawTime/*=5.0f*/) { return default; }
+	public static bool BoxTraceSingleByProfile(UObject WorldContextObject,FVector Start,FVector End,FVector HalfSize,FRotator Orientation,FName ProfileName,bool bTraceComplex,TArray<AActor> ActorsToIgnore,EDrawDebugTrace DrawDebugType,FHitResult OutHit,bool bIgnoreSelf,FLinearColor TraceColor/*=FLinearColor.Red*/,FLinearColor TraceHitColor/*=FLinearColor.Green*/,float DrawTime/*=5.0f*/) { return default; }
 	///<summary>Sweep a box against the world and return all initial overlaps using a specific profile, then overlapping hits and then first blocking hit</summary>
-	public static bool BoxTraceMultiByProfile(UObject WorldContextObject,FVector Start,FVector End,FVector HalfSize,FRotator Orientation,string ProfileName,bool bTraceComplex,TArray<AActor> ActorsToIgnore,EDrawDebugTrace DrawDebugType,TArray<FHitResult> OutHits,bool bIgnoreSelf,FLinearColor TraceColor/*=FLinearColor.Red*/,FLinearColor TraceHitColor/*=FLinearColor.Green*/,float DrawTime/*=5.0f*/) { return default; }
+	public static bool BoxTraceMultiByProfile(UObject WorldContextObject,FVector Start,FVector End,FVector HalfSize,FRotator Orientation,FName ProfileName,bool bTraceComplex,TArray<AActor> ActorsToIgnore,EDrawDebugTrace DrawDebugType,TArray<FHitResult> OutHits,bool bIgnoreSelf,FLinearColor TraceColor/*=FLinearColor.Red*/,FLinearColor TraceHitColor/*=FLinearColor.Green*/,float DrawTime/*=5.0f*/) { return default; }
 	///<summary>Sweep a capsule against the world and return the first blocking hit using a specific profile</summary>
-	public static bool CapsuleTraceSingleByProfile(UObject WorldContextObject,FVector Start,FVector End,float Radius,float HalfHeight,string ProfileName,bool bTraceComplex,TArray<AActor> ActorsToIgnore,EDrawDebugTrace DrawDebugType,FHitResult OutHit,bool bIgnoreSelf,FLinearColor TraceColor/*=FLinearColor.Red*/,FLinearColor TraceHitColor/*=FLinearColor.Green*/,float DrawTime/*=5.0f*/) { return default; }
+	public static bool CapsuleTraceSingleByProfile(UObject WorldContextObject,FVector Start,FVector End,float Radius,float HalfHeight,FName ProfileName,bool bTraceComplex,TArray<AActor> ActorsToIgnore,EDrawDebugTrace DrawDebugType,FHitResult OutHit,bool bIgnoreSelf,FLinearColor TraceColor/*=FLinearColor.Red*/,FLinearColor TraceHitColor/*=FLinearColor.Green*/,float DrawTime/*=5.0f*/) { return default; }
 	///<summary>Sweep a capsule against the world and return all initial overlaps using a specific profile, then overlapping hits and then first blocking hit</summary>
-	public static bool CapsuleTraceMultiByProfile(UObject WorldContextObject,FVector Start,FVector End,float Radius,float HalfHeight,string ProfileName,bool bTraceComplex,TArray<AActor> ActorsToIgnore,EDrawDebugTrace DrawDebugType,TArray<FHitResult> OutHits,bool bIgnoreSelf,FLinearColor TraceColor/*=FLinearColor.Red*/,FLinearColor TraceHitColor/*=FLinearColor.Green*/,float DrawTime/*=5.0f*/) { return default; }
+	public static bool CapsuleTraceMultiByProfile(UObject WorldContextObject,FVector Start,FVector End,float Radius,float HalfHeight,FName ProfileName,bool bTraceComplex,TArray<AActor> ActorsToIgnore,EDrawDebugTrace DrawDebugType,TArray<FHitResult> OutHits,bool bIgnoreSelf,FLinearColor TraceColor/*=FLinearColor.Red*/,FLinearColor TraceHitColor/*=FLinearColor.Green*/,float DrawTime/*=5.0f*/) { return default; }
 	///<summary>Returns an array of unique actors represented by the given list of components.</summary>
 	public static void GetActorListFromComponentList(TArray<UPrimitiveComponent> ComponentList,UClass ActorClassFilter,TArray<AActor> OutActorList) {}
 	///<summary>Draw a debug line</summary>
@@ -488,9 +488,9 @@ public partial class UKismetSystemLibrary : UBlueprintFunctionLibrary {
 	///<summary>Returns true if running unattended (-unattended is on the command line)</summary>
 	public static bool IsUnattended() { return default; }
 	///<summary>Attempts to retrieve the value of a named property from the given object.</summary>
-	public static bool GetEditorProperty(UObject Object,string PropertyName,int PropertyValue) { return default; }
+	public static bool GetEditorProperty(UObject Object,FName PropertyName,int PropertyValue) { return default; }
 	///<summary>Attempts to set the value of a named property on the given object.</summary>
-	public static bool SetEditorProperty(UObject Object,string PropertyName,int PropertyValue,EPropertyAccessChangeNotifyMode ChangeNotifyMode) { return default; }
+	public static bool SetEditorProperty(UObject Object,FName PropertyName,int PropertyValue,EPropertyAccessChangeNotifyMode ChangeNotifyMode) { return default; }
 	///<summary>Begin a new undo transaction. An undo transaction is defined as all actions which take place when the user selects &quot;undo&quot; a single time.</summary>
 	public static int BeginTransaction(string Context,FText Description,UObject PrimaryObject) { return default; }
 	///<summary>Attempt to end the current undo transaction. Only successful if the transaction&#39;s action counter is 1.</summary>
@@ -540,11 +540,11 @@ public partial class UKismetSystemLibrary : UBlueprintFunctionLibrary {
 	///<summary>Unloads a primary asset, which allows it to be garbage collected if nothing else is referencing it</summary>
 	public static void UnloadPrimaryAssetList(TArray<FPrimaryAssetId> PrimaryAssetIdList) {}
 	///<summary>Returns the list of loaded bundles for a given Primary Asset. This will return false if the asset is not loaded at all.</summary>
-	public static bool GetCurrentBundleState(FPrimaryAssetId PrimaryAssetId,bool bForceCurrentState,TArray<string> OutBundles) { return default; }
+	public static bool GetCurrentBundleState(FPrimaryAssetId PrimaryAssetId,bool bForceCurrentState,TArray<FName> OutBundles) { return default; }
 	///<summary>Returns the list of assets that are in a given bundle state. Required Bundles must be specified</summary>
-	public static void GetPrimaryAssetsWithBundleState(TArray<string> RequiredBundles,TArray<string> ExcludedBundles,TArray<FPrimaryAssetType> ValidTypes,bool bForceCurrentState,TArray<FPrimaryAssetId> OutPrimaryAssetIdList) {}
+	public static void GetPrimaryAssetsWithBundleState(TArray<FName> RequiredBundles,TArray<FName> ExcludedBundles,TArray<FPrimaryAssetType> ValidTypes,bool bForceCurrentState,TArray<FPrimaryAssetId> OutPrimaryAssetIdList) {}
 	///<summary>Builds an ARFilter struct. You should be using ClassPaths and RecursiveClassPathsExclusionSet, ClassNames and RecursiveClassesExclusionSet are deprecated.</summary>
-	public static FARFilter MakeARFilter(TArray<string> PackageNames,TArray<string> PackagePaths,TArray<FSoftObjectPath> SoftObjectPaths,TArray<FTopLevelAssetPath> ClassPaths,TSet<FTopLevelAssetPath> RecursiveClassPathsExclusionSet,TArray<string> ClassNames,TSet<string> RecursiveClassesExclusionSet,bool bRecursivePaths/*=false*/,bool bRecursiveClasses/*=false*/,bool bIncludeOnlyOnDiskAssets/*=false*/) { return default; }
+	public static FARFilter MakeARFilter(TArray<FName> PackageNames,TArray<FName> PackagePaths,TArray<FSoftObjectPath> SoftObjectPaths,TArray<FTopLevelAssetPath> ClassPaths,TSet<FTopLevelAssetPath> RecursiveClassPathsExclusionSet,TArray<FName> ClassNames,TSet<FName> RecursiveClassesExclusionSet,bool bRecursivePaths/*=false*/,bool bRecursiveClasses/*=false*/,bool bIncludeOnlyOnDiskAssets/*=false*/) { return default; }
 	///<summary>Breaks an ARFilter struct into its component pieces. You should be using ClassPaths and RecursiveClassPathsExclusionSet from this node, ClassNames and RecursiveClassesExclusionSet are deprecated.</summary>
-	public static void BreakARFilter(FARFilter InARFilter,TArray<string> PackageNames,TArray<string> PackagePaths,TArray<FSoftObjectPath> SoftObjectPaths,TArray<FTopLevelAssetPath> ClassPaths,TSet<FTopLevelAssetPath> RecursiveClassPathsExclusionSet,TArray<string> ClassNames,TSet<string> RecursiveClassesExclusionSet,bool bRecursivePaths,bool bRecursiveClasses,bool bIncludeOnlyOnDiskAssets) {}
+	public static void BreakARFilter(FARFilter InARFilter,TArray<FName> PackageNames,TArray<FName> PackagePaths,TArray<FSoftObjectPath> SoftObjectPaths,TArray<FTopLevelAssetPath> ClassPaths,TSet<FTopLevelAssetPath> RecursiveClassPathsExclusionSet,TArray<FName> ClassNames,TSet<FName> RecursiveClassesExclusionSet,bool bRecursivePaths,bool bRecursiveClasses,bool bIncludeOnlyOnDiskAssets) {}
 }

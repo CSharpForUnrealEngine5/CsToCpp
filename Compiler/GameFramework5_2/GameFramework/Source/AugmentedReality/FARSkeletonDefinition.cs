@@ -4,6 +4,6 @@ using CSharpToCpp.Utilities;
 [CppInclude("ARTypes.h")]
 public partial struct FARSkeletonDefinition {
 	public int NumJoints;
-	public TArray<string> JointNames;
+	public TArray<FName> JointNames;
 	public TArray<int> ParentIndices;
 }

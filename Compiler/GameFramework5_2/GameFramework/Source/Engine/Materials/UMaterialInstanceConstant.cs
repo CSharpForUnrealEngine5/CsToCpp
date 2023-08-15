@@ -9,11 +9,11 @@ public partial class UMaterialInstanceConstant : UMaterialInstance {
 	///<summary>Physical material mask to use for this graphics material. Used for sounds, effects etc.</summary>
 	public UPhysicalMaterialMask PhysMaterialMask;
 	///<summary>Get the scalar (float) parameter value from an MIC</summary>
-	public float K2_GetScalarParameterValue(string ParameterName) { return default; }
+	public float K2_GetScalarParameterValue(FName ParameterName) { return default; }
 	///<summary>Get the MIC texture parameter value</summary>
-	public UTexture K2_GetTextureParameterValue(string ParameterName) { return default; }
+	public UTexture K2_GetTextureParameterValue(FName ParameterName) { return default; }
 	///<summary>Get the MIC vector parameter value</summary>
-	public FLinearColor K2_GetVectorParameterValue(string ParameterName) { return default; }
+	public FLinearColor K2_GetVectorParameterValue(FName ParameterName) { return default; }
 	///<summary>Set an override material which will be used when rendering with nanite.</summary>
 	public void SetNaniteOverrideMaterial(bool bInEnableOverride,UMaterialInterface InOverrideMaterial) {}
 }

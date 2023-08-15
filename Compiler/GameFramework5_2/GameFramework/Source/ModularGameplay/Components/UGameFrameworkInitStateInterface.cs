@@ -4,7 +4,7 @@ using CSharpToCpp.Utilities;
 public partial class UGameFrameworkInitStateInterface : UInterface {
 	public static UClass StaticClass() {return default;}
 	///<summary>Returns the feature this object implements, this interface is only meant for simple objects with a single feature like Actor</summary>
-	public virtual string GetFeatureName() { return default; }
+	public virtual FName GetFeatureName() { return default; }
 	///<summary>Returns the current feature state of this object, the default behavior is to query the manager</summary>
 	public virtual FGameplayTag GetInitState() { return default; }
 	///<summary>Checks the component manager to see if we have already reached the desired state or a later one</summary>

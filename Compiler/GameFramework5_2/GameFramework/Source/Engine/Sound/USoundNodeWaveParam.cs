@@ -5,5 +5,5 @@ using CSharpToCpp.Utilities;
 public partial class USoundNodeWaveParam : USoundNode {
 	public static UClass StaticClass() {return default;}
 	///<summary>The name of the wave parameter to use to look up the SoundWave we should play</summary>
-	public string WaveParameterName;
+	public FName WaveParameterName;
 }

@@ -5,7 +5,7 @@ using CSharpToCpp.Utilities;
 public partial struct FRemoteControlMIDIDevice {
 	public ERemoteControlMIDIDeviceSelector DeviceSelector;
 	public int ResolvedDeviceId;
-	public string DeviceName;
+	public FName DeviceName;
 	public int DeviceId;
 	public bool bDeviceIsAvailable;
 }

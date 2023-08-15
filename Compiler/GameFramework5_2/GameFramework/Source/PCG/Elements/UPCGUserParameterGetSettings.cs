@@ -7,5 +7,5 @@ public partial class UPCGUserParameterGetSettings : UPCGSettings {
 	///<summary>PropertyGuid</summary>
 	public FGuid PropertyGuid;
 	///<summary>PropertyName</summary>
-	public string PropertyName;
+	public FName PropertyName;
 }

@@ -7,7 +7,7 @@ public partial class UPCGAttributePropertySelectorBlueprintHelpers : UBlueprintF
 	///<summary>SetPointProperty</summary>
 	public static bool SetPointProperty(FPCGAttributePropertySelector Selector,EPCGPointProperties InPointProperty) { return default; }
 	///<summary>SetAttributeName</summary>
-	public static bool SetAttributeName(FPCGAttributePropertySelector Selector,string InAttributeName) { return default; }
+	public static bool SetAttributeName(FPCGAttributePropertySelector Selector,FName InAttributeName) { return default; }
 	///<summary>GetName</summary>
-	public static string GetName(FPCGAttributePropertySelector Selector) { return default; }
+	public static FName GetName(FPCGAttributePropertySelector Selector) { return default; }
 }

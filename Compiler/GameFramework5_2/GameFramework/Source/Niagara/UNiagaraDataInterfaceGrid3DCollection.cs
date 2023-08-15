@@ -14,7 +14,7 @@ public partial class UNiagaraDataInterfaceGrid3DCollection : UNiagaraDataInterfa
 	///<summary>bPreviewGrid</summary>
 	public bool bPreviewGrid;
 	///<summary>When enabled allows you to preview the grid in a debug display</summary>
-	public string PreviewAttribute;
+	public FName PreviewAttribute;
 	///<summary>Fills a texture render target 2d with the current data from the simulation</summary>
 	public virtual bool FillVolumeTexture(UNiagaraComponent Component,UVolumeTexture dest,int AttributeIndex) { return default; }
 	///<summary>FillRawVolumeTexture</summary>

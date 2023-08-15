@@ -7,7 +7,7 @@ public partial class UWidgetTree : UObject {
 	///<summary>The root widget of the tree</summary>
 	public UWidget RootWidget;
 	///<summary>Stores the widgets being assigned to named slots, these widgets will be slotted into the named slots of the</summary>
-	public TMap<string,UWidget> NamedSlotBindings;
+	public TMap<FName,UWidget> NamedSlotBindings;
 	///<summary>AllWidgets</summary>
 	public TArray<UWidget> AllWidgets;
 }

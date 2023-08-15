@@ -2,10 +2,10 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("NiagaraCommon.h")]
 public partial struct FNiagaraFunctionSignature {
-	public string Name;
+	public FName Name;
 	public TArray<FNiagaraVariable> Inputs;
 	public TArray<FNiagaraVariable> Outputs;
-	public string OwnerName;
+	public FName OwnerName;
 	public bool bRequiresContext;
 	public bool bRequiresExecPin;
 	public bool bMemberFunction;
@@ -23,7 +23,7 @@ public partial struct FNiagaraFunctionSignature {
 	public int ContextStageIndex;
 	public short RequiredInputs;
 	public short RequiredOutputs;
-	public TMap<string,string> FunctionSpecifiers;
+	public TMap<FName,FName> FunctionSpecifiers;
 	public FText Description;
 	public TMap<FNiagaraVariableBase,FText> InputDescriptions;
 	public TMap<FNiagaraVariableBase,FText> OutputDescriptions;

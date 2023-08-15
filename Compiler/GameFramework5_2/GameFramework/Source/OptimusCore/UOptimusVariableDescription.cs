@@ -6,7 +6,7 @@ public partial class UOptimusVariableDescription : UObject {
 	///<summary>An identifier that uniquely identifies this variable</summary>
 	public FGuid Guid;
 	///<summary>Name of the variable</summary>
-	public string VariableName;
+	public FName VariableName;
 	///<summary>The data type of the variable</summary>
 	public FOptimusDataTypeRef DataType;
 	///<summary>The default value for the variable.</summary>

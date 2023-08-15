@@ -6,5 +6,5 @@ public partial struct FStackEntryAddAction {
 	public UNiagaraScriptConversionContext ScriptConversionContext;
 	public UNiagaraClipboardFunction ClipboardFunction;
 	public FStackEntryID StackEntryID;
-	public string ModuleName;
+	public FName ModuleName;
 }

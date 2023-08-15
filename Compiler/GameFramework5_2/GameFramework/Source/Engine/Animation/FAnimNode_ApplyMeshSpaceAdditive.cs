@@ -8,7 +8,7 @@ public partial struct FAnimNode_ApplyMeshSpaceAdditive {
 	public float Alpha;
 	public bool bAlphaBoolEnabled;
 	public FInputAlphaBoolBlend AlphaBoolBlend;
-	public string AlphaCurveName;
+	public FName AlphaCurveName;
 	public FInputScaleBias AlphaScaleBias;
 	public FInputScaleBiasClamp AlphaScaleBiasClamp;
 	public int LODThreshold;

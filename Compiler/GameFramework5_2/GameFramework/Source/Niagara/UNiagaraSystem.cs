@@ -141,7 +141,7 @@ public partial class UNiagaraSystem : UFXSystemAsset {
 	///<summary>bNeedsGPUContextInitForDataInterfaces</summary>
 	public bool bNeedsGPUContextInitForDataInterfaces;
 	///<summary>UserDINamesReadInSystemScripts</summary>
-	public TArray<string> UserDINamesReadInSystemScripts;
+	public TArray<FName> UserDINamesReadInSystemScripts;
 	///<summary>ReferencedDataChannelDefinitions</summary>
 	public TArray<UNiagaraDataChannelDefinitions> ReferencedDataChannelDefinitions;
 	///<summary>Messages associated with the System asset.</summary>

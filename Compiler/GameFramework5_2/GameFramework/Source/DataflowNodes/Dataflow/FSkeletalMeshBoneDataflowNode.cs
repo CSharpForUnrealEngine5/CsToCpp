@@ -2,8 +2,8 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Dataflow/DataflowSkeletalMeshNodes.h")]
 public partial struct FSkeletalMeshBoneDataflowNode {
-	public string BoneName;
+	public FName BoneName;
 	public USkeletalMesh SkeletalMesh;
 	public int BoneIndexOut;
-	public string PropertyName;
+	public FName PropertyName;
 }

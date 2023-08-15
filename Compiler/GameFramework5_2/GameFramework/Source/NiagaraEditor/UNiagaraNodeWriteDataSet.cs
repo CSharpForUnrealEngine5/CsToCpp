@@ -4,5 +4,5 @@ using CSharpToCpp.Utilities;
 public partial class UNiagaraNodeWriteDataSet : UNiagaraNodeDataSetBase {
 	public static UClass StaticClass() {return default;}
 	///<summary>EventName</summary>
-	public string EventName;
+	public FName EventName;
 }

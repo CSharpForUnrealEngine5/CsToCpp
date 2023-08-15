@@ -5,7 +5,7 @@ using CSharpToCpp.Utilities;
 public partial class UNiagaraParameterCollection : UObject {
 	public static UClass StaticClass() {return default;}
 	///<summary>Namespace for this parameter collection. Is enforced to be unique across all parameter collections.</summary>
-	public string Namespace;
+	public FName Namespace;
 	///<summary>Parameters</summary>
 	public TArray<FNiagaraVariable> Parameters;
 	///<summary>Optional set of MPC that can drive scalar and vector parameters</summary>

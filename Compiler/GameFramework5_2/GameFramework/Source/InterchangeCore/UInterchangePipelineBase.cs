@@ -18,11 +18,11 @@ public partial class UInterchangePipelineBase : UObject {
 	///<summary>Non virtual helper to allow blueprint to implement event base function.</summary>
 	public void ScriptedSetReimportSourceIndex(UClass ReimportObjectClass,int SourceFileIndex) {}
 	///<summary>Return true if the property has valid states, false if no states was set for the property</summary>
-	public bool DoesPropertyStatesExist(string PropertyPath) { return default; }
+	public bool DoesPropertyStatesExist(FName PropertyPath) { return default; }
 	///<summary>Return a mutable property states Reference. Add the property states if it doesnt exist.</summary>
-	public FInterchangePipelinePropertyStates FindOrAddPropertyStates(string PropertyPath) { return default; }
+	public FInterchangePipelinePropertyStates FindOrAddPropertyStates(FName PropertyPath) { return default; }
 	///<summary>Results</summary>
 	public UInterchangeResultsContainer Results;
 	///<summary>Map of property path and lock status. Any properties that have a true lock status will be readonly when showing the import dialog.</summary>
-	public TMap<string,FInterchangePipelinePropertyStates> PropertiesStates;
+	public TMap<FName,FInterchangePipelinePropertyStates> PropertiesStates;
 }

@@ -4,7 +4,7 @@ using CSharpToCpp.Utilities;
 public partial class UWorldPartitionLevelStreamingPolicy : UWorldPartitionStreamingPolicy {
 	public static UClass StaticClass() {return default;}
 	///<summary>ActorToCellRemapping</summary>
-	public TMap<string,string> ActorToCellRemapping;
+	public TMap<FName,FName> ActorToCellRemapping;
 	///<summary>SubObjectsToCellRemapping</summary>
-	public TMap<string,string> SubObjectsToCellRemapping;
+	public TMap<FName,FName> SubObjectsToCellRemapping;
 }

@@ -5,5 +5,5 @@ using CSharpToCpp.Utilities;
 public partial class ULiveLinkVirtualSubjectSourceSettings : ULiveLinkSourceSettings {
 	public static UClass StaticClass() {return default;}
 	///<summary>SourceName</summary>
-	public string SourceName;
+	public FName SourceName;
 }

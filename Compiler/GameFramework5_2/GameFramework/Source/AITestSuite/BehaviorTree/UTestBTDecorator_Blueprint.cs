@@ -12,5 +12,5 @@ public partial class UTestBTDecorator_Blueprint : UBTDecorator_BlueprintBase {
 	///<summary>LogIndexCalculate</summary>
 	public int LogIndexCalculate;
 	///<summary>ObservingKeyName</summary>
-	public string ObservingKeyName;
+	public FName ObservingKeyName;
 }

@@ -7,7 +7,7 @@ public partial class UTakeRecorderLiveLinkSource : UTakeRecorderSource {
 	///<summary>Whether to perform key-reduction algorithms as part of the recording</summary>
 	public bool bReduceKeys;
 	///<summary>Name of the subject to record</summary>
-	public string SubjectName;
+	public FName SubjectName;
 	///<summary>Whether we should save subject settings in the the live link section. If not, we&#39;ll create one with subject information with no settings</summary>
 	public bool bSaveSubjectSettings;
 	///<summary>If true we use timecode even if not synchronized, else we use world time</summary>

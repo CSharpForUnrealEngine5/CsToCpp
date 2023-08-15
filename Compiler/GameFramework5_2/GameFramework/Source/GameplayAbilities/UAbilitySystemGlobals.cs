@@ -23,27 +23,27 @@ public partial class UAbilitySystemGlobals : UObject {
 	///<summary>TryActivate failed due to being dead</summary>
 	public FGameplayTag ActivateFailIsDeadTag;
 	///<summary>ActivateFailIsDeadName</summary>
-	public string ActivateFailIsDeadName;
+	public FName ActivateFailIsDeadName;
 	///<summary>TryActivate failed due to being on cooldown</summary>
 	public FGameplayTag ActivateFailCooldownTag;
 	///<summary>ActivateFailCooldownName</summary>
-	public string ActivateFailCooldownName;
+	public FName ActivateFailCooldownName;
 	///<summary>TryActivate failed due to not being able to spend costs</summary>
 	public FGameplayTag ActivateFailCostTag;
 	///<summary>ActivateFailCostName</summary>
-	public string ActivateFailCostName;
+	public FName ActivateFailCostName;
 	///<summary>TryActivate failed due to being blocked by other abilities</summary>
 	public FGameplayTag ActivateFailTagsBlockedTag;
 	///<summary>ActivateFailTagsBlockedName</summary>
-	public string ActivateFailTagsBlockedName;
+	public FName ActivateFailTagsBlockedName;
 	///<summary>TryActivate failed due to missing required tags</summary>
 	public FGameplayTag ActivateFailTagsMissingTag;
 	///<summary>ActivateFailTagsMissingName</summary>
-	public string ActivateFailTagsMissingName;
+	public FName ActivateFailTagsMissingName;
 	///<summary>Failed to activate due to invalid networking settings, this is designer error</summary>
 	public FGameplayTag ActivateFailNetworkingTag;
 	///<summary>ActivateFailNetworkingName</summary>
-	public string ActivateFailNetworkingName;
+	public FName ActivateFailNetworkingName;
 	///<summary>How many bits to use for &quot;number of tags&quot; in FMinimalReplicationTagCountMap::NetSerialize.</summary>
 	public int MinimalReplicationTagCountBits;
 	///<summary>TargetDataStructCache</summary>
@@ -53,7 +53,7 @@ public partial class UAbilitySystemGlobals : UObject {
 	///<summary>The default mod evaluation channel for the game</summary>
 	public EGameplayModEvaluationChannel DefaultGameplayModEvaluationChannel;
 	///<summary>Game-specified named aliases for gameplay mod evaluation channels; Only those with valid aliases are eligible to be used in a game (except Channel0, which is always valid)</summary>
-	public string GameplayModEvaluationChannelAliases;
+	public FName GameplayModEvaluationChannelAliases;
 	///<summary>Name of global curve table to use as the default for scalable floats, etc.</summary>
 	public FSoftObjectPath GlobalCurveTableName;
 	///<summary>GlobalCurveTable</summary>

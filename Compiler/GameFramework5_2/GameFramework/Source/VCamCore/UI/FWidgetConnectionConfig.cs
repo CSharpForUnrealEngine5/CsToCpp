@@ -3,5 +3,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("UI/Switcher/WidgetConnectionConfig.h")]
 public partial struct FWidgetConnectionConfig {
 	public FVCamChildWidgetReference Widget;
-	public TMap<string,FVCamConnectionTargetSettings> ConnectionTargets;
+	public TMap<FName,FVCamConnectionTargetSettings> ConnectionTargets;
 }

@@ -11,7 +11,7 @@ public partial class UNiagaraDataInterfaceSkeletalMesh : UNiagaraDataInterface {
 	///<summary>The source actor from which to sample. Takes precedence over the direct mesh. Note that this can only be set when used as a user variable on a component in the world.</summary>
 	public TSoftObjectPtr<AActor> SoftSourceActor;
 	///<summary>If defined, the supplied tags will be used to identify a valid component</summary>
-	public TArray<string> ComponentTags;
+	public TArray<FName> ComponentTags;
 	///<summary>Source_DEPRECATED</summary>
 	public AActor Source_DEPRECATED;
 	///<summary>The source component from which to sample. Takes precedence over the direct mesh. Not exposed to the user, only indirectly accessible from blueprints.</summary>
@@ -21,15 +21,15 @@ public partial class UNiagaraDataInterfaceSkeletalMesh : UNiagaraDataInterface {
 	///<summary>Selects which skinning mode to use, for most cases Skin On The Fly will cover your requirements, see individual tooltips for more information.</summary>
 	public ENDISkeletalMesh_SkinningMode SkinningMode;
 	///<summary>Sampling regions on the mesh from which to sample. Leave this empty to sample from the whole mesh.</summary>
-	public TArray<string> SamplingRegions;
+	public TArray<FName> SamplingRegions;
 	///<summary>If no regions are specified, we&#39;ll sample the whole mesh at this LODIndex. -1 indicates to use the last LOD.</summary>
 	public int WholeMeshLOD;
 	///<summary>Set of filtered bones that can be used for sampling. Select from these with GetFilteredBoneAt and RandomFilteredBone.</summary>
-	public TArray<string> FilteredBones;
+	public TArray<FName> FilteredBones;
 	///<summary>Set of filtered sockets that can be used for sampling. Select from these with GetFilteredSocketAt and RandomFilteredSocket.</summary>
-	public TArray<string> FilteredSockets;
+	public TArray<FName> FilteredSockets;
 	///<summary>Optionally remove a single bone from Random / Random Unfiltered access.</summary>
-	public string ExcludeBoneName;
+	public FName ExcludeBoneName;
 	///<summary>bExcludeBone</summary>
 	public bool bExcludeBone;
 	///<summary>UvSetIndex</summary>

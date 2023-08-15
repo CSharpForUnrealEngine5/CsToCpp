@@ -5,7 +5,7 @@ using CSharpToCpp.Utilities;
 public partial class UPolygroupLayersProperties : UInteractiveToolPropertySet {
 	public static UClass StaticClass() {return default;}
 	///<summary>Select PolyGroup layer to use.</summary>
-	public string ActiveGroupLayer;
+	public FName ActiveGroupLayer;
 	///<summary>Provides set of available group layers</summary>
 	public TArray<string> GetGroupLayersFunc() { return default; }
 	///<summary>internal list used to implement above</summary>

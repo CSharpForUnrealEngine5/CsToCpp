@@ -8,7 +8,7 @@ public partial struct FMovieSceneSkeletalAnimationParams {
 	public FFrameNumber EndFrameOffset;
 	public float PlayRate;
 	public bool bReverse;
-	public string SlotName;
+	public FName SlotName;
 	public UMirrorDataTable MirrorDataTable;
 	public FMovieSceneFloatChannel Weight;
 	public bool bSkipAnimNotifiers;

@@ -7,7 +7,7 @@ public partial struct FSkeletalMeshLODInfo {
 	public float LODHysteresis;
 	public TArray<int> LODMaterialMap;
 	public TArray<bool> bEnableShadowCasting_DEPRECATED;
-	public TArray<string> RemovedBones_DEPRECATED;
+	public TArray<FName> RemovedBones_DEPRECATED;
 	public FSkeletalMeshBuildSettings BuildSettings;
 	public FSkeletalMeshOptimizationSettings ReductionSettings;
 	public TArray<FBoneReference> BonesToRemove;

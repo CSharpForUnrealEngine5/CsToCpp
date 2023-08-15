@@ -13,7 +13,7 @@ public partial class UPCGCreateSplineSettings : UPCGSettings {
 	///<summary>bApplyCustomTangents</summary>
 	public bool bApplyCustomTangents;
 	///<summary>ArriveTangentAttribute</summary>
-	public string ArriveTangentAttribute;
+	public FName ArriveTangentAttribute;
 	///<summary>LeaveTangentAttribute</summary>
-	public string LeaveTangentAttribute;
+	public FName LeaveTangentAttribute;
 }

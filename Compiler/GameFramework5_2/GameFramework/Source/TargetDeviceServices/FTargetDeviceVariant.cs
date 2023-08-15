@@ -4,9 +4,9 @@ using CSharpToCpp.Utilities;
 [CppInclude("TargetDeviceServiceMessages.h")]
 public partial struct FTargetDeviceVariant {
 	public string DeviceID;
-	public string VariantName;
+	public FName VariantName;
 	public string TargetPlatformName;
-	public string TargetPlatformId;
-	public string VanillaPlatformId;
+	public FName TargetPlatformId;
+	public FName VanillaPlatformId;
 	public string PlatformDisplayName;
 }

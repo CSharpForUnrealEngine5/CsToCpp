@@ -25,7 +25,7 @@ public partial class UQuartzClockHandle : UObject {
 	///<summary>Returns the amount of time, in seconds, the clock has been running. Caution: due to latency, this will not be perfectly accurate</summary>
 	public float GetEstimatedRunTime(UObject WorldContextObject) { return default; }
 	///<summary>&quot;other&quot; clock manipulation</summary>
-	public void StartOtherClock(UObject WorldContextObject,string OtherClockName,FQuartzQuantizationBoundary InQuantizationBoundary,FOnQuartzCommandEventBP InDelegate) {}
+	public void StartOtherClock(UObject WorldContextObject,FName OtherClockName,FQuartzQuantizationBoundary InQuantizationBoundary,FOnQuartzCommandEventBP InDelegate) {}
 	///<summary>Metronome subscription</summary>
 	public void SubscribeToQuantizationEvent(UObject WorldContextObject,EQuartzCommandQuantization InQuantizationBoundary,FOnQuartzMetronomeEventBP OnQuantizationEvent,UQuartzClockHandle ClockHandle) {}
 	///<summary>SubscribeToAllQuantizationEvents</summary>

@@ -29,7 +29,7 @@ public partial class UNiagaraScript : UNiagaraScriptBase {
 	///<summary>Use property in struct returned from GetScriptData() instead</summary>
 	public FText Category_DEPRECATED;
 	///<summary>Use property in struct returned from GetScriptData() instead</summary>
-	public TArray<string> ProvidedDependencies_DEPRECATED;
+	public TArray<FName> ProvidedDependencies_DEPRECATED;
 	///<summary>Use property in struct returned from GetScriptData() instead</summary>
 	public TArray<FNiagaraModuleDependency> RequiredDependencies_DEPRECATED;
 	///<summary>Use property in struct returned from GetScriptData() instead</summary>
@@ -59,7 +59,7 @@ public partial class UNiagaraScript : UNiagaraScriptBase {
 	///<summary>Deprecated, use LibraryVisibility instead.</summary>
 	public FText CollapsedViewFormat_DEPRECATED;
 	///<summary>Deprecated, use LibraryVisibility instead.</summary>
-	public TMap<string,string> ScriptMetaData_DEPRECATED;
+	public TMap<FName,string> ScriptMetaData_DEPRECATED;
 	///<summary>&#39;Source&#39; data/graphs for this script</summary>
 	public UNiagaraScriptSourceBase Source_DEPRECATED;
 	///<summary>RaiseOnGPUCompilationComplete</summary>

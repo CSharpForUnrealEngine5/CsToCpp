@@ -19,7 +19,7 @@ public partial class UMovieSceneSkeletalAnimationSection : UMovieSceneSection {
 	///<summary>bReverse_DEPRECATED</summary>
 	public bool bReverse_DEPRECATED;
 	///<summary>SlotName_DEPRECATED</summary>
-	public string SlotName_DEPRECATED;
+	public FName SlotName_DEPRECATED;
 	///<summary>Location offset applied before the matched offset</summary>
 	public FVector StartLocationOffset;
 	///<summary>Location offset applied after the matched offset</summary>
@@ -27,7 +27,7 @@ public partial class UMovieSceneSkeletalAnimationSection : UMovieSceneSection {
 	///<summary>bMatchWithPrevious</summary>
 	public bool bMatchWithPrevious;
 	///<summary>MatchedBoneName</summary>
-	public string MatchedBoneName;
+	public FName MatchedBoneName;
 	///<summary>Location offset determined by matching</summary>
 	public FVector MatchedLocationOffset;
 	///<summary>Rotation offset determined by matching</summary>

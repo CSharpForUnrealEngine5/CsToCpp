@@ -4,7 +4,7 @@ using CSharpToCpp.Utilities;
 public partial class UK2Node_ExecutePythonScript : UK2Node_CallFunction {
 	public static UClass StaticClass() {return default;}
 	///<summary>User-defined input pins</summary>
-	public TArray<string> Inputs;
+	public TArray<FName> Inputs;
 	///<summary>User-defined output pins</summary>
-	public TArray<string> Outputs;
+	public TArray<FName> Outputs;
 }

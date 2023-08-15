@@ -20,7 +20,7 @@ public partial class UTemplateProjectDefs : UObject {
 	///<summary>SortKey</summary>
 	public string SortKey;
 	///<summary>Categories</summary>
-	public TArray<string> Categories;
+	public TArray<FName> Categories;
 	///<summary>ClassTypes</summary>
 	public string ClassTypes;
 	///<summary>AssetTypes</summary>

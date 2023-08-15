@@ -26,7 +26,7 @@ public partial class UWidgetBlueprintLibrary : UBlueprintFunctionLibrary {
 	///<summary>Draws text.</summary>
 	public static void DrawText(FPaintContext Context,string InString,FVector2D Position,FLinearColor Tint/*=FLinearColor.White*/) {}
 	///<summary>Draws text.</summary>
-	public static void DrawTextFormatted(FPaintContext Context,FText Text,FVector2D Position,UFont Font,int FontSize/*=16*/,string FontTypeFace/*=new FName(TEXT("Regular"))*/,FLinearColor Tint/*=FLinearColor.White*/) {}
+	public static void DrawTextFormatted(FPaintContext Context,FText Text,FVector2D Position,UFont Font,int FontSize/*=16*/,FName FontTypeFace/*=new FName(TEXT("Regular"))*/,FLinearColor Tint/*=FLinearColor.White*/) {}
 	///<summary>The event reply to use when you choose to handle an event.  This will prevent the event</summary>
 	public static FEventReply Handled() { return default; }
 	///<summary>The event reply to use when you choose not to handle an event.</summary>
@@ -102,7 +102,7 @@ public partial class UWidgetBlueprintLibrary : UBlueprintFunctionLibrary {
 	///<summary>Apply color deficiency correction settings to the game window</summary>
 	public static void SetColorVisionDeficiencyType(EColorVisionDeficiency Type,float Severity,bool CorrectDeficiency,bool ShowCorrectionWithDeficiency) {}
 	///<summary>Loads or sets a hardware cursor from the content directory in the game.</summary>
-	public static bool SetHardwareCursor(UObject WorldContextObject,EMouseCursor CursorShape,string CursorName,FVector2D HotSpot) { return default; }
+	public static bool SetHardwareCursor(UObject WorldContextObject,EMouseCursor CursorShape,FName CursorName,FVector2D HotSpot) { return default; }
 	///<summary>SetWindowTitleBarState</summary>
 	public static void SetWindowTitleBarState(UWidget TitleBarContent,EWindowTitleBarMode Mode,bool bTitleBarDragEnabled,bool bWindowButtonsVisible,bool bTitleBarVisible) {}
 	///<summary>RestorePreviousWindowTitleBarState</summary>

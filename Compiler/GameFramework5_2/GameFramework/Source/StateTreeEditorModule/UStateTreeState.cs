@@ -5,7 +5,7 @@ using CSharpToCpp.Utilities;
 public partial class UStateTreeState : UObject {
 	public static UClass StaticClass() {return default;}
 	///<summary>~StateTree Builder API</summary>
-	public string Name;
+	public FName Name;
 	///<summary>Type</summary>
 	public EStateTreeStateType Type;
 	///<summary>LinkedSubtree</summary>

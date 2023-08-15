@@ -6,23 +6,23 @@ public partial class UQuartzSubsystem : UTickableWorldSubsystem {
 	///<summary>IsQuartzEnabled</summary>
 	public bool IsQuartzEnabled() { return default; }
 	///<summary>Clock Creation</summary>
-	public UQuartzClockHandle CreateNewClock(UObject WorldContextObject,string ClockName,FQuartzClockSettings InSettings,bool bOverrideSettingsIfClockExists/*=false*/,bool bUseAudioEngineClockManager/*=true*/) { return default; }
+	public UQuartzClockHandle CreateNewClock(UObject WorldContextObject,FName ClockName,FQuartzClockSettings InSettings,bool bOverrideSettingsIfClockExists/*=false*/,bool bUseAudioEngineClockManager/*=true*/) { return default; }
 	///<summary>delete an existing clock given its name</summary>
-	public void DeleteClockByName(UObject WorldContextObject,string ClockName) {}
+	public void DeleteClockByName(UObject WorldContextObject,FName ClockName) {}
 	///<summary>delete an existing clock given its clock handle</summary>
 	public void DeleteClockByHandle(UObject WorldContextObject,UQuartzClockHandle InClockHandle) {}
 	///<summary>get handle for existing clock</summary>
-	public UQuartzClockHandle GetHandleForClock(UObject WorldContextObject,string ClockName) { return default; }
+	public UQuartzClockHandle GetHandleForClock(UObject WorldContextObject,FName ClockName) { return default; }
 	///<summary>returns true if the clock exists</summary>
-	public bool DoesClockExist(UObject WorldContextObject,string ClockName) { return default; }
+	public bool DoesClockExist(UObject WorldContextObject,FName ClockName) { return default; }
 	///<summary>returns true if the clock is running</summary>
-	public bool IsClockRunning(UObject WorldContextObject,string ClockName) { return default; }
+	public bool IsClockRunning(UObject WorldContextObject,FName ClockName) { return default; }
 	///<summary>Returns the duration in seconds of the given Quantization Type</summary>
-	public float GetDurationOfQuantizationTypeInSeconds(UObject WorldContextObject,string ClockName,EQuartzCommandQuantization QuantizationType,float Multiplier/*=1.0f*/) { return default; }
+	public float GetDurationOfQuantizationTypeInSeconds(UObject WorldContextObject,FName ClockName,EQuartzCommandQuantization QuantizationType,float Multiplier/*=1.0f*/) { return default; }
 	///<summary>Retrieves a timestamp for the clock</summary>
-	public FQuartzTransportTimeStamp GetCurrentClockTimestamp(UObject WorldContextObject,string InClockName) { return default; }
+	public FQuartzTransportTimeStamp GetCurrentClockTimestamp(UObject WorldContextObject,FName InClockName) { return default; }
 	///<summary>Returns the amount of time, in seconds, the clock has been running. Caution: due to latency, this will not be perfectly accurate</summary>
-	public float GetEstimatedClockRunTime(UObject WorldContextObject,string InClockName) { return default; }
+	public float GetEstimatedClockRunTime(UObject WorldContextObject,FName InClockName) { return default; }
 	///<summary>latency data (Game thread -&gt; Audio Render Thread)</summary>
 	public float GetGameThreadToAudioRenderThreadAverageLatency(UObject WorldContextObject) { return default; }
 	///<summary>GetGameThreadToAudioRenderThreadMinLatency</summary>

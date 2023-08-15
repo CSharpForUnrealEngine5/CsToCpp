@@ -4,8 +4,8 @@ using CSharpToCpp.Utilities;
 [CppInclude("PhysicsControlActor.h")]
 public partial struct FInitialBodyModifier {
 	public AActor Actor;
-	public string MeshComponentName;
-	public string BoneName;
+	public FName MeshComponentName;
+	public FName BoneName;
 	public EPhysicsMovementType MovementType;
 	public float GravityMultiplier;
 	public FVector KinematicTargetPosition;

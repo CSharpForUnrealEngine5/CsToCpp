@@ -15,7 +15,7 @@ public partial class UPyTestObject : UObject {
 	///<summary>String</summary>
 	public string String;
 	///<summary>Name</summary>
-	public string Name;
+	public FName Name;
 	///<summary>Text</summary>
 	public FText Text;
 	///<summary>FieldPath</summary>

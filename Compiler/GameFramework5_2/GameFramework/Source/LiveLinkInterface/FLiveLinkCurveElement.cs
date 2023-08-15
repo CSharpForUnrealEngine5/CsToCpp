@@ -2,6 +2,6 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("LiveLinkTypes.h")]
 public partial struct FLiveLinkCurveElement {
-	public string CurveName;
+	public FName CurveName;
 	public float CurveValue;
 }

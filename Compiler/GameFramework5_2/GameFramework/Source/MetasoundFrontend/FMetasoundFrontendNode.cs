@@ -5,7 +5,7 @@ using CSharpToCpp.Utilities;
 public partial struct FMetasoundFrontendNode {
 	public FGuid ID;
 	public FGuid ClassID;
-	public string Name;
+	public FName Name;
 	public FMetasoundFrontendNodeInterface Interface;
 	public TArray<FMetasoundFrontendVertexLiteral> InputLiterals;
 	public FMetasoundFrontendNodeStyle Style;

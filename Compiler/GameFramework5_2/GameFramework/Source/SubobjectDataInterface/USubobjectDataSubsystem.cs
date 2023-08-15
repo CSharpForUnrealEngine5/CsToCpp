@@ -49,5 +49,5 @@ public partial class USubobjectDataSubsystem : UEngineSubsystem {
 	///<summary>CanPasteSubobjects</summary>
 	public bool CanPasteSubobjects(FSubobjectDataHandle RootHandle,UBlueprint BPContext/*=nullptr*/) { return default; }
 	///<summary>RenameSubobjectMemberVariable</summary>
-	public static void RenameSubobjectMemberVariable(UBlueprint BPContext,FSubobjectDataHandle InHandle,string NewName) {}
+	public static void RenameSubobjectMemberVariable(UBlueprint BPContext,FSubobjectDataHandle InHandle,FName NewName) {}
 }

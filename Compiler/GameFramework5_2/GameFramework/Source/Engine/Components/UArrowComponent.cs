@@ -17,7 +17,7 @@ public partial class UArrowComponent : UPrimitiveComponent {
 	///<summary>If true, don&#39;t show the arrow when EngineShowFlags.BillboardSprites is disabled.</summary>
 	public bool bTreatAsASprite;
 	///<summary>Sprite category that the arrow component belongs to, if being treated as a sprite. Value serves as a key into the localization file.</summary>
-	public string SpriteCategoryName_DEPRECATED;
+	public FName SpriteCategoryName_DEPRECATED;
 	///<summary>Sprite category information regarding the arrow component, if being treated as a sprite.</summary>
 	public FSpriteCategoryInfo SpriteInfo;
 	///<summary>If true, this arrow component is attached to a light actor</summary>

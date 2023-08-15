@@ -3,7 +3,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Description of an attribute</summary>
 [CppInclude("AnimGraphAttributes.h")]
 public partial struct FAnimGraphAttributeDesc {
-	public string Name;
+	public FName Name;
 	public FSlateBrush Icon;
 	public FText DisplayName;
 	public FText ToolTipText;

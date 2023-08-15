@@ -40,7 +40,7 @@ public partial class UTexture : UStreamableRenderAsset {
 	///<summary>How aggressively should any relevant lossy compression be applied. For compressors that support EncodeSpeed (i.e. Oodle), this is only</summary>
 	public ETextureLossyCompressionAmount LossyCompressionAmount;
 	///<summary>Oodle Texture SDK Version to encode with.  Enter &#39;latest&#39; to update; &#39;None&#39; preserves legacy encoding to avoid patches.</summary>
-	public string OodleTextureSdkVersion;
+	public FName OodleTextureSdkVersion;
 	///<summary>The maximum resolution for generated textures. A value of 0 means the maximum size for the format on each platform.</summary>
 	public int MaxTextureSize;
 	///<summary>The compression quality for generated ASTC textures (i.e. mobile platform textures).</summary>

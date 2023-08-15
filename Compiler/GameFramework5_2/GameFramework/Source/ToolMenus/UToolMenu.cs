@@ -4,25 +4,25 @@ using CSharpToCpp.Utilities;
 public partial class UToolMenu : UToolMenuBase {
 	public static UClass StaticClass() {return default;}
 	///<summary>InitMenu</summary>
-	public void InitMenu(FToolMenuOwner Owner,string Name,string Parent/*=NAME_None*/,EMultiBoxType Type/*=EMultiBoxType.Menu*/) {}
+	public void InitMenu(FToolMenuOwner Owner,FName Name,FName Parent/*=NAME_None*/,EMultiBoxType Type/*=EMultiBoxType.Menu*/) {}
 	///<summary>AddSectionScript</summary>
-	public void AddSectionScript(string SectionName,FText Label/*=new FText()*/,string InsertName/*=NAME_None*/,EToolMenuInsertType InsertType/*=EToolMenuInsertType.Default*/) {}
+	public void AddSectionScript(FName SectionName,FText Label/*=new FText()*/,FName InsertName/*=NAME_None*/,EToolMenuInsertType InsertType/*=EToolMenuInsertType.Default*/) {}
 	///<summary>AddDynamicSectionScript</summary>
-	public void AddDynamicSectionScript(string SectionName,UToolMenuSectionDynamic Object) {}
+	public void AddDynamicSectionScript(FName SectionName,UToolMenuSectionDynamic Object) {}
 	///<summary>AddMenuEntry</summary>
-	public void AddMenuEntry(string SectionName,FToolMenuEntry Args) {}
+	public void AddMenuEntry(FName SectionName,FToolMenuEntry Args) {}
 	///<summary>AddMenuEntryObject</summary>
 	public void AddMenuEntryObject(UToolMenuEntryScript InObject) {}
 	///<summary>AddSubMenuScript</summary>
-	public UToolMenu AddSubMenuScript(string Owner,string SectionName,string Name,FText Label,FText ToolTip/*=new FText()*/) { return default; }
+	public UToolMenu AddSubMenuScript(FName Owner,FName SectionName,FName Name,FText Label,FText ToolTip/*=new FText()*/) { return default; }
 	///<summary>MenuName</summary>
-	public string MenuName;
+	public FName MenuName;
 	///<summary>MenuParent</summary>
-	public string MenuParent;
+	public FName MenuParent;
 	///<summary>StyleName</summary>
-	public string StyleName;
+	public FName StyleName;
 	///<summary>TutorialHighlightName</summary>
-	public string TutorialHighlightName;
+	public FName TutorialHighlightName;
 	///<summary>MenuType</summary>
 	public EMultiBoxType MenuType;
 	///<summary>bShouldCleanupContextOnDestroy</summary>
@@ -48,5 +48,5 @@ public partial class UToolMenu : UToolMenuBase {
 	///<summary>SubMenuParent</summary>
 	public UToolMenu SubMenuParent;
 	///<summary>SubMenuSourceEntryName</summary>
-	public string SubMenuSourceEntryName;
+	public FName SubMenuSourceEntryName;
 }

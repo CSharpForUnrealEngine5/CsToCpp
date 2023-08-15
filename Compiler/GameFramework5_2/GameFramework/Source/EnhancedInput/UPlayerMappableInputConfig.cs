@@ -7,13 +7,13 @@ public partial class UPlayerMappableInputConfig : UPrimaryDataAsset {
 	///<summary>Get all the player mappable keys in this config.</summary>
 	public TArray<FEnhancedActionKeyMapping> GetPlayerMappableKeys() { return default; }
 	///<summary>Returns the action key mapping for the mapping that matches the given name</summary>
-	public FEnhancedActionKeyMapping GetMappingByName(string MappingName) { return default; }
+	public FEnhancedActionKeyMapping GetMappingByName(FName MappingName) { return default; }
 	///<summary>Returns all the keys mapped to a specific Input Action in this mapping config.</summary>
 	public TArray<FEnhancedActionKeyMapping> GetKeysBoundToAction(UInputAction InAction) { return default; }
 	///<summary>Resets this mappable config to use the keys</summary>
 	public void ResetToDefault() {}
 	///<summary>The unique name of this config that can be used when saving it</summary>
-	public string ConfigName;
+	public FName ConfigName;
 	///<summary>The display name that can be used</summary>
 	public FText ConfigDisplayName;
 	///<summary>A flag that can be used to mark this Input Config as deprecated to your player/designers.</summary>
@@ -25,7 +25,7 @@ public partial class UPlayerMappableInputConfig : UPrimaryDataAsset {
 	///<summary>Return all the Input Mapping contexts that</summary>
 	public TMap<UInputMappingContext,int> GetMappingContexts() { return default; }
 	///<summary>GetConfigName</summary>
-	public string GetConfigName() { return default; }
+	public FName GetConfigName() { return default; }
 	///<summary>GetDisplayName</summary>
 	public FText GetDisplayName() { return default; }
 	///<summary>IsDeprecated</summary>

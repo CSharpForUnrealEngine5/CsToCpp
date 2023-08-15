@@ -8,13 +8,13 @@ public partial class UMVVMEditorSubsystem : UEditorSubsystem {
 	///<summary>GetView</summary>
 	public UMVVMBlueprintView GetView(UWidgetBlueprint WidgetBlueprint) { return default; }
 	///<summary>AddViewModel</summary>
-	public string AddViewModel(UWidgetBlueprint WidgetBlueprint,UClass ViewModel) { return default; }
+	public FName AddViewModel(UWidgetBlueprint WidgetBlueprint,UClass ViewModel) { return default; }
 	///<summary>RemoveViewModel</summary>
-	public void RemoveViewModel(UWidgetBlueprint WidgetBlueprint,string ViewModel) {}
+	public void RemoveViewModel(UWidgetBlueprint WidgetBlueprint,FName ViewModel) {}
 	///<summary>VerifyViewModelRename</summary>
-	public bool VerifyViewModelRename(UWidgetBlueprint WidgetBlueprint,string ViewModel,string NewViewModel,FText OutError) { return default; }
+	public bool VerifyViewModelRename(UWidgetBlueprint WidgetBlueprint,FName ViewModel,FName NewViewModel,FText OutError) { return default; }
 	///<summary>RenameViewModel</summary>
-	public bool RenameViewModel(UWidgetBlueprint WidgetBlueprint,string ViewModel,string NewViewModel,FText OutError) { return default; }
+	public bool RenameViewModel(UWidgetBlueprint WidgetBlueprint,FName ViewModel,FName NewViewModel,FText OutError) { return default; }
 	///<summary>AddBinding</summary>
 	public FMVVMBlueprintViewBinding AddBinding(UWidgetBlueprint WidgetBlueprint) { return default; }
 	///<summary>RemoveBinding</summary>

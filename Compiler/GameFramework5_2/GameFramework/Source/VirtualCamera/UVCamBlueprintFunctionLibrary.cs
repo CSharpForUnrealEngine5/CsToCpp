@@ -38,9 +38,9 @@ public partial class UVCamBlueprintFunctionLibrary : UBlueprintFunctionLibrary {
 	///<summary>Load an asset through path.</summary>
 	public static UObject EditorLoadAsset(string AssetPath) { return default; }
 	///<summary>Modifies a UObject&#39;s metadata tags, adding a tag if the tag does not exist.</summary>
-	public static void ModifyObjectMetadataTags(UObject InObject,string InTag,string InValue) {}
+	public static void ModifyObjectMetadataTags(UObject InObject,FName InTag,string InValue) {}
 	///<summary>Retrieves UObject&#39;s metadata tags</summary>
-	public static TMap<string,string> GetObjectMetadataTags(UObject InObject) { return default; }
+	public static TMap<FName,string> GetObjectMetadataTags(UObject InObject) { return default; }
 	///<summary>Sort array of FAssetData by metadata timecode *</summary>
 	public static TArray<FAssetData> SortAssetsByTimecodeAssetData(TArray<FAssetData> LevelSequenceAssets) { return default; }
 	///<summary>Pilot the provided actor using editor scripting</summary>
@@ -52,7 +52,7 @@ public partial class UVCamBlueprintFunctionLibrary : UBlueprintFunctionLibrary {
 	///<summary>Converts a double framerate to a FFrameRate</summary>
 	public static FFrameRate ConvertStringToFrameRate(string InFrameRateString) { return default; }
 	///<summary>Returns true if the function was found &amp; executed correctly.</summary>
-	public static bool CallFunctionByName(UObject ObjPtr,string FunctionName) { return default; }
+	public static bool CallFunctionByName(UObject ObjPtr,FName FunctionName) { return default; }
 	///<summary>Sets the current game view</summary>
 	public static void EditorSetGameView(bool bIsToggled) {}
 	///<summary>Calculates auto focus</summary>

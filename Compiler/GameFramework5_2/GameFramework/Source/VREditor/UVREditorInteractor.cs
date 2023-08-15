@@ -9,13 +9,13 @@ public partial class UVREditorInteractor : UViewportInteractor {
 	///<summary>Sets up all components</summary>
 	public void SetupComponent(AActor OwningActor) {}
 	///<summary>@return Returns the type of HMD we&#39;re dealing with</summary>
-	public string GetHMDDeviceType() { return default; }
+	public FName GetHMDDeviceType() { return default; }
 	///<summary>Get the motioncontroller component of this interactor</summary>
 	public UMotionControllerComponent GetMotionControllerComponent() { return default; }
 	///<summary>Sets the EControllerHand for this motioncontroller</summary>
-	public void SetControllerHandSide(string InControllerHandSide) {}
+	public void SetControllerHandSide(FName InControllerHandSide) {}
 	///<summary>Sets the EControllerHand for this motioncontroller</summary>
-	public string GetControllerHandSide() { return default; }
+	public FName GetControllerHandSide() { return default; }
 	///<summary>Returns the slide delta for pushing and pulling objects. Needs to be implemented by derived classes (e.g. touchpad for vive controller or scrollweel for mouse )</summary>
 	public float GetSlideDelta() { return default; }
 	///<summary>Set if we want to force to show the laser</summary>
@@ -81,7 +81,7 @@ public partial class UVREditorInteractor : UViewportInteractor {
 	///<summary>What was our previous controller type</summary>
 	public EControllerType OverrideControllerType;
 	///<summary>Right or left hand</summary>
-	public string ControllerMotionSource;
+	public FName ControllerMotionSource;
 	///<summary>The mode that owns this interactor</summary>
 	public UVREditorMode VRMode;
 }

@@ -11,7 +11,7 @@ public partial class UMovieScene : UMovieSceneSignedObject {
 	///<summary>Tracks bound to possessed or spawned objects</summary>
 	public TArray<FMovieSceneBinding> ObjectBindings;
 	///<summary>Map of persistent tagged bindings for this sequence</summary>
-	public TMap<string,FMovieSceneObjectBindingIDs> BindingGroups;
+	public TMap<FName,FMovieSceneObjectBindingIDs> BindingGroups;
 	///<summary>Tracks which are not bound to spawned or possessed objects</summary>
 	public TArray<UMovieSceneTrack> Tracks;
 	///<summary>The camera cut track is a specialized track for switching between cameras on a cinematic</summary>

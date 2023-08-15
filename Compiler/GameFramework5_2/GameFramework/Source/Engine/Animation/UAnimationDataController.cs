@@ -26,17 +26,17 @@ public partial class UAnimationDataController : UInterface {
 	///<summary>Sets the frame rate according to which the bone animation is expected to be sampled. Broadcasts a EAnimDataModelNotifyType::FrameRateChanged notify if successful.</summary>
 	public virtual void SetFrameRate(FFrameRate FrameRate,bool bShouldTransact/*=true*/) {}
 	///<summary>AddBoneTrack</summary>
-	public virtual int AddBoneTrack(string BoneName,bool bShouldTransact/*=true*/) { return default; }
+	public virtual int AddBoneTrack(FName BoneName,bool bShouldTransact/*=true*/) { return default; }
 	///<summary>AddBoneCurve</summary>
-	public virtual bool AddBoneCurve(string BoneName,bool bShouldTransact/*=true*/) { return default; }
+	public virtual bool AddBoneCurve(FName BoneName,bool bShouldTransact/*=true*/) { return default; }
 	///<summary>InsertBoneTrack</summary>
-	public virtual int InsertBoneTrack(string BoneName,int DesiredIndex,bool bShouldTransact/*=true*/) { return default; }
+	public virtual int InsertBoneTrack(FName BoneName,int DesiredIndex,bool bShouldTransact/*=true*/) { return default; }
 	///<summary>Removes an existing bone animation track with the provided name. Broadcasts a EAnimDataModelNotifyType::TrackRemoved notify if successful.</summary>
-	public virtual bool RemoveBoneTrack(string BoneName,bool bShouldTransact/*=true*/) { return default; }
+	public virtual bool RemoveBoneTrack(FName BoneName,bool bShouldTransact/*=true*/) { return default; }
 	///<summary>Removes all existing Bone Animation tracks. Broadcasts a EAnimDataModelNotifyType::TrackRemoved for each removed track, wrapped within BracketOpened/BracketClosed notifies.</summary>
 	public virtual void RemoveAllBoneTracks(bool bShouldTransact/*=true*/) {}
 	///<summary>Removes an existing bone animation track with the provided name. Broadcasts a EAnimDataModelNotifyType::TrackChanged notify if successful.</summary>
-	public virtual bool SetBoneTrackKeys(string BoneName,TArray<FVector> PositionalKeys,TArray<FQuat> RotationalKeys,TArray<FVector> ScalingKeys,bool bShouldTransact/*=true*/) { return default; }
+	public virtual bool SetBoneTrackKeys(FName BoneName,TArray<FVector> PositionalKeys,TArray<FQuat> RotationalKeys,TArray<FVector> ScalingKeys,bool bShouldTransact/*=true*/) { return default; }
 	///<summary>Adds a new curve with the provided information. Broadcasts a EAnimDataModelNotifyType::CurveAdded notify if successful.</summary>
 	public virtual bool AddCurve(FAnimationCurveIdentifier CurveId,int CurveFlags/*=0x00000004*/,bool bShouldTransact/*=true*/) { return default; }
 	///<summary>Duplicated the curve with the identifier. Broadcasts a EAnimDataModelNotifyType::CurveAdded notify if successful.</summary>
@@ -76,7 +76,7 @@ public partial class UAnimationDataController : UInterface {
 	///<summary>Removes an attribute, if found, with the provided information. Broadcasts a EAnimDataModelNotifyType::AttributeRemoved notify if successful.</summary>
 	public virtual bool RemoveAttribute(FAnimationAttributeIdentifier AttributeIdentifier,bool bShouldTransact/*=true*/) { return default; }
 	///<summary>Removes all attributes for the specified bone name, if any. Broadcasts a EAnimDataModelNotifyType::AttributeRemoved notify for each removed attribute.</summary>
-	public virtual int RemoveAllAttributesForBone(string BoneName,bool bShouldTransact/*=true*/) { return default; }
+	public virtual int RemoveAllAttributesForBone(FName BoneName,bool bShouldTransact/*=true*/) { return default; }
 	///<summary>Removes all stored attributes. Broadcasts a EAnimDataModelNotifyType::AttributeRemoved notify for each removed attribute.</summary>
 	public virtual int RemoveAllAttributes(bool bShouldTransact/*=true*/) { return default; }
 	///<summary>Remove a single key from the attribute with provided identifier. Broadcasts a EAnimDataModelNotifyType::AttributeChanged notify if successful.</summary>

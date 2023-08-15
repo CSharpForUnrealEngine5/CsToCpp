@@ -8,5 +8,5 @@ public partial class USkeletalMeshFromStaticMeshFactory : UFactory {
 	///<summary>StaticMesh</summary>
 	public UStaticMesh StaticMesh;
 	///<summary>BindBoneName</summary>
-	public string BindBoneName;
+	public FName BindBoneName;
 }

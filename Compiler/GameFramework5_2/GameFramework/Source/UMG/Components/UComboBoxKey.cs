@@ -5,15 +5,15 @@ using CSharpToCpp.Utilities;
 public partial class UComboBoxKey : UWidget {
 	public static UClass StaticClass() {return default;}
 	///<summary>FOnSelectionChangedEvent</summary>
-	public void FOnSelectionChangedEvent(string SelectedItem,ESelectInfo SelectionType) {}
+	public void FOnSelectionChangedEvent(FName SelectedItem,ESelectInfo SelectionType) {}
 	///<summary>FOnOpeningEvent</summary>
 	public void FOnOpeningEvent() {}
 	///<summary>FGenerateWidgetEvent</summary>
-	public UWidget FGenerateWidgetEvent(string Item) { return default; }
+	public UWidget FGenerateWidgetEvent(FName Item) { return default; }
 	///<summary>Options</summary>
-	public TArray<string> Options;
+	public TArray<FName> Options;
 	///<summary>SelectedOption</summary>
-	public string SelectedOption;
+	public FName SelectedOption;
 	///<summary>The combobox style.</summary>
 	public FComboBoxStyle WidgetStyle;
 	///<summary>The item row style.</summary>
@@ -41,17 +41,17 @@ public partial class UComboBoxKey : UWidget {
 	///<summary>Called when the combobox is opening</summary>
 	public FOnOpeningEvent OnOpening;
 	///<summary>Add an element to the option list.</summary>
-	public void AddOption(string Option) {}
+	public void AddOption(FName Option) {}
 	///<summary>Remove an element to the option list.</summary>
-	public bool RemoveOption(string Option) { return default; }
+	public bool RemoveOption(FName Option) { return default; }
 	///<summary>Remove all the elements of the option list.</summary>
 	public void ClearOptions() {}
 	///<summary>Clear the current selection.</summary>
 	public void ClearSelection() {}
 	///<summary>Set the current selected option.</summary>
-	public void SetSelectedOption(string Option) {}
+	public void SetSelectedOption(FName Option) {}
 	///<summary>Get the current selected option</summary>
-	public string GetSelectedOption() { return default; }
+	public FName GetSelectedOption() { return default; }
 	///<summary>Is the combobox menu opened.</summary>
 	public bool IsOpen() { return default; }
 }

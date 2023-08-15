@@ -17,7 +17,7 @@ public partial class UWebAPITypeInfo : UObject {
 	///<summary>Field name as sent to and received from the external API.</summary>
 	public string JsonName;
 	///<summary>Json type. Should correspond with values in EJson.</summary>
-	public string JsonType;
+	public FName JsonType;
 	///<summary>Optional sub-property to serialize, instead of the object itself.</summary>
 	public string JsonPropertyToSerialize;
 	///<summary>Optional specifier for printf, ie. &quot;s&quot;, &quot;d&quot;.</summary>
@@ -31,7 +31,7 @@ public partial class UWebAPITypeInfo : UObject {
 	///<summary>Optional suffix, ie. &quot;Parameter&quot;, &quot;Item&quot;, etc.</summary>
 	public string Suffix;
 	///<summary>Declaration type, ie. struct, enum.</summary>
-	public string DeclarationType;
+	public FName DeclarationType;
 	///<summary>If this is false, the type is to be generated and should have a namespace.</summary>
 	public bool bIsBuiltinType;
 	///<summary>Default value as a string, if applicable.</summary>

@@ -4,6 +4,6 @@ using CSharpToCpp.Utilities;
 [CppInclude("Animation/AnimNode_Root.h")]
 public partial struct FAnimNode_Root {
 	public FPoseLink Result;
-	public string Name;
-	public string Group;
+	public FName Name;
+	public FName Group;
 }

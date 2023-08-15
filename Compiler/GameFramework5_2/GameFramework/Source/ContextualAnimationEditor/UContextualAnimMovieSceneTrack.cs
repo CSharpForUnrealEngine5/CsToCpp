@@ -6,5 +6,5 @@ public partial class UContextualAnimMovieSceneTrack : UMovieSceneNameableTrack {
 	///<summary>List of sections in this track</summary>
 	public TArray<UMovieSceneSection> Sections;
 	///<summary>Role this track represents</summary>
-	public string Role;
+	public FName Role;
 }

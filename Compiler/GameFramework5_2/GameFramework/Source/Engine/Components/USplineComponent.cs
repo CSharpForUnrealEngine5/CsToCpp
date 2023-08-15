@@ -73,9 +73,9 @@ public partial class USplineComponent : UPrimitiveComponent {
 	///<summary>Get distance along the spline at the provided input key value</summary>
 	public float GetDistanceAlongSplineAtSplineInputKey(float InKey) { return default; }
 	///<summary>Get a metadata property float value along the spline at spline input key</summary>
-	public float GetFloatPropertyAtSplineInputKey(float InKey,string PropertyName) { return default; }
+	public float GetFloatPropertyAtSplineInputKey(float InKey,FName PropertyName) { return default; }
 	///<summary>Get a metadata property vector value along the spline at spline input key</summary>
-	public FVector GetVectorPropertyAtSplineInputKey(float InKey,string PropertyName) { return default; }
+	public FVector GetVectorPropertyAtSplineInputKey(float InKey,FName PropertyName) { return default; }
 	///<summary>Specify unselected spline component segment color in the editor</summary>
 	public void SetUnselectedSplineSegmentColor(FLinearColor SegmentColor) {}
 	///<summary>Specify selected spline component segment color in the editor</summary>
@@ -165,9 +165,9 @@ public partial class USplineComponent : UPrimitiveComponent {
 	///<summary>Get the distance along the spline at the spline point</summary>
 	public float GetDistanceAlongSplineAtSplinePoint(int PointIndex) { return default; }
 	///<summary>Get a metadata property float value along the spline at spline point</summary>
-	public float GetFloatPropertyAtSplinePoint(int Index,string PropertyName) { return default; }
+	public float GetFloatPropertyAtSplinePoint(int Index,FName PropertyName) { return default; }
 	///<summary>Get a metadata property vector value along the spline at spline point</summary>
-	public FVector GetVectorPropertyAtSplinePoint(int Index,string PropertyName) { return default; }
+	public FVector GetVectorPropertyAtSplinePoint(int Index,FName PropertyName) { return default; }
 	///<summary>Returns total length along this spline</summary>
 	public float GetSplineLength() { return default; }
 	///<summary>Sets the default up vector used by this spline</summary>

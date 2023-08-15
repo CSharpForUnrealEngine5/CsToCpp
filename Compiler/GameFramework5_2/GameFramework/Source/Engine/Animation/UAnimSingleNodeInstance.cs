@@ -36,5 +36,5 @@ public partial class UAnimSingleNodeInstance : UAnimInstance {
 	///<summary>Get the currently used asset</summary>
 	public virtual UAnimationAsset GetAnimationAsset() { return default; }
 	///<summary>Set pose value</summary>
-	public void SetPreviewCurveOverride(string PoseName,float Value,bool bRemoveIfZero) {}
+	public void SetPreviewCurveOverride(FName PoseName,float Value,bool bRemoveIfZero) {}
 }

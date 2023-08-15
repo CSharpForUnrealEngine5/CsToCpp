@@ -5,5 +5,5 @@ using CSharpToCpp.Utilities;
 public partial class UAnimNotify_PlayMontageNotifyWindow : UAnimNotifyState {
 	public static UClass StaticClass() {return default;}
 	///<summary>Name of notify that is passed to ability.</summary>
-	public string NotifyName;
+	public FName NotifyName;
 }

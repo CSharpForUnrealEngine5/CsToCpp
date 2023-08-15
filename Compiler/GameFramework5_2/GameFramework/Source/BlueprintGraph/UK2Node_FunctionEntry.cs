@@ -4,7 +4,7 @@ using CSharpToCpp.Utilities;
 public partial class UK2Node_FunctionEntry : UK2Node_FunctionTerminator {
 	public static UClass StaticClass() {return default;}
 	///<summary>If specified, the function that is created for this entry point will have this name.  Otherwise, it will have the function signature&#39;s name</summary>
-	public string CustomGeneratedFunctionName;
+	public FName CustomGeneratedFunctionName;
 	///<summary>Function metadata</summary>
 	public FKismetUserDeclaredFunctionMetadata MetaData;
 	///<summary>Array of local variables to be added to generated function</summary>

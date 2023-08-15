@@ -4,7 +4,7 @@ using CSharpToCpp.Utilities;
 public partial class UIKRig_BodyMover : UIKRigSolver {
 	public static UClass StaticClass() {return default;}
 	///<summary>The target bone to move with the effectors.</summary>
-	public string RootBone;
+	public FName RootBone;
 	///<summary>Blend the translational effect of this solver on/off. Range is 0-1. Default is 1.0.</summary>
 	public float PositionAlpha;
 	///<summary>Multiply the POSITIVE X translation. Range is 0-1. Default is 1.0.</summary>

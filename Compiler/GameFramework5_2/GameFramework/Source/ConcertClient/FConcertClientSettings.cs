@@ -12,6 +12,6 @@ public partial struct FConcertClientSettings {
 	public float LatencyCompensationMs;
 	public bool bReflectLevelEditorInGame;
 	public bool bSupportMixedBuildTypes;
-	public TArray<string> Tags;
+	public TArray<FName> Tags;
 	public string ClientAuthenticationKey;
 }

@@ -11,7 +11,7 @@ public partial class UWebAPIDefinition : UObject {
 	///<summary>Settings for code generation.</summary>
 	public FWebAPICodeGeneratorSettings GeneratorSettings;
 	///<summary>Optional data store, ie. schema file contents.</summary>
-	public TMap<string,UObject> ImportedDataCache;
+	public TMap<FName,UObject> ImportedDataCache;
 	///<summary>The schema written by the provider.</summary>
 	public UWebAPISchema WebAPISchema;
 }

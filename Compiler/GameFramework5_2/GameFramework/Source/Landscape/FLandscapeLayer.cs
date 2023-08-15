@@ -3,7 +3,7 @@ using CSharpToCpp.Utilities;
 [CppInclude("Landscape.h")]
 public partial struct FLandscapeLayer {
 	public FGuid Guid;
-	public string Name;
+	public FName Name;
 	public bool bVisible;
 	public bool bLocked;
 	public float HeightmapAlpha;

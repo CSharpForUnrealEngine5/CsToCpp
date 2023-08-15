@@ -6,7 +6,7 @@ public partial class UPCGTransformPointsSettings : UPCGSettings {
 	///<summary>bApplyToAttribute</summary>
 	public bool bApplyToAttribute;
 	///<summary>AttributeName</summary>
-	public string AttributeName;
+	public FName AttributeName;
 	///<summary>OffsetMin</summary>
 	public FVector OffsetMin;
 	///<summary>OffsetMax</summary>

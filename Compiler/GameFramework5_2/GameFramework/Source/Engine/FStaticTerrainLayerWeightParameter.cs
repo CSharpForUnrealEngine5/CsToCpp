@@ -6,7 +6,7 @@ public partial struct FStaticTerrainLayerWeightParameter {
 	public FMaterialParameterInfo ParameterInfo_DEPRECATED;
 	public FGuid ExpressionGUID_DEPRECATED;
 	public bool bOverride_DEPRECATED;
-	public string LayerName;
+	public FName LayerName;
 	public int WeightmapIndex;
 	public bool bWeightBasedBlend;
 }

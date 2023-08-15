@@ -9,21 +9,21 @@ public partial class UAnimationBlueprintLibrary : UBlueprintFunctionLibrary {
 	///<summary>Retrieves the number of animation keys for the given Animation Sequence</summary>
 	public static void GetNumKeys(UAnimSequenceBase AnimationSequenceBase,int NumKeys) {}
 	///<summary>Retrieves the Names of the individual ATracks for the given Animation Sequence</summary>
-	public static void GetAnimationTrackNames(UAnimSequenceBase AnimationSequenceBase,TArray<string> TrackNames) {}
+	public static void GetAnimationTrackNames(UAnimSequenceBase AnimationSequenceBase,TArray<FName> TrackNames) {}
 	///<summary>Retrieves the Names of the Animation Slots used in the given Montage</summary>
-	public static void GetMontageSlotNames(UAnimMontage AnimationMontage,TArray<string> SlotNames) {}
+	public static void GetMontageSlotNames(UAnimMontage AnimationMontage,TArray<FName> SlotNames) {}
 	///<summary>Retrieves the Names of the individual float curves for the given Animation Sequence</summary>
-	public static void GetAnimationCurveNames(UAnimSequence AnimationSequence,ERawCurveTrackTypes CurveType,TArray<string> CurveNames) {}
+	public static void GetAnimationCurveNames(UAnimSequence AnimationSequence,ERawCurveTrackTypes CurveType,TArray<FName> CurveNames) {}
 	///<summary>GetRawTrackPositionData</summary>
-	public static void GetRawTrackPositionData(UAnimSequenceBase AnimationSequenceBase,string TrackName,TArray<FVector> PositionData) {}
+	public static void GetRawTrackPositionData(UAnimSequenceBase AnimationSequenceBase,FName TrackName,TArray<FVector> PositionData) {}
 	///<summary>GetRawTrackRotationData</summary>
-	public static void GetRawTrackRotationData(UAnimSequenceBase AnimationSequenceBase,string TrackName,TArray<FQuat> RotationData) {}
+	public static void GetRawTrackRotationData(UAnimSequenceBase AnimationSequenceBase,FName TrackName,TArray<FQuat> RotationData) {}
 	///<summary>GetRawTrackScaleData</summary>
-	public static void GetRawTrackScaleData(UAnimSequenceBase AnimationSequenceBase,string TrackName,TArray<FVector> ScaleData) {}
+	public static void GetRawTrackScaleData(UAnimSequenceBase AnimationSequenceBase,FName TrackName,TArray<FVector> ScaleData) {}
 	///<summary>GetRawTrackData</summary>
-	public static void GetRawTrackData(UAnimSequenceBase AnimationSequenceBase,string TrackName,TArray<FVector> PositionKeys,TArray<FQuat> RotationKeys,TArray<FVector> ScalingKeys) {}
+	public static void GetRawTrackData(UAnimSequenceBase AnimationSequenceBase,FName TrackName,TArray<FVector> PositionKeys,TArray<FQuat> RotationKeys,TArray<FVector> ScalingKeys) {}
 	///<summary>Checks whether or not the given Animation Track Name is contained within the Animation Sequence</summary>
-	public static bool IsValidRawAnimationTrackName(UAnimSequenceBase AnimationSequenceBase,string TrackName) { return default; }
+	public static bool IsValidRawAnimationTrackName(UAnimSequenceBase AnimationSequenceBase,FName TrackName) { return default; }
 	///<summary>Retrieves the Bone Compression Settings for the given Animation Sequence</summary>
 	public static void GetBoneCompressionSettings(UAnimSequence AnimationSequence,UAnimBoneCompressionSettings CompressionSettings) {}
 	///<summary>Sets the Bone Compression Settings for the given Animation Sequence</summary>
@@ -59,33 +59,33 @@ public partial class UAnimationBlueprintLibrary : UBlueprintFunctionLibrary {
 	///<summary>Retrieves all the Animation Sync Markers for the given Animation Sequence</summary>
 	public static void GetAnimationSyncMarkers(UAnimSequence AnimationSequence,TArray<FAnimSyncMarker> Markers) {}
 	///<summary>Retrieves all the Unique Names for the Animation Sync Markers contained by the given Animation Sequence</summary>
-	public static void GetUniqueMarkerNames(UAnimSequence AnimationSequence,TArray<string> MarkerNames) {}
+	public static void GetUniqueMarkerNames(UAnimSequence AnimationSequence,TArray<FName> MarkerNames) {}
 	///<summary>Adds an Animation Sync Marker to Notify track in the given Animation with the corresponding Marker Name and Time</summary>
-	public static void AddAnimationSyncMarker(UAnimSequence AnimationSequence,string MarkerName,float Time,string NotifyTrackName) {}
+	public static void AddAnimationSyncMarker(UAnimSequence AnimationSequence,FName MarkerName,float Time,FName NotifyTrackName) {}
 	///<summary>Checks whether or not the given Marker Name is a valid Animation Sync Marker Name</summary>
-	public static bool IsValidAnimationSyncMarkerName(UAnimSequence AnimationSequence,string MarkerName) { return default; }
+	public static bool IsValidAnimationSyncMarkerName(UAnimSequence AnimationSequence,FName MarkerName) { return default; }
 	///<summary>Removes All Animation Sync Marker found within the Animation Sequence whose name matches MarkerName, and returns the number of removed instances</summary>
-	public static int RemoveAnimationSyncMarkersByName(UAnimSequence AnimationSequence,string MarkerName) { return default; }
+	public static int RemoveAnimationSyncMarkersByName(UAnimSequence AnimationSequence,FName MarkerName) { return default; }
 	///<summary>Removes All Animation Sync Marker found within the Animation Sequence that belong to the specific Notify Track, and returns the number of removed instances</summary>
-	public static int RemoveAnimationSyncMarkersByTrack(UAnimSequence AnimationSequence,string NotifyTrackName) { return default; }
+	public static int RemoveAnimationSyncMarkersByTrack(UAnimSequence AnimationSequence,FName NotifyTrackName) { return default; }
 	///<summary>Removes All Animation Sync Markers found within the Animation Sequence, and returns the number of removed instances</summary>
 	public static void RemoveAllAnimationSyncMarkers(UAnimSequence AnimationSequence) {}
 	///<summary>Retrieves all Animation Notify Events found within the given Animation Sequence</summary>
 	public static void GetAnimationNotifyEvents(UAnimSequenceBase AnimationSequenceBase,TArray<FAnimNotifyEvent> NotifyEvents) {}
 	///<summary>Retrieves all Unique Animation Notify Events found within the given Animation Sequence</summary>
-	public static void GetAnimationNotifyEventNames(UAnimSequenceBase AnimationSequenceBase,TArray<string> EventNames) {}
+	public static void GetAnimationNotifyEventNames(UAnimSequenceBase AnimationSequenceBase,TArray<FName> EventNames) {}
 	///<summary>Adds an Animation Notify Event to Notify track in the given Animation with the given Notify creation data</summary>
-	public static UAnimNotify AddAnimationNotifyEvent(UAnimSequenceBase AnimationSequenceBase,string NotifyTrackName,float StartTime,UClass NotifyClass) { return default; }
+	public static UAnimNotify AddAnimationNotifyEvent(UAnimSequenceBase AnimationSequenceBase,FName NotifyTrackName,float StartTime,UClass NotifyClass) { return default; }
 	///<summary>Adds an Animation Notify State Event to Notify track in the given Animation with the given Notify State creation data</summary>
-	public static UAnimNotifyState AddAnimationNotifyStateEvent(UAnimSequenceBase AnimationSequenceBase,string NotifyTrackName,float StartTime,float Duration,UClass NotifyStateClass) { return default; }
+	public static UAnimNotifyState AddAnimationNotifyStateEvent(UAnimSequenceBase AnimationSequenceBase,FName NotifyTrackName,float StartTime,float Duration,UClass NotifyStateClass) { return default; }
 	///<summary>Adds an the specific Animation Notify to the Animation Sequence (requires Notify&#39;s outer to be the Animation Sequence)</summary>
-	public static void AddAnimationNotifyEventObject(UAnimSequenceBase AnimationSequenceBase,float StartTime,UAnimNotify Notify,string NotifyTrackName) {}
+	public static void AddAnimationNotifyEventObject(UAnimSequenceBase AnimationSequenceBase,float StartTime,UAnimNotify Notify,FName NotifyTrackName) {}
 	///<summary>Adds an the specific Animation Notify State to the Animation Sequence (requires Notify State&#39;s outer to be the Animation Sequence)</summary>
-	public static void AddAnimationNotifyStateEventObject(UAnimSequenceBase AnimationSequenceBase,float StartTime,float Duration,UAnimNotifyState NotifyState,string NotifyTrackName) {}
+	public static void AddAnimationNotifyStateEventObject(UAnimSequenceBase AnimationSequenceBase,float StartTime,float Duration,UAnimNotifyState NotifyState,FName NotifyTrackName) {}
 	///<summary>Removes Animation Notify Events found by Name within the Animation Sequence, and returns the number of removed name instances</summary>
-	public static int RemoveAnimationNotifyEventsByName(UAnimSequenceBase AnimationSequenceBase,string NotifyName) { return default; }
+	public static int RemoveAnimationNotifyEventsByName(UAnimSequenceBase AnimationSequenceBase,FName NotifyName) { return default; }
 	///<summary>Removes Animation Notify Events found by Track within the Animation Sequence, and returns the number of removed name instances</summary>
-	public static int RemoveAnimationNotifyEventsByTrack(UAnimSequenceBase AnimationSequenceBase,string NotifyTrackName) { return default; }
+	public static int RemoveAnimationNotifyEventsByTrack(UAnimSequenceBase AnimationSequenceBase,FName NotifyTrackName) { return default; }
 	///<summary>Replaces animation notifies in the specified Animation Sequence</summary>
 	public static void ReplaceAnimNotifyStates(UAnimSequenceBase AnimationSequenceBase,UClass OldNotifyClass,UClass NewNotifyClass,FOnNotifyStateReplaced OnNotifyStateReplaced) {}
 	///<summary>Replaces animation notifies in the specified Animation Sequence</summary>
@@ -93,59 +93,59 @@ public partial class UAnimationBlueprintLibrary : UBlueprintFunctionLibrary {
 	///<summary>Copies animation notifies from Src Animation Sequence to Dest. Creates anim notify tracks as necessary. Returns true on success.</summary>
 	public static void CopyAnimNotifiesFromSequence(UAnimSequenceBase SourceAnimationSequenceBase,UAnimSequenceBase DestinationAnimationSequenceBase,bool bDeleteExistingNotifies/*=false*/) {}
 	///<summary>Retrieves all Unique Animation Notify Track Names found within the given Animation Sequence</summary>
-	public static void GetAnimationNotifyTrackNames(UAnimSequenceBase AnimationSequenceBase,TArray<string> TrackNames) {}
+	public static void GetAnimationNotifyTrackNames(UAnimSequenceBase AnimationSequenceBase,TArray<FName> TrackNames) {}
 	///<summary>Adds an Animation Notify Track to the Animation Sequence</summary>
-	public static void AddAnimationNotifyTrack(UAnimSequenceBase AnimationSequenceBase,string NotifyTrackName,FLinearColor TrackColor/*=FLinearColor.White*/) {}
+	public static void AddAnimationNotifyTrack(UAnimSequenceBase AnimationSequenceBase,FName NotifyTrackName,FLinearColor TrackColor/*=FLinearColor.White*/) {}
 	///<summary>Removes an Animation Notify Track from Animation Sequence by Name</summary>
-	public static void RemoveAnimationNotifyTrack(UAnimSequenceBase AnimationSequenceBase,string NotifyTrackName) {}
+	public static void RemoveAnimationNotifyTrack(UAnimSequenceBase AnimationSequenceBase,FName NotifyTrackName) {}
 	///<summary>Removes All Animation Notify Tracks from Animation Sequence</summary>
 	public static void RemoveAllAnimationNotifyTracks(UAnimSequenceBase AnimationSequenceBase) {}
 	///<summary>Checks whether or not the given Track Name is a valid Animation Notify Track in the Animation Sequence</summary>
-	public static bool IsValidAnimNotifyTrackName(UAnimSequenceBase AnimationSequenceBase,string NotifyTrackName) { return default; }
+	public static bool IsValidAnimNotifyTrackName(UAnimSequenceBase AnimationSequenceBase,FName NotifyTrackName) { return default; }
 	///<summary>Returns the actual trigger time for a NotifyEvent</summary>
 	public static float GetAnimNotifyEventTriggerTime(FAnimNotifyEvent NotifyEvent) { return default; }
 	///<summary>Returns the duration for a NotifyEvent, only non-zero for Anim Notify States</summary>
 	public static float GetAnimNotifyEventDuration(FAnimNotifyEvent NotifyEvent) { return default; }
 	///<summary>Retrieves all Animation Sync Markers for the given Notify Track Name from the given Animation Sequence</summary>
-	public static void GetAnimationSyncMarkersForTrack(UAnimSequence AnimationSequence,string NotifyTrackName,TArray<FAnimSyncMarker> Markers) {}
+	public static void GetAnimationSyncMarkersForTrack(UAnimSequence AnimationSequence,FName NotifyTrackName,TArray<FAnimSyncMarker> Markers) {}
 	///<summary>Retrieves all Animation Notify Events for the given Notify Track Name from the given Animation Sequence</summary>
-	public static void GetAnimationNotifyEventsForTrack(UAnimSequenceBase AnimationSequenceBase,string NotifyTrackName,TArray<FAnimNotifyEvent> Events) {}
+	public static void GetAnimationNotifyEventsForTrack(UAnimSequenceBase AnimationSequenceBase,FName NotifyTrackName,TArray<FAnimNotifyEvent> Events) {}
 	///<summary>Adds an Animation Curve by Type and Name to the given Animation Sequence</summary>
-	public static void AddCurve(UAnimSequence AnimationSequence,string CurveName,ERawCurveTrackTypes CurveType/*=ERawCurveTrackTypes.RCT_Float*/,bool bMetaDataCurve/*=false*/) {}
+	public static void AddCurve(UAnimSequence AnimationSequence,FName CurveName,ERawCurveTrackTypes CurveType/*=ERawCurveTrackTypes.RCT_Float*/,bool bMetaDataCurve/*=false*/) {}
 	///<summary>Removes an Animation Curve by Name from the given Animation Sequence (Raw Animation Curves [Names] may not be removed from the Skeleton)</summary>
-	public static void RemoveCurve(UAnimSequence AnimationSequence,string CurveName,bool bRemoveNameFromSkeleton/*=false*/) {}
+	public static void RemoveCurve(UAnimSequence AnimationSequence,FName CurveName,bool bRemoveNameFromSkeleton/*=false*/) {}
 	///<summary>Removes all Animation Curve Data from the given Animation Sequence (Raw Animation Curves [Names] may not be removed from the Skeleton)</summary>
 	public static void RemoveAllCurveData(UAnimSequence AnimationSequence) {}
 	///<summary>Adds a Transformation Key to the specified Animation Curve inside of the given Animation Sequence</summary>
-	public static void AddTransformationCurveKey(UAnimSequence AnimationSequence,string CurveName,float Time,FTransform Transform) {}
+	public static void AddTransformationCurveKey(UAnimSequence AnimationSequence,FName CurveName,float Time,FTransform Transform) {}
 	///<summary>Adds a multiple of Transformation Keys to the specified Animation Curve inside of the given Animation Sequence</summary>
-	public static void AddTransformationCurveKeys(UAnimSequence AnimationSequence,string CurveName,TArray<float> Times,TArray<FTransform> Transforms) {}
+	public static void AddTransformationCurveKeys(UAnimSequence AnimationSequence,FName CurveName,TArray<float> Times,TArray<FTransform> Transforms) {}
 	///<summary>Adds a Float Key to the specified Animation Curve inside of the given Animation Sequence</summary>
-	public static void AddFloatCurveKey(UAnimSequence AnimationSequence,string CurveName,float Time,float Value) {}
+	public static void AddFloatCurveKey(UAnimSequence AnimationSequence,FName CurveName,float Time,float Value) {}
 	///<summary>Adds a multiple of Float Keys to the specified Animation Curve inside of the given Animation Sequence</summary>
-	public static void AddFloatCurveKeys(UAnimSequence AnimationSequence,string CurveName,TArray<float> Times,TArray<float> Values) {}
+	public static void AddFloatCurveKeys(UAnimSequence AnimationSequence,FName CurveName,TArray<float> Times,TArray<float> Values) {}
 	///<summary>Adds a Vector Key to the specified Animation Curve inside of the given Animation Sequence</summary>
-	public static void AddVectorCurveKey(UAnimSequence AnimationSequence,string CurveName,float Time,FVector Vector) {}
+	public static void AddVectorCurveKey(UAnimSequence AnimationSequence,FName CurveName,float Time,FVector Vector) {}
 	///<summary>Adds a multiple of Vector Keys to the specified Animation Curve inside of the given Animation Sequence</summary>
-	public static void AddVectorCurveKeys(UAnimSequence AnimationSequence,string CurveName,TArray<float> Times,TArray<FVector> Vectors) {}
+	public static void AddVectorCurveKeys(UAnimSequence AnimationSequence,FName CurveName,TArray<float> Times,TArray<FVector> Vectors) {}
 	///<summary>Checks whether or not the given Bone Name exist on the Skeleton referenced by the given Animation Sequence</summary>
-	public static void DoesBoneNameExist(UAnimSequence AnimationSequence,string BoneName,bool bExists) {}
+	public static void DoesBoneNameExist(UAnimSequence AnimationSequence,FName BoneName,bool bExists) {}
 	///<summary>Retrieves, a multiple of, Float Key(s) from the specified Animation Curve inside of the given Animation Sequence</summary>
-	public static void GetFloatKeys(UAnimSequence AnimationSequence,string CurveName,TArray<float> Times,TArray<float> Values) {}
+	public static void GetFloatKeys(UAnimSequence AnimationSequence,FName CurveName,TArray<float> Times,TArray<float> Values) {}
 	///<summary>Retrieves, a multiple of, Vector Key(s) from the specified Animation Curve inside of the given Animation Sequence</summary>
-	public static void GetVectorKeys(UAnimSequence AnimationSequence,string CurveName,TArray<float> Times,TArray<FVector> Values) {}
+	public static void GetVectorKeys(UAnimSequence AnimationSequence,FName CurveName,TArray<float> Times,TArray<FVector> Values) {}
 	///<summary>Retrieves, a multiple of, Transformation Key(s) from the specified Animation Curve inside of the given Animation Sequence</summary>
-	public static void GetTransformationKeys(UAnimSequence AnimationSequence,string CurveName,TArray<float> Times,TArray<FTransform> Values) {}
+	public static void GetTransformationKeys(UAnimSequence AnimationSequence,FName CurveName,TArray<float> Times,TArray<FTransform> Values) {}
 	///<summary>Ensures that any curve names that do not exist on the NewSkeleton are added to it, in which case the SmartName on the actual curve itself will also be updated</summary>
 	public static void CopyAnimationCurveNamesToSkeleton(USkeleton OldSkeleton,USkeleton NewSkeleton,UAnimSequenceBase SequenceBase,ERawCurveTrackTypes CurveType) {}
 	///<summary>Removes an Animation Curve by Name from the given Animation Sequence (Raw Animation Curves [Names] may not be removed from the Skeleton)</summary>
-	public static void RemoveBoneAnimation(UAnimSequence AnimationSequence,string BoneName,bool bIncludeChildren/*=true*/,bool bFinalize/*=true*/) {}
+	public static void RemoveBoneAnimation(UAnimSequence AnimationSequence,FName BoneName,bool bIncludeChildren/*=true*/,bool bFinalize/*=true*/) {}
 	///<summary>Removes all Animation Bone Track Data from the given Animation Sequence</summary>
 	public static void RemoveAllBoneAnimation(UAnimSequence AnimationSequence) {}
 	///<summary>FinalizeBoneAnimation</summary>
 	public static void FinalizeBoneAnimation(UAnimSequence AnimationSequence) {}
 	///<summary>Checks whether or not the given Curve Name exist on the Skeleton referenced by the given Animation Sequence</summary>
-	public static bool DoesCurveExist(UAnimSequence AnimationSequence,string CurveName,ERawCurveTrackTypes CurveType) { return default; }
+	public static bool DoesCurveExist(UAnimSequence AnimationSequence,FName CurveName,ERawCurveTrackTypes CurveType) { return default; }
 	///<summary>Creates and Adds an instance of the specified MetaData Class to the given Animation Asset</summary>
 	public static void AddMetaData(UAnimationAsset AnimationAsset,UClass MetaDataClass,UAnimMetaData MetaDataInstance) {}
 	///<summary>Adds an instance of the specified MetaData Class to the given Animation Asset (requires MetaDataObject&#39;s outer to be the Animation Asset)</summary>
@@ -163,19 +163,19 @@ public partial class UAnimationBlueprintLibrary : UBlueprintFunctionLibrary {
 	///<summary>Checks whether or not the given Animation Asset contains Meta Data Instance of the specified Meta Data Class</summary>
 	public static bool ContainsMetaDataOfClass(UAnimationAsset AnimationAsset,UClass MetaDataClass) { return default; }
 	///<summary>GetBonePoseForTime</summary>
-	public static void GetBonePoseForTime(UAnimSequenceBase AnimationSequenceBase,string BoneName,float Time,bool bExtractRootMotion,FTransform Pose) {}
+	public static void GetBonePoseForTime(UAnimSequenceBase AnimationSequenceBase,FName BoneName,float Time,bool bExtractRootMotion,FTransform Pose) {}
 	///<summary>GetBonePoseForFrame</summary>
-	public static void GetBonePoseForFrame(UAnimSequenceBase AnimationSequenceBase,string BoneName,int Frame,bool bExtractRootMotion,FTransform Pose) {}
+	public static void GetBonePoseForFrame(UAnimSequenceBase AnimationSequenceBase,FName BoneName,int Frame,bool bExtractRootMotion,FTransform Pose) {}
 	///<summary>GetBonePosesForTime</summary>
-	public static void GetBonePosesForTime(UAnimSequenceBase AnimationSequenceBase,TArray<string> BoneNames,float Time,bool bExtractRootMotion,TArray<FTransform> Poses,USkeletalMesh PreviewMesh/*=nullptr*/) {}
+	public static void GetBonePosesForTime(UAnimSequenceBase AnimationSequenceBase,TArray<FName> BoneNames,float Time,bool bExtractRootMotion,TArray<FTransform> Poses,USkeletalMesh PreviewMesh/*=nullptr*/) {}
 	///<summary>GetBonePosesForFrame</summary>
-	public static void GetBonePosesForFrame(UAnimSequenceBase AnimationSequenceBase,TArray<string> BoneNames,int Frame,bool bExtractRootMotion,TArray<FTransform> Poses,USkeletalMesh PreviewMesh/*=nullptr*/) {}
+	public static void GetBonePosesForFrame(UAnimSequenceBase AnimationSequenceBase,TArray<FName> BoneNames,int Frame,bool bExtractRootMotion,TArray<FTransform> Poses,USkeletalMesh PreviewMesh/*=nullptr*/) {}
 	///<summary>Adds a Virtual Bone between the Source and Target Bones to the given Animation Sequence</summary>
-	public static void AddVirtualBone(UAnimSequence AnimationSequence,string SourceBoneName,string TargetBoneName,string VirtualBoneName) {}
+	public static void AddVirtualBone(UAnimSequence AnimationSequence,FName SourceBoneName,FName TargetBoneName,FName VirtualBoneName) {}
 	///<summary>Removes a Virtual Bone with the specified Bone Name from the given Animation Sequence</summary>
-	public static void RemoveVirtualBone(UAnimSequence AnimationSequence,string VirtualBoneName) {}
+	public static void RemoveVirtualBone(UAnimSequence AnimationSequence,FName VirtualBoneName) {}
 	///<summary>Removes Virtual Bones with the specified Bone Names from the given Animation Sequence</summary>
-	public static void RemoveVirtualBones(UAnimSequence AnimationSequence,TArray<string> VirtualBoneNames) {}
+	public static void RemoveVirtualBones(UAnimSequence AnimationSequence,TArray<FName> VirtualBoneNames) {}
 	///<summary>Removes all Virtual Bones from the given Animation Sequence</summary>
 	public static void RemoveAllVirtualBones(UAnimSequence AnimationSequence) {}
 	///<summary>Retrieves the Length of the given Animation Sequence</summary>
@@ -195,7 +195,7 @@ public partial class UAnimationBlueprintLibrary : UBlueprintFunctionLibrary {
 	///<summary>Evaluates the subframe timecode attribute (e.g. &quot;TCSubframe&quot;) of the root bone and returns the resulting value.</summary>
 	public static bool EvaluateRootBoneTimecodeSubframeAttributeAtTime(UAnimSequenceBase AnimationSequenceBase,float EvalTime,float OutSubframe) { return default; }
 	///<summary>Finds the Bone Path from the given Bone to the Root Bone</summary>
-	public static void FindBonePathToRoot(UAnimSequenceBase AnimationSequenceBase,string BoneName,TArray<string> BonePath) {}
+	public static void FindBonePathToRoot(UAnimSequenceBase AnimationSequenceBase,FName BoneName,TArray<FName> BonePath) {}
 	///<summary>Returns all Animation Graphs contained by the provided Animation Blueprint</summary>
 	public static void GetAnimationGraphs(UAnimBlueprint AnimationBlueprint,TArray<UAnimationGraph> AnimationGraphs) {}
 	///<summary>Returns all Animation Graph Nodes of the provided Node Class contained by the Animation Blueprint</summary>

@@ -7,7 +7,7 @@ public partial class UPCGMetadataSettingsBase : UPCGSettings {
 	///<summary>OutputTarget</summary>
 	public FPCGAttributePropertySelector OutputTarget;
 	///<summary>OutputAttributeName_DEPRECATED</summary>
-	public string OutputAttributeName_DEPRECATED;
+	public FName OutputAttributeName_DEPRECATED;
 	///<summary>Mode_DEPRECATED</summary>
 	public EPCGMetadataSettingsBaseMode Mode_DEPRECATED;
 }

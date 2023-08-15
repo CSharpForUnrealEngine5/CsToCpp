@@ -23,11 +23,11 @@ public partial class URetainerBox : UContentWidget {
 	///<summary>Set a new effect material to the retainer widget.</summary>
 	public void SetEffectMaterial(UMaterialInterface EffectMaterial) {}
 	///<summary>Sets the name of the texture parameter to set the render target to on the material.</summary>
-	public void SetTextureParameter(string TextureParameter) {}
+	public void SetTextureParameter(FName TextureParameter) {}
 	///<summary>Set the flag for if we retain the render or pass-through</summary>
 	public void SetRetainRendering(bool bInRetainRendering) {}
 	///<summary>The effect to optionally apply to the render target.  We will set the texture sampler based on the name</summary>
 	public UMaterialInterface EffectMaterial;
 	///<summary>The texture sampler parameter of the @EffectMaterial, that we&#39;ll set to the render target.</summary>
-	public string TextureParameter;
+	public FName TextureParameter;
 }

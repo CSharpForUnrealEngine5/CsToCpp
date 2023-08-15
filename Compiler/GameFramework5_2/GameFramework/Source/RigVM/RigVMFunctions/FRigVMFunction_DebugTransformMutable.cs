@@ -7,7 +7,7 @@ public partial struct FRigVMFunction_DebugTransformMutable {
 	public FLinearColor Color;
 	public float Thickness;
 	public float Scale;
-	public string Space;
+	public FName Space;
 	public FTransform WorldOffset;
 	public bool bEnabled;
 }

@@ -3,10 +3,10 @@ using CSharpToCpp.Utilities;
 [CppInclude("Rigs/RigControlHierarchy.h")]
 public partial struct FRigControl {
 	public ERigControlType ControlType;
-	public string DisplayName;
-	public string ParentName;
+	public FName DisplayName;
+	public FName ParentName;
 	public int ParentIndex;
-	public string SpaceName;
+	public FName SpaceName;
 	public int SpaceIndex;
 	public FTransform OffsetTransform;
 	public FRigControlValue InitialValue;
@@ -22,7 +22,7 @@ public partial struct FRigControl {
 	public FRigControlValue MaximumValue;
 	public bool bGizmoEnabled;
 	public bool bGizmoVisible;
-	public string GizmoName;
+	public FName GizmoName;
 	public FTransform GizmoTransform;
 	public FLinearColor GizmoColor;
 	public TArray<int> Dependents;

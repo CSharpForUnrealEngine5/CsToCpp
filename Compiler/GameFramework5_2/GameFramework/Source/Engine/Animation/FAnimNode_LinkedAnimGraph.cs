@@ -3,9 +3,9 @@ using CSharpToCpp.Utilities;
 [CppInclude("Animation/AnimNode_LinkedAnimGraph.h")]
 public partial struct FAnimNode_LinkedAnimGraph {
 	public TArray<FPoseLink> InputPoses;
-	public TArray<string> InputPoseNames;
+	public TArray<FName> InputPoseNames;
 	public UClass InstanceClass;
-	public string Tag_DEPRECATED;
+	public FName Tag_DEPRECATED;
 	public UBlendProfile PendingBlendOutProfile;
 	public UBlendProfile PendingBlendInProfile;
 	public bool bReceiveNotifiesFromLinkedInstances;

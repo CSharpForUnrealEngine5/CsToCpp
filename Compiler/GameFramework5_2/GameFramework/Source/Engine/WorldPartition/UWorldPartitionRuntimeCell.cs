@@ -9,7 +9,7 @@ public partial class UWorldPartitionRuntimeCell : UObject {
 	///<summary>bIsAlwaysLoaded</summary>
 	public bool bIsAlwaysLoaded;
 	///<summary>DataLayers</summary>
-	public TArray<string> DataLayers;
+	public TArray<FName> DataLayers;
 	///<summary>Debug Info</summary>
 	public FWorldPartitionRuntimeCellDebugInfo DebugInfo;
 	///<summary>Custom Priority</summary>

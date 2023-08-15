@@ -35,9 +35,9 @@ public partial class UEditorTutorial : UObject {
 	///<summary>Comma seperated list of tags the search will use to help find this tutorial</summary>
 	public FText SearchTags;
 	///<summary>Event fired when a tutorial stage begins</summary>
-	public void OnTutorialStageStarted(string StageName) {}
+	public void OnTutorialStageStarted(FName StageName) {}
 	///<summary>Event fired when a tutorial stage ends</summary>
-	public void OnTutorialStageEnded(string StageName) {}
+	public void OnTutorialStageEnded(FName StageName) {}
 	///<summary>Event fired when a tutorial is launched</summary>
 	public void OnTutorialLaunched() {}
 	///<summary>Event fired when a tutorial is closed</summary>

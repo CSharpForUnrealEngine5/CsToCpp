@@ -7,7 +7,7 @@ public partial class UDistanceCurveModifier : UAnimationModifier {
 	///<summary>Rate used to sample the animation.</summary>
 	public int SampleRate;
 	///<summary>Name for the generated curve.</summary>
-	public string CurveName;
+	public FName CurveName;
 	///<summary>Root motion speed must be below this threshold to be considered stopped.</summary>
 	public float StopSpeedThreshold;
 	///<summary>Axes to calculate the distance value from.</summary>

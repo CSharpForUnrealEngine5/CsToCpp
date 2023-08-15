@@ -14,5 +14,5 @@ public partial class USheetBuilder : UEditorBrushBuilder {
 	///<summary>Axis</summary>
 	public ESheetAxis Axis;
 	///<summary>GroupName</summary>
-	public string GroupName;
+	public FName GroupName;
 }

@@ -9,5 +9,5 @@ public partial struct FDMXOutputConsoleFaderDescriptor {
 	public int UniversID;
 	public int StartingAddress;
 	public int EndingAddress;
-	public string ProtocolName;
+	public FName ProtocolName;
 }

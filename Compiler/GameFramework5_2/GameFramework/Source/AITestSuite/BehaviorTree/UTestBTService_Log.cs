@@ -8,11 +8,11 @@ public partial class UTestBTService_Log : UBTService {
 	///<summary>LogDeactivation</summary>
 	public int LogDeactivation;
 	///<summary>KeyNameTick</summary>
-	public string KeyNameTick;
+	public FName KeyNameTick;
 	///<summary>KeyNameBecomeRelevant</summary>
-	public string KeyNameBecomeRelevant;
+	public FName KeyNameBecomeRelevant;
 	///<summary>KeyNameCeaseRelevant</summary>
-	public string KeyNameCeaseRelevant;
+	public FName KeyNameCeaseRelevant;
 	///<summary>LogTick</summary>
 	public int LogTick;
 	///<summary>bToggleValue</summary>

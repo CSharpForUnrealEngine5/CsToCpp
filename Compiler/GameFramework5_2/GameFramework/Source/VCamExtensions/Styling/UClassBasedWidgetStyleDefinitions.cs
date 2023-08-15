@@ -7,5 +7,5 @@ public partial class UClassBasedWidgetStyleDefinitions : UModifierBoundWidgetSty
 	///<summary>Config</summary>
 	public TMap<UClass,FPerModifierClassWidgetSytleData> Config;
 	///<summary>Meta data that is not bound to any modifier but just to a simple name.</summary>
-	public TMap<string,FWidgetStyleDataArray> CategoriesWithoutModifier;
+	public TMap<FName,FWidgetStyleDataArray> CategoriesWithoutModifier;
 }

@@ -16,7 +16,7 @@ public partial class UARPin : UObject {
 	///<summary>DebugDraw</summary>
 	public virtual void DebugDraw(UWorld World,FLinearColor Color,float Scale,float PersistForSeconds) {}
 	///<summary>GetDebugName</summary>
-	public string GetDebugName() { return default; }
+	public FName GetDebugName() { return default; }
 	///<summary>TrackedGeometry</summary>
 	public UARTrackedGeometry TrackedGeometry;
 	///<summary>PinnedComponent</summary>

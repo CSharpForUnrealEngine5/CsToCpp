@@ -4,5 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("CookedMetaData.h")]
 public partial struct FStructCookedMetaDataStore {
 	public FObjectCookedMetaDataStore ObjectMetaData;
-	public TMap<string,FFieldCookedMetaDataStore> PropertiesMetaData;
+	public TMap<FName,FFieldCookedMetaDataStore> PropertiesMetaData;
 }

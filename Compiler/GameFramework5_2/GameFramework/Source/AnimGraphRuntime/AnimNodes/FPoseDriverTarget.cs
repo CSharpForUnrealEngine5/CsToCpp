@@ -10,6 +10,6 @@ public partial struct FPoseDriverTarget {
 	public ERBFFunctionType FunctionType;
 	public bool bApplyCustomCurve;
 	public FRichCurve CustomCurve;
-	public string DrivenName;
+	public FName DrivenName;
 	public bool bIsHidden;
 }

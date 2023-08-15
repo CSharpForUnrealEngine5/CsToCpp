@@ -7,5 +7,5 @@ public partial class UDatasmithStringMetadataValueFetcher : UDataprepStringsArra
 	///<summary>KeyMatch</summary>
 	public EMetadataKeyMatchingCriteria KeyMatch;
 	///<summary>The key for the for the string</summary>
-	public string Key;
+	public FName Key;
 }

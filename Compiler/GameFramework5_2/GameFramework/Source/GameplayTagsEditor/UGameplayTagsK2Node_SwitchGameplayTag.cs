@@ -6,5 +6,5 @@ public partial class UGameplayTagsK2Node_SwitchGameplayTag : UK2Node_Switch {
 	///<summary>PinTags</summary>
 	public TArray<FGameplayTag> PinTags;
 	///<summary>UPROPERTY(EditAnywhere, Category = PinOptions)</summary>
-	public TArray<string> PinNames;
+	public TArray<FName> PinNames;
 }

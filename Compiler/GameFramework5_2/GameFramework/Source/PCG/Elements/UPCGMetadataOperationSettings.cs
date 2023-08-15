@@ -8,11 +8,11 @@ public partial class UPCGMetadataOperationSettings : UPCGSettings {
 	///<summary>OutputTarget</summary>
 	public FPCGAttributePropertySelector OutputTarget;
 	///<summary>SourceAttribute_DEPRECATED</summary>
-	public string SourceAttribute_DEPRECATED;
+	public FName SourceAttribute_DEPRECATED;
 	///<summary>PointProperty_DEPRECATED</summary>
 	public EPCGPointProperties PointProperty_DEPRECATED;
 	///<summary>DestinationAttribute_DEPRECATED</summary>
-	public string DestinationAttribute_DEPRECATED;
+	public FName DestinationAttribute_DEPRECATED;
 	///<summary>Target_DEPRECATED</summary>
 	public EPCGMetadataOperationTarget Target_DEPRECATED;
 }

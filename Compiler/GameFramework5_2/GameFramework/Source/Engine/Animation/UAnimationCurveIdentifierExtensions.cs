@@ -7,13 +7,13 @@ public partial class UAnimationCurveIdentifierExtensions : UBlueprintFunctionLib
 	///<summary>@return       Whether or not the Curve Identifier is valid</summary>
 	public static bool IsValid(FAnimationCurveIdentifier Identifier) { return default; }
 	///<summary>@return       The name used for displaying the Curve Identifier</summary>
-	public static string GetName(FAnimationCurveIdentifier Identifier) { return default; }
+	public static FName GetName(FAnimationCurveIdentifier Identifier) { return default; }
 	///<summary>@return       The animation curve type for the curve represented by the Curve Identifier</summary>
 	public static ERawCurveTrackTypes GetType(FAnimationCurveIdentifier Identifier) { return default; }
 	///<summary>Constructs a valid FAnimationCurveIdentifier instance. Ensuring that the underlying SmartName exists on the provided Skeleton for the provided curve type.</summary>
-	public static FAnimationCurveIdentifier GetCurveIdentifier(USkeleton InSkeleton,string Name,ERawCurveTrackTypes CurveType) { return default; }
+	public static FAnimationCurveIdentifier GetCurveIdentifier(USkeleton InSkeleton,FName Name,ERawCurveTrackTypes CurveType) { return default; }
 	///<summary>Tries to construct a valid FAnimationCurveIdentifier instance. It tries to find the underlying SmartName on the provided Skeleton for the provided curve type.</summary>
-	public static FAnimationCurveIdentifier FindCurveIdentifier(USkeleton InSkeleton,string Name,ERawCurveTrackTypes CurveType) { return default; }
+	public static FAnimationCurveIdentifier FindCurveIdentifier(USkeleton InSkeleton,FName Name,ERawCurveTrackTypes CurveType) { return default; }
 	///<summary>Retrieves all curve identifiers for a specific curve types from the provided Skeleton</summary>
 	public static TArray<FAnimationCurveIdentifier> GetCurveIdentifiers(USkeleton InSkeleton,ERawCurveTrackTypes CurveType) { return default; }
 	///<summary>Converts a valid FAnimationCurveIdentifier instance with RCT_Transform curve type to target a child curve.</summary>

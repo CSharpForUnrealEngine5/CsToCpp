@@ -6,7 +6,7 @@ public partial class UEnvQuery : UDataAsset {
 	///<summary>Graph for query</summary>
 	public UEdGraph EdGraph;
 	///<summary>QueryName</summary>
-	public string QueryName;
+	public FName QueryName;
 	///<summary>Options</summary>
 	public TArray<UEnvQueryOption> Options;
 }

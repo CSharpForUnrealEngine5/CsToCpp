@@ -5,7 +5,7 @@ using CSharpToCpp.Utilities;
 public partial class UEndpointSubmix : USoundSubmixBase {
 	public static UClass StaticClass() {return default;}
 	///<summary>Currently used format.</summary>
-	public string EndpointType;
+	public FName EndpointType;
 	///<summary>EndpointSettingsClass</summary>
 	public UClass EndpointSettingsClass;
 	///<summary>EndpointSettings</summary>

@@ -4,7 +4,7 @@ using CSharpToCpp.Utilities;
 public partial class UIKRigFBIKSolver : UIKRigSolver {
 	public static UClass StaticClass() {return default;}
 	///<summary>All bones above this bone in the hierarchy will be completely ignored by the solver. Typically this is set to</summary>
-	public string RootBone;
+	public FName RootBone;
 	///<summary>High iteration counts can help solve complex joint configurations with competing constraints, but will increase runtime cost. Default is 20.</summary>
 	public int Iterations;
 	///<summary>A global mass multiplier; higher values will make the joints more stiff, but require more iterations. Typical range is 0.0 to 10.0.</summary>

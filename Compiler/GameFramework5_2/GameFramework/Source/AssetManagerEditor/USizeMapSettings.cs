@@ -4,7 +4,7 @@ using CSharpToCpp.Utilities;
 public partial class USizeMapSettings : UObject {
 	public static UClass StaticClass() {return default;}
 	///<summary>SizeType</summary>
-	public string SizeType;
+	public FName SizeType;
 	///<summary>DependencyType</summary>
 	public ESizeMapDependencyType DependencyType;
 }

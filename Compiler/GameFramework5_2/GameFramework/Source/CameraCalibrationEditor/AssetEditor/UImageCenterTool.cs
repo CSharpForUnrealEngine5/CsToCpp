@@ -7,5 +7,5 @@ public partial class UImageCenterTool : UCameraCalibrationStep {
 	///<summary>The currently selected algorithm</summary>
 	public UCameraImageCenterAlgo CurrentAlgo;
 	///<summary>Map of algo names to overlay MIDs used by those algos</summary>
-	public TMap<string,UMaterialInstanceDynamic> AlgoOverlayMIDs;
+	public TMap<FName,UMaterialInstanceDynamic> AlgoOverlayMIDs;
 }

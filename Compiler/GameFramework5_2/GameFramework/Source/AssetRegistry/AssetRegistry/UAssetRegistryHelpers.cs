@@ -26,7 +26,7 @@ public partial class UAssetRegistryHelpers : UObject {
 	///<summary>Returns the name for the asset in the form: Class&#39;ObjectPath&#39;</summary>
 	public static string GetExportTextName(FAssetData InAssetData) { return default; }
 	///<summary>Gets the value associated with the given tag as a string</summary>
-	public static bool GetTagValue(FAssetData InAssetData,string InTagName,string OutTagValue) { return default; }
+	public static bool GetTagValue(FAssetData InAssetData,FName InTagName,string OutTagValue) { return default; }
 	///<summary>Populates the FARFilters tags and values map with the passed in tags and values</summary>
 	public static FARFilter SetFilterTagsAndValues(FARFilter InFilter,TArray<FTagAndValue> InTagsAndValues) { return default; }
 	///<summary>Gets asset data for all blueprint assets that match the filter. ClassPaths in the filter specify the blueprint&#39;s parent class.</summary>

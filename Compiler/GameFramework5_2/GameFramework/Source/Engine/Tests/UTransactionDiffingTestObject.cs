@@ -4,9 +4,9 @@ using CSharpToCpp.Utilities;
 public partial class UTransactionDiffingTestObject : UObject {
 	public static UClass StaticClass() {return default;}
 	///<summary>NamesArray</summary>
-	public TArray<string> NamesArray;
+	public TArray<FName> NamesArray;
 	///<summary>AdditionalName</summary>
-	public string AdditionalName;
+	public FName AdditionalName;
 	///<summary>ObjectsArray</summary>
 	public TArray<UObject> ObjectsArray;
 	///<summary>AdditionalObject</summary>

@@ -3,5 +3,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("Engine/SkeletalMeshLODSettings.h")]
 public partial struct FBoneFilter {
 	public bool bExcludeSelf;
-	public string BoneName;
+	public FName BoneName;
 }

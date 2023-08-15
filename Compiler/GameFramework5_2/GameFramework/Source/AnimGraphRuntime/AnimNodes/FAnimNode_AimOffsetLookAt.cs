@@ -5,8 +5,8 @@ using CSharpToCpp.Utilities;
 public partial struct FAnimNode_AimOffsetLookAt {
 	public FPoseLink BasePose;
 	public int LODThreshold;
-	public string SourceSocketName;
-	public string PivotSocketName;
+	public FName SourceSocketName;
+	public FName PivotSocketName;
 	public FVector LookAtLocation;
 	public FVector SocketAxis;
 	public float Alpha;

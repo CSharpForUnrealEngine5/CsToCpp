@@ -5,5 +5,5 @@ using CSharpToCpp.Utilities;
 public partial class UWebRCStructRegistry : UEngineSubsystem {
 	public static UClass StaticClass() {return default;}
 	///<summary>Map of cached structs.</summary>
-	public TMap<string,UScriptStruct> CachedStructs;
+	public TMap<FName,UScriptStruct> CachedStructs;
 }

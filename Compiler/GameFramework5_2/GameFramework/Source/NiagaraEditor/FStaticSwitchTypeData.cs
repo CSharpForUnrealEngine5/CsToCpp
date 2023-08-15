@@ -4,7 +4,7 @@ using CSharpToCpp.Utilities;
 public partial struct FStaticSwitchTypeData {
 	public ENiagaraStaticSwitchType SwitchType;
 	public UEnum Enum;
-	public string SwitchConstant;
+	public FName SwitchConstant;
 	public bool bAutoRefreshEnabled;
 	public bool bExposeAsPin;
 }

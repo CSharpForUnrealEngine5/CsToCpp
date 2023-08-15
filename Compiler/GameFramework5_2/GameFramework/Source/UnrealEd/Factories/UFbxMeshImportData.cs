@@ -19,7 +19,7 @@ public partial class UFbxMeshImportData : UFbxAssetImportData {
 	///<summary>If checked, The material list will be reorder to the same order has the FBX file.</summary>
 	public bool bReorderMaterialToFbxOrder;
 	///<summary>Original import section/material data</summary>
-	public TArray<string> ImportMaterialOriginalNameData;
+	public TArray<FName> ImportMaterialOriginalNameData;
 	///<summary>ImportMeshLodData</summary>
 	public TArray<FImportMeshLodSectionsData> ImportMeshLodData;
 }

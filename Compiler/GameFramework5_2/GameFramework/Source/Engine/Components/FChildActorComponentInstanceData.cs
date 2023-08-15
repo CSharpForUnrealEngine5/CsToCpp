@@ -3,6 +3,6 @@ using CSharpToCpp.Utilities;
 [CppInclude("Components/ChildActorComponent.h")]
 public partial struct FChildActorComponentInstanceData {
 	public UClass ChildActorClass;
-	public string ChildActorName;
+	public FName ChildActorName;
 	public TArray<FChildActorAttachedActorInfo> AttachedActors;
 }

@@ -10,7 +10,7 @@ public partial class UK2Node_PropertyAccess : UK2Node {
 	///<summary>Resolved pin type</summary>
 	public FEdGraphPinType ResolvedPinType;
 	///<summary>Generated property created during compilation</summary>
-	public string GeneratedPropertyName;
+	public FName GeneratedPropertyName;
 	///<summary>Property access context (set by the user) that is intended to be used</summary>
-	public string ContextId;
+	public FName ContextId;
 }

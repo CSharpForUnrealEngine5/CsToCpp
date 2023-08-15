@@ -4,7 +4,7 @@ using CSharpToCpp.Utilities;
 [CppInclude("Metadata/PCGAttributePropertySelector.h")]
 public partial struct FPCGAttributePropertySelector {
 	public EPCGAttributePropertySelection Selection;
-	public string AttributeName;
+	public FName AttributeName;
 	public EPCGPointProperties PointProperty;
 	public TArray<string> ExtraNames;
 }

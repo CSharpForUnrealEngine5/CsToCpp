@@ -13,7 +13,7 @@ public partial class UNiagaraComponent : UFXSystemComponent {
 	///<summary>OverrideParameters</summary>
 	public FNiagaraUserRedirectionParameterStore OverrideParameters;
 	///<summary>EditorOverridesValue_DEPRECATED</summary>
-	public TMap<string,bool> EditorOverridesValue_DEPRECATED;
+	public TMap<FName,bool> EditorOverridesValue_DEPRECATED;
 	///<summary>TemplateParameterOverrides</summary>
 	public TMap<FNiagaraVariableBase,FNiagaraVariant> TemplateParameterOverrides;
 	///<summary>InstanceParameterOverrides</summary>
@@ -89,11 +89,11 @@ public partial class UNiagaraComponent : UFXSystemComponent {
 	///<summary>Clear any previously set fixed bounds for the system instance.</summary>
 	public void ClearSystemFixedBounds() {}
 	///<summary>Sets the fixed bounds for an emitter instance, this overrides all other bounds.</summary>
-	public void SetEmitterFixedBounds(string EmitterName,FBox LocalBounds) {}
+	public void SetEmitterFixedBounds(FName EmitterName,FBox LocalBounds) {}
 	///<summary>Gets the fixed bounds for an emitter instance.</summary>
-	public FBox GetEmitterFixedBounds(string EmitterName) { return default; }
+	public FBox GetEmitterFixedBounds(FName EmitterName) { return default; }
 	///<summary>Clear any previously set fixed bounds for the emitter instance.</summary>
-	public void ClearEmitterFixedBounds(string EmitterName) {}
+	public void ClearEmitterFixedBounds(FName EmitterName) {}
 	///<summary>SetRandomSeedOffset</summary>
 	public void SetRandomSeedOffset(int NewRandomSeedOffset) {}
 	///<summary>GetRandomSeedOffset</summary>
@@ -101,59 +101,59 @@ public partial class UNiagaraComponent : UFXSystemComponent {
 	///<summary>Sets a Niagara FLinearColor parameter by name, overriding locally if necessary.</summary>
 	public void SetNiagaraVariableLinearColor(string InVariableName,FLinearColor InValue) {}
 	///<summary>Sets a Niagara FLinearColor parameter by name, overriding locally if necessary.</summary>
-	public void SetVariableLinearColor(string InVariableName,FLinearColor InValue) {}
+	public void SetVariableLinearColor(FName InVariableName,FLinearColor InValue) {}
 	///<summary>Sets a Niagara Vector4 parameter by name, overriding locally if necessary.</summary>
 	public void SetNiagaraVariableVec4(string InVariableName,FVector4 InValue) {}
 	///<summary>Sets a Niagara Vector4 parameter by name, overriding locally if necessary.</summary>
-	public void SetVariableVec4(string InVariableName,FVector4 InValue) {}
+	public void SetVariableVec4(FName InVariableName,FVector4 InValue) {}
 	///<summary>Sets a Niagara quaternion parameter by name, overriding locally if necessary.</summary>
 	public void SetNiagaraVariableQuat(string InVariableName,FQuat InValue) {}
 	///<summary>Sets a Niagara quaternion parameter by name, overriding locally if necessary.</summary>
-	public void SetVariableQuat(string InVariableName,FQuat InValue) {}
+	public void SetVariableQuat(FName InVariableName,FQuat InValue) {}
 	///<summary>Sets a Niagara matrix parameter by name, overriding locally if necessary.</summary>
 	public void SetNiagaraVariableMatrix(string InVariableName,FMatrix InValue) {}
 	///<summary>Sets a Niagara matrix parameter by name, overriding locally if necessary.</summary>
-	public void SetVariableMatrix(string InVariableName,FMatrix InValue) {}
+	public void SetVariableMatrix(FName InVariableName,FMatrix InValue) {}
 	///<summary>Sets a Niagara Vector3 parameter by name, overriding locally if necessary.</summary>
 	public void SetNiagaraVariableVec3(string InVariableName,FVector InValue) {}
 	///<summary>Sets a Niagara Vector3 parameter by name, overriding locally if necessary.</summary>
-	public void SetVariableVec3(string InVariableName,FVector InValue) {}
+	public void SetVariableVec3(FName InVariableName,FVector InValue) {}
 	///<summary>Sets a Niagara Position parameter by name, overriding locally if necessary.</summary>
 	public void SetNiagaraVariablePosition(string InVariableName,FVector InValue) {}
 	///<summary>Sets a Niagara Position parameter by name, overriding locally if necessary.</summary>
-	public void SetVariablePosition(string InVariableName,FVector InValue) {}
+	public void SetVariablePosition(FName InVariableName,FVector InValue) {}
 	///<summary>Sets a Niagara Vector2 parameter by name, overriding locally if necessary.</summary>
 	public void SetNiagaraVariableVec2(string InVariableName,FVector2D InValue) {}
 	///<summary>Sets a Niagara Vector2 parameter by name, overriding locally if necessary.</summary>
-	public void SetVariableVec2(string InVariableName,FVector2D InValue) {}
+	public void SetVariableVec2(FName InVariableName,FVector2D InValue) {}
 	///<summary>Sets a Niagara float parameter by name, overriding locally if necessary.</summary>
 	public void SetNiagaraVariableFloat(string InVariableName,float InValue) {}
 	///<summary>Sets a Niagara float parameter by name, overriding locally if necessary.</summary>
-	public void SetVariableFloat(string InVariableName,float InValue) {}
+	public void SetVariableFloat(FName InVariableName,float InValue) {}
 	///<summary>Sets a Niagara int parameter by name, overriding locally if necessary.</summary>
 	public void SetNiagaraVariableInt(string InVariableName,int InValue) {}
 	///<summary>Sets a Niagara int parameter by name, overriding locally if necessary.</summary>
-	public void SetVariableInt(string InVariableName,int InValue) {}
+	public void SetVariableInt(FName InVariableName,int InValue) {}
 	///<summary>Sets a Niagara bool parameter by name, overriding locally if necessary.</summary>
 	public void SetNiagaraVariableBool(string InVariableName,bool InValue) {}
 	///<summary>Sets a Niagara bool parameter by name, overriding locally if necessary.</summary>
-	public void SetVariableBool(string InVariableName,bool InValue) {}
+	public void SetVariableBool(FName InVariableName,bool InValue) {}
 	///<summary>SetNiagaraVariableActor</summary>
 	public void SetNiagaraVariableActor(string InVariableName,AActor Actor) {}
 	///<summary>SetVariableActor</summary>
-	public void SetVariableActor(string InVariableName,AActor Actor) {}
+	public void SetVariableActor(FName InVariableName,AActor Actor) {}
 	///<summary>SetNiagaraVariableObject</summary>
 	public void SetNiagaraVariableObject(string InVariableName,UObject Object) {}
 	///<summary>SetVariableObject</summary>
-	public void SetVariableObject(string InVariableName,UObject Object) {}
+	public void SetVariableObject(FName InVariableName,UObject Object) {}
 	///<summary>SetVariableMaterial</summary>
-	public void SetVariableMaterial(string InVariableName,UMaterialInterface Object) {}
+	public void SetVariableMaterial(FName InVariableName,UMaterialInterface Object) {}
 	///<summary>SetVariableStaticMesh</summary>
-	public void SetVariableStaticMesh(string InVariableName,UStaticMesh InValue) {}
+	public void SetVariableStaticMesh(FName InVariableName,UStaticMesh InValue) {}
 	///<summary>SetVariableTexture</summary>
-	public void SetVariableTexture(string InVariableName,UTexture Texture) {}
+	public void SetVariableTexture(FName InVariableName,UTexture Texture) {}
 	///<summary>SetVariableTextureRenderTarget</summary>
-	public void SetVariableTextureRenderTarget(string InVariableName,UTextureRenderTarget TextureRenderTarget) {}
+	public void SetVariableTextureRenderTarget(FName InVariableName,UTextureRenderTarget TextureRenderTarget) {}
 	///<summary>Debug accessors for getting positions in blueprints.</summary>
 	public TArray<FVector> GetNiagaraParticlePositions_DebugOnly(string InEmitterName) { return default; }
 	///<summary>Debug accessors for getting a float attribute array in blueprints.  The attribute name should be without namespaces. For example for &quot;Particles.Position&quot;, send &quot;Position&quot;.</summary>
@@ -189,7 +189,7 @@ public partial class UNiagaraComponent : UFXSystemComponent {
 	///<summary>Component we automatically attach to when activated, if bAutoManageAttachment is true.</summary>
 	public TWeakObjectPtr<USceneComponent> AutoAttachParent;
 	///<summary>Socket we automatically attach to on the AutoAttachParent, if bAutoManageAttachment is true.</summary>
-	public string AutoAttachSocketName;
+	public FName AutoAttachSocketName;
 	///<summary>Options for how we handle our location when we attach to the AutoAttachParent, if bAutoManageAttachment is true.</summary>
 	public EAttachmentRule AutoAttachLocationRule;
 	///<summary>Options for how we handle our rotation when we attach to the AutoAttachParent, if bAutoManageAttachment is true.</summary>

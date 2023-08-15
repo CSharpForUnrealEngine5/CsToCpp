@@ -5,9 +5,9 @@ using CSharpToCpp.Utilities;
 public partial class UMovieSceneFolderExtensions : UBlueprintFunctionLibrary {
 	public static UClass StaticClass() {return default;}
 	///<summary>Get the given folder&#39;s display name</summary>
-	public static string GetFolderName(UMovieSceneFolder Folder) { return default; }
+	public static FName GetFolderName(UMovieSceneFolder Folder) { return default; }
 	///<summary>Set the name of the given folder</summary>
-	public static bool SetFolderName(UMovieSceneFolder Folder,string InFolderName) { return default; }
+	public static bool SetFolderName(UMovieSceneFolder Folder,FName InFolderName) { return default; }
 	///<summary>Get the display color of the given folder</summary>
 	public static FColor GetFolderColor(UMovieSceneFolder Folder) { return default; }
 	///<summary>Set the display color of the given folder</summary>

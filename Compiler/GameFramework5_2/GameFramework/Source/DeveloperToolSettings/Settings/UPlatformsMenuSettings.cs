@@ -8,9 +8,9 @@ public partial class UPlatformsMenuSettings : UObject {
 	///<summary>Name of the target to use for LaunchOn (only Game/Client targets)</summary>
 	public string LaunchOnTarget;
 	///<summary>Per platform build configuration</summary>
-	public TMap<string,EProjectPackagingBuildConfigurations> PerPlatformBuildConfig;
+	public TMap<FName,EProjectPackagingBuildConfigurations> PerPlatformBuildConfig;
 	///<summary>Per platform flavor cooking target</summary>
-	public TMap<string,string> PerPlatformTargetFlavorName;
+	public TMap<FName,FName> PerPlatformTargetFlavorName;
 	///<summary>Per platform build target</summary>
-	public TMap<string,string> PerPlatformBuildTarget;
+	public TMap<FName,string> PerPlatformBuildTarget;
 }

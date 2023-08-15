@@ -5,5 +5,5 @@ using CSharpToCpp.Utilities;
 public partial class UDEPRECATED_ChooserParameterFloat_ContextProperty : UObject {
 	public static UClass StaticClass() {return default;}
 	///<summary>PropertyBindingChain</summary>
-	public TArray<string> PropertyBindingChain;
+	public TArray<FName> PropertyBindingChain;
 }

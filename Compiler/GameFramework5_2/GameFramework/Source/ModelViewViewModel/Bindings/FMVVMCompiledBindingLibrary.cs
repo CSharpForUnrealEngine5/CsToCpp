@@ -7,5 +7,5 @@ public partial struct FMVVMCompiledBindingLibrary {
 	public TArray<FMVVMCompiledLoadedPropertyOrFunctionIndex> FieldPaths;
 	public FGuid CompiledBindingLibraryId;
 	public TArray<FMVVMVCompiledFields> CompiledFields;
-	public TArray<string> CompiledFieldNames;
+	public TArray<FName> CompiledFieldNames;
 }

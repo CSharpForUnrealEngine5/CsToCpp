@@ -4,9 +4,9 @@ using CSharpToCpp.Utilities;
 public partial class UUMGSequencePlayer : UObject {
 	public static UClass StaticClass() {return default;}
 	///<summary>@return</summary>
-	public string GetUserTag() { return default; }
+	public FName GetUserTag() { return default; }
 	///<summary>SetUserTag</summary>
-	public void SetUserTag(string InUserTag) {}
+	public void SetUserTag(FName InUserTag) {}
 	///<summary>Animation being played</summary>
 	public UWidgetAnimation Animation;
 	///<summary>RootTemplateInstance</summary>

@@ -20,7 +20,7 @@ public partial class UNiagaraBakerSettings : UObject {
 	///<summary>Active camera that we were saved with</summary>
 	public int CurrentCameraIndex;
 	///<summary>What quality level to use when baking the simulation, where None means use the current quality level.</summary>
-	public string BakeQualityLevel;
+	public FName BakeQualityLevel;
 	///<summary>Should we render just the component or the whole scene.</summary>
 	public bool bRenderComponentOnly;
 	///<summary>Deprecated properties</summary>

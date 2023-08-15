@@ -17,9 +17,9 @@ public partial class URemoteControlPreset : UObject {
 	///<summary>The cache for information about an exposed field.</summary>
 	public TMap<FGuid,FRCCachedFieldData> FieldCache;
 	///<summary>Map of Field Name to GUID.</summary>
-	public TMap<string,FGuid> NameToGuidMap;
+	public TMap<FName,FGuid> NameToGuidMap;
 	///<summary>Holds exposed entities on the preset.</summary>
 	public URemoteControlExposeRegistry Registry;
 	///<summary>DetailsTabIdentifierOverrides</summary>
-	public TArray<string> DetailsTabIdentifierOverrides;
+	public TArray<FName> DetailsTabIdentifierOverrides;
 }

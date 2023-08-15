@@ -4,5 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("MetasoundFrontendDocument.h")]
 public partial struct FMetasoundFrontendGraphClassPresetOptions {
 	public bool bIsPreset;
-	public TSet<string> InputsInheritingDefault;
+	public TSet<FName> InputsInheritingDefault;
 }

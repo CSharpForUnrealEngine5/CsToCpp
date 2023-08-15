@@ -16,7 +16,7 @@ public partial class ASnapshotTestActor : ACharacter {
 	///<summary>ObjectSet</summary>
 	public TSet<UObject> ObjectSet;
 	///<summary>ObjectMap</summary>
-	public TMap<string,UObject> ObjectMap;
+	public TMap<FName,UObject> ObjectMap;
 	///<summary>***************** FSoftObjectPath  *******************</summary>
 	public FSoftObjectPath SoftPath;
 	///<summary>SoftPathArray</summary>
@@ -24,7 +24,7 @@ public partial class ASnapshotTestActor : ACharacter {
 	///<summary>SoftPathSet</summary>
 	public TSet<FSoftObjectPath> SoftPathSet;
 	///<summary>SoftPathMap</summary>
-	public TMap<string,FSoftObjectPath> SoftPathMap;
+	public TMap<FName,FSoftObjectPath> SoftPathMap;
 	///<summary>***************** TSoftObjectPtr  *******************</summary>
 	public TSoftObjectPtr<UObject> SoftObjectPtr;
 	///<summary>SoftObjectPtrArray</summary>
@@ -32,7 +32,7 @@ public partial class ASnapshotTestActor : ACharacter {
 	///<summary>SoftObjectPtrSet</summary>
 	public TSet<TSoftObjectPtr<UObject>> SoftObjectPtrSet;
 	///<summary>SoftObjectPtrMap</summary>
-	public TMap<string,TSoftObjectPtr<UObject>> SoftObjectPtrMap;
+	public TMap<FName,TSoftObjectPtr<UObject>> SoftObjectPtrMap;
 	///<summary>***************** TWeakObjectPtr  *******************</summary>
 	public TWeakObjectPtr<UObject> WeakObjectPtr;
 	///<summary>WeakObjectPtrArray</summary>
@@ -40,7 +40,7 @@ public partial class ASnapshotTestActor : ACharacter {
 	///<summary>WeakObjectPtrSet</summary>
 	public TSet<TWeakObjectPtr<UObject>> WeakObjectPtrSet;
 	///<summary>WeakObjectPtrMap</summary>
-	public TMap<string,TWeakObjectPtr<UObject>> WeakObjectPtrMap;
+	public TMap<FName,TWeakObjectPtr<UObject>> WeakObjectPtrMap;
 	///<summary>***************** External component references  *******************</summary>
 	public UActorComponent ExternalComponentReference;
 	///<summary>ExternalComponentReferenceAsUObject</summary>
@@ -72,9 +72,9 @@ public partial class ASnapshotTestActor : ACharacter {
 	///<summary>EditableInstancedSubobjectArray_OptionalSubobject</summary>
 	public TArray<USubobject> EditableInstancedSubobjectArray_OptionalSubobject;
 	///<summary>EditableInstancedSubobjectMap_OptionalSubobject</summary>
-	public TMap<string,USubobject> EditableInstancedSubobjectMap_OptionalSubobject;
+	public TMap<FName,USubobject> EditableInstancedSubobjectMap_OptionalSubobject;
 	///<summary>EditOnlySubobjectArray_OptionalSubobject</summary>
 	public TArray<USubobject> EditOnlySubobjectArray_OptionalSubobject;
 	///<summary>EditOnlySubobjectMap_OptionalSubobject</summary>
-	public TMap<string,USubobject> EditOnlySubobjectMap_OptionalSubobject;
+	public TMap<FName,USubobject> EditOnlySubobjectMap_OptionalSubobject;
 }

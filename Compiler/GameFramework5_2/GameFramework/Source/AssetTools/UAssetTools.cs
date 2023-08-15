@@ -4,9 +4,9 @@ using CSharpToCpp.Utilities;
 public partial class UAssetTools : UInterface {
 	public static UClass StaticClass() {return default;}
 	///<summary>Creates an asset with the specified name, path, and factory</summary>
-	public virtual UObject CreateAsset(string AssetName,string PackagePath,UClass AssetClass,UFactory Factory,string CallingContext/*=NAME_None*/) { return default; }
+	public virtual UObject CreateAsset(string AssetName,string PackagePath,UClass AssetClass,UFactory Factory,FName CallingContext/*=NAME_None*/) { return default; }
 	///<summary>Opens an asset picker dialog and creates an asset with the specified name and path</summary>
-	public virtual UObject CreateAssetWithDialog(string AssetName,string PackagePath,UClass AssetClass,UFactory Factory,string CallingContext/*=NAME_None*/,bool bCallConfigureProperties/*=true*/) { return default; }
+	public virtual UObject CreateAssetWithDialog(string AssetName,string PackagePath,UClass AssetClass,UFactory Factory,FName CallingContext/*=NAME_None*/,bool bCallConfigureProperties/*=true*/) { return default; }
 	///<summary>Opens an asset picker dialog and creates an asset with the specified name and path. Uses OriginalObject as the duplication source.</summary>
 	public virtual UObject DuplicateAssetWithDialog(string AssetName,string PackagePath,UObject OriginalObject) { return default; }
 	///<summary>Opens an asset picker dialog and creates an asset with the specified name and path.</summary>
@@ -38,9 +38,9 @@ public partial class UAssetTools : UInterface {
 	///<summary>Try and diff two assets using class-specific tool. Will do nothing if either asset is NULL, or they are not the same class.</summary>
 	public virtual void DiffAssets(UObject OldAsset,UObject NewAsset,FRevisionInfo OldRevision,FRevisionInfo NewRevision) {}
 	///<summary>Migrate packages and dependencies to another folder</summary>
-	public virtual void MigratePackages(TArray<string> PackageNamesToMigrate,string DestinationPath,FMigrationOptions Options/*=new FMigrationOptions()*/) {}
+	public virtual void MigratePackages(TArray<FName> PackageNamesToMigrate,string DestinationPath,FMigrationOptions Options/*=new FMigrationOptions()*/) {}
 	///<summary>BeginAdvancedCopyPackages</summary>
-	public virtual void BeginAdvancedCopyPackages(TArray<string> InputNamesToCopy,string TargetPath,FAdvancedCopyCompletedEvent OnCopyComplete) {}
+	public virtual void BeginAdvancedCopyPackages(TArray<FName> InputNamesToCopy,string TargetPath,FAdvancedCopyCompletedEvent OnCopyComplete) {}
 	///<summary>Opens editor for assets</summary>
 	public virtual void OpenEditorForAssets(TArray<UObject> Assets) {}
 }

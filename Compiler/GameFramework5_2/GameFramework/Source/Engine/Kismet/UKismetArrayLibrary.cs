@@ -46,7 +46,7 @@ public partial class UKismetArrayLibrary : UBlueprintFunctionLibrary {
 	///<summary>*Filter an array based on a Class derived from Actor.</summary>
 	public static void FilterArray(TArray<AActor> TargetArray,UClass FilterClass,TArray<AActor> FilteredArray) {}
 	///<summary>Not exposed to users. Supports setting an array property on an object by name.</summary>
-	public static void SetArrayPropertyByName(UObject Object,string PropertyName,TArray<int> Value) {}
+	public static void SetArrayPropertyByName(UObject Object,FName PropertyName,TArray<int> Value) {}
 	///<summary>*Tests if IndexToTest is valid, i.e. greater than or equal to zero, and less than the number of elements in TargetArray.</summary>
 	public static bool Array_IsValidIndex(TArray<int> TargetArray,int IndexToTest) { return default; }
 	///<summary>Gets a random item from specified array</summary>

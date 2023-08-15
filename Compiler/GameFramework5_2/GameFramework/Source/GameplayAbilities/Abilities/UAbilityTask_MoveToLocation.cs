@@ -7,7 +7,7 @@ public partial class UAbilityTask_MoveToLocation : UAbilityTask {
 	///<summary>OnTargetLocationReached</summary>
 	public FMoveToLocationDelegate OnTargetLocationReached;
 	///<summary>Move to the specified location, using the vector curve (range 0 - 1) if specified, otherwise the float curve (range 0 - 1) or fallback to linear interpolation</summary>
-	public static UAbilityTask_MoveToLocation MoveToLocation(UGameplayAbility OwningAbility,string TaskInstanceName,FVector Location,float Duration,UCurveFloat OptionalInterpolationCurve,UCurveVector OptionalVectorInterpolationCurve) { return default; }
+	public static UAbilityTask_MoveToLocation MoveToLocation(UGameplayAbility OwningAbility,FName TaskInstanceName,FVector Location,float Duration,UCurveFloat OptionalInterpolationCurve,UCurveVector OptionalVectorInterpolationCurve) { return default; }
 	///<summary>StartLocation</summary>
 	public FVector StartLocation;
 	///<summary>FVector</summary>

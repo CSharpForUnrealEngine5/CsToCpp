@@ -26,7 +26,7 @@ public partial class ULandscapeSplineControlPoint : UObject {
 	///<summary>Vertical offset of the spline segment mesh. Useful for a river&#39;s surface, among other things.</summary>
 	public float SegmentMeshOffset;
 	///<summary>Name of blend layer to paint when applying spline to landscape</summary>
-	public string LayerName;
+	public FName LayerName;
 	///<summary>If the spline is above the terrain, whether to raise the terrain up to the level of the spline when applying it to the landscape.</summary>
 	public bool bRaiseTerrain;
 	///<summary>If the spline is below the terrain, whether to lower the terrain down to the level of the spline when applying it to the landscape.</summary>
@@ -40,7 +40,7 @@ public partial class ULandscapeSplineControlPoint : UObject {
 	///<summary>bEnableCollision_DEPRECATED</summary>
 	public bool bEnableCollision_DEPRECATED;
 	///<summary>CollisionProfileName_DEPRECATED</summary>
-	public string CollisionProfileName_DEPRECATED;
+	public FName CollisionProfileName_DEPRECATED;
 	///<summary>Whether the Control Point Mesh should cast a shadow.</summary>
 	public bool bCastShadow;
 	///<summary>Whether to hide the mesh in game</summary>

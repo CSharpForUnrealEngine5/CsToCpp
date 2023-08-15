@@ -2,7 +2,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("AudioParameter.h")]
 public partial struct FAudioParameter {
-	public string ParamName;
+	public FName ParamName;
 	public float FloatParam;
 	public bool BoolParam;
 	public int IntParam;
@@ -14,5 +14,5 @@ public partial struct FAudioParameter {
 	public TArray<UObject> ArrayObjectParam;
 	public TArray<string> ArrayStringParam;
 	public EAudioParameterType ParamType;
-	public string TypeName;
+	public FName TypeName;
 }

@@ -13,5 +13,5 @@ public partial class UAnimBlueprintSettings : UObject {
 	///<summary>Whether to allow restrict which base function overrides can created/displayed in animation blueprints</summary>
 	public bool bRestrictBaseFunctionOverrides;
 	///<summary>The set of allowed base functions if restricted</summary>
-	public TArray<string> BaseFunctionOverrideAllowList;
+	public TArray<FName> BaseFunctionOverrideAllowList;
 }

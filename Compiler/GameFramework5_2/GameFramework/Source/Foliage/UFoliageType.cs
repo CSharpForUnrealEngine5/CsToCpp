@@ -50,15 +50,15 @@ public partial class UFoliageType : UObject {
 	///<summary>The valid altitude range where foliage instances will be placed, specified using minimum and maximum world coordinate Z values</summary>
 	public FFloatInterval Height;
 	///<summary>If layer names are specified, painting on landscape will limit the foliage to areas of landscape with the specified layers painted</summary>
-	public TArray<string> LandscapeLayers;
+	public TArray<FName> LandscapeLayers;
 	///<summary>Specifies the minimum value above which the landscape layer weight value must be, in order for foliage instances to be placed in a specific area</summary>
 	public float MinimumLayerWeight;
 	///<summary>If layer names are specified, painting on landscape will exclude the foliage to areas of landscape without the specified layers painted</summary>
-	public TArray<string> ExclusionLandscapeLayers;
+	public TArray<FName> ExclusionLandscapeLayers;
 	///<summary>Specifies the minimum value above which the landscape exclusion layer weight value must be, in order for foliage instances to be excluded in a specific area</summary>
 	public float MinimumExclusionLayerWeight;
 	///<summary>LandscapeLayer_DEPRECATED</summary>
-	public string LandscapeLayer_DEPRECATED;
+	public FName LandscapeLayer_DEPRECATED;
 	///<summary>If checked, an overlap test with existing world geometry is performed before each instance is placed</summary>
 	public bool CollisionWithWorld;
 	///<summary>The foliage instance&#39;s collision bounding box will be scaled by the specified amount before performing the overlap check</summary>

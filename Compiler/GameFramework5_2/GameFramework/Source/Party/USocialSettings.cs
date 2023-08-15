@@ -5,7 +5,7 @@ using CSharpToCpp.Utilities;
 public partial class USocialSettings : UObject {
 	public static UClass StaticClass() {return default;}
 	///<summary>The specific OSS&#39; that have their IDs stored with an additional prefix for the environment to which they pertain.</summary>
-	public TArray<string> OssNamesWithEnvironmentIdPrefix;
+	public TArray<FName> OssNamesWithEnvironmentIdPrefix;
 	///<summary>How many players are in a party by default</summary>
 	public int DefaultMaxPartySize;
 	///<summary>If true, prioritize the platform&#39;s social system over the publisher&#39;s</summary>
@@ -25,5 +25,5 @@ public partial class USocialSettings : UObject {
 	///<summary>SocialPlatformDescriptions</summary>
 	public TArray<FSocialPlatformDescription> SocialPlatformDescriptions;
 	///<summary>SonyOSSNames</summary>
-	public TArray<string> SonyOSSNames;
+	public TArray<FName> SonyOSSNames;
 }

@@ -4,5 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("RemoteControlPreset.h")]
 public partial struct FRCCachedFieldData {
 	public FGuid LayoutGroupId;
-	public string OwnerObjectAlias;
+	public FName OwnerObjectAlias;
 }

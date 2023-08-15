@@ -6,7 +6,7 @@ public partial class UContextualAnimUtilities : UBlueprintFunctionLibrary {
 	///<summary>BP_DrawDebugPose</summary>
 	public static void BP_DrawDebugPose(UObject WorldContextObject,UAnimSequenceBase Animation,float Time,FTransform LocalToWorldTransform,FLinearColor Color,float LifeTime,float Thickness) {}
 	///<summary>BP_CreateContextualAnimSceneBindings</summary>
-	public static bool BP_CreateContextualAnimSceneBindings(UContextualAnimSceneAsset SceneAsset,TMap<string,FContextualAnimSceneBindingContext> Params,FContextualAnimSceneBindings OutBindings) { return default; }
+	public static bool BP_CreateContextualAnimSceneBindings(UContextualAnimSceneAsset SceneAsset,TMap<FName,FContextualAnimSceneBindingContext> Params,FContextualAnimSceneBindings OutBindings) { return default; }
 	///<summary>BP_CreateContextualAnimSceneBindingsForTwoActors</summary>
 	public static bool BP_CreateContextualAnimSceneBindingsForTwoActors(UContextualAnimSceneAsset SceneAsset,FContextualAnimSceneBindingContext Primary,FContextualAnimSceneBindingContext Secondary,FContextualAnimSceneBindings OutBindings) { return default; }
 	///<summary>Montage Blueprint Interface</summary>
@@ -22,21 +22,21 @@ public partial class UContextualAnimUtilities : UBlueprintFunctionLibrary {
 	///<summary>BP_SceneBindings_GetBindings</summary>
 	public static TArray<FContextualAnimSceneBinding> BP_SceneBindings_GetBindings(FContextualAnimSceneBindings Bindings) { return default; }
 	///<summary>BP_SceneBindings_GetBindingByRole</summary>
-	public static FContextualAnimSceneBinding BP_SceneBindings_GetBindingByRole(FContextualAnimSceneBindings Bindings,string Role) { return default; }
+	public static FContextualAnimSceneBinding BP_SceneBindings_GetBindingByRole(FContextualAnimSceneBindings Bindings,FName Role) { return default; }
 	///<summary>BP_SceneBindings_GetBindingByActor</summary>
 	public static FContextualAnimSceneBinding BP_SceneBindings_GetBindingByActor(FContextualAnimSceneBindings Bindings,AActor Actor) { return default; }
 	///<summary>BP_SceneBinding_GetAnimationFromBinding</summary>
 	public static UAnimSequenceBase BP_SceneBinding_GetAnimationFromBinding(FContextualAnimSceneBindings Bindings,FContextualAnimSceneBinding Binding) { return default; }
 	///<summary>BP_SceneBinding_GetRoleFromBinding</summary>
-	public static string BP_SceneBinding_GetRoleFromBinding(FContextualAnimSceneBindings Bindings,FContextualAnimSceneBinding Binding) { return default; }
+	public static FName BP_SceneBinding_GetRoleFromBinding(FContextualAnimSceneBindings Bindings,FContextualAnimSceneBinding Binding) { return default; }
 	///<summary>BP_SceneBindings_GetSceneAsset</summary>
 	public static UContextualAnimSceneAsset BP_SceneBindings_GetSceneAsset(FContextualAnimSceneBindings Bindings) { return default; }
 	///<summary>BP_SceneBindings_GetSectionAndAnimSetIndices</summary>
 	public static void BP_SceneBindings_GetSectionAndAnimSetIndices(FContextualAnimSceneBindings Bindings,int SectionIdx,int AnimSetIdx) {}
 	///<summary>BP_SceneBindings_GetAlignmentTransformForRoleRelativeToOtherRole</summary>
-	public static FTransform BP_SceneBindings_GetAlignmentTransformForRoleRelativeToOtherRole(FContextualAnimSceneBindings Bindings,string Role,string RelativeToRole,float Time) { return default; }
+	public static FTransform BP_SceneBindings_GetAlignmentTransformForRoleRelativeToOtherRole(FContextualAnimSceneBindings Bindings,FName Role,FName RelativeToRole,float Time) { return default; }
 	///<summary>BP_SceneBindings_GetAlignmentTransformForRoleRelativeToPivot</summary>
-	public static FTransform BP_SceneBindings_GetAlignmentTransformForRoleRelativeToPivot(FContextualAnimSceneBindings Bindings,string Role,FContextualAnimSetPivot Pivot,float Time) { return default; }
+	public static FTransform BP_SceneBindings_GetAlignmentTransformForRoleRelativeToPivot(FContextualAnimSceneBindings Bindings,FName Role,FContextualAnimSetPivot Pivot,float Time) { return default; }
 	///<summary>BP_SceneBindings_GetAlignmentTransformFromBinding</summary>
 	public static FTransform BP_SceneBindings_GetAlignmentTransformFromBinding(FContextualAnimSceneBindings Bindings,FContextualAnimSceneBinding Binding,FContextualAnimSetPivot Pivot) { return default; }
 	///<summary>FContextualAnimSceneBindingContext Blueprint Interface</summary>

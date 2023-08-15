@@ -7,7 +7,7 @@ public partial class UNiagaraSimulationStageBase : UNiagaraMergeable {
 	///<summary>Script</summary>
 	public UNiagaraScript Script;
 	///<summary>SimulationStageName</summary>
-	public string SimulationStageName;
+	public FName SimulationStageName;
 	///<summary>bEnabled</summary>
 	public bool bEnabled;
 	///<summary>OuterEmitterVersion</summary>

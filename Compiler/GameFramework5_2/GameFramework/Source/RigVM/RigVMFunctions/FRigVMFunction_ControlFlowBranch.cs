@@ -8,5 +8,5 @@ public partial struct FRigVMFunction_ControlFlowBranch {
 	public FRigVMExecuteContext True;
 	public FRigVMExecuteContext False;
 	public FRigVMExecuteContext Completed;
-	public string BlockToRun;
+	public FName BlockToRun;
 }

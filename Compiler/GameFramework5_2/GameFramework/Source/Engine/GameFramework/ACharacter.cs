@@ -17,27 +17,27 @@ public partial class ACharacter : APawn {
 	///<summary>Client RPC that passes through to CharacterMovement (avoids RPC overhead for components).</summary>
 	public void ClientMoveResponsePacked(FCharacterMoveResponsePackedBits PackedBits) {}
 	///<summary>ServerMove</summary>
-	public void ServerMove(float TimeStamp,FVector_NetQuantize10 InAccel,FVector_NetQuantize100 ClientLoc,byte CompressedMoveFlags,byte ClientRoll,uint View,UPrimitiveComponent ClientMovementBase,string ClientBaseBoneName,byte ClientMovementMode) {}
+	public void ServerMove(float TimeStamp,FVector_NetQuantize10 InAccel,FVector_NetQuantize100 ClientLoc,byte CompressedMoveFlags,byte ClientRoll,uint View,UPrimitiveComponent ClientMovementBase,FName ClientBaseBoneName,byte ClientMovementMode) {}
 	///<summary>ServerMoveNoBase</summary>
 	public void ServerMoveNoBase(float TimeStamp,FVector_NetQuantize10 InAccel,FVector_NetQuantize100 ClientLoc,byte CompressedMoveFlags,byte ClientRoll,uint View,byte ClientMovementMode) {}
 	///<summary>ServerMoveDual</summary>
-	public void ServerMoveDual(float TimeStamp0,FVector_NetQuantize10 InAccel0,byte PendingFlags,uint View0,float TimeStamp,FVector_NetQuantize10 InAccel,FVector_NetQuantize100 ClientLoc,byte NewFlags,byte ClientRoll,uint View,UPrimitiveComponent ClientMovementBase,string ClientBaseBoneName,byte ClientMovementMode) {}
+	public void ServerMoveDual(float TimeStamp0,FVector_NetQuantize10 InAccel0,byte PendingFlags,uint View0,float TimeStamp,FVector_NetQuantize10 InAccel,FVector_NetQuantize100 ClientLoc,byte NewFlags,byte ClientRoll,uint View,UPrimitiveComponent ClientMovementBase,FName ClientBaseBoneName,byte ClientMovementMode) {}
 	///<summary>ServerMoveDualNoBase</summary>
 	public void ServerMoveDualNoBase(float TimeStamp0,FVector_NetQuantize10 InAccel0,byte PendingFlags,uint View0,float TimeStamp,FVector_NetQuantize10 InAccel,FVector_NetQuantize100 ClientLoc,byte NewFlags,byte ClientRoll,uint View,byte ClientMovementMode) {}
 	///<summary>ServerMoveDualHybridRootMotion</summary>
-	public void ServerMoveDualHybridRootMotion(float TimeStamp0,FVector_NetQuantize10 InAccel0,byte PendingFlags,uint View0,float TimeStamp,FVector_NetQuantize10 InAccel,FVector_NetQuantize100 ClientLoc,byte NewFlags,byte ClientRoll,uint View,UPrimitiveComponent ClientMovementBase,string ClientBaseBoneName,byte ClientMovementMode) {}
+	public void ServerMoveDualHybridRootMotion(float TimeStamp0,FVector_NetQuantize10 InAccel0,byte PendingFlags,uint View0,float TimeStamp,FVector_NetQuantize10 InAccel,FVector_NetQuantize100 ClientLoc,byte NewFlags,byte ClientRoll,uint View,UPrimitiveComponent ClientMovementBase,FName ClientBaseBoneName,byte ClientMovementMode) {}
 	///<summary>ServerMoveOld</summary>
 	public void ServerMoveOld(float OldTimeStamp,FVector_NetQuantize10 OldAccel,byte OldMoveFlags) {}
 	///<summary>ClientAckGoodMove</summary>
 	public void ClientAckGoodMove(float TimeStamp) {}
 	///<summary>ClientAdjustPosition</summary>
-	public void ClientAdjustPosition(float TimeStamp,FVector NewLoc,FVector NewVel,UPrimitiveComponent NewBase,string NewBaseBoneName,bool bHasBase,bool bBaseRelativePosition,byte ServerMovementMode) {}
+	public void ClientAdjustPosition(float TimeStamp,FVector NewLoc,FVector NewVel,UPrimitiveComponent NewBase,FName NewBaseBoneName,bool bHasBase,bool bBaseRelativePosition,byte ServerMovementMode) {}
 	///<summary>Bandwidth saving version, when velocity is zeroed</summary>
-	public void ClientVeryShortAdjustPosition(float TimeStamp,FVector NewLoc,UPrimitiveComponent NewBase,string NewBaseBoneName,bool bHasBase,bool bBaseRelativePosition,byte ServerMovementMode) {}
+	public void ClientVeryShortAdjustPosition(float TimeStamp,FVector NewLoc,UPrimitiveComponent NewBase,FName NewBaseBoneName,bool bHasBase,bool bBaseRelativePosition,byte ServerMovementMode) {}
 	///<summary>ClientAdjustRootMotionPosition</summary>
-	public void ClientAdjustRootMotionPosition(float TimeStamp,float ServerMontageTrackPosition,FVector ServerLoc,FVector_NetQuantizeNormal ServerRotation,float ServerVelZ,UPrimitiveComponent ServerBase,string ServerBoneName,bool bHasBase,bool bBaseRelativePosition,byte ServerMovementMode) {}
+	public void ClientAdjustRootMotionPosition(float TimeStamp,float ServerMontageTrackPosition,FVector ServerLoc,FVector_NetQuantizeNormal ServerRotation,float ServerVelZ,UPrimitiveComponent ServerBase,FName ServerBoneName,bool bHasBase,bool bBaseRelativePosition,byte ServerMovementMode) {}
 	///<summary>ClientAdjustRootMotionSourcePosition</summary>
-	public void ClientAdjustRootMotionSourcePosition(float TimeStamp,FRootMotionSourceGroup ServerRootMotion,bool bHasAnimRootMotion,float ServerMontageTrackPosition,FVector ServerLoc,FVector_NetQuantizeNormal ServerRotation,float ServerVelZ,UPrimitiveComponent ServerBase,string ServerBoneName,bool bHasBase,bool bBaseRelativePosition,byte ServerMovementMode) {}
+	public void ClientAdjustRootMotionSourcePosition(float TimeStamp,FRootMotionSourceGroup ServerRootMotion,bool bHasAnimRootMotion,float ServerMontageTrackPosition,FVector ServerLoc,FVector_NetQuantizeNormal ServerRotation,float ServerVelZ,UPrimitiveComponent ServerBase,FName ServerBoneName,bool bHasBase,bool bBaseRelativePosition,byte ServerMovementMode) {}
 	///<summary>Cache mesh offset from capsule. This is used as the target for network smoothing interpolation, when the mesh is offset with lagged smoothing.</summary>
 	public virtual void CacheInitialMeshOffset(FVector MeshRelativeLocation,FRotator MeshRelativeRotation) {}
 	///<summary>Info about our current movement base (object we are standing on).</summary>
@@ -117,7 +117,7 @@ public partial class ACharacter : APawn {
 	///<summary>True if jump is actively providing a force, such as when the jump key is held and the time it has been held is less than JumpMaxHoldTime.</summary>
 	public virtual bool IsJumpProvidingForce() { return default; }
 	///<summary>Play Animation Montage on the character mesh. Returns the length of the animation montage in seconds, or 0.f if failed to play. *</summary>
-	public virtual float PlayAnimMontage(UAnimMontage AnimMontage,float InPlayRate/*=1.0f*/,string StartSectionName/*=NAME_None*/) { return default; }
+	public virtual float PlayAnimMontage(UAnimMontage AnimMontage,float InPlayRate/*=1.0f*/,FName StartSectionName/*=NAME_None*/) { return default; }
 	///<summary>Stop Animation Montage. If nullptr, it will stop what&#39;s currently active. The Blend Out Time is taken from the montage asset that is being stopped. *</summary>
 	public virtual void StopAnimMontage(UAnimMontage AnimMontage/*=nullptr*/) {}
 	///<summary>Return current playing Montage *</summary>

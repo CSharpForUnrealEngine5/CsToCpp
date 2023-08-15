@@ -3,5 +3,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("Engine/InputAxisKeyDelegateBinding.h")]
 public partial struct FBlueprintInputAxisKeyDelegateBinding {
 	public FKey AxisKey;
-	public string FunctionNameToBind;
+	public FName FunctionNameToBind;
 }

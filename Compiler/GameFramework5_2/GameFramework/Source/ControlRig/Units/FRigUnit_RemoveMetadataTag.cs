@@ -4,7 +4,7 @@ using CSharpToCpp.Utilities;
 [CppInclude("Units/Hierarchy/RigUnit_Metadata.h")]
 public partial struct FRigUnit_RemoveMetadataTag {
 	public FRigElementKey Item;
-	public string Tag;
+	public FName Tag;
 	public bool Removed;
 	public FCachedRigElement CachedIndex;
 }

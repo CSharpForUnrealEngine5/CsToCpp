@@ -4,7 +4,7 @@ using CSharpToCpp.Utilities;
 [CppInclude("Components/GameFrameworkComponentDelegates.h")]
 public partial struct FActorInitStateChangedParams {
 	public AActor OwningActor;
-	public string FeatureName;
+	public FName FeatureName;
 	public UObject Implementer;
 	public FGameplayTag FeatureState;
 }

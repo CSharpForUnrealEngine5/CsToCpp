@@ -29,5 +29,5 @@ public partial class UTargetingSelectionTask_AOE : UTargetingTask {
 	///<summary>The half height to use for capsule overlap checks</summary>
 	public FScalableFloat HalfHeight;
 	///<summary>The component tag to use if a custom component is desired as the overlap shape.</summary>
-	public string ComponentTag;
+	public FName ComponentTag;
 }

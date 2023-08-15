@@ -3,7 +3,7 @@ using CSharpToCpp.Utilities;
 [CppInclude("ImagePlateComponent.h")]
 public partial struct FImagePlateParameters {
 	public UMaterialInterface Material;
-	public string TextureParameterName;
+	public FName TextureParameterName;
 	public bool bFillScreen;
 	public FVector2D FillScreenAmount;
 	public FVector2D FixedSize;

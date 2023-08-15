@@ -5,17 +5,17 @@ using CSharpToCpp.Utilities;
 public partial class UContextualAnimNewIKTargetParams : UObject {
 	public static UClass StaticClass() {return default;}
 	///<summary>SourceRole</summary>
-	public string SourceRole;
+	public FName SourceRole;
 	///<summary>SourceBone</summary>
 	public FBoneReference SourceBone;
 	///<summary>Provider</summary>
 	public EContextualAnimIKTargetProvider Provider;
 	///<summary>TargetRole</summary>
-	public string TargetRole;
+	public FName TargetRole;
 	///<summary>TargetBone</summary>
 	public FBoneReference TargetBone;
 	///<summary>GoalName</summary>
-	public string GoalName;
+	public FName GoalName;
 	///<summary>SectionIdx</summary>
 	public int SectionIdx;
 	///<summary>GetTargetRoleOptions</summary>
@@ -23,5 +23,5 @@ public partial class UContextualAnimNewIKTargetParams : UObject {
 	///<summary>SceneAssetPtr</summary>
 	public TWeakObjectPtr<UContextualAnimSceneAsset> SceneAssetPtr;
 	///<summary>CachedRoles</summary>
-	public TArray<string> CachedRoles;
+	public TArray<FName> CachedRoles;
 }

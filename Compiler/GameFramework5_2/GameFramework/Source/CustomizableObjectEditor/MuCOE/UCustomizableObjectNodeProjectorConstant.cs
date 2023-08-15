@@ -14,5 +14,5 @@ public partial class UCustomizableObjectNodeProjectorConstant : UCustomizableObj
 	///<summary>ReferenceSkeletonIndex</summary>
 	public uint ReferenceSkeletonIndex;
 	///<summary>ProjectorBone</summary>
-	public string ProjectorBone;
+	public FName ProjectorBone;
 }

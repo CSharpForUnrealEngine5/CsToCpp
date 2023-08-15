@@ -7,7 +7,7 @@ public partial class URootMotionModifier_AdjustmentBlendWarp : URootMotionModifi
 	///<summary>bWarpIKBones</summary>
 	public bool bWarpIKBones;
 	///<summary>IKBones</summary>
-	public TArray<string> IKBones;
+	public TArray<FName> IKBones;
 	///<summary>CachedMeshTransform</summary>
 	public FTransform CachedMeshTransform;
 	///<summary>CachedMeshRelativeTransform</summary>

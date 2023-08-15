@@ -145,7 +145,7 @@ public partial class UWidgetComponent : UMeshComponent {
 	///<summary>Allows the widget component to be used at editor time.  For use in the VR-Editor.</summary>
 	public bool bEditTimeUsable;
 	///<summary>Layer Name the widget will live on</summary>
-	public string SharedLayerName;
+	public FName SharedLayerName;
 	///<summary>ZOrder the layer will be created on, note this only matters on the first time a new layer is created, subsequent additions to the same layer will use the initially defined ZOrder</summary>
 	public int LayerZOrder;
 	///<summary>Controls the geometry of the widget component. See EWidgetGeometryMode.</summary>

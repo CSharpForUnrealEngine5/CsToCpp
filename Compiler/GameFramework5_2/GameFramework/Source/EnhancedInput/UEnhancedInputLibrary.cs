@@ -14,7 +14,7 @@ public partial class UEnhancedInputLibrary : UBlueprintFunctionLibrary {
 	///<summary>Returns the Player Mappable Key Settings owned by the Action Key Mapping or by the referenced Input Action, or nothing based of the Setting Behavior.</summary>
 	public static UPlayerMappableKeySettings GetPlayerMappableKeySettings(FEnhancedActionKeyMapping ActionKeyMapping) { return default; }
 	///<summary>Returns the name of the mapping based on setting behavior used. If no name is found in the Mappable Key Settings it will return the name set in Player Mappable Options if bIsPlayerMappable is true.</summary>
-	public static string GetMappingName(FEnhancedActionKeyMapping ActionKeyMapping) { return default; }
+	public static FName GetMappingName(FEnhancedActionKeyMapping ActionKeyMapping) { return default; }
 	///<summary>Returns true if this Action Key Mapping either holds a Player Mappable Key Settings or is set bIsPlayerMappable.</summary>
 	public static bool IsActionKeyMappingPlayerMappable(FEnhancedActionKeyMapping ActionKeyMapping) { return default; }
 	///<summary>GetInputActionvalue internal accessor function for actions that have been bound to from a UEnhancedInputComponent</summary>

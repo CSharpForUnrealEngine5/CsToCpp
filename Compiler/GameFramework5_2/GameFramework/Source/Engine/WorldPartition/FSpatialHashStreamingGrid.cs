@@ -3,7 +3,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Represents a PIE/Game streaming grid</summary>
 [CppInclude("WorldPartition/WorldPartitionRuntimeSpatialHash.h")]
 public partial struct FSpatialHashStreamingGrid {
-	public string GridName;
+	public FName GridName;
 	public FVector Origin;
 	public int CellSize;
 	public float LoadingRange;

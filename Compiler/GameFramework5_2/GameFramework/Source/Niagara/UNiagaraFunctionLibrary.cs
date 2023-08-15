@@ -11,7 +11,7 @@ public partial class UNiagaraFunctionLibrary : UBlueprintFunctionLibrary {
 	///<summary>Spawns a Niagara System at the specified world location/rotation</summary>
 	public static UNiagaraComponent SpawnSystemAtLocation(UObject WorldContextObject,UNiagaraSystem SystemTemplate,FVector Location,FRotator Rotation/*=FRotator.ZeroRotator*/,FVector Scale/*=new FVector(1.0f)*/,bool bAutoDestroy/*=true*/,bool bAutoActivate/*=true*/,ENCPoolMethod PoolingMethod/*=ENCPoolMethod.None*/,bool bPreCullCheck/*=true*/) { return default; }
 	///<summary>SpawnSystemAttached</summary>
-	public static UNiagaraComponent SpawnSystemAttached(UNiagaraSystem SystemTemplate,USceneComponent AttachToComponent,string AttachPointName,FVector Location,FRotator Rotation,EAttachLocation LocationType,bool bAutoDestroy,bool bAutoActivate/*=true*/,ENCPoolMethod PoolingMethod/*=ENCPoolMethod.None*/,bool bPreCullCheck/*=true*/) { return default; }
+	public static UNiagaraComponent SpawnSystemAttached(UNiagaraSystem SystemTemplate,USceneComponent AttachToComponent,FName AttachPointName,FVector Location,FRotator Rotation,EAttachLocation LocationType,bool bAutoDestroy,bool bAutoActivate/*=true*/,ENCPoolMethod PoolingMethod/*=ENCPoolMethod.None*/,bool bPreCullCheck/*=true*/) { return default; }
 	///<summary>Sets a Niagara StaticMesh parameter by name, overriding locally if necessary.</summary>
 	public static void OverrideSystemUserVariableStaticMeshComponent(UNiagaraComponent NiagaraSystem,string OverrideName,UStaticMeshComponent StaticMeshComponent) {}
 	///<summary>OverrideSystemUserVariableStaticMesh</summary>
@@ -19,11 +19,11 @@ public partial class UNiagaraFunctionLibrary : UBlueprintFunctionLibrary {
 	///<summary>Sets a Niagara StaticMesh parameter by name, overriding locally if necessary.</summary>
 	public static void OverrideSystemUserVariableSkeletalMeshComponent(UNiagaraComponent NiagaraSystem,string OverrideName,USkeletalMeshComponent SkeletalMeshComponent) {}
 	///<summary>Sets the SamplingRegion to use on the skeletal mesh data interface, this is destructive as it modifies the data interface.</summary>
-	public static void SetSkeletalMeshDataInterfaceSamplingRegions(UNiagaraComponent NiagaraSystem,string OverrideName,TArray<string> SamplingRegions) {}
+	public static void SetSkeletalMeshDataInterfaceSamplingRegions(UNiagaraComponent NiagaraSystem,string OverrideName,TArray<FName> SamplingRegions) {}
 	///<summary>Sets the Filtered Bones to use on the skeletal mesh data interface, this is destructive as it modifies the data interface.</summary>
-	public static void SetSkeletalMeshDataInterfaceFilteredBones(UNiagaraComponent NiagaraSystem,string OverrideName,TArray<string> FilteredBones) {}
+	public static void SetSkeletalMeshDataInterfaceFilteredBones(UNiagaraComponent NiagaraSystem,string OverrideName,TArray<FName> FilteredBones) {}
 	///<summary>Sets the Filtered Sockets to use on the skeletal mesh data interface, this is destructive as it modifies the data interface.</summary>
-	public static void SetSkeletalMeshDataInterfaceFilteredSockets(UNiagaraComponent NiagaraSystem,string OverrideName,TArray<string> FilteredSockets) {}
+	public static void SetSkeletalMeshDataInterfaceFilteredSockets(UNiagaraComponent NiagaraSystem,string OverrideName,TArray<FName> FilteredSockets) {}
 	///<summary>Overrides the Texture Object for a Niagara Texture Data Interface User Parameter.</summary>
 	public static void SetTextureObject(UNiagaraComponent NiagaraSystem,string OverrideName,UTexture Texture) {}
 	///<summary>Overrides the 2D Array Texture for a Niagara 2D Array Texture Data Interface User Parameter.</summary>

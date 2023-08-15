@@ -5,7 +5,7 @@ using CSharpToCpp.Utilities;
 public partial class ULevelSnapshot : UObject {
 	public static UClass StaticClass() {return default;}
 	///<summary>Sets the name of this snapshot.</summary>
-	public void SetSnapshotName(string InSnapshotName) {}
+	public void SetSnapshotName(FName InSnapshotName) {}
 	///<summary>SetSnapshotDescription</summary>
 	public void SetSnapshotDescription(string InSnapshotDescription) {}
 	///<summary>GetMapPath</summary>
@@ -13,7 +13,7 @@ public partial class ULevelSnapshot : UObject {
 	///<summary>GetCaptureTime</summary>
 	public FDateTime GetCaptureTime() { return default; }
 	///<summary>GetSnapshotName</summary>
-	public string GetSnapshotName() { return default; }
+	public FName GetSnapshotName() { return default; }
 	///<summary>GetSnapshotDescription</summary>
 	public string GetSnapshotDescription() { return default; }
 	///<summary>Transient package that contains the world. Exists so calls to MarkPackageDirty, called e.g. by AActor::Modify, do not mark the snapshot dirty.</summary>
@@ -35,7 +35,7 @@ public partial class ULevelSnapshot : UObject {
 	///<summary>UTC Time that the snapshot was taken</summary>
 	public FDateTime CaptureTime;
 	///<summary>User defined name for the snapshot, can differ from the actual asset name.</summary>
-	public string SnapshotName;
+	public FName SnapshotName;
 	///<summary>User defined description of the snapshot</summary>
 	public string SnapshotDescription;
 }

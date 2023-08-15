@@ -7,7 +7,7 @@ public partial struct FAnimNotifyEvent {
 	public float TriggerTimeOffset;
 	public float EndTriggerTimeOffset;
 	public float TriggerWeightThreshold;
-	public string NotifyName;
+	public FName NotifyName;
 	public UAnimNotify Notify;
 	public UAnimNotifyState NotifyStateClass;
 	public float Duration;

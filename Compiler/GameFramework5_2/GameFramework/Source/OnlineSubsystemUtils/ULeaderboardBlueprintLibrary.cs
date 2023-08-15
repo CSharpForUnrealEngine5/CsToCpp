@@ -5,5 +5,5 @@ using CSharpToCpp.Utilities;
 public partial class ULeaderboardBlueprintLibrary : UBlueprintFunctionLibrary {
 	public static UClass StaticClass() {return default;}
 	///<summary>Writes an integer value to the specified leaderboard</summary>
-	public static bool WriteLeaderboardInteger(APlayerController PlayerController,string StatName,int StatValue) { return default; }
+	public static bool WriteLeaderboardInteger(APlayerController PlayerController,FName StatName,int StatValue) { return default; }
 }

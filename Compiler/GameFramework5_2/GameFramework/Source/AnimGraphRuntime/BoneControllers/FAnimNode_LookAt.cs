@@ -14,7 +14,7 @@ public partial struct FAnimNode_LookAt {
 	public float InterpolationTime;
 	public float InterpolationTriggerThreashold;
 	public FBoneReference LookAtBone_DEPRECATED;
-	public string LookAtSocket_DEPRECATED;
+	public FName LookAtSocket_DEPRECATED;
 	public EAxisOption LookAtAxis_DEPRECATED;
 	public FVector CustomLookAtAxis_DEPRECATED;
 	public EAxisOption LookUpAxis_DEPRECATED;

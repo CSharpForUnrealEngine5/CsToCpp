@@ -10,21 +10,21 @@ public partial class UNiagaraDataChannelWriter : UObject {
 	///<summary>Num</summary>
 	public int Num() { return default; }
 	///<summary>WriteFloat</summary>
-	public void WriteFloat(string VarName,int Index,double InData) {}
+	public void WriteFloat(FName VarName,int Index,double InData) {}
 	///<summary>WriteVector2D</summary>
-	public void WriteVector2D(string VarName,int Index,FVector2D InData) {}
+	public void WriteVector2D(FName VarName,int Index,FVector2D InData) {}
 	///<summary>WriteVector</summary>
-	public void WriteVector(string VarName,int Index,FVector InData) {}
+	public void WriteVector(FName VarName,int Index,FVector InData) {}
 	///<summary>WriteVector4</summary>
-	public void WriteVector4(string VarName,int Index,FVector4 InData) {}
+	public void WriteVector4(FName VarName,int Index,FVector4 InData) {}
 	///<summary>WriteQuat</summary>
-	public void WriteQuat(string VarName,int Index,FQuat InData) {}
+	public void WriteQuat(FName VarName,int Index,FQuat InData) {}
 	///<summary>WriteLinearColor</summary>
-	public void WriteLinearColor(string VarName,int Index,FLinearColor InData) {}
+	public void WriteLinearColor(FName VarName,int Index,FLinearColor InData) {}
 	///<summary>WriteInt</summary>
-	public void WriteInt(string VarName,int Index,int InData) {}
+	public void WriteInt(FName VarName,int Index,int InData) {}
 	///<summary>WriteBool</summary>
-	public void WriteBool(string VarName,int Index,bool InData) {}
+	public void WriteBool(FName VarName,int Index,bool InData) {}
 	///<summary>WriteSpawnInfo</summary>
-	public void WriteSpawnInfo(string VarName,int Index,FNiagaraSpawnInfo InData) {}
+	public void WriteSpawnInfo(FName VarName,int Index,FNiagaraSpawnInfo InData) {}
 }

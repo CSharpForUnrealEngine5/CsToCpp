@@ -4,6 +4,6 @@ using CSharpToCpp.Utilities;
 [CppInclude("MetasoundFrontendDocument.h")]
 public partial struct FMetasoundFrontendEdgeStyle {
 	public FGuid NodeID;
-	public string OutputName;
+	public FName OutputName;
 	public TArray<FMetasoundFrontendEdgeStyleLiteralColorPair> LiteralColorPairs;
 }

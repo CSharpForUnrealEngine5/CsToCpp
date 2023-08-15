@@ -4,7 +4,7 @@ using CSharpToCpp.Utilities;
 [CppInclude("RigVMModel/RigVMControllerActions.h")]
 public partial struct FRigVMSetRemappedVariableAction {
 	public string NodePath;
-	public string InnerVariableName;
-	public string OldOuterVariableName;
-	public string NewOuterVariableName;
+	public FName InnerVariableName;
+	public FName OldOuterVariableName;
+	public FName NewOuterVariableName;
 }

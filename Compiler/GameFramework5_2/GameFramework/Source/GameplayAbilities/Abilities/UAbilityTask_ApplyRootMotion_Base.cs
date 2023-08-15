@@ -5,7 +5,7 @@ using CSharpToCpp.Utilities;
 public partial class UAbilityTask_ApplyRootMotion_Base : UAbilityTask {
 	public static UClass StaticClass() {return default;}
 	///<summary>ForceName</summary>
-	public string ForceName;
+	public FName ForceName;
 	///<summary>What to do with character&#39;s Velocity when root motion finishes</summary>
 	public ERootMotionFinishVelocityMode FinishVelocityMode;
 	///<summary>If FinishVelocityMode mode is &quot;SetVelocity&quot;, character velocity is set to this value when root motion finishes</summary>

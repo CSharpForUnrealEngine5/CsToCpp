@@ -9,7 +9,7 @@ public partial class UAnimNextInterfaceGraph : UObject {
 	///<summary>VMRuntimeSettings</summary>
 	public FRigVMRuntimeSettings VMRuntimeSettings;
 	///<summary>ReturnTypeName</summary>
-	public string ReturnTypeName;
+	public FName ReturnTypeName;
 	///<summary>ReturnTypeStruct</summary>
 	public UScriptStruct ReturnTypeStruct;
 	///<summary>EditorData</summary>

@@ -14,5 +14,5 @@ public partial struct FKismetUserDeclaredFunctionMetadata {
 	public bool bThreadSafe;
 	public bool bIsUnsafeDuringActorConstruction;
 	public short HasLatentFunctions;
-	public TMap<string,string> MetaDataMap;
+	public TMap<FName,string> MetaDataMap;
 }

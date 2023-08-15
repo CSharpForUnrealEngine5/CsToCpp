@@ -2,9 +2,9 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("ContextualAnimTypes.h")]
 public partial struct FContextualAnimIKTargetDefinition {
-	public string GoalName;
-	public string BoneName;
+	public FName GoalName;
+	public FName BoneName;
 	public EContextualAnimIKTargetProvider Provider;
-	public string TargetRoleName;
-	public string TargetBoneName;
+	public FName TargetRoleName;
+	public FName TargetBoneName;
 }

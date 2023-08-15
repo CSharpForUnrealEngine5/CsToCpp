@@ -73,7 +73,7 @@ public partial class UCommonButtonBase : UCommonUserWidget {
 	///<summary>Returns the dynamic instance of the material being used for this button, if it is using a single material style.</summary>
 	public UMaterialInstanceDynamic GetSingleMaterialStyleMID() { return default; }
 	///<summary>SetInputActionProgressMaterial</summary>
-	public void SetInputActionProgressMaterial(FSlateBrush InProgressMaterialBrush,string InProgressMaterialParam) {}
+	public void SetInputActionProgressMaterial(FSlateBrush InProgressMaterialBrush,FName InProgressMaterialParam) {}
 	///<summary>SetPressedSoundOverride</summary>
 	public void SetPressedSoundOverride(USoundBase Sound) {}
 	///<summary>SetHoveredSoundOverride</summary>

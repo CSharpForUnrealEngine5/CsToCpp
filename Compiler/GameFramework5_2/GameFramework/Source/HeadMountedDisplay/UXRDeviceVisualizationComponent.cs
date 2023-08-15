@@ -8,9 +8,9 @@ public partial class UXRDeviceVisualizationComponent : UStaticMeshComponent {
 	///<summary>SetIsVisualizationActive</summary>
 	public void SetIsVisualizationActive(bool bNewVisualizationState) {}
 	///<summary>Determines the source of the desired model. By default, the active XR system(s) will be queried and (if available) will provide a model for the associated device. NOTE: this may fail if there&#39;s no default model; use &#39;Custom&#39; to specify your own.</summary>
-	public string DisplayModelSource;
+	public FName DisplayModelSource;
 	///<summary>SetDisplayModelSource</summary>
-	public void SetDisplayModelSource(string NewDisplayModelSource) {}
+	public void SetDisplayModelSource(FName NewDisplayModelSource) {}
 	///<summary>A mesh override that&#39;ll be displayed attached to this MotionController.</summary>
 	public UStaticMesh CustomDisplayMesh;
 	///<summary>SetCustomDisplayMesh</summary>

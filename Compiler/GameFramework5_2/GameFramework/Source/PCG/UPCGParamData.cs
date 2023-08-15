@@ -9,15 +9,15 @@ public partial class UPCGParamData : UPCGData {
 	///<summary>MutableMetadata</summary>
 	public UPCGMetadata MutableMetadata() { return default; }
 	///<summary>Returns the entry for the given name</summary>
-	public long FindMetadataKey(string InName) { return default; }
+	public long FindMetadataKey(FName InName) { return default; }
 	///<summary>Creates an entry for the given name, if not already added</summary>
-	public long FindOrAddMetadataKey(string InName) { return default; }
+	public long FindOrAddMetadataKey(FName InName) { return default; }
 	///<summary>Creates a new params that keeps only a given key/name</summary>
-	public UPCGParamData FilterParamsByName(string InName) { return default; }
+	public UPCGParamData FilterParamsByName(FName InName) { return default; }
 	///<summary>FilterParamsByKey</summary>
 	public UPCGParamData FilterParamsByKey(long InKey) { return default; }
 	///<summary>Not accessible through blueprint to make sure the constness is preserved</summary>
 	public UPCGMetadata Metadata;
 	///<summary>NameMap</summary>
-	public TMap<string,long> NameMap;
+	public TMap<FName,long> NameMap;
 }

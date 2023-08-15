@@ -3,9 +3,9 @@ using CSharpToCpp.Utilities;
 ///<summary>Prioritizer definition. Configurable via UNetObjectPrioritizerDefinitions.</summary>
 [CppInclude("Iris/ReplicationSystem/Prioritization/NetObjectPrioritizerDefinitions.h")]
 public partial struct FNetObjectPrioritizerDefinition {
-	public string PrioritizerName;
-	public string ClassName;
+	public FName PrioritizerName;
+	public FName ClassName;
 	public UClass Class;
-	public string ConfigClassName;
+	public FName ConfigClassName;
 	public UClass ConfigClass;
 }

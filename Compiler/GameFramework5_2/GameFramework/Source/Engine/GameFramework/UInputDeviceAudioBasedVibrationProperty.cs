@@ -7,5 +7,5 @@ public partial class UInputDeviceAudioBasedVibrationProperty : UInputDevicePrope
 	///<summary>Data</summary>
 	public FAudioBasedVibrationData Data;
 	///<summary>A map of device specific color data. If no overrides are specified, the Default hardware data will be used</summary>
-	public TMap<string,FAudioBasedVibrationData> DeviceOverrideData;
+	public TMap<FName,FAudioBasedVibrationData> DeviceOverrideData;
 }

@@ -49,11 +49,11 @@ public partial class UTimelineComponent : UActorComponent {
 	///<summary>Get whether to ignore time dilation.</summary>
 	public bool GetIgnoreTimeDilation() { return default; }
 	///<summary>Update a certain float track&#39;s curve</summary>
-	public void SetFloatCurve(UCurveFloat NewFloatCurve,string FloatTrackName) {}
+	public void SetFloatCurve(UCurveFloat NewFloatCurve,FName FloatTrackName) {}
 	///<summary>Update a certain vector track&#39;s curve</summary>
-	public void SetVectorCurve(UCurveVector NewVectorCurve,string VectorTrackName) {}
+	public void SetVectorCurve(UCurveVector NewVectorCurve,FName VectorTrackName) {}
 	///<summary>Update a certain linear color track&#39;s curve</summary>
-	public void SetLinearColorCurve(UCurveLinearColor NewLinearColorCurve,string LinearColorTrackName) {}
+	public void SetLinearColorCurve(UCurveLinearColor NewLinearColorCurve,FName LinearColorTrackName) {}
 	///<summary>OnRep_Timeline</summary>
 	public void OnRep_Timeline(FTimeline OldTimeline) {}
 }

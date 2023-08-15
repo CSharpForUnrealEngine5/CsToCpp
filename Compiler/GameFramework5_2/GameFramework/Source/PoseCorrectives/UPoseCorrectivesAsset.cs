@@ -5,9 +5,9 @@ using CSharpToCpp.Utilities;
 public partial class UPoseCorrectivesAsset : UObject {
 	public static UClass StaticClass() {return default;}
 	///<summary>Animation Pose Data</summary>
-	public TMap<string,FPoseCorrective> PoseCorrectives;
+	public TMap<FName,FPoseCorrective> PoseCorrectives;
 	///<summary>Predefined groups stored here in editor mode for configuring groups in UI and applying to pose but runtime driver/corrective bones live with pose</summary>
-	public TMap<string,FPoseGroupDefinition> GroupDefinitions;
+	public TMap<FName,FPoseGroupDefinition> GroupDefinitions;
 	///<summary>TargetMesh</summary>
 	public USkeletalMesh TargetMesh;
 	///<summary>SourcePreviewMesh</summary>

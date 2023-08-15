@@ -5,5 +5,5 @@ using CSharpToCpp.Utilities;
 public partial struct FBlueprintWatchedPin {
 	public TSoftObjectPtr<UEdGraphNode> OwningNode;
 	public FGuid PinId;
-	public TArray<string> PathToProperty;
+	public TArray<FName> PathToProperty;
 }

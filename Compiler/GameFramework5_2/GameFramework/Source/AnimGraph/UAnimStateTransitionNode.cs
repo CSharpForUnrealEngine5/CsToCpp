@@ -22,7 +22,7 @@ public partial class UAnimStateTransitionNode : UAnimStateNodeBase {
 	///<summary>Try setting the rule automatically based on most relevant player node&#39;s remaining time and the CrossfadeDuration of the transition, ignoring the internal time</summary>
 	public bool bAutomaticRuleBasedOnSequencePlayerInState;
 	///<summary>If SyncGroupName is specified, Transition will only be taken if the SyncGroup has valid markers (other transition rules still apply in addition to that).</summary>
-	public string SyncGroupNameToRequireValidMarkersRule;
+	public FName SyncGroupNameToRequireValidMarkersRule;
 	///<summary>What transition logic to use</summary>
 	public ETransitionLogicType LogicType;
 	///<summary>TransitionStart</summary>

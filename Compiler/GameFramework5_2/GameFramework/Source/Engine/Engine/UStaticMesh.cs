@@ -13,7 +13,7 @@ public partial class UStaticMesh : UStreamableRenderAsset {
 	///<summary>OriginalSectionInfoMap</summary>
 	public FMeshSectionInfoMap OriginalSectionInfoMap;
 	///<summary>The LOD group to which this mesh belongs.</summary>
-	public string LODGroup;
+	public FName LODGroup;
 	///<summary>If non-negative, specify the maximum number of streamed LODs. Only has effect if</summary>
 	public FPerPlatformInt NumStreamedLODs;
 	///<summary>The last import version</summary>
@@ -33,9 +33,9 @@ public partial class UStaticMesh : UStreamableRenderAsset {
 	///<summary>Allow more flexibility to set various values driven by the Scalability or Device Profile.</summary>
 	public FPerQualityLevelInt MinQualityLevelLOD;
 	///<summary>GetMinimumLODForQualityLevels</summary>
-	public void GetMinimumLODForQualityLevels(TMap<string,int> QualityLevelMinimumLODs) {}
+	public void GetMinimumLODForQualityLevels(TMap<FName,int> QualityLevelMinimumLODs) {}
 	///<summary>GetMinimumLODForQualityLevel</summary>
-	public int GetMinimumLODForQualityLevel(string QualityLevel) { return default; }
+	public int GetMinimumLODForQualityLevel(FName QualityLevel) { return default; }
 	///<summary>Allow to override min lod quality levels on a staticMesh and it Default value (-1 value for Default dont override its value).</summary>
 	public void SetMinLODForQualityLevels(TMap<EPerQualityLevels,int> QualityLevelMinimumLODs,int Default/*=-1*/) {}
 	///<summary>GetMinLODForQualityLevels</summary>
@@ -43,13 +43,13 @@ public partial class UStaticMesh : UStreamableRenderAsset {
 	///<summary>MinLOD</summary>
 	public FPerPlatformInt MinLOD;
 	///<summary>GetMinimumLODForPlatforms</summary>
-	public void GetMinimumLODForPlatforms(TMap<string,int> PlatformMinimumLODs) {}
+	public void GetMinimumLODForPlatforms(TMap<FName,int> PlatformMinimumLODs) {}
 	///<summary>GetMinimumLODForPlatform</summary>
-	public int GetMinimumLODForPlatform(string PlatformName) { return default; }
+	public int GetMinimumLODForPlatform(FName PlatformName) { return default; }
 	///<summary>SetMinimumLODForPlatforms</summary>
-	public void SetMinimumLODForPlatforms(TMap<string,int> PlatformMinimumLODs) {}
+	public void SetMinimumLODForPlatforms(TMap<FName,int> PlatformMinimumLODs) {}
 	///<summary>SetMinimumLODForPlatform</summary>
-	public void SetMinimumLODForPlatform(string PlatformName,int InMinLOD) {}
+	public void SetMinimumLODForPlatform(FName PlatformName,int InMinLOD) {}
 	///<summary>StaticMaterials</summary>
 	public TArray<FStaticMaterial> StaticMaterials;
 	///<summary>GetStaticMaterials</summary>
@@ -139,13 +139,13 @@ public partial class UStaticMesh : UStreamableRenderAsset {
 	///<summary>Gets a Material given a Material Index and an LOD number</summary>
 	public UMaterialInterface GetMaterial(int MaterialIndex) { return default; }
 	///<summary>Adds a new material and return its slot name</summary>
-	public string AddMaterial(UMaterialInterface Material) { return default; }
+	public FName AddMaterial(UMaterialInterface Material) { return default; }
 	///<summary>Gets a Material index given a slot name</summary>
-	public int GetMaterialIndex(string MaterialSlotName) { return default; }
+	public int GetMaterialIndex(FName MaterialSlotName) { return default; }
 	///<summary>Add a socket object in this StaticMesh.</summary>
 	public void AddSocket(UStaticMeshSocket Socket) {}
 	///<summary>Find a socket object in this StaticMesh by name.</summary>
-	public UStaticMeshSocket FindSocket(string InSocketName) { return default; }
+	public UStaticMeshSocket FindSocket(FName InSocketName) { return default; }
 	///<summary>Remove a socket object in this StaticMesh by providing it&#39;s pointer. Use FindSocket() if needed.</summary>
 	public void RemoveSocket(UStaticMeshSocket Socket) {}
 	///<summary>Returns a list of sockets with the provided tag.</summary>

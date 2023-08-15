@@ -5,31 +5,31 @@ using CSharpToCpp.Utilities;
 public partial class ULevelEditorSubsystem : UEditorSubsystem {
 	public static UClass StaticClass() {return default;}
 	///<summary>PilotLevelActor</summary>
-	public void PilotLevelActor(AActor ActorToPilot,string ViewportConfigKey/*=NAME_None*/) {}
+	public void PilotLevelActor(AActor ActorToPilot,FName ViewportConfigKey/*=NAME_None*/) {}
 	///<summary>EjectPilotLevelActor</summary>
-	public void EjectPilotLevelActor(string ViewportConfigKey/*=NAME_None*/) {}
+	public void EjectPilotLevelActor(FName ViewportConfigKey/*=NAME_None*/) {}
 	///<summary>GetPilotLevelActor</summary>
-	public AActor GetPilotLevelActor(string ViewportConfigKey/*=NAME_None*/) { return default; }
+	public AActor GetPilotLevelActor(FName ViewportConfigKey/*=NAME_None*/) { return default; }
 	///<summary>EditorPlaySimulate</summary>
 	public void EditorPlaySimulate() {}
 	///<summary>EditorInvalidateViewports</summary>
 	public void EditorInvalidateViewports() {}
 	///<summary>EditorSetGameView</summary>
-	public void EditorSetGameView(bool bGameView,string ViewportConfigKey/*=NAME_None*/) {}
+	public void EditorSetGameView(bool bGameView,FName ViewportConfigKey/*=NAME_None*/) {}
 	///<summary>EditorGetGameView</summary>
-	public bool EditorGetGameView(string ViewportConfigKey/*=NAME_None*/) { return default; }
+	public bool EditorGetGameView(FName ViewportConfigKey/*=NAME_None*/) { return default; }
 	///<summary>EditorRequestEndPlay</summary>
 	public void EditorRequestEndPlay() {}
 	///<summary>IsInPlayInEditor</summary>
 	public bool IsInPlayInEditor() { return default; }
 	///<summary>GetViewportConfigKeys</summary>
-	public TArray<string> GetViewportConfigKeys() { return default; }
+	public TArray<FName> GetViewportConfigKeys() { return default; }
 	///<summary>GetActiveViewportConfigKey</summary>
-	public string GetActiveViewportConfigKey() { return default; }
+	public FName GetActiveViewportConfigKey() { return default; }
 	///<summary>SetAllowsCinematicControl</summary>
-	public void SetAllowsCinematicControl(bool bAllow,string ViewportConfigKey/*=NAME_None*/) {}
+	public void SetAllowsCinematicControl(bool bAllow,FName ViewportConfigKey/*=NAME_None*/) {}
 	///<summary>GetAllowsCinematicControl</summary>
-	public bool GetAllowsCinematicControl(string ViewportConfigKey/*=NAME_None*/) { return default; }
+	public bool GetAllowsCinematicControl(FName ViewportConfigKey/*=NAME_None*/) { return default; }
 	///<summary>Close the current Persistent Level (without saving it). Create a new blank Level and save it. Load the new created level.</summary>
 	public bool NewLevel(string AssetPath) { return default; }
 	///<summary>Close the current Persistent Level (without saving it). Create a new Level base on another level and save it. Load the new created level.</summary>
@@ -41,7 +41,7 @@ public partial class ULevelEditorSubsystem : UEditorSubsystem {
 	///<summary>Saves all Level currently loaded by the World Editor.</summary>
 	public bool SaveAllDirtyLevels() { return default; }
 	///<summary>Set the current level used by the world editor.</summary>
-	public bool SetCurrentLevelByName(string LevelName) { return default; }
+	public bool SetCurrentLevelByName(FName LevelName) { return default; }
 	///<summary>Get the current level used by the world editor.</summary>
 	public ULevel GetCurrentLevel() { return default; }
 	///<summary>Get the selection set for the current world, you can use this to track</summary>

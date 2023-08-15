@@ -21,7 +21,7 @@ public partial class UBillboardComponent : UPrimitiveComponent {
 	///<summary>The billboard is not rendered where texture opacity &lt; OpacityMaskRefVal</summary>
 	public float OpacityMaskRefVal;
 	///<summary>Sprite category that the component belongs to. Value serves as a key into the localization file.</summary>
-	public string SpriteCategoryName_DEPRECATED;
+	public FName SpriteCategoryName_DEPRECATED;
 	///<summary>Sprite category information regarding the component</summary>
 	public FSpriteCategoryInfo SpriteInfo;
 	///<summary>Whether to use in-editor arrow scaling (i.e. to be affected by the global arrow scale)</summary>

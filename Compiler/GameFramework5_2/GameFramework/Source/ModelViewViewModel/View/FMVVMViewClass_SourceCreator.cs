@@ -6,7 +6,7 @@ public partial struct FMVVMViewClass_SourceCreator {
 	public UClass ExpectedSourceType;
 	public FMVVMViewModelContext GlobalViewModelInstance;
 	public FMVVMVCompiledFieldPath FieldPath;
-	public string PropertyName;
+	public FName PropertyName;
 	public bool bCreateInstance;
 	public bool bOptional;
 }

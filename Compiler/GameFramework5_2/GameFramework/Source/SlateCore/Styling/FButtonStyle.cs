@@ -15,6 +15,6 @@ public partial struct FButtonStyle {
 	public FMargin PressedPadding;
 	public FSlateSound PressedSlateSound;
 	public FSlateSound HoveredSlateSound;
-	public string PressedSound_DEPRECATED;
-	public string HoveredSound_DEPRECATED;
+	public FName PressedSound_DEPRECATED;
+	public FName HoveredSound_DEPRECATED;
 }

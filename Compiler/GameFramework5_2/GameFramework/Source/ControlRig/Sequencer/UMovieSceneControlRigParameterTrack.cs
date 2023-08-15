@@ -11,5 +11,5 @@ public partial class UMovieSceneControlRigParameterTrack : UMovieSceneNameableTr
 	///<summary>The sections owned by this track .</summary>
 	public TArray<UMovieSceneSection> Sections;
 	///<summary>Unique Name</summary>
-	public string TrackName;
+	public FName TrackName;
 }

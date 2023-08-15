@@ -8,5 +8,5 @@ public partial class UPCGInstancePackerBase : UObject {
 	///<summary>Interprets Metadata TypeId and increments OutPackedCustomData.NumCustomDataFloats appropriately. Returns false if the type could not be interpreted.</summary>
 	public bool AddTypeToPacking(int TypeId,FPCGPackedCustomData OutPackedCustomData) { return default; }
 	///<summary>Build a PackedCustomData by processing each attribute in order for each point in the InstanceList</summary>
-	public void PackCustomDataFromAttributes(FPCGMeshInstanceList InstanceList,UPCGMetadata Metadata,TArray<string> AttributeNames,FPCGPackedCustomData OutPackedCustomData) {}
+	public void PackCustomDataFromAttributes(FPCGMeshInstanceList InstanceList,UPCGMetadata Metadata,TArray<FName> AttributeNames,FPCGPackedCustomData OutPackedCustomData) {}
 }

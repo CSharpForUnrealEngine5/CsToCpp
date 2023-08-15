@@ -9,7 +9,7 @@ public partial class UDEPRECATED_EditorSkeletalMeshLibrary : UBlueprintFunctionL
 	///<summary>GetNumVerts</summary>
 	public static int GetNumVerts(USkeletalMesh SkeletalMesh,int LODIndex) { return default; }
 	///<summary>RenameSocket</summary>
-	public static bool RenameSocket(USkeletalMesh SkeletalMesh,string OldName,string NewName) { return default; }
+	public static bool RenameSocket(USkeletalMesh SkeletalMesh,FName OldName,FName NewName) { return default; }
 	///<summary>GetLODCount</summary>
 	public static int GetLODCount(USkeletalMesh SkeletalMesh) { return default; }
 	///<summary>ImportLOD</summary>

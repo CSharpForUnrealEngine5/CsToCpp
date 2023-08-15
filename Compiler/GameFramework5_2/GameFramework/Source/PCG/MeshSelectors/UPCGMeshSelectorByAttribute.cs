@@ -4,13 +4,13 @@ using CSharpToCpp.Utilities;
 public partial class UPCGMeshSelectorByAttribute : UPCGMeshSelectorBase {
 	public static UClass StaticClass() {return default;}
 	///<summary>AttributeName</summary>
-	public string AttributeName;
+	public FName AttributeName;
 	///<summary>TemplateDescriptor</summary>
 	public FSoftISMComponentDescriptor TemplateDescriptor;
 	///<summary>bUseAttributeMaterialOverrides</summary>
 	public bool bUseAttributeMaterialOverrides;
 	///<summary>MaterialOverrideAttributes</summary>
-	public TArray<string> MaterialOverrideAttributes;
+	public TArray<FName> MaterialOverrideAttributes;
 	///<summary>bOverrideCollisionProfile_DEPRECATED</summary>
 	public bool bOverrideCollisionProfile_DEPRECATED;
 	///<summary>CollisionProfile_DEPRECATED</summary>

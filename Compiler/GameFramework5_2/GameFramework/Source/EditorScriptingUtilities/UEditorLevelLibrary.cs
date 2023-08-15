@@ -61,7 +61,7 @@ public partial class UEditorLevelLibrary : UBlueprintFunctionLibrary {
 	///<summary>SaveAllDirtyLevels</summary>
 	public static bool SaveAllDirtyLevels() { return default; }
 	///<summary>SetCurrentLevelByName</summary>
-	public static bool SetCurrentLevelByName(string LevelName) { return default; }
+	public static bool SetCurrentLevelByName(FName LevelName) { return default; }
 	///<summary>ReplaceMeshComponentsMaterials</summary>
 	public static void ReplaceMeshComponentsMaterials(TArray<UMeshComponent> MeshComponents,UMaterialInterface MaterialToBeReplaced,UMaterialInterface NewMaterial) {}
 	///<summary>ReplaceMeshComponentsMaterialsOnActors</summary>

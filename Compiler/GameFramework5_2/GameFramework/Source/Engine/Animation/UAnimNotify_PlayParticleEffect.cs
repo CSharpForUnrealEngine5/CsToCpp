@@ -14,5 +14,5 @@ public partial class UAnimNotify_PlayParticleEffect : UAnimNotify {
 	///<summary>Should attach to the bone/socket</summary>
 	public bool Attached;
 	///<summary>SocketName to attach to</summary>
-	public string SocketName;
+	public FName SocketName;
 }

@@ -4,5 +4,5 @@ using CSharpToCpp.Utilities;
 public partial class UMovieSceneScriptingChannel : UObject {
 	public static UClass StaticClass() {return default;}
 	///<summary>ChannelName</summary>
-	public string ChannelName;
+	public FName ChannelName;
 }

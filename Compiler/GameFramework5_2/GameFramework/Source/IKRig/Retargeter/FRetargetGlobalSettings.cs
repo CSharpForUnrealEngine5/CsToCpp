@@ -8,7 +8,7 @@ public partial struct FRetargetGlobalSettings {
 	public bool bWarping;
 	public EWarpingDirectionSource DirectionSource;
 	public EBasicAxis ForwardDirection;
-	public string DirectionChain;
+	public FName DirectionChain;
 	public float WarpForwards;
 	public float SidewaysOffset;
 	public float WarpSplay;

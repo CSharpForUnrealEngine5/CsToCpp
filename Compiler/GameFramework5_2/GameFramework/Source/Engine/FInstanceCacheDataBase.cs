@@ -7,5 +7,5 @@ public partial struct FInstanceCacheDataBase {
 	public FDataCacheDuplicatedObjectData UniqueTransientPackage;
 	public TArray<FDataCacheDuplicatedObjectData> DuplicatedObjects;
 	public TArray<UObject> ReferencedObjects;
-	public TArray<string> ReferencedNames;
+	public TArray<FName> ReferencedNames;
 }

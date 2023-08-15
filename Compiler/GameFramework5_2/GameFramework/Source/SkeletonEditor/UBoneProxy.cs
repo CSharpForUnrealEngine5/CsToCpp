@@ -5,7 +5,7 @@ using CSharpToCpp.Utilities;
 public partial class UBoneProxy : UObject {
 	public static UClass StaticClass() {return default;}
 	///<summary>The name of the bone we have selected</summary>
-	public string BoneName;
+	public FName BoneName;
 	///<summary>Bone location</summary>
 	public FVector Location;
 	///<summary>Bone rotation</summary>

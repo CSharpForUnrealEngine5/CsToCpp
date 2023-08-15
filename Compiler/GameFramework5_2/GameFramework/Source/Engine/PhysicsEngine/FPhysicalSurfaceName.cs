@@ -4,5 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("PhysicsEngine/PhysicsSettings.h")]
 public partial struct FPhysicalSurfaceName {
 	public EPhysicalSurface Type;
-	public string Name;
+	public FName Name;
 }

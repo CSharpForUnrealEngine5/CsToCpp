@@ -6,7 +6,7 @@ public partial class UParticleModuleTrailSource : UParticleModuleTrailBase {
 	///<summary>The source method for the trail.</summary>
 	public ETrail2SourceMethod SourceMethod;
 	///<summary>The name of the source - either the emitter or Actor.</summary>
-	public string SourceName;
+	public FName SourceName;
 	///<summary>The strength of the tangent from the source point for each Trail.</summary>
 	public FRawDistributionFloat SourceStrength;
 	///<summary>Whether to lock the source to the life of the particle.</summary>

@@ -10,5 +10,5 @@ public partial class UNiagaraOutliner : UObject {
 	///<summary>Data</summary>
 	public FNiagaraOutlinerData Data;
 	///<summary>SystemSimCaches</summary>
-	public TMap<string,UNiagaraSimCache> SystemSimCaches;
+	public TMap<FName,UNiagaraSimCache> SystemSimCaches;
 }

@@ -14,5 +14,5 @@ public partial class UAnimNotify_PlaySound : UAnimNotify {
 	///<summary>bPreviewIgnoreAttenuation</summary>
 	public bool bPreviewIgnoreAttenuation;
 	///<summary>Socket or bone name to attach sound to</summary>
-	public string AttachName;
+	public FName AttachName;
 }

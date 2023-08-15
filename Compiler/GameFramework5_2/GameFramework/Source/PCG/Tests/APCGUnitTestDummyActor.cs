@@ -14,7 +14,7 @@ public partial class APCGUnitTestDummyActor : AActor {
 	///<summary>BoolProperty</summary>
 	public bool BoolProperty;
 	///<summary>NameProperty</summary>
-	public string NameProperty;
+	public FName NameProperty;
 	///<summary>StringProperty</summary>
 	public string StringProperty;
 	///<summary>EnumProperty</summary>

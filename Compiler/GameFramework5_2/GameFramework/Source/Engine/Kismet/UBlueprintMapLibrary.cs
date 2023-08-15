@@ -24,5 +24,5 @@ public partial class UBlueprintMapLibrary : UBlueprintFunctionLibrary {
 	///<summary>Clears a map of all entries, resetting it to empty</summary>
 	public static void Map_Clear(TMap<int,int> TargetMap) {}
 	///<summary>Not exposed to users. Supports setting a map property on an object by name.</summary>
-	public static void SetMapPropertyByName(UObject Object,string PropertyName,TMap<int,int> Value) {}
+	public static void SetMapPropertyByName(UObject Object,FName PropertyName,TMap<int,int> Value) {}
 }

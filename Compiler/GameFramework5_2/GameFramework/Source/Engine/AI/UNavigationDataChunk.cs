@@ -4,5 +4,5 @@ using CSharpToCpp.Utilities;
 public partial class UNavigationDataChunk : UObject {
 	public static UClass StaticClass() {return default;}
 	///<summary>Name of NavigationData actor that owns this chunk</summary>
-	public string NavigationDataName;
+	public FName NavigationDataName;
 }

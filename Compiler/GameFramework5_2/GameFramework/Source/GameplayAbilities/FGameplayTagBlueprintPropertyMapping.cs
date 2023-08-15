@@ -5,6 +5,6 @@ using CSharpToCpp.Utilities;
 public partial struct FGameplayTagBlueprintPropertyMapping {
 	public FGameplayTag TagToMap;
 	public object PropertyToEdit;
-	public string PropertyName;
+	public FName PropertyName;
 	public FGuid PropertyGuid;
 }

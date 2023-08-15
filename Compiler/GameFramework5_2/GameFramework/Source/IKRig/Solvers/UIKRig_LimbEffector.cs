@@ -4,7 +4,7 @@ using CSharpToCpp.Utilities;
 public partial class UIKRig_LimbEffector : UObject {
 	public static UClass StaticClass() {return default;}
 	///<summary>GoalName</summary>
-	public string GoalName;
+	public FName GoalName;
 	///<summary>BoneName</summary>
-	public string BoneName;
+	public FName BoneName;
 }

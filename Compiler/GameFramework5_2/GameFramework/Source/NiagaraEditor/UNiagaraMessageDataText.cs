@@ -12,5 +12,5 @@ public partial class UNiagaraMessageDataText : UNiagaraMessageData {
 	///<summary>bAllowDismissal</summary>
 	public bool bAllowDismissal;
 	///<summary>TopicName</summary>
-	public string TopicName;
+	public FName TopicName;
 }

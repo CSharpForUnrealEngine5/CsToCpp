@@ -21,9 +21,9 @@ public partial class UPhysicsConstraintComponent : USceneComponent {
 	///<summary>All constraint settings</summary>
 	public FConstraintInstance ConstraintInstance;
 	///<summary>Directly specify component to connect. Will update frames based on current position.</summary>
-	public void SetConstrainedComponents(UPrimitiveComponent Component1,string BoneName1,UPrimitiveComponent Component2,string BoneName2) {}
+	public void SetConstrainedComponents(UPrimitiveComponent Component1,FName BoneName1,UPrimitiveComponent Component2,FName BoneName2) {}
 	///<summary>Get connected components and potential related attachement bones</summary>
-	public void GetConstrainedComponents(UPrimitiveComponent OutComponent1,string OutBoneName1,UPrimitiveComponent OutComponent2,string OutBoneName2) {}
+	public void GetConstrainedComponents(UPrimitiveComponent OutComponent1,FName OutBoneName1,UPrimitiveComponent OutComponent2,FName OutBoneName2) {}
 	///<summary>Break this constraint</summary>
 	public void BreakConstraint() {}
 	///<summary>Enables/Disables linear position drive</summary>

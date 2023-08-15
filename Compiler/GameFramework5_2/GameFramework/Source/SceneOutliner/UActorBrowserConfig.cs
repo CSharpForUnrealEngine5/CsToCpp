@@ -4,5 +4,5 @@ using CSharpToCpp.Utilities;
 public partial class UActorBrowserConfig : UEditorConfigBase {
 	public static UClass StaticClass() {return default;}
 	///<summary>ActorBrowsers</summary>
-	public TMap<string,FActorBrowsingModeConfig> ActorBrowsers;
+	public TMap<FName,FActorBrowsingModeConfig> ActorBrowsers;
 }

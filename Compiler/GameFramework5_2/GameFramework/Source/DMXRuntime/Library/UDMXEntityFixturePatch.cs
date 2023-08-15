@@ -41,7 +41,7 @@ public partial class UDMXEntityFixturePatch : UDMXEntity {
 	///<summary>The MVR Fixture UUID when used as such</summary>
 	public FGuid MVRFixtureUUID;
 	///<summary>Custom tags for filtering patches</summary>
-	public TArray<string> CustomTags;
+	public TArray<FName> CustomTags;
 	///<summary>Color when displayed in the fixture patch editor</summary>
 	public FLinearColor EditorColor;
 	///<summary>If true, the patch receives dmx and raises the OnFixturePatchReceivedDMX event in editor.</summary>

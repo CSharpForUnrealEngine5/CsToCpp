@@ -6,5 +6,5 @@ public partial class UGameplayTagsK2Node_MultiCompareBase : UK2Node {
 	///<summary>NumberOfPins</summary>
 	public int NumberOfPins;
 	///<summary>PinNames</summary>
-	public TArray<string> PinNames;
+	public TArray<FName> PinNames;
 }

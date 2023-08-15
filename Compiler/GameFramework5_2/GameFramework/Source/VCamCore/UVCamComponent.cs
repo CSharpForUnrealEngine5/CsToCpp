@@ -9,15 +9,15 @@ public partial class UVCamComponent : USceneComponent {
 	///<summary>HandleObjectReplaced</summary>
 	public void HandleObjectReplaced(TMap<UObject,UObject> ReplacementMap) {}
 	///<summary>Attempts to apply key mapping settings from an input profile defined in VCam Input Settings</summary>
-	public bool SetInputProfileFromName(string ProfileName) { return default; }
+	public bool SetInputProfileFromName(FName ProfileName) { return default; }
 	///<summary>Tries to add a new Input Profile to the VCam Input Settings and populates it with any currently active player mappable keys</summary>
-	public bool AddInputProfileWithCurrentlyActiveMappings(string ProfileName,bool bUpdateIfProfileAlreadyExists/*=true*/) { return default; }
+	public bool AddInputProfileWithCurrentlyActiveMappings(FName ProfileName,bool bUpdateIfProfileAlreadyExists/*=true*/) { return default; }
 	///<summary>Saves the current input profile settings to the VCam Input Settings using the provided Profile Name</summary>
-	public bool SaveCurrentInputProfileToSettings(string ProfileName) { return default; }
+	public bool SaveCurrentInputProfileToSettings(FName ProfileName) { return default; }
 	///<summary>Searches the currently active input system for all registered key mappings that are marked as Player Mappable.</summary>
 	public TArray<FEnhancedActionKeyMapping> GetAllPlayerMappableActionKeyMappings() { return default; }
 	///<summary>Searches the currently active input system for the current key mapped to a given input mapping</summary>
-	public FKey GetPlayerMappedKey(string MappingName) { return default; }
+	public FKey GetPlayerMappedKey(FName MappingName) { return default; }
 	///<summary>Sets whether the VCamComponent will update every frame</summary>
 	public void SetEnabled(bool bNewEnabled) {}
 	///<summary>@return Whether the VCamComponent will update every frame</summary>
@@ -25,9 +25,9 @@ public partial class UVCamComponent : USceneComponent {
 	///<summary>GetTargetCamera</summary>
 	public UCineCameraComponent GetTargetCamera() { return default; }
 	///<summary>Add a modifier to the stack with a given name.</summary>
-	public bool AddModifier(string Name,UClass ModifierClass,UVCamModifier CreatedModifier) { return default; }
+	public bool AddModifier(FName Name,UClass ModifierClass,UVCamModifier CreatedModifier) { return default; }
 	///<summary>Insert a modifier to the stack with a given name and index.</summary>
-	public bool InsertModifier(string Name,int Index,UClass ModifierClass,UVCamModifier CreatedModifier) { return default; }
+	public bool InsertModifier(FName Name,int Index,UClass ModifierClass,UVCamModifier CreatedModifier) { return default; }
 	///<summary>Moves an existing modifier in the stack from its current index to a new index</summary>
 	public bool SetModifierIndex(int OriginalIndex,int NewIndex) { return default; }
 	///<summary>Remove all Modifiers from the Stack.</summary>
@@ -37,17 +37,17 @@ public partial class UVCamComponent : USceneComponent {
 	///<summary>@return Whether the modifier was removed successfully</summary>
 	public bool RemoveModifierByIndex(int ModifierIndex) { return default; }
 	///<summary>@return Whether the modifier was removed successfully.</summary>
-	public bool RemoveModifierByName(string Name) { return default; }
+	public bool RemoveModifierByName(FName Name) { return default; }
 	///<summary>GetNumberOfModifiers</summary>
 	public int GetNumberOfModifiers() { return default; }
 	///<summary>Returns all the Modifiers in the Component&#39;s Stack</summary>
 	public void GetAllModifiers(TArray<UVCamModifier> Modifiers) {}
 	///<summary>Returns all the modifier names used to identifying connection points.</summary>
-	public TArray<string> GetAllModifierNames() { return default; }
+	public TArray<FName> GetAllModifierNames() { return default; }
 	///<summary>Returns the Modifier in the Stack with the given index if it exist.</summary>
 	public UVCamModifier GetModifierByIndex(int Index) { return default; }
 	///<summary>Tries to find a Modifier in the Stack with the given name. The returned Modifier must be checked before it is used.</summary>
-	public UVCamModifier GetModifierByName(string Name) { return default; }
+	public UVCamModifier GetModifierByName(FName Name) { return default; }
 	///<summary>Given a specific Modifier class, returns a list of matching Modifiers</summary>
 	public void GetModifiersByClass(UClass ModifierClass,TArray<UVCamModifier> FoundModifiers) {}
 	///<summary>Given a specific Interface class, returns a list of matching Modifiers</summary>

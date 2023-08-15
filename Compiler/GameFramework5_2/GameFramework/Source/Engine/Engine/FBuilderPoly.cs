@@ -5,6 +5,6 @@ using CSharpToCpp.Utilities;
 public partial struct FBuilderPoly {
 	public TArray<int> VertexIndices;
 	public int Direction;
-	public string ItemName;
+	public FName ItemName;
 	public int PolyFlags;
 }

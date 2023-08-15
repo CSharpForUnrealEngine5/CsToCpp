@@ -5,6 +5,6 @@ using CSharpToCpp.Utilities;
 public partial struct FStructSerializerSetTestStruct {
 	public TSet<string> StrSet;
 	public TSet<int> IntSet;
-	public TSet<string> NameSet;
+	public TSet<FName> NameSet;
 	public TSet<FStructSerializerBuiltinTestStruct> StructSet;
 }

@@ -4,6 +4,6 @@ using CSharpToCpp.Utilities;
 [CppInclude("Units/Hierarchy/RigUnit_Metadata.h")]
 public partial struct FRigUnit_GetMetadataTags {
 	public FRigElementKey Item;
-	public TArray<string> Tags;
+	public TArray<FName> Tags;
 	public FCachedRigElement CachedIndex;
 }

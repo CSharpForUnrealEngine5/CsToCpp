@@ -14,7 +14,7 @@ public partial class UConeBuilder : UEditorBrushBuilder {
 	///<summary>How many sides this cone should have</summary>
 	public int Sides;
 	///<summary>GroupName</summary>
-	public string GroupName;
+	public FName GroupName;
 	///<summary>Whether to align the brush to a face</summary>
 	public bool AlignToSide;
 	///<summary>Whether this is a hollow or solid cone</summary>

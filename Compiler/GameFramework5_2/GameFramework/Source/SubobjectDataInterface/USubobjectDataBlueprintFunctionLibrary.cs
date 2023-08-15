@@ -15,7 +15,7 @@ public partial class USubobjectDataBlueprintFunctionLibrary : UBlueprintFunction
 	///<summary>GetDisplayName</summary>
 	public FText GetDisplayName(FSubobjectData Data) { return default; }
 	///<summary>GetVariableName</summary>
-	public static string GetVariableName(FSubobjectData Data) { return default; }
+	public static FName GetVariableName(FSubobjectData Data) { return default; }
 	///<summary>IsAttachedTo</summary>
 	public static bool IsAttachedTo(FSubobjectData Data,FSubobjectDataHandle InHandle) { return default; }
 	///<summary>@return Whether or not we can edit properties for this subobject</summary>

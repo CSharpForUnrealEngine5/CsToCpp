@@ -120,31 +120,31 @@ public partial class UCustomizableObjectInstance : UObject {
 	///<summary>Remove the last of the projector range of values from the parameter ParamName, returns the index of the last valid projector, -1 if no values left.</summary>
 	public int RemoveValueFromProjectorRange(string ParamName) { return default; }
 	///<summary>Given Multilayer Projector name, create a new Multilayer Projector Helper (if non-existent). See FMultilayerProjector.</summary>
-	public bool CreateMultiLayerProjector(string ProjectorParamName) { return default; }
+	public bool CreateMultiLayerProjector(FName ProjectorParamName) { return default; }
 	///<summary>Given Multilayer Projector name, remove a Multilayer Projector Helper. See FMultilayerProjector.</summary>
-	public void RemoveMultilayerProjector(string ProjectorParamName) {}
+	public void RemoveMultilayerProjector(FName ProjectorParamName) {}
 	///<summary>See FMultilayerProjector::NumLayers.</summary>
-	public int MultilayerProjectorNumLayers(string ProjectorParamName) { return default; }
+	public int MultilayerProjectorNumLayers(FName ProjectorParamName) { return default; }
 	///<summary>See FMultilayerProjector::CreateLayer.</summary>
-	public void MultilayerProjectorCreateLayer(string ProjectorParamName,int Index) {}
+	public void MultilayerProjectorCreateLayer(FName ProjectorParamName,int Index) {}
 	///<summary>See FMultilayerProjector::RemoveLayerAt.</summary>
-	public void MultilayerProjectorRemoveLayerAt(string ProjectorParamName,int Index) {}
+	public void MultilayerProjectorRemoveLayerAt(FName ProjectorParamName,int Index) {}
 	///<summary>See FMultilayerProjector::GetLayer.</summary>
-	public FMultilayerProjectorLayer MultilayerProjectorGetLayer(string ProjectorParamName,int Index) { return default; }
+	public FMultilayerProjectorLayer MultilayerProjectorGetLayer(FName ProjectorParamName,int Index) { return default; }
 	///<summary>See FMultilayerProjector::UpdateLayer.</summary>
-	public void MultilayerProjectorUpdateLayer(string ProjectorParamName,int Index,FMultilayerProjectorLayer Layer) {}
+	public void MultilayerProjectorUpdateLayer(FName ProjectorParamName,int Index,FMultilayerProjectorLayer Layer) {}
 	///<summary>See FMultilayerProjector::GetVirtualLayers.</summary>
-	public TArray<string> MultilayerProjectorGetVirtualLayers(string ProjectorParamName) { return default; }
+	public TArray<FName> MultilayerProjectorGetVirtualLayers(FName ProjectorParamName) { return default; }
 	///<summary>See FMultilayerProjector::VirtualLayer.</summary>
-	public void MultilayerProjectorCreateVirtualLayer(string ProjectorParamName,string Id) {}
+	public void MultilayerProjectorCreateVirtualLayer(FName ProjectorParamName,FName Id) {}
 	///<summary>See FMultilayerProjector::FindOrCreateVirtualLayer.</summary>
-	public FMultilayerProjectorVirtualLayer MultilayerProjectorFindOrCreateVirtualLayer(string ProjectorParamName,string Id) { return default; }
+	public FMultilayerProjectorVirtualLayer MultilayerProjectorFindOrCreateVirtualLayer(FName ProjectorParamName,FName Id) { return default; }
 	///<summary>See FMultilayerProjector::RemoveVirtualLayer.</summary>
-	public void MultilayerProjectorRemoveVirtualLayer(string ProjectorParamName,string Id) {}
+	public void MultilayerProjectorRemoveVirtualLayer(FName ProjectorParamName,FName Id) {}
 	///<summary>See FMultilayerProjector::GetVirtualLayer.</summary>
-	public FMultilayerProjectorVirtualLayer MultilayerProjectorGetVirtualLayer(string ProjectorParamName,string Id) { return default; }
+	public FMultilayerProjectorVirtualLayer MultilayerProjectorGetVirtualLayer(FName ProjectorParamName,FName Id) { return default; }
 	///<summary>See FMultilayerProjector::UpdateVirtualLayer.</summary>
-	public void MultilayerProjectorUpdateVirtualLayer(string ProjectorParamName,string Id,FMultilayerProjectorVirtualLayer Layer) {}
+	public void MultilayerProjectorUpdateVirtualLayer(FName ProjectorParamName,FName Id,FMultilayerProjectorVirtualLayer Layer) {}
 	///<summary>Returns the animation BP for the parameter component and slot, gathered from all the meshes that compose this instance</summary>
 	public UClass GetAnimBP(int ComponentIndex,int SlotIndex) { return default; }
 	///<summary>GetAnimationGameplayTags</summary>
@@ -174,7 +174,7 @@ public partial class UCustomizableObjectInstance : UObject {
 	///<summary>ProjectorParameters_DEPRECATED</summary>
 	public TArray<FCustomizableObjectProjectorParameterValue> ProjectorParameters_DEPRECATED;
 	///<summary>MultilayerProjectors_DEPRECATED</summary>
-	public TMap<string,FMultilayerProjector> MultilayerProjectors_DEPRECATED;
+	public TMap<FName,FMultilayerProjector> MultilayerProjectors_DEPRECATED;
 	///<summary>bBuildParameterDecorations_DEPRECATED</summary>
 	public bool bBuildParameterDecorations_DEPRECATED;
 }

@@ -11,17 +11,17 @@ public partial class UAudioModulationStatics : UBlueprintFunctionLibrary {
 	///<summary>Manually activates a modulation generator. If called, deactivation will only occur</summary>
 	public static void ActivateGenerator(UObject WorldContextObject,USoundModulationGenerator Generator) {}
 	///<summary>Creates a modulation bus with the provided default value.</summary>
-	public static USoundControlBus CreateBus(UObject WorldContextObject,string Name,USoundModulationParameter Parameter,bool Activate/*=true*/) { return default; }
+	public static USoundControlBus CreateBus(UObject WorldContextObject,FName Name,USoundModulationParameter Parameter,bool Activate/*=true*/) { return default; }
 	///<summary>Creates a stage used to mix a control bus.</summary>
 	public static FSoundControlBusMixStage CreateBusMixStage(UObject WorldContextObject,USoundControlBus Bus,float Value,float AttackTime/*=0.1f*/,float ReleaseTime/*=0.1f*/) { return default; }
 	///<summary>Creates a modulation bus mix, with a bus stage set to the provided target value.</summary>
-	public static USoundControlBusMix CreateBusMix(UObject WorldContextObject,string Name,TArray<FSoundControlBusMixStage> Stages,bool Activate) { return default; }
+	public static USoundControlBusMix CreateBusMix(UObject WorldContextObject,FName Name,TArray<FSoundControlBusMixStage> Stages,bool Activate) { return default; }
 	///<summary>Creates a modulation parameter of a given class.</summary>
-	public static USoundModulationParameter CreateModulationParameter(UObject WorldContextObject,string Name,UClass ParamClass,float DefaultValue) { return default; }
+	public static USoundModulationParameter CreateModulationParameter(UObject WorldContextObject,FName Name,UClass ParamClass,float DefaultValue) { return default; }
 	///<summary>Creates a modulation generator based on an Envelope Follower with the given parameters.</summary>
-	public static USoundModulationGeneratorEnvelopeFollower CreateEnvelopeFollowerGenerator(UObject WorldContextObject,string Name,FEnvelopeFollowerGeneratorParams Params) { return default; }
+	public static USoundModulationGeneratorEnvelopeFollower CreateEnvelopeFollowerGenerator(UObject WorldContextObject,FName Name,FEnvelopeFollowerGeneratorParams Params) { return default; }
 	///<summary>Creates a modulation generator based on an LFO with the given parameters.</summary>
-	public static USoundModulationGeneratorLFO CreateLFOGenerator(UObject WorldContextObject,string Name,FSoundModulationLFOParams Params) { return default; }
+	public static USoundModulationGeneratorLFO CreateLFOGenerator(UObject WorldContextObject,FName Name,FSoundModulationLFOParams Params) { return default; }
 	///<summary>Deactivates a bus. Does nothing if the provided bus is already inactive.</summary>
 	public static void DeactivateBus(UObject WorldContextObject,USoundControlBus Bus) {}
 	///<summary>Deactivates a modulation bus mix. Does nothing if an instance of the provided bus mix is already inactive.</summary>

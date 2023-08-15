@@ -24,15 +24,15 @@ public partial class UPCGBlueprintElement : UObject {
 	///<summary>Calls the IterationLoopBody a fixed number of times, optional parameters are used to potentially initialized the Out Data, but otherwise are used to remove the need to have variables</summary>
 	public void IterationLoop(FPCGContext InContext,long NumIterations,UPCGPointData OutData,UPCGSpatialData OptionalA/*=nullptr*/,UPCGSpatialData OptionalB/*=nullptr*/,UPCGPointData OptionalOutData/*=nullptr*/) {}
 	///<summary>Override for the default node name</summary>
-	public string NodeTitleOverride() { return default; }
+	public FName NodeTitleOverride() { return default; }
 	///<summary>NodeColorOverride</summary>
 	public FLinearColor NodeColorOverride() { return default; }
 	///<summary>NodeTypeOverride</summary>
 	public EPCGSettingsType NodeTypeOverride() { return default; }
 	///<summary>InputLabels</summary>
-	public TSet<string> InputLabels() { return default; }
+	public TSet<FName> InputLabels() { return default; }
 	///<summary>OutputLabels</summary>
-	public TSet<string> OutputLabels() { return default; }
+	public TSet<FName> OutputLabels() { return default; }
 	///<summary>Gets the seed from the associated settings &amp; source component</summary>
 	public int GetSeed(FPCGContext InContext) { return default; }
 	///<summary>Creates a random stream from the settings &amp; source component</summary>
@@ -44,9 +44,9 @@ public partial class UPCGBlueprintElement : UObject {
 	///<summary>bCanBeMultithreaded</summary>
 	public bool bCanBeMultithreaded;
 	///<summary>InputPinLabels_DEPRECATED</summary>
-	public TSet<string> InputPinLabels_DEPRECATED;
+	public TSet<FName> InputPinLabels_DEPRECATED;
 	///<summary>OutputPinLabels_DEPRECATED</summary>
-	public TSet<string> OutputPinLabels_DEPRECATED;
+	public TSet<FName> OutputPinLabels_DEPRECATED;
 	///<summary>CustomInputPins</summary>
 	public TArray<FPCGPinProperties> CustomInputPins;
 	///<summary>CustomOutputPins</summary>

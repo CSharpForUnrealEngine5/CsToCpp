@@ -4,7 +4,7 @@ using CSharpToCpp.Utilities;
 [CppInclude("MovieSceneSpawnable.h")]
 public partial struct FMovieSceneSpawnable {
 	public FTransform SpawnTransform;
-	public TArray<string> Tags;
+	public TArray<FName> Tags;
 	public bool bContinuouslyRespawn;
 	public bool bNetAddressableName;
 	public bool bEvaluateTracksWhenNotSpawned;
@@ -14,5 +14,5 @@ public partial struct FMovieSceneSpawnable {
 	public TArray<FGuid> ChildPossessables;
 	public ESpawnOwnership Ownership;
 	public UClass GeneratedClass_DEPRECATED;
-	public string LevelName;
+	public FName LevelName;
 }

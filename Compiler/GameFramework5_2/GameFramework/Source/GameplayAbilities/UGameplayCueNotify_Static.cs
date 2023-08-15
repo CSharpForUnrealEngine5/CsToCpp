@@ -17,7 +17,7 @@ public partial class UGameplayCueNotify_Static : UObject {
 	///<summary>Tag this notify is activated by</summary>
 	public FGameplayTag GameplayCueTag;
 	///<summary>Mirrors GameplayCueTag in order to be asset registry searchable</summary>
-	public string GameplayCueName;
+	public FName GameplayCueName;
 	///<summary>Does this Cue override other cues, or is it called in addition to them? E.g., If this is Damage.Physical.Slash, we wont call Damage.Physical afer we run this cue.</summary>
 	public bool IsOverride;
 }

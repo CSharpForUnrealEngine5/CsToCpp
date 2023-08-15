@@ -7,7 +7,7 @@ public partial class UAnimNotifyState_TimedNiagaraEffect : UAnimNotifyState {
 	///<summary>The niagara system to spawn for the notify state</summary>
 	public UNiagaraSystem Template;
 	///<summary>The socket or bone to attach the system to</summary>
-	public string SocketName;
+	public FName SocketName;
 	///<summary>Offset from the socket or bone to place the Niagara system</summary>
 	public FVector LocationOffset;
 	///<summary>Rotation offset from the socket or bone for the Niagara system</summary>

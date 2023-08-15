@@ -18,7 +18,7 @@ public partial class UK2Node_CallFunction : UK2Node {
 	///<summary>The function to call</summary>
 	public FMemberReference FunctionReference;
 	///<summary>The name of the function to call</summary>
-	public string CallFunctionName_DEPRECATED;
+	public FName CallFunctionName_DEPRECATED;
 	///<summary>The class that the function is from.</summary>
 	public UClass CallFunctionClass_DEPRECATED;
 }

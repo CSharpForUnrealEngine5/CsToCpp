@@ -5,5 +5,5 @@ using CSharpToCpp.Utilities;
 public partial class UDataprepAddToLayerOperation : UDataprepOperation {
 	public static UClass StaticClass() {return default;}
 	///<summary>Name of the layer to add the actors to</summary>
-	public string LayerName;
+	public FName LayerName;
 }

@@ -5,6 +5,6 @@ using CSharpToCpp.Utilities;
 public partial struct FTimelineLinearColorTrack {
 	public UCurveLinearColor LinearColorCurve;
 	public FOnTimelineLinearColor InterpFunc;
-	public string TrackName;
-	public string LinearColorPropertyName;
+	public FName TrackName;
+	public FName LinearColorPropertyName;
 }

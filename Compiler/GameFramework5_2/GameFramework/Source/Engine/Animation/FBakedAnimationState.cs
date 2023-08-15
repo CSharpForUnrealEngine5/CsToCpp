@@ -2,7 +2,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Animation/AnimStateMachineTypes.h")]
 public partial struct FBakedAnimationState {
-	public string StateName;
+	public FName StateName;
 	public TArray<FBakedStateExitTransition> Transitions;
 	public int StateRootNodeIndex;
 	public int StartNotify;

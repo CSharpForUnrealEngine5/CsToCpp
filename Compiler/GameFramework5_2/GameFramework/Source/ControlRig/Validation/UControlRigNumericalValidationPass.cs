@@ -19,9 +19,9 @@ public partial class UControlRigNumericalValidationPass : UControlRigValidationP
 	///<summary>The threshold under which we&#39;ll ignore a precision issue in the pass</summary>
 	public float CurvePrecision;
 	///<summary>EventNameA</summary>
-	public string EventNameA;
+	public FName EventNameA;
 	///<summary>EventNameB</summary>
-	public string EventNameB;
+	public FName EventNameB;
 	///<summary>Pose</summary>
 	public FRigPose Pose;
 }

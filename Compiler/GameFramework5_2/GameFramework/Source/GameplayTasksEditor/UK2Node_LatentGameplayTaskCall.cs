@@ -4,5 +4,5 @@ using CSharpToCpp.Utilities;
 public partial class UK2Node_LatentGameplayTaskCall : UK2Node_BaseAsyncTask {
 	public static UClass StaticClass() {return default;}
 	///<summary>SpawnParamPins</summary>
-	public TArray<string> SpawnParamPins;
+	public TArray<FName> SpawnParamPins;
 }

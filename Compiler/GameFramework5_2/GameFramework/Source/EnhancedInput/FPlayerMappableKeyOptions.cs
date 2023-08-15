@@ -4,7 +4,7 @@ using CSharpToCpp.Utilities;
 [CppInclude("EnhancedActionKeyMapping.h")]
 public partial struct FPlayerMappableKeyOptions {
 	public UObject Metadata;
-	public string Name;
+	public FName Name;
 	public FText DisplayName;
 	public FText DisplayCategory;
 }

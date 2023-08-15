@@ -10,15 +10,15 @@ public partial class UAnimBlueprintGeneratedClass : UBlueprintGeneratedClass {
 	///<summary>A list of anim notifies that state machines (or anything else) may reference</summary>
 	public TArray<FAnimNotifyEvent> AnimNotifies;
 	///<summary>Indices for each of the saved pose nodes that require updating, in the order they need to get updates, per layer</summary>
-	public TMap<string,FCachedPoseIndices> OrderedSavedPoseIndicesMap;
+	public TMap<FName,FCachedPoseIndices> OrderedSavedPoseIndicesMap;
 	///<summary>Array of sync group names in the order that they are requested during compile</summary>
-	public TArray<string> SyncGroupNames;
+	public TArray<FName> SyncGroupNames;
 	///<summary>Deprecated - moved to FAnimSubsystem_Base</summary>
 	public TArray<FExposedValueHandler> EvaluateGraphExposedInputs_DEPRECATED;
 	///<summary>Indices for any Asset Player found within a specific (named) Anim Layer Graph, or implemented Anim Interface Graph</summary>
-	public TMap<string,FGraphAssetPlayerInformation> GraphAssetPlayerInformation;
+	public TMap<FName,FGraphAssetPlayerInformation> GraphAssetPlayerInformation;
 	///<summary>Per layer graph blending options</summary>
-	public TMap<string,FAnimGraphBlendOptions> GraphBlendOptions;
+	public TMap<FName,FAnimGraphBlendOptions> GraphBlendOptions;
 	///<summary>Constant/folded anim node data</summary>
 	public TArray<FAnimNodeData> AnimNodeData;
 	///<summary>Map from anim node struct to info about that struct (used to accelerate property name lookups)</summary>

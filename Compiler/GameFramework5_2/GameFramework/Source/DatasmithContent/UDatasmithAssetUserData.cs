@@ -5,7 +5,7 @@ using CSharpToCpp.Utilities;
 public partial class UDatasmithAssetUserData : UAssetUserData {
 	public static UClass StaticClass() {return default;}
 	///<summary>MetaData</summary>
-	public TMap<string,string> MetaData;
+	public TMap<FName,string> MetaData;
 	///<summary>ObjectTemplates</summary>
 	public TMap<UClass,UDatasmithObjectTemplate> ObjectTemplates;
 }

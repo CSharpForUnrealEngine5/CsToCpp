@@ -4,13 +4,13 @@ using CSharpToCpp.Utilities;
 public partial class URootMotionModifier_Warp : URootMotionModifier {
 	public static UClass StaticClass() {return default;}
 	///<summary>Name used to find the warp target for this modifier</summary>
-	public string WarpTargetName;
+	public FName WarpTargetName;
 	///<summary>WarpPointAnimProvider</summary>
 	public EWarpPointAnimProvider WarpPointAnimProvider;
 	///<summary>@TODO: Hide from the UI when Target != Static</summary>
 	public FTransform WarpPointAnimTransform;
 	///<summary>@TODO: Hide from the UI when Target != Bone</summary>
-	public string WarpPointAnimBoneName;
+	public FName WarpPointAnimBoneName;
 	///<summary>Whether to warp the translation component of the root motion</summary>
 	public bool bWarpTranslation;
 	///<summary>Whether to ignore the Z component of the translation. Z motion will remain untouched</summary>

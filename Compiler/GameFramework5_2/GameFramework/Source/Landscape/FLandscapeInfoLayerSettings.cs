@@ -3,7 +3,7 @@ using CSharpToCpp.Utilities;
 [CppInclude("LandscapeInfo.h")]
 public partial struct FLandscapeInfoLayerSettings {
 	public ULandscapeLayerInfoObject LayerInfoObj;
-	public string LayerName;
+	public FName LayerName;
 	public UMaterialInstanceConstant ThumbnailMIC;
 	public ALandscapeProxy Owner;
 	public int DebugColorChannel;

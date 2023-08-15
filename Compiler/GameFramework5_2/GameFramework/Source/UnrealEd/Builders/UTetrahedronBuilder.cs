@@ -8,5 +8,5 @@ public partial class UTetrahedronBuilder : UEditorBrushBuilder {
 	///<summary>How many iterations this sphere uses to tessellate its geometry</summary>
 	public int SphereExtrapolation;
 	///<summary>GroupName</summary>
-	public string GroupName;
+	public FName GroupName;
 }

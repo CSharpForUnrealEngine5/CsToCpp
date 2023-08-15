@@ -2,7 +2,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Units/Deprecated/RigUnit_AimConstraint.h")]
 public partial struct FRigUnit_AimConstraint {
-	public string Joint;
+	public FName Joint;
 	public EAimMode AimMode;
 	public EAimMode UpMode;
 	public FVector AimVector;

@@ -4,7 +4,7 @@ using CSharpToCpp.Utilities;
 [CppInclude("BehaviorTree/BehaviorTreeTypes.h")]
 public partial struct FBlackboardKeySelector {
 	public TArray<UBlackboardKeyType> AllowedTypes;
-	public string SelectedKeyName;
+	public FName SelectedKeyName;
 	public UClass SelectedKeyType;
 	public int SelectedKeyID;
 	public bool bNoneIsAllowedValue;

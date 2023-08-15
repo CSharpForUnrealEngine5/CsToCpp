@@ -40,7 +40,7 @@ public partial class UMaterialInterface : UObject {
 	///<summary>Return a pointer to the physical material from mask map at given index.</summary>
 	public virtual UPhysicalMaterial GetPhysicalMaterialFromMap(int Index) { return default; }
 	///<summary>GetParameterInfo</summary>
-	public FMaterialParameterInfo GetParameterInfo(EMaterialParameterAssociation Association,string ParameterName,UMaterialFunctionInterface LayerFunction) { return default; }
+	public FMaterialParameterInfo GetParameterInfo(EMaterialParameterAssociation Association,FName ParameterName,UMaterialFunctionInterface LayerFunction) { return default; }
 	///<summary>GetBlendMode</summary>
 	public virtual EBlendMode GetBlendMode() { return default; }
 	///<summary>Force the streaming system to disregard the normal logic for the specified duration and</summary>

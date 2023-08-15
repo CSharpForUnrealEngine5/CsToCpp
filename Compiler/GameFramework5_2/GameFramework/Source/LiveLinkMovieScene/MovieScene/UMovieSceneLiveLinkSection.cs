@@ -11,13 +11,13 @@ public partial class UMovieSceneLiveLinkSection : UMovieSceneSection {
 	///<summary>SubSections</summary>
 	public TArray<UMovieSceneLiveLinkSubSection> SubSections;
 	///<summary>SubjectName_DEPRECATED</summary>
-	public string SubjectName_DEPRECATED;
+	public FName SubjectName_DEPRECATED;
 	///<summary>TemplateToPush_DEPRECATED</summary>
 	public FLiveLinkFrameData TemplateToPush_DEPRECATED;
 	///<summary>RefSkeleton_DEPRECATED</summary>
 	public FLiveLinkRefSkeleton RefSkeleton_DEPRECATED;
 	///<summary>CurveNames_DEPRECATED</summary>
-	public TArray<string> CurveNames_DEPRECATED;
+	public TArray<FName> CurveNames_DEPRECATED;
 	///<summary>PropertyFloatChannels_DEPRECATED</summary>
 	public TArray<FMovieSceneFloatChannel> PropertyFloatChannels_DEPRECATED;
 }

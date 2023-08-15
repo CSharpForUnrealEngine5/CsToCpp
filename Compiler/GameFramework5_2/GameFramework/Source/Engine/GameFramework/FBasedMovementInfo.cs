@@ -5,7 +5,7 @@ using CSharpToCpp.Utilities;
 public partial struct FBasedMovementInfo {
 	public ushort BaseID;
 	public UPrimitiveComponent MovementBase;
-	public string BoneName;
+	public FName BoneName;
 	public FVector_NetQuantize100 Location;
 	public FRotator Rotation;
 	public bool bServerHasBaseComponent;

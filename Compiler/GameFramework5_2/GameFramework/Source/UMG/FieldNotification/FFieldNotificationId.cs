@@ -3,5 +3,5 @@ using CSharpToCpp.Utilities;
 ///<summary>namespace</summary>
 [CppInclude("FieldNotification/FieldId.h")]
 public partial struct FFieldNotificationId {
-	public string FieldName;
+	public FName FieldName;
 }

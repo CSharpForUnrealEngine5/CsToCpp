@@ -5,7 +5,7 @@ using CSharpToCpp.Utilities;
 public partial class UNiagaraSystemEditorFolder : UObject {
 	public static UClass StaticClass() {return default;}
 	///<summary>FolderName</summary>
-	public string FolderName;
+	public FName FolderName;
 	///<summary>ChildFolders</summary>
 	public TArray<UNiagaraSystemEditorFolder> ChildFolders;
 	///<summary>ChildEmitterHandleIds</summary>

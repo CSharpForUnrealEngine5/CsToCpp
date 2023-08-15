@@ -3,5 +3,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("Rigs/RigHierarchyDefines.h")]
 public partial struct FRigElementKey {
 	public ERigElementType Type;
-	public string Name;
+	public FName Name;
 }

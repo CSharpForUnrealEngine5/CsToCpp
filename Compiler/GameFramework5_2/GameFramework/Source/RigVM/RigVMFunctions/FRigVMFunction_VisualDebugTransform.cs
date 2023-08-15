@@ -6,5 +6,5 @@ public partial struct FRigVMFunction_VisualDebugTransform {
 	public bool bEnabled;
 	public float Thickness;
 	public float Scale;
-	public string BoneSpace;
+	public FName BoneSpace;
 }

@@ -4,7 +4,7 @@ using CSharpToCpp.Utilities;
 public partial class UIKRetargetBoneDetails : UObject {
 	public static UClass StaticClass() {return default;}
 	///<summary>SelectedBone</summary>
-	public string SelectedBone;
+	public FName SelectedBone;
 	///<summary>OffsetTransform</summary>
 	public FTransform OffsetTransform;
 	///<summary>CurrentTransform</summary>

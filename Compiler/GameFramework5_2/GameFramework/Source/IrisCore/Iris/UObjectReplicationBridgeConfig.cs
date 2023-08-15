@@ -12,7 +12,7 @@ public partial class UObjectReplicationBridgeConfig : UObject {
 	///<summary>Which classes should enable deltacompression. Derived classes will get the same behavior unless overidden</summary>
 	public TArray<FObjectReplicationBridgeDeltaCompressionConfig> DeltaCompressionConfigs;
 	///<summary>The name of the filter to apply objects that can have spatial filtering applied.</summary>
-	public string DefaultSpatialFilterName;
+	public FName DefaultSpatialFilterName;
 	///<summary>The name of the channel class required for object replication to work.</summary>
-	public string RequiredNetDriverChannelClassName;
+	public FName RequiredNetDriverChannelClassName;
 }

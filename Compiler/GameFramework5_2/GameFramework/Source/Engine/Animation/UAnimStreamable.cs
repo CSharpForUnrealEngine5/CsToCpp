@@ -8,7 +8,7 @@ public partial class UAnimStreamable : UAnimSequenceBase {
 	///<summary>This defines how values between keys are calculated *</summary>
 	public EAnimInterpolationType Interpolation;
 	///<summary>Base pose to use when retargeting</summary>
-	public string RetargetSource;
+	public FName RetargetSource;
 	///<summary>SamplingFrameRate</summary>
 	public FFrameRate SamplingFrameRate;
 	///<summary>Sequence the streamable was created from (used for reflecting changes to the source in editor)</summary>
@@ -22,7 +22,7 @@ public partial class UAnimStreamable : UAnimSequenceBase {
 	///<summary>In the future, maybe keeping RawAnimSequenceTrack + TrackMap as one would be good idea to avoid inconsistent array size</summary>
 	public TArray<FTrackToSkeletonMap> TrackToSkeletonMapTable;
 	///<summary>This is name of RawAnimationData tracks for editoronly - if we lose skeleton, we&#39;ll need relink them</summary>
-	public TArray<string> AnimationTrackNames;
+	public TArray<FName> AnimationTrackNames;
 	///<summary>The bone compression settings used to compress bones in this sequence.</summary>
 	public UAnimBoneCompressionSettings BoneCompressionSettings;
 	///<summary>The curve compression settings used to compress curves in this sequence.</summary>

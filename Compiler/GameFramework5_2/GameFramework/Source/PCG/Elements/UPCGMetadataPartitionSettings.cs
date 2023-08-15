@@ -4,5 +4,5 @@ using CSharpToCpp.Utilities;
 public partial class UPCGMetadataPartitionSettings : UPCGSettings {
 	public static UClass StaticClass() {return default;}
 	///<summary>PartitionAttribute</summary>
-	public string PartitionAttribute;
+	public FName PartitionAttribute;
 }

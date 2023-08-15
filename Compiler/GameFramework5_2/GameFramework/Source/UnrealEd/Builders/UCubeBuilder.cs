@@ -12,7 +12,7 @@ public partial class UCubeBuilder : UEditorBrushBuilder {
 	///<summary>The thickness of the cube wall when hollow</summary>
 	public float WallThickness;
 	///<summary>GroupName</summary>
-	public string GroupName;
+	public FName GroupName;
 	///<summary>Whether this is a hollow or solid cube</summary>
 	public bool Hollow;
 	///<summary>Whether extra internal faces should be generated for each cube face</summary>

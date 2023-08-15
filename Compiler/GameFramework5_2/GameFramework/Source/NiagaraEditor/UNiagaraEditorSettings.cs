@@ -44,7 +44,7 @@ public partial class UNiagaraEditorSettings : UDeveloperSettings {
 	///<summary>ActionColors</summary>
 	public FNiagaraActionColors ActionColors;
 	///<summary>NewAssetDialogConfigMap</summary>
-	public TMap<string,FNiagaraNewAssetDialogConfig> NewAssetDialogConfigMap;
+	public TMap<FName,FNiagaraNewAssetDialogConfig> NewAssetDialogConfigMap;
 	///<summary>HLSLKeywordReplacements</summary>
 	public TMap<string,string> HLSLKeywordReplacements;
 	///<summary>NamespaceMetadata</summary>

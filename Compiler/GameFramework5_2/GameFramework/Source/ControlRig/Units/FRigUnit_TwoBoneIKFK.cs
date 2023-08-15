@@ -2,8 +2,8 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Units/Deprecated/RigUnit_TwoBoneIKFK.h")]
 public partial struct FRigUnit_TwoBoneIKFK {
-	public string StartJoint;
-	public string EndJoint;
+	public FName StartJoint;
+	public FName EndJoint;
 	public FVector PoleTarget;
 	public float Spin;
 	public FTransform EndEffector;

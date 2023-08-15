@@ -5,7 +5,7 @@ using CSharpToCpp.Utilities;
 public partial class UMotionExtractorModifier : UAnimationModifier {
 	public static UClass StaticClass() {return default;}
 	///<summary>Bone we are going to generate the curve from</summary>
-	public string BoneName;
+	public FName BoneName;
 	///<summary>Type of motion to extract</summary>
 	public EMotionExtractor_MotionType MotionType;
 	///<summary>Axis to get the value from</summary>
@@ -29,5 +29,5 @@ public partial class UMotionExtractorModifier : UAnimationModifier {
 	///<summary>Whether we want to specify a custom name for the curve. If false, the name of the curve will be auto generated based on the data we are going to extract</summary>
 	public bool bUseCustomCurveName;
 	///<summary>Custom name for the curve we are going to generate.</summary>
-	public string CustomCurveName;
+	public FName CustomCurveName;
 }

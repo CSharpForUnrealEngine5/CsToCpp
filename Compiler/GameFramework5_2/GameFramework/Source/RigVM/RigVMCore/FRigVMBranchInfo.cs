@@ -4,7 +4,7 @@ using CSharpToCpp.Utilities;
 [CppInclude("RigVMCore/RigVMMemoryStorage.h")]
 public partial struct FRigVMBranchInfo {
 	public int Index;
-	public string Label;
+	public FName Label;
 	public int InstructionIndex;
 	public int ArgumentIndex;
 	public ushort FirstInstruction;

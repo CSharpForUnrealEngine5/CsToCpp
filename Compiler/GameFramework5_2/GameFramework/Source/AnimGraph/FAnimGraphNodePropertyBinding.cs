@@ -4,11 +4,11 @@ using CSharpToCpp.Utilities;
 public partial struct FAnimGraphNodePropertyBinding {
 	public FEdGraphPinType PinType;
 	public FEdGraphPinType PromotedPinType;
-	public string PropertyName;
+	public FName PropertyName;
 	public int ArrayIndex;
 	public FText PathAsText;
 	public TArray<string> PropertyPath;
-	public string ContextId;
+	public FName ContextId;
 	public FText CompiledContext;
 	public FText CompiledContextDesc;
 	public EAnimGraphNodePropertyBindingType Type;

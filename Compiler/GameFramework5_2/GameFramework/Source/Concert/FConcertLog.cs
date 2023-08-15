@@ -8,10 +8,10 @@ public partial struct FConcertLog {
 	public ushort ChannelId;
 	public FDateTime Timestamp;
 	public EConcertLogMessageAction MessageAction;
-	public string MessageTypeName;
+	public FName MessageTypeName;
 	public FGuid OriginEndpointId;
 	public FGuid DestinationEndpointId;
-	public string CustomPayloadTypename;
+	public FName CustomPayloadTypename;
 	public int CustomPayloadUncompressedByteSize;
 	public string StringPayload;
 	public FConcertSessionSerializedPayload SerializedPayload;

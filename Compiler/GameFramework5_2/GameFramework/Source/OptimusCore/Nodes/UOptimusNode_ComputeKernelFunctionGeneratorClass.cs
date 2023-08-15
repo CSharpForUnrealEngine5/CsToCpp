@@ -4,9 +4,9 @@ using CSharpToCpp.Utilities;
 public partial class UOptimusNode_ComputeKernelFunctionGeneratorClass : UClass {
 	public static UClass StaticClass() {return default;}
 	///<summary>Category</summary>
-	public string Category;
+	public FName Category;
 	///<summary>KernelName</summary>
-	public string KernelName;
+	public FName KernelName;
 	///<summary>ExecutionDomain</summary>
 	public FOptimusExecutionDomain ExecutionDomain;
 	///<summary>GroupSize</summary>

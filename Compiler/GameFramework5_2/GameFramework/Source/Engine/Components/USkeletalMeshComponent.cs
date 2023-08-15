@@ -41,21 +41,21 @@ public partial class USkeletalMeshComponent : USkinnedMeshComponent {
 	///<summary>Cached SpaceBases for Update Rate optimization.</summary>
 	public TArray<FTransform> CachedComponentSpaceTransforms;
 	///<summary>Get float type attribute value.</summary>
-	public bool GetFloatAttribute_Ref(string BoneName,string AttributeName,float OutValue,ECustomBoneAttributeLookup LookupType/*=ECustomBoneAttributeLookup.BoneOnly*/) { return default; }
+	public bool GetFloatAttribute_Ref(FName BoneName,FName AttributeName,float OutValue,ECustomBoneAttributeLookup LookupType/*=ECustomBoneAttributeLookup.BoneOnly*/) { return default; }
 	///<summary>Get FTransform type attribute value.</summary>
-	public bool GetTransformAttribute_Ref(string BoneName,string AttributeName,FTransform OutValue,ECustomBoneAttributeLookup LookupType/*=ECustomBoneAttributeLookup.BoneOnly*/) { return default; }
+	public bool GetTransformAttribute_Ref(FName BoneName,FName AttributeName,FTransform OutValue,ECustomBoneAttributeLookup LookupType/*=ECustomBoneAttributeLookup.BoneOnly*/) { return default; }
 	///<summary>Get integer type attribute value.</summary>
-	public bool GetIntegerAttribute_Ref(string BoneName,string AttributeName,int OutValue,ECustomBoneAttributeLookup LookupType/*=ECustomBoneAttributeLookup.BoneOnly*/) { return default; }
+	public bool GetIntegerAttribute_Ref(FName BoneName,FName AttributeName,int OutValue,ECustomBoneAttributeLookup LookupType/*=ECustomBoneAttributeLookup.BoneOnly*/) { return default; }
 	///<summary>Get string type attribute value.</summary>
-	public bool GetStringAttribute_Ref(string BoneName,string AttributeName,string OutValue,ECustomBoneAttributeLookup LookupType/*=ECustomBoneAttributeLookup.BoneOnly*/) { return default; }
+	public bool GetStringAttribute_Ref(FName BoneName,FName AttributeName,string OutValue,ECustomBoneAttributeLookup LookupType/*=ECustomBoneAttributeLookup.BoneOnly*/) { return default; }
 	///<summary>Get float type attribute value.</summary>
-	public bool GetFloatAttribute(string BoneName,string AttributeName,float DefaultValue,float OutValue,ECustomBoneAttributeLookup LookupType/*=ECustomBoneAttributeLookup.BoneOnly*/) { return default; }
+	public bool GetFloatAttribute(FName BoneName,FName AttributeName,float DefaultValue,float OutValue,ECustomBoneAttributeLookup LookupType/*=ECustomBoneAttributeLookup.BoneOnly*/) { return default; }
 	///<summary>Get FTransform type attribute value.</summary>
-	public bool GetTransformAttribute(string BoneName,string AttributeName,FTransform DefaultValue,FTransform OutValue,ECustomBoneAttributeLookup LookupType/*=ECustomBoneAttributeLookup.BoneOnly*/) { return default; }
+	public bool GetTransformAttribute(FName BoneName,FName AttributeName,FTransform DefaultValue,FTransform OutValue,ECustomBoneAttributeLookup LookupType/*=ECustomBoneAttributeLookup.BoneOnly*/) { return default; }
 	///<summary>Get integer type attribute value.</summary>
-	public bool GetIntegerAttribute(string BoneName,string AttributeName,int DefaultValue,int OutValue,ECustomBoneAttributeLookup LookupType/*=ECustomBoneAttributeLookup.BoneOnly*/) { return default; }
+	public bool GetIntegerAttribute(FName BoneName,FName AttributeName,int DefaultValue,int OutValue,ECustomBoneAttributeLookup LookupType/*=ECustomBoneAttributeLookup.BoneOnly*/) { return default; }
 	///<summary>Get string type attribute value.</summary>
-	public bool GetStringAttribute(string BoneName,string AttributeName,string DefaultValue,string OutValue,ECustomBoneAttributeLookup LookupType/*=ECustomBoneAttributeLookup.BoneOnly*/) { return default; }
+	public bool GetStringAttribute(FName BoneName,FName AttributeName,string DefaultValue,string OutValue,ECustomBoneAttributeLookup LookupType/*=ECustomBoneAttributeLookup.BoneOnly*/) { return default; }
 	///<summary>Used to scale speed of all animations on this skeletal mesh.</summary>
 	public float GlobalAnimRateScale;
 	///<summary>If we are running physics, should we update non-simulated bones based on the animation bone positions.</summary>
@@ -147,7 +147,7 @@ public partial class USkeletalMeshComponent : USkinnedMeshComponent {
 	///<summary>Whether we should stall the Cloth tick task until the cloth simulation is complete. This is required if we want up-to-date</summary>
 	public bool bWaitForParallelClothTask;
 	///<summary>You can choose to disable certain curves if you prefer.</summary>
-	public TArray<string> DisallowedAnimCurves;
+	public TArray<FName> DisallowedAnimCurves;
 	///<summary>Used for per poly collision. In 99% of cases you will be better off using a Physics Asset.</summary>
 	public UBodySetup BodySetup;
 	///<summary>ClothMaxDistanceScale</summary>
@@ -167,17 +167,17 @@ public partial class USkeletalMeshComponent : USkinnedMeshComponent {
 	///<summary>Returns the active post process instance is one is available. This is set on the mesh that this</summary>
 	public UAnimInstance GetPostProcessInstance() { return default; }
 	///<summary>Returns the a tagged linked instance node. If no linked instances are found or none are tagged with the</summary>
-	public UAnimInstance GetLinkedAnimGraphInstanceByTag(string InTag) { return default; }
+	public UAnimInstance GetLinkedAnimGraphInstanceByTag(FName InTag) { return default; }
 	///<summary>GetLinkedAnimGraphInstancesByTag</summary>
-	public void GetLinkedAnimGraphInstancesByTag(string InTag,TArray<UAnimInstance> OutLinkedInstances) {}
+	public void GetLinkedAnimGraphInstancesByTag(FName InTag,TArray<UAnimInstance> OutLinkedInstances) {}
 	///<summary>Runs through all nodes, attempting to find linked instance by name/tag, then sets the class of each node if the tag matches</summary>
-	public void LinkAnimGraphByTag(string InTag,UClass InClass) {}
+	public void LinkAnimGraphByTag(FName InTag,UClass InClass) {}
 	///<summary>Runs through all layer nodes, attempting to find layer nodes that are implemented by the specified class, then sets up a linked instance of the class for each.</summary>
 	public void LinkAnimClassLayers(UClass InClass) {}
 	///<summary>Runs through all layer nodes, attempting to find layer nodes that are currently running the specified class, then resets each to its default value.</summary>
 	public void UnlinkAnimClassLayers(UClass InClass) {}
 	///<summary>Gets the layer linked instance corresponding to the specified group</summary>
-	public UAnimInstance GetLinkedAnimLayerInstanceByGroup(string InGroup) { return default; }
+	public UAnimInstance GetLinkedAnimLayerInstanceByGroup(FName InGroup) { return default; }
 	///<summary>Gets the first layer linked instance corresponding to the specified class</summary>
 	public UAnimInstance GetLinkedAnimLayerInstanceByClass(UClass InClass) { return default; }
 	///<summary>Returns whether there are any valid instances to run, currently this means whether we have</summary>
@@ -209,11 +209,11 @@ public partial class USkeletalMeshComponent : USkinnedMeshComponent {
 	///<summary>This overrides current AnimationData parameter in the SkeletalMeshComponent. This will serialize when the component serialize</summary>
 	public void OverrideAnimationData(UAnimationAsset InAnimToPlay,bool bIsLooping/*=true*/,bool bIsPlaying/*=true*/,float Position/*=0.0f*/,float PlayRate/*=1.0f*/) {}
 	///<summary>Set Morph Target with Name and Value(0-1)</summary>
-	public void SetMorphTarget(string MorphTargetName,float Value,bool bRemoveZeroWeight/*=true*/) {}
+	public void SetMorphTarget(FName MorphTargetName,float Value,bool bRemoveZeroWeight/*=true*/) {}
 	///<summary>Clear all Morph Target that are set to this mesh</summary>
 	public void ClearMorphTargets() {}
 	///<summary>Get Morph target with given name</summary>
-	public float GetMorphTarget(string MorphTargetName) { return default; }
+	public float GetMorphTarget(FName MorphTargetName) { return default; }
 	///<summary>Takes a snapshot of this skeletal mesh component&#39;s pose and saves it to the specified snapshot.</summary>
 	public void SnapshotPose(FPoseSnapshot Snapshot) {}
 	///<summary>Sets whether cloth assets should be created/simulated in this component.</summary>
@@ -257,11 +257,11 @@ public partial class USkeletalMeshComponent : USkinnedMeshComponent {
 	///<summary>GetAllowedAnimCurveEvaluate</summary>
 	public bool GetAllowedAnimCurveEvaluate() { return default; }
 	///<summary>AllowAnimCurveEvaluation</summary>
-	public void AllowAnimCurveEvaluation(string NameOfCurve,bool bAllow) {}
+	public void AllowAnimCurveEvaluation(FName NameOfCurve,bool bAllow) {}
 	///<summary>By reset, it will allow all the curves to be evaluated</summary>
 	public void ResetAllowedAnimCurveEvaluation() {}
 	///<summary>resets, and then only allow the following list to be allowed/disallowed</summary>
-	public void SetAllowedAnimCurvesEvaluation(TArray<string> List,bool bAllow) {}
+	public void SetAllowedAnimCurvesEvaluation(TArray<FName> List,bool bAllow) {}
 	///<summary>Gets the teleportation rotation threshold.</summary>
 	public float GetTeleportRotationThreshold() { return default; }
 	///<summary>Sets the teleportation rotation threshold.</summary>
@@ -283,27 +283,27 @@ public partial class USkeletalMeshComponent : USkinnedMeshComponent {
 	///<summary>Broadcast when the components anim instance is initialized</summary>
 	public FOnAnimInitialized OnAnimInitialized;
 	///<summary>Changes the value of bNotifyRigidBodyCollision for a given body</summary>
-	public virtual void SetBodyNotifyRigidBodyCollision(bool bNewNotifyRigidBodyCollision,string BoneName/*=NAME_None*/) {}
+	public virtual void SetBodyNotifyRigidBodyCollision(bool bNewNotifyRigidBodyCollision,FName BoneName/*=NAME_None*/) {}
 	///<summary>Changes the value of bNotifyRigidBodyCollision on all bodies below a given bone</summary>
-	public virtual void SetNotifyRigidBodyCollisionBelow(bool bNewNotifyRigidBodyCollision,string BoneName/*=NAME_None*/,bool bIncludeSelf/*=true*/) {}
+	public virtual void SetNotifyRigidBodyCollisionBelow(bool bNewNotifyRigidBodyCollision,FName BoneName/*=NAME_None*/,bool bIncludeSelf/*=true*/) {}
 	///<summary>Enables or disables gravity for the given bone.</summary>
-	public void SetEnableBodyGravity(bool bEnableGravity,string BoneName) {}
+	public void SetEnableBodyGravity(bool bEnableGravity,FName BoneName) {}
 	///<summary>Checks whether or not gravity is enabled on the given bone.</summary>
-	public bool IsBodyGravityEnabled(string BoneName) { return default; }
+	public bool IsBodyGravityEnabled(FName BoneName) { return default; }
 	///<summary>Enables or disables gravity to all bodies below the given bone.</summary>
-	public void SetEnableGravityOnAllBodiesBelow(bool bEnableGravity,string BoneName,bool bIncludeSelf/*=true*/) {}
+	public void SetEnableGravityOnAllBodiesBelow(bool bEnableGravity,FName BoneName,bool bIncludeSelf/*=true*/) {}
 	///<summary>Given a world position, find the closest point on the physics asset. Note that this is independent of collision and welding. This is based purely on animation position</summary>
-	public bool K2_GetClosestPointOnPhysicsAsset(FVector WorldPosition,FVector ClosestWorldPosition,FVector Normal,string BoneName,float Distance) { return default; }
+	public bool K2_GetClosestPointOnPhysicsAsset(FVector WorldPosition,FVector ClosestWorldPosition,FVector Normal,FName BoneName,float Distance) { return default; }
 	///<summary>Returns the mass (in kg) of the given bone</summary>
-	public float GetBoneMass(string BoneName/*=NAME_None*/,bool bScaleMass/*=true*/) { return default; }
+	public float GetBoneMass(FName BoneName/*=NAME_None*/,bool bScaleMass/*=true*/) { return default; }
 	///<summary>Returns the center of mass of the skeletal mesh, instead of the root body&#39;s location</summary>
 	public FVector GetSkeletalCenterOfMass() { return default; }
 	///<summary>Add a force to all rigid bodies below.</summary>
-	public virtual void AddForceToAllBodiesBelow(FVector Force,string BoneName/*=NAME_None*/,bool bAccelChange/*=false*/,bool bIncludeSelf/*=true*/) {}
+	public virtual void AddForceToAllBodiesBelow(FVector Force,FName BoneName/*=NAME_None*/,bool bAccelChange/*=false*/,bool bIncludeSelf/*=true*/) {}
 	///<summary>Add impulse to all single rigid bodies below. Good for one time instant burst.</summary>
-	public virtual void AddImpulseToAllBodiesBelow(FVector Impulse,string BoneName/*=NAME_None*/,bool bVelChange/*=false*/,bool bIncludeSelf/*=true*/) {}
+	public virtual void AddImpulseToAllBodiesBelow(FVector Impulse,FName BoneName/*=NAME_None*/,bool bVelChange/*=false*/,bool bIncludeSelf/*=true*/) {}
 	///<summary>Terminate physics on all bodies below the named bone, effectively disabling collision forever. If you terminate, you won&#39;t be able to re-init later.</summary>
-	public void TermBodiesBelow(string ParentBoneName) {}
+	public void TermBodiesBelow(FName ParentBoneName) {}
 	///<summary>Set bSimulatePhysics to true for all bone bodies. Does not change the component bSimulatePhysics flag.</summary>
 	public void SetAllBodiesSimulatePhysics(bool bNewSimulate) {}
 	///<summary>This is global set up for setting physics blend weight</summary>
@@ -311,21 +311,21 @@ public partial class USkeletalMeshComponent : USkinnedMeshComponent {
 	///<summary>Disable physics blending of bones *</summary>
 	public void SetEnablePhysicsBlending(bool bNewBlendPhysics) {}
 	///<summary>[WARNING: Chaos Only]</summary>
-	public void SetAllBodiesBelowPhysicsDisabled(string InBoneName,bool bDisabled,bool bIncludeSelf/*=true*/) {}
+	public void SetAllBodiesBelowPhysicsDisabled(FName InBoneName,bool bDisabled,bool bIncludeSelf/*=true*/) {}
 	///<summary>set the linear velocity of the child bodies to match that of the given parent bone</summary>
-	public void SetAllBodiesBelowLinearVelocity(string InBoneName,FVector LinearVelocity,bool bIncludeSelf/*=true*/) {}
+	public void SetAllBodiesBelowLinearVelocity(FName InBoneName,FVector LinearVelocity,bool bIncludeSelf/*=true*/) {}
 	///<summary>GetBoneLinearVelocity</summary>
-	public FVector GetBoneLinearVelocity(string InBoneName) { return default; }
+	public FVector GetBoneLinearVelocity(FName InBoneName) { return default; }
 	///<summary>Set all of the bones below passed in bone to be simulated</summary>
-	public void SetAllBodiesBelowSimulatePhysics(string InBoneName,bool bNewSimulate,bool bIncludeSelf/*=true*/) {}
+	public void SetAllBodiesBelowSimulatePhysics(FName InBoneName,bool bNewSimulate,bool bIncludeSelf/*=true*/) {}
 	///<summary>Allows you to reset bodies Simulate state based on where bUsePhysics is set to true in the BodySetup.</summary>
 	public void ResetAllBodiesSimulatePhysics() {}
 	///<summary>SetAllBodiesPhysicsBlendWeight</summary>
 	public void SetAllBodiesPhysicsBlendWeight(float PhysicsBlendWeight,bool bSkipCustomPhysicsType/*=false*/) {}
 	///<summary>Set all of the bones below passed in bone to be simulated</summary>
-	public void SetAllBodiesBelowPhysicsBlendWeight(string InBoneName,float PhysicsBlendWeight,bool bSkipCustomPhysicsType/*=false*/,bool bIncludeSelf/*=true*/) {}
+	public void SetAllBodiesBelowPhysicsBlendWeight(FName InBoneName,float PhysicsBlendWeight,bool bSkipCustomPhysicsType/*=false*/,bool bIncludeSelf/*=true*/) {}
 	///<summary>Accumulate AddPhysicsBlendWeight to physics blendweight for all of the bones below passed in bone to be simulated</summary>
-	public void AccumulateAllBodiesBelowPhysicsBlendWeight(string InBoneName,float AddPhysicsBlendWeight,bool bSkipCustomPhysicsType/*=false*/) {}
+	public void AccumulateAllBodiesBelowPhysicsBlendWeight(FName InBoneName,float AddPhysicsBlendWeight,bool bSkipCustomPhysicsType/*=false*/) {}
 	///<summary>Enable or Disable AngularPositionDrive. If motor is in SLERP mode it will be turned on if either EnableSwingDrive OR EnableTwistDrive are enabled. In Twist and Swing mode the twist and the swing can be controlled individually.</summary>
 	public void SetAllMotorsAngularPositionDrive(bool bEnableSwingDrive,bool bEnableTwistDrive,bool bSkipCustomPhysicsType/*=false*/) {}
 	///<summary>Enable or Disable AngularVelocityDrive. If motor is in SLERP mode it will be turned on if either EnableSwingDrive OR EnableTwistDrive are enabled. In Twist and Swing mode the twist and the swing can be controlled individually.</summary>
@@ -333,23 +333,23 @@ public partial class USkeletalMeshComponent : USkinnedMeshComponent {
 	///<summary>Set Angular Drive motors params for all constraint instances</summary>
 	public void SetAllMotorsAngularDriveParams(float InSpring,float InDamping,float InForceLimit,bool bSkipCustomPhysicsType/*=false*/) {}
 	///<summary>Sets the constraint profile properties (limits, motors, etc...) to match the constraint profile as defined in the physics asset. If profile name is not found the joint is set to use the default constraint profile.</summary>
-	public void SetConstraintProfile(string JointName,string ProfileName,bool bDefaultIfNotFound/*=false*/) {}
+	public void SetConstraintProfile(FName JointName,FName ProfileName,bool bDefaultIfNotFound/*=false*/) {}
 	///<summary>Sets the constraint profile properties (limits, motors, etc...) to match the constraint profile as defined in the physics asset for all constraints. If profile name is not found the joint is set to use the default constraint profile.</summary>
-	public void SetConstraintProfileForAll(string ProfileName,bool bDefaultIfNotFound/*=false*/) {}
+	public void SetConstraintProfileForAll(FName ProfileName,bool bDefaultIfNotFound/*=false*/) {}
 	///<summary>Find Constraint Name from index</summary>
-	public string FindConstraintBoneName(int ConstraintIndex) { return default; }
+	public FName FindConstraintBoneName(int ConstraintIndex) { return default; }
 	///<summary>Break a constraint off a Gore mesh.</summary>
-	public void BreakConstraint(FVector Impulse,FVector HitLocation,string InBoneName) {}
+	public void BreakConstraint(FVector Impulse,FVector HitLocation,FName InBoneName) {}
 	///<summary>Gets a constraint by its name</summary>
-	public FConstraintInstanceAccessor GetConstraintByName(string ConstraintName,bool bIncludesTerminated) { return default; }
+	public FConstraintInstanceAccessor GetConstraintByName(FName ConstraintName,bool bIncludesTerminated) { return default; }
 	///<summary>Gets all the constraints</summary>
 	public void GetConstraints(bool bIncludesTerminated,TArray<FConstraintInstanceAccessor> OutConstraints) {}
 	///<summary>Gets all the constraints attached to a body</summary>
-	public void GetConstraintsFromBody(string BodyName,bool bParentConstraints,bool bChildConstraints,bool bIncludesTerminated,TArray<FConstraintInstanceAccessor> OutConstraints) {}
+	public void GetConstraintsFromBody(FName BodyName,bool bParentConstraints,bool bChildConstraints,bool bIncludesTerminated,TArray<FConstraintInstanceAccessor> OutConstraints) {}
 	///<summary>Sets the Angular Motion Ranges for a named constraint</summary>
-	public void SetAngularLimits(string InBoneName,float Swing1LimitAngle,float TwistLimitAngle,float Swing2LimitAngle) {}
+	public void SetAngularLimits(FName InBoneName,float Swing1LimitAngle,float TwistLimitAngle,float Swing2LimitAngle) {}
 	///<summary>Gets the current Angular state for a named bone constraint</summary>
-	public void GetCurrentJointAngles(string InBoneName,float Swing1Angle,float TwistAngle,float Swing2Angle) {}
+	public void GetCurrentJointAngles(FName InBoneName,float Swing1Angle,float TwistAngle,float Swing2Angle) {}
 	///<summary>these are deprecated variables from removing SingleAnimSkeletalComponent</summary>
 	public UAnimSequence SequenceToPlay_DEPRECATED;
 	///<summary>The default sequence to play on this skeletal mesh</summary>

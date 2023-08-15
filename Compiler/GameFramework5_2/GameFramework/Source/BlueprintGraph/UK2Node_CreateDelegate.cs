@@ -4,7 +4,7 @@ using CSharpToCpp.Utilities;
 public partial class UK2Node_CreateDelegate : UK2Node {
 	public static UClass StaticClass() {return default;}
 	///<summary>SelectedFunctionName</summary>
-	public string SelectedFunctionName;
+	public FName SelectedFunctionName;
 	///<summary>SelectedFunctionGuid</summary>
 	public FGuid SelectedFunctionGuid;
 }

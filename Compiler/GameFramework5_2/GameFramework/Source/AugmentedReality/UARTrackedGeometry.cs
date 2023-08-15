@@ -12,7 +12,7 @@ public partial class UARTrackedGeometry : UObject {
 	///<summary>IsTracked</summary>
 	public bool IsTracked() { return default; }
 	///<summary>GetDebugName</summary>
-	public string GetDebugName() { return default; }
+	public FName GetDebugName() { return default; }
 	///<summary>GetName</summary>
 	public string GetName() { return default; }
 	///<summary>GetLastUpdateFrameNumber</summary>
@@ -42,5 +42,5 @@ public partial class UARTrackedGeometry : UObject {
 	///<summary>The frame number this tracked geometry was last updated on</summary>
 	public int LastUpdateFrameNumber;
 	///<summary>A unique name that can be used to identify the anchor for debug purposes</summary>
-	public string DebugName;
+	public FName DebugName;
 }

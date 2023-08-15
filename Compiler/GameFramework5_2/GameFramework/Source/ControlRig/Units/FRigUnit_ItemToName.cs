@@ -4,5 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("Units/Execution/RigUnit_Item.h")]
 public partial struct FRigUnit_ItemToName {
 	public FRigElementKey Value;
-	public string Result;
+	public FName Result;
 }

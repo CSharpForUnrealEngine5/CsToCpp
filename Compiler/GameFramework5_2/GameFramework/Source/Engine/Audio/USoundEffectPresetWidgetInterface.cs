@@ -8,5 +8,5 @@ public partial class USoundEffectPresetWidgetInterface : UAudioPanelWidgetInterf
 	///<summary>Called when the preset widget is constructed</summary>
 	public void OnConstructed(USoundEffectPreset Preset) {}
 	///<summary>Called when the preset object is changed</summary>
-	public void OnPropertyChanged(USoundEffectPreset Preset,string PropertyName) {}
+	public void OnPropertyChanged(USoundEffectPreset Preset,FName PropertyName) {}
 }

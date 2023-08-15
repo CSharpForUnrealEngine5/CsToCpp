@@ -36,7 +36,7 @@ public partial class URemoteControlAPITestObject : UObject {
 	///<summary>StringValue</summary>
 	public string StringValue;
 	///<summary>NameValue</summary>
-	public string NameValue;
+	public FName NameValue;
 	///<summary>TextValue</summary>
 	public FText TextValue;
 	///<summary>bValue</summary>

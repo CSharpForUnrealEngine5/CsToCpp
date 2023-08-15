@@ -11,7 +11,7 @@ public partial class AController : AActor {
 	///<summary>Called on both authorities and clients when the possessed pawn changes (either OldPawn or NewPawn might be nullptr)</summary>
 	public FOnPossessedPawnChanged OnPossessedPawnChanged;
 	///<summary>Current gameplay state this controller is in</summary>
-	public string StateName;
+	public FName StateName;
 	///<summary>Pawn currently being controlled by this controller.  Use Pawn.Possess() to take control of a pawn</summary>
 	public APawn Pawn;
 	///<summary>Character currently being controlled by this controller.  Value is same as Pawn if the controlled pawn is a character, otherwise nullptr</summary>

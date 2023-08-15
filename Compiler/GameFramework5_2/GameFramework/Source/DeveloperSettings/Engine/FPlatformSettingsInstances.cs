@@ -4,5 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("Engine/PlatformSettingsManager.h")]
 public partial struct FPlatformSettingsInstances {
 	public UPlatformSettings PlatformInstance;
-	public TMap<string,UPlatformSettings> OtherPlatforms;
+	public TMap<FName,UPlatformSettings> OtherPlatforms;
 }

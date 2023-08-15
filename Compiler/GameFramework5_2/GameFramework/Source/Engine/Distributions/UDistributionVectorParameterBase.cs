@@ -4,7 +4,7 @@ using CSharpToCpp.Utilities;
 public partial class UDistributionVectorParameterBase : UDistributionVectorConstant {
 	public static UClass StaticClass() {return default;}
 	///<summary>ParameterName</summary>
-	public string ParameterName;
+	public FName ParameterName;
 	///<summary>MinInput</summary>
 	public FVector MinInput;
 	///<summary>MaxInput</summary>

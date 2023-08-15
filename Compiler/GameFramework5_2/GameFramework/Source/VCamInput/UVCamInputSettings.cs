@@ -4,15 +4,15 @@ using CSharpToCpp.Utilities;
 public partial class UVCamInputSettings : UDeveloperSettings {
 	public static UClass StaticClass() {return default;}
 	///<summary>DefaultInputProfile</summary>
-	public string DefaultInputProfile;
+	public FName DefaultInputProfile;
 	///<summary>InputProfiles</summary>
-	public TMap<string,FVCamInputProfile> InputProfiles;
+	public TMap<FName,FVCamInputProfile> InputProfiles;
 	///<summary>GetVCamInputSettings</summary>
 	public static UVCamInputSettings GetVCamInputSettings() { return default; }
 	///<summary>SetDefaultInputProfile</summary>
-	public void SetDefaultInputProfile(string NewDefaultInputProfile) {}
+	public void SetDefaultInputProfile(FName NewDefaultInputProfile) {}
 	///<summary>SetInputProfiles</summary>
-	public void SetInputProfiles(TMap<string,FVCamInputProfile> NewInputProfiles) {}
+	public void SetInputProfiles(TMap<FName,FVCamInputProfile> NewInputProfiles) {}
 	///<summary>GetInputProfileNames</summary>
-	public TArray<string> GetInputProfileNames() { return default; }
+	public TArray<FName> GetInputProfileNames() { return default; }
 }

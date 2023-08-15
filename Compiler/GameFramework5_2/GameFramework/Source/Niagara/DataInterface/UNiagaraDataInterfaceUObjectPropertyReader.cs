@@ -13,5 +13,5 @@ public partial class UNiagaraDataInterfaceUObjectPropertyReader : UNiagaraDataIn
 	///<summary>When an actor is bound as the object we will also search for a component of this type to bind properties to.</summary>
 	public UClass SourceActorComponentClass;
 	///<summary>Remaps a property reader, where the</summary>
-	public static void SetUObjectReaderPropertyRemap(UNiagaraComponent NiagaraComponent,string UserParameterName,string GraphName,string RemapName) {}
+	public static void SetUObjectReaderPropertyRemap(UNiagaraComponent NiagaraComponent,FName UserParameterName,FName GraphName,FName RemapName) {}
 }

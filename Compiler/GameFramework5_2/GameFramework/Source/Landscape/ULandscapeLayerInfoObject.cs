@@ -4,7 +4,7 @@ using CSharpToCpp.Utilities;
 public partial class ULandscapeLayerInfoObject : UObject {
 	public static UClass StaticClass() {return default;}
 	///<summary>LayerName</summary>
-	public string LayerName;
+	public FName LayerName;
 	///<summary>PhysMaterial</summary>
 	public UPhysicalMaterial PhysMaterial;
 	///<summary>Hardness</summary>

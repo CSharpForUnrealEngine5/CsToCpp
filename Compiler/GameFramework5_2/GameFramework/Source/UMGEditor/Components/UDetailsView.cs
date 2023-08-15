@@ -21,11 +21,11 @@ public partial class UDetailsView : UPropertyViewBase {
 	///<summary>If true, all properties will be visible, not just those with CPF_Edit</summary>
 	public bool bForceHiddenPropertyVisibility;
 	///<summary>Identifier for this details view; NAME_None if this view is anonymous</summary>
-	public string ViewIdentifier;
+	public FName ViewIdentifier;
 	///<summary>Which categories to show in the details panel. If both this and the Properties To Show lists are empty, all properties will show.</summary>
-	public TArray<string> CategoriesToShow;
+	public TArray<FName> CategoriesToShow;
 	///<summary>Which properties to show in the details panel. If both this and the Categories To Show lists are empty, all properties will show.</summary>
-	public TArray<string> PropertiesToShow;
+	public TArray<FName> PropertiesToShow;
 	///<summary>Showing properties in this details panel works by allowing only specific categories and properties. This flag enables you to show all properties without needing to specify.</summary>
 	public bool bShowOnlyAllowed;
 }

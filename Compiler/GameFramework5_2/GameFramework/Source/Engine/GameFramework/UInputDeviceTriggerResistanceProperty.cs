@@ -7,5 +7,5 @@ public partial class UInputDeviceTriggerResistanceProperty : UInputDeviceTrigger
 	///<summary>TriggerData</summary>
 	public FDeviceTriggerTriggerResistanceData TriggerData;
 	///<summary>A map of device specific color data. If no overrides are specified, the Default hardware data will be used</summary>
-	public TMap<string,FDeviceTriggerTriggerResistanceData> DeviceOverrideData;
+	public TMap<FName,FDeviceTriggerTriggerResistanceData> DeviceOverrideData;
 }

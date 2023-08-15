@@ -2,7 +2,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Rigs/RigBoneHierarchy.h")]
 public partial struct FRigBone {
-	public string ParentName;
+	public FName ParentName;
 	public int ParentIndex;
 	public FTransform InitialTransform;
 	public FTransform GlobalTransform;

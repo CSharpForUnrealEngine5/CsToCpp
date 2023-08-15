@@ -14,7 +14,7 @@ public partial class UPCGBlueprintSettings : UPCGSettings {
 	///<summary>BlueprintElementInstance</summary>
 	public UPCGBlueprintElement BlueprintElementInstance;
 	///<summary>TrackedActorTags</summary>
-	public TArray<string> TrackedActorTags;
+	public TArray<FName> TrackedActorTags;
 	///<summary>If this is checked, found actors that are outside component bounds will not trigger a refresh. Only works for tags for now in editor.</summary>
 	public bool bTrackActorsOnlyWithinBounds;
 	///<summary>bCreatesArtifacts_DEPRECATED</summary>

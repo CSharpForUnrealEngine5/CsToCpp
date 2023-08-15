@@ -4,7 +4,7 @@ using CSharpToCpp.Utilities;
 public partial class UDistributionFloatParameterBase : UDistributionFloatConstant {
 	public static UClass StaticClass() {return default;}
 	///<summary>todo document</summary>
-	public string ParameterName;
+	public FName ParameterName;
 	///<summary>todo document</summary>
 	public float MinInput;
 	///<summary>todo document</summary>

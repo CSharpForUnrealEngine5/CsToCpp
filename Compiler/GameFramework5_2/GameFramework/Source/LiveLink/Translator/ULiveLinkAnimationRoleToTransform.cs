@@ -5,5 +5,5 @@ using CSharpToCpp.Utilities;
 public partial class ULiveLinkAnimationRoleToTransform : ULiveLinkFrameTranslator {
 	public static UClass StaticClass() {return default;}
 	///<summary>BoneName</summary>
-	public string BoneName;
+	public FName BoneName;
 }

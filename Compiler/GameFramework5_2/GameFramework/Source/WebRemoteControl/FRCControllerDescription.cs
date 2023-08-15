@@ -2,9 +2,9 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("RemoteControlModels.h")]
 public partial struct FRCControllerDescription {
-	public string DisplayName;
+	public FName DisplayName;
 	public string ID;
 	public string Type;
 	public string Path;
-	public TMap<string,string> Metadata;
+	public TMap<FName,string> Metadata;
 }

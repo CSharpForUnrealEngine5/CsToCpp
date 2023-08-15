@@ -4,9 +4,9 @@ using CSharpToCpp.Utilities;
 public partial class USmartObjectBlueprintFunctionLibrary : UBlueprintFunctionLibrary {
 	public static UClass StaticClass() {return default;}
 	///<summary>GetValueAsSOClaimHandle</summary>
-	public static FSmartObjectClaimHandle GetValueAsSOClaimHandle(UBlackboardComponent BlackboardComponent,string KeyName) { return default; }
+	public static FSmartObjectClaimHandle GetValueAsSOClaimHandle(UBlackboardComponent BlackboardComponent,FName KeyName) { return default; }
 	///<summary>SetValueAsSOClaimHandle</summary>
-	public static void SetValueAsSOClaimHandle(UBlackboardComponent BlackboardComponent,string KeyName,FSmartObjectClaimHandle Value) {}
+	public static void SetValueAsSOClaimHandle(UBlackboardComponent BlackboardComponent,FName KeyName,FSmartObjectClaimHandle Value) {}
 	///<summary>IsValidSmartObjectClaimHandle</summary>
 	public static bool IsValidSmartObjectClaimHandle(FSmartObjectClaimHandle Handle) { return default; }
 	///<summary>Adds to the simulation all smart objects for an actor or removes them according to &#39;bAdd&#39;.</summary>

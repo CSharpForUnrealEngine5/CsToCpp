@@ -6,5 +6,5 @@ public partial class UControlRigUnitNodeSpawner : UBlueprintNodeSpawner {
 	///<summary>The unit type we will spawn</summary>
 	public UScriptStruct StructTemplate;
 	///<summary>MethodName</summary>
-	public string MethodName;
+	public FName MethodName;
 }

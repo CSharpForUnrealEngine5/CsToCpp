@@ -9,5 +9,5 @@ public partial class URigVMFunctionReferenceNode : URigVMLibraryNode {
 	///<summary>ReferencedNodePtr_DEPRECATED</summary>
 	public TSoftObjectPtr<URigVMLibraryNode> ReferencedNodePtr_DEPRECATED;
 	///<summary>VariableMap</summary>
-	public TMap<string,string> VariableMap;
+	public TMap<FName,FName> VariableMap;
 }

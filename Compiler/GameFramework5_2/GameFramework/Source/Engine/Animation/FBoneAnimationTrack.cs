@@ -5,5 +5,5 @@ using CSharpToCpp.Utilities;
 public partial struct FBoneAnimationTrack {
 	public FRawAnimSequenceTrack InternalTrackData;
 	public int BoneTreeIndex;
-	public string Name;
+	public FName Name;
 }

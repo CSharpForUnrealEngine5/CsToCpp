@@ -20,9 +20,9 @@ public partial class UTestBTTask_LatentWithFlags : UBTTaskNode {
 	///<summary>Num of ticks before &#39;abort start&#39; and `set abort flag` and then the same num of ticks before `abort finish`</summary>
 	public int AbortHalfTicks;
 	///<summary>KeyNameExecute</summary>
-	public string KeyNameExecute;
+	public FName KeyNameExecute;
 	///<summary>KeyNameAbort</summary>
-	public string KeyNameAbort;
+	public FName KeyNameAbort;
 	///<summary>LogResult</summary>
 	public EBTNodeResult LogResult;
 }

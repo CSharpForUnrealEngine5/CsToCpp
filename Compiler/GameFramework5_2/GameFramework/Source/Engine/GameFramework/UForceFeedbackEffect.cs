@@ -7,7 +7,7 @@ public partial class UForceFeedbackEffect : UObject {
 	///<summary>ChannelDetails</summary>
 	public TArray<FForceFeedbackChannelDetails> ChannelDetails;
 	///<summary>A map of platform name -&gt; ForceFeedback channel details</summary>
-	public TMap<string,FForceFeedbackEffectOverridenChannelDetails> PerDeviceOverrides;
+	public TMap<FName,FForceFeedbackEffectOverridenChannelDetails> PerDeviceOverrides;
 	///<summary>A map of input device properties that we want to set while this effect is playing</summary>
 	public TArray<UInputDeviceProperty> DeviceProperties;
 	///<summary>Duration of force feedback pattern in seconds.</summary>

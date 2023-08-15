@@ -16,9 +16,9 @@ public partial class UTypedElementListLibrary : UObject {
 	///<summary>Count the number of elements in this list, optionally filtering to elements that implement the given interface.</summary>
 	public static int CountElements(FScriptTypedElementListProxy ElementList,UClass BaseInterfaceType/*=nullptr*/) { return default; }
 	///<summary>Test whether there are elements in this list of the given type.</summary>
-	public static bool HasElementsOfType(FScriptTypedElementListProxy ElementList,string ElementTypeName) { return default; }
+	public static bool HasElementsOfType(FScriptTypedElementListProxy ElementList,FName ElementTypeName) { return default; }
 	///<summary>Count the number of elements in this list of the given type.</summary>
-	public static int CountElementsOfType(FScriptTypedElementListProxy ElementList,string ElementTypeName) { return default; }
+	public static int CountElementsOfType(FScriptTypedElementListProxy ElementList,FName ElementTypeName) { return default; }
 	///<summary>Get the handle of every element in this list, optionally filtering to elements that implement the given interface.</summary>
 	public static TArray<FScriptTypedElementHandle> GetElementHandles(FScriptTypedElementListProxy ElementList,UClass BaseInterfaceType) { return default; }
 	///<summary>Is the given index a valid entry within this element list?</summary>

@@ -51,7 +51,7 @@ public partial class URigVMNode : UObject {
 	///<summary>Returns true if this Node is the beginning of a scope</summary>
 	public virtual bool IsEvent() { return default; }
 	///<summary>Returns the name of the event</summary>
-	public virtual string GetEventName() { return default; }
+	public virtual FName GetEventName() { return default; }
 	///<summary>Returns true if this node can only exist once in a graph</summary>
 	public virtual bool CanOnlyExistOnce() { return default; }
 	///<summary>Returns true if the node has any input pins</summary>
@@ -73,7 +73,7 @@ public partial class URigVMNode : UObject {
 	///<summary>Returns a list of Nodes connected as targets to</summary>
 	public TArray<URigVMNode> GetLinkedTargetNodes() { return default; }
 	///<summary>Returns the name of the node prior to the renaming</summary>
-	public string GetPreviousFName() { return default; }
+	public FName GetPreviousFName() { return default; }
 	///<summary>return true if this node is a loop node</summary>
 	public bool IsLoopNode() { return default; }
 	///<summary>return true if this node is a control flow node</summary>
@@ -105,7 +105,7 @@ public partial class URigVMNode : UObject {
 	///<summary>GetAggregateOutputs</summary>
 	public virtual TArray<URigVMPin> GetAggregateOutputs() { return default; }
 	///<summary>GetNextAggregateName</summary>
-	public virtual string GetNextAggregateName(string InLastAggregatePinName) { return default; }
+	public virtual FName GetNextAggregateName(FName InLastAggregatePinName) { return default; }
 	///<summary>FindFunctionForNode</summary>
 	public virtual URigVMLibraryNode FindFunctionForNode() { return default; }
 	///<summary>NodeTitle</summary>
@@ -117,7 +117,7 @@ public partial class URigVMNode : UObject {
 	///<summary>NodeColor</summary>
 	public FLinearColor NodeColor;
 	///<summary>PreviousName</summary>
-	public string PreviousName;
+	public FName PreviousName;
 	///<summary>bHasBreakpoint</summary>
 	public bool bHasBreakpoint;
 	///<summary>bHaltedAtThisNode</summary>

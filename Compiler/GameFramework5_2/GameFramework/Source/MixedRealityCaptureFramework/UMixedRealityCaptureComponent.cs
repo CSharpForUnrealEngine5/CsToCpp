@@ -14,7 +14,7 @@ public partial class UMixedRealityCaptureComponent : USceneCaptureComponent2D {
 	///<summary>LensDistortionParameters</summary>
 	public FOpenCVLensDistortionParameters LensDistortionParameters;
 	///<summary>TrackingSourceName</summary>
-	public string TrackingSourceName;
+	public FName TrackingSourceName;
 	///<summary>GarbageMatteCaptureTextureTarget</summary>
 	public UTextureRenderTarget2D GarbageMatteCaptureTextureTarget;
 	///<summary>Millisecond delay to apply to motion controller components when rendering to the capture view (to better align with latent camera feeds)</summary>
@@ -46,7 +46,7 @@ public partial class UMixedRealityCaptureComponent : USceneCaptureComponent2D {
 	///<summary>SetVidProcessingParams</summary>
 	public void SetVidProcessingParams(FMrcVideoProcessingParams NewVidProcessingParams) {}
 	///<summary>SetDeviceAttachment</summary>
-	public void SetDeviceAttachment(string SourceName) {}
+	public void SetDeviceAttachment(FName SourceName) {}
 	///<summary>DetatchFromDevice</summary>
 	public void DetatchFromDevice() {}
 	///<summary>IsTracked</summary>

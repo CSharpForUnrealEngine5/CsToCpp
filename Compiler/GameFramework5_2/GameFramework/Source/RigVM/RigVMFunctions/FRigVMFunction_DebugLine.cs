@@ -6,7 +6,7 @@ public partial struct FRigVMFunction_DebugLine {
 	public FVector B;
 	public FLinearColor Color;
 	public float Thickness;
-	public string Space;
+	public FName Space;
 	public FTransform WorldOffset;
 	public bool bEnabled;
 }

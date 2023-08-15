@@ -4,7 +4,7 @@ using CSharpToCpp.Utilities;
 public partial struct FAnimNode_LiveLinkPose {
 	public FPoseLink InputPose;
 	public FLiveLinkSubjectName LiveLinkSubjectName;
-	public string SubjectName_DEPRECATED;
+	public FName SubjectName_DEPRECATED;
 	public UClass RetargetAsset;
 	public ULiveLinkRetargetAsset CurrentRetargetAsset;
 }

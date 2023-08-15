@@ -4,8 +4,8 @@ using CSharpToCpp.Utilities;
 [CppInclude("Animation/PoseSnapshot.h")]
 public partial struct FPoseSnapshot {
 	public TArray<FTransform> LocalTransforms;
-	public TArray<string> BoneNames;
-	public string SkeletalMeshName;
-	public string SnapshotName;
+	public TArray<FName> BoneNames;
+	public FName SkeletalMeshName;
+	public FName SnapshotName;
 	public bool bIsValid;
 }

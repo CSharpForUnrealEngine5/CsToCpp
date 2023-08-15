@@ -3,6 +3,6 @@ using CSharpToCpp.Utilities;
 ///<summary>This is used for redirecting an old name to new name, such as for collision profiles</summary>
 [CppInclude("Engine/EngineTypes.h")]
 public partial struct FRedirector {
-	public string OldName;
-	public string NewName;
+	public FName OldName;
+	public FName NewName;
 }

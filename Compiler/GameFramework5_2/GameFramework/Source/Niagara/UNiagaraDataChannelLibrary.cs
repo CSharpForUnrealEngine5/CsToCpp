@@ -5,5 +5,5 @@ using CSharpToCpp.Utilities;
 public partial class UNiagaraDataChannelLibrary : UBlueprintFunctionLibrary {
 	public static UClass StaticClass() {return default;}
 	///<summary>GetNiagaraDataChannel</summary>
-	public static UNiagaraDataChannelHandler GetNiagaraDataChannel(UObject WorldContextObject,string Channel) { return default; }
+	public static UNiagaraDataChannelHandler GetNiagaraDataChannel(UObject WorldContextObject,FName Channel) { return default; }
 }

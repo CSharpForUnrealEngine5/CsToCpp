@@ -14,5 +14,5 @@ public partial class UDatasmithSceneComponentTemplate : UDatasmithObjectTemplate
 	///<summary>bCastShadow</summary>
 	public bool bCastShadow;
 	///<summary>Tags</summary>
-	public TSet<string> Tags;
+	public TSet<FName> Tags;
 }

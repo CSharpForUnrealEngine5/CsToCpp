@@ -4,5 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("PaperSprite.h")]
 public partial struct FPaperSpriteSocket {
 	public FTransform LocalTransform;
-	public string SocketName;
+	public FName SocketName;
 }

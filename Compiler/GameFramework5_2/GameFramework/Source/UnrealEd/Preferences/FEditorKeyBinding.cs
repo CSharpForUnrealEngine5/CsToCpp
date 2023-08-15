@@ -7,5 +7,5 @@ public partial struct FEditorKeyBinding {
 	public bool bAltDown;
 	public bool bShiftDown;
 	public FKey Key;
-	public string CommandName;
+	public FName CommandName;
 }

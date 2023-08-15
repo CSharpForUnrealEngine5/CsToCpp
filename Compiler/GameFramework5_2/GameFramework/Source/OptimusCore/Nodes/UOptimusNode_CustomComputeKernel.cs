@@ -4,7 +4,7 @@ using CSharpToCpp.Utilities;
 public partial class UOptimusNode_CustomComputeKernel : UOptimusNode_ComputeKernelBase {
 	public static UClass StaticClass() {return default;}
 	///<summary>FIXME: Use drop-down with a preset list + allow custom entry.</summary>
-	public string Category;
+	public FName Category;
 	///<summary>Name of kernel. This is also used as the entry point function name in generated code.</summary>
 	public FOptimusValidatedName KernelName;
 	///<summary>The execution domain that this kernel operates on. The size of the domain is governed by</summary>

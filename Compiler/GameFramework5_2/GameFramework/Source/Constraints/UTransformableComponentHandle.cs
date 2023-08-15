@@ -7,5 +7,5 @@ public partial class UTransformableComponentHandle : UTransformableHandle {
 	///<summary>The Component that this handle is pointing at.</summary>
 	public TWeakObjectPtr<USceneComponent> Component;
 	///<summary>Optional socket name on Component.</summary>
-	public string SocketName;
+	public FName SocketName;
 }

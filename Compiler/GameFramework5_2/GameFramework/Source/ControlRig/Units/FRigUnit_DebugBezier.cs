@@ -8,7 +8,7 @@ public partial struct FRigUnit_DebugBezier {
 	public FLinearColor Color;
 	public float Thickness;
 	public int Detail;
-	public string Space;
+	public FName Space;
 	public FTransform WorldOffset;
 	public bool bEnabled;
 }

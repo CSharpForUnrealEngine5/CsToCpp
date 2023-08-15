@@ -5,7 +5,7 @@ using CSharpToCpp.Utilities;
 public partial class UDEPRECATED_UCommonVisibilityWidgetBase : UCommonBorder {
 	public static UClass StaticClass() {return default;}
 	///<summary>VisibilityControls</summary>
-	public TMap<string,bool> VisibilityControls;
+	public TMap<FName,bool> VisibilityControls;
 	///<summary>bShowForGamepad</summary>
 	public bool bShowForGamepad;
 	///<summary>bShowForMouseAndKeyboard</summary>
@@ -17,5 +17,5 @@ public partial class UDEPRECATED_UCommonVisibilityWidgetBase : UCommonBorder {
 	///<summary>HiddenType</summary>
 	public ESlateVisibility HiddenType;
 	///<summary>GetRegisteredPlatforms</summary>
-	public static TArray<string> GetRegisteredPlatforms() { return default; }
+	public static TArray<FName> GetRegisteredPlatforms() { return default; }
 }

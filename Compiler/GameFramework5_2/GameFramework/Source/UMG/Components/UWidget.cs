@@ -173,9 +173,9 @@ public partial class UWidget : UVisual {
 	///<summary>Gets the widgets desired size.</summary>
 	public FVector2D GetDesiredSize() { return default; }
 	///<summary>Sets the widget navigation rules for all directions. This can only be called on widgets that are in a widget tree.</summary>
-	public void SetAllNavigationRules(EUINavigationRule Rule,string WidgetToFocus) {}
+	public void SetAllNavigationRules(EUINavigationRule Rule,FName WidgetToFocus) {}
 	///<summary>SetNavigationRule</summary>
-	public void SetNavigationRule(EUINavigation Direction,EUINavigationRule Rule,string WidgetToFocus) {}
+	public void SetNavigationRule(EUINavigation Direction,EUINavigationRule Rule,FName WidgetToFocus) {}
 	///<summary>Sets the widget navigation rules for a specific direction. This can only be called on widgets that are in a widget tree. This works only for non Explicit, non Custom and non CustomBoundary Rules.</summary>
 	public void SetNavigationRuleBase(EUINavigation Direction,EUINavigationRule Rule) {}
 	///<summary>Sets the widget navigation rules for a specific direction. This can only be called on widgets that are in a widget tree. This works only for Explicit Rule.</summary>

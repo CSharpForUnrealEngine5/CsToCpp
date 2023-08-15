@@ -5,7 +5,7 @@ using CSharpToCpp.Utilities;
 public partial class URigVMParameterNode : URigVMNode {
 	public static UClass StaticClass() {return default;}
 	///<summary>Returns the name of the parameter</summary>
-	public string GetParameterName() { return default; }
+	public FName GetParameterName() { return default; }
 	///<summary>Returns true if this node is an input</summary>
 	public bool IsInput() { return default; }
 	///<summary>Returns the C++ data type of the parameter</summary>

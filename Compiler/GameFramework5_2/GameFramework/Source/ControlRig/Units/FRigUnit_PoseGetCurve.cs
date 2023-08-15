@@ -4,7 +4,7 @@ using CSharpToCpp.Utilities;
 [CppInclude("Units/Execution/RigUnit_Hierarchy.h")]
 public partial struct FRigUnit_PoseGetCurve {
 	public FRigPose Pose;
-	public string Curve;
+	public FName Curve;
 	public bool Valid;
 	public float CurveValue;
 	public int CachedPoseElementIndex;

@@ -219,13 +219,13 @@ public partial class UPrimitiveComponent : USceneComponent {
 	///<summary>Clear the list of components we ignore when moving.</summary>
 	public void ClearMoveIgnoreComponents() {}
 	///<summary>Gets the index of the scalar parameter for the custom primitive data array</summary>
-	public int GetCustomPrimitiveDataIndexForScalarParameter(string ParameterName) { return default; }
+	public int GetCustomPrimitiveDataIndexForScalarParameter(FName ParameterName) { return default; }
 	///<summary>Gets the index of the vector parameter for the custom primitive data array</summary>
-	public int GetCustomPrimitiveDataIndexForVectorParameter(string ParameterName) { return default; }
+	public int GetCustomPrimitiveDataIndexForVectorParameter(FName ParameterName) { return default; }
 	///<summary>Set a scalar parameter for custom primitive data. This sets the run-time data only, so it doesn&#39;t serialize.</summary>
-	public void SetScalarParameterForCustomPrimitiveData(string ParameterName,float Value) {}
+	public void SetScalarParameterForCustomPrimitiveData(FName ParameterName,float Value) {}
 	///<summary>Set a vector parameter for custom primitive data. This sets the run-time data only, so it doesn&#39;t serialize.</summary>
-	public void SetVectorParameterForCustomPrimitiveData(string ParameterName,FVector4 Value) {}
+	public void SetVectorParameterForCustomPrimitiveData(FName ParameterName,FVector4 Value) {}
 	///<summary>Set custom primitive data at index DataIndex. This sets the run-time data only, so it doesn&#39;t serialize.</summary>
 	public void SetCustomPrimitiveDataFloat(int DataIndex,float Value) {}
 	///<summary>Set custom primitive data, two floats at once, from index DataIndex to index DataIndex + 1. This sets the run-time data only, so it doesn&#39;t serialize.</summary>
@@ -235,9 +235,9 @@ public partial class UPrimitiveComponent : USceneComponent {
 	///<summary>Set custom primitive data, four floats at once, from index DataIndex to index DataIndex + 3. This sets the run-time data only, so it doesn&#39;t serialize.</summary>
 	public void SetCustomPrimitiveDataVector4(int DataIndex,FVector4 Value) {}
 	///<summary>Set a scalar parameter for default custom primitive data. This will be serialized and is useful in construction scripts.</summary>
-	public void SetScalarParameterForDefaultCustomPrimitiveData(string ParameterName,float Value) {}
+	public void SetScalarParameterForDefaultCustomPrimitiveData(FName ParameterName,float Value) {}
 	///<summary>Set a vector parameter for default custom primitive data. This will be serialized and is useful in construction scripts.</summary>
-	public void SetVectorParameterForDefaultCustomPrimitiveData(string ParameterName,FVector4 Value) {}
+	public void SetVectorParameterForDefaultCustomPrimitiveData(FName ParameterName,FVector4 Value) {}
 	///<summary>Set default custom primitive data at index DataIndex, and marks the render state dirty</summary>
 	public void SetDefaultCustomPrimitiveDataFloat(int DataIndex,float Value) {}
 	///<summary>Set default custom primitive data, two floats at once, from index DataIndex to index DataIndex + 1, and marks the render state dirty</summary>
@@ -295,13 +295,13 @@ public partial class UPrimitiveComponent : USceneComponent {
 	///<summary>Changes the material applied to an element of the mesh.</summary>
 	public virtual void SetMaterial(int ElementIndex,UMaterialInterface Material) {}
 	///<summary>Changes the material applied to an element of the mesh.</summary>
-	public virtual void SetMaterialByName(string MaterialSlotName,UMaterialInterface Material) {}
+	public virtual void SetMaterialByName(FName MaterialSlotName,UMaterialInterface Material) {}
 	///<summary>Creates a Dynamic Material Instance for the specified element index.  The parent of the instance is set to the material being replaced.</summary>
 	public virtual UMaterialInstanceDynamic CreateAndSetMaterialInstanceDynamic(int ElementIndex) { return default; }
 	///<summary>Creates a Dynamic Material Instance for the specified element index.  The parent of the instance is set to the material being replaced.</summary>
 	public virtual UMaterialInstanceDynamic CreateAndSetMaterialInstanceDynamicFromMaterial(int ElementIndex,UMaterialInterface Parent) { return default; }
 	///<summary>Creates a Dynamic Material Instance for the specified element index, optionally from the supplied material.</summary>
-	public virtual UMaterialInstanceDynamic CreateDynamicMaterialInstance(int ElementIndex,UMaterialInterface SourceMaterial/*=NULL*/,string OptionalName/*=NAME_None*/) { return default; }
+	public virtual UMaterialInstanceDynamic CreateDynamicMaterialInstance(int ElementIndex,UMaterialInterface SourceMaterial/*=NULL*/,FName OptionalName/*=NAME_None*/) { return default; }
 	///<summary>Try and retrieve the material applied to a particular collision face of mesh. Used with face index returned from collision trace.</summary>
 	public virtual UMaterialInterface GetMaterialFromCollisionFaceIndex(int FaceIndex,int SectionIndex) { return default; }
 	///<summary>Returns the slope override struct for this component.</summary>
@@ -317,57 +317,57 @@ public partial class UPrimitiveComponent : USceneComponent {
 	///<summary>Sets the constraint mode of the component.</summary>
 	public virtual void SetConstraintMode(EDOFMode ConstraintMode) {}
 	///<summary>Add an impulse to a single rigid body. Good for one time instant burst.</summary>
-	public virtual void AddImpulse(FVector Impulse,string BoneName/*=NAME_None*/,bool bVelChange/*=false*/) {}
+	public virtual void AddImpulse(FVector Impulse,FName BoneName/*=NAME_None*/,bool bVelChange/*=false*/) {}
 	///<summary>Add an angular impulse to a single rigid body. Good for one time instant burst.</summary>
-	public virtual void AddAngularImpulseInRadians(FVector Impulse,string BoneName/*=NAME_None*/,bool bVelChange/*=false*/) {}
+	public virtual void AddAngularImpulseInRadians(FVector Impulse,FName BoneName/*=NAME_None*/,bool bVelChange/*=false*/) {}
 	///<summary>Add an angular impulse to a single rigid body. Good for one time instant burst.</summary>
-	public void AddAngularImpulseInDegrees(FVector Impulse,string BoneName/*=NAME_None*/,bool bVelChange/*=false*/) {}
+	public void AddAngularImpulseInDegrees(FVector Impulse,FName BoneName/*=NAME_None*/,bool bVelChange/*=false*/) {}
 	///<summary>Add an impulse to a single rigid body at a specific location.</summary>
-	public virtual void AddImpulseAtLocation(FVector Impulse,FVector Location,string BoneName/*=NAME_None*/) {}
+	public virtual void AddImpulseAtLocation(FVector Impulse,FVector Location,FName BoneName/*=NAME_None*/) {}
 	///<summary>Add an impulse to a single rigid body at a specific location. The Strength is taken as a change in angular velocity instead of an impulse (ie. mass will have no effect).</summary>
-	public virtual void AddVelocityChangeImpulseAtLocation(FVector Impulse,FVector Location,string BoneName/*=NAME_None*/) {}
+	public virtual void AddVelocityChangeImpulseAtLocation(FVector Impulse,FVector Location,FName BoneName/*=NAME_None*/) {}
 	///<summary>Add an impulse to all rigid bodies in this component, radiating out from the specified position.</summary>
 	public virtual void AddRadialImpulse(FVector Origin,float Radius,float Strength,ERadialImpulseFalloff Falloff,bool bVelChange/*=false*/) {}
 	///<summary>Add a force to a single rigid body.</summary>
-	public virtual void AddForce(FVector Force,string BoneName/*=NAME_None*/,bool bAccelChange/*=false*/) {}
+	public virtual void AddForce(FVector Force,FName BoneName/*=NAME_None*/,bool bAccelChange/*=false*/) {}
 	///<summary>Add a force to a single rigid body at a particular location in world space.</summary>
-	public virtual void AddForceAtLocation(FVector Force,FVector Location,string BoneName/*=NAME_None*/) {}
+	public virtual void AddForceAtLocation(FVector Force,FVector Location,FName BoneName/*=NAME_None*/) {}
 	///<summary>Add a force to a single rigid body at a particular location. Both Force and Location should be in body space.</summary>
-	public virtual void AddForceAtLocationLocal(FVector Force,FVector Location,string BoneName/*=NAME_None*/) {}
+	public virtual void AddForceAtLocationLocal(FVector Force,FVector Location,FName BoneName/*=NAME_None*/) {}
 	///<summary>Add a force to all bodies in this component, originating from the supplied world-space location.</summary>
 	public virtual void AddRadialForce(FVector Origin,float Radius,float Strength,ERadialImpulseFalloff Falloff,bool bAccelChange/*=false*/) {}
 	///<summary>Add a torque to a single rigid body.</summary>
-	public virtual void AddTorqueInRadians(FVector Torque,string BoneName/*=NAME_None*/,bool bAccelChange/*=false*/) {}
+	public virtual void AddTorqueInRadians(FVector Torque,FName BoneName/*=NAME_None*/,bool bAccelChange/*=false*/) {}
 	///<summary>Add a torque to a single rigid body.</summary>
-	public void AddTorqueInDegrees(FVector Torque,string BoneName/*=NAME_None*/,bool bAccelChange/*=false*/) {}
+	public void AddTorqueInDegrees(FVector Torque,FName BoneName/*=NAME_None*/,bool bAccelChange/*=false*/) {}
 	///<summary>Set the linear velocity of a single body.</summary>
-	public virtual void SetPhysicsLinearVelocity(FVector NewVel,bool bAddToCurrent/*=false*/,string BoneName/*=NAME_None*/) {}
+	public virtual void SetPhysicsLinearVelocity(FVector NewVel,bool bAddToCurrent/*=false*/,FName BoneName/*=NAME_None*/) {}
 	///<summary>Get the linear velocity of a single body.</summary>
-	public FVector GetPhysicsLinearVelocity(string BoneName/*=NAME_None*/) { return default; }
+	public FVector GetPhysicsLinearVelocity(FName BoneName/*=NAME_None*/) { return default; }
 	///<summary>Get the linear velocity of a point on a single body.</summary>
-	public FVector GetPhysicsLinearVelocityAtPoint(FVector Point,string BoneName/*=NAME_None*/) { return default; }
+	public FVector GetPhysicsLinearVelocityAtPoint(FVector Point,FName BoneName/*=NAME_None*/) { return default; }
 	///<summary>Set the linear velocity of all bodies in this component.</summary>
 	public virtual void SetAllPhysicsLinearVelocity(FVector NewVel,bool bAddToCurrent/*=false*/) {}
 	///<summary>Set the angular velocity of a single body.</summary>
-	public virtual void SetPhysicsAngularVelocityInRadians(FVector NewAngVel,bool bAddToCurrent/*=false*/,string BoneName/*=NAME_None*/) {}
+	public virtual void SetPhysicsAngularVelocityInRadians(FVector NewAngVel,bool bAddToCurrent/*=false*/,FName BoneName/*=NAME_None*/) {}
 	///<summary>Set the angular velocity of a single body.</summary>
-	public void SetPhysicsAngularVelocityInDegrees(FVector NewAngVel,bool bAddToCurrent/*=false*/,string BoneName/*=NAME_None*/) {}
+	public void SetPhysicsAngularVelocityInDegrees(FVector NewAngVel,bool bAddToCurrent/*=false*/,FName BoneName/*=NAME_None*/) {}
 	///<summary>Set the maximum angular velocity of a single body.</summary>
-	public void SetPhysicsMaxAngularVelocityInDegrees(float NewMaxAngVel,bool bAddToCurrent/*=false*/,string BoneName/*=NAME_None*/) {}
+	public void SetPhysicsMaxAngularVelocityInDegrees(float NewMaxAngVel,bool bAddToCurrent/*=false*/,FName BoneName/*=NAME_None*/) {}
 	///<summary>Set the maximum angular velocity of a single body.</summary>
-	public void SetPhysicsMaxAngularVelocityInRadians(float NewMaxAngVel,bool bAddToCurrent/*=false*/,string BoneName/*=NAME_None*/) {}
+	public void SetPhysicsMaxAngularVelocityInRadians(float NewMaxAngVel,bool bAddToCurrent/*=false*/,FName BoneName/*=NAME_None*/) {}
 	///<summary>Get the angular velocity of a single body, in degrees per second.</summary>
-	public FVector GetPhysicsAngularVelocityInDegrees(string BoneName/*=NAME_None*/) { return default; }
+	public FVector GetPhysicsAngularVelocityInDegrees(FName BoneName/*=NAME_None*/) { return default; }
 	///<summary>Get the angular velocity of a single body, in radians per second.</summary>
-	public FVector GetPhysicsAngularVelocityInRadians(string BoneName/*=NAME_None*/) { return default; }
+	public FVector GetPhysicsAngularVelocityInRadians(FName BoneName/*=NAME_None*/) { return default; }
 	///<summary>Get the center of mass of a single body. In the case of a welded body this will return the center of mass of the entire welded body (including its parent and children)</summary>
-	public FVector GetCenterOfMass(string BoneName/*=NAME_None*/) { return default; }
+	public FVector GetCenterOfMass(FName BoneName/*=NAME_None*/) { return default; }
 	///<summary>Set the center of mass of a single body. This will offset the physx-calculated center of mass.</summary>
-	public void SetCenterOfMass(FVector CenterOfMassOffset,string BoneName/*=NAME_None*/) {}
+	public void SetCenterOfMass(FVector CenterOfMassOffset,FName BoneName/*=NAME_None*/) {}
 	///<summary>&#39;Wake&#39; physics simulation for a single body.</summary>
-	public virtual void WakeRigidBody(string BoneName/*=NAME_None*/) {}
+	public virtual void WakeRigidBody(FName BoneName/*=NAME_None*/) {}
 	///<summary>Force a single body back to sleep.</summary>
-	public void PutRigidBodyToSleep(string BoneName/*=NAME_None*/) {}
+	public void PutRigidBodyToSleep(FName BoneName/*=NAME_None*/) {}
 	///<summary>Changes the value of bNotifyRigidBodyCollision</summary>
 	public virtual void SetNotifyRigidBodyCollision(bool bNewNotifyRigidBodyCollision) {}
 	///<summary>Changes the value of bOwnerNoSee.</summary>
@@ -409,19 +409,19 @@ public partial class UPrimitiveComponent : USceneComponent {
 	///<summary>Controls what kind of collision is enabled for this body</summary>
 	public virtual void SetCollisionEnabled(ECollisionEnabled NewType) {}
 	///<summary>Set Collision Profile Name</summary>
-	public virtual void SetCollisionProfileName(string InCollisionProfileName,bool bUpdateOverlaps/*=true*/) {}
+	public virtual void SetCollisionProfileName(FName InCollisionProfileName,bool bUpdateOverlaps/*=true*/) {}
 	///<summary>Get the collision profile name</summary>
-	public string GetCollisionProfileName() { return default; }
+	public FName GetCollisionProfileName() { return default; }
 	///<summary>Changes the collision channel that this object uses when it moves</summary>
 	public virtual void SetCollisionObjectType(ECollisionChannel Channel) {}
 	///<summary>Perform a line trace against a single component</summary>
-	public bool K2_LineTraceComponent(FVector TraceStart,FVector TraceEnd,bool bTraceComplex,bool bShowTrace,bool bPersistentShowTrace,FVector HitLocation,FVector HitNormal,string BoneName,FHitResult OutHit) { return default; }
+	public bool K2_LineTraceComponent(FVector TraceStart,FVector TraceEnd,bool bTraceComplex,bool bShowTrace,bool bPersistentShowTrace,FVector HitLocation,FVector HitNormal,FName BoneName,FHitResult OutHit) { return default; }
 	///<summary>Perform a sphere trace against a single component</summary>
-	public bool K2_SphereTraceComponent(FVector TraceStart,FVector TraceEnd,float SphereRadius,bool bTraceComplex,bool bShowTrace,bool bPersistentShowTrace,FVector HitLocation,FVector HitNormal,string BoneName,FHitResult OutHit) { return default; }
+	public bool K2_SphereTraceComponent(FVector TraceStart,FVector TraceEnd,float SphereRadius,bool bTraceComplex,bool bShowTrace,bool bPersistentShowTrace,FVector HitLocation,FVector HitNormal,FName BoneName,FHitResult OutHit) { return default; }
 	///<summary>Perform a box overlap against a single component as an AABB (No rotation)</summary>
-	public bool K2_BoxOverlapComponent(FVector InBoxCentre,FBox InBox,bool bTraceComplex,bool bShowTrace,bool bPersistentShowTrace,FVector HitLocation,FVector HitNormal,string BoneName,FHitResult OutHit) { return default; }
+	public bool K2_BoxOverlapComponent(FVector InBoxCentre,FBox InBox,bool bTraceComplex,bool bShowTrace,bool bPersistentShowTrace,FVector HitLocation,FVector HitNormal,FName BoneName,FHitResult OutHit) { return default; }
 	///<summary>Perform a sphere overlap against a single component</summary>
-	public bool K2_SphereOverlapComponent(FVector InSphereCentre,float InSphereRadius,bool bTraceComplex,bool bShowTrace,bool bPersistentShowTrace,FVector HitLocation,FVector HitNormal,string BoneName,FHitResult OutHit) { return default; }
+	public bool K2_SphereOverlapComponent(FVector InSphereCentre,float InSphereRadius,bool bTraceComplex,bool bShowTrace,bool bPersistentShowTrace,FVector HitLocation,FVector HitNormal,FName BoneName,FHitResult OutHit) { return default; }
 	///<summary>Sets the bRenderCustomDepth property and marks the render state dirty.</summary>
 	public void SetRenderCustomDepth(bool bValue) {}
 	///<summary>Sets the CustomDepth stencil value (0 - 255) and marks the render state dirty.</summary>
@@ -443,9 +443,9 @@ public partial class UPrimitiveComponent : USceneComponent {
 	///<summary>Return number of material elements in this primitive</summary>
 	public virtual int GetNumMaterials() { return default; }
 	///<summary>Returns BodyInstanceAsyncPhysicsTickHandle of the component. For use in the Async Physics Tick event</summary>
-	public FBodyInstanceAsyncPhysicsTickHandle GetBodyInstanceAsyncPhysicsTickHandle(string BoneName/*=NAME_None*/,bool bGetWelded/*=true*/,int Index/*=-1*/) { return default; }
+	public FBodyInstanceAsyncPhysicsTickHandle GetBodyInstanceAsyncPhysicsTickHandle(FName BoneName/*=NAME_None*/,bool bGetWelded/*=true*/,int Index/*=-1*/) { return default; }
 	///<summary>Returns the distance and closest point to the collision surface.</summary>
-	public float GetClosestPointOnCollision(FVector Point,FVector OutPointOnBody,string BoneName/*=NAME_None*/) { return default; }
+	public float GetClosestPointOnCollision(FVector Point,FVector OutPointOnBody,FName BoneName/*=NAME_None*/) { return default; }
 	///<summary>Returns the form of collision for this component</summary>
 	public virtual ECollisionEnabled GetCollisionEnabled() { return default; }
 	///<summary>Utility to see if there is any form of collision (query or physics) enabled on this component.</summary>
@@ -477,21 +477,21 @@ public partial class UPrimitiveComponent : USceneComponent {
 	///<summary>Returns the angular damping of this component.</summary>
 	public virtual float GetAngularDamping() { return default; }
 	///<summary>Change the mass scale used to calculate the mass of a single physics body</summary>
-	public virtual void SetMassScale(string BoneName/*=NAME_None*/,float InMassScale/*=1.0f*/) {}
+	public virtual void SetMassScale(FName BoneName/*=NAME_None*/,float InMassScale/*=1.0f*/) {}
 	///<summary>Returns the mass scale used to calculate the mass of a single physics body</summary>
-	public virtual float GetMassScale(string BoneName/*=NAME_None*/) { return default; }
+	public virtual float GetMassScale(FName BoneName/*=NAME_None*/) { return default; }
 	///<summary>Change the mass scale used fo all bodies in this component</summary>
 	public virtual void SetAllMassScale(float InMassScale/*=1.0f*/) {}
 	///<summary>Override the mass (in Kg) of a single physics body.</summary>
-	public virtual void SetMassOverrideInKg(string BoneName/*=NAME_None*/,float MassInKg/*=1.0f*/,bool bOverrideMass/*=true*/) {}
+	public virtual void SetMassOverrideInKg(FName BoneName/*=NAME_None*/,float MassInKg/*=1.0f*/,bool bOverrideMass/*=true*/) {}
 	///<summary>Returns the mass of this component in kg.</summary>
 	public virtual float GetMass() { return default; }
 	///<summary>Returns the inertia tensor of this component in kg cm^2. The inertia tensor is in local component space.</summary>
-	public virtual FVector GetInertiaTensor(string BoneName/*=NAME_None*/) { return default; }
+	public virtual FVector GetInertiaTensor(FName BoneName/*=NAME_None*/) { return default; }
 	///<summary>Scales the given vector by the world space moment of inertia. Useful for computing the torque needed to rotate an object.</summary>
-	public virtual FVector ScaleByMomentOfInertia(FVector InputVector,string BoneName/*=NAME_None*/) { return default; }
+	public virtual FVector ScaleByMomentOfInertia(FVector InputVector,FName BoneName/*=NAME_None*/) { return default; }
 	///<summary>Set whether this component should use Continuous Collision Detection</summary>
-	public virtual void SetUseCCD(bool InUseCCD,string BoneName/*=NAME_None*/) {}
+	public virtual void SetUseCCD(bool InUseCCD,FName BoneName/*=NAME_None*/) {}
 	///<summary>Set whether all bodies in this component should use Continuous Collision Detection</summary>
 	public virtual void SetAllUseCCD(bool InUseCCD) {}
 	///<summary>Returns if any body in this component is currently awake and simulating.</summary>

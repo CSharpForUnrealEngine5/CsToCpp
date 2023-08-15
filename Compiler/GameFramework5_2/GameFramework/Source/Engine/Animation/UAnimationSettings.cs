@@ -31,7 +31,7 @@ public partial class UAnimationSettings : UDeveloperSettings {
 	///<summary>List of bone names for which all animation attributes are directly imported on the bone.</summary>
 	public TArray<string> BoneNamesWithCustomAttributes;
 	///<summary>Animation Attribute specific blend types (by name)</summary>
-	public TMap<string,ECustomAttributeBlendType> AttributeBlendModes;
+	public TMap<FName,ECustomAttributeBlendType> AttributeBlendModes;
 	///<summary>Default Animation Attribute blend type</summary>
 	public ECustomAttributeBlendType DefaultAttributeBlendMode;
 	///<summary>Names to match against when importing FBX node transform curves as attributes (can use ? and * wildcards)</summary>

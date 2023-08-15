@@ -42,7 +42,7 @@ public partial struct FVersionedNiagaraEmitterData {
 	public TArray<UNiagaraRendererProperties> RendererProperties;
 	public TArray<UNiagaraSimulationStageBase> SimulationStages;
 	public UNiagaraScript GPUComputeScript;
-	public TArray<string> SharedEventGeneratorIds;
+	public TArray<FName> SharedEventGeneratorIds;
 	public FNiagaraEmitterScalabilitySettings CurrentScalabilitySettings;
 	public UNiagaraEditorDataBase EditorData;
 	public UNiagaraEditorParametersAdapterBase EditorParameters;

@@ -4,7 +4,7 @@ using CSharpToCpp.Utilities;
 public partial class UCustomizableObjectNodeMeshClipMorph : UCustomizableObjectNodeModifierBase {
 	public static UClass StaticClass() {return default;}
 	///<summary>BoneName</summary>
-	public string BoneName;
+	public FName BoneName;
 	///<summary>Tags</summary>
 	public TArray<string> Tags;
 	///<summary>ReferenceSkeletonIndex</summary>

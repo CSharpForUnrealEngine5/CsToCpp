@@ -5,7 +5,7 @@ using CSharpToCpp.Utilities;
 public partial class AGameMode : AGameModeBase {
 	public static UClass StaticClass() {return default;}
 	///<summary>Returns the current match state, this is an accessor to protect the state machine flow</summary>
-	public string GetMatchState() { return default; }
+	public FName GetMatchState() { return default; }
 	///<summary>Returns true if the match state is InProgress or other gameplay state</summary>
 	public virtual bool IsMatchInProgress() { return default; }
 	///<summary>Transition from WaitingToStart to InProgress. You can call this manually, will also get called if ReadyToStartMatch returns true</summary>
@@ -17,9 +17,9 @@ public partial class AGameMode : AGameModeBase {
 	///<summary>Report that a match has failed due to unrecoverable error</summary>
 	public virtual void AbortMatch() {}
 	///<summary>What match state we are currently in</summary>
-	public string MatchState;
+	public FName MatchState;
 	///<summary>Implementable event to respond to match state changes</summary>
-	public void K2_OnSetMatchState(string NewState) {}
+	public void K2_OnSetMatchState(FName NewState) {}
 	///<summary>Returns true if ready to Start Match. Games should override this</summary>
 	public bool ReadyToStartMatch() { return default; }
 	///<summary>Returns true if ready to End Match. Games should override this</summary>

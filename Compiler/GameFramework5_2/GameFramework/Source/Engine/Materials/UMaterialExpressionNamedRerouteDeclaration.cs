@@ -6,7 +6,7 @@ public partial class UMaterialExpressionNamedRerouteDeclaration : UMaterialExpre
 	///<summary>The input pin</summary>
 	public FExpressionInput Input;
 	///<summary>Name</summary>
-	public string Name;
+	public FName Name;
 	///<summary>The color of the graph node. The same color will apply to all linked usages of this Declaration node</summary>
 	public FLinearColor NodeColor;
 	///<summary>The variable GUID, to support copy across graphs</summary>

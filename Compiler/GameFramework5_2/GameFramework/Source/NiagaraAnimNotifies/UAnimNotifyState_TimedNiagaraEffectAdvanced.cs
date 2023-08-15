@@ -9,7 +9,7 @@ public partial class UAnimNotifyState_TimedNiagaraEffectAdvanced : UAnimNotifySt
 	///<summary>This send a 0-1 value of the normalized progress to the FX Component to the float User Parameter.</summary>
 	public bool bEnableNormalizedNotifyProgress;
 	///<summary>The name of your niagara user variable you would like to send the normalized notify progress to.</summary>
-	public string NotifyProgressUserParameter;
+	public FName NotifyProgressUserParameter;
 	///<summary>Array of fnames to map Anim Curve names to Niagara Parameters.</summary>
 	public TArray<FCurveParameterPair> AnimCurves;
 }

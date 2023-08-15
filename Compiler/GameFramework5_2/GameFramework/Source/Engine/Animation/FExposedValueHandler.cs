@@ -5,5 +5,5 @@ using CSharpToCpp.Utilities;
 public partial struct FExposedValueHandler {
 	public TArray<FExposedValueCopyRecord> CopyRecords;
 	public UFunction Function;
-	public string BoundFunction;
+	public FName BoundFunction;
 }

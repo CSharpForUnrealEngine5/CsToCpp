@@ -9,7 +9,7 @@ public partial class UCommonInputBaseControllerData : UObject {
 	///<summary>InputType</summary>
 	public ECommonInputType InputType;
 	///<summary>GamepadName</summary>
-	public string GamepadName;
+	public FName GamepadName;
 	///<summary>GamepadDisplayName</summary>
 	public FText GamepadDisplayName;
 	///<summary>GamepadCategory</summary>
@@ -27,5 +27,5 @@ public partial class UCommonInputBaseControllerData : UObject {
 	///<summary>InputBrushKeySets</summary>
 	public TArray<FCommonInputKeySetBrushConfiguration> InputBrushKeySets;
 	///<summary>GetRegisteredGamepads</summary>
-	public static TArray<string> GetRegisteredGamepads() { return default; }
+	public static TArray<FName> GetRegisteredGamepads() { return default; }
 }

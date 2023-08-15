@@ -10,7 +10,7 @@ public partial class UPCGMetadataTrigSettings : UPCGMetadataSettingsBase {
 	///<summary>InputSource2</summary>
 	public FPCGAttributePropertySelector InputSource2;
 	///<summary>Input1AttributeName_DEPRECATED</summary>
-	public string Input1AttributeName_DEPRECATED;
+	public FName Input1AttributeName_DEPRECATED;
 	///<summary>Input2AttributeName_DEPRECATED</summary>
-	public string Input2AttributeName_DEPRECATED;
+	public FName Input2AttributeName_DEPRECATED;
 }

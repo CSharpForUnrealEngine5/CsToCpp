@@ -4,7 +4,7 @@ using CSharpToCpp.Utilities;
 public partial class UXRCreativeTool : UObject {
 	public static UClass StaticClass() {return default;}
 	///<summary>GetToolName</summary>
-	public virtual string GetToolName() { return default; }
+	public virtual FName GetToolName() { return default; }
 	///<summary>GetDisplayName</summary>
 	public virtual FText GetDisplayName() { return default; }
 	///<summary>GetPaletteTabClass</summary>

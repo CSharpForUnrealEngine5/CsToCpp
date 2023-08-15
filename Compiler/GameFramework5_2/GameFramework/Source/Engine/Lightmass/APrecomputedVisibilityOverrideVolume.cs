@@ -8,5 +8,5 @@ public partial class APrecomputedVisibilityOverrideVolume : AVolume {
 	///<summary>Array of actors that will always be considered invisible by Precomputed Visibility when viewed from inside this volume.</summary>
 	public TArray<AActor> OverrideInvisibleActors;
 	///<summary>Array of level names whose actors will always be considered invisible by Precomputed Visibility when viewed from inside this volume.</summary>
-	public TArray<string> OverrideInvisibleLevels;
+	public TArray<FName> OverrideInvisibleLevels;
 }

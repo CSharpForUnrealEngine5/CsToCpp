@@ -4,5 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("DataRegistryId.h")]
 public partial struct FDataRegistryId {
 	public FDataRegistryType RegistryType;
-	public string ItemName;
+	public FName ItemName;
 }

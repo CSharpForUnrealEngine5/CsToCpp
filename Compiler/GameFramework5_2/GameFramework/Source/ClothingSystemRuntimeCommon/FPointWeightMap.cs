@@ -4,7 +4,7 @@ using CSharpToCpp.Utilities;
 [CppInclude("PointWeightMap.h")]
 public partial struct FPointWeightMap {
 	public TArray<float> Values;
-	public string Name;
+	public FName Name;
 	public byte CurrentTarget;
 	public bool bEnabled;
 }

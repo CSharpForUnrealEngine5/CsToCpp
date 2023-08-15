@@ -4,7 +4,7 @@ using CSharpToCpp.Utilities;
 public partial class UFbxStaticMeshImportData : UFbxMeshImportData {
 	public static UClass StaticClass() {return default;}
 	///<summary>The LODGroup to associate with this mesh when it is imported</summary>
-	public string StaticMeshLODGroup;
+	public FName StaticMeshLODGroup;
 	///<summary>Specify how vertex colors should be imported</summary>
 	public EVertexColorImportOption VertexColorImportOption;
 	///<summary>Specify override color in the case that VertexColorImportOption is set to Override</summary>

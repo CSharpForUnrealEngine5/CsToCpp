@@ -6,8 +6,8 @@ public partial struct FRCPropertyDescription {
 	public FText DisplayName;
 	public string Description;
 	public string Type;
-	public string TypePath;
+	public FName TypePath;
 	public string ContainerType;
 	public string KeyType;
-	public TMap<string,string> Metadata;
+	public TMap<FName,string> Metadata;
 }

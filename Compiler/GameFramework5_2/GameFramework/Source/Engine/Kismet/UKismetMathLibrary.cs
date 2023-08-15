@@ -1286,9 +1286,9 @@ public partial class UKismetMathLibrary : UBlueprintFunctionLibrary {
 	///<summary>Determine if a class is a child of another class.</summary>
 	public static bool ClassIsChildOf(UClass TestClass,UClass ParentClass) { return default; }
 	///<summary>Returns true if A and B are equal (A == B)</summary>
-	public static bool EqualEqual_NameName(string A,string B) { return default; }
+	public static bool EqualEqual_NameName(FName A,FName B) { return default; }
 	///<summary>Returns true if A and B are not equal (A != B)</summary>
-	public static bool NotEqual_NameName(string A,string B) { return default; }
+	public static bool NotEqual_NameName(FName A,FName B) { return default; }
 	///<summary>Make a transform from location, rotation and scale</summary>
 	public static FTransform MakeTransform(FVector Location,FRotator Rotation,FVector Scale/*=new FVector(1,1,1)*/) { return default; }
 	///<summary>Breaks apart a transform into location, rotation and scale</summary>

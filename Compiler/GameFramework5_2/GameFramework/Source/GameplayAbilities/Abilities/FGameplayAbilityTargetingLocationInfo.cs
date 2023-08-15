@@ -8,5 +8,5 @@ public partial struct FGameplayAbilityTargetingLocationInfo {
 	public AActor SourceActor;
 	public UMeshComponent SourceComponent;
 	public UGameplayAbility SourceAbility;
-	public string SourceSocketName;
+	public FName SourceSocketName;
 }

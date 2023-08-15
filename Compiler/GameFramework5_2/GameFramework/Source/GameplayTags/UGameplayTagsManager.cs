@@ -5,7 +5,7 @@ using CSharpToCpp.Utilities;
 public partial class UGameplayTagsManager : UObject {
 	public static UClass StaticClass() {return default;}
 	///<summary>Map of gameplay tag source names to source objects</summary>
-	public TMap<string,FGameplayTagSource> TagSources;
+	public TMap<FName,FGameplayTagSource> TagSources;
 	///<summary>Holds all of the valid gameplay-related tags that can be applied to assets</summary>
 	public TArray<UDataTable> GameplayTagTables;
 }

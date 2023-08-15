@@ -3,6 +3,6 @@ using CSharpToCpp.Utilities;
 [CppInclude("RemoteControlRequest.h")]
 public partial struct FRCRequestWrapper {
 	public string URL;
-	public string Verb;
+	public FName Verb;
 	public int RequestId;
 }

@@ -10,7 +10,7 @@ public partial class UK2Node_Select : UK2Node {
 	///<summary>Name of the enum being switched on</summary>
 	public UEnum Enum;
 	///<summary>List of the current entries in the enum (Pin Names)</summary>
-	public TArray<string> EnumEntries;
+	public TArray<FName> EnumEntries;
 	///<summary>List of the current entries in the enum (Pin Friendly Names)</summary>
 	public TArray<FText> EnumEntryFriendlyNames;
 	///<summary>Whether we need to reconstruct the node after the pins have changed</summary>

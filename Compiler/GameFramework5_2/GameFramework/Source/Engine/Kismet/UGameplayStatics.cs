@@ -23,9 +23,9 @@ public partial class UGameplayStatics : UBlueprintFunctionLibrary {
 	///<summary>Find all Actors in the world with the specified interface.</summary>
 	public static void GetAllActorsWithInterface(UObject WorldContextObject,UClass Interface,TArray<AActor> OutActors) {}
 	///<summary>Find all Actors in the world with the specified tag.</summary>
-	public static void GetAllActorsWithTag(UObject WorldContextObject,string Tag,TArray<AActor> OutActors) {}
+	public static void GetAllActorsWithTag(UObject WorldContextObject,FName Tag,TArray<AActor> OutActors) {}
 	///<summary>Find all Actors in the world of the specified class with the specified tag.</summary>
-	public static void GetAllActorsOfClassWithTag(UObject WorldContextObject,UClass ActorClass,string Tag,TArray<AActor> OutActors) {}
+	public static void GetAllActorsOfClassWithTag(UObject WorldContextObject,UClass ActorClass,FName Tag,TArray<AActor> OutActors) {}
 	///<summary>Returns an Actor nearest to Origin from ActorsToCheck array.</summary>
 	public static AActor FindNearestActor(FVector Origin,TArray<AActor> ActorsToCheck,float Distance) { return default; }
 	///<summary>Returns the game instance object</summary>
@@ -65,21 +65,21 @@ public partial class UGameplayStatics : UBlueprintFunctionLibrary {
 	///<summary>Sets what platform user id a player should be using. This only works for local player controllers.</summary>
 	public static void SetPlayerPlatformUserId(APlayerController PlayerController,FPlatformUserId UserId) {}
 	///<summary>Stream the level (by Name); Calling again before it finishes has no effect</summary>
-	public static void LoadStreamLevel(UObject WorldContextObject,string LevelName,bool bMakeVisibleAfterLoad,bool bShouldBlockOnLoad,FLatentActionInfo LatentInfo) {}
+	public static void LoadStreamLevel(UObject WorldContextObject,FName LevelName,bool bMakeVisibleAfterLoad,bool bShouldBlockOnLoad,FLatentActionInfo LatentInfo) {}
 	///<summary>Stream the level (by Object Reference); Calling again before it finishes has no effect</summary>
 	public static void LoadStreamLevelBySoftObjectPtr(UObject WorldContextObject,TSoftObjectPtr<UWorld> Level,bool bMakeVisibleAfterLoad,bool bShouldBlockOnLoad,FLatentActionInfo LatentInfo) {}
 	///<summary>Unload a streamed in level (by Name)</summary>
-	public static void UnloadStreamLevel(UObject WorldContextObject,string LevelName,FLatentActionInfo LatentInfo,bool bShouldBlockOnUnload) {}
+	public static void UnloadStreamLevel(UObject WorldContextObject,FName LevelName,FLatentActionInfo LatentInfo,bool bShouldBlockOnUnload) {}
 	///<summary>Unload a streamed in level (by Object Reference)</summary>
 	public static void UnloadStreamLevelBySoftObjectPtr(UObject WorldContextObject,TSoftObjectPtr<UWorld> Level,FLatentActionInfo LatentInfo,bool bShouldBlockOnUnload) {}
 	///<summary>Returns level streaming object with specified level package name</summary>
-	public static ULevelStreaming GetStreamingLevel(UObject WorldContextObject,string PackageName) { return default; }
+	public static ULevelStreaming GetStreamingLevel(UObject WorldContextObject,FName PackageName) { return default; }
 	///<summary>Flushes level streaming in blocking fashion and returns when all sub-levels are loaded / visible / hidden</summary>
 	public static void FlushLevelStreaming(UObject WorldContextObject) {}
 	///<summary>Cancels all currently queued streaming packages</summary>
 	public static void CancelAsyncLoading() {}
 	///<summary>Travel to another level</summary>
-	public static void OpenLevel(UObject WorldContextObject,string LevelName,bool bAbsolute/*=true*/,string Options/*=new FString(TEXT(""))*/) {}
+	public static void OpenLevel(UObject WorldContextObject,FName LevelName,bool bAbsolute/*=true*/,string Options/*=new FString(TEXT(""))*/) {}
 	///<summary>Travel to another level</summary>
 	public static void OpenLevelBySoftObjectPtr(UObject WorldContextObject,TSoftObjectPtr<UWorld> Level,bool bAbsolute/*=true*/,string Options/*=new FString(TEXT(""))*/) {}
 	///<summary>Get the name of the currently-open level.</summary>
@@ -125,7 +125,7 @@ public partial class UGameplayStatics : UBlueprintFunctionLibrary {
 	///<summary>Plays the specified effect at the given location and rotation, fire and forget. The system will go away when the effect is complete. Does not replicate.</summary>
 	public static UParticleSystemComponent SpawnEmitterAtLocation(UObject WorldContextObject,UParticleSystem EmitterTemplate,FVector Location,FRotator Rotation/*=FRotator.ZeroRotator*/,FVector Scale/*=new FVector(1.0f)*/,bool bAutoDestroy/*=true*/,EPSCPoolMethod PoolingMethod/*=EPSCPoolMethod.None*/,bool bAutoActivateSystem/*=true*/) { return default; }
 	///<summary>Plays the specified effect attached to and following the specified component. The system will go away when the effect is complete. Does not replicate.</summary>
-	public static UParticleSystemComponent SpawnEmitterAttached(UParticleSystem EmitterTemplate,USceneComponent AttachToComponent,string AttachPointName/*=NAME_None*/,FVector Location/*=new FVector(ForceInit)*/,FRotator Rotation/*=FRotator.ZeroRotator*/,FVector Scale/*=new FVector(1.0f)*/,EAttachLocation LocationType/*=EAttachLocation.KeepRelativeOffset*/,bool bAutoDestroy/*=true*/,EPSCPoolMethod PoolingMethod/*=EPSCPoolMethod.None*/,bool bAutoActivate/*=true*/) { return default; }
+	public static UParticleSystemComponent SpawnEmitterAttached(UParticleSystem EmitterTemplate,USceneComponent AttachToComponent,FName AttachPointName/*=NAME_None*/,FVector Location/*=new FVector(ForceInit)*/,FRotator Rotation/*=FRotator.ZeroRotator*/,FVector Scale/*=new FVector(1.0f)*/,EAttachLocation LocationType/*=EAttachLocation.KeepRelativeOffset*/,bool bAutoDestroy/*=true*/,EPSCPoolMethod PoolingMethod/*=EPSCPoolMethod.None*/,bool bAutoActivate/*=true*/) { return default; }
 	///<summary>Determines if any audio listeners are within range of the specified location</summary>
 	public static bool AreAnyListenersWithinRange(UObject WorldContextObject,FVector Location,float MaximumRange) { return default; }
 	///<summary>Finds and returns the position of the closest listener to the specified location</summary>
@@ -147,7 +147,7 @@ public partial class UGameplayStatics : UBlueprintFunctionLibrary {
 	///<summary>Spawns a sound at the given location. This does not travel with any actor. Replication is also not handled at this point.</summary>
 	public static UAudioComponent SpawnSoundAtLocation(UObject WorldContextObject,USoundBase Sound,FVector Location,FRotator Rotation/*=FRotator.ZeroRotator*/,float VolumeMultiplier/*=1.0f*/,float PitchMultiplier/*=1.0f*/,float StartTime/*=0.0f*/,USoundAttenuation AttenuationSettings/*=nullptr*/,USoundConcurrency ConcurrencySettings/*=nullptr*/,bool bAutoDestroy/*=true*/) { return default; }
 	///<summary>This function allows users to create and play Audio Components attached to a specific Scene Component.</summary>
-	public static UAudioComponent SpawnSoundAttached(USoundBase Sound,USceneComponent AttachToComponent,string AttachPointName/*=NAME_None*/,FVector Location/*=new FVector(ForceInit)*/,FRotator Rotation/*=FRotator.ZeroRotator*/,EAttachLocation LocationType/*=EAttachLocation.KeepRelativeOffset*/,bool bStopWhenAttachedToDestroyed/*=false*/,float VolumeMultiplier/*=1.0f*/,float PitchMultiplier/*=1.0f*/,float StartTime/*=0.0f*/,USoundAttenuation AttenuationSettings/*=nullptr*/,USoundConcurrency ConcurrencySettings/*=nullptr*/,bool bAutoDestroy/*=true*/) { return default; }
+	public static UAudioComponent SpawnSoundAttached(USoundBase Sound,USceneComponent AttachToComponent,FName AttachPointName/*=NAME_None*/,FVector Location/*=new FVector(ForceInit)*/,FRotator Rotation/*=FRotator.ZeroRotator*/,EAttachLocation LocationType/*=EAttachLocation.KeepRelativeOffset*/,bool bStopWhenAttachedToDestroyed/*=false*/,float VolumeMultiplier/*=1.0f*/,float PitchMultiplier/*=1.0f*/,float StartTime/*=0.0f*/,USoundAttenuation AttenuationSettings/*=nullptr*/,USoundConcurrency ConcurrencySettings/*=nullptr*/,bool bAutoDestroy/*=true*/) { return default; }
 	///<summary>Plays a dialogue directly with no attenuation, perfect for UI.</summary>
 	public static void PlayDialogue2D(UObject WorldContextObject,UDialogueWave Dialogue,FDialogueContext Context,float VolumeMultiplier/*=1.0f*/,float PitchMultiplier/*=1.0f*/,float StartTime/*=0.0f*/) {}
 	///<summary>Spawns a DialogueWave, a special type of Asset that requires Context data in order to resolve a specific SoundBase,</summary>
@@ -157,11 +157,11 @@ public partial class UGameplayStatics : UBlueprintFunctionLibrary {
 	///<summary>Spawns a DialogueWave, a special type of Asset that requires Context data in order to resolve a specific SoundBase,</summary>
 	public static UAudioComponent SpawnDialogueAtLocation(UObject WorldContextObject,UDialogueWave Dialogue,FDialogueContext Context,FVector Location,FRotator Rotation/*=FRotator.ZeroRotator*/,float VolumeMultiplier/*=1.0f*/,float PitchMultiplier/*=1.0f*/,float StartTime/*=0.0f*/,USoundAttenuation AttenuationSettings/*=nullptr*/,bool bAutoDestroy/*=true*/) { return default; }
 	///<summary>Spawns a DialogueWave, a special type of Asset that requires Context data in order to resolve a specific SoundBase,</summary>
-	public static UAudioComponent SpawnDialogueAttached(UDialogueWave Dialogue,FDialogueContext Context,USceneComponent AttachToComponent,string AttachPointName/*=NAME_None*/,FVector Location/*=new FVector(ForceInit)*/,FRotator Rotation/*=FRotator.ZeroRotator*/,EAttachLocation LocationType/*=EAttachLocation.KeepRelativeOffset*/,bool bStopWhenAttachedToDestroyed/*=false*/,float VolumeMultiplier/*=1.0f*/,float PitchMultiplier/*=1.0f*/,float StartTime/*=0.0f*/,USoundAttenuation AttenuationSettings/*=nullptr*/,bool bAutoDestroy/*=true*/) { return default; }
+	public static UAudioComponent SpawnDialogueAttached(UDialogueWave Dialogue,FDialogueContext Context,USceneComponent AttachToComponent,FName AttachPointName/*=NAME_None*/,FVector Location/*=new FVector(ForceInit)*/,FRotator Rotation/*=FRotator.ZeroRotator*/,EAttachLocation LocationType/*=EAttachLocation.KeepRelativeOffset*/,bool bStopWhenAttachedToDestroyed/*=false*/,float VolumeMultiplier/*=1.0f*/,float PitchMultiplier/*=1.0f*/,float StartTime/*=0.0f*/,USoundAttenuation AttenuationSettings/*=nullptr*/,bool bAutoDestroy/*=true*/) { return default; }
 	///<summary>Plays a force feedback effect at the given location. This is a fire and forget effect and does not travel with any actor. Replication is also not handled at this point.</summary>
 	public static UForceFeedbackComponent SpawnForceFeedbackAtLocation(UObject WorldContextObject,UForceFeedbackEffect ForceFeedbackEffect,FVector Location,FRotator Rotation/*=FRotator.ZeroRotator*/,bool bLooping/*=false*/,float IntensityMultiplier/*=1.0f*/,float StartTime/*=0.0f*/,UForceFeedbackAttenuation AttenuationSettings/*=nullptr*/,bool bAutoDestroy/*=true*/) { return default; }
 	///<summary>Plays a force feedback effect attached to and following the specified component. This is a fire and forget effect. Replication is also not handled at this point.</summary>
-	public static UForceFeedbackComponent SpawnForceFeedbackAttached(UForceFeedbackEffect ForceFeedbackEffect,USceneComponent AttachToComponent,string AttachPointName/*=NAME_None*/,FVector Location/*=new FVector(ForceInit)*/,FRotator Rotation/*=FRotator.ZeroRotator*/,EAttachLocation LocationType/*=EAttachLocation.KeepRelativeOffset*/,bool bStopWhenAttachedToDestroyed/*=false*/,bool bLooping/*=false*/,float IntensityMultiplier/*=1.0f*/,float StartTime/*=0.0f*/,UForceFeedbackAttenuation AttenuationSettings/*=nullptr*/,bool bAutoDestroy/*=true*/) { return default; }
+	public static UForceFeedbackComponent SpawnForceFeedbackAttached(UForceFeedbackEffect ForceFeedbackEffect,USceneComponent AttachToComponent,FName AttachPointName/*=NAME_None*/,FVector Location/*=new FVector(ForceInit)*/,FRotator Rotation/*=FRotator.ZeroRotator*/,EAttachLocation LocationType/*=EAttachLocation.KeepRelativeOffset*/,bool bStopWhenAttachedToDestroyed/*=false*/,bool bLooping/*=false*/,float IntensityMultiplier/*=1.0f*/,float StartTime/*=0.0f*/,UForceFeedbackAttenuation AttenuationSettings/*=nullptr*/,bool bAutoDestroy/*=true*/) { return default; }
 	///<summary>Will set subtitles to be enabled or disabled.</summary>
 	public static void SetSubtitlesEnabled(bool bEnabled) {}
 	///<summary>Returns whether or not subtitles are currently enabled.</summary>
@@ -171,11 +171,11 @@ public partial class UGameplayStatics : UBlueprintFunctionLibrary {
 	///<summary>Primes the sound, caching the first chunk of streamed audio.</summary>
 	public static void PrimeSound(USoundBase InSound) {}
 	///<summary>Get list of available Audio Spatialization Plugin names</summary>
-	public static TArray<string> GetAvailableSpatialPluginNames(UObject WorldContextObject) { return default; }
+	public static TArray<FName> GetAvailableSpatialPluginNames(UObject WorldContextObject) { return default; }
 	///<summary>Get currently active Audio Spatialization Plugin name</summary>
-	public static string GetActiveSpatialPluginName(UObject WorldContextObject) { return default; }
+	public static FName GetActiveSpatialPluginName(UObject WorldContextObject) { return default; }
 	///<summary>Get list of available Audio Spatialization Plugins</summary>
-	public static bool SetActiveSpatialPluginByName(UObject WorldContextObject,string InPluginName) { return default; }
+	public static bool SetActiveSpatialPluginByName(UObject WorldContextObject,FName InPluginName) { return default; }
 	///<summary>Primes the sound waves in the given USoundClass, caching the first chunk of streamed audio.</summary>
 	public static void PrimeAllSoundsInSoundClass(USoundClass InSoundClass) {}
 	///<summary>Iterate through all sound waves and releases handles to retained chunks. (If the chunk is not being played it will be up for eviction)</summary>
@@ -191,9 +191,9 @@ public partial class UGameplayStatics : UBlueprintFunctionLibrary {
 	///<summary>Clear all sound mix modifiers from the audio system</summary>
 	public static void ClearSoundMixModifiers(UObject WorldContextObject) {}
 	///<summary>Activates a Reverb Effect without the need for an Audio Volume</summary>
-	public static void ActivateReverbEffect(UObject WorldContextObject,UReverbEffect ReverbEffect,string TagName,float Priority/*=0.0f*/,float Volume/*=0.5f*/,float FadeTime/*=2.0f*/) {}
+	public static void ActivateReverbEffect(UObject WorldContextObject,UReverbEffect ReverbEffect,FName TagName,float Priority/*=0.0f*/,float Volume/*=0.5f*/,float FadeTime/*=2.0f*/) {}
 	///<summary>Deactivates a Reverb Effect that was applied outside of an Audio Volume</summary>
-	public static void DeactivateReverbEffect(UObject WorldContextObject,string TagName) {}
+	public static void DeactivateReverbEffect(UObject WorldContextObject,FName TagName) {}
 	///<summary>Returns the highest priority reverb settings currently active from any source (Audio Volumes or manual settings).</summary>
 	public static UReverbEffect GetCurrentReverbEffect(UObject WorldContextObject) { return default; }
 	///<summary>Sets the max number of voices (also known as &quot;channels&quot;) dynamically by percentage. E.g. if you want to temporarily</summary>
@@ -203,11 +203,11 @@ public partial class UGameplayStatics : UBlueprintFunctionLibrary {
 	///<summary>Spawns a decal at the given location and rotation, fire and forget. Does not replicate.</summary>
 	public static UDecalComponent SpawnDecalAtLocation(UObject WorldContextObject,UMaterialInterface DecalMaterial,FVector DecalSize,FVector Location,FRotator Rotation/*=new FRotator(-90,0,0)*/,float LifeSpan/*=0f*/) { return default; }
 	///<summary>Spawns a decal attached to and following the specified component. Does not replicate.</summary>
-	public static UDecalComponent SpawnDecalAttached(UMaterialInterface DecalMaterial,FVector DecalSize,USceneComponent AttachToComponent,string AttachPointName/*=NAME_None*/,FVector Location/*=new FVector(ForceInit)*/,FRotator Rotation/*=FRotator.ZeroRotator*/,EAttachLocation LocationType/*=EAttachLocation.KeepRelativeOffset*/,float LifeSpan/*=0f*/) { return default; }
+	public static UDecalComponent SpawnDecalAttached(UMaterialInterface DecalMaterial,FVector DecalSize,USceneComponent AttachToComponent,FName AttachPointName/*=NAME_None*/,FVector Location/*=new FVector(ForceInit)*/,FRotator Rotation/*=FRotator.ZeroRotator*/,EAttachLocation LocationType/*=EAttachLocation.KeepRelativeOffset*/,float LifeSpan/*=0f*/) { return default; }
 	///<summary>Extracts data from a HitResult.</summary>
-	public static void BreakHitResult(FHitResult Hit,bool bBlockingHit,bool bInitialOverlap,float Time,float Distance,FVector Location,FVector ImpactPoint,FVector Normal,FVector ImpactNormal,UPhysicalMaterial PhysMat,AActor HitActor,UPrimitiveComponent HitComponent,string HitBoneName,string BoneName,int HitItem,int ElementIndex,int FaceIndex,FVector TraceStart,FVector TraceEnd) {}
+	public static void BreakHitResult(FHitResult Hit,bool bBlockingHit,bool bInitialOverlap,float Time,float Distance,FVector Location,FVector ImpactPoint,FVector Normal,FVector ImpactNormal,UPhysicalMaterial PhysMat,AActor HitActor,UPrimitiveComponent HitComponent,FName HitBoneName,FName BoneName,int HitItem,int ElementIndex,int FaceIndex,FVector TraceStart,FVector TraceEnd) {}
 	///<summary>Create a HitResult struct</summary>
-	public static FHitResult MakeHitResult(bool bBlockingHit,bool bInitialOverlap,float Time,float Distance,FVector Location,FVector ImpactPoint,FVector Normal,FVector ImpactNormal,UPhysicalMaterial PhysMat,AActor HitActor,UPrimitiveComponent HitComponent,string HitBoneName,string BoneName,int HitItem,int ElementIndex,int FaceIndex,FVector TraceStart,FVector TraceEnd) { return default; }
+	public static FHitResult MakeHitResult(bool bBlockingHit,bool bInitialOverlap,float Time,float Distance,FVector Location,FVector ImpactPoint,FVector Normal,FVector ImpactNormal,UPhysicalMaterial PhysMat,AActor HitActor,UPrimitiveComponent HitComponent,FName HitBoneName,FName BoneName,int HitItem,int ElementIndex,int FaceIndex,FVector TraceStart,FVector TraceEnd) { return default; }
 	///<summary>Returns the EPhysicalSurface type of the given Hit.</summary>
 	public static EPhysicalSurface GetSurfaceType(FHitResult Hit) { return default; }
 	///<summary>Try and find the UV for a collision impact. Note this ONLY works if &#39;Support UV From Hit Results&#39; is enabled in Physics Settings.</summary>

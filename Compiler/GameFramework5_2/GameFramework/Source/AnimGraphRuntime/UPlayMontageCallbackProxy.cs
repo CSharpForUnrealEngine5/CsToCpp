@@ -14,13 +14,13 @@ public partial class UPlayMontageCallbackProxy : UObject {
 	///<summary>OnNotifyEnd</summary>
 	public FOnMontagePlayDelegate OnNotifyEnd;
 	///<summary>Called to perform the query internally</summary>
-	public static UPlayMontageCallbackProxy CreateProxyObjectForPlayMontage(USkeletalMeshComponent InSkeletalMeshComponent,UAnimMontage MontageToPlay,float PlayRate/*=1.0f*/,float StartingPosition/*=0.0f*/,string StartingSection/*=NAME_None*/) { return default; }
+	public static UPlayMontageCallbackProxy CreateProxyObjectForPlayMontage(USkeletalMeshComponent InSkeletalMeshComponent,UAnimMontage MontageToPlay,float PlayRate/*=1.0f*/,float StartingPosition/*=0.0f*/,FName StartingSection/*=NAME_None*/) { return default; }
 	///<summary>OnMontageBlendingOut</summary>
 	public void OnMontageBlendingOut(UAnimMontage Montage,bool bInterrupted) {}
 	///<summary>OnMontageEnded</summary>
 	public void OnMontageEnded(UAnimMontage Montage,bool bInterrupted) {}
 	///<summary>OnNotifyBeginReceived</summary>
-	public void OnNotifyBeginReceived(string NotifyName,FBranchingPointNotifyPayload BranchingPointNotifyPayload) {}
+	public void OnNotifyBeginReceived(FName NotifyName,FBranchingPointNotifyPayload BranchingPointNotifyPayload) {}
 	///<summary>OnNotifyEndReceived</summary>
-	public void OnNotifyEndReceived(string NotifyName,FBranchingPointNotifyPayload BranchingPointNotifyPayload) {}
+	public void OnNotifyEndReceived(FName NotifyName,FBranchingPointNotifyPayload BranchingPointNotifyPayload) {}
 }

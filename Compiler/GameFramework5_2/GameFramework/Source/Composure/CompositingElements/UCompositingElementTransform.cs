@@ -8,5 +8,5 @@ public partial class UCompositingElementTransform : UCompositingElementPass {
 	///<summary>ApplyTransform</summary>
 	public UTexture ApplyTransform(UTexture Input,UComposurePostProcessingPassProxy PostProcessProxy,ACameraActor TargetCamera) { return default; }
 	///<summary>FindNamedPrePassResult</summary>
-	public UTexture FindNamedPrePassResult(string PassLookupName) { return default; }
+	public UTexture FindNamedPrePassResult(FName PassLookupName) { return default; }
 }

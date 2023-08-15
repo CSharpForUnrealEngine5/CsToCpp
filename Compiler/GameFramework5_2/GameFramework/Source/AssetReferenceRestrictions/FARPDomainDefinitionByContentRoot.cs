@@ -6,7 +6,7 @@ public partial struct FARPDomainDefinitionByContentRoot {
 	public FText DomainDisplayName;
 	public FText ErrorMessageIfUsedElsewhere;
 	public TArray<FDirectoryPath> ContentRoots;
-	public TArray<string> SpecificAssets;
+	public TArray<FName> SpecificAssets;
 	public EARPDomainAllowedToReferenceMode ReferenceMode;
 	public TArray<string> CanReferenceTheseDomains;
 }

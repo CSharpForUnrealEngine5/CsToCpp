@@ -7,9 +7,9 @@ public partial class UPCGAttributeReduceSettings : UPCGSettings {
 	///<summary>InputSource</summary>
 	public FPCGAttributePropertySelector InputSource;
 	///<summary>OutputAttributeName</summary>
-	public string OutputAttributeName;
+	public FName OutputAttributeName;
 	///<summary>Operation</summary>
 	public EPCGAttributeReduceOperation Operation;
 	///<summary>InputAttributeName_DEPRECATED</summary>
-	public string InputAttributeName_DEPRECATED;
+	public FName InputAttributeName_DEPRECATED;
 }

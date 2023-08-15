@@ -24,5 +24,5 @@ public partial class UDMXFixtureComponent : UActorComponent {
 	///<summary>Called to initialize the component in blueprints</summary>
 	public void InitializeComponent() {}
 	///<summary>Should be implemented to let other objects (e.g. datasmith) know which attributes the component can handle</summary>
-	public void GetSupportedDMXAttributes(TArray<string> OutAttributeNames) {}
+	public void GetSupportedDMXAttributes(TArray<FName> OutAttributeNames) {}
 }

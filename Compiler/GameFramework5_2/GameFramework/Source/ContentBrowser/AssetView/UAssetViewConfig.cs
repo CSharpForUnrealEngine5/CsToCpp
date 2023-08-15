@@ -4,5 +4,5 @@ using CSharpToCpp.Utilities;
 public partial class UAssetViewConfig : UEditorConfigBase {
 	public static UClass StaticClass() {return default;}
 	///<summary>Instances</summary>
-	public TMap<string,FAssetViewInstanceConfig> Instances;
+	public TMap<FName,FAssetViewInstanceConfig> Instances;
 }

@@ -4,6 +4,6 @@ using CSharpToCpp.Utilities;
 public partial struct FMrcAlignmentSaveData {
 	public FVector CameraOrigin;
 	public FRotator Orientation;
-	public string TrackingAttachmentId;
+	public FName TrackingAttachmentId;
 	public EHMDTrackingOrigin TrackingOrigin;
 }

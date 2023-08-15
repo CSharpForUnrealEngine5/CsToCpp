@@ -8,5 +8,5 @@ public partial struct FRigVMFunction_VisualDebugVector {
 	public FLinearColor Color;
 	public float Thickness;
 	public float Scale;
-	public string BoneSpace;
+	public FName BoneSpace;
 }

@@ -17,7 +17,7 @@ public partial class UAudioComponentGroup : USceneComponent {
 	///<summary>BroadcastKill</summary>
 	public void BroadcastKill() {}
 	///<summary>BroadcastEvent</summary>
-	public void BroadcastEvent(string EventName) {}
+	public void BroadcastEvent(FName EventName) {}
 	///<summary>Allow an externally created AudioComponent to share parameters with this SoundGroup</summary>
 	public void AddExternalComponent(UAudioComponent ComponentToAdd) {}
 	///<summary>EnableVirtualization</summary>
@@ -35,11 +35,11 @@ public partial class UAudioComponentGroup : USceneComponent {
 	///<summary>RemoveExtension</summary>
 	public void RemoveExtension(object /*NewExtension*/ NewExtension) {}
 	///<summary>GetFloatParamValue</summary>
-	public float GetFloatParamValue(string ParamName) { return default; }
+	public float GetFloatParamValue(FName ParamName) { return default; }
 	///<summary>GetBoolParamValue</summary>
-	public bool GetBoolParamValue(string ParamName) { return default; }
+	public bool GetBoolParamValue(FName ParamName) { return default; }
 	///<summary>GetStringParamValue</summary>
-	public string GetStringParamValue(string ParamName) { return default; }
+	public string GetStringParamValue(FName ParamName) { return default; }
 	///<summary>OnStopped</summary>
 	public FSoundGroupChanged OnStopped;
 	///<summary>OnKilled</summary>

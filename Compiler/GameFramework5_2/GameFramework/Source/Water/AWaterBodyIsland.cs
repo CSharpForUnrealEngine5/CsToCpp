@@ -10,7 +10,7 @@ public partial class AWaterBodyIsland : AActor {
 	///<summary>WaterHeightmapSettings</summary>
 	public FWaterBodyHeightmapSettings WaterHeightmapSettings;
 	///<summary>WaterWeightmapSettings</summary>
-	public TMap<string,FWaterBodyWeightmapSettings> WaterWeightmapSettings;
+	public TMap<FName,FWaterBodyWeightmapSettings> WaterWeightmapSettings;
 	///<summary>ActorIcon</summary>
 	public UBillboardComponent ActorIcon;
 	///<summary>The spline data attached to this water type.</summary>

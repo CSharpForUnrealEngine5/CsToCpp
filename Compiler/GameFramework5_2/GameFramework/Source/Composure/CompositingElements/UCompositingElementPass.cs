@@ -7,7 +7,7 @@ public partial class UCompositingElementPass : UObject {
 	///<summary>bEnabled</summary>
 	public bool bEnabled;
 	///<summary>PassName</summary>
-	public string PassName;
+	public FName PassName;
 	///<summary>OnFrameBegin</summary>
 	public void OnFrameBegin(bool bCameraCutThisFrame) {}
 	///<summary>OnFrameEnd</summary>

@@ -6,7 +6,7 @@ public partial class UMaterialExpressionCollectionParameter : UMaterialExpressio
 	///<summary>The Parameter Collection to use.</summary>
 	public UMaterialParameterCollection Collection;
 	///<summary>Name of the parameter being referenced.</summary>
-	public string ParameterName;
+	public FName ParameterName;
 	///<summary>Id that is set from the name, and used to handle renaming of collection parameters.</summary>
 	public FGuid ParameterId;
 }

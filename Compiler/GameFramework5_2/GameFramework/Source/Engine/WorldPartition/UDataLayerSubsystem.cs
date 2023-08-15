@@ -16,33 +16,33 @@ public partial class UDataLayerSubsystem : UWorldSubsystem {
 	///<summary>SetDataLayerState</summary>
 	public void SetDataLayerState(FActorDataLayer InDataLayer,EDataLayerState InState) {}
 	///<summary>SetDataLayerStateByLabel</summary>
-	public void SetDataLayerStateByLabel(string InDataLayerLabel,EDataLayerState InState) {}
+	public void SetDataLayerStateByLabel(FName InDataLayerLabel,EDataLayerState InState) {}
 	///<summary>GetDataLayerState</summary>
 	public EDataLayerState GetDataLayerState(FActorDataLayer InDataLayer) { return default; }
 	///<summary>GetDataLayerStateByLabel</summary>
-	public EDataLayerState GetDataLayerStateByLabel(string InDataLayerLabel) { return default; }
+	public EDataLayerState GetDataLayerStateByLabel(FName InDataLayerLabel) { return default; }
 	///<summary>GetActiveDataLayerNames</summary>
-	public TSet<string> GetActiveDataLayerNames() { return default; }
+	public TSet<FName> GetActiveDataLayerNames() { return default; }
 	///<summary>GetLoadedDataLayerNames</summary>
-	public TSet<string> GetLoadedDataLayerNames() { return default; }
+	public TSet<FName> GetLoadedDataLayerNames() { return default; }
 	///<summary>GetDataLayer</summary>
 	public UDataLayerInstance GetDataLayer(FActorDataLayer InDataLayer) { return default; }
 	///<summary>GetDataLayerFromName</summary>
-	public UDataLayerInstance GetDataLayerFromName(string InDataLayerName) { return default; }
+	public UDataLayerInstance GetDataLayerFromName(FName InDataLayerName) { return default; }
 	///<summary>GetDataLayerFromLabel</summary>
-	public UDataLayerInstance GetDataLayerFromLabel(string InDataLayerLabel) { return default; }
+	public UDataLayerInstance GetDataLayerFromLabel(FName InDataLayerLabel) { return default; }
 	///<summary>GetDataLayerRuntimeState</summary>
 	public EDataLayerRuntimeState GetDataLayerRuntimeState(FActorDataLayer InDataLayer) { return default; }
 	///<summary>GetDataLayerRuntimeStateByLabel</summary>
-	public EDataLayerRuntimeState GetDataLayerRuntimeStateByLabel(string InDataLayerLabel) { return default; }
+	public EDataLayerRuntimeState GetDataLayerRuntimeStateByLabel(FName InDataLayerLabel) { return default; }
 	///<summary>GetDataLayerEffectiveRuntimeState</summary>
 	public EDataLayerRuntimeState GetDataLayerEffectiveRuntimeState(FActorDataLayer InDataLayer) { return default; }
 	///<summary>GetDataLayerEffectiveRuntimeStateByLabel</summary>
-	public EDataLayerRuntimeState GetDataLayerEffectiveRuntimeStateByLabel(string InDataLayerLabel) { return default; }
+	public EDataLayerRuntimeState GetDataLayerEffectiveRuntimeStateByLabel(FName InDataLayerLabel) { return default; }
 	///<summary>SetDataLayerRuntimeState</summary>
 	public void SetDataLayerRuntimeState(FActorDataLayer InDataLayer,EDataLayerRuntimeState InState,bool bInIsRecursive/*=false*/) {}
 	///<summary>SetDataLayerRuntimeStateByLabel</summary>
-	public void SetDataLayerRuntimeStateByLabel(string InDataLayerLabel,EDataLayerRuntimeState InState,bool bInIsRecursive/*=false*/) {}
+	public void SetDataLayerRuntimeStateByLabel(FName InDataLayerLabel,EDataLayerRuntimeState InState,bool bInIsRecursive/*=false*/) {}
 	///<summary>DataLayerLoadingPolicyClass</summary>
 	public TSoftObjectPtr<UClass> DataLayerLoadingPolicyClass;
 	///<summary>DataLayerLoadingPolicy</summary>

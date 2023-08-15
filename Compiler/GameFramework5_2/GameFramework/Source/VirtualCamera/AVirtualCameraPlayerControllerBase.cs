@@ -6,7 +6,7 @@ public partial class AVirtualCameraPlayerControllerBase : APlayerController {
 	///<summary>Allows user to select which tracker input should be used</summary>
 	public ETrackerInputSource InputSource;
 	///<summary>Controller for level sequence playback</summary>
-	public string LiveLinkTargetName;
+	public FName LiveLinkTargetName;
 	///<summary>Offset applied to calculated location before tracker transform is added</summary>
 	public FTrackingOffset TrackerPreOffset;
 	///<summary>Offset applied to calculated location after tracker transform is added</summary>
@@ -14,7 +14,7 @@ public partial class AVirtualCameraPlayerControllerBase : APlayerController {
 	///<summary>Class of CameraActor to spawn to allow user to use their own customized camera</summary>
 	public UClass TargetCameraActorClass;
 	///<summary>Array of any properties that should be recorded</summary>
-	public TArray<string> RequiredSequencerRecorderCameraSettings;
+	public TArray<FName> RequiredSequencerRecorderCameraSettings;
 	///<summary>OnOffsetReset</summary>
 	public FVirtualCameraResetOffsetsDelegate OnOffsetReset;
 	///<summary>RootActor</summary>

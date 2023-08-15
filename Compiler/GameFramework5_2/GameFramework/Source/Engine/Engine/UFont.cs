@@ -33,7 +33,7 @@ public partial class UFont : UObject {
 	///<summary>The default size of the font used for legacy Canvas APIs that don&#39;t specify a font size</summary>
 	public int LegacyFontSize;
 	///<summary>The default font name to use for legacy Canvas APIs that don&#39;t specify a font name</summary>
-	public string LegacyFontName;
+	public FName LegacyFontName;
 	///<summary>Embedded composite font data</summary>
 	public FCompositeFont CompositeFont;
 }

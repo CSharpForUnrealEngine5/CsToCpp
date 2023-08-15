@@ -14,13 +14,13 @@ public partial class UAnimGraphNode_PoseDriver : UAnimGraphNode_PoseHandler {
 	///<summary>Util to replace current contents of PoseTargets with info from assigned PoseAsset</summary>
 	public void CopyTargetsFromPoseAsset() {}
 	///<summary>Sets the pose-driver its source bones by name</summary>
-	public void SetSourceBones(TArray<string> BoneNames) {}
+	public void SetSourceBones(TArray<FName> BoneNames) {}
 	///<summary>Returns the pose-driver its source bones by name</summary>
-	public void GetSourceBoneNames(TArray<string> BoneNames) {}
+	public void GetSourceBoneNames(TArray<FName> BoneNames) {}
 	///<summary>Set the pose-driver its driven bones by name</summary>
-	public void SetDrivingBones(TArray<string> BoneNames) {}
+	public void SetDrivingBones(TArray<FName> BoneNames) {}
 	///<summary>Returns the pose-driver its driven bones by name</summary>
-	public void GetDrivingBoneNames(TArray<string> BoneNames) {}
+	public void GetDrivingBoneNames(TArray<FName> BoneNames) {}
 	///<summary>SetRBFParameters</summary>
 	public void SetRBFParameters(FRBFParams Parameters) {}
 	///<summary>GetRBFParameters</summary>

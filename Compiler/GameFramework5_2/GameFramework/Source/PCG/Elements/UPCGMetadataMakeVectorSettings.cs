@@ -18,11 +18,11 @@ public partial class UPCGMetadataMakeVectorSettings : UPCGMetadataSettingsBase {
 	///<summary>MakeVector4Op</summary>
 	public EPCGMetadataMakeVector4 MakeVector4Op;
 	///<summary>Input1AttributeName_DEPRECATED</summary>
-	public string Input1AttributeName_DEPRECATED;
+	public FName Input1AttributeName_DEPRECATED;
 	///<summary>Input2AttributeName_DEPRECATED</summary>
-	public string Input2AttributeName_DEPRECATED;
+	public FName Input2AttributeName_DEPRECATED;
 	///<summary>Input3AttributeName_DEPRECATED</summary>
-	public string Input3AttributeName_DEPRECATED;
+	public FName Input3AttributeName_DEPRECATED;
 	///<summary>Input4AttributeName_DEPRECATED</summary>
-	public string Input4AttributeName_DEPRECATED;
+	public FName Input4AttributeName_DEPRECATED;
 }

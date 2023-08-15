@@ -15,7 +15,7 @@ public partial class UMovieSceneControlRigParameterSection : UMovieSceneParamete
 	///<summary>The weight curve for this animation controller section</summary>
 	public FMovieSceneFloatChannel Weight;
 	///<summary>Map from the control name to where it starts as a channel</summary>
-	public TMap<string,FChannelMapInfo> ControlChannelMap;
+	public TMap<FName,FChannelMapInfo> ControlChannelMap;
 	///<summary>Enum Curves</summary>
 	public TArray<FEnumParameterNameAndCurve> EnumParameterNamesAndCurves;
 	///<summary>Integer Curves</summary>

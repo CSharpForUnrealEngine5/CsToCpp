@@ -20,7 +20,7 @@ public partial class UKismetTextLibrary : UBlueprintFunctionLibrary {
 	///<summary>Converts string to culture invariant text. Use Format or Make Literal Text to create localizable text</summary>
 	public static FText Conv_StringToText(string InString) { return default; }
 	///<summary>Converts Name to culture invariant text</summary>
-	public static FText Conv_NameToText(string InName) { return default; }
+	public static FText Conv_NameToText(FName InName) { return default; }
 	///<summary>Returns true if text is empty.</summary>
 	public static bool TextIsEmpty(FText InText) { return default; }
 	///<summary>Returns true if text is transient.</summary>
@@ -86,9 +86,9 @@ public partial class UKismetTextLibrary : UBlueprintFunctionLibrary {
 	///<summary>Returns true if the given text is referencing a string table.</summary>
 	public static bool TextIsFromStringTable(FText Text) { return default; }
 	///<summary>Attempts to create a text instance from a string table ID and key.</summary>
-	public static FText TextFromStringTable(string TableId,string Key) { return default; }
+	public static FText TextFromStringTable(FName TableId,string Key) { return default; }
 	///<summary>Attempts to find the String Table ID and key used by the given text.</summary>
-	public static bool StringTableIdAndKeyFromText(FText Text,string OutTableId,string OutKey) { return default; }
+	public static bool StringTableIdAndKeyFromText(FText Text,FName OutTableId,string OutKey) { return default; }
 	///<summary>Check whether the given polyglot data is valid.</summary>
 	public static void IsPolyglotDataValid(FPolyglotTextData PolyglotData,bool IsValid,FText ErrorMessage) {}
 	///<summary>Get the text instance created from this polyglot data.</summary>

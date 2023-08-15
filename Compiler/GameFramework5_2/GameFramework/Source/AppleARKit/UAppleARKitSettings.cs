@@ -26,9 +26,9 @@ public partial class UAppleARKitSettings : UObject {
 	///<summary>The port to use when listening/sending LiveLink face blend shapes via the network</summary>
 	public int LiveLinkPublishingPort;
 	///<summary>The default name to use when publishing face tracking name</summary>
-	public string DefaultFaceTrackingLiveLinkSubjectName;
+	public FName DefaultFaceTrackingLiveLinkSubjectName;
 	///<summary>The default name to use when publishing pose tracking name</summary>
-	public string DefaultPoseTrackingLiveLinkSubjectName;
+	public FName DefaultPoseTrackingLiveLinkSubjectName;
 	///<summary>The default tracking to use when tracking face blend shapes (face relative or mirrored). Defaults to face relative</summary>
 	public EARFaceTrackingDirection DefaultFaceTrackingDirection;
 	///<summary>Whether to adjust thread priorities during an AR session or not</summary>

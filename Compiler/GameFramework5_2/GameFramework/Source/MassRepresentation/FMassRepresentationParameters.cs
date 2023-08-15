@@ -7,7 +7,7 @@ public partial struct FMassRepresentationParameters {
 	public bool bKeepLowResActors;
 	public bool bKeepActorExtraFrame;
 	public bool bSpreadFirstVisualizationUpdate;
-	public string WorldPartitionGridNameContainingCollision;
+	public FName WorldPartitionGridNameContainingCollision;
 	public float NotVisibleUpdateRate;
 	public EMassRepresentationType CachedDefaultRepresentationType;
 	public UMassRepresentationActorManagement CachedRepresentationActorManagement;

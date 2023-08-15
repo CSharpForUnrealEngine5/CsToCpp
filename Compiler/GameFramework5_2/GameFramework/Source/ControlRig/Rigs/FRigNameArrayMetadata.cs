@@ -2,5 +2,5 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Rigs/RigHierarchyMetadata.h")]
 public partial struct FRigNameArrayMetadata {
-	public TArray<string> Value;
+	public TArray<FName> Value;
 }

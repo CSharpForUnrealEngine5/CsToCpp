@@ -11,7 +11,7 @@ public partial class URigVMPin : UObject {
 	///<summary>Returns a . separated path containing all names of the pin within its main</summary>
 	public string GetSegmentPath(bool bIncludeRootPin/*=false*/) { return default; }
 	///<summary>Returns the display label of the pin</summary>
-	public string GetDisplayName() { return default; }
+	public FName GetDisplayName() { return default; }
 	///<summary>Returns the direction of the pin</summary>
 	public ERigVMPinDirection GetDirection() { return default; }
 	///<summary>Returns true if the pin is currently expanded</summary>
@@ -63,7 +63,7 @@ public partial class URigVMPin : UObject {
 	///<summary>Returns the default value of the Pin as a string.</summary>
 	public string GetDefaultValue() { return default; }
 	///<summary>Returns the name of a custom widget to be used</summary>
-	public string GetCustomWidgetName() { return default; }
+	public FName GetCustomWidgetName() { return default; }
 	///<summary>Returns the tooltip of this pin</summary>
 	public FText GetToolTipText() { return default; }
 	///<summary>Returns the struct of the data type of the Pin,</summary>
@@ -105,7 +105,7 @@ public partial class URigVMPin : UObject {
 	///<summary>Returns the graph of this Pin.</summary>
 	public URigVMGraph GetGraph() { return default; }
 	///<summary>DisplayName</summary>
-	public string DisplayName;
+	public FName DisplayName;
 	///<summary>if new members are added to the pin in the future</summary>
 	public ERigVMPinDirection Direction;
 	///<summary>bIsExpanded</summary>
@@ -121,11 +121,11 @@ public partial class URigVMPin : UObject {
 	///<summary>serialize object ptr here to keep track of the latest version of the type object,</summary>
 	public UObject CPPTypeObject;
 	///<summary>CPPTypeObjectPath</summary>
-	public string CPPTypeObjectPath;
+	public FName CPPTypeObjectPath;
 	///<summary>DefaultValue</summary>
 	public string DefaultValue;
 	///<summary>CustomWidgetName</summary>
-	public string CustomWidgetName;
+	public FName CustomWidgetName;
 	///<summary>SubPins</summary>
 	public TArray<URigVMPin> SubPins;
 	///<summary>Links</summary>

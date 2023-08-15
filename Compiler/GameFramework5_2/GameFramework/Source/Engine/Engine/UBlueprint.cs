@@ -83,7 +83,7 @@ public partial class UBlueprint : UBlueprintCore {
 	///<summary>Array of new variables to be added to generated class</summary>
 	public TArray<FBPVariableDescription> NewVariables;
 	///<summary>Array of user sorted categories</summary>
-	public TArray<string> CategorySorting;
+	public TArray<FName> CategorySorting;
 	///<summary>Namespaces imported by this blueprint</summary>
 	public TSet<string> ImportedNamespaces;
 	///<summary>Array of info about the interfaces we implement in this blueprint</summary>
@@ -101,9 +101,9 @@ public partial class UBlueprint : UBlueprintCore {
 	///<summary>DeprecatedPinWatches</summary>
 	public TArray<UEdGraphPin_Deprecated> DeprecatedPinWatches;
 	///<summary>Index map for component template names</summary>
-	public TMap<string,int> ComponentTemplateNameIndex;
+	public TMap<FName,int> ComponentTemplateNameIndex;
 	///<summary>Maps old to new component template names</summary>
-	public TMap<string,string> OldToNewComponentTemplateNames;
+	public TMap<FName,FName> OldToNewComponentTemplateNames;
 	///<summary>Extensions</summary>
 	public TArray<UBlueprintExtension> Extensions;
 	///<summary>Information for thumbnail rendering</summary>

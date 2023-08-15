@@ -4,5 +4,5 @@ using CSharpToCpp.Utilities;
 public partial struct FGeometryScriptCreateNewSkeletalMeshAssetOptions {
 	public bool bEnableRecomputeNormals;
 	public bool bEnableRecomputeTangents;
-	public TMap<string,UMaterialInterface> Materials;
+	public TMap<FName,UMaterialInterface> Materials;
 }

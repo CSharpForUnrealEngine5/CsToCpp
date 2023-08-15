@@ -12,9 +12,9 @@ public partial class UCommonInputSubsystem : ULocalPlayerSubsystem {
 	///<summary>SetCurrentInputType</summary>
 	public void SetCurrentInputType(ECommonInputType NewInputType) {}
 	///<summary>GetCurrentGamepadName</summary>
-	public string GetCurrentGamepadName() { return default; }
+	public FName GetCurrentGamepadName() { return default; }
 	///<summary>SetGamepadInputType</summary>
-	public void SetGamepadInputType(string InGamepadInputType) {}
+	public void SetGamepadInputType(FName InGamepadInputType) {}
 	///<summary>IsUsingPointerInput</summary>
 	public bool IsUsingPointerInput() { return default; }
 	///<summary>Should display indicators for the current input device on screen.  This is needed when capturing videos, but we don&#39;t want to reveal the capture source device.</summary>
@@ -34,9 +34,9 @@ public partial class UCommonInputSubsystem : ULocalPlayerSubsystem {
 	///<summary>CurrentInputType</summary>
 	public ECommonInputType CurrentInputType;
 	///<summary>GamepadInputType</summary>
-	public string GamepadInputType;
+	public FName GamepadInputType;
 	///<summary>CurrentInputLocks</summary>
-	public TMap<string,ECommonInputType> CurrentInputLocks;
+	public TMap<FName,ECommonInputType> CurrentInputLocks;
 	///<summary>ActionDomainTable</summary>
 	public UCommonInputActionDomainTable ActionDomainTable;
 	///<summary>Is the current click simulated by the gamepad&#39;s face button down/right (platform dependent)</summary>

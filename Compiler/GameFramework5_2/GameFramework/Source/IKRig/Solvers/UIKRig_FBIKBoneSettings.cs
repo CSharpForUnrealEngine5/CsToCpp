@@ -4,7 +4,7 @@ using CSharpToCpp.Utilities;
 public partial class UIKRig_FBIKBoneSettings : UObject {
 	public static UClass StaticClass() {return default;}
 	///<summary>The bone these settings are applied to.</summary>
-	public string Bone;
+	public FName Bone;
 	///<summary>Range is 0 to 1 (Default is 0). At higher values, the bone will resist rotating (forcing other bones to compensate).</summary>
 	public float RotationStiffness;
 	///<summary>Range is 0 to 1 (Default is 0). At higher values, the bone will resist translational motion (forcing other bones to compensate).</summary>

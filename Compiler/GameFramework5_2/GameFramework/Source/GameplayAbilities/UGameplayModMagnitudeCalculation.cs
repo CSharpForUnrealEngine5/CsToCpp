@@ -13,7 +13,7 @@ public partial class UGameplayModMagnitudeCalculation : UGameplayEffectCalculati
 	///<summary>Extracts the Set by Caller Magnitude from a Gameplay Effect Spec</summary>
 	public float GetSetByCallerMagnitudeByTag(FGameplayEffectSpec EffectSpec,FGameplayTag Tag) { return default; }
 	///<summary>Extracts the Set by Caller Magnitude from a Gameplay Effect Spec</summary>
-	public float GetSetByCallerMagnitudeByName(FGameplayEffectSpec EffectSpec,string MagnitudeName) { return default; }
+	public float GetSetByCallerMagnitudeByName(FGameplayEffectSpec EffectSpec,FName MagnitudeName) { return default; }
 	///<summary>Copies and returns the source aggregated tags from a Gameplay Effect Spec</summary>
 	public FGameplayTagContainer GetSourceAggregatedTags(FGameplayEffectSpec EffectSpec) { return default; }
 	///<summary>Returns the source actor tags from a Gameplay Effect Spec</summary>

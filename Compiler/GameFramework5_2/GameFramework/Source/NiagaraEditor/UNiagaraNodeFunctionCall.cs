@@ -8,11 +8,11 @@ public partial class UNiagaraNodeFunctionCall : UNiagaraNodeWithDynamicPins {
 	///<summary>SelectedScriptVersion</summary>
 	public FGuid SelectedScriptVersion;
 	///<summary>A path to a script asset which can be used to assign the function script the first time that</summary>
-	public string FunctionScriptAssetObjectPath;
+	public FName FunctionScriptAssetObjectPath;
 	///<summary>Some functions can be provided a signature directly rather than a script.</summary>
 	public FNiagaraFunctionSignature Signature;
 	///<summary>FunctionSpecifiers</summary>
-	public TMap<string,string> FunctionSpecifiers;
+	public TMap<FName,FName> FunctionSpecifiers;
 	///<summary>All the input values the function propagates to the next higher caller instead of forcing the user to set them directly.</summary>
 	public TArray<FNiagaraPropagatedVariable> PropagatedStaticSwitchParameters;
 	///<summary>Can be used by the ui after a version change to display change notes</summary>
@@ -34,5 +34,5 @@ public partial class UNiagaraNodeFunctionCall : UNiagaraNodeWithDynamicPins {
 	///<summary>StackMessages</summary>
 	public TArray<FNiagaraStackMessage> StackMessages;
 	///<summary>BoundPinNames</summary>
-	public TMap<FGuid,string> BoundPinNames;
+	public TMap<FGuid,FName> BoundPinNames;
 }

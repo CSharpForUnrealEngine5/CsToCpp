@@ -2,7 +2,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("ToolMenuSection.h")]
 public partial struct FToolMenuSection {
-	public string Name;
+	public FName Name;
 	public FToolMenuOwner Owner;
 	public TArray<FToolMenuEntry> Blocks;
 	public FToolMenuInsert InsertPosition;

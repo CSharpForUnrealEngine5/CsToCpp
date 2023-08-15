@@ -25,7 +25,7 @@ public partial class UDMXSubsystem : UEngineSubsystem {
 	///<summary>Return map with all DMX functions and their associated values given DMX buffer and desired universe.</summary>
 	public void GetFixtureAttributes(UDMXEntityFixturePatch InFixturePatch,TArray<byte> DMXBuffer,TMap<FDMXAttributeName,int> OutResult) {}
 	///<summary>Return reference to array of Fixture Patch objects with a given tag.</summary>
-	public TArray<UDMXEntityFixturePatch> GetAllFixturesWithTag(UDMXLibrary DMXLibrary,string CustomTag) { return default; }
+	public TArray<UDMXEntityFixturePatch> GetAllFixturesWithTag(UDMXLibrary DMXLibrary,FName CustomTag) { return default; }
 	///<summary>Return reference to array of Fixture Patch objects in library.</summary>
 	public TArray<UDMXEntityFixturePatch> GetAllFixturesInLibrary(UDMXLibrary DMXLibrary) { return default; }
 	///<summary>Return reference to Fixture Patch object with a given name.</summary>
@@ -63,7 +63,7 @@ public partial class UDMXSubsystem : UEngineSubsystem {
 	///<summary>Gets a function map based on you active mode from FixturePatch, but instead of passing a Protocol as parameters, it looks for</summary>
 	public bool GetFunctionsMapForPatch(UDMXEntityFixturePatch InFixturePatch,TMap<FDMXAttributeName,int> OutAttributesMap) { return default; }
 	///<summary>Gets function channel value by input function name</summary>
-	public int GetFunctionsValue(string FunctionAttributeName,TMap<FDMXAttributeName,int> InAttributesMap) { return default; }
+	public int GetFunctionsValue(FName FunctionAttributeName,TMap<FDMXAttributeName,int> InAttributesMap) { return default; }
 	///<summary>Checks if a FixturePatchs is of a given FixtureType</summary>
 	public bool PatchIsOfSelectedType(UDMXEntityFixturePatch InFixturePatch,string RefTypeValue) { return default; }
 	///<summary>Get a DMX Subsystem, pure version</summary>
@@ -71,7 +71,7 @@ public partial class UDMXSubsystem : UEngineSubsystem {
 	///<summary>Get a DMX Subsystem, callable version</summary>
 	public static UDMXSubsystem GetDMXSubsystem_Callable() { return default; }
 	///<summary>Gets the FName for a FDMXAttributeName, since structs can&#39;t have UFUCNTIONS to create a getter</summary>
-	public string GetAttributeLabel(FDMXAttributeName AttributeName) { return default; }
+	public FName GetAttributeLabel(FDMXAttributeName AttributeName) { return default; }
 	///<summary>OnProtocolReceived_DEPRECATED</summary>
 	public FProtocolReceivedDelegate OnProtocolReceived_DEPRECATED;
 	///<summary>Cell coordinate X/Y</summary>

@@ -4,11 +4,11 @@ using CSharpToCpp.Utilities;
 public partial class UTestBTTask_SetFlag : UBTTaskNode {
 	public static UClass StaticClass() {return default;}
 	///<summary>KeyName</summary>
-	public string KeyName;
+	public FName KeyName;
 	///<summary>bValue</summary>
 	public bool bValue;
 	///<summary>OnAbortKeyName</summary>
-	public string OnAbortKeyName;
+	public FName OnAbortKeyName;
 	///<summary>bOnAbortValue</summary>
 	public bool bOnAbortValue;
 	///<summary>TaskResult</summary>

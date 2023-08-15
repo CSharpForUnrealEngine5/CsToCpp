@@ -4,5 +4,5 @@ using CSharpToCpp.Utilities;
 public partial class UShotgridSettings : UObject {
 	public static UClass StaticClass() {return default;}
 	///<summary>The metadata tags to be transferred to the Asset Registry.</summary>
-	public TSet<string> MetaDataTagsForAssetRegistry;
+	public TSet<FName> MetaDataTagsForAssetRegistry;
 }

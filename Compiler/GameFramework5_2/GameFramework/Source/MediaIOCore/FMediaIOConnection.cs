@@ -4,7 +4,7 @@ using CSharpToCpp.Utilities;
 [CppInclude("MediaIOCoreDefinitions.h")]
 public partial struct FMediaIOConnection {
 	public FMediaIODevice Device;
-	public string Protocol;
+	public FName Protocol;
 	public EMediaIOTransportType TransportType;
 	public EMediaIOQuadLinkTransportType QuadTransportType;
 	public int PortIdentifier;

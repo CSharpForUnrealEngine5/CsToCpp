@@ -9,5 +9,5 @@ public partial class UNiagaraDataInterfaceSimCacheReader : UNiagaraDataInterface
 	///<summary>Optional source SimCache to use, if the user parameter binding is valid this will be ignored.</summary>
 	public UNiagaraSimCache SimCache;
 	///<summary>Which Emitter we should read from within the SimCache.</summary>
-	public string EmitterBinding;
+	public FName EmitterBinding;
 }

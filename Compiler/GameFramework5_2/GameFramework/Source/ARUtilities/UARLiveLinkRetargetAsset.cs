@@ -7,7 +7,7 @@ public partial class UARLiveLinkRetargetAsset : ULiveLinkRetargetAsset {
 	///<summary>SourceType</summary>
 	public EARLiveLinkSourceType SourceType;
 	///<summary>Mapping from AR platform bone name to UE4 skeleton bone name</summary>
-	public TMap<string,string> BoneMap;
+	public TMap<FName,FName> BoneMap;
 	///<summary>Configuration when using ARKit pose tracking</summary>
 	public FARKitPoseTrackingConfig ARKitPoseTrackingConfig;
 }

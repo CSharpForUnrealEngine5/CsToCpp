@@ -3,7 +3,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Imposes a condition that a CVar must contain a set value or range of values for a platform set to be enabled.</summary>
 [CppInclude("NiagaraPlatformSet.h")]
 public partial struct FNiagaraPlatformSetCVarCondition {
-	public string CVarName;
+	public FName CVarName;
 	public ENiagaraCVarConditionResponse PassResponse;
 	public ENiagaraCVarConditionResponse FailResponse;
 	public bool Value;

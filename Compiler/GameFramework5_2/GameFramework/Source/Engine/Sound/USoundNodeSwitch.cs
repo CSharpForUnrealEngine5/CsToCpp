@@ -5,5 +5,5 @@ using CSharpToCpp.Utilities;
 public partial class USoundNodeSwitch : USoundNode {
 	public static UClass StaticClass() {return default;}
 	///<summary>The name of the integer parameter to use to determine which branch we should take</summary>
-	public string IntParameterName;
+	public FName IntParameterName;
 }

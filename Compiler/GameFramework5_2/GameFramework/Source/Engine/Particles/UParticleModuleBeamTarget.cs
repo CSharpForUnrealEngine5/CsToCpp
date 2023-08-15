@@ -6,7 +6,7 @@ public partial class UParticleModuleBeamTarget : UParticleModuleBeamBase {
 	///<summary>The method flag.</summary>
 	public Beam2SourceTargetMethod TargetMethod;
 	///<summary>The target point sources of each beam, when using the end point method.</summary>
-	public string TargetName;
+	public FName TargetName;
 	///<summary>Default target-point information to use if the beam method is endpoint.</summary>
 	public FRawDistributionVector Target;
 	///<summary>Whether to treat the as an absolute position in world space.</summary>

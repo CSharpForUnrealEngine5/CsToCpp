@@ -64,7 +64,7 @@ public partial class UWaterBodyComponent : UPrimitiveComponent {
 	///<summary>WaterHeightmapSettings</summary>
 	public FWaterBodyHeightmapSettings WaterHeightmapSettings;
 	///<summary>LayerWeightmapSettings</summary>
-	public TMap<string,FWaterBodyWeightmapSettings> LayerWeightmapSettings;
+	public TMap<FName,FWaterBodyWeightmapSettings> LayerWeightmapSettings;
 	///<summary>ShapeDilation</summary>
 	public float ShapeDilation;
 	///<summary>The distance above the surface of the water where collision checks should still occur. Useful if the post process effect is not activating under really high waves.</summary>
@@ -112,7 +112,7 @@ public partial class UWaterBodyComponent : UPrimitiveComponent {
 	///<summary>bFillCollisionUnderWaterBodiesForNavmesh_DEPRECATED</summary>
 	public bool bFillCollisionUnderWaterBodiesForNavmesh_DEPRECATED;
 	///<summary>CollisionProfileName_DEPRECATED</summary>
-	public string CollisionProfileName_DEPRECATED;
+	public FName CollisionProfileName_DEPRECATED;
 	///<summary>bGenerateCollisions_DEPRECATED</summary>
 	public bool bGenerateCollisions_DEPRECATED;
 	///<summary>bCanAffectNavigation_DEPRECATED</summary>

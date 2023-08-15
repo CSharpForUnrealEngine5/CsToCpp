@@ -14,7 +14,7 @@ public partial class UDataprepOperationsLibrary : UBlueprintFunctionLibrary {
 	///<summary>Replaces designated materials in all or specific content folders with requested ones</summary>
 	public static void SubstituteMaterialsByTable(TArray<UObject> SelectedObjects,UDataTable DataTable) {}
 	///<summary>Remove inputs content</summary>
-	public static void SetLODGroup(TArray<UObject> SelectedObjects,string LODGroupName,TArray<UObject> ModifiedObjects) {}
+	public static void SetLODGroup(TArray<UObject> SelectedObjects,FName LODGroupName,TArray<UObject> ModifiedObjects) {}
 	///<summary>Set the material to all elements of a set of Static Meshes or Static Mesh Actors</summary>
 	public static void SetMaterial(TArray<UObject> SelectedObjects,UMaterialInterface MaterialSubstitute) {}
 	///<summary>Set mobility on a set of static mesh actors</summary>
@@ -26,9 +26,9 @@ public partial class UDataprepOperationsLibrary : UBlueprintFunctionLibrary {
 	///<summary>Replaces designated meshes in all or specific content folders with requested ones</summary>
 	public static void SubstituteMeshesByTable(TArray<UObject> SelectedObjects,UDataTable DataTable) {}
 	///<summary>Add tags to a set of actors</summary>
-	public static void AddTags(TArray<UObject> SelectedObjects,TArray<string> InTags) {}
+	public static void AddTags(TArray<UObject> SelectedObjects,TArray<FName> InTags) {}
 	///<summary>Adds metadata to selected objects that implement the UInterface_AssetUserData interface.</summary>
-	public static void AddMetadata(TArray<UObject> SelectedObjects,TMap<string,string> InMetadata) {}
+	public static void AddMetadata(TArray<UObject> SelectedObjects,TMap<FName,string> InMetadata) {}
 	///<summary>Replace all references to the assets in the array, except the first, with the first asset of the array.</summary>
 	public static void ConsolidateObjects(TArray<UObject> SelectedObjects) {}
 	///<summary>Alters transform of selected objects by appling randomly generated offset to one of the transform components (rotation, scale or translation)</summary>
@@ -40,7 +40,7 @@ public partial class UDataprepOperationsLibrary : UBlueprintFunctionLibrary {
 	///<summary>Add/Edit UDataprepConsumerUserData with the requested name for the sub-folder</summary>
 	public static void SetSubOuputFolder(TArray<UObject> SelectedObjects,string SubFolderName) {}
 	///<summary>Add all Actors to a given layer.</summary>
-	public static void AddToLayer(TArray<UObject> SelectedObjects,string LayerName) {}
+	public static void AddToLayer(TArray<UObject> SelectedObjects,FName LayerName) {}
 	///<summary>Set collision complexity for selected meshes</summary>
 	public static void SetCollisionComplexity(TArray<UObject> InSelectedObjects,ECollisionTraceFlag InCollisionTraceFlag,TArray<UObject> InModifiedObjects) {}
 	///<summary>Resize textures to max width/height and optionally ensure power of two size.</summary>

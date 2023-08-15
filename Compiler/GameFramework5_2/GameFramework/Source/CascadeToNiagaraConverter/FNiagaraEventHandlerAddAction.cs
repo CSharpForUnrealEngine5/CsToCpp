@@ -8,7 +8,7 @@ public partial struct FNiagaraEventHandlerAddAction {
 	public int SpawnNumber;
 	public int MaxEventsPerFrame;
 	public FGuid SourceEmitterID;
-	public string SourceEventName;
+	public FName SourceEventName;
 	public bool bRandomSpawnNumber;
 	public int MinSpawnNumber;
 }

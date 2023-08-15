@@ -5,5 +5,5 @@ using CSharpToCpp.Utilities;
 public partial class AWorldPartitionReplay : AActor {
 	public static UClass StaticClass() {return default;}
 	///<summary>StreamingSourceNames</summary>
-	public TArray<string> StreamingSourceNames;
+	public TArray<FName> StreamingSourceNames;
 }

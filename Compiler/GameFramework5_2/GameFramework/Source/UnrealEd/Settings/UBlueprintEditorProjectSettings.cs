@@ -14,9 +14,9 @@ public partial class UBlueprintEditorProjectSettings : UDeveloperSettings {
 	///<summary>A list of namespace identifiers that all Blueprint assets in the project should import by default. Requires Blueprint namespace features to be enabled in editor preferences. Editing this list will also cause any visible Blueprint editor windows to be closed.</summary>
 	public TArray<string> NamespacesToAlwaysInclude;
 	///<summary>List of compiler messages that have been suppressed outside of full, interactive editor sessions for</summary>
-	public TArray<string> DisabledCompilerMessagesExceptEditor;
+	public TArray<FName> DisabledCompilerMessagesExceptEditor;
 	///<summary>List of compiler messages that have been suppressed completely - message suppression is only</summary>
-	public TArray<string> DisabledCompilerMessages;
+	public TArray<FName> DisabledCompilerMessages;
 	///<summary>List of deprecated UProperties/UFunctions to supress warning messages for - useful for source changes</summary>
 	public TArray<string> SuppressedDeprecationMessages;
 	///<summary>Any blueprint deriving from one of these base classes will be allowed to recompile during Play-in-Editor</summary>

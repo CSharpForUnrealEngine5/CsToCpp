@@ -3,5 +3,5 @@ using CSharpToCpp.Utilities;
 ///<summary>Structure used as an identifier for a particular buffer within a capture.</summary>
 [CppInclude("Protocols/UserDefinedCaptureProtocol.h")]
 public partial struct FCapturedPixelsID {
-	public TMap<string,string> Identifiers;
+	public TMap<FName,FName> Identifiers;
 }

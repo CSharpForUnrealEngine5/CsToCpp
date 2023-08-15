@@ -9,7 +9,7 @@ public partial class UContentBrowserItemLibrary : UBlueprintFunctionLibrary {
 	///<summary>IsFile</summary>
 	public static bool IsFile(FContentBrowserItem Item) { return default; }
 	///<summary>GetVirtualPath</summary>
-	public static string GetVirtualPath(FContentBrowserItem Item) { return default; }
+	public static FName GetVirtualPath(FContentBrowserItem Item) { return default; }
 	///<summary>GetDisplayName</summary>
 	public static FText GetDisplayName(FContentBrowserItem Item) { return default; }
 }

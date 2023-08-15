@@ -4,7 +4,7 @@ using CSharpToCpp.Utilities;
 public partial class UParticleModuleAttractorParticle : UParticleModuleAttractorBase {
 	public static UClass StaticClass() {return default;}
 	///<summary>The source emitter for attractors</summary>
-	public string EmitterName;
+	public FName EmitterName;
 	///<summary>The radial range of the attraction around the source particle.</summary>
 	public FRawDistributionFloat Range;
 	///<summary>The strength curve is a function of distance or of time.</summary>

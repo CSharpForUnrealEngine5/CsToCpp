@@ -96,9 +96,9 @@ public partial class UDataLayerEditorSubsystem : UEditorSubsystem {
 	///<summary>GetDataLayer</summary>
 	public UDataLayerInstance GetDataLayer(FActorDataLayer ActorDataLayer) { return default; }
 	///<summary>GetDataLayerFromLabel</summary>
-	public UDataLayerInstance GetDataLayerFromLabel(string DataLayerLabel) { return default; }
+	public UDataLayerInstance GetDataLayerFromLabel(FName DataLayerLabel) { return default; }
 	///<summary>RenameDataLayer</summary>
-	public bool RenameDataLayer(UDataLayerInstance DataLayer,string NewDataLayerLabel) { return default; }
+	public bool RenameDataLayer(UDataLayerInstance DataLayer,FName NewDataLayerLabel) { return default; }
 	///<summary>CreateDataLayer</summary>
 	public UDataLayerInstance CreateDataLayer(UDataLayerInstance ParentDataLayer/*=nullptr*/) { return default; }
 }

@@ -13,13 +13,13 @@ public partial class UCommonLazyImage : UImage {
 	///<summary>IsLoading</summary>
 	public bool IsLoading() { return default; }
 	///<summary>Establishes the name of the texture parameter on the currently applied brush material to which textures should be applied.</summary>
-	public void SetMaterialTextureParamName(string TextureParamName) {}
+	public void SetMaterialTextureParamName(FName TextureParamName) {}
 	///<summary>bShowLoading</summary>
 	public bool bShowLoading;
 	///<summary>LoadingBackgroundBrush</summary>
 	public FSlateBrush LoadingBackgroundBrush;
 	///<summary>If this image uses a material that a texture should be applied to, this is the name of the material param to use.</summary>
-	public string MaterialTextureParamName;
+	public FName MaterialTextureParamName;
 	///<summary>BP_OnLoadingStateChanged</summary>
 	public FOnLoadGuardStateChangedDynamic BP_OnLoadingStateChanged;
 }

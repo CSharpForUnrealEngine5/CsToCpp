@@ -4,6 +4,6 @@ using CSharpToCpp.Utilities;
 [CppInclude("WorldConditionTypes.h")]
 public partial struct FWorldConditionContextDataDesc {
 	public UStruct Struct;
-	public string Name;
+	public FName Name;
 	public EWorldConditionContextDataType Type;
 }

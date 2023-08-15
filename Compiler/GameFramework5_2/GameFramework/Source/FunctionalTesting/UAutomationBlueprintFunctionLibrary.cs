@@ -12,19 +12,19 @@ public partial class UAutomationBlueprintFunctionLibrary : UBlueprintFunctionLib
 	///<summary>TakeAutomationScreenshotOfUI</summary>
 	public static void TakeAutomationScreenshotOfUI(UObject WorldContextObject,FLatentActionInfo LatentInfo,string Name,FAutomationScreenshotOptions Options) {}
 	///<summary>EnableStatGroup</summary>
-	public static void EnableStatGroup(UObject WorldContextObject,string GroupName) {}
+	public static void EnableStatGroup(UObject WorldContextObject,FName GroupName) {}
 	///<summary>DisableStatGroup</summary>
-	public static void DisableStatGroup(UObject WorldContextObject,string GroupName) {}
+	public static void DisableStatGroup(UObject WorldContextObject,FName GroupName) {}
 	///<summary>GetStatIncAverage</summary>
-	public static float GetStatIncAverage(string StatName) { return default; }
+	public static float GetStatIncAverage(FName StatName) { return default; }
 	///<summary>GetStatIncMax</summary>
-	public static float GetStatIncMax(string StatName) { return default; }
+	public static float GetStatIncMax(FName StatName) { return default; }
 	///<summary>GetStatExcAverage</summary>
-	public static float GetStatExcAverage(string StatName) { return default; }
+	public static float GetStatExcAverage(FName StatName) { return default; }
 	///<summary>GetStatExcMax</summary>
-	public static float GetStatExcMax(string StatName) { return default; }
+	public static float GetStatExcMax(FName StatName) { return default; }
 	///<summary>GetStatCallCount</summary>
-	public static float GetStatCallCount(string StatName) { return default; }
+	public static float GetStatCallCount(FName StatName) { return default; }
 	///<summary>Lets you know if any automated tests are running, or are about to run and the automation system is spinning up tests.</summary>
 	public static bool AreAutomatedTestsRunning() { return default; }
 	///<summary>AutomationWaitForLoading</summary>
@@ -52,5 +52,5 @@ public partial class UAutomationBlueprintFunctionLibrary : UBlueprintFunctionLib
 	///<summary>Sets all viewports of the first found level editor to have the given ViewMode (Lit/Unlit/etc.) *</summary>
 	public static void SetEditorViewportViewMode(EViewModeIndex Index) {}
 	///<summary>Sets all viewports of the first found level editor to have the VisualizeBuffer ViewMode and also display a given buffer (BaseColor/Metallic/Roughness/etc.) *</summary>
-	public static void SetEditorViewportVisualizeBuffer(string BufferName) {}
+	public static void SetEditorViewportVisualizeBuffer(FName BufferName) {}
 }

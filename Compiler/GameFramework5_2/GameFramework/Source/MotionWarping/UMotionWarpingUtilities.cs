@@ -8,5 +8,5 @@ public partial class UMotionWarpingUtilities : UBlueprintFunctionLibrary {
 	///<summary>@return All the MotionWarping windows within the supplied animation</summary>
 	public static void GetMotionWarpingWindowsFromAnimation(UAnimSequenceBase Animation,TArray<FMotionWarpingWindowData> OutWindows) {}
 	///<summary>@return All the MotionWarping windows within the supplied animation for a given Warp Target</summary>
-	public static void GetMotionWarpingWindowsForWarpTargetFromAnimation(UAnimSequenceBase Animation,string WarpTargetName,TArray<FMotionWarpingWindowData> OutWindows) {}
+	public static void GetMotionWarpingWindowsForWarpTargetFromAnimation(UAnimSequenceBase Animation,FName WarpTargetName,TArray<FMotionWarpingWindowData> OutWindows) {}
 }

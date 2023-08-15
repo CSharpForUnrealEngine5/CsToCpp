@@ -2,7 +2,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("NiagaraSystem.h")]
 public partial struct FNiagaraEmitterCompiledData {
-	public TArray<string> SpawnAttributes;
+	public TArray<FName> SpawnAttributes;
 	public FNiagaraVariable EmitterSpawnIntervalVar;
 	public FNiagaraVariable EmitterInterpSpawnStartDTVar;
 	public FNiagaraVariable EmitterSpawnGroupVar;

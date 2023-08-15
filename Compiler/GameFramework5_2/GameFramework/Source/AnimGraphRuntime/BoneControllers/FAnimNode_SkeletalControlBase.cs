@@ -10,7 +10,7 @@ public partial struct FAnimNode_SkeletalControlBase {
 	public float Alpha;
 	public FInputScaleBias AlphaScaleBias;
 	public FInputAlphaBoolBlend AlphaBoolBlend;
-	public string AlphaCurveName;
+	public FName AlphaCurveName;
 	public FInputScaleBiasClamp AlphaScaleBiasClamp;
 	public FText ValidationVisualWarningMessage;
 }

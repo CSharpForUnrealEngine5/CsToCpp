@@ -5,5 +5,5 @@ using CSharpToCpp.Utilities;
 public partial struct FActorForWorldTransforms {
 	public TWeakObjectPtr<AActor> Actor;
 	public TWeakObjectPtr<USceneComponent> Component;
-	public string SocketName;
+	public FName SocketName;
 }

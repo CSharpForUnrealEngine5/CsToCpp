@@ -19,7 +19,7 @@ public partial class UDataTable : UObject {
 	///<summary>The filename imported to create this object. Relative to this object&#39;s package, BaseDir() or absolute</summary>
 	public string ImportPath_DEPRECATED;
 	///<summary>The name of the RowStruct we were using when we were last saved</summary>
-	public string RowStructName_DEPRECATED;
+	public FName RowStructName_DEPRECATED;
 	///<summary>The name of the RowStruct we were using when we were last saved</summary>
 	public FTopLevelAssetPath RowStructPathName;
 	///<summary>When RowStruct is being modified, row data is stored serialized with tags</summary>

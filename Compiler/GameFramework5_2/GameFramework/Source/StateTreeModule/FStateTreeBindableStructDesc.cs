@@ -4,7 +4,7 @@ using CSharpToCpp.Utilities;
 [CppInclude("StateTreePropertyBindings.h")]
 public partial struct FStateTreeBindableStructDesc {
 	public UStruct Struct;
-	public string Name;
+	public FName Name;
 	public EStateTreeBindableStructSource DataSource;
 	public FGuid ID;
 }

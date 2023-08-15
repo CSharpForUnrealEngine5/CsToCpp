@@ -4,7 +4,7 @@ using CSharpToCpp.Utilities;
 [CppInclude("StateTreeTypes.h")]
 public partial struct FStateTreeExternalDataDesc {
 	public UStruct Struct;
-	public string Name;
+	public FName Name;
 	public FStateTreeExternalDataHandle Handle;
 	public EStateTreeExternalDataRequirement Requirement;
 	public FGuid ID;

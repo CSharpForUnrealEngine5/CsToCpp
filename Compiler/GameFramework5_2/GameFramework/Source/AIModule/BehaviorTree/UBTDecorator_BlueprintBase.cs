@@ -9,7 +9,7 @@ public partial class UBTDecorator_BlueprintBase : UBTDecorator {
 	///<summary>Cached AIController owner of BehaviorTreeComponent.</summary>
 	public AActor ActorOwner;
 	///<summary>blackboard key names that should be observed</summary>
-	public TArray<string> ObservedKeyNames;
+	public TArray<FName> ObservedKeyNames;
 	///<summary>CustomDescription</summary>
 	public string CustomDescription;
 	///<summary>show detailed information about properties</summary>

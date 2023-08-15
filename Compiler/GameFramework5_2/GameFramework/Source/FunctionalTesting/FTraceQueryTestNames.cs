@@ -2,7 +2,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("TraceQueryTestResults.h")]
 public partial struct FTraceQueryTestNames {
-	public string ComponentName;
-	public string PhysicalMaterialName;
-	public string ActorName;
+	public FName ComponentName;
+	public FName PhysicalMaterialName;
+	public FName ActorName;
 }

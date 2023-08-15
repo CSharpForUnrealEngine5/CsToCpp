@@ -4,11 +4,11 @@ using CSharpToCpp.Utilities;
 [CppInclude("PhysicsControlActor.h")]
 public partial struct FInitialPhysicsControl {
 	public AActor ParentActor;
-	public string ParentMeshComponentName;
-	public string ParentBoneName;
+	public FName ParentMeshComponentName;
+	public FName ParentBoneName;
 	public AActor ChildActor;
-	public string ChildMeshComponentName;
-	public string ChildBoneName;
+	public FName ChildMeshComponentName;
+	public FName ChildBoneName;
 	public FPhysicsControlData ControlData;
 	public FPhysicsControlMultiplier ControlMultiplier;
 	public FPhysicsControlTarget ControlTarget;

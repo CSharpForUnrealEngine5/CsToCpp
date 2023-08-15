@@ -5,7 +5,7 @@ using CSharpToCpp.Utilities;
 public partial struct FMemberReference {
 	public UObject MemberParent;
 	public string MemberScope;
-	public string MemberName;
+	public FName MemberName;
 	public FGuid MemberGuid;
 	public bool bSelfContext;
 	public bool bWasDeprecated;

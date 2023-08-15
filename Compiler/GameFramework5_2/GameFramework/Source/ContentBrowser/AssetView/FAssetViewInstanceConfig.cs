@@ -4,5 +4,5 @@ using CSharpToCpp.Utilities;
 public partial struct FAssetViewInstanceConfig {
 	public byte ThumbnailSize;
 	public byte ViewType;
-	public TArray<string> HiddenColumns;
+	public TArray<FName> HiddenColumns;
 }

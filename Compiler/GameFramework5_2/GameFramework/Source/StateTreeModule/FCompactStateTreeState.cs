@@ -3,7 +3,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Runtime representation of a StateTree state.</summary>
 [CppInclude("StateTreeTypes.h")]
 public partial struct FCompactStateTreeState {
-	public string Name;
+	public FName Name;
 	public FStateTreeStateHandle LinkedState;
 	public FStateTreeStateHandle Parent;
 	public ushort ChildrenBegin;

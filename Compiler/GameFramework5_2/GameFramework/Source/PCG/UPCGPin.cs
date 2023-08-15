@@ -6,7 +6,7 @@ public partial class UPCGPin : UObject {
 	///<summary>~End UObject interface</summary>
 	public UPCGNode Node;
 	///<summary>Label_DEPRECATED</summary>
-	public string Label_DEPRECATED;
+	public FName Label_DEPRECATED;
 	///<summary>Edges</summary>
 	public TArray<UPCGEdge> Edges;
 	///<summary>Properties</summary>

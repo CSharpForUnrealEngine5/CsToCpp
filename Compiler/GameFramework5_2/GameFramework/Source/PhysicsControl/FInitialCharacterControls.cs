@@ -4,7 +4,7 @@ using CSharpToCpp.Utilities;
 [CppInclude("PhysicsControlActor.h")]
 public partial struct FInitialCharacterControls {
 	public AActor CharacterActor;
-	public string SkeletalMeshComponentName;
+	public FName SkeletalMeshComponentName;
 	public TArray<FPhysicsControlLimbSetupData> LimbSetupData;
 	public FPhysicsControlData WorldSpaceControlData;
 	public FPhysicsControlSettings WorldSpaceControlSettings;

@@ -7,7 +7,7 @@ public partial class UAbilityTask_ApplyRootMotionConstantForce : UAbilityTask_Ap
 	///<summary>OnFinish</summary>
 	public FApplyRootMotionConstantForceDelegate OnFinish;
 	///<summary>Apply force to character&#39;s movement</summary>
-	public static UAbilityTask_ApplyRootMotionConstantForce ApplyRootMotionConstantForce(UGameplayAbility OwningAbility,string TaskInstanceName,FVector WorldDirection,float Strength,float Duration,bool bIsAdditive,UCurveFloat StrengthOverTime,ERootMotionFinishVelocityMode VelocityOnFinishMode,FVector SetVelocityOnFinish,float ClampVelocityOnFinish,bool bEnableGravity) { return default; }
+	public static UAbilityTask_ApplyRootMotionConstantForce ApplyRootMotionConstantForce(UGameplayAbility OwningAbility,FName TaskInstanceName,FVector WorldDirection,float Strength,float Duration,bool bIsAdditive,UCurveFloat StrengthOverTime,ERootMotionFinishVelocityMode VelocityOnFinishMode,FVector SetVelocityOnFinish,float ClampVelocityOnFinish,bool bEnableGravity) { return default; }
 	///<summary>WorldDirection</summary>
 	public FVector WorldDirection;
 	///<summary>Strength</summary>

@@ -18,11 +18,11 @@ public partial class UKismetInternationalizationLibrary : UBlueprintFunctionLibr
 	///<summary>Set the current language (for localization) and locale (for internationalization).</summary>
 	public static bool SetCurrentLanguageAndLocale(string Culture,bool SaveToConfig/*=false*/) { return default; }
 	///<summary>Set the given asset group category culture from an IETF language tag (eg, &quot;zh-Hans-CN&quot;).</summary>
-	public static bool SetCurrentAssetGroupCulture(string AssetGroup,string Culture,bool SaveToConfig/*=false*/) { return default; }
+	public static bool SetCurrentAssetGroupCulture(FName AssetGroup,string Culture,bool SaveToConfig/*=false*/) { return default; }
 	///<summary>Get the given asset group category culture.</summary>
-	public static string GetCurrentAssetGroupCulture(string AssetGroup) { return default; }
+	public static string GetCurrentAssetGroupCulture(FName AssetGroup) { return default; }
 	///<summary>Clear the given asset group category culture.</summary>
-	public static void ClearCurrentAssetGroupCulture(string AssetGroup,bool SaveToConfig/*=false*/) {}
+	public static void ClearCurrentAssetGroupCulture(FName AssetGroup,bool SaveToConfig/*=false*/) {}
 	///<summary>Get the native culture for the given localization category.</summary>
 	public static string GetNativeCulture(ELocalizedTextSourceCategory TextCategory) { return default; }
 	///<summary>Get the list of cultures that have localization data available for them.</summary>

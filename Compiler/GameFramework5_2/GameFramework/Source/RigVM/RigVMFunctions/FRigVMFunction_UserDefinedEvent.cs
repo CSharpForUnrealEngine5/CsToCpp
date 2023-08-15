@@ -4,5 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("RigVMFunctions/Execution/RigVMFunction_UserDefinedEvent.h")]
 public partial struct FRigVMFunction_UserDefinedEvent {
 	public FRigVMExecuteContext ExecuteContext;
-	public string EventName;
+	public FName EventName;
 }

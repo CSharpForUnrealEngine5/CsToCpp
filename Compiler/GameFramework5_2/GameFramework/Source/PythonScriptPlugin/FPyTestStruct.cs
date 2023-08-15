@@ -8,7 +8,7 @@ public partial struct FPyTestStruct {
 	public float Float;
 	public EPyTestEnum Enum;
 	public string String;
-	public string Name;
+	public FName Name;
 	public FText Text;
 	public object FieldPath;
 	public object StructFieldPath;

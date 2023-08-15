@@ -6,5 +6,5 @@ public partial class UPCGMetadataBreakVectorSettings : UPCGMetadataSettingsBase 
 	///<summary>InputSource</summary>
 	public FPCGAttributePropertySelector InputSource;
 	///<summary>InputAttributeName_DEPRECATED</summary>
-	public string InputAttributeName_DEPRECATED;
+	public FName InputAttributeName_DEPRECATED;
 }

@@ -6,5 +6,5 @@ public partial class ADatasmithSceneActor : AActor {
 	///<summary>Scene</summary>
 	public UDatasmithScene Scene;
 	///<summary>Map of all the actors related to this Datasmith Scene</summary>
-	public TMap<string,TSoftObjectPtr<AActor>> RelatedActors;
+	public TMap<FName,TSoftObjectPtr<AActor>> RelatedActors;
 }

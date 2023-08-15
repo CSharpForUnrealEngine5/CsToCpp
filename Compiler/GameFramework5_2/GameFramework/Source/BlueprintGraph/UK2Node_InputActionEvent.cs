@@ -4,7 +4,7 @@ using CSharpToCpp.Utilities;
 public partial class UK2Node_InputActionEvent : UK2Node_Event {
 	public static UClass StaticClass() {return default;}
 	///<summary>InputActionName</summary>
-	public string InputActionName;
+	public FName InputActionName;
 	///<summary>InputKeyEvent</summary>
 	public EInputEvent InputKeyEvent;
 	///<summary>bConsumeInput</summary>

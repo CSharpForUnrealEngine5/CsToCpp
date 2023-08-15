@@ -6,5 +6,5 @@ public partial struct FAnimationEventBinding {
 	public UWidgetAnimation Animation;
 	public FWidgetAnimationDynamicEvent Delegate;
 	public EWidgetAnimationEvent AnimationEvent;
-	public string UserTag;
+	public FName UserTag;
 }

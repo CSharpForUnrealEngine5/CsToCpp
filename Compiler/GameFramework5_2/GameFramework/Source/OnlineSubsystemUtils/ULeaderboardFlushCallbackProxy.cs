@@ -8,5 +8,5 @@ public partial class ULeaderboardFlushCallbackProxy : UObject {
 	///<summary>Called when there is an unsuccessful leaderboard flush</summary>
 	public FOnLeaderboardFlushed OnFailure;
 	///<summary>Called to perform the query internally</summary>
-	public static ULeaderboardFlushCallbackProxy CreateProxyObjectForFlush(APlayerController PlayerController,string SessionName) { return default; }
+	public static ULeaderboardFlushCallbackProxy CreateProxyObjectForFlush(APlayerController PlayerController,FName SessionName) { return default; }
 }

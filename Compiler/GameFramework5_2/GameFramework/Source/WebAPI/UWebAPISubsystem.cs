@@ -7,5 +7,5 @@ public partial class UWebAPISubsystem : UEngineSubsystem {
 	///<summary>bUsePooling</summary>
 	public bool bUsePooling;
 	///<summary>OperationPool</summary>
-	public TMap<string,FWebAPIPooledOperation> OperationPool;
+	public TMap<FName,FWebAPIPooledOperation> OperationPool;
 }

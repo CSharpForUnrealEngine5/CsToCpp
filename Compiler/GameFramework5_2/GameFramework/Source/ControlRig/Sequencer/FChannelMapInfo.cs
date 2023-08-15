@@ -6,7 +6,7 @@ public partial struct FChannelMapInfo {
 	public int TotalChannelIndex;
 	public int ChannelIndex;
 	public int ParentControlIndex;
-	public string ChannelTypeName;
+	public FName ChannelTypeName;
 	public bool bDoesHaveSpace;
 	public int SpaceChannelIndex;
 	public int MaskIndex;

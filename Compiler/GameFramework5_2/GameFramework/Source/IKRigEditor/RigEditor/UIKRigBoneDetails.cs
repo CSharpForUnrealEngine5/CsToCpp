@@ -4,7 +4,7 @@ using CSharpToCpp.Utilities;
 public partial class UIKRigBoneDetails : UObject {
 	public static UClass StaticClass() {return default;}
 	///<summary>SelectedBone</summary>
-	public string SelectedBone;
+	public FName SelectedBone;
 	///<summary>CurrentTransform</summary>
 	public FTransform CurrentTransform;
 	///<summary>ReferenceTransform</summary>

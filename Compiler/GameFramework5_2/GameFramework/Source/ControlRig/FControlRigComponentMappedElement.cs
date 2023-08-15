@@ -4,9 +4,9 @@ using CSharpToCpp.Utilities;
 public partial struct FControlRigComponentMappedElement {
 	public FComponentReference ComponentReference;
 	public int TransformIndex;
-	public string TransformName;
+	public FName TransformName;
 	public ERigElementType ElementType;
-	public string ElementName;
+	public FName ElementName;
 	public EControlRigComponentMapDirection Direction;
 	public FTransform Offset;
 	public float Weight;

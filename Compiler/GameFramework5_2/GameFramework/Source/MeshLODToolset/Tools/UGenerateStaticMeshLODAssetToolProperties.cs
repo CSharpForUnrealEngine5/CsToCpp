@@ -19,7 +19,7 @@ public partial class UGenerateStaticMeshLODAssetToolProperties : UInteractiveToo
 	///<summary>SimpleCollision</summary>
 	public FGenerateStaticMeshLODProcess_CollisionSettings SimpleCollision;
 	///<summary>Group layer to use for partitioning the mesh for simple collision generation</summary>
-	public string CollisionGroupLayerName;
+	public FName CollisionGroupLayerName;
 	///<summary>this function is called provide set of available group layers</summary>
 	public TArray<string> GetGroupLayersFunc() { return default; }
 	///<summary>internal list used to implement above</summary>

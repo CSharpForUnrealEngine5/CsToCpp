@@ -6,5 +6,5 @@ public partial class UMassCompositeProcessor : UMassProcessor {
 	///<summary>ChildPipeline</summary>
 	public FMassRuntimePipeline ChildPipeline;
 	///<summary>Group name that will be used when resolving processor dependencies and grouping</summary>
-	public string GroupName;
+	public FName GroupName;
 }

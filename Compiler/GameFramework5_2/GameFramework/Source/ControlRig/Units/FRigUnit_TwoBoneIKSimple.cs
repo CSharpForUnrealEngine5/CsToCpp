@@ -3,16 +3,16 @@ using CSharpToCpp.Utilities;
 ///<summary>Solves the two bone IK given two bones.</summary>
 [CppInclude("Units/Highlevel/Hierarchy/RigUnit_TwoBoneIKSimple.h")]
 public partial struct FRigUnit_TwoBoneIKSimple {
-	public string BoneA;
-	public string BoneB;
-	public string EffectorBone;
+	public FName BoneA;
+	public FName BoneB;
+	public FName EffectorBone;
 	public FTransform Effector;
 	public FVector PrimaryAxis;
 	public FVector SecondaryAxis;
 	public float SecondaryAxisWeight;
 	public FVector PoleVector;
 	public EControlRigVectorKind PoleVectorKind;
-	public string PoleVectorSpace;
+	public FName PoleVectorSpace;
 	public bool bEnableStretch;
 	public float StretchStartRatio;
 	public float StretchMaximumRatio;

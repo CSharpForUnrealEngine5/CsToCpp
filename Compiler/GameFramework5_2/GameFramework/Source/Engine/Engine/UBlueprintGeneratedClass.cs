@@ -32,13 +32,13 @@ public partial class UBlueprintGeneratedClass : UClass {
 	///<summary>OverridenArchetypeForCDO</summary>
 	public UObject OverridenArchetypeForCDO;
 	///<summary>Property guid map</summary>
-	public TMap<string,FGuid> PropertyGuids;
+	public TMap<FName,FGuid> PropertyGuids;
 	///<summary>CalledFunctions</summary>
 	public TArray<UFunction> CalledFunctions;
 	///<summary>Property guid map (if any), for use only when this BP is cooked</summary>
-	public TMap<string,FGuid> CookedPropertyGuids;
+	public TMap<FName,FGuid> CookedPropertyGuids;
 	///<summary>Mapping of changed properties &amp; data to apply when instancing components in a cooked build (one entry per named AddComponent node template for fast lookup at runtime).</summary>
-	public TMap<string,FBlueprintCookedComponentInstancingData> CookedComponentInstancingData;
+	public TMap<FName,FBlueprintCookedComponentInstancingData> CookedComponentInstancingData;
 	///<summary>CachedCookedMetaDataPtr</summary>
 	public UClassCookedMetaData CachedCookedMetaDataPtr;
 }

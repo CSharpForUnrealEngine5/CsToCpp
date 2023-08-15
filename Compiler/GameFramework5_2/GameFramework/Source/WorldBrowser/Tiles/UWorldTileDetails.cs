@@ -7,9 +7,9 @@ public partial class UWorldTileDetails : UObject {
 	///<summary>Whether this tile properties can be edited via details panel</summary>
 	public bool bTileEditable;
 	///<summary>Tile long package name (readonly)</summary>
-	public string PackageName;
+	public FName PackageName;
 	///<summary>Parent tile long package name</summary>
-	public string ParentPackageName;
+	public FName ParentPackageName;
 	///<summary>Tile position in the world, relative to parent</summary>
 	public FIntVector Position;
 	///<summary>Tile absolute position in the world (readonly)</summary>

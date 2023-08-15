@@ -3,7 +3,7 @@ using CSharpToCpp.Utilities;
 ///<summary>Represents a runtime grid (editing)</summary>
 [CppInclude("WorldPartition/WorldPartitionRuntimeSpatialHash.h")]
 public partial struct FSpatialHashRuntimeGrid {
-	public string GridName;
+	public FName GridName;
 	public int CellSize;
 	public float LoadingRange;
 	public bool bBlockOnSlowStreaming;

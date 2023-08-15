@@ -4,9 +4,9 @@ using CSharpToCpp.Utilities;
 public partial class URetargetChainSettings : UObject {
 	public static UClass StaticClass() {return default;}
 	///<summary>The chain on the Source IK Rig asset to copy animation FROM.</summary>
-	public string SourceChain;
+	public FName SourceChain;
 	///<summary>The chain on the Target IK Rig asset to copy animation TO.</summary>
-	public string TargetChain;
+	public FName TargetChain;
 	///<summary>The settings used to control the motion on this target chain.</summary>
 	public FTargetChainSettings Settings;
 	///<summary>Deprecated properties from before FTargetChainSettings / profile refactor  (July 2022)</summary>
@@ -36,7 +36,7 @@ public partial class URetargetChainSettings : UObject {
 	///<summary>UseSpeedCurveToPlantIK_DEPRECATED</summary>
 	public bool UseSpeedCurveToPlantIK_DEPRECATED;
 	///<summary>SpeedCurveName_DEPRECATED</summary>
-	public string SpeedCurveName_DEPRECATED;
+	public FName SpeedCurveName_DEPRECATED;
 	///<summary>VelocityThreshold_DEPRECATED</summary>
 	public float VelocityThreshold_DEPRECATED;
 	///<summary>UnplantStiffness_DEPRECATED</summary>

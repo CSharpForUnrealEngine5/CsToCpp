@@ -34,7 +34,7 @@ public partial class UAnimToTextureDataAsset : UPrimaryDataAsset {
 	///<summary>Texture for storing vertex/bone weighting</summary>
 	public TSoftObjectPtr<UTexture2D> BoneWeightTexture;
 	///<summary>Bone used for Rigid Binding. The bone needs to be part of the RawBones.</summary>
-	public string AttachToSocket;
+	public FName AttachToSocket;
 	///<summary>SampleRate</summary>
 	public float SampleRate;
 	///<summary>AnimSequences</summary>

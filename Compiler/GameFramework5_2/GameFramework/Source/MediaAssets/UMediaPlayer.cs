@@ -19,7 +19,7 @@ public partial class UMediaPlayer : UObject {
 	///<summary>Get the type of the specified audio track format.</summary>
 	public string GetAudioTrackType(int TrackIndex,int FormatIndex) { return default; }
 	///<summary>Get the name of the current desired native player.</summary>
-	public string GetDesiredPlayerName() { return default; }
+	public FName GetDesiredPlayerName() { return default; }
 	///<summary>Get the media&#39;s duration.</summary>
 	public FTimespan GetDuration() { return default; }
 	///<summary>Get the current horizontal field of view (only for 360 videos).</summary>
@@ -31,7 +31,7 @@ public partial class UMediaPlayer : UObject {
 	///<summary>Get the number of formats of the specified track.</summary>
 	public int GetNumTrackFormats(EMediaPlayerTrack TrackType,int TrackIndex) { return default; }
 	///<summary>Get the name of the current native media player.</summary>
-	public string GetPlayerName() { return default; }
+	public FName GetPlayerName() { return default; }
 	///<summary>Get the current play list.</summary>
 	public UMediaPlaylist GetPlaylist() { return default; }
 	///<summary>Get the current play list index.</summary>
@@ -123,7 +123,7 @@ public partial class UMediaPlayer : UObject {
 	///<summary>Set the time on which to block.</summary>
 	public void SetBlockOnTime(FTimespan Time) {}
 	///<summary>Set the name of the desired native player.</summary>
-	public void SetDesiredPlayerName(string PlayerName) {}
+	public void SetDesiredPlayerName(FName PlayerName) {}
 	///<summary>Enables or disables playback looping.</summary>
 	public bool SetLooping(bool Looping) { return default; }
 	///<summary>Sets the media options used by the player.</summary>

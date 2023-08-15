@@ -22,9 +22,9 @@ public partial class UUsdStageImportOptions : UObject {
 	///<summary>Try enabling Nanite for static meshes that are generated with at least this many triangles</summary>
 	public int NaniteTriangleThreshold;
 	///<summary>Specifies which set of shaders to use when parsing USD materials, in addition to the universal render context.</summary>
-	public string RenderContextToImport;
+	public FName RenderContextToImport;
 	///<summary>Specifies which material purpose to use when parsing USD material bindings, in addition to the &quot;allPurpose&quot; fallback</summary>
-	public string MaterialPurpose;
+	public FName MaterialPurpose;
 	///<summary>Describes what to add to the root bone animation within generated AnimSequences, if anything</summary>
 	public EUsdRootMotionHandling RootMotionHandling;
 	///<summary>Whether to use the specified StageOptions instead of the stage&#39;s own settings</summary>

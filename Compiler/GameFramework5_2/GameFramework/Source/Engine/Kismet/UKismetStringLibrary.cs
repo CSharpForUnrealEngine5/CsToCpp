@@ -36,11 +36,11 @@ public partial class UKismetStringLibrary : UBlueprintFunctionLibrary {
 	///<summary>Converts a linear color value to a string, in the form &#39;(R=,G=,B=,A=)&#39;</summary>
 	public static string Conv_ColorToString(FLinearColor InColor) { return default; }
 	///<summary>Converts a name value to a string</summary>
-	public static string Conv_NameToString(string InName) { return default; }
+	public static string Conv_NameToString(FName InName) { return default; }
 	///<summary>Converts a name value to a string</summary>
 	public static string Conv_MatrixToString(FMatrix InMatrix) { return default; }
 	///<summary>Converts a string to a name value</summary>
-	public static string Conv_StringToName(string InString) { return default; }
+	public static FName Conv_StringToName(string InString) { return default; }
 	///<summary>Converts a string to a int value</summary>
 	public static int Conv_StringToInt(string InString) { return default; }
 	///<summary>Converts a string to a int value</summary>
@@ -76,7 +76,7 @@ public partial class UKismetStringLibrary : UBlueprintFunctionLibrary {
 	///<summary>Converts a color-&gt;string, creating a new string in the form AppendTo+Prefix+InColor+Suffix</summary>
 	public static string BuildString_Color(string AppendTo,string Prefix,FLinearColor InColor,string Suffix) { return default; }
 	///<summary>Converts a color-&gt;string, creating a new string in the form AppendTo+Prefix+InName+Suffix</summary>
-	public static string BuildString_Name(string AppendTo,string Prefix,string InName,string Suffix) { return default; }
+	public static string BuildString_Name(string AppendTo,string Prefix,FName InName,string Suffix) { return default; }
 	///<summary>Concatenates two strings together to make a new string</summary>
 	public static string Concat_StrStr(string A,string B) { return default; }
 	///<summary>Test if the input strings are equal (A == B)</summary>

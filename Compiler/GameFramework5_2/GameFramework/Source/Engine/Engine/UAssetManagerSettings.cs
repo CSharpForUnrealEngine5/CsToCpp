@@ -29,5 +29,5 @@ public partial class UAssetManagerSettings : UDeveloperSettings {
 	///<summary>Redirect from /game/assetpath to /game/assetpathnew</summary>
 	public TArray<FAssetManagerRedirect> AssetPathRedirects;
 	///<summary>The metadata tags to be transferred to the Asset Registry.</summary>
-	public TSet<string> MetaDataTagsForAssetRegistry;
+	public TSet<FName> MetaDataTagsForAssetRegistry;
 }

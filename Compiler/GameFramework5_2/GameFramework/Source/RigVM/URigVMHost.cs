@@ -23,29 +23,29 @@ public partial class URigVMHost : UObject {
 	///<summary>Is valid for execution</summary>
 	public virtual bool CanExecute() { return default; }
 	///<summary>Returns the names of variables accessible in scripting</summary>
-	public TArray<string> GetScriptAccessibleVariables() { return default; }
+	public TArray<FName> GetScriptAccessibleVariables() { return default; }
 	///<summary>Returns the type of a given variable</summary>
-	public string GetVariableType(string InVariableName) { return default; }
+	public FName GetVariableType(FName InVariableName) { return default; }
 	///<summary>Returns the value of a given variable as a string</summary>
-	public string GetVariableAsString(string InVariableName) { return default; }
+	public string GetVariableAsString(FName InVariableName) { return default; }
 	///<summary>Returns the value of a given variable as a string</summary>
-	public bool SetVariableFromString(string InVariableName,string InValue) { return default; }
+	public bool SetVariableFromString(FName InVariableName,string InValue) { return default; }
 	///<summary>VMRuntimeSettings</summary>
 	public FRigVMRuntimeSettings VMRuntimeSettings;
 	///<summary>Execute</summary>
-	public virtual bool Execute(string InEventName) { return default; }
+	public virtual bool Execute(FName InEventName) { return default; }
 	///<summary>SupportsEvent</summary>
-	public bool SupportsEvent(string InEventName) { return default; }
+	public bool SupportsEvent(FName InEventName) { return default; }
 	///<summary>GetSupportedEvents</summary>
-	public TArray<string> GetSupportedEvents() { return default; }
+	public TArray<FName> GetSupportedEvents() { return default; }
 	///<summary>Execute a user defined event</summary>
-	public bool ExecuteEvent(string InEventName) { return default; }
+	public bool ExecuteEvent(FName InEventName) { return default; }
 	///<summary>Requests to perform an init during the next execution</summary>
 	public virtual void RequestInit() {}
 	///<summary>Requests to run an event once</summary>
-	public void RequestRunOnceEvent(string InEventName,int InEventIndex/*=-1*/) {}
+	public void RequestRunOnceEvent(FName InEventName,int InEventIndex/*=-1*/) {}
 	///<summary>Removes an event running once</summary>
-	public bool RemoveRunOnceEvent(string InEventName) { return default; }
+	public bool RemoveRunOnceEvent(FName InEventName) { return default; }
 	///<summary>GetVM</summary>
 	public URigVM GetVM() { return default; }
 	///<summary>VM</summary>
@@ -53,7 +53,7 @@ public partial class URigVMHost : UObject {
 	///<summary>DrawContainer</summary>
 	public FRigVMDrawContainer DrawContainer;
 	///<summary>The event name used during an update</summary>
-	public TArray<string> EventQueue;
+	public TArray<FName> EventQueue;
 	///<summary>Array of user data stored with the asset</summary>
 	public TArray<UAssetUserData> AssetUserData;
 	///<summary>VMSnapshotBeforeExecution</summary>

@@ -8,7 +8,7 @@ public partial class UMaterialExpressionLandscapeLayerSwitch : UMaterialExpressi
 	///<summary>LayerNotUsed</summary>
 	public FExpressionInput LayerNotUsed;
 	///<summary>ParameterName</summary>
-	public string ParameterName;
+	public FName ParameterName;
 	///<summary>PreviewUsed</summary>
 	public bool PreviewUsed;
 }

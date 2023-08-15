@@ -45,97 +45,97 @@ public partial class UControlRigSequencerEditorLibrary : UBlueprintFunctionLibra
 	///<summary>Get Actors World Transforms at specific times</summary>
 	public static TArray<FTransform> GetActorWorldTransforms(ULevelSequence LevelSequence,AActor Actor,TArray<FFrameNumber> Frames,ESequenceTimeUnit TimeUnit/*=ESequenceTimeUnit.DisplayRate*/) { return default; }
 	///<summary>Get SkeletalMeshComponent World Transform at a specific time</summary>
-	public static FTransform GetSkeletalMeshComponentWorldTransform(ULevelSequence LevelSequence,USkeletalMeshComponent SkeletalMeshComponent,FFrameNumber Frame,ESequenceTimeUnit TimeUnit/*=ESequenceTimeUnit.DisplayRate*/,string ReferenceName/*=NAME_None*/) { return default; }
+	public static FTransform GetSkeletalMeshComponentWorldTransform(ULevelSequence LevelSequence,USkeletalMeshComponent SkeletalMeshComponent,FFrameNumber Frame,ESequenceTimeUnit TimeUnit/*=ESequenceTimeUnit.DisplayRate*/,FName ReferenceName/*=NAME_None*/) { return default; }
 	///<summary>Get SkeletalMeshComponents World Transforms at specific times</summary>
-	public static TArray<FTransform> GetSkeletalMeshComponentWorldTransforms(ULevelSequence LevelSequence,USkeletalMeshComponent SkeletalMeshComponent,TArray<FFrameNumber> Frames,ESequenceTimeUnit TimeUnit/*=ESequenceTimeUnit.DisplayRate*/,string ReferenceName/*=NAME_None*/) { return default; }
+	public static TArray<FTransform> GetSkeletalMeshComponentWorldTransforms(ULevelSequence LevelSequence,USkeletalMeshComponent SkeletalMeshComponent,TArray<FFrameNumber> Frames,ESequenceTimeUnit TimeUnit/*=ESequenceTimeUnit.DisplayRate*/,FName ReferenceName/*=NAME_None*/) { return default; }
 	///<summary>Get ControlRig Control&#39;s World Transform at a specific time</summary>
-	public static FTransform GetControlRigWorldTransform(ULevelSequence LevelSequence,UControlRig ControlRig,string ControlName,FFrameNumber Frame,ESequenceTimeUnit TimeUnit/*=ESequenceTimeUnit.DisplayRate*/) { return default; }
+	public static FTransform GetControlRigWorldTransform(ULevelSequence LevelSequence,UControlRig ControlRig,FName ControlName,FFrameNumber Frame,ESequenceTimeUnit TimeUnit/*=ESequenceTimeUnit.DisplayRate*/) { return default; }
 	///<summary>Get ControlRig Control&#39;s World Transforms at specific times</summary>
-	public static TArray<FTransform> GetControlRigWorldTransforms(ULevelSequence LevelSequence,UControlRig ControlRig,string ControlName,TArray<FFrameNumber> Frames,ESequenceTimeUnit TimeUnit/*=ESequenceTimeUnit.DisplayRate*/) { return default; }
+	public static TArray<FTransform> GetControlRigWorldTransforms(ULevelSequence LevelSequence,UControlRig ControlRig,FName ControlName,TArray<FFrameNumber> Frames,ESequenceTimeUnit TimeUnit/*=ESequenceTimeUnit.DisplayRate*/) { return default; }
 	///<summary>Set ControlRig Control&#39;s World Transform at a specific time</summary>
-	public static void SetControlRigWorldTransform(ULevelSequence LevelSequence,UControlRig ControlRig,string ControlName,FFrameNumber Frame,FTransform WorldTransform,ESequenceTimeUnit TimeUnit/*=ESequenceTimeUnit.DisplayRate*/,bool bSetKey/*=true*/) {}
+	public static void SetControlRigWorldTransform(ULevelSequence LevelSequence,UControlRig ControlRig,FName ControlName,FFrameNumber Frame,FTransform WorldTransform,ESequenceTimeUnit TimeUnit/*=ESequenceTimeUnit.DisplayRate*/,bool bSetKey/*=true*/) {}
 	///<summary>Set ControlRig Control&#39;s World Transforms at a specific times.</summary>
-	public static void SetControlRigWorldTransforms(ULevelSequence LevelSequence,UControlRig ControlRig,string ControlName,TArray<FFrameNumber> Frames,TArray<FTransform> WorldTransforms,ESequenceTimeUnit TimeUnit/*=ESequenceTimeUnit.DisplayRate*/) {}
+	public static void SetControlRigWorldTransforms(ULevelSequence LevelSequence,UControlRig ControlRig,FName ControlName,TArray<FFrameNumber> Frames,TArray<FTransform> WorldTransforms,ESequenceTimeUnit TimeUnit/*=ESequenceTimeUnit.DisplayRate*/) {}
 	///<summary>Get ControlRig Control&#39;s float value at a specific time</summary>
-	public static float GetLocalControlRigFloat(ULevelSequence LevelSequence,UControlRig ControlRig,string ControlName,FFrameNumber Frame,ESequenceTimeUnit TimeUnit/*=ESequenceTimeUnit.DisplayRate*/) { return default; }
+	public static float GetLocalControlRigFloat(ULevelSequence LevelSequence,UControlRig ControlRig,FName ControlName,FFrameNumber Frame,ESequenceTimeUnit TimeUnit/*=ESequenceTimeUnit.DisplayRate*/) { return default; }
 	///<summary>Get ControlRig Control&#39;s float values at specific times</summary>
-	public static TArray<float> GetLocalControlRigFloats(ULevelSequence LevelSequence,UControlRig ControlRig,string ControlName,TArray<FFrameNumber> Frames,ESequenceTimeUnit TimeUnit/*=ESequenceTimeUnit.DisplayRate*/) { return default; }
+	public static TArray<float> GetLocalControlRigFloats(ULevelSequence LevelSequence,UControlRig ControlRig,FName ControlName,TArray<FFrameNumber> Frames,ESequenceTimeUnit TimeUnit/*=ESequenceTimeUnit.DisplayRate*/) { return default; }
 	///<summary>Set ControlRig Control&#39;s float value at specific time</summary>
-	public static void SetLocalControlRigFloat(ULevelSequence LevelSequence,UControlRig ControlRig,string ControlName,FFrameNumber Frame,float Value,ESequenceTimeUnit TimeUnit/*=ESequenceTimeUnit.DisplayRate*/,bool bSetKey/*=true*/) {}
+	public static void SetLocalControlRigFloat(ULevelSequence LevelSequence,UControlRig ControlRig,FName ControlName,FFrameNumber Frame,float Value,ESequenceTimeUnit TimeUnit/*=ESequenceTimeUnit.DisplayRate*/,bool bSetKey/*=true*/) {}
 	///<summary>Set ControlRig Control&#39;s float values at specific times</summary>
-	public static void SetLocalControlRigFloats(ULevelSequence LevelSequence,UControlRig ControlRig,string ControlName,TArray<FFrameNumber> Frames,TArray<float> Values,ESequenceTimeUnit TimeUnit/*=ESequenceTimeUnit.DisplayRate*/) {}
+	public static void SetLocalControlRigFloats(ULevelSequence LevelSequence,UControlRig ControlRig,FName ControlName,TArray<FFrameNumber> Frames,TArray<float> Values,ESequenceTimeUnit TimeUnit/*=ESequenceTimeUnit.DisplayRate*/) {}
 	///<summary>Get ControlRig Control&#39;s bool value at a specific time</summary>
-	public static bool GetLocalControlRigBool(ULevelSequence LevelSequence,UControlRig ControlRig,string ControlName,FFrameNumber Frame,ESequenceTimeUnit TimeUnit/*=ESequenceTimeUnit.DisplayRate*/) { return default; }
+	public static bool GetLocalControlRigBool(ULevelSequence LevelSequence,UControlRig ControlRig,FName ControlName,FFrameNumber Frame,ESequenceTimeUnit TimeUnit/*=ESequenceTimeUnit.DisplayRate*/) { return default; }
 	///<summary>Get ControlRig Control&#39;s bool values at specific times</summary>
-	public static TArray<bool> GetLocalControlRigBools(ULevelSequence LevelSequence,UControlRig ControlRig,string ControlName,TArray<FFrameNumber> Frames,ESequenceTimeUnit TimeUnit/*=ESequenceTimeUnit.DisplayRate*/) { return default; }
+	public static TArray<bool> GetLocalControlRigBools(ULevelSequence LevelSequence,UControlRig ControlRig,FName ControlName,TArray<FFrameNumber> Frames,ESequenceTimeUnit TimeUnit/*=ESequenceTimeUnit.DisplayRate*/) { return default; }
 	///<summary>Set ControlRig Control&#39;s bool value at specific time</summary>
-	public static void SetLocalControlRigBool(ULevelSequence LevelSequence,UControlRig ControlRig,string ControlName,FFrameNumber Frame,bool Value,ESequenceTimeUnit TimeUnit/*=ESequenceTimeUnit.DisplayRate*/,bool bSetKey/*=true*/) {}
+	public static void SetLocalControlRigBool(ULevelSequence LevelSequence,UControlRig ControlRig,FName ControlName,FFrameNumber Frame,bool Value,ESequenceTimeUnit TimeUnit/*=ESequenceTimeUnit.DisplayRate*/,bool bSetKey/*=true*/) {}
 	///<summary>Set ControlRig Control&#39;s bool values at specific times</summary>
-	public static void SetLocalControlRigBools(ULevelSequence LevelSequence,UControlRig ControlRig,string ControlName,TArray<FFrameNumber> Frames,TArray<bool> Values,ESequenceTimeUnit TimeUnit/*=ESequenceTimeUnit.DisplayRate*/) {}
+	public static void SetLocalControlRigBools(ULevelSequence LevelSequence,UControlRig ControlRig,FName ControlName,TArray<FFrameNumber> Frames,TArray<bool> Values,ESequenceTimeUnit TimeUnit/*=ESequenceTimeUnit.DisplayRate*/) {}
 	///<summary>Get ControlRig Control&#39;s integer value at a specific time</summary>
-	public static int GetLocalControlRigInt(ULevelSequence LevelSequence,UControlRig ControlRig,string ControlName,FFrameNumber Frame,ESequenceTimeUnit TimeUnit/*=ESequenceTimeUnit.DisplayRate*/) { return default; }
+	public static int GetLocalControlRigInt(ULevelSequence LevelSequence,UControlRig ControlRig,FName ControlName,FFrameNumber Frame,ESequenceTimeUnit TimeUnit/*=ESequenceTimeUnit.DisplayRate*/) { return default; }
 	///<summary>Get ControlRig Control&#39;s integer values at specific times</summary>
-	public static TArray<int> GetLocalControlRigInts(ULevelSequence LevelSequence,UControlRig ControlRig,string ControlName,TArray<FFrameNumber> Frames,ESequenceTimeUnit TimeUnit/*=ESequenceTimeUnit.DisplayRate*/) { return default; }
+	public static TArray<int> GetLocalControlRigInts(ULevelSequence LevelSequence,UControlRig ControlRig,FName ControlName,TArray<FFrameNumber> Frames,ESequenceTimeUnit TimeUnit/*=ESequenceTimeUnit.DisplayRate*/) { return default; }
 	///<summary>Set ControlRig Control&#39;s int value at specific time</summary>
-	public static void SetLocalControlRigInt(ULevelSequence LevelSequence,UControlRig ControlRig,string ControlName,FFrameNumber Frame,int Value,ESequenceTimeUnit TimeUnit/*=ESequenceTimeUnit.DisplayRate*/,bool bSetKey/*=true*/) {}
+	public static void SetLocalControlRigInt(ULevelSequence LevelSequence,UControlRig ControlRig,FName ControlName,FFrameNumber Frame,int Value,ESequenceTimeUnit TimeUnit/*=ESequenceTimeUnit.DisplayRate*/,bool bSetKey/*=true*/) {}
 	///<summary>Set ControlRig Control&#39;s int values at specific times</summary>
-	public static void SetLocalControlRigInts(ULevelSequence LevelSequence,UControlRig ControlRig,string ControlName,TArray<FFrameNumber> Frames,TArray<int> Values,ESequenceTimeUnit TimeUnit/*=ESequenceTimeUnit.DisplayRate*/) {}
+	public static void SetLocalControlRigInts(ULevelSequence LevelSequence,UControlRig ControlRig,FName ControlName,TArray<FFrameNumber> Frames,TArray<int> Values,ESequenceTimeUnit TimeUnit/*=ESequenceTimeUnit.DisplayRate*/) {}
 	///<summary>Get ControlRig Control&#39;s Vector2D value at a specific time</summary>
-	public static FVector2D GetLocalControlRigVector2D(ULevelSequence LevelSequence,UControlRig ControlRig,string ControlName,FFrameNumber Frame,ESequenceTimeUnit TimeUnit/*=ESequenceTimeUnit.DisplayRate*/) { return default; }
+	public static FVector2D GetLocalControlRigVector2D(ULevelSequence LevelSequence,UControlRig ControlRig,FName ControlName,FFrameNumber Frame,ESequenceTimeUnit TimeUnit/*=ESequenceTimeUnit.DisplayRate*/) { return default; }
 	///<summary>Get ControlRig Control&#39;s Vector2D values at specific times</summary>
-	public static TArray<FVector2D> GetLocalControlRigVector2Ds(ULevelSequence LevelSequence,UControlRig ControlRig,string ControlName,TArray<FFrameNumber> Frames,ESequenceTimeUnit TimeUnit/*=ESequenceTimeUnit.DisplayRate*/) { return default; }
+	public static TArray<FVector2D> GetLocalControlRigVector2Ds(ULevelSequence LevelSequence,UControlRig ControlRig,FName ControlName,TArray<FFrameNumber> Frames,ESequenceTimeUnit TimeUnit/*=ESequenceTimeUnit.DisplayRate*/) { return default; }
 	///<summary>Set ControlRig Control&#39;s Vector2D value at specific time</summary>
-	public static void SetLocalControlRigVector2D(ULevelSequence LevelSequence,UControlRig ControlRig,string ControlName,FFrameNumber Frame,FVector2D Value,ESequenceTimeUnit TimeUnit/*=ESequenceTimeUnit.DisplayRate*/,bool bSetKey/*=true*/) {}
+	public static void SetLocalControlRigVector2D(ULevelSequence LevelSequence,UControlRig ControlRig,FName ControlName,FFrameNumber Frame,FVector2D Value,ESequenceTimeUnit TimeUnit/*=ESequenceTimeUnit.DisplayRate*/,bool bSetKey/*=true*/) {}
 	///<summary>Set ControlRig Control&#39;s Vector2D values at specific times</summary>
-	public static void SetLocalControlRigVector2Ds(ULevelSequence LevelSequence,UControlRig ControlRig,string ControlName,TArray<FFrameNumber> Frames,TArray<FVector2D> Values,ESequenceTimeUnit TimeUnit/*=ESequenceTimeUnit.DisplayRate*/) {}
+	public static void SetLocalControlRigVector2Ds(ULevelSequence LevelSequence,UControlRig ControlRig,FName ControlName,TArray<FFrameNumber> Frames,TArray<FVector2D> Values,ESequenceTimeUnit TimeUnit/*=ESequenceTimeUnit.DisplayRate*/) {}
 	///<summary>Get ControlRig Control&#39;s Position value at a specific time</summary>
-	public static FVector GetLocalControlRigPosition(ULevelSequence LevelSequence,UControlRig ControlRig,string ControlName,FFrameNumber Frame,ESequenceTimeUnit TimeUnit/*=ESequenceTimeUnit.DisplayRate*/) { return default; }
+	public static FVector GetLocalControlRigPosition(ULevelSequence LevelSequence,UControlRig ControlRig,FName ControlName,FFrameNumber Frame,ESequenceTimeUnit TimeUnit/*=ESequenceTimeUnit.DisplayRate*/) { return default; }
 	///<summary>Get ControlRig Control&#39;s Position values at specific times</summary>
-	public static TArray<FVector> GetLocalControlRigPositions(ULevelSequence LevelSequence,UControlRig ControlRig,string ControlName,TArray<FFrameNumber> Frames,ESequenceTimeUnit TimeUnit/*=ESequenceTimeUnit.DisplayRate*/) { return default; }
+	public static TArray<FVector> GetLocalControlRigPositions(ULevelSequence LevelSequence,UControlRig ControlRig,FName ControlName,TArray<FFrameNumber> Frames,ESequenceTimeUnit TimeUnit/*=ESequenceTimeUnit.DisplayRate*/) { return default; }
 	///<summary>Set ControlRig Control&#39;s Position value at specific time</summary>
-	public static void SetLocalControlRigPosition(ULevelSequence LevelSequence,UControlRig ControlRig,string ControlName,FFrameNumber Frame,FVector Value,ESequenceTimeUnit TimeUnit/*=ESequenceTimeUnit.DisplayRate*/,bool bSetKey/*=true*/) {}
+	public static void SetLocalControlRigPosition(ULevelSequence LevelSequence,UControlRig ControlRig,FName ControlName,FFrameNumber Frame,FVector Value,ESequenceTimeUnit TimeUnit/*=ESequenceTimeUnit.DisplayRate*/,bool bSetKey/*=true*/) {}
 	///<summary>Set ControlRig Control&#39;s Position values at specific times</summary>
-	public static void SetLocalControlRigPositions(ULevelSequence LevelSequence,UControlRig ControlRig,string ControlName,TArray<FFrameNumber> Frames,TArray<FVector> Values,ESequenceTimeUnit TimeUnit/*=ESequenceTimeUnit.DisplayRate*/) {}
+	public static void SetLocalControlRigPositions(ULevelSequence LevelSequence,UControlRig ControlRig,FName ControlName,TArray<FFrameNumber> Frames,TArray<FVector> Values,ESequenceTimeUnit TimeUnit/*=ESequenceTimeUnit.DisplayRate*/) {}
 	///<summary>Get ControlRig Control&#39;s Rotator value at a specific time</summary>
-	public static FRotator GetLocalControlRigRotator(ULevelSequence LevelSequence,UControlRig ControlRig,string ControlName,FFrameNumber Frame,ESequenceTimeUnit TimeUnit/*=ESequenceTimeUnit.DisplayRate*/) { return default; }
+	public static FRotator GetLocalControlRigRotator(ULevelSequence LevelSequence,UControlRig ControlRig,FName ControlName,FFrameNumber Frame,ESequenceTimeUnit TimeUnit/*=ESequenceTimeUnit.DisplayRate*/) { return default; }
 	///<summary>Get ControlRig Control&#39;s Rotator values at specific times</summary>
-	public static TArray<FRotator> GetLocalControlRigRotators(ULevelSequence LevelSequence,UControlRig ControlRig,string ControlName,TArray<FFrameNumber> Frames,ESequenceTimeUnit TimeUnit/*=ESequenceTimeUnit.DisplayRate*/) { return default; }
+	public static TArray<FRotator> GetLocalControlRigRotators(ULevelSequence LevelSequence,UControlRig ControlRig,FName ControlName,TArray<FFrameNumber> Frames,ESequenceTimeUnit TimeUnit/*=ESequenceTimeUnit.DisplayRate*/) { return default; }
 	///<summary>Set ControlRig Control&#39;s Rotator value at specific time</summary>
-	public static void SetLocalControlRigRotator(ULevelSequence LevelSequence,UControlRig ControlRig,string ControlName,FFrameNumber Frame,FRotator Value,ESequenceTimeUnit TimeUnit/*=ESequenceTimeUnit.DisplayRate*/,bool bSetKey/*=true*/) {}
+	public static void SetLocalControlRigRotator(ULevelSequence LevelSequence,UControlRig ControlRig,FName ControlName,FFrameNumber Frame,FRotator Value,ESequenceTimeUnit TimeUnit/*=ESequenceTimeUnit.DisplayRate*/,bool bSetKey/*=true*/) {}
 	///<summary>Set ControlRig Control&#39;s Rotator values at specific times</summary>
-	public static void SetLocalControlRigRotators(ULevelSequence LevelSequence,UControlRig ControlRig,string ControlName,TArray<FFrameNumber> Frames,TArray<FRotator> Values,ESequenceTimeUnit TimeUnit/*=ESequenceTimeUnit.DisplayRate*/) {}
+	public static void SetLocalControlRigRotators(ULevelSequence LevelSequence,UControlRig ControlRig,FName ControlName,TArray<FFrameNumber> Frames,TArray<FRotator> Values,ESequenceTimeUnit TimeUnit/*=ESequenceTimeUnit.DisplayRate*/) {}
 	///<summary>Get ControlRig Control&#39;s Scale value at a specific time</summary>
-	public static FVector GetLocalControlRigScale(ULevelSequence LevelSequence,UControlRig ControlRig,string ControlName,FFrameNumber Frame,ESequenceTimeUnit TimeUnit/*=ESequenceTimeUnit.DisplayRate*/) { return default; }
+	public static FVector GetLocalControlRigScale(ULevelSequence LevelSequence,UControlRig ControlRig,FName ControlName,FFrameNumber Frame,ESequenceTimeUnit TimeUnit/*=ESequenceTimeUnit.DisplayRate*/) { return default; }
 	///<summary>Get ControlRig Control&#39;s Scale values at specific times</summary>
-	public static TArray<FVector> GetLocalControlRigScales(ULevelSequence LevelSequence,UControlRig ControlRig,string ControlName,TArray<FFrameNumber> Frames,ESequenceTimeUnit TimeUnit/*=ESequenceTimeUnit.DisplayRate*/) { return default; }
+	public static TArray<FVector> GetLocalControlRigScales(ULevelSequence LevelSequence,UControlRig ControlRig,FName ControlName,TArray<FFrameNumber> Frames,ESequenceTimeUnit TimeUnit/*=ESequenceTimeUnit.DisplayRate*/) { return default; }
 	///<summary>Set ControlRig Control&#39;s Scale value at specific time</summary>
-	public static void SetLocalControlRigScale(ULevelSequence LevelSequence,UControlRig ControlRig,string ControlName,FFrameNumber Frame,FVector Value,ESequenceTimeUnit TimeUnit/*=ESequenceTimeUnit.DisplayRate*/,bool bSetKey/*=true*/) {}
+	public static void SetLocalControlRigScale(ULevelSequence LevelSequence,UControlRig ControlRig,FName ControlName,FFrameNumber Frame,FVector Value,ESequenceTimeUnit TimeUnit/*=ESequenceTimeUnit.DisplayRate*/,bool bSetKey/*=true*/) {}
 	///<summary>Set ControlRig Control&#39;s Scale values at specific times</summary>
-	public static void SetLocalControlRigScales(ULevelSequence LevelSequence,UControlRig ControlRig,string ControlName,TArray<FFrameNumber> Frames,TArray<FVector> Values,ESequenceTimeUnit TimeUnit/*=ESequenceTimeUnit.DisplayRate*/) {}
+	public static void SetLocalControlRigScales(ULevelSequence LevelSequence,UControlRig ControlRig,FName ControlName,TArray<FFrameNumber> Frames,TArray<FVector> Values,ESequenceTimeUnit TimeUnit/*=ESequenceTimeUnit.DisplayRate*/) {}
 	///<summary>Get ControlRig Control&#39;s EulerTransform value at a specific time</summary>
-	public static FEulerTransform GetLocalControlRigEulerTransform(ULevelSequence LevelSequence,UControlRig ControlRig,string ControlName,FFrameNumber Frame,ESequenceTimeUnit TimeUnit/*=ESequenceTimeUnit.DisplayRate*/) { return default; }
+	public static FEulerTransform GetLocalControlRigEulerTransform(ULevelSequence LevelSequence,UControlRig ControlRig,FName ControlName,FFrameNumber Frame,ESequenceTimeUnit TimeUnit/*=ESequenceTimeUnit.DisplayRate*/) { return default; }
 	///<summary>Get ControlRig Control&#39;s EulerTransform values at specific times</summary>
-	public static TArray<FEulerTransform> GetLocalControlRigEulerTransforms(ULevelSequence LevelSequence,UControlRig ControlRig,string ControlName,TArray<FFrameNumber> Frames,ESequenceTimeUnit TimeUnit/*=ESequenceTimeUnit.DisplayRate*/) { return default; }
+	public static TArray<FEulerTransform> GetLocalControlRigEulerTransforms(ULevelSequence LevelSequence,UControlRig ControlRig,FName ControlName,TArray<FFrameNumber> Frames,ESequenceTimeUnit TimeUnit/*=ESequenceTimeUnit.DisplayRate*/) { return default; }
 	///<summary>Set ControlRig Control&#39;s EulerTransform value at specific time</summary>
-	public static void SetLocalControlRigEulerTransform(ULevelSequence LevelSequence,UControlRig ControlRig,string ControlName,FFrameNumber Frame,FEulerTransform Value,ESequenceTimeUnit TimeUnit/*=ESequenceTimeUnit.DisplayRate*/,bool bSetKey/*=true*/) {}
+	public static void SetLocalControlRigEulerTransform(ULevelSequence LevelSequence,UControlRig ControlRig,FName ControlName,FFrameNumber Frame,FEulerTransform Value,ESequenceTimeUnit TimeUnit/*=ESequenceTimeUnit.DisplayRate*/,bool bSetKey/*=true*/) {}
 	///<summary>Set ControlRig Control&#39;s EulerTransform values at specific times</summary>
-	public static void SetLocalControlRigEulerTransforms(ULevelSequence LevelSequence,UControlRig ControlRig,string ControlName,TArray<FFrameNumber> Frames,TArray<FEulerTransform> Values,ESequenceTimeUnit TimeUnit/*=ESequenceTimeUnit.DisplayRate*/) {}
+	public static void SetLocalControlRigEulerTransforms(ULevelSequence LevelSequence,UControlRig ControlRig,FName ControlName,TArray<FFrameNumber> Frames,TArray<FEulerTransform> Values,ESequenceTimeUnit TimeUnit/*=ESequenceTimeUnit.DisplayRate*/) {}
 	///<summary>Get ControlRig Control&#39;s TransformNoScale value at a specific time</summary>
-	public static FTransformNoScale GetLocalControlRigTransformNoScale(ULevelSequence LevelSequence,UControlRig ControlRig,string ControlName,FFrameNumber Frame,ESequenceTimeUnit TimeUnit/*=ESequenceTimeUnit.DisplayRate*/) { return default; }
+	public static FTransformNoScale GetLocalControlRigTransformNoScale(ULevelSequence LevelSequence,UControlRig ControlRig,FName ControlName,FFrameNumber Frame,ESequenceTimeUnit TimeUnit/*=ESequenceTimeUnit.DisplayRate*/) { return default; }
 	///<summary>Get ControlRig Control&#39;s TransformNoScale values at specific times</summary>
-	public static TArray<FTransformNoScale> GetLocalControlRigTransformNoScales(ULevelSequence LevelSequence,UControlRig ControlRig,string ControlName,TArray<FFrameNumber> Frames,ESequenceTimeUnit TimeUnit/*=ESequenceTimeUnit.DisplayRate*/) { return default; }
+	public static TArray<FTransformNoScale> GetLocalControlRigTransformNoScales(ULevelSequence LevelSequence,UControlRig ControlRig,FName ControlName,TArray<FFrameNumber> Frames,ESequenceTimeUnit TimeUnit/*=ESequenceTimeUnit.DisplayRate*/) { return default; }
 	///<summary>Set ControlRig Control&#39;s TransformNoScale value at specific time</summary>
-	public static void SetLocalControlRigTransformNoScale(ULevelSequence LevelSequence,UControlRig ControlRig,string ControlName,FFrameNumber Frame,FTransformNoScale Value,ESequenceTimeUnit TimeUnit/*=ESequenceTimeUnit.DisplayRate*/,bool bSetKey/*=true*/) {}
+	public static void SetLocalControlRigTransformNoScale(ULevelSequence LevelSequence,UControlRig ControlRig,FName ControlName,FFrameNumber Frame,FTransformNoScale Value,ESequenceTimeUnit TimeUnit/*=ESequenceTimeUnit.DisplayRate*/,bool bSetKey/*=true*/) {}
 	///<summary>Set ControlRig Control&#39;s TransformNoScale values at specific times</summary>
-	public static void SetLocalControlRigTransformNoScales(ULevelSequence LevelSequence,UControlRig ControlRig,string ControlName,TArray<FFrameNumber> Frames,TArray<FTransformNoScale> Values,ESequenceTimeUnit TimeUnit/*=ESequenceTimeUnit.DisplayRate*/) {}
+	public static void SetLocalControlRigTransformNoScales(ULevelSequence LevelSequence,UControlRig ControlRig,FName ControlName,TArray<FFrameNumber> Frames,TArray<FTransformNoScale> Values,ESequenceTimeUnit TimeUnit/*=ESequenceTimeUnit.DisplayRate*/) {}
 	///<summary>Get ControlRig Control&#39;s Transform value at a specific time</summary>
-	public static FTransform GetLocalControlRigTransform(ULevelSequence LevelSequence,UControlRig ControlRig,string ControlName,FFrameNumber Frame,ESequenceTimeUnit TimeUnit/*=ESequenceTimeUnit.DisplayRate*/) { return default; }
+	public static FTransform GetLocalControlRigTransform(ULevelSequence LevelSequence,UControlRig ControlRig,FName ControlName,FFrameNumber Frame,ESequenceTimeUnit TimeUnit/*=ESequenceTimeUnit.DisplayRate*/) { return default; }
 	///<summary>Get ControlRig Control&#39;s Transform values at specific times</summary>
-	public static TArray<FTransform> GetLocalControlRigTransforms(ULevelSequence LevelSequence,UControlRig ControlRig,string ControlName,TArray<FFrameNumber> Frames,ESequenceTimeUnit TimeUnit/*=ESequenceTimeUnit.DisplayRate*/) { return default; }
+	public static TArray<FTransform> GetLocalControlRigTransforms(ULevelSequence LevelSequence,UControlRig ControlRig,FName ControlName,TArray<FFrameNumber> Frames,ESequenceTimeUnit TimeUnit/*=ESequenceTimeUnit.DisplayRate*/) { return default; }
 	///<summary>Set ControlRig Control&#39;s Transform value at specific time</summary>
-	public static void SetLocalControlRigTransform(ULevelSequence LevelSequence,UControlRig ControlRig,string ControlName,FFrameNumber Frame,FTransform Value,ESequenceTimeUnit TimeUnit/*=ESequenceTimeUnit.DisplayRate*/,bool bSetKey/*=true*/) {}
+	public static void SetLocalControlRigTransform(ULevelSequence LevelSequence,UControlRig ControlRig,FName ControlName,FFrameNumber Frame,FTransform Value,ESequenceTimeUnit TimeUnit/*=ESequenceTimeUnit.DisplayRate*/,bool bSetKey/*=true*/) {}
 	///<summary>Set ControlRig Control&#39;s Transform values at specific times</summary>
-	public static void SetLocalControlRigTransforms(ULevelSequence LevelSequence,UControlRig ControlRig,string ControlName,TArray<FFrameNumber> Frames,TArray<FTransform> Values,ESequenceTimeUnit TimeUnit/*=ESequenceTimeUnit.DisplayRate*/) {}
+	public static void SetLocalControlRigTransforms(ULevelSequence LevelSequence,UControlRig ControlRig,FName ControlName,TArray<FFrameNumber> Frames,TArray<FTransform> Values,ESequenceTimeUnit TimeUnit/*=ESequenceTimeUnit.DisplayRate*/) {}
 	///<summary>* Import FBX onto a control rig with the specified track and section</summary>
 	public static bool ImportFBXToControlRigTrack(UWorld World,ULevelSequence InSequence,UMovieSceneControlRigParameterTrack InTrack,UMovieSceneControlRigParameterSection InSection,TArray<string> SelectedControlRigNames,UMovieSceneUserImportFBXControlRigSettings ImportFBXControlRigSettings,string ImportFilename) { return default; }
 	///<summary>* Collapse and bake all sections and layers on a control rig track to just one section.</summary>
@@ -145,19 +145,19 @@ public partial class UControlRigSequencerEditorLibrary : UBlueprintFunctionLibra
 	///<summary>* Get the default world space key, can be used a world space.</summary>
 	public static FRigElementKey GetWorldSpaceReferenceKey() { return default; }
 	///<summary>* Set the a key for the Control Rig Space for the Control at the specified time. If space is the same as the current no key witll be set.</summary>
-	public static bool SetControlRigSpace(ULevelSequence InSequence,UControlRig InControlRig,string InControlName,FRigElementKey InSpaceKey,FFrameNumber InTime,ESequenceTimeUnit TimeUnit/*=ESequenceTimeUnit.DisplayRate*/) { return default; }
+	public static bool SetControlRigSpace(ULevelSequence InSequence,UControlRig InControlRig,FName InControlName,FRigElementKey InSpaceKey,FFrameNumber InTime,ESequenceTimeUnit TimeUnit/*=ESequenceTimeUnit.DisplayRate*/) { return default; }
 	///<summary>Bake specified Control Rig Controls to a specified Space based upon the current settings</summary>
-	public static bool BakeControlRigSpace(ULevelSequence InSequence,UControlRig InControlRig,TArray<string> InControlNames,FRigSpacePickerBakeSettings InSettings,ESequenceTimeUnit TimeUnit/*=ESequenceTimeUnit.DisplayRate*/) { return default; }
+	public static bool BakeControlRigSpace(ULevelSequence InSequence,UControlRig InControlRig,TArray<FName> InControlNames,FRigSpacePickerBakeSettings InSettings,ESequenceTimeUnit TimeUnit/*=ESequenceTimeUnit.DisplayRate*/) { return default; }
 	///<summary>Delete the Control Rig Space Key for the Control at the specified time. This will delete any attached Control Rig keys at this time and will perform any needed compensation to the new space.</summary>
-	public static bool DeleteControlRigSpace(ULevelSequence InSequence,UControlRig InControlRig,string InControlName,FFrameNumber InTime,ESequenceTimeUnit TimeUnit/*=ESequenceTimeUnit.DisplayRate*/) { return default; }
+	public static bool DeleteControlRigSpace(ULevelSequence InSequence,UControlRig InControlRig,FName InControlName,FFrameNumber InTime,ESequenceTimeUnit TimeUnit/*=ESequenceTimeUnit.DisplayRate*/) { return default; }
 	///<summary>Move the Control Rig Space Key for the Control at the specified time to the new time. This will also move any Control Rig keys at this space switch boundary.</summary>
-	public static bool MoveControlRigSpace(ULevelSequence InSequence,UControlRig InControlRig,string InControlName,FFrameNumber InTime,FFrameNumber InNewTime,ESequenceTimeUnit TimeUnit/*=ESequenceTimeUnit.DisplayRate*/) { return default; }
+	public static bool MoveControlRigSpace(ULevelSequence InSequence,UControlRig InControlRig,FName InControlName,FFrameNumber InTime,FFrameNumber InNewTime,ESequenceTimeUnit TimeUnit/*=ESequenceTimeUnit.DisplayRate*/) { return default; }
 	///<summary>Rename the Control Rig Channels in Sequencer to the specified new control names, which should be present on the Control Rig</summary>
-	public static bool RenameControlRigControlChannels(ULevelSequence InSequence,UControlRig InControlRig,TArray<string> InOldControlNames,TArray<string> InNewControlNames) { return default; }
+	public static bool RenameControlRigControlChannels(ULevelSequence InSequence,UControlRig InControlRig,TArray<FName> InOldControlNames,TArray<FName> InNewControlNames) { return default; }
 	///<summary>Get the controls mask for the given ControlName</summary>
-	public static bool GetControlsMask(UMovieSceneSection InSection,string ControlName) { return default; }
+	public static bool GetControlsMask(UMovieSceneSection InSection,FName ControlName) { return default; }
 	///<summary>Set the controls mask for the given ControlNames</summary>
-	public static void SetControlsMask(UMovieSceneSection InSection,TArray<string> ControlNames,bool bVisible) {}
+	public static void SetControlsMask(UMovieSceneSection InSection,TArray<FName> ControlNames,bool bVisible) {}
 	///<summary>Shows all of the controls for the given section</summary>
 	public static void ShowAllControls(UMovieSceneSection InSection) {}
 	///<summary>Hides all of the controls for the given section</summary>

@@ -7,6 +7,6 @@ public partial struct FAIStimulus {
 	public float Strength;
 	public FVector StimulusLocation;
 	public FVector ReceiverLocation;
-	public string Tag;
+	public FName Tag;
 	public bool bSuccessfullySensed;
 }

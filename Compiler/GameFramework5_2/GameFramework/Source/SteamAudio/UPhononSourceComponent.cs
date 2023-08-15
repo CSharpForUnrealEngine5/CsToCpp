@@ -7,5 +7,5 @@ public partial class UPhononSourceComponent : USceneComponent {
 	///<summary>Any Phonon probes that lie within the baking radius will be used to produce baked impulse response data for this source location.</summary>
 	public float BakingRadius;
 	///<summary>Users must specify a unique identifier for baked data lookup at runtime.</summary>
-	public string UniqueIdentifier;
+	public FName UniqueIdentifier;
 }

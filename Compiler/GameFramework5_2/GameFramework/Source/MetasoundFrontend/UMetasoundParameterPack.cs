@@ -7,33 +7,33 @@ public partial class UMetasoundParameterPack : UObject {
 	///<summary>MakeMetasoundParameterPack</summary>
 	public static UMetasoundParameterPack MakeMetasoundParameterPack() { return default; }
 	///<summary>SetBool</summary>
-	public ESetParamResult SetBool(string ParameterName,bool InValue,bool OnlyIfExists/*=true*/) { return default; }
+	public ESetParamResult SetBool(FName ParameterName,bool InValue,bool OnlyIfExists/*=true*/) { return default; }
 	///<summary>SetInt</summary>
-	public ESetParamResult SetInt(string ParameterName,int InValue,bool OnlyIfExists/*=true*/) { return default; }
+	public ESetParamResult SetInt(FName ParameterName,int InValue,bool OnlyIfExists/*=true*/) { return default; }
 	///<summary>SetFloat</summary>
-	public ESetParamResult SetFloat(string ParameterName,float InValue,bool OnlyIfExists/*=true*/) { return default; }
+	public ESetParamResult SetFloat(FName ParameterName,float InValue,bool OnlyIfExists/*=true*/) { return default; }
 	///<summary>SetString</summary>
-	public ESetParamResult SetString(string ParameterName,string InValue,bool OnlyIfExists/*=true*/) { return default; }
+	public ESetParamResult SetString(FName ParameterName,string InValue,bool OnlyIfExists/*=true*/) { return default; }
 	///<summary>SetTrigger</summary>
-	public ESetParamResult SetTrigger(string ParameterName,bool OnlyIfExists/*=true*/) { return default; }
+	public ESetParamResult SetTrigger(FName ParameterName,bool OnlyIfExists/*=true*/) { return default; }
 	///<summary>GetBool</summary>
-	public bool GetBool(string ParameterName,ESetParamResult Result) { return default; }
+	public bool GetBool(FName ParameterName,ESetParamResult Result) { return default; }
 	///<summary>GetInt</summary>
-	public int GetInt(string ParameterName,ESetParamResult Result) { return default; }
+	public int GetInt(FName ParameterName,ESetParamResult Result) { return default; }
 	///<summary>GetFloat</summary>
-	public float GetFloat(string ParameterName,ESetParamResult Result) { return default; }
+	public float GetFloat(FName ParameterName,ESetParamResult Result) { return default; }
 	///<summary>GetString</summary>
-	public string GetString(string ParameterName,ESetParamResult Result) { return default; }
+	public string GetString(FName ParameterName,ESetParamResult Result) { return default; }
 	///<summary>GetTrigger</summary>
-	public bool GetTrigger(string ParameterName,ESetParamResult Result) { return default; }
+	public bool GetTrigger(FName ParameterName,ESetParamResult Result) { return default; }
 	///<summary>HasBool</summary>
-	public bool HasBool(string ParameterName) { return default; }
+	public bool HasBool(FName ParameterName) { return default; }
 	///<summary>HasInt</summary>
-	public bool HasInt(string ParameterName) { return default; }
+	public bool HasInt(FName ParameterName) { return default; }
 	///<summary>HasFloat</summary>
-	public bool HasFloat(string ParameterName) { return default; }
+	public bool HasFloat(FName ParameterName) { return default; }
 	///<summary>HasString</summary>
-	public bool HasString(string ParameterName) { return default; }
+	public bool HasString(FName ParameterName) { return default; }
 	///<summary>HasTrigger</summary>
-	public bool HasTrigger(string ParameterName) { return default; }
+	public bool HasTrigger(FName ParameterName) { return default; }
 }

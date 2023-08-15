@@ -4,5 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("PerPlatformProperties.h")]
 public partial struct FPerPlatformFrameRate {
 	public FFrameRate Default;
-	public TMap<string,FFrameRate> PerPlatform;
+	public TMap<FName,FFrameRate> PerPlatform;
 }

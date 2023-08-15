@@ -20,7 +20,7 @@ public partial class AVariantManagerTestActor : AActor {
 	///<summary>Captured UInterface property</summary>
 	public object /*CapturedInterfaceProperty*/ CapturedInterfaceProperty;
 	///<summary>Captured FName property</summary>
-	public string CapturedNameProperty;
+	public FName CapturedNameProperty;
 	///<summary>Captured FString property</summary>
 	public string CapturedStrProperty;
 	///<summary>Captured FText property</summary>

@@ -9,5 +9,5 @@ public partial class UAbilityTask_StartAbilityState : UAbilityTask {
 	///<summary>Invoked if the ability was interrupted and this state is active.</summary>
 	public FAbilityStateDelegate OnStateInterrupted;
 	///<summary>Starts a new ability state.</summary>
-	public static UAbilityTask_StartAbilityState StartAbilityState(UGameplayAbility OwningAbility,string StateName,bool bEndCurrentState/*=true*/) { return default; }
+	public static UAbilityTask_StartAbilityState StartAbilityState(UGameplayAbility OwningAbility,FName StateName,bool bEndCurrentState/*=true*/) { return default; }
 }

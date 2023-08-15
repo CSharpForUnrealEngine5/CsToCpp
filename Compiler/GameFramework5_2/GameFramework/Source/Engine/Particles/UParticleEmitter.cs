@@ -4,7 +4,7 @@ using CSharpToCpp.Utilities;
 public partial class UParticleEmitter : UObject {
 	public static UClass StaticClass() {return default;}
 	///<summary>The name of the emitter.</summary>
-	public string EmitterName;
+	public FName EmitterName;
 	///<summary>SubUVDataOffset</summary>
 	public int SubUVDataOffset;
 	///<summary>How to render the emitter particles. Can be one of the following:</summary>

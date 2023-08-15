@@ -12,9 +12,9 @@ public partial class UPCGMetadataMathsSettings : UPCGMetadataSettingsBase {
 	///<summary>InputSource3</summary>
 	public FPCGAttributePropertySelector InputSource3;
 	///<summary>Input1AttributeName_DEPRECATED</summary>
-	public string Input1AttributeName_DEPRECATED;
+	public FName Input1AttributeName_DEPRECATED;
 	///<summary>Input2AttributeName_DEPRECATED</summary>
-	public string Input2AttributeName_DEPRECATED;
+	public FName Input2AttributeName_DEPRECATED;
 	///<summary>Input3AttributeName_DEPRECATED</summary>
-	public string Input3AttributeName_DEPRECATED;
+	public FName Input3AttributeName_DEPRECATED;
 }

@@ -8,5 +8,5 @@ public partial class UPCGMeshSelectorWeighted : UPCGMeshSelectorBase {
 	///<summary>bUseAttributeMaterialOverrides</summary>
 	public bool bUseAttributeMaterialOverrides;
 	///<summary>MaterialOverrideAttributes</summary>
-	public TArray<string> MaterialOverrideAttributes;
+	public TArray<FName> MaterialOverrideAttributes;
 }

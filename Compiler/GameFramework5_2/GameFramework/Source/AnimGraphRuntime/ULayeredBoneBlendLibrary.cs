@@ -11,5 +11,5 @@ public partial class ULayeredBoneBlendLibrary : UBlueprintFunctionLibrary {
 	///<summary>Get the number of poses that a layered bone blend node has (this does not include the base pose)</summary>
 	public static int GetNumPoses(FLayeredBoneBlendReference LayeredBoneBlend) { return default; }
 	///<summary>Sets the currently-used blend mask for a blended input pose by name.</summary>
-	public static FLayeredBoneBlendReference SetBlendMask(FAnimUpdateContext UpdateContext,FLayeredBoneBlendReference LayeredBoneBlend,int PoseIndex,string BlendMaskName) { return default; }
+	public static FLayeredBoneBlendReference SetBlendMask(FAnimUpdateContext UpdateContext,FLayeredBoneBlendReference LayeredBoneBlend,int PoseIndex,FName BlendMaskName) { return default; }
 }

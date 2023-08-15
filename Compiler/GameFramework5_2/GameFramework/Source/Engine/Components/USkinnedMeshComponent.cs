@@ -105,11 +105,11 @@ public partial class USkinnedMeshComponent : UMeshComponent {
 	///<summary>Returns the number of bones in the skeleton.</summary>
 	public int GetNumBones() { return default; }
 	///<summary>Find the index of bone by name. Looks in the current SkeletalMesh being used by this SkeletalMeshComponent.</summary>
-	public int GetBoneIndex(string BoneName) { return default; }
+	public int GetBoneIndex(FName BoneName) { return default; }
 	///<summary>Get Bone Name from index</summary>
-	public string GetBoneName(int BoneIndex) { return default; }
+	public FName GetBoneName(int BoneIndex) { return default; }
 	///<summary>Returns bone name linked to a given named socket on the skeletal mesh component.</summary>
-	public string GetSocketBoneName(string InSocketName) { return default; }
+	public FName GetSocketBoneName(FName InSocketName) { return default; }
 	///<summary>GetSkeletalMesh_DEPRECATED</summary>
 	public USkeletalMesh GetSkeletalMesh_DEPRECATED() { return default; }
 	///<summary>Change the SkinnedAsset that is rendered for this Component. Will re-initialize the animation tree etc.</summary>
@@ -121,11 +121,11 @@ public partial class USkinnedMeshComponent : UMeshComponent {
 	///<summary>Unset any MeshDeformer applied to this Component.</summary>
 	public void UnsetMeshDeformer() {}
 	///<summary>Get Parent Bone of the input bone</summary>
-	public string GetParentBone(string BoneName) { return default; }
+	public FName GetParentBone(FName BoneName) { return default; }
 	///<summary>Get delta transform from reference pose based on BaseNode.</summary>
-	public FTransform GetDeltaTransformFromRefPose(string BoneName,string BaseName/*=NAME_None*/) { return default; }
+	public FTransform GetDeltaTransformFromRefPose(FName BoneName,FName BaseName/*=NAME_None*/) { return default; }
 	///<summary>Get Twist and Swing Angle in Degree of Delta Rotation from Reference Pose in Local space</summary>
-	public bool GetTwistAndSwingAngleOfDeltaRotationFromRefPose(string BoneName,float OutTwistAngle,float OutSwingAngle) { return default; }
+	public bool GetTwistAndSwingAngleOfDeltaRotationFromRefPose(FName BoneName,float OutTwistAngle,float OutSwingAngle) { return default; }
 	///<summary>Allow override of vertex colors on a per-component basis, taking array of Blueprint-friendly LinearColors.</summary>
 	public void SetVertexColorOverride_LinearColor(int LODIndex,TArray<FLinearColor> VertexColors) {}
 	///<summary>Clear any applied vertex color override</summary>
@@ -135,13 +135,13 @@ public partial class USkinnedMeshComponent : UMeshComponent {
 	///<summary>Clear any applied skin weight override</summary>
 	public void ClearSkinWeightOverride(int LODIndex) {}
 	///<summary>Setup an override Skin Weight Profile for this component</summary>
-	public bool SetSkinWeightProfile(string InProfileName) { return default; }
+	public bool SetSkinWeightProfile(FName InProfileName) { return default; }
 	///<summary>Clear the Skin Weight Profile from this component, in case it is set</summary>
 	public void ClearSkinWeightProfile() {}
 	///<summary>Unload a Skin Weight Profile&#39;s skin weight buffer (if created)</summary>
-	public void UnloadSkinWeightProfile(string InProfileName) {}
+	public void UnloadSkinWeightProfile(FName InProfileName) {}
 	///<summary>Return the name of the Skin Weight Profile that is currently set otherwise returns &#39;None&#39;</summary>
-	public string GetCurrentSkinWeightProfileName() { return default; }
+	public FName GetCurrentSkinWeightProfileName() { return default; }
 	///<summary>Check whether or not a Skin Weight Profile is currently set</summary>
 	public bool IsUsingSkinWeightProfile() { return default; }
 	///<summary>GetVertexOffsetUsage</summary>
@@ -161,23 +161,23 @@ public partial class USkinnedMeshComponent : UMeshComponent {
 	///<summary>Set LeaderPoseComponent for this component</summary>
 	public void SetLeaderPoseComponent(USkinnedMeshComponent NewLeaderBoneComponent,bool bForceUpdate/*=false*/,bool bInFollowerShouldTickPose/*=false*/) {}
 	///<summary>Tests if BoneName is child of (or equal to) ParentBoneName.</summary>
-	public bool BoneIsChildOf(string BoneName,string ParentBoneName) { return default; }
+	public bool BoneIsChildOf(FName BoneName,FName ParentBoneName) { return default; }
 	///<summary>Gets the local-space position of a bone in the reference pose.</summary>
 	public FVector GetRefPosePosition(int BoneIndex) { return default; }
 	///<summary>Gets the local-space transform of a bone in the reference pose.</summary>
 	public FTransform GetRefPoseTransform(int BoneIndex) { return default; }
 	///<summary>Transform a location/rotation from world space to bone relative space.</summary>
-	public void TransformToBoneSpace(string BoneName,FVector InPosition,FRotator InRotation,FVector OutPosition,FRotator OutRotation) {}
+	public void TransformToBoneSpace(FName BoneName,FVector InPosition,FRotator InRotation,FVector OutPosition,FRotator OutRotation) {}
 	///<summary>Transform a location/rotation in bone relative space to world space.</summary>
-	public void TransformFromBoneSpace(string BoneName,FVector InPosition,FRotator InRotation,FVector OutPosition,FRotator OutRotation) {}
+	public void TransformFromBoneSpace(FName BoneName,FVector InPosition,FRotator InRotation,FVector OutPosition,FRotator OutRotation) {}
 	///<summary>finds the closest bone to the given location</summary>
-	public string FindClosestBone_K2(FVector TestLocation,FVector BoneLocation,float IgnoreScale/*=0.0f*/,bool bRequirePhysicsAsset/*=false*/) { return default; }
+	public FName FindClosestBone_K2(FVector TestLocation,FVector BoneLocation,float IgnoreScale/*=0.0f*/,bool bRequirePhysicsAsset/*=false*/) { return default; }
 	///<summary>Hides the specified bone with name.  Currently this just enforces a scale of 0 for the hidden bones.</summary>
-	public void HideBoneByName(string BoneName,EPhysBodyOp PhysBodyOption) {}
+	public void HideBoneByName(FName BoneName,EPhysBodyOp PhysBodyOption) {}
 	///<summary>UnHide the specified bone with name.  Currently this just enforces a scale of 0 for the hidden bones.</summary>
-	public void UnHideBoneByName(string BoneName) {}
+	public void UnHideBoneByName(FName BoneName) {}
 	///<summary>Determines if the specified bone is hidden.</summary>
-	public bool IsBoneHiddenByName(string BoneName) { return default; }
+	public bool IsBoneHiddenByName(FName BoneName) { return default; }
 	///<summary>Allows hiding of a particular material (by ID) on this instance of a SkeletalMesh.</summary>
 	public void ShowMaterialSection(int MaterialID,int SectionIndex,bool bShow,int LODIndex) {}
 	///<summary>Clear any material visibility modifications made by ShowMaterialSection</summary>

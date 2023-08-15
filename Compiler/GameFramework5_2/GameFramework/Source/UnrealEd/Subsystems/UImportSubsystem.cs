@@ -5,7 +5,7 @@ using CSharpToCpp.Utilities;
 public partial class UImportSubsystem : UEditorSubsystem {
 	public static UClass StaticClass() {return default;}
 	///<summary>delegate type fired when new assets are being (re-)imported. Params: UFactory* InFactory, UClass* InClass, UObject* InParent, const FName&amp; Name, const TCHAR* Type</summary>
-	public void FOnAssetPreImport_Dyn(UFactory InFactory,UClass InClass,UObject InParent,string Name,string Type) {}
+	public void FOnAssetPreImport_Dyn(UFactory InFactory,UClass InClass,UObject InParent,FName Name,string Type) {}
 	///<summary>delegate type fired when new assets have been (re-)imported. Note: InCreatedObject can be NULL if import failed. Params: UFactory* InFactory, UObject* InCreatedObject</summary>
 	public void FOnAssetPostImport_Dyn(UFactory InFactory,UObject InCreatedObject) {}
 	///<summary>delegate type fired when new assets have been reimported. Note: InCreatedObject can be NULL if import failed. Params: UObject* InCreatedObject</summary>

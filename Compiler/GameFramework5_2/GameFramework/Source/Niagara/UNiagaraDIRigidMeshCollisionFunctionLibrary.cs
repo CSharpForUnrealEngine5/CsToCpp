@@ -5,5 +5,5 @@ using CSharpToCpp.Utilities;
 public partial class UNiagaraDIRigidMeshCollisionFunctionLibrary : UBlueprintFunctionLibrary {
 	public static UClass StaticClass() {return default;}
 	///<summary>SetSourceActors</summary>
-	public static void SetSourceActors(UNiagaraComponent NiagaraSystem,string OverrideName,TArray<AActor> SourceActors) {}
+	public static void SetSourceActors(UNiagaraComponent NiagaraSystem,FName OverrideName,TArray<AActor> SourceActors) {}
 }

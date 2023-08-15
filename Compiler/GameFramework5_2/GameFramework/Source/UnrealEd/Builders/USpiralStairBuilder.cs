@@ -16,7 +16,7 @@ public partial class USpiralStairBuilder : UEditorBrushBuilder {
 	///<summary>The total number of steps</summary>
 	public int NumSteps;
 	///<summary>GroupName</summary>
-	public string GroupName;
+	public FName GroupName;
 	///<summary>Whether the underside of the spiral is sloped or stepped</summary>
 	public bool SlopedCeiling;
 	///<summary>Whether the surface of the spiral is sloped or stepped</summary>

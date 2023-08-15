@@ -27,7 +27,7 @@ public partial class UAnimMontage : UAnimCompositeBase {
 	///<summary>GetDefaultBlendOutTime</summary>
 	public float GetDefaultBlendOutTime() { return default; }
 	///<summary>If you&#39;re using marker based sync for this montage, make sure to add sync group name. For now we only support one group</summary>
-	public string SyncGroup;
+	public FName SyncGroup;
 	///<summary>wip: until we have UI working</summary>
 	public int SyncSlotIndex;
 	///<summary>MarkerData</summary>
@@ -53,21 +53,21 @@ public partial class UAnimMontage : UAnimCompositeBase {
 	///<summary>Preview Base pose for additive BlendSpace *</summary>
 	public UAnimSequence PreviewBasePose;
 	///<summary>Get SectionIndex from SectionName. Returns INDEX_None if not found</summary>
-	public int GetSectionIndex(string InSectionName) { return default; }
+	public int GetSectionIndex(FName InSectionName) { return default; }
 	///<summary>Get SectionName from SectionIndex. Returns NAME_None if not found</summary>
-	public string GetSectionName(int SectionIndex) { return default; }
+	public FName GetSectionName(int SectionIndex) { return default; }
 	///<summary>Returns the number of sections this montage has</summary>
 	public int GetNumSections() { return default; }
 	///<summary>@return true if valid section</summary>
-	public bool IsValidSectionName(string InSectionName) { return default; }
+	public bool IsValidSectionName(FName InSectionName) { return default; }
 	///<summary>Cached list of Branching Point markers</summary>
 	public TArray<FBranchingPointMarker> BranchingPointMarkers;
 	///<summary>Keep track of which AnimNotify_State are marked as BranchingPoints, so we can update their state when the Montage is ticked</summary>
 	public TArray<int> BranchingPointStateNotifyIndices;
 	///<summary>Utility function to create dynamic montage from AnimSequence with blend in settings</summary>
-	public static UAnimMontage CreateSlotAnimationAsDynamicMontage_WithBlendSettings(UAnimSequenceBase Asset,string SlotNodeName,FMontageBlendSettings BlendInSettings,FMontageBlendSettings BlendOutSettings,float InPlayRate/*=1.0f*/,int LoopCount/*=1*/,float InBlendOutTriggerTime/*=-1.0f*/) { return default; }
+	public static UAnimMontage CreateSlotAnimationAsDynamicMontage_WithBlendSettings(UAnimSequenceBase Asset,FName SlotNodeName,FMontageBlendSettings BlendInSettings,FMontageBlendSettings BlendOutSettings,float InPlayRate/*=1.0f*/,int LoopCount/*=1*/,float InBlendOutTriggerTime/*=-1.0f*/) { return default; }
 	///<summary>Time stretch curve will only be used when the montage has a non-default play rate</summary>
 	public FTimeStretchCurve TimeStretchCurve;
 	///<summary>Name of optional TimeStretchCurveName to look for in Montage. Time stretch curve will only be used when the montage has a non-default play rate</summary>
-	public string TimeStretchCurveName;
+	public FName TimeStretchCurveName;
 }

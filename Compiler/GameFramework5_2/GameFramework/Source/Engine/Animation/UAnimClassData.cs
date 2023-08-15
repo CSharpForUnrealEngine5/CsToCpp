@@ -10,7 +10,7 @@ public partial class UAnimClassData : UObject {
 	///<summary>A list of anim notifies that state machines (or anything else) may reference</summary>
 	public TArray<FAnimNotifyEvent> AnimNotifies;
 	///<summary>Indices for each of the saved pose nodes that require updating, in the order they need to get updates.</summary>
-	public TMap<string,FCachedPoseIndices> OrderedSavedPoseIndicesMap;
+	public TMap<FName,FCachedPoseIndices> OrderedSavedPoseIndicesMap;
 	///<summary>All of the functions that this anim class provides</summary>
 	public TArray<FAnimBlueprintFunction> AnimBlueprintFunctions;
 	///<summary>Serialized function data, used to patch up transient data in AnimBlueprintFunctions</summary>
@@ -30,9 +30,9 @@ public partial class UAnimClassData : UObject {
 	///<summary>Array of nodes that need an OnInitializeAnimInstance call</summary>
 	public TArray<object> InitializationNodeProperties;
 	///<summary>Indices for any Asset Player found within a specific (named) Anim Layer Graph, or implemented Anim Interface Graph</summary>
-	public TMap<string,FGraphAssetPlayerInformation> GraphNameAssetPlayers;
+	public TMap<FName,FGraphAssetPlayerInformation> GraphNameAssetPlayers;
 	///<summary>Array of sync group names in the order that they are requested during compile</summary>
-	public TArray<string> SyncGroupNames;
+	public TArray<FName> SyncGroupNames;
 	///<summary>Per layer graph blending options</summary>
-	public TMap<string,FAnimGraphBlendOptions> GraphBlendOptions;
+	public TMap<FName,FAnimGraphBlendOptions> GraphBlendOptions;
 }

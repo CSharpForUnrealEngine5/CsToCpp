@@ -6,6 +6,6 @@ public partial struct FDMXImportGDTFDMXChannel {
 	public TArray<int> Offset;
 	public FDMXImportGDTFDMXValue Default;
 	public FDMXImportGDTFDMXValue Highlight;
-	public string Geometry;
+	public FName Geometry;
 	public FDMXImportGDTFLogicalChannel LogicalChannel;
 }

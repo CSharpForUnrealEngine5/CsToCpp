@@ -11,13 +11,13 @@ public partial class UCableComponent : UMeshComponent {
 	///<summary>Actor or Component that the defines the end position of the cable</summary>
 	public FComponentReference AttachEndTo;
 	///<summary>Socket name on the AttachEndTo component to attach to</summary>
-	public string AttachEndToSocketName;
+	public FName AttachEndToSocketName;
 	///<summary>End location of cable, relative to AttachEndTo (or AttachEndToSocketName) if specified, otherwise relative to cable component.</summary>
 	public FVector EndLocation;
 	///<summary>Attaches the end of the cable to a specific Component *</summary>
-	public void SetAttachEndToComponent(USceneComponent Component,string SocketName/*=NAME_None*/) {}
+	public void SetAttachEndToComponent(USceneComponent Component,FName SocketName/*=NAME_None*/) {}
 	///<summary>Attaches the end of the cable to a specific Component within an Actor *</summary>
-	public void SetAttachEndTo(AActor Actor,string ComponentProperty,string SocketName/*=NAME_None*/) {}
+	public void SetAttachEndTo(AActor Actor,FName ComponentProperty,FName SocketName/*=NAME_None*/) {}
 	///<summary>Gets the Actor that the cable is attached to *</summary>
 	public AActor GetAttachedActor() { return default; }
 	///<summary>Gets the specific USceneComponent that the cable is attached to *</summary>

@@ -4,5 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("EdGraphSchema_Niagara.h")]
 public partial struct FNiagaraSchemaAction_NewNode {
 	public UEdGraphNode NodeTemplate;
-	public string InternalName;
+	public FName InternalName;
 }

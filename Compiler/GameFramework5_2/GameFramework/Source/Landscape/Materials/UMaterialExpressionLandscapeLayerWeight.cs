@@ -8,7 +8,7 @@ public partial class UMaterialExpressionLandscapeLayerWeight : UMaterialExpressi
 	///<summary>Ignored if not specified</summary>
 	public FExpressionInput Layer;
 	///<summary>ParameterName</summary>
-	public string ParameterName;
+	public FName ParameterName;
 	///<summary>PreviewWeight</summary>
 	public float PreviewWeight;
 	///<summary>only used if Base is not hooked up</summary>

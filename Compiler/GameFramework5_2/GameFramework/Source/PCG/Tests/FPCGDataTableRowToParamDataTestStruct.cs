@@ -2,7 +2,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Tests/Elements/PCGDataTableRowToParamDataTestStruct.h")]
 public partial struct FPCGDataTableRowToParamDataTestStruct {
-	public string Name;
+	public FName Name;
 	public string String;
 	public int I32;
 	public long I64;

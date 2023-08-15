@@ -5,7 +5,7 @@ using CSharpToCpp.Utilities;
 public partial struct FMaterialTextureInfo {
 	public float SamplingScale;
 	public int UVChannelIndex;
-	public string TextureName;
+	public FName TextureName;
 	public FSoftObjectPath TextureReference;
 	public int TextureIndex;
 }

@@ -153,7 +153,7 @@ public partial class USkeletalMesh : USkinnedAsset {
 	///<summary>Add a skeletal socket object to this SkeletalMesh, and optionally promotes it to USkeleton socket.</summary>
 	public void AddSocket(USkeletalMeshSocket InSocket,bool bAddToSkeleton/*=false*/) {}
 	///<summary>Find a socket object in this SkeletalMesh by name.</summary>
-	public USkeletalMeshSocket FindSocketAndIndex(string InSocketName,int OutIndex) { return default; }
+	public USkeletalMeshSocket FindSocketAndIndex(FName InSocketName,int OutIndex) { return default; }
 	///<summary>Returns the number of sockets available. Both on this mesh and it&#39;s skeleton.</summary>
 	public int NumSockets() { return default; }
 	///<summary>Returns a socket by index. Max index is NumSockets(). The meshes sockets are accessed first, then the skeletons.</summary>

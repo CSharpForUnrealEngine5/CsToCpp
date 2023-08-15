@@ -15,7 +15,7 @@ public partial class ULevelSequenceWithShotsSettings : UObject {
 	///<summary>Sequence With Shots level sequence to duplicate when creating shots.</summary>
 	public TLazyObjectPtr<ULevelSequence> SequenceToDuplicate;
 	///<summary>Array of sub sequence names, each will result in a level sequence asset in the shot.</summary>
-	public TArray<string> SubSequenceNames;
+	public TArray<FName> SubSequenceNames;
 	///<summary>Whether to instance sub sequences based on the first created sub sequences.</summary>
 	public bool bInstanceSubSequences;
 }

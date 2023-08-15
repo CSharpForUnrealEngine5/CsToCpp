@@ -6,7 +6,7 @@ public partial class UUIFrameworkUserWidget : UUIFrameworkWidget {
 	///<summary>SetWidgetClass</summary>
 	public void SetWidgetClass(TSoftObjectPtr<UClass> Value) {}
 	///<summary>SetNamedSlot</summary>
-	public void SetNamedSlot(string SlotName,UUIFrameworkWidget Widget) {}
+	public void SetNamedSlot(FName SlotName,UUIFrameworkWidget Widget) {}
 	///<summary>ReplicatedSlotList</summary>
 	public FUIFrameworkUserWidgetSlotList ReplicatedSlotList;
 }

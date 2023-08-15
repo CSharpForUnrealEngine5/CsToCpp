@@ -39,7 +39,7 @@ public partial class UAudioComponent : USceneComponent {
 	///<summary>True if we should automatically attach to AutoAttachParent when Played, and detach from our parent when playback is completed.</summary>
 	public bool bAutoManageAttachment;
 	///<summary>Configurable, serialized ID for audio plugins</summary>
-	public string AudioComponentUserID;
+	public FName AudioComponentUserID;
 	///<summary>The lower bound to use when randomly determining a pitch multiplier</summary>
 	public float PitchModulationMin;
 	///<summary>The upper bound to use when randomly determining a pitch multiplier</summary>
@@ -109,11 +109,11 @@ public partial class UAudioComponent : USceneComponent {
 	///<summary>Start a sound playing on an audio component on a given quantization boundary with the handle to an existing clock</summary>
 	public virtual void PlayQuantized(UObject WorldContextObject,UQuartzClockHandle InClockHandle,FQuartzQuantizationBoundary InQuantizationBoundary,FOnQuartzCommandEventBP InDelegate,float InStartTime/*=0.0f*/,float InFadeInDuration/*=0.0f*/,float InFadeVolumeLevel/*=1.0f*/,EAudioFaderCurve InFadeCurve/*=EAudioFaderCurve.Linear*/) {}
 	///<summary>Sets a named Boolean</summary>
-	public virtual void SetBoolParameter(string InName,bool InBool) {}
+	public virtual void SetBoolParameter(FName InName,bool InBool) {}
 	///<summary>Sets a named Int32</summary>
-	public virtual void SetIntParameter(string InName,int InInt) {}
+	public virtual void SetIntParameter(FName InName,int InInt) {}
 	///<summary>Sets a named Float</summary>
-	public virtual void SetFloatParameter(string InName,float InFloat) {}
+	public virtual void SetFloatParameter(FName InName,float InFloat) {}
 	///<summary>Stop an audio component&#39;s sound, issue any delegates if needed</summary>
 	public virtual void Stop() {}
 	///<summary>Cues request to stop sound after the provided delay (in seconds), stopping immediately if delay is zero or negative</summary>
@@ -129,7 +129,7 @@ public partial class UAudioComponent : USceneComponent {
 	///<summary>This function allows designers to trigger an adjustment to the sound instance’s playback Volume with options for smoothly applying a curve over time.</summary>
 	public void AdjustVolume(float AdjustVolumeDuration,float AdjustVolumeLevel,EAudioFaderCurve FadeCurve/*=EAudioFaderCurve.Linear*/) {}
 	///<summary>Sets the parameter matching the name indicated to the provided Wave. Provided for convenience/backward compatibility</summary>
-	public void SetWaveParameter(string InName,USoundWave InWave) {}
+	public void SetWaveParameter(FName InName,USoundWave InWave) {}
 	///<summary>Set a new volume multiplier</summary>
 	public void SetVolumeMultiplier(float NewVolumeMultiplier) {}
 	///<summary>Set a new pitch multiplier</summary>
@@ -175,5 +175,5 @@ public partial class UAudioComponent : USceneComponent {
 	///<summary>Component we automatically attach to when activated, if bAutoManageAttachment is true.</summary>
 	public TWeakObjectPtr<USceneComponent> AutoAttachParent;
 	///<summary>Socket we automatically attach to on the AutoAttachParent, if bAutoManageAttachment is true.</summary>
-	public string AutoAttachSocketName;
+	public FName AutoAttachSocketName;
 }

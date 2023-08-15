@@ -5,13 +5,13 @@ using CSharpToCpp.Utilities;
 public partial class UPCGCreateAttributeSettings : UPCGSettings {
 	public static UClass StaticClass() {return default;}
 	///<summary>OutputAttributeName</summary>
-	public string OutputAttributeName;
+	public FName OutputAttributeName;
 	///<summary>bFromSourceParam</summary>
 	public bool bFromSourceParam;
 	///<summary>This can be set false by inheriting nodes to hide the &#39;From Source Param&#39; property.</summary>
 	public bool bDisplayFromSourceParamSetting;
 	///<summary>SourceParamAttributeName</summary>
-	public string SourceParamAttributeName;
+	public FName SourceParamAttributeName;
 	///<summary>AttributeTypes</summary>
 	public FPCGMetadataTypesConstantStruct AttributeTypes;
 	///<summary>Type_DEPRECATED</summary>
@@ -41,7 +41,7 @@ public partial class UPCGCreateAttributeSettings : UPCGSettings {
 	///<summary>RotatorValue_DEPRECATED</summary>
 	public FRotator RotatorValue_DEPRECATED;
 	///<summary>NameValue_DEPRECATED</summary>
-	public string NameValue_DEPRECATED;
+	public FName NameValue_DEPRECATED;
 	///<summary>bKeepExistingAttributes_DEPRECATED</summary>
 	public bool bKeepExistingAttributes_DEPRECATED;
 }

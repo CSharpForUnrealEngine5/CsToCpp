@@ -29,7 +29,7 @@ public partial class URCVirtualPropertyBase : UObject {
 	///<summary>Get String value from Virtual Property</summary>
 	public bool GetValueString(string OutStringValue) { return default; }
 	///<summary>Get Name value from Virtual Property</summary>
-	public bool GetValueName(string OutNameValue) { return default; }
+	public bool GetValueName(FName OutNameValue) { return default; }
 	///<summary>Get Text value from Virtual Property</summary>
 	public bool GetValueText(FText OutTextValue) { return default; }
 	///<summary>Get Numeric value from Virtual Property</summary>
@@ -67,7 +67,7 @@ public partial class URCVirtualPropertyBase : UObject {
 	///<summary>Set String value from Virtual Property</summary>
 	public bool SetValueString(string InStringValue) { return default; }
 	///<summary>Set Name value from Virtual Property</summary>
-	public bool SetValueName(string InNameValue) { return default; }
+	public bool SetValueName(FName InNameValue) { return default; }
 	///<summary>Set Text value from Virtual Property</summary>
 	public bool SetValueText(FText InTextValue) { return default; }
 	///<summary>Set Numeric value from Virtual Property</summary>
@@ -79,17 +79,17 @@ public partial class URCVirtualPropertyBase : UObject {
 	///<summary>Set Color value from Virtual Property</summary>
 	public bool SetValueColor(FColor InColor) { return default; }
 	///<summary>Get FProperty Name</summary>
-	public string GetPropertyName() { return default; }
+	public FName GetPropertyName() { return default; }
 	///<summary>Unique property name</summary>
-	public string PropertyName;
+	public FName PropertyName;
 	///<summary>Property Id</summary>
 	public FGuid Id;
 	///<summary>Pointer to Remote Control Preset</summary>
 	public TWeakObjectPtr<URemoteControlPreset> PresetWeakPtr;
 	///<summary>User friendly name of the Controller</summary>
-	public string DisplayName;
+	public FName DisplayName;
 	///<summary>User configurable Display Index for this Virtual Property (as Logic Controller) when represented as a row in the RC Logic Controllers list</summary>
 	public int DisplayIndex;
 	///<summary>Metadata</summary>
-	public TMap<string,string> Metadata;
+	public TMap<FName,string> Metadata;
 }

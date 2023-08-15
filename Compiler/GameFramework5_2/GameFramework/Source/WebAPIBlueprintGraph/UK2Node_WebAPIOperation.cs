@@ -6,9 +6,9 @@ public partial class UK2Node_WebAPIOperation : UK2Node {
 	///<summary>The class containing the operation functions, AND is the return type of the latent function.</summary>
 	public UClass OperationClass;
 	///<summary>The name of the latent function to call to create an operation object.</summary>
-	public string LatentFunctionName;
+	public FName LatentFunctionName;
 	///<summary>The name of the delegated function to call to create an operation object.</summary>
-	public string DelegatedFunctionName;
+	public FName DelegatedFunctionName;
 	///<summary>Latent Action is preferred, but not compatible when used in a function, so allow conversion between the two.</summary>
 	public EWebAPIOperationAsyncType OperationAsyncType;
 }

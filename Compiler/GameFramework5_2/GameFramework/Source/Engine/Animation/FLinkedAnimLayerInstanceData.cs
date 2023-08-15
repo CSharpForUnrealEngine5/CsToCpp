@@ -4,5 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("Animation/AnimSubsystem_SharedLinkedAnimLayers.h")]
 public partial struct FLinkedAnimLayerInstanceData {
 	public UAnimInstance Instance;
-	public TMap<string,TWeakObjectPtr<UAnimInstance>> LinkedFunctions;
+	public TMap<FName,TWeakObjectPtr<UAnimInstance>> LinkedFunctions;
 }

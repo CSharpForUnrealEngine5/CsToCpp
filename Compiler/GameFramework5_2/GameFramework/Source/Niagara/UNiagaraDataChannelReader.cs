@@ -11,19 +11,19 @@ public partial class UNiagaraDataChannelReader : UObject {
 	///<summary>Num</summary>
 	public int Num() { return default; }
 	///<summary>ReadFloat</summary>
-	public double ReadFloat(string VarName,int Index) { return default; }
+	public double ReadFloat(FName VarName,int Index) { return default; }
 	///<summary>ReadVector2D</summary>
-	public FVector2D ReadVector2D(string VarName,int Index) { return default; }
+	public FVector2D ReadVector2D(FName VarName,int Index) { return default; }
 	///<summary>ReadVector</summary>
-	public FVector ReadVector(string VarName,int Index) { return default; }
+	public FVector ReadVector(FName VarName,int Index) { return default; }
 	///<summary>ReadVector4</summary>
-	public FVector4 ReadVector4(string VarName,int Index) { return default; }
+	public FVector4 ReadVector4(FName VarName,int Index) { return default; }
 	///<summary>ReadQuat</summary>
-	public FQuat ReadQuat(string VarName,int Index) { return default; }
+	public FQuat ReadQuat(FName VarName,int Index) { return default; }
 	///<summary>ReadLinearColor</summary>
-	public FLinearColor ReadLinearColor(string VarName,int Index) { return default; }
+	public FLinearColor ReadLinearColor(FName VarName,int Index) { return default; }
 	///<summary>ReadInt</summary>
-	public int ReadInt(string VarName,int Index) { return default; }
+	public int ReadInt(FName VarName,int Index) { return default; }
 	///<summary>ReadBool</summary>
-	public bool ReadBool(string VarName,int Index) { return default; }
+	public bool ReadBool(FName VarName,int Index) { return default; }
 }

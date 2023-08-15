@@ -72,7 +72,7 @@ public partial class UPersonaOptions : UObject {
 	///<summary>Whether to display keys in the timeline&#39;s curve tracks</summary>
 	public bool bTimelineDisplayCurveKeys;
 	///<summary>Whether to snap to various things</summary>
-	public TArray<string> TimelineEnabledSnaps;
+	public TArray<FName> TimelineEnabledSnaps;
 	///<summary>Whether to allow animation assets that are incompatible with the current skeleton/skeletal mesh to be selected.</summary>
 	public bool bAllowIncompatibleSkeletonSelection;
 	///<summary>Whether to use tree view for animation curves</summary>

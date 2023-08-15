@@ -5,9 +5,9 @@ using CSharpToCpp.Utilities;
 public partial class UGameplayTask_PlayContextualAnim : UGameplayTask {
 	public static UClass StaticClass() {return default;}
 	///<summary>PlayContextualAnim</summary>
-	public static UGameplayTask_PlayContextualAnim PlayContextualAnim(AActor Interactor,string InteractorRole,AActor InteractableObject,string InteractableObjectRole,string SectionName,string ExitSectionName,UContextualAnimSceneAsset SceneAsset) { return default; }
+	public static UGameplayTask_PlayContextualAnim PlayContextualAnim(AActor Interactor,FName InteractorRole,AActor InteractableObject,FName InteractableObjectRole,FName SectionName,FName ExitSectionName,UContextualAnimSceneAsset SceneAsset) { return default; }
 	///<summary>SetExit</summary>
-	public void SetExit(EPlayContextualAnimExitMode ExitMode,string NewExitSectionName) {}
+	public void SetExit(EPlayContextualAnimExitMode ExitMode,FName NewExitSectionName) {}
 	///<summary>GetStatus</summary>
 	public EPlayContextualAnimStatus GetStatus() { return default; }
 	///<summary>OnSectionEndTimeReached</summary>
@@ -25,13 +25,13 @@ public partial class UGameplayTask_PlayContextualAnim : UGameplayTask {
 	///<summary>SceneAsset</summary>
 	public UContextualAnimSceneAsset SceneAsset;
 	///<summary>InteractorRole</summary>
-	public string InteractorRole;
+	public FName InteractorRole;
 	///<summary>InteractableObject</summary>
 	public AActor InteractableObject;
 	///<summary>InteractableObjectRole</summary>
-	public string InteractableObjectRole;
+	public FName InteractableObjectRole;
 	///<summary>ExitSectionName</summary>
-	public string ExitSectionName;
+	public FName ExitSectionName;
 	///<summary>SceneInstance</summary>
 	public UContextualAnimSceneInstance SceneInstance;
 	///<summary>ActuationComponent</summary>

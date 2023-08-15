@@ -6,7 +6,7 @@ public partial struct FWorldPartitionStreamingQuerySource {
 	public FVector Location;
 	public float Radius;
 	public bool bUseGridLoadingRange;
-	public TArray<string> DataLayers;
+	public TArray<FName> DataLayers;
 	public bool bDataLayersOnly;
 	public bool bSpatialQuery;
 }

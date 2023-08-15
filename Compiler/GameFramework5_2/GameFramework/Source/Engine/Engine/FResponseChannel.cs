@@ -3,6 +3,6 @@ using CSharpToCpp.Utilities;
 ///<summary>Describes response for a single collision response channel</summary>
 [CppInclude("Engine/EngineTypes.h")]
 public partial struct FResponseChannel {
-	public string Channel;
+	public FName Channel;
 	public ECollisionResponse Response;
 }

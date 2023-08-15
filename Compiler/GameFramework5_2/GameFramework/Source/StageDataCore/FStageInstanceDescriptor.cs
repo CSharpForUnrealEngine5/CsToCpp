@@ -6,6 +6,6 @@ public partial struct FStageInstanceDescriptor {
 	public string MachineName;
 	public uint ProcessId;
 	public string RolesStringified;
-	public string FriendlyName;
+	public FName FriendlyName;
 	public int SessionId;
 }

@@ -3,7 +3,7 @@ using CSharpToCpp.Utilities;
 [CppInclude("GroomAsset.h")]
 public partial struct FHairGroupInfo {
 	public int GroupID;
-	public string GroupName;
+	public FName GroupName;
 	public int NumCurves;
 	public int NumGuides;
 	public int NumCurveVertices;

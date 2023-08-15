@@ -3,8 +3,8 @@ using CSharpToCpp.Utilities;
 ///<summary>Used to specify properties of a channel type</summary>
 [CppInclude("Engine/NetDriver.h")]
 public partial struct FChannelDefinition {
-	public string ChannelName;
-	public string ClassName;
+	public FName ChannelName;
+	public FName ClassName;
 	public UClass ChannelClass;
 	public int StaticChannelIndex;
 	public bool bTickOnCreate;

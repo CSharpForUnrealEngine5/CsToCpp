@@ -10,7 +10,7 @@ public partial struct FAutomationScreenshotOptions {
 	public bool bDisableNoisyRenderingFeatures;
 	public bool bDisableTonemapping;
 	public UAutomationViewSettings ViewSettings;
-	public string VisualizeBuffer;
+	public FName VisualizeBuffer;
 	public EComparisonTolerance Tolerance;
 	public FComparisonToleranceAmount ToleranceAmount;
 	public float MaximumLocalError;

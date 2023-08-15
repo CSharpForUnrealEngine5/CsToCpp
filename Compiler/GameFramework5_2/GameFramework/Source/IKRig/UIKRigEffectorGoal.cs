@@ -4,9 +4,9 @@ using CSharpToCpp.Utilities;
 public partial class UIKRigEffectorGoal : UObject {
 	public static UClass StaticClass() {return default;}
 	///<summary>The name used to refer to this goal from outside systems.</summary>
-	public string GoalName;
+	public FName GoalName;
 	///<summary>The name of the bone that this Goal is located at.</summary>
-	public string BoneName;
+	public FName BoneName;
 	///<summary>Range 0-1, default is 1. Blend between the input bone position (0.0) and the current goal position (1.0).</summary>
 	public float PositionAlpha;
 	///<summary>Range 0-1, default is 1. Blend between the input bone rotation (0.0) and the current goal rotation (1.0).</summary>

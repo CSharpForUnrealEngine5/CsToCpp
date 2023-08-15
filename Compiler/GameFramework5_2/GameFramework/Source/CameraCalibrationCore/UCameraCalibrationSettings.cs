@@ -17,7 +17,7 @@ public partial class UCameraCalibrationSettings : UDeveloperSettings {
 	///<summary>Map of Lens Distortion Model Handler classes to the default lens distortion post-process material used by that class</summary>
 	public TMap<UClass,TSoftObjectPtr<UMaterialInterface>> DefaultDistortionMaterials;
 	///<summary>Map of overlay names to override overlay materials</summary>
-	public TMap<string,TSoftObjectPtr<UMaterialInterface>> CalibrationOverlayMaterialOverrides;
+	public TMap<FName,TSoftObjectPtr<UMaterialInterface>> CalibrationOverlayMaterialOverrides;
 	///<summary>Setting to toggle the calibration dataset import and export features</summary>
 	public bool bEnableCalibrationDatasetImportExport;
 }

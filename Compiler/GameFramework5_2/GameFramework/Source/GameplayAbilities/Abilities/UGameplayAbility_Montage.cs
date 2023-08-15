@@ -9,7 +9,7 @@ public partial class UGameplayAbility_Montage : UGameplayAbility {
 	///<summary>PlayRate</summary>
 	public float PlayRate;
 	///<summary>SectionName</summary>
-	public string SectionName;
+	public FName SectionName;
 	///<summary>GameplayEffects to apply and then remove while the animation is playing</summary>
 	public TArray<UClass> GameplayEffectClassesWhileAnimating;
 	///<summary>Deprecated. Use GameplayEffectClassesWhileAnimating instead.</summary>

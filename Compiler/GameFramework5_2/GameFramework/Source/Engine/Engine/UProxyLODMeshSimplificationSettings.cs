@@ -5,5 +5,5 @@ using CSharpToCpp.Utilities;
 public partial class UProxyLODMeshSimplificationSettings : UDeveloperSettings {
 	public static UClass StaticClass() {return default;}
 	///<summary>Mesh reduction plugin to use when simplifying mesh geometry for Hierarchical LOD</summary>
-	public string ProxyLODMeshReductionModuleName;
+	public FName ProxyLODMeshReductionModuleName;
 }

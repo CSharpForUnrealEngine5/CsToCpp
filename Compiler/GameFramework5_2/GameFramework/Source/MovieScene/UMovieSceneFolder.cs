@@ -5,7 +5,7 @@ using CSharpToCpp.Utilities;
 public partial class UMovieSceneFolder : UObject {
 	public static UClass StaticClass() {return default;}
 	///<summary>The name of this folder.</summary>
-	public string FolderName;
+	public FName FolderName;
 	///<summary>The folders contained by this folder.</summary>
 	public TArray<UMovieSceneFolder> ChildFolders;
 	///<summary>The tracks contained by this folder.</summary>

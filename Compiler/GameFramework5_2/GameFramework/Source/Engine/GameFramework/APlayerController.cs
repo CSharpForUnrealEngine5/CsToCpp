@@ -187,7 +187,7 @@ public partial class APlayerController : AController {
 	///<summary>Tell the client to enable or disable voice chat (not muting)</summary>
 	public virtual void ClientEnableNetworkVoice(bool bEnable) {}
 	///<summary>Acknowledge received LevelVisibilityTransactionId</summary>
-	public void ClientAckUpdateLevelVisibility(string PackageName,FNetLevelVisibilityTransactionId TransactionId,bool bClientAckCanMakeVisible) {}
+	public void ClientAckUpdateLevelVisibility(FName PackageName,FNetLevelVisibilityTransactionId TransactionId,bool bClientAckCanMakeVisible) {}
 	///<summary>Toggle voice chat on and off</summary>
 	public virtual void ToggleSpeaking(bool bInSpeaking) {}
 	///<summary>Tells the client that the server has all the information it needs and that it</summary>
@@ -225,13 +225,13 @@ public partial class APlayerController : AController {
 	///<summary>Replicated function called by GameHasEnded().</summary>
 	public void ClientGameEnded(AActor EndGameFocus,bool bIsWinner) {}
 	///<summary>Server uses this to force client into NewState .</summary>
-	public void ClientGotoState(string NewState) {}
+	public void ClientGotoState(FName NewState) {}
 	///<summary>Calls IgnoreLookInput on client</summary>
 	public void ClientIgnoreLookInput(bool bIgnore) {}
 	///<summary>Calls IgnoreMoveInput on client</summary>
 	public void ClientIgnoreMoveInput(bool bIgnore) {}
 	///<summary>Outputs a message to HUD</summary>
-	public void ClientMessage(string S,string Type,float MsgLifeTime) {}
+	public void ClientMessage(string S,FName Type,float MsgLifeTime) {}
 	///<summary>Play Camera Shake</summary>
 	public void ClientStartCameraShake(UClass Shake,float Scale/*=1.0f*/,ECameraShakePlaySpace PlaySpace/*=ECameraShakePlaySpace.CameraLocal*/,FRotator UserPlaySpaceRot/*=FRotator.ZeroRotator*/) {}
 	///<summary>Play Camera Shake localized to a given source</summary>
@@ -241,7 +241,7 @@ public partial class APlayerController : AController {
 	///<summary>Play sound client-side at the specified location</summary>
 	public void ClientPlaySoundAtLocation(USoundBase Sound,FVector Location,float VolumeMultiplier,float PitchMultiplier) {}
 	///<summary>Asynchronously loads the given level in preparation for a streaming map transition.</summary>
-	public void ClientPrepareMapChange(string LevelName,bool bFirst,bool bLast) {}
+	public void ClientPrepareMapChange(FName LevelName,bool bFirst,bool bLast) {}
 	///<summary>Forces the streaming system to disregard the normal logic for the specified duration and</summary>
 	public void ClientPrestreamTextures(AActor ForcedActor,float ForceDuration,bool bEnableStreaming,int CinematicTextureGroups) {}
 	///<summary>Tell client to reset the PlayerController</summary>
@@ -253,7 +253,7 @@ public partial class APlayerController : AController {
 	///<summary>Tell client to fade camera</summary>
 	public void ClientSetCameraFade(bool bEnableFading,FColor FadeColor,FVector2D FadeAlpha,float FadeTime,bool bFadeAudio,bool bHoldWhenFinished) {}
 	///<summary>Replicated function to set camera style on client</summary>
-	public void ClientSetCameraMode(string NewCamMode) {}
+	public void ClientSetCameraMode(FName NewCamMode) {}
 	///<summary>Called by the server to synchronize cinematic transitions with the client</summary>
 	public void ClientSetCinematicMode(bool bInCinematicMode,bool bAffectsMovement,bool bAffectsTurning,bool bAffectsHUD) {}
 	///<summary>Forces the streaming system to disregard the normal logic for the specified duration and</summary>
@@ -279,15 +279,15 @@ public partial class APlayerController : AController {
 	///<summary>Stop camera shake on client.</summary>
 	public void ClientStopCameraShakesFromSource(UCameraShakeSourceComponent SourceComponent,bool bImmediately/*=true*/) {}
 	///<summary>Play a force feedback pattern on the player&#39;s controller</summary>
-	public void K2_ClientPlayForceFeedback(UForceFeedbackEffect ForceFeedbackEffect,string Tag,bool bLooping,bool bIgnoreTimeDilation,bool bPlayWhilePaused) {}
+	public void K2_ClientPlayForceFeedback(UForceFeedbackEffect ForceFeedbackEffect,FName Tag,bool bLooping,bool bIgnoreTimeDilation,bool bPlayWhilePaused) {}
 	///<summary>Internal replicated version of client play force feedback event.</summary>
 	public void ClientPlayForceFeedback_Internal(UForceFeedbackEffect ForceFeedbackEffect,FForceFeedbackParameters Params) {}
 	///<summary>Stops a playing force feedback pattern</summary>
-	public void ClientStopForceFeedback(UForceFeedbackEffect ForceFeedbackEffect,string Tag) {}
+	public void ClientStopForceFeedback(UForceFeedbackEffect ForceFeedbackEffect,FName Tag) {}
 	///<summary>Latent action that controls the playing of force feedback</summary>
 	public void PlayDynamicForceFeedback(float Intensity,float Duration,bool bAffectsLeftLarge,bool bAffectsLeftSmall,bool bAffectsRightLarge,bool bAffectsRightSmall,EDynamicForceFeedbackAction Action,FLatentActionInfo LatentInfo) {}
 	///<summary>TestServerLevelVisibilityChange</summary>
-	public void TestServerLevelVisibilityChange(string PackageName,string FileName) {}
+	public void TestServerLevelVisibilityChange(FName PackageName,FName FileName) {}
 	///<summary>Play a haptic feedback curve on the player&#39;s controller</summary>
 	public void PlayHapticEffect(UHapticFeedbackEffect_Base HapticEffect,EControllerHand Hand,float Scale/*=1.0f*/,bool bLoop/*=false*/) {}
 	///<summary>Stops a playing haptic feedback curve</summary>
@@ -305,7 +305,7 @@ public partial class APlayerController : AController {
 	///<summary>Internal clientside implementation of ClientTravel - use ClientTravel to call this</summary>
 	public void ClientTravelInternal(string URL,ETravelType TravelType,bool bSeamless,FGuid MapPackageGuid) {}
 	///<summary>Replicated Update streaming status</summary>
-	public void ClientUpdateLevelStreamingStatus(string PackageName,bool bNewShouldBeLoaded,bool bNewShouldBeVisible,bool bNewShouldBlockOnLoad,int LODIndex,FNetLevelVisibilityTransactionId TransactionId,bool bNewShouldBlockOnUnload) {}
+	public void ClientUpdateLevelStreamingStatus(FName PackageName,bool bNewShouldBeLoaded,bool bNewShouldBeVisible,bool bNewShouldBlockOnLoad,int LODIndex,FNetLevelVisibilityTransactionId TransactionId,bool bNewShouldBlockOnUnload) {}
 	///<summary>Replicated Update streaming status.  This version allows for the streaming state of many levels to be sent in a single RPC.</summary>
 	public void ClientUpdateMultipleLevelsStreamingStatus(TArray<FUpdateLevelStreamingLevelStatus> LevelStatuses) {}
 	///<summary>Notify client they were kicked from the server</summary>
@@ -321,11 +321,11 @@ public partial class APlayerController : AController {
 	///<summary>acknowledge possession of pawn</summary>
 	public void ServerAcknowledgePossession(APawn P) {}
 	///<summary>change mode of camera</summary>
-	public void ServerCamera(string NewMode) {}
+	public void ServerCamera(FName NewMode) {}
 	///<summary>Change name of server</summary>
 	public void ServerChangeName(string S) {}
 	///<summary>Called to notify the server when the client has loaded a new world via seamless traveling</summary>
-	public void ServerNotifyLoadedWorld(string WorldPackageName) {}
+	public void ServerNotifyLoadedWorld(FName WorldPackageName) {}
 	///<summary>Replicate pause request to the server</summary>
 	public void ServerPause() {}
 	///<summary>Attempts to restart this player, generally called from the client upon respawn request.</summary>
@@ -353,7 +353,7 @@ public partial class APlayerController : AController {
 	///<summary>Move camera to current user</summary>
 	public void ServerViewSelf(FViewTargetTransitionParams TransitionParams) {}
 	///<summary>@todo document</summary>
-	public void ClientTeamMessage(APlayerState SenderPlayerState,string S,string Type,float MsgLifeTime) {}
+	public void ClientTeamMessage(APlayerState SenderPlayerState,string S,FName Type,float MsgLifeTime) {}
 	///<summary>Used by UGameplayDebuggingControllerComponent to replicate messages for AI debugging in network games.</summary>
 	public void ServerToggleAILogging() {}
 	///<summary>Add Pitch (look up) input. This value is multiplied by InputPitchScale.</summary>
@@ -389,7 +389,7 @@ public partial class APlayerController : AController {
 	///<summary>Set the virtual joystick visibility.</summary>
 	public virtual void SetVirtualJoystickVisibility(bool bVisible) {}
 	///<summary>Change Camera mode</summary>
-	public virtual void Camera(string NewMode) {}
+	public virtual void Camera(FName NewMode) {}
 	///<summary>Set the view target blending with variable control</summary>
 	public virtual void SetViewTargetWithBlend(AActor NewViewTarget,float BlendTime/*=0f*/,EViewTargetBlendFunction BlendFunc/*=VTBlend_Linear*/,float BlendExp/*=0f*/,bool bLockOutgoing/*=false*/) {}
 	///<summary>InputComponent we use when player is in Inactive state.</summary>

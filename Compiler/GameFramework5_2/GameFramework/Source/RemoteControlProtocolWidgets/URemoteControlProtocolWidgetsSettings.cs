@@ -5,7 +5,7 @@ using CSharpToCpp.Utilities;
 public partial class URemoteControlProtocolWidgetsSettings : UObject {
 	public static UClass StaticClass() {return default;}
 	///<summary>Protocol types to be hidden in the list view.</summary>
-	public TSet<string> HiddenProtocolTypeNames;
+	public TSet<FName> HiddenProtocolTypeNames;
 	///<summary>Last protocol added. Used as default in the binding list.</summary>
-	public string PreferredProtocol;
+	public FName PreferredProtocol;
 }

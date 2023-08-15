@@ -73,21 +73,21 @@ public partial class UInputSettings : UObject {
 	///<summary>Programmatically add an action mapping to the project defaults</summary>
 	public void AddActionMapping(FInputActionKeyMapping KeyMapping,bool bForceRebuildKeymaps/*=true*/) {}
 	///<summary>GetActionMappingByName</summary>
-	public void GetActionMappingByName(string InActionName,TArray<FInputActionKeyMapping> OutMappings) {}
+	public void GetActionMappingByName(FName InActionName,TArray<FInputActionKeyMapping> OutMappings) {}
 	///<summary>Programmatically remove an action mapping to the project defaults</summary>
 	public void RemoveActionMapping(FInputActionKeyMapping KeyMapping,bool bForceRebuildKeymaps/*=true*/) {}
 	///<summary>Programmatically add an axis mapping to the project defaults</summary>
 	public void AddAxisMapping(FInputAxisKeyMapping KeyMapping,bool bForceRebuildKeymaps/*=true*/) {}
 	///<summary>Retrieve all axis mappings by a certain name.</summary>
-	public void GetAxisMappingByName(string InAxisName,TArray<FInputAxisKeyMapping> OutMappings) {}
+	public void GetAxisMappingByName(FName InAxisName,TArray<FInputAxisKeyMapping> OutMappings) {}
 	///<summary>Programmatically remove an axis mapping to the project defaults</summary>
 	public void RemoveAxisMapping(FInputAxisKeyMapping KeyMapping,bool bForceRebuildKeymaps/*=true*/) {}
 	///<summary>Flush the current mapping values to the config file</summary>
 	public void SaveKeyMappings() {}
 	///<summary>Populate a list of all defined action names</summary>
-	public void GetActionNames(TArray<string> ActionNames) {}
+	public void GetActionNames(TArray<FName> ActionNames) {}
 	///<summary>Populate a list of all defined axis names</summary>
-	public void GetAxisNames(TArray<string> AxisNames) {}
+	public void GetAxisNames(TArray<FName> AxisNames) {}
 	///<summary>When changes are made to the default mappings, push those changes out to PlayerInput key maps</summary>
 	public void ForceRebuildKeymaps() {}
 }

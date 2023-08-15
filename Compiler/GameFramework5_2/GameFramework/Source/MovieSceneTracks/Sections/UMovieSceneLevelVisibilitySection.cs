@@ -9,11 +9,11 @@ public partial class UMovieSceneLevelVisibilitySection : UMovieSceneSection {
 	///<summary>SetVisibility</summary>
 	public void SetVisibility(ELevelVisibility InVisibility) {}
 	///<summary>GetLevelNames</summary>
-	public TArray<string> GetLevelNames() { return default; }
+	public TArray<FName> GetLevelNames() { return default; }
 	///<summary>SetLevelNames</summary>
-	public void SetLevelNames(TArray<string> InLevelNames) {}
+	public void SetLevelNames(TArray<FName> InLevelNames) {}
 	///<summary>Whether or not the levels in this section should be visible or hidden.</summary>
 	public ELevelVisibility Visibility;
 	///<summary>The short names of the levels who&#39;s visibility is controlled by this section.</summary>
-	public TArray<string> LevelNames;
+	public TArray<FName> LevelNames;
 }

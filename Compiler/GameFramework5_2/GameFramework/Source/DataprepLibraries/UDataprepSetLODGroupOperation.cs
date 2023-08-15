@@ -5,5 +5,5 @@ using CSharpToCpp.Utilities;
 public partial class UDataprepSetLODGroupOperation : UDataprepOperation {
 	public static UClass StaticClass() {return default;}
 	///<summary>GroupName</summary>
-	public string GroupName;
+	public FName GroupName;
 }

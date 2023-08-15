@@ -2,7 +2,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Library/DMXImportGDTF.h")]
 public partial struct FDMXImportGDTFChannelFunction {
-	public string Name;
+	public FName Name;
 	public FDMXImportGDTFAttribute Attribute;
 	public string OriginalAttribute;
 	public FDMXImportGDTFDMXValue DMXFrom;

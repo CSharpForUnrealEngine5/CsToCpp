@@ -7,5 +7,5 @@ public partial class URenderGridPropsSourceRemoteControl : URenderGridPropsSourc
 	///<summary>The source of properties, which is a remote control preset.</summary>
 	public URemoteControlPreset RemoteControlPreset;
 	///<summary>The preset group (of the remote control preset) that we should obtain the properties from.</summary>
-	public string ActivePresetGroup;
+	public FName ActivePresetGroup;
 }

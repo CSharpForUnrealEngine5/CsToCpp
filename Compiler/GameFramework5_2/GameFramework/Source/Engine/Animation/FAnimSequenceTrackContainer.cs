@@ -4,5 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("Animation/AnimSequence.h")]
 public partial struct FAnimSequenceTrackContainer {
 	public TArray<FRawAnimSequenceTrack> AnimationTracks;
-	public TArray<string> TrackNames;
+	public TArray<FName> TrackNames;
 }

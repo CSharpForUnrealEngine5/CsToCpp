@@ -21,7 +21,7 @@ public partial class USkeleton : UObject {
 	///<summary>List of blend profiles available in this skeleton</summary>
 	public TArray<UBlendProfile> BlendProfiles;
 	///<summary>Get the specified blend profile by name</summary>
-	public UBlendProfile GetBlendProfile(string InProfileName) { return default; }
+	public UBlendProfile GetBlendProfile(FName InProfileName) { return default; }
 	///<summary>serialized slot groups and slot names.</summary>
 	public TArray<FAnimSlotGroup> SlotGroups;
 	///<summary>The default skeletal mesh to use when previewing this skeleton</summary>
@@ -31,7 +31,7 @@ public partial class USkeleton : UObject {
 	///<summary>RigConfig</summary>
 	public FRigConfiguration RigConfig;
 	///<summary>AnimNotifiers that has been created. Right now there is no delete step for this, but in the future we&#39;ll supply delete*</summary>
-	public TArray<string> AnimationNotifies;
+	public TArray<FName> AnimationNotifies;
 	///<summary>Attached assets component for this skeleton</summary>
 	public FPreviewAssetAttachContainer PreviewAttachedAssetContainer;
 	///<summary>AddCompatibleSkeleton</summary>

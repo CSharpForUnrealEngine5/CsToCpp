@@ -12,7 +12,7 @@ public partial struct FEnvTraceData {
 	public float PostProjectionVerticalOffset;
 	public ETraceTypeQuery TraceChannel;
 	public ECollisionChannel SerializedChannel;
-	public string TraceProfileName;
+	public FName TraceProfileName;
 	public EEnvTraceShape TraceShape;
 	public EEnvQueryTrace TraceMode;
 	public bool bTraceComplex;

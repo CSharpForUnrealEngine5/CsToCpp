@@ -16,7 +16,7 @@ public partial class UPCGStaticMeshSpawnerSettings : UPCGSettings {
 	///<summary>InstancePackerInstance</summary>
 	public UPCGInstancePackerBase InstancePackerInstance;
 	///<summary>Attribute name to store mesh SoftObjectPaths inside if the output pin is connected. Note: Will overwrite existing data if the attribute name already exists.</summary>
-	public string OutAttributeName;
+	public FName OutAttributeName;
 	///<summary>Meshes_DEPRECATED</summary>
 	public TArray<FPCGStaticMeshSpawnerEntry> Meshes_DEPRECATED;
 }

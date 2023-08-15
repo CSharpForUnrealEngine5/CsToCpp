@@ -4,5 +4,5 @@ using CSharpToCpp.Utilities;
 public partial struct FWaterBrushActorDefaults {
 	public FWaterCurveSettings CurveSettings;
 	public FWaterBodyHeightmapSettings HeightmapSettings;
-	public TMap<string,FWaterBodyWeightmapSettings> LayerWeightmapSettings;
+	public TMap<FName,FWaterBodyWeightmapSettings> LayerWeightmapSettings;
 }

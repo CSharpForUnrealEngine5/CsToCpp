@@ -17,7 +17,7 @@ public partial struct FPCGMetadataTypesConstantStruct {
 	public string StringValue;
 	public bool BoolValue;
 	public FRotator RotatorValue;
-	public string NameValue;
+	public FName NameValue;
 	public FSoftClassPath SoftClassPathValue;
 	public FSoftObjectPath SoftObjectPathValue;
 	public bool bAllowsTypeChange;

@@ -8,9 +8,9 @@ public partial class UGameplayBehaviorsBlueprintFunctionLibrary : UBlueprintFunc
 	///<summary>SetBlackboardValueAsGameplayTag</summary>
 	public static void SetBlackboardValueAsGameplayTag(UBTNode NodeOwner,FBlackboardKeySelector Key,FGameplayTagContainer Value) {}
 	///<summary>AddGameplayTagFilterToBlackboardKeySelector</summary>
-	public static void AddGameplayTagFilterToBlackboardKeySelector(FBlackboardKeySelector InSelector,UObject Owner,string PropertyName) {}
+	public static void AddGameplayTagFilterToBlackboardKeySelector(FBlackboardKeySelector InSelector,UObject Owner,FName PropertyName) {}
 	///<summary>GetBlackboardValueAsGameplayTagFromBlackboardComp</summary>
-	public static FGameplayTagContainer GetBlackboardValueAsGameplayTagFromBlackboardComp(UBlackboardComponent BlackboardComp,string KeyName) { return default; }
+	public static FGameplayTagContainer GetBlackboardValueAsGameplayTagFromBlackboardComp(UBlackboardComponent BlackboardComp,FName KeyName) { return default; }
 	///<summary>SetValueAsGameplayTagForBlackboardComp</summary>
-	public static void SetValueAsGameplayTagForBlackboardComp(UBlackboardComponent BlackboardComp,string KeyName,FGameplayTagContainer GameplayTagValue) {}
+	public static void SetValueAsGameplayTagForBlackboardComp(UBlackboardComponent BlackboardComp,FName KeyName,FGameplayTagContainer GameplayTagValue) {}
 }

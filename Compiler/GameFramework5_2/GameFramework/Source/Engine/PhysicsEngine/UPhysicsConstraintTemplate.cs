@@ -10,11 +10,11 @@ public partial class UPhysicsConstraintTemplate : UObject {
 	///<summary>When no profile is selected, use these settings. Only needed in editor as we serialize it into DefaultInstance on save</summary>
 	public FConstraintProfileProperties DefaultProfile;
 	///<summary>JointName_DEPRECATED</summary>
-	public string JointName_DEPRECATED;
+	public FName JointName_DEPRECATED;
 	///<summary>ConstraintBone1_DEPRECATED</summary>
-	public string ConstraintBone1_DEPRECATED;
+	public FName ConstraintBone1_DEPRECATED;
 	///<summary>ConstraintBone2_DEPRECATED</summary>
-	public string ConstraintBone2_DEPRECATED;
+	public FName ConstraintBone2_DEPRECATED;
 	///<summary>Pos1_DEPRECATED</summary>
 	public FVector Pos1_DEPRECATED;
 	///<summary>PriAxis1_DEPRECATED</summary>

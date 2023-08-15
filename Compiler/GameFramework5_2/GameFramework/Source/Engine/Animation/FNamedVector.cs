@@ -4,5 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("Animation/AnimationTypes.h")]
 public partial struct FNamedVector {
 	public FVector Value;
-	public string Name;
+	public FName Name;
 }

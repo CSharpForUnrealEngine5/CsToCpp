@@ -23,7 +23,7 @@ public partial class UAppleARKitFaceMeshComponent : UProceduralMeshComponent {
 	///<summary>Returns the frame timestamp that was last used to update this component</summary>
 	public float GetLastUpdateTimestamp() { return default; }
 	///<summary>Starts LiveLink publishing of this face component&#39;s data so that it can be used by the animation system</summary>
-	public void PublishViaLiveLink(string SubjectName) {}
+	public void PublishViaLiveLink(FName SubjectName) {}
 	///<summary>Get the transform that the AR camera has detected</summary>
 	public FTransform GetTransform() { return default; }
 	///<summary>Indicates whether the face mesh data should be built for rendering or not</summary>
@@ -39,7 +39,7 @@ public partial class UAppleARKitFaceMeshComponent : UProceduralMeshComponent {
 	///<summary>Used when rendering the face mesh (mostly debug reasons)</summary>
 	public UMaterialInterface FaceMaterial;
 	///<summary>Used to identify this component&#39;s face ar data uniquely as part of the LiveLink animation pipeline</summary>
-	public string LiveLinkSubjectName;
+	public FName LiveLinkSubjectName;
 	///<summary>The set of changed curves to replicate to the other clients</summary>
 	public TArray<FNetQuantizeFaceCurve> RemoteCurves;
 	///<summary>Merges in the face curve deltas and pushes them to LiveLink</summary>

@@ -2,7 +2,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("PBIK_Shared.h")]
 public partial struct FPBIKBoneSetting {
-	public string Bone;
+	public FName Bone;
 	public float RotationStiffness;
 	public float PositionStiffness;
 	public EPBIKLimitType X;

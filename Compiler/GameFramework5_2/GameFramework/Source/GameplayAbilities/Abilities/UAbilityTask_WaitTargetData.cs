@@ -17,9 +17,9 @@ public partial class UAbilityTask_WaitTargetData : UAbilityTask {
 	///<summary>OnTargetDataCancelledCallback</summary>
 	public void OnTargetDataCancelledCallback(FGameplayAbilityTargetDataHandle Data) {}
 	///<summary>Spawns target actor and waits for it to return valid data or to be canceled.</summary>
-	public static UAbilityTask_WaitTargetData WaitTargetData(UGameplayAbility OwningAbility,string TaskInstanceName,EGameplayTargetingConfirmation ConfirmationType,UClass Class) { return default; }
+	public static UAbilityTask_WaitTargetData WaitTargetData(UGameplayAbility OwningAbility,FName TaskInstanceName,EGameplayTargetingConfirmation ConfirmationType,UClass Class) { return default; }
 	///<summary>Uses specified target actor and waits for it to return valid data or to be canceled.</summary>
-	public static UAbilityTask_WaitTargetData WaitTargetDataUsingActor(UGameplayAbility OwningAbility,string TaskInstanceName,EGameplayTargetingConfirmation ConfirmationType,AGameplayAbilityTargetActor TargetActor) { return default; }
+	public static UAbilityTask_WaitTargetData WaitTargetDataUsingActor(UGameplayAbility OwningAbility,FName TaskInstanceName,EGameplayTargetingConfirmation ConfirmationType,AGameplayAbilityTargetActor TargetActor) { return default; }
 	///<summary>BeginSpawningActor</summary>
 	public bool BeginSpawningActor(UGameplayAbility OwningAbility,UClass Class,AGameplayAbilityTargetActor SpawnedActor) { return default; }
 	///<summary>FinishSpawningActor</summary>

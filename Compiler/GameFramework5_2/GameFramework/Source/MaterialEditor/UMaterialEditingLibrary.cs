@@ -27,13 +27,13 @@ public partial class UMaterialEditingLibrary : UBlueprintFunctionLibrary {
 	///<summary>Layouts the expressions in a grid pattern</summary>
 	public static void LayoutMaterialExpressions(UMaterial Material) {}
 	///<summary>Get the default scalar (float) parameter value from a Material</summary>
-	public static float GetMaterialDefaultScalarParameterValue(UMaterial Material,string ParameterName) { return default; }
+	public static float GetMaterialDefaultScalarParameterValue(UMaterial Material,FName ParameterName) { return default; }
 	///<summary>Get the default texture parameter value from a Material</summary>
-	public static UTexture GetMaterialDefaultTextureParameterValue(UMaterial Material,string ParameterName) { return default; }
+	public static UTexture GetMaterialDefaultTextureParameterValue(UMaterial Material,FName ParameterName) { return default; }
 	///<summary>Get the default vector parameter value from a Material</summary>
-	public static FLinearColor GetMaterialDefaultVectorParameterValue(UMaterial Material,string ParameterName) { return default; }
+	public static FLinearColor GetMaterialDefaultVectorParameterValue(UMaterial Material,FName ParameterName) { return default; }
 	///<summary>Get the default static switch parameter value from a Material</summary>
-	public static bool GetMaterialDefaultStaticSwitchParameterValue(UMaterial Material,string ParameterName) { return default; }
+	public static bool GetMaterialDefaultStaticSwitchParameterValue(UMaterial Material,FName ParameterName) { return default; }
 	///<summary>Get the set of selected nodes from an active material editor</summary>
 	public static TSet<UObject> GetMaterialSelectedNodes(UMaterial Material) { return default; }
 	///<summary>Get the node providing the output for a given material property from an active material editor</summary>
@@ -65,49 +65,49 @@ public partial class UMaterialEditingLibrary : UBlueprintFunctionLibrary {
 	///<summary>Clears all material parameters set by this Material Instance</summary>
 	public static void ClearAllMaterialInstanceParameters(UMaterialInstanceConstant Instance) {}
 	///<summary>Get the current scalar (float) parameter value from a Material Instance</summary>
-	public static float GetMaterialInstanceScalarParameterValue(UMaterialInstanceConstant Instance,string ParameterName,EMaterialParameterAssociation Association/*=EMaterialParameterAssociation.GlobalParameter*/) { return default; }
+	public static float GetMaterialInstanceScalarParameterValue(UMaterialInstanceConstant Instance,FName ParameterName,EMaterialParameterAssociation Association/*=EMaterialParameterAssociation.GlobalParameter*/) { return default; }
 	///<summary>Set the scalar (float) parameter value for a Material Instance</summary>
-	public static bool SetMaterialInstanceScalarParameterValue(UMaterialInstanceConstant Instance,string ParameterName,float Value,EMaterialParameterAssociation Association/*=EMaterialParameterAssociation.GlobalParameter*/) { return default; }
+	public static bool SetMaterialInstanceScalarParameterValue(UMaterialInstanceConstant Instance,FName ParameterName,float Value,EMaterialParameterAssociation Association/*=EMaterialParameterAssociation.GlobalParameter*/) { return default; }
 	///<summary>Get the current texture parameter value from a Material Instance</summary>
-	public static UTexture GetMaterialInstanceTextureParameterValue(UMaterialInstanceConstant Instance,string ParameterName,EMaterialParameterAssociation Association/*=EMaterialParameterAssociation.GlobalParameter*/) { return default; }
+	public static UTexture GetMaterialInstanceTextureParameterValue(UMaterialInstanceConstant Instance,FName ParameterName,EMaterialParameterAssociation Association/*=EMaterialParameterAssociation.GlobalParameter*/) { return default; }
 	///<summary>Set the texture parameter value for a Material Instance</summary>
-	public static bool SetMaterialInstanceTextureParameterValue(UMaterialInstanceConstant Instance,string ParameterName,UTexture Value,EMaterialParameterAssociation Association/*=EMaterialParameterAssociation.GlobalParameter*/) { return default; }
+	public static bool SetMaterialInstanceTextureParameterValue(UMaterialInstanceConstant Instance,FName ParameterName,UTexture Value,EMaterialParameterAssociation Association/*=EMaterialParameterAssociation.GlobalParameter*/) { return default; }
 	///<summary>Get the current texture parameter value from a Material Instance</summary>
-	public static URuntimeVirtualTexture GetMaterialInstanceRuntimeVirtualTextureParameterValue(UMaterialInstanceConstant Instance,string ParameterName,EMaterialParameterAssociation Association/*=EMaterialParameterAssociation.GlobalParameter*/) { return default; }
+	public static URuntimeVirtualTexture GetMaterialInstanceRuntimeVirtualTextureParameterValue(UMaterialInstanceConstant Instance,FName ParameterName,EMaterialParameterAssociation Association/*=EMaterialParameterAssociation.GlobalParameter*/) { return default; }
 	///<summary>Set the texture parameter value for a Material Instance</summary>
-	public static bool SetMaterialInstanceRuntimeVirtualTextureParameterValue(UMaterialInstanceConstant Instance,string ParameterName,URuntimeVirtualTexture Value,EMaterialParameterAssociation Association/*=EMaterialParameterAssociation.GlobalParameter*/) { return default; }
+	public static bool SetMaterialInstanceRuntimeVirtualTextureParameterValue(UMaterialInstanceConstant Instance,FName ParameterName,URuntimeVirtualTexture Value,EMaterialParameterAssociation Association/*=EMaterialParameterAssociation.GlobalParameter*/) { return default; }
 	///<summary>Get the current texture parameter value from a Material Instance</summary>
-	public static USparseVolumeTexture GetMaterialInstanceSparseVolumeTextureParameterValue(UMaterialInstanceConstant Instance,string ParameterName,EMaterialParameterAssociation Association/*=EMaterialParameterAssociation.GlobalParameter*/) { return default; }
+	public static USparseVolumeTexture GetMaterialInstanceSparseVolumeTextureParameterValue(UMaterialInstanceConstant Instance,FName ParameterName,EMaterialParameterAssociation Association/*=EMaterialParameterAssociation.GlobalParameter*/) { return default; }
 	///<summary>Set the texture parameter value for a Material Instance</summary>
-	public static bool SetMaterialInstanceSparseVolumeTextureParameterValue(UMaterialInstanceConstant Instance,string ParameterName,USparseVolumeTexture Value,EMaterialParameterAssociation Association/*=EMaterialParameterAssociation.GlobalParameter*/) { return default; }
+	public static bool SetMaterialInstanceSparseVolumeTextureParameterValue(UMaterialInstanceConstant Instance,FName ParameterName,USparseVolumeTexture Value,EMaterialParameterAssociation Association/*=EMaterialParameterAssociation.GlobalParameter*/) { return default; }
 	///<summary>Get the current vector parameter value from a Material Instance</summary>
-	public static FLinearColor GetMaterialInstanceVectorParameterValue(UMaterialInstanceConstant Instance,string ParameterName,EMaterialParameterAssociation Association/*=EMaterialParameterAssociation.GlobalParameter*/) { return default; }
+	public static FLinearColor GetMaterialInstanceVectorParameterValue(UMaterialInstanceConstant Instance,FName ParameterName,EMaterialParameterAssociation Association/*=EMaterialParameterAssociation.GlobalParameter*/) { return default; }
 	///<summary>Set the vector parameter value for a Material Instance</summary>
-	public static bool SetMaterialInstanceVectorParameterValue(UMaterialInstanceConstant Instance,string ParameterName,FLinearColor Value,EMaterialParameterAssociation Association/*=EMaterialParameterAssociation.GlobalParameter*/) { return default; }
+	public static bool SetMaterialInstanceVectorParameterValue(UMaterialInstanceConstant Instance,FName ParameterName,FLinearColor Value,EMaterialParameterAssociation Association/*=EMaterialParameterAssociation.GlobalParameter*/) { return default; }
 	///<summary>Get the current static switch parameter value from a Material Instance</summary>
-	public static bool GetMaterialInstanceStaticSwitchParameterValue(UMaterialInstanceConstant Instance,string ParameterName,EMaterialParameterAssociation Association/*=EMaterialParameterAssociation.GlobalParameter*/) { return default; }
+	public static bool GetMaterialInstanceStaticSwitchParameterValue(UMaterialInstanceConstant Instance,FName ParameterName,EMaterialParameterAssociation Association/*=EMaterialParameterAssociation.GlobalParameter*/) { return default; }
 	///<summary>Set the static switch parameter value for a Material Instance</summary>
-	public static bool SetMaterialInstanceStaticSwitchParameterValue(UMaterialInstanceConstant Instance,string ParameterName,bool Value,EMaterialParameterAssociation Association/*=EMaterialParameterAssociation.GlobalParameter*/) { return default; }
+	public static bool SetMaterialInstanceStaticSwitchParameterValue(UMaterialInstanceConstant Instance,FName ParameterName,bool Value,EMaterialParameterAssociation Association/*=EMaterialParameterAssociation.GlobalParameter*/) { return default; }
 	///<summary>Called after making modifications to a Material Instance to recompile shaders etc.</summary>
 	public static void UpdateMaterialInstance(UMaterialInstanceConstant Instance) {}
 	///<summary>Gets all direct child mat instances</summary>
 	public static void GetChildInstances(UMaterialInterface Parent,TArray<FAssetData> ChildInstances) {}
 	///<summary>Gets all scalar parameter names</summary>
-	public static void GetScalarParameterNames(UMaterialInterface Material,TArray<string> ParameterNames) {}
+	public static void GetScalarParameterNames(UMaterialInterface Material,TArray<FName> ParameterNames) {}
 	///<summary>Gets all vector parameter names</summary>
-	public static void GetVectorParameterNames(UMaterialInterface Material,TArray<string> ParameterNames) {}
+	public static void GetVectorParameterNames(UMaterialInterface Material,TArray<FName> ParameterNames) {}
 	///<summary>Gets all texture parameter names</summary>
-	public static void GetTextureParameterNames(UMaterialInterface Material,TArray<string> ParameterNames) {}
+	public static void GetTextureParameterNames(UMaterialInterface Material,TArray<FName> ParameterNames) {}
 	///<summary>Gets all static switch parameter names</summary>
-	public static void GetStaticSwitchParameterNames(UMaterialInterface Material,TArray<string> ParameterNames) {}
+	public static void GetStaticSwitchParameterNames(UMaterialInterface Material,TArray<FName> ParameterNames) {}
 	///<summary>Returns the path of the asset where the parameter originated, as well as true/false if it was found</summary>
-	public static bool GetScalarParameterSource(UMaterialInterface Material,string ParameterName,FSoftObjectPath ParameterSource) { return default; }
+	public static bool GetScalarParameterSource(UMaterialInterface Material,FName ParameterName,FSoftObjectPath ParameterSource) { return default; }
 	///<summary>Returns the path of the asset where the parameter originated, as well as true/false if it was found</summary>
-	public static bool GetVectorParameterSource(UMaterialInterface Material,string ParameterName,FSoftObjectPath ParameterSource) { return default; }
+	public static bool GetVectorParameterSource(UMaterialInterface Material,FName ParameterName,FSoftObjectPath ParameterSource) { return default; }
 	///<summary>Returns the path of the asset where the parameter originated, as well as true/false if it was found</summary>
-	public static bool GetTextureParameterSource(UMaterialInterface Material,string ParameterName,FSoftObjectPath ParameterSource) { return default; }
+	public static bool GetTextureParameterSource(UMaterialInterface Material,FName ParameterName,FSoftObjectPath ParameterSource) { return default; }
 	///<summary>Returns the path of the asset where the parameter originated, as well as true/false if it was found</summary>
-	public static bool GetStaticSwitchParameterSource(UMaterialInterface Material,string ParameterName,FSoftObjectPath ParameterSource) { return default; }
+	public static bool GetStaticSwitchParameterSource(UMaterialInterface Material,FName ParameterName,FSoftObjectPath ParameterSource) { return default; }
 	///<summary>Returns statistics about the given material</summary>
 	public static FMaterialStatistics GetStatistics(UMaterialInterface Material) { return default; }
 }

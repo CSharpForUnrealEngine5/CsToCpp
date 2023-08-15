@@ -4,7 +4,7 @@ using CSharpToCpp.Utilities;
 public partial class UK2Node_Event : UK2Node_EditablePinBase {
 	public static UClass StaticClass() {return default;}
 	///<summary>Name of function signature that this event implements</summary>
-	public string EventSignatureName_DEPRECATED;
+	public FName EventSignatureName_DEPRECATED;
 	///<summary>Class that the function signature is from.</summary>
 	public UClass EventSignatureClass_DEPRECATED;
 	///<summary>Reference for the function this event is linked to</summary>
@@ -14,7 +14,7 @@ public partial class UK2Node_Event : UK2Node_EditablePinBase {
 	///<summary>If true, this event is internal machinery, and should not be marked BlueprintCallable</summary>
 	public bool bInternalEvent;
 	///<summary>If this is not an override, allow user to specify a name for the function created by this entry point</summary>
-	public string CustomFunctionName;
+	public FName CustomFunctionName;
 	///<summary>Additional function flags to apply to this function</summary>
 	public uint FunctionFlags;
 }

@@ -17,15 +17,15 @@ public partial class UVPScoutingSubsystem : UEditorSubsystem {
 	///<summary>Hide VR Sequencer Window</summary>
 	public void HideInfoDisplayPanel() {}
 	///<summary>Check whether a widget UI is open</summary>
-	public bool IsVRScoutingUIOpen(string PanelID) { return default; }
+	public bool IsVRScoutingUIOpen(FName PanelID) { return default; }
 	///<summary>Get UI panel Actor from the passed ID</summary>
-	public AVREditorFloatingUI GetPanelActor(string PanelID) { return default; }
+	public AVREditorFloatingUI GetPanelActor(FName PanelID) { return default; }
 	///<summary>Get UI panel widget from the passed ID</summary>
-	public UUserWidget GetPanelWidget(string PanelID) { return default; }
+	public UUserWidget GetPanelWidget(FName PanelID) { return default; }
 	///<summary>GetActiveEditorVRControllers</summary>
 	public static TArray<UVREditorInteractor> GetActiveEditorVRControllers() { return default; }
 	///<summary>GetVProdPanelID</summary>
-	public static string GetVProdPanelID(EVProdPanelIDs Panel) { return default; }
+	public static FName GetVProdPanelID(EVProdPanelIDs Panel) { return default; }
 	///<summary>GetDirectorName</summary>
 	public static string GetDirectorName() { return default; }
 	///<summary>GetShowName</summary>

@@ -42,29 +42,29 @@ public partial class ULandscapeTexturePatch : ULandscapePatchComponent {
 	///<summary>Set how zero height is interpreted, see comments in ELandscapeTextureHeightPatchZeroHeightMeaning.</summary>
 	public void SetZeroHeightMeaning(ELandscapeTextureHeightPatchZeroHeightMeaning ZeroHeightMeaningIn) {}
 	///<summary>By default, the layer is added with source mode set to be a texture-backed render target.</summary>
-	public virtual void AddWeightPatch(string InWeightmapLayerName,ELandscapeTexturePatchSourceMode SourceMode,bool bUseAlphaChannel) {}
+	public virtual void AddWeightPatch(FName InWeightmapLayerName,ELandscapeTexturePatchSourceMode SourceMode,bool bUseAlphaChannel) {}
 	///<summary>RemoveWeightPatch</summary>
-	public virtual void RemoveWeightPatch(string InWeightmapLayerName) {}
+	public virtual void RemoveWeightPatch(FName InWeightmapLayerName) {}
 	///<summary>RemoveAllWeightPatches</summary>
 	public virtual void RemoveAllWeightPatches() {}
 	///<summary>Sets the soure mode of all weight patches to &quot;None&quot;.</summary>
 	public virtual void DisableAllWeightPatches() {}
 	///<summary>GetAllWeightPatchLayerNames</summary>
-	public TArray<string> GetAllWeightPatchLayerNames() { return default; }
+	public TArray<FName> GetAllWeightPatchLayerNames() { return default; }
 	///<summary>GetWeightPatchSourceMode</summary>
-	public virtual ELandscapeTexturePatchSourceMode GetWeightPatchSourceMode(string InWeightmapLayerName) { return default; }
+	public virtual ELandscapeTexturePatchSourceMode GetWeightPatchSourceMode(FName InWeightmapLayerName) { return default; }
 	///<summary>SetWeightPatchSourceMode</summary>
-	public virtual void SetWeightPatchSourceMode(string InWeightmapLayerName,ELandscapeTexturePatchSourceMode NewMode) {}
+	public virtual void SetWeightPatchSourceMode(FName InWeightmapLayerName,ELandscapeTexturePatchSourceMode NewMode) {}
 	///<summary>SetWeightPatchTextureAsset</summary>
-	public void SetWeightPatchTextureAsset(string InWeightmapLayerName,UTexture TextureIn) {}
+	public void SetWeightPatchTextureAsset(FName InWeightmapLayerName,UTexture TextureIn) {}
 	///<summary>GetWeightPatchRenderTarget</summary>
-	public virtual UTextureRenderTarget2D GetWeightPatchRenderTarget(string InWeightmapLayerName) { return default; }
+	public virtual UTextureRenderTarget2D GetWeightPatchRenderTarget(FName InWeightmapLayerName) { return default; }
 	///<summary>SetUseAlphaChannelForWeightPatch</summary>
-	public virtual void SetUseAlphaChannelForWeightPatch(string InWeightmapLayerName,bool bUseAlphaChannel) {}
+	public virtual void SetUseAlphaChannelForWeightPatch(FName InWeightmapLayerName,bool bUseAlphaChannel) {}
 	///<summary>SetWeightPatchBlendModeOverride</summary>
-	public virtual void SetWeightPatchBlendModeOverride(string InWeightmapLayerName,ELandscapeTexturePatchBlendMode BlendMode) {}
+	public virtual void SetWeightPatchBlendModeOverride(FName InWeightmapLayerName,ELandscapeTexturePatchBlendMode BlendMode) {}
 	///<summary>ClearWeightPatchBlendModeOverride</summary>
-	public virtual void ClearWeightPatchBlendModeOverride(string InWeightmapLayerName) {}
+	public virtual void ClearWeightPatchBlendModeOverride(FName InWeightmapLayerName) {}
 	///<summary>ResolutionX</summary>
 	public int ResolutionX;
 	///<summary>ResolutionY</summary>

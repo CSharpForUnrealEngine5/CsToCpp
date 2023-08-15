@@ -18,7 +18,7 @@ public partial class UPropertyValue : UObject {
 	///<summary>FullDisplayString</summary>
 	public string FullDisplayString;
 	///<summary>PropertySetterName</summary>
-	public string PropertySetterName;
+	public FName PropertySetterName;
 	///<summary>PropertySetterParameterDefaults</summary>
 	public TMap<string,string> PropertySetterParameterDefaults;
 	///<summary>bHasRecordedData</summary>

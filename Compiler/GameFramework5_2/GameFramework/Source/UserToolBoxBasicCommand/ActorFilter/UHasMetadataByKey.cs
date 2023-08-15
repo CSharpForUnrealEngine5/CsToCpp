@@ -4,5 +4,5 @@ using CSharpToCpp.Utilities;
 public partial class UHasMetadataByKey : UBaseActorFilter {
 	public static UClass StaticClass() {return default;}
 	///<summary>Key</summary>
-	public string Key;
+	public FName Key;
 }

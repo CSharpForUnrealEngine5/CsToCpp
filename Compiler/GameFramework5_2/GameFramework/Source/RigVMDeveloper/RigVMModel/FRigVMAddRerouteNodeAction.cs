@@ -5,10 +5,10 @@ using CSharpToCpp.Utilities;
 public partial struct FRigVMAddRerouteNodeAction {
 	public bool bShowAsFullNode;
 	public string CPPType;
-	public string CPPTypeObjectPath;
+	public FName CPPTypeObjectPath;
 	public string DefaultValue;
 	public bool bIsConstant;
-	public string CustomWidgetName;
+	public FName CustomWidgetName;
 	public FVector2D Position;
 	public string NodePath;
 }

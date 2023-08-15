@@ -8,9 +8,9 @@ public partial class URuntimeAssetCacheBPHooks : UBlueprintFunctionLibrary {
 	///<summary>GetAsynchronous</summary>
 	public static int GetAsynchronous(object /*CacheBuilder*/ CacheBuilder,FOnRuntimeAssetCacheAsyncComplete CompletionDelegate) { return default; }
 	///<summary>GetCacheSize</summary>
-	public static int GetCacheSize(string Bucket) { return default; }
+	public static int GetCacheSize(FName Bucket) { return default; }
 	///<summary>ClearCache</summary>
-	public static bool ClearCache(string Bucket) { return default; }
+	public static bool ClearCache(FName Bucket) { return default; }
 	///<summary>WaitAsynchronousCompletion</summary>
 	public static void WaitAsynchronousCompletion(int Handle) {}
 	///<summary>GetAsynchronousResults</summary>

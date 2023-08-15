@@ -22,7 +22,7 @@ public partial class UKismetNodeHelperLibrary : UBlueprintFunctionLibrary {
 	///<summary>Gets the first index not already marked starting from a specific index and returns the bit index selected</summary>
 	public static int GetFirstUnmarkedBit(int Data,int StartIdx,int NumBits) { return default; }
 	///<summary>Gets enumerator name.</summary>
-	public static string GetEnumeratorName(UEnum Enum,byte EnumeratorValue) { return default; }
+	public static FName GetEnumeratorName(UEnum Enum,byte EnumeratorValue) { return default; }
 	///<summary>Gets enumerator name as FString. Use DeisplayName when possible.</summary>
 	public static string GetEnumeratorUserFriendlyName(UEnum Enum,byte EnumeratorValue) { return default; }
 	///<summary>@param Enum - Enumeration</summary>

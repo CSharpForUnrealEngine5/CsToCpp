@@ -2,7 +2,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("BuoyancyTypes.h")]
 public partial struct FSphericalPontoon {
-	public string CenterSocket;
+	public FName CenterSocket;
 	public FVector RelativeLocation;
 	public float Radius;
 	public bool bFXEnabled;

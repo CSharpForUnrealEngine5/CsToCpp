@@ -4,5 +4,5 @@ using CSharpToCpp.Utilities;
 public partial struct FLandscapeSplineSegmentConnection {
 	public ULandscapeSplineControlPoint ControlPoint;
 	public float TangentLen;
-	public string SocketName;
+	public FName SocketName;
 }

@@ -24,7 +24,7 @@ public partial class UPixelStreamingDelegates : UObject {
 	///<summary>OnAllConnectionsClosed</summary>
 	public FAllConnectionsClosed OnAllConnectionsClosed;
 	///<summary>A pixel streaming stat has changed</summary>
-	public void FStatsChanged(string PlayerId,string StatName,float StatValue) {}
+	public void FStatsChanged(string PlayerId,FName StatName,float StatValue) {}
 	///<summary>OnStatChanged</summary>
 	public FStatsChanged OnStatChanged;
 	///<summary>The GPU ran out of available HW encoders and fell back to software encoders</summary>

@@ -5,8 +5,8 @@ using CSharpToCpp.Utilities;
 public partial struct FConcertSyncTransactionActivitySummary {
 	public EConcertSyncTransactionActivitySummaryType TransactionSummaryType;
 	public FText TransactionTitle;
-	public string PrimaryObjectName;
-	public string PrimaryPackageName;
-	public string NewObjectName;
+	public FName PrimaryObjectName;
+	public FName PrimaryPackageName;
+	public FName NewObjectName;
 	public int NumActions;
 }

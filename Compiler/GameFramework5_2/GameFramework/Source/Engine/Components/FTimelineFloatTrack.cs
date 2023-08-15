@@ -5,6 +5,6 @@ using CSharpToCpp.Utilities;
 public partial struct FTimelineFloatTrack {
 	public UCurveFloat FloatCurve;
 	public FOnTimelineFloat InterpFunc;
-	public string TrackName;
-	public string FloatPropertyName;
+	public FName TrackName;
+	public FName FloatPropertyName;
 }

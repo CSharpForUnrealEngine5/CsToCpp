@@ -42,7 +42,7 @@ public partial class UBlueprintEditorSettings : UDeveloperSettings {
 	///<summary>Allows for pin types to be promoted to others, i.e. float to double</summary>
 	public bool bEnableTypePromotion;
 	///<summary>If a pin type is within this list, then it will never be marked as a possible promotable function.</summary>
-	public TSet<string> TypePromotionPinDenyList;
+	public TSet<FName> TypePromotionPinDenyList;
 	///<summary>List of additional category names to show in Blueprints, optionally filtered by parent class type.</summary>
 	public TArray<FAdditionalBlueprintCategory> AdditionalBlueprintCategories;
 	///<summary>How to handle previously-set breakpoints on reload.</summary>

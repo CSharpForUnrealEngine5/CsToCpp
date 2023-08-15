@@ -5,9 +5,9 @@ using CSharpToCpp.Utilities;
 public partial class UOrientationWarpingModifier : UAnimationModifier {
 	public static UClass StaticClass() {return default;}
 	///<summary>EnableWarpingCurveName</summary>
-	public string EnableWarpingCurveName;
+	public FName EnableWarpingCurveName;
 	///<summary>EnableOffsetCurveName</summary>
-	public string EnableOffsetCurveName;
+	public FName EnableOffsetCurveName;
 	///<summary>BlendInTime</summary>
 	public float BlendInTime;
 	///<summary>BlendOutTime</summary>

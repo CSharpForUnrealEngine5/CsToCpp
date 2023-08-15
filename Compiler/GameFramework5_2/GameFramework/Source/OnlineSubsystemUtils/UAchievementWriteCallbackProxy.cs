@@ -8,5 +8,5 @@ public partial class UAchievementWriteCallbackProxy : UOnlineBlueprintCallProxyB
 	///<summary>Called when there is an unsuccessful achievement write</summary>
 	public FAchievementWriteDelegate OnFailure;
 	///<summary>Writes progress about an achievement to the default online subsystem</summary>
-	public static UAchievementWriteCallbackProxy WriteAchievementProgress(UObject WorldContextObject,APlayerController PlayerController,string AchievementName,float Progress/*=100.0f*/,int UserTag/*=0*/) { return default; }
+	public static UAchievementWriteCallbackProxy WriteAchievementProgress(UObject WorldContextObject,APlayerController PlayerController,FName AchievementName,float Progress/*=100.0f*/,int UserTag/*=0*/) { return default; }
 }

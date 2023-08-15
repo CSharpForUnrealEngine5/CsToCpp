@@ -5,7 +5,7 @@ using CSharpToCpp.Utilities;
 public partial class AConcertClientPresenceActor : AActor {
 	public static UClass StaticClass() {return default;}
 	///<summary>The device type that this presence represent (i.e Oculus, Vive, Desktop)</summary>
-	public string PresenceDeviceType;
+	public FName PresenceDeviceType;
 	///<summary>The camera mesh component to show visually where the camera is placed</summary>
 	public UStaticMeshComponent PresenceMeshComponent;
 	///<summary>The text render component to display the associated client&#39;s name</summary>

@@ -24,7 +24,7 @@ public partial class UPropertyEditorTestObject : UObject {
 	///<summary>DoubleProperty</summary>
 	public double DoubleProperty;
 	///<summary>NameProperty</summary>
-	public string NameProperty;
+	public FName NameProperty;
 	///<summary>BoolProperty</summary>
 	public bool BoolProperty;
 	///<summary>StringProperty</summary>
@@ -80,7 +80,7 @@ public partial class UPropertyEditorTestObject : UObject {
 	///<summary>FloatPropertyArray</summary>
 	public TArray<float> FloatPropertyArray;
 	///<summary>NamePropertyArray</summary>
-	public TArray<string> NamePropertyArray;
+	public TArray<FName> NamePropertyArray;
 	///<summary>BoolPropertyArray</summary>
 	public TArray<bool> BoolPropertyArray;
 	///<summary>StringPropertyArray</summary>
@@ -222,7 +222,7 @@ public partial class UPropertyEditorTestObject : UObject {
 	///<summary>EditColorSet</summary>
 	public TSet<EPropertyEditorTestEditColor> EditColorSet;
 	///<summary>NameSet</summary>
-	public TSet<string> NameSet;
+	public TSet<FName> NameSet;
 	///<summary>Int32ToStringMap</summary>
 	public TMap<int,string> Int32ToStringMap;
 	///<summary>StringToMultilineTextMap</summary>
@@ -244,13 +244,13 @@ public partial class UPropertyEditorTestObject : UObject {
 	///<summary>IntToEnumMap</summary>
 	public TMap<int,EPropertyEditorTestEnum> IntToEnumMap;
 	///<summary>NameToNameMap</summary>
-	public TMap<string,string> NameToNameMap;
+	public TMap<FName,FName> NameToNameMap;
 	///<summary>NameToObjectMap</summary>
-	public TMap<string,UObject> NameToObjectMap;
+	public TMap<FName,UObject> NameToObjectMap;
 	///<summary>NameToCustomMap</summary>
-	public TMap<string,FPropertyEditorTestBasicStruct> NameToCustomMap;
+	public TMap<FName,FPropertyEditorTestBasicStruct> NameToCustomMap;
 	///<summary>NameToColorMap</summary>
-	public TMap<string,FLinearColor> NameToColorMap;
+	public TMap<FName,FLinearColor> NameToColorMap;
 	///<summary>IntToCustomMap</summary>
 	public TMap<int,FPropertyEditorTestBasicStruct> IntToCustomMap;
 	///<summary>IntToSubStructMap</summary>

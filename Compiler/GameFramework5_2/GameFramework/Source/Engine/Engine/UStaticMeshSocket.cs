@@ -4,7 +4,7 @@ using CSharpToCpp.Utilities;
 public partial class UStaticMeshSocket : UObject {
 	public static UClass StaticClass() {return default;}
 	///<summary>Defines a named attachment location on the UStaticMesh.</summary>
-	public string SocketName;
+	public FName SocketName;
 	///<summary>RelativeLocation</summary>
 	public FVector RelativeLocation;
 	///<summary>RelativeRotation</summary>

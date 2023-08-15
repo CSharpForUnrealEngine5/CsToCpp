@@ -4,5 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("Curves/NameCurve.h")]
 public partial struct FNameCurveKey {
 	public float Time;
-	public string Value;
+	public FName Value;
 }

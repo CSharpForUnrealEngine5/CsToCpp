@@ -25,7 +25,7 @@ public partial class UGameplayTagsSettings : UGameplayTagsList {
 	///<summary>List of active tag redirects</summary>
 	public TArray<FGameplayTagRedirect> GameplayTagRedirects;
 	///<summary>List of most frequently replicated tags</summary>
-	public TArray<string> CommonlyReplicatedTags;
+	public TArray<FName> CommonlyReplicatedTags;
 	///<summary>Numbers of bits to use for replicating container size, set this based on how large your containers tend to be</summary>
 	public int NumBitsForContainerSize;
 	///<summary>The length in bits of the first segment when net serializing tags. We will serialize NetIndexFirstBitSegment + 1 bit to indicate &quot;more&quot;, which is slower to replicate</summary>

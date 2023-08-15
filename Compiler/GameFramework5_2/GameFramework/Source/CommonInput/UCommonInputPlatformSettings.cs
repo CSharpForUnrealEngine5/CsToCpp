@@ -12,7 +12,7 @@ public partial class UCommonInputPlatformSettings : UPlatformSettings {
 	///<summary>bSupportsGamepad</summary>
 	public bool bSupportsGamepad;
 	///<summary>DefaultGamepadName</summary>
-	public string DefaultGamepadName;
+	public FName DefaultGamepadName;
 	///<summary>bCanChangeGamepadType</summary>
 	public bool bCanChangeGamepadType;
 	///<summary>ControllerData</summary>

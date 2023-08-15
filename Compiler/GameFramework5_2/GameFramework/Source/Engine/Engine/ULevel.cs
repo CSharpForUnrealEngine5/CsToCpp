@@ -5,7 +5,7 @@ using CSharpToCpp.Utilities;
 public partial class ULevel : UObject {
 	public static UClass StaticClass() {return default;}
 	///<summary>List of modified, unsaved actors that needs to be duplicated for PIE</summary>
-	public TMap<string,AActor> ActorsModifiedForPIE;
+	public TMap<FName,AActor> ActorsModifiedForPIE;
 	///<summary>Use external actors, new actor spawned in this level will be external and existing external actors will be loaded on load.</summary>
 	public bool bUseExternalActors;
 	///<summary>The World that has this level in its Levels array.</summary>
@@ -41,7 +41,7 @@ public partial class ULevel : UObject {
 	///<summary>The Guid of each streamable texture refered by FStreamingTextureBuildInfo::TextureLevelIndex</summary>
 	public TArray<FGuid> StreamingTextureGuids;
 	///<summary>The name of each streamable texture referred by FStreamingTextureBuildInfo::TextureLevelIndex</summary>
-	public TArray<string> StreamingTextures;
+	public TArray<FName> StreamingTextures;
 	///<summary>Packed quality level and feature level used when building texture streaming data. This is used by runtime to determine if built data can be used or not.</summary>
 	public uint PackedTextureStreamingQualityLevelFeatureLevel;
 	///<summary>Identifies map build data specific to this level, eg lighting volume samples.</summary>

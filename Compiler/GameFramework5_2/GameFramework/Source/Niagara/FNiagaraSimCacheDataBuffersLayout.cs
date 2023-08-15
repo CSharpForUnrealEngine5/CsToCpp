@@ -2,7 +2,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("NiagaraSimCache.h")]
 public partial struct FNiagaraSimCacheDataBuffersLayout {
-	public string LayoutName;
+	public FName LayoutName;
 	public ENiagaraSimTarget SimTarget;
 	public TArray<FNiagaraSimCacheVariable> Variables;
 	public ushort FloatCount;
@@ -11,7 +11,7 @@ public partial struct FNiagaraSimCacheDataBuffersLayout {
 	public bool bLocalSpace;
 	public bool bAllowInterpolation;
 	public bool bAllowVelocityExtrapolation;
-	public TArray<string> RebaseVariableNames;
-	public TArray<string> InterpVariableNames;
+	public TArray<FName> RebaseVariableNames;
+	public TArray<FName> InterpVariableNames;
 	public ushort ComponentVelocity;
 }

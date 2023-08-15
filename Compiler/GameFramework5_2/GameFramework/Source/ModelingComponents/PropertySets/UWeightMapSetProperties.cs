@@ -5,7 +5,7 @@ using CSharpToCpp.Utilities;
 public partial class UWeightMapSetProperties : UInteractiveToolPropertySet {
 	public static UClass StaticClass() {return default;}
 	///<summary>Select vertex weight map. If configured, the weight map value will be sampled to modulate displacement intensity.</summary>
-	public string WeightMap;
+	public FName WeightMap;
 	///<summary>this function is called provide set of available weight maps</summary>
 	public TArray<string> GetWeightMapsFunc() { return default; }
 	///<summary>internal list used to implement above</summary>

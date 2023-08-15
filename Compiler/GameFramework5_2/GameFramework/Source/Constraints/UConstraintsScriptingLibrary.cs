@@ -7,9 +7,9 @@ public partial class UConstraintsScriptingLibrary : UBlueprintFunctionLibrary {
 	///<summary>Get the manager of the constraints. This object contains delegates to listen to for when constraints are added,deleted,</summary>
 	public static UConstraintsManager GetManager(UWorld InWorld) { return default; }
 	///<summary>Create the transformable handle that deals with getting and setting transforms on this scene component</summary>
-	public static UTransformableComponentHandle CreateTransformableComponentHandle(UWorld InWorld,USceneComponent InSceneComponent,string InSocketName) { return default; }
+	public static UTransformableComponentHandle CreateTransformableComponentHandle(UWorld InWorld,USceneComponent InSceneComponent,FName InSocketName) { return default; }
 	///<summary>Create the transformable handle that deals with getting and setting transforms on this object</summary>
-	public static UTransformableHandle CreateTransformableHandle(UWorld InWorld,UObject InObject,string InAttachmentName/*=NAME_None*/) { return default; }
+	public static UTransformableHandle CreateTransformableHandle(UWorld InWorld,UObject InObject,FName InAttachmentName/*=NAME_None*/) { return default; }
 	///<summary>Create Constraint based on the specified type.</summary>
 	public static UTickableTransformConstraint CreateFromType(UWorld InWorld,ETransformConstraintType InType) { return default; }
 	///<summary>Add Constraint to the system using the incoming parent and child handles with the specified type.</summary>

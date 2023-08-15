@@ -2,7 +2,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("IKRigDataTypes.h")]
 public partial struct FIKRigGoal {
-	public string Name;
+	public FName Name;
 	public EIKRigGoalTransformSource TransformSource;
 	public FBoneReference SourceBone;
 	public FVector Position;

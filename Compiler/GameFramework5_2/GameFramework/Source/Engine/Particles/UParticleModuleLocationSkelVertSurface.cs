@@ -16,11 +16,11 @@ public partial class UParticleModuleLocationSkelVertSurface : UParticleModuleLoc
 	///<summary>A scale on how much of the bone&#39;s velocity a particle will inherit.</summary>
 	public float InheritVelocityScale;
 	///<summary>The parameter name of the skeletal mesh actor that supplies the SkelMeshComponent for in-game.</summary>
-	public string SkelMeshActorParamName;
+	public FName SkelMeshActorParamName;
 	///<summary>The name of the skeletal mesh to use in the editor</summary>
 	public USkeletalMesh EditorSkelMesh;
 	///<summary>This module will only spawn from verts or surfaces associated with the bones in this list</summary>
-	public TArray<string> ValidAssociatedBones;
+	public TArray<FName> ValidAssociatedBones;
 	///<summary>When true use the RestrictToNormal and NormalTolerance values to check surface normals</summary>
 	public bool bEnforceNormalCheck;
 	///<summary>Use this normal to restrict spawning locations</summary>

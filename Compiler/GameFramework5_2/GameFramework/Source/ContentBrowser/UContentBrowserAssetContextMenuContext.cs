@@ -16,5 +16,5 @@ public partial class UContentBrowserAssetContextMenuContext : UObject {
 	///<summary>Loads the selected assets (if needed) which is based on AssetViewUtils::LoadAssetsIfNeeded, this exists primarily</summary>
 	public TArray<UObject> LoadSelectedObjectsIfNeeded() { return default; }
 	///<summary>Loads all the selected assets and returns an array of the objects.</summary>
-	public TArray<UObject> LoadSelectedObjects(TSet<string> LoadTags) { return default; }
+	public TArray<UObject> LoadSelectedObjects(TSet<FName> LoadTags) { return default; }
 }

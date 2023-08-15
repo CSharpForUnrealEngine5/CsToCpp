@@ -7,6 +7,6 @@ public partial struct FRepAttachment {
 	public FVector_NetQuantize100 LocationOffset;
 	public FVector_NetQuantize100 RelativeScale3D;
 	public FRotator RotationOffset;
-	public string AttachSocket;
+	public FName AttachSocket;
 	public USceneComponent AttachComponent;
 }

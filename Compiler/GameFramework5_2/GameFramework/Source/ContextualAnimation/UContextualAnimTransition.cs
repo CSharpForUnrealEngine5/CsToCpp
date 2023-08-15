@@ -4,5 +4,5 @@ using CSharpToCpp.Utilities;
 public partial class UContextualAnimTransition : UObject {
 	public static UClass StaticClass() {return default;}
 	///<summary>CanEnterTransition</summary>
-	public bool CanEnterTransition(UContextualAnimSceneInstance SceneInstance,string FromSection,string ToSection) { return default; }
+	public bool CanEnterTransition(UContextualAnimSceneInstance SceneInstance,FName FromSection,FName ToSection) { return default; }
 }

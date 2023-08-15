@@ -9,5 +9,5 @@ public partial struct FPCGWorldCommonQueryParams {
 	public EPCGWorldQueryFilterByTag ActorTagFilter;
 	public string ActorTagsList;
 	public bool bIgnoreLandscapeHits;
-	public TSet<string> ParsedActorTagsList;
+	public TSet<FName> ParsedActorTagsList;
 }

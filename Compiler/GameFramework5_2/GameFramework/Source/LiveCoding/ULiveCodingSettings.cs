@@ -20,5 +20,5 @@ public partial class ULiveCodingSettings : UObject {
 	///<summary>bPreloadProjectPluginModules</summary>
 	public bool bPreloadProjectPluginModules;
 	///<summary>PreloadNamedModules</summary>
-	public TArray<string> PreloadNamedModules;
+	public TArray<FName> PreloadNamedModules;
 }

@@ -60,7 +60,7 @@ public partial class ADisplayClusterLightCardActor : AActor {
 	///<summary>LightCardComponent</summary>
 	public UStaticMeshComponent LightCardComponent;
 	///<summary>Components added by the IDisplayLightCardActorExtender</summary>
-	public TMap<string,UActorComponent> ExtenderNameToComponentMap;
+	public TMap<FName,UActorComponent> ExtenderNameToComponentMap;
 	///<summary>LabelComponent</summary>
 	public UDisplayClusterLabelComponent LabelComponent;
 	///<summary>Manages stage actor properties</summary>

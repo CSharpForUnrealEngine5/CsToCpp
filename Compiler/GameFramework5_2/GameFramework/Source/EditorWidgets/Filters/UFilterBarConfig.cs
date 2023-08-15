@@ -4,5 +4,5 @@ using CSharpToCpp.Utilities;
 public partial class UFilterBarConfig : UEditorConfigBase {
 	public static UClass StaticClass() {return default;}
 	///<summary>FilterBars</summary>
-	public TMap<string,FFilterBarSettings> FilterBars;
+	public TMap<FName,FFilterBarSettings> FilterBars;
 }

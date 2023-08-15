@@ -15,7 +15,7 @@ public partial class UDisplaceMeshCommonProperties : UInteractiveToolPropertySet
 	///<summary>Number of times to subdivide the mesh before displacing it.</summary>
 	public int Subdivisions;
 	///<summary>Select vertex weight map. If configured, the weight map value will be sampled to modulate displacement intensity.</summary>
-	public string WeightMap;
+	public FName WeightMap;
 	///<summary>GetWeightMapsFunc</summary>
 	public TArray<string> GetWeightMapsFunc() { return default; }
 	///<summary>WeightMapsList</summary>

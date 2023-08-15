@@ -28,7 +28,7 @@ public partial class UPoseWatch : UObject {
 	///<summary>Label</summary>
 	public FText Label;
 	///<summary>IconName_DEPRECATED</summary>
-	public string IconName_DEPRECATED;
+	public FName IconName_DEPRECATED;
 	///<summary>Parent</summary>
 	public TWeakObjectPtr<UPoseWatchFolder> Parent;
 }

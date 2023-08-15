@@ -9,5 +9,5 @@ public partial class UPCGAttributeFilterSettings : UPCGSettings {
 	///<summary>SelectedAttributes</summary>
 	public string SelectedAttributes;
 	///<summary>AttributesToKeep_DEPRECATED</summary>
-	public TArray<string> AttributesToKeep_DEPRECATED;
+	public TArray<FName> AttributesToKeep_DEPRECATED;
 }

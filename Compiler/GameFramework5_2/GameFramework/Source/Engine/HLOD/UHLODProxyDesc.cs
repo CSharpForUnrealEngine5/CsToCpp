@@ -5,7 +5,7 @@ using CSharpToCpp.Utilities;
 public partial class UHLODProxyDesc : UObject {
 	public static UClass StaticClass() {return default;}
 	///<summary>SubActors</summary>
-	public TArray<string> SubActors;
+	public TArray<FName> SubActors;
 	///<summary>StaticMesh</summary>
 	public UStaticMesh StaticMesh;
 	///<summary>ISMComponentsDesc</summary>
@@ -25,7 +25,7 @@ public partial class UHLODProxyDesc : UObject {
 	///<summary>ScreenSize</summary>
 	public int ScreenSize;
 	///<summary>Key</summary>
-	public string Key;
+	public FName Key;
 	///<summary>LODLevel</summary>
 	public int LODLevel;
 	///<summary>LODActorTag</summary>

@@ -19,11 +19,11 @@ public partial class UWidgetBlueprintGeneratedClass : UBlueprintGeneratedClass {
 	///<summary>Animations</summary>
 	public TArray<UWidgetAnimation> Animations;
 	///<summary>All named slots, even the ones that have content already filled into them by a parent class and are not</summary>
-	public TArray<string> NamedSlots;
+	public TArray<FName> NamedSlots;
 	///<summary>All named slots mapped the assigned GUID of their UNamedSlot widget. *</summary>
-	public TMap<string,FGuid> NamedSlotsWithID;
+	public TMap<FName,FGuid> NamedSlotsWithID;
 	///<summary>Available Named Slots for content in a subclass.  These are slots that are accumulated from all super</summary>
-	public TArray<string> AvailableNamedSlots;
+	public TArray<FName> AvailableNamedSlots;
 	///<summary>These are the set of named slots that can be used on an instance of the widget.  This set is slightly</summary>
-	public TArray<string> InstanceNamedSlots;
+	public TArray<FName> InstanceNamedSlots;
 }

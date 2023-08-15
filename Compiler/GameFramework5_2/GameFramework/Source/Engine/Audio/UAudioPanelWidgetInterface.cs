@@ -6,5 +6,5 @@ public partial class UAudioPanelWidgetInterface : UInterface {
 	///<summary>GetEditorName</summary>
 	public FText GetEditorName() { return default; }
 	///<summary>GetIconBrushName</summary>
-	public string GetIconBrushName() { return default; }
+	public FName GetIconBrushName() { return default; }
 }

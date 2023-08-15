@@ -4,5 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("DataProviders/AIDataProvider.h")]
 public partial struct FAIDataProviderValue {
 	public UAIDataProvider DataBinding;
-	public string DataField;
+	public FName DataField;
 }

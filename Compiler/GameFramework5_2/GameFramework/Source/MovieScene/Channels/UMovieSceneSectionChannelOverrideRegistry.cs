@@ -5,5 +5,5 @@ using CSharpToCpp.Utilities;
 public partial class UMovieSceneSectionChannelOverrideRegistry : UObject {
 	public static UClass StaticClass() {return default;}
 	///<summary>Map of channel overrides.</summary>
-	public TMap<string,UMovieSceneChannelOverrideContainer> Overrides;
+	public TMap<FName,UMovieSceneChannelOverrideContainer> Overrides;
 }

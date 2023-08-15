@@ -9,6 +9,6 @@ public partial struct FRigVMMemoryContainer {
 	public TArray<FRigVMRegisterOffset> RegisterOffsets;
 	public TArray<byte> Data;
 	public TArray<UScriptStruct> ScriptStructs;
-	public TMap<string,int> NameMap;
+	public TMap<FName,int> NameMap;
 	public bool bEncounteredErrorDuringLoad;
 }

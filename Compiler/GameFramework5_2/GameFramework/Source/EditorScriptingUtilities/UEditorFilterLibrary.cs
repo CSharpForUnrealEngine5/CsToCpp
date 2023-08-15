@@ -11,11 +11,11 @@ public partial class UEditorFilterLibrary : UBlueprintFunctionLibrary {
 	///<summary>Filter the array based on the Actor&#39;s label (what we see in the editor)</summary>
 	public static TArray<AActor> ByActorLabel(TArray<AActor> TargetArray,string NameSubString,EEditorScriptingStringMatchType StringMatch/*=EEditorScriptingStringMatchType.Contains*/,EEditorScriptingFilterType FilterType/*=EEditorScriptingFilterType.Include*/,bool bIgnoreCase/*=true*/) { return default; }
 	///<summary>Filter the array by Tag the Actor contains</summary>
-	public static TArray<AActor> ByActorTag(TArray<AActor> TargetArray,string Tag,EEditorScriptingFilterType FilterType/*=EEditorScriptingFilterType.Include*/) { return default; }
+	public static TArray<AActor> ByActorTag(TArray<AActor> TargetArray,FName Tag,EEditorScriptingFilterType FilterType/*=EEditorScriptingFilterType.Include*/) { return default; }
 	///<summary>Filter the array by Layer the Actor belongs to.</summary>
-	public static TArray<AActor> ByLayer(TArray<AActor> TargetArray,string LayerName,EEditorScriptingFilterType FilterType/*=EEditorScriptingFilterType.Include*/) { return default; }
+	public static TArray<AActor> ByLayer(TArray<AActor> TargetArray,FName LayerName,EEditorScriptingFilterType FilterType/*=EEditorScriptingFilterType.Include*/) { return default; }
 	///<summary>Filter the array by Level the Actor belongs to.</summary>
-	public static TArray<AActor> ByLevelName(TArray<AActor> TargetArray,string LevelName,EEditorScriptingFilterType FilterType/*=EEditorScriptingFilterType.Include*/) { return default; }
+	public static TArray<AActor> ByLevelName(TArray<AActor> TargetArray,FName LevelName,EEditorScriptingFilterType FilterType/*=EEditorScriptingFilterType.Include*/) { return default; }
 	///<summary>Filter the array based on Object&#39;s selection.</summary>
 	public static TArray<AActor> BySelection(TArray<AActor> TargetArray,EEditorScriptingFilterType FilterType/*=EEditorScriptingFilterType.Include*/) { return default; }
 }

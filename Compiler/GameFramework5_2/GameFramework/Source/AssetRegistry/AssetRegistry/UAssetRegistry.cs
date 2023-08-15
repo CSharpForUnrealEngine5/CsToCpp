@@ -4,27 +4,27 @@ using CSharpToCpp.Utilities;
 public partial class UAssetRegistry : UInterface {
 	public static UClass StaticClass() {return default;}
 	///<summary>Does the given path contain assets, optionally also testing sub-paths?</summary>
-	public virtual bool HasAssets(string PackagePath,bool bRecursive/*=false*/) { return default; }
+	public virtual bool HasAssets(FName PackagePath,bool bRecursive/*=false*/) { return default; }
 	///<summary>Gets asset data for the assets in the package with the specified package name</summary>
-	public virtual bool GetAssetsByPackageName(string PackageName,TArray<FAssetData> OutAssetData,bool bIncludeOnlyOnDiskAssets/*=false*/,bool bSkipARFilteredAssets/*=true*/) { return default; }
+	public virtual bool GetAssetsByPackageName(FName PackageName,TArray<FAssetData> OutAssetData,bool bIncludeOnlyOnDiskAssets/*=false*/,bool bSkipARFilteredAssets/*=true*/) { return default; }
 	///<summary>Gets asset data for all assets in the supplied folder path</summary>
-	public virtual bool GetAssetsByPath(string PackagePath,TArray<FAssetData> OutAssetData,bool bRecursive/*=false*/,bool bIncludeOnlyOnDiskAssets/*=false*/) { return default; }
+	public virtual bool GetAssetsByPath(FName PackagePath,TArray<FAssetData> OutAssetData,bool bRecursive/*=false*/,bool bIncludeOnlyOnDiskAssets/*=false*/) { return default; }
 	///<summary>Gets asset data for all assets in any of the supplied folder paths</summary>
-	public virtual bool GetAssetsByPaths(TArray<string> PackagePaths,TArray<FAssetData> OutAssetData,bool bRecursive/*=false*/,bool bIncludeOnlyOnDiskAssets/*=false*/) { return default; }
+	public virtual bool GetAssetsByPaths(TArray<FName> PackagePaths,TArray<FAssetData> OutAssetData,bool bRecursive/*=false*/,bool bIncludeOnlyOnDiskAssets/*=false*/) { return default; }
 	///<summary>Gets asset data for all assets with the supplied class</summary>
 	public virtual bool GetAssetsByClass(FTopLevelAssetPath ClassPathName,TArray<FAssetData> OutAssetData,bool bSearchSubClasses/*=false*/) { return default; }
 	///<summary>Gets asset data for all assets that match the filter.</summary>
 	public virtual bool GetAssets(FARFilter Filter,TArray<FAssetData> OutAssetData,bool bSkipARFilteredAssets/*=true*/) { return default; }
 	///<summary>GetAssetByObjectPath</summary>
-	public virtual FAssetData GetAssetByObjectPath(string ObjectPath,bool bIncludeOnlyOnDiskAssets/*=false*/) { return default; }
+	public virtual FAssetData GetAssetByObjectPath(FName ObjectPath,bool bIncludeOnlyOnDiskAssets/*=false*/) { return default; }
 	///<summary>Gets the asset data for the specified object path</summary>
 	public virtual FAssetData K2_GetAssetByObjectPath(FSoftObjectPath ObjectPath,bool bIncludeOnlyOnDiskAssets/*=false*/) { return default; }
 	///<summary>Gets asset data for all assets in the registry.</summary>
 	public virtual bool GetAllAssets(TArray<FAssetData> OutAssetData,bool bIncludeOnlyOnDiskAssets/*=false*/) { return default; }
 	///<summary>Gets a list of paths to objects that are referenced by the supplied package. (On disk references ONLY)</summary>
-	public virtual bool K2_GetDependencies(string PackageName,FAssetRegistryDependencyOptions DependencyOptions,TArray<string> OutDependencies) { return default; }
+	public virtual bool K2_GetDependencies(FName PackageName,FAssetRegistryDependencyOptions DependencyOptions,TArray<FName> OutDependencies) { return default; }
 	///<summary>Gets a list of packages that reference the supplied package. (On disk references ONLY)</summary>
-	public virtual bool K2_GetReferencers(string PackageName,FAssetRegistryDependencyOptions ReferenceOptions,TArray<string> OutReferencers) { return default; }
+	public virtual bool K2_GetReferencers(FName PackageName,FAssetRegistryDependencyOptions ReferenceOptions,TArray<FName> OutReferencers) { return default; }
 	///<summary>Returns true if the specified ClassName&#39;s ancestors could be found. If so, OutAncestorClassNames is a list of all its ancestors. This can be slow if temporary caching mode is not on</summary>
 	public virtual bool GetAncestorClassNames(FTopLevelAssetPath ClassPathName,TArray<FTopLevelAssetPath> OutAncestorClassNames) { return default; }
 	///<summary>Returns the names of all classes derived by the supplied class names, excluding any classes matching the excluded class names. This can be slow if temporary caching mode is not on</summary>

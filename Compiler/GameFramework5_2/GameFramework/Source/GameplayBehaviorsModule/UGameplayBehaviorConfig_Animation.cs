@@ -8,7 +8,7 @@ public partial class UGameplayBehaviorConfig_Animation : UGameplayBehaviorConfig
 	///<summary>PlayRate</summary>
 	public float PlayRate;
 	///<summary>StartSectionName</summary>
-	public string StartSectionName;
+	public FName StartSectionName;
 	///<summary>bLoop</summary>
 	public bool bLoop;
 }

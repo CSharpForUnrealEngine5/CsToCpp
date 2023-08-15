@@ -4,5 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("Animation/AnimNode_SaveCachedPose.h")]
 public partial struct FAnimNode_SaveCachedPose {
 	public FPoseLink Pose;
-	public string CachePoseName;
+	public FName CachePoseName;
 }

@@ -6,17 +6,17 @@ public partial class UAnimationGraphSchema : UEdGraphSchema_K2 {
 	///<summary>Common PinNames</summary>
 	public string PN_SequenceName;
 	///<summary>PC_Object+PSC_Sequence</summary>
-	public string NAME_NeverAsPin;
+	public FName NAME_NeverAsPin;
 	///<summary>NAME_PinHiddenByDefault</summary>
-	public string NAME_PinHiddenByDefault;
+	public FName NAME_PinHiddenByDefault;
 	///<summary>NAME_PinShownByDefault</summary>
-	public string NAME_PinShownByDefault;
+	public FName NAME_PinShownByDefault;
 	///<summary>NAME_AlwaysAsPin</summary>
-	public string NAME_AlwaysAsPin;
+	public FName NAME_AlwaysAsPin;
 	///<summary>NAME_CustomizeProperty</summary>
-	public string NAME_CustomizeProperty;
+	public FName NAME_CustomizeProperty;
 	///<summary>NAME_OnEvaluate</summary>
-	public string NAME_OnEvaluate;
+	public FName NAME_OnEvaluate;
 	///<summary>DefaultEvaluationHandlerName</summary>
-	public string DefaultEvaluationHandlerName;
+	public FName DefaultEvaluationHandlerName;
 }

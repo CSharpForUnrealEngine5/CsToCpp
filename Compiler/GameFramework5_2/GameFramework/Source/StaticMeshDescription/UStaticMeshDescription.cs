@@ -11,5 +11,5 @@ public partial class UStaticMeshDescription : UMeshDescriptionBase {
 	///<summary>CreateCube</summary>
 	public void CreateCube(FVector Center,FVector HalfExtents,FPolygonGroupID PolygonGroup,FPolygonID PolygonID_PlusX,FPolygonID PolygonID_MinusX,FPolygonID PolygonID_PlusY,FPolygonID PolygonID_MinusY,FPolygonID PolygonID_PlusZ,FPolygonID PolygonID_MinusZ) {}
 	///<summary>SetPolygonGroupMaterialSlotName</summary>
-	public void SetPolygonGroupMaterialSlotName(FPolygonGroupID PolygonGroupID,string SlotName) {}
+	public void SetPolygonGroupMaterialSlotName(FPolygonGroupID PolygonGroupID,FName SlotName) {}
 }

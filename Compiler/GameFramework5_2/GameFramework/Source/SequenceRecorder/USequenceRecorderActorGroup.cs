@@ -4,7 +4,7 @@ using CSharpToCpp.Utilities;
 public partial class USequenceRecorderActorGroup : UObject {
 	public static UClass StaticClass() {return default;}
 	///<summary>GroupName</summary>
-	public string GroupName;
+	public FName GroupName;
 	///<summary>The base name of the sequence to record to. This name will also be used to auto-generate any assets created by this recording.</summary>
 	public string SequenceName;
 	///<summary>Base path for this recording. Sub-assets will be created in subdirectories as specified</summary>

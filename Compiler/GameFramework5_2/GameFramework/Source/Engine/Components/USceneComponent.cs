@@ -9,7 +9,7 @@ public partial class USceneComponent : UActorComponent {
 	///<summary>What we are currently attached to. If valid, RelativeLocation etc. are used relative to this object</summary>
 	public USceneComponent AttachParent;
 	///<summary>Optional socket name on AttachParent that we are attached to.</summary>
-	public string AttachSocketName;
+	public FName AttachSocketName;
 	///<summary>List of child SceneComponents that are attached to us.</summary>
 	public TArray<USceneComponent> AttachChildren;
 	///<summary>Set of attached SceneComponents that were attached by the client so we can fix up AttachChildren when it is replicated to us.</summary>
@@ -133,13 +133,13 @@ public partial class USceneComponent : UActorComponent {
 	///<summary>Get the right (Y) unit direction vector from this component, in world space.</summary>
 	public FVector GetRightVector() { return default; }
 	///<summary>Returns whether the specified body is currently using physics simulation</summary>
-	public virtual bool IsSimulatingPhysics(string BoneName/*=NAME_None*/) { return default; }
+	public virtual bool IsSimulatingPhysics(FName BoneName/*=NAME_None*/) { return default; }
 	///<summary>Returns whether the specified body is currently using physics simulation</summary>
 	public virtual bool IsAnySimulatingPhysics() { return default; }
 	///<summary>Get the SceneComponent we are attached to.</summary>
 	public USceneComponent GetAttachParent() { return default; }
 	///<summary>Get the socket we are attached to.</summary>
-	public string GetAttachSocketName() { return default; }
+	public FName GetAttachSocketName() { return default; }
 	///<summary>Gets all attachment parent components up to and including the root component</summary>
 	public void GetParentComponents(TArray<USceneComponent> Parents) {}
 	///<summary>Gets the number of attached children components</summary>
@@ -149,25 +149,25 @@ public partial class USceneComponent : UActorComponent {
 	///<summary>Gets all components that are attached to this component, possibly recursively</summary>
 	public void GetChildrenComponents(bool bIncludeAllDescendants,TArray<USceneComponent> Children) {}
 	///<summary>K2_AttachTo</summary>
-	public bool K2_AttachTo(USceneComponent InParent,string InSocketName/*=NAME_None*/,EAttachLocation AttachType/*=EAttachLocation.KeepRelativeOffset*/,bool bWeldSimulatedBodies/*=true*/) { return default; }
+	public bool K2_AttachTo(USceneComponent InParent,FName InSocketName/*=NAME_None*/,EAttachLocation AttachType/*=EAttachLocation.KeepRelativeOffset*/,bool bWeldSimulatedBodies/*=true*/) { return default; }
 	///<summary>Attach this component to another scene component, optionally at a named socket. It is valid to call this on components whether or not they have been Registered.</summary>
-	public bool K2_AttachToComponent(USceneComponent Parent,string SocketName,EAttachmentRule LocationRule,EAttachmentRule RotationRule,EAttachmentRule ScaleRule,bool bWeldSimulatedBodies) { return default; }
+	public bool K2_AttachToComponent(USceneComponent Parent,FName SocketName,EAttachmentRule LocationRule,EAttachmentRule RotationRule,EAttachmentRule ScaleRule,bool bWeldSimulatedBodies) { return default; }
 	///<summary>DetachFromParent</summary>
 	public virtual void DetachFromParent(bool bMaintainWorldPosition/*=false*/,bool bCallModify/*=true*/) {}
 	///<summary>Detach this component from whatever it is attached to. Automatically unwelds components that are welded together (See WeldTo)</summary>
 	public void K2_DetachFromComponent(EDetachmentRule LocationRule/*=EDetachmentRule.KeepRelative*/,EDetachmentRule RotationRule/*=EDetachmentRule.KeepRelative*/,EDetachmentRule ScaleRule/*=EDetachmentRule.KeepRelative*/,bool bCallModify/*=true*/) {}
 	///<summary>Gets the names of all the sockets on the component.</summary>
-	public TArray<string> GetAllSocketNames() { return default; }
+	public TArray<FName> GetAllSocketNames() { return default; }
 	///<summary>Get world-space socket transform.</summary>
-	public virtual FTransform GetSocketTransform(string InSocketName,ERelativeTransformSpace TransformSpace/*=RTS_World*/) { return default; }
+	public virtual FTransform GetSocketTransform(FName InSocketName,ERelativeTransformSpace TransformSpace/*=RTS_World*/) { return default; }
 	///<summary>Get world-space socket or bone location.</summary>
-	public virtual FVector GetSocketLocation(string InSocketName) { return default; }
+	public virtual FVector GetSocketLocation(FName InSocketName) { return default; }
 	///<summary>Get world-space socket or bone  FRotator rotation.</summary>
-	public virtual FRotator GetSocketRotation(string InSocketName) { return default; }
+	public virtual FRotator GetSocketRotation(FName InSocketName) { return default; }
 	///<summary>Get world-space socket or bone FQuat rotation.</summary>
-	public virtual FQuat GetSocketQuaternion(string InSocketName) { return default; }
+	public virtual FQuat GetSocketQuaternion(FName InSocketName) { return default; }
 	///<summary>Return true if socket with the given name exists</summary>
-	public virtual bool DoesSocketExist(string InSocketName) { return default; }
+	public virtual bool DoesSocketExist(FName InSocketName) { return default; }
 	///<summary>Get velocity of the component: either ComponentVelocity, or the velocity of the physics body if simulating physics.</summary>
 	public virtual FVector GetComponentVelocity() { return default; }
 	///<summary>Returns true if this component is visible in the current context</summary>

@@ -4,5 +4,5 @@ using CSharpToCpp.Utilities;
 public partial class UPCGInstancePackerByAttribute : UPCGInstancePackerBase {
 	public static UClass StaticClass() {return default;}
 	///<summary>AttributeNames</summary>
-	public TArray<string> AttributeNames;
+	public TArray<FName> AttributeNames;
 }

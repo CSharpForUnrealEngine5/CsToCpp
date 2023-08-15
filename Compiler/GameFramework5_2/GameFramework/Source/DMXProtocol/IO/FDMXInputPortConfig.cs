@@ -4,7 +4,7 @@ using CSharpToCpp.Utilities;
 [CppInclude("IO/DMXInputPortConfig.h")]
 public partial struct FDMXInputPortConfig {
 	public string PortName;
-	public string ProtocolName;
+	public FName ProtocolName;
 	public EDMXCommunicationType CommunicationType;
 	public bool bAutoCompleteDeviceAddressEnabled;
 	public string AutoCompleteDeviceAddress;

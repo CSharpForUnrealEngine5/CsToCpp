@@ -105,7 +105,7 @@ public partial class AActor : UObject {
 	///<summary>GridPlacement_DEPRECATED</summary>
 	public EActorGridPlacement GridPlacement_DEPRECATED;
 	///<summary>Determine in which partition grid this actor will be placed in the partition (if the world is partitioned).</summary>
-	public string RuntimeGrid;
+	public FName RuntimeGrid;
 	///<summary>Used for replicating attachment of this actor&#39;s RootComponent to another actor.</summary>
 	public FRepAttachment AttachmentReplication;
 	///<summary>Used for replication of our RootComponent&#39;s position and velocity</summary>
@@ -113,7 +113,7 @@ public partial class AActor : UObject {
 	///<summary>Owner of this Actor, used primarily for replication (bNetUseOwnerRelevancy &amp; bOnlyRelevantToOwner) and visibility (PrimitiveComponent bOwnerNoSee and bOnlyOwnerSee)</summary>
 	public AActor Owner;
 	///<summary>Used to specify the net driver to replicate on (NAME_None || NAME_GameNetDriver is the default net driver)</summary>
-	public string NetDriverName;
+	public FName NetDriverName;
 	///<summary>Called on client when updated AttachmentReplication value is received for this actor.</summary>
 	public virtual void OnRep_AttachmentReplication() {}
 	///<summary>Describes how much control the local machine has over the actor.</summary>
@@ -155,7 +155,7 @@ public partial class AActor : UObject {
 	///<summary>The UHLODLayer in which this actor should be included.</summary>
 	public UHLODLayer HLODLayer;
 	///<summary>Layers the actor belongs to.  This is outside of the editoronly data to allow hiding of LD-specified layers at runtime for profiling.</summary>
-	public TArray<string> Layers;
+	public TArray<FName> Layers;
 	///<summary>@deprecated Use ParentComponent instead</summary>
 	public TWeakObjectPtr<AActor> ParentComponentActor_DEPRECATED;
 	///<summary>The UChildActorComponent that owns this Actor.</summary>
@@ -177,7 +177,7 @@ public partial class AActor : UObject {
 	///<summary>The friendly name for this actor, displayed in the editor.  You should always use AActor::GetActorLabel() to access the actual label to display,</summary>
 	public string ActorLabel;
 	///<summary>The folder path of this actor in the world.</summary>
-	public string FolderPath;
+	public FName FolderPath;
 	///<summary>If the actor&#39;s level uses the actor folder objects feature, contains the actor folder unique identifier (invalid=root).</summary>
 	public FGuid FolderGuid;
 	///<summary>Whether this actor is hidden within the editor viewport.</summary>
@@ -207,7 +207,7 @@ public partial class AActor : UObject {
 	///<summary>bForceExternalActorLevelReferenceForPIE</summary>
 	public bool bForceExternalActorLevelReferenceForPIE;
 	///<summary>Array of tags that can be used for grouping and categorizing.</summary>
-	public TArray<string> Tags;
+	public TArray<FName> Tags;
 	///<summary>Called when the actor is damaged in any way.</summary>
 	public FTakeAnyDamageSignature OnTakeAnyDamage;
 	///<summary>Called when the actor is damaged by point damage.</summary>
@@ -243,7 +243,7 @@ public partial class AActor : UObject {
 	///<summary>Removes this actor from the stack of input being handled by a PlayerController.</summary>
 	public virtual void DisableInput(APlayerController PlayerController) {}
 	///<summary>Gets the value of the input axis if input is enabled for this actor.</summary>
-	public float GetInputAxisValue(string InputAxisName) { return default; }
+	public float GetInputAxisValue(FName InputAxisName) { return default; }
 	///<summary>Gets the value of the input axis key if input is enabled for this actor.</summary>
 	public float GetInputAxisKeyValue(FKey InputAxisKey) { return default; }
 	///<summary>Gets the value of the input axis key if input is enabled for this actor.</summary>
@@ -331,25 +331,25 @@ public partial class AActor : UObject {
 	///<summary>Returns whether this actor has network authority</summary>
 	public bool HasAuthority() { return default; }
 	///<summary>Creates a new component and assigns ownership to the Actor this is</summary>
-	public UActorComponent AddComponent(string TemplateName,bool bManualAttachment,FTransform RelativeTransform,UObject ComponentTemplateContext,bool bDeferredFinish/*=false*/) { return default; }
+	public UActorComponent AddComponent(FName TemplateName,bool bManualAttachment,FTransform RelativeTransform,UObject ComponentTemplateContext,bool bDeferredFinish/*=false*/) { return default; }
 	///<summary>Creates a new component and assigns ownership to the Actor this is</summary>
 	public UActorComponent AddComponentByClass(UClass Class,bool bManualAttachment,FTransform RelativeTransform,bool bDeferredFinish) { return default; }
 	///<summary>Completes the creation of a new actor component. Called either from blueprint after</summary>
 	public void FinishAddComponent(UActorComponent Component,bool bManualAttachment,FTransform RelativeTransform) {}
 	///<summary>K2_AttachRootComponentTo</summary>
-	public void K2_AttachRootComponentTo(USceneComponent InParent,string InSocketName/*=NAME_None*/,EAttachLocation AttachLocationType/*=EAttachLocation.KeepRelativeOffset*/,bool bWeldSimulatedBodies/*=true*/) {}
+	public void K2_AttachRootComponentTo(USceneComponent InParent,FName InSocketName/*=NAME_None*/,EAttachLocation AttachLocationType/*=EAttachLocation.KeepRelativeOffset*/,bool bWeldSimulatedBodies/*=true*/) {}
 	///<summary>Attaches the RootComponent of this Actor to the supplied component, optionally at a named socket. It is not valid to call this on components that are not Registered.</summary>
-	public bool K2_AttachToComponent(USceneComponent Parent,string SocketName,EAttachmentRule LocationRule,EAttachmentRule RotationRule,EAttachmentRule ScaleRule,bool bWeldSimulatedBodies) { return default; }
+	public bool K2_AttachToComponent(USceneComponent Parent,FName SocketName,EAttachmentRule LocationRule,EAttachmentRule RotationRule,EAttachmentRule ScaleRule,bool bWeldSimulatedBodies) { return default; }
 	///<summary>K2_AttachRootComponentToActor</summary>
-	public void K2_AttachRootComponentToActor(AActor InParentActor,string InSocketName/*=NAME_None*/,EAttachLocation AttachLocationType/*=EAttachLocation.KeepRelativeOffset*/,bool bWeldSimulatedBodies/*=true*/) {}
+	public void K2_AttachRootComponentToActor(AActor InParentActor,FName InSocketName/*=NAME_None*/,EAttachLocation AttachLocationType/*=EAttachLocation.KeepRelativeOffset*/,bool bWeldSimulatedBodies/*=true*/) {}
 	///<summary>Attaches the RootComponent of this Actor to the supplied actor, optionally at a named socket.</summary>
-	public bool K2_AttachToActor(AActor ParentActor,string SocketName,EAttachmentRule LocationRule,EAttachmentRule RotationRule,EAttachmentRule ScaleRule,bool bWeldSimulatedBodies) { return default; }
+	public bool K2_AttachToActor(AActor ParentActor,FName SocketName,EAttachmentRule LocationRule,EAttachmentRule RotationRule,EAttachmentRule ScaleRule,bool bWeldSimulatedBodies) { return default; }
 	///<summary>DetachRootComponentFromParent</summary>
 	public void DetachRootComponentFromParent(bool bMaintainWorldPosition/*=true*/) {}
 	///<summary>Detaches the RootComponent of this Actor from any SceneComponent it is currently attached to.</summary>
 	public void K2_DetachFromActor(EDetachmentRule LocationRule/*=EDetachmentRule.KeepRelative*/,EDetachmentRule RotationRule/*=EDetachmentRule.KeepRelative*/,EDetachmentRule ScaleRule/*=EDetachmentRule.KeepRelative*/) {}
 	///<summary>See if this actor&#39;s Tags array contains the supplied name tag</summary>
-	public bool ActorHasTag(string Tag) { return default; }
+	public bool ActorHasTag(FName Tag) { return default; }
 	///<summary>Get ActorTimeDilation - this can be used for input control or speed control for slomo.</summary>
 	public float GetActorTimeDilation() { return default; }
 	///<summary>Make this actor tick after PrerequisiteActor. This only applies to this actor&#39;s tick function; dependencies for owned components must be set up separately if desired.</summary>
@@ -377,7 +377,7 @@ public partial class AActor : UObject {
 	///<summary>Event when this actor takes RADIAL damage</summary>
 	public void ReceiveRadialDamage(float DamageReceived,UDamageType DamageType,FVector Origin,FHitResult HitInfo,AController InstigatedBy,AActor DamageCauser) {}
 	///<summary>Event when this actor takes POINT damage</summary>
-	public void ReceivePointDamage(float Damage,UDamageType DamageType,FVector HitLocation,FVector HitNormal,UPrimitiveComponent HitComponent,string BoneName,FVector ShotFromDirection,AController InstigatedBy,AActor DamageCauser,FHitResult HitInfo) {}
+	public void ReceivePointDamage(float Damage,UDamageType DamageType,FVector HitLocation,FVector HitNormal,UPrimitiveComponent HitComponent,FName BoneName,FVector ShotFromDirection,AController InstigatedBy,AActor DamageCauser,FHitResult HitInfo) {}
 	///<summary>Event called every frame, if ticking is enabled</summary>
 	public void ReceiveTick(float DeltaSeconds) {}
 	///<summary>Event called every physics tick if bAsyncPhysicsTickEnabled is true</summary>
@@ -439,9 +439,9 @@ public partial class AActor : UObject {
 	///<summary>Assigns a new label to this actor.  Actor labels are only available in development builds.</summary>
 	public void SetActorLabel(string NewActorLabel,bool bMarkDirty/*=true*/) {}
 	///<summary>Returns this actor&#39;s folder path. Actor folder paths are only available in development builds.</summary>
-	public string GetFolderPath() { return default; }
+	public FName GetFolderPath() { return default; }
 	///<summary>Assigns a new folder to this actor. Actor folder paths are only available in development builds.</summary>
-	public void SetFolderPath(string NewFolderPath) {}
+	public void SetFolderPath(FName NewFolderPath) {}
 	///<summary>Set this actor&#39;s tick functions to be enabled or disabled. Only has an effect if the function is registered</summary>
 	public void SetActorTickEnabled(bool bEnabled) {}
 	///<summary>Returns whether this actor has tick enabled or not</summary>
@@ -479,7 +479,7 @@ public partial class AActor : UObject {
 	///<summary>Walk up the attachment chain from RootComponent until we encounter a different actor, and return it. If we are not attached to a component in a different actor, returns nullptr</summary>
 	public AActor GetAttachParentActor() { return default; }
 	///<summary>Walk up the attachment chain from RootComponent until we encounter a different actor, and return the socket name in the component. If we are not attached to a component in a different actor, returns NAME_None</summary>
-	public string GetAttachParentSocketName() { return default; }
+	public FName GetAttachParentSocketName() { return default; }
 	///<summary>Find all Actors which are attached directly to a component in this actor</summary>
 	public void GetAttachedActors(TArray<AActor> OutActors,bool bResetArray/*=true*/,bool bRecursivelyIncludeAttachedActors/*=false*/) {}
 	///<summary>Sets the ticking group for this actor.</summary>
@@ -503,7 +503,7 @@ public partial class AActor : UObject {
 	///<summary>Gets all the components that inherit from the given class.</summary>
 	public TArray<UActorComponent> K2_GetComponentsByClass(UClass ComponentClass) { return default; }
 	///<summary>Gets all the components that inherit from the given class with a given tag.</summary>
-	public TArray<UActorComponent> GetComponentsByTag(UClass ComponentClass,string Tag) { return default; }
+	public TArray<UActorComponent> GetComponentsByTag(UClass ComponentClass,FName Tag) { return default; }
 	///<summary>Gets all the components that implements the given interface.</summary>
 	public TArray<UActorComponent> GetComponentsByInterface(UClass Interface) { return default; }
 	///<summary>Array of ActorComponents that have been added by the user on a per-instance basis.</summary>
@@ -511,5 +511,5 @@ public partial class AActor : UObject {
 	///<summary>Array of ActorComponents that are created by blueprints and serialized per-instance.</summary>
 	public TArray<UActorComponent> BlueprintCreatedComponents;
 	///<summary>Trigger a noise caused by a given Pawn, at a given location.</summary>
-	public void MakeNoise(float Loudness/*=1.0f*/,APawn NoiseInstigator/*=nullptr*/,FVector NoiseLocation/*=FVector.ZeroVector*/,float MaxRange/*=0.0f*/,string Tag/*=NAME_None*/) {}
+	public void MakeNoise(float Loudness/*=1.0f*/,APawn NoiseInstigator/*=nullptr*/,FVector NoiseLocation/*=FVector.ZeroVector*/,float MaxRange/*=0.0f*/,FName Tag/*=NAME_None*/) {}
 }

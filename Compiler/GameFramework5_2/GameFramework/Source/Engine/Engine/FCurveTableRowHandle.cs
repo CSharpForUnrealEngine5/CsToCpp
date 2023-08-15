@@ -4,5 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("Engine/CurveTable.h")]
 public partial struct FCurveTableRowHandle {
 	public UCurveTable CurveTable;
-	public string RowName;
+	public FName RowName;
 }

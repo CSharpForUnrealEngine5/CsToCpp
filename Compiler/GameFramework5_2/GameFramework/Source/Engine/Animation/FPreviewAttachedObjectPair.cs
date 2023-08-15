@@ -5,5 +5,5 @@ using CSharpToCpp.Utilities;
 public partial struct FPreviewAttachedObjectPair {
 	public TSoftObjectPtr<UObject> AttachedObject;
 	public UObject Object_DEPRECATED;
-	public string AttachedTo;
+	public FName AttachedTo;
 }

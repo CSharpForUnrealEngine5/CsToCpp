@@ -4,9 +4,9 @@ using CSharpToCpp.Utilities;
 public partial class UIKRig_SetTransform : UIKRigSolver {
 	public static UClass StaticClass() {return default;}
 	///<summary>Goal</summary>
-	public string Goal;
+	public FName Goal;
 	///<summary>RootBone</summary>
-	public string RootBone;
+	public FName RootBone;
 	///<summary>Effector</summary>
 	public UIKRig_SetTransformEffector Effector;
 }

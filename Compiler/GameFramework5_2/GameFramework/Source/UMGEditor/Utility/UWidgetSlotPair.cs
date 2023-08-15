@@ -4,9 +4,9 @@ using CSharpToCpp.Utilities;
 public partial class UWidgetSlotPair : UObject {
 	public static UClass StaticClass() {return default;}
 	///<summary>WidgetName</summary>
-	public string WidgetName;
+	public FName WidgetName;
 	///<summary>SlotPropertyNames</summary>
-	public TArray<string> SlotPropertyNames;
+	public TArray<FName> SlotPropertyNames;
 	///<summary>SlotPropertyValues</summary>
 	public TArray<string> SlotPropertyValues;
 }

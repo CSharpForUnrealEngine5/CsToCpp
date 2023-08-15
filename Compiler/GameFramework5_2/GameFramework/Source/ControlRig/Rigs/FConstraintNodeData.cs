@@ -4,6 +4,6 @@ using CSharpToCpp.Utilities;
 public partial struct FConstraintNodeData {
 	public FTransform RelativeParent;
 	public FConstraintOffset ConstraintOffset;
-	public string LinkedNode;
+	public FName LinkedNode;
 	public TArray<FTransformConstraint> Constraints;
 }

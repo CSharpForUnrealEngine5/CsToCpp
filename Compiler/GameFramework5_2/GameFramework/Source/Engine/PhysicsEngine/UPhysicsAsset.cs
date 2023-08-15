@@ -9,13 +9,13 @@ public partial class UPhysicsAsset : UObject {
 	///<summary>PreviewSkeletalMesh</summary>
 	public TSoftObjectPtr<USkeletalMesh> PreviewSkeletalMesh;
 	///<summary>PhysicalAnimationProfiles</summary>
-	public TArray<string> PhysicalAnimationProfiles;
+	public TArray<FName> PhysicalAnimationProfiles;
 	///<summary>ConstraintProfiles</summary>
-	public TArray<string> ConstraintProfiles;
+	public TArray<FName> ConstraintProfiles;
 	///<summary>CurrentPhysicalAnimationProfileName</summary>
-	public string CurrentPhysicalAnimationProfileName;
+	public FName CurrentPhysicalAnimationProfileName;
 	///<summary>CurrentConstraintProfileName</summary>
-	public string CurrentConstraintProfileName;
+	public FName CurrentConstraintProfileName;
 	///<summary>Index of bodies that are marked bConsiderForBounds</summary>
 	public TArray<int> BoundsBodies;
 	///<summary>Array of SkeletalBodySetup objects. Stores information about collision shape etc. for each body.</summary>
@@ -33,9 +33,9 @@ public partial class UPhysicsAsset : UObject {
 	///<summary>Information for thumbnail rendering</summary>
 	public UThumbnailInfo ThumbnailInfo;
 	///<summary>Gets a constraint by its joint name</summary>
-	public FConstraintInstanceAccessor GetConstraintByName(string ConstraintName) { return default; }
+	public FConstraintInstanceAccessor GetConstraintByName(FName ConstraintName) { return default; }
 	///<summary>Gets a constraint by its joint name</summary>
-	public FConstraintInstanceAccessor GetConstraintByBoneNames(string Bone1Name,string Bone2Name) { return default; }
+	public FConstraintInstanceAccessor GetConstraintByBoneNames(FName Bone1Name,FName Bone2Name) { return default; }
 	///<summary>Gets all constraints</summary>
 	public void GetConstraints(bool bIncludesTerminated,TArray<FConstraintInstanceAccessor> OutConstraints) {}
 	///<summary>BodySetup_DEPRECATED</summary>

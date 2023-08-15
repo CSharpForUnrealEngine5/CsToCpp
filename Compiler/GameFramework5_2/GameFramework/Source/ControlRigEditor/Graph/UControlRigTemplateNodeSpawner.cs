@@ -4,5 +4,5 @@ using CSharpToCpp.Utilities;
 public partial class UControlRigTemplateNodeSpawner : UBlueprintNodeSpawner {
 	public static UClass StaticClass() {return default;}
 	///<summary>The unit type we will spawn</summary>
-	public string TemplateNotation;
+	public FName TemplateNotation;
 }

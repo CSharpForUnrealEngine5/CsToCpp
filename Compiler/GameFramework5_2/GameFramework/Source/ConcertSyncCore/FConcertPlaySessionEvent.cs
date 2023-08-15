@@ -4,6 +4,6 @@ using CSharpToCpp.Utilities;
 public partial struct FConcertPlaySessionEvent {
 	public EConcertPlaySessionEventType EventType;
 	public FGuid PlayEndpointId;
-	public string PlayPackageName;
+	public FName PlayPackageName;
 	public bool bIsSimulating;
 }

@@ -17,9 +17,9 @@ public partial class URPCDoSDetectionConfig : UObject {
 	///<summary>The amount of time since the client connected, before time-based checks should become active (to reduce false positives)</summary>
 	public int InitialConnectToleranceMS;
 	///<summary>RPCBlockWhitelist</summary>
-	public TArray<string> RPCBlockWhitelist;
+	public TArray<FName> RPCBlockWhitelist;
 	///<summary>List of RPC&#39;s which should never be blocked</summary>
-	public TArray<string> RPCBlockAllowlist;
+	public TArray<FName> RPCBlockAllowlist;
 	///<summary>Custom thresholds for when specific RPC&#39;s should be included in analytics</summary>
 	public TArray<FRPCAnalyticsThreshold> RPCAnalyticsThresholds;
 	///<summary>Specifies a random chance, between 0.0 and 1.0, for when RPCAnalyticsThresholds should be overridden (adds to separate analytics)</summary>

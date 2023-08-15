@@ -5,7 +5,7 @@ using CSharpToCpp.Utilities;
 public partial class UAIDataProvider_QueryParams : UAIDataProvider {
 	public static UClass StaticClass() {return default;}
 	///<summary>Arbitrary name this query parameter will be exposed as to outside world (like BT nodes)</summary>
-	public string ParamName;
+	public FName ParamName;
 	///<summary>FloatValue</summary>
 	public float FloatValue;
 	///<summary>IntValue</summary>

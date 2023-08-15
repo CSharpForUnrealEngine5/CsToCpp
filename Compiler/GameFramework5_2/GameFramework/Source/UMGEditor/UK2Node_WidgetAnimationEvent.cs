@@ -6,9 +6,9 @@ public partial class UK2Node_WidgetAnimationEvent : UK2Node_Event {
 	///<summary>The action to bind to.</summary>
 	public EWidgetAnimationEvent Action;
 	///<summary>Name of property in Blueprint class that pointer to component we want to bind to</summary>
-	public string AnimationPropertyName;
+	public FName AnimationPropertyName;
 	///<summary>Binds this to a specific user action.</summary>
-	public string UserTag;
+	public FName UserTag;
 	///<summary>SourceWidgetBlueprint</summary>
 	public UWidgetBlueprint SourceWidgetBlueprint;
 }

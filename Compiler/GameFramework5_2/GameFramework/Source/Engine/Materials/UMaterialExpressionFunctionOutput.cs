@@ -4,7 +4,7 @@ using CSharpToCpp.Utilities;
 public partial class UMaterialExpressionFunctionOutput : UMaterialExpression {
 	public static UClass StaticClass() {return default;}
 	///<summary>The output&#39;s name, which will be drawn on the connector in function call expressions that use this function.</summary>
-	public string OutputName;
+	public FName OutputName;
 	///<summary>The output&#39;s description, which will be used as a tooltip on the connector in function call expressions that use this function.</summary>
 	public string Description;
 	///<summary>Controls where the output is displayed relative to the other outputs.</summary>

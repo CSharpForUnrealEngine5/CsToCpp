@@ -4,7 +4,7 @@ using CSharpToCpp.Utilities;
 [CppInclude("View/MVVMViewClass.h")]
 public partial struct FMVVMViewClass_CompiledBinding {
 	public FMVVMVCompiledFieldId FieldId;
-	public string SourcePropertyName;
+	public FName SourcePropertyName;
 	public FMVVMVCompiledBinding Binding;
 	public EMVVMExecutionMode ExecutionMode;
 	public byte Flags;

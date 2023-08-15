@@ -5,5 +5,5 @@ using CSharpToCpp.Utilities;
 public partial class UDataprepSetMetadataOperation : UDataprepOperation {
 	public static UClass StaticClass() {return default;}
 	///<summary>Array of metadata values</summary>
-	public TMap<string,string> Metadata;
+	public TMap<FName,string> Metadata;
 }

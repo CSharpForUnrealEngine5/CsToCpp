@@ -13,5 +13,5 @@ public partial class USourceControlPreferences : UDeveloperSettings {
 	///<summary>List of lines to add to any collection on checkin</summary>
 	public TArray<string> CollectionChangelistTags;
 	///<summary>Map of collection names and additional text to apply to changelist descriptions when checking them in</summary>
-	public TMap<string,string> SpecificCollectionChangelistTags;
+	public TMap<FName,string> SpecificCollectionChangelistTags;
 }

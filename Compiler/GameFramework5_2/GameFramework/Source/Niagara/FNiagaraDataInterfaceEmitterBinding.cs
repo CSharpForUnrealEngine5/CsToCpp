@@ -3,5 +3,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("NiagaraDataInterfaceEmitterBinding.h")]
 public partial struct FNiagaraDataInterfaceEmitterBinding {
 	public ENiagaraDataInterfaceEmitterBindingMode BindingMode;
-	public string EmitterName;
+	public FName EmitterName;
 }

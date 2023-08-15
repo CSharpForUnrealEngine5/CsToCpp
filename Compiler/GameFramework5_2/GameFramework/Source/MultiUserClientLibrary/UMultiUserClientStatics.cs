@@ -18,9 +18,9 @@ public partial class UMultiUserClientStatics : UBlueprintFunctionLibrary {
 	///<summary>Persist the session changes and prepare the files for source control submission.</summary>
 	public static void PersistMultiUserSessionChanges() {}
 	///<summary>Persist the specified sessions changes using source control.</summary>
-	public static void PersistSpecifiedPackages(TArray<string> PackagesToPersist) {}
+	public static void PersistSpecifiedPackages(TArray<FName> PackagesToPersist) {}
 	///<summary>Get the list of packages that have changed since the last persist unless ignore persisted is false.</summary>
-	public static TArray<string> GatherSessionChanges(bool IgnorePersisted/*=true*/) { return default; }
+	public static TArray<FName> GatherSessionChanges(bool IgnorePersisted/*=true*/) { return default; }
 	///<summary>Get the proxy object for the sync database.</summary>
 	public static UMultiUserClientSyncDatabase GetConcertSyncDatabase() { return default; }
 	///<summary>Get the local ClientInfo. Works when not connected to a session.</summary>

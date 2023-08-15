@@ -4,7 +4,7 @@ using CSharpToCpp.Utilities;
 [CppInclude("UI/VREditorFloatingUI.h")]
 public partial struct FVREditorFloatingUICreationContext {
 	public UClass WidgetClass;
-	public string PanelID;
+	public FName PanelID;
 	public AActor ParentActor;
 	public FTransform PanelSpawnOffset;
 	public FVector2D PanelSize;

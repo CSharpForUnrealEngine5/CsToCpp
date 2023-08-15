@@ -4,5 +4,5 @@ using CSharpToCpp.Utilities;
 public partial class UWebAPIAuthenticationSettings : UDeveloperSettings {
 	public static UClass StaticClass() {return default;}
 	///<summary>Public client identifier.</summary>
-	public string SchemeName;
+	public FName SchemeName;
 }

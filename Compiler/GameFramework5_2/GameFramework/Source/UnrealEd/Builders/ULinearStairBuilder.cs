@@ -14,5 +14,5 @@ public partial class ULinearStairBuilder : UEditorBrushBuilder {
 	///<summary>The distance below the first step</summary>
 	public int AddToFirstStep;
 	///<summary>GroupName</summary>
-	public string GroupName;
+	public FName GroupName;
 }

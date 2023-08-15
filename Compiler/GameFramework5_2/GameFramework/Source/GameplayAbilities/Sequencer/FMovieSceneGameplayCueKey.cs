@@ -5,7 +5,7 @@ public partial struct FMovieSceneGameplayCueKey {
 	public FGameplayCueTag Cue;
 	public FVector Location;
 	public FVector Normal;
-	public string AttachSocketName;
+	public FName AttachSocketName;
 	public float NormalizedMagnitude;
 	public FMovieSceneObjectBindingID Instigator;
 	public FMovieSceneObjectBindingID EffectCauser;

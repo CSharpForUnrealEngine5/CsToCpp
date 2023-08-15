@@ -8,5 +8,5 @@ public partial class UDefaultComposureEditorSettings : UObject {
 	///<summary>FeaturedElementClasses</summary>
 	public TArray<FSoftObjectPath> FeaturedElementClasses;
 	///<summary>DefaultElementNames</summary>
-	public TMap<string,string> DefaultElementNames;
+	public TMap<FName,string> DefaultElementNames;
 }

@@ -5,5 +5,5 @@ using CSharpToCpp.Utilities;
 public partial struct FStateTreeEvent {
 	public FGameplayTag Tag;
 	public FInstancedStruct Payload;
-	public string Origin;
+	public FName Origin;
 }

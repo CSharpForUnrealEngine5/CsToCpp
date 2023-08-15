@@ -18,11 +18,11 @@ public partial class UToolMenuEntryScript : UObject {
 	///<summary>GetIcon</summary>
 	public FScriptSlateIcon GetIcon(FToolMenuContext Context) { return default; }
 	///<summary>ConstructMenuEntry</summary>
-	public void ConstructMenuEntry(UToolMenu Menu,string SectionName,FToolMenuContext Context) {}
+	public void ConstructMenuEntry(UToolMenu Menu,FName SectionName,FToolMenuContext Context) {}
 	///<summary>RegisterMenuEntry</summary>
 	public void RegisterMenuEntry() {}
 	///<summary>InitEntry</summary>
-	public void InitEntry(string OwnerName,string Menu,string Section,string Name,FText Label/*=new FText()*/,FText ToolTip/*=new FText()*/) {}
+	public void InitEntry(FName OwnerName,FName Menu,FName Section,FName Name,FText Label/*=new FText()*/,FText ToolTip/*=new FText()*/) {}
 	///<summary>Data</summary>
 	public FToolMenuEntryScriptData Data;
 }

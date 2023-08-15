@@ -6,7 +6,7 @@ public partial class UDEPRECATED_DataLayer : UObject {
 	///<summary>Equals</summary>
 	public bool Equals(FActorDataLayer ActorDataLayer) { return default; }
 	///<summary>GetDataLayerLabel</summary>
-	public string GetDataLayerLabel() { return default; }
+	public FName GetDataLayerLabel() { return default; }
 	///<summary>IsInitiallyVisible</summary>
 	public bool IsInitiallyVisible() { return default; }
 	///<summary>IsVisible</summary>
@@ -40,7 +40,7 @@ public partial class UDEPRECATED_DataLayer : UObject {
 	///<summary>Whether this data layer is locked, which means the user can&#39;t change actors assignation, remove or rename it</summary>
 	public bool bIsLocked;
 	///<summary>The display name of the Data Layer</summary>
-	public string DataLayerLabel;
+	public FName DataLayerLabel;
 	///<summary>Whether the Data Layer affects actor runtime loading</summary>
 	public bool bIsRuntime;
 	///<summary>InitialRuntimeState</summary>

@@ -19,7 +19,7 @@ public partial class UPyTestTypeHint : UObject {
 	///<summary>StringProp</summary>
 	public string StringProp;
 	///<summary>NameProp</summary>
-	public string NameProp;
+	public FName NameProp;
 	///<summary>TextProp</summary>
 	public FText TextProp;
 	///<summary>FieldPathProp</summary>
@@ -31,7 +31,7 @@ public partial class UPyTestTypeHint : UObject {
 	///<summary>StrArrayProp</summary>
 	public TArray<string> StrArrayProp;
 	///<summary>NameArrayProp</summary>
-	public TArray<string> NameArrayProp;
+	public TArray<FName> NameArrayProp;
 	///<summary>TextArrayProp</summary>
 	public TArray<FText> TextArrayProp;
 	///<summary>ObjectArrayProp</summary>
@@ -55,7 +55,7 @@ public partial class UPyTestTypeHint : UObject {
 	///<summary>CheckStringTypeHints</summary>
 	public string CheckStringTypeHints(string Param1,string Param2/*=TEXT("Hi")*/) { return default; }
 	///<summary>CheckNameTypeHints</summary>
-	public string CheckNameTypeHints(string Param1,string Param2/*=new FName(TEXT("Hi"))*/) { return default; }
+	public FName CheckNameTypeHints(FName Param1,FName Param2/*=new FName(TEXT("Hi"))*/) { return default; }
 	///<summary>CheckTextTypeHints</summary>
 	public FText CheckTextTypeHints(FText Param1,FText Param2/*=INVTEXT("Hi")*/) { return default; }
 	///<summary>CheckFieldPathTypeHints</summary>
@@ -65,11 +65,11 @@ public partial class UPyTestTypeHint : UObject {
 	///<summary>CheckObjectTypeHints</summary>
 	public UPyTestObject CheckObjectTypeHints(UPyTestObject Param1,UPyTestObject Param4/*=nullptr*/) { return default; }
 	///<summary>CheckArrayTypeHints</summary>
-	public TArray<FText> CheckArrayTypeHints(TArray<string> Param1,TArray<string> Param2,TArray<FText> Param3,TArray<UObject> Param4) { return default; }
+	public TArray<FText> CheckArrayTypeHints(TArray<string> Param1,TArray<FName> Param2,TArray<FText> Param3,TArray<UObject> Param4) { return default; }
 	///<summary>CheckSetTypeHints</summary>
-	public TSet<string> CheckSetTypeHints(TSet<string> Param1,TSet<string> Param2,TSet<UObject> Param3) { return default; }
+	public TSet<FName> CheckSetTypeHints(TSet<string> Param1,TSet<FName> Param2,TSet<UObject> Param3) { return default; }
 	///<summary>CheckMapTypeHints</summary>
-	public TMap<string,UObject> CheckMapTypeHints(TMap<int,string> Param1,TMap<int,string> Param2,TMap<int,FText> Param3,TMap<int,UObject> Param4) { return default; }
+	public TMap<string,UObject> CheckMapTypeHints(TMap<int,string> Param1,TMap<int,FName> Param2,TMap<int,FText> Param3,TMap<int,UObject> Param4) { return default; }
 	///<summary>CheckDelegateTypeHints</summary>
 	public FPyTestDelegate CheckDelegateTypeHints(FPyTestDelegate Param1) { return default; }
 	///<summary>CheckStaticFunction</summary>

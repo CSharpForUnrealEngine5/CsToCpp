@@ -5,159 +5,159 @@ using CSharpToCpp.Utilities;
 public partial class UPhysicsControlComponent : USceneComponent {
 	public static UClass StaticClass() {return default;}
 	///<summary>Creates a new control for mesh components</summary>
-	public string CreateControl(UMeshComponent ParentMeshComponent,string ParentBoneName,UMeshComponent ChildMeshComponent,string ChildBoneName,FPhysicsControlData ControlData,FPhysicsControlTarget ControlTarget,FPhysicsControlSettings ControlSettings,string Set,bool bEnabled/*=true*/) { return default; }
+	public FName CreateControl(UMeshComponent ParentMeshComponent,FName ParentBoneName,UMeshComponent ChildMeshComponent,FName ChildBoneName,FPhysicsControlData ControlData,FPhysicsControlTarget ControlTarget,FPhysicsControlSettings ControlSettings,FName Set,bool bEnabled/*=true*/) { return default; }
 	///<summary>Creates a new control for mesh components</summary>
-	public bool CreateNamedControl(string Name,UMeshComponent ParentMeshComponent,string ParentBoneName,UMeshComponent ChildMeshComponent,string ChildBoneName,FPhysicsControlData ControlData,FPhysicsControlTarget ControlTarget,FPhysicsControlSettings ControlSettings,string Set,bool bEnabled/*=true*/) { return default; }
+	public bool CreateNamedControl(FName Name,UMeshComponent ParentMeshComponent,FName ParentBoneName,UMeshComponent ChildMeshComponent,FName ChildBoneName,FPhysicsControlData ControlData,FPhysicsControlTarget ControlTarget,FPhysicsControlSettings ControlSettings,FName Set,bool bEnabled/*=true*/) { return default; }
 	///<summary>Creates a collection of controls controlling a skeletal mesh</summary>
-	public TArray<string> CreateControlsFromSkeletalMeshBelow(USkeletalMeshComponent SkeletalMeshComponent,string BoneName,bool bIncludeSelf,EPhysicsControlType ControlType,FPhysicsControlData ControlData,FPhysicsControlSettings ControlSettings,string Set,bool bEnabled/*=true*/) { return default; }
+	public TArray<FName> CreateControlsFromSkeletalMeshBelow(USkeletalMeshComponent SkeletalMeshComponent,FName BoneName,bool bIncludeSelf,EPhysicsControlType ControlType,FPhysicsControlData ControlData,FPhysicsControlSettings ControlSettings,FName Set,bool bEnabled/*=true*/) { return default; }
 	///<summary>Creates a collection of ParentSpace controls controlling a skeletal mesh, initializing</summary>
-	public TArray<string> CreateControlsFromSkeletalMeshAndConstraintProfileBelow(USkeletalMeshComponent SkeletalMeshComponent,string BoneName,bool bIncludeSelf,string ConstraintProfile,string Set,bool bEnabled/*=true*/) { return default; }
+	public TArray<FName> CreateControlsFromSkeletalMeshAndConstraintProfileBelow(USkeletalMeshComponent SkeletalMeshComponent,FName BoneName,bool bIncludeSelf,FName ConstraintProfile,FName Set,bool bEnabled/*=true*/) { return default; }
 	///<summary>Creates a collection of controls controlling a skeletal mesh</summary>
-	public TArray<string> CreateControlsFromSkeletalMesh(USkeletalMeshComponent SkeletalMeshComponent,TArray<string> BoneNames,EPhysicsControlType ControlType,FPhysicsControlData ControlData,FPhysicsControlSettings ControlSettings,string Set,bool bEnabled/*=true*/) { return default; }
+	public TArray<FName> CreateControlsFromSkeletalMesh(USkeletalMeshComponent SkeletalMeshComponent,TArray<FName> BoneNames,EPhysicsControlType ControlType,FPhysicsControlData ControlData,FPhysicsControlSettings ControlSettings,FName Set,bool bEnabled/*=true*/) { return default; }
 	///<summary>Creates a collection of ParentSpace controls controlling a skeletal mesh, initializing them</summary>
-	public TArray<string> CreateControlsFromSkeletalMeshAndConstraintProfile(USkeletalMeshComponent SkeletalMeshComponent,TArray<string> BoneNames,string ConstraintProfile,string Set,bool bEnabled/*=true*/) { return default; }
+	public TArray<FName> CreateControlsFromSkeletalMeshAndConstraintProfile(USkeletalMeshComponent SkeletalMeshComponent,TArray<FName> BoneNames,FName ConstraintProfile,FName Set,bool bEnabled/*=true*/) { return default; }
 	///<summary>Calculates which bones belong to which limb in a skeletal mesh</summary>
-	public TMap<string,FPhysicsControlLimbBones> GetLimbBonesFromSkeletalMesh(USkeletalMeshComponent SkeletalMeshComponent,TArray<FPhysicsControlLimbSetupData> LimbSetupData) { return default; }
+	public TMap<FName,FPhysicsControlLimbBones> GetLimbBonesFromSkeletalMesh(USkeletalMeshComponent SkeletalMeshComponent,TArray<FPhysicsControlLimbSetupData> LimbSetupData) { return default; }
 	///<summary>Creates a collection of controls controlling a skeletal mesh, grouped together in limbs</summary>
-	public TMap<string,FPhysicsControlNames> CreateControlsFromLimbBones(FPhysicsControlNames AllControls,TMap<string,FPhysicsControlLimbBones> LimbBones,EPhysicsControlType ControlType,FPhysicsControlData ControlData,FPhysicsControlSettings ControlSettings,bool bEnabled/*=true*/) { return default; }
+	public TMap<FName,FPhysicsControlNames> CreateControlsFromLimbBones(FPhysicsControlNames AllControls,TMap<FName,FPhysicsControlLimbBones> LimbBones,EPhysicsControlType ControlType,FPhysicsControlData ControlData,FPhysicsControlSettings ControlSettings,bool bEnabled/*=true*/) { return default; }
 	///<summary>Creates a collection of ParentSpace controls controlling a skeletal mesh, grouped together in limbs, initializing</summary>
-	public TMap<string,FPhysicsControlNames> CreateControlsFromLimbBonesAndConstraintProfile(FPhysicsControlNames AllControls,TMap<string,FPhysicsControlLimbBones> LimbBones,string ConstraintProfile,bool bEnabled/*=true*/) { return default; }
+	public TMap<FName,FPhysicsControlNames> CreateControlsFromLimbBonesAndConstraintProfile(FPhysicsControlNames AllControls,TMap<FName,FPhysicsControlLimbBones> LimbBones,FName ConstraintProfile,bool bEnabled/*=true*/) { return default; }
 	///<summary>Destroys a control</summary>
-	public bool DestroyControl(string Name) { return default; }
+	public bool DestroyControl(FName Name) { return default; }
 	///<summary>Destroys all controls</summary>
-	public void DestroyControls(TArray<string> Names) {}
+	public void DestroyControls(TArray<FName> Names) {}
 	///<summary>Destroys all controls in a set</summary>
-	public void DestroyControlsInSet(string Set) {}
+	public void DestroyControlsInSet(FName Set) {}
 	///<summary>Modifies an existing control data - i.e. the strengths etc of the control driving towards the target</summary>
-	public bool SetControlData(string Name,FPhysicsControlData ControlData,bool bEnableControl/*=true*/) { return default; }
+	public bool SetControlData(FName Name,FPhysicsControlData ControlData,bool bEnableControl/*=true*/) { return default; }
 	///<summary>Modifies existing control data - i.e. the strengths etc of the controls driving towards the targets</summary>
-	public void SetControlDatas(TArray<string> Names,FPhysicsControlData ControlData,bool bEnableControl/*=true*/) {}
+	public void SetControlDatas(TArray<FName> Names,FPhysicsControlData ControlData,bool bEnableControl/*=true*/) {}
 	///<summary>Modifies existing control data - i.e. the strengths etc of the controls driving towards the targets</summary>
-	public void SetControlDatasInSet(string Set,FPhysicsControlData ControlData,bool bEnableControl/*=true*/) {}
+	public void SetControlDatasInSet(FName Set,FPhysicsControlData ControlData,bool bEnableControl/*=true*/) {}
 	///<summary>Modifies an existing control data using the multipliers</summary>
-	public bool SetControlMultiplier(string Name,FPhysicsControlMultiplier ControlMultiplier,bool bEnableControl/*=true*/) { return default; }
+	public bool SetControlMultiplier(FName Name,FPhysicsControlMultiplier ControlMultiplier,bool bEnableControl/*=true*/) { return default; }
 	///<summary>Modifies existing control data using the multipliers</summary>
-	public void SetControlMultipliers(TArray<string> Names,FPhysicsControlMultiplier ControlMultiplier,bool bEnableControl/*=true*/) {}
+	public void SetControlMultipliers(TArray<FName> Names,FPhysicsControlMultiplier ControlMultiplier,bool bEnableControl/*=true*/) {}
 	///<summary>Modifies existing control data using the multipliers</summary>
-	public void SetControlMultipliersInSet(string Set,FPhysicsControlMultiplier ControlMultiplier,bool bEnableControl/*=true*/) {}
+	public void SetControlMultipliersInSet(FName Set,FPhysicsControlMultiplier ControlMultiplier,bool bEnableControl/*=true*/) {}
 	///<summary>Modifies an existing control&#39;s linear data - i.e. the strengths etc of the control driving towards the target</summary>
-	public bool SetControlLinearData(string Name,float Strength/*=1.0f*/,float DampingRatio/*=1.0f*/,float ExtraDamping/*=0.0f*/,float MaxForce/*=0.0f*/,bool bEnableControl/*=true*/) { return default; }
+	public bool SetControlLinearData(FName Name,float Strength/*=1.0f*/,float DampingRatio/*=1.0f*/,float ExtraDamping/*=0.0f*/,float MaxForce/*=0.0f*/,bool bEnableControl/*=true*/) { return default; }
 	///<summary>Modifies an existing control&#39;s angular data - i.e. the strengths etc of the control driving towards the target</summary>
-	public bool SetControlAngularData(string Name,float Strength/*=1.0f*/,float DampingRatio/*=1.0f*/,float ExtraDamping/*=0.0f*/,float MaxTorque/*=0.0f*/,bool bEnableControl/*=true*/) { return default; }
+	public bool SetControlAngularData(FName Name,float Strength/*=1.0f*/,float DampingRatio/*=1.0f*/,float ExtraDamping/*=0.0f*/,float MaxTorque/*=0.0f*/,bool bEnableControl/*=true*/) { return default; }
 	///<summary>Sets the point at which controls will &quot;push&quot; the child object.</summary>
-	public bool SetControlPoint(string Name,FVector Position) { return default; }
+	public bool SetControlPoint(FName Name,FVector Position) { return default; }
 	///<summary>Resets the control point to the center of mass of the mesh</summary>
-	public bool ResetControlPoint(string Name) { return default; }
+	public bool ResetControlPoint(FName Name) { return default; }
 	///<summary>Modifies an existing control target - i.e. what it is driving towards, relative to the parent object</summary>
-	public bool SetControlTarget(string Name,FPhysicsControlTarget ControlTarget,bool bEnableControl/*=true*/) { return default; }
+	public bool SetControlTarget(FName Name,FPhysicsControlTarget ControlTarget,bool bEnableControl/*=true*/) { return default; }
 	///<summary>Modifies existing control targets - i.e. what they are driving towards, relative to the parent objects</summary>
-	public void SetControlTargets(TArray<string> Names,FPhysicsControlTarget ControlTarget,bool bEnableControl/*=true*/) {}
+	public void SetControlTargets(TArray<FName> Names,FPhysicsControlTarget ControlTarget,bool bEnableControl/*=true*/) {}
 	///<summary>Modifies existing control targets - i.e. what they are driving towards, relative to the parent objects</summary>
-	public void SetControlTargetsInSet(string Set,FPhysicsControlTarget ControlTarget,bool bEnableControl/*=true*/) {}
+	public void SetControlTargetsInSet(FName Set,FPhysicsControlTarget ControlTarget,bool bEnableControl/*=true*/) {}
 	///<summary>Modifies an existing control target - i.e. what it is driving towards, relative to the parent object</summary>
-	public bool SetControlTargetPositionAndOrientation(string Name,FVector Position,FRotator Orientation,float VelocityDeltaTime,bool bEnableControl/*=true*/,bool bApplyControlPointToTarget/*=false*/) { return default; }
+	public bool SetControlTargetPositionAndOrientation(FName Name,FVector Position,FRotator Orientation,float VelocityDeltaTime,bool bEnableControl/*=true*/,bool bApplyControlPointToTarget/*=false*/) { return default; }
 	///<summary>Modifies an existing control target - i.e. what it is driving towards, relative to the parent object</summary>
-	public bool SetControlTargetPosition(string Name,FVector Position,float VelocityDeltaTime,bool bEnableControl/*=true*/,bool bApplyControlPointToTarget/*=false*/) { return default; }
+	public bool SetControlTargetPosition(FName Name,FVector Position,float VelocityDeltaTime,bool bEnableControl/*=true*/,bool bApplyControlPointToTarget/*=false*/) { return default; }
 	///<summary>Modifies an existing control target - i.e. what it is driving towards, relative to the parent object</summary>
-	public bool SetControlTargetOrientation(string Name,FRotator Orientation,float AngularVelocityDeltaTime,bool bEnableControl/*=true*/,bool bApplyControlPointToTarget/*=false*/) { return default; }
+	public bool SetControlTargetOrientation(FName Name,FRotator Orientation,float AngularVelocityDeltaTime,bool bEnableControl/*=true*/,bool bApplyControlPointToTarget/*=false*/) { return default; }
 	///<summary>Calculates and sets an existing control target. This takes the &quot;virtual&quot; position/orientation of the parent</summary>
-	public bool SetControlTargetPoses(string Name,FVector ParentPosition,FRotator ParentOrientation,FVector ChildPosition,FRotator ChildOrientation,float VelocityDeltaTime,bool bEnableControl/*=true*/) { return default; }
+	public bool SetControlTargetPoses(FName Name,FVector ParentPosition,FRotator ParentOrientation,FVector ChildPosition,FRotator ChildOrientation,float VelocityDeltaTime,bool bEnableControl/*=true*/) { return default; }
 	///<summary>Sets whether or not the control should use skeletal animation for the targets</summary>
-	public bool SetControlUseSkeletalAnimation(string Name,bool bUseSkeletalAnimation/*=true*/,float SkeletalAnimationVelocityMultiplier/*=1.0f*/) { return default; }
+	public bool SetControlUseSkeletalAnimation(FName Name,bool bUseSkeletalAnimation/*=true*/,float SkeletalAnimationVelocityMultiplier/*=1.0f*/) { return default; }
 	///<summary>Sets whether or not the controls should use skeletal animation for the targets</summary>
-	public void SetControlsUseSkeletalAnimation(TArray<string> Names,bool bUseSkeletalAnimation/*=true*/,float SkeletalAnimationVelocityMultiplier/*=1.0f*/) {}
+	public void SetControlsUseSkeletalAnimation(TArray<FName> Names,bool bUseSkeletalAnimation/*=true*/,float SkeletalAnimationVelocityMultiplier/*=1.0f*/) {}
 	///<summary>Sets whether or not the controls should use skeletal animation for the targets</summary>
-	public void SetControlsInSetUseSkeletalAnimation(string Set,bool bUseSkeletalAnimation/*=true*/,float SkeletalAnimationVelocityMultiplier/*=1.0f*/) {}
+	public void SetControlsInSetUseSkeletalAnimation(FName Set,bool bUseSkeletalAnimation/*=true*/,float SkeletalAnimationVelocityMultiplier/*=1.0f*/) {}
 	///<summary>Activates or deactivates a control</summary>
-	public bool SetControlEnabled(string Name,bool bEnable/*=true*/) { return default; }
+	public bool SetControlEnabled(FName Name,bool bEnable/*=true*/) { return default; }
 	///<summary>Activates or deactivates controls</summary>
-	public void SetControlsEnabled(TArray<string> Names,bool bEnable/*=true*/) {}
+	public void SetControlsEnabled(TArray<FName> Names,bool bEnable/*=true*/) {}
 	///<summary>Activates or deactivates controls</summary>
-	public void SetControlsInSetEnabled(string Set,bool bEnable/*=true*/) {}
+	public void SetControlsInSetEnabled(FName Set,bool bEnable/*=true*/) {}
 	///<summary>@param Name The name of the control to modify.</summary>
-	public bool SetControlAutoDisable(string Name,bool bAutoDisable) { return default; }
+	public bool SetControlAutoDisable(FName Name,bool bAutoDisable) { return default; }
 	///<summary>@param Names The names of the controls to modify.</summary>
-	public void SetControlsAutoDisable(TArray<string> Names,bool bAutoDisable) {}
+	public void SetControlsAutoDisable(TArray<FName> Names,bool bAutoDisable) {}
 	///<summary>@param Set The set of controls to modify. Standard sets will include &quot;All&quot;, &quot;WorldSpace&quot;,</summary>
-	public void SetControlsInSetAutoDisable(string Set,bool bAutoDisable) {}
+	public void SetControlsInSetAutoDisable(FName Set,bool bAutoDisable) {}
 	///<summary>@param Name The name of the control to modify.</summary>
-	public bool SetControlDisableCollision(string Name,bool bDisableCollision) { return default; }
+	public bool SetControlDisableCollision(FName Name,bool bDisableCollision) { return default; }
 	///<summary>@param Names The names of the controls to modify.</summary>
-	public void SetControlsDisableCollision(TArray<string> Names,bool bDisableCollision) {}
+	public void SetControlsDisableCollision(TArray<FName> Names,bool bDisableCollision) {}
 	///<summary>@param Set The set of controls to modify. Standard sets will include &quot;All&quot;, &quot;WorldSpace&quot;,</summary>
-	public void SetControlsInSetDisableCollision(string Set,bool bDisableCollision) {}
+	public void SetControlsInSetDisableCollision(FName Set,bool bDisableCollision) {}
 	///<summary>@param Name     The name of the control to access.</summary>
-	public bool GetControlData(string Name,FPhysicsControlData ControlData) { return default; }
+	public bool GetControlData(FName Name,FPhysicsControlData ControlData) { return default; }
 	///<summary>@param Name     The name of the control to access.</summary>
-	public bool GetControlMultiplier(string Name,FPhysicsControlMultiplier ControlMultiplier) { return default; }
+	public bool GetControlMultiplier(FName Name,FPhysicsControlMultiplier ControlMultiplier) { return default; }
 	///<summary>@param Name     The name of the control to access.</summary>
-	public bool GetControlTarget(string Name,FPhysicsControlTarget ControlTarget) { return default; }
+	public bool GetControlTarget(FName Name,FPhysicsControlTarget ControlTarget) { return default; }
 	///<summary>@param Name        The name of the control to access.</summary>
-	public bool GetControlAutoDisable(string Name) { return default; }
+	public bool GetControlAutoDisable(FName Name) { return default; }
 	///<summary>@param Name        The name of the control to access.</summary>
-	public bool GetControlEnabled(string Name) { return default; }
+	public bool GetControlEnabled(FName Name) { return default; }
 	///<summary>Creates a new body modifier for mesh components</summary>
-	public string CreateBodyModifier(UMeshComponent MeshComponent,string BoneName,string Set,EPhysicsMovementType MovementType/*=EPhysicsMovementType.Simulated*/,ECollisionEnabled CollisionType/*=ECollisionEnabled.QueryAndPhysics*/,float GravityMultiplier/*=1.0f*/,bool bUseSkeletalAnimation/*=true*/) { return default; }
+	public FName CreateBodyModifier(UMeshComponent MeshComponent,FName BoneName,FName Set,EPhysicsMovementType MovementType/*=EPhysicsMovementType.Simulated*/,ECollisionEnabled CollisionType/*=ECollisionEnabled.QueryAndPhysics*/,float GravityMultiplier/*=1.0f*/,bool bUseSkeletalAnimation/*=true*/) { return default; }
 	///<summary>Creates a new body modifier for mesh components</summary>
-	public bool CreateNamedBodyModifier(string Name,UMeshComponent MeshComponent,string BoneName,string Set,EPhysicsMovementType MovementType/*=EPhysicsMovementType.Simulated*/,ECollisionEnabled CollisionType/*=ECollisionEnabled.QueryAndPhysics*/,float GravityMultiplier/*=1.0f*/,bool bUseSkeletalAnimation/*=true*/) { return default; }
+	public bool CreateNamedBodyModifier(FName Name,UMeshComponent MeshComponent,FName BoneName,FName Set,EPhysicsMovementType MovementType/*=EPhysicsMovementType.Simulated*/,ECollisionEnabled CollisionType/*=ECollisionEnabled.QueryAndPhysics*/,float GravityMultiplier/*=1.0f*/,bool bUseSkeletalAnimation/*=true*/) { return default; }
 	///<summary>Creates new body modifiers for skeletal mesh components</summary>
-	public TArray<string> CreateBodyModifiersFromSkeletalMeshBelow(USkeletalMeshComponent SkeletalMeshComponent,string BoneName,bool bIncludeSelf,string Set,EPhysicsMovementType MovementType/*=EPhysicsMovementType.Simulated*/,ECollisionEnabled CollisionType/*=ECollisionEnabled.QueryAndPhysics*/,float GravityMultiplier/*=1.0f*/,bool bUseSkeletalAnimation/*=true*/) { return default; }
+	public TArray<FName> CreateBodyModifiersFromSkeletalMeshBelow(USkeletalMeshComponent SkeletalMeshComponent,FName BoneName,bool bIncludeSelf,FName Set,EPhysicsMovementType MovementType/*=EPhysicsMovementType.Simulated*/,ECollisionEnabled CollisionType/*=ECollisionEnabled.QueryAndPhysics*/,float GravityMultiplier/*=1.0f*/,bool bUseSkeletalAnimation/*=true*/) { return default; }
 	///<summary>Creates a collection of controls controlling a skeletal mesh, grouped together in limbs</summary>
-	public TMap<string,FPhysicsControlNames> CreateBodyModifiersFromLimbBones(FPhysicsControlNames AllBodyModifiers,TMap<string,FPhysicsControlLimbBones> LimbBones,EPhysicsMovementType MovementType/*=EPhysicsMovementType.Simulated*/,ECollisionEnabled CollisionType/*=ECollisionEnabled.QueryAndPhysics*/,float GravityMultiplier/*=1.0f*/,bool bUseSkeletalAnimation/*=true*/) { return default; }
+	public TMap<FName,FPhysicsControlNames> CreateBodyModifiersFromLimbBones(FPhysicsControlNames AllBodyModifiers,TMap<FName,FPhysicsControlLimbBones> LimbBones,EPhysicsMovementType MovementType/*=EPhysicsMovementType.Simulated*/,ECollisionEnabled CollisionType/*=ECollisionEnabled.QueryAndPhysics*/,float GravityMultiplier/*=1.0f*/,bool bUseSkeletalAnimation/*=true*/) { return default; }
 	///<summary>Destroys a BodyModifier</summary>
-	public bool DestroyBodyModifier(string Name) { return default; }
+	public bool DestroyBodyModifier(FName Name) { return default; }
 	///<summary>Destroys BodyModifiers</summary>
-	public void DestroyBodyModifiers(TArray<string> Names) {}
+	public void DestroyBodyModifiers(TArray<FName> Names) {}
 	///<summary>Destroys BodyModifiers</summary>
-	public void DestroyBodyModifiersInSet(string Set) {}
+	public void DestroyBodyModifiersInSet(FName Set) {}
 	///<summary>Sets the kinematic target transform for a body modifier.</summary>
-	public bool SetBodyModifierKinematicTarget(string Name,FVector KinematicTargetPosition,FRotator KinematicTargetOrienation,bool bMakeKinematic) { return default; }
+	public bool SetBodyModifierKinematicTarget(FName Name,FVector KinematicTargetPosition,FRotator KinematicTargetOrienation,bool bMakeKinematic) { return default; }
 	///<summary>Sets the movement type for a body modifier</summary>
-	public bool SetBodyModifierMovementType(string Name,EPhysicsMovementType MovementType/*=EPhysicsMovementType.Simulated*/) { return default; }
+	public bool SetBodyModifierMovementType(FName Name,EPhysicsMovementType MovementType/*=EPhysicsMovementType.Simulated*/) { return default; }
 	///<summary>Sets the movement type for body modifiers</summary>
-	public void SetBodyModifiersMovementType(TArray<string> Names,EPhysicsMovementType MovementType/*=EPhysicsMovementType.Simulated*/) {}
+	public void SetBodyModifiersMovementType(TArray<FName> Names,EPhysicsMovementType MovementType/*=EPhysicsMovementType.Simulated*/) {}
 	///<summary>Sets the movement type for body modifiers</summary>
-	public void SetBodyModifiersInSetMovementType(string Set,EPhysicsMovementType MovementType/*=EPhysicsMovementType.Simulated*/) {}
+	public void SetBodyModifiersInSetMovementType(FName Set,EPhysicsMovementType MovementType/*=EPhysicsMovementType.Simulated*/) {}
 	///<summary>Sets the collision type for a body modifier</summary>
-	public bool SetBodyModifierCollisionType(string Name,ECollisionEnabled CollisionType/*=ECollisionEnabled.QueryAndPhysics*/) { return default; }
+	public bool SetBodyModifierCollisionType(FName Name,ECollisionEnabled CollisionType/*=ECollisionEnabled.QueryAndPhysics*/) { return default; }
 	///<summary>Sets the collision type for body modifiers</summary>
-	public void SetBodyModifiersCollisionType(TArray<string> Names,ECollisionEnabled CollisionType/*=ECollisionEnabled.QueryAndPhysics*/) {}
+	public void SetBodyModifiersCollisionType(TArray<FName> Names,ECollisionEnabled CollisionType/*=ECollisionEnabled.QueryAndPhysics*/) {}
 	///<summary>Sets the collision type for body modifiers</summary>
-	public void SetBodyModifiersInSetCollisionType(string Set,ECollisionEnabled CollisionType/*=ECollisionEnabled.QueryAndPhysics*/) {}
+	public void SetBodyModifiersInSetCollisionType(FName Set,ECollisionEnabled CollisionType/*=ECollisionEnabled.QueryAndPhysics*/) {}
 	///<summary>Sets the gravity multiplier for a body modifier</summary>
-	public bool SetBodyModifierGravityMultiplier(string Name,float GravityMultiplier/*=1.0f*/) { return default; }
+	public bool SetBodyModifierGravityMultiplier(FName Name,float GravityMultiplier/*=1.0f*/) { return default; }
 	///<summary>Sets the gravity multiplier for body modifiers</summary>
-	public void SetBodyModifiersGravityMultiplier(TArray<string> Names,float GravityMultiplier/*=1.0f*/) {}
+	public void SetBodyModifiersGravityMultiplier(TArray<FName> Names,float GravityMultiplier/*=1.0f*/) {}
 	///<summary>Sets the gravity multiplier for body modifiers</summary>
-	public void SetBodyModifiersInSetGravityMultiplier(string Set,float GravityMultiplier/*=1.0f*/) {}
+	public void SetBodyModifiersInSetGravityMultiplier(FName Set,float GravityMultiplier/*=1.0f*/) {}
 	///<summary>Sets whether a body modifier should use skeletal animation for its kinematic targets</summary>
-	public bool SetBodyModifierUseSkeletalAnimation(string Name,bool bUseSkeletalAnimation) { return default; }
+	public bool SetBodyModifierUseSkeletalAnimation(FName Name,bool bUseSkeletalAnimation) { return default; }
 	///<summary>Sets whether body modifiers should use skeletal animation for their kinematic targets</summary>
-	public void SetBodyModifiersUseSkeletalAnimation(TArray<string> Names,bool bUseSkeletalAnimation) {}
+	public void SetBodyModifiersUseSkeletalAnimation(TArray<FName> Names,bool bUseSkeletalAnimation) {}
 	///<summary>Sets whether body modifiers should use skeletal animation for their kinematic targets</summary>
-	public void SetBodyModifiersInSetUseSkeletalAnimation(string Set,bool bUseSkeletalAnimation) {}
+	public void SetBodyModifiersInSetUseSkeletalAnimation(FName Set,bool bUseSkeletalAnimation) {}
 	///<summary>Creates a collections of controls and body modifiers for a character, based on the description passed in.</summary>
-	public void CreateControlsAndBodyModifiersFromLimbBones(FPhysicsControlNames AllWorldSpaceControls,TMap<string,FPhysicsControlNames> LimbWorldSpaceControls,FPhysicsControlNames AllParentSpaceControls,TMap<string,FPhysicsControlNames> LimbParentSpaceControls,FPhysicsControlNames AllBodyModifiers,TMap<string,FPhysicsControlNames> LimbBodyModifiers,USkeletalMeshComponent SkeletalMeshComponent,TArray<FPhysicsControlLimbSetupData> LimbSetupData,FPhysicsControlData WorldSpaceControlData,FPhysicsControlSettings WorldSpaceControlSettings,bool bEnableWorldSpaceControls,FPhysicsControlData ParentSpaceControlData,FPhysicsControlSettings ParentSpaceControlSettings,bool bEnableParentSpaceControls,EPhysicsMovementType PhysicsMovementType/*=EPhysicsMovementType.Static*/,float GravityMultiplier/*=1.0f*/) {}
+	public void CreateControlsAndBodyModifiersFromLimbBones(FPhysicsControlNames AllWorldSpaceControls,TMap<FName,FPhysicsControlNames> LimbWorldSpaceControls,FPhysicsControlNames AllParentSpaceControls,TMap<FName,FPhysicsControlNames> LimbParentSpaceControls,FPhysicsControlNames AllBodyModifiers,TMap<FName,FPhysicsControlNames> LimbBodyModifiers,USkeletalMeshComponent SkeletalMeshComponent,TArray<FPhysicsControlLimbSetupData> LimbSetupData,FPhysicsControlData WorldSpaceControlData,FPhysicsControlSettings WorldSpaceControlSettings,bool bEnableWorldSpaceControls,FPhysicsControlData ParentSpaceControlData,FPhysicsControlSettings ParentSpaceControlSettings,bool bEnableParentSpaceControls,EPhysicsMovementType PhysicsMovementType/*=EPhysicsMovementType.Static*/,float GravityMultiplier/*=1.0f*/) {}
 	///<summary>Adds a Control to a Set. This will add a new set if necessary. For example, you might</summary>
-	public void AddControlToSet(FPhysicsControlNames NewSet,string Control,string Set) {}
+	public void AddControlToSet(FPhysicsControlNames NewSet,FName Control,FName Set) {}
 	///<summary>Adds Controls to a Set. This will add a new set if necessary. For example, you might</summary>
-	public void AddControlsToSet(FPhysicsControlNames NewSet,TArray<string> Controls,string Set) {}
+	public void AddControlsToSet(FPhysicsControlNames NewSet,TArray<FName> Controls,FName Set) {}
 	///<summary>Returns a reference to all the control names that have been created.</summary>
-	public TArray<string> GetAllControlNames() { return default; }
+	public TArray<FName> GetAllControlNames() { return default; }
 	///<summary>Returns a reference to all the control names that have been created and are in the specified</summary>
-	public TArray<string> GetControlNamesInSet(string Set) { return default; }
+	public TArray<FName> GetControlNamesInSet(FName Set) { return default; }
 	///<summary>Returns a reference to all the body modifier names that have been created.</summary>
-	public TArray<string> GetAllBodyModifierNames() { return default; }
+	public TArray<FName> GetAllBodyModifierNames() { return default; }
 	///<summary>Returns a reference to all the body modifier names that have been created and are in the specified</summary>
-	public TArray<string> GetBodyModifierNamesInSet(string Set) { return default; }
+	public TArray<FName> GetBodyModifierNamesInSet(FName Set) { return default; }
 	///<summary>Adds a BodyModifier to a Set. This will add a new set if necessary. For example, you might</summary>
-	public void AddBodyModifierToSet(FPhysicsControlNames NewSet,string BodyModifier,string Set) {}
+	public void AddBodyModifierToSet(FPhysicsControlNames NewSet,FName BodyModifier,FName Set) {}
 	///<summary>Adds BodyModifiers to a Set. This will add a new set if necessary. For example, you might</summary>
-	public void AddBodyModifiersToSet(FPhysicsControlNames NewSet,TArray<string> BodyModifiers,string Set) {}
+	public void AddBodyModifiersToSet(FPhysicsControlNames NewSet,TArray<FName> BodyModifiers,FName Set) {}
 	///<summary>Returns the names of all sets containing the control (may be empty - e.g. if it doesn&#39;t exist)</summary>
-	public TArray<string> GetSetsContainingControl(string Control) { return default; }
+	public TArray<FName> GetSetsContainingControl(FName Control) { return default; }
 	///<summary>Returns the names of all sets containing the body modifier (may be empty - e.g. if it doesn&#39;t exist)</summary>
-	public TArray<string> GetSetsContainingBodyModifier(string Control) { return default; }
+	public TArray<FName> GetSetsContainingBodyModifier(FName Control) { return default; }
 	///<summary>If the component moves by more than this distance then it is treated as a teleport,</summary>
 	public float TeleportDistanceThreshold;
 	///<summary>If the component rotates by more than this angle (in degrees) then it is treated as a teleport,</summary>

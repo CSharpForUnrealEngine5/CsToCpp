@@ -12,11 +12,11 @@ public partial class ALandscapeBlueprintBrushBase : AActor {
 	///<summary>AffectWeightmap</summary>
 	public bool AffectWeightmap;
 	///<summary>AffectedWeightmapLayers</summary>
-	public TArray<string> AffectedWeightmapLayers;
+	public TArray<FName> AffectedWeightmapLayers;
 	///<summary>bIsVisible</summary>
 	public bool bIsVisible;
 	///<summary>Render</summary>
-	public UTextureRenderTarget2D Render(bool InIsHeightmap,UTextureRenderTarget2D InCombinedResult,string InWeightmapLayerName) { return default; }
+	public UTextureRenderTarget2D Render(bool InIsHeightmap,UTextureRenderTarget2D InCombinedResult,FName InWeightmapLayerName) { return default; }
 	///<summary>Initialize</summary>
 	public void Initialize(FTransform InLandscapeTransform,FIntPoint InLandscapeSize,FIntPoint InLandscapeRenderTargetSize) {}
 	///<summary>RequestLandscapeUpdate</summary>

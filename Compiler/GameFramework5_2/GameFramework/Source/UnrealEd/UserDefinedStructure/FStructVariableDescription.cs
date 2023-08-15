@@ -2,12 +2,12 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("UserDefinedStructure/UserDefinedStructEditorData.h")]
 public partial struct FStructVariableDescription {
-	public string VarName;
+	public FName VarName;
 	public FGuid VarGuid;
 	public string FriendlyName;
 	public string DefaultValue;
-	public string Category;
-	public string SubCategory;
+	public FName Category;
+	public FName SubCategory;
 	public TSoftObjectPtr<UObject> SubCategoryObject;
 	public FEdGraphTerminalType PinValueType;
 	public EPinContainerType ContainerType;

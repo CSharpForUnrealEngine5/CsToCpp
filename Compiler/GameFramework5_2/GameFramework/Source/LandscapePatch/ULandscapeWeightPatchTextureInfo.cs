@@ -5,7 +5,7 @@ using CSharpToCpp.Utilities;
 public partial class ULandscapeWeightPatchTextureInfo : UObject {
 	public static UClass StaticClass() {return default;}
 	///<summary>WeightmapLayerName</summary>
-	public string WeightmapLayerName;
+	public FName WeightmapLayerName;
 	///<summary>Texture to use when source mode is set to texture asset.</summary>
 	public UTexture TextureAsset;
 	///<summary>Not directly settable via detail panel- for display/debugging purposes only.</summary>

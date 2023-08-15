@@ -4,5 +4,5 @@ using CSharpToCpp.Utilities;
 [CppInclude("PerPlatformProperties.h")]
 public partial struct FPerPlatformBool {
 	public bool Default;
-	public TMap<string,bool> PerPlatform;
+	public TMap<FName,bool> PerPlatform;
 }

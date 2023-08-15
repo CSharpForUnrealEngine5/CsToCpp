@@ -4,7 +4,7 @@ using CSharpToCpp.Utilities;
 [CppInclude("GameFramework/LocalMessage.h")]
 public partial struct FClientReceiveData {
 	public APlayerController LocalPC;
-	public string MessageType;
+	public FName MessageType;
 	public int MessageIndex;
 	public string MessageString;
 	public APlayerState RelatedPlayerState_1;

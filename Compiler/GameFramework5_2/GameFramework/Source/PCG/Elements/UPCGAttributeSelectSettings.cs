@@ -7,7 +7,7 @@ public partial class UPCGAttributeSelectSettings : UPCGSettings {
 	///<summary>InputSource</summary>
 	public FPCGAttributePropertySelector InputSource;
 	///<summary>OutputAttributeName</summary>
-	public string OutputAttributeName;
+	public FName OutputAttributeName;
 	///<summary>Operation</summary>
 	public EPCGAttributeSelectOperation Operation;
 	///<summary>Axis</summary>
@@ -15,5 +15,5 @@ public partial class UPCGAttributeSelectSettings : UPCGSettings {
 	///<summary>CustomAxis</summary>
 	public FVector4 CustomAxis;
 	///<summary>InputAttributeName_DEPRECATED</summary>
-	public string InputAttributeName_DEPRECATED;
+	public FName InputAttributeName_DEPRECATED;
 }

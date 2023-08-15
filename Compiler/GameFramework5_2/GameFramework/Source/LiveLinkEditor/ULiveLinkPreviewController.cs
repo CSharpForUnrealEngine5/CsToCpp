@@ -4,7 +4,7 @@ using CSharpToCpp.Utilities;
 public partial class ULiveLinkPreviewController : UPersonaPreviewSceneController {
 	public static UClass StaticClass() {return default;}
 	///<summary>SubjectName_DEPRECATED</summary>
-	public string SubjectName_DEPRECATED;
+	public FName SubjectName_DEPRECATED;
 	///<summary>LiveLinkSubjectName</summary>
 	public FLiveLinkSubjectName LiveLinkSubjectName;
 	///<summary>bEnableCameraSync</summary>

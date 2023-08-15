@@ -4,11 +4,11 @@ using CSharpToCpp.Utilities;
 public partial class UBlueprintEditorLibrary : UBlueprintFunctionLibrary {
 	public static UClass StaticClass() {return default;}
 	///<summary>Replace any references of variables with the OldVarName to references of those with the NewVarName if possible</summary>
-	public static void ReplaceVariableReferences(UBlueprint Blueprint,string OldVarName,string NewVarName) {}
+	public static void ReplaceVariableReferences(UBlueprint Blueprint,FName OldVarName,FName NewVarName) {}
 	///<summary>Finds the event graph of the given blueprint. Null if it doesn&#39;t have one. This will only return</summary>
 	public static UEdGraph FindEventGraph(UBlueprint Blueprint) { return default; }
 	///<summary>Finds the graph with the given name on the blueprint. Null if it doesn&#39;t have one.</summary>
-	public static UEdGraph FindGraph(UBlueprint Blueprint,string GraphName) { return default; }
+	public static UEdGraph FindGraph(UBlueprint Blueprint,FName GraphName) { return default; }
 	///<summary>Replace any old operator nodes (float + float, vector + float, int + vector, etc)</summary>
 	public static void UpgradeOperatorNodes(UBlueprint Blueprint) {}
 	///<summary>Compiles the given blueprint.</summary>
@@ -16,7 +16,7 @@ public partial class UBlueprintEditorLibrary : UBlueprintFunctionLibrary {
 	///<summary>Adds a function to the given blueprint</summary>
 	public static UEdGraph AddFunctionGraph(UBlueprint Blueprint,string FuncName/*=new FString(TEXT("NewFunction"))*/) { return default; }
 	///<summary>Deletes the function of the given name on this blueprint. Does NOT replace function call sites.</summary>
-	public static void RemoveFunctionGraph(UBlueprint Blueprint,string FuncName) {}
+	public static void RemoveFunctionGraph(UBlueprint Blueprint,FName FuncName) {}
 	///<summary>Remove any nodes in this blueprint that have no connections made to them.</summary>
 	public static void RemoveUnusedNodes(UBlueprint Blueprint) {}
 	///<summary>Removes the given graph from the blueprint if possible</summary>
@@ -36,9 +36,9 @@ public partial class UBlueprintEditorLibrary : UBlueprintFunctionLibrary {
 	///<summary>Gets the class generated when this blueprint is compiled</summary>
 	public static UClass GeneratedClass(UBlueprint BlueprintObj) { return default; }
 	///<summary>Sets &quot;Expose On Spawn&quot; to true/false on a Blueprint variable</summary>
-	public static void SetBlueprintVariableExposeOnSpawn(UBlueprint Blueprint,string VariableName,bool bExposeOnSpawn) {}
+	public static void SetBlueprintVariableExposeOnSpawn(UBlueprint Blueprint,FName VariableName,bool bExposeOnSpawn) {}
 	///<summary>Sets &quot;Expose To Cinematics&quot; to true/false on a Blueprint variable</summary>
-	public static void SetBlueprintVariableExposeToCinematics(UBlueprint Blueprint,string VariableName,bool bExposeToCinematics) {}
+	public static void SetBlueprintVariableExposeToCinematics(UBlueprint Blueprint,FName VariableName,bool bExposeToCinematics) {}
 	///<summary>Sets &quot;Instance Editable&quot; to true/false on a Blueprint variable</summary>
-	public static void SetBlueprintVariableInstanceEditable(UBlueprint Blueprint,string VariableName,bool bInstanceEditable) {}
+	public static void SetBlueprintVariableInstanceEditable(UBlueprint Blueprint,FName VariableName,bool bInstanceEditable) {}
 }

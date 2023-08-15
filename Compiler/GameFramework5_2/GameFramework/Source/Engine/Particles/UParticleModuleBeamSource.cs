@@ -6,7 +6,7 @@ public partial class UParticleModuleBeamSource : UParticleModuleBeamBase {
 	///<summary>The method flag.</summary>
 	public Beam2SourceTargetMethod SourceMethod;
 	///<summary>The strength of the tangent from the source point for each beam.</summary>
-	public string SourceName;
+	public FName SourceName;
 	///<summary>Whether to treat the as an absolute position in world space.</summary>
 	public bool bSourceAbsolute;
 	///<summary>Default source-point to use.</summary>

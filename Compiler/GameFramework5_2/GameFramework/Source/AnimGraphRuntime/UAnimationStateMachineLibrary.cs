@@ -17,9 +17,9 @@ public partial class UAnimationStateMachineLibrary : UBlueprintFunctionLibrary {
 	///<summary>Returns whether the state the node belongs to is blending out</summary>
 	public static bool IsStateBlendingOut(FAnimUpdateContext UpdateContext,FAnimationStateResultReference Node) { return default; }
 	///<summary>Manually set the current state of the state machine</summary>
-	public static void SetState(FAnimUpdateContext UpdateContext,FAnimationStateMachineReference Node,string TargetState,float Duration,ETransitionLogicType BlendType,UBlendProfile BlendProfile,EAlphaBlendOption AlphaBlendOption,UCurveFloat CustomBlendCurve) {}
+	public static void SetState(FAnimUpdateContext UpdateContext,FAnimationStateMachineReference Node,FName TargetState,float Duration,ETransitionLogicType BlendType,UBlendProfile BlendProfile,EAlphaBlendOption AlphaBlendOption,UCurveFloat CustomBlendCurve) {}
 	///<summary>Returns the name of the current state of this state machine</summary>
-	public static string GetState(FAnimUpdateContext UpdateContext,FAnimationStateMachineReference Node) { return default; }
+	public static FName GetState(FAnimUpdateContext UpdateContext,FAnimationStateMachineReference Node) { return default; }
 	///<summary>Returns the remaining animation time of the state&#39;s most relevant asset player</summary>
 	public static float GetRelevantAnimTimeRemaining(FAnimUpdateContext UpdateContext,FAnimationStateResultReference Node) { return default; }
 	///<summary>Returns the remaining animation time as a fraction of the duration for the state&#39;s most relevant asset player</summary>

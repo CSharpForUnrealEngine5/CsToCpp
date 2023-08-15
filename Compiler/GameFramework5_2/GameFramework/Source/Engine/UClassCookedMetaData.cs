@@ -7,5 +7,5 @@ public partial class UClassCookedMetaData : UObject {
 	///<summary>ClassMetaData</summary>
 	public FStructCookedMetaDataStore ClassMetaData;
 	///<summary>FunctionsMetaData</summary>
-	public TMap<string,FStructCookedMetaDataStore> FunctionsMetaData;
+	public TMap<FName,FStructCookedMetaDataStore> FunctionsMetaData;
 }

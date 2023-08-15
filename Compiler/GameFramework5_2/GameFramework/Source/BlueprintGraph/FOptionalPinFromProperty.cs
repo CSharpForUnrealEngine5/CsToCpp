@@ -2,10 +2,10 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("K2Node.h")]
 public partial struct FOptionalPinFromProperty {
-	public string PropertyName;
+	public FName PropertyName;
 	public string PropertyFriendlyName;
 	public FText PropertyTooltip;
-	public string CategoryName;
+	public FName CategoryName;
 	public bool bShowPin;
 	public bool bCanToggleVisibility;
 	public bool bPropertyIsCustomized;

@@ -4,9 +4,9 @@ using CSharpToCpp.Utilities;
 public partial class USkeletalMeshSocket : UObject {
 	public static UClass StaticClass() {return default;}
 	///<summary>Defines a named attachment location on the USkeletalMesh.</summary>
-	public string SocketName;
+	public FName SocketName;
 	///<summary>BoneName</summary>
-	public string BoneName;
+	public FName BoneName;
 	///<summary>RelativeLocation</summary>
 	public FVector RelativeLocation;
 	///<summary>RelativeRotation</summary>

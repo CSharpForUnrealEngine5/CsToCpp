@@ -4,7 +4,7 @@ using CSharpToCpp.Utilities;
 public partial class UK2Node_SwitchString : UK2Node_Switch {
 	public static UClass StaticClass() {return default;}
 	///<summary>PinNames</summary>
-	public TArray<string> PinNames;
+	public TArray<FName> PinNames;
 	///<summary>bIsCaseSensitive</summary>
 	public bool bIsCaseSensitive;
 }

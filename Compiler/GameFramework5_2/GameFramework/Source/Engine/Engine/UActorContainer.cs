@@ -5,5 +5,5 @@ using CSharpToCpp.Utilities;
 public partial class UActorContainer : UObject {
 	public static UClass StaticClass() {return default;}
 	///<summary>Actors</summary>
-	public TMap<string,AActor> Actors;
+	public TMap<FName,AActor> Actors;
 }

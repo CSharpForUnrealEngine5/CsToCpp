@@ -94,5 +94,5 @@ public partial class UParticleModuleRequired : UParticleModule {
 	///<summary>When EmitterNormalsMode is ENM_Cylindrical,</summary>
 	public FVector NormalsCylinderDirection;
 	///<summary>Named material overrides for this emitter.</summary>
-	public TArray<string> NamedMaterialOverrides;
+	public TArray<FName> NamedMaterialOverrides;
 }

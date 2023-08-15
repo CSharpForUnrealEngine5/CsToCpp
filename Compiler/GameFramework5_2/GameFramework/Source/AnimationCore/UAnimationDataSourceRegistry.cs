@@ -4,5 +4,5 @@ using CSharpToCpp.Utilities;
 public partial class UAnimationDataSourceRegistry : UObject {
 	public static UClass StaticClass() {return default;}
 	///<summary>DataSources</summary>
-	public TMap<string,TWeakObjectPtr<UObject>> DataSources;
+	public TMap<FName,TWeakObjectPtr<UObject>> DataSources;
 }

@@ -5,7 +5,7 @@ using CSharpToCpp.Utilities;
 public partial class UAnimNotifyState_IKWindow : UAnimNotifyState {
 	public static UClass StaticClass() {return default;}
 	///<summary>GoalName</summary>
-	public string GoalName;
+	public FName GoalName;
 	///<summary>BlendIn</summary>
 	public FAlphaBlend BlendIn;
 	///<summary>BlendOut</summary>

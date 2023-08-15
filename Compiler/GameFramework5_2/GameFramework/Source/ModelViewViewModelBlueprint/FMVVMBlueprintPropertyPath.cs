@@ -4,7 +4,7 @@ using CSharpToCpp.Utilities;
 [CppInclude("MVVMPropertyPath.h")]
 public partial struct FMVVMBlueprintPropertyPath {
 	public TArray<FMVVMBlueprintFieldPath> Paths;
-	public string WidgetName;
+	public FName WidgetName;
 	public FGuid ContextId;
 	public FMemberReference BindingReference;
 	public EBindingKind BindingKind;

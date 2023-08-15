@@ -6,7 +6,7 @@ public partial class APropertyEditorTestActor : AActor {
 	///<summary>InstancedUObjectArray</summary>
 	public TArray<UPropertyEditorTestInstancedObject> InstancedUObjectArray;
 	///<summary>GetOptionsValue</summary>
-	public string GetOptionsValue;
+	public FName GetOptionsValue;
 	///<summary>DefaultsOnly</summary>
 	public float DefaultsOnly;
 	///<summary>DefaultsOnlySubcategory</summary>

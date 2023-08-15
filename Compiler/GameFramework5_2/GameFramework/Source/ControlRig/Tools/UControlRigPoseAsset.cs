@@ -13,11 +13,11 @@ public partial class UControlRigPoseAsset : UObject {
 	///<summary>GetCurrentPose</summary>
 	public void GetCurrentPose(UControlRig InControlRig,FControlRigControlPose OutPose) {}
 	///<summary>GetControlNames</summary>
-	public TArray<string> GetControlNames() { return default; }
+	public TArray<FName> GetControlNames() { return default; }
 	///<summary>ReplaceControlName</summary>
-	public void ReplaceControlName(string CurrentName,string NewName) {}
+	public void ReplaceControlName(FName CurrentName,FName NewName) {}
 	///<summary>DoesMirrorMatch</summary>
-	public bool DoesMirrorMatch(UControlRig ControlRig,string ControlName) { return default; }
+	public bool DoesMirrorMatch(UControlRig ControlRig,FName ControlName) { return default; }
 	///<summary>Pose</summary>
 	public FControlRigControlPose Pose;
 }

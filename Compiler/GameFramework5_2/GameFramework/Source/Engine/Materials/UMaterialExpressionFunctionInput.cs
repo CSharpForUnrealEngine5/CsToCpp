@@ -6,7 +6,7 @@ public partial class UMaterialExpressionFunctionInput : UMaterialExpression {
 	///<summary>Used for previewing when editing the function, or when bUsePreviewValueAsDefault is enabled.</summary>
 	public FExpressionInput Preview;
 	///<summary>The input&#39;s name, which will be drawn on the connector in function call expressions that use this function.</summary>
-	public string InputName;
+	public FName InputName;
 	///<summary>The input&#39;s description, which will be used as a tooltip on the connector in function call expressions that use this function.</summary>
 	public string Description;
 	///<summary>Id of this input, used to maintain references through name changes.</summary>

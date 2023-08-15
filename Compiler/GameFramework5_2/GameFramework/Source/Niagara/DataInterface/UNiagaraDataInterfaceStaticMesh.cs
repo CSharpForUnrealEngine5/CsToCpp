@@ -27,7 +27,7 @@ public partial class UNiagaraDataInterfaceStaticMesh : UNiagaraDataInterface {
 	///<summary>Reference to a user parameter if we&#39;re reading one.</summary>
 	public FNiagaraUserParameterBinding LODIndexUserParameter;
 	///<summary>List of filtered sockets to use.</summary>
-	public TArray<string> FilteredSockets;
+	public TArray<FName> FilteredSockets;
 	///<summary>OnSourceEndPlay</summary>
 	public void OnSourceEndPlay(AActor InSource,EEndPlayReason Reason) {}
 }

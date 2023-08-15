@@ -3,7 +3,7 @@ using CSharpToCpp.Utilities;
 [CppInclude("GroomAssetCards.h")]
 public partial struct FHairGroupsCardsSourceDescription {
 	public UMaterialInterface Material;
-	public string MaterialSlotName;
+	public FName MaterialSlotName;
 	public EHairCardsSourceType SourceType;
 	public UStaticMesh ProceduralMesh;
 	public string ProceduralMeshKey;

@@ -5,6 +5,6 @@ public partial struct FAnimNode_RemapCurvesFromMesh {
 	public FPoseLink SourcePose;
 	public TWeakObjectPtr<USkeletalMeshComponent> SourceMeshComponent;
 	public bool bUseAttachedParent;
-	public TMap<string,string> CurveExpressions;
+	public TMap<FName,string> CurveExpressions;
 	public bool bExpressionsImmutable;
 }

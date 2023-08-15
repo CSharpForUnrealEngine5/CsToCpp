@@ -4,6 +4,6 @@ using CSharpToCpp.Utilities;
 public partial struct FShaderValueType {
 	public EShaderFundamentalType Type;
 	public EShaderFundamentalDimensionType DimensionType;
-	public string Name;
+	public FName Name;
 	public bool bIsDynamicArray;
 }

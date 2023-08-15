@@ -43,7 +43,7 @@ public partial class UNiagaraEmitterConversionContext : UObject {
 	///<summary>AddEventHandler</summary>
 	public void AddEventHandler(FNiagaraEventHandlerAddAction EventScriptPropertiesBP) {}
 	///<summary>SetRendererBinding</summary>
-	public void SetRendererBinding(UNiagaraRendererProperties InRendererProperties,string BindingName,string VariableToBindName,ENiagaraRendererSourceDataMode SourceDataMode) {}
+	public void SetRendererBinding(UNiagaraRendererProperties InRendererProperties,FName BindingName,FName VariableToBindName,ENiagaraRendererSourceDataMode SourceDataMode) {}
 	///<summary>RemoveModuleScriptsForAssets</summary>
 	public void RemoveModuleScriptsForAssets(TArray<FAssetData> ScriptsToRemove) {}
 	///<summary>SetPastedFunctionCallNode</summary>

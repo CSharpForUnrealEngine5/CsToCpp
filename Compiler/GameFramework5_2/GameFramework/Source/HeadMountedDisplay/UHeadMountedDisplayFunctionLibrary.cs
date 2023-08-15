@@ -10,7 +10,7 @@ public partial class UHeadMountedDisplayFunctionLibrary : UBlueprintFunctionLibr
 	///<summary>Switches to/from using HMD and stereo rendering.</summary>
 	public static bool EnableHMD(bool bEnable) { return default; }
 	///<summary>Returns the name of the device, so scripts can modify their behaviour appropriately</summary>
-	public static string GetHMDDeviceName() { return default; }
+	public static FName GetHMDDeviceName() { return default; }
 	///<summary>Returns the flags for the device, so scripts can modify their behaviour appropriately</summary>
 	public static int GetXRSystemFlags() { return default; }
 	///<summary>Returns name of tracking system specific version string.</summary>
@@ -62,7 +62,7 @@ public partial class UHeadMountedDisplayFunctionLibrary : UBlueprintFunctionLibr
 	///<summary>Setup the layout for ESpectatorScreenMode::TexturePlusEye.</summary>
 	public static void SetSpectatorScreenModeTexturePlusEyeLayout(FVector2D EyeRectMin,FVector2D EyeRectMax,FVector2D TextureRectMin,FVector2D TextureRectMax,bool bDrawEyeFirst/*=true*/,bool bClearBlack/*=false*/,bool bUseAlpha/*=false*/) {}
 	///<summary>Cross XR-System query that will list all XR devices currently being tracked.</summary>
-	public static TArray<FXRDeviceId> EnumerateTrackedDevices(string SystemId/*=NAME_None*/,EXRTrackedDeviceType DeviceType/*=EXRTrackedDeviceType.Any*/) { return default; }
+	public static TArray<FXRDeviceId> EnumerateTrackedDevices(FName SystemId/*=NAME_None*/,EXRTrackedDeviceType DeviceType/*=EXRTrackedDeviceType.Any*/) { return default; }
 	///<summary>Cross XR-System query that returns a specific device&#39;s tracked position and orientation (in tracking space).</summary>
 	public static void GetDevicePose(FXRDeviceId XRDeviceId,bool bIsTracked,FRotator Orientation,bool bHasPositionalTracking,FVector Position) {}
 	///<summary>Cross XR-System query that returns a specific device&#39;s position and orientation in world space.</summary>
@@ -84,11 +84,11 @@ public partial class UHeadMountedDisplayFunctionLibrary : UBlueprintFunctionLibr
 	///<summary>SetXRDisconnectDelegate</summary>
 	public static void SetXRDisconnectDelegate(FXRDeviceOnDisconnectDelegate InDisconnectedDelegate) {}
 	///<summary>Hook up a delegate to get an OpenXR action event with action time.</summary>
-	public static void SetXRTimedInputActionDelegate(string ActionName,FXRTimedInputActionDelegate InDelegate) {}
+	public static void SetXRTimedInputActionDelegate(FName ActionName,FXRTimedInputActionDelegate InDelegate) {}
 	///<summary>/ Clear a delegate to get an OpenXR action event with action time.</summary>
-	public static void ClearXRTimedInputActionDelegate(string ActionPath) {}
+	public static void ClearXRTimedInputActionDelegate(FName ActionPath) {}
 	///<summary>Get the transform and potentially velocity data at a specified time near the current frame in unreal world space.</summary>
-	public static bool GetControllerTransformForTime(UObject WorldContext,int ControllerIndex,string MotionSource,FTimespan Time,bool bTimeWasUsed,FRotator Orientation,FVector Position,bool bProvidedLinearVelocity,FVector LinearVelocity,bool bProvidedAngularVelocity,FVector AngularVelocityRadPerSec,bool bProvidedLinearAcceleration,FVector LinearAcceleration) { return default; }
+	public static bool GetControllerTransformForTime(UObject WorldContext,int ControllerIndex,FName MotionSource,FTimespan Time,bool bTimeWasUsed,FRotator Orientation,FVector Position,bool bProvidedLinearVelocity,FVector LinearVelocity,bool bProvidedAngularVelocity,FVector AngularVelocityRadPerSec,bool bProvidedLinearAcceleration,FVector LinearAcceleration) { return default; }
 	///<summary>Get the bounds of the area where the user can freely move while remaining tracked centered around the specified origin</summary>
 	public static FVector2D GetPlayAreaBounds(EHMDTrackingOrigin Origin/*=EHMDTrackingOrigin.Stage*/) { return default; }
 	///<summary>Get the transform of the specified tracking origin, if available.</summary>
@@ -96,5 +96,5 @@ public partial class UHeadMountedDisplayFunctionLibrary : UBlueprintFunctionLibr
 	///<summary>Get the transform and dimensions of the playable area rectangle.  Returns false if none currently specified/available.</summary>
 	public static bool GetPlayAreaRect(FTransform OutTransform,FVector2D OutRect) { return default; }
 	///<summary>Breaks an XR key apart into the interaction profile, handedness, motion source, indentifier and component.</summary>
-	public static void BreakKey(FKey InKey,string InteractionProfile,EControllerHand Hand,string MotionSource,string Indentifier,string Component) {}
+	public static void BreakKey(FKey InKey,string InteractionProfile,EControllerHand Hand,FName MotionSource,string Indentifier,string Component) {}
 }

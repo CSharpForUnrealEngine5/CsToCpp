@@ -9,5 +9,5 @@ public partial class UMetaDataRegistrySource : UDataRegistrySource {
 	///<summary>Asset registry scan rules</summary>
 	public FAssetManagerSearchRules SearchRules;
 	///<summary>Map from source identifier such as package name to registered child</summary>
-	public TMap<string,UDataRegistrySource> RuntimeChildren;
+	public TMap<FName,UDataRegistrySource> RuntimeChildren;
 }

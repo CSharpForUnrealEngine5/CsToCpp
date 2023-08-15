@@ -10,5 +10,5 @@ public partial class UVolumetricBuilder : UEditorBrushBuilder {
 	///<summary>NumSheets</summary>
 	public int NumSheets;
 	///<summary>GroupName</summary>
-	public string GroupName;
+	public FName GroupName;
 }

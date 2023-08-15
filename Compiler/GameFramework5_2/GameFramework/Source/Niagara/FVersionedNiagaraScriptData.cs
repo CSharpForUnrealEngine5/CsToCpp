@@ -8,7 +8,7 @@ public partial struct FVersionedNiagaraScriptData {
 	public int ModuleUsageBitmask;
 	public FText Category;
 	public bool bSuggested;
-	public TArray<string> ProvidedDependencies;
+	public TArray<FName> ProvidedDependencies;
 	public TArray<FNiagaraModuleDependency> RequiredDependencies;
 	public bool bDeprecated;
 	public FText DeprecationMessage;
@@ -23,7 +23,7 @@ public partial struct FVersionedNiagaraScriptData {
 	public FText Keywords;
 	public FText CollapsedViewFormat;
 	public bool bCanBeUsedForTypeConversions;
-	public TMap<string,string> ScriptMetaData;
+	public TMap<FName,string> ScriptMetaData;
 	public TArray<FNiagaraStackSection> InputSections;
 	public FNiagaraVMExecutableDataId LastGeneratedVMId;
 	public ENiagaraPythonUpdateScriptReference UpdateScriptExecution;

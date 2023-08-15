@@ -5,5 +5,5 @@ using CSharpToCpp.Utilities;
 public partial class UOptimusPersistentBufferDataInterface : UOptimusRawBufferDataInterface {
 	public static UClass StaticClass() {return default;}
 	///<summary>ResourceName</summary>
-	public string ResourceName;
+	public FName ResourceName;
 }

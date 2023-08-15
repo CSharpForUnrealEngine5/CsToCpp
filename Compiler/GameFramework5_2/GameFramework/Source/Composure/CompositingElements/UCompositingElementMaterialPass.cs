@@ -9,7 +9,7 @@ public partial class UCompositingElementMaterialPass : UCompositingPostProcessPa
 	///<summary>Set the material interface used by current material pass.</summary>
 	public void SetMaterialInterface(UMaterialInterface NewMaterial) {}
 	///<summary>Set the parameter mappings between texture parameters and composure layers. Users can not create new entries into the map as the keys are read only.</summary>
-	public bool SetParameterMapping(string TextureParamName,string ComposureLayerName) { return default; }
+	public bool SetParameterMapping(FName TextureParamName,FName ComposureLayerName) { return default; }
 	///<summary>ApplyMaterialParams</summary>
 	public void ApplyMaterialParams(UMaterialInstanceDynamic MID) {}
 }

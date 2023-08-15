@@ -68,7 +68,7 @@ public partial class AFunctionalTest : AActor {
 	///<summary>Assert that two ints are equal</summary>
 	public virtual bool AssertEqual_Int(int Actual,int Expected,string What,UObject ContextObject/*=nullptr*/) { return default; }
 	///<summary>Assert that two FNames are equal</summary>
-	public virtual bool AssertEqual_Name(string Actual,string Expected,string What,UObject ContextObject/*=nullptr*/) { return default; }
+	public virtual bool AssertEqual_Name(FName Actual,FName Expected,string What,UObject ContextObject/*=nullptr*/) { return default; }
 	///<summary>Assert that two Objects are equal</summary>
 	public virtual bool AssertEqual_Object(UObject Actual,UObject Expected,string What,UObject ContextObject/*=nullptr*/) { return default; }
 	///<summary>Assert that two transforms are (components memberwise - translation, rotation, scale) not equal within a small tolerance.</summary>
@@ -126,9 +126,9 @@ public partial class AFunctionalTest : AActor {
 	///<summary>retrieves information whether test wants to have another run just after finishing</summary>
 	public bool OnWantsReRunCheck() { return default; }
 	///<summary>Causes the test to be rerun for a specific named reason.</summary>
-	public void AddRerun(string Reason) {}
+	public void AddRerun(FName Reason) {}
 	///<summary>Returns the current re-run reason if we&#39;re in a named re-run.</summary>
-	public string GetCurrentRerunReason() { return default; }
+	public FName GetCurrentRerunReason() { return default; }
 	///<summary>OnAdditionalTestFinishedMessageRequest</summary>
 	public string OnAdditionalTestFinishedMessageRequest(EFunctionalTestResult TestResult) { return default; }
 	///<summary>Actors registered this way will be automatically destroyed (by limiting their lifespan)</summary>

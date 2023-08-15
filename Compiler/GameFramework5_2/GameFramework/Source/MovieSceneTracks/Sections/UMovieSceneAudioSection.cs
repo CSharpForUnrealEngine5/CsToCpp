@@ -29,15 +29,15 @@ public partial class UMovieSceneAudioSection : UMovieSceneSection {
 	///<summary>The pitch multiplier the sound will be played with.</summary>
 	public FMovieSceneFloatChannel PitchMultiplier;
 	///<summary>Generic inputs for the sound</summary>
-	public TMap<string,FMovieSceneFloatChannel> Inputs_Float;
+	public TMap<FName,FMovieSceneFloatChannel> Inputs_Float;
 	///<summary>Inputs_String</summary>
-	public TMap<string,FMovieSceneStringChannel> Inputs_String;
+	public TMap<FName,FMovieSceneStringChannel> Inputs_String;
 	///<summary>Inputs_Bool</summary>
-	public TMap<string,FMovieSceneBoolChannel> Inputs_Bool;
+	public TMap<FName,FMovieSceneBoolChannel> Inputs_Bool;
 	///<summary>Inputs_Int</summary>
-	public TMap<string,FMovieSceneIntegerChannel> Inputs_Int;
+	public TMap<FName,FMovieSceneIntegerChannel> Inputs_Int;
 	///<summary>Inputs_Trigger</summary>
-	public TMap<string,FMovieSceneAudioTriggerChannel> Inputs_Trigger;
+	public TMap<FName,FMovieSceneAudioTriggerChannel> Inputs_Trigger;
 	///<summary>AttachActorData</summary>
 	public FMovieSceneActorReferenceData AttachActorData;
 	///<summary>Allow looping if the section length is greater than the sound duration</summary>

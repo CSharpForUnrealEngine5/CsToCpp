@@ -2,7 +2,7 @@ namespace GameFramework;
 using CSharpToCpp.Utilities;
 [CppInclude("Chaos/CacheManagerActor.h")]
 public partial struct FObservedComponent {
-	public string CacheName;
+	public FName CacheName;
 	public FComponentReference ComponentRef;
 	public FSoftComponentReference SoftComponentRef;
 	public bool bIsSimulating;

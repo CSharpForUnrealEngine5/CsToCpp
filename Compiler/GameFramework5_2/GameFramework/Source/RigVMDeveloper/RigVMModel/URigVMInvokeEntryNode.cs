@@ -5,5 +5,5 @@ using CSharpToCpp.Utilities;
 public partial class URigVMInvokeEntryNode : URigVMNode {
 	public static UClass StaticClass() {return default;}
 	///<summary>Returns the name of the entry to run</summary>
-	public string GetEntryName() { return default; }
+	public FName GetEntryName() { return default; }
 }

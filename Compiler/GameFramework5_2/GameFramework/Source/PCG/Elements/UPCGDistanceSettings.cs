@@ -5,7 +5,7 @@ using CSharpToCpp.Utilities;
 public partial class UPCGDistanceSettings : UPCGSettings {
 	public static UClass StaticClass() {return default;}
 	///<summary>The name of the attribute to store on the point.Use &#39;None&#39; to disable</summary>
-	public string AttributeName;
+	public FName AttributeName;
 	///<summary>Controls whether the attribute will be a scalar or a vector</summary>
 	public bool bOutputDistanceVector;
 	///<summary>If true, will also set the density to be 0 - 1 based on MaximumDistance</summary>

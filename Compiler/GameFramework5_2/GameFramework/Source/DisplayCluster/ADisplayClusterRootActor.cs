@@ -61,7 +61,7 @@ public partial class ADisplayClusterRootActor : AActor {
 	///<summary>Media</summary>
 	public FDisplayClusterEditorPropertyReference MediaSettingsRef;
 	///<summary>Name of the CurrentConfigData asset. Only required if this is a parent of a DisplayClusterBlueprint.</summary>
-	public string ConfigDataName;
+	public FName ConfigDataName;
 	///<summary>The root component for our hierarchy.</summary>
 	public USceneComponent DisplayClusterRootComponent;
 	///<summary>Default camera component. It&#39;s an outer camera in VP/ICVFX terminology. Always exists on a DCRA instance.</summary>

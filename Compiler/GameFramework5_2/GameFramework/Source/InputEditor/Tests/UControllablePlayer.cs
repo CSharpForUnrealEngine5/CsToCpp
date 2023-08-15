@@ -6,9 +6,9 @@ public partial class UControllablePlayer : UObject {
 	///<summary>Player</summary>
 	public APlayerController Player;
 	///<summary>BindingTargets</summary>
-	public TMap<string,FBindingTargets> BindingTargets;
+	public TMap<FName,FBindingTargets> BindingTargets;
 	///<summary>Storage for input mapping contexts applied to the player</summary>
-	public TMap<string,UInputMappingContext> InputContext;
+	public TMap<FName,UInputMappingContext> InputContext;
 	///<summary>Storage for input actions applied to the player</summary>
-	public TMap<string,UInputAction> InputAction;
+	public TMap<FName,UInputAction> InputAction;
 }
