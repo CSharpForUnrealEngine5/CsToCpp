@@ -42,6 +42,8 @@ public partial class UObject
 
     public T NewObject<T>() { return default(T); }
 
+    public T CreateWidget<T>(UObject OwningObject) { return default(T); }
+
     public T Cast<T>(object o) { return default(T); }
     public T CastChecked<T>(object o) { return default; }
 
