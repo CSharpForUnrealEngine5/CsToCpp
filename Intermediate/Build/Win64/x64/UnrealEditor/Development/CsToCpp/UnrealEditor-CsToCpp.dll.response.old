@@ -33,9 +33,9 @@
 /NODEFAULTLIB:"LIBCD"
 /NODEFAULTLIB:"LIBCPD"
 /FUNCTIONPADMIN:6
-"C:\UnrealEngine\Dev\Courses\RTSProject\Intermediate\Build\Win64\x64\RTSProjectEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.InclOrderUnreal5_1.h.obj"
-"C:\UnrealEngine\Dev\Courses\RTSProject\Plugins\CsToCpp\Intermediate\Build\Win64\x64\UnrealEditor\Development\CsToCpp\CsToCpp.cpp.obj"
-"C:\UnrealEngine\Dev\Courses\RTSProject\Plugins\CsToCpp\Intermediate\Build\Win64\x64\UnrealEditor\Development\CsToCpp\Default.rc2.res"
+"C:\UnrealEngine\Projects\RTS\Intermediate\Build\Win64\x64\RTSEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.InclOrderUnreal5_1.h.obj"
+"C:\UnrealEngine\Projects\RTS\Plugins\CsToCpp\Intermediate\Build\Win64\x64\UnrealEditor\Development\CsToCpp\CsToCpp.cpp.obj"
+"C:\UnrealEngine\Projects\RTS\Plugins\CsToCpp\Intermediate\Build\Win64\x64\UnrealEditor\Development\CsToCpp\Default.rc2.res"
 "..\Intermediate\Build\Win64\x64\UnrealEditor\Development\CoreUObject\UnrealEditor-CoreUObject.lib"
 "..\Intermediate\Build\Win64\x64\UnrealEditor\Development\Engine\UnrealEditor-Engine.lib"
 "..\Intermediate\Build\Win64\x64\UnrealEditor\Development\Slate\UnrealEditor-Slate.lib"
@@ -65,7 +65,7 @@
 "setupapi.lib"
 "dwmapi.lib"
 "imm32.lib"
-/OUT:"C:\UnrealEngine\Dev\Courses\RTSProject\Plugins\CsToCpp\Binaries\Win64\UnrealEditor-CsToCpp.dll"
-/IMPLIB:"C:\UnrealEngine\Dev\Courses\RTSProject\Plugins\CsToCpp\Intermediate\Build\Win64\x64\UnrealEditor\Development\CsToCpp\UnrealEditor-CsToCpp.suppressed.lib"
-/PDB:"C:\UnrealEngine\Dev\Courses\RTSProject\Plugins\CsToCpp\Binaries\Win64\UnrealEditor-CsToCpp.pdb"
+/OUT:"C:\UnrealEngine\Projects\RTS\Plugins\CsToCpp\Binaries\Win64\UnrealEditor-CsToCpp.dll"
+/IMPLIB:"C:\UnrealEngine\Projects\RTS\Plugins\CsToCpp\Intermediate\Build\Win64\x64\UnrealEditor\Development\CsToCpp\UnrealEditor-CsToCpp.suppressed.lib"
+/PDB:"C:\UnrealEngine\Projects\RTS\Plugins\CsToCpp\Binaries\Win64\UnrealEditor-CsToCpp.pdb"
 /ignore:4078

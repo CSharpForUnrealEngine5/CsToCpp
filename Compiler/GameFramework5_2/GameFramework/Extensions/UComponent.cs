@@ -14,6 +14,7 @@ public partial class UActorComponent : UObject
 {
     public UWorld GetWorld() { return default; }
 
+    public virtual void BeginPlay() { }
     public virtual void TickComponent(float Delta, ELevelTick TickType, [CppPointer] FActorComponentTickFunction ThisTickFunction) { }
 
     public T GetOwner<T>() { return default; }

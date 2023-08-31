@@ -70,6 +70,6 @@
 /DBUILD_VERSION=++UE5+Release-5.2-CL-26001984
 /DBUILD_ICON_FILE_NAME="\"..\\Build\\Windows\\Resources\\Default.ico\""
 /DPROJECT_COPYRIGHT_STRING="Fill out your copyright notice in the Description page of Project Settings."
-/DPROJECT_PRODUCT_IDENTIFIER=RTS
-/fo "C:\UnrealEngine\Projects\RTS\Plugins\CsToCpp\Intermediate\Build\Win64\x64\UnrealEditor\Development\CsToCpp\Default.rc2.res"
+/DPROJECT_PRODUCT_IDENTIFIER=CityFactory
+/fo "C:\UnrealEngine\Projects\CityFactory\Plugins\CsToCpp\Intermediate\Build\Win64\x64\UnrealEditor\Development\CsToCpp\Default.rc2.res"
 "..\Build\Windows\Resources\Default.rc2"

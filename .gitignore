@@ -42,9 +42,9 @@
 *.VC.db
 *.VC.opendb
 
-bin/*
+**/bin/*
 !bin/*.txt
-obj/*
+**/obj/*
 
 
 # Precompiled Assets

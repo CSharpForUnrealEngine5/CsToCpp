@@ -6,7 +6,7 @@
 /NAME:"UnrealEditor-CsToCpp.dll"
 /IGNORE:4221
 /NODEFAULTLIB
-"C:\UnrealEngine\Dev\Courses\RTSProject\Intermediate\Build\Win64\x64\RTSProjectEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.InclOrderUnreal5_1.h.obj"
-"C:\UnrealEngine\Dev\Courses\RTSProject\Plugins\CsToCpp\Intermediate\Build\Win64\x64\UnrealEditor\Development\CsToCpp\CsToCpp.cpp.obj"
-"C:\UnrealEngine\Dev\Courses\RTSProject\Plugins\CsToCpp\Intermediate\Build\Win64\x64\UnrealEditor\Development\CsToCpp\Default.rc2.res"
-/OUT:"C:\UnrealEngine\Dev\Courses\RTSProject\Plugins\CsToCpp\Intermediate\Build\Win64\x64\UnrealEditor\Development\CsToCpp\UnrealEditor-CsToCpp.lib"
+"C:\UnrealEngine\Projects\RTS\Intermediate\Build\Win64\x64\RTSEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.InclOrderUnreal5_1.h.obj"
+"C:\UnrealEngine\Projects\RTS\Plugins\CsToCpp\Intermediate\Build\Win64\x64\UnrealEditor\Development\CsToCpp\CsToCpp.cpp.obj"
+"C:\UnrealEngine\Projects\RTS\Plugins\CsToCpp\Intermediate\Build\Win64\x64\UnrealEditor\Development\CsToCpp\Default.rc2.res"
+/OUT:"C:\UnrealEngine\Projects\RTS\Plugins\CsToCpp\Intermediate\Build\Win64\x64\UnrealEditor\Development\CsToCpp\UnrealEditor-CsToCpp.lib"
