@@ -19,7 +19,7 @@
 /ignore:4099
 /DELAYLOAD:"d3d12.dll"
 /DELAYLOAD:"DBGHELP.DLL"
-/LIBPATH:"C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\lib\x64"
+/LIBPATH:"C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.34.31933\lib\x64"
 /LIBPATH:"C:\Program Files (x86)\Windows Kits\10\lib\10.0.19041.0\ucrt\x64"
 /LIBPATH:"C:\Program Files (x86)\Windows Kits\10\lib\10.0.19041.0\um\x64"
 /NODEFAULTLIB:"LIBCMT"
@@ -33,9 +33,9 @@
 /NODEFAULTLIB:"LIBCD"
 /NODEFAULTLIB:"LIBCPD"
 /FUNCTIONPADMIN:6
-"C:\UnrealEngine\Projects\CityFactory\Intermediate\Build\Win64\x64\CityFactoryEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.InclOrderUnreal5_1.h.obj"
-"C:\UnrealEngine\Projects\CityFactory\Plugins\CsToCpp\Intermediate\Build\Win64\x64\UnrealEditor\Development\CsToCpp\CsToCpp.cpp.obj"
-"C:\UnrealEngine\Projects\CityFactory\Plugins\CsToCpp\Intermediate\Build\Win64\x64\UnrealEditor\Development\CsToCpp\Default.rc2.res"
+"C:\UnrealEngine\Projects\Factory\Intermediate\Build\Win64\x64\FactoryEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.InclOrderUnreal5_1.h.obj"
+"C:\UnrealEngine\Projects\Factory\Plugins\CsToCpp\Intermediate\Build\Win64\x64\UnrealEditor\Development\CsToCpp\CsToCpp.cpp.obj"
+"C:\UnrealEngine\Projects\Factory\Plugins\CsToCpp\Intermediate\Build\Win64\x64\UnrealEditor\Development\CsToCpp\Default.rc2.res"
 "..\Intermediate\Build\Win64\x64\UnrealEditor\Development\CoreUObject\UnrealEditor-CoreUObject.lib"
 "..\Intermediate\Build\Win64\x64\UnrealEditor\Development\Engine\UnrealEditor-Engine.lib"
 "..\Intermediate\Build\Win64\x64\UnrealEditor\Development\Slate\UnrealEditor-Slate.lib"
@@ -65,7 +65,7 @@
 "setupapi.lib"
 "dwmapi.lib"
 "imm32.lib"
-/OUT:"C:\UnrealEngine\Projects\CityFactory\Plugins\CsToCpp\Binaries\Win64\UnrealEditor-CsToCpp.dll"
-/IMPLIB:"C:\UnrealEngine\Projects\CityFactory\Plugins\CsToCpp\Intermediate\Build\Win64\x64\UnrealEditor\Development\CsToCpp\UnrealEditor-CsToCpp.suppressed.lib"
-/PDB:"C:\UnrealEngine\Projects\CityFactory\Plugins\CsToCpp\Binaries\Win64\UnrealEditor-CsToCpp.pdb"
+/OUT:"C:\UnrealEngine\Projects\Factory\Plugins\CsToCpp\Binaries\Win64\UnrealEditor-CsToCpp.dll"
+/IMPLIB:"C:\UnrealEngine\Projects\Factory\Plugins\CsToCpp\Intermediate\Build\Win64\x64\UnrealEditor\Development\CsToCpp\UnrealEditor-CsToCpp.suppressed.lib"
+/PDB:"C:\UnrealEngine\Projects\Factory\Plugins\CsToCpp\Binaries\Win64\UnrealEditor-CsToCpp.pdb"
 /ignore:4078

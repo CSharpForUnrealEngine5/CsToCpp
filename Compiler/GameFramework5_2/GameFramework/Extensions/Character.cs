@@ -11,11 +11,15 @@ public partial class APawn
 
 }
 
-[CppInclude("Components/CapsuleComponent.h","GameFramework/CharacterMovementComponent.h")]
+[CppInclude("Components/CapsuleComponent.h", 
+    "GameFramework/CharacterMovementComponent.h"
+    )]
 public partial class ACharacter : APawn
 {
     public UCapsuleComponent GetCapsuleComponent() { return default; }
     public UCharacterMovementComponent GetCharacterMovement() { return default; }
+
+    public USkeletalMeshComponent GetMesh() { return  default; }
 
 }
 
