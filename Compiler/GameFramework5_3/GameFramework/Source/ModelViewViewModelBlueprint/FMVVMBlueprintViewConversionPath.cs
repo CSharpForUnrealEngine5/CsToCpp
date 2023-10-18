@@ -1,0 +1,11 @@
+namespace GameFramework;
+using CSharpToCpp.Utilities;
+[CppInclude("MVVMBlueprintViewBinding.h")]
+public partial struct FMVVMBlueprintViewConversionPath {
+	public FMemberReference DestinationToSourceFunction_DEPRECATED;
+	public FName DestinationToSourceWrapper_DEPRECATED;
+	public FMemberReference SourceToDestinationFunction_DEPRECATED;
+	public FName SourceToDestinationWrapper_DEPRECATED;
+	public UMVVMBlueprintViewConversionFunction DestinationToSourceConversion;
+	public UMVVMBlueprintViewConversionFunction SourceToDestinationConversion;
+}

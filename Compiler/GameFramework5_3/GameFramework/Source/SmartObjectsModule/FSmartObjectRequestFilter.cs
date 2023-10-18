@@ -1,0 +1,12 @@
+namespace GameFramework;
+using CSharpToCpp.Utilities;
+///<summary>Struct that can be used to filter results of a smart object request when trying to find or claim a smart object</summary>
+[CppInclude("SmartObjectSubsystem.h")]
+public partial struct FSmartObjectRequestFilter {
+	public AActor UserActor;
+	public FGameplayTagContainer UserTags;
+	public FGameplayTagQuery ActivityRequirements;
+	public UClass BehaviorDefinitionClass;
+	public TArray<UClass> BehaviorDefinitionClasses;
+	public bool bShouldEvaluateConditions;
+}

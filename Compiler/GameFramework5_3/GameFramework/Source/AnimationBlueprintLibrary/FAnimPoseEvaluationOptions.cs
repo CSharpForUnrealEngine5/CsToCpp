@@ -1,0 +1,12 @@
+namespace GameFramework;
+using CSharpToCpp.Utilities;
+[CppInclude("AnimPose.h")]
+public partial struct FAnimPoseEvaluationOptions {
+	public EAnimDataEvalType EvaluationType;
+	public bool bShouldRetarget;
+	public bool bExtractRootMotion;
+	public bool bIncorporateRootMotionIntoPose;
+	public USkeletalMesh OptionalSkeletalMesh;
+	public bool bRetrieveAdditiveAsFullPose;
+	public bool bEvaluateCurves;
+}

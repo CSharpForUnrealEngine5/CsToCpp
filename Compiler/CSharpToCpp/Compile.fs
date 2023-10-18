@@ -282,7 +282,11 @@ let compileExpression m expr : (string*(ITypeSymbol*ISymbol))=
                 getIncludes ety |> includes.AddRange
                 "::"
             | _,TypeKind.Struct,SymbolKind.NamedType -> "::"
-            | _,TypeKind.Class,_ -> "->"
+            | _,TypeKind.Class,_ -> 
+                if ety.Name.ToLower() = "string" then
+                    "."
+                else
+                    "->"
             | _,TypeKind.Enum,_ -> "::"
             | _,TypeKind.Struct,_ -> "."
             | _ -> assert false; ""

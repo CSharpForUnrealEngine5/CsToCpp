@@ -19,7 +19,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\GameFramework5_2\GameFramework\GameFramework.csproj" />
+    <ProjectReference Include="..\CSharpToCpp.Utilities\CSharpToCpp.Utilities.csproj" />
+    <ProjectReference Include="..\GameFramework5_3\GameFramework\GameFramework.csproj" />
   </ItemGroup>
 
   <Target Name="PostBuild" AfterTargets="PostBuildEvent">

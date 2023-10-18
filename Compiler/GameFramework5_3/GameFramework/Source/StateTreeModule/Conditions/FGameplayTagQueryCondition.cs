@@ -1,0 +1,8 @@
+namespace GameFramework;
+using CSharpToCpp.Utilities;
+///<summary>DoesContainerMatchTagQuery condition</summary>
+[CppInclude("Conditions/StateTreeGameplayTagConditions.h")]
+public partial struct FGameplayTagQueryCondition {
+	public FGameplayTagQuery TagQuery;
+	public bool bInvert;
+}

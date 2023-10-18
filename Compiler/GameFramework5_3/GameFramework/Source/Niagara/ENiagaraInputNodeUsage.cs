@@ -1,0 +1,11 @@
+namespace GameFramework;
+using CSharpToCpp.Utilities;
+[CppInclude("NiagaraCommon.h")]
+public enum ENiagaraInputNodeUsage {
+	Undefined=0,
+	Parameter=1,
+	Attribute=2,
+	SystemConstant=3,
+	TranslatorConstant=4,
+	RapidIterationParameter=5,
+}

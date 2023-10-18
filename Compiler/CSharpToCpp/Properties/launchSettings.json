@@ -2,7 +2,7 @@
   "profiles": {
     "CSharpToCpp": {
       "commandName": "Project",
-      "commandLineArgs": "C:\\UnrealEngine\\Projects\\RTS\\Source\\RTS\\Game\\"
+      "commandLineArgs": "C:\\UnrealEngine\\Projects\\BlueprintCompilerDev\\Source\\BlueprintCompilerDev\\Game"
     }
   }
 }

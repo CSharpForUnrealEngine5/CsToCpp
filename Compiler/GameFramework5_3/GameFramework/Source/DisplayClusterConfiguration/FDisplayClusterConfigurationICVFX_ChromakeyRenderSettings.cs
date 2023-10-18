@@ -1,0 +1,13 @@
+namespace GameFramework;
+using CSharpToCpp.Utilities;
+[CppInclude("DisplayClusterConfigurationTypes_ICVFX.h")]
+public partial struct FDisplayClusterConfigurationICVFX_ChromakeyRenderSettings {
+	public bool bEnable_DEPRECATED;
+	public bool bReplaceCameraViewport;
+	public FDisplayClusterConfigurationICVFX_CustomSize CustomSize;
+	public FDisplayClusterConfigurationICVFX_VisibilityList ShowOnlyList;
+	public FDisplayClusterConfigurationPostRender_Override Replace;
+	public FDisplayClusterConfigurationPostRender_BlurPostprocess PostprocessBlur;
+	public FDisplayClusterConfigurationPostRender_GenerateMips GenerateMips;
+	public FDisplayClusterConfigurationICVFX_OverlayAdvancedRenderSettings AdvancedRenderSettings;
+}

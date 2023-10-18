@@ -1,0 +1,10 @@
+namespace GameFramework;
+using CSharpToCpp.Utilities;
+[CppInclude("OnlineHotfixManager.h")]
+public enum EHotfixResult {
+	Failed=0,
+	Success=1,
+	SuccessNoChange=2,
+	SuccessNeedsReload=3,
+	SuccessNeedsRelaunch=4,
+}

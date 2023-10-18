@@ -1,0 +1,7 @@
+namespace GameFramework;
+using CSharpToCpp.Utilities;
+///<summary>A capsule shaped trigger, used to generate overlap events in the level</summary>
+[CppInclude("Engine/TriggerCapsule.h")]
+public partial class ATriggerCapsule : ATriggerBase {
+	public static UClass StaticClass() {return default;}
+}

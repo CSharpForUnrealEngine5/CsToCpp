@@ -1,5 +1,8 @@
 {
 	"RemapUnityFiles": 
 	{
+		"Module.CsToCpp.cpp.obj": [
+			"CsToCpp.cpp.obj"
+		]
 	}
 }

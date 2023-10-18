@@ -1,0 +1,20 @@
+namespace GameFramework;
+using CSharpToCpp.Utilities;
+[CppInclude("DisplayClusterConfigurationTypes_Postprocess.h")]
+public partial struct FDisplayClusterConfigurationViewport_ColorGradingRenderingSettings {
+	public bool bOverride_AutoExposureBias;
+	public bool bOverride_ColorCorrectionHighlightsMin;
+	public bool bOverride_ColorCorrectionHighlightsMax;
+	public bool bOverride_ColorCorrectionShadowsMax;
+	public float BlendWeight;
+	public float AutoExposureBias;
+	public FDisplayClusterConfigurationViewport_ColorGradingWhiteBalanceSettings WhiteBalance;
+	public FDisplayClusterConfigurationViewport_ColorGradingSettings Global;
+	public FDisplayClusterConfigurationViewport_ColorGradingSettings Shadows;
+	public float ColorCorrectionShadowsMax;
+	public FDisplayClusterConfigurationViewport_ColorGradingSettings Midtones;
+	public FDisplayClusterConfigurationViewport_ColorGradingSettings Highlights;
+	public float ColorCorrectionHighlightsMin;
+	public float ColorCorrectionHighlightsMax;
+	public FDisplayClusterConfigurationViewport_ColorGradingMiscSettings Misc;
+}

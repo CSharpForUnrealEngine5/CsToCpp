@@ -1,0 +1,7 @@
+namespace GameFramework;
+using CSharpToCpp.Utilities;
+///<summary>Pure kismet node that creates a struct with specified values for each member</summary>
+[CppInclude("K2Node_SetFieldsInStruct.h")]
+public partial class UK2Node_SetFieldsInStruct : UK2Node_MakeStruct {
+	public static UClass StaticClass() {return default;}
+}

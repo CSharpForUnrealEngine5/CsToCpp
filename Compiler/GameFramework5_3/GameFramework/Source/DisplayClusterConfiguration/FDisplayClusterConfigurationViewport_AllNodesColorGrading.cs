@@ -1,0 +1,8 @@
+namespace GameFramework;
+using CSharpToCpp.Utilities;
+[CppInclude("DisplayClusterConfigurationTypes_Postprocess.h")]
+public partial struct FDisplayClusterConfigurationViewport_AllNodesColorGrading {
+	public bool bEnableInnerFrustumAllNodesColorGrading;
+	public bool bEnableEntireClusterColorGrading;
+	public FDisplayClusterConfigurationViewport_ColorGradingRenderingSettings ColorGradingSettings;
+}

@@ -1,0 +1,11 @@
+namespace GameFramework;
+using CSharpToCpp.Utilities;
+[CppInclude("TraceQueryTestResults.h")]
+public partial struct FTraceQueryTestResultsInnerMost {
+	public FHitResult SingleHit;
+	public FTraceQueryTestNames SingleNames;
+	public bool bSingleResult;
+	public TArray<FHitResult> MultiHits;
+	public TArray<FTraceQueryTestNames> MultiNames;
+	public bool bMultiResult;
+}

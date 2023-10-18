@@ -1,0 +1,7 @@
+namespace GameFramework;
+using CSharpToCpp.Utilities;
+///<summary>Fires when a particle dies</summary>
+public partial struct FParticleDeathSignature {
+// ParticleDeathSignature__DelegateSignature(FName EventName, float EmitterTime, int ParticleTime, FVector Location, FVector Velocity, FVector Direction)
+	public void AddDynamic(object obj, string functionName) {}
+}

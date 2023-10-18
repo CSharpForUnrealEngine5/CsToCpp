@@ -1,0 +1,7 @@
+namespace GameFramework;
+using CSharpToCpp.Utilities;
+[CppInclude("Formats/JSON427/DisplayClusterConfigurationJsonTypes_427.h")]
+public partial struct FDisplayClusterConfigurationJsonClusterSync_427 {
+	public FDisplayClusterConfigurationJsonClusterSyncPolicy_427 RenderSyncPolicy;
+	public FDisplayClusterConfigurationJsonClusterSyncPolicy_427 InputSyncPolicy;
+}

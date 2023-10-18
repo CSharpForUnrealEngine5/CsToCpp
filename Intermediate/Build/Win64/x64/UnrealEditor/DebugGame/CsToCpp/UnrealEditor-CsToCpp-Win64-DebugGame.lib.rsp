@@ -1,0 +1,12 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UnrealEditor-CsToCpp-Win64-DebugGame.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"C:\UnrealEngine\Projects\BlueprintCompilerDev\Intermediate\Build\Win64\x64\BlueprintCompilerDevEditor\DebugGame\Engine\SharedPCH.Engine.NonOptimized.Cpp20.h.obj"
+"C:\UnrealEngine\Projects\BlueprintCompilerDev\Plugins\CsToCpp\Intermediate\Build\Win64\x64\UnrealEditor\DebugGame\CsToCpp\Module.CsToCpp.cpp.obj"
+"C:\UnrealEngine\Projects\BlueprintCompilerDev\Plugins\CsToCpp\Intermediate\Build\Win64\x64\UnrealEditor\DebugGame\CsToCpp\Default.rc2.res"
+/OUT:"C:\UnrealEngine\Projects\BlueprintCompilerDev\Plugins\CsToCpp\Intermediate\Build\Win64\x64\UnrealEditor\DebugGame\CsToCpp\UnrealEditor-CsToCpp-Win64-DebugGame.lib"

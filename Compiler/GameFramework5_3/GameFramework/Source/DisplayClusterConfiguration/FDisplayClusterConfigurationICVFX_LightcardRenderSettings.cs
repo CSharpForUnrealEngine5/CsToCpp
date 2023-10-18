@@ -1,0 +1,10 @@
+namespace GameFramework;
+using CSharpToCpp.Utilities;
+[CppInclude("DisplayClusterConfigurationTypes_ICVFX.h")]
+public partial struct FDisplayClusterConfigurationICVFX_LightcardRenderSettings {
+	public bool bReplaceViewport;
+	public FDisplayClusterConfigurationPostRender_Override Replace;
+	public FDisplayClusterConfigurationPostRender_BlurPostprocess PostprocessBlur;
+	public FDisplayClusterConfigurationPostRender_GenerateMips GenerateMips;
+	public FDisplayClusterConfigurationICVFX_OverlayAdvancedRenderSettings AdvancedRenderSettings;
+}

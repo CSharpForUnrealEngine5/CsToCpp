@@ -1,0 +1,8 @@
+namespace GameFramework;
+using CSharpToCpp.Utilities;
+[CppInclude("ClothConfigNv.h")]
+///<summary>Cloth wind method.</summary>
+public enum EClothingWindMethodNv {
+	Legacy=0,
+	Accurate=1,
+}

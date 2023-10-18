@@ -1,0 +1,10 @@
+namespace GameFramework;
+using CSharpToCpp.Utilities;
+[CppInclude("DatasmithVREDImportData.h")]
+public partial struct FVREDCppVariantSet {
+	public TArray<string> TargetVariantNames;
+	public TArray<string> ChosenOptions;
+	public string VariantSetGroupName;
+	public TArray<string> AnimClips;
+	public bool bSequentialAnimation;
+}
